@@ -1,0 +1,41 @@
+{
+  "recorded_at": "2026-10-25T12:34:38.581182+05:00",
+  "criteria_changed_after_viewing": false,
+  "individual_readings_opened": false,
+  "family_match_notes": {
+    "A12": "Upper view has an upright one-right-branch form in the left middle cell, matching coarse G02 criterion. Pointed frame at left middle has more interior strokes than pilot, so only partial G01. Curved/parallel forms at right do not establish G03/G06 identity.",
+    "A13": "Heavily worn fragment, too few complete diagnostic contours for reliable six-family comparison; absence cannot be inferred.",
+    "A14": "Many bounded regions. Pointed, rounded and hatched forms occur, but interior topology/orientation differ or is incomplete. Rotated bars and polygonal/ladder shapes not promoted to G03/G06 strict matches.",
+    "A15": "Multi-fragment photographic composite. Pointed and rounded/hatched forms occur, but complex interiors and photograph orientation prevent strict identification with pilot. Fragments/views are not automatically separate objects."
+  },
+  "layout": [
+    {
+      "image": "A12",
+      "status": "positive",
+      "minimum_repeated_regions": 2,
+      "evidence": "Upper right bounded region: deep depression left of angular complex; middle right: deep depression with short groove bundle and distinct complex. Similar within-cell direction.",
+      "limit": "Narrow fragment; no numeric values assigned."
+    },
+    {
+      "image": "A13",
+      "status": "unassessable",
+      "minimum_repeated_regions": null,
+      "evidence": "Surface too worn to establish two repetitions under fixed criterion.",
+      "limit": "Not scored negative."
+    },
+    {
+      "image": "A14",
+      "status": "positive",
+      "minimum_repeated_regions": 3,
+      "evidence": "Upper main face has multiple cells, each with deep impression on the same relative side and changing complex marks toward the other side.",
+      "limit": "This is spatial pattern, not proof of quantity/item semantics."
+    },
+    {
+      "image": "A15",
+      "status": "positive",
+      "minimum_repeated_regions": 3,
+      "evidence": "Upper fragment and tall main fragment each repeat depression-next-to-complex layout. Fragment matching and object count not resolved.",
+      "limit": "Photo composite may show fragments/views of one or more objects; no claim of independent object count."
+    }
+  ]
+}

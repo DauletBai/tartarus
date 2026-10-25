@@ -1,0 +1,610 @@
+[
+  {
+    "line": "o 1",
+    "language": "sux",
+    "tokens": [
+      "en₂",
+      "a₂-sag₃",
+      "gig-ga",
+      "su",
+      "lu₂-u₁₉-lu-ke₄",
+      "mu-un-ŋal₂"
+    ],
+    "editorial_text": "en₂ a₂-sag₃ gig-ga su lu₂-u₁₉-lu-ke₄ mu-un-ŋal₂",
+    "html_row_id": "P338491.3l"
+  },
+  {
+    "line": "o 1",
+    "language": "akk_or_logographic",
+    "tokens": [
+      "a-sak-ku",
+      "mar-ṣu",
+      "ina",
+      "SU",
+      "LU₂",
+      "it-tab-ši"
+    ],
+    "editorial_text": "a-sak-ku mar-ṣu ina SU LU₂ it-tab-ši",
+    "html_row_id": ""
+  },
+  {
+    "line": "o 2",
+    "language": "sux",
+    "tokens": [
+      "lu₂-u₁₉-lu",
+      "pa₄-ḫal-la",
+      "tug₂-gin₇",
+      "mu-un-dul"
+    ],
+    "editorial_text": "lu₂-u₁₉-lu pa₄-ḫal-la tug₂-gin₇ mu-un-dul",
+    "html_row_id": "P338491.5l"
+  },
+  {
+    "line": "o 2",
+    "language": "akk_or_logographic",
+    "tokens": [
+      "ana",
+      "a-me-lu",
+      "mut-⸢tal-li⸣-ku",
+      "GIM",
+      "ṣu-ba-tu₂",
+      "ik-ta-tam"
+    ],
+    "editorial_text": "ana a-me-lu mut-⸢tal-li⸣-ku GIM ṣu-ba-tu₂ ik-ta-tam",
+    "html_row_id": ""
+  },
+  {
+    "line": "o 3",
+    "language": "sux",
+    "tokens": [
+      "šu-bi",
+      "ŋiri₃-bi",
+      "<nu>-mu-un-ši-in-ŋa₂-ŋa₂"
+    ],
+    "editorial_text": "šu-bi ŋiri₃-bi <nu>-mu-un-ši-in-ŋa₂-ŋa₂",
+    "html_row_id": "P338491.7l"
+  },
+  {
+    "line": "o 3",
+    "language": "akk_or_logographic",
+    "tokens": [
+      "qa-a-su",
+      "⸢še⸣-ep-šu₂",
+      "ul",
+      "i-na-ši"
+    ],
+    "editorial_text": "qa-a-su ⸢še⸣-ep-šu₂ ul i-na-ši",
+    "html_row_id": ""
+  },
+  {
+    "line": "o 4",
+    "language": "sux",
+    "tokens": [
+      "nun",
+      "gal",
+      "den-ki",
+      "en",
+      "ka-inim-ma-bi"
+    ],
+    "editorial_text": "nun gal den-ki en ka-inim-ma-bi",
+    "html_row_id": "P338491.9l"
+  },
+  {
+    "line": "o 4",
+    "language": "akk_or_logographic",
+    "tokens": [
+      "ru-bu-u",
+      "ra-bu-u",
+      "de₂-a",
+      "EN",
+      "EN₂"
+    ],
+    "editorial_text": "ru-bu-u ra-bu-u de₂-a EN EN₂",
+    "html_row_id": ""
+  },
+  {
+    "line": "o 5",
+    "language": "sux",
+    "tokens": [
+      "d⸢en-ki⸣-e-ne-še₃",
+      "ša₂",
+      "dMIN<(EN.KI-E.NE.ŠE₃)>",
+      "u",
+      "dMIN<(NIN.KI-E.NE.ŠE₃)>",
+      "dnin-ki-e-ne-še₃"
+    ],
+    "editorial_text": "d⸢en-ki⸣-e-ne-še₃ ša₂ dMIN<(EN.KI-E.NE.ŠE₃)> u dMIN<(NIN.KI-E.NE.ŠE₃)> dnin-ki-e-ne-še₃",
+    "html_row_id": "P338491.10"
+  },
+  {
+    "line": "o 6",
+    "language": "sux",
+    "tokens": [
+      "[maš₂]-saŋ",
+      "gaba-ri-bi-še₃",
+      "ba-an-šum₂"
+    ],
+    "editorial_text": "[maš₂]-saŋ gaba-ri-bi-še₃ ba-an-šum₂",
+    "html_row_id": "P338491.12l"
+  },
+  {
+    "line": "o 6",
+    "language": "akk_or_logographic",
+    "tokens": [
+      "⸢u₂⸣-ri-ṣi",
+      "ana",
+      "me-eḫ-ri-šu₂",
+      "it-ta-din"
+    ],
+    "editorial_text": "⸢u₂⸣-ri-ṣi ana me-eḫ-ri-šu₂ it-ta-din",
+    "html_row_id": ""
+  },
+  {
+    "line": "o 7",
+    "language": "sux",
+    "tokens": [
+      "abgal",
+      "gu₃",
+      "nam-mi-in-de₂"
+    ],
+    "editorial_text": "abgal gu₃ nam-mi-in-de₂",
+    "html_row_id": "P338491.14l"
+  },
+  {
+    "line": "o 7",
+    "language": "akk_or_logographic",
+    "tokens": [
+      "ana",
+      "ap-kal-lu",
+      "is-si-[ma]"
+    ],
+    "editorial_text": "ana ap-kal-lu is-si-[ma]",
+    "html_row_id": ""
+  },
+  {
+    "line": "o 8",
+    "language": "sux",
+    "tokens": [
+      "maš₂",
+      "niŋ₂-saŋ-⸢il₂⸣-la",
+      "⸢min₃",
+      "lu₂⸣-[u₁₉-lu-ke₄]"
+    ],
+    "editorial_text": "maš₂ niŋ₂-saŋ-⸢il₂⸣-la ⸢min₃ lu₂⸣-[u₁₉-lu-ke₄]",
+    "html_row_id": "P338491.16l"
+  },
+  {
+    "line": "o 8",
+    "language": "akk_or_logographic",
+    "tokens": [
+      "⸢u₂-ri-ṣa",
+      "MIN?⸣<(NIG₂.SAG.IL₂-)>u₂",
+      "[ša₂]",
+      "⸢a⸣-me-⸢lu⸣-[ti]"
+    ],
+    "editorial_text": "⸢u₂-ri-ṣa MIN?⸣<(NIG₂.SAG.IL₂-)>u₂ [ša₂] ⸢a⸣-me-⸢lu⸣-[ti]",
+    "html_row_id": ""
+  },
+  {
+    "line": "o 9",
+    "language": "sux",
+    "tokens": [
+      "maš₂",
+      "zi-a-ni-še₃",
+      "ba-an-[šum₂]"
+    ],
+    "editorial_text": "maš₂ zi-a-ni-še₃ ba-an-[šum₂]",
+    "html_row_id": "P338491.18l"
+  },
+  {
+    "line": "o 9",
+    "language": "akk_or_logographic",
+    "tokens": [
+      "u₂-ri-ṣa",
+      "ana",
+      "na-piš-ti-šu₂",
+      "i-ta-din"
+    ],
+    "editorial_text": "u₂-ri-ṣa ana na-piš-ti-šu₂ i-ta-din",
+    "html_row_id": ""
+  },
+  {
+    "line": "o 10",
+    "language": "sux",
+    "tokens": [
+      "saŋ",
+      "maš₂",
+      "saŋ",
+      "lu₂-še₃",
+      "ba-an-⸢šum₂⸣"
+    ],
+    "editorial_text": "saŋ maš₂ saŋ lu₂-še₃ ba-an-⸢šum₂⸣",
+    "html_row_id": "P338491.20l"
+  },
+  {
+    "line": "o 10",
+    "language": "akk_or_logographic",
+    "tokens": [
+      "qaq-qa-du",
+      "u₂-ri-⸢ṣa⸣",
+      "ana",
+      "qaq-qa-du",
+      "LU₂",
+      "i-ta-⸢din⸣"
+    ],
+    "editorial_text": "qaq-qa-du u₂-ri-⸢ṣa⸣ ana qaq-qa-du LU₂ i-ta-⸢din⸣",
+    "html_row_id": ""
+  },
+  {
+    "line": "o 11",
+    "language": "sux",
+    "tokens": [
+      "gu₂",
+      "maš₂",
+      "gu₂",
+      "lu₂-⸢še₃⸣",
+      "ba-an-šum₂"
+    ],
+    "editorial_text": "gu₂ maš₂ gu₂ lu₂-⸢še₃⸣ ba-an-šum₂",
+    "html_row_id": "P338491.22l"
+  },
+  {
+    "line": "o 11",
+    "language": "akk_or_logographic",
+    "tokens": [
+      "ki-šad",
+      "u₂-ri-ṣa",
+      "ana",
+      "ki-šad",
+      "LU₂",
+      "i-ta-din"
+    ],
+    "editorial_text": "ki-šad u₂-ri-ṣa ana ki-šad LU₂ i-ta-din",
+    "html_row_id": ""
+  },
+  {
+    "line": "o 12",
+    "language": "sux",
+    "tokens": [
+      "gaba",
+      "maš₂",
+      "gaba",
+      "lu₂-še₃",
+      "ba-an-šum₂"
+    ],
+    "editorial_text": "gaba maš₂ gaba lu₂-še₃ ba-an-šum₂",
+    "html_row_id": "P338491.24l"
+  },
+  {
+    "line": "o 12",
+    "language": "akk_or_logographic",
+    "tokens": [
+      "ir-ti",
+      "u₂-ri-ṣa",
+      "ana",
+      "ir-ti",
+      "LU₂",
+      "i-ta-din"
+    ],
+    "editorial_text": "ir-ti u₂-ri-ṣa ana ir-ti LU₂ i-ta-din",
+    "html_row_id": ""
+  },
+  {
+    "line": "o 13",
+    "language": "sux",
+    "tokens": [
+      "a₂",
+      "zid-da",
+      "maš₂",
+      "a₂",
+      "zid-da",
+      "lu₂-še₃",
+      "ba-an-šum₂"
+    ],
+    "editorial_text": "a₂ zid-da maš₂ a₂ zid-da lu₂-še₃ ba-an-šum₂",
+    "html_row_id": "P338491.26l"
+  },
+  {
+    "line": "o 13",
+    "language": "akk_or_logographic",
+    "tokens": [
+      "i-mit-tu₂",
+      "u₂-⸢ri-ṣa⸣",
+      "ana",
+      "⸢i⸣-[mit]-tu₂",
+      "LU₂",
+      "i-ta-din"
+    ],
+    "editorial_text": "i-mit-tu₂ u₂-⸢ri-ṣa⸣ ana ⸢i⸣-[mit]-tu₂ LU₂ i-ta-din",
+    "html_row_id": ""
+  },
+  {
+    "line": "o 14",
+    "language": "sux",
+    "tokens": [
+      "a₂",
+      "gab₂-⸢bu⸣",
+      "maš₂",
+      "a₂",
+      "⸢gab₂⸣-[bu]",
+      "lu₂-⸢še₃⸣",
+      "ba-an-šum₂"
+    ],
+    "editorial_text": "a₂ gab₂-⸢bu⸣ maš₂ a₂ ⸢gab₂⸣-[bu] lu₂-⸢še₃⸣ ba-an-šum₂",
+    "html_row_id": "P338491.28l"
+  },
+  {
+    "line": "o 14",
+    "language": "akk_or_logographic",
+    "tokens": [
+      "šu-mel",
+      "u₂-ri-ṣa",
+      "ana",
+      "šu-mel",
+      "LU₂",
+      "i-ta-din"
+    ],
+    "editorial_text": "šu-mel u₂-ri-ṣa ana šu-mel LU₂ i-ta-din",
+    "html_row_id": ""
+  },
+  {
+    "line": "o 15",
+    "language": "sux",
+    "tokens": [
+      "mud₂",
+      "maš₂",
+      "mud₂",
+      "lu₂-še₃",
+      "ba-an-šum₂"
+    ],
+    "editorial_text": "mud₂ maš₂ mud₂ lu₂-še₃ ba-an-šum₂",
+    "html_row_id": "P338491.30l"
+  },
+  {
+    "line": "o 15",
+    "language": "akk_or_logographic",
+    "tokens": [
+      "da-me",
+      "u₂-ri-ṣa",
+      "ana",
+      "da-me",
+      "LU₂",
+      "i-ta-din"
+    ],
+    "editorial_text": "da-me u₂-ri-ṣa ana da-me LU₂ i-ta-din",
+    "html_row_id": ""
+  },
+  {
+    "line": "r 1",
+    "language": "sux",
+    "tokens": [
+      "lipiš",
+      "maš₂",
+      "lipiš",
+      "lu₂-še₃",
+      "ba-an-šum₂"
+    ],
+    "editorial_text": "lipiš maš₂ lipiš lu₂-še₃ ba-an-šum₂",
+    "html_row_id": "P338491.33l"
+  },
+  {
+    "line": "r 1",
+    "language": "akk_or_logographic",
+    "tokens": [
+      "lib₃-bi",
+      "u₂-ri-ṣi",
+      "ana",
+      "lib₃-bi",
+      "LU₂",
+      "i-ta-din"
+    ],
+    "editorial_text": "lib₃-bi u₂-ri-ṣi ana lib₃-bi LU₂ i-ta-din",
+    "html_row_id": ""
+  },
+  {
+    "line": "r 2",
+    "language": "sux",
+    "tokens": [
+      "ti-ti",
+      "maš₂",
+      "ti-ti",
+      "lu₂-še₃",
+      "ba-an-šum₂"
+    ],
+    "editorial_text": "ti-ti maš₂ ti-ti lu₂-še₃ ba-an-šum₂",
+    "html_row_id": "P338491.35l"
+  },
+  {
+    "line": "r 2",
+    "language": "akk_or_logographic",
+    "tokens": [
+      "ṣe-li",
+      "u₂-ri-ṣi",
+      "ana",
+      "ṣe-li",
+      "LU₂",
+      "i-ta-din"
+    ],
+    "editorial_text": "ṣe-li u₂-ri-ṣi ana ṣe-li LU₂ i-ta-din",
+    "html_row_id": ""
+  },
+  {
+    "line": "r 3",
+    "language": "sux",
+    "tokens": [
+      "gu₂-mur₇",
+      "maš₂",
+      "gu₂-mur₇",
+      "lu₂-še₃",
+      "ba-an-šum₂"
+    ],
+    "editorial_text": "gu₂-mur₇ maš₂ gu₂-mur₇ lu₂-še₃ ba-an-šum₂",
+    "html_row_id": "P338491.37l"
+  },
+  {
+    "line": "r 3",
+    "language": "akk_or_logographic",
+    "tokens": [
+      "e-ṣe-en-ṣe-ri",
+      "u₂-ri-ṣi",
+      "ana",
+      "<e>-ṣe-en-ṣe-ri",
+      "LU₂",
+      "i-ta-din"
+    ],
+    "editorial_text": "e-ṣe-en-ṣe-ri u₂-ri-ṣi ana <e>-ṣe-en-ṣe-ri LU₂ i-ta-din",
+    "html_row_id": ""
+  },
+  {
+    "line": "r 4",
+    "language": "sux",
+    "tokens": [
+      "ur₂",
+      "maš₂",
+      "ur₂",
+      "lu₂-še₃",
+      "ba-an-šum₂"
+    ],
+    "editorial_text": "ur₂ maš₂ ur₂ lu₂-še₃ ba-an-šum₂",
+    "html_row_id": "P338491.39l"
+  },
+  {
+    "line": "r 4",
+    "language": "akk_or_logographic",
+    "tokens": [
+      "pe-en",
+      "u₂-ri-ṣi",
+      "ana",
+      "pe-en",
+      "LU₂",
+      "i-ta-din"
+    ],
+    "editorial_text": "pe-en u₂-ri-ṣi ana pe-en LU₂ i-ta-din",
+    "html_row_id": ""
+  },
+  {
+    "line": "r 5",
+    "language": "sux",
+    "tokens": [
+      "ur₂-kun",
+      "maš₂",
+      "ur₂-kun",
+      "lu₂-še₃",
+      "ba-an-šum₂"
+    ],
+    "editorial_text": "ur₂-kun maš₂ ur₂-kun lu₂-še₃ ba-an-šum₂",
+    "html_row_id": "P338491.41l"
+  },
+  {
+    "line": "r 5",
+    "language": "akk_or_logographic",
+    "tokens": [
+      "ra-pa-aš₂-ti",
+      "u₂-ri-ṣi",
+      "ana",
+      "ra-pa-aš₂-ti",
+      "LU₂",
+      "i-ta-din"
+    ],
+    "editorial_text": "ra-pa-aš₂-ti u₂-ri-ṣi ana ra-pa-aš₂-ti LU₂ i-ta-din",
+    "html_row_id": ""
+  },
+  {
+    "line": "r 6",
+    "language": "sux",
+    "tokens": [
+      "ŋeš₂-ge-en-ge-na",
+      "maš₂",
+      "ŋeš₂-ge-en-ge-na",
+      "lu₂-še₃",
+      "ba-an-šum₂"
+    ],
+    "editorial_text": "ŋeš₂-ge-en-ge-na maš₂ ŋeš₂-ge-en-ge-na lu₂-še₃ ba-an-šum₂",
+    "html_row_id": "P338491.43l"
+  },
+  {
+    "line": "r 6",
+    "language": "akk_or_logographic",
+    "tokens": [
+      "bi-na-at",
+      "u₂-ri-ṣi",
+      "ana",
+      "bi-na-at",
+      "LU₂",
+      "i-ta-din"
+    ],
+    "editorial_text": "bi-na-at u₂-ri-ṣi ana bi-na-at LU₂ i-ta-din",
+    "html_row_id": ""
+  },
+  {
+    "line": "r 7",
+    "language": "sux",
+    "tokens": [
+      "tu₆-dug₄-ga",
+      "inim",
+      "den-ki-ga-ke₄"
+    ],
+    "editorial_text": "tu₆-dug₄-ga inim den-ki-ga-ke₄",
+    "html_row_id": "P338491.45"
+  },
+  {
+    "line": "r 8",
+    "language": "sux",
+    "tokens": [
+      "⸢mu₇⸣-[mu₇]",
+      "⸢abzu",
+      "nam-šub⸣",
+      "eriduki-ga",
+      "nam-mu-un-da-an-bur₂-ra"
+    ],
+    "editorial_text": "⸢mu₇⸣-[mu₇] ⸢abzu nam-šub⸣ eriduki-ga nam-mu-un-da-an-bur₂-ra",
+    "html_row_id": "P338491.47"
+  },
+  {
+    "line": "r 9",
+    "language": "sux",
+    "tokens": [
+      "ka-inim-ma",
+      "[maš₂]",
+      "⸢gaba-ri⸣-ga-ke₄"
+    ],
+    "editorial_text": "ka-inim-ma [maš₂] ⸢gaba-ri⸣-ga-ke₄",
+    "html_row_id": "P338491.49"
+  },
+  {
+    "line": "r 10",
+    "language": "akk_or_logographic",
+    "tokens": [
+      "EGIR-šu₂",
+      "EN₂",
+      "⸢NAM.TAR⸣",
+      "x",
+      "x",
+      "[...]",
+      "⸢GI₄?⸣"
+    ],
+    "editorial_text": "EGIR-šu₂ EN₂ ⸢NAM.TAR⸣ x x [...] ⸢GI₄?⸣",
+    "html_row_id": "P338491.51"
+  },
+  {
+    "line": "r 11",
+    "language": "akk_or_logographic",
+    "tokens": [
+      "GIŠ",
+      "mdIM.DU.DU—ŠEŠ—MU"
+    ],
+    "editorial_text": "GIŠ mdIM.DU.DU—ŠEŠ—MU",
+    "html_row_id": "P338491.52"
+  },
+  {
+    "line": "r 12",
+    "language": "akk_or_logographic",
+    "tokens": [
+      "a-na",
+      "ta-mar-ti",
+      "mqur-di—dNERGALₓ(U.GUR)"
+    ],
+    "editorial_text": "a-na ta-mar-ti mqur-di—dNERGALₓ(U.GUR)",
+    "html_row_id": "P338491.53"
+  }
+]

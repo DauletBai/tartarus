@@ -1,0 +1,13 @@
+{
+  "date": "2026-10-24",
+  "scope": "Image-first structural test; not an independent phonetic decipherment",
+  "prior_exposure": "Known reference photo P226725 and the edited composition Q000954 have already been seen; this cannot be called fully blind. Held-out artifact photographs have not been inspected.",
+  "selection": "First three numerically ordered P identifiers from saved Q000954 metadata without a locally archived individual card at protocol time: P226422, P226524, P226526. No replacement for missing or unreadable images.",
+  "reference": "Associated photograph P226725: two different opening groups followed by a similar terminal graphic complex. Code the proposed terminal components G-A and G-B without assigning sounds or meanings.",
+  "prediction": "In each accessible held-out photograph look for the proposed terminal graphic complex after two different opening groups, in distinct ruled cells. Separately record failure to segment, damage, absence and missing views. Do not infer that one written sign equals one morpheme.",
+  "stages": ["download cards but expose image links and inventory only", "inspect photograph and record geometric observations without viewing individual editorial text", "freeze the visual observations with SHA256", "then compare editorial rows and report agreements and discrepancies"],
+  "independence": "Objects of one composition test graphic consistency; they do not independently establish the composition meaning, genealogy or ancient pronunciation. Drawings and contrast enhancement are separate from unprocessed photographs.",
+  "language_background_question": "No controlled group of readers has been tested; correctness cannot be inferred from native-language typology. A later reader study must balance knowledge of the script and compare predefined accuracy outcomes.",
+  "limits": "Known composition and pretrained model knowledge prevent a fully blind claim; native Kazakh knowledge is a hypothesis resource, not a substitute for observations; previous 20-object protocol remains separate",
+  "stop_rule": "One batch of three objects, preserving unavailable and negative cases; no automatic continuation"
+}

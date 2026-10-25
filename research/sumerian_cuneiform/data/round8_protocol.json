@@ -1,0 +1,11 @@
+{
+  "recorded_date": "2026-10-24",
+  "status": "Local plan before reading the selected grammar passages; preliminary web searches already exposed general arguments about MU and gu10, so not a fully blind study",
+  "question": "Which independent textual and phonetic observations support the first-person possessive analysis, and which only repeat the reading of the same sign?",
+  "source_selection": "Jagersma 2010 sections 8.3.1 through 8.3.4, with explicitly cited phonological cross-references; author selection is not a random sample of Sumerian",
+  "extract": "All numbered examples and explicit textual references in the selected possessive sections; keep second and third person as grammatical controls; preserve dates, bases, damaged forms and reconstruction",
+  "follow_up_rule": "Inspect the first two explicitly referenced physical texts for first-person singular examples, in source order, excluding RS25.421 and already inspected CBS346. Record inaccessible sources without substituting a convenient hit. Larger passages and unnumbered phonetic statements are tracked separately.",
+  "independence": "Different references are not automatically different artifacts or compositions; identify when possible. No count of independent phonetic confirmation from repetitions of MU alone.",
+  "outcomes": ["visible writing", "editorial reading", "reconstructed pronunciation", "grammatical function", "physical witness identity", "alternative interpretation or missing evidence"],
+  "scope_limit": "One bounded batch, no claim of exhaustive history, no ancestry percentage and no change to the book; prior 20-object protocol remains separate"
+}

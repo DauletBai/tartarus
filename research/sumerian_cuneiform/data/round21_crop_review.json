@@ -1,0 +1,15 @@
+{
+  "recorded_at": "2026-10-25T16:07:13.193864+05:00",
+  "individual_readings_opened": false,
+  "fixed_criteria_rewritten": false,
+  "crop_corrections": [
+    "Initial U07W01 box clipped the left part; expanded copy saved without deleting original.",
+    "Initial U07W02 box omitted upper part of intended motif; new first/middle occurrence crops saved, original retained."
+  ],
+  "adjudication_notes": [
+    "U05W01 and U07W01 remain partial: two clear traces must not be silently promoted to three.",
+    "Faint regular background lines do not automatically count as foreground signs. Physical origin is not assigned from these photographs.",
+    "W01 and W02 labels describe candidate configurations, not canonical signs or sounds.",
+    "Multiple crops on one tablet do not create independent object evidence."
+  ]
+}

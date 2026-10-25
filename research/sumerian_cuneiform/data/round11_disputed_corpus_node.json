@@ -1,0 +1,15 @@
+{
+  "qid": "Q000377",
+  "ref": "Q000377.64.2",
+  "line_label": "Cylinder A iii 6",
+  "form": "nu-tuku-me",
+  "cf": "tuku",
+  "gw": "acquire",
+  "sense": "to acquire, to have",
+  "norm": "nu.tuku.ø.men",
+  "morph": "NV1=nu.NV2=tuku.N5=ø.N6=men",
+  "morph2": "NV1=NEG.NV2=STEM.N5=ø.N6=COP-2-SG",
+  "period": "Lagaš II",
+  "designation": "The building of Ningirsu's temple (Gudea, cylinders A and B)",
+  "n6_value": "men"
+}

@@ -1,0 +1,7 @@
+﻿file,source,operation,x,y,w,h,note
+round29_sources/CBS12709_written_face.jpg,round29_sources/P227701_photo.jpg,sips crop,780,780,1600,1900,inspected written face; no retouch
+round29_sources/CBS12709_right_column_context.jpg,round29_sources/P227701_photo.jpg,sips crop,1300,1000,600,1220,"inspected right-column context, not full independent syllabic reading"
+round29_sources/Erdal_PDF103.png,sources/Erdal_2004_Grammar_Old_Turkic.pdf,pdftoppm page103 scale-to1800,,,,,printed95 inspected; font extraction checked
+round29_sources/Grezsa_PDF7.png,round29_sources/Kazakh_compounding_primary.pdf,pdftoppm page7 scale-to1800,,,,,printed209 inspected
+round29_sources/Hallock1940_AS7.txt,sources/Hallock_1940_Chicago_Syllabary_AS7.pdf,pdftotext -layout,,,,,searchable existing OCR; no new sign reading derived
+round29_sources/Kazakh_compounding_primary.txt,round29_sources/Kazakh_compounding_primary.pdf,pdftotext -layout,,,,,text extraction checked against selected page

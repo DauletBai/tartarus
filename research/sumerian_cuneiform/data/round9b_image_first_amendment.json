@@ -1,0 +1,10 @@
+{
+  "date": "2026-10-24",
+  "relationship_to_round9": "Separate availability-selected follow-up, not substitution of failed observations in original three-object cohort",
+  "reason": "All three round9 cards explicitly show no image available; no held-out photographs were inspected in that cohort",
+  "fixed_frame_before_inspection": ["P226887", "P226912", "P342808", "P499399"],
+  "selection_rule": "Inspect image-link metadata only for all four remaining unseen Q000954 physical records; select first numeric identifier with an actual photographic reader. Exclude drawing-only records from photo selection but retain their availability outcomes.",
+  "independence_limit": "Image availability selection and known composition; no blind semantic or random population inference",
+  "analysis_rule": "Record geometry before exposing the selected individual editorial rows; record known reference and model prior knowledge as contamination risks; keep photo and drawing distinct",
+  "stop_rule": "At most one selected new photograph; retain all unavailable records; if none available, no further frame expansion in this turn"
+}

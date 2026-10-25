@@ -1,0 +1,123 @@
+
+<!DOCTYPE html>
+<html lang="en" dir="ltr" prefix="og: http://ogp.me/ns#">
+<head>
+    <meta charset="utf-8">    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+        Lineart of P222400 - Cuneiform Digital Library Initiative    </title>
+
+            <meta name="twitter:card" content="summary">
+    
+    <meta property="og:title" content="Lineart of P222400" />
+    <meta property="og:url" content="https://cdli.earth/artifacts/222400/reader/42696" />
+    <meta property="og:site_name" content="CDLI">
+    <meta name="twitter:site" content="@cdli_news">
+
+    
+    
+    <link href="/favicon.ico" type="image/x-icon" rel="icon"><link href="/favicon.ico" type="image/x-icon" rel="shortcut icon">
+    <link rel="alternate" href="/artifacts/222400/reader/42696" hreflang="en" type="text/html"><link rel="alternate" href="/ar/artifacts/222400/reader/42696" hreflang="ar" type="text/html">
+            <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">        <link rel="stylesheet" href="/assets/css/main.css">    <link rel="stylesheet" href="/assets/css/font-awesome/css/font-awesome.min.css">    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>    <script src="/assets/js/jquery.min.js"></script>    <script src="/assets/js/js.js"></script>    <script src="/assets/js/drawer.js" defer="defer"></script>        <script src="/assets/js/matomo.js"></script></head>
+<body>
+    
+<div class="d-md-flex text-start lineart">
+    <div id="reader-viewer-container" class="position-relative">
+        <div id="viewer" class="text-center" style="background: black; height: 100vh;">
+    <p id="viewer-links">
+        <span class="py-1 px-3">
+            <a href="/dl/lineart/P222400_l.jpg" target="_blank" class="text-white">Open image <span class="fa fa-external-link"></span></a>
+                    </span>
+    </p>
+
+    <noscript>
+        <img src="/dl/lineart/P222400_l.jpg" style="max-height: 100%; max-width: 100%;">
+    </noscript>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/openseadragon@6.0.1/build/openseadragon/openseadragon.min.js" integrity="sha512-eDBJUqlHc4ZYlvBDBc4X+WIPi/1julZWKdYwIFyxW18VwzewdWPk/MEGjEijAlgUMLvGZAiGBnxdM1i0ycO83w==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script type="text/javascript">
+$(function() {
+    var overlay = $('#viewer-links span').get(0)
+    $('#viewer-links').remove()
+
+    var viewer = OpenSeadragon({
+        id: 'viewer',
+
+        // Location of UI images
+        prefixUrl: 'https://cdn.jsdelivr.net/npm/openseadragon@6.0.1/build/openseadragon/images/',
+
+        // Show navigator in top right
+        showNavigator: true,
+        navigatorPosition:   "BOTTOM_LEFT",
+        navigatorSizeRatio: 0.2,
+
+        // Show more controls
+        showFlipControl: true,
+        showRotationControl: true,
+
+        // Load image
+        preserveImageSizeOnResize: true,
+        tileSources: {
+            type: 'image',
+            url: "\/dl\/lineart\/P222400_l.jpg"        }
+    })
+
+    viewer.addControl(overlay, { anchor: OpenSeadragon.ControlAnchor.TOP_RIGHT })
+
+    // Zoom to top center of image
+    function setZoom () {
+        var zoom = viewer.viewport.imageToViewportZoom(1)
+        if (zoom < 1) {
+            viewer.viewport.zoomTo(zoom, null, true)
+            viewer.viewport.defaultZoomLevel = zoom
+            viewer.viewport.minZoomLevel = zoom
+        } else {
+            var bounds = viewer.viewport.getHomeBounds()
+            var aspect = viewer.viewport.getAspectRatio()
+            viewer.viewport.fitBoundsWithConstraints(new OpenSeadragon.Rect(
+                bounds.x,
+                bounds.y,
+                bounds.width,
+                Math.min(bounds.width / aspect, bounds.height)
+            ), true)
+        }
+    }
+    viewer.addHandler('tile-loaded', setZoom)
+    viewer.addHandler('resize', setZoom)
+})
+</script>
+
+        <button class="btn text-white bg-dark d-none d-md-block position-absolute" type="button" data-bs-toggle="collapse" data-bs-target="#reader-info" aria-expanded="false" aria-controls="reader-info">
+            <span class="fa fa-chevron-right" aria-hidden="true"></span>
+            <span class="visually-hidden">Toggle sidebar</span>
+        </button>
+    </div>
+
+    <div class="collapse show text-light bg-dark p-3" id="reader-info">
+        <h2 class="h4">
+            <a href="/artifacts/222400" class="text-white">RIME 1.09.03.05, ex. 01 (P222400)</a>        </h2>
+        <p>Official or display artifact excavated in Girsu (mod. Tello), dated to the ED IIIb (ca. 2500-2340 BC) period and now kept in Louvre Museum, Paris, France</p>
+        <p>
+            Image            
+&copy; <a href="/terms-of-use" target="_blank">[see publications]</a>
+
+        </p>
+
+        <p>
+                                </p>
+                    <h3>Transliteration</h3>
+                        <div class="d-flex flex-wrap align-items-start gap-2 mb-2">
+                                                    </div>
+            <div class="border p-3" style="height: 100vh; overflow-y: auto;">
+                <b>object boulder </b><br><b>surface a </b><br><b>column 1 </b><br>1. {d}nin-gir2-su2-ra <br>2. e2-an-na-tum2 <br>3. ensi2 <br>4. lagasz{ki} <br>5. mu pa3-da <br>6. {d}en-lil2-ke4 <br>7. a2 szum2-ma <br>8. {d}nin-gir2-su2!-ka-ke4 <br>9. sza3 pa3-da <br><b>column 2 </b><br>1. {d}nansze-ke4 <br>2. ga-zi gu7-a <br>3. {d}nin#-hur#-[sag]-ka-ke4# <br>4. mu du10# sa4-a <br>5. {d}inanna-ka-ke4 <br>6. gesztu2 szum2-ma <br>7. {d}en-ki#-ka-ke4 <br>8. ki-ag2 <br>9. {d}dumu-zi-abzu-ka-ke4 <br>10. geszkim-ti <br>11. {d}hendur-sag!-ka-ke4 <br>12. ku-li ki-ag2 <br>13. {d}lugal-uru11-ka-ke4 <br><b>column 3 </b><br>1. dumu a-kur-gal <br>2. ensi2 <br>3. lagasz[{ki}-ke4] <br>4. [{d}nin]-gir2#-su2!-ra <br>5. gir2-su{ki} <br>6. [ki]-be2 mu-na#-gi <br>7. bad3 iri-ku3-ga <br>8. mu-na-du3 <br>9. {d}nansze <br>10. NINA{ki} <br>11. mu-na-du3 <br>12. e2-an-na-tum2-e <br>13. elam hur-sag u6-ga <br>14. |GIN2.SZE3| be2-se3 <br>15. |ISZ.DU6.KID2|-bi <br>16. mu-dub <br>17. szu-nir uru18{ki!}-ka <br>18. ensi2-bi <br>19. sag-ba mu-gen <br>20. |GIN2.SZE3| be2-se3 <br>21. |ISZ.DU6.KID2|-bi <br>22. mu-dub <br>23. umma{ki} <br>24. |GIN2.SZE3| be2-se3 <br>25. |ISZ.DU6.KID2|-bi 2(u@c) <br><b>column 4 </b><br>1. [mu]-dub# <br>2. {d#}nin-gir2-su2-ra <br>3. a-sza3! ki-ag2-ga2#-ni <br>4. gu2-edin-na <br>5. szu-na mu-ni-gi4 <br>6. unu{ki} <br>7. |GIN2.SZE3| be2-se3 <br>8. uri5{ki} <br>9. |GIN2.SZE3| be2-se3 <br>10. ki-{d}utu <br>11. |GIN2.SZE3| be2-se3 <br>12. iri-az{ki} <br>13. mu-hul <br>14. ensi2-bi <br>15. mu-ug7 <br>16. mi-szi-me{ki} <br>17. mu-hul <br>18. a-ru2-a{ki} <br>19. mu-ha-lam <br>20. e2-an-na-tum2 <br>21. mu pa3!-da <br>22. {d}nin-gir2-su2-ka-da <br>23. kur-kur-re2 <br>24. sag e-dab6-sag3 <br>25. mu lugal akszak{ki}-ka <br>26. i3-zi-ga-a <br>27. e2-an-na-tum2 <br>28. mu pa3#-da <br><b>column 5 </b><br>1. {d}nin-gir2-su!-ka-ke4 <br>2. an-ta-sur-ra <br>3. {d}nin!-gir2-su2-ka-ta <br>4. zu-zu <br>5. lugal# akszak{ki} <br>6. akszak{ki}-sze3! <br>7. mu-gaz <br>8. mu-ha-lam <br>9. u4-ba <br>10. e2-an-na-tum2-ma <br>11. e2-an-na-tum2 <br>12. mu u2-rum-ma#-ni <br>13. mu GIR3-GIR3-ni <br>14. lum-ma-a <br>15. {d}nin-gir2#-su2-ra# <br>16. ix(A) gibil <br>17. mu-na-dun <br>18. lum-ma-gin7-du10 <br>19. mu mu-na-sa4 <br>20. e2-an-na-tum2 <br>21. lu2 inim-ma se3-ga <br>22. {d}nin-gir2-su2!-ka <br>23. e2-an-na-tum2 <br>24. ensi2 <br>25. lagasz#[{ki}]-ra <br>26. {d}inanna-ke4 <br><b>column 6 </b><br>1. ki an-na-ag2-ga2-da <br>2. nam-ensi2 <br>3. lagasz{ki}-ta <br>4. nam#-lugal kisz{ki} <br>5. mu-na-ta-szum2 <br>6. e2-an-na-tum2-da <br>7. elam sag e-dab6-sag3 <br>8. elam kur-ra-na bi-gi4 <br>9. kisz{ki} sag# e-dab6#-sag3 <br>10. lugal akszak{ki} <br>11. kur-ra-na! bi-gi4 <br>12. e2-an-na-tum2 <br>13. ensi2 <br>14. lagasz{ki}-ke4 <br>15. kur gu2 gar-gar <br>16. {d}nin-gir2-su!-ka-ke4 <br>17. elam SZUBUR{ki} <br>18. uru18{ki} <br>19. a-suhur-ta <br>20. |GIN2.SZE3| be2-se3 <br>21. kisz{ki} akszak{ki} <br>22. ma-ri2!{ki} <br>23. an-ta-sur-ra <br><b>column 7 </b><br>1. {d}nin-gir2-su-ka-ta <br>2. |GIN2.SZE3|# be2-se3# <br>3. {d}nin-gir2-su-ra <br>4. lum-ma-gin7-du10 <br>5. mu-na-us2 <br>6. sag-sze3 mu-ni-rig8 <br>7. e2-an-na-tum2 <br>8. a2!(DA) szum2-ma <br>9. {d}nin-gir2-su-ka-ke4 <br>10. gesz-kesz2-ra2 <br>11. lum-ma-gin7-du10 <br>12. esir2#? 1(szar2@c) gur 2(disz@t) UL <br>13. mu-ni-du3 <br>14. e2-an-na-tum2 <br>15. lu2 inim-ma se3-ga <br>16. {d}nin-gir2-su-ka-ke4 <br>17. dingir-ra-ni <br>18. {d}szul-|MUSZxPA| <br>19. e2-gal ti-ra-asz2{ki} <br>20. mu-na-du3 <br><b>column 8 </b><br>1. dumu a-kur-gal <br>2. ensi2 <br>3. lagasz{ki} <br>4. pa-bil3-ga-ni <br>5. ur-{d}nansze <br>6. ensi2 <br>7. lagasz{ki}-kam <br>            </div>
+            </div>
+</div>
+
+        <script>
+        $(document).ready(function() {
+            $('header .no-js-dd').removeClass('no-js-dd');
+        });
+    </script>
+    </body>
+</html>

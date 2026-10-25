@@ -1,0 +1,39 @@
+{
+  "parsed_files": 1456,
+  "failed_files": [
+    "etcsri/corpusjson/Q001066.json"
+  ],
+  "gin_tokens": 31,
+  "gin_compositions": 23,
+  "forms": {
+    "mu-gen₆": 4,
+    "gen₆-ne₂-da": 1,
+    "gen₆-na-da": 2,
+    "gen₆-na": 6,
+    "bi₂-in-gen₆": 1,
+    "bi₂-ge-en₆": 1,
+    "gen₆-ne₂": 1,
+    "gen₆-na-ni-ta": 2,
+    "gen₆-gen₆-na": 1,
+    "na-an-gen₆-ne₂": 1,
+    "mu-na-gen₆": 1,
+    "mu-na-ge-en₆": 8,
+    "he₂-bi₂-in-ge-en": 1,
+    "gen₆-ne₂-de₃": 1
+  },
+  "river_immediately_before": [
+    "Q000873.10.3"
+  ],
+  "physical_witnesses": 5,
+  "photos_inspected": 4,
+  "new_photos": 3,
+  "new_witness_cards": 3,
+  "numbered_lines_by_witness": {
+    "P216745": 11,
+    "P216746": 0,
+    "P216747": 13,
+    "P201507": 11,
+    "P431422": 11
+  },
+  "selection": "f.cf == 'gin'; no semantic inference from counts alone"
+}

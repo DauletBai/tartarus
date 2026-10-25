@@ -1,0 +1,10 @@
+{
+  "date": "2026-10-25",
+  "protocol_sha256": "262a6fe25d8f9596d4c545777280c51faf72a399e5064a8b3ed527f73ab6c3c2",
+  "record_sha256": "70b06a38108544eceabb4fc68f67620ab765fa12bc7e7fd57ae20d61d66e7dfb",
+  "image_hashes": {
+    "P005371_photo.jpg": "cc75427cbcd3d652326af7ffe3b946690c0085a3ebf315e28acf463faefeef94",
+    "P005372_photo.jpg": "ab70b12e795f57ed458552210e4c432ee4ee2c958cef6994987e2dcd0e13c4b0"
+  },
+  "limits": "Local integrity record; individual reading already exposed in earlier snippets; not a blind decipherment."
+}

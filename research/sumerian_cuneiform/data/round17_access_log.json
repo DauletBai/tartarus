@@ -1,0 +1,10 @@
+[
+  {
+    "url": "https://oracc2.museum.upenn.edu/etcsri/downloads/how_to.pdf",
+    "result": "curl60 TLS certificate name mismatch; no bypass used"
+  },
+  {
+    "url": "https://oracc.museum.upenn.edu/etcsri/downloads/how_to.pdf",
+    "result": "success; PDF signature verified"
+  }
+]

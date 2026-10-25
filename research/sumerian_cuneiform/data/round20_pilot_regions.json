@@ -1,0 +1,377 @@
+{
+  "created_at": "2026-10-25T12:31:17.208807+05:00",
+  "scope": "All22 mapped candidate regions in visible upper main view; not full object, all pixels or definite22 cells",
+  "reading_direction": "unestablished",
+  "regions": [
+    {
+      "region": "L01",
+      "image": "sources/round19_image_C.jpg",
+      "box_xywh": [
+        96,
+        157,
+        144,
+        74
+      ],
+      "boundary_status": "partial",
+      "description": "Fragmentary top region with diagonal grooves; no secure complete complex",
+      "candidate_groups": [],
+      "alternative": "",
+      "sound": null,
+      "meaning": null
+    },
+    {
+      "region": "L02",
+      "image": "sources/round19_image_C.jpg",
+      "box_xywh": [
+        101,
+        233,
+        139,
+        87
+      ],
+      "boundary_status": "clear",
+      "description": "Pointed angular outline and internal stroke",
+      "candidate_groups": [
+        "G01"
+      ],
+      "alternative": "",
+      "sound": null,
+      "meaning": null
+    },
+    {
+      "region": "L03",
+      "image": "sources/round19_image_C.jpg",
+      "box_xywh": [
+        106,
+        323,
+        135,
+        75
+      ],
+      "boundary_status": "clear",
+      "description": "Pointed angular outline with less clear interior",
+      "candidate_groups": [
+        "G01"
+      ],
+      "alternative": "",
+      "sound": null,
+      "meaning": null
+    },
+    {
+      "region": "L04",
+      "image": "sources/round19_image_C.jpg",
+      "box_xywh": [
+        109,
+        401,
+        134,
+        75
+      ],
+      "boundary_status": "clear",
+      "description": "Similar pointed outline, lower surface damaged",
+      "candidate_groups": [
+        "G01"
+      ],
+      "alternative": "",
+      "sound": null,
+      "meaning": null
+    },
+    {
+      "region": "L05",
+      "image": "sources/round19_image_C.jpg",
+      "box_xywh": [
+        119,
+        478,
+        126,
+        52
+      ],
+      "boundary_status": "uncertain",
+      "description": "Short angled marks; cannot equate with complete G01",
+      "candidate_groups": [],
+      "alternative": "",
+      "sound": null,
+      "meaning": null
+    },
+    {
+      "region": "L06",
+      "image": "sources/round19_image_C.jpg",
+      "box_xywh": [
+        135,
+        531,
+        110,
+        57
+      ],
+      "boundary_status": "partial",
+      "description": "Angled complex beside broken lower edge",
+      "candidate_groups": [],
+      "alternative": "",
+      "sound": null,
+      "meaning": null
+    },
+    {
+      "region": "M01",
+      "image": "sources/round19_image_C.jpg",
+      "box_xywh": [
+        242,
+        146,
+        131,
+        134
+      ],
+      "boundary_status": "partial",
+      "description": "Horizontal line over large zigzag/angled strokes",
+      "candidate_groups": [],
+      "alternative": "",
+      "sound": null,
+      "meaning": null
+    },
+    {
+      "region": "M02",
+      "image": "sources/round19_image_C.jpg",
+      "box_xywh": [
+        244,
+        282,
+        130,
+        53
+      ],
+      "boundary_status": "clear",
+      "description": "Arched horizontal stroke with downward segments",
+      "candidate_groups": [],
+      "alternative": "",
+      "sound": null,
+      "meaning": null
+    },
+    {
+      "region": "M03",
+      "image": "sources/round19_image_C.jpg",
+      "box_xywh": [
+        246,
+        338,
+        128,
+        91
+      ],
+      "boundary_status": "clear",
+      "description": "Upright stroke with one short right branch",
+      "candidate_groups": [
+        "G02"
+      ],
+      "alternative": "",
+      "sound": null,
+      "meaning": null
+    },
+    {
+      "region": "M04",
+      "image": "sources/round19_image_C.jpg",
+      "box_xywh": [
+        248,
+        434,
+        127,
+        85
+      ],
+      "boundary_status": "clear",
+      "description": "Similar upright-and-branch complex",
+      "candidate_groups": [
+        "G02"
+      ],
+      "alternative": "",
+      "sound": null,
+      "meaning": null
+    },
+    {
+      "region": "M05",
+      "image": "sources/round19_image_C.jpg",
+      "box_xywh": [
+        253,
+        523,
+        126,
+        69
+      ],
+      "boundary_status": "partial",
+      "description": "Bent/angled strokes at lower edge",
+      "candidate_groups": [],
+      "alternative": "",
+      "sound": null,
+      "meaning": null
+    },
+    {
+      "region": "R01",
+      "image": "sources/round19_image_C.jpg",
+      "box_xywh": [
+        377,
+        123,
+        170,
+        169
+      ],
+      "boundary_status": "clear",
+      "description": "Round contour with crossbar",
+      "candidate_groups": [
+        "G03"
+      ],
+      "alternative": "",
+      "sound": null,
+      "meaning": null
+    },
+    {
+      "region": "R02",
+      "image": "sources/round19_image_C.jpg",
+      "box_xywh": [
+        378,
+        296,
+        170,
+        106
+      ],
+      "boundary_status": "clear",
+      "description": "Round contour with angular interior",
+      "candidate_groups": [
+        "G04"
+      ],
+      "alternative": "",
+      "sound": null,
+      "meaning": null
+    },
+    {
+      "region": "R03",
+      "image": "sources/round19_image_C.jpg",
+      "box_xywh": [
+        381,
+        405,
+        168,
+        103
+      ],
+      "boundary_status": "clear",
+      "description": "Round contour with crossbar and descending interior stroke",
+      "candidate_groups": [
+        "G05"
+      ],
+      "alternative": "",
+      "sound": null,
+      "meaning": null
+    },
+    {
+      "region": "R04",
+      "image": "sources/round19_image_C.jpg",
+      "box_xywh": [
+        387,
+        512,
+        163,
+        88
+      ],
+      "boundary_status": "clear",
+      "description": "Small oval with several short internal strokes",
+      "candidate_groups": [
+        "G06"
+      ],
+      "alternative": "",
+      "sound": null,
+      "meaning": null
+    },
+    {
+      "region": "N01",
+      "image": "sources/round19_image_C.jpg",
+      "box_xywh": [
+        550,
+        99,
+        77,
+        79
+      ],
+      "boundary_status": "uncertain",
+      "description": "Short grooves at upper edge",
+      "candidate_groups": [],
+      "alternative": "May merge with N02/N03 if cross grooves are not cell borders",
+      "sound": null,
+      "meaning": null
+    },
+    {
+      "region": "N02",
+      "image": "sources/round19_image_C.jpg",
+      "box_xywh": [
+        550,
+        181,
+        78,
+        58
+      ],
+      "boundary_status": "uncertain",
+      "description": "Short approximately parallel/angled strokes",
+      "candidate_groups": [],
+      "alternative": "May merge with N01/N03",
+      "sound": null,
+      "meaning": null
+    },
+    {
+      "region": "N03",
+      "image": "sources/round19_image_C.jpg",
+      "box_xywh": [
+        551,
+        242,
+        76,
+        39
+      ],
+      "boundary_status": "uncertain",
+      "description": "Small mark and cross groove",
+      "candidate_groups": [],
+      "alternative": "May merge with N01/N02",
+      "sound": null,
+      "meaning": null
+    },
+    {
+      "region": "N04",
+      "image": "sources/round19_image_C.jpg",
+      "box_xywh": [
+        551,
+        284,
+        78,
+        88
+      ],
+      "boundary_status": "uncertain",
+      "description": "Angular complex in narrow region",
+      "candidate_groups": [],
+      "alternative": "May merge with N05",
+      "sound": null,
+      "meaning": null
+    },
+    {
+      "region": "N05",
+      "image": "sources/round19_image_C.jpg",
+      "box_xywh": [
+        552,
+        376,
+        78,
+        75
+      ],
+      "boundary_status": "uncertain",
+      "description": "Angular complex bounded by cross groove",
+      "candidate_groups": [],
+      "alternative": "May merge with N04",
+      "sound": null,
+      "meaning": null
+    },
+    {
+      "region": "N06",
+      "image": "sources/round19_image_C.jpg",
+      "box_xywh": [
+        552,
+        454,
+        80,
+        108
+      ],
+      "boundary_status": "clear",
+      "description": "Tall framed shape with internal cross strokes",
+      "candidate_groups": [],
+      "alternative": "",
+      "sound": null,
+      "meaning": null
+    },
+    {
+      "region": "E01",
+      "image": "sources/round19_image_C.jpg",
+      "box_xywh": [
+        631,
+        79,
+        72,
+        373
+      ],
+      "boundary_status": "partial",
+      "description": "Narrow curved edge region with marks; internal segmentation not attempted",
+      "candidate_groups": [],
+      "alternative": "Not counted as a complete cell",
+      "sound": null,
+      "meaning": null
+    }
+  ]
+}

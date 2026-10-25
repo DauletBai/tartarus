@@ -1,0 +1,123 @@
+
+<!DOCTYPE html>
+<html lang="en" dir="ltr" prefix="og: http://ogp.me/ns#">
+<head>
+    <meta charset="utf-8">    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+        Photo (detail) of P232275 - Cuneiform Digital Library Initiative    </title>
+
+            <meta name="twitter:card" content="summary">
+    
+    <meta property="og:title" content="Photo (detail) of P232275" />
+    <meta property="og:url" content="https://cdli.earth/artifacts/232275/reader/128352" />
+    <meta property="og:site_name" content="CDLI">
+    <meta name="twitter:site" content="@cdli_news">
+
+    
+    
+    <link href="/favicon.ico" type="image/x-icon" rel="icon"><link href="/favicon.ico" type="image/x-icon" rel="shortcut icon">
+    <link rel="alternate" href="/artifacts/232275/reader/128352" hreflang="en" type="text/html"><link rel="alternate" href="/ar/artifacts/232275/reader/128352" hreflang="ar" type="text/html">
+            <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">        <link rel="stylesheet" href="/assets/css/main.css">    <link rel="stylesheet" href="/assets/css/font-awesome/css/font-awesome.min.css">    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>    <script src="/assets/js/jquery.min.js"></script>    <script src="/assets/js/js.js"></script>    <script src="/assets/js/drawer.js" defer="defer"></script>        <script src="/assets/js/matomo.js"></script></head>
+<body>
+    
+<div class="d-md-flex text-start ">
+    <div id="reader-viewer-container" class="position-relative">
+        <div id="viewer" class="text-center" style="background: black; height: 100vh;">
+    <p id="viewer-links">
+        <span class="py-1 px-3">
+            <a href="/dl/photo/P232275_d.jpg" target="_blank" class="text-white">Open image <span class="fa fa-external-link"></span></a>
+                    </span>
+    </p>
+
+    <noscript>
+        <img src="/dl/photo/P232275_d.jpg" style="max-height: 100%; max-width: 100%;">
+    </noscript>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/openseadragon@6.0.1/build/openseadragon/openseadragon.min.js" integrity="sha512-eDBJUqlHc4ZYlvBDBc4X+WIPi/1julZWKdYwIFyxW18VwzewdWPk/MEGjEijAlgUMLvGZAiGBnxdM1i0ycO83w==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script type="text/javascript">
+$(function() {
+    var overlay = $('#viewer-links span').get(0)
+    $('#viewer-links').remove()
+
+    var viewer = OpenSeadragon({
+        id: 'viewer',
+
+        // Location of UI images
+        prefixUrl: 'https://cdn.jsdelivr.net/npm/openseadragon@6.0.1/build/openseadragon/images/',
+
+        // Show navigator in top right
+        showNavigator: true,
+        navigatorPosition:   "BOTTOM_LEFT",
+        navigatorSizeRatio: 0.2,
+
+        // Show more controls
+        showFlipControl: true,
+        showRotationControl: true,
+
+        // Load image
+        preserveImageSizeOnResize: true,
+        tileSources: {
+            type: 'image',
+            url: "\/dl\/photo\/P232275_d.jpg"        }
+    })
+
+    viewer.addControl(overlay, { anchor: OpenSeadragon.ControlAnchor.TOP_RIGHT })
+
+    // Zoom to top center of image
+    function setZoom () {
+        var zoom = viewer.viewport.imageToViewportZoom(1)
+        if (zoom < 1) {
+            viewer.viewport.zoomTo(zoom, null, true)
+            viewer.viewport.defaultZoomLevel = zoom
+            viewer.viewport.minZoomLevel = zoom
+        } else {
+            var bounds = viewer.viewport.getHomeBounds()
+            var aspect = viewer.viewport.getAspectRatio()
+            viewer.viewport.fitBoundsWithConstraints(new OpenSeadragon.Rect(
+                bounds.x,
+                bounds.y,
+                bounds.width,
+                Math.min(bounds.width / aspect, bounds.height)
+            ), true)
+        }
+    }
+    viewer.addHandler('tile-loaded', setZoom)
+    viewer.addHandler('resize', setZoom)
+})
+</script>
+
+        <button class="btn text-white bg-dark d-none d-md-block position-absolute" type="button" data-bs-toggle="collapse" data-bs-target="#reader-info" aria-expanded="false" aria-controls="reader-info">
+            <span class="fa fa-chevron-right" aria-hidden="true"></span>
+            <span class="visually-hidden">Toggle sidebar</span>
+        </button>
+    </div>
+
+    <div class="collapse show text-light bg-dark p-3" id="reader-info">
+        <h2 class="h4">
+            <a href="/artifacts/232275" class="text-white">RIME 3/1.01.07, St B witness (P232275)</a>        </h2>
+        <p>Official or display statue excavated in Girsu (mod. Tello), dated to the Lagash II (ca. 2200-2100 BC) period and now kept in Louvre Museum, Paris, France</p>
+        <p>
+            Image            
+&copy; <a href="/collections/647">Louvre Museum, Paris, France</a>
+
+        </p>
+
+        <p>
+                                </p>
+                    <h3>Transliteration</h3>
+                        <div class="d-flex flex-wrap align-items-start gap-2 mb-2">
+                                                    </div>
+            <div class="border p-3" style="height: 100vh; overflow-y: auto;">
+                <b>object statue </b><br><b>surface a </b><br><b>column 1 </b><br>1. e2 {d}nin-gir2-su <br>2. lugal-na-ta <br>3. alan gu3-de2-a <br>4. ensi2 <br>5. lagasz{ki} <br>6. lu2 e2-ninnu <br>7. in-du3-a-ke4 <br>8. 1(asz@c) sila3 kasz <br>9. 1(asz@c) sila3 ninda <br>10. 1/2(asz@c) sila3 zi3-dub-dub <br>11. 1/2(asz@c) sila3 nig2-ar3-ra imgaga3 <br>12. sa2-du11-ba gal2-la-am3 <br>13. ensi2 <br>14. inim bi2-ib2-gi4-gi4-a <br>15. me {d}nin-gir2-su-ka <br>16. ba-ni-ib2-la2-a <br>17. sa2-du11-na <br>18. e2 {d}nin-gir2-su-ka-ta <br>19. inim he2-eb2-gi4 <br>20. du11-du11-ni he2-kesz2 <br><b>column 2 </b><br>1. {d}nin-gir2-su <br>2. ur-sag kal-ga <br>3. {d}en-lil2-la2-ra <br>4. gu3-de2-a <br>5. mu gil-sa <br>6. ensi2 <br>7. lagasz{ki} <br>8. sipa sza3-ge pa3-da <br>9. {d}nin-gir2-su-ka-ke4 <br>10. igi zi bar-ra <br>11. {d}nansze-ke4 <br>12. a2 szum2-ma <br>13. {d}nin-dar-a-ke4 <br>14. lu2 inim-ma se3-ga <br>15. {d}ba-ba6-ke4 <br>16. dumu tu-da <br>17. {d}ga2-tum3-du10-ke4 <br>18. nam-nir-gal2 gidri mah szum2-ma <br>19. {d}ig-alim-ka-ke4 <br><b>column 3 </b><br>1. zi-sza3-gal2-la szu dagal du11-ga <br>2. {d}szul-sza3-ga-ka-ke4 <br>3. sag zi ukken-na pa e3-a <br>4. {d}nin-gesz-zi-da <br>5. dingir-ra-na-ke4 <br>6. u4 {d}nin-gir2-su-ke4 <br>7. iri-ni-sze3 igi zi im-szi-bar-ra <br>8. gu3-de2-a <br>9. sipa zi-sze3 kalam-ma ba-ni-pa3-da <br>10. sza3 lu2 1(szar&#039;u@v)-ta <br>11. szu-ni ba-ta-an-dab5-ba-a <br>12. iri mu-ku3 izi im-ma-ta-la2 <br>13. {gesz}u3-szub mu-gar <br>14. sig4 masz-e bi2-pa3 <br>15. lu2 uzug5-ga ni2 gal2 <br><b>column 4 </b><br>1. lu2 si gi4-a <br>2. gesz3 bir2 <br>3. munus kin du11-ga <br>4. iri im-ta-e3 <br>5. dusu-bi munus-e nu-il2 <br>6. sag-ur-sag-e mu-na-du3 <br>7. e2 {d}nin-gir2-su-ka <br>8. eridu{ki}-gin7 <br>9. ki sikil-la bi2-du3 <br>10. usan3 la-ba-sag3 <br>11. {kusz}a2-si la-ba-sag3 <br>12. ama dumu-ne2 nig2 nu ma-ni-ra <br>13. szagina <br>14. nu-banda3 <br>15. ugula <br>16. lu2-zi-ga <br>17. kin-a gub-ba-ba <br>18. siki {gesz}garig2-ak <br>19. nam-sag3 szu-ba mu-gal2-am3 <br><b>column 5 </b><br>1. ki-mah iri-ka al nu-gar <br>2. ad8 ki nu-tum2 <br>3. gala-e balag nu-du er2 nu-ta-e3 <br>4. ama-er2-ke4 er2 nu-bi2-du11 <br>5. ki-sur-ra <br>6. lagasz{ki}-ka <br>7. lu2 di tuku <br>8. ki nam-erim2-sze3 <br>9. lu2 nu-gen <br>10. lu2 ur5-ra <br>11. e2 lu2-ka nu-kux(KWU634) <br>12. {d}nin-gir2-su <br>13. lugal-a-ni <br>14. nig2-du7-e pa mu-na-e3 <br>15. e2-ninnu anzu2{muszen}-babbar2-ra-ni <br>16. mu-na-du3 <br>17. ki-be2 mu-na-gi4 <br>18. sza3-ba gi-gun4 ki-ag2-ni <br>19. szim erin-na <br>20. mu-na-ni-du3 <br>21. u4 e2 {d}nin-gir2-su-ka <br>22. mu-du3-a <br>23. {d}nin-gir2-su <br>24. lugal ki-ag2-ni-e <br>25. a-ab-ba igi-nim-ta <br>26. a-ab-ba sig-ga-sze3 <br>27. giri3-bi gal2 mu-na-tak4 <br>28. ama-a-num2 hur-sag erin-ta <br>29. [{gesz}]erin <br>30. [gid2]-bi 1(gesz2) kusz3 <br>31. [{gesz}]erin <br>32. [gid2]-bi 5(u) kusz3 <br>33. [{gesz}]taskarin <br>34. gid2-bi 2(u) 5(disz) kusz3 <br>35. ad-sze3 mu-ak-ak <br>36. kur-bi im-ta-e11 <br>37. szar2-ur3 a-ma-ru me3-ka-ni <br>38. mu-na-du3 <br>39. szar2-gaz {uruda}gag igi-imin <br>40. mu-na-du3 <br>41. {uruda}gag dur10-da-ka-ni <br>42. mu-na-du3 <br>43. {uruda}gag dur10 al-lu5-ni <br>44. mu-na-du3 <br>45. {gesz}erin-bi <br>46. ig gal-sze3 <br>47. mu-dim2 <br>48. ul ku3-ga mi-ni-gun3 <br>49. e2-ninnu-a <br>50. mu-na-lah4 <br>51. e2-mah ki a-sig de2-da-na <br>52. gesz-ur3-sze3 mu-na-gar <br>53. iri ur-su{ki} <br>54. hur-sag eb-la-ta <br>55. {gesz}za-ba-lum <br>56. {gesz}u3-suh5 gal-gal <br>57. {gesz}tu-lu-bu-um gesz kur <br>58. ad-sze3 mu-ak-ak <br><b>column 6 </b><br>1. e2-ninnu-a <br>2. gesz-ur3-sze3 mu-na-gar <br>3. u3-ma-num2 <br>4. hur-sag me-nu-a-ta <br>5. bu3-sal-la <br>6. hur-sag mar-tu-ta <br>7. {na4}na gal <br>8. im-ta-e11 <br>9. na-ru2-a-sze3 <br>10. mu-dim2 <br>11. kisal e2-ninnu-ka <br>12. mu-na-ni-du3 <br>13. ti-da-num2 <br>14. hur-sag mar-tu-ta <br>15. gesznux(SZIR)-gal lagab-bi-a <br>16. mi-ni-de6 <br>17. ur-pad-da-sze3 <br>18. mu-na-dim2-dim2 <br>19. sag-gul-sze3 <br>20. e2-a mi-ni-si-si <br>21. abul-at{ki} <br>22. hur-sag ki-masz-ka <br>23. uruda mu-ni-ba-al <br>24. szita2 ub-e nu-il2-sze3 <br>25. mu-na-dim2 <br>26. kur me-luh-ha <br>27. {gesz}esi im-ta-e11 <br>28. mu-na-du3 <br>29. lagab nir3 <br>30. im-ta-e11 <br>31. szita2 ur sag esz8-sze3 <br>32. mu-na-dim2 <br>33. ku3-sig17 sahar-ba <br>34. hur-sag ha-hu-um-ta <br>35. im-ta-e11 <br>36. szita2 ur sag esz8-a <br>37. mu-na-gar <br>38. ku3-sig17 sahar-ba <br>39. kur me-luh-ha-ta <br>40. im-ta-e11 <br>41. e2-mar-uru5-sze3 <br>42. mu-na-dim2 <br>43. ab2-ri <br>44. im-ta-e11 <br>45. gu-bi-in{ki} <br>46. kur {gesz}ha-lu-ub2-ta <br>47. {gesz}ha-lu-ub2 <br>48. im-ta-e11 <br>49. muszen szar2-ur3-sze3 <br>50. mu-na-dim2 <br>51. ma-ad-ga{ki} <br>52. hur-sag i7 lu2-ru-da-ta <br>53. esir2 gu2 1(szar&#039;u@v) <br>54. im-ta-e11 <br>55. ki-sa2 e2-ninnu-ka <br>56. mu-ni-du3 <br>57. {im}ha-um <br>58. im-ta-e11 <br>59. hur-sag bar-me-ta <br>60. {na4}na lu-a <br>61. ma2 gal-gal-a <br>62. im-mi-si-si <br>63. ur2 e2-ninnu-ka mu-na-ni-gur <br>64. {gesz}tukul iri an-sza-an elam{ki} <br>65. mu-sag3 <br>66. nam-ra-ak-bi <br>67. {d}nin-gir2-su-ra <br>68. e2-ninnu-a <br>69. mu-na-ni-kux(KWU634) <br>70. gu3-de2-a <br>71. ensi2 <br>72. lagasz{ki}-ke4 <br>73. u4 e2-ninnu <br>74. {d}nin-gir2-su-ra mu-na-du3-a <br>76. gil-sa im-mi-ak <br>77. e2 ur5-gin7 dim2-ma <br><b>column 7 </b><br>1. ensi2 asz-e <br>2. {d}nin-gir2-su-ra <br>3. nu-na-du3 <br>4. na-mu-du3 <br>5. mu mu-sar <br>6. nig2-du7 pa bi2-e3 <br>7. du11-du11-ga <br>8. {d}nin-gir2-su-ka-ke4 <br>9. szu zi im-mi-gar <br>10. kur ma2-gan{ki}-ta <br>11. {na4}esi im-ta-e11 <br>12. alan-na-sze3 <br>13. mu-du2 <br>14. lugal-mu <br>15. e2-a-ni <br>16. mu-na-du3 <br>17. nam-ti nig2-ba-mu <br>18. mu-sze3 mu-na-sa4 <br>19. e2-ninnu-a <br>20. mu-na-ni-kux(KWU634) <br>21. gu3-de2-a <br>22. alan-e <br>23. inim im-ma-szum2-mu <br>24. alan lugal-mu <br>25. u3-na-du11 <br>26. u4 e2-ninnu <br>27. e2 ki-ag2-ga2-ni <br>28. mu-na-du3-a <br>29. ur5 mu-du8 szu szu mu-luh <br>30. u4 7(asz@c)-am3 sze la-ba-ar3 <br>31. geme2 nin-a-ni mu-da-sa2-am3 <br>32. ARAD2-de3 <br>33. lugal-ni za3 mu-da-gub-am3 <br>34. iri-ga2 u2-sig-ni <br>35. za3-ba mu-da-nu2-am3 <br>36. nig2-erim2 e2-bi-a <br>37. im-mi-gi4 <br>38. nig2-gi-gi-na <br>39. {d}nansze <br>40. {d}nin-gir2-su-ka-sze3 <br>41. en3 im-ma-szi-tar <br>42. nu-siki lu2 nig2-tuku nu-mu-na-gar <br>43. na-ma-su lu2 a2-tuku nu-mu-na-gar <br>44. e2 dumu-nita2 nu-tuku <br>45. dumu-munus-bi i3-bi2-la-ba <br>46. mi-ni-kux(KWU634) <br>47. alan-na <br>48. inim-sze3 im-ma-dab5 <br>49. alan-e <br>50. u3 ku3 nu za-gin3 nu-ga-am3 <br>51. u3 uruda nu u3 nagga nu <br>52. zabar nu <br>53. kin-ga2 lu2 nu-ba-ga2-ga2 <br>54. {na4}esi-am3 <br>55. ki-a-nag-e ha-ba-gub <br>56. nig2 a2 zi-ga-ka <br>57. lu2 nam-mi-gul-e <br>58. alan igi-zu <br>59. {d}nin-gir2-su-ka-kam <br>60. alan <br>61. gu3-de2-a <br><b>column 8 </b><br>1. ensi2 <br>2. lagasz{ki}-ka <br>3. lu2 e2-ninnu <br>4. {d}nin-gir2-su-ka <br>5. in-du3-a <br>6. lu2 e2-ninnu-ta <br>7. im-ta-ab-e3-e3-a <br>8. mu-sar-ra-bi <br>9. szu ib2-ta-ab-ur3-a <br>10. lu2 ib2-ze-re-a <br>11. za3-mu du10-ka <br>12. lu2 dingir-mu-gin7 <br>13. dingir-ra-ni <br>14. {d}nin-gir2-su <br>15. lugal-mu <br>16. ug3-ga2 gu3 u3-na-de2-a <br>17. di ku5-a-ga2 <br>18. szu i3-ib2-bala-e-a <br>19. nig2-ba-ga2 <br>20. ba-a-gi4-gi4-da <br>21. en3-du ka kesz2-ra2-mu <br>22. mu-mu u3-ta-gar <br>23. mu-ni ba-ga2-ga2 <br>24. kisal {d}nin-gir2-su lugal-ga2-ka <br>25. esz3 gar-ra-bi bi2-ib2-tak4-tak4-a <br>26. igi-ni-sze3 nu-tuku-a <br>27. u4 ul-li2-ta <br>28. numun i-a-ta <br>29. ensi2 <br>30. lagasz{ki} <br>31. e2-ninnu <br>32. {d}nin-gir2-su <br>33. lugal-mu <br>34. u3-na-du3-a <br>35. lu2 nig2-du7-e pa e3-a-am3 <br>36. inim-inim-ni <br>37. lu2 nu-u3-kur2-e <br>38. di ku5-a-na szu nu-bala-e <br>39. gu3-de2-a <br>40. ensi2 <br>41. lagasz{ki}-ka <br>42. lu2 inim-ni ib2-kur2-a <br>43. di ku5-a-na szu i3-ib2-bala-e-a <br>44. an-e <br>45. {d}en-lil2-e <br>46. {d}nin-hur-sag-ke4 <br>47. {d}en-ki du11-ga zi-da-ke4 <br>48. {d}suen mu-ni lu2 nu-du8-de3 <br>49. {d}nin-gir2-su <br>50. lugal {gesz}tukul-ke4 <br>51. {d}nansze <br>52. nin in-dub-ba-ke4 <br>53. {d}nin-dar-a <br>54. lugal ur-sag-e <br>55. ama lagasz{ki} <br>56. ku3 {d}ga2-tum3-du10-e <br>57. {d}ba-ba6 <br>58. nin dumu-sag an-na-ke4 <br>59. {d}inanna <br>60. nin me3-ke4 <br>61. {d}utu <br>62. lugal ni-se3-ga-ke4 <br>63. {d}hendur-sag <br>64. nimgir kalam-ma-ke4 <br>65. {d}ig-alim-ke4 <br>66. {d}szul-sza3-ga-na-ke4 <br>67. {d}nin-mar{ki} <br><b>column 9 </b><br>1. dumu-sag {d}nansze-ke4 <br>2. {d}dumu-zi-abzu <br>3. nin ki-nu-nir{ki}-ke4 <br>4. dingir-mu {d}nin-gesz-zi-da-ke4 <br>5. nam-tar-ra-ni he2-dab6-kur2-ne <br>6. gu4-gin7 <br>7. u4-bar7-na he2-gaz <br>8. am-gin7 <br>9. a2 husz-na he2-dab5 <br>10. {gesz}dur2-gar lu2 mu-na-gub-a-ni <br>11. sahar-ra he2-em-ta-tusz <br>12. tukumx(|SZU.TUR|)-bi <br>13. mu-bi szu ur3-de3 <br>14. gesztu2 he2-em-szi-gub <br>15. mu-ni e2 dingir-ra-na-ta <br>16. dub-ta he2-em-ta-gar <br>17. dingir-ra-ne2 <br>18. ug3 ga2-ra-a igi na-szi-bar-re <br>19. szeg7 an-na he2-da-a-gi4 <br>20. a ki-a he2-da-a-gi4 <br>21. mu nu-gal2-la ha-mu-na-ta-e3 <br>22. bala-a-na sze-gar he2-gal2 <br>23. lu2-bi <br>24. lu2 lu2 si-sa2-ra nig2-erim2 ak-gin7 <br>24. til-bi an-na ur3-ru14 he2-mi-gal2 <br>26. szu na-ni-ba-re <br>27. gaba-gal2 dingir-re-ne-ka <br>28. en {d}nin-gir2-su-ka <br>29. nam-mah-a-ni <br>30. kalam-e he2-zu-zu<br>            </div>
+            </div>
+</div>
+
+        <script>
+        $(document).ready(function() {
+            $('header .no-js-dd').removeClass('no-js-dd');
+        });
+    </script>
+    </body>
+</html>

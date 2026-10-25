@@ -1,0 +1,14 @@
+[
+  {
+    "file": "Poebel1914_IA_metadata.json",
+    "url": "https://archive.org/metadata/historicalandgr00sectgoog",
+    "returncode": 28,
+    "error": "curl: (28) Connection timed out after 30004 milliseconds\n"
+  },
+  {
+    "file": "NippurEa_Q000055_score.html",
+    "url": "https://oracc.museum.upenn.edu/dcclt/Q000055/score",
+    "returncode": 0,
+    "error": ""
+  }
+]

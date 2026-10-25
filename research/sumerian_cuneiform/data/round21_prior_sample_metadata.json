@@ -1,0 +1,126 @@
+{
+  "only_metadata_exposed": true,
+  "individual_editorial_text_opened": false,
+  "records": [
+    {
+      "label": "A01",
+      "card_file": "sources/round19_selected_card_withheld.html",
+      "period": "Uruk III (ca. 3200-3000 BC)",
+      "provenience": "Uruk (mod. Warka)",
+      "type": "Tablet",
+      "language": "Undetermined"
+    },
+    {
+      "label": "A02",
+      "card_file": "sources/round19_image_B_card_withheld.html",
+      "period": "Uruk III (ca. 3200-3000 BC)",
+      "provenience": "Uruk (mod. Warka)",
+      "type": "Tablet",
+      "language": "Undetermined"
+    },
+    {
+      "label": "A03",
+      "card_file": "sources/round19_image_C_card_withheld.html",
+      "period": "Uruk IV (ca. 3350-3200 BC)",
+      "provenience": "Uruk (mod. Warka)",
+      "type": "Tablet",
+      "language": "Undetermined"
+    },
+    {
+      "label": "A04",
+      "card_file": "sources/round20_A04_card_withheld.html",
+      "period": "Uruk IV (ca. 3350-3200 BC)",
+      "provenience": "Uruk (mod. Warka)",
+      "type": "Tablet",
+      "language": "Undetermined"
+    },
+    {
+      "label": "A05",
+      "card_file": "sources/round20_A05_card_withheld.html",
+      "period": "Uruk IV (ca. 3350-3200 BC)",
+      "provenience": "Uruk (mod. Warka)",
+      "type": "Tablet",
+      "language": "Undetermined"
+    },
+    {
+      "label": "A06",
+      "card_file": "sources/round20_A06_card_withheld.html",
+      "period": "Uruk IV (ca. 3350-3200 BC)",
+      "provenience": "Uruk (mod. Warka)",
+      "type": "Tablet",
+      "language": "Undetermined"
+    },
+    {
+      "label": "A07",
+      "card_file": "sources/round20_A07_card_withheld.html",
+      "period": "Uruk IV (ca. 3350-3200 BC)",
+      "provenience": "Uruk (mod. Warka)",
+      "type": "Tablet",
+      "language": "Undetermined"
+    },
+    {
+      "label": "A08",
+      "card_file": "sources/round20_A08_card_withheld.html",
+      "period": "Uruk III (ca. 3200-3000 BC)",
+      "provenience": "Uruk (mod. Warka)",
+      "type": "Tablet",
+      "language": "Undetermined"
+    },
+    {
+      "label": "A09",
+      "card_file": "sources/round20_A09_card_withheld.html",
+      "period": "Uruk III (ca. 3200-3000 BC)",
+      "provenience": "Uruk (mod. Warka)",
+      "type": "Tablet",
+      "language": "Undetermined"
+    },
+    {
+      "label": "A10",
+      "card_file": "sources/round20_A10_card_withheld.html",
+      "period": "Uruk III (ca. 3200-3000 BC)",
+      "provenience": "Uruk (mod. Warka)",
+      "type": "Tablet",
+      "language": "Undetermined"
+    },
+    {
+      "label": "A11",
+      "card_file": "sources/round20_A11_card_withheld.html",
+      "period": "Uruk III (ca. 3200-3000 BC)",
+      "provenience": "Uruk (mod. Warka)",
+      "type": "Tablet",
+      "language": "Undetermined"
+    },
+    {
+      "label": "A12",
+      "card_file": "sources/round20_A12_card_withheld.html",
+      "period": "Uruk III (ca. 3200-3000 BC)",
+      "provenience": "Uruk (mod. Warka)",
+      "type": "Tablet",
+      "language": "Undetermined"
+    },
+    {
+      "label": "A13",
+      "card_file": "sources/round20_A13_card_withheld.html",
+      "period": "Uruk III (ca. 3200-3000 BC)",
+      "provenience": "Uruk (mod. Warka)",
+      "type": "Tablet",
+      "language": "Undetermined"
+    },
+    {
+      "label": "A14",
+      "card_file": "sources/round20_A14_card_withheld.html",
+      "period": "Uruk III (ca. 3200-3000 BC)",
+      "provenience": "Uruk (mod. Warka)",
+      "type": "Tablet",
+      "language": "Undetermined"
+    },
+    {
+      "label": "A15",
+      "card_file": "sources/round20_A15_card_withheld.html",
+      "period": "Uruk III (ca. 3200-3000 BC)",
+      "provenience": "Uruk (mod. Warka)",
+      "type": "Tablet",
+      "language": "Undetermined"
+    }
+  ]
+}

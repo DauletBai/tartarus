@@ -1,0 +1,30 @@
+[
+  {
+    "file": "Schrakamp2018_Irrigation.pdf",
+    "url": "https://refubium.fu-berlin.de/bitstream/fub188/23835/1/bsa_053_07.pdf",
+    "returncode": 0,
+    "bytes": 7439,
+    "error": ""
+  },
+  {
+    "file": "Jordanova2015_Ereskigal.pdf",
+    "url": "https://d-nb.info/1245935917/34",
+    "returncode": 0,
+    "bytes": 3346914,
+    "error": ""
+  },
+  {
+    "file": "OSL_A.html",
+    "url": "https://oracc2.museum.upenn.edu/osl/signlist/l0065/o0000087/index.html",
+    "returncode": 60,
+    "bytes": 0,
+    "error": "curl: (60) SSL: no alternative certificate subject name matches target host name 'oracc2.museum.upenn.edu'\nMore details here: https://curl.se/docs/sslcerts.html\n\ncurl failed to verify the legitimacy of the server and therefore could not\nestablish a secure connection to it. To learn more about this situation and\nhow to fix it, please visit the web p"
+  },
+  {
+    "file": "ePSD_id_river.html",
+    "url": "https://oracc.museum.upenn.edu/epsd2/cbd/sux/o0030551.html",
+    "returncode": 0,
+    "bytes": 122605,
+    "error": ""
+  }
+]

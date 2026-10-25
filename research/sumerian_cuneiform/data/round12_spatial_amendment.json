@@ -1,0 +1,26 @@
+{
+  "date": "2026-10-25",
+  "stage": "spatial amendment after visual freeze, before individual editorial rows extraction",
+  "reason": "Native-image coordinate arithmetic corrected after images were displayed at a reduced screen size. Initial record preserved; graphic descriptions unchanged.",
+  "replaces_only_G01_example_boxes": {
+    "A_upper": [
+      1000,
+      1700,
+      1450,
+      2130
+    ],
+    "A_lower": [
+      1080,
+      2230,
+      1350,
+      2700
+    ],
+    "B_upper": [
+      1190,
+      1220,
+      1370,
+      1530
+    ]
+  },
+  "limitations": "These are bounding regions for visual comparison, not independently decided sign boundaries."
+}

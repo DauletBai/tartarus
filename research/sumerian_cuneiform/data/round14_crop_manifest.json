@@ -1,0 +1,47 @@
+[
+  {
+    "object": 329081,
+    "view": 1,
+    "source": "sources/Met329081_view1.jpg",
+    "file": "data/round14_Met329081_view1_native.jpg",
+    "box_xyxy": [
+      600,
+      1200,
+      2400,
+      2800
+    ],
+    "width": 1800,
+    "height": 1600,
+    "method": "native crop; JPEG recompression; no resizing or sign enhancement"
+  },
+  {
+    "object": 327385,
+    "view": 1,
+    "source": "sources/Met327385_view1.jpg",
+    "file": "data/round14_Met327385_view1_native.jpg",
+    "box_xyxy": [
+      350,
+      1200,
+      2650,
+      2800
+    ],
+    "width": 2300,
+    "height": 1600,
+    "method": "native crop; JPEG recompression; no resizing or sign enhancement"
+  },
+  {
+    "object": 327385,
+    "view": 2,
+    "source": "sources/Met327385_view2.jpg",
+    "file": "data/round14_Met327385_view2_native.jpg",
+    "box_xyxy": [
+      350,
+      1200,
+      2650,
+      2800
+    ],
+    "width": 2300,
+    "height": 1600,
+    "method": "native crop; JPEG recompression; no resizing or sign enhancement"
+  }
+]

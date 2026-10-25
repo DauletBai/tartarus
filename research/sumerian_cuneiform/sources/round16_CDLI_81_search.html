@@ -1,0 +1,529 @@
+
+<!DOCTYPE html>
+<html lang="en" dir="ltr" prefix="og: http://ogp.me/ns#">
+<head>
+    <meta charset="utf-8">    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+        Search results - Cuneiform Digital Library Initiative    </title>
+
+            <meta name="twitter:card" content="summary">
+    
+    <meta property="og:title" content="Search results" />
+    <meta property="og:url" content="https://cdli.earth/search?museum_no=81-7-27&limit=100" />
+    <meta property="og:site_name" content="CDLI">
+    <meta name="twitter:site" content="@cdli_news">
+
+    
+    
+    
+    <link href="/favicon.ico" type="image/x-icon" rel="icon"><link href="/favicon.ico" type="image/x-icon" rel="shortcut icon">
+    <link rel="alternate" href="/search?museum_no=81-7-27&amp;amp;limit=100" hreflang="en" type="text/html"><link rel="alternate" href="/ar/search?museum_no=81-7-27&amp;amp;limit=100" hreflang="ar" type="text/html">
+            <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">        <link rel="stylesheet" href="/assets/css/main.css">    <link rel="stylesheet" href="/assets/css/font-awesome/css/font-awesome.min.css">    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>    <script src="/assets/js/jquery.min.js"></script>    <script src="/assets/js/js.js"></script>    <script src="/assets/js/drawer.js" defer="defer"></script>    <script src="/assets/js/searchResult.js"></script>    <script src="/assets/js/matomo.js"></script></head>
+<body>
+    <!-- White translucent film  -->
+    <div class="translucent-film d-none" id="faded-bg"></div>
+    <!-- End White translucent film  -->
+
+    <noscript>
+        <p class="alert alert-secondary text-center mb-0" role="alert">
+            JavaScript is disabled or not supported in your browser. If possible, enable it for a better experience.        </p>
+    </noscript>
+
+    <header>
+        <div class="bg-foggy-grey navbar navbar-expand d-none d-lg-block">
+            <nav class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                                        <li class="publication-nav nav-item mx-3 dropdown no-js-dd">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Publications                        </a>
+                        <nav class="dropdown-menu no-js-dd-content mt-0">
+                            <a href="/articles/cdlj" class="dropdown-item">Cuneiform Digital Library Journal</a>                            <a href="/articles/cdlb" class="dropdown-item">Cuneiform Digital Library Bulletin</a>                            <a href="/articles/cdln" class="dropdown-item">Cuneiform Digital Library Notes</a>                            <a href="/articles/cdlp" class="dropdown-item">Cuneiform Digital Library Preprint</a>                        </nav>
+                    </li>
+
+                    <li class="nav-item mx-3">
+                        <a href="/resources/index" class="nav-link">Resources</a>                    </li>
+
+                                            <li class="nav-item mx-3">
+                            <a href="/login" class="nav-link">Login</a>                        </li>
+                        <li class="nav-item mx-3">
+                            <a href="/register" class="nav-link">Register</a>                        </li>
+                    
+                    <li class="nav-item me-3">
+                        <div class="dropdown no-js-dd">
+                            <a class="nav-link dropdown-toggle position-relative" href="#" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <span class="visually-hidden">Languages</span>
+                                <span class="fa fa-language fa-lg" aria-hidden="true"></span>
+                            </a>
+                            <div class="dropdown-menu dropdown-menu-end no-js-dd-content">
+                                                                                                                                                                                                                        <a href="/ar/search?museum_no=81-7-27&amp;limit=100&amp;setLanguage=ar" class="dropdown-item">العربية (Arabic)</a>                                                                                                </div>
+                        </div>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+
+        <div class="header navbar navbar-expand-lg bg-transparent py-0" id="navbar-main">
+            <div class="container-fluid d-flex align-items-center justify-content-between my-5">
+                <a tabindex="0" class="navbar-brand logo" href="/">
+                    <div class="navbar-logo">
+                        <img src="/images/cdlilogo.svg" alt="CDLI-logo" class="d-none d-md-block cdlilogo">                        <img src="/images/logo-no-text.svg" class="d-md-none" alt="CDLI-logo" />
+                    </div>
+                </a>
+
+                <nav class="collapse navbar-collapse" id="navbarText">
+                    <ul class="navbar-nav ms-auto">
+
+                        <li class="nav-item mx-3 ">
+                            <a href="/browse" class="nav-link">Browse</a>                        </li>
+
+                        <li class="nav-item mx-3">
+                            <a href="/contribute" class="nav-link">Contribute</a>                        </li>
+
+                        <li class="nav-item mx-3">
+                            <a href="/about" class="nav-link">About</a>                        </li>
+
+                        <li class="nav-item mx-3 me-5 dropdown no-js-dd">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Search </a>
+                            <nav class="dropdown-menu no-js-dd-content">
+                                <a href="/search" class="dropdown-item">Search</a>                                <a href="/search/advanced" class="dropdown-item">Advanced search</a>                                <a href="/search/settings" class="dropdown-item">Search settings</a>                                <a href="/cqp4rdf" class="dropdown-item">Corpus search</a>                            </nav>
+                        </li>
+                    </ul>
+                </nav>
+
+                <nav aria-label="menubar">
+                    <a tabindex="0" class="d-sm-block d-lg-none bg-transparent" id="menubar" onclick="openSlideMenu()">
+                        <span class="fa fa-bars fa-2x"></span>
+                    </a>
+                </nav>
+
+                <!-- Start of Side Menu bar for small devices -->
+                <div role="menubar" id="side-menu" class="side-nav shadow d-none">
+                    <button aria-label="Close" id="close-button" class="sidebar-btn-close px-3 border-0" onclick="closeSlideMenu()">
+                        ×
+                    </button>
+                    <a href="/browse" class="mt-5">Browse</a>                    <a href="/contribute">Contribute</a>                    <a href="/about">About</a>                                        <a href="/resources/index" class="mb-1">Resources</a>                    <a  data-bs-toggle="collapse" href="#collapseExampleSearch" role="button" aria-expanded="false" aria-haspopup="true" aria-controls="collapseExampleSearch" class="border-0 mt-3 mb-1">
+                        Search <span id="drawer-arrowSearch" class="fa fa-angle-down float-end" aria-hidden="true"></span>
+                    </a>
+                    <div class="collapse embedded-links" id="collapseExampleSearch">
+                        <a href="/search" class="ms-5">Search</a>                        <a href="/search/advanced" class="ms-5">Advanced search</a>                        <a href="/search/settings" class="ms-5">Search settings</a>                        <a href="/cqp4rdf" class="ms-5">Corpus search</a>                    </div>
+
+                    <a  data-bs-toggle="collapse" href="#collapseExamplePublication" role="button" aria-expanded="false" aria-haspopup="true" aria-controls="collapseExamplePublication" class="border-0 mb-1">
+                        Publications <span id="drawer-arrowPublication" class="fa fa-angle-down float-end" aria-hidden="true"></span>
+                    </a>
+                    <div class="collapse embedded-links" id="collapseExamplePublication">
+                        <a href="/articles/cdlj" class="dropdown-item" aria-label="Cuneiform Digital Library Journal">CDLJ</a>                        <a href="/articles/cdlb" class="dropdown-item" aria-label="Cuneiform Digital Library Bulletin">CDLB</a>                        <a href="/articles/cdln" class="dropdown-item" aria-label="Cuneiform Digital Library Notes">CDLN</a>                        <a href="/articles/cdlp" class="dropdown-item" aria-label="Cuneiform Digital Library Preprint">CDLP</a>                    </div>
+
+                                            <a href="/login" class="border-0 mb-1">Login</a>                        <a href="/register" class="border-0 mb-1">Register</a>                    
+                    <a data-bs-toggle="collapse" href="#collapseExampleLanguages" role="button" aria-expanded="false" aria-haspopup="true" aria-controls="collapseExampleLanguages" class="border-0 mb-1">
+                        Languages                        <span id="drawer-arrowLanguages" class="fa fa-angle-down float-end" aria-hidden="true"></span>
+                    </a>
+                    <div class="collapse embedded-links" id="collapseExampleLanguages">
+                                                                                                                                                                        <a href="/ar/search?museum_no=81-7-27&amp;limit=100&amp;setLanguage=ar" class="dropdown-item">العربية (Arabic)</a>                                                                        </div>
+                </div>
+                <!-- End of Side Menu bar for small devices -->
+            </div>
+        </div>
+    </header>
+
+    <div class="container-fluid text-center contentWrapper">
+        
+                
+<div class="row justify-content-center">
+    <div class="col-lg-9 col-12 text-start">
+        <h1 class="display-2">
+            Search the CDLI collection        </h1>
+
+        <a href="/docs/search">Search Guide <span class="fa fa-question-circle" aria-hidden="true"></span></a>    </div>
+
+    <div class="col-lg-9 col-12 boxed">
+                    <form method="get" accept-charset="utf-8" action="/search/advanced">                <table class="table">
+                    <thead>
+                        <tr>
+                            <th colspan="2">Search parameters</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                                                    <tr>
+                                <th>
+                                    <label for="advanced-field-museum_no" class="mb-0 py-2">
+                                        Museum Number (Collection no.)                                    </label>
+                                </th>
+                                <td>
+                                    <div class="input text"><input type="text" name="museum_no" id="advanced-field-museum_no" class="form-control w-100" readonly="readonly" value="81-7-27"></div>                                </td>
+                            </tr>
+                                            </tbody>
+                </table>
+
+                <div class="float-end">
+                    <a href="/search" class="btn me-3">Simple search</a>
+                    <a href="/search/settings" class="btn me-3">Search settings</a>
+                    <button class="btn me-3" type="submit">Modify advanced search</button>                </div>
+            </form>            </div>
+</div>
+
+<div class="text-muted">
+    Showing 0 entries of 0 results found in 0.036 s</div>
+
+<hr class="line" />
+
+<div class="row text-start py-1">
+    <div class="col-md-6 col-12">
+        <button type="button" class="btn cdli-btn-blue my-1" data-bs-toggle="modal" data-bs-target="#search-modal-share">
+            Share            <span class="fa fa-share-alt ms-1" aria-hidden="true"></span>
+        </button>
+        <button type="button" class="btn cdli-btn-blue my-1" data-bs-toggle="modal" data-bs-target="#search-modal-export">
+            Export            <span class="fa fa-download ms-1" aria-hidden="true"></span>
+        </button>
+        <div class="dropdown d-inline-block me-3 my-1">
+            <button class="btn cdli-btn-blue dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                More            </button>
+            <div class="dropdown-menu">
+                                
+                            </div>
+        </div>
+    </div>
+    <div class="col-md-6 col-12 text-md-end">
+                    <form method="get" accept-charset="utf-8" class="d-inline-block me-2" id="search-sort-form" action="/search?museum_no=81-7-27&amp;limit=100">                <input type="hidden" name="museum_no" value="81-7-27"><input type="hidden" name="limit" value="100">                <label for="order[0]" class="visually-hidden">Sort by</label>
+                <div class="input select d-inline-block align-middle"><select name="order[0]" class="form-select" id="order-0"><option value=""></option><option value="_score" selected="selected">Relevance</option><option value="designation">Designation</option><option value="composite_no">Composite number</option><option value="seal_no">Seal number</option><option value="museum_no">Museum number</option><option value="collection">Collection(s)</option><option value="provenience">Provenience</option><option value="period_sequence">Period</option><option value="artifact_type">Artifact Type</option><option value="dates_referenced">Dates referenced</option></select></div>                <button type="submit" class="btn cdli-btn-blue d-inline-block">Sort</button>
+            </form>        
+        <div class="d-inline-block">
+            <a href="/search?layout=full&amp;museum_no=81-7-27&amp;limit=100" class="btn border-dark my-1 me-2 bg-dark text-white" style="font-size: 1.5em;" aria-label="Toggle view to card layout" title="Card layout"><span class="fa fa-th-large" aria-hidden="true"></span></a>            <a href="/search?layout=compact&amp;museum_no=81-7-27&amp;limit=100" class="btn border-dark my-1 bg-white text-dark" style="font-size: 1.5em;" aria-label="Toggle view to table layout" title="Table layout"><span class="fa fa-bars" aria-hidden="true"></span></a>        </div>
+    </div>
+</div>
+
+<div class="row text-start">
+    <!-- Filters -->
+        <div id="search-filters" class="col-lg-3 col-12 pt-3 d-lg-block d-none">
+        <h3>
+            Filters
+            <button id="search-filter-collapse" class="btn bg-white float-end mx-1">
+                <span class="h3 m-0">
+                    <span class="fa fa-chevron-left" aria-hidden="true"></span>
+                </span>
+                <span class="visually-hidden">Close filters</span>
+            </button>
+        </h3>
+
+        <form method="get" accept-charset="utf-8" action="/search?museum_no=81-7-27&amp;limit=100">            <input type="hidden" name="museum_no" value="81-7-27"><input type="hidden" name="limit" value="100">            <div class="submit"><input type="submit" class="btn cdli-btn-blue mt-3" value="Apply"></div>
+            <button id="search-filter-expand-all" class="btn mt-3 d-none" type="submit">Expand all</button>            <button id="search-filter-collapse-all" class="btn mt-3 d-none" type="submit">Collapse all</button>
+            <div class="accordion">
+                                    <h4 class="mt-3">Artifact</h4>
+
+                                                                    <section id="period-filter">
+<input type="checkbox" id="period-filter-toggle" class="accordion-textbox">
+<p class="accordion-title"><label class="w-100" for="period-filter-toggle">Period</label></p>
+<div class="detail-leaf">                                                    </div></section>                                                                    <section id="material-filter">
+<input type="checkbox" id="material-filter-toggle" class="accordion-textbox">
+<p class="accordion-title"><label class="w-100" for="material-filter-toggle">Material</label></p>
+<div class="detail-leaf">                                                    </div></section>                                                                    <section id="artifact_type-filter">
+<input type="checkbox" id="artifact_type-filter-toggle" class="accordion-textbox">
+<p class="accordion-title"><label class="w-100" for="artifact_type-filter-toggle">Artifact type</label></p>
+<div class="detail-leaf">                                                    </div></section>                                                                    <section id="provenience-filter">
+<input type="checkbox" id="provenience-filter-toggle" class="accordion-textbox">
+<p class="accordion-title"><label class="w-100" for="provenience-filter-toggle">Provenience</label></p>
+<div class="detail-leaf">                                                    </div></section>                                                                    <section id="collection-filter">
+<input type="checkbox" id="collection-filter-toggle" class="accordion-textbox">
+<p class="accordion-title"><label class="w-100" for="collection-filter-toggle">Museum Collections</label></p>
+<div class="detail-leaf">                                                    </div></section>                                                                    <section id="composite_seal-filter">
+<input type="checkbox" id="composite_seal-filter-toggle" class="accordion-textbox">
+<p class="accordion-title"><label class="w-100" for="composite_seal-filter-toggle">Composite/seal</label></p>
+<div class="detail-leaf">                                                            <div class="input checkbox"><label class="w-100 mb-0" for="composite_seal-0"><input type="checkbox" name="f[composite_seal][]" value="Composite" id="composite_seal-0"><span class="text-muted float-end">0</span>&nbsp;Composite</label></div>                                                            <div class="input checkbox"><label class="w-100 mb-0" for="composite_seal-1"><input type="checkbox" name="f[composite_seal][]" value="Composite witness" id="composite_seal-1"><span class="text-muted float-end">0</span>&nbsp;Composite witness</label></div>                                                            <div class="input checkbox"><label class="w-100 mb-0" for="composite_seal-2"><input type="checkbox" name="f[composite_seal][]" value="Seal" id="composite_seal-2"><span class="text-muted float-end">0</span>&nbsp;Seal</label></div>                                                            <div class="input checkbox"><label class="w-100 mb-0" for="composite_seal-3"><input type="checkbox" name="f[composite_seal][]" value="Seal impression" id="composite_seal-3"><span class="text-muted float-end">0</span>&nbsp;Seal impression</label></div>                                                            <div class="input checkbox"><label class="w-100 mb-0" for="composite_seal-4"><input type="checkbox" name="f[composite_seal][]" value="Other" id="composite_seal-4"><span class="text-muted float-end">0</span>&nbsp;Other</label></div>                                                    </div></section>                                                        <h4 class="mt-3">Textual</h4>
+
+                                                                    <section id="language-filter">
+<input type="checkbox" id="language-filter-toggle" class="accordion-textbox">
+<p class="accordion-title"><label class="w-100" for="language-filter-toggle">Language</label></p>
+<div class="detail-leaf">                                                    </div></section>                                                                    <section id="genre-filter">
+<input type="checkbox" id="genre-filter-toggle" class="accordion-textbox">
+<p class="accordion-title"><label class="w-100" for="genre-filter-toggle">Genre</label></p>
+<div class="detail-leaf">                                                    </div></section>                                                                    <section id="is_school_text-filter">
+<input type="checkbox" id="is_school_text-filter-toggle" class="accordion-textbox">
+<p class="accordion-title"><label class="w-100" for="is_school_text-filter-toggle">School Text</label></p>
+<div class="detail-leaf">                                                            <div class="input checkbox"><label class="w-100 mb-0" for="is_school_text-0"><input type="checkbox" name="f[is_school_text][]" value="Yes" id="is_school_text-0"><span class="text-muted float-end">0</span>&nbsp;Yes</label></div>                                                            <div class="input checkbox"><label class="w-100 mb-0" for="is_school_text-1"><input type="checkbox" name="f[is_school_text][]" value="No" id="is_school_text-1"><span class="text-muted float-end">0</span>&nbsp;No</label></div>                                                    </div></section>                                                        <h4 class="mt-3">Publication</h4>
+
+                                                                    <section id="publication_authors-filter">
+<input type="checkbox" id="publication_authors-filter-toggle" class="accordion-textbox">
+<p class="accordion-title"><label class="w-100" for="publication_authors-filter-toggle">Authors</label></p>
+<div class="detail-leaf">                                                    </div></section>                                                                    <section id="publication_year-filter">
+<input type="checkbox" id="publication_year-filter-toggle" class="accordion-textbox">
+<p class="accordion-title"><label class="w-100" for="publication_year-filter-toggle">Publication date</label></p>
+<div class="detail-leaf">                                                    </div></section>                                                                                                                                                        <h4 class="mt-3">Credits</h4>
+
+                                                                    <section id="update_external_resource-filter">
+<input type="checkbox" id="update_external_resource-filter-toggle" class="accordion-textbox">
+<p class="accordion-title"><label class="w-100" for="update_external_resource-filter-toggle">Contributing project</label></p>
+<div class="detail-leaf">                                                    </div></section>                                                        <h4 class="mt-3">Data</h4>
+
+                                                                    <section id="asset_type-filter">
+<input type="checkbox" id="asset_type-filter-toggle" class="accordion-textbox">
+<p class="accordion-title"><label class="w-100" for="asset_type-filter-toggle">Artifact images</label></p>
+<div class="detail-leaf">                                                    </div></section>                                                                    <section id="asset_license_id-filter">
+<input type="checkbox" id="asset_license_id-filter-toggle" class="accordion-textbox">
+<p class="accordion-title"><label class="w-100" for="asset_license_id-filter-toggle">Image license</label></p>
+<div class="detail-leaf">                                                    </div></section>                                                                    <section id="chemical_data-filter">
+<input type="checkbox" id="chemical_data-filter-toggle" class="accordion-textbox">
+<p class="accordion-title"><label class="w-100" for="chemical_data-filter-toggle">Chemical data</label></p>
+<div class="detail-leaf">                                                            <div class="input checkbox"><label class="w-100 mb-0" for="chemical_data-0"><input type="checkbox" name="f[chemical_data][]" value="With" id="chemical_data-0"><span class="text-muted float-end">0</span>&nbsp;With</label></div>                                                            <div class="input checkbox"><label class="w-100 mb-0" for="chemical_data-1"><input type="checkbox" name="f[chemical_data][]" value="Without" id="chemical_data-1"><span class="text-muted float-end">0</span>&nbsp;Without</label></div>                                                    </div></section>                                                                    <section id="external_resource_external_resource-filter">
+<input type="checkbox" id="external_resource_external_resource-filter-toggle" class="accordion-textbox">
+<p class="accordion-title"><label class="w-100" for="external_resource_external_resource-filter-toggle">External link</label></p>
+<div class="detail-leaf">                                                    </div></section>                                                                    <section id="asset_annotations-filter">
+<input type="checkbox" id="asset_annotations-filter-toggle" class="accordion-textbox">
+<p class="accordion-title"><label class="w-100" for="asset_annotations-filter-toggle">Image Annotations</label></p>
+<div class="detail-leaf">                                                            <div class="input checkbox"><label class="w-100 mb-0" for="asset_annotations-0"><input type="checkbox" name="f[asset_annotations][]" value="With" id="asset_annotations-0"><span class="text-muted float-end">0</span>&nbsp;With</label></div>                                                            <div class="input checkbox"><label class="w-100 mb-0" for="asset_annotations-1"><input type="checkbox" name="f[asset_annotations][]" value="Without" id="asset_annotations-1"><span class="text-muted float-end">0</span>&nbsp;Without</label></div>                                                    </div></section>                                                                    <section id="publication-filter">
+<input type="checkbox" id="publication-filter-toggle" class="accordion-textbox">
+<p class="accordion-title"><label class="w-100" for="publication-filter-toggle">Publications</label></p>
+<div class="detail-leaf">                                                            <div class="input checkbox"><label class="w-100 mb-0" for="publication-0"><input type="checkbox" name="f[publication][]" value="With" id="publication-0"><span class="text-muted float-end">0</span>&nbsp;With</label></div>                                                            <div class="input checkbox"><label class="w-100 mb-0" for="publication-1"><input type="checkbox" name="f[publication][]" value="Without" id="publication-1"><span class="text-muted float-end">0</span>&nbsp;Without</label></div>                                                    </div></section>                                                                    <section id="atf_transliteration-filter">
+<input type="checkbox" id="atf_transliteration-filter-toggle" class="accordion-textbox">
+<p class="accordion-title"><label class="w-100" for="atf_transliteration-filter-toggle">Transliteration</label></p>
+<div class="detail-leaf">                                                            <div class="input checkbox"><label class="w-100 mb-0" for="atf_transliteration-0"><input type="checkbox" name="f[atf_transliteration][]" value="With" id="atf_transliteration-0"><span class="text-muted float-end">0</span>&nbsp;With</label></div>                                                            <div class="input checkbox"><label class="w-100 mb-0" for="atf_transliteration-1"><input type="checkbox" name="f[atf_transliteration][]" value="Without" id="atf_transliteration-1"><span class="text-muted float-end">0</span>&nbsp;Without</label></div>                                                    </div></section>                                                                    <section id="annotation-filter">
+<input type="checkbox" id="annotation-filter-toggle" class="accordion-textbox">
+<p class="accordion-title"><label class="w-100" for="annotation-filter-toggle">Text Annotations</label></p>
+<div class="detail-leaf">                                                            <div class="input checkbox"><label class="w-100 mb-0" for="annotation-0"><input type="checkbox" name="f[annotation][]" value="With" id="annotation-0"><span class="text-muted float-end">0</span>&nbsp;With</label></div>                                                            <div class="input checkbox"><label class="w-100 mb-0" for="annotation-1"><input type="checkbox" name="f[annotation][]" value="Without" id="annotation-1"><span class="text-muted float-end">0</span>&nbsp;Without</label></div>                                                    </div></section>                                                                    <section id="atf_transcription-filter">
+<input type="checkbox" id="atf_transcription-filter-toggle" class="accordion-textbox">
+<p class="accordion-title"><label class="w-100" for="atf_transcription-filter-toggle">Transcription</label></p>
+<div class="detail-leaf">                                                            <div class="input checkbox"><label class="w-100 mb-0" for="atf_transcription-0"><input type="checkbox" name="f[atf_transcription][]" value="With" id="atf_transcription-0"><span class="text-muted float-end">0</span>&nbsp;With</label></div>                                                            <div class="input checkbox"><label class="w-100 mb-0" for="atf_transcription-1"><input type="checkbox" name="f[atf_transcription][]" value="Without" id="atf_transcription-1"><span class="text-muted float-end">0</span>&nbsp;Without</label></div>                                                    </div></section>                                                                    <section id="atf_translation-filter">
+<input type="checkbox" id="atf_translation-filter-toggle" class="accordion-textbox">
+<p class="accordion-title"><label class="w-100" for="atf_translation-filter-toggle">Translation</label></p>
+<div class="detail-leaf">                                                            <div class="input checkbox"><label class="w-100 mb-0" for="atf_translation-0"><input type="checkbox" name="f[atf_translation][]" value="With" id="atf_translation-0"><span class="text-muted float-end">0</span>&nbsp;With</label></div>                                                            <div class="input checkbox"><label class="w-100 mb-0" for="atf_translation-1"><input type="checkbox" name="f[atf_translation][]" value="Without" id="atf_translation-1"><span class="text-muted float-end">0</span>&nbsp;Without</label></div>                                                    </div></section>                                                                    <section id="atf_translation_language-filter">
+<input type="checkbox" id="atf_translation_language-filter-toggle" class="accordion-textbox">
+<p class="accordion-title"><label class="w-100" for="atf_translation_language-filter-toggle">Translation Language</label></p>
+<div class="detail-leaf">                                                    </div></section>                                                </div>
+
+            <div class="submit"><input type="submit" class="btn cdli-btn-blue mt-3" value="Apply"></div>        </form>    </div>
+
+    <!-- Results -->
+        <div id="search-results" class="col-lg-9 col-12">
+        <div class="clearfix">
+            <a href="#" id="search-filter-open" class="float-md-start my-3 btn cdli-btn-blue d-lg-none">Filters <span class="fa fa-chevron-right ms-1 align-middle" aria-hidden="true"></span></a>
+            <div class="my-3 float-md-end text-center">
+                <div class="d-inline-block">
+                    <div class="paginator">
+    <ul class="pagination pagination-dark m-0 p-0 d-flex justify-content-center">
+                    <a class="disabled"><img class="arrow-svg rotate-svg" src="/images/arrow1.svg" alt="First Page"></span></a>
+            <a class="disabled d-none d-sm-block"><span class="fa disabled fa-angle-left"></span></a>
+                                                                                    <a class="disable d-none d-sm-block"><span class="fa disabled fa-angle-right"></span></a>
+            <a class="disabled"><img class="arrow-svg" src="/images/arrow1.svg" alt=""></a>
+            </ul>
+</div>
+                </div>
+            </div>
+        </div>
+
+                    <!-- Card layout -->
+                    
+        
+    <div class="paginator">
+        <p>Total 0 record(s)</p>
+    </div>
+        </div>
+</div>
+
+<div class="row">
+    <div class="text-muted text-start">
+        Results per page:
+                    <a href="/search?museum_no=81-7-27&amp;limit=10" class="btn bg-white text-black view-btn mx-1">10</a>                    <a href="/search?museum_no=81-7-27&amp;limit=25" class="btn bg-white text-black view-btn mx-1">25</a>                    <a href="/search?museum_no=81-7-27&amp;limit=100" class="btn bg-white text-black view-btn mx-1 border-dark">100</a>                    <a href="/search?museum_no=81-7-27&amp;limit=500" class="btn bg-white text-black view-btn mx-1">500</a>                    <a href="/search?museum_no=81-7-27&amp;limit=1000" class="btn bg-white text-black view-btn mx-1">1000</a>                    <a href="/search?museum_no=81-7-27&amp;limit=10000" class="btn bg-white text-black view-btn mx-1">10000</a>            </div>
+</div>
+
+
+<button type="button" class="ScrolltoTop p-0 mt-5 btn cdli-btn-light d-flex align-items-center justify-content-between mx-auto wide-btn">
+    <a href="#" class="text-dark btn wide-btn">
+        Back to top        <span class="fa fa-long-arrow-up ms-2" aria-hidden="true"></span>
+    </a>
+</button>
+
+
+    </div>
+
+    <footer>
+        <div class="container">
+            <div>
+                <div class="row footer-1 py-5">
+                    <section aria-label="Navigate" class="col-lg-3 d-none d-lg-block">
+                        <h2 class="heading">Navigate</h2>
+                        <p><a href="/browse">Browse collection</a></p>
+                        <p><a href="/contribute">Contribute</a></p>
+                        <p><a href="/about">About CDLI</a></p>
+                        <p><a href="/">Search collection</a></p>
+                        <p><a href="/terms-of-use">Terms of Use</a></p>
+                        <p><a href="https://www.gea.mpg.de/imprint">Imprint MPIGEA</a></p>
+                        <p><a href="https://www.gea.mpg.de/privacy-policy">Privacy Policy</a></p>
+                    </section>
+                    <section aria-label="Acknowledgement" class="col-md-6 col-lg-4">
+                        <h2 class="heading">Acknowledgement</h2>
+                        
+    <div>
+        <p>
+    <a href="/sponsors">Support for this initiative</a> has been generously provided by
+    the <a href="https://www.mpg.de/en" target="_blank" aria-label="Max-Planck-Gesellschaft">MPS</a>,
+    the <a href="https://mellon.org/" target="_blank">Mellon Foundation</a>,
+    the <a href="https://www.nsf.gov/" target="_blank" aria-label="National Science Foundation">NSF</a>,
+    the <a href="https://www.neh.gov/" target="_blank" aria-label="National Endowment for the Humanities">NEH</a>,
+    the <a href="https://www.imls.gov/" target="_blank" aria-label="Institute of Museum and Library Services">IMLS</a>,
+    the <a href="https://researchsupport.admin.ox.ac.uk/funding/internal/jff" target="_blank" aria-label="Max-Planck-Gesellschaft">John Fell Fund</a>,
+    <a href="http://www.ox.ac.uk/" target="_blank">Oxford University</a>
+    and <a href="http://www.ucla.edu/" target="_blank" aria-label="University of California">UCLA</a>,
+    with additional support
+    from <a href="https://www.sshrc-crsh.gc.ca/home-accueil-eng.aspx" target="_blank" aria-label="Social Sciences and Humanities Research Council">SSHRC</a> and
+    the <a href="https://www.dfg.de/" target="_blank" lang="de" aria-label="Deutsche Forschungsgemeinschaft">DFG</a>.
+</p>
+<p>
+    Computational resources and network services are provided by
+    <a href="https://www.gea.mpg.de/" target="_blank">Max Planck Institute for Geoanthropology</a>,
+    <a href="https://www.computecanada.ca/" target="_blank">Compute Canada</a>,
+    <a href="https://www.ox.ac.uk/" target="_blank">the University of Oxford</a>,
+    <a href="https://www.mpiwg-berlin.mpg.de/" target="_blank" aria-label="Max Planck Institute for the History of Science">MPIWG</a>,
+    and <a href="https://humtech.ucla.edu/" target="_blank" aria-label="University of California HumTech">UCLA’s HumTech</a>.
+</p>
+
+            </div>
+                    </section>
+                    <div class="col-lg-1 d-none d-lg-flex"></div>
+                    <section aria-label="Contact Us" class="col-md-6 col-lg-4 contact">
+                        <h2 class="heading">Contact Us</h2>
+                        <ul class="list-unstyled">
+                            <li>Cuneiform Digital Library Initiative</li>
+                            <li>Linton Rd, Oxford OX2 6UD</li>
+                            <li>United Kingdom</li>
+                        </ul>
+                        <div class="d-flex">
+                            <div class="mail">
+                                <a href="mailto:cdli@ames.ox.ac.uk" target="_blank" aria-label="mail-to-CDLI">
+                                    <span class="fa fa-envelope fa-3x" aria-hidden="true"></span>
+                                </a>
+                            </div>
+                            <div>
+                                <a href="https://opencollective.com/cdli/donate" class="btn donate" role="button" target="_blank">
+                                    Donate                                </a>
+                            </div>
+                        </div>
+                        <p>Found a problem on the website or facing a technical issue? Write to cdli-support (at) ames.ox.ac.uk</p>
+                    </section>
+                </div>
+            </div>
+        </div>
+        <div class="footer-links d-lg-none py-3">
+            <div class="container text-center">
+                <a href="/terms-of-use" class="mx-2">Terms of Use</a>                <span>|</span>
+                <a href="https://www.gea.mpg.de/privacy-policy" class="mx-2">Privacy Policy</a>                <span>|</span>
+                <a href="https://www.gea.mpg.de/imprint" class="mx-2">Imprint MPIGEA</a>            </div>
+        </div>
+        <div class="footer-end p-4">
+            <div class="text-center text-white">
+                <p class="mb-0">© 2020-2026 Cuneiform Digital Library Initiative.</p>
+            </div>
+        </div>
+    </footer>
+
+            <form method="post" accept-charset="utf-8" action="/hide-cookies-notification"><div style="display:none;"><input type="hidden" name="_csrfToken" value="UkWehWDRaC1ZGLyBf+YHgcloCyn7jfO2tnp/zBKMlZiMVwJBOY5o9aawBurhbDESjKbIymRpNOIZ9wXzsLOkwMArchK1wLRu+lk8G5/oloCAGEutcOqtq+pkMCULuQuTlNFl3oIIUHG8wqn8UwwNhA=="></div><div id="cookies-notification" class="bg-light pt-3 pb-3 fixed-bottom border-top border-secondary">
+    <div class="container lead">
+        <div class="row pt-5 pb-5">
+            <div class="col page-summary-text pb-3">
+                This website uses essential cookies that are necessary for it to work properly. These cookies are enabled by default.            </div>
+            <div class="col-lg-auto text-center">
+                <button type="submit" class="btn cdli-btn-blue" id="cookies-close">I understand</button>
+            </div>
+        </div>
+    </div>
+</div>
+</form>
+<script>
+$('#cookies-close').on('click', function (e) {
+    setCookie('hideCookiesNotification', 1, 1);
+    $('#cookies-notification').fadeOut();
+    e.preventDefault();
+    return false;
+});
+</script>
+    
+    <div class="modal" id="search-modal-share" tabindex="-1" role="dialog" aria-labelledby="search-modal-share-title" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="search-modal-share-title">Share this search</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+
+            <div class="modal-body">
+                <p>Copy this web address containing your search and your filter parameters, and share it so others can see the artifacts resulting from this search.</p>
+
+                <div class="input text"><label class="visually-hidden" for="search-modal-share-link">Search Modal Share Link</label><input type="text" name="search-modal-share-link" class="form-control w-100" id="search-modal-share-link" value="https://cdli.earth/search?museum_no=81-7-27"></div>            </div>
+
+            <div class="modal-footer">
+                <button type="button" class="btn cdli-btn-blue" id="search-modal-share-copy">
+                    Copy to clipboard                </button>
+            </div>
+        </div>
+      </div>
+</div>
+
+<div class="modal" id="search-modal-export" tabindex="-1" role="dialog" aria-labelledby="search-modal-export-title" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="search-modal-export-title">Download search results</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+
+            <div class="modal-body">
+                <p>
+                    Download the results of the current search results page.<br>
+                    (To change the number of results to download, adjust the number of results per page.)
+                </p>
+
+                
+                <h5>Metadata / catalogue</h5>
+                <p>
+                    Flat catalogue:
+                    <a href="/search?museum_no=81-7-27&amp;limit=100&amp;format=csv">CSV</a> &bull;
+                    <a href="/search?museum_no=81-7-27&amp;limit=100&amp;format=tsv">TSV</a> &bull;
+                    Custom:
+                    <a href="/search/custom-export?museum_no=81-7-27&amp;limit=100&amp;export=csv">CSV</a> &bull;
+                    <a href="/search/custom-export?museum_no=81-7-27&amp;limit=100&amp;export=tsv">TSV</a>                    <br>
+                    Expanded catalogue:
+                    <a href="/search?museum_no=81-7-27&amp;limit=100&amp;format=json">JSON</a>                    <br>
+                    Linked catalogue:
+                    <a href="/search?museum_no=81-7-27&amp;limit=100&amp;format=ttl">TTL</a> &bull;
+                    <a href="/search?museum_no=81-7-27&amp;limit=100&amp;format=jsonld">JSON-LD</a> &bull;
+                    <a href="/search?museum_no=81-7-27&amp;limit=100&amp;format=rdfjson">RDF/JSON</a> &bull;
+                    <a href="/search?museum_no=81-7-27&amp;limit=100&amp;format=rdf">RDF/XML</a>                </p>
+
+                <h5>Text / annotations</h5>
+                <p>
+                    Text data:
+                    <a href="/search?museum_no=81-7-27&amp;limit=100&amp;format=atf&amp;aspect=inscriptions">ATF</a> &bull;
+                    <a href="/search?museum_no=81-7-27&amp;limit=100&amp;format=jtf&amp;aspect=inscriptions">JTF</a>                    <br>
+                    Annotation data:
+                    <a href="/search?museum_no=81-7-27&amp;limit=100&amp;format=cdli-conll&amp;aspect=inscriptions">CDLI-CoNLL</a> &bull;
+                    <a href="/search?museum_no=81-7-27&amp;limit=100&amp;format=conll-u&amp;aspect=inscriptions">CoNLL-U</a>                    <br>
+                    Linked annotations:
+                    <a href="/search?museum_no=81-7-27&amp;limit=100&amp;format=ttl&amp;aspect=inscriptions">TTL</a> &bull;
+                    <a href="/search?museum_no=81-7-27&amp;limit=100&amp;format=jsonld&amp;aspect=inscriptions">JSON-LD</a> &bull;
+                    <a href="/search?museum_no=81-7-27&amp;limit=100&amp;format=rdfjson&amp;aspect=inscriptions">RDF/JSON</a> &bull;
+                    <a href="/search?museum_no=81-7-27&amp;limit=100&amp;format=rdf&amp;aspect=inscriptions">RDF/XML</a>                    <br>
+
+                    Word lists (all results):
+                    <a href="/search/token-list/words.txt?museum_no=81-7-27&amp;limit=100">TXT</a> &bull;
+                    <a href="/search/token-list/words.json?museum_no=81-7-27&amp;limit=100">JSON</a>                    <br>
+
+                    Sign lists (all results):
+                    <a href="/search/token-list/signs.txt?museum_no=81-7-27&amp;limit=100">TXT</a> &bull;
+                    <a href="/search/token-list/signs.json?museum_no=81-7-27&amp;limit=100">JSON</a>                </p>
+
+                <h5>Bibliography</h5>
+                <p>
+                    Bibliographic references:
+                    <a href="/search?museum_no=81-7-27&amp;limit=100&amp;format=csv&amp;aspect=publications">CSV</a> &bull;
+                    <a href="/search?museum_no=81-7-27&amp;limit=100&amp;format=bib&amp;aspect=publications">BibTeX</a>                </p>
+
+                <p>*For downloading more results or accessing the data programmatically, please use our <a href="https://github.com/cdli-gh/framework-api-client">CDLI API Client</a>.</p>
+            </div>
+        </div>
+      </div>
+</div>
+    <script>
+        $(document).ready(function() {
+            $('header .no-js-dd').removeClass('no-js-dd');
+        });
+    </script>
+    <script src="/assets/js/smoothScroll.js"></script></body>
+</html>

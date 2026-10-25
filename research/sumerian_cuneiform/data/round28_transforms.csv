@@ -1,0 +1,12 @@
+﻿file,source,operation,x,y,w,h,note
+round28_sources/Ean_A_v15_18.jpg,round28_sources/P222400_lineart.jpg,sips crop,35,1830,210,340,inspected and location confirmed: A V15–18; no retouch
+round28_sources/Ean_B_vi7_10.jpg,round28_sources/P222402_lineart.jpg,sips crop,390,2260,190,300,inspected and location confirmed: B VI7–10; comparison uses8–9 only
+round28_sources/Gadd_CT36_PDF4.png,round28_sources/Gadd1921_CT36.pdf,pdftoppm page4 scale-to2200,,,,,printed p5 inspected
+round28_sources/Gadd_CT36_PDF14.png,round28_sources/Gadd1921_CT36.pdf,pdftoppm page14 scale-to2400,,,,,plate3 inspected
+round28_sources/Gadd_CT36_plate3_rotated.png,round28_sources/Gadd_CT36_PDF14.png,sips rotate90,,,,,orientation only; matches CDLI drawing
+round28_sources/Jordanova_PDF133.png,round28_sources/Jordanova2015_Ereskigal.pdf,pdftoppm page133 scale-to2000,,,,,printed119 inspected
+round28_sources/PTS1501_rotated90.jpg,round27_sources/PTS1501_photo.jpg,sips rotate90,,,,,orientation experiment; no complete new reading claimed
+round28_sources/BM109930_first_view_rotated90.jpg,round27_sources/BM109930_first_view.jpg,sips rotate90,,,,,orientation experiment; no complete new reading claimed
+round28_sources/AO22187_rotated90.jpg,round28_sources/AO22187_photo.jpg,sips rotate90,,,,,orientation experiment; no complete new reading claimed
+round28_sources/Gadd1921_CT36.txt,round28_sources/Gadd1921_CT36.pdf,pdftotext -layout,,,,,"extracted existing text/OCR layer, not cuneiform recognition"
+round28_sources/Jordanova2015_Ereskigal.txt,round28_sources/Jordanova2015_Ereskigal.pdf,pdftotext -layout,,,,,"extracted existing text/OCR layer, not cuneiform recognition"

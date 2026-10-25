@@ -1,0 +1,134 @@
+[
+  {
+    "file": "Mythische_Sphaerenwechsel_2020.pdf",
+    "url": "https://uplopen.com/books/5144/files/d953a817-ab69-419f-a365-60e821d774b5.pdf",
+    "accepted": false,
+    "reason": "curl: (56) The requested URL returned error: 403\n"
+  },
+  {
+    "file": "P226974_card.html",
+    "url": "https://cdli.earth/artifacts/226974",
+    "accepted": true,
+    "reason": "validated nonempty response"
+  },
+  {
+    "file": "P232290_card.html",
+    "url": "https://cdli.earth/artifacts/232290",
+    "accepted": true,
+    "reason": "validated nonempty response"
+  },
+  {
+    "file": "Princeton2_publication.html",
+    "url": "https://cdli.earth/publications/117703",
+    "accepted": true,
+    "reason": "validated nonempty response"
+  },
+  {
+    "file": "PTS1501_reader.html",
+    "url": "https://cdli.earth/artifacts/201507/reader/118731",
+    "accepted": true,
+    "reason": "validated nonempty response"
+  },
+  {
+    "file": "PTS1502_reader.html",
+    "url": "https://cdli.earth/artifacts/431422/reader/206522",
+    "accepted": true,
+    "reason": "validated nonempty response"
+  },
+  {
+    "file": "Gadd1921_CT36.pdf",
+    "url": "https://etana.org/sites/default/files/coretexts/15161.pdf",
+    "accepted": true,
+    "reason": "validated nonempty response"
+  },
+  {
+    "file": "Zgoll2020_chapter003.pdf",
+    "url": "https://www.degruyterbrill.com/document/doi/10.1515/9783110652543-003/pdf?licenseType=open-access",
+    "accepted": false,
+    "reason": "empty response"
+  },
+  {
+    "file": "AO22187_photo.jpg",
+    "url": "https://cdli.earth/dl/photo/P226974_d.jpg",
+    "accepted": true,
+    "reason": "validated nonempty response"
+  },
+  {
+    "file": "Schrakamp2018_Irrigation.pdf",
+    "url": "https://refubium.fu-berlin.de/bitstream/fub188/23835/1/bsa_053_07.pdf",
+    "accepted": false,
+    "reason": "renamed HTML challenge response, not acquired article"
+  },
+  {
+    "file": "Jordanova2015_Ereskigal.pdf",
+    "url": "https://d-nb.info/1245935917/34",
+    "accepted": true,
+    "reason": "validated nonempty response"
+  },
+  {
+    "file": "OSL_A.html",
+    "url": "https://oracc2.museum.upenn.edu/osl/signlist/l0065/o0000087/index.html",
+    "accepted": false,
+    "reason": "curl: (60) SSL: no alternative certificate subject name matches target host name 'oracc2.museum.upenn.edu'\nMore details here: https://curl.se/docs/sslcerts.html\n\ncurl failed to verify the legitimacy of the server and therefore could not\nestablish a secure connection to it. To learn more about this situation and\nhow to fix it, please visit the web p"
+  },
+  {
+    "file": "ePSD_id_river.html",
+    "url": "https://oracc.museum.upenn.edu/epsd2/cbd/sux/o0030551.html",
+    "accepted": true,
+    "reason": "validated nonempty response"
+  },
+  {
+    "file": "Schrakamp2018_CORE.pdf",
+    "url": "https://files.core.ac.uk/download/pdf/199426577.pdf",
+    "accepted": false,
+    "reason": "curl: (28) Operation timed out after 35001 milliseconds with 0 bytes received\n"
+  },
+  {
+    "file": "OSL_A_canonical.html",
+    "url": "https://oracc.museum.upenn.edu/osl/signlist/l0065/o0000087/index.html",
+    "accepted": true,
+    "reason": "validated nonempty response"
+  },
+  {
+    "file": "P222400_card.html",
+    "url": "https://cdli.earth/artifacts/222400",
+    "accepted": true,
+    "reason": "validated nonempty response"
+  },
+  {
+    "file": "P222402_card.html",
+    "url": "https://cdli.earth/artifacts/222402",
+    "accepted": true,
+    "reason": "validated nonempty response"
+  },
+  {
+    "file": "Schrakamp2018_publisher.pdf",
+    "url": "https://edition-topoi.org/download_pdf/bsa_053_07.pdf",
+    "accepted": false,
+    "reason": "curl: (28) Connection timed out after 35003 milliseconds\n"
+  },
+  {
+    "file": "P222400_reader.html",
+    "url": "https://cdli.earth/artifacts/222400/reader/42696",
+    "accepted": true,
+    "reason": "validated nonempty response"
+  },
+  {
+    "file": "P222402_reader.html",
+    "url": "https://cdli.earth/artifacts/222402/reader/42698",
+    "accepted": true,
+    "reason": "validated nonempty response"
+  },
+  {
+    "file": "P222400_lineart.jpg",
+    "url": "https://cdli.earth/dl/lineart/P222400_l.jpg",
+    "accepted": true,
+    "reason": "validated nonempty response"
+  },
+  {
+    "file": "P222402_lineart.jpg",
+    "url": "https://cdli.earth/dl/lineart/P222402_l.jpg",
+    "accepted": true,
+    "reason": "validated nonempty response"
+  }
+]

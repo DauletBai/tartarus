@@ -1,0 +1,3099 @@
+A Grammar of Kazakh
+
+
+ Zura Dotton, Ph.D
+ John Doyle Wagner
+1     Socio - and Geolinguistic Situation
+1.1    Locale and Speakers
+The Kazakh language is spoken by approximately 12 million people throughout Central
+Asia, the former Soviet Union, and Western China and Mongolia. Principally, it is the sole
+official language of the Republic of Kazakhstan, where it enjoys official status as the state
+language. It bears noting that, in addition to Kazakh, Russian is used widely in Kazakhstan,
+however, it is not a co-official language of the Republic, rather, in accordance to the Kazakh
+constitution, Russian is designated as the language of inter-ethnic communication. Article
+7.2 of the Constitution of the Republic of Kazakhstan permits the use of Russian as an official
+language and used equally to Kazakh, if so needed. Kazakh is spoken widely in the Southern,
+Western and Central regions of Kazakhstan, where traditionally Kazakh speaking regions
+are well-established, as well as a strong Turkic, Islamic identity. These regions include the
+cities of Shymkent, Taraz, Atyrau, Turkistan, and Qyzylorda. In the North, Northeaster and
+Southeastern regions, there are still many Kazakh speakers, however, as of the 20th century,
+these regions are strongly tied to the Russian minority. The largest city and former capital
+of Kazakhstan, Almaty, falls into this region, with many residents of the city using Russian
+for daily communication. There is, however, a growing community of Kazakh speakers in
+the Northeast due to emigration from other parts of the country to Almaty, as well as
+immigration of Kazakh dominant bilinguals from neighboring China.
+    Approximately 11 million speakers of Kazakh reside in the Republic of Kazakhstan. An
+additional 1 million speakers is reported from the Xinjiang Uyghur Autonomous Region in
+the People’s Republic of China. Further significant Kazakh minority groups can also be
+found in the Altai Republic, of the Russian Federation, and in the Bayan-Ölgii province
+in Western Mongolia. There also exists communities of Kazakhs in Iran and Afghanistan.
+Iranian Kazakhs are concentrated in the province of Golestan and as many as 5000 ethnic
+Kazakhs are reported to live in the city of Gorgan. Most Kazakhs of the community have
+repatriated to the Republic of Kazakhstan following the dissolution of the Soviet Union.
+Kazakh speakers in Afghanistan are largely descended of Kipchak Turks and are concentrated
+in the Obi district of the Herat province. Afghan Kipchaks have largely been assimilated
+into Pashtun speaking Aimaqs with other semi-nomadic people of Afghanistan. The use
+of the Kazakh language among this community is under reported. Kazakh is also spoken
+by diaspora communities in Germany and in Turkey, where most Kazakh-Turks have taken
+up residence in Istanbul, and many Kazakh speaking residence of Germany consist of Volga
+Germans, that had been dominant in the language due to forced relocation of Volga Germans
+during the Soviet era.
+
+1.2    Historical and Genealogical Background
+Kazakh is genealogically classified as a Turkic language and is one of 4 members of the
+Kipchak-Nogai subcategory. Kazakh is most genealogically similar to Karakalpak, Crimean
+Tatar, and the Nogai languages. Kazakh is also significantly intelligible with Kyrgyz, the
+native language of the neighboring Kyrgyz Republic, however, the genealogical classification
+of Kyrgyz is subject to debate in several Central Asian/Turkological circles, citing the sound
+
+
+                                              1
+system with contrastive vowel length as evidence for Kyrgyz’s affinity to Siberian Turkic
+versus other local Kipchak-Nogai Turkic languages.
+
+                                              Proto-Turkic
+
+
+                                      Oghur           Common Turkic
+
+
+                           Kipchak              Karluk               Oghuz               Siberian
+
+
+      West Kipchak      North Kipchak       South Kipchak
+
+                                                                                    Kipchak Uzbek/
+        Nogay            Karakalpak             Kazakh               Kyrgyz
+                                                                                    Fergana Kipchak
+
+
+2      Phonology
+Kazakh phonology is governed by an underlying system of vowel and consonant harmony. In
+this section, we provide overview and description of both the consonant and vowel systems,
+the basics of vowel and consonant harmony in Kazakh, typical morphophonemic alternations,
+and a reference guide to the orthographies used to write Kazakh. We are also pleased to
+announced that this grammar will also contain examples and reference charts for the Kazakh
+Cyrillic, the Arabic-script used in Kazakh speaking areas of Xinjiang, and the new 2017
+version Latin script for Kazakh, which is projected to replace Cyrillic by the year 2025.
+
+2.1     Orthography
+Kazakh is written in three different orthographies: Currently in Cyrillic in Kazakhstan and
+Mongolia, Arabic in China, or Latin, which is scheduled to become the new orthographic
+standard for Kazakh. In this orthography section we provide examples using both the Kazakh
+Cyrillic and the new Latin script. However, examples in this grammar will be provided in
+the new Latin orthography.
+
+
+
+
+                                            2
+LATIN   CYRILLIC   IPA            EXAMPLES
+Aa      Аа         [ɑ]            alma
+                                  алма
+                                  [ɑl.ʽmɑ]
+                                  `apple’
+Áá      Әә         [æ]            áke
+                                  әке
+                                  [æ.ʽke]
+                                  ‘father’
+Bb      Бб         [b]            bala
+                                  бала
+                                  [bɑ.ʽlɑ]
+                                  ‘child’
+Dd      Дд         [d]            dán
+                                  дән
+                                  [dæn]
+                                  ‘grain’
+Ee      Ее         [e] (also [je] el
+                   when           ел
+                   word-initial) [el] (also [jel]
+                                  ‘country’
+Ff      Фф         [f]            fabryka
+                                  фабрыка
+                                  [fɑ.brɪ.ʽkɑ]
+                                  ‘factory’
+Gg      Гг         [g]            gazet
+                                  газет
+                                  [gɑ.ʽzʲet]
+                                  ‘newspaper’
+Ǵǵ      Ғғ         [ɣ]            ǵylym
+                                  ғылым
+                                  [ɣɯ.ʽlɯm]
+                                  `science’/`knowledge’
+Hh   Хх   [x]           halyq
+     Һһ   [h]           халық
+                        [xɑ.ʽlɯq]
+                        `people/nationality’
+
+                        jıhaz
+                        жиһаз
+                        [ʒij.ʽhɑs]
+                        `furniture’
+İi   Ii   [ɪ]           til
+                        тіл
+                        [tɪl]
+                        `language’
+Iı   Ии   [ji]          ıá
+     Йй   [j]           иә
+                        [i.ʽjæ]
+                        ‘yes’
+
+                        ıogurt
+                        йогурт
+                        [jo.ʽgurt]
+                        `yoghurt]
+Jj   Жж   [ʒ] also [dʒ] jınalys
+                        жиналыс
+                        [jɪ.nɑ.ʽlɯs] or [dʒɪ.nɑ.lɯs]
+                        `meeting’
+
+
+Kk   Кк   [k]           kelý
+                        келу
+                        [ke.ʽlyw]
+                        ‘to come’
+Ll   Лл   [l]           lóktir
+                        лөктір
+                        [lœk.ʽtɪr]
+                        `physician’
+Mm   Мм   [m]           máńgilik
+                        мәңгілік
+                        [mæŋ.gɪ.ʽlɪk]
+                        `eternity’
+Nn   Нн   [n]           naǵyz
+                        нағыз
+                        [nɑ.ʽɣɯs]
+                        ‘authentic, true’
+Ńń   Ңң   [ŋ]           qatań
+                        қатаң
+                        [qɑ.ʽtɑŋ]
+                        `hard’
+Oo   Оо   [o]           qol
+          [ʷɤ] - word   қол
+          initial       [qχol]
+                        `hand’
+
+                        otan
+                        отан
+                        [ʷɤ.ʽtɑn]
+                        `motherland’
+Óó   Өө   [œ]           kól
+          [ʷɜ] - word   көл
+          initial       [kœl]
+                        `lake’
+
+                        ómir
+                        өмір
+                        [ʷɜ.ʽmɪr]
+                        `life’
+Pp   Пп   [p]           páter
+                        пәтер
+                        [pæ.ʽter]
+                        `apartment’
+Qq   Ққ   [q]           qazaq
+          [qχ] - word   қазақ
+          initial       [qχɑ.ʽzɑq]
+                        ‘Kazakh’
+Rr      Рр   [r]            raxmet
+                            рахмет
+                            [rɑx.ʽmɛt]
+                            `thank you’
+Ss      Сс   [s]            salý
+                            салу
+                            [sɑ.ʽluw]
+                            `to sell’
+Sh sh   Шш   [ʃ]            shyǵý
+                            шығу
+                            [ʃɯ.ʽɣuw]
+                            `to exit’
+Ch ch   Чч   [tɕ]           cherkes
+                            черкес
+                            [tɕer.ʽkes]
+                            `Circassian’
+Tt      Тт   [t]            taý
+                            тау
+                            [tɑuw]
+                            `mountain’
+Uu      Ұұ   [u]            urpaq
+                            ұрпақ
+                            [ʊr.pɑq]
+                            `generation’
+Úú      Үү   [y]            úlken
+                            үлкен
+                            [yl.ʽken]
+                            `big’ or `many’
+Vv      Вв   [v] or [w]     vegetarıandyq
+                            вегетариандық
+                            [ve.ge.ta.ri.jɑn.ʽdɯq]
+                            ‘vegetarian (adj.)’
+Yy      Ыы   [ɯ]            ydys
+                            ыдыс
+                            [ɯ.ʽdɯs]
+                            `plate’
+
+Ýý      Уу   [uw] or [yw] ýnıversıtet
+                          университет
+                          [yw.nij.ver.sij.tʲet]
+                          ‘university’
+Zz   Зз   [z]   sózdik
+                сөздік
+                [sœz.ʽdɪk]
+                `dictionary]
+2.2      Consonant Inventory
+The Kazakh consonant inventory contains approximately 25 phonemes. The consonant
+system hinges on a voiced/voiceless opposition for 12 of the 25 phonemes. There are 8
+stop/plosive consonants: bilabial [p]/[b], dental [t]/[d], velar [k]/[g], and uvular [q]/[K]. In
+the case of the voiceless uvular stop [q], this sounds is often accompanied by frication, ren-
+dering a sound more similar to [qX] as opposed to an isolated [q].
+
+                                     Table 1: Kazakh Consonant Inventory
+                   Labial      Dental-Alveolar             Palatal         Alveo-Palatal   Velar       Uvular        Glottal
+ Plosives          [p]   [b]   [t]         [d]                                             [k]   [g]         [q]      [h]
+                                                                  >              >
+ Affricates                                                      [dZ]           [tC]
+ Fricative         [f]   [v]   [s]             [z]         [S]       [Z]        [C]          [x]       [X]     [K]
+ Approximate                                         [l]                        [j]          [w]
+ Nasal               [m]                 [n]                                                 [N]
+ Trill                                   [r]
+
+
+2.2.1    Labial Stops
+  (1) Labial Stops [p]/[b]
+            • bala - [bA.lA]
+              ‘child’
+            • páter - [pæ.’ter]
+              ‘apartment’ (c.f Arabic ‘beyt’)
+The phoneme [p] as an onset is quite common in Kazakh, but in this position, it is usually
+indicative of a a Russian or Perso-Arabic loan word. [p] is found in native words, much more
+commonly, in syllable-coda positions. In this position, [p] is often included in a number of
+grammatical suffixes that range in function from marking converbs to indicating pseudo-
+superlatives
+  (2) Native Kazakh words with [p]
+            • kóp - [kœp]
+              ‘many’, ‘a lot’ (c.f Turkish cok)
+            • alyp - [A.’lWp]
+              ‘while taking’
+            • qap-qara - [q@p.qA.’rA]
+              ‘particularly black, very black’
+Finally, [p] may also appear in syllable-initial position in native Kazakh words, when this
+syllable is not the initial syllable.
+  (3)       • aspan - [@s.’pAn]
+              ‘sky’
+
+                                                                 3
+         • urpaq - [ur.’pAq]
+           ‘generation’
+
+2.2.2   Dental/Alveolar Stops
+Kazakh alveolar stops [d] and [t] are pronounced with the tongue on the alveolar ridge. [d]
+is found most commonly at the onset of both words and syllables.
+  (4)    • dán - [dæn]
+           ‘grain’
+         • odaq - [w 7.’dAq]
+           ‘union’
+[d] when found at the end of words is realized as [t] via word-final devoicing in Kazakh. They
+are often of Russian origin.
+  (5)    • triyod - [trI.’jot]
+           ‘triod’
+Voiceless alveolar stops, [t], may occur in all positions in a word and are common in both
+native and non-native Kazakh words. Eastern dialects of Kazakh with significant contact
+with Uyghur, often realize word-initial [t] as [d]
+  (6)    • tesik - [te.’sIk]
+           ‘hole’, ‘tear’
+         • ketý - [ke.tyw]
+           ‘to leave’
+         • tuz - [tus] ([dus] for Eastern dialects)
+           ‘salt’
+
+2.2.3   Velar and Uvular Stops
+Kazakh velar stops include [k] and [g], both of which are exceedingly common in native
+Kazakh words. In addition to /k/, the allophone [q] also surfaces when in the environment
+of front vowels. [k] in Kazakh only surfaces near front (-RTR) vowels and may also be found
+in every position of a word.
+  (7)    • kór - [kœr]
+           ‘see (imperative)’
+         • árkim - [ær.km]
+           ‘every’, ‘each’
+         • /jaqsy/ → [Zaq.’sW]
+           ‘good’
+         • /oryndyq/ → [w 7.rWn.’dWq]
+           ‘chair’
+
+
+
+                                              4
+   Kazakh has only a voiceless uvular stop [q]. [q] is also very common and found in many
+native lexical items and in many grammatical suffixes. [q] is often pronounced, particularly
+in word-initial position, with some frication, sounding more like [qX] than [q].
+
+  (8)    • qoı- [qXoj]
+           ‘sheep’
+         • qaldym - [qXal.’dWm]
+           ‘I remained’
+         • qur qol- [qXur qXol]
+           ‘empty hands’
+
+    The phoneme [g] is also found in most all positions, but is also subject to allophony based
+on the properties of adjecent vowels. /g/ surfaces as [g] when near -RTR/front vowels, and
+as [G] near back vowels.
+
+  (9)    • túngi - /tyn.gI/ → [tyN.gI]
+         • kelgen - [kel.gen]
+           ‘having come’
+         • /aǵa/ → aǵa [aGa]
+           ‘elder brother’
+
+    [g] and [G] are generally not found in the word-initial onset, rather are typically found
+in the middle of words as the onset of an internal syllable. [g]/[G] is a typical alternation
+found in suffixes with a 2-way harmonic opposition, with [g] found in suffixes agreeing for
+front vowels, and [G] for back vowels.
+
+2.2.4   Labial Fricatives
+Kazakh has only [v] and [f] for labial fricatives and are often sounds as allophones of each
+other. Both [f] and [v] are pronounced with the front teeth touching the lower lip. [f] is
+mostly found only in loan words from Russian and English or words and names of Perso-
+Arabic origin:
+ (10)    • fabrika - [fA.brW.’kA]
+           ‘factory’
+         • Ál-Farabi - [Alj f@.’rA.bi]
+           Ál-Farabi (Kazakh intellectual and also the name of Almaty’s main highway)
+         • faıl - [fajl]
+           ‘file (i.e computer files)’
+Monolingual Kazakhs may also alternate this sound with /p/, as [f] is not a native Kazakh
+sound. Russian-dominant bilinguals, however, retain [f] and [v] in speech. [v] is a allophone
+of /p/ or /b/ in intervocalic positions.
+
+
+
+
+                                              5
+2.2.5   Dental/Alveolar Fricatives
+Dental/Alveolar fricatives [s] and [z] are pronounced with the tongue blade on the tooth
+ridge and the tongue body lowered when pronounced in syllables with back vowels, and with
+the body slightly raised to the palate in words containing front vowels (this is particularly
+true of Russian-dominant bilinguals more used to the type of palatalization that exists in
+Russian). [s] can be found in all syllabic positions in a word:
+ (11)    • sarymsaq - [sA.rWm.’sAq]
+           ‘garlic’
+         • satyp-alý - [sA.tWp.Aluw]
+           ‘to shop’
+[z] may be found in all positions as well, but when found at the word-initial onset, it is an
+indication of a loan words. Native Kazakh words do not begin with [z]
+ (12)    • sóz - [sœs]
+           ‘word’
+         • bizdiń - [bIz.’dWN]
+           ‘our’
+         • zoologiya - [zu.@.lo.gj i.ja]
+           ‘zoology’
+
+2.2.6   Palatal and Alveo-Palatal Fricatives
+Kazakh palatal fricative [S] is produced with the tongue blade at the alveolar ridge, and,
+for Russian-dominant and urban Kazakhs, may also be realized as retroflex [ù]. It is found
+mainly after approximates and is also generally not a word-initial onset.
+ (13)    • burshaq - [bur.Saq]
+           ‘hail’
+         • balyqshy - [ba.lWq.SW]
+           ‘fisherman’
+When found at the beginning of the word, /S/ surfaces as [C], as well as when found after
+nasals and [l].
+ (14)    • monsha - [mon.CA]
+           ‘sauna’ (Russian banya)
+         • mólsher - [mœl.Cer]
+           ‘size’
+         • úshin - [y.Cyn]
+           ‘for’ (preposition)
+[Z] is typical of Kazakh as spoken in Kazakhstan. It is found exclusively in the word-initial
+onset positions. In dialects of Kazakh in the South and East of Kazakhstan (also in Kazakh
+speaking communities in Uzbekistan and Xinjiang/China), /Z/ is pronounced as a affricate
+[dZ].
+
+                                             6
+ (15)    • jaqsy - [Zaq.’sW] v. [dZaq.’sW]
+           ‘good’
+         • jol - [Zol] v. [dZol]
+           ‘road’
+Urban Kazakhs and Russian-dominant Bilinguals also have the affricate [tC] found in Russian.
+This sound is usually only found in modern Russian loans into Kazakh.
+ (16) chimkent
+
+2.2.7   Velar and Uvular Fricatives
+[x] is pronounced with heavy frication from the throat, often alternating as an allophone of
+/k/ or a variant of /q/ [X]
+
+2.2.8   Approximates
+Approximates in Kazakh include [l], [j], and [w], of which trigger different suffixes in con-
+sonant assimilation. /l/ is pronounced as [l] in the environment of front vowels, and as [l]
+when after back vowels.
+ (17)    • kel - [kj el]
+           ‘come’
+         • qal - [qAl]
+           ‘stay’
+The consonant cluster [-ls] in Kazakh is also often simplified to [s], deleting the underlying
+/l/.
+ (18)    • bolsa → [bos.sA]
+           ‘if it was’
+         • kelsem → [kes.sem]
+           ‘if I come’
+The two glide approximate consonants, [w] and [j], are often found as secondary points of
+articulation or realizations of vowel-initial words. In the case of [j], this consonant is found in
+all positions and is generally used in diphthongs when syllable-final, and also as a prothetic
+vowel when syllable-initial
+ (19)    • eki → [je.kI]
+           ‘two’
+         • qaısy [qAj.sW]
+           ‘what kind?’
+Orthographic [j] may also be dropped in favor of lengthening a word-final vowel.
+ (20)    • kúı[ky:]
+           ‘melody’
+
+
+                                                7
+         • kıiz úi [kijIz y:]
+           ‘felt house’ (Kazakh yurt)
+[w] surfaces in all syllabic positions, onset and coda. It is also found in words that are vowel
+initial with the vowels [oe] and [o].
+ (21)    • taý - [tAw]
+           ‘mountain’
+         • ýaqyt - [wA.’qyt]
+           ‘time’
+         • óte - [w 3.’tj e]
+           ‘very’
+         • osylaı- [w 7.sW.’lAj]
+           ‘in this manner’
+
+2.2.9   Nasal Consonants
+Kazakh nasal consonants, [m], [n] and [N] are often subject to assimilation based on neighbor-
+ing consonants. They do not generally begin words, however, there are many native words
+that begin with /n/, i.e ‘ne’ (what). All nasals are pronounced with phonation in the vocal
+folds and air passed through the nasal passage. /n/ will be realized as a surface [m] when
+before a labial sound, and [N] before velar sounds.
+ (22)    • ne - [nj e]
+           ‘what’
+         • on bes → [w 7m.’bj es]
+           ‘fifteen’
+         • óner [w 3.’ner]
+           ‘art’
+         • burynǵy → [burWN’GW]
+           ‘former’
+[m] and [N] are also found on their own, in isolation, for a number of lexical items. [m] can
+generally occur in all positions, whereas [N] is primarily found in syllable-codas.
+ (23)    • men - [men] (for Urban Kazakhs: [mj en]
+           ‘I’ or ‘me’
+         • meń - [meN]
+         • qońyr - [qXoN.’gWr]
+         • barǵanym - [bAr.Ga.’nWm]
+           ‘I have gone’
+
+
+
+
+                                               8
+2.2.10    Trills
+[r] is found in primarily coda and non-word initial syllable onsets. The tongue taps the alve-
+olar ridge and is voiced. It may occur word-initially in Russian and Perso-Arabic loanwords.
+ (24)     • otyr - [w 7.’tWr]
+            ‘sit’
+          • kerek - [kj e.’rek]
+            ‘necessity’
+          • raxmet - [rAx.’met] (for Urban Kazakhs: [rAx.’mj et]
+            ‘thank you’
+
+2.3      Vowel Inventory
+The Kazakh vowel inventory contains 10 phonemic vowels, with 2 major contrasts: vowel
+height and vowel openness. In addition to the contrast with height and opening, rounded
+central vowels also change in quality when in the onset of a word, being pronounced also with
+a labial glide (i.e óte is pronounced [w 3te] and otyr as [w 7tWr]). Of particular importance
+is the difference in vowel height/quality as organized by the retracted tongue root features
+of certain vowels. In other works, primarily ones translated from the Soviet and pre-Soviet
+work on Kazakh literature, Kazakh vowels are sometimes described as ‘soft’ or ‘hard’ due to
+the borrowing of this term from Russian academic literature (wherein ‘soft/hard’ describes
+a difference in palatalized and non-palatalized sounds in Russian), however a better under-
+standing of this contrast is to think of the groups of sounds as either +/- RTR (retracted
+tongue root) per analysis of Kazakh by Vajda 2003, Doyle Wagner 2013, and North 2009,
+et. al.
+                                        Table 2: My caption
+
+                                           Front
+                                                 Central Back
+                                         [-RTR]
+                                Close    I       0       U
+                                Mid      e       @       o
+                                Open     æ       œ       A
+
+   The features listed above indicate the contrasts between openness and RTR (front/back)
+in modern Kazakh. In addition to these vowels, variants of the open and mid-rounded
+vowels [œ] and [o] are only found in word-initial onsets. Ergo, Kazakh contains only 9 vowels
+fundamental to the phonological system, but 3 additional phonetic vowels (word-initial /o/
+and /œ/ and /@/, giving a total of 12 phonetic surface vowels.
+
+
+
+
+                                                 9
+                        i(ı)
+                                  y(ý)                              u(u)
+                               I(i)
+
+
+                                  e(e)
+                                                              @(a)          o(o)
+
+                                          œ(ó)        3(o)          7(o)
+
+
+                                          æ(á)
+
+                                                                             A(a)
+
+
+    Vowels drive vowel harmony in Kazakh based on being either -RTR or not. All -RTR
+(front) vowels require a front variant in dependent grammatical suffixes in agglutination.
+In addition to the -RTR vowels listed above, the vowel [œ] and it’s variant in word-initial
+position [w 3] also trigger -RTR suffixes.
+
+2.4     Vowel and Consonant Harmony
+Kazakh phonology may be characterized by processes that lead to harmony in a number
+of different features in both consonants and vowels. As all Turkic languages, Kazakh also
+exhibits the prototypical Turkic vowel harmony, a system wherein the feature specifications
+of a vowel in the root triggers the appearance of allophones that share a similar feature
+to that of the vowel found in the root. In this section we describe the basics of these
+morphophonological process in vowels and consonants.
+
+2.4.1   Vowel Harmony
+Vowel harmony in Kazakh designates, at minimum, 2 variants for grammatical suffixes: one
+variant containing a -RTR/front vowel and one variant containing a back vowel. An example
+of this given below with the locative case suffix -da/-de.
+ (25) Qazaqstan        Qazaqstan-da
+      Kazakhstan.nom Kazakhstan-loc
+      ‘Kazakhstan’ ‘in Kazakhstan’
+ (26) Reseı        Reseı-de
+      Russia.nom Russia-loc
+      ‘Russia’ ‘in Russia’
+In the above examples, Qazaqstan is a noun that contains only back vowels, and therefore
+receives the variant -da for the locative case, which also contains a back vowel [a]. Subse-
+quently, in the examples with Reseı, containing only front vowels, the grammatical suffix
+
+                                                  10
+becomes ‘-de’, which now contains a front vowel. In Kazakh, most all native words will
+contain only front vowels or back vowels. However, with the additional of many words from
+languages that do not have vowel harmony (Russian, Arabic, Persian, and Chinese, for exam-
+ple), vowel harmony is determined by the features of the vowel on the right-most periphery
+of the root.
+ (27) polıtsıya - ‘police’
+ (28) Almaty qalasynyń        polisiyasy
+      Almaty qala-sy-nyń      polisiya-sy
+      Almaty city-3.poss-gen police-3.poss
+      ‘Almaty municipal police’
+ (29) metro - ‘metro’
+ (30) metroǵa baramyn
+      metro-ǵa bar-a-myn
+      metro-dat go-pres-1sg.agr
+      ‘I’m going to the metro.’
+
+2.4.2   Naming conventions for suffixes Used in this Grammar
+The Kazakh language is an agglutinative type language that uses suffixes to express multiple
+grammatical function (derivation and inflection). Additionally, like most all major Turkic
+languages, Kazakh has a system of vowel harmony in addition to consonant harmony that
+affects the surface form of many of these suffixes. In this grammar we present suffixes in a
+way that attempts to divorce the suffix itself from their multiple surface forms. For example,
+we use the nomenclature of using capital letters for variable segments in a given suffix.
+For example, the dative case suffix of case has the forms -qa, -ke, -ǵa, and -ge, with four
+possible forms for the consonant (‘q’, ‘k’, ‘g’, and ‘ǵ’) and two possible vowels (‘a’ and ‘e’).
+Since both of these elements of the suffix are variant, we discuss the ‘Dative case suffix’ with
+the designation [-GA]. This convention indicates that both the consonant and the vowel are
+subject to harmonization when determining the surface form. There are, however, segments
+of a given suffix that are invariable and do not change based on harmonization. One such
+example is the suffix for the instrumental case, which has the forms -men, -ben and -pen.
+Notice in this suffix, we have 3 possible forms for the initial consonant (‘m’, ‘b’, or ‘p’), but
+the vowel is always ‘e’ and the final consonant is always ‘n’. For cases where the segment is
+invariable, we write the segment in lower case letters. The nomenclature for a suffix like
+the instrumental case, then, would be [-Men], with a capital ‘M’ representing the variable
+segment, and the lower case ‘en’ representing invariable segments. Several suffixes have
+variants that are sensitive to if the last phoneme in a lexical item is a vowel or consonant.
+For example, the third-person possessive suffix has the forms ‘-i’ and ‘-y’ when they are
+attached to lexical items that end in a consonant, and the forms ‘-si’ and ‘-sy’ when the
+lexical item ends in a vowel. In these types of suffixes, we treat the ‘s’ phoneme as a buffer
+consonant and write these type of consonants in parentheses ‘()’ in the shorthand in square
+brackets, i.e the shorthand for the third-person possessive suffix would be [-(s)I]. A similar
+convention is used for variable vowels, for example, the suffix for the converb form has the
+
+
+                                               11
+surface forms ‘-ip’, ‘-yp’ and ‘-p’, where the form ‘-p’ is attached to verbal roots ending
+in a vowel. The shorthand for this suffix is [-(I)p], with the variable vowel in capital and
+parentheses, since the vowel only surfaces in environments where the verbal root ends in a
+consonant. There are several typical patterns when observing the possible surface form of
+a given suffix. For example, it is quite common for suffixes to have a 4-way variation like
+the dative case suffix, where ‘q’, ‘k’, ‘g’, and ‘ǵ’ are possible, or 3-way variations like the
+instrumental case suffix with ‘m’, ‘b’, or ‘p’. Here we list the most common alternations and
+the convention we use for marking them in our shorthand.
+
+   • Vowels
+
+        A - indicates a 2-way variation with ‘a’ and ‘e’, ex. dative case suffix [-GA]
+         I - indicates a 2-way variation with ‘i’ and ‘y’, ex. third person possessive [-(s)I]
+
+   • Consonants
+
+        Q - indicates a 2-way variation with ’k’ and ’q’, ex. volitional future suffix [-MAQ]
+        D - indicates a 2-way variation with ’d’ and ’t’, ex. locative suffix [-DA]
+        N - indicates a 3-way variation with ’n’, ’d’, and ’t’, ex. genitive case [-NIń]
+        L - indicates a 3-way variation with ’l’, ’d’, and ’t’, ex. plural suffix [-LAr]
+        M - indicates a 3-way variation with ’m’, ’p’, ’b’, ex. negation suffix [-MA ]
+        G - indicates a 4-way variation with ’g’, ’q’, ’k’, and ’ǵ’, ex. optative mood suffix
+          [-GI]
+
+2.4.3   Consonant Harmony
+In addition to vowel harmony, Kazakh also has multiple allomorphs of suffixes based on har-
+mony with the neighboring consonant. Typical variants will show harmony for the following
+features: voicing, sonority, and backness. Below we provide examples of these alternatives
+with the plural suffix, the locative suffix, and the dative suffix.
+ (31) Plural Suffix [-LAr]
+         • bala bala-lar
+           ‘child’ ‘children’
+         • kirpi      kirpi-ler
+           ‘hedgehog’ ‘hedgehogs’
+         • qazaq         qazaq-tar
+           ‘Kazakh(sg.)’ ‘Kazakhs(pl.)’
+         • mektep mektep-ter
+           ‘school’ ‘schools’
+         • adam adam-dar
+           ‘person’ ‘people’
+
+
+                                               12
+         • gúl     gúl-der
+           ‘flower’ ‘flowers’
+         • sóz   sóz-der
+           ‘word’ ‘words’
+ (32) Locative Suffix [-DA]
+         • qala qala-da
+           ‘city’ ‘city-loc’
+         • kól kól-de
+           ‘lake’ ‘lake-loc’
+         • saıt      saıt-ta
+           ‘website’ ‘website-loc’
+         • mektep mektep-te
+           ‘school’ ‘school-loc’
+ (33) Dative Suffix [-GA]
+         • bala bala-ǵa
+           ‘child’ ‘child-dat’
+         • qazaq        qazaq-qa
+           ‘Kazakh(sg)’ ‘Kazakh-dat’
+         • sóz   sóz-ge
+           ‘word’ ‘word-dat’
+         • mektep mektep-ke
+           ‘school’ ‘school-dat’
+In the above examples, the suffixes are listed as [-LAr], [-GA], and [-DA], a convention taken
+from textbooks for Anatolian/Istanbul Turkish, a related language. The convention is meant
+to indicate that only the letters written as capitals alternate based on the phonetic properties
+of nearby sounds. In the case of [-LAr] the possible variants include ‘-lar, -ler, -tar, -ter, -dar
+and -der’, whereby ‘-lar/-ler’ pattern for words that end in a vowel (qala) or words that end
+in a voiced fricative (kirpi). ‘-tar/-ter’ occur when the word ends in a voiceless consonant, as
+well as words that are written orthographically with voiced consonants (which are typically
+devoiced word-finally in Kazakh, anyway). -dar/-der is found after sonorants and voiced
+fricatives. These types of suffixes we designate as having a 3-point contrast in form, as there
+exists 3 possible consonant alternations, in addition to the alternation between [-a-] and [-e-]
+in the suffix based on vowel harmony.
+    Suffixes, however, like [-GA] have a 4-way consonant distinction within the 2-way vowel
+alternation. Suffixes with the back-vowel [-a] in these types of suffixes, will have either a
+fricative or stop counter part based on if the root ends in a fricative or stop (i.e [bala] ends
+in a vowel, therefore [-ǵa] is the surface form of the dative case, and not *[-ga]).
+    Suffixes with 3-way distinction typically fall into the categories of an initial L-, N-, or M-.
+An example of a 3-way initial L- suffix is the plural suffix [-LAr], as well as the demonimal
+suffix -LA and the derivational suffix -LIK. These suffixes, like -LAr, have -lar/-ler when the
+
+                                                13
+root ends in a vowel or the consonants r, y’, ‘-dar/-der’ after other sonorants and voiced
+fricatives, and -tar/-ter after voiceless consonants and voiced stops. Initial N 3-way suffixes
+surface as either -n-, -d-, or -t-, again, depending on the voice and sonority properties of the
+final-consonant in the word root. The genitive, accusative, and ablative case suffixes belong
+to this class.
+ (34) Genitive Case
+         • qala-nyń
+           city-gen
+         • qazaqstan-nyń
+           Kazakhstan-gen
+         • Shymkent-tiń
+           Shymkent-gen
+ (35) Ablative Case
+         • qala-dan
+           ‘from the city’
+         • Qazaqstan-nan
+           ‘from Kazakhstan’
+         • Shymkent-ten
+           ‘from Shymkent’
+Finally, there are suffixes that do not obey vowel harmony at all, but still will obey consonant
+harmony. An example of this is the instrumental suffix ‘-Men’, which as the forms ‘-men,
+-ben, -pen’. Further explanation of these types of declensions will be detailed further in our
+section on Kazakh morphology.
+
+2.5    Prosodic and Lexical Stress
+Kazakh lexical stress is typically syllable-final.
+ (36) jumyrtqa
+      ‘egg’
+ (37) qazaqstan
+      ‘Kazakhstan’
+ (38) áke
+      ‘father’
+Words that are formed as a pair of two-words, also contain two unique stress peaks, most
+commonly, on the final syllable of the word.
+ (39) azyq-túlik
+      ‘groceries’
+ (40) áke-sheshe
+      ‘parents’
+
+                                               14
+Morphologically complex words consistently place the stress on the final syllable, even in
+increasing levels of complexity.
+ (41) bala
+      child.nom.sg
+ (42) bala-lar
+      child-pl
+ (43) bala-lar-ym
+      child-pl-1sg.poss
+ (44) bala-lar-ymyz
+      child-pl-1pl.poss
+ (45) bala-lar-ymyz-ǵa
+      child-pl-1pl.poss-dat
+However, certain verbal tenses permit for stress on the penultimate syllable. These tenses
+include the imperative mood, the habitual past, the indirect past, and the optative. Ad-
+ditionally, word-final clitics in Kazakh (question particles, agreement suffixes) do not take
+stress, moving instead the center of stress to the penultimate syllable.
+ (46) qazaq tili              grammatıkasy týraly jazàmyn
+      qazaq til-i             grammatikasy týraly jaz-a-myn
+      Kazakh language-3.poss grammar       about write-pres-1sg.agr
+      ‘I am writing a grammar about the Kazakh language.’
+ (47) Aıtqanymà         sendiń       be
+      aıt-qan-ym-a       sen-di-ń     be
+      say-ptcp-1sg-dat believe-pst-2sg q
+      ‘Did you believe what I said?’
+    Auxiliary verb constructions also tend to show a preference for stress on the last syllable
+of the lexical item appearing with the auxiliary verb, and the auxiliary verb to remain
+unstressed.
+ (48) qaryndasym      qulàı      jazdady
+      qaryndas-ym qulà-ı         jazda-dy
+      sister-1sg.poss fall-cnvbII aux-3.pst
+      ‘My sister almost fell.’
+    As the assignment of lexical stress for these verbs tenses is specific to the morpholog-
+ical components (i.e the structure or tense used), we will further detail these suffixes and
+their effects on lexical stress in our sections on verbal tenses, clitics, and auxiliary verb
+constructiosn.
+
+2.6    Syllable Structure
+Kazakh syllables are mainly CV, V, VC, or CVC. Consonant clusters are most common in
+coda positions, but are rare. Consonant clusters, at morpheme, boundaries, are common, and
+
+                                              15
+maximally include 2 consonants (-CC-). Many suffixes contain variants that either contain
+a buffer-vowel or an epenthesized -n- to mitigate phonotactics.
+
+2.7   Orthography Rules
+The below orthographic rules are conventions for spelling used in Kazakh Cyrillic. The
+precise Latin equivalents are still being developed, as the adoption of Latin for Kazakh
+is based on the Latin transcription of Russian. Therefore, we present these orthographic
+spelling rules assuming similar representation for Russian loans.
+
+  1. The first orthography rule applies mostly to borrowed words of Russian origin (Abdyǵalıqyzy,
+     2007), as well as other languages that permit complex consonant clusters at the end
+     of words. The sequences -bl’, -br’, -kl’, -kc, -kt, -ng, -nt, -nkt, -rg, -rk as well as the
+     sequences -or and -ur, despite ending in back vowels, take front-vowels in their affixes
+
+  2. y/i is insered when forming derivatives of nouns endings in -mb, -mp, -kt, -ks, -nd, -ng,
+     -sk, -rv, -ft
+
+  3. Common nouns with geminated endings -kk, -ll, -mm, -pp, -ss, and -tt simplify to a
+     single consonants when adding suffixes
+
+  4. Proper nouns, however, retain geminated consonants Donbass-qa , Flınning
+
+  5. Words ending with -st, -st’, -zd have no changes in stems, but, when adding endings,
+     suffixes drop the final consonants E’konomist - E’konomis-ter
+     C”ezd - c”ez-ge - c”ezd-i-nin’
+
+  6. Only Russian words borrowed into Kazakh contain ’ and ”. If the words ending with a
+     ’ take inflections starting with a vowel, ’ is dropped portfel’ - portfelim. If the inflection
+     starts with a consonant, ’ is retained - portfel’-ge
+
+  7. Monosyllabic words ending with ’ take soft endings: rol’ - roli - rol’-der-i
+
+  8. If the last syllable of the word contains yo or e’, the stem takes front vowel endings in
+     inflection
+     aktyor-diń
+     duet-i-niń
+
+  9. Relative adjectives borrowed from Russian, when translating, drop the soft sound ’,
+     unless the stem of the word contains it
+     kommunal’nyj - kommunal-dyq
+     nominal’nyj - nominal-dyq
+     gormonal’nyj - gormonal-dyq
+     gastrol’nyj - gastrol’-dyq
+
+
+
+
+                                               16
+3       Morphology
+The morphology of the Kazakh language can be categorized as an agglutinative system that
+exclusively uses suffixes for both derivational and inflectional processes. There is a system
+of 7 nouns cases, multiple tense, mood, and aspect distinctions in verbal conjugations, and
+agreement processes with number and person.
+
+3.1     Nouns
+Nouns in Kazakh are divided into two categories: ‘jalpy’ (common nouns) and ‘jalqy’ (proper
+nouns). Nouns are words that answer the questions ‘ne’(what) and ‘kim’(who) and further
+denote entities that are concrete (‘derekti’) or abstract (‘dereksiz’).
+    Nouns in Kazakh do not bear grammatical gender or noun-class and, subsequently, agree-
+ment for gender is not observed in Kazakh. Nouns do, however, decline for case and number.
+In this section we detail the case morphology for nouns, the formation of plurals, the deriva-
+tional processes for turning verbs into nouns, and the pronominal system.
+
+3.1.1    Number - singular and plural
+Kazakh has two numbers: single and plural. The singular form of the noun is unmarked:
+ (49) bala
+ (50) til
+ (51) ana
+The plural form of the noun is formed by adding the suffix [-LAr]. After words that end in a
+vowel or the phonemes [r](in orthography: ‘r’) and [j](orthography: ı), [-LAr] has the forms
+‘-lar/-ler’, with alternation in the vowel depending on the quality of the final vowel in the
+root.
+ (52) meımanhana meımanhanalar
+ (53) mekeme mekemeler
+ (54) qaru qarular
+ (55) túbir túbirler
+ (56) saraı saraılar
+ (57) bala balalar
+For roots that end in other sonorants (nasals [m], [n], [N](ń) and approximate [l]) and voiced
+fricatives ([z] and [Z](j)), the plural ending is ‘-dar/-der’, again, alternating for vowel harmony
+with the furthest right syllable in the root.
+ (58) til til-der
+ (59) qalam qalam-dar
+ (60) balapan-dar
+ (61) qaǵaz-dar
+
+                                                17
+ (62) montaj-dar
+Roots ending in all other sounds, i.e voiceless consonants, as well as voiced-stops [b], [v], [g],
+and [d], take the plural endings ‘-tar/-ter’.
+ (63) kitap kitaptar
+ (64) mektep mektep-ter
+ (65) balyq balyq-tar
+ (66) terek terek-ter
+ (67) ydys ydys-tar
+ (68) aǵash aǵashtar
+Depending on the concept that they denote, certain abstract/dereksiz nouns do not have a
+plural form. Such examples include nouns such as baqyt and densaýlyq. Additionally, the
+plural suffix only is found on count-nouns. Mass nouns, such as sút and qant do not take the
+plural suffix. Finally, when quantified with numerals or other quantifiers, nouns are found
+in their unmarked singular form.
+ (69) alma almalar
+ (70) bes alma
+ (71) kitap kitaptar
+ (72) birneshe kitap
+ (73) adam adamdar
+ (74) birtalaı adam
+ (75) oqushy oqushylar
+ (76) birsypyra oqushy
+While it is common in vernacular speech to use both the quantifying phrase and a plural
+noun to refer to plural animate objects, in standard Kazakh, this is considered incorrect.
+ (77) birtop adamdar
+ (78) birsypyra oqushylar
+ (79) birqora maldar
+
+3.2    Noun Compounding
+Nouns are commonly coined in Kazakh by combining two words from different dialects
+together into a compound noun. Additionally, kinship terms, related adjectives, and other
+‘paired expressions’ constitute common compound lexical items in Kazakh.
+
+3.3    Numerals
+Kazakh has a base-10 counting system and individualized lexical items for 10, 100, 1000,
+and 1,000,000.
+
+                                               18
+3.3.1   Cardinal Numbers
+Cardinal numbers (‘Eseptik san esim’) are numbers that strictly denote quantities of entities.
+Entities that are qualified by cardinal numbers do not take plural endings, rather, they are
+left in the singular form.
+ (80) eki bala
+      two child
+      ‘two children’
+ (81) on bólme
+      ten room
+      ‘ten rooms’
+ (82) júz    jylqy
+      hundred steed
+      ‘one hundred steeds’
+Cardinal numbers may be simple, or, in the case of cardinals higher than 10, complex. In this
+section, we designate cardinal numbers that consist of two or more numerals as ‘complex’.
+In Kazakh cardinal numbers, cardinals indicating higher powers of numbers (i.e 100s vs. 10s
+vs. singular numbers) are placed to the left-edge of the complex number.
+ (83) on bes
+      ten five
+      ‘fifteen’
+ (84) júz    jıyrma bes
+      hundred twenty five
+      ‘one hundred and twenty-five’
+
+3.3.2   Ordinal Numbers
+Ordinal numbers (‘Rettik san esim’) represent the position or rank in a sequential order.
+Ordinal numbers are formed by adding the suffix [-(I)nshI].
+ (85) toǵyz toǵyzynshy
+      toǵyz toǵyz-ynshy
+      nine nine-ord
+      ‘nine’ ‘ninth’
+ (86) bir birinshi
+      bir bir-inshi
+      one one-ord
+      ‘one’ ‘first’
+In complex ordinal numbers, only the last cardinal number takes the [-(I)ns’I] suffix.
+ (87) jıyrma tórt, jıyrma tórtinshi
+      twenty four, twenty four-ord
+      ‘twenty four’, ‘twenty fourth’
+
+                                             19
+ (88) eki myń     on segiz, eki myń       on segizinshi
+      eki myń     on segiz, eki myń       on segiz-inshi
+      two thousand ten eight, two thousand ten eight-ord
+      ‘two thousand eighteen (2018)’ ‘two thousand eighteenth (2018th)’
+
+3.3.3   Collective Numerals
+Collective numbers are used to indicate a group of items, i.e ‘a group of 2/3/4/etc.’ They
+are formed with the suffix [-Aý] added to the cardinal number form. In the case of cardinal
+numbers that end in vowels, the final vowel of the cardinal number’s base form is deleted
+and replaced with the [-Aý] suffix.
+ (89) bir bir-eý
+      one one-coll
+      ‘one’ ‘(group of) one’
+ (90) eki ek-eý
+      two two-coll
+      ‘two’ ‘(group of) two’
+ (91) úsh úsh-eý
+      three three-col
+      ‘three’ ‘(group of) three’
+The collective number birey’ is also used as an indefinite pronoun meaning ’someone’
+ (92) bireý   kele        jatyr
+      bir-eý  kel-e       jatyr-Ø
+      one-coll come-cnvbII lie.aux-3
+      ‘Someone is coming.’
+Collective numbers take both personal and possessive pronoun endings to express the per-
+son/number of the group referenced. In this construction, the qualifying pronoun may be
+found in either the nominative or the genitive.
+ (93) biz        tórteýimiz
+      biz        tórt-eý-imiz
+      1pl.nom four-col-1pl.poss
+      ‘the four of us’
+ (94) bizdiń   tórteýimiz
+      biz-diń tórt-eý-imiz
+      1pl-gen four-coll-1pl.poss
+      ‘the four of us’
+ (95) sender           altaýyń
+      sender           alt-aý-yń
+      2pl.fam.nom six-col-2sg
+      ‘the six of you’
+
+                                            20
+ (96) senderdiń      altaýyń
+      sender-diń     alt-aý-yń
+      2pl.fam-gen six-coll-2sg
+      ‘the six of you’
+ (97) olar       beseýi
+      olar       bes-eý-i
+      3pl.nom five-col-3.poss
+      ‘the five of them’
+ (98) olardyń beseýi
+      olar-dyń bes-eý-i
+      3pl-gen five-coll-3
+      ‘the five of them’
+This construction is particularly common with ekeý, the collective numeral for two, and the
+first person plural pronoun in order to function much like an exclusionary 1st person plural
+(i.e ‘the two of us’, including the speaker and another person, while excluding the listener.)
+ (99) biz       ekeýimiz          taýda        óskenbiz
+      biz       ek-eý-imiz        taý-da       ós-ken-biz
+      1pl.nom two-col-1pl.poss mountain-loc grow-pst.ptcp-1pl
+      ‘We (the two of us) grew up in the mountains.’
+
+3.3.4   Approximate Numbers
+Cardinal numbers take the suffix [-LAGAn] or [-LAp] or [-DAı] to express either general
+approximates or unqualified amounts within a certain countable range (c.f English ‘hundreds
+of people’).
+(100) myńdaǵan
+      myń-daǵan
+      1000-approx
+      ‘thousands (of people)’
+(101) qyryqtap
+      qyryq-tap
+      fourty-approx
+      ‘about 40’
+(102) jetpisteı
+      jetpis-teı
+      sixty-approx
+      ‘give or take 60’/‘about 60’
+Cardinal numbers also function similar to nouns in that they may also take case endings
+when followed by certain function words. When found in the dative case after postpositions
+jy’yq, jaqyn or tarta, this construction corresponds to ‘about [number]’ or ‘close to [number]’.
+
+
+                                              21
+(103) júzge   jýyq
+      júz-ge jýyq
+      100-dat about
+      ‘about 100’
+(104) myńǵa   jaqyn
+      myń-́ga jaqyn
+      1000-dat about
+      ‘about 1000’
+(105) elýge tarta
+      elý-ge tarta
+      50-dat close.to
+      ‘close to 50’
+
+3.3.5   Fractions
+Fractions are formed using the combination of two cardinal numbers, the first of which is in
+the ablative case.
+(106) úshten    bir
+      three-abl one
+      ‘one third (1/3)’
+(107) onnan eki
+      ten-abl two
+      ‘two tenths (2/10)’
+
+3.4     Cases
+Kazakh has seven grammatical cases: Nominatives, Accusative, Genitive, Dative-Directional,
+Ablative, Locative, and Instrumental. All Kazakh cases can be traced to the ancestral proto-
+Kipchak language and are all fully traceable to even the ancestral Old Turkic language.
+
+3.4.1   The Nominative Case - Ataý Septik
+Ataý septik (lit. ‘the naming case’) is the basic, unmarked form of the noun, pronoun,
+numeral, etc. Noun phrases in the nominative case serve as the subject or predicate of a
+sentence.
+(108) Azamat       jaqsy oqýshy
+      Azamat.nom good student.nom
+      ‘Azamat is a good student.’
+The nominative case may also mark the direct object of a transitive sentence if that object
+is also an indefinite noun. This difference between the nominative and accusative cases for
+direct objects is similar to the distribution of the English articles ‘the/a’ or the French ‘le,
+la, les / un, une, des’.
+
+                                              22
+(109) Azamat qalam          satyp        aldy
+      Azamat qalam-Ø        sat-yp       al-dy-Ø
+      Azamat pen-acc.indef buy-cnvbI take-pst-3
+      Eng: ‘Azamat bought a pencil’, Fr: ‘Azamat a acheté un crayon’
+(110) Azamat qalamdy      satyp       aldy
+      Azamat qalam-dy     sat-yp      al-dy-Ø
+      Azamat pen-acc.def buy-cnvbI take-pst-3
+      Eng: ‘Azamat bought the pencil’, Fr:‘Azamat a acheté le crayon’
+
+3.4.2   The Accusative Case - Tabys Septik
+The Tabys septik (lit. ‘the finding case’) is used as the marker of a direct object if, and only
+if, that object is considered definite. The case has the following forms:
+
+   • -ty/-ti: found after voiceless consonants and voiced stops
+
+   • -ny/-ni: found after vowels
+
+   • -n: found after the 3rd person singular/plural possessive suffix
+
+   • -dy/-di: found in all other environments
+
+It is used to highlight the object of a transitive action that is definite.
+(111) Azamat        oryndyqty    kóterdi
+      Azamat        oryndyq-ty   kóter-di
+      Azamat.nom chair-acc.def lift-pst.3
+      ‘Azamat lifted the chair.’
+In Kazakh, as previously mentioned in the section on Nominative case, direct objects may
+also appear in the nominative case.
+(112) men        qyzyl alma       jedim
+      men        qyzyl alma-Ø     je-di-m
+      1sg.nom red apple-acc.indef eat-pst-1sg
+      ‘I ate a red apple.’
+(113) men        qyzyl alma-ny  jedim
+      men        qyzyl alma-ny  je-di-m
+      1sg.nom red apple-acc.def eat-pst-1sg
+      ‘I ate the red apple.’
+The absence of the accusative marker ‘-ny’ in (112) indicates that the direct object is in-
+definite or nonspecific, whereas in (113) the presence of the marker indicates a concrete or
+previously referred to object. The accusative case may also appear with the presence of the
+indefinite article ‘bir’ (one), in which case it denotes a very specific individual item, rather
+than a nondescript quantity or nonspecific entity.
+
+
+
+                                               23
+(114) Arman toıǵa       bir qoı apardy
+      Arman toı-ǵa      bir qoı apar-dy-Ø
+      Arman wedding-dat one sheep gift-pst-3
+      ‘Arman brought a sheep to the wedding party.’
+(115) Arman bir qoıdy           toıǵa       apardy
+      Arman bir qoı-dy          toı-ǵa      apar-dy-Ø
+      Arman one sheep-acc.def wedding-dat bring-pst-3
+      ‘Arman brought one such a sheep to the wedding party.’
+
+3.4.3     The Genitive Case - Ilik Septik
+The genitive case in Kazakh is widely used and displays a degree of agreement with the pos-
+sessing noun phrase and the possessed noun phrase. The case is found on the possessing noun
+phrase. The genitive is formed with the suffix [-NIn’] and has the following morphophological
+distribution:
+   • -nyń/-niń: found when root ends in a vowel or in a nasal ([m], [n], or [N](orth.: ‘ń’))
+        (116) kisi kisi-niń
+        (117) alma alma-nyń
+        (118) kún kún-niń
+        (119) qalam qalam-nyń
+   • -dyń/-diń: found when the root ends in a voiced fricative ([z]/z or [Z]/j) and the
+     consonants [r](r), [j](ı), [l](l), and [uw/yw](ý)
+        (120) qyz qyz-dyń
+        (121) kúz kúz-diń
+        (122) balalar balalar-dyń
+        (123) shal shal-dyń
+        (124) pil pil-diń
+   • -tyń/-tiń: found when the root ends in a voiceless consonant or a voiced stop.
+        (125) qazaq qazaq-tyń
+        (126) esik esik-tiń
+        (127) Ivanov-tyń
+        (128) pedagog-tyń
+        (129) hirurg-tyń
+The genitive case answers the questions ‘kimniń(whose?) and neniń(of what?). The genitive
+case also requires that the possessed noun appear with a personal possessive suffix that
+agrees in person and number with the noun that bears either genitive case or, in the case of
+abstract compounds, the noun that qualifies the possessed noun. The relationship between
+the nouns may be concrete or abstract.
+
+                                              24
+(130) studenttiń kitab-i
+      student-tiń kitab-i
+      student-gen book-3.poss
+      ‘the student’s book’
+The above example is a case of a concrete relationship between the nouns, as the possessor
+noun is explicitly marked with the genitive case.
+(131) qoı       eti
+      qoı       et-i
+      sheep.nom meat-3.poss
+      ‘mutton/sheep meat’
+The example above, however, is abstract, with the qualifying noun ‘sheep’ found in the
+nominative case, yet the qualified noun, ‘meat’, still surfaces with the 3rd singular possessive
+marker, indicating the relationship between the two nouns. Most prepositions in Kazakh are
+governed by the genitive case, with the noun acting as a preposition behaving as a type
+of relator noun that indicates location. Nouns in these constructions in Kazakh with the
+genitive case can appear in both forms, with and without overt affixes.
+(132) stol ústinde
+      stol úst-i-nde
+      table top-3.poss-loc
+      ‘on top the table’
+(133) stol-dyń ústinde
+      stol-dyń úst-i-nde
+      table-gen top-3.poss-loc
+      ‘on top of the table’
+
+3.4.4     The Dative Case - Barys Septik
+Barys septik - the giving case - is the marker of the indirect object as well as the goal or
+destination of movement. This dative case is used to express goals, directionality towards a
+person, location, temporal frames or even extent. The case has the following forms:
+
+   • -ǵa/-ge: found after vowels, nasals, and voiced consonants:
+
+        (134) alma alma-ǵa
+              ‘apple’ ‘to the apple’
+        (135) dala dala-ǵa
+              ‘field’ ‘to the field’
+        (136) áke áke-ge
+              ‘father’ ‘to father’
+        (137) adam adam-ǵa
+              ‘person’ ‘to the person’
+
+
+                                              25
+     (138) jaz jaz-ǵa
+           ‘summer’ ‘to summer’
+   • -qa/-ke: found in all other cases
+     (139) as as-qa
+           ‘food’ ‘to the food
+     (140) ıt ıt-ke
+           ‘dog’ ‘to the dog’
+   • -(n)a/-(n)e: found after the personal possessive suffixes. When found after the 3rd
+     person singular/plural possessive suffix, it takes an ‘n-’ before the ‘-a/-e’ ending.
+     (141) atam                  atama
+           ata-m                 ata-m-a
+           grandfather-1sg.poss grandfather-1sg.poss-dat
+           ‘my grandfather’ ‘to my grandfather’
+     (142) ákeń            ákeńe
+           áke-ń           áke-ń-e
+           father-2sg.poss father-2sg.poss-dat
+           ‘your father’ ‘to your father’
+     (143) balasy        balasyna
+           bala-sy       bala-sy-na
+           child-3.poss child-3.poss-dat
+           ‘his/her/their child’ ‘to his/her/their child’
+     (144) ákesi         ákesine
+           áke-si        áke-si-ne
+           father-3.poss father-3.poss-dat
+           ‘his/her/their father’ ‘to his/her/their father’
+The dative case indicates the goals of verbs of motion, as well as the location or direction of
+an action.
+(145) Jomart      qalaǵa bardy
+      Jomart      qala-ǵa bar-dy-Ø
+      Jomart.nom city-dat go-pst.3
+      ‘Jomart went to the city.’
+(146) kólikti     garaj-ǵa   qoıdyq
+      kólik-ti    garaj-ǵa   qoı-dy-q
+      car-acc.def garage-dat put-pst-1pl
+      ‘We put the car in the garage.’
+(147) maldy           qoraǵa      qamadyq
+      mal-dy          qora-ǵa     qama-dy-q
+      cattle-acc.def shelter-dat lock-pst-1pl
+      ‘We locked the cattle in the shelter.’
+
+                                              26
+The case is also used to highlight the indirect object or recipient of an action.
+(148) kisige       nan             berdim
+      kisi-ge      nan-Ø           ber-di-m
+      person-dat bread.acc.indef give-pst-1sg
+      ‘I gave the person some bread.’
+It is also used to mark the experiencer of some verbs.
+(149) Asanǵa túlki       unaıdy
+      Asan-ǵa túlki      una-ı-dy
+      Asan-dat fox.nom like-pres-3
+      ‘Asan likes a fox’ (a fox is pleasing to Asan).
+Finally, the dative case is also used to indicate the extent of an action or the time frame for
+a given durative event.
+(150) oqý        merzimi      eki jylǵa   sozyldy
+      oqý        merzim-i     eki jyl-ǵa  sozyl-dy-Ø
+      school.nom term-3.poss two year-dat last-pst-3
+      ‘The school term lasted for 2 years.’
+(151) men       tek    eki aptaǵa keldim
+      men       tek= eki apta-ǵa kel-di-m
+      1sg.nom only= two week-dat come-pst-1sg
+      ‘I came for only two weeks.’
+
+3.4.5   The Ablative Case - Shyǵys Septik
+Shyǵys Septik - ‘the leaving/exiting case’ - is used to carry multiple meanings. The main
+purpose of the case is to define the benchmark of an action in a certain physical or temporal
+frame. The ablative case endings are:
+
+   • -dan/-den: found after noun stems ending in vowels, sonorants [l](l), [r](r), [uw/yw](ý),
+     [j](ı) and voiced fricatives [z](z) and [dZ](j).
+
+   • -tan/-ten: found after noun stems ending in voiceless consonants and voiced stops.
+
+   • -nan/-nen: found after noun stems ending in nasal sounds [m](m), [n](n), and [N](ń)
+     as well as after the 3rd person possessive suffix.
+
+The case can be used to mark the partitive of a certain quantity:
+(152) sen      sútten   ishtiń
+      sen      sút-ten ish-ti-ń
+      2sg.nom milk-abl drink-pst-2sg
+      ‘You drank some of the milk.’
+It can also mark the source of either an action or another noun.
+
+
+                                              27
+(153) men       Qazaqstannan keldim
+      men       Qazaqstan-nan kel-di-m
+      1sg.nom Kazakhstan-abl come-pst-1sg
+      ‘I came from Kazakhstan.’
+(154) Bolattan hat                 aldym
+      Bolat-tan hat-Ø              al-dy-m
+      Bolat-abl letter-acc.indef take-pst-1sg
+      ‘I got a letter from Bolat.’
+The ablative case is also used to denote the source or material of another noun.
+(155) sandyq temirden jasalǵan
+      sandyq temir-den jas-al-ǵan-Ø
+      case.nom iron-abl make-pass-pst.ptcp-3
+      ‘The trunk is made of iron.’
+(156) shujyq       jylqynyń etinen            jasalǵan
+      shujyq       jylqy-nyń et-i-nen         jasal-ǵan-Ø
+      sausage.nom horse-gen meat-3.poss-abl make-pass-pst.ptcp-3
+      ‘The sausage is made from the meat of horses.’
+The case is also used as the bench mark in comparative sentences.
+(157) Sáúle Qaırattan bes jyl kishi
+      Sáúle Qaırat-tan bes jyl kishi
+      Sáúle Qaırat-abl five years small
+      ‘Sáúle is 5 years younger than Qaırat.’
+The ablative is also used as the obligatory marker of arguments for certain verbs. For
+example, the verb ‘suraý’(to ask):
+(158) muǵalimimizden        suradym
+      muǵalim-imiz-den      sura-dy-m
+      teacher-1pl.poss-abl ask-pst-1sg
+      ‘I asked our teacher.’
+
+3.4.6   The Locative Case - Jatys Septik
+Jatys septik – ‘the lying down case’ – is used to denote the physical or temporal location.
+Unlike the dative and ablative cases, which are dynamic in meaning, the locative is static.
+The case has the following endings:
+
+   • -da/-de: found after voiceless consonants and voiced stops
+
+   • -ta/-te: found after all other consonants
+
+   • -nda/-nde: found after nouns endings in the 3 person singular/plural suffix.
+
+
+
+                                             28
+Nouns in locative case are often governed by stative verbs, but sometimes are used with verbs
+of motion when the motion is contained to a certain physical or temporal state or location.
+It is often used with past participles to render a similar meaning to English ‘when...’ in
+subordinate clauses dealing with past time frames.
+(159) Sharyn shatqaly      Qazaqstanda      ornalasqan
+      Sharyn shatqal-y     Qazaqstan-da     orna-la-s-qan
+      Sharyn canyon-3poss Kazakhstan-loc find-pass-recip-pst.perf-3
+      ‘Sharyn Canyon is located in Kazakhstan.’
+(160) Men       Almatyǵa barǵan-da,       Sabırany kórdim
+      Men       Almaty-ǵa bar-ǵan-da,     Sabıra-ny kór-di-m
+      1sg.nom Almaty-dat go-pst.ptcp-loc, Sabira-acc see-pst-1sg
+      ‘I saw Sabira when I went to Almaty.’
+(161) Ájem                  Taldyqorǵan qalasynda      turady
+      Áje-m                 Taldyqorǵan  qala-sy-nda   tur-a-dy
+      grandmother-1sg.poss Taldykorgan city-3poss-loc sit-pres-3
+      ‘My grandmother lives in the city of Taldykorgan.’
+When noun phrases in the locative are used to exhaustively modify an addition noun phrase,
+the endings takes an addition ‘ǵy/gi’ to mark the status of the phrase as a relative clause
+instead of a simple prepositional phrase.
+(162) Almaty qalasynda         dúken kóp
+      Almaty qala-sy-nda       dúken kóp
+      Almaty city-3.poss-loc store many
+      ‘There are many stores in Almaty city.’
+(163) Almaty qalasyndaǵy          dúkende bolǵanymda                     osy
+      Almaty qala-sy-nda-ǵy       dúken-de bol-ǵan-ym-da                 osy
+      Almaty city-3.poss-loc-rel store-loc be-pst.ptcp-1sg.poss-loc this
+      kitapty         aldym
+      kitap-ty        al-dy-m
+      book-acc.def take-pst-1sg
+      ‘I bought this book when I was in the store, that is in Almaty city.’
+
+3.4.7   The Instrumental Case - Ko’mektes Septik
+Kómektes septik - ‘the helping case’ - is used to indicate that a noun is the instrument or
+means by which the subject is able to achieve or accomplish a given action. The noun may
+be either a physical object or an abstract concept. The case suffix for the instrumental is
+one of the few invariable case endings with respect to vowel harmony in Kazakh; it may only
+have the vowel ‘e’. Also, unlike many of the case forms, the instrumental case is not stressed,
+instead, the final syllable of the noun phrase remains the center of stress. The case has the
+following endings:
+
+   • -men: found after vowels, nasal, [l] and [r]
+
+                                              29
+      (164) balalar balalar-men
+
+   • -ben: found after voiced fricatives [z] and [Z]
+
+      (165) ógiz ógiz-ben
+
+   • -pen: found after voiceless consonants and voiced stops
+
+      (166) sút sút-pen
+
+The case is most readily translated into English as ‘with’ or ‘by means of’
+(167) Men       Muratpen sóılestim
+      Men       Murat-pen sóıle-s-ti-m
+      1sg.nom Murat-inst speak-recip-pst-1sg
+      ‘I spoke with Murat.’
+(168) Men       kesemen sý             ishtim
+      Men       kese-men sý            ish-ti-m
+      1sg.nom cup-inst drink-pst-1sg
+      ‘I drank the water with the cup.’
+(169) Aıjan kólikpen jumysqa barady
+      Aıjan kólik-pen jumys-qa bar-a-dy
+      Aıjan car-inst work-dat go-pres-3
+      ‘Aijan goes to work by car.’
+
+3.5    Personal Pronouns
+Kazakh is a typical language for pronouns, with 3 persons in both the singular and plural.
+Additionally, there is a T/V distinction in Kazakh with the 2nd person, ‘siz’ for formal
+address, and ‘sen’ for informal address. In Kazakh this may be an indication of status, as
+well as respect for age (most all people, regardless of status, who are older, will be addressed
+with ‘siz’ and younger people with ‘sen’). Below is a table detailing the personal pronouns
+and their forms in the seven cases:
+
+
+
+
+                                              30
+                       Table 3: Kazakh Personal Pronouns per Case
+              NOM        GEN           DAT            ACC       LOC         ABL         INSTR
+1SG           men      men-iń       ma-ǵan      me-ni       men-de      me-nen       meni-men
+2SG           sen      sen-iń       sa-ǵan      se-ni       sen-de      se-nen       seni-men
+2SG formal    siz      siz-diń      siz-ge       siz-di      siz-de      siz-den      siz-ben
+3SG           ol       o-nyń        o-ǵan       o-ny        o-nda       o-dan        ony-men
+1PL           biz      biz-diń      biz-ge       biz-di      biz-de      biz-den      biz-ben
+2PL           sender   sender-diń   sender-ge sender-di sender-de sender-den sender-men
+2PL formal    sizder   sizder-diń   sizder-ge    sizder-di   sizder-de   sizder-den   sizder-men
+3PL           olar     olar-dyń     olar-ǵa     oldar-dy    olar-da     olar-dan     olar-men
+
+
+Proximal Demonstrative Pronouns - the Kazakh demonstrative pronouns include: bul,
+osy, myna, and mynaý. All demonstratives, when used as determiners for a noun phrase, will
+trigger the definite accusative case, when that noun phrase functions as the direct object.
+
+   • bul - bul is used in general to point out to objects that are nearby or within a touch
+     distance. Abstract nouns and time words are also generally found with bul.
+
+      (170) bul bizdiń mektep
+            bul bizdiń mektep
+            this 1pl.gen school
+            ‘this is our school’
+      (171) bul jerde       kóp qar jaýady
+            bul jer-de      kóp qar jaý-a-dy
+            this place-loc much snow fall-pres-3
+            ‘It snows a lot in this place.’
+      (172) bul bizdiń kompıuter
+
+   • osy - osy is used with more emphasis on the selection of the object, event, time, place
+     or topic as opposed to a list of other listed or potential items.
+
+      (173) osy mektepte oqımyn
+            osy mektep-te oq-ı-myn
+            this school-loc study-pres-1sg.agr
+            ‘I study at this school (as opposed to the other ones).’
+      (174) toıǵa         osy kóılekti       kiemin
+            toı-ǵa        osy kóılek-ti      ki-e-min
+            wedding-dat this dress-acc.def wear-pres-1sg.agr
+            ‘I will wear this dress to the wedding.’
+
+
+                                                 31
+     osy is identical in meaning to myna; the choice may be stylistic or dialectical.
+
+   • mynaý - mynaý is used in predicative sentences. Unlike the other demonstratives,
+     mynaý can not be used as a determiner.
+
+     (175) mynaý meniń ákem
+           mynaý meniń áke-m
+           this    1sg.gen father-1sg.poss
+           ‘This is my father.’
+     (176) myna kisi     meniń ákem
+           myna kisi     meniń áke-m
+           this person 1sg.gen father-1sg.poss
+           ‘This person is my father’
+     (177) mynaý kisi meniń ákem ***
+           *Ungrammatical
+
+Distal Demonstrative Pronouns - sol, ol, ana, anay’
+
+Question Words kim - ‘who’
+ne - ‘what’
+qaıda - ‘where’
+qaısy - ‘which’
+neshe - ‘how many, how much’
+neshinshi - ‘what number’
+qaıdan - ‘from where’
+nesheý - ‘how many’
+qalaı - ‘how’
+qaıdaǵy - ‘where at, at which place’
+
+Definite Pronouns bári - ‘everyone’
+barlyq - ‘all’
+búkil - ‘entire, whole’
+barsha - ‘entire’
+túgel - ‘every single one’
+jappaı - ‘all together’
+
+
+Indefinite Pronouns       keıbir - ‘some’
+bireý - ‘someone’
+birdeńe - ‘something’
+birnárse - ‘something’
+árkim - ‘anyone’
+árbir - ‘everyone’
+birneshe - ‘some’
+
+                                             32
+Negative Pronouns eshbir - ‘no one’
+eshkim - ‘nobody’
+eshteńe - ‘nothing’
+eshnárse - ‘nothing’
+eshqashan - ‘never’
+eshgaısy - ‘none’
+eshqandaı - ‘none/neither’
+
+Reflexive Pronouns Reflexive pronouns in Kazakh are formed by using the word óz with
+the subsequent personal possessive suffixes.
+
+           Table 4: Reflexive Pronoun óz paradigm for person, number, and case
+              Nom             Gen              Dat           Acc             Loc              Abl            Inst
+1SG        óz-im        ózim-niń       ózim-e        ózim-di       ózim-de         ózim-nen       ózim-men
+2SG        óz-iń       ózińniń       óziń-e       óziń-di      óziń-de        óziń-nen      óziń-men
+2SG.POL óz-ińiz        ózińiz-diń    ózińiz-ge    ózińiz-di    ózińiz-de      ózińiz-den    ózińiz-ben
+3SG        óz-i         ózi-niń        ózi-ne        ózi-n         ózi-nde         ózi-nen        ózi-men
+1PL        óz-imiz      ózimiz-diń     ózimiz-ge     ózimiz-di     ózimiz-de       ózimiz-den     ózimiz-ben
+2PL        óz-der-iń   ózderiń-niń   ózderiń-e    ózderiń-di   ózderiń-de     ózderiń-nen   o’zderiń-men
+2PL.POL    óz-der-ińiz ózderińiz-diń ózderińiz-ge ózderińiz-di ózderińiz-de   ózderińiz-den ózderińiz-ben
+3PL        óz-der-i     ózderi-niń     ózderi-ne     ózderi-n      ózderi-nde      ózderi-nen     ózderi-men
+
+
+(178) men        ózim           úıdi     jınadym
+      men        óz-im          úı-di    jına-dy-m
+      1sg.nom reflx-1sg.poss house-acc.def clean-pst-1sg
+      ‘I cleaned the house by myself.’
+(179) ol        óziniń            sheshesin         qatty     syılaıdy
+      ol        óz-i-niń          sheshe-si-n       qatty     syıla-ı-dy
+      3sg.nom reflex-3.poss-gen mother-3.poss-acc.def extremely respect-pres-3
+      ‘He respects his mother very much.’
+(180) olar dombyralaryn ózderimen birge alyp kelipti
+
+3.6    Possessive Suffixes
+Possession in Kazakh is expressed with suffixes and the existential copula ‘bar’. The pos-
+sessive suffixes play a large role in acting as determiners and variables of agreement in a
+multitude of sentences and constructions. The basic paradigm is provided below:
+
+
+
+
+                                                        33
+                              Table 5: Kazakh Personal Possessive Suffixes
+                                            After consonant                          After consonant
+           Suffix    After vowels
+                                            (preceding syllable contains back vowel) (preceding syllable contains front vowel
+                   -m                       -ym                                      -im
+1SG        [-(I)m] bala-m                   otan-ym                                  til-im
+                   ‘my child’               ’my homeland’                            ’my language’
+                   -ń                      -yń                                     -iń
+2SG     [-(I)ń]   bala-ń                  otan-yń                                 til-iń
+                   ’your child’             ’your homeland’                          ’your language’
+                   -ńyz/-ńiz              -yńyz                                   -ińiz
+2SG.POL [-(I)ńIz] bala-ńyz                otan-yńyz                               ’til-ińiz’
+                   ’your child (pol.)’      ’your homeland (pol.)                    ’your language (pol.)’
+                   -sy/-si                  -y                                       -i
+3SG     [-(s)I]    bala-sy                  otan-y                                   til-i
+                   ’his/her child’          ’his/her homeland’                       ’his/her language’
+                   -myz/-miz                -ymyz                                    -imiz
+1PL     [-(I)mIz] bala-myz                  otan-ymyz                                til-imiz
+                   ’our child’              ’our homeland’                           ’our language’
+                   -ńyz/-ńiz              -yńyz                                   -ińiz
+2PL     [-(I)ńIz] bala-ńyz                otan-yńyz                               til-ińiz
+                   ’your (pl.) child’       ’your (pl.) homeland)                    ’your (pl.) language’
+                   -ńyz/-ńiz              -yńyz                                   -ińiz
+2PL.POL [-(I)ńIz] bala-ńyz                otan-yńyz                               til-ińiz
+                   ’your (sg.pol.) child’   ’your (sg.pol.) homeland)                ’your (sg.pol.) language’
+                   -sy/-si                  -y                                       -i
+3PL     [-(s)I]    bala-sy                  otan-y                                   til-i
+                   ’their child’            ’their homeland’                         ’their language’
+
+
+    All personal possessive endings act as determiners, meaning that they describe a degree
+of definiteness such that any direct object, that is qualified with a possessive ending, must
+also take the overt accusative case suffix [-DI].
+(181) ol        kitap        aldy
+      ol        kitap-Ø      al-dy-Ø
+      3sg.nom book-acc.indef take-pst-3
+      ‘he took a/some book’
+(182) ol        kitapty    aldy
+      ol        kitap-ty   al-dy-Ø
+      3sg.nom book-acc.def take-pst-3
+      ‘he took the book.’
+(183) ol        kitabymdy           aldy
+      ol        kitab-ym-dy         al-dy-Ø
+      3sg.nom book-1sg.poss-acc.def take-pst-3
+      ‘he took my book’
+(184) * ol kitabym aldy
+      * Ungrammatical
+Most cases with the genitive case pronouns, particularly in the 1st and 2nd person, indicate
+prodrop, allowing the use of only the possessive ending. When used with overt genitive case
+pronouns, agreement between the pronoun and the possessive ending is mandatory.
+
+
+                                                            34
+(185) meniń elim
+      meniń el-im
+      1sg.gen country-1sg.poss
+      ‘my country’
+(186) elim
+      el-im
+      country-1sg.poss
+      ‘my country’
+(187) seniń   atyń
+      seniń   at-yń
+      2sg.gen horse-2sg.poss
+      ‘your horse’
+(188) atyń
+      at-yń
+      horse-2sg.poss
+      ‘your horse’
+(189) onyń      aýyly
+      onyń      aýyl-y
+      3sg.gen village-3.poss
+      ‘his village’
+(190) aýyly
+      aýyl-y
+      village-3.poss
+      ‘his village’ or ‘their village’
+As seen above in (190), the number of the possessor is ambiguous. In Kazakh, the 3rd singular
+and the 3rd plural forms are often the same. For this reason, we generally gloss ambiguous
+morphological items as 3 as opposed to 3sg or 3pl. The 1st person plural possessive ending
+[-(I)mIz] may be omitted when the 1st person plural pronoun in the genitive case is overt.
+(191) bizdiń Qazaqstan
+      bizdiń Qazaqstan
+      1pl.gen Kazakhstan
+      ‘our Kazakhstan’
+(192) bizdiń Qazaqstanymyz
+      bizdiń Qazaqstan-ymyz
+      1pl.gen Kazakhstan-1pl.poss
+      ‘our Kazakhstan’
+(193) Qazaqstanymyz
+      Qazaqstan-ymyz
+      Kazakhstan-1pl.poss
+      ‘our Kazakhstan’
+
+
+                                             35
+Possessive constructions are formed with personal endings, with the possessor in the genitive
+case, the possessed object marked for the personal ending corresponding to the person and
+number of the possessor, and the copular verb ‘bar’. Negative possessive sentences are
+rendered with the negative existential copular verb ‘joq’.
+(194) atym             bar
+      at-ym            bar
+      horse-1sg.poss cop.exist
+      ‘I have a horse.’ (lit. ‘my horse exists’)
+(195) páteriń           joq
+      páter-iń          joq
+      apartment-2sg.poss cop.exist.neg
+      ‘You do not have an apartment’
+(196) Sáýleniń óz      kompjuteri       joq            eken
+      Sáýle-nin’ óz     kompjuter-i      joq            eken
+      Sáule-gen reflex computer-3.poss cop.exist.neg evid
+      ‘It seems that Sáule does not have her own computer.’
+(197) táýelsiz  elimiz           bar
+      táýelsiz  el-imiz          bar
+      independent country-1pl.poss cop.exist
+      ‘We have an independent country.’
+
+3.7     Verbal Morphology
+The Kazakh verbal system contains complex inflection for agreement in person and num-
+ber. As previously stated, Kazakh does not display agreement for noun-class or canonical
+grammatical gender. Kazakh also has a system of tense and aspect, exhibiting multiple
+present, past, and future tenses that are differentiating forms based on evidentiality, dura-
+tive/iterative aspect, and volitionality.
+
+3.7.1   Composition of Verbs
+Kazakh verbs, in the infinitive, take the ’ý’ which is pronounced [uw] or [yw] depending on
+the phonetic features of the vowel in the verbal root.
+(198) Examples of Kazakh Infinitives
+         • alý - [Al’uw] - ‘to take’
+         • barý - [bAr’uw] - ‘to go’
+         • ishý - [IC’yw] - ‘to drink’
+         • sóileý - [sœlej’yw] - ‘to speak’
+         • jatý - [Zat’uw] (or dialectical [dZatuw] - ‘to lie down’
+         • sekirý - [sekIr’yw] - ‘to jump’
+
+
+                                                36
+In addition to simple verbs composed of a verbal root, Kazakh also has many compound verbs
+that are formed in combination with a noun or an adjective. Noun or adjectival compliments
+to a compound verb are usually tied semantically to the verb.
+(199) Examples of Compound Kazakh Verbal Infinitives - Nouns
+         • dem alý - ‘to breathe’ (lit. ‘to take breath’)
+         • tús kórý - ‘to dream’ (lit. ‘to see dreams’)
+         • án salý - ‘to sing’ (lit. ‘to place/set a song’
+(200) Compound Verbs with Adjectives
+         • yza bolý - ‘to become angry’, ‘yza’ - ‘angry’
+         • aman bolý - ‘to be/become healthy’, ‘aman’ - ‘healthy’
+         • myj-myj bolý - ‘to get wrinkled’, ‘myj’ - onomatopoeia for wrinkles
+
+3.7.2   Copular Verbs
+Kazakh has two copular verbs, one that is primarily predicative in nature, ’bolý’, and the
+other which is invariable, and describes existential statements, ‘bar’. The copular verb is
+particularly important as is it also the method of expressing agreement in multiple verbal
+tenses. The following forms for the copular verb are given below in affirmative:
+
+                    Table 6: Kazakh Copular Verb ‘boly” in the affirmative
+  Person      Ending and Variants             Example                    Translation
+                                             Singular
+              -myn/-pyn/-byn
+ 1st person                            men student-pin          I am a student
+              -min/-pyn/-bin
+ 2nd person
+              -syń/-siń              sen dosym-syń           You are my friend
+ (informal)
+ 2nd person
+              -syz/-siz                siz muǵalimsiz          You are a teacher
+ (formal)
+ 3rd person   -Ø                       ol jazýshy-Ø            He is a writer
+                                              Plural
+              -myz/-byz/-pyz
+ 1st person                            biz oqýshylar-myz       We are students
+              -miz/-biz/-piz
+ 2nd person   -syń-dar/
+                                       sender dostarymsyn’dar   You all are my friends (informal)
+ (informal)   -siń-der
+ 2nd person   -syz-dar/
+                                       sizder qonaqtarsyzdar    You all are guests (formal)
+ (formal)     -siz-der
+ 3rd person   -Ø                       olar jazýshylar-Ø       They are writers
+
+
+   In the above table we see that the endings for the 1st person singular and plural are vari-
+able based on the consonant harmony with the final consonant in the predicate nominative.
+The rules governing this distribution are identical to the rules governing other 3-way suffixes
+
+                                               37
+beginning with [M-]. Additionally, the copular form for the 3rd person is a zero-copula in
+both the singular and in the plural. Finally, the plural forms of the 2nd person predicate are
+attached directly to the nominative singular form of the noun, meaning there is no need to
+add an additional pluralizing suffix to indicate that the predicate nominative is also plural.
+   The negative form of the copula is the verb ‘emes’, and it takes all of the same clitic
+forms above to express person/number agreement.
+
+
+                               Table 7: Kazakh negative copula with emes
+   Person      Ending and Variants                 Example                              Translate
+                                                  Singular
+1st person     emes-pin                  men student emes-pin               I am not a student
+2nd informal   emes-siń                 sen dosym emes-siń                you are not my friend
+2nd formal     emes-siz                  siz muǵalim emes-siz              you are not the teacher
+3rd            emes-Ø                    ol jazýshy emes-Ø                 he is not a writer
+                                                   Plural
+1st            emes-piz                  biz oqýshy emes-piz               we are not students
+2nd informal   emes-siń-der             sender dostarym emes-siń-der      you all (informal) are not my friends
+2nd formal     emes-siz-der              sizder dáriger-ler emes-siz-der   you all (formal) are not doctors
+3rd            emes-Ø                    olar jazýshy emes-Ø               they are not writers
+
+
+   The existential copular ‘bar’ is used in conjunction with personal possessive suffixes to
+express possession. We will present further analysis of this copular in our section on personal
+possessive endings.
+
+3.7.3   Tense
+Kazakh tenses are formed by adding a particular suffix to indicate temporal location (i.e past,
+present, future) and evidentiality (witness/non-witnessed). In addition, agreement suffixes
+for person and number are added, generally, after the suffix. In Kazakh, there is divide
+between verbal tenses that display agreement in the form of copular clitics and fully-realized
+person/number agreement suffixes. The divide here is critical in determining the center of
+stress, since clitics, as mentioned in our section on prosidy, are never stressed in Kazakh.
+Here we detail the agreement patterns and formation of each tense in Kazakh.
+
+Present Indefinite Tense – ‘Aýyspaly osy shaq’ - the present indefinite tense - is formed
+by adding the suffix [-a/-e/-ı] after the verbal root and the subsequent agreement-clitic after
+the tense ending.
+(201) Aıdos zavodta     jumys isteıdi
+      Aıdos zavod-ta    jumys iste-ı-di
+      Aıdos factory-loc word do-pres-3
+      ‘Aıdos works at the factory.’
+(202) Men     ýnıversıtette oqımyn
+      men     ýnıversıtet-te oq-ı-myn
+      1sg.nom university-loc study-pres-1sg
+
+                                                     38
+       ‘I study at the University.’
+(203) Siz       barasyz
+      siz       bar-a-syz
+      2pl.nom go-pres-2pl
+      ‘You go.’
+(204) biz        oınaımyz
+      biz        oına-ı-myz
+      1pl.nom play-pres-1pl.
+      ‘We play.’
+(205) sender     oınaısyńdar
+      sen-der    oına-ı-syń-dar
+      2.nom-pl play-pres-2-pl
+      ‘You play (informal).’
+(206) Olar     oınaıdy
+      Olar     oına-ı-dy
+      3pl.nom play-pres-3
+      ‘They play.’
+
+Present Continuous Tense - Naq osy shaq - the present continuous tense is formed using
+a main verb and one of four auxiliary verbs: otyrý (sit), jatý (lie down), turý (stand) and
+júrý (walk) and the copular personal endings for agreement. Subsequently, stress is found
+on the final syllable of the main-verb, which is found in the converbal form -yp/-ip/-p. The
+function of this converbal form will be covered further in our section on Kazakh syntax and
+coordination.
+(207) men       kitap        oqyp       jatyrmyn
+      men       kitap-Ø      oqy-p      jatyr-myn
+      1sg.nom book-acc.indef read-cnvbI lie-1sg
+      ‘I am reading a book.’
+(208) sen       kitap           oqyp    jatyrsyń
+      sen       kitap-Ø         oqy-p   jatyr-syń
+      2sg.nom book-acc.indef read-cnvbI lie-2sg
+      ‘You are reading a book.’
+(209) siz                kitap           oqyp  jatyrsyz
+      siz                kitap-Ø         oqy-p jatyr-syz
+      2sg.formal.nom book-acc.indef read-cnvbI lie-2sg.formal
+      ‘You (formal) are reading a book.’
+(210) ol        kitap         oqyp      jatyr
+      ol        kitap-Ø       oq-yp     jatyr-Ø
+      3sg.nom book-acc.indef read-cnvbI lie-3
+      ‘He is reading a book.’
+
+
+                                             39
+(211) biz          kitap        oqyp       jatyrmyz
+      biz          kitap-Ø      oq-yp      jatyr-myz
+      1sg.pl.nom book-acc.indef read-cnvbI lie-1pl
+      ‘We are reading a book.’
+(212) sender      kitap            oqyp        jatyrsyńdar
+      sen-der     kitap-Ø          oq-yp       jatyr-syń-dar
+      2-pl.nom book-acc-indef read-cnvbI lie-2-pl
+      ‘You all (informal) are reading a book.’
+(213) sizder               kitap            oqyp  jatyrsyzdar
+      siz-der              kitap-Ø          oq-yp jatyr-syz-dar
+      2.formal-pl.nom book-acc.indef read-cnvbI lie-2.formal-pl
+      ‘You all (formal) are reading a book’
+(214) olar     kitap             oqyp   jatyr
+      olar     kitap-Ø           oq-yp  jatyr-Ø
+      3pl.nom book-acc.indef read-cnvbI lie-3
+      ‘They are reading a book.’
+The distribution for auxiliary verb is different depending on the manner of the action. jatyr
+is the most free of these auxiliaries, being able to readily combine with most actions. jatyr
+always adds a color of durative aspect, indicating that the action is ongoing or in process.
+(215) meniń mamam              as daıyndap      jatyr
+      meniń mama-m             as daıynda-p     jatyr-Ø
+      1sg.gen mother-1sg.poss food prepare-cnvbI lie-3
+      ‘My mother is making food (right now).’
+(216) meniń mamam             as daıyndaıdy
+      meniń mama-m            as daıynda-ı-dy
+      1sg.gen mother-1sg.poss food prepare-pres-3
+      ‘My mother makes food (as she always does).’
+However, other auxiliaries such as otyr and tur are limited in their distribution.
+(217) meniń ákem             kassanyń    aldynda aqsha           sanap
+      meniń áke-m            kassa-nyń   aldynda aqsha-Ø         sana-p
+      1sg.gen father-1sg.poss register-gen near-loc money-acc.indef count-cnvbI
+      tur
+      tur-Ø
+      stand-3
+      ‘My father is counting money by the register.’
+(218) meniń ákem            kassanyń    aldynda aqsha            sanap
+      meniń áke-m           kassa-nyń   aldyn-da aqsha-Ø         sana-p
+      1sg.gen father-poss.1sg register-gen near-loc money-acc.indef count-cnvbI
+      otyr
+      otyr-Ø
+      sit-3
+
+                                             40
+       * ungrammatical use of otyr
+In this example, preference for tur is used when the main verb describes short, perfective
+actions. In the case of (218), the use of otyr implies that the speaker’s father must be a
+cashier that is continually standing on his feet and constantly sits there and counts money.
+Whereas in (217), the speaker is describing what his father is doing simply at the moment,
+and that it is a short action that is a subset of what their father usually does.
+    otyr is much more limited than the other auxiliaries and is used generally to describe
+actions that are occuring at the moment of speaking.
+(219) Sáýle dosyna             hat                jazyp       otyr
+      Sáýle dos-y-na           hat                jaz-yp      otyr-Ø
+      Saule friend-3.poss-dat letter-acc.indef write-cnvbI sit-3
+      ‘Saule is writing a letter to her friend (at this very moment).’
+(220) Sáýle dosyna             hat                jazyp        jatyr
+      Sáýle dos-y-na           hat-Ø              jaz-yp       jatyr-Ø
+      Saule friend-3.poss-dat letter-acc.indef write-cnvbII sit-3
+      ‘Saule is writing a letter to her friend (she’s in the process of doing it, but it isn’t
+      clear that she is doing it right at this very moment).
+(221) Sáýle dosyna             hat                 jazyp         tur
+      Sáýle dos-y-na           hat-Ø               jaz-yp        tur-Ø
+      Saule friend-3.poss-dat letter-acc.indef write-cnvbII stand-3
+      ‘Saule writes letters to her friend (it is a constant, repeating, on-going action)’
+
+Simple Future Tense – The simple future tense has the indentical surface form as the
+present simple tense. Simple future tense is generally understood as being a future action
+based on context or supporting temporal adverbs such as erteń (tomorrow).
+(222) kitapty         stóldyń ústine          qoıamyn
+      kitap-ty        stól-dyń úst-i-ne       qoı-a-myn
+      book-acc.def table-gen top-3.poss-dat put-pres-1sg
+      ‘I will put the book on top of the table.’
+(223) qoıshy qoı                 soıady
+      qoıshy qoı-Ø               soı-a-dy
+      shepherd sheep-acc.indef slaughter-pres-3
+      ‘The shepherd will slaughter a sheep.’
+(224) men        súret         salamyn
+      men        súret-Ø       sal-a-myn
+      1sg.nom picture-acc.indef paint-pres-1sg
+      ‘I paint a picture.’
+(225) men      erteń     súret          salamyn
+      men      erteń     súret-Ø        sal-a-myn
+      1sg.nom tomorrow picture-acc.indef paint-pres-1sg
+      ‘Tomorrow, I will paint a picture.’
+
+                                              41
+Possible Future/Aorist Future Tense - Boljaldy Keler Shaq is formed in Kazakh using
+the suffixes -ar/-er/-r, with -r being used when the verb root ends in a vowel. This formed
+is used in statements that may or may not come to pass in the future. It is commonly found
+in conjunction with the conditional mood.
+(226) men         jazarmyn
+      men         jaz-ar-myn
+      1sg.nom write-aor.fut-1sg
+      ‘I will (likely) write’
+(227) sen        kelersiń—
+      sen        kel-er-siń
+      2sg.nom come-fut.aor-2sg
+      ‘you will (most likely) come’
+(228) sen       kelseń,          men bararmyn
+      sen       kel-se-ń         men bar-ar-myn
+      2sg.nom come-cond-2sg 1sg.nom go-fut.aor-1sg
+      ‘If you come, then I will go.’
+When used with the question particles ma/ba/pa/me/be/pe and the evidential particle eken,
+it conveys a similar meaning to the rhetorical ‘I wonder...’ in English
+(229) olar bizge jolyǵar ma eken?
+(230) ol aıtar ma eken?
+(231) Murat keler me eken?
+
+Volitional/Intended Future - the volitional/intended future tense in Kazakh is formed
+with the suffix [-MAQ] which has the following forms: -maq/-mek, -baq/-bek, and -paq/-pek,
+followed by copular personal endings for agreement. -maq/-mek is found after verb stems
+that end in vowel as well as the sounds: ‘l’, ‘m’, ‘n’, ‘ń, ‘l’ and ‘r’. This tense is used to
+highlight the speaker’s conviction, dedication, and intention to complete an action in the
+future.
+(232)    • ber-mek ‘will give/intends to give’
+         • bar-maq ‘will go/intends to go’
+         • kel-mek ‘will come/intends to come’
+(233) men        kinoǵa       barmaqpyn
+      men        kino-ǵa      bar-maq-pyn
+      1sg.nom cinema-dat go-vol.fut-1sg
+      ‘I will (definitely) go to the cinema.’
+(234) olar      kinoǵa      barmaq
+      olar      kino-ǵa     bar-maq-Ø
+      3pl.nom cinema-dat go-vol.fut-3
+      ‘They will (most definitely) go to the cinema.’
+
+
+                                              42
+Simple Past Tense - the simple past in Kazakh is formed with the suffix [-DI] after the
+verbal root. The suffix has the following allomorphs: -dy, -di, -ty and -ti. Unlike the many
+other tenses, personal endings for the simple past tense are true suffixes and not clitics,
+meaning the Simple Past Tense has slightly different forms compared to the copula, and the
+[-DI] suffix plus the agreement suffix act as the centers of stress.
+
+
+             Table 8: Kazakh Simple Present Tense with Personal Endings
+           Pronouns Verbs Personal Endings               Translation
+                        otyr-dy-   -m                    ’I sat’
+           men
+                        kúl-di-   -m                    ’I laughed’
+                        otyr-dy-   -ń                   ’You (inf.) sat’
+           sen
+                        kúl-di-   -ń                   ’You (inf.) laughed
+                        otyr-dy-   -ńyz                 ’You (f.) sat’
+           siz
+                        kúl-di-   -ńiz                 ’You (f.) laughed’
+                        otyr-dy-   -Ø                    ’S/he sat’
+           ol
+                        kúl-di-   -Ø                    ’S/he laughed’
+                        otyr-dy-   -q                    ’We sat’
+           biz
+                        kúl-di-   -k                    ’We laughed’
+                        otyr-dy-   -ń-dar               ’You all (inf.) sat’
+           sender
+                        kúl-di-   -ń-der               ’You all (inf.) laughed’
+                        otyr-dy-   -ń-dar               ’You all (f.) sat’
+           sizder
+                        kúl-di-   -ń-der               ’You all (f.) laughed’
+                        otyr-dy-   -Ø                    ’They sat’
+           olar
+                        kúl-di-   -Ø                    ’They laughed’
+
+(235) búgin men     bir jańa kitap       aldỳm
+      búgin men     bir jańa kitap-Ø     al-dy-m
+      today 1sg.nom new one book-acc.indef take-pst-1sg
+      ‘Today I bought a new book.’
+
+Remote Past Tense - Burynǵy ótken shaq - the name of the tense itself explains that the
+action took place a long time ago prior to the moment of speaker. While the Simple/Recent
+past indicates that the speaker might have witnessed the event, the Remote Past Tense
+indicates that the speaker might have not witnessed the event occur, but is aware of its
+outcomes. The Remote Past Tense is formed by adding the simple present tense endings to
+the ‘-yp/-ip/-p’ converb form (glossed above as cnvbI).
+
+
+
+
+                                             43
+                         Table 9: Remote Past Tense Paradigm
+                     Pronoun Alý - ’take’ kelý - ’come’ sanaý - ’count’
+         1SG         Men          al-yp-pyn           kel-ip-pin        sana-p-pyn
+         2SG Inf     Sen          al-yp-syń          kel-ip-siń       sana-p-syń
+         2SG Form Siz             al-yp-syz           kel-ip-siz        sana-p-siz
+         3SG         Ol           al-yp-ty            kel-ip-ti         sana-p-ty
+         1PL         Biz          al-yp-pyz           kel-ip-piz        sana-p-pyz
+         2PL Inf     Sender       al-yp-syńdar       kel-ip-sińder    sana-p-syńdar
+         2PL Form    Sizder       al-yp-syzdar        kel-ip-sizder     sana-p-syzdar
+         3PL         Olar         al-yp-ty            kel-ip-ti         sana-p-ty
+
+(236) azattyq        jolynda         jalyndap janyppyz
+      azattyq        jol-y-nda       jal-yn-da-p jan-yp-pyz
+      freedom.nom.sg path.3.poss-loc x-x-x-x     x-cnvbI-2pl.agr
+      ‘’
+
+Witnessed Past Tense - the witnessed past tense is formed by adding the adjectival past
+participle suffix [-GAn], which has the forms -qan/-ken/-ǵan/-gen and the copular personal
+endings for agreement. Subsequently, the ending [-GAn] is the center of stress for verbs
+conjugated in this tense. The suffixes -qan/-ken are found only after voiceless stops and the
+fricatives ‘s’ and ‘sh’, -ǵan/-gen are found after verbal roots ending in vowels, nasals, and
+voiced consonants. The personal endings are identical to the copular forms.
+
+                     Table 10: Kazakh Witnessed Past Tense Paradigm
+                      Pronoun Alý - take Kelý - come Sanaý - count
+        1SG           men          al-ǵan-myn         kel-gen-min      sana-ǵan-myn
+        2SG           sen          al-ǵan-syń        kel-gen-siń     sana-ǵan-syń
+        2SG.formal siz             al-ǵan-syz         kel-gen-siz      sana-ǵan-syz
+        3SG           ol           al-ǵan-Ø           kel-gen-Ø        sana-ǵan-Ø
+        1PL           biz          al-ǵan-byz         kel-gen-biz      sana-ǵan-byz
+        2PL           sender       al-ǵan-syńdar kel-gen-sińder      sana-ǵan-syńdar
+        2PL.formal    sizder       al-ǵan-syzdar      kel-gen-sizder   sana-ǵan-syzdar
+        3PL           olar         al-ǵan-Ø           kel-gen-Ø        sana-ǵan-Ø
+
+
+
+
+                                                 44
+(237) men        ony    kórgénmin
+      men        o-ny   kór-gen-min
+      1sg.nom 3sg.acc see-pst.ptcp-1sg.agr
+      ‘I have seen it.’
+
+3.7.4   Interrogative Forms
+Interrogative forms in Kazakh are formed with the particle [MA]. The particle [MA] will
+typically sit at the end of a sentence. The suffix [MA] has the following forms:
+
+   • ma/me - used after words ending in vowels and after the consonants [r], [l], [j], and
+     [uw/yw]
+
+   • ba/be - used after words ending in nasal consonants ([m], [n], and [N], and voiced
+     fricatives [z] and [Z]
+
+   • pa/pe - used after words ending in voiceless consonants and voiced stops
+
+3.7.5   Verbal Negation
+Verbs are negated using the same suffix described in the section in interrogative forms, [MA],
+however, this time the suffix sits immediately to the right of the verbal root and before any
+and all tense suffixes. For certain verb forms that are formed by adverbial participle and the
+copula for agreement, negation is achieved using the negative existential copula joq, which
+is found with the subsequent copular agreement forms for person and number. Verb tenses
+negated in this manner include the witnessed past.
+(238) men       ony       kórgen  joqpyn
+      men       ony       kór-gen joq-pyn
+      1sg.nom 3sg.acc see-pst.ptcp cop.exist.neg-1sg
+      ‘I have never seen this.’
+
+3.7.6   Valency Increasing/Decreasing Operations
+Kazakh has both a causative and passive mood to increase and decrease the valency of
+verbal arguments. Kazakh allows some verbs to shift from intransitive to transitive. This
+productive process is used across the board with the causative suffix -[DIr] or [-DIrTQIz].
+(239) men       kúldim
+      men       kúl-di-m
+      1sg.nom laugh-pst-1sg
+      ‘I laughed’
+(240) men       sábıdi        kúldirdim
+      men       sábı-di       kúl-dir-di-m
+      1sg.nom baby-acc.def laugh-caus-pst-1sg
+      ‘I made the baby laugh.’
+
+
+                                             45
+In causative sentences of this type, the object that is being made to do the action is found in
+the accusative case, indicating that the effect of the causative suffix on an intransitive verb
+is to render a typical transitive one. The suffix forms for the causative are [-DIr] and [-T]
+with ‘-tyr/-tir’ after verbs roots endings in voiceless consonants, and ‘-dyr/-dir’ elsewhere. If
+a verb root ends in a vowel, the causative suffix is -t-. Additionally causative suffixes can be
+stacked on top of the -DIr suffix, in which case they have the form -t or -tQIz. The causative
+may also be applied to transitive verbs, rendering a 2-place transitive verb, in which case
+the person or object being made to perform the transitive action is found in the dative case.
+(241) syný
+      syn-ý
+      break-inf
+      ‘to break (itself) - intransitive’
+(242) aǵash    syndy
+      aǵash    syn-dy-ø
+      tree.nom break-pst-3
+      ‘The tree broke.’
+(243) men        aǵashty  syndyrdym
+      men        aǵash-ty syn-dyr-dy-m
+      1sg.nom tree-acc.def break-caus-pst-1sg
+      ‘I broke the tree.’
+(244) men      Asanǵa aǵashty     syn-dyr-t-ty-m
+      men      Asan-ǵa aǵash-ty   syn-dyr-t-ty-m
+      1sg.nom Asan-dat tree-acc.def break-caus-caus-pst-1sg
+      ‘I made Asan break the tree.’
+Valency decreasing operations in Kazakh include the passive voice, that is formed with the
+suffix -Il or, in the case of verbs that end in the phoneme [-l], the suffix -In. The suffix is
+added to the verbal root to decrease the number of verbal arguments by one.
+(245) Sáýle hat             jazdy
+      Sáýle hat             jaz-dy
+      Saule letter.acc.indef write-pst.3
+      ‘Saule wrote a letter.’
+(246) hat jazyldy
+      hat jaz-yl-dy
+      letter write-pass-pst.3
+      ‘A letter was written.’
+The passive may also stack for many verbs, to render a meaning similar to ”it is done/it is
+written/it has been said” in English.
+
+(247) Ákesi        ulyna          jazǵan        hatta      bylaı
+      áke-si       ul-y-na        jaz-ǵan       hat-ta     bylaı
+      father-3poss. son-3.poss-dat write-pst.ptcp letter-loc like.this
+
+                                               46
+        delinedi:                óz     elińdi                           umytpa
+        de-li-n-e-di             óz     el-iń-di                         umyt-pa
+        say-pass-pass-pres-3 reflx motherland-2sg.poss-acc.def forget-neg.imp
+        ‘It was said in his father’s letter to his son: do not forget your motherland.’
+
+3.7.7   Mood
+Kazakh has 4 moods: Indicative, Imperative, Optative, and Conditional (which is further
+divided into Real and Unreal Conditional).
+
+Indicative Mood (Ashyq Rai’) - the indicative mood is used to explicitly state events
+in the present, past, and future.
+(248) Prezident Nursultan Nazarbayev AQSh-ta saparda júr
+(249) Prezident Nursultan Nazarbayev 2018 jyldyń qańtar aıynda AQSh-ta bolyp qaıtty
+(250) Prezident Nursultan Nazarbayev 2018 jyldyń qańtar aıynda AQSh-ta bolady
+The indicative mood is therefore simply the mood of the tenses listed above.
+
+Imperative Mood - the imperative mood is used both for commands and evocations.
+Within this mood, there are 5 additional types of imperatives that range from simple com-
+mands, to polite requests, to tasked imperatives. Simple imperatives are formed with either
+the verb root or the suffixes ‘-yńyz/-ińiz’ for second person singular polite, or the suffixes
+‘-yńdar/ińder’ for second person plural familiar, or ‘-yńyzdar/-ińizder’ for second person
+plural polite requests:
+(251) Imperative paradigm with ‘aıt-’ (say)
+         • aıt - ‘say’ (2nd person singular, direct command)
+         • aıt-yńyz - ‘please say’ (2nd person singular, polite command)
+         • aıt-yńdar - ‘please say’ (2nd person plural, familiar)
+         • aıt-yńyzdar - ‘please say’ (2nd person plural, polite)
+Furthermore, there also exists a special affix for 3rd person imperatives (let him say, let her
+do, let them come, etc.). This suffix -syn/-sin is directly attached to the verbal root.
+(252) aıt - aıt-syn - ‘let him say’
+The imperative mood is negated using the suffix [-MA] used in verbal negation. It is found
+directly to the right of the verbal root and before any additional imperative mood markers.
+(253) Negative imperatives
+         • sen         barma
+           sen         bar-ma-Ø
+           2sg.fam.nom go-neg-imp
+             ‘Don’t go!’
+
+
+                                              47
+         • siz         barmańyz
+           siz         bar-ma-ńyz
+           2sg.pol.nom go-neg-2sg.pol.imp
+            ‘Do not go/Please do not go’
+         • sender barmańdar
+           sen-der bar-ma-ń-dar
+           2sg-pl go-neg-2.fam-pl-imp
+            ‘Don’t go (to a group).’
+         • olar    barmasyn
+           olar    bar-ma-syn
+           3pl.nom go-neg-3.imp
+            ‘Let them not go./May they not go.’
+
+The Conditional Mood - used to denote an action which one wants to happen, or that
+may possibly happen under certain circumstances. A sentence containing aorist verbs shows
+that an action has not happened, but could have happened if certain circumstances took
+place. There exists both the real and the unreal conditional mood. Both are formed by
+adding the suffix [-sA], with the allomorphs -sa and -se. This suffix is added next to the
+verbal root and is followed by personal endings identical to those used for the simple present
+tense. Some speakers may also use the Persian loanword ‘eger’ at the head of a conditional
+clause.
+(254) jańbyr jaýsa,       biz       jumysqa barmaımyz
+      jańbyr jaý-sa-Ø     biz       jumys-qa bar-ma-ı-myz
+      rain fall-cond-3 1pl.nom work-dat go-neg-pres-1pl.agr
+      ‘If it rains, then we will not go to work.’
+(255) eger úıińdi                    satsań,       men    ony   satyp
+      eger úı-iń-di                  sat-sa-ń,     men    ony   sat-yp
+      if house-2sg.poss-acc.def sell-cond-2sg, 1sg.nom 3sg.acc.def buy-cnvbI
+      alar            edim
+      al-ar           e-di-m
+      take-aor.fut aux-pst-1sg
+      ‘If you were to sell your house, then I would buy it.’
+Unreal conditional shows an implied wish that the speaker would have done or had done
+something. It is almost always found with the unreal future tense in the matrix clause.
+In this clause, the conditional [-sA] is not used, rather, the witnessed past/past participal
+construction with [-GAn] and the locative case.
+(256) ajar kómek bergende        osy isti          bitirgen
+      ajar kómek ber-gen-de,     osy is-ti         bit-ir-gen
+      Ajar help give-pst.ptcp-loc this work-acc.def finish-caus-pst.ptcp
+      bolar       edim
+      bol-ar      e-di-m
+      be-aor.fut aux-pst-1sg
+
+                                             48
+        ‘If Ajar had helped me, I would have finished this work.’
+
+The Optative Mood - the optative mood is used to express wishes or desires to do
+something. It is formed with the suffix [-GI-] which has the forms -ǵy, -gi, -qy and -ki and
+is subsequently followed personal possessive endings and a tensed form of the auxiliary verb
+kel-, meaning ‘to come’.
+(257) Examples of the Optative
+         • onyń   úılengisi       keledi
+           onyń   úılen-gi-si     kel-e-di
+           3sg.gen marry-opt-3.poss come-pres-3
+             ‘He wishes to get married.’ - (lit. ’his wanting to get married is coming’)
+         • meniń úılengim           keldi
+           meniń úılen-gi-m         kel-di-Ø
+           1sg.gen marry-opt-1sg.poss come-pst-3
+             ‘I wished to get married.’
+         • seniń  úılengiń         kele        me
+           seniń  úılen-gi-ń       kel-e-Ø     me
+           2sg.gen marry-opt-2sg.poss come-pres-3 Q
+             ‘Do you wish to get married?’
+         • senderdiń      úılengileriń              keledi.
+           sender-diń     úılen-gi-leriń            kel-e-di
+           2pl.familar-gen marry-opt-2pl.familiar.poss come-pres-3
+             ‘You all (familiar) wish to get married.’
+
+3.7.8   Participles
+Kazakh has a large number of participial verb forms. Most commonly used participles in-
+clude the past participles [-GAn] (having the forms -ǵan/-gen/-qan/-ken) and the present
+participle [-(ı)ATIn] (having the forms -atyn/-etin/-ıatyn/-ıetin). In addition to these tradi-
+tional participles, Kazakh also employs numerous ‘converb’ suffixes, the most common being
+[-(I)p] and [ı/-a/-e], both of which are used in auxiliary verb constructions.
+
+Past Participle [-GAn] - the past participle [-GAn] is identical in form to the witnessed
+past tense discussed in the section on verbal morphology. Verbal forms with [-GAn] are used
+to denote actions that have been completed and whose results are still in effect at the time
+of speaking.
+(258) televizor sóndirilgen
+      televizor són-dir-il-gen-
+      television swith-caus-pass-pst.ptcp-3
+      ‘The television is switched off.’
+
+
+                                              49
+Additionally past participles are used for relative clauses where the main verb is in the past
+tense.
+(259) baraxolkada alǵan          kitabym       osy
+      baraxolka-da al-ǵan        kitab-ym      osy
+      baraxolka-loc take-pst.ptcp book-1sg.poss this
+          ‘This is the book that I bought at Baraxolka1 ’
+(260) osy áńgimeni     maǵan aıtqan            adam Astanadan
+      osy áńgime-ni    maǵan aıtqan            adam Astana-dan
+      this story-acc.def 1sg.dat speak-pst.ptcp person Astana-abl
+      ‘The man who told me this story is from Astana.’
+Past participles can also be combined with the auxiliary verb e- to indicate pluperfect or
+anterior perfect events that occurred further in the past than other reported past events.
+(261) uıaly      telefon        alǵan         edim,          istemeı jatyr
+      uıaly      telefon        al-ǵan        e-di-m         iste-me-ı jatyr
+      cell.phone take-pst.ptcp aux-pst-1sg work-neg-pst aux.3
+      ‘I bought a cell phone, but it didn’t/does not work.’
+
+Present participle - (ı)AtIn - the present participle [-(ı)AtIn] has the forms ‘-atyn/-etin’
+for verb roots endings in a consonant, and the forms -ıatyn/-ıetin for roots endings in vowels.
+This participle is used for either habitual actions in the present or future events that will
+occur. Like the past participle [-GAn], the present participle is commonly used in relative
+clauses
+(262) jumysqa baratyn       áıel
+      jumys-qa bar-atyn     áıel
+      work-dat go-pres.ptcp lady
+      ‘the lady/woman who goes to work (or who will go to work).’
+However, sometimes present actions are represented with the past participle [-GAn] in rela-
+tive clauses, particularly with verbs in the continuous present tense. The use of [-GAn] vs.
+[-(ı)AtIn] is one of non-habitual vs. habitual action.
+(263) kitap oqıp         otyrǵan       qyz
+      kitap oqı-p        otyr-ǵan      qyz
+      book read-cnvbI aux-pst.ptcp girl
+      ‘The girl who is reading a book.’
+(264) kitap oqyp         otyratyn         qyz
+      kitap oqy-p        otyr-atyn        qyz
+      book read-cnvbI aux-pres.ptcp girl
+      ‘the girl who is always reading a book/the girl who always reads books.’
+  1
+      A large outdoor Bazaar in Almaty, approximately 10km north of Rozybakieva Street.
+
+
+
+
+                                                   50
+Converbs -Ip and [-ı/-a/-e] - converbs play a large role in Kazakh sentenial coordination.
+As participles, they seldom modify other nouns, rather, they chain together more complex
+verbal forms (see above in our example for habitual vs. non-habitual action). Further details
+on these forms are found in our section on Kazakh syntax re: sentential coordination and
+auxiliary verb constructions.
+
+3.8     Adjectival Morphology
+Adjectives in Kazakh are divided into two groups: qualitative (or standard adjectives) and
+relative adjectives.
+
+3.8.1   Qualitative Adjectives
+Qualitative adjectives are placed before the noun phrase that they modify and are typically
+used to denote color, properties, or other states of the noun. Both Qualifying and relative
+adjectives do not agree in number, gender, or case with the modifying noun.
+(265) qyzyl alma
+      red apple
+      ‘red apple’
+(266) qart adam
+      elderly person
+      ‘old man’
+(267) ystyq sy
+      hot water
+      ‘hot water’
+
+3.8.2   Relative Adjectives
+Relative adjectives are morphologically complex adjectives that are derived from other parts
+of speech by employing derivational affixes. Nouns themselves can act as relative adjectives
+(268) erkek qoı
+      man sheep
+      ‘male sheep’/‘ram’
+(269) qyz bala
+      girl child
+      ‘daughter’/‘little girl’
+Denominalizing suffixes can also be added to nouns to derive adjectives. The most common
+suffix in this family is the suffix [-DI] which has the forms -dy/-di, -ty/-ti, and -ly/-li.
+(270) kúshti        kisi
+      kúsh-ti       kisi
+      strength-denom person
+      ‘strong man’
+
+                                             51
+(271) aqyldy          bala
+      aqyl-dy         bala
+      intellect-denom child
+      ‘smart child’
+(272) deneli     áıel
+      dene-li    áıel
+      fat-denom lady
+      ‘fat lady’
+Adjectives derived from verbs and other denominals are marked with the suffix [-GIsh] which
+has the forms -ǵysh/-gish and -qysh/-kish:
+(273) bilgish
+      bil-gish
+      know-deverb
+      ‘aware’
+(274) alǵysh
+Older forms of this suffix include -qyr/-kir or -ǵyr/-gir:
+(275) ótkir
+The additional variant -shaq/-shek is also quite common.
+(276) kyzǵanshaq
+(277) maqtanshaq
+
+3.8.3   Degrees of Comparison
+Kazakh has comparative and superlative degrees of comparison.
+
+Comparative Degree The comparative degree is formed with the suffixes [-(I)rAQ] and
+[-DAý].
+(278) úlken úlkenirek
+      big big-comp
+      ‘big’ ‘bigger’
+(279) qara qara-laý
+      black black-comp
+      ‘black’ ‘blacker’
+(280) juas juas-taý
+(281) uzyn uzyn-yraq
+
+
+
+
+                                               52
+Superlative Degree Superlatives are formed by adding the morpheme eń directly before
+the adjective.
+(282) úlken eń úlken
+      big sup big
+      ‘big’ ‘biggest’
+(283) jaqsy eń jaqsy
+      good sup good
+      ‘good’ ‘best’
+Superlative degree can also be expressed by reduplication. In this construction, the first
+syllable is taken and the suffix -p is added to the truncated adjective, then repeated before
+the full adjective. This is particularly productive for colors
+(284) qara qap-qara
+      black redup-black
+      ‘black’ ‘blackest/quite black’
+(285) sary sap-sary
+      yellow redup-yellow
+      ‘yellow’ ‘yellowest/quite yellow’
+(286) qyzyl qyp-qyzyl
+      red redup-red
+      ‘red’ ‘reddest/quite red’
+Other cases of reduplication show full preservation and repitition of the adjective.
+(287) myj      myj-myj             myj-myj-myj
+      wrinkled wrinkled-wrinkled wrinkled-wrinkled-wrinkled
+      ‘wrinkled’ ‘quite wrinkled’ ‘extremely wrinkled’
+
+
+4     Syntax
+4.1    Word Order
+Kazakh is a head-final, Subject-Object-Verb type language, like all Turkic languages. Un-
+marked, neutral sentences are generally SOV, however; given a clear context and overt case
+marking, Kazakh sentences may also allow SVO or OVS with emphatic intonation to indicate
+semantic differences.
+(288) Murat sút            qaınatty
+      Murat sút-Ø          qaına-t-ty-Ø
+      Murat milk-acc.indef boil-caus-pst-3
+      ‘Murat boiled (some) milk’ (SOV - neutral word order)
+(289) Murat qaınatty        sútti
+      Murat qaına-t-ty-Ø    sút-ti
+      Murat boil-caus-pst-3 milk-acc.def
+
+                                             53
+        ‘It was Murat who boiled the milk’ (SVO - emphasis is placed on ‘Murat’)
+(290) Sútti          qaınatty       Murat
+      Sút-ti         qaına-t-ty-Ø   Murat
+      milk-acc.def boil-caus-pst-3 Murat
+      ‘Murat boiled the milk (instead of drinking it).’ (OVS - emphasis is placed on
+      ‘qai’natty’, the action)
+Verbs in Kazakh generally follow their objects or subjects, and modifiers always precede the
+phrases that they act to modify. This behavior is predicted by head-final type languages
+and is remarkably consistent across multiple domains in Kazakh.
+(291) soqyr tyshqan
+      soqyr tyshqan
+      blind mouse
+      ‘blind mouse’ (adjective/modifier precedes the modifyee/noun phrase)
+(292) soqyr tyshqannyń titteı uıasy
+      soqyr tyshqan-nyń titteı uıa-sy
+      blind mouse-gen small nest-3.poss
+
+        ‘The blind mouse’s small nest’ (genitive case DP (blind mouse) precedes the DP
+        (small burrow) that is qualifies)
+(293) jabaıy mysyq soqyr tyshqandy        bir sátte       jep      qoıdy
+      jabaıy mysyq soqyr tyshqan-dy       bir sát-te      je-p     qoı-dy-Ø
+      wild cat      blind mouse-acc.def one glimpse-loc eat-cnvbI put.aux-pst-3
+      ‘A wild cat ate the blind mouse in no time.’ (compliment PP modifying VP imme-
+      diately precedes the VP, both object and subject DP precede the VP, main lexical
+      verb precedes AuxiliaryV in the VP)
+
+4.1.1   Coordination
+Nominal coordination in Kazakh is achieved using either the conjunction ‘jáne’(and), or the
+suffixes men/pen/ben for groups of people (it has the same form as the instrumental case).
+Coordination can also be achieved with the suffix [DA] (which has the forms da, de, ta,
+te). While identical in form to the locative case, this suffix is a clitic and is therefore never
+stressed.
+(294) Sársen kitap           jáne qalam       satyp        aldy
+      Sársen kitap-Ø         jáne qalam-Ø     sat-yp       al-dy-Ø
+      Sársen book-acc.indef coor pen-acc.indef barter-cnvbI take-pst-3
+      ‘Sársen bought a book and a pen.’
+(295) Qaırat pen Asqar fýtbol             oınaıdy
+      Qaırat pen Asqar fýtbol-Ø           oına-ı-dy-Ø
+      Qaırat coor Asqar football-acc.indef play-pres-pst-3
+      ‘Qaırat and Asqar play football.’
+
+
+                                               54
+Verbs can be coordinated as well with jáne and the [DA] clitic. The men/ben/pen form
+cannot be used for verbs. When used with verbs, the [DA] clitic comes after verbs in the
+CnvbI ([-(I)p] form. The final verb, however, is tensed and all other verbs in the sentence
+are understood as sharing the same tense/aspect/mood features of the tensed verb.
+(296) Men        sýret             salyp     ta,    esep
+      men        sýret-Ø           sal-yp    ta,    esep-Ø
+      1sg.nom picture-acc.indef draw-cnvbI coor math.puzzle-acc.indef
+      shyǵaryp        ta úlgerdim
+      shyǵar-yp       ta úlger-di-m
+      release-cnvbI coor manage-pst-1sg
+      ‘I had time/managed to draw a picture and finish a math puzzle.’
+
+4.2    Concordance
+The subject and the verb must agree for person and number by overt markings. As Kazakh
+does not have grammatical gender, this feature is not involved in Kazakh agreement. Most
+often, concordance is expressed in the form of the agreement and personal possessive suffixes.
+In the case of 3rd person predicates and subjects, the agreement variable is identical.
+(297) men       asyǵyspyn
+      men       asyǵys-pyn
+      1sg.nom hurried-1sg
+      ‘I am in a hurry’
+(298) sen       asyǵyssyń
+      sen       asyǵys-syń
+      2sg.nom hurried-2sg
+      ‘you are in a hurry’
+(299) ol         asyǵys
+      ol         asyǵys-Ø
+      3sg.nom hurried-3
+      ‘he is in a hurry’ (only clear that it is singular based on the overt pronoun ‘ol’)
+Kazakh allows pro-drop, where the subjects can be dropped in instances in which they are
+pragmatically or grammatically inferable. If the subject is dropped, the person and number
+can be inferred based on the overt agreement suffixes on the verb.
+(300) búgin jumysqa keshigip      bardym
+      búgin jumys-qa keshig-ip    bar-dy-m
+      today work-dat be.late-cnvbI go-pst-1sg
+      ‘I was late for work today.’
+
+4.3    Modifiers
+Modifiers in Kazakh do not show any agreement with the entities that they modify. Neither
+number, gender, nor case of the head noun affect the surface form of the adjectives. The
+
+                                             55
+only exception is the case of possessive pronouns in the genitive, which requires the possessed
+noun to match in person and number with a personal possessive suffix.
+(301) qyzyl shalshyq
+      qyzyl shalshyq
+      red towel
+      ‘a red towel’
+(302) qyzyl shalshyqtar
+      qyzyl shalshyq-tar
+      red towel-pl
+      ‘red towels’ (no agreement in number in the form of the adjective qyzyl)
+(303) úlken kisi
+      úlken kisi
+      big person
+      ‘a big person’
+(304) úlken kisige
+      úlken kisi-ge
+      big person-dat
+      ‘to the big person’ (no agreement in case, úlken has same form in both nominative
+      and dative cases, the same is true for all cases)
+(305) seniń   qasyǵyń
+      seniń   qasyǵ-yń
+      2sg.gen spoon-2sg.poss
+      ‘your spoon’
+(306) bizdiń qasyǵymyz
+      bizdiń qasyǵ-ymyz
+      1pl.gen spoon-1pl.poss
+      ‘our spoon’
+A modifier can be either an adjective or a noun. When nouns act as modifiers, the qualified
+noun is marked with the 3rd person possessive suffix.
+(307) sary kóılek
+      sary kóılek
+      yellow dress
+      ‘a yellow dress’
+(308) toı     sybaǵasy
+      toı     sybaǵa-sy
+      wedding gift-3.poss
+      ‘wedding gift’
+Modifiers can also be relativized nouns.
+
+
+
+                                              56
+(309) mekteptegi       tórt bólmeli       kitaphana
+      mektep-te-gi     tórt bólme-li      kitaphana
+      school-loc-rel four room-adj.rel library
+      ‘the four room library at the school’
+
+4.4     Interrogative Sentences
+Interrogative sentences come in two types: polar, or yes/no, question sentence, or wh-
+sentences. For yes/no interrogative sentences, this is achieved by adding the question particle
+[MA] at the end of the clause.
+(310)
+Wh-interrogative sentences are in-situ in Kazakh. Questions words do not raise to the head
+of the clause like in English, French, or other European languages.
+(311) Sáýle ýnıversıtette on saǵat jumys istedi
+      Sáýle ýnıversıtet-te on saǵat jumys iste-di-Ø
+      Saule unıversıty-loc ten hour work do-pres-3
+      ‘Saule works for ten hours at the University’
+(312) kim ýnıversıtette on saǵat jumys istedi
+      kim ýnıversıtet-te on saǵat jumys iste-di-Ø
+      who university-loc ten hour work do-pst-3
+      ‘Who works at the university of 10 hours’
+(313) Sáýle [qaı jerde] on  saǵat jumys istedi
+      Sáýle [qaı jer-de]    on     saǵat jumys iste-di-Ø
+      Saule [what place-loc] ten hour work does-pst-3
+      ‘Where does Saule work for 10 hours?’
+(314) Saýle ýnıversıtette [neshe saǵat]    jumys istedi
+      Saýle ýnıversıtet-te [neshe saǵat]   jumys iste-di-Ø
+      Saule university-loc [how.many hour] work do-pst-3
+      ‘How long does Sayle work at the University?’
+(315) Sáýle ýnıversıtette on saǵat [ne] istedi
+      Sáýle ýnıversıtette on saǵat [ne] iste-di-Ø
+      Saule university-loc ten hour what do-pst-3
+      ‘What did Saule do at the university for 10 hours?’
+
+4.5     Clausal Structures
+4.5.1   Independent Clauses
+Compound sentences have two or more independent clauses with complete thoughts and
+related ideas. The relationship between independent clauses of compound sentences are
+specified by conjunctions. Independent clauses fall into the following types:
+
+
+                                              57
+• Coordinating – coordinating independent clauses are formed by chaining two complete
+  clauses with the conjunction jáne (’and) or the clitic [TA]. These are identical in
+  formation to the patterns of nominal conjunction seen with nouns.
+
+  (316) Gúlsimge sińglisi                 aına               syılady,    jáne
+        Gúlsim-ge sińgli-si               aına-Ø             syıla-dy-Ø jáne
+        Gúlsim-dat younger.sister-3.poss mirror-acc.indef gift-pst-3 and
+        aǵasy                oǵan     taraq             alyp          berdi
+        aǵa-sy               oǵan     taraq-Ø           alyp          ber-di-Ø
+        older.brother-3.poss 3sg.dat comb-acc.indef take-cnvbII give-pst-3
+        ‘Gúlsim’s younger sister gifted her a mirror, and her older brother gave her a
+        comb.’
+  (317) Toı     kesh bitti      de,   biz túngi saǵat eki jarymǵa
+        Toı     kesh bit-ti-Ø de,     biz túngi saǵat eki jarym-ǵa
+        wedding late end-pst-3 coor we evening hour two half-dat
+        taksı           shaqyrdyq
+        taksı-Ø         shaqyr-dy-q
+        taxi-acc.indef order-pst-1pl
+        ‘The wedding party ended very late, (and/so) we ordered a taxi to come at 2:30
+        am.’
+
+• Disjunctive – disjunctive clauses are formed with the conjunction sonda da and describe
+  events where the first clause describes a state, and the second clause qualifies that state
+  to have happened despite other circumstances.
+
+  (318) tańerteń qar jaýdy,    sonda=da men          ormanǵa bardym
+        tańerteń qar jaý-dy-Ø, sonda=da men          orman-ǵa bar-dy-m
+        morning snow fall-pst-3 but=coor 1sg.nom forest-dat go-pst-1sg
+        ‘It snowed in the morning, and I still went into the forest (anyway, despite the
+        snow).’
+
+• Of Reason – clauses of reasons are chained together with the conjunctions sebebi or
+  óıtkeni. They indicate the reason for which a main action took place.
+
+  (319) biz      ormanǵa barmadyq             sebebi óte kóp qar   jaýdy
+        biz      orman-ǵa bar-ma-dy-q         sebebi óte kóp qar   jaý-dy-Ø
+        1pl.nom forest-dat go-neg-pst-1pl very much snow fall-pst-3
+        ‘We did not go into the forest, because it had snowed a lot.’
+
+• Sequential - sequential clauses are chained together using birese in both clauses. It
+  indicates that both actions are happening in a defined sequence or share a certain time
+  frame.
+
+  (320) birese jańbyr jaýady   birese qar jaýady   tańerteńnen beri
+        birese jańbyr jaý-a-dy birese qar jaý-a-dy tańerteń-nen beri
+        once rain fall-pres-3 once snow fall-pres-3 morning-abl since
+
+                                           58
+               ‘First it rains, then it snows, since morning.’
+
+   • Oppositional - oppositional clauses are connected with biraq (but).
+
+        (321) aýa    raıy         óte tamasha biraq biz          ormanǵa
+              aýa    raı-y        óte tamasha biraq biz          orman-ǵa
+              weather state-3.poss very wonderful but 1pl.nom forest-dat
+              barmadyq
+              bar-ma-dy-q
+              go-neg-pst-1pl
+              ‘The weather is very wonderful, but we didn’t go to the forest.’
+
+4.5.2     Subordinate Clauses
+A subordinate clause can either modify an adjacent (main) clause, provide additional infor-
+mation or serve as a component of an independent clause. A subordinate clause as a rule
+precedes the main clause. Subordinate clauses may be of the following types:
+
+  1. Adverbial - the dependent clause provides information regarding the manner, time, or
+     place of the event and action performed. These subordinate clauses are formed in the
+     following ways in Kazakh:
+
+          • Participles in the Locative Case - the verb of the subordinate clause is found
+            in the past participle form [-GAn] and then declined in the locative case. This
+            has a similar function to English clauses headed with ‘when...’ to indicate a time
+            frame.
+            (322) Roza Rymbaeva Áliya ánin                     oryndaǵanda,
+                  Roza Rymbaeva Áliya án-i-n                   orynda-ǵan-da,
+                  Roza Rymbaeva Aliya song-3.poss-acc.def perform-pst.ptcp-loc,
+                  tyńdaýshylardyń    kózderi      jasqa toldy
+                  tyńdaý-shy-lar-dyn’ kóz-der-i    jasqa tol-dy-Ø
+                  listener-pl-gen       eye-pl-3.poss tear burst-pst-3
+                  ‘When Roza Rymbaeva performed the song Aliya, the listeners burst into
+                  tears.’
+            The types of clauses may also be formed with verbs in the past participle followed
+            by the words kezde (lit. ‘at the time that...’), kúnde or shaqta.
+            (323) men      aıtqan          kezde, sen  tyńdamadyń
+                  men      aıt-qan         kezde sen   tyńda-ma-dy-ń
+                  1sg.nom say-pst.ptcp when 2sg.nom hear-neg-pst-2sg
+                  ‘When I said [it], you didn’t hear.’
+
+          • Using participles in the dative or ablative cases after the postpositions
+            son, sheıin, keıin, deıin, beri, buryn.
+
+
+                                                59
+        (324) Jańa telefon           satyp     alǵannan              beri, Aıdos
+              Jańa telefon-Ø         sat-yp    al-ǵan-nan            beri, Aıdos
+              new telefon-acc.indef buy-cnvbI take-pst.ptcp-abl since, Aidos
+              dostarymen            kóp habarlasady
+              dos-tar-y-men         kóp habarla-s-a-dy
+              friend-pl-3.poss-inst much talk-recip-pres-3
+              ‘Since he bought a new phone, Aidos talks to his friends a lot.’
+2. Conditional - sentences in the conditional mood also constitute a type of subordinate
+   clause
+
+   (325) eger mende kóp qarjy         bolǵanda,    Parijge  barǵan
+         eger men-de kóp qarjy        bol-ǵan-da-Ø Parij-ge bar-ǵan
+         if 1sg.loc many resources be-cond-3 Paris-dat go-pst.ptcp
+         bolar            edim
+         bol-ar           e-di-m
+         be-aorist.ptcp aux-pst-1sg
+         ‘If I had the means, I would have gone to Paris.’
+
+3. Subordinate clauses of purpose - subordinate clauses of purpose (‘in order to...’ or ‘for
+   ...’) are expressed in Kazakh with the postposition úshin after a verb in the infinitive.
+
+   (326) jańa kózildirik      alý      úshin kóz dárigerine     bardym
+         jańa kózildirik-Ø    al-ý     úshin kóz dáriger-i-ne   bar-dy-m
+         new glasses-acc.indf take-inf for eye doctor-3.poss-dat go-pst-1sg
+         ‘I went to the eye doctor in order to get some new glasses.’
+
+4. Subordinate clauses of reason - clauses corresponding to English ‘owing to ...’ or
+   ‘having/not having done ...’. They are formed with the construction past participle [-
+   GAn] and the postposition soń or with the suffix [-DIQtAn] attached to a past participle
+   [-GAn].
+
+   (327) Ýnıversıtetti        bitirgendikten,         tez arada jumysqa
+         Ýniversıtet-ti       bi-tir-gen-dikten,      tez ara-da jumys-qa
+         Univerisity-acc.def finish-caus-pst.ptcp fast middle work-dat
+         turdym
+         tur-dy-m
+         stand-pst-1sg
+         ‘Due to my graduation from the university,I was able to find a job within a
+         short time. (I got this job because I finished university).’
+   (328) Astynda kóligi    bolmaǵandyqtan,        Eset toıǵa    bara
+         Astynda kólig-i   bol-ma-ǵan-dyqtan      Eset toı-ǵa   bar-a
+         own     car-3.poss be-neg-pst.ptcp-because Eset party-dat go-cnvbI
+         almady
+         al-ma-dy-Ø
+         take.aux-neg-pst-3
+
+                                           60
+               ‘Due to not having a car, Eset was not able to go to the party.’
+
+        The negative form of this construction uses simply the negative converb II form.
+
+        (329) maǵan eshnárse aıtpaı           Jomart jańa komputer
+              maǵan eshnárse aıt-pa-ı         Jomart jańa komputer-Ø
+              1sg.dat nothing say-neg-cnvbI Jomart new computer-acc.indef
+              satyp       alypty             ózine
+              sat-yp      al-yp-ty           óz-i-ne
+              buy-cnvbII take-cnvbII-pst-3 reflx-3.poss-dat
+              ‘Without saying anything to me, Jomart bought himself a new computer.’
+
+4.5.3     Relative Clauses
+Relative clauses are formed with either the present or past participles of verb forms and
+immediately precede the noun phrase that they modify. In Kazakh, relative clauses are
+either past or non-past and are headed by a verb phrase that is headed by a present [-
+(y)AtIn] or past [-GAn] participle.
+(330) ol kisi      osy kósheniń boıynda           turady.     ol      maǵan
+      ol kisi      osy kóshe-niń boı-y-nda        tur-a-dy.   ol      maǵan
+      that person this street-gen part-3.poss-loc stand-pres-3. 3sg.nom 1sg.dat
+      kómektesti
+      kómektes-ti-Ø
+      help-pst-3
+      ‘That person lives on this street. He helped me.’
+(331) [maǵan kómektesken]RC kisi    osy kósheniń boıynda         turady
+      maǵan kómektes-ken-Ø kisi     osy kóshe-niń boı-y-nda      tur-a-dy
+      1sg.dat help-pst.ptcp person this street-gen corner-3.poss-loc stand-pres-3
+      ‘The person, who helped me, lives on this street.’
+In the above two cases, we see the two independent clauses in (330) fused together into
+a single complex sentence. The verb, kómektesý, commands the dative case. The whole
+clause appears before the noun phrase that it modifies, i.e before kisi, and it retains the case
+marking for the object of kómektesý in the dative case (maǵan). How, then, would the clause
+change based on flipping the arguments of the verb?
+(332) ol kisi     osy kósheniń boıynda              turady.     men     oǵan
+      ol kisi     osy kóshe-niń boı-y-nda           tur-a-dy.   men     oǵan
+      this person this street-gen corner-3.poss-loc stand-pres-3. 1sg.nom 3sg.dat
+      kómektestim.
+      kómektes-ti-m
+      help-pst-1sg.
+      ‘That person lives on this street. I helped him.’
+
+
+
+                                              61
+(333) men      kómektesken kisi      osy kósheniń boıynda         turady
+      men      kómektes-ken kisi     osy kóshe-niń boı-y-nda      tur-a-dy
+      1sg.nom help-pst.ptcp person this street-gen corner-3.poss-loc stand-pres-3
+      ‘The person, whom I helped, lives on this street. ’
+In the complex sentence, the only distinguishing feature is the case of the 1st person singular
+pronoun. In a relative clause that is verbalized, if it is in the nominative, then it acts as
+the subject of the relative clause. In these constructions, the who sentence is preserved,
+defaulting to either past or present, depending on the type of participle used.
+(334) men      kómektesetin  kisi
+      men      kómektes-etin kisi
+      1sg.nom help-pres.ptcp person
+      ‘The man, whom I am helping’
+(335) men       kómektesken kisi
+      men       kómektes-ken kisi
+      1sg.nom help-pst.ptcp person
+      ‘the man, whom I helped’
+
+Wh-Clauses Wh-clauses are formed in the same way as relative clauses in Kazakh, with
+a nominalized verbal clause, headed by a verbal participle, functioning as either the subject
+or object of the sentence.
+(336) aıtqanyńdy                   bilmeımin
+      aıt-qan-yń-dy                bil-me-ı-min
+      say-pst.ptcp-2sg.poss-acc.def know-neg-pres-1sg
+      ‘I don’t know what you said.’
+
+4.5.4   Adjunct and Compliment Modifiers
+Adjunct and compliment modifiers both precede the noun phrase that they qualify. When
+they precede and modify verb phrases, they receive an adverbial meaning. Adjunct modifiers
+are located further from the noun phrase compared to compliment modifiers. Compliment
+phrases, particularly in the cases of nouns qualifying other nouns, are indicated by the
+qualified noun marked with the 3rd person possessive suffix.
+(337) qyzyl qapty      ertegiler kitaby
+      qyzyl qap-ty     ertegi-ler kitab-y
+      red cover-adj tale-pl book-3.poss
+      ‘the red book of tales’
+(338) qyzyl qapty     ertegiler kitaby         stoldyń  ústinde
+      qyzyl qap-ty    ertegi-ler kitab-y       stol-dyń úst-i-nde
+      red cover-adj tale-pl book-3.poss counter-gen top.side-3.poss-loc
+      ‘The red book of tales [is] on the counter.’
+
+
+
+                                              62
+4.6    Auxiliary Verb Constructions
+The Kazakh language contains a large number of auxiliary verb constructions wherein a lex-
+ical verb in a converb/gerundative form is paired with a second verb to express a wide range
+of functions. Principally, auxiliary verb constructions are used to add additional semantic,
+aspectual, or temporal meaning to the lexical verb. The lexical verb most commonly occurs
+in either the [-(I)p] or [-a/-e-ı] converb/gerundative form. For certain auxiliary verbs, there
+is a difference between which converbial form the main lexical verb is found. For example,
+the lexical verb ‘bery’’, meaning ‘to give’, can be used to indicate an action that is done for
+the benefit of another party when it is used with the [-(I)p] converb (glossed as cnvbI), but
+may also be used to indicate repetitive, constant, continuous actions when used with the
+[-a/-e/-ı] converb (glossed as cnvbII).
+(339) siz         olarǵa bárin               túsindirip
+      siz         olarg’a bár-i-n             tús-in-dir-ip
+      2sg.pl.nom 3pl.dat all-3.poss-acc.def understand-pass-caus-cnvbI
+      berdińiz         be
+      ber-di-ńiz       be
+      give-pst-2sg.pol q
+      ‘Did you make everything understood for them?’
+(340) siz           suraqtardy            qoıa     beresiz
+      siz           suraq-tar-dy          qoı-a    ber-e-siz
+      2sg.pol.nom question-pl-acc.def place-cnvbII give-pres-2sg.pol
+      ‘You always ask (the same) questions.’
+Typically, constructions using the [-(I)p] converb retain similarity to their original lexical
+meaning than the [-a/-e/-ı] converbial constructions. However, for other auxiliaries, there
+is little similarity between the meanings rendered by the same auxiliary when used with
+different converbs. For example, the auxiliary verb ‘alý’, meaning ‘to take’, when used with
+the [-(I)p] converb indicates that the action is done for the benefit or sake of the doer of the
+action. When used with the [-a/-e/-ı] converb, it indicates that the subject is able to do the
+action encoded by the lexical verb.
+(341) men       daladan aqsha              taýyp       aldym
+      men       dala-dan aqsha-Ø           taý-yp      al-dy-m
+      1sg.nom field-abl money-acc.indef find-cnvbI take-pst-1sg
+      ‘I found some money outside (for myself – implication: I took and kept the money).’
+(342) sen       qazaqsha       jaqsy sóıleı         alasyń
+      sen       qazaqsha       jaqsy sóıle-ı        al-a-syń
+      2sg.nom Kazakh.language good speak-cnvbII take-pres-2sg
+      ‘You can speak Kazakh well (you are able to speak Kazakh well).’
+Some auxiliary constructions are limited to certain converbs. For example, ‘kórý’ (to see) is
+used with the [-(I)p] converb to indicate that the subject is attempting the action. ‘kórý’
+may be used with the [-a/-e/-ı] converb as well, but only in the negative, to warn or forbid
+an action.
+
+                                              63
+(343) men         siz            úshin ýaqyt   taýyp  kórermin
+      men         siz            úshin ýaqyt-Ø taý-yp kór-er-min
+      1sg.nom 2sg.pol.nom for time-acc.indef find-cnvbI see-pres-1sg
+      ‘I will try to find time for you.’
+(344) maǵan ótirik          aıta     kórme
+      maǵan ótirik-Ø        aıt-a    kór-me-Ø
+      1sg.dat lie-acc.indef say-cnvbII say-neg-imp
+      ‘Don’t you dare tell me a lie.’
+Other auxiliaries are limited to only a single type of converb. ‘jazdaý’, for example, can only
+appear next to the [-a/-e/-ı] converb to mean that an action nearly occurred, but was not
+completed.
+(345) adasa            jazdadyq
+      adas-a           jazda-dy-q
+      go.astray-cnvbI aux-pst-1pl
+      ‘We almost got lost/almost went astray (but we didn’t, in fact).’
+Finally, several auxiliary verbs can be chained together, in multiple combinations, to express
+extremely nuanced and complex verbal predicates.
+(346) qorqynyshtan jýregim          toqtap      qala          jazdady
+      qorqynysh-tan jýreg-im        toqta-p     qal-a         jazda-dy-Ø
+      fear-abl       heart-1sg.poss stop-cnvbII stay.aux-cnvbI aux-pst-3
+      ‘Due to fear, my heart nearly came to a sudden stop.’
+
+4.7     Function Words
+Function words are words with little to no lexical meaning that serve to express grammatical
+relations within other words, parts of the sentences, and specify the mood or attitude of the
+speaker. Function words include: conjunctions, postpositions, and particles.
+
+4.7.1   Conjunctions
+Conjunctions serve to combine nouns, verbs, and sentences. According to their morphological
+structure, conjunctions can be thought of as either simple or complex. Conjunctions in
+Kazakh can be grouped into several types.
+
+
+
+
+                                              64
+                        Table 11: Kazakh Conjunction and Types with Examples
+Types                          Conjunctions                 English Variants
+                                                            and, as well as
+                               jáne
+Coordinating conjunctions                                   alma jáne almurt
+                               men/ben/pen
+(yń ǵaılastyq jalǵaýlyq)                                ’apple and pear’
+                               da/de/ta/te
+                                                            Qasym mektepke de, jumysqa da barady
+                                                            ’Qasym goes to school as well as to work’
+                               alaıda                       Nevertheless
+Opposite conjunctions          áıtse de                    Shynardyń saǵaty toqtap qalǵan, alaıda ol sabaqqa keshikpeı keldi
+                               áıtpese                     ’Shynar’s clock stopped, nevertheless she was not late to work’
+                               óıtkeni, sebebi,            because, the reason why, that’s why, because of that
+                               sol sebepti,
+Conjunctions of Reason
+                               sol sebepten,                Men janǵaq satyp almadym, sebebi ol óte qymbat eken
+                               sondyqtan                    ’I didn’t by nuts, because they were very expensive’
+                                                             either, or, otherwise, even then, but still
+                               ne, nemese, birese, ai’tpese,
+Disjunctive Conjunctions
+                               sonda da, áıtkenmen          Maǵan telefon soq, áıtpese ol meniń esimde qalmaıdy
+                                                             ’Give me a call, otherwise I will forget about it’
+                                                            as a result
+                                                            for that reason
+                               sondyqtan,
+                                                            because of that
+Resultative Conjunctions       sol úshin
+                               sonyń arqasynda
+                                                            Ol araqty kop ishken, sondyqtan mas bolyp qalǵan
+                                                            ’He had too much vodka, as a result he got drunk’
+                                                            if so
+                                                            then
+                               olaı bolsa
+                                                            if
+Conditional Conjunctions       onda
+                               eger
+                                                            Eger sen qalaǵa kelseń men seni teatrǵa aparamyn
+                                                            ’If you come to the city, I will take you to the theatre’
+
+
+
+4.7.2     Postpositions
+As a head-final language, Kazakh employs postpositions where English and other European
+languages use prepositions. Postpositions in Kazakh generally follow either noun phrases or
+nominalized verbs in the [-GAN] participial forms. Postpositions in Kazakh require certain
+case endings on the nouns that they modify. For example, the postposition, saıyn means
+‘each time’ or ‘every time’ and it requires the nominative case.
+(347) aı          saıyn
+      aı          saıyn
+      month.nom each
+      ‘every month’
+(348) men       aı          saıyn Almatyǵa baramyn
+      men       aı          saıyn Almaty-ǵa bar-a-myn
+      1sg.nom month.nom every almaty-dat go-pres-1sg
+      ‘I go to Almaty every month.’
+(349) aıtqan           saıyn
+      aıt-qan-Ø        saıyn
+      say-pst.ptcp-nom every
+
+                                                               65
+         ‘Everytime someone says ...’ or ‘Whenever someone says ...’
+
+
+                                          Table 12: Kazakh Postpositions
+                    Postposition                                                            Use
+                                                       May be used:
+úshin - for, because                                  1) After nouns in the nominative
+because of, for the sake of                            2) With infinitives
+                                                       3) With past participles [-GAn]
+                                                       May be used:
+sıyaqty, sekildi - like, seems,                        1) After nouns in the nominative
+as if                                                  2) Adjectives
+                                                       3) Present [-(y)AtIn] and past [-GAN] participles
+                                                       May be used:
+arqyly - through, by, with                             1) After nouns (nominative)
+                                                       2) infinitives
+                                                       May be used :
+boıynsha - according to, based on, by                  1) after nouns in the nominative
+                                                       2) infinitives nominalized with 3 person possessive suffix (also nominative)
+                                                       May be used:
+boıyna, boıy - ’during’
+                                                       1) after nouns (pertaining to time frames) in nominative case
+                                                       May be used:
+jóninde - ’about’
+                                                       1) after nouns in the nominative case
+                                                       May be used:
+qarsy - against, opposed to
+                                                       1) after nouns in the Dative case
+                                                       Maybe be used:
+taman/jaqyn/qaraı - ’towards, closer to, approx/about’
+                                                       1) after nouns in the Dative case
+                                                       May be used:
+basqa - ’besides’, ’apart from’                        1) after nouns in the Ablative case
+                                                       2) after nominalized infinitives in the ablative case
+                                                       May be used:
+beri - ’since, from the time ...’
+                                                       1) after nouns in the Ablative case
+
+
+
+úshin - ‘for’
+(350) tamaq úshin
+      food for
+      ‘for food’
+(351) ony      kórý úshin keldim
+      ony      kór-ý úshin kel-di-m
+      3sg.acc see-inf for come-pst-1sg
+      ‘I came to see him.’
+(352) temeki shekken            úshin ákesi       balasyn         jazalady
+      temeki shek-ken           úshin áke-si      bala-sy-n       jazala-dy-Ø
+      tobacco smoke-pst.ptcp for father-3.poss child-3.poss-acc.def punish-pst-3
+      ‘The father punished his child for smoking cigarettes.’
+
+sıyaqty / sekildi - ‘look like’ or ‘seem’
+(353) alma sıyaqty
+      apple seem
+      ‘It looks like an apple.’
+
+
+                                                               66
+(354) mynaý jazatyn             sıyaqty
+      mynaý jaz-atyn            sıyaqty
+      this.one write-pres.ptcp seem
+      ‘This one seems to write.’
+(355) mynaý oqyǵan          sıyaqty
+      mynaý oqy-ǵan         sıyaqty
+      this.one read-pst.ptcp seem
+      ‘this one seems to be well educated’
+
+arqyly - through, by, with
+(356) kópir arqyly
+      kópir arqyly
+      bridge through
+      ‘via the bridge’
+(357) áńgimelesý        arqyly
+      áńgimele-sý       arqyly
+      conversation-3.poss through
+      ‘by means of talking, by having a conversation’
+(358) tergeý         arqyly
+      terge-ý        arqyly
+      interrogate-inf through
+      ‘by means of interrogation, by having interrogated’
+
+boıynsha - according to, by
+(359) Amerika Qurama Shtattarynyń         shaqyrýy    boıynsha
+      Amerika Qurama Shtattar-y-nyń       shaqyr-ý-y  boıynsha
+      America united state-3.poss-gen invite-inf-3.poss according.to
+      ‘By invitation of the United States of America.’
+(360) Dástúr boıynsha      Qazaq ulty           qudalaryna              togyz kıit
+      Dástúr boıynsha      Qazaq ult-y          quda-lar-y-na           togyz kıit
+      tradition according.to Kazakh nation-3.poss in.law-pl-3.poss-dat nine gift
+      kıgizedi
+      kıgiz-e-di
+      present-pres-3
+      ‘In accordance with tradition, Kazakh people present their in-laws with nine sets of
+      gifts.’
+
+boıy or boıyna - during, over the course of
+(361) bir apta boıy
+      one week during
+      ‘in the span of one week’
+
+                                             67
+(362) on jyl boıyna
+      ten year during.loc
+      ‘over the course of ten years’
+
+jóninde - ‘about’
+(363) aýa     raıy         jóninde sóılesý
+      aýa     raı-y        jóninde sóıle-s-ý
+      weather state-3.poss about speak-recip-inf
+      ‘to conversate about the weather’
+
+qarsy - back at, against, in opposition to
+(364) ákesine          qarsy sóılemeıdi
+      áke-si-ne        qarsy sóıle-me-ı-di
+      father-3.poss-dat against speak-neg-pres-aux.3
+      ‘One should not speak back to their (own) father.’
+
+taman/jaqyn/qaraı - closer to, approximately, towards (Fr. ‘vers’)
+(365) kóktemge qaraı     gúl               egemiz
+      kóktem-ge qaraı    gúl-Ø             eg-e-miz
+      spring-dat towards flower-acc.indef plant-pres-1pl
+      ‘We will plant some flowers closer to springtime.’
+
+basqa - apart from, besides, another, different from
+(366) úıge      qaıtýdan      basqa amalym          qalmady
+      úı-ge     qaıt-ý-dan    basqa almaly-m        qal-ma-dy-Ø
+      house-dat leave-inf-abl besides choice-1sg.poss remain-neg-pst-3
+      ‘I had no choice but to go home.’
+
+beri - since, from the time that
+(367) eki myń       tórtinshi jyldan beri
+      eki myń       tórt-inshi jyl-dan beri
+      two thousand four-ord year-abl since
+      ‘Since 2004 (lit ‘since the two-thousand-and-fourth year’).’
+
+
+5     References
+    • Adighaliqyzy,Shyryn.Posobie dlya zanyatii po kazakhskomu yazyku. Almaty: Daryn,
+      2007.
+
+    • Bekturov,Shabiken and Ardaq Bekturova. Qazaq Tili. Almaty: Adilet jQM, 2002.
+
+                                             68
+• Muhamedova, Raihan. Kazakh:A Comprehensive Grammar.London:Routledge Com-
+  prehensive Grammar Series, 2016.
+
+
+
+
+                                  69
+

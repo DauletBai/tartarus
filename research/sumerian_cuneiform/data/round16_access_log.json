@@ -1,0 +1,42 @@
+[
+  {
+    "url": "https://www.britishmuseum.org/collection/object/W_1881-0727-200",
+    "status": "web403",
+    "use": "no content obtained; accession corresponds to catalogue search result"
+  },
+  {
+    "url": "https://www.britishmuseum.org/collection/object/W_1904-1010-7",
+    "status": "web unavailable",
+    "use": "unverified trial URL, excluded from identity evidence"
+  },
+  {
+    "url": "https://www.britishmuseum.org/collection/object/W_1885-0430-6",
+    "status": "web403",
+    "use": "verified by CDLI/eBL accession; no BM page content obtained"
+  },
+  {
+    "url": "https://cdli.earth/search?museum_no=81-07-27&limit=100",
+    "status": "downloaded, no artifact matches",
+    "use": "no inference of absence of ancient object"
+  },
+  {
+    "url": "https://cdli.earth/search?museum_no=81-7-27&limit=100",
+    "status": "downloaded, no artifact matches",
+    "use": "no inference of absence of ancient object"
+  },
+  {
+    "url": "https://cdli.earth/search?primary_publication=CT+12%2C+27&limit=100",
+    "status": "downloaded, appears ignored; generic first100 artifacts",
+    "use": "excluded as non-targeted result"
+  },
+  {
+    "url": "https://cdli.earth/search?accession_no=1881-07-27&limit=100",
+    "status": "downloaded, appears ignored; generic first100 artifacts",
+    "use": "excluded as non-targeted result"
+  },
+  {
+    "url": "https://www.ebl.lmu.de/api/fragments/BM.93042/photo",
+    "status": "HTTP404; File BM.93042.jpg not found",
+    "use": "eBL metadata hasPhoto=false. No claim no photograph exists elsewhere."
+  }
+]

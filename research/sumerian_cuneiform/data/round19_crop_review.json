@@ -1,0 +1,20 @@
+{
+  "recorded_at": "2026-10-25T12:21:52.856275+05:00",
+  "trigger": "Native crops C01,C02,C04,C05,C06,C07,C08 inspected after initial whole-image record.",
+  "corrections": [
+    {
+      "tokens": [
+        "C04",
+        "C05"
+      ],
+      "initial": "Two short branches to the right.",
+      "revised": "One short rightward branch is clear in each crop. An upper horizontal segment can be part of a cell border and is not counted as a second sign stroke.",
+      "effect": "Retain provisional G02 similarity, revise stroke description; no sound assigned."
+    }
+  ],
+  "other_notes": [
+    "C01 and C02 have similar pointed outlines, but internal details vary; same class remains a tentative graphic comparison.",
+    "C06,C07,C08 share a rounded outline but differ internally and are kept as three classes.",
+    "A repeated complex may still consist of multiple smaller units. No unique minimal alphabet recovered."
+  ]
+}

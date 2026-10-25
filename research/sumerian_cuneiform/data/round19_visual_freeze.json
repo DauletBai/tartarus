@@ -1,0 +1,18 @@
+{
+  "created_at": "2026-10-25T12:21:52.866322+05:00",
+  "status": "Graphic observations frozen while individual editorial readings/translations remain unexposed. Post-observation hashes are integrity records, not proof of preregistration timing.",
+  "records": {
+    "data/round19_protocol.json": "b6e455121cef29424f2224570a847cd1f3a2a00cd70e35015261b5235efff7ea",
+    "data/round19_selection_amendment.json": "5ee36b9016a2c2df88bbf08420a0aa9ca554502296c41f2c2c5b1107ebf9e30f",
+    "data/round19_batch_extension.json": "ed9e8c3b757c8103231ddf12a0f519dd05ed66991e1dc5ec03752065a833267e",
+    "data/round19_image_A_observations.json": "84b4f9e0744abde269084087b1bd8d89418aa40365256cfc5158895d88b9dda1",
+    "data/round19_image_BC_observations.json": "54a354fb5958fd7dfe8a4592bce8f29552a084ad9c12a599b356b5a1c8a37dbf",
+    "data/round19_crop_review.json": "7c982f1c169f97abf2a9a3ad994ce4e859d955b60fd632565dd2632fcaa56cf5",
+    "sources/round19_image_A.jpg": "1a66b2ddbf961af62c4aa72fab36b8a7f2eb02c8ae0614201456d21f3bd48b58",
+    "sources/round19_image_B.jpg": "db08516658b03951aa2d858c2df333356e40ebe0dc4e780a97ade43c930a038e",
+    "sources/round19_image_C.jpg": "ed3915dfcd2a403e698b44363321e9e3be28bd3a59c2f819db6b3096401cf093"
+  },
+  "new_phonetic_readings": 0,
+  "individual_translations_opened": false,
+  "no_automatic_editorial_reveal": true
+}

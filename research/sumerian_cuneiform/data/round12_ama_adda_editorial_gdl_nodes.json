@@ -1,0 +1,1931 @@
+[
+  {
+    "ref": "Q000377.29.1",
+    "f": {
+      "lang": "sux",
+      "form": "ama-ŋu₁₀",
+      "delim": "",
+      "gdl": [
+        {
+          "v": "ama",
+          "oid": "o0001286",
+          "gdl_sign": "|GA₂×AN|",
+          "utf8": "𒂼",
+          "key": "o0001286..ama",
+          "id": "Q000377.29.1.0",
+          "delim": "-"
+        },
+        {
+          "v": "ŋu₁₀",
+          "oid": "o0000457",
+          "gdl_sign": "MU",
+          "utf8": "𒈬",
+          "key": "o0000457..ŋu₁₀",
+          "id": "Q000377.29.1.1"
+        }
+      ],
+      "cf": "ama",
+      "gw": "mother",
+      "sense": "mother",
+      "norm": "ama.ŋu.ra",
+      "pos": "N",
+      "epos": "N",
+      "base": "ama",
+      "morph": "N1=ama.N3=ŋu.N5=ra",
+      "morph2": "N1=STEM.N3=1-SG-POSS.N5=DAT-H"
+    }
+  },
+  {
+    "ref": "Q000377.61.2",
+    "f": {
+      "lang": "sux",
+      "form": "ama",
+      "delim": "",
+      "gdl": [
+        {
+          "v": "ama",
+          "oid": "o0001286",
+          "gdl_sign": "|GA₂×AN|",
+          "utf8": "𒂼",
+          "key": "o0001286..ama",
+          "id": "Q000377.61.2.0"
+        }
+      ],
+      "cf": "ama",
+      "gw": "mother",
+      "sense": "mother",
+      "norm": "ama",
+      "pos": "N",
+      "epos": "N",
+      "base": "ama",
+      "morph": "N1=ama",
+      "morph2": "N1=STEM"
+    }
+  },
+  {
+    "ref": "Q000377.64.1",
+    "f": {
+      "lang": "sux",
+      "form": "ama",
+      "delim": "",
+      "gdl": [
+        {
+          "v": "ama",
+          "oid": "o0001286",
+          "gdl_sign": "|GA₂×AN|",
+          "utf8": "𒂼",
+          "key": "o0001286..ama",
+          "id": "Q000377.64.1.0"
+        }
+      ],
+      "cf": "ama",
+      "gw": "mother",
+      "sense": "mother",
+      "norm": "ama.ø",
+      "pos": "N",
+      "epos": "N",
+      "base": "ama",
+      "morph": "N1=ama.N5=ø",
+      "morph2": "N1=STEM.N5=ABS"
+    }
+  },
+  {
+    "ref": "Q000377.64.3",
+    "f": {
+      "lang": "sux",
+      "form": "ama-ŋu₁₀",
+      "delim": "",
+      "gdl": [
+        {
+          "v": "ama",
+          "oid": "o0001286",
+          "gdl_sign": "|GA₂×AN|",
+          "utf8": "𒂼",
+          "key": "o0001286..ama",
+          "id": "Q000377.64.3.0",
+          "delim": "-"
+        },
+        {
+          "v": "ŋu₁₀",
+          "oid": "o0000457",
+          "gdl_sign": "MU",
+          "utf8": "𒈬",
+          "key": "o0000457..ŋu₁₀",
+          "id": "Q000377.64.3.1"
+        }
+      ],
+      "cf": "ama",
+      "gw": "mother",
+      "sense": "mother",
+      "norm": "ama.ŋu.ø",
+      "pos": "N",
+      "epos": "N",
+      "base": "ama",
+      "morph": "N1=ama.N3=ŋu.N5=ø",
+      "morph2": "N1=STEM.N3=1-SG-POSS.N5=ABS"
+    }
+  },
+  {
+    "ref": "Q000377.83.1",
+    "f": {
+      "lang": "sux",
+      "form": "ama-ŋu₁₀",
+      "delim": "",
+      "gdl": [
+        {
+          "v": "ama",
+          "oid": "o0001286",
+          "gdl_sign": "|GA₂×AN|",
+          "utf8": "𒂼",
+          "key": "o0001286..ama",
+          "id": "Q000377.83.1.0",
+          "delim": "-"
+        },
+        {
+          "v": "ŋu₁₀",
+          "oid": "o0000457",
+          "gdl_sign": "MU",
+          "utf8": "𒈬",
+          "key": "o0000457..ŋu₁₀",
+          "id": "Q000377.83.1.1"
+        }
+      ],
+      "cf": "ama",
+      "gw": "mother",
+      "sense": "mother",
+      "norm": "ama.ŋu.ra",
+      "pos": "N",
+      "epos": "N",
+      "base": "ama",
+      "morph": "N1=ama.N3=ŋu.N5=ra",
+      "morph2": "N1=STEM.N3=1-SG-POSS.N5=DAT-H"
+    }
+  },
+  {
+    "ref": "Q000377.100.3",
+    "f": {
+      "lang": "sux",
+      "form": "ama",
+      "delim": "",
+      "gdl": [
+        {
+          "v": "ama",
+          "oid": "o0001286",
+          "gdl_sign": "|GA₂×AN|",
+          "utf8": "𒂼",
+          "key": "o0001286..ama",
+          "id": "Q000377.100.3.0"
+        }
+      ],
+      "cf": "ama",
+      "gw": "mother",
+      "sense": "mother",
+      "norm": "ama.ø",
+      "pos": "N",
+      "epos": "N",
+      "base": "ama",
+      "morph": "N1=ama.N5=ø",
+      "morph2": "N1=STEM.N5=ABS"
+    }
+  },
+  {
+    "ref": "Q000377.124.2",
+    "f": {
+      "lang": "sux",
+      "form": "ama-ni",
+      "delim": "",
+      "gdl": [
+        {
+          "v": "ama",
+          "oid": "o0001286",
+          "gdl_sign": "|GA₂×AN|",
+          "utf8": "𒂼",
+          "key": "o0001286..ama",
+          "id": "Q000377.124.2.0",
+          "delim": "-"
+        },
+        {
+          "v": "ni",
+          "oid": "o0000479",
+          "gdl_sign": "NI",
+          "utf8": "𒉌",
+          "key": "o0000479..ni",
+          "id": "Q000377.124.2.1"
+        }
+      ],
+      "cf": "ama",
+      "gw": "mother",
+      "sense": "mother",
+      "norm": "ama.ani",
+      "pos": "N",
+      "epos": "N",
+      "base": "ama",
+      "morph": "N1=ama.N3=ani",
+      "morph2": "N1=STEM.N3=3-SG-H-POSS"
+    }
+  },
+  {
+    "ref": "Q000377.326.4",
+    "f": {
+      "lang": "sux",
+      "form": "ama",
+      "delim": "",
+      "gdl": [
+        {
+          "v": "ama",
+          "oid": "o0001286",
+          "gdl_sign": "|GA₂×AN|",
+          "utf8": "𒂼",
+          "key": "o0001286..ama",
+          "id": "Q000377.326.4.0"
+        }
+      ],
+      "cf": "ama",
+      "gw": "mother",
+      "sense": "mother",
+      "norm": "ama",
+      "pos": "N",
+      "epos": "N",
+      "base": "ama",
+      "morph": "N1=ama",
+      "morph2": "N1=STEM"
+    }
+  },
+  {
+    "ref": "Q000377.332.1",
+    "f": {
+      "lang": "sux",
+      "form": "ama-a",
+      "delim": "",
+      "gdl": [
+        {
+          "v": "ama",
+          "oid": "o0001286",
+          "gdl_sign": "|GA₂×AN|",
+          "utf8": "𒂼",
+          "key": "o0001286..ama",
+          "id": "Q000377.332.1.0",
+          "delim": "-"
+        },
+        {
+          "v": "a",
+          "oid": "o0000087",
+          "gdl_sign": "A",
+          "utf8": "𒀀",
+          "key": "o0000087..a",
+          "id": "Q000377.332.1.1"
+        }
+      ],
+      "cf": "ama",
+      "gw": "mother",
+      "sense": "mother",
+      "norm": "ama.e",
+      "pos": "N",
+      "epos": "N",
+      "base": "ama",
+      "morph": "N1=ama.N5=e",
+      "morph2": "N1=STEM.N5=ERG"
+    }
+  },
+  {
+    "ref": "Q000377.333.2",
+    "f": {
+      "lang": "sux",
+      "form": "ama-ni-ra",
+      "delim": "",
+      "gdl": [
+        {
+          "v": "ama",
+          "oid": "o0001286",
+          "gdl_sign": "|GA₂×AN|",
+          "utf8": "𒂼",
+          "key": "o0001286..ama",
+          "id": "Q000377.333.2.0",
+          "delim": "-"
+        },
+        {
+          "v": "ni",
+          "oid": "o0000479",
+          "gdl_sign": "NI",
+          "utf8": "𒉌",
+          "key": "o0000479..ni",
+          "id": "Q000377.333.2.1",
+          "delim": "-"
+        },
+        {
+          "v": "ra",
+          "oid": "o0000510",
+          "gdl_sign": "RA",
+          "utf8": "𒊏",
+          "key": "o0000510..ra",
+          "id": "Q000377.333.2.2"
+        }
+      ],
+      "cf": "ama",
+      "gw": "mother",
+      "sense": "mother",
+      "norm": "ama.ani.ra",
+      "pos": "N",
+      "epos": "N",
+      "base": "ama",
+      "morph": "N1=ama.N3=ani.N5=ra",
+      "morph2": "N1=STEM.N3=3-SG-H-POSS.N5=DAT-H"
+    }
+  },
+  {
+    "ref": "Q000377.551.1",
+    "f": {
+      "lang": "sux",
+      "form": "ama",
+      "delim": "",
+      "gdl": [
+        {
+          "v": "ama",
+          "oid": "o0001286",
+          "gdl_sign": "|GA₂×AN|",
+          "utf8": "𒂼",
+          "key": "o0001286..ama",
+          "id": "Q000377.551.1.0"
+        }
+      ],
+      "cf": "ama",
+      "gw": "mother",
+      "sense": "mother",
+      "norm": "ama",
+      "pos": "N",
+      "epos": "N",
+      "base": "ama",
+      "morph": "N1=ama",
+      "morph2": "N1=STEM"
+    }
+  },
+  {
+    "ref": "Q000377.898.2",
+    "f": {
+      "lang": "sux",
+      "form": "ama",
+      "delim": "",
+      "gdl": [
+        {
+          "v": "ama",
+          "oid": "o0001286",
+          "gdl_sign": "|GA₂×AN|",
+          "utf8": "𒂼",
+          "key": "o0001286..ama",
+          "id": "Q000377.898.2.0"
+        }
+      ],
+      "cf": "ama",
+      "gw": "mother",
+      "sense": "mother",
+      "norm": "ama",
+      "pos": "N",
+      "epos": "N",
+      "base": "ama",
+      "morph": "N1=ama",
+      "morph2": "N1=STEM"
+    }
+  },
+  {
+    "ref": "Q000377.1033.1",
+    "f": {
+      "lang": "sux",
+      "form": "ama",
+      "delim": "",
+      "gdl": [
+        {
+          "v": "ama",
+          "oid": "o0001286",
+          "gdl_sign": "|GA₂×AN|",
+          "utf8": "𒂼",
+          "key": "o0001286..ama",
+          "id": "Q000377.1033.1.0"
+        }
+      ],
+      "cf": "ama",
+      "gw": "mother",
+      "sense": "mother",
+      "norm": "ama",
+      "pos": "N",
+      "epos": "N",
+      "base": "ama",
+      "morph": "N1=ama",
+      "morph2": "N1=STEM"
+    }
+  },
+  {
+    "ref": "Q000377.1110.1",
+    "f": {
+      "lang": "sux",
+      "form": "ama",
+      "delim": "",
+      "gdl": [
+        {
+          "v": "ama",
+          "oid": "o0001286",
+          "gdl_sign": "|GA₂×AN|",
+          "utf8": "𒂼",
+          "key": "o0001286..ama",
+          "id": "Q000377.1110.1.0"
+        }
+      ],
+      "cf": "ama",
+      "gw": "mother",
+      "sense": "mother",
+      "norm": "ama",
+      "pos": "N",
+      "epos": "N",
+      "base": "ama",
+      "morph": "N1=ama",
+      "morph2": "N1=STEM"
+    }
+  },
+  {
+    "ref": "Q000377.1197.1",
+    "f": {
+      "lang": "sux",
+      "form": "ama",
+      "delim": "",
+      "gdl": [
+        {
+          "v": "ama",
+          "oid": "o0001286",
+          "gdl_sign": "|GA₂×AN|",
+          "utf8": "𒂼",
+          "key": "o0001286..ama",
+          "id": "Q000377.1197.1.0"
+        }
+      ],
+      "cf": "ama",
+      "gw": "mother",
+      "sense": "mother",
+      "norm": "ama",
+      "pos": "N",
+      "epos": "N",
+      "base": "ama",
+      "morph": "N1=ama",
+      "morph2": "N1=STEM"
+    }
+  },
+  {
+    "ref": "Q000377.1287.2",
+    "f": {
+      "lang": "sux",
+      "form": "ama-zu",
+      "delim": "",
+      "gdl": [
+        {
+          "v": "ama",
+          "oid": "o0001286",
+          "gdl_sign": "|GA₂×AN|",
+          "utf8": "𒂼",
+          "key": "o0001286..ama",
+          "id": "Q000377.1287.2.0",
+          "delim": "-"
+        },
+        {
+          "v": "zu",
+          "oid": "o0000614",
+          "gdl_sign": "ZU",
+          "utf8": "𒍪",
+          "key": "o0000614..zu",
+          "id": "Q000377.1287.2.1"
+        }
+      ],
+      "cf": "ama",
+      "gw": "mother",
+      "sense": "mother",
+      "norm": "ama.zu.ø",
+      "pos": "N",
+      "epos": "N",
+      "base": "ama",
+      "morph": "N1=ama.N3=zu.N5=ø",
+      "morph2": "N1=STEM.N3=2-SG-POSS.N5=ABS"
+    }
+  },
+  {
+    "ref": "Q000872.2.1",
+    "f": {
+      "lang": "sux",
+      "form": "ama",
+      "delim": "",
+      "gdl": [
+        {
+          "v": "ama",
+          "oid": "o0001286",
+          "gdl_sign": "|GA₂×AN|",
+          "utf8": "𒂼",
+          "key": "o0001286..ama",
+          "id": "Q000872.2.1.0"
+        }
+      ],
+      "cf": "ama",
+      "gw": "mother",
+      "sense": "mother",
+      "norm": "ama",
+      "pos": "N",
+      "epos": "N",
+      "base": "ama",
+      "morph": "N1=ama",
+      "morph2": "N1=STEM"
+    }
+  },
+  {
+    "ref": "Q000893.2.1",
+    "f": {
+      "lang": "sux",
+      "form": "ama",
+      "delim": "",
+      "gdl": [
+        {
+          "v": "ama",
+          "oid": "o0001286",
+          "gdl_sign": "|GA₂×AN|",
+          "utf8": "𒂼",
+          "key": "o0001286..ama",
+          "id": "Q000893.2.1.0"
+        }
+      ],
+      "cf": "ama",
+      "gw": "mother",
+      "sense": "mother",
+      "norm": "ama",
+      "pos": "N",
+      "epos": "N",
+      "base": "ama",
+      "morph": "N1=ama",
+      "morph2": "N1=STEM"
+    }
+  },
+  {
+    "ref": "Q000923.2.1",
+    "f": {
+      "lang": "sux",
+      "form": "ama",
+      "delim": "",
+      "gdl": [
+        {
+          "v": "ama",
+          "oid": "o0001286",
+          "gdl_sign": "|GA₂×AN|",
+          "utf8": "𒂼",
+          "key": "o0001286..ama",
+          "id": "Q000923.2.1.0"
+        }
+      ],
+      "cf": "ama",
+      "gw": "mother",
+      "sense": "mother",
+      "norm": "ama",
+      "pos": "N",
+      "epos": "N",
+      "base": "ama",
+      "morph": "N1=ama",
+      "morph2": "N1=STEM"
+    }
+  },
+  {
+    "ref": "Q000923.5.1",
+    "f": {
+      "lang": "sux",
+      "form": "ama",
+      "delim": "",
+      "gdl": [
+        {
+          "v": "ama",
+          "oid": "o0001286",
+          "gdl_sign": "|GA₂×AN|",
+          "utf8": "𒂼",
+          "key": "o0001286..ama",
+          "id": "Q000923.5.1.0"
+        }
+      ],
+      "cf": "ama",
+      "gw": "mother",
+      "sense": "mother",
+      "norm": "ama",
+      "pos": "N",
+      "epos": "N",
+      "base": "ama",
+      "morph": "N1=ama",
+      "morph2": "N1=STEM"
+    }
+  },
+  {
+    "ref": "Q000959.8.1",
+    "f": {
+      "lang": "sux",
+      "form": "ad-da-na-še₃",
+      "gdl": [
+        {
+          "v": "ad",
+          "oid": "o0000092",
+          "gdl_sign": "AD",
+          "utf8": "𒀜",
+          "key": "o0000092..ad",
+          "id": "Q000959.8.1.0",
+          "breakStart": "1",
+          "o": "]",
+          "break": "missing",
+          "breakEnd": "Q000959.8.1.0",
+          "delim": "-"
+        },
+        {
+          "v": "da",
+          "oid": "o0000132",
+          "gdl_sign": "DA",
+          "utf8": "𒁕",
+          "key": "o0000132..da",
+          "id": "Q000959.8.1.1",
+          "break": "damaged",
+          "ho": "1",
+          "delim": "-",
+          "hc": "1"
+        },
+        {
+          "v": "na",
+          "oid": "o0000469",
+          "gdl_sign": "NA",
+          "utf8": "𒈾",
+          "key": "o0000469..na",
+          "id": "Q000959.8.1.2",
+          "delim": "-"
+        },
+        {
+          "v": "še₃",
+          "oid": "o0000178",
+          "gdl_sign": "EŠ₂",
+          "utf8": "𒂠",
+          "key": "o0000178..še₃",
+          "id": "Q000959.8.1.3"
+        }
+      ],
+      "cf": "adda",
+      "gw": "father",
+      "sense": "father",
+      "norm": "adda.ani.ak.še",
+      "pos": "N",
+      "epos": "N",
+      "base": "ad-da",
+      "morph": "N1=adda.N3=ani.N5=ak.N5=še",
+      "morph2": "N1=STEM.N3=3-SG-H-POSS.N5=GEN.N5=TERM"
+    }
+  },
+  {
+    "ref": "Q000985.21.1",
+    "f": {
+      "lang": "sux",
+      "form": "ama",
+      "delim": "",
+      "gdl": [
+        {
+          "v": "ama",
+          "oid": "o0001286",
+          "gdl_sign": "|GA₂×AN|",
+          "utf8": "𒂼",
+          "key": "o0001286..ama",
+          "id": "Q000985.21.1.0"
+        }
+      ],
+      "cf": "ama",
+      "gw": "mother",
+      "sense": "mother",
+      "norm": "ama",
+      "pos": "N",
+      "epos": "N",
+      "base": "ama",
+      "morph": "N1=ama",
+      "morph2": "N1=STEM"
+    }
+  },
+  {
+    "ref": "Q000999.5.1",
+    "f": {
+      "lang": "sux",
+      "form": "ad-da-ni-ir",
+      "gdl": [
+        {
+          "v": "ad",
+          "oid": "o0000092",
+          "gdl_sign": "AD",
+          "utf8": "𒀜",
+          "key": "o0000092..ad",
+          "id": "Q000999.5.1.0",
+          "delim": "-"
+        },
+        {
+          "v": "da",
+          "oid": "o0000132",
+          "gdl_sign": "DA",
+          "utf8": "𒁕",
+          "key": "o0000132..da",
+          "id": "Q000999.5.1.1",
+          "delim": "-"
+        },
+        {
+          "v": "ni",
+          "oid": "o0000479",
+          "gdl_sign": "NI",
+          "utf8": "𒉌",
+          "key": "o0000479..ni",
+          "id": "Q000999.5.1.2",
+          "delim": "-"
+        },
+        {
+          "v": "ir",
+          "oid": "o0000257",
+          "gdl_sign": "IR",
+          "utf8": "𒅕",
+          "key": "o0000257..ir",
+          "id": "Q000999.5.1.3"
+        }
+      ],
+      "cf": "adda",
+      "gw": "father",
+      "sense": "father",
+      "norm": "adda.ani.ra",
+      "pos": "N",
+      "epos": "N",
+      "base": "ad-da",
+      "morph": "N1=adda.N3=ani.N5=ra",
+      "morph2": "N1=STEM.N3=3-SG-H-POSS.N5=DAT-H"
+    }
+  },
+  {
+    "ref": "Q001000.5.1",
+    "f": {
+      "lang": "sux",
+      "form": "ad-da-ni-ir",
+      "gdl": [
+        {
+          "v": "ad",
+          "oid": "o0000092",
+          "gdl_sign": "AD",
+          "utf8": "𒀜",
+          "key": "o0000092..ad",
+          "id": "Q001000.5.1.0",
+          "delim": "-"
+        },
+        {
+          "v": "da",
+          "oid": "o0000132",
+          "gdl_sign": "DA",
+          "utf8": "𒁕",
+          "key": "o0000132..da",
+          "id": "Q001000.5.1.1",
+          "delim": "-"
+        },
+        {
+          "v": "ni",
+          "oid": "o0000479",
+          "gdl_sign": "NI",
+          "utf8": "𒉌",
+          "key": "o0000479..ni",
+          "id": "Q001000.5.1.2",
+          "delim": "-"
+        },
+        {
+          "v": "ir",
+          "oid": "o0000257",
+          "gdl_sign": "IR",
+          "utf8": "𒅕",
+          "key": "o0000257..ir",
+          "id": "Q001000.5.1.3"
+        }
+      ],
+      "cf": "adda",
+      "gw": "father",
+      "sense": "father",
+      "norm": "adda.ani.ra",
+      "pos": "N",
+      "epos": "N",
+      "base": "ad-da",
+      "morph": "N1=adda.N3=ani.N5=ra",
+      "morph2": "N1=STEM.N3=3-SG-H-POSS.N5=DAT-H"
+    }
+  },
+  {
+    "ref": "Q001056.318.1",
+    "f": {
+      "lang": "sux",
+      "form": "ama-ŋu₁₀",
+      "gdl": [
+        {
+          "v": "ama",
+          "oid": "o0001286",
+          "gdl_sign": "|GA₂×AN|",
+          "utf8": "𒂼",
+          "key": "o0001286..ama",
+          "id": "Q001056.318.1.0",
+          "break": "damaged",
+          "ho": "1",
+          "delim": "-",
+          "hc": "1"
+        },
+        {
+          "v": "ŋu₁₀",
+          "oid": "o0000457",
+          "gdl_sign": "MU",
+          "utf8": "𒈬",
+          "key": "o0000457..ŋu₁₀",
+          "id": "Q001056.318.1.1",
+          "breakStart": "1",
+          "o": "]",
+          "break": "missing",
+          "breakEnd": "Q001056.318.1.1"
+        }
+      ],
+      "cf": "ama",
+      "gw": "mother",
+      "sense": "mother",
+      "norm": "ama.ŋu.ø",
+      "pos": "N",
+      "epos": "N",
+      "base": "ama",
+      "morph": "N1=ama.N3=ŋu.N5=ø",
+      "morph2": "N1=STEM.N3=1-SG-POSS.N5=ABS"
+    }
+  },
+  {
+    "ref": "Q001083.32.2",
+    "f": {
+      "lang": "sux",
+      "form": "ama-ni",
+      "gdl": [
+        {
+          "v": "ama",
+          "oid": "o0001286",
+          "gdl_sign": "|GA₂×AN|",
+          "utf8": "𒂼",
+          "key": "o0001286..ama",
+          "id": "Q001083.32.2.0",
+          "delim": "-"
+        },
+        {
+          "v": "ni",
+          "oid": "o0000479",
+          "gdl_sign": "NI",
+          "utf8": "𒉌",
+          "key": "o0000479..ni",
+          "id": "Q001083.32.2.1"
+        }
+      ],
+      "cf": "ama",
+      "gw": "mother",
+      "sense": "mother",
+      "norm": "ama.ani",
+      "pos": "N",
+      "epos": "N",
+      "base": "ama",
+      "morph": "N1=ama.N3=ani",
+      "morph2": "N1=STEM.N3=3-SG-H-POSS"
+    }
+  },
+  {
+    "ref": "Q001099.2.1",
+    "f": {
+      "lang": "sux",
+      "form": "ama",
+      "delim": "",
+      "gdl": [
+        {
+          "v": "ama",
+          "oid": "o0001286",
+          "gdl_sign": "|GA₂×AN|",
+          "utf8": "𒂼",
+          "key": "o0001286..ama",
+          "id": "Q001099.2.1.0"
+        }
+      ],
+      "cf": "ama",
+      "gw": "mother",
+      "sense": "mother",
+      "norm": "ama",
+      "pos": "N",
+      "epos": "N",
+      "base": "ama",
+      "morph": "N1=ama",
+      "morph2": "N1=STEM"
+    }
+  },
+  {
+    "ref": "Q001108.42.1",
+    "f": {
+      "lang": "sux",
+      "form": "ama",
+      "delim": "",
+      "gdl": [
+        {
+          "v": "ama",
+          "oid": "o0001286",
+          "gdl_sign": "|GA₂×AN|",
+          "utf8": "𒂼",
+          "key": "o0001286..ama",
+          "id": "Q001108.42.1.0",
+          "break": "damaged",
+          "ho": "1"
+        }
+      ],
+      "cf": "ama",
+      "gw": "mother",
+      "sense": "mother",
+      "norm": "ama",
+      "pos": "N",
+      "epos": "N",
+      "base": "ama",
+      "morph": "N1=ama",
+      "morph2": "N1=STEM"
+    }
+  },
+  {
+    "ref": "Q001108.43.2",
+    "f": {
+      "lang": "sux",
+      "form": "ama",
+      "delim": "",
+      "gdl": [
+        {
+          "v": "ama",
+          "oid": "o0001286",
+          "gdl_sign": "|GA₂×AN|",
+          "utf8": "𒂼",
+          "key": "o0001286..ama",
+          "id": "Q001108.43.2.0",
+          "break": "damaged"
+        }
+      ],
+      "cf": "ama",
+      "gw": "mother",
+      "sense": "mother",
+      "norm": "ama.ra",
+      "pos": "N",
+      "epos": "N",
+      "base": "ama",
+      "morph": "N1=ama.N5=ra",
+      "morph2": "N1=STEM.N5=L2-H"
+    }
+  },
+  {
+    "ref": "Q001117.32.1",
+    "f": {
+      "lang": "sux",
+      "form": "ama",
+      "delim": "",
+      "gdl": [
+        {
+          "v": "ama",
+          "oid": "o0001286",
+          "gdl_sign": "|GA₂×AN|",
+          "utf8": "𒂼",
+          "key": "o0001286..ama",
+          "id": "Q001117.32.1.0"
+        }
+      ],
+      "cf": "ama",
+      "gw": "mother",
+      "sense": "mother",
+      "norm": "ama.ø",
+      "pos": "N",
+      "epos": "N",
+      "base": "ama",
+      "morph": "N1=ama.N5=ø",
+      "morph2": "N1=STEM.N5=ABS"
+    }
+  },
+  {
+    "ref": "Q001117.33.2",
+    "f": {
+      "lang": "sux",
+      "form": "ama",
+      "delim": "",
+      "gdl": [
+        {
+          "v": "ama",
+          "oid": "o0001286",
+          "gdl_sign": "|GA₂×AN|",
+          "utf8": "𒂼",
+          "key": "o0001286..ama",
+          "id": "Q001117.33.2.0"
+        }
+      ],
+      "cf": "ama",
+      "gw": "mother",
+      "sense": "mother",
+      "norm": "ama.ra",
+      "pos": "N",
+      "epos": "N",
+      "base": "ama",
+      "morph": "N1=ama.N5=ra",
+      "morph2": "N1=STEM.N5=L2-H"
+    }
+  },
+  {
+    "ref": "Q001123.74.2",
+    "f": {
+      "lang": "sux",
+      "form": "ama",
+      "delim": "",
+      "gdl": [
+        {
+          "v": "ama",
+          "oid": "o0001286",
+          "gdl_sign": "|GA₂×AN|",
+          "utf8": "𒂼",
+          "key": "o0001286..ama",
+          "id": "Q001123.74.2.0"
+        }
+      ],
+      "cf": "ama",
+      "gw": "mother",
+      "sense": "mother",
+      "norm": "ama",
+      "pos": "N",
+      "epos": "N",
+      "base": "ama",
+      "morph": "N1=ama",
+      "morph2": "N1=STEM"
+    }
+  },
+  {
+    "ref": "Q001124.89.2",
+    "f": {
+      "lang": "sux",
+      "form": "ama",
+      "delim": "",
+      "gdl": [
+        {
+          "v": "ama",
+          "oid": "o0001286",
+          "gdl_sign": "|GA₂×AN|",
+          "utf8": "𒂼",
+          "key": "o0001286..ama",
+          "id": "Q001124.89.2.0"
+        }
+      ],
+      "cf": "ama",
+      "gw": "mother",
+      "sense": "mother",
+      "norm": "ama",
+      "pos": "N",
+      "epos": "N",
+      "base": "ama",
+      "morph": "N1=ama",
+      "morph2": "N1=STEM"
+    }
+  },
+  {
+    "ref": "Q001124.270.2",
+    "f": {
+      "lang": "sux",
+      "form": "ama",
+      "delim": "",
+      "gdl": [
+        {
+          "v": "ama",
+          "oid": "o0001286",
+          "gdl_sign": "|GA₂×AN|",
+          "utf8": "𒂼",
+          "key": "o0001286..ama",
+          "id": "Q001124.270.2.0"
+        }
+      ],
+      "cf": "ama",
+      "gw": "mother",
+      "sense": "mother",
+      "norm": "ama",
+      "pos": "N",
+      "epos": "N",
+      "base": "ama",
+      "morph": "N1=ama",
+      "morph2": "N1=STEM"
+    }
+  },
+  {
+    "ref": "Q001157.1.2",
+    "f": {
+      "lang": "sux",
+      "form": "ama",
+      "delim": "",
+      "gdl": [
+        {
+          "v": "ama",
+          "oid": "o0001286",
+          "gdl_sign": "|GA₂×AN|",
+          "utf8": "𒂼",
+          "key": "o0001286..ama",
+          "id": "Q001157.1.2.0"
+        }
+      ],
+      "cf": "ama",
+      "gw": "mother",
+      "sense": "mother",
+      "norm": "ama",
+      "pos": "N",
+      "epos": "N",
+      "base": "ama",
+      "morph": "N1=ama",
+      "morph2": "N1=STEM"
+    }
+  },
+  {
+    "ref": "Q001380.12.1",
+    "f": {
+      "lang": "sux",
+      "form": "ama",
+      "delim": "",
+      "gdl": [
+        {
+          "v": "ama",
+          "oid": "o0001286",
+          "gdl_sign": "|GA₂×AN|",
+          "utf8": "𒂼",
+          "key": "o0001286..ama",
+          "id": "Q001380.12.1.0"
+        }
+      ],
+      "cf": "ama",
+      "gw": "mother",
+      "sense": "mother",
+      "norm": "ama",
+      "pos": "N",
+      "epos": "N",
+      "base": "ama",
+      "morph": "N1=ama",
+      "morph2": "N1=STEM"
+    }
+  },
+  {
+    "ref": "Q001383.3.1",
+    "f": {
+      "lang": "sux",
+      "form": "ad-da",
+      "gdl": [
+        {
+          "v": "ad",
+          "oid": "o0000092",
+          "gdl_sign": "AD",
+          "utf8": "𒀜",
+          "key": "o0000092..ad",
+          "id": "Q001383.3.1.0",
+          "delim": "-"
+        },
+        {
+          "v": "da",
+          "oid": "o0000132",
+          "gdl_sign": "DA",
+          "utf8": "𒁕",
+          "key": "o0000132..da",
+          "id": "Q001383.3.1.1"
+        }
+      ],
+      "cf": "adda",
+      "gw": "father",
+      "sense": "father",
+      "norm": "adda",
+      "pos": "N",
+      "epos": "N",
+      "base": "ad-da",
+      "morph": "N1=adda",
+      "morph2": "N1=STEM"
+    }
+  },
+  {
+    "ref": "Q001383.5.2",
+    "f": {
+      "lang": "sux",
+      "form": "ama",
+      "gdl": [
+        {
+          "v": "ama",
+          "oid": "o0001286",
+          "gdl_sign": "|GA₂×AN|",
+          "utf8": "𒂼",
+          "key": "o0001286..ama",
+          "id": "Q001383.5.2.0"
+        }
+      ],
+      "cf": "ama",
+      "gw": "mother",
+      "sense": "mother",
+      "norm": "ama",
+      "pos": "N",
+      "epos": "N",
+      "base": "ama",
+      "morph": "N1=ama",
+      "morph2": "N1=STEM"
+    }
+  },
+  {
+    "ref": "Q001446.2.1",
+    "f": {
+      "lang": "sux",
+      "form": "ama",
+      "delim": "",
+      "gdl": [
+        {
+          "v": "ama",
+          "oid": "o0001286",
+          "gdl_sign": "|GA₂×AN|",
+          "utf8": "𒂼",
+          "key": "o0001286..ama",
+          "id": "Q001446.2.1.0"
+        }
+      ],
+      "cf": "ama",
+      "gw": "mother",
+      "sense": "mother",
+      "norm": "ama",
+      "pos": "N",
+      "epos": "N",
+      "base": "ama",
+      "morph": "N1=ama",
+      "morph2": "N1=STEM"
+    }
+  },
+  {
+    "ref": "Q001449.9.1",
+    "f": {
+      "lang": "sux",
+      "form": "ama-ne₂",
+      "gdl": [
+        {
+          "v": "ama",
+          "oid": "o0001286",
+          "gdl_sign": "|GA₂×AN|",
+          "utf8": "𒂼",
+          "key": "o0001286..ama",
+          "id": "Q001449.9.1.0",
+          "delim": "-"
+        },
+        {
+          "v": "ne₂",
+          "oid": "o0000479",
+          "gdl_sign": "NI",
+          "utf8": "𒉌",
+          "key": "o0000479..ne₂",
+          "id": "Q001449.9.1.1"
+        }
+      ],
+      "cf": "ama",
+      "gw": "mother",
+      "sense": "mother",
+      "norm": "ama.ani.e",
+      "pos": "N",
+      "epos": "N",
+      "base": "ama",
+      "morph": "N1=ama.N3=ani.N5=e",
+      "morph2": "N1=STEM.N3=3-SG-H-POSS.N5=ERG"
+    }
+  },
+  {
+    "ref": "Q001466.28.2",
+    "f": {
+      "lang": "sux",
+      "form": "ama",
+      "delim": "",
+      "gdl": [
+        {
+          "v": "ama",
+          "oid": "o0001286",
+          "gdl_sign": "|GA₂×AN|",
+          "utf8": "𒂼",
+          "key": "o0001286..ama",
+          "id": "Q001466.28.2.0"
+        }
+      ],
+      "cf": "ama",
+      "gw": "mother",
+      "sense": "mother",
+      "norm": "ama",
+      "pos": "N",
+      "epos": "N",
+      "base": "ama",
+      "morph": "N1=ama",
+      "morph2": "N1=STEM"
+    }
+  },
+  {
+    "ref": "Q001477.2.1",
+    "f": {
+      "lang": "sux",
+      "form": "ama",
+      "delim": "",
+      "gdl": [
+        {
+          "v": "ama",
+          "oid": "o0001286",
+          "gdl_sign": "|GA₂×AN|",
+          "utf8": "𒂼",
+          "key": "o0001286..ama",
+          "id": "Q001477.2.1.0"
+        }
+      ],
+      "cf": "ama",
+      "gw": "mother",
+      "sense": "mother",
+      "norm": "ama",
+      "pos": "N",
+      "epos": "N",
+      "base": "ama",
+      "morph": "N1=ama",
+      "morph2": "N1=STEM"
+    }
+  },
+  {
+    "ref": "Q001479.2.1",
+    "f": {
+      "lang": "sux",
+      "form": "ama",
+      "delim": "",
+      "gdl": [
+        {
+          "v": "ama",
+          "oid": "o0001286",
+          "gdl_sign": "|GA₂×AN|",
+          "utf8": "𒂼",
+          "key": "o0001286..ama",
+          "id": "Q001479.2.1.0",
+          "breakStart": "1",
+          "o": "]",
+          "break": "missing",
+          "breakEnd": "Q001479.2.1.0"
+        }
+      ],
+      "cf": "ama",
+      "gw": "mother",
+      "sense": "mother",
+      "norm": "ama",
+      "pos": "N",
+      "epos": "N",
+      "base": "ama",
+      "morph": "N1=ama",
+      "morph2": "N1=STEM"
+    }
+  },
+  {
+    "ref": "Q001479.4.1",
+    "f": {
+      "lang": "sux",
+      "form": "ama",
+      "delim": "",
+      "gdl": [
+        {
+          "v": "ama",
+          "oid": "o0001286",
+          "gdl_sign": "|GA₂×AN|",
+          "utf8": "𒂼",
+          "key": "o0001286..ama",
+          "id": "Q001479.4.1.0"
+        }
+      ],
+      "cf": "ama",
+      "gw": "mother",
+      "sense": "mother",
+      "norm": "ama",
+      "pos": "N",
+      "epos": "N",
+      "base": "ama",
+      "morph": "N1=ama",
+      "morph2": "N1=STEM"
+    }
+  },
+  {
+    "ref": "Q001540.9.1",
+    "f": {
+      "lang": "sux",
+      "form": "ama",
+      "delim": "",
+      "gdl": [
+        {
+          "v": "ama",
+          "oid": "o0001286",
+          "gdl_sign": "|GA₂×AN|",
+          "utf8": "𒂼",
+          "key": "o0001286..ama",
+          "id": "Q001540.9.1.0"
+        }
+      ],
+      "cf": "ama",
+      "gw": "mother",
+      "sense": "mother",
+      "norm": "ama",
+      "pos": "N",
+      "epos": "N",
+      "base": "ama",
+      "morph": "N1=ama",
+      "morph2": "N1=STEM"
+    }
+  },
+  {
+    "ref": "Q001540.27.1",
+    "f": {
+      "lang": "sux",
+      "form": "ama",
+      "delim": "",
+      "gdl": [
+        {
+          "v": "ama",
+          "oid": "o0001286",
+          "gdl_sign": "|GA₂×AN|",
+          "utf8": "𒂼",
+          "key": "o0001286..ama",
+          "id": "Q001540.27.1.0"
+        }
+      ],
+      "cf": "ama",
+      "gw": "mother",
+      "sense": "mother",
+      "norm": "ama",
+      "pos": "N",
+      "epos": "N",
+      "base": "ama",
+      "morph": "N1=ama",
+      "morph2": "N1=STEM"
+    }
+  },
+  {
+    "ref": "Q001541.66.1",
+    "f": {
+      "lang": "sux",
+      "form": "ama",
+      "delim": "",
+      "gdl": [
+        {
+          "v": "ama",
+          "oid": "o0001286",
+          "gdl_sign": "|GA₂×AN|",
+          "utf8": "𒂼",
+          "key": "o0001286..ama",
+          "id": "Q001541.66.1.0"
+        }
+      ],
+      "cf": "ama",
+      "gw": "mother",
+      "sense": "mother",
+      "norm": "ama.e",
+      "pos": "N",
+      "epos": "N",
+      "base": "ama",
+      "morph": "N1=ama.N5=e",
+      "morph2": "N1=STEM.N5=ERG"
+    }
+  },
+  {
+    "ref": "Q001541.324.1",
+    "f": {
+      "lang": "sux",
+      "form": "ama",
+      "delim": "",
+      "gdl": [
+        {
+          "v": "ama",
+          "oid": "o0001286",
+          "gdl_sign": "|GA₂×AN|",
+          "utf8": "𒂼",
+          "key": "o0001286..ama",
+          "id": "Q001541.324.1.0"
+        }
+      ],
+      "cf": "ama",
+      "gw": "mother",
+      "sense": "mother",
+      "norm": "ama",
+      "pos": "N",
+      "epos": "N",
+      "base": "ama",
+      "morph": "N1=ama",
+      "morph2": "N1=STEM"
+    }
+  },
+  {
+    "ref": "Q001545.6.1",
+    "f": {
+      "lang": "sux",
+      "form": "ama",
+      "delim": "",
+      "gdl": [
+        {
+          "v": "ama",
+          "oid": "o0001286",
+          "gdl_sign": "|GA₂×AN|",
+          "utf8": "𒂼",
+          "key": "o0001286..ama",
+          "id": "Q001545.6.1.0"
+        }
+      ],
+      "cf": "ama",
+      "gw": "mother",
+      "sense": "mother",
+      "norm": "ama",
+      "pos": "N",
+      "epos": "N",
+      "base": "ama",
+      "morph": "N1=ama",
+      "morph2": "N1=STEM"
+    }
+  },
+  {
+    "ref": "Q001547.19.1",
+    "f": {
+      "lang": "sux",
+      "form": "ama",
+      "delim": "",
+      "gdl": [
+        {
+          "v": "ama",
+          "oid": "o0001286",
+          "gdl_sign": "|GA₂×AN|",
+          "utf8": "𒂼",
+          "key": "o0001286..ama",
+          "id": "Q001547.19.1.0"
+        }
+      ],
+      "cf": "ama",
+      "gw": "mother",
+      "sense": "mother",
+      "norm": "ama",
+      "pos": "N",
+      "epos": "N",
+      "base": "ama",
+      "morph": "N1=ama",
+      "morph2": "N1=STEM"
+    }
+  },
+  {
+    "ref": "Q001557.9.1",
+    "f": {
+      "lang": "sux",
+      "form": "ama",
+      "delim": "",
+      "gdl": [
+        {
+          "v": "ama",
+          "oid": "o0001286",
+          "gdl_sign": "|GA₂×AN|",
+          "utf8": "𒂼",
+          "key": "o0001286..ama",
+          "id": "Q001557.9.1.0",
+          "breakStart": "1",
+          "o": "[",
+          "break": "missing"
+        }
+      ],
+      "cf": "ama",
+      "gw": "mother",
+      "sense": "mother",
+      "norm": "ama",
+      "pos": "N",
+      "epos": "N",
+      "base": "ama",
+      "morph": "N1=ama",
+      "morph2": "N1=STEM"
+    }
+  },
+  {
+    "ref": "Q001690.2.1",
+    "f": {
+      "lang": "sux",
+      "form": "ama-ni-ir",
+      "gdl": [
+        {
+          "v": "ama",
+          "oid": "o0001286",
+          "gdl_sign": "|GA₂×AN|",
+          "utf8": "𒂼",
+          "key": "o0001286..ama",
+          "id": "Q001690.2.1.0",
+          "delim": "-"
+        },
+        {
+          "v": "ni",
+          "oid": "o0000479",
+          "gdl_sign": "NI",
+          "utf8": "𒉌",
+          "key": "o0000479..ni",
+          "id": "Q001690.2.1.1",
+          "delim": "-"
+        },
+        {
+          "v": "ir",
+          "oid": "o0000257",
+          "gdl_sign": "IR",
+          "utf8": "𒅕",
+          "key": "o0000257..ir",
+          "id": "Q001690.2.1.2"
+        }
+      ],
+      "cf": "ama",
+      "gw": "mother",
+      "sense": "mother",
+      "norm": "ama.ani.ra",
+      "pos": "N",
+      "epos": "N",
+      "base": "ama",
+      "morph": "N1=ama.N3=ani.N5=ra",
+      "morph2": "N1=STEM.N3=3-SG-H-POSS.N5=DAT-H"
+    }
+  },
+  {
+    "ref": "Q001740.2.1",
+    "f": {
+      "lang": "sux",
+      "form": "ama",
+      "delim": "",
+      "gdl": [
+        {
+          "v": "ama",
+          "oid": "o0001286",
+          "gdl_sign": "|GA₂×AN|",
+          "utf8": "𒂼",
+          "key": "o0001286..ama",
+          "id": "Q001740.2.1.0",
+          "breakStart": "1",
+          "o": "[",
+          "break": "missing"
+        }
+      ],
+      "cf": "ama",
+      "gw": "mother",
+      "sense": "mother",
+      "norm": "ama",
+      "pos": "N",
+      "epos": "N",
+      "base": "ama",
+      "morph": "N1=ama",
+      "morph2": "N1=STEM"
+    }
+  },
+  {
+    "ref": "Q001829.19.1",
+    "f": {
+      "lang": "sux",
+      "form": "ama",
+      "delim": "",
+      "gdl": [
+        {
+          "v": "ama",
+          "oid": "o0001286",
+          "gdl_sign": "|GA₂×AN|",
+          "utf8": "𒂼",
+          "key": "o0001286..ama",
+          "id": "Q001829.19.1.0"
+        }
+      ],
+      "cf": "ama",
+      "gw": "mother",
+      "sense": "mother",
+      "norm": "ama",
+      "pos": "N",
+      "epos": "N",
+      "base": "ama",
+      "morph": "N1=ama",
+      "morph2": "N1=STEM"
+    }
+  },
+  {
+    "ref": "Q001964.11.1",
+    "f": {
+      "lang": "sux",
+      "form": "ama-ne₂",
+      "gdl": [
+        {
+          "v": "ama",
+          "oid": "o0001286",
+          "gdl_sign": "|GA₂×AN|",
+          "utf8": "𒂼",
+          "key": "o0001286..ama",
+          "id": "Q001964.11.1.0",
+          "delim": "-"
+        },
+        {
+          "v": "ne₂",
+          "oid": "o0000479",
+          "gdl_sign": "NI",
+          "utf8": "𒉌",
+          "key": "o0000479..ne₂",
+          "id": "Q001964.11.1.1"
+        }
+      ],
+      "cf": "ama",
+      "gw": "mother",
+      "sense": "mother",
+      "norm": "ama.ani.e",
+      "pos": "N",
+      "epos": "N",
+      "base": "ama",
+      "morph": "N1=ama.N3=ani.N5=e",
+      "morph2": "N1=STEM.N3=3-SG-H-POSS.N5=ERG"
+    }
+  },
+  {
+    "ref": "Q001965.4.1",
+    "f": {
+      "lang": "sux",
+      "form": "ama",
+      "delim": "",
+      "gdl": [
+        {
+          "v": "ama",
+          "oid": "o0001286",
+          "gdl_sign": "|GA₂×AN|",
+          "utf8": "𒂼",
+          "key": "o0001286..ama",
+          "id": "Q001965.4.1.0"
+        }
+      ],
+      "cf": "ama",
+      "gw": "mother",
+      "sense": "mother",
+      "norm": "ama",
+      "pos": "N",
+      "epos": "N",
+      "base": "ama",
+      "morph": "N1=ama",
+      "morph2": "N1=STEM"
+    }
+  },
+  {
+    "ref": "Q001987.5.1",
+    "f": {
+      "lang": "sux",
+      "form": "ama",
+      "delim": "",
+      "gdl": [
+        {
+          "v": "ama",
+          "oid": "o0001286",
+          "gdl_sign": "|GA₂×AN|",
+          "utf8": "𒂼",
+          "key": "o0001286..ama",
+          "id": "Q001987.5.1.0"
+        }
+      ],
+      "cf": "ama",
+      "gw": "mother",
+      "sense": "mother",
+      "norm": "ama",
+      "pos": "N",
+      "epos": "N",
+      "base": "ama",
+      "morph": "N1=ama",
+      "morph2": "N1=STEM"
+    }
+  },
+  {
+    "ref": "Q002134.7.1",
+    "f": {
+      "lang": "sux",
+      "form": "ad-da",
+      "delim": "",
+      "gdl": [
+        {
+          "v": "ad",
+          "oid": "o0000092",
+          "gdl_sign": "AD",
+          "utf8": "𒀜",
+          "key": "o0000092..ad",
+          "id": "Q002134.7.1.0",
+          "delim": "-"
+        },
+        {
+          "v": "da",
+          "oid": "o0000132",
+          "gdl_sign": "DA",
+          "utf8": "𒁕",
+          "key": "o0000132..da",
+          "id": "Q002134.7.1.1"
+        }
+      ],
+      "cf": "adda",
+      "gw": "father",
+      "sense": "father",
+      "norm": "adda",
+      "pos": "N",
+      "epos": "N",
+      "base": "ad-da",
+      "morph": "N1=adda",
+      "morph2": "N1=STEM"
+    }
+  },
+  {
+    "ref": "Q004253.27.2",
+    "f": {
+      "lang": "sux",
+      "form": "ama-na",
+      "gdl": [
+        {
+          "v": "ama",
+          "oid": "o0001286",
+          "gdl_sign": "|GA₂×AN|",
+          "utf8": "𒂼",
+          "key": "o0001286..ama",
+          "id": "Q004253.27.2.0",
+          "delim": "-"
+        },
+        {
+          "v": "na",
+          "oid": "o0000469",
+          "gdl_sign": "NA",
+          "utf8": "𒈾",
+          "key": "o0000469..na",
+          "id": "Q004253.27.2.1"
+        }
+      ],
+      "cf": "ama",
+      "gw": "mother",
+      "sense": "mother",
+      "norm": "ama.ani.ak",
+      "pos": "N",
+      "epos": "N",
+      "base": "ama",
+      "morph": "N1=ama.N3=ani.N5=ak",
+      "morph2": "N1=STEM.N3=3-SG-H-POSS.N5=GEN"
+    }
+  },
+  {
+    "ref": "Q004883.2.1",
+    "f": {
+      "lang": "sux",
+      "form": "ama",
+      "delim": "",
+      "gdl": [
+        {
+          "v": "ama",
+          "oid": "o0001286",
+          "gdl_sign": "|GA₂×AN|",
+          "utf8": "𒂼",
+          "key": "o0001286..ama",
+          "id": "Q004883.2.1.0",
+          "breakStart": "1",
+          "o": "]",
+          "queried": "1",
+          "break": "missing",
+          "breakEnd": "Q004883.2.1.0"
+        }
+      ],
+      "cf": "ama",
+      "gw": "mother",
+      "sense": "mother",
+      "norm": "ama",
+      "pos": "N",
+      "epos": "N",
+      "base": "ama",
+      "morph": "N1=ama",
+      "morph2": "N1=STEM"
+    }
+  },
+  {
+    "ref": "Q005285.2.1",
+    "f": {
+      "lang": "sux",
+      "form": "ama",
+      "delim": "",
+      "gdl": [
+        {
+          "v": "ama",
+          "oid": "o0001286",
+          "gdl_sign": "|GA₂×AN|",
+          "utf8": "𒂼",
+          "key": "o0001286..ama",
+          "id": "Q005285.2.1.0"
+        }
+      ],
+      "cf": "ama",
+      "gw": "mother",
+      "sense": "mother",
+      "norm": "ama",
+      "pos": "N",
+      "epos": "N",
+      "base": "ama",
+      "morph": "N1=ama",
+      "morph2": "N1=STEM"
+    }
+  },
+  {
+    "ref": "Q009241.10.1",
+    "f": {
+      "lang": "sux",
+      "form": "ama",
+      "delim": "",
+      "gdl": [
+        {
+          "v": "ama",
+          "oid": "o0001286",
+          "gdl_sign": "|GA₂×AN|",
+          "utf8": "𒂼",
+          "key": "o0001286..ama",
+          "id": "Q009241.10.1.0"
+        }
+      ],
+      "cf": "ama",
+      "gw": "mother",
+      "sense": "mother",
+      "norm": "ama",
+      "pos": "N",
+      "epos": "N",
+      "base": "ama",
+      "morph": "N1=ama",
+      "morph2": "N1=STEM"
+    }
+  }
+]

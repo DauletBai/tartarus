@@ -1,0 +1,20 @@
+[
+  {
+    "file": "lexical_P333168_oracc.html",
+    "url": "https://oracc.museum.upenn.edu/dcclt/signlists/P333168",
+    "returncode": 0,
+    "error": ""
+  },
+  {
+    "file": "lexical_P333168_card.html",
+    "url": "https://cdli.earth/artifacts/333168",
+    "returncode": 0,
+    "error": ""
+  },
+  {
+    "file": "lexical_P333168_lineart.jpg",
+    "url": "https://cdli.earth/dl/lineart/P333168_l.jpg",
+    "returncode": 56,
+    "error": "curl: (56) The requested URL returned error: 404\n"
+  }
+]

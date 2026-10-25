@@ -1,0 +1,31 @@
+{
+  "prior_metadata_records": 15,
+  "prior_period_counts": {
+    "Uruk III (ca. 3200-3000 BC)": 10,
+    "Uruk IV (ca. 3350-3200 BC)": 5
+  },
+  "prior_language_counts": {
+    "Undetermined": 15
+  },
+  "new_photo_files": 8,
+  "distinct_new_photo_hashes": 8,
+  "new_catalogue_periods": {
+    "Ur III (ca. 2100-2000 BC)": 8
+  },
+  "new_catalogue_languages": {
+    "Sumerian": 8
+  },
+  "physical_object_independence": "not inferred from photo file count",
+  "heldout_assessments": 12,
+  "heldout_status_counts": {
+    "partial_visual_candidate": 5,
+    "strict_visual_candidate": 5,
+    "unassessable": 1,
+    "not_observed": 1
+  },
+  "new_complex_templates": 2,
+  "control_patterns": 1,
+  "independently_recovered_sound_values": 0,
+  "individual_translations_opened": false,
+  "independent_historical_dates_established": false
+}

@@ -1,0 +1,13 @@
+{
+  "urls_in_api_order": [
+    "https://images.metmuseum.org/CRDImages/an/original/DP297593.jpg",
+    "https://images.metmuseum.org/CRDImages/an/original/DP297601.jpg",
+    "https://images.metmuseum.org/CRDImages/an/original/DP-211-744.jpg",
+    "https://images.metmuseum.org/CRDImages/an/original/DP293244.jpg"
+  ],
+  "selected": [
+    "https://images.metmuseum.org/CRDImages/an/original/DP297593.jpg",
+    "https://images.metmuseum.org/CRDImages/an/original/DP297601.jpg"
+  ],
+  "note": "First two distinct URLs; no content-based substitution."
+}

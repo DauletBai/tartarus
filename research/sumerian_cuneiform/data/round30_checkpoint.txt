@@ -1,0 +1,10 @@
+{
+  "status": "passed",
+  "witness_rows": 8,
+  "witness_objects": 2,
+  "source_hashes": 11,
+  "manifest_hashes": 32,
+  "local_links": 13,
+  "complete_inscription_lines": 36,
+  "book_hashes": "unchanged"
+}

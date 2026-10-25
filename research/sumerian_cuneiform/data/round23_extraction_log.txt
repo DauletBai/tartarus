@@ -1,0 +1,14 @@
+extracted rows 47 pairs 27 formula matches 12 of 12 damage 3
+o 10 saŋ maš₂ saŋ lu₂-še₃ ba-an-⸢šum₂⸣ || qaq-qa-du u₂-ri-⸢ṣa⸣ ana qaq-qa-du LU₂ i-ta-⸢din⸣
+o 11 gu₂ maš₂ gu₂ lu₂-⸢še₃⸣ ba-an-šum₂ || ki-šad u₂-ri-ṣa ana ki-šad LU₂ i-ta-din
+o 12 gaba maš₂ gaba lu₂-še₃ ba-an-šum₂ || ir-ti u₂-ri-ṣa ana ir-ti LU₂ i-ta-din
+o 13 a₂ zid-da maš₂ a₂ zid-da lu₂-še₃ ba-an-šum₂ || i-mit-tu₂ u₂-⸢ri-ṣa⸣ ana ⸢i⸣-[mit]-tu₂ LU₂ i-ta-din
+o 14 a₂ gab₂-⸢bu⸣ maš₂ a₂ ⸢gab₂⸣-[bu] lu₂-⸢še₃⸣ ba-an-šum₂ || šu-mel u₂-ri-ṣa ana šu-mel LU₂ i-ta-din
+o 15 mud₂ maš₂ mud₂ lu₂-še₃ ba-an-šum₂ || da-me u₂-ri-ṣa ana da-me LU₂ i-ta-din
+r 1 lipiš maš₂ lipiš lu₂-še₃ ba-an-šum₂ || lib₃-bi u₂-ri-ṣi ana lib₃-bi LU₂ i-ta-din
+r 2 ti-ti maš₂ ti-ti lu₂-še₃ ba-an-šum₂ || ṣe-li u₂-ri-ṣi ana ṣe-li LU₂ i-ta-din
+r 3 gu₂-mur₇ maš₂ gu₂-mur₇ lu₂-še₃ ba-an-šum₂ || e-ṣe-en-ṣe-ri u₂-ri-ṣi ana <e>-ṣe-en-ṣe-ri LU₂ i-ta-din
+r 4 ur₂ maš₂ ur₂ lu₂-še₃ ba-an-šum₂ || pe-en u₂-ri-ṣi ana pe-en LU₂ i-ta-din
+r 5 ur₂-kun maš₂ ur₂-kun lu₂-še₃ ba-an-šum₂ || ra-pa-aš₂-ti u₂-ri-ṣi ana ra-pa-aš₂-ti LU₂ i-ta-din
+r 6 ŋeš₂-ge-en-ge-na maš₂ ŋeš₂-ge-en-ge-na lu₂-še₃ ba-an-šum₂ || bi-na-at u₂-ri-ṣi ana bi-na-at LU₂ i-ta-din
+lexical rows extracted 4

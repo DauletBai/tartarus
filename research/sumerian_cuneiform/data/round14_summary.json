@@ -1,0 +1,55 @@
+{
+  "date": "2026-10-25",
+  "analysed_objects": 3,
+  "selected_image_assets": 6,
+  "photographic_views": 5,
+  "drawing_assets_separate": 1,
+  "viewing_regions": 29,
+  "blank_control_regions": 2,
+  "candidate_groups": 60,
+  "groups_by_family": {
+    "R1": 19,
+    "V1": 7,
+    "B1": 7,
+    "A1": 1,
+    "X": 18,
+    "SEAL": 1,
+    "F1": 2,
+    "W1": 4,
+    "W2": 1
+  },
+  "verified_target_editorial_cells": 26,
+  "identity_mismatches_retained": [
+    "Met327383 is1988.380.5, not1988.433.1",
+    "P005389 andP005391 do not identify the comparison accession numbers"
+  ],
+  "heldout_visual_prediction_results": [
+    {
+      "object": 329081,
+      "family": "B1",
+      "result": "present",
+      "basis": "four branch-like candidates on selected photograph; exact canonical identity unresolved"
+    },
+    {
+      "object": 329081,
+      "family": "R1",
+      "result": "present",
+      "basis": "two separately paired round-impression bundles"
+    },
+    {
+      "object": 327385,
+      "family": "B1",
+      "result": "not_observed",
+      "basis": "no axis-with-oblique-branches form observed on either selected photographic face; not a language-wide absence claim"
+    },
+    {
+      "object": 327385,
+      "family": "R1",
+      "result": "present",
+      "basis": "deep round impressions on both faces"
+    }
+  ],
+  "independent_complete_translations": 0,
+  "alphabet_size": null,
+  "book_modified": false
+}

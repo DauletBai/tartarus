@@ -1,0 +1,20 @@
+[
+  {
+    "file": "Annus2024.html",
+    "url": "https://www.mdpi.com/2077-1444/15/9/1024",
+    "returncode": 56,
+    "error": "curl: (56) The requested URL returned error: 403\n"
+  },
+  {
+    "file": "Annus2024.pdf",
+    "url": "https://www.mdpi.com/2077-1444/15/9/1024/pdf",
+    "returncode": 56,
+    "error": "curl: (56) The requested URL returned error: 403\n"
+  },
+  {
+    "file": "Annus2024_mirror.pdf",
+    "url": "https://www.wisdomlib.org/uploads/journals/mdpi-relig/2024-volume-15-issue-9--2077-1444-15-9-1024-.pdf",
+    "returncode": 0,
+    "error": ""
+  }
+]

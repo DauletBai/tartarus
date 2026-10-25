@@ -1,0 +1,4 @@
+﻿identifier,expected,observed,action
+Met327383,1988.433.1,1988.380.5,wrong object retained as identity-screen failure; no image analysed
+P005389,possible accession.1 counterpart,"museum numberunknown / MSVO3,78",excluded from target comparison after identity check
+P005391,possible accession.3 counterpart,"Berlin055 / MSVO3,80",excluded from target comparison after identity check

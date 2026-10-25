@@ -1,0 +1,6 @@
+﻿pid,museum,catalogue_period,numbered_lines,target,contains_Ninisina,card,photo,photo_inspected,source_url
+P216745,BM 109930,Old Akkadian (ca. 2340-2200 BC),11,10. gab-ba a bi2-in-gi,yes,round26_sources/LuUtu_P216745_card.html,round26_sources/LuUtu_BM109930_photo.jpg,True,https://cdli.earth/artifacts/216745
+P216746,BM 109931,Old Akkadian (ca. 2340-2200 BC),0,,unknown,round26_sources/LuUtu_P216746_card.html,round27_sources/BM109931_photo.jpg,True,https://cdli.earth/artifacts/216746
+P216747,YBC 2148,Old Akkadian (ca. 2340-2200 BC),13,10. gab-ba / 11. a bi2-in-ge-en6,no,round27_sources/P216747_card.html,,False,https://cdli.earth/artifacts/216747
+P201507,PTS 1501,Ur III (ca. 2100-2000 BC),11,10. gaba-ba-a bi2-in-zi,no,round27_sources/P201507_card.html,round27_sources/PTS1501_photo.jpg,True,https://cdli.earth/artifacts/201507
+P431422,PTS 1502,Ur III (ca. 2100-2000 BC),11,10. gaba-ba-a bi2-in-zi,no,round27_sources/P431422_card.html,round27_sources/PTS1502_photo.jpg,True,https://cdli.earth/artifacts/431422

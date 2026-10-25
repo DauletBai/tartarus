@@ -1,0 +1,32 @@
+[
+  {
+    "file": "K4996_photo.jpg",
+    "url": "https://www.ebl.lmu.de/api/fragments/K.4996/photo",
+    "returncode": 0,
+    "error": ""
+  },
+  {
+    "file": "C1_P338491_card.html",
+    "url": "https://cdli.earth/artifacts/338491",
+    "returncode": 0,
+    "error": ""
+  },
+  {
+    "file": "C1_oracc.html",
+    "url": "https://oracc.museum.upenn.edu/blms/P338491",
+    "returncode": 0,
+    "error": ""
+  },
+  {
+    "file": "C1_P338491_photo.jpg",
+    "url": "https://cdli.earth/dl/photo/P338491.jpg",
+    "returncode": 56,
+    "error": "curl: (56) The requested URL returned error: 404\n"
+  },
+  {
+    "file": "C1_P338491_lineart.jpg",
+    "url": "https://cdli.earth/dl/lineart/P338491_l.jpg",
+    "returncode": 0,
+    "error": ""
+  }
+]

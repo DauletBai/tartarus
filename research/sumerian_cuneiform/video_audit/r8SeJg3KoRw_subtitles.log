@@ -1,0 +1,20 @@
+[info] r8SeJg3KoRw: Downloading subtitles: ru-orig
+[info] r8SeJg3KoRw: Downloading 1 format(s): 399+251
+[info] Writing video subtitles to: research/sumerian_cuneiform/video_audit/r8SeJg3KoRw.ru-orig.json3
+[download] Destination: research/sumerian_cuneiform/video_audit/r8SeJg3KoRw.ru-orig.json3
+
+[download]    1.00KiB at  740.00KiB/s (00:00:00)
+[download]    3.00KiB at    1.29MiB/s (00:00:00)
+[download]    7.00KiB at    2.43MiB/s (00:00:00)
+[download]   15.00KiB at    1.17MiB/s (00:00:00)
+[download]   31.00KiB at  351.24KiB/s (00:00:00)
+[download]   63.00KiB at  439.29KiB/s (00:00:00)
+[download]  127.00KiB at  590.21KiB/s (00:00:00)
+[download]  255.00KiB at  884.13KiB/s (00:00:00)
+[download]  376.11KiB at    1.13MiB/s (00:00:00)
+[download] 100% of  376.11KiB in 00:00:00 at 618.96KiB/s
+WARNING: Your yt-dlp version (2026.03.17) is older than 90 days!
+         It is strongly recommended to always use the latest version.
+         You installed yt-dlp with pip or using the wheel from PyPi; Use that to update.
+         To suppress this warning, add --no-update to your command/config.
+WARNING: The extractor specified to use impersonation for this download, but no impersonate target is available. If you encounter errors, then see  https://github.com/yt-dlp/yt-dlp#impersonation  for information on installing the required dependencies

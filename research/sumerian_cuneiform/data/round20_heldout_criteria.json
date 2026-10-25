@@ -1,0 +1,57 @@
+{
+  "created_at": "2026-10-25T12:31:17.256851+05:00",
+  "heldout_ids": [
+    12,
+    13,
+    14,
+    15
+  ],
+  "heldout_pixels_opened": false,
+  "families": {
+    "G01": {
+      "strict": "Closed or nearly closed angular pointed outline facing screen-right AND discernible internal stroke configuration compatible with pilot. Shape break/unknown interior gives partial only.",
+      "partial": "Pointed outline without enough interior detail.",
+      "do_not_merge": "Rotation or mirror reversal not counted as strict identity."
+    },
+    "G02": {
+      "strict": "Upright single stroke with ONE clear short branch to screen-right, distinct from cell borders.",
+      "partial": "Branch number or border attribution unclear.",
+      "do_not_merge": "Two-branched constructions kept separate."
+    },
+    "G03": {
+      "strict": "Rounded closed outline with one roughly horizontal interior crossbar and no additional clear interior strokes.",
+      "partial": "Outline or bar incomplete, or bar rotated."
+    },
+    "G04": {
+      "strict": "Rounded contour with complex angular interior as pilot; generic round outline insufficient."
+    },
+    "G05": {
+      "strict": "Rounded contour with horizontal crossbar plus clear descending internal stroke."
+    },
+    "G06": {
+      "strict": "Small oval outline with multiple short parallel internal strokes clearly separate from border."
+    }
+  },
+  "layout_prediction": {
+    "hypothesis": "At least some records distinguish impressed-depression/short-stroke fields from complex marks in bounded regions. This is a spatial-functional hypothesis, not numerical or linguistic decoding.",
+    "positive": "At least two readable bounded regions on one heldout upper main view each show a deep depression next to a short parallel-stroke bundle and/or a distinct complex; relation repeats in the same region orientation.",
+    "uncertain": "Only one region or poor preservation; no forced negative.",
+    "negative": "Readable regions but no such repeated relation.",
+    "alternatives": [
+      "Record-field organization, perhaps quantity/item",
+      "Uniform running text with incidental spatial arrangement",
+      "Pictorial labels or mixed nonphonetic system; function unresolved"
+    ]
+  },
+  "matching_scale": [
+    "strict_visual_candidate",
+    "partial_visual_candidate",
+    "not_observed_in_visible_area",
+    "unassessable"
+  ],
+  "limits": [
+    "No probability sample or independent random test; catalogue neighbours may be related.",
+    "Strict candidate is not proof of same sound/meaning or canonical sign.",
+    "Do not tune criteria after heldout inspection."
+  ]
+}

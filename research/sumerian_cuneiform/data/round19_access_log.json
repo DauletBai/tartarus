@@ -1,0 +1,7 @@
+[
+  {
+    "url": "https://collectionapi.metmuseum.org/public/collection/v1/search?hasImages=true&q=cuneiform",
+    "status": "HTTP410, curl --fail; no candidate/response body acquired",
+    "consequence": "Fallback specified before CDLI image selection."
+  }
+]

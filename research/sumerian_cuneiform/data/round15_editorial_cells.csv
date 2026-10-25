@@ -1,0 +1,30 @@
+﻿artifact,surface,column,cell,editorial_sequence,quantity_prefix,is_quantity_entry,prefix_restored,prefix_uncertain,prefix_gap,proposed_counts
+P005371,obverse,1,1,"2(N34)# 3(N14) 1(N01) 1(N39~a) , GAL~a# TE SZE~a#",2(N34)# 3(N14) 1(N01) 1(N39~a),True,False,True,False,"{""N01"": 1, ""N14"": 3, ""N34"": 2, ""N39~a"": 1}"
+P005371,obverse,1,2,"[1(N34)] , KINGAL#",[1(N34)],True,True,False,False,"{""N34"": 1}"
+P005371,obverse,1,3,"1(N34)# , GAL~a SA~c",1(N34)#,True,False,True,False,"{""N34"": 1}"
+P005371,obverse,1,4,"2(N45)# , EN~c# SAL#",2(N45)#,True,False,True,False,"{""N45"": 2}"
+P005371,obverse,1,5,"[1(N45)] 2(N14)# , AB~a# TE#",[1(N45)] 2(N14)#,True,True,True,False,"{""N14"": 2, ""N45"": 1}"
+P005371,obverse,1,6,"1(N45)# 2(N14)# , KUR~a# TE#",1(N45)# 2(N14)#,True,False,True,False,"{""N14"": 2, ""N45"": 1}"
+P005371,obverse,2,1,"9(N14)# 2(N01)# , TE NIR~a",9(N14)# 2(N01)#,True,False,True,False,"{""N01"": 2, ""N14"": 9}"
+P005371,obverse,2,2,"9(N14) , |ZATU651xEN~a| TE#",9(N14),True,False,False,False,"{""N14"": 9}"
+P005371,obverse,2,3,"1(N45) 3(N14) , GAL~a |1(N58).BAD~a|",1(N45) 3(N14),True,False,False,False,"{""N14"": 3, ""N45"": 1}"
+P005371,obverse,2,4,"1(N45) 3(N14) 1(N01) 1(N39~a) , GAL~a SUKKAL",1(N45) 3(N14) 1(N01) 1(N39~a),True,False,False,False,"{""N01"": 1, ""N14"": 3, ""N39~a"": 1, ""N45"": 1}"
+P005371,obverse,2,5,", GIBIL SZE~a#",,False,False,False,False,{}
+P005371,obverse,3,1,"2(N45)# [...] , [...]",2(N45)# [...],True,True,True,True,"{""N45"": 2}"
+P005371,obverse,3,2,"5(N14) , AB~a# TE#",5(N14),True,False,False,False,"{""N14"": 5}"
+P005371,obverse,3,3,"2(N14) , KUR~a TE",2(N14),True,False,False,False,"{""N14"": 2}"
+P005371,obverse,3,4,", |U4x1(N57)|",,False,False,False,False,{}
+P005371,obverse,3,5,", SI4~f BA",,False,False,False,False,{}
+P005371,reverse,1,1,"7(N34) 2(N45) 8(N14) 4(N01) 2(N39~a) , LAGAB~b SZE~a KU~b1# SZIM~a SZAM2 BA",7(N34) 2(N45) 8(N14) 4(N01) 2(N39~a),True,False,False,False,"{""N01"": 4, ""N14"": 8, ""N34"": 7, ""N39~a"": 2, ""N45"": 2}"
+P005371,reverse,2,1,", SI4~f NI~a SA~c",,False,False,False,False,{}
+P005372,obverse,1,1,"2(N34) 3(N14) 1(N01) 1(N39~a) , GAL~a TE",2(N34) 3(N14) 1(N01) 1(N39~a),True,False,False,False,"{""N01"": 1, ""N14"": 3, ""N34"": 2, ""N39~a"": 1}"
+P005372,obverse,1,2,"2(N34) , KINGAL",2(N34),True,False,False,False,"{""N34"": 2}"
+P005372,obverse,1,3,"2(N45) , SAL EN~c",2(N45),True,False,False,False,"{""N45"": 2}"
+P005372,obverse,1,4,"1(N45) 3(N14) 1(N01) 1(N39~a) , NAM2 URU~a1",1(N45) 3(N14) 1(N01) 1(N39~a),True,False,False,False,"{""N01"": 1, ""N14"": 3, ""N39~a"": 1, ""N45"": 1}"
+P005372,obverse,2,1,"1(N45) 3(N14) 1(N01) 1(N39~a) , GAL~a SUKKAL",1(N45) 3(N14) 1(N01) 1(N39~a),True,False,False,False,"{""N01"": 1, ""N14"": 3, ""N39~a"": 1, ""N45"": 1}"
+P005372,obverse,2,2,"1(N45) 2(N14) , NIR~a TE",1(N45) 2(N14),True,False,False,False,"{""N14"": 2, ""N45"": 1}"
+P005372,obverse,2,3,"7(N14) , KUR~a TE",7(N14),True,False,False,False,"{""N14"": 7}"
+P005372,obverse,2,4,"6(N14) 3(N01) 3(N39~a) , ZAG~a GAL~a BARA3",6(N14) 3(N01) 3(N39~a),True,False,False,False,"{""N01"": 3, ""N14"": 6, ""N39~a"": 3}"
+P005372,obverse,2,5,",",,False,False,False,False,{}
+P005372,reverse,1,1,"6(N34) 1(N45) 5(N14) 1(N01) 1(N39~a) , SZE~a KU~b1 SZIM~a",6(N34) 1(N45) 5(N14) 1(N01) 1(N39~a),True,False,False,False,"{""N01"": 1, ""N14"": 5, ""N34"": 6, ""N39~a"": 1, ""N45"": 1}"
+P005372,reverse,2,1,", SI4~f NI~a SA~c",,False,False,False,False,{}

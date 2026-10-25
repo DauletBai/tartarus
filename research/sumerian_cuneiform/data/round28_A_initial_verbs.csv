@@ -1,0 +1,21 @@
+﻿qid,ref,form,signs,cf,sense,morph,before,after
+Q000377,Q000377.283.3,duru₅-e,A E,duru,"(to be) wet, irrigated, damp, fresh",NV2=duru.N5=e,ma-ši-tumu₃-da an-še₃ tumu,gu₃ ba-de₂ an-ta
+Q000377,Q000377.585.2,duru₅,A,duru,"(to be) wet, irrigated, damp, fresh",NV2=duru,an-še₃ mi-ni-ib₂-il₂ eren,ki {u₂}rib mu₂-a-am₃
+Q000377,Q000377.592.3,duru₅,A,duru,"(to be) wet, irrigated, damp, fresh",NV2=duru,nu₂-am₃ sa-tu-bi eren,ha-šu-ur₂-ra šu he₂-tag-ga-am₃
+Q000984,Q000984.32.3,a-ba-sumun,A BA TIL,sumun,"to be(come) old, dilapidated",V1=u.V5=ba.V12=sumun.V14=ø,im-da-ab-su₃-re₆ lu₂ e₂,u₃-un-du₃ mu-sar-ra-bi u₃
+Q001056,Q001056.54.2,a-tum₂,A DU,tum,"(to be) suitable for, worthy of someone/something (L2)",V2=aa.V5=b.V10=ø.V12=tum.V14=ø,e₂-an-na {d}inana eb-gal-ka-ka,mu mu-ne₂-še₂₁ {d}nin-hur-saŋ-ra
+Q001056,Q001056.89.2,a-tum₂,A DU,tum,"(to be) suitable for, worthy of someone/something (L2)",V2=aa.V5=b.V10=ø.V12=tum.V14=ø,e₂-an-na {d}inana eb-gal-ka-ka,mu mu-ne₂-pad₃ mu
+Q001056,Q001056.370.2,a-ku₅-re₆,A TAR DU,kud,cut,V2=a.V5=b.V10=ø.V12=kud.=V14=e,gub-gub-ba e₂-an-na-tum₂-me inim,lugal-ŋu₁₀ {d}en-ki-ra a-ba
+Q001056,Q001056.437.2,a-du₃,A KAK,du,"to hold, to keep in custody, to detain",V2=a.V5=b.V10=ø.V12=du.V14=ø,inim-da gur-da-am₆ ud,inim am₆-ŋal₂ ud-da
+Q001093,Q001093.35.4,a-dul₅,A TUG₂,dul,cover,V2=aa.V5=b.V10=ø.V12=dul.V14=ø.N5=ø,e₂ me-lem₄-bi kur-kur-ra,mu-na-du₃ {d}en-lil₂(E₂)-la e₂-ad-da
+Q001098,Q001098.39.4,a-dul₅,A TUG₂,dul,cover,V2=aa.V5=b.V10=ø.V12=dul.V14=ø.N5=ø,e₂ me-lem₄-bi kur-kur-ra,mu-na-du₃ en-mete-na lu₂
+Q001123,Q001123.70.2,a-ŋa₂-ŋa₂-a,A GA₂ GA₂ A,ŋar,"put, place, lay down",V2=a.V5=b.V10=ø.V12=ŋaŋa.V14=e.V15=SUB.N5=ak,sila₄ gaba-ka-ka kug,dumu lagaš{ki} saŋŋa
+Q001124,Q001124.178.2,a-ŋa₂-ŋa₂-da,A GA₂ GA₂ DA,ŋar,"put, place, lay down",V2=a.V5=b.V10=ø.V12=ŋaŋa.V13=ed.V14=ø.V15=SUB.N5=ak,sila₄ gaba-ka-ka kug,maškim-bi e-ta-šub dupsik
+Q001124,Q001124.279.3,a-sag₉-ga,A ŠA₆ GA,sag,(to be) good,V2=a.V10=n.V12=sag.V14=ø,mu-še₃-sa₁₀-sa₁₀ kug šag₄-ŋa₂,la₂-ma u₃-na-dug₄ ud-da
+Q001124,Q001124.293.3,a-sag₉-ga,A ŠA₆ GA,sag,(to be) good,V2=a.V10=n.V12=sag.V14=ø,mu-še₃-sa₁₀-sa₁₀ kug šag₄-ŋa₂,la₂-ma e₂-ŋu₁₀ šen-nam
+Q001128,Q001128.13.4,a-dul₅,A TUG₂,dul,cover,V2=aa.V5=b.V10=ø.V12=dul.V14=ø.N5=ø,e₂ me-lem₄-bi kur-kur-ra,mu-na-du₃ e₂-lungaₓ(|BI×GAR|) ŋeštin
+Q001129,Q001129.38.4,a-dul₅,A TUG₂,dul,cover,V2=aa.V5=b.V10=ø.V12=dul.V14=ø.N5=ø,e₂ me-lem₄-bi kur-kur-ra,mu-na-du₃ e₂-ŋidru {d}nin-ŋir₂-su-ka
+Q001397,Q001397.3.1,a-ab-sar,A AB SAR,sar,write,V2=aa.V5=b.V10=ø.V12=sar.V14=ø,ki-gal-ba igi lugal-zag-ge-si-še₃,
+Q001399,Q001399.3.1,a-ab-sar,A AB SAR,sar,write,V2=aa.V5=b.V10=ø.V12=sar.V14=ø,mu-sar-ra ki-gal-la,mu-sar-ra murgu lugal-zag-ge-si
+Q001415,Q001415.1.3,a-ab-sar,A AB SAR,sar,write,V2=aa.V5=b.V10=ø.V12=sar.V14=ø,mu-sar gab₂-ni-še₃,
+Q001466,Q001466.11.3,še₂₁-a,A,še,call,NV2=še.NV4='a,{d}nin-ŋir₂-su-ka-ke₄ mu dug₃,{d}ba-u₂-ke₄ ŋeštug₂ šum₂-ma

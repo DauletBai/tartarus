@@ -1,0 +1,1063 @@
+Robert K. Englund, “Proto-Cuneiform Account-Books and Journals,” in Michael
+Hudson and Cornelia Wunsch, eds., Creating Economic Order: Record-keeping,
+Standardization and the Development of Accounting in the Ancient Near East (CDL
+Press: Bethesda, Maryland, USA) pp. 23-46.
+
+
+                                      1.
+
+
+     Proto-Cuneiform Account-Books and Journals
+
+                             Robert K. Englund
+                   University of California, Los Angeles
+
+Historians of ancient Babylonia are confronted with a myriad of hurdles
+in their work. First and foremost is the fact that they deal with a long-
+dead civilization, so that in the absence of informants they must inter-
+pret the material remains from Near Eastern excavations as best they
+can, often with very limited tools.
+     More daunting is the task for those who want to make sense of the
+social system that produced the documents from the Late Uruk period.
+Associates of the Berlin research project Archaische Texte aus Uruk,1 to
+whom I owe most of my understanding of the earliest written records
+in Mesopotamia, are often forced to oversimplify archaeological and
+epigraphic data from Uruk and the other late fourth millennium BC
+settlements of the Near East, and in a sense to falsify into apparent
+meaningfulness what remains a disturbingly unclear picture. We may
+apply to our data the models developed in the social, above all ethno-
+graphic sciences, yet we should remember that with the onset of urban-
+ization in the mid-fourth millennium we are dealing with an historical,
+
+1  The working constellation of this long-term research project was described
+by its founder and director Hans Nissen in R. Englund and H. Nissen
+(2001):9-10. Primary contributors to the decipherment of the archaic (now
+generally called “proto-cuneiform”) texts include, beyond the original editors
+Falkenstein and Nissen, the following (in the order of their work on the archaic
+texts and on Late Uruk cylinder seal function and iconography): R.M. Boeh-
+mer, M.W. Green, K.-H. Deller, J. Friberg, R.K. Englund, P. Damerow, J.-P.
+Grégoire, A. Cavigneaux, R. Matthews. The publication of the Uruk exem-
+plars of the archaic corpora will continue with a second volume on the texts of
+the Vorderasiatisches Museum (ATU 6, forthcoming) and two volumes on
+those in the collection of the Iraq Museum, for understandable reasons cur-
+rently on hold (ATU 8-9). A revised Late Uruk sign list will be reserved for the
+pages of the Cuneiform Digital Library Initiative (http://cdli.ucla.edu/).
+24                                                            R.K. ENGLUND
+
+developed society in Babylonia; there is a danger of ascribing to this his-
+torically distinct period the same ahistorical nature that characterizes
+most general histories of Mesopotamia.2
+     Control of the movement of goods and services is a critical element
+in the economic dimension of social power.3 As is clear from a review
+of the emergence of proto-cuneiform in the latter half of the fourth mil-
+lennium BC, it was an ever-present component of urbanization in the
+ancient Near East. M. Hudson has offered in the introduction to this
+volume a concise description of most of the salient elements of early
+accounting in Babylonia, elements that most Assyriologists have con-
+sidered in working on their specific periods of specialization, and to a
+lesser degree in terms of general developments in Mesopotamia. Among
+these is the development of writing itself; a system of calendrical
+metrology; and systems of quantification and bookkeeping that led to
+the formation of equivalence values based on the commodity silver.
+     Considering the importance of precious metals in most early civiliza-
+tions, it might seem surprising to learn that we have no clear evidence
+in the archaic texts of the use of weights, nor any evidence that silver
+was in any way used in early households in a manner comparable to
+later, third millennium usage. We indeed are hard pressed to cite evi-
+dence for the utilization of equivalence values in the Late Uruk period,
+with the possible exception of ration days.
+     An attempt is made in the following pages to give a general impres-
+sion of the little we know about the accounting methods in the archaic
+period, with occasionally formalistic information culled from early
+texts, starting with a review of the development of writing; discussing
+in short fashion the importance of archaic numerical and metrological
+systems as elements of social control; illuminating the use of writing
+with some examples drawn from grain administration archives;
+touching on the matter of labor management; and closing with a ten-
+tative discussion of the implications the labor accounts have for our
+understanding of archaic ideology of class.
+
+
+
+2   This is a criticism of most integrative treatments of early Mesopotamia. For
+a recent example see R. Bernbeck’s 1999 review of M. Van De Mieroop’s The
+Ancient Mesopotamian City, in which he describes the author’s proclivity of dis-
+tilling into a homogeneous Babylonian community what must have been a
+developing social construct through time and space.
+3 See the discussion by M. Mann (1986).
+PROTO-CUNEIFORM ACCOUNT-BOOKS AND JOURNALS                                     25
+
+Account-keeping and the emergence of writing
+More so than other writing systems, cuneiform has been described as a
+script based on a long history of preliterate accounting devices. Most
+who have studied the matter have considered early writing to be a col-
+lateral development from the exploitation of an increasingly complex
+method of fixing quantitative data.
+     Urbanization in southern Babylonia during the Middle and Late
+Uruk periods resulted in the growth of the settlement of southern
+Mesopotamian Uruk into an expanse of 200 hectares, with a popula-
+tion estimated to have approached 40,000 or more. Very large numbers
+of this population evidently were available for the construction and
+maintenance of the massive public district known as Eanna, with its
+monumental architecture surely the clearest testimony to the extraordi-
+nary new surplus economy supporting Uruk.
+     Hand in hand with these urban developments are found in the
+archaeological record a series of accounting devices known popularly as
+“tokens” since the publications of Schmandt-Besserat. While the Texas
+
+
+
+           Period             Writing Phase           Historical Developments
+                              Clay bullae and
+3400                          numerical tablets          Beginning of large-scale
+3300     Late Uruk            Archaic texts from Uruk:   settlement of Babylonia
+                               Writing Phase Uruk IV,
+3200                                                     First urban centers
+                               Writing Phase Uruk III
+3100                                                     Age of early civilization
+3000     Jemdet Nasr
+
+2900
+         Early Dynastic I
+2800                          Archaic texts from Ur
+                                                         Formation of large
+2700
+         Early Dynastic II                               irrigation networks
+2600
+                              Texts from Fara
+2500                                                     Rival city-states
+         Early Dynastic III
+                              Old Sumerian texts
+2400
+
+
+Figure 1: An overview of the chronology and historical developments of the
+          earliest literate periods in Babylonia.
+26                                                            R.K. ENGLUND
+
+archaeologist has been faulted for over-interpreting both the systemati-
+zation and the iconic differentiation of these small clay objects,4 there
+can be little doubt that at least a subset consisting of many of her simple
+geometrical artifacts represents the precursors of writing in Mesopo-
+tamia, and therefore that cuneiform began with numerical signs.
+     This assertion is based on two phenomena. First, the simple tokens
+were gathered in discrete assemblages and encased in clay balls in the
+periods immediately before the emergence of proto-cuneiform ca. 3300
+BC, and these balls were then sealed with impressions from cylinder
+seals– the hallmark of 3000 years of Babylonian administrative history.
+Second, the plastic tokens were themselves impressed on the outer sur-
+faces of some balls, leaving marks which, both physically and also in
+their context, conform exactly to the impressed numerical signs of the
+early so-called numerical tablets and the curvilinear tradition of
+Babylonian accounts down to the Ur III period at the end of the third
+millennium. We have little doubt that a statistical analysis of the over-
+bearing numbers of tokens still encased within clay envelopes would
+lead even further, to the establishment of the preliterate use of numer-
+ical sign systems with the same abstraction of unit bundling as has been
+shown for proto-cuneiform numerical notations. We should anticipate
+that we will find the two most important numerical systems in these
+tokens, one used to count discrete objects and one used to quantify
+capacity measures.
+     It is of historical interest that the so-called Uruk expansion contin-
+ued down through the use of bullae and sealed numerical tablets.
+Further, as R. Dittmann demonstrated at the Tübingen conference on
+the Jemdet Nasr period, this contact continued into the earliest phase
+of “ideographic” inscriptions of the Late Uruk period, those that I have
+called the numero-ideographic tablets.5 These texts from the Susa level
+
+
+
+
+4  Her publications have been conveniently consolidated into a two-volume
+work Before Writing (Austin 1992), itself reprinted in an abbreviated version,
+How Writing Came About (Austin 1996). Specialist reviewers from the fields
+of Near Eastern archaeology and Assyriology have not been kind to the schol-
+arship represented by this work, while it has received a generally positive press
+from non-specialists, and as is evident from its wide publicity, from science
+editors of leading media organizations.
+5 R. Dittmann (1986):332-66; R. Englund (1998):51-56.
+PROTO-CUNEIFORM ACCOUNT-BOOKS AND JOURNALS                                  27
+
+
+
+
+Figure 2: Schmandt-Besserat’s writing history
+
+
+17Ax “contact”6 correspond nicely with texts found in the area of the
+Red Temple at Uruk, characterized by their inclusion of seal impres-
+sions, numerical notations and one or at most two apparent ideograms
+representing the basic agricultural commodities: butter oil, textiles and
+small cattle.
+
+
+
+6  See P. Damerow and R. Englund (1989):15 n. 37. This artificial strati-
+graphic construct of Dyson, Le Brun and Dittmann has not been proven by
+excavations of Susa, nor evidently can the epigraphic finds from the area of the
+Red Temple in Uruk serve to strengthen the argument for a linear develop-
+ment, from numerical through numero-ideographic to ideographic tablets, in
+either center of early writing (cf. R. Englund, ATU 5, pp. 13-16). Renewed
+excavations of Susa are required, although recent discoveries of very early
+tablets from Iraqi sites might point archaeologists to native Mesopotamian
+sources for a sound Late Uruk stratigraphy so painfully absent in the Uruk
+data. See the following footnote.
+28                                                            R.K. ENGLUND
+
+     At this point there is an abrupt conclusion of interregional Uruk
+influence, with a continuation of development of writing in Uruk
+alone.7 The archives from Uruk consist above all of administrative doc-
+uments, accompanied by a group of texts generally known as lexical
+lists, although there is good reason to assert that we have among these
+lists the earliest known example of literature.8 It should be remembered
+that the numbers generally cited in this connection, 85% administra-
+tive and 15% lexical texts, represent averages; less than one percent of
+the earliest, the Uruk IV tablets, are of the lexical genre, while close to
+20% of the following Uruk III tablets belong to this type of document.
+Whereas Uruk IV documents known to us derive without apparent
+exception from Uruk, those of the Uruk III (also called Jemdet Nasr)
+period come from a number of Babylonian sites, including Jemdet
+Nasr, Kish, Uqair, Larsa, from transtigridian Tell Asmar, and as post-
+Kuwait excavations streaming through London have shown, from
+Umma and from Adab.9 We should include here too the c. 1500
+tablets and fragments of the so-called proto-Elamite phase in the
+Susiana and regions to the east.
+
+The categories of administrative documents
+We can divide proto-cuneiform administrative documentation into the
+two major bookkeeping types known from later periods in Babylonia,
+namely into primary and secondary documents. The easiest way to rec-
+ognize the former type, consisting of receipts, bills and simple transfers,
+etc., is by the physical size and the spatial format of the tablets. As a rule
+these are quite small, perhaps up to c. 8≈8 cm, and might be divided
+into at most several cases. At present we can only anticipate that these
+sorts of simple documents contain no more than the most basic
+elements of a transaction or inventory record, as a rule including desig-
+
+
+7 It appears from some recently excavated but as yet unpublished tablets from
+
+Iraq that a revision of this monogenesis theory is immanent. Although these
+artifacts are moving through the antiquities markets and are therefore
+unprovenienced, there is reason to identify the ancient cities of Umma (Jokha
+and/or al-Aqirib) and possibly Adab as their sites of origin, and thus as further
+centers of Uruk IV proto-cuneiform. Based on paleographic analysis, both MS
+2963 and MS 4485 of the Oslo Sch™yen Collection appear to predate Uruk
+III.
+8 R. Englund and H. Nissen (1993):25-9.
+9 See above, n. 7.
+PROTO-CUNEIFORM ACCOUNT-BOOKS AND JOURNALS                                                    29
+
+nations of quantified objects and of one or more actors involved in a
+relationship of some sort with those objects, often together with an
+indication of the administrative positions of these actors, as well as their
+geographical affiliations. In less frequent cases these simple texts would
+appear to include predicate information in the form of transaction qual-
+ifications, for instance, the signs BA or GI, which qualify, evidently for
+purposes of accounting clarity, the nature of the movement or storage
+of goods, including parcels of agricultural land.
+
+
+                      i                 i         i        ii                 i       ii
+                                   1a       1b   1a 1b 1a 1b                 b1
+                                                                                1a 1b
+                                                                             b2
+                     1                                                    1a       2b1
+                                   2a       2b   2a 2b 2a 2b                 b3 2a 2b2
+
+                                   3a       3b   3a 3b 3a 3b              2           3a 3b
+                     2
+                                   4a       4b   4a 4b 4a 4b              3           4
+
+
+
+
+           obverse                                              reverse
+       i     ii       iii                             ii          iii             i
+                                Direction
+                                of Script
+
+
+
+
+                                  Axis of
+                                 Rotation
+
+
+
+
+Figure 3: Formats of the proto-cuneiform texts.
+          The two upper rows represent primary, the lower row a secondary
+          document.
+30                                                          R.K. ENGLUND
+
+     The more interesting but rarer secondary documents can be twice or
+three times as large. They contain relatively large numbers of entries, and
+their surfaces often are divided into a complex format. As has been stated
+in numerous publications, this tablet format may be presumed to fulfill
+the syntactical functions of the more developed language representation
+found in later texts, particularly those of the Fara period and thereafter.
+     While we should be circumspect in our judgment of the syntactical
+force of the archaic ideographic record, there can be little doubt that the
+highly formalized system of numerical notations, with its roots in the
+token assemblages found in clay envelopes in Persia, Babylonia and
+Syria, followed a wholly conventionalized internal syntax, and repre-
+sented concrete facts in the archaic record that have played an imposing
+role in our partial decipherment of proto-cuneiform and of proto-Elamite.
+
+Numerical and metrological systems
+P. Damerow of the Max Planck Institute for the History of Science in
+Berlin, and J. Friberg of the Chalmers University of Technology in
+Göteborg must be credited with having early on discovered the impor-
+tance of the numerical signs in the archaic record and making progress
+in this decipherment. It should be obvious that accounts deal with
+numbers and measures; however, the treatment by Assyriologists of
+numerical notations in cuneiform texts has been one of the worst blem-
+ishes in a field otherwise marked by close attention to detail. Friberg
+was so vexed by the copies and interpretations of the important Jemdet
+Nasr texts by S. Langdon10 that, in preparation of his groundbreaking
+re-edition of a number of these, together with archaic texts from other
+European collections,11 he made and exploited Xerox copies of the
+physical tablets in Oxford to aid in his work.
+     Langdon’s Pictographic Inscriptions from Jemdet Nasr must be the worst
+example of cuneiform text editions on record. But a tradition of cava-
+lierly dispensing with numerical notations in editions of administrative
+documents continues today in transliteration publications of primary
+sources with decimally interpreted sexagesimal notations, despite the
+appeals of the associates of the Cuneiform Digital Library Initiative12
+to adhere to a system of transliteration that reflects in a strict fashion
+the physical realities of the cuneiform inscriptions. This should be a
+basic convention in text-analytical treatments of Babylonian literature.
+
+10 OECT 7 (Oxford 1928).              11   Friberg (1978-1979).
+12 http://cdli.ucla.edu/cdli_methods.html.
+PROTO-CUNEIFORM ACCOUNT-BOOKS AND JOURNALS                                 31
+
+     In considering proto-cuneiform accounts, the first signs that command
+one’s attention must be the numerical signs. These were deeply
+impressed in the clay surface with the butt ends of two round styli of
+different diameters. As a rule, impressions of the larger stylus represent
+larger numbers or measures, those of the smaller styli numbers and
+measures from the lower scale of the numerical systems they represented.
+In most cases these numerical notations come first, followed by some
+designation of the objects they qualify, then by representations of per-
+sons or offices. Although within discrete notations the signs were, with
+some few exceptions, entirely unambiguous and therefore might have
+been inscribed in free order,13 numerical notations conformed to a
+rigid syntactical sequence, from signs representing the largest to those
+representing the smallest order of quantity or measure.
+     The rigidity of these notational sequences can be explained partly
+by the fact that many of the signs were ambiguous across system bor-
+ders. Dependent on the object quantified by numerical notations, the
+sign N14 (a simple small circular impression) can represent ten clay pots
+of butter oil, a measure of grain corresponding to about 150 liters of
+barley, or a field of about 6 hectares. The real power of a clear under-
+standing of the array of archaic numerical systems was first exploited by
+Friberg, who in 1978-1979 published in preprint form an analysis of
+the Uruk III period texts from Jemdet Nasr and other sites, in part
+made accessible to him by the Ashmolean Museum.14 Friberg’s correc-
+tion of an age-old misinterpretation of the structure of the archaic
+capacity system led to the partial decipherment of large numbers of
+accounts. Based in part on his work, Damerow and I were in the 1980s
+and 1990s able to abstract the systems in figure 4 from a data set includ-
+ing the large numbers of texts from the German Uruk excavations.15
+
+13 The few exceptions involve the second use of signs representing irregularly
+
+high quantities. For instance, the text W 19726,a has been cited in the litera-
+ture (ATU 2, 140; Spektrum der Wissenschaft, March 1988, 47; Archaic Bookkeep-
+ing, 32-5) as an example of the ambiguous use of the sign N46 to represent
+both 60 and 10,800 of the basic units N4 of emmer wheat (N4 corresponds to
+N1 in the basic grain capacity system, see fig. 4). This practice corresponds
+closely to the attachment of Sumerian gal, “large,” to the sign ·ar2 to signify
+the sexagesimal step above what would have otherwise been the largest com-
+monly known number (·ar2, “3600”; thus ·ar2 gal represents 216,000 in the
+sexagesimal system, 3600 bur3 in the surface metrology system).
+14 See n11.                           15 An English update of the German pub-
+
+lication that derived from that early effort (Damerow and Englund 1987) will
+appear in our edition of the Erlenmeyer collection in MSVO 3 (in preparation).
+32                                                                                                                 R.K. ENGLUND
+
+
+
+                                                      Sexagesimal System
+              N50            N45                N48                           N34                  N14               N1           N8
+                      10              6                        10                            6            10              2 or
+                                                                                                                          10?
+           "36,000"        "3,600"             "600"                         "60"                 "10"             "1"           "1/2"
+                                                                                                                               or "1/10"
+                                                    Sexagesimal System S'
+                                                N35                        N15              N2
+                                                                   6               10
+                                                "60"                       "10"             "1"
+
+
+                                                     Bisexagesimal System
+              N56            N54                    N51                      N34                   N14               N1           N8
+                      6              10                        2                             6            10               2
+
+            "7,200"        "1,200"             "120"                         "60"                 "10"              "1"          "1/2"
+
+                                                Bisexagesimal System B*
+                             N60                    N52                      N38                   N21               N6
+                                     10                        2                             6                10
+
+                           "1,200"             "120"                        "60"                  "10"             "1"
+
+                                                           GAN2 System
+                              N45                      N50                        N14             N22               N1            N8
+                                           6                           10               3                     6           10?
+
+                             ∑AR2                    BUR'U                    BUR3                E∑E3              IKU
+                                                                                                                                   N9
+                                                               EN System
+                                      N14                 N1                  N24                 N8                N7             N10
+                                               10                      2                2                 4
+                                                                                                                           ?
+                                                                                                                                   N11
+                            U4+ N14
+                                                               U4 System                                                           N12
+                                          10 U4+ N1                    U4+ N14                U4+ N8
+                           10 months                           3                        10
+                           N57+ U4
+                                          12
+                                                1 month                    10 days                1 day
+
+
+                            1 year
+
+
+Figure 4a: Proto-cuneiform numerical sign systems.
+           Several systems of numerical signs served to qualify discrete objects
+           (Fig. 4a), while others qualified measures of grains, (semi-)liquids
+           and time (Fig. 4a and 4b).
+
+
+
+The standardization of time in grain administration archives
+These numerical representations afforded those working on the prob-
+lem sufficient evidence to make a number of advances in the decipher-
+ment of proto-cuneiform, including the observation that already in the
+archaic period household administrators had imposed on the natural
+cycle of time an artificial year consisting of 12 months, each month of
+PROTO-CUNEIFORM ACCOUNT-BOOKS AND JOURNALS                                                            33
+                                                                                               N24
+
+
+                                                                                               N26
+                                                                                          2
+
+                                                                                          3
+                                      ∑E System                                                N28
+           N48        N34                   N45             N14         N1          N39   4
+
+                 10               3                    10         6           5
+                                                                                          5    N29
+
+                                                                                          6
+
+                                      ∑E' System                                          10   N30a
+                      N45'        N18             N3              N40        N24'
+                             10         6                   5            2
+                                                                                               N30c
+
+
+                                   ∑E" System
+N46        N49        N36                   N46             N19         N4          N41
+      6?         10               3                    10         6           5
+
+                                                                                               N25
+                                      ∑E* System                                          2
+                      N37                   N47             N20         N5          N42        N27
+                                  3                    10         6           5           3
+                                                                                          4
+                                                                                               N28*
+                                  DUGb System
+                              N1.DUGb                  N1.SILA3a
+                                              10
+
+
+
+
+                                  DUGc System
+                              N1.DUGc                  N1.KU3a          N2
+                                              2                    5
+
+
+
+
+Figure 4b: Proto-cuneiform numerical sign systems
+
+
+30 days.16 This realization and the subsequent discovery of the wide-
+spread use of time calculations in apparent rationing texts led to a
+fruitful exchange between Friberg and myself that identified a number
+of different grain measure sizes employed in this rationing system, and
+to the plausible interpretation first advanced by Friberg that texts such
+as MSVO 1, 89 and 90,17 recording the daily disbursement of an
+amount of grain corresponding to the measure N24 (c. 21⁄2 liters) or N39
+(ca. 5 liters) over a span of three years, might document a system of
+long-term temple offerings. It is hard to understand why an account
+should reckon through several years the daily disbursement of a small
+amount of grain if this were not meant as regular alimentation for a cult
+figure or for a person dedicated to serve the donor in the cult.
+
+16 R. Englund (1988):121-85.             17       R. Englund (1988):138.
+34                                                             R.K. ENGLUND
+
+
+
+
+Figure 5: The administrative exercise tablet MSVO 4, 66.
+          This text formed the basis for Friberg’s identification of the structure
+          of the archaic metrological system used to count grain measures, in
+          particular the relationship of 1:6 between the two signs N14 and N1,
+          earlier believed to be 1:10.
+
+     The strengths and limitations of numerical analyses of archaic texts
+can be demonstrated using a group of documents from the Uruk III
+period recording the dispensation of agricultural products, above all dry
+and liquid grain products.
+     The key to understanding the important grain texts is in fact an
+artificial account, one of a number of school exercises known from the
+archaic period. Examples from later periods have received little atten-
+tion. The text MSVO 4, 66 (figure 5), possibly from Larsa, is something
+of a Rosetta stone in the decipherment of proto-cuneiform. In terms of
+both text format and sign meaning, this text resolved nearly all ques-
+tions concerning a complex accounting mechanism. The individual
+entries of the text consist of notations that represent on the one hand
+discrete numbers of grain products– if dry products in the bisexagesi-
+mal; if liquid products in the sexagesimal system– and on the other
+hand notations that represent measures of grain equivalent to the
+amount necessary to produce the individually recorded products.
+PROTO-CUNEIFORM ACCOUNT-BOOKS AND JOURNALS                              35
+
+    The calculations implicit in the text MSVO 4, 66
+    (see fig. 4 for sign designations):
+obv. i 1     60≈ 1⁄ 5 N1                = 12≈   N5   =   2≈ N20
+       2    120≈ 1⁄ 10 N1               = 12≈   N5   =   2≈ N20
+       3    120≈ 1⁄ 15 N1               = 8≈    N5   =   1≈ N20 2≈ N5
+       4    300≈ 1⁄ 20 N1               = 15≈   N5   =   2≈ N20 3≈ N5
+       5    600≈ 1⁄ 25 N1               = 24≈   N5   =   4≈ N20
+
+ rev. i 1 1200≈                                 1≈ N47 1≈ N20 5≈ N5
+
+ obv. i 6 6000≈ 1⁄30 N1 (GAR+6N57)      = 200≈ N5=1≈ N37        3≈ N20 2≈ N5
+
+     ii 1   120≈ ~1⁄ 4 N1 (DUGa+U2a)    ≈ 30≈ N5 =       5≈ N20 1≈ N5 1≈ N42
+        2   180≈ 1⁄ 5 N1 (DUG+A∞a)      = 36≈ N5 =       6≈ N20
+        3   300≈ 1⁄ 15 N1 (KA∞a)        = 20≈ N5 =       3≈ N20 2≈ N5
+
+ rev. i 3   600≈                                1≈ N47 4≈ N20 3≈ N5 1≈ N42
+
+                                          1≈ N47     1≈ N20 5≈ N5
+                                          1≈ N37     3≈ N20 2≈ N5
+                                          1≈ N47     4≈ N20 3≈ N5       1≈ N42
+
+Grand total of flour used:     1≈ N37     2≈ N47     9≈ N20 4≈ N5       1≈ N42
+
+Grand total of malt used:
+                   1N47 4N20 3N5 1N42a (rev. i 3) ≈ 3⁄ 5 ¢ 8≈ N18 4≈ N3 1≈ N40
+
+
+     Once the information from MSVO 4, 66, could be marshaled,
+numbers of other complex accounts from the Uruk III period became
+clear to us, at least in their bookkeeping form. For instance, the Jemdet
+Nasr text MSVO 1, 93 (figure 6 with reconstructions), shares much of
+its form and content with MSVO 4, 66.18 The obverse face of the tablet
+records in successive cases numbers of grain products together with
+notations that represent the amount of grain required for their produc-
+tion. As seems obvious based both on sign identifications and on
+production technology implicit in the types of cereals used, the first
+column lists dry goods– probably rough-ground flour and types of
+breads – while the first half of the second column lists liquid goods, cer-
+tainly a type of beer represented by pictograms of ceramic vessels.19
+
+18 R. Englund (2001):1-35.
+19 See H. Nissen, P. Damerow and R. Englund (1993), in particular 43-46.
+36            R.K. ENGLUND
+
+
+
+
+     Figure 6: MSVO 1, 93.
+     The account from Jemdet
+     Nasr demonstrates many of
+     the equivalencies, and the
+     bookkeeping format of the
+     exercise MSVO 4, 66, but
+     including ideographic nota-
+     tions representing agents,
+     actions and time spans con-
+     nected with the account.
+PROTO-CUNEIFORM ACCOUNT-BOOKS AND JOURNALS                                  37
+
+Following a double dividing-line, and therefore an accounting format
+device employed to indicate information derived from different pri-
+mary sources, the scribe registers varying numbers of animals, animal
+products (butter oil, textiles, processed fish), and strings of dried fruit.
+Both sections are qualified, finally, with a set of ideograms representing
+the type of transaction recorded (“ration”, GU7), the originating place or
+office of the account (NI+RU, possibly representing the small settlement
+Jemdet Nasr itself), and the period of time covered in the account.20
+
+The ration system
+The basic format of those entries recording dry goods is straightfor-
+ward. In the first of two sub-cases of each entry, discrete objects were
+counted using what we have, due to its continuation past the bundling
+phases of the more common sexagesimal system into units representing
+120, 1200, and, probably, 7200 units (see figure 4), designated the
+bisexagesimal system.21 The second sub-case records a notation corre-
+sponding to the amount of grain requisite for the production of the
+units recorded. The system used in this case corresponds in its numer-
+ical structure to the common grain capacity sign system, but is qualified
+by the addition of an arbitrary number of impressed dots that seem to
+graphically represent the ground barley used in the grain products.
+
+Grain equivalencies
+As is usually the case with proto-cuneiform accounts, eventual subtotals
+and totals are inscribed on the reverse face. Here too, the categories of
+goods are treated differently, with a full tally of products in a first sub-
+case of the right column. The second sub-case was used here to tally all
+grain products with grain equivalencies. These equivalencies evidently
+represent the final value of these goods and thus alone included in the
+grand total of the left column.
+
+20 Englund (2001):18-21.
+21 No compelling explanation has been advanced for the numerical structure of
+
+the sexagesimal or the bisexagesimal system. It should nonetheless be noted
+that the only factors that make sense in compounding an original primitive
+counting system with a first limit at either ten (“Euphratic,” the unknown first
+users of the sexagesimal system) or twenty (probable original Sumerian vigesimal
+counting system) to limits of both 60 and 120 are those of the artificial calen-
+drical system of strictly 30-day months (see n16). A mix of discrete rations or
+meals and monthly accounts would result in counting units of 60 or 120 based
+on the daily rations involved.
+38                                                                 R.K. ENGLUND
+
+                                                                                    ?
+     This formation and use of grain prod-              N14        ZATU659+1N14
+uct equivalencies as exemplified by the               (=6× N1)
+
+texts MSVO 1, 93 and MSVO 4, 66, must
+                                                                                    ?
+be considered an important step in the
+direction of general value equivalencies                3N1        NINDA2+1N8
+best attested in the Ur III period for silver,
+but then still generally applicable for other                                       ?
+commodities such as grain or fish, includ-              2N1
+                                                                   NINDA2+2N1
+ing finally also labor time. It is not possible
+to determine whether, as would seem
+intuitively likely, these equivalencies sim-                                        ?
+ply describe the amount of grain expended                          NINDA2+1N1
+
+in producing different types of bread, beer,                                        ?
+and other cereal products. But even if this              N1          NINDA2+
+                                                                   ZATU659+1N1
+is the case and the accounts presume no
+value equivalencies for products that                                               ?
+might, for instance, require in their pro-                         ZATU659+1N1
+
+cessing more labor or different ingredients
+than would be represented by a one-to-one
+relationship between the capacity of the
+finished product and the amount of barley              N39b
+                                                      (=1/5 N1)      GARgunûa
+corresponding to the product’s grain
+capacity, still the seeds of value equivalen-
+cies among disparate goods may have been
+sown in these accounting procedures. The               N39a          ZATU625
+                                                      (=1/5 N1)
+concept of value equivalency was a secure
+element in Babylonian accounting by at
+least the time of the sales contracts of the                                    ?
+ED IIIa (Fara) period, c. 2600 BC.22                    N24         GAR    U4
+                                                      (=1/2 N39)
+
+
+
+22 We do not clearly understand the function of those early “kudurrus” in I.
+
+Gelb, P. Steinkeller and R. Whiting (1991):27-43, and see Steinkeller (1987):
+11-27, in particular the mechanism through which prices might have been cal-
+culated and expressed in the accounts (OIP 104, nos. 1-11, in any case, are in
+all likelihood to be dated to no earlier than the period of the archaic texts from
+Ur, either ED I or II; see ATU 5, 12, n. 7). The sign that in the third
+millennium represented “value equivalence,” “exchange amount,” was sa10. Its
+pictographic correspondence in the proto-cuneiform corpus, possibly repre-
+senting some sort of grain scoop and containing the sign for “barley,” is with
+60 attestations not uncommon in these texts, yet in no instance is it found in
+a context suggestive of equivalency values, including the ED I/II texts.
+PROTO-CUNEIFORM ACCOUNT-BOOKS AND JOURNALS                                               39
+
+
+                 SIG2a2                                       GAR
+
+   N26                    ?     U4
+ (=1/3 N39)
+                                                                          GAR+3-6N57
+                 DU8c
+                                                N30a
+                                              (=1/6 N39)
+                                                            LAGABa+∑A       ∑Agun û
+
+
+                  GAR
+                                                               ∑A         ∑A+ÎIgun û a
+
+                              GAR+3-6N57
+
+   N28
+                               ZATU726c
+ (=1/4 N39)     GARgunûa
+                               ZATU726d        1/8 N39          LAGABa+∑A
+                                              (sign not
+                                                attested)
+                 GUG2a          ZATU727
+                                                                    GUG2a
+
+
+
+
+                               ZATU726c
+                  GAR
+                               ZATU726d
+                                                              DU8c        DU8c gun û
+   N29a          SILA3b
+ (=1/5 N39)     +GUG2a          ZATU727         N30c
+                                              (=1/10 N39)       LAGABa+∑A
+                          ?
+                 SIG2a2
+
+
+
+
+                                              1/20 N39
+                                                                            ?
+                                              (sign not
+   N29b                                         attested)            ∑A
+                  GAR
+ (=1/5 N39 ?)
+
+
+
+Figure 7: Equivalencies in grain accounts.
+          The table lists, in order from largest to smallest attested values, the
+          grain equivalences of products found in the proto-cuneiform record
+          together with their respective ideographic correspondences (ideo-
+          graphic correspondence of the same numerical signs is not included).
+
+    While there are no evident notations in the archaic texts which
+exhibit the level of labor time and production norm complexity of the
+Ur III period, still at least two components of archaic accounts are
+instructive about the accounting procedures at the dawn of literacy. In
+40                                                              R.K. ENGLUND
+
+the first place there appears to have been a close connection between the
+graphic system employed to record calendrical units and that used to
+quantify measures of grain. In both cases the unit month played a cen-
+tral role. Only those calendrical notations representing one or more
+months employed the standard forms of the sexagesimal system, with
+the sexagesimal unit representing the discrete unit “one.” Notations for
+days and years alike employed derivative numerical signs (N8 and N57,
+respectively). At the same time the capacity system centers on this same
+unit sign N1, yet with diverging relationships between this and other
+signs in the system.
+     In particular the signs representing lower values in the system are
+arranged in a sequence that successively divides the basic unit into
+fifths, and further on down to the sign N30a, which represents a measure
+of grain 1⁄ 30 the size of the basic unit. It cannot be a coincidence that
+this sign so regularly corresponds in the archaic accounts to the
+ideogram GAR. This latter sign is the pictographic representation of the
+beveled-rim bowl, a clay vessel with a capacity equal to a standardized
+daily ration in Mesopotamia. It therefore seems reasonable to assume
+that the numerical sign N1 represents one month-ration for one labor-
+er in the archaic period.
+     In the second place we find in the archaic accounts good evidence
+for the quantification of household-dependent labor entirely compati-
+ble with later tradition. The Jemdet Nasr accounts MSVO 1, 212-214,
+belong together in a relationship of secondary and primary documents
+and represent an accounting transfer without any gaps.23
+
+
+23 Note that the treatment of this complex in Nissen, Damerow and Englund
+
+(1993):72-75, and in particular figure 62, suffered a certain “graphic over-
+load”; text MSVO 1, 213 (62b) rev. i 1-2 was entered into text MSVO 1, 212
+(62a) obv. i 8-9, 213 obv. ii 2-4 into 212 rev. i 3-5, 213 rev. ii 7-8 into 212
+rev. 1-2. The primary entry column of text 212 reverse was evidently reserved
+for the dependent laborers qualified with the sign N2 and thus, according to
+our interpretation, probably “dead slaves” that would disappear from subse-
+quent accounts. The large account MSVO 1, 212, incidentally, also presents a
+good example of what is referred to as a complex tablet rotation, whereby the
+tablet is flipped on its vertical axis to continue low-level individual entries, but
+then on its horizontal axis to inscribe subtotals and totals. Comparable
+accounts with complex rotations and/or evidence of primary document entries
+are not common in the archaic corpus, but are well enough attested to justify
+the claim that account consolidation was a regularly used technique by the
+time of the Uruk III period ca. 3100-3000 BC (see for instance the accounts
+MSVO 3, nos. 11 and 6; Nissen, Damerow and Englund [1993]:43-46).
+PROTO-CUNEIFORM ACCOUNT-BOOKS AND JOURNALS                               41
+
+    It should be noted that the ideographic qualifications of those per-
+sons recorded by name in the individual entries of MSVO 1, 212-214–
+namely, with the sign combinations SAL+KUR and SAG+MA, and with
+ERIN2 – are designations of dependent laborers, probably slaves taken
+as plunder in violent actions against Babylonian neighbors. The 27
+individuals so qualified do not constitute a large number of slaves, but
+other accounts are suggestive of larger groups, for instance W 9827
+with a minimum of 211 such individuals.24
+
+Accounting for labor
+The method of bookkeeping employed by archaic scribes to record
+groups of laborers is not particularly complex. We have approximately
+a dozen recognizable accounts of this sort with numbers qualified by
+sign combinations that represent “laborer” and including sign combina-
+tions evidently representing personal names. These persons are also qual-
+ified according to gender and age. For instance, the text W 23999,125
+in figure 8 distinguishes subgroups of 5 female and 3 male humans,
+these subgroups in each case further divided according to age, whereby
+presumable infants are qualified with sign combinations that might be
+translated as “womb-suckling.” It is noteworthy that precisely the same
+
+
+
+
+Figure 8: Accounts of domestic “herds” of slaves. Formal accounting practices
+          suggest that these two Uruk III period accounts from Uruk record
+          the make-up of two eight-member “herds” of human laborers.
+
+24 R. Englund, ATU 5, pl. 118.        25   A. Cavigneaux (1991):74.
+42                                                        R.K. ENGLUND
+
+accounting format is employed in the records of animals. Here too, pigs
+are separated according to age, and in the case of small and large cattle,
+animals are divided according to sex. The gender qualifications for the
+young of these animals are represented by SAL and KUR, the same signs
+that generally describe men and women. Furthermore, as A. Vaiman
+has shown,26 Uruk accounts record young animals and young “slaves”
+with the same derived numerical sign N8 (see figure 9), which general-
+ly qualifies a half (in some limited applications one-tenth) of some unit
+counted in the sexagesimal and bisexagesimal systems. This may derive
+from an apportioning of rations to children of productive age of
+approximately half that of adults, as was administrative labor practice in
+later periods.
+
+Labor and slavery
+We cannot be certain that the taxonomic differentiation in archaic
+Babylonia between higher-status humans on the one hand, and lower-
+status humans and animals on the other, is a meaningful one. Still it
+might be of interest to compare Babylonian with archaic Persian data.
+The sadly neglected field of proto-Elamite studies has demonstrated the
+use of the same numero-metrological systems as those known in archaic
+Babylonia, with the addition of a purely decimal system. As far as we
+can tell, the sexagesimal system qualifies discrete goods in the same field
+of application as that of Babylonia, except that some objects were
+qualified specifically with the decimal system. This decimal system,
+employing signs borrowed from the bisexagesimal system, qualifies
+what apparently are domestic animals, but also what we believe are
+lower-status humans. It appears that high-status humans– foremen
+and high officials – were, as all humans in Babylonia, qualified sexages-
+imally. If as we suspect these unusual numerical systems were intro-
+duced into Persia during the period of the Uruk expansion, then we can
+speculate that the inclusion of high-status humans in the Babylonian
+sexagesimal system represents a vestige of a two-tiered taxonomy of
+living beings practiced in Babylonia, including domestic laborers with
+domestic animals. The concept of homo sapiens sapiens, seen relatively
+in different populations even today, must well have been a much more
+fluid concept in prehistoric times.
+
+
+26 In German translation from the Russian original: Vaiman (1991):121-33.
+PROTO-CUNEIFORM ACCOUNT-BOOKS AND JOURNALS                                   43
+
+
+
+
+                                  W 9656,ex
+Figure 9a: Numerical qualification of young animals.
+           The Uruk IV period texts record numbers of cattle (Fig. 9a, top) and
+           humans (Fig 9b, bottom), in both cases including the numerical sign N8
+           designating young animals.
+
+
+
+
+Figure 9b:
+Numerical
+qualification
+of humans
+
+                                         W 9655,t
+
+
+
+    Can we call the proposed taxonomy of the Late Uruk “slave” =
+“animal” an ideological perspective? It may be that we are looking at the
+enslavement and exploitation of foreign populations, reflecting a deep
+element of the earliest native Babylonian population.
+    But it may also reflect a developing class consciousness. G. Algaze
+has stated in a recent paper that the identification of humans with
+domestic animals is even a necessary stage in the formation of early
+44                                                          R.K. ENGLUND
+
+states.27 Certainly when we speak of “work force,” “farm hands” or
+“factory hands” we abstract laborers little less than Babylonian scribes
+who recorded pigs and laborers in similar fashion, both serving the
+community of man. Our archaic accountants may have forgotten how
+close they were to membership in the same fraternity.
+
+
+
+
+27 Algaze  (2001), esp. 211-13 (comments pp. 215-28 and 415-18). The
+author states that this primitive categorization represents “a new paradigm of
+the nature of social relationships in human societies.”
+                                                                              45
+
+                               BIBLIOGRAPHY
+Algaze, Guillermo. (2001), “Initial Social Complexity in Southwestern Asia:
+     The Mesopotamian Advantage,” Current Anthropology 42:199-233.
+Bernbeck, Reinhard (1999), Review of M. van der Mieroop, The Ancient
+     Mesopotamian City, BASOR 315:78-80.
+Cavigneaux, Antoine (1991), “Die Texte der 33. Kampagne,” BaM 22:74.
+Damerow, Peter and Robert Englund (1987), “Die Zahlzeichensysteme der
+    Archaischen Texte aus Uruk,” in M. Green and H. Nissen, eds.,
+    Zeichenliste der Archaischen Texte aus Uruk (ATU 2):117-66.
+–     (1989), The Proto-Elamite Texts from Tepe Yahya (American School of
+      Prehistoric Research Bulletin 39; Cambridge, Mass.: Harvard University
+      Press).
+Dittmann, Reinhard (1986), “Seals, Sealings and Tablets,” in U. Finkbeiner
+     and W. Röllig, eds., G
+                          ˝ amdat Na◊r: Period or Regional Style? (Beihefte
+     zum Tübinger Atlas des Vorderen Orients, Reihe B 62; Wiesbaden: L.
+     Reichert):332-66.
+Englund, Robert, (1988), “Administrative Timekeeping in Ancient Mesopo-
+     tamia,” JESHO 31:121-85.
+–     (1998), “Texts from the Late Uruk Period,” in J. Bauer, R.K. Englund,
+      and M. Krebernik (eds.), Mesopotamien: Späturuk-Zeit und Frühdyna-
+      stische Zeit (OBO 160/1):51-56.
+–     (2001), “Grain Accounting Practices in Archaic Mesopotamia,” in J.
+      H™yrup and P. Damerow (eds.), Changing Views on Ancient Near Eastern
+      Mathematics (BBVO 19):1-35.
+Englund, Robert and Hans Nissen (1993), Die lexikalischen Listen der archai-
+     schen Texte aus Uruk (ATU 3).
+–     (2001), Archaische Verwaltungstexte aus Uruk: Die Heidelberger Samm-
+      lung (ATU 7).
+Friberg, Jöran (1978-79), The Early Roots of Babylonian Mathematics: II.
+      Metrological Relations in a Group of Semi-Pictographic Tablets of the Jemdet
+      Nasr Type, Probably from Uruk-Warka (= Research Report, 1979-15;
+      University of Göteborg. Department of Mathematics, Chalmers).
+Gelb, Ignace J., Piotr Steinkeller and Robert Whiting (1991), Earliest Land
+     Tenure Systems in the Near East (OIP 104).
+Mann, Michael (1986), The Sources of Social Power, vol. 1 (Cambridge: Cam-
+    bridge University Press).
+Nissen, Hans, Peter Damerow and Robert Englund (1993), Archaic Bookkeeping
+     (Chicago: University of Chicago Press).
+46                                                        R.K. ENGLUND
+
+Steinkeller, Piotr (1987), “Grundeigentum in Babylonien von Uruk IV bis zur
+      frühdynastischen Periode II,” Jahrbuch für Wirtschaftsgeschichte 1987:
+      11-27.
+Vaiman, Aisak (1991), “Die Bezeichnungen von Sklaven und Sklavinnen in der
+    protosumerischen Schrift,” BaM 20:121-33.
+CREATING ECONOMIC ORDER
+ RECORD-KEEPING, STANDARDIZATION,
+AND THE DEVELOPMENT OF ACCOUNTING
+     IN THE ANCIENT NEAR EAST
+
+
+
+
+                          VOLUME IV
+                     in a series sponsored by the
+      Institute for the Study of Long-term Economic Trends
+           and the International Scholars Conference on
+                  Ancient Near Eastern Economies
+
+
+   A Colloquium Held at The British Museum, November 2000
+
+
+
+                          EDITED BY
+                     Michael Hudson
+                     Cornelia Wunsch
+
+
+
+
+                             CDL
+                      Bethesda, Maryland
+COVER ART: Mycenaean Linear B tablet from Pylos (Jn 829, obverse) listing
+expected contributions of recycled ‘temple’ bronze from the 16 major admin-
+istrative districts of the kingdom of Pylos; see page 290f. for transliteration and
+discussion.
+This photograph is reproduced from the archives of the Program in Aegean
+Scripts and Prehistory, University of Texas at Austin, with the kind permission
+of the Department of Classics, University of Cincinnati.
+
+
+Copyright © 2004 by CDL Press
+
+All rights reserved. This book, or parts thereof, may not be reproduced in any
+form or by any means, electronic or mechanical, including photocopying,
+recording or any information storage or retrieval system now known or to be
+invented, without permission of the publisher.
+
+             Library of Congress Cataloging-in-Publication Data
+
+Creating economic order: Record-keeping, standardization and the develop-
+ment of accounting in the ancient Near East / edited by Michael Hudson and
+Cornelia Wunsch
+    355 p. 23≈15 cm
+    At head of title: The International Scholars Conference of Ancient Near
+Eastern Economies, vol. 4
+    Includes bibliographical references.
+    ISBN 1883053-854
+    1. Accounting–Middle East–History. I. Hudson Michael, 1939- II.
+Wunsch, Cornelia. III. The International Scholars Conference of Ancient
+Near Eastern Economics.
+
+
+
+
+TYPESETTING AND DESIGN: Cornelia Wunsch
+TYPE: 11/13.2 Adobe Garamond with customized diacritics
+                      Table of Contents
+Acknowledgments                                                v
+Introduction: The Role of Accounting in Civilization’s
+    Economic Takeoff
+    Michael Hudson                                            1
+1. Proto-Cuneiform Account-Books and Journals
+   Robert Englund                                             23
+2. Accounting in Early Mesopotamia: Some Remarks
+   Marc Van De Mieroop                                        47
+3. The Function of Written Documentation in the
+   Administrative Praxis of Early Babylonia
+   Piotr Steinkeller                                          65
+4. Bookkeeping in the 21st Century BCE
+   William Hallo                                             89
+5. Accounting for Change: The Development of Tabular
+   Book-keeping in Early Mesopotamia
+   Eleanor Robson                                            107
+6. Accounting in Neo-Babylonian Institutional Archives:
+   Structure, Usage, and Implications
+   Michael Jursa                                             145
+7. Weight Systems and Trade Networks in the Old World
+   (2500-1000 BC)
+   Alfredo Mederos and C.C. Lamberg-Karlovsky                199
+8. Accounting Practices and Economic Planning in Egypt
+   before the Hellenistic Era
+   Ogden Goelet                                              215
+9. Mycenaean Accounting Methods and Systems and
+   Their Place within Mycenaean Palatial Civilization
+   Thomas Palaima                                            269
+10. The Development of Money-of-Account in Sumer’s Temples
+    Michael Hudson                                           303
+11. General Discussion          331
+Bibliographical Abbreviations   355
+

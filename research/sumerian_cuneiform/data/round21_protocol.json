@@ -1,0 +1,27 @@
+{
+  "created_at": "2026-10-25T15:57:33.830403+05:00",
+  "objective": "Connected block: discriminate graphic types by internal strokes, contacts and orientation; audit whether existing visual sample is appropriate to a phonetic Sumerian inventory; test revised criteria on separate images.",
+  "text_layer": "No individual transliterations, translations, dictionary sign names or phonetic values to be opened.",
+  "permitted_metadata_audit": [
+    "catalogue period",
+    "catalogue language",
+    "provenience",
+    "artifact type",
+    "source ID"
+  ],
+  "metadata_status": "Modern catalogue assertions, not independently established chronology or language identification. Not used to assign sounds.",
+  "stages": [
+    "metadata-only audit of already studied photographs",
+    "new sample selected using nonsemantic date/language/image criteria with image criteria frozen before viewing",
+    "contact/contour descriptors and alternative segmentations",
+    "development comparison then heldout check",
+    "update inventory with explicit retain/split/unknown decisions, complete report and atlas"
+  ],
+  "limits": [
+    "Avoid treating different periods as one homogeneous alphabet",
+    "Keep image-only observations separate from dating/language labels",
+    "No independent sound decipherment claim without evidence",
+    "Whole connected cycle, no stopping after one technical step",
+    "Book unchanged"
+  ]
+}

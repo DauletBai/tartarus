@@ -1,0 +1,17 @@
+{
+  "witness_objects": 2,
+  "selected_witness_rows": 8,
+  "complete_birth_equivalences_in_selected_editions": 1,
+  "damaged_birth_parallels": 1,
+  "composite_counted_as_new_witness": false,
+  "UrNanse11_lines": 36,
+  "UrNanse11_verbs": {
+    "mu-du₃": 9,
+    "mu-tud": 7
+  },
+  "previous_corpus_tokens": 92,
+  "previous_corpus_compositions": 57,
+  "independently_deciphered_new_phonetic_values": 0,
+  "candidate_status": "birth-related lexical resemblance; historical relation unresolved",
+  "books_changed": false
+}

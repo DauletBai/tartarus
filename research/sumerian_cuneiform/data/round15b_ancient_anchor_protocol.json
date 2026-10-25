@@ -1,0 +1,15 @@
+{
+  "date": "2026-10-25",
+  "stage": "round15b",
+  "purpose": "Ancient physical anchor for testing sign/phonetic mapping, rather than a modern Latin word list.",
+  "target": "OIM A2480, Chicago Syllabary, object60 in ISAC OIMP32 Visible Language",
+  "selection": "First specific institutional object returned by the current primary-source search for ancient syllabaries. Not selected by resemblance to a Kazakh word.",
+  "prior": "Modern catalogue description already exposed: first-millennium object, eight columns arranged as two sets of four, traditional interpretation of pronunciation/sign/name/Akkadian. These roles are claims to test, not raw observations; no blind claim.",
+  "questions": [
+    "Is a real photograph included and is its source distinct from a modern drawing?",
+    "Can repeated graph groups and row alignment be resolved without assigning Latin sound values?",
+    "Does any one-to-many graphic pairing become visible, and what competing explanations remain?"
+  ],
+  "gate": "Need distinct wedge groups and at least two aligned rows for local graphic pairing. Otherwise retain unresolved and no phonetic result.",
+  "scope": "Inspect physical-photo publication and preserve exact page/crop provenance. Do not project first-millennium readings directly onto third/fourth-millennium tablets."
+}

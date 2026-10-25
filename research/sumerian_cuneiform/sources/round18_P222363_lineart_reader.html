@@ -1,0 +1,123 @@
+
+<!DOCTYPE html>
+<html lang="en" dir="ltr" prefix="og: http://ogp.me/ns#">
+<head>
+    <meta charset="utf-8">    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+        Lineart of P222363 - Cuneiform Digital Library Initiative    </title>
+
+            <meta name="twitter:card" content="summary">
+    
+    <meta property="og:title" content="Lineart of P222363" />
+    <meta property="og:url" content="https://cdli.earth/artifacts/222363/reader/42663" />
+    <meta property="og:site_name" content="CDLI">
+    <meta name="twitter:site" content="@cdli_news">
+
+    
+    
+    <link href="/favicon.ico" type="image/x-icon" rel="icon"><link href="/favicon.ico" type="image/x-icon" rel="shortcut icon">
+    <link rel="alternate" href="/artifacts/222363/reader/42663" hreflang="en" type="text/html"><link rel="alternate" href="/ar/artifacts/222363/reader/42663" hreflang="ar" type="text/html">
+            <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">        <link rel="stylesheet" href="/assets/css/main.css">    <link rel="stylesheet" href="/assets/css/font-awesome/css/font-awesome.min.css">    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>    <script src="/assets/js/jquery.min.js"></script>    <script src="/assets/js/js.js"></script>    <script src="/assets/js/drawer.js" defer="defer"></script>        <script src="/assets/js/matomo.js"></script></head>
+<body>
+    
+<div class="d-md-flex text-start lineart">
+    <div id="reader-viewer-container" class="position-relative">
+        <div id="viewer" class="text-center" style="background: black; height: 100vh;">
+    <p id="viewer-links">
+        <span class="py-1 px-3">
+            <a href="/dl/lineart/P222363_l.jpg" target="_blank" class="text-white">Open image <span class="fa fa-external-link"></span></a>
+                    </span>
+    </p>
+
+    <noscript>
+        <img src="/dl/lineart/P222363_l.jpg" style="max-height: 100%; max-width: 100%;">
+    </noscript>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/openseadragon@6.0.1/build/openseadragon/openseadragon.min.js" integrity="sha512-eDBJUqlHc4ZYlvBDBc4X+WIPi/1julZWKdYwIFyxW18VwzewdWPk/MEGjEijAlgUMLvGZAiGBnxdM1i0ycO83w==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script type="text/javascript">
+$(function() {
+    var overlay = $('#viewer-links span').get(0)
+    $('#viewer-links').remove()
+
+    var viewer = OpenSeadragon({
+        id: 'viewer',
+
+        // Location of UI images
+        prefixUrl: 'https://cdn.jsdelivr.net/npm/openseadragon@6.0.1/build/openseadragon/images/',
+
+        // Show navigator in top right
+        showNavigator: true,
+        navigatorPosition:   "BOTTOM_LEFT",
+        navigatorSizeRatio: 0.2,
+
+        // Show more controls
+        showFlipControl: true,
+        showRotationControl: true,
+
+        // Load image
+        preserveImageSizeOnResize: true,
+        tileSources: {
+            type: 'image',
+            url: "\/dl\/lineart\/P222363_l.jpg"        }
+    })
+
+    viewer.addControl(overlay, { anchor: OpenSeadragon.ControlAnchor.TOP_RIGHT })
+
+    // Zoom to top center of image
+    function setZoom () {
+        var zoom = viewer.viewport.imageToViewportZoom(1)
+        if (zoom < 1) {
+            viewer.viewport.zoomTo(zoom, null, true)
+            viewer.viewport.defaultZoomLevel = zoom
+            viewer.viewport.minZoomLevel = zoom
+        } else {
+            var bounds = viewer.viewport.getHomeBounds()
+            var aspect = viewer.viewport.getAspectRatio()
+            viewer.viewport.fitBoundsWithConstraints(new OpenSeadragon.Rect(
+                bounds.x,
+                bounds.y,
+                bounds.width,
+                Math.min(bounds.width / aspect, bounds.height)
+            ), true)
+        }
+    }
+    viewer.addHandler('tile-loaded', setZoom)
+    viewer.addHandler('resize', setZoom)
+})
+</script>
+
+        <button class="btn text-white bg-dark d-none d-md-block position-absolute" type="button" data-bs-toggle="collapse" data-bs-target="#reader-info" aria-expanded="false" aria-controls="reader-info">
+            <span class="fa fa-chevron-right" aria-hidden="true"></span>
+            <span class="visually-hidden">Toggle sidebar</span>
+        </button>
+    </div>
+
+    <div class="collapse show text-light bg-dark p-3" id="reader-info">
+        <h2 class="h4">
+            <a href="/artifacts/222363" class="text-white">RIME 1.09.01.17, ex. 01 (P222363)</a>        </h2>
+        <p>Official or display tablet excavated in Girsu (mod. Tello), dated to the ED IIIb (ca. 2500-2340 BC) period and now kept in Eski Şark Eserleri Müzesi, Arkeoloji Müzeleri, Istanbul, Turkey</p>
+        <p>
+            Image            
+&copy; <a href="/terms-of-use" target="_blank">[see publications]</a>
+
+        </p>
+
+        <p>
+                                </p>
+                    <h3>Transliteration</h3>
+                        <div class="d-flex flex-wrap align-items-start gap-2 mb-2">
+                                                    </div>
+            <div class="border p-3" style="height: 100vh; overflow-y: auto;">
+                <b>tablet </b><br><b>obverse </b><br><b>column 1 </b><br>1. ur-{d}nansze <br>2. lugal <br>3. lagasz <br>4. dumu gu-ni-DU <br>5. dumu gur-sar <br>6. e2 {d}nansze <br>7. mu-du3 <br><b>column 2 </b><br>1. {d}nansze <br>2. mu-tu <br>3. a-sangax(REC107) <br>4. mu-dun <br>5. {d}nansze <br>6. sangax(REC107) <br>7. a mu-na-REC558 <br><b>column 3 </b><br>1. esz3-ir <br>2. mu-tu <br>3. ur:nimin <br>4. dam <br>5. {d}nansze <br>6. masz be2-pa3 <br>7. a-edin <br>8. mu-du3 <br><b>column 4 </b><br>1. nin-gar <br>2. mu-du3 <br>3. e2-PA <br>4. mu-du3 <br>5. bad3 lagasz <br>6. mu-du3 <br><b>column 5 </b><br>1. {d}lugal-iri <br>2. mu-tu <br>3. ma2 dilmun <br>4. kur-ta <br>5. gu2 gesz mu-gal2 <br>            </div>
+            </div>
+</div>
+
+        <script>
+        $(document).ready(function() {
+            $('header .no-js-dd').removeClass('no-js-dd');
+        });
+    </script>
+    </body>
+</html>

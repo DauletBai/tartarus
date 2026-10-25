@@ -1,0 +1,37 @@
+[
+  {
+    "file": "P201507_history.html",
+    "url": "https://cdli.earth/artifacts/201507/history/atf",
+    "returncode": 0,
+    "bytes": 23968,
+    "error": ""
+  },
+  {
+    "file": "P431422_history.html",
+    "url": "https://cdli.earth/artifacts/431422/history/atf",
+    "returncode": 0,
+    "bytes": 20827,
+    "error": ""
+  },
+  {
+    "file": "P216745_history.html",
+    "url": "https://cdli.earth/artifacts/216745/history/atf",
+    "returncode": 0,
+    "bytes": 22575,
+    "error": ""
+  },
+  {
+    "file": "ORACC_p4.js",
+    "url": "https://oracc.museum.upenn.edu/js/p4.js",
+    "returncode": 0,
+    "bytes": 22775,
+    "error": ""
+  },
+  {
+    "file": "NippurEa_sources.html",
+    "url": "https://oracc.museum.upenn.edu/dcclt/Q000055/sources",
+    "returncode": 0,
+    "bytes": 21163,
+    "error": ""
+  }
+]

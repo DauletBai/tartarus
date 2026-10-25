@@ -1,0 +1,8 @@
+{
+  "date": "2026-10-25",
+  "reason": "Expected accession1988.433.1 was incorrectly associated with adjacent Met objectID327383. Official API identifies327383 as1988.380.5, Bronze Age; this is a retained identity mismatch, not an absent sign outcome.",
+  "original_screen_retained": 327383,
+  "followup_rule": "Resolve exact accession1988.433.1 through institutional link/search only; verify official API before images. No selection by matching graphics. If unresolved retain only one valid comparison object.",
+  "bounds": "No image of the wrong object downloaded/inspected; still at most three analysed physical tablets/six images.",
+  "selection_type": "Accession-defined follow-up, not a silently substituted original fixed-ID sample."
+}

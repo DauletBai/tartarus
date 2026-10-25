@@ -1,0 +1,41 @@
+{
+  "date": "2026-10-25",
+  "snapshot_sha256": "66991601df193a5cb93bccf92e9051e86a98fbb668a9dd343477d14f0c9d54d6",
+  "parse_failures": [
+    "etcsri/corpusjson/Q001066.json"
+  ],
+  "unique_sumerian_word_nodes": 29627,
+  "all_n6_counts": {
+    "am": 361,
+    "men": 31,
+    "COP": 3,
+    "meš": 7,
+    "nanna": 1
+  },
+  "exported_copula_rows": 400,
+  "men_rows": 31,
+  "men_editorial_person_counts": {
+    "COP-1-SG": 15,
+    "COP-2-SG": 16
+  },
+  "men_compositions": 15,
+  "men_rows_explicit_final_n": 10,
+  "lexical_rows": 2039,
+  "lexical_domain_counts": {
+    "person": 274,
+    "earth_place": 660,
+    "name": 200,
+    "man_male": 289,
+    "sun": 204,
+    "water": 280,
+    "mother": 60,
+    "father": 21,
+    "woman": 34,
+    "moon": 17
+  },
+  "limits": [
+    "Composites and word nodes are not independent physical witnesses.",
+    "Person-tag counts contain known disputed annotation; no corrected count silently substituted.",
+    "Corpus absence is not language absence; no ancestry percentage or chance p-value."
+  ]
+}

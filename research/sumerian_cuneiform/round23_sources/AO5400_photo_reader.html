@@ -1,0 +1,123 @@
+
+<!DOCTYPE html>
+<html lang="en" dir="ltr" prefix="og: http://ogp.me/ns#">
+<head>
+    <meta charset="utf-8">    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+        Photo of P333168 - Cuneiform Digital Library Initiative    </title>
+
+            <meta name="twitter:card" content="summary">
+    
+    <meta property="og:title" content="Photo of P333168" />
+    <meta property="og:url" content="https://cdli.earth/artifacts/333168/reader/165253" />
+    <meta property="og:site_name" content="CDLI">
+    <meta name="twitter:site" content="@cdli_news">
+
+    
+    
+    <link href="/favicon.ico" type="image/x-icon" rel="icon"><link href="/favicon.ico" type="image/x-icon" rel="shortcut icon">
+    <link rel="alternate" href="/artifacts/333168/reader/165253" hreflang="en" type="text/html"><link rel="alternate" href="/ar/artifacts/333168/reader/165253" hreflang="ar" type="text/html">
+            <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">        <link rel="stylesheet" href="/assets/css/main.css">    <link rel="stylesheet" href="/assets/css/font-awesome/css/font-awesome.min.css">    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>    <script src="/assets/js/jquery.min.js"></script>    <script src="/assets/js/js.js"></script>    <script src="/assets/js/drawer.js" defer="defer"></script>        <script src="/assets/js/matomo.js"></script></head>
+<body>
+    
+<div class="d-md-flex text-start ">
+    <div id="reader-viewer-container" class="position-relative">
+        <div id="viewer" class="text-center" style="background: black; height: 100vh;">
+    <p id="viewer-links">
+        <span class="py-1 px-3">
+            <a href="/dl/photo/P333168.jpg" target="_blank" class="text-white">Open image <span class="fa fa-external-link"></span></a>
+                    </span>
+    </p>
+
+    <noscript>
+        <img src="/dl/photo/P333168.jpg" style="max-height: 100%; max-width: 100%;">
+    </noscript>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/openseadragon@6.0.1/build/openseadragon/openseadragon.min.js" integrity="sha512-eDBJUqlHc4ZYlvBDBc4X+WIPi/1julZWKdYwIFyxW18VwzewdWPk/MEGjEijAlgUMLvGZAiGBnxdM1i0ycO83w==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script type="text/javascript">
+$(function() {
+    var overlay = $('#viewer-links span').get(0)
+    $('#viewer-links').remove()
+
+    var viewer = OpenSeadragon({
+        id: 'viewer',
+
+        // Location of UI images
+        prefixUrl: 'https://cdn.jsdelivr.net/npm/openseadragon@6.0.1/build/openseadragon/images/',
+
+        // Show navigator in top right
+        showNavigator: true,
+        navigatorPosition:   "BOTTOM_LEFT",
+        navigatorSizeRatio: 0.2,
+
+        // Show more controls
+        showFlipControl: true,
+        showRotationControl: true,
+
+        // Load image
+        preserveImageSizeOnResize: true,
+        tileSources: {
+            type: 'image',
+            url: "\/dl\/photo\/P333168.jpg"        }
+    })
+
+    viewer.addControl(overlay, { anchor: OpenSeadragon.ControlAnchor.TOP_RIGHT })
+
+    // Zoom to top center of image
+    function setZoom () {
+        var zoom = viewer.viewport.imageToViewportZoom(1)
+        if (zoom < 1) {
+            viewer.viewport.zoomTo(zoom, null, true)
+            viewer.viewport.defaultZoomLevel = zoom
+            viewer.viewport.minZoomLevel = zoom
+        } else {
+            var bounds = viewer.viewport.getHomeBounds()
+            var aspect = viewer.viewport.getAspectRatio()
+            viewer.viewport.fitBoundsWithConstraints(new OpenSeadragon.Rect(
+                bounds.x,
+                bounds.y,
+                bounds.width,
+                Math.min(bounds.width / aspect, bounds.height)
+            ), true)
+        }
+    }
+    viewer.addHandler('tile-loaded', setZoom)
+    viewer.addHandler('resize', setZoom)
+})
+</script>
+
+        <button class="btn text-white bg-dark d-none d-md-block position-absolute" type="button" data-bs-toggle="collapse" data-bs-target="#reader-info" aria-expanded="false" aria-controls="reader-info">
+            <span class="fa fa-chevron-right" aria-hidden="true"></span>
+            <span class="visually-hidden">Toggle sidebar</span>
+        </button>
+    </div>
+
+    <div class="collapse show text-light bg-dark p-3" id="reader-info">
+        <h2 class="h4">
+            <a href="/artifacts/333168" class="text-white">RA 009, 077-078 (P333168)</a>        </h2>
+        <p>Lexical tablet dated to the Old Babylonian (ca. 1900-1600 BC) period and now kept in Louvre Museum, Paris, France</p>
+        <p>
+            Image            
+&copy; <a href="/collections/647">Louvre Museum, Paris, France</a>
+
+        </p>
+
+        <p>
+                                </p>
+                    <h3>Transliteration</h3>
+                        <div class="d-flex flex-wrap align-items-start gap-2 mb-2">
+                                                    </div>
+            <div class="border p-3" style="height: 100vh; overflow-y: auto;">
+                <i>&emsp; atf: use lexical </i><br><b>tablet </b><br><b>column 1 </b><br>1. kur KUR %a ul-lu-lu-um <br>2. kur %a ku-ru-um <br>3. kur %a ka-a-rum <br>4. nu NU %a a-wi-lum <br>5. U U? %a a-la-kum <br>6. zi ZI %a szu-qu2-u2-um <br>7. zi %a na-t,a-pu-um <br>8. gi GI <br>9. gi4 GI4 %a pa-ra-a-sum6 <br>10. gi4 %a pe-hu-um <br>11. gi4 %a sza-ba-t,u3-um <br>12. gi4 %a nu-uh2-hu-um <br>13. da DA %a le-e-hu-um <br>14. da %a tu-ub-qum <br>15. a2 A2 %a qa2-tum <br>16. i I %a wa-s,u2-u2-um <br>17. tur tu#-ur# TUR %a en-szum <br>18. TUR [...] TUR %a i-s,um <br>19. gal GAL %a ma-a-du-um <br>20. gar3 GAR3?# %a ka-ar-rum <br>21. dim4 di-im |PAP.PAP| %a sa3-na#-a#-qum <br>22. bu bu-u2 BU %a ha-wu-u2?#-um <br>23. bu %a na-sza-ar-bu-s,um <br>24. ($blank$) <br>25. sir2 si-ir BU %a sa-na-a-qum <br>26. su3 SUD %a ri-a-szum <br>27. su3 %a ha-na-bu-um <br>28. su3 %a ul-lu-hu-um <br>29. su3 %a ra-hu-um <br>30. su3 %a ra-ka-bu-um <br>31. gara2 GA@g %a ga-ru-u2-um <br>32. utu2 u2-u4 |U#.GA#| %a sza-mu-u2 <br>33. utu2 %a szi-ip#-ku <br>34. nam na-am [NAM] %a la#?-a <br>35. bir5 bi-ir [NAM] %a x#-x#-x# <br>36. pa pa-a PA# %a [...] <br>37. lug2 lu#-ug# [PA] %a [...] <br><b>column 2 </b><br>1. x [x] %a [...] <br>2. gub gu-ub DU %a [...] <br>3. gub %a [...] <br>4. gub %a x#-[...] <br>5. gub %a a-x#-[...] <br>6. gub %a na-x#-[...] <br>7. su8-&lt;(ba)&gt; su4-u2 |DU%DU| %a ri-e-a#-[um] <br>8. su8 %a i-ta-ru-u2-um# <br>9. re7 re-e |DU%DU| %a re-e-du-um <br>10. sa6 SZA6 %a t,a-bu <br>11. sa6 %a el-lum <br>12. szesz4 sze-esz EREN %a ba-ku-u2-um <br>13. gesz3 gesz USZ %a ne-a-kum <br>14. gesz3 %a na-qa2-bu-um <br>15. usz u2-usz USZ %a im-du-um <br>16. us2 %a i-tu-u2-um <br>17. us2 %a re-du-u2-um <br>18. us2 %a ri-du-um <br>19. usz %a ma-lu-u2-um <br>20. apin a-pi-in APIN %a e-re-szum <br>21. a5 a AK %a sza-ka-nu-um <br>22. ak a-ka AK %a pa-ta-qu2-um <br>23. ak %a ka-na-a-szum <br>24. ak %a za-qa2-pu-um <br>25. sza5 %a hu#-s,u2#-s,um# <br>26. ta TA %a a-na# <br>27. ta %a a-li <br>28. ta %a mi-nu-um <br>29. lal3 |TAxHI| %a dasz-pu-um <br>30. szilig szi-li-ig |URUxIGI| %a szu?#-ul-hu-um <br>31. szilig %a sza#-pa-a-szum <br>32. szilig %a ka#-a-du-um <br>33. szilig %a pe-tu-u2-um <br>34. = RA RA %a ra#-ha-s,um <br>35. = RA x# %a e-li <br>36. = RA %a ra-pa-a-du-um <br><i>&emsp; rest broken </i><br><b>column 3 </b><br>1&#039;. li li#-[i] [LI] %a [...] <br><b>column 4 </b><br>1. en3# en LI# %a [...] <br>2. gub2 gub [LI] %a [...] <br><i>&emsp; n lines broken </i><br>3&#039;. gan ga#-an [GAN] %a [...] <br>4&#039;. zur zu-[ur] [AMAR] %a [...] <br><i>&emsp; n lines broken </i><br>5&#039;. gu2 gu2-[u2?] [GU2] %a [...] <br><i>&emsp; n lines broken </i><br>6&#039;. gaba ga-ab# [GABA] %a [...] <br>7&#039;. du8 du-u2# [GABA] %a [...] <br><i>&emsp; n lines broken </i><br>8&#039;. udnim u4-di-nim# [|EZENxIGI@g|] %a [...] <br>9&#039;. kisig ki-si-ga# [|EZENxKU3|] %a [...] <br>10&#039;. dugin# du10-gi-na |EZENxKU3#| <br>11&#039;. [...] <br>12&#039;. [...] <br>13&#039;. [...] <br>14&#039;. sar sa-ar [SAR?] %a [...] <br>15&#039;. ul4 ul [GIR2] %a [...] <br>16&#039;. bur2 bu-ur# [BUR2] %a [...] <br>17&#039;. dun5 du-un# BUR2 %a [...] <br>18&#039;. dun5 %a na-a-szum# <br>19&#039;. dun5 %a ma-a-s,um <br><i>&emsp; rest broken </i><br>            </div>
+            </div>
+</div>
+
+        <script>
+        $(document).ready(function() {
+            $('header .no-js-dd').removeClass('no-js-dd');
+        });
+    </script>
+    </body>
+</html>

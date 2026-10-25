@@ -1,0 +1,30 @@
+[
+  {
+    "file": "Schrakamp2018_CORE.pdf",
+    "url": "https://files.core.ac.uk/download/pdf/199426577.pdf",
+    "returncode": 28,
+    "bytes": 0,
+    "error": "curl: (28) Operation timed out after 35001 milliseconds with 0 bytes received\n"
+  },
+  {
+    "file": "OSL_A_canonical.html",
+    "url": "https://oracc.museum.upenn.edu/osl/signlist/l0065/o0000087/index.html",
+    "returncode": 0,
+    "bytes": 28504,
+    "error": ""
+  },
+  {
+    "file": "P222400_card.html",
+    "url": "https://cdli.earth/artifacts/222400",
+    "returncode": 0,
+    "bytes": 86288,
+    "error": ""
+  },
+  {
+    "file": "P222402_card.html",
+    "url": "https://cdli.earth/artifacts/222402",
+    "returncode": 0,
+    "bytes": 84414,
+    "error": ""
+  }
+]

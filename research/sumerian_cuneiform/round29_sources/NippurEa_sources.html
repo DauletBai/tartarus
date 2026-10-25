@@ -1,0 +1,484 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+  <meta charset="utf-8"/>
+  <meta name="generator" content="oracc/px p4html.xml "/>
+  <link rel="stylesheet" type="text/css" href="/css/p4.css"/>
+  <link rel="stylesheet" type="text/css" href="/css/p4-cuneify.css"/>
+  <link rel="stylesheet" type="text/css" href="/dcclt/css/p3colours.css"/>
+  <link rel="stylesheet" type="text/css" href="/dcclt/css/projcss.css"/>
+  <script type="text/javascript" src="/js/p4.js">&#160;</script>
+  <script type="text/javascript" src="/js/p4cbd.js">&#160;</script>
+  <script src="https://code.jquery.com/jquery-3.2.1.min.js" type="text/javascript"><![CDATA[ ]]></script>
+  <title>dcclt</title>    
+</head>
+  <body onload="p4Onload()"><div id="p4Pager" class="bborder-top list page dcat rcat special" data-proj="dcclt" data-list="Q000055.xtl" data-zoom="0" data-sort="12">
+  <div id="p4Masthead">
+    <p id="p4HeadTitle" class="banner bborder-top bborder1-bot">
+      <a href="/">Oracc:</a> <a href="/dcclt">dcclt &#x2014; Digital Corpus of Cuneiform Lexical Texts</a>
+    </p>
+  </div>
+  <div id="p4Header" class="menu banner bborder-bot">
+    <p id="p4Banner">
+      <span id="p4Icons">
+	
+  <img class="p4icon" src="/img/p3-dd.png"
+       alt="Toggle menu drop-down" title="Toggle menu drop-down"
+       onclick="toggle_dd()"/>
+  <img id="p4HelpIcon" class="p4icon"
+       src="/img/p3-help.png" alt="Help" title="Help"
+       onclick="window.location='/doc/help/visitingoracc/gettingstarted/index.html'"/>
+  <img id="p4ResetIcon" class="p4icon"
+       src="/img/p3-reset.png" alt="Reset pager" title="Reset pager"
+       onclick="resetPager()"/>
+  <img id="p4MoreIcon" class="p4icon"
+       src="/img/p3-plus.png" alt="More resources" title="More resources"
+       onclick="window.location='/dcclt/hub.html'"/>
+
+      </span>
+    </p>
+    <div id="p4Search">
+  <form action="javascript://" onsubmit="act_srch()">
+    <p>
+      <!--Oracc Search:-->
+      <input id="p4SrchBox" type="text" size="30"
+	     value=""/>
+      <input type="submit" style="display: none"/>
+      <img id="p4SrchGo" class="p4icon" src="/img/p3-search.png"
+	   alt="Search" title="Search" onclick="act_srch()"/>
+    </p>
+    <p id="p4SrchChars">(j=ŋ&#xa0;sz=š&#xa0;s,=ṣ&#xa0;t,=ṭ&#xa0;0-9=₀-₉; &apos;=alef)</p>
+  </form>
+</div>
+
+    <div id="p4Controls">
+      
+  <div id="p4itemNav" class="p4items" data-ityp="ITEM" data-inth="" data-imax="224">
+    <p class="bg-dk">
+
+      
+      <img id="p4ToggleMeta" class="p4icon" src="/img/p3-full.png"
+	   alt="Toggle metadata pane" title="Toggle metadata pane" onclick="toggle_md()"/>
+      
+      <img id="p4PageItem" class="p4icon p4spread" src="/img/p3-pageitem.png"
+	   alt="Toggle Page/Item view" title="Return to Page view"
+	   onclick="toggle_pi()"/>
+
+      <!--Item-->
+      <img id="p4ItemPrev" class="p4icon p4spread" src="/img/p3-backward.png"
+	   alt="Item back" title="Item back"
+	   onclick="act_item_prev()"/>
+      
+      <span id="p4ItemView"> [ITEM  of 224] </span>
+      
+      <img id="p4ItemNext" class="p4icon p4spread" src="/img/p3-forward.png"
+	   alt="Item forward" title="Item forward"
+	   onclick="act_item_next()"/>
+
+      <span id="p4SrchResults" class="p4srchresults" data-tmax="" data-rmax="0">
+	 Texts [0 matches]
+      </span>
+
+      <span id="p4Translations">
+	
+	<input id="p4Transonly" type="checkbox" onchange="toggle_to()"
+	       value="@@pui_transonly()@@"/>&#xa0;only
+      </span>
+
+    </p>
+  </div>
+
+  <div id="p4PageNav" class="p4pages" data-page="1" data-pmax="9" data-imax="224">
+    <p class="p3toccenter bg-dk">
+
+      <button id="p4Zoom" class="p4spread" onclick="act_zoom('0')">All Results</button>
+
+      <img id="p4PagePrev" class="p4icon p4spread" src="/img/p3-backward.png"
+	   alt="Page back" title="Page back"
+	   onclick="act_prev()"/>
+      
+      <!--Page-->
+      <input id="p4Pageset" type="text" onchange="act_page()" size="3" value="1"/>
+
+      <img id="p4PageNext" class="p4icon p4spread" src="/img/p3-forward.png"
+	   alt="Page forward" title="Page forward"
+	   onclick="act_next()"/>
+
+      224 items
+      /
+      9 pages
+
+      <span id="p4SrchResultpages" class="p4srchresults">[0 matches]</span>
+
+      <span id="p4CeType" class="cetype"><select id="p4CESelect" onchange="act_ce_switch(event)" value="line">
+  <option value="line" selected="selected">Line</option>
+  <option value="unit">Sentence</option>
+  <option value="kwic">KWIC</option>
+</select>
+</span>
+    </p>
+  </div>
+
+
+    </div>
+  </div>
+  <div id="p4Data">
+    <div id="p4Menu">
+<div id="p4MenuSorter">
+<select id="p4MenuSelect" onchange="act_sorter()" value="12">
+<option value="12" selected="selected">period/subgenre</option>
+<option value="21">subgenre/period</option>
+</select>
+</div>
+<div id="p4MenuOutline" class="pgotl level0" data-zmax="16"><h2>Ur III</h2><div class="pgotl level1"><p><a href="javascript://" onclick="act_zoom(1)" data-zoom="1">OB Nippur Ea [1]</a></p></div><h2>Old Babylonian</h2><div class="pgotl level1"><p><a href="javascript://" onclick="act_zoom(2)" data-zoom="2">Laws of rented oxen [1]</a></p><p><a href="javascript://" onclick="act_zoom(3)" data-zoom="3">Metrological [4]</a></p><p><a href="javascript://" onclick="act_zoom(4)" data-zoom="4">Model contract [7]</a></p><p><a href="javascript://" onclick="act_zoom(5)" data-zoom="5">Nigga [3]</a></p><p><a href="javascript://" onclick="act_zoom(6)" data-zoom="6">OB Nippur Diri [1]</a></p><p><a href="javascript://" onclick="act_zoom(7)" data-zoom="7">OB Nippur Ea [127]</a></p><p><a href="javascript://" onclick="act_zoom(8)" data-zoom="8">OB Nippur Izi [2]</a></p><p><a href="javascript://" onclick="act_zoom(9)" data-zoom="9">OB Nippur Lu [4]</a></p><p><a href="javascript://" onclick="act_zoom(10)" data-zoom="10">OB Nippur Ura [4]</a></p><p><a href="javascript://" onclick="act_zoom(11)" data-zoom="11">Obverse Not Preserved [62]</a></p><p><a href="javascript://" onclick="act_zoom(12)" data-zoom="12">Proverb Collection [4]</a></p><p><a href="javascript://" onclick="act_zoom(13)" data-zoom="13">unknown [1]</a></p></div><h2>unknown</h2><div class="pgotl level1"><p><a href="javascript://" onclick="act_zoom(14)" data-zoom="14">Metrological [1]</a></p><p><a href="javascript://" onclick="act_zoom(15)" data-zoom="15">Obverse Not Preserved [1]</a></p><p><a href="javascript://" onclick="act_zoom(16)" data-zoom="16">tu-ta-ti [1]</a></p></div></div></div>
+
+    <div id="p4Content">
+      <div xmlns="http://www.w3.org/1999/xhtml" class="ce" id="p4CExmdContent">
+  <table class="xmd">
+    <tbody class="xmd">
+      <tr class="ce-heading">
+        <td class="h2 border-top heading" colspan="4">Ur III/OB Nippur Ea</td>
+      </tr>
+      <tr xmlns:ce="http://oracc.org/ns/ce/1.0" xmlns:xh="http://www.w3.org/1999/xhtml">
+        <td class="ce-xmd-icon">
+          <a href="javascript://" onclick="act_iref(event)" data-iref="P227671">
+            <img src="/img/viewtext.png" alt="View text"/>
+          </a>
+        </td>
+        <td style="width: 30%">
+          <a href="javascript://" onclick="act_iref(event)" data-iref="P227671">PBS 12, 55</a>
+        </td>
+        <td style="width: 25%;">OB Nippur Ea</td>
+        <td style="width: 41%;"> </td>
+      </tr>
+    </tbody>
+    <tbody class="xmd">
+      <tr class="ce-heading">
+        <td class="h2 border-top heading" colspan="4">Old Babylonian/Laws of rented oxen</td>
+      </tr>
+      <tr xmlns:ce="http://oracc.org/ns/ce/1.0" xmlns:xh="http://www.w3.org/1999/xhtml">
+        <td class="ce-xmd-icon">
+          <a href="javascript://" onclick="act_iref(event)" data-iref="P228949">
+            <img src="/img/viewtext.png" alt="View text"/>
+          </a>
+        </td>
+        <td style="width: 30%">
+          <a href="javascript://" onclick="act_iref(event)" data-iref="P228949">JCS 32, 145, N 4938</a>
+        </td>
+        <td style="width: 25%;">Laws of rented oxen</td>
+        <td style="width: 41%;"> </td>
+      </tr>
+    </tbody>
+    <tbody class="xmd oddeven">
+      <tr class="ce-heading">
+        <td class="h2 border-top heading" colspan="4">Old Babylonian/Metrological</td>
+      </tr>
+      <tr xmlns:ce="http://oracc.org/ns/ce/1.0" xmlns:xh="http://www.w3.org/1999/xhtml">
+        <td class="ce-xmd-icon">
+          <a href="javascript://" onclick="act_iref(event)" data-iref="P229429">
+            <img src="/img/viewtext.png" alt="View text"/>
+          </a>
+        </td>
+        <td style="width: 30%">
+          <a href="javascript://" onclick="act_iref(event)" data-iref="P229429">CBS 15411</a>
+        </td>
+        <td style="width: 25%;">Metrological</td>
+        <td style="width: 41%;"> </td>
+      </tr>
+      <tr xmlns:ce="http://oracc.org/ns/ce/1.0" xmlns:xh="http://www.w3.org/1999/xhtml">
+        <td class="ce-xmd-icon">
+          <a href="javascript://" onclick="act_iref(event)" data-iref="P229505">
+            <img src="/img/viewtext.png" alt="View text"/>
+          </a>
+        </td>
+        <td style="width: 30%">
+          <a href="javascript://" onclick="act_iref(event)" data-iref="P229505">Ist Ni 03352</a>
+        </td>
+        <td style="width: 25%;">Metrological</td>
+        <td style="width: 41%;"> </td>
+      </tr>
+      <tr xmlns:ce="http://oracc.org/ns/ce/1.0" xmlns:xh="http://www.w3.org/1999/xhtml">
+        <td class="ce-xmd-icon">
+          <a href="javascript://" onclick="act_iref(event)" data-iref="P229416">
+            <img src="/img/viewtext.png" alt="View text"/>
+          </a>
+        </td>
+        <td style="width: 30%">
+          <a href="javascript://" onclick="act_iref(event)" data-iref="P229416">Ist Ni 04779</a>
+        </td>
+        <td style="width: 25%;">Metrological</td>
+        <td style="width: 41%;"> </td>
+      </tr>
+      <tr xmlns:ce="http://oracc.org/ns/ce/1.0" xmlns:xh="http://www.w3.org/1999/xhtml">
+        <td class="ce-xmd-icon">
+          <a href="javascript://" onclick="act_iref(event)" data-iref="P230105">
+            <img src="/img/viewtext.png" alt="View text"/>
+          </a>
+        </td>
+        <td style="width: 30%">
+          <a href="javascript://" onclick="act_iref(event)" data-iref="P230105">TMN p. 335, Ist Ni 03626</a>
+        </td>
+        <td style="width: 25%;">Metrological</td>
+        <td style="width: 41%;"> </td>
+      </tr>
+    </tbody>
+    <tbody class="xmd oddeven">
+      <tr class="ce-heading">
+        <td class="h2 border-top heading" colspan="4">Old Babylonian/Model contract</td>
+      </tr>
+      <tr xmlns:ce="http://oracc.org/ns/ce/1.0" xmlns:xh="http://www.w3.org/1999/xhtml">
+        <td class="ce-xmd-icon">
+          <a href="javascript://" onclick="act_iref(event)" data-iref="P229387">
+            <img src="/img/viewtext.png" alt="View text"/>
+          </a>
+        </td>
+        <td style="width: 30%">
+          <a href="javascript://" onclick="act_iref(event)" data-iref="P229387">CBS 15210</a>
+        </td>
+        <td style="width: 25%;">Model contract</td>
+        <td style="width: 41%;"> </td>
+      </tr>
+      <tr xmlns:ce="http://oracc.org/ns/ce/1.0" xmlns:xh="http://www.w3.org/1999/xhtml">
+        <td class="ce-xmd-icon">
+          <a href="javascript://" onclick="act_iref(event)" data-iref="P229038">
+            <img src="/img/viewtext.png" alt="View text"/>
+          </a>
+        </td>
+        <td style="width: 30%">
+          <a href="javascript://" onclick="act_iref(event)" data-iref="P229038">HS 1607 +</a>
+        </td>
+        <td style="width: 25%;">Model contract</td>
+        <td style="width: 41%;"> </td>
+      </tr>
+      <tr xmlns:ce="http://oracc.org/ns/ce/1.0" xmlns:xh="http://www.w3.org/1999/xhtml">
+        <td class="ce-xmd-icon">
+          <a href="javascript://" onclick="act_iref(event)" data-iref="P229428">
+            <img src="/img/viewtext.png" alt="View text"/>
+          </a>
+        </td>
+        <td style="width: 30%">
+          <a href="javascript://" onclick="act_iref(event)" data-iref="P229428">Ist Ni 03775</a>
+        </td>
+        <td style="width: 25%;">Model contract</td>
+        <td style="width: 41%;"> </td>
+      </tr>
+      <tr xmlns:ce="http://oracc.org/ns/ce/1.0" xmlns:xh="http://www.w3.org/1999/xhtml">
+        <td class="ce-xmd-icon">
+          <a href="javascript://" onclick="act_iref(event)" data-iref="P229384">
+            <img src="/img/viewtext.png" alt="View text"/>
+          </a>
+        </td>
+        <td style="width: 30%">
+          <a href="javascript://" onclick="act_iref(event)" data-iref="P229384">Ist Ni 03949</a>
+        </td>
+        <td style="width: 25%;">Model contract</td>
+        <td style="width: 41%;"> </td>
+      </tr>
+      <tr xmlns:ce="http://oracc.org/ns/ce/1.0" xmlns:xh="http://www.w3.org/1999/xhtml">
+        <td class="ce-xmd-icon">
+          <a href="javascript://" onclick="act_iref(event)" data-iref="P229411">
+            <img src="/img/viewtext.png" alt="View text"/>
+          </a>
+        </td>
+        <td style="width: 30%">
+          <a href="javascript://" onclick="act_iref(event)" data-iref="P229411">N 5248</a>
+        </td>
+        <td style="width: 25%;">Model contract</td>
+        <td style="width: 41%;"> </td>
+      </tr>
+      <tr xmlns:ce="http://oracc.org/ns/ce/1.0" xmlns:xh="http://www.w3.org/1999/xhtml">
+        <td class="ce-xmd-icon">
+          <a href="javascript://" onclick="act_iref(event)" data-iref="P229443">
+            <img src="/img/viewtext.png" alt="View text"/>
+          </a>
+        </td>
+        <td style="width: 30%">
+          <a href="javascript://" onclick="act_iref(event)" data-iref="P229443">PBS 05, 128</a>
+        </td>
+        <td style="width: 25%;">Model contract</td>
+        <td style="width: 41%;"> </td>
+      </tr>
+      <tr xmlns:ce="http://oracc.org/ns/ce/1.0" xmlns:xh="http://www.w3.org/1999/xhtml">
+        <td class="ce-xmd-icon">
+          <a href="javascript://" onclick="act_iref(event)" data-iref="P228991">
+            <img src="/img/viewtext.png" alt="View text"/>
+          </a>
+        </td>
+        <td style="width: 30%">
+          <a href="javascript://" onclick="act_iref(event)" data-iref="P228991">PBS 11/1, 040</a>
+        </td>
+        <td style="width: 25%;">Model contract</td>
+        <td style="width: 41%;"> </td>
+      </tr>
+    </tbody>
+    <tbody class="xmd oddeven">
+      <tr class="ce-heading">
+        <td class="h2 border-top heading" colspan="4">Old Babylonian/Nigga</td>
+      </tr>
+      <tr xmlns:ce="http://oracc.org/ns/ce/1.0" xmlns:xh="http://www.w3.org/1999/xhtml">
+        <td class="ce-xmd-icon">
+          <a href="javascript://" onclick="act_iref(event)" data-iref="P227845">
+            <img src="/img/viewtext.png" alt="View text"/>
+          </a>
+        </td>
+        <td style="width: 30%">
+          <a href="javascript://" onclick="act_iref(event)" data-iref="P227845">CBS 15413</a>
+        </td>
+        <td style="width: 25%;">Nigga</td>
+        <td style="width: 41%;"> </td>
+      </tr>
+      <tr xmlns:ce="http://oracc.org/ns/ce/1.0" xmlns:xh="http://www.w3.org/1999/xhtml">
+        <td class="ce-xmd-icon">
+          <a href="javascript://" onclick="act_iref(event)" data-iref="P229409">
+            <img src="/img/viewtext.png" alt="View text"/>
+          </a>
+        </td>
+        <td style="width: 30%">
+          <a href="javascript://" onclick="act_iref(event)" data-iref="P229409">N 6113</a>
+        </td>
+        <td style="width: 25%;">Nigga</td>
+        <td style="width: 41%;"> </td>
+      </tr>
+      <tr xmlns:ce="http://oracc.org/ns/ce/1.0" xmlns:xh="http://www.w3.org/1999/xhtml">
+        <td class="ce-xmd-icon">
+          <a href="javascript://" onclick="act_iref(event)" data-iref="P228706">
+            <img src="/img/viewtext.png" alt="View text"/>
+          </a>
+        </td>
+        <td style="width: 30%">
+          <a href="javascript://" onclick="act_iref(event)" data-iref="P228706">UM 29-16-107</a>
+        </td>
+        <td style="width: 25%;">Nigga</td>
+        <td style="width: 41%;"> </td>
+      </tr>
+    </tbody>
+    <tbody class="xmd">
+      <tr class="ce-heading">
+        <td class="h2 border-top heading" colspan="4">Old Babylonian/OB Nippur Diri</td>
+      </tr>
+      <tr xmlns:ce="http://oracc.org/ns/ce/1.0" xmlns:xh="http://www.w3.org/1999/xhtml">
+        <td class="ce-xmd-icon">
+          <a href="javascript://" onclick="act_iref(event)" data-iref="P228393">
+            <img src="/img/viewtext.png" alt="View text"/>
+          </a>
+        </td>
+        <td style="width: 30%">
+          <a href="javascript://" onclick="act_iref(event)" data-iref="P228393">N 5158</a>
+        </td>
+        <td style="width: 25%;">OB Nippur Diri</td>
+        <td style="width: 41%;"> </td>
+      </tr>
+    </tbody>
+    <tbody class="xmd oddeven">
+      <tr class="ce-heading">
+        <td class="h2 border-top heading" colspan="4">Old Babylonian/OB Nippur Ea</td>
+      </tr>
+      <tr xmlns:ce="http://oracc.org/ns/ce/1.0" xmlns:xh="http://www.w3.org/1999/xhtml">
+        <td class="ce-xmd-icon">
+          <a href="javascript://" onclick="act_iref(event)" data-iref="P227938">
+            <img src="/img/viewtext.png" alt="View text"/>
+          </a>
+        </td>
+        <td style="width: 30%">
+          <a href="javascript://" onclick="act_iref(event)" data-iref="P227938">CBS 03965</a>
+        </td>
+        <td style="width: 25%;">OB Nippur Ea</td>
+        <td style="width: 41%;"> </td>
+      </tr>
+      <tr xmlns:ce="http://oracc.org/ns/ce/1.0" xmlns:xh="http://www.w3.org/1999/xhtml">
+        <td class="ce-xmd-icon">
+          <a href="javascript://" onclick="act_iref(event)" data-iref="P228019">
+            <img src="/img/viewtext.png" alt="View text"/>
+          </a>
+        </td>
+        <td style="width: 30%">
+          <a href="javascript://" onclick="act_iref(event)" data-iref="P228019">CBS 04880</a>
+        </td>
+        <td style="width: 25%;">OB Nippur Ea</td>
+        <td style="width: 41%;"> </td>
+      </tr>
+      <tr xmlns:ce="http://oracc.org/ns/ce/1.0" xmlns:xh="http://www.w3.org/1999/xhtml">
+        <td class="ce-xmd-icon">
+          <a href="javascript://" onclick="act_iref(event)" data-iref="P229469">
+            <img src="/img/viewtext.png" alt="View text"/>
+          </a>
+        </td>
+        <td style="width: 30%">
+          <a href="javascript://" onclick="act_iref(event)" data-iref="P229469">CBS 06071</a>
+        </td>
+        <td style="width: 25%;">OB Nippur Ea</td>
+        <td style="width: 41%;"> </td>
+      </tr>
+      <tr xmlns:ce="http://oracc.org/ns/ce/1.0" xmlns:xh="http://www.w3.org/1999/xhtml">
+        <td class="ce-xmd-icon">
+          <a href="javascript://" onclick="act_iref(event)" data-iref="P229423">
+            <img src="/img/viewtext.png" alt="View text"/>
+          </a>
+        </td>
+        <td style="width: 30%">
+          <a href="javascript://" onclick="act_iref(event)" data-iref="P229423">CBS 06118</a>
+        </td>
+        <td style="width: 25%;">OB Nippur Ea</td>
+        <td style="width: 41%;"> </td>
+      </tr>
+      <tr xmlns:ce="http://oracc.org/ns/ce/1.0" xmlns:xh="http://www.w3.org/1999/xhtml">
+        <td class="ce-xmd-icon">
+          <a href="javascript://" onclick="act_iref(event)" data-iref="P229494">
+            <img src="/img/viewtext.png" alt="View text"/>
+          </a>
+        </td>
+        <td style="width: 30%">
+          <a href="javascript://" onclick="act_iref(event)" data-iref="P229494">CBS 06776</a>
+        </td>
+        <td style="width: 25%;">OB Nippur Ea</td>
+        <td style="width: 41%;"> </td>
+      </tr>
+      <tr xmlns:ce="http://oracc.org/ns/ce/1.0" xmlns:xh="http://www.w3.org/1999/xhtml">
+        <td class="ce-xmd-icon">
+          <a href="javascript://" onclick="act_iref(event)" data-iref="P229413">
+            <img src="/img/viewtext.png" alt="View text"/>
+          </a>
+        </td>
+        <td style="width: 30%">
+          <a href="javascript://" onclick="act_iref(event)" data-iref="P229413">CBS 07072</a>
+        </td>
+        <td style="width: 25%;">OB Nippur Ea</td>
+        <td style="width: 41%;"> </td>
+      </tr>
+      <tr xmlns:ce="http://oracc.org/ns/ce/1.0" xmlns:xh="http://www.w3.org/1999/xhtml">
+        <td class="ce-xmd-icon">
+          <a href="javascript://" onclick="act_iref(event)" data-iref="P229449">
+            <img src="/img/viewtext.png" alt="View text"/>
+          </a>
+        </td>
+        <td style="width: 30%">
+          <a href="javascript://" onclick="act_iref(event)" data-iref="P229449">CBS 07084</a>
+        </td>
+        <td style="width: 25%;">OB Nippur Ea</td>
+        <td style="width: 41%;"> </td>
+      </tr>
+      <tr xmlns:ce="http://oracc.org/ns/ce/1.0" xmlns:xh="http://www.w3.org/1999/xhtml">
+        <td class="ce-xmd-icon">
+          <a href="javascript://" onclick="act_iref(event)" data-iref="P229408">
+            <img src="/img/viewtext.png" alt="View text"/>
+          </a>
+        </td>
+        <td style="width: 30%">
+          <a href="javascript://" onclick="act_iref(event)" data-iref="P229408">CBS 07087</a>
+        </td>
+        <td style="width: 25%;">OB Nippur Ea</td>
+        <td style="width: 41%;"> </td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+    </div>
+  </div>
+  <div id="p4Footer">
+    
+
+  </div>
+</div>
+</body>
+</html>

@@ -1,0 +1,972 @@
+            religions
+Article
+The Story of the Watchers as a Counter Narrative: Enochic
+Responses to the Authority of Mesopotamian Sages
+Amar Annus
+
+
+                                         School of Theology and Religious Studies, University of Tartu, Ülikooli 18-310, 50090 Tartu, Estonia;
+                                         amar.annus@ut.ee
+
+
+                                         Abstract: The extant texts of Enochic Judaism present accounts about the early history of humankind,
+                                         which use the motifs familiar from the ancient Mesopotamian historiography. The different versions
+                                         of the Jewish story of the Watchers originate as counter narratives about the antediluvian sages, or
+                                         apkallus, which are known from the cuneiform literature. The myth of Adapa in Akkadian offers a
+                                         version of the narrative in which the sage was promoted in heaven to a god-like status, which concept
+                                         is corroborated with an entry in the cuneiform compendium Tintir and the Chronicle of the Esagila.
+                                         This tradition also associated Adapa with the immortalized flood survivor. In the form of a counter
+                                         narrative, the Enochic texts of Judaism attributed the heavenly assumption to Enoch and presented
+                                         the Watchers as the demonic entities subordinated to him. The fall of the Watchers, the promotion of
+                                         Enoch, and the primordial battle against evil forces are depicted in the Animal Apocalypse of 1 Enoch
+                                         85–90. A very similar scenario is found in the Chronicle of Esagila, which describes the early history of
+                                         humankind from the Babylonian perspective. It can be demonstrated that the Animal Apocalypse
+                                         uses this or a similar cuneiform historiographic source as the basis of its counter narrative.
+
+                                         Keywords: Enochic Judaism; Book of Enoch; Animal Apocalypse; ancient Mesopotamian chronicles;
+                                         counter narrative
+
+
+
+
+                                         1. Introduction
+Citation: Annus, Amar. 2024. The
+                                              The ancient Israelite literate culture was aware that it was a relative latecomer in the
+Story of the Watchers as a Counter
+                                         Ancient Near East, where the Egyptian and Mesopotamian civilizations were far older
+Narrative: Enochic Responses to the
+Authority of Mesopotamian Sages.
+                                         and more glorious. The need to reinterpret older sources was primary within the circles
+Religions 15: 1024. https://doi.org/
+                                         of Jewish intellectuals, who composed the Hebrew Bible. The account of the world’s
+10.3390/rel15091024
+                                         origins in Genesis 1–11 addresses its “Mesopotamian problem” with various strategies.
+                                         To face the issue, the authors of Genesis negotiated the past in a way that it included
+Academic Editors: Robin Baker and
+                                         Mesopotamian primacy in the emergence of civilization but privileged Israel as a new
+Arndt Büssing
+                                         beginning, a supersession (Hendel 2005, p. 24). In this manner, potential damage to the
+Received: 29 April 2024                  ancient Israelite religious identity was efficiently avoided.
+Revised: 16 July 2024                         The stories provide people with identities in the societies where they circulate. The
+Accepted: 20 August 2024                 preceding ancient Mesopotamian narratives had to be changed to fit into the Israelite
+Published: 23 August 2024                agenda. When a group or a nation is too much of an object of others’ actions, its identity is
+                                         restrained and can be liberated with a new narrative. According to the social philosopher
+                                         H. Nelson, the narratives can provide moral agencies and take them away (Nelson 2001).
+                                         Such important cultural narratives are called “master narratives”, the stories found lying
+Copyright: © 2024 by the author.         about in the culture that serve as summaries of socially shared understandings:
+Licensee MDPI, Basel, Switzerland.
+This article is an open access article         Master narratives are often archetypal, consisting of stock plots and readily
+distributed under the terms and                recognizable character types, and we use them not only to make sense of our
+conditions of the Creative Commons             experience but also to justify what we do. As the repositories of common norms,
+Attribution (CC BY) license (https://          master narratives exercise a certain authority over our moral imaginations and
+creativecommons.org/licenses/by/               play a role in informing our moral intuitions. (Nelson 2001, p. 6)
+4.0/).
+
+
+
+
+Religions 2024, 15, 1024. https://doi.org/10.3390/rel15091024                                                 https://www.mdpi.com/journal/religions
+Religions 2024, 15, 1024                                                                                            2 of 12
+
+
+
+                                Several studies have described the strategies that the authors of the Hebrew Bible used
+                           to accommodate the foreign ideas for new contexts. Polemics against Mesopotamian tradi-
+                           tions can already be found in the creation account of Genesis 1 (Frahm 2010).
+                           R. Hendel (2005) writes that the authors of Genesis 1–11 responded to their encounter
+                           with Mesopotamian sources by using three main ways of adaption:
+                           1.   Appropriation means that a motif in the Mesopotamian master narrative was domes-
+                                ticated for the Hebrew Bible in a very similar form as it occurred in the original source.
+                                The foreign origin of a feature can be fully effaced or partially retained. The best
+                                example of appropriation in Genesis is the flood story, for which the Mesopotamian
+                                ancestry is known since George Smith’s discovery in 1872 (Hendel 2005, pp. 25–26).
+                                Some aspects of the flood and its aftermath in the Genesis account subordinate the
+                                Mesopotamian material to the dominant narrative of Israel’s origins and destiny
+                                (Hendel 2005, p. 26).
+                           2.   The second strategy is mimicry, in which a Mesopotamian tradition is reproduced
+                                with creative imitation, often with subversive humor or irony. Hendel’s example
+                                of mimicry is the story of Nimrod in Genesis 10: 8–9 (Hendel 2005, p. 30). This
+                                category can include more sophisticated techniques, like the retelling and reworking
+                                of original sources. The foundational narrative and its characters are put into the light
+                                of non-traditional interpretation, by adding, moving, and removing features from the
+                                master story to make new accents in it but not to dissolve its communicative force.
+                                The mimicry technique often produces an “alternative story”, which deviates from
+                                the master narrative but does not contest it (Nelson 2001, pp. 153–54).
+                           3.   Inversion is the “counter narrative”, the most complicated and interesting strategy
+                                of acquisition as it is often of polemical nature. For Hendel, the account about the
+                                construction of the Tower of Babel serves as an example, which in Genesis 11 is
+                                depicted as a rebellious act against the natural divide between the God and humanity
+                                (Hendel 2005, pp. 31–33). The Tower of Babel was to be made of baked bricks in
+                                Genesis 11: 3, which emphasizes its intended permanence, in contrast to the actual
+                                building material that was sun-dried bricks. Traditions about the early history in
+                                Mesopotamian and Jewish traditions differ in several respects, which represent the
+                                outcomes of ancient debates. Some of the Jewish reinterpretations originated from
+                                counter versions of earlier Mesopotamian master narratives (Frahm 2010).
+                                The comparative and intertextual reading of narratives from different cultural contexts
+                           and in various languages is required to detect the identities these texts intended to share
+                           or renounce for their readers and followers. The present paper will study the Babylonian
+                           tradition of antediluvian sages from the point of view of comparing it to the Jewish accounts
+                           about the Watchers (Annus 2010). The accounts about the Mesopotamian figure of Adapa
+                           will be compared to texts about Enoch in Jewish sources, especially in the so-called Animal
+                           Apocalypse (1 Enoch 85–90). It will be demonstrated that during the long processes of
+                           transmission and development, the Enochic tradition in Judaism selected and reworked
+                           various Mesopotamian sources, especially the lore about Adapa/Oannes (Annus 2016,
+                           2022). Within Judaism, Genesis 1–11 started a counter-narrative process to cuneiform
+                           traditions that the books of Enoch further expanded with making use of more diverse
+                           Mesopotamian narratives about primeval humanity.
+
+                           2. Discussion: The Story of Watchers as Counter Narrative
+                                 The use of counter narratives in reworking the Mesopotamian material can be exem-
+                           plified with the texts about the Watchers in Genesis 6: 1–4 as well as in similar accounts
+                           from the Second Temple literature (Annus 2010; Kvanvig 2011). The mythology of the
+                           Watchers and their sons, the giants, are derived from Jewish counter narratives of the
+                           Mesopotamian accounts about the antediluvian sages, the apkallus. There are patterns of
+                           similarities between the antediluvian apkallus and the Watchers on one hand and between
+                           postdiluvian sages and the giants, the sons of the Watchers. The first two groups were fully
+                           divine, while the second two were partly of human descent (Annus 2010, p. 282).
+Religions 2024, 15, 1024                                                                                            3 of 12
+
+
+
+                                 A counter story often emerges when the master narrative becomes oppressive to a
+                           certain group. The antediluvian origin of the Mesopotamian arts and scholarship and
+                           their efficiency were certainly embarrassing factors for those who composed the Watchers
+                           story. For a nation that had been under the rule of Mesopotamian empires for centuries,
+                           the account about the glorious origins of its science and technology had to be changed.
+                           The Israelite scribes did it by showing the Watchers’ actions in a very negative light and
+                           themselves as succumbed to the authority of Enoch. The counter story is not necessarily
+                           polemical towards its master narrative; it works as a counter in a more subtle way by
+                           dissolving its communicative force through the displacement of plots and characters
+                           (Nelson 2001, pp. 152–53). According to H. Nelson, the counter story is a narrative that
+                           takes up a shared but oppressive understanding of who someone is and sets out to shift it.
+                           If the counter story is successful, it allows the person who is reidentified by it to be seen by
+                           herself and by others as someone worthy of moral respect—a good in itself. But because
+                           moral respect is necessary for the free exercise of moral agency, the counter story’s function
+                           of reidentification also contributes to the person’s freedom to act (Nelson 2001, p. 69).
+                                 The story of the Watchers was important for groups within Judaism that held the
+                           figure of Enoch in high esteem (Boccaccini 1998). The Jewish counter narrative took away
+                           the moral rights from ancient Mesopotamian sages and ascribed the all-knowing spiritual
+                           authority to Enoch, who acted as the supervisor of the fallen angels. The Mesopotamian
+                           master narrative, which the Watcher story set out to counter, had the following content:
+                           All kinds of the Babylonian knowledge including arts, priestly crafts, and technical skills
+                           originate from antediluvian times. This knowledge is an exclusive property of Babylonian
+                           scholars and priests, who have made it forbidden to reveal it to uninitiated. This knowledge
+                           originates from the antediluvian sages; it is indispensable and beneficial to humankind.
+                           The foremost among the sages was Adapa, who became enthroned in heaven (Annus 2016).
+                                 This understanding was countered by the following Jewish narrative: During ante-
+                           diluvian times, certain angels—the Watchers—descended to earth and taught to mankind
+                           negative things. They committed immoral actions and taught their secrets to mortal women
+                           in exchange for sex. They transgressed the border between the divine and human realms.
+                           The knowledge they taught to mankind led to harmful consequences. Their transgressions
+                           were punished by the flood, which eliminated their physical existence and turned their
+                           descendants into evil demons of disease. The antediluvian figure Enoch, who lived in the
+                           world around the same time, was in every respect superior to the Watchers, and it is he
+                           who ascended to heaven.
+                                 In order successfully to fulfill its agenda, the counter narrative or alternative story
+                           must become popular. Therefore, it would have been useless for Jewish authors to write a
+                           new unfamiliar account. The counter story is more effective when it uses deviant versions
+                           of the master narrative, which shift the accents by changing its plot and characters but
+                           nevertheless remain recognizably similar to the original narrative. Every well-known story
+                           and urban legend tend to have variants after a longer time in oral circulation. In some
+                           layers of Mesopotamian mythology and ritual practices, the ancient sages were already
+                           regarded as dangerous and potentially malicious creatures, upon which the Jewish authors
+                           could build their counter narratives (Annus 2010, pp. 297–303). For example, in some
+                           anti-witchcraft incantations from the Babylonian series Maqlû (III 61–76; VI 85–89), the
+                           ancient sages occur as evil agents. The evilness of the antediluvian sages manifests in their
+                           capacity to bewitch: “Pure River (and) holy Sun am I. My sorcerers are the Sages of the
+                           apsû, my sorceresses are the heavenly Daughters of Anu. They perform sorcery against me,
+                           they keep on performing sorcery against me” (Abusch 2015, p. 75, III 61–64). Accordingly,
+                           the ancient sages were sometimes demonized as evil beings in ancient Mesopotamia, which
+                           the Jewish interpreters took over and emphasized.
+                                 For a creative individual intending to compose the counter story of a popular narrative,
+                           the pool of variations always provides sound opportunities to consider a similar story with
+                           a quite different meaning. The Jewish scholars used less-known Babylonian traditions to
+                           compose their counter narratives. In the written record of cuneiform literature, variation
+Religions 2024, 15, 1024                                                                                          4 of 12
+
+
+
+                           existed in all periods (Dalley 2013). In oral circulation, the variation of narratives was
+                           presumably even larger. With an adequate spin doctoring, the counter story achieves its
+                           goal in changing the meanings in already well-known master narratives. In the follow-
+                           ing, evidence for some Jewish alternative readings of Mesopotamian popular stories will
+                           be discussed.
+
+                           3. The Promotion of Adapa in Heaven
+                                 The foremost among antediluvian sages in ancient Mesopotamia was Adapa, whose
+                           mythical activities are illuminated by a variety of cuneiform sources (Annus 2016). The
+                           epic fragments in Akkadian tell about primeval Adapa, in particular, the priest and cook in
+                           the most ancient city Eridu (Izre’el 2001, pp. 5–6). According to the myth, Adapa routinely
+                           goes fishing to the Persian Gulf, where one day the south wind overturns his boat. Adapa
+                           breaks the wings of the wind but falls into the sea and immerses into the ocean. After
+                           seven days, the sky god Anu invites him to visit heaven, where he becomes indoctrinated.
+                           After that meeting, Adapa returned to earth, where he taught the heavenly secrets to
+                           humankind (Izre’el 2001). Two recently published Old Babylonian tablets from Meturan,
+                           with the Adaba myth in Sumerian, tell the same story but integrate it into the history of the
+                           primeval world, which perspective is lacking in Akkadian texts (Cavigneaux 2014). In the
+                           Sumerian version, Adaba emerged as a creation of Enki after a series of events following
+                           the primeval flood. Recently, a Middle Babylonian fragment from Nippur with the Adaba
+                           myth in Sumerian was published, demonstrating its wider circulation (Peterson 2017). The
+                           Sumerian version predates Akkadian narratives, which individual tablets contain different
+                           editions of a similar story.
+                                 Some versions of the Adapa myth still circulated in the Hellenistic period. The
+                           Babylonian priest Berossus in the 3rd century BCE wrote about the primeval beast Oannes,
+                           who, “in the very first year”, emerged from the Persian Gulf and began to teach mankind
+                           all of the necessary knowledge for civilization (Verbrugghe and Wickersham 2000, p. 44,
+                           fragment 1). This account tells nothing about the sage’s fishing expedition and his visit
+                           to heaven. Berossus begins where the Mesopotamian myth ends, providing a sequel to
+                           the story about the heavenly journey of the sage. In the Middle Babylonian version of the
+                           Adapa myth, the sage’s journey to heaven is complemented with the motif of his return
+                           to earth, after having refused the food offered by the god Anu in heaven (fragment B,
+                           rev. 67–70):
+                               “Come, Adapa, why did you not eat and drink? Hence you shall not live! Alas for
+                               inferior humanity!”—“Ea my lord told me: ‘Do not eat, do not dr[i]nk!’”—“Take
+                               him and [retu]rn him to (his) earth!” (Izre’el 2001, p. 21)
+                                 The Middle Babylonian version and the Berossus account of the story mutually il-
+                           luminate each other: Adapa first disappeared in the ocean to visit the heavens and later
+                           again emerged from the sea to return to teach mankind as Oannes (Annus 2016, p. 50).
+                           However, the story had even more variations. According to one cuneiform tablet from the
+                           first millennium BCE, Adapa remained in heaven for Anu’s service. The Neo-Assyrian
+                           tablet K 8214 in the British Museum contains a different narrative about the destiny of
+                           Adapa. The eight lines in the Nineveh fragment concerning Adapa’s heavenly status read
+                           as follows (K 8214, rev. 7′ –14′ ):
+                                7′ . [. . .] Adapa ultu išid šamê ana elat šamê
+                                8′ . [. . . ip]pallisma puluhtašu ı̄mur
+                                9′ . [inūm]išu d Anu ša Adapa elı̄šu mas.s.arta iš[kun]
+                               10′ . [. . .] kı̄ ša d Ea šubarrâšu iškun
+                               11′ . [d An]u bēlūssu ana arkat ūmē ana šūpî šı̄mta iš[îm]
+                               12′ . [. . .] Adapa zēr amēlūti
+                               13′ . [. . .] šū šalt.iš kappi šūti išbiru
+                               14′ . [. . .] ana šamê elû šı̄ lū kı̄am
+   Religions 2024, 15, x FOR PEER REVIEW                                                                                                             5 of 13
+
+Religions 2024, 15, 1024                                                                                                                           5 of 12
+
+                                            12′. […] Adapa zēr amēlūti
+                                            13′. […] šū šalṭiš kappi šūti išbiru
+                                       “[. . .] Adapa, from the foundation of heaven to the summit of heaven,
+                                            14′. […] ana šamê elû šī lū kīam
+                                       [. . .] looked
+                                            “[…]       at [. from
+                                                   Adapa,    . .] and  saw
+                                                                     the    his awesomeness.
+                                                                         foundation    of heaven to the summit of heaven,
+                                       At […]
+                                            that looked
+                                                  time Anuat […] and sawathis
+                                                               s[et]  Adapa     hisawesomeness.
+                                                                                     service.
+                                            Athe
+                                       [. . .]  that time Anuhis
+                                                  established      s[et] Adapafrom
+                                                                      freedom    at hisEa.
+                                                                                        service.
+                                       [An]u se[t] a decree to make glorious hisEa.
+                                            […]   he established     his freedom    from   lordship forever:
+                                            [An]u se[t] a decree to make glorious his lordship forever:
+                                       [. . .] Adapa, seed of humankind,
+                                            […] Adapa, seed of humankind,
+                                       [. . .]
+                                            […]he he
+                                                  whowhobroke
+                                                           broke thethe
+                                                                      South  Wind’s
+                                                                         South  Wind’swing
+                                                                                         wingtriumphantly
+                                                                                                triumphantly
+                                       (and)(and)   ascended
+                                                ascended         to heaven,—so
+                                                            to heaven,—so          be it!”
+                                                                               be it!”     (Izre’el
+                                                                                       (Izre’el     2001,
+                                                                                                2001,     p. 38)
+                                                                                                      p. 38)
+                                       TheThe   elevation
+                                            elevation       of Adapa
+                                                         of Adapa         in this
+                                                                     in this      passage
+                                                                               passage    cancan
+                                                                                               be be  detected
+                                                                                                   detected      in the
+                                                                                                             in the   lastlast
+                                                                                                                            twotwo      lines,
+                                                                                                                                   lines,       where
+                                                                                                                                            where
+                                 thethe  word
+                                      word       “triumphantly”
+                                             “triumphantly”          (šalṭiš)
+                                                                 (šalt. iš)    occurs,
+                                                                            occurs,     which
+                                                                                     which    in in Akkadian
+                                                                                                 Akkadian        texts
+                                                                                                             texts      usually
+                                                                                                                    usually         refers
+                                                                                                                                refers    to  to
+                                                                                                                                             royalroyal
+                                     military
+                                 military      feats
+                                           feats  (see(see CAD
+                                                         CAD   Š/1Š/1269f.).
+                                                                        269f.).The
+                                                                                Theexclamation
+                                                                                      exclamation“so “sobe
+                                                                                                         beititforever”
+                                                                                                                forever” (šı̄
+                                                                                                                            (šī llū  kīam) refers
+                                                                                                                                 ū kı̄am)   refers to
+                                 to aa change
+                                       change inin status;
+                                                    status; this
+                                                             this formula
+                                                                   formula asserts
+                                                                               assertsthe
+                                                                                        thefact
+                                                                                             factthat
+                                                                                                   thatAdapa
+                                                                                                        Adapahas hasascended
+                                                                                                                       ascendedtotoheaven  heavenand
+                                 andshould
+                                       should remain
+                                                remain  there (Izre’el
+                                                          there (Izre’el 2001,  p. p.
+                                                                            2001,  42).42).
+                                                                                        Accordingly,
+                                                                                            Accordingly,in this   variant
+                                                                                                            in this         of the
+                                                                                                                      variant         Adapa
+                                                                                                                                 of the    Adapamyth,
+                                     the the
+                                 myth,   sagesage
+                                                assumed
+                                                    assumed a throne
+                                                               a throne  in in
+                                                                             heaven
+                                                                               heaven after  hishis
+                                                                                         after    ascension.
+                                                                                                    ascension. InInthe
+                                                                                                                     theSumerian
+                                                                                                                          Sumerianversion,version,the
+                                 theanalogous
+                                      analogoussituation
+                                                   situationoccurs
+                                                              occurswhen whenAn Anoﬀers
+                                                                                     offerstotoAdaba
+                                                                                                Adabaininheaven
+                                                                                                          heavena athrone
+                                                                                                                        thronetotositsitonon asasa ges-
+                                                                                                                                                   a
+                                     ture of benevolence:
+                                 gesture  of  benevolence:
+                                          a[n]-e
+                                       a[n]-e     a-da-ba
+                                              a-da-ba   geš-túg
+                                                           geš-túg GEŠTUGkù-zu
+                                                                GEŠTUG        kù-zuigi-du
+                                                                                      igi-du  gešg[u-z]a mu-un-na-an-
+                                                                                             geš
+                                                                                           8 8 g[u-z]a   mu-un-na-an-˹sum˺ “An
+                                          „An
+                                       gave  to gave  to Adaba—the
+                                                Adaba—the       intelligentintelligent
+                                                                              and wise and  wise one—the
+                                                                                          one—the   th[ron]eth[ron]e as an audience
+                                                                                                             as an audience gift”.
+                                          gift”. (Cavigneaux
+                                       (Cavigneaux    2014, p. 23, 2014,
+                                                                      linep.166)
+                                                                             23, line 166)
+                                      TheThe variant
+                                          variant      of the
+                                                   of the     Adapa
+                                                           Adapa       myth
+                                                                    myth      in which
+                                                                           in which    thethe sage
+                                                                                           sage waswas   elevated
+                                                                                                     elevated      to the
+                                                                                                               to the      status
+                                                                                                                        status     of Anu
+                                                                                                                                of Anu
+                                    himself
+                                 himself    explains
+                                         explains   thethe  entry
+                                                        entry     in the
+                                                               in the     cuneiform
+                                                                       cuneiform        topographical
+                                                                                     topographical      series
+                                                                                                    series     Tintir
+                                                                                                            Tintir (II (II
+                                                                                                                       2), 2), which
+                                                                                                                           which       lists
+                                                                                                                                   lists
+                                    important  cult  places in Babylon   (George    1992). This entry directly follows    the
+                                 important cult places in Babylon (George 1992). This entry directly follows the description   description
+                                    of Marduk’s
+                                 of Marduk’s  seatseat “Tiamat”
+                                                    “Tiamat”       in his
+                                                               in his     holiest
+                                                                      holiest      cella:
+                                                                               cella:
+                                           [k]i .ti l mu
+                                       [k]i.tilmun    ki .nan šu-[bat]
+                                                              k i . n a šu-[bat]
+                                                                          d a-nimda-nim  šá mār(d u
+                                                                                   šá mār(dumu)  mmu)    m ú- d a - ni [ m ina muh-hi áš-bu]
+                                                                                                    ú-d a-ni[m   ina muh-hi áš-bu]
+                                           “Ki-tilmunna—“Place               of Tilmun”—the    seat
+                                       “Ki-tilmunna—“Place of Tilmun”—the seat of Anu, [on] which   of Anu,   [on]    which   theofSon
+                                                                                                                        the Son        of Oan-
+                                                                                                                                    Oannes
+                                           nes [sits]”.    (George
+                                       [sits]”. (George 1992, p. 44)     1992,  p. 44)
+                                            It can be summarized that there existed two versions of the Adapa myth in the Nine-
+                                        It can be summarized that there existed two versions of the Adapa myth in the
+                                     veh archives. The fragment K 8214 presents a diﬀerent version of the outcome of the story:
+                                 Nineveh archives. The fragment K 8214 presents a different version of the outcome of
+                                     Adapa was not returned to the earth but remained in heaven as the ultimate accomplish-
+                                 the story: Adapa was not returned to the earth but remained in heaven as the ultimate
+                                     ment of his divine wisdom (Kvanvig 2011, p. 124; Izre’el 2001, p. 42). As Kvanvig rightly
+                                 accomplishment of his divine wisdom (Kvanvig 2011, p. 124; Izre’el 2001, p. 42). As
+                                     notes, the
+                                 Kvanvig            meaning
+                                               rightly   notes,ofthe Adapa’s
+                                                                        meaning  destiny    in this manuscript
+                                                                                      of Adapa’s                     changes
+                                                                                                       destiny in this           the whole
+                                                                                                                         manuscript            focus the
+                                                                                                                                          changes       of the
+                                 whole focus of the text: “The focus is not any longer that Adapa got wisdom and not eternal is
+                                     text:  “The    focus   is not   any   longer   that  Adapa      got  wisdom    and  not   eternal  life.  The   focus
+                                 life.the
+                                        Theelevation
+                                              focus isof   Adapa
+                                                         the          as theofone
+                                                               elevation            among
+                                                                                Adapa         humans
+                                                                                          as the           who stayed
+                                                                                                   one among      humansin heaven     with Anu
+                                                                                                                             who stayed             forever”
+                                                                                                                                              in heaven
+                                     (Kvanvig       2011,  p.  123).   This  diﬀerent    ending     of the   Adapa   myth
+                                 with Anu forever” (Kvanvig 2011, p. 123). This different ending of the Adapa myth features features   in  the  list  of seats
+                                     of Marduk’s
+                                 in the   list of seatscella   E-umuša,cella
+                                                          of Marduk’s        where     a certain
+                                                                                  E-umuša,         “sonaof
+                                                                                               where          Oannes”
+                                                                                                            certain “sonsits  on Anu’ssits
+                                                                                                                          of Oannes”       throneAnu’s
+                                                                                                                                                     (Annus
+                                     2016,    p.  30).
+                                 throne (Annus 2016, p. 30).
+                                        TheThe     elevated
+                                               elevated         status
+                                                           status        of Adapa
+                                                                     of Adapa          is reﬂected
+                                                                                   is reflected    in ainNeo-Assyrian
+                                                                                                           a Neo-Assyrian      literary
+                                                                                                                           literary      catalogue
+                                                                                                                                      catalogue      fromfrom
+                                     Nineveh       (Rm   618),    which    lists the  ﬁrst  lines   of  tablets  of diﬀerent
+                                 Nineveh (Rm 618), which lists the first lines of tablets of different works (Lambert 1962).    works   (Lambert        1962).
+                                 LineLine    3 lists
+                                        3 lists   thethe  incipit
+                                                       incipit       a-da-pà
+                                                                 a-da-pà   a-naa-na  qé-reb
+                                                                                 qé-reb      AN-[e]—“Adapa
+                                                                                         AN-[e]—“Adapa              in the
+                                                                                                                 in the     middle
+                                                                                                                        middle        heaven”
+                                                                                                                                   heaven”         (Jiménez
+                                                                                                                                               (Jiménez
+                                     2017,
+                                 2017,        p. 117).
+                                         p. 117).       This
+                                                     This      is probably
+                                                           is probably      thethe   incipit
+                                                                                 incipit  of aoftablet
+                                                                                                  a tablet
+                                                                                                         thatthat
+                                                                                                               waswas  anything
+                                                                                                                    anything    butbut
+                                                                                                                                     thethe
+                                                                                                                                          firstﬁrst
+                                                                                                                                                in ainlate
+                                                                                                                                                        a late
+                                     edition
+                                 edition     of of
+                                                 thethe  Adapa
+                                                      Adapa         text,
+                                                                 text,    whichconsisted
+                                                                        which      consistedofofmore morethanthanone
+                                                                                                                   onetablet
+                                                                                                                       tablet(Lambert
+                                                                                                                                (Lambert 2003–2004,
+                                                                                                                                             2003–2004, p.
+                                     395). This
+                                 p. 395).    This edition
+                                                    edition of of the
+                                                                   themyth
+                                                                        mythgavegavean  anaccount
+                                                                                           accountabout abouthe thenthroned
+                                                                                                                    enthroned    Adapa
+                                                                                                                                   Adapa in inheaven,
+                                                                                                                                                 heaven,  who
+                                 who entered Anu’s service and could even occupy his throne, becoming equal with the god of
+                                     entered      Anu’s   service     and  could    even   occupy     his  throne,  becoming      equal  with    the   god
+                                     heaven.
+                                 of heaven.
+                                            These
+                                        These         divergent
+                                                  divergent          traditions
+                                                                 traditions        about
+                                                                               about    thethe   antediluvian
+                                                                                             antediluvian          sage
+                                                                                                                sage     Adapa
+                                                                                                                      Adapa     areare
+                                                                                                                                    alsoalso    manifest
+                                                                                                                                           manifest      in in
+                                 thetheBı̄tBīt  mēseri
+                                            mēseri      incantations,
+                                                     incantations,      whichwhich    append
+                                                                                  append     two two    explanations
+                                                                                                    explanations        to his
+                                                                                                                     to his      diﬀerent
+                                                                                                                             different       epithets—(1)
+                                                                                                                                         epithets—(1)
+                                     Utuaabba,
+                                 Utuaabba,           “who
+                                                  “who        descended
+                                                          descended       fromfrom    heaven”;
+                                                                                  heaven”;     and and(2)(2)  Utuabzu,
+                                                                                                           Utuabzu,      “who
+                                                                                                                      “who        ascended
+                                                                                                                               ascended     to to   heaven”
+                                                                                                                                                heaven”
+                                     (Borger
+                                 (Borger     1974,1974,
+                                                     p. p.  193).The
+                                                         193).      Thefirst
+                                                                          ﬁrstexplanation
+                                                                                explanationrefers
+                                                                                                refersto  toAdapa,
+                                                                                                             Adapa, who
+                                                                                                                      who returned
+                                                                                                                            returned to to earth,
+                                                                                                                                             earth,andandthe
+                                 thesecond
+                                       secondtotothe theoneonewhowhoremained
+                                                                        remainedininheaven.
+                                                                                          heaven.The  Thesamesameexplanations
+                                                                                                                   explanationspointpointotothe thetwotwodif-
+                                 different episodes
+                                               episodes in  inthetheAdapa
+                                                                       Adapamyth myth where
+                                                                                         where hehe ascended
+                                                                                                       ascended  to heaven
+                                                                                                                    to heavenafterafter
+                                                                                                                                    having
+                                                                                                                                         havingbeenbeenreborn
+                                 reborn in the ocean (Utuabzu) and later emerged from the sea to teach mankind after his
+Religions 2024, 15, 1024                                                                                        6 of 12
+
+
+
+                           visit to Anu (Utuaabba). According to the ancient Mesopotamian view, Uan/Adapa was
+                           an eternal being, whose mythical presence was thought to reappear in different times and
+                           places (Annus 2016, p. 84).
+                                 Adapa, who remained in heaven resembles the Enoch figure in Judaism, who was
+                           translated to heaven, as “an example of knowledge for all generations” (Sirach 44: 16).
+                           This Enoch, who is also called Metatron, was God’s vice-regent and had his own throne in
+                           heaven according to the Talmudic tradition in Hagigah 15a (Orlov 2005, p. 162). This is a
+                           part of the longer passage in the Babylonian Talmud, which deals with four rabbis’ mystical
+                           ascent to paradise. Rabbi Aher was astounded to see the angel Metatron enthroned in
+                           heaven; therefore, he asked whether there are “two powers in heaven” and became a heretic
+                           after returning to earth (Segal 2002). The Babylonian theological concept of Marduk and
+                           the “son of Oannes”, who sat next to each other in the holiest cella of Esagila prefigures
+                           the “two powers in heaven” debate, which flourished in the early Christian centuries.
+                           As I have argued in another paper (Annus 2022), the heavenly images of Adapa and
+                           Enoch correspond to the celestial doubles encountered during the religious experiences
+                           of Babylonian and Jewish priests. Both Adapa and Enoch are embodied by the earthly
+                           priests, who meet their celestial counterparts during ascent experiences. These experiences
+                           promote their sense of identity and increase their prestige in religious communities. The
+                           alternative in the ascent scenario according to which an antediluvian authority was either
+                           allowed to stay in heaven or be expelled to work on earth solved the paradox of how
+                           the priests could be active in their mundane form but yet be identified with their eternal
+                           heavenly masters (Annus 2022, p. 75).
+                                 The twofold status of antediluvian Adapa, who was either commissioned to earth
+                           to teach mankind or became enthroned in heaven finds an analogue in the rankings of
+                           Adam and Enoch in Jewish Hekhalot writings. Some variants of the Enochic traditions give
+                           account for Metatron’s different incarnations. According to Sefer Hekhalot, the heavenly
+                           prince Metatron is a single divine being, who first took the form of Adam and later became
+                           Enoch. The latter form re-ascended to Adam’s heavenly home, taking his rightful place in
+                           the heights of universe (Orlov 2005, p. 108). According to this tradition Adam and Enoch
+                           were two mortal forms of the same eternal figure Metatron, the enthroned prince in heaven.
+                                 The Babylonian “son of Oannes” in Tintir (II 2) represents the heavenly image of the
+                           sage Adapa in the Esagila temple (Annus 2022, p. 70). Tilmun as the name of his seat
+                           makes an association with the residing place of the flood hero, pointing to the connection
+                           between the flood story and the Adapa myth (Annus 2016, pp. 16–19). One of the flood
+                           survivor’s names in Mesopotamian literature was Atra-hasis, “exceedingly wise”, which
+                           is also an epithet of the sage in the Adapa myth (Izre’el 2001, p. 9, A obv. 8′ ). The
+                           immortalization of the flood hero was seen as parallel to Adapa’s elevation in heaven. The
+                           “son of Oannes” in Tintir (II 2) was an image of Adapa and the heavenly double of the
+                           exorcist priest (Annus 2022).
+                                 In Mesopotamia of the first millennium BCE, a unified tradition gave rise to the
+                           teaching about Uan/Adapa, who as the first and last antediluvian sage impersonated all
+                           wisdom. As the first sage, he ascended to heaven and subsequently descended to earth
+                           to reveal his knowledge to humankind. The flood hero became either identified with the
+                           first antediluvian sage Oannes/Uanna or was associated with him through genealogy. The
+                           immortalized flood hero took the seat on the throne of Anu as the “son of Oannes” (Annus
+                           2016, p. 30). In the unified character of Uan/Adapa, the mystical paradox of his twofold
+                           destiny was resolved. The Mesopotamian tradition about antediluvian sages who visited
+                           heaven influenced the imagery of Enoch in Sefer Hekhalot, which contains two clusters of
+                           his names and roles. The older cluster regards him as the heavenly scribe and the expert
+                           of the divine secrets in concordance with the Mesopotamian traditions, which shaped the
+                           early Enochic lore (Orlov 2005, p. 89). Among these traditions is the Babylonian lore about
+                           the antediluvian king and the expert diviner Enmeduranki (Lambert 1998). The second
+                           cluster of roles and epithets regards Enoch-Metatron as the second Adam and a savior
+Religions 2024, 15, 1024                                                                                             7 of 12
+
+
+
+                           figure, the “Lesser YHWH” (Orlov 2005, p. 108). The Adapa figure, who remained in
+                           heaven influenced the second cluster of roles.
+
+                           4. Adapa’s Anointment and Clothing in Heaven
+                                 The Mesopotamian tradition about Adapa, who remained in heaven, considered him
+                           as another form of the immortal flood hero, which invites further comparisons to Enochic
+                           texts. As an instance of similarity between Adapa and Enoch, one can point to the Enoch’s
+                           heavenly glorification in the Slavonic apocalypse (2 Enoch). Enoch’s exaltation in the end of
+                           his heavenly journey reveals a remarkable pattern of similarities with the Adapa myth. In
+                           the Amarna version, Adapa ascended to heaven but had to return to earth. In compensation,
+                           he received from Anu a divine garb, and he was anointed with heavenly oil (fragment B,
+                           61′ –65′ ):
+                                He was brought the [fo]od of life; he did not e[a]t. [H]e was brought water of life;
+                                he did not dr[ink]. [He was br]ought a garment, he dressed. [He was b]rought
+                                oil, he anointed. (Izre’el 2001, pp. 20–21)
+                                 The feature common to two Adapas of whom the first returned to earth and the second
+                           remained in heaven is that both received a garment and ointment. Adapa had the status of
+                           pašı̄šu priest—“the anointed one”, which was one of the appellations of the sage (Izre’el
+                           2001, p. 9, A obv. 9′ ). Both in the Sumerian and Akkadian versions of the myth, Adapa was
+                           anointed in heaven. This episode of the myth relates to an eponymous medical “ointment
+                           of Oannes” that is mentioned on a Neo-Babylonian tablet from Sippar to undo witchcraft
+                           (Abusch and Schwemer 2016, pp. 69–70, text 7.13). In 2 Enoch 9: 17–19, Adapa’s promotion
+                           in heaven has been used to describe Enoch’s transformation, which takes place in a very
+                           similar manner, involving the garments and oil as the main indicators of his divine status.
+                           However, in distinction to the Adapa myth, 2 Enoch makes no reference to drink and food
+                           being offered. When Enoch arrived in front of the divine throne, the Lord said to Michael:
+                               “Approach and remove Enoch’s earthly garments! Anoint him with My blessed
+                               oil and dress him with garments of My glory!” Michael did what God told him;
+                               he anointed me and dressed me. The appearance of the oil was greater than
+                               a great light and its lubricant was like blessed dew, and its fragrance was like
+                               myrrh shining like the sun’s rays. I looked myself and saw that I was like one of
+                               His glorious ones and there was no obvious difference. (Badalanova Geller 2010,
+                               p. 48)
+                                Putting on and removing the garments had an important symbolic meaning in several
+                           Mesopotamian myths, where death and descent were associated with stripping, and ascent
+                           was associated with clothing (Annus 2006, pp. 17–22). The bestowal of new garments
+                           also served as a declaration of legal purity (Annus 2016, pp. 85–86). In the immediately
+                           following passage (2 Enoch 10–11), Enoch is twice offered a seat in heaven, initially by the
+                           angel Vereveil (Vrevoil) for honoring his scribal role. Later the God himself invites Enoch
+                           to the seat next to himself to share some information that remains hidden even from the
+                           angels. Here, Enoch makes the important transition from the legal scribe to the celestial
+                           judge (Orlov 2005, p. 162). The heavenly promotion in 2 Enoch follows quite closely the
+                           scenario described in the Adapa narrative and relates to the Mesopotamian text, both as an
+                           appropriation and as a counter narrative in promoting Enoch instead of Adapa.
+
+                           5. The Animal Apocalypse and Mesopotamian Chronicles
+                                There was a very ancient tradition in Mesopotamia going back to Uruk III times
+                           according to which the king Enmerkar and his wife built a town and made agriculture
+                           possible in the land (Katz 2017, p. 202). This tradition persisted to later times as Enmerkar is
+                           mentioned as the builder of Uruk in the Sumerian King List (ETCSL 2.1.1, line 104). Accord-
+                           ing to the literary text Enmerkar and the Lord of Aratta, this king also invented the writing
+                           tablet and cuneiform script (ETCSL 1.8.2.3). Two ancient Mesopotamian historical-literary
+                           texts mention Adapa and Enmerkar together as contemporaries through an association
+Religions 2024, 15, 1024                                                                                             8 of 12
+
+
+
+                           between them as culture heroes. The cuneiform chronicle called Enmerkar and Adapa is
+                           known from the first millennium copies (Glassner 2004, pp. 294–95). Another, the Chronicle
+                           of the Esagila, which has also been called “Weidner Chronicle”, is composed in the form of a
+                           fictitious royal letter that originates no earlier than 1100 BCE (Glassner 2004, pp. 263–69).
+                                 The second chronicle contains motifs that can be compared to the Animal Apocalypse in
+                           1 Enoch 85–90. The interest of the Chronicle of the Esagila is focused on the relationship of the
+                           early Mesopotamian rulers to the cult of Marduk, and it is cast into the form of a letter from
+                           the Isin king Damiq-ilišu to a Babylonian king. The content of the letter was purportedly
+                           revealed to the author in a dream by the healing goddess Gula (Glassner 2004, p. 264). Both
+                           the cuneiform chronicle and the Enochic Animal Apocalypse are dream revelations that
+                           contain narratives about the early history of mankind. The Chronicle of the Esagila retells
+                           the Mesopotamian history in admonitory fashion demonstrating that all the kings who
+                           neglected the cult of Marduk lost their power. The first king whom the Chronicle mentions is
+                           Aka from the Kish dynasty, to whom Enmerkar of Uruk immediately follows (Glassner 2004,
+                           p. 266, line 41). This chronicle represents the Mesopotamian historiographical tradition,
+                           which started the world history from Kish, whence the kingship was transferred to the
+                           Eanna temple and Uruk.
+                                 Neither of these two cuneiform chronicles that mention Adapa refer to the antediluvian
+                           period, and, consequently, the sage features as a primordial human being in them. In this
+                           respect these texts are compatible with the Sumerian version of the Adaba myth, which
+                           points with the expression “after the flood had swept over” (eĝir a-ma-ru ba-ur3 -ra-ta) to the
+                           primordial setting of its narrative (Cavigneaux 2014, p. 17, line 4). This expression served as
+                           the mythological time reference of many Sumerian tales that related to the primordial epoch
+                           of human history. The antediluvian period was a concept of a different historiographic
+                           tradition in Mesopotamia, which shifted its focus from what had taken place after the
+                           primordial flood to the events that occurred before the flood (Chen 2012, p. 175).
+                                 There are literary indications that the concept of the antediluvian period emerged later
+                           in Mesopotamia than the notion of the primordial times “after the flood had swept over”
+                           (Chen 2012). The two earliest manuscripts of the chronographic work Sumerian King List
+                           contain neither references to the flood nor the antediluvian sections (Chen 2012, p. 177). In
+                           these tablets from the Ur III period, the formula “when kingship descended from heaven”
+                           introduces the primordial period when the first dynasty of kings ruled in Kish (Chen 2012,
+                           p. 167). Since the Old Babylonian period, the manuscripts of the Sumerian King List began
+                           to incorporate references to the flood and construct antediluvian dynasties (Chen 2012,
+                           p. 177). According to an older Sumerian historical tradition, the first dynasty on earth ruled
+                           in Kish “after the deluge swept over”, which expression of time reference is also used in
+                           the Sumerian Adaba myth (Cavigneaux 2014, p. 17, line 25). The earlier Sumerian tradition
+                           regarded the sage simply as primordial, but later Babylonian developments placed him in
+                           the antediluvian period.
+                                 In the Chronicle of the Esagila, the king Enmerkar is presented as a negative character,
+                           who neglected Marduk and to whom his sage Adapa taught a moral lesson. The tendency
+                           to see Enmerkar as a negative hero is detectable since the Old Babylonian Cuthean Legend of
+                           Naram-Sîn, which narrative counters the notion of Enmerkar as the inventor of cuneiform
+                           script (Katz 2017, p. 205). In the Chronicle of the Esagila, the king Enmerkar is presented as
+                           an immoral king, who violated the Babylonian standards, which are outlined as follows:
+                                Whosoever offends the gods of this city (=Babylon), his star will not stand in the
+                                sky. [. . .], his (?) kingship will be no more, his scepter will be taken away, his
+                                treasure will become a heap of [rubble]. (Glassner 2004, p. 267, lines 37–38)
+                                According to the Chronicle of the Esagila, the star of the king who offended the gods
+                           of Babylon fell from the sky (Akkadian: kakkabušu ina šamê ul izazzi, line 37). This is
+                           comparable to the fall of the Watchers in the Animal Apocalypse who are described as
+                           stars who cast themselves down from heaven (1 Enoch 86). According to the Chronicle of the
+                           Esagila, after Enmerkar violated Babylon’s moral standards, the sage Adapa cursed him
+                           and brought about the king’s demise, whereas the sage himself received a promotion. The
+Religions 2024, 15, 1024                                                                                              9 of 12
+
+
+
+                           corresponding passage from the Chronicle of the Esagila is cited below in translation with
+                           my suggested reading for the line 46: [. . . DUMU u4 -a]n-na ki-ma ši-t.ir šá-ma-mi ú-ban-ni-ma
+                           ina É-sag-íl:
+                                Enmerkar, king of Uruk, destroyed the liv[ing] creatures and [(Marduk) raised
+                                the troo]ps of Manda, which [. . .]. The wise Adapa heard [. . .] in his holy temple
+                                tower and cursed Enmerkar, [. . . and Mard]uk gave him the kingship over all the
+                                lands and his rites [. . .]. He made [. . . the son of Oa]nnes beautiful like celestial
+                                writing in the Esagila. [. . .] the king entrusted everything of the heavens and
+                                earth, (to) the firstborn son for 3020 years. (Glassner 2004, pp. 266–67, lines 42–47)
+                                   Because of some tantalizing lacunae in the text, it is not clear to whom Marduk gives
+                           “rule over all the lands” (line 45). However, this cannot be anybody else than Adapa, and
+                           the passage quoted above is another reference to the sage’s exaltation. This high status of
+                           Adapa is further emphasized with his location “in his holy temple tower” (Akkadian: ina
+                           k]is.s.išu elli, line 44). This passage represents a genuine Babylonian tradition that is related
+                           to Adapa’s elevation in heaven, which concept was later countered with narratives in the
+                           Jewish Enoch literature.
+                                   A comparable scenario is found in the part of 1 Enoch called the Animal Apocalypse,
+                           a dream revelation to Enoch in which he retells to his son Methuselah the world history
+                           beginning with Adam to the fall of Jerusalem. In this text, the early history of Genesis is
+                           retold in animal imagery, where the archangels descend to earth as falling stars (1 Enoch 86:
+                           1, 3–5). Enoch has the following vision about the fall of the Watchers and the violence of
+                           the giants:
+                                I saw the heaven above, and look, a star fell from heaven, and it arose and was
+                                eating and pasturing among those cattle. . . . And again I saw in the vision, and I
+                                looked to heaven, and look, I saw many stars descend and cast themselves down
+                                from heaven to that first star. And in the midst of those calves they became bulls,
+                                and they were pasturing with them in their midst. I looked at them and I saw
+                                and look, all of them let out their organs like horses, and they began to mount
+                                the cows of the bulls, and they all conceived and bore elephants and camels and
+                                asses. And all the bulls feared them and were terrified before them, and they
+                                began to bite with their teeth and devour and gore with their horns. (Nickelsburg
+                                and VanderKam 2004, pp. 121–22)
+                                 This passage serves as a demonization of the Watchers and uses animal imagery
+                           for that purpose, which had a long history in cuneiform literature. The first inhabitants
+                           of the land were referred to as animal-like creatures and compared to sheep in some
+                           Sumerian literary compositions (Peterson 2018, pp. 39–40). According to Berossus, the
+                           first people of Babylonia “lived without discipline and order, just like animals” before
+                           the advent of Oannes (Verbrugghe and Wickersham 2000, p. 44). The Mesopotamian
+                           sages themselves had strong ties to demonology, and, as antediluvian beings, they were
+                           occasionally counted as demonic creatures with hybrid bodies of animal and bird-like parts
+                           (Annus 2010, pp. 304–8). In the Chronicle of the Esagila passage, Enmerkar destroyed the
+                           “living beings” (nammaššê) of Babylon, which is a reference to settlements of people. It was
+                           a grave sin that the subsequent text of Chronicle also attributes to Naram-Sin; therefore, both
+                           kings are punished by invading enemy hordes (Glassner 2004, p. 267). The designation
+                           used for Enmerkar’s mythological enemy is “[the troo]ps of Manda”, which emerges as an
+                           agent of punishment (Adalı 2011, pp. 71–72). This enemy has a demonic appearance in
+                           the Cuthean Legend of Naram-Sin, where Enmerkar is punished by the Manda troops, who
+                           possess bird-like features and are nourished by Marduk’s enemy Tiamat (Westenholz 1997,
+                           pp. 264, 309). The “Manda troops” was an expression in Mesopotamian historiographic
+                           literature used for the demonic enemy that came down from the mountains. The Manda
+                           forces could appear as hybrid creatures with animal forms, which conveys the image of a
+                           battle between animal troops similar to that of Animal Apocalypse.
+Religions 2024, 15, 1024                                                                                          10 of 12
+
+
+
+                                This demonic imagery was much used in Mesopotamian historical narratives. In
+                           Assurbanipal’s dedicatory inscription to Marduk, the Cimmerian ruler Tugdammê is called
+                           “the king of Umman-Manda, the offspring of Tiamat, likeness of the [gallû]-demon” (Adalı
+                           2011, p. 85). The Manda troops can be there to punish an impious king but would become
+                           in due time a “seed of destruction” itself (Adalı 2011, pp. 90–93). In the Animal Apocalypse,
+                           the heavenly Watchers are demonized as animals attacked by other animals, which is to
+                           emphasize their demonic character that is a part of its counter narrative about ancient
+                           Mesopotamian sages, whose iconography was often depicted as that of demonic beings
+                           (Annus 2010, pp. 304–8).
+                                In the Chronicle of the Esagila, Adapa was elevated into the high temple tower to
+                           watch the battle between the wicked Enmerkar and the Manda forces. This episode can be
+                           favorably compared to the text in 1 Enoch 87: 2–4, where Enoch’s ascension is described in
+                           terms of raising to a high tower:
+                                And I lifted my eyes again to heaven, and I saw in the vision, and look, there
+                                came forth from heaven (beings) with the appearance of white men; four came
+                                forth from that place and three with them. And those three who came after took
+                                hold of me by my hand and raised me from the generations of the earth, and
+                                lifted me onto a high place, and they showed me a tower high above the earth,
+                                and all the hills were smaller. And they said to me, ‘Stay here until you see all
+                                that happens to those elephants and camels and asses and to the stars and to the
+                                cattle and all of them’. (Nickelsburg and VanderKam 2004, p. 122)
+                                 During Enmerkar’s battle against animal-like enemies in the Chronicle of the Esagila,
+                           Adapa curses the king. Subsequently, the “son of Oannes” is made beautiful “like celestial
+                           writing in the Esagila”. This also runs in parallel with the Animal Apocalypse because
+                           Noah is transformed into an angel in it (1 Enoch 89: 1): “It was born a bull but became
+                           a man” (Nickelsburg and VanderKam 2004, p. 123). Because all mankind is depicted
+                           as animals in the Animal Apocalypse, this transformation is equal to immortalization
+                           (Reynolds 2011, pp. 168–73). Although there is no flood story in the Chronicle of the Esagila,
+                           the “son of Oannes” was equated with the flood survivor in Babylonia; therefore, the
+                           Animal Apocalypse uses Adapa’s elevation as a template for the angelification of Noah.
+                           The Enochic Animal Apocalypse uses the literary motifs that are also known from the
+                           Chronicle of the Esagila to describe the course of the early history of humankind.
+                                 The reading for the partially broken line 46, “he made [. . . the son of Oa]nnes beauti-
+                           ful like celestial writing” suggests that, according to a genuine Mesopotamian tradition,
+                           the “son of Oannes” assumed his cultic residence during the reign of Enmerkar. This
+                           was originally a tradition of Uruk that was only later associated with Babylonia (Annus
+                           2016, p. 30). In the Old Babylonian period, when Babylon emerged as the new power
+                           center and Marduk was genealogically associated with the gods of Eridu, the novel his-
+                           toriographical trend began to attribute the origin of civilization to the antediluvian city
+                           of Eridu, which was implicitly identified with Babylon. As a part of this transformation,
+                           Babylon and her main temple in the Chronicle of the Esagila also represent Enki’s house in
+                           Eridu because the two cities were often theologically equated, even thought to be the same
+                           place (George 1992, pp. 251–53). According to Babylonian ideology, all important theolog-
+                           ical traditions of other cities were transferred to Babylon. Babylon as the cosmic capital
+                           absorbed the traditions of Eridu, Nippur, Uruk, and all other important Mesopotamian
+                           cities (George 1997).
+
+                           6. Conclusions
+                                The different layers of literary works from all periods of the Ancient Near East have
+                           retained something from their predecessors by way of a creative literary transmission.
+                           Variation, not stable text, was the rule in the corpus of narratives, which struggled with one
+                           another for a dominant position. Many foundational narratives began their existence as the
+                           counter stories or alternative readings of more ancient master narratives. The relationship
+Religions 2024, 15, 1024                                                                                                         11 of 12
+
+
+
+                                  between Babylonian and Israelite historical narratives was often antagonistic, where the
+                                  conflict in a world view was rather the rule than exception.
+                                       The nature of a relationship between the Mesopotamian narratives and the later
+                                  Israelite texts as that of “master” and “counter” narratives can be difficult to establish
+                                  and even more arduous to prove. In the contrastive analysis of similar narratives, the
+                                  differences are more significant than commonalities. The texts, which seem to be faithful to
+                                  the prevalent master narrative, may hide the details that tell a completely different story.
+                                  These similarities and differences must be analyzed in regard to their presumed status of a
+                                  master narrative, a counter story, or an alternative story (Nelson 2001).
+                                       The story of the Watchers circulated in many different versions within Judaism. It can
+                                  be plausibly argued that the different scenarios of the account were developed on the basis
+                                  of cultural narratives about the Mesopotamian apkallus (Annus 2010). The mythological
+                                  concept concerning the antediluvian sages held the figure of Adapa in high esteem. The
+                                  status of Uan/Adapa as the foremost among the antediluvian sages is critically reflected
+                                  over in Jewish narratives concerning Enoch and Noah, which often took over motifs from
+                                  Babylonian texts either through appropriation or a counter narrative (Annus 2022).
+                                       The Enochic Animal Apocalypse rewrites the first chapters of Genesis using the
+                                  animal imagery, which is a subversive way to reproduce the sacred history. The apocalypse
+                                  sets out as an alternative or counter narrative in regard to Genesis, indicating that the
+                                  author felt oneself uncomfortable within traditional Judaism. The author of the Enochic
+                                  Animal Apocalypse uses the imagery from cuneiform historical literature with admonitory
+                                  character like the legends of Naram-Sin and the Chronicle of the Esagila and applies its motifs
+                                  to retell the first chapters of Genesis. In Akkadian literature, the animal imagery is found
+                                  in the royal epics and inscriptions, where such figures serve to emphasize the demonic
+                                  character of the enemy.
+                                       The Animal Apocalypse in 1 Enoch uses the Babylonian story about the elevation of
+                                  the “son of Oannes”, which is applied to Noah in a vision seen by Enoch. In the Animal
+                                  Apocalypse, all early biblical figures except Enoch, Noah, and Moses are depicted as having
+                                  irreversible animal characters. Where the Animal Apocalypse is partly dependent on the
+                                  ancient Babylonian traditions, it is already written in the context of a sectarian Judaism in
+                                  which these three figures were considered more important than all others.
+
+                                  Funding: This reasearch was funded by Estonian Research Council, grant number PUT 1466.
+                                  Institutional Review Board Statement: Not applicable.
+                                  Informed Consent Statement: Not applicable.
+                                  Data Availability Statement: No new data were created or analyzed in this study. Data sharing is
+                                  not applicable to this article.
+                                  Conflicts of Interest: The author declares no conflict of interest.
+
+                                  Abbreviations
+                                      CAD—The Assyrian Dictionary of the Oriental Institute of the University of Chicago; ETCSL—
+                                  Black, J. A. et al. 1998–2006. Electronic Text Corpus of Sumerian Literature, University of Oxford.
+
+
+References
+Abusch, Tzvi. 2015. The Witchcraft Series Maqlû. Writings from the Ancient World 37. Atlanta: SBL Press.
+Abusch, Tzvi, and Daniel Schwemer. 2016. Corpus of Mesopotamian anti-Witchcraft Rituals. Leiden and Boston: Brill, vol. Two.
+Adalı, Selim Ferruh. 2011. The Scourge of God: The Umman-Manda and Its Significance in the First Millennium BC. State Archives of Assyria
+     Studies 20. Helsinki: The Neo-Assyrian Text Corpus Project.
+Annus, Amar. 2006. The Survivals of the Ancient Syrian and Mesopotamian Intellectual Traditions in the Writings of Ephrem Syrus.
+     Ugarit Forschungen 38: 1–25.
+Annus, Amar. 2010. On the Origin of Watchers: A Comparative Study of the Antediluvian Wisdom in Mesopotamian and Jewish
+     Traditions. Journal for the Study of the Pseudepigrapha 19: 277–320. [CrossRef]
+Religions 2024, 15, 1024                                                                                                                 12 of 12
+
+
+
+Annus, Amar. 2016. The Overturned Boat: Intertextuality of the Adapa Myth and Exorcist Literature. State Archives of Assyria Studies 24.
+      Helsinki: The Neo-Assyrian Text Corpus Project.
+Annus, Amar. 2022. The Heavenly Counterparts of Adapa and Enoch in Babylonia and Israel. In Science in Qumran Aramaic Texts.
+      Edited by Ida Frölich. Ancient Cultures of Sciences and Knowledge, 1. Tübingen: Mohr Siebeck, pp. 65–82.
+Badalanova Geller, Florentina. 2010. 2. (Slavonic Apocalypse of) Enoch: Text and Context. Berlin: Max-Planck-Institut für Wissenschaften,
+      Preprint 410.
+Boccaccini, Gabriele. 1998. Beyond the Essene Hypothesis: The Parting of the Ways Between Qumran and Enochic Judaism. Grand Rapids:
+      William B. Eerdmans.
+Borger, Rykle. 1974. Die Beschwörungsserie Bı̄t Mēseri und die Himmelfahrt Henochs. Journal of Near Eastern Studies 33: 183–96.
+      [CrossRef]
+Cavigneaux, Antoine. 2014. Une version sumérienne de la légende d’Adapa (Textes de Tell Haddad X). Zeitschrift für Assyriologie 104:
+      1–41. [CrossRef]
+Chen, Yi Samuel. 2012. The Flood Motif as a Stylistic and Temporal Device in Sumerian Literary Traditions. Journal of Ancient Near
+      Eastern Religions 12: 158–89. [CrossRef]
+Dalley, Stephanie. 2013. First Millennium BC Variation in Gilgamesh, Atrahasis, the Flood Story and the Epic of Creation: What was
+      Available to Berossos? In The World of Berossos. Edited by Johannes Haubold, Giovanni B. Lanfranchi, Robert Rollinger and John
+      Steele. Classica et Orientalia 5. Wiesbaden: Harrassowitz, pp. 165–76.
+Frahm, Eckart. 2010. Counter-Texts, Commentaries, and Adaptations: Politically Motivated Responses to the Babylonian Epic of
+      Creation in Mesopotamia, the Biblical World, and Elsewhere. Orient 45: 3–33. [CrossRef]
+George, Andrew R. 1992. Babylonian Topographical Texts. Orientalia Lovaniensia Analecta 40. Leuven: Peeters.
+George, Andrew R. 1997. ‘Bond of the Lands’: Babylon, the Cosmic Capital. In Die orientalische Stadt: Kontinuität, Wandel, Bruch. Edited
+      by Gernot Wilhelm. Colloquien der Deutschen Orient-Gesellschaft 1. Saarbrücken: Saarbrücker Druckerei, pp. 125–45.
+Glassner, Jean-Jacques. 2004. Mesopotamian Chronicles. Writings from the Ancient World 19. Atlanta: Society of Biblical Literature.
+Hendel, Ronald S. 2005. Genesis 1–11 and its Mesopotamian Problem. In Cultural Borrowings and Ethnic Appropriation in Antiquity.
+      Edited by Erich S. Gruen. Oriens et Occidens 8. Stuttgart: Franz Steiner, pp. 23–36.
+Izre’el, Shlomo. 2001. Adapa and the South Wind. Mesopotamian Civilizations 10. Winona Lake: Eisenbrauns.
+Jiménez, Enrique. 2017. The Babylonian Disputation Poems: With Editions of the Series of the Poplar, Palm and Vine, the Series of the Spider, and
+      the Story of the Poor, Forlorn Wren. Culture and History of the Ancient Near East, 87. Leiden and Boston: Brill.
+Katz, Dina. 2017. Ups and Downs in the Career of Enmerkar, King of Uruk. In Fortune and Misfortune in the Ancient Near East:
+      Proceedings of the 60th Rencontre Assyriologique Internationale at Warsaw 21–25 July 2014. Edited by Olga Drewnowska and
+      Małgorzata Sandowicz. Winona Lake: Eisenbrauns, pp. 201–10.
+Kvanvig, Helge S. 2011. Primeval History: Babylonian, Biblical, and Enochic. Supplements to the Journal for the Study of Judaism 149.
+      Leiden and Boston: Brill.
+Lambert, Wilfred G. 1962. A Catalogue of Texts and Authors. Journal of Cuneiform Studies 16: 59–77. [CrossRef]
+Lambert, Wilfred G. 1998. The Qualifications of Babylonian Diviners. In Festschrift für Rykle Borger zu seinem 65. Geburtstag am 24. Mai
+      1994. Edited by Stefan M. Maul. Cuneiform Monographs 10. Groningen: Styx, pp. 141–58.
+Lambert, Wilfred G. 2003–2004. Review of Izre’el 2001. Archiv für Orientforschung 50: 394–96.
+Nelson, Hilde Lindemann. 2001. Damaged Identities, Narrative Repair. Ithaca and London: Cornell University Press.
+Nickelsburg, George W. E., and James C. VanderKam. 2004. 1 Enoch. The Hermeneia Translation. Minneapolis: Fortress Press.
+Orlov, Andrei. 2005. The Enoch-Metatron Tradition. Texte und Studien zum antiken Judentum 107. Tübingen: Mohr Siebeck.
+Peterson, Jeremiah. 2017. A Middle Babylonian Sumerian Fragment of the Adapa Myth from Nippur and an Overview of the Middle
+      Babylonian Sumerian Literary Corpus at Nippur. In The First Ninety Years: A Sumerian Celebration in Honor of Miguel Civil. Edited
+      by Lluís Feliu, Fumi Karahashi and Gonzalo Rubio. Studies in Ancient Near Eastern Records 12. Boston and Berlin: De Gruyter,
+      pp. 262–83.
+Peterson, Jeremiah. 2018. The divine appointment of the first antediluvian king: Newly recovered content from the Ur version of the
+      Sumerian Flood Story. Journal of Cuneiform Studies 70: 37–51. [CrossRef]
+Reynolds, Bennie H. 2011. Between Symbolism and Realism. The Use of Symbolic and Non-Symbolic Language in Ancient Jewish Apocalypses
+      333–63 B.C.E. Journal of Ancient Judaism Supplements 8. Göttingen: Vandenhoeck & Ruprecht.
+Segal, Alan Franklin. 2002. Two Powers in Heaven: Early Rabbinic Reports about Christianity and Gnosticism. Leiden: Brill.
+Verbrugghe, Gerald P., and John M. Wickersham. 2000. Berossos and Manetho Introduced and Translated. Ann Arbor: The University of
+      Michigan Press.
+Westenholz, Joan Goodnick. 1997. Legends of the Kings of Akkade: The Texts. Mesopotamian Civilizations 7. Winona Lake: Eisenbrauns.
+
+Disclaimer/Publisher’s Note: The statements, opinions and data contained in all publications are solely those of the individual
+author(s) and contributor(s) and not of MDPI and/or the editor(s). MDPI and/or the editor(s) disclaim responsibility for any injury to
+people or property resulting from any ideas, methods, instructions or products referred to in the content.
+

@@ -1,0 +1,48 @@
+682        Chapter Twenty-Nine
+
+over a single paradigm is no coincidence. The forms of the enclitic copula come historically
+from exactly those independent forms which they replace synchronically. The forms of the
+enclitic copula have properties which clearly point to such a development.
+    Consider, for instance, the enclitic copula of the third person singular human and third
+person non-human. Its basic form is /÷am/, which can be derived from an earlier form */÷ame/
+(cf. Poebel 1923: 72):
+(25) *÷ame
+     ÷a-me-Ø
+     VP-be -3SG/3N.S
+     ‘he/she/it is’ (unattested reconstructed form)
+This */÷ame/ became /÷am/ through loss of the word-final /e/ (§29.2.2). At some point in time,
+it cliticized and was attached to the word preceding it.1 Subsequently, /÷am/ underwent further
+phonological changes (see below).
+    The other forms of the copula with only a person suffix and a vocalic prefix also cliticized
+but in a slightly different way. If they were attached to a word with a final consonant, they lost
+their vocalic prefix without a trace. However, if they were attached to a word with a final
+vowel, their vocalic prefix contracted with this vowel leaving a long vowel. This long vowel is
+reflected in plene spellings such as the following:
+(26) zé-e-me
+     ze =Ø =me-en
+     you=ABS=be -1SG.S
+     ‘you, yourself (lit. “you, who is you”)’ (TCS 1:128 6; L; 21)
+Similarly: ĝe26-e-me for ĝe26=me-en ‘I, myself (lit. “I, who is me”)’ (TCS 1:81 6; L; 21). (See
+§29.6.2 below for the syntax of these expressions.)
+   The inflection of the enclitic copula is largely parallel to that of the independent copula. In
+the enclitic forms too, the syllable-final consonant of the person suffixes (see chapter 14) is
+never written in Old Sumerian and only occasionally in more recent texts from before the Old
+Babylonian period. The /š/ of the person suffix for the third person plural {eš}, for instance,
+may be written explicitly in texts from the later third millennium:
+(27) nagar-me-éš
+     nagar =Ø =me-eš
+     carpenter=ABS=be -3PL.S
+     ‘They are carpenters.’ (UET 3:1496 19; Ur; 21)
+But exactly the same phrase occurs far more often written as nagar-me, always so in Old
+Sumerian (e.g. DP 115 11:12; L; 24) and mostly so in the Ur III period (e.g. MVN 5:267 obv
+2:8; L; 21). Or to give another example:
+(28) lú inim-ma-bé-me-éš
+
+
+
+   1
+    Note, however, that a form */÷ame/ does not fit the grammatical rules of Sumerian as
+actually attested, because the vocalic prefix {÷a} has the form /÷al/ when it occurs immediately
+before the stem (§24.3.3). In fact, a dialectal variant al-me-a ‘that it is’ is indeed attested for ì-
+me-a (e.g. Let B 19 11; OB). Yet, as the origin of this special form /÷al/ is still unclear, it is
+impossible to say how old the attested distribution of /÷a/ and /÷al/ actually is.

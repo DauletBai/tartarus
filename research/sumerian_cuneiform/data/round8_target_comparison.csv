@@ -1,0 +1,7 @@
+witness,coordinate,CDLI_editorial_form,grammar_reading_or_analysis,evidence_level,limit
+P232300 cylinderA,5:8,igi-mu,igi-ĝu10 my eyes,MU spelling in a first-person context,Same sign reading is not an independent acoustic or syllabic spelling
+P232300 cylinderA,9:8,e2-mu,e2-ĝu10 my temple,Additional base on same physical object,Already referenced in grammar outside selected subsection; exploratory within-object control
+P232275 statueB,8:15,lugal-mu,lugal-ĝu10 my master,Same-base control for8:24,Reading and meaning require context; one object is not several independent witnesses
+P232275 statueB,8:24,lugal-ga2-ka,lugal=ĝu=ak=ak,Written GA2 instead of MU in case environment,Contraction and sound value are reconstructed; multiple sign values are possible
+P232275 statueB,7:34,iri-ga2,iri=ĝu=loc in my city,Another base in a locative construction,Not a fully independent syllabic spelling of gu
+P232300 cylinderA,6:16,nig2-gur11-<ra>-za,storeroom=zu=loc second-person control,Retains a different person marker and an editorial insertion,Do not count as a first-person example

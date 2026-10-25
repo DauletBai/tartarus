@@ -1,0 +1,9 @@
+function,sumerian_editorial_model,kazakh_model,kazakh_illustration,comparison_status
+1SG possessive,ŋu / ĝu,-м / -ым / -ім,үйім; інім,Different overt forms; final m in inim is not thereby a Sumerian possessive
+2SG possessive,zu,-ң / -ың / -ің,үйің,Different overt forms
+2SG polite possessive,no direct row in ETCSRI nominal template,-ңыз / -ңіз / -ыңыз / -іңіз,үйіңіз,No automatic one-to-one paradigm alignment
+3SG human possessive,ani,-сы / -сі / -ы / -і,үйі,Different segmentation; compare complete case forms separately
+3SG nonhuman possessive,bi,-сы / -сі / -ы / -і,үйі,ETCSRI human/nonhuman distinction has no equivalent separate pair in this Kazakh paradigm
+1PL possessive,me,-мыз / -міз / -ымыз / -іміз,үйіміз,Initial m resemblance alone is insufficient; endings differ
+2PL possessive,zunenee,-ларың / -лерің and related forms,үйлерің,Listed model not attested as an exact simple N3 value in this corpus extraction
+3PL possessive,anenee / anene,-сы / -сі / -ы / -і with plural possessor context,олардың үйі; олардың үйлері,Different forms; plurality of possessor and possessed must be distinguished

@@ -1,0 +1,26 @@
+[
+  {
+    "file": "data/round10_P499399_bands2_3_native_crop.jpg",
+    "source": "sources/P499399_photo.jpg",
+    "crop_box_xyxy": [
+      100,
+      270,
+      920,
+      650
+    ],
+    "resampling": "none; native pixels; sips crop, JPEG output",
+    "sha256": "0f3398015b0fe601d69d289d245049dbcb14056578ae5a660152642b25708816"
+  },
+  {
+    "file": "data/round10b_P325891_obverse_native_crop.jpg",
+    "source": "sources/P325891_photo.jpg",
+    "crop_box_xyxy": [
+      50,
+      545,
+      850,
+      1500
+    ],
+    "resampling": "none; native pixels; sips crop, JPEG output",
+    "sha256": "7187ade20eadb497a47424239d8d6a054408b9d148bfd9224ee1cfbcfbdece61"
+  }
+]

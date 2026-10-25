@@ -1,0 +1,47 @@
+{
+  "recorded_at": "2026-10-25T12:31:17.255644+05:00",
+  "individual_readings_opened": false,
+  "heldout_pixels_opened": false,
+  "images": [
+    {
+      "label": "A04",
+      "readability": "low",
+      "observations": "Narrow fragment with damaged grooves; no complete diagnostic G01–G06 complex established. Modern ink on second view excluded."
+    },
+    {
+      "label": "A05",
+      "readability": "medium",
+      "observations": "Compartmented upper view; pointed contour at left is a coarse candidate, but broken join and internal details prevent strict identity. Upright strokes at right do not securely show one rightward branch."
+    },
+    {
+      "label": "A06",
+      "readability": "high",
+      "observations": "Multi-view composite with compartments, repeated round outlines with near-vertical interior bars, angular complexes and separate deep depressions. Round outlines are not strict G03 because bar orientation differs; uncertain allograph relation. Repeated signs within views must not be counted as different objects."
+    },
+    {
+      "label": "A07",
+      "readability": "medium",
+      "observations": "Cell-like partition, separate deep depressions, short parallel grooves, and an upright double-branch construction at lower left. Double branch is not merged with one-branch G02. Pointed frame in central region is coarse G01 candidate."
+    },
+    {
+      "label": "A08",
+      "readability": "high",
+      "observations": "Two large pointed rightward contours in separate compartments, with internal detail; coarse G01 similarity. Right field has separate short grooves. Exact identity to pilot not established."
+    },
+    {
+      "label": "A09",
+      "readability": "low",
+      "observations": "Damaged compartmented fragment with an incomplete rounded contour in lower central area. Missing outline/interior means no strict G03 match."
+    },
+    {
+      "label": "A10",
+      "readability": "medium",
+      "observations": "Pointed contour near upper centre with uncertain interior; another in lower view, possible same object different face. Coarse G01 candidate, no strict identity."
+    },
+    {
+      "label": "A11",
+      "readability": "high",
+      "observations": "Clear grid-like layout, deep depressions beside bundles of short parallel grooves and complex framed/angular marks. Parallel bundles vary in visible multiplicity. Rounded and rectangular frames must be kept distinct. Lower view appears damaged, no confident cross-view sign pairing."
+    }
+  ]
+}

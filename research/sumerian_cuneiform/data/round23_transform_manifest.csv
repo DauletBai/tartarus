@@ -1,0 +1,9 @@
+﻿file,source,operation,x,y,w,h
+K4996_lower_IV.jpg,round23_sources/K4996_photo.jpg,crop,1000,2250,1450,1050
+K2375_lower_Rs.jpg,video_audit/K2375_photo.jpg,crop,780,1500,1350,1000
+A5_IV31_candidate.jpg,round23_sources/K4996_photo.jpg,crop; inferred line mapping,1000,2830,1350,150
+A5_IV33_candidate.jpg,round23_sources/K4996_photo.jpg,crop; inferred line mapping,1000,2990,1350,150
+A6_Rs19_22_candidate.jpg,video_audit/K2375_photo.jpg,crop; context includes damaged lower rows,780,1750,1300,350
+A5_IV_lower_drawing.png,round23_sources/Schramm_plate_XII.png,crop,570,1500,800,700
+Schramm_plate_XII.png,video_audit/Schramm_2008_Compendium.pdf,PDF326 rendered scale-to2400,,,,
+Schramm_plate_XLVIII.png,video_audit/Schramm_2008_Compendium.pdf,PDF362 rendered scale-to2400,,,,

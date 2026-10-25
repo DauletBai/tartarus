@@ -1,0 +1,7 @@
+date,url,result,local_response,consequence
+2026-10-24,https://isac.uchicago.edu/sites/default/files/uploads/shared/docs/oimp32.pdf,HTML вместо PDF,sources/Woods_Visible_Language_download_response.html,Полный том не прочитан; доступны только индексированные фрагменты главы Woods
+2026-10-23,https://sacred-texts.com/ane/adapa.htm,HTTP403 при curl,,Перевод прочитан через браузерный инструмент; локальный полный HTML не получен
+2026-10-23,https://eprints.soas.ac.uk/1602/1/tablets_from_the_sippar_library_vi_atrahasis.pdf,DNS resolution failed,,Полный PDF не получен
+2026-10-23,https://soas-repository.worktribe.com/OutputFile/446263,HTTP 403,,Полное чтение PDF и сверка фотографий не выполнены
+2026-10-23,https://www.ub.edu/ipoa/wp-content/uploads/2021/08/1991AuOrSteinkeller.pdf,HTML временно недоступной страницы вместо PDF,sources/Steinkeller_1991_download_response.html,Статья локально не получена; библиографическая сноска проверена по веб-индексу
+2026-10-23,https://hrcak.srce.hr/file/429516,HTTP 418,,Полный PDF не получен; использована только доступная запись и индексированные фрагменты

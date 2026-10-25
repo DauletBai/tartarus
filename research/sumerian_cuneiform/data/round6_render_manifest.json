@@ -1,0 +1,28 @@
+{
+  "source": "sources/UgariticaV_1968.pdf",
+  "source_sha256": "dbb8a9cc814b5d69001e0708060d8c9079ad4f54477b148751ab7421e3544773",
+  "note": "Research derivatives; original publication unchanged; repository restricts commercial use",
+  "pages": [
+    {
+      "pdf_page_one_based": 460,
+      "printed_page": 444,
+      "clockwise_rotation": 90,
+      "local_file": "data/round6_UgariticaV_printed444.png",
+      "sha256": "6c7be7254e5afa76c3b28c3f0420500ffe4f52015c2c2dad32b9e068f12cde56"
+    },
+    {
+      "pdf_page_one_based": 461,
+      "printed_page": 445,
+      "clockwise_rotation": 90,
+      "local_file": "data/round6_UgariticaV_printed445.png",
+      "sha256": "50ae876fe63bed6c2bfb7cce80b1b4483baf0fe4c9ea5f39340fc94ad0f05764"
+    },
+    {
+      "pdf_page_one_based": 330,
+      "printed_page": 314,
+      "clockwise_rotation": 0,
+      "local_file": "data/round6_UgariticaV_printed314.png",
+      "sha256": "22bc2e2c36da6c4e9f2187ad2e45c3ee3ad69c507627e0e8fdc4d20cefa43444"
+    }
+  ]
+}

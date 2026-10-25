@@ -1,0 +1,32 @@
+[
+  {
+    "unit": "early graphic inventory vs UrIII-labelled sample",
+    "decision": "separate_strata",
+    "reason": "Old15 records all catalogue languageUndetermined and UrukIII/IV; new8 labelledSumerian/UrIII. No continuous sign genealogy established."
+  },
+  {
+    "unit": "G02a/G02b",
+    "decision": "retain_uncertain_split",
+    "reason": "Lower hook/contact remains unresolved; later wedge groups not evidence that early forms have one sound."
+  },
+  {
+    "unit": "G03/G05/G11",
+    "decision": "retain_distinct_graphic_descriptions",
+    "reason": "Orientation and internal contacts are separate features; no arbitrary rotation used to merge across periods."
+  },
+  {
+    "unit": "W01",
+    "decision": "retain_candidate_with_count_variants",
+    "reason": "2 clear-stroke partials kept apart from strict3-stroke candidates. Needs wider same-period distribution, not forced identity."
+  },
+  {
+    "unit": "W02",
+    "decision": "retain_candidate_family_not_minimal_sign",
+    "reason": "Repeated configuration across images; exact contours and counts still variable. No name or phonetic value."
+  },
+  {
+    "unit": "BUNDLE",
+    "decision": "control_only",
+    "reason": "Short parallel marks can belong inside complexes or shallow background; not automatically an independent alphabet unit."
+  }
+]

@@ -1,0 +1,38 @@
+[
+  {
+    "file": "data/round12_viewA_native.jpg",
+    "source": "sources/Met327384_DP297593.jpg",
+    "box_xyxy": [
+      400,
+      1200,
+      2550,
+      2800
+    ],
+    "method": "sips native crop, no resizing, JPEG recompression",
+    "sha256": "0c94d191e83b04e4bd73881fa1939e0ae8e13953f1d5d77c3cf4c640de55d798"
+  },
+  {
+    "file": "data/round12_viewB_native.jpg",
+    "source": "sources/Met327384_DP297601.jpg",
+    "box_xyxy": [
+      400,
+      1200,
+      2550,
+      2800
+    ],
+    "method": "sips native crop, no resizing, JPEG recompression",
+    "sha256": "79068ee3a8980e9aeee0d78f67ee34237652be458e8c209189f24912050e4a93"
+  },
+  {
+    "file": "data/round12_viewB_central_native.jpg",
+    "source": "sources/Met327384_DP297601.jpg",
+    "box_xyxy": [
+      1100,
+      1700,
+      1720,
+      2350
+    ],
+    "method": "sips native crop, no resizing, JPEG recompression",
+    "sha256": "7267dd969c1b5be97b38f3962791c86de0c7aedd4f61374253ee4d1f6cae96cf"
+  }
+]

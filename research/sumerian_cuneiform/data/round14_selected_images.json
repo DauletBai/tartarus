@@ -1,0 +1,30 @@
+[
+  {
+    "object": 329081,
+    "accession": "1988.433.1",
+    "view": 1,
+    "url": "https://images.metmuseum.org/CRDImages/an/original/DP293243.jpg",
+    "file": "sources/Met329081_view1.jpg"
+  },
+  {
+    "object": 329081,
+    "accession": "1988.433.1",
+    "view": 2,
+    "url": "https://images.metmuseum.org/CRDImages/an/original/vs1988.433.1xx.jpg",
+    "file": "sources/Met329081_view2.jpg"
+  },
+  {
+    "object": 327385,
+    "accession": "1988.433.3",
+    "view": 1,
+    "url": "https://images.metmuseum.org/CRDImages/an/original/DP293245.jpg",
+    "file": "sources/Met327385_view1.jpg"
+  },
+  {
+    "object": 327385,
+    "accession": "1988.433.3",
+    "view": 2,
+    "url": "https://images.metmuseum.org/CRDImages/an/original/DP293251.jpg",
+    "file": "sources/Met327385_view2.jpg"
+  }
+]

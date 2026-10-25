@@ -1,0 +1,44 @@
+[
+  {
+    "file": "Apkallu_photo.jpg",
+    "url": "https://images.metmuseum.org/CRDImages/an/web-large/DP375422.jpg",
+    "returncode": 0,
+    "error": ""
+  },
+  {
+    "file": "flood_ETCSL.html",
+    "url": "https://etcsl.orinst.ox.ac.uk/section1/tr174.htm",
+    "returncode": 0,
+    "error": ""
+  },
+  {
+    "file": "Genesis2.html",
+    "url": "https://mechon-mamre.org/p/pt/pt0102.htm",
+    "returncode": 0,
+    "error": ""
+  },
+  {
+    "file": "Genesis6.html",
+    "url": "https://mechon-mamre.org/p/pt/pt0106.htm",
+    "returncode": 0,
+    "error": ""
+  },
+  {
+    "file": "Genesis8.html",
+    "url": "https://mechon-mamre.org/p/pt/pt0108.htm",
+    "returncode": 0,
+    "error": ""
+  },
+  {
+    "file": "Genesis9.html",
+    "url": "https://mechon-mamre.org/p/pt/pt0109.htm",
+    "returncode": 0,
+    "error": ""
+  },
+  {
+    "file": "Adda_Morgan.html",
+    "url": "https://www.themorgan.org/exhibitions/online/she-who-wrote/cylinder-seal-mesopotamian-deities",
+    "returncode": 56,
+    "error": "curl: (56) The requested URL returned error: 403\n"
+  }
+]

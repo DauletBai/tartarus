@@ -1,0 +1,6 @@
+witness,edition_line,Sumerian_form,Akkadian_parallel,comparison,status
+CBS346 / P257792,3,inim-zu,a-wa-at-ka,possessed word and second-person possessor,Ancient interlinear alignment as read by edition; not independent decoding of each sign
+CBS346 / P257792,3,inim an-na,a-wa-at a-nim,second occurrence of word with different following constituent,Supports recurring lexical unit inim rather than m automatically meaning my
+CBS346 / P257792,7,lugal-gu_10,be-lí-ia,first-person my attached to lord/king in parallel phrase,Other words intervene; not an exact word-for-word alignment of whole line
+CBS346 / P257792,2,árad-gu_10 árad-zu,no interlinear counterpart in this row,first token is the sender name Aradmu/Aradgu rather than a free possessive example,Do not count as clean productive first-versus-second person contrast; partly damaged
+CTH315 / AuOrS23 50,II33 II41 II48,ama-ĝu_10,am-ma-an-ku is a phonetic column not Akkadian translation,alternative phonetic spelling reported by Viano2016 pp153 and202,Secondary collation table inspected; original tablet not examined on this pass

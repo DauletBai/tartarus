@@ -1,0 +1,5 @@
+﻿left,left_coordinate,right,right_coordinate,sign_label_sequence,uncertain_markers,claim_level
+P000106,obverse 1 1,P000161,obverse 1 1,NAMESZDA#,True,exact editorial labels; not ancient pronunciation
+P000106,obverse 1 1,P000163,obverse 1 1,NAMESZDA#,True,exact editorial labels; not ancient pronunciation
+P000161,obverse 1 1,P000163,obverse 1 1,NAMESZDA#,True,exact editorial labels; not ancient pronunciation
+P000161,obverse 2 3,P000163,obverse 2 1,AB~a ME~a,False,exact editorial labels; not ancient pronunciation

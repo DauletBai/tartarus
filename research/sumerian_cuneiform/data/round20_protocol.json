@@ -1,0 +1,53 @@
+{
+  "created_at": "2026-10-25T12:29:11.463274+05:00",
+  "objective": "Complete one connected independent graphic research cycle: all visible cells of prior imageC, transfer of graphic families across eight new images, then evaluation on four images whose pixels stay unopened until criteria freeze.",
+  "selection": "Next12 photographic IDs in same CDLI search order after1–3. No selection by lemma, title or translation. No editorial text exposed.",
+  "sample_ids": [
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15
+  ],
+  "development_ids": [
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11
+  ],
+  "heldout_ids": [
+    12,
+    13,
+    14,
+    15
+  ],
+  "pilot_image": "sources/round19_image_C.jpg",
+  "prior_exposure": "Pilot image and round19 visual analysis already seen; cultural knowledge cannot be erased. New individual text readings/translations remain unopened throughout.",
+  "deliverables": [
+    "cell map of pilot visible main surface with alternate boundary flags",
+    "graphic vocabulary distinguishing enclosing shapes and interiors",
+    "photo-only development observations including unreadable cases",
+    "frozen diagnostic criteria before opening heldout pixels",
+    "heldout observations and match/ambiguity/no-evidence results",
+    "test of competing structural interpretations and sound-label identifiability",
+    "self-contained research report and visual atlas with source integrity checks"
+  ],
+  "limits": [
+    "No claim that photo count equals independent object count; compare duplicates by hash and imagery",
+    "Do not infer historical direction or agglutination from this graphical stage alone",
+    "Do not assign sounds based on Kazakh resemblance",
+    "Source cards/readers may be stored and parsed for links only; no metadata interpretation this cycle",
+    "Book unchanged"
+  ]
+}

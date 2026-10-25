@@ -1,0 +1,26 @@
+{
+  "rows": 13,
+  "main_rows": 8,
+  "secondary_rows": 5,
+  "main_duplicate_overlap_editorial": 7,
+  "main_missing_duplicate_rows": [
+    86
+  ],
+  "secondary_duplicate_overlap_editorial": 5,
+  "independently_decoded_sounds": 0,
+  "photographed_ancient_objects_in_this_collation": 1,
+  "drawn_ancient_objects_in_this_collation": 2,
+  "independent_new_photo_duplicate_obtained": false,
+  "model_results": {
+    "one_complex_one_fixed_letter": "Not warranted. G1 has multiple editorial spellings; this conditional evidence depends on column functions and segmentation.",
+    "syllabic_logographic_or_lexical_polyvalence": "Compatible with layout and editorial alignments; specific phonetic functions not independently established.",
+    "arbitrary_labels_or_alternative_column_roles": "Not excluded by graphic repetition alone; must test cross-context recurrence.",
+    "Kazakh_like_ancestral_source_to_Sumerian": "Not established or disproved by this small late lexical witness. No direction/date can be inferred from agglutination alone."
+  },
+  "chronology_audit": {
+    "CDLI_P391514": "Neo-Babylonian catalogue period, previously retrieved",
+    "Hallock1940_printed_p4_PDF18": "argues Seleucid regime using colophon terminology",
+    "status": "Source dating proposals differ; no independent resolution here."
+  },
+  "sound_identifiability": "The equality/repetition structure is invariant under a global permutation of proposed sound labels. Therefore repetition without external phonetic anchors cannot identify actual sounds."
+}

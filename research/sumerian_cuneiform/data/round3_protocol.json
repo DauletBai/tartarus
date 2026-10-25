@@ -1,0 +1,13 @@
+{
+  "recorded_date": "2026-10-24",
+  "status": "local prospective protocol; not externally registered; not yet executed",
+  "question": "Does the visible complex a-ni recur across independently attested nominal bases with a consistent possessive function?",
+  "already_seen_not_blind": ["P222607", "P222608", "P226284", "Q000954", "P251600"],
+  "selection_rule": "Obtain a metadata export of Sumerian royal inscriptions with documented findspot, dated EDIIIb or LagashII or UrIII; freeze its hash; exclude already seen records; order by numeric CDLI identifier; take first 20 distinct physical objects before examining their word forms.",
+  "independence": "Count objects, compositions, and find contexts separately; copies of one composition are not independent confirmations of ancestry.",
+  "analysis_order": ["archive image and catalogue", "record visible patterns", "transcribe uncertainty", "compare editorial text", "compare grammatical analyses", "only then evaluate Kazakh candidates"],
+  "outcomes": ["all target occurrences with coordinates", "all distinct bases", "examples whose analysis is ambiguous", "all non-possessive lookalikes", "absence of a visible complex where the edition reconstructs it"],
+  "statistics": "Descriptive counts only for the pilot. No ancestry percentage or p-value from this selected morphology sample.",
+  "language_comparison": "Historical relationship requires an independent lexicon and regular sound and morphology correspondences with predeclared controls; this suffix test alone cannot establish Sumerian-Kazakh descent.",
+  "stop_rule": "Publish findings for all 20 selected objects including negative and unreadable cases; changes to selection rules require a dated amendment before examining replacement texts."
+}

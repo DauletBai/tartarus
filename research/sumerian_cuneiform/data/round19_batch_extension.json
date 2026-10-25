@@ -1,0 +1,6 @@
+{
+  "created_at": "2026-10-25T12:19:34.265334+05:00",
+  "reason": "ImageA is too worn for reliable segmentation; retain it as such.",
+  "selection": "Inspect next two previously unstored photo IDs in the same search order, P000002 andP000003, then stop image acquisition this cycle. Retain both regardless of readability.",
+  "withheld": "Individual editorial readings, translations, titles remain unexposed this cycle."
+}

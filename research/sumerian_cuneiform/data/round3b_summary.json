@@ -1,0 +1,452 @@
+{
+  "snapshot_sha256": "66991601df193a5cb93bccf92e9051e86a98fbb668a9dd343477d14f0c9d54d6",
+  "catalogue_sha256": "47dade90f042ffc34db7dc21db5799ed5237e0d812e0a003238e7b721a552330",
+  "corpus_json_files": 1457,
+  "catalogue_members": 1802,
+  "compositions_with_sumerian_nodes": 1456,
+  "parse_failures": [
+    {
+      "file": "etcsri/corpusjson/Q001066.json",
+      "bytes": 0,
+      "error": "Expecting value: line 1 column 1 (char 0)"
+    }
+  ],
+  "counts": {
+    "sumerian_word_occurrences": 29627,
+    "occurrences_with_morphology": 28260,
+    "neither": 28194,
+    "model_only": 1117,
+    "both": 313,
+    "visible_only": 3,
+    "excluded_non_sumerian_or_missing_language": 38
+  },
+  "categories": {
+    "both": {
+      "occurrences": 313,
+      "compositions": 248,
+      "distinct_editorial_lexical_bases": 27,
+      "top_bases": [
+        [
+          "nin",
+          118
+        ],
+        [
+          "lugal",
+          109
+        ],
+        [
+          "e",
+          42
+        ],
+        [
+          "aŋ",
+          7
+        ],
+        [
+          "imin",
+          4
+        ],
+        [
+          "numun",
+          4
+        ],
+        [
+          "diŋir",
+          4
+        ],
+        [
+          "gur",
+          3
+        ],
+        [
+          "maš",
+          2
+        ],
+        [
+          "suhuš",
+          2
+        ],
+        [
+          "bala",
+          2
+        ],
+        [
+          "kinud",
+          1
+        ],
+        [
+          "me",
+          1
+        ],
+        [
+          "huš",
+          1
+        ],
+        [
+          "mir",
+          1
+        ]
+      ],
+      "examples": [
+        {
+          "qid": "Q000376",
+          "ref": "Q000376.24.2",
+          "category": "both",
+          "form": "nin-a-ni",
+          "cf": "nin",
+          "gw": "lady",
+          "pos": "N",
+          "morph": "N1=nin.N3=ani.N5=ra",
+          "morph2": "N1=STEM.N3=3-SG-H-POSS.N5=DAT-H",
+          "norm": "nin.ani.ra",
+          "period": "Old Akkadian",
+          "designation": "Utu-hegal 4 (The victory of Utu-hegal)"
+        },
+        {
+          "qid": "Q000377",
+          "ref": "Q000377.19.1",
+          "category": "both",
+          "form": "e₂-a-ni",
+          "cf": "e",
+          "gw": "house",
+          "pos": "N",
+          "morph": "N1=e.N3=ani",
+          "morph2": "N1=STEM.N3=3-SG-H-POSS",
+          "norm": "e.ani",
+          "period": "Lagaš II",
+          "designation": "The building of Ningirsu's temple (Gudea, cylinders A and B)"
+        },
+        {
+          "qid": "Q000377",
+          "ref": "Q000377.53.3",
+          "category": "both",
+          "form": "ki-nu₂-a-ni",
+          "cf": "kinud",
+          "gw": "bedroom",
+          "pos": "N",
+          "morph": "N1=kinud.N3=ani.N5=ø",
+          "morph2": "N1=STEM.N3=3-SG-H-POSS.N5=ABS",
+          "norm": "kinud.ani.ø",
+          "period": "Lagaš II",
+          "designation": "The building of Ningirsu's temple (Gudea, cylinders A and B)"
+        },
+        {
+          "qid": "Q000377",
+          "ref": "Q000377.107.1",
+          "category": "both",
+          "form": "e₂-a-ni",
+          "cf": "e",
+          "gw": "house",
+          "pos": "N",
+          "morph": "N1=e.N3=ani.N5=ø",
+          "morph2": "N1=STEM.N3=3-SG-H-POSS.N5=ABS",
+          "norm": "e.ani.ø",
+          "period": "Lagaš II",
+          "designation": "The building of Ningirsu's temple (Gudea, cylinders A and B)"
+        },
+        {
+          "qid": "Q000377",
+          "ref": "Q000377.110.7",
+          "category": "both",
+          "form": "me-a-ni",
+          "cf": "me",
+          "gw": "be",
+          "pos": "V/i",
+          "morph": "NV2=me.NV4='a.N3=ani.N5=ø",
+          "morph2": "NV2=STEM.NV4=SUB.N3=3-SG-H-POSS.N5=ABS",
+          "norm": "me.'a.ani.ø",
+          "period": "Lagaš II",
+          "designation": "The building of Ningirsu's temple (Gudea, cylinders A and B)"
+        },
+        {
+          "qid": "Q000377",
+          "ref": "Q000377.250.2",
+          "category": "both",
+          "form": "huš-a-ni",
+          "cf": "huš",
+          "gw": "reddish",
+          "pos": "V/i",
+          "morph": "NV2=huš.NV4='a.N3=ani.N5=ø",
+          "morph2": "NV2=STEM.NV4=SUB.N3=3-SG-H-POSS.N5=ABS",
+          "norm": "huš.'a.ani.ø",
+          "period": "Lagaš II",
+          "designation": "The building of Ningirsu's temple (Gudea, cylinders A and B)"
+        },
+        {
+          "qid": "Q000377",
+          "ref": "Q000377.320.4",
+          "category": "both",
+          "form": "maš₂-a-ni",
+          "cf": "maš",
+          "gw": "goat",
+          "pos": "N",
+          "morph": "N1=maš.N3=ani.N5=ø",
+          "morph2": "N1=STEM.N3=3-SG-H-POSS.N5=ABS",
+          "norm": "maš.ani.ø",
+          "period": "Lagaš II",
+          "designation": "The building of Ningirsu's temple (Gudea, cylinders A and B)"
+        },
+        {
+          "qid": "Q000377",
+          "ref": "Q000377.539.4",
+          "category": "both",
+          "form": "maš₂-a-ni",
+          "cf": "maš",
+          "gw": "goat",
+          "pos": "N",
+          "morph": "N1=maš.N3=ani.N5=ø",
+          "morph2": "N1=STEM.N3=3-SG-H-POSS.N5=ABS",
+          "norm": "maš.ani.ø",
+          "period": "Lagaš II",
+          "designation": "The building of Ningirsu's temple (Gudea, cylinders A and B)"
+        }
+      ]
+    },
+    "visible_only": {
+      "occurrences": 3,
+      "compositions": 3,
+      "distinct_editorial_lexical_bases": 2,
+      "top_bases": [
+        [
+          "še",
+          1
+        ],
+        [
+          "Šešani",
+          1
+        ]
+      ],
+      "examples": [
+        {
+          "qid": "Q001056",
+          "ref": "Q001056.86.1",
+          "category": "visible_only",
+          "form": "e-ne₂-še₂₁-a-ni",
+          "cf": "še",
+          "gw": "call",
+          "pos": "V/t",
+          "morph": "V2=i.V6=nn.V10=i.V11=n.V12=še.V14=ø.V15=SUB=N3=ani",
+          "morph2": "V2=FIN.V6=3-SG-H.V10=L2.V11=3-SG-H-A.V12=STEM.V14=3-SG-P.V15=SUB.N3=3-SG-H-POSS",
+          "norm": "i.nn.i.n.še.ø.SUB=N3=ani",
+          "period": "Early Dynastic",
+          "designation": "E-anatum 01"
+        },
+        {
+          "qid": "Q004330",
+          "ref": "Q004330.1.1",
+          "category": "visible_only",
+          "form": "šeš-a-ni",
+          "cf": "Šešani",
+          "gw": "1",
+          "pos": "PN",
+          "morph": "N1=Šešani",
+          "morph2": "N1=NAME",
+          "norm": "Šešani",
+          "period": "Ur III",
+          "designation": "Šulgi 2113add / CDLI Seals 004092"
+        },
+        {
+          "qid": "Q004882",
+          "ref": "Q004882.3.1",
+          "category": "visible_only",
+          "form": "x-a-ni",
+          "cf": "",
+          "gw": "",
+          "pos": "u",
+          "morph": "",
+          "morph2": "",
+          "norm": "",
+          "period": "Lagaš II",
+          "designation": "Lagaš II Unidentified 1051add"
+        }
+      ]
+    },
+    "model_only": {
+      "occurrences": 1117,
+      "compositions": 490,
+      "distinct_editorial_lexical_bases": 177,
+      "top_bases": [
+        [
+          "namtil",
+          133
+        ],
+        [
+          "aŋ",
+          126
+        ],
+        [
+          "diŋir",
+          71
+        ],
+        [
+          "lugal",
+          55
+        ],
+        [
+          "arad",
+          44
+        ],
+        [
+          "dumu",
+          36
+        ],
+        [
+          "nin",
+          35
+        ],
+        [
+          "šu",
+          33
+        ],
+        [
+          "iri",
+          30
+        ],
+        [
+          "e",
+          29
+        ],
+        [
+          "Ŋirsu",
+          28
+        ],
+        [
+          "šag",
+          26
+        ],
+        [
+          "kalam",
+          24
+        ],
+        [
+          "alan",
+          24
+        ],
+        [
+          "Eninnu-anzubabbar",
+          22
+        ]
+      ],
+      "examples": [
+        {
+          "qid": "Q000376",
+          "ref": "Q000376.9.3",
+          "category": "model_only",
+          "form": "dam-ni",
+          "cf": "dam",
+          "gw": "spouse",
+          "pos": "N",
+          "morph": "N1=dam.N3=ani.N5=ø",
+          "morph2": "N1=STEM.N3=3-SG-H-POSS.N5=ABS",
+          "norm": "dam.ani.ø",
+          "period": "Old Akkadian",
+          "designation": "Utu-hegal 4 (The victory of Utu-hegal)"
+        },
+        {
+          "qid": "Q000376",
+          "ref": "Q000376.11.3",
+          "category": "model_only",
+          "form": "dumu-ni",
+          "cf": "dumu",
+          "gw": "child",
+          "pos": "N",
+          "morph": "N1=dumu.N3=ani.N5=ø",
+          "morph2": "N1=STEM.N3=3-SG-H-POSS.N5=ABS",
+          "norm": "dumu.ani.ø",
+          "period": "Old Akkadian",
+          "designation": "Utu-hegal 4 (The victory of Utu-hegal)"
+        },
+        {
+          "qid": "Q000376",
+          "ref": "Q000376.21.2",
+          "category": "model_only",
+          "form": "dug₄-ga-na",
+          "cf": "dug",
+          "gw": "speak",
+          "pos": "V/t",
+          "morph": "NV2=dug.NV4='a.N3=ani.N5='a",
+          "morph2": "NV2=STEM.NV4=SUB.N3=3-SG-H-POSS.N5=L2-NH",
+          "norm": "dug.'a.ani.'a",
+          "period": "Old Akkadian",
+          "designation": "Utu-hegal 4 (The victory of Utu-hegal)"
+        },
+        {
+          "qid": "Q000376",
+          "ref": "Q000376.53.2",
+          "category": "model_only",
+          "form": "iri-na-ke₄-ne",
+          "cf": "iri",
+          "gw": "city",
+          "pos": "N",
+          "morph": "N1=iri.N3=ani.N5=ak.N4=enee.N5=ra",
+          "morph2": "N1=STEM.N3=3-SG-H-POSS.N5=GEN.N4=PL.N5=DAT-H",
+          "norm": "iri.ani.ak.enee.ra",
+          "period": "Old Akkadian",
+          "designation": "Utu-hegal 4 (The victory of Utu-hegal)"
+        },
+        {
+          "qid": "Q000376",
+          "ref": "Q000376.67.1",
+          "category": "model_only",
+          "form": "iri-ni",
+          "cf": "iri",
+          "gw": "city",
+          "pos": "N",
+          "morph": "N1=iri.N3=ani.N5=ø",
+          "morph2": "N1=STEM.N3=3-SG-H-POSS.N5=ABS",
+          "norm": "iri.ani.ø",
+          "period": "Old Akkadian",
+          "designation": "Utu-hegal 4 (The victory of Utu-hegal)"
+        },
+        {
+          "qid": "Q000376",
+          "ref": "Q000376.68.1",
+          "category": "model_only",
+          "form": "eŋir-ra-ne₂",
+          "cf": "eŋir",
+          "gw": "back",
+          "pos": "N",
+          "morph": "N1=eŋir.N3=ani.N5=e",
+          "morph2": "N1=STEM.N3=3-SG-H-POSS.N5=L3",
+          "norm": "eŋir.ani.e",
+          "period": "Old Akkadian",
+          "designation": "Utu-hegal 4 (The victory of Utu-hegal)"
+        },
+        {
+          "qid": "Q000376",
+          "ref": "Q000376.71.3",
+          "category": "model_only",
+          "form": "zig₃-ga-ne₂",
+          "cf": "zig",
+          "gw": "rise",
+          "pos": "V/i",
+          "morph": "NV2=zig.NV4='a.N3=ani.N5=e",
+          "morph2": "NV2=STEM.NV4=SUB.N3=3-SG-H-POSS.N5=L3-NH",
+          "norm": "zig.'a.ani.e",
+          "period": "Old Akkadian",
+          "designation": "Utu-hegal 4 (The victory of Utu-hegal)"
+        },
+        {
+          "qid": "Q000376",
+          "ref": "Q000376.82.3",
+          "category": "model_only",
+          "form": "zig₃-ga-ne₂",
+          "cf": "zig",
+          "gw": "rise",
+          "pos": "V/i",
+          "morph": "NV2=zig.NV4='a.N3=ani.N5=e",
+          "morph2": "NV2=STEM.NV4=SUB.N3=3-SG-H-POSS.N5=L3-NH",
+          "norm": "zig.'a.ani.e",
+          "period": "Old Akkadian",
+          "designation": "Utu-hegal 4 (The victory of Utu-hegal)"
+        }
+      ]
+    }
+  },
+  "unit": "Unique editorial word node (Q id, ref, form); composites are not physical objects",
+  "limitations": [
+    "Editorial morphological labels are hypotheses, not independent validation",
+    "Exact suffix test deliberately misses spelling variants and following suffixes",
+    "No ancestry, population or language-age percentages inferred"
+  ]
+}

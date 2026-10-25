@@ -1,0 +1,17 @@
+{
+  "date": "2026-10-25",
+  "stage": "round15",
+  "goal": "A complete out-of-object arithmetic/graphic validation batch, followed by a source-based search for an ancient phonetic/segmentation anchor.",
+  "numeric_frame": [
+    "P005371",
+    "P005372"
+  ],
+  "selection": "First two sequential publication items MSVO3,60 and61 in the previously seen source list that offer an explicit reverse sum. Their editorial strings were already exposed in earlier web snippets, so no blind-text claim. Images are not yet viewed. Both outcomes must be retained, including damage/failure.",
+  "prior_numeric_model": "Freeze external SE weights before new observations: N01=1,N14=6,N45=60,N34=180,N39~a=1/5, subject to confirmation of actual numeral variants; focal conditional N45/N14=10 already known.",
+  "arith_rule": "Compare all quantity-bearing obverse entries against explicit reverse total under SE and S models. Keep damaged/restored prefixes separate. Do not count a restored or incomplete match as a clean independent validation. Do not repair quantities to force closure. Exclude blank/date/heading-only rows by recorded prefix rule, not after seeing sums.",
+  "source_identity_rule": "Verify publication, collection and museum number; no assumption from adjacentP identifiers alone.",
+  "image_rule": "Inspect first available photographic asset among recorded readers for each; keep drawing-only/unavailable outcomes. Record what is visible before new extraction of individual card rows, despite prior snippet exposure.",
+  "graphic_rule": "For the two admitted photographs count/locate numeral bundles and recurring complexes; use neutral shapes and keep exact paleographic identity tentative.",
+  "phonetic_followup": "Choose a physical ancient lexical/grammatical document identified by a primary institutional record, save its images and inspect column organisation. Latin sound values stay a separate editorial hypothesis; no modern sign list alone is an original witness.",
+  "end_product": "Integrated report, source register, raw rows, arithmetic residuals with uncertainty, graphic images, ancient-anchor availability outcome and reproducible check script. No manuscript edits."
+}

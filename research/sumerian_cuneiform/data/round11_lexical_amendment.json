@@ -1,0 +1,18 @@
+{
+  "date": "2026-10-25",
+  "status": "Additional fixed lexical screen before searching the selected ETCSRI word nodes; many general dictionary readings may already be known, so not a blind discovery.",
+  "domains": [
+    "water",
+    "earth/place",
+    "sun",
+    "moon",
+    "person",
+    "woman",
+    "man/male",
+    "mother",
+    "father",
+    "name"
+  ],
+  "selection_rule": "Export all exact English glossary gw or sense matches to the predeclared domain labels, retaining homonyms, mismatches and missing terms; do not treat corpus absence as language absence. Modern Kazakh comparanda supplied separately; early source spellings remain editorial hypotheses.",
+  "purpose": "Pair inherited bound-morpheme tests with ordinary vocabulary; no ancestry percentage from this small deliberately selected set."
+}

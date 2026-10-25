@@ -1,0 +1,401 @@
+﻿qid,ref,line_label,form,cf,gw,sense,norm,morph,morph2,period,designation,n6_value
+Q000376,Q000376.58.1,58,a₂-dah-ŋu₁₀-um,adah,helper,helper,adah.ŋu.ø.am,N1=adah.N3=ŋu.N5=ø.N6=am,N1=STEM.N3=1-SG-POSS.N5=ABS.N6=COP-3-SG,Old Akkadian,Utu-hegal 4 (The victory of Utu-hegal),am
+Q000377,Q000377.9.3,Cylinder A i 9,{id₂}idigna-am₃,Idigna,1,1,Idigna.ø.am,N1=Idigna.N5=ø.N6=am,N1=NAME.N5=ABS.N6=COP-3-SG,Lagaš II,"The building of Ningirsu's temple (Gudea, cylinders A and B)",am
+Q000377,Q000377.12.4,Cylinder A i 12,daŋal-kam,daŋal,wide,(to be) wide,daŋal.ak.ø.am,NV2=daŋal.N5=ak.N5=ø.N6=am,NV2=STEM.N5=GEN.N5=ABS.N6=COP-3-SG,Lagaš II,"The building of Ningirsu's temple (Gudea, cylinders A and B)",am
+Q000377,Q000377.18.5,Cylinder A i 18,mu-ni-du₈-am₃,duh,loosen,"loosen, release",mu.nn.i.n.duh.ø.SUB.ø.am,V4=mu.V6=nn.V10=i.V11=n.V12=duh.V14=ø.V15=SUB.N5=ø.N6=am,V4=VEN.V6=3-SG-H.V10=L2.V11=3-SG-H-A.V12=STEM.V14=3-SG-P.V15=SUB.N5=ABS.N6=COP-3-SG,Lagaš II,"The building of Ningirsu's temple (Gudea, cylinders A and B)",am
+Q000377,Q000377.20.3,Cylinder A i 20,gal-gal-la-am₃,gal,big,"(to be) big, great",galgal.ø.am,NV2=galgal.N5=ø.N6=am,NV2=STEM-RDP.N5=ABS.N6=COP-3-SG,Lagaš II,"The building of Ningirsu's temple (Gudea, cylinders A and B)",am
+Q000377,Q000377.22.3,Cylinder A i 22,sud-ra₂-am₃,sud,distant,(to be) distant,sud.'a.ø.am,NV2=sud.NV4='a.N5=ø.N6=am,NV2=STEM.NV4=SUB.N5=ABS.N6=COP-3-SG,Lagaš II,"The building of Ningirsu's temple (Gudea, cylinders A and B)",am
+Q000377,Q000377.26.1,Cylinder A i 26,sipad-me,sipad,shepherd,shepherd,sipad.ø.men,N1=sipad.N5=ø.N6=men,N1=STEM.N5=ABS.N6=COP-1-SG,Lagaš II,"The building of Ningirsu's temple (Gudea, cylinders A and B)",men
+Q000377,Q000377.49.4,Cylinder A ii 20,ba-tuku-am₃,tuku,acquire,"to acquire, to have",ba.tuku.ø.SUB.ø.am,V5=ba.V12=tuku.V14=ø.V15=SUB.N5=ø.N6=am,V5=MID.V12=STEM.V14=3-SG-S.V15=SUB.N5=ABS.N6=COP-3-SG,Lagaš II,"The building of Ningirsu's temple (Gudea, cylinders A and B)",am
+Q000377,Q000377.61.5,Cylinder A iii 3,ŋar-ra-me,ŋar,place,"put, place, lay down",ŋarŋar.'a.ø.men,NV2=ŋarŋar.NV4='a.N5=ø.N6=men,NV2=STEM.NV4=SUB.N5=ABS.N6=COP-2-SG,Lagaš II,"The building of Ningirsu's temple (Gudea, cylinders A and B)",men
+Q000377,Q000377.62.5,Cylinder A iii 4,he₂-ŋal₂-la-am₃,heŋal,plenty,plenty,heŋal.ø.am,N1=heŋal.N5=ø.N6=am,N1=STEM.N5=ABS.N6=COP-3-SG,Lagaš II,"The building of Ningirsu's temple (Gudea, cylinders A and B)",am
+Q000377,Q000377.64.2,Cylinder A iii 6,nu-tuku-me,tuku,acquire,"to acquire, to have",nu.tuku.ø.men,NV1=nu.NV2=tuku.N5=ø.N6=men,NV1=NEG.NV2=STEM.N5=ø.N6=COP-2-SG,Lagaš II,"The building of Ningirsu's temple (Gudea, cylinders A and B)",men
+Q000377,Q000377.64.4,Cylinder A iii 6,ze₂-me,zaʾe,you,you,za'e.ø.men,N1=za'e.N5=ø.N6=men,N1=STEM.N5=ABS.N6=COP-2-SG,Lagaš II,"The building of Ningirsu's temple (Gudea, cylinders A and B)",men
+Q000377,Q000377.65.2,Cylinder A iii 7,nu-tuku-me,tuku,acquire,"to acquire, to have",nu.tuku.ø.men,NV1=nu.NV2=tuku.N5=ø.N6=men,NV1=NEG.NV2=STEM.N5=ø.N6=COP-2-SG,Lagaš II,"The building of Ningirsu's temple (Gudea, cylinders A and B)",men
+Q000377,Q000377.65.4,Cylinder A iii 7,ze₂-me,zaʾe,you,you,za'e.ø.men,N1=za'e.N5=ø.N6=men,N1=STEM.N5=ABS.N6=COP-2-SG,Lagaš II,"The building of Ningirsu's temple (Gudea, cylinders A and B)",men
+Q000377,Q000377.67.4,Cylinder A iii 9,dug₃-ga-am₃,dug,good,good,dug.'a.ø.am,NV2=dug.NV4='a.N5=ø.N6=am,NV2=STEM.NV4=SUB.N5=ABS.N6=COP-3-SG,Lagaš II,"The building of Ningirsu's temple (Gudea, cylinders A and B)",am
+Q000377,Q000377.69.2,Cylinder A iii 11,gal-ŋu₁₀-me,gal,big,"(to be) big, great",gal.ŋu.ø.men,NV2=gal.N3=ŋu.N5=ø.N6=men,NV2=STEM.N3=1-SG-POSS.N5=ABS.N6=COP-2-SG,Lagaš II,"The building of Ningirsu's temple (Gudea, cylinders A and B)",men
+Q000377,Q000377.70.4,Cylinder A iii 12,du₃-a-me,du,build,to build,du.'a.ø.men,NV2=du.NV4='a.N5=ø.N6=men,NV2=STEM.NV4=SUB.N5=ABS.N6=COP-2-SG,Lagaš II,"The building of Ningirsu's temple (Gudea, cylinders A and B)",men
+Q000377,Q000377.72.2,Cylinder A iii 14,daŋal-me,daŋal,wide,(to be) wide,daŋal.ø.men,NV2=daŋal.N5=ø.N6=men,NV2=STEM.N5=ABS.N6=COP-2-SG,Lagaš II,"The building of Ningirsu's temple (Gudea, cylinders A and B)",men
+Q000377,Q000377.87.4,Cylinder A iii 29,ba-tuku-am₃,tuku,acquire,"to acquire, to have",ba.tuku.ø.SUB.ø.am,V5=ba.V12=tuku.V14=ø.V15=SUB.N5=ø.N6=am,V5=MID.V12=STEM.V14=3-SG-S.V15=SUB.N5=ABS.N6=COP-3-SG,Lagaš II,"The building of Ningirsu's temple (Gudea, cylinders A and B)",am
+Q000377,Q000377.98.2,Cylinder A iv 11,e₃-a-am₃,e,leave,"to leave, go out",e.'a.ø.am,NV2=e.NV4='a.N5=ø.N6=am,NV2=STEM.NV4=SUB.N5=ABS.N6=COP-3-SG,Lagaš II,"The building of Ningirsu's temple (Gudea, cylinders A and B)",am
+Q000377,Q000377.99.2,Cylinder A iv 12,diŋir-re-ne-me,diŋir,deity,"deity, personal god",diŋir.enee.ak.ø.men,N1=diŋir.N4=enee.N5=ak.N5=ø.N6=men,N1=STEM.N4=PL.N5=GEN.N5=ABS.N6=COP-2-SG,Lagaš II,"The building of Ningirsu's temple (Gudea, cylinders A and B)",men
+Q000377,Q000377.100.2,Cylinder A iv 13,kur-kur-ra-me,kur,mountain,mountain,kurkur.ak.ø.men,N1=kurkur.N5=ak.N5=ø.N6=men,N1=STEM-RDP.N5=GEN.N5=ABS.N6=COP-2-SG,Lagaš II,"The building of Ningirsu's temple (Gudea, cylinders A and B)",men
+Q000377,Q000377.100.6,Cylinder A iv 13,ma-mu-da,mamud,dream,a (meaningful) dream,mamud.ø.am,N1=mamud.N5=ø.N6=am,N1=STEM.N5=ABS.N6=COP-3-SG,Lagaš II,"The building of Ningirsu's temple (Gudea, cylinders A and B)",am
+Q000377,Q000377.101.4,Cylinder A iv 14,diš-am₃,diš,one,one,diš.ø.am,NV2=diš.N5=ø.N6=am,NV2=STEM.N5=ABS.N6=COP-3-SG,Lagaš II,"The building of Ningirsu's temple (Gudea, cylinders A and B)",am
+Q000377,Q000377.103.3,Cylinder A iv 16,diŋir-ra-am₃,diŋir,deity,"deity, personal god",diŋir.ø.am,N1=diŋir.N5=ø.N6=am,N1=STEM.N5=ABS.N6=COP-3-SG,Lagaš II,"The building of Ningirsu's temple (Gudea, cylinders A and B)",am
+Q000377,Q000377.104.2,Cylinder A iv 17,{d}anzud₂{mušen}-dam,anzud,eagle,a mythological eagle,anzud.ø.am,N1=anzud.N5=ø.N6=am,N1=STEM.N5=ABS.N6=COP-3-SG,Lagaš II,"The building of Ningirsu's temple (Gudea, cylinders A and B)",am
+Q000377,Q000377.105.2,Cylinder A iv 18,a-ma-ru-kam,amaru,flood,flood,amaru.ak.am,N1=amaru.N5=ak.N6=am,N1=STEM.N5=GEN.N6=COP-3-SG,Lagaš II,"The building of Ningirsu's temple (Gudea, cylinders A and B)",am
+Q000377,Q000377.110.2,Cylinder A iv 23,diš-am₃,diš,one,one,diš.ø.am,NV2=diš.N5=ø.N6=am,NV2=STEM.N5=ABS.N6=COP-3-SG,Lagaš II,"The building of Ningirsu's temple (Gudea, cylinders A and B)",am
+Q000377,Q000377.115.2,Cylinder A v 2,ur-saŋ-ŋa₂-am₃,ursaŋ,hero,"hero, warrior",ursaŋ.ø.am,N1=ursaŋ.N5=ø.N6=am,N1=STEM.N5=ABS.N6=COP-3-SG,Lagaš II,"The building of Ningirsu's temple (Gudea, cylinders A and B)",am
+Q000377,Q000377.130.3,Cylinder A v 17,ga-nam-me-am₃,me,be,"to be, (the independent form of the) copula",ga.name.ø.ø.am,V2=ga.V12=name.V14=ø.N5=ø.N6=am,V2=MOD2.V12=COP.V14=3-SG-S.N5=ABS.N6=COP-3-SG,Lagaš II,"The building of Ningirsu's temple (Gudea, cylinders A and B)",am
+Q000377,Q000377.138.3,Cylinder A v 25,ga-nam-me-am₃,me,be,"to be, (the independent form of the) copula",ga.name.ø.ø.am,V2=ga.V12=name.V14=ø.N5=ø.N6=am,V2=MOD2.V12=COP.V14=3-SG-S.N5=ABS.N6=COP-3-SG,Lagaš II,"The building of Ningirsu's temple (Gudea, cylinders A and B)",am
+Q000377,Q000377.141.2,Cylinder A vi 3,ur-saŋ-am₃,ursaŋ,hero,"hero, warrior",ursaŋ.ø.am,N1=ursaŋ.N5=ø.N6=am,N1=STEM.N5=ABS.N6=COP-3-SG,Lagaš II,"The building of Ningirsu's temple (Gudea, cylinders A and B)",am
+Q000377,Q000377.143.1,Cylinder A vi 5,{d}nin-dub-kam,Nindubak,1,1,Nindubak.ø.am,N1=Nindubak.N5=ø.N6=am,N1=NAME.N5=ABS.N6=COP-3-SG,Lagaš II,"The building of Ningirsu's temple (Gudea, cylinders A and B)",am
+Q000377,Q000377.146.4,Cylinder A vi 8,ga-nam-me-am₃,me,be,"to be, (the independent form of the) copula",ga.name.ø.ø.am,V2=ga.V12=name.V14=ø.N5=ø.N6=am,V2=MOD2.V12=COP.V14=3-SG-S.N5=ABS.N6=COP-3-SG,Lagaš II,"The building of Ningirsu's temple (Gudea, cylinders A and B)",am
+Q000377,Q000377.151.1,Cylinder A vi 13,ze₂-me,zaʾe,you,you,za'e.ø.men,N1=za'e.N5=ø.N6=men,N1=STEM.N5=ABS.N6=COP-2-SG,Lagaš II,"The building of Ningirsu's temple (Gudea, cylinders A and B)",men
+Q000377,Q000377.167.4,Cylinder A vii 3,dug₄-ga-am₃,dug,speak,speak,dug.'a.ø.am,NV2=dug.NV4='a.N5=ø.N6=am,NV2=STEM.NV4=SUB.N5=ABS.N6=COP-3-SG,Lagaš II,"The building of Ningirsu's temple (Gudea, cylinders A and B)",am
+Q000377,Q000377.171.3,Cylinder A vii 7,gal-gal-la-am₃,gal,big,"(to be) big, great",galgal.ø.am,NV2=galgal.N5=ø.N6=am,NV2=STEM-RDP.N5=ABS.N6=COP-3-SG,Lagaš II,"The building of Ningirsu's temple (Gudea, cylinders A and B)",am
+Q000377,Q000377.204.4,Cylinder A viii 10,kur-ra-kam,kur,mountain,mountain,kur.ak.ø.am,N1=kur.N5=ak.N5=ø.N6=am,N1=STEM.N5=GEN.N5=ABS.N6=COP-3-SG,Lagaš II,"The building of Ningirsu's temple (Gudea, cylinders A and B)",am
+Q000377,Q000377.205.3,Cylinder A viii 11,diŋir-ra-kam,diŋir,deity,"deity, personal god",diŋir.ak.ø.am,N1=diŋir.N5=ak.N5=ø.N6=am,N1=STEM.N5=GEN.N5=ABS.N6=COP-3-SG,Lagaš II,"The building of Ningirsu's temple (Gudea, cylinders A and B)",am
+Q000377,Q000377.257.3,Cylinder A x 10,dug₃-ga-am₃,dug,good,good,dug.'a.ø.am,NV2=dug.NV4='a.N5=ø.N6=am,NV2=STEM.NV4=SUB.N5=ABS.N6=COP-3-SG,Lagaš II,"The building of Ningirsu's temple (Gudea, cylinders A and B)",am
+Q000377,Q000377.303.2,Cylinder A xi 27,ud-dam,ud,sun,sun,ud.ø.am,N1=ud.N5=ø.N6=am,N1=STEM.N5=ABS.N6=COP-3-SG,Lagaš II,"The building of Ningirsu's temple (Gudea, cylinders A and B)",am
+Q000377,Q000377.315.3,Cylinder A xii 12,u₃-sa-ga-am₃,usag,sleep,"a revealing sleep, a revelation",usag.ø.am,N1=usag.N5=ø.N6=am,N1=STEM.N5=ABS.N6=COP-3-SG,Lagaš II,"The building of Ningirsu's temple (Gudea, cylinders A and B)",am
+Q000377,Q000377.316.2,Cylinder A xii 13,ma-mu-dam,mamud,dream,a (meaningful) dream,mamud.ø.am,N1=mamud.N5=ø.N6=am,N1=STEM.N5=ABS.N6=COP-3-SG,Lagaš II,"The building of Ningirsu's temple (Gudea, cylinders A and B)",am
+Q000377,Q000377.322.1,Cylinder A xii 19,ud-dam,ud,sun,sun,ud.ø.am,N1=ud.N5=ø.N6=am,N1=STEM.N5=ABS.N6=COP-3-SG,Lagaš II,"The building of Ningirsu's temple (Gudea, cylinders A and B)",am
+Q000377,Q000377.331.3,Cylinder A xiii 2,gan-na-kam,gan,bear,to bear offspring,gan.'a.ak.ø.am,NV2=gan.NV4='a.N5=ak.N5=ø.N6=am,NV2=STEM.NV4=SUB.N5=GEN.N5=ABS.N6=COP-3-SG,Lagaš II,"The building of Ningirsu's temple (Gudea, cylinders A and B)",am
+Q000377,Q000377.351.3,Cylinder A xiii 22,lugal-la-na-kam,lugal,king,king,lugal.ani.ak.ø.am,N1=lugal.N3=ani.N5=ak.N5=ø.N6=am,N1=STEM.N3=3-SG-H-POSS.N5=GEN.N5=ABS.N6=COP-3-SG,Lagaš II,"The building of Ningirsu's temple (Gudea, cylinders A and B)",am
+Q000377,Q000377.355.4,Cylinder A xiii 26,kur-ra-kam,kur,mountain,mountain,kur.ak.ø.am,N1=kur.N5=ak.N5=ø.N6=am,N1=STEM.N5=GEN.N5=ABS.N6=COP-3-SG,Lagaš II,"The building of Ningirsu's temple (Gudea, cylinders A and B)",am
+Q000377,Q000377.356.3,Cylinder A xiii 27,diŋir-ra-kam,diŋir,deity,"deity, personal god",diŋir.ak.ø.am,N1=diŋir.N5=ak.N5=ø.N6=am,N1=STEM.N5=GEN.N5=ABS.N6=COP-3-SG,Lagaš II,"The building of Ningirsu's temple (Gudea, cylinders A and B)",am
+Q000377,Q000377.381.4,Cylinder A xiv 23,{d}nanše-kam,Nanše,1,1,Nanše.ak.ø.am,N1=Nanše.N5=ak.N5=ø.N6=am,N1=NAME.N5=GEN.N5=ABS.N6=COP-3-SG,Lagaš II,"The building of Ningirsu's temple (Gudea, cylinders A and B)",am
+Q000377,Q000377.385.3,Cylinder A xiv 27,{d}inana-kam,Inanak,1,1,Inanak.ak.ø.am,N1=Inanak.N5=ak.N5=ø.N6=am,N1=NAME.N5=GEN.N5=ABS.N6=COP-3-SG,Lagaš II,"The building of Ningirsu's temple (Gudea, cylinders A and B)",am
+Q000377,Q000377.410.2,Cylinder A xv 26,mah-am₃,mah,great,great,mah.ø.am,NV2=mah.N5=ø.N6=am,NV2=STEM.N5=ABS.N6=COP-3-SG,Lagaš II,"The building of Ningirsu's temple (Gudea, cylinders A and B)",am
+Q000377,Q000377.410.4,Cylinder A xv 26,im-dirig-ga-am₃,dirig,exceed,to exceed,i.m.b.dirig.ø.SUB.ø.am,V2=i.V4=m.V11=b.V12=dirig.V14=ø.V15=SUB.N5=ø.N6=am,V2=FIN.V4=VEN.V11=3-SG-NH-L3.V12=STEM.V14=3-SG-S.V15=SUB.N5=ABS.N6=COP-3-SG,Lagaš II,"The building of Ningirsu's temple (Gudea, cylinders A and B)",am
+Q000377,Q000377.435.4,Cylinder A xvi 18,du₃-dam,du,build,to build,du.ed.ø.am,NV2=du.NV3=ed.N5=ø.N6=am,NV2=STEM.NV3=PF.N5=ABS.N6=COP-3-SG,Lagaš II,"The building of Ningirsu's temple (Gudea, cylinders A and B)",am
+Q000377,Q000377.448.2,Cylinder A xvi 31,ud-da-am₃,ud,storm,storm,ud.ø.am,N1=ud.N5=ø.N6=am,N1=STEM.N5=ABS.N6=COP-3-SG,Lagaš II,"The building of Ningirsu's temple (Gudea, cylinders A and B)",am
+Q000377,Q000377.459.4,Cylinder A xvii 10,{d}nanše-kam,Nanše,1,1,Nanše.ak.ø.am,N1=Nanše.N5=ak.N5=ø.N6=am,N1=NAME.N5=GEN.N5=ABS.N6=COP-3-SG,Lagaš II,"The building of Ningirsu's temple (Gudea, cylinders A and B)",am
+Q000377,Q000377.460.3,Cylinder A xvii 11,šag₄-ga-na-kam,šag,heart,"heart, inner body",šag.ani.ak.ø.am,N1=šag.N3=ani.N5=ak.N5=ø.N6=am,N1=STEM.N3=3-SG-H-POSS.N5=GEN.N5=ABS.N6=COP-3-SG,Lagaš II,"The building of Ningirsu's temple (Gudea, cylinders A and B)",am
+Q000377,Q000377.461.6,Cylinder A xvii 12,{d}nin-ŋir₂-su₂-ka-kam,Ninŋirsuk,1,1,Ninŋirsuk.ak.ø.am,N1=Ninŋirsuk.N5=ak.N5=ø.N6=am,N1=NAME.N5=GEN.N5=ABS.N6=COP-3-SG,Lagaš II,"The building of Ningirsu's temple (Gudea, cylinders A and B)",am
+Q000377,Q000377.463.1,Cylinder A xvii 14,{d}ŋa₂-tum₃-dug₃-ga-kam,Ŋatumdug,1,1,Ŋatumdug.ak.ø.am,N1=Ŋatumdug.N5=ak.N5=ø.N6=am,N1=NAME.N5=GEN.N5=ABS.N6=COP-3-SG,Lagaš II,"The building of Ningirsu's temple (Gudea, cylinders A and B)",am
+Q000377,Q000377.478.1,Cylinder A xvii 29,u₃-ten-am₃,udtena,evening,evening,udtena.ø.am,N1=udtena.N5=ø.N6=am,N1=STEM.N5=ABS.N6=COP-3-SG,Lagaš II,"The building of Ningirsu's temple (Gudea, cylinders A and B)",am
+Q000377,Q000377.496.5,Cylinder A xviii 18,mu-na-du₁₂-am₃,du,play,"to play (a musical instrument), to sound",mu.nn.a.du.ø.SUB.ø.am,V4=mu.V6=nn.V7=a.V12=du.V14=ø.V15=SUB.N5=ø.N6=am,V4=VEN.V6=3-SG-H.V7=DAT.V12=STEM.V14=3-SG-S.V15=SUB.N5=ABS.N6=COP-3-SG,Lagaš II,"The building of Ningirsu's temple (Gudea, cylinders A and B)",am
+Q000377,Q000377.522.5,Cylinder A xix 16,bala-e-dam,bala,turn,"turn, rotate, to change, to revoke",bala.ed.ø.am,NV2=bala.NV3=ed.N5=ø.N6=am,NV2=STEM.NV3=PF.N5=ABS.N6=COP-3-SG,Lagaš II,"The building of Ningirsu's temple (Gudea, cylinders A and B)",am
+Q000377,Q000377.524.4,Cylinder A xix 18,rin₂-rin₂-dam,erin,yoke,"yoke, plow team",erin.ed.ø.am,NV2=erin.NV3=ed.N5=ø.N6=am,NV2=STEM.NV3=PF.N5=ABS.N6=COP-3-SG,Lagaš II,"The building of Ningirsu's temple (Gudea, cylinders A and B)",am
+Q000377,Q000377.527.4,Cylinder A xix 21,zu-am₃,zu,know,know,zu.ø.am,NV2=zu.N5=ø.N6=am,NV2=STEM.N5=ABS.N6=COP-3-SG,Lagaš II,"The building of Ningirsu's temple (Gudea, cylinders A and B)",am
+Q000377,Q000377.534.3,Cylinder A xix 28,ud-dam,ud,sun,sun,ud.ø.am,N1=ud.N5=ø.N6=am,N1=STEM.N5=ABS.N6=COP-3-SG,Lagaš II,"The building of Ningirsu's temple (Gudea, cylinders A and B)",am
+Q000377,Q000377.535.4,Cylinder A xx 1,urin-am₃,urin,standard,standard,urin.ø.am,N1=urin.N5=ø.N6=am,N1=STEM.N5=ABS.N6=COP-3-SG,Lagaš II,"The building of Ningirsu's temple (Gudea, cylinders A and B)",am
+Q000377,Q000377.562.3,Cylinder A xxi 1,min-nam,min,two,two,min.ø.am,NV2=min.N5=ø.N6=am,NV2=STEM.N5=ABS.N6=COP-3-SG,Lagaš II,"The building of Ningirsu's temple (Gudea, cylinders A and B)",am
+Q000377,Q000377.563.4,Cylinder A xxi 2,ŋal₂-la-am₃,ŋal,be,"to be, to be situated somewhere",ŋal.'a.ø.am,NV2=ŋal.NV4='a.N5=ø.N6=am,NV2=STEM.NV4=SUB.N5=ABS.N6=COP-3-SG,Lagaš II,"The building of Ningirsu's temple (Gudea, cylinders A and B)",am
+Q000377,Q000377.564.3,Cylinder A xxi 3,eš₅-am₃,eš,three,three,eš.ø.am,NV2=eš.N5=ø.N6=am,NV2=STEM.N5=ABS.N6=COP-3-SG,Lagaš II,"The building of Ningirsu's temple (Gudea, cylinders A and B)",am
+Q000377,Q000377.565.4,Cylinder A xxi 4,ri-am₃,ri,impose,to impose,ri.'a.ø.am,NV2=ri.NV4='a.N5=ø.N6=am,NV2=STEM.NV4=SUB.N5=ABS.N6=COP-3-SG,Lagaš II,"The building of Ningirsu's temple (Gudea, cylinders A and B)",am
+Q000377,Q000377.566.3,Cylinder A xxi 5,limmu₅-am₃,limmu,four,four,limmu.ø.am,NV2=limmu.N5=ø.N6=am,NV2=STEM.N5=ABS.N6=COP-3-SG,Lagaš II,"The building of Ningirsu's temple (Gudea, cylinders A and B)",am
+Q000377,Q000377.567.5,Cylinder A xxi 6,la₂-am₃,la,hang,to hang,la.'a.ø.am,NV2=la.NV4='a.N5=ø.N6=am,NV2=STEM.NV4=SUB.N5=ABS.N6=COP-3-SG,Lagaš II,"The building of Ningirsu's temple (Gudea, cylinders A and B)",am
+Q000377,Q000377.568.3,Cylinder A xxi 7,ia₂-am₃,ya,five,five,ya.ø.am,NV2=ya.N5=ø.N6=am,NV2=STEM.N5=ABS.N6=COP-3-SG,Lagaš II,"The building of Ningirsu's temple (Gudea, cylinders A and B)",am
+Q000377,Q000377.569.4,Cylinder A xxi 8,il₂-la-am₃,il,raise,raise,il.'a.ø.am,NV2=il.NV4='a.N5=ø.N6=am,NV2=STEM.NV4=SUB.N5=ABS.N6=COP-3-SG,Lagaš II,"The building of Ningirsu's temple (Gudea, cylinders A and B)",am
+Q000377,Q000377.570.3,Cylinder A xxi 9,aš₃-am₃,aš,six,six,aš.ø.am,NV2=aš.N5=ø.N6=am,NV2=STEM.N5=ABS.N6=COP-3-SG,Lagaš II,"The building of Ningirsu's temple (Gudea, cylinders A and B)",am
+Q000377,Q000377.571.4,Cylinder A xxi 10,guru₃-am₃,gur,lift,"lift, carry",gur.ø.am,NV2=gur.N5=ø.N6=am,NV2=STEM.N5=ABS.N6=COP-3-SG-S,Lagaš II,"The building of Ningirsu's temple (Gudea, cylinders A and B)",am
+Q000377,Q000377.572.3,Cylinder A xxi 11,imin-am₃,imin,seven,seven,imin.ø.am,NV2=imin.N5=ø.N6=am,NV2=STEM.N5=ABS.N6=COP-3-SG,Lagaš II,"The building of Ningirsu's temple (Gudea, cylinders A and B)",am
+Q000377,Q000377.573.5,Cylinder A xxi 12,si-am₃,si,fill,fill,si.ø.am,NV2=si.N5=ø.N6=am,NV2=STEM.N5=ABS.N6=COP-3-SG,Lagaš II,"The building of Ningirsu's temple (Gudea, cylinders A and B)",am
+Q000377,Q000377.575.4,Cylinder A xxi 14,il₂-la-am₃,il,raise,raise,il.'a.ø.am,NV2=il.NV4='a.N5=ø.N6=am,NV2=STEM.NV4=SUB.N5=ABS.N6=COP-3-SG,Lagaš II,"The building of Ningirsu's temple (Gudea, cylinders A and B)",am
+Q000377,Q000377.577.4,Cylinder A xxi 16,la₂-am₃,la,hang,to hang,la.'a.ø.am,NV2=la.NV4='a.N5=ø.N6=am,NV2=STEM.NV4=SUB.N5=ABS.N6=COP-3-SG,Lagaš II,"The building of Ningirsu's temple (Gudea, cylinders A and B)",am
+Q000377,Q000377.579.5,Cylinder A xxi 18,{d}en-ki-ka-kam,Enkik,1,1,Enkik.ak.ø.am,N1=Enkik.N5=ak.N5=ø.N6=am,N1=NAME.N5=GEN.N5=ABS.N6=COP-3-SG,Lagaš II,"The building of Ningirsu's temple (Gudea, cylinders A and B)",am
+Q000377,Q000377.585.5,Cylinder A xxi 24,mu₂-a-am₃,mu,grow,"to grow, to make something high",mu.'a.ø.am,NV2=mu.NV4='a.N5=ø.N6=am,NV2=STEM.NV4=SUB.N5=ABS.N6=COP-3-SG-S,Lagaš II,"The building of Ningirsu's temple (Gudea, cylinders A and B)",am
+Q000377,Q000377.588.4,Cylinder A xxi 27,ed₂-de₃-dam,e,leave,"to leave, go out",ed.ed.ø.am,NV2=ed.NV3=ed.N5=ø.N6=am,NV2=STEM-PF.NV3=PF.N5=ABS.N6=COP-3-SG,Lagaš II,"The building of Ningirsu's temple (Gudea, cylinders A and B)",am
+Q000377,Q000377.590.5,Cylinder A xxii 1,ak-am₃,ak,do,do,ak.ø.am,NV2=ak.N5=ø.N6=am,NV2=STEM.N5=ABS.N6=3-SG-COP,Lagaš II,"The building of Ningirsu's temple (Gudea, cylinders A and B)",am
+Q000377,Q000377.591.6,Cylinder A xxii 2,nu₂-am₃,nud,lie,lie down (of people),nud.ø.am,NV2=nud.N5=ø.N6=am,NV2=STEM.N5=ABS.N6=COP-3-SG,Lagaš II,"The building of Ningirsu's temple (Gudea, cylinders A and B)",am
+Q000377,Q000377.592.6,Cylinder A xxii 3,he₂-tag-ga-am₃,tag,touch,touch,ha.i.n.tag.ø.SUB.ø.am,V1=ha.V2=i.V10=n.V11=tag.V14=ø.V15=SUB.N5=ø.N6=am,V1=MOD1.V2=FIN.V10=L1-SYN.V11=STEM.V14=3-SG-S.V15=SUB.N5=ABS.N6=COP-3-SG,Lagaš II,"The building of Ningirsu's temple (Gudea, cylinders A and B)",am
+Q000377,Q000377.595.6,Cylinder A xxii 6,tag-ga-am₃,tag,touch,touch,tag.'a.ø.am,NV2=tag.NV3='a.N5=ø.N6=am,NV1=NEG.NV2=STEM.NV3=SUB.N5=ABS.N6=COP-3-SG,Lagaš II,"The building of Ningirsu's temple (Gudea, cylinders A and B)",am
+Q000377,Q000377.597.6,Cylinder A xxii 8,ŋar-ŋar-a-am₃,ŋar,place,"put, place, lay down",ŋar.'a.ø.am,NV2=ŋar.NV4='a.N5=ø.N6=am,NV2=STEM-RDP.NV4=SUB.N5=ABS.N6=COP-3-SG,Lagaš II,"The building of Ningirsu's temple (Gudea, cylinders A and B)",am
+Q000377,Q000377.603.3,Cylinder A xxii 14,ur-saŋ-am₃,ursaŋ,hero,"hero, warrior",ursaŋ.ø.am,N1=ursaŋ.N5=ø.N6=am,N1=STEM.N5=ABS.N6=COP-3-SG,Lagaš II,"The building of Ningirsu's temple (Gudea, cylinders A and B)",am
+Q000377,Q000377.670.3,Cylinder A xxiv 27,šu₄-ga-am₃,gub,stand,stand,šug.'a.ø.am,NV2=šug.NV4='a.N5=ø.N6=am,NV2=STEM-PL.NV4=SUB.N5=ABS.N6=COP-3-SG,Lagaš II,"The building of Ningirsu's temple (Gudea, cylinders A and B)",am
+Q000377,Q000377.671.8,Cylinder A xxv 1,sig-ga-am₃,sig,weak,"(to be) weak, (to be) low, (to be) thin, (to be) narrow",sig.'a.ø.am,NV2=sig.NV4='a.N5=ø.N6=am,NV2=STEM.NV4=SUB.N5=ABS.N6=COP-3-SG,Lagaš II,"The building of Ningirsu's temple (Gudea, cylinders A and B)",am
+Q000377,Q000377.673.4,Cylinder A xxv 3,ŋal₂-la-am₃,ŋal,be,"to be, to be situated somewhere",ŋal.'a.ø.am,NV2=ŋal.NV4='a.N5=ø.N6=am,NV2=STEM.NV4=SUB.N5=ABS.N6=COP-3-SG,Lagaš II,"The building of Ningirsu's temple (Gudea, cylinders A and B)",am
+Q000377,Q000377.674.6,Cylinder A xxv 4,dirig-ga-am₃,dirig,exceed,to float on sg (= L3),dirig.'a.ø.am,NV2=dirig.NV4='a.N5=ø.N6=am,NV2=STEM.NV4=SUB.N5=ABS.N6=COP-3-SG,Lagaš II,"The building of Ningirsu's temple (Gudea, cylinders A and B)",am
+Q000377,Q000377.676.4,Cylinder A xxv 6,il₂-il₂-dam,il,raise,raise,ilil.ed.ø.am,NV2=ilil.NV3=ed.N5=ø.N6=am,NV2=STEM-RDP.NV3=PF.N5=ø.N6=COP-3-SG,Lagaš II,"The building of Ningirsu's temple (Gudea, cylinders A and B)",am
+Q000377,Q000377.678.3,Cylinder A xxv 8,us₂-sa-am₃,us,follow,"to follow, to be next",us.'a.ø.am,NV2=us.NV4='a.N5=ø.N6=am,NV2=STEM.NV4=SUB.N5=ABS.N6=COP-3-SG,Lagaš II,"The building of Ningirsu's temple (Gudea, cylinders A and B)",am
+Q000377,Q000377.679.9,Cylinder A xxv 9,gub-ba-am₃,gub,stand,stand,gub.'a.ø.am,NV2=gub.NV4='a.N5=ø.N6=am,NV2=STEM.NV4=SUB.N5=ABS.N6=COP-3-SG,Lagaš II,"The building of Ningirsu's temple (Gudea, cylinders A and B)",am
+Q000377,Q000377.681.4,Cylinder A xxv 11,diŋir-re-ne-kam,diŋir,deity,"deity, personal god",diŋir.enee.ak.ø.am,N1=diŋir.N4=enee.N5=ak.N5=ø.N6=am,N1=STEM.N4=PL.N5=GEN.N5=ABS.N6=COP-3-SG,Lagaš II,"The building of Ningirsu's temple (Gudea, cylinders A and B)",am
+Q000377,Q000377.683.6,Cylinder A xxv 13,he₂-us₂-sa-am₃,us,follow,"to follow, to be next",ha.i.us.ø.SUB.ø.am,V1=ha.V2=i.V12=us.V14=ø.V15=SUB.N5=ø.N6=am,V1=MOD1.V2=FIN.V12=STEM.V14=3-SG-S.V15=SUB.N5=ABS.N6=COP-3-SG,Lagaš II,"The building of Ningirsu's temple (Gudea, cylinders A and B)",am
+Q000377,Q000377.686.2,Cylinder A xxv 16,šu₄-ga-am₃,gub,stand,stand,šug.'a.ø.am,NV2=šug.NV4='a.N5=ø.N6=am,NV2=STEM-PL.NV4=SUB.N5=ABS.N6=COP-3-SG,Lagaš II,"The building of Ningirsu's temple (Gudea, cylinders A and B)",am
+Q000377,Q000377.689.2,Cylinder A xxv 19,il₂-la-am₃,il,raise,raise,il.'a.ø.am,NV2=il.NV4='a.N5=ø.N6=am,NV2=STEM.NV4=SUB.N5=ABS.N6=COP-3-SG,Lagaš II,"The building of Ningirsu's temple (Gudea, cylinders A and B)",am
+Q000377,Q000377.691.4,Cylinder A xxv 21,gi₄-a-am₃,gi,turn,turn,gi.'a.ø.am,NV2=gi.NV4='a.N5=ø.N6=am,NV2=STEM.NV4=SUB.N5=ABS.N6=COP-3-SG,Lagaš II,"The building of Ningirsu's temple (Gudea, cylinders A and B)",am
+Q000377,Q000377.698.3,Cylinder A xxv 28,imin-am₃,imin,seven,seven,imin.ø.am,NV2=imin.N5=ø.N6=am,NV2=STEM.N5=ABS.N6=COP-3-SG,Lagaš II,"The building of Ningirsu's temple (Gudea, cylinders A and B)",am
+Q000377,Q000377.705.3,Cylinder A xxvi 7,diŋir-re-ne-kam,diŋir,deity,"deity, personal god",diŋir.enee.ak.ø.am,N1=diŋir.N4=enee.N5=ak.N5=ø.N6=am,N1=STEM.N4=PL.N5=GEN.N5=ABS.N6=COP-3-SG,Lagaš II,"The building of Ningirsu's temple (Gudea, cylinders A and B)",am
+Q000377,Q000377.719.5,Cylinder A xxvi 21,di-da-am₃,dug,speak,speak,did.ø.am,NV2=did.N5=ø.N6=am,NV2=STEM-PF.N5=ABS.N6=COP-3-SG,Lagaš II,"The building of Ningirsu's temple (Gudea, cylinders A and B)",am
+Q000377,Q000377.725.5,Cylinder A xxvi 27,du₂-ru-na-am₃,tuš,sit,to sit (down),durun.'a.ø.am,NV2=durun.NV4='a.N5=ø.N6=am,NV2=STEM-PL.NV4=SUB.N5=ABS.N6=COP-3-SG,Lagaš II,"The building of Ningirsu's temple (Gudea, cylinders A and B)",am
+Q000377,Q000377.727.4,Cylinder A xxvi 29,ib₂-ŋar-ra-am₃,ŋar,place,"put, place, lay down",i.b.ŋar.ø.SUB.ø.am,V2=i.V11=b.V12=ŋar.V14=ø.V15=SUB.N5=ø.N6=am,V2=FIN.V11=3-SG-NH-A.V12=STEM.V14=3-SG-P.V15=SUB.N5=ABS.N6=COP-3-SG,Lagaš II,"The building of Ningirsu's temple (Gudea, cylinders A and B)",am
+Q000377,Q000377.729.4,Cylinder A xxvii 1,dar-a-am₃,dar,split,to split,dar.'a.ø.am,NV2=dar.NV4='a.N5=ø.N6=am,NV2=STEM.NV4=SUB.N5=ABS.N6=COP-3-SG,Lagaš II,"The building of Ningirsu's temple (Gudea, cylinders A and B)",am
+Q000377,Q000377.730.7,Cylinder A xxvii 2,degₓ(RI)-ga-am₃,deg,collect,"to take, to gather up, glean, to tear out, to collect, pick up",deg.'a.ø.am,NV2=deg.NV4='a.N5=ø.N6=am,NV2=STEM.NV4=SUB.N5=ABS.N6=COP-3-SG,Lagaš II,"The building of Ningirsu's temple (Gudea, cylinders A and B)",am
+Q000377,Q000377.731.5,Cylinder A xxvii 3,huš-am₃,huš,reddish,"(to be) furious, angry",huš.ø.am,NV2=huš.N5=ø.N6=am,NV2=STEM.N5=ABS.N6=COP-3-SG,Lagaš II,"The building of Ningirsu's temple (Gudea, cylinders A and B)",am
+Q000377,Q000377.745.3,Cylinder A xxvii 17,diŋir-re-ne-kam,diŋir,deity,"deity, personal god",diŋir.enee.ak.ø.am,N1=diŋir.N4=enee.N5=ak.N5=ø.N6=am,N1=STEM.N4=PL.N5=GEN.N5=ABS.N6=COP-3-SG,Lagaš II,"The building of Ningirsu's temple (Gudea, cylinders A and B)",am
+Q000377,Q000377.747.5,Cylinder A xxvii 19,he₂-bad-ra₂-am₃,bad,open,"(to be) remote, open",ha.i.b.bad.ø.SUB.ø.am,V1=ha.V2=i.V11=b.V12=bad.V14=ø.V15=SUB.N5=ø.N6=am,V1=MOD1.V2=FIN.V11=3-SG-NH-A.V12=STEM.V14=3-SG-P.V15=SUB.N5=ABS.N6=COP-3-SG,Lagaš II,"The building of Ningirsu's temple (Gudea, cylinders A and B)",am
+Q000377,Q000377.765.3,Cylinder A xxviii 13,ŋal₂-la-am₃,ŋal,be,"to be, to be situated somewhere",ŋal.'a.ø.am,NV2=ŋal.NV4='a.N5=ø.N6=am,NV2=STEM.NV4=SUB.N5=ABS.N6=COP-3-SG,Lagaš II,"The building of Ningirsu's temple (Gudea, cylinders A and B)",am
+Q000377,Q000377.772.4,Cylinder A xxviii 20,nu₂-am₃,nud,lie,lie down (of people),nud.ø.am,NV2=nud.N5=ø.N6=am,NV2=STEM.N5=ABS.N6=COP-3-SG,Lagaš II,"The building of Ningirsu's temple (Gudea, cylinders A and B)",am
+Q000377,Q000377.774.5,Cylinder A xxviii 22,il₂-dam,il,raise,raise,il.ed.ø.am,NV2=il.NV3=ed.N5=ø.N6=am,NV2=STEM.NV3=PF.N5=ø.N6=COP-3-SG,Lagaš II,"The building of Ningirsu's temple (Gudea, cylinders A and B)",am
+Q000377,Q000377.776.7,Cylinder A xxviii 24,mu₂-a-am₃,mu,grow,"to grow, to make something high",mu.'a.ø.am,NV2=mu.NV4='a.N5=ø.N6=am,NV2=STEM.NV4=SUB.N5=ABS.N6=COP-3-SG-S,Lagaš II,"The building of Ningirsu's temple (Gudea, cylinders A and B)",am
+Q000377,Q000377.778.4,Cylinder A xxix 2,kuš₂-kuš₂-dam,kušu,tired,"(to be) tired, troubled",kušukušu.ed.ø.am,NV2=kušukušu.NV3=ed.N5=ø.N6=am,NV2=STEM-RDP.NV3=PF.N5=ABS.N6=COP-3-SG,Lagaš II,"The building of Ningirsu's temple (Gudea, cylinders A and B)",am
+Q000377,Q000377.780.5,Cylinder A xxix 4,degₓ(RI)-ga-am₃,deg,collect,"to take, to gather up, glean, to tear out, to collect, pick up",deg.'a.ø.am,NV2=deg.NV4='a.N5=ø.N6=am,NV2=STEM.NV4=SUB.N5=ABS.N6=COP-3-SG,Lagaš II,"The building of Ningirsu's temple (Gudea, cylinders A and B)",am
+Q000377,Q000377.782.5,Cylinder A xxix 6,nu-silig₅-ge-dam,silig,cease,to cease,nu.silig.ed.ø.am,NV1=nu.NV2=silig.NV3=ed.N5=ø.N6=am,NV1=NEG.NV2=STEM.NV3=PF.N5=ABS.N6=COP-3-SG,Lagaš II,"The building of Ningirsu's temple (Gudea, cylinders A and B)",am
+Q000377,Q000377.785.3,Cylinder A xxix 9,du₃-a-am₃,du,build,to build,du.'a.ø.am,NV2=du.NV4='a.N5=ø.N6=am,NV2=STEM.NV4=SUB.N5=ABS.N6=3-COP-SG,Lagaš II,"The building of Ningirsu's temple (Gudea, cylinders A and B)",am
+Q000377,Q000377.787.5,Cylinder A xxix 11,dug₃-ga-kam,dug,good,good,dug.'a.ak.ø.am,NV2=dug.NV4='a.N5=ak.N5=ø.N6=am,NV2=STEM.NV4=SUB.N5=GEN.N5=ABS.N6=COP-3-SG,Lagaš II,"The building of Ningirsu's temple (Gudea, cylinders A and B)",am
+Q000377,Q000377.789.4,Cylinder A xxix 13,ŋal₂-la-am₃,ŋal,be,"to be, to be situated somewhere",ŋal.'a.ø.am,NV2=ŋal.NV4='a.N5=ø.N6=am,NV2=STEM.NV4=SUB.N5=ABS.N6=COP-3-SG,Lagaš II,"The building of Ningirsu's temple (Gudea, cylinders A and B)",am
+Q000377,Q000377.816.3,Cylinder B i 6,gal-am₃,gal,big,"(to be) big, great",gal.ø.am,NV2=gal.N5=ø.N6=am,NV2=STEM.N5=ABS.N6=COP-3-SG,Lagaš II,"The building of Ningirsu's temple (Gudea, cylinders A and B)",am
+Q000377,Q000377.817.1,Cylinder B i 7,{d}utu-am₃,Utu,1,1,Utu.ø.am,N1=Utu.N5=ø.N6=am,N1=NAME.N5=ABS.N6=COP-3-SG,Lagaš II,"The building of Ningirsu's temple (Gudea, cylinders A and B)",am
+Q000377,Q000377.818.3,Cylinder B i 8,babbar₂-ra-am₃,babbar,white,(to be) white,babbar.ø.am,NV2=babbar.N5=ø.N6=am,NV2=STEM.N5=ABS.N6=COP-3-SG,Lagaš II,"The building of Ningirsu's temple (Gudea, cylinders A and B)",am
+Q000377,Q000377.822.2,Cylinder B i 12,kug-zu-am₃,kugzu,wise,(to be) wise,kugzu.ø.am,NV2=kugzu.N5=ø.N6=am,NV2=STEM.N5=ABS.N6=COP-3-SG,Lagaš II,"The building of Ningirsu's temple (Gudea, cylinders A and B)",am
+Q000377,Q000377.822.4,Cylinder B i 12,zu-am₃,zu,know,know,zu.ø.am,NV2=zu.N5=ø.N6=am,NV2=STEM.N5=ABS.N6=COP-3-SG,Lagaš II,"The building of Ningirsu's temple (Gudea, cylinders A and B)",am
+Q000377,Q000377.836.1,Cylinder B ii 5,sipad-me,sipad,shepherd,shepherd,sipad.ø.men,N1=sipad.N5=ø.N6=men,N1=STEM.N5=ABS.N6=COP-1-SG,Lagaš II,"The building of Ningirsu's temple (Gudea, cylinders A and B)",men
+Q000377,Q000377.856.4,Cylinder B iii 2,ba-tuku-am₃,tuku,acquire,"to acquire, to have",ba.tuku.ø.SUB.ø.am,V5=ba.V12=tuku.V14=ø.V15=SUB.N5=ø.N6=am,V5=MID.V12=STEM.V14=3-SG-S.V15=SUB.N5=ABS.N6=COP-3-SG,Lagaš II,"The building of Ningirsu's temple (Gudea, cylinders A and B)",am
+Q000377,Q000377.859.2,Cylinder B iii 5,ŋen-na-am₃,ŋen,go,"go, walk",ŋen.'a.ø.am,NV2=ŋen.NV4='a.N5=ø.N6=am,NV2=STEM.NV4=SUB.N5=ABS.N6=COP-3-SG,Lagaš II,"The building of Ningirsu's temple (Gudea, cylinders A and B)",am
+Q000377,Q000377.859.4,Cylinder B iii 5,til-la-am₃,til,complete,complete,til.'a.ø.am,NV2=til.NV4='a.N5=ø.N6=am,NV2=STEM.NV4=SUB.N5=ABS.N6=COP-3-SG,Lagaš II,"The building of Ningirsu's temple (Gudea, cylinders A and B)",am
+Q000377,Q000377.862.3,Cylinder B iii 8,eš₅-am₃,eš,three,three,eš.ø.am,NV2=eš.N5=ø.N6=am,NV2=STEM.N5=ABS.N6=COP-3-SG,Lagaš II,"The building of Ningirsu's temple (Gudea, cylinders A and B)",am
+Q000377,Q000377.863.3,Cylinder B iii 9,du-am₃,ŋen,go,"go, walk",du.ø.am,NV2=du.N5=ø.N6=am,NV2=STEM-PF.N5=ABS.N6=COP-3-SG,Lagaš II,"The building of Ningirsu's temple (Gudea, cylinders A and B)",am
+Q000377,Q000377.870.4,Cylinder B iii 16,ak-am₃,ak,do,do,ak.ø.am,NV2=ak.N5=ø.N6=am,NV2=STEM.N5=ABS.N6=3-SG-COP,Lagaš II,"The building of Ningirsu's temple (Gudea, cylinders A and B)",am
+Q000377,Q000377.877.2,Cylinder B iii 23,diŋir-re-ne-kam,diŋir,deity,"deity, personal god",diŋir.enee.ak.ø.am,N1=diŋir.N4=enee.N5=ak.N5=ø.N6=am,N1=STEM.N4=PL.N5=GEN.N5=ABS.N6=COP-3-SG,Lagaš II,"The building of Ningirsu's temple (Gudea, cylinders A and B)",am
+Q000377,Q000377.897.4,Cylinder B iv 16,ŋar-am₃,ŋar,place,"put, place, lay down",ŋar.'a.ø.am,NV2=ŋar.NV4='a.N5=ø.N6=am,NV2=STEM.NV4=SUB.N5=ABS.N6=COP-3-SG,Lagaš II,"The building of Ningirsu's temple (Gudea, cylinders A and B)",am
+Q000377,Q000377.899.3,Cylinder B iv 18,ŋar-ra-am₃,ŋar,place,"put, place, lay down",ŋar.'a.ø.am,NV2=ŋar.NV4='a.N5=ø.N6=am,NV2=STEM.NV4=SUB.N5=ABS.N6=COP-3-SG,Lagaš II,"The building of Ningirsu's temple (Gudea, cylinders A and B)",am
+Q000377,Q000377.900.2,Cylinder B iv 19,gurum-ma-am₃,gurum,bend,"bend, curve, wrap around",gurum.'a.ø.am,NV2=gurum.NV4='a.N5=ø.N6=am,NV2=STEM.NV4=SUB.N5=ABS.N6=COP-3-SG,Lagaš II,"The building of Ningirsu's temple (Gudea, cylinders A and B)",am
+Q000377,Q000377.902.3,Cylinder B iv 21,ŋar-ra-am₃,ŋar,place,"put, place, lay down",ŋar.'a.ø.am,NV2=ŋar.NV4='a.N5=ø.N6=am,NV2=STEM.NV4=SUB.N5=ABS.N6=COP-3-SG,Lagaš II,"The building of Ningirsu's temple (Gudea, cylinders A and B)",am
+Q000377,Q000377.908.4,Cylinder B v 3,il₂-il₂-dam,il,raise,raise,ilil.ed.ø.am,NV2=ilil.NV3=ed.N5=ø.N6=am,NV2=STEM-RDP.NV3=PF.N5=ø.N6=COP-3-SG,Lagaš II,"The building of Ningirsu's temple (Gudea, cylinders A and B)",am
+Q000377,Q000377.910.4,Cylinder B v 5,{ŋa₂}ŋar-am₃,ŋar,place,"put, place, lay down",ŋar.'a.ø.am,NV2=ŋar.NV4='a.N5=ø.N6=am,NV2=STEM.NV4=SUB.N5=ABS.N6=COP-3-SG,Lagaš II,"The building of Ningirsu's temple (Gudea, cylinders A and B)",am
+Q000377,Q000377.912.4,Cylinder B v 7,ŋal₂-la-am₃,ŋal,be,"to be, to be situated somewhere",ŋal.'a.ø.am,NV2=ŋal.NV4='a.N5=ø.N6=am,NV2=STEM.NV4=SUB.N5=ABS.N6=COP-3-SG,Lagaš II,"The building of Ningirsu's temple (Gudea, cylinders A and B)",am
+Q000377,Q000377.914.4,Cylinder B v 9,e₃-am₃,e,leave,"to leave, go out",e.'a.ø.am,NV2=e.NV4='a.N5=ø.N6=am,NV2=STEM.NV4=SUB.N5=ABS.N6=COP-3-SG,Lagaš II,"The building of Ningirsu's temple (Gudea, cylinders A and B)",am
+Q000377,Q000377.916.5,Cylinder B v 11,ŋa₂-ŋa₂-dam,ŋar,place,"put, place, lay down",ŋaŋa.ed.ø.am,NV2=ŋaŋa.NV3=ed.N5=ø.N6=am,NV2=STEM-PF.NV3=PF.N5=ABS.N6=COP-3-SG,Lagaš II,"The building of Ningirsu's temple (Gudea, cylinders A and B)",am
+Q000377,Q000377.918.3,Cylinder B v 13,{ŋa₂}ŋar-am₃,ŋar,place,"put, place, lay down",ŋar.'a.ø.am,NV2=ŋar.NV4='a.N5=ø.N6=am,NV2=STEM.NV4=SUB.N5=ABS.N6=COP-3-SG,Lagaš II,"The building of Ningirsu's temple (Gudea, cylinders A and B)",am
+Q000377,Q000377.920.8,Cylinder B v 15,il₂-la-am₃,il,raise,carry,il.'a.ø.am,NV2=il.NV4='a.N5=ø.N6=am,NV2=STEM.NV4=SUB.N5=ABS.N6=COP-3-SG,Lagaš II,"The building of Ningirsu's temple (Gudea, cylinders A and B)",am
+Q000377,Q000377.921.2,Cylinder B v 16,e₃-am₃,e,leave,"to leave, go out",e.'a.ø.am,NV2=e.NV4='a.N5=ø.N6=am,NV2=STEM.NV4=SUB.N5=ABS.N6=COP-3-SG,Lagaš II,"The building of Ningirsu's temple (Gudea, cylinders A and B)",am
+Q000377,Q000377.921.4,Cylinder B v 16,tar-ra-am₃,tar,cut,cut,tar.'a.ø.am,NV2=tar.NV4='a.N5=ø.N6=am,NV2=STEM.NV4=SUB.N5=ABS.N6=COP-3-SG,Lagaš II,"The building of Ningirsu's temple (Gudea, cylinders A and B)",am
+Q000377,Q000377.922.3,Cylinder B v 17,kurₓ(LIL)-ra-am₃,kur,enter,enter,kur.'a.ø.am,NV2=kur.NV4='a.N5=ø.N6=am,NV2=STEM.NV4=SUB.N5=ABS.N6=COP-3-SG,Lagaš II,"The building of Ningirsu's temple (Gudea, cylinders A and B)",am
+Q000377,Q000377.923.3,Cylinder B v 18,he₂-ŋal₂-la-am₃,heŋal,plenty,plenty,heŋal.ø.am,N1=heŋal.N5=ø.N6=am,N1=STEM.N5=ABS.N6=COP-3-SG,Lagaš II,"The building of Ningirsu's temple (Gudea, cylinders A and B)",am
+Q000377,Q000377.927.7,Cylinder B v 22,mu-da-rin₂-ne₂-eš₂-am₃,erin,yoke,"yoke, plow team",mu.n.da.n.erin.ø.SUB.ø.am,V4=mu.V6=n.V8=da.V11=n.V12=erin.V14=ø.V15=SUB.N5=ø.N6=am,V4=VEN.V6=3-SG-H.V8=COM.V11=3-SG-H-A.V12=STEM.V14=3-PL-P.V15=SUB.N5=ABS.N6=COP-3-SG,Lagaš II,"The building of Ningirsu's temple (Gudea, cylinders A and B)",am
+Q000377,Q000377.987.3,Cylinder B viii 8,buru₅{mušen}-am₃,buru,sparrow,"sparrow, bird(s), small birds, flock of birds",buru.ø.am,N1=buru.N5=ø.N6=am,N1=STEM.N5=ABS.N6=COP-3-SG,Lagaš II,"The building of Ningirsu's temple (Gudea, cylinders A and B)",am
+Q000377,Q000377.1018.3,Cylinder B ix 13,e₂-dug₃-ga-kam,Eduga,1,1,Eduga.ak.ø.am,N1=Eduga.N5=ak.N5=ø.N6=am,N1=NAME.N5=GEN.N5=ABS.N6=COP-3-SG,Lagaš II,"The building of Ningirsu's temple (Gudea, cylinders A and B)",am
+Q000377,Q000377.1052.4,Cylinder B xi 1,huš-am₃,huš,reddish,"(to be) furious, angry",huš.ø.am,NV2=huš.N5=ø.N6=am,NV2=STEM.N5=ABS.N6=COP-3-SG,Lagaš II,"The building of Ningirsu's temple (Gudea, cylinders A and B)",am
+Q000377,Q000377.1062.4,Cylinder B xi 11,{d}ba-u₂-me,Bau,1,1,Bau.ak.ø.meš,N1=Bau.N5=ak.N5=ø.N6=meš,N1=NAME.N5=GEN.N5=ABS.N6=COP-3-PL,Lagaš II,"The building of Ningirsu's temple (Gudea, cylinders A and B)",meš
+Q000377,Q000377.1063.2,Cylinder B xi 12,{d}nin-ŋir₂-su₂-ka-me,Ninŋirsuk,1,1,Ninŋirsuk.ak.ø.meš,N1=Ninŋirsuk.N5=ak.N5=ø.N6=meš,N1=NAME.N5=GEN.N5=ABS.N6=COP-3-PL,Lagaš II,"The building of Ningirsu's temple (Gudea, cylinders A and B)",meš
+Q000377,Q000377.1101.3,Cylinder B xii 24,iri-kug-ga-kam,Irikug,1,1,Irikug.ak.ø.am,N1=Irikug.N5=ak.N5=ø.N6=am,N1=NAME.N5=GEN.N5=ABS.N6=COP-3-SG,Lagaš II,"The building of Ningirsu's temple (Gudea, cylinders A and B)",am
+Q000377,Q000377.1108.5,Cylinder B xiii 5,im-mi-dirig-ga-am₃,dirig,exceed,to exceed,i.m.b.i.n.dirig.ø.SUB.ø.am,V2=i.V4=m.V5=b.V10=i.V11=n.V12=dirig.V14=ø.V15=SUB.N5=ø.N6=am,V2=FIN.V4=VEN.V5=3-NH.V10=L2.V11=3-SG-H-A.V12=STEM.V14=3-SG-S.V15=SUB.N5=ABS.N6=COP-3-SG,Lagaš II,"The building of Ningirsu's temple (Gudea, cylinders A and B)",am
+Q000377,Q000377.1185.4,Cylinder B xvi 10,il₂-la-am₃,il,raise,raise,il.'a.ø.am,NV2=il.NV4='a.N5=ø.N6=am,NV2=STEM.NV4=SUB.N5=ABS.N6=COP-3-SG,Lagaš II,"The building of Ningirsu's temple (Gudea, cylinders A and B)",am
+Q000377,Q000377.1187.3,Cylinder B xvi 12,guru₃-am₃,gur,lift,"lift, carry",gur.ø.am,NV2=gur.N5=ø.N6=am,NV2=STEM.N5=ABS.N6=COP-3-SG-S,Lagaš II,"The building of Ningirsu's temple (Gudea, cylinders A and B)",am
+Q000377,Q000377.1189.4,Cylinder B xvi 14,tu₁₇-a-am₃,tu,cvve,(compound verb verbal element),tu.'a.ø.am,NV2=tu.NV4='a.N5=ø.N6=am,NV2=STEM.NV4=SUB.N5=ABS.N6=COP-3-SG,Lagaš II,"The building of Ningirsu's temple (Gudea, cylinders A and B)",am
+Q000377,Q000377.1191.4,Cylinder B xvi 16,{d}utu-am₃,Utu,1,1,Utu.ø.am,N1=Utu.N5=ø.N6=am,N1=NAME.N5=ABS.N6=COP-3-SG,Lagaš II,"The building of Ningirsu's temple (Gudea, cylinders A and B)",am
+Q000377,Q000377.1193.5,Cylinder B xvi 18,du₂-ru-na-am₃,tuš,sit,to sit (down),durun.'a.ø.am,NV2=durun.NV4='a.N5=ø.N6=am,NV2=STEM-PL.NV4=SUB.N5=ABS.N6=COP-3-SG,Lagaš II,"The building of Ningirsu's temple (Gudea, cylinders A and B)",am
+Q000377,Q000377.1195.4,Cylinder B xvi 20,ŋar-ra-am₃,ŋar,place,"put, place, lay down",ŋar.'a.ø.am,NV2=ŋar.NV4='a.N5=ø.N6=am,NV2=STEM.NV4=SUB.N5=ABS.N6=COP-3-SG,Lagaš II,"The building of Ningirsu's temple (Gudea, cylinders A and B)",am
+Q000377,Q000377.1203.5,Cylinder B xvii 8,nu-silig₅-ge-dam,silig,cease,to cease,nu.silig.ed.ø.am,NV1=nu.NV2=silig.NV3=ed.N5=ø.N6=am,NV1=NEG.NV2=STEM.NV3=PF.N5=ABS.N6=COP-3-SG,Lagaš II,"The building of Ningirsu's temple (Gudea, cylinders A and B)",am
+Q000377,Q000377.1206.2,Cylinder B xvii 11,de₆-de₆-am₃,de,bring,to bring,de.ø.am,NV2=de.de.N5=ø.N6=am,NV2=STEM-RDP.N5=ABS.N6=COP-3-SG,Lagaš II,"The building of Ningirsu's temple (Gudea, cylinders A and B)",am
+Q000377,Q000377.1215.3,Cylinder B xvii 20,mu-da-sa₂-am₃,sa,equal,equal,mu.nn.da.sa.ø.SUB.am,V4=mu.V6=nn.V8=da.V12=sa.V14=ø.V15=SUB.N6=am,V4=VEN.V6=3-SG-H.V8=COM.V12=STEM.V14=3-SG-S.V15=SUB.N6=COP-3-SG,Lagaš II,"The building of Ningirsu's temple (Gudea, cylinders A and B)",am
+Q000377,Q000377.1216.4,Cylinder B xvii 21,mu-da-ša₄-am₃,ša,cvve,(compound verb verbal element),mu.nn.da.n.ša.ø.SUB.am,V4=mu.V6=nn.V8=da.V11=n.V12=ša.V14=ø.V15=SUB.N6=am,V4=VEN.V6=3-SG-H.V8=COM.V11=3-SG-H-A.V12=STEM.V14=3-SG-P.V15=SUB.N6=COP-3-SG,Lagaš II,"The building of Ningirsu's temple (Gudea, cylinders A and B)",am
+Q000377,Q000377.1217.4,Cylinder B xviii 1,mu-da-a-nu₂-am₃,nud,lie,lie down (of people),mu.nn.da.n.nud.ø.am,V4=mu.V6=nn.V8=da.V10=n.V12=nud.V14=ø.N6=am,V4=VEN.V6=3-SG-H.V8=COM.V10=L1-SYN.V12=STEM.V14=3-SG-S.N6=COP-3-SG,Lagaš II,"The building of Ningirsu's temple (Gudea, cylinders A and B)",am
+Q000377,Q000377.1239.2,Cylinder B xix 1,ud-dam,ud,storm,storm,ud.ø.am,N1=ud.N5=ø.N6=am,N1=STEM.N5=ABS.N6=COP-3-SG,Lagaš II,"The building of Ningirsu's temple (Gudea, cylinders A and B)",am
+Q000377,Q000377.1249.4,Cylinder B xix 16,kurₓ(LIL)-ra-am₃,kur,enter,enter,kur.'a.ø.am,NV2=kur.NV4='a.N5=ø.N6=am,NV2=STEM.NV4=SUB.N5=ABS.N6=COP-3-SG,Lagaš II,"The building of Ningirsu's temple (Gudea, cylinders A and B)",am
+Q000377,Q000377.1286.5,Cylinder B xxiii 18,an-na-kam,An,1,1,An.ak.ø.am,N1=An.N5=ak.N5=ø.N6=am,N1=NAME.N5=GEN.N5=ABS.N6=COP-3-SG,Lagaš II,"The building of Ningirsu's temple (Gudea, cylinders A and B)",am
+Q000377,Q000377.1288.3,Cylinder B xxiii 20,aŋ₂-ŋa₂-am₃,aŋ,measure,measure,aŋ.ø.am,NV2=aŋ.N5=ø.N6=am,NV2=STEM.N5=ABS.N6=COP-3-SG,Lagaš II,"The building of Ningirsu's temple (Gudea, cylinders A and B)",am
+Q000377,Q000377.1289.4,Cylinder B xxiii 21,ba-tud-da-me,utud,bear,bear,ba.n.tud.ø.SUB.ø.men,V5=ba.V11=n.V12=tud.V14=ø.V15=SUB.N5=ø.N6=men,V5=MID.V11=3-SG-H-A.V12=STEM.V14=3-SG-P.V15=SUB.N5=ABS.N6=COP-2-SG,Lagaš II,"The building of Ningirsu's temple (Gudea, cylinders A and B)",men
+Q000377,Q000377.1291.1,Cylinder B xxiv 1,{d}nin-ŋir₂-su-ka-me,Ninŋirsuk,1,1,Ninŋirsuk.ak.ø.men,N1=Ninŋirsuk.N5=ak.N5=ø.N6=men,N1=NAME.N5=GEN.N5=ABS.N6=COP-2-SG,Lagaš II,"The building of Ningirsu's temple (Gudea, cylinders A and B)",men
+Q000377,Q000377.1295.4,Cylinder B xxiv 5,zu-me,zu,know,know,zu.ø.men,NV2=zu.N5=ø.N6=men,NV2=STEM.N5=ABS.N6=COP-2-SG,Lagaš II,"The building of Ningirsu's temple (Gudea, cylinders A and B)",men
+Q000377,Q000377.1296.5,Cylinder B xxiv 6,tar-ra-me,tar,cut,cut,tar.'a.ø.men,NV2=tar.NV4='a.N5=ø.N6=men,NV2=STEM.NV4=SUB.N5=ABS.N6=COP-2-SG,Lagaš II,"The building of Ningirsu's temple (Gudea, cylinders A and B)",men
+Q000377,Q000377.1307.2,Cylinder B xxiv 17,eŋir-bi,eŋir,back,end,eŋir.bi.ø.am,N1=eŋir.N3=bi.N5=ø.N6=am,N1=STEM.N3=3-SG-NH-POSS.N5=ABS.N6=COP-3-SG,Lagaš II,"The building of Ningirsu's temple (Gudea, cylinders A and B)",am
+Q000613,Q000613.51.1,51,{d}inana-ka-me-en,Inanak,1,1,Inanak.ak.ø.men,N1=Inanak.N5=ak.N5=ø.N6=men,N1=NAME.N5=GEN.N5=ABS.N6=COP-1-SG,Early Old Babylonian,Laws of Lipit-Eštar,men
+Q000842,Q000842.12.2,12,an-na-kam,annak,metal,tin or lead,annak.ø.am,N1=annak.N5=ø.N6=am,N1=STEM.N5=ABS.N6=COP-3-SG,Old Akkadian,Rimuš 18 (Sumerian),am
+Q000932,Q000932.14.1,14,mu-bi,mu,name,name,mu.bi.ø.am,N1=mu.N3=bi.N5=ø.N6=am,N1=STEM.N3=3-SG-NH-POSS.N5=ABS.N6=COP-3-SG,Lagaš II,Nammahni 07,am
+Q000946,Q000946.10.2,i 10,he₂-me-am₃,me,be,"to be, (the independent form of the) copula",ha.i.me.ø.am,V1=ha.V2=i.V12=me.V14=ø.N6=am,V1=MOD1.V2=FIN.V12=COP.V14=3-SG-S.N6=COP-3-SG,Ur III,Ur-Namma 19,am
+Q000946,Q000946.12.2,i 12,gana₂-am₃,gana,field,field,gana.ø.am,N1=gana.N5=ø.N6=am,N1=STEM.N5=ABS.N6=COP-3-SG,Ur III,Ur-Namma 19,am
+Q000946,Q000946.20.1,ii 8,mu-bi,mu,name,name,mu.bi.ø.am,N1=mu.N3=bi.N5=ø.N6=am,N1=STEM.N3=3-SG-NH-POSS.N5=ABS.N6=COP-3-SG,Ur III,Ur-Namma 19,am
+Q000952,Q000952.11.3,i 11,mu-bi,mu,name,name,mu.bi.ø.am,N1=mu.N3=bi.N5=ø.N6=am,N1=STEM.N3=3-SG-NH-POSS.N5=ABS.N6=COP-3-SG,Ur III,Ur-Namma 28,am
+Q000952,Q000952.12.2,i 12,ki-sur-ra-kam,kisura,border,border,kisura.ak.ø.am,N1=kisura.N5=ak.N5=ø.N6=am,N1=STEM.N5=GEN.N5=ABS.N6=COP-3-SG,Ur III,Ur-Namma 28,am
+Q000984,Q000984.8.2,8,nu-du₃-am₃,du,build,to build,nu.du.ø.SUB.am,V1=nu.V12=du.V14=ø.V15=SUB.N6=am,V1=NEG.V12=STEM.V14=3-SG-S.V15=SUB.N6=COP-3-SG,Ur III,Amar-Suena 09,am
+Q000985,Q000985.9.3,i 9,limmu₂-ba-me,limmu,four,four,limmu.bi.ak.ø.men,NV2=limmu.N3=bi.N5=ak.N5=ø.N6=men,NV2=STEM.N3=3-SG-NH-POSS.N5=GEN.N5=ABS.N6=COP-1-SG,Ur III,Amar-Suena 10,men
+Q000985,Q000985.12.1,i 12,mu-bi-im,mu,name,name,mu.bi.ø.am,N1=mu.N3=bi.N5=ø.N6=am,N1=STEM.N3=3-SG-NH-POSS.N5=ABS.N6=COP-3-SG,Ur III,Amar-Suena 10,am
+Q000989,Q000989.17.2,17,nu-du₃-am₃,du,build,to build,nu.du.ø.SUB.am,V1=nu.V12=du.V14=ø.V15=SUB.N6=am,V1=NEG.V12=STEM.V14=3-SG-S.V15=SUB.N6=COP-3-SG,Ur III,Amar-Suena 16,am
+Q000989,Q000989.18.2,18,nu-un-til₃-la-am₃,til,live,live,nu.n.til.ø.SUB.am,V1=nu.V10=n.V12=til.V14=ø.V15=SUB.N6=am,V1=NEG.V10=L1-SYN.V12=STEM.V14=3-SG-S.V15=SUB.N6=COP-3-SG,Ur III,Amar-Suena 16,am
+Q000990,Q000990.15.2,15,nu-du₃-am₃,du,build,to build,nu.du.ø.SUB.am,V1=nu.V12=du.V14=ø.V15=SUB.N6=am,V1=NEG.V12=STEM.V14=3-SG-S.V15=SUB.N6=COP-3-SG,Ur III,Amar-Suena 17,am
+Q000990,Q000990.16.2,16,nu-un-til₃-am₃,til,live,live,nu.n.til.ø.SUB.am,V1=nu.V10=n.V12=til.V14=ø.V15=SUB.N6=am,V1=NEG.V10=L1-SYN.V12=STEM.V14=3-SG-S.V15=SUB.N6=COP-3-SG,Ur III,Amar-Suena 17,am
+Q000994,Q000994.19.2,socle 6,itud-da-ka,itud,moon,"moon, moonlight",itud.ak.ø.am,N1=itud.N5=ak.N5=ø.N6=am,N1=STEM.N5=GEN.N5=ABS.N6=COP-3-SG,Ur III,Šu-Suen 07,am
+Q000994,Q000994.25.2,socle 12,itud-da-ka,itud,moon,"moon, moonlight",itud.ak.ø.am,N1=itud.N5=ak.N5=ø.N6=am,N1=STEM.N5=GEN.N5=ABS.N6=COP-3-SG,Ur III,Šu-Suen 07,am
+Q000994,Q000994.59.2,"colophon 2, 3",na₄-kam,na,stone,stone,na.ak.am,N1=na.N5=ak.N6=am,N1=STEM.N5=GEN.N6=COP-3-SG,Ur III,Šu-Suen 07,am
+Q001005,Q001005.22.1,ii 8,mu-bi-im,mu,name,name,mu.bi.ø.am,N1=mu.N3=bi.N5=ø.N6=am,N1=STEM.N3=3-SG-NH-POSS.N5=ABS.N6=COP-3-SG,Ur III,Ibbi-Suen 01,am
+Q001027,Q001027.31.1,v 6,{d}nanše,Nanše,1,1,Nanše.ak.am,N1=Nanše.N5=ak.N6=am,N1=NAME.N5=GEN.N6=COP-3-SG,Early Dynastic,Ur-Nanše 09,am
+Q001056,Q001056.70.2,o v 9,ia₂-am₆,ya,five,five,ya.ø.am,NV2=ya.N5=ø.N6=am,NV2=STEM.N5=ABS.N6=COP-3-SG,Early Dynastic,E-anatum 01,am
+Q001056,Q001056.103.1,o vi 10,me-am₆,mea,where?,where?,me.'a.am,N1=me.N5='a.N6=am,N1=STEM.N5=L1.N6=COP-3-SG,Early Dynastic,E-anatum 01,am
+Q001056,Q001056.126.1,o vii 2,kiš{ki}-am₆,Kiš,1,1,Kiš.ø.am,N1=Kiš.N5=ø.N6=am,N1=NAME.N5=ABS.N6=COP-3-SG,Early Dynastic,E-anatum 01,am
+Q001056,Q001056.168.4,o x 13,sa₂-kam,sa,equal,equal,sa.ak.ø.am,NV2=sa.N5=ak.N5=ø.N6=am,NV2=STEM.N5=GEN.N5=ABS.N6=COP-3-SG,Early Dynastic,E-anatum 01,am
+Q001056,Q001056.179.2,o xi 14,niš,niš,twenty,twenty,niš.ø.am,NV2=niš.N5=ø.N6=am,NV2=STEM.N5=ABS.N6=COP-3-SG,Early Dynastic,E-anatum 01,am
+Q001056,Q001056.214.2,o xiii 17,{d}šul-|MUŠ×PA|,Šul-MUŠ×PA,1,1,Šul-|MUŠ×PA|.ø.am,N1=Šul-|MUŠ×PA|.N5=ø.N6=am,N1=NAME.N5=ABS.N6=COP-3-SG,Early Dynastic,E-anatum 01,am
+Q001056,Q001056.263.2,o xvi 43,min-nam,min,two,two,min.ø.am,NV2=min.N5=ø.N6=am,NV2=STEM.N5=ABS.N6=COP-3-SG,Early Dynastic,E-anatum 01,am
+Q001056,Q001056.273.2,o xvii 11,gur-ra-da-am₆,gur,turn,"to turn, return",gur.ed.ø.am,NV2=gur.NV3=ed.N5=ø.N6=am,NV2=STEM.NV3=PF.N5=ABS.N6=COP-3-SG,Early Dynastic,E-anatum 01,am
+Q001056,Q001056.312.2,o xviii 2,min-nam,min,two,two,min.ø.am,NV2=min.N5=ø.N6=am,NV2=STEM.N5=ABS.N6=COP-3-SG,Early Dynastic,E-anatum 01,am
+Q001056,Q001056.323.2,o xviii 13,gur-ra-da-am₆,gur,turn,"to turn, return",gur.ed.ø.am,NV2=gur.NV3=ed.N5=ø.N6=am,NV2=STEM.NV3=PF.N5=ABS.N6=COP-3-SG,Early Dynastic,E-anatum 01,am
+Q001056,Q001056.376.2,o xix 25,gur-ra-da-am₆,gur,turn,"to turn, return",gur.ed.ø.am,NV2=gur.NV3=ed.N5=ø.N6=am,NV2=STEM.NV3=PF.N5=ABS.N6=COP-3-SG,Early Dynastic,E-anatum 01,am
+Q001056,Q001056.421.2,o xxi 14,limmu₂,limmu,four,four,limmu.ø.am,NV2=limmu.N5=ø.N6=am,NV2=STEM.N5=ABS.N6=COP-3-SG,Early Dynastic,E-anatum 01,am
+Q001056,Q001056.424.1,o xxi 17,min-nam,min,two,two,min.ø.am,NV2=min.N5=ø.N6=am,NV2=STEM.N5=ABS.N6=COP-3-SG,Early Dynastic,E-anatum 01,am
+Q001056,Q001056.436.2,o xxii 14,gur-da-am₆,gur,turn,"to turn, return",gur.ed.ø.am,NV2=gur.NV3=ed.N5=ø.N6=am,NV2=STEM.NV3=PF.N5=ABS.N6=COP-3-SG,Early Dynastic,E-anatum 01,am
+Q001056,Q001056.478.2,r i 33,min-nam,min,two,two,min.ø.am,NV2=min.N5=ø.N6=am,NV2=STEM.N5=ABS.N6=COP-3-SG,Early Dynastic,E-anatum 01,am
+Q001057,Q001057.47.2,iii 25,niš,niš,twenty,twenty,niš.ø.am,NV2=niš.N5=ø.N6=am,NV2=STEM.N5=ABS.N6=COP-3-SG,Early Dynastic,E-anatum 05,am
+Q001057,Q001057.87.2,v 12,u₂-rum-ma-ni,urum,property,property,urum.ani.ø.am,N1=urum.N3=ani.N5=ø.N6=am,N1=STEM.N3=3-SG-H-POSS.N5=ABS.N6=COP-3-SG,Early Dynastic,E-anatum 05,am
+Q001057,Q001057.89.1,v 14,lum-ma-a,Luma,1,1,Luma.ø.am,N1=Luma.N5=ø.N6=am,N1=NAME.N5=ABS.N6=COP-3-SG,Early Dynastic,E-anatum 05,am
+Q001057,Q001057.142.1,vii 18,{d}šul-|MUŠ×PA|,Šul-MUŠ×PA,1,1,Šul-|MUŠ×PA|.ø.am,N1=Šul-|MUŠ×PA|.N5=ø.N6=am,N1=NAME.N5=ABS.N6=COP-3-SG,Early Dynastic,E-anatum 05,am
+Q001058,Q001058.50.2,iv 4,niš,niš,twenty,twenty,niš.ø.am,NV2=niš.N5=ø.N6=am,NV2=STEM.N5=ABS.N6=COP-3-SG,Early Dynastic,E-anatum 06,am
+Q001058,Q001058.94.1,vii 4,{d}šul-|MUŠ×PA|,Šul-MUŠ×PA,1,1,Šul-|MUŠ×PA|.ø.am,N1=Šul-|MUŠ×PA|.N5=ø.N6=am,N1=NAME.N5=ABS.N6=COP-3-SG,Early Dynastic,E-anatum 06,am
+Q001062,Q001062.37.2,iv 8,niš,niš,twenty,twenty,niš.ø.am,NV2=niš.N5=ø.N6=am,NV2=STEM.N5=ABS.N6=COP-3-SG,Early Dynastic,E-anatum 08,am
+Q001062,Q001062.57.1,vi 9,{d}šul-|MUŠ×PA|,Šul-MUŠ×PA,1,1,Šul-|MUŠ×PA|.ø.am,N1=Šul-|MUŠ×PA|.N5=ø.N6=am,N1=NAME.N5=ABS.N6=COP-3-SG,Early Dynastic,E-anatum 08,am
+Q001063,Q001063.29.1,iii 6,{d}šul-|MUŠ×PA|,Šul-MUŠ×PA,1,1,Šul-|MUŠ×PA|.ø.am,N1=Šul-|MUŠ×PA|.N5=ø.N6=am,N1=NAME.N5=ABS.N6=COP-3-SG,Early Dynastic,E-anatum 09,am
+Q001071,Q001071.30.1,iii 10,{d}šul-|MUŠ×PA|,Šul-MUŠ×PA,1,1,Šul-|MUŠ×PA|.ø.am,N1=Šul-|MUŠ×PA|.N5=ø.N6=am,N1=NAME.N5=ABS.N6=COP-3-SG,Early Dynastic,E-anatum 10,am
+Q001092,Q001092.12.1,ii 3,{d}šul-|MUŠ×PA|-am₆,Šul-MUŠ×PA,1,1,Šul-|MUŠ×PA|.ø.am,N1=Šul-|MUŠ×PA|.N5=ø.N6=am,N1=NAME.N5=ABS.N6=COP-3-SG,Early Dynastic,En-metena 03,am
+Q001093,Q001093.56.1,ix 4,{d}šul-|MUŠ×PA|-am₆,Šul-MUŠ×PA,1,1,Šul-|MUŠ×PA|.ø.am,N1=Šul-|MUŠ×PA|.N5=ø.N6=am,N1=NAME.N5=ABS.N6=COP-3-SG,Early Dynastic,En-metena 12,am
+Q001095,Q001095.12.1,12,{d}šul-|MUŠ×PA|-am₆,Šul-MUŠ×PA,1,1,Šul-|MUŠ×PA|.ø.am,N1=Šul-|MUŠ×PA|.N5=ø.N6=am,N1=NAME.N5=ABS.N6=COP-3-SG,Early Dynastic,En-metena 09,am
+Q001096,Q001096.7.1,7,{d}šul-|MUŠ×PA|-am₆,Šul-MUŠ×PA,1,1,Šul-|MUŠ×PA|.ø.am,N1=Šul-|MUŠ×PA|.N5=ø.N6=am,N1=NAME.N5=ABS.N6=COP-3-SG,Early Dynastic,En-metena 10,am
+Q001097,Q001097.11.1,11,{d}šul-|MUŠ×PA|-am₆,Šul-MUŠ×PA,1,1,Šul-|MUŠ×PA|.ø.am,N1=Šul-|MUŠ×PA|.N5=ø.N6=am,N1=NAME.N5=ABS.N6=COP-3-SG,Early Dynastic,En-metena 14,am
+Q001098,Q001098.44.1,45,{d}šul-|MUŠ×PA|-am₆,Šul-MUŠ×PA,1,1,Šul-|MUŠ×PA|.ø.am,N1=Šul-|MUŠ×PA|.N5=ø.N6=am,N1=NAME.N5=ABS.N6=COP-3-SG,Early Dynastic,En-metena 16,am
+Q001099,Q001099.8.1,8,{d}šul-|MUŠ×PA|-am₆,Šul-MUŠ×PA,1,1,Šul-|MUŠ×PA|.ø.am,N1=Šul-|MUŠ×PA|.N5=ø.N6=am,N1=NAME.N5=ABS.N6=COP-3-SG,Early Dynastic,En-metena 21,am
+Q001101,Q001101.34.1,34,{d}šul-|MUŠ×PA|-am₆,Šul-MUŠ×PA,1,1,Šul-|MUŠ×PA|.ø.am,N1=Šul-|MUŠ×PA|.N5=ø.N6=am,N1=NAME.N5=ABS.N6=COP-3-SG,Early Dynastic,En-metena 23,am
+Q001103,Q001103.69.2,ii 21,guru₇-am₆,guru,store,unit of capacity,guru.ø.am,N1=guru.N5=ø.N6=am,N1=STEM.N5=ABS.N6=COP-3-SG,Early Dynastic,En-metena 01,am
+Q001103,Q001103.109.3,iii 19,surₓ(ERIN₂)-am₆,sur,people,harness team (of draft animals or workers),sur.ø.am,N1=sur.N5=ø.N6=am,N1=STEM.N5=ABS.N6=COP-3-SG,Early Dynastic,En-metena 01,am
+Q001103,Q001103.119.2,iii 29,zabala₅{ki}-kam,Zabala,1,1,Zabala.ak.am,N1=Zabala.N5=ak.N6=am,N1=NAME.N5=GEN.N6=COP-3-SG,Early Dynastic,En-metena 01,am
+Q001103,Q001103.141.4,iv 11,guru₇-am₆,guru,store,unit of capacity,guru.ø.am,N1=guru.N5=ø.N6=am,N1=STEM.N5=ABS.N6=COP-3-SG,Early Dynastic,En-metena 01,am
+Q001103,Q001103.158.1,iv 28,ŋa₂-kam,ŋaʾe,I,"I, me, mine",ŋa'e.ak.am,N1=ŋa'e.N5=ak.N6=am,N1=STEM.N5=GEN.N6=COP-3-SG,Early Dynastic,En-metena 01,am
+Q001107,Q001107.22.2,22,{d}nin-ŋir₂-su₂-ka-kam,Ninŋirsuk,1,1,Ninŋirsuk.ak.ø.am,N1=Ninŋirsuk.N5=ak.N5=ø.N6=am,N1=NAME.N5=GEN.N5=ABS.N6=COP-3-SG,Early Dynastic,En-metena 07,am
+Q001108,Q001108.71.1,viii 7,{d}šul-|MUŠ×PA|-am₆,Šul-MUŠ×PA,1,1,Šul-|MUŠ×PA|.ø.am,N1=Šul-|MUŠ×PA|.N5=ø.N6=am,N1=NAME.N5=ABS.N6=COP-3-SG,Early Dynastic,En-metena 26,am
+Q001108,Q001108.72.4,viii 8,{d}nin-ŋir₂-su₂-ka-kam,Ninŋirsuk,1,1,Ninŋirsuk.ak.ø.am,N1=Ninŋirsuk.N5=ak.N5=ø.N6=am,N1=NAME.N5=GEN.N5=ABS.N6=COP-3-SG,Early Dynastic,En-metena 26,am
+Q001110,Q001110.29.1,v 6,{d}šul-|MUŠ×PA|-am₆,Šul-MUŠ×PA,1,1,Šul-|MUŠ×PA|.ø.am,N1=Šul-|MUŠ×PA|.N5=ø.N6=am,N1=NAME.N5=ABS.N6=COP-3-SG,Early Dynastic,En-metena 02,am
+Q001112,Q001112.17.1,iv 3,{d}šul-|MUŠ×PA|-am₆,Šul-MUŠ×PA,1,1,Šul-|MUŠ×PA|.ø.am,N1=Šul-|MUŠ×PA|.N5=ø.N6=am,N1=NAME.N5=ABS.N6=COP-3-SG,Early Dynastic,En-metena 08,am
+Q001115,Q001115.16.1,iv 4,{d}šul-|MUŠ×PA|-am₆,Šul-MUŠ×PA,1,1,Šul-|MUŠ×PA|.ø.am,N1=Šul-|MUŠ×PA|.N5=ø.N6=am,N1=NAME.N5=ABS.N6=COP-3-SG,Early Dynastic,En-metena 05a,am
+Q001117,Q001117.60.1,vi 11,{d}šul-|MUŠ×PA|-am₆,Šul-MUŠ×PA,1,1,Šul-|MUŠ×PA|.ø.am,N1=Šul-|MUŠ×PA|.N5=ø.N6=am,N1=NAME.N5=ABS.N6=COP-3-SG,Early Dynastic,En-metena 04,am
+Q001120,Q001120.21.1,21,{d}šul-|MUŠ×PA|-am₆,Šul-MUŠ×PA,1,1,Šul-|MUŠ×PA|.ø.am,N1=Šul-|MUŠ×PA|.N5=ø.N6=am,N1=NAME.N5=ABS.N6=COP-3-SG,Early Dynastic,En-anatum II 1,am
+Q001123,Q001123.85.2,v 13',še-am₆,še,barley,barley,še.ø.am,N1=še.N5=ø.N6=am,N1=STEM.N5=ABS.N6=COP-3-SG,Early Dynastic,URU-KA-gina 02,am
+Q001123,Q001123.92.1,v 5'',lugal-bi,lugal,king,owner,lugal.bi.ø.am,N1=lugal.N3=bi.N5=ø.N6=am,N1=STEM.N3=3-SG-NH-POSS.N5=ABS.N6=COP-3-SG-S,Early Dynastic,URU-KA-gina 02,am
+Q001123,Q001123.97.1,v 10'',nin-bi,nin,lady,lady,nin.bi.ø.am,N1=nin.N3=bi.N5=ø.N6=am,N1=STEM.N3=3-SG-NH-POSS.N5=ABS.N6=COP-3-SG,Early Dynastic,URU-KA-gina 02,am
+Q001123,Q001123.102.2,vi 4',gub-ba-am₆,gub,stand,stand,gub.'a.ø.am,NV2=gub.NV4='a.N5=ø.N6=am,NV2=STEM.NV4=SUB.N5=ABS.N6=COP-3-SG,Early Dynastic,URU-KA-gina 02,am
+Q001123,Q001123.104.3,vi 6',gub-ba-am₆,gub,stand,stand,gub.'a.ø.am,NV2=gub.NV4='a.N5=ø.N6=am,NV2=STEM.NV4=SUB.N5=ABS.N6=COP-3-SG,Early Dynastic,URU-KA-gina 02,am
+Q001123,Q001123.106.2,vi 8',banšur-ra-kam,banšur,table,table,banšur.ak.am,N1=banšur.N5=ak.N6=am,N1=STEM.N5=GEN.N6=COP-3-SG,Early Dynastic,URU-KA-gina 02,am
+Q001123,Q001123.111.2,vi 21',um-ma-me,umma,old woman,old woman,umma.ø.meš,N1=umma.N5=ø.N6=meš,N1=STEM.N5=ABS.N6=COP-3-PL,Early Dynastic,URU-KA-gina 02,meš
+Q001123,Q001123.114.2,vi 24',niŋin₆{ki}-kam,Niŋin,1,1,Niŋin.ak.am,N1=Niŋin.N5=ak.N6=am,N1=NAME.N5=GEN.N6=COP-3-SG,Early Dynastic,URU-KA-gina 02,am
+Q001124,Q001124.62.1,iv 18,e-ŋal₂-lam,ŋal,be,"to be, to be situated somewhere",i.n.ŋal.ø.am,V2=i.V10=n.V12=ŋal.V14=ø.N6=am,V2=FIN.V10=L1-SYN.V12=STEM.V14=3-SG-S.N6=COP-3-SG,Early Dynastic,URU-KA-gina 01,am
+Q001124,Q001124.66.1,iv 22,e-ne-keše₂-ra₂-am₆,kešed,bind,to bind,i.nnee.a.kešed.ø.SUB.am,V2=i.V6=nnee.V7=a.V12=kešed.V14=ø.V15=SUB.N6=am,V2=FIN.V6=3-PL-H.V7=DAT.V12=STEM.V14=3-SG-S.V15=SUB.N6=COP-3-SG,Early Dynastic,URU-KA-gina 01,am
+Q001124,Q001124.87.1,v 21,i₃-guru₃-am₆,gur,lift,"lift, carry",i.n.gur.ø.SUB.am,V2=i.V11=n.V12=gur.V14=ø.V15=SUB.N6=am,V2=FIN.V11=3-SG-H-A.V12=STEM.V14=3-SG-P.V15=SUB.N6=COP-3-SG,Early Dynastic,URU-KA-gina 01,am
+Q001124,Q001124.95.2,vi 6,7(geš₂)-nam,ŋešdumin,fourhundred-twenty,fourhundred-twenty,ŋešdumin.ø.am,NV2=ŋešdumin.N5=ø.N6=am,NV2=STEM.N5=ABS.N6=COP-3-SG,Early Dynastic,URU-KA-gina 01,am
+Q001124,Q001124.107.2,vi 18,7(geš₂)-nam,ŋešdumin,fourhundred-twenty,fourhundred-twenty,ŋešdumin.ø.am,NV2=ŋešdumin.N5=ø.N6=am,NV2=STEM.N5=ABS.N6=COP-3-SG,Early Dynastic,URU-KA-gina 01,am
+Q001124,Q001124.119.1,vii 1,i₃-tuku-am₆,tuku,acquire,"to acquire, to have",i.b.tuku.ø.am,V2=i.V11=b.V12=tuku.V14=ø.N6=am,V2=FIN.V11=3-SG-NH-A.V12=STEM.V14=3-SG-P.N6=COP-3-SG,Early Dynastic,URU-KA-gina 01,am
+Q001124,Q001124.120.2,vii 2,min-me,min,two,two,min.ø.meš,NV2=min.N5=ø.N6=meš,NV2=STEM.N5=ABS.N6=COP-3-PL,Early Dynastic,URU-KA-gina 01,meš
+Q001124,Q001124.122.1,vii 4,i₃-tuku-am₆,tuku,acquire,"to acquire, to have",i.b.tuku.ø.am,V2=i.V11=b.V12=tuku.V14=ø.N6=am,V2=FIN.V11=3-SG-NH-A.V12=STEM.V14=3-SG-P.N6=COP-3-SG,Early Dynastic,URU-KA-gina 01,am
+Q001124,Q001124.129.2,vii 11,i₃-us₂-us₂-am₆,us,follow,"to follow, to be next",i.b.usus.ø.am,V2=i.V11=b.V12=usus.V14=ø.N6=am,V2=FIN.V11=3-SG-NH-L3.V12=STEM-RDP.V14=3-SG-S.N6=COP-3-SG,Early Dynastic,URU-KA-gina 01,am
+Q001124,Q001124.134.1,vii 16,e-ŋal₂-lam,ŋal,be,"to be, to be situated somewhere",i.ŋal.ø.am,V2=i.V12=ŋal.V14=ø.N6=am,V2=FIN.V12=STEM.V14=3-SG-S.N6=COP-3-SG,Early Dynastic,URU-KA-gina 01,am
+Q001124,Q001124.146.1,vii 28,e-me-am₆,me,be,"to be, (the independent form of the) copula",i.me.ø.am,V2=i.V12=me.V14=ø.N6=am,V2=FIN.V12=COP.V14=3-SG-S.N6=COP-3-SG-S,Early Dynastic,URU-KA-gina 01,am
+Q001124,Q001124.229.2,x 15,gub-ba-am₆,gub,stand,stand,gub.'a.ø.am,NV2=gub.NV4='a.N5=ø.N6=am,NV2=STEM.NV4=SUB.N5=ABS.N6=COP-3-SG,Early Dynastic,URU-KA-gina 01,am
+Q001124,Q001124.231.2,x 17,gub-ba-am₆,gub,stand,stand,gub.'a.ø.am,NV2=gub.NV4='a.N5=ø.N6=am,NV2=STEM.NV4=SUB.N5=ABS.N6=COP-3-SG,Early Dynastic,URU-KA-gina 01,am
+Q001124,Q001124.233.2,x 19,banšur-ra-kam,banšur,table,table,banšur.ak.am,N1=banšur.N5=ak.N6=am,N1=STEM.N5=GEN.N6=COP-3-SG,Early Dynastic,URU-KA-gina 01,am
+Q001124,Q001124.234.4,x 20,zig₃-ga-ka,zig,rise,"levy, muster",zig.'a.ak.am,NV2=zig.NV4='a.N5=ak.N6=am,NV2=STEM.NV4=SUB.N5=GEN.N6=COP-3-SG,Early Dynastic,URU-KA-gina 01,am
+Q001124,Q001124.237.1,x 23,ŋir₂-su{ki}-kam,Ŋirsu,1,1,Ŋirsu.ak.am,N1=Ŋirsu.N5=ak.N6=am,N1=NAME.N5=GEN.N6=COP-3-SG,Early Dynastic,URU-KA-gina 01,am
+Q001124,Q001124.244.1,x 30,gala-am₆,gala,singer,lamentation singer,gala.ø.am,N1=gala.N5=ø.N6=am,N1=STEM.N5=ABS.N6=COP-3-SG,Early Dynastic,URU-KA-gina 01,am
+Q001124,Q001124.247.2,x 33,um-ma-me,umma,old woman,old woman,umma.ø.meš,N1=umma.N5=ø.N6=meš,N1=STEM.N5=ABS.N6=COP-3-PL,Early Dynastic,URU-KA-gina 01,meš
+Q001124,Q001124.251.1,x 37,niŋin₆{ki}-na-me,Niŋin,1,1,Niŋin.ak.meš,N1=Niŋin.N5=ak.N6=meš,N1=NAME.N5=GEN.N6=COP-3-PL,Early Dynastic,URU-KA-gina 01,meš
+Q001124,Q001124.256.3,xi 4,ŋi₆-ba-a-ka-ni,ŋibaʾa,midnight,midnight,ŋibaʾa.ak.ani.ø.am,N1=ŋibaʾa.N5=ak.N3=ani.N5=ø.N6=am,N1=STEM.N5=GEN.N3=3-SG-H-POSS.N5=ABS.N6=COP-3-SG,Early Dynastic,URU-KA-gina 01,am
+Q001124,Q001124.257.3,xi 5,ud-sa₂-ka-ni,udsa,midday,midday,udsa.ak.ani.ø.am,N1=udsa.N5=ak.N3=ani.N5=ø.N6=am,N1=STEM.N5=GEN.N3=3-SG-H-POSS.N5=ABS.N6=COP-3-SG,Early Dynastic,URU-KA-gina 01,am
+Q001124,Q001124.258.3,xi 6,ŋi₆-an-na-ka-ni,ŋiʾunak,night,"night, night-time",ŋiʾunak.ak.ani.ø.am,N1=ŋiʾunak.N5=ak.N3=ani.N5=ø.N6=am,N1=STEM.N5=GEN.N3=3-SG-H-POSS.N5=ABS.N6=COP-3-SG,Early Dynastic,URU-KA-gina 01,am
+Q001124,Q001124.262.4,xi 10,ak-da-kam,ak,do,do,ak.ed.ak.am,NV2=ak.NV3=ed.N5=ak.N6=am,NV2=STEM.NV3=PF.N5=GEN.N6=COP-3-SG,Early Dynastic,URU-KA-gina 01,am
+Q001124,Q001124.295.2,xii 4,šen-nam,šen,cauldron,cauldron,šen.ø.am,N1=šen.N5=ø.N6=am,N1=STEM.N5=ABS.N6=COP-3-SG,Early Dynastic,URU-KA-gina 01,am
+Q001124,Q001124.332.2,xii 41,kug-ga-am₆,kug,pure,(to be) pure,kug.ø.am,NV2=kug.N5=ø.N6=am,NV2=STEM.N5=ABS.N6=COP-3-SG,Early Dynastic,URU-KA-gina 01,am
+Q001124,Q001124.333.2,xii 42,dadag-ga-am₆,dadag,bright,(to be) bright,dadag.ø.am,NV2=dadag.N5=ø.N6=am,NV2=STEM.N5=ABS.N6=COP-3-SG,Early Dynastic,URU-KA-gina 01,am
+Q001133,Q001133.91.1,r iii 3,e-da-ak-ka-am₆,ak,do,do,i.nn.da.n.ak.ø.SUB.am,V2=i.V6=nn.V7=da.V11=n.V12=ak.V14=ø.V15=SUB.N6=am,V2=FIN.V6=3-SG-H.V8=COM.V11=3-SG-H-A.V12=STEM.V14=3-SG-P.V15=SUB.N6=COP-3-SG,Early Dynastic,URU-KA-gina 05,am
+Q001133,Q001133.92.2,r iii 4,in-ši-de₆-a-am₆,de,bring,to bring,i.nn.ši.n.de.ø.SUB.am,V2=i.V6=nn.V9=ši.V11=n.V12=de.V14=ø.V15=SUB.N6=am,V2=FIN.V6=3-SG-H.V9=TERM.V11=3-SG-H-A.V12=STEM.V14=3-SG-P.V15=SUB.N6=COP-3-SG,Early Dynastic,URU-KA-gina 05,am
+Q001152,Q001152.3.1,3,mu-bi,mu,name,name,mu.bi.ø.am,N1=mu.N3=bi.N5=ø.N6=am,N1=STEM.N3=3-SG-NH-POSS.N5=ABS.N6=COP-3-SG,Early Dynastic,URU-KA-gina 14c,am
+Q001154,Q001154.2.1,2,mu-bi,mu,name,name,mu.bi.ø.am,N1=mu.N3=bi.N5=ø.N6=am,N1=STEM.N3=3-SG-NH-POSS.N5=ABS.N6=COP-3-SG,Early Dynastic,URU-KA-gina 14e,am
+Q001155,Q001155.2.1,2,mu-bi,mu,name,name,mu.bi.ø.am,N1=mu.N3=bi.N5=ø.N6=am,N1=STEM.N3=3-SG-NH-POSS.N5=ABS.N6=COP-3-SG,Early Dynastic,URU-KA-gina 14f,am
+Q001156,Q001156.2.1,2,mu-bi,mu,name,name,mu.bi.ø.am,N1=mu.N3=bi.N5=ø.N6=am,N1=STEM.N3=3-SG-NH-POSS.N5=ABS.N6=COP-3-SG,Early Dynastic,URU-KA-gina 14g,am
+Q001157,Q001157.2.1,2,mu-bi,mu,name,name,mu.bi.ø.am,N1=mu.N3=bi.N5=ø.N6=am,N1=STEM.N3=3-SG-NH-POSS.N5=ABS.N6=COP-3-SG,Early Dynastic,URU-KA-gina 14h,am
+Q001158,Q001158.2.1,2,mu-bi,mu,name,name,mu.bi.ø.am,N1=mu.N3=bi.N5=ø.N6=am,N1=STEM.N3=3-SG-NH-POSS.N5=ABS.N6=COP-3-SG,Early Dynastic,URU-KA-gina 14i,am
+Q001159,Q001159.2.1,2,mu-bi,mu,name,name,mu.bi.ø.am,N1=mu.N3=bi.N5=ø.N6=am,N1=STEM.N3=3-SG-NH-POSS.N5=ABS.N6=COP-3-SG,Early Dynastic,URU-KA-gina 14j,am
+Q001160,Q001160.2.1,2,mu-bi,mu,name,name,mu.bi.ø.am,N1=mu.N3=bi.N5=ø.N6=am,N1=STEM.N3=3-SG-NH-POSS.N5=ABS.N6=COP-3-SG,Early Dynastic,URU-KA-gina 14k,am
+Q001161,Q001161.1.4,1,iri-ka-gen₆-na-ka,Irikaginak,1,Ruler of Lagaš,Irikaginak.ak.ø.am,N1=Irikaginak.N5=ak.N5=ø.N6=am,N1=NAME.N5=GEN.N5=ABS.N6=COP-3-SG,Early Dynastic,URU-KA-gina 14l,am
+Q001161,Q001161.2.1,2,mu-bi,mu,name,name,mu.bi.ø.am,N1=mu.N3=bi.N5=ø.N6=am,N1=STEM.N3=3-SG-NH-POSS.N5=ABS.N6=COP-3-SG,Early Dynastic,URU-KA-gina 14l,am
+Q001162,Q001162.2.1,2,mu-bi,mu,name,name,mu.bi.ø.am,N1=mu.N3=bi.N5=ø.N6=am,N1=STEM.N3=3-SG-NH-POSS.N5=ABS.N6=COP-3-SG,Early Dynastic,URU-KA-gina 14m,am
+Q001163,Q001163.3.1,3,mu-bi,mu,name,name,mu.bi.ø.am,N1=mu.N3=bi.N5=ø.N6=am,N1=STEM.N3=3-SG-NH-POSS.N5=ABS.N6=COP-3-SG,Early Dynastic,URU-KA-gina 14n,am
+Q001164,Q001164.2.1,2,mu-bi,mu,name,name,mu.bi.ø.am,N1=mu.N3=bi.N5=ø.N6=am,N1=STEM.N3=3-SG-NH-POSS.N5=ABS.N6=COP-3-SG,Early Dynastic,URU-KA-gina 14o,am
+Q001165,Q001165.3.1,3,mu-bi,mu,name,name,mu.bi.ø.am,N1=mu.N3=bi.N5=ø.N6=am,N1=STEM.N3=3-SG-NH-POSS.N5=ABS.N6=COP-3-SG,Early Dynastic,URU-KA-gina 14p,am
+Q001166,Q001166.3.1,3,mu-bi,mu,name,name,mu.bi.ø.am,N1=mu.N3=bi.N5=ø.N6=am,N1=STEM.N3=3-SG-NH-POSS.N5=ABS.N6=COP-3-SG,Early Dynastic,URU-KA-gina 14q,am
+Q001167,Q001167.4.1,4,mu-bi,mu,name,name,mu.bi.ø.am,N1=mu.N3=bi.N5=ø.N6=am,N1=STEM.N3=3-SG-NH-POSS.N5=ABS.N6=COP-3-SG,Early Dynastic,URU-KA-gina 14r,am
+Q001168,Q001168.2.1,2,mu-bi,mu,name,name,mu.bi.ø.am,N1=mu.N3=bi.N5=ø.N6=am,N1=STEM.N3=3-SG-NH-POSS.N5=ABS.N6=COP-3-SG,Early Dynastic,URU-KA-gina 14s,am
+Q001169,Q001169.3.1,3,mu-bi,mu,name,name,mu.bi.ø.am,N1=mu.N3=bi.N5=ø.N6=am,N1=STEM.N3=3-SG-NH-POSS.N5=ABS.N6=COP-3-SG,Early Dynastic,URU-KA-gina 14t,am
+Q001170,Q001170.2.1,2,mu-bi,mu,name,name,mu.bi.ø.am,N1=mu.N3=bi.N5=ø.N6=am,N1=STEM.N3=3-SG-NH-POSS.N5=ABS.N6=COP-3-SG,Early Dynastic,URU-KA-gina 14u,am
+Q001171,Q001171.4.1,4,mu-bi,mu,name,name,mu.bi.ø.am,N1=mu.N3=bi.N5=ø.N6=am,N1=STEM.N3=3-SG-NH-POSS.N5=ABS.N6=COP-3-SG,Early Dynastic,URU-KA-gina 14v,am
+Q001172,Q001172.2.1,2,mu-bi,mu,name,name,mu.bi.ø.am,N1=mu.N3=bi.N5=ø.N6=am,N1=STEM.N3=3-SG-NH-POSS.N5=ABS.N6=COP-3-SG,Early Dynastic,URU-KA-gina 14w,am
+Q001363,Q001363.4.1,4,hul-a-kam,hulu,bad,"to plunder, raid",hulu.'a.ak.ø.am,NV2=hulu.NV4='a.N5=ak.N5=ø.N6=am,NV2=STEM.NV4=SUB.N5=GEN.N5=ABS.N6=COP-3-SG,Early Dynastic,En-šakuš-Ana 2,am
+Q001380,Q001380.26.4,26,{d}šara₂-kam,Šara,1,1,Šara.ak.ø.am,N1=Šara.N5=ak.N5=ø.N6=am,N1=NAME.N5=GEN.N5=ABS.N6=COP-3-SG,Early Dynastic,Giša-kidu 2,am
+Q001380,Q001380.30.4,30,{d}šara₂-kam,Šara,1,1,Šara.ak.ø.am,N1=Šara.N5=ak.N5=ø.N6=am,N1=NAME.N5=GEN.N5=ABS.N6=COP-3-SG,Early Dynastic,Giša-kidu 2,am
+Q001380,Q001380.34.4,34,{d}šara₂-kam,Šara,1,1,Šara.ak.ø.am,N1=Šara.N5=ak.N5=ø.N6=am,N1=NAME.N5=GEN.N5=ABS.N6=COP-3-SG,Early Dynastic,Giša-kidu 2,am
+Q001380,Q001380.36.4,38,{d}šara₂-kam,Šara,1,1,Šara.ak.ø.am,N1=Šara.N5=ak.N5=ø.N6=am,N1=NAME.N5=GEN.N5=ABS.N6=COP-3-SG,Early Dynastic,Giša-kidu 2,am
+Q001380,Q001380.41.4,43,{d}šara₂-kam,Šara,1,1,Šara.ak.ø.am,N1=Šara.N5=ak.N5=ø.N6=am,N1=NAME.N5=GEN.N5=ABS.N6=COP-3-SG,Early Dynastic,Giša-kidu 2,am
+Q001380,Q001380.46.4,48,{d}šara₂-kam,Šara,1,1,Šara.ak.ø.am,N1=Šara.N5=ak.N5=ø.N6=am,N1=NAME.N5=GEN.N5=ABS.N6=COP-3-SG,Early Dynastic,Giša-kidu 2,am
+Q001380,Q001380.50.4,52,{d}šara₂-kam,Šara,1,1,Šara.ak.ø.am,N1=Šara.N5=ak.N5=ø.N6=am,N1=NAME.N5=GEN.N5=ABS.N6=COP-3-SG,Early Dynastic,Giša-kidu 2,am
+Q001380,Q001380.54.4,56,{d}šara₂-kam,Šara,1,1,Šara.ak.ø.am,N1=Šara.N5=ak.N5=ø.N6=am,N1=NAME.N5=GEN.N5=ABS.N6=COP-3-SG,Early Dynastic,Giša-kidu 2,am
+Q001380,Q001380.58.4,60,{d}šara₂-kam,Šara,1,1,Šara.ak.ø.am,N1=Šara.N5=ak.N5=ø.N6=am,N1=NAME.N5=GEN.N5=ABS.N6=COP-3-SG,Early Dynastic,Giša-kidu 2,am
+Q001380,Q001380.62.4,64,{d}šara₂-kam,Šara,1,1,Šara.ak.ø.am,N1=Šara.N5=ak.N5=ø.N6=am,N1=NAME.N5=GEN.N5=ABS.N6=COP-3-SG,Early Dynastic,Giša-kidu 2,am
+Q001380,Q001380.66.4,68,{d}šara₂-kam,Šara,1,1,Šara.ak.ø.am,N1=Šara.N5=ak.N5=ø.N6=am,N1=NAME.N5=GEN.N5=ABS.N6=COP-3-SG,Early Dynastic,Giša-kidu 2,am
+Q001380,Q001380.70.4,72,{d}šara₂-kam,Šara,1,1,Šara.ak.ø.am,N1=Šara.N5=ak.N5=ø.N6=am,N1=NAME.N5=GEN.N5=ABS.N6=COP-3-SG,Early Dynastic,Giša-kidu 2,am
+Q001423,Q001423.6.1,5,lu₂-a₂-ŋa₂-bi,luaŋa,leader,leader. commissioner,luaŋa.bi.ø.am,N1=luaŋa.N3=bi.N5=ø.N6=am,N1=STEM.N3=3-SG-NH-POSS.N5=ABS.N6=COP-3-SG,Old Akkadian,Naram-Suen 14,am
+Q001423,Q001423.8.2,7,{d}en-lil₂-la₂-kam,Enlil,1,1,Enlil.ak.ø.am,N1=Enlil.N5=ak.N5=ø.N6=am,N1=NAME.N5=GEN.N5=ABS.N6=COP-3-SG,Old Akkadian,Naram-Suen 14,am
+Q001431,Q001431.28.1,"colophon 1, 1",aš₃-am₃,aš,six,six,aš.ø.am,NV2=aš.N5=ø.N6=am,NV2=STEM.N5=ABS.N6=COP-3-SG,Old Akkadian,Šar-kali-šarri 4 (Sumerian),am
+Q001431,Q001431.28.2,"colophon 1, 1",šid-bi,šid,count,number,šid.bi.ø.am,N1=šid.N3=bi.N5=ø.N6=am,N1=STEM.N3=3-SG-NH-POSS.N5=ABS.N6=COP-3-SG,Old Akkadian,Šar-kali-šarri 4 (Sumerian),am
+Q001446,Q001446.10.2,10,gu-ti-um-kam,Gutium,1,1,Gutium.ak.am,N1=Gutium.N5=ak.N6=am,N1=NAME.N5=GEN.N6=COP-3-SG,Old Akkadian,Namahni 1,am
+Q001447,Q001447.15.2,15,gu-ti-um-kam,Gutium,1,1,Gutium.ak.am,N1=Gutium.N5=ak.N6=am,N1=NAME.N5=GEN.N6=COP-3-SG,Old Akkadian,Lugal-ana-tuma 1,am
+Q001462,Q001462.14.1,14,mu-bi,mu,name,name,mu.bi.ø.am,N1=mu.N3=bi.N5=ø.N6=am,N1=STEM.N3=3-SG-NH-POSS.N5=ABS.N6=COP-3-SG,Lagaš II,Ur-Ningirsu I 4,am
+Q001466,Q001466.16.1,ii 4,ur-{d}ba-u₂-me,Urbauk,1,Ruler of Lagaš,Urbauk.ø.men,N1=Urbauk.N5=ø.N6=men,N1=NAME.N5=ABS.N6=COP-1-SG,Lagaš II,Ur-Bau 05,men
+Q001466,Q001466.24.4,iii 4,kuš₃-am₃,kuš,unit,unit,kuš.ø.am,N1=kuš.N5=ø.N6=am,N1=STEM.N5=ABS.N6=COP-3-SG,Lagaš II,Ur-Bau 05,am
+Q001466,Q001466.26.3,iii 6,kuš₃-am₃,kuš,unit,unit,kuš.ø.am,N1=kuš.N5=ø.N6=am,N1=STEM.N5=ABS.N6=COP-3-SG,Lagaš II,Ur-Bau 05,am
+Q001477,Q001477.9.1,9,{ŋeš}ig-kam,ig,door,door,ig.ak.am,N1=ig.N5=ak.N6=am,N1=STEM.N5=GEN.N6=COP-3-SG,Lagaš II,Gudea 011a,am
+Q001494,Q001494.16.1,ii 7,{ŋeš}ig-kam,ig,door,door,ig.ak.am,N1=ig.N5=ak.N6=am,N1=STEM.N5=GEN.N6=COP-3-SG,Lagaš II,Gudea 052,am
+Q001505,Q001505.7.1,5',mu-bi,mu,name,name,mu.bi.ø.am,N1=mu.N3=bi.N5=ø.N6=am,N1=STEM.N3=3-SG-NH-POSS.N5=ABS.N6=COP-3-SG,Lagaš II,Gudea 069,am
+Q001526,Q001526.11.1,base 4',mu-bi,mu,name,name,mu.bi.ø.am,N1=mu.N3=bi.N5=ø.N6=am,N1=STEM.N3=3-SG-NH-POSS.N5=ABS.N6=COP-3-SG,Lagaš II,Gudea 094,am
+Q001531,Q001531.17.1,ii 10,mu-bi,mu,name,name,mu.bi.ø.am,N1=mu.N3=bi.N5=ø.N6=am,N1=STEM.N3=3-SG-NH-POSS.N5=ABS.N6=COP-3-SG,Lagaš II,Gudea 099,am
+Q001534,Q001534.13.1,ii 5',ha-mu-na-du₂-ru-ne₂-ša-am₃,tuš,sit,to sit (down),ha.mu.nn.a.n.durun.eš.SUB.ø.am,V1=ha.V4=mu.V6=nn.V7=a.V10=n.V12=durun.V14=eš.V15=SUB.N5=ø.N6=am,V1=MOD1.V4=VEN.V6=3-SG-H.V7=DAT.V10=L1-SYN.V12=STEM-PL.V14=3-PL.V15=SUB.N5=ABS.N6=COP-3-SG,Lagaš II,Gudea Cylinder 06,am
+Q001534,Q001534.18.1,iii 2',ur-saŋ-ŋa₂-am₃,ursaŋ,hero,"hero, warrior",ursaŋ.ø.am,N1=ursaŋ.N5=ø.N6=am,N1=STEM.N5=ABS.N6=COP-3-SG,Lagaš II,Gudea Cylinder 06,am
+Q001541,Q001541.12.2,i 12,ba-ŋal₂-la-am₃,ŋal,be,"to be, to be situated somewhere",b.a.ŋal.ø.SUB.am,V5=b.V7=a.V12=ŋal.V14=ø.V15=SUB.N6=am,V5=3-NH.V7=DAT.V12=STEM.V14=3-SG-S.V15=SUB.N6=COP-3-SG,Lagaš II,Gudea Statue B,am
+Q001541,Q001541.73.3,iv 19,mu-ŋal₂-am₃,ŋal,be,"to be, to be situated somewhere",mu.n.ŋal.ø.am,V1=mu.V10=n.V12=ŋal.V14=ø.N6=am,V1=EN.V10=L1-SYN.V12=STEM.V14=3-SG-S.N6=COP-3-SG,Lagaš II,Gudea Statue B,am
+Q001541,Q001541.238.2,vii 30,imin-am₃,imin,seven,seven,imin.ø.am,NV2=imin.N5=ø.N6=am,NV2=STEM.N5=ABS.N6=COP-3-SG,Lagaš II,Gudea Statue B,am
+Q001541,Q001541.239.3,vii 31,mu-da-sa₂-am₃,sa,equal,equal,mu.nn.da.sa.ø.SUB.am,V4=mu.V6=nn.V8=da.V12=sa.V14=ø.V15=SUB.N6=am,V4=VEN.V6=3-SG-H.V8=COM.V12=STEM.V14=3-SG-S.V15=SUB.N6=COP-3-SG,Lagaš II,Gudea Statue B,am
+Q001541,Q001541.241.3,vii 33,mu-da-ša₄-am₃,ša,cvve,(compound verb verbal element),mu.nn.da.n.ša.ø.SUB.am,V4=mu.V6=nn.V8=da.V11=n.V12=ša.V14=ø.V15=SUB.N6=am,V4=VEN.V6=3-SG-H.V8=COM.V11=3-SG-H-A.V12=STEM.V14=3-SG-P.V15=SUB.N6=COP-3-SG,Lagaš II,Gudea Statue B,am
+Q001541,Q001541.243.2,vii 35,mu-da-nu₂-am₃,nud,lie,lie down (of people),mu.nn.da.n.nud.ø.am,V4=mu.V6=nn.V8=da.V10=n.V12=nud.V14=ø.N6=am,V4=VEN.V6=3-SG-H.V8=COM.V10=L1-SYN.V12=STEM.V14=3-SG-S.N6=COP-3-SG,Lagaš II,Gudea Statue B,am
+Q001541,Q001541.262.1,vii 54,{na₄}esi-am₃,esi,diorite,diorite,esi.ø.am,N1=esi.N5=ø.N6=am,N1=STEM.N5=ABS.N6=COP-3-SG,Lagaš II,Gudea Statue B,am
+Q001541,Q001541.267.1,vii 59,{d}nin-ŋir₂-su-ka-kam,Ninŋirsuk,1,1,Ninŋirsuk.ak.ø.am,N1=Ninŋirsuk.N5=ak.N5=ø.N6=am,N1=NAME.N5=GEN.N5=ABS.N6=COP-3-SG,Lagaš II,Gudea Statue B,am
+Q001541,Q001541.304.4,viii 35,e₃-a-am₃,e,leave,"to leave, go out",e.'a.ø.am,NV2=e.NV4='a.N5=ø.N6=am,NV2=STEM.NV4=SUB.N5=ABS.N6=COP-3-SG,Lagaš II,Gudea Statue B,am
+Q001542,Q001542.6.1,i 6,in-du₃-a-kam,du,build,to build,i.n.du.ø.SUB.ak.ø.am,V2=i.V11=n.V12=du.V14=ø.V15=SUB.N5=ak.N5=ø.N6=am,V2=FIN.V11=3-SG-H-A.V12=STEM.V14=3-SG-P.V15=SUB.N5=GEN.N5=ABS.N6=COP-3-SG,Lagaš II,Gudea Statue C,am
+Q001542,Q001542.23.2,ii 17,daŋal-a-kam,daŋal,wide,(to be) wide,daŋal.ak.ø.am,NV2=daŋal.N5=ak.N5=ø.N6=am,NV2=STEM.N5=GEN.N5=ABS.N6=COP-3-SG,Lagaš II,Gudea Statue C,am
+Q001542,Q001542.25.2,ii 19,aŋ₂-am₃,aŋ,measure,measure,aŋ.ø.am,NV2=aŋ.N5=ø.N6=am,NV2=STEM.N5=ABS.N6=COP-3-SG,Lagaš II,Gudea Statue C,am
+Q001543,Q001543.64.3,statue iv 11,mu-na-ŋal₂-la-am₃,ŋal,be,"to be, to be situated somewhere",mu.nn.a.e.ŋal.ø.SUB.ø.am,V4=mu.V6=nn.V7=a.V10=e.V12=ŋal.V14=ø.V15=SUB.N5=ø.N6=am,V4=VEN.V6=3-SG-H.V7=DAT.V10=L2.V12=STEM.V14=3-SG-S.V15=SUB.N5=ABS.N6=COP-3-SG,Lagaš II,Gudea Statue D,am
+Q001544,Q001544.25.1,ii 2,nin-a-na-kam,nin,lady,lady,nin.ani.ak.ø.am,N1=nin.N3=ani.N5=ak.N5=ø.N6=am,N1=STEM.N3=3-SG-H-POSS.N5=GEN.N5=ABS.N6=COP-3-SG,Lagaš II,Gudea Statue E,am
+Q001544,Q001544.64.2,iii 19,si-am₃,si,fill,fill,si.ø.am,NV2=si.N5=ø.N6=am,NV2=STEM.N5=ABS.N6=COP-3-SG,Lagaš II,Gudea Statue E,am
+Q001544,Q001544.106.1,vi 4,ud-bi-ta-kam,ud,sun,sun,ud.bi.ta.ak.am,N1=ud.N3=bi.N5=ta.N5=ak.N6=am,N1=STEM.N3=DEM2.N5=ABL.N5=GEN.N6=COP-3-SG,Lagaš II,Gudea Statue E,am
+Q001544,Q001544.149.1,vii 21,ba-an-tah-ha-am₃,tah,add,add,ba.n.tah.ø.SUB.ø.am,V5=ba.V11=n.V12=tah.V14=ø.V15=SUB.N5=ø.N6=am,V5=MID.V11=3-SG-H-A.V12=STEM.V14=3-SG-P.V15=SUB.N5=ABS.N6=COP-3-SG,Lagaš II,Gudea Statue E,am
+Q001544,Q001544.180.1,ix 8,mu-du₃-a-kam,du,build,to build,mu.n.du.ø.SUB.ak.ø.am,V4=mu.V11=n.V12=du.V14=ø.V15=SUB.N5=ak.N5=ø.N6=am,V4=VEN.V11=3-SG-H-A.V12=STEM.V14=3-SG-P.V15=SUB.N5=GEN.N5=ABS.N6=COP-3-SG,Lagaš II,Gudea Statue E,am
+Q001545,Q001545.29.2,ii 9,daŋal-kam,daŋal,wide,(to be) wide,daŋal.ak.ø.am,NV2=daŋal.N5=ak.N5=ø.N6=am,NV2=STEM.N5=GEN.N5=ABS.N6=COP-3-SG,Lagaš II,Gudea Statue F,am
+Q001545,Q001545.31.1,ii 11,nin-a-na-kam,nin,lady,lady,nin.ani.ak.ø.am,N1=nin.N3=ani.N5=ak.N5=ø.N6=am,N1=STEM.N3=3-SG-H-POSS.N5=GEN.N5=ABS.N6=COP-3-SG,Lagaš II,Gudea Statue F,am
+Q001546,Q001546.65.1,iv 20,ud-bi-ta-kam,ud,sun,sun,ud.bi.ta.ak.am,N1=ud.N3=bi.N5=ta.N5=ak.N6=am,N1=STEM.N3=DEM2.N5=ABL.N5=GEN.N6=COP-3-SG,Lagaš II,Gudea Statue G,am
+Q001546,Q001546.107.1,vi 19,ba-an-tah-ha-am₃,tah,add,add,ba.n.tah.ø.SUB.ø.am,V5=ba.V11=n.V12=tah.V14=ø.V15=SUB.N5=ø.N6=am,V5=MID.V11=3-SG-H-A.V12=STEM.V14=3-SG-P.V15=SUB.N5=ABS.N6=COP-3-SG,Lagaš II,Gudea Statue G,am
+Q001549,Q001549.11.2,ii 7,aŋ₂-me,aŋ,measure,measure,aŋ.ø.men,NV2=aŋ.N5=ø.N6=men,NV2=STEM.N5=ABS.N6=COP-1-SG,Lagaš II,Gudea Statue K,men
+Q001556,Q001556.33.1,iv 7,mu-bi,mu,name,name,mu.bi.ø.am,N1=mu.N3=bi.N5=ø.N6=am,N1=STEM.N3=3-SG-NH-POSS.N5=ABS.N6=COP-3-SG,Lagaš II,Gudea Statue R,am
+Q001569,Q001569.15.4,ii 4,aŋ₂-me,aŋ,measure,measure,aŋ.ø.men,NV2=aŋ.N5=ø.N6=men,NV2=STEM.N5=ABS.N6=COP-1-SG,Lagaš II,Ur-Ningirsu II 06,men
+Q001589,Q001589.6.1,5',mu-bi,mu,name,name,mu.bi.ø.am,N1=mu.N3=bi.N5=ø.N6=am,N1=STEM.N3=3-SG-NH-POSS.N5=ABS.N6=COP-3-SG,Lagaš II,Nammahni 16,am
+Q001611,Q001611.9.1,8',mu-bi,mu,name,name,mu.bi.ø.am,N1=mu.N3=bi.N5=ø.N6=am,N1=STEM.N3=3-SG-NH-POSS.N5=ABS.N6=COP-3-SG,Lagaš II,Lagaš II Unidentified 1022,am
+Q001614,Q001614.6.1,5',mu-bi,mu,name,name,mu.bi.ø.am,N1=mu.N3=bi.N5=ø.N6=am,N1=STEM.N3=3-SG-NH-POSS.N5=ABS.N6=COP-3-SG,Lagaš II,Lagaš II Unidentified 1025,am
+Q001615,Q001615.4.1,3',mu-bi,mu,name,name,mu.bi.ø.am,N1=mu.N3=bi.N5=ø.N6=am,N1=STEM.N3=3-SG-NH-POSS.N5=ABS.N6=COP-3-SG,Lagaš II,Lagaš II Unidentified 1026,am
+Q001616,Q001616.3.1,2',mu-bi,mu,name,name,mu.bi.ø.am,N1=mu.N3=bi.N5=ø.N6=am,N1=STEM.N3=3-SG-NH-POSS.N5=ABS.N6=COP-3-SG,Lagaš II,Lagaš II Unidentified 1027,am
+Q001767,Q001767.12.1,12,mu-bi,mu,name,name,mu.bi.ø.am,N1=mu.N3=bi.N5=ø.N6=am,N1=STEM.N3=3-SG-NH-POSS.N5=ABS.N6=COP-3-SG,Ur III,Šulgi 2039 / CDLI Seals 006350,am
+Q001795,Q001795.10.1,10,mu-bi-im,mu,name,name,mu.bi.ø.am,N1=mu.N3=bi.N5=ø.N6=am,N1=STEM.N3=3-SG-NH-POSS.N5=ABS.N6=COP-3-SG,Ur III,Amar-Suena 12,am
+Q001849,Q001849.22.3,22,nu-til-le-dam,til,complete,complete,nu.til.ed.ø.am,NV1=nu.NV2=til.NV3=ed.N5=ø.N6=am,NV1=NEG.NV2=STEM.NV3=PF.N6=COP-3-SG,Ur III,Ibbi-Suen 02,am
+Q001851,Q001851.18.1,r 7,mu-bi-im,mu,name,name,mu.bi.ø.am,N1=mu.N3=bi.N5=ø.N6=am,N1=STEM.N3=3-SG-NH-POSS.N5=ABS.N6=COP-3-SG,Ur III,Ibbi-Suen 04,am
+Q001903,Q001903.9.1,8',mu-bi-im,mu,name,name,mu.bi.ø.am,N1=mu.N3=bi.N5=ø.N6=am,N1=STEM.N3=3-SG-NH-POSS.N5=ABS.N6=COP-3-SG,Ur III,Unattributed Ur III 1034,am
+Q001909,Q001909.11.1,10',mu-bi,mu,name,name,mu.bi.ø.am,N1=mu.N3=bi.N5=ø.N6=am,N1=STEM.N3=3-SG-NH-POSS.N5=ABS.N6=COP-3-SG,Ur III,Unattributed Ur III 1040,am
+Q001920,Q001920.15.1,15,mu-bi-im,mu,name,name,mu.bi.ø.am,N1=mu.N3=bi.N5=ø.N6=am,N1=STEM.N3=3-SG-NH-POSS.N5=ABS.N6=COP-3-SG,Old Babylonian,Išbi-Erra 1,am
+Q001936,Q001936.13.1,13,mu-bi-im,mu,name,name,mu.bi.ø.am,N1=mu.N3=bi.N5=ø.N6=am,N1=STEM.N3=3-SG-NH-POSS.N5=ABS.N6=COP-3-SG,Early Old Babylonian,Šu-ilišu 3,am
+Q001949,Q001949.18.1,18,mu-bi-im,mu,name,name,mu.bi.ø.am,N1=mu.N3=bi.N5=ø.N6=am,N1=STEM.N3=3-SG-NH-POSS.N5=ABS.N6=COP-3-SG,Early Old Babylonian,Išme-Dagan 05,am
+Q001951,Q001951.12.1,12,mu-na-an-gub-ba-am₃,gub,stand,stand,mu.nn.a.n.gub.ø.SUB.am,V4=mu.V6=nn.V7=a.V11=n.V12=gub.V14=ø.V15=SUB.N6=am,V4=VEN.V6=3-SG-H.V7=DAT.V11=3-SG-H-A.V12=gub.V14=3-SG-P.V15=SUB.N6=COP-3-SG,Early Old Babylonian,Išme-Dagan 07,am
+Q001960,Q001960.13.1,13,{d}inana-me-en,Inanak,1,1,Inanak.ak.ø.men,N1=Inanak.N5=ak.N5=ø.N6=men,N1=NAME.N5=GEN.N5=ABS.N6=COP-1-SG,Early Old Babylonian,Lipit-Eštar 02,men
+Q001961,Q001961.13.1,13,{d}inana-me-en,Inanak,1,1,Inanak.ak.ø.men,N1=Inanak.N5=ak.N5=ø.N6=men,N1=NAME.N5=GEN.N5=ABS.N6=COP-1-SG,Early Old Babylonian,Lipit-Eštar 04,men
+Q001962,Q001962.13.1,13,{d}inana-me-en,Inanak,1,1,Inanak.ak.ø.men,N1=Inanak.N5=ak.N5=ø.N6=men,N1=NAME.N5=GEN.N5=ABS.N6=COP-1-SG,Early Old Babylonian,Lipit-Eštar 05,men
+Q001965,Q001965.6.3,6,ki-uri-me-en,Akkad,1,1,Akkad.ak.ø.men,N1=Akkad.N5=ak.N5=ø.N6=men,N1=NAME.N5=GEN.N5=ABS.N6=COP-1-SG,Early Old Babylonian,Lipit-Eštar 08,men
+Q001984,Q001984.17.1,17,mu-bi-im,mu,name,name,mu.bi.ø.am,N1=mu.N3=bi.N5=ø.N6=am,N1=STEM.N3=3-SG-NH-POSS.N5=ABS.N6=COP-3-SG,Early Old Babylonian,Enlil-bani 02,am
+Q001991,Q001991.10.1,10,{d}inana-me-en,Inanak,1,1,Inanak.ak.ø.men,N1=Inanak.N5=ak.N5=ø.N6=men,N1=NAME.N5=GEN.N5=ABS.N6=COP-1-SG,Early Old Babylonian,Enlil-bani 09,men
+Q001994,Q001994.3.2,i 3,x-me-en,,,,,,,Early Old Babylonian,Enlil-bani 1001,no_N6_label
+Q001994,Q001994.11.2,i 11,dug₄-ga-ŋu₁₀-me-en,dug,speak,speak,dug.'a.ŋu.ø.men,NV2=dug.NV4='a.N3=ŋu.N5=ø.N6=men,NV2=STEM.NV4=SUB.N3=1-SG-POSS.N5=ABS.N6=COP-2-SG,Early Old Babylonian,Enlil-bani 1001,men
+Q002016,Q002016.8.1,8,mu-bi-im,mu,name,name,mu.bi.ø.am,N1=mu.N3=bi.N5=ø.N6=am,N1=STEM.N3=3-SG-NH-POSS.N5=ABS.N6=COP-3-SG,Early Old Babylonian,Gungunum 3,am
+Q003671,Q003671.12.1,iii 3,{d}šul-|MUŠ×PA|-am₆,Šul-MUŠ×PA,1,1,Šul-|MUŠ×PA|.ø.am,N1=Šul-|MUŠ×PA|.N5=ø.N6=am,N1=NAME.N5=ABS.N6=COP-3-SG,Early Dynastic,En-metena 13,am
+Q004103,Q004103.16.1,ii 2,{d}inana-me-en,Inanak,1,1,Inanak.ak.ø.men,N1=Inanak.N5=ak.N5=ø.N6=men,N1=NAME.N5=GEN.N5=ABS.N6=COP-1-SG,Early Old Babylonian,Lipit-Eštar 10add,men
+Q004104,Q004104.13.1,ii 2,{d}inana-me-en,Inanak,1,1,Inanak.ak.ø.men,N1=Inanak.N5=ak.N5=ø.N6=men,N1=NAME.N5=GEN.N5=ABS.N6=COP-1-SG,Early Old Babylonian,Lipit-Eštar 09add,men
+Q004247,Q004247.6.1,6,dam-ni,dam,spouse,spouse,dam.ani.ø.am,N1=dam.N3=ani.N5=ø.N6=am,N1=STEM.N3=3-SG-H-POSS.N5=ABS.N6=COP-3-SG,Early Dynastic,Ur-ešlila 1,am
+Q004247,Q004247.15.1,15,dumu-ni-me,dumu,child,child,dumu.ani.ø.meš,N1=dumu.N3=ani.N5=ø.N6=meš,N1=STEM.N3=3-SG-H-POSS.N5=ABS.N6=COP-3-PL,Early Dynastic,Ur-ešlila 1,meš
+Q004272,Q004272.3.1,2',mu-bi,mu,name,name,mu.bi.ø.am,N1=mu.N3=bi.N5=ø.N6=am,N1=STEM.N3=3-SG-NH-POSS.N5=ABS.N6=COP-3-SG,Lagaš II,Lagaš II Unidentified 1046add,am
+Q004403,Q004403.13.1,13,mu-bi-im,mu,name,name,mu.bi.ø.am,N1=mu.N3=bi.N5=ø.N6=am,N1=STEM.N3=3-SG-NH-POSS.N5=ABS.N6=COP-3-SG,Ur III,Šu-Suen 2070add,am
+Q004449,Q004449.19.1,i 19,mu-bi-im,mu,name,name,mu.bi.ø.am,N1=mu.N3=bi.N5=ø.N6=am,N1=STEM.N3=3-SG-NH-POSS.N5=ABS.N6=COP-3-SG,Early Old Babylonian,Gungunum 5add,am
+Q004449,Q004449.33.4,ii 14,he₂-ŋar-am₃,ŋar,place,"put, place, lay down",ha.i.ŋar.ø.am,V1=ha.V2=i.V12=ŋar.V14=ø.N6=am,V1=MOD1.V2=FIN.V12=STEM.V14=3-SG-S.N6=COP-3-SG,Early Old Babylonian,Gungunum 5add,am
+Q004449,Q004449.36.3,ii 17,niŋ₂-gen₆-na-me-en,niŋgina,truth,truth,niŋgina.ak.ø.men,N1=niŋgina.N5=ak.N5=ø.N6=men,N1=STEM.N5=GEN.N5=ABS.N6=COP-1-SG,Early Old Babylonian,Gungunum 5add,men
+Q004873,Q004873.5.1,i 4',e-ŋal₂-lam,ŋal,be,"to be, to be situated somewhere",i.n.ŋal.ø.am,V2=i.V10=n.V12=ŋal.V14=ø.N6=am,V2=FIN.V10=L1-SYN.V12=STEM.V14=3-SG-S.N6=COP-3-SG,Early Dynastic,URU-KA-gina 34add,am
+Q004873,Q004873.14.1,ii 5',nin-bi,nin,lady,lady,nin.bi.ø.am,N1=nin.N3=bi.N5=ø.N6=am,N1=STEM.N3=3-SG-NH-POSS.N5=ABS.N6=COP-3-SG,Early Dynastic,URU-KA-gina 34add,am
+Q004873,Q004873.23.1,iii 4',niŋin₆{ki}-kam,Niŋin,1,1,Niŋin.ak.am,N1=Niŋin.N5=ak.N6=am,N1=NAME.N5=GEN.N6=COP-3-SG,Early Dynastic,URU-KA-gina 34add,am
+Q004874,Q004874.6.1,5',mu-bi-im,mu,name,name,mu.bi.ø.am,N1=mu.N3=bi.N5=ø.N6=am,N1=STEM.N3=3-SG-NH-POSS.N5=ABS.N6=COP-3-SG,Ur III,Unattributed 02,am
+Q004877,Q004877.12.2,12,na-ru₂-a-kam,narua,stele,stele,narua.ak.am,N1=narua.N5=ak.N6=am,N1=STEM.N5=GEN.N6=COP-3-SG,Lagaš II,Gudea 103add,am
+Q004880,Q004880.13.1,13,mu-bi,mu,name,name,mu.bi.ø.am,N1=mu.N3=bi.N5=ø.N6=am,N1=STEM.N3=3-SG-NH-POSS.N5=ABS.N6=COP-3-SG,Ur III,Ur-Ninsumuna 1,am
+Q004882,Q004882.11.1,10',mu-bi-im,mu,name,name,mu.bi.ø.am,N1=mu.N3=bi.N5=ø.N6=am,N1=STEM.N3=3-SG-NH-POSS.N5=ABS.N6=COP-3-SG,Lagaš II,Lagaš II Unidentified 1051add,am
+Q005029,Q005029.2.4,1',mu-bi-im,mu,name,name,mu.bi.ø.am,N1=mu.N3=bi.N5=ø.N6=am,N1=STEM.N3=3-SG-NH-POSS.N5=ABS.N6=COP-3-SG,Ur III,Unattributed Ur III 1047add,am
+Q008415,Q008415.6.1,5',{d}šul-|MUŠ×PA|-am₆,Šul-MUŠ×PA,1,1,Šul-|MUŠ×PA|.ø.am,N1=Šul-|MUŠ×PA|.N5=ø.N6=am,N1=NAME.N5=ABS.N6=COP-3-SG,Early Dynastic,En-metena 32add,am
+Q008910,Q008910.4.1,3',mu-bi,mu,name,name,mu.bi.ø.am,N1=mu.N3=bi.N5=ø.N6=am,N1=STEM.N3=3-SG-NH-POSS.N5=ABS.N6=COP-3-SG,Early Dynastic,Unattributed 04,am
+Q008911,Q008911.14.1,14,mu-bi,mu,name,name,mu.bi.ø.am,N1=mu.N3=bi.N5=ø.N6=am,N1=STEM.N3=3-SG-NH-POSS.N5=ABS.N6=COP-3-SG,Lagaš II,Pirig-me 2add,am
+Q009692,Q009692.10.1,ii 5,{d}šul-|MUŠ×PA|-am₆,Šul-MUŠ×PA,1,1,Šul-|MUŠ×PA|.ø.am,N1=Šul-|MUŠ×PA|.N5=ø.N6=am,N1=NAME.N5=ABS.N6=COP-3-SG,Early Dynastic,En-metena 36add,am

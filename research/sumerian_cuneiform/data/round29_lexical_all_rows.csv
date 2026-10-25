@@ -1,0 +1,478 @@
+﻿pid,museum,designation,row_id,line,headword,pronunciation,main_sign,akkadian,cell_count,all_cells,has_correction,has_uncertainty,has_damage,gaba_target,has_full_ga_ba
+P227625,CBS 10375,CBS 10375,P227625.5,1',[[un₃> ]],[*] ⸢un?⸣,[EZEN×BAD?],,4,1'1' | [[un₃> ]] | [*] ⸢un?⸣ | [EZEN×BAD?],False,True,True,False,False
+P227625,CBS 10375,CBS 10375,P227625.6,2',[[bad₃> ]],[*] ba-ad,EZEN×BAD,,4,2'2' | [[bad₃> ]] | [*] ba-ad | EZEN×BAD,False,False,True,False,False
+P227625,CBS 10375,CBS 10375,P227625.7,3',[[silal> ]],[*] si-lal,EZEN×A,,4,3'3' | [[silal> ]] | [*] si-lal | EZEN×A,False,False,True,False,False
+P227625,CBS 10375,CBS 10375,P227625.8,4',[[asilal₃> ]],[*] ⸢a⸣-si-lal,EZEN×A,,4,4'4' | [[asilal₃> ]] | [*] ⸢a⸣-si-lal | EZEN×A,False,False,True,False,False
+P227625,CBS 10375,CBS 10375,P227625.9,5',[[usilalₓ(EZEN×U₂)> ]],[*] u₂-si-lal,EZEN×U₂,,4,5'5' | [[usilalₓ(EZEN×U₂)> ]] | [*] u₂-si-lal | EZEN×U₂,False,False,True,False,False
+P227625,CBS 10375,CBS 10375,P227625.10,6',[[udinim> ]],[*] u₄-di-nim,EZEN×IGIg,,4,6'6' | [[udinim> ]] | [*] u₄-di-nim | EZEN×IGIg,False,False,True,False,False
+P227625,CBS 10375,CBS 10375,P227625.11,7',[[kisiga> ]],[*] ⸢ki?-si-ga⸣,EZEN×KU₃,,4,7'7' | [[kisiga> ]] | [*] ⸢ki?-si-ga⸣ | EZEN×KU₃,False,True,True,False,False
+P227701,CBS 12709 (+) CBS 12709a,CBS 12709 (+) CBS 12709a,P227701.6,o i 1,[[teme₂> ]],* te-me,NAGA180,,4,o i 1o i 1 | [[teme₂> ]] | * te-me | NAGA180,False,False,False,False,False
+P227701,CBS 12709 (+) CBS 12709a,CBS 12709 (+) CBS 12709a,P227701.7,o i 2,[[li> ]],* li,LI,,4,o i 22 | [[li> ]] | * li | LI,False,False,False,False,False
+P227701,CBS 12709 (+) CBS 12709a,CBS 12709 (+) CBS 12709a,P227701.8,o i 3,[[en₃> ]],* en,LI,,4,o i 33 | [[en₃> ]] | * en | LI,False,False,False,False,False
+P227701,CBS 12709 (+) CBS 12709a,CBS 12709 (+) CBS 12709a,P227701.9,o i 4,[[gub₂> ]],* ⸢gub⸣,⸢LI⸣,,4,o i 44 | [[gub₂> ]] | * ⸢gub⸣ | ⸢LI⸣,False,False,True,False,False
+P227701,CBS 12709 (+) CBS 12709a,CBS 12709 (+) CBS 12709a,P227701.10,o i 5,[[tu> ]],* tu-⸢u₂⸣,TU,,4,o i 55 | [[tu> ]] | * tu-⸢u₂⸣ | TU,False,False,True,False,False
+P227701,CBS 12709 (+) CBS 12709a,CBS 12709 (+) CBS 12709a,P227701.11,o i 6,[[du₂> ]],* du-u₂,TU,,4,o i 66 | [[du₂> ]] | * du-u₂ | TU,False,False,False,False,False
+P227701,CBS 12709 (+) CBS 12709a,CBS 12709 (+) CBS 12709a,P227701.12,o i 7,[[ḫuduš> ]],* ḫu-du-uš,TU,,4,o i 77 | [[ḫuduš> ]] | * ḫu-du-uš | TU,False,False,False,False,False
+P227701,CBS 12709 (+) CBS 12709a,CBS 12709 (+) CBS 12709a,P227701.13,o i 8,[[ter> ]],* te-er,ŠE.NUN&NUN,,4,o i 88 | [[ter> ]] | * te-er | ŠE.NUN&NUN,False,False,False,False,False
+P227701,CBS 12709 (+) CBS 12709a,CBS 12709 (+) CBS 12709a,P227701.14,o i 9,[[nenni₅> ]],* ne-e-ne,(ŠE.NUN&NUN)&(ŠE.NUN&NUN),,4,o i 99 | [[nenni₅> ]] | * ne-e-ne | (ŠE.NUN&NUN)&(ŠE.NUN&NUN),False,False,False,False,False
+P227701,CBS 12709 (+) CBS 12709a,CBS 12709 (+) CBS 12709a,P227701.15,o i 10,[[garadin₂> ]],* ga-ra-ad-di-in,ŠE&ŠE.GAD&GAD.GAR&GAR,,4,o i 1010 | [[garadin₂> ]] | * ga-ra-ad-di-in | ŠE&ŠE.GAD&GAD.GAR&GAR,False,False,False,False,False
+P227701,CBS 12709 (+) CBS 12709a,CBS 12709 (+) CBS 12709a,P227701.16,o i 11,[[ku₄> ]],* ku!(TUG₂-)u₂,KU₄,,4,o i 1111 | [[ku₄> ]] | * ku!(TUG₂-)u₂ | KU₄,True,False,False,False,False
+P227701,CBS 12709 (+) CBS 12709a,CBS 12709 (+) CBS 12709a,P227701.17,o i 12,[[sar> ]],* ⸢sa-ar?⸣,⸢SAR⸣,,4,o i 1212 | [[sar> ]] | * ⸢sa-ar?⸣ | ⸢SAR⸣,False,True,True,False,False
+P227701,CBS 12709 (+) CBS 12709a,CBS 12709 (+) CBS 12709a,P227701.19,o i 1',,* [...],⸢GAN⸣,,4,o i 1'1' |  | * [...] | ⸢GAN⸣,False,False,True,False,False
+P227701,CBS 12709 (+) CBS 12709a,CBS 12709 (+) CBS 12709a,P227701.20,o i 2',[[saman₄> ]],* [sa]-⸢ma-an⸣,U.GAN,,4,o i 2'2' | [[saman₄> ]] | * [sa]-⸢ma-an⸣ | U.GAN,False,False,True,False,False
+P227701,CBS 12709 (+) CBS 12709a,CBS 12709 (+) CBS 12709a,P227701.21,o i 3',[[kad₅> ]],* ka-ad,KAD₅,,4,o i 3'3' | [[kad₅> ]] | * ka-ad | KAD₅,False,False,False,False,False
+P227701,CBS 12709 (+) CBS 12709a,CBS 12709 (+) CBS 12709a,P227701.22,o i 4',[[ḫadₓ(KAD₅)> ]],* ḫa-ad,KAD₅,,4,o i 4'4' | [[ḫadₓ(KAD₅)> ]] | * ḫa-ad | KAD₅,False,False,False,False,False
+P227701,CBS 12709 (+) CBS 12709a,CBS 12709 (+) CBS 12709a,P227701.23,o i 5',[[geškadₓ(KAD₅)> ]],* geš-ka-ad,KAD₅,,4,o i 5'5' | [[geškadₓ(KAD₅)> ]] | * geš-ka-ad | KAD₅,False,False,False,False,False
+P227701,CBS 12709 (+) CBS 12709a,CBS 12709 (+) CBS 12709a,P227701.24,o i 6',[[zur> ]],* zu-ur,AMAR,,4,o i 6'6' | [[zur> ]] | * zu-ur | AMAR,False,False,False,False,False
+P227701,CBS 12709 (+) CBS 12709a,CBS 12709 (+) CBS 12709a,P227701.25,o i 7',,* [...],⸢AMAR⸣,,4,o i 7'7' |  | * [...] | ⸢AMAR⸣,False,False,True,False,False
+P227701,CBS 12709 (+) CBS 12709a,CBS 12709 (+) CBS 12709a,P227701.32,r i 1',,* (blank),[KU?],,4,r i 1'r 1' |  | * (blank) | [KU?],False,False,False,False,False
+P227701,CBS 12709 (+) CBS 12709a,CBS 12709 (+) CBS 12709a,P227701.33,r i 2',,* (blank),KU,,4,r i 2'2' |  | * (blank) | KU,False,False,False,False,False
+P227701,CBS 12709 (+) CBS 12709a,CBS 12709 (+) CBS 12709a,P227701.34,r i 3',,* (blank),KU,,4,r i 3'3' |  | * (blank) | KU,False,False,False,False,False
+P227701,CBS 12709 (+) CBS 12709a,CBS 12709 (+) CBS 12709a,P227701.35,r i 4',,* (blank),KU,,4,r i 4'4' |  | * (blank) | KU,False,False,False,False,False
+P227701,CBS 12709 (+) CBS 12709a,CBS 12709 (+) CBS 12709a,P227701.36,r i 5',,* (blank),KU,,4,r i 5'5' |  | * (blank) | KU,False,False,False,False,False
+P227701,CBS 12709 (+) CBS 12709a,CBS 12709 (+) CBS 12709a,P227701.37,r i 6',,* (blank),KU,,4,r i 6'6' |  | * (blank) | KU,False,False,False,False,False
+P227701,CBS 12709 (+) CBS 12709a,CBS 12709 (+) CBS 12709a,P227701.38,r i 7',,* (blank),KU,,4,r i 7'7' |  | * (blank) | KU,False,False,False,False,False
+P227701,CBS 12709 (+) CBS 12709a,CBS 12709 (+) CBS 12709a,P227701.39,r i 8',,[*] (blank),KU,,4,r i 8'8' |  | [*] (blank) | KU,False,False,True,False,False
+P227701,CBS 12709 (+) CBS 12709a,CBS 12709 (+) CBS 12709a,P227701.40,r i 9',,[*] (blank),⸢KU⸣,,4,r i 9'9' |  | [*] (blank) | ⸢KU⸣,False,False,True,False,False
+P227701,CBS 12709 (+) CBS 12709a,CBS 12709 (+) CBS 12709a,P227701.42,r i 1'',,* (blank),KU.KU,,4,r i 1''1'' |  | * (blank) | KU.KU,False,False,False,False,False
+P227701,CBS 12709 (+) CBS 12709a,CBS 12709 (+) CBS 12709a,P227701.43,r i 2'',,* (blank),KU.AN,,4,r i 2''2'' |  | * (blank) | KU.AN,False,False,False,False,False
+P227701,CBS 12709 (+) CBS 12709a,CBS 12709 (+) CBS 12709a,P227701.44,r i 3'',,* (blank),LAGAB,,4,r i 3''3'' |  | * (blank) | LAGAB,False,False,False,False,False
+P227701,CBS 12709 (+) CBS 12709a,CBS 12709 (+) CBS 12709a,P227701.45,r i 4'',,* (blank),LAGAB,,4,r i 4''4'' |  | * (blank) | LAGAB,False,False,False,False,False
+P227701,CBS 12709 (+) CBS 12709a,CBS 12709 (+) CBS 12709a,P227701.46,r i 5'',,* (blank),LAGAB,,4,r i 5''5'' |  | * (blank) | LAGAB,False,False,False,False,False
+P227701,CBS 12709 (+) CBS 12709a,CBS 12709 (+) CBS 12709a,P227701.47,r i 6'',,* (blank),LAGAB,,4,r i 6''6'' |  | * (blank) | LAGAB,False,False,False,False,False
+P227701,CBS 12709 (+) CBS 12709a,CBS 12709 (+) CBS 12709a,P227701.48,r i 7'',,* (blank),LAGAB,,4,r i 7''7'' |  | * (blank) | LAGAB,False,False,False,False,False
+P227701,CBS 12709 (+) CBS 12709a,CBS 12709 (+) CBS 12709a,P227701.49,r i 8'',,* (blank),LAGAB,,4,r i 8''8'' |  | * (blank) | LAGAB,False,False,False,False,False
+P227701,CBS 12709 (+) CBS 12709a,CBS 12709 (+) CBS 12709a,P227701.50,r i 9'',,* (blank),LAGAB,,4,r i 9''9'' |  | * (blank) | LAGAB,False,False,False,False,False
+P227701,CBS 12709 (+) CBS 12709a,CBS 12709 (+) CBS 12709a,P227701.53,r ii 1',,* (blank),⸢LAGAB×ḪAL⸣,,4,r ii 1'r 1' |  | * (blank) | ⸢LAGAB×ḪAL⸣,False,False,False,False,False
+P227701,CBS 12709 (+) CBS 12709a,CBS 12709 (+) CBS 12709a,P227701.54,r ii 2',,* (blank),⸢LAGAB×ḪAL⸣,,4,r ii 2'2' |  | * (blank) | ⸢LAGAB×ḪAL⸣,False,False,False,False,False
+P227701,CBS 12709 (+) CBS 12709a,CBS 12709 (+) CBS 12709a,P227701.55,r ii 3',,* (blank),LAGAB×(U.U.U),,4,r ii 3'3' |  | * (blank) | LAGAB×(U.U.U),False,False,False,False,False
+P227701,CBS 12709 (+) CBS 12709a,CBS 12709 (+) CBS 12709a,P227701.56,r ii 4',,* (blank),LAGAB×(U.U.U),,4,r ii 4'4' |  | * (blank) | LAGAB×(U.U.U),False,False,False,False,False
+P227701,CBS 12709 (+) CBS 12709a,CBS 12709 (+) CBS 12709a,P227701.57,r ii 5',,* (blank),LAGAB×KUL,,4,r ii 5'5' |  | * (blank) | LAGAB×KUL,False,False,False,False,False
+P227701,CBS 12709 (+) CBS 12709a,CBS 12709 (+) CBS 12709a,P227701.58,r ii 6',,* (blank),LAGAB×X,,4,r ii 6'6' |  | * (blank) | LAGAB×X,False,False,False,False,False
+P227701,CBS 12709 (+) CBS 12709a,CBS 12709 (+) CBS 12709a,P227701.59,r ii 7',,* (blank),LAGAB×X,,4,r ii 7'7' |  | * (blank) | LAGAB×X,False,False,False,False,False
+P227701,CBS 12709 (+) CBS 12709a,CBS 12709 (+) CBS 12709a,P227701.61,r ii 1'',,* (blank),[...],,4,r ii 1''1'' |  | * (blank) | [...],False,False,False,False,False
+P227701,CBS 12709 (+) CBS 12709a,CBS 12709 (+) CBS 12709a,P227701.62,r ii 2'',,* (blank),⸢EŠ₂?⸣,,4,r ii 2''2'' |  | * (blank) | ⸢EŠ₂?⸣,False,False,False,False,False
+P227701,CBS 12709 (+) CBS 12709a,CBS 12709 (+) CBS 12709a,P227701.63,r ii 3'',,* (blank),⸢EŠ₂?⸣,,4,r ii 3''3'' |  | * (blank) | ⸢EŠ₂?⸣,False,False,False,False,False
+P227701,CBS 12709 (+) CBS 12709a,CBS 12709 (+) CBS 12709a,P227701.64,r ii 4'',,* (blank),[...],,4,r ii 4''4'' |  | * (blank) | [...],False,False,False,False,False
+P227701,CBS 12709 (+) CBS 12709a,CBS 12709 (+) CBS 12709a,P227701.65,r ii 5'',,* (blank),⸢LU₃⸣,,4,r ii 5''5'' |  | * (blank) | ⸢LU₃⸣,False,False,False,False,False
+P227701,CBS 12709 (+) CBS 12709a,CBS 12709 (+) CBS 12709a,P227701.66,r ii 6'',,* (blank),⸢LU₃⸣,,4,r ii 6''6'' |  | * (blank) | ⸢LU₃⸣,False,False,False,False,False
+P227701,CBS 12709 (+) CBS 12709a,CBS 12709 (+) CBS 12709a,P227701.67,r ii 7'',,* (blank),⸢LU₃⸣,,4,r ii 7''7'' |  | * (blank) | ⸢LU₃⸣,False,False,False,False,False
+P227701,CBS 12709 (+) CBS 12709a,CBS 12709 (+) CBS 12709a,P227701.68,r ii 8'',,* (blank),[...],,4,r ii 8''8'' |  | * (blank) | [...],False,False,False,False,False
+P227708,CBS 12719,"PBS 05, 116",P227708.9,r i' 1',,* [...],[...],,4,r i' 1'r 1' |  | * [...] | [...],False,False,True,False,False
+P227708,CBS 12719,"PBS 05, 116",P227708.10,r i' 2',[[li> ]],* ⸢li⸣-[i?],[LI?],,4,r i' 2'2' | [[li> ]] | * ⸢li⸣-[i?] | [LI?],False,True,True,False,False
+P227708,CBS 12719,"PBS 05, 116",P227708.11,r i' 3',[[en₃> ]],* ⸢en?⸣,[LI?],,4,r i' 3'3' | [[en₃> ]] | * ⸢en?⸣ | [LI?],False,True,True,False,False
+P227708,CBS 12719,"PBS 05, 116",P227708.12,r i' 4',,* ⸢gu?⸣-[x?],[...],,4,r i' 4'4' |  | * ⸢gu?⸣-[x?] | [...],False,True,True,False,False
+P227708,CBS 12719,"PBS 05, 116",P227708.13,r i' 5',[[tu> ]],* ⸢tu⸣-[u₂?],[TU?],,4,r i' 5'5' | [[tu> ]] | * ⸢tu⸣-[u₂?] | [TU?],False,True,True,False,False
+P227708,CBS 12719,"PBS 05, 116",P227708.14,r i' 6',[[du₂> ]],* ⸢du⸣-[u₂?],[TU?],,4,r i' 6'6' | [[du₂> ]] | * ⸢du⸣-[u₂?] | [TU?],False,True,True,False,False
+P227708,CBS 12719,"PBS 05, 116",P227708.15,r i' 7',[[ḫuduš> ]],* ⸢ḫu⸣-[du?-uš?],[TU?],,4,r i' 7'7' | [[ḫuduš> ]] | * ⸢ḫu⸣-[du?-uš?] | [TU?],False,True,True,False,False
+P227708,CBS 12719,"PBS 05, 116",P227708.16,r i' 8',[[ter> ]],* ⸢te⸣-[er?],[ŠE.NUN&NUN?],,4,r i' 8'8' | [[ter> ]] | * ⸢te⸣-[er?] | [ŠE.NUN&NUN?],False,True,True,False,False
+P227708,CBS 12719,"PBS 05, 116",P227708.17,r i' 9',,* ⸢x⸣-[...],[...],,4,r i' 9'9' |  | * ⸢x⸣-[...] | [...],False,False,True,False,False
+P227708,CBS 12719,"PBS 05, 116",P227708.18,r i' 10',,* [...],[...],,4,r i' 10'10' |  | * [...] | [...],False,False,True,False,False
+P227708,CBS 12719,"PBS 05, 116",P227708.22,r ii' 1',[[giŋ₄> ]],* gi-iŋ₃,⸢DUN₃g⸣,,4,r ii' 1'r 1' | [[giŋ₄> ]] | * gi-iŋ₃ | ⸢DUN₃g⸣,False,False,False,False,False
+P227708,CBS 12719,"PBS 05, 116",P227708.23,r ii' 2',[[aga₃> ]],* a-ga,DUN₃gg,,4,r ii' 2'2' | [[aga₃> ]] | * a-ga | DUN₃gg,False,False,False,False,False
+P227708,CBS 12719,"PBS 05, 116",P227708.24,r ii' 3',[[du₈> ]],* du-u₂,GABA,,4,r ii' 3'3' | [[du₈> ]] | * du-u₂ | GABA,False,False,False,True,False
+P227708,CBS 12719,"PBS 05, 116",P227708.25,r ii' 4',[[tuḫ> ]],* tu-uḫ₂,GABA,,4,r ii' 4'4' | [[tuḫ> ]] | * tu-uḫ₂ | GABA,False,False,False,True,False
+P227708,CBS 12719,"PBS 05, 116",P227708.26,r ii' 5',[[gaba> ]],* ga-ba!,GABA,,4,r ii' 5'5' | [[gaba> ]] | * ga-ba! | GABA,True,False,False,True,True
+P227708,CBS 12719,"PBS 05, 116",P227708.27,r ii' 6',[[sig> ]],* si-ig,SIG,,4,r ii' 6'6' | [[sig> ]] | * si-ig | SIG,False,False,False,False,False
+P227708,CBS 12719,"PBS 05, 116",P227708.28,r ii' 7',[[se₁₁> ]],* se-e,SIG,,4,r ii' 7'7' | [[se₁₁> ]] | * se-e | SIG,False,False,False,False,False
+P227708,CBS 12719,"PBS 05, 116",P227708.29,r ii' 8',[[epig> ]],* e-pi-ig,SIG,,4,r ii' 8'8' | [[epig> ]] | * e-pi-ig | SIG,False,False,False,False,False
+P227708,CBS 12719,"PBS 05, 116",P227708.30,r ii' 9',[[dilim₂> ]],* di-li-im,LIŠ,,4,r ii' 9'9' | [[dilim₂> ]] | * di-li-im | LIŠ,False,False,False,False,False
+P227708,CBS 12719,"PBS 05, 116",P227708.31,r ii' 10',,[*] ⸢x-x⸣,[...],,4,r ii' 10'10' |  | [*] ⸢x-x⸣ | [...],False,False,True,False,False
+P227708,CBS 12719,"PBS 05, 116",P227708.35,r iii' 1',,[*] [...],⸢EZEN?⸣,,4,r iii' 1'r 1' |  | [*] [...] | ⸢EZEN?⸣,False,False,True,False,False
+P227708,CBS 12719,"PBS 05, 116",P227708.36,r iii' 2',,[*] [...],⸢EZEN⸣,,4,r iii' 2'2' |  | [*] [...] | ⸢EZEN⸣,False,False,True,False,False
+P227708,CBS 12719,"PBS 05, 116",P227708.37,r iii' 3',,[*] [...],⸢EZEN⸣,,4,r iii' 3'3' |  | [*] [...] | ⸢EZEN⸣,False,False,True,False,False
+P227708,CBS 12719,"PBS 05, 116",P227708.38,r iii' 4',,[*] [...],EZEN,,4,r iii' 4'4' |  | [*] [...] | EZEN,False,False,True,False,False
+P227708,CBS 12719,"PBS 05, 116",P227708.39,r iii' 5',,[*] [...],EZEN×BAD,,4,r iii' 5'5' |  | [*] [...] | EZEN×BAD,False,False,True,False,False
+P227708,CBS 12719,"PBS 05, 116",P227708.40,r iii' 6',[[ug₅> ]],[*] [u₂?]-⸢ug⸣,EZEN×BAD,,4,r iii' 6'6' | [[ug₅> ]] | [*] [u₂?]-⸢ug⸣ | EZEN×BAD,False,True,True,False,False
+P227708,CBS 12719,"PBS 05, 116",P227708.41,r iii' 7',[[un₃> ]],[*] [u₂?]-⸢un⸣,EZEN×BAD,,4,r iii' 7'7' | [[un₃> ]] | [*] [u₂?]-⸢un⸣ | EZEN×BAD,False,True,True,False,False
+P227708,CBS 12719,"PBS 05, 116",P227708.42,r iii' 8',,[*] [x]-⸢x⸣,EZEN×BAD,,4,r iii' 8'8' |  | [*] [x]-⸢x⸣ | EZEN×BAD,False,False,True,False,False
+P227708,CBS 12719,"PBS 05, 116",P227708.43,r iii' 9',,[*] [x]-⸢x⸣,EZEN×A,,4,r iii' 9'9' |  | [*] [x]-⸢x⸣ | EZEN×A,False,False,True,False,False
+P227708,CBS 12719,"PBS 05, 116",P227708.44,r iii' 10',,[*] [...]-⸢x?⸣,EZEN×A,,4,r iii' 10'10' |  | [*] [...]-⸢x?⸣ | EZEN×A,False,True,True,False,False
+P227708,CBS 12719,"PBS 05, 116",P227708.45,r iii' 11',,[*] [...],EZEN×X,,4,r iii' 11'11' |  | [*] [...] | EZEN×X,False,False,True,False,False
+P227810,CBS 15226,CBS 15226,P227810.5,o 1,[[ib₂> ]],[*] ⸢ib₂⸣,[TUM],,4,o 1o 1 | [[ib₂> ]] | [*] ⸢ib₂⸣ | [TUM],False,False,True,False,False
+P227810,CBS 15226,CBS 15226,P227810.6,o 2,[[tum> ]],[*] tu-um,[TUM],,4,o 22 | [[tum> ]] | [*] tu-um | [TUM],False,False,True,False,False
+P227810,CBS 15226,CBS 15226,P227810.7,o 3,[[il> ]],* il,[IL],,4,o 33 | [[il> ]] | * il | [IL],False,False,False,False,False
+P227810,CBS 15226,CBS 15226,P227810.8,o 4,[[egir> ]],* e-gi-ir,[EGIR],,4,o 44 | [[egir> ]] | * e-gi-ir | [EGIR],False,False,False,False,False
+P227810,CBS 15226,CBS 15226,P227810.9,o 5,[[ḫaš₂> ]],* ḫa-aš,⸢ZIG⸣,,4,o 55 | [[ḫaš₂> ]] | * ḫa-aš | ⸢ZIG⸣,False,False,False,False,False
+P227810,CBS 15226,CBS 15226,P227810.10,o 6,[[zib₂> ]],* zi-⸢ib⸣,⸢ZIG⸣,,4,o 66 | [[zib₂> ]] | * zi-⸢ib⸣ | ⸢ZIG⸣,False,False,True,False,False
+P227810,CBS 15226,CBS 15226,P227810.11,o 7,[[iz> ]],* iz,⸢GIŠ⸣,,4,o 77 | [[iz> ]] | * iz | ⸢GIŠ⸣,False,False,False,False,False
+P227810,CBS 15226,CBS 15226,P227810.12,o 8,[[ŋeš> ]],* mi-eš,GIŠ,,4,o 88 | [[ŋeš> ]] | * mi-eš | GIŠ,False,False,False,False,False
+P227810,CBS 15226,CBS 15226,P227810.13,o 9,[[gana₂> ]],* ga-na,GAN₂,,4,o 99 | [[gana₂> ]] | * ga-na | GAN₂,False,False,False,False,False
+P227810,CBS 15226,CBS 15226,P227810.14,o 10,[[guru₆> ]],* gu-ru,⸢GAN₂t⸣,,4,o 1010 | [[guru₆> ]] | * gu-ru | ⸢GAN₂t⸣,False,False,False,False,False
+P227810,CBS 15226,CBS 15226,P227810.15,o 11,,* ⸢ka⸣-na,[...],,4,o 1111 |  | * ⸢ka⸣-na | [...],False,False,True,False,False
+P227810,CBS 15226,CBS 15226,P227810.16,o 12,[[ḫul₃> ]],* ḫu-ul,[GIŠ%GIŠ],,4,o 1212 | [[ḫul₃> ]] | * ḫu-ul | [GIŠ%GIŠ],False,False,False,False,False
+P227810,CBS 15226,CBS 15226,P227810.17,o 13,[[šennur> ]],* še-nu-ur,[GIŠ%GIŠ],,4,o 1313 | [[šennur> ]] | * še-nu-ur | [GIŠ%GIŠ],False,False,False,False,False
+P227810,CBS 15226,CBS 15226,P227810.18,o 14,,* ⸢ur⸣,[UR],,4,o 1414 |  | * ⸢ur⸣ | [UR],False,False,True,False,False
+P227810,CBS 15226,CBS 15226,P227810.20,r 1,[[teš₂> ]],[*] ⸢te⸣-eš,[UR],,4,r 1r 1 | [[teš₂> ]] | [*] ⸢te⸣-eš | [UR],False,False,True,False,False
+P227810,CBS 15226,CBS 15226,P227810.21,r 2,[[lik> ]],[*] ⸢li⸣-ik,[UR],,4,r 22 | [[lik> ]] | [*] ⸢li⸣-ik | [UR],False,False,True,False,False
+P227810,CBS 15226,CBS 15226,P227810.22,r 3,[[kalabₓ(UR)> ]],* ka-la-ab,[UR],,4,r 33 | [[kalabₓ(UR)> ]] | * ka-la-ab | [UR],False,False,False,False,False
+P227810,CBS 15226,CBS 15226,P227810.23,r 4,,* šu-zi,[...],,4,r 44 |  | * šu-zi | [...],False,False,False,False,False
+P227810,CBS 15226,CBS 15226,P227810.24,r 5,[[šutul₅> ]],* šu-tu-ul,[URs],,4,r 55 | [[šutul₅> ]] | * šu-tu-ul | [URs],False,False,False,False,False
+P227810,CBS 15226,CBS 15226,P227810.25,r 6,[[dul₉> ]],* du-ul,[URs],,4,r 66 | [[dul₉> ]] | * du-ul | [URs],False,False,False,False,False
+P227810,CBS 15226,CBS 15226,P227810.26,r 7,[[ša₃> ]],* ša₃-a,[ŠA₃],,4,r 77 | [[ša₃> ]] | * ša₃-a | [ŠA₃],False,False,False,False,False
+P227832,CBS 15376,CBS 15376,P227832.6,o 1',[[ia> ]],* ia,[I.A],,4,o 1'o 1' | [[ia> ]] | * ia | [I.A],False,False,False,False,False
+P227832,CBS 15376,CBS 15376,P227832.7,o 2',[[tur> ]],* tu-ur,[TUR],,4,o 2'2' | [[tur> ]] | * tu-ur | [TUR],False,False,False,False,False
+P227832,CBS 15376,CBS 15376,P227832.8,o 3',[[peš₇> ]],* ⸢pe⸣-eš,[TUR],,4,o 3'3' | [[peš₇> ]] | * ⸢pe⸣-eš | [TUR],False,False,True,False,False
+P227832,CBS 15376,CBS 15376,P227832.12,r 1',,* (blank),⸢KU!⸣1,,4,r 1'r 1' |  | * (blank) | ⸢KU!⸣1,False,False,False,False,False
+P227832,CBS 15376,CBS 15376,P227832.13,r 2',,* (blank),⸢KU⸣,,4,r 2'2' |  | * (blank) | ⸢KU⸣,False,False,False,False,False
+P227832,CBS 15376,CBS 15376,P227832.14,r 3',,* (blank),⸢KU!⸣,,4,r 3'3' |  | * (blank) | ⸢KU!⸣,False,False,False,False,False
+P227832,CBS 15376,CBS 15376,P227832.15,r 4',,* (blank),KU.KU,,4,r 4'4' |  | * (blank) | KU.KU,False,False,False,False,False
+P227832,CBS 15376,CBS 15376,P227832.16,r 5',,* (blank),KU.AN,,4,r 5'5' |  | * (blank) | KU.AN,False,False,False,False,False
+P227832,CBS 15376,CBS 15376,P227832.17,r 6',,* (blank),LAGAB,,4,r 6'6' |  | * (blank) | LAGAB,False,False,False,False,False
+P227832,CBS 15376,CBS 15376,P227832.18,r 7',,* (blank),⸢LAGAB⸣,,4,r 7'7' |  | * (blank) | ⸢LAGAB⸣,False,False,False,False,False
+P228206,N 4004,N 4004,P228206.6,o? 1',,[*] [...]-⸢x?⸣,⸢SAL?⸣-[...],,4,o? 1'o? 1' |  | [*] [...]-⸢x?⸣ | ⸢SAL?⸣-[...],False,True,True,False,False
+P228206,N 4004,N 4004,P228206.7,o? 2',,[*] ⸢sa₆?-aḫ⸣,⸢SAL?⸣-[...],,4,o? 2'2' |  | [*] ⸢sa₆?-aḫ⸣ | ⸢SAL?⸣-[...],False,True,True,False,False
+P228206,N 4004,N 4004,P228206.8,o? 3',,[*] ⸢gu⸣-[u₂?],⸢SAL?⸣-[...],,4,o? 3'3' |  | [*] ⸢gu⸣-[u₂?] | ⸢SAL?⸣-[...],False,True,True,False,False
+P228206,N 4004,N 4004,P228206.9,o? 4',[[dilmun> ]],[*] di-el-mu-un,SAL.TUK,,4,o? 4'4' | [[dilmun> ]] | [*] di-el-mu-un | SAL.TUK,False,False,True,False,False
+P228206,N 4004,N 4004,P228206.10,o? 5',[[lagar₃> ]],[*] la-ga-ar,SAL.ḪUB₂,,4,o? 5'5' | [[lagar₃> ]] | [*] la-ga-ar | SAL.ḪUB₂,False,False,True,False,False
+P228206,N 4004,N 4004,P228206.11,o? 6',[[eme₅> ]],[*] e-me,SAL.ḪUB₂,,4,o? 6'6' | [[eme₅> ]] | [*] e-me | SAL.ḪUB₂,False,False,True,False,False
+P228206,N 4004,N 4004,P228206.12,o? 7',[[eme₅> ]],[*] e-me,SAL.ḪUB₂,,4,o? 7'7' | [[eme₅> ]] | [*] e-me | SAL.ḪUB₂,False,False,True,False,False
+P228206,N 4004,N 4004,P228206.13,o? 8',[[el> ]],[*] el,⸢EL⸣,,4,o? 8'8' | [[el> ]] | [*] el | ⸢EL⸣,False,False,True,False,False
+P228206,N 4004,N 4004,P228206.14,o? 9',[[sikil> ]],[*] si-ki-el,⸢EL⸣,,4,o? 9'9' | [[sikil> ]] | [*] si-ki-el | ⸢EL⸣,False,False,True,False,False
+P228206,N 4004,N 4004,P228206.15,o? 10',[[nig> ]],[*] [ni]-ig,[SAL.UR],,4,o? 10'10' | [[nig> ]] | [*] [ni]-ig | [SAL.UR],False,False,True,False,False
+P228206,N 4004,N 4004,P228206.20,r? 9',,[*] [...]-⸢x-al?⸣,[...],,4,r? 9'9' |  | [*] [...]-⸢x-al?⸣ | [...],False,True,True,False,False
+P228221,N 4031,N 4031,P228221.6,o 1',[[eme₅> ]],* e-me,[SAL.ḪUB₂],,4,o 1'o 1' | [[eme₅> ]] | * e-me | [SAL.ḪUB₂],False,False,False,False,False
+P228221,N 4031,N 4031,P228221.7,o 2',[[lagar₃> ]],* la-ga-ar,[SAL.ḪUB₂]1,,4,o 2'2' | [[lagar₃> ]] | * la-ga-ar | [SAL.ḪUB₂]1,False,False,False,False,False
+P228221,N 4031,N 4031,P228221.9,o 3',[[eme₅> ]],* e-me,[SAL.X],,4,o 3'3' | [[eme₅> ]] | * e-me | [SAL.X],False,False,False,False,False
+P228221,N 4031,N 4031,P228221.10,o 4',[[il₅> ]],* il,[EL],,4,o 4'4' | [[il₅> ]] | * il | [EL],False,False,False,False,False
+P228221,N 4031,N 4031,P228221.11,o 5',[[sikil> ]],* si-ki-⸢il⸣,[EL],,4,o 5'5' | [[sikil> ]] | * si-ki-⸢il⸣ | [EL],False,False,True,False,False
+P228221,N 4031,N 4031,P228221.12,o 6',[[nig> ]],* ni-ig,[SAL.UR],,4,o 6'6' | [[nig> ]] | * ni-ig | [SAL.UR],False,False,False,False,False
+P228221,N 4031,N 4031,P228221.13,o 7',[[dam> ]],* da-am,[DAM],,4,o 7'7' | [[dam> ]] | * da-am | [DAM],False,False,False,False,False
+P228221,N 4031,N 4031,P228221.14,o 8',[[rig₂> ]],* ⸢ri⸣-[ig],[ZUM],,4,o 8'8' | [[rig₂> ]] | * ⸢ri⸣-[ig] | [ZUM],False,False,True,False,False
+P228221,N 4031,N 4031,P228221.15,o 9',,* [...],[...],,4,o 9'9' |  | * [...] | [...],False,False,True,False,False
+P228221,N 4031,N 4031,P228221.20,r 1',,,i₃-⸢du₈⸣ [...],,2,r 1'r 1' | i₃-⸢du₈⸣ [...],False,False,False,False,False
+P228221,N 4031,N 4031,P228221.21,r 2',,,i₃-du₈ KA₂.GAL [(...)],,2,r 2'2' | i₃-du₈ KA₂.GAL [(...)],False,False,False,False,False
+P228221,N 4031,N 4031,P228221.22,r 3',,,i₃-du₈ ⸢na?⸣-[...],,2,r 3'3' | i₃-du₈ ⸢na?⸣-[...],False,False,False,False,False
+P228221,N 4031,N 4031,P228221.23,r 4',,,(blank) [mu₆?],,2,r 4'4' | (blank) [mu₆?],False,False,False,False,False
+P228377,N 5133,N 5133,P228377.6,o 1',[[zur> ]],[*] ⸢x?⸣-ur₂,[AMAR],,4,o 1'o 1' | [[zur> ]] | [*] ⸢x?⸣-ur₂ | [AMAR],False,True,True,False,False
+P228377,N 5133,N 5133,P228377.7,o 2',[[amar> ]],[*] ⸢a⸣-ma-⸢ar⸣,⸢AMAR⸣,,4,o 2'2' | [[amar> ]] | [*] ⸢a⸣-ma-⸢ar⸣ | ⸢AMAR⸣,False,False,True,False,False
+P228377,N 5133,N 5133,P228377.8,o 3',[[zur-zur> ]],[*] ⸢zu?-ur⸣-zu-ur,AMAR-AMAR,,4,o 3'3' | [[zur-zur> ]] | [*] ⸢zu?-ur⸣-zu-ur | AMAR-AMAR,False,True,True,False,False
+P228377,N 5133,N 5133,P228377.9,o 4',[[siškur₂> ]],[*] ⸢si₂⸣-iš-ku-ur,AMAR×ŠE.AMAR×ŠE,,4,o 4'4' | [[siškur₂> ]] | [*] ⸢si₂⸣-iš-ku-ur | AMAR×ŠE.AMAR×ŠE,False,False,True,False,False
+P228377,N 5133,N 5133,P228377.10,o 5',[[nim> ]],[*] ⸢ni-im⸣,⸢NIM⸣,,4,o 5'5' | [[nim> ]] | [*] ⸢ni-im⸣ | ⸢NIM⸣,False,False,True,False,False
+P228377,N 5133,N 5133,P228377.14,r i 2',,,⸢ŋeš⸣ ki-ta-[...],,2,r i 2'2' | ⸢ŋeš⸣ ki-ta-[...],False,False,False,False,False
+P228377,N 5133,N 5133,P228377.15,r i 3',,,ŋeš niŋ₂-ki-luḫ-[...],,2,r i 3'3' | ŋeš niŋ₂-ki-luḫ-[...],False,False,False,False,False
+P228377,N 5133,N 5133,P228377.16,r i 4',,,ŋeš niŋ₂-ŋa₂-nimbar,,2,r i 4'4' | ŋeš niŋ₂-ŋa₂-nimbar,False,False,False,False,False
+P228377,N 5133,N 5133,P228377.17,r i 5',,,ŋeš peš-[...],,2,r i 5'5' | ŋeš peš-[...],False,False,False,False,False
+P228377,N 5133,N 5133,P228377.18,r i 6',,,ŋeš peš-murgu-[...],,2,r i 6'6' | ŋeš peš-murgu-[...],False,False,False,False,False
+P228377,N 5133,N 5133,P228377.19,r i 7',,,ŋeš peš-banda₃-[...],,2,r i 7'7' | ŋeš peš-banda₃-[...],False,False,False,False,False
+P228377,N 5133,N 5133,P228377.21,r ii 1',,,[...]-kud,,2,r ii 1'r ii 1' | [...]-kud,False,False,False,False,False
+P228377,N 5133,N 5133,P228377.22,r ii 2',,,[...]-lum,,2,r ii 2'2' | [...]-lum,False,False,False,False,False
+P228377,N 5133,N 5133,P228377.23,r ii 3',,,[...] LAGAB×A-da,,2,r ii 3'3' | [...] LAGAB×A-da,False,False,False,False,False
+P228377,N 5133,N 5133,P228377.24,r ii 4',,,[...] dib-dib,,2,r ii 4'4' | [...] dib-dib,False,False,False,False,False
+P228377,N 5133,N 5133,P228377.25,r ii 5',,,[...] u₅,,2,r ii 5'5' | [...] u₅,False,False,False,False,False
+P228377,N 5133,N 5133,P228377.26,r ii 6',,,[...] dḫa-ia₃,,2,r ii 6'6' | [...] dḫa-ia₃,False,False,False,False,False
+P228430,N 5276,N 5276,P228430.6,o 1',,* ⸢x⸣-[x?],[...],,4,o 1'o 1' |  | * ⸢x⸣-[x?] | [...],False,True,True,False,False
+P228430,N 5276,N 5276,P228430.7,o 2',[[lag> ]],* la-[ag?],[ŠID?],,4,o 2'2' | [[lag> ]] | * la-[ag?] | [ŠID?],False,True,True,False,False
+P228430,N 5276,N 5276,P228430.8,o 3',[[tuba₃> ]],* tu-[ba?],[ŠID?],,4,o 3'3' | [[tuba₃> ]] | * tu-[ba?] | [ŠID?],False,True,True,False,False
+P228430,N 5276,N 5276,P228430.12,r i 1',,,ŋeš [...],,2,r i 1'r i 1' | ŋeš [...],False,False,False,False,False
+P228430,N 5276,N 5276,P228430.14,r ii 1',,,ŋeš ti-bal,,2,r ii 1'r ii 1' | ŋeš ti-bal,False,False,False,False,False
+P228430,N 5276,N 5276,P228430.15,r ii 2',,,ŋeš ŠID-um,,2,r ii 2'2' | ŋeš ŠID-um,False,False,False,False,False
+P228430,N 5276,N 5276,P228430.16,r ii 3',,,ŋeš UR,,2,r ii 3'3' | ŋeš UR,False,False,False,False,False
+P228430,N 5276,N 5276,P228430.17,r ii 4',,,ŋeš ba,,2,r ii 4'4' | ŋeš ba,False,False,False,False,False
+P228430,N 5276,N 5276,P228430.18,r ii 5',,,ŋeš ba-amar,,2,r ii 5'5' | ŋeš ba-amar,False,False,False,False,False
+P228430,N 5276,N 5276,P228430.19,r ii 6',,,ŋeš ba-amar,,2,r ii 6'6' | ŋeš ba-amar,False,False,False,False,False
+P228430,N 5276,N 5276,P228430.20,r ii 7',,,ŋeš ba-ša₆,,2,r ii 7'7' | ŋeš ba-ša₆,False,False,False,False,False
+P228430,N 5276,N 5276,P228430.21,r ii 8',,,⸢ŋeš ḫub₂⸣,,2,r ii 8'8' | ⸢ŋeš ḫub₂⸣,False,False,False,False,False
+P228855,UM 55-21-412,UM 55-21-412,P228855.3,o 1',* (DIŠ),[...],[...],,4,o 1'o 1' | * (DIŠ) | [...] | [...],False,False,True,False,False
+P228855,UM 55-21-412,UM 55-21-412,P228855.4,o 2',* (DIŠ),[...],[...],,4,o 2'2' | * (DIŠ) | [...] | [...],False,False,True,False,False
+P228855,UM 55-21-412,UM 55-21-412,P228855.5,o 3',[[dar > (DIŠ)> ]] *,[...],⸢DAR⸣,,4,o 3'3' | [[dar > (DIŠ)> ]] * | [...] | ⸢DAR⸣,False,False,True,False,False
+P228855,UM 55-21-412,UM 55-21-412,P228855.6,o 4',[[gun₃ > (DIŠ)> ]] *,gu-nu,DAR,,4,o 4'4' | [[gun₃ > (DIŠ)> ]] * | gu-nu | DAR,False,False,False,False,False
+P228855,UM 55-21-412,UM 55-21-412,P228855.7,o 5',[[muš₃ > (DIŠ)> ]] *,mu-uš,MUŠ₃,,4,o 5'5' | [[muš₃ > (DIŠ)> ]] * | mu-uš | MUŠ₃,False,False,False,False,False
+P228855,UM 55-21-412,UM 55-21-412,P228855.8,o 6',[[mušku(MUŠ₃) > (DIŠ)> ]] *,mu-uš-ku,MUŠ₃,,4,o 6'6' | [[mušku(MUŠ₃) > (DIŠ)> ]] * | mu-uš-ku | MUŠ₃,False,False,False,False,False
+P228855,UM 55-21-412,UM 55-21-412,P228855.9,o 7',[[suku₅ > (DIŠ)> ]] *,su-ku,MUŠ₃g,,4,o 7'7' | [[suku₅ > (DIŠ)> ]] * | su-ku | MUŠ₃g,False,False,False,False,False
+P228855,UM 55-21-412,UM 55-21-412,P228855.11,r 1,,,⸢KA?⸣-lu,,2,r 1r 1 | ⸢KA?⸣-lu,False,False,False,False,False
+P228855,UM 55-21-412,UM 55-21-412,P228855.12,r 2,,,uš₂,,2,r 22 | uš₂,False,False,False,False,False
+P228855,UM 55-21-412,UM 55-21-412,P228855.13,r 3,,,uš₂,,2,r 33 | uš₂,False,False,False,False,False
+P228855,UM 55-21-412,UM 55-21-412,P228855.14,r 4,,,bad,,2,r 44 | bad,False,False,False,False,False
+P228855,UM 55-21-412,UM 55-21-412,P228855.15,r 5,,,bad,,2,r 55 | bad,False,False,False,False,False
+P228855,UM 55-21-412,UM 55-21-412,P228855.16,r 6,,,bad,,2,r 66 | bad,False,False,False,False,False
+P228855,UM 55-21-412,UM 55-21-412,P228855.17,r 7,,,⸢bad⸣,,2,r 77 | ⸢bad⸣,False,False,False,False,False
+P228855,UM 55-21-412,UM 55-21-412,P228855.18,r 8,,,⸢bad⸣,,2,r 88 | ⸢bad⸣,False,False,False,False,False
+P228855,UM 55-21-412,UM 55-21-412,P228855.19,r 9,,,[...],,2,r 99 | [...],False,False,False,False,False
+P228855,UM 55-21-412,UM 55-21-412,P228855.20,r 10,,,[...],,2,r 1010 | [...],False,False,False,False,False
+P228994,CBS 05985,"PBS 11/1, 043",P228994.6,o 1',[[šubur> ]],[*] ⸢šu⸣-bur,⸢ŠUBUR⸣,,4,o 1'o 1' | [[šubur> ]] | [*] ⸢šu⸣-bur | ⸢ŠUBUR⸣,False,False,True,False,False
+P228994,CBS 05985,"PBS 11/1, 043",P228994.7,o 2',[[kiŋ₂> ]],[*] ki-iŋ₃,KIN,,4,o 2'2' | [[kiŋ₂> ]] | [*] ki-iŋ₃ | KIN,False,False,True,False,False
+P228994,CBS 05985,"PBS 11/1, 043",P228994.8,o 3',[[ur₄> ]],* ur₂,UR₄,,4,o 3'3' | [[ur₄> ]] | * ur₂ | UR₄,False,False,False,False,False
+P228994,CBS 05985,"PBS 11/1, 043",P228994.9,o 4',[[gur₁₅> ]],* gur,UR₄,,4,o 4'4' | [[gur₁₅> ]] | * gur | UR₄,False,False,False,False,False
+P228994,CBS 05985,"PBS 11/1, 043",P228994.12,r i 1,,,ŋeš taskarin,,2,r i 1r i 1 | ŋeš taskarin,False,False,False,False,False
+P228994,CBS 05985,"PBS 11/1, 043",P228994.13,r i 2,,,ŋeš esi,,2,r i 22 | ŋeš esi,False,False,False,False,False
+P228994,CBS 05985,"PBS 11/1, 043",P228994.14,r i 3,,,[...] ⸢nu₁₁⸣,,2,r i 33 | [...] ⸢nu₁₁⸣,False,False,False,False,False
+P228994,CBS 05985,"PBS 11/1, 043",P228994.15,r i 4,,,[...]-⸢lu⸣-ub₂,,2,r i 44 | [...]-⸢lu⸣-ub₂,False,False,False,False,False
+P228994,CBS 05985,"PBS 11/1, 043",P228994.16,r i 5,,,[...]-kal,,2,r i 55 | [...]-kal,False,False,False,False,False
+P228994,CBS 05985,"PBS 11/1, 043",P228994.17,r i 6,,,[...] ⸢kin₂⸣,,2,r i 66 | [...] ⸢kin₂⸣,False,False,False,False,False
+P228994,CBS 05985,"PBS 11/1, 043",P228994.19,r ii 1,,,ŋeš šar₉-[...],,2,r ii 1r ii 1 | ŋeš šar₉-[...],False,False,False,False,False
+P228994,CBS 05985,"PBS 11/1, 043",P228994.20,r ii 2,,,ŋeš ⸢MES⸣-šar₉-⸢ša₄⸣-[...],,2,r ii 22 | ŋeš ⸢MES⸣-šar₉-⸢ša₄⸣-[...],False,False,False,False,False
+P228994,CBS 05985,"PBS 11/1, 043",P228994.21,r ii 3,,,ŋeš [...],,2,r ii 33 | ŋeš [...],False,False,False,False,False
+P228994,CBS 05985,"PBS 11/1, 043",P228994.22,r ii 4,,,ŋeš [...],,2,r ii 44 | ŋeš [...],False,False,False,False,False
+P229205,N 4953,N 4953,P229205.6,o i 1,[[dilmun> ]],[*] [di]-⸢el⸣-mu-un,SAL.TUK,,4,o i 1o i 1 | [[dilmun> ]] | [*] [di]-⸢el⸣-mu-un | SAL.TUK,False,False,True,False,False
+P229205,N 4953,N 4953,P229205.7,o i 2,[[lagar₃> ]],[*] la-ga-ar,SAL.ḪUB₂,,4,o i 22 | [[lagar₃> ]] | [*] la-ga-ar | SAL.ḪUB₂,False,False,True,False,False
+P229205,N 4953,N 4953,P229205.8,o i 3,[[eme₅> ]],[*] ⸢e⸣-me,SAL.ḪUB₂,,4,o i 33 | [[eme₅> ]] | [*] ⸢e⸣-me | SAL.ḪUB₂,False,False,True,False,False
+P229205,N 4953,N 4953,P229205.9,o i 4,[[eme₃> ]],* e-me,SAL.ANŠE,,4,o i 44 | [[eme₃> ]] | * e-me | SAL.ANŠE,False,False,False,False,False
+P229205,N 4953,N 4953,P229205.10,o i 5,[[il₅> ]],* il,⸢EL⸣,,4,o i 55 | [[il₅> ]] | * il | ⸢EL⸣,False,False,False,False,False
+P229205,N 4953,N 4953,P229205.11,o i 6,[[sikil> ]],* si-ki-il,⸢EL⸣,,4,o i 66 | [[sikil> ]] | * si-ki-il | ⸢EL⸣,False,False,False,False,False
+P229205,N 4953,N 4953,P229205.12,o i 7,[[nig> ]],* ni-ig,SAL.UR,,4,o i 77 | [[nig> ]] | * ni-ig | SAL.UR,False,False,False,False,False
+P229205,N 4953,N 4953,P229205.13,o i 8,[[dam> ]],* da-am,DAM,,4,o i 88 | [[dam> ]] | * da-am | DAM,False,False,False,False,False
+P229205,N 4953,N 4953,P229205.14,o i 9,[[rig₂> ]],* ri-ig,ZUM,,4,o i 99 | [[rig₂> ]] | * ri-ig | ZUM,False,False,False,False,False
+P229205,N 4953,N 4953,P229205.15,o i 10,[[ḫaš₄> ]],* ḫa-[aš?],⸢ZUM⸣,,4,o i 1010 | [[ḫaš₄> ]] | * ḫa-[aš?] | ⸢ZUM⸣,False,True,True,False,False
+P229205,N 4953,N 4953,P229205.25,r ii 3',,,ŋeš pi-[...],,2,r ii 3'3' | ŋeš pi-[...],False,False,False,False,False
+P229205,N 4953,N 4953,P229205.26,r ii 4',,,ŋeš u₃-⸢luḫ⸣-[...],,2,r ii 4'4' | ŋeš u₃-⸢luḫ⸣-[...],False,False,False,False,False
+P229205,N 4953,N 4953,P229205.27,r ii 5',,,ŋeš ŋa₂-⸢li⸣,,2,r ii 5'5' | ŋeš ŋa₂-⸢li⸣,False,False,False,False,False
+P229205,N 4953,N 4953,P229205.28,r ii 6',,,ŋeš an-na-[...],,2,r ii 6'6' | ŋeš an-na-[...],False,False,False,False,False
+P229205,N 4953,N 4953,P229205.29,r ii 7',,,ŋeš ki-ta-[...],,2,r ii 7'7' | ŋeš ki-ta-[...],False,False,False,False,False
+P229205,N 4953,N 4953,P229205.30,r ii 8',,,ŋeš ki!-ta zu₂-[...],,2,r ii 8'8' | ŋeš ki!-ta zu₂-[...],False,False,False,False,False
+P229205,N 4953,N 4953,P229205.31,r ii 9',,,ŋeš niŋ₂-ki-luḫ-⸢nimbar⸣,,2,r ii 9'9' | ŋeš niŋ₂-ki-luḫ-⸢nimbar⸣,False,False,False,False,False
+P229205,N 4953,N 4953,P229205.32,r ii 10',,,ŋeš niŋ₂-ŋa₂-[...],,2,r ii 10'10' | ŋeš niŋ₂-ŋa₂-[...],False,False,False,False,False
+P229205,N 4953,N 4953,P229205.33,r ii 11',,,ŋeš peš-⸢nimbar⸣,,2,r ii 11'11' | ŋeš peš-⸢nimbar⸣,False,False,False,False,False
+P229205,N 4953,N 4953,P229205.34,r ii 12',,,ŋeš peš-murgu-nimbar,,2,r ii 12'12' | ŋeš peš-murgu-nimbar,False,False,False,False,False
+P229205,N 4953,N 4953,P229205.35,r ii 13',,,ŋeš peš-banda₃-zi-nimbar,,2,r ii 13'13' | ŋeš peš-banda₃-zi-nimbar,False,False,False,False,False
+P229205,N 4953,N 4953,P229205.36,r ii 14',,,ŋeš ⸢asal₂⸣,,2,r ii 14'14' | ŋeš ⸢asal₂⸣,False,False,False,False,False
+P229205,N 4953,N 4953,P229205.37,r ii 15',,,ŋeš asal₂-kur,,2,r ii 15'15' | ŋeš asal₂-kur,False,False,False,False,False
+P229205,N 4953,N 4953,P229205.38,r ii 16',,,ŋeš asal₂-dug₃,,2,r ii 16'16' | ŋeš asal₂-dug₃,False,False,False,False,False
+P229205,N 4953,N 4953,P229205.39,r ii 17',,,ŋeš NE-asal₂,,2,r ii 17'17' | ŋeš NE-asal₂,False,False,False,False,False
+P229205,N 4953,N 4953,P229205.40,r ii 18',,,ŋeš numun-asal₂,,2,r ii 18'18' | ŋeš numun-asal₂,False,False,False,False,False
+P229205,N 4953,N 4953,P229205.42,r iii 1',,,[...]-⸢saŋ-EZEN⸣,,2,r iii 1'r iii 1' | [...]-⸢saŋ-EZEN⸣,False,False,False,False,False
+P229205,N 4953,N 4953,P229205.43,r iii 2',,,[...] i-ri₉-na,,2,r iii 2'2' | [...] i-ri₉-na,False,False,False,False,False
+P229205,N 4953,N 4953,P229205.44,r iii 3',,,[...] a-i-ri₉-na,,2,r iii 3'3' | [...] a-i-ri₉-na,False,False,False,False,False
+P229205,N 4953,N 4953,P229205.45,r iii 4',,,⸢ŋeš⸣ gilim-an-na,,2,r iii 4'4' | ⸢ŋeš⸣ gilim-an-na,False,False,False,False,False
+P229205,N 4953,N 4953,P229205.46,r iii 5',,,ŋeš gilim abzu?,,2,r iii 5'5' | ŋeš gilim abzu?,False,False,False,False,False
+P229205,N 4953,N 4953,P229205.47,r iii 6',,,ŋeš u₃-luḫ,,2,r iii 6'6' | ŋeš u₃-luḫ,False,False,False,False,False
+P229205,N 4953,N 4953,P229205.48,r iii 7',,,ŋeš pa-kud,,2,r iii 7'7' | ŋeš pa-kud,False,False,False,False,False
+P229205,N 4953,N 4953,P229205.49,r iii 8',,,ŋeš as₄-lum,,2,r iii 8'8' | ŋeš as₄-lum,False,False,False,False,False
+P229205,N 4953,N 4953,P229205.50,r iii 9',,,ŋeš LAGAB×A-da,,2,r iii 9'9' | ŋeš LAGAB×A-da,False,False,False,False,False
+P229205,N 4953,N 4953,P229205.51,r iii 10',,,[...] dib-LAGAB,,2,r iii 10'10' | [...] dib-LAGAB,False,False,False,False,False
+P229205,N 4953,N 4953,P229205.52,r iii 11',,,[...] x-u₅,,2,r iii 11'11' | [...] x-u₅,False,False,False,False,False
+P229205,N 4953,N 4953,P229205.53,r iii 12',,,[...]-ḫa-ia₃,,2,r iii 12'12' | [...]-ḫa-ia₃,False,False,False,False,False
+P229205,N 4953,N 4953,P229205.54,r iii 13',,,[...]-UR,,2,r iii 13'13' | [...]-UR,False,False,False,False,False
+P229205,N 4953,N 4953,P229205.55,r iii 14',,,[...]-gi,,2,r iii 14'14' | [...]-gi,False,False,False,False,False
+P229205,N 4953,N 4953,P229205.56,r iii 15',,,[...]-⸢bal⸣,,2,r iii 15'15' | [...]-⸢bal⸣,False,False,False,False,False
+P229224,N 4917,N 4917,P229224.3,r i 1',,,[...] ⸢nimbar-al⸣-[...],,2,r i 1'r i 1' | [...] ⸢nimbar-al⸣-[...],False,False,False,False,False
+P229224,N 4917,N 4917,P229224.4,r i 2',,,ŋeš nimbar-⸢al⸣-[...],,2,r i 2'2' | ŋeš nimbar-⸢al⸣-[...],False,False,False,False,False
+P229224,N 4917,N 4917,P229224.5,r i 3',,,ŋeš ⸢nimbar-al⸣-[...],,2,r i 3'3' | ŋeš ⸢nimbar-al⸣-[...],False,False,False,False,False
+P229224,N 4917,N 4917,P229224.6,r i 4',,,ŋeš nimbar-gu₂-na,,2,r i 4'4' | ŋeš nimbar-gu₂-na,False,False,False,False,False
+P229224,N 4917,N 4917,P229224.7,r i 5',,,ŋeš nimbar-LU₂-IM,,2,r i 5'5' | ŋeš nimbar-LU₂-IM,False,False,False,False,False
+P229473,Ist Ni 03863,Ist Ni 03863,P229473.6,o 1',[[zandara> ]],[*] [za-an]-⸢da⸣-ra,[ŠID],,4,o 1'o 1' | [[zandara> ]] | [*] [za-an]-⸢da⸣-ra | [ŠID],False,False,True,False,False
+P229473,Ist Ni 03863,Ist Ni 03863,P229473.7,o 2',[[aka₃> ]],* a-ka,⸢ŠID⸣,,4,o 2'2' | [[aka₃> ]] | * a-ka | ⸢ŠID⸣,False,False,False,False,False
+P229473,Ist Ni 03863,Ist Ni 03863,P229473.8,o 3',[[saŋ₅> ]],* saŋ,⸢ŠID⸣,,4,o 3'3' | [[saŋ₅> ]] | * saŋ | ⸢ŠID⸣,False,False,False,False,False
+P229473,Ist Ni 03863,Ist Ni 03863,P229473.9,o 4',[[gud₉> ]],* gu₄-⸢ud?⸣,ŠID,,4,o 4'4' | [[gud₉> ]] | * gu₄-⸢ud?⸣ | ŠID,False,True,True,False,False
+P229473,Ist Ni 03863,Ist Ni 03863,P229473.10,o 5',[[saŋŋa> ]],* ⸢saŋ?-ŋa₂?⸣,⸢ŠID⸣,,4,o 5'5' | [[saŋŋa> ]] | * ⸢saŋ?-ŋa₂?⸣ | ⸢ŠID⸣,False,True,True,False,False
+P229473,Ist Ni 03863,Ist Ni 03863,P229473.11,o 6',,* x?-[...],[...],,4,o 6'6' |  | * x?-[...] | [...],False,True,True,False,False
+P229473,Ist Ni 03863,Ist Ni 03863,P229473.16,r i' 1',[[id> ]],* ⸢i-id?⸣,[A₂?],,4,r i' 1'r 1' | [[id> ]] | * ⸢i-id?⸣ | [A₂?],False,True,True,False,False
+P229473,Ist Ni 03863,Ist Ni 03863,P229473.17,r i' 2',[[kab> ]],* ka-ab,KAB,,4,r i' 2'2' | [[kab> ]] | * ka-ab | KAB,False,False,False,False,False
+P229473,Ist Ni 03863,Ist Ni 03863,P229473.18,r i' 3',[[i> ]],* i,I,,4,r i' 3'3' | [[i> ]] | * i | I,False,False,False,False,False
+P229473,Ist Ni 03863,Ist Ni 03863,P229473.19,r i' 4',[[ia> ]],* ia,I.A,,4,r i' 4'4' | [[ia> ]] | * ia | I.A,False,False,False,False,False
+P229473,Ist Ni 03863,Ist Ni 03863,P229473.20,r i' 5',[[tur> ]],* tu-ur,TUR,,4,r i' 5'5' | [[tur> ]] | * tu-ur | TUR,False,False,False,False,False
+P229473,Ist Ni 03863,Ist Ni 03863,P229473.21,r i' 6',[[peš₇> ]],* ⸢peš?⸣,TUR,,4,r i' 6'6' | [[peš₇> ]] | * ⸢peš?⸣ | TUR,False,True,True,False,False
+P229473,Ist Ni 03863,Ist Ni 03863,P229473.22,r i' 7',,* [...],TUR&TUR.ZA&ZA,,4,r i' 7'7' |  | * [...] | TUR&TUR.ZA&ZA,False,False,True,False,False
+P229473,Ist Ni 03863,Ist Ni 03863,P229473.26,r ii' 1',,* ⸢x⸣-[...],[...],,4,r ii' 1'r 1' |  | * ⸢x⸣-[...] | [...],False,False,True,False,False
+P229473,Ist Ni 03863,Ist Ni 03863,P229473.27,r ii' 2',,* u₂-[...],[...],,4,r ii' 2'2' |  | * u₂-[...] | [...],False,False,True,False,False
+P229473,Ist Ni 03863,Ist Ni 03863,P229473.28,r ii' 3',,* ⸢UD?⸣-[...],[...],,4,r ii' 3'3' |  | * ⸢UD?⸣-[...] | [...],False,True,True,False,False
+P229473,Ist Ni 03863,Ist Ni 03863,P229473.29,r ii' 4',,* du-⸢x⸣-[x?],[...],,4,r ii' 4'4' |  | * du-⸢x⸣-[x?] | [...],False,True,True,False,False
+P229473,Ist Ni 03863,Ist Ni 03863,P229473.30,r ii' 5',,* ⸢x⸣-[...],[...],,4,r ii' 5'5' |  | * ⸢x⸣-[...] | [...],False,False,True,False,False
+P229474,CBS 12523,CBS 12523,P229474.6,o i 1,[[id> ]],* i-⸢id⸣,⸢A₂⸣,,4,o i 1o i 1 | [[id> ]] | * i-⸢id⸣ | ⸢A₂⸣,False,False,True,False,False
+P229474,CBS 12523,CBS 12523,P229474.7,o i 2,[[gab₂> ]],* ga-ab,KAB,,4,o i 22 | [[gab₂> ]] | * ga-ab | KAB,False,False,False,False,False
+P229474,CBS 12523,CBS 12523,P229474.8,o i 3,[[i> ]],* i,I,,4,o i 33 | [[i> ]] | * i | I,False,False,False,False,False
+P229474,CBS 12523,CBS 12523,P229474.9,o i 4,[[tur> ]],* ⸢tu⸣-ur,⸢TUR⸣,,4,o i 44 | [[tur> ]] | * ⸢tu⸣-ur | ⸢TUR⸣,False,False,True,False,False
+P229474,CBS 12523,CBS 12523,P229474.12,o ii 1,,* ⸢mu?⸣-[x],[...],,4,o ii 1o ii 1 |  | * ⸢mu?⸣-[x] | [...],False,True,True,False,False
+P229474,CBS 12523,CBS 12523,P229474.13,o ii 2,,* [...],[...],,4,o ii 22 |  | * [...] | [...],False,False,True,False,False
+P229474,CBS 12523,CBS 12523,P229474.17,r 1',,* ⸢x⸣-[x?],[...],,4,r 1'r 1' |  | * ⸢x⸣-[x?] | [...],False,True,True,False,False
+P229474,CBS 12523,CBS 12523,P229474.18,r 2',[[ereš₄> ]],* e-re-eš,[APIN],,4,r 2'2' | [[ereš₄> ]] | * e-re-eš | [APIN],False,False,False,False,False
+P229474,CBS 12523,CBS 12523,P229474.19,r 3',[[engar> ]],* en-gar₃,⸢APIN⸣,,4,r 3'3' | [[engar> ]] | * en-gar₃ | ⸢APIN⸣,False,False,False,False,False
+P229475,Ist Ni 10094,Ist Ni 10094,P229475.7,o i 1',,[*] [...],⸢x⸣,,4,o i 1'o 1' |  | [*] [...] | ⸢x⸣,False,False,True,False,False
+P229475,Ist Ni 10094,Ist Ni 10094,P229475.8,o i 2',[[a₂> ]],[*] [...],⸢A₂?⸣,,4,o i 2'2' | [[a₂> ]] | [*] [...] | ⸢A₂?⸣,False,False,True,False,False
+P229475,Ist Ni 10094,Ist Ni 10094,P229475.9,o i 3',[[gab₂> ]],* ⸢ga⸣-[ab?],⸢KAB⸣,,4,o i 3'3' | [[gab₂> ]] | * ⸢ga⸣-[ab?] | ⸢KAB⸣,False,True,True,False,False
+P229475,Ist Ni 10094,Ist Ni 10094,P229475.10,o i 4',[[i> ]],* i,I,,4,o i 4'4' | [[i> ]] | * i | I,False,False,False,False,False
+P229475,Ist Ni 10094,Ist Ni 10094,P229475.11,o i 5',[[ia> ]],* ia,I.A,,4,o i 5'5' | [[ia> ]] | * ia | I.A,False,False,False,False,False
+P229475,Ist Ni 10094,Ist Ni 10094,P229475.12,o i 6',[[tur> ]],* tu-ur,TUR,,4,o i 6'6' | [[tur> ]] | * tu-ur | TUR,False,False,False,False,False
+P229475,Ist Ni 10094,Ist Ni 10094,P229475.13,o i 7',[[peš₇> ]],* pe-eš,TUR,,4,o i 7'7' | [[peš₇> ]] | * pe-eš | TUR,False,False,False,False,False
+P229475,Ist Ni 10094,Ist Ni 10094,P229475.14,o i 8',[[dumu> ]],[*] ⸢du-mu⸣,⸢TUR⸣,,4,o i 8'8' | [[dumu> ]] | [*] ⸢du-mu⸣ | ⸢TUR⸣,False,False,True,False,False
+P229475,Ist Ni 10094,Ist Ni 10094,P229475.22,r i' 1',,,⸢gud?⸣ [...],,2,r i' 1'r 1' | ⸢gud?⸣ [...],False,False,False,False,False
+P229475,Ist Ni 10094,Ist Ni 10094,P229475.23,r i' 2',,,(blank) [ab₂],,2,r i' 2'2' | (blank) [ab₂],False,False,False,False,False
+P229475,Ist Ni 10094,Ist Ni 10094,P229475.24,r i' 3',,,⸢ab₂⸣ NUN.X,,2,r i' 3'3' | ⸢ab₂⸣ NUN.X,False,False,False,False,False
+P229475,Ist Ni 10094,Ist Ni 10094,P229475.25,r i' 4',,,ab₂ ⸢peš₇⸣,,2,r i' 4'4' | ab₂ ⸢peš₇⸣,False,False,False,False,False
+P229475,Ist Ni 10094,Ist Ni 10094,P229475.26,r i' 5',,,ab₂ ⸢šar₉⸣,,2,r i' 5'5' | ab₂ ⸢šar₉⸣,False,False,False,False,False
+P229475,Ist Ni 10094,Ist Ni 10094,P229475.27,r i' 6',,,ab₂ ⸢suḫub(BAR.(3xAN))⸣,,2,r i' 6'6' | ab₂ ⸢suḫub(BAR.(3xAN))⸣,False,False,False,False,False
+P229475,Ist Ni 10094,Ist Ni 10094,P229475.28,r i' 7',,,ab₂ ⸢X.X⸣,,2,r i' 7'7' | ab₂ ⸢X.X⸣,False,False,False,False,False
+P229475,Ist Ni 10094,Ist Ni 10094,P229475.29,r i' 8',,,ab₂ ⸢u₃-tud?⸣,,2,r i' 8'8' | ab₂ ⸢u₃-tud?⸣,False,False,False,False,False
+P229475,Ist Ni 10094,Ist Ni 10094,P229475.30,r i' 9',,,ab₂ nu-⸢u₃-tud⸣,,2,r i' 9'9' | ab₂ nu-⸢u₃-tud⸣,False,False,False,False,False
+P229475,Ist Ni 10094,Ist Ni 10094,P229475.31,r i' 10',,,⸢ab₂⸣ ŋeš₃ zu-⸢zu⸣,,2,r i' 10'10' | ⸢ab₂⸣ ŋeš₃ zu-⸢zu⸣,False,False,False,False,False
+P229475,Ist Ni 10094,Ist Ni 10094,P229475.32,r i' 11',,,⸢ab₂ ŋeš₃⸣ nu-⸢zu⸣,,2,r i' 11'11' | ⸢ab₂ ŋeš₃⸣ nu-⸢zu⸣,False,False,False,False,False
+P229475,Ist Ni 10094,Ist Ni 10094,P229475.33,r i' 12',,,⸢ab₂ x-x⸣,,2,r i' 12'12' | ⸢ab₂ x-x⸣,False,False,False,False,False
+P229475,Ist Ni 10094,Ist Ni 10094,P229475.34,r i' 13',,,[ab₂] ⸢maḫ₂?⸣,,2,r i' 13'13' | [ab₂] ⸢maḫ₂?⸣,False,False,False,False,False
+P229475,Ist Ni 10094,Ist Ni 10094,P229475.35,r i' 14',,,[ab₂] ⸢šu-gi₄-a⸣,,2,r i' 14'14' | [ab₂] ⸢šu-gi₄-a⸣,False,False,False,False,False
+P229475,Ist Ni 10094,Ist Ni 10094,P229475.36,r i' 15',,,[ab₂ si] ⸢ŋal₂-la?⸣,,2,r i' 15'15' | [ab₂ si] ⸢ŋal₂-la?⸣,False,False,False,False,False
+P229475,Ist Ni 10094,Ist Ni 10094,P229475.40,r ii' 1',,,[...]-⸢x⸣,,2,r ii' 1'r 1' | [...]-⸢x⸣,False,False,False,False,False
+P229475,Ist Ni 10094,Ist Ni 10094,P229475.41,r ii' 2',,,[...] di,,2,r ii' 2'2' | [...] di,False,False,False,False,False
+P229475,Ist Ni 10094,Ist Ni 10094,P229475.42,r ii' 3',,,⸢anše? x-il⸣,,2,r ii' 3'3' | ⸢anše? x-il⸣,False,False,False,False,False
+P229475,Ist Ni 10094,Ist Ni 10094,P229475.43,r ii' 4',,,dur₃ur₃,,2,r ii' 4'4' | dur₃ur₃,False,False,False,False,False
+P229475,Ist Ni 10094,Ist Ni 10094,P229475.44,r ii' 5',,,dur₃⸢ur₃⸣ AŠ,,2,r ii' 5'5' | dur₃⸢ur₃⸣ AŠ,False,False,False,False,False
+P229475,Ist Ni 10094,Ist Ni 10094,P229475.45,r ii' 6',,,anše-eden-⸢na⸣,,2,r ii' 6'6' | anše-eden-⸢na⸣,False,False,False,False,False
+P229475,Ist Ni 10094,Ist Ni 10094,P229475.46,r ii' 7',,,anše ⸢nun-na⸣,,2,r ii' 7'7' | anše ⸢nun-na⸣,False,False,False,False,False
+P229475,Ist Ni 10094,Ist Ni 10094,P229475.47,r ii' 8',,,⸢anše⸣-ŋir₂-nun-⸢na⸣,,2,r ii' 8'8' | ⸢anše⸣-ŋir₂-nun-⸢na⸣,False,False,False,False,False
+P229475,Ist Ni 10094,Ist Ni 10094,P229475.48,r ii' 9',,,[...]-⸢za?⸣,,2,r ii' 9'9' | [...]-⸢za?⸣,False,False,False,False,False
+P229487,N 4842,N 4842,P229487.6,o 1',[[ša₃> ]],* ša-a,⸢ŠA₃⸣,,4,o 1'o 1' | [[ša₃> ]] | * ša-a | ⸢ŠA₃⸣,False,False,False,False,False
+P229487,N 4842,N 4842,P229487.7,o 2',,* i-ZI-ri,ŠA₃×A,,4,o 2'2' |  | * i-ZI-ri | ŠA₃×A,False,False,False,False,False
+P229487,N 4842,N 4842,P229487.11,r i 1,,,[...] ŋeš-ur₃-[...],,2,r i 1r i 1 | [...] ŋeš-ur₃-[...],False,False,False,False,False
+P229487,N 4842,N 4842,P229487.12,r i 2,,,nim,,2,r i 22 | nim,False,False,False,False,False
+P229487,N 4842,N 4842,P229487.13,r i 3,,,nim saḫar-ra,,2,r i 33 | nim saḫar-ra,False,False,False,False,False
+P229487,N 4842,N 4842,P229487.14,r i 4,,,nim ⸢ur⸣-[...],,2,r i 44 | nim ⸢ur⸣-[...],False,False,False,False,False
+P229487,N 4842,N 4842,P229487.15,r i 5,,,nim ⸢ur-nig⸣,,2,r i 55 | nim ⸢ur-nig⸣,False,False,False,False,False
+P229487,N 4842,N 4842,P229487.16,r i 6,,,⸢nim⸣ [...],,2,r i 66 | ⸢nim⸣ [...],False,False,False,False,False
+P229490,Ist Ni 03858,Ist Ni 03858,P229490.7,o? i 1',,[*] [...]-⸢bu?⸣,⸢x⸣,,4,o? i 1'o? 1' |  | [*] [...]-⸢bu?⸣ | ⸢x⸣,False,True,True,False,False
+P229490,Ist Ni 03858,Ist Ni 03858,P229490.8,o? i 2',[[kurun₆> ]],[*] [ku?]-⸢ru⸣-un,GURUN,,4,o? i 2'2' | [[kurun₆> ]] | [*] [ku?]-⸢ru⸣-un | GURUN,False,True,True,False,False
+P229490,Ist Ni 03858,Ist Ni 03858,P229490.9,o? i 3',[[lam> ]],[*] ⸢la⸣-am,LAM,,4,o? i 3'3' | [[lam> ]] | [*] ⸢la⸣-am | LAM,False,False,True,False,False
+P229490,Ist Ni 03858,Ist Ni 03858,P229490.10,o? i 4',[[eš₂₂> ]],[*] eš₃,LAM×KUR,,4,o? i 4'4' | [[eš₂₂> ]] | [*] eš₃ | LAM×KUR,False,False,True,False,False
+P229490,Ist Ni 03858,Ist Ni 03858,P229490.11,o? i 5',[[kili₃> ]],[*] ⸢ki⸣-li,LAGAB.LAGAB,,4,o? i 5'5' | [[kili₃> ]] | [*] ⸢ki⸣-li | LAGAB.LAGAB,False,False,True,False,False
+P229490,Ist Ni 03858,Ist Ni 03858,P229490.12,o? i 6',[[šu-niŋin> ]],[*] [šu?]-⸢ni⸣-mi-en,ŠU-LAGAB.LAGAB,,4,o? i 6'6' | [[šu-niŋin> ]] | [*] [šu?]-⸢ni⸣-mi-en | ŠU-LAGAB.LAGAB,False,True,True,False,False
+P229490,Ist Ni 03858,Ist Ni 03858,P229490.14,o? i 7',,,[...]-⸢x⸣ za₃-mi₂,,2,o? i 7'7' | [...]-⸢x⸣ za₃-mi₂,False,False,False,False,False
+P229490,Ist Ni 03858,Ist Ni 03858,P229490.19,o? i' 1',,* [...],[...],,4,o? i' 1'1' |  | * [...] | [...],False,False,True,False,False
+P229490,Ist Ni 03858,Ist Ni 03858,P229490.23,o? ii' 1',,* ga-lam,ZAG,,4,o? ii' 1'1' |  | * ga-lam | ZAG,False,False,False,False,False
+P229490,Ist Ni 03858,Ist Ni 03858,P229490.24,o? ii' 2',[[gu₂> ]],* gu-u₂,GU₂,,4,o? ii' 2'2' | [[gu₂> ]] | * gu-u₂ | GU₂,False,False,False,False,False
+P229490,Ist Ni 03858,Ist Ni 03858,P229490.25,o? ii' 3',,* ⸢x⸣-še₃?,GU₂,,4,o? ii' 3'3' |  | * ⸢x⸣-še₃? | GU₂,False,True,True,False,False
+P229490,Ist Ni 03858,Ist Ni 03858,P229490.26,o? ii' 4',[[gun₂> ]],* ⸢gu⸣-un,⸢GU₂⸣,,4,o? ii' 4'4' | [[gun₂> ]] | * ⸢gu⸣-un | ⸢GU₂⸣,False,False,True,False,False
+P229490,Ist Ni 03858,Ist Ni 03858,P229490.27,o? ii' 5',[[dur> ]],* ⸢du?⸣-ur,⸢GU₂×KAK⸣,,4,o? ii' 5'5' | [[dur> ]] | * ⸢du?⸣-ur | ⸢GU₂×KAK⸣,False,True,True,False,False
+P229490,Ist Ni 03858,Ist Ni 03858,P229490.28,o? ii' 6',,* [...]-⸢x⸣,⸢x⸣,,4,o? ii' 6'6' |  | * [...]-⸢x⸣ | ⸢x⸣,False,False,True,False,False
+P229490,Ist Ni 03858,Ist Ni 03858,P229490.32,o? iii' 1',[[men> ]],[*] [me?]-⸢en?⸣,GA₂×(ME.EN),,4,o? iii' 1'1' | [[men> ]] | [*] [me?]-⸢en?⸣ | GA₂×(ME.EN),False,True,True,False,False
+P229490,Ist Ni 03858,Ist Ni 03858,P229490.33,o? iii' 2',,[*] [x]-⸢x⸣,GA₂×(NUN&NUN),,4,o? iii' 2'2' |  | [*] [x]-⸢x⸣ | GA₂×(NUN&NUN),False,False,True,False,False
+P229490,Ist Ni 03858,Ist Ni 03858,P229490.34,o? iii' 3',,[*] [...],⸢x⸣,,4,o? iii' 3'3' |  | [*] [...] | ⸢x⸣,False,False,True,False,False
+P229491,Ist Ni 05284,Ist Ni 05284,P229491.4,o 1',,,[[ŋiri₂ > [...]> ]],,3,o 1'1' | [[ŋiri₂ > [...]> ]] | mi-ri [...],False,False,False,False,False
+P229491,Ist Ni 05284,Ist Ni 05284,P229491.5,o 2',,,[[muš > ]] *,,3,o 2'2' | [[muš > ]] * | mu-uš [...],False,False,False,False,False
+P229491,Ist Ni 05284,Ist Ni 05284,P229491.6,o 3',[[muškuₓ(MUŠ%MUŠ) > ]] *,mu-uš-ku,⸢MUŠ%MUŠ⸣,,4,o 3'3' | [[muškuₓ(MUŠ%MUŠ) > ]] * | mu-uš-ku | ⸢MUŠ%MUŠ⸣,False,False,False,False,False
+P229491,Ist Ni 05284,Ist Ni 05284,P229491.7,o 4',[[bur₂ > ]] *,bu-ur,⸢BUR₂⸣,,4,o 4'4' | [[bur₂ > ]] * | bu-ur | ⸢BUR₂⸣,False,False,False,False,False
+P229491,Ist Ni 05284,Ist Ni 05284,P229491.8,o 5',[[sun₅ > ]] *,su-un,⸢BUR₂⸣,,4,o 5'5' | [[sun₅ > ]] * | su-un | ⸢BUR₂⸣,False,False,False,False,False
+P229491,Ist Ni 05284,Ist Ni 05284,P229491.9,o 6',[[dun₅ > ]] *,du-⸢un⸣,⸢BUR₂⸣,,4,o 6'6' | [[dun₅ > ]] * | du-⸢un⸣ | ⸢BUR₂⸣,False,False,True,False,False
+P229491,Ist Ni 05284,Ist Ni 05284,P229491.10,o 7',[[ušum > ]] *,u₂-šu-⸢um⸣,⸢BUR₂⸣,,4,o 7'7' | [[ušum > ]] * | u₂-šu-⸢um⸣ | ⸢BUR₂⸣,False,False,True,False,False
+P229491,Ist Ni 05284,Ist Ni 05284,P229491.11,o 8',,,[[bulug > ]] *,,3,o 8'8' | [[bulug > ]] * | mu-lu-⸢ug⸣ [...],False,False,False,False,False
+P229491,Ist Ni 05284,Ist Ni 05284,P229491.12,o 9',,,[[menbulug₂ > ]] *,,3,o 9'9' | [[menbulug₂ > ]] * | ⸢min-mu?-lu-ug⸣ [...],False,False,False,False,False
+P229491,Ist Ni 05284,Ist Ni 05284,P229491.19,r ii' 1',,,mi₂ zid,,2,r ii' 1'1' | mi₂ zid,False,False,False,False,False
+P229491,Ist Ni 05284,Ist Ni 05284,P229491.20,r ii' 2',,,mi₂ zid dug₄-ga,,2,r ii' 2'2' | mi₂ zid dug₄-ga,False,False,False,False,False
+P229491,Ist Ni 05284,Ist Ni 05284,P229491.21,r ii' 3',,,mi₂,,2,r ii' 3'3' | mi₂,False,False,False,False,False
+P229491,Ist Ni 05284,Ist Ni 05284,P229491.22,r ii' 4',,,⸢za₃⸣-mi₂,,2,r ii' 4'4' | ⸢za₃⸣-mi₂,False,False,False,False,False
+P229491,Ist Ni 05284,Ist Ni 05284,P229491.23,r ii' 5',,,⸢za₃⸣-mi₂,,2,r ii' 5'5' | ⸢za₃⸣-mi₂,False,False,False,False,False
+P229491,Ist Ni 05284,Ist Ni 05284,P229491.24,r ii' 6',,,za₃-mi₂ dug₄-⸢ga⸣,,2,r ii' 6'6' | za₃-mi₂ dug₄-⸢ga⸣,False,False,False,False,False
+P229491,Ist Ni 05284,Ist Ni 05284,P229491.25,r ii' 7',,,ma-⸢an-taḫ⸣,,2,r ii' 7'7' | ma-⸢an-taḫ⸣,False,False,False,False,False
+P229491,Ist Ni 05284,Ist Ni 05284,P229491.26,r ii' 8',,,⸢ma⸣-an-ba,,2,r ii' 8'8' | ⸢ma⸣-an-ba,False,False,False,False,False
+P229491,Ist Ni 05284,Ist Ni 05284,P229491.27,r ii' 9',,,[...]-⸢x⸣-[...]1,,2,r ii' 9'9' | [...]-⸢x⸣-[...]1,False,False,False,False,False
+P229492,Ist Ni 03727,Ist Ni 03727,P229492.6,o i 1,[[bur₂> ]],[*] ⸢bu?-ur⸣,BUR₂,,4,o i 1o i 1 | [[bur₂> ]] | [*] ⸢bu?-ur⸣ | BUR₂,False,True,True,False,False
+P229492,Ist Ni 03727,Ist Ni 03727,P229492.7,o i 2,[[dun₅> ]],[*] du-un,BUR₂,,4,o i 22 | [[dun₅> ]] | [*] du-un | BUR₂,False,False,True,False,False
+P229492,Ist Ni 03727,Ist Ni 03727,P229492.8,o i 3,[[ušum> ]],[*] [u₂]-šum,BUR₂,,4,o i 33 | [[ušum> ]] | [*] [u₂]-šum | BUR₂,False,False,True,False,False
+P229492,Ist Ni 03727,Ist Ni 03727,P229492.9,o i 4,[[bulug> ]],[*] [bu-lu]-⸢ug⸣,BULUG,,4,o i 44 | [[bulug> ]] | [*] [bu-lu]-⸢ug⸣ | BULUG,False,False,True,False,False
+P229492,Ist Ni 03727,Ist Ni 03727,P229492.10,o i 5,[[minbulug₂> ]],[*] [...]-⸢ug⸣,⸢BULUG&BULUG⸣,,4,o i 55 | [[minbulug₂> ]] | [*] [...]-⸢ug⸣ | ⸢BULUG&BULUG⸣,False,False,True,False,False
+P229492,Ist Ni 03727,Ist Ni 03727,P229492.11,o i 6,,[*] [...],NAGAR,,4,o i 66 |  | [*] [...] | NAGAR,False,False,True,False,False
+P229492,Ist Ni 03727,Ist Ni 03727,P229492.12,o i 7,,[*] [...],GUR₇,,4,o i 77 |  | [*] [...] | GUR₇,False,False,True,False,False
+P229492,Ist Ni 03727,Ist Ni 03727,P229492.13,o i 8,[[kara₆> ]],[*] [ka]-⸢ra⸣,GUR₇,,4,o i 88 | [[kara₆> ]] | [*] [ka]-⸢ra⸣ | GUR₇,False,False,True,False,False
+P229492,Ist Ni 03727,Ist Ni 03727,P229492.14,o i 9,[[munsub> ]],[*] [...]-⸢ub?⸣,⸢MUNSUB⸣,,4,o i 99 | [[munsub> ]] | [*] [...]-⸢ub?⸣ | ⸢MUNSUB⸣,False,True,True,False,False
+P229492,Ist Ni 03727,Ist Ni 03727,P229492.15,o i 10,,[*] [...],⸢SUḪUR?⸣,,4,o i 1010 |  | [*] [...] | ⸢SUḪUR?⸣,False,False,True,False,False
+P229494,CBS 06776,CBS 06776,P229494.6,o 1',[[utuwa> ]],* ⸢u₂⸣-tu-u₂-a,[DAG.KISIM₅×UŠ?],,4,o 1'o 1' | [[utuwa> ]] | * ⸢u₂⸣-tu-u₂-a | [DAG.KISIM₅×UŠ?],False,False,True,False,False
+P229494,CBS 06776,CBS 06776,P229494.7,o 2',[[ŋarim₂> ]],[*] ŋa₂-ri-im,DAG.KISIM₅×AMAR,,4,o 2'2' | [[ŋarim₂> ]] | [*] ŋa₂-ri-im | DAG.KISIM₅×AMAR,False,False,True,False,False
+P229494,CBS 06776,CBS 06776,P229494.8,o 3',[[ubur> ]],* u₃-bur,DAG.KISIM₅×GA,,4,o 3'3' | [[ubur> ]] | * u₃-bur | DAG.KISIM₅×GA,False,False,False,False,False
+P229494,CBS 06776,CBS 06776,P229494.9,o 4',[[ge₂₈> ]],* ge-e,DAG.KISIM₅×NE,,4,o 4'4' | [[ge₂₈> ]] | * ge-e | DAG.KISIM₅×NE,False,False,False,False,False
+P229494,CBS 06776,CBS 06776,P229494.10,o 5',,[*] lu-u₂,[...],,4,o 5'5' |  | [*] lu-u₂ | [...],False,False,True,False,False
+P229494,CBS 06776,CBS 06776,P229494.12,r 1,,[*] ḫu-⸢lum⸣,[...],,4,r 1r 1 |  | [*] ḫu-⸢lum⸣ | [...],False,False,True,False,False
+P229494,CBS 06776,CBS 06776,P229494.13,r 2,[[ḫulum₃> ]],[*] ḫu-lum,DAG.KISIM₅×ḪA,,4,r 22 | [[ḫulum₃> ]] | [*] ḫu-lum | DAG.KISIM₅×ḪA,False,False,True,False,False
+P229494,CBS 06776,CBS 06776,P229494.14,r 3,[[kiši₈> ]],[*] ki-si₂,DAG.KISIM₅×GIR₂,,4,r 33 | [[kiši₈> ]] | [*] ki-si₂ | DAG.KISIM₅×GIR₂,False,False,True,False,False
+P229494,CBS 06776,CBS 06776,P229494.15,r 4,,[*] ⸢a?-ka?⸣-an,[...],,4,r 44 |  | [*] ⸢a?-ka?⸣-an | [...],False,True,True,False,False
+P229494,CBS 06776,CBS 06776,P229494.17,r 5,,,[...]-⸢x⸣,,2,r 55 | [...]-⸢x⸣,False,False,False,False,False
+P229494,CBS 06776,CBS 06776,P229494.19,r 6,,,[...]-⸢x⸣ [(...)],,2,r 66 | [...]-⸢x⸣ [(...)],False,False,False,False,False
+P229495,Ist Ni 10052,Ist Ni 10052,P229495.6,o 1',[[nu₂> ]],[*] ⸢nu?⸣,⸢NA₂⸣,,4,o 1'o 1' | [[nu₂> ]] | [*] ⸢nu?⸣ | ⸢NA₂⸣,False,True,True,False,False
+P229495,Ist Ni 10052,Ist Ni 10052,P229495.7,o 2',[[ŋešnu₃(NA₂)> ]],*? ŋeš-nu,NA₂,,4,o 2'2' | [[ŋešnu₃(NA₂)> ]] | *? ŋeš-nu | NA₂,False,True,False,False,False
+P229495,Ist Ni 10052,Ist Ni 10052,P229495.8,o 3',[[še₂₁> ]],* še,ḪU.NA₂,,4,o 3'3' | [[še₂₁> ]] | * še | ḪU.NA₂,False,False,False,False,False
+P229495,Ist Ni 10052,Ist Ni 10052,P229495.9,o 4',[[alaŋ> ]],* a-la-aŋ₂,ALAN,,4,o 4'4' | [[alaŋ> ]] | * a-la-aŋ₂ | ALAN,False,False,False,False,False
+P229495,Ist Ni 10052,Ist Ni 10052,P229495.10,o 5',[[taraḫ> ]],* ta-ra-aḫ,DARA₃,,4,o 5'5' | [[taraḫ> ]] | * ta-ra-aḫ | DARA₃,False,False,False,False,False
+P229495,Ist Ni 10052,Ist Ni 10052,P229495.11,o 6',[[šum> ]],[*] [šu?]-⸢um?⸣,TAG,,4,o 6'6' | [[šum> ]] | [*] [šu?]-⸢um?⸣ | TAG,False,True,True,False,False
+P229495,Ist Ni 10052,Ist Ni 10052,P229495.12,o 7',,[*] [...]-⸢x⸣,TAG,,4,o 7'7' |  | [*] [...]-⸢x⸣ | TAG,False,False,True,False,False
+P229495,Ist Ni 10052,Ist Ni 10052,P229495.13,o 8',,[*] [...],⸢TAG⸣,,4,o 8'8' |  | [*] [...] | ⸢TAG⸣,False,False,True,False,False
+P229495,Ist Ni 10052,Ist Ni 10052,P229495.17,r 1',[[ḫu> ]],[*] [ḫu?]-⸢u₂?⸣,[ḪU],,4,r 1'r 1' | [[ḫu> ]] | [*] [ḫu?]-⸢u₂?⸣ | [ḪU],False,True,True,False,False
+P229495,Ist Ni 10052,Ist Ni 10052,P229495.18,r 2',[[pag> ]],[*] ⸢pa⸣-ag,⸢ḪU⸣,,4,r 2'2' | [[pag> ]] | [*] ⸢pa⸣-ag | ⸢ḪU⸣,False,False,True,False,False
+P229495,Ist Ni 10052,Ist Ni 10052,P229495.19,r 3',[[mušen> ]],[*] [mu]-še-<en>,ḪU,,4,r 3'3' | [[mušen> ]] | [*] [mu]-še-<en> | ḪU,False,False,True,False,False
+P229495,Ist Ni 10052,Ist Ni 10052,P229495.20,r 4',,[*] [...],ḪU.SI,,4,r 4'4' |  | [*] [...] | ḪU.SI,False,False,True,False,False
+P229496,Ist Ni 03348bis,Ist Ni 03348bis,P229496.6,o 1',[[nu₂> ]],[*] nu-⸢x⸣,[NA₂?],,4,o 1'o 1' | [[nu₂> ]] | [*] nu-⸢x⸣ | [NA₂?],False,False,True,False,False
+P229496,Ist Ni 03348bis,Ist Ni 03348bis,P229496.7,o 2',[[ŋešnu₃(NA₂)> ]],* ŋeš-nu,[NA₂?],,4,o 2'2' | [[ŋešnu₃(NA₂)> ]] | * ŋeš-nu | [NA₂?],False,False,False,False,False
+P229496,Ist Ni 03348bis,Ist Ni 03348bis,P229496.8,o 3',[[še₂₁> ]],* še-e,[ḪU.NA₂?],,4,o 3'3' | [[še₂₁> ]] | * še-e | [ḪU.NA₂?],False,False,False,False,False
+P229496,Ist Ni 03348bis,Ist Ni 03348bis,P229496.9,o 4',[[alam> ]],* a-la-⸢am⸣,[ALAN?],,4,o 4'4' | [[alam> ]] | * a-la-⸢am⸣ | [ALAN?],False,False,True,False,False
+P229496,Ist Ni 03348bis,Ist Ni 03348bis,P229496.14,r 1',,[*] <([...])>,⸢x⸣,,4,r 1'r 1' |  | [*] <([...])> | ⸢x⸣,False,False,True,False,False
+P229496,Ist Ni 03348bis,Ist Ni 03348bis,P229496.15,r 2',,* <([...])>,⸢x⸣,,4,r 2'2' |  | * <([...])> | ⸢x⸣,False,False,True,False,False
+P229496,Ist Ni 03348bis,Ist Ni 03348bis,P229496.16,r 3',,* pu-u₄,⸢x⸣,,4,r 3'3' |  | * pu-u₄ | ⸢x⸣,False,False,False,False,False
+P229496,Ist Ni 03348bis,Ist Ni 03348bis,P229496.17,r 4',,* <(pu-u₄)>,⸢x⸣,,4,r 4'4' |  | * <(pu-u₄)> | ⸢x⸣,False,False,False,False,False
+P229496,Ist Ni 03348bis,Ist Ni 03348bis,P229496.18,r 5',,* <(pu-u₄)>,⸢x⸣,,4,r 5'5' |  | * <(pu-u₄)> | ⸢x⸣,False,False,False,False,False
+P229496,Ist Ni 03348bis,Ist Ni 03348bis,P229496.19,r 6',,* <(pu-u₄)>,[x],,4,r 6'6' |  | * <(pu-u₄)> | [x],False,False,False,False,False
+P229496,Ist Ni 03348bis,Ist Ni 03348bis,P229496.20,r 7',,[*] ur,IGI.RI,,4,r 7'7' |  | [*] ur | IGI.RI,False,False,True,False,False
+P229497,Ist Ni 10274,Ist Ni 10274,P229497.5,o 1,[[siki> ]],* si-ki,[SIK₂?],,4,o 11 | [[siki> ]] | * si-ki | [SIK₂?],False,False,False,False,False
+P229497,Ist Ni 10274,Ist Ni 10274,P229497.6,o 2,,* ta-si,⸢x⸣,,4,o 22 |  | * ta-si | ⸢x⸣,False,False,False,False,False
+P229497,Ist Ni 10274,Ist Ni 10274,P229497.7,o 3,[[kurun₆> ]],* kur-ru-un,⸢GURUN⸣,,4,o 33 | [[kurun₆> ]] | * kur-ru-un | ⸢GURUN⸣,False,False,False,False,False
+P229497,Ist Ni 10274,Ist Ni 10274,P229497.8,o 4,[[lam> ]],* la-am,[LAM?],,4,o 44 | [[lam> ]] | * la-am | [LAM?],False,False,False,False,False
+P229501,Ist Ni 05117,Ist Ni 05117,P229501.7,o i 1',[[tukulₓ(LAGAB)> ]],* ⸢tu-ku-ul⸣,⸢LAGAB⸣,,4,o i 1'o 1' | [[tukulₓ(LAGAB)> ]] | * ⸢tu-ku-ul⸣ | ⸢LAGAB⸣,False,False,True,False,False
+P229501,Ist Ni 05117,Ist Ni 05117,P229501.8,o i 2',[[kir₃> ]],* ki-ir!(NI),LAGAB,,4,o i 2'2' | [[kir₃> ]] | * ki-ir!(NI) | LAGAB,True,False,False,False,False
+P229501,Ist Ni 05117,Ist Ni 05117,P229501.9,o i 3',[[niŋin₂> ]],* ni-mi-en,⸢LAGAB⸣,,4,o i 3'3' | [[niŋin₂> ]] | * ni-mi-en | ⸢LAGAB⸣,False,False,False,False,False
+P229501,Ist Ni 05117,Ist Ni 05117,P229501.10,o i 4',[[girim> ]],* gi-ri-im,LAGAB,,4,o i 4'4' | [[girim> ]] | * gi-ri-im | LAGAB,False,False,False,False,False
+P229501,Ist Ni 05117,Ist Ni 05117,P229501.11,o i 5',[[lugud₂> ]],* lu!(KU-)gu₄-ud,LAGAB,,4,o i 5'5' | [[lugud₂> ]] | * lu!(KU-)gu₄-ud | LAGAB,True,False,False,False,False
+P229501,Ist Ni 05117,Ist Ni 05117,P229501.12,o i 6',[[lagab> ]],* la-ga-ab,⸢LAGAB⸣,,4,o i 6'6' | [[lagab> ]] | * la-ga-ab | ⸢LAGAB⸣,False,False,False,False,False
+P229501,Ist Ni 05117,Ist Ni 05117,P229501.13,o i 7',[[ḫab₂> ]],* ḫa-⸢ab⸣,LAGAB×U,,4,o i 7'7' | [[ḫab₂> ]] | * ḫa-⸢ab⸣ | LAGAB×U,False,False,True,False,False
+P229501,Ist Ni 05117,Ist Ni 05117,P229501.14,o i 8',[[ub₄> ]],* ⸢ub-da?⸣,LAGAB×U,,4,o i 8'8' | [[ub₄> ]] | * ⸢ub-da?⸣ | LAGAB×U,False,True,True,False,False
+P229501,Ist Ni 05117,Ist Ni 05117,P229501.15,o i 9',[[pu₂> ]],[*] ⸢pu-u₂⸣,LAGAB×U,,4,o i 9'9' | [[pu₂> ]] | [*] ⸢pu-u₂⸣ | LAGAB×U,False,False,True,False,False
+P229501,Ist Ni 05117,Ist Ni 05117,P229501.16,o i 10',[[dul₂> ]],[*] ⸢du?⸣-ul,LAGAB×U,,4,o i 10'10' | [[dul₂> ]] | [*] ⸢du?⸣-ul | LAGAB×U,False,True,True,False,False
+P229501,Ist Ni 05117,Ist Ni 05117,P229501.17,o i 11',[[i₈> ]],[*] ⸢i⸣,[LAGAB×ḪAL?],,4,o i 11'11' | [[i₈> ]] | [*] ⸢i⸣ | [LAGAB×ḪAL?],False,False,True,False,False
+P229501,Ist Ni 05117,Ist Ni 05117,P229501.25,r 1',,,ma-na-na [(...)],,2,r 1'r 1' | ma-na-na [(...)],False,False,False,False,False
+P229504,Ist Ni 03704,Ist Ni 03704,P229504.6,o 1',[[bul> ]],[*] ⸢bu⸣-ul,[LAGAB×(U.U.U)?],,4,o 1'1' | [[bul> ]] | [*] ⸢bu⸣-ul | [LAGAB×(U.U.U)?],False,False,True,False,False
+P229504,Ist Ni 03704,Ist Ni 03704,P229504.7,o 2',[[zar> ]],[*] za-ar,[LAGAB×SUM?],,4,o 2'2' | [[zar> ]] | [*] za-ar | [LAGAB×SUM?],False,False,True,False,False
+P229504,Ist Ni 03704,Ist Ni 03704,P229504.8,o 3',[[buru₁₆> ]],* bu-ru,LAGAB×SUM,,4,o 3'3' | [[buru₁₆> ]] | * bu-ru | LAGAB×SUM,False,False,False,False,False
+P229504,Ist Ni 03704,Ist Ni 03704,P229504.9,o 4',[[šurum₃> ]],* šu-⸢rum⸣,LAGAB×GUD,,4,o 4'4' | [[šurum₃> ]] | * šu-⸢rum⸣ | LAGAB×GUD,False,False,True,False,False
+P229504,Ist Ni 03704,Ist Ni 03704,P229504.10,o 5',[[u₈> ]],* u₂-u₈,⸢LAGAB×(GUD&GUD)⸣,,4,o 5'5' | [[u₈> ]] | * u₂-u₈ | ⸢LAGAB×(GUD&GUD)⸣,False,False,False,False,False
+P229504,Ist Ni 03704,Ist Ni 03704,P229504.11,o 6',[[niŋimₓ(LAGAB×UŠ)> ]],* niŋ₂-ni-im,⸢LAGAB×UŠ⸣,,4,o 6'6' | [[niŋimₓ(LAGAB×UŠ)> ]] | * niŋ₂-ni-im | ⸢LAGAB×UŠ⸣,False,False,False,False,False
+P229504,Ist Ni 03704,Ist Ni 03704,P229504.12,o 7',[[namma> ]],* na-am!-⸢ma⸣,⸢LAGAB×ḪAL⸣,,4,o 7'7' | [[namma> ]] | * na-am!-⸢ma⸣ | ⸢LAGAB×ḪAL⸣,True,False,True,False,False
+P229504,Ist Ni 03704,Ist Ni 03704,P229504.13,o 8',[[šara₂> ]],* ša-⸢ra?⸣,⸢LAGAB×IGIg⸣,,4,o 8'8' | [[šara₂> ]] | * ša-⸢ra?⸣ | ⸢LAGAB×IGIg⸣,False,True,True,False,False
+P229504,Ist Ni 03704,Ist Ni 03704,P229504.14,o 9',[[gigir> ]],* gi₄-gi₄-ir,⸢LAGAB×BAD⸣,,4,o 9'9' | [[gigir> ]] | * gi₄-gi₄-ir | ⸢LAGAB×BAD⸣,False,False,False,False,False
+P229504,Ist Ni 03704,Ist Ni 03704,P229504.15,o 10',[[ŋarim> ]],*? ŋa₂-ri-im,[LAGAB×KU₃?],,4,o 10'10' | [[ŋarim> ]] | *? ŋa₂-ri-im | [LAGAB×KU₃?],False,True,False,False,False
+P229504,Ist Ni 03704,Ist Ni 03704,P229504.16,o 11',[[ḫuŋ> ]],[*] [ḫu]-⸢un⸣,[EŠ₂?],,4,o 11'11' | [[ḫuŋ> ]] | [*] [ḫu]-⸢un⸣ | [EŠ₂?],False,False,True,False,False
+P229504,Ist Ni 03704,Ist Ni 03704,P229504.20,r 1',,,[udu niŋ₂]-⸢de₂?⸣-a ⸢munus-e⸣-[ne],,2,r 1'r 1' | [udu niŋ₂]-⸢de₂?⸣-a ⸢munus-e⸣-[ne],False,False,False,False,False
+P229504,Ist Ni 03704,Ist Ni 03704,P229504.21,r 2',,,[udu] ⸢sila⸣ ur-bar-⸢ra?⸣,,2,r 2'2' | [udu] ⸢sila⸣ ur-bar-⸢ra?⸣,False,False,False,False,False
+P229504,Ist Ni 03704,Ist Ni 03704,P229504.22,r 3',,,[udu] ⸢gug⸣-ga-na₂,,2,r 3'3' | [udu] ⸢gug⸣-ga-na₂,False,False,False,False,False
+P229504,Ist Ni 03704,Ist Ni 03704,P229504.23,r 4',,,⸢udu⸣ ḫi-⸢a⸣,,2,r 4'4' | ⸢udu⸣ ḫi-⸢a⸣,False,False,False,False,False
+P229504,Ist Ni 03704,Ist Ni 03704,P229504.24,r 5',,,maš₂-anše,,2,r 5'5' | maš₂-anše,False,False,False,False,False
+P229504,Ist Ni 03704,Ist Ni 03704,P229504.25,r 6',,,udu ⸢babbar⸣,,2,r 6'6' | udu ⸢babbar⸣,False,False,False,False,False
+P229504,Ist Ni 03704,Ist Ni 03704,P229504.26,r 7',,,udu ⸢giggi⸣,,2,r 7'7' | udu ⸢giggi⸣,False,False,False,False,False
+P229504,Ist Ni 03704,Ist Ni 03704,P229504.27,r 8',,,udu su₄-[a],,2,r 8'8' | udu su₄-[a],False,False,False,False,False
+P229504,Ist Ni 03704,Ist Ni 03704,P229504.28,r 9',,,[udu] ⸢sig₇⸣-[sig₇],,2,r 9'9' | [udu] ⸢sig₇⸣-[sig₇],False,False,False,False,False
+P229506,Ist Ni 05206,Ist Ni 05206,P229506.7,o i 1',,[*] ⸢x⸣-[...],[...],,4,o i 1'o 1' |  | [*] ⸢x⸣-[...] | [...],False,False,True,False,False
+P229506,Ist Ni 05206,Ist Ni 05206,P229506.8,o i 2',,[*] [...]-⸢x⸣,⸢UD×(U.U.U)⸣,,4,o i 2'2' |  | [*] [...]-⸢x⸣ | ⸢UD×(U.U.U)⸣,False,False,True,False,False
+P229506,Ist Ni 05206,Ist Ni 05206,P229506.9,o i 3',,* ⸢x-x⸣,⸢LAGARg⸣,,4,o i 3'3' |  | * ⸢x-x⸣ | ⸢LAGARg⸣,False,False,True,False,False
+P229506,Ist Ni 05206,Ist Ni 05206,P229506.10,o i 4',[[e₁₁> ]],* ⸢e⸣,[LAGARg.DU],,4,o i 4'4' | [[e₁₁> ]] | * ⸢e⸣ | [LAGARg.DU],False,False,True,False,False
+P229506,Ist Ni 05206,Ist Ni 05206,P229506.11,o i 5',[[su₇> ]],* su-u₂,LAGAR×ŠE,,4,o i 5'5' | [[su₇> ]] | * su-u₂ | LAGAR×ŠE,False,False,False,False,False
+P229506,Ist Ni 05206,Ist Ni 05206,P229506.12,o i 6',[[nagal> ]],* ⸢na-ga-al⸣,LAGAR,,4,o i 6'6' | [[nagal> ]] | * ⸢na-ga-al⸣ | LAGAR,False,False,True,False,False
+P229506,Ist Ni 05206,Ist Ni 05206,P229506.13,o i 7',[[gada> ]],* ga-da,⸢GAD⸣,,4,o i 7'7' | [[gada> ]] | * ga-da | ⸢GAD⸣,False,False,False,False,False
+P229506,Ist Ni 05206,Ist Ni 05206,P229506.14,o i 8',[[za> ]],* ⸢za-a⸣,ZA,,4,o i 8'8' | [[za> ]] | * ⸢za-a⸣ | ZA,False,False,True,False,False
+P229506,Ist Ni 05206,Ist Ni 05206,P229506.15,o i 9',[[eš> ]],* eš,U.U.U,,4,o i 9'9' | [[eš> ]] | * eš | U.U.U,False,False,False,False,False
+P229507,Ist Ni 05188,Ist Ni 05188,P229507.8,r i 1,,* [...],[A],,4,r i 1r i 1 |  | * [...] | [A],False,False,True,False,False
+P229507,Ist Ni 05188,Ist Ni 05188,P229507.9,r i 2,,[*] [x?]-⸢x⸣,⸢A⸣,,4,r i 22 |  | [*] [x?]-⸢x⸣ | ⸢A⸣,False,True,True,False,False
+P229507,Ist Ni 05188,Ist Ni 05188,P229507.10,r i 3,[[duru₅> ]],* ⸢du⸣-ru,A,,4,r i 33 | [[duru₅> ]] | * ⸢du⸣-ru | A,False,False,True,False,False
+P229507,Ist Ni 05188,Ist Ni 05188,P229507.11,r i 4,[[e₄> ]],* e,A,,4,r i 44 | [[e₄> ]] | * e | A,False,False,False,False,False
+P229507,Ist Ni 05188,Ist Ni 05188,P229507.12,r i 5,[[a> ]],* a,A,,4,r i 55 | [[a> ]] | * a | A,False,False,False,False,False
+P229507,Ist Ni 05188,Ist Ni 05188,P229507.13,r i 6,[[aya> ]],[*] ⸢a?-a⸣,⸢A.A⸣,,4,r i 66 | [[aya> ]] | [*] ⸢a?-a⸣ | ⸢A.A⸣,False,True,True,False,False
+P229507,Ist Ni 05188,Ist Ni 05188,P229507.16,r ii 1,,[*] [...]-⸢x⸣,⸢KU.AN⸣,,4,r ii 1r ii 1 |  | [*] [...]-⸢x⸣ | ⸢KU.AN⸣,False,False,True,False,False
+P229507,Ist Ni 05188,Ist Ni 05188,P229507.17,r ii 2,,[*] [...]-⸢x⸣,LAGAB,,4,r ii 22 |  | [*] [...]-⸢x⸣ | LAGAB,False,False,True,False,False
+P229507,Ist Ni 05188,Ist Ni 05188,P229507.18,r ii 3,,[*] [...],LAGAB,,4,r ii 33 |  | [*] [...] | LAGAB,False,False,True,False,False
+P229509,N 6255,N 6255,P229509.7,o 1',[[mel> ]],* ⸢me-el⸣,[IŠ],,4,o 1'o 1' | [[mel> ]] | * ⸢me-el⸣ | [IŠ],False,False,True,False,False
+P229509,N 6255,N 6255,P229509.8,o 2',[[saḫar> ]],* ⸢sa-ḫa-ar⸣,⸢IŠ⸣,,4,o 2'2' | [[saḫar> ]] | * ⸢sa-ḫa-ar⸣ | ⸢IŠ⸣,False,False,True,False,False
+P229509,N 6255,N 6255,P229509.9,o 3',[[ḫul₂> ]],* ⸢ḫu-ul⸣,⸢ḪUL₂⸣,,4,o 3'3' | [[ḫul₂> ]] | * ⸢ḫu-ul⸣ | ⸢ḪUL₂⸣,False,False,True,False,False
+P229509,N 6255,N 6255,P229509.10,o 4',[[kuš₈> ]],* ku-⸢uš⸣,ḪUL₂,,4,o 4'4' | [[kuš₈> ]] | * ku-⸢uš⸣ | ḪUL₂,False,False,True,False,False
+P229509,N 6255,N 6255,P229509.11,o 5',[[kitim> ]],* ki-tim,⸢GIDIM⸣,,4,o 5'5' | [[kitim> ]] | * ki-tim | ⸢GIDIM⸣,False,False,False,False,False
+P229509,N 6255,N 6255,P229509.12,o 6',[[udug> ]],* u₂-du-⸢ug⸣,UDUG,,4,o 6'6' | [[udug> ]] | * u₂-du-⸢ug⸣ | UDUG,False,False,True,False,False
+P229509,N 6255,N 6255,P229509.13,o 7',[[kungalaₓ(LU.ḪUL₂)> ]],* ⸢ku⸣-un-gal-la,LU.ḪUL₂,,4,o 7'7' | [[kungalaₓ(LU.ḪUL₂)> ]] | * ⸢ku⸣-un-gal-la | LU.ḪUL₂,False,False,True,False,False
+P230060,Ist Ni 03999,Ist Ni 03999,P230060.5,o 1,[[me> ]],* me-e,ME,,4,o 11 | [[me> ]] | * me-e | ME,False,False,False,False,False
+P230060,Ist Ni 03999,Ist Ni 03999,P230060.6,o 2,[[isib> ]],* i-si₂-ib,ME,,4,o 22 | [[isib> ]] | * i-si₂-ib | ME,False,False,False,False,False
+P230060,Ist Ni 03999,Ist Ni 03999,P230060.7,o 3,,[*] ⸢x-x⸣,⸢ME⸣,,4,o 33 |  | [*] ⸢x-x⸣ | ⸢ME⸣,False,False,True,False,False
+P230060,Ist Ni 03999,Ist Ni 03999,P230060.13,r i' 1',,,⸢gud x⸣ [...],,2,r i' 1'r 1' | ⸢gud x⸣ [...],False,False,False,False,False
+P230060,Ist Ni 03999,Ist Ni 03999,P230060.14,r i' 2',,,gud a₂-[...],,2,r i' 2'2' | gud a₂-[...],False,False,False,False,False
+P230060,Ist Ni 03999,Ist Ni 03999,P230060.15,r i' 3',,,gud [...],,2,r i' 3'3' | gud [...],False,False,False,False,False
+P230060,Ist Ni 03999,Ist Ni 03999,P230060.18,r ii' 1',,,⸢amar?⸣ [x],,2,r ii' 1'r 1' | ⸢amar?⸣ [x],False,False,False,False,False
+P230060,Ist Ni 03999,Ist Ni 03999,P230060.19,r ii' 2',,,⸢amar ga⸣ KA×X-[x],,2,r ii' 2'2' | ⸢amar ga⸣ KA×X-[x],False,False,False,False,False
+P230060,Ist Ni 03999,Ist Ni 03999,P230060.20,r ii' 3',,,⸢amar⸣ ga gu₇-⸢a⸣,,2,r ii' 3'3' | ⸢amar⸣ ga gu₇-⸢a⸣,False,False,False,False,False
+P230060,Ist Ni 03999,Ist Ni 03999,P230060.21,r ii' 4',,,amar ga sub-a,,2,r ii' 4'4' | amar ga sub-a,False,False,False,False,False
+P230060,Ist Ni 03999,Ist Ni 03999,P230060.22,r ii' 5',,,amar saḫ₄,,2,r ii' 5'5' | amar saḫ₄,False,False,False,False,False
+P230060,Ist Ni 03999,Ist Ni 03999,P230060.23,r ii' 6',,,⸢amar⸣ lirum,,2,r ii' 6'6' | ⸢amar⸣ lirum,False,False,False,False,False
+P230060,Ist Ni 03999,Ist Ni 03999,P230060.24,r ii' 7',,,⸢amar⸣ ban₃-da,,2,r ii' 7'7' | ⸢amar⸣ ban₃-da,False,False,False,False,False
+P230064,Ist Ni 04982,Ist Ni 04982,P230064.15,r ii' 1',,[*] [...]-⸢x⸣,[...],,4,r ii' 1'r 1' |  | [*] [...]-⸢x⸣ | [...],False,False,True,False,False
+P230064,Ist Ni 04982,Ist Ni 04982,P230064.16,r ii' 2',[[buru₁₆> ]],[*] [bu]-ru,⸢LAGAB×SUM⸣,,4,r ii' 2'2' | [[buru₁₆> ]] | [*] [bu]-ru | ⸢LAGAB×SUM⸣,False,False,True,False,False
+P230064,Ist Ni 04982,Ist Ni 04982,P230064.17,r ii' 3',[[šurum₃> ]],[*] ⸢šu⸣-rum,LAGAB×GUD,,4,r ii' 3'3' | [[šurum₃> ]] | [*] ⸢šu⸣-rum | LAGAB×GUD,False,False,True,False,False
+P230064,Ist Ni 04982,Ist Ni 04982,P230064.18,r ii' 4',[[u₈> ]],[*] u₂-⸢u₈⸣,⸢LAGAB×(GUD&GUD)⸣,,4,r ii' 4'4' | [[u₈> ]] | [*] u₂-⸢u₈⸣ | ⸢LAGAB×(GUD&GUD)⸣,False,False,True,False,False
+P230064,Ist Ni 04982,Ist Ni 04982,P230064.19,r ii' 5',[[nigin₁₁> ]],[*] ⸢ni⸣-gi-en,LAGAB×UŠ,,4,r ii' 5'5' | [[nigin₁₁> ]] | [*] ⸢ni⸣-gi-en | LAGAB×UŠ,False,False,True,False,False
+P230064,Ist Ni 04982,Ist Ni 04982,P230064.20,r ii' 6',[[nammu> ]],[*] [na]-mu,⸢LAGAB×ḪAL⸣,,4,r ii' 6'6' | [[nammu> ]] | [*] [na]-mu | ⸢LAGAB×ḪAL⸣,False,False,True,False,False

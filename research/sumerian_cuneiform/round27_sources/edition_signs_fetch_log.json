@@ -1,0 +1,37 @@
+[
+  {
+    "file": "YOS1_Clay1915.pdf",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/b/b4/Miscellaneous_inscriptions_in_the_Yale_Babylonian_collection_%28IA_miscellaneousins00clay%29.pdf",
+    "returncode": 0,
+    "bytes": 15953026,
+    "error": ""
+  },
+  {
+    "file": "OSL_GI.html",
+    "url": "https://oracc.museum.upenn.edu/osl/signlist/l0071/o0000210/index.html",
+    "returncode": 0,
+    "bytes": 24517,
+    "error": ""
+  },
+  {
+    "file": "OSL_ZI.html",
+    "url": "https://oracc.museum.upenn.edu/osl/signlist/l0090/o0000609/index.html",
+    "returncode": 0,
+    "bytes": 20964,
+    "error": ""
+  },
+  {
+    "file": "OSL_BA.html",
+    "url": "https://oracc.museum.upenn.edu/osl/signlist/l0010/o0000113/index.html",
+    "returncode": 56,
+    "bytes": 0,
+    "error": "curl: (56) The requested URL returned error: 404\n"
+  },
+  {
+    "file": "OSL_IN.html",
+    "url": "https://oracc.museum.upenn.edu/osl/signlist/l0071/o0000256/index.html",
+    "returncode": 56,
+    "bytes": 0,
+    "error": "curl: (56) The requested URL returned error: 404\n"
+  }
+]

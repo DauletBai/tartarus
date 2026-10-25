@@ -1,0 +1,20 @@
+{
+  "source": "sources/Englund_2004_Proto_Cuneiform_Accounts.pdf",
+  "source_sha256": "502dc1173ecc7c9402b1bff7393068b7c33bcbd35e01753ff218fbbdd69d997f",
+  "pages": [
+    {
+      "pdf_page": 10,
+      "printed_page": 32,
+      "file": "data/round14_Englund_printed32.png",
+      "sha256": "916c74a37071b776a4eaccb46b68ade9ec74364c4559a11bd3442e7c5a54eeff",
+      "method": "pdftoppm full-page render; no content editing"
+    },
+    {
+      "pdf_page": 11,
+      "printed_page": 33,
+      "file": "data/round14_Englund_printed33.png",
+      "sha256": "753fad9366e35e2b92160452be25bc21c10ea385335fefc92470f45664bf6068",
+      "method": "pdftoppm full-page render; no content editing"
+    }
+  ]
+}

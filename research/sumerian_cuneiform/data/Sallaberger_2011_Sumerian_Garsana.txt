@@ -1,0 +1,2095 @@
+in: David I. Owen (ed.), Garšana Studies. Cornell University Studies in Assyriology and Sumerology (CUSAS)
+6 (Bethesda, Md.: CDL Press 2011) 335–372
+                                Sumerian Language Use at GarÍana
+              On Orthography, Grammar, and Akkado-Sumerian Bilingualism*
+                                               WALTHER SALLABERGER
+                                                        LMU MÜNCHEN
+
+
+
+
+                 Among the administrative texts from the Ur III period, the GarÍana documents stand
+                 out for their rich vocabulary and a relatively high quota of phonographic writings.
+                 This evidence becomes most fascinating since almost all scribes, who wrote the doc-
+                 uments in the prestigious Sumerian language, bore Akkadian names. This study cov-
+                 ers various aspects of language that contribute to our topic: writing and phonology,
+                 morphology, and syntax; thereby frequencies and proportions are given much atten-
+                 tion. The fact that the GarÍana scribes were mostly native Akkadians transpires rela-
+                 tively rarely in various impositions in morphology and syntax, mostly in the message
+                 domain of single speakers. The mastering especially of the diversified verbal mor-
+                 phology or the invariably Sumerian basic vocabulary is a clear sign of a high degree
+                 of language acquisition, and the phonographic spellings even hint at imitation of
+                 Sumerian phonemes. The integration of special expressions from Akkadian in a ba-
+                 sically Sumerian vernacular agrees well with the fact of a far-reaching acquisition of
+                 the non-native Sumerian language. The active Akkado-Sumerian bilingualism of
+                 the GarÍana scribes would have been unthinkable without constant communicative
+                 contacts with the native speakers of Sumerian in the region.
+
+
+        The archive from GarÍana, a settlement in the                     the GarÍana documents stand out by their rath-
+        province of Umma at the banks of the lower                        er frequent use of a variety of verbs and the for-
+        Tigris, provides a unique occasion to investi-                    mulation in phrases. Furthermore, this homo-
+        gate the usage of Sumerian at the end of the                      geneous corpus boasts a relatively high quota of
+        third millennium. Compared to the bulk of the                     phonographic writings, which allows for a bet-
+        more than sixty thousand published adminis-                       ter comprehension of the actual language than
+        trative texts from this period, the time of the                   does the usual standard orthography. This evi-
+        Third Dynasty of Ur (Molina 2008), which                          dence becomes important and most fascinating
+        present themselves most often as lists with an                    because of the specific sociolinguistic situation:
+        addition of some few administrative key terms,                    the population of the military settlement of
+
+
+         *   David I. Owen deserves my deepest gratitude for                  from discussions with Jan Keetman and, especially,
+             providing me with transliterations of the GarÍana                Wolfgang Schulze, who provided indispensable
+             texts shortly after their acquisition and he encour-             linguistic background information and literature
+             aged me to undertake this study. The study of this               and who encouraged me to describe the treated
+             fascinating text material led to a rewarding ex-                 features more precisely, which eventually entailed
+             change with David, especially in the first years of              hours of counting references.
+             the work on the archive. This study has profited
+
+
+
+
+                                                                    335
+336                                        Walther Sallaberger
+
+
+GarÍana was mainly of Akkadian and other ori-         1. On the GarÍana Archive and Its Scribes
+gins, but it was situated within the Sumerian-        The sheer existence of a “GarÍana archive” is
+speaking area of southern Babylonia; most             owed to the ceaseless efforts of David I. Owen
+scribes, who wrote the documents in Sumeri-           and Rudolf H. Mayr, who collected and pub-
+an, bore Akkadian names.                              lished more than 1400 cuneiform tablets that
+     The discussion is ultimately devoted to this     were looted at the place called GarÍana in
+specific situation of language contact. There-        antiquity (Owen and Mayr 2007). Although
+fore, it concentrates on those aspects of language    the archaeological context is lost, the coher-
+in which differences from standard Sumerian           ence of the archive is remarkable: apart from a
+usage can be noted. A first section addresses the     handful of earlier texts all dated documents
+relationship between written and spoken lan-          belong to the ten years between fiu-Suen 4 and
+guage within this corpus, and a phonological          Ibbi-Suen 4. They are concerned with the
+detail, the spelling of the infinite -e-d-e-forms,    internal organization of the household and the
+becomes a firm witness for the representation         military camp headed by the general and phy-
+of spoken Sumerian in these documents. On             sician fiu-Kabta and his wife, the princess
+the other hand the imposition of Akkadian on          Simat-IÍtaran (cf. Heimpel 2009, 2–4). The
+the Sumerian vernacular used by the GarÍana           probable etymology of GarÍana as GaraÍ-Ana
+scribes is investigated in regard to both syntax      “the camp of An” (with garaÍ as loanword of
+and lexicon.                                          Akkadian kar⁄Íu “military camp”), the dedica-
+     The exceptional situation of GarÍana allows      tion of the main temple to the warrior god
+                                                      Nergal, the role of fiu-Kabta as general, the sta-
+for an exemplary view on Sumero-Akkadian
+                                                      tioning of “soldiers” (aga3-ús, TÉL 171, ITT 3
+bilingualism in southern Babylonia at the end
+                                                      6174) and the high number of “troops” (eren2,
+of the third millennium, just before the eco-
+                                                      TCTI 2 3543) at this place, and the short period
+nomic, political, and social catastrophe at the       of documentation between fiulgi and IÍbi-Erra
+end of the Third Dynasty of Ur put an end to          indicate that GarÍana was mainly a military
+the old city Sumerian states and eventually to        camp in the South, founded most probably by
+Sumerian as their vernacular.                         Ur-Namma or fiulgi of Ur.
+     Methodologically this study has tried to              The proper names reveal that persons of
+avoid single anecdotal observations, which            mostly Akkadian origin were settled here.
+tend to be misleading, but to cover compre-           Thus GarÍana differs sharply from the sur-
+hensively the various aspects of language that        rounding ancient cities of Umma and ªirsu,
+contribute to our topic, and thereby frequen-         which were dominantly inhabited by Sumeri-
+cies and proportions have been given more             ans. Although, of course, a single name does
+attention than it is unfortunately too often the      not reveal the actual language use of the person
+case in linguistic studies of Sumerian. But only      bearing that name, the total evidence is very
+this broad coverage of the evidence allowed a         clear in this regard, as the following tabulation,
+sound application of linguistic models of lan-        based on randomly selected name lists of four
+guage contact and eventually led to an interpre-      contemporary sites (Sallaberger 2004), illus-
+tation that covered all aspects of the analyses.      trates:
+
+                    Total of names                                             Of other or unclear
+      City          counted                Sumerian          Akkadian          linguistic affiliation1
+      Nippur               1433               52 %              21 %                   28 %
+      Umma                  546               68 %              15 %                   17 %
+      GarÍana               172                9%               68 %                   23 %
+      ªirsu                1111               63 %              14 %                   23 %
+                                   Sumerian Language Use at GarÍana                                     337
+
+
+     GarÍana was thus inhabited by a dominant-               flummid-il‹         (IS 4/01, maÍkim)
+ly Akkadian-speaking population, whereas the                 fiarakam            (fiS 9/11, witness)
+administration of the provincial governor at                 fi2li⁄num           (fiS 5/04, maÍkim)
+Umma controlled a dominant Sumerian popu-                    fiu-Adad            (fiS 8/12, ™iri3)
+lation.                                                      fiu-Erra            (fiS 8/06, maÍkim)
+     The distribution of the personal names                  fiu-K›bum           (fiS 9/09, witness)
+among the scribes active at GarÍana agrees with              T›ram-il‹           (IS 2/02–4/01, ™iri3)
+the general picture. In the list of scribes attested         Ur-Eanna            (fiS 8–IS 1/12, ™iri3,
+at GarÍana that is given below, the following                                    maÍkim)
+information is added: the period attested in the
+                                                               U‰i-nawir         (IS 2/05-06, ™iri3)
+documents for the person indicated as “scribe”
+(dub-sar), but no attestations of the same per-            Of the 23 names of scribes,
+son without that title; the administrative                          2 are Sumerian (fiarakam, Ur-Eanna);
+function (™iri3 “go-between, responsible” or
+                                                                  18 are Akkadian (Adad-tillat‹, AÓ›ma,
+maÍkim “commissioner, deputy” as designa-
+                                                                       AÓu-waqar, Aw‹lumma, Ea-d⁄n,
+tions of involvement in transaction) or the role
+                                                                       Ea-Íar, Erra-b⁄ni, Ibni-Adad, Il‹-
+as (eye) witness; the attestation as scribe of the
+                                                                       ‰ul›l‹, I‰‰ur-Suen, L⁄-q‹p(um),
+household in wage lists (text nos. 394, 399,
+                                                                       Puzur-Ninkarak, flummid-il‹, fiu-
+406). Those persons whose title “scribe” is
+                                                                       Adad, fiu-K›bum, fiu-Erra,
+known only from the seal inscriptions are not
+                                                                       T›ram-il‹, U‰i-nawir);
+considered (Owen and Mayr 2007, 429–439):
+                                                                    3 are of various or uncertain linguistic
+    Adad-tillat‹    (fiS 6/05–fiS 8/03, ™iri3)                         affiliation (Babani/Ba-ba-ni, Enlil-
+    AÓ›ma           (IS 2/01, ™iri3)                                   bazaDU/dEn-líl-ba-za-DU,
+    AÓu-waqar       (IS 1/01–3/01, ™iri3)                              fi2li⁄num/fie-NI-a-LUM).
+    Aw‹lumma        (IS 1/12–2/01, ™iri3)
+                                                                In the wage lists two or three scribes are
+    Babani          (fiS 8/11–IS 3/01, ™iri3)
+                                                           listed (Ea-d⁄n, Ea-Íar, L⁄-q‹p(um), Puzur-
+    Ea-d⁄n          (household scribe no. 399,
+                                                           Ninkarak); according to the anonymous
+                    fiS 6/06; no. 406, fiS 6/11)
+                                                           inspection lists between two and five scribes
+    Ea-Íar          (fiS 6/06–9/07, ™iri3,                 were employed at the building work at GarÍana
+                    maÍkim; household scribe               (4 scribes: no. 379, fiS 6/05/22; 2 scribes: no.
+                    no. 394, fiS 6/05)                     402, fiS 6/08; 5 scribes: no. 556, date lost). It
+    Enlil-bazaDU (IS 2/06, ™iri3)                          should be emphasized that the responsible
+    Erra-b⁄ni       (fiS 8/08, witness)                    scribes appear without or with different titles
+    Ibni-Adad       (fiS [x]–IS 3/08, ™iri3)               over a longer period of time (see on the names
+    Il‹-‰ul›l‹(AN.DÙL) (fiS 9/02, eye witness?)            Heimpel 2009, 38–43). The Akkadian scribes
+    I‰‰ur-Suen      (IS 2/07, ™iri3, maÍkim)               of the Akkadian settlement of GarÍana wrote
+    L⁄-q‹p(um)      (no. 394, fiS 6/05; no. 399,           their administrative texts exclusively in Sume-
+                    fiS 6/06)                              rian, not in Akkadian. One may adduce two
+    Puzur-Ninkarak (fiS 6/05–7/12, ™iri3;                  arguments derived from the tradition of writ-
+                    household scribe no. 394,              ing at this period to explain this behavior: the
+                    fiS 6/05; no. 399, fiS 6/06;           scribal education and the tradition of adminis-
+                    no. 406, fiS 6/11)                     trative texts. Teaching of cuneiform writing
+
+ 1
+     This category includes not only Hurrian, Elamite,
+     and unanalyzable names (e.g., of the so-called ‘Ba-
+     nana’ type), but also names such as Urdu2-DN
+     “servant of DN” that can be read both in Sumerian
+     and Akkadian.
+338                                               Walther Sallaberger
+
+
+was intrinsically linked to the Sumerian lan-                corpora. In this regard one may apply the rule
+guage; the syllabary and the ideograms are                   on the relationship between lexicon and lan-
+based on Sumerian and the traditional school                 guage use observed for administrative docu-
+texts, most of all the lexical lists, were Sumerian          ments: An obligatory strict text pattern and a
+even long after the disappearance of Sumerian                restriction of the lexicon to administrative key
+as an everyday vernacular. Secondly, Sumerian                terms allows a reduction of grammatical mark-
+was the language of administration both in                   ers; the relations between various elements,
+southern Babylonia and, more importantly in                  persons and objects, are indicated by the for-
+this regard, in the state organizations, testified           mulaic pattern and are not marked grammati-
+by the archives from PuzriÍ-Dagan.                           cally as phrases. On the other hand, lexical
+    It is probably anachronistic to assume an                diversity implies the use of grammatical rela-
+active royal language policy that had influ-                 tions and their markers. Everyday language
+enced the writing of documents,2 since Akka-                 thus appears in administrative documents in
+dian was used as well for administrative docu-               those phrases that deviate from the standard
+ments in northern Babylonia (Ishan Mizyad,                   formulas used in an archive.3
+see Hilgert 2002, 21–23) and also for royal                      Although both scholarly education and
+inscriptions. Furthermore the differences be-                administrative traditions may partly explain the
+tween the provincial archives of ªirsu and of                use of Sumerian in the GarÍana documents, the
+Umma further rebut the assumption of a state-                lexical variation strongly suggests that this was
+directed technical language for administrative               a vernacular actively used by the scribes. Fur-
+scribes. Nonetheless, there is no doubt that in              ther evidence for this assumption will be pre-
+the state of Ur Sumerian was the more presti-                sented at the end of the article.
+gious language—prominently used in royal
+texts (year dates, hymns, many inscriptions)—                2. Orthography and Phonology: Infinite Verbal
+and it was the vernacular of the economically                    Forms in -e-d-e
+dominating provinces of Umma and especially                  2.1 Unorthographic Writings
+ªirsu.                                                       In the GarÍana documents one encounters a
+    GarÍana Sumerian can definitely not be                   number of so-called unorthographic writings.
+labeled a kind of “simplified Sumerian” that                 Words written regularly with simple or com-
+would apply only administrative key terms.                   pound logograms in the large state or provin-
+Such a documentary pseudo-Sumerian that                      cial archives are represented by basic phono-
+builds on some technical expressions and intro-              grams usually of the CV and VC pattern. A few
+duces artificial Sumerograms is attested for                 examples of words that are usually written dif-
+example at Old Babylonian Uruk in the nine-                  ferently in other Ur III archives may suffice
+teenth century (Sallaberger 2000, 274f.). GarÍa-             here (for other examples see Kleinerman and
+na documents, however, are characterized by a                Owen 2009, 175 s.v. Syllabically written Sum-
+lexical variation that is rare in contemporary               erian):
+
+
+ 2
+      Of course, the high prestige of Sumerian as reflect-       matische Markierungen (mit Hilfe von Kasusmor-
+      ed in the royal texts must not be underestimated           phemen) zu verzichten. Umgekehrt bedeutet lexi-
+      and one notes that fiulgi enhanced the education of        kalische Vielfalt, ein Abweichen von den Schlüssel-
+      scribes by the founding of schools.                        begriffen, auch Grammatizität. [...] Nach dieser
+ 3
+      Based on a study of patterns of administrative doc-        Regel tritt die Syntax der Sprache ihrer Zeit in
+      uments from the Old Sumerian to the Old Baby-              Wendungen und Sätzen auf, die vom Standardfor-
+      lonian period, Sallaberger (2000, 276) concluded:          mular des jeweiligen Archivs abweichen. [....]
+      “Die verbindliche Abfolge der einzelnen Elemente           Wichtig ist noch die (weitgehende) Abhängigkeit
+      einer Urkunde und die Reduktion der lexikali-              des Formulars vom Lexikon: andere Verben als die
+      schen Mittel auf wenige Schlüsselbegriffe erlauben         administrativen Schlüsselbegriffe ziehen syntak-
+      es, zur Darstellung wechselseitiger Bezüge auf gram-       tische Formulierung nach sich.”
+                                   Sumerian Language Use at GarÍana                                               339
+
+
+    Ía-ra-ab-du (GarÍana) = Íár-ra-ab-du (stan-            scribes would have been employed (cf.
+        dard Sumerian) “field surveyor”                    Veldhuis 2008).
+    ™e26-en (in verbal form in-da-™e26-en) =                    It is in the same line of argument that the
+        ™en “to go”                                        number of unorthographic spellings is especial-
+    ú-lá-bi = ul4-la-bi “quickly”                          ly high in the private or small administrative
+                                                           archives at Nippur (Wilcke 2000, 34–49 and
+    The use of unorthographic writings and the             66–80). In his treatment of these writings
+creative use of syllabograms implies that the              Wilcke (2000, 47f.)5 observed that phono-
+Sumerian written at GarÍana was not consis-                graphic writings tend to be more frequent
+tently acquired graphically, that it was not sim-          when a lexeme appears not isolated but in
+ply a prefabricated professional language of               combinations, reduplicated, or with prefixes or
+scribes. Instead the writings “by ear” can be              suffixes.
+taken as unequivocal evidence that these Sum-
+erian phrases were based on spoken Sumerian                2.2 -e-d-e Writings
+as a phonetic reality. For the sake of clarity it          2.2.1 The Evidence
+has to be repeated that at GarÍana unortho-                An especially rewarding field for the study of
+graphic writings appear in a context of freely             phonology at GarÍana is constituted by the infi-
+phrased Sumerian texts (see above), but, of                nite verbal forms ending in _V/-e-d-e (stem
+course, unorthographic writings have to be eval-           ending in a vowel/marû marker e, imperfective
+uated differently in other environments such as            -d-, directive -e) “in order to.” Most referenc-
+the fixed phrases of post-Sumerian legal texts             es can be found in the worker-inspection and
+(e.g. in Old Babylonian Kisurra) or religious              the work-assignment accounts from formula-
+texts.                                                     tions of the type:
+    The relatively high number of unortho-
+graphic writings, as well as the greater variation             n ™uruÍ/geme2 VERB-(e)-dè gub-ba “n
+in the formulations, is a characteristic feature of            men/women on duty in order to do VERB”
+smaller organizations that is shared, for exam-                (nos. 1–306, Owen and Mayr 2007, groups
+ple, by the texts from Irisa™rig/ml-Íarr⁄k‹.4                  I and II).
+Here less “paperwork” has to be performed,                     The following list includes all pertinent
+whereas the large state or provincial scribal              GarÍana forms and it notes relevant parallels
+offices produced more concise and more stan-               from other Ur III archives.6 In cases of variants,
+dardized texts. Apparently the larger amount of            the frequencies are given. Furthermore, the
+scribal work implied a better scribal formation            class of marû-stem formation is indicated (I reg-
+on the job and in the central state organizations          ular, II duplicated, III augmented, IV irregular
+such as at PuzriÍ-Dagan the best-educated royal            verbs).
+
+
+ 4
+     David I. Owen is preparing an edition of texts from        schreibt er es mit Zeichen, die er beherrscht und
+     this archive (Nisaba 15, forthcoming), and I am            die der Lautung des Wortes, wie er es im Ohr hat,
+     grateful to him for sharing with me numerous ex-           nahekommen.”
+     amples.                                                6
+                                                                In cases of ambiguity reconstructed forms have
+ 5
+     Wilcke (2000, 47f.) writes: “[D]er Grund für das           been excluded from the counts. Most references
+     Abweichen von der Norm [ist] nicht zur Schau               can be verified and checked by the verb list in
+     gestellte Gelehrsamkeit, sondern die Unsicherheit          Kleinerman and Owen (2009, 231–377) and
+     des jeweiligen Schreibers. Er kennt das Wort, ist          through Manuel Molina’s indispensable “Database
+     sich aber über die korrekte Zeichenwahl im                 of Neo-Sumerian Texts” (BDTNS) (bdts.filol.
+     Unklaren. In den Zeichenlisten, nach denen er die          csic.es); in some cases (e.g., ra-ra not listed in verb
+     Schrift gelernt hat, standen die Wörter isoliert,          list) references have been added. The comparative
+     ohne Prä- und Suffixe, nicht redupliziert, nicht in        data from other Ur III archives derive from person-
+     Wortkoppelungen oder anderen engen Verbin-                 al collections and Manuel Molina’s BDTNS.
+     dungen, die die Lautstruktur verändern. Darum
+340                                                  Walther Sallaberger
+
+
+     GROUP A: STANDARD ORTHOGRAPHY.                                  ke4-dè (ca. 116™) = *kè(AK)-dè (“I”) “to
+Some verbs comply with the standard orthog-                             make”; in other Ur III texts written kè-
+raphy, where the logographic writing corre-                             dè, cf. Attinger (2005, 62)
+sponds to the expected phonemic realization.                         ku-bu-dè (gu5-bu-dè) (no. 1309:11) =
+The class I stems listed here end in a vowel like                       *gub-bu-dè (I/IV) “to prop up” (note
+all class II verbs:                                                     that gub-bu-dè is not attested at GarÍana
+     dù-dè (I) “to build”                                               despite the ubiquituous gub-ba); cf. reg-
+                                                                        ular gub-bu-dè, e.g., UET 3 697, NATN
+     du8-dè (I) “to caulk”                                              882
+     ge4-ge4-dè (only restored contexts) (II) “to                    ku-úr-gu-ru-dè (no. 972:40, no. 975: 42,
+        return”                                                         no. 1090:1-3) = ? (II)8
+     ™á-™á-dè (II) “to place”                                        ne-ne-de4(TE) (no. 1016:21) = *ni10-ni10-
+     Ói-dè (I) “to mix, blend”                                          dè (II) “to circuit”; cf. literary text Íu
+     lu-dè (I) “to stir, mix”                                           ni10-ni10-dam NATN 8 ii 14
+     ra-ra-dè (no. 262:21) (II) “to hit, beat”                       la-Óa-dè (2™), la-Óe-dè (1™) = *laÓ(4)/5-e-dè
+     sa10-sa10-dè (II) “to buy, pay”                                    (IV) “to bring”; cf. la-Óe-dam, e.g.,
+                                                                        TCL 5 6047:15, 6163:28; LA°5-dam
+     su-su-dam (II) “to repay, replace”                                 SNAT 83, SAT 2 352(?), LA°5-e-dam
+     tà-tà-dè (II) “to apply”                                           TCTI 2 3484
+     zi-zi-dè (II) “to remove”                                       si-™e6-dè/Íé-™e6-dè9 = *Íe™6-e-dè (I) “to
+                                                                        boil, cook”; no corresponding forms
+      GROUP B: PHONOGRAPHIC WRITING:
+                                                                        attested
+Some verbs are consistently written phono-                           te-te-dè (de4-de4-dè?) (no. 222: 4) = *de5-
+graphically, not logographically. Note that all                         de5-dè (II) “to collect”?10
+Óamˇu stems of class I verbs end in a consonant:
+                                                                     ti-te (dì-de4) = *di-dè (IV), in: káb ti-te
+    dì-de4 see below ti-te                                              (dì-de4) (no. 271: 6) “to check, calcu-
+    gu5-bu-dè see below ku-bu-dè                                        late”; regularly written di-dè/-dam, cf.
+    ì-li-dì (ca.34™), ì-li-dè (2™ in text no. 53)7 =                    Attinger (1993, 396. 404. 574)
+       *íl-e-dè (I) “to lift”; in Ur III texts usu-                  ù-ru-dè = *uru3-dè (I) “to level”; in other
+       ally reduplicated: íl-íl-dè; reading íl not                      Ur III texts written ùr-dè, cf. Yoshikawa
+       assured in NATN 491: 4' (ge íl-dè)                               (1988, 63)
+
+
+ 7                                                              10
+      The reading of the variant i-l[i]?-dè, no. 46: 25', re-        No. 222 reads: 1 ™uruÍ LÚ.TU9 ... PN lú-kí™-ge4-a
+      mains uncertain, since the same text writes ì-li-dì            lugal-ta (for -da) lú te-te-dè in-da-™é26-en “1 man,
+      in line 20'; documents tend to keep the same or-               a fuller, went with PN, the royal messenger, in or-
+      thography for a word (cf. ì-li-dè 2™ in no. 53).               der to ... men.” Kleinerman and Owen (2009, 360)
+ 8
+      According to Kleinerman and Owen (2009, 302)                   understand the verb as te “to approach” (marû stem
+      this stands for kúr gur-ru-dè “to return in the fu-            te-™e26); the reduplication would point to a plural
+      ture.” However, this does not fit the contexts,                object: “in order to approach men.” However, in
+      which are about flour treated for meat. In letters             phonographic writings te represents /de/. Thus I
+      the marû stem of gur appears in nam-mi-gur-re. No              tentatively propose to understand it as a writing for
+      verbal core like /kuru/ of the reduplication class (II)        de5-de5-dè (II) “to collect.” The combination of
+      is listed by Attinger (2009) Annexe 2. Perhaps we are          de5 with persons is known, e.g., from NG 209: 13
+      dealing with a form of the marû stem KARA2.KARA2               lú-enim-ma-bi ba-de5-de5-ge-eÍ-[àm] “its witness-
+      of KARA2 “to illuminate, light.” Do the texts thus             es have been collected (i.e., withdrawn, brought
+      refer to the coating of meat with flour?                       somewhere else?)”; cf. also NG 190: 2–3.
+ 9
+      Add reference no. 65:21', listed by Kleinerman and
+      Owen (2009) as sim “to sieve, filter.”
+                                     Sumerian Language Use at GarÍana                                               341
+
+
+ GROUP C: LOGOGRAPHIC WRITING WITH-                                   NATN 17 etc.; a-á™-dè-e NATN 397; á-
+  OUT INDICATION OF MARÛ VOWEL *-E:                                   ™á-dam NATN 134 (Yoshikawa 1988, 73)
+Other verbs are written only with logograms                        ba-al-dè (I) “to excavate” (no. 104:37 //
+(transliterated below in small capitals), which                       no. 105:35, no. 155: 26 restored)13; cf.
+allow no conclusion on the pronunciation;                             ba-al-da(-Íè) MVN 11 50, ba-al-e-dè
+here some references to other Ur III texts are                        TCS 1 216,14 nu-ba-al-e-da AOAT 25
+added:                                                                444 no. 9, ba-al-a-dè TPTS 2 5:4
+    DUB-DUB-dè (II?) “to heap” (no. 385); cf.,                     lu-LU°-dè (I) “to clean, wash” (no. 783:3);
+       e.g., CT 32 49                                                 cf. luÓ-dè UET 3 49415, luÓ-da RTC
+    È-dè for /edede/ (è.de-d-e) (III) “to go/                         307; luÓ-dam JCS 32 230 6 N-T 254
+       bring out”; cf. È-dè, e.g., UET 3 836.                      tùm-dè (IV) “to bring”; regular form, no
+       854, more often reduplicated form (plu-                        -e expected (on tùm see Meyer-Laurin
+       ral object) È.È-dè, see Yoshikawa (1988,                       2010).
+       56); È.È-dè may also replace the marû
+       stem, e.g., in NRVN 1 264, see Krecher                 GROUP D: LOGOGRAPHIC WRITING OF VER-
+       1995, 165–73                                           BAL BASE WITH CONSISTENT PHONOGRAPHIC
+    GAZ-dè for /gazade/ (gaze-d-e) (I) “to crush”                  RENDERING OF MARÛ VOWEL *-E:
+       (no. 1013); cf. Yoshikawa (1988, 55)                   This group includes standard writings of class I
+    G≤D-dè for /gidide/ (gíde-d-e)11 (I) “to                  verbs that end in a consonant in the Óamˇu stem
+       stretch, draw”; cf. NATN 816                           (cf. taÓ-Óe-dam, zi-re-dam).
+    GUL-dè for /gulude/ (gule-d-e) (I) “to                         KALA.KALA-ke4-dè (I?, II?) “to reinforce”;
+       decompose”; cf. UET 3 894                                      cf. KALA.KALA-ge-dè UET 3 486 etc.,
+    KEfiÉ-dè for /keÍedrede/ (keÍedre-d-e) (I)                        KALA-ge-dè UET 3 1504 viii 14
+       “to bind, fasten”; cf. in texts from Ur the                 KU5-ru-dè (I) “to cut (etc.)”; cf. Ur III reg-
+       variants KEfiÉ-dè UET 3 1212, KEfiÉ-dè-                        ularly KU5-dè, but TMHNF 1/2 271
+       dè UET 3 873, KEfiÉ-re-dè UET 3 1531                           KU5-ru-dè (2™) (Yoshikawa 1988, 58f.)
+    SUR-dè for /surude/ (sure-d-e) (I) “to                         LÁ-e-dè (I) “to hang, weigh (etc.)”; cf. LÁ-dè,
+       twist, twine”; cf. SUR-dè, e.g., NATN                          lá-dam (Yoshikawa 1988, 58: 7, 59: 11)
+       596, Yoshikawa 1988, 60: 13; SUR-e-dè                       si-ke4-dè (I) “to insert, pack into” (2™, nos.
+       UET 3 1465
+                                                                      274-275)16; cf. Ur III regularly si-ge4-
+GROUP C': OTHER VERBS WITHOUT INDICA-                                 dè17, but si-ke-dè NATN 114
+       TION OF marû VOWEL *-E:                                     SÌ-ke4-dè (I) “to apply, place, tamp”; cf.,
+     á-á™-dè (I) “to measure out” (no. 299:5,                         e.g., sì-ge4-dam RTC 288, sì-ge4-dè
+        restored in no. 298:5)12; cf. á™-da                           UET 3 556, 613, sì-ge-dè UET 3 557, sì-
+        (Yoshikawa 1988, 72f.), á™-e-dè, e.g.,                        dè UET 3 290
+
+11                                                            15
+     Probably reduplicated in a different context: [G]≤D.          A reading luÓ-dè in UET 3 787:2 could not be ver-
+     G≤D-da[m] no. 525:7.                                          ified by collation.
+12                                                            16
+     This reference to Íe á-á™-dè “to measure out grain” is        Kleinerman and Owen (2009, 343) assume a vari-
+     not listed under á™ in Kleinerman and Owen 2009.              ant writing of sè/sì in the phrase má saÓar ég a-ab-
+13
+     These two references are missing in Kleinerman                ba si-ke4-de “to pack clay (for) the sea dike on the
+     and Owen 2009, 253, but in no. “106:36” listed                boat” (or: “to sink boats with clay for a sea dike”?);
+     there ba-al does not appear in the transliteration of         si-g is used with both má(-a) “to fill on the boat”
+     the text.                                                     and saÓar “to pack clay” in GarÍana (see ibid.
+14                                                                 p.344f.).
+     In OrSP 47-49 211 (CDLI P 125101) -da is the co-         17
+     mitative case: i7 ba-al-la-da Íu-zu ™á-ra-(ta) “(hire-        BDTNS has also si-ge-dè in TMH NF 1/2 69
+     lings) who helped at the excavation of the river.”            (CDLI P 134381) and RA 19 41 no. 50 (CDLI P
+342                                                Walther Sallaberger
+
+
+      SILA11-™á-dè   (I) “to knead dough”; no                      NAª4-dè (3™, including 2™ in no. 92),
+         comparable forms                                            NAª4-™á-dè (14™), al-NAª4-™á-dè (2™) (I)
+      fiÚM-mu-dè (I) “to give”; thus regularly Ur                   “to crush”; no comparable forms
+         III, exceptionally fiÚM-e-dam CST 537,                  SÀG-dè (5™), SÀG-ke4-dè (2™ in text no.
+         fiÚM-e-dè RA 19 41 n.50 (CDLI P12 7692)                    250) “to beat”; cf. for the final consonant
+      TA°-Óe-dam (I) “to add” (no. 1381);                           TCS 1 173:5 Óa-sàg-ge
+         BDTNS lists taÓ/Óe-dam/da/dè (9™),                      TAB-bé-dè (I) (10™), TAB-ba-dè (1™) (I) “to
+         taÓ-e-dam (3™), taÓ-dam (5™), taÓ-Óu-                      pile, stack”; cf. TAB-bé-dè AOS 32 P 1,
+         dam (sic, 1™) (accessed 12/02/2009).                       TAB-bé-da TCL 2 5540, TAB-dam, e.g.,
+      te-™e6-dè (III) in: Íu te-™e6-dè “to receive”;                NRVN 116; see Yoshikawa (1988, 72)
+         cf. Íu ti-dè NATN 59:9 (Yoshikawa                    For similar variants cf., e.g.,
+         1988, 62), Íu TI-dam; Íu TI-™e26-dè
+                                                                 D≤M-dè (MVN 14 323, Umma), D≤M-me-
+         BPOA 1 382
+                                                                    dè (UET 3 812//1498 vi, Ur), D≤M-e-dè
+      zi-li-dè (1™), zi-li-dì(TI) (2™), zi-lí-dè (3™)
+                                                                    (SNAT 535 e.a., Umma)
+         = *zil-e-dè/zi-le-dè (I) “to strip”; only
+         zi-la “stripped off” attested in Ur III                 SAR-dè (UET 3 620), SAR-re-dè (UET 3
+         texts.                                                     666), both at Ur
+      zi-re-dam (I) “to cancel”; regularly Ur III             2.2.2 Discussion
+GROUP D': LOGOGRAPHIC WRITING OF VER-                         2.2.2.1 Verbal Stems with u and Vowel
+BAL BASE WITHOUT OR WITH PHONOGRAPH-                              Assimilation at GarÍana
+IC RENDERING OF MARÛ VOWEL *-E:                               The GarÍana references hint at a vowel assimi-
+Despite the homogeneity of the GarÍana                        lation that pertains to the marû -e before the
+archive some of these infinite marû forms occur               -d morpheme, as it was until now attested only
+in various forms (cf. already in group B: ì-li-dì/            for certain verb stems with the vowel -u-. The
+ì-li-dè, la-Óa/Óe-dè):                                        latter vowel assimilation is a regular feature: in
+     ÀR-dè (2™), ÀR-ra-dè (4™) (I) “to grind”;
+                                                              the Ur III data base BDTNS, the sequence
+       cf. ara3(ÀR)-dè SAT 2 1123, SAT 3 1643;                (-)Íúm-mu(-) “to give” resulted in 545 hits
+       ÀR-e-dè SAT 3 2128, UET 3 151(?)                       (not checked); for (-)Íúm-e(-) only three
+                                                              unequivocal examples were found (search of
+     BALA-dè (6™, including 4™ in no. 609),
+       BALA-a-dè (2™, no. 39:38, no. 45:18),
+                                                              2009/11/25). Since a writing *Íúm-me is
+       BALA-e-dè (2™, no. 390, 1523), BALA-a-
+                                                              apparently not attested, the writing Íúm-e pri-
+       e-dè (4™, nos. 200–203)18 (I) “to transfer,            marily indicates the marû morpheme -e and
+       to rotate”; cf., e.g., BALA-dè RTC 333,                does not aim at a phonographic rendering of
+       BALA-e-dè RTC 336. 341 (Yoshikawa                      the respective vowel.20
+       1988, 58), UTI 5 319119                                     ku-bu-dè (gu5-bu-dè) = *gub-bu-dè
+     GA6-dè (4™), GA6-™á-dè (ca. 55™) (I) “to car-                   (group B), ku-ur2-gu-ru-dè (B), ù-ru-dè
+       ry”; cf. in Ur III texts reduplicated ga6-                    = *uru3-dè (B), ku5-ru-dè (D), Íúm-
+       ga6-dè (thus also, pace BDTNS, CST                            mu-dè (B); cf. Ur III gub-bu-dè, su-bu-
+       627)                                                          dè
+
+
+                                                              20
+      127692); but in both cases si-ge4-dè (ge4, not ge) is        The writing of the underlying morpheme and not
+      possible or even probable according to the photo-            its actual realization was described as “graphie mor-
+      graphs.                                                      phophonologique” by Attinger (1993, 99ff.); the
+18
+      On the various forms cf. Heimpel (2009, 242).                term “morphographic” is a transposition of the ex-
+19                                                                 pression to be used together with “logographic”
+      BPOA 1 964: 4 ™uruÍ .... 11 tu9 Íe bala-a-da ummaki          and “phonographic.”
+      (transliteration only) is unclear to me.
+                                  Sumerian Language Use at GarÍana                                          343
+
+
+2.2.2.2 Verbal Stems with a                             unknown from other Ur III documents, as attest-
+Besides the already known change of -e-d >              ed by the following examples:
+-u-d, the GarÍana texts show also -e-d > -a-d               á™: á-™á-dam Nippur, NATN 134
+after a stem containing a as the only or as the                (Yoshikawa 1988, 73)
+last vowel (sila11.™); the attested verbs end in            ba-al: ba-al-e-dè Umma, TCS 1 216; nu-
+H/’, Ó, b, ™, r. As it is the case with verb stems             ba-al-e-da ªirsu, AOAT 25 444 no. 9;
+with u (e.g. du10.g-e-d-), certain “/a/ verbs”                 ba-al-a-dè Umma, TPTS 2 5:4
+do not follow this vowel assimilation, namely
+sàg-e-d- and kala.g-e-d-.                                   dab5: dab5-ba-dè in Irisa™rig, examples cit-
+                                                               ed by Heimpel (2009, 62f.); other Ur III
+(a) Vowel assimilation -e-d > -a-d without                     texts have dab5-dè, or reduplicated dab5-
+    variation:                                                 dab5-dè (Yoshikawa 1988, 57)
+    SILA11-™á-dè (D)                                        In conclusion, there is sufficient evidence
+    ÀR-dè (2™), ÀR-ra-dè (4™) (D')                      for a variant -a-d-e < -e-d-e in the Ur III peri-
+    GA6-™á-dè (ca. 55™), GA6-dè (4™) (D')               od, which can be understood by analogy with
+    NAª4-dè (3™, including 2™ in no. 92),21 NAª4-
+                                                        two related phenomena, the vowel assimilation
+       ™á-dè (14™), al-NAª4-™á-dè (2™) (D').            -u-d-e < -e-d-e and the sporadically attested
+                                                        assimilation -e > -a in words ending in _a in
+    Note that ™á could also be read ™e26, but for       the ergative case (ama-a; see Attinger 1993,
+an /e/ vowel GarÍana texts would probably use           211). However, contrary to -e > -u, which
+™e6 instead, as shown by the example si-™e6-dè          characterizes the marû stem of class I verbs as
+(group B).                                              well (Íúm-mu, gub-bu), -e- > -a- is restricted
+(b) Vowel assimilation with a/e variation               to the combination _a_-a-d-e (< _a_-e-d-e);
+    BALA-dè (6™, including 4™ in no. 609),
+                                                        thus any confusion with nominalized or infi-
+       BALA-a-dè (2™, no. 39:38, no. 45:18),
+                                                        nite perfective forms ending in -a is avoided.
+       BALA-e-dè (2™, no. 390, 1523), BALA-a-           2.2.2.3 Verbal Stems with i and e
+       e-dè (4™, nos. 200–203) (D')
+                                                        It is more difficult to discover a differentiation
+    la-Óa-dè (2™), la-Óe-dè (1™) = *laÓ(4)/5-e-dè       between /e/ and /i/, since in the cuneiform
+       (B)                                              writing system the same sign often covers both
+(c) Without vowel assimilation                          the e and the i vowels (e.g. ni = ni, né; ri = ri,
+    SÀG-dè (5™), SÀG-ke4-dè (2™ in text no.
+                                                        re). In the Sargonic period “sign pairs” of
+       250) (D')                                        closely related values were used to distinguish
+                                                        between CV syllables with /e/ or /i/ (e.g. gi4
+    KALA.KALA-ke4-dè (D)                                vs. ge, le vs. lí; see Sommerfeld 1999, 18–21;
+    LÁ-e-dè (D)                                         Hasselbach 2005, 32–35. 39–73). Such rules
+    TA°-Óe-dam (D)                                      seem not to apply in the Ur III period, espe-
+    TAB-bé-dè (I) (10™), TAB-ba-dè (1™) (D').           cially in the syllabary of GarÍana (note, e.g.,
+       Here the /a/ coloring remained an                that GarÍana writes li-iq-tum for standard Ur III
+       exception.                                       lí-iq-tum, Óu-ri-um for Óu-rí-um).
+Most of the /-a-d-e/ spellings appear as variations     (a) i probable
+of logographic writings or of a morphographic                ì-li-dì (ca.34™), ì-li-dè (3™ in text no. 53) =
+rendering as -e-dè, but la-Óe-dè/la-Óa-dè points                *íl-e-dè (B)
+to a variation as linguistic reality. Although only          zi-li-dè (1™), zi-li-dì(TI) (2™), zi-lí-dè (3™) (D)
+the GarÍana texts offer a broader basis for this phe-   (b) e probable:
+nomenon of vowel harmony, it is not completely               si/se-™e6-dè = *Íe™6-e-dè (B)
+
+21
+     The reading na™4 is based on na™a4(KUM).
+344                                         Walther Sallaberger
+
+
+     te-™e6-dè (D)                                    3. Additional Notes on the Syllabary at
+(c) undecided cases:                                     GarÍana
+     zi/ze-ri/re-da                                   A study of the phonograms that was used by
+     si-ke4-dè (D)                                    the GarÍana scribes provides another clue that
+     sì-ke4-dè (D)                                    the spoken language had a strong impact on the
+     With the i sequences one notes that the          orthography and resulted in the substitution of
+vowel assimilation in rare cases even affects the     traditional standard writings. The deviations
+final directive -e in ì-li-dì and zi-li-dì (Owen      from the standard orthography constitute fur-
+and Mayr 2007 transliterate de9 for dì). This fact    ther evidence for the sound changes that both
+and the writing zi-lí-dè are the main arguments       Sumerian and Akkadian underwent before or
+to suggest a similar vowel assimilation for these     during the early Ur III period (see, e.g., Jagers-
+two verbs.                                            ma 2000 [2005], Keetman 2004a, 2004b).
+     The case of sì-ke4-dè is hard to decide. ke4     3.1 Specific Sumerian Phonemes
+represents generally the combination of geni-
+tive and ergative, _k-e, and at GarÍana ke4 is        At GarÍana, the Sumerian phoneme ™ is always
+also an unorthographic writing for kè(AK). The        correctly employed also in phonographic and
+Old Babylonian sign-list Proto-Ea 243 gives           in unorthographic writings (signs ™á/™e26, ™e6,
+both gi-i (1™) and ge-e (2™) for the word “reed       [™u10]). The so-called dr phoneme appears in
+mat.” The rendering -ke4-dè represents a              the traditional orthography rá(DU) with the
+unique feature of the GarÍana orthography,            marker -a of infinite perfective forms, e.g.,
+whereas elsewhere the sequence -gi4-dè is used        keÍe2-rá22 “bound,” ku5-rá “cut,” but before -e-
+for both si-g and sì-g. Since gi4 represented /gi/,   d-e it appears as [r] in ku5-ru-dè (see above).
+not /ge/ in the Sargonic period, this could be             The use of phonograms for stops in unor-
+taken as an argument for a reading sì-gi4-dè          thographically written Sumerian is consistent
+instead of sì-ge4-dè; for GarÍana, however, this      with the Akkadian system at use at GarÍana, as
+would force us to assume a unique “ki4” at use        far as it can be reconstructed. ti was used for the
+besides ke4.                                          verb de6 “to bring” and for -dè ([di]), and sim-
+     The unorthographic phonographic writ-            ilarly in Akkadian one finds dì(TI)-um, PN i-
+ings of GarÍana thus express a vowel assimila-        dì(TI)-ìr-ra. Rarely does the phonogram di(DI)
+tion that was elsewhere mostly hidden behind          appear in Akkadian as in the PN dÍamaÍ-di-in,
+the standard logographic rendering. As we             but it had not yet replaced dì(TI). Similarly the
+have seen above, the unorthographic replace-          variations between ta- and tá- are a reflex of the
+ment of logograms by phonograms appears               undergoing replacement of tá(DA) by ta (see the
+mostly if lexemes are embedded in grammatical         index of names Kleinerman and Owen 2009,
+forms with prefixes and suffixes. The regularity      615). These writing conventions conform to
+of the vowel assimilation with certain verbs and      the tendencies evaluated by Keetman (2004a).
+the unorthographic rendering both prove that               A unique feature of GarÍana orthography is
+the vowel assimilation was based on the actual        the use of -ke4 in -ke4-dè in infinite verbal
+spoken language. The Sumerian that was writ-          forms (_g-e-d-e, see above). In Akkadian con-
+ten by the GarÍana scribes is thus based on the       texts both ki and gi occur at GarÍana (note, e.g.,
+living, actual use of Sumerian, as the probably       below p.357f. ar-ki-LUM vs. Ía-pá-ar-gi-lum).
+bilingual inhabitants of GarÍana heard it in their    Does this mean that -ke4 marks a specific Sum-
+environment of the Umma province. Further-            erian vowel quality of /ke/ vs. /ki/ (see above
+more, since progressive vowel assimilation            on -ke4 in _k-e-d-e, and note unorthographic
+does not occur in Akkadian, an imposition on          ke4 for kè)? Or should we assume that the velar
+the side of the scribes can safely be excluded.       stop was considered voiceless both in ke4 for kè
+
+                                                      22
+                                                           No. 855 reads ™eÍgu-za sìr-da for “keÍe2-da.”
+                                 Sumerian Language Use at GarÍana                                         345
+
+
+“to make” and in sì-ke4-dè for standard sì-gi4-              PN i-ta-è-a “who came forth from her,”
+dè by the Akkadian scribes and they hesitated                    more often at ªirsu and Umma, in-ta-è-
+to employ the sign KI? The second option                         a especially at PuzriÍ-Dagan
+becomes more likely if one considers hints at                nin-i-ti Umma passim, // lugal-i-TI ªirsu
+Akkadian perceptions of Sumerian phonemes                        (e.g. TCTI 1 732), Umma (e.g. Torino 2
+as identified in the following paragraphs.                       703), which should probably be inter-
+3.2. Prefix /i-/ Written ì- and i-                               preted as nin/lugal-i-tìl “the Lady/Lord
+The Sumerian verbal morpheme /i-/ appears                        became/was life” by comparison with
+in two orthographies even in similar forms:                      Presargonic nin-ì-tìl (BIN 8 39 iii 25) or
+                                                                 the writing lugal-ì-tìl (e.g. ªirsu RTC
+     i-: u4 dur11-ra i-me (no. 466), i-[me-a] (no.               399 iv 6; more often at Ur)
+        444)
+                                                             The writing of the verbal prefix with i-
+     u4 é NN-Íè i-re-Ía-a (no. 480), u4 kaskal-Íè        appears more often in Old Babylonian legal
+        i-re-sa-a (no. 529)                              documents (but not yet in the Isin craft archive
+     u4 ™eÍguÍur i-im-de6-a                              of the time of IÍbi-Erra and fiu-iliÍu), in royal
+     ì-: ì-™ál, ì-Ói, ì-lá, ì-™en-na-a, ì-im-™en-na-     inscriptions beginning with the second Isin
+        a                                                king fiu-iliÍu (RIME 4.1.2.1:22 i-ni-ib-ku4-
+     The same morpheme /i-/ is written with              ku4-a), and in Old Babylonian literary texts.
+both I and NI(ì) as most clearly shown by the                The sound change in Akkadian (yi > i) led
+variation of i-im vs. ì-im-. Therefore, the              to a phonological equivalence of I (yi > ’i) and
+former distinction between I for /yi/ and NI(ì)          NI (’i), so that now both signs could express the
+for /’i/ was no longer valid (note also writings         sound /(’)i/ in Sumerian. As a result, the value
+like i-la-ak-nu-id, ilak-nu’’id, whereby ’il “god”       of a phonogram was defined by its use in writ-
+is written now with i-, formerly /yi/). The              ing Akkadian. This implies that writing, to a
+interchange of I and NI in the Ur III period is          large extent, represented language directly in its
+known from Akkadian contexts (Hilgert 2002,              phonological (or phonetic?) form.
+120). However, outside GarÍana the Sumerian
+verbal prefix was always rendered by the tradi-          3.3 SV and ﬁV Series: Plural Suffix -eÍ +
+tional writing ì- in Ur III documents, whereas               Nominalizer -a Written -sa and -Ía
+i- is only rarely attested in some Sumerian per-         The sequence -eÍ-a, suffix of the 3rd person
+sonal names:                                             plural agent in the preterite -eÍ plus nominaliz-
+                                                         er a, is written -Ía in Sumerian, but in GarÍana
+                                                         this traditional writing can be substituted by -sa.
+                                                         Some examples:
+
+    (™uruÍ) má PN G.-ta U.-Íè in-G≤D-Ía-a               (™uruÍ) má ... G.-ta P.-Íè in-G≤D-sa-a
+    “men, who hauled the boat of PN from G. to          “(men) who hauled the boat from G. to P.” (no.
+    U.” (no. 238)                                       253 etc.)
+    u4 é NN-Íè i-re-Ía-a “when they went to the         u4 kaskal-Íè i-re-sa-a "when they went on expe-
+    house of NN” (no. 480)                              dition" (no. 529)
+
+    in-TI(di3)-Ía-a (no. 1062) “who carried”            mu-un-TI(di3)-sa-a “who brought” (no. 243,
+                                                        304)
+                                                        u4 bàd in-dù-sa-a “when they built the wall”
+                                                        (no. 396 etc.)
+    u4 igi Íu-kab-tá inda3 in-gu7-Ía-a “when they ate
+    bread in front of fiu-Kabta” (no. 479)
+346                                                     Walther Sallaberger
+
+
+The plural morpheme alone is written -eÍ, -éÍ,                      probably an existing difference between /s/
+or -uÍ (in-tùm-uÍ, e.g., no. 27).                                   and /Í/ was only imperfectly perceived by the
+     This orthographic variance cannot be ex-                       Akkadian scribes at GarÍana so that they could
+plained on the basis of the Sumerian evidence                       use both signs interchangeably in phonograph-
+alone, since there SA and the SV series of pho-                     ic spellings.27 Interestingly, they employed SA,
+nograms and fiA and the fiV series were always                      which was not attributed a specific value in
+distinguished; note at GarÍana, e.g., Ía-ra-ab-                     Akkadian, as if a “foreign” phoneme should be
+du for Íár-ra-ab-du, but sa “bundle.” In Akka-                      represented.
+dian, however, the former distinction between                           This case is slightly different from the one
+the Sargonic fiV- and the SV-series, represent-                     described before for the coincidence of i- and
+ing etymological t (θ) and etymological Í, s,                       ì- as writings for the verbal prefix: The latter
+respectively, had disappeared by the Ur III                         feature continued to be used in the Old Baby-
+period; now both series represented /Í/.23                          lonian period, whereas the permutability be-
+Since Akkadian etymological s was represented                       tween SA and fiA and the use of SI for /si/ and
+by signs of the ZV series (ZA, ZI, ZU), the SV                      /Íe/ in Sumerian remained a local phenome-
+series was deprived of any function in Akkadi-                      non of the GarÍana documents. For an evalua-
+an. So in the writing of Akkadian words and                         tion of the evidence see below p. 364f..
+names at GarÍana, SA is never attested, only
+fiA.24 The equivalence of the fiV series and the                    4. Observations on the Sumerian Grammar at
+SV series appears in the exchangeability of SI                         GarÍana
+and fiI (in: ták-si-ru-um, ták-Íi-ru-um) or even SI                 The characteristic style of administrative docu-
+and fiE (in the personal name si-um = Íe-um,                        ments with their short notes and asyntactic lists
+name of the father of Adalal). Both SI and fiI                      hinders an investigation of the Sumerian gram-
+appear in Akkadian names and words.25                               mar. The most obvious field of study, the
+     From the viewpoint of an Akkadian sylla-                       grammatical relations including the case system
+bary, one can easily understand that SA repre-                      and its reflections in the verb, is difficult to
+sented not only the traditional Sumerian value                      evaluate, since administrative documents often
+/sa/, but also /Ía/ and that SI was used for /si/                   do not write case markers. Case markers are
+and for /Íi, Íe/ (note, e.g., SI for the verbs si-g                 especially rare with personal names, and in
+and Íé-™, respectively, the latter in the unor-                     many frozen phrases the genitive case was sys-
+thographic writing SI(Íé)-™e6-dè, see above).26                     tematically disregarded.
+In Sumerian everything points to a continua-                            The observations collected here are based
+tion of the difference between /s/ and /Í/,                         on a repeated close reading of the GarÍana
+written by the SV and the fiV series, respective-                   texts. In most cases I have tried to find parallel
+ly, although admittedly an unequivocal differ-                      examples from other Ur III texts in order to
+entiation remains a thorny issue for many                           investigate if a specific phenomenon occurs
+lexemes and in diachronic perspective. Thus,                        only here, although unfortunately this was not
+
+
+23
+      Hilgert (2002, 128-133); for the continuation of                      fiI: ták-Íi-ru-um; personal names: a-Óa-am-ar-Íi, é-
+      this pair in southern Old Babylonian, see Kogan/                   a-nu-ùÓ-Íi, Íi-ba-aq-r[a-at], Íi-ma-tum, Íi-nu-ri, Íi-pu-
+      Markina (2006, 569).                                               uz-ri.
+24    ™eÍ                                                           26
+          Ía-bar-gi-lum; personal names: Ía-lim-be-lí, Ía-lim-           In a somewhat similar way the Sumerian simda,
+      dú-ri, lú-Ía-lim etc., pí-Ía-aÓ-DINGIR, pi5-Ía-Óa-lum,             loanword from Akkadian Íimtum “brand, branding
+      Ía-at-èr-ra and other Ía-at-names; ip-qú-Ía, ù-qì(?)-              iron,” appears both as sim-da and Íim-da.
+      pá-Ía, note also Ía-Ói-ti, Ía-at-ri-tum, al-la-Ía-ru-um,      27
+                                                                         Cf. also the unorthographic writing of ur-dasar-lu-
+      Ía-bar-zi-na-at, taÓ-Ía-tal, si-ri-Ía.                             Ói as ur-Ía-lu-Ói in some texts (nos. 43–45).
+25
+      SI: si-ì-tum, ták-si-ru-um; personal names: i-ˇib-si-na-
+      at, ì-lí-si-na-at, si-mu, dub-si-ga, si-ri-Ía, la-te-ni-si,
+      ku-un-si-ma-at.
+                                 Sumerian Language Use at GarÍana                                     347
+
+
+possible for all features treated below. A more        ba-an-Íi-:   sa10
+systematic study of the Sumerian grammar at            ba-na-:      Óa-la (for Óal), zi (zi-g)
+GarÍana may perhaps be helpful, but it would           ba-ra-:      du8, Íe™6
+gain in importance only by a careful compari-
+son with the bulk of the Ur III documentation.         bí-ib-:      sù-ub
+                                                       bí-in-:      *a5 (bí-na for bí-in-a5, no.
+4.1. Finite Verbal Forms at GarÍana                                 1048:2), du11, gi4
+In administrative texts verbs occur mostly in          ga-ra-ab- su (no. 1499, GarÍana?)
+infinite forms, of which a special type has been       Óa-ba-:      -tur-re
+treated above in section 2. Finite forms are rar-      Óa-ba-ab-: Íu -ti-™e26
+er, but they occur also in the few letters and
+legal documents. Generally, the verbal system          Óa-ba-Íi-ib- Íu -ti (no. 1499, GarÍana?)
+seems to obey the Sumerian grammatical rules           Óé-eb-:      -sá-e
+apart from the few exceptions that will be not-        Óé-en-:      -™á-™á
+ed in the paragraphs that follow. As an exam-          Óé-na-ab-: -Íúm-mu
+ple, I refer to a lexical investigation of the verbs   ì-:          dab5, ™ál, ™en, Ói, lá, tab; in no.
+used for “to bring” (Sallaberger 2005), where                       1511: -dan6-dan6, -e-re, U+NU
+the GarÍana evidence helped substantially to                        (GarÍana?)
+solve the puzzle not only because of the unor-         i-:          me, -re-Ía/sa-a (™en, pl.)
+thographic writings, but also because the subtle
+differentiations of the plural forms depending         ì-im-:       ™en
+on the object for the verbal stem and the agent        i-im-:       de6
+for the suffixes were strictly followed.               ì-in-:       DU?
+     Since it cannot be the purpose of this study      ib-:         -kur-re (for Íu gur?), -tab-bé
+to unravel the verbal morphology, the differ-                       (both no. 1511, GarÍana?)
+entiation and flexible variation of verbal forms       íb-:         ga6, gíd, gu7, na™ (all collective,
+met in the GarÍana corpus are illustrated with                      trans. pret.), su-su (su-g, trans.
+the help of two lists, one of the prefixes and the                  present-future), ra, sá (intrans.)
+other of the lexemes combined with more than
+                                                       íb-ta-:      Ói, zi
+one prefix chain. The few examples of pre-pat-
+terned phrases that are the topic of the next          in-:         (sing.) da (no. 1463), du8, ge-
+paragraphs have to be read against the picture                      en, gu7, ku5, lá, la-aÓ (for laÓ4),
+obtained by these lists.                                            pà, sù-ub (for Íub?); (plural)
+     Prefix chains of finite verbs (the list in-                    -dù-sa-a, -ge-né-eÍ, -gíd-sa-a,
+cludes references from the text nos. 1462–1527,                     -gu7-Ía-a, -TI-Ía-a (for de6),
+“Tablets of Unknown Provenance” and “Sup-                           -tùm-uÍ (for túm)
+plemental Texts” with the exception of 1466,           in-da-:      ™ál, ™e26-en (™en)
+1478, 1479, 1490, 1491, 1493 from Irisa™rig/           in-na-:      ge17-ga (intrans.)
+ml-Íarr⁄k‹ and elsewhere):                             in-na-an-: Íúm (trans.)
+   al-:           -na™4-™á, -ús-sa                     in-Íi-:      sa10 (no. 1477)
+   ba-:           a5/aka, dù, gi-in/ge-en/gen7 (=      mu-un-:      (intrans.) ™ál (no. 1057), -til-la-
+                  ge-n), gul, ™ar (no. 1259, 1369),                 ta (for tìl), (trans.) (sing.) TI (for
+                  Ói, Óu™, keÍé, Íu ti, úÍ, zal, zi                 de6), (plural) -gíd-Ía-a, -li-sa-a
+   ba-a-:         ge-en/gen7 (= ge-n), ™ar, keÍé                    (for íl?), -TI-sa-a (for de6)
+   ba-ab-:        gu7, sù-ub, ÍeÍ4, taÓ                mu-na-:      ba?
+   ba-an-:        dé, ku4 (both intrans.), -du11-ga    na-ba-ab-: -Íúm-mu-ne
+                  (no. 1053?), Íu ti, tùm (for         na-mi-       -gur-re (no. 1499, GarÍana?)
+                  túm), zuÓ (all trans.)               nam-mi-: -gur-re
+348                                    Walther Sallaberger
+
+
+  nu-:       ™ál, tuku, zi-g                       su            ga-ra-ab-su (no. 1499, GarÍa-
+  nu-ub-:    -gi4-gi4-(da) (no. 1477), ra,                       na?), íb-su-su
+             tuku (also no. 374?)                  sù-ub:        ba-ab-sù-ub, bí-ib-sù-ub
+  nu-ub-ta-: -gi4-gi4-(da-Íè, no. 1048:8), zi      Íúm:          Óé-na-ab-Íúm-mu, in-na-an-
+  nu-um-:    ™ar (intrans.)                                      Íúm, na-ba-ab-Íúm-mu-ne
+  nu-un-:    éÍ (no. 1057:7!)                      ti:           Íu ba-an-ti, Íu ba-an-ti-éÍ, Íu
+  nu-un-ni-: ku4                                                 Óa-ba-ab-ti-™e26, Íu Óa-ba-Íi-
+  ù-na-a-:   du11                                                ib-ti (no. 1499, GarÍana?)
+  (u4-)um!-: de6 (no. 1173, 1361!, “u4 dub         tuku:         nu-tuku, nu-ub-tuku
+             túm”)                                 túm:          ba-an-tùm, in-tùm-uÍ, in-la-aÓ
+Verbs with more than one prefix chain:             zi-g:         ba-zi, ba-na-zi, íb-ta-zi, nu-zi,
+  a5/ak:     ba-a5/aka, bí-na                                    nu-ub-ta-zi
+  de6:       i-im-de6-a, ì-in-DU?, in-TI-Ía-
+             a, mu-un-TI(-sa-a), (u4-)um!-       4.2 Prefabricated Verbal Forms in the Year
+             de6 (no. 1173, 1361!, “u4 dub           Dates and Elsewhere
+             túm”)                               Most finite verbal forms are attested in the date
+  dù:        ba-dù-a, in-dù-sa-a                 formulae and as administrative key terms as Íu
+  du8:       ba-ra-du8, in-du8                   ba-ti or ì-dab5. The year dates can be phrased in
+                                                 two ways, with the king named (in the ergative
+  du11:      ba-an-du11-ga (no. 1053?), bí-      case) and the verb with the ventive prefix
+             in-du11, ù-na-a-du11 (read ba-
+                                                 mu-, or without the royal name and thus with
+             an-zuÓ for “ba-an-du11”); nu-
+                                                 the “medium” prefix ba-. However, at GarÍana
+             un-éÍ (no. 1057:7!)
+                                                 scribes more often write non-standard mu-
+  gíd:       íb-gíd, in-gíd-sa-a, mu-un-         Óulu for ba-Óulu in the intransitive construc-
+             gíd-Ía-a                            tion. Although mu-Óulu (mu-n-Óulu-ø, “he
+  ge-n:      ba-gi-in/ge-en/gen7, ba-a-ge-       destroyed it”) would be somehow grammati-
+             en/gen7, in-ge-en, in-ge-né-eÍ      cally correct, if we assumed an omission of the
+  gi4:       bí-in-gi4, nu-ub-gi4-gi4-(da)       noun in the ergative in the sentence, such an
+             (no. 1477), nu-ub-ta-gi4-gi4-       abbreviated phrase is not used in Ur III date
+             (da-Íè)                             formulae.
+  gu7:       ba-ab-gu7, íb-gu7, in-gu7-a, in-        mu LAND (= ma-da za-ab-Ía-liki, si-mu-ru-
+             gu7-Ía-a                                   umki) mu-Óulu (incorrect): more than
+  ™ál:       ì-™ál, in-da-™ál, mu-un-™ál (no.           160™
+             1057), nu-™ál
+                                                     mu LAND (= ma-da za-ab-Ía-liki, si-mu-ru-
+  ™ar:       ba-™ar (no. 1259, 1369), ba-a-             umki) ba-Óulu (correct): ca. 49™
+             ™ar, Óé-en-™á-™á, nu-um-™ar
+                                                     “year: LAND (= Land of ZabÍali, Simur-
+  ™en:       ì-™en-na-a, i-re-Ía/sa-a, ì-im-
+                                                        rum) was destroyed”
+             ™en-na-a, in-da-™e26-en
+  Ói:        ba-Ói, ì-Ói, íb-ta-Ói                   With the name of the king, mu-Óulu is
+  keÍe2:     ba-keÍe2-rá, ba-a-keÍe2             standard (188 hits in BDTNS), but ba-Óulu is
+                                                 written once although the king is named (no.
+  ku4:       ba-an-ku4, nu-un-ni-ku4
+                                                 294).
+  lá:        ì-lá, in-lá                             With the verb dù “to erect,” the distribu-
+  ra:        íb-ra, nu-ub-ra                     tion at GarÍana is even more inconsistent. A
+  sá:        Óé-eb-sá-e, íb-sá                   quick count of the results obtained by BDTNS
+  sa10:      ba-an-Íi-sa10, in-Íi-sa10 (no.      (accessed 2009/12/06), disregarding recon-
+             1477)                               structed prefix morphemes, gives the following
+                                 Sumerian Language Use at GarÍana                                     349
+
+
+distribution (note that mu-ne-dù for fiS 6 does         text (no. 1329); see the verbal forms listed
+not show any variation):                                above.
+   mu KING-e OBJECT mu-dù (correct): 70™                    Given the fact that the year date variation
+                                                        does not show any discernible pattern, the sec-
+   mu KING-e OBJECT ba-dù (incorrect): 7™
+                                                        ond option seems far more likely: a year date
+   “year: KING erected OBJECT”                          could be perceived as a formula that was auto-
+   mu OBJECT mu-dù (incorrect): 46™                     matically written down without reflecting its
+   mu OBJECT ba-dù (correct): 31™                       correct form and thus its literal meaning. The
+                                                        grammatical peculiarities of stock phrases thus
+   “year: OBJECT was erected”
+                                                        should not be taken as reflecting the command
+     Similar errors can appear sporadically in the      of Sumerian grammar, although it remains
+Ur III corpus. In the tables prepared by                remarkable that the royal year dates were treat-
+Schneider (1936) only eleven aberrant forms             ed that way.
+are listed from the more than 11,000 Ur III tab-            The interchange of the verbs with mu- and
+lets published by that time:                            ba-prefixes in the date formulae seems to occur
+     mu- instead of ba- (intransitive formula):         independently of an actual experience of lan-
+        Schneider (1936, 21): fiulgi year 44 B.tt)      guage. A similar phenomenon can be discerned
+        (1™), ibid. 22: fiulgi year 45 B.j) and m)      only in two verbal phrases that appear more
+        (2™), ibid. 36 fiu-Suen year 9 B.f) (1™), cf.   frequently in the GarÍana corpus, namely ba-
+        ibid. 31 fiu-Suen year 2 B.p) in- instead       na-ha-la and al-na™4-™á-dè. The indirect object
+        of ba-, cf., e.g., Syracuse 379                 of the verbal form ba-na-ha-la is invariably
+                                                        singular although one expects mostly a plural
+     ba- instead of mu- (presence of KING in
+                                                        *-ne-(a)-:
+        ergative case): Schneider (1936, 24):
+        Amar-Suena year 2 B.c) (2™), ibid. 25               Íidim ù lú-hu™-™á-e-ne ba-na-ha-la (e.g.
+        Amar-Suena year 3 B.e) (1™), ibid. 32 fiu-             no. 424; cf. Kleinerman and Owen 2009,
+        Suen year 4 B.e)-f) (3™), ibid. 33 fiu-Suen            316–18. Note that the dative case writ-
+        year 6 A.f) (1™), cf., e.g., NATN 202,                 ten -er would hardly be expected in an
+        BPOA 6 9                                               administrative text)
+     Seen in this light, the extremely high por-            “it was distributed (to him) to the builders
+tion of incorrect forms in the GarÍana texts is                and hirelings”
+noteworthy and cannot simply be explained as                Even more perplexing is the rare form al-
+resulting from the scribe’s inattentiveness. Was        na™4-™á-dè “to crush,” where the verbal prefix
+the differentiation between intransitive ba- and        al- appears in a strange combination with the
+transitive mun-forms losing its binding force?          infinite -e-d-e form. This form is attested two
+Or did the formulaic character of the year dates        or three times at GarÍana (nos. 67, 70, and,
+lead to the distortion, since they were not treat-      probably, 217), whereas a correct na™4-™á-dè
+ed as “real” language but as pre-formulated             appears 14 times. All references stem from
+stock phrases? A similar free variation between         identical contexts; the object is invariably munu4
+intransitive and transitive, ventive and non-           “malt.” Nos. 67 to 69, for example, date to
+ventive forms seems not to be attested for verbs        three consecutive days (fiS 6/08/28–30), the
+in phrases embedded in the main body of the             same persons are named, but incorrect al-na™4-
+texts: the verb gíd “to haul (boats)” appears           ™á-dè appears in no. 67, correct na™4-™á-dè in
+with ventive in the case of a movement toward           nos. 68–69.
+GarÍana (mu-un-gíd-Ía-a), but without ventive               The incorrect variant cannot be explained
+if the boat is moved from GarÍana to another            within standard Sumerian grammar. At GarÍa-
+(in-gíd-sa-a); and sù-ub appears both in a tran-        na the prefix al- is used only in idiomatic ex-
+sitive (bí-íb-sù-ub, collective) and in an intran-      pressions concerning the preparation of food:
+sitive-passive (ba-ab-sù-ub) form within one            al-nag4-gá “crushed,” al-ús-sa “processed” (see
+350                                         Walther Sallaberger
+
+
+the phrases collected by Kleinerman and Owen          this variation, which may be ascribed to the
+2009, 364f.). Apparently al- was (partly) de-         presence of various active scribes (see Heimpel
+prived of its function as a “stative” prefix, and     2009, 27), proves how flexible they were when
+so the nominalized form al-na™4-™á could be           treating the Sumerian language. So apparently
+reinterpreted as an infinite form *alna™+-a           each scribe could write according to his pref-
+“crushed”; and the suffixes -e-d-e could then         erences and so we actually dispose of docu-
+be attached to this seemingly new verb /alna™/.       ments of an individual language use.
+This error is restricted to rare cases and can thus
+surely be attributed to a single scribe.              4.4 Plural Formation as Calque of Akkadian?
+                                                      Although a single reference is of little value for
+4.3 Inconsistency of Plural Formation                 grammatical observations, the following exam-
+In the relatively small organization of GarÍana       ple has to be considered in the context of a pos-
+even details of the transactions were described,      sible Akkadian imposition of the scribes on
+such as the exact work performed at various           Sumerian. The usual phrase ka-ga-na ba-ge-en
+building steps. In the larger archives, one more      “it was confirmed in his (own) statement” has
+often finds simply lists with numbers of persons      once been used in the plural, where the text
+and at the most some short notes on the work          reads
+to be done (cf., e.g., the lists of the men at work     ka-ga-na-ne-ne           ba-ge-en (no. 1062:9)
+at ªirsu or at the Ur or Isin craft archives). This
+                                                        ka.g-an(i)-(a?)-anene ba-ge.n-ø
+tendency to provide more-detailed descrip-
+tions implies a greater variation in phrasing. An       mouth-POSS.3SG-(LOC?)-POSS.3PL
+obvious point in this regard is the inconsistency                                MED-confirm-S.3SG
+in the formation of the plural, both as personal      instead of the correct:
+plural and as neutral (non-personal) collective.          *ka-ga-ne-ne-a
+Both forms are grammatically correct and are              ka.g-anene-a
+well attested in Ur III texts.                            mouth-POSS.3PL-LOC
+  Personal plural:                                    One may simply suppose a temporal inatten-
+     ™uruÍ má ... é dÍara2-ta G.-Íè mu-un-gíd-Ía-     tiveness of the scribe, who did not erase his
+       a “men, who hauled the boat ... from the       incorrect -na- (= -ani-a “in his ...”), which he
+       fiara temple to GarÍana” (no. 529)             had written out of habit. However, one could
+     mu lú Óu™-™á-e-ne-Íè u4 igi PN inda3 in-         also assume an unconscious calque on the
+       gu7-Ía-a “because of the hirelings, when       Akkadian plural formation: the plural of corre-
+       they ate bread in front of PN” (no. 479)       sponding ina p‹-Íu is ina p‹-Íunu with suffixation
+  Collective:                                         of the plural marker. A similar example of an
+     3 ™uruÍ ... N.-ta B.-Íè má PN íb-gíd “3          Akkadianism in an Old Babylonian literary text
+       men ... hauled the boat of PN from Nip-        has been pointed out by Wilcke (1998, 462):
+       pur to B‹t-fiu-Suen” (no. 220)                 the form Íà eren2-na-ka-ni “in the midst of his
+                                                      troops” in GilgameÍ and Akka lines 81 and 99
+     inda3 ugula lú Óu™-™á-e-ne íb-gu7 “bread:
+                                                      (instead of *Íà eren2-na-na-ka/ke4) follows the
+       the foremen of the hirelings ate it” (no.
+                                                      sequence of suffixes of Akkadian ina libbi ‰⁄b‹Íu.
+       385)
+     Whereas the variation in the year dates led      4.5 Some Observations on the Case System
+to incorrect forms, here the variation, which         Generally, the case system of Sumerian is well
+does not seem to imply any difference in mean-        reflected in the GarÍana documents, especially
+ing, remains within the traditional limits of the     if one takes into account that case suffixes, not
+language. PuzriÍ-Dagan documents or legal             only the genitive suffix, can be missing in ad-
+documents prefer the 3rd person plural, where-        ministrative documents, primarily with proper
+as the 3rd neuter collective was especially pop-      names. In the following, I list deviations from
+ular in administrative texts from Umma. Thus          the standard use of case suffixes. These single
+                                 Sumerian Language Use at GarÍana                                  351
+
+
+observations do not pretend to cover every            texts (“was placed upon...”), although it cannot
+aspect of the case system at use at GarÍana.          be excluded that here the terminative denotes
+                                                      the purpose of the placement and the phrase
+4.5.1 -ta for Comitative -da                          thus means “OBJECT was deposited for BUILD-
+Once at GarÍana the case suffix -ta is used for       ING” (thus Heimpel 2009, 42). But in this case
+the comitative -da, which seems not to be             the “préfixe local” (Attinger 1993, 240ff.) -y/e-
+attested elsewhere in the corpus:                     of ba-a-™ar (/bay™ar/) would be devoid of any
+    1 ™uruÍ ... PN lú-kí™-ge4 lugal-ta ... in-da-     function. An abbreviation for ki(-e) ba-a-™ar
+       ™e26-en                                        “it was placed on the ground/was founded” is
+                                                      extremely unlikely.
+    “1 man ... he went together with the royal
+       messenger PN.”                                     (bitumen) (fiID-tum of buildings) ták-si-ru-
+                                                             um-Íè ba-a-™ar (no. 1260, cf. 1299)
+Instead of assuming a semantically incorrect
+ablative -ta, which furthermore could not be              “(bitumen) was placed upon/deposited for
+combined directly with a noun of personal/                   the fiID-tum of buildings, on/for the
+human gender, it is more probable that the                   place of repair.”
+comitative -da was written -ta. Such an ortho-            210 sa ge-NE gu-kilib3 12 sa-ta dì-um é-ki-
+graphy has to be understood from an Akkadian                mu-ra-Íè ba-a-™ar (no. 1325:4-6; cf.
+point of view, since Sumerian stops were all                1261, 1262, 1286, 1308 etc.; without ter-
+voiceless with a further differentiation, proba-            minative no. 1294)
+bly aspiration. In the Ur III period, one began           “210 bundles of ‘fire’ reed, bales of 12 bun-
+to write the sign da for the voiced alveolar stop           dles, were placed on (or: deposited for)
+/d/ and ta for voiceless /t/ in Akkadian.                   the waddle-and-daub of the washing
+    Interestingly, the same use of -ta for -da              house.”
+appears in a text from the contemporary
+archive of Irisa™rig/ml-Íarr⁄k‹, similarly from           63 dugù-lu-lu 2 kùÍ-ta a-za-bu-um Íà é-a-Íè
+an organization closely related to the state:                ba-a-™ar (no. 1286: 7f.)
+    u4 alan lugal-ta im-da-e-re-Ía-a (no. 1478 ii         “63 clay pipes of 2 cubits each were placed
+       12)                                                   on (or: deposited for) the cistern within
+                                                             the house.”
+    “when they went with (= escorted) the
+       royal statue”                                      Constructions with ba-a-™ar appear more
+                                                      often in Ur III texts, albeit mostly in the con-
+4.5.2 Terminative for Locative                        struction a-gù PN-a-ka ba-a-™ar “it was
+In the GarÍana texts the verb ba-a-™ar, “it is        placed on the account of PN.” But a search in
+placed upon,” is usually construed with a ter-        BDTNS (2009/25/11) revealed no other
+minative at the noun instead of a locative or         examples of the combination with the termina-
+directive. This use is especially clear in the con-   tive -Íè except the probably adnominal con-
+text of the use of leather that was “placed on”       struction UTI 5 3370 má ... GN-Íè ba-a-™ar
+another object:                                       “placed on the boat to GN” and the unclear
+                                                      Ontario 2 222.
+    5 kuÍ udu e-rí-na ma-an-Óara4 3-Íè ba-a-              The construction NOUN-Íè ba-a-™ar for an
+       ™ar (no. 923:1-2; cf. also nos. 864, 939,      expected NOUN-a (locative) ba-a-™ar, as it
+       968, 1517)                                     appears in the frequent phrase má-a ba-a-™ar “it
+    “5 tanned sheep skins were placed on 3            was placed on the boat,” has perhaps to be seen
+       receptacles”                                   in a wider perspective. The locative case,
+    The same construction NOUN-Íè ba-a-™ar            marked by a simple -a, was going to lose
+appears with the use of bitumen or with reed          ground in the late Ur III and the Isin period
+for repair and building. These passages should        against the more prominent case markers ter-
+be translated in the same way as the leather          minative (-Íè) and ablative (-ta), which were
+352                                         Walther Sallaberger
+
+
+expressed by a whole syllable; they remained in           Of course the change in some construc-
+use or even took over the domains of the loc-         tions does not imply that the locative case had
+ative. A good example is the change of con-           completely disappeared at GarÍana. It is still
+struction of ku4 “to enter”: the locative (-a) was    generally employed with gub “to stand” (e.g.
+still in use in Ur III texts, e.g., é-gal-la ba-an-   é-gal-la gub-ba “stationed in the palace,” no.
+ku4 “it was entered in the palace” (passim in the     506:23) or with ™ál “to be present, to exist”
+fiulgi-simtum archive). Not unexpectedly,             (e.g. beÍe™ dub-ba-ka ™ál-la “present in the
+GarÍana already starts using the terminative: é-      tablet basket” no. 1233:13).
+kiÍeb3-ba-Íè ba-an-ku4 “it was entered in the
+storehouse” (no. 1031; but ku4 with locative in       4.5.3 The Genitive Case: Presence, Loss and
+no. 1049 //1050!). In the Isin craft archive,             Hypercorrection
+which dates only a few years later, after the fall    As already mentioned in the introduction, the
+of the Ur III empire, and stems from northern         genitive case often is not marked in Ur III
+Babylonia, one meets similarly both termina-          administrative documents, but, as with all case
+tive é-gal-Íè ba-an-ku4 (BIN 10 117; even Íà é-       suffixes, its usage is more consistent in legal
+gal-Íè ba-an-ku4 BIN 9 399) and locative é-gal-       documents and letters at GarÍana and else-
+la ba-an-ku4 (BIN 10 189).                            where. Also within administrative texts the
+                                                      genitive is not completely abandoned and it
+                                                      appears especially in the combination with the
+                                                      locative case:
+
+        u4 siki-ba-(a)-ka                      Íu             bar-ra (no. 234 etc.)
+        u4 siki-ba-ak-a                        Íu-ø           bar-a
+        day wool-distribute-GEN-LOC            hand-ABS       open-PFV
+        “released at the day of wool-distribution”
+        MAfi.EN.GAG lú-kaÍ4         ká é-gal-ka               gub-ba (no. 529)
+        MAfi.EN.GAG lú-kaÍ4         ká é.gal-ak-a             gub-a
+        dependant       runner      gate palace-GEN-LOC       stand-PFV
+        “dependants and runners, stationed at the gate of the palace”
+With the frequent verb gub “to stand, to be stationed (intr.)” the genitive+locative is even noted
+with Íà “interior” (on Íà see p.355):
+        ták-Íi-ru-um    Íà          é-gal-ka           gub-ba (no. 49: 45 etc.)
+        takÍ‹rum        Íà          é.gal-ak-a         gub-a
+        repair          interior palace-GEN-LOC        stand-PFV
+        “stationed at the repair, in the palace”
+A noun phrase in the absolutive, ending in a double genitive and thus marked equally -ka (<-ak-
+ak-ø) appears regularly in the date formula for year fiu-Suen 9:
+              d
+        mu     Íu-dEN.ZU lugal urim5ki-ma-ke4 é dÍara2        ummaki-ka     mu-dù (no. 257
+                                                                            etc.)
+        mu fiu-Suen       lugal urim-ak-e         é fiara      Umma-ak-ak-ø mu-n-dù-ø
+        year PN           king GN-GEN-ERG house DN GN-GEN-GEN-ABS VNT-A.3P.SG-
+                                                                            erect.Bh-o.3SG
+        “year: fiu-Suen, king of Ur, built the temple of fiara of Umma”
+                                   Sumerian Language Use at GarÍana                                             353
+
+
+A seemingly double genitive is employed,                  er with the incorrect “double genitive” -ka as
+however incorrectly, in the year date of fiu-             in the former date.
+Suen 6. The standard formula shows the dative                 Somewhat similar is the notation of a gen-
+case, and this is the most frequent construction          itive before the locative in the following
+(143™ for fiS 6, but formula often restored):             phrase, where egir-ra-ka (egir-“GEN”-LOC)
+    mu ... na-dù-a maÓ den-líl dnin-líl-ra mu-            appears instead of expected egir-ra (egir-LOC):
+       ne-dù                                                  gú-ba kí™ bí-na, egir-ra-ka in-sù-ub (no.
+    “year (king fiu-Suen ...) erected the sub-                   1048)
+       lime stele for Enlil and Ninlil”                       “He did work on its bank.28 Afterward/at
+A variant construction is without -ra but with                   the backside he neglected it” (assuming
+a simple genitive, “year: king fiu-Suen ... erect-               that sù-ub stands for Íub).29
+ed the sublime statue of Enlil and Ninlil for
+them.” This simple genitive before the absolu-
+                                                          4.5.4 Ergative for Absolutive
+tive should be written -lá, but this appears only         Perhaps the most remarkable occurrence of an
+once in this year date, whereas an incorrect              incorrect use of a case suffix is the appearance
+double genitive -ka is written 35™ for the date           of the ergative marker -e in an intransitive
+fiu-Suen 6.                                               phrase:
+  mu...na-dù-a maÓ den-líl dnin-líl-ka                         u4 lugal-e        ba-úÍ-[(a)] (no. 257: 6)
+  mu na.dù.a maÓ Enlil Ninlil-ak-ak-ø                          u4 lugal-e        ba-úÍ-ø(-a)
+  year stele sublime DN DN-GEN-GEN-ABS                         day king-ERG MED-die.Bh-3SG(-NMLZ)
+                                                               “when the king died”
+   mu-ne-dù
+                                                          Since the verbal form ba-a-™ar is clearly intran-
+   mu-ne-n-dù-ø
+                                                          sitive, the same explanation probably holds true
+   VNT-IO.3PL-A.3P.SG-erect.Bh-o.3SG
+                                                          for the almost unintelligible phrase:
+The only way to explain this variant seems to
+be a hypercorrection of the genitive (as a dou-                u4 di™ir-re gaba na-wi-ir-ilum ba-a-™ar-ra
+ble genitive), which would have been slowly                       (no. 251)
+disappearing in certain contexts. Such a disap-                “when a god was placed opposite of
+pearance is the less surprising since noun-                       Nawir-ilum”(?)30
+noun-combinations without genitive marking                The first example is unequivocal: the ergative
+exist frequently in Sumerian (e.g. qualifications         lugal-e appears as subject in an intransitive sen-
+indicating the material). Furthermore, as with            tence. Can one assume that the misuse of the
+the interchange of the verbal prefixes ba-/mu-            ergative case instead of the unmarked absolu-
+(p. 348f.), the year dates show especially bewil-         tive was influenced by the case system of Akka-
+dering variants at GarÍana. The year formula              dian, where the subject is always in the nomi-
+for fiu-Suen 8, which runs absolutely parallel to         native case? Unfortunately it is hardly possible
+fiu-Suen 6, mu (...) má-gur8 maÓ den-líl dnin-            to investigate the distribution of ergative (-e)
+líl-ra mu-ne-dìm “year (king fiu-Suen) con-               and absolutive (-ø) in the GarÍana corpus, since
+structed the sublime boat for Enlil and Ninlil,”          we deal mostly with proper names and profes-
+appears most often with -ra (143™), sometimes             sions that are more often not case-marked in
+with a correct simple genitive -lá (7™), but nev-         administrative texts.
+
+28                                                        30
+     For the writing bí-na for bí-in-a5(AK) “he made”          Heimpel (2009, 332) understands the phrase differ-
+     cf. Attinger (2005, 54).                                  ently: “the day the breast of Nawir-ilum was made
+29
+     For Íub in a similar context see the fragment RA          to settle by the god.” This interpretation obeys the
+     10, 66 no. 68: 8': gú i7 gana2-ba Íub-ba “neglect-        ergative case, but the transitive construction is dif-
+     ed(?) at its bank of the field’s canal.”                  ficult to reconcile with the intransitive form ba-a-
+                                                               ™ar. See the list of finite verbs above (section 4.1.)
+                                                               for the generally trustworthy rection of verbs.
+354                                               Walther Sallaberger
+
+
+4.6 Time Specifications: u4 as “subjunction”                      u4 bàd in-dù-sa-a “(food for builders) when
+   and “preposition”                                                 they built the wall” (no. 396).
+Specific circumstances or even the motivations               Similar constructions are often attested (36
+for certain transactions are often indicated by              clauses counted in the GarÍana corpus).31
+temporal expressions in administrative docu-                 However, u4 “day, time,” can also be com-
+ments. For example, food was distributed to                  bined with infinite verbal forms, namely
+the boat haulers “when they hauled the boat”
+(e.g. no. 529), but certainly the return from the            (a) with infinite perfective forms in -a:
+trip also justified the expenditure of food.                      u4 al-tar bàd gub-ba “(they have eaten)
+Temporal designations in Sumerian are formu-                         when: stationed (at the) construction
+lated as a locative u4 ...-a “on the day, at the                     work of the wall” (no. 392; cf. also nos.
+time,” whereby further appositions, most often                       395, 442, 471, 495, 1007)
+a nominalized verbal clause, may qualify the                 (b) with infinite imperfective, future forms in
+noun u4, “day, time.”                                        -d-e (directive):
+     Besides the formulation as a temporal                        u4 bàd é-a dù-dè “(for heaps of flour) at the
+phrase with a nominalized finite verb (type PN                       day, when: to build the wall of the
+u4 ... ì-im-™en-na “(for) PN, when he ...                            house” (no. 383, cf. also nos. 386, 387;
+came”), some documents, such as the messen-                          no. 90 does not belong here)
+ger texts from ªirsu, prefer an apposition con-
+strued with an infinite verb (type PN ... ™en-               (c) with infinite simple form:32
+na/du-ni “(for) PN, when he went/was                              u4 al-tar é-... “when: construction work of
+going”). The phrase mu ...(-ak)-Íè “because”                         (various houses)” (nos. 424, 428–430,
+appears more rarely, and here both infinite and                      435, 349–441)
+finite nominalized verbal forms occur (e.g. mu               (d) with the so-called pronominal conjugation
+aga3-ús a-tu5-a-ka é-gal-la ku4-ra-ne-Íè “for                (infinite form + pronominal suffix):
+the soldiers, having entered the palace at the
+(time) of bathing,” Sallaberger 1993, vol. 1,                     u4 PN U.-Íè du-ni “(for heaps of flour) at
+67f.; PNN dam-gara3-me-éÍ mu na4 mu-ni-in-                           the day, when: fiu-Kabta going to
+ku4-re-éÍ-Ía-a-Íè “(for) PNN, the merchants,                         Umma” (no. 488, 2™)
+because they had imported stones,” CT 32 25).                     Such conflations of two different construc-
+Rarely the purpose of the expenditure can be                 tions are probably not, or at the most only rare-
+indicated by an -e-d-e form (e.g., 7 gud en                  ly, attested in the corpus of Ur III texts. The
+Óu™-dè “7 cattle, in order to appoint the high-              examples that I had thought to have located
+priest,” BIN 3 352).                                         through searches in BDTNS or in my own col-
+     At GarÍana the introductory u4 “day, time”              lections (and disregarding untrustworthy pub-
+appears in various combinations (for an over-                lications) always turned out to be misreadings
+view see Kleinerman and Owen 2009, 144f.                     or wrong restorations of broken passages.33
+s.v. Relative Clauses). The standard construc-                    The background of the peculiar GarÍana
+tion of a nominalized clause is e.g.                         combination of u4 with infinite verbs can be
+
+
+31                                                           32
+      The phrase in 1173 // 1361 kiÍeb3 PN u4-                    For u4 dub túm (no. 1173, 1361) see the preceding
+      um!(“DUB”)-de6 “when the sealed document of                 footnote.
+      PN will be brought” can be analyzed as u4 “when”       33
+                                                                  For “u4” i7-da zi-zi-dè ™en-na Sigrist, Princeton 2
+      + um-de6 so-called “prospective” (conditional); it          428, read eren2 i7-da..., as also noted by Notizia
+      can also be understood as an unorthographic writ-           (2009, 126); similarly Fish, CST 34 i and iii
+      ing of the prospective as u4-um!-de6; this interpre-        eren2!(u4) ba-Íim-e-Íè ™en-na; Riedel, RA 10 209
+      tation implies that no nominalizer -a is written.           BM 103435 (= Verderame/Politi, Nisaba 8, 58) u4
+                                                                  d
+                                                                    amar-dzuen-ke4 Ía-aÍ-ruki ù Íu-ru-ud-hu-umki
+                                                                  [mu?]-Óulu-a.
+                                     Sumerian Language Use at GarÍana                                                 355
+
+
+elucidated by a related time specification, the               26). Generally, in Ur III documents, the phrase
+indication of a festival day in the subscript of              Íà GN-a “in GN” replaced the former locative
+some expenditures for persons.                                completely.
+     u4 izim gur buru14 “at the festival of the                    The GarÍana scribes apparently took this
+        return/Kor measure of the harvest” (no.               path a step further and used u4 “at” as a tempo-
+        996)                                                  ral “preposition,” in a certain respect as a com-
+                                                              plement to the local Íà “within.” Although the
+     u4 (izim) e-lu-núm-(ma) “at the el›num                   loss of case suffixes and the emergence of prep-
+        (festival)” (no. 19, 980, 1032)                       ositions from former common nouns could
+     u4 taq-ri-ib-tum bàd “at the offering (cere-             represent an internal Sumerian development,
+        mony) at the wall” (no. 1035)                         the impact of Akkadian should be acknowl-
+     u4 izim a-bu-um-(ma) “at the abum festi-                 edged especially at GarÍana. The Akkadian
+        val” (no. 278, 509)                                   model on which u4 was calqued can probably
+     u4 izim pa-è “at the festival of appearance”             be identified: the subjunction in›ma, “when,”
+        (no. 1030)                                            literally “in the day...” (in+›m-), and thus cor-
+                                                              responding exactly to the Sumerian construc-
+     The peculiarity of the GarÍana phrases                   tion u4 ...-a “in the day, ...,” could also be used
+emerges clearly as soon as similar specifications             as a preposition in Old Babylonian (see the dic-
+in the Ur III corpus are compared. Though                     tionaries and von Soden 1995, 210 § 115 s and
+many documents, indeed, note a festival as time               §116 b). This corresponds exactly to the use of
+specification (see, e.g., the texts collected in Sal-         u4 at GarÍana.
+laberger 1993), a combination “u4 izim” (“time:                    To summarize: The noun u4 “day, time”
+festival”) seems not to be attested elsewhere;34              began not only temporal clauses at GarÍana, but
+the simple standard construction izim NN “fes-                also infinite phrases and even nouns, a peculiar
+tival NN” fulfils the same function.                          feature that is without parallel in the vast Ur III
+     Obviously, the GarÍana u4 has to be under-               corpus. u4 emerged as a kind of temporal
+stood as the temporal companion to the local                  “preposition” similarly to the widespread local
+specification Íà “in” (< “heart, interior”),                  Íà “within,” which gradually replaced the loc-
+which appears as a subscript identifying the                  ative case suffix -a in certain contexts. The use
+place of a transaction. The term Íà NOUN-ak-                  of u4 agrees with the scope of the Akkadian
+a “within NOUN” (literally “in the interior of                subjunction and preposition in›ma.
+NOUN”) was never written as such in the sub-                       The temporal “preposition” u4 is apparent-
+script, but appeared as Íà NOUN(-a), especially               ly attested only at GarÍana and due to the end of
+with place names (e.g. Íà urim5ki-ma, “in Ur”).               the Ur III state this development did not gain
+In this way Íà began to function almost as a                  further influence. But the tendency that Sum-
+local preposition and partly replaced the loca-               erian nouns started to serve as “prepositions”
+tive case, especially at the specific position in             continued for example in the spread of Íà for all
+the subscript of a tablet.35                                  local specifications in the Isin craft archive
+     In the Presargonic and Sargonic periods,                 (Sallaberger 2000, 272) and ultimately the case
+the simple locative case -a had sufficed at this              suffixes were replaced by “prepositions” de-
+position, but in the Ur III period this is met                rived from nouns in Old Babylonian adminis-
+only rarely and first of all in relatively early texts        trative texts (Íà “in,” ugu “over, above,” ki
+from the time of fiulgi (e.g. é-sa™-da-na nibruki-            “from,” in OB Uruk after Sallaberger 2000,
+ka “in Esa™dana-Nibru” OIP 115 1, fiulgi year                 274). Furthermore it would be interesting to
+
+34                                                            35
+     The reference Sweet, ARRIM 01 23 H 36c: 34' u4                Heimpel (2009, 23f.) went even so far as to see Íà
+     izim?-maÓ?, a text published only in a preliminary            in some expressions as equivalent to the Akkadian
+     transliteration, remains too uncertain (cf. Sallaberg-        relative particle Ía. In all the examples he cites, how-
+     er 1993, vol. 2, 113 note b).                                 ever, the locative meaning “in” cannot be excluded.
+356                                        Walther Sallaberger
+
+
+know whether the specific use of Akkadian                u4 ní™-mussa é PN-Íè in-na-aka-a
+in›ma as preposition and not only as subjunc-            “when he made the dowry for PN’s house”
+tion in southern Old Babylonian did not fol-                (Amorites 15, dated fi 48/06/15)
+low a Sumerian vernacular that was more
+widespread, although we are aware only of the        The expected order is also attested:
+GarÍana evidence.                                       u4 é-uÍbar(!ÚR)-ra-na ní™-mussa in-aka-a
+                                                        “when he made the dowry for his father-in-
+4.7 Inconsistency of Word Order                               law’s house” (Toronto 2 205, dated AS
+In Sumerian phrases the absolutive case tends                 01/12/12)
+to be situated directly before the verb. In
+administrative texts the central object(s) treated       Although these observations are based only
+in the document with its quantities and quali-       on a few characteristic contexts and verbs, the
+fications is always placed at the beginning of       observed frequency of the incorrect word
+the text (cf. Attinger 1993, 154; Sallaberger        order at GarÍana is remarkable; the standard
+2000). The topic of a large number of docu-          word order of Sumerian had lost its binding
+ments is workers and consequently their num-         character. Parallel developments are not yet
+ber and qualification were noted; often an           known, although they may be hidden in the
+additional phrase describes their work. Within       vast corpus of Sumerian Ur III texts.
+this phrase the place of the absolutive case is
+directly before the (mostly infinite) verb.          5. The Akkadian Component of the Lexicon
+     Regularly, the transport of goods is phrased    The final aspect to be considered for the use of
+like this:                                           Sumerian at GarÍana is the lexicon. Akkadian
+                                                     words are amply attested in administrative doc-
+     n ™uruÍ (...) GN1-ta GN2-Íè OBJECT ga6-™á
+                                                     uments of the Ur III period, mostly specific
+        (or finite form)
+                                                     technical terms for concrete nouns. Akkadian
+     “n men (+ qualification), having carried        words appear neither as adjectives nor as verbs
+        OBJECT from GN1 to GN2”
+                                                     or in combination with Sumerian verbs. The
+This construction appears also at GarÍana:           growing number of technical Akkadian terms
+    ≈ ™uruÍ aÍgab u4-3-Íè kar-ta kuru13-Íè Íe        in Sumerian results from the close contact of
+        íb-ga6 (no. 229, also in no. 263)            the two languages in the late third millennium.
+    “≈ weavers for 3 days carried grain from             Since we deal with technical terms em-
+        the quay to the granary”                     ployed in specific contexts, a simple count of
+                                                     the frequency of Akkadian words would not
+But whereas the correct word order appears
+                                                     yield satisfactory results. But one can investi-
+only twice, the direct object is placed more
+                                                     gate if the Akkadian terms used at GarÍana are
+often, namely 34 times, before the local desig-
+                                                     known also from other contemporary archives.
+nations:
+                                                         Most Akkadian words are listed by Klein-
+    12 ™uruÍ in-u kar-ta ™á-nun-Íè íb-ga6 (no.       erman and Owen (2009, 13f.) (= CUSAS 4),
+        28)                                          others can be found in the glossary (ibid. 1–
+    “12 men, they carried straw from the quay        230). The comparison with other Ur III ar-
+        to the storehouse”                           chives is based on BDTNS, my own collec-
+    A search of the frequent combination Íe          tions, and the Akkadian dictionaries (AHw,
+“grain” with ga6 “to carry” in the Ur III data       CAD, MAD 3). Attestations from other ar-
+base BDTNS did not lead to any references for        chives are given only in the case of rare words
+this irregular word order in documents from          or references that are perhaps more difficult to
+Umma. Rarely, however, the displacement of           retrieve. Some of the translations and meanings
+the object toward the beginning of the phrase        given stem from the project on a Sumerian
+can be discovered in Ur III documents, as in         glossary, partly based on the work of Hagan
+the following example:                               Brunke and Fabienne Huber Vulliet.
+                               Sumerian Language Use at GarÍana                                  357
+
+
+5.1 Akkadian Words Attested in Other Ur III               darken.” du-ú-um is always combined
+    Documents                                             with the verb aka “to make.” Since var-
+   a-bu-um, “abum festival” (not listed CUSAS             ious scribes were active at GarÍana with
+       4, 13)                                             different writing habits (note Heimpel
+   a-ge4-um, a qualification of textiles, perhaps         2009, 27), we may deal probably with
+       “dyed, colored”(?)                                 the same word as dì-um; the verbs aka “to
+                                                          make,” ga6 “to carry,” lu “to stir, mix”
+   a-za-bu-um, “cistern”; cf. Pre-Sargonic CT             are attested also with im sumur “plaster”
+       50 47:5 ter-kù ugula a-za-búm-ma-ke4               (where the verb tà is used instead of ™ar
+       lú Óu™-™á ba-de6 “Terku, the overseer of           with dì-um).
+       the cistern, took the hireling(s) with        ™eÍ
+       him”; PDT 2 1366 reeds v.s. for the a-            dú-ul-bu-um, “plane tree,” cf Gudea Cyl.
+       za-bu-um “of the fiu-Suen garden”                  A xv 32 and St.B v 57 dú-lu-bu-um
+   tu9
+      á-gu4-Óu-um, aguÓÓum, perhaps a belt, sash     e-lu-núm (not listed CUSAS 4, 13), a festival
+   al-lu-Óa-ru-um, “(a mineral tanning agent),”      é gi-na-tum, “barracks,” passim Ur III; read-
+       usually written al-la-Óa-ru in Ur III, but         ing, meaning and etymology according
+       al-lu-Óa-ru-um MVN 11 142 (Reichska-               to Heimpel (2009, 165) derived from
+       lender), note that the entry al-lu-Óu-ru-um        kin⁄tum, kinattum, “servants”; note there
+       CUSAS 4, 15 is a ghost entry (all refer-           p.164f. for some writings, including é-
+       ences are restored)                                Íu-tum, thus interpreting é GI.NA.TUM
+                                                          as a Diri compound (cf. for
+   ar-ki-LUM; see CUSAS 4, 22 s.v. ar-gi5(KI)-
+                                                          é.GI.NA.AB.DU7 = Íutum, Íutummu CAD
+       núm “(a kind of food product?),” also in
+                                                          fi/3 412, and MSL 15, 26 Proto-Diri
+       NATN 825 besides onions/garlic and
+                                                          N3:02 [é.g]i.na.ab.du10 = Í[utummu]); its
+       fish; probably different from Ur III ar-ga-
+                                                          Akkadian interpretation is as uncertain as
+       núm, an aromatic(?)
+                                                          its meaning.
+   ba-tab-tuÓ-Óu-um (in CUSAS 4, 25 read ba-         tu9
+                                                        Óa-bu-um, tu9Óa-um, “a cloth for (covering)
+       tab tuÓ-Óu-um), a valuable accessoire of
+                                                          chairs”
+       female dress
+   ge
+     ba-ti-um, “(a reed container),” cf. Ur III      Óa-Íu-um, “(a spice plant),” instead of ÓaÍûm
+       ba-ti-um, pa4-ti-um                                as in the single GarÍana reference no.
+                                                          548:14, Ur III texts write Óa-Íi/Íu-a-núm
+   bí-ni-tum, “a crossbeam” (thus CUSAS 4,                (see dictionaries s.v.)
+       30, following the unsubstantiated idea of
+       CAD s.v. “a type of crossbeam”), but          Óa-za-nu-um, “mayor,” same writing Ur III
+       according to Heimpel (2009, 181) bí-ì-             only in NRVN 57:11, usually written
+       tum “container”; see Heimpel s.v. for the          Óa-za-núm
+                                                     ™eÍ
+       latest treatment of the Ur III references.        Óu-pu-um, “wheel rim,” written mostly
+   BÙ-ZU-LUM, cited s.v. pù-sú-lum “(a food
+                                                          Óu-pu-um, also Óu-pù-um
+       product?)”; if read correctly, the variant    Óu-ri-um, “(a spice),” elsewhere written Óu-
+       bù-su-lum in no. 1272:4 would point to             rí-um; no. 1092 and no. 1190, there
+       the reading pussulum, attested in Ur III           among garden products; see below sub
+   dì-um, “wattle-and-daub”; cf. Heimpel                  b) s.v. e-ri-um
+       (2009, 177f.) for some other Ur III refer-    kà-ma-am-tum, “(a vegetable; a spice plant)”
+       ences; attested with verbs ga6 “to carry,”    li-iq-tum, literally “selection,” a qualifica-
+       ™ar “to place,” and lu “to mix”                    tion of the dying agent alluÓaru (CUSAS
+   du-ú-um, “wattle-and-daub” (variant)(?);               4, 111 “leftovers?”), Ur III written lí-iq-
+       CUSAS 4, 39 “cella platform,” accord-              tum
+       ing to Heimpel (2009, 250f.) unclear,         ma-ad-li-um, “bucket,” Ur III written ma-
+       perhaps related to Akk. du’’umum “to               ad-lí-um
+358                                             Walther Sallaberger
+
+
+      ma-az-Óa-ru-um, “a vessel?, a sieve?,” only            e-ri-um, “frond, leaf of the date palm”
+          in no. 1299; also in Ur                                 (CUSAS 4, 45; translation cannot be
+      kuÍ
+          maÍ-lí-um, “leather bucket” (not listed                 verified with the help of AHw and CAD;
+          CUSAS 4, 13); see Hilgert (2002, 81)                    CAD E 325 erû E belongs to erû C
+                                                                  “grinding slab” according to MSL 15,
+      mu-du-lum, “pickled, salted (meat),” mud-
+                                                                  185); no. 511:42 and no. 1036: 75, 1 sila3
+          dulum; Ur III written rarely also mu-du-                e-ri-um between zú-lum and sa gi-ne,
+          lu, see Hilgert (2002, 81)                              offering for gods; word unknown; per-
+      kuÍ
+          na-aÓ-ba-tum, “leather case for precious                haps variant of Óu-ri-um?
+          objects”                                           ™eÍ
+                                                                 kà-na-at-Óu-um, “(a tree or a aromatic
+      na-kab-tum (not listed CUSAS 4, 13),                        product from a tree),” only in no. 1375;
+          Akkadian nakkamtum (Brunke 2008)                        word not listed in the dictionaries; a
+      sà-Óumzabar, “a drinking vessel”                            variant of Akk. kanaktum (which would
+      ™eÍ
+         sé-er-dum, serdum, “olive tree,” rare in                 correspond to Sumerian Íem-ge17)?
+                                                             ™eÍ
+          Neo-Sumerian texts, see PDT 2 918 i                    la-ri-um, “a part of the plow,” literally
+          21, RTC 216: 1 (olive oil)                              “branch” (larium), only no. 1255:2; per-
+      si-ì-tum, Í‹tum, “remainder, rest”                          haps similar to Sumerian (™eÍ)á-apin
+                                                                  “plow handle”
+      tá-ki-ru-um, takk‹rum, “a heavy, valuable
+          cloth”                                             ní™ lá-lá-rum, lallarum, “(a dessert, pastry),”
+                                                                  or ninda lá-lá-rum, only in no. 972 and
+      ták-si/Íi-ru-um, takÍ‹rum, “repair (of archi-               no. 975
+          tecture)”
+                                                             qí-il-pu-um, “skin, peel; bark for tanning?,”
+      [tuÓ-Óu-um read ba-tab-tuÓ-Óu-um]                           although Akkadian qilpum is attested
+      u4-tuÓ-Óu-um, “a kind of bread,” known at                   only MB/LB, the proposed etymology is
+          Ur and in the form ì-tuÓ-Óu-um at Isin                  convincing
+      zi-ba-tum, “a commodity in the textile                 ra-ˇum, r⁄ˇum, “drain pipe, runnel,” see
+          industry” (CUSAS 4, 222: “rear part (of                 Heimpel (2009, 184f.); perhaps corre-
+          certain implements)”), also written zi-ib-              sponding to Sumerian a-pa4
+          ba-tum (UET 3 1505)                                ™eÍ
+                                                                Ía-ba-ar-gi-lum, Íapargillum/supurgillu,
+      ™eÍ
+         zi-ri-gum, zir‹qum, “shaduf,” Ur III zi-ri/              “quince” (not listed CUSAS 4, p.13; see
+          rí-gúm                                                  p.175), only in no. 1375:9; attested oth-
+                                                                  erwise only in lexical lists and in Assyrian
+5.2 Akkadian Words at GarÍana not Attested                   fiID-tum “?”, booked as Íit-tum “remainder”
+    in Other Ur III Corpora                                       (which is usually, also at GarÍana, written
+      e-pe-eÍ (ep¤Í) na-am-dur11-ra, “the making                  si-ì-tum); but of unclear interpretation
+         of sickness”; see Heimpel (2009, 60)                     (Heimpel 2009, 186, similarly reads Íit-
+      e-pí-a-tum (epi⁄tum), “baked,” only in frag-                tum “rest”). In parallel contexts in no.
+         ment no. 1209:2 ninda e-pí-a-tum; CAD                    1299 and no. 1265 (restored), referring
+         E 247b cites 3 NT-850:1 5 sila3 ninda e-                 to kinds of oil designated as fiID-tum
+         pu-um (“OAkk,” which includes Ur III;                    BUILDING (...)-Íè ba-a-™ar “was placed
+         Akkadian or Sumerian context?); corre-                   on the Í. of ... (and for ...)”
+         sponds to du8 “to bake”                             taq-ri-ib-tum, taqribtum, “offering”36
+
+
+36
+      U. Gabbay’s translation “lamentation” given by          actionis of qurrubum “to present (an offering),” fits
+      Kleinerman and Owen (2009, 191) cannot be ver-          all contexts in CUSAS 4.
+      ified. An etymologically correct taqribtum, nomen
+                                   Sumerian Language Use at GarÍana                                    359
+
+
+     zi-mi-tum, “(a kind of plant)”; note OAkk               bu-ti-um?, “(a specification of textiles),”
+        zi-me-tum OSP 2 184: 10 (same reference                 unclear in no. 807:1: 4 túg-bu-ti-um?
+        CUSAS 4, 160 fn. 101)                                ki-ri-ip, “a (oil) jar,” according to CUSAS
+                                                                4, 99, thus referring to OB Mari kirip-
+5.3 Akkadian Words at GarÍana, but                              pum. However, in no. 972: 17 and 88
+    Corresponding Sumerian Form Used                            read ki-ri-™á according to the photo
+    Elsewhere                                                   CUSAS 3, pl. xxviiif.; no. 975 is a paral-
+     a-ga-mu-um, agammum, “marsh,” in the riv-                  lel text, the reference in no. 511:65
+        er designation i7 a-ga-mu-um (CUSAS 4,                  (CUSAS 4, 99) is not preserved. ki-ri-™á
+        652), elsewhere written a-ga-am                         is unclear, but cf. perhaps ki!(fiU)-rí-™á
+     a-ga-ri-nu-um, agarinnum, “pit/basin for                   BIN 10 33:2.
+        mixing mortar” (CUSAS 4, 3 does not                  mul-ˇum, “a comb,” according to CUSAS
+        list attestations of writings), also Sumer-             4, 123; in no. 923: 6 partly broken [mu]l-
+        ian forms a-™á-ri(2)-na, a-™á-ri-in as else-            tum; the phonology of Ur III Akkadian
+        where in Ur III documents. The                          (-Ít- > -lt- appears half a millennium lat-
+        Akkadian form agarinnum is attested only                er) and the context do not allow an
+        in nos. 7 ([fiS 6/05] 11) and no. 8 ([fiS 6/            interpretation muÍˇum “comb.”
+        05/12]), thus it appears to be the person-
+        al habit of a scribe active at this time (fiS     5.5. Discussion
+        6/05), perhaps scribe L⁄-q‹p(um), who is          We obtain the following numbers for Akkadi-
+        attested only in no. 394 (fiS 6/05) and           an words in GarÍana documents:
+        no. 399 ([fiS 6/06] restored), but not in
+        no. 406 (fiS 6/11); L⁄-q‹p(um) appears in              36 Akkadian words are attested also in
+        the first text with Puzur-Ninkarrak, who                     other Ur III documents;
+        may be responsible for the writing im a-               12 Akkadian words at GarÍana are not
+        ™á-ri-na already in no. 9 (fiS 6/05/13) or                   attested in other Ur III corpora;
+        im ™á-rí-na in no. 10 (fiS 6/05/17).                    3 Akkadian words substitute the corre-
+     kara3-Íum, kar⁄Íum, “leek” (CUSAS 4, 93                         sponding Sumerian forms;
+        s.v. kàr-Íum); Ur III uses the Sumerian                 6 uncertain entries.
+        equivalent garaÍ6ga sar                           The absolute number and the proportion of
+5.4 Uncertain Entries37                                   Akkadian words strongly depend on the
+                                                          semantic fields treated by the various archives.
+     a-Íi-um, “(a specification of textiles),” read-      However, several aspects suggest that the
+         ing and contexts uncertain                       Akkadian component of the lexicon is of
+     ak-lu-um, in broken context in no. 925:14',          exceptional quality at GarÍana. Not only do the
+         reading and interpretation uncertain,            texts use Akkadian words that are not attested
+         aklum “overseer” hardly possible                 in other contemporary documents, but, more
+     ™eÍ
+        be-rum, “(a wooden object),” the context          importantly, in some cases one can even guess
+         of the reference (no. 807:2) does not            the corresponding Sumerian equivalent (see
+         point to a wooden object; note further-          epi⁄tum, larium, r⁄ˇum). The case of replacement
+         more that the two signs be-rum are BAD.          by the Akkadian form is obvious in the instanc-
+         Afi = zara6 (a textile), which would fit the     es in which in other archives the same word
+         context of textiles.                             appears in its Sumerian form without the Akka-
+
+
+37
+     The following words are not Akkadian: za-rí-in
+     “coarsely cleaned (wool) material”; for dugku-kur-
+     rú (Owen and Kleinerman 2009, 104) read instead
+     dug
+        KU-kur-DÙ.
+360                                              Walther Sallaberger
+
+
+dian ending (agammum, agarinnum, kar⁄Íum).                  of which 18 out of 23 bore Akkadian names,
+Exceptional is the Akkadian infinitive ep¤Í “to             but only two Sumerian ones.
+make” in the status constructus, combined                        Despite their Akkadian background all
+with a phonographically written Sumerian rec-               GarÍana documents were written in Sumerian,
+tum, na-am-dú-ra “illness.” The unortho-                    the language that was, most probably, essential
+graphic writing definitely excludes a logo-                 in the scribal education. The analysis presented
+graphic interpretation of Akkadian *ep¤Í                    above pointed out both the impressive pres-
+mar‰›tim (v.s.). Instead, we deal with a mixture            ence of Akkadian words and the errors in the
+of words, a switching of codes so typical for               grammar of Sumerian. Based on this evidence
+bilingual environments (cf., e.g., Appel and                an Assyriologist would most probably recon-
+Muysken 1987, 117ff.). The orthography dis-                 struct the socio-linguistic scenario as follows:
+cussed earlier reveals that the GarÍana scribes             the Akkadian scribes remained linguistically
+wrote their documents close to the spoken lan-              attached to their native language Akkadian, but
+guage. The unfiltered mixture of languages                  they had learned Sumerian imperfectly at
+within one nominal construction is further                  school and used Sumerian simply as a scribal
+proof of this habit.                                        and administrative language. Since they still
+                                                            spoke Akkadian at home, they naturally used
+6. Akkado-Sumerian Bilingualism at GarÍana                  many Akkadian words in their texts.
+6.1 The Socio-linguistic Setting: Bilingualism                   Such an impression is, according to current
+   and Diglossia                                            understanding, correct in some basic facts,
+The southern provinces along the Tigris,                    namely that the names indicate that Akkadian
+Umma and ªirsu, can be considered as the                    was probably most scribes’ native language,
+economically dominating region of the Ur III                that Sumerian was the administrative language,
+state, as is evidenced most clearly by their                and that scribal education was probably linked
+                                                            to Sumerian.
+heavy duties in the term of office (bala) to
+maintain state organizations. This region can                    However, a more-detailed and coherent
+                                                            interpretation of the data presented above leads
+aptly be labeled as the heartland of Sumer, as
+                                                            to a somewhat different and more refined pic-
+attested by the high portion of Sumerian names
+                                                            ture. Progress is possible by taking into account
+and the use of Sumerian as vernacular in ad-
+                                                            some basic results of the broad field of linguistic
+ministrative documents. Besides the provincial              research on bilingualism. So our evidence could
+organization with a largely Sumerian popula-                be checked against a wide spectrum of socio-
+tion there also existed settlements of the royal            linguistic scenarios and a great number of lin-
+sector in the south. GarÍana is not only one of             guistic features. It goes without saying that
+the largest of these garrisons, but also the first          many aspects simply cannot be treated because
+one from which we dispose of cuneiform doc-                 of the enormous gap that separates us from an
+uments.                                                     ancient language we know only imperfectly in
+    In the organization that was headed by                  its written form. But even such a restricted cor-
+general fiu-Kabta and his wife, the princess                pus offers sufficient linguistic data to allow a
+Simat-IÍtaran, at GarÍana a high proportion of              coherent interpretation that respects linguistic
+the active population was of Akkadian back-                 methodology and results. The conclusion builds
+ground, at least according to their proper                  directly on the analyses presented above and
+names.38 This is especially true for the scribes,           thus does not repeat the evidence in detail.
+
+38
+      Arguments over why and how personal names can
+      be used in order to detect the distribution of lan-
+      guages in the ancient Near East have been put for-
+      ward by Streck 2004; for the case of Sumerian cf.
+      Sallaberger 2004.
+                                    Sumerian Language Use at GarÍana                                                   361
+
+
+     Most scribes active at GarÍana, a newly                or logographic values can be derived, and so
+founded garrison in the region of Umma, bore                Sumerian served as a language in scribal teach-
+Akkadian names, so it is safe to assume that                ing even after it had disappeared as a freely for-
+their native language was Akkadian. Their first             mulated language in documents, i.e., from the
+language Akkadian thus has to be considered                 late twentieth century onward. Given the
+their linguistically dominant language. They ac-            markedly different socio-linguistic situation in
+quired Sumerian as their second language, the               the Ur III state, one simply cannot adopt the
+language in which they wrote the cuneiform                  well-known model of scribal education in the
+documents. Sumerian was the language of the                 Old Babylonian period that followed a curric-
+state organizations, as the royal archives from             ulum that was largely designed in the Isin peri-
+PuzriÍ-Dagan amply testify, which were writ-                od at the time when Sumerian was vanishing as
+ten in Sumerian without exception. In this dis-             vernacular.40 Whereas the teacher in the Old
+cussion we confine ourselves to the language                Babylonian period was most often a L2 speaker
+use within the administration during the Ur III             of Sumerian, such a scenario can hardly be pos-
+period (twenty-first century B.C.E.) and do not             tulated for the scribal education in the state sec-
+consider the language at the royal court, in                tor of the Ur III state that we are dealing with
+poetry and religion. But it is obvious that king            here. Furthermore, the acquisition of Sumerian
+fiulgi’s reference to his Sumerian background39             writing at school was combined with natural
+or the use of Sumerian as the dominant lan-                 second-language acquisition in the communi-
+guage in royal texts contributed to the prestige            cation with Sumerian native speakers in the
+of that language in the state of Ur, even if per-           surrounding traditional settlements of Umma
+haps more inhabitants were of Akkadian or                   province. The orthographic variations men-
+some other tongue. So Sumerian is character-                tioned above (p.339) clearly demarcate the lim-
+ized by need (in the context of the administra-             its of scribal education and hint at the impact of
+tion) and prestige (as the royal language), the             spoken language acquisition.
+two features that characterize a socially dominant               In our discussion we are concentrating on
+language (Van Coetsem 1988, 13f.).                          the Akkadian scribes, but the personal names
+     The process of language acquisition is not             and the linguistic setting of the Ur III state sug-
+known directly from the evidence, but some                  gest that speakers of other tongues were present
+basic facts are quite certain. The complicated              in state organizations and households as well,
+cuneiform script had to be learned in a long                most prominently Amorites, Elamites, and Hur-
+process of scribal formation, probably within               rians. In this multilingual context, Sumerian,
+the institution in which the scribes would serve            which has been identified as the socially dom-
+later, which implies frequent instruction by the            inant language at GarÍana, may have served as
+father or in the case of newly founded organi-              the common language in the institutional do-
+zations by more experienced scribes. Cunei-                 main we are discussing here.41 Under such con-
+form writing is intrinsically linked to Sumerian            ditions one may think of a diglossia situation
+as a language, from which most phonographic                 with Sumerian as the more prestigious lan-
+
+
+39
+     Rubio (2006) has argued that fiulgi hymns B and C           IÍme-Dagan or Lipit-EÍtar; the reference to Isin
+     indicate that Akkadian was the native language of           kings in model contracts; the prominence of the
+     fiulgi (accepted by Michalowski 2006, 175f.); a             city of Nippur as the center of Sumerian, which
+     more coherent interpretation of the relevant pas-           transpires in all text genres including the lexical
+     sages, which would contradict fiulgi’s claim to be          lists, a fact that is historically correct for the Isin pe-
+     “of Sumerian seed,” is provided by Keetman                  riod only.
+     (2010).                                                41
+                                                                 Bilingual communication characteristically takes
+40
+     More exactly, the formative period was the second           place in communication outside the family; the
+     half of the twentieth century B.C.E.. In this regard        background of the family is acknowledged by the
+     one may cite the dominance of Isin texts around             definition of a native language.
+362                                                Walther Sallaberger
+
+guage in public life, thus the “high” variety                 vations can be fitted in. I think it is most appro-
+according to the traditional terminology, and                 priate to present Van Coetsem’s linguistic
+Akkadian as “low” form. Nowadays, diglossia                   model of contact-induced change as sketched
+is seen as one form of bilingualism, character-               by a specialist in Contact Linguistics (Winford
+ized by the social dominance of one language                  2007) who used this model to test different
+that entails linguistic standardization, as                   recent methodological approaches:
+expressed in a definition like the one by Appel                Van Coetsem’s major contribution was to fur-
+and Muysken (1987, 26): “Studies [...] have led,               ther refine the traditional distinction between
+in fact, to a gradual redefinition of the term                 borrowing and ‘interference’ [stemming from
+diglossia: it is now used to refer to bilingual                the classic of U. Weinreich, Languages in con-
+communities in which a large portion of the                    tact: Findings and problems, 1953] by defining
+speakers commands both languages, and in                       these types of cross-linguistic influence more
+which the two languages are functionally dis-                  precisely, and above all, by distinguishing the
+tinguished in terms of H [i.e., “high” variety,                kinds of agentivity they involve. Van Coetsem’s
+W.S.] and L [“low,” W.S.].”                                    framework distinguishes between two types of
+                                                               cross-linguistic influence, or what he calls ‘trans-
+6.2 Contact-induced Linguistic Change                          fer types’, namely, borrowing and imposi-
+    according to Van Coetsem (1988, 2000)                      tion.[...] The latter is largely equivalent to terms
+The GarÍana Akkadian scribes show a remark-                    like ‘interference via shift’, ‘transfer’ ‘indirect
+                                                               diffusion’, and ‘substratum influence’ that
+able linguistic proficiency in Sumerian; they
+                                                               appear in the literature. Borrowing and imposi-
+did not simply use prefabricated phrases and                   tion, in this framework, are not seen as ‘mech-
+forms. As described above in detail in sections                anisms’ or ‘processes’, but rather as vehicles of
+2 and 3, even phonetic variation was represent-                contact-induced change. In both cases, there is a
+ed in a way hardly known from the larger                       source language (SL) and a recipient language
+archives so that the GarÍana documents count                   (RL). These terms serve as alternatives to various
+among the most important sources to recon-                     other terms that have been used in the literature,
+struct the phonology of Sumerian. This indi-                   such as ‘donor language’, ‘substrate’, ‘replica lan-
+cates a strong presence of spoken Sumerian.                    guage’ and the like.
+On the other hand, various deviations from the                     The direction of transfer of linguistic features
+standard grammar were noted and the high                       is always from the source language to the RL,
+portion of Akkadian lexemes stands out both in                 and the agent of transfer can be either the recip-
+quantity and quality. The data seemingly pro-                  ient language or the source language speaker. In
+                                                               the former case, we have borrowing (RL agen-
+duce a contradiction in the interpretation, since
+                                                               tivity), in the latter, imposition (SL agentivity).
+we note a basically Sumerian phonology and                     (Winford 2007, 25 f.).
+morphology, but Akkadian influence in the
+deviations of morphology and especially in the                At GarÍana, therefore, we deal mainly with SL
+lexicon.                                                      (= source language) agentivity, since the scribes’
+    The influential model of bilingualism elab-               native language is Akkadian, and the Akkadian
+orated by Frans Van Coetsem42 (1988, 2000),                   “influence” in Sumerian (the RL = recipient lan-
+which largely integrates the terminology and                  guage in contact-induced changes) introduced
+classification of previous studies, allows us to              by the scribes is, therefore, called “imposition.”
+disentangle the various contact phenomena at                   Also highly relevant to the distinction between
+work, and eventually the contradictions of the                 borrowing and imposition is the notion of lan-
+GarÍana evidence will disappear and all obser-                 guage dominance. As Van Coetsem (2000: 84)
+
+42
+      Frans Van Coetsem (1919–2002) specialized in
+      Germanic historical linguistics; he taught at Cornell
+      University, the very university where the GarÍana
+      texts are now housed.
+                                   Sumerian Language Use at GarÍana                                          363
+
+ explains, difference in linguistic dominance is           thus more amenable to change. This is partly
+ the main criterion for distinguishing between             why borrowing tends to be mostly lexical, and
+ recipient language and source language agentiv-           to have little if any effect on the recipient lan-
+ ity. In the former case, the recipient language is        guage grammar. On the other hand, in imposi-
+ the dominant language of the speaker, while in            tion, where the source language grammar is
+ the latter case, the source language is the dom-          more stable and resistant to change, grammatical
+ inant language. When we speak of dominance                features can be transferred more readily, leading
+ here, we are referring to linguistic dominance,           to significant structural change in the speaker’s
+ that is, the fact that the speaker is more proficient     version of the RL. There may well be differenc-
+ in one of the languages in contact. This must be          es in degree of stability within different aspects of
+ distinguished from social dominance, which                the grammar, which may lead to different
+ refers to the political or social status of one of the    potential for transfer. Thus certain function
+ languages. The socially dominant language may             morphemes tend to be transferred more readily
+ or may not be the linguistically dominant lan-            than others, and word order, for instance, seems
+ guage of the speaker. Of course, dominance                to be transferred more readily than, say, embed-
+ relationships may change over time, both in the           ding strategies. (Winford 2007, 26).
+ individual speaker. And such shifts in domi-
+ nance may result in different outcomes, or lead          6.3 The Degree of the Acquisition of Sumerian
+ to attrition of the previously dominant language.        The GarÍana scribes must have reached a high
+ These considerations require us to distinguish           degree of linguistic proficiency in Sumerian
+ the agents of change from the kinds of agentivity
+                                                          according to the general use of Sumerian gram-
+ they employ in introducing changes to an RL.
+ The fact is that the same agent can employ either        mar: the differentiation of the verbal prefixes or
+ type of agentivity, and hence both transfer types,       correct stem formation in Óamˇu and marû stems
+ in the same contact situation. This is particularly      also with irregular verbs clearly dominates over
+ true of highly proficient bilinguals, though not         the few deviations from standard Sumerian list-
+ restricted to them alone.                                ed above (e.g., the incorrect reconstruction of
+    It is impossible to describe from the outside         a verb /alna™/).
+the grade of linguistic proficiency the GarÍana               Phonology is a much more difficult matter
+scribes have reached in Sumerian. However,                since much is hidden behind orthography. The
+the documents we dispose of are written in                variants and the many unorthographic spellings
+Sumerian, so here the scribes are to be seen as           at least provide some indications, but it is
+“recipient language (RL) agents” in the contact           impossible nowadays (at least for me) to recon-
+situation with Akkadian. The model thus helps             struct the phonemic systems of Akkadian and
+to differentiate between various types of influ-          Sumerian at that time and, moreover, a com-
+ence. This becomes the more important, since              bined phonemic system employed in a bilin-
+Van Coetsem (and, of course, others) identify             gual environment. The phonological changes
+various domains of the language that are more             that have been observed both for Akkadian and
+open to imposition (source language agentivi-             Sumerian at the end of the end of the third mil-
+ty, i.e., the Akkadian scribe’s influence on              lennium (e.g. Gelb 1961, 3140, Jagersma 2000,
+Sumerian) or to borrowing (recipient language             Keetman 2004a, 2004b) are clear examples of a
+agentivity, i.e., the Akkadian influence on the           phonological redistribution that affected both
+Sumerian of a native speaker).                            languages (cf. Van Coetsem 1988, 115ff.). Gen-
+                                                          erally one considers “vocabulary the least stable
+ Differences between recipient language and               language domain, and phonology and grammar
+ source language agentivity are also related to
+                                                          (morphology and syntax) the more stable ones.”
+ what Van Coetsem (1988: 25) calls the ‘stability
+ gradient’ of language. This refers to the fact that      (Van Coetsem 1988, 26, his emphasis; cf. id.
+ certain components of a language, such as pho-           2000). The direction of contact-induced
+ nology, morphology and syntax, tend to be                change depends on the stability of the phe-
+ more stable and hence resistant to change, while         nomena investigated: “In short, the transfer of
+ others, such as vocabulary, are less stable and          material from the source language to the recip-
+364                                                Walther Sallaberger
+
+
+ient language primarily concerns less stable                  erian /b, d, g/ now corresponded to Akkadian
+domains, particularly vocabulary, in borrow-                  /b, d, g/, whereas the /p, t, k/ correspondence
+ing, and more stable domains, particularly pho-               remained unchanged (Gelb 1961, 31–40; cf.
+nological entities, in imposition” (ibid. 3). The             Keetman 2004b). The sound change in Sume-
+phonemic changes in both languages are thus                   rian is reflected not only in early and late Akka-
+sufficient evidence for the intense bilingual                 dian loanwords, but also in the Akkadian
+contact, in which speakers from both languages                syllabary, which began to adopt the “new”
+had brought their “accent” to the other lan-                  Sumerian system already during the Ur III
+guage as an imposition.                                       period. A short explanation may be helpful. In
+     Concerning the Akkadian scribes at GarÍa-                the Sargonic period, Akkadian /da/ and /ta/
+na, we confine ourselves to a simpler, but basic              were written with the sign DA, which in Sum-
+question: Did they adapt the Sumerian sounds                  erian was pronounced as [ta]. Sumerian TA
+to their own Akkadian system or did they imi-                 stood originally (probably) for aspirated voice-
+tate the different system?43 Although, of course,             less [tha]; but after the sound change [th] > [t]
+we cannot know how much of an Akkadian                        (parallel to [t] > [d]) in Sumerian, the sign
+“accent” may have existed in spoken language,                 could be used for similar Akkadian plain voice-
+the phonographic writings are indicative in this              less [ta]. J. Keetman (2004a) has pointed to the
+regard. First, the typical Sumerian phoneme ™                 innovations in the Akkadian syllabary of the Ur
+is kept in various environments, most notably                 III period, which he explains as reflection of a
+in unorthographic writings. Secondly, some                    sound change in Sumerian;44 within this pro-
+irregularities in the syllabary seem to indicate              cess also the Sumerian “dr phoneme” changes
+that the phonemic system was enriched by                      to /d/ or /r/ (Jagersma 2000).
+“foreign” phonemes, faint reflection of the                        The new evidence of the GarÍana corpus
+imitation of Sumerian by the GarÍana scribes.                 concerns first the sibilants. Both the SV and the
+     In this regard a few words may suffice here.             fiV series of phonograms represented Akkadian
+The study of loanwords has shown that the sys-                /Í/, although at GarÍana only fiA, but never SA,
+tem of Sumerian stops did not correspond to                   was used for /Ía/. Sumerian still retained the
+the Akkadian one in the third millennium.                     difference between the phonemes represented
+Originally, Sumerian disposed only of voiceless               by the SV and the fiV series. However, this dif-
+(aspirated and plain voiceless) stops, whereas                ference was only imperfectly adapted by the
+Akkadian had both voiced and voiceless (and,                  GarÍana scribes, since they used SA and fiA to
+of course, “emphatic,” ejective) stops. In early              represent Sumerian /Ía/ (in verbal plural
+loanwords both Sumerian /b, d, g/ and /p, t,                  forms) or SI to represent Sumerian /si/ and /Íe/
+k/ were reflected in Akkadian as /p, t, k/. A                 (see p. 345 above). If we concentrate on the
+sound change affected the Sumerian system at                  unequivocal case of SA and fiA, the global situ-
+the end of the third millennium so that it dis-               ation in the GarÍana documents can be repre-
+posed of voiced and voiceless stops; thus Sum-                sented as follows:
+
+
+43                                                            43
+      See Van Coetsem (1988, 10f.) on the basic differ-            Keetman (2004a, 198–200) still adhered to the
+      ence between imitation and adaptation. Seen in the           opinion that Sumerian was a dying language during
+      (typical) RL agency, imitation implies that a for-           the Ur III period. The arguments for Sumerian as
+      eign phoneme of the SL is kept, but that this alters         a living language in southern Babylonia during the
+      the phoneme system of the RL, whereas in the case            Ur III empire have been elaborated by Sallaberger
+      of adaptation the SL phoneme system remains sta-             (2004), who votes for a sudden death of the lan-
+      ble, but the foreign word loses its foreing character        guage after the perturbations at the end of Ur III;
+      (one example: imitation is the case when a German            see also Woods (2006).
+      speaker pronounces “drive-in” with an English/
+      American /r/, but adaptation if he uses a German
+      /r/).
+                                   Sumerian Language Use at GarÍana                                              365
+
+
+                                                    Akkadian          Sumerian
+                   Phonogram                        fiA               SA             fiA
+                   Phonemes (as perceived by        /Ía/              /sa/           /sa ~ Ía/
+                   scribes)45
+
+
+      Apparently Sumerian /Í/ was identified               6.4 Imposition and Borrowing in Morphology
+either as similar to Akkadian /Í/ or to the Sum-               and Lexicon
+erian /s/. More importantly, however, the use              As outlined above, imposition and borrowing
+of the SA sign, which does not occur in Akka-              differ in the perspective of the language agent.
+dian words,46 implies the imitation of a pho-              Imposition is a change (in the recipient lan-
+neme foreign to Akkadian. The variation in the             guage) based on source language activity, thus
+writing of Sumerian /Ía/ with both the signs SA            Akkadian influences that affect the Sumerian of
+and fiA thus reflects the imitation of Sumerian            the GarÍana corpus. These changes should not
+phonemes by the Akkadian scribes with the                  occur in a similar way in the archives of Umma
+help of their phonographic repertoire.                     or ªirsu, which stem from dominantly mono-
+      Another example is the rendering of Sum-             lingual Sumerian environments.
+erian /g/ as KE4 in the forms si-ke4-dè or sì-ke4-              Imposition, which Weinreich and others
+dè, thereby avoiding both KI and GI, which                 have called “interference,” first of all concerns
+were both employed in Akkadian as ki and gi                the more stable domains of language, phonol-
+(p. 344). Also the differing writings of Sumeri-           ogy and morphology (Van Coetsem 1988, 3 et
+an comitative /da/ with DA in the prefix chain             passim). Such an imposition can be observed in
+but with TA as case suffix (p. 351) or the use of          the field of morphology at various instances:
+TI and TE for -dè (pp. 340 and 342–44) point               one notes deviations in the Sumerian word
+in the same direction.                                     order (p.356), an incorrect re-interpretation of
+      The variant writings at GarÍana thus reflect         the verb na™4 as /alna™/ (p.349f.), once an
+the imitation of Sumerian phonemes even in                 incorrect combination of plural pronoun with
+writing, a reflection that has become visible              case (p.350), deviations in the case system such as
+only because of the unorthographic spellings by            a hypercorrection of the genitive (p.352f.), erga-
+phonograms. This variation implies that there              tive instead of absolutive (p.353), and the grad-
+still existed a difference between the phonemic            ual supplementation of the locative by the
+systems of the two languages at this period and            terminative (p.351f.). Within the vocabulary,
+that the loanword patterns give a simplified               only function words can be taken as signs of
+picture of the processes of phonological redis-            imposition, and here the only example is the
+tribution. The bilingual situation at GarÍana              use of u4 “when” as a kind of temporal prepo-
+allows a glimpse at the phonological systems at            sition/subjunction. The phrase ep¤Í namdura,
+work that is not possible with the more strict             literally “to make sickness,” with the Akkadian
+orthography employed in monolingual con-                   verb ep¤Íum “to make” as a primary vocabulary
+texts like at Umma or ªirsu.                               word combined with the Sumerian abstract
+                                                           noun, is a unique example of code-switching.
+                                                                It is important to note that imposition
+                                                           involves both externally and internally induced
+                                                           change: SL (source language) agentivity implies
+
+
+45                                                             46
+     /Ía/ and /sa/ are used as symbols to represent pho-            Note that text no. 1473 with the personal name ì-
+     nemes within their system whatever their phonetic              lí-sa-tu does not stem from GarÍana.
+     character may have been.
+366                                          Walther Sallaberger
+
+
+not only a direct implementation of features of        and grammar” (Van Coetsem 1988, 59). In pid-
+the SL (here Akkadian) in the RL (here Sum-            gin “apparently the minimal acquisition of
+erian), but “language contact favors another           English primarily concerns vocabulary” (ibid.
+kind of change in the RL, namely one that rep-         74), which is homogenous and derives from the
+resents the activation of latent developments in       RL. With a comparable imperfect acquisition
+the RL itself (developmental trends). This does        of Sumerian one would expect a simple vocab-
+not involve the direct participation of a SL”          ulary and a sensible reduction of morphology
+(Van Coetsem 1988, 41). So only the incorrect          (cf. ibid. 63), which is definitely not the case.
+pronoun-cases combination ka-ga-na-ne-ne               Such examples give more weight to the GarÍa-
+(p.350) or the ergative lugal-e in an intransitive     na data as evidence for a high progress in lan-
+sentence as “subject case” (p.353) have to be          guage acquisition that leads to linguistic pro-
+called externally induced changes. The other           ficiency. And better acquisition generally im-
+instances, including the use of u4 “when” sim-         plies less imposition.
+ilar to Íà “within,” are internally induced                 The most prominent Akkadian component
+changes, and in these cases references could be        of the GarÍana texts is constituted by the lexi-
+given for similar or parallel developments in          con. The Akkadian lexicon employed com-
+other archives.                                        prises almost exclusively nouns, most often a
+     Another way of incomplete acquisition of          special vocabulary, whereas words from a basic
+the RL by SL agents is reduction. It “primarily        or primary Akkadian vocabulary do not appear
+affects inflectional morphology, but it also           at all. This, however, is a typical situation for
+affects the domain of vocabulary, i.e., its total-     borrowing, a case of RL agentivity (see above);
+ity as well as its individual items” (Van Coetsem      the vocabulary, and here especially nouns, is
+1988, 55). Perhaps the best case for morphology        the least stable component of language. There-
+is the frozen form ba-na-Óa-la (p.349) for ba-ne-      fore, this is, on the one hand, the first aspect of
+Óa-la (if it is not sign of a different vowel assim-   a foreign language that is acquired and, on the
+ilation). However, it is hard to find further          other, foreign words are most easily integrated
+examples of reduction.                                 into a language (RL agentivity). The high por-
+     On the contrary, the variation both in the        tion of Akkadian nouns within Sumerian texts
+Sumerian lexicon and in the verbal morpholo-           would thus be explained most aptly as borrow-
+gy confirm that the acquisition of Sumerian by         ings by Sumerian speakers who come in con-
+the native Akkadians must have reached a high          tact with Akkadian. This situation of borrow-
+degree, an impression that is confirmed by the         ing describes well the appearance of Akkadian
+comparison with Sumerian texts from other ar-          words in Sumerian texts in the Ur III period in
+chives. Van Coetsem (1988, 11f. and 18) iden-          general, but for the moment it fails to explain
+tifies two steps in language acquisition in SL         the GarÍana evidence. On the other hand, the
+agentivity, namely adaptation as primary mech-         imposition features discussed above in the fields
+anism, a compensation for incomplete or defi-          of morphology and syntax agree with the fact
+cient acquisition, and imitation as secondary.         that native speakers of Akkadian wrote Sume-
+According to the evidence reviewed thus far,           rian.
+in fact imitation prevails over adaptation in the           To overcome this difficulty, the frequency
+stable language domains. Function words and            of the various features has to be considered. As
+the basic vocabulary in the GarÍana documents          we have noted above, the deviations in the
+are Sumerian, never Akkadian; no reduction             field of grammar are most often exceptions
+can be observed in the actively employed Sum-          (note the clear case of alna™a or the single gram-
+erian lexicon and its idiomatic expressions.           matical deviations). Such variations in language
+     The results of the analysis are the more strik-   use indicate the personal preferences of the var-
+ing if compared with other scenarios. “Naïve           ious scribes employed at GarÍana, which are
+language-learning” concentrates on acquiring           also discernible in the differences of the layout
+lexemes, but “scant regard for pronunciation           of the tablets (cf. Heimpel 2009, 27). The devi-
+                                   Sumerian Language Use at GarÍana                                      367
+
+
+ations, features of an imposition of the SL               distinction between the two transfer types
+Akkadians on the RL Sumerian, thus belong to              [namely imposition in SL agentivity and bor-
+the language usage of individuals in their mes-           rowing in RL agentivity, W.S.] that strongly
+sage, which is termed “inclusion” by Van Coet-            favors a form of convergence of the contacting
+sem (1988, 77–80). But these features were not            languages” (Van Coetsem 1988, 87).
+yet integrated into the code, the language in its              A total neutralization of the two transfer
+societal use.47                                           types takes place when “a bilingual’s proficien-
+     In the case of far-reaching language acqui-          cy in his two languages became comparable”
+sition, the two standard transfer types of lan-           (Van Coetsem 2000, 84), and now stability
+guage contact (imposition as SL agentivity and            forces of equal value oppose each other.
+borrowing as RL agentivity) may even be                   Whereas, as already indicated, secondary voca-
+reversed.                                                 bulary (i.e., contentives) is of minimal stability,
+                                                          primary vocabulary, functors (pronouns, prep-
+ In the standard aspect of RL agentivity the RL is
+ a native or first language, that is, there is in rela-   ositions etc.) are of median stability (see in
+ tion to the RL a clear distinction between non-          detail Van Coetsem 2000, 105ff.). The Akkadi-
+ nativeness      (nonprimary       language)       and    an words in the GarÍana Sumerian texts can,
+ nativeness (primary language) ... in other cases,        without any doubt, be identified as secondary
+ however, there is no such distinction between            vocabulary. Thus, stability factors play a deci-
+ nonnativeness and nativeness. For example, the           sive role in the transfer from Akkadian to Sum-
+ RL as spoken by the SL speaker in SL agentivity          erian. According to the observed linguistic
+ is a nonnative or nonprimary language ....; the          features, GarÍana Sumerian cannot be com-
+ distinction between nonnativeness and native-            pared to the so-called mixed languages, where
+ ness is then not applicable. When the RL is a            selection and manipulation occur as the result
+ nonnative or nonprimary language, RL agentiv-            of free transfer in both directions (Van Coet-
+ ity may also be found. (Van Coetsem 1988, 79).           sem 2000, 239ff.). Seen as a language only,
+     Sumerian at GarÍana was a non-native lan-            Sumerian borrowed from Akkadian in the
+guage for the Akkadian scribes, but it served as          domain of secondary vocabulary, the least sta-
+recipient language (RL) in the case of borrowing,         ble segment of language, in order to meet com-
+namely the inclusion or integration of a high             municative needs in the garrison of GarÍana,
+portion of a specific Akkadian vocabulary. This           whereas the more stable parts of the language
+situation is the less surprising, since “in strata        (phonology, morphology, primary vocabulary)
+distinctions (such as in diglossia) the difference        are Sumerian with deviations in the message
+in linguistic dominance between the RL and                domain, which could be explained as imposi-
+SL and thus between the two transfer types may            tion by the Akkadian scribes.
+be minimal” (Van Coetsem 1988, 78). Thus the                   So in the end, after applying the model of
+high portion of Akkadian nouns in the GarÍana             Contact Linguistics developed most promi-
+vocabulary does not contradict the high degree            nently by Van Coetsem (1988, 2000), who, of
+of acquisition of Sumerian by the native Akka-            course, built on previous researches since
+dian scribes of GarÍana, but, on the contrary,            Weinreich, the various features of GarÍana
+borrowing is exactly a feature that occurs when           Sumerian described above can be integrated
+the former non-native speakers master their               into a surprisingly coherent picture.
+second language (as RL) in such a way that they                The GarÍana scribes were mostly native
+integrate “foreign” (SL) vocabulary. “It is pre-          Akkadians. This background, however, tran-
+cisely this interaction with the lack of a clear          spires relatively rarely in various impositions in
+
+
+47
+     Even the variation in the vocabulary between the
+     Sumerian form a™arin and the Akkadian agarinnum
+     thus belongs to the message domain.
+368                                        Walther Sallaberger
+
+
+morphology and syntax, and more often we             incited by Edzard (2000), who, like Micha-
+deal with inclusion in the message domain of         lowski (2006) or Rubio (2006),48 was especially
+single speakers in certain situations. The mas-      informed by the evidence of literary texts in the
+tery, especially of the diversified verbal mor-      broadest sense. Not surprisingly, the concen-
+phology or the invariably Sumerian basic             tration on the language of literature led to such
+vocabulary, is a clear sign of a high degree of      diverse interpretations as the survival of Sume-
+language acquisition, and the phonographic           rian into the middle of the Old Babylonian
+spellings even hint at imitation of the Sumerian     period (Edzard 2000) or an early demise of
+phonemes by the scribes. The integration of          Sumerian most notably by Michalowski (2006),
+special expressions from Akkadian into a basi-       who explicitly bases his considerations on the
+cally Sumerian vernacular agrees well with the       case of Sanskrit (ibid. 171ff.).
+fact of a far-reaching acquisition of the non-            In a different methodological approach,
+native language Sumerian, whereas the Akka-          Sallaberger (2004) evaluated the language used
+dian context at the GarÍana garrison was             in everyday communicative situations, in pas-
+responsible for the exceptionally high portion       sages of administrative and legal documents and
+of Akkadian words. The acquisition of Sumer-         in name-giving. Woods (2006) has partly inde-
+ian by the scribes thus extends far beyond a         pendently developed similar arguments. In
+mere learning of a scribal language or an admin-     very broad lines the language situation at the
+istrative idiom. This agrees perfectly with the      end of the third millennium presents itself as
+first evaluation of Sumerian as a living language    follows: a dominant Sumerian population in-
+at the very beginning of the philological anal-      habited the South of Babylonia, especially the
+ysis, which was based on the lexical and mor-        Tigris provinces of Umma and ªirsu, a fairly
+phological variation and the coherent phonol-        mixed population lived in Middle Babylonia
+ogy that transpires in the phonographic spell-       (Nippur–Isin region), but a dominantly Akka-
+ings (pp. 338–40). So Sumerian was present at        dian population in the North.
+Gar-Íana as part of an active bilingualism of the         GarÍana teaches us that we should not
+scribes, simply because it is not a “canonical”      regard the region of a province, a former city
+Sumerian and because some of the variations          state, as being linguistically homogenous: the
+are based on an active influence of Akkadian         state organization of GarÍana employed domi-
+within the bilingual environment. The active         nantly Akkadians in a Sumerian environment.
+bilingualism of the GarÍana scribes would have       The active Akkado-Sumerian bilingualism of
+been unthinkable without constant communi-           the GarÍana scribes has been the topic of this
+cative contacts with the native speakers of Sume-    study.
+rian in the region.                                       The fact that GarÍana Sumerian recogniz-
+                                                     ably differs from the Sumerian of other south-
+6.5 On Akkado-Sumerian Bilingualism in the           ern Babylonian archives, those from Ur, ªirsu,
+    State of Ur                                      or even Umma, the province capital situated
+This microstudy on the active Akkado-Sume-           close to GarÍana, is the best evidence for the
+rian bilingualism at GarÍana in the Ur III period    actual presence of Sumerian as dominant ver-
+contributes also to the larger debate on the rela-   nacular at these places, and thus generally in the
+tionship between Sumerian and Akkadian,              South. The language of documents stemming
+especially at the end of the third millennium,       from the provincial administration that deals
+about one century before Sumerian disap-             with persons of Sumerian background appears
+peared as a vernacular used in everyday con-         more homogenous and consistent if compared
+texts. A renewed interest in this topic was          with the products of the bilingual GarÍana
+
+                                                      48
+                                                           On Rubio (2006) see the careful argumentation by
+                                                           Keetman (2010).
+                                   Sumerian Language Use at GarÍana                                          369
+
+
+scribes. But the Sumerian linguistic environ-              the imposition may have been integrated into
+ment clearly dominated the language use at the             the language code. Such a development cannot
+multilingual settlement of GarÍana.                        be traced, however, due to the collapse of the
+     Although at first sight one might be in-              Ur III state immediately after the end of the
+clined to regard the Akkadian vocabulary in the            GarÍana documentation. Only a few compari-
+GarÍana texts as a first sign of the attrition of          sons can be made with the language of the
+Sumerian, the linguistic analysis presented                Sumerian documents from Isin, which were
+above has proven the contrary. The texts dem-              written only a few years after those of GarÍana
+onstrate a vivid bilingual situation with close            and stem from a different region, namely mid-
+contact of both languages. And although the                dle Babylonia with its higher portion of Akka-
+portion of personal names at GarÍana might                 dian population in the late third millennium.
+suggest that Sumerian would have been of                        The dramatic events at the end of the Ur III
+minor importance, people were motivated to                 period implied a far-reaching collapse of settle-
+acquire this socially dominant language to a               ment patterns in Sumer and the social catastro-
+high degree of proficiency.                                phe eventually led to a rapid disappearance of
+     However, as noted in the analytical part of           Sumerian as an everyday language (Sallaberger
+this study, the GarÍana texts do deviate from              2004). Furthermore, no documents from the
+the standard corpus of Sumerian, especially in             South stem from the period of political and
+the state archives or those from Umma and                  social disorder after the fall of Ur.49 Therefore,
+ªirsu. As the discussion has shown, the impo-              it is impossible to know whether some of the
+sition of the scribes remained generally within            modernizations of Sumerian that appear at Gar-
+the speech domain of the individual and often              Íana were more widespread or remained just a
+had not yet become part of the language code               local phenomenon.
+at GarÍana.                                                     Sumerian started a second life as the lan-
+     We may not underestimate the effect of the            guage of education, scholarship, poetry and
+changes caused by imposition from the side of              religion during the Isin period. Even a superfi-
+the source language (SL) agents, the Akkadian              cial glimpse at some of the features treated
+scribes, as soon as they would have been inte-             above for GarÍana Sumerian reveals the funda-
+grated into the language code. “The SL contri-             mental difference between the third-millenni-
+bution is essentially an SL penetration into the           um Sumerian from an active bilingual context
+RL. Consequently, imposition (SL agentivity)               and the literary language taught and spoken
+is not an addition to the RL as in borrowing               mainly by non-native speakers. The Sumerian
+(RL agentivity), but rather a catastrophic                 from the late nineteenth century onward fea-
+change that affects the core of the RL” (Van               tures significant changes in morphology (cf.,
+Coetsem 1988, 40). And furthermore: “Viewed                e.g., Wilcke 1998; Zólyomi 2000; Huber 2001,
+as a function of time, imposition will involve a           171–179); the phonological system is hidden
+greater concentration of structural change than            behind morphographic writings (like dative -ra
+borrowing. ... This means that the rate of struc-          even after vowel), Akkadian imposition is visi-
+tural change will be more gradual in RL agen-              ble in the use of function words as the enclitic
+tivity (borrowing), and more abrupt in SL                  particle -ma, and in standard Sumerian texts
+agentivity (imposition)” (Van Coetsem 1988,                the pronunciation is hidden behind a standard-
+41). The GarÍana texts still show sporadic                 ized orthography that prefers logograms. But,
+imposition in the message domain, but in a sit-            contrary to the GarÍana evidence, these Sume-
+uation of permanent bilingualism of this kind              rian texts from the Old Babylonian period
+
+49
+     The catastrophe at the end of the empire of Ur was        (2008) for new documents concerning the agricul-
+     apparently survived by the main temples as the core       tural administration by the temples of Nin™irsu and
+     institutions of LagaÍ and ªirsu; see Richardson           of Bawu under Rim-Sin.
+370                                         Walther Sallaberger
+
+
+hardly use any Akkadian vocabulary. These             REFERENCES
+systematic differences are taken as a most wel-       Appel, René and Pieter Muysken
+come confirmation of the reconstruction of an             1987 Language Contact and Bilingualism.
+active bilingual environment at GarÍana.                         London: Edward Arnold.
+                                                      Attinger, Pascal
+ABBREVIATIONS                                             1993 Eléments de linguistique sumérien-
+GarÍana texts are cited according to the scheme                  ne. La construction de du11/e/di
+“no. 414” etc., which refers to Owen and                         «dire». OBO Sonderband. Fribourg:
+Mayr (2007). References to cuneiform texts                       Éditions universitaires & Göttin-
+follow BDTNS: Database of Neo-Sumerian                           gen: Vandenhoeck & Ruprecht.
+Texts (http://bdts.filol.csic.es).                        2005 “A propos de ak «faire»,” ZA 95,
+    In the glosses the following abbreviations
+                                                                 46–76. 208–75.
+have been used:
+                                                          2009 “Tableau grammatical du sumérien
+  1, 2, 3 person                                                 (problèmes     choisis),”   http://
+  A          agent (in the verb)
+                                                                 www.arch.unibe.ch/content/
+  ABS        absolutive (case)
+  Bh         Óamˇu base                                          mitarbeitende/mitarbeiterinnen/
+  ERG        ergative (case)                                     prof_dr_p_attinger/e8254/e8548/
+  GEN        genitive                                            e8549/e8639/
+  LOC        locative                                            Tableaugrammaticalrevu_ger.pdf
+  MED        “medium marker” ba- (Jagersma)                      (accessed 2009/12/27).
+  NMLZ       nominalizer -a                           Brunke, Hagan
+  O          object (in the verb)                         2008 “The nakabtum. An Administrative
+  P          personal/human gender                               Superstructure for the Storage and
+  PFV        perfective -a (in infinite verbal                   Distribution of Agricultural Prod-
+             forms)                                              ucts,” Kaskal 5, 111–26.
+  PL         plural                                   Edzard, Dietz Otto
+  POSS       possessive                                   2000 “Wann ist Sumerisch als gespro-
+  S          subject of intransitive clause (in the
+                                                                 chene Sprache ausgestorben?” Acta
+             verb)
+  SG         singular                                            Sumerologica 22, 53–70.
+  VNT        ventive                                  Gelb, Ignace J.
+In the final section note furthermore:                    1961 Old Akkadian Writing and Grammar.
+                                                                 MAD 2. 2nd ed. Chicago: The
+  RL        recipient language (of contact-
+                                                                 University of Chicago Press.
+            induced change)
+  SL        source language (of contact-              Hasselbach, Rebecca
+            induced change)                               2005 Sargonic Akkadian. A Historical and
+                                                                 Comparative Study of the Syllabic
+                                                                 Texts. Wiesbaden: Harrassowitz.
+                                                      Heimpel, Wolfgang
+                                                          2009 Workers and Construction Work at
+                                                                 GarÍana. CUSAS 5. Bethesda, Md.:
+                                                                 CDL Press.
+                                                      Huber, Fabienne
+                                                          2001 “La Correspondence Royale d’Ur,
+                                                                 un corpus apocryphe,” ZA 91,
+                                                                 169–206.
+                              Sumerian Language Use at GarÍana                                    371
+
+
+Jagersma, Bram                                     Molina, Manuel
+    2000 [published 2005]: “Sound Change               2008 “The Corpus of Neo-Sumerian
+           in Sumerian: the so-called /dr/-                    Tablets: An Overview,” in S. J.
+           phoneme,” Acta Sumerologica 22,                     Garfinkle and J. C. Johnson (eds.),
+           81–88.                                              The Growth of an Early State in Meso-
+Keetman, Jan                                                   potamia: Studies in Ur III Administra-
+    2004a “Erneuerung des Syllabars im Ur                      tion. Biblioteca del Próximo Oriente
+           III-Akkadischen:       Schriftreform                Antiguo 5. Madrid: Consejo Supe-
+           oder Sprachwandel?” ZA 94, 186–                     rior de Investigaciones Científicas,
+           201.                                                19–53.
+    2004b “Verschlusslaute, Affrikaten und         Notizia, Palmiro
+           Frikative im Sumerischen,” Archiv           2009 I testi dei messaggeri da Girsu-LagaÍ
+           Orientalní 72, 367-83.                              della Terza Dinastia di Ur. Nisaba 22.
+                                                               Messina: Di.Sc.A.M.
+    2010 “Enmerkar und Sulge als su-
+           merische Muttersprachler nach lite-     Owen, David I. and Rudolf H. Mayr
+           rarischen Quellen,” ZA 100, 15–             2007 The GarÍana Archives. CUSAS 3.
+           31.                                                 Bethesda, Md.: CDL Press.
+Kleinerman, Alexandra and David I. Owen            Richardson, Seth
+    2009 Analytical Concordance to the GarÍana         2008 “Ningirsu Returns to His Plow:
+           Archive. CUSAS 4. Bethesda, Md.:                    LagaÍ and Girsu Take Leave of Ur,”
+           CDL Press.                                          in P. Michalowski (ed.), On the
+                                                               Third Dynasty of Ur. Studies in Honor
+Kogan, Leonid and Katja Markina                                of Marcel Sigrist. JCS Suppl. 1. Bos-
+    2006 [Review of Hasselbach 2005], Babel                    ton: American Schools of Oriental
+           and Bibel 3, 555–88.                                Research, 153–58.
+Krecher, Joachim                                   Rubio, Gonzalo
+    1995 “Die marû-Formen des sume-                    2006 “fiulgi and the Death of Sumerian,”
+           rischen Verbums,” in: M. Dietrich                   in P. Michalowski and N. Veldhuis
+           and O. Loretz (eds.), Vom Alten                     (eds.), Approaches to Sumerian Litera-
+           Orient zum Alten Testament.                         ture. Studies in Honour of Stip (H.L.J.
+           Festschrift für Wolfram Freiherrn von               Vanstiphout). Cuneiform Mono-
+           Soden zum 85. Geburtstag am 19. Juni                graphs 35. Leiden: Brill, 167–79.
+           1993. AOAT 240. Kevelaer: Butzon        Sallaberger, Walther
+           & Bercker [et al.] 141–200.                 1993 Der kultische Kalender der Ur III-Zeit.
+Meyer-Laurin, Vera                                             Untersuchungen zur Assyriologie
+    2010 “Die marû-Basen der sumerischen                       und Vorderasiatischen Archäologie 7.
+           Verben túm „hin-, wegführen”                        Berlin & New York: W. de Gruyter
+           und xe6 / de6 „bringen, liefern“,”          2000 [published 2005]: “Textformular
+           ZA 100, 1–14.                                       und Syntax in sumerischen Verwal-
+Michalowski, Piotr                                             tungstexten,” Acta Sumerologica 22,
+    2006 “The Lives of the Sumerian Lan-                       249–72.
+           guage,” in: Seth L. Sanders (ed.),          2004 “Das Ende des Sumerischen. Tod
+           Margins of Writing, Origins of Cul-                 und Nachleben einer altmesopota-
+           ture. Oriental Institute Seminars 2.                mischen Sprache,” in P. Schrijver
+           Chicago, Ill.: The Oriental Institute               and P.-A. Mumm (eds.), Sprachtod
+           of the University of Chicago, 159–                  und Sprachgeburt. Münchner Fors-
+           86.                                                 chungen zur historischen Sprach-
+372                                          Walther Sallaberger
+
+
+           wissenschaft 2. Bremen: Hempen,                       American Schools of Oriental
+           108–40.                                               Research, 223–30.
+   2005 “‘bringen’ im Sumerischen. Lesung              Wilcke, Claus
+           und Bedeutung von de6(DU) und                  1998 “Zu ‘GilgameÍ und Akka’. Überle-
+           túm(DU),” in R. Rollinger (ed.),                      gungen zur Zeit der Entstehung
+           Von Sumer bis Homer. Festschrift für                  und Niederschrift [...],” in M.
+           Manfred Schretter zum 60. Geburtstag                  Dietrich and O. Loretz (eds.), dub-
+           am 25. Februar 2004. AOAT 325.                        sar anta-men. Studien zur Altoriental-
+           Münster: Ugarit-Verlag, 557–76.                       istik. Festschrift für Willem H.Ph.
+Schneider, Nikolaus                                              Römer. AOAT 253. Münster:
+   1936 Die Zeitbestimmungen der Wirt-schafts-                   Ugarit-Verlag, 457-86.
+           urkunden von Ur III. Analecta Ori-             2000 Wer las und schrieb in Babylonien und
+           entalia 13. Roma: Pontificio Istituto                 Assyrien. Überlegungen zur Literalität
+           Biblico                                               im Alten Zweistromland. Sitzungs-
+Soden, Wolfram von                                               berichte der Bayerischen Akademie
+   1995 Grundriß der akkadischen Grammatik.                      der Wissenschaften, Philosophisch-
+           AnOr. 33. 3. erg. Aufl. Roma: Pon-                    Historische Klasse Jg. 2000, H. 6.
+           tificio Istituto Biblico.                             München: C.H. Beck in Kommis-
+Sommerfeld, Walter                                               sion.
+   1999 Die Texe der Akkade-Zeit 1: Das                Winford, Donald
+           Dijala-Gebiet: Tutub. Imgula 3/1.              2007 “Some Issues in the Study of Lan-
+            Münster: Rhema.                                      guage Contact,” Journal of Language
+Streck, Michael P.                                               Contact – Thema 1 (2007) 22–40
+    2004 “Die Amurriter der altbabyloni-                         (www.jlc-journal.org, accessed 2009
+           schen Zeit im Spiegel des Onomas-                     /12/27).
+           tikons. Eine ethno-linguistische            Woods, Christopher
+           Evaluierung,” in J.-W. Meyer and               2006 “Bilingualism, Scribal Learning,
+           W. Sommerfeld (eds.), 2000 v. Chr.                    and the Death of Sumerian,” in S.
+           – Politische, wirtschaftliche und gesell-             L. Sanders (ed.), Margins of Writing,
+           schaftliche Entwicklung im Zeichen einer              Origins of Culture. Oriental Institute
+           Jahrtausendwende. 3. Internationales                  Seminars 2. Chicago, Ill.: The Ori-
+           Colloquium der Deutschen Orient-                      ental Institute of the University of
+           gesellschaft [...]. Saarbrücken: SDV,                 Chicago, 91–120.
+           313–55.                                     Zólyomi, Gábor
+Van Coetsem, Frans.                                       2000 [published 2005]: “Structural Inter-
+    1988 Loan Phonology and the Two Transfer                     ference from Akkadian in Old
+           Types in Language Contact. Dord-                      Babylonian Sumerian,” Acta Sumer-
+           recht: Foris.                                         ologica 22, 335–60.
+    2000 A General and Unified Theory of the
+           Transmission Process in Language Con-
+           tact. Heidelberg: Winter.
+Veldhuis, Niek
+    2008 “Orthography and Politics: adda,
+           ‘carcass,’ and kur9 ‘to enter’,” in P.
+           Michalowski (ed.), On the Third
+           Dynasty of Ur. Studies in Honor of
+           Marcel Sigrist. JCS Suppl. 1. Boston:
+

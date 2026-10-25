@@ -1,0 +1,1 @@
+OK:12 photos;36 original source hashes;22/19 alternative regions;12 graphic types+1 unresolved;24 fixed-criteria assessments;4 topology models;phonetic relabel invariance;all local atlas links.

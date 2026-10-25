@@ -1,0 +1,44 @@
+[
+  {
+    "file": "Mythische_Sphaerenwechsel_2020.pdf",
+    "url": "https://uplopen.com/books/5144/files/d953a817-ab69-419f-a365-60e821d774b5.pdf",
+    "returncode": 56,
+    "bytes": 0,
+    "error": "curl: (56) The requested URL returned error: 403\n"
+  },
+  {
+    "file": "P226974_card.html",
+    "url": "https://cdli.earth/artifacts/226974",
+    "returncode": 0,
+    "bytes": 72848,
+    "error": ""
+  },
+  {
+    "file": "P232290_card.html",
+    "url": "https://cdli.earth/artifacts/232290",
+    "returncode": 0,
+    "bytes": 88025,
+    "error": ""
+  },
+  {
+    "file": "Princeton2_publication.html",
+    "url": "https://cdli.earth/publications/117703",
+    "returncode": 0,
+    "bytes": 681170,
+    "error": ""
+  },
+  {
+    "file": "PTS1501_reader.html",
+    "url": "https://cdli.earth/artifacts/201507/reader/118731",
+    "returncode": 0,
+    "bytes": 5914,
+    "error": ""
+  },
+  {
+    "file": "PTS1502_reader.html",
+    "url": "https://cdli.earth/artifacts/431422/reader/206522",
+    "returncode": 0,
+    "bytes": 5914,
+    "error": ""
+  }
+]

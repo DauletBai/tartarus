@@ -1,0 +1,123 @@
+
+<!DOCTYPE html>
+<html lang="en" dir="ltr" prefix="og: http://ogp.me/ns#">
+<head>
+    <meta charset="utf-8">    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+        Photo of P000014 - Cuneiform Digital Library Initiative    </title>
+
+            <meta name="twitter:card" content="summary">
+    
+    <meta property="og:title" content="Photo of P000014" />
+    <meta property="og:url" content="https://cdli.earth/artifacts/14/reader/88924" />
+    <meta property="og:site_name" content="CDLI">
+    <meta name="twitter:site" content="@cdli_news">
+
+    
+    
+    <link href="/favicon.ico" type="image/x-icon" rel="icon"><link href="/favicon.ico" type="image/x-icon" rel="shortcut icon">
+    <link rel="alternate" href="/artifacts/14/reader/88924" hreflang="en" type="text/html"><link rel="alternate" href="/ar/artifacts/14/reader/88924" hreflang="ar" type="text/html">
+            <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">        <link rel="stylesheet" href="/assets/css/main.css">    <link rel="stylesheet" href="/assets/css/font-awesome/css/font-awesome.min.css">    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>    <script src="/assets/js/jquery.min.js"></script>    <script src="/assets/js/js.js"></script>    <script src="/assets/js/drawer.js" defer="defer"></script>        <script src="/assets/js/matomo.js"></script></head>
+<body>
+    
+<div class="d-md-flex text-start ">
+    <div id="reader-viewer-container" class="position-relative">
+        <div id="viewer" class="text-center" style="background: black; height: 100vh;">
+    <p id="viewer-links">
+        <span class="py-1 px-3">
+            <a href="/dl/photo/P000014.jpg" target="_blank" class="text-white">Open image <span class="fa fa-external-link"></span></a>
+                    </span>
+    </p>
+
+    <noscript>
+        <img src="/dl/photo/P000014.jpg" style="max-height: 100%; max-width: 100%;">
+    </noscript>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/openseadragon@6.0.1/build/openseadragon/openseadragon.min.js" integrity="sha512-eDBJUqlHc4ZYlvBDBc4X+WIPi/1julZWKdYwIFyxW18VwzewdWPk/MEGjEijAlgUMLvGZAiGBnxdM1i0ycO83w==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script type="text/javascript">
+$(function() {
+    var overlay = $('#viewer-links span').get(0)
+    $('#viewer-links').remove()
+
+    var viewer = OpenSeadragon({
+        id: 'viewer',
+
+        // Location of UI images
+        prefixUrl: 'https://cdn.jsdelivr.net/npm/openseadragon@6.0.1/build/openseadragon/images/',
+
+        // Show navigator in top right
+        showNavigator: true,
+        navigatorPosition:   "BOTTOM_LEFT",
+        navigatorSizeRatio: 0.2,
+
+        // Show more controls
+        showFlipControl: true,
+        showRotationControl: true,
+
+        // Load image
+        preserveImageSizeOnResize: true,
+        tileSources: {
+            type: 'image',
+            url: "\/dl\/photo\/P000014.jpg"        }
+    })
+
+    viewer.addControl(overlay, { anchor: OpenSeadragon.ControlAnchor.TOP_RIGHT })
+
+    // Zoom to top center of image
+    function setZoom () {
+        var zoom = viewer.viewport.imageToViewportZoom(1)
+        if (zoom < 1) {
+            viewer.viewport.zoomTo(zoom, null, true)
+            viewer.viewport.defaultZoomLevel = zoom
+            viewer.viewport.minZoomLevel = zoom
+        } else {
+            var bounds = viewer.viewport.getHomeBounds()
+            var aspect = viewer.viewport.getAspectRatio()
+            viewer.viewport.fitBoundsWithConstraints(new OpenSeadragon.Rect(
+                bounds.x,
+                bounds.y,
+                bounds.width,
+                Math.min(bounds.width / aspect, bounds.height)
+            ), true)
+        }
+    }
+    viewer.addHandler('tile-loaded', setZoom)
+    viewer.addHandler('resize', setZoom)
+})
+</script>
+
+        <button class="btn text-white bg-dark d-none d-md-block position-absolute" type="button" data-bs-toggle="collapse" data-bs-target="#reader-info" aria-expanded="false" aria-controls="reader-info">
+            <span class="fa fa-chevron-right" aria-hidden="true"></span>
+            <span class="visually-hidden">Toggle sidebar</span>
+        </button>
+    </div>
+
+    <div class="collapse show text-light bg-dark p-3" id="reader-info">
+        <h2 class="h4">
+            <a href="/artifacts/14" class="text-white">ATU 3, pl. 036, W 12139 (P000014)</a>        </h2>
+        <p>Lexical tablet excavated in Uruk (mod. Warka), dated to the Uruk III (ca. 3200-3000 BC) period and now kept in Vorderasiatisches Museum, Berlin, Germany</p>
+        <p>
+            Image            
+&copy; <a href="/collections/215">Vorderasiatisches Museum, Berlin, Germany</a>
+
+        </p>
+
+        <p>
+                                </p>
+                    <h3>Transliteration</h3>
+                        <div class="d-flex flex-wrap align-items-start gap-2 mb-2">
+                                                    </div>
+            <div class="border p-3" style="height: 100vh; overflow-y: auto;">
+                <b>tablet </b><br><b>obverse </b><br><b>column 1 </b><br>1. 1(N01) , SZUBUR <br>2. 1(N01) , |1(N57).SZUBUR| <br><i>&emsp; = P000456 obv. ii 1 </i><br>3. 1(N01) , |2(N57).SZUBUR| <br>4. 1(N01) , U4 SZUBUR# <br>5. 1(N01) , KAB#? [...] <br>6. 1(N01) , ME~a |SILA3~axGARA2~a|#? SZUBUR <br>7. 1(N01) , RAD~a@g SZUBUR <br>8. 1(N01) , KU3~a# SZUBUR <br>9. 1(N01) , ZATU686~a BU~a SZUBUR <br>10. 1(N01) , BU~a SZUBUR <br><b>column 2 </b><br>1. 1(N01) , MUSZEN# SZUBUR# <br>2. 1(N01) , PAP~a SZUBUR# <br>3. 1(N01) , UH3~a? SZUBUR# <br>4. 1(N01) , HI? NUN~a# SZUBUR <br>5. 1(N01) , KASKAL SZUBUR <br>6. 1(N01) , LAM~b SZUBUR <br>7. 1(N01) , KA~a#? SZUBUR <br>8. 1(N01) , ADAB# SZUBUR <br><i>&emsp; = P000456 obv. iii 1 </i><br>9. 1(N01) , SILA4~b# SZUBUR <br>10. 1(N01) , UB SZUBUR <br>11. 1(N01) , MUSZEN SZUBUR <br><b>column 3 </b><br>1. 1(N01) , TUM~a SZUBUR <br>2. 1(N01) , GI SZUBUR <br>3. 1(N01) , UR~a SZUBUR <br>4. 1(N01) , SZA3~a1 SZUBUR <br><i>&emsp; = P000456 obv. ii 3 </i><br>5. 1(N01) , GAN2 SZUBUR <br>6. 1(N01) , SZE~a# SZUBUR <br>7. 1(N01) , GURUSZDA SZUBUR <br>8. 1(N01) , A SZUBUR <br>9. 1(N01) , SAGSZU SZUBUR <br><b>reverse </b><br><b>column 1 </b><br>1. 1(N01) , BAHAR2~a SZUBUR <br>2. 1(N01) , SZUBUR AB2 <br><i>&emsp; = P000456 obv. iii 3 </i><br>3. 1(N01) , SZUBUR# NE~a# <br>4. 1(N01) , SZUBUR# [...] <br>5. 1(N01) , SZUBUR |BU~a+DU6~a| <br>6. 1(N01) , SZUBUR LAGAB~a <br>7. 1(N01) , SZUBUR GI6 <br>8. 1(N01) , SZUBUR# U4 <br>9. 1(N01) , BU~a SZUBUR <br>10. 1(N01) , URI3~a SZUBUR <br><b>column 2 </b><br>1. 1(N01) , KAL~b1 SZUBUR <br>2. 1(N01) , 1(N57) SZUBUR <br>3. 1(N01) , SZUBUR KU6~a <br>4. 1(N01) , SZUBUR SI#? <br>5. 1(N01) , SZUBUR# EN~a <br>6. 1(N01) , SZUBUR SUHUR <br>7. 1(N01) , SZUBUR MU <br>8. 1(N01) , TE SZUBUR <br>9. 1(N01) , ZATU758 SZUBUR <br>10. 1(N01) , GAL~b# SZUBUR# <br><b>column 3 </b><br>1. 1(N01) , BAHAR2~a SZUBUR <br>2. 1(N01) , AN SZUBUR <br>3. 1(N01) , SZUBUR GIR3~a <br>4. 1(N01) , |3(N57).SZUBUR| <br>5. 1(N01) , SZE3 SZUBUR <br>6. 1(N01) , NIM~a# [...] <br>7. 1(N01) , SZUBUR X <br>8. 1(N01) , SZUBUR MAH~a <br><b>left </b><br>1. 5(N14) 8(N01) , <br>            </div>
+            </div>
+</div>
+
+        <script>
+        $(document).ready(function() {
+            $('header .no-js-dd').removeClass('no-js-dd');
+        });
+    </script>
+    </body>
+</html>

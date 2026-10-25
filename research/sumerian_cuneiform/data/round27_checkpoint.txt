@@ -1,0 +1,8 @@
+Цикл 27 завершён. Книгу не менять.
+5 физических конусов; фото 4 (BM109930 прежний, 3 новых BM109931/PTS1501/PTS1502), YBC2148 handcopy YOS1 1915 plateX/item14/PDF147; printed p13/PDF31 older translation front established, modern id5 river.
+BM109931 CDLI has no transliteration but eBL hasPhoto true and photo acquired; earlier absence in card did not imply no image.
+YBC target gab-ba / a bi2-in-ge-en6 => GABA BA A NE IN GI IN; en6=IN NOT EN (corpus control). PTS target gaba-ba-a bi2-in-zi => GABA BA A NE IN ZI in editorial model. Physical diagnostic wedge verification unfinished; do not claim all signs independently read.
+31 gin tokens / 23 compositions /14 forms; mu-na-gen6 MU NA GI 1 vs mu-na-ge-en6 MU NA GI IN 8. Only immediate cf=id before gin is same Q000873.10.3, so no independent canal construction.
+BM91148/P226718 control photo obtained via CDLI URL in eBL, low resolution; not independently read. Metadata mismatch NB script eBL vs UrIII description.
+ga-ba! unresolved; MSL2 pp35f and MSL14 p27 Je needed, not obtained. NippurEa label722 uses cidQ000055.783, block sb.Q000055.788, not HTML id722.
+Next: diagnostic photo-collation GI/ZI and line placement, correction note ga-ba!, independent syntax parallels A as noun vs prefix. Do not expand phonetic key by guesswork.

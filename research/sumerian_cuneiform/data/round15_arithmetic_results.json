@@ -1,0 +1,104 @@
+{
+  "date": "2026-10-25",
+  "model_weights": {
+    "N01": "1",
+    "N14": "6",
+    "N45": "60",
+    "N34": "180",
+    "N39~a": "1/5"
+  },
+  "results": [
+    {
+      "artifact": "P005371",
+      "quantity_entries": 13,
+      "unflagged_quantity_entries": 5,
+      "uncertain_or_restored_entries": 8,
+      "restored_entries": 3,
+      "gap_entries": 1,
+      "total_vector": {
+        "N01": 4,
+        "N14": 8,
+        "N34": 7,
+        "N39~a": 2,
+        "N45": 2
+      },
+      "entry_sum_vector": {
+        "N01": 4,
+        "N14": 38,
+        "N34": 4,
+        "N39~a": 2,
+        "N45": 8
+      },
+      "total_minus_entries_vector": {
+        "N14": -30,
+        "N34": 3,
+        "N45": -6
+      },
+      "entry_sum_N01": "7162/5",
+      "total_N01": "7162/5",
+      "residual_N01": "0",
+      "listed_quantity_sum_holds": true,
+      "confidence": "uncertain: named/restored quantities fit, hidden gap not filled or certified zero",
+      "hypotheses": "reverse quantity is total of all visible obverse quantity-bearing entries; model weights transferred unchanged"
+    },
+    {
+      "artifact": "P005372",
+      "quantity_entries": 8,
+      "unflagged_quantity_entries": 8,
+      "uncertain_or_restored_entries": 0,
+      "restored_entries": 0,
+      "gap_entries": 0,
+      "total_vector": {
+        "N01": 1,
+        "N14": 5,
+        "N34": 6,
+        "N39~a": 1,
+        "N45": 1
+      },
+      "entry_sum_vector": {
+        "N01": 6,
+        "N14": 24,
+        "N34": 4,
+        "N39~a": 6,
+        "N45": 5
+      },
+      "total_minus_entries_vector": {
+        "N01": -5,
+        "N14": -19,
+        "N34": 2,
+        "N39~a": -5,
+        "N45": -4
+      },
+      "entry_sum_N01": "5856/5",
+      "total_N01": "5856/5",
+      "residual_N01": "0",
+      "listed_quantity_sum_holds": true,
+      "confidence": "editorial unflagged-quantity test, not independent collation of every wedge",
+      "hypotheses": "reverse quantity is total of all visible obverse quantity-bearing entries; model weights transferred unchanged"
+    }
+  ],
+  "additional_conditional_constraint": {
+    "equation": "2D-4A-19B-5C-5F=0",
+    "names": {
+      "D": "N34",
+      "A": "N45",
+      "B": "N14",
+      "C": "N01",
+      "F": "N39~a"
+    },
+    "assumptions": [
+      "D=3A from external numerical model",
+      "A=10B conditional result from earlier P005390",
+      "F=C/5 from external fractional model",
+      "reverse quantity is additive total"
+    ],
+    "reduction": "B-6C=0",
+    "derived_B_over_C": "6",
+    "counterfactual_B_over_C_10_residual_in_C_units": "4",
+    "limit": "This is not a reconstruction of all numerical weights without prior assumptions."
+  },
+  "S_alternative": "Not evaluated as a complete transferable system: N39~a is not mapped by the cited S table; no invented S weight for it.",
+  "status": "prior editorial snippets known; new-image observations saved before new extraction; not blind phonetic decipherment",
+  "independent_complete_phonetic_translations": 0,
+  "book_modified": false
+}

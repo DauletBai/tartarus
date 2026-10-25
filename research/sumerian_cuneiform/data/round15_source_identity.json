@@ -1,0 +1,26 @@
+[
+  {
+    "artifact": "P005371",
+    "title": "MSVO 3, 60 (P005371) - Cuneiform Digital Library Initiative",
+    "museum_number": "Berlin 041",
+    "catalogue_period": "Uruk III (ca. 3200-3000 BC)",
+    "catalogue_provenience": "Uruk (mod. Warka)",
+    "limit": "Catalogue claim; independent dating/provenance not established"
+  },
+  {
+    "artifact": "P005372",
+    "title": "MSVO 3, 61 (P005372) - Cuneiform Digital Library Initiative",
+    "museum_number": "BM 140854",
+    "catalogue_period": "Uruk III (ca. 3200-3000 BC)",
+    "catalogue_provenience": "Uruk (mod. Warka)",
+    "limit": "Catalogue claim; independent dating/provenance not established"
+  },
+  {
+    "artifact": "P391514",
+    "title": "OIM A02480 (P391514) - Cuneiform Digital Library Initiative",
+    "museum_number": "OIM A02480",
+    "catalogue_period": "Neo-Babylonian (ca. 626-539 BC)",
+    "catalogue_provenience": "-",
+    "limit": "Catalogue claim; independent dating/provenance not established"
+  }
+]

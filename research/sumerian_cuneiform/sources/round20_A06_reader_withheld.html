@@ -1,0 +1,123 @@
+
+<!DOCTYPE html>
+<html lang="en" dir="ltr" prefix="og: http://ogp.me/ns#">
+<head>
+    <meta charset="utf-8">    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+        Photo of P000006 - Cuneiform Digital Library Initiative    </title>
+
+            <meta name="twitter:card" content="summary">
+    
+    <meta property="og:title" content="Photo of P000006" />
+    <meta property="og:url" content="https://cdli.earth/artifacts/6/reader/88915" />
+    <meta property="og:site_name" content="CDLI">
+    <meta name="twitter:site" content="@cdli_news">
+
+    
+    
+    <link href="/favicon.ico" type="image/x-icon" rel="icon"><link href="/favicon.ico" type="image/x-icon" rel="shortcut icon">
+    <link rel="alternate" href="/artifacts/6/reader/88915" hreflang="en" type="text/html"><link rel="alternate" href="/ar/artifacts/6/reader/88915" hreflang="ar" type="text/html">
+            <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">        <link rel="stylesheet" href="/assets/css/main.css">    <link rel="stylesheet" href="/assets/css/font-awesome/css/font-awesome.min.css">    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>    <script src="/assets/js/jquery.min.js"></script>    <script src="/assets/js/js.js"></script>    <script src="/assets/js/drawer.js" defer="defer"></script>        <script src="/assets/js/matomo.js"></script></head>
+<body>
+    
+<div class="d-md-flex text-start ">
+    <div id="reader-viewer-container" class="position-relative">
+        <div id="viewer" class="text-center" style="background: black; height: 100vh;">
+    <p id="viewer-links">
+        <span class="py-1 px-3">
+            <a href="/dl/photo/P000006.jpg" target="_blank" class="text-white">Open image <span class="fa fa-external-link"></span></a>
+                    </span>
+    </p>
+
+    <noscript>
+        <img src="/dl/photo/P000006.jpg" style="max-height: 100%; max-width: 100%;">
+    </noscript>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/openseadragon@6.0.1/build/openseadragon/openseadragon.min.js" integrity="sha512-eDBJUqlHc4ZYlvBDBc4X+WIPi/1julZWKdYwIFyxW18VwzewdWPk/MEGjEijAlgUMLvGZAiGBnxdM1i0ycO83w==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script type="text/javascript">
+$(function() {
+    var overlay = $('#viewer-links span').get(0)
+    $('#viewer-links').remove()
+
+    var viewer = OpenSeadragon({
+        id: 'viewer',
+
+        // Location of UI images
+        prefixUrl: 'https://cdn.jsdelivr.net/npm/openseadragon@6.0.1/build/openseadragon/images/',
+
+        // Show navigator in top right
+        showNavigator: true,
+        navigatorPosition:   "BOTTOM_LEFT",
+        navigatorSizeRatio: 0.2,
+
+        // Show more controls
+        showFlipControl: true,
+        showRotationControl: true,
+
+        // Load image
+        preserveImageSizeOnResize: true,
+        tileSources: {
+            type: 'image',
+            url: "\/dl\/photo\/P000006.jpg"        }
+    })
+
+    viewer.addControl(overlay, { anchor: OpenSeadragon.ControlAnchor.TOP_RIGHT })
+
+    // Zoom to top center of image
+    function setZoom () {
+        var zoom = viewer.viewport.imageToViewportZoom(1)
+        if (zoom < 1) {
+            viewer.viewport.zoomTo(zoom, null, true)
+            viewer.viewport.defaultZoomLevel = zoom
+            viewer.viewport.minZoomLevel = zoom
+        } else {
+            var bounds = viewer.viewport.getHomeBounds()
+            var aspect = viewer.viewport.getAspectRatio()
+            viewer.viewport.fitBoundsWithConstraints(new OpenSeadragon.Rect(
+                bounds.x,
+                bounds.y,
+                bounds.width,
+                Math.min(bounds.width / aspect, bounds.height)
+            ), true)
+        }
+    }
+    viewer.addHandler('tile-loaded', setZoom)
+    viewer.addHandler('resize', setZoom)
+})
+</script>
+
+        <button class="btn text-white bg-dark d-none d-md-block position-absolute" type="button" data-bs-toggle="collapse" data-bs-target="#reader-info" aria-expanded="false" aria-controls="reader-info">
+            <span class="fa fa-chevron-right" aria-hidden="true"></span>
+            <span class="visually-hidden">Toggle sidebar</span>
+        </button>
+    </div>
+
+    <div class="collapse show text-light bg-dark p-3" id="reader-info">
+        <h2 class="h4">
+            <a href="/artifacts/6" class="text-white">CDLI Lexical 000002, ex. 173 (P000006)</a>        </h2>
+        <p>Lexical tablet excavated in Uruk (mod. Warka), dated to the Uruk IV (ca. 3350-3200 BC) period and now kept in Vorderasiatisches Museum, Berlin, Germany</p>
+        <p>
+            Image            
+&copy; <a href="/collections/215">Vorderasiatisches Museum, Berlin, Germany</a>
+
+        </p>
+
+        <p>
+                                </p>
+                    <h3>Transliteration</h3>
+                        <div class="d-flex flex-wrap align-items-start gap-2 mb-2">
+                                                    </div>
+            <div class="border p-3" style="height: 100vh; overflow-y: auto;">
+                <b>tablet </b><br><b>obverse </b><br><b>column 1 </b><br>1. 1(N01) , [...] <br>2. 1(N01) , NAMESZDA#? <br>3. 1(N01) , KAB NAM2 <br>4. 1(N01) , NAM2 NAM2 <br>5. 1(N01) , NAM2 URU~a1 <br>6. 1(N01) , NAM2 DI# <br>7. 1(N01) , NAM2 ERIN <br>8. 1(N01) , NAM2 LA~b? <br>9. 1(N01) , AB~a# [...] <br><b>column 2 </b><br>1. 1(N01) , [...] SZITA~a1# <br>2. 1(N01) , TE <br>3. 1(N01) , KINGAL <br>4. 1(N01) , UKKIN~a GESZTU~b <br>5. 1(N01) , UKKIN~a NUN~a <br>6. 1(N01) , GA~a GAL~b <br>7. 1(N01) , GA~a GESZTU~b <br>8. 1(N01) , GA~a NUN~a <br>9. 1(N01) , UMUN2# [...] <br><b>column 3 </b><br>1. 1(N01) , ZATU693 EN~a <br>2. 1(N01) , ZATU693 UKKIN~a <br>3. 1(N01) , ZATU693 NAGA~b <br>4. 1(N01) , SUKKAL# USZ~a# <br>5. 1(N01) , X [...] <br>6. 1(N01) , X KASZ~b <br>7. 1(N01) , ISZ~a <br>8. 1(N01) , NIM~a <br>9. 1(N01) , NIM~a#? [...] <br>10. 1(N01) , |GURUSZ~ax2(N14)| <br>11. 1(N01) , SZITA~a1 <br><b>column 4 </b><br>1. 1(N01) , KISAL~b1# NUN~a <br>2. 1(N01) , KISAL~b1 GESZTU~b <br>3. 1(N01) , ERIN? UMUN2 <br>4. 1(N01) , BUR2? <br>5. 1(N01) , BUR2? SUHUR# <br><b>column 5 </b><br>1. 1(N01) , NESAG2~a# <br>2. 1(N01) , TUR3~a <br>3. 1(N01) , AL#? <br>4. 1(N01) , [...] <br><b>reverse </b><br><b>column 1 </b><br>1. 1(N01) , [...] <br>2. 1(N01) , GUB3~a? <br>3. 1(N01) , SUHUR <br>4. 1(N01) , X [...] <br>5. 1(N01) , X [...] <br>6. 1(N01) , KISAL~b1# [...] <br>7. 1(N01) , [...] <br><b>column 2 </b><br>1. 1(N01) , GIR3~a# <br>2. 1(N01) , GIR3@g~a#? <br>3. 1(N01) , ZATU736~b <br>4. 1(N01) , DA~b <br>5. 1(N01) , PA~a GIR3~a <br>6. 1(N01) , SZEG9 <br>7. 1(N01) , GI [...] <br>8. 1(N01) , X [...] <br><b>column 3 </b><br>1. 1(N01) , |AB2x2(N14)| <br>2. 1(N01) , DARA3~c <br>3. 1(N01) , DIN <br>4. 1(N01) , GURUSZDA# <br>5. 1(N01) , GI#? RAD~b <br>6. 1(N01) , PA~a RAD~b <br>7. 1(N01) , ADAB <br>8. 1(N01) , NIR~b <br>9. 1(N01) , BU~a [...] <br><b>column 4 </b><br>1. 1(N01) , [...] X <br>2. 1(N01) , SZUM PA~a <br>3. 1(N01) , X ZATU693 X <br>4. 1(N01) , UTUL~b <br>5. 1(N01) , |USZ~b&amp;USZ~b| <br>            </div>
+            </div>
+</div>
+
+        <script>
+        $(document).ready(function() {
+            $('header .no-js-dd').removeClass('no-js-dd');
+        });
+    </script>
+    </body>
+</html>

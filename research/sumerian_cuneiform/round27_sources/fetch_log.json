@@ -1,0 +1,49 @@
+[
+  {
+    "file": "P216747_card.html",
+    "url": "https://cdli.earth/artifacts/216747",
+    "status": 200,
+    "content_type": "text/html; charset=UTF-8",
+    "bytes": 67922
+  },
+  {
+    "file": "P201507_card.html",
+    "url": "https://cdli.earth/artifacts/201507",
+    "status": 200,
+    "content_type": "text/html; charset=UTF-8",
+    "bytes": 72201
+  },
+  {
+    "file": "P431422_card.html",
+    "url": "https://cdli.earth/artifacts/431422",
+    "status": 200,
+    "content_type": "text/html; charset=UTF-8",
+    "bytes": 67715
+  },
+  {
+    "file": "BM109931_eBL.json",
+    "url": "https://www.ebl.lmu.de/api/fragments/BM.109931",
+    "status": 200,
+    "content_type": "application/json",
+    "bytes": 1460
+  },
+  {
+    "file": "YBC2148_eBL.json",
+    "url": "https://www.ebl.lmu.de/api/fragments/YBC.2148",
+    "status": 200,
+    "content_type": "application/json",
+    "bytes": 2226
+  },
+  {
+    "file": "Q000873_score.html",
+    "url": "https://oracc.museum.upenn.edu/etcsri/Q000873/score",
+    "error": "<urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1081)>"
+  },
+  {
+    "file": "Yale_BC016776.html",
+    "url": "https://collections.peabody.yale.edu/search/Record/YPM-BC-016776",
+    "status": 200,
+    "content_type": "text/html; charset=utf-8",
+    "bytes": 783
+  }
+]

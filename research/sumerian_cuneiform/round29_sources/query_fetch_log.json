@@ -1,0 +1,30 @@
+[
+  {
+    "file": "NippurEa_gaba_block.html",
+    "url": "https://oracc.museum.upenn.edu/dcclt/Q000055?block=sb.Q000055.788",
+    "returncode": 0,
+    "bytes": 2252,
+    "error": ""
+  },
+  {
+    "file": "NippurEa_query_score.html",
+    "url": "https://oracc.museum.upenn.edu/dcclt/Q000055?score",
+    "returncode": 0,
+    "bytes": 881623,
+    "error": ""
+  },
+  {
+    "file": "NippurEa_query_sources.html",
+    "url": "https://oracc.museum.upenn.edu/dcclt/Q000055?sources",
+    "returncode": 0,
+    "bytes": 21163,
+    "error": ""
+  },
+  {
+    "file": "LuUtu_query_score.html",
+    "url": "https://oracc.museum.upenn.edu/etcsri/Q000873?score",
+    "returncode": 0,
+    "bytes": 0,
+    "error": ""
+  }
+]

@@ -1,0 +1,901 @@
+             Compounding in Aral–Caspian Kipchak
+                                       languages
+                                                                       Bence Grezsa
+                                                                    University of Szeged
+
+
+
+Research on compounding as an instrument of word formation is a rather new field
+in Turcology. This type of word formation might be used in various situations, for
+instance, it can perform the function of reduplication or suffixation. Therefore,
+compounding should be analysed from the aspect of structural, semantic and
+syntactic characteristics in Turkic languages. The present study provides an
+overview of compounding in the Aral–Caspian Kipchak languages applying the
+latest approaches of linguistics. The corpus of data used is collected from various
+dictionaries and grammars, including written materials, mirroring spoken languages.
+
+1. Introduction
+The aim of this study is to provide classification possibilities of the compounds in
+the Aral–Caspian Kipchak languages including Kazakh, Kirghiz, Karakalpak and
+Noghay. Another goal is to overview the characteristics of the compounds in these
+languages and to discuss some controversial questions on the subject, principally
+focusing on the structural and the semantic aspects. The topic of this study is
+specifically relevant. Although many works deal with compounding from the aspect
+of general linguistics, the number of the papers about compounding in Turkic
+languages is very small except for isolated examples. Consequently, I intend to
+provide a classification of compounds in the above mentioned Kipchak languages
+applying some of the latest methods of linguistics. I have chosen as the model of
+theoretical background the classification of the Morbo/Comp 1 project based on
+research by Bisetto and Scalise. The data in this article was collected from various
+dictionaries of these languages (see in References) and online written sources. My
+
+1 The Project of the Department of Foreign Languages in Bologna, Italy, with a data base of
+
+compounds, which aims to classify compounds primarily in Indo–European languages. For
+further information, see http://www.morbocomp.sslmit.unibo.it/
+204                                                                     Bence Grezsa
+
+whole material contains approximately 500 items, but because of the space
+limitations of this article, I provide only some illustrations.
+
+2. Research on compounds
+The issue of compounds in general linguistics, as mentioned above, is a well-
+researched subject: numerous articles can be found about the role of compounds in
+word formation and a number of systems were suggested for their classification. I
+will mention only those sources which are relevant in this case. The first undertaking
+to classify compounds is Bloomfield (1933), who divided them into two groups,
+namely, exocentric and endocentric compounds and distinguished two more
+subcategories in the endocentric group, subordinative and coordinative compounds. 2
+Spencer (1991) does not distinguish subgroups in his classification, but he has three
+categories, subordinative, coordinative and appositional compounds, disregarding
+the exocentric and endocentric classification. Fabb has categorized compounds
+according to headedness in three groups: those with no head, one head and two
+heads. Haspelmath (2002: 85−98) has created in his classification the new category
+of affix compounds and has differentiated five groups, meanwhile Bauer (2001: 695-
+707) and Booij (2005: 75−95) differentiate four in their works. The main groups of
+these three categorizations are exocentric, endocentric, coordinative, possessive and
+appositional compounds (Bisetto and Scalise 2005: 321–325).
+    A problem of these classifications is that the categories overlap. Moreover, some
+compounds cannot be classified, because not every attribute of compounds has been
+taken into consideration. However, the proposal by Bisetto and Scalise (2005: 326–
+330) attempt an unambiguous, clear and simple classification on the basis of
+syntactic constructions. According to them, every compound has either exocentric or
+endocentric attributes marking the presence or the absence of the head, providing the
+base of their classification. Besides exocentricity/endocentricity, compounds might
+be classified into three groups, namely, subordinate, attributive and coordinate
+compounds (Bisetto and Scalise 2005: 321–328). This grouping classifies
+compounds logically and reasonably. Because of this consideration, I have chosen to
+apply this method in the case of the Aral–Caspian Kipchak branch of Turkic.
+
+
+
+
+2 For the definition of the concepts, see Bisetto and Scalise (2005).
+Compounding in Aral–Caspian Kipchak languages                                      205
+
+3. Compounds in Turkic languages
+In Turcology, research on word formation is confined mostly to suffixes, with
+sourceson Turkic compounds limited to only one.
+    Research covers every aspect of compounds in Turkish: their structure,
+semantics, headeness and stress. Dede’s research is the first to be emphasized, who
+analysed in her 1978 dissertation the semantic and syntactic properties of Turkish
+nominal compounds. Göksel discussed in a number of studies the compounding
+system of Turkish, first categorizing them on the basis of the findings of the
+MorboComp Project. Bağrıaçık and Ralli (2014) describe nominal–nominal
+concatenations in Turkish compounding. As for the Kipchak languages, few studies
+discuss the topic of compounding and are of relevance for the present paper. Krejci
+and Glass (2015) partially touch on compounds in Kazakh in their paper about the
+adjective/noun distinction in Kazakh. Van Hofwegen (2014) focuses on nominal
+compounds in the Kazakh language, discussing the remarks of Göksel and Haznedar
+(2007) regarding Turkish compounds, which will be also referred to below regarding
+the classification possibilities of the Aral–Caspian languages and their
+characteristics. The studies concentrate generally on nominal compounding in
+Turkic languages and leave other categories like verbal, adverbial and pronominal
+compounds out of consideration, even though such constructions can be found in the
+Aral–Caspian branch. Besides, it would be important to examine the influence of
+other non-Turkic languages, which probably had considerable effect on
+compounding as well. In our case, two languages must be taken in account, Russian
+and Persian.
+
+4. Compounds in Kipchak languages
+Similarly to all agglitunative languages, Kipchak languages have many bound
+morphemes with many allomorphic variants. Words are formed usually through
+suffixation and there is a lot of variation for creating new words and creating notions
+(Johanson 1998: 34–38). Thus, word formation in Kipchak languages is a very
+productive process, but not the only one. Generally, in nominal word formation there
+are numerous compounds. The compounds are often formed by joining two nouns,
+like the Kazakh kün žarïġï ‘sunlight’ (kün ‘day, sun’ + žarïq ‘light’ +(s)I possessive
+suffix) or Noghay yïl šaġï ‘season’ (yïl ‘year’ + šaq ‘time, period, age’ +(s)I
+possessive suffix). The second element of these nominal constructions contains
+generally the third person possessive suffix, which is +(s)I in every Aral–Caspian
+206                                                                                  Bence Grezsa
+
+Kipchak language. For this suffix, I use henceforth Göksel’s term linking element.
+However, the linking element cannot be found in every case in the same type of
+nominal construction. This issue will be discussed below. Another sizeable group of
+compounds is composed of adjective plus noun or adjective plus adjective
+elements.3 Furthermore, verbal compounds (Noun + Verb or Verb + Verb) are also
+found in this Kipchak group, as an outstanding part of the system. Tables 1, 2, 3, and
+4 summarize the compounds of the Aral–Caspian languages taking in account endo–
+and exocentricity and Bisetto and Scalise’s classification:
+
+         Subordinate                      Attributive                       Coordinate
+ endocentric  exocentric           endocentric   exocentric          endocentric   exocentric
+   azïq–tülik       kelisimsöz          aġaš üy      aq qandïlïq      meken–žay        aldaqašan
+     dükeni        ‘contract’ <          ‘timber    ‘leukemia’ <     ‘residency’ <    ‘long ago’ <
+  ‘grocery’ <        kelisim           house’ <     aq ‘white’ +         meken        alda ‘before,
+   azïq–tülik      ‘agreement,        aġaš ‘tree,    qan ‘blood’     ‘place’ + žay    forth, ahead’
+     ‘food,       accord’ + söz           wood,         +DI           ‘residence,        + qašan
+   feeding’ +        ‘word’;        timber’ + üy     {NN/Adj.}       accommoda-        ‘when, as’;
+ düken ‘shop,                            ‘house,    +LIK {NN};           tion’;
+  store’ +(s)I                            home,
+ {Poss.Sg3};                          building’;
+  kitap söresi        qolšatïr       tüski tamaq      aqqaynar           it–qus         alïp–satar
+ ‘bookshelf’<     ‘umbrella’ <         ‘lunch’ <    ‘champagne’      ‘predators’ <   ‘tradesman’<
+ kitap ‘book’        qol ‘arm,             tüski    < aq ‘white’       it ‘dog’ +     al‒ ‘to buy,
+ + sore ‘shelf’   hand’ + šatïr       ‘meridion,      + qayna‒        qus ‘bird’;        take’ ‒Ip
+      +(s)I        ‘tent, roof’;     meridional’     ‘boil, blaze’                    {CV} + sat-
+ {Poss.Sg3};                            + tamaq     ‒(A)r {CV};                           ‘to sell’
+                                   ‘food, throat’                                     -(A)r {CV};
+  tuwġan žeri       šaŋsorġïš           laqap at       alqïzïl       dos–dušpan      ämir–qudiret
+  ‘birthplace’       ‘vacuum       ‘nickname’ <     ‘purple’ < al    ‘everybody’        ‘power’ <
+ < tuw– ‘to be      cleaner’ <      laqap ‘alias,   ‘bright tone’        < dos              ämir
+     born’         šaŋ ‘dust’ +    shortcut’ + at   + qïzïl ‘red’;    ‘friend’ +       ‘command,
+    –GAn+             sor– ’to          ‘name’;                         dušpan            order’ +
+  {CV} + žer      absorb, suck’                                        ‘enemy’;           qudiret
+ ‘place’ +(s)I     -GIš {CV};                                                           ‘strength,
+ {Poss.Sg3};                                                                              power’.
+
+                                   Table 1. Compounds in Kazakh
+
+3 According to Krejci and Glass (2015: 1−12), the noun/adjective distinction in Kazakh is not
+
+clear, but in compounding parts of speech like nouns and adjectives play an impontant role in
+compounding. Because of this I analyse them separately.
+Compounding in Aral–Caspian Kipchak languages                                                   207
+
+
+         Subordinate                        Attributive                      Coordinate
+ endocentric  exocentric           endocentric    exocentric         endocentric  exocentric
+   abet ubagï      čaŋ sorguč        deŋiz baš       altïn kemer       adïr–čïbïr       bāz–bāz
+  ‘lunchtime’        ‘wacuum       ‘conceited’ <    ‘gold belt’ <     ‘hills, hilly   ‘sometimes’
+      < abet         cleaner’ <      deŋiz ‘sea,    altïn ‘gold’ +      region’ <     < bāz ‘some,
+    ‘lunch’ +      čaŋ ‘dust’ +     lake’ + baš     kemer ‘belt’;     adïr ‘hill’ +     a little’;
+  ubaq ‘time’         sor- ‘to        ‘head’;                             čïbïr
+       +(s)I      absorb, suck’                                        ‘mountain
+  {Poss.Sg3};     ‒GXč {CV};                                             range’;
+      at ǰalï         ǰer ǰüzü      aq/tunuq sū        ker sarï        alïš–berïš       boz–boz
+ ‘horse mane’       ‘surface’ <    ‘vodka’ < aq      ‘pale–face,     ‘shopping’ <     ‘dun’ < boz
+  < at ‘horse’    ǰer ‘place’ +       ‘white’/      white face’ <     al‒ ‘to buy,       ‘grey’;
+ + ǰal ‘mane’        ǰüz ‘face’        tunuq        ker ‘brown,         take’ ‒Iš
+      +(s)X            +(s)X       ‘transparent’     chestnut’ +     {VN} + ber-
+  {Poss.Sg3};      {Poss.Sg3};     + sū ‘water’;         sari        ‘to give’ ‒Iš
+                                                      ‘yellow’;          {VN};
+   ata meken        tiš ǰūġuč        čay qašïq        qara altïn        bātïr qïz        aqe–üke
+  ‘homeland’      ‘toothbrush’     ‘teaspoon’ <     ‘rock–oil’ <      ‘heroine’ <     ‘brothers’ <
+ < ata ‘father,   < tiš ‘tooth’     čay ‘tea’ +     qara ‘black’      bātïr ‘hero’     aqe ‘father,
+ dad’ + meken       + ǰū‒ ‘to           qašïq           + altïn       + qïz ‘girl’;     brother’ +
+    ‘place’;      wash’ ‒GXč          ‘spoon’;         ‘gold’;                        üke ‘younger
+                     {CV};                                                               brother’.
+
+                                  Table 2. Compounds in Kirghiz
+
+
+
+         Subordinate                        Attributive                      Coordinate
+ endocentric  exocentric           endocentric    exocentric         endocentric  exocentric
+   ata qonïs         bawïr et         aqïlï az        qara kök          aġa–ini           bolar–
+  ‘homeland’      ‘diaphragm’      ‘stupid, fool’   ‘dark blue’ <     ‘brothers’ <       bolmas
+ < ata ‘father’      < bawïr       < aqïl ‘mind,    qara ‘black’     aġa ‘brother,      ‘hardly’ <
+    + qonïs        ‘liver’ + et     logic’ +(s)I    + kök ‘blue’;         elder        bol‒ ‘to be’
+     ‘stop,          ‘meat’;        {Poss.Sg3}                       brother’ + ini        ‒Ar
+    station’;                        + az ‘few,                        ‘younger       {Aor.Sg3} +
+                                       little’;                         brother’;     bol‒ ‘to be’
+                                                                                          ‒mAs
+                                                                                      {Neg.Aor.Sg
+                                                                                           3};
+    köz žasï       orïnbasar         eki qabat        qara may         aġayïn–           demalïs
+  ‘tear’ < köz     ‘vicarious,     ‘pregnant’ <     ‘lubricant’ <       tuwġan        ‘rest’ < dem
+  ‘eye’ + žas       supply’ <       eki ‘two’ +     qara ‘black’     ‘relatives’ <    ‘respiration’
+208                                                                                         Bence Grezsa
+
+   ‘tear’ +(s)I    orïn ‘place,       qabat ‘layer,        + may               aġayïn         + al‒ ‘to
+  {Poss.Sg3};       ground’ +            floor’;        ‘grease, fat’;      ‘relative’ +     buy, take’ ‒
+                     bas‒ ‘to                                               tuw‒ ‘to be       Is {CV};
+                   press, push’                                            born’ ‒GAn
+                   ‒(A)r {CV};                                                 {CV};
+  teŋiz žaġasï      qïlïš balïq        er žürek          qurġaq žer        kelim–ketim        bala–šaġa
+   ‘seaside’ <     ‘swordfish’       ‘brave’ < er       ‘mainland’ <         ‘guests’ <       ‘family’ <
+    teŋiz ‘sea,       < qïlïš          ‘valiant,        qurġaq ‘dry’          kel- ‘to       bala ‘child’
+ lake’ + žaġa       ‘sword’ +        man’ + žürek       + žer ‘place,       come’ ‒Im           + šaġa
+  ‘side’ +(s)I     balïq ‘fish’;        ‘heart’;          ground’;         {VN} + ket‒          ‘group,
+ {Poss.Sg3};                                                                ‘to go’ ‒Im        relative’.
+                                                                               {VN};
+
+                                   Table 3. Compounds in Karakalpak
+
+        Subordinate                           Attributive                           Coordinate
+endocentric   exocentric              endocentric   exocentric              endocentric  exocentric
+    ana tili         balta sap          aq köŋili            aq kök           aġalï–inili     baqa–šanaq
+    ‘mother        ‘axe haft’ <       ‘honest’ < aq       ‘light blue’      ‘brothers’ <      ‘small shell’
+tounge’ < ana     balta ‘axe’ +      ‘white’ + köŋil     < aq ‘white’       aġa ‘brother,        < baqa
+‘mother’ + til      sap ‘stem,        ‘mood, mind’       + kök ‘blue’;     elder brother’       ‘frog’ +
+  ‘language’          shaft’;             +DI                                    +DI          šanaq ‘cup,
+     +(s)I                             {NN/Adj.};                          {NN/Adj.} +           bowl’;
+ {Poss.Sg3};                                                                ini ‘younger
+                                                                            brother’ +DI
+                                                                             {NN/Adj.};
+  at azbarï         awïz ašuw           beti qalïn          bos söz          bolsa bolar        ata–ana
+‘stable’ < at          ‘Iftar,       ‘shameless’ <       ‘silliness’ <         ‘maybe,        ‘parents’ <
+  ‘horse’ +       evening meal       bet ‘face’ +(s)I    bos ‘empty’         possible’ <      ata ‘father’
+azbar ‘yard’       in fasting’ <      {Poss.Sg3} +           + söz         bol‒ ‘to be’ ‒        + ana
+    +(s)I         awïz ‘mouth’         qalïn ‘thick,       ‘word’;                sA           ‘mother’;
+{Poss.Sg3};          + aš‒ ‘to             fat’;                           {Cond.Sg3} +
+                    open’ ‒uw                                              bol‒ ‘to be’ ‒
+                      {VN};                                                       Ar
+                                                                             {Aor.Sg3};
+  ay yarïġï         tün ortasï         azarlï awïz          kiyiz etik          at–mat        ömir–ömirge
+‘moonlight’ <     ‘midnight’ <       ‘foulmouthed’       ‘felt boots’ <     ‘horsekinds’       ‘forever’ <
+ ay ‘moon’ +      tün ‘night’ +          < azar           kiyiz ‘felt’ +   < at ‘horse’ +     ömir ‘life’ +
+ yarïq ‘light’    orta ‘middle’      ‘quarrel, jaw’       etik ‘boots’;    m- {Red} + at       ömir ‘life’
+     +(s)I            +(s)I           +DI {NN} +                               ‘horse’;       +GA {Dat}.
+ {Poss.Sg3};      {Poss.Sg3};        awïz ‘mouth’;
+
+                                    Table 4. Compounds in Noghay
+Compounding in Aral–Caspian Kipchak languages                                               209
+
+5. Observations on compounding in the Aral–Caspian Kipchak
+branch
+According to the structural characteristics, compounds can be formed in three ways:
+from two constituents with the third person possessive marker +(s)I suffix,4 from
+two bare constituents, and through reduplication. In this section the most cardinal
+question is in which case the linking element occurs in compounds. It might
+undoubtedly appear only in subordinate and attributive structures, mainly in the
+endocentric subgroups. However, taking a closer look, we find more regularities in
+the structures with linking elements. In the case of Kazakh, I accept partly van
+Hofwegen’s argument (2014: 1−21), that the presence or the lack of the linking
+element depends on the characteristic of the non-head noun in noun–noun
+compounds. If the non-head position contains a noun which can fulfilan adjectival
+function (and is, thus “neutral”) as well, the linking element is used, unlike in “non-
+neutral” nouns, where no linking element is ever used. In my opinion, only the
+second statement is completely right in the Kazakh language, because the usage of
+the linking element in the “neutral” noun–noun constructions is optional, as Table 5
+demonstrates.
+
+                                                            ‘non-neutral’ noun–noun
+      ‘neutral’ noun–noun constructions
+                                                                constructions
+  balara ~ balarasï ‘bee’ < bal ‘honey’ + ara    qolžazba ‘handwriting’ < qol ‘arm, hand’ + žaz‒
+          ‘fly, bee’ +(s)I {Poss.Sg3};                        ‘to write’ ‒MA {VN};
+tuwġan kün ~ tuwġan küni ‘birthday’ < tuw– ‘to    külsawït ‘ashtray’ < kül ‘ash’ + sawït ‘vessel,
+  be born’ –GAn {CV} + kün ‘day, sun’ +(s)I                         vase, jar’;
+                   {Poss.Sg3};
+      tuwġan žeri ~ tuwġan žer ‘birthplace’ <          äwežay ‘airport’ < äwe ‘air, sky’ + žay
+  tuw– ‘to be born’ –GAn {CV} + žer ‘place’               ‘residence, accomodation’;
+                +(s)I {Poss.Sg3};
+
+                                 Table 5. Kazakh compounds
+
+    In Kirghiz, Karakalpak and Noghay there is no exact rule for the usage of the
+linking element. In my opinion, all of the subordinate and attributive endocentric
+
+
+
+4 Hereinafter I adopt the concept Linking Element following Göksel and Haznder’s proposal
+
+(2007).
+210                                                                               Bence Grezsa
+
+constructions oirginally disposed of the linking element, and its optional usage or
+disappearence is a new tendency in these languages (See Table 6).
+
+
+                                 Kirghiz                Karakalpak                  Noghay
+                              but kiyim < but        ayaq kiyim < ayaq       ayaq kiyimi < ayaq
+        ‘shoes’               ‘shoes’ + kiyim        ‘leg, foot’ + kiyim      ‘leg, foot’ + kiyim
+                                  ‘dress’;                 ‘dress’;                 ‘dress’;
+                             temir ǰol < temir        temir žolï < temir       temir yol < temir
+       ‘railway’            ‘iron’ + ǰol ‘road,      ‘iron’ + žol ‘road,      ‘iron’ + yol ‘road,
+                                way, path’;              way, path’;              way, path’;
+                           alma ǰïġačï < alma        alma aġašï < alma       alma terek < alma
+      ‘apple tree’        ‘apple’ + ǰïġač ‘tree’    ‘apple’ + aġaš ‘tree’   ‘apple’ + terek ‘tree’
+                           +(s)X {Poss.Sg3};          +(s)I {Poss.Sg3};       +(s)I {Poss.Sg3};
+
+    Table 6. Kirghiz, Karakalpak and Noghay compounds with(out) linking elements
+
+
+    The examples presented below demonstrate that in the Aral–Caspian Kipchak
+languages the linking element is used only in noun–noun or adjective–noun
+constructions, and only in subordinate and attributive compounds. Nevertheless, the
+linking element can be almost unexceptionally detected, when the originally Russian
+adjective plus noun compounds are translated word for word, as is presented in
+Table 7.
+
+
+               Russian         Kazakh              Kirghiz        Karakalpak         Noghay
+
+‘nervous       nervnaja                                                nerv           nervlar
+                            nerv sistemasï     nerv sistemasï
+ system’        sistema                                             sistemasï        sistemasï
+                            qant diabeti <     qant diabeti <     qant keseli <   seker diabeti <
+                            qant ’sugar’ +     qant ’sugar’ +     qant ’sugar’    seker ’sugar’ +
+               saharnyj         diabet             diabet            + kesel           diabet
+‘diabetes’
+                diabet        ’diabetes,         ’diabetes,         ’disease’        ’diabetes,
+                            diabetic’ +(s)I    diabetic’ +(s)I         +(s)I      diabetic’ +(s)I
+                             {Poss.Sg3};        {Poss.Sg3};       {Poss.Sg3};       {Poss.Sg3}.
+
+         Table 7. Loan translations of Russian compounds in Aral–Caspian Kipchak
+                                        languages
+Compounding in Aral–Caspian Kipchak languages                                               211
+
+6. Reduplication
+As was seen in Tables 1, 2, 3, and 4, coordinative compounds are a very special
+group in the Aral–Caspian Kipchak languages from the point of view of word
+formation. A great majority of coordinative compounds are formed through
+reduplication. 5 Even though onlytotal and partial reduplication (for more on the
+types of reduplication, see Wiltshire and Marantz 2000: 557–562) belong to
+compounding, they should be analysed withbinomes. 6 The reason for this method is
+that the meaning of these compound categories are very similar to each other. These
+phenomena are very productive in the Kipchak languages: they can form collective
+nouns, nouns with special meanings on the basis of the two consituents, and they can
+express intensification as well. Table 8 summarizes the various forms of
+coordinative compounds.
+
+
+      Total                     Partial                  Synonym               Hyponym
+   reduplication             reduplication              compounds             compounds
+       Kazakh                     Kazakh                   Kazakh                Kazakh
+      bara–bara             nan–pan ‘bread and       ämir–qudiret ‘power,    as–su ‘food’ < as
+‘continually, more and     other bakery products’      strength’ < ämir     ‘food’ + su ‘water’;
+more’ < bar‒‘to go’ ‒          < nan ‘bread’;         ‘command, order,
+       A {CV};                                        permit’ + qudiret     äke–šeše ‘parents’ <
+                            tars–turs ‘clattering     ‘strength, power’;     äke ‘father’ + šeše
+dara–dara ‘singly’ <       noise’ < tars ‘manner,                                ‘mother’;
+  dara ‘only, just’;           way, method’;             dabïr–dübir
+                                                      ‘shouting’ < dabïr         dos–dŭšpan
+žal–žal ‘stack, salient,       ühilep–ahïlap            ‘noise’ + dübir      ‘everybody’ < dos
+   avalanche’ < žal          ‘complaining and               ‘noise’;          ‘friend’ + dušpan
+    ‘mane, swell’;         suffering’ < ühile- ‘to                                 ‘enemy’;
+                              huff’ ‒Ip {CV};        žer–düniye ‘surface,
+                                                      the whole world’ <
+                                                     žer ‘place’ + düniye
+                                                           ‘world’;
+
+
+
+
+5 According to the definition “the term reduplication is applied to a type of word formation (in
+
+the broad sense, including both derivation and inflection) in which the phonological form of
+an affix is determined in whole or in part by the phonological form of the base to which it
+attaches” (Wiltshire and Marantz 2000: 557).
+6 Binomes (or twin words) can be divided into two subgroups on the basis of the constituents
+
+and the meaning of the compound: synonym compounds (hendiadys) and hyponym
+compounds (Johanson 1998: 50).
+212                                                                               Bence Grezsa
+
+       Kirghiz                    Kirghiz                  Kirghiz                 Kirghiz
+bāz–bāz ‘sometimes’         kitep mitep ~ kitep      aġa–ini ‘brothers’ <    alïš–berïš ‘shopping,
+< bāz ‘some, a little’;    sitep ‘books’ < kitep      aġa ‘brother, elder    trade’ < al‒ ‘to buy,
+boz–boz ‘dark brown’              ‘book’;               brother’ + ini        take’ ‒Iš+ {VN} +
+    < boz ‘grey’;                                     ‘younger brother’;       ber- ‘to give’ ‒Iš
+                          kök–sök ‘vegetables’ <
+  ǰeke–ǰeke ‘singly,       kök ‘blue, vegetable’;                                   {VN};
+                                                       aqe–üke/aqe–ükö
+  severally’ < ǰeke                                     ‘sisters’ < aqe
+‘individual, private’;    mayda–čayda ‘fiddle–                                 azïq–tülük ‘food–
+                            faddle’ < mayda           ‘mother’ + üke/ükö      stuff’ < azïq ‘food,
+                                ‘small’;                    ‘sister’;           feeding’ + tülük
+                                                     köl–dayra ‘lakes and            ‘food’;
+                                                     seas, big lake’ < köl   keldi–ketti ‘visit’ <
+                                                     ‘lake’ + dayra ‘sea,    kel‒ ‘to come’ ‒DI
+                                                             lake’;          {Praet.Sg. 3} + ket‒
+                                                                                 ‘to go’ ‒DI
+                                                                                {Praet.Sg3};
+    Karakalpak                 Karakalpak                Karakalpak              Karakalpak
+   mezgil–mezgil          adam–padam ‘people,        ot–žem ‘forage, feed’    ata–baba/ata–ana
+‘sometimes, once in a        troops’ < adam            < ot ‘grass’ + žem    ‘grandparents’ < ata
+while’ < mezgil ‘time,       ‘human, man’;                   ‘food’;            ‘father’ + ana
+       season’;                                                                    ‘mother’;
+                           etik–petik ‘boots and         qural–žaraq
+sonday–sonday ‘either     other footwears’ < etik    ‘weaponry, armour’          barïs–kelis
+   way, anyway’ <                 ‘boots’;           < qural ‘weapon’ +      ‘behaviour, attitude’
+  sonday ‘like that’;                                  žaraq ‘weapon’;        < bar‒ ‘to go’ ‒Is
+                          sadaqa–padaqa ‘burial                                {VN} + kel‒ ‘to
+töbe–töbe ‘hilly area’       feast’ < sadaqa              üy–žay ‘flat,        come’ ‒Is {VN};
+    < töbe ‘hill’;               ‘victim,               residence’ < üy
+                            commemoration’;              ‘house’ + žay       kelim–ketim ‘guests’
+                                                          ‘residence’;       < kel‒ ‘to come’ ‒Im
+                                                                             {CV} + ket‒ ‘to go’
+                                                                                  ‒Im {CV};
+      Noghay                     Noghay                    Noghay                   Noghay
+ömir–ömirge ‘forever’      birem–sirem ‘one by       bäle–qaza/qaza bale      bügün–erten ‘fast,
+  < ömir ‘life’ +GA        one’ < birem ‘once’;      ‘misfortune, trouble’      tight’ < bügün
+     {Dative};                                       < bäle ‘misfortune’ +     ‘today’ + erten
+                            köylek–möylek ‘all        qaza ‘misfortune’;          ‘tomorrow’;
+ üzik–üzik ‘staccato,     kind of shirts’ < köylek
+jerky’ < üzik ‘snatch,            ‘shirt’;           xabar–xäter ‘news’ <     mezgilsiz–mekansïz
+        wiff’;                                       xabar ‘ news’ + xäter        ‘unsuitable,
+                             qasqïr–masqïr                  ‘news’;          inadequate’ < mezgil
+   zaman–zamanda            ‘wolves’ < qasqïr                                    ‘season’ +sIz
+‘sometimes’ < zamam              ‘wolf’.                 yaw–dušpan          {NN/Adj.} + mekan
+  ‘time’ +DA {Loc}.                                    ‘enemies’ < yaw            ‘place’ +sIz
+                                                      ‘enemy’ + dušpan            {NN/Adj.};
+                                                           ‘enemy’.
+                                                                             yetim–yesir ‘orphans’
+                                                                              < yetim ‘orphan’ +
+                                                                                 yesir ‘oprhan’.
+
+      Table 8. Types of coordinative compounds in Aral–Caspian Kipchak languages
+Compounding in Aral–Caspian Kipchak languages                                              213
+
+    Taking a stock of the examples, some characteristics can be observed about their
+function and the usage. Compounds with total reduplication are used to represent
+idiomatic expressions or adverbs. They can establish collective nouns replacing
+suffixes, like the abstracness suffix +LIK (Johanson 1998: 36) and the suffixes +KIl
+expressing shades of colours (Erdal 1991: 98–99). Similarly to all Turkic languages,
+Kipchak languages form echo words by partial reduplication. 7 These compounds are
+translated as ‘a thing etcetera’, ‘a thing and the like’, and ‘something and similar
+things’. In this case, the partial reduplicated word has an initial labial m–/b–/p–
+consonant (Johanson 1998: 50). However, it might be sometimes initial s–, or only
+vocal changes in the reduplicated form.
+    Synonym compounds express essentialy the plural form or represent a new
+concept with a meaning very close to the constituents. The most interesting group of
+coordinate compounds is that of hyponym compounds. Generally, it displays
+collectivity with antonyms, but it can semantically the plural form or word a new
+meaning, which is deduced from the basic meaning of the two constituents.
+
+7. Verbs in compounding
+In Turkic languages, there are two possibilities to form verbs: by suffixation (a
+synthetic method) or compounding (an analytical method). Analytical verb
+formation is very productive in most Turkic languages (Johanson 1998: 42). Verbs
+which serve as constituents of compounds can form compounds8 with different parts
+of speech in the Aral–Caspian Kipchak languages: [Verb + Verb]Verb9, [Verb +
+Verb]Noun, [Verb + Verb]Adverb, [Noun/Adjective + Verb]Verb. Verb + verb
+constructions which create nouns or adverbs are very rare.
+   The [Noun/Adjective + Verb]Verb compounds generally create idiomatic
+expressions or verbs with the meaning ‘to do something’. In this case, the second
+constituent has the meaning ‘to do’. (See Table 9.)
+
+
+
+
+7 About the process of reduplication, see Göksel–Kerslake (2005: 90–93). This system is very
+
+close to Aral–Caspian Kipchak reduplication.
+8 On verb formation in Aral–Caspian Kipchak, see Kirchner (1998a: 325–325), Csató and
+
+Karakoç (1998: 338–339), and Kirchner (1998b: 349–351).
+9 In this way of marking the elements in the brackets denote the word class of the constituents,
+
+while the third component (subscript) provides the class of the formed compound.
+214                                                                                     Bence Grezsa
+
+                           Idiomatic expressions                     [Noun/Adjective + Verb]Verb
+
+                         aŋ al– ‘to hunt, catch’ < aŋ            žumïs iste– ‘to work’ < žumïs ‘work,
+                        ‘hunting’ + al- ‘to buy, take’;                 labour’ + iste– ‘to do’;
+      Kazakh
+                       wäde ber– ‘promise’ < wade ‘to             sayaχat qïl– ‘to wander’ < sayaχat
+                       swear, promise’ + ber‒ ‘to give’;               ‘voyage’ + qïl– ‘to do’;
+
+                      tamaq ič– ‘to meal’ < tamaq ‘food’        ada qïl– ‘to finish’ < ada ‘end’ + qïl–
+                               + ič- ‘to drink’;                                ‘to do’;
+      Kirghiz
+                       tameki tart– ‘to smoke’ < tameki            operaciya ǰasa– ‘to operate’ <
+                          ‘tobacco’ + tart‒ ‘to pull’;          operaciya ‘operation’ + ǰasa– ‘to do’;
+
+                       aytïp öt– ‘to mention’ < ayt‒ ‘to        duwa et– ‘to pray’ < duwa ‘pray’+ et–
+                        say’ ‒Ip {CV} + öt‒ ‘to say’;                          ‘to do’;
+  Karakalpak
+                        dem al– ‘to have a rest’ < dem          buyrïq qïl– ‘to act, to dispose’ < buyrïq
+                       ‘respiration’ + al- ‘to buy, take’;        ‘command, order’ + qïl– ‘to do’;
+
+                        bala tap– ‘to give birth’ < bala        habar et– ‘to inform, to post’ < habar
+                            ‘child’ + tap‒ ‘to find’;                   ‘news’ + et‒ ‘to do’;
+      Noghay
+                      ötirik söyle- ‘to lie’ < ötirik ‘lie’ +   süret yasa– ‘to paint’ < süret ‘picture,
+                                söyle‒ ‘to say’;                       painting’ + yasa‒ ‘to do’.
+
+                Table 9. Verbal compounds in Aral–Caspian Kipchak languages
+
+
+    The Aral–Caspian Kipchak languages have a special verbal compound category,
+when the [Verb + Verb]Verb constructions form a new meaning, which originally
+the two constituents did not have. Their construction is the same asthat of “auxiliary
+compounds”: the first contituent is conjoined to the second by a converbial form, but
+they can be contracted.
+
+                                             Basic meaning               Word-for-word translation
+                                            alïp bar– > apar– ‘to
+           Kazakh                                                                  ‘to take and go’
+                                                  carry’;
+                                            alïp ket– > apket– ‘to
+            Kirghiz                                                                ‘to take and go’
+                                               carry away’;
+                                             alïp kel– > äkel- ‘to
+          Karakalpak                                                             ‘to take and come’
+                                                  bring’
+                                            alïp ber– > äper– ‘to
+            Noghay                                                                ‘to take and give’
+                                            deliver, to put in’
+
+                      Table 10. Verbal compounds with a new meaning
+Compounding in Aral–Caspian Kipchak languages                                                   215
+
+   The most interesting group of the Aral–Caspian compounds is that of the [Verb +
+Verb]Noun/Adverb structures. These compounds are formed unexceptionally by the
+conjoining of two finite verbal forms, which express idiomatically a noun or an
+adverb.
+
+                       bolar–bolmas ‘a little bit, a bit’ < bol– ‘to be’ -Ar {Aor.Sg3} + bol– ‘to be’
+    Kazakh
+                                                  +mAs {Aor.Neg.Sg3}
+                         keldi–ketti ‘visit, observation’ < kel– ‘to come’-DI {Past.Sg3} + ket–‘to
+    Kirghiz
+                                                   go’ -DI {Past.Sg3}
+                        bolar–bolmas ‘hardly, barely’ < bol– ‘to be’ -Ar {Aor.Sg3} + bol– ‘to be’
+  Karakalpak
+                                                  +mAs {Aor.Neg.Sg3}
+                       bolsa bolar ‘possibly, maybe’ < bol– ‘to be’-sA {Cond.Sg3} + bol– ‘to be’
+    Noghay
+                                                      -Ar {Aor.Sg3}
+
+                  Table 11. [Verb + Verb]Noun/Adverb compound structures
+
+
+    On the basis of the MorboComp classification of compounds (Bisetto and Scalise
+2005:321–328), the verbal constructions must be considered as coordinatives from
+the semantic point of view.
+
+8. Headedness
+As was highlighted above, the headedness (or more exactly, the presence or the
+absence of the head) is one of the criteria for the classification of compounds.
+Göksel and Haznedar (2007) discuss some characteristics of the headedness of the
+Turkish, which shows a lot of similarities with the Aral–Caspian Kipchak languages.
+On the basis of the collected corpus and the presented examples in this study, the
+compounds can be divided into three classes in these languages: one–headed
+compounds, double–headed compounds, and headless compounds. 10 The one-
+headed compounds are represented in the endocentric class of subordinate and
+attributive groups, and they are typically right-headed. Nevertheless, there are left-
+headed structures as well, although they constitute an unusual phenomenon in the
+Kipchak languages. Left-headedness occurs in the case of the izafet structures,
+which remains as the heritage of the former Chagathay literature languages. 11 This
+
+10 All of the exocentric compounds are considered to be headless.
+
+11 The Aral–Caspian Kipchak people used earlier as written languages the Chaghatay tradition
+
+(Boeschoten and Vandamme 1998: 167–169).
+216                                                                               Bence Grezsa
+
+construcion was copied from Persian (Boeschoten and Vandamme 1998: 174–
+175). 12 Izafet structures are not used in word formation. These compounds are
+idiomatic, like the name of the Quran: Kazakh qurani kärim; Kirghiz qurani qarim;
+Karakalpak quranï kärim or Noghay quranï kerim.
+    Another special one-headed construction can be detected in the Aral–Caspian
+Kipchak languages when the head relation changes between the constituents. So, in
+this sense, the head might be optional. This kind of constructions occurs only in the
+attributive group. They can optionally substitute adenominal suffix, which can form
+adjectives (Baskakov 1958: 810; Baskakov 1963: 511; Kirchner 1998a: 322;
+Kirchner 1998b: 347).
+
+
+        Kazakh                 Kirghiz                 Karakalpak                  Noghay
+
+‘generous, propitious’      ‘crazy, insane’           ‘honest, true’              ‘pregnant’
+qolï ašïq < qol ‘arm’    bašï del < baš ‘head’      niyeti χaq < niyet         ayaġï awïr < ayaq
+ +(s)I {Poss.Sg3} +       +(s)X {Poss.Sg3} +         ‘intention’ +(s)I       ‘leg’+(s)I {Poss.Sg3}
+  ašïq ‘free, open,            del ‘fool’;          {Poss.Sg3} + χaq            + awïr ‘heavy’;
+        clear’;                                       ‘true, correct’;
+                         del baštū < del ‘fool’                               awïr ayaqlï < awïr
+   ašïq qoldï < ašïq      + baš ‘head’ +LŪ        χaq niyetli < χaq ‘true,   ‘heavy’ + ayaq ‘leg’
+ ‘free, open, clear’ +        {NN/Adj.};             correct’ + niyet          +LI {NN/Adj.}.
+    qol ‘arm’ +LI                                     ‘intention’ +LI
+     {NN/Adj.};                                         {NN/Adj.};
+
+           Table 12. Compounds with ‘optional head’ in Aral–Caspian Kipchak
+
+
+    From the perspective of the semantic field, these optionally headed compounds
+appear only as such attributive constructions, which designate internal and external
+properties, so as a part of speech they must be considered to be adjectives. However,
+the linking element can be changed depending on which person it should mark.
+Therefore, the linking element is a part of the possessive paradigm in the optionally
+headed constructions. This can be expressed by nominal inflection as well, when the
+right-headed construction is used with the adjectival suffix. (See the example in
+Kazakh in Table 13.)
+
+
+
+
+12 In this case the Persian –i linking element is attached to the first constituent of the
+construction, making it the head.
+Compounding in Aral–Caspian Kipchak languages                                                217
+
+        (Meniŋ) niyetim aq → niyet +(I)m             cf. (Men) aq niyettimin ‘I am generous’
+                 {Poss.Sg1}
+      (Bizdiŋ) niyetimiz aq → niyet +(I)mIz          cf. (Biz) aq niyettimiz ‘We are generous’
+                  {Poss.Pl1}
+      (Olardïŋ) niyeti aq ‘their intention is            cf. (Olar) aq niyetti13 ‘They are
+      good’ → niyet +(s)I {Poss.Pl3}                              generous’
+
+          Table 13. Parts of the paradigm of the possessive and personal markers
+
+
+    The topic of the double-headed (or two headed) compounds has already been
+partially touched upon in connection with reduplication. Categorically, the double-
+headed contructions constitute a group of endocentric coordinate compounds. From
+the semantic point of view, they create collective nouns (see Tables 1, 2, 3, and 4) or
+new words, which are related to the basic meaning of the two constituents (generally
+binomes). And as has been mentioned above, morphologically, they can replace
+suffixes, like the abstractness suffix +LIK and the plural marker +LAr (Johanson
+1998: 36; 38).
+
+
+         Kazakh                   Kirghiz              Karakalpak                Noghay
+as–su ~ astïq           adïr–čïbïr ~            aġayïn–tuwġan ~         aġalï–inili ~
+‘nutrition, food’       adïrdūluq ‘hills,       aġayïnlar; tuwġanlar    qardašlar ‘brothers’
+< as ’food’ + su        hilly region’ < adïr    ‘relatives’ < aġayïn    < aġa ‘brother, elder
+’water’                 ‘hill’ + čïbïr          ‘relative’ + tuw‒ ‘to   brother’ + DI
+                        ‘mountain, mountain     be born’ ‒GAn+          {NN/Adj.} + ini
+                        range’; adïr ‘hill’     {CV}; aġayïn            ‘younger brother’
+                        +DX {NN/Adj.}           ’relative’ +LAr         +DI {NN/Adj.};
+                        +LXK {NN}               {Plur}; tuw‒ ‘to be     qardaš ’brother’
+                                                born’ ‒GAn+ {CV}        +LAr {Plur}
+                                                +LAr {Plur}
+
+                              Table 14. Two-headed compounds
+
+
+
+
+13 There is no difference in the paradigm of the possessive and the personal markers between
+
+the singular and the plural third person forms (Kirchner 1998a: 324–326).
+218                                                                       Bence Grezsa
+
+9. Suffixation or compounding?
+The special function of compounds in word formation is that they can replace
+suffixes. This function has already come under consideration many times. However,
+there are some special constituents in compounds which originally have an
+autonomous usage, but as a part of a compound they behave as suffixes. The most
+conspicuous in this case is that the boundary between suffixation and compounding
+is not clear at all. A list of these words is given with a short explanation in the Aral–
+Caspian Kipchak languages:
+    (1) Kazakh χana ‘residence, adress, room’; Kirghiz qana ‘place, room’;
+         Karakalpak χana ‘place, house’; Noghay – ← Iranian: cf. Persian khāna
+         ‘house, dwelling, tent’ (Steingass 1996: 444).
+    The word is undoubtedly of Persian origin. Its usage is very frequent except in
+Noghay. It is found as a lexical item as well, but in compounds it appears like a
+suffix which forms places, institutions and all kinds of buildings which are
+connected to a special activity. In Noghay, these sort of words are mostly expressed
+by Russian borrowings.
+
+
+                   Kazakh                 Kirghiz            Karakalpak         Noghay
+              awrwχana < awrw        ōruqana < ōru ‘ill,   keselχana < kesel
+‘hospital’                                                                     gospital’
+                ‘ill, disease’            disease’           ‘ill, disease’
+               däriχana < däri        darïqana < darï       däriχana < däri
+‘pharmacy’                                                                      apteka
+                 ‘medicine’              ‘medicine’            ‘medicine’
+                                                           žataqχana < žat‒
+               žataqχana < žat‒      ǰataqana < ǰat‒ ‘to
+‘dormitory’                                                   ‘to lie’ ‒AK     obščežitie
+              ‘to lie’ ‒AK {VN}        lie’ ‒XK {VN}
+                                                                 {VN}
+                                                              häžžetχana/
+              äžetχana/däretχana    aǰatqana/dāratqana <     däretχana <       äžetqana
+‘lavatory,
+                    < äžet            aǰat ‘need’/dārat          häžžet         < äžet
+  toilet’
+              ‘need’/däret‘stool’           ‘stool’          ‘need’/däret       ‘need’
+                                                                 ’stool’
+
+                     Table 15. Semi-affixes in Aral–Caspian Kipchak
+
+
+   (2) Kazakh qora ‘court, courtyard’; Kirghiz qorō ‘court, courtyard’; Karakalpak
+       qora ‘court, courtyard’; Noghay – ~ Old Turkic qorïġ ‘an enclosure,
+       enclosed area’ (Clauson 1972: 652b).
+Compounding in Aral–Caspian Kipchak languages                                        219
+
+   The usage of this word as a suffix is very similar to the former example. It is
+found only in Kazakh and Karakalpak as a method of word formation. It forms only
+words which are related to agriculture and animal husbandry and include an
+enclosed place. Kirghiz has the semi-affix –qana in all but one of the forms,
+meanwhile Noghay uses other suffixes or the word avla ‘court, courtyard’.
+
+
+                      Kazakh            Kirghiz         Karakalpak            Noghay
+                  malqora < mal     malqana < mal      malqora < mal      mal avla < mal
+                 ‘animal, wealth’       ‘animal,      ‘animal, wealth’   ‘animal, wealth’
+‘animal farm’
+                  + qora ‘court,    wealth’ + qana     + qora ‘court,      + avla ‘court,
+                    courtyard’       ‘place, room’        courtyard’        courtyard’
+                    atqora < at       atqana < at        atχana < at         atlïq < at
+                  ‘horse’ + qora    ‘horse’ + qana     ‘horse’ + χana      ‘horse’ +LIK
+   ‘stable’
+                      ‘court,        ‘place, room’      ‘place, room’          {NN}
+                    courtyard’
+
+                          Table 16. Semi-affixes of Turkic origin
+
+
+Kazakh          ögiz qora     ‘stable for oxen’      cf. Kirghiz qoy qorō ‘manger’
+                šošqa qora    ‘pigpen’               cf. Kirghiz čočqoqana ‘pigpen’
+                qoyanqora     ‘rabbithutch’
+
+Karakalpak ǰemqora            ‘manger’
+           otqora             ‘loft’
+           qoyanqora          ‘rabbithutch’
+
+
+    (3) Kazakh nama ‘letter, writing’; Kirghiz nāma ‘holy book, scripture’;
+         Karakalpak – ; Noghay – ← Iranian: cf. Persian nāma ‘a writing, letter,
+         epistle’ (Steingass 1998: 1380).
+    The originally Persian word is used as an affix actively only in Kazakh. In
+Karakalpak, there are only few examples, but it is not detected in Kirghiz and
+Noghay. Generally as a suffix it forms words related to written documents and
+papers (Kazakh azanama ‘obituary’; ġarïšnama ‘cosmogony’; tariχnama
+‘historiography’).
+220                                                                       Bence Grezsa
+
+                          Kazakh            Kirghiz       Karakalpak         Noghay
+                       žïlnama < žïl     ǰïlbayan < ǰïl   žïlnama < žïl      letopis’
+                           ‘year’       ‘year’ + bayan        ‘year’        ← Russian
+         ‘yearbook’
+                                          ‘short story,
+                                             story’
+                       šartnama <      kelišim/kontrakt    šartnama <        kontrakt
+         ‘contract’        šart                                šart         ← Russian
+                       ‘condition’                         ‘condition’
+
+            Table 17. The usage of Persian nāma in Aral–Caspian languages
+
+     (4) Kazakh qumar ‘desire, request, will’; Kirghiz qumar ‘passion, desire’;
+          Karakalpak qumar ‘desire, passion’; Noghay qumar ‘habit, request’ ←
+          Iranian: cf. Persian khumār ‘the effect of love, of drowsiness, of drinking’
+          (Steingass 1998: 474).
+     This word was borrowed from Persian in all of the Aral–Caspian languages, but
+it is plays a role in word formation only in the Kazakh language. Additionally, it can
+replace three adjectival suffixes, namely, the intensifying +GOy; +šIl and +šAŋ
+(Balakaev, Baskakov and Kenesbaev 1962: 140; 185; 203) and nominal suffix +qor
+(Balakaev, Baskakov and Kenesbaev 1962: 140):
+     Kazakh
+‘rapacious’: aqšaqumar < aq ‘white’ + qumar ‘desire, request, will’;
+                aqšašïl < aq ‘white’ +šIl {NN/Adj.};
+‘suitor’:       arïzqumar < arïz ‘wish, desire’ + qumar ‘desire, request, will’;
+                arïzqoy < arïz ‘wish, desire’ +GOy {NN/Adj.};
+‘a person who likes jokes’:
+                äzilqumar < äzil ‘joke, jest’ + qumar ‘desire, request, will’;
+                äzilšil < äzil ‘joke, jest’ +šIl {NN/Adj.};
+                äzilqoy < äzil ‘joke, jest’ +GOy {NN/Adj.};
+                äzilšeŋ < äzil ‘joke, jest’ +šAŋ {NN/Adj.};
+‘verbose’:      äŋimequmar < äŋime ‘conversation, story’ + qumar ‘desire, request’;
+                äŋimeqoy < äŋime ‘conversation, story’ +GOy {NN/Adj.};
+‘vainness, vanity’:
+                mansapqumar < mansap ‘place, job, career’ + qumar ‘desire, request’;
+                mansapqor < mansap ‘place, job, career’ +qor {NN/Adj.};
+                mansapšïl < mansap ‘place, job, career’ +šIl {NN/Adj.}.
+Compounding in Aral–Caspian Kipchak languages                                     221
+
+    Kazakh and Karakalpak show almost the system from the perspective of the
+semi-affixes, and Kirghiz is partially similar too, but Noghay has a totally different
+system, which might be explained by the spatial distance from the other three
+languages.
+
+10. Conclusion
+Through the analysis of the compounds in the Aral–Caspian Kipchak languages, it
+becomes evident that this type of word formation is as productive as suffixation.
+These languages represent a very wide and varied system regarding the structural
+and semantic characteristics of compounds. Therefore, it is almost impossible to
+suggest a classification which could not separate well the compounds into groups
+without overlaps. From the semantic point of view, the compounds can replace in a
+lot of cases nominal and adjectival suffixes. For further research, it would be useful
+to go into further detail regarding the topic of the common characteristics of
+compounding and suffixation.
+
+Abbreviations
+   AOR                      Aorist
+   COND                     Conditional
+   CV                       Converb
+   DAT                      Dative
+   LOC                      Locative
+   NN                       Denominal noun suffix
+   NN/ADJ.                  Denominal noun suffix forming adjectives
+   PAST                     Past tense, third person singular
+   PL                       Plural
+   POSS                     Possessive, third person singular
+   RED                      Reduplication
+   VN                       Deverbal noun suffix
+
+References
+Bağrıaçık, Metinand Ralli, Anagela 2014. NN –sI concatenations in Turkish:
+      Construct state nominals and phrasal compounds. MIT Working Papers in
+      Linguistics 67: 13–24.
+222                                                                 Bence Grezsa
+
+Balakaev, Maulen B., Baskakov, Nikolaj A. and Kenesbaev, Smet K. 1962.
+       Sovremennyj kazaxskij jazyk. Almaty: Akademii nauk Kazahskij SSR.
+Baskakov, Nikolaj A. 1940. Nogajskij jazyk i ego dialekty: grammatika, teksty i
+       slovar’. Moskva: Akademii nauk SSSR.
+Baskakov, Nikolaj A. 1958. Karakalpaksko–russkij slovar’. Moskva:
+       Gosudarstvennoe izdatel’stvo inostrannyx u nacional’nyx slovarej.
+Baskakov, Nikolaj A. 1963. Nogajsko–russkij slovar’. Moskva: Gosudarstvennoe
+       izdatel’stvo inostrannyx u nacional’nyx slovarej.
+Baskakov, Nikolaj A. 1967. Russko–karakalpakskij slovar’. Moskva: Sovetskaja
+       ėnciklopedija.
+Bauer, Laurie 2001. Compounding. In: Haspelmath, Martin et al. (eds.) Language
+       typology and language universals I. Berlin: Walter de Gruyter. 695-707.
+Bektaev, Kaldybaev B. 1999. Ülken kazakša–orysša orysša–kazakša sözdik =
+       Bol’šoj kazahsko–russkij russko–kazaxskij slovar’. Almaty: Kazyna.
+Bisetto, Antonietta& Scalise, Sergio 2005. The classification of compounds. Lingue
+       e Linguaggio 4 (2): 319–332.
+Boeschoten, Hendrikand Vandamme, Mark 1998. Chaghatay. In: Johanson, Lars and
+       Csató, Éva (eds.) The Turkic languages. London & New York: Routledge.
+       166–178.
+Booij, Geert, Lehmann, Christian et al. (eds.) 2000. Morphology: An international
+       handbook on infelction and word–formation I–II. Berlin & New York:
+       Walter De Gruyter.
+Booij, Geert 2005. The grammar of words. Oxford: Oxford University Press.
+Bloomfield, Leonard 1933. Language. New York: Holt.
+Bybee, Joan 2000. Verb. In: Booij, Geert, Lehmann, Christian et al. (eds). An
+       international handbook on infelction and word–formation I. Berlin–New
+       York: Walter de Gruyter. 794–808.
+Clauson, Gerard 1972. An etymological dictionary of pre–thirteenth–century
+       Turkish. Oxford: Clarendon Press.
+Csató, Éva & Karakoç, Birsel 1998. Noghay. In: Johanson, Lars and Csató, Éva
+       (eds.) The Turkic languages. London & New York: Routledge. 333–343.
+Dede, Müşerref 1978. A syntactic and semantic analysis of Turkish nominal
+       compounds. Michigan: University of Michigan.
+Erdal, Marcel 1991. Old Turkic word formation I–II. Wiesbaden: Harrassowitz.
+Fabb, Nigel 1998. Compounding. In: Spencer, Andrew and Zwicky, Arnold M.
+       (eds.) Handbook of morphology. Oxford. 66–83.
+Compounding in Aral–Caspian Kipchak languages                                 223
+
+Göksel, Aslıand and Kerslake, Celia 2005. Turkish: A comprehensive grammar.
+       London: Routledge.
+Haspelmath, Martin 2002. Understanding morphology. London: Arnold.
+Imart, Guy 1981. Le kirghiz (turk d’Asie Centrale soviétique). Description d’une
+       langue de littérisation récente. Aix–en–Provence: Publications de
+       l’Université de Provence.
+Johanson, Lars 1998. The structure of Turkic. In: Johanson, Lars and Csató, Éva
+       (eds.) The Turkic languages. London & New York: Routledge. 30–66.
+Johanson, Lars and Csató, Éva 1998. The Turkic languages. London & New York:
+       Routledge.
+Judahin, Konstantin K. 1965. Kirgizsko–russkij slovar’. Moskva: Sovetskaja
+       ėnciklopedija.
+Koç, Kenan 2003. Kazak Türkçesi Türkiye Türkçesi Sözlüğü. Ankara: Akçağ.
+Kirchner, Mark 1998a. Kazakhs and Karakalpaks. In: Johanson, Lars and Csató, Éva
+       (eds.) The Turkic languages. London & New York: Routledge. 318–332.
+Kirchner, Mark 1998. Kirghiz. In: Johanson, Lars and Csató, Éva (eds.) The Turkic
+       languages. London & New York: Routledge. 344–356.
+Schönig, Claus 2007. Some notes on Modern Kipchak Turkic. Ural–Altaische
+       Jahrbücher 21. 170–202.
+Spencer, Andrew 1991. Morphological theory. Oxford: Basil Blackwell.
+Steingass, Francis J. 1996. A comprehensive Persian–English dictionary. (Rev. ed.)
+       Delhi: Munshiram Manoharlal.
+Wiltshire, C. & Marantz, A. 2000. Reduplication. In: Booij, Geert, Lehmann,
+       Christianet al. (eds). Morphology: An international handbook on inflection
+       and word–formation I. Berlin & New York: Walter de Gruyter. 557–567.
+
+Online sources
+Göksel, Aslı & Haznedar, Belma 2007. Remarks on compounding in Turkish.
+      (MorboComp Project, University of Bologna).
+      http://componet.sslmit.unibo.it/download/remarks/TR.pdf. Date of access:
+      04.15.2017
+Hofwegen, von Janike 2014.The role of –sI marking in Kazakh compound nouns:
+      Implications for the relationship between case–licensing and agreement.
+      Stanford.
+      http://web.stanford.edu/~jmvanhof/index_files/Kazakh_final_paper.pdf. Date
+      of access: 04.15.2017.
+224                                                                  Bence Grezsa
+
+Krejci, Bonnie & Glass, Leila 2015. The noun/adjective distinction in Kazakh.
+       Stanford.
+       http://web.stanford.edu/~lelia/krejci_glass.pdf. Date of access: 04.15.2017.
+

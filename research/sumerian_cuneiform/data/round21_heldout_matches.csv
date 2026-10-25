@@ -1,0 +1,13 @@
+﻿image,candidate,status,observation,crop
+U05,W01,partial_visual_candidate,Native crop shows2 clear elongated traces and side-standing trace; third not safely separable.,data/round21_U05_W01_native.jpg
+U05,W02,strict_visual_candidate,Pointed curved perimeter and at least3 interior short traces distinguishable.,data/round21_U05_W02_native.jpg
+U05,BUNDLE,partial_visual_candidate,Faint parallel background pattern cannot safely be treated as same foreground stroke bundle.,data/round21_U05_background_native.jpg
+U06,W01,strict_visual_candidate,Three near-horizontal traces and side-standing trace visible.,data/round21_U06_W01_native.jpg
+U06,W02,partial_visual_candidate,"Hatched curved complex present, but contour/adjacent-mark contacts uncertain.",data/round21_U06_W02_native.jpg
+U06,BUNDLE,unassessable,Shallow background lines and foreground impressions overlap; no secure autonomous bundle.,data/round21_U06_front_native.jpg
+U07,W01,partial_visual_candidate,Expanded crop confirms clear stack but exact third trace/boundary uncertain.,data/round21_U07_W01_full_native.jpg
+U07,W02,strict_visual_candidate,Two native crops show similar perimeter and3 or more short interior traces.,data/round21_U07_W02_first_native.jpg
+U07,BUNDLE,not_observed,No secure bare bundle under fixed criterion in inspected views; this is not an absence claim for the object.,data/round21_U07_front_native.jpg
+U08,W01,strict_visual_candidate,Three near-horizontal traces next to side-standing trace distinguishable.,data/round21_U08_W01_native.jpg
+U08,W02,strict_visual_candidate,Enclosing fan-like perimeter and multiple interior traces distinguishable.,data/round21_U08_W02_native.jpg
+U08,BUNDLE,partial_visual_candidate,Some repeated lines lack enough boundary clarity to exclude frame or background pattern.,data/round21_U08_front_native.jpg

@@ -1,0 +1,44 @@
+{
+  "recorded_at": "2026-10-25T12:19:34.264998+05:00",
+  "image": "sources/round19_image_A.jpg",
+  "dimensions": [
+    767,
+    806
+  ],
+  "exposure": "Individual title, transliteration and translation not opened to model. Identifier chosen by catalogue order, not random.",
+  "observations": [
+    {
+      "region": "upper view",
+      "box_xywh": [
+        30,
+        25,
+        710,
+        380
+      ],
+      "description": "Irregular fragment with several approximately horizontal grooves; surface relief is heavily weathered. Clear sign boundaries cannot be counted reliably."
+    },
+    {
+      "region": "upper view right lower",
+      "box_xywh": [
+        440,
+        220,
+        260,
+        170
+      ],
+      "description": "Two dark roundish depressions and adjoining short grooves. Cannot tell whether all depressions are intentional marks, damage or another feature."
+    },
+    {
+      "region": "lower view",
+      "box_xywh": [
+        25,
+        440,
+        715,
+        335
+      ],
+      "description": "Largely smooth curved surface; dark modern inventory writing left of centre and a dark opening near right. Modern inventory writing excluded from ancient mark analysis."
+    }
+  ],
+  "segmentation": "No reliable sign inventory or line count. Do not force repeated groups on the basis of these pixels.",
+  "sound_assignments": [],
+  "meaning_assignments": []
+}

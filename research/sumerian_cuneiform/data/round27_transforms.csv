@@ -1,0 +1,8 @@
+﻿file,source,operation,x,y,w,h,note
+round27_sources/BM109930_views6_7_context.jpg,round26_sources/LuUtu_BM109930_photo.jpg,sips crop,1650,8200,3300,1900,context crop; not final sign identification
+round27_sources/BM109930_view5_fulltext.jpg,round26_sources/LuUtu_BM109930_photo.jpg,sips crop,1650,6500,3300,1750,context crop; no exact full-line claim
+round27_sources/BM109930_first_view.jpg,round26_sources/LuUtu_BM109930_photo.jpg,sips crop,1700,50,3100,1400,"first main side view, inspected"
+round27_sources/BM109930_last_view.jpg,round26_sources/LuUtu_BM109930_photo.jpg,sips crop,1700,11600,3100,1400,"last side view, inspected"
+round27_sources/YOS1_PDF31.png,round27_sources/YOS1_Clay1915.pdf,pdftoppm page 31 scale-to 2000,,,,,"printed page 13, inspected"
+round27_sources/YOS1_PDF147.png,round27_sources/YOS1_Clay1915.pdf,pdftoppm page 147 scale-to 3000,,,,,"plate X item 14, inspected"
+round27_sources/YOS1_Clay1915.txt,round27_sources/YOS1_Clay1915.pdf,pdftotext -layout,,,,,existing OCR layer; not cuneiform OCR

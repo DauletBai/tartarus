@@ -1,0 +1,334 @@
+                           Gábor Zólyomi, How to teach Sumerian to a website?
+
+
+                             How to teach Sumerian to a website?1
+                                        Gábor Zólyomi
+
+If someone feels like studying Sumerian texts in these days, she or he may find scores of
+websites on the Internet, which, however, differ greatly in their reliability and standards.
+This lecture is about such a website, hopefully, one from among the more reliable ones.
+The subject of my talk is namely the Electronic Text Corpus of Sumerian Royal
+Inscriptions project, abbreviated as ETCSRI. The project started in October 2008. It has
+received funding from the Hungarian Scientific Research Fund for four years. ETCSRI has
+been developed as part of The Open Richly Annotated Cuneiform Corpus with the
+continuous assistance and help of Steve Tinney.
+
+
+
+
+    Slide 1: The homepage of “The Electronic Text Corpus of Sumerian Royal Inscriptions” project’s
+               website (http://oracc.museum.upenn.edu/etcsri/index.html) (07.08.2014)
+
+        As regards the title of my talk, teaching Sumerian to a website is not intended to
+mean here that we teach the website to speak Sumerian. What is meant is the creation of
+an annotated, grammatically and morphologically analyzed corpus of all Sumerian royal
+inscriptions. The subject of my talk is to show you how this is done by ETCSRI. Before,
+however, presenting you the way ETCSRI works, I would like to discuss another question,
+which may have already occurred to some of you. The question is this: What is the use of
+teaching Sumerian to a website, in the sense as clarified above?
+        I have to start the answer with making clear our motivation to create ETCSRI. The
+primary objective of ETCSRI is not to make available a corpus of cuneiform texts on the
+web, but to provide a corpus of Sumerian texts, which may function as the basis of
+grammatical research. We wanted to create linguistic data that may function as the input
+of serious grammatical research. But what is exactly understood by linguistic data?
+
+1
+ Edited version of the talk given at the 57th Rencontre Assyriologique Internationale in
+Rome in 2011.
+                                            1
+                       Gábor Zólyomi, How to teach Sumerian to a website?
+
+
+       Christian Lehmann published a long study on the nature of linguistic data in 2004.
+Lehmann proposed a semiotic conception of data and defined it as “representations of
+properties of the object area of a science that serve certain purposes for their users.”
+There are two features of this definition that I consider relevant to the subject of my talk.
+First, data are representations that do not exist without us. The ultimate basis of
+dendrochronology, for example, is the cross sections of tree trunks. The real object of
+dendrochronology is, however, not the tree trunks but the numerical representations of
+the width of the annual rings on the trunk, their measurements. These data are produced
+by the researcher who distinguishes between the relevant and irrelevant aspects of the
+patterns on a tree trunk. Without the researcher the tree trunk is only a tree trunk, it is
+him who makes its patterns meaningful producing thereby data.
+       The other relevant feature of Lehmann’s definition is that data always serve the
+purposes of the discipline that uses them. If one is to do grammatical research on
+Sumerian, then she has to produce representations of the original speech event that serve
+this purpose. If I want to study verbal morphology, then I have to create a level of
+representation of the Sumerian texts on which the morphemes are represented, or there
+must be a representation from which I can derive this representation.
+       The next slide below shows the levels of representation of linguistic data, which
+according to Lehmann are needed for linguistic research. In the case of modern, living
+languages, the descriptive linguist may have the opportunity to make a record of the
+utterances that will serve as the basis of his research. Or he may use careful
+questionnaires designed to elicit those features of the language in which he is interested.
+In other words, the researcher of a living language has the opportunity to produce data
+that suits his research.
+
+
+
+
+                                                Slide 2
+
+       It is obvious that one cannot influence the quality and characteristic of the
+primary linguistic representation in the case of an ancient language preserved only on
+written records. We have access to the Sumerian language only via the written texts. But
+the intended audience of the cuneiform representation of Sumerian was not the modern
+descriptive linguist but a contemporary audience, which was familiar with the language
+and the culture. This is a problem not unknown for assyriologists, the intended audience
+of the economic texts was the contemporary bureaucracy and not the historian of
+                                               2
+                        Gábor Zólyomi, How to teach Sumerian to a website?
+
+
+economics, yet a history of the Mesopotamian economic system can be written only with
+the use of these texts.
+        From the point of view of a descriptive linguist, the Sumerian cuneiform texts
+suffer from major deficiencies as the only preserved representations of the language.
+Whereas the modern alphabetic writing systems represent the recorded language on the
+level of the phonetic form, the phonemes, the cuneiform writing system basically records
+it on the level of the meaning. The cuneiform writing used for Sumerian is based
+primarily on the use of logographic signs, which code the meaning of the words; the
+phonographic signs functioned only to indicate the word-form of the lemma recorded by
+a logographic sign. Only at the end of the 3rd millennium and the beginning of the 2nd
+millennium started the writing system to operate on the level of the phonetic form. But
+by this time Sumerian had become a second language also for the contemporaries, and
+probably this was the circumstance that resulted in this change.
+        By now, one may start to see the size of the challenge one faces when she would
+like to create a corpus of Sumerian texts suitable for linguistic research. It is like cooking
+spaghetti Bolognese without spaghetti. The levels of linguistic representation on the table
+by Lehmann are the increasingly more abstract representations of the original speech
+event. Increasing abstraction means selection and loss of information at the same time.
+        From the level of morphological representation (level no. 5), one may not
+reconstruct the level of phonemic segmentation (level no. 1), although it was level no. 1
+that functioned as the basis for level no. 5. The starting point of the Assyriologist linguist
+is the scientific transliteration that corresponds to the orthographic level on Lehman’s
+table (level no. 4). But already this level is the result of an intricate process of
+interpretation, which depends on such things as the received reconstruction of the
+Akkadian set of phonemes. The distance of this level from the original speech event
+indicates therefore substantial loss of information compared to a language recorded by
+tape or by an alphabetic writing system.
+        The correspondence between the cuneiform graphemes and the morphemes of the
+recorded word-forms is more complicated than in the case of the alphabetic writings, and
+this correspondence was continuously changing during the centuries. The cuneiform
+writing either do not represent certain morphemes or in different grammatical
+environments it represents them with different sequence of graphemes.
+        The three orthographic forms on the next slide are the writings of the same
+sequence of morphemes from different periods. The first form was used, for example, by
+the first two kings of first dynasty of Lagash, the third one was the most frequent one in
+the 3rd millennium, and the second one was the writing started to be used at the end of
+the 3rd millennium. A Sumerian text corpus that represents the text only in the scientific
+transliteration is thus inadequate for grammatical research as the cuneiform writing
+system fails to record a large part of the information that would be necessary for the
+reconstruction of the linguistic levels of representation on Lehmann’s table.
+
+
+
+
+            Slide 3: Writings of the Sumerian word /munnandu/ in different periods
+
+      There seems to be an unbridgeable gap between that original intention that
+produced the texts and the requirements of a linguistic description. The bridging of this
+                                                3
+                       Gábor Zólyomi, How to teach Sumerian to a website?
+
+
+apparently unbridgeable gap between the representation of the cuneiform writing and
+the linguist is possible only if one creates an additional level of representation. This
+representation will reflect a probable model of Sumerian grammar, a theory of Sumerian
+grammar. It will be a theoretical construct, but, as I will show, a theory that can be
+immediately tested. Every student of Sumerian texts develops some kind of competence
+to assign a grammatical analysis to a word-form written in cuneiform. The shy
+sumerologist never makes these assignments explicit; one can only guess them on the
+basis of his translations. There exist braver sumerologists, they write articles or books on
+Sumerian grammar in which all or almost all examples are grammatically glossed. The
+bravest of all sumerologists, is however, he, who assigns grammatical analysis to each
+word-form of a relatively large text corpus.
+        This is exactly what ETCSRI endeavors to do when it assigns to all word-forms of
+the corpus of the Sumerian royal inscriptions a morphemic analysis (level no. 3 in
+Lehmann’s table) and its glossed version (level no. 5 in Lehmann’s table). This
+morphological analysis reflects the project’s grammatical model of Sumerian, which in
+turn is a theoretical interpretation of the level of cuneiform representation.
+        Since ETCSRI is a digital corpus, every fault and inconsistency of this grammatical
+model may become obvious immediately. And it is the digital nature that makes an
+immediate correction possible. ETCSRI is therefore a “research tool” in the classical sense
+of the expression, as with its help one can test in an inductive way a grammatical model
+arrived at deductively using a relatively large corpus of Sumerian texts. So the answer to
+the question raised in beginning about the use of teaching Sumerian to a website is this:
+We teach Sumerian to it in order to learn better Sumerian from it.
+        In the second part of my talk I will describe the way ETCSRI is taught Sumerian.
+The starting point is always the cuneiform text, a text like the one the next slide, a unique
+Gudea inscription from the Schoyen collection published recently as CUSAS 17 15, which
+is labeled as Gudea 102 in ETCSRI.
+
+
+
+
+                                               4
+                       Gábor Zólyomi, How to teach Sumerian to a website?
+
+
+
+
+        Slide 4: ETCSRI Gudea 102 (= CUSAS 17 15) (http://cdli.ucla.edu/dl/photo/P251600.jpg)
+
+      The scientific transliteration of the cuneiform text occurs together with its English
+or Hungarian translation, as shown on the next slide.
+
+
+
+
+                                               5
+                        Gábor Zólyomi, How to teach Sumerian to a website?
+
+
+
+
+       Slide 5: The scientific transliteration of Gudea 102 with its English translation on ETCSRI’s
+                                         website (07.08.2014)
+
+        In the lower left corner of the page, there is a link to the record of the text on the
+homepage        of     the     Cuneiform        Digital     Library      Initiative    project
+(http://cdli.ucla.edu/P251600). If this record also contains a photo or copy of the original,
+then one may look at it directly from the homepage of ETCSRI with a click.
+       The features of ETCSRI presented so far are available in almost all online
+cuneiform text corpora. The real novelty is under bonnet, which may be opened up, for
+example, with the button labeled as “Proofing” at the left side of the texts. This view of
+Gudea 102 shows that in ETCSRI every word form is represented on four levels of
+representation. The first line is the scientific transliteration, the second line contains the
+lemma to which the wordform is assigned, the third line is the morphemic
+representation, and the fourth line is the morphemic glossing.
+
+
+
+
+                                                6
+                 Gábor Zólyomi, How to teach Sumerian to a website?
+
+
+
+
+            Slide 6: The four levels of representation of Gudea 102 on ETCSRI
+
+The next slide shows the third line of Gudea 102 with the labels of the lines.
+
+ scientific transliteration            lugal-a-ni
+
+ morphemic representation              N1=lugal.N3=ani.N5=ra
+
+ morphemic gloss                   N1=STEM.N3=3-SG-H-POSS.N5=DAT-H
+         Slide 7: The representations of the third line of Gudea 102
+
+
+
+                                         7
+                       Gábor Zólyomi, How to teach Sumerian to a website?
+
+
+        On the level of morphemic representation every morpheme is represented by by a
+complex symbol that consists of a position tag followed by the morpheme itself after an
+equals sign. A position-tag gives the morpheme’s position within the nominal, verbal, or
+non-finite verbal template, and has the form like N1, which means “the first slot of the
+nominal template. In the case of the word form on the slide, the first slot of the nominal
+template, N1, the head of NP, contains the stem lugal. The 3rd nominal slot, N3, contains
+the possessive pronominal enclitic =/ani/, and the 5th nominal slot contains the human
+dative case-marker =/ra/. The project’s description of Sumerian grammar distinguishes 6
+nominal and 16 verbal slots, the detailed description of the slots and their morphemes
+can be found on project’s website. The significance of the position tags is that one may
+search not only morphemes with their help in the corpus but also sequence of
+morphemes and constructions.
+        The level of morphemic glossing identifies the morphemes of the previous level
+with the help of labels used in modern descriptive linguistics. These glosses make it
+possible that one may search for grammatical categories irrespective of the actual form of
+the morphemes. So one may find all plural verbs in the corpus with one click. At the same
+time, this level of representation makes the grammatical analysis of the corpus accesible
+to linguists who are not familiar the conventions of assyriology.
+        The four representations of all word-forms are stored in a single file, which is
+produced automatically from two sources every time the project is rebuilt. The first
+source is the transliteration produced following strict rules and conventions. The other
+source is the glossary. The glossary contains all word-forms of a given lemma together
+with their analysis. Word forms that have the same orthographic form but differ in their
+morphemic representations are distinguished by disambiguators in the lemmatized
+transliteration. In the slide 8 below, the disambiguator dat indicates that the wordform
+lugal-a-ni is in the human dative case. Note that no grapheme corresponds to the dative
+morpheme in this orthography, so it would be difficult to find all occurrences of the
+word-form lugal-a-ni in the dative case only on the bases of the cuneiform text.
+
+
+
+
+                                               8
+                       Gábor Zólyomi, How to teach Sumerian to a website?
+
+
+
+
+      Slide 8: Line 3 of Gudea 102 in the lemmatized transliteration and the corresponding entry
+                                        in the glossary file
+
+       The next slide shows a part of the entry of lugal in the latest version of the
+glossary as seen on the homepage of the ETCSRI.
+
+
+
+
+                                               9
+                        Gábor Zólyomi, How to teach Sumerian to a website?
+
+
+
+
+       Slide 9: A detail of the online glossary entry for the word lugal “king” (07.08.2014)
+
+        The online glossary entry contains all word-forms of the lemma on all levels of
+representation. If one clicks on a word-form, morphemic representation, or morphemic
+gloss, all its occurrences in the corpus will be listed. This also works the other way round,
+clicking on any word-form in any text results in getting to the glossary entry of the
+lemma in a pop-up window. Furthermore, if one puts the cursor over a word form in a
+text, then the morphemic representation and the meaning of the word-form occurs in a
+small square. The morphemic representation pointed at with a red arrow on slide 9 is the
+morphemic representation of the 3rd line in Gudea 102. The transliterated word-forms in
+brackets behind the morphemic representation show that four orthographies correspond
+to this sequence of morphemes in the present state of the corpus. If one clicks on the
+morphemic representation, she gets all the occurrences listed, and she can see that the
+orthographic forms in which the /r/ phoneme of the dative case is also present
+graphemically occur only during the reign of the last two kings of the 3rd dynasty of Ur.
+        The next slide shows a table produced as one my first works for the late Jeremy
+Black, when I was a visiting student in Oxford. It collects all grammatical forms of the
+divine name Enlil in the presargonic corpus. It took me almost a week to collect and
+analyze all relevant places.
+
+
+
+
+                                                10
+                       Gábor Zólyomi, How to teach Sumerian to a website?
+
+
+
+
+        Slide 10: The occurrences of the divine name Enlil in the presargonic royal inscriptions
+
+        This table, a week’s work, could now be done with a couple of clicks in ETCSRI
+using the glossary entry Enlil shown on the next slide below. Of course to get to these
+clicks will have been a work of four years.
+
+
+
+
+                                              11
+                        Gábor Zólyomi, How to teach Sumerian to a website?
+
+
+
+
+            Slide 11: A detail of the online glossary entry for the divine name Enlil on ETCSRI
+                                             (07.08.2014)
+
+References
+Lehmann, Christian (2004), ‘Data in Linguistics’, Linguistic Review 21, 275–310.
+
+
+
+
+                                                12
+

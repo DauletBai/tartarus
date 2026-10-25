@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+  <meta charset="utf-8"/>
+  <meta name="generator" content="oracc/px p4html.xml "/>
+  <link rel="stylesheet" type="text/css" href="/css/p4.css"/>
+  <link rel="stylesheet" type="text/css" href="/css/p4-cuneify.css"/>
+  <link rel="stylesheet" type="text/css" href="/etcsri/css/p3colours.css"/>
+  <link rel="stylesheet" type="text/css" href="/etcsri/css/projcss.css"/>
+  <script type="text/javascript" src="/js/p4.js">&#160;</script>
+  <script type="text/javascript" src="/js/p4cbd.js">&#160;</script>
+  <script src="https://code.jquery.com/jquery-3.2.1.min.js" type="text/javascript"><![CDATA[ ]]></script>
+  <title>etcsri</title>    
+</head>
+  <body onload="p4Onload()"><div id="p4Pager" class="bborder-top list item dcat itxt zoom default" data-proj="etcsri" data-list="outlined.lst" data-zoom="32" data-sort="12" data-prev="Q000953" data-item="Q000954" data-next="Q000962" data-bkmk="Q000954" data-lang="en">
+  <div id="p4Masthead">
+    <p id="p4HeadTitle" class="banner bborder-top bborder1-bot">
+      <a href="/">Oracc:</a> <a href="/etcsri">etcsri &#x2014; Electronic Text Corpus of Sumerian Royal Inscriptions</a>
+    </p>
+  </div>
+  <div id="p4Header" class="menu banner bborder-bot">
+    <p id="p4Banner">
+      <span id="p4Icons">
+	
+  <img class="p4icon" src="/img/p3-dd.png"
+       alt="Toggle menu drop-down" title="Toggle menu drop-down"
+       onclick="toggle_dd()"/>
+  <img id="p4HelpIcon" class="p4icon"
+       src="/img/p3-help.png" alt="Help" title="Help"
+       onclick="window.location='/doc/help/visitingoracc/gettingstarted/index.html'"/>
+  <img id="p4ResetIcon" class="p4icon"
+       src="/img/p3-reset.png" alt="Reset pager" title="Reset pager"
+       onclick="resetPager()"/>
+  <img id="p4MoreIcon" class="p4icon"
+       src="/img/p3-plus.png" alt="More resources" title="More resources"
+       onclick="window.location='/etcsri/hub.html'"/>
+
+      </span>
+    </p>
+    <div id="p4Search">
+  <form action="javascript://" onsubmit="act_srch()">
+    <p>
+      <!--Oracc Search:-->
+      <input id="p4SrchBox" type="text" size="30"
+	     value=""/>
+      <input type="submit" style="display: none"/>
+      <img id="p4SrchGo" class="p4icon" src="/img/p3-search.png"
+	   alt="Search" title="Search" onclick="act_srch()"/>
+    </p>
+    <p id="p4SrchChars">(j=ŋ&#xa0;sz=š&#xa0;s,=ṣ&#xa0;t,=ṭ&#xa0;0-9=₀-₉; &apos;=alef)</p>
+  </form>
+</div>
+
+    <div id="p4Controls">
+      
+  <div id="p4itemNav" class="p4items" data-ityp="ITEM" data-inth="2" data-imax="4">
+    <p class="bg-dk">
+
+      
+      <img id="p4ToggleMeta" class="p4icon" src="/img/p3-full.png"
+	   alt="Toggle metadata pane" title="Toggle metadata pane" onclick="toggle_md()"/>
+      
+      <img id="p4PageItem" class="p4icon p4spread" src="/img/p3-pageitem.png"
+	   alt="Toggle Page/Item view" title="Return to Page view"
+	   onclick="toggle_pi()"/>
+
+      <!--Item-->
+      <img id="p4ItemPrev" class="p4icon p4spread" src="/img/p3-backward.png"
+	   alt="Item back" title="Item back"
+	   onclick="act_item_prev()"/>
+      
+      <span id="p4ItemView"> [ITEM 2 of 4] </span>
+      
+      <img id="p4ItemNext" class="p4icon p4spread" src="/img/p3-forward.png"
+	   alt="Item forward" title="Item forward"
+	   onclick="act_item_next()"/>
+
+      <span id="p4SrchResults" class="p4srchresults" data-tmax="" data-rmax="0">
+	 Texts [0 matches]
+      </span>
+
+      <span id="p4Translations">
+	<span>
+          <select id="p4TransSelect" onchange="act_translation()">
+            <option value="en" selected="selected">en</option>
+            <option value="hun">hun</option>
+            <option value="none">(none)</option>
+          </select>
+        </span>
+
+	<input id="p4Transonly" type="checkbox" onchange="toggle_to()"
+	       value="@@pui_transonly()@@"/>&#xa0;only
+      </span>
+
+    </p>
+  </div>
+
+  <div id="p4PageNav" class="p4pages" data-page="27" data-pmax="1" data-imax="4">
+    <p class="p3toccenter bg-dk">
+
+      <button id="p4Zoom" class="p4spread" onclick="act_zoom('0')">All Results</button>
+
+      <img id="p4PagePrev" class="p4icon p4spread" src="/img/p3-backward.png"
+	   alt="Page back" title="Page back"
+	   onclick="act_prev()"/>
+      
+      <!--Page-->
+      <input id="p4Pageset" type="text" onchange="act_page()" size="3" value="27"/>
+
+      <img id="p4PageNext" class="p4icon p4spread" src="/img/p3-forward.png"
+	   alt="Page forward" title="Page forward"
+	   onclick="act_next()"/>
+
+      4 items
+      /
+      1 page
+
+      <span id="p4SrchResultpages" class="p4srchresults">[0 matches]</span>
+
+      <span id="p4CeType" class="cetype"><select id="p4CESelect" onchange="act_ce_switch(event)" value="line">
+  <option value="line" selected="selected">Line</option>
+  <option value="unit">Sentence</option>
+  <option value="kwic">KWIC</option>
+</select>
+</span>
+    </p>
+  </div>
+
+
+    </div>
+  </div>
+  <div id="p4Data">
+    <div id="p4Menu">
+<div id="p4MenuSorter">
+<select id="p4MenuSelect" onchange="act_sorter()" value="12">
+<option value="12" selected="selected">Time/Place</option>
+<option value="21">Place/Time</option>
+</select>
+</div>
+<div id="p4MenuOutline" class="pgotl level0" data-zmax="80"><h2>Old Akkadian</h2><div class="pgotl level1"><p><a href="javascript://" onclick="act_zoom(1)" data-zoom="1">Adab [2]</a></p><p><a href="javascript://" onclick="act_zoom(2)" data-zoom="2">Babylonia [1]</a></p><p><a href="javascript://" onclick="act_zoom(3)" data-zoom="3">Girsu [2]</a></p><p><a href="javascript://" onclick="act_zoom(4)" data-zoom="4">Lagash [2]</a></p><p><a href="javascript://" onclick="act_zoom(5)" data-zoom="5">Nippur [22]</a></p><p><a href="javascript://" onclick="act_zoom(6)" data-zoom="6">Umma [7]</a></p><p><a href="javascript://" onclick="act_zoom(7)" data-zoom="7">Ur [11]</a></p><p><a href="javascript://" onclick="act_zoom(8)" data-zoom="8">Uruk [1]</a></p><p><a href="javascript://" onclick="act_zoom(9)" data-zoom="9">Zabala [2]</a></p><p><a href="javascript://" onclick="act_zoom(10)" data-zoom="10">unknown [13]</a></p><p><a href="javascript://" onclick="act_zoom(11)" data-zoom="11">Šuruppak [1]</a></p></div><h2>Ur III</h2><div class="pgotl level1"><p><a href="javascript://" onclick="act_zoom(12)" data-zoom="12">Adab [6]</a></p><p><a href="javascript://" onclick="act_zoom(13)" data-zoom="13">Bad-tibira [1]</a></p><p><a href="javascript://" onclick="act_zoom(14)" data-zoom="14">Diqdiqqah [7]</a></p><p><a href="javascript://" onclick="act_zoom(15)" data-zoom="15">Ešnunna [6]</a></p><p><a href="javascript://" onclick="act_zoom(16)" data-zoom="16">Eridu [4]</a></p><p><a href="javascript://" onclick="act_zoom(17)" data-zoom="17">Garšana [2]</a></p><p><a href="javascript://" onclick="act_zoom(18)" data-zoom="18">Girsu [83]</a></p><p><a href="javascript://" onclick="act_zoom(19)" data-zoom="19">Irisagrig [5]</a></p><p><a href="javascript://" onclick="act_zoom(20)" data-zoom="20">Kuar [1]</a></p><p><a href="javascript://" onclick="act_zoom(21)" data-zoom="21">Lagash [4]</a></p><p><a href="javascript://" onclick="act_zoom(22)" data-zoom="22">Larak [2]</a></p><p><a href="javascript://" onclick="act_zoom(23)" data-zoom="23">Larsa  [1]</a></p><p><a href="javascript://" onclick="act_zoom(24)" data-zoom="24">Nippur [103]</a></p><p><a href="javascript://" onclick="act_zoom(25)" data-zoom="25">Puzriš-Dagan [171]</a></p><p><a href="javascript://" onclick="act_zoom(26)" data-zoom="26">Sippar [1]</a></p><p><a href="javascript://" onclick="act_zoom(27)" data-zoom="27">Susa [9]</a></p><p><a href="javascript://" onclick="act_zoom(28)" data-zoom="28">Umma [61]</a></p><p><a href="javascript://" onclick="act_zoom(29)" data-zoom="29">Unknown [1]</a></p><p><a href="javascript://" onclick="act_zoom(30)" data-zoom="30">Ur [129]</a></p><p><a href="javascript://" onclick="act_zoom(31)" data-zoom="31">Uruk [4]</a></p><p><a href="javascript://" onclick="act_zoom(32)" data-zoom="32" class="zoomed">Uruk  [4]</a></p><p><a href="javascript://" onclick="act_zoom(33)" data-zoom="33">unknown  [4]</a></p><p><a href="javascript://" onclick="act_zoom(34)" data-zoom="34">unknown [87]</a></p><p><a href="javascript://" onclick="act_zoom(35)" data-zoom="35">unclear [2]</a></p></div><h2>Early Old Babylonian</h2><div class="pgotl level1"><p><a href="javascript://" onclick="act_zoom(36)" data-zoom="36">Ešnunna [1]</a></p><p><a href="javascript://" onclick="act_zoom(37)" data-zoom="37">Isin [20]</a></p><p><a href="javascript://" onclick="act_zoom(38)" data-zoom="38">Larsa [1]</a></p><p><a href="javascript://" onclick="act_zoom(39)" data-zoom="39">Nippur [10]</a></p><p><a href="javascript://" onclick="act_zoom(40)" data-zoom="40">Ur [26]</a></p><p><a href="javascript://" onclick="act_zoom(41)" data-zoom="41">Uruk [5]</a></p><p><a href="javascript://" onclick="act_zoom(42)" data-zoom="42">Zabala [1]</a></p><p><a href="javascript://" onclick="act_zoom(43)" data-zoom="43">unknown [24]</a></p></div><h2>Old Babylonian</h2><div class="pgotl level1"><p><a href="javascript://" onclick="act_zoom(44)" data-zoom="44">Larsa [1]</a></p><p><a href="javascript://" onclick="act_zoom(45)" data-zoom="45">Nippur [1]</a></p><p><a href="javascript://" onclick="act_zoom(46)" data-zoom="46">Sippar [1]</a></p><p><a href="javascript://" onclick="act_zoom(47)" data-zoom="47">Zabala [1]</a></p><p><a href="javascript://" onclick="act_zoom(48)" data-zoom="48">unknown [2]</a></p></div><h2>Lagaš II</h2><div class="pgotl level1"><p><a href="javascript://" onclick="act_zoom(49)" data-zoom="49">Diqdiqqah [1]</a></p><p><a href="javascript://" onclick="act_zoom(50)" data-zoom="50">Girsu [160]</a></p><p><a href="javascript://" onclick="act_zoom(51)" data-zoom="51">Lagash [4]</a></p><p><a href="javascript://" onclick="act_zoom(52)" data-zoom="52">Larsa [1]</a></p><p><a href="javascript://" onclick="act_zoom(53)" data-zoom="53">Nippur [2]</a></p><p><a href="javascript://" onclick="act_zoom(54)" data-zoom="54">Susa [1]</a></p><p><a href="javascript://" onclick="act_zoom(55)" data-zoom="55">Tell Hammam [1]</a></p><p><a href="javascript://" onclick="act_zoom(56)" data-zoom="56">Ur [6]</a></p><p><a href="javascript://" onclick="act_zoom(57)" data-zoom="57">Uruk [4]</a></p><p><a href="javascript://" onclick="act_zoom(58)" data-zoom="58">unknown [77]</a></p></div><h2>Early Dynastic</h2><div class="pgotl level1"><p><a href="javascript://" onclick="act_zoom(59)" data-zoom="59">Adab [15]</a></p><p><a href="javascript://" onclick="act_zoom(60)" data-zoom="60">Bad-tibira [1]</a></p><p><a href="javascript://" onclick="act_zoom(61)" data-zoom="61">Diqdiqqah [1]</a></p><p><a href="javascript://" onclick="act_zoom(62)" data-zoom="62">Diyala [1]</a></p><p><a href="javascript://" onclick="act_zoom(63)" data-zoom="63">E'edin [1]</a></p><p><a href="javascript://" onclick="act_zoom(64)" data-zoom="64">Ešnunna [1]</a></p><p><a href="javascript://" onclick="act_zoom(65)" data-zoom="65">Girsu [138]</a></p><p><a href="javascript://" onclick="act_zoom(66)" data-zoom="66">Kish [1]</a></p><p><a href="javascript://" onclick="act_zoom(67)" data-zoom="67">Lagash [25]</a></p><p><a href="javascript://" onclick="act_zoom(68)" data-zoom="68">Mari [1]</a></p><p><a href="javascript://" onclick="act_zoom(69)" data-zoom="69">Nippur [68]</a></p><p><a href="javascript://" onclick="act_zoom(70)" data-zoom="70">Sippar [2]</a></p><p><a href="javascript://" onclick="act_zoom(71)" data-zoom="71">Tell Zurghul [1]</a></p><p><a href="javascript://" onclick="act_zoom(72)" data-zoom="72">Tell al-Ubaid [7]</a></p><p><a href="javascript://" onclick="act_zoom(73)" data-zoom="73">Tutub [2]</a></p><p><a href="javascript://" onclick="act_zoom(74)" data-zoom="74">Umm al-Aqarib [1]</a></p><p><a href="javascript://" onclick="act_zoom(75)" data-zoom="75">Umm al-Jir [1]</a></p><p><a href="javascript://" onclick="act_zoom(76)" data-zoom="76">Umma [1]</a></p><p><a href="javascript://" onclick="act_zoom(77)" data-zoom="77">Ur [28]</a></p><p><a href="javascript://" onclick="act_zoom(78)" data-zoom="78">Uruk [3]</a></p><p><a href="javascript://" onclick="act_zoom(79)" data-zoom="79">unknown [44]</a></p><p><a href="javascript://" onclick="act_zoom(80)" data-zoom="80">Šuruppak [1]</a></p></div></div></div>
+
+    <div id="p4Content">
+      <div id="p4Item" class="xtf">
+  <div id="p4XtfMeta"><div xmlns="http://www.w3.org/1999/xhtml">
+  <div class="xmdoutline border-top border-bottom">
+    <h3 class="h3">Names</h3>
+    <ul>
+      <li>Ur-Namma 34</li>
+    </ul>
+    <h3 class="h3">Numbers</h3>
+    <ul>
+      <li>Q000954</li>
+      <li>RIME 3/2.01.01.34 composite</li>
+    </ul>
+    <h3 class="h3">View</h3>
+    <ul>
+      <li>Catalogue entry</li>
+      <li>
+        <a href="http://dev-oracc.museum.upenn.edu/etcsri/Q000954/html">Print text</a>
+        <span class="transprint">
+          <a href="http://dev-oracc.museum.upenn.edu/etcsri/Q000954/html/hun">hun</a>
+        </span>
+      </li>
+      <li>
+        <a target="_blank" href="/etcsri/Q000954/cuneify">Cuneified</a>
+      </li>
+      <li>
+        <a href="javascript:viewsProofing('etcsri','Q000954')">Proofing</a>
+      </li>
+    </ul>
+    <h3 class="h3">Details</h3>
+    <ul>
+      <li>canephor, foundation tablet, door socket</li>
+      <li>Ur III</li>
+      <li>Uruk </li>
+      <li>Royal Inscription</li>
+    </ul>
+  </div>
+  <div class="xtloutline border-top border-bottom">
+    <div id="Sources">
+      <h3 class="xtl h3">Sources</h3>
+      <div class="xol2">
+        <p class="xo withimg"><a target="_blank" href="http://oracc.museum.upenn.edu/cdli/P226284/image" class="haveimg">IMG</a> [EX001] <a href="javascript:showcdli('P226284')">RIME 3/2.01.01.34, ex. 03a</a></p>
+        <p class="xo sansimg"><span class="noimg"> </span> [EX002] <a href="javascript:showcdli('P226422')">RIME 3/2.01.01.34, ex. 04</a></p>
+        <p class="xo sansimg"><span class="noimg"> </span> [EX003] <a href="javascript:showcdli('P226465')">RIME 3/2.01.01.34, ex. 01a-b</a></p>
+        <p class="xo sansimg"><span class="noimg"> </span> [EX004] <a href="javascript:showcdli('P226487')">RIME 3/2.01.01.34, ex. 02b</a></p>
+        <p class="xo sansimg"><span class="noimg"> </span> [EX005] <a href="javascript:showcdli('P226524')">RIME 3/2.01.01.34, ex. 09b</a></p>
+        <p class="xo sansimg"><span class="noimg"> </span> [EX006] <a href="javascript:showcdli('P226526')">RIME 3/2.01.01.34, ex. 07a</a></p>
+        <p class="xo sansimg"><span class="noimg"> </span> [EX007] <a href="javascript:showcdli('P226725')">RIME 3/2.01.01.34, ex. 06a-b</a></p>
+        <p class="xo sansimg"><span class="noimg"> </span> [EX008] <a href="javascript:showcdli('P226887')">RIME 3/2.01.01.34, ex. 05b</a></p>
+        <p class="xo sansimg"><span class="noimg"> </span> [EX009] <a href="javascript:showcdli('P226912')">RIME 3/2.01.01.34, ex. 08a</a></p>
+        <p class="xo withimg"><a target="_blank" href="http://oracc.museum.upenn.edu/cdli/P342808/image" class="haveimg">IMG</a> [EX010] <a href="javascript:showcdli('P342808')">RIME 3/2.01.01.34, ex. add10a</a></p>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+  <div id="p4XtfData"><div xmlns="http://www.w3.org/1999/xhtml" xmlns:dc="http://dublincore.org/documents/2003/06/02/dces/" class="text" dc:title="etcsri Q000954"><!--config-xml-file = /home/oracc/xml/etcsri/config.xml--><h1 class="p3h2 heading border-top">Ur-Namma 34 (RIME 3/2.01.01.34 composite)</h1><table class="composite"><tr class="l p2"><td class="lnum"> </td><td class="tlit"> </td><td> </td></tr><tr id="Q000954.1" class="l" data-tlat-ref="Q000954_project-en.0"><td class="lnum "><a class=" " name="a.Q000954.1"><span class="xlabel ">1</span><span class="lnum ">1</span></a></td><td class="tlit"><span class="w sux DN " x="1" id="Q000954.1.1" title="Inanak[1//1]DN'DN$Inanak/{d}inana#N1=Inanak##N1=NAME"><a class="cbd " href="javascript://" onclick="act_wsig(event)" data-wsig="☣@etcsri%sux:{d}inana=Inanak[1//1]DN´DN$Inanak/{d}inana#N1=Inanak##N1=NAME"><sup class="sux ">d</sup><span class="sux " x="3">inana</span></a></span></td><td class="t1 xtr" data-tlit-id="Q000954.1" id="Q000954_project-en.0" rowspan="10"><p class="tr"><span class="xtr-label">(1)</span><a name="a.Q000954_project-en.0"> </a><span xmlns:xtr="http://oracc.org/ns/xtr/1.0" class="cell " xtr:span="1"><span class="w"><a name="a.Q000954_project-en">For</a></span> <span class="w">Inana</span>, <span class="w">lady</span> <span class="w">of</span> <span class="w">the</span> <span class="w">E-ana</span>, <span class="w">his</span> <span class="w">lady</span>, <span class="w">Ur-Namma</span>, <span class="w">the</span> <span class="w">powerful</span> <span class="w">man</span>, <span class="w">king</span> <span class="w">of</span> <span class="w">Urim</span>, <span class="w">king</span> <span class="w">of</span> <span class="w">Sumer</span> <span class="w">and</span> <span class="w">Akkad</span>, <span class="w">built</span> <span class="w">and</span> <span class="w">restored</span> <span class="w">her</span> <span class="w">temple</span>.</span></p></td></tr><tr id="Q000954.2" class="l"><td class="lnum "><a class=" " name="a.Q000954.2"><span class="xlabel ">2</span><span class="lnum ">2</span></a></td><td class="tlit"><span class="w sux NOUN " x="1" id="Q000954.2.1" title="nin[lady//lady]N'N$nin/nin#N1=nin##N1=STEM"><a class="cbd " href="javascript://" onclick="act_wsig(event)" data-wsig="☣@etcsri%sux:nin=nin[lady//lady]N´N$nin/nin#N1=nin##N1=STEM"><span class="sux " x="3">nin</span></a></span> <span class="w sux TN " x="1" id="Q000954.2.2" title="Eanak[1//1]TN'TN$Eanak.ak/e₂-an-na#N1=Eanak.N5=ak##N1=NAME.N5=GEN"><a class="cbd " href="javascript://" onclick="act_wsig(event)" data-wsig="☣@etcsri%sux:e₂-an-na⃥gen=Eanak[1//1]TN´TN$Eanak.ak/e₂-an-na#N1=Eanak.N5=ak##N1=NAME.N5=GEN"><span class="sux " x="3">e₂</span>-<span class="sux " x="3">an</span>-<span class="sux " x="3">na</span></a></span></td></tr><tr id="Q000954.3" class="l"><td class="lnum "><a class=" " name="a.Q000954.3"><span class="xlabel ">3</span><span class="lnum ">3</span></a></td><td class="tlit"><span class="w sux NOUN " x="1" id="Q000954.3.1" title="nin[lady//lady]N'N$nin.ani.ra/nin#N1=nin.N3=ani.N5=ra##N1=STEM.N3=3-SG-H-POSS.N5=DAT-H"><a class="cbd " href="javascript://" onclick="act_wsig(event)" data-wsig="☣@etcsri%sux:nin-a-ni⃥dat=nin[lady//lady]N´N$nin.ani.ra/nin#N1=nin.N3=ani.N5=ra##N1=STEM.N3=3-SG-H-POSS.N5=DAT-H"><span class="sux " x="3">nin</span>-<span class="sux " x="3">a</span>-<span class="sux " x="3">ni</span></a></span></td></tr><tr id="Q000954.4" class="l"><td class="lnum "><a class=" " name="a.Q000954.4"><span class="xlabel ">4</span><span class="lnum ">4</span></a></td><td class="tlit"><span class="w sux RN " x="1" id="Q000954.4.1" title="Urnammak[1//1st king of the 3rd dynasty of Urim]RN'RN$Urnammak/ur-{d}namma#N1=Urnammak##N1=NAME"><a class="cbd " href="javascript://" onclick="act_wsig(event)" data-wsig="☣@etcsri%sux:ur-{d}namma=Urnammak[1//1st king of the 3rd dynasty of Urim]RN´RN$Urnammak/ur-{d}namma#N1=Urnammak##N1=NAME"><span class="sux " x="3">ur</span>-<sup class="sux ">d</sup><span class="sux " x="3">namma</span></a></span></td></tr><tr id="Q000954.5" class="l"><td class="lnum "><a class=" " name="a.Q000954.5"><span class="xlabel ">5</span><span class="lnum ">5</span></a></td><td class="tlit"><span class="w sux NOUN " x="1" id="Q000954.5.1" title="nita[male//male]N'N$nita/nita#N1=nita##N1=STEM"><a class="cbd " href="javascript://" onclick="act_wsig(event)" data-wsig="☣@etcsri%sux:nita=nita[male//male]N´N$nita/nita#N1=nita##N1=STEM"><span class="sux " x="3">nita</span></a></span> <span class="w sux V/i " x="1" id="Q000954.5.2" title="kalag[strong//strong]V/i'V/i$kalag.'a/kalag#NV2=kalag.NV4='a##NV2=STEM.NV4=SUB"><a class="cbd " href="javascript://" onclick="act_wsig(event)" data-wsig="☣@etcsri%sux:kalag-ga=kalag[strong//strong]V/i´V/i$kalag.´a/kalag#NV2=kalag.NV4=´a##NV2=STEM.NV4=SUB"><span class="sux " x="3">kalag</span>-<span class="sux " x="3">ga</span></a></span></td></tr><tr id="Q000954.6" class="l"><td class="lnum "><a class=" " name="a.Q000954.6"><span class="xlabel ">6</span><span class="lnum ">6</span></a></td><td class="tlit"><span class="w sux NOUN " x="1" id="Q000954.6.1" title="lugal[king//king]N'N$lugal/lugal#N1=lugal##N1=STEM"><a class="cbd " href="javascript://" onclick="act_wsig(event)" data-wsig="☣@etcsri%sux:lugal=lugal[king//king]N´N$lugal/lugal#N1=lugal##N1=STEM"><span class="sux " x="3">lugal</span></a></span> <span class="w sux SN " x="1" id="Q000954.6.2" title="Urim[1//1]SN'SN$Urim.ak/urim₅{ki}#N1=Urim.N5=ak##N1=NAME.N5=GEN"><a class="cbd " href="javascript://" onclick="act_wsig(event)" data-wsig="☣@etcsri%sux:urim₅{ki}-ma=Urim[1//1]SN´SN$Urim.ak/urim₅{ki}#N1=Urim.N5=ak##N1=NAME.N5=GEN"><span class="sux " x="3">urim₅</span><sup class="sux ">ki</sup>-<span class="sux " x="3">ma</span></a></span></td></tr><tr id="Q000954.7" class="l"><td class="lnum "><a class=" " name="a.Q000954.7"><span class="xlabel ">7</span><span class="lnum ">7</span></a></td><td class="tlit"><span class="w sux NOUN " x="1" id="Q000954.7.1" title="lugal[king//king]N'N$lugal/lugal#N1=lugal##N1=STEM"><a class="cbd " href="javascript://" onclick="act_wsig(event)" data-wsig="☣@etcsri%sux:lugal=lugal[king//king]N´N$lugal/lugal#N1=lugal##N1=STEM"><span class="sux " x="3">lugal</span></a></span> <span class="w sux GN " x="1" id="Q000954.7.2" title="Kiengir[1//1]GN'GN$Kiengir/ki-en-gi#N1=Kiengir##N1=NAME"><a class="cbd " href="javascript://" onclick="act_wsig(event)" data-wsig="☣@etcsri%sux:ki-en-gi=Kiengir[1//1]GN´GN$Kiengir/ki-en-gi#N1=Kiengir##N1=NAME"><span class="sux " x="3">ki</span>-<span class="sux " x="3">en</span>-<span class="sux " x="3">gi</span></a></span> <span class="w sux GN " x="1" id="Q000954.7.3" title="Akkad[1//1]GN'GN$Akkad.ak.e/ki-uri#N1=Akkad.N5=ak.N5=e##N1=NAME.N5=GEN.N5=ERG"><a class="cbd " href="javascript://" onclick="act_wsig(event)" data-wsig="☣@etcsri%sux:ki-uri-ke₄=Akkad[1//1]GN´GN$Akkad.ak.e/ki-uri#N1=Akkad.N5=ak.N5=e##N1=NAME.N5=GEN.N5=ERG"><span class="sux " x="3">ki</span>-<span class="sux " x="3">uri</span>-<span class="sux " x="3">ke₄</span></a></span></td></tr><tr id="Q000954.8" class="l"><td class="lnum "><a class=" " name="a.Q000954.8"><span class="xlabel ">8</span><span class="lnum ">8</span></a></td><td class="tlit"><span class="w sux NOUN " x="1" id="Q000954.8.1" title="e[house//house, temple]N'N$e.ani.ø/e₂#N1=e.N3=ani.N5=ø##N1=STEM.N3=3-SG-H-POSS.N5=ABS"><a class="cbd " href="javascript://" onclick="act_wsig(event)" data-wsig="☣@etcsri%sux:e₂-a-ni⃥abs=e[house//house, temple]N´N$e.ani.ø/e₂#N1=e.N3=ani.N5=ø##N1=STEM.N3=3-SG-H-POSS.N5=ABS"><span class="sux " x="3">e₂</span>-<span class="sux " x="3">a</span>-<span class="sux " x="3">ni</span></a></span></td></tr><tr id="Q000954.9" class="l"><td class="lnum "><a class=" " name="a.Q000954.9"><span class="xlabel ">9</span><span class="lnum ">9</span></a></td><td class="tlit"><span class="w sux V/t " x="1" id="Q000954.9.1" title="du[build//to build]V/t'V/t$mu.nn.a.n.du.ø/du₃#V4=mu.V6=nn.V7=a.V11=n.V12=du.V14=ø##V4=VEN.V6=3-SG-H.V7=DAT.V11=3-SG-H-A.V12=STEM.V14=3-SG-P"><a class="cbd " href="javascript://" onclick="act_wsig(event)" data-wsig="☣@etcsri%sux:mu-na-du₃=du[build//to build]V/t´V/t$mu.nn.a.n.du.ø/du₃#V4=mu.V6=nn.V7=a.V11=n.V12=du.V14=ø##V4=VEN.V6=3-SG-H.V7=DAT.V11=3-SG-H-A.V12=STEM.V14=3-SG-P"><span class="sux " x="3">mu</span>-<span class="sux " x="3">na</span>-<span class="sux " x="3">du₃</span></a></span></td></tr><tr id="Q000954.10" class="l"><td class="lnum "><a class=" " name="a.Q000954.10"><span class="xlabel ">10</span><span class="lnum ">10</span></a></td><td class="tlit"><span class="w sux NOUN " x="1" id="Q000954.10.1" title="ki[place//place]N'N$ki.bi.e/ki#N1=ki.N3=bi.N5=e##N1=STEM.N3=3-SG-NH-POSS.N5=L3-NH"><a class="cbd " href="javascript://" onclick="act_wsig(event)" data-wsig="☣@etcsri%sux:ki-be₂⃥n5el3=ki[place//place]N´N$ki.bi.e/ki#N1=ki.N3=bi.N5=e##N1=STEM.N3=3-SG-NH-POSS.N5=L3-NH"><span class="sux " x="3">ki</span>-<span class="sux " x="3">be₂</span></a></span> <span class="w sux V/i " x="1" id="Q000954.10.2" title="gi[turn//turn]V/i'V/i$mu.nn.a.n.gi.ø/gi₄#V4=mu.V6=nn.V7=a.V11=n.V12=gi.V14=ø##V4=VEN.V6=3-SG-H.V7=DAT.V11=3-SG-H-A.V12=STEM.V14=3-SG-P"><a class="cbd " href="javascript://" onclick="act_wsig(event)" data-wsig="☣@etcsri%sux:mu-na-gi₄=gi[turn//turn]V/i´V/i$mu.nn.a.n.gi.ø/gi₄#V4=mu.V6=nn.V7=a.V11=n.V12=gi.V14=ø##V4=VEN.V6=3-SG-H.V7=DAT.V11=3-SG-H-A.V12=STEM.V14=3-SG-P"><span class="sux " x="3">mu</span>-<span class="sux " x="3">na</span>-<span class="sux " x="3">gi₄</span></a></span></td></tr></table><div class="p3notes"><p/></div></div></div>
+  
+  
+</div>
+
+    </div>
+  </div>
+  <div id="p4Footer">
+    
+
+  </div>
+</div>
+</body>
+</html>

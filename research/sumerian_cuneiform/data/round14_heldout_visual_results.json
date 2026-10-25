@@ -1,0 +1,26 @@
+[
+  {
+    "object": 329081,
+    "family": "B1",
+    "result": "present",
+    "basis": "four branch-like candidates on selected photograph; exact canonical identity unresolved"
+  },
+  {
+    "object": 329081,
+    "family": "R1",
+    "result": "present",
+    "basis": "two separately paired round-impression bundles"
+  },
+  {
+    "object": 327385,
+    "family": "B1",
+    "result": "not_observed",
+    "basis": "no axis-with-oblique-branches form observed on either selected photographic face; not a language-wide absence claim"
+  },
+  {
+    "object": 327385,
+    "family": "R1",
+    "result": "present",
+    "basis": "deep round impressions on both faces"
+  }
+]

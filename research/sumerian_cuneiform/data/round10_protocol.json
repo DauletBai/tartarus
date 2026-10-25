@@ -1,0 +1,23 @@
+{
+  "date": "2026-10-25",
+  "stage": "round10",
+  "artifact": "P499399",
+  "selection": "Last uninspected photograph in the fixed round9b frame; not a random sample. Existing individual editorial rows remain unread in this stage.",
+  "known_prior": "Q000954 related composition and comparison objects have been studied; model prior knowledge cannot be erased. This is image-first sequence, not a fully blind decipherment.",
+  "readability_criteria_before_view": [
+    "Inspect native source pixels, no invented detail. Rotation and cropping are permitted and recorded.",
+    "For a limited graph comparison require at least two delineable inscription cells and at least six tentative clusters total, with typical cluster height >=20 native pixels and some distinct wedge strokes. Record uncertain boundaries.",
+    "If only part passes, limit claims to that part. No whole-object reading, no inferred negative evidence outside visible surface.",
+    "If clusters cannot be reliably separated, freeze unresolved outcome without phonetic or semantic assignment."
+  ],
+  "prediction": "If two cells end with a visibly repeated graphic complex, record their pixel boxes and compare preceding graphic bodies. Repetition can test a segmentation model, but alone cannot determine sound, meaning or genealogical relationship.",
+  "freeze_rule": "Save observations and image hash before extraction of individual editorial rows. Distinguish actual wedge comparison, tentative clustering and post-exposure reading.",
+  "alternative_models": [
+    "Common descent",
+    "Borrowing/contact",
+    "Independent agglutinative morphology",
+    "Chance modern-word segmentation",
+    "Misread signs or editorial normalization"
+  ],
+  "stop_rule": "This round assesses one held-out photo; expansion requires a separately recorded follow-up."
+}

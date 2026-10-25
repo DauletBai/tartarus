@@ -1,0 +1,12 @@
+﻿file,source,operation,x,y,w,h,note
+LuUtu_view5_text.jpg,LuUtu_BM109930_photo.jpg,crop,1750,6700,2800,1300,Широкий ракурс; не отдельный экземпляр
+LuUtu_view6_text.jpg,LuUtu_BM109930_photo.jpg,crop,1750,8350,2800,1400,Перекрывающийся ракурс того же конуса
+LuUtu_view7_text.jpg,LuUtu_BM109930_photo.jpg,crop,1750,9950,2800,1400,Перекрывающийся ракурс того же конуса
+LuUtu_line10_start_candidate.jpg,LuUtu_BM109930_photo.jpg,crop,1750,9000,1750,600,Пробная локализация; не считать окончательным подтверждением начала строки10
+Poebel_plate_LVII_item116.png,Poebel_PDF128_high.png,crop,2350,2850,1450,2250,Фрагмент оригинальной прорисовки; полная страница и водяной знак сохранены отдельно
+Poebel_PDF80.png,Poebel1914_original.pdf,"renderPDFpage80,scale-to1500",,,,,Поисковый/контекстный рендер; номерPDFне равен номеру таблицы
+Poebel_PDF110.png,Poebel1914_original.pdf,"renderPDFpage110,scale-to1800",,,,,Поисковый/контекстный рендер; номерPDFне равен номеру таблицы
+Poebel_PDF120.png,Poebel1914_original.pdf,"renderPDFpage120,scale-to1800",,,,,Поисковый/контекстный рендер; номерPDFне равен номеру таблицы
+Poebel_PDF130.png,Poebel1914_original.pdf,"renderPDFpage130,scale-to1800",,,,,Поисковый/контекстный рендер; номерPDFне равен номеру таблицы
+Poebel_PDF128.png,Poebel1914_original.pdf,"renderPDFpage128,scale-to2200",,,,,Поисковый/контекстный рендер; номерPDFне равен номеру таблицы
+Poebel_PDF128_high.png,Poebel1914_original.pdf,"renderPDFpage128,scale-to6000",,,,,"Увеличение для осмотра, не восстановление утраченных деталей"

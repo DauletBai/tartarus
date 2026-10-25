@@ -1,0 +1,594 @@
+[
+  {
+    "N3": "ak",
+    "occurrences": 1,
+    "compositions": 1,
+    "gloss_counts": {
+      "GEN": 1
+    },
+    "examples": [
+      {
+        "qid": "Q001608",
+        "ref": "Q001608.6.1",
+        "form": "nu-banda₃-ke₄",
+        "cf": "nubanda",
+        "N3": "ak",
+        "N3_gloss": "GEN",
+        "morph": "N1=nubanda.N3=ak.N5=e",
+        "morph2": "N1=STEM.N3=GEN.N5=ERG"
+      }
+    ]
+  },
+  {
+    "N3": "ak|bi",
+    "occurrences": 1,
+    "compositions": 1,
+    "gloss_counts": {
+      "GEN|3-SG-NH-POSS": 1
+    },
+    "examples": [
+      {
+        "qid": "Q000377",
+        "ref": "Q000377.591.2",
+        "form": "{gi}guru₅-bi",
+        "cf": "guru",
+        "N3": "ak|bi",
+        "N3_gloss": "GEN|3-SG-NH-POSS",
+        "morph": "N1=guru.N3=ak.N3=bi.N5=ABS",
+        "morph2": "N1=STEM.N3=GEN.N3=3-SG-NH-POSS.N5=ABS"
+      }
+    ]
+  },
+  {
+    "N3": "anene",
+    "occurrences": 2,
+    "compositions": 2,
+    "gloss_counts": {
+      "3-PL-H-POSS": 2
+    },
+    "examples": [
+      {
+        "qid": "Q001092",
+        "ref": "Q001092.6.4",
+        "form": "aŋ₂-ne-ne",
+        "cf": "aŋ",
+        "N3": "anene",
+        "N3_gloss": "3-PL-H-POSS",
+        "morph": "NV2=aŋ.N3=anene.N5=ø",
+        "morph2": "NV2=STEM.N3=3-PL-H-POSS.N5=ABS"
+      },
+      {
+        "qid": "Q001115",
+        "ref": "Q001115.9.4",
+        "form": "aŋ₂-ne-ne",
+        "cf": "aŋ",
+        "N3": "anene",
+        "N3_gloss": "3-PL-H-POSS",
+        "morph": "NV2=aŋ.N3=anene.N5=ø",
+        "morph2": "NV2=STEM.N3=3-PL-H-POSS.N5=ABS"
+      }
+    ]
+  },
+  {
+    "N3": "anenee",
+    "occurrences": 8,
+    "compositions": 7,
+    "gloss_counts": {
+      "3-PL-POSS": 4,
+      "3-PL-H-POSS": 4
+    },
+    "examples": [
+      {
+        "qid": "Q000377",
+        "ref": "Q000377.832.3",
+        "form": "dug₄-ga-ne-ne",
+        "cf": "dug",
+        "N3": "anenee",
+        "N3_gloss": "3-PL-POSS",
+        "morph": "NV2=dug.NV4='a.N3=anenee",
+        "morph2": "NV2=STEM.NV4=SUB.N3=3-PL-POSS"
+      },
+      {
+        "qid": "Q000377",
+        "ref": "Q000377.834.5",
+        "form": "mu-ši-bar-ra-ne-ne",
+        "cf": "bar",
+        "N3": "anenee",
+        "N3_gloss": "3-PL-POSS",
+        "morph": "V4=mu.V6=nn.V9=ši.V11=n.V12=bar.V14=ø.V15=SUB.N3=anenee.N5=ra",
+        "morph2": "V4=VEN.V6=3-SG-H.V9=TERM.V11=3-SG-H-A.V12=STEM.V14=3-SG-P.V15=SUB.N3=3-PL-POSS.N5=DAT.H"
+      },
+      {
+        "qid": "Q000834",
+        "ref": "Q000834.48.2",
+        "form": "na-me-ne-ne",
+        "cf": "name",
+        "N3": "anenee",
+        "N3_gloss": "3-PL-H-POSS",
+        "morph": "N1=name.N3=anenee.N5=ak.N5=ø",
+        "morph2": "N1=STEM.N3=3-PL-H-POSS.N5=GEN.N5=ABS"
+      }
+    ]
+  },
+  {
+    "N3": "ani",
+    "occurrences": 1426,
+    "compositions": 588,
+    "gloss_counts": {
+      "3-SG-H-POSS": 1413,
+      "3-SG-HPOSS": 10,
+      "3-SG-NH-POSS": 1,
+      "ani": 1,
+      "3-SG-H-POSS|GEN": 1
+    },
+    "examples": [
+      {
+        "qid": "Q000376",
+        "ref": "Q000376.9.3",
+        "form": "dam-ni",
+        "cf": "dam",
+        "N3": "ani",
+        "N3_gloss": "3-SG-H-POSS",
+        "morph": "N1=dam.N3=ani.N5=ø",
+        "morph2": "N1=STEM.N3=3-SG-H-POSS.N5=ABS"
+      },
+      {
+        "qid": "Q000376",
+        "ref": "Q000376.11.3",
+        "form": "dumu-ni",
+        "cf": "dumu",
+        "N3": "ani",
+        "N3_gloss": "3-SG-H-POSS",
+        "morph": "N1=dumu.N3=ani.N5=ø",
+        "morph2": "N1=STEM.N3=3-SG-H-POSS.N5=ABS"
+      },
+      {
+        "qid": "Q000376",
+        "ref": "Q000376.21.2",
+        "form": "dug₄-ga-na",
+        "cf": "dug",
+        "N3": "ani",
+        "N3_gloss": "3-SG-H-POSS",
+        "morph": "NV2=dug.NV4='a.N3=ani.N5='a",
+        "morph2": "NV2=STEM.NV4=SUB.N3=3-SG-H-POSS.N5=L2-NH"
+      }
+    ]
+  },
+  {
+    "N3": "ani=N5=ak",
+    "occurrences": 1,
+    "compositions": 1,
+    "gloss_counts": {
+      "3-SG-H-POSS": 1
+    },
+    "examples": [
+      {
+        "qid": "Q001250",
+        "ref": "Q001250.5.3",
+        "form": "i₃-na",
+        "cf": "i",
+        "N3": "ani=N5=ak",
+        "N3_gloss": "3-SG-H-POSS",
+        "morph": "N1=i.N3=ani=N5=ak",
+        "morph2": "N1=STEM.N3=3-SG-H-POSS.N5=GEN"
+      }
+    ]
+  },
+  {
+    "N3": "ani|ani",
+    "occurrences": 1,
+    "compositions": 1,
+    "gloss_counts": {
+      "3-SG-H-POSS|3-SG-H-POSS": 1
+    },
+    "examples": [
+      {
+        "qid": "Q001953",
+        "ref": "Q001953.14.1",
+        "form": "nam-dumu-na-ka-ni",
+        "cf": "namdumu",
+        "N3": "ani|ani",
+        "N3_gloss": "3-SG-H-POSS|3-SG-H-POSS",
+        "morph": "N1=namdumu.N3=ani.N5=ak.N3=ani.N5=ø",
+        "morph2": "N1=STEM.N3=3-SG-H-POSS.N5=GEN.N3=3-SG-H-POSS.N5=ABS"
+      }
+    ]
+  },
+  {
+    "N3": "ani|bi",
+    "occurrences": 1,
+    "compositions": 1,
+    "gloss_counts": {
+      "3-SG-H-POSS|3-SG-NH-POSS": 1
+    },
+    "examples": [
+      {
+        "qid": "Q000377",
+        "ref": "Q000377.1098.3",
+        "form": "dag-ga-na-bi",
+        "cf": "dag",
+        "N3": "ani|bi",
+        "N3_gloss": "3-SG-H-POSS|3-SG-NH-POSS",
+        "morph": "N1=dag.N3=ani.N5=ak.N3=bi.N5=ø",
+        "morph2": "N1=STEM.N3=3-SG-H-POSS.N5=GEN.N3=3-SG-NH-POSS.N5=ABS"
+      }
+    ]
+  },
+  {
+    "N3": "ani|ŋu",
+    "occurrences": 2,
+    "compositions": 1,
+    "gloss_counts": {
+      "3-SG-H-POSS|1-SG-POSS": 2
+    },
+    "examples": [
+      {
+        "qid": "Q000377",
+        "ref": "Q000377.30.3",
+        "form": "me-te-na-ŋu₁₀",
+        "cf": "ni",
+        "N3": "ani|ŋu",
+        "N3_gloss": "3-SG-H-POSS|1-SG-POSS",
+        "morph": "N1=nite.N3=ani.N5=ak.N3=ŋu",
+        "morph2": "N1=STEM.N3=3-SG-H-POSS.N5=GEN.N3=1-SG-POSS"
+      },
+      {
+        "qid": "Q000377",
+        "ref": "Q000377.84.3",
+        "form": "me-te-na-ŋu₁₀",
+        "cf": "ni",
+        "N3": "ani|ŋu",
+        "N3_gloss": "3-SG-H-POSS|1-SG-POSS",
+        "morph": "N1=nite.N3=ani.N5=ak.N3=ŋu",
+        "morph2": "N1=STEM.N3=3-SG-H-POSS.N5=GEN.N3=1-SG-POSS"
+      }
+    ]
+  },
+  {
+    "N3": "be",
+    "occurrences": 1,
+    "compositions": 1,
+    "gloss_counts": {
+      "3-SG-NH-POSS": 1
+    },
+    "examples": [
+      {
+        "qid": "Q000377",
+        "ref": "Q000377.1079.2",
+        "form": "nisig-ga-be₂",
+        "cf": "nisig",
+        "N3": "be",
+        "N3_gloss": "3-SG-NH-POSS",
+        "morph": "N1=nisig.N5=ak.N3=be.N5=e",
+        "morph2": "N1=STEM.N5=GEN.N3=3-SG-NH-POSS.N5=ERG"
+      }
+    ]
+  },
+  {
+    "N3": "bi",
+    "occurrences": 1169,
+    "compositions": 547,
+    "gloss_counts": {
+      "3-SG-NH-POSS": 1035,
+      "DEM2": 118,
+      "3-SG-NH": 1,
+      "3-NH-SG-POSS": 2,
+      "": 1,
+      "3-SH-NH-POSS": 3,
+      "3-SG-H-POSS": 4,
+      "DEM1": 2,
+      "3-NH-POSS": 2,
+      "3-SG-NH-PSS": 1
+    },
+    "examples": [
+      {
+        "qid": "Q000376",
+        "ref": "Q000376.16.1",
+        "form": "mu-bi",
+        "cf": "mu",
+        "N3": "bi",
+        "N3_gloss": "3-SG-NH-POSS",
+        "morph": "N1=mu.N3=bi.N5=ø",
+        "morph2": "N1=STEM.N3=3-SG-NH-POSS.N5=ABS"
+      },
+      {
+        "qid": "Q000376",
+        "ref": "Q000376.20.3",
+        "form": "limmu₅-ba",
+        "cf": "limmu",
+        "N3": "bi",
+        "N3_gloss": "3-SG-NH-POSS",
+        "morph": "NV2=limmu.N3=bi.N5=ak",
+        "morph2": "NV2=STEM.N3=3-SG-NH-POSS.N5=GEN"
+      },
+      {
+        "qid": "Q000376",
+        "ref": "Q000376.23.1",
+        "form": "a₂-bi",
+        "cf": "a",
+        "N3": "bi",
+        "N3_gloss": "3-SG-NH-POSS",
+        "morph": "N1=a.N3=bi.N5=ø",
+        "morph2": "N1=STEM.N3=3-SG-NH-POSS.N5=ABS"
+      }
+    ]
+  },
+  {
+    "N3": "bi='a",
+    "occurrences": 4,
+    "compositions": 2,
+    "gloss_counts": {
+      "3-SG-NH-POSS": 4
+    },
+    "examples": [
+      {
+        "qid": "Q000377",
+        "ref": "Q000377.329.2",
+        "form": "e₂-ba",
+        "cf": "e",
+        "N3": "bi='a",
+        "N3_gloss": "3-SG-NH-POSS",
+        "morph": "N1=e.N3=bi='a",
+        "morph2": "N1=STEM.N3=3-SG-NH-POSS.N5=L1"
+      },
+      {
+        "qid": "Q000377",
+        "ref": "Q000377.861.2",
+        "form": "e₂-ba",
+        "cf": "e",
+        "N3": "bi='a",
+        "N3_gloss": "3-SG-NH-POSS",
+        "morph": "N1=e.N3=bi='a",
+        "morph2": "N1=STEM.N3=3-SG-NH-POSS.N5=L1"
+      },
+      {
+        "qid": "Q000377",
+        "ref": "Q000377.1219.2",
+        "form": "e₂-ba",
+        "cf": "e",
+        "N3": "bi='a",
+        "N3_gloss": "3-SG-NH-POSS",
+        "morph": "N1=e.N3=bi='a",
+        "morph2": "N1=STEM.N3=3-SG-NH-POSS.L2-NH"
+      }
+    ]
+  },
+  {
+    "N3": "bi=N5=ø",
+    "occurrences": 2,
+    "compositions": 1,
+    "gloss_counts": {
+      "3-SG-NH-POSS": 2
+    },
+    "examples": [
+      {
+        "qid": "Q000377",
+        "ref": "Q000377.206.1",
+        "form": "i₃-bi₂-bi",
+        "cf": "ibi",
+        "N3": "bi=N5=ø",
+        "N3_gloss": "3-SG-NH-POSS",
+        "morph": "N1=ibi.N3=bi=N5=ø",
+        "morph2": "N1=STEM.N3=3-SG-NH-POSS.N5=ABS"
+      },
+      {
+        "qid": "Q000377",
+        "ref": "Q000377.356.4",
+        "form": "i₃-bi₂-bi",
+        "cf": "ibi",
+        "N3": "bi=N5=ø",
+        "N3_gloss": "3-SG-NH-POSS",
+        "morph": "N1=ibi.N3=bi=N5=ø",
+        "morph2": "N1=STEM.N3=3-SG-NH-POSS.N5=ABS"
+      }
+    ]
+  },
+  {
+    "N3": "biN5=ø",
+    "occurrences": 1,
+    "compositions": 1,
+    "gloss_counts": {
+      "3-SG-NH-POSS": 1
+    },
+    "examples": [
+      {
+        "qid": "Q000377",
+        "ref": "Q000377.679.1",
+        "form": "ŋeš-ka₂-an-na-bi",
+        "cf": "ŋeškanak",
+        "N3": "biN5=ø",
+        "N3_gloss": "3-SG-NH-POSS",
+        "morph": "N1=ŋeškanak.N3=biN5=ø",
+        "morph2": "N1=STEM.N3=3-SG-NH-POSS.N5=ABS"
+      }
+    ]
+  },
+  {
+    "N3": "bi|bi",
+    "occurrences": 1,
+    "compositions": 1,
+    "gloss_counts": {
+      "DEM2|3-SG-NH-POSS": 1
+    },
+    "examples": [
+      {
+        "qid": "Q001124",
+        "ref": "Q001124.325.2",
+        "form": "ud-bi-ta-bi",
+        "cf": "ud",
+        "N3": "bi|bi",
+        "N3_gloss": "DEM2|3-SG-NH-POSS",
+        "morph": "N1=ud.N3=bi.N5=ta.N5=ak.N3=bi.N5=ø",
+        "morph2": "N1=STEM.N3=DEM2.N5=ABL.N5=GEN.N3=3-SG-NH-POSS.N5=ABS"
+      }
+    ]
+  },
+  {
+    "N3": "me",
+    "occurrences": 1,
+    "compositions": 1,
+    "gloss_counts": {
+      "1-PL-POSS": 1
+    },
+    "examples": [
+      {
+        "qid": "Q000377",
+        "ref": "Q000377.4.1",
+        "form": "iri-me-a",
+        "cf": "iri",
+        "N3": "me",
+        "N3_gloss": "1-PL-POSS",
+        "morph": "N1=iri.N3=me.N5='a",
+        "morph2": "N1=STEM.N3=1-PL-POSS.N5=L1"
+      }
+    ]
+  },
+  {
+    "N3": "ni",
+    "occurrences": 3,
+    "compositions": 3,
+    "gloss_counts": {
+      "3-SG-H-POSS": 3
+    },
+    "examples": [
+      {
+        "qid": "Q001173",
+        "ref": "Q001173.3.1",
+        "form": "nam-ra-ak-ni",
+        "cf": "namraʾak",
+        "N3": "ni",
+        "N3_gloss": "3-SG-H-POSS",
+        "morph": "N1=namra'ak.N3=ni.N5=ø",
+        "morph2": "N1=STEM.N3=3-SG-H-POSS.N5=ABS"
+      },
+      {
+        "qid": "Q001456",
+        "ref": "Q001456.5.2",
+        "form": "mu-sar-ra-na",
+        "cf": "musara",
+        "N3": "ni",
+        "N3_gloss": "3-SG-H-POSS",
+        "morph": "N1=musara.N3=ni.N5='a",
+        "morph2": "N1=STEM.N3=3-SG-H-POSS.N5=L2-NH"
+      },
+      {
+        "qid": "Q001899",
+        "ref": "Q001899.6.2",
+        "form": "mu-sar-ra-na",
+        "cf": "musara",
+        "N3": "ni",
+        "N3_gloss": "3-SG-H-POSS",
+        "morph": "N1=musara.N3=ni.N5='a",
+        "morph2": "N1=STEM.N3=3-SG-H-POSS.N5=L2-NH"
+      }
+    ]
+  },
+  {
+    "N3": "zu",
+    "occurrences": 432,
+    "compositions": 391,
+    "gloss_counts": {
+      "2-SG-POSS": 428,
+      "": 2,
+      "2-SG-H-POSS": 1,
+      "1-SG-POSS": 1
+    },
+    "examples": [
+      {
+        "qid": "Q000377",
+        "ref": "Q000377.43.2",
+        "form": "e₂-zu",
+        "cf": "e",
+        "N3": "zu",
+        "N3_gloss": "2-SG-POSS",
+        "morph": "N1=e.N3=zu.N5=ø",
+        "morph2": "N1=STEM.N3=2-SG-POSS.N5=ABS"
+      },
+      {
+        "qid": "Q000377",
+        "ref": "Q000377.45.1",
+        "form": "nin₉-zu",
+        "cf": "nin",
+        "N3": "zu",
+        "N3_gloss": "2-SG-POSS",
+        "morph": "N1=nin.N3=zu",
+        "morph2": "N1=STEM.N3=2-SG-POSS"
+      },
+      {
+        "qid": "Q000377",
+        "ref": "Q000377.62.3",
+        "form": "u₃-ši-bar-ra-zu",
+        "cf": "bar",
+        "N3": "zu",
+        "N3_gloss": "2-SG-POSS",
+        "morph": "V1=u.V5=b.V9=ši.V11=e.V12=bar.V14=ø.V15=SUB.N3=zu.N5=ø",
+        "morph2": "V1=ANT.V5=3-NH.V9=TERM.V11=2-SG-A.V12=STEM.V14=3-SG-P.V15=SUB.N3=2-SG-POSS.N5=ABS"
+      }
+    ]
+  },
+  {
+    "N3": "ŋu",
+    "occurrences": 162,
+    "compositions": 52,
+    "gloss_counts": {
+      "1-SG-POSS": 152,
+      "3-SG-H-POSS": 3,
+      "": 3,
+      "1-SG-H-POSS": 2,
+      "3-SG-NH-POSS": 1,
+      "1": 1
+    },
+    "examples": [
+      {
+        "qid": "Q000376",
+        "ref": "Q000376.27.1",
+        "form": "nin-ŋu₁₀",
+        "cf": "nin",
+        "N3": "ŋu",
+        "N3_gloss": "1-SG-POSS",
+        "morph": "N1=nin.N3=ŋu",
+        "morph2": "N1=STEM.N3=1-SG-POSS"
+      },
+      {
+        "qid": "Q000376",
+        "ref": "Q000376.32.1",
+        "form": "a₂-dah-ŋu₁₀",
+        "cf": "adah",
+        "N3": "ŋu",
+        "N3_gloss": "1-SG-POSS",
+        "morph": "N1=adah.N3=ŋu.N5=ø",
+        "morph2": "N1=STEM.N3=1-SG-POSS.N5=ABS"
+      },
+      {
+        "qid": "Q000376",
+        "ref": "Q000376.57.1",
+        "form": "nin-ŋu₁₀",
+        "cf": "nin",
+        "N3": "ŋu",
+        "N3_gloss": "1-SG-POSS",
+        "morph": "N1=nin.N3=ŋu",
+        "morph2": "N1=STEM.N3=1-SG-POSS"
+      }
+    ]
+  },
+  {
+    "N3": "ŋu-N5=ra",
+    "occurrences": 1,
+    "compositions": 1,
+    "gloss_counts": {
+      "1-SG-POSS": 1
+    },
+    "examples": [
+      {
+        "qid": "Q001965",
+        "ref": "Q001965.4.2",
+        "form": "tu₂-ŋu₁₀-ra",
+        "cf": "utud",
+        "N3": "ŋu-N5=ra",
+        "N3_gloss": "1-SG-POSS",
+        "morph": "NV2=tu.NV4='a.N3=ŋu-N5=ra",
+        "morph2": "NV2=STEM.NV4=SUB.N3=1-SG-POSS.N5=DAT-H"
+      }
+    ]
+  }
+]

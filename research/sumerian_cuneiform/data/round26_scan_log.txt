@@ -1,0 +1,12 @@
+parsed 1456 failed ['etcsri/corpusjson/Q001066.json'] tokens 11 compositions 7 forms Counter({'gaba': 4, 'gaba-ka-ka': 3, 'gaba-ba': 2, 'gaba-be₂': 2})
+Q000377 Cylinder A xiv 14 gaba breast, chest, frontier The building of Ningirsu's temple (Gudea, cylinders A and B) {d}nanše-ka zig₃-ga ba-ni-ŋar gud huš zig₃-ga || gi₄ nu-tuku {ŋeš}eren babbar₂-ra lugal-bi-ir dab₆-ba
+Q000377 Cylinder B i 19 gaba-ba breast, chest, frontier The building of Ningirsu's temple (Gudea, cylinders A and B) udu im-ma-a-tah bur he₂-ŋal₂ an-šag₄ pe₅-ša-gin₇ || si bi₂-sa₂ {d}a-nun-na-ke₄-ne-er mu-ne-gub šud₃ mu-ne-ša₄
+Q000377 Cylinder B xiv 1 gaba breast, chest, frontier The building of Ningirsu's temple (Gudea, cylinders A and B) mi-tum tukul nir₃ saŋ piriŋ kur-da || nu-gi₄ {ŋeš}eme-ŋiri₂ šu-nir 1(u) la₂ 1(aš)
+Q000873 10 gaba-ba breast, chest, frontier Lu-Utu 2 e₃ ki nam tar-re-da e₂ mu-na-du₃ || id₅ bi₂-in-gen₆ mu-be₂ pa bi₂-in-e₃
+Q000945 12 gaba breast, chest, frontier Ur-Namma 17 {d}nanna in-du₃-a niŋ₂ ul-li₂-a-ke₄ pa mu-na-e₃ || a-ab-ka-ka ki-saₓ(SAR)-a nam-ga-eš₈ bi₂-sa₂ ma₂ ma₂-gan
+Q001056 o ii 28 gaba-be₂ breast, chest, frontier E-anatum 01 lu₂ umma{ki}-ke₄ šu du₇-ra₂ e-ma-da-dug₄ lagaš{ki} || šu e-ma-us₂ aya₂-kur-gal lugal lagaš{ki} dumu
+Q001056 o iii 21 gaba-be₂ breast, chest, frontier E-anatum 01 ur-{d}nanše e-ma-x lagaš{ki} bar niŋ₂ ni₂-ba-ka-ka || šu e-ga-ma-us₂ piriŋ zag x ŋir₂-nun
+Q001059 iii 4 gaba breast, chest, frontier E-anatum 07a sig₁₀-ga {d}nin-ŋir₂-su₂-ka kur-kur-še₃ a₂ {d}nin-ŋir₂-su₂-ka-ta lu₂-lu₇ || mu-ru-da nu-tuku
+Q001123 iv 30 gaba-ka-ka breast, chest, frontier URU-KA-gina 02 agrig he₂ ugula he₂ bar sila₄ || kug a-ŋa₂-ŋa₂-a dumu lagaš{ki} saŋŋa GAR
+Q001124 iv 7 gaba-ka-ka breast, chest, frontier URU-KA-gina 01 gala-mah agrig lu₂-bappir₃ ugula-ugula-ne bar sila₄ || kug be₂-ŋar-re₂-eš₂ gud diŋir-re₂-ne-ke₄ ki šum₂-ma
+Q001124 viii 29 gaba-ka-ka breast, chest, frontier URU-KA-gina 01 e-ta-šub bar udu had₂-ka bar sila₄ || kug a-ŋa₂-ŋa₂-da maškim-bi e-ta-šub dupsik saŋŋa-saŋŋa-ne

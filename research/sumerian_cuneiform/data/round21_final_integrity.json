@@ -1,0 +1,16 @@
+{
+  "round21_protocol.json": "d3cf617a8b80e289d8c7b2b9076b5fc71a91f17c66f683f9e277f80c53669ee3",
+  "round21_prior_sample_metadata.json": "7638919293ce3ccc82a791d90986ff22fd82abaf64fe17107bffe389624d64c0",
+  "round21_selection_protocol.json": "8bc1d87f328f836e9d18067373ab4d2f03435af8540e27de111389a3ff1b7c1c",
+  "round21_acquisition_manifest.json": "57826417a13970ec0fc396b25fa1c679e7ae4bfd1d19ba553adfd5b2754b1dee",
+  "round21_contact_protocol.json": "d491250ef92430d3e2573bab59586adb55be3b7c3a75baa09451f778c361d347",
+  "round21_contact_table.json": "f1d3b7fc76f5b1ac4c3f5c6e071d871b3972e29a03c89f33e50641c9fb6a8e91",
+  "round21_development_observations.json": "42de331928aa53018a7e44d682f8c6601a0e4d23744ea6fd90c685c40241788d",
+  "round21_heldout_criteria.json": "700805f322a0ba07a07d0efba62a073fc50e37ffe1cee57a6c88d1cf928216d8",
+  "round21_heldout_matches.csv": "3850ace85de9cc721fc529cf2bd24d7b4c813a58374541802a47a2097dc49a02",
+  "round21_crop_review.json": "3572ec8c041eadb7a696d696d160e1d100c5cbeb67193144e0d6a1df573a7979",
+  "round21_inventory_decisions.json": "e7b5d4878df64e586e77115d4bddd123daf27abd100a9da8fd8c8997d4cb76e9",
+  "round21_late_inventory.json": "cb51e9b247dc4e2a169eae3ca9b98e5c0471831e4848e6d5033d4ccddd028c8c",
+  "round21_summary.json": "6a43a4e59da2212bb9c3c8704c45b237ed48739359ad831d848eaefab2ee1ec7",
+  "round21_U04_bands.json": "e336b89be6fbff60a8fab1def122beac2f70c6edd24a1e80a35d1a93f5736cf6"
+}

@@ -1,0 +1,20 @@
+{
+  "date": "2026-10-25",
+  "source": "sources/Jagersma_2010_mirror.pdf",
+  "source_sha256": "1de263451be6a1b155f7a1fed2fa1523bbca69c06bd92374fcbf3abfad453a78",
+  "render_method": "pdftoppm -png -singlefile; no alteration of text",
+  "pages": [
+    {
+      "pdf_page": 709,
+      "printed_page": 682,
+      "file": "data/round11_Jagersma_printed682.png",
+      "sha256": "aeb4e70e2e017b2b6108e71ef146628d408daafb0ec94ea5e1c987fcfd72ae1f"
+    },
+    {
+      "pdf_page": 710,
+      "printed_page": 683,
+      "file": "data/round11_Jagersma_printed683.png",
+      "sha256": "afcd386a0da33f290755d7cdf00a8af0314710e5a79d193ae4ac6aa571265c23"
+    }
+  ]
+}

@@ -1,0 +1,592 @@
+[
+  {
+    "qid": "Q001057",
+    "ref": "Q001057.91.1",
+    "line": "v 16",
+    "f": {
+      "lang": "sux",
+      "form": "id₅",
+      "delim": "",
+      "gdl": [
+        {
+          "v": "id₅",
+          "oid": "o0000087",
+          "gdl_sign": "A",
+          "utf8": "𒀀",
+          "key": "o0000087..id₅",
+          "id": "Q001057.91.1.0"
+        }
+      ],
+      "cf": "id",
+      "gw": "river",
+      "sense": "river",
+      "norm": "id",
+      "pos": "N",
+      "epos": "N",
+      "base": "id₅",
+      "morph": "N1=id",
+      "morph2": "N1=STEM"
+    },
+    "before": [
+      {
+        "lang": "sux",
+        "form": "GIR₃-GIR₃-ni",
+        "gdl": [
+          {
+            "s": "GIR₃",
+            "oid": "o0000215",
+            "gdl_sign": "GIR₃",
+            "utf8": "𒄊",
+            "key": "o0000215..",
+            "id": "Q001057.88.2.0",
+            "break": "damaged",
+            "ho": "1",
+            "delim": "-",
+            "hc": "1"
+          },
+          {
+            "s": "GIR₃",
+            "oid": "o0000215",
+            "gdl_sign": "GIR₃",
+            "utf8": "𒄊",
+            "key": "o0000215..",
+            "id": "Q001057.88.2.1",
+            "delim": "-"
+          },
+          {
+            "v": "ni",
+            "oid": "o0000479",
+            "gdl_sign": "NI",
+            "utf8": "𒉌",
+            "key": "o0000479..ni",
+            "id": "Q001057.88.2.2"
+          }
+        ],
+        "pos": "u"
+      },
+      {
+        "lang": "sux",
+        "form": "lum-ma-a",
+        "gdl": [
+          {
+            "v": "lum",
+            "oid": "o0000438",
+            "gdl_sign": "LUM",
+            "utf8": "𒈝",
+            "key": "o0000438..lum",
+            "id": "Q001057.89.1.0",
+            "break": "damaged",
+            "ho": "1",
+            "delim": "-"
+          },
+          {
+            "v": "ma",
+            "oid": "o0000444",
+            "gdl_sign": "MA",
+            "utf8": "𒈠",
+            "key": "o0000444..ma",
+            "id": "Q001057.89.1.1",
+            "break": "damaged",
+            "delim": "-"
+          },
+          {
+            "v": "a",
+            "oid": "o0000087",
+            "gdl_sign": "A",
+            "utf8": "𒀀",
+            "key": "o0000087..a",
+            "id": "Q001057.89.1.2",
+            "break": "damaged",
+            "hc": "1"
+          }
+        ],
+        "cf": "Luma",
+        "gw": "1",
+        "sense": "1",
+        "norm": "Luma.ø.am",
+        "pos": "RN",
+        "epos": "RN",
+        "base": "lum-ma",
+        "morph": "N1=Luma.N5=ø.N6=am",
+        "morph2": "N1=NAME.N5=ABS.N6=COP-3-SG"
+      },
+      {
+        "lang": "sux",
+        "form": "{d}nin-ŋir₂-su₂-ra",
+        "gdl": [
+          {
+            "det": "semantic",
+            "pos": "pre",
+            "seq": [
+              {
+                "v": "d",
+                "oid": "o0000099",
+                "gdl_sign": "AN",
+                "utf8": "𒀭",
+                "key": "o0000099..d",
+                "id": "Q001057.90.1.0"
+              }
+            ]
+          },
+          {
+            "v": "nin",
+            "oid": "o0002323",
+            "gdl_sign": "|SAL.TUG₂|",
+            "utf8": "𒎏",
+            "key": "o0002323..nin",
+            "id": "Q001057.90.1.1",
+            "delim": "-"
+          },
+          {
+            "v": "ŋir₂",
+            "oid": "o0000213",
+            "gdl_sign": "GIR₂",
+            "utf8": "𒄈",
+            "key": "o0000213..ŋir₂",
+            "id": "Q001057.90.1.2",
+            "break": "damaged",
+            "ho": "1",
+            "delim": "-",
+            "hc": "1"
+          },
+          {
+            "v": "su₂",
+            "oid": "o0000614",
+            "gdl_sign": "ZU",
+            "utf8": "𒍪",
+            "key": "o0000614..su₂",
+            "id": "Q001057.90.1.3",
+            "gdl_remarked": "1",
+            "delim": "-"
+          },
+          {
+            "v": "ra",
+            "oid": "o0000510",
+            "gdl_sign": "RA",
+            "utf8": "𒊏",
+            "key": "o0000510..ra",
+            "id": "Q001057.90.1.4",
+            "break": "damaged",
+            "ho": "1",
+            "hc": "1"
+          }
+        ],
+        "cf": "Ninŋirsuk",
+        "gw": "1",
+        "sense": "1",
+        "norm": "Ninŋirsuk.ra",
+        "pos": "DN",
+        "epos": "DN",
+        "base": "{d}nin-ŋir₂-su₂",
+        "morph": "N1=Ninŋirsuk.N5=ra",
+        "morph2": "N1=NAME.N5=DAT-H"
+      }
+    ],
+    "after": [
+      {
+        "lang": "sux",
+        "form": "gibil",
+        "gdl": [
+          {
+            "v": "gibil",
+            "oid": "o0000478",
+            "gdl_sign": "NE@s",
+            "utf8": "𒉋",
+            "key": "o0000478..gibil",
+            "id": "Q001057.91.2.0"
+          }
+        ],
+        "cf": "gibil",
+        "gw": "new",
+        "sense": "(to be) new",
+        "norm": "gibil.ø",
+        "pos": "V/i",
+        "epos": "V/i",
+        "base": "gibil",
+        "morph": "NV2=gibil.N5=ø",
+        "morph2": "NV2=STEM.N5=ABS"
+      },
+      {
+        "lang": "sux",
+        "form": "mu-na-dun",
+        "gdl": [
+          {
+            "v": "mu",
+            "oid": "o0000457",
+            "gdl_sign": "MU",
+            "utf8": "𒈬",
+            "key": "o0000457..mu",
+            "id": "Q001057.92.1.0",
+            "delim": "-"
+          },
+          {
+            "v": "na",
+            "oid": "o0000469",
+            "gdl_sign": "NA",
+            "utf8": "𒈾",
+            "key": "o0000469..na",
+            "id": "Q001057.92.1.1",
+            "delim": "-"
+          },
+          {
+            "v": "dun",
+            "oid": "o0000158",
+            "gdl_sign": "DUN",
+            "utf8": "𒂄",
+            "key": "o0000158..dun",
+            "id": "Q001057.92.1.2"
+          }
+        ],
+        "cf": "dun",
+        "gw": "dig",
+        "sense": "dig",
+        "norm": "mu.nn.a.n.dun.ø",
+        "pos": "V/t",
+        "epos": "V/t",
+        "base": "dun",
+        "morph": "V4=mu.V6=nn.V7=a.V11=n.V12=dun.V14=ø",
+        "morph2": "V4=VEN.V6=3-SG-H.V7=DAT.V11=3-SG-H-A.V12=STEM.V14=3-SG-P"
+      },
+      {
+        "lang": "sux",
+        "form": "lum-ma-gin₇-dug₃",
+        "gdl": [
+          {
+            "v": "lum",
+            "oid": "o0000438",
+            "gdl_sign": "LUM",
+            "utf8": "𒈝",
+            "key": "o0000438..lum",
+            "id": "Q001057.93.1.0",
+            "delim": "-"
+          },
+          {
+            "v": "ma",
+            "oid": "o0000444",
+            "gdl_sign": "MA",
+            "utf8": "𒈠",
+            "key": "o0000444..ma",
+            "id": "Q001057.93.1.1",
+            "delim": "-"
+          },
+          {
+            "v": "gin₇",
+            "oid": "o0000143",
+            "gdl_sign": "DIM₂",
+            "utf8": "𒁶",
+            "key": "o0000143..gin₇",
+            "id": "Q001057.93.1.2",
+            "delim": "-"
+          },
+          {
+            "v": "dug₃",
+            "oid": "o0000237",
+            "gdl_sign": "HI",
+            "utf8": "𒄭",
+            "key": "o0000237..dug₃",
+            "id": "Q001057.93.1.3"
+          }
+        ],
+        "cf": "Lumagindug",
+        "gw": "1",
+        "sense": "1",
+        "norm": "Lumagindug",
+        "pos": "WN",
+        "epos": "WN",
+        "base": "lum-ma-gin₇-dug₃",
+        "morph": "N1=Lumagindug",
+        "morph2": "N1=NAME"
+      },
+      {
+        "lang": "sux",
+        "form": "mu",
+        "delim": "",
+        "gdl": [
+          {
+            "v": "mu",
+            "oid": "o0000457",
+            "gdl_sign": "MU",
+            "utf8": "𒈬",
+            "key": "o0000457..mu",
+            "id": "Q001057.94.1.0"
+          }
+        ],
+        "cf": "mu",
+        "gw": "name",
+        "sense": "name",
+        "norm": "mu.še",
+        "pos": "N",
+        "epos": "N",
+        "base": "mu",
+        "morph": "N1=mu.N5=še",
+        "morph2": "N1=STEM.N5=TERM"
+      }
+    ]
+  },
+  {
+    "qid": "Q001058",
+    "ref": "Q001058.87.1",
+    "line": "vi 8",
+    "f": {
+      "lang": "sux",
+      "form": "id₂",
+      "delim": "",
+      "gdl": [
+        {
+          "v": "id₂",
+          "oid": "o0000697",
+          "gdl_sign": "|A.LAGAB×HAL|",
+          "utf8": "𒀀𒇉",
+          "key": "o0000697..id₂",
+          "id": "Q001058.87.1.0"
+        }
+      ],
+      "cf": "id",
+      "gw": "river",
+      "sense": "river",
+      "norm": "id",
+      "pos": "N",
+      "epos": "N",
+      "base": "id₂",
+      "morph": "N1=id",
+      "morph2": "N1=STEM"
+    },
+    "before": [
+      {
+        "lang": "sux",
+        "form": "mu-ha-lam",
+        "gdl": [
+          {
+            "v": "mu",
+            "oid": "o0000457",
+            "gdl_sign": "MU",
+            "utf8": "𒈬",
+            "key": "o0000457..mu",
+            "id": "Q001058.84.1.0",
+            "delim": "-"
+          },
+          {
+            "v": "ha",
+            "oid": "o0000232",
+            "gdl_sign": "HA",
+            "utf8": "𒄩",
+            "key": "o0000232..ha",
+            "id": "Q001058.84.1.1",
+            "delim": "-"
+          },
+          {
+            "v": "lam",
+            "oid": "o0000424",
+            "gdl_sign": "LAM",
+            "utf8": "𒇴",
+            "key": "o0000424..lam",
+            "id": "Q001058.84.1.2"
+          }
+        ],
+        "cf": "halam",
+        "gw": "forsake",
+        "sense": "forsake, destroy, become forgotten",
+        "norm": "mu.n.halam.ø",
+        "pos": "V/t",
+        "epos": "V/t",
+        "base": "ha-lam",
+        "morph": "V4=mu.V11=n.V12=halam.V14=ø",
+        "morph2": "V4=VEN.V11=3-SG-H-A.V12=STEM.V14=3-SG-P"
+      },
+      {
+        "lang": "sux",
+        "form": "ud-ba",
+        "gdl": [
+          {
+            "v": "ud",
+            "oid": "o0000565",
+            "gdl_sign": "UD",
+            "utf8": "𒌓",
+            "key": "o0000565..ud",
+            "id": "Q001058.85.1.0",
+            "delim": "-"
+          },
+          {
+            "v": "ba",
+            "oid": "o0000113",
+            "gdl_sign": "BA",
+            "utf8": "𒁀",
+            "key": "o0000113..ba",
+            "id": "Q001058.85.1.1",
+            "break": "damaged",
+            "ho": "1",
+            "hc": "1"
+          }
+        ],
+        "cf": "ud",
+        "gw": "sun",
+        "sense": "day",
+        "norm": "ud.bi.'a",
+        "pos": "N",
+        "epos": "N",
+        "base": "ud",
+        "morph": "N1=ud.N3=bi.N5='a",
+        "morph2": "N1=STEM.N3=DEM2.N5=L1"
+      },
+      {
+        "lang": "sux",
+        "form": "e₂-an-na-tum₂-e",
+        "gdl": [
+          {
+            "v": "e₂",
+            "oid": "o0000180",
+            "gdl_sign": "E₂",
+            "utf8": "𒂍",
+            "key": "o0000180..e₂",
+            "id": "Q001058.86.1.0",
+            "delim": "-"
+          },
+          {
+            "v": "an",
+            "oid": "o0000099",
+            "gdl_sign": "AN",
+            "utf8": "𒀭",
+            "key": "o0000099..an",
+            "id": "Q001058.86.1.1",
+            "delim": "-"
+          },
+          {
+            "v": "na",
+            "oid": "o0000469",
+            "gdl_sign": "NA",
+            "utf8": "𒈾",
+            "key": "o0000469..na",
+            "id": "Q001058.86.1.2",
+            "delim": "-"
+          },
+          {
+            "v": "tum₂",
+            "oid": "o0000149",
+            "gdl_sign": "DU",
+            "utf8": "𒁺",
+            "key": "o0000149..tum₂",
+            "id": "Q001058.86.1.3",
+            "delim": "-"
+          },
+          {
+            "v": "e",
+            "oid": "o0000166",
+            "gdl_sign": "E",
+            "utf8": "𒂊",
+            "key": "o0000166..e",
+            "id": "Q001058.86.1.4"
+          }
+        ],
+        "cf": "Eanatum",
+        "gw": "1",
+        "sense": "Eanatum, ruler of Lagaš",
+        "norm": "Eanatum.e",
+        "pos": "RN",
+        "epos": "RN",
+        "base": "e₂-an-na-tum₂",
+        "morph": "N1=Eanatum.N5=e",
+        "morph2": "N1=NAME.N5=ERG"
+      }
+    ],
+    "after": [
+      {
+        "lang": "sux",
+        "form": "gibil",
+        "gdl": [
+          {
+            "v": "gibil",
+            "oid": "o0000478",
+            "gdl_sign": "NE@s",
+            "utf8": "𒉋",
+            "key": "o0000478..gibil",
+            "id": "Q001058.87.2.0"
+          }
+        ],
+        "cf": "gibil",
+        "gw": "new",
+        "sense": "(to be) new",
+        "norm": "gibil",
+        "pos": "V/i",
+        "epos": "V/i",
+        "base": "gibil",
+        "morph": "NV2=gibil",
+        "morph2": "NV2=STEM"
+      },
+      {
+        "lang": "sux",
+        "form": "mu-na-dun",
+        "gdl": [
+          {
+            "v": "mu",
+            "oid": "o0000457",
+            "gdl_sign": "MU",
+            "utf8": "𒈬",
+            "key": "o0000457..mu",
+            "id": "Q001058.88.1.0",
+            "delim": "-"
+          },
+          {
+            "v": "na",
+            "oid": "o0000469",
+            "gdl_sign": "NA",
+            "utf8": "𒈾",
+            "key": "o0000469..na",
+            "id": "Q001058.88.1.1",
+            "delim": "-"
+          },
+          {
+            "v": "dun",
+            "oid": "o0000158",
+            "gdl_sign": "DUN",
+            "utf8": "𒂄",
+            "key": "o0000158..dun",
+            "id": "Q001058.88.1.2"
+          }
+        ],
+        "cf": "dun",
+        "gw": "dig",
+        "sense": "dig",
+        "norm": "mu.nn.a.n.dun.ø",
+        "pos": "V/t",
+        "epos": "V/t",
+        "base": "dun",
+        "morph": "V4=mu.V6=nn.V7=a.V11=n.V12=dun.V14=ø",
+        "morph2": "V4=VEN.V6=3-SG-H.V7=DAT.V11=3-SG-H-A.V12=STEM.V14=3-SG-P"
+      },
+      {
+        "lang": "sux",
+        "form": "A",
+        "delim": "",
+        "gdl": [
+          {
+            "s": "A",
+            "oid": "o0000087",
+            "gdl_sign": "A",
+            "utf8": "𒀀",
+            "key": "o0000087..",
+            "id": "Q001058.89.1.0",
+            "break": "damaged",
+            "ho": "1",
+            "hc": "1"
+          }
+        ],
+        "pos": "u"
+      },
+      {
+        "lang": "sux",
+        "form": "x",
+        "gdl": [
+          {
+            "x": "ellipsis",
+            "id": "Q001058.89.2.0",
+            "breakStart": "1",
+            "break": "missing",
+            "o": "]",
+            "breakEnd": "Q001058.89.2.0"
+          }
+        ],
+        "pos": "u"
+      }
+    ]
+  }
+]

@@ -1,0 +1,9 @@
+﻿pid,museum,designation,row_id,line,headword,pronunciation,main_sign,akkadian,cell_count,all_cells,has_correction,has_uncertainty,has_damage,gaba_target,has_full_ga_ba
+P227701,CBS 12709 (+) CBS 12709a,CBS 12709 (+) CBS 12709a,P227701.7,o i 2,[[li> ]],* li,LI,,4,o i 22 | [[li> ]] | * li | LI,False,False,False,False,False
+P227701,CBS 12709 (+) CBS 12709a,CBS 12709 (+) CBS 12709a,P227701.8,o i 3,[[en₃> ]],* en,LI,,4,o i 33 | [[en₃> ]] | * en | LI,False,False,False,False,False
+P227701,CBS 12709 (+) CBS 12709a,CBS 12709 (+) CBS 12709a,P227701.10,o i 5,[[tu> ]],* tu-⸢u₂⸣,TU,,4,o i 55 | [[tu> ]] | * tu-⸢u₂⸣ | TU,False,False,True,False,False
+P227701,CBS 12709 (+) CBS 12709a,CBS 12709 (+) CBS 12709a,P227701.11,o i 6,[[du₂> ]],* du-u₂,TU,,4,o i 66 | [[du₂> ]] | * du-u₂ | TU,False,False,False,False,False
+P227701,CBS 12709 (+) CBS 12709a,CBS 12709 (+) CBS 12709a,P227701.12,o i 7,[[ḫuduš> ]],* ḫu-du-uš,TU,,4,o i 77 | [[ḫuduš> ]] | * ḫu-du-uš | TU,False,False,False,False,False
+P227701,CBS 12709 (+) CBS 12709a,CBS 12709 (+) CBS 12709a,P227701.21,o i 3',[[kad₅> ]],* ka-ad,KAD₅,,4,o i 3'3' | [[kad₅> ]] | * ka-ad | KAD₅,False,False,False,False,False
+P227701,CBS 12709 (+) CBS 12709a,CBS 12709 (+) CBS 12709a,P227701.22,o i 4',[[ḫadₓ(KAD₅)> ]],* ḫa-ad,KAD₅,,4,o i 4'4' | [[ḫadₓ(KAD₅)> ]] | * ḫa-ad | KAD₅,False,False,False,False,False
+P227701,CBS 12709 (+) CBS 12709a,CBS 12709 (+) CBS 12709a,P227701.23,o i 5',[[geškadₓ(KAD₅)> ]],* geš-ka-ad,KAD₅,,4,o i 5'5' | [[geškadₓ(KAD₅)> ]] | * geš-ka-ad | KAD₅,False,False,False,False,False

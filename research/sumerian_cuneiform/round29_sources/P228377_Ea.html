@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+  <meta charset="utf-8"/>
+  <meta name="generator" content="oracc/px p4html.xml "/>
+  <link rel="stylesheet" type="text/css" href="/css/p4.css"/>
+  <link rel="stylesheet" type="text/css" href="/css/p4-cuneify.css"/>
+  <link rel="stylesheet" type="text/css" href="/dcclt/css/p3colours.css"/>
+  <link rel="stylesheet" type="text/css" href="/dcclt/css/projcss.css"/>
+  <script type="text/javascript" src="/js/p4.js">&#160;</script>
+  <script type="text/javascript" src="/js/p4cbd.js">&#160;</script>
+  <script src="https://code.jquery.com/jquery-3.2.1.min.js" type="text/javascript"><![CDATA[ ]]></script>
+  <title>dcclt</title>    
+</head>
+  <body onload="p4Onload()"><div id="p4Pager" class="bborder-top list item dcat itxt zoom special" data-proj="dcclt" data-list="outlined.lst" data-zoom="249" data-sort="12" data-prev="P228365" data-item="P228377" data-next="P228388" data-bkmk="P228377" data-lang="en">
+  <div id="p4Masthead">
+    <p id="p4HeadTitle" class="banner bborder-top bborder1-bot">
+      <a href="/">Oracc:</a> <a href="/dcclt">dcclt &#x2014; Digital Corpus of Cuneiform Lexical Texts</a>
+    </p>
+  </div>
+  <div id="p4Header" class="menu banner bborder-bot">
+    <p id="p4Banner">
+      <span id="p4Icons">
+	
+  <img class="p4icon" src="/img/p3-dd.png"
+       alt="Toggle menu drop-down" title="Toggle menu drop-down"
+       onclick="toggle_dd()"/>
+  <img id="p4HelpIcon" class="p4icon"
+       src="/img/p3-help.png" alt="Help" title="Help"
+       onclick="window.location='/doc/help/visitingoracc/gettingstarted/index.html'"/>
+  <img id="p4ResetIcon" class="p4icon"
+       src="/img/p3-reset.png" alt="Reset pager" title="Reset pager"
+       onclick="resetPager()"/>
+  <img id="p4MoreIcon" class="p4icon"
+       src="/img/p3-plus.png" alt="More resources" title="More resources"
+       onclick="window.location='/dcclt/hub.html'"/>
+
+      </span>
+    </p>
+    <div id="p4Search">
+  <form action="javascript://" onsubmit="act_srch()">
+    <p>
+      <!--Oracc Search:-->
+      <input id="p4SrchBox" type="text" size="30"
+	     value=""/>
+      <input type="submit" style="display: none"/>
+      <img id="p4SrchGo" class="p4icon" src="/img/p3-search.png"
+	   alt="Search" title="Search" onclick="act_srch()"/>
+    </p>
+    <p id="p4SrchChars">(j=ŋ&#xa0;sz=š&#xa0;s,=ṣ&#xa0;t,=ṭ&#xa0;0-9=₀-₉; &apos;=alef)</p>
+  </form>
+</div>
+
+    <div id="p4Controls">
+      
+  <div id="p4itemNav" class="p4items" data-ityp="ITEM" data-inth="100" data-imax="137">
+    <p class="bg-dk">
+
+      
+      <img id="p4ToggleMeta" class="p4icon" src="/img/p3-full.png"
+	   alt="Toggle metadata pane" title="Toggle metadata pane" onclick="toggle_md()"/>
+      
+      <img id="p4PageItem" class="p4icon p4spread" src="/img/p3-pageitem.png"
+	   alt="Toggle Page/Item view" title="Return to Page view"
+	   onclick="toggle_pi()"/>
+
+      <!--Item-->
+      <img id="p4ItemPrev" class="p4icon p4spread" src="/img/p3-backward.png"
+	   alt="Item back" title="Item back"
+	   onclick="act_item_prev()"/>
+      
+      <span id="p4ItemView"> [ITEM 100 of 137] </span>
+      
+      <img id="p4ItemNext" class="p4icon p4spread" src="/img/p3-forward.png"
+	   alt="Item forward" title="Item forward"
+	   onclick="act_item_next()"/>
+
+      <span id="p4SrchResults" class="p4srchresults" data-tmax="" data-rmax="0">
+	 Texts [0 matches]
+      </span>
+
+      <span id="p4Translations">
+	<span>
+          <select id="p4TransSelect" onchange="act_translation()">
+            <option value="none">(none)</option>
+          </select>
+        </span>
+
+	<input id="p4Transonly" type="checkbox" onchange="toggle_to()"
+	       value="@@pui_transonly()@@"/>&#xa0;only
+      </span>
+
+    </p>
+  </div>
+
+  <div id="p4PageNav" class="p4pages" data-page="61" data-pmax="6" data-imax="137">
+    <p class="p3toccenter bg-dk">
+
+      <button id="p4Zoom" class="p4spread" onclick="act_zoom('0')">All Results</button>
+
+      <img id="p4PagePrev" class="p4icon p4spread" src="/img/p3-backward.png"
+	   alt="Page back" title="Page back"
+	   onclick="act_prev()"/>
+      
+      <!--Page-->
+      <input id="p4Pageset" type="text" onchange="act_page()" size="3" value="61"/>
+
+      <img id="p4PageNext" class="p4icon p4spread" src="/img/p3-forward.png"
+	   alt="Page forward" title="Page forward"
+	   onclick="act_next()"/>
+
+      137 items
+      /
+      6 pages
+
+      <span id="p4SrchResultpages" class="p4srchresults">[0 matches]</span>
+
+      <span id="p4CeType" class="cetype"><select id="p4CESelect" onchange="act_ce_switch(event)" value="line">
+  <option value="line" selected="selected">Line</option>
+  <option value="unit">Sentence</option>
+  <option value="kwic">KWIC</option>
+</select>
+</span>
+    </p>
+  </div>
+
+
+    </div>
+  </div>
+  <div id="p4Data">
+    <div id="p4Menu">
+<div id="p4MenuSorter">
+<select id="p4MenuSelect" onchange="act_sorter()" value="12">
+<option value="12" selected="selected">period/subgenre</option>
+<option value="21">subgenre/period</option>
+</select>
+</div>
+<div id="p4MenuOutline" class="pgotl level0" data-zmax="25"><h2>Old Babylonian</h2><div class="pgotl level1"><p><a href="javascript://" onclick="act_zoom(1)" data-zoom="1">Acrographic Word Lists [9]</a></p><p><a href="javascript://" onclick="act_zoom(2)" data-zoom="2">Miscellaneous Lists [1]</a></p><p><a href="javascript://" onclick="act_zoom(3)" data-zoom="3">Sign Exercises [6]</a></p><p><a href="javascript://" onclick="act_zoom(4)" data-zoom="4">Sign Lists [7]</a></p><p><a href="javascript://" onclick="act_zoom(5)" data-zoom="5">Thematic Word Lists [18]</a></p></div><h2>Middle Assyrian</h2><div class="pgotl level1"><p><a href="javascript://" onclick="act_zoom(6)" data-zoom="6">Acrographic Word Lists [1]</a></p><p><a href="javascript://" onclick="act_zoom(7)" data-zoom="7">Sign Lists [1]</a></p></div><h2>Middle Babylonian</h2><div class="pgotl level1"><p><a href="javascript://" onclick="act_zoom(8)" data-zoom="8">Sign Exercises [1]</a></p><p><a href="javascript://" onclick="act_zoom(9)" data-zoom="9">Sign Lists [1]</a></p><p><a href="javascript://" onclick="act_zoom(10)" data-zoom="10">Thematic Word Lists [23]</a></p></div><h2>Neo-Assyrian</h2><div class="pgotl level1"><p><a href="javascript://" onclick="act_zoom(11)" data-zoom="11">Other Vocabularies [19]</a></p></div><h2>Archaic</h2><div class="pgotl level1"><p><a href="javascript://" onclick="act_zoom(12)" data-zoom="12">Other Word Lists [1]</a></p><p><a href="javascript://" onclick="act_zoom(13)" data-zoom="13">Thematic Word Lists [12]</a></p></div><h2>Early Dynastic IIIa</h2><div class="pgotl level1"><p><a href="javascript://" onclick="act_zoom(14)" data-zoom="14">Other Vocabularies [1]</a></p><p><a href="javascript://" onclick="act_zoom(15)" data-zoom="15">Thematic Word Lists [15]</a></p></div><h2>Early Dynastic IIIb</h2><div class="pgotl level1"><p><a href="javascript://" onclick="act_zoom(16)" data-zoom="16">Acrographic Word Lists [1]</a></p><p><a href="javascript://" onclick="act_zoom(17)" data-zoom="17">Other Vocabularies [2]</a></p><p><a href="javascript://" onclick="act_zoom(18)" data-zoom="18">Sign Lists [1]</a></p><p><a href="javascript://" onclick="act_zoom(19)" data-zoom="19">Thematic Word Lists [8]</a></p></div><h2>First Millennium</h2><div class="pgotl level1"><p><a href="javascript://" onclick="act_zoom(20)" data-zoom="20">Acrographic Word Lists [21]</a></p><p><a href="javascript://" onclick="act_zoom(21)" data-zoom="21">Miscellaneous Lists [1]</a></p><p><a href="javascript://" onclick="act_zoom(22)" data-zoom="22">Other Vocabularies [36]</a></p><p><a href="javascript://" onclick="act_zoom(23)" data-zoom="23">Sign Lists [57]</a></p><p><a href="javascript://" onclick="act_zoom(24)" data-zoom="24">Synonym Lists [12]</a></p><p><a href="javascript://" onclick="act_zoom(25)" data-zoom="25">Thematic Word Lists [40]</a></p></div></div></div>
+
+    <div id="p4Content">
+      <div id="p4Item" class="xtf">
+  <div id="p4XtfMeta"><div xmlns="http://www.w3.org/1999/xhtml">
+  <div class="xmdoutline border-top border-bottom">
+    <h3 class="h3">Names</h3>
+    <ul>
+      <li>N 5133</li>
+    </ul>
+    <h3 class="h3">Numbers</h3>
+    <ul>
+      <li>
+        <a href="https://cdli.earth/P228377" target="_blank">CDLI P228377</a>
+      </li>
+      <li>N 5133</li>
+      <li>MSL 14, 027 Jh</li>
+      <li>Veldhuis EEN 300</li>
+    </ul>
+    <h3 class="h3">View</h3>
+    <ul>
+      <li>Catalogue entry</li>
+      <li>
+        <a href="http://oracc.museum.upenn.edu/cdli/P228377/image" target="_blank">photo</a>
+      </li>
+      <li>
+        <a href="http://oracc2.museum.upenn.edu/dcclt/P228377/html">Print text</a>
+      </li>
+      <li>
+        <a target="_blank" href="/dcclt/P228377/cuneify">Cuneified</a>
+      </li>
+    </ul>
+    <h3 class="h3">Details</h3>
+    <ul>
+      <li>Old Babylonian</li>
+      <li>Nippur</li>
+      <li>Lexical</li>
+      <li>OB Nippur Ea</li>
+    </ul>
+    <h3 class="h3">Bibliography</h3>
+    <p>Veldhuis EEN 300</p>
+  </div>
+</div>
+</div>
+  <div id="p4XtfData"><div xmlns="http://www.w3.org/1999/xhtml" xmlns:dc="http://dublincore.org/documents/2003/06/02/dces/" class="text" dc:title="dcclt P228377"><!--config-xml-file = /home/oracc/xml/dcclt/config.xml--><h1 class="p3h2 border-top heading"><a href="http://cdli.earth/P228377" target="_blank">N 5133 (MSL 14, 027 Jh) [OB Nippur Ea]</a><span class="via">[via dcclt]</span></h1><table class="transliteration"><tr class="l p3"><td class="lnum"> </td><td class="tlit"> </td><td> </td><td> </td></tr><tr id="P228377.o.2" class="h surface"><td colspan="3"><span class="h2 ">Obverse</span></td></tr><tr id="P228377.3" class="nonl-initial"><td class="lnum "><span class="xlabel ">o</span><span class="lnum ">o </span></td><td colspan="3" class="nonlbody"><span class="noncl ">OB Nippur Ea</span></td></tr><tr id="P228377.4" class="nonl-final"><td class="nonlnum "/><td colspan="3" class="nonlbody"><span class="noncl ">single ruling between each line</span></td></tr><tr id="P228377.5" class="nonl"><td class="nonlnum "/><td colspan="3" class="nonlbody"><span class="noncl "> (beginning column missing)</span></td></tr><tr id="P228377.6" class="l"><td class="lnum "><a class=" " name="a.P228377.6" href="javascript://" onclick="act_block(event)" data-bprj="dcclt" data-btxt="Q000055" data-bloc="sb.Q000055.769"><span class="xlabel ">o 1'</span><span class="lnum ">o 1'</span></a></td><td class="c "><p class=" "><span class="sv ">[[<span class="w sux V/t " x="1" id="P228377.6.1" title="zur[take care of//to take care of]V/t'V/t$zur/zur#~"><a class="cbd " href="javascript://" onclick="act_wsig(event)" data-wsig="☣@dcclt%sux:zur=zur[take care of//to take care of]V/t´V/t$zur/zur#~"><span class="sux " x="3">zur</span></a></span>&gt;
+	  ]] </span></p></td><td class="c "><p class=" "><span class="pr "><span class="sux ">[</span>*<span class="sux ">]</span>  <span class="w sux  " x="1" id="P228377.6.2"><span class="sux ">⸢</span><span class="sux " x="3">x</span><sup class="sux ">?</sup><span class="sux ">⸣</span>-<span class="sux " x="3">ur₂</span></span></span></p></td><td class="c"><p><span class="sg "><span class="w sux  " x="1" id="P228377.6.3"><span class="sux ">[</span><span class="sign  ">AMAR</span><span class="sux ">]</span></span></span></p></td></tr><tr id="P228377.7" class="l"><td class="lnum "><a class=" " name="a.P228377.7" href="javascript://" onclick="act_block(event)" data-bprj="dcclt" data-btxt="Q000055" data-bloc="sb.Q000055.768"><span class="xlabel ">o 2'</span><span class="lnum ">2'</span></a></td><td class="c "><p class=" "><span class="sv ">[[<span class="w sux NOUN " x="1" id="P228377.7.1" title="amar[young//young, youngster, chick]N'N$amar/amar#~"><a class="cbd " href="javascript://" onclick="act_wsig(event)" data-wsig="☣@dcclt%sux:amar=amar[young//young, youngster, chick]N´N$amar/amar#~"><span class="sux " x="3">amar</span></a></span>&gt;
+	  ]] </span></p></td><td class="c "><p class=" "><span class="pr "><span class="sux ">[</span>*<span class="sux ">]</span>  <span class="w sux  " x="1" id="P228377.7.2"><span class="sux ">⸢</span><span class="sux " x="3">a</span><span class="sux ">⸣</span>-<span class="sux " x="3">ma</span>-<span class="sux ">⸢</span><span class="sux " x="3">ar</span><span class="sux ">⸣</span></span></span></p></td><td class="c"><p><span class="sg "><span class="w sux  " x="1" id="P228377.7.3"><span class="sux ">⸢</span><span class="sign  ">AMAR</span><span class="sux ">⸣</span></span></span></p></td></tr><tr id="P228377.8" class="l"><td class="lnum "><a class=" " name="a.P228377.8" href="javascript://" onclick="act_block(event)" data-bprj="dcclt" data-btxt="Q000055" data-bloc="sb.Q000055.770"><span class="xlabel ">o 3'</span><span class="lnum ">3'</span></a></td><td class="c "><p class=" "><span class="sv ">[[<span class="w sux V/t " x="1" id="P228377.8.1" title="zur[take care of//to take care of]V/t'V/t$zur/zur-zur#~"><a class="cbd " href="javascript://" onclick="act_wsig(event)" data-wsig="☣@dcclt%sux:zur-zur=zur[take care of//to take care of]V/t´V/t$zur/zur-zur#~"><span class="sux " x="3">zur</span>-<span class="sux " x="3">zur</span></a></span>&gt;
+	  ]] </span></p></td><td class="c "><p class=" "><span class="pr "><span class="sux ">[</span>*<span class="sux ">]</span>  <span class="w sux  " x="1" id="P228377.8.2"><span class="sux ">⸢</span><span class="sux " x="3">zu</span><sup class="sux ">?</sup>-<span class="sux " x="3">ur</span><span class="sux ">⸣</span>-<span class="sux " x="3">zu</span>-<span class="sux " x="3">ur</span></span></span></p></td><td class="c"><p><span class="sg "><span class="w sux  " x="1" id="P228377.8.3"><span class="sign  ">AMAR</span>-<span class="sign  ">AMAR</span></span> </span></p></td></tr><tr id="P228377.9" class="l"><td class="lnum "><a class=" " name="a.P228377.9" href="javascript://" onclick="act_block(event)" data-bprj="dcclt" data-btxt="Q000055" data-bloc="sb.Q000055.771"><span class="xlabel ">o 4'</span><span class="lnum ">4'</span></a></td><td class="c "><p class=" "><span class="sv ">[[<span class="w sux NOUN " x="1" id="P228377.9.1" title="siškur[prayer//prayer, blessing]N'N$siškur/siškur₂#~"><a class="cbd " href="javascript://" onclick="act_wsig(event)" data-wsig="☣@dcclt%sux:siškur₂=siškur[prayer//prayer, blessing]N´N$siškur/siškur₂#~"><span class="sux " x="3">siškur₂</span></a></span>&gt;
+	  ]] </span></p></td><td class="c "><p class=" "><span class="pr "><span class="sux ">[</span>*<span class="sux ">]</span>  <span class="w sux  " x="1" id="P228377.9.2"><span class="sux ">⸢</span><span class="sux " x="3">si₂</span><span class="sux ">⸣</span>-<span class="sux " x="3">iš</span>-<span class="sux " x="3">ku</span>-<span class="sux " x="3">ur</span></span></span></p></td><td class="c"><p><span class="sg "><span class="w sux  " x="1" id="P228377.9.3"><span class="compound "><span class="sign  ">AMAR</span>×<span class="sign  ">ŠE</span>.<span class="sign  ">AMAR</span>×<span class="sign  ">ŠE</span></span></span></span></p></td></tr><tr id="P228377.10" class="l"><td class="lnum "><a class=" " name="a.P228377.10" href="javascript://" onclick="act_block(event)" data-bprj="dcclt" data-btxt="Q000055" data-bloc="sb.Q000055.772"><span class="xlabel ">o 5'</span><span class="lnum ">5'</span></a></td><td class="c "><p class=" "><span class="sv ">[[<span class="w sux V/i " x="1" id="P228377.10.1" title="nim[high//(to be) high, elevated]V/i'V/i$nim/nim#~"><a class="cbd " href="javascript://" onclick="act_wsig(event)" data-wsig="☣@dcclt%sux:nim=nim[high//(to be) high, elevated]V/i´V/i$nim/nim#~"><span class="sux " x="3">nim</span></a></span>&gt;
+	  ]] </span></p></td><td class="c "><p class=" "><span class="pr "><span class="sux ">[</span>*<span class="sux ">]</span>  <span class="w sux  " x="1" id="P228377.10.2"><span class="sux ">⸢</span><span class="sux " x="3">ni</span>-<span class="sux " x="3">im</span><span class="sux ">⸣</span></span></span></p></td><td class="c"><p><span class="sg "><span class="w sux  " x="1" id="P228377.10.3"><span class="sux ">⸢</span><span class="sign  ">NIM</span><span class="sux ">⸣</span></span></span></p></td></tr><tr id="P228377.r.11" class="h surface"><td colspan="3"><span class="h2 ">Reverse</span></td></tr><tr id="P228377.r.i.12" class="h column"><td colspan="3"><span class="h2 ">Column i</span></td></tr><tr id="P228377.13" class="nonl"><td class="lnum "><span class="xlabel ">r i</span><span class="lnum ">r i </span></td><td colspan="3" class="nonlbody"><span class="noncl "> (traces of 1 line)</span></td></tr><tr id="P228377.14" class="l"><td class="lnum "><a class=" " name="a.P228377.14" href="javascript://" onclick="act_block(event)" data-bprj="dcclt" data-btxt="Q000039" data-bloc="sb.Q000039.121"><span class="xlabel ">r i 2'</span><span class="lnum ">2'</span></a></td><td class="tlit"><p class="tt"><span class="tx "><span class="w sux  " x="1" id="P228377.14.1"><span class="sux ">⸢</span><span class="sux " x="3">ŋeš</span><span class="sux ">⸣</span></span> <span class="w sux  " x="1" id="P228377.14.2"><span class="sux " x="3">ki</span>-<span class="sux " x="3">ta</span>-<span class="r ">[...<span class="sux ">]</span></span></span></span></p></td></tr><tr id="P228377.15" class="l"><td class="lnum "><a class=" " name="a.P228377.15" href="javascript://" onclick="act_block(event)" data-bprj="dcclt" data-btxt="Q000039" data-bloc="sb.Q000039.123"><span class="xlabel ">r i 3'</span><span class="lnum ">3'</span></a></td><td class="tlit"><p class="tt"><span class="tx "><span class="w sux  " x="1" id="P228377.15.1"><span class="sux " x="3">ŋeš</span></span> <span class="w sux  " x="1" id="P228377.15.2"><span class="sux " x="3">niŋ₂</span>-<span class="sux " x="3">ki</span>-<span class="sux " x="3">luḫ</span>-<span class="r ">[...<span class="sux ">]</span></span></span></span></p></td></tr><tr id="P228377.16" class="l"><td class="lnum "><a class=" " name="a.P228377.16" href="javascript://" onclick="act_block(event)" data-bprj="dcclt" data-btxt="Q000039" data-bloc="sb.Q000039.124"><span class="xlabel ">r i 4'</span><span class="lnum ">4'</span></a></td><td class="tlit"><p class="tt"><span class="tx "><span class="w sux  " x="1" id="P228377.16.1"><span class="sux " x="3">ŋeš</span></span> <span class="w sux  " x="1" id="P228377.16.2"><span class="sux " x="3">niŋ₂</span>-<span class="sux " x="3">ŋa₂</span>-<span class="sux " x="3">nimbar</span></span></span></p></td></tr><tr id="P228377.17" class="l"><td class="lnum "><a class=" " name="a.P228377.17" href="javascript://" onclick="act_block(event)" data-bprj="dcclt" data-btxt="Q000039" data-bloc="sb.Q000039.125"><span class="xlabel ">r i 5'</span><span class="lnum ">5'</span></a></td><td class="tlit"><p class="tt"><span class="tx "><span class="w sux  " x="1" id="P228377.17.1"><span class="sux " x="3">ŋeš</span></span> <span class="w sux  " x="1" id="P228377.17.2"><span class="sux " x="3">peš</span>-<span class="r ">[...<span class="sux ">]</span></span></span></span></p></td></tr><tr id="P228377.18" class="l"><td class="lnum "><a class=" " name="a.P228377.18" href="javascript://" onclick="act_block(event)" data-bprj="dcclt" data-btxt="Q000039" data-bloc="sb.Q000039.126"><span class="xlabel ">r i 6'</span><span class="lnum ">6'</span></a></td><td class="tlit"><p class="tt"><span class="tx "><span class="w sux  " x="1" id="P228377.18.1"><span class="sux " x="3">ŋeš</span></span> <span class="w sux  " x="1" id="P228377.18.2"><span class="sux " x="3">peš</span>-<span class="sux " x="3">murgu</span>-<span class="r ">[...<span class="sux ">]</span></span></span></span></p></td></tr><tr id="P228377.19" class="l"><td class="lnum "><a class=" " name="a.P228377.19" href="javascript://" onclick="act_block(event)" data-bprj="dcclt" data-btxt="Q000039" data-bloc="sb.Q000039.127"><span class="xlabel ">r i 7'</span><span class="lnum ">7'</span></a></td><td class="tlit"><p class="tt"><span class="tx "><span class="w sux  " x="1" id="P228377.19.1"><span class="sux " x="3">ŋeš</span></span> <span class="w sux  " x="1" id="P228377.19.2"><span class="sux " x="3">peš</span>-<span class="sux " x="3">banda₃</span>-<span class="r ">[...<span class="sux ">]</span></span></span></span></p></td></tr><tr id="P228377.r.ii.20" class="h column"><td colspan="3"><span class="h2 ">Column ii</span></td></tr><tr id="P228377.21" class="l"><td class="lnum "><a class=" " name="a.P228377.21" href="javascript://" onclick="act_block(event)" data-bprj="dcclt" data-btxt="Q000039" data-bloc="sb.Q000039.165"><span class="xlabel ">r ii 1'</span><span class="lnum ">r ii 1'</span></a></td><td class="tlit"><p class="tt"><span class="tx "><span class="w sux  " x="1" id="P228377.21.1"><span class="r ">[...<span class="sux ">]</span>-</span><span class="sux " x="3">kud</span></span></span></p></td></tr><tr id="P228377.22" class="l"><td class="lnum "><a class=" " name="a.P228377.22" href="javascript://" onclick="act_block(event)" data-bprj="dcclt" data-btxt="Q000039" data-bloc="sb.Q000039.167"><span class="xlabel ">r ii 2'</span><span class="lnum ">2'</span></a></td><td class="tlit"><p class="tt"><span class="tx "><span class="w sux  " x="1" id="P228377.22.1"><span class="r ">[...<span class="sux ">]</span>-</span><span class="sux " x="3">lum</span></span></span></p></td></tr><tr id="P228377.23" class="l"><td class="lnum "><a class=" " name="a.P228377.23" href="javascript://" onclick="act_block(event)" data-bprj="dcclt" data-btxt="Q000039" data-bloc="sb.Q000039.169"><span class="xlabel ">r ii 3'</span><span class="lnum ">3'</span></a></td><td class="tlit"><p class="tt"><span class="tx "><span class="w sux  " x="1" id="P228377.23.1"><span class="r ">[...<span class="sux ">]</span></span></span> <span class="w sux  " x="1" id="P228377.23.2"><span class="compound "><span class="sign  ">LAGAB</span>×<span class="sign  ">A</span></span>-<span class="sux " x="3">da</span></span></span></p></td></tr><tr id="P228377.24" class="l"><td class="lnum "><a class=" " name="a.P228377.24" href="javascript://" onclick="act_block(event)" data-bprj="dcclt" data-btxt="Q000039" data-bloc="sb.Q000039.170"><span class="xlabel ">r ii 4'</span><span class="lnum ">4'</span></a></td><td class="tlit"><p class="tt"><span class="tx "><span class="w sux  " x="1" id="P228377.24.1"><span class="r ">[...<span class="sux ">]</span></span></span> <span class="w sux  " x="1" id="P228377.24.2"><span class="sux " x="3">dib</span>-<span class="sux " x="3">dib</span></span></span></p></td></tr><tr id="P228377.25" class="l"><td class="lnum "><a class=" " name="a.P228377.25" href="javascript://" onclick="act_block(event)" data-bprj="dcclt" data-btxt="Q000039" data-bloc="sb.Q000039.171"><span class="xlabel ">r ii 5'</span><span class="lnum ">5'</span></a></td><td class="tlit"><p class="tt"><span class="tx "><span class="w sux  " x="1" id="P228377.25.1"><span class="r ">[...<span class="sux ">]</span></span></span> <span class="w sux  " x="1" id="P228377.25.2"><span class="sux " x="3">u₅</span></span></span></p></td></tr><tr id="P228377.26" class="l"><td class="lnum "><a class=" " name="a.P228377.26" href="javascript://" onclick="act_block(event)" data-bprj="dcclt" data-btxt="Q000039" data-bloc="sb.Q000039.176"><span class="xlabel ">r ii 6'</span><span class="lnum ">6'</span></a></td><td class="tlit"><p class="tt"><span class="tx "><span class="w sux  " x="1" id="P228377.26.1"><span class="r ">[...<span class="sux ">]</span></span></span> <span class="w sux  " x="1" id="P228377.26.2"><sup class="sux ">d</sup><span class="sux " x="3">ḫa</span>-<span class="sux " x="3">ia₃</span></span></span></p></td></tr></table><div class="p3notes"><p/></div><hr class="credits"/><p/></div></div>
+  
+  
+</div>
+
+    </div>
+  </div>
+  <div id="p4Footer">
+    
+
+  </div>
+</div>
+</body>
+</html>

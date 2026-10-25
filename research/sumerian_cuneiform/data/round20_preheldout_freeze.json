@@ -1,0 +1,10 @@
+{
+  "created_at": "2026-10-25T12:31:17.258280+05:00",
+  "heldout_pixels_opened": false,
+  "records": {
+    "round20_protocol.json": "5b98de32f4b6e5793ea4051b300876dff01627c2a0c6b32bdd9d25320bbdeeb3",
+    "round20_pilot_regions.json": "29ae4c204ea0c5fdae2c19eefa9fc2b2d647740a4123ceeed187f1a5d679c57c",
+    "round20_development_observations.json": "16687d0e33f190f9ece5dc3307ad060c39aa2f8dc9971aca8901c094b44e79ff",
+    "round20_heldout_criteria.json": "1ae59463a3a65c4d683fc4b872fe3d50ebd89207bde5f8d200b68a8f9df4997f"
+  }
+}

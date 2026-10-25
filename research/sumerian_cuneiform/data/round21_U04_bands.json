@@ -1,0 +1,112 @@
+[
+  {
+    "id": "F01",
+    "box_xywh": [
+      220,
+      225,
+      400,
+      143
+    ],
+    "surface": "upper main view",
+    "unit": "photographic band, not proven line/word"
+  },
+  {
+    "id": "F02",
+    "box_xywh": [
+      220,
+      370,
+      400,
+      59
+    ],
+    "surface": "upper main view",
+    "unit": "photographic band, not proven line/word"
+  },
+  {
+    "id": "F03",
+    "box_xywh": [
+      220,
+      431,
+      400,
+      75
+    ],
+    "surface": "upper main view",
+    "unit": "photographic band, not proven line/word"
+  },
+  {
+    "id": "F04",
+    "box_xywh": [
+      220,
+      508,
+      400,
+      71
+    ],
+    "surface": "upper main view",
+    "unit": "photographic band, not proven line/word"
+  },
+  {
+    "id": "F05",
+    "box_xywh": [
+      220,
+      582,
+      400,
+      57
+    ],
+    "surface": "upper main view",
+    "unit": "photographic band, not proven line/word"
+  },
+  {
+    "id": "F06",
+    "box_xywh": [
+      220,
+      642,
+      400,
+      60
+    ],
+    "surface": "upper main view",
+    "unit": "photographic band, not proven line/word"
+  },
+  {
+    "id": "B01",
+    "box_xywh": [
+      235,
+      922,
+      390,
+      186
+    ],
+    "surface": "lower main view",
+    "unit": "photographic band, not proven line/word"
+  },
+  {
+    "id": "B02",
+    "box_xywh": [
+      235,
+      1111,
+      390,
+      75
+    ],
+    "surface": "lower main view",
+    "unit": "photographic band, not proven line/word"
+  },
+  {
+    "id": "B03",
+    "box_xywh": [
+      235,
+      1189,
+      390,
+      64
+    ],
+    "surface": "lower main view",
+    "unit": "photographic band, not proven line/word"
+  },
+  {
+    "id": "B04",
+    "box_xywh": [
+      235,
+      1255,
+      390,
+      78
+    ],
+    "surface": "lower main view",
+    "unit": "photographic band, not proven line/word"
+  }
+]

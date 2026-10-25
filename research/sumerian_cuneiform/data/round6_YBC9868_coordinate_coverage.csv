@@ -1,0 +1,329 @@
+coordinate,present_in_cdli,present_in_oracc,cdli_text,oracc_row,oracc_sumerian,oracc_akkadian
+i 1,1,1,sag = %a a-wi-lum,P310404.2,saŋ,a-wi-lum
+i 10,1,1,[sag-(x)-x] = %a x#-x#-x#,P310404.11,[saŋ-(x)-x],⸢x-x-x⸣
+i 11,1,1,[sag] kesz2?# = %a ri-ik?#-su?#,P310404.12,[saŋ] ⸢keš₂{?}⸣,ri-⸢ik{?}-su{?}⸣
+i 12,1,1,[sag-x]-tar-x = %a mu?#-un?#-x#,P310404.13,[saŋ-x]-tar-x,⸢mu{?}-un{?}-x⸣
+i 13,1,1,[sag] il2#-la = %a an-du-na#-nu#,P310404.14,[saŋ] ⸢il₂⸣-la,an-du-⸢na-nu⸣
+i 14,1,1,[sag il2]-la#-gu10-sze3 = %a a-na-di-na#-ni#-a,P310404.15,[saŋ il₂]-⸢la⸣-ŋu₁₀-še₃,a-na-di-⸢na-ni⸣-a
+i 15,1,1,[sag il2]-la#-zu-sze3,P310404.16,[saŋ il₂]-⸢la⸣-zu-še₃,
+i 16,1,1,[sag il2-la-a]-ni#-sze3,P310404.17,[saŋ il₂-la-a]-⸢ni⸣-še₃,
+i 17,1,1,sag#-[...],P310404.18,⸢saŋ⸣-[...],
+i 18,1,1,sag#-[...],P310404.19,⸢saŋ⸣-[...],
+i 19,1,1,sag#-[...]-x#,P310404.20,⸢saŋ⸣-[...]-⸢x⸣,
+i 2,1,1,sag = %a re#-[e]-szum#,P310404.3,saŋ,⸢re⸣-[e]-⸢šum⸣
+i 20,1,1,sag#-[...] = %a [...]-x#,P310404.21,⸢saŋ⸣-[...],[...]-⸢x⸣
+i 21,1,1,sag#-[...] = %a [...],P310404.22,⸢saŋ⸣-[...],[...]
+i 22,1,1,sag#-[...] = %a [...]-bu,P310404.23,⸢saŋ⸣-[...],[...]-bu
+i 23,1,1,sag# [x]-ga?# = %a x#-x#-bu,P310404.24,⸢saŋ⸣ [x]-⸢ga{?}⸣,⸢x-x⸣-bu
+i 24,1,1,sag# gid2#-i = %a sza-ra-rum,P310404.25,⸢saŋ gid₂⸣-i,ša-ra-rum
+i 25,1,1,sag# [gid2-gid2]-i = %a szi-ta-ru-rum,P310404.26,⸢saŋ⸣ [gid₂-gid₂]-i,ši-ta-ru-rum
+i 26,1,1,sag-ki = %a zi-mu,P310404.27,saŋ-ki,zi-mu
+i 27,1,1,sag-ki = %a pa-nu,P310404.28,saŋ-ki,pa-nu
+i 28,1,1,sag-ki = %a hi-di-ir-tum,P310404.29,saŋ-ki,ḫi-di-ir-tum
+i 29,1,1,sag-ki = %a sak-ku-u2,P310404.30,saŋ-ki,sak-ku-u₂
+i 3,1,1,sag#,P310404.4,⸢saŋ⸣,
+i 30,1,1,sag-ki = %a pu-tum,P310404.31,saŋ-ki,pu-tum
+i 31,1,1,sag# gid2 = %a a-ri-ik-tum,P310404.33,⸢saŋ⸣ gid₂,a-ri-ik-tum
+i 32,1,1,sag# [(x)]-x# = %a e-bi-it-tum,P310404.34,⸢saŋ⸣ [(x)]-⸢x⸣,e-bi-it-tum
+i 33,1,1,[sag] du3# = %a |SAG.KAK|,P310404.35,[saŋ] ⸢du₃⸣,SAG.DU₃
+i 34,1,1,[sag sur]-sur# = %a bu-szu-mu,P310404.36,[saŋ sur]-⸢sur⸣,bu-šu-mu
+i 35,1,1,[sag x-x]-x#,P310404.37,[saŋ x-x]-⸢x⸣,
+i 36,1,1,sag [gun3-na?] = %a bu?#-ru?#-mu,P310404.38,saŋ [gun₃-nu/na{?}],⸢bu{?}-ru{?}⸣-mu
+i 37,1,1,sag-du = %a qa2#-qa2#-du,P310404.39,saŋ-du,⸢qa₂-qa₂⸣-du
+i 38,1,1,sag sze-gin7 = %a x#-[...],P310404.40,saŋ še-gin₇,⸢x⸣-[...]
+i 39,1,1,sag tab-be2 = %a u2-x#-[...],P310404.41,saŋ tab-be₂,u₂-⸢x⸣-[...]
+i 4,1,1,sag# = %a qa2-qa2#-dum#,P310404.5,⸢saŋ⸣,qa₂-⸢qa₂-dum⸣
+i 40,1,1,sag szu#-tab-be2 = %a szu-ta-pu#-um#,P310404.42,saŋ ⸢šu⸣-tab-be₂,šu-ta-⸢pu-um⸣
+i 41,1,1,sag nigin,P310404.43,saŋ niŋin,
+i 42,1,1,sag szu-nigin2,P310404.44,saŋ šu-niŋin₂,
+i 43,1,1,sag-kal = %a sak-kal-lum#,P310404.45,saŋ-kal,sak-kal-⸢lum⸣
+i 44,1,1,sag-kal = %a a-sza-re-du,P310404.46,saŋ-kal,a-ša-re-du
+i 45,1,1,sag gigi,P310404.47,saŋ gigi,
+i 46,1,1,sag gi4-a = %a <mu>-wi-i-rum,P310404.48,saŋ gi₄-a,<mu>-wi-i-rum
+i 47,1,1,sag gi4-a = %a sa-ak-lum,P310404.49,saŋ gi₄-a,sa-ak-lum
+i 48,1,1,sag gi4-a = %a pe-hu-u2,P310404.50,saŋ gi₄-a,pe-ḫu-u₂
+i 49,1,1,sag rig7-ga = %a re-esz szi-ri-ik-tim,P310404.52,saŋ rig₇-ga,re-eš ši-ri-ik-tim
+i 5,1,1,[sag-(x)],P310404.6,[saŋ-(x)],
+i 50,1,1,sag a-ri-a = %a re-esz szi-ri-ik-ti,P310404.53,saŋ a-ri-a,re-eš ši-ri-ik-ti
+i 51,1,1,sag ama#-ar-gi4 = %a re-esz an-du-ra-ri,P310404.54,saŋ ⸢ama⸣-ar-gi₄,re-eš an-du-ra-ri
+i 52,1,1,sag-nim#-nim = %a sza-wa-nu,P310404.55,saŋ-⸢nim⸣-nim,ša-wa-nu
+i 53,1,1,"sag-nigin# = %a s,i-da-nu",P310404.56,saŋ-⸢niŋin⸣,ṣi-da-nu
+i 54,1,1,sag u4-sakar = %a re-esz |UDxU+U+U|,P310404.57,saŋ u₄-sakar,re-eš ITI
+i 55,1,1,sag-ba-a = %a ma-mi-tum,P310404.58,saŋ-ba-a,ma-mi-tum
+i 56,1,1,sag bur2 = %a di-um,P310404.59,saŋ bur₂,di-um
+i 57,1,1,sag sukud-da = %a za-aq-rum,P310404.60,saŋ sukud-da,za-aq-rum
+i 58,1,1,sag ib2-ba-ak = %a u2-ru-ru,P310404.61,saŋ ib₂-ba ak,u₂-ru-ru
+i 59,1,1,sag |DU.DU|-[x] = %a szi-ta-pu,P310404.62,saŋ DU.DU-[x],ši-ta-pu
+i 6,1,1,[sag] us2#,P310404.7,[saŋ] ⸢us₂⸣,
+i 60,1,1,[sag] du10#-us2-sa = %a |SAG.[X].TUG2|,P310404.63,[saŋ] ⸢du₁₀⸣-us₂-sa,SAG.X.TUG₂
+i 61,1,1,[...] = %a [...]-ma-ab-tum#,P310404.64,[...],[...]-ma-ab-⸢tum⸣
+i 7,1,1,[sag] us2# = %a ka-a-a-nu,P310404.8,[saŋ] ⸢us₂⸣,ka-a-a-nu
+i 8,1,1,[sag-ur]-sag?#,P310404.9,[saŋ-ur]-⸢saŋ{?}⸣,
+i 9,1,1,[sag-ur-sag] = %a as#-si2-nu,P310404.10,[saŋ-ur-saŋ],⸢as⸣-si₂-nu
+i kappa,0,1,,P310404.51,saŋ ri-a,tu-⸢x-x⸣
+i theta,0,1,,P310404.32,saŋ-ki-gud,
+ii 1,1,1,sag [(x)-x]-ak? = %a szu-x#-lum,P310404.66,saŋ [(x)-x]-ak{?},šu-⸢x⸣-lum
+ii 10,1,1,[sag x]-x#-x# = %a x#-ru-du-du#,P310404.75,[saŋ x]-⸢x-x⸣,⸢x⸣-ru-du-⸢du⸣
+ii 11,1,1,szu ur4-ur4 = %a usz-szu-szum,P310404.78,šu ur₄-ur₄,uš-šu-šum
+ii 12,1,1,sag zi = %a ki-it-tum,P310404.79,saŋ zid,ki-it-tum
+ii 13,1,1,sag zi = %a a-sza-re-du,P310404.80,saŋ zi,a-ša-re-du
+ii 14,1,1,sag men nu-du7 = %a <...> la wa-as-mu,P310404.81,saŋ men nu-du₇,<...> la wa-as-mu
+ii 15,1,1,sag bar gun3 = %a szi-it-ha-rum,P310404.82,saŋ bar gun₃,ši-it-ḫa-rum
+ii 16,1,1,sag gun3-gun3 = %a szi-it-ha-rum,P310404.83,saŋ gun₃-gun₃,ši-it-ḫa-rum
+ii 17,1,1,sag igi gun3 = %a ti-qu2-u2,P310404.84,saŋ igi gun₃,ti-qu₂-u₂
+ii 18,1,1,sag sig3-ga = %a sza-bu,P310404.85,saŋ sig₃-ga,ša-bu
+ii 19,1,1,sag sikil = %a el-le-tum,P310404.86,saŋ sikil,el-le-tum
+ii 2,1,1,sag# [(x)-x]-ak = %a sza-di#-du,P310404.67,⸢saŋ⸣ [(x)-x]-ak,ša-⸢di⸣-du
+ii 20,1,1,sag sze ba = %a ma-hi-ir ip-ri,P310404.87,saŋ še ba,ma-ḫi-ir ip-ri
+ii 21,1,1,sag nu sze ba = %a la ma-hi-ir <ip-ri>,P310404.88,saŋ nu še ba,la ma-ḫi-ir <ip-ri>
+ii 22,1,1,sag szu bar-ra = %a re-esz wu-szu-ur-ti,P310404.89,saŋ šu bar-ra,re-eš wu-šu-ur-ti
+ii 23,1,1,sag us2 tum4 = %a USZ a-na SAG ba-ba-lum,P310404.90,saŋ us₂ tum₄,UŠ a-na SAG ba-ba-lum
+ii 24,1,1,sag nig2-de2-a = %a re-esz bi-ib-lim,P310404.91,saŋ niŋ₂-de₂-a,re-eš bi-ib-lim
+ii 25,1,1,sag szub-szub{ub}-ba = %a mu-uq-qu2-tum,P310404.92,saŋ šub-šub{ub}-ba,mu-uq-qu₂-tum
+ii 26,1,1,sag sa mu-tum = %a SAG USZ-tum ma-lu-u2,P310404.93,saŋ sa mu-tum,SAG UŠ-tum ma-lu-u₂
+ii 27,1,1,sag a-ba-kam = %a sza ma-an-ni-im,P310404.94,saŋ a-ba-kam,ša ma-an-ni-im
+ii 28,1,1,kiszi4-a ak = %a mu-ta-tum,P310404.97,kiši₄-a ak,mu-ta-tum
+ii 29,1,1,kirix(|KAxIM|) = %a ap-pu,P310404.98,kiriₓ(KA×IM),ap-pu
+ii 3,1,1,sag#-[...]-x# = %a nu DU x,P310404.68,⸢saŋ⸣-[...]-⸢x⸣,nu DU x
+ii 30,1,1,kirix(|KAxIM|) {ha-asz}hasz = %a ap-pu szi-ib-rum,P310404.99,kiriₓ(KA×IM) {ḫa}-{aš}ḫaš,ap-pu ši-ib-rum
+ii 31,1,1,kirix(|KAxIM|)-hasz = %a ki-il-tum,P310404.100,kiriₓ(KA×IM)-ḫaš,ki-il-tum
+ii 32,1,1,kirix(|KAxIM|) {ku-u4}ku5 = %a na-ak-su,P310404.101,kiriₓ(KA×IM) {ku}-{ud}kud,na-ak-su
+ii 33,1,1,"kirix(|KAxIM|) te-ga2 = %a u2-pa-t,u3",P310404.102,kiriₓ(KA×IM) teŋ₃-ŋa₂,u₂-pa-ṭu₃
+ii 34,1,1,kirix(|KAxIM|) si-il = %a e-em-rum,P310404.103,kiriₓ(KA×IM) si-il,e-em-rum
+ii 35,1,1,[kirix(|KAxIM|)] si-il-la2 = %a tu-sza-rum,P310404.104,[kiriₓ(KA×IM)] si-il-la₂,tu-ša-rum
+ii 36,1,1,[kirix(|KAxIM|)] ha-az = %a he-su-u2,P310404.105,[kiriₓ(KA×IM)] ḫa-az,ḫe-su-u₂
+ii 37,1,1,[kirix(|KAxIM|)] ha-an-du3 = %a hu-nu-nu,P310404.106,[kiriₓ(KA×IM)] ḫa-an-du₃,ḫu-nu-nu
+ii 38,1,1,[kirix(|KAxIM|)] nun di = %a na-asz-szi-szu,P310404.108,[kiriₓ(KA×IM)] nun di,na-aš-ši-šu
+ii 39,1,1,"[kirix(|KAxIM|)] hum = %a gi-in-ni-s,u2",P310404.109,[kiriₓ(KA×IM)] ḫum,gi-in-ni-ṣu₂
+ii 4,1,1,sag x#-gu7# ha-ha-za = %a mu-ki-il re-esz na-ap-ta-ni,P310404.69,saŋ ⸢x-gu₇⸣ ḫa-ḫa-za,mu-ki-il re-eš na-ap-ta-ni
+ii 40,1,1,[kirix(|KAxIM|)] {ku-uz}guz = %a hu-un-nu-nu,P310404.110,[kiriₓ(KA×IM)] {ku}-{uz}guz,ḫu-un-nu-nu
+ii 41,1,1,[kirix(|KAxIM|)]-dab5,P310404.111,[kiriₓ(KA×IM)]-dab₅,
+ii 42,1,1,inim = %a a-wa-tum,P310404.112,inim,a-wa-tum
+ii 43,1,1,inim# gar,P310404.113,⸢inim⸣ ŋar,
+ii 44,1,1,inim# gar# sag9-ga,P310404.114,⸢inim ŋar⸣ sag₉-ga,
+ii 45,1,1,inim# [gar] hul-a,P310404.115,⸢inim⸣ [ŋar] ḫul-a,
+ii 46,1,1,inim hul# dim2-ma = %a be#-el le-mu-ti,P310404.116,inim ⸢ḫul⸣ dim₂-ma,⸢be⸣-el le-mu-ti
+ii 47,1,1,"inim sig# = %a kar-s,u2",P310404.117,inim ⸢sig⸣,kar-ṣu₂
+ii 48,1,1,inim sig gu7#-gu7,P310404.118,inim sig ⸢gu₇⸣-gu₇,
+ii 49,1,1,inim-gal2-la# = %a i-nim-gal2#-lum#,P310404.119,inim-ŋal₂-⸢la⸣,i-nim-⸢gal₂-lum⸣
+ii 5,1,1,sag# [...]-x#,P310404.70,⸢saŋ⸣ [...]-⸢x⸣,
+ii 50,1,1,inim-gal2-la = %a ba-qi2-ra-nu#,P310404.120,inim-ŋal₂-la,ba-qi₂-ra-⸢nu⸣
+ii 51,1,1,inim gar-ra = %a ru-gu-mu-u2#,P310404.121,inim ŋar-ra,ru-gu-mu-⸢u₂⸣
+ii 52,1,1,inim tar = %a i-nim-ta-ru#,P310404.122,inim tar,i-nim-ta-⸢ru⸣
+ii 53,1,1,inim tar = %a te-el-tum,P310404.123,inim tar,te-el-tum
+ii 54,1,1,inim hul = %a qu3-lu-ul-tum,P310404.124,inim ḫul,qu₃-lu-ul-tum
+ii 55,1,1,inim hul = %a ma-si-ik-tum,P310404.125,inim ḫul,ma-si-ik-tum
+ii 56,1,1,($vacat$),P310404.126,(vašat),
+ii 57,1,1,inim gi-na,P310404.127,inim gin₆-na,
+ii 57a,1,1,inim sikil du3-a,P310404.128,inim sikil du₃-a,
+ii 58,1,1,inim si-sa2,P310404.129,inim si-sa₂,
+ii 58a,1,1,inim nu-si-sa2,P310404.130,inim nu-si-sa₂,
+ii 59,1,1,inim sag9-ga,P310404.131,inim sag₉-ga,
+ii 59a,1,1,inim x# us2-sa = %a PI-li-x#-[...],P310404.132,inim ⸢x⸣ us₂-sa,PI-li-⸢x⸣-[...]
+ii 6,1,1,sag# [...] = %a x#-x# re-szi x# nu-DU-szu,P310404.71,⸢saŋ⸣ [...],⸢x-x⸣ re-ši ⸢x⸣ nu-DU-šu
+ii 60,1,1,[inim ka]-ta# szub#-ba#,P310404.133,[inim ka]-⸢ta šub-ba⸣,
+ii 7,1,1,"sag# |A2?.KAL?| = %a ga-s,um",P310404.72,⸢saŋ⸣ A₂.KAL,ga-ṣum
+ii 8,1,1,sag# szu-UD-a = %a x#-[...]-lu-bu/pu,P310404.73,⸢saŋ⸣ šu-UD-a,⸢x⸣-[...]-lu-bu/pu
+ii 9,1,1,sag# SAR-[x] = %a x#-ru-DU,P310404.74,⸢saŋ⸣ SAR-[x],⸢x⸣-ru-DU
+ii epsilon₁,0,1,,P310404.95,[saŋ] ⸢si⸣-sa₂,re-šum i-ša-rum
+ii epsilon₂,0,1,,P310404.96,⸢saŋ⸣ nu si-sa₂,
+ii eta₁,0,1,,P310404.76,saŋ IB{?}-⸢x⸣,[...]-lu-u₂
+ii eta₂,0,1,,P310404.77,saŋ ur₄,šu-ur₂{?}-⸢rum⸣
+ii lambda₁,0,1,,P310404.107,kiriₓ(KA×IM) ḫar-mušen-na,
+iii 1,1,1,inim gal = %a x#-[...],P310404.135,inim gal,⸢x⸣-[...]
+iii 10,1,1,"inim du10-ga = %a a-wa-tum t,a-ab-tum",P310404.144,inim dug₃-ga,a-wa-tum ṭa-ab-tum
+iii 11,1,1,inim nu-du10-ga,P310404.145,inim nu-dug₃-ga,
+iii 12,1,1,inim kal-ga,P310404.146,inim kalag-ga,
+iii 13,1,1,ka = %a pu-u2,P310404.147,ka,pu-u₂
+iii 14,1,1,ka tar-re-a = %a pu-u2 wa-at-rum,P310404.148,ka tar-re-a,pu-u₂ wa-at-rum
+iii 15,1,1,ka tesz2-a si3-ke = %a szu-te-esz-mu-u2,P310404.149,ka teš₂-a si₃-ke,šu-te-eš-mu-u₂
+iii 16,1,1,"ka tesz2-a si3-ke = %a szu-te-s,u-u2",P310404.150,ka teš₂-a si₃-ke,šu-te-ṣu-u₂
+iii 17,1,1,ka-ta du11-ga = %a qi2-bi-it pi-i,P310404.151,ka-ta dug₄-ga,qi₂-bi-it pi-i
+iii 18,1,1,"ka-ta kar-ra = %a i-na pi-i e-t,e4-rum",P310404.152,ka-ta kar-ra,i-na pi-i e-ṭe₄-rum
+iii 19,1,1,ka-ba kesz2-kesz2,P310404.153,ka-ba keš₂-keš₂,
+iii 2,1,1,inim e2-gal = %a [...],P310404.136,inim e₂-gal,[...]
+iii 20,1,1,ka szu du3-du3 = %a pi-i ek-ke-mi-i,P310404.154,ka šu du₃-du₃,pi-i ek-ke-mi-i
+iii 21,1,1,ka szer7-da = %a pi-i ne2-er-tim,P310404.155,ka šer₇-da,pi-i ne₂-er-tim
+iii 22,1,1,ka szer7-da = %a pi-i sze-er-tim,P310404.156,ka šer₇-da,pi-i še-er-tim
+iii 23,1,1,ka nam-tag = %a pi-i an-nim,P310404.157,ka nam-tag,pi-i an-nim
+iii 24,1,1,ka zib2!(NINDA2) = %a pi-i szi-im-tim,P310404.158,ka zib₂{!}(NINDA₂),pi-i ši-im-tim
+iii 25,1,1,ka gir2-gir2 gal = %a pi-i zi-qi-it [pat]-ri!,P310404.159,ka ŋir₂-ŋir₂ gal,pi-i zi-qi-it [pat]-ri{!}
+iii 26,1,1,ka karasz = %a pi-i ka-ra#-szi#,P310404.160,ka karaš,pi-i ka-⸢ra-ši⸣
+iii 27,1,1,ka bala-e = %a mu-ta-wi x#-[x]-tum?#,P310404.161,ka bala-e,mu-ta-wi ⸢x⸣-[x]-⸢tum{?}⸣
+iii 28,1,1,ka bala nu-du7 = %a pu-u2 sza a-na [...],P310404.162,ka bala nu-du₇,pu-u₂ ša a-na [...]
+iii 29,1,1,ka bala nu-sag9,P310404.163,ka bala nu-sag₉,
+iii 3,1,1,inim bar-ra = %a x#-[...],P310404.137,inim bar-ra,⸢x⸣-[...]
+iii 30,1,1,ka bala nu-tum2 = %a la szu-lu-ku,P310404.164,ka bala nu-tum₂,la šu-lu-ku
+iii 31,1,1,ka lul-la bala-bala = %a mu-ta-wi sa3#-ra#-ti,P310404.165,ka lul-la bala-bala,mu-ta-wi ⸢sa₃-ra⸣-ti
+iii 32,1,1,ka szer11 nu-tuku,P310404.166,ka šer₁₁ nu-tuku,
+iii 33,1,1,ka gar = KA-GAL-DA-KU,P310404.167,ka ŋar,KA-GAL-DA-KU
+iii 34,1,1,ka ba = %a i-pi-isz pi-i,P310404.168,ka ba,i-pi-iš pi-i
+iii 35,1,1,ka tag4 = %a pi-it pi-i,P310404.169,ka tag₄,pi-it pi-i
+iii 36,1,1,ka-ta tag4 = %a u2-zu-ba-at pi-i,P310404.170,ka-ta tag₄,u₂-zu-ba-at pi-i
+iii 37,1,1,"ka sag du3-a = %a pi-i pi-it,-ri",P310404.171,ka saŋ du₃-a,pi-i pi-iṭ-ri
+iii 38,1,1,ka szur2-ra = %a pu-u2 ha-al-pu,P310404.172,ka šur₂-ra,pu-u₂ ḫa-al-pu
+iii 39,1,1,ka gur7 ka ki ka sig3 = %a pu-u2 at-lu-lu,P310404.173,ka gur₇ ka ki ka sig₃,pu-u₂ at-lu-lu
+iii 4,1,1,inim ki-si?#-ga = %a PI-[...],P310404.138,inim ki-⸢sig₉{?}⸣-ga,PI-[...]
+iii 40,1,1,ka {sa-ag}sag3 = %a pi-it pi-i,P310404.174,ka {sa}-{ag}sag₃,pi-it pi-i
+iii 41,1,1,ka udun-na = %a pi-i u2-tu-nim,P310404.175,ka udun-na,pi-i u₂-tu-nim
+iii 42,1,1,ka gir4 = %a pi-i ki-ri-im,P310404.176,ka gir₄,pi-i ki-ri-im
+iii 43,1,1,ka gal2 tag4-a = %a pu-u2 pe-tu-<u2>,P310404.177,ka ŋal₂ tag₄-a,pu-u₂ pe-tu-<u₂>
+iii 44,1,1,ka du8-a = %a pu-u2 pe-tu-u2,P310404.178,ka duḫ-a,pu-u₂ pe-tu-u₂
+iii 45,1,1,ka gesz-kesz2-da = %a pi-i ir-ri-ti,P310404.179,ka ŋeš-keš₂-da,pi-i ir-ri-ti
+iii 46,1,1,ka hab2 = %a pu-u2 bi-szu,P310404.180,ka ḫab₂,pu-u₂ bi-šu
+iii 47,1,1,ka zal{za-al} = %a pu-u2 mu-ta-lum,P310404.181,ka zal{za}-{al},pu-u₂ mu-ta-lum
+iii 48,1,1,ka gesz-gi = %a pi-i na-pa-ar-du-tim,P310404.182,ka ŋeš-gi,pi-i na-pa-ar-du-tim
+iii 49,1,1,{nun-du}nundun(|KAxNUN|) = %a sza-ap-tum,P310404.190,{nun}-{du}nundum(KA×NUN),ša-ap-tum
+iii 5,1,1,inim si3-ke = %a a-wa-x# [...],P310404.139,inim si₃-ke,a-wa-⸢x⸣ [...]
+iii 50,1,1,nundun hur = %a sza-ap-tum ka-bar-tum,P310404.191,nundum ḫur,ša-ap-tum ka-bar-tum
+iii 51,1,1,nundun an-na,P310404.192,nundum an-na,
+iii 52,1,1,nundun ki-ta,P310404.193,nundum ki-ta,
+iii 53,1,1,sun4(|KAxSA|) = %a zi-iq-nu,P310404.194,sum₄,zi-iq-nu
+iii 54,1,1,sun4 mu2 = %a da-ar-rum,P310404.195,sum₄ mu₂,da-ar-rum
+iii 55,1,1,sun4# TAR = %a ku-x#-[...],P310404.196,⸢sum₄⸣ TAR,ku-⸢x⸣-[...]
+iii 56,1,0,[...],,,
+iii 57,1,1,[nag ...] = %a [...],P310404.198,[naŋ ...],[...]
+iii 58,1,1,nag(|KAxA#|)?# [x-(x)] = %a [...],P310404.199,⸢naŋ(KA×A){?}⸣ [x-(x)],[...]
+iii 59,1,1,nag(|KAxA|)? [x-(x)] = %a [...],P310404.201,nag(KA×A){?} [x-(x)],[...]
+iii 6,1,1,inim du11-ga = %a qi2-bi#-tum#,P310404.140,inim dug₄-ga,qi₂-⸢bi-tum⸣
+iii 60,1,1,kab2-du11-[ga] = %a [...],P310404.202,kab₂-dug₄-[ga],[...]
+iii 61,1,1,bun2 = %a [...],P310404.203,bun₂,[...]
+iii 7,1,1,inim nu-du11-ga,P310404.141,inim nu-dug₄-ga,
+iii 8,1,1,inim gaba-ri = %a a-wa-at me-eh-ri,P310404.142,inim gaba-ri,a-wa-at me-eḫ-ri
+iii 9,1,1,inim diri = %a a-wa-tum wa-tar-tum,P310404.143,inim dirig,a-wa-tum wa-tar-tum
+iii alpha1,0,1,,P310404.183,⸢ka⸣ [...],[...]
+iii alpha10,0,1,,P310404.187,ka-tar,di-li-lu
+iii alpha11,0,1,,P310404.188,ka-tar si-il,di-li-lu da-la-lu
+iii alpha12,0,1,,P310404.189,ka-tar zig₃,qu₂-ur-du
+iii alpha2-7,0,1,,P310404.184,(broken),
+iii alpha8,0,1,,P310404.185,ka piriŋ-⸢ŋa₂⸣,[...]
+iii alpha9,0,1,,P310404.186,ka igi-ŠE,PI-[...]
+iii beta₁,0,1,,P310404.200,KA×A{?}-ti,la-ap-la-ap-tum
+iv 1,1,1,bun2 du11-[du11] = %a [...],P310404.205,bun₂ dug₄-[dug₄],[...]
+iv 10,1,1,gu3 de2#-a = %a sza-su#-u2#,P310404.214,gu₃ ⸢de₂⸣-a,ša-⸢su-u₂⸣
+iv 11,1,1,zu2 = %a szi-in#-nu#,P310404.215,zu₂,ši-⸢in-nu⸣
+iv 12,1,1,zu2 [gul]-gul# = %a [(x)]-x#-it-tum,P310404.216,zu₂ [gul]-⸢gul⸣,[(x)]-⸢x⸣-it-tum
+iv 13,1,1,zu2 [gul-gul] = %a ha-si-ir-tum,P310404.217,zu₂ [gul-gul],ḫa-si-ir-tum
+iv 14,1,1,"zu2# [bir9]-bir9# = %a s,u2-hu-um",P310404.218,⸢zu₂⸣ [bir₉]-⸢bir₉⸣,ṣu₂-ḫu-um
+iv 15,1,1,zu2 x#-[x] = %a zu-usz-szu,P310404.219,zu₂ ⸢x⸣-[x],zu-uš-šu
+iv 16,1,1,"zu2 LUM# = %a ga-na-s,u",P310404.220,zu₂ ⸢LUM⸣,ga-na-ṣu
+iv 17,1,1,zu2 [bala] = %a na-ba-al-ku-tum,P310404.221,zu₂ [bala],na-ba-al-ku-tum
+iv 18,1,1,zu2 [...] = %a [...],P310404.222,zu₂ [...],[...]
+iv 19,1,1,zu2 [...] = %a [...],P310404.223,zu₂ [...],[...]
+iv 2,1,1,usz11 = %a im#-tum#,P310404.206,uš₁₁,⸢im-tum⸣
+iv 20,1,1,zu2 [(x)]-x# = %a ru-ut-ta-tum,P310404.224,zu₂ [(x)]-⸢x⸣,ru-ut-ta-tum
+iv 21,1,1,zu2 [(gaz)]-gaz = %a he-pu-u2,P310404.225,zu₂ [(gaz)]-gaz,ḫe-pu-u₂
+iv 22,1,1,zu2 {na4}kinkin = %a e-ru-u2,P310404.226,zu₂ {na₄}kinkin,e-ru-u₂
+iv 23,1,1,zu2 mir-DU = %a sze-e-lum,P310404.227,zu₂ mir-ša₄,še-e-lum
+iv 24,1,1,zu2 [{ka]-ak}kak = %a ka-ak-kum,P310404.228,zu₂ [{ka}]-{ak}kak,ka-ak-kum
+iv 25,1,1,zu2 dub-dub = %a usz-szu-qa2-tum,P310404.230,zu₂ dub-dub,uš-šu-qa₂-tum
+iv 26,1,1,eme = %a li-sza-nu,P310404.231,eme,li-ša-nu
+iv 27,1,1,"[eme] sig = %a kar-s,u2",P310404.232,[eme] sig,kar-ṣu₂
+iv 28,1,1,"eme-sig-gu7-gu7 = %a a-ki-il kar-s,i",P310404.233,eme-sig-gu₇-gu₇,a-ki-il kar-ṣi
+iv 29,1,1,eme-bala = %a na-pa-al-tum,P310404.234,eme-bala,na-pa-al-tum
+iv 3,1,1,usz11 musz#,P310404.207,uš₁₁ ⸢muš⸣,
+iv 30,1,1,eme-gir15 = %a szu-we-rum,P310404.235,eme-gir₁₅,šu-we-rum
+iv 31,1,1,eme uri = %a ak-ka-dum,P310404.236,eme uri,ak-ka-dum
+iv 32,1,1,eme elam{ki} = %a e-lam-ti,P310404.237,eme elam{ki},e-lam-ti
+iv 33,1,1,eme mar-tu,P310404.238,eme mar-du₂,
+iv 34,1,1,eme su-bir5{ki},P310404.239,eme su-bir₅{ki},
+iv 35,1,1,eme sal = %a lu-ru-u2,P310404.240,eme sal,lu-ru-u₂
+iv 36,1,1,"eme dar-tar = %a ku-s,u2-rum",P310404.243,eme dar-tar,ku-ṣu₂-rum
+iv 37,1,1,eme ti na2 = %a e-me-ti-nu-um#,P310404.244,eme ti na₂,e-me-ti-nu-⸢um⸣
+iv 38,1,1,eme suh = %a e-me-su2-hu-du,P310404.245,eme suḫ,e-me-su₂-ḫu-du
+iv 39,1,1,eme nig2-ha-lam-ma = %a li-sza-an sza-ah-lu-uq-ti,P310404.246,eme niŋ₂-ḫa-lam-ma,li-ša-an ša-aḫ-lu-uq-ti
+iv 4,1,1,usz11 gir2-tab,P310404.208,uš₁₁ ŋir₂-tab,
+iv 40,1,1,eme dal-ha-mun = %a li-sza-an sa3-ah-masz-tim,P310404.247,eme dal-ḫa-mun,li-ša-an sa₃-aḫ-maš-tim
+iv 41,1,1,u6-nir = %a zi-qu2-ra-tum,P310404.249,u₆-nir,zi-qu₂-ra-tum
+iv 42,1,1,u6-di = %a tab-ri-a-tum,P310404.250,u₆-di,tab-ri-a-tum
+iv 43,1,1,u6 e = %a ba-ru-u2,P310404.251,u₆ e,ba-ru-u₂
+iv 44,1,1,kuru7 = %a pi-qi2-tum,P310404.252,kuru₇,pi-qi₂-tum
+iv 45,1,1,kuru7 ak# = %a pa#-qa2-du,P310404.253,kuru₇ ⸢ak⸣,⸢pa⸣-qa₂-du
+iv 46,1,1,"sag10 ak# = %a s,a#-ar-pu",P310404.254,sig₅ ⸢ak⸣,⸢ṣa⸣-ar-pu
+iv 47,1,1,igi hul# = %a pa#-nu lem-nu-tum,P310404.255,igi ⸢ḫul⸣,⸢pa⸣-nu lem-nu-tum
+iv 48,1,1,igi hul = %a pa-nu ma#-[as-ku]-tum,P310404.256,igi ḫul,pa-nu ⸢ma⸣-[as-ku]-tum
+iv 49,1,1,igi#-[...] = %a [...],P310404.257,⸢igi⸣-[...],[...]
+iv 5,1,1,gu3 = %a ri-ig-mu,P310404.209,gu₃,ri-ig-mu
+iv 50,1,1,igi#-[...] = %a [...],P310404.258,⸢igi⸣-[...],[...]
+iv 51,1,1,[...],P310404.259,[...],
+iv 52,1,1,[...],P310404.260,[...],
+iv 53,1,1,igi-[...] = %a [...],P310404.261,igi-[...],[...]
+iv 54,1,1,igi-[...] = %a [...],P310404.262,igi-[...],[...]
+iv 59,1,1,[igi-...] = %a [...]-lu-szu,P310404.264,[igi-...],[...]-lu-šu
+iv 6,1,1,gu3 ra-ra = %a ba?#-ka-u2?#,P310404.210,gu₃ raḫ₂-raḫ₂,⸢ba{?}⸣-ka-⸢u₂{?}⸣
+iv 60,1,1,[igi-...] = %a [...],P310404.265,[igi-...],[...]
+iv 61,1,1,[igi-...] = %a [...]-ru-u2,P310404.266,[igi-...],[...]-ru-u₂
+iv 62,1,1,[igi-...] = %a [...],P310404.267,[igi-...],[...]
+iv 63,1,1,[igi-...] = %a [...] i-nim,P310404.268,[igi-...],[...] i-nim
+iv 66,1,1,[igi-...] = %a [...]-lu-szu,P310404.269,[igi-...],[...]-lu-šu
+iv 7,1,1,gu3 ra-ah = %a tu-uk-kum#,P310404.211,gu₃ ra-aḫ,tu-uk-⸢kum⸣
+iv 8,1,1,gu3-{gesz}kiri6 = %a ik-ki-lum,P310404.212,gu₃-{ŋeš}kiri₆,ik-ki-lum
+iv 9,1,1,gu3 de2#-a = %a ik-ki-lum,P310404.213,gu₃ ⸢de₂⸣-a,ik-ki-lum
+iv delta₁,0,1,,P310404.241,eme gal,
+iv delta₂,0,1,,P310404.242,eme galam-ma,
+iv gamma₁,0,1,,P310404.229,zu₂ ḫur,e-se₂-qu₂
+iv zeta₁,0,1,,P310404.248,eme u₂-zu-ge,li-ša-an še-er-še-ri-im
+r.e. vi epsilon1,0,1,,P310404.329,[(egir) saŋ] ⸢si⸣ sa₂,re-šum i-ša-rum
+r.e. vi epsilon2,0,1,,P310404.330,⸢saŋ⸣ nu si sa₂,
+r.e. vi eta1,0,1,,P310404.332,egir saŋ-IB{?}-[x],[...]-lu-u₂
+r.e. vi eta2,0,1,,P310404.333,saŋ ur₄,šu-ur₂{?}-⸢rum⸣
+r.e. vi kappa1,0,1,,P310404.337,⸢saŋ⸣ gi₄-a,sak-lu
+r.e. vi kappa2,0,1,,P310404.338,saŋ ri-a,tu-⸢x-x⸣
+r.e. vi lambda1,0,1,,P310404.335,egir kiriₓ(KA×IM) ḫa-an-du₃,ḫu-nu-nu
+r.e. vi lambda2,0,1,,P310404.336,kiriₓ(KA×IM) ḫar-mušen-na,
+r.e. vi theta1,0,1,,P310404.334,saŋ-ki-gud,
+r.e. vi zeta1,0,1,,P310404.331,eme u₂-zu-ge,li-ša-an še-er-še-ri-im
+v 1,1,1,[igi-...] = %a [...],P310404.271,[igi-...],[...]
+v 10,1,1,igi gun3 = %a szi-it-ha-rum,P310404.280,igi gun₃,ši-it-ḫa-rum
+v 11,1,1,igi gun3-gun3 = %a szi-it-ha-rum,P310404.281,igi gun₃-gun₃,ši-it-ḫa-rum
+v 12,1,1,igi gun3-gun3 = %a ti-iq-qu2-u2,P310404.282,igi gun₃-gun₃,ti-iq-qu₂-u₂
+v 13,1,1,"igi tur = %a sza-t,u3-um",P310404.283,igi tur,ša-ṭu₃-um
+v 14,1,1,"igi tur# gid2-i = %a szi-t,u3-tum le-qu2-u2",P310404.284,igi ⸢tur⸣ gid₂-i,ši-ṭu₃-tum le-qu₂-u₂
+v 15,1,1,"igi du8 = %a na-t,a-lum",P310404.285,igi duḫ,na-ṭa-lum
+v 16,1,1,"igi nu-du8 = %a la na-t,a-lum",P310404.286,igi nu-duḫ,la na-ṭa-lum
+v 17,1,1,igi sza3-ba nu-gal2,P310404.287,igi šag₄-ba nu-ŋal₂,
+v 18,1,1,igi si4 = %a u2-ri-qum,P310404.288,igi su₄,u₂-ri-qum
+v 19,1,1,igi si4-si4 = %a i-na-an u2-ri-qa2-tum,P310404.289,igi su₄-su₄,i-na-an u₂-ri-qa₂-tum
+v 2,1,1,igi#-x#-x# = %a [...],P310404.272,⸢igi-x-x⸣,[...]
+v 20,1,1,igi ze2-ze2,P310404.290,igi ze₂-ze₂,
+v 21,1,1,igi gal-gal,P310404.291,igi gal-gal,
+v 22,1,1,igi tur-tur,P310404.292,igi tur-tur,
+v 23,1,1,igisztu = %a i-gi-esz-tu-u2,P310404.293,igištu,i-gi-eš-tu-u₂
+v 24,1,1,igisztu = %a a-sza-re-du,P310404.294,igištu,a-ša-re-du
+v 25,1,1,igisztu = %a a-lik mah-ra,P310404.295,igištu,a-lik maḫ-ra
+v 26,1,1,|IGI.DU| = %a an-du-na-nu,P310404.296,IGI.DU,an-du-na-nu
+v 27,1,1,igi suh3 = %a i-nu e-szi-tum,P310404.297,igi suḫ₃,i-nu e-ši-tum
+v 28,1,1,igi suh3-suh3 = %a i-na-an e-szi-a,P310404.298,igi suḫ₃-suḫ₃,i-na-an e-ši-a
+v 29,1,1,"igi gizzu la2 = %a i-in s,i-lim",P310404.299,igi ŋissu la₂,i-in ṣi-lim
+v 3,1,1,igi sig3-sig3 = %a [...],P310404.273,igi sig₃-sig₃,[...]
+v 30,1,1,igi dun3? LAGAB? du3-a = %a i-gi4#-[x]-du3?#-a i-nu sza i-na qup-pi-i na#-ad?#-nu,P310404.300,igi dun₃{?} LAGAB{?} du₃-a,i-⸢gi₄⸣-[x]-⸢du₃{?}⸣-a i-nu ša i-na qup-pi-i ⸢na-ad{?}⸣-nu
+v 31,1,1,igi-zag3 = %a igi-sak-ku,P310404.301,igi saŋ₅,igi-sak-ku
+v 32,1,1,igi zag3 = %a be2-rum,P310404.302,igi saŋ₅,be₂-rum
+v 33,1,1,igi zag3 = %a na-sa-qum,P310404.303,igi saŋ₅,na-sa-qum
+v 34,1,1,igi zag3-zag3 = %a nu-su2-qum,P310404.304,igi saŋ₅-saŋ₅,nu-su₂-qum
+v 35,1,1,igi si4-a = %a pe-li-a-tum,P310404.305,igi su₄-a,pe-li-a-tum
+v 36,1,1,igi-sig7-sig7 = %a {d}sin3-nu-ur-me-a-tum,P310404.306,igi-sig₇-sig₇,{d}sin₃-nu-ur-me-a-tum
+v 37,1,1,igi = %a i-nu,P310404.307,igi,i-nu
+v 38,1,1,igi = %a pa-nu,P310404.308,igi,pa-nu
+v 39,1,1,igi = %a zi-mu,P310404.309,igi,zi-mu
+v 4,1,1,igi hi-li-a = %a [...],P310404.274,igi ḫi-li-a,[...]
+v 40,1,1,igi = %a uz-nu,P310404.310,igi,uz-nu
+v 41,1,1,"<{d}>utu-e3 = %a s,i-it {d}UD-szi",P310404.311,<{d}>utu-e₃,ṣi-it {d}UD-ši
+v 5,1,1,igi ti-ti = %a ki-isz#-...,P310404.275,igi ti-ti,ki-⸢iš⸣-...
+v 6,1,1,igi SZESZ = %a i-nu [...],P310404.276,igi ŠEŠ,i-nu [...]
+v 7,1,1,igi-bar-huz = %a x#-[...] i-in# [qu3]-qa2#-nim,P310404.277,igi-bar-ḫuz,⸢x⸣-[...] i-⸢in⸣ [qu₃]-⸢qa₂⸣-nim
+v 8,1,1,igi#-bar#-nim#-huz# = %a |KI.MIN|<(x#-[...] i-in# [qu3]-qa2#-nim)>,P310404.278,⸢igi-bar-nim-ḫuz⸣,KI.MIN<(⸢x⸣-[...])> i-⸢in⸣ [qu₃]-⸢qa₂⸣-nim
+v 9,1,1,igi-gu-la2-e = %a |KI.3(DISZ)|<(x#-[...] i-in# [qu3]-qa2#-nim)>,P310404.279,igi-gu-la₂-e,KI.EŠ₅<(⸢x⸣-[...])> i-⸢in⸣ [qu₃]-⸢qa₂⸣-nim
+vi alpha1,0,1,,P310404.313,⸢ka⸣ [...],[...]
+vi alpha10,0,1,,P310404.317,ka-tar,di-li-lu
+vi alpha11,0,1,,P310404.318,ka-tar si-il,di-li-lu da-la-lum
+vi alpha12,0,1,,P310404.319,ka-tar zig₃,qu₂-ur-du
+vi alpha2-7,0,1,,P310404.314,(broken),
+vi alpha8,0,1,,P310404.315,ka piriŋ-⸢ŋa₂⸣,[...]
+vi alpha9,0,1,,P310404.316,ka igi-še₃,PI-[...]
+vi beta1,0,1,,P310404.321,immen₂-ti,la-ap-la-ap-tum
+vi delta1,0,1,,P310404.324,egir eme sal,
+vi delta2,0,1,,P310404.325,eme gal,
+vi delta3,0,1,,P310404.326,eme galam-ma,
+vi gamma1,0,1,,P310404.322,egir zu₂ kak,ka-ak-kum
+vi gamma2,0,1,,P310404.323,zu₂ ḫur,e-se₂-qu₂

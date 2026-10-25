@@ -1,0 +1,72 @@
+[
+  {
+    "file": "P342645_Ea.html",
+    "url": "https://oracc.museum.upenn.edu/dcclt/signlists/P342645",
+    "returncode": 0,
+    "bytes": 463922,
+    "error": ""
+  },
+  {
+    "file": "P257722_Ea.html",
+    "url": "https://oracc.museum.upenn.edu/dcclt/signlists/P257722",
+    "returncode": 0,
+    "bytes": 163016,
+    "error": ""
+  },
+  {
+    "file": "Ea07_composite.html",
+    "url": "https://oracc.museum.upenn.edu/dcclt/signlists/Q000159",
+    "returncode": 0,
+    "bytes": 483786,
+    "error": ""
+  },
+  {
+    "file": "P342645_card.html",
+    "url": "https://cdli.earth/artifacts/342645",
+    "returncode": 0,
+    "bytes": 63522,
+    "error": ""
+  },
+  {
+    "file": "P257722_card.html",
+    "url": "https://cdli.earth/artifacts/257722",
+    "returncode": 0,
+    "bytes": 69663,
+    "error": ""
+  },
+  {
+    "file": "P222364_card.html",
+    "url": "https://cdli.earth/artifacts/222364",
+    "returncode": 0,
+    "bytes": 76932,
+    "error": ""
+  },
+  {
+    "file": "P222364_edition.html",
+    "url": "https://oracc.museum.upenn.edu/etcsri/Q001026",
+    "returncode": 0,
+    "bytes": 48396,
+    "error": ""
+  },
+  {
+    "file": "P257722_photo.jpg",
+    "url": "https://cdli.earth/dl/photo/P257722.jpg",
+    "returncode": 0,
+    "bytes": 37093596,
+    "error": ""
+  },
+  {
+    "file": "P342645_photo.jpg",
+    "url": "https://cdli.earth/dl/photo/P342645.jpg",
+    "returncode": 0,
+    "bytes": 5364303,
+    "error": ""
+  },
+  {
+    "file": "P222364_photo.jpg",
+    "url": "https://cdli.earth/dl/photo/P222364.jpg",
+    "returncode": 56,
+    "bytes": 0,
+    "error": "curl: (56) The requested URL returned error: 404\n"
+  }
+]

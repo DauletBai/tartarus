@@ -1,0 +1,25 @@
+{
+  "grammar_sha256": "1de263451be6a1b155f7a1fed2fa1523bbca69c06bd92374fcbf3abfad453a78",
+  "numbered_examples": 39,
+  "parenthetical_reference_candidates": 68,
+  "witnesses": {
+    "P232300": 814,
+    "P232275": 365
+  },
+  "coordinate_warnings": [
+    {
+      "artifact": "P232275",
+      "object": "statue",
+      "surface": "surface a",
+      "column": "9",
+      "line_as_source": "24",
+      "records": 2
+    }
+  ],
+  "candidate_rows": 21,
+  "limits": [
+    "Grammar-selected examples, not a random corpus sample",
+    "Candidate search is exploratory and includes names/other functions",
+    "Photographs and editorial readings do not establish pronunciation independently"
+  ]
+}

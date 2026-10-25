@@ -1,0 +1,885 @@
+[
+  {
+    "qid": "Q000377",
+    "ref": "Q000377.372.4",
+    "line": "Cylinder A xiv 14",
+    "form": "gaba",
+    "f": {
+      "lang": "sux",
+      "form": "gaba",
+      "delim": "",
+      "gdl": [
+        {
+          "v": "gaba",
+          "oid": "o0000190",
+          "gdl_sign": "GABA",
+          "utf8": "𒃮",
+          "key": "o0000190..gaba",
+          "id": "Q000377.372.4.0"
+        }
+      ],
+      "cf": "gaba",
+      "gw": "chest",
+      "sense": "breast, chest, frontier",
+      "norm": "gaba.ø",
+      "pos": "N",
+      "epos": "N",
+      "base": "gaba",
+      "morph": "N1=gaba.N5=ø",
+      "morph2": "N1=STEM.N5=ABS"
+    },
+    "context_before": [
+      "{d}nanše-ka",
+      "zig₃-ga",
+      "ba-ni-ŋar",
+      "gud",
+      "huš",
+      "zig₃-ga"
+    ],
+    "context_after": [
+      "gi₄",
+      "nu-tuku",
+      "{ŋeš}eren",
+      "babbar₂-ra",
+      "lugal-bi-ir",
+      "dab₆-ba"
+    ],
+    "metadata": {
+      "langs": "0x02000000",
+      "project": "etcsri",
+      "designation": "The building of Ningirsu's temple (Gudea, cylinders A and B)",
+      "id_composite": "Q000377",
+      "cdli_composite_id": "P431881, P232300",
+      "period": "Lagaš II",
+      "dynastic_seat": "Lagash",
+      "ruler": "Gudea",
+      "language": "Sumerian",
+      "provenience": "Girsu",
+      "pleiades_id": "912855",
+      "pleiades_coord": "[46.175712,31.576909]",
+      "object_type": "cylinder",
+      "material": "clay",
+      "rime_no": "RIME 3-1.01.07.Cylinder A-B",
+      "exemplar_info": "MNB 1511a; MNB 1511b",
+      "genre": "Literary",
+      "cdli_id_numbers": "P232300; P232301",
+      "collection": "Louvre Museum, Paris, France",
+      "supergenre": "LIT",
+      "trans": [
+        "en"
+      ]
+    }
+  },
+  {
+    "qid": "Q000377",
+    "ref": "Q000377.829.1",
+    "line": "Cylinder B i 19",
+    "form": "gaba-ba",
+    "f": {
+      "lang": "sux",
+      "form": "gaba-ba",
+      "delim": "",
+      "gdl": [
+        {
+          "v": "gaba",
+          "oid": "o0000190",
+          "gdl_sign": "GABA",
+          "utf8": "𒃮",
+          "key": "o0000190..gaba",
+          "id": "Q000377.829.1.0",
+          "delim": "-"
+        },
+        {
+          "v": "ba",
+          "oid": "o0000113",
+          "gdl_sign": "BA",
+          "utf8": "𒁀",
+          "key": "o0000113..ba",
+          "id": "Q000377.829.1.1"
+        }
+      ],
+      "cf": "gaba",
+      "gw": "chest",
+      "sense": "breast, chest, frontier",
+      "norm": "gaba.bi.'a",
+      "pos": "N",
+      "epos": "N",
+      "base": "gaba",
+      "morph": "N1=gaba.N3=bi.N5='a",
+      "morph2": "N1=STEM.N3=3-SG-NH-POSS.N5=L2-NH"
+    },
+    "context_before": [
+      "udu",
+      "im-ma-a-tah",
+      "bur",
+      "he₂-ŋal₂",
+      "an-šag₄",
+      "pe₅-ša-gin₇"
+    ],
+    "context_after": [
+      "si",
+      "bi₂-sa₂",
+      "{d}a-nun-na-ke₄-ne-er",
+      "mu-ne-gub",
+      "šud₃",
+      "mu-ne-ša₄"
+    ],
+    "metadata": {
+      "langs": "0x02000000",
+      "project": "etcsri",
+      "designation": "The building of Ningirsu's temple (Gudea, cylinders A and B)",
+      "id_composite": "Q000377",
+      "cdli_composite_id": "P431881, P232300",
+      "period": "Lagaš II",
+      "dynastic_seat": "Lagash",
+      "ruler": "Gudea",
+      "language": "Sumerian",
+      "provenience": "Girsu",
+      "pleiades_id": "912855",
+      "pleiades_coord": "[46.175712,31.576909]",
+      "object_type": "cylinder",
+      "material": "clay",
+      "rime_no": "RIME 3-1.01.07.Cylinder A-B",
+      "exemplar_info": "MNB 1511a; MNB 1511b",
+      "genre": "Literary",
+      "cdli_id_numbers": "P232300; P232301",
+      "collection": "Louvre Museum, Paris, France",
+      "supergenre": "LIT",
+      "trans": [
+        "en"
+      ]
+    }
+  },
+  {
+    "qid": "Q000377",
+    "ref": "Q000377.1127.2",
+    "line": "Cylinder B xiv 1",
+    "form": "gaba",
+    "f": {
+      "lang": "sux",
+      "form": "gaba",
+      "delim": "",
+      "gdl": [
+        {
+          "v": "gaba",
+          "oid": "o0000190",
+          "gdl_sign": "GABA",
+          "utf8": "𒃮",
+          "key": "o0000190..gaba",
+          "id": "Q000377.1127.2.0"
+        }
+      ],
+      "cf": "gaba",
+      "gw": "chest",
+      "sense": "breast, chest, frontier",
+      "norm": "gaba.ø",
+      "pos": "N",
+      "epos": "N",
+      "base": "gaba",
+      "morph": "N1=gaba.N5=ø",
+      "morph2": "N1=STEM.N5=ABS"
+    },
+    "context_before": [
+      "mi-tum",
+      "tukul",
+      "nir₃",
+      "saŋ",
+      "piriŋ",
+      "kur-da"
+    ],
+    "context_after": [
+      "nu-gi₄",
+      "{ŋeš}eme-ŋiri₂",
+      "šu-nir",
+      "1(u)",
+      "la₂",
+      "1(aš)"
+    ],
+    "metadata": {
+      "langs": "0x02000000",
+      "project": "etcsri",
+      "designation": "The building of Ningirsu's temple (Gudea, cylinders A and B)",
+      "id_composite": "Q000377",
+      "cdli_composite_id": "P431881, P232300",
+      "period": "Lagaš II",
+      "dynastic_seat": "Lagash",
+      "ruler": "Gudea",
+      "language": "Sumerian",
+      "provenience": "Girsu",
+      "pleiades_id": "912855",
+      "pleiades_coord": "[46.175712,31.576909]",
+      "object_type": "cylinder",
+      "material": "clay",
+      "rime_no": "RIME 3-1.01.07.Cylinder A-B",
+      "exemplar_info": "MNB 1511a; MNB 1511b",
+      "genre": "Literary",
+      "cdli_id_numbers": "P232300; P232301",
+      "collection": "Louvre Museum, Paris, France",
+      "supergenre": "LIT",
+      "trans": [
+        "en"
+      ]
+    }
+  },
+  {
+    "qid": "Q000873",
+    "ref": "Q000873.10.1",
+    "line": "10",
+    "form": "gaba-ba",
+    "f": {
+      "lang": "sux",
+      "form": "gaba-ba",
+      "delim": "",
+      "gdl": [
+        {
+          "v": "gaba",
+          "oid": "o0000190",
+          "gdl_sign": "GABA",
+          "utf8": "𒃮",
+          "key": "o0000190..gaba",
+          "id": "Q000873.10.1.0",
+          "delim": "-"
+        },
+        {
+          "v": "ba",
+          "oid": "o0000113",
+          "gdl_sign": "BA",
+          "utf8": "𒁀",
+          "key": "o0000113..ba",
+          "id": "Q000873.10.1.1"
+        }
+      ],
+      "cf": "gaba",
+      "gw": "chest",
+      "sense": "breast, chest, frontier",
+      "norm": "gaba.bi.'a",
+      "pos": "N",
+      "epos": "N",
+      "base": "gaba",
+      "morph": "N1=gaba.N3=bi.N5='a",
+      "morph2": "N1=STEM.N3=3-SG-NH-POSS.N5=L2-NH"
+    },
+    "context_before": [
+      "e₃",
+      "ki",
+      "nam",
+      "tar-re-da",
+      "e₂",
+      "mu-na-du₃"
+    ],
+    "context_after": [
+      "id₅",
+      "bi₂-in-gen₆",
+      "mu-be₂",
+      "pa",
+      "bi₂-in-e₃"
+    ],
+    "metadata": {
+      "langs": "0x02000000",
+      "project": "etcsri",
+      "designation": "Lu-Utu 2",
+      "id_composite": "Q000873",
+      "cdli_composite_id": "P462101",
+      "period": "Old Akkadian",
+      "dynastic_seat": "Umma",
+      "ruler": "Lu-Utu",
+      "language": "Sumerian",
+      "provenience": "Umma",
+      "pleiades_id": "44626252",
+      "pleiades_coord": "[45.9000000,31.6500000]",
+      "object_type": "cone",
+      "material": "clay",
+      "rime_no": "RIME 2.11.06.0002",
+      "primary_publication": "RIME 2.11.06.02 composite",
+      "exemplar_info": "BM 109930; BM 109931; YBC 02148; PTS 1501; PTS 1502",
+      "genre": "Royal Inscription",
+      "cdli_id_numbers": "P216745; P216746; P216747; P201507; P431422",
+      "collection": "British Museum, London, UK; Yale Babylonian Collection, New Haven, Connecticut, USA; Princeton Theological Seminary, Princeton, New Jersey, USA",
+      "supergenre": "LIT",
+      "trans": [
+        "en",
+        "hun"
+      ]
+    }
+  },
+  {
+    "qid": "Q000945",
+    "ref": "Q000945.12.1",
+    "line": "12",
+    "form": "gaba",
+    "f": {
+      "lang": "sux",
+      "form": "gaba",
+      "delim": "",
+      "gdl": [
+        {
+          "v": "gaba",
+          "oid": "o0000190",
+          "gdl_sign": "GABA",
+          "utf8": "𒃮",
+          "key": "o0000190..gaba",
+          "id": "Q000945.12.1.0"
+        }
+      ],
+      "cf": "gaba",
+      "gw": "chest",
+      "sense": "breast, chest, frontier",
+      "norm": "gaba",
+      "pos": "N",
+      "epos": "N",
+      "base": "gaba",
+      "morph": "N1=gaba",
+      "morph2": "N1=STEM"
+    },
+    "context_before": [
+      "{d}nanna",
+      "in-du₃-a",
+      "niŋ₂",
+      "ul-li₂-a-ke₄",
+      "pa",
+      "mu-na-e₃"
+    ],
+    "context_after": [
+      "a-ab-ka-ka",
+      "ki-saₓ(SAR)-a",
+      "nam-ga-eš₈",
+      "bi₂-sa₂",
+      "ma₂",
+      "ma₂-gan"
+    ],
+    "metadata": {
+      "langs": "0x02000000",
+      "project": "etcsri",
+      "designation": "Ur-Namma 17",
+      "id_composite": "Q000945",
+      "cdli_composite_id": "P432127",
+      "period": "Ur III",
+      "dynastic_seat": "Ur",
+      "ruler": "Ur-Namma",
+      "language": "Sumerian",
+      "provenience": "Diqdiqqah",
+      "pleiades_id": "138636347",
+      "pleiades_coord": "[46.11862957480,30.97454761630]",
+      "object_type": "cone",
+      "material": "clay",
+      "rime_no": "RIME 3-2.01.01.0017",
+      "primary_publication": "RIME 3/2.01.01.17 composite",
+      "exemplar_info": "IM 092814 (U 07722); BM 030086 (1856-09-03, 1501); BM 119029 (U 02701); BM 119041 (U 02520); AO 15306 (T 0031 ?); CBS 16231 (U 06019)",
+      "genre": "Royal Inscription",
+      "cdli_id_numbers": "P226394; P226623; P226838; P226840; P226961; P227100",
+      "collection": "National Museum of Iraq, Baghdad, Iraq; British Museum, London, UK; Louvre Museum, Paris, France; University of Pennsylvania Museum of Archaeology and Anthropology, Philadelphia, Pennsylvania, USA",
+      "supergenre": "LIT",
+      "trans": [
+        "hun",
+        "en"
+      ]
+    }
+  },
+  {
+    "qid": "Q001056",
+    "ref": "Q001056.14.1",
+    "line": "o ii 28",
+    "form": "gaba-be₂",
+    "f": {
+      "lang": "sux",
+      "form": "gaba-be₂",
+      "gdl": [
+        {
+          "v": "gaba",
+          "oid": "o0000190",
+          "gdl_sign": "GABA",
+          "utf8": "𒃮",
+          "key": "o0000190..gaba",
+          "id": "Q001056.14.1.0",
+          "delim": "-"
+        },
+        {
+          "v": "be₂",
+          "oid": "o0000122",
+          "gdl_sign": "BI",
+          "utf8": "𒁉",
+          "key": "o0000122..be₂",
+          "id": "Q001056.14.1.1"
+        }
+      ],
+      "cf": "gaba",
+      "gw": "chest",
+      "sense": "breast, chest, frontier",
+      "norm": "gaba.bi.e",
+      "pos": "N",
+      "epos": "N",
+      "base": "gaba",
+      "morph": "N1=gaba.N3=bi.N5=e",
+      "morph2": "N1=STEM.N3=3-SG-NH-POSS.N5=L3-NH"
+    },
+    "context_before": [
+      "lu₂",
+      "umma{ki}-ke₄",
+      "šu",
+      "du₇-ra₂",
+      "e-ma-da-dug₄",
+      "lagaš{ki}"
+    ],
+    "context_after": [
+      "šu",
+      "e-ma-us₂",
+      "aya₂-kur-gal",
+      "lugal",
+      "lagaš{ki}",
+      "dumu"
+    ],
+    "metadata": {
+      "langs": "0x02000000",
+      "project": "etcsri",
+      "designation": "E-anatum 01",
+      "id_composite": "Q001056",
+      "cdli_composite_id": "P431075",
+      "period": "Early Dynastic",
+      "dynastic_seat": "Lagash",
+      "ruler": "E-anatum",
+      "language": "Sumerian",
+      "provenience": "Girsu",
+      "pleiades_id": "912855",
+      "pleiades_coord": "[46.175712,31.576909]",
+      "object_type": "stele",
+      "material": "stone: limestone",
+      "rime_no": "RIME 1.09.03.0001",
+      "primary_publication": "RIME 1.09.03.01 (Vulture Stele) composite",
+      "publication_history": "FAOS 05/1, Ean 01; CIRPL Ean 01; CT 07, 02 BM 23580; Lau, Daniel, Materiality (2016) 241-255",
+      "exemplar_info": "BM 023580 (= AO 16109) + AO 00050 + AO 02436 + AO 02437 + AO 02438 (1898-02-12, 0001 (BM 023580))",
+      "genre": "Royal Inscription",
+      "cdli_id_numbers": "P222399",
+      "collection": "British Museum, London, UK; Louvre Museum, Paris, France",
+      "supergenre": "LIT",
+      "trans": [
+        "en",
+        "hun"
+      ]
+    }
+  },
+  {
+    "qid": "Q001056",
+    "ref": "Q001056.24.1",
+    "line": "o iii 21",
+    "form": "gaba-be₂",
+    "f": {
+      "lang": "sux",
+      "form": "gaba-be₂",
+      "gdl": [
+        {
+          "v": "gaba",
+          "oid": "o0000190",
+          "gdl_sign": "GABA",
+          "utf8": "𒃮",
+          "key": "o0000190..gaba",
+          "id": "Q001056.24.1.0",
+          "delim": "-"
+        },
+        {
+          "v": "be₂",
+          "oid": "o0000122",
+          "gdl_sign": "BI",
+          "utf8": "𒁉",
+          "key": "o0000122..be₂",
+          "id": "Q001056.24.1.1"
+        }
+      ],
+      "cf": "gaba",
+      "gw": "chest",
+      "sense": "breast, chest, frontier",
+      "norm": "gaba.bi.e",
+      "pos": "N",
+      "epos": "N",
+      "base": "gaba",
+      "morph": "N1=gaba.N3=bi.N5=e",
+      "morph2": "N1=STEM.N3=3-SG-NH-POSS.N5=L3-NH"
+    },
+    "context_before": [
+      "ur-{d}nanše",
+      "e-ma-x",
+      "lagaš{ki}",
+      "bar",
+      "niŋ₂",
+      "ni₂-ba-ka-ka"
+    ],
+    "context_after": [
+      "šu",
+      "e-ga-ma-us₂",
+      "piriŋ",
+      "zag",
+      "x",
+      "ŋir₂-nun"
+    ],
+    "metadata": {
+      "langs": "0x02000000",
+      "project": "etcsri",
+      "designation": "E-anatum 01",
+      "id_composite": "Q001056",
+      "cdli_composite_id": "P431075",
+      "period": "Early Dynastic",
+      "dynastic_seat": "Lagash",
+      "ruler": "E-anatum",
+      "language": "Sumerian",
+      "provenience": "Girsu",
+      "pleiades_id": "912855",
+      "pleiades_coord": "[46.175712,31.576909]",
+      "object_type": "stele",
+      "material": "stone: limestone",
+      "rime_no": "RIME 1.09.03.0001",
+      "primary_publication": "RIME 1.09.03.01 (Vulture Stele) composite",
+      "publication_history": "FAOS 05/1, Ean 01; CIRPL Ean 01; CT 07, 02 BM 23580; Lau, Daniel, Materiality (2016) 241-255",
+      "exemplar_info": "BM 023580 (= AO 16109) + AO 00050 + AO 02436 + AO 02437 + AO 02438 (1898-02-12, 0001 (BM 023580))",
+      "genre": "Royal Inscription",
+      "cdli_id_numbers": "P222399",
+      "collection": "British Museum, London, UK; Louvre Museum, Paris, France",
+      "supergenre": "LIT",
+      "trans": [
+        "en",
+        "hun"
+      ]
+    }
+  },
+  {
+    "qid": "Q001059",
+    "ref": "Q001059.17.2",
+    "line": "iii 4",
+    "form": "gaba",
+    "f": {
+      "lang": "sux",
+      "form": "gaba",
+      "delim": "",
+      "gdl": [
+        {
+          "v": "gaba",
+          "oid": "o0000190",
+          "gdl_sign": "GABA",
+          "utf8": "𒃮",
+          "key": "o0000190..gaba",
+          "id": "Q001059.17.2.0"
+        }
+      ],
+      "cf": "gaba",
+      "gw": "chest",
+      "sense": "breast, chest, frontier",
+      "norm": "gaba",
+      "pos": "N",
+      "epos": "N",
+      "base": "gaba",
+      "morph": "N1=gaba",
+      "morph2": "N1=STEM"
+    },
+    "context_before": [
+      "sig₁₀-ga",
+      "{d}nin-ŋir₂-su₂-ka",
+      "kur-kur-še₃",
+      "a₂",
+      "{d}nin-ŋir₂-su₂-ka-ta",
+      "lu₂-lu₇"
+    ],
+    "context_after": [
+      "mu-ru-da",
+      "nu-tuku"
+    ],
+    "metadata": {
+      "langs": "0x02000000",
+      "project": "etcsri",
+      "designation": "E-anatum 07a",
+      "id_composite": "Q001059",
+      "cdli_composite_id": "P431081",
+      "period": "Early Dynastic",
+      "dynastic_seat": "Lagash",
+      "ruler": "E-anatum",
+      "language": "Sumerian",
+      "provenience": "Girsu",
+      "pleiades_id": "912855",
+      "pleiades_coord": "[46.175712,31.576909]",
+      "object_type": "boulder",
+      "material": "stone",
+      "rime_no": "RIME 1.09.03.0007a",
+      "primary_publication": "RIME 1.09.03.07a composite",
+      "publication_history": "FAOS 05/1, Ean 05, A; CIRPL Ean 05",
+      "exemplar_info": "AO -; Ist EŞEM 01632",
+      "genre": "Royal Inscription",
+      "cdli_id_numbers": "P222404; P222408",
+      "collection": "Louvre Museum, Paris, France; Arkeoloji Müzeleri, Istanbul, Turkey",
+      "supergenre": "LIT",
+      "trans": [
+        "hun",
+        "en"
+      ]
+    }
+  },
+  {
+    "qid": "Q001123",
+    "ref": "Q001123.69.3",
+    "line": "iv 30",
+    "form": "gaba-ka-ka",
+    "f": {
+      "lang": "sux",
+      "form": "gaba-ka-ka",
+      "gdl": [
+        {
+          "v": "gaba",
+          "oid": "o0000190",
+          "gdl_sign": "GABA",
+          "utf8": "𒃮",
+          "key": "o0000190..gaba",
+          "id": "Q001123.69.3.0",
+          "delim": "-"
+        },
+        {
+          "v": "ka",
+          "oid": "o0000260",
+          "gdl_sign": "KA",
+          "utf8": "𒅗",
+          "key": "o0000260..ka",
+          "id": "Q001123.69.3.1",
+          "delim": "-"
+        },
+        {
+          "v": "ka",
+          "oid": "o0000260",
+          "gdl_sign": "KA",
+          "utf8": "𒅗",
+          "key": "o0000260..ka",
+          "id": "Q001123.69.3.2"
+        }
+      ],
+      "cf": "gaba",
+      "gw": "chest",
+      "sense": "breast, chest, frontier",
+      "norm": "gaba.ak.ak.'a",
+      "pos": "N",
+      "epos": "N",
+      "base": "gaba",
+      "morph": "N1=gaba.N5=ak.N5=ak.N5='a",
+      "morph2": "N1=STEM.N5=GEN.N5=GEN.N5=L2-NH"
+    },
+    "context_before": [
+      "agrig",
+      "he₂",
+      "ugula",
+      "he₂",
+      "bar",
+      "sila₄"
+    ],
+    "context_after": [
+      "kug",
+      "a-ŋa₂-ŋa₂-a",
+      "dumu",
+      "lagaš{ki}",
+      "saŋŋa",
+      "GAR"
+    ],
+    "metadata": {
+      "langs": "0x02000000",
+      "project": "etcsri",
+      "designation": "URU-KA-gina 02",
+      "id_composite": "Q001123",
+      "cdli_composite_id": "P431155",
+      "period": "Early Dynastic",
+      "dynastic_seat": "Lagash",
+      "ruler": "URU-KA-gina",
+      "language": "Sumerian",
+      "provenience": "Girsu",
+      "pleiades_id": "912855",
+      "pleiades_coord": "[46.175712,31.576909]",
+      "object_type": "cone, jar",
+      "material": "clay",
+      "rime_no": "RIME 1.09.09.0002",
+      "primary_publication": "RIME 1.09.09.02 composite",
+      "publication_history": "FAOS 05/1, Ukg 01, A; CIRPL Ukg 01",
+      "exemplar_info": "AO 12782 (TG 2883); MNB 1390; AO 12181; IM 005642; CUNES 49-14-001",
+      "genre": "Royal Inscription",
+      "cdli_id_numbers": "P213252; P222604; P222605; P222606; P235683",
+      "collection": "Louvre Museum, Paris, France; National Museum of Iraq, Baghdad, Iraq; Department of Near Eastern Studies, Cornell University, Ithaca, New York, USA",
+      "supergenre": "LIT",
+      "trans": [
+        "hun",
+        "en"
+      ]
+    }
+  },
+  {
+    "qid": "Q001124",
+    "ref": "Q001124.51.3",
+    "line": "iv 7",
+    "form": "gaba-ka-ka",
+    "f": {
+      "lang": "sux",
+      "form": "gaba-ka-ka",
+      "gdl": [
+        {
+          "v": "gaba",
+          "oid": "o0000190",
+          "gdl_sign": "GABA",
+          "utf8": "𒃮",
+          "key": "o0000190..gaba",
+          "id": "Q001124.51.3.0",
+          "delim": "-"
+        },
+        {
+          "v": "ka",
+          "oid": "o0000260",
+          "gdl_sign": "KA",
+          "utf8": "𒅗",
+          "key": "o0000260..ka",
+          "id": "Q001124.51.3.1",
+          "delim": "-"
+        },
+        {
+          "v": "ka",
+          "oid": "o0000260",
+          "gdl_sign": "KA",
+          "utf8": "𒅗",
+          "key": "o0000260..ka",
+          "id": "Q001124.51.3.2"
+        }
+      ],
+      "cf": "gaba",
+      "gw": "chest",
+      "sense": "breast, chest, frontier",
+      "norm": "gaba.ak.ak.'a",
+      "pos": "N",
+      "epos": "N",
+      "base": "gaba",
+      "morph": "N1=gaba.N5=ak.N5=ak.N5='a",
+      "morph2": "N1=STEM.N5=GEN.N5=GEN.N5=L2-NH"
+    },
+    "context_before": [
+      "gala-mah",
+      "agrig",
+      "lu₂-bappir₃",
+      "ugula-ugula-ne",
+      "bar",
+      "sila₄"
+    ],
+    "context_after": [
+      "kug",
+      "be₂-ŋar-re₂-eš₂",
+      "gud",
+      "diŋir-re₂-ne-ke₄",
+      "ki",
+      "šum₂-ma"
+    ],
+    "metadata": {
+      "langs": "0x02000000",
+      "project": "etcsri",
+      "designation": "URU-KA-gina 01",
+      "id_composite": "Q001124",
+      "cdli_composite_id": "P431154",
+      "period": "Early Dynastic",
+      "dynastic_seat": "Lagash",
+      "ruler": "URU-KA-gina",
+      "language": "Sumerian",
+      "provenience": "Girsu",
+      "pleiades_id": "912855",
+      "pleiades_coord": "[46.175712,31.576909]",
+      "object_type": "cone",
+      "material": "clay",
+      "rime_no": "RIME 1.09.09.0001",
+      "primary_publication": "RIME 1.09.09.01 (Reforms of Urukagina) composite",
+      "publication_history": "FAOS 05/1, Ukg 04; CIRPL Ukg 04-05, 60",
+      "exemplar_info": "AO 03278; AO 03149; Crozer 005",
+      "genre": "Royal Inscription",
+      "cdli_id_numbers": "P222607; P222608; P222609",
+      "collection": "Louvre Museum, Paris, France; Crozer Theological Seminary, Rochester, New York, USA",
+      "supergenre": "LIT",
+      "trans": [
+        "en",
+        "hun"
+      ]
+    }
+  },
+  {
+    "qid": "Q001124",
+    "ref": "Q001124.177.3",
+    "line": "viii 29",
+    "form": "gaba-ka-ka",
+    "f": {
+      "lang": "sux",
+      "form": "gaba-ka-ka",
+      "gdl": [
+        {
+          "v": "gaba",
+          "oid": "o0000190",
+          "gdl_sign": "GABA",
+          "utf8": "𒃮",
+          "key": "o0000190..gaba",
+          "id": "Q001124.177.3.0",
+          "delim": "-"
+        },
+        {
+          "v": "ka",
+          "oid": "o0000260",
+          "gdl_sign": "KA",
+          "utf8": "𒅗",
+          "key": "o0000260..ka",
+          "id": "Q001124.177.3.1",
+          "delim": "-"
+        },
+        {
+          "v": "ka",
+          "oid": "o0000260",
+          "gdl_sign": "KA",
+          "utf8": "𒅗",
+          "key": "o0000260..ka",
+          "id": "Q001124.177.3.2"
+        }
+      ],
+      "cf": "gaba",
+      "gw": "chest",
+      "sense": "breast, chest, frontier",
+      "norm": "gaba.ak.ak.'a",
+      "pos": "N",
+      "epos": "N",
+      "base": "gaba",
+      "morph": "N1=gaba.N5=ak.N5=ak.N5='a",
+      "morph2": "N1=STEM.N5=GEN.N5=GEN.N5=L2-NH"
+    },
+    "context_before": [
+      "e-ta-šub",
+      "bar",
+      "udu",
+      "had₂-ka",
+      "bar",
+      "sila₄"
+    ],
+    "context_after": [
+      "kug",
+      "a-ŋa₂-ŋa₂-da",
+      "maškim-bi",
+      "e-ta-šub",
+      "dupsik",
+      "saŋŋa-saŋŋa-ne"
+    ],
+    "metadata": {
+      "langs": "0x02000000",
+      "project": "etcsri",
+      "designation": "URU-KA-gina 01",
+      "id_composite": "Q001124",
+      "cdli_composite_id": "P431154",
+      "period": "Early Dynastic",
+      "dynastic_seat": "Lagash",
+      "ruler": "URU-KA-gina",
+      "language": "Sumerian",
+      "provenience": "Girsu",
+      "pleiades_id": "912855",
+      "pleiades_coord": "[46.175712,31.576909]",
+      "object_type": "cone",
+      "material": "clay",
+      "rime_no": "RIME 1.09.09.0001",
+      "primary_publication": "RIME 1.09.09.01 (Reforms of Urukagina) composite",
+      "publication_history": "FAOS 05/1, Ukg 04; CIRPL Ukg 04-05, 60",
+      "exemplar_info": "AO 03278; AO 03149; Crozer 005",
+      "genre": "Royal Inscription",
+      "cdli_id_numbers": "P222607; P222608; P222609",
+      "collection": "Louvre Museum, Paris, France; Crozer Theological Seminary, Rochester, New York, USA",
+      "supergenre": "LIT",
+      "trans": [
+        "en",
+        "hun"
+      ]
+    }
+  }
+]

@@ -1,0 +1,21 @@
+{
+  "date": "2026-10-25",
+  "stage": "round10b",
+  "relationship": "Separate non-blind contact-case follow-up; not an expansion of the held-out image test.",
+  "artifact": "P325891",
+  "selection": "CUSAS 3, 222 identified as a candidate witness to the ta/da contact example; mapping came through a modern concordance and remains to be checked.",
+  "prior_exposure": "Transliteration snippet lugal-ta and in-da-ge26-en already seen. This test cannot be called image-first or blind.",
+  "questions": [
+    "Does CDLI identify this number as CUSAS 3, 222?",
+    "Are photographs or drawings available? Keep their types separate.",
+    "Does the individual editorial record actually contain both ta and da in the cited syntactic environment?",
+    "If a photo is absent, retain the reported spelling as editorial evidence only; do not claim an original-sign verification."
+  ],
+  "alternatives": [
+    "Akkadian-contact orthography",
+    "Sumerian internal variation",
+    "Scribal error",
+    "Modern reading/transcription error"
+  ],
+  "limit": "The case does not by itself identify a native language from a personal name, date proto-languages, or establish a Sumerian-Kazakh relationship."
+}

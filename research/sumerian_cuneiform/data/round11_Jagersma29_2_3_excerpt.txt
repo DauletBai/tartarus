@@ -1,0 +1,248 @@
+29.2.3. The forms of the enclitic copula
+
+The enclitic copula is a clause-final clitic and always follows any phrase-final clitic (§4.4.4).
+E.g.:
+(24) še dub-sar-ne-kam
+     še     dub.sar=enē=ak =Ø =÷am
+     barley scribe =PL =GEN=ABS=be:3N.S
+     ‘This is barley of the scribes.’ (PPAC 1 A.624 5; A; 23)
+   Nearly all attested forms of the copula are enclitic. They replace certain forms which are
+missing from the paradigm of the independent copula. They are used precisely where one
+would expect a form with only a person suffix and the vocalic prefix {÷i} or {÷a}. A form such
+as *ì-me-en ‘I am’, for example, does not occur in the corpus. Instead one finds the enclitic
+form /men/.
+   Thus the independent and enclitic forms of the copula supplement each other in such a way
+that they together make up a complete paradigm. This neat distribution of the two sets of forms
+682        Chapter Twenty-Nine
+
+over a single paradigm is no coincidence. The forms of the enclitic copula come historically
+from exactly those independent forms which they replace synchronically. The forms of the
+enclitic copula have properties which clearly point to such a development.
+    Consider, for instance, the enclitic copula of the third person singular human and third
+person non-human. Its basic form is /÷am/, which can be derived from an earlier form */÷ame/
+(cf. Poebel 1923: 72):
+(25) *÷ame
+     ÷a-me-Ø
+     VP-be -3SG/3N.S
+     ‘he/she/it is’ (unattested reconstructed form)
+This */÷ame/ became /÷am/ through loss of the word-final /e/ (§29.2.2). At some point in time,
+it cliticized and was attached to the word preceding it.1 Subsequently, /÷am/ underwent further
+phonological changes (see below).
+    The other forms of the copula with only a person suffix and a vocalic prefix also cliticized
+but in a slightly different way. If they were attached to a word with a final consonant, they lost
+their vocalic prefix without a trace. However, if they were attached to a word with a final
+vowel, their vocalic prefix contracted with this vowel leaving a long vowel. This long vowel is
+reflected in plene spellings such as the following:
+(26) zé-e-me
+     ze =Ø =me-en
+     you=ABS=be -1SG.S
+     ‘you, yourself (lit. “you, who is you”)’ (TCS 1:128 6; L; 21)
+Similarly: ĝe26-e-me for ĝe26=me-en ‘I, myself (lit. “I, who is me”)’ (TCS 1:81 6; L; 21). (See
+§29.6.2 below for the syntax of these expressions.)
+   The inflection of the enclitic copula is largely parallel to that of the independent copula. In
+the enclitic forms too, the syllable-final consonant of the person suffixes (see chapter 14) is
+never written in Old Sumerian and only occasionally in more recent texts from before the Old
+Babylonian period. The /š/ of the person suffix for the third person plural {eš}, for instance,
+may be written explicitly in texts from the later third millennium:
+(27) nagar-me-éš
+     nagar =Ø =me-eš
+     carpenter=ABS=be -3PL.S
+     ‘They are carpenters.’ (UET 3:1496 19; Ur; 21)
+But exactly the same phrase occurs far more often written as nagar-me, always so in Old
+Sumerian (e.g. DP 115 11:12; L; 24) and mostly so in the Ur III period (e.g. MVN 5:267 obv
+2:8; L; 21). Or to give another example:
+(28) lú inim-ma-bé-me-éš
+
+
+
+   1
+    Note, however, that a form */÷ame/ does not fit the grammatical rules of Sumerian as
+actually attested, because the vocalic prefix {÷a} has the form /÷al/ when it occurs immediately
+before the stem (§24.3.3). In fact, a dialectal variant al-me-a ‘that it is’ is indeed attested for ì-
+me-a (e.g. Let B 19 11; OB). Yet, as the origin of this special form /÷al/ is still unclear, it is
+impossible to say how old the attested distribution of /÷a/ and /÷al/ actually is.
+                                                                    Copular clauses          683
+
+     lú     inim=ak =be=Ø =me-eš
+     person word=GEN=its=ABS=be -3PL.S
+     ‘They are its witnesses.’ (MVN 3:219 18; N; 21)
+In the same text on the case, this phrase is written lú inim-ma-bé-me (MVN 3:219A 22; N;
+21). The latter spelling is the most common one by far in our corpus.
+   With few exceptions, the orthography leaves the final /n/ of the first and second persons
+also unexpressed:
+(29) urdu2 kalag-ga-né-me-en6
+     urdu2.d kalag -Ø -÷a =ane=Ø =me-en
+     slave be.strong-NFIN-NOM=his =ABS=be -1SG.S
+     ‘I am his strong servant.’ (PPAC 1:A.636 16; A; 23)
+(30) ama nu-tuku-me
+     ama =Ø nu =tuku-Ø =Ø =me-en
+     mother=ABS NEG=have-NFIN=ABS=be -1SG.S
+     ‘I am one who has no mother.’ (Cyl A 3:6; L; 22)
+(31) ama-ĝu10 zé-me
+     ama =ĝu =Ø zé =Ø =me-en
+     mother=my=ABS you=ABS=be -2SG.S
+     ‘You are my mother.’ (Cyl A 3:6; L; 22)
+The enclitic forms of the first and second persons of the plural are not attested in our corpus
+but can be documented from later texts:
+(32) [ĝá]-e ù za-e ses-me-en-dè-en
+     ĝá.e ù za.e=Ø ses =Ø =me-enden
+     I    and you=ABS brother=ABS=be -1PL.S
+     ‘You and I are brothers.’ (Proverb Collection 8 Sec. D 2; OB)
+(33) a-ba-àm za-e-me-en-zé-en
+     a.ba=Ø =÷am za.e=Ø =me-enzen
+     who=ABS=be:3N.S you =ABS=be -2PL.S
+     ‘Who are you guys?’ (Inanna’s Descent 240; OB)
+   The basic form of enclitic copula of the third person singular and non-human is /÷am/, but it
+undergoes changes under the influence of the preceding vowel or consonant. The /÷/ of /÷am/
+may assimilate to the preceding consonant and the /÷a/ of /÷am/ may contract with the preced-
+ing vowel. Regrettably the exact details of these changes are much obscured by the spelling,
+which is almost uniformly am6 in Old Sumerian and àm from the Old Akkadian period on-
+wards.
+   Let us begin with the behaviour of /÷am/ after a vowel. After stems, it is then consistently
+written with the CVC-sign am6 (Old Sumerian) or àm (Old Akkadian and later), e.g. šabra-
+àm ‘who is administrator’ (MVN 18:325 3; U; 21), dutu-àm ‘who was (like) Utu’ (Cyl B
+16:16; L; 22), kù-zu-àm ‘he was wise’ (Cyl B 1:12; L; 22), (...) si-àm ‘it is (...) filling (...)’
+(e.g. Cyl A 21:12; L; 22), e-ne-àm ‘it is he’ (TCS 1:54 6; L; 21).
+   After the nominalizing suffix {÷a}, the Old Sumerian spellings clearly point to a form
+/÷am/. E.g.:
+(34) PN / gurušta-da / mu-da-lu5-ka-am6
+684         Chapter Twenty-Nine
+
+      PN gurušta=da Ø -mu -n -da -lu5.k-Ø                   -÷a =Ø =÷am
+      PN fattener =COM VP-VENT-3SG-with-live -3N.S/DO-NOM=ABS=be:3N.S
+      ‘This is one (lamb) that lives with PN, the fattener.’ (DP 338 1:2-4; L; 24)
+This spelling ka-am6 can only represent the sequence /ka÷am/, not /kam/, which would have
+been written kam. Further instances of /a÷am/ spellings are the following:
+(35) 2-kam-ma šu-a gi4-a-am6
+     2-kamma šu =÷a gi4 -Ø -÷a =Ø =÷am
+     2-ORD      hand=LOC turn-NFIN-NOM=ABS=be:3N.S
+     ‘This is what was transferred the second time (lit. “These are the second ones which were
+     turned on the hand”).’ (Nik 1:298 4:1; L; 24)
+(36) maš da ri-a-am6
+     maš da ri.a =Ø =÷am
+     ceremonial.gift=ABS=be:3N.S
+     ‘These are ceremonial gifts.’ (DP 89 5:1; L; 24)
+Such unambiguous /a÷am/ spellings from the Old Sumerian period can be multiplied easily:
+nu-gíd-da-am6 (VS 25:87 6:1; L; 24); šid-da-am6 (DP 470 4:1; L; 24); gu-la-am6 (DP 648
+1:3; L; 24); ĝál-la-am6 (VS 25:3 2:4; L; 24); mu-šè-ĝen-na-am6 (En. I 29 10:2; L; 25). The
+sequences /dam/, /lam/, and /nam/ would have been written in Old Sumerian as dam, lam, and
+nam.
+    After the Old Sumerian period, the glottal stop in /a÷am/ was lost and the resulting sequence
+of two vowels contracted. This development is shown by some spelling changes. First, from
+the Old Akkadian period onwards, the earlier spelling a-am6 for /÷a÷am/ becomes, translitera-
+ted as àm, the standard spelling for /÷am/. Second, the Old Akkadian texts from Adab contain
+explicit spellings of contracted forms. Compare, for instance, ex. (35) and (36) with the
+following two:
+(37) šu-a gi4-àm
+     šu =÷a gi4 -Ø -÷a =Ø =(÷a)m
+     hand=LOC turn-NFIN-NOM=ABS=be:3N.S
+     ‘This is what was transferred (lit. “what was turned on the hand”).’ (OIP 14:156 9; A; 23)
+(38) máš da ri-àm
+     máš da ri.a =Ø =(÷a)m
+     ceremonial.gift=ABS=be:3N.S
+     ‘These are ceremonial gifts.’ (e.g., OIP 14:99 3; A; 23)
+These spellings from Adab are exceptional, though. Elsewhere, the orthography remained as in
+the Old Sumerian period, except that am6 is replaced by àm. Thus after the nominalizing suffix
+{÷a}, /÷am/ continued to be written as if it were pronounced /÷am/, in spite of the contraction
+of /a÷am/ to /am/ or /ām/ in the spoken language. E.g.:
+(39) lú níĝ-ul-e pa è-a-àm
+     lú      níĝ.ul          =e pa =Ø è             -Ø -÷a =Ø =÷am
+     person everlasting.thing=DIR branch=ABS go.out-NFIN-NOM=ABS=be:3SG.S
+     ‘He is someone who let appear something everlasting.’ (St B 8:35; L; 22). Note that the
+     phrasal verb pa—è means ‘(cause to) appear’.
+                                                                    Copular clauses          685
+
+   After clitics with a final vowel, /÷am/ had already been reduced to /m/ in the Old Sumerian
+period. Being a syllable-final consonant, this /m/ is never written in the texts from that period
+and only rarely in those from the Old Akkadian period and later. E.g.:
+(40) udu-ĝu10-um
+     udu =ĝu=Ø =(÷a)m
+     sheep=my=ABS=be:3N.S
+     ‘They are my sheep.’ (NG 120a 9; U; 21)
+(41) é-ĝu10
+     é      =ĝu=Ø =(÷a)m
+     house=my=ABS=be:3N.S
+     ‘It is my house.’ (NG 199 3:6'; L; 22)
+(42) ki-sur-ra-ĝu10
+     ki.sur.ra=ĝu=Ø =(÷a)m
+     border =my=ABS=be:3N.S
+     ‘It is my border.’ (Ukg. 6 4:8'; L; 24)
+(43) lú-ĝír-suki maškim-bé-em
+     lú.ĝír.su.k=Ø maškim         =be =Ø =(÷a)m
+     Lu.Girsu =ABS commissioner=its=ABS=be:3SG.S
+     ‘Lu-Girsu was its commissioner.’ (NG 41 9'; L; 21)
+(44) gala-tur / aga3-ús / maškim-bé
+     gala.tur aga3.ús=Ø maškim            =be =Ø =(÷a)m
+     Galatur soldier =ABS commissioner=its=ABS=be:3SG.S
+     ‘Galatur, the soldier, was its commissioner.’ (VS 14:20 4:1-3; L; 24)
+(45) níĝ ú-rum-ma-ne-ne
+     níĝ ú.rum=anēnē=Ø =(÷a)m
+     thing own =their =ABS=be:3N.S
+     ‘These are their own things.’ (VS 14:80 3:2; L; 24)
+   After a consonant, the forms and spellings of /÷am/ present a similarly mixed picture. After
+four consonants (/d/, /k/, /l/, and /n/), /÷am/ is consistently written with the CVC-signs dam,
+kam, lam, and nam. Clearly, the glottal stop of /÷am/ assimilates here with the preceding
+consonant. E.g.:
+(46) ma-mu-dam
+     ma.mu.d=Ø =÷am
+     dream =ABS=be:3N.S
+     ‘It was a dream.’ (Cyl A 12:13; L; 22)
+(47) níĝ-sám ašag-kam
+     níĝ.sám ašag=ak =Ø =÷am
+     price field=GEN=ABS=be:3N.S
+     ‘This is the price of the field.’ (BIN 8:170 23; N; 23)
+(48) (...) / en-nu-ĝá / ì-ti-lam
+     en.nu.ĝ=÷a ÷i-n(i)-ti.l -Ø     =Ø =÷am
+     guard =LOC VP-in -live-3SG.S/DO=ABS=be:3N.S
+686         Chapter Twenty-Nine
+
+      ‘(Because silver was seized in his hand,) it is (the case) that he stays under guard.’
+      (NATN 32 4-5; N; 21)
+(49) an en-nam
+     an    =Ø en =Ø =÷am
+     heaven=ABS lord=ABS=be:3SG.S
+     ‘Heaven was lord.’ (Ukg. 15 2:1; L; 24)
+After all other consonants, /÷am/ is consistently written with the CVC-sign am6 in Old Sume-
+rian texts. E.g.:
+(50) sá-du11-am6
+     sá.du11.g =Ø =÷am
+     provisions=ABS=be:3N.S
+     ‘These are provisions.’ (VS 25:43 1:6; L; 24)
+Other such spellings are, e.g., ĝišù-suh~5~ -am6 ‘This is fir-wood.’ (DP 410 3:2; L; 24), munus-
+am6 ‘This is a woman.’ (DP 374 1:3; L; 24), ĝuruš-am6 ‘He is a young man.’ (Nik 1:17 1:3;
+L; 24), and munu4-gaz-am6 ‘He is a malt-crusher.’ (CT 50:33 9:6; L; 24). Such spellings are
+also common after the Old Sumerian period, but then with the sign àm instead of am6.
+    Thus, the spelling suggests that the glottal stop of /÷am/ only assimilates with a preceding
+/d/, /k/, /l/, or /n/ but is retained after all other consonants. Yet, this is very unlikely. The initial
+glottal stops of the locative case marker {÷a} (§7.7.1) and of the nominalizing suffix {÷a}
+(§31.2) assimilate to a much wider range of consonants. The more restricted behaviour of the
+initial glottal stop of /÷am/ is almost certainly an artefact of the spelling. The Sumerian script
+simply lacked the CVC-signs needed to write the actual pronunciation. There is no sign *gam,
+*bam, or *mam. Hence, the scribes chose to use a morphophonemic spelling with am6 or àm,
+which represented a more abstract and more basic form of /÷am/.
+    This morphophonemic spelling remained the norm, even after the invention of CV-VC-
+spellings. But the latter type of spelling is sometimes used, although it remains rare. Contrast,
+for example, the following pairs of forms, which only differ in spelling:
+(51a) libir-àm
+      libir =÷am
+      of.old=be:3N.S
+      ‘These are of old.’ (PIOL 19:120 3:1; U; 21)
+(b)    libir-ra-àm ‘These are of old.’ (MVN 3:370 13; U; 21)
+(52a) 2-kam-ma ur-saĝ-àm
+      2 -kamma=Ø ur.saĝ=Ø =÷am
+      two-ORD =ABS warrior=ABS=be:3SG.S
+      ‘The second was a warrior.’ (Cyl A 6:3; L; 22)
+(b)    2-kam ur-saĝ-ĝá-àm ‘The second was a warrior.’ (Cyl A 5:2; L; 22)
+(53a) á-lá u4-dam šeg12 mu-na-ab-gi4
+      á.lá =e u4.d =Ø =÷am šeg12=Ø Ø -mu -nna -b -gi4 -Ø
+      a.drum=ERG storm=ABS=be:3N.S shriek=ABS VP-VENT-3SG.IO-3N.A-turn-3N.S/DO
+      ‘The á-lá-drum thundered for him like a storm (lit. “The á-lá-drum, which was a storm,
+      thundered for him”).’ (Cyl B 19:1; L; 22)
+(b)    na4-šu-min-e u4-da-àm šeg12 mu-na-ab-gi4
+                                                                      Copular clauses          687
+
+      ‘The two-hand stone thundered for him like a storm.’ (Cyl A 16:31; L; 22)
+Thus, in the Old Sumerian period, a CV-VC-spelling Ca-am6 always represents a sequence
+/Ca÷am/. After that period, a spelling Ca-àm is ambiguous because it either stands for simple
+/Cam/ or represents /Ca÷am/. The latter use occurs more frequently.
+

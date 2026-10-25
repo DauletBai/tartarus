@@ -1,0 +1,19 @@
+{
+  "date": "2026-10-24",
+  "artifact": "P342808",
+  "stage": "Recorded after viewing selected photo, before exposing its individual editorial rows",
+  "prior_exposure": "Q000954 composition and a related object photo are already known; not a blind semantic test",
+  "visible_observations": [
+    "One upright human-shaped figure against a dark background, arms raised toward an object above the head",
+    "Lower body narrows downward and contains an inscribed region",
+    "Linear boundaries and groups of marks are visible, but individual wedge strokes and reliable sign boundaries cannot be resolved at supplied size"
+  ],
+  "graphic_prediction_result": "unresolvable",
+  "proposed_terminal_complex": "Cannot confirm or reject recurrence of G-A/G-B in two different cells",
+  "sign_count": null,
+  "column_count": null,
+  "phonetic_reading": null,
+  "translation": null,
+  "interpretation_limit": "No visual evidence here for any particular pronunciation, translation, or reader-native-language effect. Do not count absence of resolution as absence of the predicted signs.",
+  "upscaling": "No synthetic enhancement or reconstructed glyphs used"
+}

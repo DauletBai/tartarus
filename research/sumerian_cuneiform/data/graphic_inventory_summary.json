@@ -1,0 +1,20 @@
+{
+  "date": "2026-10-25",
+  "source_images": 31,
+  "by_kind": {
+    "editorial_drawing_or_plate": 9,
+    "photograph_or_photographic_composite": 22
+  },
+  "distinct_image_hashes": 31,
+  "local_observation_groups": 66,
+  "exhaustive_sign_count": null,
+  "alphabet_size": null,
+  "independent_phonetic_values": 0,
+  "scope": "All image files currently in sources/, not all available cuneiform worldwide.",
+  "cautions": [
+    "One photo can show several objects, several photos can show the same object.",
+    "An impression is not automatically a sign; a sign is not automatically a letter.",
+    "Image dimensions do not guarantee that a particular line is legible.",
+    "Local group labels were not silently merged across stages or periods."
+  ]
+}

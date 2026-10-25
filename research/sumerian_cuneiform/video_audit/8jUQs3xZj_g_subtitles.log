@@ -1,0 +1,17 @@
+WARNING: Your yt-dlp version (2026.03.17) is older than 90 days!
+         It is strongly recommended to always use the latest version.
+         You installed yt-dlp with pip or using the wheel from PyPi; Use that to update.
+         To suppress this warning, add --no-update to your command/config.
+[youtube] Extracting URL: https://www.youtube.com/watch?v=8jUQs3xZj_g
+[youtube] 8jUQs3xZj_g: Downloading webpage
+[youtube] 8jUQs3xZj_g: Downloading android vr player API JSON
+[info] 8jUQs3xZj_g: Downloading subtitles: ru, ru-orig
+[info] 8jUQs3xZj_g: Downloading 1 format(s): 399+251
+[info] Writing video subtitles to: research/sumerian_cuneiform/video_audit/8jUQs3xZj_g.ru.json3
+WARNING: The extractor specified to use impersonation for this download, but no impersonate target is available. If you encounter errors, then see  https://github.com/yt-dlp/yt-dlp#impersonation  for information on installing the required dependencies
+[download] Destination: research/sumerian_cuneiform/video_audit/8jUQs3xZj_g.ru.json3
+[download]    1.00KiB at  Unknown B/s (00:00:00)[download]    3.00KiB at    2.38MiB/s (00:00:00)[download]    7.00KiB at    2.95MiB/s (00:00:00)[download]   15.00KiB at    3.68MiB/s (00:00:00)[download]   31.00KiB at    2.99MiB/s (00:00:00)[download]   63.00KiB at    2.79MiB/s (00:00:00)[download]  127.00KiB at    2.68MiB/s (00:00:00)[download]  255.00KiB at    2.11MiB/s (00:00:00)[download]  459.90KiB at    2.67MiB/s (00:00:00)[download] 100% of  459.90KiB in 00:00:00 at 1.37MiB/s
+[info] Writing video subtitles to: research/sumerian_cuneiform/video_audit/8jUQs3xZj_g.ru-orig.json3
+WARNING: The extractor specified to use impersonation for this download, but no impersonate target is available. If you encounter errors, then see  https://github.com/yt-dlp/yt-dlp#impersonation  for information on installing the required dependencies
+[download] Destination: research/sumerian_cuneiform/video_audit/8jUQs3xZj_g.ru-orig.json3
+[download]    1.00KiB at  Unknown B/s (00:00:00)[download]    3.00KiB at  Unknown B/s (00:00:00)[download]    7.00KiB at  Unknown B/s (00:00:00)[download]   15.00KiB at   12.20MiB/s (00:00:00)[download]   31.00KiB at   21.15MiB/s (00:00:00)[download]   63.00KiB at   35.93MiB/s (00:00:00)[download]  127.00KiB at   16.38MiB/s (00:00:00)[download]  255.00KiB at   10.75MiB/s (00:00:00)[download]  459.90KiB at   10.86MiB/s (00:00:00)[download] 100% of  459.90KiB in 00:00:00 at 2.13MiB/s

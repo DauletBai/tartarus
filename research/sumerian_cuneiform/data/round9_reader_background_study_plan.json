@@ -1,0 +1,10 @@
+{
+  "status": "Proposed study design only; no participants recruited or results collected",
+  "question": "Does native-language experience help readers identify and model an agglutinative inscription after controlling for training in the script?",
+  "profiles": "Record all fluent languages, native and learned; knowledge of Kazakh and other agglutinative morphology; actual cuneiform experience; prior exposure to each inscription. Avoid treating national identity as language competence.",
+  "matching": "Compare readers with similar training in sign identification and equal access to source images. Keep previous exposure to translations as a separate variable.",
+  "procedure": ["preselect high-resolution photos and an unreadable negative control before content analysis", "collect image-only annotations with neutral sign IDs", "freeze proposed boundaries and recurrence predictions", "evaluate those predictions on held-out views or witnesses", "then collect explicit competing sound and meaning hypotheses", "check each hypothesis against separately held-out ancient phonetic/bilingual evidence, retaining ambiguity"],
+  "outcomes": ["agreement on visible marks and reproducible boundaries, without calling agreement truth", "successful versus failed predictions on held-out material", "unresolved cases", "changes made after access to other editions", "number of ad hoc rule changes needed for each language hypothesis"],
+  "prohibited_shortcuts": ["do not score conventional translations as unquestioned ground truth", "do not score Kazakh resemblance as unquestioned ground truth", "do not count reading the same edition twice as independent confirmation", "do not claim reader-group effects without actual comparable participant data"],
+  "limits": "No available experiment in this project establishes a native-language effect yet; image structure alone does not uniquely determine pronunciation or meaning"
+}

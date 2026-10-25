@@ -1,0 +1,110 @@
+{
+  "date": "2026-10-25",
+  "artifact": "OIM A02480 / P391514",
+  "source": "Hallock1940 AS7, PDF96, PlateI, scanned photographic plate, not drawn plateV",
+  "small_catalogue_photo": "OIMP32 PDF97 printed95, embedded490x612; insufficient for local sound-value verification",
+  "source_photo_dimensions": [
+    2621,
+    3487
+  ],
+  "native_crop": {
+    "file": "data/round15b_CS_right_upper_native.png",
+    "source_file": "data/round15b_AS7_photoplates_native-000.png",
+    "box_xyxy": [
+      1140,
+      340,
+      2170,
+      1840
+    ],
+    "dimensions": [
+      1030,
+      1500
+    ],
+    "method": "native crop of scanned embedded photograph; no sharpening, upscaling or restored strokes"
+  },
+  "observations": [
+    "Parallel vertical lanes are visible, with horizontal alignment of wedge groups. Some regions are broken or worn.",
+    "A narrow repeated frame-like motif is visible in one lane beside differently shaped/wider groups in a neighbouring lane. Exact sign boundaries and identity remain tentative.",
+    "A further lane contains small repeated shapes and large blank stretches, while the outer lane contains longer varying clusters. Do not translate these shapes from appearance alone."
+  ],
+  "example_rows_in_crop": [
+    {
+      "id": "CS-R1",
+      "box_xyxy": [
+        0,
+        75,
+        970,
+        135
+      ],
+      "lane_boxes": [
+        [
+          0,
+          75,
+          210,
+          135
+        ],
+        [
+          210,
+          75,
+          410,
+          135
+        ],
+        [
+          410,
+          75,
+          635,
+          135
+        ],
+        [
+          635,
+          75,
+          970,
+          135
+        ]
+      ],
+      "result": "approximate horizontal correspondence; no phonetic value assigned"
+    },
+    {
+      "id": "CS-R2",
+      "box_xyxy": [
+        0,
+        135,
+        970,
+        200
+      ],
+      "lane_boxes": [
+        [
+          0,
+          135,
+          210,
+          200
+        ],
+        [
+          210,
+          135,
+          410,
+          200
+        ],
+        [
+          410,
+          135,
+          635,
+          200
+        ],
+        [
+          635,
+          135,
+          970,
+          200
+        ]
+      ],
+      "result": "approximate horizontal correspondence; repeated motif family not asserted as canonical identity"
+    }
+  ],
+  "quality_result": "improved photograph permits local graphic/column comparison; exact independent syllabic values not established",
+  "source_roles": "Catalogue describes pronunciation/sign/sign-name/Akkadian-value subcolumns. These are editorial interpretations, separate from the observation of lanes.",
+  "prior": "Catalogue roles and limited OCRkeyword searches in the modern edition already exposed; not a blind decipherment. Drawn PlateV inspected separately and never substituted for photo.",
+  "chronology": "First-millennium/Neo-Babylonian catalogue attribution; cannot directly project readings to fourth-millennium accounts",
+  "phonetic_values": null,
+  "full_translation": null
+}

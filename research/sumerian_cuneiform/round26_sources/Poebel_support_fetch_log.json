@@ -1,0 +1,14 @@
+[
+  {
+    "file": "Poebel1914_OCR.txt",
+    "url": "https://dn760001.eu.archive.org/0/items/historicalandgr00sectgoog/historicalandgr00sectgoog_djvu.txt",
+    "returncode": 28,
+    "error": "curl: (28) Failed to connect to dn760001.eu.archive.org port 443 after 10008 ms: Timeout was reached\n"
+  },
+  {
+    "file": "Poebel1914_files.xml",
+    "url": "https://dn760001.eu.archive.org/0/items/historicalandgr00sectgoog/historicalandgr00sectgoog_files.xml",
+    "returncode": 28,
+    "error": "curl: (28) Failed to connect to dn760001.eu.archive.org port 443 after 10008 ms: Timeout was reached\n"
+  }
+]

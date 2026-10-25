@@ -1,0 +1,6 @@
+﻿qid,pattern,line,refs,first_sign_index,signs,inside_one_editorial_word,words,before,after,analyses
+Q000873,GABA_BA_A,10,Q000873.10.1 Q000873.10.2,41,GABA BA A,False,gaba-ba id₅,nam tar-re-da e₂ mu-na-du₃,bi₂-in-gen₆ mu-be₂ pa bi₂-in-e₃,gaba:N | id:N
+Q000873,A_NE_IN,10,Q000873.10.2 Q000873.10.3,43,A NE IN,False,id₅ bi₂-in-gen₆,tar-re-da e₂ mu-na-du₃ gaba-ba,mu-be₂ pa bi₂-in-e₃,id:N | gin:V/i
+Q000873,A_NE_IN_GI,10,Q000873.10.2 Q000873.10.3,43,A NE IN GI,False,id₅ bi₂-in-gen₆,tar-re-da e₂ mu-na-du₃ gaba-ba,mu-be₂ pa bi₂-in-e₃,id:N | gin:V/i
+Q000873,NE_IN_GI,10,Q000873.10.3,44,NE IN GI,True,bi₂-in-gen₆,e₂ mu-na-du₃ gaba-ba id₅,mu-be₂ pa bi₂-in-e₃,gin:V/i
+Q001625,NE_IN_GI,i 12,Q001625.12.2,85,NE IN GI,True,he₂-bi₂-in-ge-en,di niŋ₂-gen₆-na {d}utu-ta inim,uŋ₃-be₂ šukur₂ ha-ba-an-šum₂ bulug-bi,gin:V/i

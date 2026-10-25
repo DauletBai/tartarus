@@ -1,0 +1,13 @@
+{
+  "recorded_date": "2026-10-24",
+  "status": "local prospective plan recorded after metadata inspection but before a new corpus-wide word-form search",
+  "snapshot_sha256": "66991601df193a5cb93bccf92e9051e86a98fbb668a9dd343477d14f0c9d54d6",
+  "unit": "editorial word occurrence in an ETCSRI composite Q text, not a physical tablet or an independent ancient utterance",
+  "scope": "all available corpusjson/Q*.json in the archived project bundle; only Sumerian lexical nodes; preserve missing and ambiguous annotation",
+  "tests": ["count visible forms ending in -a-ni", "count forms whose project nominal morphology marks N3=ani", "cross-tabulate both sets", "count different dictionary bases and compositions", "retain visible lookalikes without the project possessive analysis", "retain possessive analyses with other visible spellings"],
+  "excluded_inferences": ["no ancestry percentage", "no inference of ethnic origin", "no claim of independent decipherment", "no silent substitution for the 20-physical-object protocol"],
+  "statistical_scope": "descriptive census of a curated editorial corpus, no population p-value",
+  "stop_rule": "one local batch plus integrity checks and a saved report; no automatic repetition and no paid API fallback",
+  "known_earlier_examples": ["Q000954", "Gudea 102 as described in a previously read article"],
+  "limits": "Corpus selection and morphological labels encode editorial hypotheses; lexical bases and dates are not independently established by this count."
+}

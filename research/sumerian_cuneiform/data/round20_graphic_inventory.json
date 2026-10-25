@@ -1,0 +1,208 @@
+{
+  "created_at": "2026-10-25T12:37:13.342117+05:00",
+  "author_priority": "Inventory before words/syllables; no phonetic values assigned",
+  "geometric_trace_categories": [
+    {
+      "code": "P01",
+      "shape": "Прямой узкий рез/борозда",
+      "caution": "Форма следа; один видимый отрезок не обязательно равен одному движению инструмента."
+    },
+    {
+      "code": "P02",
+      "shape": "Криволинейный рез/дуга/контур",
+      "caution": "Замыкание и контакты уточняются по снимку; не назначено фонетическое значение."
+    },
+    {
+      "code": "P03",
+      "shape": "Угловатый/заострённый след",
+      "caution": "Может быть сочетанием прямых резов; не объявлен минимальным знаком."
+    },
+    {
+      "code": "P04",
+      "shape": "Глубокое заострённое углубление",
+      "caution": "Это категория формы; числовое значение не назначено."
+    },
+    {
+      "code": "P05",
+      "shape": "Округлое углубление",
+      "caution": "Не путать с повреждением; статус определяется по повторению и сохранности."
+    }
+  ],
+  "inventory": [
+    {
+      "code": "G01",
+      "description": "Заострённый угловатый контур с внутренними штрихами",
+      "visible_decomposition": "Не менее двух сходящихся сторон; замыкание и внутренние штрихи проверяются отдельно",
+      "evidence": "C01,C02,C03; грубые сходства A08,A10,A12,A14,A15",
+      "image_or_crop": "data/round19_C01_native.jpg",
+      "status": "provisional_graphic_type",
+      "uncertainty": "Семейство, не доказанный один знак; внутренние детали и замыкание варьируют.",
+      "sound": null,
+      "syllable": null,
+      "word_meaning": null,
+      "canonical_identity": null
+    },
+    {
+      "code": "G02a",
+      "description": "Стоячий штрих с одним коротким ответвлением вправо",
+      "visible_decomposition": "P01 + P01; сохранять ориентацию",
+      "evidence": "C04; кандидат A12",
+      "image_or_crop": "data/round19_C04_native.jpg",
+      "status": "provisional_graphic_type",
+      "uncertainty": "Контакт с линиями разметки должен быть исключён.",
+      "sound": null,
+      "syllable": null,
+      "word_meaning": null,
+      "canonical_identity": null
+    },
+    {
+      "code": "G02b",
+      "description": "Похожая конструкция с загнутым нижним участком",
+      "visible_decomposition": "Как G02a + криволинейный нижний участок",
+      "evidence": "C05",
+      "image_or_crop": "data/round19_C05_native.jpg",
+      "status": "provisional_graphic_type",
+      "uncertainty": "Нижний загиб может быть частью соседнего следа; не слит с G02a автоматически.",
+      "sound": null,
+      "syllable": null,
+      "word_meaning": null,
+      "canonical_identity": null
+    },
+    {
+      "code": "G03",
+      "description": "Округлый контур с поперечным штрихом",
+      "visible_decomposition": "P02 + P01",
+      "evidence": "C06",
+      "image_or_crop": "data/round19_C06_native.jpg",
+      "status": "provisional_graphic_type",
+      "uncertainty": "Округлый контур сам по себе недостаточен для тождества.",
+      "sound": null,
+      "syllable": null,
+      "word_meaning": null,
+      "canonical_identity": null
+    },
+    {
+      "code": "G04",
+      "description": "Округлый контур с угловатым внутренним рисунком",
+      "visible_decomposition": "P02 + несколько угловатых внутренних участков",
+      "evidence": "C07",
+      "image_or_crop": "data/round19_C07_native.jpg",
+      "status": "provisional_graphic_type",
+      "uncertainty": "Точное число движений инструмента по фотографии не установлено.",
+      "sound": null,
+      "syllable": null,
+      "word_meaning": null,
+      "canonical_identity": null
+    },
+    {
+      "code": "G05",
+      "description": "Округлый контур, поперечина и нисходящий штрих",
+      "visible_decomposition": "P02 + P01 + P01",
+      "evidence": "C08",
+      "image_or_crop": "data/round19_C08_native.jpg",
+      "status": "provisional_graphic_type",
+      "uncertainty": "Контакт нисходящего штриха с контуром неясен; две топологические модели.",
+      "sound": null,
+      "syllable": null,
+      "word_meaning": null,
+      "canonical_identity": null
+    },
+    {
+      "code": "G06",
+      "description": "Малый овал с короткими внутренними поперечинами",
+      "visible_decomposition": "P02 + не менее двух ясных P01; возможный третий",
+      "evidence": "C09",
+      "image_or_crop": "data/round19_C09_native.jpg",
+      "status": "provisional_graphic_type",
+      "uncertainty": "Количество и контакты штрихов не зафиксированы как точная числовая величина.",
+      "sound": null,
+      "syllable": null,
+      "word_meaning": null,
+      "canonical_identity": null
+    },
+    {
+      "code": "G07",
+      "description": "Четырёхсторонняя рамка с внутренними перекладинами",
+      "visible_decomposition": "Наружная угловатая рамка + внутренние P01",
+      "evidence": "Два фрагмента A11",
+      "image_or_crop": "data/round20_G07a_native.jpg",
+      "status": "provisional_graphic_type",
+      "uncertainty": "Не объединяется с овалом G06 только из-за поперечин.",
+      "sound": null,
+      "syllable": null,
+      "word_meaning": null,
+      "canonical_identity": null
+    },
+    {
+      "code": "G08",
+      "description": "Стоячая конструкция с предполагаемыми несколькими ответвлениями",
+      "visible_decomposition": "Разложение не определено",
+      "evidence": "A07, фрагмент G08",
+      "image_or_crop": "data/round20_G08_native.jpg",
+      "status": "segmentation_unresolved",
+      "uncertainty": "После увеличения нельзя уверенно отделить ответвления от рамки/нижнего участка; не засчитывается как подтверждённый отдельный тип.",
+      "sound": null,
+      "syllable": null,
+      "word_meaning": null,
+      "canonical_identity": null
+    },
+    {
+      "code": "G09",
+      "description": "Пучок коротких параллельных резов без замкнутой рамки",
+      "visible_decomposition": "Повтор P01; видимое количество в примере около пяти-шести",
+      "evidence": "A11, фрагмент G09",
+      "image_or_crop": "data/round20_G09_native.jpg",
+      "status": "provisional_graphic_type",
+      "uncertainty": "Верхний/нижний рез может быть границей поля; количественное значение не назначено.",
+      "sound": null,
+      "syllable": null,
+      "word_meaning": null,
+      "canonical_identity": null
+    },
+    {
+      "code": "G10",
+      "description": "Отдельное глубокое заострённое углубление",
+      "visible_decomposition": "P04; внутренний след не установлен",
+      "evidence": "A11 и A14; фрагмент G10 из A14",
+      "image_or_crop": "data/round20_G10_native.jpg",
+      "status": "provisional_graphic_type",
+      "uncertainty": "Роль неизвестна: не объявлен ни буквой, ни единицей счёта.",
+      "sound": null,
+      "syllable": null,
+      "word_meaning": null,
+      "canonical_identity": null
+    },
+    {
+      "code": "G11",
+      "description": "Округлый контур со стоячей внутренней чертой",
+      "visible_decomposition": "P02 + близкий к вертикальному P01",
+      "evidence": "Два соседних примера A06",
+      "image_or_crop": "data/round20_G11_native.jpg",
+      "status": "provisional_graphic_type",
+      "uncertainty": "Не считается строгим совпадением G03 при разрешённом задним числом повороте.",
+      "sound": null,
+      "syllable": null,
+      "word_meaning": null,
+      "canonical_identity": null
+    },
+    {
+      "code": "G12",
+      "description": "Заострённая рамка с плотным внутренним расчленением",
+      "visible_decomposition": "P03/сходящиеся стороны + несколько пересечений P01",
+      "evidence": "A12, фрагмент G12",
+      "image_or_crop": "data/round20_G12_native.jpg",
+      "status": "provisional_graphic_type",
+      "uncertainty": "Внешнее сходство с G01 не доказывает одинакового звука или функции.",
+      "sound": null,
+      "syllable": null,
+      "word_meaning": null,
+      "canonical_identity": null
+    }
+  ],
+  "counts": {
+    "working_graphic_types": 12,
+    "unresolved_candidate": 1,
+    "phonetic_values": 0
+  },
+  "scope": "Not all ancient signs; local inventory from selected photographs. Original6-family heldout test retained separately; G02 refinement is subsequent and not used to rewrite frozen criteria."
+}

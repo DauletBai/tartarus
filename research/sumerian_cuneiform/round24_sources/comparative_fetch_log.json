@@ -1,0 +1,20 @@
+[
+  {
+    "file": "K3375_eBL.json",
+    "url": "https://www.ebl.lmu.de/api/fragments/K.3375",
+    "returncode": 0,
+    "error": ""
+  },
+  {
+    "file": "Yale_lecture4.html",
+    "url": "https://oyc.yale.edu/religious-studies/rlst-145/lecture-4",
+    "returncode": 0,
+    "error": ""
+  },
+  {
+    "file": "Gilgamesh_BM_GAC.html",
+    "url": "https://artsandculture.google.com/asset/the-flood-tablet-relating-part-of-the-epic-of-gilgamesh/wQGL1dmyVmXRYA?hl=en-GB",
+    "returncode": 0,
+    "error": ""
+  }
+]

@@ -1,0 +1,15 @@
+{
+  "date": "2026-10-25",
+  "stage": "round12b",
+  "relationship": "Separate non-blind targeted source audit after the early-tablet graph-first test; no new blind claim.",
+  "reason": "The existing editorial model spells ama with one main graph and adda with two ad-da graphs. This must be audited on physical witnesses rather than accepted from Latin strings.",
+  "selection": "First two listed Q000999 witnesses, P135177 and P226721, in the frozen catalogue order. Q000959 first adda occurrence is restored/damaged and retained as such rather than used as complete evidence.",
+  "prior": "Composition and proposed reading/meaning known; images not yet inspected.",
+  "questions": [
+    "Is each catalogue record actually a physical witness to Q000999?",
+    "What photo/drawing material is available?",
+    "Can the target pair be visually localized and separated without pretending to establish its pronunciation?"
+  ],
+  "stop": "At most first available photo among those two; keep unavailable outcomes; no replacement by third record.",
+  "limits": "Unicode signs and catalogue labels are editorial aids; none is an independent image or a direct audio record."
+}

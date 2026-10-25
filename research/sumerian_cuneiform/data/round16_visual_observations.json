@@ -1,0 +1,20 @@
+{
+  "photo_source": "data/round15b_AS7_photoplates_native-000.png",
+  "photo_pdf_page": 96,
+  "photo_plate": "I",
+  "inspected_crop": "data/round15b_CS_right_upper_native.png",
+  "drawing_source": "data/round15b_AS7_page100_preview.png",
+  "drawing_pdf_page": 100,
+  "drawing_plate": "V",
+  "observations": [
+    "Four vertical lanes visible on photographed right half.",
+    "In upper block, lane2 repeats a narrow complex with a horizontal core, oblique elements at left, and upright elements toward right. Damage and photographic blur prevent a full wedge-by-wedge collation.",
+    "Lane1 groups vary; adjacent right lanes show explicit complexes on some rows and abbreviated marks on others.",
+    "Lower block changes the repeated lane2 complex; the modern autograph places the transition at CS87. Exact photographic row assignment is edition-assisted, not a new independent line count.",
+    "G1 and G2 are neutral working complex labels, not newly proved sign boundaries or sound values.",
+    "BM93042 CT12 copy shows repeated related complexes in reverse upper-middle block, with variable left entries. Its photograph was not obtained.",
+    "Do not mistake modern typographic ditto marks for literal ancient punctuation; CT12 drawing includes paired wedge-like marks in repeated fields. Their function still needs photographic verification."
+  ],
+  "confidence": "Partial graphical agreement only; no independent phonetic decoding",
+  "prior_exposure": "Modern OCR and earlier photographs viewed before this cycle; selection and collation not blind."
+}

@@ -1,0 +1,17 @@
+﻿word_id,editorial_form,lemma,editorial_morph_model,raw_annotation
+Q000954.1.1,{d}inana,Inanak,Inanak,Inanak[1//1]DN'DN$Inanak/{d}inana#N1=Inanak##N1=NAME
+Q000954.2.1,nin,nin,nin,nin[lady//lady]N'N$nin/nin#N1=nin##N1=STEM
+Q000954.2.2,e₂-an-na,Eanak,Eanak.ak,Eanak[1//1]TN'TN$Eanak.ak/e₂-an-na#N1=Eanak.N5=ak##N1=NAME.N5=GEN
+Q000954.3.1,nin-a-ni,nin,nin.ani.ra,nin[lady//lady]N'N$nin.ani.ra/nin#N1=nin.N3=ani.N5=ra##N1=STEM.N3=3-SG-H-POSS.N5=DAT-H
+Q000954.4.1,ur-{d}namma,Urnammak,Urnammak,Urnammak[1//1st king of the 3rd dynasty of Urim]RN'RN$Urnammak/ur-{d}namma#N1=Urnammak##N1=NAME
+Q000954.5.1,nita,nita,nita,nita[male//male]N'N$nita/nita#N1=nita##N1=STEM
+Q000954.5.2,kalag-ga,kalag,kalag.'a,kalag[strong//strong]V/i'V/i$kalag.'a/kalag#NV2=kalag.NV4='a##NV2=STEM.NV4=SUB
+Q000954.6.1,lugal,lugal,lugal,lugal[king//king]N'N$lugal/lugal#N1=lugal##N1=STEM
+Q000954.6.2,urim₅{ki}-ma,Urim,Urim.ak,Urim[1//1]SN'SN$Urim.ak/urim₅{ki}#N1=Urim.N5=ak##N1=NAME.N5=GEN
+Q000954.7.1,lugal,lugal,lugal,lugal[king//king]N'N$lugal/lugal#N1=lugal##N1=STEM
+Q000954.7.2,ki-en-gi,Kiengir,Kiengir,Kiengir[1//1]GN'GN$Kiengir/ki-en-gi#N1=Kiengir##N1=NAME
+Q000954.7.3,ki-uri-ke₄,Akkad,Akkad.ak.e,Akkad[1//1]GN'GN$Akkad.ak.e/ki-uri#N1=Akkad.N5=ak.N5=e##N1=NAME.N5=GEN.N5=ERG
+Q000954.8.1,e₂-a-ni,e,e.ani.ø,"e[house//house, temple]N'N$e.ani.ø/e₂#N1=e.N3=ani.N5=ø##N1=STEM.N3=3-SG-H-POSS.N5=ABS"
+Q000954.9.1,mu-na-du₃,du,mu.nn.a.n.du.ø,du[build//to build]V/t'V/t$mu.nn.a.n.du.ø/du₃#V4=mu.V6=nn.V7=a.V11=n.V12=du.V14=ø##V4=VEN.V6=3-SG-H.V7=DAT.V11=3-SG-H-A.V12=STEM.V14=3-SG-P
+Q000954.10.1,ki-be₂,ki,ki.bi.e,ki[place//place]N'N$ki.bi.e/ki#N1=ki.N3=bi.N5=e##N1=STEM.N3=3-SG-NH-POSS.N5=L3-NH
+Q000954.10.2,mu-na-gi₄,gi,mu.nn.a.n.gi.ø,gi[turn//turn]V/i'V/i$mu.nn.a.n.gi.ø/gi₄#V4=mu.V6=nn.V7=a.V11=n.V12=gi.V14=ø##V4=VEN.V6=3-SG-H.V7=DAT.V11=3-SG-H-A.V12=STEM.V14=3-SG-P

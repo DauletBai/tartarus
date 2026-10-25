@@ -1,0 +1,58 @@
+{
+  "created_at": "2026-10-25T16:02:45.490845+05:00",
+  "individual_readings_opened": false,
+  "heldout_pixels_opened": false,
+  "images": [
+    {
+      "label": "U01",
+      "notes": "Multi-view tablet. Main face worn in upper section; lower part has shorter repeated wedge groups and near-horizontal separators. Opposite face partly smooth. Modern inventory ink excluded."
+    },
+    {
+      "label": "U02",
+      "notes": "Main face shows repeated elongated wedge traces and stacks; horizontal separators clearer than individual sign boundaries. Back mostly smooth with a short inscribed upper portion."
+    },
+    {
+      "label": "U03",
+      "notes": "Weathered, dark-speckled surface with many indistinct contacts; good negative readability control, not evidence of absent signs."
+    },
+    {
+      "label": "U04",
+      "notes": "Best preserved development image. Repeated stacked-horizontal-plus-standing-trace configurations near bottom of main face and possible related form near lower opposite face. Curved/fan-like internally hatched groups also recur, but exact contour closure uncertain."
+    }
+  ],
+  "token_reviews": [
+    {
+      "token": "F1",
+      "source": "U04 main face lower band",
+      "observations": "Three approximately horizontal traces and steep right-hand stroke appear together; no full-height field rule at this position.",
+      "status": "candidate_whole_complex"
+    },
+    {
+      "token": "F2",
+      "source": "U04 adjacent lower-band region",
+      "observations": "Similar three-trace arrangement beside a steep stroke. Similarity supports keeping full configuration as candidate, not splitting automatically.",
+      "status": "candidate_repeat"
+    },
+    {
+      "token": "F3",
+      "source": "U04 opposite face lower region",
+      "observations": "Crop includes neighbouring marks; some corresponding traces are obscured. No exact three-trace count asserted.",
+      "status": "partial_candidate"
+    },
+    {
+      "token": "P1",
+      "observations": "Near-parallel interior traces inside curved/angular fan-like perimeter; count and contour contacts uncertain.",
+      "status": "candidate_complex"
+    },
+    {
+      "token": "P2",
+      "observations": "Related hatch/curve shape, close to separate right-hand traces; alternative boundary retained.",
+      "status": "candidate_variant_not_merged"
+    },
+    {
+      "token": "P3",
+      "observations": "Short stack without same obvious enclosing perimeter; retained as control rather than forced P1/P2 identity.",
+      "status": "control_pattern"
+    }
+  ]
+}

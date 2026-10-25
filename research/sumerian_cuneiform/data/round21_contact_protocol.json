@@ -1,0 +1,24 @@
+{
+  "created_at": "2026-10-25T15:59:51.965611+05:00",
+  "questions": [
+    "Does contour orientation remain stable within an individual photograph?",
+    "Do putative interior lines meet the contour, remain detached, or coincide with a field boundary?",
+    "Can a repeated multi-stroke configuration be separated from neighbouring strokes without relying on a known sign name?"
+  ],
+  "features": [
+    "enclosure closed/open/uncertain",
+    "interior strokes count interval, not guessed exact count",
+    "contact graph and ambiguous intersections",
+    "screen orientation, without assuming ancient reading direction",
+    "spacing and border proximity",
+    "same-image recurrence versus cross-object resemblance"
+  ],
+  "rules": [
+    "Modern ink excluded",
+    "A dark triangular area can be shadow; require visible raised/depressed boundary when available",
+    "A trace crossing candidate boundary is recorded, not clipped to improve match",
+    "Rotation-invariant topological similarity is separate from oriented similarity",
+    "No word/syllable values assigned"
+  ],
+  "source_strata": "Earlier15 sources treated as early graphical stratum by catalogue only; new UrIII/Sumerian-labelled sample kept separate until justified correspondences."
+}

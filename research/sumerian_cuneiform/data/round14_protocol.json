@@ -1,0 +1,53 @@
+{
+  "date": "2026-10-25",
+  "stage": "round14",
+  "batch_goal": "Complete a bounded multi-object graphic-analysis cycle: field annotation, recurring graphic candidates, held-out comparison, editorial audit and model assessment. No request for user approval between substeps.",
+  "focal": "Met327384 / MMA1988.433.2 / P005390; all individual readings already known, no blind claim.",
+  "comparison_frame": [
+    {
+      "met_object_id": 327383,
+      "expected_accession": "1988.433.1"
+    },
+    {
+      "met_object_id": 327385,
+      "expected_accession": "1988.433.3"
+    }
+  ],
+  "selection": "Neighbouring accession numbers1 and3 around focal2; verify identity and period from official API; retain mismatch/unavailable outcome. First two distinct API image URLs for each object, unless a URL fails, in which case record failure and do not quietly replace it.",
+  "prior": "General museum titles may have appeared in earlier searches. No individual comparison-object editorial transliteration has been opened in this round. Thus image-first, not fully semantically blind.",
+  "graphic_templates_before_new_views": [
+    {
+      "id": "R14-R1",
+      "features": "roughly round depression; preserve small/large/depth distinctions, no numerical value assigned"
+    },
+    {
+      "id": "R14-B1",
+      "features": "axis with multiple oblique side branches; shape-family only, not a proven canonical sign"
+    },
+    {
+      "id": "R14-V1",
+      "features": "angular outline with multiple longitudinal internal strokes; retain compound/adjacent alternatives"
+    },
+    {
+      "id": "R14-A1",
+      "features": "paired bent or stepped strokes; no assumed phonetic identity"
+    }
+  ],
+  "annotation_rule": "Use approximate pixel boxes and view-local panel IDs; topological fields are not automatically words or clauses. Mark boundary uncertainty, wear and possible seal impressions separately. Do not claim every wedge is segmented.",
+  "held_out_prediction": "Check branch family B1 and round family R1 in both new objects; record present/absent/unresolved independently of translation; other categories may be added only as post-inspection exploratory categories.",
+  "candidate_tests": [
+    "Does the same proposed graphic family recur across separate physical objects?",
+    "Are counts of visible impressions distinct from counts of represented quantities?",
+    "Can the observations choose alphabetic vs syllabic vs logographic vs mixed/nonphonetic-account models?",
+    "Can values of numerical classes be inferred without independent equation/total constraints?"
+  ],
+  "post_freeze": "Save observations and source hashes before individual editorial text for each new object. Then use a separate audit layer, retaining disagreements and missing evidence.",
+  "bounds": "Three objects total; maximum six original images counting two focal images. Complete reports/data and self-checks in this turn. Missing phonetic evidence recorded, not replaced by guessed sounds.",
+  "not_claimed": [
+    "Exhaustive world corpus",
+    "Independent full translation",
+    "Alphabet size",
+    "Genetic linguistic direction",
+    "Known date or language from appearance alone"
+  ]
+}

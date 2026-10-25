@@ -1,0 +1,76 @@
+{
+  "date": "2026-10-25",
+  "status": "post-editorial exploratory arithmetic, not a blind phonetic decipherment",
+  "focal": {
+    "artifact": "P005390",
+    "assumption": "reverse1.1.a is additive parent of1.1.b1 and1.1.b2; must be checked against layout and genre",
+    "total_vector": {
+      "N01": 3,
+      "N14": 5,
+      "N45": 2
+    },
+    "component_vectors": [
+      {
+        "N14": 7,
+        "N45": 1
+      },
+      {
+        "N01": 3,
+        "N14": 8
+      }
+    ],
+    "total_minus_components": {
+      "N14": -10,
+      "N45": 1
+    },
+    "conditional_relation": "weight(N45)=10*weight(N14)",
+    "what_is_not_determined": "N14/N01 ratio is not determined by this equation; words, pronunciation and units in litres not determined",
+    "external_model_reference": "Englund2004 Figure4b printed33: SE system N45=10*N14,N14=6*N1",
+    "external_weights_in_N1_units": {
+      "N45": 60,
+      "N14": 6,
+      "N01": 1
+    },
+    "values": [
+      153,
+      102,
+      51
+    ],
+    "sum_holds": true,
+    "alternative_S_model_reference": "Englund2004 Figure4a printed32",
+    "alternative_S_values": [
+      7253,
+      3670,
+      83
+    ],
+    "alternative_S_sum_holds": false
+  },
+  "comparison": {
+    "artifact": "P005366",
+    "source_cells": [
+      "obverse1.1.b",
+      "obverse1.2.b",
+      "reverse1.2"
+    ],
+    "left": {
+      "N18": 2
+    },
+    "right": {
+      "N03": 4,
+      "N40": 1
+    },
+    "total": {
+      "N03": 4,
+      "N18": 2,
+      "N40": 1
+    },
+    "symbolic_equation": "2*A + (4*B+C) = 2*A+4*B+C",
+    "holds_without_unit_weights": true,
+    "limit": "This preserves a formal inventory of editorial numeral classes. It is not an independent photographic verification of each class or proof of phonetic readings."
+  },
+  "limits": [
+    "Additive-parent interpretation is a hypothesis, not a consequence of a Latin subcell label alone.",
+    "Numerical-system tables were consulted during verification; no fully blind rediscovery claim.",
+    "Two different measurement systems cannot be conflated because sign names overlap."
+  ]
+}

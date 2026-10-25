@@ -1,0 +1,17 @@
+{
+  "date": "2026-10-25",
+  "editorial_cells": 14,
+  "target_layer_audit_rows": 62,
+  "ama_editorial_occurrences": 57,
+  "adda_editorial_occurrences": 5,
+  "new_graph_first_object": "MMA1988.433.2 / P005390",
+  "official_views_inspected": 2,
+  "independent_phonetic_readings": 0,
+  "independent_complete_translations": 0,
+  "limits": [
+    "Object/title prior already known; no semantic-blind claim.",
+    "Spatial amendment preserves the original frozen record.",
+    "N-labels and sign-list labels are editorial hypotheses, not observed pronunciation.",
+    "Drawing-only availability is not proof that no photograph exists anywhere."
+  ]
+}

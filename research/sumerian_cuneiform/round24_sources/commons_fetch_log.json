@@ -1,0 +1,20 @@
+[
+  {
+    "file": "commons_Adda.json",
+    "url": "https://commons.wikimedia.org/w/api.php?action=query&format=json&generator=search&gsrsearch=Adda+seal&gsrnamespace=6&gsrlimit=3&prop=imageinfo&iiprop=url%7Cextmetadata&iiurlwidth=1800",
+    "returncode": 0,
+    "error": ""
+  },
+  {
+    "file": "commons_AdamEve.json",
+    "url": "https://commons.wikimedia.org/w/api.php?action=query&format=json&generator=search&gsrsearch=File%3ACylinder+seal+BM+89326.jpg&gsrnamespace=6&gsrlimit=3&prop=imageinfo&iiprop=url%7Cextmetadata&iiurlwidth=1800",
+    "returncode": 0,
+    "error": ""
+  },
+  {
+    "file": "commons_StandardUr.json",
+    "url": "https://commons.wikimedia.org/w/api.php?action=query&format=json&generator=search&gsrsearch=Standard+of+Ur+war&gsrnamespace=6&gsrlimit=3&prop=imageinfo&iiprop=url%7Cextmetadata&iiurlwidth=1800",
+    "returncode": 0,
+    "error": ""
+  }
+]

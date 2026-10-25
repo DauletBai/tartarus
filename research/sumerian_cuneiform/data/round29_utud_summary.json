@@ -1,0 +1,28 @@
+{
+  "parsed_files": 1456,
+  "failed_files": [
+    "etcsri/corpusjson/Q001066.json"
+  ],
+  "tokens": 92,
+  "compositions": 57,
+  "forms": {
+    "tud-da": 27,
+    "ne₂-tud-e": 1,
+    "ma-a-u₃-tu₉-e": 1,
+    "mu-ni-tud": 1,
+    "u₃-tud-da": 2,
+    "u₃-tud-da-ta": 1,
+    "du₃-du₃-a-da": 1,
+    "ba-tud-da-me": 1,
+    "mu-tud": 49,
+    "u₃-na-tud": 1,
+    "tud-da-ni": 2,
+    "mu-ni-tud-da-a": 1,
+    "mu-ni-du₁₀-du₁₀": 3,
+    "tu₂-ŋu₁₀-ra": 1
+  },
+  "citation_forms": {
+    "utud": 92
+  },
+  "selection": "exact f.cf in ['utud','tud']"
+}

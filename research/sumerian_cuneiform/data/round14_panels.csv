@@ -1,0 +1,30 @@
+﻿view,object,panel,box,description,blank_control,boundary_status
+T0A,327384,A1,"[20, 30, 470, 550]",Верхнее левое поле; часть границы возле ветвистой группы неоднозначна,False,approximate viewing region; not a claim of canonical word or ancient cell boundary
+T0A,327384,A2,"[390, 30, 620, 550]",Верхнее среднее поле,False,approximate viewing region; not a claim of canonical word or ancient cell boundary
+T0A,327384,A3,"[615, 40, 850, 335]",Верхнее правое поле,False,approximate viewing region; not a claim of canonical word or ancient cell boundary
+T0A,327384,A4,"[610, 330, 975, 545]",Среднее правое поле и край,False,approximate viewing region; not a claim of canonical word or ancient cell boundary
+T0A,327384,A5,"[20, 535, 780, 950]",Широкое нижнее поле слева,False,approximate viewing region; not a claim of canonical word or ancient cell boundary
+T0A,327384,A6,"[760, 520, 985, 950]",Правый нижний край; возможны отдельные подячейки,False,approximate viewing region; not a claim of canonical word or ancient cell boundary
+T0B,327384,B1,"[30, 40, 355, 355]",Верхнее левое поле,False,approximate viewing region; not a claim of canonical word or ancient cell boundary
+T0B,327384,B2,"[350, 20, 985, 360]",Верхнее широкое поле,False,approximate viewing region; not a claim of canonical word or ancient cell boundary
+T0B,327384,B3,"[30, 350, 355, 720]",Левое среднее поле,False,approximate viewing region; not a claim of canonical word or ancient cell boundary
+T0B,327384,B4,"[350, 350, 615, 725]",Среднее поле круглых вдавлений,False,approximate viewing region; not a claim of canonical word or ancient cell boundary
+T0B,327384,B5,"[610, 350, 985, 725]",Правое среднее поле с повреждением слева,False,approximate viewing region; not a claim of canonical word or ancient cell boundary
+T0B,327384,B6,"[30, 715, 985, 975]",Нижнее широкое поле,False,approximate viewing region; not a claim of canonical word or ancient cell boundary
+T1A,329081,C1,"[40, 40, 290, 300]",Верхнее левое поле,False,approximate viewing region; not a claim of canonical word or ancient cell boundary
+T1A,329081,C2,"[285, 40, 655, 310]",Верхнее среднее поле,False,approximate viewing region; not a claim of canonical word or ancient cell boundary
+T1A,329081,C3,"[650, 40, 965, 320]",Верхнее правое поле,False,approximate viewing region; not a claim of canonical word or ancient cell boundary
+T1A,329081,C4,"[40, 300, 290, 590]",Среднее левое поле,False,approximate viewing region; not a claim of canonical word or ancient cell boundary
+T1A,329081,C5,"[285, 305, 655, 590]",Среднее центральное поле,False,approximate viewing region; not a claim of canonical word or ancient cell boundary
+T1A,329081,C6,"[650, 310, 965, 590]",Среднее правое поле,False,approximate viewing region; not a claim of canonical word or ancient cell boundary
+T1A,329081,C7,"[40, 585, 965, 965]",Нижнее поле с линейными знаками и изобразительными следами,False,approximate viewing region; not a claim of canonical word or ancient cell boundary
+T2A,327385,D1,"[20, 50, 260, 640]",Левая колонка со сложным постоянным контуром,False,approximate viewing region; not a claim of canonical word or ancient cell boundary
+T2A,327385,D2,"[250, 50, 600, 510]",Верхнее среднее поле,False,approximate viewing region; not a claim of canonical word or ancient cell boundary
+T2A,327385,D3,"[250, 500, 605, 665]",Узкое поле под средним,False,approximate viewing region; not a claim of canonical word or ancient cell boundary
+T2A,327385,D4,"[595, 50, 980, 460]",Верхнее правое поле,False,approximate viewing region; not a claim of canonical word or ancient cell boundary
+T2A,327385,D5,"[595, 450, 980, 665]",Правое поле ниже,False,approximate viewing region; not a claim of canonical word or ancient cell boundary
+T2A,327385,D6,"[25, 660, 980, 950]",Нижняя поверхность без ясных письменных групп,True,approximate viewing region; not a claim of canonical word or ancient cell boundary
+T2B,327385,E1,"[25, 30, 390, 745]",Левое поле с повторяющимся сложным контуром,False,approximate viewing region; not a claim of canonical word or ancient cell boundary
+T2B,327385,E2,"[385, 30, 615, 750]",Среднее числоподобное поле,False,approximate viewing region; not a claim of canonical word or ancient cell boundary
+T2B,327385,E3,"[605, 30, 975, 750]",Правое поле,False,approximate viewing region; not a claim of canonical word or ancient cell boundary
+T2B,327385,E4,"[25, 745, 975, 965]",Нижняя поверхность без ясной последовательности знаков,True,approximate viewing region; not a claim of canonical word or ancient cell boundary

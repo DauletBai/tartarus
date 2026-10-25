@@ -1,0 +1,8 @@
+{
+  "data/round16_protocol.json": "a5c48feefeacbd2ef13705cfd73086d53fbd85b708883e2eda6732d6633cf342",
+  "data/round16_scope_followup.json": "ff6004826539a40fe88af9d0285a6195c63dc7cc70a4830a132ff7abe66fcfbb",
+  "data/round16_collation.csv": "d473037570e60f0ec03742e20347af5e3788afe656f60cb627718ed061e72f3a",
+  "data/round16_visual_observations.json": "c8a412fddcc8037e12ca4151fb6e0452477c3ad6748c23492b38ecd54144361e",
+  "data/round16_results.json": "751d01cd98a0d2a61e628bdf6b1d08c99c20c8e7f86438239aca2bce76ce0c31",
+  "data/round16_access_log.json": "559cc095a484187d91de7d60ac234d81329bb6a5ef6bd59211a812c26edfdfb0"
+}

@@ -1,0 +1,4 @@
+﻿pid,museum,designation,row_id,line,headword,pronunciation,main_sign,akkadian,cell_count,all_cells,has_correction,has_uncertainty,has_damage,gaba_target,has_full_ga_ba
+P227708,CBS 12719,"PBS 05, 116",P227708.24,r ii' 3',[[du₈> ]],* du-u₂,GABA,,4,r ii' 3'3' | [[du₈> ]] | * du-u₂ | GABA,False,False,False,True,False
+P227708,CBS 12719,"PBS 05, 116",P227708.25,r ii' 4',[[tuḫ> ]],* tu-uḫ₂,GABA,,4,r ii' 4'4' | [[tuḫ> ]] | * tu-uḫ₂ | GABA,False,False,False,True,False
+P227708,CBS 12719,"PBS 05, 116",P227708.26,r ii' 5',[[gaba> ]],* ga-ba!,GABA,,4,r ii' 5'5' | [[gaba> ]] | * ga-ba! | GABA,True,False,False,True,True

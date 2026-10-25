@@ -1,0 +1,12 @@
+{
+  "data/round18_protocol.json": "268f006ba0642b2a53eeebef7f4c78f97791d130872918d93663dce50b68c28e",
+  "data/round18_target_nodes.json": "8b5ec446f359525c07df5f82d968da584d79dcd0f67ab8223af29d5d338cd54e",
+  "data/round18_d_final_verb_inventory.json": "acd9e1e41c261f6946412356fdc36757152bc2d0d3d5be758fbd5fdeebb446f1",
+  "data/round18_corpus_summary.json": "baec353dd950983dc3ac2c396bfed9f4746b005950203e58467a4eea6becc285",
+  "data/round18_target_tokens.csv": "bb9d991bdd982b0a9eb0d490aae0fe46ca8da502249322ab52d1a19264a1ee94",
+  "data/round18_control_tokens.csv": "b4706f427dc01e045580f243ec0bfa5136582af0050a0783a6e3f1b5f37bd183",
+  "data/round18_editorial_variant.json": "1a9149e65f26925e7cab9a3d4fccb49775076253a167fafa1d50b3e74c90a7f1",
+  "data/round18_visual_observations.json": "e8396cbb388d448258c8076c0d18f28b27253a16ca972c790ff15a3abf4e094f",
+  "data/round18_followup_and_controls.json": "0cc1109d5ad9750ba0f482e4becf97300f0db852f7e61815d4a2170e9a995234",
+  "data/round18_crop_manifest.json": "754e77608b45b3775eb76d8a042204041a397f35ff890009bc3d032330ae40b4"
+}

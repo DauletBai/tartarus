@@ -1,0 +1,6 @@
+{
+  "created_at": "2026-10-25T12:18:38.106507+05:00",
+  "reason": "Met public search returned HTTP410 before any candidate was obtained.",
+  "fallback": "CDLI default search first100. Program extracts only artifact IDs and photo links. First photograph whose numeric artifact ID has no earlier local source/image filename is selected. No editorial text output.",
+  "representativeness": "Convenience sample, not all periods or the whole language. Date and object-specific classification remain unverified during image phase."
+}

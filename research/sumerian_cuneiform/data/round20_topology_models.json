@@ -1,0 +1,146 @@
+[
+  {
+    "name": "upright_plus_branch",
+    "vertices": [
+      "top",
+      "junction",
+      "bottom",
+      "right"
+    ],
+    "edges": [
+      [
+        "top",
+        "junction"
+      ],
+      [
+        "junction",
+        "bottom"
+      ],
+      [
+        "junction",
+        "right"
+      ]
+    ],
+    "assumption": "All3 visible branches connect at one junction.",
+    "degree_multiset": [
+      1,
+      1,
+      1,
+      3
+    ],
+    "connected_components_assumed": 1,
+    "cycle_rank": 0
+  },
+  {
+    "name": "round_crossbar",
+    "vertices": [
+      "left",
+      "right"
+    ],
+    "edges": [
+      [
+        "left",
+        "right"
+      ],
+      [
+        "left",
+        "right"
+      ],
+      [
+        "left",
+        "right"
+      ]
+    ],
+    "assumption": "Two semicircular arcs and one crossbar meet at contour; idealised G03.",
+    "degree_multiset": [
+      3,
+      3
+    ],
+    "connected_components_assumed": 1,
+    "cycle_rank": 2
+  },
+  {
+    "name": "round_crossbar_dangling_branch",
+    "vertices": [
+      "left",
+      "right",
+      "mid",
+      "free"
+    ],
+    "edges": [
+      [
+        "left",
+        "right"
+      ],
+      [
+        "left",
+        "right"
+      ],
+      [
+        "left",
+        "mid"
+      ],
+      [
+        "mid",
+        "right"
+      ],
+      [
+        "mid",
+        "free"
+      ]
+    ],
+    "assumption": "G05 internal branch ends before reaching outer contour.",
+    "degree_multiset": [
+      1,
+      3,
+      3,
+      3
+    ],
+    "connected_components_assumed": 1,
+    "cycle_rank": 2
+  },
+  {
+    "name": "round_crossbar_joined_branch",
+    "vertices": [
+      "left",
+      "right",
+      "mid",
+      "bottom"
+    ],
+    "edges": [
+      [
+        "left",
+        "right"
+      ],
+      [
+        "left",
+        "bottom"
+      ],
+      [
+        "bottom",
+        "right"
+      ],
+      [
+        "left",
+        "mid"
+      ],
+      [
+        "mid",
+        "right"
+      ],
+      [
+        "mid",
+        "bottom"
+      ]
+    ],
+    "assumption": "G05 branch reaches contour; alternative to previous model.",
+    "degree_multiset": [
+      3,
+      3,
+      3,
+      3
+    ],
+    "connected_components_assumed": 1,
+    "cycle_rank": 3
+  }
+]

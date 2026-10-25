@@ -1,0 +1,1515 @@
+{
+  "date": "2026-10-25",
+  "stage": "round14",
+  "status": "manual observational annotations; new-object individual editorial strings not opened yet",
+  "scope": "all five selected photographic views partitioned into approximate viewing panels; not every wedge or canonical glyph segmented",
+  "coordinate_rule": "boxes relative to the recorded native crop,0..1000; labels in panels are modern IDs",
+  "templates": [
+    "R1",
+    "B1",
+    "V1",
+    "A1"
+  ],
+  "exploratory_after_new_images": [
+    "F1",
+    "W1",
+    "W2",
+    "SEAL"
+  ],
+  "X": "unclassified region, not a single canonical sign type",
+  "views": [
+    {
+      "id": "T0A",
+      "object": 327384,
+      "image": "data/round12_viewA_native.jpg",
+      "width": 2150,
+      "height": 1600,
+      "coordinate_system": "xyxy in0..1000 relative to this native crop",
+      "individual_editorial_text_known_before_image": true,
+      "panels": [
+        {
+          "id": "A1",
+          "box": [
+            20,
+            30,
+            470,
+            550
+          ],
+          "description": "Верхнее левое поле; часть границы возле ветвистой группы неоднозначна",
+          "blank_control": false,
+          "boundary_status": "approximate viewing region; not a claim of canonical word or ancient cell boundary"
+        },
+        {
+          "id": "A2",
+          "box": [
+            390,
+            30,
+            620,
+            550
+          ],
+          "description": "Верхнее среднее поле",
+          "blank_control": false,
+          "boundary_status": "approximate viewing region; not a claim of canonical word or ancient cell boundary"
+        },
+        {
+          "id": "A3",
+          "box": [
+            615,
+            40,
+            850,
+            335
+          ],
+          "description": "Верхнее правое поле",
+          "blank_control": false,
+          "boundary_status": "approximate viewing region; not a claim of canonical word or ancient cell boundary"
+        },
+        {
+          "id": "A4",
+          "box": [
+            610,
+            330,
+            975,
+            545
+          ],
+          "description": "Среднее правое поле и край",
+          "blank_control": false,
+          "boundary_status": "approximate viewing region; not a claim of canonical word or ancient cell boundary"
+        },
+        {
+          "id": "A5",
+          "box": [
+            20,
+            535,
+            780,
+            950
+          ],
+          "description": "Широкое нижнее поле слева",
+          "blank_control": false,
+          "boundary_status": "approximate viewing region; not a claim of canonical word or ancient cell boundary"
+        },
+        {
+          "id": "A6",
+          "box": [
+            760,
+            520,
+            985,
+            950
+          ],
+          "description": "Правый нижний край; возможны отдельные подячейки",
+          "blank_control": false,
+          "boundary_status": "approximate viewing region; not a claim of canonical word or ancient cell boundary"
+        }
+      ],
+      "candidates": [
+        {
+          "id": "T0A-G01",
+          "panel": "A1",
+          "family": "R1",
+          "box": [
+            195,
+            80,
+            360,
+            220
+          ],
+          "description": "Два небольших круглых вдавления",
+          "visible_mark_count_if_clear": 2,
+          "unit": "impression_bundle",
+          "canonical_sign_identity": "unassigned",
+          "boundary_uncertain": false,
+          "sound": null,
+          "meaning": null
+        },
+        {
+          "id": "T0A-G02",
+          "panel": "A1",
+          "family": "V1",
+          "box": [
+            90,
+            210,
+            280,
+            440
+          ],
+          "description": "Контур с продольными внутренними штрихами; рядом другие элементы",
+          "visible_mark_count_if_clear": null,
+          "unit": "graphic_complex",
+          "canonical_sign_identity": "unassigned",
+          "boundary_uncertain": true,
+          "sound": null,
+          "meaning": null
+        },
+        {
+          "id": "T0A-G03",
+          "panel": "A1",
+          "family": "B1",
+          "box": [
+            275,
+            330,
+            475,
+            550
+          ],
+          "description": "Ветвистый комплекс; соединение с соседним контуром не решено",
+          "visible_mark_count_if_clear": null,
+          "unit": "graphic_complex",
+          "canonical_sign_identity": "unassigned",
+          "boundary_uncertain": true,
+          "sound": null,
+          "meaning": null
+        },
+        {
+          "id": "T0A-G04",
+          "panel": "A2",
+          "family": "R1",
+          "box": [
+            430,
+            35,
+            600,
+            245
+          ],
+          "description": "Одно крупное округлое вдавление",
+          "visible_mark_count_if_clear": 1,
+          "unit": "impression",
+          "canonical_sign_identity": "unassigned",
+          "boundary_uncertain": false,
+          "sound": null,
+          "meaning": null
+        },
+        {
+          "id": "T0A-G05",
+          "panel": "A2",
+          "family": "R1",
+          "box": [
+            475,
+            250,
+            585,
+            380
+          ],
+          "description": "Одно меньшее округлое вдавление",
+          "visible_mark_count_if_clear": 1,
+          "unit": "impression",
+          "canonical_sign_identity": "unassigned",
+          "boundary_uncertain": false,
+          "sound": null,
+          "meaning": null
+        },
+        {
+          "id": "T0A-G06",
+          "panel": "A2",
+          "family": "A1",
+          "box": [
+            385,
+            210,
+            490,
+            535
+          ],
+          "description": "Угловатые вертикальные/ступенчатые штрихи",
+          "visible_mark_count_if_clear": null,
+          "unit": "graphic_complex",
+          "canonical_sign_identity": "unassigned",
+          "boundary_uncertain": true,
+          "sound": null,
+          "meaning": null
+        },
+        {
+          "id": "T0A-G07",
+          "panel": "A3",
+          "family": "X",
+          "box": [
+            640,
+            95,
+            860,
+            320
+          ],
+          "description": "Сложный контур; отдельные границы не решены",
+          "visible_mark_count_if_clear": null,
+          "unit": "graphic_complex",
+          "canonical_sign_identity": "unassigned",
+          "boundary_uncertain": true,
+          "sound": null,
+          "meaning": null
+        },
+        {
+          "id": "T0A-G08",
+          "panel": "A4",
+          "family": "X",
+          "box": [
+            795,
+            325,
+            960,
+            540
+          ],
+          "description": "Короткие вертикальные и изогнутые следы у края; не классифицированы",
+          "visible_mark_count_if_clear": null,
+          "unit": "graphic_complex",
+          "canonical_sign_identity": "unassigned",
+          "boundary_uncertain": true,
+          "sound": null,
+          "meaning": null
+        },
+        {
+          "id": "T0A-G09",
+          "panel": "A5",
+          "family": "X",
+          "box": [
+            65,
+            585,
+            285,
+            875
+          ],
+          "description": "Двухчастный сложный контур с внутренними штрихами",
+          "visible_mark_count_if_clear": null,
+          "unit": "graphic_complex",
+          "canonical_sign_identity": "unassigned",
+          "boundary_uncertain": true,
+          "sound": null,
+          "meaning": null
+        },
+        {
+          "id": "T0A-G10",
+          "panel": "A5",
+          "family": "B1",
+          "box": [
+            305,
+            650,
+            460,
+            925
+          ],
+          "description": "Ось с косыми ответвлениями",
+          "visible_mark_count_if_clear": null,
+          "unit": "graphic_complex",
+          "canonical_sign_identity": "unassigned",
+          "boundary_uncertain": true,
+          "sound": null,
+          "meaning": null
+        },
+        {
+          "id": "T0A-G11",
+          "panel": "A6",
+          "family": "R1",
+          "box": [
+            810,
+            535,
+            930,
+            710
+          ],
+          "description": "Округлое вдавление у правой границы",
+          "visible_mark_count_if_clear": 1,
+          "unit": "impression",
+          "canonical_sign_identity": "unassigned",
+          "boundary_uncertain": true,
+          "sound": null,
+          "meaning": null
+        },
+        {
+          "id": "T0A-G12",
+          "panel": "A6",
+          "family": "X",
+          "box": [
+            805,
+            700,
+            975,
+            930
+          ],
+          "description": "Ромбовидный контур и вдавления на криволинейном краю; число не назначено",
+          "visible_mark_count_if_clear": null,
+          "unit": "graphic_complex",
+          "canonical_sign_identity": "unassigned",
+          "boundary_uncertain": true,
+          "sound": null,
+          "meaning": null
+        }
+      ]
+    },
+    {
+      "id": "T0B",
+      "object": 327384,
+      "image": "data/round12_viewB_native.jpg",
+      "width": 2150,
+      "height": 1600,
+      "coordinate_system": "xyxy in0..1000 relative to this native crop",
+      "individual_editorial_text_known_before_image": true,
+      "panels": [
+        {
+          "id": "B1",
+          "box": [
+            30,
+            40,
+            355,
+            355
+          ],
+          "description": "Верхнее левое поле",
+          "blank_control": false,
+          "boundary_status": "approximate viewing region; not a claim of canonical word or ancient cell boundary"
+        },
+        {
+          "id": "B2",
+          "box": [
+            350,
+            20,
+            985,
+            360
+          ],
+          "description": "Верхнее широкое поле",
+          "blank_control": false,
+          "boundary_status": "approximate viewing region; not a claim of canonical word or ancient cell boundary"
+        },
+        {
+          "id": "B3",
+          "box": [
+            30,
+            350,
+            355,
+            720
+          ],
+          "description": "Левое среднее поле",
+          "blank_control": false,
+          "boundary_status": "approximate viewing region; not a claim of canonical word or ancient cell boundary"
+        },
+        {
+          "id": "B4",
+          "box": [
+            350,
+            350,
+            615,
+            725
+          ],
+          "description": "Среднее поле круглых вдавлений",
+          "blank_control": false,
+          "boundary_status": "approximate viewing region; not a claim of canonical word or ancient cell boundary"
+        },
+        {
+          "id": "B5",
+          "box": [
+            610,
+            350,
+            985,
+            725
+          ],
+          "description": "Правое среднее поле с повреждением слева",
+          "blank_control": false,
+          "boundary_status": "approximate viewing region; not a claim of canonical word or ancient cell boundary"
+        },
+        {
+          "id": "B6",
+          "box": [
+            30,
+            715,
+            985,
+            975
+          ],
+          "description": "Нижнее широкое поле",
+          "blank_control": false,
+          "boundary_status": "approximate viewing region; not a claim of canonical word or ancient cell boundary"
+        }
+      ],
+      "candidates": [
+        {
+          "id": "T0B-G01",
+          "panel": "B1",
+          "family": "R1",
+          "box": [
+            150,
+            100,
+            325,
+            310
+          ],
+          "description": "Крупное круглое углубление",
+          "visible_mark_count_if_clear": 1,
+          "unit": "impression",
+          "canonical_sign_identity": "unassigned",
+          "boundary_uncertain": true,
+          "sound": null,
+          "meaning": null
+        },
+        {
+          "id": "T0B-G02",
+          "panel": "B1",
+          "family": "X",
+          "box": [
+            70,
+            90,
+            150,
+            340
+          ],
+          "description": "Линейные и крайние следы",
+          "visible_mark_count_if_clear": null,
+          "unit": "graphic_complex",
+          "canonical_sign_identity": "unassigned",
+          "boundary_uncertain": true,
+          "sound": null,
+          "meaning": null
+        },
+        {
+          "id": "T0B-G03",
+          "panel": "B2",
+          "family": "B1",
+          "box": [
+            355,
+            20,
+            465,
+            225
+          ],
+          "description": "Верхняя ветвистая форма",
+          "visible_mark_count_if_clear": null,
+          "unit": "graphic_complex",
+          "canonical_sign_identity": "unassigned",
+          "boundary_uncertain": true,
+          "sound": null,
+          "meaning": null
+        },
+        {
+          "id": "T0B-G04",
+          "panel": "B2",
+          "family": "R1",
+          "box": [
+            445,
+            45,
+            655,
+            345
+          ],
+          "description": "Группа округлых следов неодинакового размера; не назначено общее число",
+          "visible_mark_count_if_clear": "",
+          "unit": "impression_bundle",
+          "canonical_sign_identity": "unassigned",
+          "boundary_uncertain": true,
+          "sound": null,
+          "meaning": null
+        },
+        {
+          "id": "T0B-G05",
+          "panel": "B2",
+          "family": "R1",
+          "box": [
+            650,
+            120,
+            920,
+            335
+          ],
+          "description": "Два более крупных округлых углубления",
+          "visible_mark_count_if_clear": 2,
+          "unit": "impression_bundle",
+          "canonical_sign_identity": "unassigned",
+          "boundary_uncertain": true,
+          "sound": null,
+          "meaning": null
+        },
+        {
+          "id": "T0B-G06",
+          "panel": "B3",
+          "family": "X",
+          "box": [
+            70,
+            345,
+            355,
+            725
+          ],
+          "description": "Комбинация профильных вдавлений и сложного контура; несколько возможных групп",
+          "visible_mark_count_if_clear": null,
+          "unit": "graphic_complex",
+          "canonical_sign_identity": "unassigned",
+          "boundary_uncertain": true,
+          "sound": null,
+          "meaning": null
+        },
+        {
+          "id": "T0B-G07",
+          "panel": "B4",
+          "family": "R1",
+          "box": [
+            355,
+            340,
+            620,
+            725
+          ],
+          "description": "Восемь отчётливых округлых следов и повреждённые нижние левые контуры; общий счёт не задан",
+          "visible_mark_count_if_clear": "",
+          "unit": "impression_bundle",
+          "canonical_sign_identity": "unassigned",
+          "boundary_uncertain": true,
+          "sound": null,
+          "meaning": null
+        },
+        {
+          "id": "T0B-G08",
+          "panel": "B5",
+          "family": "R1",
+          "box": [
+            655,
+            350,
+            965,
+            725
+          ],
+          "description": "Большое углубление и меньшие следы; различные классы не объединены",
+          "visible_mark_count_if_clear": "",
+          "unit": "impression_bundle",
+          "canonical_sign_identity": "unassigned",
+          "boundary_uncertain": true,
+          "sound": null,
+          "meaning": null
+        },
+        {
+          "id": "T0B-G09",
+          "panel": "B5",
+          "family": "X",
+          "box": [
+            610,
+            370,
+            740,
+            595
+          ],
+          "description": "Повреждённый контур; восстановление не выполнялось",
+          "visible_mark_count_if_clear": null,
+          "unit": "graphic_complex",
+          "canonical_sign_identity": "unassigned",
+          "boundary_uncertain": true,
+          "sound": null,
+          "meaning": null
+        },
+        {
+          "id": "T0B-G10",
+          "panel": "B6",
+          "family": "V1",
+          "box": [
+            325,
+            735,
+            535,
+            965
+          ],
+          "description": "Левая высокая рамка с продольными прорезями, внутренним квадратом и нижним выступом",
+          "visible_mark_count_if_clear": null,
+          "unit": "graphic_complex",
+          "canonical_sign_identity": "unassigned",
+          "boundary_uncertain": true,
+          "sound": null,
+          "meaning": null
+        },
+        {
+          "id": "T0B-G11",
+          "panel": "B6",
+          "family": "V1",
+          "box": [
+            505,
+            710,
+            675,
+            965
+          ],
+          "description": "Правая рамка со сходным внутренним устройством; средние штрихи могут быть отдельным знаком",
+          "visible_mark_count_if_clear": null,
+          "unit": "graphic_complex",
+          "canonical_sign_identity": "unassigned",
+          "boundary_uncertain": true,
+          "sound": null,
+          "meaning": null
+        }
+      ]
+    },
+    {
+      "id": "T1A",
+      "object": 329081,
+      "image": "data/round14_Met329081_view1_native.jpg",
+      "width": 1800,
+      "height": 1600,
+      "coordinate_system": "xyxy in0..1000 relative to this native crop",
+      "individual_editorial_text_known_before_image": false,
+      "panels": [
+        {
+          "id": "C1",
+          "box": [
+            40,
+            40,
+            290,
+            300
+          ],
+          "description": "Верхнее левое поле",
+          "blank_control": false,
+          "boundary_status": "approximate viewing region; not a claim of canonical word or ancient cell boundary"
+        },
+        {
+          "id": "C2",
+          "box": [
+            285,
+            40,
+            655,
+            310
+          ],
+          "description": "Верхнее среднее поле",
+          "blank_control": false,
+          "boundary_status": "approximate viewing region; not a claim of canonical word or ancient cell boundary"
+        },
+        {
+          "id": "C3",
+          "box": [
+            650,
+            40,
+            965,
+            320
+          ],
+          "description": "Верхнее правое поле",
+          "blank_control": false,
+          "boundary_status": "approximate viewing region; not a claim of canonical word or ancient cell boundary"
+        },
+        {
+          "id": "C4",
+          "box": [
+            40,
+            300,
+            290,
+            590
+          ],
+          "description": "Среднее левое поле",
+          "blank_control": false,
+          "boundary_status": "approximate viewing region; not a claim of canonical word or ancient cell boundary"
+        },
+        {
+          "id": "C5",
+          "box": [
+            285,
+            305,
+            655,
+            590
+          ],
+          "description": "Среднее центральное поле",
+          "blank_control": false,
+          "boundary_status": "approximate viewing region; not a claim of canonical word or ancient cell boundary"
+        },
+        {
+          "id": "C6",
+          "box": [
+            650,
+            310,
+            965,
+            590
+          ],
+          "description": "Среднее правое поле",
+          "blank_control": false,
+          "boundary_status": "approximate viewing region; not a claim of canonical word or ancient cell boundary"
+        },
+        {
+          "id": "C7",
+          "box": [
+            40,
+            585,
+            965,
+            965
+          ],
+          "description": "Нижнее поле с линейными знаками и изобразительными следами",
+          "blank_control": false,
+          "boundary_status": "approximate viewing region; not a claim of canonical word or ancient cell boundary"
+        }
+      ],
+      "candidates": [
+        {
+          "id": "T1A-G01",
+          "panel": "C1",
+          "family": "B1",
+          "box": [
+            115,
+            90,
+            235,
+            245
+          ],
+          "description": "Ось с боковыми косыми штрихами",
+          "visible_mark_count_if_clear": null,
+          "unit": "graphic_complex",
+          "canonical_sign_identity": "unassigned",
+          "boundary_uncertain": true,
+          "sound": null,
+          "meaning": null
+        },
+        {
+          "id": "T1A-G02",
+          "panel": "C1",
+          "family": "X",
+          "box": [
+            50,
+            200,
+            180,
+            370
+          ],
+          "description": "Косые и клиновидные формы у границы",
+          "visible_mark_count_if_clear": null,
+          "unit": "graphic_complex",
+          "canonical_sign_identity": "unassigned",
+          "boundary_uncertain": true,
+          "sound": null,
+          "meaning": null
+        },
+        {
+          "id": "T1A-G03",
+          "panel": "C2",
+          "family": "R1",
+          "box": [
+            485,
+            70,
+            645,
+            170
+          ],
+          "description": "Два глубоких округлых вдавления",
+          "visible_mark_count_if_clear": 2,
+          "unit": "impression_bundle",
+          "canonical_sign_identity": "unassigned",
+          "boundary_uncertain": false,
+          "sound": null,
+          "meaning": null
+        },
+        {
+          "id": "T1A-G04",
+          "panel": "C2",
+          "family": "X",
+          "box": [
+            310,
+            175,
+            515,
+            300
+          ],
+          "description": "Треугольный контур; может входить в сложный знак",
+          "visible_mark_count_if_clear": null,
+          "unit": "graphic_complex",
+          "canonical_sign_identity": "unassigned",
+          "boundary_uncertain": true,
+          "sound": null,
+          "meaning": null
+        },
+        {
+          "id": "T1A-G05",
+          "panel": "C2",
+          "family": "B1",
+          "box": [
+            545,
+            150,
+            645,
+            315
+          ],
+          "description": "Ветвистая форма под округлыми следами",
+          "visible_mark_count_if_clear": null,
+          "unit": "graphic_complex",
+          "canonical_sign_identity": "unassigned",
+          "boundary_uncertain": true,
+          "sound": null,
+          "meaning": null
+        },
+        {
+          "id": "T1A-G06",
+          "panel": "C3",
+          "family": "R1",
+          "box": [
+            745,
+            70,
+            900,
+            180
+          ],
+          "description": "Два глубоких округлых вдавления; один повреждён трещиной",
+          "visible_mark_count_if_clear": 2,
+          "unit": "impression_bundle",
+          "canonical_sign_identity": "unassigned",
+          "boundary_uncertain": true,
+          "sound": null,
+          "meaning": null
+        },
+        {
+          "id": "T1A-G07",
+          "panel": "C3",
+          "family": "B1",
+          "box": [
+            805,
+            150,
+            900,
+            315
+          ],
+          "description": "Ветвистая форма; верх соприкасается с круглым следом",
+          "visible_mark_count_if_clear": null,
+          "unit": "graphic_complex",
+          "canonical_sign_identity": "unassigned",
+          "boundary_uncertain": true,
+          "sound": null,
+          "meaning": null
+        },
+        {
+          "id": "T1A-G08",
+          "panel": "C4",
+          "family": "V1",
+          "box": [
+            125,
+            340,
+            250,
+            570
+          ],
+          "description": "Профильный сложный контур с поперечными штрихами; не отождествлён с рамкой T0B",
+          "visible_mark_count_if_clear": null,
+          "unit": "graphic_complex",
+          "canonical_sign_identity": "unassigned",
+          "boundary_uncertain": true,
+          "sound": null,
+          "meaning": null
+        },
+        {
+          "id": "T1A-G09",
+          "panel": "C5",
+          "family": "V1",
+          "box": [
+            325,
+            310,
+            520,
+            460
+          ],
+          "description": "Широкий контур с внутренними штрихами и вложенной фигурой",
+          "visible_mark_count_if_clear": null,
+          "unit": "graphic_complex",
+          "canonical_sign_identity": "unassigned",
+          "boundary_uncertain": true,
+          "sound": null,
+          "meaning": null
+        },
+        {
+          "id": "T1A-G10",
+          "panel": "C5",
+          "family": "X",
+          "box": [
+            320,
+            445,
+            555,
+            545
+          ],
+          "description": "Парные ромбовидные формы, связь с верхней группой не решена",
+          "visible_mark_count_if_clear": null,
+          "unit": "graphic_complex",
+          "canonical_sign_identity": "unassigned",
+          "boundary_uncertain": true,
+          "sound": null,
+          "meaning": null
+        },
+        {
+          "id": "T1A-G11",
+          "panel": "C5",
+          "family": "X",
+          "box": [
+            540,
+            420,
+            680,
+            585
+          ],
+          "description": "Треугольный контур и верхние угловатые следы",
+          "visible_mark_count_if_clear": null,
+          "unit": "graphic_complex",
+          "canonical_sign_identity": "unassigned",
+          "boundary_uncertain": true,
+          "sound": null,
+          "meaning": null
+        },
+        {
+          "id": "T1A-G12",
+          "panel": "C6",
+          "family": "X",
+          "box": [
+            705,
+            285,
+            840,
+            465
+          ],
+          "description": "Рамка с внутренним контуром",
+          "visible_mark_count_if_clear": null,
+          "unit": "graphic_complex",
+          "canonical_sign_identity": "unassigned",
+          "boundary_uncertain": true,
+          "sound": null,
+          "meaning": null
+        },
+        {
+          "id": "T1A-G13",
+          "panel": "C6",
+          "family": "X",
+          "box": [
+            720,
+            450,
+            845,
+            575
+          ],
+          "description": "Дугообразная форма под рамкой",
+          "visible_mark_count_if_clear": null,
+          "unit": "graphic_complex",
+          "canonical_sign_identity": "unassigned",
+          "boundary_uncertain": true,
+          "sound": null,
+          "meaning": null
+        },
+        {
+          "id": "T1A-G14",
+          "panel": "C6",
+          "family": "B1",
+          "box": [
+            845,
+            420,
+            940,
+            585
+          ],
+          "description": "Ветвистая форма справа",
+          "visible_mark_count_if_clear": null,
+          "unit": "graphic_complex",
+          "canonical_sign_identity": "unassigned",
+          "boundary_uncertain": true,
+          "sound": null,
+          "meaning": null
+        },
+        {
+          "id": "T1A-G15",
+          "panel": "C7",
+          "family": "V1",
+          "box": [
+            330,
+            610,
+            465,
+            885
+          ],
+          "description": "Высокая рамка с продольными штрихами, квадратной вставкой и нижним выступом; кандидат в пару с T0B",
+          "visible_mark_count_if_clear": null,
+          "unit": "graphic_complex",
+          "canonical_sign_identity": "unassigned",
+          "boundary_uncertain": true,
+          "sound": null,
+          "meaning": null
+        },
+        {
+          "id": "T1A-G16",
+          "panel": "C7",
+          "family": "X",
+          "box": [
+            475,
+            655,
+            630,
+            925
+          ],
+          "description": "Геометрический контур с перекрывающими штрихами",
+          "visible_mark_count_if_clear": null,
+          "unit": "graphic_complex",
+          "canonical_sign_identity": "unassigned",
+          "boundary_uncertain": true,
+          "sound": null,
+          "meaning": null
+        },
+        {
+          "id": "T1A-G17",
+          "panel": "C7",
+          "family": "V1",
+          "box": [
+            640,
+            780,
+            810,
+            900
+          ],
+          "description": "Небольшая группа параллельных прорезей; целое не тождественно большой рамке",
+          "visible_mark_count_if_clear": null,
+          "unit": "graphic_complex",
+          "canonical_sign_identity": "unassigned",
+          "boundary_uncertain": true,
+          "sound": null,
+          "meaning": null
+        },
+        {
+          "id": "T1A-G18",
+          "panel": "C7",
+          "family": "SEAL",
+          "box": [
+            80,
+            620,
+            950,
+            965
+          ],
+          "description": "Изобразительные контуры животного/фигуры; отдельно от линейного письма",
+          "visible_mark_count_if_clear": "",
+          "unit": "possible_seal_or_pictorial_trace",
+          "canonical_sign_identity": "unassigned",
+          "boundary_uncertain": true,
+          "sound": null,
+          "meaning": null
+        }
+      ]
+    },
+    {
+      "id": "T2A",
+      "object": 327385,
+      "image": "data/round14_Met327385_view1_native.jpg",
+      "width": 2300,
+      "height": 1600,
+      "coordinate_system": "xyxy in0..1000 relative to this native crop",
+      "individual_editorial_text_known_before_image": false,
+      "panels": [
+        {
+          "id": "D1",
+          "box": [
+            20,
+            50,
+            260,
+            640
+          ],
+          "description": "Левая колонка со сложным постоянным контуром",
+          "blank_control": false,
+          "boundary_status": "approximate viewing region; not a claim of canonical word or ancient cell boundary"
+        },
+        {
+          "id": "D2",
+          "box": [
+            250,
+            50,
+            600,
+            510
+          ],
+          "description": "Верхнее среднее поле",
+          "blank_control": false,
+          "boundary_status": "approximate viewing region; not a claim of canonical word or ancient cell boundary"
+        },
+        {
+          "id": "D3",
+          "box": [
+            250,
+            500,
+            605,
+            665
+          ],
+          "description": "Узкое поле под средним",
+          "blank_control": false,
+          "boundary_status": "approximate viewing region; not a claim of canonical word or ancient cell boundary"
+        },
+        {
+          "id": "D4",
+          "box": [
+            595,
+            50,
+            980,
+            460
+          ],
+          "description": "Верхнее правое поле",
+          "blank_control": false,
+          "boundary_status": "approximate viewing region; not a claim of canonical word or ancient cell boundary"
+        },
+        {
+          "id": "D5",
+          "box": [
+            595,
+            450,
+            980,
+            665
+          ],
+          "description": "Правое поле ниже",
+          "blank_control": false,
+          "boundary_status": "approximate viewing region; not a claim of canonical word or ancient cell boundary"
+        },
+        {
+          "id": "D6",
+          "box": [
+            25,
+            660,
+            980,
+            950
+          ],
+          "description": "Нижняя поверхность без ясных письменных групп",
+          "blank_control": true,
+          "boundary_status": "approximate viewing region; not a claim of canonical word or ancient cell boundary"
+        }
+      ],
+      "candidates": [
+        {
+          "id": "T2A-G01",
+          "panel": "D1",
+          "family": "F1",
+          "box": [
+            45,
+            220,
+            235,
+            620
+          ],
+          "description": "Горизонтальная перекладина, узкая шейка, расширяющееся тело с поперечными штрихами и нижняя перекладина; новая поисковая категория",
+          "visible_mark_count_if_clear": null,
+          "unit": "graphic_complex",
+          "canonical_sign_identity": "unassigned",
+          "boundary_uncertain": true,
+          "sound": null,
+          "meaning": null
+        },
+        {
+          "id": "T2A-G02",
+          "panel": "D2",
+          "family": "R1",
+          "box": [
+            430,
+            80,
+            505,
+            170
+          ],
+          "description": "Одно глубокое круглое углубление",
+          "visible_mark_count_if_clear": 1,
+          "unit": "impression",
+          "canonical_sign_identity": "unassigned",
+          "boundary_uncertain": false,
+          "sound": null,
+          "meaning": null
+        },
+        {
+          "id": "T2A-G03",
+          "panel": "D2",
+          "family": "X",
+          "box": [
+            325,
+            200,
+            410,
+            450
+          ],
+          "description": "Профильный контур слева",
+          "visible_mark_count_if_clear": null,
+          "unit": "graphic_complex",
+          "canonical_sign_identity": "unassigned",
+          "boundary_uncertain": true,
+          "sound": null,
+          "meaning": null
+        },
+        {
+          "id": "T2A-G04",
+          "panel": "D2",
+          "family": "R1",
+          "box": [
+            425,
+            190,
+            575,
+            430
+          ],
+          "description": "Группа спаренных/округлых вдавлений; различия классов не решены",
+          "visible_mark_count_if_clear": "",
+          "unit": "impression_bundle",
+          "canonical_sign_identity": "unassigned",
+          "boundary_uncertain": true,
+          "sound": null,
+          "meaning": null
+        },
+        {
+          "id": "T2A-G05",
+          "panel": "D2",
+          "family": "R1",
+          "box": [
+            425,
+            405,
+            590,
+            515
+          ],
+          "description": "Три округлых более плоских следа, частично пересекающие нижнюю границу",
+          "visible_mark_count_if_clear": 3,
+          "unit": "impression_bundle",
+          "canonical_sign_identity": "unassigned",
+          "boundary_uncertain": true,
+          "sound": null,
+          "meaning": null
+        },
+        {
+          "id": "T2A-G06",
+          "panel": "D3",
+          "family": "W1",
+          "box": [
+            275,
+            500,
+            590,
+            660
+          ],
+          "description": "Пять близких наклонных углублений с длинным хвостом",
+          "visible_mark_count_if_clear": 5,
+          "unit": "impression_bundle",
+          "canonical_sign_identity": "unassigned",
+          "boundary_uncertain": false,
+          "sound": null,
+          "meaning": null
+        },
+        {
+          "id": "T2A-G07",
+          "panel": "D4",
+          "family": "X",
+          "box": [
+            600,
+            55,
+            780,
+            470
+          ],
+          "description": "Угловатые и профильные формы, некоторые на трещине",
+          "visible_mark_count_if_clear": null,
+          "unit": "graphic_complex",
+          "canonical_sign_identity": "unassigned",
+          "boundary_uncertain": true,
+          "sound": null,
+          "meaning": null
+        },
+        {
+          "id": "T2A-G08",
+          "panel": "D4",
+          "family": "R1",
+          "box": [
+            795,
+            100,
+            880,
+            200
+          ],
+          "description": "Одно глубокое круглое углубление",
+          "visible_mark_count_if_clear": 1,
+          "unit": "impression",
+          "canonical_sign_identity": "unassigned",
+          "boundary_uncertain": false,
+          "sound": null,
+          "meaning": null
+        },
+        {
+          "id": "T2A-G09",
+          "panel": "D4",
+          "family": "X",
+          "box": [
+            735,
+            225,
+            805,
+            370
+          ],
+          "description": "Малый прямоугольный контур с короткими штрихами",
+          "visible_mark_count_if_clear": null,
+          "unit": "graphic_complex",
+          "canonical_sign_identity": "unassigned",
+          "boundary_uncertain": true,
+          "sound": null,
+          "meaning": null
+        },
+        {
+          "id": "T2A-G10",
+          "panel": "D5",
+          "family": "R1",
+          "box": [
+            715,
+            450,
+            875,
+            565
+          ],
+          "description": "Два округлых глубоких следа",
+          "visible_mark_count_if_clear": 2,
+          "unit": "impression_bundle",
+          "canonical_sign_identity": "unassigned",
+          "boundary_uncertain": false,
+          "sound": null,
+          "meaning": null
+        },
+        {
+          "id": "T2A-G11",
+          "panel": "D5",
+          "family": "W1",
+          "box": [
+            705,
+            525,
+            840,
+            630
+          ],
+          "description": "Два наклонных хвостообразных следа под ними",
+          "visible_mark_count_if_clear": 2,
+          "unit": "impression_bundle",
+          "canonical_sign_identity": "unassigned",
+          "boundary_uncertain": true,
+          "sound": null,
+          "meaning": null
+        }
+      ]
+    },
+    {
+      "id": "T2B",
+      "object": 327385,
+      "image": "data/round14_Met327385_view2_native.jpg",
+      "width": 2300,
+      "height": 1600,
+      "coordinate_system": "xyxy in0..1000 relative to this native crop",
+      "individual_editorial_text_known_before_image": false,
+      "panels": [
+        {
+          "id": "E1",
+          "box": [
+            25,
+            30,
+            390,
+            745
+          ],
+          "description": "Левое поле с повторяющимся сложным контуром",
+          "blank_control": false,
+          "boundary_status": "approximate viewing region; not a claim of canonical word or ancient cell boundary"
+        },
+        {
+          "id": "E2",
+          "box": [
+            385,
+            30,
+            615,
+            750
+          ],
+          "description": "Среднее числоподобное поле",
+          "blank_control": false,
+          "boundary_status": "approximate viewing region; not a claim of canonical word or ancient cell boundary"
+        },
+        {
+          "id": "E3",
+          "box": [
+            605,
+            30,
+            975,
+            750
+          ],
+          "description": "Правое поле",
+          "blank_control": false,
+          "boundary_status": "approximate viewing region; not a claim of canonical word or ancient cell boundary"
+        },
+        {
+          "id": "E4",
+          "box": [
+            25,
+            745,
+            975,
+            965
+          ],
+          "description": "Нижняя поверхность без ясной последовательности знаков",
+          "blank_control": true,
+          "boundary_status": "approximate viewing region; not a claim of canonical word or ancient cell boundary"
+        }
+      ],
+      "candidates": [
+        {
+          "id": "T2B-G01",
+          "panel": "E1",
+          "family": "F1",
+          "box": [
+            125,
+            240,
+            350,
+            725
+          ],
+          "description": "Та же композиция перекладины, шейки и поперечно заштрихованного тела; средняя часть стёрта",
+          "visible_mark_count_if_clear": null,
+          "unit": "graphic_complex",
+          "canonical_sign_identity": "unassigned",
+          "boundary_uncertain": true,
+          "sound": null,
+          "meaning": null
+        },
+        {
+          "id": "T2B-G02",
+          "panel": "E2",
+          "family": "R1",
+          "box": [
+            420,
+            80,
+            580,
+            205
+          ],
+          "description": "Два глубоких округлых вдавления",
+          "visible_mark_count_if_clear": 2,
+          "unit": "impression_bundle",
+          "canonical_sign_identity": "unassigned",
+          "boundary_uncertain": false,
+          "sound": null,
+          "meaning": null
+        },
+        {
+          "id": "T2B-G03",
+          "panel": "E2",
+          "family": "W1",
+          "box": [
+            405,
+            190,
+            590,
+            410
+          ],
+          "description": "Три наклонных углубления с хвостами",
+          "visible_mark_count_if_clear": 3,
+          "unit": "impression_bundle",
+          "canonical_sign_identity": "unassigned",
+          "boundary_uncertain": false,
+          "sound": null,
+          "meaning": null
+        },
+        {
+          "id": "T2B-G04",
+          "panel": "E2",
+          "family": "W2",
+          "box": [
+            515,
+            390,
+            585,
+            540
+          ],
+          "description": "Более крупное профильное углубление; отдельно от малых хвостообразных",
+          "visible_mark_count_if_clear": 1,
+          "unit": "impression",
+          "canonical_sign_identity": "unassigned",
+          "boundary_uncertain": true,
+          "sound": null,
+          "meaning": null
+        },
+        {
+          "id": "T2B-G05",
+          "panel": "E2",
+          "family": "W1",
+          "box": [
+            455,
+            515,
+            505,
+            625
+          ],
+          "description": "Отдельный наклонный штрих/углубление под тройкой",
+          "visible_mark_count_if_clear": 1,
+          "unit": "impression",
+          "canonical_sign_identity": "unassigned",
+          "boundary_uncertain": true,
+          "sound": null,
+          "meaning": null
+        },
+        {
+          "id": "T2B-G06",
+          "panel": "E3",
+          "family": "R1",
+          "box": [
+            770,
+            95,
+            900,
+            325
+          ],
+          "description": "Три глубоких округлых следа в верхней части",
+          "visible_mark_count_if_clear": 3,
+          "unit": "impression_bundle",
+          "canonical_sign_identity": "unassigned",
+          "boundary_uncertain": true,
+          "sound": null,
+          "meaning": null
+        },
+        {
+          "id": "T2B-G07",
+          "panel": "E3",
+          "family": "X",
+          "box": [
+            715,
+            225,
+            790,
+            340
+          ],
+          "description": "Малый угловатый контур с двумя короткими внутренними штрихами",
+          "visible_mark_count_if_clear": null,
+          "unit": "graphic_complex",
+          "canonical_sign_identity": "unassigned",
+          "boundary_uncertain": true,
+          "sound": null,
+          "meaning": null
+        },
+        {
+          "id": "T2B-G08",
+          "panel": "E3",
+          "family": "R1",
+          "box": [
+            765,
+            325,
+            925,
+            535
+          ],
+          "description": "Нижние округлые/профильные следы и внутренний штрих; без общего числового значения",
+          "visible_mark_count_if_clear": "",
+          "unit": "impression_bundle",
+          "canonical_sign_identity": "unassigned",
+          "boundary_uncertain": true,
+          "sound": null,
+          "meaning": null
+        }
+      ]
+    }
+  ]
+}

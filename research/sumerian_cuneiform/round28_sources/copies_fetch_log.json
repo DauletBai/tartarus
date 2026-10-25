@@ -1,0 +1,37 @@
+[
+  {
+    "file": "Schrakamp2018_publisher.pdf",
+    "url": "https://edition-topoi.org/download_pdf/bsa_053_07.pdf",
+    "returncode": 28,
+    "bytes": 0,
+    "error": "curl: (28) Connection timed out after 35003 milliseconds\n"
+  },
+  {
+    "file": "P222400_reader.html",
+    "url": "https://cdli.earth/artifacts/222400/reader/42696",
+    "returncode": 0,
+    "bytes": 9211,
+    "error": ""
+  },
+  {
+    "file": "P222402_reader.html",
+    "url": "https://cdli.earth/artifacts/222402/reader/42698",
+    "returncode": 0,
+    "bytes": 8067,
+    "error": ""
+  },
+  {
+    "file": "P222400_lineart.jpg",
+    "url": "https://cdli.earth/dl/lineart/P222400_l.jpg",
+    "returncode": 0,
+    "bytes": 733981,
+    "error": ""
+  },
+  {
+    "file": "P222402_lineart.jpg",
+    "url": "https://cdli.earth/dl/lineart/P222402_l.jpg",
+    "returncode": 0,
+    "bytes": 569440,
+    "error": ""
+  }
+]

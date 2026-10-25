@@ -1,0 +1,69 @@
+{
+  "lexical": {
+    "archive_sha256": "6a6946e4eef75e554d8605bc8de88e40db2924d3681d2f3dbc99a67b3507d3f9",
+    "archive_bytes": 13231304,
+    "archive_members": 471,
+    "catalogue_entries": 10219,
+    "catalogue_OB_Nippur_Ea": 195,
+    "corpus_files": 461,
+    "empty_corpus_files": 461,
+    "valid_corpus_files": 0,
+    "selected_pages": 40,
+    "parsed_pages": 40,
+    "available_editions": 31,
+    "unavailable_items": 9,
+    "pages_without_rows": [
+      "P227831",
+      "P228211",
+      "P228813",
+      "P229477",
+      "P229478",
+      "P229479",
+      "P229480",
+      "P229482",
+      "P229486"
+    ],
+    "errors": [],
+    "lexical_rows": 477,
+    "target_rows": 3,
+    "physical_gaba_witnesses": [
+      "P227708"
+    ],
+    "full_ga_ba_rows": [
+      "P227708.26"
+    ]
+  },
+  "utud": {
+    "parsed_files": 1456,
+    "failed_files": [
+      "etcsri/corpusjson/Q001066.json"
+    ],
+    "tokens": 92,
+    "compositions": 57,
+    "forms": {
+      "tud-da": 27,
+      "ne₂-tud-e": 1,
+      "ma-a-u₃-tu₉-e": 1,
+      "mu-ni-tud": 1,
+      "u₃-tud-da": 2,
+      "u₃-tud-da-ta": 1,
+      "du₃-du₃-a-da": 1,
+      "ba-tud-da-me": 1,
+      "mu-tud": 49,
+      "u₃-na-tud": 1,
+      "tud-da-ni": 2,
+      "mu-ni-tud-da-a": 1,
+      "mu-ni-du₁₀-du₁₀": 3,
+      "tu₂-ŋu₁₀-ra": 1
+    },
+    "citation_forms": {
+      "utud": 92
+    },
+    "selection": "exact f.cf in ['utud','tud']"
+  },
+  "history_records": 15,
+  "new_phonetic_rows": 8,
+  "source_records": 54,
+  "manifest_files": 66,
+  "book_modified": false
+}

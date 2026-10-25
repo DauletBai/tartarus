@@ -1,0 +1,46 @@
+[
+  {
+    "source": "sources/P005371_photo.jpg",
+    "file": "data/round15_P005371_front_native.jpg",
+    "box_xyxy": [
+      330,
+      380,
+      1320,
+      1540
+    ],
+    "method": "native crop; JPEG recompression; no resizing, contrast alteration or restored strokes"
+  },
+  {
+    "source": "sources/P005371_photo.jpg",
+    "file": "data/round15_P005371_back_native.jpg",
+    "box_xyxy": [
+      340,
+      1800,
+      1320,
+      2960
+    ],
+    "method": "native crop; JPEG recompression; no resizing, contrast alteration or restored strokes"
+  },
+  {
+    "source": "sources/P005372_photo.jpg",
+    "file": "data/round15_P005372_front_native.jpg",
+    "box_xyxy": [
+      50,
+      50,
+      875,
+      980
+    ],
+    "method": "native crop; JPEG recompression; no resizing, contrast alteration or restored strokes"
+  },
+  {
+    "source": "sources/P005372_photo.jpg",
+    "file": "data/round15_P005372_back_native.jpg",
+    "box_xyxy": [
+      50,
+      1040,
+      875,
+      1980
+    ],
+    "method": "native crop; JPEG recompression; no resizing, contrast alteration or restored strokes"
+  }
+]

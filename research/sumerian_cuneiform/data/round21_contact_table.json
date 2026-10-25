@@ -1,0 +1,62 @@
+[
+  {
+    "token": "F1",
+    "features": "stacked short traces + steep right member",
+    "count_interval": [
+      2,
+      3
+    ],
+    "boundary": "right member retained provisionally inside complex",
+    "uncertainty": "upper/bottom trace versus band neighbour; exact tool stroke count not established"
+  },
+  {
+    "token": "F2",
+    "features": "similar adjacent stacked/standing configuration",
+    "count_interval": [
+      2,
+      3
+    ],
+    "boundary": "whole candidate retained, not assigned word boundary",
+    "uncertainty": "native image shadows may merge contact"
+  },
+  {
+    "token": "F3",
+    "features": "partial stack near neighbouring traces",
+    "count_interval": [
+      2,
+      3
+    ],
+    "boundary": "several plausible segmentations",
+    "uncertainty": "crop includes surrounding marks"
+  },
+  {
+    "token": "P1",
+    "features": "fan/perimeter with interior short traces",
+    "count_interval": [
+      3,
+      4
+    ],
+    "boundary": "possible contour contact",
+    "uncertainty": "not a count of strokes made by the scribe"
+  },
+  {
+    "token": "P2",
+    "features": "curve and hatch near separate right traces",
+    "count_interval": [
+      3,
+      4
+    ],
+    "boundary": "right neighbour not merged",
+    "uncertainty": "enclosure may be open"
+  },
+  {
+    "token": "P3",
+    "features": "stack without securely same perimeter",
+    "count_interval": [
+      2,
+      4
+    ],
+    "boundary": "control pattern, not same complex by default",
+    "uncertainty": "region combines adjacent traces"
+  }
+]

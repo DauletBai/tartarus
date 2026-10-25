@@ -1,0 +1,5 @@
+resource,URL,result,limit
+Yale museum record,https://collections.peabody.yale.edu/search/Record/YPM-BC-023867,curl HTTP403,No museum photo obtained
+eBL YBC9868,https://www.ebl.lmu.de/fragmentarium/YBC.9868,Web tool inaccessible,No new photo or transliteration obtained
+Arnaud2007 original book,https://www.ub.edu/ipoa/wp-content/uploads/2021/08/20161AuOr00Index.pdf,Publisher catalogue located through web search; full book not obtained,Do not say the2007 edition was directly read
+MSLSS1 original volume,https://cdli.earth/publications/70775,Bibliographic pointer located through web search; full volume and YBC9868 drawing not obtained,No purchase or message to third parties

@@ -1,0 +1,29 @@
+{
+  "files_matched": 1457,
+  "files_parsed": 1456,
+  "failed_files": [
+    {
+      "file": "etcsri/corpusjson/Q001066.json",
+      "error": "Expecting value: line 1 column 1 (char 0)"
+    }
+  ],
+  "target_tokens": 92,
+  "target_compositions": 57,
+  "forms": {
+    "tud-da": 27,
+    "ne₂-tud-e": 1,
+    "ma-a-u₃-tu₉-e": 1,
+    "mu-ni-tud": 1,
+    "u₃-tud-da": 2,
+    "u₃-tud-da-ta": 1,
+    "du₃-du₃-a-da": 1,
+    "ba-tud-da-me": 1,
+    "mu-tud": 49,
+    "u₃-na-tud": 1,
+    "tud-da-ni": 2,
+    "mu-ni-tud-da-a": 1,
+    "mu-ni-du₁₀-du₁₀": 3,
+    "tu₂-ŋu₁₀-ra": 1
+  },
+  "not_physical_witness_counts": true
+}

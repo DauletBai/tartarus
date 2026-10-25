@@ -1,0 +1,13742 @@
+window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-1MC96MC15Z');
+window.dataLayer = window.dataLayer || [];function gtag(){dataLayer.push(arguments)};gtag("js", new Date());gtag("set", "developer_id.dMDhkMT", true);gtag("config", "G-1MC96MC15Z", {"groups":"default","page_placeholder":"PLACEHOLDER_page_location"});
+Atraḫasis I (all periods) | Sources of Early Akkadian Literature
+Skip to main content
+Sources of Early Akkadian Literature
+A Text Corpus of Babylonian and Assyrian Literary Texts from the 3rd and 2nd Millennia BCE
+Main navigation
+Show — Main navigation
+Hide — Main navigation
+Home
+Research Staff
+Links
+User account menu
+Show — User account menu
+Hide — User account menu
+Log in
+Search specific fields
+Search form
+Search specific string
+Search
+Text hierarchy
+Projects
+[1011]
+Expand Secondary Navigation Menu
+SEAL
+[923]
+Expand Secondary Navigation Menu
+Epics and Myths
+[106]
+Expand Secondary Navigation Menu
+Old Babylonian
+[42]
+Expand Secondary Navigation Menu
+Adad
+[1]
+Anzu
+[2]
+Atraḫasis
+[6]
+Etana
+[2]
+Descent to The Netherworld
+[1]
+Enmerkar and Ensuhkešdana
+[1]
+Gilgameš
+[13]
+Girra
+[1]
+Ipiq-Ištar
+[1]
+Narām-Sin
+[6]
+Sargon
+[4]
+Song of Bazi
+[1]
+Zimrī-līm
+[1]
+Miscellaneous OB epics
+[2]
+Middle Babylonian/Assyrian
+[59]
+Expand Secondary Navigation Menu
+Adad
+[0]
+Adad-nērārī I
+[1]
+Adapa
+[1]
+Anzu
+[1]
+Atraḫasis
+[9]
+Enlil
+[0]
+Etana
+[3]
+Gilgameš
+[15]
+Narām-Sîn
+[2]
+Nergal
+[2]
+Ninurta
+[2]
+Sargon
+[2]
+Tiglathpileser I
+[1]
+Tukultī-Ninurta I
+[1]
+Miscellaneous MB/MA epics
+[19]
+Old Assyrian
+[1]
+Expand Secondary Navigation Menu
+Sargon
+[1]
+Later Periods (SB, NA, LB)
+[4]
+Hymns and Prayers
+[123]
+Expand Secondary Navigation Menu
+Archaic/Old Akkadian/Ebla
+[3]
+Expand Secondary Navigation Menu
+Nidaba
+[1]
+Šamaš
+[2]
+Old Babylonian
+[51]
+Expand Secondary Navigation Menu
+Amurru
+[2]
+Bēlet-ilī
+[1]
+Gods of the Night
+[2]
+Gungunum
+[1]
+Hammurāpi
+[4]
+Iddin-Dagan
+[1]
+Ištar
+[7]
+Itūrmēr
+[1]
+Lamasaga/Baba
+[1]
+Mama
+[1]
+Marduk
+[2]
+Nidaba/Enki
+[1]
+Ningišzida
+[1]
+Nanāya
+[3]
+Nunnamnir
+[1]
+Papulegara
+[1]
+Samsuiluna
+[2]
+Sargon
+[1]
+Sîn
+[3]
+Šamaš
+[5]
+Šamaš and Adad
+[1]
+Temple
+[1]
+Miscellaneous OB hymns
+[8]
+Middle Babylonian/Assyrian
+[69]
+Expand Secondary Navigation Menu
+Adad
+[2]
+Assur
+[1]
+Enlil
+[1]
+Enki/Ea
+[1]
+Enlil/Assur
+[1]
+Gula
+[2]
+Gods of the Night
+[1]
+Ištar
+[1]
+King
+[5]
+Kurigalzu
+[1]
+Marduk
+[11]
+Nabû
+[1]
+Nergal
+[4]
+Nineanna
+[5]
+Ninkarak
+[1]
+Ninnibru
+[1]
+Ninurta
+[3]
+Ṣarpanitum
+[1]
+Šamaš
+[11]
+Šamaš and Sîn
+[1]
+Tašmētu
+[1]
+Temple
+[1]
+Miscellaneous MB/MA hymns
+[12]
+Lamentations
+[25]
+Expand Secondary Navigation Menu
+Old Babylonian
+[21]
+Expand Secondary Navigation Menu
+Personal Complaints
+[5]
+To Named Gods
+[5]
+To cities
+[3]
+Miscellaneous OB Laments
+[8]
+Middle Babylonian/Assyrian
+[4]
+Expand Secondary Navigation Menu
+To Named Gods
+[4]
+Miscellaneous MB/MA laments
+[0]
+Love Literature
+[24]
+Expand Secondary Navigation Menu
+Old Babylonian
+[18]
+Expand Secondary Navigation Menu
+Dialogues
+[3]
+Ištar
+[1]
+Miscellaneous OB love lit.
+[14]
+Middle Babylonian/Assyrian
+[6]
+Expand Secondary Navigation Menu
+Dialogues
+[2]
+Ištar
+[3]
+Miscellaneous MB/MA love lit.
+[1]
+Incantations
+[470]
+Expand Secondary Navigation Menu
+Archaic/Old Akkadian/Ebla
+[25]
+Expand Secondary Navigation Menu
+Baliḫ-rivers
+[5]
+Dreams
+[1]
+Insomnia
+[1]
+Kabkab
+[1]
+Love
+[1]
+Miscellaneous
+[7]
+Nin-girima
+[9]
+Old Babylonian
+[179]
+Expand Secondary Navigation Menu
+Anger
+[4]
+Baby crying
+[5]
+Baby disease
+[1]
+Birth
+[10]
+Diseases/demons (various)
+[13]
+Dogs
+[14]
+Evil eye
+[7]
+Flies and wasps
+[4]
+Foodstuff and drink
+[2]
+Gastrointestinal problems
+[20]
+Goat
+[1]
+Jaundice
+[2]
+Love
+[16]
+Lamaštu
+[6]
+Legitimation
+[5]
+Maškadu
+[3]
+Orthopedic problems
+[1]
+Pests (agriculture)
+[1]
+Potency
+[0]
+Pox
+[1]
+Scorpions
+[22]
+Snakes and Reptiles
+[9]
+Sty
+[1]
+Toothache
+[3]
+Trial
+[2]
+Wardat-Lilim
+[1]
+Witchcraft
+[3]
+Worms and Leeches
+[3]
+Miscellaneous
+[19]
+Old Assyrian
+[11]
+Expand Secondary Navigation Menu
+Anger
+[0]
+Birth
+[3]
+Dogs
+[1]
+Evil eye
+[1]
+Foodstuff and drink
+[1]
+Gastrointestinal problems
+[1]
+Goat
+[1]
+Lamaštu
+[2]
+Reeds
+[1]
+Middle Babylonian/Assyrian
+[255]
+Expand Secondary Navigation Menu
+Babilili
+[22]
+Baby crying
+[1]
+Baby disease
+[0]
+Birth
+[6]
+Collapse
+[1]
+Diarrhea
+[1]
+Fever
+[7]
+Flies and wasps
+[1]
+Diseases (various) / Evil (general)
+[12]
+Dogs
+[1]
+Enemy
+[2]
+Eye (disease)
+[1]
+Gall
+[1]
+Gastrointestinal problems
+[1]
+Ghost
+[4]
+Hayyattu & Rābiṣu
+[1]
+Incantation-prayers
+[50]
+Kultmittelbeschwörungen
+[13]
+Lamaštu
+[13]
+Love
+[2]
+Maškadu
+[2]
+Namburbi
+[1]
+Paralysis
+[4]
+Samana
+[2]
+Scorpions
+[2]
+Udug-hul
+[29]
+Vomiting
+[1]
+Wild animals
+[1]
+Witchcraft
+[18]
+Miscellaneous MB/MA incs.
+[55]
+Literary Letters
+[14]
+Expand Secondary Navigation Menu
+Old Babylonian
+[12]
+Middle Babylonian/Assyrian
+[2]
+Wisdom Literature
+[52]
+Expand Secondary Navigation Menu
+Old Babylonian
+[27]
+Expand Secondary Navigation Menu
+Admonitions and Instructions
+[2]
+Dialogues
+[8]
+Fables
+[3]
+Proverbs
+[10]
+Riddles
+[2]
+Miscellaneous OB wis. lit.
+[2]
+Middle Babylonian/Assyrian
+[25]
+Expand Secondary Navigation Menu
+Admonitions and Instructions
+[3]
+Monologues
+[1]
+Dialogues
+[3]
+Fables
+[3]
+Proverbs
+[6]
+Miscellaneous MB/MA wis. lit.
+[9]
+Funerary Texts
+[7]
+Expand Secondary Navigation Menu
+Old Babylonian
+[7]
+Miscellaneous
+[97]
+Expand Secondary Navigation Menu
+Archaic/Old Akkadian/Ebla
+[5]
+Old Babylonian
+[51]
+Middle Babylonian/Assyrian
+[41]
+Catalogues
+[5]
+Expand Secondary Navigation Menu
+Old Babylonian
+[2]
+Middle Babylonian/Assyrian
+[2]
+Miscellaneous catalogues
+[1]
+DLL
+[46]
+Expand Secondary Navigation Menu
+Commentary
+[4]
+Lyrics
+[35]
+Rituals
+[7]
+LBPL
+[42]
+Expand Secondary Navigation Menu
+Chronicles
+[6]
+Epics
+[9]
+Hymns and Prayers
+[0]
+Literary letters
+[6]
+Miscellaneous
+[0]
+Myths and Theogonies
+[1]
+Prophecies
+[3]
+Rituals
+[17]
+Sidebar menu
+Show — Sidebar menu
+Hide — Sidebar menu
+Bibliography
+Vocabulary
+Collections
+Provenances
+Map
+Home
+Atraḫasis I (all periods)
+Atraḫasis I (all periods)
+SEAL no. 1515
+Extra-textual fields
+Textual fields
+Vocabulary
+Statistics
+Revision History
+Texts Hierarchy
+Projects
+SEAL
+Epics and Myths
+Old Babylonian
+Atraḫasis
+Copy / Photo
+See copies in Commentary
+Tablet Siglum
+See list of sigla in Commentary
+Collection
+British Museum, London
+Iraq Museum, Baghdad
+Metropolitan Museum of Art, New York
+Museu Bíblic de Monserrat
+Edition
+Böck/Márquez Rowe 1999/2000
+George/al-Rawi 1996
+147-190
+Lambert 1991b
+Lambert/Millard 1969
+Studies
+Wasserman/Zomer 2022
+Wasserman 2020a
+Jiménez et al. 2019
+George 2018
+Jiménez 2018
+Zomer 2018
+Jiménez 2017
+Bartelmus 2016
+George 2016
+Wasserman 2016
+Hecker 2015
+Guichard 2014
+Jiménez 2014
+Jiménez 2013
+Lambert 2013a
+Lambert 2013b
+Pientka-Hinz 2013
+10-38
+van Koppen 2011
+Lambert 2008
+George 2007
+Foster 2005
+227–280
+Maul 2005
+Pedersén 2005
+George 2003
+Polvani 2003
+Wasserman 2003a
+Krebernik 2002
+Shehata 2001
+Streck 2000
+Streck 1999
+Wilcke 1997b
+Kilmer 1996
+Shifra/Klein 1996
+Streck 1995
+Von Soden 1994
+van der Westhuizen 1992
+Lambert 1991b
+Dalley 1989
+1–38
+Mayer 1987
+Moran 1987
+Wilcke 1985a
+Jacobsen 1981
+Lambert 1980a
+Lambert 1980b
+Von Soden 1978
+Wilcke 1977
+Pettinato 1970
+Siegelová 1970
+Civil 1969
+Lambert 1969b
+Pettinato 1968
+Von Soden 1931
+Genre / Classification
+Epics
+Provenance
+Sippar (mod. Tell Abu Ḥabbah)
+Nineveh (mod. Kouyunjik, Tell Nabi Yunus)
+Babylon (mod. Kasr, Amran Ibn Ali, Sahn, Ishin Aswad, Merkes)
+Text
+1
+A i 1
+i-nu-ma
+i-l
+[
+u
+]
+⌈
+a
+⌉
+-wi-lum
+ba 1
+e-nu-ma
+i-lu
+a-
+⌈
+me
+⌉
+-lu
+2
+A i 2
+ub-lu
+du-ul-la
+iz-bi-lu
+šu-up-š
+[
+i-i
+]
+k-ka
+ba 2
+i-lu
+ni-ra
+ib-nu-ú
+tu-up-ši-ik-
+⌈
+ku
+⌉
+3
+A i 3
+šu-up-ši-ik
+i-li
+ra-bi-
+[
+m
+]
+a
+ba 3
+tu-up-ši-ik
+i-lu
+ra-bi-i-ma
+4
+A i 4
+du-ul-lu-um
+ka-bi-it
+ma-a-ad
+ša-ap-ša-qum
+ba 4
+du-ul-lu
+ka-bi-it-ma
+ma-a-ad
+ša-ap-ša-qu
+5
+A i 5
+ra-bu-tum
+d
+a-nun-na-ku
+se-bé-et-tam
+ba 5
+ra-bu-tu
+an-KA-uk
+?
+-ku
+se-bé-et-ta
+6
+A i 6
+du-ul-lam
+ú-ša-az-ba-lu
+d
+i-g
+[
+i-g]i
+ba 6
+du-ul-lu
+ú-šá-az-ba-lu
+i-gi
+4
+-gi
+4
+7
+A i 7
+a-nu
+a-bu-šu-nu
+ša
+[
+r-r
+]
+u
+ba 7
+d
+a-nu
+a-bu-šu-nu
+šar-ru
+8
+A i 8
+[
+m
+]
+a-li-
+⌈
+ik-šu
+⌉
+-nu
+qú-ra-d
+[
+u
+d
+]
+en-líl
+ba 8
+ù
+ma-li-ik-šu-nu
+qú-ra-a-du
+d
+en-líl
+9
+A i 9
+[
+ku
+-
+u
+]
+z-za-lu-šu-n
+[
+u
+]
+d
+[
+ni
+]
+n-urta
+ba 9
+guzallû
+(GU.ZA.LÁ)
+-šu-nu
+d
+nin-urta
+10
+A i 10
+[
+ù
+]
+gal-lu-šu-nu
+d
+[
+en
+]
+-nu-gi
+ba 10
+ù
+gal-lu-šu-nu
+i-lu
+d
+en-nu-gi
+11
+A i 11
+⌈ŠU*⌉-
+tam
+i-ḫu-zu
+⌈
+le
+⌉-
+ti-ša
+ba 11
+⌈ŠU!?*⌉
+-ti
+i-ḫu-zu
+le-ti-i-ša
+12
+A i 12
+is-qá-am
+id-du-ú
+i-lu
+iz-zu-zu
+ba 12
+is-qá
+id-du-ú
+šu-nu
+iz-zu-zu
+13
+A i 13
+⌈
+a-nu
+⌉
+i-te-li
+š
+[
+a-me
+]
+-
+⌈
+e
+⌉
+-ša
+ba 13
+d
+a-nu
+i-te-li
+ša-me-e-šu
+14
+A i 14
+[
+d
+en-líl
+i
+]-⌈
+ḫu-uz
+!
+er
+⌉
+-ṣe-tam
+ba
+?
+-ú
+?
+-la-tu-uš-šu
+ba 14
+d
+en-líl
+i-ḫu
+!
+-zu
+er-ṣe-tam
+ba-ú-la-tu-uš-šu
+15
+A i 15
+[
+ši-ga-ra
+n
+]
+a-aḫ-ba-lu
+ti-a-am-tim
+ba 15
+ši-ga-ra
+na-aḫ-ba-li
+ti-a-am-ti
+16
+A i 16
+[
+it-ta-a
+]
+d
+!
+-
+[
+n
+]
+u
+a-na
+d
+en-ki
+na-aš-ši-
+⌈
+ki
+⌉
+ba 16
+it-ta-ad-nu
+a-na
+d
+é-a
+d
+ni-iš-ši-i-ki
+17
+A i 17
+[
+šu-ú-ut
+a-ni
+]
+m
+*
+i-lu-
+⌈
+ú
+⌉
+[
+š
+]
+a-me-e-ša
+ba 17
+šu-ú-ut
+d
+a-nim
+i-lu-ú
+ša-me-e-šu
+18
+A i 18
+[
+šu-
+(-
+ú
+)-
+ut
+a
+]
+p-si-
+⌈
+i
+⌉
+[
+it-t
+]
+a-ar-du
+ba 18
+šu-ú-ut
+d
+é-a
+ap-sa-a-šu
+it-tar-du
+S+T+-NA i 1
+[...]
+⌈
+e
+⌉
+-tar-du
+S+T+-NA i
+----
+19
+A i 19
+[...
+šu
+]
+-ú-u
+[
+t
+?
+š
+]
+a-ma-i
+ba 19
+ir-te-qu
+e-nu*
+-
+ku
+?*
+šu-ú-ut
+šá-ma-a-mi
+S+T+-NA i 2
+[...]
+⌈
+šu
+⌉
+-ut
+ap-se-e
+19a
+S+T+-NA i 3
+[…
+-r
+]
+i-du-ma
+19a
+... and
+20
+A i 20
+[...
+ú-ša-a
+]
+z-
+[
+bi
+]
+-lu
+d
+i-gi-gi
+ba 20
+du
+?
+-ul-lu
+?
+iz
+?
+-za-ab-bi-lu
+?-
+ni
+?-x
+šu
+?
+-ú-ut
+?
+d
+en-líl
+S+T+-NA i 4
+[...]
+⌈
+šu
+⌉-
+ut
+d
+enlil
+(IDIM)
+x
+S+T+-NA i
+----
+21
+A i 21
+[...]
+i-ḫe-er-ru-nim
+ba 21
+i
+?*-
+la
+?*-
+ni
+?*
+na
+?*
+-ra
+?*
+-tim
+?*
+i-ḫe-er-ru
+{x}
+-u-ni
+S+T+-NA i 5
+[...
+i-ḫe-er
+]
+-ru-ú
+nāru
+(ÍD)
+22
+A i 22
+[
+mi-iṭ-ra-at
+/
+ti
+i-li
+n
+]
+a-pí-iš-ti
+ma-tim
+ba 22
+mi-iṭ-ra-ta
+i-li
+na-piš-ti
+ma-a-ti
+S+T+-NA i 6
+[...
+n
+]
+a-pùl-ti
+māti
+(KUR)
+23
+A i 23
+[
+i-lu
+na-ra-tim
+i
+]
+-ḫe-er-ru-nim
+ba 23
+i
+*
+-lu
+*
+na
+*
+-ra
+*
+-ta
+*
+i-ḫe-er-ru-u-ni
+x x x (erasure?)
+24
+A i 24
+[
+mi-iṭ-ra-at
+/
+ti
+i-li
+na-p
+]
+í-iš-ti
+ma-tim
+ba 24
+(on the edge)
+mi-iṭ-ra-at
+i-lu
+na-pa-áš-ti
+ma-a-tim
+25
+A i 25
+[
+i-lu
+iḫ-ru-ú
+idi
+]
+qlat
+(
+íd
+ID]IGNA)
+na-ra-am
+ba
+25 x x x x x x
+idiqlat
+(
+íd
+IDIGNA)
+S+T+-NA i 7
+[...]
+26
+A i 26
+[
+ù
+purat
+]
+tam
+(
+íd
+BURANU]N
+ki!
+-tam
+)
+ba 26
+x x x
+íd
+pu-ra-
+⌈
+na
+*⌉
+-
+⌈
+tú
+*⌉
+x x x x
+-tú
+?
+S+T+-NA i 7
+[...
+í
+]
+d
+pu-ra-na-ta
+ar-ki-šá
+27
+A i 27
+[…
+n
+]
+a-ag-bi
+F i 1
+[…
+na-ag-b
+]
+i
+ba 27a
+(illegible)
+S+T+-NA i 8
+[...]
+i-na
+nag-bi
+28
+A i 28
+[…
+iš-t
+]
+a-ak-nu
+F i 2
+[…
+iš-ta-ak-n
+]
+u
+!
+ba 27b
+(illegible)
+S+T+-NA i 9
+[...]
+-šu-nu
+il-tak-nu
+S+T+-NA i
+----
+29
+A i 29
+[…
+a
+]
+p-
+⌈
+sa
+⌉
+-a
+F i 3
+[…]
+-
+⌈
+a
+⌉
+ba 28a
+(illegible)
+30
+A i 30
+[…
+ki*
+?
+-ip*
+?]-⌈
+pa*
+⌉
+-
+⌈
+at
+⌉
+ma-tim
+F
+i 4 […
+ma-ti
+]
+m
+ba 28b
+(illegible)
+31
+A i 31
+[…]
+-a
+qé-re-eb-šu
+F i 5
+[…
+qé-re-eb-š
+]
+u
+ba 29a
+x x x
+ki
+?*-
+ra
+?*
+-a
+qé-re-eb-šú
+:
+32
+A i 32
+[…
+ul-l
+]
+u-ú
+re-ši-šu
+F i 6
+[…
+re-ši-š
+]
+u
+?
+ba 29b
+⌈
+ḫur
+?*⌉
+-
+⌈
+ša
+*?⌉
+-
+⌈
+ni
+*⌉
+ul-lu-ú
+re-š
+[
+i-šu
+]
+33
+A i 33
+[…
+k
+]
+a-la
+ša-di-i
+F i 7
+[…
+ša-di
+]-⌈
+i
+?⌉
+ba 30
+x x
+-a-ni
+ka-la
+ša
+?*
+-di*-
+⌈
+i
+*⌉
+34
+A i 34
+[...]
+ša
+šu-up-ši-ik-ki
+F i 8
+[…
+šup
+]
+šikki
+(
+gi
+DU]SU)
+ba 31a
+i
+?-
+lu-ú-ma
+ib-nu-ú
+x
+na
+?...
+35
+A i 35
+[…] ⌈x⌉
+ṣú-ṣi-a
+ra-bi-a
+F i 9
+[...
+ra-bi-a-a
+]
+m
+ba 31b
+(illegible)
+36
+A
+i 36 [...
+ib
+]-
+nu-ú
+ša
+šu-up-ši-ik-ki
+F
+i 10 […
+šupšik
+]
+ki
+(
+gi
+DUS]U)
+MM-MB obv. 1
+DINGIR
+meš
+i
+[
+b
+*
+-nu-ú
+...]
+ba 32a
+i*-lu*-ú*-ma*
+ib-nu-ú
+ša
+?*
+gi
+*DUSU*
+36a
+S+T+-NA i 10
+[… 10?
+šanāte
+(MU
+meš
+])
+-ma
+i-za-bi-lu
+tup-ši-ka
+36b
+S+T+-NA i 11
+[… 20?
+šanāte
+(MU
+me
+]
+š
+)
+-ma
+i-za-bi-lu
+tup-ši-ka
+36c
+S+T+-NA i 12
+[… 30?
+šanāte
+(MU
+me
+]
+š
+)
+-ma
+i-za-bi-lu
+tup-ši-ka
+37
+A i 37
+[... ] ⌈x⌉ 40
+šanātim
+(MU
+ḫi.a
+)
+at-ra-am
+MM-MB obv. 2
+50 IR IR x x [x x x x x]
+ba 32b
+(illegible)
+S+T+-NA i 13
+[…
+MU
+me
+]
+š
+-ma
+i-za-bi-lu
+tup-ši-ka
+S+T+-NA i
+----
+37a
+S+T+-NA i 14
+[… ] x
+il-mu-ú
+qab
+?!*-
+la
+37b
+S+T+-NA i 15
+[…] ⌈x x KUR⌉
+37b
+... the land(?).
+S+T+-NA i
+----
+38
+A i 38
+[
+i-lu
+du
+]
+-ul-lam
+iz-bi-lu
+mu-ši
+ù
+ur-ri
+MM-MB obv. 3
+i-lu
+du-ul-la
+i-za-
+⌈
+bi
+⌉-
+l
+[
+u
+?
+GI
+6
+?
+(
+u
+)
+UD?]
+ba 33
+⌈
+i
+*⌉
+-lu*
+du
+?
+-lu
+iz-bi-lu
+x x x x
+39
+A i 39
+[...
+wa
+*
+-aš
+*]
+-bu-ma
+i-ik-ka-lu
+ka-ar-ṣi
+MM-MB obv. 4
+aš-bu-ma
+ik-ka-lu
+kar-ṣi
+ba 34
+⌈
+šu
+*⌉-
+nu
+*
+áš
+*
+-bu
+*
+-ma
+ik-ka-
+[
+lu
+ka-ar-ṣi
+]
+S+T+-NA i 16
+[…
+ka-ar
+]
+-ṣi
+40
+A i 40
+[
+ut-ta-az
+]
+-za-mu
+i-na
+ka-la-ak-ki
+MM-MB obv. 4
+ut-ta-
+[(
+az-
+)
+za-mu
+]
+ba 40
+ut-ta-az-za-mu
+ik-ka-la-ak-
+[
+ki
+]
+S+T+-NA i 17
+[…
+i-na
+ka-la-a
+]
+k-ki
+40a
+MM-MB obv. 5
+tup-ši-ik-ku-ma
+idukka
+(GAZ)
+-na-ši
+ka-
+⌈
+bit
+⌉
+du-ul-l
+[
+u
+]
+40b
+MM-MB obv. 6
+<
+ma
+>
+-a-
+⌈
+ad
+⌉
+šap-ša-aq-ni
+(vacat)
+41
+A i 41
+[
+al-k
+]
+a-ni
+guzzalâ
+(GU.ZA.LÁ)
+i
+ni-im-ḫu-ur-ma
+MM-MB obv. 7
+al-ka-ni
+giš
+gu-za-la-ni
+i
+ni-<ni->ri-am-ma
+ba 41
+al-ka-a-nim
+guzallâ
+(GU.ZA.LÁ
+-a
+?)
+i
+ni-na-ra-
+⌈
+áš
+*⌉
+-
+⌈
+šu
+*⌉
+J-NA i 1
+[
+al-ka
+]-
+a
+i
+ni-
+⌈
+na-ra
+⌉
+-a
+[
+š-šu
+]
+S+T+-NA i 18
+[…
+i
+ni-na-r
+]
+a
+42
+A i 42
+[
+ka
+-
+a
+]
+b-tam
+du-ul-la-ni
+li-ša-sí-ik
+el-ni
+MM-MB obv. 8
+ù
+ka-ab-ta
+du-ul-la-ni
+i
+ni-iš-bir
+5
+ni-ir-
+[
+šu
+?*]
+J-NA i 2
+[...
+du
+?
+-ul
+?
+-la
+?]-⌈
+ni
+?*⌉
+i
+ni-iš-bi-ir
+ni-ra
+S+T+-NA i 19
+[…
+n
+]
+i
+*
+-ra
+43
+A i 43
+[
+i-lam
+ma
+]-
+li-ik
+i-li
+qú-ra-dam
+44
+A i 44
+[
+al-k
+]
+a-nim
+i
+ni-iš-ši-a
+i-na
+šu-ub-ti-šu
+45
+A i 45
+[
+d
+en-líl
+m
+]
+a-li-ik
+i-li
+qú-ra-dam
+46
+A i 46
+[
+al-k
+]
+a-nim
+i
+ni-iš-ši-a
+i-na
+šu-ub-ti-šu
+47
+A i 47
+[
+d
+we
+]
+-
+⌈
+e
+⌉
+pí-a-šu
+i-pu-ša-am-ma
+MM-MB obv. 9–10
+<
+d
+>
+e
+ša
+i-šu-ú
+i-lu
+ṭe-ma
+/
+⌈
+pa
+⌉
+-a-
+⌈
+šu
+⌉
+<i>-pu-ša
+!
+-
+⌈
+ma
+⌉
+ba 42
+d
+e
+10
+(NAGAR)
+pa-a-šu
+i-pu-ša-am-
+(
+ma
+)
+J-NA i 3
+[...]
+i-pu-ša-am-ma
+48
+A i 48
+[
+i-za-kà
+]
+r
+a-na
+i-li
+aḫ-ḫi-šu
+MM-MB obv. 10
+ana
+ilī
+(DINGIR
+meš
+)
+[
+i
+]
+z-za-kàr
+ba 43
+iz-za-
+⌈
+ka-ra
+⌉
+a-na
+i-li
+aḫ-ḫe-
+(
+e-šu
+)
+J-NA i 4
+[
+iz-za-ka-r
+]
+a
+a-na
+i-li
+aḫ-ḫe-e-šu
+49
+A i 49
+[
+i
+ni-im-ḫa-aṣ
+]-⌈
+ma
+*⌉
+guzallê
+(⌈GU⌉.⌈ZA⌉.⌈LÁ⌉)
+⌈
+la
+⌉-
+bi-ru-tim
+MM-MB rev. 1
+⌈
+i
+ni
+⌉
+-im-ḫa-aṣ-ma
+giš
+gu-za-la
+<
+la
+>
+-bi-
+<
+ru
+>
+-ti
+ba 44
+ni-
+⌈
+im
+?*⌉
+-
+⌈
+ḫa
+*⌉
+-
+⌈
+aṣ
+*⌉
+-ma
+gu
+<
+za
+>
+llê
+(GU.<ZA>.LÁ
+-e
+)
+la-bi
+(
+-ru
+)
+-ú
+(
+-ti
+)
+J-NA i 5
+[
+nimḫaṣ-m
+]
+a
+guzallê
+(GU.<ZA>.LÁ
+-e
+)
+la-bi-ru-tim
+50
+A i 50
+[…
+d
+en
+]-⌈
+líl
+*⌉
+MM-MB rev. 2
+[
+i-š
+]
+u-tám*
+? ⌈x (x) x⌉
+i-ša-ka-an
+en-líl
+ba 45
+i-šu-tám*
+? x x
+i-ša-ak-
+⌈
+ka-na
+⌉
+d
+en-líl
+J-NA i 6
+[...]
+⌈
+i
+⌉
+-šá-ak-ka-na
+d
+en-líl
+51
+A i 51
+[
+…
+]
+MM-MB rev. 3
+⌈x⌉
+-šu-t
+[
+ám
+? …]
+i-ša-ka-an-
+<<
+nu
+>>
+ba 46
+i-šu-ú
+?
+-tám
+?
+...
+J-NA
+i 7 [...]
+-né-e
+i-ša-ka-an
+52
+A i 52
+[…] x
+-ni
+MM-MB rev. 4
+⌈x x⌉ [x] ⌈x
+i
+⌉
+-na
+maḫ-ri-ni
+ba 46a
+(illegible)
+J-NA i 8
+[...]
+⌈
+ú-la
+iq-qú-ú
+⌈
+ri
+?*⌉-⌈
+iq
+?*⌉
+-
+⌈
+qá
+?*⌉
+S+T+-NA
+i 20 […]
+riqqa
+(ŠIM)
+53
+A i 53
+[…]
+MM-MB rev. 4
+ila
+(DINGIR)
+⌈
+lem
+?⌉
+-na
+S+T+-NA
+i 21 [...
+le
+-
+e
+]
+m
+*-
+na
+*
+ba 47
+(illegible)
+54
+A i 54
+[...]
+MM-MB rev. 5
+⌈x x
+i
+?⌉-[
+še
+]
+m
+?
+-mu-u
+un-ni-ni
+al-ka-ni
+ba 47a
+(illegible)
+55
+A i 55
+[...]
+MM-MB rev. 6
+⌈
+en
+?*⌉
+-
+⌈
+líl
+?*⌉
+⌈
+u*
+⌉
+-šal-bi-ra
+ni-ir-ni
+ba 47b
+(illegible)
+56
+A i 56
+(broken)
+MM-MB rev. 7
+⌈
+ù
+ka
+⌉
+-ab-ta
+⌈
+dul-la
+⌉
+-ni
+⌈
+ud
+?*⌉
+-
+⌈
+da
+?*
+-an-n
+[
+i-in
+*]
+ba 48a
+(illegible)
+A i 57
+[50+x]+4
+57
+A ii 1
+ma-li-
+[
+ik
+]
+i-
+[
+li
+]
+qú-ra-dam
+MM-MB rev. 8
+⌈
+dap
+?⌉
+-ni-iš
+ma-lik
+ilī
+(DINGIR
+meš
+)
+qú-ra-
+[
+da
+]
+ba 49
+i-lu
+ma-li-ik
+(x)
+[
+i-li
+qú-ra-dam
+:]
+58
+A ii 2
+al-k
+[
+a-nim
+]
+⌈
+i
+⌉
+ni-iš-ši-a
+i-na
+šu-ub-ti-šu
+MM-MB rev. 9
+al-ka-ni
+i
+ni-iš-
+[
+ši
+]-⌈
+a-šu
+⌉
+i-na
+šu
+[
+b
+]
+-t
+[
+i-šu
+]
+ba 50
+(
+al-ka-nim
+i
+ni-iš-ši-a
+i-na
+šu-ub-ti-šu
+)
+(illegible)
+59
+A ii 3
+d
+en-
+⌈
+líl
+⌉
+[
+ma-li-i
+]
+k
+i-li
+qú-ra-dam
+MM-MB rev. 10
+d
+en-líl
+ma-lik
+ilī
+(DINGIR
+meš
+)
+⌈
+qú
+⌉
+-ra-da
+ba 51
+d
+en-líl
+ma-li-ik
+(x)
+[
+i-li
+qú-ra-dam
+:]
+60
+A ii 4
+al-
+[
+ka
+]
+m
+?
+i
+ni-iš-ši-a
+i-na
+šu-ub-ti-šu
+MM-MB rev. 11
+KI.MIN
+ba 52
+(
+al-ka-nim
+i
+ni-iš-ši-a
+i-na
+šu-ub-ti-šu
+)
+(illegible)
+61
+A ii 5
+a-nu-um-ma
+ti-si-a
+tu-
+⌈
+qú
+⌉
+-um-tam
+ba 53
+an
+<<A>>
+-nu-um-ma
+lu-ga-
+[
+ri
+?
+... :]
+62
+A ii 6
+ta-ḫa-za
+i
+ni-ib-lu-la
+qá-ab-la-am
+ba 54
+(…) (illegible)
+63
+A ii 7
+i-lu
+iš-mu-ú
+zi-ki-ir-šu
+MM-MB rev. 11
+ilū
+(DINGIR
+meš
+)
+[...]
+ba 55
+ilū
+(DINGIR
+meš
+)
+⌈
+iš-mu
+⌉
+-ú
+sì-qar-šu
+:
+64
+A ii 8
+i-ša-tam
+ne-pé-ši-šu-nu
+id-du-ú-ma
+ba 56
+⌈
+i
+⌉-[
+ša-ta
+ne-pé-ši-šu-nu
+id-du-ú-ma
+]
+65
+A ii 9
+ma-ar-ri-šu-nu
+i-ša-ta-am
+ba 57
+mar-ri-
+⌈
+šú-nu
+i-ša-tu
+⌉
+<:>
+66
+A ii 10
+šu-up-ši-ik-ki-šu-nu
+d
+girra
+(BIL.GI)
+MM-MB rev. 12
+⌈
+ù
+⌉
+tup-ši-i
+[
+k-ki-šu-nu
+…]
+ba 58
+<
+tu
+>
+-up-ši-
+[
+ik-ki-šu-nu
+d
+girra
+]
+67
+A ii 11
+it-ta-ak-šu
+MM-MB rev. 13
+⌈x x⌉ [...]
+ba 58
+[
+it-ta-ak-šu
+]
+68
+A ii 12
+i-ta-aḫ-zu-nim
+i-il-la-ku-nim
+ba 59
+ig-dar-
+⌈
+šu-ú
+⌉
+-ni
+i-il-la-ku-ú-
+⌈
+ni
+:⌉
+K(+)M-NA ii 1
+[
+ītaḫzū
+?]-⌈
+ni
+⌉
+[...]
+69
+A ii 13
+ba-bi-ša
+at-ma-ni
+qú-ra-di
+d
+En-líl
+ba 60
+ba-a-bi-iš
+⌈
+at-
+x x x⌉ (…)
+K(+)M-NA ii 2
+[
+ba
+]
+-
+⌈
+a
+⌉
+-bi
+!(text: ŠUM)-
+iš
+!(text: DA)
+at-ma-
+[
+ni
+...]
+70
+A ii 14
+mi-ši-il
+ma-aṣ-ṣa-ar-ti
+mu-šum
+i-ba-aš-ši
+ba 61
+ma-aṣ-ṣa-ra-at
+mu-ši
+i-ba-
+[
+áš
+]
+-ši
+K(+)M-NA ii 2
+[...]
+71
+A ii 15
+bītum
+(É)
+la-wi
+i-lu
+ú-ul
+i-de
+ba 62
+é-kur
+la-wi
+i-lu
+ú-ul
+i-de
+<:>
+K(+)M-NA ii 3
+[
+bi-t
+]
+i
+la-wi
+i-lu
+u
+[
+l
+i-de
+]
+72
+A ii 16
+mi-ši-il
+ma-aṣ-ṣa-ar-ti
+⌈
+mu-šum
+⌉
+i-ba-aš-ši
+ba 63
+ma-aṣ-ṣa-ra-⌈at
+mu-ši⌉
+i-ba
+?
+-
+[
+áš-ši
+]
+K(+)M-NA ii 3
+[...]
+73
+A ii 17
+é-kur
+la-wi
+d
+en-lílú-ul
+i-de
+ba 64
+é-kur
+la-wi
+d
+en-líl
+ú-ul
+i-de
+K(+)M-NA ii 4
+[
+bi
+]
+-ti
+la-wi
+d
+en-lí
+[
+l
+ul
+i-de
+]
+74
+A ii 18
+ú-te-eq-qí
+d
+kal-kal
+ú-še-
+⌈x⌉-[x]
+ba 65
+úḫ-ta-ak-ki-im
+⌈
+d
+kal-kal
+⌉
+i-ḫi-
+⌈
+iṭ
+?⌉
+x x
+K(+)M-NA ii 5
+[
+u
+]
+ḫ-ta-ki-im
+[...]
+75
+A ii 19
+il-pu-ut
+si-ik-ku-ra
+i-ḫi-iṭ
+[...]
+ba 66
+il-pu-ut
+?
+ši
+?
+-ik
+?
+-
+[
+ku-ra
+…]
+K(+)M-NA ii 6
+[
+i
+]
+l-pu-ut
+[
+š
+]
+i
+?(text: ME)
+-ik-ku-r
+[
+a
+...]
+76
+A ii 20
+d
+kal-kal
+id-de-ki
+d
+[
+nuska
+]
+ba 67
+(illegible)
+K(+)M-NA ii 6
+[...]
+77
+A ii 21
+ri-ig-ma
+i-še-em-mu-ú
+š
+[
+a
+d
+i-gi-gi
+]
+ba 68
+(
+rig-ma
+)
+i-še-em-mu
+?
+x x x […]
+K(+)M-NA ii 7
+[
+ri-i
+]
+g-ma
+i-še-em-m
+[
+u-ú
+...]
+78
+A
+ii 22
+d
+nuska
+id-de-ki
+be-
+[
+el-šu
+]
+ba
+69
+(
+d
+nuska
+i
+)
+d-ke
+be-el-šu
+:
+K(+)M-NA
+ii 7 [...]
+79
+A ii 23
+i-na
+ma-ia-li
+ú-še-et-
+[
+bi-šu
+]
+ba 70
+[…]
+K(+)M-NA ii 8
+[
+ina
+m
+]
+a-a-a-al
+[
+mu
+?
+-ú
+?
+-ši
+?
+ušetbīšu
+]
+80
+A ii 24
+be-lí
+la-wi
+bi-
+[
+it-ka
+]
+ba 71
+(
+be-lí
+la-wi
+)
+bi-it-k
+[
+a
+:]
+K(+)M-NA ii 9
+[...] ⌈x?⌉
+⌈
+la-wi
+bi
+⌉
+-
+[
+it-ka
+]
+81
+A ii 25
+qá-ab-lum
+i-ru-ṣa
+⌈
+a
+⌉
+-
+[
+na
+ba-bi-ka
+]
+ba 72
+[
+qá-ab-lum
+i-ru-ṣa
+ab-b
+]
+a-bi-ka
+82
+A ii 26
+d
+en-líl
+la-
+[
+wi
+bi-it
+]
+-ka
+ba 73
+(
+d
+en-lí
+)
+l
+la-wi
+bi-i
+[
+t-ka
+:]
+83
+A ii 27
+qá-ab-l
+[
+um
+i-ru
+]
+-
+⌈
+ṣa
+⌉
+a-na
+[
+b
+]
+a-bi-ka
+ba 74
+[
+qá-ab-lum
+]
+i-ru-ṣa
+a
+[
+b-ba-bi-ka
+]
+84
+A ii 28
+d
+en-líl
+[
+k
+]
+a
+?
+-
+⌈
+ki
+?⌉
+ú-ša-ar-di
+a-na
+šu-ub-ti-šu
+ba 75
+(illegible)
+85
+A ii 29
+d
+en-líl
+pí-a-šu
+i-pu-ša-am-ma
+ba 76
+(illegible)
+86
+A ii 30
+a-na
+šukkallim
+(SUKKAL)
+d
+nuska
+iz-za-kàr
+ba 77
+(illegible)
+87
+A ii 31
+d
+nuska
+e-di-il
+ba-ab-ka
+ba 78
+(illegible)
+88
+A ii 32
+ka-ak-ki-ka
+li-qé
+i-zi-iz
+ma-aḫ-ri-ia
+ba 79
+(illegible)
+89
+A ii 33
+d
+nuska
+i-di-il
+ba-ab-šu
+ba 80
+(illegible)
+90
+A ii 34
+ka-ak-ki-šu
+il-qé
+it-ta-zi-iz
+ma-ḫar
+d
+en-líl
+ba 81
+(illegible)
+91
+A
+ii 35
+d
+nuska
+pí-a-šu
+i-pu-ša-am-ma
+ba
+82 (illegible)
+92
+A ii 36
+iz-za-kàr
+a-na
+qú-ra-di
+d
+en-líl
+ba 83
+(illegible)
+93
+A ii 37
+be-lí
+bi-nu
+bu-nu-ka
+ba 84
+(illegible)
+94
+A ii 38
+ma-ru
+ra-ma-ni-ka
+mi-in-šu
+ta-du-ur
+ba 85
+(illegible)
+95
+A ii 39
+d
+en-líl
+bi-nu
+bu-nu-ka
+ba 86
+(illegible)
+96
+A ii 40
+ma-ru
+ra-ma-ni-ka
+mi-in-šu
+ta-du-ur
+ba 87
+(illegible)
+97
+A ii 41
+šu-pu-ur
+a-nam
+li-še-ri-du-[nim-m]a
+ba 88
+(illegible)
+98
+A
+ii 42
+d
+en-ki
+!(text: LÍL)
+li-ib-bi-ku-nim
+a-na
+m
+[
+a-aḫ-ri-k
+]
+a
+ba 89
+(illegible)
+99
+A ii 43
+iš-pu-ur
+a-nam
+ú-še-ri-
+[
+du-ni-i
+]
+š-šu
+100
+A ii 44
+d
+en-ki
+ib-bi-ku-nim
+a-na
+ma-a
+[
+ḫ-ri
+]
+-šu
+101
+A ii 45
+wa-ši-ib
+a-nu-um
+šar-ri
+[
+ša
+]
+-me-
+⌈
+e
+⌉
+ba 90
+a-ši-ib
+d
+a-nu
+šar-
+[
+ri
+šá-ma-a-mi
+]
+102
+A ii 46
+šar-ri
+ap-si-i
+d
+en-
+⌈
+ki
+⌉
+⌈
+ú
+?⌉-[
+te
+?-
+e
+]
+q-
+⌈
+qí
+⌉
+ba 91
+šar-ri
+ap-
+[
+si-i
+d
+é-a
+…]
+103
+A ii 47
+ra-bu-tum
+d
+a-nu-
+[
+na-ku
+w
+]
+a-aš-bu
+F ii 1
+ra-bu-t
+[
+um
+…]
+ba 92
+ra-bu-ú-
+[
+tum
+...]
+104
+A ii 48
+d
+en-líl
+it-bé-ma
+ša-
+[
+ki-in
+]
+⌈
+di
+⌉
+-nu
+F ii 2
+d
+en-líl
+it-b
+[
+é-ma
+…]
+ba 93
+d
+en-líl
+[...]
+105
+A ii 49
+d
+en-líl
+pí-a-šu
+i-
+[
+pu-ša-a
+]
+m-ma
+F
+(omitted)
+ba 94
+d
+en-líl
+[...]
+106
+A ii 50
+iz-za-kàr
+a-n
+[
+a
+i-li
+ra-b
+]
+u-tim
+F
+(omitted)
+ba 95
+iz-
+[
+za-kàr
+L-NA obv. 1
+[
+iz-za
+]-⌈
+kàr
+ana
+ilī
+(DINGIR
+meš
+)⌉
+aḫ-
+[
+ḫe-e-šu
+]
+107
+A ii 51
+ia-a-ši-im-ma-a
+i
+[
+t-te-né*-bu
+]
+-ú
+?
+F ii 3
+ia-ši-im-ma
+[
+…
+]
+ba 96
+ia-
+[
+a-ši-im-ma
+...]
+L-NA obv. 2
+[
+e-li-i
+]
+a-ma-a
+it-te-né-e
+[
+b-bu-ú
+)]
+108
+A ii 52
+⌈
+ta-ḫa
+⌉
+-za
+e-ep-pu-uš
+ša
+⌈x x x x⌉
+F ii 3
+[...]
+ba 97
+ta-ḫa-
+[
+za
+...]
+L-NA obv. 3
+[...] x x x
+zu
+??
+ú-ti
+109
+A ii 53
+i-lí
+mi-na-a
+a-mu-ur
+a-na-ku
+F ii 4
+i-lí
+mi-na
+a-m
+[
+u-ur
+a-na-ku
+]
+ba 98
+i
+?*
+-lu
+?*
+mi-na-a
+[
+a-mu-ur
+…]
+J-NA ii 1
+⌈
+i
+⌉ [...]
+L-NA obv. 4
+[...]
+⌈
+mi
+⌉
+-
+[
+na
+]
+-
+⌈
+a
+a-mu-ur
+⌉
+a-
+[
+na-ku
+]
+110
+A ii 54
+qá-ab-lum
+i-ru-ṣa
+a-na
+ba-bi-ia
+F ii 4
+[…]
+ba 99
+qá-ab-li
+[...]
+J-NA ii 2
+qa-a
+[
+b
+!
+-lum
+...]
+L-NA obv. 5
+[
+qá-ab-lu
+]
+m
+i-ru-ṣa
+ab-
+⌈
+ba
+⌉
+-
+[
+a-bi-ia
+]
+L-NA
+----
+110a
+S+T+-NA ii 1
+⌈
+x
+⌉
+[…]
+110b
+S+T+-NA ii 2
+lu
+⌈
+x
+⌉
+[…]
+110c
+S+T+-NA ii 3
+at-t
+[
+a
+…]
+110d
+S+T+-NA ii 4
+li-q
+[
+é
+…]
+110e
+S+T+-NA ii 5
+áš-bu-ma
+[...]
+110f
+S+T+-NA ii 6
+áš-bat
+d
+be-let-
+[
+ì-lí
+...]
+110g
+S+T+-NA ii 7
+ištēn
+(DIŠ)
+ši-si-ma
+i-l
+[
+a
+...]
+S+T+-NA ii
+----
+111
+A ii 55
+a-nu
+pí-a-šu
+i-pu-ša-am-ma
+F ii 5
+an-nu
+pa-a-š
+[
+u
+…
+]
+ba 100
+⌈
+d
+a-nu-um⌉
+pa-a-šu
+[...]
+bb 1
+[
+d
+a
+]
+-nu-um
+pa-a-šu
+i-pu-ša-am-
+[
+ma
+]
+J-NA ii 3
+⌈
+d?
+⌉ [...]
+L-NA obv. 6
+[(x)]
+d
+a-nu-um
+pa-a-
+[
+šu
+...]
+112
+A ii 56
+iz-za-kàr
+a-na
+qú-ra-di
+d
+en-líl
+F ii 5
+[…]
+ba 101
+iz-za-⌈kar⌉
+a-na
+[...]
+bb 2
+[
+iz-za
+]
+-ak-kàr
+a-na
+a-ḫi-šu
+d
+en-
+[
+líl
+]
+J-NA ii 4
+i
+[
+z
+? ...]
+L-NA obv. 7
+⌈
+iz-za-kàr⌉
+ana
+a-ḫi-šu
+[...]
+113
+A ii 57
+⌈
+zi
+⌉
+-ik-ra
+ša
+d
+i-gi-gu
+F ii 6
+zi-ik-ra
+[
+…
+]
+ba 102
+sì-ik-r
+[
+a
+....]
+bb 3
+[
+sì-ik
+]
+-ra
+ša
+d
+i-gi
+4
+-gi
+4
+L-NA obv. 8
+[
+zi-ik-r
+]
+a
+[
+š
+]
+a
+d
+i-gi
+4
+-[
+gi
+4
+]
+114
+A ii 58
+⌈
+il
+⌉
+-mu-ú
+ba-bi-iš-
+⌈
+ka
+⌉
+F ii 6
+[…]
+ba 102
+[...]
+bb 3
+ip-ḫu-ru-nim
+a-ab-
+⌈
+ba
+⌉
+-bi-iš-k
+[
+a
+]
+L-NA obv. 8
+[…]
+114a
+A ii Lo. Ed.:
+58
+115
+A iii 1
+li-ṣi-ma
+⌈
+d
+⌉[
+nuska
+]
+F ii 7
+li-ṣi-m
+[
+a
+]
+ba 103
+[
+l
+]
+i-ṣi-ma
+d
+[
+nuska
+]
+bb 4
+[
+li-ṣ
+]
+i-ma
+d
+[
+nuska
+]
+L-NA obv. 9
+[
+l
+]
+i-ṣi-ma
+d
+nuska
+116
+A iii 2
+te-er-ta
+-
+š
+[
+u
+!?*-
+nu
+?
+…]
+F ii 8
+te-er-ta
+-[
+…
+]
+ba 103
+[...]
+bb 4
+li-il-ma-da
+a-
+[
+mat
+]
+-su-
+[
+un
+]
+L-NA obv. 9
+⌈
+lil
+⌉
+-
+[
+ma-da
+...]
+117
+A iii 3
+a-na
+ma-
+[
+ḫa
+?
+-ṣí
+?
+-im
+?]
+118
+A iii 4
+d
+en-líl
+pí-a-šu
+i-
+[
+pu-ša-am-ma
+]
+F ii 9
+d
+en-líl
+pa-a-š
+[
+u
+…
+]
+ba 104
+d
+a-nu-um
+pa-a-š
+[
+u
+...
+]
+bb 5
+[
+d
+a-nu-u
+]
+m
+*
+pí-a-šu
+i-p
+[
+u-š
+]
+a-am-
+[
+ma]
+L-NA obv. 10
+[
+d
+en-lí
+]
+l
+pa-a-šu
+i-
+[
+pu-ša-am-ma
+]
+S+T+-NA ii 8
+d
+a-nu
+pâ
+(KA)
+-šú
+ēpuša
+(DÙ
+-ša
+)
+i-qab-bi
+119
+A iii 5
+iz-za-kàr
+a-na
+[...]
+F ii 9
+[...]
+ba 105
+as-sukkal-li-šu
+?
+d
+nuska
+⌈
+iz
+⌉
+-za-
+[
+ak-kàr
+]
+bb 6
+as-sukkal-li
+d
+nuska
+⌈
+iz
+⌉
+-za-
+⌈
+ak
+⌉
+-kàr
+L-NA obv. 11
+[
+iz-za-a
+]
+k-kàr
+ana
+i-l
+[
+i
+?
+...]
+S+T+-NA ii 8
+issakka
+[
+ra
+(MU-[
+ra
+) ...]
+120
+A iii 6
+d
+nuska
+pí-t
+[
+e
+…]
+F ii 10
+d
+nuska
+pí-t
+[
+e
+…
+]
+ba 106
+d
+nuska
+pi-
+⌈
+te
+⌉
+ba-a
+?
+-ab-ka
+bb 7
+[
+d
+nuska
+]
+pi-te
+ba-a-ab-ka
+L-NA obv. 12
+[
+d
+nusk
+]
+a
+pi-te
+[...]
+S+T+-NA ii 9
+d
+nuska
+pi-te
+bāb
+(KÁ)
+-ka
+:
+121
+A iii 7
+ka-ak-ki-ka
+l
+[
+i-qé
+…
+]
+F ii 10
+[…]
+ba 107
+ka-ak-ki-ka
+li-qé-ma
+ṣi-i
+ap-pu-
+(
+úḫ-ri
+)
+bb 8
+k
+[
+a-ak
+]
+-ki-ka
+li-i-qé
+ṣi-i
+ap-pu-úḫ-ri
+L-NA obv. 13
+[
+ka-a
+]
+k-
+⌈
+ki-ka
+⌉
+[...]
+S+T+-NA ii 9
+kakkē
+(
+giš
+TUKUL)
+-ka
+[…]
+122
+A iii 8
+i-na
+pu-úḫ-ri
+[
+ka-la
+i-li-ma
+]
+F ii 11
+i-na
+pu-ḫu-ur
+k
+[
+a-la
+…
+]
+ba 108
+ip-pu-ú-uḫ-ri
+ka-la
+i-li-i-
+(
+ma
+)
+bb 9
+ip-
+[
+pu
+]
+-úḫ-ri
+ka-la
+i-li-i-
+[
+ma
+]
+L-NA obv. 14
+[
+ip-pu-uḫ
+]
+-
+⌈
+ru
+⌉
+[...]
+S+T+-NA ii 10
+i-na
+puḫre
+(UKKIN)
+šá
+ilē
+(DINGIR
+meš
+)
+rabûte
+(GAL
+meš
+)
+123
+A iii 9
+ki-mi-is
+i-zi-i
+[
+z
+...]
+E i 1
+[…
+šu-un
+]-
+ni
+F ii 12
+[…]
+ba 109
+ki-mi-is-ma
+i-zi-iz
+te-e-er-ti
+šu-
+(
+un-ni
+)
+bb 10
+[
+ki-m
+]
+i-is-ma
+i-zi-iz
+te-e-er-ti
+šu-un-n
+[
+i
+]
+S+T+-NA ii 10–11
+ki-mi
+[
+s
+…] //
+qí-ba-šu-nu-ti
+[…]
+124
+A iii 10
+iš-pu-ra-an-ni
+[…]
+E i 2
+[…]
+⌈
+a
+⌉
+-nu
+F ii 12
+[
+iš
+]
+-p
+[
+u
+]
+-
+⌈
+ra-an
+⌉
+-n
+[
+i
+...]
+ba 110
+um-ma
+iš-pu-ra-an-ni-mi
+a-bu-ku-nu
+d
+a-
+(
+nu-um
+)
+bb 11
+[iš-pu-r
+]
+a-an-ni-mi
+a-bu-ku-nu
+⌈
+d
+⌉
+a-nu-um
+S+T+-NA ii 12
+iš-pu-ra-an-ni
+d
+a-
+[
+nu
+…]
+125
+A iii 11
+ma-li-ik-ku-nu
+[…]
+E i 3
+[…
+d
+en-l
+]
+íl
+ba 111
+ù
+ma-li-ik-ku-nu
+qú-ra-a-du
+(
+d
+en-líl
+)
+bb 12
+[
+ù
+]
+ma-li-ik-ku-nu
+qú-
+[
+ra-a
+]
+-du
+d
+en-líl
+S+T+-NA
+ii
+13
+ma-lik-ku-nu
+q
+[
+u-ra-du
+...]
+126
+A iii 12
+ku-uz-za-lu-ku-
+[
+nu
+...]
+E i 4
+[...
+d
+nin-u
+]
+rta
+ba 112
+guzallû
+(GU.ZA.LÁ)
+-ku-nu
+(
+d
+nin-urta
+)
+bb 13
+[
+gu
+]
+-za-⌈lu⌉-ku-nu
+⌈
+d
+⌉nin-urta
+S+T+-NA ii 14
+guz
+[
+allû
+](⌈GU⌉.Z[A.LÁ])
+-ku-nu
+d
+⌈
+nin
+⌉-[
+urta
+]
+127
+A iii 13
+ù
+gal-lu-ku-n
+[
+u
+...]
+E i 5
+[...
+d
+en
+]
+-nu-gi
+ba 113
+ù
+gal-lu-ku-nu
+i-lu
+d
+en-
+(
+nu-gi
+)
+bb 14
+ù
+ga
+[
+l
+]
+-lu-ku-nu
+i-lu
+d
+en-nu-
+⌈
+gi
+⌉
+S+T+-NA ii 14
+[…]
+128
+A iii 14
+ma-an-nu-um-
+⌈
+mi
+⌉
+[…]
+E i 6
+[…
+qá
+]
+-ab-lim
+ba 114
+ma-an-nu-um-ma
+i-lu
+be-el
+qá-ab-lim
+bb 15
+ma-a
+[
+n-nu
+]
+-um-mi
+i-lu
+be-el
+qá-ab-lim
+S+T+-NA ii 15
+ma-n
+[
+u-m
+]
+a
+bēl
+(EN)
+qable
+(MURUB
+4
+)
+129
+A iii 15
+ma-an-nu-um
+[…]
+E i 7
+[…
+t
+]
+a-
+⌈
+ḫa
+⌉
+-
+⌈
+zi
+⌉
+ba 115
+⌈
+ma
+⌉
+-an-nu-um-ma
+i-lu
+be-el
+ta-ḫa-zi
+bb 16
+ma-an-
+[
+nu-u
+]
+m-mi
+i-lu
+be-el
+ta-ḫa-zi
+S+T+-NA ii 15
+[...]
+130
+A iii 16
+⌈
+ma-an-nu-um
+⌉
+[...]
+E i 8
+[...
+t
+]
+u-qú-um-tam
+ba 116
+[
+ma
+]
+-an-nu-um-ma
+šá
+⌈
+ib-lu-lu
+⌉
+tu-qum-tam
+:
+bb 17
+ma-
+[
+a
+]
+n-nu-um-mi
+šá
+ib-lu-lu
+tu-
+⌈
+qum
+⌉
+-
+[
+tam
+]
+S+T+-NA ii 16
+ia-
+⌈
+ú
+⌉
+ilu
+(DINGIR)
+šá
+ib-na-
+⌈
+a
+⌉
+[...]
+131
+A iii 17
+[…]
+E i 9
+[...] x
+d
+en-líl
+ba 117
+(
+qá-ab-lu
+i-ru-ṣa
+ab-ba-ab-ba
+d
+en-líl
+)
+bb 18
+q
+[
+á
+]
+-a
+[
+b
+]
+-lam
+i-ru-ṣa
+ab-ba-a-ba
+d
+en-líl
+S+T+-NA ii 17
+qa-a
+[
+b-l
+]
+u
+i-ru-ṭa
+ana
+[
+bāb
+d
+e
+]
+n-líl
+S+T+-NA ii
+----
+131a
+ba u.e.
+a-na
+pî
+(KA)
+šá
+?
+-ṭir
+?
+132
+A iii 18
+[…]
+E i 10
+[...]
+⌈KÁ⌉
+-šu
+⌉
+bb 19
+d
+nuska
+il-qé
+te-e-er-ta
+S+T+-NA ii 18
+d
+nuska
+an-ni-t
+[
+a
+?
+...]
+133
+A iii 19
+[…]
+E i 11
+[...]
+i
+[
+l
+?
+-li
+]
+k
+?
+x x (x)
+d
+?
+en
+?
+-líl
+?
+bb 20
+ip-te-ma
+ba-a-ba
+it-ta-ṣi
+ap-
+⌈
+pu
+-
+úḫ
+⌉
+-ri
+S+T+-NA ii 19
+kakkē
+(
+giš
+TUKUL
+⌈
+meš
+⌉)
+-šu
+il-ta-q
+[
+é
+…]
+134
+A iii 20
+[…]
+E i 12
+[...
+k
+]
+a-la
+i-li-ma
+bb 21
+ip-pu-úḫ-ri
+ka-la
+i-li-ma
+S+T+-NA ii 20
+⌈
+i-na
+puḫre
+(UKKIN)⌉
+šá
+ilē
+(DINGIR
+meš
+)
+rabûte
+(GAL
+meš
+)
+135
+A iii 21
+[…]
+E i 13
+[...
+iz-zi
+]-⌈
+iz
+te-er-tam
+⌉
+ip-šu-ur
+bb 22
+ik-mi-is-ma
+iz-zi
+-
+iz
+te-er-tam
+id-d
+[
+in
+]
+S+T+-NA ii 20
+[...]
+136
+A iii 22
+[…]
+E i 14
+[...
+a
+]
+-bu-ku-nu
+a-nu
+bb 23
+iš-pu-ra-an-ni-mi
+a-bu-ku-nu
+d
+a-nu
+S+T+-NA ii 21
+[
+iš-pu-r
+]
+a-
+[
+an-ni
+a-bu-ku-nu
+d
+a-n
+]
+u-u
+[
+m
+]
+137
+A iii 23
+[…]
+E i 15
+[...
+qú-ra
+]
+-du
+⌈
+d
+en-líl
+⌉
+bb 24
+ù
+ma-⌈li⌉-ik-ku-nu
+qú-ra-du
+[
+d
+]
+en-líl
+S+T+-NA ii 22
+[...
+d
+e
+]
+n-líl
+138
+A iii 24
+[…]
+E i 16
+[...
+d
+n
+]
+in-urta
+bb 25
+gu-za-l
+[
+u-k
+]
+u-nu
+d
+nin-urta
+:
+S+T+-NA ii 23
+[...]
+139
+A iii 25
+⌈
+ù
+⌉
+[...]
+E i 17
+[...
+d
+e
+]
+n-nu-gi
+bb 26
+ù
+gal-lu-ku-nu
+i-lu
+d
+[
+e
+]
+n-nu-gi
+S+T+-NA ii 23
+[...]
+an-nu-gal
+140
+A iii 26
+ma
+-[
+an-nu-um-mi
+...]
+E i 18
+[...
+qá
+]-
+ab-lim
+bb 27
+ma
+-
+a
+[
+n-nu
+]
+-um-mi
+i-lu
+be-el
+qá
+-
+ab-
+[
+lim
+]
+S+T+-NA ii 24
+[...]
+141
+A iii 27
+ma-
+[
+an-nu-um-mi
+...]
+E i 19
+[...
+ta-ḫa
+]
+-zi
+bb 28
+ma-a
+[
+n
+]
+-nu-um-mi
+i-lu
+be-el
+ta-ḫa-z
+[
+i
+]
+S+T+-NA ii 24
+[...
+b
+]
+ēl
+(E]N)
+tāḫāze
+(KA×EREN)
+142
+A iii 28
+ma
+-[
+an-nu-u-um
+...]
+E i 20
+[...
+tu-qú-u
+]
+m-tam
+bb 29
+ma-
+[
+a
+]
+n-nu-u-um
+šá
+ib-lu-lu
+tu-
+⌈
+qum
+⌉
+-
+[
+tam
+]
+S+T+-NA ii 25
+[...
+ib-na
+]
+-a
+tuqumtu
+(GIŠ.LÁ)
+143
+A iii 29
+qá-a
+[
+b-lum
+... ]
+E i 21
+[...
+d
+e
+]
+n-
+⌈
+líl
+⌉
+bb 30
+q
+[
+a-a
+]
+b-l
+[
+a
+]
+m
+i-ru-ú-ṣa
+ab-ba-a-
+[
+ba
+...]
+e obv. 1
+[
+qablum
+irūṣa
+ab-ba-a
+]
+-a
+[
+b
+d
+en-líl
+]
+S+T+-NA ii 26
+[...
+b
+]
+āb
+([K]Á)
+d
+en-líl
+S+T+-NA ii
+----
+144
+A iii 30
+i-na
+p
+[
+u
+-
+úḫ-ri
+...]
+E i 22
+[...] x
+G i 1
+[...]
+bb 31
+[
+ip-pu-ú
+]
+ḫ-ri
+i-pu-lu
+d
+[
+i-gi
+4
+-gi
+4
+?]
+e obv. 2
+[
+ip-puḫri
+īpulū
+d
+]⌈
+i-gi
+4
+⌉
+-g
+[
+i
+4
+]
+144a
+S+T+-NA ii 27
+[...
+i
+]
+-pu-šu
+144b
+S+T+-NA ii 28
+[...
+d
+e
+]
+n-líl
+144c
+S+T+-NA ii 29
+[…]
+rabītu
+(
+⌈
+GAL?
+-tu
+⌉)
+145
+A iii 31
+ib-b
+[
+a-al-ki-tu
+...]
+E
+i 23–24 [...] ⌈x⌉ [...
+is-s
+]
+í
+G
+i 2 [...
+ḫ
+]
+u-
+⌈
+up
+?
+-šu
+?
+is
+?
+-
+⌈
+sí
+?⌉
+bb 32
+⌈
+ib
+⌉
+-ba-al-ki-tu
+ḫu-u-up-šum
+e obv. 3
+[...]
+⌈
+iš
+?
+-si
+⌉
+S+T+-NA ii 30
+[…] ⌈x⌉
+il-si
+G
+----
+145a
+S+T+-NA ii 31
+[...]
+ilē
+(DINGIR
+meš
+)
+bēlū
+(EN
+meš
+)
+tāḫāze
+(KA×EREN)
+146
+A iii 32
+ku-ul-la-a
+[
+t-ni
+...]
+E i 25
+[...
+tu-qú-um-ta
+]
+m
+G i 3
+ku-ul-la-a
+[
+t-ni
+ni-sà-a
+]
+q
+-
+qá-ra-am
+tu-qum-tam
+bb 33
+k
+[
+u-u
+]
+l-la-at-ni-ma
+ni-iz-za-kà
+[
+r
+...]
+e obv. 4
+[...]
+tu-qu
+[
+m
+]
+-tam
+S+T+-NA ii 32
+[...
+tuqumtu
+(GIŠ.LÁ)]
+147
+A iii 33
+ni-iš-ku-u
+[
+n
+...]
+G i 4
+[...]
+bb 34
+[
+ni-i
+]
+š-ku-un
+pu-ḫu-ur-ni
+e obv. 5a
+[...]
+148
+A iii 34
+i-na
+k
+[
+a-la-ak-ki
+]
+G i 4
+[
+i-n
+]
+a
+ka-la-ak-ki
+!
+bb 34
+ik-ka-l
+[
+a-ak-ki
+]
+e obv. 5b
+[...
+ka-la-a
+]
+k-ka
+G
+----
+149
+A iii 35
+šu-up-ši-ik-
+[
+ku
+...]
+G i 5
+[...
+id-d
+]
+u-uk-
+<<
+an
+>>
+-ni-a-ti
+!(text: AM)
+bb 35
+[
+tu-u
+]
+p-ši-ik-ki
+id-du-uk-
+[
+ni-a-ti
+]
+e obv. 6
+[...
+id-du-uk-n
+]
+i-a-ti
+150
+A iii 36
+ka-bi-it
+du-
+[
+ul-la-ni-ma
+...]
+G i 6
+[...
+ma
+]-⌈
+a-ad
+⌉
+ša-ap-ša-qum
+bb 36
+[
+ka-b
+]
+i-it-ma
+du-ul-la-nu
+ma-a-ad
+š
+[
+a-ap-ša-qu
+]
+e obv. 7
+[...
+ša-ap
+]
+-ša-qí
+G
+----
+151
+A iii 37
+ù
+ku-ul-l
+[
+a-at
+ka-la
+i-li-ma
+]
+G i 7
+[...
+il
+]
+ī
+(DINGI]R
+meš
+)
+-ma
+bb 37
+[x]
+⌈
+ù
+⌉
+ku-ul-la-at
+ka-la
+i-l
+[
+i-i-ma
+]
+e obv. 8
+[...
+i-l
+]
+i-
+⌈
+i
+⌉
+-
+[
+ma
+]
+152
+A iii 38
+ub-la
+pí-i-ni
+[...]
+G i 8
+[...]
+⌈
+d
+en-líl
+⌉
+bb 38
+⌈
+ub-lam
+⌉
+pí-i-ni
+mi-it-ḫu
+-
+ṣa
+it-t
+[
+i
+...]
+e obv. 9
+[...
+d
+e
+]
+n-líl
+S+T+-NA ii 33
+[…
+d
+e
+]
+n-líl
+G
+----
+153
+A iii 39
+d
+⌈
+nuska
+⌉
+il-q
+[
+e
+...]
+G i 9
+[...] ⌈x⌉
+bb 39
+d
+nuska
+il-qé-a-am
+te-e-er-tam
+e obv. 10
+[...
+te-er
+]
+-tam
+S+T+-NA ii 34
+[…] ⌈x x⌉
+154
+A iii 40
+il-li-ik
+ú-t
+[
+e
+?
+-er
+?
+...] ⌈x
+-
+x⌉
+bb 40
+i-tu-ur-ma
+⌈
+iq
+⌉
+-bi
+[...]
+e obv. 11
+[...
+ab-be-li
+]
+-šú
+155
+A iii 41
+be-lí
+a-
+⌈
+šar
+⌉
+[
+ta-aš-pu-r
+]
+a-
+⌈
+an-ni
+⌉
+bb 41
+be-lí
+a-šar
+taš-pu-ra-
+[
+an-ni
+]
+e obv. 12
+[...
+taš-pu-ra-a
+]
+n-
+⌈
+ni
+⌉
+156
+A iii 42
+al-l
+[
+i-ik
+...]
+⌈
+ma-du-ti
+⌉
+bb 42
+[
+am
+]
+-mu-uš
+az-zi-iz
+te-er-tam
+a
+[
+t
+(
+-ta
+?)
+-din
+]
+e obv. 13
+[...
+at-ta-di
+]
+-
+⌈
+in
+⌉
+157
+A iii 43
+ap-šu-u
+[
+r
+te-er-ta-k
+]
+a
+ra-bi-tam
+bb 43
+[
+iš
+]
+-mu-u-ma
+te-er-ta-ka
+ra-
+[
+bi-ta
+]
+e obv. 14
+[...
+ra-bi
+]
+-
+⌈
+tam
+⌉
+158
+A iii 44
+na-ap
+-[
+ḫa-ar
+]
+⌈x
+um
+?
+is
+?⌉-
+sí
+bb 44
+[
+ku
+]
+-ul-la-at
+d
+a-nun-na-ki
+ḫu-up-š
+[
+um
+x x x]
+159
+A iii 45
+⌈
+ku
+⌉
+-u
+[
+l-l
+]
+a-
+[
+at-n
+]
+i
+?
+-ma-mi
+bb 45
+[
+ku
+]
+-ul-la-at-ni-i-ma
+160
+A iii 46
+ni-
+[
+sà-qá-ra-am
+]
+⌈
+tu-qú-um-ta-am
+⌉
+bb 45
+ni-iz-za-ak-kà
+[
+r
+tu-qum-tam
+]
+161
+A iii 47
+n
+[
+i
+!
+-iš-ku-un
+pu-ḫu-u
+]
+r-ni
+i-na
+ka-la-ak-ki
+bb 46
+[
+ni-i
+]
+š-kun
+pu-ḫu-ur-ni
+ik-k
+[
+a-la-ak-ki
+]
+162
+A iii 48
+š
+[
+u-up-ši-ik-ku
+]
+at-ru
+id-du-uk-ni
+⌉
+-a-ti
+bb 47
+[
+tu-up
+]
+-ši-ik-ki
+id-du-
+[
+uk-ni-a-ti
+]
+163
+A iii 49
+[
+ka-bi-it
+du-u
+]
+l
+-
+la-ni-ma
+ma-a-ad
+ša-ap-ša-qum
+bb 48
+[
+ka-bi
+]
+-it-ma
+du-ul
+-
+la-a-nu
+ma-a-ad
+ša-
+[
+ap-ša-aq-ni
+]
+K(+)M-NA iii 1
+[...
+ša-ap-ša
+]
+q-ni
+164
+A iii 50
+[
+ù
+ku-ul-la
+]-
+at
+ka-la
+i-li-ma
+bb 49
+[
+ù
+ku
+]
+-ul-la
+-
+at
+ka-la
+i-l
+[
+i-ma
+]
+K(+)M-NA iii 2
+[...]
+⌈
+i-li
+⌉
+-ma
+165
+A iii 51
+u
+[
+b-la
+]
+⌈
+pí-i-ni
+na
+?
+-
+x-(x)⌉-
+am
+it-ti
+d
+en-líl
+bb 50
+[...
+p
+]
+í-i-ni
+mi-it-ḫu-ṣa
+i
+[
+t-ti
+...]
+K(+)M-NA iii 3
+[...
+pí
+]-⌈
+i-ni
+mit-ḫu-ṣa
+itti(
+KI)⌉
+d
+en-líl
+166
+A iii 52
+iš-
+[
+me
+]
+⌈
+a-wa-tam
+⌉
+šu-a-ti
+bb 51
+[...]
+a-ma-tam
+š
+[
+u-a-ti
+]
+K(+)M-NA iii 4
+[...]
+šu-a-tu
+167
+A iii 53
+d
+en-líl
+[
+il-la
+]
+-ka
+di-ma-šu
+bb 52
+[
+ù
+?
+ša
+?
+d
+e
+]
+n-líl
+il-la-ka
+d
+[
+i-ma-a-šu
+]
+K(+)M-NA iii 5
+[...
+i
+]
+l-la-ka
+di-ma-a-šu
+167a
+bb 53
+[
+i-lum
+i
+]
+-ta-dar
+mu-ú-
+[
+du-us-su
+]
+K(+)M-NA iii 6
+[
+i-l
+]
+u
+i-t
+[
+a-dir
+mu-ú-du-us-s
+]
+u
+167b
+bb 54
+[
+iz
+]
+-za-
+[
+ak-kàr
+]
+a-na
+a-ḫi-šú
+[...]
+K(+)M-NA iii 6
+iz-za-ak-kàr
+ana
+a-ḫi-šu
+d
+a-nu
+168
+A iii 54
+d
+en-líl
+⌈
+i
+⌉
+-
+[
+ta-d
+]
+a-
+⌈
+ar
+⌉
+a-wa-as-su
+bb 55
+[
+d
+en
+]
+-
+⌈
+líl
+⌉
+[
+i-ta
+]
+-dar
+mu-ú-
+[
+du-us-su
+]
+K(+)M-NA iii 7
+d
+en-líl
+i-ta-dir
+[...]
+169
+A iii 55
+iz-za-k
+[
+àr
+...
+q
+]
+ú-ra-di
+a-nim
+bb 56
+[
+iz
+]
+-
+⌈
+za-ak
+⌉
+-
+[
+kàr
+]
+a-na
+a-ḫi-šú
+[...]
+K(+)M-NA iii 7
+[
+i
+]
+z-
+⌈
+za-ak
+⌉
+-kàr
+ana
+a-ḫi-šu
+d
+a-nu
+L-NA rev. 1
+[...]
+170
+A iii 56
+e-te-el-[li
+it-ti-k
+]
+a
+a-na
+ša-ma-i
+bb 57
+[
+e
+]
+-te-e
+[
+l-li
+iš-t
+]
+i-ka
+[
+…
+]
+K(+)M-NA iii 8
+e-tel-li
+iš-ti-k
+[
+a
+ana
+šá-m
+]
+a-mi
+L-NA rev. 2
+[...
+i
+]
+š-ti-ka
+ana
+š
+[
+á-ma-mi
+]
+171
+bb 58
+[
+pa
+]
+-ar-ṣa-a
+[
+m
+ta-ba-a
+]
+l-mi
+l
+[
+i-qé
+q
+]
+a-at
+⌈
+i
+⌉
+-
+[
+di-ka
+]
+K(+)M-NA iii 9
+par-ṣa-am
+ta-ba-a
+[
+l-mi
+(x) x]-⌈x
+id
+⌉
+-ka
+L-NA rev. 3
+[...
+t
+]
+a-ba-al-ma
+li-qé
+⌈x⌉ [...]
+172
+bb 59
+[
+áš
+]
+-bu
+[
+d
+a-nun
+]
+-na-k
+[
+i
+]
+ma-ḫar-
+[
+ka
+]
+K(+)M-NA iii 10
+aš-bu
+d
+a-nun-na-ki
+[
+ma
+]
+-ḫar-ka
+L-NA rev. 4
+[...
+d
+a-nu
+]
+n-na-ki
+ma-ḫar-
+[
+ka
+]
+N-NA 1
+[...
+d
+]
+a-
+⌈
+nun
+⌉
+-n
+[
+a-ki
+...]
+173
+bb 60
+[
+i
+]
+-lam
+[...]
+⌈
+li
+⌉-
+i
+[
+d-d
+]
+u
+!
+-šú
+pa-ar-
+[
+ṣi
+]
+K(+)M-NA iii 11
+i-lu
+iš-te-en
+š
+[
+i-si-ma
+l
+]
+i-id-du-šú
+par-ṣi
+L-NA rev. 5
+[...
+iš-te-e
+]
+n
+ši-si-m
+[
+a
+l
+]
+i-
+⌈
+id
+?⌉-[
+du-šú
+..
+.]
+N-NA 2
+[...
+iš-t
+]
+e-en
+ši-si-m
+[
+a
+...]
+K(+)M-NA iii
+----
+174
+G ii 1
+d
+é-a
+pí-a-šu
+⌈
+i
+⌉
+-
+[
+pu-ša-am-ma
+]
+bb 61
+[
+d
+a
+]
+-nu-u
+[
+m
+...
+i-p
+]
+u-ša-a
+[
+m-ma
+]
+K(+)M-NA iii 12
+d
+a-nu
+pa-a-šu
+i-pu-šá-
+[
+am-ma
+:]
+L-NA rev. 6
+[...
+pa-a
+]
+-
+⌈
+šú
+⌉
+i-p
+[
+u-šá-am-ma
+]
+N-NA 3
+[
+d
+a-n
+]
+u
+pa-a-šu
+⌈
+i
+⌉
+-
+[
+pu-šá
+...]
+175
+G ii 2
+iz-za-kàr
+a-na
+ilī
+(DINGIR
+meš
+)
+a
+[
+ḫ-ḫi-šu
+]
+bb 62
+iz-za-
+[
+ak-kàr
+a-na
+i-li
+aḫ-ḫ
+]
+e-e-
+[
+šu
+]
+K(+)M-NA iii 12
+[
+iz-za
+]
+-ak-kàr
+ana
+i-li
+aḫ-ḫe-šú
+L-NA rev. 7
+[...]
+⌈
+i
+⌉
+-l
+[
+i
+…]
+N-NA 4
+[
+iz-za-a
+]
+k-kàr
+ana
+i-li
+[...]
+176
+G ii 3
+mi-nam
+kar-ṣí-šu-nu
+ni-i
+[
+k-ka-al
+]
+bb 63
+mi-n
+[
+am
+kar-ṣí-šú-nu
+ni-i
+]
+k-ka-a
+[
+l
+]
+K(+)M-NA iii 13
+mi-nam
+kar-ṣi-šú-nu
+n
+[
+i-ik
+]
+-ka-al
+N-NA 5
+[...]
+kar-ṣi-šu-nu
+[...]
+177
+G ii 4
+ka-bi-it
+du-ul-la-šu-un
+[
+…
+]
+bb 64
+ka-
+[
+bi-it
+dul
+]
+-la-šu-un
+ma-a-a
+[
+d
+ša-ap
+]
+-šaq-šu-u
+[
+n
+]
+K(+)M-NA iii 14
+⌈
+ka-bit-ma
+du-ul
+⌉
+-
+[
+la-šu-nu
+ma-a-a
+]
+d
+ša-ap-šaq-šu-un
+N-NA 6
+[...]
+dul-la-šú-un
+m
+[
+a-a-ad
+...]
+178
+G ii 5
+u
+4
+-mi-ša-am-ma
+er-ṣe-
+⌈
+ta
+⌉
+[...]
+bb 65
+u
+4
+-
+[
+mi-ša-am
+]
+-
+⌈
+ma
+⌉
+er-ṣe-tum
+⌈x⌉ [(x) x]
+-na-a-aṭ
+K(+)M-NA iii 15
+[...
+tu
+]
+m
+?
+na-a-ṭu
+N-NA 7
+[...
+m
+]
+a
+er-
+[
+ṣe
+...]
+179
+G ii 6
+tu-uk-kum
+ka-b
+[
+i-it
+... ]
+bb 66
+d
+[
+u-ul-l
+]
+u
+ka-bi-it-ma
+ni-š
+[
+e-e
+]
+m-
+⌈
+me
+⌉
+-
+⌈
+ma
+⌉
+ri-ig-ma
+K(+)M-NA iii 16
+[...
+ni-še-e
+]
+m-me
+ri-ig-ma
+N-NA 8
+[...
+ka-b
+]
+i-i
+[
+t-ma
+...]
+G
+----
+180
+E iii 1
+[...] ⌈x x⌉
+G ii 7
+i-ba-aš-ši
+š
+[
+i-i
+]
+p-
+[
+ru
+...]
+bb 67
+⌈
+i
+⌉-[
+ba-a
+]
+š-ši
+ši-ip-ru
+a-na
+e-pé-ši
+K(+)M-NA iii 17
+[...
+an
+]
+a
+e-pe-ši
+181
+E iii 2
+wa-
+⌈
+aš-ba-at
+⌉
+d
+[
+ma-mi
+šà-as-s
+]
+u-ru
+G ii 8
+wa-aš-ba-at
+d
+[
+…]
+bb 68
+[...]
+d
+be-let-ì-lí
+sa-as-su-ra-tum
+K(+)M-NA iii 18
+[...
+sa-as-s
+]
+u-ra-a-tu
+V-NA obv. 1
+[
+á
+]
+š-bat
+d
+be-let-ì-lí
+sa-as-
+[…]
+G
+----
+182
+E iii 3
+⌈
+šà
+?⌉
+-as-sú-ru
+⌈
+lu
+!
+-ul
+!
+-la-a
+li-ib-ni-ma
+⌉
+bb 69
+sa-
+⌈
+as
+⌉
+-su-ru
+lullâ
+(LÚ.U
+18
+.LU
+-a
+)
+li-ib-ni
+V-NA obv. 2
+sa-as-su-ru
+lull
+[
+â
+(LÚ.U
+18
+.L[U)
+...]
+183
+E iii 4
+šu-up-ši-ik
+ilim
+(DINGIR)
+a-wi-lum
+li-iš-ši
+bb 70
+tu-
+⌈
+up
+⌉
+-ši-ik-ki
+i-lum
+a-me-lu
+li-iš-ši
+V-NA obv. 3
+tu-up-ši-ik-ku
+i-li
+⌈
+a
+⌉
+-
+[
+me-lu
+...]
+184
+G ii 9
+li-ib-ni-ma
+lu-u
+[
+l-la-a
+...]
+bb 71
+li-
+[
+i
+]
+b-ni-ma
+lullâ
+(LÚ.U
+18
+.LU
+-a
+)
+a-me-lu
+V-NA obv. 4
+li-ib-ni-ma
+lul
+[
+lâ
+(LÚ.⌈U
+18
+⌉.[LU
+-a
+)
+...]
+185
+G ii 10
+ab-ša-n
+[
+am
+]
+li-bi-i
+[
+l
+…]
+bb 72
+ab-ša-a-nam
+li-bi-il
+ši-p
+[
+í
+]
+-ir
+be-lu-ú-ti
+V-NA obv. 5
+⌈
+ab-ša-a
+⌉
+-nam
+li-bi-i
+[
+l
+...]
+G
+----
+186
+G ii 11
+[
+ab-ša-n
+]
+am
+[
+l
+]
+i-bi-i
+[
+l
+…]
+bb 73
+ab-ša-a-nam
+li-bi-il
+ši-p
+[
+í
+]
+-ir
+d
+En-líl
+V-NA obv. 6
+[
+ab-ša-a-n
+]
+am
+li-bi-i
+[
+l
+...]
+187
+G ii 12
+[
+tup
+]
+šik
+([
+gi
+DU]SU)
+ilim
+(DINGIR)
+[...]
+bb 74
+tu-up-ši-ik
+i-lum
+a-m
+[
+e
+]
+-lum
+li-iš-
+[
+ši
+]
+V-NA obv. 7
+[...
+i
+]
+-l
+[
+i
+...]
+G
+----
+188
+E iii 5
+il-ta-am
+is-sú-ú
+i-ša-lu
+G ii 13
+[
+il-tam
+is-s
+]
+ú-ú
+[...]
+bb 75
+il-tam
+is-su-ú
+⌈
+i
+⌉
+-
+[
+š
+]
+a-a-
+[
+lu
+]
+189
+E iii 6
+tap-su-ut
+ilī
+(DINGIR
+meš
+)
+e-ri-iš-tam
+d
+ma-mi
+G
+ii 14 [...
+d
+ma-m
+]
+a
+bb 76
+ša-ab-su-tam
+d
+be-let-ì-lí
+[
+e-ri-iš
+]
+-ti
+d
+[...]
+G
+[----]
+190
+E iii 7–8
+at-ti-i-ma
+⌈
+šà
+⌉
+-as-sú-ru
+//
+⌈
+ba-ni-a-at
+⌉
+a-wi-lu-ti
+G ii 15
+[...
+a-wi-lu-t
+]
+i
+bb 77
+at-ti-i-ma
+sa-as-sú-ru
+⌈
+ba
+⌉
+-n
+[
+i-a-at
+]
+ši-i-i
+[
+m-t
+]
+i
+191
+E iii 9
+bi-ni-ma
+⌈
+lu
+⌉
+-ul-la-a
+li-bi-il
+5
+ab-ša-nam
+G ii 16
+[...
+a
+]
+b-ša-na
+[
+m
+]
+bb 78
+bi-ni-ma
+lullâ
+(LÚ.U
+18
+.LU
+-a
+)
+li-bi-
+[
+il
+]
+ab-ša-a-nam
+G
+----
+192
+G ii 17
+[...
+be
+]
+-
+⌈
+lu-tim
+⌉
+AA ii 1
+ab-š
+[
+a-nam
+...]
+193–195
+[…]
+196
+E iii 10
+ab-ša-nam
+li-bi-il
+ši-pí-ir
+⌈
+d
+en-líl
+⌉
+G ii 18
+[
+ab-ša-nam
+...]
+AA ii 2
+ab-š
+[
+a-nam
+...]
+bb 79
+ab-ša-nam
+li-bi-
+⌈
+il
+⌉
+[
+ši-p
+]
+í-ir
+d
+en-líl
+197
+E iii 11
+šu-up-ši-ik
+ilim
+(DINGIR)
+a-wi-lum
+li-iš-ši
+AA ii 3
+šupš
+[
+ik
+(
+gi
+DUS[U)
+...]
+bb 80
+tu-up-ši-ik-ki
+i-lum
+[
+a-me
+]
+-lu
+li-iš-ši
+198
+E iii 12
+d
+⌈
+nin-tu
+⌉
+pí-a-ša
+te-pu-
+⌈
+ša
+⌉
+-am-ma
+AA ii 4
+d
+ma-mi
+p
+[
+í-a-ša
+...]
+bb 81
+d
+ma-ma
+pa-a-šu
+[
+te
+]
+-pu-ša-am-
+⌈
+ma
+⌉
+199
+E iii 13
+iz-za-kàr
+a-na
+ilī
+(DINGIR
+meš
+)
+ra-bu-ti
+AA ii 4
+[...]
+bb 82
+ta-za-ak-kàr
+a-na
+i-
+[
+li
+a
+]
+ḫ-ḫe-e-šu
+200
+E iii 14
+it-ti-ia-ma
+la
+na-ṭú
+a-na
+e-pé-ši
+bb 83
+iš-ti-ia-ma
+lu
+e-pe-šum
+201
+E iii 15
+it-ti
+d
+en-ki-ma
+i-ba-aš-ši
+ši-ip-ru
+bb 84
+iš-ti-ma
+d
+é-a
+i-
+⌈
+ba
+⌉
+-aš-ši
+ši-ip-ri
+202
+E iii 16
+šu-ú-ma
+⌈
+ú-ul-la-al
+⌉
+ka-la-ma
+bb 85
+šu-ú-ma
+ul-la-al
+ka-la-ma
+KA-NA
+1
+⌈
+šu-ú-ma
+⌉
+[...]
+203
+E iii 17
+ṭi-iṭ-ṭa-am
+⌈
+li-id
+⌉
+-di-nam-ma
+a-na-ku
+lu-pu-uš
+bb 86
+ṭi-iṭ-ṭa
+li-id-di-nam-m
+[
+a
+]
+a-na-
+⌈
+ku
+⌉
+lu-pu-uš
+KA-NA 2
+ṭi-iṭ-ṭi
+[...]
+KA-NA
+----
+204
+E iii 18
+d
+en-ki
+pí-a-šu
+i-pu-ša-am-ma
+bb 87
+d
+é-a
+pa-a-šu
+i-pu-ša-am-ma
+KA-NA 3
+⌈
+d
+⌉
+é-a
+p
+[
+a-a-šu
+...]
+205
+E iii 19
+iz-za-kàr
+a-na
+ilī
+(DINGIR
+meš
+)
+ra-bu-ti
+bb 88
+iz-za-ak-kàr
+a-na
+i-lu
+aḫ-ḫe-e-šú
+KA-NA 4
+[
+i
+]
+z-za-ak-kà
+[
+r
+...]
+206
+E iii 20
+a-na
+ar-ḫi
+se-bu-ti
+ù
+ša-pa-at-ti
+AA ii 5
+i-na
+ar-ḫi
+[...]
+bb 89
+e-wa-ar-ḫi
+se-bu-ú-tum
+u
+šá-pa-at-ti
+KA-NA 5
+⌈
+e
+⌉
+-wa-ar-
+[
+ḫi
+...]
+207
+E iii 21
+te-li-il-tam
+lu
+!
+-ša-aš-ki-in
+ri-im-
+⌈
+ka
+⌉
+AA ii 6
+te-li-il-
+[
+tam
+...]
+bb 90
+te-li-il-tam
+lu-šá-aš-ki-in
+ri-im-ka
+KA-NA 6
+[
+t
+]
+e-li-il-t
+[
+am
+...]
+208
+E iii 22
+ilam
+(DINGIR)
+iš-te-en
+li-iṭ-bu-ḫu-ma
+AA ii 7
+i-la
+iš-te-e
+[
+n
+...]
+bb 91
+i-lam
+iš-te-en
+liṭ-bu-ḫu-ma
+KA-NA 7
+[
+i
+]
+-lam
+i
+[
+š-te-en
+...]
+209
+A iv 1
+[
+li-t
+]
+e-
+⌈
+el-li-lu
+i
+⌉
+-
+[
+lu
+...]
+E iii 23
+li-te-el-li-lu
+i-lu
+i-na
+qé-
+⌈
+er
+⌉
+-bi
+AA ii 8
+<…>
+ilū
+(DINGIR
+meš
+)
+⌈
+i
+⌉
+-
+[
+na
+...]
+bb 92
+li-te-el-li-lu
+i-lu
+iq-
+<
+qé
+>
+-er-bi
+210
+A iv 2
+[...]
+ši-ri-šu
+ù
+⌈
+da-mi
+⌉
+-
+[
+šu
+]
+E iii 24
+i-na
+ši-ri-šu
+ù
+da-mi-šu
+AA ii 9
+i-na
+ši-ri-
+[
+šu
+...]
+bb 93
+iš-ši-ri-šú
+u
+da-mi-i-šú
+211
+A iv 3
+d
+nin-tu
+li-ba-al-li-il
+[...]
+E iii 25
+d
+nin-tu
+li-ba-al-li-il
+ṭi-iṭ-ṭa
+AA ii 10
+<...>
+li-ba-a
+[
+l-li-il
+ṭi-iṭ-ṭa
+]
+bb 94
+d
+be-let-ì-lí
+li-ba-al-li-il
+ṭ
+[
+i-iṭ
+]
+-ṭa
+212
+A iv 4
+i-lu-um-ma
+⌈
+ù
+⌉
+a-wi-lum
+li-i
+[
+b-ta-li-lu
+]
+E iii 26
+ilum
+(DINGIR)
+-ma
+ù
+a-wi-lum
+AA i 11a
+ilum
+(DINGIR)
+-ma
+ù
+⌈
+a
+⌉
+-
+[
+wi-lum
+]
+bb 95
+i-lum-ma
+u
+wa-wi-lum
+:
+213
+A iv 5
+pu-ḫu-ur
+i-na
+ṭi-iṭ-ṭ
+[
+i
+]
+E iii 27
+li-ib-
+⌈
+ta
+⌉
+-al-li-lu
+pu-ḫu-ur
+i-na
+ṭi-iṭ-ṭi
+AA ii 11b
+[...]
+bb 96
+li-ib-ta-al-li-lu
+pu-ḫu-ur
+iṭ-ṭi-
+[
+iṭ-ṭ
+]
+a
+214
+A iv 6
+aḫ-ri-ia-ti-iš
+UD
+-mi
+⌈
+up
+⌉
+-pa
+i
+⌈
+ni-iš-me
+⌉
+E iii
+28
+[
+a
+]
+ḫ-ri-ia-ti-iš
+UD
+-mi
+up-pa
+i
+ni-iš-me
+AA ii 12a
+aḫ-re-ti-
+[
+iš
+...]
+bb 97
+aḫ-ri-ia-ti-iš
+li-pa-a
+i
+niš-me
+215
+A iv 7
+i-na
+ši-i-ir
+i-li
+e-ṭi-im-mu
+li-ib-ši
+E iii 29
+[i-n
+]
+a
+⌈
+ši-ir
+⌉
+ilim
+(DINGIR)
+we-ṭi-im-mu
+li-ib-ši
+AA ii 12b
+i-na
+š
+[
+i-ir
+...]
+bb 98
+iš-ši-ri
+⌈
+i
+⌉
+-
+[
+l
+]
+i
+e-ṭém-mu
+li-ib-ši
+216
+A iv 8
+ba-al-ṭa
+it-ta-šu
+li-še-
+⌈
+di-šu
+⌉
+-ma
+E iii 30
+[ba-a
+]
+l-
+[
+ṭ
+]
+a
+it-ta-šu
+li-še-di-
+⌈
+šu
+⌉
+-
+[
+m
+]
+a
+?
+bb 99
+ba-al-ṭa
+⌈
+it
+⌉
+-ta-
+⌈
+šú
+⌉
+li-še-di-i-šu
+217
+A iv 9
+aš-šu
+la
+mu-uš-ši-i
+e-ṭe-em-mu
+/
+li-ib-ši
+E iii 31
+[
+aš-šu
+la
+mu-u
+]
+š-ši-i
+we-ṭi-im-mu
+l
+[
+i-ib-ši
+]
+bb 100
+it-tum
+la
+mu-uš-ši-i
+e-ṭe-em-mu
+218
+A iv 10
+i-na
+pu-úḫ-ri
+i-pu-lu
+a-an-na
+E iii 32
+[...
+pu-úḫ-r
+]
+i
+i-pu-lu
+a-an-n
+[
+a
+]
+219
+A iv 11
+ra-bu-tum
+d
+a-nun-na
+E iii 33
+[...
+d
+]⌈
+a-nun-na
+⌉
+220
+A iv 12
+pa-qí-du
+ši-ma-ti
+E iii 33
+[...]
+221
+A iv 13
+i-na
+ar-ḫi
+se-bu-ti
+ù
+ša-pa-at-ti
+bb 101
+e-wa-ar-ḫi
+se-bu-ú-tú
+u
+šá-pat-ti
+222
+A iv 14
+te-li-il-tam
+ú-ša-aš-
+⌈
+ki
+⌉
+-in
+ri-im-ka
+bb 102
+te-li-
+⌈
+il
+⌉
+-tam
+ú-šá-aš-ki-in
+ri-im-ki
+e rev. 1
+[
+tēlilta
+ušaškin
+ri-im
+]
+-
+⌈
+ki
+⌉
+223
+A iv 15
+d
+we
+-
+e
+i-la
+ša
+i-
+⌈
+šu-ú
+⌉
+ṭe
+4
+-e-ma
+bb 103
+d
+alla
+(NAGAR)
+ša
+i-šu-ú
+i-lam
+ṭè-e-ma
+e rev. 2
+[
+d
+alla
+ša
+išû
+ila
+ṭè
+]
+-
+⌈
+e-ma
+⌉
+224
+A iv 16
+i-na
+⌈
+pu-úḫ
+⌉
+-ri-šu-nu
+iṭ-ṭa-ab-ḫu
+bb 104
+⌈
+d
+alla
+(NAGAR)⌉
+d
+en-líl
+iṭ-bu-ḫu-u
+?
+-šu
+maḫ-ri-tim
+e rev. 3
+[
+d
+alla
+d
+enlil
+iṭbuḫūšu
+ma-aḫ-ri
+]
+-tim
+225
+A iv 17
+i-na
+ši-ri-šu
+ù
+da-mi-šu
+bb 105
+[
+iš-ši
+]
+-ri-šú
+u
+da-me-šú
+e rev. 4
+[
+iš-šīrišu
+u
+da-mi
+]
+-
+⌈
+i
+⌉
+-šu
+226
+A iv 18
+d
+nin-tu
+ú-
+⌈
+ba
+⌉
+-li-il
+ṭi-iṭ-ṭa
+bb 106
+[
+d
+be-le
+]
+t-ì-lí
+ú-ba-al-li-il
+ṭi-iṭ-ṭa
+e rev. 5
+[
+d
+bēlet-ilī
+uballil
+ṭi-iṭ
+]
+-ṭi
+O-NA 1
+[...]
+ṭi-iṭ-ṭ
+[
+a
+]
+226a
+bb 107
+[
+i-lum-m
+]
+a
+u
+a-me-lu
+e rev. 6
+[
+ilumma
+u
+a-wi
+]
+-lum
+O-NA 2
+[...]
+wa-wi-lu
+[
+m
+]
+226b
+bb 108
+[
+ub-ta-a
+]
+l-li-il
+pu-ḫu-ur
+iṭ-ṭi-iṭ-ta
+e rev. 7
+[
+ubtallil
+puḫur
+iṭ-ṭi-iṭ
+]
+-ti
+O-NA 3
+[...]
+ṭi-iṭ-
+⌈
+ṭi
+⌉
+227
+A iv 19
+aḫ-ri-ia-t
+[
+i-iš
+...
+iš-mu
+]
+-
+⌈
+ú
+⌉
+bb 109
+[
+a-aḫ-ra-t
+]
+i-iš
+i-pa-a
+i-te-eš-me
+e rev. 8
+[
+aḫrâtiš
+ipâ
+i-te-eš
+]
+-mé
+O-NA 4
+[...]
+ú-še-eš-m
+[
+e
+]
+227a
+A iv 20
+55[+2?]
+228
+A v 1
+i-na
+ši-i-ir
+i-li
+e-ṭe-
+[
+em-mu
+ib-ši
+]
+bb 110
+[
+iš-ši-r
+]
+i
+i-li
+e-ṭém-mu
+ib-š
+[
+i
+]
+e rev. 9
+[
+iš-šīri
+ili
+eṭemmu
+ib
+]
+-
+⌈
+ši
+⌉
+O-NA 5a
+[...]
+229
+A v 2
+ba-al-ṭa
+it-ta-šu
+ú-še-
+[
+di-šu
+]
+bb 111
+[
+ba-al-ṭ
+]
+a
+it-ta-šu
+ú-še-di-i-[šu
+]
+O-NA 5b
+[...]
+ú-še-di-
+⌈
+šu
+⌉
+230
+A
+v 3
+aš-šu
+la
+mu-uš-ši-i
+e-ṭe-em-mu
+[
+ib-ši
+]
+bb
+112 [...]
+la
+mu-uš-ši-i
+e-ṭém-
+⌈
+mu
+⌉
+O-NA
+6 [...
+mu-uš
+]
+-ši-i
+e-ṭém-m
+[
+u
+]
+231
+A v 4
+iš-tu-ma
+ib-lu-la
+ṭi-ṭa
+ša
+-⌈
+ti
+⌉
+bb 113
+[
+iš-tu-m
+]
+a
+ib-lu-
+⌈
+la
+⌉[
+ṭi
+]
+-ṭa-a-šu
+O-NA 7
+[...
+ṭ
+]
+i-ṭa-a-š
+[
+a
+]
+232
+A v 5
+is-si
+d
+a-nun-na
+-<
+ak-ki
+>
+i-li
+ra-bu-ti
+bb 114
+[...]
+⌈
+d
+⌉
+a-nun-na-ki
+ka-la
+⌈
+d
+⌉
+i-
+⌈
+gi
+4
+⌉
+-gi
+4
+O-NA 8
+[...
+d
+]⌈
+i
+⌉
+-gi
+4
+-
+⌈
+gi
+4
+⌉
+232a
+X-MB obv. 1
+[...]
+uz-na-šá
+[...]
+233
+A v 6
+d
+i-gi-gu
+i-lu
+!
+ra-bu-tum
+X-MB obv. 2
+[...]
+⌈
+i-lu
+ra
+⌉
+-b
+[
+u-tum
+]
+bb 115
+[...]
+i-lu
+[
+ra-b
+]
+u-ú-tum
+O-NA 9
+[...
+ra-bu-ú
+]
+-t
+[
+um
+]
+234
+A v 7
+⌈
+ru
+⌉
+-uʾ-tam
+id-du-ú
+e-lu
+ṭi-iṭ-ṭi
+X-MB obv. 3
+[…
+id-d
+]
+u-ú
+!
+e-
+[
+lu
+…]
+bb 116
+[
+ru-uʾ
+]-
+tam
+id-du-ú
+e-lu
+ṭi-iṭ-ṭi-ša
+bb
+----
+235
+A v 8
+[
+d
+m
+]
+a-mi
+pí-a-ša
+te-pu-ša-am-ma
+X-MB obv. 4
+[…
+te-e
+]
+p-pu-ša-a
+[
+m-ma
+]
+bb 117
+[
+d
+ma-m
+]
+a
+pa-a-šu
+te-pu-ša-am-ma
+235a
+bb 118
+[
+ṭuppu
+(DUB)
+2.KAM
+e
+]
+-nu-ma
+i-lu
+a-me-lu
+ki-ma
+la-bi-ri-šú
+236
+A v 9
+[
+iz-z
+]
+a-kàr
+a-na
+i-li
+ra-bu-tim
+236a
+P(+)R(+)KB-NA obv. 1
+[...] ⌈x x⌉ [x]
+236b
+P(+)R(+)KB-NA obv. 2
+[...]
+⌈
+ú
+⌉
+-ul-la-d
+[
+u
+?]
+236c
+G iii 1
+[...
+ba-ni-a
+]-⌈
+at
+⌉
+a-w
+[
+i
+?
+-lu-tim
+]
+P(+)R(+)KB-NA obv. 3
+[...]
+a-me-lu-tim
+G
+----
+237
+A v 10
+[
+ši-i
+]
+p-ra
+ta-aq-bi-a-ni-im-ma
+G iii 2a
+[…]
+238
+A v 11
+ú-ša-ak-li-il
+G iii 2b
+[…] ⌈x⌉
+239
+A v 12
+i-lam
+ta-aṭ
+!
+-bu-ḫa
+qá-du
+ṭe
+4
+-mi-šu
+G iii 3
+[…
+ṭe
+4
+-m
+]
+i-š
+[
+u
+]
+G
+----
+240
+A v 13
+ka-ab-tam
+du-ul-la-ku-nu
+⌈
+ú-ša-as
+⌉
+-sí-ik
+G iii 4
+[...
+ú-ša-as-s
+]
+í-
+[
+ik
+]
+241
+A v 14
+šu-up-ši-ik-ka-ku-nu
+a-wi-
+[
+la
+]
+m
+e-mi-id
+G iii 5
+[...]
+X-MB obv. 5
+[...]
+-ku-nu
+⌈
+à
+⌉-[
+wi-lam
+...]
+P(+)R(+)KB-NA obv. 4
+[...
+a-me-la
+]
+m
+e-mi-id
+G
+----
+241a
+X-MB obv. 6
+[...
+u
+4
+]
+-mi
+an-ni-i
+⌈
+DA-ma-
+x⌉ [...]
+242
+A v 15
+ta-aš-ta-aḫ-da
+ri-ig-ma
+a-n
+[
+a
+]
+⌈
+a-wi-lu
+⌉
+-ti
+G iii 6
+[...]
+X-MB obv. 7
+[
+ta-áš-taḫ-d
+]
+a
+?
+⌈
+ri-ig-ma
+a
+!⌉
+-
+[
+na
+…]
+P(+)R(+)KB-NA obv. 5
+[...]
+⌈
+a-na
+⌉
+a-me-lu-tim
+242a
+X-MB obv. 8
+[...] ⌈x x x x⌉ [...]
+243
+A v 16
+ap-ṭú-ur
+ul-la
+an-du-ra-
+[
+ra
+aš-ku-u
+]
+n
+G iii 7
+[...]
+X-MB
+obv. 9 […] ⌈x
+-du-ra
+?⌉
+-
+[
+ra
+á
+]
+š-k
+[
+un
+?]
+G
+----
+243a
+X-MB obv. 10
+[...
+ta-aṭ-b
+]
+u-ḫa
+qá-du
+[
+ṭ
+]
+è-e-
+[
+mi-šu
+]
+P(+)R(+)KB-NA obv. 6
+[
+i-lam
+ta-aṭ-bu-ḫa
+qa-d
+]
+u
+?-⌈
+um
+⌉
+ṭè-mi-šu
+244
+A v 17
+iš-mu-ma
+an-ni-a-am
+qá-
+[
+ba-ša
+]
+G iii 8
+[...]
+X-MB obv. 11
+[
+iš-mu
+]
+-ma
+!
+a-
+⌈
+nam
+⌉
+qá-b
+[
+a-a-ša
+]
+P(+)R(+)KB-NA obv. 7
+[...
+an-ni-a-a
+]
+m
+qa-ba-ša
+245
+A v 18
+id-da-ar-ru-ma
+⌈
+ú-na-aš
+⌉
+-
+[
+ši-qú
+še-pi-ša
+]
+G iii 9
+[...
+ú-na-aš-ši-q
+]
+ú
+še-pi-
+[
+ša
+]
+X-MB obv. 12
+[...
+iš
+]
+-ši-qú
+š
+[
+e-p
+]
+i-
+[
+ša
+]
+P(+)R(+)KB-NA obv. 8
+[...
+iš
+]
+-ši-qú
+še-pi-ša
+G
+----
+X-MB
+----
+P(+)R(+)KB-NA
+----
+246
+A v 19
+pa-na-mi
+d
+ma-mi
+[
+ni-ša-as-sí-ki
+]
+G iii 10
+[...
+ni-ša
+]
+-as-sí-k
+[
+i
+!
+]
+X-MB obv. 13
+[...
+d
+m
+]
+a-m
+]
+a
+ni-
+⌈
+iš
+?
+-tas
+?⌉
+-si
+!
+-
+[
+ki
+]
+P(+)R(+)KB-NA obv. 9
+[...
+d
+ma-m
+]
+a
+?
+ni-ša-si-ki
+247
+A v 20
+i-na-an-na
+be-le-
+[
+et
+ka-la
+i-li
+(
+-ma
+)]
+G iii 11
+[...]
+X-MB obv. 14
+[...
+be
+]
+-
+⌈
+let
+ka-la
+i-li
+⌉
+P(+)R(+)KB-NA obv. 10
+[...
+be-le
+]
+t
+ka-la
+i-li
+248
+A v 21
+lu-ú
+⌈
+šu
+⌉
+-
+[
+um-ki
+]
+G iii 11
+[...
+i-li-m
+]
+a
+lu
+šu
+[
+m-ki
+]
+X-MB obv. 14
+⌈
+lu
+⌉
+[...]
+P(+)R(+)KB-NA obv. 10
+lu
+šum-ki
+G
+----
+249
+A v 22
+i-te-er-bu
+[...]
+G iii 12
+⌈
+i
+⌉
+-t
+[
+e-er-bu
+...
+ši-im
+]
+-t
+[
+im
+?]
+X-MB obv. 15
+[...]
+⌈
+ši-im
+⌉
+-
+[
+ti
+]
+P(+)R(+)KB-NA obv. 11
+[
+i-te-er-b
+]
+u
+a-na
+bīt
+(É)
+ši-im-ti
+250
+A v 23
+ni-iš-š
+[
+i…
+]
+G iii 13
+⌈
+ni
+?
+-iš
+!
+-ši
+!⌉
+-k
+[
+ù
+?
+d
+é-a
+e-r
+]
+i
+!
+-iš-
+⌈
+tum
+⌉
+[...]
+X-MB
+obv. 16 […
+e-ri
+]
+š
+?
+-t
+[
+um
+?]
+⌈
+d
+?⌉
+ma-
+[
+ma
+]
+P(+)R(+)KB-NA obv. 12
+[
+d
+nin
+]
+-ši-kù
+d
+é-a
+e-riš-tu
+d
+ma-ma
+251
+A v 24
+⌈
+šà
+⌉
+-
+[
+…
+]
+G iii 14
+šà
+?!(text: TUM)-⌈
+as
+?⌉-
+s
+[
+u
+?-…]
+X-MB obv. 17
+[…] ⌈x x⌉ […]
+P(+)R(+)KB-NA obv. 13
+[
+sa-a
+]
+s-su-ra-
+⌈
+a
+⌉
+-tum
+pu-úḫ-ḫu-ra-ma
+252
+X-MB obv. 18
+[…]
+P(+)R(+)KB-NA obv. 14
+[
+ṭi-i
+]
+ṭ-ṭa
+i-kab-ba-sa
+am-ma-aḫ-ri-ša
+253
+X-MB obv. 19
+[...]
+P(+)R(+)KB-NA obv. 15
+[
+ši
+]
+-
+⌈
+i
+⌉
+ši-ip-ta
+i-ta-na-an-di
+253a
+S+T+-NA iii 1
+⌈
+a
+?
+-na
+⌉
+[...]
+253a
+253b
+S+T+-NA iii 2
+d
+⌈
+é
+⌉[
+-a
+x x] x
+eridu
+(NUN?*
+ki
+?*)
+⌈
+iz
+?-
+za
+⌉
+-kàr
+254
+X-MB obv. 20
+[…
+ma
+]
+ḫ-r
+[
+i-šá
+(?)]
+P(+)R(+)KB-NA obv. 16
+⌈
+ú
+⌉
+-šam-na-ši
+d
+é-a
+a-ši-ib
+ma-aḫ-ri-ša
+S+T+-NA iii 3
+d
+⌈
+é
+⌉[-
+a
+IGI?-
+šá
+?
+a-
+]
+šib
+ú-šám
+šá-am
+-na-ši
+254a
+S+T+-NA iii 4a
+d
+be-l
+[
+et-ilī
+meš
+tam-
+]
+nu
+ši-ip-ta
+:
+255
+X-MB obv. 21
+[...]
+-
+⌈x⌉
+-s
+[
+u
+?]
+P(+)R(+)KB-NA obv. 17
+iš-tu-ma
+ig-mu-ru
+ši-pa-as-s
+[
+a
+6
+]
+S+T+-NA iii 4b
+iš-tu-ma
+tam-nu-ú
+ši-pa-sa
+P(+)R(+)KB-NA
+----
+255a
+S+T+-NA iii 5
+ru-t
+[
+a
+ta
+]
+-ta-di
+eli
+(UGU)
+ṭí-iṭ-ṭí-šá
+256
+P(+)R(+)KB-NA obv. 18
+[
+k
+]
+i-ir-ṣi
+14
+uk-ta-ar-ri-iṣ
+S+T+-NA iii 6a
+14
+⌈
+ki
+⌉-[
+ir
+]
+-ṣi
+tàk-ri-iṣ
+:
+257
+P(+)R(+)KB-NA
+obv. 19 ⌈7⌉
+ki-ir-ṣi
+a-na
+i-mi-it-t
+[
+i
+]
+S+T+-NA iii 6b
+7
+ki-ir-ṣi
+ana
+imitti
+(ZÀ)
+taš-ku-un
+258
+P(+)R(+)KB-NA obv. 20
+⌈7⌉
+ki-ir-ṣi
+a-na
+šu-me-li
+iš-k
+[
+un
+]
+S+T+-NA iii 7a
+7
+⌈
+ki-ir
+⌉
+-ṣi
+ana
+šumēli
+(GÁB)
+taš-ku-un
+:
+259
+P(+)R(+)KB-NA obv. 21
+[
+i-na
+b
+]
+i-
+⌈
+ri-šú
+⌉
+-nu
+it-ta-di
+li-bit-t
+[
+i
+]
+S+T+-NA iii 7b
+i-na
+be-ru-šu-nu
+i-ta-di
+libitta
+(SIG
+4
+)
+260
+P(+)R(+)KB-NA obv. 22
+[x x x (x)]-⌈
+ti-iq
+!?⌉
+a-bu-un-na-ti
+⌈x-x⌉-[x]
+S+T+-NA iii 8
+lu-ṭa-a
+ap-pa-ri
+ba-ti
+!(text:
+ri
+)
+-iq
+a-bu-un-na-te
+tep-te-ši
+260a
+S+T+-NA iii 9
+tal-si-ma
+er-še-te
+mu-te-ti
+260b
+S+T+-NA iii 10a
+7
+⌈
+ù
+⌉
+7
+šà-su-ra-ti
+:
+260c
+S+T+-NA iii 10b
+7
+ú-ba-na-a
+zikarī
+(NITA
+meš
+)
+260d
+S+T+-NA iii 11
+7
+ú-ba-na-a
+sinnišāti
+(MUNUS
+meš
+)
+260e
+S+T+-NA iii 12
+⌈
+šà
+⌉
+-su-ru
+ba-na-at
+ši-im-tu
+260f
+S+T+-NA iii 13
+ši-na-šan
+šá-na
+ú-ka-la-la-ši-na
+260g
+S+T+-NA iii 14
+ši-na-šan
+š
+a-na
+ú-ka-la-la
+maḫ-ru-šá
+261
+P(+)R(+)KB-NA obv. 23
+[
+d
+nin-ši-k
+]
+ù
+⌈
+d
+⌉[
+é-a
+...]
+262
+P(+)R(+)KB-NA obv. 24
+[
+šà-as-s
+]
+u-ra-a
+-
+t
+[
+um
+....]
+263
+P(+)R(+)KB-NA obv. 25
+[
+ṭi
+]-⌈
+ṭa
+⌉
+i-ba-
+⌈
+li
+⌉
+a
+x [x x x x (x)]
+264
+P(+)R(+)KB-NA obv. 26
+[
+š
+]
+a-am-ni
+[(x x)] ⌈
+i
+⌉
+-ba-
+x [x x x (x)]
+265
+P(+)R(+)KB-NA obv. 27
+ú-ṣú-ra-at
+ni-ši
+-⌈
+ma
+⌉
+[
+u
+]
+ṣ-ṣa-ár
+[...]
+S+T+-NA iii 15
+ú-ṣu-ra-te
+šá
+nišī
+(UN
+meš
+)
+-ma
+ú-ṣa-ar
+d
+ma-mi
+S+T+-NA iii
+----
+265a
+S+T+-NA iii 16a
+i-na
+bīt
+(É)
+a-li-te
+ḫa-riš-ti
+:
+265b
+S+T+-NA iii 16b
+7
+ūmī
+(U
+4
+meš
+)
+li-na-di
+libittu
+(SIG
+4
+)
+265c
+S+T+-NA iii 17
+i
+tùk-ta-bit
+dingir-maḫ
+e-riš-ta
+d
+ma-mi
+265d
+S+T+-NA iii 18
+ša-ab-su-tu-um-ma
+ina
+bīt
+(É)
+ḫa-riš-ti
+li-iḫ-du
+265e
+S+T+-NA iii 19
+ak-ki
+a-li-it-tu
+ú-la-du-ma
+265f
+S+T+-NA iii 20
+ummi
+(AMA)
+šèr-ri
+lu-ḫar-ri-šá
+ra-ma-an-
+[
+šá
+]
+266
+P(+)R(+)KB-NA obv. 28
+zi-ka-ru
+a-na
+⌈
+eṭ
+⌉
+-li
+S+T+-NA iii 21
+[
+z
+]
+i-ka-ru
+⌈
+a-na
+⌉
+e
+[
+ṭ-li
+]
+267
+P(+)R(+)KB-NA obv. 29
+a-na
+ar-da-ti
+l
+[
+i-ba
+-
+š
+]
+i
+si-in-ni-iš-
+[
+tum
+]
+S+T+-NA iii 22
+[
+a-na
+ar
+]
+dati
+(K]I.SIKIL)
+li-b
+[
+a-ši
+...]
+268
+P(+)R(+)KB-NA obv. 30
+ar-da-tum
+a-na
+eṭ-
+[
+li
+]
+S+T+-NA iii 23
+[...]
+⌈
+a
+?⌉[
+-na
+...]
+269
+P(+)R(+)KB-NA obv. 31
+eṭ-lu
+a-na
+⌈
+ar
+⌉
+-d
+[
+a-t
+]
+i
+in-šú
+li-iš-
+[
+ši
+]
+270
+P(+)R(+)KB-NA obv. 32
+⌈
+li
+⌉
+-il-qé
+a
+[
+r-d
+]
+a-
+⌈
+tum
+⌉
+ku-zu-ub-
+[
+šá
+]
+271
+E iv 1
+[…] ⌈x x⌉ [x x]
+272
+E iv 2
+[
+…
+i-na
+]
+i-ir-ti-ša
+P(+)R(+)KB-NA rev. 1
+[x x
+tu
+?
+-lu
+?]
+-
+⌈
+ú
+⌉
+i-na
+ir-ti-šá
+273
+E iv 3
+[
+in-nam-ma-a
+]
+r
+?
+zi-iq-nu
+P(+)R(+)KB-NA rev. 2
+[...
+zi
+]
+q-nu
+274
+E iv 4
+[...
+i
+-
+n
+]
+a
+?
+le-et
+eṭ-li
+P(+)R(+)KB-NA rev. 3
+[...] (x) [x]
+275
+E iv 5
+[
+i-na
+ki
+]
+-
+⌈
+ra
+⌉
+-ti
+ù
+šu-li-i
+276
+E iv 6
+[
+li-iḫ
+]
+-ti-ru
+!
+aš-ša-tum
+mu-us-sà
+277
+E iv 7
+[
+šà-as-s
+]
+ú-ra-tum
+pu-uḫ-ḫu-ra-ma
+278
+E iv 8
+[
+aš-ba
+]
+-at
+d
+nin-tu
+279
+E iv 9
+[
+i-ma
+]
+-an-nu
+ar-ḫi
+280
+E iv 10
+[...]
+ši-ma-ti
+is-sú-ú
+eš-ra
+arḫa
+(ITI!)
+281
+A vi 1
+⌈
+eš
+⌉
+-ru
+arḫu
+(ITI)
+⌈
+il-li⌉-
+[
+ka-a
+]
+m-ma
+E iv 11
+[
+eš-r
+]
+u-
+⌈
+ú
+arḫu
+(ITI)⌉
+il-li-ka-am-ma
+282
+A vi 2
+⌈
+iḫ
+?
+-lu
+⌉
+-up
+pa-le-e
+si-li-tam
+ip-te
+E
+iv 12 [x
+-l
+]
+u-up
+pa-le-e
+si-li-tam
+ip-te
+283
+A vi 3
+⌈
+na-am-ru-ma
+⌉
+ḫa-
+⌈
+du
+⌉
+-ú
+pa-nu-ša
+E
+iv 13
+[
+na
+]
+-am-ru-ma
+ḫa-du-ú
+pa-nu-ša
+284
+A vi 4
+iḫ-pu-ur
+⌈
+ka
+⌉
+-aq-qá-as-sà
+E iv 14
+[
+i
+]
+ḫ-pu-ur
+ka-aq-qá-as-sà
+285
+A vi 5
+ta/ša-ab-su-ta-a
+[
+m
+]
+i-pu-
+[
+u
+]
+š
+E iv 15
+šà
+!
+-ap-
+⌈
+su
+⌉
+-ta-am
+i-pu-uš
+286
+A vi 6
+⌈
+qá
+⌉
+-ab-li-š
+[
+a
+]
+i-te-zi-iḫ
+E iv 16
+[
+q
+]
+á-ab-li-ša
+i-te-zi-iḫ
+287
+A vi 7
+⌈
+i
+⌉
+-ka-ar-ra-ab
+E iv 17
+i-ka-ar-ra-ab
+288
+A vi 8
+[
+i-ṣi
+]
+-ir
+⌈
+qé-ma
+⌉
+ù
+li-bi-it-ta
+⌈
+id-di
+⌉
+E iv 18
+i-ṣi-ir
+⌈
+qé-ma
+ù
+⌉
+li-bi-it-ta
+id-di
+P(+)R(+)KB-NA rev. 1
+[...
+li-bit]-⌈
+ta
+id
+⌉-[
+di
+]
+289
+A vi 9
+[
+a-na-ku-m
+]
+i
+ab-ni
+i-pu-ša
+qá-t
+[
+a-ia
+]
+E iv 19
+a-na-ku-mi
+ab-ni
+i-pu-ša
+qá-ta-ia
+P(+)R(+)KB-NA rev. 2
+[...] ⌈x x⌉ [...
+q
+]
+a-ta-a-
+⌈
+a
+⌉
+290
+A vi 10
+t
+[
+a
+-
+ap-s
+]
+u
+-
+tum
+⌈
+i-na
+⌉
+bi-it
+qá-di-iš-ti
+l
+[
+i-iḫ-du
+]
+E iv 20
+tap-sú-
+⌈
+tum
+⌉
+i-na
+bi-
+⌈
+it
+⌉
+qá-di-iš-ti
+li-iḫ-du
+P(+)R(+)KB-NA
+rev. 3
+[
+tap-s
+]
+u-tu
+ina
+b
+[
+īt
+(É)
+...]
+li-iḫ-d
+[
+u
+]
+291
+A vi 11
+a-
+[
+l
+]
+i
+[
+a-l
+]
+i-it-tum
+ú-ul-la-du-ma
+E iv 21
+a-li
+a-li-
+⌈
+it
+⌉
+-tum
+ú-ul-la-du-ma
+P(+)R(+)KB-NA rev. 4
+[...]
+a-li-it-tum
+[
+ú-ul
+]
+-la-du-ú-
+[
+ma
+]
+292
+A vi 12
+um-mi
+še-er-
+⌈
+ri
+⌉
+E iv 22
+um-
+⌈
+mi
+še-er
+⌉
+-ri
+P(+)R(+)KB-NA rev. 5
+[
+um-m
+]
+i
+še-er-ra
+293
+A vi 13
+ú-ḫ
+[
+a-ar
+]
+-ru-ú
+ra-ma-an-ša
+E iv 22
+ú-
+⌈
+ḫar-ru-ú
+⌉
+ra-ma-an-ša
+P(+)R(+)KB-NA rev. 5
+ú-ḫa-
+[
+ar-ru-ú
+]
+ra-ma-an-ša
+294
+A vi 14
+⌈9?
+u
+4
+⌉
+-
+[
+mi
+l
+]
+i-in-na-di
+li-bi-it-tum
+E iv 23
+9
+⌈
+u
+4
+⌉
+-
+[
+mi
+]
+⌈
+li
+⌉
+-in-na-di
+li-bi-
+⌈
+it-tum
+⌉
+P(+)R(+)KB-NA rev. 6
+[
+te-še
+]
+-et
+u
+4
+-mi
+[
+li-in-n
+]
+a-di
+li-bit-tum
+295
+A vi 15
+i
+tu-uk-t
+[
+a-b
+]
+i-it
+d
+nin-tu
+sa-as-sú-ru
+E iv 24
+⌈
+i
+⌉
+t
+[
+u-uk-t
+]
+ab-bi-it
+d
+be-le-et-ì-lí
+P(+)R(+)KB-NA rev. 7
+[
+i
+tuk
+]
+-tap-pi-it
+d
+[x x
+sa
+]
+-as-su-ru
+295a
+P(+)R(+)KB-NA rev. 8
+[...]
+⌈
+u
+4
+⌉
+-mi
+á
+[
+š-šu-tim
+ù
+mu-t
+]
+u-ú-tim
+295b
+P(+)R(+)KB-NA rev. 9
+[x x x] ⌈x⌉ [x (x)
+i
+taḫ-d
+]
+u
+dingir-maḫ
+296
+A vi 16
+d
+ma-m
+[
+i
+x
+-
+x
+-sú
+]
+-nu
+i
+ta-ab-bi
+E iv 25
+[
+d
+ma-mi
+...]⌈ḪI*-
+sú
+?
+-nu
+i
+ta-ab-bi
+P(+)R(+)KB rev. 10
+[...
+i
+ta
+]
+-ab-bi
+297
+A vi 17
+i
+ta-
+[...
+s
+]
+a-as-sú-ra
+E iv 26
+[...
+šà
+(
+-as
+)
+-s
+]
+ú-ra
+P(+)R(+)KB-NA rev. 11a
+[...]
+298
+A vi 18
+i
+ta-
+[
+ad-di
+]
+ki-ta-am
+E iv 26
+i
+ta-ad-
+⌈
+di
+ki
+⌉
+-tam
+P(+)R(+)KB-NA rev. 11b
+[...]
+ke-e-šá
+299
+A vi 19
+i-na
+bi-
+[...]
+de-e
+e-er-ši
+E iv 27
+[...
+i-n
+]
+a
+⌈
+na
+⌉
+-de-e
+erši
+(
+giš
+NÁ)
+P(+)R(+)KB-NA rev. 12
+[...]
+⌈
+giš
+erši
+(NÁ)⌉
+300
+A vi 20
+li-iḫ-ti-
+[
+ru
+aš-š
+]
+a
+?
+-tum
+ù
+mu-sà
+E iv 28
+[...]
+⌈
+ù
+mu-us-sà
+⌉
+P(+)R(+)KB-NA rev. 13
+[...]
+301
+A vi 21
+i-nu-
+⌈
+ma
+aš
+⌉
+-š
+[
+u-ti
+]
+ù
+mu-tu-ti
+302
+A vi 22
+i-na
+bi-it
+[x x]
+-
+⌈
+e
+⌉
+i
+ta-aḫ-du
+iš-tar
+303
+A vi 23
+9
+u
+4
+-mi
+[
+li-iš-š
+]
+a-ki-in
+ḫi-du-tum
+P(+)R(+)KB-NA rev. 14
+[...]
+⌈
+liš-šá
+⌉
+-
+[
+ki-in
+...]
+304
+A vi 24
+iš-tar
+[
+li-it-ta-a
+]
+b-bu-ú
+d
+iš-ḫa-ra
+P(+)R(+)KB rev. 15
+[...
+l
+]
+i-
+⌈
+ib
+⌉
+-bu-
+[
+ú
+...]
+305
+A vi 25
+i-na
+[...] x
+-
+⌈
+ti
+si-ma-nu
+ši-im-ti
+⌉
+P(+)R(+)KB-NA rev. 16
+[...]
+si-ma-nu
+[...]
+306
+A vi 26
+[...
+i
+t
+]
+a-ab-bi-
+[
+a-ni
+]
+m
+P(+)R(+)KB-NA rev. 17
+[...
+a
+]
+t-tu-n
+[
+u
+...]
+307
+A vi 27
+[...
+š
+]
+e
+20
+-er-
+⌈
+ri
+⌉
+[x x (x)]
+308
+A vi 28
+[...] ⌈x⌉ [x x x (x)]
+(Lines 309–318 missing)
+319
+A vi 39
+⌈
+ki
+?⌉
+-
+[...]
+320
+A vi 40
+ri-
+[...]
+321
+A vi 41
+[...]
+322
+A vi 42
+AN [...]
+323
+A vi 43
+[...]
+324
+A vi 44
+⌈
+ú-
+x⌉
+-[
+...
+]
+325
+A vi 45
+⌈
+ki
+?⌉
+-[
+...
+]
+326
+A vi 46
+⌈x⌉
+-
+[...]
+327
+A vi 47
+⌈
+i
+⌉
+-
+[...]
+328
+A vi 48
+a-wi-lu
+[
+m
+...]
+329
+A vi 49
+⌈
+zu
+⌉
+-uk-ki
+mu-ša-
+[
+am
+?
+...]
+330
+A vi 50
+ma-ru
+a-na
+a-bi-
+[
+šu
+?
+...]
+331
+A vi 51
+⌈x⌉
+-gi
+iš-ši
+(-)[
+…
+]
+332
+A vi 52
+⌈
+it-ta
+⌉
+-aš-
+⌈
+bu
+?⌉
+-ma
+i
+[
+r
+/
+ni-
+...]
+333
+A vi 53
+šu-ú
+na-ši
+⌈
+giš
+x⌉ [...]
+333a
+A vi 54
+====
+50[+x]
+334
+A vii 1
+i-mu-ur-
+⌈
+ma
+⌉
+[...]
+335
+A vii 2
+d
+en-
+⌈
+líl
+x⌉ [x x]
+-ar
+i-
+[...]
+336
+A vii 3
+i-ta-aḫ-zu
+la-ga
+ti-
+⌈
+nu
+?-
+ri
+?-
+im
+?⌉
+337
+A vii 4
+al-li
+ma-ar-ri
+ib-nu-ú
+eš-
+[
+šu
+]
+-ti
+338
+A vii 5
+i-ki
+ib-nu-ú
+ra-bu-
+[
+ú-t]i
+339
+A vii 6
+bu-bu-ti-iš
+ni-ši
+ti-i-ti-iš
+[
+i-li
+]
+340
+A vii 7
+[...] ⌈x
+-li
+⌉ [x x x]
+341
+A vii 8
+⌈
+a
+⌉ [...]
+342
+A vii 9
+[x x x] ⌈x x x⌉ [x x x x]
+-pa-
+⌈
+ša
+?⌉
+343
+A vii 10
+[...] ⌈
+šu-
+x
+-tim
+?⌉
+344
+A vii 11
+[...] ⌈
+šu
+⌉
+-
+[(x)]
+-nu
+345
+A vii 12
+[...]
+li-
+⌈x
+-nu
+⌉
+346
+A vii 13
+[...]
+⌈
+a-wi
+⌉
+-lim
+347
+A vii 14
+[...] ⌈
+ki
+?⌉
+-il
+348
+A vii 15
+[x x x x]
+li
+⌈x
+ni
+⌉ [x x] ⌈x
+-bu
+?⌉
+-tam
+?
+349
+A vii 16
+[x x
+iš-t
+]
+a-ka-an
+[
+maḫ
+?]-⌈
+ri-ša
+⌉
+350
+A vii 17
+[...]
+na-an-na
+350a
+A vii 17a
+[...]
+⌈
+a
+?⌉
+-la-
+⌈
+di
+?⌉
+351
+A vii 18
+r
+[
+e
+?
+-e-mu
+...
+š
+]
+e-er-ra
+352
+A vii 19
+[...] ⌈600⌉
+šanātum
+(MU.ḪI.A)
+S+T+-NA iv 1a
+[x x x x] ⌈600?
+šanātu
+(MU
+meš
+)
+:⌉
+353
+A vii 20
+[
+ma-tum
+ir-ta-pí-iš
+]
+⌈
+ni
+⌉
+-šu
+im-ti-
+⌈
+da
+⌉
+S+T+-NA iv 1b
+⌈
+mātu
+(KUR)
+ir
+⌉
+-ta-pi
+[
+š
+x x x x]
+354
+A vii 21
+m
+[
+a-tum
+...
+li
+]
+-
+⌈
+i
+i
+⌉
+-
+[
+š
+]
+a-ap-pu
+355
+A vii 22
+i-na
+[...]
+⌈
+i
+⌉
+-lu
+⌈
+it
+⌉
+-ta-
+⌈
+aḫ-da
+⌉
+-ar
+S+T+-NA iv 2
+[
+i-na
+]
+ríg
+ri-gi
+-me-ši-na
+it-ta-
+[
+a-
+di-ir
+DAR
+...]
+356
+A vii 23
+[...]
+⌈
+ri-gi-im-ši-in
+⌉
+S+T+-NA iv 3
+[
+i-na
+]
+ḫu-bu-ri-ši-na
+la
+i-ṣa-ba-ta-
+[
+šu
+ši-tu
+]
+356a
+bd
+d
+enlil
+(50)
+iš-ta-ka-
+[
+an
+]
+pu-ḫu-ur-
+[
+š
+]
+u
+S+T+-NA iv 4
+[
+d
+en
+]
+-líl
+il-ta-kan
+pu-ḫur-
+[
+š
+]
+u
+357
+A vii 24
+[...
+a-n
+]
+a
+⌈
+i-li
+ra-bu
+⌉
+-tim
+S+T+-NA iv 5
+[
+is-sà
+]
+-ka-ra
+a-na
+ilē
+(DINGIR
+meš
+)
+mārē
+(DUMU
+meš
+)
+-šu
+358
+A vii 25
+[...]
+⌈
+ri-gi-im
+⌉
+a-wi-
+⌈
+lu
+⌉
+-ti
+z i 1–2
+(broken)
+S+T+-NA iv 6
+[
+ik
+]
+-tab-ta-ma
+[
+r
+]
+i-gi-im
+a-me-lu-te
+358a
+z i 3
+x x x [...]
+S+T+-NA iv 7
+[
+i-na
+r
+]
+íg
+⌈
+ri-gi
+-me
+⌉-[
+ši
+]
+-na
+at-ta-a-
+di-ir
+DAR
+359
+A vii 26
+[...
+ḫu-bu-ri-ši
+]
+-
+⌈
+na
+ú-za-am
+⌉
+-ma
+⌈
+ši-it
+⌉
+-ta
+z i 4
+iḫ-ḫu-bu-ri-š
+[
+i-na
+...]
+S+T+-NA iv 8
+[
+i-na
+ḫ
+]
+u-b
+[
+u
+]-⌈
+ri-ši
+⌉
+-na
+la
+i-ṣa-ba-ta-ni
+ši-tu
+360
+A vii 27
+[...
+šu-r
+]
+u-up-pu-ú
+li-ib-ši
+z i 5
+qí-ba-a-ma
+[...]
+V-NA rev. 1
+[…
+šu-ru
+]
+-up-pu-u
+[...]
+S+T+-NA iv 9
+[
+qí-b
+]
+a
+?
+-ma
+šu-ru-pu-u
+lib-ši
+360a
+V-NA rev. 2
+[…]
+li-iq-b
+[
+u
+?
+…]
+361
+A vii 28
+[...
+ri-gi
+]
+-
+⌈
+im
+⌉
+-ši-na
+⌈
+nam
+?
+-ta
+?⌉
+-
+[
+ru
+]
+z i 6
+li-ṣe-eḫ-ḫ
+[
+i-ir
+...]
+V-NA rev. 3
+[…
+ri-gi
+]
+m-ši-na
+ki-m
+[
+a
+…]
+S+T+-NA iv 10
+[
+sur-r
+]
+iš
+li-ṣi
+ri-gim-ši-na
+nam-tar
+362
+A vii 29
+⌈x⌉ [...]⌈x x x⌉ [x x x]
+z i 7
+ki-ma
+me-ḫe-e
+[...]
+S+T+-NA iv 11
+[
+ki-m
+]
+a
+me-ḫe-e
+li-zi-qa-ši-na-ti-ma
+363
+A vii 30
+li-z
+[
+i
+?
+-qa-
+?
+...]
+z i 8
+mur-ṣu
+šu-
+[
+ru-up-pu-ú
+...]
+V-NA rev. 4
+[…]
+⌈
+šu
+⌉
+-ru-up-pu-u
+[...]
+S+T+-NA iv 12
+[
+mur
+]
+-ṣu
+di-ʾu
+šu-ru-pu-u
+a-sa-ku
+363a
+z i 9
+d
+nam-tar-ru
+[...]
+363b
+z i 10
+li-ib-l
+[
+i
+...]
+S+T+-NA iv
+----
+363c
+z i 11
+iq-bu-
+⌈
+ú
+⌉-[
+ma
+...]
+S+T+-NA iv 13
+[
+iq-b
+]
+u-ma
+šu-ru-pu-u
+ib-ši
+363d
+S+T+-NA iv 14
+[
+sur
+]
+-riš
+ri-iš
+i-ṣi
+ri-gim-ši-na
+nam-tar
+363e
+S+T+-NA iv 15
+[
+ki-m
+]
+a
+me-ḫe-e
+i-zi-qa-ši-na-ti-ma
+363f
+S+T+-NA iv 16
+[
+mur
+]
+-ṣu
+di-ʾu
+šu-ru-pu-u
+a-sa-ku
+S+T+-NA iv
+----
+364
+A vii 31
+ù
+šu-
+[
+ú
+...]
+S+T+-NA iv 17
+[
+bēl
+(EN)
+t
+]
+a-ši-im-ti
+I
+a-tar-ḫasīs
+(GEŠTU)
+amēlu
+(LÚ)
+365
+A vii 32
+il-šu
+d
+en-ki
+ú-
+[
+zu-un-šu
+...]
+S+T+-NA iv 18
+[
+il
+]
+-šu
+d
+é-a
+uzun
+(GEŠTU)
+-šu
+pe-ta-at
+366
+A vii 33
+i-ta-mu
+⌈
+it
+⌉
+-
+[
+ti
+...]
+S+T+-NA iv 19
+[
+i-t
+]
+a-mu
+it-ti
+ili
+(DINGIR)
+-šu
+367
+A vii 34
+ù
+šu-ú
+il-šu
+it-t
+[
+i-šu
+...]
+S+T+-NA iv 20
+[
+ù
+š
+]
+u
+d
+é-a
+it-ti-šú
+i-ta-mu
+S+T+-NA iv
+----
+368
+A vii 35
+I
+⌈
+at
+⌉
+-ra-am-ḫa-si-is
+p
+[
+í
+]
+-
+⌈
+a
+⌉
+-
+[
+šu
+...]
+S+T+-NA iv 21
+[
+I
+]
+a-tar-ḫasīs
+(GEŠTU)
+pâ
+(KA)
+-šu
+ēpuša
+(DÙ
+-šá
+)
+369
+A vii 36
+iz-za-kàr
+a-
+⌈
+na
+⌉
+[...]
+S+T+-NA iv 22
+[...]
+a-na
+d
+é-a
+bēli
+(EN)
+-šu
+369a
+S+T+-NA iv 23
+[x]
+bēlī
+(EN)
+u-ta-za-ma
+ta-ni-še-ti
+369b
+S+T+-NA iv 24
+[
+kar-ṣ
+]
+i-ku-nu-ma
+e-kal
+mātu
+(KUR
+-tu
+)
+369c
+S+T+-NA iv 25
+[
+d
+é
+]
+-a
+bēlī
+(EN)
+ut-ta-za-ma
+ta-ni-še-ti
+369d
+S+T+-NA iv 26
+[
+kar-ṣi
+]
+šá
+ilē
+(DINGIR
+meš
+)
+e-kal
+mātu
+(KUR
+-tu
+)
+370
+A vii 37
+a-di-ma-mi
+ib-
+[
+nu-ú-ni-a-ti
+]
+S+T+-NA iv 27
+[
+ul
+?
+-t
+]
+u
+?
+ma-te
+ib-nu-na-ši-ma
+371
+A vii 38
+mu-ur-ṣa
+i-im-mi-du-ni-a-ti
+a-d
+[
+i
+da
+?
+-ri
+?]
+S+T+-NA iv 28
+[x x x]
+-sa
+mur-ṣa
+di-ʾu
+šu-ru-pu-u
+a-sa-ku
+S+T+-NA iv
+----
+372
+A vii 39
+d
+en-ki
+⌈
+pí-a-šu
+i-pu-ša
+⌉
+-a
+[
+m-ma
+]
+S+T+-NA iv 29a
+[...
+i
+]
+-qab-bi
+:
+373
+A vii 40
+iz-za-kàr
+⌈
+a-na
+⌉
+ar-di-
+[
+šu
+]
+S+T+-NA iv 29b
+a-na
+I
+a-tar-ḫasīs
+(GEŠTU)
+ÌR!(text: ME.MU)
+-šu
+374
+A vii 41
+⌈
+ši
+⌉
+-bu-ti
+si-
+⌈
+ma
+!⌉
+-ni-i
+375
+A vii 42
+pu
+!?-⌈
+ḫi
+?!⌉
+-ir
+?!
+a-qé-re-
+⌈
+eb
+⌉
+bi-ti-iš-k
+[
+a
+]
+376
+A vii 43
+q
+[
+í-b
+]
+a-ma-mi
+li-
+⌈
+iš-su-ú
+na-gi
+⌉
+-ru
+S+T+-NA iv 30a
+[...] ⌈x⌉ :
+377
+A vii 44
+ri-
+[
+ig
+]
+-ma
+⌈
+li-še-e-ep-pu-ú
+i-na
+ma
+⌉
+-t
+[
+im
+]
+S+T+-NA iv 30b
+rigmu
+(GÙ)
+lu-šá-pu-ú
+i-na
+māti
+(KUR)
+378
+A vii 45
+e
+⌈
+ta-ap-la-ḫa
+i-li-ku-un
+⌉
+S+T+-NA iv 31a
+[... :]
+379
+A vii 46
+⌈e
+tu⌉-
+[
+s
+]
+a-al-⌈li-a⌉
+[i]š-ta-ar-ku-un
+S+T+-NA iv 31b
+⌈e⌉
+tu-sa-pa-a
+d
+iš
+8
+-tár-ku-un
+380
+A vii 47
+⌈
+nam-ta-ra
+⌉
+ši-a
+ba-ab-šu
+S+T+-NA iv 32
+[...]
+⌈
+x x
+⌉
+ka-i-la
+pár-ṣi-šu
+381
+A vii 48
+⌈
+bi-la
+e-pí-ta
+a-na
+⌉
+qú-ud-mi-šu
+S+T+-NA iv 34
+[...]
+ana
+qud-me
+akala
+(NINDA)
+382
+A vii 49
+⌈
+li-il
+⌉
+-li-ik-šu
+ma-
+⌈
+aṣ-ḫa-tum
+⌉
+ni-q
+[
+ú-ú
+]
+S+T+-NA iv 33
+[...
+ma-aṣ
+]
+-
+⌈
+ḫa
+⌉
+-tu
+nīqu
+(ZUR)
+382a
+S+T+-NA iv 35
+[...] ⌈x⌉
+kat-ra-ba-ma
+383
+A vii 50
+li-ba-aš-ma
+i-na
+ka-
+⌈
+at
+⌉
+-
+[
+re-e
+]
+S+T+-NA iv 36a
+[...
+i
+]
+-
+⌈
+na
+!⌉
+ka-at-r
+[
+e-e
+:]
+384
+A vii 51
+li-ša-
+⌈
+ak-ki-il
+qá-as-su
+⌉
+S+T+-NA iv 36b
+[
+i-ša-a
+]
+k
+-
+kán
+ka-an
+qāt
+(ŠU)
+-
+⌈
+su
+⌉
+S+T+-NA iv
+----
+385
+A vii 52
+I
+⌈
+at
+⌉
+-ra-am-
+⌈
+ḫa-si-is
+⌉
+il-
+⌈
+qé-a
+te-er
+⌉
+-tam
+386
+A vii 53
+ši-bu-ti
+ú-pa-aḫ-
+⌈
+ḫi-ir
+a-na
+⌉
+ba-
+⌈
+bi-šu
+⌉
+387
+A vii 54
+I
+⌈
+at-ra-am
+⌉
+-ḫa-si-is
+pí-a-šu
+⌈
+i-pu
+⌉
+-
+[
+ša-am-ma
+]
+388
+A vii 55
+[
+iz
+]
+-za-
+⌈
+kàr
+⌉
+a-na
+ši-bu-
+[
+tim
+]
+389
+A vii 56
+ši-bu-ti
+si
+?
+-
+⌈
+ma
+⌉
+-ni-
+⌈
+i
+⌉
+389a
+A vii 57
+56
+389a
+56 (lines)
+390
+A viii 1
+[...
+bi
+]
+-ti-
+⌈
+iš
+⌉
+-ka
+391
+A viii 2
+[...
+li-is
+]
+-
+⌈
+sú
+⌉
+-ú
+na-gi-ru
+392
+A viii 3
+[...
+li-še-e
+]
+p-
+⌈
+pu-ú
+⌉
+i-na
+ma-tim
+393
+A viii 4
+[...]
+⌈
+i-li-ku
+⌉
+-un
+394
+A viii 5
+[...
+tu-se-el-l
+]
+e-a
+i[š-tar]-ku-un
+395
+A viii 6
+[...]
+ba-
+⌈
+ab
+⌉
+-šu
+396
+A viii 7
+[...
+q
+]
+ú-ud-mi-šu
+(text: ŠA)
+397
+A viii 8
+[
+li-i
+]
+l-li-ik-šu
+ma-aṣ-ḫa-tum
+n
+[
+i
+!
+-qú-ú
+]
+398
+A viii 9
+[
+li
+]
+-ba-aš-ma
+i-na
+ka-at-re-
+⌈
+e
+⌉
+399
+A viii 10
+[
+li-š
+]
+a-ak-ki-il
+qá-
+⌈
+as-su
+⌉
+400
+A viii 11
+[
+ši-b
+]
+u-tum
+iš-mu-ú
+zi-k
+[
+i-ir-šu
+]
+401
+A viii 12
+[...
+n
+]
+am-ta-ra
+i-na
+a-
+[
+li-šu-un
+]
+402
+A viii 13
+[
+i
+]
+b-nu-ú
+bi-
+[
+is-sú
+]
+403
+A viii 14
+[
+iq-b
+]
+u-ma
+is-su-ú
+[...]
+404
+A viii 15
+[
+ri-i
+]
+g-ma
+ú-še-ep-p
+[
+u-ú
+...]
+405
+A viii 16
+[...]
+ip-la-ḫu
+i-
+[
+li-šu-un
+]
+406
+A viii 17
+[...]
+ú-se-el-lu-ú
+[
+iš-tar-šu-un
+]
+407
+A viii 18
+[
+nam-ta
+]
+-ra
+⌈
+i
+⌉
+-ši-
+⌈
+ú
+⌉
+[...]
+408
+A viii 19
+[...]
+⌈
+e
+⌉
+-pí-tam
+a-na
+qú-ud-m
+[
+i-šu
+]
+409
+A viii 20
+[
+i-il-li-i
+]
+k-šu
+ma-aṣ-ḫa-tum
+n
+[
+i-qú-ú
+]
+Q-NA obv. 1
+[...
+ma-aṣ-ḫ
+]
+a-
+⌈
+tum
+⌉
+n
+[
+i-qu
+]
+410
+A viii 21
+[
+i-ba-aš-m
+]
+a
+i-na
+ka-at-r
+[
+e-e
+]
+Q-NA obv. 2a
+[...]
+411
+A viii 22
+[
+ú-ša-ak
+]
+-ki-il
+qá-as-su
+Q-NA obv. 2b
+[
+ú-šak-k
+]
+il
+qa-as-su
+412
+A viii 23
+[...
+i-te-z
+]
+i-ib-ši-na-
+⌈
+ti
+⌉
+bd
+nam-tar
+...
+Q-NA obv. 3
+[...
+i-te-z
+]
+i-ib-ši-na-ti
+413
+A viii 24
+[UD
+-mu
+šu-ul-mi-ši
+]
+-na
+it-tu-ru
+Q-NA obv. 6
+[
+u
+4
+-me
+šu-ul-me-ši-na
+]
+it-tu-ru
+413a
+Q-NA obv. 7
+[...]
+u
+ne-e-ši
+413b
+Q-NA obv. 8
+[...
+i-b
+]
+an-ni
+šer-ra
+414
+A viii 25
+[
+it-ta-ab-ši
+ri-gi-im-ši-na
+ma-a
+]
+ḫ
+-⌈
+ru-ú
+?⌉
+Q-NA obv. 5
+[
+it-tab-ši
+maḫ-ru
+]
+-
+⌈
+ú
+⌉
+ri-gim-ši-na
+415
+A viii 26
+⌈
+da
+⌉
+-am-qú-
+⌈
+tum
+⌉
+z
+[
+i
+?
+-mu-ši
+]
+-n
+[
+a
+....]
+Q-NA obv. 4
+[
+dam-qú-tum
+zi-mu-ši-na
+]
+it-tam-ru
+416
+A viii 27
+[
+ú
+]
+-ul
+il-<li>-ik-
+[
+ma
+]
+600+600
+ša
+[
+nātum
+(MU
+ḫi.a
+)]
+Q-NA obv. 9
+[
+ul
+il-li-ik
+ši-na
+šá-á
+]
+r
+ša-na-a-tim
+A
+====
+416a
+A viii 28
+26
+416b
+A viii 29
+416
+416c
+A
+viii 30 dub 1-kam-ma
+i-nu-ma
+i-lu
+a-wi-lum
+416d
+A viii 31
+mu-šid-bi 416
+416e
+A viii 32
+šu sig
+-
+d
+a-⌈a
+⌉ dub
+-
+sar tur
+416f
+A viii 33
+itu bára-zà-gar u
+4
+21-kám
+416g
+A viii 34
+mu
+am-mi-ṣa-du-qá
+lugal-e
+416h
+A viii 35
+alan-a-ni máš gaba tab-ba šu
+⌈
+an-du
+8
+-a?⌉
+416i
+A viii 36
+ù
+alan-a-ni
+šu
+silim-
+⌈
+ma!
+ab-sá⌉-a
+Translation
+1 When the gods were men,
+2 they performed the work and carried the basket (
+ba: the gods fashioned the yoke, the basket
+).
+3 The basket of the gods was big and
+4 the toil was great, the trouble much.
+5 The great Anunnaku
+6 were forcing the seven to bear the toil, the Igigi.
+7 Anu, their father, was the king,
+8 (
+ba: And
+) their counsellor was the warrior Enlil.
+9 Their [chai]r-bearer was Ninurta
+10 [and] their officer(?) was Ennugi.
+11 They held the hand(s) sideways(?).
+12 They cast the lots. The gods (
+ba: they
+) divided:
+13 Anu went up to (
+ba: to his
+) heaven.
+14 [Enlil t]ook the earth for his subjects.
+15 The bolt that keeps the sea in check
+16 they gave to Enki (
+ba: Ea
+), the prince.
+17 [Those of An]um had gone up to heaven.
+18 [Those of the A]psû had gone down (
+ba: Those of Ea went down to the Apsû
+).
+19 The Anunnaku(?), those of heaven (
+S+T+-NA: those of the Apsû [...]
+), were free of work.
+19a ... and
+20 Those of Enlil used to carry the work (
+A: [They ma]de the Igigi carry the [work]
+).
+21 The gods(?) used to dig the river(s),
+22 [the canals of the gods, the [l]i]fe of the land.
+23 [The gods] used to dig [the rivers],
+24 [the canals of the gods, the li]fe of the land.
+25 [The gods dug the Tig]ris river
+26 [and] the Euphrates thereafter.
+27 [...] in the deep.
+28 [...] they set up their ...
+29 [...] the Apsû.
+30 [... the cir]cumference(?) of the land.
+31 [...] an orchard(?) within it.
+32 [... they] raised the head of the mountain ranges(?),
+33 [...] all the mountains.
+34 The gods(?) created that of the basket (= reeds).
+35 [...] the great marsh.
+36 The gods created that of the basket
+(= reeds).
+36a [For 10? years] they were carrying the basket.
+36b [For 20? years] they were carrying the basket.
+36c [For 30? years] they were carrying the basket.
+37 [For ..]. 40 (
+MM-MB: 50
+) years, the gods carried the excessive (toil) (
+S+T+-NA [... year]s they carried the basket
+).
+37a ... they surrounded the center(?).
+37b ... the land(?).
+38 toil day and night.
+39 [They] sat, raising (their) complains,
+40 [(and) gru]mbling in the excavation:
+40a “The basket is killing us, hard is the work,
+40b much is our distress!
+41 “Come, let us confront (
+MM, ba, S+T+: slay
+) the chair-bearer,
+42 that he may remove the [hea]vy toil (which is) on us!” (
+J-NA, S+T+-NA: [..]. let us break the yoke. MM-MB: and the heavy toil, let us break [its] yoke
+).
+43 [The god, the co]unsellor of the gods, the warrior,
+44 [co]me, let us remove from his dwelling.
+45 [Enlil, the co]unsellor of the gods, the warrior,
+46 [co]me, let us remove from his dwelling.”
+47 Wē (
+MM adds: the god(!) who had understanding
+) made ready to speak and
+48 said to the gods, his brothers:
+49 “Let us beat the chair-bearer of old times,
+50 Enlil will place ...
+51 ... will place ...
+52 … (
+MM-MB: ... before us; J-NA, S+T-NA:q ... they did not sacrifice incense
+)
+53 the hostile god
+.
+54 ... they will [lis]ten to our plea.
+Come on!
+55 Enlil(?) made our yoke last longer
+56 and (
+MM: aggressively
+) made our heavy work harder(?)!
+56a
+[50+x]+4 (lines)
+57 The counsell[or] of the go[ds], the warrior,
+58 co[me], let us remove (him) from his dwelling!
+59 Enlil, the counsellor of the gods, the warrior,
+60 co[me], let us remove (him) from his dwelling!
+61 Now, call for war! (
+ba: Now, let me provo[ke(?)...
+]
+62 Battle let us stir up, warfare!”
+63 The gods heard his word.
+64 They set fire to their tools.
+65 Their spades,
+66 their baskets –
+67 they put on fire.
+68 They took each other hand in hand, as they went (
+ba: They set off, making their way
+)
+69 to the gate of the shrine of warrior Enlil.
+70 It was night, half-way through the watch (
+ba: It was the watch of the night
+).
+71 The house (
+ba: the Ekur
+) was surrounded, but the god did not know.
+72 It was night, half-way through the watch (
+ba: It was the watch of the night
+).
+73 The Ekur (
+K(+)M
+-NA
+: house
+) was surrounded, but Enlil did not know.
+74 Kalkal waited (and) .... (
+ba, K(+)M
+-NA
+: noticed (it) and watched(?)
+..[.]
+)
+75 He touched the bolt and examined [...].
+76 Kalkal woke [Nuska].
+77 All the time they listened to the clamor of [the Igigū].
+78 Nuska woke [his lo]rd.
+79 He got [him] out of (
+K(+)M
+-NA
+: his night
+) bed:
+80 “My lord, [your] house is surrounded.
+81 Battle has run right up to your gate!
+82 Enlil, your house is surrounded.
+83 Battle has run right up to your gate!”
+84 Enlil had [wea]pons(?) sent to his dwelling.
+85 Enlil made ready to speak and
+86 said to the vizier Nuska:
+87 “Nuska, bar your gate,
+88 take your weapons and stand before me.”
+89 Nuska barred his gate,
+90 took his weapons and stood before Enlil.
+91 Nuska made ready to speak and
+92 said to the warrior Enlil:
+93 “My lord, your face is (pale as) a tamarisk.
+94 Your own sons, why did you fear (them)?
+95 Enlil, your face is (pale as) a tamarisk.
+96 Your own sons, why did you fear (them)?
+97 Send that they bring Anu down [here] and
+98 that they lead(?) Enki be[fore y]ou.”
+99 He sent (and) they brought Anu down to him.
+100 They led(?) Enki before him.
+101 Anu, king of [hea]ven, was seated,
+102 the king of the deep water, Enki, s[at(?) wait]ing(?).
+103 The great Anu[naku] were seated,
+104 Enlil arose and the case was p[resented].
+105 Enlil made rea[dy to spea]k and
+106 said to the great [gods] (
+L
+-NA
+: the gods, [his] brot[hers]
+):
+107 “Is it against me that do they up[ris]e?
+108 Shall I make battle against [...]?
+109 Why have I noticed the gods (
+ba: a god
+)?
+110 Battle has run right up to my gate.”
+110a ...
+110b May ...
+110c Y[ou ...]
+110d Tak[e ...]
+110e They sat and [...]
+110f Bēlet-[ilī] sat [...]
+110g “Summon one god [...]”
+111 Anu made ready to speak and
+112 said to the warrior (
+ba, bb,
+L-NA
+: his brother
+) Enlil:
+113 “The reason that the Igigu
+114 surrounded (
+bb: gathered to
+) your gate,
+114a 58 (lines)
+115 let [Nuska] go out and
+116 discover th[eir(?) instruction (
+ba, bb, L: their intention
+)
+117 for f[ighting(?)].”
+118 Enlil (
+ba, bb(?), S+T-NA: Anu
+) made ready [to speak and]
+119 said to to the vizier Nuska:
+120 “Nuska, open your gate!
+121 Take your weapons (and) go out to the assembly!
+122 In the assembly of all the gods (
+S+T
+-NA
+: the great gods
+)
+123 bow down, stand up, (and) repeat (
+S+T
+-NA
+: say to them
+) my message:
+124 Anu, your father, has sent me,
+125 (
+ba, bb: and
+) your counsellor, the warrior Enlil,
+126 your chair-bearer Ninurta
+127 and your bailiff, the god Ennugi.
+128 Who is the god (
+S+T
+-NA
+: the one
+) who leads the warfare?
+129 Who is the god who leads the battle?
+130 Who is the one that stirred up the war (
+S+T
+-NA
+: Which god is it who created […]
+),
+131 so that warfare came right up to Enlil’s gate?”
+131a Written by dictation.
+132 Nuska took the report (
+E: [opened(?)] his gate; S+T-NA: Nuska, [upon hearing(?)] this,
+)
+133 opened the gate, went out to the gathering. (
+S+T-NA: took his weapon; E: [...] w[en]t(?)
+... Enlil(?)
+)
+134 In the assembly of all the gods (
+S+T-NA: of the great gods
+)
+135 he bowed down, stood up and delivered (
+E: revealed
+) the message:
+136 “Your father, Anu, has sent me,
+137 and your counsellor, the hero Enlil,
+138 your throne-bearer Ninurta
+139 and your bailiff E]nnugi (
+S+T-NA: Annugal
+):
+140 Who is the god who leads the warfare?
+141 Who is the god leading the battle?
+142 Who is the one that stirred up the war,
+143 so that ba[tle has run right up to the gate of Enlil?”
+144 In the a[ssembly the Igigu(?)] gods answered:
+144a [... d]id
+144b [...E]nlil.
+144c [...] great.
+145 “The labor gang rebelled (
+E, G, S+T-NA, e: (and) shouted
+).
+145a [...] the gods leading the battle.
+146 It was all of us who declared war.
+147 We convened our assembly
+148 in the excavation.
+149 The basket killed us.
+150 Our toil is great, the misery is too much.
+151 Verily, it was all the entirety of the gods
+152 whom we instigated to fight against Enlil.”
+153 Nuska took the report,
+154 went and relayed [back(?) ... ] (
+bb, e: returned and spoke [to] his [lord]:
+)
+155 “My lord, where you have sent me
+156 [I] set out, I stood and deliv[ered] the message (
+A: I we[nt ...] plenty
+).
+157 I explained (to them) [yo]ur solemn [message] (
+bb, e: [Th]ey heard your solemn message
+).
+158 All the Anunnaki (and) the labor gan[g (said):] (
+A: al[l ...] shouted(?):
+)
+159 “It is all of us
+160 who declared war.
+161 [We] convened our assembly in the excavation.
+162 The excessive basket (
+bb: the basket
+) killed us.
+163 Our toil is [hea]vy, the (
+K(+)M-NA: our
+) misery is too much.
+164 [Verily], all of the entirety of the gods
+165 we [insti]gated to fight with Enlil.”
+166 He he[ard] this speech.
+167 Enlil, his tears (
+bb: [and(?) En]lil’s te[ars]
+) were flowing.
+167a [The go]d was terrified by what he le[arne]d.
+167b He spoke to his brother Anu.
+168 Enlil was terrified by his speech (
+bb: what he le[arned]
+).
+169 He spoke to the hero (
+bb, K(+)M-NA: his brother
+) Anu:
+170 “I will go up with you, to heaven.
+171 Carry the regulation, bring your force!
+172 The Anunnaki are present before you:
+173 Summon a god and let them implement on him the divine authority!”
+174 Ea (
+bb, K(+)M, N: Anu
+) made ready to speak [and]
+175 said to the gods, his brothers:
+176 “What blame can we lay on them?
+177 Heavy is their work, their suffering great!
+178 Daily the earth […]
+179 Heavy is the oppression (
+bb: work
+) – we can hear the uproar.
+180 There is work to do.
+181 Present is [Mami, the birth-godd]ess (
+bb, K(+)M-NA, V-NA: ... Bēlet-ilī (and) the birth-goddesses
+) –
+182 Let the birth-goddess create a primordial creature,
+183 let man carry the basket of god,
+184 let her create a primordial man,
+185 let him bear the yoke, the work of lordship,
+186 let him bear the yoke, Enlils work,
+187
+le[t] man carry the basket of god.
+”
+188 They summoned and asked the goddess,
+189 the midwife of the gods, wise Mami: (
+bb: the midwife, Bēlet-ilī, [wis]e [Mama:]
+)
+190 “It is you who is the midwife who creates mankind (
+bb: destin]y
+).
+191 Create a primordial creature that he may bear the yoke!
+192 [... lo]rdship (
+AA: yo[ke ...]
+).
+193–195 […]
+196 Let him bear the yoke, Enlils work,
+197 let man carry the basket of god.”
+198 Nintu (
+AA: Mami; bb: Mama
+) made ready to speak and
+199 said to the great gods (
+bb: to the gods, her(!) brothers
+):
+200 “It is not for me to do it! (
+bb: The power to do it is with me!
+)
+201 The task is rather for Enki (
+bb: Ea
+) –
+202 it is he who purifies everything.
+203 Let him give me the clay so that I can do it.”
+204 Enki (
+bb, KA: Ea
+) made ready to speak and
+205 said to the great gods (
+bb: the gods, his brothers
+):
+206 “On the first, seventh and fifteenth of each month,
+207 a rite of purification I will establish, a bath.
+208 Let a god be slaughtered and
+209 and let the gods be purified from(?) it.
+210 With his flesh and blood,
+211 let Nintu (
+bb: Bēlet-ilī
+) mix clay.
+212 Let that god and man be mixed
+213 together with clay.
+214 Let us hear the drum for the rest of time. (
+bb: Let him appear in the rest of time, so we may hear.
+)
+215 From the flesh of the god let a spirit come to existence.
+216 May (the spirit) make itself known to the living as his (own) sign.
+217 Lest he be forgotten, let a spirit come into existence. (
+bb: The spirit is a sign not to be forgotten.
+)”
+218 In the assembly they answered “Yes!”,
+219 the great Anuna gods,
+220 the administrators of destinies.
+221 On the first, seventh and fifteenth of each month,
+222 a rite of purification he established, a bath.
+223 Wē who has understanding (
+bb, e: Alla, a god(!) who has understanding,
+)
+224 they slaughtered in their assembly (
+bb, e: Alla whom(?) Enlil slaughtered in front(?)
+),
+225 with his flesh and blood
+226 Nintu (
+bb, e: Bēlet-ilī
+) mixed clay.
+226a [Th]at [god] and man
+226a were mixed together with the clay.
+227 They [heared the drum] for the rest of time. (
+bb, e: [For the rest of ti]me he appeared, it was heard; O: She made hear
+).
+227a lines 55[+2(?)] (lines)
+228 From the flesh of the god [a spi]rit came to existence.
+229 They made it known to the living as his own sign.
+230 Lest he be forgotten, a spirit [came into existence]. (
+bb: not to be forgotten, a spirit.
+)
+231 After they have prepared that clay,
+232 she called for the Anunnaku, the great gods (
+bb, O: all the Igigi
+).
+232a [...] her ears [...]
+233 The Igigi, the great gods,
+234 spat on the clay.
+235 Mami (
+bb: Mama
+) made ready to speak and
+235a (2
+nd
+tablet of “When the gods were men” according to an old copy)
+236 said to the great gods:
+236a ...
+236b “ … giving birth.
+236c [... the creatr]ix of mankind.
+237 You ordered me a [tas]k and
+238 I completed (it).
+239 You slaughtered a god along with his mind.
+240 I threw away your heavy toil.
+241 I have imposed your basket on man.
+241a […] those [d]ays … […]
+242 You have bestowed clamor upon mankind.
+242a […] … […]
+243 I have loosened the yoke, [established] release.
+243a [You have slaughtered a god wi]th his mind.”
+244 They heard this speech of hers.
+245 They advanced to her, released of burden, and kissed her feet,
+(saying:)
+246 “Formerly, we used to call you Mami/a,
+247 now,
+Bēlet-kala-ilī
+(‘Mistress of all the gods’)
+248 let your name be.”
+249 They entered the House of Destiny –
+250 the prince Ea (and) the wise Mama.
+251 The midwives were gathered and
+252 they trampled the [cl]ay in front of her.
+253 Again and again [s]he cast the spell.
+253a To [...]
+253b E[a] spoke [to ..]. Eridu(?).
+254 Sitting in front of her, Ea made her cast (the spell).
+254a Bēl[et-ilī ca]st the spell.
+255 After she had cast her spell,
+255a She spat on her clay.
+256 She pinched off fourteen pieces of clay.
+257 Seven pieces of clay (
+S+T-NA: she put
+) on the right,
+258 seven pieces of clay she put on the left.
+259 In their midst she set a brick.
+260 She unsheaved the dagger of the canebrake, the cutter of the umbilical cord.
+260a She summoned the wise, the knowledgable,
+260b the seven and seven wombs.
+260c Seven created males,
+260d seven created females,
+260e while the womb who creates destiny
+260f was veiling them (the women), (pairing them) two by two,
+260g veiling (them), (pairing them) two by two, in front of herself.
+261 [Princ]e [Ea ...]
+262 [... the birth go]ddesses.
+263 [The cl]ay dried up(?)
+... [...]
+264 oil [...]
+265 Mami drew the plans of people, (saying):
+265a “In the house of the pregnant woman who give birth,
+265b let the brick be set for seven days.
+265c Let Dingir-maḫ, wise Mami, be honored.
+265d Let the midwife rejoice in the house of the woman who give birth.
+265e When the pregnant woman gives birth,
+265f let the mother of the baby ... herself.
+266 Let the male (baby become) a young man,
+267 and let the female (baby) be[com]e a young woman!
+268 Let the young woman (raise her eyes) to the young m[an], (and)
+269 let the young man rai[se] his eye(s) to the young wom[a]n,
+270 let him take the young woman's charms!
+271 ...
+272 [... breas]t(s)(?) on her chest.
+273 A beard [will be notic]ed
+274 [o]n ... the cheek of the young man.
+275 [In the or]chards and streets
+276 [let] the wife and her husband choose each other.”
+277 [The wom]bs were assembled and
+278 Nintu [was pre]sent,
+279 [reckon]ing the months.
+280 [...] of destiny they summoned the tenth month.
+281 The tenth month arrived and
+282 she peeled off(?) the rods, she opened the amniotic sac.
+283 Her face beaming joyfully,
+284 She covered her head.
+285 She performed the midwifery.
+286 She girded her loins,
+287 extending her blessing.
+288 She drew (a circle) with flour and placed the brick (saying:)
+289 “It is I who created; my hands did (it)!
+290 Let the midwife rejoice in the house of the vestal,
+291 where the woman in labor gives birth,
+292 and the mother of the baby
+293 sets herself apart (during the puerperium).
+294 For nine days may the brick be placed,
+295 Let Nintu, the womb (
+E: Bēlet-ilī
+) be honored.
+295a [In] time of wi[fehood and husban]dhood,
+295b [... may] Dingir-maḫ [rejo]ice.
+296 Let Mami announce their [...].
+297 let her ... the womb.
+298 let her lay the reed mat.
+299 In the ho[use(?), wh[en] laying the bed,
+300 let the [wif]e and her husband choos[e] each other.
+301 At the time for being wif[e] and man
+302 let Ištar rejoice in the house of the [..].
+303 For nine days let rejoicing be established.
+304 Let them [ca]ll Ištar (
+A: forever
+) Išḫara.
+305 [...] at the appropriate time of destiny
+306 [... may(?)] you call always [for] me.
+307 [...] baby [...]
+308 ...”
+(Lines 309–3
+29
+missing)
+319 ...
+320 ...
+321 ...
+322 ...
+323 ...
+324 ...
+325 ...
+326 ...
+327 ...
+328 Man [...]
+329 Cleanse during the nigh[t(?)
+...]
+330 The son to [his(?)] father [...]
+331 ...
+332 They sat down and .[..]
+333 He it was who was carrying the [...]
+333a 54 (lines)
+334 He saw ..[.].
+335 Enlil ...
+336 They took a slag from the k[iln(?)],
+337 They created new hoes and spades.
+338 They created large dykes.
+339 In order (to satisfy) the hunger of the people and for the food [of the gods]
+340 ...
+341 ...
+342 ...
+343 ...
+344 ...
+345 ...
+346 ... of man.
+347 ...
+348 ...
+349 [ ... pl]aced [bef]ore(?) her.
+350 ...
+350a ... to give birth(?).
+351 The w[omb was open, creating a b]aby.
+352 Six(?) hundred years [had not passed],
+353 when the land had grown numerous, the people had increased.
+354 The l[and] constantly bellowed [like a b]ull.
+355 The god was troubled by their noise.
+356 [Because of] their clamor he did not catch [sleep] (
+A: [...] their noise
+).
+356a Enlil, he convened his assembly,
+357 [spea]king to the great gods (
+S+T+-NA: to the gods, his children
+):
+358 “The noise of mankind has become burdensome to me.
+358a I have become troubled [by] their noise.
+359 Because of their clamor I crave for sleep (
+S+T+-NA: sleep does not catch me
+).
+360 Command that shivers will rise.
+360a [...] let them com[mand ...]
+361 Let Namtar cut off [quick]ly their noise. (
+z: Let [...] dimini[sh]
+).
+362 Like a storm, let
+363 sickness, headache, shivers, stroke (
+z: sickness, sh[ivers ...]
+) blow against them.
+363a Namtaru [...]
+363b Let [their life(?)] come to an en[d].
+363c They commanded and shivers rose.
+363d Namtar cut off [quick]ly their noise.
+363e [Lik]e a storm,
+363f [sick]ness, headache, shivers, stroke blew against them.
+364 And he, [...] (
+S+T+-NA: [The prude]nt, Atar-ḫasīs, a human
+) –
+365 his god was Enki (
+S+T+-NA: Ea
+). He (Ea) was heedful.
+366 He talked with his god,
+367 and he, his god (
+S+T+-NA: Ea
+), talked with him.
+368 Atram-ḫasīs opened his mouth and
+369
+said to Ea, his lord:
+369a “[...] My lord, humankind is groaning,
+369b the land is [blaim]ing you.
+369c [E]a, my lord, humankind is groaning,
+369d the land is blaim[ing] the gods, (saying:)
+370 Soon after she (Mami)/they cr[eated us] (
+S+T+-NA: [Af]ter
+),
+371 they (the gods) impose on us sickness fo[rever(?)] (
+S+T+-NA
+: [You ...] sickness, headache, shivers, stroke
+).”
+372 Enki opened his mouth [and] (
+S+T+-NA: [... s]aying:
+)
+373 said to [his] servant: (
+S+T+-NA: to Atar-ḫasīs
+):
+374 “At the proper time, the elders
+375 assemble(?) into your house, (and say to them:)
+376 ‘Command that the heralds proclaim.
+377 Let them give loud voice in the land, (telling them:)
+378 ‘Do not revere your gods!
+379Do not pray to your goddess!
+380 Seek the gate of Namtar! (
+S+T+-NA: Maintain his rites!
+).
+381 Bring a baked loaf (
+S+T+-NA: bread
+) in front of it!
+382 Let a flour offering reach him!’
+382a [...] pray ceaselessly
+383 so that he shall feel obliged (lit.: ashamed) and
+384 pass his hand over the gift (
+S+T+-NA: [pu]ts his hand
+)’”.
+385 Atram-ḫasīs accepted the order.
+386 He assembled the elders at his gate.
+387 Atram-ḫasīs open[ed] his mouth,
+388 [s]aying to the elders:
+389 “At the proper time, the elders
+390 [assemble(?) into] your [hou]se, (and say to them:)
+391 ‘[Comm]and that the heralds proclaim.
+392 Let them give loud voice in the land, (telling them:)
+393 ‘[Do not revere] your gods!
+394 Do [not] pray to your goddess!
+395 [Seek] the gate [of Namtar!]
+396 [Bring a baked loaf in] front of it!
+397 Let a flour off[ering rea]ch him,
+398 so that he [shall] feel obliged (lit.: ashamed) and
+399 [pa]ss his hand over the gift!’”
+400 [The eld]ers heard his spe[ech.]
+401 In [their] cit[y],
+402 they built for Namtar [his temple].
+403 [They comm]anded and [the heralds] proclaimed.
+404 They gav[e lou]d voice [in the land].
+405 They (the people) did [not] revere [their] go[ds],
+406 they did [not] pray [to their goddess].
+407 They seeked Namta]r [at his gate].
+408 [They brought] a baked loaf in front of [it].
+409 A flour o[ffering reach]ed him.
+410 [He felt oblig]ed and
+411 [pass]ed his hand over the gi[ft].
+412 Namtar [l]eft them (the people).
+413 [The days of th]eir [well-being] returned.
+413a ... and life(?).
+413b [The womb was open (and) crea]ted a baby.
+414 Their former noise [started again].
+415 [The]ir good l[ooks became bright.
+416 1200 (
+Q-NA: [720]0
+)
+years [had not passed].
+416a 26 (lines)
+416b 416 (lines)
+416c Tablet 1 of
+inūma ilū awīlum
+.
+416d Its lines are 416.
+416e Hand of Ipiq-Aya, junior scribe.
+416f Month of Nisan, 21st day.
+416g Year: The king Ammī-ṣaduqa (made)
+416h his statue holding a kid parallel to his breast
+416i and his statue extending(?) his hand of blessing.
+Commentary for display
+Table of manuscripts – Atra-ḫasīs I
+Ms. background markings:
+Grey
+= OB,
+Pink
+= MB,
+Green
+= NB/LB,
+Light Blue
+= NA
+Siglum
+Provenance
+Museum no.
+CDLI no.
+Copy
+Photo
+Edition
+Lines
+A
+Sippar
+BM 78941+78943 (Bu 1889-04-26, 234+236)
+P285809
+CT 46, 1 (plates I–XII)
+https://www.britishmuseum.org/collection/object/W_1889-0426-234
+Lambert/Millard 1969,
+von Soden 1978
+1–170,
+209–251,
+281–416
+E
+Sippar
+BM 92608 (Bu 1891-05-09, 269)
+P365127
+CT 6, 5;
+PBS 10/1 (plate X);
+CT 46, 4 (plates XXII–XXIII)
+von Soden 1957, pls. XI–XIV; https://www.britishmuseum.org/collection/object/W_1891-0509-269
+Lambert/Millard 1969,
+von Soden 1978
+123–146, 180–183, 188–191, 196–220, 271–300
+F
+Unknown
+BM 17596a (1894-01-15, 310a)
+P285810
+CT 46, 2 (plate VII)
+https://www.britishmuseum.org/collection/object/W_1894-0115-310-a
+Lambert/Millard 1969,
+von Soden 1978
+27–36,
+103–104,
+107–116,
+118–124
+G
+Sippar
+BM 78257 (Bu 1888-05-12, 113)
+P345529
+CT 44, 20 (plate XVI)
+https://www.britishmuseum.org/collection/object/W_1888-0512-Bu-113
+Lambert/Millard 1969,
+von Soden 1978
+144–153,
+174–181,
+184–196,
+236c–251
+AA
+Unknown
+BM 22714b (1894-01-15, 516b)
+Lambert 1991, 411–413
+https://www.britishmuseum.org/collection/object/W_1894-0115-516-b
+Lambert 1991
+192,
+196–199, 206–215
+ba
+Sippar
+IM 124646
+P224186
+George/Al-Rawi 1996, 152, 154–156
+George/Al-Rawi 1996
+1–29,
+32–98,
+101–131
+bb
+Sippar
+IM 124649
+P224187
+George/Al-Rawi 1996, 165, 167, 169
+George/Al-Rawi, 1996, 164, 166, 170
+George/Al-Rawi 1996
+111–217, 221–235a
+bd
+Sippar
+IM 132665
+P404930
+George/Al-Rawi 1996, 172
+(Tablet IV, quotation of several lines only)
+356a,
+412
+e
+Babylon?
+BM 41330
+Rozzi 2023, 78
+Rozzi 2023, 77
+143–157, 222–228
+J-NA
+Nineveh
+K.10082
+P224187
+CT 46, 7 (plate XXIV)
+https://www.britishmuseum.org/collection/object/W_K-10082
+Lambert/Millard 1969,
+von Soden 1978
+41–42.
+47–52,
+109–112
+K(+)M-NA
+Nineveh
+K.6235(+) K.7109 + K.9979
+(K = K.6235, M = K.7109 + K.9979)
+P285818 (K), P285819 (M)
+CT 46, 10 (+) 11
+(plate XXV)
+https://www.britishmuseum.org/collection/object/W_K-6235 (K),
+https://www.britishmuseum.org/collection/object/W_K-7109 (M)
+Lambert/Millard 1969,
+von Soden 1978
+68–80,
+163–181
+KA-NA
+Nineveh
+K.17853
+P403141
+Lambert 1980, 74
+https://www.britishmuseum.org/collection/object/W_K-6831
+202–208
+L-NA
+Nineveh
+K.6831
+P285820
+CT 46, 12 (plate XXV)
+https://cdli.mpiwg-berlin.mpg.de/artifacts/432850/reader/206847
+Lambert/Millard 1969,
+von Soden 1978
+106–116, 118–122, 169–175
+MM-MB
+Babylon
+MM 818
+Böck/Márquez Rowe 1999–2000, 175
+Böck/Márquez Rowe 1999–2000, 176–177
+Böck/Márquez Rowe 1999-2000,
+Márquez Rowe 2016
+36–42,
+47–60,
+63,
+66–67
+N-NA
+Nineveh
+Bu. 1889-04-26, 97
+P285816
+CT 48, 8 (plate XXIV)
+https://www.britishmuseum.org/collection/object/W_1889-0426-97
+Lambert/Millard 1969
+172–179
+O-NA
+Nineveh
+K.14697
+P400933
+Lambert/Millard 1969, pl. 5
+https://www.britishmuseum.org/collection/object/W_K-14697
+Lambert/Millard 1969,
+von Soden 1978
+226–233
+P(+)R (+)KB-NA
+Nineveh
+K.7816 + K.13683 (+) K.4539 + K.5902 (+) K.17752
+(P = K.7816 + K.13683,
+R = K.4539+K.5902, KB = K.17752)
+P285821 (P), P395624 (R), P403154 (KB)
+Macmillan 1906, 688 (K.7816, part of P),
+CT 46, 13
+(plate XXVI, P), Lambert 1960a, pl. 65 (R),
+Rozzi 2023, 81 (R)
+Lambert 1980, 75 (KB)
+https://www.britishmuseum.org/collection/object/W_K-7816 (P),
+https://www.britishmuseum.org/collection/object/W_K-17752 (KB)
+Lambert/Millard 1969,
+von Soden 1978 (P),
+Rozzi 2023, 78–79 (R)
+236a–236c,
+241–270,
+272–274,
+288–300, 303–306
+Q-NA
+Nineveh
+Sm.292
+P285822
+Lambert 1960b, 123; CT 46, 14 (plate XXVII)
+https://www.britishmuseum.org/collection/object/W_SM-292
+Lambert/Millard 1969
+409–416
+S+T
++-NA
+Nineveh
+K.3399+
+K.3934+
+K.8562+
+K.10097+
+K.10604+
+K.12000c+
+K.16979+
+K.18489+
+K.18572+
+K.21851
+(S = K.3399+
+K.3934+K.8562, T = K.12000c)
+P345485
+(S)
+CT 15, 49 (K.3399+K.3934, part of S),
+CT 46, 6 (plate XXIV, K.8562, part of S),
+CT 13, 31 (K.12000c, T) + Lambert 1969, 533 (K.12000c+K.10604) + Lambert 1980, 72+74 + Lambert 1991, 414
+https://www.britishmuseum.org/collection/object/W_K-3399
+(part of S)
+Lambert/Millard 1969
+Lambert 1991 (K.21851)
+18–22,
+25–28,
+36a–37b,
+39–42,
+52–53,
+110a–110g, 118–146,
+152–153,
+153a–260g,
+265–268,
+352–373,
+376–384
+V-NA
+V
+Nineveh
+K.6634
+P285817
+CT 46, 9 (plate XXIV)
+https://www.britishmuseum.org/collection/object/W_K-6634
+Lambert/Millard 1969,
+von Soden 1978
+181–187,
+360–361,
+363
+X-MB
+Babylon
+BE 39099
+Lambert/Millard 1969, plates 4, 9–10
+Lambert/Millard 1969
+232a–235, 241–255
+z
+unknown
+MMA 86.11.378A
+Lambert 2005, plates 59–60
+Lambert 2005
+358–363c
+Commentary 1ff.:
+General: A comprehensive annotated line-by-line bibliography is provided by Shehata 2001.
+1: The word
+awīlum
+in this line has been much debated. Lambert/Millard (1969, 43 with commentary 146) understood
+awīlum
+as a locative with a comparative function (“like men”). This interpretation was contested by von Soden who interpreted
+awīlum
+as a sg. nom. and translated the first line of the myth “Als die Götter (auch noch) Mensch waren” (1994, 618). For the entire discussion, see Shehata 2001, 23–24; Ziegler 2016, 108–115. To our mind, von Sodens interpretation is grammatically correct, namely
+awīlum
+is nom. (not loc.). However, distinctly from von Soden’s translation,
+awīlum
+carries here a metaphorical connotation which is expanded in the next line, that is, what being a man means (cf. Moran 1987, 247 n. 7). Streck (1999, 97–98 no. 112) raised a further point strengthening this line of argument, namely the replacement of the older metaphor (in the nom. case) by an explicit comparison using the particle
+kī
+in a later version. Hence, the translations of Wasserman (2003, 93 with n. 138), and Loesov (2004, 197), who followed Lambert, should be abandoned. A similar construction is also found in an OB letter from Mari (Ziegler 2016). In that letter, the diviner Aqba-ḫammu complains about the attitude of the population subject to the king of Mari (
+muškēnum
+). Our interpretation of the relevant passage differs from the understanding of its editor:
+šumma muškēnum ša elīšu ṭābu uparraš ana pī muškēnim nīnu nillak
+!
+pī muškēnim
+kuš
+na-ru-qú-um-ma-a nirakkas
+“If the population will
+act disobediently
+to fit its (own) good, (then) also we shall go along according to what the population says. Is the mouth of the population a leather bag that we (can) bind?!” Contrarily to Ziegler,
+narūqum
+here is a metaphor in the nom. case without any comparative function.
+2: The younger scribe found it suitable to insert an explicit subject,
+ilū
+, to
+ibnû
+(OB
+ublū
+). This proves that the argument of Loesov (2004, 196) against understanding
+inūma ilū awīlum
+as a self-contained temporal clause should be rejected. The choice of the NB scribe could have been triggered by a difficulty of reading of the OB
+ub-lu
+. In addition, the younger scribe replaced the abstract noun
+dullu
+with the concrete metaphor
+nīru
+.
+– OB
+iz-bi-lu
+was replaced by NB
+ib-nu-ú
+, although the meaning of this verb does not fit here. Probably the scribe misread the signs of his
+Vorlage
+, and took the signs
+iz
+(GIŠ) for IB, BI for NU and lastly LU for Ú.
+–
+šupšikkum
+is a metonym for “work”, cf. Streck 1999, 187. For the /t/ : /š/ interchange, cf. Streck 2022, 207 § 2.446.
+5: A much-discussed problem (cf. the literature in Foster 2005, 278) is the acc.
+sebetta
+(
+m
+) and the question to whom the numeral refers. A multiplicative number “sevenfold”, suggested by Wilcke 1977, 157, would have no parallel in OB (Streck 2022, 445f.) and would not make good sense here. Like von Soden 1978, 76, we do not see any other grammatical option but to connect
+sebettam
+with
+Igigi
+in the next line, although – theoretically –
+sebettam
+could be adjacent to
+dullam
+in the next line. This goes against Lambert/Millard 1969, 43, Lambert 1980b, 83–85, as well as Foster 2005, 229, who connected
+sebettam
+with the nom. Anunnaku. There is no way avoid the problem of enjambement here.
+8:
+ma-li-ik-šu-nu
+“their counsellor”. As Enlil is usually the king of the gods, it is not excluded that the scribe plays with the word
+malku
+“ruler”.
+9: For
+guzzallû
+, see commentary to l. I 126.
+Commentary 10ff.
+10: For the reading [
+ù
+]
+gal-lu-
+and not [
+gu
+]
+-gal-lu-
+, see the argumentation in Lambert/Millard 1969, 147–148, followed, e.g., by von Soden 1978, 54; 1994, 618. This reading is now confirmed by the NB manuscript.
+11: Von Soden 1978, 54 and 76–77 reads ⌈
+ku
+⌉-
+tam
+“box (of lots)”. However, according to George/Al-Rawi 1996, 184, the first sign is ⌈
+šu
+⌉ (by collation). We follow this reading and interprete ŠU as logogram for
+qātu
+(note that Lambert/Millard 1969, 42 had proposed a reading [
+q
+]
+a-tam
+, probably a mistake reflecting the same idea proposed by us). The reading ⌈
+le
+⌉
+-ti-ša
+(von Soden 1978, 54) has been confirmed by the NB manuscript. We understand the form as terminative + acc. case as in
+šamêša
+, l. 13 (and not as the 3 f. sg. possessive pronoun
+-ša
+). Tentatively, we see here a picture of the gods holding hands as part of a ritual of casting lots. See already Lambert/Millard 1969, 43 and Horowitz 1998, 126 (but still with the incorrect restoration
+qātīša
+).
+13: The NB version replaces the ending
+-iš-a
+(terminative + acc. case; for the plural, see Streck 2022, 387 § 5.191) of the OB version with terminative + personal suffix -
+šu
+referring to Anu.
+14: For the beginning of the line, now completed by the NB version, see George/Al-Rawi 1996, 184.
+15: For the construct state in
+-u
+,
+see Streck 2022, 385 § 5.187 and Pohl 2022, 48–49 § 1.5.4. – For
+šigaru naḫbalu tiāmtim
+as a cosmic entity that “holds the sea in place”, see Horowitz 1998, 326–327. The two nouns “bolt” and “rope” refer to the same closing device, namely a bolt which is closed by a rope. A similar hendiadys,
+sikkūru iṣu
+,
+is attested in Wasserman 2016, 110: 8 with commentary on p. 113. – Ea, who is
+not
+the god of the salty sea, gets the responsibility for preventing it from entering the land and the subterranean sweet water.
+16: For the restoration of the OB verbal form in perfect, we follow the NB version.
+18: As noted by George/Al-Rawi 1996, 184–185, the manuscript A has not enough space to correspond to the wording of manuscript ba. – For this line, see Falkenstein
+apud
+Wilcke 1977, 162 n. 12; Shehata 2001, 30.
+19: Whereas manuscript bb has
+d
+a-nun-na-ki
+(ll. 158, 172, 232), manuscript ba seems to read
+e-nu-ku.
+–
+i-lu
+before
+šūt
+, suggested by George/Al-Rawi 1996, 185, is not necessary. – Manuscript S+T+-NA replaces “those of heaven” by “those of deep water”.
+Commentary 20ff.
+20:
+izzabbilū
+is Gtn pret. After -
+lu
+? in manuscript ba, we see two signs (not indicated in George/Al-Rawi 1996, 158), the first of which is probably -
+ni
+. The following sign cannot be deciphered.
+22: Von Soden 1978, 54 and 77, righly restored a word for “canal” in A. However, manuscript ba shows that the correct restoration is probably
+miṭrāti
+and not
+palgī
+. For
+miṭirtu
+establishing
+napišti māti
+in the inscriptions of the Assyrian king Tukulti-Ninurta I, see CAD N/1, 302f.
+napištu
+8b2.
+23: The new reading of ba suggests that also the OB manuscript A had
+ilū
+in the break. – For the f. pl. spelled -(C)
+a-ta
+in NB, see Streck 2014, 282f.
+25: The restoration [
+d
+i-gi-gu
+] in l. 25 (Foster 2005, 230) is too long for the break, especially if we read
+íd
+. Therefore, we prefer to restore
+ilū
+. – For the typical sequence Tigris–Euphrates, see Blaschke 2018, 142.
+26: The line is very difficult to read on the photo of text ba. We believe we can read the expected
+-na-tú
+after the signs
+pu-ra-.
+Commentary 30ff.
+32: The word for “mountain range” is usually pl.
+ḫuršānū
+, but for a sg.
+ḫur-ša-nim
+, see Gilg. Ishchali 33.
+34, 36: In our view, “that of the basket” refers to the reed, especially as l. 35 speaks of the great marsh. Apparantly, the late version ba differs from the OB. The signs defy our reading.
+36a–c: The sequence 10–20–30 was restored because l. 37 has the number 40.
+37: In MM-MB, Márquez Rowe 2016, 59 and 61, reads <
+d
+>50 for Enlil. This suggestion, however, is unwarranted. Enlil is not expected here, and his name is written
+En-líl
+in rev. 2 of the same manuscript. – In A, we read 40, as Lambert/Millard 1969, 44, and not [240]0? + 60 + 40 = 2500, as did von Soden 1978, 56 and 78.
+38: For the interchange between the pres.
+izabbilū
+and the pret.
+izbilū
+for past ongoing situations in literary texts, see Streck 1995, 77–78.
+Commentary 40ff.
+40: MM-MB ends with
+uttazzamū
+.
+41: The verbal form in MM-MB, as restored by Böck/Márquez Rowe 1999–2000, 170 and 173, is possible but not free of problems, because of the uncontracted ending which is unexpected in this period. One could think of conflation of an OB form
+ni-im-ḫu
+-
+ra-am-ma
+in this scribe’s source of copying (with
+ḫu
+misread as
+ri
+) and a form of
+nâ
+/
+êru
+found in the later versions. Furthermore, the scribe was driven after
+nīrni
+of the following line.
+42: For adnominal
+elni
+, see already the translation of von Soden 1978, 57. – MM-MB: We restore
+nīr
+[
+šu
+] instead of
+nīr
+[
+ni
+] (Márquez Rowe 2016, 60).
+43–51: S+T-NA skips these lines.
+47: On NAGAR as logogram for the DN
+wê
+(and not for
+alla
+), and the gods name as playing with the word
+awīlum
+“man” and the exclamation “woe”, see Krebernik 2002. –Wilcke 1999, 80 n. 29 assumed a purposeful syntactic construction here, meant to stress the divine character of
+ṭēmu.
+We, however, find this hard to accept. Also, Márquez Rowe 2016, 62, commenting on the syntax of this line, raises the possibility that the scribe deliberately chose this akward word order, either to create a literary device or to avoid a misunderstanding regarding the deitys name. In our mind, neither of the two is correct. Krebernik 2002, 291 n. 8, commenting on the parallel passage in Atr. I 223, thinks rather of a text corruption. Similarly, we see the unusual word order as a result of miscopying by the scribe who confused the words
+īšû
+and
+ilu
+, a mistake which entered the copying tradition.
+Note, however, the elaborate word order also in Atr. I 5f.
+Commentary 50ff.
+50: Márquez Rowe 2016, 61 and 63 proposes the translation “confusion will beset Enlil”, deriving
+i-šu-tu
+from
+ešû
+and thinking of
+iššakkan
+as an N-stem verbal form. However, the alleged reference for this word *
+išûtu
+in CAD I/J, 293 has been interpreted differently by AHw 403 as
+išūtu
+“Freude”. Moreover, the syntax of Márquez Rowe’s suggestion poses problems because we expect a preposition before the god’s name. We rather think that
+enlil
+is the subject of the sentence, governing
+išakkan
+in the G-stem, with the object
+i-šu-tám
+which remains unclear to us. – For the lack of the determinative before
+en-líl
+, see also l. 55.
+55: Márquez Rowe 2016, 60 reads differently. We keep
+alkāni
+in l. 54, which is clear on the tablet. The next line opens with
+enlil
+,
+the subject of the verb
+ušalbira
+, and not [
+i n
+]
+ušalbira
+; the god’s name is written without the determinative, as in l. 50.
+56: A verbal form
+ukanni
+from
+kânu
+(thus Böck/Rowe 1999/2000, 171 and Rowe 2016, 61 and 64) cannot be accepted. By contrast, the idiom
+dulla dunnunu
+is well attested and makes good sense here.
+57: The scribe of MM-MB did not bother to divide the lines according to the literary structure. Therefore, differently from Márquez Rowe 2016, 61 and 64, we understand the adverb
+dapniš
+as closing the previous sentence.
+Commentary 60ff.
+61: George/Al-Rawi 1996, 185 think that the scribe misunderstood the particle
+anumma
+and took it as divine name. Another option, which we prefer, is that the scribe switched between two possible spellings of the word.
+62: Note the zeugma, based on the parallelism
+tāḫāza
+–
+qablam.
+68: For the allusion to Enūma eliš III 129 in manuscript ba, see George/Al-Rawi 1996, 185. – About three or four signs are missing before -
+ni
+in K(+)M-NA. Therefore, we restore the verb
+ītaḫzūni
+as in A and not the noun
+atmāni
+as done by von Soden 1978, 87.
+69: Von Soden 1978, 87, after collation, reads
+káš
+!
+-da-at-ma
+in K(+)M-/NA “war gekommen”, with
+maṣṣartu
+as subject. We do not follow this reading.
+Commentary 70ff.
+74: Von Soden in a handwritten note in his private copy of CT 46 excludes the reading
+te
+instead of
+še
+.
+75: No other spelling of
+sikkūru
+with initial
+š
+is known to us. – Von Soden 1978, 56 tentatively restored
+bāba
+at the end of the line.
+77: Note the splitting of the periphrastic genitive construction by the verb.
+79: K(+)M-NA: restoration follows von Soden 1978, 87
+Commentary 80ff.
+80: For K(+)M-NA, see von Soden 1978, 87.
+84: We follow the sugggestion to read
+kakkī
+(von Soden 1978, 58), which fits well epigraphically. However, the spelling
+ka-ki
+(unlike
+ka-ak-ki
+in ll. 88 and 90) and the unique combination of the Š-stem of
+redû
+with the object
+kakkī
+leave some doubt.
+Commentary 90ff.
+93: For the metaphor
+bīnu
+“tamarisk”, which describes one’s face turning pale, see von Soden 1978, 59 and 79; Streck 1999, 98. – Note the alliteration based on
+b
+and the sonars
+l
+–
+n
+.
+94: Enlil’s answer employs another alliteration based on
+r
+and
+m.
+98: By mistake, the scribe wrote Enlil instead of Enki.
+Commentary 100ff.
+102: For the reading
+ūteqqī
+s. von Soden 1978, 58.
+104: For the restoration, see von Soden 1978, 58.
+107: Restorations according to von Soden 1978, 58 and 88. – A: There is enough space to restore
+né
+in the break as in L-NA.
+108: F: This manuscript sometimes had longer lines, with one line corresponding to two in manuscript A. This was apparently also seen by von Soden who marked in a handwritten note in his private copy of CT 46 “Zeilenlänge”.
+109: Lambert/Millard 1969, 48 read
+i-ni
+“my eye”. Von Soden 1978, 58 reads
+i-lí
+, a reading which has gained plausibility since the NB manuscript ba seems to have
+i-lu
+(George/al-Rawi 1996, 185). The spelling
+i-lí
+is unusual but understandable as a mixture of archaic (
+ì-lí
+) and updated (
+i-li
+) orthography. Von Soden interpretes
+ilī
+as vocative “Ihr Götter”. The extraposition of
+ilī
+and the appearance of
+anāku
+form an emphatic syntax expressing Enlil’s shock.
+Commentary 110ff.
+110a–110g: These lines in S+T-NA are not paralleled by any other manuscript. We placed them before the lines of S+T-NA that parallel the earlier versions, namely, ll. 118ff. For tentative restorations of these lines, see Lambert/Millard 1969, 54.
+113: Note the less common nuance of
+zikru
+, here carrying the meaning “reason for”, for which see George/Al-Rawi 1996, 185.
+114a: “58” is a scribal remark counting the lines so far.
+116: The broken sign after
+te-er-ta
+- (not read by Lambert/Millard) could be -
+k
+[
+a
+...] as suggested by Moran 1987, 249 n. 13; but -
+š
+[
+u
+!?
+-nu
+?...] fits better the context.
+117: Lambert/Millard (1969, 48) restore
+a-na ma-
+[
+ri-ka …
+]
+“To [your] sons […]”, but this restoration remains questionable. The line is omitted in the late manuscripts ba, bb and L (already George/Al-Rawi 1996, 185).
+118: The first, half-broken sign in bb is read by George/Al-Rawi (1996, 162) as [
+lí
+]
+l
+, but could be the end of -
+um
+, which would concord with the other late Sippar tablet, ms. ba.
+Commentary 120ff.
+129: For manuscript S+T-NA, see Lambert 1980b, 73.
+Commentary 130ff.
+131: For
+râṭu
+in S+T-NA, see Lambert 1980, 74, l. 17=27, CAD R 220 and 187, as a variant for
+râṣu
+. In fact,
+râṭu
+is an Aramaic loanword in Akk., cognate to
+râṣu
+. The Semitic root from which both words derive is RHẒ.
+132: At this point of the story, the manuscripts differ. Each of them offers a different sequence of actions. Here and in the next line, our reading of manuscript E follows Moran 1987, 249.
+Commentary 140ff.
+147: Restoration according to the NB manuscript bb, l. 34, Cf. l. 161 of manuscript A where the sign rest after the break resembles more an ur than an us.
+Commentary 150ff.
+158: For the traces x
+um
+?
+is
+?⌉-
+sí
+at the end of the line, cf. George/Al-Rawi 1996, 186 who remain skeptical regarding the proposal of Moran (1987, 249) to restore [
+ib
+]- ⌈
+bal
+⌉-
+ki-is-sí
+“rebelled against it (Enlil’s charge)”.
+Commentary 160ff.
+165: In manuscript AA, we expect a synonym to
+mitḫuṣa
+. The reading
+na-
+⌈
+ka-ra
+⌉-
+am
+(van der Westhuizen 1992, 92) seems to be excluded by collation (Foster 2005, 279 ad l. 152). Shehata 2001, 54 follows Pettinato 1970, 78, and hesitatingly prefers the reading
+qa
+-⌈
+ab-la
+⌉-
+am
+, which is, however, excluded by orthography (
+qa-
+instead of
+qá-
+) as well as by grammar (after
+ubla pīni
+an infinitive is needed). George/Al-Rawi 1996, 186 follow von Soden 1978, 62 and read
+na-
+⌈
+ba-ba
+⌉-
+am
+. But note that l. 39 cannot serve any longer as a parallel for the use of
+nabābum
+in the text. For the time being, no suggestion for a good reading of the line comes to our mind.
+168: Note the vowel interchange
+ītadar
+:
+ītadir
+in the different manuscripts. Usually, the verb
+adāru
+belongs to the
+a
+/
+u
+-class.
+Commentary 170ff.
+170: For
+etellī
+, Gt-stem pres. of
+elû
+, see Pettinato 1968, 191, von Soden 1978, 63, and Shehata 2001, 55. A reading
+etellī
+“my noble” (Lambert/Millard 1969, 53; George/Al-Rawi 1996, 169; Foster 2005, 234) would create an unusual syntax.
+173: In manuscript bb, we read ⌈
+li
+⌉-
+i
+[
+d-d
+]
+u
+!-
+šú
+,contra George/Al-Rawi 1996, 168 and 186, who suggest ⌈
+li
+⌉-
+i
+[
+d-d
+]
+i
+-
+šú
+,
+liddišū
+from
+edēšu
+D “to renew”. As copied, the sign in question is neither DU nor DI, but in light of the later parallel, we prefer DU. Moreover,
+nadû
+makes good sense: to throw the divine regulations on someone (-
+šú
+, dative) means, in our mind, to make him bear the decision. Namely, the chosen god will be slaughtered. – Note the use of the number
+ištēn
+as an indefinite article. See also l. 208.
+174: In the OB tradition, Ea intercedes and starts being active in the creation of man. In the later tradition, the conversation simply continues by Anu’s answer.
+178: The reading of the signs seems to be secure. The only verb which fits both
+na-a-
+AD and
+na-a-ṭu
+would be
+nâṭu
+“to have a urinary or bowel disease” (CAD N/2, 133f.). May the line metaphorically describe the earth bleeding?
+Commentary 190ff.
+199: Note the typical NB use of the pron. suff. -
+šú
+for the 3rd p. sg. fem.
+Commentary 200ff.
+200: Here, the version of the NB manuscript bb has the opposite meaning of the OB manuscript E. Apparently, the late scribe misread or misheard
+la
+as
+lu
+and then continued without the word
+na-ṭú
+, and ended up with a new text.
+206: The reading in manuscript KA-NA is ⌈
+e
+⌉, not ⌈
+kal
+⌉, see George/Al-Rawi 1996, 187. For
+e-
+standing for the preposition
+in
+(
+a
+), and not
+el
+(
+ī
+), see Streck 2010, 563.
+208–217: On this crucial passage concerning the creation of man and its anthropological implications, see lately Steinert 2012, 324–333, with a review of earlier literature. The notion of the spiritual quality of blood is also found in Deuteronomy 12, 23 according to which the blood is the
+nefeš
+of man.
+209: Manuscript bb shows that the old reading
+ṭi-i-bi
+in manucript E must be abandoned (see George/Al-Rawi1996, 187). – It is very hard to see how bathing in blood is purifying, since blood is the contaminating substance par excellence (Wasserman 2011). Therefore, we suggest to understand
+ina qerbi
+as “
+from
+it” and not “thereby” (George/Al-Rawi 1996, 171). A somewhat similar use of
+iq-qerbi
+“from it” is found in
+ilammad iqqerbi lā ḫāsisu aʾīlu
+“The unwise man will learn from it (the hymn)” in Ištar Louvre i 11 (with Foster 2005, 282, and
+pace
+Streck/Wasserman 2018, 15). Admittedly, this use of
+elēlu
+(“to be pure or be purified
+from
+smth.”) is not attested elsewhere. – The purification of the gods is connected by the scribe with the
+èš-èš
+-rites of the moon calendar. During those rites, a bathing ritual took place, by which the king was purified (for these rites in the Ur III period, see Sallaberger 1993, 65–68). See also Frahm 2011, 358 + fn. 1707, who refers to this passage, mentioning the “link between destruction (of a guilty god), purification (of the other gods, by Enki), and creation (of man)”.
+Commentary 210ff.
+212: The enclitic -
+ma
+has an emphasizing function here. Manuscript bb uses the syllabic value
+wa
+in order to express a glide between
+u
+and
+awīlu
+. This spelling also recalls the name of the slaughtered god
+d
+we-e
+.
+214: bb misreads
+li-pa-a
+for UD-
+mi up-pa
+, see George/Al-Rawi 1996, 187 ad l. 97. The subject of
+wapû
+was apparently thought to be the man that had been mixed with the god’s blood
+(see also l. 227). – For the theological and religious associations of these lines in late liturgical texts, see Gabbay 2018, 38–40.
+215: The unique spelling
+we-ṭi-im-mu
+in the OB manuscript E alludes again to the name of the slaughtered god
+d
+we-e
+who has
+ṭēmu
+(l. 47).
+216: For different interpretations of these lines, see Shehata 2001, 67 and Foster 2005, 236 n. 1.
+Eṭemmu
+“spirit” is the essential trait of man.
+Commentary 220ff.
+223: On the previous interpretations of this line, see Shehata 2001, 68f. The NB manuscript bb wrongly places
+i-lam
+in the relative clause.
+224: On this difficult line in manuscript bb, see George/Al-Rawi 1996, 187, with a different interpretation. We analyse the syntax here as a relative clause without
+ša
+and
+iṭbuḫušu
+as subordinative.
+maḫrītim
+is not an adjective of Enlil but refers spatially to the assembly. Enlil did not slaughter the god by himself but was behind the decision to do so.
+226a: Restoration is based on l. 212. For =
+wa-
+in mansucript O-NA, cf. l. 212, manuscript bb.
+227: The NB manuscript bb continues with its misunderstanding of
+uppu
+“drum” as a form of
+wapû
+, see l. 214.
+i-te-eš-me
+stands for the N-stem
+ittešme
+and not for a precative
+i tešme
+as understood by George/Al-Rawi 1996, 171.
+235–243: In this speech of Mama/i, the goddess stresses that her own actions were positive, whereas the other gods are responsible for the dirtier parts of the creation of man.
+239: This line in manuscripts A and G corresponds to l. 243a in manuscript P(+)R(+)KB-NA.
+Commentary 240ff.
+242: For the verb
+šaḫādu
+, attested only here and in II vii 32, see AHw 1128 and CAD Š/1, 75. A different reading,
+taštaḫṭā
+, was proposed by Pettinato 1968, 181 and 187, and followed by Wilcke 1999, 84 (“ihr habt abgeworfen”). However,
+šaḫāṭu
+does not mean “to throw upon”, but “to strip off”.
+243a: See the commentary on l. 239.
+249: According to Moran 1970, 48 n. 2, who follows Jacobsen, the House of Destiny is the chamber in which the child is born.
+Commentary 250ff.
+253b: The signs look like NUN
+ki
+. However, the function of
+eridu
+in this context is not clear to us.
+259: Note that manuscript S+T-NA tends to use
+t
+-prefix for the 3 sg. fem. Here, however, an
+i
+-prefix is found. Cf.
+uṣṣar
+in l. 265. – For the brick of birth, see Stol 2000a, 118–122.
+Commentary 260ff.
+260: For this line, see Stol 2000a, 113 n. 24. The noun
+luṭû
+, a kind of knife, is masc., as shown by the apposition
+bātiq
+. The verb
+teptē-ši
+, however, has a fem. acc. suff. which can perhaps be explained as an influence of the Neo-Assyrian dialect (see Leonhardt 2024, 209 § C.24). For
+petû
+“to unsheathe a weapon” cf.
+pētiyu šukurrim
+“[who unshe]athes the lance” in the Epic of Zimrī-līm (FM 14, 12) i 8, 10. – In the manuscript P(+)R(+)KB-NA, we expect the form
+ip-te-šu
+/
+šú
+at the end, but the BM photo shows less than the copy in CT 46, 13, and is therefore of no help to read this broken line.
+260a: For
+mu-te-ti
+, see CAD M/2, 166
+mudû
+1c2. – The reading [
+paḫ
+]
+rama
+suggested there is disproved by the fragment K.10097 (Lambert/Millard 1969, xi).
+260b: The spelling with
+šà
+“heart” alludes to the meaning of the word
+šassūru
+“womb, birth goddess”. –
+šassūru
+“womb” here refers metonymically to the fourteen divine midwives, the entourage of Mami. The same word is used for Mami herself in l. 260c, whose emblem is the omega sign representing a womb.
+260e–g:
+šassūru
+in l. 260e is the subject of
+ukallala-
+, which therefore is a sg. ventive form. -
+šina
+refers to the women mentioned before. The present tense marks a circumstantial clause. Mami, the womb, who creates destiny, pairs the men and women just created, two by two. The text describes this by putting the veil on the women’s face, as was the common practice for married women in Mesopotamia. Cf.
+kallatu
+uktal
+[
+lal
+] in ZA 42, 81 iii 13 (CAD K 519
+kullulu
+b), and van der Toorn 1995, 331. See also Michel 1997 for a veil put on a married woman (
+pussumu
+).
+263f.: We expect the verb
+balālu
+“to mix” in both lines, but the signs do not support such a reading. On the other hand,
+abālu
+“to dry up” (suggested by Rozzi 2023, 79) or
+belû
+“to become extinguished” do not make good sense here.
+265f: The scribe of the NA recension did not understand the original verb (
+w
+)
+urrû
+used here (cf. l. 293) and replaced it with a D-stem of the verb
+ḫarāšu
+“to be in labor”, along with the replacement of the noun
+qadišti
+(l. 290) by
+ḫarišti
+(l. 265d).
+267: Rozzi 2023, 79f. suggests to read
+l[i-m
+]
+e
+and
+li-b
+[
+e
+], both spellings for the precative of
+ewû
+“to become” in the two NA manuscripts that preserve these lines. We suggest the N-stem of
+bašû
+which fits the signs in both manuscripts.
+Commentary 270ff.
+271–274: These lines describe the appearance of secondary sexual signs in adolescent women and men: beard and breasts(?).
+275: Restoration
+kirâti
+follows Wilcke 1985, 295. For older suggestions, see Shehata 2001, 76f.
+276: We restore here a precative as in the previous lines, because, in our mind, the speech of Mami ends only here. Von Soden 1978, 66f. restored [
+iḫ-
+]
+ti-ru
+and analysed the form as a preterite, while Foster 2005, 237 translated it as a present tense: “will choose each other”.
+Commentary 280ff.
+280: Lambert/Millard 1969, 62 restore
+[si-ma-nu]
+.
+For the restoration
+[i-na bīt
+(É)
+]
+(cf. l. 249), see von Soden 1978, 66f.
+282: Our reading follows von Soden 1994, 625. –
+silītum
+is understood in CAD S 264
+s.
+2 as a “poetic word for womb”. For the meaning “amniotic sac”, punctured by the midwife, see Stol 2000, 171 with n. 3. A biblical parallel presents itself, namely Jacob (Genesis 30, 37–43) peeling off the rods in front of the sheep in order to make them more fertile.
+Commentary 290ff.
+290: The NA manuscript S+T-NA, l. 265d, replaced the expression
+bīt qadišti
+with
+bīt ḫarišti
+“the house of the woman in labor”. For the
+qadištu
+in this context s. Stol 2000, 116 and 172f.
+293: The verb derives from (
+w
+)
+urrû
+, see AHw 1497 and CAD U 245f. This probably refers to the puerperium, the period after birth when the woman is isolated together with her baby (Stol 2000, 117). This sentence does not refer to cutting the umbilical cord, a task which is not performed by the mother herself but by the midwife.
+295a (and ll. 300f.): Note the order
+aššūtu
+mutūtu
+, attested also in daily life texts, for which see CAD A/2, 472
+aššūtu
+b. But cf.
+mutut
+<
+ta
+>
+u aššutta
+in a MA text (CAD M/2, 319
+mutūtu
+).
+296: It is likely that manuscript E reads
+-sú
+?
+-nu.
+Pace
+von Soden 1978, 68 and 92, the sign before is definitely not ḪA but rather ⌈ḪI⌉. The verb is another 3 fem. precative, and not a Gtn imperative of
+nabû
+as assumed by Lambert/Millard 1969, 64f., who were followed by Foster 2005, 238. As we understand, Mami, the subject, announces here something with regard to the husband and wife mentioned above, probably their marriage.
+298: The verbal form cannot derive from
+naʾādu
+Gtn “to praise”, as was assumed by Lambert/Millard 1969, 64f., and Foster 2005, 238 (the correct imperative would be
+itaʾʾid
+). As suggested by von Soden 1978, 68f., it derives from
+nadû
+. Von Soden’s reading
+kītam
+at the end of the line is confirmed by the next line which has
+nadê erši
+“to lay down the bed”. –
+ke-e-šá
+does not refer to the city of Keš as was thought by Lambert/Millard 1969, 64f., and Foster 2005, 238. Rather, it results from misunderstanding of earlier
+ki-ta
+, misread as
+ki-ša
+and modernized to
+ke-e-šá
+by the ancient scribe.
+Commentary 300ff.
+302: There is not enough space to restore [
+e-mi ra-bé-
+]
+e
+, as suggested by Lambert/Millard 1969, 64. A plausible restoration might be [
+ḫa-de
+]
+-e
+“house of [rejoi]cing”, unattested so far. – As for the verb, we follow von Soden 1978, 68, namely
+i taḫdū
+and not
+ittaʾdū
+from
+naʾādu
+as in Lambert/Millard ib., followed by Foster 2005, 238.
+304: Manuscript P(+)R(+)KB-NA, which has [
+l
+]
+i-ib-bu-
+[
+ú
+], proves that Lambert/Millard 1969, 64 restored the verb in manuscript A correctly, namely [
+li-ta-a
+]
+b-bu-ú
+(
+pace
+von Soden 1978, 68 and 82f. [
+li-sa-a
+]
+p-pu-ú
+). – Išḫara as a goddess of love was equated with Ištar, see Lambert 1976–1980, 177, Prechel 1996, 58f.
+Commentary 330ff.
+336: We derive
+la ga
+from
+lagāʾu
+/
+lagû
+“slag from a kiln” (CAD L 37) and take
+ti-
+as the possible beginning of the word
+tinūrim
+“oven, kiln”,
+pace
+von Soden 1978, 83, who suggested a hapax legomenon
+laqtu
+or
+lāqu
+.
+339: This attestation of
+tiʾītu
+is not found in the dictionaries.
+Commentary 350ff.
+351–355: Restored on the basis of Tablet II 85–89.
+352: It remains open whether the text has 600 years or a multiple thereof.
+355a: Restored on the basis of Tablet I 359.
+Commentary 360ff.
+361: Lambert/Millard 1969, 106f. read [
+li-š
+]
+ak-li-ṣi
+and translated “let ... diminish”. However,
+kalāṣu
+“to shrivel” does not fit the context. In l. 363d they read
+i-ṣi
+“diminished”. On p. 172 they follow a von Soden’s suggestion to derive both forms from
+ṣêʾu
+, translated in AHw as “aktions-, kampfunfähig machen”. We prefer to derive these forms from
+eṣû
+“to slit, cut off” (AHw 253), which might allude to the element tar “to cut” in the name Namtar. The NB manuscript z replaced this difficult verb with the lectio facilior
+liṣeḫḫir
+.
+364:
+u šū
+, in our mind, introduces the new protagonist Atram-ḫasīs. Lines 364–367 provide background information about him and his relation to his god Enki/Ea, which is most relevant for the continuation of the myth, namely that they are close and talk to each other. This can be compared to the first line of “Man and his god” (AOS 67, 188: 1 = SEAL no. 1808), in which the sufferer weeps to his god “like to a friend” (
+rūʾiš
+, see Streck 2020). – The use of the logogram GEŠTU in the name of Atram-ḫasīs corresponds with the faculty of hearing (GEŠTU) in the next line. –
+amēlu
+“man” stands in opposition to
+ilu
+“god”. This is the first time that a human protagonist appears in the narrative.
+369b: The translation “disease” by Foster (2005, 271), undoubtedly based on a restoration [
+mur-ṣ
+]
+i
+,
+is grammatically difficult. Therefore, we follow the restoration found in Wilcke’s private score passed to us. For
+karṣī akālu
+in Atr., see also ll. 39 (note the Dt-stem of
+nazāmu
+in l. 40, and compare l. 369c) and 176.
+karṣī
+akālu
+means “to accuse somebody in front of a third party”. As we understand it, people were complaining about the gods in front of Atram-ḫasīs who revealed this to Ea. Later, in Tablet III, Ea will return this favor and tell Atram-ḫasīs about the coming flood.
+Commentary 370ff.
+370: The photo shows clear
+a-di-ma
+, not
+a-ki
+-
+ma
+as suggested by Pettinato 1968, 188. The meaning “until” does not fit here, but
+adīma
+with the sense “soon after”, which fits, is attested in the OB Mari letter ARM 26/1, 275: 13 (see Wasserman 2012, 187f.). This meaning is also closer to the later version [
+ult
+]
+u
+. – The enclitic
+-mi
+shows that Atram-ḫasīs quotes the complaints of the people. – The manuscript S+T+-NA, in spite of the spread of the signs
+-ma
+and
+-te-
+, apparently reads [
+ult
+]
+u mate
+. The form
+te-eb-nu-
+suggested by Lambert/Millard 1969, 108 is non-grammatical. Cf.
+ištu mati
+in CAD M/1, 407
+mati
+b2. The form
+ibnû-
+can be 3 m. sg. or 3 m. pl. Note that manuscript S+T+-NA uses the the prefix
+ta-
+/
+te-
+for 3. f. sg. fem. unconsistently; cf. l. 259.
+371: Lambert/Millard 1969, 108 suggest to restore the beginning [
+ta-pa-ra
+]
+-sa
+, “will you remove ...?”. We do not follow this proposal.
+372: Wilcke (private score) suggested to correct MU-
+šu
+to ÌR-
+šu
+. We follow him, but suggest that the otherwise unexplained ME is part of the wrongly written ÌR.
+374f.: This difficult passage is repeated in I 389–390 and II 36–37. The latter line with its attestations in later manuscripts shows that the reading
+simānī
+, as already suggested by Lambert/Millard 1969, 68, is correct,
+pace
+von Soden 1978, 72 who read
+si-
+[
+l
+]
+u-nii-
+[
+bi
+] (cf. also CAD S 266). We analyse
+simānī
+as an adverb with the adverbial ending
+-ī
+, see GAG § 113k. – There is no space at the end of the line for [-
+bi
+]. The verb must be restored at the beginning of the next line. Admittedly, the signs do not yield a clear reading, but we cautiously suggest the imperative
+puḫḫir
+on the basis of the verb
+upaḫḫir
+in I 386 and II 49. We understand
+a
+as the shortened preposition
+an
+-.
+376: The reading
+qibâmami
+presents itself in light of the new manuscript evidence for II 38, instead of the earlier reading
+q[e]r
+?
+-ba-mi li-i[s-s]ú-ú
+suggested by von Soden (1978, 72). The enclitic
+-mi
+signifies a quoted speech embedded in the direct speech.
+377: Note the Assyrian form
+lušappû
+instead of the Babylonian
+lišeppû.
+Commentary 380ff.
+380: Note the Assyrian form
+kaʾʾilā
+.
+382: Lambert/Millard 1969, 69, followed by Foster 2005, 240, translate
+alāku
+with the dative pronoun -
+šu
+“to please”. Von Soden 1994, 628 translates “bringen”. We find no support for either suggestion, and understand
+alāku
+in its literal sense “to go to, to reach”, like von Soden 1978, 73 (“gelange”).
+383f.: The form
+lišakkil
+was differently understood by Lambert/Millard 1969, 69 (D-stem of
+šaqālu
+“will lift his hand”) and von Soden 1991b and 1994, 628 (
+šukkulu
+“seine Hand abwische”). We accept the derivation from
+šukkulu
+but analyse the construction differently. According to the passages quoted in CAD Š/3, 219
+šukkulu
+d), one wipes his hands over an object (
+ina igāri
+or
+ina
+TÚG). Here the god passes his hand (or “[p]uts” in the manuscript S+T+-NA) “over the gift” (
+ina katrê
+), a gesture of acceptance. – The photo of the manuscript S+T+-NA proves that the lacuna is longer than copied and allows for the restoration suggested here.
+Commentary 390ff.
+394: Restoration of a sg.
+ištar-
+after II 41 and 57.
+Commentary 400ff.
+400: We suggest [
+ša
+] at the beginning of the line.
+Commentary 410ff.
+413–415 The restorations after II 82–85 follow Wilcke’s private score.
+416e: On the scribe of manuscript A, Ipiq-Aya or Ipqu-Aya, see Wilcke 1999, 68f.; van Koppen 2011, 145f.
+416gff.: This is the name of the year Ammī-ṣaduqa 12. On the many variants of this year name, see Horsnell 1999, vol. 2, 340f., and https://www.archibab.fr/4dcgi/listestextes11.htm?N146. None of them mentions the variant in the colophone on this tablet.
+Vocabulary
+Word
+Translation
+Semantic
+Line
+abākum I (v.)
+G to lead away
+98, 100
+abālum (v.)
+to dry up s. th.
+263
+abšānum
+yoke, harness
+185, 186, 191, [192], 196
+Abum
+MN
+7, 124, 136, 330
+abunnatum
+umbilical cord, navel
+260
+adārum II (v.)
+G to be afraid, fear, be worried, disturbed; Š to cause annoyance, frighten; Št to become frightened, worried
+94, 96, 167a, [168], 355, 358a
+adi
+until, as far as
+370, 371
+aḫāzum (v.)
+to take, marry, learn, (Š) instruct, incite
+11, 14, 68, 336
+aḫrâtaš, aḫriātiš
+for ever after
+214, 227
+aḫum I
+brother
+48, [106], 112, 167b, 169, 175, 199, 205
+ai, ē, â
+not
+378, 379
+akalum
+bread
+381
+akālum (v.)
+to eat
+39, 176, 369b, 369d
+akī, akkī
+as
+265e
+alākum (v.) (DU)
+G to go, walk; Gt go off, away; Gtn wander, go repeatedly, roam about, walk; Š caus. of G
+41, [44], [46], 54, 58, 60, 68, 133, 154, 156, 167, 281, 382, 397, [409], 416
+ali
+where?
+291
+alla
+beyond, apart from
+223, 224
+allum (//giš.al)
+hoe, pickaxe
+337
+ālum (URU.KI)
+village, town, city
+[401]
+amārum (v.)
+to see
+109, [273], 334
+Ammī-Ṣadūqa
+RN
+416g
+ana I
+to, for
+16, 48, 81, 83, 84, 86, 92, 98, 100, 106, 110, 112, 114, 117, 119, 121, 131, 131a, 133, 143, [154], 167b, 169, 170, 175, 180, 199, 200, 205, 206, 236, 242, 249, 252, 253a, 257, 258, 266, 267, 268, 269, 330, 357, 369, 373, 375, 381, 386, 388, 408
+anāku
+I
+109, 203, 289
+andurārum
+freedom
+243
+Annugal
+DN
+139
+annum
+(word of) consent, approval
+218
+annûm
+this
+132, 241a, 244
+Anum
+DN
+7, 13, 17, 97, 99, 101, 111, 118, 124, 136, 167b, 169, 174
+anumma
+now
+61
+Anunnakkū, Enunnakkū
+DN
+5, 19, [103], 158, 172, 219, 232
+apālum (v.)
+to pay, answer
+144, 218
+apārum, epēru (v.)
+G to cover the head, Gt stat. is decked with
+284
+appārum
+reed-bed, marsh
+260
+Apsûm (ZU.AB)
+underground water (cosmic)
+18, 19, 29, 102
+asakkum I (Á.ZÁG)
+disease caused by the asakkum demon (a kind of)
+363, 363f, 371
+ašrum (KI)
+place, site
+155
+aššatum, aštum
+wife
+276
+aššum
+because (of)
+217, 230
+aššūtum
+marriage, status of a wife, wifehood
+[295a], 301
+Atra-ḫasīs
+PN
+364, 368, 373, 385, 387
+attā
+you (m.sg.)
+110c
+attī
+you (f. sg.)
+190
+attunu
+you (m. pl.)
+306
+awātum, amātu (INIM)
+word, matter, speech
+116, 166, 168
+awīlum, aʾīlu, amēlu (LÚ; LÚ.ÙLU)
+man, free man, human being
+1, 183, 184, 187, 197, 212, 226a, 235a, 241, 328, 346, 364, 416c
+awīlūtum, amēlūtu
+humanity,  mankind
+190, 236c, 242, 358
+awûm, amû (v.)
+G to speak; Gt speak, discuss, negotiate
+366, 367
+ba'ūlātum
+subjects, population
+14
+bābum (KÁ)
+doorway, door, gate, entrance
+69, 81, 83, 87, 89, 110, 114, 120, 131, 132, 133, 143, 380, 386, 395
+balālum (v.)
+G to mix up; D coat, smear
+62, 130, 142, 211, [212], 213, 226, [226b], 231
+balṭum
+living, alive
+216, 229
+banûm (v.)
+to create, build
+34, 36, 142, 182, 184, 191, 260c, 260d, 289, 337, 338, 370, 402, 413b
+bānûm, f. bānîtum
+creator, begetter
+190, [236c], 260e
+bašûm (v.)
+to be (at hand), be available, exist
+70, 72, 180, 201, 215, 217, 228, [230], [267], 360, 363c, [414]
+bâšum (v.)
+to be ashamed, come to shame
+383, 398, [410]
+batāqum (v.)
+to cut off
+260
+Bēlet(-kala)-ilī (DINGIR.MAḪ)
+DN
+110f, 181, 189, 226, 247, [254a], 295
+bēlum (EN)
+lord, master, proprietor, owner
+78, 80, 93, 128, 129, 140, 141, 145a, [154], 155, [364], 369, 369a, 369c
+bêlum (v.)
+to rule (over)
+363b
+bēlūtum
+rule, domination, lordship
+185, [192]
+bīnum II (gišŠINIG)
+tamarisk
+93, 95
+biri-, beri-
+between, among
+259
+birītum
+space between, distance
+259
+bītum (É)
+house
+71, 73, 80, 82, 249, 265a, 265d, 290, 299, 302, 375, [390], [402]
+bubūtum
+hunger, starvation
+339
+būnum
+features, face, goodness, pl. face
+93, 95
+dâkum (v.)
+to kill, beat
+40a, 149, 162
+damqum
+good, beautiful
+415
+dāmum
+blood
+210, 225
+danānum (v.)
+to be(come) strong
+56
+dapniš
+aggressively
+57
+darārum (v.)
+G to move freely; N to roam free
+245
+dārûm
+lasting, eternal
+[371]
+dekûm (v.)
+to raise, shift, call up, levy (troops), lift, remove
+76, 78
+di'um I, ṭi'um, ṭīḫum
+a disease affecting the head, malaria(?)
+363, 363f, 371
+dimtum II
+tear
+167
+Dingir-maḫ
+DN
+265c, 295b
+dīnum (DI.KU5)
+verdict, case, judgement, legal decision
+104
+dullum
+trouble, work, service
+2, 4, 6, 20, 38, 40a, 42, 56, 150, 163, 177, [179], 240
+Ea
+DN
+edēlum (v.)
+to shut, bolt
+89
+edlum
+shut, bolted
+87
+edûm (v.)
+to know
+71, 73, 216, 229
+Ekur
+TN
+73
+elēlum II (v.)
+G to become pure, free; D purify
+202, 209
+eli, elu
+on, above, over
+42, 107, 234, 255a
+elûm (v.)
+to go up, arise, (Š) bring up, bring out, enter (on a tablet)
+13, 17, 32, 170
+emēdum (v.)
+to lean on, impose, become stationary, (N) get together
+241, 371
+Enki
+DN
+16, 98, 100, 102, 201, 204, 365, 372
+Enlil
+DN
+8, 14, 20, [45], 50, 55, 59, 69, 73, 82, 84, 85, 90, 92, 95, 104, 105, 112, 118, 125, 131, 133, 137, 143, 144b, 152, 165, 167, 168, 186, 196, 224, 335, 356a
+Ennugi
+DN
+10, 127, 139
+epēšum (v.)
+to do, make, build, open (mouth), (D) calculate, check, execute properly (a tablet)
+47, 85, 91, [105], 108, 111, 118, 144a, 174, 180, 198, 200, 203, 204, 235, 285, 289, 368, 372, [387]
+epītum
+baked product, pastry
+381, 408
+erēbum (v.) (KU4)
+G to enter, come in; Š cause to enter, bring in; penetrate
+249
+Eridu
+GN, TN, SN
+253b
+erṣetum (KI)
+earth, land, netherworld
+14, 178
+eršum I
+wise
+189, 250, 260a, 265c
+eršum IV (GIŠ.NÁ)
+bed
+299
+eṣērum (v.) (ḪUR)
+to draw, design
+265, 288
+ešrûm
+tenth
+280, 281
+eššum
+new
+337
+eṣûm (v.)
+to slit, cut into
+361, 363d
+eṭemmum
+ghost (of a dead person)
+215, 217, 228
+eṭlum (GURUŠ; ŠUL)
+manly; young man
+266, 268, 269, 274
+ezēbum (v.)
+to leave, leave behind, abandon, (Š) save, rescue
+[412]
+ezēḫum (v.)
+G to gird on, strap on, tie on
+286
+gallum
+rolling
+10, 127, 139
+gamārum (v.) (TIL)
+to bring to conclusion, complete
+255
+garāšum (v.)
+garāšum (v.)
+68
+gīrum, Girra (dGÌRA)
+fire(-god)
+66
+guzalûm, kuzallûm
+chair-carrier, throne-bearer
+9, 41, 49, 126, 138
+ḫadûm I
+joyful
+283
+ḫadûm III (v.)
+G to be joyful, rejoice
+265d, 290, [295b], 302
+ḫakāmum (v.)
+to understand, apprehend, D ~ G
+74
+ḫalāpum (v.)
+to slip into, through, (D) clothe someone with
+282
+ḫarāšum (v.)
+to be in labor
+265f
+ḫarištum
+woman in confinement
+265a, 265d
+ḫerûm (v.)
+G to dig, excavate
+21, 23, 25
+ḫiārum, ḫârum (v.)
+to choose, seek out, (Gt) woo one another, (D) set apart
+276, 293
+ḫiāṭum, ḫâṭum (v.)
+to supervise, check, watch (over)
+74, 75
+ḫidûtum
+joy, rejoicing
+303
+ḫubūrum II, ḫuburrum
+bustle, clamour
+356, 359
+ḫullum, ullum
+neck ring, torc, yoke
+243
+ḫupšum
+(member of) lower class, labor gang
+145, 158
+ḫursānum
+place of the river ordeal, place of the riverordeal
+32
+i
+let's, come on
+41, 44, 46, 49, 58, 60, 62, 214, 265c, [295], 297, 298, 302. [306]
+Idiglat
+GN, Tigris
+25
+idum (Á)
+arm; side; strength; wage
+171
+Igigû
+DN, the (ten) great gods
+6, 20, 77, 113, 144, 232, 233
+īkum, ēkum, īgum
+dike, ditch
+338
+iltum (DINGIR)
+goddess
+188
+ilum (DINGIR)
+god, deity
+1, 3, 10, 12, 21, 22, 23, 24, 25, 34, 36, 38, [43], 43, 45, 47, 48, 53, 57, 59, 63, 71, 106, 109, 110g, 122, 127, 128, 129, 134, 140, 141, 145a, 151, 164, [167a], 173, 175, 187, 189, 197, 199, 205, 208, 209, 212, 215, 223, [226a], 228, 232, 233, 235a, 236
+imittum
+right side, the right
+257
+ina
+in, on, by, from
+27, 40, 44, 46, 52, 58, 60, 79, 122, 134, 144, 148, 161, 183, 206, 209, 210, 213, 215, 218, 221, 224, 225, 226b, 228, 259, 265a, 265d, 272, [274], [275], 290, 299, 302, 305, 355, [356], [358a], 359, 377, 383, 392, 398, 401, 410
+inanna
+now
+247
+īnum (IGI)
+eye
+269
+inūma, enūma (UD)
+when, at the time of
+1, 235a, 301, 416c
+Ipiq-Aya (SIG.dA.A))
+PN
+416e
+irtum I (GABA)
+breast, chest
+272, 416h
+išātum
+fire
+64, 65
+Išḫara
+DN
+304
+isqum
+lot, share, prebend
+12
+Ištar
+DN, SN
+302, 304
+ištarum
+goddess
+379, 394, [406]
+ištēn (DIŠ)
+one, single, the first one, first
+110g, 173, 208
+išti
+with
+170, 201
+ištum, ultu
+from, out of, since, after
+231, 255, [370]
+išûm (v.)
+to have
+47, 223
+itti
+with
+152, 165, [170], 200, 201, 366, 367
+ittum
+sign, portent
+216, 217, 229
+izuzzum (v.) (GUB)
+G to stand; Gtn iter. of G; Š cause to be present, appoint
+88, 90, 123, 135, 156
+kabāsum (v.)
+to tread
+252
+kabātum (v.)
+G to be(come) heavy, D make heavy, aggravate, treat honorably
+265c, 295, 358
+kabtum
+heavy, important, extensive, honorable
+4, 40a, 42, 56, 150, [163], 177, 179, 240
+kadrûm, kedrûm, katrû
+present, greeting gift
+383, 398, 410
+kakkum (GIŠ.TUKUL)
+stick, weapon, battle
+84, 88, 90, 121, 133
+kalakkum
+excavation, trench
+40, 148, 161
+Kalkal
+DN
+74, 76
+kalûm II (DÙ.A.BI)
+all, totality, everything
+33, 122, 134, 151, 164, 202, 232
+kamāsum II (v.)
+G to kneel, squat down
+123, 135
+karābum (v.)
+to pray, bless
+287, 382a
+karāṣum (v.)
+G to break off, pinch off
+256
+karṣum (cf. ākil karṣim)
+slander
+39, 176, [369b], [369d]
+kašādum (v.)
+to reach, arrive, accomplish, conquer
+416i
+kerṣum, kirṣum
+pinched-off piece, lump
+256, 257, 258
+kīma
+like, when, as, that
+235a, 361, 362, [363e]
+kippatum
+circle, hoop, ring
+[30]
+kirûm (GIŠ.KIRI6)
+orchard, plantation
+31, 275
+kītum, kittum
+a reed mat
+298
+kullatum
+totality, all
+146, 151, 158, 159, 164
+kullulum II (v.)
+D to veil, cover
+260f, 260g
+kullum III (v.)
+to hold, hold back, cover
+380
+kuzbum
+attractiveness, (sex) appeal
+270
+lā
+not
+200, 217, 230, 356, 359
+labārum (v.)
+to be(come) old, long-lasting
+55
+labīrum
+old, former, original
+235a
+labīrūtum
+old age
+49
+lagā'um, lagûm
+scale, dirt, slag
+336
+lapātum (v.)
+to touch, take hold of, (Š) ruin, destroy, plunder
+75
+lawûm
+besieged, encircled
+71, 73, 80, 82, 114
+lawûm, lamû (v.)
+G to surround, besiege, encircle, wrap up; Š encircle, walk around
+37a
+lemnum (ḪUL)
+evil, bad; evil person, enemy
+53
+leqûm (v.)
+to take
+88, 90, 110d, 121, 132, 133, 153, [171], 270, 385
+lētum
+cheek, side
+11, 274
+lī'um
+bull
+[354]
+libittum (SIG4)
+brick, mudbrick
+159, 265b, 288, 294
+lū
+let it be, or, verily
+110b, 248
+lullûm
+primeval man
+182, 184, 191
+luṭûm
+a dagger
+260
+mādum
+many, numerous
+4, 40b, 150, 156, 163, 177
+mâdum (v.)
+to be(come) many, numerous
+353
+maḫārum (v.)
+to face, confront, oppose, receive
+41
+maḫāṣum (v.)
+to beat, weave, strike
+49, [117], 152, 165
+maḫrûm
+first, former, earlier
+224, [414]
+maḫrum II
+front, presence
+52, 88, 90, [98], 100, 172, 252, 254, 260g, [349]
+mālikum
+adviser, counsellor
+8, 43, 45, 57, 59, 125, 137
+Mami
+DN
+[181], 189, 198, 235, 246, 250, 265, 265c, 296
+mannum
+who
+128, 129, 130, 140, 141, 142
+manûm (v.)
+to count, calculate, recite
+254, 254a, 255, 279
+marrum II
+shovel, spade
+65, 337
+mārum (DUMU)
+boy, son, descendant
+94, 96, 330, 357
+maṣḫatum
+a kind of flour
+382, 397, 409
+maṣṣartum
+observation, guard, watch
+70, 72
+mašûm II (v.)
+to forget
+217, 230
+mati
+when?
+370
+mātum (KUR; KALAM)
+land, country
+22, 24, 30, 37b, 353, [354], 369b, 369d, 377, 392
+mayyālum
+bed, resting place
+79
+meḫûm
+storm
+362, 363e
+mīnum
+what
+109, 176
+mišlum
+half, middle, centre
+70, 72
+miššum, mīnšum
+why?
+94, 96
+miṭirtum
+watercourse, canal, irrigated field, orchard
+22, 24
+mūdûm
+knowing, wise
+[167a], [168], 260a
+murṣum (TU.RA)
+illness, sorrow, distress
+363, [363f], 371
+mūšum (GI6)
+night(-time)
+38, 70, 72, [79], 329
+mutum
+husband; man, warrior
+276
+mutūtum
+status of a husband, husbandhood, manliness, bravery
+[295a], 301
+nabalkutum (v.)
+to cross over, revolt, defect
+145
+nabûm (v.)
+to name, nominate, decree
+296, 304, 306
+nadānum (v.) (SUM)
+G to give, bestow
+16, 135, [156], 203
+nadûm III (v.)
+G to throw (down), lay down, cast, put, implement, N to be thrown away, laid down, rejected; Š caus. of G
+12, 64, 173, 234, 253, 255a, 259, 265b, 288, 294, 298, 299
+nagbum
+underground water
+27
+nāgirum
+(town) crier, herald
+376, 391
+naḫbalum
+trap
+15
+nakāsum (v.)
+to cut, fell, slaughter
+67
+namāšum (v.)
+G to set (o.s.) in motion, start out
+156
+Namtar
+DN
+361, 363a, 363d, 380, 401, [407], 412
+napḫarum (ŠU.NIGIN; PAP)
+total, sum, (the) whole, entirety
+158
+napištum (ZI)
+throat, life
+22, 24
+naqûm (v.)
+to pour a libation, sacrifice
+52
+nārum I (ÍD)
+river, watercourse, canal
+21, 23, 25
+nasākum (v.)
+G to throw down, disregard
+42, 240
+našāqum (v.)
+to kiss
+245
+nāšûm
+bearing, bearer
+333
+nâšum (v.)
+to rock, shift
+44, 46, 58, 60, 183, 187, 197, 269
+naṭûm I
+suitable, suited
+200
+nawārum, namāru (v.)
+G to be(come) bright, shine; D make bright; Š cause to shine; ŠD lighten, gladen
+415
+nawrum, namru
+bright, shining
+283
+nazāmum (v.)
+to moan, complain
+40, 369a, 369c
+nēpešum
+activity, procedure, ritual
+64
+nêrum (v.)
+G to strike, kill; D strike, smite, slay
+41
+nesûm (v.)
+to be distant, withdraw
+413a
+Nintu
+DN
+198, 211, 226, 278, 295
+Ninurta
+DN
+9, 126, 138
+nīqum (UDU.SÍSKUR)
+offering, sacrifice
+382, [397], [409]
+nīrum
+yoke, crossbeam; "yoke-star"
+55
+Nisa(n)num
+offering (of first fruits), MN
+416f
+niššīkum, naššīkum
+a title of Ea, prince
+16, 250, [261]
+nišū (UN.MEŠ)
+people, humanity, population
+265, 339, 353
+Nuska
+DN
+[76], 78, 86, 87, 89, 91, 115, 119, 120, 132, 153
+paḫārum (v.)
+to gather
+114, 251, 277, 375, 386
+palāḫum (v.)
+to fear, revere
+378, 405
+palûm (BALA)
+period of office, reign, a staff, rod
+282
+pāna
+before
+246
+pānum I (IGI)
+front, face, earlier times
+283
+pāqidum
+carer, supervisor
+220
+parṣum
+office, (cultic) ordinance
+171, 173, 380
+pašārum (v.)
+to release, free, (N) to become reconciled, forgive
+135, 157
+paṭārum (v.)
+to loosen, release, uncover, clear away, (N) be loosened, cleared away
+243
+petûm I
+open (in: lā petītum, not open, unmated)
+365
+petûm II (v.)
+G to open, expose; Š to cause to open
+120, 133, 260, 282, 416h
+puḫrum
+assembly, gathering, army
+121, 122, 133, 134, 144, 147, 161, 213, 218, 224, 226b, 356a
+pûm I (KA)
+mouth, statement, command, opening
+47, 85, 91, 105, 111, 118, 131a, 152, 165, 174, 198, 204, 235, 368, 372, 387
+Purattum
+GN
+26
+qablum I
+hips, middle
+37a, 286
+qablum II (ŠEN.ŠEN)
+battle, fight
+81, 83, 110, 128, 131, 140, 143
+qabûm (v.) (DUG4)
+G to say, speak, command
+118, 123, 154, 237, 244, 360, 360a, 363c, 372, [376], 403
+qadištum, qašdatum
+priestess (kind of)
+290
+qadûm
+owl
+239, 243a
+qaqqadum, kaqqadum (SAG; SAG.KI)
+head, beginning, capital
+284
+qātum (ŠU)
+hand
+11, 171, 289, 384, 399, 411, 416e, 416h, 416i
+qēmum
+flour
+288
+qerbum
+center, interior
+31, 209, 375
+qudmum
+front (side)
+381, 396, 408
+qurādum
+hero, warrior
+8, 43, 45, 57, 59, 69, 92, 112, 125, 137, 169
+rabûm (GAL) I
+big
+3, 5, 35, 103, 106, 134, 144c, 157, 199, 205, 219, 232, 233, 236, 338, 357
+ramānum
+self
+94, 96, 265f, 293
+rapāšum (v.)
+to be(come) broad, expand
+353
+râṣum (v.)
+to rush (to help)
+81, 83, 110, 131, 143
+redûm I (v.)
+G to accompany, lead, drive, proceed; Gtn to accompany constantly, lead
+84
+rēmum
+womb, compassion
+[351]
+rēšum (SAG)
+head; beginning; slave
+32
+riāqum (v.)
+to be empty
+19
+rigmum
+voice, cry, noise
+77, 179, 242, 355, 356, 258, 358a, 361, 363d, 377, [404], 414
+rimkum
+bath
+207, 222
+rīqum II (//še-em)
+aromatic substance
+52
+ru'tum, rūtum
+spittle, saliva, sap
+234, 255a
+ša
+who(m), which, of
+34, 36, 47, 77, 108, 113, 130, 134, 142, [167], 223, 369d
+ṣabātum (v.) (DAB5)
+G to seize, take, hold
+356, 359
+šabsūtum, tabsūtum
+midwife
+189, 265d, 285, 290
+šadûm I (KUR; ḪUR.SAG)
+mountain, open country
+33
+šaḫādum (v.)
+to give, present
+242
+šakānum (v.) (GAR)
+G to put, place, lay down, Š make smb. place, establish, N be put, established
+28, 50, 51, 147, 161, 207, 222, [243], 257, 258, 303, 349, 356a, 384
+šaknum
+placed, deposited, governor
+[104]
+ṣalmum II (ALAN)
+figure, image, statue
+416h, 416i
+šâlum, ša'ālum (v.) I
+G to ask; Gt to consult
+188
+šamāmū
+heaven; heavens
+170
+šamnum (Ì; Ì.GIŠ)
+oil, fat, cream
+264
+šamû I (AN)
+sky, heaven
+13, 17, 19, 101, 170
+šanûm III (v.)
+G to do twice, do for a second time; D repeat, report
+123
+šapārum (v.)
+to send (a message), write to
+97, 99, 124, 136, 155
+šapattum (U4.15.KAM)
+15th day of the month, period of 15 days
+206, 221
+šapšāqum
+constraint, hardship
+4, 40b, 150, 163, 177
+šapûm II (v.)
+to be dense, thick; to (be)come loud
+354
+šār
+3600, indefinitely large number of years
+[416]
+šarrum (LUGAL; EN)
+king, lord
+7, 101, 102, 416g
+šassūrum, sassūrum
+womb
+181, 182, 190, 251, 260b, 260e, [262], [277], 295, 297
+šasûm (v.)
+to shout, call (out), summon
+61, 110g, 145, 158, 173, 188, 232, 246, 260a, 280, 376, [391], 403
+šaṭrum
+written (document)
+131a
+šattum (MU)
+year
+[36a], [36b], [36c], 37, 352, 416, 416g
+še'ûm (v.)
+G to seek, call on
+380, 407
+sebe
+seven
+5
+sebūtum
+seventh day (of month)
+206, 221
+ṣeḫērum (TUR) (v.)
+to be(come) small, young, little
+361
+ṣeḫrum I ((LÚ).TUR)
+little, young, junior-; small, child, servant, baby
+416e
+šemûm (v.)
+to hear, listen to smb./smth., obey, accept
+54, 63, 77, 157, [166], 179, 214, 227, 244, 400
+šēpum
+foot
+245
+ṣerrum
+snake
+265f, 292, 307, 351, 413b
+šī
+she
+253
+šībum
+old (person), elder
+374, 386, 388, 389, [400]
+šigarum
+(wooden) clamp, (neck-)stock, door lock, bolt
+15
+sikkūrum, šikkūrum (GIŠ.SAG.KUL)
+bar, bolt (as locking device)
+75
+silītum
+afterbirth, womb
+282
+simānum I
+(right) occasion, season
+305, 374, 389
+šīmtum (NAM)
+fate, what is fixed, destiny
+190, 220, 249, 260e, 280, 305
+šina II
+two
+[416]
+šinašan
+both of the two, each of the two
+260f, 260g
+sinništum (MUNUS)
+woman
+260d, 267
+šiprum
+sending, mission, work, craft
+180, 185, 186, 196, 201, [237]
+šiptum (ḖN; KAxUD)
+incantation, spell
+253, 254a, 255
+šīrum (UZU)
+flesh, body; entrails; kinsman, blood relative, meat; ominous sign
+210, 215, 225, 228
+šittum
+remnant, remainder
+[356], 359
+šū
+he, that
+17, 18, 19, 20, 202, 333, 364, 367
+šuāti, šâti
+him, her, it
+166, 231
+šubtum, šuptum
+seat, dwelling, abode, place
+44, 46, 58, 60, 84
+šukkallum, sukkallum
+minister, a court official
+86, 119
+šukkulum (v.)
+to wipe down, wipe out, pass one’s hand
+384, 399, [411]
+šuklulum (v.)
+Š to complete, make/do completely
+238
+ṣullûm (v.)
+to beseech, pray to
+379, 394, 406
+šulmum
+completeness, well-being, peace, greeting, good outcome
+[413], 416i
+šulûm
+street, lane, alley
+275
+šumēlum
+the left
+158
+šumum (MU)
+name, son, line of text
+248, 416d
+šunu
+they (m.)
+12, 39
+suppûm (v.)
+to pray, supplicate
+379
+surriš
+quickly, soon
+[361], [363d]
+šuruppûm
+frost, chills, shivers
+[360], 363, 363c, 363f, 371
+ṣuṣûm
+reed-thicket
+35
+ṭabāḫum (v.)
+to slaughter
+208, 224, 239, [243a]
+tabālum (v.)
+to take away, carry off
+171
+tāḫāzum (ME; ME6)
+battle, combat
+62, 108, 129, 141, 145a
+târum (v.) (GUR)
+G to turn, return, become again; D to bring, send, give, pay back
+154, 413
+tašīmtum
+discernment, sagacity, prudence, wisdom, judgement
+364
+ṭebûm (v.)
+to sink, submerge
+[79], 104, 107
+tēliltum
+purification
+207, 222
+ṭēmum
+(fore)thought, plan(ning), understanding, instruction
+47, 223, 239, 243a
+tenēštum, tanišētum
+people, humankind
+369a, 369c
+ṭepûm (v.)
+to extend, apply, add
+416h
+têrtum
+instruction, omen
+116, 123, 132, 135, 153, 156, 157, 385
+tiāmtum, tâmtum (A.AB.BA)
+sea, lake
+15
+ṭīdum, ṭiṭṭu
+clay, mud
+203, 211, 213, 226, 226b, 231, 234, [252], 255a, [263]
+tinūrum
+oven
+336
+tîtum
+nourishment
+339
+tukkum
+alarm, warning, slander
+179
+tulûm
+breast, pectorals
+[272]
+ṭuppum, tuppum (DUB)
+clay tablet, document, letter
+[235a], 416c
+ṭupšarrum, tupšarrum (DUB.SAR)
+scribe
+416e
+tupšikkum, šupšikkum
+brick-carrying frame, earth basket
+2, 3, 34, 36, 36a, 36b, 36c, 37, 40a, 66, 149, [162], 183, 187, 197, 241
+tuqumtum, tuqmatum
+battle, fight
+61, 130, 142, 146, 160
+u
+and
+10, [26], 38, 56, 127, 137, 139, 151, [164], [167], 206, 210, 212, 221, 225, 226a, 260b, 275, 288, [295a], 301, 364, 367, 413a, 416i
+ul
+not
+71, 73, 416
+ula
+not
+52
+ūmišam
+daily
+178
+umma
+saying
+124
+ummum
+mother
+265f, 292
+ūmum I (UD)
+day, daily
+214, 241a, 265b, 294, 295a, 302, [413], 416f
+unnīnum, unnēnum
+supplication, petition
+54
+uppum II
+(a type of) drum
+214
+urīṣum (MÁŠ)
+male goat
+416h
+urrum
+daytime
+38
+uṣurtum, eṣertum
+draft, drawing, ordinance
+265
+wabālum (v.)
+to carry, bring, (Š) send, deliver
+2, 152, [165], 185, 186, 191, 196, 381
+walādum (v.)
+G to give birth
+236b, 265e, 291, 350a
+wālittum
+one who gives/has given/is about to give birth
+265a, 265e, 291
+wapûm (v.)
+to be(come) visible, appear, (Š) make manifest, proclaim
+214, 227, 377, 392, 404
+waqûm (v.)
+G to wait, Dt wait, await, expect, to wait attentively
+74, 102
+warādum (v.)
+to go down
+18, 97, [99]
+wardatum (KI.SIKIL)
+girl, young woman
+267, 268, 269, 270
+wardum (SAG.ÌR; ÌR)
+slave, servant
+373
+warḫum (ITI)
+the moon, (day of) new moon, first day of month
+206, 221, 279, 280, 281, 416f
+warki
+after, behind
+26
+wašābum (v.)
+to sit (down), dwell
+39, 110e, 110f, 254, 332
+wašbum
+inhabitant, resident, present
+101, 103, 172, 181, [278]
+waṣûm (v.)
+to go out
+115, 121, 133
+watmanum, aṭmanum
+cella, inner sanctum, temple
+69
+watrum
+huge
+37, 162
+Wê, Ê
+DN
+47, 223
+yâšim, ayyâšim
+to, for me
+107
+zabālum (v.)
+to carry, deliver
+2, 6, 20, 36a, 36b, 36c, 37
+zakārum, saqārum (v.)
+to speak, say, name, mention; talk; swear
+48, 86, 92, 106, 112, 119, 146, 160, 167b, 169, 175, 199, 205, 236, 253b, 357, 369, 373, 388
+zakûm (v.)
+to be(come) clear, pure, D cleanse, purify
+329
+zâzum (v.)
+to divide, get a share
+12, 38
+zīaqum (v.)
+G to blow, waft, gust
+362, [363], 363e
+zikarum, zikrum (NITA)
+male, virile; man
+260c, 266
+zikrum, siqrum
+utterance, name; mention of the name; reputation
+63, 113, [400]
+zīmum
+face, appearance
+[415]
+ziqnum
+beard
+273
+zunnum (//im)
+rain
+359
+Signs in text
+4933
+Words in text
+2358
+Sumerograms in text
+855
+% of Sum. in text
+36
+Lines in text
+448
+Average signs per line in text
+11.06
+SD of signs per line
+3.50
+Revision History
+Hess, Christian W.
+Catalogue
+01/01/12
+Streck, Michael P.
+Catalogue
+28/10/13
+Wasserman, Nathan
+Edition, translation, commentary
+29/12/24
+Streck, Michael P.
+Edition, translation, commentary
+29/12/24
+Wasserman, Nathan
+Formatting
+29/12/24
+Bloch, Yigal
+Formatting
+29/12/24
+Bloch, Yigal
+Lemmatization
+10/02/25
+Sources of Early Akkadian Literature
+Prof. Dr. M. P. Streck
+|
+Prof. Dr. N. Wasserman
+Funded by the German Israeli Foundation for Scientific Research and Development (G.I.F.)
+Research Grant Agreements Nos. I-890-183.4/2005 and 1022/2008
+The Authority for Research and Development, The Hebrew University
+Deutsche Forschungsgemeinschaft (Mercator Gastprofessur an der Universität Leipzig, Prof. Dr. Nathan Wasserman)
+Privacy policy
+Prof. Dr. M. P. Streck
+|
+Prof. Dr. N. Wasserman
+Institute of Archaeology, The Hebrew University of Jerusalem
+Copyright
+|
+                    Last update:07/10/2026 | 
+                    Site built by
+Hagit Bagno
+{"path":{"baseUrl":"\/index.php\/","pathPrefix":"","currentPath":"node\/1515","currentPathIsAdmin":false,"isFront":false,"currentLanguage":"en"},"pluralDelimiter":"\u0003","suppressDeprecationErrors":true,"google_analytics":{"account":"G-1MC96MC15Z","trackTel":true,"trackDownload":true,"trackDownloadExtensions":"7z|aac|arc|arj|asf|asx|avi|bin|csv|doc(x|m)?|dot(x|m)?|exe|flv|gif|gz|gzip|hqx|jar|jpe?g|js|mp(2|3|4|e?g)|mov(ie)?|msi|msp|pdf|phps|png|ppt(x|m)?|pot(x|m)?|pps(x|m)?|ppam|sld(x|m)?|thmx|qtm?|ra(m|r)?|sea|sit|tar|tgz|torrent|txt|wav|wma|wmv|wpd|xls(x|m|b)?|xlt(x|m)|xlam|xml|z|zip","trackColorbox":true},"collapsiblock":{"active_pages":false,"slide_speed":200,"cookie_lifetime":null,"switcher_enabled":null,"switcher_class":null},"bootstrap":{"forms_has_error_value_toggle":1,"modal_animation":1,"modal_backdrop":"static","modal_focus_input":1,"modal_keyboard":1,"modal_select_text":1,"modal_show":1,"modal_size":"","tooltip_enabled":1,"tooltip_animation":1,"tooltip_container":"body","tooltip_delay":"0","tooltip_html":0,"tooltip_placement":"auto left","tooltip_selector":"","tooltip_trigger":"hover"},"stayOpen":false,"interactiveParentMenu":true,"ajaxTrustedUrl":{"\/search\/node":true},"user":{"uid":0,"permissionsHash":"cec222b0fb8215a4c0592220c4f62494a0249f14a7b0f725228bf752a1566989"}}

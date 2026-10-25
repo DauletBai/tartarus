@@ -1,0 +1,12 @@
+{
+  "reference": "CylinderA ii16 = Q000377.45, CDLI composite linear45",
+  "ETCSRI": "nin₉-zu dumu eridug{ki}-ge tud-da",
+  "CDLI": "nin9-zu dumu eridu{ki}-ge tu-da",
+  "ETCSRI_gdl": [
+    "TU",
+    "DA"
+  ],
+  "meaning_layer": "Both editorial treatments connect line with birth. This is agreement between editorial models, not independent recovery.",
+  "phonetic_limit": "Choice TU as tu versus tud is a reading decision; difference is not evidence of historical loss of final d.",
+  "identity_limit": "P431881 is a composite; P232301 is MNB1511 physical CylinderA. Q000377 contains both cylinders; its metadata lists multiple IDs."
+}

@@ -1,0 +1,123 @@
+
+<!DOCTYPE html>
+<html lang="en" dir="ltr" prefix="og: http://ogp.me/ns#">
+<head>
+    <meta charset="utf-8">    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+        Lineart of P222402 - Cuneiform Digital Library Initiative    </title>
+
+            <meta name="twitter:card" content="summary">
+    
+    <meta property="og:title" content="Lineart of P222402" />
+    <meta property="og:url" content="https://cdli.earth/artifacts/222402/reader/42698" />
+    <meta property="og:site_name" content="CDLI">
+    <meta name="twitter:site" content="@cdli_news">
+
+    
+    
+    <link href="/favicon.ico" type="image/x-icon" rel="icon"><link href="/favicon.ico" type="image/x-icon" rel="shortcut icon">
+    <link rel="alternate" href="/artifacts/222402/reader/42698" hreflang="en" type="text/html"><link rel="alternate" href="/ar/artifacts/222402/reader/42698" hreflang="ar" type="text/html">
+            <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">        <link rel="stylesheet" href="/assets/css/main.css">    <link rel="stylesheet" href="/assets/css/font-awesome/css/font-awesome.min.css">    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>    <script src="/assets/js/jquery.min.js"></script>    <script src="/assets/js/js.js"></script>    <script src="/assets/js/drawer.js" defer="defer"></script>        <script src="/assets/js/matomo.js"></script></head>
+<body>
+    
+<div class="d-md-flex text-start lineart">
+    <div id="reader-viewer-container" class="position-relative">
+        <div id="viewer" class="text-center" style="background: black; height: 100vh;">
+    <p id="viewer-links">
+        <span class="py-1 px-3">
+            <a href="/dl/lineart/P222402_l.jpg" target="_blank" class="text-white">Open image <span class="fa fa-external-link"></span></a>
+                    </span>
+    </p>
+
+    <noscript>
+        <img src="/dl/lineart/P222402_l.jpg" style="max-height: 100%; max-width: 100%;">
+    </noscript>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/openseadragon@6.0.1/build/openseadragon/openseadragon.min.js" integrity="sha512-eDBJUqlHc4ZYlvBDBc4X+WIPi/1julZWKdYwIFyxW18VwzewdWPk/MEGjEijAlgUMLvGZAiGBnxdM1i0ycO83w==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script type="text/javascript">
+$(function() {
+    var overlay = $('#viewer-links span').get(0)
+    $('#viewer-links').remove()
+
+    var viewer = OpenSeadragon({
+        id: 'viewer',
+
+        // Location of UI images
+        prefixUrl: 'https://cdn.jsdelivr.net/npm/openseadragon@6.0.1/build/openseadragon/images/',
+
+        // Show navigator in top right
+        showNavigator: true,
+        navigatorPosition:   "BOTTOM_LEFT",
+        navigatorSizeRatio: 0.2,
+
+        // Show more controls
+        showFlipControl: true,
+        showRotationControl: true,
+
+        // Load image
+        preserveImageSizeOnResize: true,
+        tileSources: {
+            type: 'image',
+            url: "\/dl\/lineart\/P222402_l.jpg"        }
+    })
+
+    viewer.addControl(overlay, { anchor: OpenSeadragon.ControlAnchor.TOP_RIGHT })
+
+    // Zoom to top center of image
+    function setZoom () {
+        var zoom = viewer.viewport.imageToViewportZoom(1)
+        if (zoom < 1) {
+            viewer.viewport.zoomTo(zoom, null, true)
+            viewer.viewport.defaultZoomLevel = zoom
+            viewer.viewport.minZoomLevel = zoom
+        } else {
+            var bounds = viewer.viewport.getHomeBounds()
+            var aspect = viewer.viewport.getAspectRatio()
+            viewer.viewport.fitBoundsWithConstraints(new OpenSeadragon.Rect(
+                bounds.x,
+                bounds.y,
+                bounds.width,
+                Math.min(bounds.width / aspect, bounds.height)
+            ), true)
+        }
+    }
+    viewer.addHandler('tile-loaded', setZoom)
+    viewer.addHandler('resize', setZoom)
+})
+</script>
+
+        <button class="btn text-white bg-dark d-none d-md-block position-absolute" type="button" data-bs-toggle="collapse" data-bs-target="#reader-info" aria-expanded="false" aria-controls="reader-info">
+            <span class="fa fa-chevron-right" aria-hidden="true"></span>
+            <span class="visually-hidden">Toggle sidebar</span>
+        </button>
+    </div>
+
+    <div class="collapse show text-light bg-dark p-3" id="reader-info">
+        <h2 class="h4">
+            <a href="/artifacts/222402" class="text-white">RIME 1.09.03.06, ex. 01 (P222402)</a>        </h2>
+        <p>Official or display artifact excavated in Girsu (mod. Tello), dated to the ED IIIb (ca. 2500-2340 BC) period and now kept in Eski Şark Eserleri Müzesi, Arkeoloji Müzeleri, Istanbul, Turkey</p>
+        <p>
+            Image            
+&copy; <a href="/terms-of-use" target="_blank">[see publications]</a>
+
+        </p>
+
+        <p>
+                                </p>
+                    <h3>Transliteration</h3>
+                        <div class="d-flex flex-wrap align-items-start gap-2 mb-2">
+                                                    </div>
+            <div class="border p-3" style="height: 100vh; overflow-y: auto;">
+                <b>object boulder </b><br><b>surface a </b><br><b>column 1 </b><br>1. {d}nansze <br>2. e2-an-na-tum2-me <br>3. bad3 lagasz{ki} <br>4. mu-na-du3 <br>5. ka mu-na!-kesz2 <br>6. {d}nin-gir2-su2-ra <br>7. e2-an-na-tum2 <br>8. ensi2 <br>9. lagasz{ki}-ke4 <br>10. mu pa3-da <br>11. {d}en-lil2-ke4 <br><b>column 2 </b><br>1. a2 szum2-ma <br>2. {d}nin-gir2-su2-ka-ke4 <br>3. sza3 pa3-da <br>4. {d}nansze-ke4 <br>5. ga zi gu7-a <br>6. {d}nin-hur-sag-ka-ke4 <br>7. mu du10 sa4-a <br>8. {d}inanna-ka-ke4 <br>9. gesztu2 szum2-ma <br>10. {d}en-ki-ke4 <br>11. ki-ag2 <br>12. {d}dumu-zi-abzu-ke4 <br>13. geszkim-ti <br>14. {d}hendur-sag-ka-ke4 <br>15. dumu a-kur-gal <br><b>column 3 </b><br>1. ensi2 <br>2. lagasz{ki}-ke4 <br>3. {d}nin-gir2-su2#-ra <br>4. gir2-su2!{ki} <br>5. ki-be2 mu-na-gi4 <br>6. bad3 iri#-ku3-ga <br>7. mu-na-du3 <br>8. {d}nansze <br>9. NINA{ki} <br>10. mu-na!-du3 <br>11. e2-an-na-tum2-e <br>12. elam hur-sag u6-ga <br>13. |GIN2.SZE3| be2-se3 <br>14. |ISZ.DU6.KID2|-bi# <br>15. mu-dub <br>16. szu-nir uru18{ki}-ka <br>18. ensi2-be2 sag-ba mu-gen BA# <br>19. |GIN2.SZE3| be2-se3 <br>20. |ISZ.DU6.KID2|-bi# <br><b>column 4 </b><br>1. mu-dub <br>2. umma{ki} <br>3. |GIN2.SZE3| be2-se3 <br>4. |ISZ.DU6.KID2|-bi 2(u@c) <br>5. mu-dub <br>6. {d}nin-gir2-su2!-ra <br>7. a-sza3 ki-ag2-ni <br>8. gu2-edin-na <br>9. szu#-na mu#-ni-gi4 <br>10. unu{ki} <br>11. |GIN2.SZE3| be2-se3 <br>12. uri2{ki} <br>13. |GIN2.SZE3| be2-se3 <br>14. ki-{d}utu <br>15. |GIN2.SZE3| be2-se3 <br>16. iri-az{ki} <br>17. mu-hul <br>18. ensi2-bi <br>19. mu-ug7 <br><b>column 5 </b><br>1. mi-szi-me{ki} <br>2. mu-hul <br>3. a-ru2-a{ki} <br>4. mu-ha-lam <br>5. e2-an-na-tum2 <br>6. mu pa3-da <br>7. {d}nin-gir2-su2-ka-da <br>8. kur-kur-re2 <br>9. sag e-dab6-sag3 <br>10. mu lugal akszak[{ki}-ka] <br>11. i3-[zi-ga-a] <br>12. e2-[an-na-tum2] <br>13. mu# [pa3-da] <br>14. {d}[nin]-gir2-[su2]-ka-ke4# <br><b>column 6 </b><br>1. an-ta#-sur-[ra] <br>2. {d}[nin]-gir2-su2!-ka-ta <br>3. akszak{ki}-sze3!(TUG2) <br>4. mu-gaz <br>5. mu-ha-lam <br>6. u4-ba# <br>7. e2-an-na-tum2-e <br>8. i7 gibil <br>9. mu-na-dun <br>10. a# [...] <br>11. [...]  <br>12. [...]  <br><b>column 7 </b><br>1. [...] <br>2. {d}nin-gir2-su2!-ka <br>3. dingir-ra-ni <br>4. {d}szul#-[|MUSZxPA|] <br>5. e2-[an]-na-[tum2] <br>6. ensi2# <br>7. [lagasz{ki}] <br>8. [dumu a]-kur-[gal] <br>9. [ensi2] <br>10. [lagasz{ki}] <br>11. [pa-bil3-ga-ni] <br>12. [ur-{d}nansze] <br>13. [ensi2] <br>14. [lagasz{ki}-kam] <br>            </div>
+            </div>
+</div>
+
+        <script>
+        $(document).ready(function() {
+            $('header .no-js-dd').removeClass('no-js-dd');
+        });
+    </script>
+    </body>
+</html>

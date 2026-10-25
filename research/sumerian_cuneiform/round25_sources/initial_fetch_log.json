@@ -1,0 +1,26 @@
+[
+  {
+    "file": "GABA_lexical.html",
+    "url": "https://oracc2.museum.upenn.edu/osl/signlist/selpages/o0000190-lex.html",
+    "returncode": 60,
+    "error": "curl: (60) SSL: no alternative certificate subject name matches target host name 'oracc2.museum.upenn.edu'\nMore details here: https://curl.se/docs/sslcerts.html\n\ncurl failed to verify the legitimacy o"
+  },
+  {
+    "file": "Ea_series_Q000145.html",
+    "url": "https://oracc2.museum.upenn.edu/dcclt/signlists/Q000145",
+    "returncode": 60,
+    "error": "curl: (60) SSL: no alternative certificate subject name matches target host name 'oracc2.museum.upenn.edu'\nMore details here: https://curl.se/docs/sslcerts.html\n\ncurl failed to verify the legitimacy o"
+  },
+  {
+    "file": "P240227_oracc.html",
+    "url": "https://oracc.museum.upenn.edu/dcclt/P240227",
+    "returncode": 0,
+    "error": ""
+  },
+  {
+    "file": "PBS116_search.html",
+    "url": "https://cdli.earth/search?publication=PBST%205%2C%20116&limit=20",
+    "returncode": 0,
+    "error": ""
+  }
+]

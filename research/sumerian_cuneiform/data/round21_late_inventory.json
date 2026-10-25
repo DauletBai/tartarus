@@ -1,0 +1,29 @@
+[
+  {
+    "code": "late-W01",
+    "status": "candidate_configuration_with_count_variants",
+    "definition": "Stacked near-horizontal traces and side-standing member; two clear versus three clear retained separately",
+    "sound": null,
+    "syllable": null,
+    "meaning": null,
+    "minimal_graphic_unit_proven": false
+  },
+  {
+    "code": "late-W02",
+    "status": "candidate_configuration_family",
+    "definition": "Fan-like perimeter and several interior short traces; contact variants not collapsed",
+    "sound": null,
+    "syllable": null,
+    "meaning": null,
+    "minimal_graphic_unit_proven": false
+  },
+  {
+    "code": "late-BUNDLE",
+    "status": "control_pattern_only",
+    "definition": "Bare short parallel traces, where foreground/background/border attribution is unresolved",
+    "sound": null,
+    "syllable": null,
+    "meaning": null,
+    "minimal_graphic_unit_proven": false
+  }
+]

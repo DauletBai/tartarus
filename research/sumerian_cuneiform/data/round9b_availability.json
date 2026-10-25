@@ -1,0 +1,29 @@
+[
+  {
+    "artifact": "P226887",
+    "image_readers": [
+      "/artifacts/226887/reader/44604"
+    ],
+    "no_image_flag": false
+  },
+  {
+    "artifact": "P226912",
+    "image_readers": [],
+    "no_image_flag": true
+  },
+  {
+    "artifact": "P342808",
+    "image_readers": [
+      "/artifacts/342808/reader/168600",
+      "/artifacts/342808/reader/63182"
+    ],
+    "no_image_flag": false
+  },
+  {
+    "artifact": "P499399",
+    "image_readers": [
+      "/artifacts/499399/reader/217954"
+    ],
+    "no_image_flag": false
+  }
+]

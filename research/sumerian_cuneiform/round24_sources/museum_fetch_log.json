@@ -1,0 +1,32 @@
+[
+  {
+    "file": "Adda_card.html",
+    "url": "https://www.britishmuseum.org/collection/object/W_1891-0509-2553",
+    "returncode": 56,
+    "error": "curl: (56) The requested URL returned error: 403\n"
+  },
+  {
+    "file": "AdamEve_card.html",
+    "url": "https://www.britishmuseum.org/collection/object/W_1846-0523-347",
+    "returncode": 56,
+    "error": "curl: (56) The requested URL returned error: 403\n"
+  },
+  {
+    "file": "StandardUr_card.html",
+    "url": "https://www.britishmuseum.org/collection/object/W_1928-1010-3",
+    "returncode": 56,
+    "error": "curl: (56) The requested URL returned error: 403\n"
+  },
+  {
+    "file": "Apkallu_Met.json",
+    "url": "https://collectionapi.metmuseum.org/public/collection/v1/objects/322614",
+    "returncode": 0,
+    "error": ""
+  },
+  {
+    "file": "Apkallu_card.html",
+    "url": "https://www.metmuseum.org/art/collection/search/322614",
+    "returncode": 56,
+    "error": "curl: (56) The requested URL returned error: 429\n"
+  }
+]

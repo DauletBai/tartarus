@@ -1,0 +1,20 @@
+{
+  "date": "2026-10-25",
+  "stage": "round12",
+  "question": "What segmentation and repetition can be established on original images before assigning Latin readings or a modern-language meaning?",
+  "selected_object": "MMA1988.433.2 / Met327384, linked CDLI number P005390 requires later verification",
+  "selection_reason": "A new photographed early tablet with public institutional images and reported multiple views; selected for image access, not a match to a Kazakh word.",
+  "prior_exposure": "Museum/search title and general attribution to grain account already seen; no individual transliteration read. Thus graph-first, not semantically blind. Model prior knowledge cannot be erased.",
+  "no_circularity": [
+    "Do not use ama/adda as raw facts: distinguish physical impression, tentative graph, sign-list identification, proposed sound, proposed meaning, and historical etymology.",
+    "Assign neutral IDs to tentative repeated complexes and record pixel boxes; uncertain sign boundaries remain uncertain.",
+    "No synthetic completion, rotation or contrast change unless recorded. Native crops allowed.",
+    "Do not infer a sound from resemblance to a Kazakh word; external phonetic constraints must be explicitly identified as evidence or hypotheses."
+  ],
+  "quality_gate": "At least six individually distinguishable impressions or complexes, distinct strokes on native image, and visible cell boundaries; otherwise unresolved.",
+  "sampling": "First front image in official Met API; then first distinct additional image in API order. Save all available image URLs and metadata, do not select by matching content.",
+  "prediction": "An account-like graphic model predicts recurring nonnumerically-assigned graphic complexes with variable impression bundles in segregated cells. Competing explanations include labels, personal names, fixed headings, seal impressions and decorative marks.",
+  "freeze": "Record native observations and hashes before opening this object individual editorial rows.",
+  "separate_target_audit": "Existing P232300 photo may be audited as source for the previously discussed ama/adda candidates. Its readings are already known; no blind claim and no transfer of its catalogue labels to unreadable wedges.",
+  "scope": "One new object at most two official views plus a clearly separated audit of an existing image; no independent full phonetic decipherment promised."
+}

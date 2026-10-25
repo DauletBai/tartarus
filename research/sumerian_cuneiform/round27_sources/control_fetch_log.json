@@ -1,0 +1,21 @@
+[
+  {
+    "file": "P226718_card.html",
+    "url": "https://cdli.earth/artifacts/226718",
+    "status": 200,
+    "content_type": "text/html; charset=UTF-8",
+    "bytes": 75130
+  },
+  {
+    "file": "BM91148_eBL.json",
+    "url": "https://www.ebl.lmu.de/api/fragments/BM.91148",
+    "status": 200,
+    "content_type": "application/json",
+    "bytes": 2338
+  },
+  {
+    "file": "BM91148_photo.jpg",
+    "url": "https://www.ebl.lmu.de/api/fragments/BM.91148/photo",
+    "error": "HTTP Error 404: Not Found"
+  }
+]

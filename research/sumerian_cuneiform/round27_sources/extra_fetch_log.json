@@ -1,0 +1,16 @@
+[
+  {
+    "file": "PTS1502_photo.jpg",
+    "url": "https://cdli.earth/dl/photo/P431422.jpg",
+    "status": 200,
+    "content_type": "image/jpeg",
+    "bytes": 1697509
+  },
+  {
+    "file": "YOS1_commons_page.html",
+    "url": "https://commons.wikimedia.org/wiki/File:Miscellaneous_inscriptions_in_the_Yale_Babylonian_collection_(IA_miscellaneousins00clay).pdf",
+    "status": 200,
+    "content_type": "text/html; charset=UTF-8",
+    "bytes": 110521
+  }
+]

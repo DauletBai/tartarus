@@ -1,0 +1,8 @@
+cohort,artifact,image_type,reader_count,individual_text_exposed,selected,visual_outcome
+round9,P226422,no_image_in_card,0,False,False,unavailable
+round9,P226524,no_image_in_card,0,False,False,unavailable
+round9,P226526,no_image_in_card,0,False,False,unavailable
+round9b,P226887,drawing_only,1,False,False,not_inspected
+round9b,P226912,no_image_in_card,0,False,False,unavailable
+round9b,P342808,photograph,2,True,True,unresolvable
+round9b,P499399,photograph,1,False,False,not_inspected

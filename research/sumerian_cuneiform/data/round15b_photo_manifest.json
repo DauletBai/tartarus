@@ -1,0 +1,39 @@
+{
+  "date": "2026-10-25",
+  "original_pdf": "sources/Hallock_1940_Chicago_Syllabary_AS7.pdf",
+  "pdf_sha256": "f62407d3d7e65b444f6dde655c87d67f5891bf0dc6bf90218c862047cf69a96b",
+  "native_photo_extractions": [
+    {
+      "file": "data/round15b_AS7_photoplates_native-000.png",
+      "pdf_page": 96,
+      "plate": "I",
+      "width": 2621,
+      "height": 3487,
+      "sha256": "2913a174077c16eae0b128e133a8a580490683f39a5e91744f3231ff4c606322",
+      "method": "pdfimages -png; embedded scanned full page, not synthetic detail"
+    },
+    {
+      "file": "data/round15b_AS7_photoplates_native-001.png",
+      "pdf_page": 97,
+      "plate": "II",
+      "width": 2612,
+      "height": 3509,
+      "sha256": "2b72d75fefd6353cda7e1feb17be9abb364b0a5c235fbabd3bb1ea1c801abe26",
+      "method": "pdfimages -png; embedded scanned full page, not synthetic detail"
+    }
+  ],
+  "drawn_preview": {
+    "file": "data/round15b_AS7_page100_preview.png",
+    "pdf_page": 100,
+    "label": "PlateV; modern line drawing, not original photo"
+  },
+  "small_catalogue_photo": {
+    "source": "sources/ISAC_OIMP32_Visible_Language.pdf",
+    "pdf_page": 97,
+    "printed_page": 95,
+    "embedded_image_object_id": 633,
+    "file": "data/round15b_OIMA2480_native-000.jpg",
+    "width": 490,
+    "height": 612
+  }
+}

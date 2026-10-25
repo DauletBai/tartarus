@@ -1,0 +1,14 @@
+PDF 652
+geme2-šul-e ur-dlama3 in-tuku-a-ka dumu nu-dú-da
+      geme2.šul=e ur.lama3=Ø ÷i -n         -tuku-Ø     -÷a =ak =÷a
+      Gemeshul=ERG Ur.Lama =ABS VP-3SG.A-have-3SG.S/DO-NOM=GEN=LOC
+       dumu=Ø nu =÷i -n        -dú.d       -Ø      -÷a
+       son =ABS NEG=VP-3SG.A-give.birth.to-3SG.S/DO-NOM
+       ‘that while Gemeshul was married to Ur-Lama, she did not give birth to any children’
+       (NG 26 16; L; 21)
+Elsewhere the subordinate clause contains an imperfective form with the modal proclitic {h~a}
+(§25.4). The precise meaning of such a clause has remains uncertain. Poebel (1923: 167)
+considered it to be concessive (‘although’), but that does not fit more recently identified
+attestations. Nowadays, it is generally taken as a kind of temporal clause (Attinger 1993: 309),
+but its precise translation varies (‘when’, ‘after’, ‘while’). I tentatively propose the meaning ‘as
+soon as’. The construction often occurs in a fixed expression in Su

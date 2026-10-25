@@ -1,0 +1,20 @@
+[
+  {
+    "file": "Adda_photo.jpg",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/d/da/Adda_Seal_Akkadian_Empire_2300_BC.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+    "returncode": 0,
+    "error": ""
+  },
+  {
+    "file": "AdamEve_photo.jpg",
+    "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/34/Cylinder_seal_BM_89326.jpg/1920px-Cylinder_seal_BM_89326.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "returncode": 0,
+    "error": ""
+  },
+  {
+    "file": "StandardUr_photo.jpg",
+    "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f9/Standard_of_Ur_-_War.jpg/1920px-Standard_of_Ur_-_War.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "returncode": 0,
+    "error": ""
+  }
+]

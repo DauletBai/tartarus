@@ -1,0 +1,39 @@
+{
+  "date": "2026-10-25",
+  "stage": "round15",
+  "status": "new photos inspected before extraction of this round individual rows, but earlier web snippets already exposed the editions",
+  "observations": [
+    {
+      "artifact": "P005371",
+      "dimensions": [
+        1631,
+        3027
+      ],
+      "image": "sources/P005371_photo.jpg",
+      "kind": "photographic composite with two major surfaces and edge views",
+      "visible": [
+        "Upper main surface divided into several columns and cells. Multiple deep round and elongated depressions repeat in bundles.",
+        "Upper-left and top areas have breaks and missing material; some cells cannot be fully counted.",
+        "Lower major surface contains a large numeric-looking group at upper left and branch-like complexes below; right field contains linear/rectangular forms."
+      ],
+      "result": "legible graphic structure in parts; not complete independent sign collation; damaged cells must remain uncertain"
+    },
+    {
+      "artifact": "P005372",
+      "dimensions": [
+        906,
+        2016
+      ],
+      "image": "sources/P005372_photo.jpg",
+      "kind": "black-and-white photographic plate with two views, not a line drawing",
+      "visible": [
+        "Upper view has two main vertical fields and multiple horizontal cells; circular, profile-like and small angular traces have different apparent shapes and sizes.",
+        "Lower view has a broad left field with numeric-looking marks and a narrower right field with rectangular/linear complexes.",
+        "Surface wear and shadows remain even where editorial quantity strings may carry no damage flag."
+      ],
+      "result": "graphic groups sufficiently visible for local comparison; no independently assigned sound values or complete numeral classes"
+    }
+  ],
+  "no_sound_assignments": true,
+  "no_translations": true
+}

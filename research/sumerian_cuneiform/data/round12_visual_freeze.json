@@ -1,0 +1,10 @@
+{
+  "date": "2026-10-25",
+  "note": "Local sequence and integrity hashes, not externally time-stamped preregistration or proof against prior model knowledge.",
+  "protocol_sha256": "90cec45657a491135649da653702f4466ba5d50549a10fb95b919d1966ac623e",
+  "visual_sha256": "9725a3c4e31e17dbe9a01bc1c60fe2ee916ab5a87a7b2a3d60083f0cf6d7e4d2",
+  "image_sha256": {
+    "Met327384_DP297593.jpg": "f98bec6fec708b7450f646175cd52c9b4dd649915f15a508f4c7bef42dd1c81d",
+    "Met327384_DP297601.jpg": "adefecd77e29f8a0044d77e1acdfec54be4fbebe64d04a5a740f7d309bb934d8"
+  }
+}

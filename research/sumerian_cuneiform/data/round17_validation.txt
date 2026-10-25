@@ -1,0 +1,1 @@
+OK: 8 structural entries; 4 candidates + 3 controls; 8 exact grammar anchors; 4 verified source files. No genetic-relatedness percentages computed.

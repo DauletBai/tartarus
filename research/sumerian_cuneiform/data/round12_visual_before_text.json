@@ -1,0 +1,159 @@
+{
+  "date": "2026-10-25",
+  "object": "Met327384 / MMA1988.433.2",
+  "stage": "Image observations before individual CDLI text; general museum title already known",
+  "source_images": [
+    "Met327384_DP297593.jpg",
+    "Met327384_DP297601.jpg"
+  ],
+  "dimensions_each": [
+    3000,
+    4000
+  ],
+  "orientation": "As supplied; A and B are view labels only, not assumed obverse/reverse until later comparison.",
+  "quality": "passes for limited graphic analysis: distinct strokes, cell boundaries and multiple separate impressions visible",
+  "transformations": [
+    {
+      "file": "data/round12_viewA_native.jpg",
+      "source": "sources/Met327384_DP297593.jpg",
+      "box_xyxy": [
+        400,
+        1200,
+        2550,
+        2800
+      ],
+      "method": "sips native crop, no resizing, JPEG recompression"
+    },
+    {
+      "file": "data/round12_viewB_native.jpg",
+      "source": "sources/Met327384_DP297601.jpg",
+      "box_xyxy": [
+        400,
+        1200,
+        2550,
+        2800
+      ],
+      "method": "sips native crop, no resizing, JPEG recompression"
+    },
+    {
+      "file": "data/round12_viewB_central_native.jpg",
+      "source": "sources/Met327384_DP297601.jpg",
+      "box_xyxy": [
+        1100,
+        1700,
+        1720,
+        2350
+      ],
+      "method": "sips native crop, no resizing, JPEG recompression"
+    }
+  ],
+  "neutral_graphic_families": [
+    {
+      "id": "G01",
+      "description": "A central axis with alternating/slanting side branches",
+      "examples": [
+        {
+          "view": "A",
+          "box_xyxy": [
+            1600,
+            1710,
+            1860,
+            2180
+          ]
+        },
+        {
+          "view": "A",
+          "box_xyxy": [
+            1500,
+            2200,
+            1740,
+            2690
+          ]
+        },
+        {
+          "view": "B",
+          "box_xyxy": [
+            1130,
+            1210,
+            1340,
+            1530
+          ]
+        }
+      ],
+      "status": "family resemblance; forms vary, exact sign identity unassigned; boxes approximate and may need later spatial correction without changing this record"
+    },
+    {
+      "id": "G02",
+      "description": "Two closely similar vertical rectangular complexes with internal strokes, central inset rectangle and lower foot-like extension",
+      "examples": [
+        {
+          "view": "B",
+          "box_xyxy": [
+            1130,
+            2310,
+            1460,
+            2660
+          ]
+        },
+        {
+          "view": "B",
+          "box_xyxy": [
+            1460,
+            2260,
+            1740,
+            2690
+          ]
+        }
+      ],
+      "status": "visible pair in lower field; internal glyph boundary, sound and meaning not assigned"
+    },
+    {
+      "id": "G03",
+      "description": "Distinct rounded impressions of different apparent size; not assigned numerical values",
+      "examples": [
+        {
+          "view": "A",
+          "box_xyxy": [
+            810,
+            1340,
+            1170,
+            1530
+          ],
+          "count": "two separate small rounded impressions"
+        },
+        {
+          "view": "A",
+          "box_xyxy": [
+            1320,
+            1300,
+            1650,
+            1780
+          ],
+          "count": "one larger rounded depression over one smaller depression"
+        },
+        {
+          "view": "B",
+          "box_xyxy": [
+            1100,
+            1700,
+            1720,
+            2350
+          ],
+          "count": "six clear impressions in upper two rows; at least two clear below; left lower outlines damaged/ambiguous, total not asserted"
+        }
+      ],
+      "status": "count is count of visible marks, not numeric value represented"
+    }
+  ],
+  "layout": [
+    "Ruled dividers delimit cells, not an obvious modern word-by-word text.",
+    "ViewA has a broad lower-left field containing a complex outline and branching form; upper zone split into narrower fields.",
+    "ViewB has a broad upper-right field, middle region with repeated circular marks, and lower region with paired G02-like complexes.",
+    "Differences between marks can reflect different signs, damage, handwriting, or grouping; no phonemic substitution is inferred."
+  ],
+  "hypothesis_comparison": "A label-plus-quantity account-like model is compatible with divisions and repeated marks, but follows a known museum-title clue. Names, category labels or metrological units are not independently distinguished.",
+  "phonetic_assignment": null,
+  "semantic_assignment": null,
+  "kazakh_etymology_assignment": null,
+  "agglutination_result": "No visually demonstrated chain root+possessor+case from this single graphic inventory; this does not establish absence of such grammar in spoken language."
+}

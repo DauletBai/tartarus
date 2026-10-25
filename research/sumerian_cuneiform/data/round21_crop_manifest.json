@@ -1,0 +1,290 @@
+[
+  {
+    "crop": "data/round21_U04_front_native.jpg",
+    "source": "sources/round21_U04.jpg",
+    "box_xywh": [
+      215,
+      220,
+      415,
+      490
+    ]
+  },
+  {
+    "crop": "data/round21_U04_back_native.jpg",
+    "source": "sources/round21_U04.jpg",
+    "box_xywh": [
+      225,
+      910,
+      410,
+      475
+    ]
+  },
+  {
+    "crop": "data/round21_U02_front_native.jpg",
+    "source": "sources/round21_U02.jpg",
+    "box_xywh": [
+      150,
+      145,
+      320,
+      320
+    ]
+  },
+  {
+    "crop": "data/round21_U01_front_native.jpg",
+    "source": "sources/round21_U01.jpg",
+    "box_xywh": [
+      155,
+      170,
+      310,
+      310
+    ]
+  },
+  {
+    "token": "F1",
+    "crop": "data/round21_F1_native.jpg",
+    "source": "sources/round21_U04.jpg",
+    "box_xywh": [
+      450,
+      640,
+      63,
+      58
+    ]
+  },
+  {
+    "token": "F2",
+    "crop": "data/round21_F2_native.jpg",
+    "source": "sources/round21_U04.jpg",
+    "box_xywh": [
+      515,
+      640,
+      74,
+      58
+    ]
+  },
+  {
+    "token": "F3",
+    "crop": "data/round21_F3_native.jpg",
+    "source": "sources/round21_U04.jpg",
+    "box_xywh": [
+      528,
+      1230,
+      80,
+      76
+    ]
+  },
+  {
+    "token": "P1",
+    "crop": "data/round21_P1_native.jpg",
+    "source": "sources/round21_U04.jpg",
+    "box_xywh": [
+      528,
+      507,
+      79,
+      71
+    ]
+  },
+  {
+    "token": "P2",
+    "crop": "data/round21_P2_native.jpg",
+    "source": "sources/round21_U04.jpg",
+    "box_xywh": [
+      523,
+      575,
+      86,
+      63
+    ]
+  },
+  {
+    "token": "P3",
+    "crop": "data/round21_P3_native.jpg",
+    "source": "sources/round21_U04.jpg",
+    "box_xywh": [
+      377,
+      976,
+      58,
+      63
+    ]
+  },
+  {
+    "crop": "data/round21_U05_front_native.jpg",
+    "source": "sources/round21_U05.jpg",
+    "box_xywh": [
+      520,
+      485,
+      1110,
+      1050
+    ]
+  },
+  {
+    "crop": "data/round21_U05_back_native.jpg",
+    "source": "sources/round21_U05.jpg",
+    "box_xywh": [
+      530,
+      1900,
+      1110,
+      1100
+    ]
+  },
+  {
+    "crop": "data/round21_U06_front_native.jpg",
+    "source": "sources/round21_U06.jpg",
+    "box_xywh": [
+      265,
+      245,
+      480,
+      655
+    ]
+  },
+  {
+    "crop": "data/round21_U07_front_native.jpg",
+    "source": "sources/round21_U07.jpg",
+    "box_xywh": [
+      295,
+      275,
+      560,
+      795
+    ]
+  },
+  {
+    "crop": "data/round21_U08_front_native.jpg",
+    "source": "sources/round21_U08.jpg",
+    "box_xywh": [
+      280,
+      365,
+      650,
+      780
+    ]
+  },
+  {
+    "crop": "data/round21_U06_W01_native.jpg",
+    "source": "sources/round21_U06.jpg",
+    "box_xywh": [
+      550,
+      275,
+      98,
+      82
+    ],
+    "role": "post-whole-image diagnostic crop; not blind region selection"
+  },
+  {
+    "crop": "data/round21_U07_W01_native.jpg",
+    "source": "sources/round21_U07.jpg",
+    "box_xywh": [
+      650,
+      315,
+      115,
+      118
+    ],
+    "role": "post-whole-image diagnostic crop; not blind region selection"
+  },
+  {
+    "crop": "data/round21_U08_W01_native.jpg",
+    "source": "sources/round21_U08.jpg",
+    "box_xywh": [
+      487,
+      585,
+      110,
+      100
+    ],
+    "role": "post-whole-image diagnostic crop; not blind region selection"
+  },
+  {
+    "crop": "data/round21_U06_W02_native.jpg",
+    "source": "sources/round21_U06.jpg",
+    "box_xywh": [
+      305,
+      355,
+      125,
+      105
+    ],
+    "role": "post-whole-image diagnostic crop; not blind region selection"
+  },
+  {
+    "crop": "data/round21_U07_W02_native.jpg",
+    "source": "sources/round21_U07.jpg",
+    "box_xywh": [
+      365,
+      650,
+      105,
+      110
+    ],
+    "role": "post-whole-image diagnostic crop; not blind region selection"
+  },
+  {
+    "crop": "data/round21_U08_W02_native.jpg",
+    "source": "sources/round21_U08.jpg",
+    "box_xywh": [
+      365,
+      1015,
+      102,
+      102
+    ],
+    "role": "post-whole-image diagnostic crop; not blind region selection"
+  },
+  {
+    "crop": "data/round21_U07_W01_full_native.jpg",
+    "source": "sources/round21_U07.jpg",
+    "box_xywh": [
+      602,
+      305,
+      153,
+      145
+    ],
+    "role": "Expanded/repositioned crop because earlier box omitted part of complex; original retained."
+  },
+  {
+    "crop": "data/round21_U07_W02_first_native.jpg",
+    "source": "sources/round21_U07.jpg",
+    "box_xywh": [
+      330,
+      435,
+      135,
+      130
+    ],
+    "role": "Expanded/repositioned crop because earlier box omitted part of complex; original retained."
+  },
+  {
+    "crop": "data/round21_U07_W02_middle_native.jpg",
+    "source": "sources/round21_U07.jpg",
+    "box_xywh": [
+      355,
+      590,
+      145,
+      145
+    ],
+    "role": "Expanded/repositioned crop because earlier box omitted part of complex; original retained."
+  },
+  {
+    "crop": "data/round21_U05_W01_native.jpg",
+    "source": "sources/round21_U05.jpg",
+    "box_xywh": [
+      1320,
+      2630,
+      235,
+      180
+    ],
+    "role": "heldout close-up, individual text unopened"
+  },
+  {
+    "crop": "data/round21_U05_W02_native.jpg",
+    "source": "sources/round21_U05.jpg",
+    "box_xywh": [
+      650,
+      2605,
+      235,
+      220
+    ],
+    "role": "heldout close-up, individual text unopened"
+  },
+  {
+    "crop": "data/round21_U05_background_native.jpg",
+    "source": "sources/round21_U05.jpg",
+    "box_xywh": [
+      830,
+      2240,
+      420,
+      235
+    ],
+    "role": "heldout close-up, individual text unopened"
+  }
+]

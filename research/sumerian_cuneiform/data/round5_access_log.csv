@@ -1,0 +1,6 @@
+resource,requested_URL,result,consequence
+Frayne1997 publisher,https://utpdistribution.com/9781442657069/ur-iii-period-2112-2004-bc/,Web search provides bibliographic record; local curl HTTP403,No original page for VA15450 obtained; no purchase made
+Frayne1997 publisher platform,https://www.degruyterbrill.com/document/doi/10.3138/9781442657069/html,Web tool HTTP405,No full publication obtained
+VA15450 and W16956 exact searches,https://cdli.earth/artifacts/226487,No additional primary image or excavation-page located,Preservation discrepancy remains unresolved
+Penn museum CBS346,https://www.penn.museum/collections/object/453762,Local curl HTTP403 and web inaccessible,Museum page not archived; rely on separately saved CDLI identity record with caveat
+Viano2016 PDF screenshots,https://edizionicafoscari.unive.it/media/pdf/books/978-88-7543-417-5/978-88-7543-417-5-ch-06.pdf,Web screenshots cache miss; original PDF downloaded,Render selected pages locally for table inspection

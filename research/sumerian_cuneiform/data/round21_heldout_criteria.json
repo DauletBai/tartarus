@@ -1,0 +1,49 @@
+{
+  "created_at": "2026-10-25T16:02:45.492043+05:00",
+  "development": [
+    "U01",
+    "U02",
+    "U03",
+    "U04"
+  ],
+  "heldout": [
+    "U05",
+    "U06",
+    "U07",
+    "U08"
+  ],
+  "heldout_pixels_opened": false,
+  "no_sound_labels": true,
+  "criteria": {
+    "W01": {
+      "description": "Three distinct near-horizontal elongated traces stacked beside a steep/standing trace at their screen-right ends.",
+      "strict": "Allthree traces and standing trace distinguishable, positions compatible, border/adjacent-mark explanation not dominating.",
+      "partial": "Two traces clear and third damaged, or standing trace/connection uncertain.",
+      "exclude": "Bare bundle without standing trace; arbitrary rotation/mirror to force identity."
+    },
+    "W02": {
+      "description": "Fan-like curved/angular perimeter with multiple short internal near-parallel traces.",
+      "strict": "Perimeter distinct from line boundary, at least3 internal traces and their arrangement visible and comparable.",
+      "partial": "Generic hatch/curve resemblance but closure, count or boundary ambiguous.",
+      "exclude": "Bare horizontal bundle or generic pointed shape without diagnostic interior."
+    },
+    "BUNDLE": {
+      "description": "At least3 short roughly parallel traces without confirmed enclosure or side-standing trace.",
+      "role": "Geometric control pattern, not established autonomous sign.",
+      "strict": "Three or more distinct traces visible without relying on external known reading.",
+      "partial": "Only2 clear traces or border attribution uncertain."
+    }
+  },
+  "statuses": [
+    "strict_visual_candidate",
+    "partial_visual_candidate",
+    "not_observed",
+    "unassessable"
+  ],
+  "review_rules": [
+    "Inspect full photo then native crops; record revisions as separate observations.",
+    "No statistical genealogy/phonetic claim from these small convenience samples.",
+    "Different views of one tablet are not independent objects.",
+    "Contacts are image-plane observations; depth/tool motion not established."
+  ]
+}

@@ -1,0 +1,31 @@
+{
+  "created_at": "2026-10-25T12:18:16.525343+05:00",
+  "purpose": "Return to image-first investigation after author correction. No new transliteration, translation, ancient word or Kazakh candidate consulted in this cycle.",
+  "prior_exposure": "Rounds17–18 selected and analyzed editorial lemmas; cannot count as independent decipherment. Earlier images and readings remain known and cannot be erased.",
+  "selection": "Met open-access cuneiform image search, first public-domain object with a primary photograph not already stored. Program may inspect only id, image availability, public-domain status for selection; titles, object meanings and translation withheld from model. Search ordering is not random.",
+  "permitted_before_freeze": [
+    "pixels",
+    "image dimensions",
+    "source provenance and rights",
+    "anonymous image labels"
+  ],
+  "withheld": [
+    "object title and description",
+    "transliteration",
+    "translation",
+    "dictionary sign labels",
+    "proposed Kazakh reading"
+  ],
+  "tasks": [
+    "describe strokes and boundaries without sound values",
+    "number visible line/cell regions if possible",
+    "propose repeated graphic complexes and record ambiguous segmentations",
+    "freeze observations and hashes; keep metadata/reading unopened this cycle"
+  ],
+  "limits": [
+    "This is blinded to individual editorial text, not culturally naive or totally blind",
+    "Graph segmentation is not yet phonetic decipherment",
+    "No claim that a repeated complex equals a letter or word",
+    "Book unchanged"
+  ]
+}

@@ -1,0 +1,103 @@
+{
+  "date": "2026-10-25",
+  "artifact": "P499399",
+  "stage": "photo inspected before individual editorial text",
+  "source_dimensions": [
+    1006,
+    1762
+  ],
+  "transformations": "none; native composite shown",
+  "readability": "passes for limited comparison: several large engraved clusters have separately visible strokes; no surface outside this photo assessed",
+  "observations": [
+    "One dark approximately rectangular inscribed surface, with seven horizontal ruled bands. Lower two bands contain more than one visual tier; a band is not assumed to equal an editorial line.",
+    "Top band: radial cluster at left, long horizontal structure with several vertical elements at right.",
+    "Band 2 and band 3 begin with visibly similar graphic groups: a rightward triangular wedge arrangement followed by a vertical rectangle containing horizontal strokes. The extent of a single canonical sign remains unassigned.",
+    "Radial forms occur at top left and near the middle of band 4. Similarity is visible; exact identity and number of constituent signs are not established.",
+    "Long triangular outlines recur in band 3 right and band 7 upper-left/centre; additional small strokes may differ.",
+    "No safe repeated terminal chain spanning two bands is established before text exposure. Graphic recurrence elsewhere is observable."
+  ],
+  "bands_approx_y": [
+    [
+      62,
+      263
+    ],
+    [
+      275,
+      444
+    ],
+    [
+      453,
+      633
+    ],
+    [
+      641,
+      801
+    ],
+    [
+      811,
+      984
+    ],
+    [
+      994,
+      1237
+    ],
+    [
+      1247,
+      1508
+    ]
+  ],
+  "graphic_pairs": [
+    {
+      "id": "G1",
+      "a_box": [
+        130,
+        279,
+        332,
+        436
+      ],
+      "b_box": [
+        129,
+        469,
+        325,
+        625
+      ],
+      "result": "similar initial complex; tentative identity; internal segmentation unknown"
+    },
+    {
+      "id": "G2",
+      "a_box": [
+        137,
+        77,
+        354,
+        251
+      ],
+      "b_box": [
+        433,
+        645,
+        684,
+        788
+      ],
+      "result": "radial complexes; different execution and orientation require checking"
+    },
+    {
+      "id": "G3",
+      "a_box": [
+        591,
+        472,
+        904,
+        614
+      ],
+      "b_box": [
+        306,
+        1276,
+        517,
+        1360
+      ],
+      "result": "elongated triangular motifs; apparent adjunct strokes differ"
+    }
+  ],
+  "phonetic_assignment": null,
+  "semantic_assignment": null,
+  "known_prior": "Related Q000954 and other photographs seen earlier; cannot exclude recognition and model prior knowledge. Individual P499399 rows not yet extracted.",
+  "preliminary_limit": "Same graphic group in multiple contexts is compatible with spelling, morphology, fixed names or scribal convention; it does not select a linguistic genealogy."
+}

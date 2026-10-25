@@ -1,0 +1,18 @@
+[
+  {
+    "title": "Schrakamp 2018, section6",
+    "url": "https://refubium.fu-berlin.de/bitstream/fub188/23835/1/bsa_053_07.pdf",
+    "status": "web-indexed excerpt examined; downloaded response is bot challenge HTML, not paper; corpus/card/handcopy pair checked separately",
+    "doi": "10.17171/3-53-7"
+  },
+  {
+    "title": "Zgoll 2020 chapter003",
+    "url": "https://www.degruyterbrill.com/document/doi/10.1515/9783110652543-003/pdf?licenseType=open-access",
+    "status": "web search excerpt seen; local zero-byte response; not counted as downloaded or fully read"
+  },
+  {
+    "title": "Topoi download link mismatch",
+    "url": "https://edition-topoi.org/article/1434-irrigation-in-3rd-millennium-southern-mesopotamia/",
+    "status": "Download link via web led to unrelated bsa_055_07.pdf (Wasmuth); not used as Schrakamp article"
+  }
+]

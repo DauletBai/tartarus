@@ -1,0 +1,26 @@
+{
+  "created_at": "2026-10-25T11:42:49.917827+05:00",
+  "target": "Chicago Syllabary OIM A02480, obverse II, first repeated block, editorial rows 79–86",
+  "prior_exposure": "Photo and modern OCR rows 79–94 already viewed; no blind decipherment claim. Selection based on first repeated intact block, not on Kazakh similarity.",
+  "questions": [
+    "Does one repeated drawn complex correspond to one repeated photographed complex?",
+    "Are varied spellings paired with the same complex?",
+    "Can independent ancient witnesses constrain pronunciation, rather than merely repeat modern transliteration?"
+  ],
+  "layers": [
+    "photograph of ancient object",
+    "modern autograph",
+    "editorial reading and translation",
+    "proposed Kazakh comparison"
+  ],
+  "comparison_order": [
+    "81-7-27,200 (Hallock, duplicate edition)",
+    "BM93042 (Hallock, duplicate edition)"
+  ],
+  "constraints": [
+    "Do not assign sounds from visual resemblance alone",
+    "Do not treat printed ditto signs in modern edition as ancient wedges",
+    "Keep unavailable or nonoverlapping witnesses in results",
+    "No book edits"
+  ]
+}

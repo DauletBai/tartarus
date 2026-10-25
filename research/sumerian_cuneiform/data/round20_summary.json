@@ -1,0 +1,31 @@
+{
+  "photo_files_acquired": 12,
+  "distinct_new_photo_hashes": 12,
+  "physical_object_count": "not_established",
+  "pilot_regions": 22,
+  "region_status_counts": {
+    "partial": 5,
+    "clear": 11,
+    "uncertain": 6
+  },
+  "alternative_coarser_partition_region_count": 19,
+  "coarser_partition_rule": "Merge N01,N02,N03; merge N04,N05. Retain all original22 boxes and uncertainty.",
+  "working_graphic_types": 12,
+  "unresolved_inventory_candidates": 1,
+  "trace_shape_categories": 5,
+  "heldout_assessments": 24,
+  "heldout_status_counts": {
+    "partial_visual_candidate": 10,
+    "strict_visual_candidate": 1,
+    "not_observed_in_visible_area": 7,
+    "unassessable": 6
+  },
+  "heldout_layout_outcomes": {
+    "positive": 3,
+    "unassessable": 1
+  },
+  "independent_sound_values": 0,
+  "individual_editorial_readings_exposed": false,
+  "sound_label_permutation_preserves_graphic_repetition": true,
+  "causal_or_genealogical_conclusion": null
+}

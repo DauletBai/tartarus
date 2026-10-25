@@ -1,0 +1,35 @@
+{
+  "parsed_files": 1456,
+  "failed_files": [
+    "etcsri/corpusjson/Q001066.json"
+  ],
+  "pattern_counts": {
+    "GABA_BA_A": 1,
+    "A_NE_IN": 1,
+    "A_NE_IN_GI": 1,
+    "NE_IN_GI": 2,
+    "NE_IN_ZI": 0
+  },
+  "A_initial_verbs": 20,
+  "A_initial_verb_forms": {
+    "duru₅-e": 1,
+    "duru₅": 2,
+    "a-ba-sumun": 1,
+    "a-tum₂": 2,
+    "a-ku₅-re₆": 1,
+    "a-du₃": 1,
+    "a-dul₅": 4,
+    "a-ŋa₂-ŋa₂-a": 1,
+    "a-ŋa₂-ŋa₂-da": 1,
+    "a-sag₉-ga": 2,
+    "a-ab-sar": 3,
+    "še₂₁-a": 1
+  },
+  "limitations": "canonical simple GDL signs; determinatives/compounds form barriers; same editorial line; editorial segmentation retained only as comparison field; model glyph IDs, not independent photo readings",
+  "A_initial_with_morph_V2_a": 15,
+  "water_parallel_compositions": 2,
+  "water_parallel_selected_witnesses": 2,
+  "source_correction": "Gadd CT36 based on two cones",
+  "full_photo_collation": "not completed",
+  "book_modified": false
+}

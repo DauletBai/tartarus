@@ -1,0 +1,16 @@
+{
+  "parsed_files": 1456,
+  "failed_files": [
+    "etcsri/corpusjson/Q001066.json"
+  ],
+  "tokens": 11,
+  "compositions": 7,
+  "forms": {
+    "gaba": 4,
+    "gaba-ba": 2,
+    "gaba-be₂": 2,
+    "gaba-ka-ka": 3
+  },
+  "selection": "f.cf == gaba; lexical and compound entries with other citation forms excluded",
+  "archive_sha256": "66991601df193a5cb93bccf92e9051e86a98fbb668a9dd343477d14f0c9d54d6"
+}

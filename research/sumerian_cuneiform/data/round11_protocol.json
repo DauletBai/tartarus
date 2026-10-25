@@ -1,0 +1,22 @@
+{
+  "date": "2026-10-25",
+  "question": "Test direction K0 -> Sumerian alongside common ancestry, borrowing and independent typology. K0 denotes the hypothesized earlier source continuing into Kazakh, not an attested ancient language identified by modern name alone.",
+  "hypotheses": [
+    "H-KS: an earlier Kazakh-like source contributed to the formation of Sumerian",
+    "H-SK: Sumerian-related material contributed to later Kazakh ancestors",
+    "H-C: shared earlier ancestor without either attested language being the parent",
+    "H-B: limited borrowing/contact",
+    "H-T: independent similar typology plus chance comparisons"
+  ],
+  "fixed_comparison_domains": [
+    "Possessive 1SG,2SG,3SG-human,3SG-nonhuman",
+    "Genitive,dative,accusative,locative,ablative,instrumental/comitative",
+    "Nominal predicate copula/person 1SG,2SG,3SG",
+    "Nominal plurality with animacy limits retained"
+  ],
+  "corpus_rule": "Use unchanged ETCSRI2026-10-24 snapshot; retain every unique Sumerian word node with N6=men/am/menden/menzen/mesh (accept actual stored spellings) and all visibly me-en forms. Export all matches and disagreements; editorial tags do not independently establish pronunciation or meaning.",
+  "follow_up_selection": "For claimed men resemblance, obtain all numbered examples from Jagersma chapter29 sections identifying1SG/2SG forms; retain 2SG control and internal segmentation me+person. Identify physical references but do not assert photo validation if none inspected.",
+  "directionality_rule": "Undated hypothetical K0 can be considered, but no geographic name or morphological similarity alone supplies its date or migration direction. A positive direction claim requires dated intermediates, regular correspondences and an asymmetric innovation or borrowing pattern.",
+  "older_steppe_reference": "Seek primary scholarly description with cited inscription coordinates for early -DA/-DIn/-DAn forms; titles retaining conventional terminology are bibliographic names, not substitution of the author's preferred book vocabulary.",
+  "scope": "One bounded source/comparison batch, no all-language claim, no book edits, no ancestry percentage, no invented probability of chance."
+}

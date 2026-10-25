@@ -1,0 +1,22 @@
+[
+  {
+    "label": "B",
+    "pid": "P000002",
+    "card_url": "https://cdli.earth/artifacts/2",
+    "card_file": "sources/round19_image_B_card_withheld.html",
+    "reader_url": "https://cdli.earth/artifacts/2/reader/88910",
+    "reader_file": "sources/round19_image_B_reader_withheld.html",
+    "image_url": "https://cdli.earth/dl/photo/P000002.jpg",
+    "image_file": "sources/round19_image_B.jpg"
+  },
+  {
+    "label": "C",
+    "pid": "P000003",
+    "card_url": "https://cdli.earth/artifacts/3",
+    "card_file": "sources/round19_image_C_card_withheld.html",
+    "reader_url": "https://cdli.earth/artifacts/3/reader/88911",
+    "reader_file": "sources/round19_image_C_reader_withheld.html",
+    "image_url": "https://cdli.earth/dl/photo/P000003.jpg",
+    "image_file": "sources/round19_image_C.jpg"
+  }
+]

@@ -1,0 +1,13 @@
+{
+  "date": "2026-10-25",
+  "record_sha256": "a94b7063bed76a879ee022458f4a518c513753e2159a4000c55d7d89b0c937eb",
+  "protocol_sha256": "09414b5503e8edf07634ee969a606975f6f7e4d42e148b62e8cfcdd17be382d5",
+  "heldout_results_sha256": "ce350fbbc38d5f4c4d2a208361431c8fff7118bb07aee4f8f799649f0340c466",
+  "images": {
+    "sources/Met329081_view1.jpg": "31dd48dd3ab375b7479a15cbebbe1b7c46601ad7c751bc4fb68e6b0f557bf386",
+    "sources/Met329081_view2.jpg": "911dee432f685108fdc28bca314b785173ff043a7990bdd1d2bb41fd6f84947d",
+    "sources/Met327385_view1.jpg": "fa975c43b50532786b5f7c57edb1b6e105496f8a1e9a92465d7fa896fa183aec",
+    "sources/Met327385_view2.jpg": "de5d876da0a1a757930714ab0fe786ada75e8c58ca43e7d2950d1eb1c4dec77d"
+  },
+  "note": "Local integrity/sequence record; not externally time-stamped or proof against model prior knowledge. Met329081 view2 is an editorial drawing, not photograph."
+}

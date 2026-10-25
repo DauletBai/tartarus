@@ -1,0 +1,35 @@
+[
+  {
+    "file": "data/round18_CylinderA_native.jpg",
+    "source": "sources/round18_P232301_photo.jpg",
+    "rectangle_xywh": [
+      1900,
+      90,
+      1200,
+      2100
+    ],
+    "source_sha256": "3a06edd5bc2297811cbab249bff20ae73133a73234578da220eaa322dfd76e47"
+  },
+  {
+    "file": "data/round18_CylinderA_colII_lineart.jpg",
+    "source": "sources/round18_P232301_lineart.jpg",
+    "rectangle_xywh": [
+      340,
+      40,
+      360,
+      2800
+    ],
+    "source_sha256": "32ad33559feb63647e107087d1f52385af316e3e188983f51b56b381605cce24"
+  },
+  {
+    "file": "data/round18_UrNanse_II2_lineart.jpg",
+    "source": "sources/round18_P222363_lineart.jpg",
+    "rectangle_xywh": [
+      220,
+      112,
+      160,
+      65
+    ],
+    "source_sha256": "da93dd8989fefa9016930adbf03efe9c4801bb94c1347c8fbe490ce562aeaa6d"
+  }
+]

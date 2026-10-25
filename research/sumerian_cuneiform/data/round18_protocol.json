@@ -1,0 +1,19 @@
+{
+  "created_at": "2026-10-25T12:01:51.729414+05:00",
+  "archive_sha256": "66991601df193a5cb93bccf92e9051e86a98fbb668a9dd343477d14f0c9d54d6",
+  "scope": "All ETCSRI corpusjson Q files in the already saved archive; editorial target cf utud or tud AND gloss/sense birth/bear. Names and substring itud excluded.",
+  "selection": "Extract every target token, including damage, and preserve before/after context. First target by lexical Q id will be first photo candidate; composite Q is not a physical object.",
+  "controls": "Inventory all verb citation forms ending in d; inspect fixed semantic areas find, long/stretch, distant, lie as available. No rule d→zero inferred from a single pair.",
+  "prior_exposure": "Prior archive and grammatical descriptions known; this is corpus audit, not blind decipherment.",
+  "stages": [
+    "complete target extraction",
+    "select witnesses through catalogue/source references",
+    "inspect any available photographs separately from Latin edition",
+    "compare target morphological environments and independent controls"
+  ],
+  "limits": [
+    "No proof of genealogy from a corpus lemma",
+    "No case ending reclassified as part of root merely to improve similarity",
+    "Do not confuse modern Kazakh -ды tense marker with reconstructed Sumerian final d"
+  ]
+}

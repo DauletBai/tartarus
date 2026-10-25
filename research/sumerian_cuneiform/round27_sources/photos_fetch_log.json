@@ -1,0 +1,31 @@
+[
+  {
+    "file": "BM109931_photo.jpg",
+    "url": "https://www.ebl.lmu.de/api/fragments/BM.109931/photo",
+    "status": 200,
+    "content_type": "image/jpeg",
+    "bytes": 2025457
+  },
+  {
+    "file": "PTS1501_photo.jpg",
+    "url": "https://cdli.earth/dl/photo/P201507.jpg",
+    "status": 200,
+    "content_type": "image/jpeg",
+    "bytes": 1675226
+  },
+  {
+    "file": "PTS1502_eBL.json",
+    "url": "https://www.ebl.lmu.de/api/fragments/PTS.1502",
+    "error": "HTTP Error 404: Not Found"
+  },
+  {
+    "file": "PTS1501_eBL.json",
+    "url": "https://www.ebl.lmu.de/api/fragments/PTS.1501",
+    "error": "HTTP Error 404: Not Found"
+  },
+  {
+    "file": "YOS1_archive_metadata.json",
+    "url": "https://archive.org/metadata/miscellaneousins00clay",
+    "error": "<urlopen error _ssl.c:1063: The handshake operation timed out>"
+  }
+]

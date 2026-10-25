@@ -1,0 +1,2292 @@
+<!---->
+
+<!DOCTYPE html>
+<html>
+<head>
+    <!-- Mobile-Specifi-Meta -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Meta-Author -->
+    <meta name="author" content="tbi.kz">
+    <!-- Meta-Charset -->
+    <meta charset="UTF-8">
+    <!-- Favicon-->
+    <link rel="shortcut icon" href="/assert/img/favicon.ico">
+    <!-- Site-Title -->
+    <title>LEARNER’S CORPUS!</title>
+
+    <!-- Font-Open-Sans --
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto+Condensed:300,300italic,400,400italic,700,700italic&subset=latin,cyrillic-ext">
+      -->
+
+    <!-- Bootstrap-CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/assert/css/font-awesome.min.css">
+
+    <style type="text/css">
+    html {
+        scroll-behavior: smooth; overflow-x: hidden;
+    }
+    body {
+        font-size: 18px;
+        color: #313131;
+    /** line-height: 1.618em; */
+        position: relative;
+        min-height: 100vh;
+        padding: 0;
+        margin: 0;
+        background: #E5FBFF;
+    }
+    body::before {
+        content: "";
+        position: fixed;
+        top: -10px;
+        left: 0;
+        width: 100%;
+        height: 10px;
+        z-index: 100;
+        box-shadow: 0px 0px 10px rgba(0,0,0,.8);
+    }
+    b, bold, strong { font-weight: bold; } ul { padding: 0; margin: 0; list-style: none; }
+    
+    .begunok {
+        display: flex;
+        align-items: center;
+        height: 50px;
+        background: #57739b;
+        margin-bottom: 20px;
+        overflow: hidden;
+        position: sticky;
+        top: -5.5%;
+        z-index: 1;
+        .text {
+            color: white;
+            position: absolute;
+            white-space: nowrap;
+            animation: scroll-text 50s linear infinite;
+        }
+    }
+    @keyframes scroll-text {
+        from {
+            left: 100%;
+        }
+        to {
+            left: -100%;
+        }
+    }
+    
+    .TNR {
+        font-family: Times New Roman;
+    }
+    
+    .flex-centered {
+        display: flex; align-items: center; justify-content: center;
+    }
+    .header {
+        background: #E5FBFF;
+    }
+    .block {
+        background:#264672;
+        min-height:700px;
+        font-size: 25px;
+        border-radius:20px;
+        box-shadow: 0 0 30px #333;
+    }
+    .tabled {
+        table, th, td { border: 1px solid black; border-collapse: collapse; vertical-align: top; padding: 10px; min-width: 100px; }
+        table { min-width: 500px; margin: 0 auto; }
+        th { text-align: center; font-weight:bold; }
+        td { text-align: center; }
+    }
+    .tabled1 {
+        td { text-align: left !important; }
+        
+        td:nth-child(1) { font-weight:bold; color:#159 }
+        td:nth-child(2) { font-weight:bold; color:orange }
+    }
+    .tabled2 {
+        td { max-width: 700px; }
+    }
+    .footer {
+        position: absolute;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        padding: 50px 0 30px 0;
+        /* box-shadow: 0 0 5px rgb(0 0 0 / 69%); */
+        
+        .social { font-size: 28px; }
+        .fa-youtube-play:hover { color: red; }
+    }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container-fluid px-md-5 px-sm-2 banner py-1">
+            <div class="row">
+                <div class="col-lg-6 d-flex align-items-center" style="flex-wrap:wrap">
+                    <div class="flex-centered mr-3">
+                        <img src="/assert/img/logo_tbi.png" alt="" title="" height="150px">
+                        <img src="/assert/img/logo_oxford.png" alt="" title="" height="140px">
+                    </div>
+                    <div style="font-size:56px; line-height:1em">
+                        <b>LEARNER</b><br>
+                        <b>CORPUS</b>
+                    </div>
+                </div>
+                <div class="col-lg-2 d-flex p-1" style="background:#fff; font-size:14px">
+                    <div class="flex-centered">
+                        <img src="/assert/img/info.svg" height="50px">
+                    </div>
+                    <div class="ml-3 text-center">
+                    <div style="color:rgb(0, 151, 178); line-height:1.5em">Бұл ішкорпус тек шаблон ретінде ұсынылып, демонстрациялық мақсатта қолданылады. Болашақта оның дерекқоры кеңейтіліп, интерфейсі жетілдіріледі.</div>
+                    <div style="line-height:1.5em">This subcorpus is provided as a template and used for demonstration purposes only. In the future, its database will be expanded, and the interface will be improved.</div>
+                    </div>
+                </div>
+                <div class="col-lg-4 d-flex align-items-center justify-content-end">
+                    <div>
+                        <a href="https://tbi.kz/"><img id="logo2" src="/assert/img/ahmet.png" alt="" title="" height="150px"></a>
+                    </div>
+                    <div class="ml-sm-0 ml-md-3" style="font-size:32px; line-height:1.1em">
+                    <b>АХМЕТ БАЙТҰРСЫНҰЛЫ</b><br> атындағы <b>ТІЛ БІЛІМІ ИНСТИТУТЫ</b>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <div class="begunok">
+        <div class="text">
+            Learner’s Corpus – ағылшынтілділерге қазақ тілін үйретуге арналған интерактивті оқу ішкорпусы. Платформада А1 – С1 деңгейлеріне арналған мәтіндер, грамматикалық-лексикалық анықтағыштар, суретті сөздік, бейнематериалдар мен жаттығу үлгілері қамтылған.
+        </div>
+    </div>
+
+    <!-- Nav -->
+    <style>
+        .nav {
+            font-family: Canva Sans, Noto Sans Variable, Noto Sans,-apple-system;
+            background: #E5FBFF !important;
+            min-height: 70px;
+            
+            li {
+                display: inline-block;
+                margin: 5px;
+            }
+            a {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                background: rgb(0, 151, 178);
+                width: 150px;
+                height: 70px;
+                text-align: center;
+                cursor: pointer;
+                color: #fff !important;
+                font-size: 18px;
+                font-weight: bold;
+                border-radius: 32px;
+            }
+            a:link {
+                color: #fff;
+            }
+            a:visited {
+                color: #555;
+            }
+        }
+    </style>
+    
+    <nav class="navbar navbar-expand-lg navbar-light bg-light nav">
+    
+        <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#navbarContent1">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        
+        <div class="collapse navbar-collapse" id="navbarContent1">
+            <ul class="navbar-nav m-auto">
+                <li class="nav-item"><a class="nav-link" href="/" > HOME </a></li>
+                <li class="nav-item"><a class="nav-link" href="#ABOUT"> ABOUT </a></li>
+                <li class="nav-item"><a class="nav-link" type="button" data-toggle="modal" data-target="#ModalGrammar"> GRAMMAR </a></li>
+                <li class="nav-item"><a class="nav-link" type="button" data-toggle="modal" data-target="#ModalVocabulary"> VOCABULARY </a></li>
+                <li class="nav-item"><a class="nav-link" href="#TEXTS"> TEXTS </a></li>
+                <li class="nav-item"><a class="nav-link" href="https://qazcorpus.kz/_auyzsha-ishkorpus/film/index.php" target="_blank"> LESSONS </a></li>
+                <li class="nav-item"><a class="nav-link" href="https://qazcorpus.kz/_auyzsha-ishkorpus/beinecontent/index.php" target="_blank"> VIDEO CONTENT </a></li>
+                <li class="nav-item"><a class="nav-link" href="#LINKS"> LINKS </a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- INDEX -->
+    <section>
+        <div class="container-xl my-5 px-3">
+            <div style="border:1px solid #0097B2" class="px-1">
+                <h3 class="text-center my-3" style="font-size:1.5rem; font-weight:bold"> Ағылшынтілділерге (англофондарға) қазақ тілін үйренуге арналған оқу ішкорпусы </h3>
+                <h3 class="text-center my-3" style="font-size:1.5rem; font-weight:bold"> A learning corpus for learning the Kazakh language for English speakers (Anglophones) </h3>
+            </div>
+        </div>
+        <div class="container-fluid my-5" style="width:min(98%,1400px)">
+            <!--
+            <div class="row">
+                <div class="" style="width:20%">
+                    <div class="text-center" style="border:1px solid #0097B2; padding: 25px 5px; margin-top: 10%; font-weight: bold">
+                        Ағылшынтілділерге (англофондарға) қазақ тілін үйренуге арналған оқу ішкорпусы
+                    </div>
+                </div>
+                <div class="" style="width:20%">
+                    <div class="text-center" style="border:1px solid #0097B2; padding: 25px 5px; margin-top: 10%; font-weight: bold">
+                        A learning corpus for learning the Kazakh language for English speakers (Anglophones)
+                    </div>
+                </div>
+            </div>
+              -->
+            <div class="row">
+                <div class="m-auto" style="width:min(97%, 1200px); min-height:300px; padding:15px">
+                    <video width="100%" controls autoplay style="border-radius:15px">
+                        <source type="video/mp4" src="/assert/oxford1.mp4">
+                    </video>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- BANNER -->
+    <section>
+        <div class="container-xl my-5">
+            <div class="row TNR">
+                <div class="col-sm-7 d-flex flex-column justify-content-around">
+                    <div>
+                        <p class="text-justify" style="font-size:24px; font-weight:400; width:min(98%,500px); margin:auto">
+                            By teaching Kazakh at Oxford, we are not just promoting a local language, but opening a window into the entire Turkic language family. This is important for Kazakhstan and for the wider academic community, because Kazakh retains many of the original Turkic roots that have been lost in other languages
+                        </p>
+                    </div>
+                    <div class="text-right">
+                        <span style="font-size:24px; font-weight:700; font-kerning:none; color:#0097B2;">SAYASAT NURBEK</span>
+                    </div>
+                    <div>
+                        <img src="/assert/img/66.png" style="width:61%">
+                    </div>
+                </div>
+                <div class="col-sm-1">
+                </div>
+                <div class="col-sm-4">
+                    <div class="text-center">
+                        <img src="/assert/img/minister.jpg" style="width:min(98%,300px)">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section id="ABOUT">
+        <div class="container-xl my-5">
+            
+            <h3 class="text-right" style="font-size:3.5em">
+                <b>ABOUT</b>
+            </h3>
+            <div class="row TNR" style="line-height:1.4; font-size:0.9em; font-weight:400">
+                <div class="col-sm-6 text-justify">
+                    <p>
+                        Learner Corpus – Оксфорд университетіндегі ағылшынтілді инофондарға қазақ тілін үйретуге бағытталған ауқымды база. Learner Corpus платформасын жасап шығару ойы Қазақстан мен Ұлыбритания арасындағы ынтымақтастықтан, оның ішінде Оксфорд университетіндегі Birsöz бастамасынан шыққан. Learner Corpus Оксфорд университетіндегі қазақ тілі курстарының лингводидактикалық және тілтанымдық базасы болмақ. Әзірлеушілер – А. Байтұрсынұлы атындағы Тіл Білімі Институтының қызметкерлері. Базаның құрамына қазақ тілінің А1, А2, В1, В2, С1 деңгейлері бойынша мәтіндер, лексикалық және грамматикалық анықтағыштар, суретті сөздік, бейнероликтер, жаттығулар мен тапсырмалар енеді. Learner Corpus Қазақ Тілінің Ұлттық Корпусы платформасында жұмыс істейді. Корпус толығымен интерактивті. Learner Corpus қазақ тілінің фонетикасы, лексикасы мен грамматикасы туралы толыққанды ақпарат беріп қана қоймай, қазақ мәдениетімен жан-жақты таныстырады. Learner Corpus қазақ тіліне қызығатын барлық ағылшынтілді инофондарға арналған.
+                    </p>
+                </div>
+                <div class="col-sm-6 text-justify">
+                    <p>
+                        Learner Corpus – a large-scale database aimed at teaching the Kazakh language to English-speaking non-native speakers at Oxford University. The idea of creating the Learner Corpus platform emerged from the collaboration between Kazakhstan and the United Kingdom, including the Birsöz initiative at Oxford University. The Learner Corpus will serve as the linguodidactic and linguistic knowledge base for Kazakh language courses at Oxford University. The developers are employees of the A. Baytursynov Institute of Linguistics. The database includes texts for the A1, A2, B1, B2, C1 levels of the Kazakh language, lexical and grammatical reference tools, a picture dictionary, videos, exercises, and tasks. The Learner Corpus operates on the National Corpus of the Kazakh Language platform. The corpus is fully interactive. Learner Corpus not only provides comprehensive information about the phonetics, vocabulary, and grammar of the Kazakh language but also offers an in-depth introduction to Kazakh culture. The Learner Corpus is intended for all English-speaking non-native speakers interested in the Kazakh language.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- OXFORD-AND-TBI -->
+    <section>
+        
+        <div class="container-xl my-5">
+            
+            <h3 class="text-right" style="font-size:3.5em">
+                <b>OXFORD AND TBI</b>
+            </h3>
+            <div class="row TNR position-relative" style="line-height:1.4; font-size:0.9em; font-weight:400">
+                
+                <div class="position-absolute d-flex" style="inset:0">
+                    <img style="margin:auto" src="/assert/img/oxf1.png" width="380px">
+                </div>
+                
+                <div class="col-sm-5 text-left">
+                    <p>
+                        2023 ж. сәуір: Oxford Birsöz initiative CIC жетекшісі Лейла
+                        Наджафзадемен Тіл білімі Институтының мамандары арасында
+                        кездесу болды
+                    </p>
+                    <p>
+                        2024 ж. қаңтар:  ҚР Ғылым және Жоғары Білім Министрі Саясат
+                        Нұрбек Оксфор университетіне арнайы ресми іссапармен барды.
+                        Іссапар барысында “Oxford Qazaq Dictionary” сөздігі
+                        таныстырылып, Оксфордта қазақ тілін оқыту бастамасы
+                        көтерілді.
+                    </p>
+                    <p>
+                        2024 ж. ақпан: Институт мамандары Oxford University - ге
+                        алғашқы ресми іссапармен барып, Оксфордта қазақ тілін оқыту
+                        туралы келіссөздер жүргізді.
+                    </p>
+                    <p>
+                        2024 ж. сәуір:  А.Байтұрсынов атындағы Тіл білімі институты,
+                        Ш.Шаяхметов атындағы «Тіл-Қазына» ұлттық ғылыми-
+                        практикалық орталығы, «Халықаралық бағдарламалар
+                        орталығы» АҚ мен Оксфорд университеті арасында жасалған
+                        Оксфорд университетінде қазақ тілін оқыту бағдарламасын іске
+                        қосу туралы меморандумға қол қойылды.
+                    </p>
+                </div>
+                <div class="col-sm-2">
+                    <div>
+                    </div>
+                </div>
+                <div class="col-sm-5 text-right">
+                    <p>
+                        2024 ж. қыркүйек: Оксфорд университетіне Тіл
+                        білімі институтының мамандары
+                        тағылымдамаға барып, Оксфордта қазақ тілін
+                        оқыту бағдарламасын жасауға кірісті. 
+                    </p>
+                    <p>
+                        2024 ж. желтоқсан: Англофондарға қазақ тілін
+                        үйретуге арналған интерактивті база -
+                        LEARNERS’  CORPUS іске қосылды.
+                    </p>
+                    <p>
+                        2025 ж. ақпан: Оксфорд университетінің
+                        студенттеріне қазақ тілінің алғашқы сынақ
+                        сабақтары өте бастады.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- A1 -->
+    <section id="TEXTS">
+        <div class="container-xl my-5">
+            
+            <h3 class="text-right" style="font-size:3.5em">
+                <b>TEXT A1</b>
+            </h3>
+            <div class="row TNR">
+                <div class="col-md-6">
+                    
+                    <div class="row my-1">
+                        <div class="col-sm-6 px-1 position-relative" style="aspect-ratio:4/3; cursor:pointer" data-toggle="modal" data-target="#ModalTA1-1">
+                            <img src="/assert/img/A1-1.jpg" style="height:100%; width:100%; object-fit:cover">
+                            <div class="position-absolute px-2 py-1 text-center" style="border-radius:10px; bottom:5%; left:50%; transform:translatex(-50%); font-size:1.1em; background:#FFED00"> СӘЛЕМДЕСУ </div>
+                        </div>
+                        <div class="col-sm-6 px-1 position-relative" style="aspect-ratio:4/3; cursor:pointer" data-toggle="modal" data-target="#ModalTA1-2">
+                            <img src="/assert/img/A1-2.jpg" style="height:100%; width:100%; object-fit:cover">
+                            <div class="position-absolute px-2 py-1 text-center" style="border-radius:10px; bottom:5%; left:50%; transform:translatex(-50%); font-size:1.1em; background:#FFED00"> ТАНЫСУ </div>
+                        </div>
+                    </div>
+                    <div class="row my-1">
+                        <div class="col-sm-4 px-1 position-relative" style="aspect-ratio:4/4; cursor:pointer" data-toggle="modal" data-target="#ModalTA1-3">
+                            <img src="/assert/img/A1-5.jpg" style="height:100%; width:100%; object-fit:cover">
+                            <div class="position-absolute px-2 py-1 text-center" style="border-radius:10px; bottom:5%; left:50%; transform:translatex(-50%); font-size:1.1em; background:#FFED00"> ОТБАСЫ </div>
+                        </div>
+                        <div class="col-sm-4 px-1 position-relative" style="aspect-ratio:4/4; cursor:pointer" data-toggle="modal" data-target="#ModalTA1-4">
+                            <img src="/assert/img/A1-6.jpg" style="height:100%; width:100%; object-fit:cover">
+                            <div class="position-absolute text-center" style="bottom:5%; left:50%; transform:translatex(-50%); font-size:1.1em; line-height: 1.1em">
+                                <div class="px-2 py-1 d-inline-block" style="border-radius:10px; background:#FFED00"> БОС </div>
+                                <div class="px-2 py-1 d-inline-block" style="border-radius:10px; background:#FFED00"> УАҚЫТЫМ </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-4 px-1 position-relative" style="aspect-ratio:4/4; cursor:pointer" data-toggle="modal" data-target="#ModalTA1-5">
+                            <img src="/assert/img/A1-7.jpg" style="height:100%; width:100%; object-fit:cover">
+                            <div class="position-absolute px-2 py-1 text-center" style="border-radius:10px; bottom:5%; left:50%; transform:translatex(-50%); font-size:1.1em; background:#FFED00"> ТАМАҚТАНУ </div>
+                        </div>
+                    </div>
+                    
+                </div>
+                <div class="col-md-6">
+                    
+                    <div class="row my-1">
+                        <div class="col-sm-6 px-1 position-relative" style="aspect-ratio:4/3; cursor:pointer" data-toggle="modal" data-target="#ModalTA1-6">
+                            <img src="/assert/img/A1-3.jpg" style="height:100%; width:100%; object-fit:cover">
+                            <div class="position-absolute text-center" style="bottom:5%; left:50%; transform:translatex(-50%); font-size:1.1em; line-height: 1.1em">
+                                <div class="px-2 py-1 d-inline-block" style="border-radius:10px; background:#FFED00"> СҮЙІКТІ </div>
+                                <div class="px-2 py-1 d-inline-block" style="border-radius:10px; background:#FFED00"> ІСІМ </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-6 px-1 position-relative" style="aspect-ratio:4/3; cursor:pointer" data-toggle="modal" data-target="#ModalTA1-7">
+                            <img src="/assert/img/A1-4.jpg" style="height:100%; width:100%; object-fit:cover">
+                            <div class="position-absolute text-center" style="bottom:5%; left:50%; transform:translatex(-50%); font-size:1.1em; line-height: 1.1em">
+                                <div class="px-2 py-1 d-inline-block" style="border-radius:10px; background:#FFED00"> АУЫЛ </div>
+                                <div class="px-2 py-1 d-inline-block" style="border-radius:10px; background:#FFED00"> ТАБИҒАТЫ </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row my-1">
+                        <div class="col-sm-4 px-1 position-relative" style="aspect-ratio:4/4; cursor:pointer" data-toggle="modal" data-target="#ModalTA1-8">
+                            <img src="/assert/img/A1-8.jpg" style="height:100%; width:100%; object-fit:cover">
+                            <div class="position-absolute text-center" style="bottom:5%; left:50%; transform:translatex(-50%); font-size:1.1em; line-height: 1.1em">
+                                <div class="px-2 py-1 d-inline-block" style="border-radius:10px; background:#FFED00"> КОМПЬЮТЕР </div>
+                                <div class="px-2 py-1 d-inline-block" style="border-radius:10px; background:#FFED00"> ЖӘНЕ </div>
+                                <div class="px-2 py-1 d-inline-block" style="border-radius:10px; background:#FFED00"> ИНТЕРНЕТ </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-4 px-1 position-relative" style="aspect-ratio:4/4; cursor:pointer" data-toggle="modal" data-target="#ModalTA1-9">
+                            <img src="/assert/img/A1-9.jpg" style="height:100%; width:100%; object-fit:cover">
+                            <div class="position-absolute text-center" style="bottom:5%; left:50%; transform:translatex(-50%); font-size:1.1em; line-height: 1.1em">
+                                <div class="px-2 py-1 d-inline-block" style="border-radius:10px; background:#FFED00"> ТАҢҒЫ </div>
+                                <div class="px-2 py-1 d-inline-block" style="border-radius:10px; background:#FFED00"> ӘДЕТТЕРІМ </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-4 px-1 position-relative" style="aspect-ratio:4/4; cursor:pointer" data-toggle="modal" data-target="#ModalTA1-10">
+                            <img src="/assert/img/A1-10.jpg" style="height:100%; width:100%; object-fit:cover">
+                            <div class="position-absolute text-center" style="bottom:5%; left:50%; transform:translatex(-50%); font-size:1.1em; line-height: 1.1em">
+                                <div class="px-2 py-1 d-inline-block" style="border-radius:10px; background:#FFED00"> МЕНІҢ </div>
+                                <div class="px-2 py-1 d-inline-block" style="border-radius:10px; background:#FFED00"> ФОБИЯМ </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- A2 -->
+    <section>
+        <div class="container-xl my-5">
+            
+            <h3 class="text-right" style="font-size:3.5em">
+                <b>TEXT A2</b>
+            </h3>
+            <div class="row TNR">
+                <div class="col-md-6">
+                    
+                    <div class="row my-1">
+                        <div class="col-sm-6 px-1 position-relative" style="aspect-ratio:4/3; cursor:pointer" data-toggle="modal" data-target="#ModalTA2-1">
+                            <img src="/assert/img/A2-1.jpg" style="height:100%; width:100%; object-fit:cover">
+                            <div class="position-absolute text-center" style="bottom:5%; left:50%; transform:translatex(-50%); font-size:1.1em; line-height: 1.1em">
+                                <div class="px-2 py-1 d-inline-block" style="border-radius:10px; background:#FFED00"> СЕРІК ПЕН </div>
+                                <div class="px-2 py-1 d-inline-block" style="border-radius:10px; background:#FFED00"> АТАСЫ </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-6 px-1 position-relative" style="aspect-ratio:4/3; cursor:pointer" data-toggle="modal" data-target="#ModalTA2-2">
+                            <img src="/assert/img/A2-2.jpg" style="height:100%; width:100%; object-fit:cover">
+                            <div class="position-absolute px-2 py-1 text-center" style="border-radius:10px; bottom:5%; left:50%; transform:translatex(-50%); font-size:1.1em; background:#FFED00"> БЕТ-ӘЛПЕТ </div>
+                        </div>
+                    </div>
+                    <div class="row my-1">
+                        <div class="col-sm-4 px-1 position-relative" style="aspect-ratio:4/4; cursor:pointer" data-toggle="modal" data-target="#ModalTA2-3">
+                            <img src="/assert/img/A2-5.jpg" style="height:100%; width:100%; object-fit:cover">
+                            <div class="position-absolute text-center" style="bottom:5%; left:50%; transform:translatex(-50%); font-size:1.1em; line-height: 1.1em">
+                                <div class="px-2 py-1 d-inline-block" style="border-radius:10px; background:#FFED00"> БАЛЫҚ </div>
+                                <div class="px-2 py-1 d-inline-block" style="border-radius:10px; background:#FFED00"> АУЛАУ </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-4 px-1 position-relative" style="aspect-ratio:4/4; cursor:pointer" data-toggle="modal" data-target="#ModalTA2-4">
+                            <img src="/assert/img/A2-6.jpg" style="height:100%; width:100%; object-fit:cover">
+                            <div class="position-absolute text-center" style="bottom:5%; left:50%; transform:translatex(-50%); font-size:1.1em; line-height: 1.1em">
+                                <div class="px-2 py-1 d-inline-block" style="border-radius:10px; background:#FFED00"> СҮЙІКТІ </div>
+                                <div class="px-2 py-1 d-inline-block" style="border-radius:10px; background:#FFED00"> ӘНІМ </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-4 px-1 position-relative" style="aspect-ratio:4/4; cursor:pointer" data-toggle="modal" data-target="#ModalTA2-5">
+                            <img src="/assert/img/A2-7.jpg" style="height:100%; width:100%; object-fit:cover">
+                            <div class="position-absolute text-center" style="bottom:5%; left:50%; transform:translatex(-50%); font-size:1.1em; line-height: 1.1em">
+                                <div class="px-2 py-1 d-inline-block" style="border-radius:10px; background:#FFED00"> САЛАМАТТЫ </div>
+                                <div class="px-2 py-1 d-inline-block" style="border-radius:10px; background:#FFED00"> ӨМІР САЛТЫ </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+                <div class="col-md-6">
+                    
+                    <div class="row my-1">
+                        <div class="col-sm-6 px-1 position-relative" style="aspect-ratio:4/3; cursor:pointer" data-toggle="modal" data-target="#ModalTA2-6">
+                            <img src="/assert/img/A2-3.jpg" style="height:100%; width:100%; object-fit:cover">
+                            <div class="position-absolute text-center" style="bottom:5%; left:50%; transform:translatex(-50%); font-size:1.1em; line-height: 1.1em">
+                                <div class="px-2 py-1 d-inline-block" style="border-radius:10px; background:#FFED00"> СҮЙІКТІ </div>
+                                <div class="px-2 py-1 d-inline-block" style="border-radius:10px; background:#FFED00"> ФИЛЬМІМ </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-6 px-1 position-relative" style="aspect-ratio:4/3; cursor:pointer" data-toggle="modal" data-target="#ModalTA2-7">
+                            <img src="/assert/img/A2-4.jpg" style="height:100%; width:100%; object-fit:cover">
+                            <div class="position-absolute px-2 py-1 text-center" style="border-radius:10px; bottom:5%; left:50%; transform:translatex(-50%); font-size:1.1em; background:#FFED00"> ШАШТАРАЗДА </div>
+                        </div>
+                    </div>
+                    <div class="row my-1">
+                        <div class="col-sm-4 px-1 position-relative" style="aspect-ratio:4/4; cursor:pointer" data-toggle="modal" data-target="#ModalTA2-8">
+                            <img src="/assert/img/A2-8.jpg" style="height:100%; width:100%; object-fit:cover">
+                            <div class="position-absolute px-2 py-1 text-center" style="border-radius:10px; bottom:5%; left:50%; transform:translatex(-50%); font-size:1.1em; background:#FFED00"> КІТАПХАНАДА </div>
+                        </div>
+                        <div class="col-sm-4 px-1 position-relative" style="aspect-ratio:4/4; cursor:pointer" data-toggle="modal" data-target="#ModalTA2-9">
+                            <img src="/assert/img/A2-9.jpg" style="height:100%; width:100%; object-fit:cover; object-position: center top">
+                            <div class="position-absolute text-center" style="bottom:5%; left:50%; transform:translatex(-50%); font-size:1.1em; line-height: 1.1em">
+                                <div class="px-2 py-1 d-inline-block" style="border-radius:10px; background:#FFED00"> ӘЖЕМНІҢ </div>
+                                <div class="px-2 py-1 d-inline-block" style="border-radius:10px; background:#FFED00"> ӘҢГІМЕЛЕРІ </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-4 px-1 position-relative" style="aspect-ratio:4/4; cursor:pointer" data-toggle="modal" data-target="#ModalTA2-10">
+                            <img src="/assert/img/A2-10.jpg" style="height:100%; width:100%; object-fit:cover">
+                            <div class="position-absolute text-center" style="bottom:5%; left:50%; transform:translatex(-50%); font-size:1.1em; line-height: 1.1em">
+                                <div class="px-2 py-1 d-inline-block" style="border-radius:10px; background:#FFED00"> КӨЛ </div>
+                                <div class="px-2 py-1 d-inline-block" style="border-radius:10px; background:#FFED00"> ЖАҒАСЫНДА </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- TEXTS -->
+    <section>
+    <div class="modal fade" id="ModalTA1-1" data-backdrop="static" data-keyboard="false" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable" style="width:97%; max-width:1500px">
+            <div class="modal-content" style="background:#E5FBFF">
+                <div class="modal-header" style="background:#0c90a5">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                </div>
+                <div class="modal-body">
+        
+        <div class="container-xl TNR">
+            <!-- A1-1 -->
+            <div class="row py-5 px-1">
+                <div class="col-md-6 pr-lg-5 pr-md-0">
+                    <div>
+                        <b>Әли</b>: Сәлем, Мәншүк! Сізді көргеніме қуаныштымын!<br>
+                        <b>Мәншүк</b>: Сәлем, Әли! Мен де қуаныштымын! Қалыңыз қалай?<br>
+                        <b>Әли</b>: Жақсы, рақмет! Өзіңіз қалайсыз?<br>
+                        <b>Мәншүк</b>: Жақсы, шүкір! Бүгін ауа райы керемет, иә?<br>
+                        <b>Әли</b>: Ия, маған да осы ауа райы ұнайды. Бүгін бірге түскі ас ішейік.<br>
+                        <b>Мәншүк</b>: Ооо, керемет! Келістік.<br>
+                    </div>
+                    <div class="text-right">
+                        <div style="display:inline-block; width:91%; border-top:1px solid #000"></div>
+                    </div>
+                    <div class="text-center">
+                        <div style="display:inline-block; width:min(90%, 350px)">
+                            <div style="display:flex; justify-content: space-between; font-size:1.5em; font-weight:700; line-height:1.3em; min-height:60px">
+                                <div><i> СӘЛЕМДЕСУ </i></div>
+                                <div style="align-self:end"><i> GREETING </i></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="text-left">
+                        <div style="display:inline-block; width:91%; border-top:1px solid #000; margin-bottom:10px"></div>
+                    </div>
+                    <div>
+                        <b>Ali</b>: Hello, Manshuk! I'm glad to see you!<br>
+                        <b>Manshuk</b>: Hello, Ali! I'm glad to see you too! How are you?<br>
+                        <b>Ali</b>: I'm good, thank you! How about you?<br>
+                        <b>Manshuk</b>: I'm good, thank God! The weather is great today, isn't it?<br>
+                        <b>Ali</b>: Yes, I also like this weather. Let's have lunch together today.<br>
+                        <b>Manshuk</b>: Oh, great! It's a deal.<br>
+                    </div>
+                </div>
+                <div class="col-md-6 position-relative" style="min-height:300px">
+                    <img src="/assert/img/TA1-1.jpg" style="height:100%; width:100%; top:0; left:0; object-fit:cover; position:absolute">
+                </div>
+            </div>
+        </div>
+        
+                </div>
+                <div class="modal-footer">
+                    &nbsp;
+                </div>
+            </div>
+        </div>
+    </div>
+    </section>
+    
+    <section>
+    <div class="modal fade" id="ModalTA1-2" data-backdrop="static" data-keyboard="false" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable" style="width:97%; max-width:1500px">
+            <div class="modal-content" style="background:#E5FBFF">
+                <div class="modal-header" style="background:#0c90a5">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                </div>
+                <div class="modal-body">
+        
+        <div class="container-xl TNR">
+            <!-- A1-2 -->
+            <div class="row py-5 px-1">
+                <div class="col-md-6 pr-lg-5 pr-md-0">
+                    <div>
+                        <b>Шыңғыс</b>: Сәлем. Сіздің атыңыз кім?<br>
+                        <b>Әмина</b>: Сәлем, менің атым Әмина. Ал сіздің атыңыз кім?<br>
+                        <b>Шыңғыс</b>: Менің атым Шыңғыс. Сіз қайда тұрасыз?<br>
+                        <b>Әмина</b>: Мен Көкшетауда тұрамын. Ал сіз ше?<br>
+                        <b>Шыңғыс</b>: Мен Түркістанда тұрамын.<br>
+                        <b>Әмина</b>: Керемет, Түркістан тарихи қала ғой.<br>
+                        <b>Шыңғыс</b>: Ия. Ал сіз сұлу Көкшеден екенсіз. Өзіңіз де сұлу екенсіз.<br>
+                        <b>Әмина</b>: Рақмет.<br>
+                        <b>Шыңғыс</b>: Сізбен танысқаныма қуаныштымын.<br>
+                        <b>Әмина</b>: Мен де!<br>
+                    </div>
+                    <div class="text-right">
+                        <div style="display:inline-block; width:91%; border-top:1px solid #000"></div>
+                    </div>
+                    <div class="text-center">
+                        <div style="display:inline-block; width:min(90%, 400px)">
+                            <div style="font-size:1.5em; font-weight:700; line-height:1.3em; min-height:60px">
+                                <div class="text-left"><i> ТАНЫСУ </i></div>
+                                <div class="text-right"><i> GETTING ACQUAINTED </i></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="text-left">
+                        <div style="display:inline-block; width:91%; border-top:1px solid #000; margin-bottom:10px"></div>
+                    </div>
+                    <div>
+                        <b>Shyngys</b>: Hello. What is your name?<br>
+                        <b>Amina</b>: Hello, my name is Amina. And what is your name?<br>
+                        <b>Shyngys</b>: My name is Shyngys. Where do you live?<br>
+                        <b>Amina</b>: I live in Kokshetau. And you?<br>
+                        <b>Shyngys</b>: I live in Turkistan.<br>
+                        <b>Amina</b>: Great, Turkistan is a historic city.<br>
+                        <b>Shyngys</b>: Yes. And you’re from beautiful Kokshetau. You are beautiful too.<br>
+                        <b>Amina</b>: Thank you.<br>
+                        <b>Shyngys</b>: It’s nice to meet you.<br>
+                        <b>Amina</b>: You too!<br>
+                    </div>
+                </div>
+                <div class="col-md-6 position-relative" style="min-height:300px">
+                    <img src="/assert/img/TA1-2.jpg" style="height:100%; width:100%; top:0; left:0; object-fit:cover; position:absolute">
+                </div>
+            </div>
+        </div>
+        
+                </div>
+                <div class="modal-footer">
+                    &nbsp;
+                </div>
+            </div>
+        </div>
+    </div>
+    </section>
+    
+    <section>
+    <div class="modal fade" id="ModalTA1-3" data-backdrop="static" data-keyboard="false" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable" style="width:97%; max-width:1500px">
+            <div class="modal-content" style="background:#E5FBFF">
+                <div class="modal-header" style="background:#0c90a5">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                </div>
+                <div class="modal-body">
+        
+        <div class="container-xl TNR">
+            <!-- A1-3 -->
+            <div class="row py-5 px-1">
+                <div class="col-md-6 pr-lg-5 pr-md-0">
+                    <div>
+                        Менің   отбасым үлкен. Әжем, әкем, анам, мен және екі бауырым бар. Біз уақытты бірге   өткізуді ұнатамыз. Мереке күндері анам   ет асады. Бәріміз дастарқан басында әңгімелесеміз. Жақында отбасым бұдан да   үлкен болады, мен үйленемін.
+                    </div>
+                    <div class="text-right">
+                        <div style="display:inline-block; width:91%; border-top:1px solid #000"></div>
+                    </div>
+                    <div class="text-center">
+                        <div style="display:inline-block; width:min(90%, 300px)">
+                            <div style="font-size:1.5em; font-weight:700; line-height:1.3em; min-height:60px">
+                                <div class="text-left"><i> ОТБАСЫ </i></div>
+                                <div class="text-right"><i> FAMILY </i></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="text-left">
+                        <div style="display:inline-block; width:91%; border-top:1px solid #000; margin-bottom:10px"></div>
+                    </div>
+                    <div>
+                        I have a large family. I have a grandmother, a father, a mother, and two siblings. We like spending time together. On holidays, my mother cooks meat. We all talk at the dinner table. Soon my family will expand, as I will get married.
+                    </div>
+                </div>
+                <div class="col-md-6 position-relative" style="min-height:300px">
+                    <img src="/assert/img/TA1-3.jpg" style="height:100%; width:100%; top:0; left:0; object-fit:cover; position:absolute">
+                </div>
+            </div>
+        </div>
+        
+                </div>
+                <div class="modal-footer">
+                    &nbsp;
+                </div>
+            </div>
+        </div>
+    </div>
+    </section>
+    
+    <section>
+    <div class="modal fade" id="ModalTA1-4" data-backdrop="static" data-keyboard="false" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable" style="width:97%; max-width:1500px">
+            <div class="modal-content" style="background:#E5FBFF">
+                <div class="modal-header" style="background:#0c90a5">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                </div>
+                <div class="modal-body">
+        
+        <div class="container-xl TNR">
+            <!-- A1-4 -->
+            <div class="row py-5 px-1">
+                <div class="col-md-6 pr-lg-5 pr-md-0">
+                    <div>
+                        Бос уақытымда саябақта серуендеуді ұнатамын. Кейде сүйікті кафемде кітап оқимын. Мен үшін әрдайым жаңа нәрселер үйрену қызықты. Өз хоббиым бар. Құстар мен гүлдердің түрлерін және олардың аттарын білгім келеді. Менің бос уақытым көп емес.
+                    </div>
+                    <div class="text-right">
+                        <div style="display:inline-block; width:91%; border-top:1px solid #000"></div>
+                    </div>
+                    <div class="text-center">
+                        <div style="display:inline-block; width:min(90%, 400px)">
+                            <div style="font-size:1.5em; font-weight:700; line-height:1.3em; min-height:60px">
+                                <div class="text-left"><i> БОС УАҚЫТЫМ </i></div>
+                                <div class="text-right"><i> MY FREE TIME </i></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="text-left">
+                        <div style="display:inline-block; width:91%; border-top:1px solid #000; margin-bottom:10px"></div>
+                    </div>
+                    <div>
+                        In my free time, I like walking in the park. Sometimes I read in my favourite café. I am interested in learning new things all the time. I have a hobby. I am eager to learn the types and names of birds and flowers. I do not have much free time.
+                    </div>
+                </div>
+                <div class="col-md-6 position-relative" style="min-height:300px">
+                    <img src="/assert/img/TA1-4.jpg" style="height:100%; width:100%; top:0; left:0; object-fit:cover; position:absolute">
+                </div>
+            </div>
+        </div>
+        
+                </div>
+                <div class="modal-footer">
+                    &nbsp;
+                </div>
+            </div>
+        </div>
+    </div>
+    </section>
+    
+    <section>
+    <div class="modal fade" id="ModalTA1-5" data-backdrop="static" data-keyboard="false" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable" style="width:97%; max-width:1500px">
+            <div class="modal-content" style="background:#E5FBFF">
+                <div class="modal-header" style="background:#0c90a5">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                </div>
+                <div class="modal-body">
+        
+        <div class="container-xl TNR">
+            <!-- A1-5 -->
+            <div class="row py-5 px-1">
+                <div class="col-md-6 pr-lg-5 pr-md-0">
+                    <div>
+                        Менің сүйікті тағамым – қуырдақ. Оны таза етті майға қуыру арқылы дайындайды. Оған аздап картоп, пияз және дәмдеуіштер қосады. Оны әзірлеу ұзақ уақыт алады. Сол себепті, анашым қуырдақты демалыс күндері қуырады. Біз оны отбасымызбен жақсы көреміз. Қуырдақты жақсы көрмеу мүмкін емес.
+                    </div>
+                    <div class="text-right">
+                        <div style="display:inline-block; width:91%; border-top:1px solid #000"></div>
+                    </div>
+                    <div class="text-center">
+                        <div style="display:inline-block; width:min(90%, 300px)">
+                            <div style="font-size:1.5em; font-weight:700; line-height:1.3em; min-height:60px">
+                                <div class="text-left"><i> ТАМАҚТАНУ </i></div>
+                                <div class="text-right"><i> MEALS </i></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="text-left">
+                        <div style="display:inline-block; width:91%; border-top:1px solid #000; margin-bottom:10px"></div>
+                    </div>
+                    <div>
+                        My favorite food is kuyrdak. It is pure meat fried in oil. A few potatoes, onions and spices are added, too. Cooking kuyrdak takes a lot of time. That is why my mother fries kuyrdak on weekends. Our family loves it. It is impossible not to love kuyrdak.
+                    </div>
+                </div>
+                <div class="col-md-6 position-relative" style="min-height:300px">
+                    <img src="/assert/img/TA1-5.jpg" style="height:100%; width:100%; top:0; left:0; object-fit:cover; position:absolute">
+                </div>
+            </div>
+        </div>
+        
+                </div>
+                <div class="modal-footer">
+                    &nbsp;
+                </div>
+            </div>
+        </div>
+    </div>
+    </section>
+    
+    <section>
+    <div class="modal fade" id="ModalTA1-6" data-backdrop="static" data-keyboard="false" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable" style="width:97%; max-width:1500px">
+            <div class="modal-content" style="background:#E5FBFF">
+                <div class="modal-header" style="background:#0c90a5">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                </div>
+                <div class="modal-body">
+        
+        <div class="container-xl TNR">
+            <!-- A1-6 -->
+            <div class="row py-5 px-1">
+                <div class="col-md-6 pr-lg-5 pr-md-0">
+                    <div>
+                        Менің сүйікті ісім – кітап оқу. Әртүрлі жанрларды оқимын. Тарихи кітаптар да, ғылыми фантастика да ұнайды. Кітап оқу мені дамытады және демалдырады. Ілияс Есенберлиннің «Алтын орда» трилогиясын осы аптада бітіремін.
+                    </div>
+                    <div class="text-right">
+                        <div style="display:inline-block; width:91%; border-top:1px solid #000"></div>
+                    </div>
+                    <div class="text-center">
+                        <div style="display:inline-block; width:min(90%, 350px)">
+                            <div style="font-size:1.5em; font-weight:700; line-height:1.3em; min-height:60px">
+                                <div class="text-left"><i> СҮЙІКТІ ІСІМ </i></div>
+                                <div class="text-right"><i> MY HOBBY </i></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="text-left">
+                        <div style="display:inline-block; width:91%; border-top:1px solid #000; margin-bottom:10px"></div>
+                    </div>
+                    <div>
+                        My hobby is reading. I read books of different genres. I like both historical and science fiction books. Reading helps me develop and rest. I will finish Ilyas Yesenberlin’s “The Golden Horde” trilogy this week.
+                    </div>
+                </div>
+                <div class="col-md-6 position-relative" style="min-height:300px">
+                    <img src="/assert/img/TA1-6.jpg" style="height:100%; width:100%; top:0; left:0; object-fit:cover; position:absolute">
+                </div>
+            </div>
+        </div>
+        
+                </div>
+                <div class="modal-footer">
+                    &nbsp;
+                </div>
+            </div>
+        </div>
+    </div>
+    </section>
+    
+    <section>
+    <div class="modal fade" id="ModalTA1-7" data-backdrop="static" data-keyboard="false" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable" style="width:97%; max-width:1500px">
+            <div class="modal-content" style="background:#E5FBFF">
+                <div class="modal-header" style="background:#0c90a5">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                </div>
+                <div class="modal-body">
+        
+        <div class="container-xl TNR">
+            <!-- A1-7 -->
+            <div class="row py-5 px-1">
+                <div class="col-md-6 pr-lg-5 pr-md-0">
+                    <div>
+                        Мен ауылда тұрамын. Ауылдың жанында тау, жота, орман бар. Күнде орманға барамын. Жидек теремін, демаламын, құстардың әнін тыңдаймын. Орманда аңдар кездеседі. Оларды мазаламаймын. Қоқыс тастамаймын. Табиғатқа қамқор болуға тырысамын.
+                    </div>
+                    <div class="text-right">
+                        <div style="display:inline-block; width:91%; border-top:1px solid #000"></div>
+                    </div>
+                    <div class="text-center">
+                        <div style="display:inline-block; width:min(90%, 400px)">
+                            <div style="font-size:1.5em; font-weight:700; line-height:1.3em; min-height:60px">
+                                <div class="text-left"><i> АУЫЛ ТАБИҒАТЫ </i></div>
+                                <div class="text-right"><i> VILLAGE NATURE </i></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="text-left">
+                        <div style="display:inline-block; width:91%; border-top:1px solid #000; margin-bottom:10px"></div>
+                    </div>
+                    <div>
+                        I live in a village. There are  mountains, hills, and a forest near the village. Every day, I go to the forest. I pick berries, relax, and listen to the birds singing. There are also animals in the forest. I don’t disturb them. I don’t litter. I try to take care of nature.
+                    </div>
+                </div>
+                <div class="col-md-6 position-relative" style="min-height:300px">
+                    <img src="/assert/img/TA1-7.jpg" style="height:100%; width:100%; top:0; left:0; object-fit:cover; position:absolute">
+                </div>
+            </div>
+        </div>
+        
+                </div>
+                <div class="modal-footer">
+                    &nbsp;
+                </div>
+            </div>
+        </div>
+    </div>
+    </section>
+    
+    <section>
+    <div class="modal fade" id="ModalTA1-8" data-backdrop="static" data-keyboard="false" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable" style="width:97%; max-width:1500px">
+            <div class="modal-content" style="background:#E5FBFF">
+                <div class="modal-header" style="background:#0c90a5">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                </div>
+                <div class="modal-body">
+        
+        <div class="container-xl TNR">
+            <!-- A1-8 -->
+            <div class="row py-5 px-1">
+                <div class="col-md-6 pr-lg-5 pr-md-0">
+                    <div>
+                        Аяла интернетте көп уақыт өткізеді. Сүйікті қосымшасы – Instagram. Аяла – суретші. Суреттерін Instagram желісіне салады. Достары, туыстары Аяланы қолдайды. Интернет қолданушылары да оның суреттерін мақтайды. Жағымды пікір жазады. Аяла күнде Instagram парақшасына кіреді, пікірлерді оқиды, жауап береді.
+                    </div>
+                    <div class="text-right">
+                        <div style="display:inline-block; width:91%; border-top:1px solid #000"></div>
+                    </div>
+                    <div class="text-center">
+                        <div style="display:inline-block; width:min(90%, 500px)">
+                            <div style="font-size:1.5em; font-weight:700; line-height:1.3em; min-height:60px">
+                                <div class="text-left"><i> КОМПЬЮТЕР ЖӘНЕ ИНТЕРНЕТ </i></div>
+                                <div class="text-right"><i> COMPUTERS AND INTERNET </i></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="text-left">
+                        <div style="display:inline-block; width:91%; border-top:1px solid #000; margin-bottom:10px"></div>
+                    </div>
+                    <div>
+                        Ayala spends a lot of time on the internet. Her favorite app is Instagram. Ayala is an artist. She uploads her drawings to Instagram. Her friends and relatives support her. Internet users also praise her artwork. They write positive comments. Ayala visits her Instagram page every day, reads the comments, and replies to them.
+                    </div>
+                </div>
+                <div class="col-md-6 position-relative" style="min-height:300px">
+                    <img src="/assert/img/TA1-8.jpg" style="height:100%; width:100%; top:0; left:0; object-fit:cover; position:absolute">
+                </div>
+            </div>
+        </div>
+        
+                </div>
+                <div class="modal-footer">
+                    &nbsp;
+                </div>
+            </div>
+        </div>
+    </div>
+    </section>
+    
+    <section>
+    <div class="modal fade" id="ModalTA1-9" data-backdrop="static" data-keyboard="false" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable" style="width:97%; max-width:1500px">
+            <div class="modal-content" style="background:#E5FBFF">
+                <div class="modal-header" style="background:#0c90a5">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                </div>
+                <div class="modal-body">
+        
+        <div class="container-xl TNR">
+            <!-- A1-9 -->
+            <div class="row py-5 px-1">
+                <div class="col-md-6 pr-lg-5 pr-md-0">
+                    <div>
+                        Күн сайын таңғы сағат алтыда тұрамын. Үйімнің жанында саябақ бар. Сол жерде жарты сағат жүгіремін. Сосын таңғы ас ішемін. Таңғы асқа жұмыртқа, жеміс, ірімшік жеймін. Одан кейін бір сағат бойы кітап оқимын. Жұмысқа сағат тоғызда барамын. Міне, таңғы әдеттерім – осы.
+                    </div>
+                    <div class="text-right">
+                        <div style="display:inline-block; width:91%; border-top:1px solid #000"></div>
+                    </div>
+                    <div class="text-center">
+                        <div style="display:inline-block; width:min(90%, 400px)">
+                            <div style="font-size:1.5em; font-weight:700; line-height:1.3em; min-height:60px">
+                                <div class="text-left"><i> ТАҢҒЫ ӘДЕТТЕРІМ </i></div>
+                                <div class="text-right"><i> MY MORNING HABITS </i></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="text-left">
+                        <div style="display:inline-block; width:91%; border-top:1px solid #000; margin-bottom:10px"></div>
+                    </div>
+                    <div>
+                        Every day, I wake up at six in the morning. There is a park near my house. I run there for half an hour. Then I have breakfast. For breakfast, I eat eggs, fruit, and cheese. After that, I read a book for an hour. I go to work at nine o’clock. These are my morning habits.
+                    </div>
+                </div>
+                <div class="col-md-6 position-relative" style="min-height:300px">
+                    <img src="/assert/img/TA1-9.jpg" style="height:100%; width:100%; top:0; left:0; object-fit:cover; position:absolute">
+                </div>
+            </div>
+        </div>
+        
+                </div>
+                <div class="modal-footer">
+                    &nbsp;
+                </div>
+            </div>
+        </div>
+    </div>
+    </section>
+    
+    <section>
+    <div class="modal fade" id="ModalTA1-10" data-backdrop="static" data-keyboard="false" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable" style="width:97%; max-width:1500px">
+            <div class="modal-content" style="background:#E5FBFF">
+                <div class="modal-header" style="background:#0c90a5">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                </div>
+                <div class="modal-body">
+        
+        <div class="container-xl TNR">
+            <!-- A1-10 -->
+            <div class="row py-5 px-1">
+                <div class="col-md-6 pr-lg-5 pr-md-0">
+                    <div>
+                        Әр адамның жүрегінде бір нәрседен қорқу сезімі бар. Менің фобиям – биіктік. Биік тауларға, биік мұнараларға шықпаймын. Ұшаққа да отырғым келмейді. Тіпті көп қабатты үйлердің жоғарғы қабаттарына көтерілу мен үшін қорқынышты.
+                    </div>
+                    <div class="text-right">
+                        <div style="display:inline-block; width:91%; border-top:1px solid #000"></div>
+                    </div>
+                    <div class="text-center">
+                        <div style="display:inline-block; width:min(90%, 350px)">
+                            <div style="font-size:1.5em; font-weight:700; line-height:1.3em; min-height:60px">
+                                <div class="text-left"><i> МЕНІҢ ФОБИЯМ </i></div>
+                                <div class="text-right"><i> MY PHOBIA </i></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="text-left">
+                        <div style="display:inline-block; width:91%; border-top:1px solid #000; margin-bottom:10px"></div>
+                    </div>
+                    <div>
+                        In every person’s heart, there is fear of something. My phobia is height. I do not climb tall mountains or towers. I do not want to get on planes. Even ascending to the top floors of large buildings scares me.
+                    </div>
+                </div>
+                <div class="col-md-6 position-relative" style="min-height:300px">
+                    <img src="/assert/img/TA1-10.jpg" style="height:100%; width:100%; top:0; left:0; object-fit:cover; position:absolute">
+                </div>
+            </div>
+        </div>
+        
+                </div>
+                <div class="modal-footer">
+                    &nbsp;
+                </div>
+            </div>
+        </div>
+    </div>
+    </section>
+    
+    <section>
+    <div class="modal fade" id="ModalTA2-1" data-backdrop="static" data-keyboard="false" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable" style="width:97%; max-width:1500px">
+            <div class="modal-content" style="background:#E5FBFF">
+                <div class="modal-header" style="background:#0c90a5">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                </div>
+                <div class="modal-body">
+        
+        <div class="container-xl TNR">
+            <!-- A2-1 -->
+            <div class="row py-5 px-1">
+                <div class="col-md-6 pr-lg-5 pr-md-0">
+                    <div>
+                        Қонақ бөлмеде Серіктің атасының суреті бар. Суретте Бейсен атаның жас кезі. Бейсен ата – соғыс ардагері. Қазір тоқсан жастан асты. Ата мен немере қонақ бөлмеде көп әңгімелеседі. Серіктің жасы жиырмада. Көзі қоңыр, шашы да қоңыр әрі бұйра, бойы ұзын. Өзі байсалды, әдепті. Серіктің түрі де, мінезі де Бейсен атаның жас кезіне қатты ұқсайды.
+                    </div>
+                    <div class="text-right">
+                        <div style="display:inline-block; width:91%; border-top:1px solid #000"></div>
+                    </div>
+                    <div class="text-center">
+                        <div style="display:inline-block; width:min(90%, 400px)">
+                            <div style="font-size:1.5em; font-weight:700; line-height:1.3em; min-height:60px">
+                                <div class="text-left"><i> СЕРІК ПЕН АТАСЫ </i></div>
+                                <div class="text-right"><i> SERIK AND HIS GRANDPA </i></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="text-left">
+                        <div style="display:inline-block; width:91%; border-top:1px solid #000; margin-bottom:10px"></div>
+                    </div>
+                    <div>
+                        There is a photo of Serik’s grandfather in the living room. The photo shows grandpa Baisen in his youth. Grandpa Baisen is a war veteran and is now over ninety years old. The grandfather and grandson often talk in the living room. Serik is twenty years old. He has brown eyes, brown curly hair, and is tall. He is calm and polite. Both Serik’s appearance and character strongly resemble his grandfather Baisen in his younger days.
+                    </div>
+                </div>
+                <div class="col-md-6 position-relative" style="min-height:300px">
+                    <img src="/assert/img/TA2-1.jpg" style="height:100%; width:100%; top:0; left:0; object-fit:cover; position:absolute">
+                </div>
+            </div>
+        </div>
+        
+                </div>
+                <div class="modal-footer">
+                    &nbsp;
+                </div>
+            </div>
+        </div>
+    </div>
+    </section>
+    
+    <section>
+    <div class="modal fade" id="ModalTA2-2" data-backdrop="static" data-keyboard="false" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable" style="width:97%; max-width:1500px">
+            <div class="modal-content" style="background:#E5FBFF">
+                <div class="modal-header" style="background:#0c90a5">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                </div>
+                <div class="modal-body">
+        
+        <div class="container-xl TNR">
+            <!-- A2-2 -->
+            <div class="row py-5 px-1">
+                <div class="col-md-6 pr-lg-5 pr-md-0">
+                    <div>
+                        Берік – менің ағам. Ол жиырма жаста. Оның бойы ұзын, шашы қара әрі бұйра, көзі де қара. Менің жасым онда. Мен ағама ұқсамаймын. Көзім қоңыр, шашым қысқа, бойым да қысқа. Берік біздің анамызға ұқсайды. Анамыз – сұлу.
+                    </div>
+                    <div class="text-right">
+                        <div style="display:inline-block; width:91%; border-top:1px solid #000"></div>
+                    </div>
+                    <div class="text-center">
+                        <div style="display:inline-block; width:min(90%, 350px)">
+                            <div style="font-size:1.5em; font-weight:700; line-height:1.3em; min-height:60px">
+                                <div class="text-left"><i> БЕТ-ӘЛПЕТ </i></div>
+                                <div class="text-right"><i> APPEARANCE </i></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="text-left">
+                        <div style="display:inline-block; width:91%; border-top:1px solid #000; margin-bottom:10px"></div>
+                    </div>
+                    <div>
+                        Berik is my older brother. He is twenty years old. He is tall, with black curly hair and black eyes. I am ten years old. I don't look like my brother. My eyes are brown, my hair is short, and I am short too. Berik looks like our mother. Our mother is beautiful.
+                    </div>
+                </div>
+                <div class="col-md-6 position-relative" style="min-height:300px">
+                    <img src="/assert/img/TA2-2.jpg" style="height:100%; width:100%; top:0; left:0; object-fit:cover; position:absolute">
+                </div>
+            </div>
+        </div>
+        
+                </div>
+                <div class="modal-footer">
+                    &nbsp;
+                </div>
+            </div>
+        </div>
+    </div>
+    </section>
+    
+    <section>
+    <div class="modal fade" id="ModalTA2-3" data-backdrop="static" data-keyboard="false" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable" style="width:97%; max-width:1500px">
+            <div class="modal-content" style="background:#E5FBFF">
+                <div class="modal-header" style="background:#0c90a5">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                </div>
+                <div class="modal-body">
+        
+        <div class="container-xl TNR">
+            <!-- A2-3 -->
+            <div class="row py-5 px-1">
+                <div class="col-md-6 pr-lg-5 pr-md-0">
+                    <div>
+                        Анда-санда балық аулауға көлге барамыз. Көлдің аты Көлсай. Бізбен бірге әкемнің досы да барады. Көлдің суы мөлдір, бетіне қарағанда балықтар көрінеді, бірақ оларды ұстау қиын. Қармақ саламыз, балық түспейді. Кейде кішкентай балық түседі, бірақ біз оны қайтадан суға жібереміз. Балық аулау деген тек аты ғана, шындығында бос уақытымызда табиғатқа таза ауа жұту үшін ғана шығамыз. Балықты жеуге анашым әрдайым дүкеннен сатып алады.
+                    </div>
+                    <div class="text-right">
+                        <div style="display:inline-block; width:91%; border-top:1px solid #000"></div>
+                    </div>
+                    <div class="text-center">
+                        <div style="display:inline-block; width:min(90%, 300px)">
+                            <div style="font-size:1.5em; font-weight:700; line-height:1.3em; min-height:60px">
+                                <div class="text-left"><i> БАЛЫҚ АУЛАУ </i></div>
+                                <div class="text-right"><i> FISHING </i></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="text-left">
+                        <div style="display:inline-block; width:91%; border-top:1px solid #000; margin-bottom:10px"></div>
+                    </div>
+                    <div>
+                        At times, we go fishing to the lake. The lake is called Kolsay. My father’s friend accompanies us. The lake water is transparent, fish can be seen through it, but they are difficult to catch. We cast the line, but no fish is caught. Sometimes there are small fish on the hook, but we release them back to water. Fishing is just an excuse, as our true purpose is to breath some fresh air in our free time. And the fish we eat is store-bought, my mom always buys it.
+                    </div>
+                </div>
+                <div class="col-md-6 position-relative" style="min-height:300px">
+                    <img src="/assert/img/TA2-3.jpg" style="height:100%; width:100%; top:0; left:0; object-fit:cover; position:absolute">
+                </div>
+            </div>
+        </div>
+        
+                </div>
+                <div class="modal-footer">
+                    &nbsp;
+                </div>
+            </div>
+        </div>
+    </div>
+    </section>
+    
+    <section>
+    <div class="modal fade" id="ModalTA2-4" data-backdrop="static" data-keyboard="false" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable" style="width:97%; max-width:1500px">
+            <div class="modal-content" style="background:#E5FBFF">
+                <div class="modal-header" style="background:#0c90a5">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                </div>
+                <div class="modal-body">
+        
+        <div class="container-xl TNR">
+            <!-- A2-4 -->
+            <div class="row py-5 px-1">
+                <div class="col-md-6 pr-lg-5 pr-md-0">
+                    <div>
+                        Сүйікті әнім – "Атамекен". Оның әнін Ескендір Хасанғалиев, сөзін Қадір Мырза Әлі жазды. Бұл – туған жерге махаббат туралы ең танымал әндердің бірі. Әнді әсіресе шет елдердегі отандастар туған жер мен елге деген сүйіспеншілігі мен сағынышын жеткізу үшін айтады. Бұл ән адамға өз отанында өмір сүру үлкен бақыт екенін сездіреді.
+                    </div>
+                    <div class="text-right">
+                        <div style="display:inline-block; width:91%; border-top:1px solid #000"></div>
+                    </div>
+                    <div class="text-center">
+                        <div style="display:inline-block; width:min(90%, 380px)">
+                            <div style="font-size:1.5em; font-weight:700; line-height:1.3em; min-height:60px">
+                                <div class="text-left"><i> СҮЙІКТІ ӘНІМ </i></div>
+                                <div class="text-right"><i> MY FAVOURITE SONG </i></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="text-left">
+                        <div style="display:inline-block; width:91%; border-top:1px solid #000; margin-bottom:10px"></div>
+                    </div>
+                    <div>
+                        My favorite song is “Atameken”. The melody was written by Yeskendir Khassangaliyev, and the lyrics by Kadir Myrza Ali. This is one of the most well-known songs about the love to the motherland. Specifically, our compatriots abroad sing this song to convey their motherland love and longing. This song makes people feel that living in one’s motherland is great happiness.
+                    </div>
+                </div>
+                <div class="col-md-6 position-relative" style="min-height:300px">
+                    <img src="/assert/img/TA2-4.jpg" style="height:100%; width:100%; top:0; left:0; object-fit:cover; position:absolute">
+                </div>
+            </div>
+        </div>
+        
+                </div>
+                <div class="modal-footer">
+                    &nbsp;
+                </div>
+            </div>
+        </div>
+    </div>
+    </section>
+    
+    <section>
+    <div class="modal fade" id="ModalTA2-5" data-backdrop="static" data-keyboard="false" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable" style="width:97%; max-width:1500px">
+            <div class="modal-content" style="background:#E5FBFF">
+                <div class="modal-header" style="background:#0c90a5">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                </div>
+                <div class="modal-body">
+        
+        <div class="container-xl TNR">
+            <!-- A2-5 -->
+            <div class="row py-5 px-1">
+                <div class="col-md-6 pr-lg-5 pr-md-0">
+                    <div>
+                        Менің атым Ғабит. Студентпін. Соңғы кезде денсаулығым нашарлады. Өмір салтымды өзгерттім: спортпен айналыса бастадым. Майлы, тәтті тағамдардан бас тарттым. Көп жеміс-жидек, көкөніс жеймін. Газдалған сусындар емес, су ішемін. Күнде сағат он-он бірлерде ұйқыға кетемін. Сапалы ұйқы күш-қуат береді екен. Телефонды қолдану уақытын қысқарттым, компьютер алдында көп отырмаймын. Денсаулығым жақсара бастады.
+                    </div>
+                    <div class="text-right">
+                        <div style="display:inline-block; width:91%; border-top:1px solid #000"></div>
+                    </div>
+                    <div class="text-center">
+                        <div style="display:inline-block; width:min(90%, 500px)">
+                            <div style="font-size:1.5em; font-weight:700; line-height:1.3em; min-height:60px">
+                                <div class="text-left"><i> САЛАМАТТЫ ӨМІР САЛТЫ </i></div>
+                                <div class="text-right"><i> A HEALTHY LIFESTYLE </i></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="text-left">
+                        <div style="display:inline-block; width:91%; border-top:1px solid #000; margin-bottom:10px"></div>
+                    </div>
+                    <div>
+                        My name is Gabit. I am a student. Recently, my health worsened. I decided to change my lifestyle: I started doing sports. I gave up fatty and sweet foods. I eat plenty of fruits, berries, and vegetables. Instead of fizzy drinks, I drink water. Every day, I go to bed around ten or eleven o’clock. Quality sleep gives me energy. I reduced my phone usage and avoid sitting at the computer for too long. My health has started to improve.
+                    </div>
+                </div>
+                <div class="col-md-6 position-relative" style="min-height:300px">
+                    <img src="/assert/img/TA2-5.jpg" style="height:100%; width:100%; top:0; left:0; object-fit:cover; position:absolute">
+                </div>
+            </div>
+        </div>
+        
+                </div>
+                <div class="modal-footer">
+                    &nbsp;
+                </div>
+            </div>
+        </div>
+    </div>
+    </section>
+    
+    <section>
+    <div class="modal fade" id="ModalTA2-6" data-backdrop="static" data-keyboard="false" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable" style="width:97%; max-width:1500px">
+            <div class="modal-content" style="background:#E5FBFF">
+                <div class="modal-header" style="background:#0c90a5">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                </div>
+                <div class="modal-body">
+        
+        <div class="container-xl TNR">
+            <!-- A2-6 -->
+            <div class="row py-5 px-1">
+                <div class="col-md-6 pr-lg-5 pr-md-0">
+                    <div>
+                        Сержан он жаста. Ол «Алдар Көсе» телехикаясын алғашқы рет осыдан екі жыл бұрын көрді. Алдар Көсе – қазақтың әйгілі ертегі кейіпкері. Телехикаяда оны Дәурен Серғазин ойнайды. Сержан осы телехикаяны жақсы көреді. Қайта-қайта тамашалайды. Сержанның Алдар Көсеге ұқсағысы келеді. Сондай ақылды, тапқыр болуды армандайды. Бірақ Алдар Көсе сияқты адамдарды алдауды қаламайды. 
+                    </div>
+                    <div class="text-right">
+                        <div style="display:inline-block; width:91%; border-top:1px solid #000"></div>
+                    </div>
+                    <div class="text-center">
+                        <div style="display:inline-block; width:min(90%, 400px)">
+                            <div style="font-size:1.5em; font-weight:700; line-height:1.3em; min-height:60px">
+                                <div class="text-left"><i> СҮЙІКТІ ФИЛЬМІМ </i></div>
+                                <div class="text-right"><i> MY FAVOURITE MOVIE </i></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="text-left">
+                        <div style="display:inline-block; width:91%; border-top:1px solid #000; margin-bottom:10px"></div>
+                    </div>
+                    <div>
+                        Serzhan is ten years old. He watched the TV series Aldar Köse for the first time two years ago. Aldar Köse is a famous character from Kazakh fairy tales. In the series, he is played by Dauren Sergazin. Serzhan loves this show and watches it over and over again. He wants to be like Aldar Köse. He dreams of being just as smart and resourceful. However, unlike Aldar Köse, he does not want to deceive people.
+                    </div>
+                </div>
+                <div class="col-md-6 position-relative" style="min-height:300px">
+                    <img src="/assert/img/TA2-6.jpg" style="height:100%; width:100%; top:0; left:0; object-fit:cover; position:absolute">
+                </div>
+            </div>
+        </div>
+        
+                </div>
+                <div class="modal-footer">
+                    &nbsp;
+                </div>
+            </div>
+        </div>
+    </div>
+    </section>
+    
+    <section>
+    <div class="modal fade" id="ModalTA2-7" data-backdrop="static" data-keyboard="false" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable" style="width:97%; max-width:1500px">
+            <div class="modal-content" style="background:#E5FBFF">
+                <div class="modal-header" style="background:#0c90a5">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                </div>
+                <div class="modal-body">
+        
+        <div class="container-xl TNR">
+            <!-- A2-7 -->
+            <div class="row py-5 px-1">
+                <div class="col-md-6 pr-lg-5 pr-md-0">
+                    <div>
+                        Ақгүлдің шашы қап-қара. Шашын ақшыл түске бояғысы келді. Сол үшін шаштаразға барды. Алайда шаштараз: «Бірден бояй алмаймыз, бірнеше рет келуіңіз керек», – деді. Қанық қара түстен ақ түске өту көп уақыт алады екен. «Ал тез істегіңіз келсе, шашыңызға зақым келеді», – деп түсіндірді шаштараз. Ақгүл біраз ойланды да, бояудан бас тартты. Есесіне шаштараз Ақгүлдің шашын біраз қиды, әсемдеді. Ақгүлдің оған көңілі толды.
+                    </div>
+                    <div class="text-right">
+                        <div style="display:inline-block; width:91%; border-top:1px solid #000"></div>
+                    </div>
+                    <div class="text-center">
+                        <div style="display:inline-block; width:min(90%, 400px)">
+                            <div style="font-size:1.5em; font-weight:700; line-height:1.3em; min-height:60px">
+                                <div class="text-left"><i> ШАШТАРАЗДА </i></div>
+                                <div class="text-right"><i> AT THE HAIRDRESSER’S </i></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="text-left">
+                        <div style="display:inline-block; width:91%; border-top:1px solid #000; margin-bottom:10px"></div>
+                    </div>
+                    <div>
+                        Akgul's hair is jet black. She wanted to dye it a lighter color, so she went to a hair salon. However, the hairdresser told her, "We can't dye it in one go; you'll need to come several times." It turned out that transitioning from deep black to white takes a long time. "If you want it done quickly, your hair will be damaged," the hairdresser explained. Akgul thought for a while and decided against dyeing her hair. Instead, the hairdresser trimmed and styled it, making it look more beautiful. Akgul was pleased with the result.
+                    </div>
+                </div>
+                <div class="col-md-6 position-relative" style="min-height:300px">
+                    <img src="/assert/img/TA2-7.jpg" style="height:100%; width:100%; top:0; left:0; object-fit:cover; position:absolute">
+                </div>
+            </div>
+        </div>
+        
+                </div>
+                <div class="modal-footer">
+                    &nbsp;
+                </div>
+            </div>
+        </div>
+    </div>
+    </section>
+    
+    <section>
+    <div class="modal fade" id="ModalTA2-8" data-backdrop="static" data-keyboard="false" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable" style="width:97%; max-width:1500px">
+            <div class="modal-content" style="background:#E5FBFF">
+                <div class="modal-header" style="background:#0c90a5">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                </div>
+                <div class="modal-body">
+        
+        <div class="container-xl TNR">
+            <!-- A2-8 -->
+            <div class="row py-5 px-1">
+                <div class="col-md-6 pr-lg-5 pr-md-0">
+                    <div>
+                        Электронды кітаптар қазір қағаз кітаптардан әлдеқайда көп оқылады. Бір қолданбаға жүздеген шығарма «сыяды». Сондықтан қазіргі заманда ғаламтор кітапханалары ашылды. Мысалы, А. Байтұрсынұлы атындағы Тіл білімі институтының өз электронды кітапханасы бар. Кітаптарды біраз уақытқа «жалға» алуға болады. Ал Kitap.kz платформасы барлығына ашық. Ол жерде бес мыңнан астам онлайн-кітап пен аудиокітаптар бар. Шығармаларды жүктеуге, онлайн оқуға немесе тыңдауға болады.
+                    </div>
+                    <div class="text-right">
+                        <div style="display:inline-block; width:91%; border-top:1px solid #000"></div>
+                    </div>
+                    <div class="text-center">
+                        <div style="display:inline-block; width:min(90%, 350px)">
+                            <div style="font-size:1.5em; font-weight:700; line-height:1.3em; min-height:60px">
+                                <div class="text-left"><i> КІТАПХАНАДА </i></div>
+                                <div class="text-right"><i> AT A LIBRARY </i></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="text-left">
+                        <div style="display:inline-block; width:91%; border-top:1px solid #000; margin-bottom:10px"></div>
+                    </div>
+                    <div>
+                        Nowadays, e-books are read much more often than paper books. A single app can hold hundreds of works. That’s   why online libraries have become popular in the modern era. For example, A.Baitursynuly Institute of Linguistics has its own e-library. Books can be “borrowed” for a certain period. The Kitap.kz platform, on the other hand, is open to everyone. It offers more than five thousand online books and audiobooks. You can download, read online, or listen to the works available there.
+                    </div>
+                </div>
+                <div class="col-md-6 position-relative" style="min-height:300px">
+                    <img src="/assert/img/TA2-8.jpg" style="height:100%; width:100%; top:0; left:0; object-fit:cover; position:absolute">
+                </div>
+            </div>
+        </div>
+        
+                </div>
+                <div class="modal-footer">
+                    &nbsp;
+                </div>
+            </div>
+        </div>
+    </div>
+    </section>
+    
+    <section>
+    <div class="modal fade" id="ModalTA2-9" data-backdrop="static" data-keyboard="false" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable" style="width:97%; max-width:1500px">
+            <div class="modal-content" style="background:#E5FBFF">
+                <div class="modal-header" style="background:#0c90a5">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                </div>
+                <div class="modal-body">
+        
+        <div class="container-xl TNR">
+            <!-- A2-9 -->
+            <div class="row py-5 px-1">
+                <div class="col-md-6 pr-lg-5 pr-md-0">
+                    <div>
+                        Берік қалада жұмыс істейді. Әйелі, төрт баласы бар. Өзі қырық жаста. Кейде отбасымен бірге ауылға барады. Ата-анасын, тоқсан жастағы қарт әжесін көреді. Бүкіл отбасы ауладағы өрік ағашының көлеңкесінде отырады. Әжесі Қамар бұрынғы заман туралы, өмір туралы ұзақ әңгімелер айтады. Берік сондай әңгімелерді тыңдауды жақсы көреді. Қаланың шуын, қарбаласын ұмытады. Балалық шағына қайтады.
+                    </div>
+                    <div class="text-right">
+                        <div style="display:inline-block; width:91%; border-top:1px solid #000"></div>
+                    </div>
+                    <div class="text-center">
+                        <div style="display:inline-block; width:min(90%, 400px)">
+                            <div style="font-size:1.5em; font-weight:700; line-height:1.3em; min-height:60px">
+                                <div class="text-left"><i> ӘЖЕМНІҢ ӘҢГІМЕЛЕРІ </i></div>
+                                <div class="text-right"><i> MY GRANDMA’S STORIES </i></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="text-left">
+                        <div style="display:inline-block; width:91%; border-top:1px solid #000; margin-bottom:10px"></div>
+                    </div>
+                    <div>
+                        Berik works in the city. He has a wife and four children. He is forty years old. Sometimes, he visits the village with his family to see his parents and his ninety-year-old grandmother, Qamar. The whole family sits in the shade of the apricot tree in the yard. Grandmother Qamar tells long stories about the old times and life. Berik enjoys listening to these stories. He forgets the noise and rush of the city and returns to his childhood.
+                    </div>
+                </div>
+                <div class="col-md-6 position-relative" style="min-height:300px">
+                    <img src="/assert/img/TA2-9.jpg" style="height:100%; width:100%; top:0; left:0; object-fit:cover; position:absolute">
+                </div>
+            </div>
+        </div>
+        
+                </div>
+                <div class="modal-footer">
+                    &nbsp;
+                </div>
+            </div>
+        </div>
+    </div>
+    </section>
+    
+    <section>
+    <div class="modal fade" id="ModalTA2-10" data-backdrop="static" data-keyboard="false" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable" style="width:97%; max-width:1500px">
+            <div class="modal-content" style="background:#E5FBFF">
+                <div class="modal-header" style="background:#0c90a5">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                </div>
+                <div class="modal-body">
+        
+        <div class="container-xl TNR">
+            <!-- A2-10 -->
+            <div class="row py-5 px-1">
+                <div class="col-md-6 pr-lg-5 pr-md-0">
+                    <div>
+                        Қайыңды – Қазақстандағы ең әдемі әрі ең жұмбақ көлдердің бірі. Көлдің суы тұнық,   айналасы тау, орман. Көлдің тап ортасында көп қураған ағаш бар. Су олардың «белінен» келеді. Адамдар «Қайыңды» деген атау осы көл ортасындағы ағаштарға байланысты деп ойлайды. Алайда ол ағаштар – шырша. Ал қайың көл айналасында   өседі. Жаз мезгілінде көлдің суы салқын болады. Сондықтан келушілер көлге сүңгуді жақсы көреді.
+                    </div>
+                    <div class="text-right">
+                        <div style="display:inline-block; width:91%; border-top:1px solid #000"></div>
+                    </div>
+                    <div class="text-center">
+                        <div style="display:inline-block; width:min(90%, 350px)">
+                            <div style="font-size:1.5em; font-weight:700; line-height:1.3em; min-height:60px">
+                                <div class="text-left"><i> КӨЛ ЖАҒАСЫНДА </i></div>
+                                <div class="text-right"><i> BY THE LAKE </i></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="text-left">
+                        <div style="display:inline-block; width:91%; border-top:1px solid #000; margin-bottom:10px"></div>
+                    </div>
+                    <div>
+                        Kaindy is one of the most beautiful and enigmatic lakes in Kazakhstan. Its water is clear, surrounded by mountains and forests. In the very center of the lake, there are many dead trees, with water reaching their "waists." People believe the name "Kaindy" comes from the trees in the lake's center. However, those trees are actually spruces, while birch trees grow around the lake. During summer, the lake's water remains cold, and visitors enjoy diving into it.
+                    </div>
+                </div>
+                <div class="col-md-6 position-relative" style="min-height:300px">
+                    <img src="/assert/img/TA2-10.jpg" style="height:100%; width:100%; top:0; left:0; object-fit:cover; position:absolute">
+                </div>
+            </div>
+        </div>
+        
+                </div>
+                <div class="modal-footer">
+                    &nbsp;
+                </div>
+            </div>
+        </div>
+    </div>
+    </section>
+
+    <!-- LINKS -->
+    <section id="LINKS">
+        <div class="container-xl my-5">
+            
+            <h3 class="text-right" style="font-size:3.5em">
+                <b>LINKS</b>
+            </h3>
+            
+            <div class="row justify-content-around text-white my-3" style="font-size:1.2em; font-weight:400">
+                <div class="col-md-6 col-lg-5">
+                    <div class="d-flex" style="background:#280F91; border-radius:15px; padding:10px">
+                        <img class="d-block" src="/assert/img/L1.jpg" style="height:140px; aspect-ratio:1/1; object-fit:cover">
+                        <div class="ml-3">
+                            THE NATIONAL CORPUS OF THE KAZAKH LANGUAGE<br>
+                            <a href="https://qazcorpus.kz/" target="_blank"> READ MORE &gt; </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-5">
+                    <div class="d-flex" style="background:#280F91; border-radius:15px; padding:10px">
+                        <img class="d-block" src="/assert/img/L2.jpg" style="height:140px; aspect-ratio:1/1; object-fit:cover">
+                        <div class="ml-3">
+                            MOVIE EXTRACTS<br>
+                            <a href="https://qazcorpus.kz/_auyzsha-ishkorpus/film/index.php" target="_blank"> READ MORE &gt; </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="row justify-content-around text-white my-3" style="font-size:1.2em">
+                <div class="col-md-6 col-lg-5">
+                    <div class="d-flex" style="background:#280F91; border-radius:15px; padding:10px">
+                        <img class="d-block" src="/assert/img/L3.jpg" style="height:140px; aspect-ratio:1/1; object-fit:cover">
+                        <div class="ml-3">
+                            SPOKEN SUBCORPUS<br>
+                            <a href="https://qazcorpus.kz/_auyzsha-ishkorpus/index.php" target="_blank"> READ MORE &gt; </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-5">
+                    <div class="d-flex" style="background:#280F91; border-radius:15px; padding:10px">
+                        <img class="d-block" src="/assert/img/L4.jpg" style="height:140px; aspect-ratio:1/1; object-fit:cover">
+                        <div class="ml-3">
+                            A.BAITURSYNULY INSTITUTE OF LINGUISTICS<br>
+                            <a href="https://tbi.kz/" target="_blank"> READ MORE &gt; </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="row justify-content-around text-white my-3" style="font-size:1.2em">
+                <div class="col-md-6 col-lg-5">
+                    <div class="d-flex" style="background:#280F91; border-radius:15px; padding:10px">
+                        <img class="d-block" src="/assert/img/L5.jpg" style="height:140px; aspect-ratio:1/1; object-fit:cover">
+                        <div class="ml-3">
+                            VIDEO CONTENT<br>
+                            <a href="https://qazcorpus.kz/_auyzsha-ishkorpus/beinecontent/index.php" target="_blank"> READ MORE &gt; </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-5">
+                    <div class="d-flex" style="background:#280F91; border-radius:15px; padding:10px">
+                        <img class="d-block" src="/assert/img/L6.jpg" style="height:140px; aspect-ratio:1/1; object-fit:cover">
+                        <div class="ml-3">
+                            ELECTRONIC LIBRARY<br>
+                            <a href="https://tbikitap.kz/" target="_blank"> READ MORE &gt; </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CREATORS -->
+    <section>
+        <div class="container-xl my-5">
+            
+            <h3 class="text-right" style="font-size:3.5em">
+                <b>CREATORS</b>
+            </h3>
+            
+            <div class="row justify-content-around text-white my-3" style="font-size:1.2em; font-weight:400">
+                <div class="col-md-6 col-lg-5">
+                    <div class="d-flex" style="background:#280F91; border-radius:15px; padding:10px">
+                        <img class="d-block" src="/assert/img/L0.jpg" style="height:140px; aspect-ratio:1/1; object-fit:cover">
+                        <div class="ml-3">
+                            ANAR FAZYLZHAN<br>
+                            <a href="" target="_blank"> READ MORE &gt; </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-5">
+                    <div class="d-flex" style="background:#280F91; border-radius:15px; padding:10px">
+                        <img class="d-block" src="/assert/img/L0.jpg" style="height:140px; aspect-ratio:1/1; object-fit:cover">
+                        <div class="ml-3">
+                            MERUYERT IMANGAZINA<br>
+                            <a href="" target="_blank"> READ MORE &gt; </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="row justify-content-around text-white my-3" style="font-size:1.2em">
+                <div class="col-md-6 col-lg-5">
+                    <div class="d-flex" style="background:#280F91; border-radius:15px; padding:10px">
+                        <img class="d-block" src="/assert/img/L0.jpg" style="height:140px; aspect-ratio:1/1; object-fit:cover">
+                        <div class="ml-3">
+                            NURSAULE RSALIYEVA<br>
+                            <a href="" target="_blank"> READ MORE &gt; </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-5">
+                    <div class="d-flex" style="background:#280F91; border-radius:15px; padding:10px">
+                        <img class="d-block" src="/assert/img/L0.jpg" style="height:140px; aspect-ratio:1/1; object-fit:cover">
+                        <div class="ml-3">
+                            DIDAR SADYK<br>
+                            <a href="" target="_blank"> READ MORE &gt; </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="row justify-content-around text-white my-3" style="font-size:1.2em">
+                <div class="col-md-6 col-lg-5">
+                    <div class="d-flex" style="background:#280F91; border-radius:15px; padding:10px">
+                        <img class="d-block" src="/assert/img/L0.jpg" style="height:140px; aspect-ratio:1/1; object-fit:cover">
+                        <div class="ml-3">
+                            TALSHYN CHUKAYEVA<br>
+                            <a href="" target="_blank"> READ MORE &gt; </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-5">
+                    <!-- BLANK -->
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Content -->
+    <section>
+        <div class="container-xl my-5">
+            
+        </div>
+    </section>
+
+    <!-- Content -->
+    <section>
+        <div class="container-xl my-5">
+            
+        </div>
+    </section>
+
+    <!-- MODAL -->
+    <div class="modal fade" id="Modal" data-backdrop="static" data-keyboard="false" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable" style="width:95%; max-width:1500px">
+            <div class="modal-content" style="background:#E5FBFF">
+                <div class="modal-header" style="background:#0c90a5">
+                    <h5 class="modal-title"><b> Title </b></h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                </div>
+                <div class="modal-body">
+                    
+                    123
+                    
+                </div>
+                <div class="modal-footer">
+                    &nbsp;
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- GRAMMAR -->
+    <div class="modal fade" id="ModalGrammar" data-backdrop="static" data-keyboard="false" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable" style="width:97%; max-width:97%">
+            <div class="modal-content" style="background:#E5FBFF">
+                <div class="modal-header" style="background:#0c90a5">
+                    <h5 class="modal-title"><b> ГРАММАТИКА / GRAMMAR </b></h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                </div>
+                <div class="modal-body">
+                    
+<table class="tabled tabled1 tabled2"><thead>
+  <tr>
+    <th>Topics in Kazakh</th>
+    <th>Topics in English</th>
+    <th>Rule </th>
+    <th>Examples</th>
+    <th>Illustration</th>
+    <th>Link/Author</th>
+  </tr></thead>
+<tbody>
+  <tr>
+    <td>Әліпби</td>
+    <td>Alphabet</td>
+    <td>Modern Kazakh alphabet is based on Сyrillic alphabet. There are 42 letters. The letters в, ё, ф, ц, ч, щ, ю, я are only used in the words borrowed from the Russian language. Two letters ь (sign of softness), ъ (sign of separation) don’t have any meanings and are encountered only in borrowed words. They are used to show softness and hardness of consonants in the borrowed Russian words. In the Kazakh language, the consonants are fully under the impact of vowels, and that is why the consonants which are used with hard vowels become hard and the consonants which are used with soft vowels become soft.&nbsp;</td>
+    <td>The Kazakh Alphabet: Аа, Әә, Бб, Вв, Гг, Ғғ, Дд, Ее, Ёё, Жж, Зз, Ии, Йй, Кк, Ққ, Лл, Мм, Нн, Ңң, Оо, Өө, Пп, Рр, Сс, Тт, Уу, Ұұ, Үү, Фф, Хх, Һһ, Цц, Чч, Шш, Щщ, Ъъ, Ыы, Іі, Ьь, Ээ, Юю, Яя</td>
+    <td></td>
+    <td>Зайсанбаев Т.К.<br>Қазақ тілі: шетел студенттеріне арналған оқу құралы /<br>Т.К. Зайсанбаев, Г.Ә. Карипбаева, Б.Н. Канленова. – Алматы: Қазақ университеті, 2016. – 93 б.</td>
+  </tr>
+  <tr>
+    <td>Дыбыстар</td>
+    <td>Sounds</td>
+    <td>Vowels of the Kazakh language. Kazakh has 9 vowels: (а, ә, е, ы, і, о, ө, ұ, ү) <br>Vowels: Ё, Э, Ю, Я are only in Russian words. <br>The vowels in the Kazakh language are hard and soft ones.&nbsp;Жуан дауыстылар (Hard vowels) а ы о ұ э, уЖіңішке дауыстылар (Soft vowels) е і ө ү ә и&nbsp;Қазақ тіліндегі дауыссыз дыбыстар (The consonants of the Kazakh language).<br>The consonants of the Kazakh language are sonorant, voiceless and voiced (hard).&nbsp;Үнділер (sonorant) р л м н ң й у<br>Ұяңдар (voiced) б г д ж з (в)<br>Қатаңдар (voiceless) п к т ш с (ф) х һ (ч) (щ) (ц)</td>
+    <td>I.	Consonants are pronounced softly next to soft vowels<br><br>II.	but the consonants ‘қ’, and ‘ғ’ are always hard.<br><br>III.	The tongue adapts to the pronunciation of the neighbouring consonant sound with appropriate pronunciation:<br><br>a.	Жер: жер-лер, жер-ден, жер-ге<br><br>b.	Тас: тас-тар, тас-тан, тас-қа<br></td>
+    <td></td>
+    <td>Зайсанбаев Т.К.<br>Қазақ тілі: шетел студенттеріне арналған оқу құралы /<br>Т.К. Зайсанбаев, Г.Ә. Карипбаева, Б.Н. Канленова. – Алматы: Қазақ университеті, 2016. – 93 б. <br><br><br>&nbsp;Hancock Michael. Salem Alem! Сәлем Әлем! - Kazakh grammar and comprehension exercises. Peace Corps Kazakhstan &amp; RPCV, 2009. — 303 p.</td>
+  </tr>
+  <tr>
+    <td>Буын үндестігі</td>
+    <td>Vowel harmony</td>
+    <td>Every hard vowel in Kazakh has a corresponding soft pair, except for the vowel ә, which originated from Arabic. In Kazakh, words are typically pronounced entirely with either hard or soft vowels. If a root word contains hard vowels, any suffixes added will also use hard vowels—this is the law of "synharmony". However, borrowed words from Arabic, Persian, Russian, and other languages, as well as their inflections, often do not follow this rule.</td>
+    <td>For example: бала- лар-ымыз-ға. If the root word consists of soft vowels, the added part of the word will be soft. For example: үй-лер-іміз-ге.</td>
+    <td></td>
+    <td>Зайсанбаев Т.К.<br>Қазақ тілі: шетел студенттеріне арналған оқу құралы /<br>Т.К. Зайсанбаев, Г.Ә. Карипбаева, Б.Н. Канленова. – Алматы: Қазақ университеті, 2016. – 93 б.</td>
+  </tr>
+  <tr>
+    <td>Дыбыс үндестігі</td>
+    <td>Consonant assimilation</td>
+    <td>Progressive assimilationIn the Kazakh language the words follow the law of progressive assimilation as well as the law<br>of synharmony.<br>In the words end in the voiceless consonants /к, қ, п, с, т, ф, х, ц, ч, ш, щ / or the voiced<br>consonants /б, в, г, д / the suffix or the ending being added to a word begins with the voiceless<br>consonant: бас-тық “chief”, код-тар “codes”<br>If the last sound of a word is a voiced consonant /except б, в, г, д/, a sonorant /й, л, м, н, ң, р, у<br>/ or a vowel the suffix or ending begins with the voiced consonant or sonorant: қыз-дар “girls”,<br>тіл-дер “languages”, кісі-лер “men”<br><br>Progressive assimilation is the phenomenon that happens when the preceding consonant<br>influences the sound that follows. Harmony of vowels (synharmonism) is a case of progressive<br>assimilation but in the sphere of vowels.<br><br>Regressive assimilationIn the Kazakh language alongside the progressive assimilation the so-called regressive<br>assimilation is used. It‟s a phenomenon that happens when the following sound of a word or a<br>syllable influences the preceding one. In word endings with the voiceless consonants қ, к, п<br>and a suffix, or the ending being with the vowels, the voiceless consonants become their voiced<br>counterparts: қ-ғ, к-г, п-б.</td>
+    <td>Consonant sounds in hard words are pronounced hard, and in soft words they are pronounced soft. When pronouncing consonants in soft words, you should slightly lift the middle part of the back of your tongue to make the consonants soft. Different consonants have different degrees of softening. The consonants ‘л’ and ‘ш’ in soft words are pronounced especially softly.<br>Ел [iel`] – country<br>Үш [üsh`] – three<br>Of the consonant sounds, consider in more detail the four specific sounds of the Kazakh language ‘ғ, қ, ң’.<br></td>
+    <td></td>
+    <td>1. Hancock Michael. Salem Alem! Сәлем Әлем! - Kazakh grammar and comprehension exercises. Peace Corps Kazakhstan &amp; RPCV, 2009. — 303 p.<br><br><br>2. Batayeva Z. Colloquial Kazakh : the complete course for beginners / Routledge 2013, 309 p. 2. Зайсанбаев Т.К.<br>Қазақ тілі: шетел студенттеріне арналған оқу құралы /<br>Т.К. Зайсанбаев, Г.Ә. Карипбаева, Б.Н. Канленова. – Алматы: Қазақ университеті, 2016. – 93 б. </td>
+  </tr>
+  <tr>
+    <td>Көптік жалғауы</td>
+    <td>Plural endings</td>
+    <td>In Kazakh, special endings are added to nouns to indicate plurality. These plural endings are: -лар, -лер, -дар, -дер, -тар, -тер. The choice of the ending depends on the hardness or softness of the vowels and the final syllable of the word.&nbsp;<br><br>However, plural endings are not added in the following cases:&nbsp;<br>1. When a noun is preceded by a numeral: <br>&nbsp;- 2 студент – 2 students<br>2. When specific quantifying words are used:&nbsp;<br>&nbsp;- көп (a lot), аз (a little), біраз, біршама (a little), бірталай (a large number), бірнеше (a few), etc.&nbsp;<br>&nbsp;- Example: көп студент – lots of students<br>3. When referring to uncountable items:<br>&nbsp;- май (butter), нан (bread), etc.&nbsp;</td>
+    <td>-лар, -лер (after vowels (а, о, ы, і, е), after sonorant й, р, у): бала+ лар (child); көше- лер (streets); қой+лар(rams); үй+лер (houses); тау+лар (mountains); кісі+ лер (men).&nbsp;<br><br>-дар, -дер (after voiced and after sonorant (л, м, н, ң, з)): еден+дер (floor); кілем+ дер (carpet); қалам+ дар (pen); шаң-дар (dust); қыз+дар (girl). <br><br>-тар, -тер (after voiceless (п, к, қ, т, ш, с) after voiced (б, в, г, д): мектеп+ тер (school); кітап- тар (book); жүрек+ тер (heart); сабақ+ тар (lesson); ит+тер (dog); бас+тар (head); араб+тар (arab); педагог+ тар (teacher); завод+ тар (plant).</td>
+    <td></td>
+    <td>Зайсанбаев Т.К.<br>Қазақ тілі: шетел студенттеріне арналған оқу құралы /<br>Т.К. Зайсанбаев, Г.Ә. Карипбаева, Б.Н. Канленова. – Алматы: Қазақ университеті, 2016. – 93 б.</td>
+  </tr>
+  <tr>
+    <td>Сын есім</td>
+    <td>Adjectives</td>
+    <td>Adjectives in Kazakh answer the questions қандай? (what kind?) and қай? (which?). They describe various characteristics of objects. <br><br>Derivative adjectives are formed using specific suffixes:<br> -ды/-ді, -ты/-ті, -лы/-лі: көңілді (cheerful), сәтті (successful), дәмді (tasty), сабырлы (patient), күшті (strong), etc. <br>-сыз/-сіз forms negative adjectives: көңілсіз (sad), сәтсіз (unsuccessful), дәмсіз (tasteless), сабырсыз (impatient), etc.</td>
+    <td>Adjectives are easier to remember from a table of antonyms. Here are some of them:&nbsp;жаңа – new;&nbsp;ескі – old <br>жақсы – good;&nbsp;жаман – bad<br>ұзын – long;&nbsp;қысқа – short <br>суық – cold;&nbsp;ыстық – hot <br>кең – wide;&nbsp;тар – narrow <br>ауыр – heavy;&nbsp;жеңіл – light<br>әдемі – beautiful;&nbsp;ұсқынсыз – ugly <br>үлкен – large;&nbsp;кішкентай – small <br>қауіпті – dangerous;&nbsp;қауіпсіз – safe <br>оңай – easy;&nbsp;қиын – difficult <br>жалқау – lazy;&nbsp;еңбекқор – hardworking <br>таза – clean;&nbsp;лас – dirty <br>биік – high;&nbsp;аласа – low <br>арзан – cheap;&nbsp;қымбат – expensive <br>бай – rich;&nbsp;кедей – poor <br>жас – young;&nbsp;кәрі – old <br>арық – skinny;&nbsp;семіз – fat <br>ашық – open;&nbsp;жабық – closed<br>батыл – brave;&nbsp;қорқақ – cowardly <br>ақылды – clever;&nbsp;ақымақ – silly </td>
+    <td></td>
+    <td>Зайсанбаев Т.К.<br>Қазақ тілі: шетел студенттеріне арналған оқу құралы /<br>Т.К. Зайсанбаев, Г.Ә. Карипбаева, Б.Н. Канленова. – Алматы: Қазақ университеті, 2016. – 93 б.</td>
+  </tr>
+  <tr>
+    <td>Жіктеу есімдіктері, жіктік жалғауы: мен, сен, ол, біз, сіз, сіздер, сендер, олар</td>
+    <td>Personal pronoun and endings: мен, сен, ол, біз, сіз, сіздер, сендер, олар</td>
+    <td></td>
+    <td>Мен жұмысшы+мын, дәрігер+мін, ұстаз+бын, шәкірт+пін.<br>Сен жұмысшы+сың, дәрігер+сің, ұстаз+сың, шәкірт+сің.<br>Сіз жұмысшы+сыз, дәрігер+сіз, ұстаз+сыз, шәкірт+сіз.<br>Ол – жұмысшы, дәрігер, ұстаз, шәкірт.&nbsp;Мен жұмысшы емеспін, дәрігер емеспін, ұстаз емеспін, шәкірт емеспін.&nbsp;Сен жұмысшы емессің, дәрігер емессің, ұстаз емессің, шәкірт емессің.<br>Сіз жұмысшы емессіз, дәрігер емессіз, ұстаз емессіз, шәкірт емессіз.<br>Ол – жұмысшы емес, дәрігер&nbsp;емес, ұстаз емес, шәкірт емес.&nbsp;Біз жұмысшы+мыз, дәрігер+міз, ұстаз+быз.<br><br>Сен+дер жұмысшы+сың+дар, дәрігер+сің+дер, ұстаз+сың+дар.<br><br>Сіздер жұмысшы+сыз+дар, дәрігер+сіз+дер, ұстаз+сыз+дар.<br><br>Олар – жұмысшы+лар, дәрігер+лер, ұстаз+дар,<br><br>Біз жұмысшы емес+піз, дәрігер емес+піз, ұстаз емес+піз.<br><br>Сен+дер жұмысшы емес+сің+дер, дәрігер емес+сің+дер, ұстаз емес+сің+дер,<br><br>Сіз+дер жұмысшы емес+сіз+дер, дәрігер емес+сіз+дер, ұстаз емес+сіз+дер,<br><br>Олар – жұмысшы емес, дәрігер емес, ұстаз емес.</td>
+    <td></td>
+    <td>Зайсанбаев Т.К.<br>Қазақ тілі: шетел студенттеріне арналған оқу құралы /<br>Т.К. Зайсанбаев, Г.Ә. Карипбаева, Б.Н. Канленова. – Алматы: Қазақ университеті, 2016. – 93 б.</td>
+  </tr>
+  <tr>
+    <td>Тәуелдік жалғауы</td>
+    <td>Possessive endings</td>
+    <td>The possessive form of nouns answers the question кімнің? ненің?&nbsp;If the word order corresponds to the formula ‘possessor + possessed’, the possessive form of nouns is formed by adding one of the affixes (e.g. менің сиырым ‘my cow’, оның ақшасы ‘his money’ or олардың үйлері ‘their houses’).<br>It is possible to ask a question using the interrogative particle МА (ме, ба, бе, па, пе)</td>
+    <td>менің&nbsp;-(Ы) м&nbsp;Біздің&nbsp;-(Ы)мЫз<br>сенің&nbsp;-(Ы) ң&nbsp;Сендердің*&nbsp;-(Ы)ң<br>сіздің&nbsp;-(Ы) ңыз&nbsp;Сіздердің*&nbsp;-(Ы)ңЫз<br>оның&nbsp;-Ы, -сЫ&nbsp;Олардың&nbsp;-Ы, -сЫ<br><br>*with the pronouns ‘сендердің, сіздердің’, nouns are used in the plural!</td>
+    <td></td>
+    <td>Зайсанбаев Т.К.<br>Қазақ тілі: шетел студенттеріне арналған оқу құралы /<br>Т.К. Зайсанбаев, Г.Ә. Карипбаева, Б.Н. Канленова. – Алматы: Қазақ университеті, 2016. – 93 б.</td>
+  </tr>
+  <tr>
+    <td>Тәуелдік жалғауының бірінші жағы </td>
+    <td>Possessive endings, 1st person</td>
+    <td>When we say ‘my (менің)’, the letter ‘м’ is added. And that's it! The pronoun ‘менің’ can be omitted because the ending ‘м’ shows affiliation. After vowels ‘и’ and ‘ю’, possessive endings beginning with a vowel are also added: коньки – менің конькиім. ‘и and ‘ю’ are diphthongs, that is, they have two sounds, the second is sonorous.<br>The vowel ‘и’ has the sound [ій] or [ый]. The vowel ‘ю’ has the sound [йу]. Therefore, both the sonorants ‘у, й’ and the vowels ‘и, ю’ are followed by possessive endings beginning with the vowel. Don't forget that words ending in ‘y’ are joined by possessive endings with an extra ‘ы’ or ‘i’:<br>Менің кездесуім – my meeting; Ту - менің туым. <br>In both spoken and written language, the possessive endings may be omitted in the 1st person plural if the pronoun ‘біздің’ is present:<br>біздің бала – our child;&nbsp;біздің көше – our street.</td>
+    <td>менің сөмке&nbsp;сурет<br>менің мақала&nbsp;киім&nbsp;<br>менің аты&nbsp;+м&nbsp;үйлер&nbsp;+ім&nbsp;<br>менің бала&nbsp;үстел&nbsp;<br>менің көрші&nbsp;жер&nbsp;<br><br><br>Біздің көше&nbsp;<br>Біздің бақша&nbsp;+мыз/міз&nbsp;<br>Бөлме бөлме&nbsp;<br>Біздің бала&nbsp;<br><br>би<br>ою&nbsp;+ымыз/іміз&nbsp;<br>үйлер<br>мектеп*<br><br>* By adding possessive endings, the letters ‘к, қ, п’ at the end of a word change to the voiced ‘г, ғ, б’.</td>
+    <td></td>
+    <td>Зайсанбаев Т.К.<br>Қазақ тілі: шетел студенттеріне арналған оқу құралы /<br>Т.К. Зайсанбаев, Г.Ә. Карипбаева, Б.Н. Канленова. – Алматы: Қазақ университеті, 2016. – 93 б.</td>
+  </tr>
+  <tr>
+    <td>Тәуелдік жалғауының екінші жағы </td>
+    <td>Possessive endings, 2nd person</td>
+    <td>To express 'your (сенің)' when addressing friends or younger people, if the word ends in a vowel, simply add 'ң'.<br><br>For the respectful form 'Your (сіздің)', the endings '(ы)ңыз' or '(і)ңіз' are added.<br><br>With plural pronouns (сендердің, сіздердің), the plural endings are added to the noun first, followed by the possessive endings, whether singular or plural:<br>Сіздердің достарыңыз – Your friend(s).<br><br>The distinction between one friend or more depends on the context: Болат - сіздердің студенттеріңіз (Bolat is your student, you are a group of people). Самат, Айдана, Аружан - сіздердің студенттеріңіз (Samat, Aidana and Aruzhan are your students). </td>
+    <td>Сенің сөмке&nbsp;арман&nbsp;<br>Сенің мақала&nbsp;киім&nbsp;<br>Сенің аты&nbsp;+ң&nbsp;үйлер&nbsp;+ің/ың&nbsp;<br>Сенің бала&nbsp;үстел&nbsp;<br>Сенің көрші&nbsp;жер&nbsp;<br><br><br>Сіздің ат&nbsp;немере&nbsp;<br>Сіздің үй&nbsp;бала&nbsp;<br>Сіздің жер +ыңыз/іңіз&nbsp;көрші&nbsp;+ңіз/ңыз&nbsp;<br>Сіздің билет&nbsp;күлкі&nbsp;<br>Сіздің жұмыс&nbsp;көше&nbsp;</td>
+    <td></td>
+    <td>Зайсанбаев Т.К.<br>Қазақ тілі: шетел студенттеріне арналған оқу құралы /<br>Т.К. Зайсанбаев, Г.Ә. Карипбаева, Б.Н. Канленова. – Алматы: Қазақ университеті, 2016. – 93 б.</td>
+  </tr>
+  <tr>
+    <td>Тәуелдік жалғауының үшінші жағы </td>
+    <td>Possessive endings, 3rd person</td>
+    <td>&nbsp;With the plural pronoun ‘олардың’ plural endings can be added to nouns, regardless of whether they are singular or plural:<br>Олардың достары – their friend. One friend or more - determined by context.<br>The words ‘отбасы, үй-іші, аты-жөні’ are not used without possessive endings, therefore they are given in dictionaries with 3rd person possessive endings. In other persons: ‘менің отбас+ым, сіздің отбас+ыңыз’.<br>By adding possessive endings, the letters ‘к, қ, п’ at the end of a word change to the voiced ‘г, ғ, б’.</td>
+    <td>Оның сөмке&nbsp;топ&nbsp;<br>Оның мақала&nbsp;жер&nbsp;<br>Оның алма&nbsp;+сі/сы&nbsp;үйлер&nbsp;+ы/і&nbsp;<br>Оның бала&nbsp;үстел&nbsp;<br>Оның бөлме&nbsp;кілем&nbsp;<br></td>
+    <td></td>
+    <td>Зайсанбаев Т.К.<br>Қазақ тілі: шетел студенттеріне арналған оқу құралы /<br>Т.К. Зайсанбаев, Г.Ә. Карипбаева, Б.Н. Канленова. – Алматы: Қазақ университеті, 2016. – 93 б.</td>
+  </tr>
+  <tr>
+    <td>Септіктер</td>
+    <td>Case endings</td>
+    <td>Nouns in Kazakh are declined into seven cases: Nominative, Genitive, Dative/Directive, Accusative, Locative, Ablative, and Instrumental. These cases are formed by adding suffixes to noun stems (сөз – "word") or to derived nouns (сөз+дер+ім – "my words").</td>
+    <td></td>
+    <td></td>
+    <td>Kazakh Grammar and Comprehension Exercises<br>Kazakh Language Manual derived from language materials developed by Peace Corps Kazakhstan and RPCV Michael Hancock</td>
+  </tr>
+  <tr>
+    <td>Атау септік</td>
+    <td>The Nominative Case</td>
+    <td>The Nominative Case (Атау септік) has no distinct markers or special endings. In all other cases suffixes have initial<br>consonants; therefore rules of consonant assimilation have to be observed.</td>
+    <td>Кім? Аслан. Аружан. Не? Үстел. Мысық</td>
+    <td></td>
+    <td>Kazakh Grammar and Comprehension Exercises<br><br>Kazakh Language Manual derived from language materials developed by Peace Corps Kazakhstan and RPCV Michael Hancock</td>
+  </tr>
+  <tr>
+    <td>Ілік септік</td>
+    <td>The Genitive Case</td>
+    <td>The Genitive case (Ілік септік) is used to express the “of” relationship and indicates definite ownership. It always precedes the noun being possessed. For example, the English phrase “my grandfather’s garden” is expressed in Kazakh as атамның бағы (grandfather-my-of garden-his). <br><br>The basic Genitive endings are -ның/-нің, with variants -дың/-дің, -тың/-тің, depending on vowel harmony and consonant type.</td>
+    <td>қала+ның “of the city”<br>дүкен+нің “of the shop”<br>aдам+ның “ of a person”<br>қыз+дың “of the girl”<br>үй+дің “of the house”<br>Айдар+дың “of Aidar, Aidar‟s<br>есік+тің “of the door”</td>
+    <td></td>
+    <td>Kazakh Grammar and Comprehension Exercises<br><br>Kazakh Language Manual derived from language materials developed by Peace Corps Kazakhstan and RPCV Michael Hancock</td>
+  </tr>
+  <tr>
+    <td>Барыс септік</td>
+    <td>Dative case</td>
+    <td>The Dative case (Барыс септік) indicates direction, purpose, or the functions of "to" and "for" in English. It answers the questions кімге? ("to whom?"), неге? ("to what?"/"what for?"), and қайда? ("where?").<br><br>Formation:<br>The Dative case is formed by adding the suffixes -ға/-ге, -қа/-ке, -на/-не, -а/-е to the root or stem of a noun.<br>&nbsp;-на/-не is used after the 1st, 2nd, and 3rd possessive forms.<br>The choice of suffix depends on vowel harmony and the final consonant of the root. For example, voiceless consonants (including б, в, г, д when devoiced at the end of syllables) require -қа/-ке.<br><br>Usage:<br>1.&nbsp;To indicate a person or subject receiving an action:<br>&nbsp;Оспанға бер – Give to Ospan.<br>2.&nbsp;To show the direction of an action:<br>&nbsp;Алматыға бар – Go to Almaty.<br>3.&nbsp;To express the purpose or aim of an action:<br>&nbsp;демалуға – to rest (Алакөлге демалуға бардым - I went to Alakol to rest).<br>This version organizes the information more clearly and ensures the explanation is easy to follow.</td>
+    <td>қала|ға ”to the city”<br>Әсет|ке “to Aset”<br>демалу|ға “to rest” </td>
+    <td></td>
+    <td>Kazakh Grammar and Comprehension Exercises<br><br>Kazakh Language Manual derived from language materials developed by Peace Corps Kazakhstan and RPCV Michael Hancock</td>
+  </tr>
+  <tr>
+    <td>Табыс септік</td>
+    <td>The Accusative Case</td>
+    <td>The Accusative Case (Табыс септік) denotes an object to which the action is directed. It is formed by means of the<br>endings +ны/+ні; +ды/+ді; +ты/+ті; the form of the endings is determined by the rules of<br>synharmonism and progressive assimilation. <br><br>The endings are dropped if the speaker does not mean any particular object. </td>
+    <td>Мен кітап оқыдым. I read a book.<br><br>Мен кітапты оқыдым. I read the book.</td>
+    <td></td>
+    <td>Kazakh Grammar and Comprehension Exercises<br><br>Kazakh Language Manual derived from language materials developed by Peace Corps Kazakhstan and RPCV Michael Hancock</td>
+  </tr>
+  <tr>
+    <td>Жатыс септік</td>
+    <td>Locative case</td>
+    <td>The Locative case (Жатыс септік) in Kazakh indicates location and is equivalent to the English prepositions “in,” “at,” or “on.” It is used to show where or when something happens and can also express possession or presence.&nbsp;<br><br>- Questions answered:&nbsp;<br>&nbsp;- Қайда? Неде? – Where? <br>&nbsp;- Кімде? – At (by) whom?<br>&nbsp;- Қашан? – When?<br><br>-&nbsp;Endings:&nbsp;<br>&nbsp;- -да/-де, -та/-те (for general use).&nbsp;<br>&nbsp;- -нда/-нде (after 3rd person possession).&nbsp;<br>&nbsp;- The choice of endings depends on vowel harmony and progressive assimilation.&nbsp;<br><br> Examples:&nbsp;<br>1. To indicate location: <br>&nbsp;- Үйде отырмын. – I am at home. <br>&nbsp;- Кітапта сурет бар. – There is a picture in the book.&nbsp;<br><br>2. To express possession or presence:&nbsp;<br>&nbsp;- Менде кітап бар. – I have a book.&nbsp;<br><br>3. To indicate time:&nbsp;<br>&nbsp;- Осы аптада. – This week.<br>&nbsp;- Наурыз айында. – In March. <br>&nbsp;- Екі мың жиырма төртте – In 2024 (colloquial). </td>
+    <td>- Қазір мен Алматыда тұрамын.<br>- Бұрын қайда тұрдыңыз?<br>- Бұрын мен Америкада, Вашингтонда тұрдым.<br><br> +да/+де асхана+да in the canteen<br>бөлме+де in the room<br>дүкен+де in the shop<br><br>+та/+те завод+та at the plant<br>есік+те in the door<br>+нде көше+сі+нде on the street<br>+нда даңғыл+ы+нда on the avenue</td>
+    <td></td>
+    <td>Kazakh Grammar and Comprehension Exercises<br><br>Kazakh Language Manual derived from language materials developed by Peace Corps Kazakhstan and RPCV Michael Hancock</td>
+  </tr>
+  <tr>
+    <td>Шығыс септік</td>
+    <td>Ablative case</td>
+    <td>The Ablative case (Шығыс септік) denotes the starting point of an action, the material a subject is made of, or is used in comparisons. It conveys the meanings of “from,” “out of,” or “away from.”&nbsp;<br><br>Questions answered: <br>&nbsp;- Кімнен? – From whom? <br>&nbsp;- Неден? – From what? <br>&nbsp;- Қайдан? – From where?&nbsp;<br><br>- Endings:<br>&nbsp;- -нан/-нен, -дан/-ден, -тан/-тен (chosen based on vowel harmony and consonant type).&nbsp;<br><br>Examples:&nbsp;<br>1. Initial point of an action:&nbsp;<br>&nbsp;- Мектептен келдім. – I came from school.&nbsp;<br>&nbsp;- Үйден шықтым. – I left the house.&nbsp;<br><br>2. Material a subject is made of:&nbsp;<br>&nbsp;- Бұл қорап ағаштан жасалған. – This box is made of wood.&nbsp;<br><br>3. Comparison:<br>&nbsp;- Ол менен үлкен. – He is older than me.</td>
+    <td>қала+дан “from a city”<br>базар+дан “from a bazaar”<br>адам+нан “from a person”<br>институт+тан “from the institute”<br>студент+тен “from a student <br><br>Студент университет|тен келе жатыр. “The student is coming from the university.”<br>Мен Америка|дан|мын. “I am from America.”<br>Ол ағаш|тан үй салып жатыр. “He is building a house from wood.”<br><br>Кім? Қайдан? <br>Мен Америка +|дан +|мын<br>Сен Қазақстан +|нан +|сың<br>Сіз Нью-Йорк +|тан +|сыз<br>Ол Қытай +|дан -----<br>Біз Германия +|дан +|быз<br>Сендер Италия +|дан +|сың|дар<br>Сіздер Франция +|дан +|сыз|дар<br>Олар Лос-Анжелес +|тен ------- <br><br>Сіз қайдансыз? - Қай штаттансыз? - Қай қаладансыз? - Мен Америкадан/мын - Техас штатынан|мын - Даллас қаласынан|мын.</td>
+    <td></td>
+    <td>Kazakh Grammar and Comprehension Exercises<br><br>Kazakh Language Manual derived from language materials developed by Peace Corps Kazakhstan and RPCV Michael Hancock</td>
+  </tr>
+  <tr>
+    <td>Көмектес септік</td>
+    <td>The Instrumental Case</td>
+    <td>The Instrumental Case (Көмектес септік) conveys the meaning of “with” or shows the means or instrument used “by<br>means of, through”. Its ending does not follow the rules of vowel harmony and is subject only to<br>consonant assimilation</td>
+    <td></td>
+    <td></td>
+    <td>Kazakh Grammar and Comprehension Exercises<br><br>Kazakh Language Manual derived from language materials developed by Peace Corps Kazakhstan and RPCV Michael Hancock</td>
+  </tr>
+  <tr>
+    <td>Сілтеу есімдіктерінің септелуі</td>
+    <td>Declension of demonstrative pronouns</td>
+    <td>Cases мына ана бұл осы сол<br>Nom. мына ана бұл осы сол<br>Gen. мынаның ананың бұның осының соның<br>Dat. мынаған анаған бұған осыған соған<br>Acc. мынаны ананы бұны осыны соны<br>Loc. мынада анада бұнда осында сонда<br>Abl. мынадан анадан бұдан осынан содан<br>Illustr. мынамен анамен бұнымен осымен сонымен</td>
+    <td>Kazakh has following demonstrative pronouns:<br>мына this<br>ана that<br>бұл this, it<br>осы this (one)<br>сол that (one)</td>
+    <td></td>
+    <td>Kazakh Grammar and Comprehension Exercises<br><br>Kazakh Language Manual derived from language materials developed by Peace Corps Kazakhstan and RPCV Michael Hancock</td>
+  </tr>
+  <tr>
+    <td>Жіктеу есімдіктерін септеу</td>
+    <td>Declension of personal pronouns</td>
+    <td>Singular<br><br>Cases мен сен сіз ол<br><br>Nom мен сен сіз ол<br><br>Gen. менің сенің сіздің оның<br><br>Dat. маған саған сізге оған<br><br>Acc. мені сені сізді оны<br><br>Loc. менде сенде сізде онда<br><br>Abl. менен сенен сізден онан<br><br>Lustr. менімен сенімен сізбен онымен<br><br>Plural<br><br>Cases біз сендер сіздер олар<br><br>Nom біз сендер сіздер олар<br><br>Gen. біздің сендердің сіздердің олардың<br><br>Dat. бізге сендерге сіздерге оларға<br><br>Acc. бізді сендерді сіздерді оларды<br><br>Loc. бізде сендерде сіздерде оларда<br><br>Abl. бізден сендерден сіздерден олардан<br><br>Lustr. бізбен сендермен</td>
+    <td></td>
+    <td></td>
+    <td>Kazakh Grammar and Comprehension Exercises<br><br>Kazakh Language Manual derived from language materials developed by Peace Corps Kazakhstan and RPCV Michael Hancock</td>
+  </tr>
+  <tr>
+    <td>Жалғаулық шылаулар: мен, бен, пен.</td>
+    <td>Conjunctions</td>
+    <td>The Conjunctions “мен”, “бен”,”пен”, correspond to the English “and”. The choice of the<br><br>correct variant of this conjunction depends on the last sound of the preceding word</td>
+    <td>- Кеше кешке қандай тамақ іштіңіз? - Мен кеше кешке палау мен шай іштім.<br><br>- Қандай шай іштіңіз? - Мен қантпен шай ішемін.<br><br>- Сіз сүтпен шай ішесіз бе? - Мен сүтсіз шай ішемін.</td>
+    <td></td>
+    <td>Kazakh Grammar and Comprehension Exercises<br><br>Kazakh Language Manual derived from language materials developed by Peace Corps Kazakhstan and RPCV Michael Hancock</td>
+  </tr>
+  <tr>
+    <td>Есептік сан есім</td>
+    <td>Cardinal Numerals</td>
+    <td>The numerals from 11 to 19 in Kazakh are formed differently from English: the first element is “он” (ten), followed by the second element, which is the number above ten.&nbsp;<br><br>From 20 onwards, numerals in Kazakh are formed similarly to English, as two words.&nbsp;<br><br>The questions “How many?” or “How much?” in Kazakh are “қанша?” and “неше?”. In these questions, nouns do not take plural endings. The question words “қанша?” and “неше?” replace the position of the numeral in the sentence.&nbsp;<br><br>To say “much” or “many”, use “көп”, and to say “little” or “few”, use “аз”.&nbsp;<br></td>
+    <td>Мынау неше кітап? How many books are there?<br><br>Бұл – үш кітап. There are three books<br><br>Мынау қанша қалам? How many pens are there?<br><br>Бұл – он қалам. There are ten pens.</td>
+    <td></td>
+    <td>Kazakh Grammar and Comprehension Exercises<br><br>Kazakh Language Manual derived from language materials developed by Peace Corps Kazakhstan and RPCV Michael Hancock</td>
+  </tr>
+  <tr>
+    <td>Реттік сан есім</td>
+    <td>Ordinal numbers</td>
+    <td>Ordinal numbers in Kazakh are formed by adding the suffixes +ыншы/+інші or +ншы/+нші to cardinal numerals. These answer the questions “қаншасыншы?” or “нешінші?” and correspond to the English ending “th.”<br><br>When a cardinal numeral consists of two words (e.g., он бес – 15), the ordinal numeral is formed by adding the suffix +ыншы/+інші or +ншы/+нші to the second element:&nbsp;<br>- он бес – он бесінші (15th).<br><br>Note: For 20, the compound form is жиырма + с +ыншы.&nbsp;</td>
+    <td>1 бір|інші<br>2 екі екі|нші<br>3 үш үш|інші<br>4 төрт төрт|інші<br>5 бес бес|інші<br>6 алты алты|ншы<br>7 жеті жеті|нші<br>8 сегіз сегіз|інші<br>9 тоғыз тоғыз|ыншы<br>10 он он|ыншы<br>11 он бір он бір|інші<br>18 он сегіз он сегіз|інші<br>19 он тоғыз он тоғыз|ыншы<br>20 жиырма жиырма|с|ыншы<br>36 отыз алты отыз алты|ншы<br>44 қырық төрт қырық төртінші<br>82 сексен екі сексен екі|нші<br>99 тоқсан тоғыз тоқсан тоғыз|ыншы<br>184 жүз сексен төрт жүз сексен төрт|інші<br>876 сегіз жүз жетпіс алты сегіз жүз жетпіс алты|ншы<br>1486 мың төрт жүз сексен алты мың төрт жүз сексен алты|ншы<br>2591 екі мың бес жүз тоқсан бір екі мың бес жүз тоқсан бір|інші<br>3698 үш мың алты жүз тоқсан сегіз үш мың алты жүз тоқсан сегіз|інші</td>
+    <td></td>
+    <td>Kazakh Grammar and Comprehension Exercises<br><br>Kazakh Language Manual derived from language materials developed by Peace Corps Kazakhstan and RPCV Michael Hancock</td>
+  </tr>
+  <tr>
+    <td>«Бір» белгісіздік есімдігі</td>
+    <td>Indefinite pronoun</td>
+    <td>In Kazakh all the pronouns (except “there” “here” “where” “how many /much” “every”<br>“some”) are declined. The most frequent are personal, demonstrative reflexive and interrogative<br>pronouns.</td>
+    <td>Біреу - “someone, somebody”; кей, кейбір -<br>“someone, somebody”; бірдеме - “something”</td>
+    <td></td>
+    <td>Kazakh Grammar and Comprehension Exercises<br><br>Kazakh Language Manual derived from language materials developed by Peace Corps Kazakhstan and RPCV Michael Hancock</td>
+  </tr>
+  <tr>
+    <td>Ауыспалы келер шақ (болымды, болымсыз, сұраулы)</td>
+    <td>Future Simple Tense</td>
+    <td>-</td>
+    <td>-</td>
+    <td></td>
+    <td>Kazakh Grammar and Comprehension Exercises<br><br>Kazakh Language Manual derived from language materials developed by Peace Corps Kazakhstan and RPCV Michael Hancock</td>
+  </tr>
+  <tr>
+    <td>Жедел өткен шақ (болымды форма)</td>
+    <td>Past Simple Tense</td>
+    <td>-</td>
+    <td>-</td>
+    <td></td>
+    <td>Kazakh Grammar and Comprehension Exercises<br><br>Kazakh Language Manual derived from language materials developed by Peace Corps Kazakhstan and RPCV Michael Hancock</td>
+  </tr>
+  <tr>
+    <td>Болымcыз форма</td>
+    <td>The negative form of the verbs</td>
+    <td>The negative form of the verbs is formed with the help of the suffixes, which are added to the<br>root of the verb.</td>
+    <td>- Қандай нан жейсіз?<br>- Мен қара нан жеймін.<br>- Сіз сары май жейсіз бе?<br>- Мен сары май жемеймін. Сіз?<br>- Қызылша жемеймін.</td>
+    <td></td>
+    <td>Kazakh Grammar and Comprehension Exercises<br><br>Kazakh Language Manual derived from language materials developed by Peace Corps Kazakhstan and RPCV Michael Hancock</td>
+  </tr>
+  <tr>
+    <td>Сұраулы форма</td>
+    <td>Interrogative particles</td>
+    <td>The questions expecting yes/no answer are asked with the help of a question particle /ма/ме,<br>ба/бе, па/пе, and ше. The vowel harmony rule and consonant assimilation determine the use of ма/ме, ба/бе, па/пе.</td>
+    <td>1. Сіз барасыз ба? Will you go?<br><br>Ол ше? And he?<br><br>2. Балалар шай ішті ме? Have children had (drunk) tea?<br><br>Сіз ше? And you?</td>
+    <td></td>
+    <td>Kazakh Grammar and Comprehension Exercises<br><br>Kazakh Language Manual derived from language materials developed by Peace Corps Kazakhstan and RPCV Michael Hancock</td>
+  </tr>
+  <tr>
+    <td>Жалпылау есімдіктері: бәрі, барлық, бар.</td>
+    <td>Definite pronouns: бәрі, барлық, бар</td>
+    <td>The definite pronoun is<br>бәрі all (of it / them)<br>барлық all, everything. </td>
+    <td>Бәрі, барлық, бүкіл, барша - ”all”<br>әрбір, әр - ”any, every, everyone, everybody,<br>everything”</td>
+    <td></td>
+    <td>Kazakh Grammar and Comprehension Exercises<br><br>Kazakh Language Manual derived from language materials developed by Peace Corps Kazakhstan and RPCV Michael Hancock</td>
+  </tr>
+  <tr>
+    <td>Болымсыздық есімдіктері: ештеңе, ешкім, ешбір, ешқашан, ешқандай, ешқайда</td>
+    <td>Negative pronouns: ештеңе, ешкім, ешбір, ешқашан, ешқандай, ешқайда </td>
+    <td>Negative pronouns include these:<br>ешкім nobody, no one<br>ештеңе nothing<br>ешнәрсе nothing<br>ешқандай no kind of<br>ешқашан never</td>
+    <td>дәнеңе nothing, ешкім,”nobody” ештеме, дәнеме “nothing”</td>
+    <td></td>
+    <td>Kazakh Grammar and Comprehension Exercises<br><br>Kazakh Language Manual derived from language materials developed by Peace Corps Kazakhstan and RPCV Michael Hancock</td>
+  </tr>
+</tbody></table>
+                    
+                </div>
+                <div class="modal-footer">
+                    &nbsp;
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- VOCABULARY -->
+    <div class="modal fade" id="ModalVocabulary" data-backdrop="static" data-keyboard="false" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable" style="width:95%; max-width:1500px">
+            <div class="modal-content" style="background:#E5FBFF">
+                <div class="modal-header" style="background:#0c90a5">
+                    <h5 class="modal-title text-center"><b> ЛЕКСИКА / LEXICS </b></h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                </div>
+                <div class="modal-body">
+                    <div class="row mb-3">
+                        <div class="col-md-3 p-1 text-center">
+                            <img class="d-inline-block mb-2" height="200px" src="/assert/img/V1.jpg">
+                            <div>
+                                <button onclick="lexTable(1)">Отбасы</button>
+                            </div>
+                        </div>
+                        <div class="col-md-3 p-1 text-center">
+                            <img class="d-inline-block mb-2" height="200px" src="/assert/img/V2.jpg">
+                            <div>
+                                <button onclick="lexTable(2)">Табиғат</button>
+                            </div>
+                        </div>
+                        <div class="col-md-3 p-1 text-center">
+                            <img class="d-inline-block mb-2" height="200px" src="/assert/img/V3.jpg">
+                            <div>
+                                <button onclick="lexTable(3)">Мамандық</button>
+                            </div>
+                        </div>
+                        <div class="col-md-3 p-1 text-center">
+                            <img class="d-inline-block mb-2" height="200px" src="/assert/img/V4.jpg">
+                            <div>
+                                <button onclick="lexTable(4)">Тағам</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row mb-3">
+                        <div class="col-md-3 p-1 text-center">
+                            <img class="d-inline-block mb-2" height="200px" src="/assert/img/V5.jpg">
+                            <div>
+                                <button onclick="lexTable(5)">Спорт</button>
+                            </div>
+                        </div>
+                        <div class="col-md-3 p-1 text-center">
+                            <img class="d-inline-block mb-2" height="200px" src="/assert/img/V6.jpg">
+                            <div>
+                                <button onclick="lexTable(6)">Саяхат</button>
+                            </div>
+                        </div>
+                        <div class="col-md-3 p-1 text-center">
+                            <img class="d-inline-block mb-2" height="200px" src="/assert/img/V7.jpg">
+                            <div>
+                                <button onclick="lexTable(7)">Жануарлар</button>
+                            </div>
+                        </div>
+                        <div class="col-md-3 p-1 text-center">
+                            <img class="d-inline-block mb-2" height="200px" src="/assert/img/V8.jpg">
+                            <div>
+                                <button onclick="lexTable(8)">Өсімдіктер</button>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="tabled mt-5" id="lexTable">
+                    </div>
+                    
+                    <div class="d-none" id="lexTable1">
+                        <table>
+                            <tr><th colspan="2">Отбасы</th></tr>
+                            <tr><td>отбасы</td><td>family</td></tr>
+                            <tr><td>әке</td><td>father</td></tr>
+                            <tr><td>ана</td><td>mother</td></tr>
+                            <tr><td>ата</td><td>grandfather</td></tr>
+                            <tr><td>әже</td><td>grandmother</td></tr>
+                            <tr><td>аға</td><td>older brother</td></tr>
+                            <tr><td>іні</td><td>younger brother</td></tr>
+                            <tr><td>әпке</td><td>older sister</td></tr>
+                            <tr><td>сіңлі</td><td>younger sister, if speaker is female</td></tr>
+                            <tr><td>қарындас</td><td>younger sister, if speaker is male</td></tr>
+                            <tr><td>бала</td><td>child</td></tr>
+                            <tr><td>қыз</td><td>daughter</td></tr>
+                            <tr><td>ұл</td><td>son</td></tr>
+                            <tr><td>немере</td><td>grandchild</td></tr>
+                            <tr><td>шөбере</td><td>great-grandchild</td></tr>
+                            <tr><td>күйеу</td><td>husband</td></tr>
+                            <tr><td>әйел</td><td>wife</td></tr>
+                            <tr><td>келін</td><td>daughter-in-law</td></tr>
+                            <tr><td>күйеу бала</td><td>son-in-law</td></tr>
+                            <tr><td>қайын</td><td>in-law</td></tr>
+                            <tr><td>туыс</td><td>relative</td></tr>
+                            <tr><td>бауыр</td><td>sibling</td></tr>
+                            <tr><td>нағашы</td><td>maternal uncle/aunt</td></tr>
+                        </table>
+                    </div>
+                    
+                    <div class="d-none" id="lexTable2">
+                        <table>
+                            <tr><th colspan="2">Табиғат</th></tr>
+                            <tr><td>тау</td><td>mountain</td></tr>
+                            <tr><td>көл</td><td>lake</td></tr>
+                            <tr><td>орман</td><td>forest</td></tr>
+                            <tr><td>ағаш</td><td>tree</td></tr>
+                            <tr><td>гүл</td><td>flower</td></tr>
+                            <tr><td>ауа</td><td>air</td></tr>
+                            <tr><td>жер</td><td>earth/ground</td></tr>
+                            <tr><td>өзен</td><td>river</td></tr>
+                            <tr><td>күн</td><td>sun</td></tr>
+                            <tr><td>қар</td><td>snow</td></tr>
+                            <tr><td>жаңбыр</td><td>rain</td></tr>
+                            <tr><td>жел</td><td>wind</td></tr>
+                            <tr><td>кемпірқосақ</td><td>rainbow</td></tr>
+                            <tr><td>аспан</td><td>sky</td></tr>
+                            <tr><td>жапырақ</td><td>leaf</td></tr>
+                            <tr><td>құм</td><td>sand</td></tr>
+                            <tr><td>шөп</td><td>grass</td></tr>
+                            <tr><td>табиғат</td><td>nature</td></tr>
+                            <tr><td>теңіз</td><td>sea</td></tr>
+                            <tr><td>шөл</td><td>desert</td></tr>
+                        </table>
+                    </div>
+                    
+                    <div class="d-none" id="lexTable3">
+                        <table>
+                            <tr><th colspan="2">Мамандық</th></tr>
+                            <tr><td>кәсіпкер</td><td>businessman</td></tr>
+                            <tr><td>маман</td><td>specialist</td></tr>
+                            <tr><td>мамандық</td><td>specialty</td></tr>
+                            <tr><td>мұғалім</td><td>teacher</td></tr>
+                            <tr><td>дәрігер</td><td>doctor</td></tr>
+                            <tr><td>суретші</td><td>artist</td></tr>
+                            <tr><td>студент</td><td>student</td></tr>
+                            <tr><td>инженер</td><td>engineer</td></tr>
+                            <tr><td>сатушы</td><td>seller</td></tr>
+                            <tr><td>жүргізуші</td><td>driver</td></tr>
+                            <tr><td>полиция</td><td>police officer</td></tr>
+                            <tr><td>ақын</td><td>poet</td></tr>
+                            <tr><td>хатшы</td><td>secretary</td></tr>
+                            <tr><td>маркетолог</td><td>marketer</td></tr>
+                            <tr><td>аудармашы</td><td>translator/interpreter</td></tr>
+                            <tr><td>аспаз</td><td>cook/chef</td></tr>
+                            <tr><td>фермер</td><td>farmer</td></tr>
+                            <tr><td>заңгер</td><td>lawyer</td></tr>
+                            <tr><td>ғалым</td><td>scientist</td></tr>
+                            <tr><td>жұмысшы</td><td>worker</td></tr>
+                            <tr><td>әкім</td><td>administrator</td></tr>
+                        </table>
+                    </div>
+                    
+                    <div class="d-none" id="lexTable4">
+                        <table>
+                            <tr><th colspan="2">Тағам</th></tr>
+                            <tr><td>тағам</td><td>food</td></tr>
+                            <tr><td>нан</td><td>bread</td></tr>
+                            <tr><td>су</td><td>water</td></tr>
+                            <tr><td>шай</td><td>tea</td></tr>
+                            <tr><td>газдалған сусын</td><td>carbonated/fizzy drink</td></tr>
+                            <tr><td>ет</td><td>meat</td></tr>
+                            <tr><td>балық</td><td>fish</td></tr>
+                            <tr><td>жеміс</td><td>fruit</td></tr>
+                            <tr><td>көкөніс</td><td>vegetable</td></tr>
+                            <tr><td>алма</td><td>apple</td></tr>
+                            <tr><td>сүт</td><td>milk</td></tr>
+                            <tr><td>қант</td><td>sugar</td></tr>
+                            <tr><td>тұз</td><td>salt</td></tr>
+                            <tr><td>палау</td><td>pilau</td></tr>
+                            <tr><td>қуырдақ</td><td>fried meat dish</td></tr>
+                            <tr><td>бауырсақ</td><td>fried dough</td></tr>
+                            <tr><td>қымыз</td><td>fermented mare’s milk</td></tr>
+                            <tr><td>шұбат</td><td>fermented camel’s milk</td></tr>
+                            <tr><td>сорпа</td><td>soup</td></tr>
+                            <tr><td>май</td><td>butter/oil</td></tr>
+                            <tr><td>бәліш</td><td>pie</td></tr>
+                            <tr><td>шұжық</td><td>sausage</td></tr>
+                            <tr><td>картоп</td><td>potato</td></tr>
+                            <tr><td>кофе</td><td>coffee</td></tr>
+                            <tr><td>балмұздақ</td><td>ice cream</td></tr>
+                        </table>
+                    </div>
+                    
+                    <div class="d-none" id="lexTable5">
+                        <table>
+                            <tr><th colspan="2">Спорт</th></tr>
+                            <tr><td>футбол</td><td>football</td></tr>
+                            <tr><td>шахмат</td><td>chess</td></tr>
+                            <tr><td>жүгіру</td><td>running</td></tr>
+                            <tr><td>теннис</td><td>tennis</td></tr>
+                            <tr><td>волейбол</td><td>volleyball</td></tr>
+                            <tr><td>бокс</td><td>boxing</td></tr>
+                            <tr><td>жүзу</td><td>swimming</td></tr>
+                            <tr><td>гимнастика</td><td>gymnastics</td></tr>
+                            <tr><td>жаттығу</td><td>exercise</td></tr>
+                            <tr><td>шаңғы</td><td>skiing</td></tr>
+                            <tr><td>көкпар</td><td>kokpar</td></tr>
+                            <tr><td>серуендеу</td><td>walking</td></tr>
+                        </table>
+                    </div>
+                    
+                    <div class="d-none" id="lexTable6">
+                        <table>
+                            <tr><th colspan="2">Саяхат</th></tr>
+                            <tr><td>ұшақ</td><td>airplane</td></tr>
+                            <tr><td>пойыз</td><td>train</td></tr>
+                            <tr><td>автобус</td><td>bus</td></tr>
+                            <tr><td>көлік</td><td>car</td></tr>
+                            <tr><td>велосипед</td><td>bicycle</td></tr>
+                            <tr><td>әуежай</td><td>airport</td></tr>
+                            <tr><td>вокзал</td><td>train station</td></tr>
+                            <tr><td>билет</td><td>ticket</td></tr>
+                            <tr><td>жол</td><td>road</td></tr>
+                            <tr><td>аялдама</td><td>bus stop</td></tr>
+                        </table>
+                    </div>
+                    
+                    <div class="d-none" id="lexTable7">
+                        <table>
+                            <tr><th colspan="2">Жануарлар</th></tr>
+                            <tr><td>ит</td><td>dog</td></tr>
+                            <tr><td>мысық</td><td>cat</td></tr>
+                            <tr><td>жылқы</td><td>horse</td></tr>
+                            <tr><td>түйе</td><td>camel</td></tr>
+                            <tr><td>сиыр</td><td>cow</td></tr>
+                            <tr><td>қой</td><td>sheep</td></tr>
+                            <tr><td>қасқыр</td><td>wolf</td></tr>
+                            <tr><td>қоян</td><td>rabbit</td></tr>
+                            <tr><td>аю</td><td>bear</td></tr>
+                            <tr><td>құс</td><td>bird</td></tr>
+                        </table>
+                    </div>
+                    
+                    <div class="d-none" id="lexTable8">
+                        <table>
+                            <tr><th colspan="2">Өсімдіктер</th></tr>
+                            <tr><td>ағаш</td><td>tree</td></tr>
+                            <tr><td>гүл</td><td>flower</td></tr>
+                            <tr><td>шөп</td><td>grass</td></tr>
+                            <tr><td>жидек</td><td>berry</td></tr>
+                            <tr><td>бидай</td><td>wheat</td></tr>
+                            <tr><td>қарағай</td><td>pine</td></tr>
+                            <tr><td>шырша</td><td>fir tree</td></tr>
+                            <tr><td>жапырақ</td><td>leaf</td></tr>
+                            <tr><td>жеміс</td><td>fruit</td></tr>
+                            <tr><td>егін</td><td>crop</td></tr>
+                        </table>
+                    </div>
+                    
+                </div>
+                <div class="modal-footer">
+                    &nbsp;
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer style="min-height:170px">
+        <div class="footer bg-dark">
+            <div class="container">
+                <div class="row">
+                    <div class="social col-12 text-center mb-3">
+                        <a class="text-white mx-1" href="https://www.instagram.com/tbi.kz/" target="_blank"><i class="fa fa-instagram"></i></a>
+                        <a class="text-white mx-1" href="https://www.youtube.com/@tbikz" target="_blank"><i class="fa fa-youtube-play"></i></a>
+                        <a class="text-white mx-1" href="https://www.facebook.com/tbi.qaz/" target="_blank"><i class="fa fa-facebook-official"></i></a>
+                    </div>
+                    <div class="col-12 text-white text-center">
+                        <p>Барлық құқықтар сақталған <a class="text-white" href="https://tbi.kz/" target="_blank">TBI.kz</a> ® 2026</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- jQuery and Bootstrap Bundle (includes Popper) -->
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.1/dist/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script>
+
+    <script type="text/javascript">
+    
+        /** Inits */
+        document.addEventListener("DOMContentLoaded", (event) => {
+            console.log("DOMContentLoaded");
+        });
+        function lexTable(id) {
+            document.getElementById("lexTable").innerHTML = document.getElementById("lexTable"+id).innerHTML;
+            document.getElementById("lexTable").scrollIntoView({behavior:"smooth"});
+        }
+    </script>
+
+</body>
+</html>

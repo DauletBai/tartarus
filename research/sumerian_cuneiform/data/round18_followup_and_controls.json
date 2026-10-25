@@ -1,0 +1,30 @@
+{
+  "reason": "First photo is broad composite with no confident target localization; second preselected composition first physical witness has no image. Added first mu-tud composition by Q order, Q001025 Ur-Nanse17, to inspect a simpler graphic sequence. Selection is after corpus exposure, not blind.",
+  "independent_controls": [
+    {
+      "Sumerian_editorial": "pad",
+      "meaning": "find",
+      "Kazakh_comparator": "тап-/таб-; табу",
+      "status": "Exploratory; would require more than final-d loss."
+    },
+    {
+      "Sumerian_editorial": "gid",
+      "meaning": "long",
+      "Kazakh_comparator": "ұзын",
+      "status": "No direct regular correspondence established."
+    },
+    {
+      "Sumerian_editorial": "sud",
+      "meaning": "distant",
+      "Kazakh_comparator": "алыс",
+      "status": "No direct regular correspondence established."
+    },
+    {
+      "Sumerian_editorial": "nud",
+      "meaning": "lie",
+      "Kazakh_comparator": "жат-",
+      "status": "Final consonants do not straightforwardly support an unconditional d→zero rule."
+    }
+  ],
+  "older_comparator": "Holopainen2.3 discusses tug-/tog- and reconstructed *tuγ-/*toγ-. These are published comparisons and reconstructions, not newly read old Kazakh forms. No continuous Kazakh-Sumerian history established."
+}
