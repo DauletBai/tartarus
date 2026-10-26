@@ -1,0 +1,12 @@
+{
+  "status": "passed",
+  "pad_tokens": 147,
+  "compositions": 100,
+  "forms": 24,
+  "lexical_rows": 19,
+  "UD_rows": 9,
+  "source_hashes": 16,
+  "manifest_hashes": 33,
+  "local_links": 14,
+  "book_PDF": "unchanged"
+}

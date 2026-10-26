@@ -1,0 +1,458 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+  <meta charset="utf-8"/>
+  <meta name="generator" content="oracc/px p4html.xml "/>
+  <link rel="stylesheet" type="text/css" href="/css/p4.css"/>
+  <link rel="stylesheet" type="text/css" href="/css/p4-cuneify.css"/>
+  <link rel="stylesheet" type="text/css" href="/dcclt/css/p3colours.css"/>
+  <link rel="stylesheet" type="text/css" href="/dcclt/css/projcss.css"/>
+  <script type="text/javascript" src="/js/p4.js">&#160;</script>
+  <script type="text/javascript" src="/js/p4cbd.js">&#160;</script>
+  <script src="https://code.jquery.com/jquery-3.2.1.min.js" type="text/javascript"><![CDATA[ ]]></script>
+  <title>dcclt</title>    
+</head>
+  <body onload="p4Onload()"><div id="p4Pager" class="bborder-top list item dglo iart zoom default" data-proj="dcclt" data-glos="sux" data-glet="P" data-gent="o0036618" data-prev="o0036615" data-item="o0036618" data-next="o0036624" data-bkmk="o0036618" data-lang="en">
+  <div id="p4Masthead">
+    <p id="p4HeadTitle" class="banner bborder-top bborder1-bot">
+      <a href="/">Oracc:</a> <a href="/dcclt">dcclt &#x2014; Digital Corpus of Cuneiform Lexical Texts</a>
+    </p>
+  </div>
+  <div id="p4Header" class="menu banner bborder-bot">
+    <p id="p4Banner">
+      <span id="p4Icons">
+	
+  <img class="p4icon" src="/img/p3-dd.png"
+       alt="Toggle menu drop-down" title="Toggle menu drop-down"
+       onclick="toggle_dd()"/>
+  <img id="p4HelpIcon" class="p4icon"
+       src="/img/p3-help.png" alt="Help" title="Help"
+       onclick="window.location='/doc/help/visitingoracc/gettingstarted/index.html'"/>
+  <img id="p4ResetIcon" class="p4icon"
+       src="/img/p3-reset.png" alt="Reset pager" title="Reset pager"
+       onclick="resetPager()"/>
+  <img id="p4MoreIcon" class="p4icon"
+       src="/img/p3-plus.png" alt="More resources" title="More resources"
+       onclick="window.location='/dcclt/hub.html'"/>
+
+      </span>
+    </p>
+    <div id="p4Search">
+  <form action="javascript://" onsubmit="act_srch()">
+    <p>
+      <!--Oracc Search:-->
+      <input id="p4SrchBox" type="text" size="30"
+	     value=""/>
+      <input type="submit" style="display: none"/>
+      <img id="p4SrchGo" class="p4icon" src="/img/p3-search.png"
+	   alt="Search" title="Search" onclick="act_srch()"/>
+    </p>
+    <p id="p4SrchChars">(j=ŋ&#xa0;sz=š&#xa0;s,=ṣ&#xa0;t,=ṭ&#xa0;0-9=₀-₉; &apos;=alef)</p>
+  </form>
+</div>
+
+    <div id="p4Controls">
+      
+  <div id="p4itemNav" class="p4items" data-ityp="ENTRY" data-inth="10" data-imax="99">
+    <p class="bg-dk">
+
+      
+      <img id="p4ToggleMeta" class="p4icon" src="/img/p3-full.png"
+	   alt="Toggle metadata pane" title="Toggle metadata pane" onclick="toggle_md()"/>
+      
+      <img id="p4PageItem" class="p4icon p4spread" src="/img/p3-pageitem.png"
+	   alt="Toggle Page/Item view" title="Return to Page view"
+	   onclick="toggle_pi()"/>
+
+      <!--Item-->
+      <img id="p4ItemPrev" class="p4icon p4spread" src="/img/p3-backward.png"
+	   alt="Item back" title="Item back"
+	   onclick="act_item_prev()"/>
+      
+      <span id="p4ItemView"> [ENTRY 10 of 99] </span>
+      
+      <img id="p4ItemNext" class="p4icon p4spread" src="/img/p3-forward.png"
+	   alt="Item forward" title="Item forward"
+	   onclick="act_item_next()"/>
+
+      <span id="p4SrchResults" class="p4srchresults" data-tmax="" data-rmax="0">
+	 Texts [0 matches]
+      </span>
+
+      <span id="p4Translations">
+	
+	<input id="p4Transonly" type="checkbox" onchange="toggle_to()"
+	       value="@@pui_transonly()@@"/>&#xa0;only
+      </span>
+
+    </p>
+  </div>
+
+  <div id="p4PageNav" class="p4pages" data-page="1" data-pmax="4" data-imax="99">
+    <p class="p3toccenter bg-dk">
+
+      <button id="p4Zoom" class="p4spread" onclick="act_zoom('0')">All Results</button>
+
+      <img id="p4PagePrev" class="p4icon p4spread" src="/img/p3-backward.png"
+	   alt="Page back" title="Page back"
+	   onclick="act_prev()"/>
+      
+      <!--Page-->
+      <input id="p4Pageset" type="text" onchange="act_page()" size="3" value="1"/>
+
+      <img id="p4PageNext" class="p4icon p4spread" src="/img/p3-forward.png"
+	   alt="Page forward" title="Page forward"
+	   onclick="act_next()"/>
+
+      99 entries
+      /
+      4 pages
+
+      <span id="p4SrchResultpages" class="p4srchresults">[0 matches]</span>
+
+      <span id="p4CeType" class="cetype"><select id="p4CESelect" onchange="act_ce_switch(event)" value="line">
+  <option value="line" selected="selected">Line</option>
+  <option value="unit">Sentence</option>
+  <option value="kwic">KWIC</option>
+</select>
+</span>
+    </p>
+  </div>
+
+
+    </div>
+  </div>
+  <div id="p4Data">
+    <div id="p4Menu">
+<div id="p4Letters"><p class="all-letters"><a href="javascript://" onclick="act_letter('entry_ids')">ALL</a></p><p><a href="javascript://" onclick="act_letter('A')"><span>A</span></a></p><p><a href="javascript://" onclick="act_letter('B')"><span>B</span></a></p><p><a href="javascript://" onclick="act_letter('D')"><span>D</span></a></p><p><a href="javascript://" onclick="act_letter('E')"><span>E</span></a></p><p><a href="javascript://" onclick="act_letter('G')"><span>G</span></a></p><p><a href="javascript://" onclick="act_letter('Ŋ')"><span>Ŋ</span></a></p><p><a href="javascript://" onclick="act_letter('H')"><span>H</span></a></p><p><a href="javascript://" onclick="act_letter('I')"><span>I</span></a></p><p><a href="javascript://" onclick="act_letter('K')"><span>K</span></a></p><p><a href="javascript://" onclick="act_letter('L')"><span>L</span></a></p><p><a href="javascript://" onclick="act_letter('M')"><span>M</span></a></p><p><a href="javascript://" onclick="act_letter('N')"><span>N</span></a></p><p><a href="javascript://" class="zoomed" onclick="act_letter('P')"><span>P</span></a></p><p><a href="javascript://" onclick="act_letter('R')"><span>R</span></a></p><p><a href="javascript://" onclick="act_letter('S')"><span>S</span></a></p><p><a href="javascript://" onclick="act_letter('Š')"><span>Š</span></a></p><p><a href="javascript://" onclick="act_letter('T')"><span>T</span></a></p><p><a href="javascript://" onclick="act_letter('U')"><span>U</span></a></p><p><a href="javascript://" onclick="act_letter('Y')"><span>Y</span></a></p><p><a href="javascript://" onclick="act_letter('Z')"><span>Z</span></a></p></div></div>
+
+    <div id="p4Content">
+      <div id="p4Item" class="glo">
+  <div id="p4GlossaryEntry">
+<div class="body" name="dcclt/sux/pad[find]V/t" id="dcclt/sux/pad[find]V/t">
+      <div xmlns:xh="http://www.w3.org/1999/xhtml" xmlns:xi="http://www.w3.org/2001/XInclude" class="header">
+        <h1 class="entry heading border-top"><span class="cf sux">pad</span><span class="gw"> [FIND]</span> <span class="pos">(V/t)</span></h1>
+        <p class="icount">
+          <a class="icount" href="javascript://" onclick="act_isid(event)" data-lang="sux" data-isid="sux.r004280">64 instances</a>
+        </p>
+      </div>
+      <p xmlns:xh="http://www.w3.org/1999/xhtml" xmlns:xi="http://www.w3.org/2001/XInclude" class="bases"><span class="iheader">Base forms:</span><a class="icountu" href="javascript://" onclick="act_isid(event)" data-lang="sux" data-isid="sux.r004290"><span class="orth1"><span xmlns:note="http://oracc.org/ns/note/1.0" x="1" class="w sux " id=""><span x="3" class="sux">pa</span></span></span></a>; <a class="icountu" href="javascript://" onclick="act_isid(event)" data-lang="sux" data-isid="sux.r004291"><span class="orth1"><span xmlns:note="http://oracc.org/ns/note/1.0" x="1" class="w sux " id=""><span x="3" class="sux">pa</span>-<span x="3" class="sux">ad</span></span></span></a>; <a class="icountu" href="javascript://" onclick="act_isid(event)" data-lang="sux" data-isid="sux.r004294"><span class="orth1"><span xmlns:note="http://oracc.org/ns/note/1.0" x="1" class="w sux " id=""><span x="3" class="sux">pad₃</span></span></span></a>; <a class="icountu" href="javascript://" onclick="act_isid(event)" data-lang="sux" data-isid="sux.r004289"><span class="orth1"><span xmlns:note="http://oracc.org/ns/note/1.0" x="1" class="w sux " id=""><sup class="sux">pa</sup>-<sup class="sux">a</sup><span x="3" class="sux">pad₃</span></span></span></a>; <a class="icountu" href="javascript://" onclick="act_isid(event)" data-lang="sux" data-isid="sux.r00428b"><span class="orth1"><span xmlns:note="http://oracc.org/ns/note/1.0" x="1" class="w sux " id=""><sup class="sux">pa</sup><span x="3" class="sux">pad₃</span></span></span></a>.</p>
+      <div xmlns:xh="http://www.w3.org/1999/xhtml" xmlns:xi="http://www.w3.org/2001/XInclude" class="forms">
+        <p class="forms"><span class="iheader">Written forms:</span><a class="icountu" href="javascript://" onclick="act_isid(event)" data-lang="sux" data-isid="sux.r004281"><span xmlns:note="http://oracc.org/ns/note/1.0" x="1" class="w sux " id=""><span x="3" class="sux">ḫe₂</span>-<span x="3" class="sux">pad₃</span></span></a>; <a class="icountu" href="javascript://" onclick="act_isid(event)" data-lang="sux" data-isid="sux.r004282"><span xmlns:note="http://oracc.org/ns/note/1.0" x="1" class="w sux " id=""><span x="3" class="sux">i₃</span>-<span x="3" class="sux">pad₃</span>-<span x="3" class="sux">da</span></span></a>; <a class="icountu" href="javascript://" onclick="act_isid(event)" data-lang="sux" data-isid="sux.r004283"><span xmlns:note="http://oracc.org/ns/note/1.0" x="1" class="w sux " id=""><span x="3" class="sux">in</span>-<span x="3" class="sux">pad₃</span></span></a>; <a class="icountu" href="javascript://" onclick="act_isid(event)" data-lang="sux" data-isid="sux.r004284"><span xmlns:note="http://oracc.org/ns/note/1.0" x="1" class="w sux " id=""><span x="3" class="sux">in</span>-<span x="3" class="sux">pad₃</span>-<span x="3" class="sux">da</span></span></a>; <a class="icountu" href="javascript://" onclick="act_isid(event)" data-lang="sux" data-isid="sux.r004285"><span xmlns:note="http://oracc.org/ns/note/1.0" x="1" class="w sux " id=""><span x="3" class="sux">in</span>-<span x="3" class="sux">pad₃</span>-<span x="3" class="sux">da</span>-<span x="3" class="sux">e</span>-<span x="3" class="sux">meš</span></span></a>; <a class="icountu" href="javascript://" onclick="act_isid(event)" data-lang="sux" data-isid="sux.r004286"><span xmlns:note="http://oracc.org/ns/note/1.0" x="1" class="w sux " id=""><span x="3" class="sux">in</span>-<span x="3" class="sux">pad₃</span>-<span x="3" class="sux">e</span></span></a>; <a class="icountu" href="javascript://" onclick="act_isid(event)" data-lang="sux" data-isid="sux.r004287"><span xmlns:note="http://oracc.org/ns/note/1.0" x="1" class="w sux " id=""><span x="3" class="sux">in</span>-<span x="3" class="sux">pad₃</span>-<span x="3" class="sux">e</span>-<span x="3" class="sux">meš</span></span></a>; <a class="icountu" href="javascript://" onclick="act_isid(event)" data-lang="sux" data-isid="sux.r004288"><span xmlns:note="http://oracc.org/ns/note/1.0" x="1" class="w sux " id=""><span x="3" class="sux">pa₃</span></span></a>; <a class="icountu" href="javascript://" onclick="act_isid(event)" data-lang="sux" data-isid="sux.r004289"><span xmlns:note="http://oracc.org/ns/note/1.0" x="1" class="w sux " id=""><sup class="sux">pa</sup>-<sup class="sux">a</sup><span x="3" class="sux">pad₃</span></span></a>; <a class="icountu" href="javascript://" onclick="act_isid(event)" data-lang="sux" data-isid="sux.r00428a"><span xmlns:note="http://oracc.org/ns/note/1.0" x="1" class="w sux " id=""><span x="3" class="sux">pad₃</span></span></a>; <a class="icountu" href="javascript://" onclick="act_isid(event)" data-lang="sux" data-isid="sux.r00428b"><span xmlns:note="http://oracc.org/ns/note/1.0" x="1" class="w sux " id=""><sup class="sux">pa</sup><span x="3" class="sux">pad₃</span></span></a>; <a class="icountu" href="javascript://" onclick="act_isid(event)" data-lang="sux" data-isid="sux.r00428c"><span xmlns:note="http://oracc.org/ns/note/1.0" x="1" class="w sux " id=""><span x="3" class="sux">pad₃</span>-<span x="3" class="sux">da</span></span></a>; <a class="icountu" href="javascript://" onclick="act_isid(event)" data-lang="sux" data-isid="sux.r00428d"><span xmlns:note="http://oracc.org/ns/note/1.0" x="1" class="w sux " id=""><span x="3" class="sux">pad₃</span>-<span x="3" class="sux">de₃</span></span></a>; <a class="icountu" href="javascript://" onclick="act_isid(event)" data-lang="sux" data-isid="sux.r00428e"><span xmlns:note="http://oracc.org/ns/note/1.0" x="1" class="w sux " id=""><span x="3" class="sux">pad₃</span>-<span x="3" class="sux">du</span></span></a>; <a class="icountu" href="javascript://" onclick="act_isid(event)" data-lang="sux" data-isid="sux.r00428f"><span xmlns:note="http://oracc.org/ns/note/1.0" x="1" class="w sux " id=""><span x="3" class="sux">u₃</span>-<span x="3" class="sux">mu</span>-<span x="3" class="sux">un</span>-<span x="3" class="sux">ni</span>-<span x="3" class="sux">pad₃</span></span></a>; <a class="icountu" href="javascript://" onclick="act_isid(event)" data-lang="sux" data-isid="sux.r004290"><span xmlns:note="http://oracc.org/ns/note/1.0" x="1" class="w sux " id=""><span x="3" class="sux">ul</span>-<span x="3" class="sux">pa</span></span></a>; <a class="icountu" href="javascript://" onclick="act_isid(event)" data-lang="sux" data-isid="sux.r004291"><span xmlns:note="http://oracc.org/ns/note/1.0" x="1" class="w sux " id=""><span x="3" class="sux">ul</span>-<span x="3" class="sux">pa</span>-<span x="3" class="sux">ad</span>-<span x="3" class="sux">di</span></span></a>.</p>
+      </div>
+      <p xmlns:xh="http://www.w3.org/1999/xhtml" xmlns:xi="http://www.w3.org/2001/XInclude" class="norms"><span class="iheader">Normalized forms:</span><a class="icountu" href="javascript://" onclick="act_isid(event)" data-lang="sux" data-isid="sux.r004281">ha:pad</a> (<a class="icountu" href="javascript://" onclick="act_isid(event)" data-lang="sux" data-isid="sux.r004281"><span xmlns:note="http://oracc.org/ns/note/1.0" x="1" class="w sux " id=""><span x="3" class="sux">ḫe₂</span>-<span x="3" class="sux">pad₃</span></span></a>)<span class="punct-sc">; </span><a class="icountu" href="javascript://" onclick="act_isid(event)" data-lang="sux" data-isid="sux.r004292">pad</a> (<a class="icountu" href="javascript://" onclick="act_isid(event)" data-lang="sux" data-isid="sux.r00428a"><span xmlns:note="http://oracc.org/ns/note/1.0" x="1" class="w sux " id=""><span x="3" class="sux">pad₃</span></span></a><span class="punct-c">, </span><a class="icountu" href="javascript://" onclick="act_isid(event)" data-lang="sux" data-isid="sux.r004288"><span xmlns:note="http://oracc.org/ns/note/1.0" x="1" class="w sux " id=""><span x="3" class="sux">pa₃</span></span></a>)<span class="punct-sc">; </span><a class="icountu" href="javascript://" onclick="act_isid(event)" data-lang="sux" data-isid="sux.r00428e">pad!u</a> (<a class="icountu" href="javascript://" onclick="act_isid(event)" data-lang="sux" data-isid="sux.r00428e"><span xmlns:note="http://oracc.org/ns/note/1.0" x="1" class="w sux " id=""><span x="3" class="sux">pad₃</span>-<span x="3" class="sux">du</span></span></a>)<span class="punct-sc">; </span><a class="icountu" href="javascript://" onclick="act_isid(event)" data-lang="sux" data-isid="sux.r004293">pad;a</a> (<a class="icountu" href="javascript://" onclick="act_isid(event)" data-lang="sux" data-isid="sux.r00428c"><span xmlns:note="http://oracc.org/ns/note/1.0" x="1" class="w sux " id=""><span x="3" class="sux">pad₃</span>-<span x="3" class="sux">da</span></span></a><span class="punct-c">, </span><a class="icountu" href="javascript://" onclick="act_isid(event)" data-lang="sux" data-isid="sux.r004289"><span xmlns:note="http://oracc.org/ns/note/1.0" x="1" class="w sux " id=""><sup class="sux">pa</sup>-<sup class="sux">a</sup><span x="3" class="sux">pad₃</span></span></a><span class="punct-c">, </span><a class="icountu" href="javascript://" onclick="act_isid(event)" data-lang="sux" data-isid="sux.r00428b"><span xmlns:note="http://oracc.org/ns/note/1.0" x="1" class="w sux " id=""><sup class="sux">pa</sup><span x="3" class="sux">pad₃</span></span></a>)<span class="punct-sc">; </span><a class="icountu" href="javascript://" onclick="act_isid(event)" data-lang="sux" data-isid="sux.r00428d">pad;e</a> (<a class="icountu" href="javascript://" onclick="act_isid(event)" data-lang="sux" data-isid="sux.r00428d"><span xmlns:note="http://oracc.org/ns/note/1.0" x="1" class="w sux " id=""><span x="3" class="sux">pad₃</span>-<span x="3" class="sux">de₃</span></span></a>)<span class="punct-sc">; </span><a class="icountu" href="javascript://" onclick="act_isid(event)" data-lang="sux" data-isid="sux.r004290">u.al:pad</a> (<a class="icountu" href="javascript://" onclick="act_isid(event)" data-lang="sux" data-isid="sux.r004290"><span xmlns:note="http://oracc.org/ns/note/1.0" x="1" class="w sux " id=""><span x="3" class="sux">ul</span>-<span x="3" class="sux">pa</span></span></a>)<span class="punct-sc">; </span><a class="icountu" href="javascript://" onclick="act_isid(event)" data-lang="sux" data-isid="sux.r004291">u.al:pad;e</a> (<a class="icountu" href="javascript://" onclick="act_isid(event)" data-lang="sux" data-isid="sux.r004291"><span xmlns:note="http://oracc.org/ns/note/1.0" x="1" class="w sux " id=""><span x="3" class="sux">ul</span>-<span x="3" class="sux">pa</span>-<span x="3" class="sux">ad</span>-<span x="3" class="sux">di</span></span></a>)<span class="punct-sc">; </span><a class="icountu" href="javascript://" onclick="act_isid(event)" data-lang="sux" data-isid="sux.r00428f">u.mu.ni:pad</a> (<a class="icountu" href="javascript://" onclick="act_isid(event)" data-lang="sux" data-isid="sux.r00428f"><span xmlns:note="http://oracc.org/ns/note/1.0" x="1" class="w sux " id=""><span x="3" class="sux">u₃</span>-<span x="3" class="sux">mu</span>-<span x="3" class="sux">un</span>-<span x="3" class="sux">ni</span>-<span x="3" class="sux">pad₃</span></span></a>)<span class="punct-sc">; </span><a class="icountu" href="javascript://" onclick="act_isid(event)" data-lang="sux" data-isid="sux.r004283">V.n:pad</a> (<a class="icountu" href="javascript://" onclick="act_isid(event)" data-lang="sux" data-isid="sux.r004283"><span xmlns:note="http://oracc.org/ns/note/1.0" x="1" class="w sux " id=""><span x="3" class="sux">in</span>-<span x="3" class="sux">pad₃</span></span></a>)<span class="punct-sc">; </span><a class="icountu" href="javascript://" onclick="act_isid(event)" data-lang="sux" data-isid="sux.r004284">V.n:pad;a</a> (<a class="icountu" href="javascript://" onclick="act_isid(event)" data-lang="sux" data-isid="sux.r004284"><span xmlns:note="http://oracc.org/ns/note/1.0" x="1" class="w sux " id=""><span x="3" class="sux">in</span>-<span x="3" class="sux">pad₃</span>-<span x="3" class="sux">da</span></span></a>)<span class="punct-sc">; </span><a class="icountu" href="javascript://" onclick="act_isid(event)" data-lang="sux" data-isid="sux.r004285">V.n:pad;a,e.meš</a> (<a class="icountu" href="javascript://" onclick="act_isid(event)" data-lang="sux" data-isid="sux.r004285"><span xmlns:note="http://oracc.org/ns/note/1.0" x="1" class="w sux " id=""><span x="3" class="sux">in</span>-<span x="3" class="sux">pad₃</span>-<span x="3" class="sux">da</span>-<span x="3" class="sux">e</span>-<span x="3" class="sux">meš</span></span></a>)<span class="punct-sc">; </span><a class="icountu" href="javascript://" onclick="act_isid(event)" data-lang="sux" data-isid="sux.r004286">V.n:pad;e</a> (<a class="icountu" href="javascript://" onclick="act_isid(event)" data-lang="sux" data-isid="sux.r004286"><span xmlns:note="http://oracc.org/ns/note/1.0" x="1" class="w sux " id=""><span x="3" class="sux">in</span>-<span x="3" class="sux">pad₃</span>-<span x="3" class="sux">e</span></span></a>)<span class="punct-sc">; </span><a class="icountu" href="javascript://" onclick="act_isid(event)" data-lang="sux" data-isid="sux.r004287">V.n:pad;e.meš</a> (<a class="icountu" href="javascript://" onclick="act_isid(event)" data-lang="sux" data-isid="sux.r004287"><span xmlns:note="http://oracc.org/ns/note/1.0" x="1" class="w sux " id=""><span x="3" class="sux">in</span>-<span x="3" class="sux">pad₃</span>-<span x="3" class="sux">e</span>-<span x="3" class="sux">meš</span></span></a>)<span class="punct-sc">; </span><a class="icountu" href="javascript://" onclick="act_isid(event)" data-lang="sux" data-isid="sux.r004282">V:pad;a</a> (<a class="icountu" href="javascript://" onclick="act_isid(event)" data-lang="sux" data-isid="sux.r004282"><span xmlns:note="http://oracc.org/ns/note/1.0" x="1" class="w sux " id=""><span x="3" class="sux">i₃</span>-<span x="3" class="sux">pad₃</span>-<span x="3" class="sux">da</span></span></a>).</p>
+      <div xmlns:xh="http://www.w3.org/1999/xhtml" xmlns:xi="http://www.w3.org/2001/XInclude" class="morphs">
+        <span class="iheader">Morphological forms:</span>
+        <a class="icountu" href="javascript://" onclick="act_isid(event)" data-lang="sux" data-isid="sux.r004283">V.n:~</a>
+        <span class="punct-sc">; </span>
+        <a class="icountu" href="javascript://" onclick="act_isid(event)" data-lang="sux" data-isid="sux.r004284">V.n:~;a</a>
+        <span class="punct-sc">; </span>
+        <a class="icountu" href="javascript://" onclick="act_isid(event)" data-lang="sux" data-isid="sux.r004285">V.n:~;a,e.meš</a>
+        <span class="punct-sc">; </span>
+        <a class="icountu" href="javascript://" onclick="act_isid(event)" data-lang="sux" data-isid="sux.r004286">V.n:~;e</a>
+        <span class="punct-sc">; </span>
+        <a class="icountu" href="javascript://" onclick="act_isid(event)" data-lang="sux" data-isid="sux.r004287">V.n:~;e.meš</a>
+        <span class="punct-sc">; </span>
+        <a class="icountu" href="javascript://" onclick="act_isid(event)" data-lang="sux" data-isid="sux.r004282">V:~;a</a>
+        <span class="punct-sc">; </span>
+        <a class="icountu" href="javascript://" onclick="act_isid(event)" data-lang="sux" data-isid="sux.r004281">ha:~</a>
+        <span class="punct-sc">; </span>
+        <a class="icountu" href="javascript://" onclick="act_isid(event)" data-lang="sux" data-isid="sux.r004290">u.al:~</a>
+        <span class="punct-sc">; </span>
+        <a class="icountu" href="javascript://" onclick="act_isid(event)" data-lang="sux" data-isid="sux.r004291">u.al:~;e</a>
+        <span class="punct-sc">; </span>
+        <a class="icountu" href="javascript://" onclick="act_isid(event)" data-lang="sux" data-isid="sux.r00428f">u.mu.ni:~</a>
+        <span class="punct-sc">; </span>
+        <a class="icountu" href="javascript://" onclick="act_isid(event)" data-lang="sux" data-isid="sux.r004292">~</a>
+        <span class="punct-sc">; </span>
+        <a class="icountu" href="javascript://" onclick="act_isid(event)" data-lang="sux" data-isid="sux.r00428e">~!u</a>
+        <span class="punct-sc">; </span>
+        <a class="icountu" href="javascript://" onclick="act_isid(event)" data-lang="sux" data-isid="sux.r004293">~;a</a>
+        <span class="punct-sc">; </span>
+        <a class="icountu" href="javascript://" onclick="act_isid(event)" data-lang="sux" data-isid="sux.r00428d">~;e</a>
+        <span class="punct-sc">.</span>
+      </div>
+      <div xmlns:xh="http://www.w3.org/1999/xhtml" xmlns:xi="http://www.w3.org/2001/XInclude" class="morphs prefix">
+        <p>
+          <span class="iheader">Verbal prefixes:</span>
+          <a class="icountu" href="javascript://" onclick="act_isid(event)" data-lang="sux" data-isid="sux.r004282">V</a>
+          <span class="punct-sc">; </span>
+          <a class="icountu" href="javascript://" onclick="act_isid(event)" data-lang="sux" data-isid="sux.r004296">V.n</a>
+          <span class="punct-sc">; </span>
+          <a class="icountu" href="javascript://" onclick="act_isid(event)" data-lang="sux" data-isid="sux.r004281">ha</a>
+          <span class="punct-sc">; </span>
+          <a class="icountu" href="javascript://" onclick="act_isid(event)" data-lang="sux" data-isid="sux.r004297">u.al</a>
+          <span class="punct-sc">; </span>
+          <a class="icountu" href="javascript://" onclick="act_isid(event)" data-lang="sux" data-isid="sux.r00428f">u.mu.ni</a>
+          <span class="punct-sc">.</span>
+        </p>
+      </div>
+      <div xmlns:xh="http://www.w3.org/1999/xhtml" xmlns:xi="http://www.w3.org/2001/XInclude" class="senses">
+        <h3 class="sense"><span class="sensenum">1.</span> to find, discover<a class="icount" href="javascript://" onclick="act_isid(event)" data-lang="sux" data-isid="sux.r004298"> (40x/63%)</a></h3>
+        <h3 class="sense"><span class="sensenum">2.</span> to name, nominate<a class="icount" href="javascript://" onclick="act_isid(event)" data-lang="sux" data-isid="sux.r00429f"> (11x/17%)</a></h3>
+        <h3 class="sense"><span class="sensenum">3.</span> to swear<a class="icount" href="javascript://" onclick="act_isid(event)" data-lang="sux" data-isid="sux.r0042a8"> (13x/20%)</a></h3>
+      </div>
+      <div xmlns:esp="http://oracc.org/ns/esp/1.0" xmlns:lex="http://oracc.org/ns/lex/1.0" xmlns:o="http://oracc.org/ns/oracc/1.0" xmlns:xh="http://www.w3.org/1999/xhtml" xmlns:xi="http://www.w3.org/2001/XInclude" class="lex-word" title="pad[find]V/t" o:id="o0036618" xml:base="../../../../home/oracc/www/dcclt/cbd/sux/pb/o0036618.html">
+  <h3 class="lex-base">Pronunciation Data for bases</h3>
+  <div class="lex-base" title="pad₃">
+    <h2 class="lex-base">
+      <a href="javascript://" onclick="act_isid(event)" data-proj="dcclt" data-lang="sux" data-isid="lx.bs.4699">pad₃</a>
+    </h2>
+    <p class="lex-line"><span class="lex-spel"> = <i>watûm</i></span> (<a xmlns:g="http://oracc.org/ns/gdl/1.0" xmlns:note="http://oracc.org/ns/note/1.0" href="javascript://" onclick="act_ilnk(event)" title="dcclt/signlists on Oracc" data-proj="dcclt/signlists" data-iref="P527017.104">Moussaieff OB Aa o iii 2, o iii 3, o iii 4</a>).</p>
+  </div>
+  <div class="lex-base" title="pa₃">
+    <h2 class="lex-base">
+      <a href="javascript://" onclick="act_isid(event)" data-proj="dcclt" data-lang="sux" data-isid="lx.bs.4699">pa₃</a>
+    </h2>
+    <p class="lex-line"><span class="lex-spel"> = <i>atû</i></span> (<a xmlns:g="http://oracc.org/ns/gdl/1.0" xmlns:note="http://oracc.org/ns/note/1.0" href="javascript://" onclick="act_ilnk(event)" title="dcclt/signlists on Oracc" data-proj="dcclt/signlists" data-iref="Q000157.173">Ea 05 186</a>; <a xmlns:g="http://oracc.org/ns/gdl/1.0" xmlns:note="http://oracc.org/ns/note/1.0" href="javascript://" onclick="act_ilnk(event)" title="dcclt on Oracc" data-proj="dcclt" data-iref="Q000055.443">OB Nippur Ea 410</a>; <a xmlns:g="http://oracc.org/ns/gdl/1.0" xmlns:note="http://oracc.org/ns/note/1.0" href="javascript://" onclick="act_ilnk(event)" title="dcclt/signlists on Oracc" data-proj="dcclt/signlists" data-iref="P250504.119">CUSAS 12, 1.2.1 r ii' 34'</a>).</p>
+  </div>
+</div>
+      <div xmlns:esp="http://oracc.org/ns/esp/1.0" xmlns:lex="http://oracc.org/ns/lex/1.0" xmlns:o="http://oracc.org/ns/oracc/1.0" xmlns:note="http://oracc.org/ns/note/1.0" xmlns:xh="http://www.w3.org/1999/xhtml" xmlns:xi="http://www.w3.org/2001/XInclude" class="lex-word" title="pad[find]V/t" o:id="o0036618" id="lexphrases" xml:base="../../../../home/oracc/www/dcclt/cbd/sux/eq/o0036618.html">
+  <h3 class="lex refs">
+      <span class="lex-button">Lexical Associations</span>
+    </h3>
+  <div class="lex-phra" title="awû[speak]V">
+      <h2 class="lex-phra">
+        <a href="javascript://" onclick="act_isid(event)" data-proj="dcclt" data-lang="sux" data-isid="lx.wd.62424">awû[speak]V (// pad[find])</a>
+      </h2>
+      <p class="lex-line"><span class="lex-line"><span x="1" class="w sux " id=""><span class="sux">[</span><span x="3" class="sux">in</span><span class="sux">]</span>-<span class="sux">⸢</span><span x="3" class="sux">pad₃</span><span class="sux">⸣</span>-<span x="3" class="sux">da</span></span> = <span x="1" class="w akk-x-mbperi " id=""><span x="3" class="akk">it</span>-<span x="3" class="akk">mi</span></span></span> (<a href="javascript://" onclick="act_ilnk(event)" title="dcclt on Oracc" data-proj="dcclt" data-iref="Q000065.39">MB Ura 02 Seg.1, 39</a>).</p>
+    </div>
+  <div class="lex-phra" title="nabû[to name]V">
+      <h2 class="lex-phra">
+        <a href="javascript://" onclick="act_isid(event)" data-proj="dcclt" data-lang="sux" data-isid="lx.wd.62425">nabû[to name]V (// pad[find])</a>
+      </h2>
+      <p class="lex-line"><span class="lex-line"><span x="1" class="w sux " id=""><sup class="sux">pa</sup>-<sup class="sux">a</sup><span x="3" class="sux">pad₃</span></span> = <span x="1" class="w akk-x-stdbab " id=""><span x="3" class="akk">na</span>-<span x="3" class="akk">bu</span>-<span x="3" class="akk">u</span></span></span> (<a href="javascript://" onclick="act_ilnk(event)" title="dcclt/nineveh on Oracc" data-proj="dcclt/nineveh" data-iref="P365268.97">CT 12, 34-35, K 00197+ o ii 36</a>).</p>
+    </div>
+  <div class="lex-phra" title="tamû[swear]V">
+      <h2 class="lex-phra">
+        <a href="javascript://" onclick="act_isid(event)" data-proj="dcclt" data-lang="sux" data-isid="lx.wd.62426">tamû[swear]V (// pad[find])</a>
+      </h2>
+      <p class="lex-line"><span class="lex-line"><span x="1" class="w sux " id=""><span class="sux">[</span><span x="3" class="sux">in</span><span class="sux">]</span>-<span class="sux">⸢</span><span x="3" class="sux">pad₃</span><span class="sux">⸣</span></span> = <span x="1" class="w akk " id=""><span x="3" class="akk">it</span>-<span x="3" class="akk">am</span></span></span> (<a href="javascript://" onclick="act_ilnk(event)" title="dcclt on Oracc" data-proj="dcclt" data-iref="P347788.9">MSL SS 1, 066 o 6'</a>).</p>
+      <p class="lex-line"><span class="lex-line"><span x="1" class="w sux " id=""><span x="3" class="sux">in</span>-<span x="3" class="sux">pad₃</span></span> = <span x="1" class="w akk-x-stdbab " id=""><span x="3" class="akk">it</span>-<span class="sux">⸢</span><span x="3" class="akk">mu</span><sup class="sux">?</sup><span class="sux">⸣</span></span></span> (<a href="javascript://" onclick="act_ilnk(event)" title="dcclt/nineveh on Oracc" data-proj="dcclt/nineveh" data-iref="P395477.7">K 04316+ o i 3'</a>; <a href="javascript://" onclick="act_ilnk(event)" title="dcclt on Oracc" data-proj="dcclt" data-iref="P338313.46">MSL 05, 046 o i 40</a>).</p>
+      <p class="lex-line"><span class="lex-line"><span x="1" class="w sux " id=""><span x="3" class="sux">in</span>-<span x="3" class="sux">pad₃</span>-<span x="3" class="sux">e</span></span> = <span x="1" class="w akk-x-stdbab " id=""><span x="3" class="akk">i</span>-<span class="sux">⸢</span><span x="3" class="akk">ta</span>-<span x="3" class="akk">mi</span><span class="sux">⸣</span></span></span> (<a href="javascript://" onclick="act_ilnk(event)" title="dcclt/nineveh on Oracc" data-proj="dcclt/nineveh" data-iref="P395477.8">K 04316+ o i 4'</a>).</p>
+      <p class="lex-line"><span class="lex-line"><span x="1" class="w sux " id=""><span class="sux">[</span><span x="3" class="sux">in</span>-<span x="3" class="sux">pad₃</span>-<span x="3" class="sux">e</span><span class="sux">]</span></span> = <span x="1" class="w akk " id=""><span class="sux">[</span><span x="3" class="akk">i</span><span class="sux">]</span>-<span class="sux">⸢</span><span x="3" class="akk">ta</span><span class="sux">⸣</span>-<span x="3" class="akk">mu</span></span></span> (<a href="javascript://" onclick="act_ilnk(event)" title="dcclt on Oracc" data-proj="dcclt" data-iref="P338313.47">MSL 05, 046 o i 41</a>; <a href="javascript://" onclick="act_ilnk(event)" title="dcclt on Oracc" data-proj="dcclt" data-iref="P347788.11">MSL SS 1, 066 o 7'</a>).</p>
+      <p class="lex-line"><span class="lex-line"><span x="1" class="w sux " id=""><span class="sux">[</span><span x="3" class="sux">in</span>-<span x="3" class="sux">pad₃</span>-<span x="3" class="sux">e</span>-<span x="3" class="sux">meš</span><span class="sux">]</span></span> = <span x="1" class="w akk " id=""><span class="sux">[</span><span x="3" class="akk">i</span><span class="sux">]</span>-<span x="3" class="akk">ta</span>-<span x="3" class="akk">mu</span>-<span x="3" class="akk">u</span></span></span> (<a href="javascript://" onclick="act_ilnk(event)" title="dcclt on Oracc" data-proj="dcclt" data-iref="P338313.48">MSL 05, 046 o i 42</a>; <a href="javascript://" onclick="act_ilnk(event)" title="dcclt on Oracc" data-proj="dcclt" data-iref="P347788.12">MSL SS 1, 066 o 8'</a>).</p>
+      <p class="lex-line"><span class="lex-line"><span x="1" class="w sux " id=""><span x="3" class="sux">in</span>-<span x="3" class="sux">pad₃</span>-<span x="3" class="sux">e</span>-<span x="3" class="sux">meš</span></span> = <span x="1" class="w akk-x-stdbab " id=""><span class="sux">⸢</span><span x="3" class="akk">it</span><sup class="sux">?</sup>-<span x="3" class="akk">mu</span><sup class="sux">?</sup>-<span x="3" class="akk">u</span><sup class="sux">?</sup><span class="sux">⸣</span></span></span> (<a href="javascript://" onclick="act_ilnk(event)" title="dcclt/nineveh on Oracc" data-proj="dcclt/nineveh" data-iref="P395477.9">K 04316+ o i 5'</a>).</p>
+      <p class="lex-line"><span class="lex-line"><span x="1" class="w sux " id=""><span class="sux">⸢</span><span x="3" class="sux">pad₃</span><span class="sux">⸣</span></span> = <span x="1" class="w akk-x-stdbab " id=""><span class="sux">[</span><span x="3" class="akk">ta</span>-<span x="3" class="akk">mu</span><span class="sux">]</span>-<span class="sux">⸢</span><span x="3" class="akk">u₂</span><span class="sux">⸣</span></span></span> (<a href="javascript://" onclick="act_ilnk(event)" title="dcclt/nineveh on Oracc" data-proj="dcclt/nineveh" data-iref="P365268.140">CT 12, 34-35, K 00197+ r i 21</a>).</p>
+      <p class="lex-line"><span class="lex-line"><span x="1" class="w sux " id=""><span class="sux">[</span><span x="3" class="sux">pad₃</span><span class="sux">]</span></span> = <span x="1" class="w akk-x-oldbab " id=""><span x="3" class="akk">ta</span><sup class="sux">!</sup>-<span x="3" class="akk">mu</span>-<span x="3" class="akk">u₂</span>-<span class="sux">[</span><span x="3" class="akk">um</span><span class="sux">]</span></span></span> (<a href="javascript://" onclick="act_ilnk(event)" title="dcclt/signlists on Oracc" data-proj="dcclt/signlists" data-iref="P527017.105">Moussaieff OB Aa o iii 3</a>).</p>
+      <p class="lex-line"><span class="lex-line"><span x="1" class="w sux " id=""><span x="3" class="sux">pad₃</span>-<span x="3" class="sux">da</span></span> = <span x="1" class="w akk-x-stdbab " id=""><span class="sux">⸢</span><span class="sign ">MIN</span><span class="sux">⸣</span>&lt;(<span x="3" class="akk">ta</span>-<span x="3" class="akk">mu</span>-<span x="3" class="akk">u₂</span>)&gt;</span></span> (<a href="javascript://" onclick="act_ilnk(event)" title="dcclt/nineveh on Oracc" data-proj="dcclt/nineveh" data-iref="P365268.141">CT 12, 34-35, K 00197+ r i 22</a>).</p>
+    </div>
+  <div class="lex-phra" title="watû[find]V">
+      <h2 class="lex-phra">
+        <a href="javascript://" onclick="act_isid(event)" data-proj="dcclt" data-lang="sux" data-isid="lx.wd.62439">watû[find]V (// pad[find])</a>
+      </h2>
+      <p class="lex-line"><span class="lex-line"><span x="1" class="w sux " id=""><span x="3" class="sux">pad₃</span></span> = <span x="1" class="w akk " id=""><span x="3" class="akk">a</span>-<span x="3" class="akk">tu</span>-<span x="3" class="akk">u₂</span></span></span> (<a href="javascript://" onclick="act_ilnk(event)" title="dcclt on Oracc" data-proj="dcclt" data-iref="P363707.178">TCL 06, 35 o iii 31</a>).</p>
+      <p class="lex-line"><span class="lex-line"><span x="1" class="w sux " id=""><span class="sux">[</span><span x="3" class="sux">pad₃</span><span class="sux">]</span></span> = <span x="1" class="w akk-x-oldbab " id=""><span x="3" class="akk">wa</span>-<span x="3" class="akk">tu</span>-<span x="3" class="akk">u₂</span><sup class="sux">?</sup>-<span class="sux">[</span><span x="3" class="akk">um</span><span class="sux">]</span></span></span> (<a href="javascript://" onclick="act_ilnk(event)" title="dcclt/signlists on Oracc" data-proj="dcclt/signlists" data-iref="P527017.104">Moussaieff OB Aa o iii 2</a>).</p>
+      <p class="lex-line"><span class="lex-line"><span x="1" class="w sux " id=""><span x="3" class="sux">pa₃</span></span> = <span x="1" class="w akk-x-stdbab " id=""><span class="sux">[</span><span x="3" class="akk">a</span>-<span x="3" class="akk">tu</span>-<span x="3" class="akk">u₂</span><span class="sux">]</span></span></span> (<a href="javascript://" onclick="act_ilnk(event)" title="dcclt/signlists on Oracc" data-proj="dcclt/signlists" data-iref="Q000157.173">Ea 05 186</a>; <a href="javascript://" onclick="act_ilnk(event)" title="dcclt/signlists on Oracc" data-proj="dcclt/signlists" data-iref="P250504.119">CUSAS 12, 1.2.1 r ii' 34'</a>).</p>
+    </div>
+  <div class="lex-phra" title="zakāru[speak]V">
+      <h2 class="lex-phra">
+        <a href="javascript://" onclick="act_isid(event)" data-proj="dcclt" data-lang="sux" data-isid="lx.wd.62444">zakāru[speak]V (// pad[find])</a>
+      </h2>
+      <p class="lex-line"><span class="lex-line"><span x="1" class="w sux " id=""><span x="3" class="sux">in</span>-<span x="3" class="sux">pad₃</span>-<span class="sux">⸢</span><span x="3" class="sux">da</span>-<span x="3" class="sux">e</span><sup class="sux">?</sup><span class="sux">⸣</span>-<span x="3" class="sux">meš</span></span> = <span x="1" class="w akk " id=""><span x="3" class="akk">is</span>-<span class="sux">⸢</span><span x="3" class="akk">qu</span><span class="sux">⸣</span>-<span class="sux">[</span><span x="3" class="akk">ru</span><span class="sux">]</span></span></span> (<a href="javascript://" onclick="act_ilnk(event)" title="dcclt on Oracc" data-proj="dcclt" data-iref="P451049.32">Iraq 06, 26 o ii' 4'</a>).</p>
+      <p class="lex-line"><span class="lex-line"><span x="1" class="w sux " id=""><span x="3" class="sux">in</span>-<span x="3" class="sux">pad₃</span>-<span class="sux">⸢</span><span x="3" class="sux">e</span><sup class="sux">?</sup>-<span x="3" class="sux">meš</span><span class="sux">⸣</span></span> = <span x="1" class="w akk " id=""><span class="sux">⸢</span><span x="3" class="akk">is</span><sup class="sux">?</sup>-<span x="3" class="akk">qu</span><span class="sux">⸣</span>-<span x="3" class="akk">ru</span></span></span> (<a href="javascript://" onclick="act_ilnk(event)" title="dcclt on Oracc" data-proj="dcclt" data-iref="P450811.33">MSL SS 1, p. 058 catalogue 1924-0876 o iii' 8</a>).</p>
+      <p class="lex-line"><span class="lex-line"><span x="1" class="w sux " id=""><span x="3" class="sux">pad₃</span></span> = <span x="1" class="w akk-x-stdbab " id=""><span x="3" class="akk">za</span>-<span x="3" class="akk">ka</span>-<span x="3" class="akk">rum</span></span></span> (<a href="javascript://" onclick="act_ilnk(event)" title="dcclt/nineveh on Oracc" data-proj="dcclt/nineveh" data-iref="P365268.111">CT 12, 34-35, K 00197+ o ii 49</a>; <a href="javascript://" onclick="act_ilnk(event)" title="dcclt/signlists on Oracc" data-proj="dcclt/signlists" data-iref="P527017.106">Moussaieff OB Aa o iii 4</a>).</p>
+      <p class="lex-line"><span class="lex-line"><span x="1" class="w sux " id=""><span x="3" class="sux">pad₃</span>-<span x="3" class="sux">da</span></span> = <span x="1" class="w akk-x-stdbab " id=""><span class="sign ">MIN</span>&lt;(<span x="3" class="akk">za</span>-<span x="3" class="akk">ka</span>-<span x="3" class="akk">rum</span>)&gt;</span></span> (<a href="javascript://" onclick="act_ilnk(event)" title="dcclt/nineveh on Oracc" data-proj="dcclt/nineveh" data-iref="P365268.112">CT 12, 34-35, K 00197+ o ii 50</a>).</p>
+    </div>
+  <div class="lex-phra" title="x pasāsu[erase]V">
+      <h2 class="lex-phra">
+        <a href="javascript://" onclick="act_isid(event)" data-proj="dcclt" data-lang="sux" data-isid="lx.wd.62450">x pasāsu[erase]V (// pad[find] zir[break])</a>
+      </h2>
+      <p class="lex-line"><span class="lex-line"><span x="1" class="w sux " id=""><span class="sux">[</span><span x="3" class="sux">pad₃</span>-<span x="3" class="sux">de₃</span><span class="sux">]</span></span> <span x="1" class="w sux " id=""><span class="sux">⸢</span><span x="3" class="sux">zi</span><span class="sux">⸣</span>-<span x="3" class="sux">ri</span>-<span x="3" class="sux">dam</span></span> = <span x="1" class="w akk " id=""><span class="r">[...<span class="sux">]</span></span></span> <span x="1" class="w akk " id=""><span x="3" class="akk">up</span>-<span x="3" class="akk">tas</span>-<span x="3" class="akk">sas</span></span></span> (<a href="javascript://" onclick="act_ilnk(event)" title="dcclt on Oracc" data-proj="dcclt" data-iref="P338313.94">MSL 05, 046 o ii 36</a>).</p>
+    </div>
+  <div class="lex-phra" title="ina[in]PRP būrtu[cistern]N x">
+      <h2 class="lex-phra">
+        <a href="javascript://" onclick="act_isid(event)" data-proj="dcclt" data-lang="sux" data-isid="lx.wd.62452">ina[in]PRP būrtu[cistern]N x (// x pad[find])</a>
+      </h2>
+      <p class="lex-line"><span class="lex-line"><span x="1" class="w sux " id=""><span class="r">[...</span></span> <span x="1" class="w sux " id=""><span x="3" class="sux">i₃</span><span class="sux">]</span>-<span class="sux">⸢</span><span x="3" class="sux">pad₃</span><span class="sux">⸣</span>-<span x="3" class="sux">da</span></span> = <span x="1" class="w akk " id=""><span x="3" class="akk">ina</span></span> <span x="1" class="w akk " id=""><span x="3" class="akk">bur</span>-<span class="sux">⸢</span><span x="3" class="akk">tum</span><span class="sux">⸣</span></span> <span x="1" class="w akk " id=""><span class="r">[...<span class="sux">]</span></span></span></span> (<a href="javascript://" onclick="act_ilnk(event)" title="dcclt on Oracc" data-proj="dcclt" data-iref="P348995.24">Iraq 06, 28 o i' 17</a>).</p>
+    </div>
+  <div class="lex-phra" title="nīšu[life]N ilu[god]N tamû[swear]V">
+      <h2 class="lex-phra">
+        <a href="javascript://" onclick="act_isid(event)" data-proj="dcclt" data-lang="sux" data-isid="lx.wd.62453">nīšu[life]N ilu[god]N tamû[swear]V (// x pad[find])</a>
+      </h2>
+      <p class="lex-line"><span class="lex-line"><span x="1" class="w sux " id=""><span class="r">[...<span class="sux">]</span></span></span> <span x="1" class="w sux " id=""><span class="sux">⸢</span><span x="3" class="sux">in</span><span class="sux">⸣</span>-<span x="3" class="sux">pad₃</span></span> = <span x="1" class="w akk-x-stdbab " id=""><span x="3" class="akk">niš</span></span> <span x="1" class="w akk-x-stdbab " id=""><span class="sign sux">DINGIR</span>-<span x="3" class="akk">šu₂</span>-<span x="3" class="akk">nu</span></span> <span x="1" class="w akk-x-stdbab " id=""><span x="3" class="akk">it</span>-<span x="3" class="akk">mu</span>-<span x="3" class="akk">u</span></span></span> (<a href="javascript://" onclick="act_ilnk(event)" title="dcclt/nineveh on Oracc" data-proj="dcclt/nineveh" data-iref="P397668.85">K 08521 o ii 42</a>).</p>
+    </div>
+  <hr class="lex"/>
+  <div class="lex-phra" title="ašru[place]N lā[not]MOD wadû[know]V">
+      <h2 class="lex-phra">
+        <a href="javascript://" onclick="act_isid(event)" data-proj="dcclt" data-lang="sux" data-isid="lx.wd.41744">ašru[place]N lā[not]MOD wadû[know]V (// ki[place] pad[find] e[speak])</a>
+      </h2>
+      <p class="lex-line"><span class="lex-line"><span x="1" class="w sux " id=""><span x="3" class="sux">ki</span></span> <span x="1" class="w sux " id=""><span x="3" class="sux">pad₃</span>-<span x="3" class="sux">da</span></span> <span x="1" class="w sux " id=""><span x="3" class="sux">nam</span>-<span x="3" class="sux">me</span></span> = <span x="1" class="w akk-x-stdbab " id=""><span x="3" class="akk">a</span>-<span x="3" class="akk">šar</span></span> <span x="1" class="w akk-x-stdbab " id=""><span x="3" class="akk">la</span></span> <span x="1" class="w akk-x-stdbab " id=""><span x="3" class="akk">ud</span>-<span x="3" class="akk">di</span>-<span x="3" class="akk">i</span></span></span> (<a href="javascript://" onclick="act_ilnk(event)" title="dcclt/nineveh on Oracc" data-proj="dcclt/nineveh" data-iref="P365399.146">CT 19, pl. 17-19, K 04386+ o ii 36'</a>).</p>
+    </div>
+  <div class="lex-phra" title="nīšu[life]N ilu[god]N tamû[swear]V">
+      <h2 class="lex-phra">
+        <a href="javascript://" onclick="act_isid(event)" data-proj="dcclt" data-lang="sux" data-isid="lx.wd.54043">nīšu[life]N ilu[god]N tamû[swear]V (// mu[name] diŋir[deity] pad[find])</a>
+      </h2>
+      <p class="lex-line"><span class="lex-line"><span x="1" class="w sux " id=""><span class="sux">⸢</span><span x="3" class="sux">mu</span></span> <span x="1" class="w sux " id=""><span x="3" class="sux">diŋir</span><span class="sux">⸣</span>-<span x="3" class="sux">diŋir</span>-<span class="sux">&lt;&lt;</span><span x="3" class="sux">a</span><span class="sux">&gt;&gt;</span>-<span x="3" class="sux">a</span>-<span x="3" class="sux">ni</span></span> <span x="1" class="w sux " id=""><span class="sux">⸢</span><span x="3" class="sux">in</span><sup class="sux">?</sup><span class="sux">⸣</span>-<span x="3" class="sux">pad₃</span></span> = <span x="1" class="w akk " id=""><span x="3" class="akk">niš</span></span> <span x="1" class="w akk " id=""><span class="sux">⸢</span><span class="sign sux">DINGIR</span><span class="sux">⸣</span>-<span x="3" class="akk">šu₂</span>-<span x="3" class="akk">nu</span></span> <span x="1" class="w akk " id=""><span x="3" class="akk">it</span>-<span x="3" class="akk">mu</span></span></span> (<a href="javascript://" onclick="act_ilnk(event)" title="dcclt on Oracc" data-proj="dcclt" data-iref="P450811.31">MSL SS 1, p. 058 catalogue 1924-0876 o iii' 6</a>).</p>
+    </div>
+  <div class="lex-phra" title="zakāru[speak]V šumu[name]N">
+      <h2 class="lex-phra">
+        <a href="javascript://" onclick="act_isid(event)" data-proj="dcclt" data-lang="sux" data-isid="lx.wd.59268">zakāru[speak]V šumu[name]N (// niŋ[thing] pad[find])</a>
+      </h2>
+      <p class="lex-line"><span class="lex-line"><span x="1" class="w sux " id=""><span class="sux">⸢</span><span x="3" class="sux">niŋ₂</span><span class="sux">⸣</span></span> <span x="1" class="w sux " id=""><span x="3" class="sux">in</span>-<span x="3" class="sux">pad₃</span></span> = <span x="1" class="w akk " id=""><span x="3" class="akk">za</span>-<span class="sux">⸢</span><span x="3" class="akk">kar</span><sup class="sux">?</sup><span class="sux">⸣</span></span> <span x="1" class="w akk " id=""><span class="sux">[</span><span x="3" class="akk">šu</span>-<span x="3" class="akk">mu</span><span class="sux">]</span></span></span> (<a href="javascript://" onclick="act_ilnk(event)" title="dcclt on Oracc" data-proj="dcclt" data-iref="P451114.18">MSL SS 1, p. 059 catalog 1924-1544 o ii 4</a>).</p>
+    </div>
+  <div class="lex-phra" title="erištu[demand]N x">
+      <h2 class="lex-phra">
+        <a href="javascript://" onclick="act_isid(event)" data-proj="dcclt" data-lang="sux" data-isid="lx.wd.59441">erištu[demand]N x (// niŋaldi[request] pad[find])</a>
+      </h2>
+      <p class="lex-line"><span class="lex-line"><span x="1" class="w sux " id=""><span class="sux">⸢</span><span x="3" class="sux">niŋ₂</span>-<span x="3" class="sux">al</span>-<span x="3" class="sux">di</span></span> <span x="1" class="w sux " id=""><span x="3" class="sux">pad₃</span><span class="sux">⸣</span></span> = <span x="1" class="w akk " id=""><span class="sux">⸢</span><span class="sign ">MIN</span><span class="sux">⸣</span>&lt;(<span x="3" class="akk">e</span>-<span x="3" class="akk">riš</span>-<span x="3" class="akk">tum</span>)&gt;</span> <span x="1" class="w akk " id=""><span class="r">[...<span class="sux">]</span></span></span></span> (<a href="javascript://" onclick="act_ilnk(event)" title="dcclt on Oracc" data-proj="dcclt" data-iref="P451114.20">MSL SS 1, p. 059 catalog 1924-1544 o ii 6</a>).</p>
+    </div>
+  <div class="lex-phra" title="ina[in]PRP būrtu[cistern]N watû[found]AJ">
+      <h2 class="lex-phra">
+        <a href="javascript://" onclick="act_isid(event)" data-proj="dcclt" data-lang="sux" data-isid="lx.wd.63601">ina[in]PRP būrtu[cistern]N watû[found]AJ (// pu[well] pad[find])</a>
+      </h2>
+      <p class="lex-line"><span class="lex-line"><span x="1" class="w sux " id=""><span x="3" class="sux">pu₂</span>-<span x="3" class="sux">ta</span></span> <span x="1" class="w sux " id=""><span x="3" class="sux">i₃</span>-<span x="3" class="sux">pad₃</span>-<span x="3" class="sux">da</span></span> = <span x="1" class="w akk " id=""><span class="sux">[</span><span x="3" class="akk">ina</span><span class="sux">]</span></span> <span x="1" class="w akk " id=""><span class="sux">⸢</span><span x="3" class="akk">bur</span><span class="sux">⸣</span>-<span class="sux">[</span><span x="3" class="akk">tum</span></span> <span x="1" class="w akk " id=""><span x="3" class="akk">a</span>-<span x="3" class="akk">tu</span><span class="sux">]</span></span></span> (<a href="javascript://" onclick="act_ilnk(event)" title="dcclt on Oracc" data-proj="dcclt" data-iref="P338313.7">MSL 05, 046 o i 3</a>).</p>
+    </div>
+  <div class="lex-phra" title="ina[in]PRP būrtu[cistern]N x">
+      <h2 class="lex-phra">
+        <a href="javascript://" onclick="act_isid(event)" data-proj="dcclt" data-lang="sux" data-isid="lx.wd.63602">ina[in]PRP būrtu[cistern]N x (// pu[well] pad[find])</a>
+      </h2>
+      <p class="lex-line"><span class="lex-line"><span x="1" class="w sux " id=""><span x="3" class="sux">pu₂</span>-<span x="3" class="sux">ta</span></span> <span x="1" class="w sux " id=""><span x="3" class="sux">i₃</span>-<span x="3" class="sux">pad₃</span>-<span x="3" class="sux">da</span><sup class="sux">!</sup></span> = <span x="1" class="w akk " id=""><span x="3" class="akk">ina</span></span> <span x="1" class="w akk " id=""><span x="3" class="akk">bur</span>-<span class="sux">⸢</span><span x="3" class="akk">tum</span><span class="sux">⸣</span></span> <span x="1" class="w akk " id=""><span class="r">[...<span class="sux">]</span></span></span></span> (<a href="javascript://" onclick="act_ilnk(event)" title="dcclt on Oracc" data-proj="dcclt" data-iref="P450799.22">MSL SS 1, p. 060 catalogue 1924-0850 o ii 3</a>).</p>
+    </div>
+  <div class="lex-phra" title="ina[in]PRP būrtu[well]N watû[found]AJ">
+      <h2 class="lex-phra">
+        <a href="javascript://" onclick="act_isid(event)" data-proj="dcclt" data-lang="sux" data-isid="lx.wd.63603">ina[in]PRP būrtu[well]N watû[found]AJ (// pu[well] pad[find])</a>
+      </h2>
+      <p class="lex-line"><span class="lex-line"><span x="1" class="w sux " id=""><span x="3" class="sux">pu₂</span>-<span x="3" class="sux">ta</span></span> <span x="1" class="w sux " id=""><span x="3" class="sux">i₃</span>-<span x="3" class="sux">pad₃</span>-<span x="3" class="sux">da</span></span> = <span x="1" class="w akk " id=""><span x="3" class="akk">ina</span></span> <span x="1" class="w akk " id=""><span class="sux">⸢</span><span class="sign sux">PU₂</span><sup class="sux">?</sup><span class="sux">⸣</span>-<span x="3" class="akk">tum</span></span> <span x="1" class="w akk " id=""><span class="sux">⸢</span><span x="3" class="akk">a</span>-<span x="3" class="akk">ti</span><span class="sux">⸣</span></span></span> (<a href="javascript://" onclick="act_ilnk(event)" title="dcclt on Oracc" data-proj="dcclt" data-iref="P450986.6">Iraq 06, 27 o 3</a>).</p>
+    </div>
+</div>
+      <div xmlns:esp="http://oracc.org/ns/esp/1.0" xmlns:lex="http://oracc.org/ns/lex/1.0" xmlns:o="http://oracc.org/ns/oracc/1.0" xmlns:note="http://oracc.org/ns/note/1.0" xmlns:xh="http://www.w3.org/1999/xhtml" xmlns:xi="http://www.w3.org/2001/XInclude" class="lex-word" title="pad[find]V/t" o:id="o0036618" id="lexphrases" xml:base="../../../../home/oracc/www/dcclt/cbd/sux/wp/o0036618.html">
+  <h3 class="lex refs">
+      <a href="javascript://" onclick="act_isid(event)" data-proj="dcclt" data-lang="sux" data-isid="lx.wd.62416">
+        <span class="lex-button">References for all phrases</span>
+      </a>
+    </h3>
+  <div class="lex-phra" title="pad[find]">
+      <h2 class="lex-phra">
+        <a href="javascript://" onclick="act_isid(event)" data-proj="dcclt" data-lang="sux" data-isid="lx.wd.62417">pad[find]</a>
+      </h2>
+      <p class="lex-line"><span class="lex-line"><span x="1" class="w sux " id=""><span x="3" class="sux">pa₃</span></span></span> (<a href="javascript://" onclick="act_ilnk(event)" title="dcclt on Oracc" data-proj="dcclt" data-iref="Q000055.443">OB Nippur Ea 410</a>; <a href="javascript://" onclick="act_ilnk(event)" title="dcclt on Oracc" data-proj="dcclt" data-iref="P227830.23">MSL 14, 025 Hs r ii' 6'</a>; <a href="javascript://" onclick="act_ilnk(event)" title="dcclt on Oracc" data-proj="dcclt" data-iref="P229405.48">MSL 14, 019 By r ii' 3</a>; <a href="javascript://" onclick="act_ilnk(event)" title="dcclt on Oracc" data-proj="dcclt" data-iref="P228842.384">MSL 14, 018 Bb r iii 53</a>).</p>
+      <p class="lex-line"><span class="lex-line"><span x="1" class="w sux " id=""><span x="3" class="sux">pa₃</span></span> = <span x="1" class="w akk-x-stdbab " id=""><span class="r">[...<span class="sux">]</span></span></span></span> (<a href="javascript://" onclick="act_ilnk(event)" title="dcclt/signlists on Oracc" data-proj="dcclt/signlists" data-iref="P365266.37">CT 12, pl. 30, BM 038178 r i' 17'</a>).</p>
+      <p class="lex-line"><span class="lex-line"><span x="1" class="w sux " id=""><span class="sux">[</span><span x="3" class="sux">in</span><span class="sux">]</span>-<span class="sux">⸢</span><span x="3" class="sux">pad₃</span><span class="sux">⸣</span>-<span x="3" class="sux">da</span></span> = <span x="1" class="w akk-x-mbperi " id=""><span x="3" class="akk">it</span>-<span x="3" class="akk">mi</span></span></span> (<a href="javascript://" onclick="act_ilnk(event)" title="dcclt on Oracc" data-proj="dcclt" data-iref="Q000065.39">MB Ura 02 Seg.1, 39</a>).</p>
+      <p class="lex-line"><span class="lex-line"><span x="1" class="w sux " id=""><sup class="sux">pa</sup>-<sup class="sux">a</sup><span x="3" class="sux">pad₃</span></span> = <span x="1" class="w akk-x-stdbab " id=""><span x="3" class="akk">na</span>-<span x="3" class="akk">bu</span>-<span x="3" class="akk">u</span></span></span> (<a href="javascript://" onclick="act_ilnk(event)" title="dcclt/nineveh on Oracc" data-proj="dcclt/nineveh" data-iref="P365268.97">CT 12, 34-35, K 00197+ o ii 36</a>).</p>
+      <p class="lex-line"><span class="lex-line"><span x="1" class="w sux " id=""><span class="sux">[</span><span x="3" class="sux">in</span><span class="sux">]</span>-<span class="sux">⸢</span><span x="3" class="sux">pad₃</span><span class="sux">⸣</span></span> = <span x="1" class="w akk " id=""><span x="3" class="akk">it</span>-<span x="3" class="akk">am</span></span></span> (<a href="javascript://" onclick="act_ilnk(event)" title="dcclt on Oracc" data-proj="dcclt" data-iref="P347788.9">MSL SS 1, 066 o 6'</a>).</p>
+      <p class="lex-line"><span class="lex-line"><span x="1" class="w sux " id=""><span x="3" class="sux">in</span>-<span x="3" class="sux">pad₃</span></span> = <span x="1" class="w akk-x-stdbab " id=""><span x="3" class="akk">it</span>-<span class="sux">⸢</span><span x="3" class="akk">mu</span><sup class="sux">?</sup><span class="sux">⸣</span></span></span> (<a href="javascript://" onclick="act_ilnk(event)" title="dcclt/nineveh on Oracc" data-proj="dcclt/nineveh" data-iref="P395477.7">K 04316+ o i 3'</a>; <a href="javascript://" onclick="act_ilnk(event)" title="dcclt on Oracc" data-proj="dcclt" data-iref="P338313.46">MSL 05, 046 o i 40</a>).</p>
+      <p class="lex-line"><span class="lex-line"><span x="1" class="w sux " id=""><span x="3" class="sux">in</span>-<span x="3" class="sux">pad₃</span>-<span x="3" class="sux">e</span></span> = <span x="1" class="w akk-x-stdbab " id=""><span x="3" class="akk">i</span>-<span class="sux">⸢</span><span x="3" class="akk">ta</span>-<span x="3" class="akk">mi</span><span class="sux">⸣</span></span></span> (<a href="javascript://" onclick="act_ilnk(event)" title="dcclt/nineveh on Oracc" data-proj="dcclt/nineveh" data-iref="P395477.8">K 04316+ o i 4'</a>).</p>
+      <p class="lex-line"><span class="lex-line"><span x="1" class="w sux " id=""><span class="sux">[</span><span x="3" class="sux">in</span>-<span x="3" class="sux">pad₃</span>-<span x="3" class="sux">e</span><span class="sux">]</span></span> = <span x="1" class="w akk " id=""><span class="sux">[</span><span x="3" class="akk">i</span><span class="sux">]</span>-<span class="sux">⸢</span><span x="3" class="akk">ta</span><span class="sux">⸣</span>-<span x="3" class="akk">mu</span></span></span> (<a href="javascript://" onclick="act_ilnk(event)" title="dcclt on Oracc" data-proj="dcclt" data-iref="P338313.47">MSL 05, 046 o i 41</a>; <a href="javascript://" onclick="act_ilnk(event)" title="dcclt on Oracc" data-proj="dcclt" data-iref="P347788.11">MSL SS 1, 066 o 7'</a>).</p>
+      <p class="lex-line"><span class="lex-line"><span x="1" class="w sux " id=""><span class="sux">[</span><span x="3" class="sux">in</span>-<span x="3" class="sux">pad₃</span>-<span x="3" class="sux">e</span>-<span x="3" class="sux">meš</span><span class="sux">]</span></span> = <span x="1" class="w akk " id=""><span class="sux">[</span><span x="3" class="akk">i</span><span class="sux">]</span>-<span x="3" class="akk">ta</span>-<span x="3" class="akk">mu</span>-<span x="3" class="akk">u</span></span></span> (<a href="javascript://" onclick="act_ilnk(event)" title="dcclt on Oracc" data-proj="dcclt" data-iref="P338313.48">MSL 05, 046 o i 42</a>; <a href="javascript://" onclick="act_ilnk(event)" title="dcclt on Oracc" data-proj="dcclt" data-iref="P347788.12">MSL SS 1, 066 o 8'</a>).</p>
+      <p class="lex-line"><span class="lex-line"><span x="1" class="w sux " id=""><span x="3" class="sux">in</span>-<span x="3" class="sux">pad₃</span>-<span x="3" class="sux">e</span>-<span x="3" class="sux">meš</span></span> = <span x="1" class="w akk-x-stdbab " id=""><span class="sux">⸢</span><span x="3" class="akk">it</span><sup class="sux">?</sup>-<span x="3" class="akk">mu</span><sup class="sux">?</sup>-<span x="3" class="akk">u</span><sup class="sux">?</sup><span class="sux">⸣</span></span></span> (<a href="javascript://" onclick="act_ilnk(event)" title="dcclt/nineveh on Oracc" data-proj="dcclt/nineveh" data-iref="P395477.9">K 04316+ o i 5'</a>).</p>
+      <p class="lex-line"><span class="lex-line"><span x="1" class="w sux " id=""><span class="sux">⸢</span><span x="3" class="sux">pad₃</span><span class="sux">⸣</span></span> = <span x="1" class="w akk-x-stdbab " id=""><span class="sux">[</span><span x="3" class="akk">ta</span>-<span x="3" class="akk">mu</span><span class="sux">]</span>-<span class="sux">⸢</span><span x="3" class="akk">u₂</span><span class="sux">⸣</span></span></span> (<a href="javascript://" onclick="act_ilnk(event)" title="dcclt/nineveh on Oracc" data-proj="dcclt/nineveh" data-iref="P365268.140">CT 12, 34-35, K 00197+ r i 21</a>).</p>
+      <p class="lex-line"><span class="lex-line"><span x="1" class="w sux " id=""><span class="sux">[</span><span x="3" class="sux">pad₃</span><span class="sux">]</span></span> = <span x="1" class="w akk-x-oldbab " id=""><span x="3" class="akk">ta</span><sup class="sux">!</sup>-<span x="3" class="akk">mu</span>-<span x="3" class="akk">u₂</span>-<span class="sux">[</span><span x="3" class="akk">um</span><span class="sux">]</span></span></span> (<a href="javascript://" onclick="act_ilnk(event)" title="dcclt/signlists on Oracc" data-proj="dcclt/signlists" data-iref="P527017.105">Moussaieff OB Aa o iii 3</a>).</p>
+      <p class="lex-line"><span class="lex-line"><span x="1" class="w sux " id=""><span x="3" class="sux">pad₃</span>-<span x="3" class="sux">da</span></span> = <span x="1" class="w akk-x-stdbab " id=""><span class="sux">⸢</span><span class="sign ">MIN</span><span class="sux">⸣</span>&lt;(<span x="3" class="akk">ta</span>-<span x="3" class="akk">mu</span>-<span x="3" class="akk">u₂</span>)&gt;</span></span> (<a href="javascript://" onclick="act_ilnk(event)" title="dcclt/nineveh on Oracc" data-proj="dcclt/nineveh" data-iref="P365268.141">CT 12, 34-35, K 00197+ r i 22</a>).</p>
+      <p class="lex-line"><span class="lex-line"><span x="1" class="w sux " id=""><span x="3" class="sux">pad₃</span></span> = <span x="1" class="w akk " id=""><span x="3" class="akk">a</span>-<span x="3" class="akk">tu</span>-<span x="3" class="akk">u₂</span></span></span> (<a href="javascript://" onclick="act_ilnk(event)" title="dcclt on Oracc" data-proj="dcclt" data-iref="P363707.178">TCL 06, 35 o iii 31</a>).</p>
+      <p class="lex-line"><span class="lex-line"><span x="1" class="w sux " id=""><span class="sux">[</span><span x="3" class="sux">pad₃</span><span class="sux">]</span></span> = <span x="1" class="w akk-x-oldbab " id=""><span x="3" class="akk">wa</span>-<span x="3" class="akk">tu</span>-<span x="3" class="akk">u₂</span><sup class="sux">?</sup>-<span class="sux">[</span><span x="3" class="akk">um</span><span class="sux">]</span></span></span> (<a href="javascript://" onclick="act_ilnk(event)" title="dcclt/signlists on Oracc" data-proj="dcclt/signlists" data-iref="P527017.104">Moussaieff OB Aa o iii 2</a>).</p>
+      <p class="lex-line"><span class="lex-line"><span x="1" class="w sux " id=""><span x="3" class="sux">pa₃</span></span> = <span x="1" class="w akk-x-stdbab " id=""><span class="sux">[</span><span x="3" class="akk">a</span>-<span x="3" class="akk">tu</span>-<span x="3" class="akk">u₂</span><span class="sux">]</span></span></span> (<a href="javascript://" onclick="act_ilnk(event)" title="dcclt/signlists on Oracc" data-proj="dcclt/signlists" data-iref="Q000157.173">Ea 05 186</a>; <a href="javascript://" onclick="act_ilnk(event)" title="dcclt/signlists on Oracc" data-proj="dcclt/signlists" data-iref="P250504.119">CUSAS 12, 1.2.1 r ii' 34'</a>).</p>
+      <p class="lex-line"><span class="lex-line"><span x="1" class="w sux " id=""><span x="3" class="sux">in</span>-<span x="3" class="sux">pad₃</span>-<span class="sux">⸢</span><span x="3" class="sux">da</span>-<span x="3" class="sux">e</span><sup class="sux">?</sup><span class="sux">⸣</span>-<span x="3" class="sux">meš</span></span> = <span x="1" class="w akk " id=""><span x="3" class="akk">is</span>-<span class="sux">⸢</span><span x="3" class="akk">qu</span><span class="sux">⸣</span>-<span class="sux">[</span><span x="3" class="akk">ru</span><span class="sux">]</span></span></span> (<a href="javascript://" onclick="act_ilnk(event)" title="dcclt on Oracc" data-proj="dcclt" data-iref="P451049.32">Iraq 06, 26 o ii' 4'</a>).</p>
+      <p class="lex-line"><span class="lex-line"><span x="1" class="w sux " id=""><span x="3" class="sux">in</span>-<span x="3" class="sux">pad₃</span>-<span class="sux">⸢</span><span x="3" class="sux">e</span><sup class="sux">?</sup>-<span x="3" class="sux">meš</span><span class="sux">⸣</span></span> = <span x="1" class="w akk " id=""><span class="sux">⸢</span><span x="3" class="akk">is</span><sup class="sux">?</sup>-<span x="3" class="akk">qu</span><span class="sux">⸣</span>-<span x="3" class="akk">ru</span></span></span> (<a href="javascript://" onclick="act_ilnk(event)" title="dcclt on Oracc" data-proj="dcclt" data-iref="P450811.33">MSL SS 1, p. 058 catalogue 1924-0876 o iii' 8</a>).</p>
+      <p class="lex-line"><span class="lex-line"><span x="1" class="w sux " id=""><span x="3" class="sux">pad₃</span></span> = <span x="1" class="w akk-x-stdbab " id=""><span x="3" class="akk">za</span>-<span x="3" class="akk">ka</span>-<span x="3" class="akk">rum</span></span></span> (<a href="javascript://" onclick="act_ilnk(event)" title="dcclt/nineveh on Oracc" data-proj="dcclt/nineveh" data-iref="P365268.111">CT 12, 34-35, K 00197+ o ii 49</a>; <a href="javascript://" onclick="act_ilnk(event)" title="dcclt/signlists on Oracc" data-proj="dcclt/signlists" data-iref="P527017.106">Moussaieff OB Aa o iii 4</a>).</p>
+      <p class="lex-line"><span class="lex-line"><span x="1" class="w sux " id=""><span x="3" class="sux">pad₃</span>-<span x="3" class="sux">da</span></span> = <span x="1" class="w akk-x-stdbab " id=""><span class="sign ">MIN</span>&lt;(<span x="3" class="akk">za</span>-<span x="3" class="akk">ka</span>-<span x="3" class="akk">rum</span>)&gt;</span></span> (<a href="javascript://" onclick="act_ilnk(event)" title="dcclt/nineveh on Oracc" data-proj="dcclt/nineveh" data-iref="P365268.112">CT 12, 34-35, K 00197+ o ii 50</a>).</p>
+    </div>
+  <div class="lex-phra" title="pad[find] zir[break]">
+      <h2 class="lex-phra">
+        <a href="javascript://" onclick="act_isid(event)" data-proj="dcclt" data-lang="sux" data-isid="lx.wd.62450">pad[find] zir[break]</a>
+      </h2>
+      <p class="lex-line"><span class="lex-line"><span x="1" class="w sux " id=""><span class="sux">[</span><span x="3" class="sux">pad₃</span>-<span x="3" class="sux">de₃</span><span class="sux">]</span></span> <span x="1" class="w sux " id=""><span class="sux">⸢</span><span x="3" class="sux">zi</span><span class="sux">⸣</span>-<span x="3" class="sux">ri</span>-<span x="3" class="sux">dam</span></span> = <span x="1" class="w akk " id=""><span class="r">[...<span class="sux">]</span></span></span> <span x="1" class="w akk " id=""><span x="3" class="akk">up</span>-<span x="3" class="akk">tas</span>-<span x="3" class="akk">sas</span></span></span> (<a href="javascript://" onclick="act_ilnk(event)" title="dcclt on Oracc" data-proj="dcclt" data-iref="P338313.94">MSL 05, 046 o ii 36</a>).</p>
+    </div>
+  <div class="lex-phra" title="x pad[find]">
+      <h2 class="lex-phra">
+        <a href="javascript://" onclick="act_isid(event)" data-proj="dcclt" data-lang="sux" data-isid="lx.wd.62451">x pad[find]</a>
+      </h2>
+      <p class="lex-line"><span class="lex-line"><span x="1" class="w sux " id=""><span class="r">[...</span></span> <span x="1" class="w sux " id=""><span x="3" class="sux">i₃</span><span class="sux">]</span>-<span class="sux">⸢</span><span x="3" class="sux">pad₃</span><span class="sux">⸣</span>-<span x="3" class="sux">da</span></span> = <span x="1" class="w akk " id=""><span x="3" class="akk">ina</span></span> <span x="1" class="w akk " id=""><span x="3" class="akk">bur</span>-<span class="sux">⸢</span><span x="3" class="akk">tum</span><span class="sux">⸣</span></span> <span x="1" class="w akk " id=""><span class="r">[...<span class="sux">]</span></span></span></span> (<a href="javascript://" onclick="act_ilnk(event)" title="dcclt on Oracc" data-proj="dcclt" data-iref="P348995.24">Iraq 06, 28 o i' 17</a>).</p>
+      <p class="lex-line"><span class="lex-line"><span x="1" class="w sux " id=""><span class="r">[...<span class="sux">]</span></span></span> <span x="1" class="w sux " id=""><span class="sux">⸢</span><span x="3" class="sux">in</span><span class="sux">⸣</span>-<span x="3" class="sux">pad₃</span></span> = <span x="1" class="w akk-x-stdbab " id=""><span x="3" class="akk">niš</span></span> <span x="1" class="w akk-x-stdbab " id=""><span class="sign sux">DINGIR</span>-<span x="3" class="akk">šu₂</span>-<span x="3" class="akk">nu</span></span> <span x="1" class="w akk-x-stdbab " id=""><span x="3" class="akk">it</span>-<span x="3" class="akk">mu</span>-<span x="3" class="akk">u</span></span></span> (<a href="javascript://" onclick="act_ilnk(event)" title="dcclt/nineveh on Oracc" data-proj="dcclt/nineveh" data-iref="P397668.85">K 08521 o ii 42</a>).</p>
+    </div>
+  <hr class="lex"/>
+  <div class="lex-phra" title="abula[gate] na-ne₂ pad[find]">
+      <h2 class="lex-phra">
+        <a href="javascript://" onclick="act_isid(event)" data-proj="dcclt" data-lang="sux" data-isid="lx.wd.10046">abula[gate] na-ne₂ pad[find]</a>
+      </h2>
+      <p class="lex-line"><span class="lex-line"><span x="1" class="w sux " id=""><span x="3" class="sux">abul</span></span> <span x="1" class="w sux " id=""><span x="3" class="sux">na</span>-<span x="3" class="sux">ne₂</span></span> <span x="1" class="w sux " id=""><span x="3" class="sux">pad₃</span>-<span x="3" class="sux">da</span></span></span> (<a href="javascript://" onclick="act_ilnk(event)" title="dcclt on Oracc" data-proj="dcclt" data-iref="Q000048.8">OB Nippur Kagal 8</a>).</p>
+    </div>
+  <div class="lex-phra" title="ki[place] pad[find] e[speak]">
+      <h2 class="lex-phra">
+        <a href="javascript://" onclick="act_isid(event)" data-proj="dcclt" data-lang="sux" data-isid="lx.wd.41744">ki[place] pad[find] e[speak]</a>
+      </h2>
+      <p class="lex-line"><span class="lex-line"><span x="1" class="w sux " id=""><span x="3" class="sux">ki</span></span> <span x="1" class="w sux " id=""><span x="3" class="sux">pad₃</span>-<span x="3" class="sux">da</span></span> <span x="1" class="w sux " id=""><span x="3" class="sux">nam</span>-<span x="3" class="sux">me</span></span> = <span x="1" class="w akk-x-stdbab " id=""><span x="3" class="akk">a</span>-<span x="3" class="akk">šar</span></span> <span x="1" class="w akk-x-stdbab " id=""><span x="3" class="akk">la</span></span> <span x="1" class="w akk-x-stdbab " id=""><span x="3" class="akk">ud</span>-<span x="3" class="akk">di</span>-<span x="3" class="akk">i</span></span></span> (<a href="javascript://" onclick="act_ilnk(event)" title="dcclt/nineveh on Oracc" data-proj="dcclt/nineveh" data-iref="P365399.146">CT 19, pl. 17-19, K 04386+ o ii 36'</a>).</p>
+    </div>
+  <div class="lex-phra" title="kišib[seal] pad[find] x">
+      <h2 class="lex-phra">
+        <a href="javascript://" onclick="act_isid(event)" data-proj="dcclt" data-lang="sux" data-isid="lx.wd.43307">kišib[seal] pad[find] x</a>
+      </h2>
+      <p class="lex-line"><span class="lex-line"><span x="1" class="w sux " id=""><span class="sux">⸢</span><sup class="sux">na₄</sup><span class="sux">⸣</span><span x="3" class="sux">kišib</span></span> <span x="1" class="w sux " id=""><span x="3" class="sux">ul</span>-<span x="3" class="sux">pa</span><sup class="sux">!</sup></span> <span x="1" class="w sux " id=""><span x="3" class="sux">x</span></span></span> (<a href="javascript://" onclick="act_ilnk(event)" title="dcclt on Oracc" data-proj="dcclt" data-iref="P229901.36">HS 1702 o ii' 13'</a>).</p>
+    </div>
+  <div class="lex-phra" title="kišib[seal] pad[find] zir[break]">
+      <h2 class="lex-phra">
+        <a href="javascript://" onclick="act_isid(event)" data-proj="dcclt" data-lang="sux" data-isid="lx.wd.43308">kišib[seal] pad[find] zir[break]</a>
+      </h2>
+      <p class="lex-line"><span class="lex-line"><span x="1" class="w sux " id=""><sup class="sux">na₄</sup><span x="3" class="sux">kišib</span></span> <span x="1" class="w sux " id=""><span x="3" class="sux">ul</span>-<span x="3" class="sux">pa</span>-<span class="sux">⸢</span><span x="3" class="sux">ad</span><span class="sux">⸣</span>-<span x="3" class="sux">di</span></span> <span x="1" class="w sux " id=""><span x="3" class="sux">zi₂</span>-<span x="3" class="sux">re</span>-<span x="3" class="sux">dam</span></span> = <span x="1" class="w akk-x-mbperi " id=""><span x="3" class="akk">ku</span>-<span class="sux">[</span><span x="3" class="akk">nu</span>-<span x="3" class="akk">ka</span></span> <span x="1" class="w akk-x-mbperi " id=""><span class="r">...<span class="sux">]</span></span></span></span> (<a href="javascript://" onclick="act_ilnk(event)" title="dcclt on Oracc" data-proj="dcclt" data-iref="Q000065.80">MB Ura 02 Seg.1, 80</a>).</p>
+    </div>
+  <div class="lex-phra" title="mu[name] diŋir[deity] pad[find]">
+      <h2 class="lex-phra">
+        <a href="javascript://" onclick="act_isid(event)" data-proj="dcclt" data-lang="sux" data-isid="lx.wd.54041">mu[name] diŋir[deity] pad[find]</a>
+      </h2>
+      <p class="lex-line"><span class="lex-line"><span x="1" class="w sux " id=""><span class="sux">[</span><span x="3" class="sux">mu</span><span class="sux">]</span></span> <span x="1" class="w sux " id=""><span class="sux">⸢</span><span x="3" class="sux">diŋir</span><span class="sux">⸣</span></span> <span x="1" class="w sux " id=""><span x="3" class="sux">in</span>-<span class="sux">⸢</span><span x="3" class="sux">pad₃</span><sup class="sux">?</sup><span class="sux">⸣</span></span> = <span x="1" class="w akk " id=""><span class="r">[...<span class="sux">]</span></span></span></span> (<a href="javascript://" onclick="act_ilnk(event)" title="dcclt on Oracc" data-proj="dcclt" data-iref="P451049.30">Iraq 06, 26 o ii' 2'</a>).</p>
+      <p class="lex-line"><span class="lex-line"><span x="1" class="w sux " id=""><span class="sux">⸢</span><span x="3" class="sux">mu</span></span> <span x="1" class="w sux " id=""><span x="3" class="sux">diŋir</span><span class="sux">⸣</span>-<span x="3" class="sux">diŋir</span>-<span class="sux">&lt;&lt;</span><span x="3" class="sux">a</span><span class="sux">&gt;&gt;</span>-<span x="3" class="sux">a</span>-<span x="3" class="sux">ni</span></span> <span x="1" class="w sux " id=""><span class="sux">⸢</span><span x="3" class="sux">in</span><sup class="sux">?</sup><span class="sux">⸣</span>-<span x="3" class="sux">pad₃</span></span> = <span x="1" class="w akk " id=""><span x="3" class="akk">niš</span></span> <span x="1" class="w akk " id=""><span class="sux">⸢</span><span class="sign sux">DINGIR</span><span class="sux">⸣</span>-<span x="3" class="akk">šu₂</span>-<span x="3" class="akk">nu</span></span> <span x="1" class="w akk " id=""><span x="3" class="akk">it</span>-<span x="3" class="akk">mu</span></span></span> (<a href="javascript://" onclick="act_ilnk(event)" title="dcclt on Oracc" data-proj="dcclt" data-iref="P450811.31">MSL SS 1, p. 058 catalogue 1924-0876 o iii' 6</a>).</p>
+    </div>
+  <div class="lex-phra" title="nar[musician] pad[find]">
+      <h2 class="lex-phra">
+        <a href="javascript://" onclick="act_isid(event)" data-proj="dcclt" data-lang="sux" data-isid="lx.wd.57243">nar[musician] pad[find]</a>
+      </h2>
+      <p class="lex-line"><span class="lex-line"><span x="1" class="w sux " id=""><span class="sux">[</span><span x="3" class="sux">nar</span><span class="sux">]</span></span> <span x="1" class="w sux " id=""><span class="sux">⸢</span><span x="3" class="sux">pad₃</span><span class="sux">⸣</span>-<span x="3" class="sux">da</span></span></span> (<a href="javascript://" onclick="act_ilnk(event)" title="dcclt on Oracc" data-proj="dcclt" data-iref="Q000047.729">OB Nippur Lu 649b</a>; <a href="javascript://" onclick="act_ilnk(event)" title="dcclt on Oracc" data-proj="dcclt" data-iref="P349945.33">OrNS 70, 210-211 o ii 14'</a>).</p>
+    </div>
+  <div class="lex-phra" title="niŋ[thing] pad[find]">
+      <h2 class="lex-phra">
+        <a href="javascript://" onclick="act_isid(event)" data-proj="dcclt" data-lang="sux" data-isid="lx.wd.59268">niŋ[thing] pad[find]</a>
+      </h2>
+      <p class="lex-line"><span class="lex-line"><span x="1" class="w sux " id=""><span class="sux">⸢</span><span x="3" class="sux">niŋ₂</span><span class="sux">⸣</span></span> <span x="1" class="w sux " id=""><span x="3" class="sux">in</span>-<span x="3" class="sux">pad₃</span></span> = <span x="1" class="w akk " id=""><span x="3" class="akk">za</span>-<span class="sux">⸢</span><span x="3" class="akk">kar</span><sup class="sux">?</sup><span class="sux">⸣</span></span> <span x="1" class="w akk " id=""><span class="sux">[</span><span x="3" class="akk">šu</span>-<span x="3" class="akk">mu</span><span class="sux">]</span></span></span> (<a href="javascript://" onclick="act_ilnk(event)" title="dcclt on Oracc" data-proj="dcclt" data-iref="P451114.18">MSL SS 1, p. 059 catalog 1924-1544 o ii 4</a>).</p>
+    </div>
+  <div class="lex-phra" title="niŋaldi[request] pad[find]">
+      <h2 class="lex-phra">
+        <a href="javascript://" onclick="act_isid(event)" data-proj="dcclt" data-lang="sux" data-isid="lx.wd.59441">niŋaldi[request] pad[find]</a>
+      </h2>
+      <p class="lex-line"><span class="lex-line"><span x="1" class="w sux " id=""><span class="sux">⸢</span><span x="3" class="sux">niŋ₂</span>-<span x="3" class="sux">al</span>-<span x="3" class="sux">di</span></span> <span x="1" class="w sux " id=""><span x="3" class="sux">pad₃</span><span class="sux">⸣</span></span> = <span x="1" class="w akk " id=""><span class="sux">⸢</span><span class="sign ">MIN</span><span class="sux">⸣</span>&lt;(<span x="3" class="akk">e</span>-<span x="3" class="akk">riš</span>-<span x="3" class="akk">tum</span>)&gt;</span> <span x="1" class="w akk " id=""><span class="r">[...<span class="sux">]</span></span></span></span> (<a href="javascript://" onclick="act_ilnk(event)" title="dcclt on Oracc" data-proj="dcclt" data-iref="P451114.20">MSL SS 1, p. 059 catalog 1924-1544 o ii 6</a>).</p>
+    </div>
+  <div class="lex-phra" title="pu[well] pad[find]">
+      <h2 class="lex-phra">
+        <a href="javascript://" onclick="act_isid(event)" data-proj="dcclt" data-lang="sux" data-isid="lx.wd.63595">pu[well] pad[find]</a>
+      </h2>
+      <p class="lex-line"><span class="lex-line"><span x="1" class="w sux " id=""><span x="3" class="sux">pu₂</span>-<span x="3" class="sux">ta</span></span> <span x="1" class="w sux " id=""><span x="3" class="sux">i₃</span>-<span class="sux">⸢</span><span x="3" class="sux">pad₃</span><span class="sux">⸣</span>-<span class="sux">[</span><span x="3" class="sux">da</span><span class="sux">]</span></span> = <span x="1" class="w akk " id=""><span class="r">[...<span class="sux">]</span></span></span></span> (<a href="javascript://" onclick="act_ilnk(event)" title="dcclt on Oracc" data-proj="dcclt" data-iref="P451304.6">MSL SS 1, p. 060 catalogue 1924-2009 o 3</a>).</p>
+      <p class="lex-line"><span class="lex-line"><span x="1" class="w sux " id=""><span x="3" class="sux">pu₂</span>-<span x="3" class="sux">ta</span></span> <span x="1" class="w sux " id=""><span class="sux">⸢</span><span x="3" class="sux">pad₃</span>-<span x="3" class="sux">da</span><span class="sux">⸣</span></span></span> (<a href="javascript://" onclick="act_ilnk(event)" title="dcclt on Oracc" data-proj="dcclt" data-iref="Q000045.115">OB Nippur Ki-ulutin-bi-še Seg.3, 7</a>).</p>
+      <p class="lex-line"><span class="lex-line"><span x="1" class="w sux " id=""><span class="sux">⸢</span><span x="3" class="sux">pu₂</span><span class="sux">⸣</span>-<span x="3" class="sux">ta</span></span> <span x="1" class="w sux " id=""><span class="sux">⸢</span><span x="3" class="sux">pad₃</span><span class="sux">⸣</span>-<span class="sux">[</span><span x="3" class="sux">da</span><span class="sux">]</span></span> = <span x="1" class="w akk-x-mbperi " id=""><span class="r">[...<span class="sux">]</span></span></span></span> (<a href="javascript://" onclick="act_ilnk(event)" title="dcclt on Oracc" data-proj="dcclt" data-iref="Q000065.3">MB Ura 02 Seg.1, 3</a>).</p>
+      <p class="lex-line"><span class="lex-line"><span x="1" class="w sux " id=""><span x="3" class="sux">pu₂</span>-<span x="3" class="sux">ta</span></span> <span x="1" class="w sux " id=""><span x="3" class="sux">pad₃</span>-<span x="3" class="sux">du</span></span></span> (<a href="javascript://" onclick="act_ilnk(event)" title="dcclt on Oracc" data-proj="dcclt" data-iref="P231456.7">Gilgamesh II 021, CBS 14167 r 3</a>).</p>
+      <p class="lex-line"><span class="lex-line"><span x="1" class="w sux " id=""><span x="3" class="sux">pu₂</span>-<span x="3" class="sux">ta</span></span> <span x="1" class="w sux " id=""><span x="3" class="sux">i₃</span>-<span x="3" class="sux">pad₃</span>-<span x="3" class="sux">da</span></span> = <span x="1" class="w akk " id=""><span class="sux">[</span><span x="3" class="akk">ina</span><span class="sux">]</span></span> <span x="1" class="w akk " id=""><span class="sux">⸢</span><span x="3" class="akk">bur</span><span class="sux">⸣</span>-<span class="sux">[</span><span x="3" class="akk">tum</span></span> <span x="1" class="w akk " id=""><span x="3" class="akk">a</span>-<span x="3" class="akk">tu</span><span class="sux">]</span></span></span> (<a href="javascript://" onclick="act_ilnk(event)" title="dcclt on Oracc" data-proj="dcclt" data-iref="P338313.7">MSL 05, 046 o i 3</a>).</p>
+      <p class="lex-line"><span class="lex-line"><span x="1" class="w sux " id=""><span x="3" class="sux">pu₂</span>-<span x="3" class="sux">ta</span></span> <span x="1" class="w sux " id=""><span x="3" class="sux">i₃</span>-<span x="3" class="sux">pad₃</span>-<span x="3" class="sux">da</span><sup class="sux">!</sup></span> = <span x="1" class="w akk " id=""><span x="3" class="akk">ina</span></span> <span x="1" class="w akk " id=""><span x="3" class="akk">bur</span>-<span class="sux">⸢</span><span x="3" class="akk">tum</span><span class="sux">⸣</span></span> <span x="1" class="w akk " id=""><span class="r">[...<span class="sux">]</span></span></span></span> (<a href="javascript://" onclick="act_ilnk(event)" title="dcclt on Oracc" data-proj="dcclt" data-iref="P450799.22">MSL SS 1, p. 060 catalogue 1924-0850 o ii 3</a>).</p>
+      <p class="lex-line"><span class="lex-line"><span x="1" class="w sux " id=""><span x="3" class="sux">pu₂</span>-<span x="3" class="sux">ta</span></span> <span x="1" class="w sux " id=""><span x="3" class="sux">i₃</span>-<span x="3" class="sux">pad₃</span>-<span x="3" class="sux">da</span></span> = <span x="1" class="w akk " id=""><span x="3" class="akk">ina</span></span> <span x="1" class="w akk " id=""><span class="sux">⸢</span><span class="sign sux">PU₂</span><sup class="sux">?</sup><span class="sux">⸣</span>-<span x="3" class="akk">tum</span></span> <span x="1" class="w akk " id=""><span class="sux">⸢</span><span x="3" class="akk">a</span>-<span x="3" class="akk">ti</span><span class="sux">⸣</span></span></span> (<a href="javascript://" onclick="act_ilnk(event)" title="dcclt on Oracc" data-proj="dcclt" data-iref="P450986.6">Iraq 06, 27 o 3</a>).</p>
+    </div>
+  <div class="lex-phra" title="x zi[life] ki[place] pad[find]">
+      <h2 class="lex-phra">
+        <a href="javascript://" onclick="act_isid(event)" data-proj="dcclt" data-lang="sux" data-isid="lx.wd.91929">x zi[life] ki[place] pad[find]</a>
+      </h2>
+      <p class="lex-line"><span class="lex-line"><span x="1" class="w sux " id=""><span class="r">[...<span class="sux">]</span></span></span> <span x="1" class="w sux " id=""><span class="sux">⸢</span><span x="3" class="sux">zi</span><span class="sux">⸣</span></span> <span x="1" class="w sux " id=""><span x="3" class="sux">ki</span>-<span x="3" class="sux">a</span></span> <span x="1" class="w sux " id=""><span x="3" class="sux">ḫe₂</span>-<span x="3" class="sux">pad₃</span></span></span> (<a href="javascript://" onclick="act_ilnk(event)" title="dcclt on Oracc" data-proj="dcclt" data-iref="P349579.18">AOAT 275, 401, BM 054628 o 15</a>).</p>
+    </div>
+  <div class="lex-phra" title="zi[life] diŋir[deity] gal[big] pad[find]">
+      <h2 class="lex-phra">
+        <a href="javascript://" onclick="act_isid(event)" data-proj="dcclt" data-lang="sux" data-isid="lx.wd.91947">zi[life] diŋir[deity] gal[big] pad[find]</a>
+      </h2>
+      <p class="lex-line"><span class="lex-line"><span x="1" class="w sux " id=""><span x="3" class="sux">zi</span></span> <span x="1" class="w sux " id=""><span x="3" class="sux">diŋir</span></span> <span x="1" class="w sux " id=""><span x="3" class="sux">gal</span>-<span x="3" class="sux">gal</span>-<span x="3" class="sux">e</span>-<span x="3" class="sux">ne</span>-<span x="3" class="sux">ke₄</span></span> <span x="1" class="w sux " id=""><span class="sux">⸢</span><span x="3" class="sux">u₃</span><span class="sux">⸣</span>-<span class="sux">[</span><span x="3" class="sux">mu</span>-<span x="3" class="sux">un</span>-<span x="3" class="sux">ni</span>-<span x="3" class="sux">pad₃</span><span class="sux">]</span></span></span> (<a href="javascript://" onclick="act_ilnk(event)" title="dcclt on Oracc" data-proj="dcclt" data-iref="P349430.6">AOAT 275, 244, BM 036384 o 3'</a>).</p>
+    </div>
+</div>
+      <div xmlns:xh="http://www.w3.org/1999/xhtml" xmlns:xi="http://www.w3.org/2001/XInclude" class="purl">
+        <p>ID=http://oracc.org/dcclt/o0036618</p>
+        <p>
+          <a href="http://oracc.org/epsd2/o0036618">See full ePSD2 article for pad[find]V/t</a>
+        </p>
+      </div>
+      <hr xmlns:xh="http://www.w3.org/1999/xhtml" xmlns:xi="http://www.w3.org/2001/XInclude" class="article"/>
+    </div>
+</div>
+
+</div>
+
+    </div>
+  </div>
+  <div id="p4Footer">
+    
+
+  </div>
+</div>
+</body>
+</html>

@@ -1,0 +1,30 @@
+[
+  {
+    "file": "pad_find_entry.html",
+    "url": "https://oracc.museum.upenn.edu/epsd2/cbd/sux/o0036618.html",
+    "returncode": 0,
+    "bytes": 102495,
+    "error": ""
+  },
+  {
+    "file": "pad_find_lexical.html",
+    "url": "https://oracc.museum.upenn.edu/dcclt/o0036618",
+    "returncode": 0,
+    "bytes": 85161,
+    "error": ""
+  },
+  {
+    "file": "UD_lexical.html",
+    "url": "https://oracc.museum.upenn.edu/osl/signlist/selpages/o0000565-lex.html",
+    "returncode": 0,
+    "bytes": 18019,
+    "error": ""
+  },
+  {
+    "file": "pad_find_praxis.html",
+    "url": "https://oracc.museum.upenn.edu/epsd2/praxis/cbd/sux/o0036618.html",
+    "returncode": 0,
+    "bytes": 35254,
+    "error": ""
+  }
+]

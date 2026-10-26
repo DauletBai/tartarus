@@ -1,0 +1,72 @@
+[
+  {
+    "file": "P527017_edition.html",
+    "url": "https://oracc.museum.upenn.edu/dcclt/signlists/P527017",
+    "returncode": 0,
+    "bytes": 491399,
+    "error": ""
+  },
+  {
+    "file": "P527017_card.html",
+    "url": "https://cdli.earth/artifacts/527017",
+    "returncode": 0,
+    "bytes": 53951,
+    "error": ""
+  },
+  {
+    "file": "P527017_photo.jpg",
+    "url": "https://cdli.earth/dl/photo/P527017.jpg",
+    "returncode": 56,
+    "bytes": 0,
+    "error": "curl: (56) The requested URL returned error: 404\n"
+  },
+  {
+    "file": "P365268_edition.html",
+    "url": "https://oracc.museum.upenn.edu/dcclt/nineveh/P365268",
+    "returncode": 0,
+    "bytes": 279965,
+    "error": ""
+  },
+  {
+    "file": "P365268_card.html",
+    "url": "https://cdli.earth/artifacts/365268",
+    "returncode": 0,
+    "bytes": 68357,
+    "error": ""
+  },
+  {
+    "file": "P365268_photo.jpg",
+    "url": "https://cdli.earth/dl/photo/P365268.jpg",
+    "returncode": 0,
+    "bytes": 1690068,
+    "error": ""
+  },
+  {
+    "file": "P229436_edition.html",
+    "url": "https://oracc.museum.upenn.edu/dcclt/P229436",
+    "returncode": 0,
+    "bytes": 63657,
+    "error": ""
+  },
+  {
+    "file": "P229436_card.html",
+    "url": "https://cdli.earth/artifacts/229436",
+    "returncode": 0,
+    "bytes": 72944,
+    "error": ""
+  },
+  {
+    "file": "P229436_photo.jpg",
+    "url": "https://cdli.earth/dl/photo/P229436.jpg",
+    "returncode": 0,
+    "bytes": 16311866,
+    "error": ""
+  },
+  {
+    "file": "P250504_edition.html",
+    "url": "https://oracc.museum.upenn.edu/dcclt/signlists/P250504",
+    "returncode": 0,
+    "bytes": 201654,
+    "error": ""
+  }
+]

@@ -1,0 +1,45 @@
+{
+  "date": "2026-10-26",
+  "parsed_corpus_files": 1456,
+  "failed_corpus_files": [
+    "etcsri/corpusjson/Q001066.json"
+  ],
+  "pad_tokens": 147,
+  "pad_compositions": 100,
+  "forms": {
+    "pad₃-da": 95,
+    "ha-ma-pad₃-de₃": 2,
+    "ma-ra-pad₃-pad₃-de₃": 1,
+    "bi₂-pad₃": 4,
+    "mu-na-ab-pad₃": 1,
+    "pad₃-de₃-da": 1,
+    "ba-ni-pad₃": 1,
+    "mu-un-pad₃-de₃-eš-a-ba": 1,
+    "in-pad₃": 19,
+    "in-ma-ni-pad₃": 1,
+    "be₂-pad₃": 1,
+    "mu-ne₂-pad₃": 1,
+    "pad₃-a": 1,
+    "ba-pad₃-da-a": 2,
+    "e-ne₂-pad₃-da": 1,
+    "e-ne₂-pad₃-da-a": 1,
+    "mu-na-pad₃": 4,
+    "pad₃": 1,
+    "pad₃-da-ni": 1,
+    "ba-ni-pad₃-da-a": 1,
+    "ba-an-pad₃-da-a": 1,
+    "he₂-pad₃-de₃": 4,
+    "i₃-pad₃": 1,
+    "ba-an-pad₃-da": 1
+  },
+  "lexical_patterns": {
+    "heart_noun_last4": 76,
+    "other": 19,
+    "name_noun_last4": 52
+  },
+  "lexical_rows": 19,
+  "lexical_objects": 4,
+  "UD_school_rows": 9,
+  "new_independent_phonetic_values": 0,
+  "book_changed": false
+}

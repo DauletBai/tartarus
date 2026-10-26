@@ -1,0 +1,23 @@
+[
+  {
+    "file": "P250504_card.html",
+    "url": "https://cdli.earth/artifacts/250504",
+    "returncode": 0,
+    "bytes": 61361,
+    "error": ""
+  },
+  {
+    "file": "P250504_photo.jpg",
+    "url": "https://cdli.earth/dl/photo/P250504.jpg",
+    "returncode": 0,
+    "bytes": 3126822,
+    "error": ""
+  },
+  {
+    "file": "P229436_lineart.jpg",
+    "url": "https://cdli.earth/dl/lineart/P229436_l.jpg",
+    "returncode": 0,
+    "bytes": 207615,
+    "error": ""
+  }
+]
