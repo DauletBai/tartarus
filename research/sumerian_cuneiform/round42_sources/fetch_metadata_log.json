@@ -1,0 +1,42 @@
+[
+  {
+    "number": "BM.35727",
+    "url": "https://www.ebl.lmu.de/api/fragments/BM.35727",
+    "returncode": 0,
+    "error": "",
+    "hasPhoto": true,
+    "lines": 27
+  },
+  {
+    "number": "BM.34799",
+    "url": "https://www.ebl.lmu.de/api/fragments/BM.34799",
+    "returncode": 0,
+    "error": "",
+    "hasPhoto": true,
+    "lines": 0
+  },
+  {
+    "number": "BM.35458",
+    "url": "https://www.ebl.lmu.de/api/fragments/BM.35458",
+    "returncode": 0,
+    "error": "",
+    "hasPhoto": true,
+    "lines": 0
+  },
+  {
+    "number": "BM.33778",
+    "url": "https://www.ebl.lmu.de/api/fragments/BM.33778",
+    "returncode": 0,
+    "error": "",
+    "hasPhoto": true,
+    "lines": 0
+  },
+  {
+    "number": "BM.38461",
+    "url": "https://www.ebl.lmu.de/api/fragments/BM.38461",
+    "returncode": 0,
+    "error": "",
+    "hasPhoto": true,
+    "lines": 12
+  }
+]

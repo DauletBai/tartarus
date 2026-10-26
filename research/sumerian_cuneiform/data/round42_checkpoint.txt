@@ -1,0 +1,14 @@
+{
+  "status": "passed",
+  "records_screened": 13,
+  "records_with_editorial_text": 7,
+  "explicit_MIN_occurrences": 2,
+  "second_preserved_MIN_Greek_object_found": false,
+  "new_photo_objects": 1,
+  "new_external_files": 6,
+  "crop_records": 5,
+  "preservation_tests": 3,
+  "local_links": 16,
+  "new_independent_complete_readings": 0,
+  "book_PDF": "unchanged"
+}
