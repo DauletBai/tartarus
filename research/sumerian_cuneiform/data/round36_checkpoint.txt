@@ -1,0 +1,10 @@
+{
+  "status": "passed",
+  "crop_dimensions_and_hashes": 11,
+  "original_source_hashes": 5,
+  "school_model_rows": 12,
+  "local_links": 26,
+  "conditional_readings": 1,
+  "new_independently_established_sound_values": 0,
+  "book_PDF": "unchanged"
+}
