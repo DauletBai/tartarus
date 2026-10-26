@@ -1,0 +1,9 @@
+{
+  "status": "passed",
+  "crop_dimensions_and_hashes": 9,
+  "external_reference_hashes": 11,
+  "school_model_rows": 9,
+  "local_viewer_links": 27,
+  "new_phonetic_values": 0,
+  "book_PDF": "unchanged"
+}
