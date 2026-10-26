@@ -1,0 +1,26 @@
+{
+  "media_files": 282,
+  "raster_files": 256,
+  "vector_files": 2,
+  "pdf_files": 24,
+  "valid_pdf_files": 23,
+  "unique_byte_hashes": 280,
+  "primary_review_candidates": 95,
+  "source_url_groups": 95,
+  "candidate_P_ids": 69,
+  "reviewed_overview_images": 95,
+  "contact_sheets": 6,
+  "document_pages": 5229,
+  "layout_families": {
+    "inscription_rows_or_copy": 63,
+    "figurative_or_seal": 6,
+    "cells_and_geometric_marks": 20,
+    "mixed_figure_inscription": 6
+  },
+  "micro_observations": 4,
+  "role_tests": 6,
+  "origin_tests": 4,
+  "independently_deciphered_new_sounds": 0,
+  "complete_new_text_translations": 0,
+  "book_changed": false
+}

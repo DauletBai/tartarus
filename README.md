@@ -12,7 +12,7 @@
 - [Метод](research/sumerian_cuneiform/RESEARCH_METHOD.txt).
 - [Журнал](research/sumerian_cuneiform/JOURNAL.md).
 - [Реестр источников](research/sumerian_cuneiform/SOURCE_REGISTER.csv).
-- [Последний сохранённый обзор: цикл 32](research/sumerian_cuneiform/comparison_round32.html).
+- [Последний сохранённый обзор: цикл 33](research/sumerian_cuneiform/comparison_round33.html).
 
 В папке `research/sumerian_cuneiform/` сохранены документы, фотографии, прорисовки, схемы, изображения, отчёты, таблицы и вспомогательные скрипты. Гипотезы, редакторские чтения и непосредственные наблюдения различаются в отчётах. Наличие материала в архиве не означает подтверждения всех высказанных гипотез.
 

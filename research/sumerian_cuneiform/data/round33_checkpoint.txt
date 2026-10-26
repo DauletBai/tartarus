@@ -1,0 +1,13 @@
+{
+  "status": "passed",
+  "inventoried_media": 282,
+  "original_image_source_hashes": 95,
+  "review_entries": 95,
+  "document_pages_catalogued": 5229,
+  "contact_sheets": 6,
+  "micro_observations": 4,
+  "manifest_hashes": 28,
+  "local_links": 121,
+  "new_phonetic_values": 0,
+  "book_PDF": "unchanged"
+}
