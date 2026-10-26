@@ -3,6 +3,7 @@ from pathlib import Path
 import csv, hashlib, html, json, re, subprocess
 from html.parser import HTMLParser
 from urllib.parse import urlsplit, unquote
+from crop_exact import crop_exact
 R=Path(__file__).resolve().parents[1]; S=R/'round41_sources';S.mkdir(exist_ok=True)
 def sha(p):return hashlib.sha256(p.read_bytes()).hexdigest()
 def run(a):return subprocess.run(a,check=True,capture_output=True,text=True)
@@ -35,7 +36,8 @@ spec += [
 crops=[]
 for n,side,x,y,w,h,note in spec:
     parent='round40_sources/BM35726_'+('Greek' if side=='Greek' else 'cuneiform')+'_face.png';out=S/(n+'.png')
-    run(['sips','-s','format','png','-c',str(h),str(w),'--cropOffset',str(y),str(x),str(R/parent),'--out',str(out)])
+    if x==0 or y==0:crop_exact(R/parent,out,x,y,w,h)
+    else:run(['sips','-s','format','png','-c',str(h),str(w),'--cropOffset',str(y),str(x),str(R/parent),'--out',str(out)])
     crops.append(dict(file=str(out.relative_to(R)),parent=parent,x=x,y=y,width=w,height=h,operation='rectangular crop; no reconstruction or reflection',interpretive_status=note,parent_sha256=sha(R/parent),sha256=sha(out)))
 csvout('round41_crops.csv',crops)
 pdf=R/'round39_sources/PSBA24_1902.pdf';high=S/'PSBA24_PDF134_high.png';rot=S/'PlateI_rotated90.png'

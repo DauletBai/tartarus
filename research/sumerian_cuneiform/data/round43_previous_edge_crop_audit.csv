@@ -1,0 +1,10 @@
+﻿register,file,x,y,both_zero,decision
+round35_crops.csv,round35_sources/CBS7074_copy_reverse_upper.jpg,0,880,False,single zero axis is not affected in the regression; no historical image replaced
+round36_crops.csv,round36_sources/CBS7074_copy_12rows.jpg,0,890,False,single zero axis is not affected in the regression; no historical image replaced
+round36_crops.csv,round36_sources/CBS7074_copy_target.jpg,0,985,False,single zero axis is not affected in the regression; no historical image replaced
+round41_crops.csv,round41_sources/Cuneiform_band_1.png,0,100,False,single zero axis is not affected in the regression; no historical image replaced
+round41_crops.csv,round41_sources/Cuneiform_band_2.png,0,300,False,single zero axis is not affected in the regression; no historical image replaced
+round41_crops.csv,round41_sources/Cuneiform_band_3.png,0,500,False,single zero axis is not affected in the regression; no historical image replaced
+round41_crops.csv,round41_sources/Cuneiform_band_4.png,0,700,False,single zero axis is not affected in the regression; no historical image replaced
+round41_crops.csv,round41_sources/Akkadian_full_column.png,1500,0,False,single zero axis is not affected in the regression; no historical image replaced
+round42_crops.csv,round42_sources/BM34816_cuneiform_face.png,1600,0,False,single zero axis is not affected in the regression; no historical image replaced

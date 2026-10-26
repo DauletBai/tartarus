@@ -1,0 +1,865 @@
+SUTAD, Aralık 2020; (50): 43-59
+e-ISSN: 2458-9071
+
+
+
+         ALTIN KÖL II (E-29) YAZITININ GENİŞ YÜZÜNÜN SOL-DIŞ
+                              SATIRI ÜZERİNE
+          ON THE LEFT-OUTER LINE OF THE BROAD FACE OF THE
+                   SECOND ALTIN KÖL INSCRIPTION
+                                                                                                 Hülya YILDIZ
+
+
+
+
+                                                               Öz
+              Bu makale, Yenisey Yazıtları grubuna ait Altın Köl II (E-29) yazıtının geniş yüzünün sol-dış
+        satırının bazı kısımlarıyla ilgili okuma önerileri sunmak amacıyla kaleme alınmıştır. Altın Köl II yazıtı
+        günümüze değin Fin heyeti (1889), Radloff (1895 ve 1896), Orkun (1940), Malov (1952), Kljaštornyj
+        (1976), Kononov (1980), Vasilʹev (1983), Mori (1987), Erdal (1991), Recebov-Memmedov (1993),
+        Sertkaya (1993), Kormušin (1997), Tekin (1998) ve Aydın (2015) tarafından incelenmiştir. Ayrıca,
+        www.bitig.org ve uqusturk.wordpress.com sitelerinde yazıtın fotoğrafları yayımlanmıştır. Radloff’un
+        rötuşsuz        kopyasından        itibaren    satırın     işaret    varlığı    bütün        yayınlarda
+        <rdml(…)BULSR:BUDUN:IsrkyÜrmdIrnčm:IkzmA:> şeklinde verilmiştir. Satırdaki problemli
+        husus, <IsrkyÜrmdI> ve <rnčm> işaret gruplarının araştırmacılar tarafından farklı şekillerde okunup
+        yorumlanmasıdır. Bu çalışmada, <IsrkyÜrmdI> işaret grubu, esirkäyür amd2ï (?) ‘üzülüyor şimdi (?)’
+        şeklinde okunacaktır. Ayrıca, satırda geçen erinčim sözcüğünün sonundaki +(I)m eki, birinci tekil kişi
+        iyelik eki olarak ele alınacak ve sözcük ‘(Ah) Zavallım!’ şeklinde yorumlanacaktır. Çalışma beş bölüm
+        olarak tasarlanmıştır: 1. bölüm, giriş bölümüdür. 2. bölümde satırın işaret varlığıyla ilgili
+        değerlendirmeler yer almaktadır. 3. bölümde satırla ilgili geçmiş okuma ve anlamlandırma çalışmaları
+        değerlendirilmektedir. 4. bölümde <IsrkyÜrmdI> ve <rnčm> işaret gruplarıyla ilgili yeni okuma ve
+        anlamlandırma önerileri yapılmakta ve bunlarla ilgili açıklamalara yer verilmektedir. 5. Bölümde,
+        araştırmanın sonuçları sunulmaktadır.
+                                                                •
+
+                                                   Anahtar Kelimeler
+              Runik Yazıtlar, Eski Türk Yazıtları, Yenisey Yazıtları, Altın Köl II Yazıtı, E-29, okuma önerisi
+
+                                                               •
+
+                                                           Abstract
+             This article is written in order to provide new reading proposals on the left-outer line of the broad
+        face of Altın Köl II inscription, which belongs to the group of Yenisei inscriptions. Altın Köl II
+        inscription has been investigated by the Finnish research group (1889), Radloff (1895 and 1896),
+        Orkun (1940), Malov (1952), Kljaštornyj (1976), Kononov (1980), Vasilʹev (1983), Mori (1987), Erdal
+        (1991), Recebov-Memmedov (1993), Sertkaya (1993), Kormušin (1997), Tekin (1998) and Aydın
+        (2015) so far. Moreover, some photographs are released in www.bitig.org and uqusturk.wordpress.com
+        websites. The glyph inventory of the mentioned line is identified as <rdml(…)
+        BULSR:BUDUN:IsrkyÜrmdIrnčm:IkzmA:> in all studies starting from Radloff’s unretouched copy.
+
+
+
+    Dr. Öğr. Üyesi, Anadolu Ümniversitesi Edebiyat Fakültesi / Türk Dili ve Edebiyatı Bölümü / Eski Türk Dili Anabilim Dalı
+    hkoprulu@anadolu.edu.tr, 1490 Hülya YILDIZ http://orcid.org/0000-0002-1496-1617 Eskişehir TÜRKİYE
+
+
+                                                                                        Gönderim Tarihi: 18.11.2019
+                                                                                        Kabul Tarihi:   14.10.2020
+44     Hülya YILDIZ
+
+
+         What is problematic here is that the sign groups <IsrkyÜrmdI> and <rnčm> in the line are read and
+         interpreted in many ways by the researchers. In this study, the sign group <IsrkyÜrmdI> is read as
+         esirkäyür amd2ï (?) ‘regrets now (?)’. Moreover, the particle +m at the end of the word erinčim is
+         evaluated as the first-person singular possessive and the lexeme erinčim is interpreted as ‘(Oh) My
+         miserable!’. The paper is organized as follows: Section 1 is Introduction. In Section 2, the glyph
+         inventory of the line in question will be assessed. In Section 3, the major studies on Altın Köl II
+         inscription will be dealt with, respectively. In Section 4, new reading proposals will be made regarding
+         <IsrkyÜrmdI> and <rnčm> sign groups in the line. Finally, Section 5 will present the conclusions.
+                                                                 •
+
+                                                        Keywords
+              Runic Inscriptions, Old Turkic Inscriptions, Yenisei Inscriptions, Altın Köl II Inscription, E-29,
+                                                   reading proposal
+
+
+
+
+     SUTAD 50
+                                     Altın Köl II (E-29) Yazıtının Geniş Yüzünün Sol-Dış Satırı Üzerine   45
+
+
+
+                                                    
+    GİRİŞ
+
+    Günümüzde sayıları 184’e ulaşmış bulunan (Sertkaya 2008: 14) Yenisey yazıtları, runik harfli
+Türk yazıtlarının en büyük kolunu oluşturur. Bu geniş kol, kendi içinde pek çok alt gruba ayrılır.
+Daha çok yazıtların bulunduğu bölgenin adıyla anılan alt gruplardan biri, yalnızca iki üyesi
+bulunan Altın Köl yazıtlarıdır. Bunlardan Altın Köl I yazıtı E-28, Altın Köl II yazıtı ise E-29
+numaralarıyla da bilinmekte ve anılmaktadır. Bu makaleye konu olan yazıt, bu grubun satır
+sayısı bakımından daha küçüğü olan Altın Köl II (E-29) yazıtıdır.
+    Altın Köl II yazıtı, 1878 yılında E. F. Korçakov tarafından Abakan ırmağının sağ kıyısındaki
+Altın Göl’e bir km. kadar uzaklıkta bulunmuş ve 1881’de Minusinsk Müzesi’ne taşınmıştır
+(Aydın 2015: 84). 195x50x15 cm. ölçülerinde olan (Aydın 2015: 84-85) yazıt, taşın geniş
+cephelerinden biri ile iki yan cephesi üzerine kazınmıştır.
+     Altın Köl II yazıtının ilk kayıt altına alınışı, Aspelin (1889) başkanlığındaki Fin araştırma
+heyeti tarafından gerçekleştirilmiştir. Literatürde daha çok Fin Atlası olarak bilinen bu eser,
+araştırmacıların yapmış olduğu çizimlerin matbu işaretlerle basılması esasına dayanmaktadır.
+Fin Atlası’ndan sonra, Wilhelm Radloff’un kısaca Radloff Atlası adıyla tanınan eserinin üçüncü
+cildinde (1896) yazıtın rötuşsuz ve rötuşlu kopyalarına yer verilmiştir. Yazıtla ilgili ilk okuma ve
+anlamlandırma çalışması Radloff’a (1895: 334-336) aittir. Bu ilk çalışmanın ardından Altın Köl II
+yazıtı daha pek çok incelemeye konu olmuştur. Radloff’u takip eden okuma-anlamlandırma
+çalışmaları, Orkun (1940), Malov (1952), Kljaštornyj (1976), Kononov (1980), Vasilʹev (1983), Mori
+(1987), Erdal (1991), Recebov-Memmedov (1993), Sertkaya (1993), Kormušin (1997), Tekin (1998)
+ve Aydın (2015) tarafından yapılmıştır. Ayrıca, www.bitig.org ve uqusturk.wordpress.com
+sitelerinde okuma ve anlamlandırmalarla birlikte yazıta ait fotoğraflar da yer alır.
+     Altın Köl II yazıtıyla ilgili bugüne değin yapılan çalışmalar incelendiğinde, yazıtın geniş
+yüzünün sol-dış satırının işaret tespitleri konusunda büyük bir ihtilaf bulunmadığı
+anlaşılmaktadır. Radloff’un rötuşsuz kopyasından itibaren satırın transliterasyonu neredeyse
+bütün yayınlarda <rdml(…)BULSR:BUDUN:IsrkyÜrmdIrnčm:IkzmA:> şeklinde yapılmıştır. Bu
+işaret teşhisi yukarıda adı geçen sitelerde yayımlanan fotoğraflarla doğrulanabilmektedir.
+Yazıtın bu yüzündeki tahribat nedeniyle satırın dördüncü işareti ile <BULSR> işaret grubu
+arasında kalan küçük bir kısım yazıt keşfedildiğinden beri okunamaz durumdadır. Literatürde
+bu boşluğun <m> ya da <g> işaretiyle tamamlanarak, ärdäm eli[m] ya da ärdämli[g] şeklinde
+okunduğu iki farklı görüş vardır. Cümlenin kalan kısmı araştırmacılar tarafından benzer
+şekillerde okunmuştur.
+     Altın Köl II yazıtının geniş yüzünün sol-dış satırı ile ilgili asıl görüş ayrılığı <IsrkyÜrmdI>
+işaret grubunun okunup anlamlandırılması noktasında ortaya çıkmaktadır. Bu işaret grubu
+Radloff’un rötuşlu kopyasında (1896: tablo XCI, “2. MM. IIIa”) tıpkı yazıtın orijinalindeki gibi
+(bk. resim 4 ve 5), ayırma işareti olmadan kaydedilmiştir. Ancak <IsrkyÜrmdI> işaret grubunu
+äsrik yürimädi şeklinde okumak isteyen Radloff, yazıtın Alttürkischen Inschriften der Mongolei’deki
+runik işaretli dizgisinde (1895: 334) bu işaret grubunu kendi okuma önerisine uygun olarak
+<Isrk:yÜrmdI> şeklinde ikiye ayırmıştır. Ne yazık ki Radloff’un bu tahrifatı Altın Köl II yazıtı
+araştırmaları açısından büyük bir talihsizlik olmuştur. Çünkü araştırmacılar Mori’nin 1987’deki
+çalışmasına kadar, <IsrkyÜrmdI> işaret grubunu isrek yörümedi, isrik yörümädi ya da esrük
+yürümedi şeklinde okumaya devam etmişlerdir.
+
+
+
+                                                                                          SUTAD 50
+46       Hülya YILDIZ
+
+
+           Altın Köl II yazıtını ele alırken Vasilʹev’in (1983) sunduğu fotoğraflardan, Radloff (1896)’un
+     estampajlarından ve Fin Atlası’ndan yararlanan Mori (1987) ise söz konusu işaret grubuna farklı
+     bir gözle bakmayı başaran ilk araştırmacı olmuştur. Satırdaki <IsrkyÜrmdI> işaret grubunda Eski
+     Türkçe esirkä- ‘üzülmek’ fiilini isabetle tespit eden Mori, satırın doğru bir şekilde anlaşılmasını
+     sağlamıştır. Nitekim bunun sonrasında Erdal (1991), Sertkaya (1993), Tekin (1998) ve Aydın
+     (2015) da Mori’nin önerisini benimseyerek incelemelerinde ET esirkä- ‘üzülmek’ fiilini temel
+     almışlardır. Buna göre, söz konusu işaret grubu Erdal tarafından esirkäyür män ‘I am sad about
+     (… için üzülüyorum)’; Sertkaya tarafından esirkäyü ärmädi ‘korumaya muktedir olmadı’; Tekin
+     tarafından isirkäyü ermädi ‘regretted and did not despise = üzülüp yermedi’; Aydın tarafından
+     esirkäyü ermädi ‘esirgeyemedi (koruyamadı)’ şeklinde okunup anlamlandırılmıştır. Ancak
+     Erdal’ın okuyuşu söz konusu işaret grubunu hatalı olarak <IsrkyÜrm*n> şeklinde kabul etmesi
+     bakımından; Sertkaya’nın okuyuşu Eski Türkçede esirkä- fiilinin ‘korumak’, är- fiilinin ‘muktedir
+     olmak’ anlamlarını taşımaması bakımından; Tekin’in okuyuşu Eski Türkçede ‘yermek’ anlamlı
+     fiil tabanının *er- şeklinin sonlu fiil olarak hiç kullanılmaması bakımından; Aydın’ın okuyuşu ise
+     Sertkaya ile aynı bakımlardan sorunludur.
+          Altın Köl II yazıtının geniş yüzünün sol-dış satırındaki bir başka sorunlu husus, <rnčm>
+     işaret grubunun okunup anlamlandırılması noktasında ortaya çıkmaktadır. İlk çalışmalardan bu
+     yana ä/e ayrımı gözetilmeksizin okunagelen erinčim sözcüğünün Yenisey yazıtları ve diğer bütün
+     runik işaretli yazıtlar arasında sadece Altın Köl II yazıtında geçtiği görülmektedir. Bu sözcük
+     Radloff (1895) tarafından ärinčim ‘von meiner Ruhe = huzurumdan’ şeklinde çevrilmiş; Orkun
+     (1940) ve Malov (1952) tarafından yorumsuz bırakılmıştır. Kljaštornyj (1976) sözcüğü erinčim
+     ‘moe gore = kederim’ şeklinde çevirmiştir. Mori (1987) ise sondaki +m ekini çeviriye dâhil
+     etmeden erinčim ‘Ne acı!’ şeklinde, genel anlamlı bir yorum yapmıştır. Kormušin (1997), ärinči-m
+     okuduğu sözcükteki -m ekinin kibarlık amacıyla kullanılmış olabileceğini belirtmiş ve bunu
+     Tuvacada emir kipindeki sözcüklere kibarlık anlamı katan -m ekiyle karşılaştırmıştır. Tekin’in
+     (1998) ve Aydın’ın (2015) çevirileri Mori (1987) ile aynı olup her ikisi de erinčim ‘Ne acı!’ anlamını
+     vermişlerdir1. E-29 yazıtındaki erinčim sözcüğünün, önceki araştırmacıların tespit ettikleri gibi ET
+     erinč sözcüğüyle bağlantılı olduğu kuşkusuzdur. Ancak Altın Köl II yazıtındaki sözcüğün Eski
+     Türkçedeki ‘sefil, zavallı, mutsuz’ (Clauson 1972: 234a) anlamı ile sondaki +m ekinin işlevini
+     birlikte veren hiçbir çeviri yoktur.
+          Bu makale, Altın Köl II yazıtının geniş yüzünün sol-dış satırındaki <IsrkyÜrmdI> ve <rnčm>
+     işaret gruplarına odaklanmakta ve söz konusu işaret gruplarına ilişkin yeni okuma ve
+     anlamlandırma önerileri sunmaktadır. Bu amaç doğrultusunda, okumakta olduğunuz Giriş
+     bölümünde öncelikle Altın Köl II yazıtı ile ilgili genel bilgilere, yazıt üzerinde yapılan belli başlı
+     çalışmalara yer verilmekte ve makalede ele alınacak sorun ortaya konmaktadır. İkinci bölümde,
+     Fin ve Radloff Atlası’ndaki veriler ile www.bitig.org ve uqusturk.wordpress.com sitelerindeki
+     fotoğraflardan hareketle, söz konusu satırın daha önceki çalışmalarda verilmiş olan işaret
+     varlığının sağlaması yapılmaktadır. Üçüncü bölüm, geçmişteki okuma ve anlamlandırma
+     çalışmalarının ortografik, gramatik ve semantik bakımlardan sorgulandığı bölümdür. Dördüncü
+     bölümde yeni bir okuma ve anlamlandırma önerisi okuyucunun dikkatine sunulmaktadır.
+     Beşinci ve son bölüm ise elde edilen bulguların özetlendiği sonuç bölümüdür.
+
+
+
+
+     1   Tekin’in bu İngilizce makalesindeki orijinal çeviri ‘How miserable it is!’ şeklindedir.
+
+
+
+     SUTAD 50
+                                               Altın Köl II (E-29) Yazıtının Geniş Yüzünün Sol-Dış Satırı Üzerine   47
+
+  2. ALTIN KÖL II YAZITININ GENİŞ YÜZÜNÜN SOL-DIŞ SATIRININ İŞARET
+VARLIĞININ İNCELENMESİ
+
+     İncelemenin bu bölümünde, Altın Köl II yazıtının geniş yüzünün sol-dış satırının işaret
+varlığı üzerinde durulacaktır. Bu doğrultuda, Fin ve Radloff Atlası’ndaki veriler ile
+www.bitig.org ve uqusturk.wordpress.com sitesinde yayımlanan fotoğraflar incelenecektir.
+Yazıtın Korpus’taki (Vasilʹev 1983) fotoğrafı incelemeye yeterince elverişli olmadığı için
+değerlendirmeye dâhil edilmeyecektir. Aşağıda kullanılan transliterasyon sisteminde büyük
+harfle yazılan ünsüzler runik alfabedeki art ünsüz işaretlerini (örn. <B>, <D>), küçük harfli
+ünsüzler ön (örn. <b>, <d>) ve nötr (örn. <m>) ünsüz işaretlerini ifade etmektedir. Üçgen parantez
+< > grafemik yazımlar, köşeli parantez ise [ ] rekonstrüksiyonlar için kullanılmıştır.
+     2.1. Fin Atlası’na göre
+     Runik Türk alfabesinin deşifre edilmesinden önce yayımlanan Fin Atlası’nda Altın Köl II
+yazıtı, “Abakan, Altynkoul” kaydıyla, XXII numaralı tabloda verilmiştir. Üzerinde durduğumuz
+satırın bu eserden kopyalanan görüntüsü aşağıdaki gibidir:
+
+
+
+
+     Resim: 1
+
+     Burada görüldüğü gibi, Fin Atlası’nda ilk işaret <r> olarak kayıtlıdır. Bunun ardından tek
+işaretlik bir boşluk verilmektedir. Sonraki iki işaret 45° sağa yatmış bir <k> ile <l> (no: 125) olarak
+tanımlanmaktadır. Bunu takip eden dört işaretlik bir boşluğun ardından, 126. işaret <U>, 127.
+işaret yalnızca üst yarısı 45° sağa yatmış gibi görünen bir <k> ve 128. işaret ise <R> şeklinde
+tanımlanmaktadır. Fin Atlası’na göre satırda bir ayırma işaretinden sonra <N>, yalnızca alt yarısı
+tespit edilebilmiş bir <[D]> ve <UNIsrkyÜrmUIrnčm:Ikz:mIs> işaretleri gelmektedir. Fin
+Atlası’nda noktalarla kaydedilmiş olan 129., 140., 145. ve 148. işaretler, araştırma heyetinin tam
+emin olamadığı ya da nispeten silik durumda olan işaretleri yansıtmaktadır.
+
+     2.2. Radloff Atlası’na göre
+    Altın Köl II yazıtı, Radloff Atlası’nın (1896) üçüncü cildinde yer alır. Bu kaynakta yazıtın
+rötuşsuz (bk. tablo XCI, “1. MM. III.a”) ve rötuşlu (bk. tablo XCI, “2. MM. IIIa”) kopyaları bir
+arada verilmiştir. Yazıtın rötuşsuz kopyasında, üzerinde durduğumuz satırın (bk. resimdeki
+çizginin altındaki satır) görüntüsü aşağıdaki gibidir:
+
+
+
+
+     Resim: 2
+    Burada görüldüğü gibi, Radloff’un rötuşsuz kopyasında satırın işaret varlığı güçlükle ayırt
+edilebilmektedir. Rötuşlu kopyada ise satırdaki işaretler <rdml(…)BULSR:BUDUN:
+IsrkyÜrmdIrnčm:IkzmA:>2 şeklinde sıralanmaktadır:
+
+
+
+2   Satırda yer alan bundan sonraki işaretler yazıtın sağ-dış satırına aittir.
+
+
+
+
+                                                                                                    SUTAD 50
+48       Hülya YILDIZ
+
+
+
+
+          Resim: 3
+          2.3. Yazıtın fotoğraflarına göre
+         Altın Köl II yazıtının www.bitig.org3 sitesinde yayımlanan 2 no’lu fotoğrafında geniş yüzün
+     sol-dış satırının görüntüsü aşağıdaki gibidir:
+
+
+
+
+          Resim: 4
+         Bu fotoğrafın siyah-beyaz renk dengesi ters çevrildiğinde aşağıdaki sonuç ortaya çıkmakta
+     ve kimi satırdaki işaretler daha da net olarak seçilebilmektedir:
+
+
+
+
+          Resim: 5
+        Yukarıdaki iki fotoğraf kadar net olmasa da Altın Köl II                                 yazıtının   bir   de
+     uqusturk.wordpress.com4 sitesinde renkli bir görüntüsü bulunmaktadır:
+
+
+
+
+          Resim: 6
+         Bu üç görüntü karşılaştırılarak dikkatle incelendiğinde ise satırda günümüze kadar
+     korunmuş işaretlerin şunlar olduğu ortaya çıkmaktadır:
+
+          <rdml(…)BULSR:BUDUN:IsrkyÜr[m]dIrnčm:IkzmA:>
+          2.4. Değerlendirmeler
+          Altın Köl II yazıtının geniş yüzünün sol-dış satırının Radloff Atlası’ndaki rötuşlu kopyası ile
+     yazıtın www.bitig.org ve uqusturk.wordpress.com sitelerindeki fotoğrafları incelendiğinde,
+     Radloff’un rötuşlu kopyasındaki işaretler ile fotoğraflardaki işaretlerin tümüyle aynı olduğu
+     görülebilmektedir. Fin Atlası’nda ise satırdaki bazı işaretlerin gerçekte olduğundan farklı
+     kaydedildiği anlaşılmaktadır. Fin Atlası’ndaki veriler yazıtın fotoğrafıyla karşılaştırıldığında, Fin
+     heyetinin ikinci işareti, yani <d>’yi hiç göremedikleri; üçüncü işareti <m> yerine *<k> gibi
+     algıladıkları; boşluktan sonraki ilk işaret olan <b>’yi ve <U>’dan sonraki <L>’yi tespit
+     edemedikleri; satırda <L>’den sonra gelmesi gereken <S> işaretini eksik tanımlayarak *<k>’nin bir
+     versiyonuymuş gibi çizdikleri; satırdaki ilk ayırma işaretinden sonra gelen <B>’yi *<N> zannedip
+
+
+     3   http://www.bitig.org/?lang=e&mod=1&tid=2&oid=116&m=2
+     4   https://uqusturk.wordpress.com/2012/02/12/yenisey-yazitlari/?wref=tp#jp-carousel-2855
+
+
+
+
+     SUTAD 50
+                                      Altın Köl II (E-29) Yazıtının Geniş Yüzünün Sol-Dış Satırı Üzerine   49
+
+kuşkulu olarak tanımladıkları; hemen sonraki <U> işaretini vermeyi unuttukları; satırın ilerleyen
+kısmında, sağ yarısını görmedikleri <d> işaretini *<U> (bk. 141. işaret) olarak çizdikleri; satırın
+sonunda fazladan bir *<s> verdikleri; bu hayalî *<s>’den önce gelen <A> işaretini ise alt kancasını
+görmedikleri için *<I> zannettikleri anlaşılmaktadır.
+     Yukarıdaki rötuşlu (bk. resim 2) ve rötuşsuz (bk. resim 3) kopyalarda ve fotoğrafta (bk. resim
+12) görüleceği gibi, yazıtın üzerindeki derin bir oyuk nedeniyle ilk dört işaretten sonraki bir iki
+işaretin tespit edilmesi mümkün değildir. Literatürde bu boşluğun ärdäm eli[m] ya da ärdämli[g]
+şeklinde tamamlanarak okunduğu iki farklı öneri getirilmiştir. Cümlenin kalan kısmı ise
+araştırmacılar tarafından az çok benzer şekillerde okunmuş olsa da anlamlandırma konusunda
+büyük farklılıklar ortaya çıkmıştır. Sıradaki bölümde bu farklılıklar üzerinde durulacaktır.
+  3. ALTIN KÖL II (E-29) YAZITININ GENİŞ YÜZÜNÜN SOL-DIŞ SATIRI İLE İLGİLİ
+ÖNCEKİ OKUMA VE ANLAMLANDIRMA ÇALIŞMALARI
+     Makalenin bu bölümünde Radloff’tan (1895) başlayarak Altın Köl II yazıtının geniş yüzünün
+sol-dış satırıyla ilgili okuma ve anlamlandırma çalışmalarının değerlendirmeleri yer almaktadır.
+Söz konusu satır Fin Atlası’nda 123-151. işaretlere tekabül etmekte; Radloff (1895) ve Malov (1952)
+tarafından ikinci satır; Orkun (1940), Vasilʹev (1983) ve Kormušin (1997) tarafından dördüncü
+satır; Mori (1987) ve onu takip eden Tekin (1998) ile Aydın (2015) tarafından üçüncü satır olarak
+ele alınmaktadır. Burada araştırmacıların satırdaki işaret varlığını ne ölçüde yansıttıklarına
+değinilecek ve literatürdeki okuma-anlamlandırma önerileri fonolojik, morfolojik, semantik ve
+sentaktik açıdan sorgulanacaktır.
+    3.1. är ärdäm älim bolšar bodun äsrik yürimädi ärinčim äkizimä “Mein heldenmutiger Stamm, das
+Volk der Bolschar lebte nicht in Errerung (d.h. lebte in Ruhe so lange ich lebte). Von meiner Ruhe,
+von meinen Zwillingen…” (Radloff 1895: 335).
+    Atlas’taki rötuşlu kopyada (bk. resim 3) satırın başlangıcında tek bir <r> işareti veren Radloff
+(1896), yazıtın Alttürkischen Inschriften der Mongolei’deki (1895: 334) runik işaretli dizgisinde satırı
+<rrdmlm> şeklinde, iki adet <r> işaretiyle başlatmıştır. Runik işaretli dizgide Radloff’un satırdaki
+oyuk kısma denk gelen eksik işareti <[m]> olarak tamamladığı görülmektedir. Ayrıca Radloff
+yazıtta <IsrkyÜrmdI> olarak yazılan işaret grubuna bir ayırma işareti ekleyerek bunu
+<Isrk:yÜrmdI> şeklinde vermektedir.
+     Radloff’un Almanca çevirisi “Kahraman cesaretine sahip boyum Bolşar halkı heyecan içinde
+yaşamadı (benim yaşadığım kadar huzur içinde yaşadı). Huzurumdan, ikizimden…” anlamına
+gelir. Bu çeviriye göre, <rdml[m]> şeklinde tamamlanan işaret grubu ärdäm ve älim şeklinde iki
+ayrı sözcük olarak yorumlanmakta, *Bolšar okunan bir sonraki sözcük ise bir etnik ad olarak
+kabul edilmektedir.
+    Radloff orijinal imlânın aksine <Isrk:yÜrmdI> şeklinde ayırdığı işaret grubunun ilk
+sözcüğünü äsrik ‘in Errerung = huzur içinde’ anlamında bir zarf olarak yorumlamıştır. Radloff’un
+bu *äsrik biçimini ET äsrük ‘sarhoş, esrik, mest’ (Clauson 1972: 250b) sözcüğünün düzleşmiş hâli
+olarak düşündüğü tahmin edilebilir. Fakat yazıtta sözcüğün <I> ile başladığına ve kapalı e’li
+olmayan ET äsrük sözcüğünün runik alfabede <I> ile yazılamayacağına dikkat edilmelidir.
+    Satırdaki <yÜrmdI> işaret grubu Radloff tarafından yürimädi ‘lebte nicht = yaşamadı’
+anlamıyla çevrilmiştir. Ancak bu fiil tarihi yazı dillerinde ‘yaşamak’ anlamıyla kayıtlara geçmiş
+değildir. Üstelik Eski Türkçede bu fiil kökü yöri- ~ yüri- değil, art ünlülü yorı- (Clauson 1972: 957a)
+biçimiyle kullanılmaktadır. Ön ünlülü biçim tarihi dönem metinlerinde ilk olarak Kur’an
+
+
+
+                                                                                           SUTAD 50
+50       Hülya YILDIZ
+
+
+     Tefsiri’nde5 kayıtlıdır ve Clauson (1972: 957b) söz konusu Tefsir’in çeşitli dil ölçütlerine göre en
+     erken 13. yüzyıla tarihlendirilebileceğini belirtmektedir6. Bu nedenle Altın Köl II yazıtında geçtiği
+     varsayılan *yüri- biçimi anakronik bir örnektir.
+         Radloff cümlenin sonundaki äkizimä sözcüğünü ‘von meinen Zwillingen (ikizimden)’
+     anlamında vermiş, buna göre sözcükteki birinci tekil kişi iyelik ekinden sonra gelen +ä’yi ayrılma
+     eki olarak yorumlamıştır. Fakat Orhon Türkçesinde birinci tekil kişi iyelik ekinden sonra gelen
+     bu +A eki ayrılma değil, yönelme-bulunma işlevindedir (bk. Tekin 2003: 110). Ayrıca äkizim ä’den
+     önce gelen ärinčim sözcüğünün ‘von meiner Ruhe = huzurumdan’ şeklinde yorumlaması
+     mümkün değildir.
+        3.2. erdemliğ bolsar budun isrek yörümedi erinçim ikizimä ‘Erdemli olsa kavim sarhoş
+     yürümedi…’ (Orkun 1940: 104).
+        Yenisey Yazıtlarının metinlerini oluştururken Radloff ve Fin Atlaslarını karşılaştıran
+     Orkun’un, Radloff (1895) tarafından satır başına eklenen hayalî *<r> işaretini çalışmasına dâhil
+     etmemesi ve <rdml>’den sonraki boşluğu ärdäml[ig] şeklinde tamamlaması isabetli olmuştur.
+          Orkun, çalışmasında Radloff’un anakronik *yüri- okuyuşunu temel almakla birlikte, söz
+     konusu işaret grubunda <I> işareti yazılmadığı için fiili yörü- şeklinde ele almayı tercih etmiştir.
+     Radloff gibi, cümledeki <Isrk> işaret grubunu ET äsrük sözcüğüyle ilişkilendirmek isteyen Orkun,
+     *isrek şeklinde okuduğu bu biçim için Kaşgarlı I, 96’ya ve Şeyh Süleyman, 13’e gönderme
+     yapmıştır (1940: 107).
+         Orkun’un çevirisi anlamsal açıdan değerlendirildiğinde, koşul çekimli erdemlig bolsar yan
+     cümlesinin gerçeğe aykırılık, gerçekleşmemişlik bildiren ‘erdemli olsa’ anlamıyla çevrildiği
+     görülmektedir. Fakat gerçeğe aykırılık bildiren bu şart yan cümlesi, Orkun’un yorumunda
+     kesinlik ve bitmişlik bildiren budun isrek yörümedi ‘kavim sarhoş yürümedi’ cümlesiyle devam
+     etmiştir. Ancak koşul cümlelerinin anlamsal-mantıksal yapısı gereği, gerçeğe aykırılık bildiren
+     bir koşul yan cümlesinin yine gerçeğe aykırılık bildiren bir yapıyla, yani bodun yorımaz7 erti
+     ‘kavim sarhoş yürümezdi’ şeklinde tamamlanması beklenmelidir. Üstelik yazıtta bir toplumun
+     sarhoş bir hâlde yürüdüğünün dile getirilmiş olması da mantık dışıdır. Satırın son iki sözcüğüne
+     gelince, Orkun bunları çeviremediğini ifade etmiştir (1940: 107).
+         3.3. är ärdäm älim bolsar, budun isrik yörümädi ärinčim ikizimä “Tak kak moyo gosudarstvo
+     obladalo geroyskoy doblestʹyu, to narod vozbujdennım (ili myatuşçimsya) ne xodil… (k
+     dvoim?)” (Malov 1952: 56).
+         Radloff’un (1895) satır başına eklediği hayalî *<r> işaretini ve rdml[m] rekonstrüksiyonunu
+     benimseyen Malov, <BULŠR> işaret grubunu bir etnik ad olarak okumaması bakımından
+     Radloff’tan ayrılmaktadır. Malov’un Rusça çevirisi “Devletim kahraman cesaretine sahip
+     olduğundan, halk heyecanla (ya da taşkınca) yürümedi… (ikiye?).” şeklinde anlamlandırılabilir.
+         Malov bolsar sözcüğünü bol- fiilinin -sar zarf-fiil ekli biçimi olarak kabul etmiş ve -sAr ekini
+     çeviride ‘Tak kak… = -dığından’ yapısıyla karşılamıştır. Malov’un yorumunda -sar ekli yan
+     cümlede özne olan *älim sözcüğü är ärdäm bolsar öbeğini bölerek araya girmiştir. Fakat böyle bir
+     sözcük sıralaması sentaktik açısından olanaklı değildir. Rusçaya “Tak kak moyo gosudarstvo
+     obladalo geroyskoj doblest'yu… = Devletim kahraman cesaretine sahip olduğundan…” şeklinde
+
+
+
+
+     5   Clauson 1972: 957b’deki yorı-maddesine bk.
+     6   Detaylı bilgi için Clauson 1972: XX’ye bakılabilir.
+     7   Dipnot 5’teki bilgiye göre, olası biçim ön ünlülü değil, art ünlülü olmalıdır.
+
+
+     SUTAD 50
+                                      Altın Köl II (E-29) Yazıtının Geniş Yüzünün Sol-Dış Satırı Üzerine   51
+
+çevrilen yan cümlenin bu anlama gelebilmesi için Eski Türkçede älim är ärdäm bolsar şeklinde
+ifade edilmiş olması beklenmelidir.
+    Satırdaki <IsrkyÜrmdI> işaret grubunu Radloff’a benzer şekilde, isrik yörümädi olarak okuyan
+Malov, bu öbeğe ‘vozbuždennym (ili mjatuščimsja) ne xodil… = heyecanla -ya da taşkınca-
+yürümedi’ anlamını vermiştir. Buna göre Malov da anakronik *yörü- fiilini Rusçada ‘yürümek’
+anlamına gelen xodit' fiiliyle karşılayarak Orkun’un izinden gitmiştir.
+    Malov ärinčim şeklinde okuduğu sözcüğü çeviride atlamış, ikizimä sözcüğünü ise kuşkulu
+olarak ‘k dvoim = ikiye?’ şeklinde yorumlamıştır.
+    3.4. erdem elim bulsar bodun esrük yürümedi erinčim ikizime “Moj doblestnyj elʹ, narod Bulsarov,
+ne xodil rasterjannym (iz-za svoih nesčastii). Moe gore – svoih bliznecov, ...” (Kljaštornyj 1976:
+262).
+     Kljaštornyj, Radloff’un (1895) satır başında verdiği hayalî *<r> işaretini çalışmasına dâhil
+etmemiş fakat Radloff’un erdem eli[m] rekonstrüksiyonunu benimsemiştir. Kljaštornyj’ın Rusça
+çevirisi “Kahraman ülkem, Bulsar halkı, (kendi bahtsızlığından ötürü) perişan halde yürümedi.
+Kederim – kendi ikizleri, …” şeklinde Türkçeleştirilebilir. Buna göre, Radloff gibi Kljaštornyj da
+<BULSR:BUDUN> işaret grubunu ‘Bulsar halkı’ şeklinde çevirmiştir. <IsrkyÜrmdI> işaret
+grubundaki <Isrk> işaretlerini <Ü> işareti yazılmadığı halde *äsrük okuyan Kljaštornyj, sözcüğü
+‘rasterjannym = perişan hâlde’ olarak anlamlandırmıştır. Fakat Kormušin’in (1997: 73) ifade ettiği
+üzere böyle bir çevirinin dayanağı yoktur. Kljaštornyj’ın, Radloff tarafından *yüri-, Orkun ve
+Malov tarafından **yörü- okunan anakronik fiil tabanını ise yürü- olarak aldığı görülmektedir.
+    Kljaštornyj, erinčim sözcüğünü ‘moe gore = kederim’ şeklinde çevirerek erinç sözcük
+tabanındaki acıma ifadesini tespit eden ilk araştırmacı olmuştur. Ancak erinč sözcüğünün Eski
+Türkçedeki anlamı ‘keder, dert, tasa’ değildir. Sözcük Eski Uygurcada ‘perişan, zavallı, mutsuz’
+(Clauson 1972: 234a); Kutadgu Bilig’de ise ‘felaket, sefillik; bahtsızlık, musibet, mihnet’ (Eraslan
+vd. 1979: 200) anlamlarını taşımaktadır. Kljaštornyj’ın yorumunda diğer araştırmacılardan farklı
+olan bir diğer husus da erinčim sözcüğünden sonraki kısmın, yazıttaki anlatıcının kederinin
+nedenini açıklayıcı bir cümle olarak ele alınmasıdır. Kljaštornyj, bu açıklayıcı cümlenin yazıtın
+(kendi numaralandırmasına göre) beşinci satırında da devam ettiğini düşünmüştür.
+    3.5. er erdäm elim bolsar bodun isrik yörümädi “Esli by moj elʹ obladal gerojskoj doblestju, narod
+ne xodil by mjatuščimsja.” (Kononov 1980: 133, mad. 234).
+    Kononov’un, runik işaretli eski Türk yazıtlarının gramerini işlediği bu kitabında söz konusu
+cümleyi kısmî olarak değerlendirdiği görülmektedir. Kononov (1980: 6) Yenisey Yazıtları için
+Malov’un (1952 ve 1959) yayınlarını kullandığını belirtmektedir. Bu nedenle Kononov’un da tıpkı
+Malov gibi Radloff’un (1895) verdiği hayalî *<r> işaretini ve <rdml[m] > rekonstrüksiyonunu
+benimsediği anlaşılmaktadır.
+     Kononov’un okuyuşu da Malov (1952) ile özdeştir. Fakat Kononov’un Rusça çevirisi “Eğer
+ülkemin kahramanca cesareti olsaydı halk ayaklanmaya gitmezdi” anlamındadır. Bu çeviriye
+göre, Kononov da Malov’un etkisiyle yazıttaki -sar ekli yan cümlede özne olduğunu varsaydığı
+*elim adının *er erdäm bolsar öbeğini bölerek araya girebileceğini düşünmüştür. Ancak yukarıda
+belirtildiği üzere böyle bir yorum sentaktik açıdan mümkün değildir. Cümledeki er ve erdäm
+sözcüklerini kapalı e’li vermesi ise Kononov’un fonolojik bir hatasıdır.
+    Kononov -sAr zarf-fiil ekini taşıyan bolsar’lı yan cümleyi de *yörümedi yüklemli ana cümleyi
+de gerçeğe aykırı geçmiş zamanla çevirmiştir. Ancak yazıttaki cümlenin yapısı buna uygun
+
+
+
+
+                                                                                           SUTAD 50
+52        Hülya YILDIZ
+
+
+     değildir. Bu çalışmada cümlenin sonundaki <rnčm:IkzmA> işaret grupları ise çeviriye dâhil
+     edilmemiştir.
+           3.6. rdml<…>BULSR:BUDUN:IsrkyÜrmdIrnčm:IkzmA: (Vasilʹev 1983: 25).
+         Vasilʹev’in Yenisey yazıtlarıyla ilgili Korpus’u bir okuma ve anlamlandırma çalışması
+     olmadığı için bu eserde ilgili cümlenin yalnızca transliterasyonu verilmiştir. Vasilʹev’in işaret
+     tespitlerinin yazıtın fotoğrafındaki işaret varlığıyla bire bir örtüştüğü görülmektedir.
+           3.7. ärdäml[ik] bolsar, bodun esirkäyü ärmädi. erinčim. ik[k]izim. a. (Mori 19928: 521 ve 528-529)9.
+         Altın Köl II yazıtının işaret varlığı için Vasilʹev’in (1983) sunduğu fotoğraflardan, Radloff
+     (1896)’un estampajlarından ve Fin Atlası’ndan yararlandığını belirten Mori (1992: 496), birisi
+     sözcüğü sözcüğüne (bk. s. 521), diğeri serbest (bk. s. 528-529) olmak üzere cümlenin iki farklı
+     Japonca çevirisine yer vermektedir10. Mori’nin Japonca çevirisi “(Ben?) cesur olduğumdan,
+     halk(ım) (çaba sarf ettiği için) asla pişman olmadı. (Fakat öldüm.) Ne acı! İkizlerim ah!” 11
+     anlamındadır.
+          Mori’nin incelemesi, <IsrkyÜrmdI> > işaret grubunun esirkäyü ärmädi şeklinde okunması ve
+     burada esirkä- ‘acımak’ fiilinin tespit edilmesi bakımından Altın Köl II yazıtı araştırmaları
+     açısından önemli bir yenilik arz etmektedir. Mori’nin esirkä- okuyuşunun sonraki araştırmacılar
+     tarafından da kabul edildiği görülmektedir. Mori’nin cümleye ait ‘çaba sarf etmek’ yorumu bir
+     serbest çeviri özelliğidir. Mori bu çeviriyle ilgili bir açıklama yapmamıştır; fakat bağlam gereği
+     bu çabayı sarf edenlerin müteveffanın buyruğundaki halk olduğu tahmin edilebilir 12.
+        3.8. ärdämli[g] bolsar bodun esirkäyür män erinčim “… I am sad about having lost (my)
+     people…” (Erdal 1991: 460).
+         Radloff’un cümlenin başında verdiği hayalî *<r> işaretini okumasına dâhil etmeyen Erdal,
+     Orkun’un ärdämli[g] rekonstrüksiyonunu ve Mori’nin esirkä- ‘acımak’ okuyuşunu benimseyen ilk
+     araştırmacı olmuştur. Erdal bu çalışmada cümlenin sonundaki <IkzmA> işaret grubunu
+     okumayıp cümlenin yalnızca bodun’dan sonraki bölümünü çevirmiştir.
+          Erdal’ın yukarıdaki okuyuşu Tekin (1998) tarafından değerlendirilmiştir. Tekin (1998: 8),
+     Erdal’ın esirkäyür män olarak okuduğu işaret grubunun her iki Atlas’ta ve Korpus’ta
+     <IsrkyÜrmdI> olarak yazıldığını, burada <r> işaretinin (yani ikinci <r>’nin) bir sonraki sözcüğe
+     ait olduğunu ve <mdI> işaretlerinin *män olarak okunamayacağını belirtmiştir. Tekin <mdI>
+     işaretler grubunun *män olarak okunamayacağı noktasında haklıdır. Fakat arada ayırma işareti
+     olmadan <IsrkyÜrmdI> şeklinde yazılan bir işaret grubunda ikinci <r> mutlaka bir sonraki
+     sözcüğe ait olmak zorunda değildir. Çalışmamızda gösterileceği üzere, <IsrkyÜrmdI> işaret
+     grubundaki esirkäyür sözcüğü de anlamlı bir birim olabilir.
+
+
+
+     8    Mori’nin bu makalesi aslında ilk olarak 1987’de yayımlanmıştır: “Arurun Kyoru daini hibun kōshaku”, Tōhō gakkai
+          sōritsu yonjū shūnen kinen tōhōgaku ronshū Tōhō gakkai (Second Altın Köl Inscription). In: the special book
+          published on the occasion of the 40th year of Tōhōgakkai (Institute of Eastern Culture), Tokyo 1987: 797-811. Makale
+          daha sonra Mori’nin 1992’de yayımlanan kitabına da dâhil edilmiştir. Elinizdeki incelemede Mori 1992’den
+          yararlanıldığı hâlde, esas kronolojik sıralamanın bozulmaması için Mori’nin çalışması Vasil’ev (1983)’ten sonra
+          verilmiştir.
+     9    Japonca olarak yazılan bu incelemenin makalemle ilgili kısımlarını anlamama yardımcı olan ve sorularımı yanıtlayan
+          Osaka Üniversitesi Öğretim Üyesi Prof. Dr. Matsui’ye teşekkürü bir borç bilirim.
+     10   Bu bilgi ve yorum Prof. Dr. Matsui’ye aittir.
+     11   Sayın Matsui’nin tarafıma gönderdiği İngilizce çeviri “Because (I?) was brave, (my) people never regretted (that they
+          put effort). (But I died.) What a misery! Oh my twins!” şeklindedir. Yukarıda verilen Türkçe çeviri, sayın Matsui’nin
+          İngilizce çevirisine dayalıdır.
+     12   Bu son cümledeki bilgi ve yorum yine Prof. Dr. Matsui’ye aittir.
+
+
+     SUTAD 50
+                                           Altın Köl II (E-29) Yazıtının Geniş Yüzünün Sol-Dış Satırı Üzerine   53
+
+   3.9. är ärdäm elim bolsar, bodun isrik yürümädi erinčim ikizimä “İkid, cäsarätli olsa, halg särhoş
+käzmäz… ikisinä…” (Recebov-Memmedov 1993: 269).
+     Recebov-Memmedov’un Azerice çevirisi, “Yiğit, cesaretli olsa halk sarhoş gezmez…
+ikisine…” anlamındadır. Radloff (1895) ve onu takip eden Malov (1952) ile Kononov’un (1980)
+izinden giden Recebov-Memmedov da satır başında hayalî bir *<r> işareti vermiştir. Bu çalışmada
+da Malov (1952) ve Kononov’da (1980) olduğu gibi yazıttaki -sar ekli yan cümlede özne olduğu
+varsayılan *elim adının *er erdäm bolsar öbeğini bölerek araya girebileceği düşünülmüştür.
+Çalışmada, yukarıda detaylı olarak değerlendirilen geleneksel isrik yürümädi okuyuşuna bağlı
+kalınmış ve ikizimä sözcüğü, gramer yapısına aykırı olarak ‘ikisine” şeklinde çevrilmiştir.
+   3.10. erdemlig bulsar bodunı isirkeyü ermedi “Kahramanlığı bulduğunda (kahramanlık
+mertebesine eriştiğinde) milleti onu korumaya muktedir olmadı.” (Sertkaya 1993: 75).
+    Radloff’un cümle başında verdiği hayalî *<r> işaretini okumasına dâhil etmeyip Orkun’un
+ärdämli[g] rekonstrüksiyonunu kabul eden bir diğer araştırmacı Sertkaya’dır. Sertkaya’nın
+yukarıdaki okuyuş ve yorumu Tekin (1998: 8-9) tarafından ayrıntılı olarak değerlendirilmiştir.
+Tekin, Sertkaya’nın yorumuyla ilgili olarak, ‘kahramanlığı bulduğunda’ anlamındaki bir yapının
+ärdämligig bulsar şeklinde olması gerektiğini; ärdämlig sıfatının ‘kahramanlık’ anlamına
+gelemeyeceğini; dördüncü sözcüğün *bodunı değil, bodun olduğunu; bodun sözcüğünün ‘millet’
+değil, ‘boylar, halk’ anlamına geldiğini belirtmektedir.
+    Sertkaya’nın cümle ile ilgili yorumunda, Mori tarafından önerilen esirkä- fiilinden yola çıktığı
+ve <IsrkyÜ> işaretlerini Mori gibi bu fiilin -(y)U zarf-fiil ekli biçimi olarak ele aldığı
+anlaşılmaktadır. Sertkaya’nın çalışmasında esirkä- fiilinin ‘korumak’ şeklinde anlamlandırıldığı
+görülmektedir. Bu noktada Tekin (1998: 8-9), söz konusu fiilin Eski Türkçede ‘korumak’
+anlamında değil, ‘üzülmek, birisinin ya da bir şeyin yitirilmesinden ötürü üzgün olmak’
+anlamında olduğunu yazmakta ve bu yoruma karşı çıkmaktadır. Ayrıca Tekin’e göre (1998: 8-9)
+ärmädi okuyuşundaki är- fiili ‘imek, olmak’ anlamına gelen yardımcı fiille açıklanmamalıdır.
+Fakat bu noktada Sertkaya’nın är- fiilini ‘imek, olmak’ şeklinde değil, ‘muktedir olmak’ şeklinde
+yorumladığına dikkat edilmelidir ki aslında Eski Türkçede är- fiilinin ‘muktedir olmak’ anlamı
+da yoktur. Sertkaya <rnčm:IkzmA> işaret grubuyla ilgili bir değerlendirme yapmamıştır.
+     3.11. ärdamlig13 bolsar bodun isrik jörümädi ärinči-m ikizim-ä ‘Narod, obladavšij doblestʹju,
+p'jannym ne slonjalsja. O moj (brat)-bliznec’ (Kormušin 1997: 72).
+     Erdal ve Sertkaya gibi Kormušin de Radloff’un cümlenin başına eklediği *<r> işaretini
+okumaya dâhil etmemiş ve Orkun’un ärdämli[g] rekonstrüksiyonunu kabul etmiştir. Kormušin’in
+Rusça çevirisi Alimov tarafından Türkçeye “Şecaat sahibi halk sarhoş olmadı. Ah, benim ikiz
+(kardeşim)!” olarak aktarılmıştır (bk. Kormušin 2017: 84). Kormušin’in yazıttaki <IsrkyÜrmdI>
+işaret grubunu Malov gibi isrik yörümädi şeklinde okuduğu fakat Orkun ile aynı şekilde
+anlamlandırdığı görülmektedir.
+     Kormušin, ärinči-m olarak okuduğu sözcüğe bir anlam vermemiştir. Fakat açıklamalar
+kısmında, buradaki -m ekinin kibarlık amacıyla kullanıldığını düşündüğünü belirtmiştir (2017:
+87). Kormušin bu noktada Tuvacada emir kipindeki sözcüklere kibarlık anlamı katan bir -m ekini
+örnek verdiğine göre, ärinčim sözcüğündeki *ärinči-’nin çekimli bir fiil tabanı olduğunu
+varsaymış görünmektedir.
+
+
+13   Çalışmada sözcüğün yazımı böyledir.
+
+
+
+
+                                                                                                SUTAD 50
+54        Hülya YILDIZ
+
+
+         3.12. ärdämli[g] bolsar bodun isirkäyü ermädi erinčim ikizim ä ‘Since (I) had manly qualities, the
+     people regretted (so much the loss of my life) and did not despise (me). How miserable it is! O,
+     my twin brother! (Tekin 1998: 6).
+          Tekin (1998: 8), Radloff’un satır başına eklediği *<r> işaretini okumasına dâhil etmemiş ve
+     Orkun’un ärdämli[g] onarımını doğru bulduğunu belirtmiştir. Bu cümlede <IsrkyÜrmdI> işaret
+     grubunu Sertkaya gibi isirkäyü ermädi şeklinde okuyan Tekin, cümleyi yorumlamada
+     Sertkaya’dan oldukça farklı bir yol izlemiştir. Tekin isirkä- fiilinin ‘korumak’ değil, ‘üzülmek,
+     birisinin ya da bir şeyin yitirilmesinden ötürü üzgün olmak’ (1998: 9) anlamında olduğunu
+     yazmıştır14. Tekin (1998: 9) işaret grubunun kalan kısmını yine Sertkaya gibi ärmädi şeklinde
+     okumuş fakat bunu Eski Uygurca yer- ~ er- ‘iğrenmek, yermek’ ve Modern Türkçe yer- fiiliyle
+     karşılaştırmıştır.
+          Bu çalışmada cümlenin bütününü “(Ben) Erdemli olduğum için, halk (hayatımı kaybetmeme
+     çok) üzüldü ve (beni) küçümsemedi.” şeklinde anlamlandırılmıştır. Bu anlamlandırma önerisi
+     için olumlu bir zarf-fiili olumsuz bir çekimli fiilin takip ettiği, DLT’ye ait urunčak alıp yermädi
+     ‘Depoziti alıp itiraz etmedi’ (bk. yer- II, Clauson 1972: 955a) örneği kanıt olarak sunulmuştur.
+     Ancak ‘küçümsemek, yermek’ anlamına gelen fiil kökü Eski Türkçede sonlu bir fiil olarak *er-
+     biçimiyle hiçbir zaman tespit edilememiştir.
+         Tekin cümledeki erinčim sözcüğünü ‘How miserable it is!’ şeklinde çevirerek bunun ‘Ne acı!’
+     anlamında bir ünlem olduğunu varsaymıştır. Ancak gerek Altın Köl II’deki erinčim sözcüğünün,
+     gerek bunun iyelik eki almamış erinč15 biçiminin başka bir Yenisey yazıtında da Eski Türkçenin
+     başka bir metninde de bir ünlem olarak geçtiği görülmemiştir.
+         3.13. ärdäml[ig] bulsar bodun esirkäyü ärmädi ärinčim ekizim ä ‘Kahramanlığı bulduğunda, halkı
+     (onu) esirgeyemedi (koruyamadı), ne acı! Ey ikizim (?)’ (Aydın 2015: 85).
+
+         Aydın’ın yorumunun ärdäml[ig] bulsar bodun esirkäyü ärmädi kısmına kadar Sertkaya’nın
+     yorumuyla büyük ölçüde aynı olduğu; ärinč sözcüğünün çevirisinde ise Tekin’i takip ettiği
+     görülmektedir.
+
+           4. YENİ OKUMA-ANLAMLANDIRMA ÖNERİLERİ VE AÇIKLAMALAR
+         Çalışmanın ikinci bölümünde, Fin Atlası, Radloff Atlası, www.bitig.org ve
+     uqusturk.wordpress.com sitelerindeki veriler karşılaştırılmış; Altın Köl II yazıtının geniş
+     yüzünün sol-dış satırının işaret varlığının başka araştırmacılar tarafından da isabetle tespit
+     edildiği üzere <rdml(…)BULSR:BUDUN:IsrkyÜr[m]dIrnčm:IkzmA:> şeklinde olduğu ifade
+     edilmişti. Üçüncü bölümde ise geçmişteki okuma ve anlamlandırma çalışmalarının sorunlu
+     noktalarına değinilmişti. Üçüncü bölümde ayrıntılı olarak üzerinde durulan ortografik, gramatik
+     ve semantik hususlardan sonra, Altın Köl II yazıtının geniş yüzünün sol-dış satırını farklı bir
+     şekilde okuyup anlamlandırmanın mümkün olduğu düşünülebilir:
+        ärdäml[ig] bolsar bodun esirkäyür amd2ï (?) erinčim ekizim a “(O) Erdemli olduğu için halk (onun
+     ölümüne) üzülüyor şimdi! (Ah) Zavallım! Ah ikizim!”
+          Bu okuma ve anlamlandırma önerisinde, yazıtta ayırma işareti olmaksızın yazılan
+     <IsrkyÜr[m]dI> işaret grubunun içerdiği anlamsal birimler <IsrkyÜr> esirkäyür ‘üzülüyor/üzülür’
+     ve <[m]dI> amd2ï (?) ‘şimdi’ şeklinde ayrılmıştır. Buradaki <IsrkyÜr> ‘esirkäyür’ okuyuşu, 3.8’de
+     belirtildiği üzere ilk olarak Erdal’ın (1991) çalışmasında yer almaktadır. Ancak Erdal
+
+
+     14   Bu anlamlandırma önerisi yukarıda görüldüğü üzere Erdal’a (1991) aittir.
+     15   Bu yazıttaki erinč sözcüğü, Tekin’in verdiği ‘miserable’ (Clauson 1972: 234a) anlamıyla Eski Türkçenin farklı
+          metinlerinde de tespit edilebilmektedir.
+
+
+     SUTAD 50
+                                              Altın Köl II (E-29) Yazıtının Geniş Yüzünün Sol-Dış Satırı Üzerine               55
+
+<IsrkyÜr>’den sonra gelen <[m]dI> işaretlerini hatalı olarak *<mn> ‘*män’ kabul etmiştir. Bu
+makalede ise, geçmişteki araştırmacılardan farklı olarak <[m]dI> işaretlerinin amd2ï ‘şimdi’
+şeklinde okunması önerilmektedir. Bu okuma önerisindeki amd2ï (?) sözcüğünün yazımında bir
+art ünsüz işareti yerine ön ünsüz işaretinin kullanılmış olma ihtimâli ilk bakışta ortografik olarak
+mümkün değilmiş gibi görünebilir. Ancak Yenisey Yazıtlarında art ve ön ünsüz işaretlerinin
+uyum dışı kullanıldığı örneklerin sayısı az değildir16: Örn. <ÜzDA> özd1ä E-7/4 (Kormušin 1997:
+208); <YtA> yït2 a E-28/5 (Kormušin 1997: 80), <tUGDm> t2uγdïm E-29/5 (Kormušin 1997: 71),
+<bWŋ°Wm> b2uŋum E-46/4 (Kormušin 1997: 224), <KIrK> qïr2q E-98/2 (Kormušin 1997: 124) vd.
+Üstelik bu kullanımlar arasında, bir art ünsüz işareti yerine ön ünsüz işaretinin kullanıldığı
+örneklerin daha fazla olduğuna dikkat edilmelidir.
+     Altın Köl II yazıtının geniş yüzünün sol-dış satırında geçtiği düşünülen amd2ï (?) sözcüğünün
+Yenisey yazıtlarında başka bir örneği yoktur. Sözcüğün en eski biçimi, Orhon yazıtlarındaki amtı
+biçimidir. Sözcük XIII.-XIII. yüzyıllar arasında varlığını sürdüren Eski Uygurcada da neredeyse
+standart olarak amtı biçiminde kayıtlıdır17. Çünkü metinlerde zaman zaman diyalektik özellikler
+olarak değerlendirilen fonolojik farklılıklara rastlansa da Eski Uygurca esasen klâsik bir dil olarak
+gelişmiş olup daha çok yazı diline ait özellikler gösterir. Kaşgar çevresinde Karahanlı Türkçesinin
+ortaya çıktığı XI. yüzyılda ve devamında dahi Eski Uygurca eserlerin çoğunluğu klâsik imlâya
+bağlı olarak istinsah edilmeye devam etmiştir. Eski Uygurcada amtı biçiminin standart olması
+daha çok buna bağlıdır.
+     Sözcüğün Karahanlı Türkçesindeki durumuna bakılacak olursa, Clauson’a göre (1972: 157a)
+DLT’de sözcüğe gelen pekiştirme edatının ok biçiminde olması, sözcüğün o dönemde art ünlülü
+olduğunu gösterir. Ancak araştırmacılar arasında bu konuda bir görüş birliği yoktur: Clauson’un
+amdı ok şeklinde okuduğu pekiştirme edatlı bu veri, Atalay (2006: 37) tarafından ok maddesi
+altında, ämdi ok şeklinde verilmiştir. Üstelik Atalay’daki (2006: 125) Karahanlıca madde başı da
+amdï değil, ämdi’dir. Karahanlıcadaki temel biçimin ämdi olarak kabul edildiği bir başka çalışma
+Ercilasun, Akkoyunlu’ya (2014: 33) aittir. Dankoff-Kelly’nin (1985: 8) okuyuşu ise amdi18
+şeklindedir. Ancak, Clauson’un dikkat çektiği üzere, Karahanlı döneminde sözcüğün temel
+biçiminin *ämdi değil, amdï olduğunu gösteren bir başka kanıt daha vardır ki o da Kaşgarlı’nın19
+ök edatının, içinde art ünlü, kaf ve gayın bulunan sözcüklere ok şeklinde geldiğini açıkça belirtmiş
+olmasıdır (bk. Clauson 1972: 285b). Bununla birlikte Kaşgarlı, Oğuzların ‘şimdi’ anlamındaki
+sözcüğün elif harfini esre olarak söylediklerini de kaydetmiştir (Atalay 2006: 125). Atalay’ın imdi20
+şeklinde okuduğu bu esreli Oğuzca söyleyiş, Clauson’a (1972: 157a) göre kapalı e ile emdi
+biçimindedir.
+     Yukarıda görüldüğü üzere, sözcüğün diş ünsüzü Karahanlı döneminde yani XI. yüzyılda
+ötümlüleşmiş hâldedir. Bu ötümlüleşmiş biçimin ilk olarak Karahanlı Türkçesinde mi ortaya
+çıktığını yoksa ötümlüleşme olayı daha önce gerçekleştiği hâlde ilk olarak Kaşgarlı tarafından mı
+
+
+
+
+16   Aslında bu özelliğe Orhon Yazıtlarından itibaren rastlamak mümkündür.
+17   Sözcük Clauson’a (1972: 156b) göre Eski Uygurcanın kimi metinlerinde ä- ile yazılmış görünmektedir. Ancak
+     Röhrborn (1979: 125), ön ünlülü *ämti biçiminin Eski Uygurca için hatalı olduğunu belirtir. Sözcüğün Eski
+     Uygurcadaki durumu ile ilgili detaylı bilgi için bk. Uçar 2017: 37.
+18   Dankoff-Kelly, bu çalışmada ï ve i’yi ayırt etmemiştir.
+19   Kaşgarlı bu bilgiye özök sözcüğüyle ilgili açıklamalarda yer verir.
+20   Uçar’a (2017: 37) göre, Kaşgarlı’nın Oğuzların elif’i esre ile söylediğini belirtmesi, sözcüğün Oğuzlar tarafından ince
+     sıradan telaffuz edildiğini kanıtlamaya yeterli değildir ve sözcüğün esreli okunuşundan ımdı’nın kast edilmiş olması
+     da muhtemeldir.
+
+
+                                                                                                         SUTAD 50
+56        Hülya YILDIZ
+
+
+     kayıt altına alınabildiğini bilmek mümkün değildir. Bu nedenle, E-29’da geçtiğini varsaydığımız
+     amd2ı (?) biçimini soru işaretiyle vermenin daha doğru olduğunu düşünüyoruz.
+         Altın Köl II yazıtıyla ilgili üzerinde durulması gereken bir başka husus, Radloff’tan bu yana
+     ärinčim ya da erinčim şeklinde okunagelen sözcüğün anlamlandırılması konusudur. Runik
+     yazıtlarla ilgili ilk okuma çalışmasını gerçekleştiren Radloff (1895), sözcüğü ‘huzurumdan’
+     şeklinde anlamlandırmış; Orkun (1940) ve Malov (1952) sözcüğü çevirmeden bırakmış;
+     Kljaštornyj (1976) sözcüğe ‘kederim’ anlamını vermiş; Kononov (1980) ise cümlenin bu kısmını
+     eserine dâhil etmemiştir. Vasilʹev’in (1983) çalışmasında Yenisey Yazıtlarının transkripsiyonu
+     yoktur. Sözcüğü ilk olarak ‘Ne acı!’ anlamıyla ele alan araştırmacı Mori (1987) olmuştur. Erdal
+     (1991) ve Sertkaya’nın (1993) çalışmalarında cümlenin bu kısmının çevirisine yer vermedikleri
+     görülmektedir. Kormušin (1997) sözcüğü çevirisine dâhil etmemekle birlikte, Tuvacada emir
+     kipindeki sözcüklere kibarlık anlamı katan -m ekine değinmiş; buna göre muhtemelen ärinčim
+     sözcüğünün çekimli bir fiil tabanı olduğunu varsaymıştır. Sözcük daha sonra Tekin (1998) ve
+     Aydın (2015) tarafından yine ‘Ne acı!’ şeklinde anlamlandırılmıştır.
+         Yukarıda görüldüğü üzere, yazıtta <rnčm> şeklinde yazılan işaret grubu dâhilinde
+     araştırmacılar hep erinč gövdesini görmüş olsa da sondaki +m biçimbiriminin ne şekilde
+     değerlendirileceği konusunda iki farklı yaklaşım vardır: Radloff (1895) ve Kljaštornyj (1976), söz
+     konusu +m’yi birinci tekil kişi iyelik eki olarak düşünmüşler; Mori (1987), Tekin (1998) ve Aydın
+     (2015) +m biçimbirimine bir anlam yüklememiş ve çeviriyi genel gönderimle aktarmışlardır. Buna
+     göre, erinč sözcüğü Radloff (1895) ve Kljaštornyj (1976) tarafından iyelik eki almış normal bir ad
+     kökü; diğer araştırmacılar tarafından ise Yenisey yazıtlarındaki diğer acınma ünlemleri gibi bir
+     ünlem olarak değerlendirilmiştir.
+          Yenisey yazıtları grubunda, bilindiği üzere, buŋ a, yït-a ačıg a, äsni, äsiz, äsiz a, äsizlerim, äsizim
+     gibi pek çok acınma ünlemi bulunmaktadır. Bunlar arasında yer alan äsizim sözcüğü Yenisey
+     yazıtlarında en yaygın olarak kullanılan biçimlerden biridir. Literatürde esizim sözcüğünün
+     yapısı ve anlamı üzerinde duran iki önemli çalışma bulunmaktadır. Bunlardan biri Tekin’e (1964),
+     diğeri Alimov’a aittir (2013). Her iki araştırmacı da esizim sözcüğünün, esiz’in birinci tekil kişi
+     iyelik eki almış biçimi olduğu konusunda hemfikirdir (bk. Tekin 1964: 135; Alimov 2013: 19).
+     Tekin, äsiz ve äsizim arasında anlamsal bir fark gözetmeksizin her ikisini de ‘yazık’ diye
+     çevirirken, Alimov kimi durumlarda bu ikisinin kullanımlarında bariz bir anlam farkı olduğuna
+     ve bu anlam farkının gözetilmesi gerektiğine dikkat çeker.
+
+          Yenisey yazıtlarında sıklıkla geçen äsizim sözcüğünün Altın Köl II’deki erinčim ile yapıca
+     paralel görünmesi, tahminimizce geçmişteki araştırmacıların erinčim sözcüğünü de äsizim ile aynı
+     anlamda çevirmesine yol açmıştır. Mori’yle (1987) başlayıp Tekin (1998) ve Aydın (2015) ile
+     devam eden ‘Ne acı!’ şeklindeki yorumlamalarda erinč kökü, äsiz ile anlam yönünden bir
+     tutulmuş; sondaki +m eki ise iyelik kategorisine ait işlevsel bir çekim eki olarak değil, kalıplaşmış
+     bir ek olarak düşünülmüştür. Oysa Yenisey yazıtlarında erinčim ve äsizim sözcüklerinin
+     kullanımları farklıdır: Yenisey yazıtlarında hem äsizim sözcüğü hem de bunun eksiz äsiz biçimi
+     yer alır. Bunlardan äsizim sözcüğü yalnızca ünlem olarak kullanılırken, äsiz ünlem olarak da
+     niteleme sıfatı21 olarak da kullanılabilir. Yenisey yazıtlarında yalnızca Altın Köl II yazıtında geçen
+
+
+
+     21   Alimov (2013: 19) esiz sözcüğünün bir tamlamanın niteleyici unsuru olduğu äsiz elim qanïm (E-10), äsiz yüz älig ärim
+          (E-45), äsiz elim (E-1) örneklerine yer verir. Buradaki äsiz yüz elig ärim (E-45) örneğinde geçen esiz sözcüğünün
+          niteleyici işleviyle değerlendirilmesi yoruma bağlıdır. Çünkü E-45 yazıtının ilgili satırı kinim kadašïm äsizim ä oγlanïm
+          äsizim ä ürüŋüm qaram äsiz yüz älig ärim ä äsizim ä şeklinde olup yüz älig ärim ä söz öbeğinden önce gelen äsiz sözcüğü,
+          sadece bu öbeğin niteleyicisi olmaya değil, ürüŋüm qaram ikilemesinin sonunda yer alan bir ünlem olarak
+
+
+     SUTAD 50
+                                            Altın Köl II (E-29) Yazıtının Geniş Yüzünün Sol-Dış Satırı Üzerine              57
+
+erinčim sözcüğü ise iyelik eki almamış erinč biçimiyle bir ünlem olarak hiçbir yazıtta yer almaz.
+Ayrıca Yenisey yazıtlarında erinč sözcüğünün niteleyici işleviyle kullanıldığı başka bir örnek de
+günümüze değin ortaya çıkmamıştır. Öyleyse, Altın Köl II’de geçen erinčim sözcüğünün iyelik
+ekiyle kalıplaşmış bir acınma ünlemi değil, I. tekil kişi iyelik eki almış bir ad gövdesi olabileceğini
+düşünmek daha akla yakın bir çözüm olarak görünmektedir. Eski Türkçede erinč sözcüğü ‘sefil,
+zavallı, mutsuz’ (Clauson 1972: 234a; Nadeljajev vd. 1969: 178) anlamlarına gelen bir sıfattır. Altın
+Köl II yazıtında adlaşmış bir sıfat olarak, I. tekil kişi iyelik ekiyle kullanılan erinčim sözcüğü “(Ah)
+Zavallım!” şeklinde anlamlandırılabilir. Bu anlamlandırma önerisi, erinčim sözcüğünden sonra
+gelen I. tekil kişi iyelik ekli ekizim a “Ah ikizim!” yapısıyla da gramatik olarak paraleldir. Bu
+durumda, incelemede değinilen bütün bu hususlar doğrultusunda, Altın Köl II yazıtının geniş
+yüzünün sol-dış satırının tamamı ärdäml[ig] bolsar bodun esirkäyür ämdi erinčim ekizim a “Erdemli
+olduğu için halk üzülüyor şimdi! (Ah) Zavallım! Ah ikizim!” şeklinde yorumlanabilir.
+    SONUÇ
+     Bu çalışmada Altın Köl II (E-29) yazıtının geniş yüzünün sol-dış satırının işaret varlığı Fin
+Atlası, Radloff Atlası, www.bitig.org ve uqusturk.wordpress.com sitelerindeki veriler aracılığıyla
+değerlendirilmiştir. Satırın işaret varlığının, Radloff’un rötuşsuz kopyasından itibaren pek çok
+araştırmacının verdiği gibi, <rdml(…)BULSR:BUDUN:IsrkyÜrmdIrnčm: IkzmA:> şeklinde
+olduğu ortaya konmuştur. Yazıtın geniş yüzünün sol-dış satırı ile ilgili, Radloff (1895), Orkun
+(1940), Malov (1952), Kljaštornyj (1976), Kononov (1980), Vasilʹev (1983), Mori (1987), Erdal (1991),
+Sertkaya (1993), Kormušin (1997), Tekin (1998) ve Aydın’a (2015) ait okuma ve anlamlandırma
+çalışmaları ortografik, gramatik ve semantik bakımdan sorgulanmıştır. Bunun ardından,
+satırdaki <IsrkyÜr[m]dI> ve <rnčm> işaret gruplarına ilişkin yeni bir okuma ve anlamlandırma
+önerisi sunulmuştur. Çalışmada ayırma işareti olmadan yazılan <IsrkyÜrmdI> işaret grubunun
+içerdiği anlamsal birimler <IsrkyÜr> ve <[m]dI> şeklinde belirlenmiş; bu anlamsal birimler
+geçmişteki araştırmacılardan farklı olarak esirkäyür amd2ï (?) ‘üzülüyor şimdi (?)’ şeklinde
+yorumlanmıştır. İncelemede üzerinde durulan bir başka husus olan <rnčm> işaret grubudur.
+Çalışmada, erinčim sözcüğünün sonundaki +(I)m eki, kalıplaşmış bir ek olarak değil, iyelik
+kategorisine ait işlevsel bir I. tekil kişi iyelik eki olarak ele alınmıştır. Ayrıca, ‘(Ah) Zavallım!’
+şeklinde yorumlanan erinčim sözcüğünün, kendisinden sonra gelen I. tekil kişi iyelik ekli ekizim a
+“Ah ikizim!” sözcüğüyle gramatik paralelliğine dikkat çekilmiştir. Çalışmada, Altın Köl II
+yazıtının geniş yüzünün sol-dış satırının transkripsiyonu nihai olarak ärdäml[ig] bolsar bodun
+esirkäyür amd2ï (?) erinčim ekizim a şeklinde yapılmış ve satırın “Erdemli olduğu için halk üzülüyor
+şimdi! (?) (Ah) Zavallım! Ah ikizim!” şeklinde anlamlandırılabileceği belirtilmiştir.
+    EXTENDED ABSTRACT
+    This article is written in order to provide a new reading proposal on the left-outer line of the
+broad face of Altın Köl II inscription, which belongs to the Yenisei subgroup of Old Turkic runic
+inscriptions. The inscription has been investigated by many scholars so far. The studies of the
+Finnish research group (1889), Radloff (1895 and 1896), Orkun (1940), Malov (1952), Klyaštornyj
+(1976), Vasilʹev (1983), Mori (1986), Bazin (1991), Kormušin (1997), Tekin (1998) and Aydın (2015)
+are of particular importance among them. Moreover, some photographs are released in
+uqusturk.wordpress.com and www.bitig.org websites.
+
+
+   düşünülmeye de uygundur. Fakat E-31 yazıtında geçen äsiz är eki oγlïn birlä ölti ‘Zavallı adam, iki çocuğuyla birlikte
+   öldü’ (Aydın 2015: 91) cümlesindeki kullanım, äsiz sözcüğünün niteleyici olduğu örnekler arasına eklenebilir.
+
+
+
+                                                                                                      SUTAD 50
+58      Hülya YILDIZ
+
+
+          When these studies on Altın Köl II inscription are examined it is understood that there is not
+     any dispute on the glyph inventory of the broad face of the left-outer line of the inscription. The
+     glyph inventory of the line in question is identified as <rdml(…)BULSR:BUDUN:
+     IsrkyÜrmdIrnčm:IkzmA:> nearly in all studies. Moreover, this identification can be confirmed
+     by the photos published in the mentioned websites. Just a small part of the line coming after the
+     fourth sign is unreadable due to the destruction on the surface of the inscription. There are two
+     different opinions in the literature that the lacuna is reconstructed with the sign [m] or [g] and
+     the related phrase is accordingly read as ärdäm eli[m] (Radloff 1895; Malov 1952; Kljaštornyj 1976;
+     Kononov 1980) or ärdämli[g] (Orkun 1940; Mori 1987; Erdal 1991; Sertkaya 1993; Kormušin 1997
+     and 2010; Tekin 1998; Aydın 2015).
+          The remaining part of the sentence is even more problematic. It is read and interpreted in
+     many ways by the researchers. At this point, the greatest disagreement arises from the reading
+     and the interpretation of the sign group <IsrkyÜrmdI>. Radloff (1895), who preferred to read and
+     interpret that sign group as *äsrik yürimädi ‘lebte nicht in Errerung = did not live in recitation’,
+     inserted a separation mark even though the original spelling did not contain any and he regarded
+     the sign group as <Isrk:yÜrmdI>. The following researchers kept reading the sign group
+     <IsrkyÜrmdI> as isrek yörümedi, isrik yörümädi or esrük yürümedi because of that falsification of
+     Radloff. It was Mori (1987), who noticed that the sign group did not contain any separation mark.
+     Moreover, he correctly identified the Old Turkic verb esirkä- ‘to regret, to be sorry’ in that sign
+     group and provided an accurate understanding of the semantic content of the left-outer line.
+     Mori’s exact reading of the whole sign group was as esirkäyü ärmädi ‘(my people) never regretted
+     (that they put effort)’. Afterwards, Erdal (1991), Sertkaya (1993), Tekin (1998) and Aydın (2015)
+     adopted Mori’s proposal and they based their readings on it in certain degrees. The mentioned
+     sign group was read and interpreted as esirkäyür män ‘I am sad about (…)’ by Erdal (1991); as
+     esirkäyü ärmädi ‘korumaya muktedir olmadı = was not able to protect’ by Sertkaya (1993); as
+     isirkäyü ermädi ‘regretted and did not despise’ by Tekin (1998) and as esirkäyü ermädi
+     ‘esirgeyemedi (koruyamadı) = could not protect’ by Aydın (2015). However, Erdal’s reading is
+     problematic because he erroneously regarded the mentioned sign group as *<IsrkyÜrmn>.
+     Sertkaya and Aydın’s readings cannot be confirmed because the Old Turkic verb esirkä- did not
+     have the meaning ‘to protect’ in earlier times and there was not an auxiliary verb as *är- ‘to be
+     able to do something’ in that period. Tekin’s interpretation is also unacceptable because the verb
+     base which meant ‘to despise, to criticize’ was not ever attested as a finite verb with the form *er-
+     in Old Turkic. In this study, the sign group <IsrkyÜrmdI>, which was inscribed without a
+     separation mark, is divided into two lexical units as done by the previous researchers. However,
+     the first one is taken as <IsrkyÜr> and it is read as esirkäyür ‘regrets’. The remaining part, <mdI>,
+     is read as amd2ï (?) ‘now’.
+         The other sign group evaluated in the paper is <rnčm>. In this paper, it is read as erinčim as
+     in the previous researchers’ studies. However, the particle +m at the end is taken as the first-
+     person singular possessive and the lexeme erinčim is interpreted as ‘(Oh) My miserable!’.
+     Consequently, the whole left-outer line of the broad face of Altın Köl II inscription is read and
+     interpreted as ärdäml[ig] bolsar bodun esirkäyür amd2ï (?) erinčim ekizim a “Since he has manly
+     qualities the people regrets now (?)! (Oh) My miserable! Oh, my twin (brother)!”.
+
+
+
+
+     SUTAD 50
+                                        Altın Köl II (E-29) Yazıtının Geniş Yüzünün Sol-Dış Satırı Üzerine                59
+
+KAYNAKÇA
+Alimov, R. (2013). Eski Türk runik metinlerdeki esiz üzerine. Atatürk Üniversitesi Türkiyat Araştırmaları
+      Enstitüsü Dergisi, 49, 17-38.
+Aspelin, J. R. vd. (1889). Inscriptions de l’Iénissei recueilles et publiées par la société Finlandaise d’archéologie.
+      Helsingfors: Imprimerie de la Société de Littérature Finnoise.
+Atalay, B. (2006). Divanü Lûgati’t-Türk (C. I,) (5. bs.). Ankara: Türk Dil Kurumu Yayınları.
+Aydın, E. (2015). Yenisey Yazıtları. Konya: Kömen.
+Bazın, L. (1991). Le systèmes chronologiques dans le monde Turc ancien (Bibliotheca Orientalis Hungarica 34.).
+      Budapest: Akadémiai Kiadó.
+Clauson, G. (1972). An Etymological dictionary of pre-thirteenth-century Turkish. Oxford: Oxford University
+      Press.
+Dankoff, R. & Kelly, J. (1985). Compendium of the Turkic dialects. Part III, Harvard: Harvard University Press.
+Ercilasun, A. B. & Akkoyunlu, Z. (2014). Dîvânu Lugâti’t-Türk: giriş-metin-çeviri-notlar-dizin. Ankara: Türk Dil
+      Kurumu Yayınları.
+Erdal, M. (1991). Old Turkic word formation-II. Wiesbaden: Otto Harrassowitz.
+http://www.bitig.org/?lang=e&mod=1&tid=2&oid=116&m=2 (Erişim tarihi: 27.09.2019)
+https://uqusturk.wordpress.com/2012/02/12/yenisey-yazitlari/?wref=tp#jp-carousel-2855              (Erişim      tarihi:
+      27.09.2019)
+Kljaštornyj, S. G. (1976). Stely zolotogo ozera (K datirovke enisejskih runičeskih pamjatnikov). Turcologica: K
+      semidesjatiletiju akademika A. N. Kononova, 258-267.
+Kononov, A. N. (1980). Grammatika jazyka tjurkskih runičeskih pamjatnikov. Leningrad: Nauka.
+Kormušin, İ. V. (1997). Tjurkskie enisejskie ėpitafii (Teksty i issledovanija). Moskva: Nauka.
+Kormušin, İ. V. (2017). Yenisey eski Türk mezar yazıtları (R. Alimov Çev.). Ankara: Türk Dil Kurumu Yayınları.
+Malov, S. E. (1952). Enisejskaja pis'mennost' tjurkov. Teksti i perevody. Moskva: Izdatel'stvo Akademii Nauk
+      SSSR.
+Morı, M. (1987). Arurun Kyoru daini hibun kōshaku. Tōhō gakkai sōritsu yonjū shūnen kinen tōhōgaku ronshū
+      Tōhō gakkai, 72, 797-811.
+Morı, M. (1992). An Interpretation of the second Altın Köl II ınscription. Historical Studies of the Ancient Turkic
+      Peoples II, Tokyo: Ko.
+Nadeljaev, V. M. vd. (1969). Drevnetjurkskij slovarʹ. Leningrad: Nauka.
+Orkun, H. N. (1940). Eski Türk yazıtları III. İstanbul: Alâeddin Kıral Basımevi.
+Radloff, W. (1895). Die alttürkischen ınschriften der Mongolei. St. Petersburg: Commissionaires de l’Académie
+      Imperiale des sciences.
+Radloff, W. (1896). Atlas der alterthümer der Mongolei, dritte lieferung Taf. LXXXIII–CIV, St. Petersburg:
+      Buchdruckerei der Akademie der Wissenschaften.
+Recebov, E. & Memmedov, Y. (1993). Orhon-Yenisey abideler. Bakı: Yazıcı.
+Röhrborn, K. (1979). Uigurisches wörterbuch. sprachmaterial der vorislamischen türkischen texte aus
+      zentralasien. Lieferung 2: agrıglan-–anta. Wiesbaden: Franz Steiner Verlag.
+Sertkaya, O. F. (2008). Göktürk (runik) harfli yazıtların envanter, alfabe ve bibliyografya problemleri üzerine. Dil
+      Araştırmaları, 2, 7-34.
+Tekin, T. (1964). On a Misinterpreted word in the old Turkic ınscriptions. Ural-Altaische Jahrbücher, 35, 134-
+      144.
+Tekin, T. (1998). The Second Altınköl ınscription. Türk Dilleri Araştırmaları, 8, 5-14.
+Tekin, T. (2003). Orhon Türkçesi grameri. İstanbul: Türk Dilleri Araştırmaları Dizisi 9.
+Uçar, E. (2017). “Kutadgu Bilig dizinideki bir kelime hakkında IV: emdi ‘şimdi’ üzerine. Çukurova Üniversitesi
+      Türkoloji Araştırmaları Dergisi, 2(1), 36-39.
+Vasil'ev, D. D. (1983). Korpus tjurkskih runičeskih pamjatnikov bassejna Eniseja. Leningrad: Nauk.
+
+
+
+
+                                                                                                    SUTAD 50
+

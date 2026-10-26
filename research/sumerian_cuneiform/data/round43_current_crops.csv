@@ -1,0 +1,3 @@
+﻿file,parent,x,y,width,height,operation,sha256
+round43_sources/MS3178_left_strip.png,round30_sources/MS3178_reverse_context.jpg,0,0,300,1800,"CoreGraphics raw-top-left; corrects current exploratory sips(0,0) crop",ba2fdfdf317df598d7efc4b70eaad001c2a1da0cefc0315c3c819eb00dccb58a
+round43_sources/MS3178_central_strip.png,round30_sources/MS3178_reverse_context.jpg,260,0,430,1500,"CoreGraphics raw-top-left; exploratory context, not a confirmed row26 crop",a36a0df8e59054122d53bd2c1c3b02b002ddb295def996221e481deb6c1f13e8

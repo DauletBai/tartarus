@@ -1,0 +1,1319 @@
+                   21. Yüzyılda Eğitim ve Toplum / Education And Society In The 21st Century
+                               Cilt / Volume 10, Sayı / Issue 28, Spring / Bahar 2021
+                                      Araştırma Makalesi / Research Article
+
+Sayfa/Page : 261 - 291
+
+
+
+                                                                                     Janarbyek ASIMKHAN
+
+
+
+
+     Köktürk Harfli Yazıtlar ve Kazak Türkçesindeki
+         Ortak Fiiller ve Fiil-Tamlayıcı İlişkileri
+
+
+          Inscriptions with Gokturk Letters and Common Verbs and
+                Verb-Complement Relations in Kazakh Turkish
+
+
+
+
+                                                                                    Janarbyek ASIMKHAN*
+
+
+
+    Öz:
+   İlk yazılı kaynağımız olan Köktürk harfli yazıtlarda geçen kelimelerin çoğu aslî bi-
+çimini korumakta, bir kısmı da bazı fonetik değişmelerle günümüz Türk lehçelerinde
+yaşamaktadır. Bu kelimelerin başında da fiiller gelmektedir. Söz konusu fiillerle ilgili
+gerek Türkiye’de gerekse Türkiye dışında pek çok çalışma yapılmıştır. Son yıllarda
+Türkiye’de fiillerle ilgili yapılan çalışmalarda fiil-tamlayıcı ilişkisi önemli yer tutmak-
+tadır.
+    Fiil tamlayıcısı, fiilin anlamını çeşitli yönlerden tamamlayan ögedir. Fiil ile tam-
+layıcı arasındaki ilişkiyi kuran da hâl ekleridir. Köktürk harfli yazıtlardan günümüz
+Türk lehçelerine kadar geçen sürede bazı tamlayıcıların hâl eklerinde bir takım farklı-
+lıklar görülmektedir. Bu farklılıklar bazı fiillerin anlam değişmelerini de beraberinde
+getirmektedir. Fiillerde görülen anlam değişikliklerine göre de fiillerin aldıkları hâl
+ekli tamlayıcıları değişmektedir. Bundan dolayı lehçeler arasında fiil-tamlayıcı ilişkisi
+üzerine yapılan çalışmalarda ortak fiillerden bazıları aynı tamlayıcılara ihtiyaç du-
+yarken bazıları da farklı hâl ekli tamlayıcılara ihtiyaç duymaktadır. Söz konusu fark-
+lılıklar Köktürk harfli yazıtlar ile Kazak Türkçesinde bulunan ortak fiillerde de göze
+çarpmaktadır.
+
+*
+ Ankara Hacı Bayram Veli Üniversitesi, Lisansüstü Eğitim Enstitüsü, Türk Dili ve Edebiyatı Anabilim Dalı, Türk
+Dili Bilim Dalı Doktora Öğrencisi, asimhanjanarbek@gmail.com
+https://orcid.org/ 0000-0002-3769-7206
+
+                                           Makale Bilgisi / Article Info                                         241
+                         Geliş / Received : 22.02.2020 - Kabul / Accepted : 05.04.2021
+      Janarbyek ASIMKHAN
+
+
+          Bu çalışmada her iki lehçedeki ortak fiillerin, fiil-tamlayıcı ilişkisi bakımından
+      gösterdiği benzerlikler ve farklılıklar tespit edilmeye çalışılmıştır. Çalışmada, öncelik-
+      le her iki lehçedeki hâl kavramı üzerinde durulmuş, daha sonra ise Irk Bitig, Köktürk
+      ve Ötüken Uygur Kağanlığı Yazıtları ve Enisey Cazma Estelikteri adlı eserlerinden
+      hareketle fişlenen fiillerin ses ve anlam bakımından Kazak Türkçesi ile ortaklığı bu-
+      lunanlar tespit edilmiştir. Bu fiillerin her iki lehçede de alabildiği tamlayıcılar örnek
+      cümlelerle sıralanmıştır.
+          Anahtar Sözcükler: Köktürk harfli yazıtlar, Kazak Türkçesi, fiil, fiil-tamlayıcı iliş-
+      kiler
+
+
+         Abstract:
+          Most of the words written in Gokturk (Orkhon) Inscriptions, which is our first
+      written source, still preserve their original form today, and some of them exist in to-
+      day’s Turkish dialects with some phonetic changes. Verbs are at the top of these words.
+      Various studies have been carried out on these mentioned verbs both in Turkey and
+      also in other countries. In recent years, verb-complement relations have occupied a
+      significant place in the studies carried out on verbs in Turkey.
+          Verb complement is the element that completes the meaning of the verb in vari-
+      ous aspects. It is case suffixes which create the relationship between the verb and the
+      complement. It is observed that there are some differences in the case suffixes of some
+      complements in today’s Turkish dialects compared to the language used in Gokturk
+      (Orkhon) Inscriptions. These differences have brought along semantic changes in
+      some verbs. Depending on the semantic changes seen in the verbs, case suffix comple-
+      ments of the verbs also change. Therefore, in studies carried out between dialects on
+      the verb-complement relationship, while some of the common verbs needed the same
+      complement, some of them require different case suffix complements. The mentioned
+      differences are also noticeable in the common verbs found both in the inscriptions
+      with Gokturk alphabet and Kazakh language.
+          In this study, it has been attempted to detect the similarities and differences be-
+      tween the common verbs in both dialects in terms of verb-complement relationship. In
+      the study, first of all, the concept of case in both dialects was emphasized; and then, the
+      verbs selected based on the works named Irk Bitig, Köktürk ve Ötüken Uygur Kağan-
+      lığı Yazıtları and Enisey Cazma Estelikteri were analyzed in terms of having common
+      sound and meaning with Kazakh language. Complements that these verbs can get in
+      both dialects were listed along with sample sentences.
+         Keywords: Inscriptions with Gokturk letters, Kazakh language, verb, verb-com-
+      plement relations
+
+
+
+
+242                   21. Yüzyılda Eğitim ve Toplum / Education And Society In The 21st Century
+                                  Cilt / Volume 10, Sayı / Issue 28, Spring / Bahar 2021
+               Köktürk Harfli Yazıtlar ve Kazak Türkçesindeki Ortak Fiiller ve Fiil-Tamlayıcı İlişkileri
+
+
+   Giriş:
+   Bugüne kadar gerek Türkiye’de gerekse Kazakistan’da Köktürk harfli yazıtlar ve
+Kazak Türkçesi ile ilgili pek çok çalışma yapılmıştır. Son yıllarda özellikle Türkolojide
+yeni bir inceleme alanı olan (Karaca 2011: 9) fiil-tamlayıcı ilişkisi üzerinde çeşitli çalış-
+malar yapılmaktadır. Bu çalışmada da Köktürk harfli yazıtlar ile Kazak Türkçesindeki
+ortak fiiller, fiil-tamlayıcı ilişkisi açısından ele alınmıştır.
+   İstem konusunu dünyada ilk ele alan Fransız dilbilimci Lucien Tesnière olmuştur
+(Karaca 2011: 9). Türkiye’de ise yeni yeni kullanılmaya başlayan “istem” terimini ilk
+kullanan Tahsin Banguoğlu’dur (Banguoğlu 2007: 601). Daha sonra Tahir Kahraman
+“durum ekli tamlayıcı”, Leyla Karahan “fiil-tamlayıcı ilişkisi”, Vilden Emre “birleşim
+değerleri”, Mustafa Uğurlu, Selim Karaca ve Işıl Aydın Özkan “istem”, Aysun Demrez
+Güneri “fiillerin durum ekli tamlayıcıları” terimlerini kullanmışlardır (Özkan 2017:
+24-27). Söz konusu terim, Kazak Türkçesinde “aktant, valenttilik” şeklinde kullanıl-
+maktadır (Musayeva 2013: 52-54).
+    Fiil-tamlayıcı ilişkisini belirleyen unsurlardan biri olan hâl ekleri üzerinde kısaca
+durmakta fayda vardır. Eski Türkçedeki hâl eklerinin sayısı araştırmacılar tarafından
+dokuz veya on olarak kabul edilmektedir. Ancak, A. von Gabain, Eski Uygurcada bu-
+lunma hâli eki ile ayrılma hâli ekini birleştirdiği için bu sayının sekiz olduğunu dile
+getirmiştir (Eraslan 2012: 131). Marcel Erdal, A Grammar of Old Turkic adlı çalışma-
+sında Eski Türkçedeki hâl ekinin sayısını on üç olarak verirken (Erdal 2014: 167-181)
+Cengiz Alyılmaz ise söz konusu hâl eklerini işlevlerine göre sınıflandırarak bu sayıyı
+on dokuza çıkarmıştır (Alyılmaz 1994: 50-51).
+   Talat Tekin Eski Türkçe Grameri adlı çalışmasında hâl eklerini “1. Yalın 2. İlgi du-
+rumu: +(n)Iŋ, +ıg, +ın 3. Belirtili nesne durumu: +(X)g, +(X)n, +nI 4. Verme-bulunma
+durumu: +(k)A, +ŋA 5. Bulunma-çıkma durumu: +DA 6. Yönelme durumu: +gArU,
++ŋArU, +ArU, +rA 7. Eşitlik durumu: +çA 8. Araç durumu: +(X)n 9. Birliktelik duru-
+mu: +lIgU” şeklinde dokuz başlık altında sıralamıştır (Tekin 2016: 99-111).
+    Nurdin Useev Bayırkı Kırgız (Enesay) Cazma Estelikteri II: Tili Cana Tildik Düynö
+Beynesi adlı çalışmasında Yenisey Yazıtlarındaki hâl eklerini “1. Yalın hâl: Ø 2. İlgi hâli
+eki: +nIŋ, +Iŋ, +Ig 3. Yönelme hâli eki: +G(A), +ŋA 4. Belirtme hâli eki: +(I)g, +(I)n,
++nI 5. Bulunma hâli eki: +DA, +G(A) 6. Ayrılma hâli eki: +DA, +G(A) 7. Vasıta hâli eki:
++n, +In 8. Eşitlik hâli eki: +çA 9. Birliktelik hâli eki: +lIgU” olarak vermiştir (Useev
+2009: 39-49).
+   Kemal Eraslan da Eski Uygur Türkçesi Grameri’nde hâl eklerini “1. Yalın hâl 2. İlgi
+hâli eki: +Iŋ, nIŋ 3. Yükleme hâli eki: +g, +n(I) 4. Yönelme hâli eki: +KA, +A 5. Bu-
+lunma-çıkma hâli eki: +DA 6. Çıkma hâli eki: +DIn, +DAn, 7. Eşitlik hâli eki: +çA 8.
+Vasıta hâli eki: +(I)n, +Un, +An 9. Yön gösterme hâli eki: +gAru, +ŋArU, +rA” şeklinde
+göstermiştir (Eraslan 2012: 131-158).
+    Kazak Türkçesi gramerlerinde ise “septik jalġaw” terimi ile ifade edilen isim hâl ek-
+leri “1.Yalın hâl (ataw septik) 2. İlgi hâli eki (ilik septik): +nIŋ, +DIŋ 3. Belirtme hâli eki
+(tabıs septik): +nI, +DI, +n 4. Yönelme hâli eki (barıs septik): +ĠA, +QA, +A 5. Bulun-
+ma hâli eki (jatıs septik): +DA 6. Ayrılma hâli eki (şıġıs septik): +nAn, +DAn 7. Vasıta
+hâli eki (kömektes septik) +men(en), +ben(en), +pen(en)” şeklinde yedi başkık altında
+                 21. Yüzyılda Eğitim ve Toplum / Education And Society In The 21st Century                 243
+                             Cilt / Volume 10, Sayı / Issue 28, Spring / Bahar 2021
+      Janarbyek ASIMKHAN
+
+
+      kullanılmaktadır (Isqaqov 1991: 56-65). Kazak Türkçesi gramer çalışmalarında +şA;
+      +DAy eşitlik hâli eki, bir hâl eki olarak kabul edilmemektedir. Ancak söz konusu hâl
+      eki çalışmamıza dahil edilmiştir.
+                Çalışmamızda, Köktürk harfli yazıtlar ve Kazak Türkçesindeki ortak fiiller ve
+      fiil-tamlayıcı ilişkisi açısından ele aldığımız fiiller, ses ve anlam bakımından hiç deği-
+      şikliğe uğramayan fiiller ve ses değişikliğine uğrayıp anlam bakımından korunan fiiller
+      olarak iki başlık altında incelenecektir.
+          Eski Türkçedeki fiillerin tespiti ve örnek cümleleri için Tekin (2013), User (2010),
+      Mert (2009) ve Useev’in (2011) eserleri esas alınmıştır. Kazak Türkesindeki fiillerin
+      tespiti ve açıklamaları için ise Qazaq Ädebiy Tiliniŋ Sözdigi adlı XVI ciltlik sözlük kul-
+      lanılmış olup örnek cümleleri farklı edebî eserlerden (Aqbilek, Abay jolı I-IV., Joġalġan
+      Qız, Köşpendiler I, II., Mirjaqıp Duwlatov Şıġarmaları, Öz Otıŋdı Öşirme, Qan Men
+      Ter, Qazaqtıŋ Qanışı, Şıġarmalar Jıynaġı III., Ulpan) taranmıştır.
+         a.   Ses ve Anlam Bakımından Hiç Değişikliğe Uğramayan Fiiller
+         al- “almak” (Useev 2011: 120; QÄTS I, 310)
+         Söz konusu fiil, tespit ettiğimiz örneklerde her iki lehçede belirtme (ekli) ve yönel-
+      me hâli ekli tamlayıcıyla kullanılmaktadır.
+         ET: Ediz el urugın kabay urugın artımga altım. “Ediz halk boylarını, Kabay boyunu
+      arkama aldım (kendime istila ettim)” (Y 41, 10)
+         KT: Pesir molda kartanı qolġa aldı. “Pesir molla haritayı eline aldı.” (ŞJ III: 66)
+         art- “artmak, çoğalmak” (Useev 2011: 680; QÄTS I, 651)
+         Tespit ettiğimiz örneklerde fiilin her iki lehçede de herhangi bir tamlayıcıya ihtiyaç
+      duymadığı görülmektedir.
+          ET: togday turnyazı artzun, kuşladaçı bilge tutuk yok, artzun. “Togday turnaları
+      artsın, kuşla avlayacak Bilge Tutuk yok, artsın” (Y 48, 13)
+         KT: Jıldan-jılġa tabısım artıp keledi. “Her yıl kazancım artıyor.” (QÄTS I, 651)
+         at- “1. ateş etmek, patlatmak 2. atmak, fırlatmak” (Useev 2011: 680; QÄTS II, 79)
+          Sadece Yenisey yazıtlarında örneğine rastladığımız at- fiili, belirtme (eksiz) hâli
+      ekli tamlayıcıyla kullanılırken Kazak Türkçesinde ise belirtme (ekli) ve yönelme hâli
+      ekli tamlayıcıyla kullanılmaktadır.
+         ET: Kaŋım, öge begim kazganmış kırk uyar kadaş atmadım. “Babam Öge Bey’in
+      elde ettiği kırk asil akrabamı bırakmadım.” (Y 100, 2)
+         KT: Ayaġımdaġı pimalarımdı birinen soŋ birin esik jaqqa attım. “Ayağımdaki keçe
+      çizmeleri art arda kapıya doğru fırlattım.” (QÄTS II, 79)
+         bar- “varmak, gitmek” (Useev 2011: 681; QÄTS II, 715)
+         Tespit ettiğimiz örneklerde fiilin her iki lehçede de yönelme ve bulunma hâli ekli
+      tamlayıcı aldığı görülmektedir.
+          ET: Beş yegirmi yaşımda Tabgaç kanga bardım “On beş yaşımda Tabgaç hanına
+      (sefere) gittim.” (Y 11, 3)
+244                   21. Yüzyılda Eğitim ve Toplum / Education And Society In The 21st Century
+                                  Cilt / Volume 10, Sayı / Issue 28, Spring / Bahar 2021
+                Köktürk Harfli Yazıtlar ve Kazak Türkçesindeki Ortak Fiiller ve Fiil-Tamlayıcı İlişkileri
+
+
+     KT: Elaman depoġa bardı. “Elaman depoya gitti.” (QMT, 353)
+     Qattı boran bop turġan tünde barıp... “Boranlı bir gece gidip...” (AJ II, 404)
+     bat- “1. batmak, gömülmek 2. (güneş, ay vb.) batmak” (User 2010: 519; QÄTS
+III, 91)
+   Tespit ettiğimiz örneklerede fiil, Eski Türkçede herhangi bir tamlayıcıya ihtiyaç
+duymazken Kazak Türkçesinde yönelme hâli ekli tamlayıcya ihtiyaç duymaktadır.
+     ET: Kiçe yar[uk] batar erkli süŋüşdüm. “Akşam hava kararırken savaştım.” (ŞU D,
+1)
+  KT: Bügin kün qızarıp bultqa battı. “Bugün güneş kızararak bulutların arasına gö-
+müldü.” (QMT, 43).
+     ber- “vermek, bir şeyi kimseye iletmek” (Tekin 2014: 129; QÄTS III, 260)
+   Tespit ettiğimiz örneklerde fiil, her iki lehçede belirtme (ekli veya eksiz) ve yönelme
+hâli ekli tamlayıcıyla kullanılmaktadır.
+     ET: Marıma yüz er, turug bertim. “Üstadıma yüz er, mekan verdim.” (Y 47, 7)
+     Yabgug şadıg anta bermiş. “Yabgu’yu (ve) Şad’ı o vakit (onlara) vermiş.” (KT D, 14)
+     KT: Serik inisine kitaptı berdi. “Serik küçük kardeşine kitabı verdi.” (QTS, 96).
+   Qambar adamġa janınan orın berdi. “Qambar adama yanından yer verdi.” (ÖOÖ,
+170)
+     bil- “bilmek” (Tekin 2014: 129; QÄTS IV, 110)
+  Fiilin her iki lehçede belirtme (ekli) ve bulunma hâli ekli tamlayıcı aldığı görül-
+mektedir.
+     ET: ...yaşımda bildim “...yaşımda bildim.” (Y 70, 4)
+     Oglı kaŋin bilmez erti. “Oğullar babalarını bilmez idi.” (BK D, 18)
+   KT: Ol äkimge jantaŋdap qaluwdı bilmeytin edi. “O, valiye yaranmayı bilmezdi.”
+(QÄTS VI, 14).
+     Jaqında bilmes... “Yakında öğrenemez...” (AJ IV, 326)
+     bök- “doymak” (Useev 2011: 682; QÄTS III, 533)
+    Söz konusu fiilin Kazak Türkçesinde “emmek, şişmek” anlamı da mevcuttur. Tes-
+pit ettiğimiz örneklerde fiil, her iki lehçede yönelme hâli ekli tamlayıcı almaktadır.
+    ET: Ulugumka, kiçigimke bökmedim. “Büyüklerime, küçüklerime doymadım” (Y
+96, 3)
+     KT: Mirzalar öŋkey semiz mayġa bökken. “Efendilerin hepsi şişman.” (QTS, 108)
+     kal- “kalmak” (Tekin 2014: 146; QÄTS IX, 110)
+   Tespit ettiğimiz örneklerde fiil, Eski Türkçede bulunma hâli ekli tamlayıcıyla kul-
+lanılırken Kazak Türkçesinde ise bulunma ve vasıta hâli ekli tamlayıcıyla kullanıl-
+maktadır.
+                 21. Yüzyılda Eğitim ve Toplum / Education And Society In The 21st Century                  245
+                             Cilt / Volume 10, Sayı / Issue 28, Spring / Bahar 2021
+      Janarbyek ASIMKHAN
+
+
+         ET: Teŋrilig kurtga yurtta kalmiş. “Dindar (bir) yaşlı kadın terk edilmiş kamp ye-
+      rinde (yalnız) kalmış.” (IB 38)
+         KT: Tek Elaman ġana bir top kisimen keyinde qaldı. “Sadece Elaman bir grup
+      adamla geride kaldı.” (QMT, 506)
+         karı- “yaşlanmak” (User 2010: 525; QÄTS IX, 397)
+          Kül İç Çor yazıtında tek örneğine rastladığımız fiil, bulunma hâli ekli tamlayıcı
+      alırken Kazak Türkçesinde ise herhangi bir tamlayıcı almamaktadır.
+         ET: [Kül İç Çor Tonukuk Kap]gan kagan ilinte karıp edgü beŋi körti. “Kül İç Çor
+      Tonukuk Kapgan hakan ülkesinde yaşlanıp iyi gün gördü.” (KÇ 2-3)
+        KT: Qatını jaqsı adamdar tez qartayıp qarımas. “Hatunu iyi olanlar erken yaşlan-
+      maz.” (QÄTS IX, 397)
+         kel- “gelmek” (Tekin 2014: 149; QÄTS VII, 562)
+         Söz konusu fiilin Kazak Türkçesinde “varmak, ulaşmak” anlamı da mevcuttur.
+      Tespit ettiğimiz örneklerde fiil, Eski Türkçede yön gösterme hâli ekli tamlayıcı alırken
+      Kazak Türkçesinde yönelme, ayrılma ve vasıta hâli ekli tamlayıcı almaktadır.
+          ET: Bulupan uyasıŋaru ögire sebinü kelir. “(Avını) bulup yuvasına neşe ve sevinç
+      içinde geliyor.” (IB 31)
+         KT: Oġan hat keldi. “Ona mektup geldi.” (KTTTS, 195)
+         Men astanadan keldim. “Ben başkentten geldim’ (QÄTS III, 417).
+         İyä, joldasımmen keldim, - dedi. ““Evet, eşimle geldim” dedi.” (QMT, 720)
+         kes- “kesmek” (Tekin 2013: 55; QÄTS VII, 679)
+         kes- fiili her iki lehçede de belirtme (ekli) ve vasıta hâli ekli tamlayıcı almaktadır.
+         ET: Altun kurugsakımin kılıçın kesipen... “Altın kursağımı kılıç ile keserek...” (IB 8)
+        KT: Jalma-jan jigittiŋ kiyimin qayşımen kesip jiberdi. “Hemen yiğidin giysilerini
+      makasla kesti.” (QÄTS VII, 679)
+         kir- “girmek, dalmak; sığınmak, tabi olmak” (Tekin 2014: 152; QÄTS VIII, 612)
+          Fiil, Eski Türkçede yönelme hâli ekli tamlayıcıyla kullanılırken Kazak Türkçesinde
+      ise yönelme ve ayrılma hâli ekli tamlayıcıyla kullanılmaktadır.
+         ET: ...ebiŋe kirteçi sen “...evine gireceksin” (BK K 13-14)
+         KT: Aqbala işke kirdi. “Aqbala içeriye girdi.” (QMT, 316)
+        Sırttan aq halattı qız jügirip kirdi. “Dışarıdan beyaz önlüklü kız koşarak girdi.”
+      (QMT, 688)
+         kon- “konmak, yerleşmek” (Tekin 2014: 152; QÄTS X, 21)
+         Fiilin Kazak Türkçesinde“kuş, kelebek, uçak vb. yere inmek” anlamları da bulun-
+      maktadır. Tespit ettiğimiz örneklerde fiil, her iki lehçede yönelme hâli ekli tamlayıcı
+      almaktadır.
+
+246                  21. Yüzyılda Eğitim ve Toplum / Education And Society In The 21st Century
+                                 Cilt / Volume 10, Sayı / Issue 28, Spring / Bahar 2021
+               Köktürk Harfli Yazıtlar ve Kazak Türkçesindeki Ortak Fiiller ve Fiil-Tamlayıcı İlişkileri
+
+
+   ET: Turna kuş tüşnekiŋe konmiş. “Turna kuşu tüneğine konmuş.” (IB 61)
+   KT: Uşaq jerge qondı. “Uçak havalanına indi.” (QÄTS X, 21).
+   kül- “gülmek” (Useev 2011: 687; QÄTS VIII, 461)
+  Sadece Yenisey yazıtlarında örneğine rastladığımız fiil, herhangi bir tamlayıcı al-
+mazken Kazak Türkçesinde yönelme hâli ekli tamlayıcı almaktadır.
+   ET: Ekimiz külür. “İkimiz (de) güleriz.” (Y 33b, 3, 4)
+   KT: Abay bul jawaptarġa küldi. “Abay bu cevaplara güldü...” (AJ II, 343)
+   min- “binmek” (Tekin 2013: 58; QÄTS XI, 428)
+    Tespit ettiğimiz örneklerde fiil, Eski Türkçede gizli belirtme (ekli) hâli ekli tamlayı-
+cı alırken Kazak Türkçesinde yönelme ve belirtme (ekli) hâli ekli tamlayıcı almaktadır.
+    ET: Utru yirde ogrı sokuşup tutupan minmiş. “Yolda karşısına (bir) hırsız çıkmış,
+(atı) tutup (üstüne) binmiş.” (IB 16)
+    KT: Jayaw Musa atasımen quşaqtasıp qoştasıp, atqa tez mindi. “Jayaw Musa dede-
+siyle kucaklaşarak veda edip ata hızlıca bindi.” (QÄTS XI, 428).
+   Jaraw boz attı Aqbilek mindi. “Kıvamında olan ata Aqbilek bindi.” (A, 270)
+   oŋ- “solmak” (Tekin 2013: 59; QÄTS XI, 688)
+   Tespit ettiğimiz örneklerde fiil, her iki lehçede de herhangi bir tamlayıcıya ihtiyaç
+duymamaktadır.
+   ET: Özlük at öŋ yirde arıp oŋup toru kalmış. “(Bir) binek atı çölde yorgunluktan (ve
+susuzluktan) bitkin hâlde kalakalmış” (IB 17)
+   KT: Birdüzeme bir juwġannan keyin oŋıp ketedi. “Basma bir kere yıkandıktan sonra
+rengi solar.” (QÄTS IV, 163).
+   oz- “geçmek; kurtulmak” (Tekin 2014: 161; QÄTS XI, 613)
+    Söz konusu fiilin Kazak Türkçesinde “başarılı olmak” anlamı da mevcuttur. Tespit
+ettiğimiz örneklerde fiil, her iki lehçede ayrılma hâli ekli tamlayıcı almaktadır.
+   ET: Ülügde ozmış tir. “Kötü talihinden kurtulmuş, der.” (IB 41)
+    KT: Qız eliktiŋ laġınday ortqiy jügirip, jigitten edäwır ozıp ketti. “Kız, ceylan yavru-
+su gibi sıçrayarak koştu ve delikanlıyı epeyce geride bıraktı.” (QÄTS XII, 17).
+   ökin-/ökün- “pişman olmak, üzülmek” (Tekin 2014: 162; QÄTS XII, 124)
+    Eski Türkçedeki ökin- fiili Kazak Türkçesinde hiç değişikliğe uğramadan aynı şe-
+kilde korunmuştur. Tespit ettiğimiz örneklerde fiilin her ikisi de yönelme hâli ekli
+tamlayıcıyla kullanılmaktadır.
+   ET: Antag ödke ökünüp Kül Tiginig az erin irtürü ıttımız. “(Kötü şartların hep bir
+araya geldiği) böyle bir zamana üzülüp Kül Tigin’i az (miktarda) er ile ulaştırıp gön-
+derdik.” (KT D 40)
+
+
+                21. Yüzyılda Eğitim ve Toplum / Education And Society In The 21st Century                  247
+                            Cilt / Volume 10, Sayı / Issue 28, Spring / Bahar 2021
+      Janarbyek ASIMKHAN
+
+
+         KT: Ol Aqbalaġa üylene almaġanına ökindi. “O, Aqbala ile evlenemediğine üzül-
+      dü.” (QMT, 22)
+         öl- “ölmek” (Tekin 2014: 162; QÄTS XII, 127)
+         Tespit ettiğimiz örneklerde fiil, Eski Türkçede herhangi bir tamlayıcı almazken
+      Kazak Türkçesinde bulunma ve ayrılma hâli ekli tamlayıcı aldığı görülmektedir.
+        ET: Kanıgı ölmiş, köŋeki toŋmiş. “(Kızın) gözde sevgilisi ölmüş, kovası (da) don-
+      muş.” (IB 57)
+         KT: Sarı ingen sonda öldi. “Sarı dişi deve orada öldü.” (JQ, 12).
+         Arıstan üyiri azıq ustay almay aldandarı aştan öldi. “Aslan sürüsü avlanamayıp
+      yavruları açlıktan öldü.” (QÄTS XVI, 44)
+         örten- “yanmak” (Tekin 2013: 60; QÄTS XII, 208)
+         Tespit ettiğimiz örneklerde fiil, her iki lehçede herhangi bir tamlayıcıya ihtiyaç
+      duymamaktadır.
+         ET: Ulug eb örtenmiş. “Büyük (bir) ev yanmış.” (IB 9)
+         KT: Üy örtenip bara jatır eken. “Ev yanıyormuş.” (QÄTS XII, 208)
+         sık- “bastırmak, sıkıştırmak” (User 2010: 530; QÄTS XIII, 484)
+         Söz konusu fiilin Kazak Türkçesinde “sıkmak, zorlamak” anlamı da bulunmaktadır.
+      Tespit ettiğimiz örneklerde fiil, Eski Türkçede yönelme hâli ekli tamlayıcı alırken Ka-
+      zak Türkçesinde ise belirtme (ekli) ve ayrılma hâli ekli tamlayıcı almaktadır.
+         ET: Seleŋeke sıka sançdım. “Selenge’ye sıkıştırarak mızrakladım.” (ŞU D 4)
+         KT: Eki jigit Elamandı eki jaġınan tırp etkizbey sıġıp ustap turġan-dı. “İki yiğit
+      Elaman’ın iki kolundan kımıldatmadan sıkarak tutuyordu.” (QMT, 219)
+         sın- “kırılmak” (Tekin 2013: 60; QÄTS XIII, 508)
+        Tespit ettiğimiz örneklerde fiil, her iki lehçede herhangi bir tamlayıcya ihtiyaç duy-
+      mamaktadır.
+         ET: Adıgıŋ karnı yarılmış, toŋuzuŋ azıgı sınmiş tir. “Ayının karnı yarılmış, domu-
+      zun azı dişleri kırılmış, der.” (IB 6)
+         KT: Arbanıŋ bir döŋgelegi sınıp qaldı. “Arabanın bir tekerleği kırıldı.” (QÄTS V,
+      316)
+         sök- “sökmek” (Tekin 2014: 166; QÄTS XIII, 307)
+         Fiil, her iki lehçede de belirtme (ekli) hâli ekli tamlayıcıyla kullanılmaktadır.
+         ET: At üze bintüre karıg sökdüm. “(Askerleri) at üzerine bindirip karları söktüm.”
+      (T K 1)
+          KT: Äjem eski kürtesiniŋ qoltıġın sökti. “Ninem eski montunun koltuk altını sök-
+      tü.” (QÄTS XIII, 307)
+
+
+
+248                  21. Yüzyılda Eğitim ve Toplum / Education And Society In The 21st Century
+                                 Cilt / Volume 10, Sayı / Issue 28, Spring / Bahar 2021
+              Köktürk Harfli Yazıtlar ve Kazak Türkçesindeki Ortak Fiiller ve Fiil-Tamlayıcı İlişkileri
+
+
+   suk- “sokmak” (Tekin 2013: 61; QÄTS XIII, 361)
+   Fiil, Kazak Türkçesinde “batırmak, saplamak” anlamında da kulanlımaktadır.
+Tespit ettiğimiz örneklerde fiilin her iki lehçede belirtme (ekli) ve yönelme hâli ekli
+tamlayıcı aldığı görülmektedir.
+   ET: Kidizig subka sukmiş. “(Adamın biri) keçeyi suya sokmuş.” (IB 33)
+   KT: Qolın qaltasına suġıp jibergen. “Elini cebine sokuverdi.” (QMT, 518)
+   tik- “dikmek” (Tekin 2014: 174; QÄTS XIV, 595)
+    Tespit ettiğimiz örneklerde fiil, Eski Türkçede belirtme (ekli veya eksiz) ve vasıta
+hâli ekli tamlayıcılarla kullanılırken Kazak Türkçesinde ise belirtme (ekli veya eksiz)
+ve yönelme hâli ekli tamlayıcılarla kullanılmaktadır.
+   ET: Yüz er kadaşım uyarın üçün yüz erin, elig öküzin tikdi. “Yüz er akrabam değerli
+olduğu için (ebedi taşımı) yüz erle, elli öküzle dikti.” (Y 10, 2)
+    Tört oglum bar üçün beŋkümin t(ikdi) “Dört oğlum olduğu için ebedî taşımı dik-
+tiler” (Y 20, 1)
+   Ben b[eŋgü taş tikdim. “Ben ebedi taş diktim” (KT G 11)
+   KT: Mektep awlasına kiyiz üy tikti. “Okul avlusuna keçe çadır dikti.” (QTS, 671)
+   Jeŋis tuwın Berlinniŋ töbesine tigip kettik. “Zafer bayrağını Berlin’e diktik ve geri
+döndük.” (QÄTS II, 367)
+   tiril- “dirilmek” (Tekin 2014: 175; QÄTS XIV, 632)
+  Tespit ettiğimiz örneklerde fiilin her iki lehçede de herhangi bir tamlayıcı alma-
+maktadır.
+    ET: Yaglıg kamıç bulupan yalgayu tirilmiş. “Yağlı bir kepçe bulup yalamış, (böyle-
+ce) hayatta kalmış.” (IB 13)
+   KT: Jılaġanmen bular endi tirilmeydi. “Ağlamakla bunlar dirilmez” (QMT, 67)
+   toŋ- “donmak” (Tekin 2013: 62; QÄTS XIV, 266)
+   Tespit ettiğimiz örneklerde fiil, her iki lehçede herhangi bir tamlayıcıya ihtiyaç
+duymamaktadır.
+  ET: Kanıgı ölmiş, köŋeki toŋmiş. “(Kızın) gözde sevgilisi ölmüş, kovası (da) don-
+muş.” (IB 57)
+   KT: Biz qattı toŋıp qalıppız “Biz çok üşümüşüz.” (QÄTS XIV, 173)
+   tök- “dökmek” (User 2010: 533; QÄTS XIV, 331)
+    Tespit ettiğimiz örneklerde fiil, Eski Türkçede yönelme ve vasıta hâli ekli tamlayı-
+cıyla kullanılırken Kazak Türkçesinde ise belirtme (ekli) ve yönelme hâli ekli tamlayı-
+cıyla kullanılmaktadır.
+   ET: ...mış boz ok başın akıza uçuz kölke atlıgın töke barmış. “...mış Boz-Ok liderine
+hücum ederek atlısıyla (onu) Uçuz Göl’e döküvermiş. (Tes K 3)
+
+               21. Yüzyılda Eğitim ve Toplum / Education And Society In The 21st Century                  249
+                           Cilt / Volume 10, Sayı / Issue 28, Spring / Bahar 2021
+      Janarbyek ASIMKHAN
+
+
+         KT: Esbiyke men qızı Ulbiyke üyge kirip, irkilgen suwdı baqıraştap quyıp, şelektep
+      dalaġa tökti. “Esbiyke ve kızı Ulbiyke eve girdiler ve biriken suyu kepçe ile kovaya
+      doldurarak dışarı döktü.” (QÄTS XVI, 87)
+            tur- “durmak, dikilmek, kalkmak” (Tekin 2013: 63; QÄTS XIV, 428)
+         Tespit ettiğimiz örneklerde fiilin Eski Türkçede herhangi bir tamlayıcı almadığı,
+      Kazak Türkçesinde ise bulunma hâli ekli tamlayıcı aldığı görülmektedir.
+            ET: Kamşayu umatın turur tir. “(Öküzler) kımıldayamadan duruyor, der.” (IB 25)
+            KT: At qorada tur. “At ahırda duruyor.” (KTTTS, 521)
+            tut- “tutmak, yakalamak” (Useev 2011: 691; QÄTS XIV, 443)
+          Tespit ettiğimiz örneklerde fiil, Eski Türkçede belirtme (ekli) ve vasıta hâli ekli
+      tamlayıcılarla kullanılırken Kazak Türkçesinde belirtme (ekli), vasıta ve ayrılma hâli
+      ekli tamlayıcılarla kullanılmaktadır.
+            ET: Tagdaki kara adıgıg eligin tut(t)um. “Dağdaki kara ayıları elle tuttum.” (Y 68,
+      20)
+         KT: Kök sändik köylektiŋ etegin käriqız tiken tutıp qalġan eken. “Süslü mavi elbise-
+      nin eteğine yapışkan diken yapışmış.” (QÄTS XIV, 443)
+         ...sol qolımen erdiŋ artqı qasınan tuttı. “...sol eliyle eyerin arka kaşından tuttu.”
+      (QÄTS XIV, 443)
+            ur- “1. vurmak 2. taşa yazmak” (Tekin 2014: 181; QÄTS XIV, 733)
+         Tespit ettiğimiz örneklerde fiil, Eski Türkçede belirtme (ekli), vasıta ve yönelme
+      hâli ekli tamlayıcılarla kullanılırken Kazak Türkçesinde ise belirtme (ekli), vasıta ve
+      ayrılma hâli ekli tamlayıcılarla kullanılmaktadır.
+          ET: Bir erig okun urtı, eki erig udşuru sançdı. “Bir eri okla vurdu, iki eri (de) kova-
+      layıp mızrakladı.” (KT D 36)
+            Kugu kuş kanatıŋa urup... “Kuğu kuşu (onu) kanatlarına vurup...” (IB 35)
+          KT: Bir oq Elamandı sol jaq ıyıqtan urdı. “Elaman’ın sol omuzuna bir kurşun isabet
+      etti.” (QMT, 505)
+         Şegenı zil balġamen urıp toytardı. “Çiviyi ağır bir çekiçle vurarak eğdi.” (QÄTS
+      XIV, 212)
+            ürk- “ürkmek, korkmak” (Tekin 2013: 64; QÄTS XV, 78)
+         Eski Türkçede “ürkmek, korkmak” anlamındaki ürk- fiili Kazak Türkçesinde hiç
+      değişikliğe uğramadan aynı şekilde korunmuştur. Tespit ettiğimiz örneklerde fiil,
+      Eski Türkçede herhangi bir tamlayıcı almazken Kazak Türkçesinde ayrılma hâli ekli
+      tamlayıcı almaktadır.
+         ET: Bay er konyı ürküpen barmış. “Zengin (bir) adamın koyunu ürküp kaçmış.”
+      (IB 27)
+         KT: Samarhannıŋ astındaġı tarpaŋdaw at äldeneden ürkip jalt berdi. “Samarhan’ın
+      bindiği huysuz at, bir şeyden ürkerek sıçradı.” (QÄTS XIII, 747)
+250                     21. Yüzyılda Eğitim ve Toplum / Education And Society In The 21st Century
+                                    Cilt / Volume 10, Sayı / Issue 28, Spring / Bahar 2021
+               Köktürk Harfli Yazıtlar ve Kazak Türkçesindeki Ortak Fiiller ve Fiil-Tamlayıcı İlişkileri
+
+
+   b.   Ses Değişikliğine Uğrayıp Anlam Bakımından Korunan Fiiller
+   abla- “avlamak” (User 2010: 517)
+    Eski Türkçedeki abla- fiili Kazak Türkçesinde awla- biçiminde olup aynı anlamı
+taşımaktadır (QÄTS II, 161). Tespit ettiğimiz örneklerde fiilin her ikisi de belirtme
+(eksiz) hâli ekli tamlayıcıyla kullanılmaktadır.
+   ET: Ab ablasar, r2ml2I teg erti. “av avlasa r2ml2I gibi idi.” (KÇ 9)
+   KT: Aŋ awlap şıġıp edim. “Av avlamak için çıkmıştım.” (QMT, 22)
+   aç- “açmak” (Tekin 2013: 49)
+   Yine Eski Türkçedeki aç- fiili Kazak Türkçesinde aş- şeklinde olup aynı anlamda
+kullanılmaktadır (QÄTS XV, 176). Tespit ettiğimiz örneklerde fiilin her ikisi de belirt-
+me (ekli veya eksiz) ve vasıta hâli ekli tamlayıcı almaktadır.
+   ET: Talım urı yarın aça yasıçin yalım kayag yara urupan yalŋusun yorıyor tir. “Ce-
+sur bir genç, omuzları açık, okunun ucu ile yalçın kayaları yara yara yapayalnız yürü-
+yor, der.” (IB 40)
+   ...[usı]n süŋügün açdımız. “...[uykularını] mızraklarımızla açtık.” (T K 4)
+   KT: Urqiya esik aştı. “Urqiya kapıyı açtı.” (A, 201)
+   Abaqtı esigin öz qolımen aşıp... “Ceza evi kapısını kendi elleriyle açıp...” (AJ II, 200)
+   adır- “ayırmak, bölmek” (Useev 2011: 679)
+    adır- fiili Kazak Türkçesinde ayır- biçiminde olup aynı anlamı taşımaktadır (QÄTS
+I, 194). Söz konusu fiil, Eski Türkçede belirtme (ekli) hâli ekli tamlayıcıyla kullanılır-
+ken Kazak Türkçesinde ise belirtme (ekli) ve ayrılma hâli ekli tamlayıcıyla kullanıl-
+maktadır.
+   ET: Tört iniligü ertimiz, bizni erklig adırtı, ayıta “Biz dört kardeş idik, bizi Erklig
+ayırdı, ne yazık” (Y 28, 8)
+     KT: Onıŋ üstine, Oralbaydan Kerimbalanı ayırıp, Qarakesekke jöneltetin boldı.
+“Üstelik Oralbay’dan Kerimbala’yı ayırarak Qaraköske’ye gönderme kararı aldı.” (AJ
+II, 112)
+   adrıl-/adırıl- “1. ayrılmak 2. ölmek, vefat etmek.” (Useev 2011: 697)
+    adrıl-/adırıl- fiili de Kazak Türkçesinde ayırıl- şeklinde olup birinci anlamını koru-
+makla birlikte “yitirmek, kaybetmek” anlamında da kullanılmaktadır (QÄTS I, 200).
+Fiil, Eski Türkçede bulunma ve ayrılma hâli ekli tamlayıcıya ihtiyaç duyarken Kazak
+Türkçesinde ise ayrılma hâli ekli tamlayıcıya ihtiyaç duymaktadır.
+   ET: Elig yaşıma tatabı bodun kıtanda adrıltı. “Elli yaşımda Tatabı halkı Kıtaylar-
+dan ayrıldı.” (BK G, 7)
+   Üç yetmiş yaşımka adırıltım “Altmış üç yaşımda vefat ettim” (Y 3, 4)
+   KT: Jänibek pen Kerey eŋ janı aşır adamınan ayırıladı. “Jänibek ile Kerey en yakın
+adamını kaybeder.” (Kö. I, 102)
+
+                21. Yüzyılda Eğitim ve Toplum / Education And Society In The 21st Century                  251
+                            Cilt / Volume 10, Sayı / Issue 28, Spring / Bahar 2021
+      Janarbyek ASIMKHAN
+
+
+         aş- “aşmak, geçmek” (Tekin 2010: 123)
+               Fiil, Kazak Türkçesinde as- şeklinde olup aynı anlamı taşımaktadır QÄTS I,
+      697). Tespit ettiğimiz örneklerde fiil, Eski Tükçede belirtme (ekli) hâli ekli tamlayıcıyla
+      kullanılırken Kazak Türkçesinde ise ayrılma hâli ekli tamlayıcyla kullanılmaktadır.
+         ET: Ol yılka türgiş tapa altun yışıg [aş]a ertiş ügüzüg keçe yorı[dım. “O yıl Türgişlere
+      doğru Altay dağlarını aşarak (ve) İrtiş ırmağını geçerek yürüdüm” (BK D, 27)
+         KT: Tawdan asuw oŋayġa tüspedi. “Dağı geçmek kolay olmadı.” (QQ, 164)
+         başla- “başlamak; başa geçmek, yönetmek” (Useev 2011: 681)
+          Eski Türkçedeki başla- fiili Kazak Türkçesinde basta- şeklinde olup aynı anlamda
+      varlığını sürdürmektedir (QÄTS III, 67). Tespit ettiğimiz örneklerde fiilin her ikisi de
+      belirtme (ekli veya eksiz) hâli ekli tamlayıcı almaktadır.
+         ET: El tut[t]um, bodun başladım. “Devleti elimde tuttum, halkı yönettim.” (Y 45, 4)
+          Otuz erig başlayu tutugka bardım. “Otuz erin başlarına geçip savaşa girdim.” (Y
+      32, 9)
+         KT: El bastaytın qaydasıŋ kösemderim? “Halka öncülük edecek önderlerim
+      neredesiniz?” (MDŞ, 106)
+         Jer qayısqan qoldı bastap, uşı-qıyırı joq keŋ dalaġa tereŋdep kirip keledi. “Kalabalık
+      askere önderlik ederek uçsuz bucaksız bozkıra doğru ilerliyor.” (QMT, 633)
+         biç- “biçmek, kesmek” (Tekin 2013: 51)
+          biç- fiili Kazak Türkçesinde piş- şeklinde olup aynı anlamı korumakla birlikte “bir
+      şeyi tasarlamak, planlamak” anlamında da kullanılmaktadır (QÄTS VII, 708). Tespit
+      ettiğimiz örneklerde fiil, Eski Türkçede belirtme (ekli) hâli ekli tamlayıcıyla kulanı-
+      lırken Kazak Türkçesinde ise belirtme (ekli veya eksiz), vasıta ve yönelme hâli ekli
+      tamlayıcılarla kullanılmaktadır.
+         ET: Bunça bodun saçın kuulkakin [b]içdi. “Bunca halk (cenaze töreninde) saçlarını
+      kulaklarını kesti.” (IB 37)
+        KT: ...aq qayşımen quwırşaġına köylek pişedi. “...beyaz makasla oyuncak bebeğine
+      gömlek biçer.” (A, 192)
+          Birew onda oqiymın, birew munda oqiymın dep josparların qurıp, jobaların pişip
+      jür. “Biri orada, biri burada okuyacağım diyerek planlarını yapıyorlar.” (QÄTS XII,
+      428).
+         bin- “(ata) binmek” (Tekin 2010: 130)
+          Fiil, Kazak Türkçesinde min- şeklinde olup aynı anlamda geçmektedir (QÄTS XI,
+      428). Tespit ettiğimiz örneklerde fiilin Eski Türkçede belirtme (ekli veya eksiz) hâli
+      ekli tamlayıcıyla, Kazak Türkçesinde ise belitme ve yönelme hâli ekli tamlayıcıyla kul-
+      lanımına rastlanmaktadır.
+         ET: Ekinti Işbara Yamtar boz atıg binip tegdi. “İkinci Işbara Yamtar`ın boz atına
+      binip hücum etti.” (KT D, 33)
+
+252                   21. Yüzyılda Eğitim ve Toplum / Education And Society In The 21st Century
+                                  Cilt / Volume 10, Sayı / Issue 28, Spring / Bahar 2021
+              Köktürk Harfli Yazıtlar ve Kazak Türkçesindeki Ortak Fiiller ve Fiil-Tamlayıcı İlişkileri
+
+
+    Kül Tigin başgu boz at binip tegdi. “Kül Tigin alnı akıtmalı boz ata biniphücüm
+etti.” (KT D, 37)
+   KT: Elaman atına qarġıp mindi. “Elaman atına zıplayarak bindi.” (QMT, 25)
+   Jaraw boz attı Aqbilek mindi. “Kıvamında olan ata Aqbilek bindi.” (A, 270)
+   biş- “pişmek, olgunlaşmak” (Tekin 2013: 51)
+   Eski Türkçede geçen biş- fiili Kazak Türkçesinde pis- şeklinde olup aynı anlamda
+kullanılmaktadır (QÄTS XII, 424). Tespit ettiğimiz örneklerde fiilin her ikisi de her-
+hangi bir tamlayıcıya ihtiyaç duymamaktadır.
+   ET: Tarıg bişdi; yaş ot ündi. “Ekinler olgunlaştı, taze otlar çıktı.” (IB 53)
+   KT: Et te pisip qalġan eken. “Et de pişmiş.” (QTS, 534).
+   botula- “(deve) doğurmak, yavrulamak” (Tekin 2013: 52)
+   Eski Türkçedeki botula- fiili Kazak Türkçesinde botala- biçiminde olup aynı an-
+lamda kullanılmaktadır (QÄTS III, 513). Tespit ettiğimiz örneklerde fiilin her ikisi de
+herhangi bir tamlayıcıya ihtiyaç duymamaktadır.
+   ET: Ürüŋ iŋgeni botulamış. “Beyaz dişi devesi yavurlamış.” (IB 5)
+   KT: Bıyıl üş nar botalaptı. “Bu sene üç hecin devesi yavrulamış. (U 241)
+   boz- “1. bozmak 2. tahrip etmek, yıkmak 3. bozguna uğratmak” (User 2011: 521)
+   Yine Eski Türkçedeki boz- fiili Kazak Türkçesinde buz- şeklinde olup birinci ve
+ikinci anlamı korunmuştur (QÄTS III, 633). Tespit ettiğimiz örneklerde fiilin her ikisi
+de belirtme (ekli) hâli ekli tamlayıcı almaktadır.
+   ET: Ebin barkın bozdum. “Evini barkını bozdum.” (BK D 34)
+   KT: Bizdiŋ äsker qızıldardıŋ qorġanıs şebin buzdı. “Ordumuz Kızılların savunma
+hattını kırdı.” (QMT, 764)
+   buzagula- “buzağılamak, sığır yavrulamak” (Tekin 2013: 52)
+   Eski Türkçedeki buzagula- fiili Kazak Türkçesinde buzavla- şeklinde olup aynı an-
+lamı taşımaktadır (QÄTS III, 640). Tespit ettiğimiz örneklerde fiilin her ikisi de her-
+hangi bir tamlayıcıya ihtiyaç duymamaktadır.
+   ET: Ürüŋ esri iŋek buzagulaçı bolmış. “Ak benekli bir inek doğurmak üzere imiş.”
+(IB 41)
+   KT: Sıyır buzawlap jatqan kez. “İnekler buzağıladığı dönem” (QTS, 114)
+   egir- “kuşatmak, çevirmek” (Tekin 2014: 137)
+   Eski Türkçedeki egir- fiili Kazak Türkçesinde iyir- biçiminde olup aynı anlamda
+kullanılmaktadır (QÄTS VII, 402). Tespit ettiğimiz örneklerde fiilin her ikisi de belirt-
+me (ekli) ve bulunma hâli ekli tamlayıcı almaktadır.
+    ET: Anta toŋra yılpagutı bir uguşug toŋa tigin yog[ınta] egire tokıdım. “Orada Tong-
+ra (boyu) alplerinden bir grubu Tonga Tigin’in cenaze töreninde kuşatarak dövdüm.”
+(BK D 31)
+                21. Yüzyılda Eğitim ve Toplum / Education And Society In The 21st Century                 253
+                            Cilt / Volume 10, Sayı / Issue 28, Spring / Bahar 2021
+      Janarbyek ASIMKHAN
+
+
+        KT: Älden uwaqıtta jılqını Maydamtal qoynawına äkelip iyirdi. “Az sonra yılkıyı
+      Maydamtal’ın rüzgârdan fazla etkilenmeyen kuytu yerine getirerek sardı.” (QTS, 287)
+         eşit-/eşid- “işitmek” (Tekin 2013: 53)
+          eşit-/eşid- fiili Kazak Türkçesinde esit- biçiminde olup aynı anlamda mevcuttur
+      (QÄTS I, 677). Tespit ettiğimiz örneklerde fiil, Eski Türkçede herhangi bir tamlayıcıya
+      ihtiyaç duymazken Kazak Türkçesinde belitme hâli ekli tamlayıcıya ihtiyaç duymak-
+      tadır.
+         ET: Teŋri eşidti “Tanrı işitti” (IB 54)
+         KT: Şayqınıŋ arız berip, qızmetinen bosaġanın esitti. “Şayqı’nın istifa dilekçesini
+      vererek işinden ayrıldığını duydu.” (QÄTS I, 677).
+         iç- “içmek, yudumlamak” (Useev 2011: 684)
+         Eski Türkçede geçen iç- fiili Kazak Türkçesinde iş- şeklinde olup aynı anlamda
+      kullanılmaktadır (QÄTS XV, 66). Tespit ettiğimiz örneklerde fiilin her ikisi de belirt-
+      me (ekli ve eksiz) hâli ekli tamlayıcı almaktadır.
+         ET: Altun asıg içiŋ. “Altın aşı yudumlayın.” (Y 82)
+         sub içipen, yaş yipen ölümde ozmiş “su içip taze (ot) yiyerek ölümden kurtulmuş”
+      (IB 17)
+          KT: Jumabekter ündemey-tündemey şayların işti. “Jumabekler sessizce çaylarını
+      içti.” (QÄTS XV, 66)
+         Al men ömiri muzday suw işip körgem joq. “Ben ise hayatımda buz gibi su içme-
+      dim.” (QMT, 802)
+         kabış- “kavuşmak, buluşmak, görüşmek” (Useev 2011: 685)
+          Söz konusu fiil, Kazak Türkçesinde qawıs- biçiminde olup aynı anlamda geçmek-
+      tedir (QÄTS IX, 509). Tespit ettiğimiz örneklerde fiilin Eski Türkçede bulunma hâli
+      ekli tamlayıcıyla, Kazak Türkçesinde ise vasıta hâli ekli tamlayıcıyla kullanıldığı gö-
+      rülmektedir.
+         ET: Kör budkal ıda kabışalım timiş. ““Bak, Budkal ormanda (Boduklı?’da) buluşa-
+      lım” demiş.” (ŞU D 10-11)
+         KT: Tuwıstarımen qawıstı. “Akrabalarıyla kavuştu.” (KTTTS, 274).
+         kaç- “kaçmak” (User 2010: 524)
+          kaç- fiili Kazak Türkçesinde qaş- biçiminde olup aynı anlamda kullanılmaktadır
+      (QÄTS IX, 517). Tespit ettiğimiz örneklerde fiil, Eki Türkçede herhangi bir tamlayıcı
+      duymazken Kazak Türkçesinde ayrılma, bulunma ve yönelme hâli ekli tamlayıcılara
+      ihtiyaç duymaktadır.
+         ET: [Qara]sı[n] [yıgd]ım [be]gi [kaç]dı. “Halkını yendim, beyi kaçtı.” (O 9)
+         KT: Men Sadıq degen baydan qaşıp Kereküwge keldim. “Ben Sadıq adındaki ze-
+      nginden kaçarak Kereküw’e geldim.” (ŞJ III, 126).
+
+
+254                   21. Yüzyılda Eğitim ve Toplum / Education And Society In The 21st Century
+                                  Cilt / Volume 10, Sayı / Issue 28, Spring / Bahar 2021
+              Köktürk Harfli Yazıtlar ve Kazak Türkçesindeki Ortak Fiiller ve Fiil-Tamlayıcı İlişkileri
+
+
+   Patşa taqtan qular aldında bir top kisi qaştı. “Padışah tahtan indirilmeden önce bir
+grup adam kaçtı.” (QMT, 537)
+   Onan Altayġa qaştım. “Ondan sonra Altay’a kaçtım.” (ŞJ III, 318).
+   keç- “geçmek, (ırmak vb.) aşmak” (User 2010: 525)
+   Fiil, Kazak Türkçesinde keş- şeklinde olup aynı anlamda geçmektedir (QÄTS VII,
+742). Tespit ettiğimiz örneklerde fiilin Eski Türkçede belirtme (ekli veya eksiz) ve bu-
+lunma hâli ekli tamlayıcıyla, Kazak Türkçesinde ise belirtme (ekli veya eksiz) ve vasıta
+hâli ekli tamlayıcıyla kullanıldığı görülmektedir.
+   ET: Kurıgaru Yinçü ög[üz] keçe Temir Kapıgka tegi süledim. “Batıda İnci (Sır Derya)
+ırmağı(nı) geçerek Demir Kapı’ya kadar ordu sevk ettim.” (KT G 3-4)
+   Ertiş ögüzüg keçe keltimiz. “Ertiş ırmağını geçerek geldik.” (T B 2-3)
+   [...kök] öŋüg yoguru sü yorıp tünli künli yiti ödüşke subsuz keçdim. “...(Gök) Öng
+(Nehrinin yatağı)nı (adetâ) yoğurarak ordu (ile) yürüyüp geceli gündüzlü yedi vakitte
+susuz (araziyi) geçtim.” (BK GD).
+   KT: Jolawşı küreŋ suwdı keşip ötti. “Yolcu kahverengi akarsudan geçti.” (QÄTS VII,
+742).
+   Etigimen suw keşti. “Zor günler geçirdi.” (QÄTS V, 478).
+   kod-/kot- “koymak, bırakmak” (User 2010: 527)
+    kod-/kot- fiili Kazak Türkçesinde qoy- şeklinde olup aynı anlamda mevcuttur
+(QÄTS IX, 665-66). Tespit ettiğimiz örneklerde fiil, Eski Türkçede belirtme (ekli) ve
+bulunma hâli ekli tamlayıcıyla kullanılırken Kazak Türkçesi bulunma ve yönelme hâli
+ekli tamlayıcıyla kullanılmaktadır.
+   ET: Ebimin ersegünte yula költe kottım. “Karargâhımı Ersegün’deki Yula Göl’de
+bıraktım.” (ŞU G 6)
+   KT: Ayrandı äkelip aldına qoydı. “Yoğurtu getirip önüne koydu.” (QTS, 399)
+   kork- “korkmak” (User 2010: 527)
+    kork- fiili Kazak Türkçesinde qorıq- biçiminde olup aynı anlamı taşımaktadır
+(QÄTS X, 109). Tespit ettiğimiz örneklerde fiil, Eski Türkçede herhangi bir tamlayıcıya
+ihtiyaç duymazken Kazak Türkçesinde ayrılma hâli ekli tamlayıcıya ihtiyaç duymak-
+tadır.
+   ET: Üküş teyin neke korkur biz? “(Düşman) çok diye niye korkuyoruz?” (T B 4)
+   KT: Men ölümnen qorıqpaymın. “Ölümden korkmam.” (QÄTS X, 109)
+   kötür- “kaldırmak, yükseltmek” (Tekin 2014: 154)
+    kötür- fiili de Kazak Türkçesinde köter- biçiminde olup aynı anlamda kullanıl-
+maktadır (QÄTS VIII, 378). Tespit ettiğimiz örneklerde fiil, Eski Türkçede belirtme
+(ekli) ve yön gösterme hâli ekli tamlayıcı alırken Kazak Türkçesinde ise belirtme (ekli)
+ve yönelme hâli ekli tamlayıcı almaktadır.
+
+
+               21. Yüzyılda Eğitim ve Toplum / Education And Society In The 21st Century                  255
+                           Cilt / Volume 10, Sayı / Issue 28, Spring / Bahar 2021
+      Janarbyek ASIMKHAN
+
+
+         ET: kaŋım İlteriş Kaganıg ögüm İlbilge Katunug teŋri töpüsinte tutup yügerü kötür-
+      miş “babam İlteriş Hakanı (ve) annem İlbilge Hatunu göğün tepesinden tutup (daha)
+      yükseğe kaldırmışlar” (KT D 11)
+            KT: Şal qolın kökke köterip... “Yaşlı adam elini yukarıya kaldırıp...” (ŞJ III, 350)
+            kulunla- “kulunlamak, (kısrak) yavurlamak” (Tekin 2013: 57)
+         Eski Türkçedeki kulunla- fiili Kazak Türkçesinde qulında- şeklinde olup aynı an-
+      lamda korunmuştur (QÄTS X, 318). Tespit ettiğimiz örneklerde fiilin her ikisi de her-
+      hangi bir tamlayıcıya ihtiyaç duymamaktadır.
+            ET: Ak bisi kulunlamiş. “Ak kısrağı yavrulamış.” (IB 5)
+            KT: Biyeler qulındap jatır. “Kısraklar yavruluyorlar. (QTS, 421).
+            küzed- “korumak, kollamak, gözetmek” (Tekin 2014: 157)
+          Eski Türkçede geçen küzed- fiili Kazak Türkçesinde küzet- şeklinde olup aynı an-
+      lamı taşımakla birlikte “hastayı gözetim altında tutmak, hastaya refakat etmek” an-
+      lamında da kullanılmaktadır (QÄTS VIII, 431). Tespit ettiğimiz örneklerde fiilin her
+      ikisi de belirtme (ekli) hâli ekli tamlayıcı almaktadır.
+        ET: ...inim Kül Tiginig küzedü olurt[um]. “...kardeşim Kül Tigin’i gözeterek, hü-
+      kümdar (olarak) oturdum.” (KT B)
+         KT: Esimbek şarşasa da tünimen Rabiġanı küzetti. “Esimbek yorulmasına rağmen
+      bütün gece Rabiġa’ya refakat etti.” (QÄTS VIII, 431)
+            möŋre- “böğürmek” (Tekin 2013: 58)
+         Yine Eski Türkçede geçen möŋre- fiili Kazak Türkçesinde möŋire- şeklinde olup
+      aynı anlamda korunmuştur (QÄTS XI, 311). Tespit ettiğimiz örneklerde fiilin her ikisi
+      de herhangi bir tamlayıcıya ihtiyaç duymamaktadır.
+         ET: Bed[ük] tiz üze ünüpen möŋreyür men. “Yüksek dizlerimin üstüne çıkarak bö-
+      ğürürüm.” (IB 60)
+            KT: Siyır möŋirep, buzaw jamırap jattı. “İnekler ve buzağılar böğürüyordu.” (JQ,
+      71)
+            olur- “1. oturmak 2. tahta çıkmak 3. yerleşmek, ikamet etmek” (User 2010: 528)
+          olur- fiili Kazak Türkçesinde otır- şeklinde olup aynı anlamları taşımakla birlikte
+      “1. mec. hapis yatmak 2. mec. evde kalmak” gibi mecaz anlamlarda da kullanılmak-
+      tadır (QÄTS XII, 53). Tespit ettiğimiz örneklerde fiil, Eski Türkçede bulunma hâli
+      ekli tamlayıcı alırken Kazak Türkçesinde ise yönelme ve bulunma hâli ekli tamlayıcı
+      almaktadır.
+            ET: Altun yışda olurtumuz. “Altay dağlarında oturduk.” (T K 8)
+         KT: Eseney üyge kirip, öz ornına otırdı. “Eseney eve girdi ve kendi yerine oturdu.”
+      (U, 142)
+
+
+
+
+256                     21. Yüzyılda Eğitim ve Toplum / Education And Society In The 21st Century
+                                    Cilt / Volume 10, Sayı / Issue 28, Spring / Bahar 2021
+              Köktürk Harfli Yazıtlar ve Kazak Türkçesindeki Ortak Fiiller ve Fiil-Tamlayıcı İlişkileri
+
+
+    Aqmolla qaşqın soldat retinde ayıptalıp, 1865-1871 jıldarı Troitskide otırdı. “Aqmol-
+la kaçak bir asker olmakla suçlandı ve 1865-1871 yılları arasında Troitsk Cezaevi’nde
+yattı.” (QÄTS XII, 53)
+   ölür- “öldürmek” (Tekin 2014: 163)
+   Fiil, Kazak Türkçesinde öltir- biçiminde olup aynı anlamda korunmuştur (QÄTS
+XII, 137). Tespit ettiğimiz örneklerde fiilin Eski Türkçede belirtme (ekli veya eksiz) ve
+bulunma hâli ekli tamlayıcıyla, Kazak Türkçesinde ise belirtme (ekli) ve vasıta hâli ekli
+tamlayıcıyla kullanıldığı görülmektedir.
+   ET: Kırkız kaganın ölürtümiz ilin altımız. “Kırgız Hakanını öldürdük, ülkesini al-
+dık.” (KT D 36)
+   Töŋker tagda tegip tokıdım üç tümen süg [ölürt]üm. “Tönger dağında hücum edip
+vuruştum, otuz bin askeri öldürdüm.” (BK G8)
+   ...yagıda otuz erig ölürtim “savaşta otuz asker öldürdüm” (Y 49, 3)
+   KT: Teŋiz jılandarınıŋ bäri jemin uwımen öltirip, balıqtardı jane basqa da teŋiz
+januwarların qorek etedi. “Deniz yılanlarının tümü avlarını zehiriyle öldürür, balık ve
+diğer deniz hayvanlarıyla beslenirler.” (QÄTS XVI, 567)
+   ötün- “rica etmek, yalvarmak” (Tekin 2013: 60)
+    ötün- fiili Kazak Türkçesinde ötin- şeklinde olup aynı anlamda geçmektedir (QÄTS
+XII, 260). Tespit ettiğimiz örneklerde fiil, Eski Türkçede yönelme ve yön gösterme hâli
+ekli tamlayıcıyla kullanılırken Kazak Türkçesinde ise belirtme (ekli)ve ayrılma hâli
+ekli tamlayıcıyla kullanılmaktadır.
+   ET: Anta ötrü kaganıma ötüntüm. “Ondan sonra kağanıma ricada bulundum.” (T
+G 5)
+   Kul sabı begiŋerü ötünür “Kölenin sözü beyinden ricadır” (IB 54)
+   KT: Jeksen tamaġın bir-eki qırındı da, suw äperüwin ötindi. “Jeksen bir iki kere
+boğazını kazıdı ve su istedi.” (QÄTS II, 468)
+    Senderden ötinerim, bir-birimizdiŋ aldımızda azdı-köpti kinämiz bolsa keşireyik.
+“Sizden ricam, gelin birbirimizin varsa kusurlarını affedelim.” (QÄTS XII, 260)
+   saç- “saçmak” (Tekin 2013: 60)
+    Fiil, Kazak Türkçesinde şaş- şeklinde olup aynı anlamı taşımaktadır (QÄTS XV,
+297). Tespit ettiğimiz örneklerde fiilin Eski Türkçede belirtme (ekli) hâli ekli tamlayı-
+cıyla, Kazak Türkçesinde ise belirtme (ekli veya eksiz), yönelme ve bulunma hâli ekli
+tamlayıcılarla kullanıldığı görülmektedir.
+   ET: Titir bugra men. Ürüŋ köpükümin saçar men. “Dişi deve(li) bir erkek deveyim.
+Ak köpüklerimi (ağzımdan öyle) saçarım.” (IB 20)
+   KT: Tawıqqa jem şaştı. “Tavuklara yem attı.” (KTTTS, 594)
+    Tolıq ay bultsız aspanda aq jarqın nurın şaştı. “Dolunay, bulutsuz gökyüzünde par-
+lak ışığını saçtı.” (AJ III, 204)
+
+                21. Yüzyılda Eğitim ve Toplum / Education And Society In The 21st Century                 257
+                            Cilt / Volume 10, Sayı / Issue 28, Spring / Bahar 2021
+      Janarbyek ASIMKHAN
+
+
+         sanç- “batırmak, saplamak” (User 2010: 530)
+         sanç- fiili de Kazak Türkçesinde şanşı- biçiminde olup aynı anlamda korunmuştur
+      (QÄTS XV, 241). Tespit ettiğimiz örneklerde fiil, Eski Türkçede belirtme (ekli) hâli ekli
+      tamlayıcıyla kullanılırken Kazak Türkçesinde ise belirtme (eksiz veya ekli) ve yönelme
+      hâli ekli tamlayıcılarla kullanılmaktadır.
+         ET: Süsin sançdımızm “Askerlerini mızrakladık” (KT K 6)
+         KT: Barmaġıma iyne şanşıp aldım. “Parmağıma iğne batırdım.” (KTTTS, 589)
+         Jambıda tülki aŋdıġan tazıday Ġalya bölmege kirip keldi de, üstel üstindegi tarelka-
+      daġı maylı şujıqtı şanışqıġa şanşıp aldı. “Ġalya, gizlice odaya girdi ve masanın üzerin-
+      deki tabakta bulunan yağlı sucuğa çatalı batırdı.” (QÄTS VI, 717)
+         sebin- “sevinmek” (Tekin 2013: 60)
+         Eski Türkçedeki sebin- fiili Kazak Türkçesinde süyin- biçiminde olup aynı anlam-
+      da korunmuştur (QÄTS XIII, 412). Tespit ettiğimiz örneklerde fiil, Eski Türkçede yön
+      gösterme hâli ekli tamlayıcıyla kullanılırken Kazak Türkçesinde yönelme hâli ekli
+      tamlayıcıyla kullanılmaktadır.
+          ET: Bulupan uyasıŋaru ögire sebinü kelir tir. “(Avını) bulup yuvasına neşe ve sevinç
+      içinde geliyor, der.” (IB 30)
+         KT: Qabekeŋ köz qıyıġımen bärin baqılap, qaġılez därigerge qattı süyingendey. “Qa-
+      bekeŋ her şeyi göz ucuyla izleyerek çevik doktora çok hayran olmuş gibi.” (QÄTS XIII,
+      413)
+         sıgta- “yas tutmak, ağlamak” (Tekin 2014: 166)
+         Yine Eski Türkçedeki sıgta- fiili Kazak Türkçesinde sıqta- şeklinde olup “ağlamak”
+      anlamı korunmuştur (QÄTS XIII, 488). Tespit ettiğimiz örneklerde fiilin her ikisi de
+      herhangi bir tamlayıcıya ihtiyaç duymamaktadır.
+         ET: ...bunça bodun kelipen sıgtamış “... bunca halklar gelerek ağlamışlar” (KT D 4)
+         KT: Köp bolsa, Hadişa jılar, sıqtar. “En fazla, Hadişa ağlayıp göz yaşın döker.”
+      (QTS, 596)
+         sokuş- “rastlamak, karşılaşmak, çarpışmak” (Tekin 2013: 60)
+          sokuş- fiili Kazak Türkçesinde soġıs- biçiminde olup “çarpışmak” anlamını taşı-
+      makla birlikte “savaşmak, çatışmak; tokuşmak” anlamlarında da kullanılmaktadır
+      (QÄTS XIII, 228). Tespit ettiğimiz örneklerde fiil, Eski Türkçede bulunma, yönelme ve
+      vasıta hâli ekli tamlayıcılara ihtiyaç duyarken alırken Kazak Türkçesinde ise bulunma
+      ve vasıta hâli ekli tamlayıcılara ihtiyaç duymaktadır.
+         ET: Ortu yirde amgaka sokuşmiş. “Orta yerde bir yaban keçisine rastlamış.” (IB 49)
+         Utru eki yalıg kişi oglın sokuşmiş; kişi korkmiş. “(Bu yol tanrısı) güler yüzlü iki
+      insanoğluna rastlamış” (IB 2)
+         KT: Mädinege köşkennen eki jıldan soŋ, yaġıni 624 jılı Badır degen jerde musılman-
+      dar jasaġınan birneşe ese ülken müşrikter qolmen soġıstı. “Müslümanlar, Medine’ye
+
+258                   21. Yüzyılda Eğitim ve Toplum / Education And Society In The 21st Century
+                                  Cilt / Volume 10, Sayı / Issue 28, Spring / Bahar 2021
+               Köktürk Harfli Yazıtlar ve Kazak Türkçesindeki Ortak Fiiller ve Fiil-Tamlayıcı İlişkileri
+
+
+hicret ettikten iki sene sonra yani 624’te Bedir’de kendilerinden sayıca kat kat fazla
+olan müşrik ordusuyla savaştı.” (QÄTS XI, 400)
+   teg- “değmek, varmak, erişmek; hücum etmek”
+   Eski Türkçedeki teg- fiili Kazak Türkçesinde tiy- şeklinde olup “değmek; hücum
+etmek” anlamları korumakla birlikte “1. isabet etmek, saplanmak 2. dokunmak 3. var-
+mak, evlenmek” anlamlarında da kullanılmaktadır (QÄTS XIV, 170). Tespit ettiğimiz
+örneklerde fiilin her ikisi de yönelme hâli ekli tamlayıcıyla kullanılmaktadır.
+   ET: Yablak kişi er [...] alp er biziŋe tegmiş erti. “Kötü kişiler ... cesur erler bize hücum
+etmişler idi.” (KT D 340)
+    Üze teŋrike tegir, asra yirke kirür tir. “Yukarıda göklere erişir, aşağıda yer(in dibin)
+e girer.” (IB 20)
+   KT: Temir süymen bu jolı Fedorovtıŋ däl qara qusına tiydi. “Demir küskü bu kez
+Fedorov’un tam kafatasının arkasına değdi.” (QMT, 66)
+   tıŋla- “dinlemek” (Tekin 2013: 62)
+    Yine Eski Türkçedeki tıŋla- fiili Kazak Türkçesinde tıŋda- biçiminde olup aynı
+anlamda mevcuttur (QÄTS XIV, 559). Tespit ettiğimiz örneklerde fiilin her ikisi de
+belirtme (ekli) hâli ekli tamlayıcıyla kullanılmaktadır.
+   ET: Ögüm ötin alayın, kaŋım sabın tıŋlayın tip kelmiş, tir. “Anamın öğüdünü
+alayım, babamın sözlerini dinleyeyim diye (geri) gelmiş, der.” (IB 58)
+   KT: Biraq onı bir jan tıŋdamadı. “Fakat onu hiç kimse dinlemedi.” (QMT, 685)
+   tir- “dermek, toplamak” (Tekin 2014: 174)
+    tir- fiili Kazak Türkçesinde ter- şeklinde olup aynı anlamda geçmektedir (QÄTS
+XIV, 143). Tespit ettiğimiz örneklerde fiil, Eski Türkçede belirtme (ekli) hâli ekli tam-
+layıcıyla kullanılırken Kazak Türkçesinde belirtme (ekli veya eksiz) ve ayrılma hâli
+ekli tamlayıcıyla kullanılmaktadır.
+    ET: Tokuz oguz bodunumın tirü kubratı altım. “Dokuz Oğuz halkımı derleyip top-
+layıp ele geçirdim.” (ŞU K 5)
+   KT: Büldirgen, qaraqattı teremiz... “Çilek ve siyah frenk üzümünü toplayacağız...”
+(QÄTS XIV, 143)
+   Jasıl şöpten gül tereyik. “Yeşil çimenlerden çiçek toplayalım.” (QÄTS III, 642)
+   tod- “doymak” (Tekin 2014: 175)
+   tod- fiili de Kazak Türkçesinde toy- şeklinde olup aynı anlamı korumakla birlikte
+“usanmak, bezmek” anlamında da kullanılmaktadır (QÄTS XIV, 209). Tespit ettiği-
+miz örneklerde fiil, Eski Türkçede herhangi bir tamlayıcıya ihtiyaç duymazken Kazak
+Türkçesinde yönelme hâli ekli tamlayıcıya ihtiyaç duymaktadır.
+    ET: Açsık tosık ömez sen bir todsar açsık ömez sen. “Açlığı tokluğu düşünmezsin;
+bir (de) doyarsan açlığı (hiç) düşünmezsin.” (KT G 8)
+
+
+                 21. Yüzyılda Eğitim ve Toplum / Education And Society In The 21st Century                 259
+                             Cilt / Volume 10, Sayı / Issue 28, Spring / Bahar 2021
+      Janarbyek ASIMKHAN
+
+
+         KT: Şöp quwarġan şaqta qozı sütke de toymaydı. “Otlar kuruduğu zaman kuzular
+      süte de doymaz.” (QÄTS I, 682)
+         tog- “doğmak” (Useev 2011: 690)
+          Eski Türkçedeki tog-/tug- fiilleri Kazak Türkçesinde tuw- biçiminde olup aynı an-
+      lamı taşımakla birlikte “doğurmak, doğum yapmak” anlamında da kullanılmaktadır
+      (QÄTS XIV, 388). Tespit ettiğimiz örneklerde fiil, Eski Türkçede herhangi bir tamlayı-
+      cı almazken Kazak Türkçesinde ise ayrılma hâli ekli tamlayıcı almaktadır.
+         ET: On ay ilt[t]i ögim oglan togdım “On ay beni annem taşıdı, oğul olarak doğdum”
+      (Y 29, 5)
+         KT: Ulpannan qız tuwdı. “Ulpan, kız doğurdu.” (U, 191)
+         tüş- “düşmek; inmek” (Tekin 2013: 63)
+          tüş- fiili Kazak Türkçesinde tüs- şeklinde olup aynı anlamı taşımakla birlikte “su,
+      göl vb. girmek; yıkanmak” anlamlarında da kullanılmaktadır (QÄTS XIV, 510). Tespit
+      ettiğimiz örneklerde fiil, Eski Türkçede yönelme hâli ekli tamlayıcıya ihtiyaç duyarken
+      Kazak Türkçesinde yönelme ve ayrılma hâli ekli tamlayıcıya ihtiyaç duymaktadır.
+         ET: Tebe titigke tüşmiş. “Bir deve bir bataklığa düşmüş.” (IB 64)
+         KT: Kälen attan tüsti. “Kälen attan indi.” (QMT, 226)
+         Olar bäkila kiyip, suwġa tüsti. “Onlar, kasık çizmelerini giyerek suya girdiler.”
+      (QÄTS III, 162)
+         tüşür- “indirmek; yüklemek” (Useev 2011: 691)
+          tüşür- fiili de Kazak Türkçesinde tüsir- şeklinde olup “indirmek” anlamı korun-
+      muştur (QÄTS XIV, 524). Tespit ettiğimiz örneklerde fiil, Eski Türkçede belitme (ek-
+      siz) hâli ekli tamlayıcı alırken Kazak Türkçesinde belirtme (ekli), ayrılma ve yönelme
+      hâli ekli tamlayıcıları almaktadır.
+         ET: Yeti urı oglıŋızka bökmedük kaŋıçam alp kuşça buŋı tüşürmek ertiŋiz. “Yedi
+      erkek oğlunuza doymayan babacığım, alp kuş kadar kaygı yükleyecektiniz.” (Y 48, 14)
+         KT: Aqbala sırtqa şıġıp, seri jigitti attan tüsirdi. “Aqbala dışarı çıktı ve güzel giyi-
+      nen delikanlıyı attan indirdi.” (QMT, 11)
+         Ekewlep jabılıp qayıqtı suwġa tüsirdi. “İkisi birlikte kayığı suya indirdi.” (QMT, 61)
+         ürküt- “ürkütmek” (Tekin 2013: 64)
+          Fiil, Kazak Türkçesinde ürkit- şeklinde olup aynı anlamı taşımaktadır (QÄTS XV,
+      80). Tespit ettiğimiz örneklerde fiilin Eski Türkçede herhangi bir tamlayıcı almadığı,
+      Kazak Türkçesinde ise belirtme (ekli) hâli ekli tamlayıcı aldığı görülmektedir.
+          ET: Ödmeŋ, körmeŋ, ürküt[m]eŋ tir. “Heyecanlanmayın, bakmayın, ürkütmeyin,
+      der.” (IB 21)
+         KT: Elaman da olardı ürkite qoymadı. “Elaman da onları ürkütmedi.” (QMT, 771)
+
+
+
+260                   21. Yüzyılda Eğitim ve Toplum / Education And Society In The 21st Century
+                                  Cilt / Volume 10, Sayı / Issue 28, Spring / Bahar 2021
+               Köktürk Harfli Yazıtlar ve Kazak Türkçesindeki Ortak Fiiller ve Fiil-Tamlayıcı İlişkileri
+
+
+   yagıla- “yağmalamak, istila etmek, savaşmak” (Useev 2011: 684)
+   Eski Türkçedeki yagıla- fiili Kazak Türkçesinde jawla- biçiminde olup aynı anlamı
+mevcuttur (QÄTS VI, 210). Tespit ettiğimiz örneklerde fiilin her ikisi de belirtme (ekli)
+hâli ekli tamlayıcıyla kullanılmaktadır.
+   ET: ...taş yagıg yagıladım “dış düşmanlarla savaştım” (Y 45, 3-4)
+   KT: Olardı da Gitler jawlap aldı goy. “Onları da Hitler işgal etti.” (QÄTS VI, 210)
+   yalbar- “yalvarmak” (Tekin 2013: 65)
+    yalbar- fiili Kazak Türkçesinde jalbar- şeklinde olup aynı anlamda kullanılmak-
+tadır . Tespit ettiğimiz örneklerde fiil, Eski Türkçede yön gösterme hâli ekli tamlayıcı
+alırken Kazak Türkçesinde yönelme hâli ekli tamlayıcı almaktadır.
+   ET: Kul sabı begiŋerü ötünür, kuzgun sabı teŋrigerü yalbarur. “Kölenin sözü beyin-
+den ricadır, kuzgunun sözü Tanrı’ya yakarıştır.” (IB 54)
+    KT: Quldıq urıp bularġa köp jalbardı. “Boyun eğerek bunlara çok yalvardı.” (QÄTS
+V, 638)
+   yaŋıl- “yanılmak, hata yapmak” (Tekin 2014: 185)
+    yaŋıl- fiili de Kazak Türkçesinde jaŋıl- şeklinde olup aynı anlamı taşımaktadır
+(QÄTS VI, 41). Tespit ettiğimiz örneklerde fiil, Eski Türkçede herhangi bir tamlayıcıya
+ihtiyaç duymazken Kazak Türkçesinde ayrılma hâli ekli tamlayıcıya ihtiyaç duymak-
+tadır.
+   ET: özi yaŋıltı. “(Buna rağmen) kendisi hata işledi.” (KT D 20)
+  KT: Elaman tartıp otırġan küyinen jaŋılıp ketti. “Elaman ezgi çalarken şaşırdı.”
+(QMT, 474)
+   yar- “yarmak, ikiye bölmek” (Tekin 2013: 65)
+    Eski Türkçedeki yar- fiili Kazak Türkçesinde jar- şeklinde olup aynı anlamda kul-
+lanılmakla birlikte “parçalamak” anlamında da kullanılmaktadır (QÄTS VI, 67). Tes-
+pit ettiğimiz örneklerde fiilin her ikisi de belirtme (ekli) ve vasıta hâli ekli tamlayıcı
+almaktadır.
+   ET: Talım urı yarın aça yasıçin yalım kayag yara urupan yalŋusun yorıyur tir. “Ce-
+sur bir genç, omuzları açık, okunun ucu ile yalçın kayaları yara yara yapayalnız yürü-
+yor, der.” (IB 40)
+    KT: Monġoldıŋ bir noyanı Möŋkeniŋ jarlıġı boyınşa Boşmandı aybaltamen jarıp
+öltirdi. “Moğol’un bir noyanı Möŋke’nin emriyle Boşman’ı ay balta ile parçalayarak
+öldürdü.” (Kö. I, 72)
+   yarıl- “yarılmak” (Tekin 2013: 65)
+    Eski Türkçede geçen yarıl- fiili Kazak Türkçesinde jarıl- şeklinde olup aynı anlamı
+taşımakla birlikte “patlamak, infilak etmek” anlamında da kullanılmaktadır (QÄTS
+VI, 128). Tespit ettiğimiz örneklerde fiilin her ikisi de herhangi bir tamlayıcıya ihtiyaç
+duymamaktadır.
+
+                21. Yüzyılda Eğitim ve Toplum / Education And Society In The 21st Century                  261
+                            Cilt / Volume 10, Sayı / Issue 28, Spring / Bahar 2021
+      Janarbyek ASIMKHAN
+
+
+         ET: Adıgıŋ karnı yarılmiş, toŋuzuŋ azıgı sınmiş tir. “Ayının karnı yarılmış, domu-
+      zun azı dişleri kırılmış, der.” (IB 6)
+         KT: Mina jarıldı. “Mayın patladı.” (QÄTS VI, 128)
+         yaşa- “yaşamak” (Useev 2011: 684)
+         Yine ski Türkçede geçen yaşa- fiili Kazak Türkçesinde jasa- biçminde olup aynı
+      anlamda kullanılmaktadır (QÄTS VI, 148). Tespit ettiğimiz örneklerde fiilin her ikisi
+      de herhangi bir tamlayıcı almamaktadır.
+         ET: Yüz yaşayın “(Ben) yüz (yıl) yaşayın” (Y 36, 1)
+         KT: O, mıŋ jasasın! “O, çok yaşasın.” (U, 129)
+         yat- “yatmak, bulunmak” (Tekin 2014: 186)
+          yat- fiili Kazak Türkçesinde jat- şeklinde olup aynı anlamı korumuştur (QÄTS
+      VI, 180). Tespit ettiğimiz örneklerde fiil, Eski Türkçede eşitlik ve bulunma hâli ekli
+      tamlayıcıyla kullanılırken Kazak Türkçesinde ise bulunma ve yönelme hâli ekli tam-
+      layıcıyla kullanılmaktadır.
+        ET: Kanıŋ subça yügürti, süŋüküŋ tagça yatdı. “Kanlarınız ırmaklar gibi aktı, ke-
+      mikleriniz dağlar gibi yattı.” (KT D 24)
+         Tanım tüsi takı tükemezken taluyda yatıpan tapladukmin tutar men “Vücudumun
+      tüyleri henüz tam büyümemiş olmakla birlikte, deniz (kıyısın)da yatarak dilediğimi
+      tutuyorum” (IB 3)
+         KT: Kitap stolda jatır. “Kitap masada yatıyor.” (QTS, 218)
+         Men de tas edenge jattım. “Ben de taş zeminde yattım.” (TJTK, 153)
+         yayla- “yaylamak, yazı geçirmek” (User 2010: 537)
+           Fiil, Kazak Türkçesinde jayla- şeklinde olup aynı anlamı taşımakla birlikte “yer-
+      leşmek” anlamında da kullanılmaktadır (QÄTS V, 576). Tespit ettiğimiz örneklerde
+      fiilin Eski Türkçede bulunma hâli ekli tamlayıcıya, Kazak Türkçesinde ise bulunma ve
+      belirtme (ekli) hâli ekli tamlayıcıya ihtiyaç duyduğu görülmektedir.
+         ET: Bars yılka yılan yılka eki yıl yayladım. “Kaplan yılında, yılan yılında iki yıl
+      yazı (burada) geçirdim.” (Ta B 1-2)
+         KT: Sıban Raptan öz eline qaytıp kelip, Buwratal özeniniŋ boyın jayladı. “Sıban
+      Raptan kendi yurduna dönerek Buwratal nehrinin kıyısına yerleşti.” (Kö. II, 11)
+         Onlar ... Tarbaġatayda jaylawşı edi. “Onlar ... yazı Tarbaġatay’da geçirirdi.” (ÖOÖ,
+      380)
+         yel- “(atı) hızla sürmek, dörtnala gitmek” (Tekin 2014: 537)
+          Eski Türkçedeki yel- fiili Kazak Türkçesinde jel- şeklinde olup aynı anlamı koru-
+      makla birlikte “tırıs gitmek” anlamında da kullanılmaktadır (QÄTS VI, 280). Tespit
+      ettiğimiz örneklerde fiilin her ikisi de herhangi bir tamlayıcıya ihtiyaç duymamakta-
+      dır.
+
+
+262                  21. Yüzyılda Eğitim ve Toplum / Education And Society In The 21st Century
+                                 Cilt / Volume 10, Sayı / Issue 28, Spring / Bahar 2021
+               Köktürk Harfli Yazıtlar ve Kazak Türkçesindeki Ortak Fiiller ve Fiil-Tamlayıcı İlişkileri
+
+
+   ET: Kün yeme tün yeme yelü bardımız. “Gece gündüz dört nala gittik.” (T K 3)
+   KT: Abay jelip keledi. “Atlı Abay tırıs geliyor.” (AJ I, 130)
+   yerle- “mesken tutmak, yerleşmek” (Useev 2011: 684)
+    yerle- fiili Kazak Türkçesinde jerle- biçiminde olup aynı anlamda mevcuttur (QÄTS
+VI, 368). Tespit ettiğimiz örneklerde fiil, Eski Türkçede belirtme (ekli) hâli ekli tamla-
+yıcıyla kullanılırken Kazak Türkçesinde belirtme (ekli) ve bulunma hâli ekli tamlayı-
+cıyla kullanılmaktadır.
+   ET: ...kara seŋirig yerledim “Kara Seŋir’i mesken tuttum.” (Y 24, 5)
+   KT: Tättimbet bir jıl qonaqjay Naymannıŋ jerinde jerlep qayttı. “Tättimbet bir sene
+misafirperver Nayman toprağında yaşadı.” (QÄTS VI, 368)
+  Qanjıġalı Bayqara, Qarınbay tawın jerlegen... “Qanjıġalı Bayqara, Qarınbay dağını
+mesken tuttu...” (QÄTS VI, 368)
+   yıg- “yığmak, toplamak” (User 2010: 537)
+   yıg- fiili de Kazak Türkçesinde jıy- şeklinde olup aynı anlamda kullanılmaktadır
+(QÄTS VI, 408). Tespit ettiğimiz örneklerde fiil, Eski Türkçede belirtme (ekli) hâli ekli
+tamlayıcıya ihtiyaç duyarken Kazak Türkçesinde belirtme (ekli veya eksiz) ve yönelme
+hâli ekli tamlayıcıya ihtiyaç duymaktadır.
+   ET: Keligme beglerin bodunın itip yıgıp azça bodun tezmiş erti. “(Bize) gelen beyle-
+rini ve halkını derleyip toplayıp, biraz halk kaçıp gitmiş idi.” (T B 8)
+   KT: Jamila tösek jıyıp jür edi. “Jamila yatağı topluyordu.” (QÄTS VI, 408)
+   Er-toqımdı äkep bosaġaġa jıyıp qoydım. “Eyer takımını getirip girişe yığdım.”
+(QÄTS VI, 408)
+   yi-/ye- “yemek yemek” (User 2010: 537)
+   Eski Türkçedeki yi-/ye- fiili Kazak Türkçesinde je- şeklinde olup aynı anlamda ko-
+runmaktadır (QÄTS VI, 252). Tespit ettiğimiz örneklerde fiilin her ikisi de belirtme
+(eksiz veya ekli) hâli ekli tamlayıcıyla kullanılmaktadır.
+   ET: ...biz at yır biz “...at yiyoruz” (Y 144, 1)
+   Özin tilkü yimiş “Kendisini (de) bir tilki yemiş” (IB 46)
+    KT: Baran at jer tarpıp, jem jep tur. “Doru at ayağıyla yeri eşeleyerek yem yiyor.”
+(ŞJ III, 231)
+   Boz isekti qasqır jedi. “İki yaşındaki iğdiş edilmiş boz koçu kurt yedi.” (ŞJ III, 16)
+   yokla- “ağıt yakmak, yas tutmak” (Useev 2011: 685)
+   Fiil, Kazak Türkçesinde joqta- biçiminde olup aynı anlamda kullanılmakla birlikte
+“aramak, yoklamak” anlamında da kullanılmaktadır (QÄTS VI, 457). Tespit ettiği-
+miz örneklerde fiil, Eski Türkçede herhangi bir tamlayıcya ihtiyaç duymazken Kazak
+Türkçesinde belirtme (ekli) hâli ekli tamlayıcıya ihtiyaç duymaktadır.
+
+
+                21. Yüzyılda Eğitim ve Toplum / Education And Society In The 21st Century                  263
+                            Cilt / Volume 10, Sayı / Issue 28, Spring / Bahar 2021
+      Janarbyek ASIMKHAN
+
+
+         ET: Kanıŋız yoklayur “Babanız yas tutuyor” (Y 25, 6)
+         KT: Keşki jumıstan qaytqan Muqan kelisimen ädetinen jaŋılġan aq mısıqtı joqtadı.
+      “Akşam işinden dönen Muqan, gelir gelmez kaybolan beyaz kediyi aradı.” (QÄTS VI,
+      457)
+         yoluk- “karşılaşmak” (User 2010: 538)
+          yoluk- fiili Kazak Türkçesinde jolıq- şeklinde olup aynı anlamda korunmakla
+      birlikte “1. buluşmak 2. düçar olmak, uğramak” anlamlarında da kullanılmaktadır
+      (QÄTS VI, 479). Tespit ettiğimiz örneklerde fiil, Eski Türkçede bulunma hâli ekli tam-
+      layıcı alırken Kazak Türkçesinde yönelme hâli ekli tamlayıcı almaktadır.
+         ET: Bir yegirminç ay sekiz yegirmike [...] yolukdım. “On birinci ayın on sekizinde ...
+      karşılaştım.” (ŞU G 1)
+        KT: Hatşı esigine tayaw kelgen Şolpanġa Näzipa apay qarsı jolıqtı. “ Näzipa öğret-
+      men, sekreterin kapısına yaklaşan Şolpan’a rastladı.” (QÄTS VI, 479)
+         yul- “yolmak, koparmak” (Tekin 2013: 66)
+          Eski Türkçedeki yul- fiili Kazak Türkçesinde jul- şeklinde olup aynı anlamı
+      taşımakla birlikte “bir şeyi birinin elinden çekip almak” anlanında da kullanılmak-
+      tadır (QÄTS VI, 543). Tespit ettiğimiz örneklerde fiilin her ikisi de belirtme (ekli) ve
+      ayrılma hâli ekli tamlayıcı almaktadır.
+         ET: başımın yul ebintin “başımı kopar evinden” (IB 8)
+         KT: Juma mıltıqtı Zeynegüldiŋ qolınan julıp aldı. “Juma, tüfeği Zeynegül’ün elin-
+      den çekip aldı.” (QÄTS VI, 543)
+         yügür- “koşmak, akmak” (Tekin 2014: 192)
+          yügür- fiili Kazak Türkçesinde jügir- şeklinde olup aynı anlamları taşımaktadır
+      (QÄTS VI, 591). Tespit ettiğimiz örneklerde fiil, Eski Türkçede eşitlik hâli ekli tam-
+      layıcıyla kullanılırken Kazak Türkçesinde ise yönelme hâli ekli tamlayıcıyla kullanıl-
+      maktadır.
+         ET: Kanıŋ subça yügürti “Kanlarınız ırmaklar gibi aktı” (KT D 24)
+          KT: Erteŋgi astı Elaman apıl-ġupıl işe sala moŋşaġa jügirdi. “Elaman aceleyle kah-
+      valtı yaptı ve hamama koştu.” (QÄTS I, 393)
+         yükün- “1. saymak, saygı göstermek 2. boyun eğmek, biat etmek” (User 2010:
+      538)
+         Eski Türkçede geçen yükün- fiili Kazak Türkçesinde jügin- biçiminde olup ikinci
+      anlamı korumakla birlikte “mec. başvurmak, danışmak.” anlamında da kullanılmak-
+      tadır (QÄTS VI, 590). Tespit ettiğimiz örneklerde fiilin her ikisi de yönelme hâli ekli
+      tamlayıcıya ihtiyaç duymaktadır.
+         ET: Kaganka kırgız bodunı içikdi yükünti. “Kırgız halkı kağana teslim oldu, bo-
+      yun eğdi.” (T K 4)
+         KT: Anaw Abayġa ma jüginemin. “O Abay’a mı danışacağım.” (QÄTS VI, 591)
+
+264                   21. Yüzyılda Eğitim ve Toplum / Education And Society In The 21st Century
+                                  Cilt / Volume 10, Sayı / Issue 28, Spring / Bahar 2021
+               Köktürk Harfli Yazıtlar ve Kazak Türkçesindeki Ortak Fiiller ve Fiil-Tamlayıcı İlişkileri
+
+
+   Sonuç:
+   Çalışmamızın sonucunda Köktürk harfli yazıtlar ve Kazak Türkçesinde kullanılan
+90 ortak fiil tespit edilmiştir. Bu filler, ses ve anlam bakımından hiç değişikliğe uğra-
+mayan ve ses değişikliğine uğrayıp anlam bakımından korunan fiiller olmak üzere iki
+başlık altında fiil-tamlayıcı ilişkisi açısından incelenmiştir. Söz konusu doksan fiilin
+33’ü hiç değişikliğe uğramadan korunmuşken 57’si ses değişikliğine uğrayıp anlamca
+korunmuştur.
+     Her iki lehçede incelediğimiz fiillerin, 25’i aynı tamlayıcıyla kullanılırken 50’si
+aynı tamlayıcının yanı sıra başka bir tamlayıcıyla da kullanılmıştır. Bu fiillerin tama-
+men farklı bir tamlayıcıyla da kullanıldığı tespit edilmiştir. Geri kalan 15’i de herhangi
+bir tamlayıcıya ihtiyaç duymamaktadır. Yukarıda örnekleriyle verdiğimiz fiillerin ve
+fiil tamlayıcılarının yüzyıllar içerisinde ne gibi değişikliğe uğradığı gözler önüne seril-
+miştir. Örneğin, Eski Türkçede aş- “aşmak, geçmek” fiili belitme hâli ekli tamlayıcıyla
+kullanılırken Kazak Türkçesinde as- “aşmak, geçmek” şeklinde olup ayrılma hâli ekli
+tamlayıcıyla kullanılmaktadır.
+   Sonuç olarak Köktürk harfli yazıtlarda geçen fiillerin Kazak Türkçesinde ses ve
+anlamca büyük oranda korunduğu ve hemen hemen aynı fiil tamlayıcısına ihtiyaç
+duyduğu görülmektedir.
+
+
+
+
+                21. Yüzyılda Eğitim ve Toplum / Education And Society In The 21st Century                  265
+                            Cilt / Volume 10, Sayı / Issue 28, Spring / Bahar 2021
+      Janarbyek ASIMKHAN
+
+
+         Kısaltmalar:
+         A:   Aqbilek
+         AJ: Abay jolı
+         BK: Bilge Kağan Yazıtı
+         ET: Eski Türkçe
+         IB: Irk Bitig
+         JQ: Joġalġan Qız
+         KÇ: Kül İç Çor Yazıtı
+         Kö.: Köşpendiler
+         KT: Kazak Türkçesi
+         KT: Köl Tegin Yazıtı
+         KTTTS: Kazak Türkçesi Türkiye Türkçesi Sözlüğü
+         MDŞ: Mirjaqıp Duwlatov Şıġarmaları
+         O:   Ongin Yazıtı
+         QÄTS: Qazaq Ädebiy Tiliniŋ Sözdigi
+         QMT: Qan Men Ter
+         QQ: Qazaqtıŋ Qanışı
+         QTS: Qazaq Tiliniŋ Sözdigi
+         ŞJ III: Şıġarmalar Jıynaġı 3. cilt
+         ŞU: Şine Us Yazıtı
+         T:   Tonyukuk Yazıtı,
+         Ta: Tariat Yazıtı
+         Tes: Tes Yazıtı
+         U:   Ulpan
+         Y:   Yenisey Yazıtları
+
+
+
+
+266                   21. Yüzyılda Eğitim ve Toplum / Education And Society In The 21st Century
+                                  Cilt / Volume 10, Sayı / Issue 28, Spring / Bahar 2021
+              Köktürk Harfli Yazıtlar ve Kazak Türkçesindeki Ortak Fiiller ve Fiil-Tamlayıcı İlişkileri
+
+
+   Kaynakça:
+   ALYILMAZ, Cengiz, (1994), Orhun Yazıtlarının Söz Dizimi, Erzurum.
+   ÄWEZOV, Muhtar, (2003), Abay jolı III, Almatı: Jazuwşı Baspası.
+   ÄWEZOV, Muhtar, (2004), Abay jolı I, Almatı: Jazuwşı Baspası.
+   ÄWEZOV, Muhtar, (2006), Abay jolı IV, Almatı: Jazuwşı Baspası.
+   ÄWEZOV, Muhtar, (2007), Abay jolı II, Almatı: Jazuwşı Baspası.
+    AYDIN ÖZKAN, Işıl, (2017), Evrensel Dilbilgisi ve Türkçede İstem, Ankara: Gra-
+fiker Yayınları.
+   AYDIN, Erhan, (2007), Şine Usu Yazıtı, Çorum: Karam Yayınevi.
+   AYMAWITOV, Jüsipbek, (2003), Aqbilek, Almatı: Atamura Baspası.
+   BANGUOĞLU, Tahsin, (2007), Türkçenin Grameri, Ankara: Türk Dil Kurumu
+Yayınları.
+  CAFEROĞLU, Ahmet, (2015), Eski Uygur Türkçesi Sözlüğü, Ankara: Türk Dil
+Kurumu Yayınları.
+  ERASLAN, Kemal, (2012), Eski Uygur Türkçesi Grameri, Ankara: Türk Dil Kuru-
+mu Yayınları.
+   ERDAL, Marcel, (2004), A Grammar of Old Turkic, Boston: Brill Lieden.
+   ERSOY, Feyzi, (2006), “Moğolca ve Türkçede Fiil-Tamlayıcı İlişkileri”, Selçuk Üni-
+versitesi Türkiyat Araştırmaları Dergisi, 20: 81-89.
+   ESENBERLİN, İliyas, (1976a), Köşpendiler I, Almatı: Jazuwşı Baspası.
+   ESENBERLİN, İliyas, (1976b), Köşpendiler II, Almatı: Jazuwşı Baspası.
+  GABAİN, Von Annemarie, (1995), Eski Türkçenin Grameri, (Çeviren: M. Akalın),
+Ankara: Türk Dil Kurumu Yayınları.
+   İSAYEV, Seyilbek, (1996), Qazaq Ädebiy Tiliniŋ Tarihı, Almatı: Ana Tili.
+   İSQAQOV, Ahmediy ve UÄLİY, Nurgeldi (Ed.), (2011), Qazaq Ädebiy Tiliniŋ Söz-
+digi I-XVI, Almatı: Til Bilimi İnstitutı.
+   İSQAQOV, Ahmediy, (1991), Qazirgi Qazaq Tili: Morfologiya, Almatı: Ana Tili
+Baspası.
+   JANSÜGİROV, İliyas, (1987), Şıġarmalar Jıynaġı III; Joldastar, Almatı: Jazuwşı
+Baspası.
+   JANUZAQOV, Telġoja (Ed.), (1999), Qazaq Tiliniŋ Sözdigi, Almatı: Dayk-Press.
+   KARACA, Oktay Selim, (2011), Kazak Türkçesinde Fiil İstemleri, İstanbul: Kesit
+Yayınları.
+    KOÇ, Kenan, BAYNİYAZOV, Ayabek, BAŞBAKAN, Vehbi, (2003), Kazak Türkçe-
+si Türkiye Türkçesi Sözlüğü, Ankara: Akçağ Yayınları.
+
+               21. Yüzyılda Eğitim ve Toplum / Education And Society In The 21st Century                  267
+                           Cilt / Volume 10, Sayı / Issue 28, Spring / Bahar 2021
+      Janarbyek ASIMKHAN
+
+
+          KORMUŞİN, İgor Valentinoviç, (2017), Yenisey Eski Türk Mezar Yazıtları; Metin-
+      ler ve İncelemeler, (Çeviten: R. Alimov), Ankara: Türk Dil Kurumu Yayınları.
+         MERT, Osman, (2009), Ötüken Uygur Dönemi Yazıtlarından Tes- Tariat- Şine
+      Us, Ankara: Belen Yayıncılık Matbaacılık.
+        MUQAMADİULI, Elewsiz, (2014), Joġalġan Qız, Almatı: Düniyejüzi Qazaqtarı
+      Qawımdastıġınıŋ “Atajurt” Baspa Ortalıġı.
+         MUSAYEVA, Gülbaġiza Äbilasımqızı (2013), Jay Söylemderdi Meŋgerüw Dina-
+      mikası, Almatı.
+         MÜSİREPOV, Ġabiyt, (2006), Ulpan, Almatı: Raritet.
+         NURPEYİSOV, Äbdijämil, (1973), “Qan Men Ter” Trilogiya, Almatı: Jazuwşı Bas-
+      pası.
+           Qazaq SSR Ġılım Akademiyası M.O. Äwezov Atındaġı Ädebiyet Jäne Öner İnstitu-
+      tı, (1991), Mirjaqıp Duwlatov Şıġarmaları, Almatı: Jazuwşı Baspası.
+         SÄRSEKE, Medew, (1999), Qazaqtıŋ Qanışı, Almatı: Atamura.
+         ŞİRİN USER, Hatice, (2010), Köktürk ve Ötüken Uygur Kağanlığı Yazıtları: Söz
+      Varlığı İncelemesi, Konya: Kömen Yayınları.
+         TEKİN, Tekin, (1994), Tonyukuk Yazıtı, İstanbul: Simurg Yayınları.
+         TEKİN, Tekin, (1998), Orhun Yazıtları: Kül Tigin, Bilge Kağan, Tonyukuk, İstan-
+      bul: Simurg Yayınevi.
+        TEKİN, Tekin, (2013), Irk Bitig: Eski Uygurca Fal Kitabı, Ankara: Türk Dil Kuru-
+      mu Yayınları.
+         TEKİN, Tekin, (2014), Orhon Yazıtları, Ankara: Türk Dil Kurumu Yayınları.
+         TEKİN, Tekin, (2016), Orhon Türkçesi Grameri, Ankara: Türk Dil Kurumu Ya-
+      yınları.
+         TOMANOV, Marhabat, (1981), Qazaq Tiliniŋ Tarihi Grammatikası: Fonetika
+      jäne Morfologiya, Almatı: Mektep.
+         USEEV, Nurdin, (2009), Yenisey Yazıtlarının Söz Dizimi, Yayımlanmamış dok-
+      tora tezi, Bişkek: Kırgızistan-Türkiye Manas Üniversitesi Sosyal Bilimler Enstitüsü.
+         USEEV, Nurdin, (2011), Enisey Cazma Estelikteri I: Leksikası Cana Tekstter, Biş-
+      kek: Kırgız Milli Bilimler Akademisi ve Kırgızistan-Türkiye Manas Üniversitesi Ya-
+      yınları.
+
+
+
+
+268                  21. Yüzyılda Eğitim ve Toplum / Education And Society In The 21st Century
+                                 Cilt / Volume 10, Sayı / Issue 28, Spring / Bahar 2021
+               Köktürk Harfli Yazıtlar ve Kazak Türkçesindeki Ortak Fiiller ve Fiil-Tamlayıcı İlişkileri
+
+
+   Extended Abstract:
+    Up until today, many studies have been carried out on inscriptions with Gokturk
+letters and Kazakh Turkish both in Turkey and in Kazakhstan. In recent years, various
+studies have been conducted especially on the verb-complement relationship, which
+is a new field of study in Turcology. In this study, inscriptions with Gokturk letters
+and common verbs in Kazakh Turkish are discussed in terms of verb-complement
+relationship.
+    The French linguist Lucien Tesnière was the first in the world to discuss the subject
+of volition. In Turkey, Tahsin Banguoğlu is the first to use the term “volition”, which has
+recently started to be used. Later on, Tahir Kahraman used the term “complement with
+case suffixes”; Leyla Karahan used the term “verb-complement relationship”; Vilden
+Emre used the term “valence”; Mustafa Uğurlu, Selim Karaca and Işıl Aydın Özkan
+used the term “volition”; and Aysun Demrez Güneri used the term “verb complements
+with case suffixes”. The mentioned term is used in Kazak Turkish as “actant, valence”.
+    It is useful to briefly dwell on the case suffixes which are one of the elements deter-
+mining the verb-complement relationship. Researchers have considered the number
+of case suffixes in Old Turkish as nine or ten. However, A.von Gabain stated that this
+number is eight because she combined the locative case and ablative case in Old Uy-
+ghur language. While Marcel Erdal gave the number of case suffixes in Old Turkish as
+thirteen in his work A Grammar of Old Turkic, Cengiz Alyılmaz classified these case
+suffixes according to their functions and increased this number to ninety.
+    In his work, The Grammar of Old Turkish, Talat Tekin classified case suffixes under
+nine titles as being “1. Nominative case, 2. Genitive case:+(n)Iŋ, +ıg, +ın, 3. Case of
+qualified noun: +(X)g, +(X)n, +nI, 4. Case of giving/Locative case: +(k)A, +ŋA, 5. Loc-
+ative-Ablative case: +DA, 6. Dative case: +gArU, +ŋArU, +ArU, +rA, 7. Equative case:
++çA, 8. Instrumental case: +(X)n, 9. Comitative case: +lIgU”.
+    In his work, Bayırkı Kırgız (Enesay) Cazma Estelikteri II: Tili Cana Tildik Düynö
+Beynesi, Nurdin Useev mentioned case suffixes in Yenisey Script as being “1. Nomina-
+tive case: Ø, 2. Genitive case: +nIŋ, +Iŋ, +Ig, 3. Dative case: +G(A), +ŋA, 4. Accusative
+case: +(I)g, +(I)n, +nI, 5. Locative case: +DA, +G(A), 6. Ablative case: +DA, +G(A), 7.
+Instrumental case: +n, +In, 8. Equative case: +çA, 9. Comitative case: +lIgU”.
+    In The Grammar of Old Uyghur Turkish, Kemal Eraslan classified case suffixes as
+being “1. Nominative case, 2. Genitive case: +Iŋ, nIŋ, 3. Accusative case: +g, +n(I), 4.
+Dative case: +KA, +A, 5. Locative-Ablative case: +DA, 6. Ablative case: +DIn, +DAn,
+7. Equative case: +çA, 8. Instrumental case: +(I)n, +Un, +An, 9. Directive case:+gAru,
++ŋArU, +rA”.
+    In Kazakh Turkish, case suffixes called “septik jalġaw” are used under seven titles
+as being “1. Nominative case (ataw septik), 2. Genitive case (ilik septik): +nIŋ, +DIŋ, 3.
+Accusative case (tabıs septik): +nI, +DI, +n, 4. Dative case (barıs septik): +ĠA, +QA,
++A, 5. Locative case (jatıs septik): +DA, 6. Ablative case (şıġıs septik): +nAn, +DAn, 7.
+Instrumental case (kömektes septik): +men(en), +ben(en), +pen(en)”. In the grammar
+studies carried out in Kazakh Turkish, +şA and +DAy equative case suffixes are not
+considered case suffixes. However, the mentioned case suffix is included in our study.
+                21. Yüzyılda Eğitim ve Toplum / Education And Society In The 21st Century                  269
+                            Cilt / Volume 10, Sayı / Issue 28, Spring / Bahar 2021
+      Janarbyek ASIMKHAN
+
+
+               In our study, 90 common verbs used in scripts with Gokturk letters and Ka-
+      zakh Turkish were determined. These verbs were analyzed in terms of verb-comple-
+      ment relationship under two categories as being verbs which did not change in terms
+      of phonetics and meaning, and verbs which changed phonetically but are preserved in
+      terms of meaning.
+         Verbs which did not change in terms of phonetics and meaning:
+         bil- “bilmek” (know “to know”) (Tekin 2014: 129; QÄTS IV, 110)
+          It is observed that in both dialects, the verb has a complement with accusative case
+      suffix and locative case suffix.
+         ET: ...yaşımda bildim “...yaşımda bildim.” (“I knew at the age of...”) (Y 70, 4)
+          Oglı kaŋin bilmez erti. “Oğullar babalarını bilmez idi.” (“Sons did not know their
+      fathers.”) (BK D, 18)
+          KT: Ol äkimge jantaŋdap qaluwdı bilmeytin edi. “O, valiye yaranmayı bilmezdi.”
+      (“S/he did not know how to curry favour with the governor.”) (QÄTS VI, 14).
+         Jaqında bilmes... “Yakında öğrenemez...” (“S/he cannot learn soon.”) (AJ IV, 326)
+         toŋ- “donmak” (freeze “to freeze”) (Tekin 2013: 62; QÄTS XIV, 266)
+         In the examples we have identified, the verb does not need any complement in both
+      dialects.
+        ET: Kanıgı ölmiş, köŋeki toŋmiş. “(Kızın) gözde sevgilisi ölmüş, kovası (da) don-
+      muş.” (“Favorite lover (of the girl) died, and (her) bucket was (also) frozen.”) (IB 57)
+         KT: Biz qattı toŋıp qalıppız “Biz çok üşümüşüz.” (“We were very cold.”) (QÄTS XIV,
+      173)
+         Verbs which changed phonetically but are preserved in terms of meaning:
+         bin- “(ata) binmek” (mount (on horse) “to mount”) (Tekin 2010: 130)
+         The verb is in the form of min- in Kazakh Turkish and is used in the same meaning
+      (QÄTS XI, 428). In the examples we have identified, it is observed that the verb is used
+      with the complement with accusative (with suffix or without suffix) case suffix in Old
+      Turkish while it is used with the complement with accusative and dative case suffixes
+      in Kazakh Turkish.
+         ET: Ekinti Işbara Yamtar boz atıg binip tegdi. “İkinci Işbara Yamtar`ın boz atına
+      binip hücum etti.” (“Işbara Yamtar the Second mounted on his grizzly horse and at-
+      tacked.”) (KT D, 33)
+          Kül Tigin başgu boz at binip tegdi. “Kül Tigin alnı akıtmalı boz ata biniphücüm
+      etti.” (“Kül Tigin mounted on the grizzly horse with white mark on its forehead and
+      attacked.”) (KT D, 37)
+         KT: Elaman atına qarġıp mindi. “Elaman atına zıplayarak bindi.” (“Elaman jumped
+      and mounted on his horse.”) (QMT, 25)
+
+
+270                  21. Yüzyılda Eğitim ve Toplum / Education And Society In The 21st Century
+                                 Cilt / Volume 10, Sayı / Issue 28, Spring / Bahar 2021
+               Köktürk Harfli Yazıtlar ve Kazak Türkçesindeki Ortak Fiiller ve Fiil-Tamlayıcı İlişkileri
+
+
+  Jaraw boz attı Aqbilek mindi. “Kıvamında olan ata Aqbilek bindi.” (“Aqbilek
+mounted on the energetic horse.”) (A, 270)
+    As can be seen from the examples above, while some of the verbs we have analyzed
+in both dialects are used with the same complement, most of them are also used with
+another complement in addition to the same one. It is found out that these verbs are
+also used with a completely different complement. For example; while the verb aş- “ex-
+ceed, pass” is used with the complement with accusative case suffix in Old Turkish, it
+is as- “exceed, pass” in Kazakh Turkish and used with the complement with ablative
+case suffix.
+    ET: Ol yılka türgiş tapa altun yışıg [aş]a ertiş ügüzüg keçe yorı[dım. “O yıl Türgişlere
+doğru Altay dağlarını aşarak (ve) İrtiş ırmağını geçerek yürüdüm” (“That year, I
+walked towards Turgesh by exceeding the Altay mountains (and) passing by Irtysh
+river.”) (BK D, 27)
+   KT: Tawdan asuw oŋayġa tüspedi. “Dağı geçmek kolay olmadı.” (“It was not easy to
+pass by the mountain.”) (QQ, 164)
+    In conclusion, it is observed that the verbs in the scripts with Gokturk letters are
+largely preserved in terms of phonetics and meaning in Kazakh Turkish and they need
+almost the same verb definitive.
+
+
+
+
+                21. Yüzyılda Eğitim ve Toplum / Education And Society In The 21st Century                  271
+                            Cilt / Volume 10, Sayı / Issue 28, Spring / Bahar 2021
+

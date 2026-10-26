@@ -1,6 +1,7 @@
 """Image-grounded school/cone comparison; readings remain conditional."""
 from pathlib import Path
 import csv,json,hashlib,subprocess,xml.etree.ElementTree as E,html
+from crop_exact import crop_exact
 R=Path(__file__).resolve().parents[1];S=R/'round36_sources';S.mkdir(exist_ok=True)
 specs=[('CBS7074_reverse.jpg','round32_sources/P229436_photo.jpg',820,4600,2200,2650),
  ('CBS7074_copy_12rows.jpg','round32_sources/P229436_lineart.jpg',0,890,280,500),
@@ -19,7 +20,8 @@ def outcsv(path,rows):
   w=csv.DictWriter(f,fieldnames=list(rows[0]));w.writeheader();w.writerows(rows)
 crop_rows=[]
 for name,parent,x,y,w,h in specs:
- subprocess.run(['sips','-c',str(h),str(w),'--cropOffset',str(y),str(x),str(R/parent),'--out',str(S/name)],capture_output=True,check=True)
+ if x==0 or y==0:crop_exact(R/parent,S/name,x,y,w,h)
+ else:subprocess.run(['sips','-c',str(h),str(w),'--cropOffset',str(y),str(x),str(R/parent),'--out',str(S/name)],capture_output=True,check=True)
  crop_rows.append(dict(file='round36_sources/'+name,parent=parent,x=x,y=y,width=w,height=h,sha256=sha(S/name),parent_sha256=sha(R/parent)))
 outcsv('data/round36_crops.csv',crop_rows)
 NS={'h':'http://www.w3.org/1999/xhtml'};root=E.parse(R/'round32_sources/P229436_edition.html')

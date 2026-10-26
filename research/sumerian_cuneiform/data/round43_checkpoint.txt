@@ -1,0 +1,21 @@
+{
+  "status": "passed",
+  "cuneiform_photo_contexts_checked": 1,
+  "cuneiform_photo_crops_registered": 5,
+  "cuneiform_observation_levels": 3,
+  "new_external_files": 9,
+  "historical_edition_PDF_pages": 552,
+  "birth_forms_checked_in_print": 5,
+  "finite_contexts_compared": 4,
+  "regional_table_rows": 17,
+  "modern_language_labels": 14,
+  "coordinate_regression_cases": 8,
+  "strict_crop_cases_passed": 4,
+  "old_zero_axis_records_audited": 9,
+  "old_records_with_both_axes_zero": 0,
+  "prior_historical_images_replaced": 0,
+  "local_links": 21,
+  "Sumerian_to_tog_bridge_established": false,
+  "new_independent_Sumerian_sound_values": 0,
+  "book_PDF": "unchanged"
+}

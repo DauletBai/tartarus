@@ -1,6 +1,7 @@
 """Photographic collation of Lu-Utu variants; no new phonetic assignment."""
 from pathlib import Path
 import csv,hashlib,json,subprocess,html,xml.etree.ElementTree as ET
+from crop_exact import crop_exact
 R=Path(__file__).resolve().parents[1];S=R/'round35_sources';S.mkdir(exist_ok=True)
 specs=[
  ('CBS7074_reverse_upper.jpg','round32_sources/P229436_photo.jpg',850,4950,1400,1500),
@@ -15,7 +16,8 @@ specs=[
 def sha(p):return hashlib.sha256(p.read_bytes()).hexdigest()
 rows=[]
 for name,parent,x,y,w,h in specs:
- subprocess.run(['sips','-c',str(h),str(w),'--cropOffset',str(y),str(x),str(R/parent),'--out',str(S/name)],capture_output=True,check=True)
+ if x==0 or y==0:crop_exact(R/parent,S/name,x,y,w,h)
+ else:subprocess.run(['sips','-c',str(h),str(w),'--cropOffset',str(y),str(x),str(R/parent),'--out',str(S/name)],capture_output=True,check=True)
  rows.append(dict(file='round35_sources/'+name,parent=parent,x=x,y=y,width=w,height=h,parent_sha256=sha(R/parent),sha256=sha(S/name)))
 def csvout(name,rows):
  with (R/'data'/name).open('w',encoding='utf-8-sig',newline='') as f:
