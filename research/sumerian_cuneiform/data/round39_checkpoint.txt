@@ -1,0 +1,12 @@
+{
+  "status": "passed",
+  "external_source_hashes": 2,
+  "original_volume_pages": 482,
+  "article_excerpt_pages": 18,
+  "recorded_orientation_operations": 1,
+  "crop_dimensions_and_hashes": 6,
+  "Greek_prefixes_located": 3,
+  "local_links": 26,
+  "new_complete_cuneiform_readings": 0,
+  "book_PDF": "unchanged"
+}
