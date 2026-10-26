@@ -1,0 +1,94 @@
+[
+  {
+    "museum": "BM.34781",
+    "file": "eBL_BM34781.json",
+    "url": "https://www.ebl.lmu.de/api/fragments/BM.34781",
+    "returncode": 0,
+    "valid": true,
+    "error": "",
+    "hasPhoto": true,
+    "has_ATF": false,
+    "ABZ308_in_model_signs": false,
+    "description": "Graeco-Babyloniaca; lexical, Syllabary B. + 35154. Sollberger, Iraq 24, 64, 72 and pls. XXV-XXVI, A1 +C5; Geller, ZA 87, 74-75 and 90, no. 7 (copy); Westenholz,"
+  },
+  {
+    "museum": "BM.77229",
+    "file": "eBL_BM77229.json",
+    "url": "https://www.ebl.lmu.de/api/fragments/BM.77229",
+    "returncode": 0,
+    "valid": true,
+    "error": "",
+    "hasPhoto": false,
+    "has_ATF": false,
+    "ABZ308_in_model_signs": false,
+    "description": "Clay tablet; fragment; lexical series \"Syllabary B\"; Late Babylonian."
+  },
+  {
+    "museum": "BM.48863",
+    "file": "eBL_BM48863.json",
+    "url": "https://www.ebl.lmu.de/api/fragments/BM.48863",
+    "returncode": 0,
+    "valid": true,
+    "error": "",
+    "hasPhoto": true,
+    "has_ATF": false,
+    "ABZ308_in_model_signs": false,
+    "description": "Graeco-Babyloniaca; lexical, Syllabary A. Geller, ZA 87, 73-74 and 90, no. 6 (copy); Westenholz, ZA 97, 267."
+  },
+  {
+    "museum": "BM.34816",
+    "file": "eBL_BM34816.json",
+    "url": "https://www.ebl.lmu.de/api/fragments/BM.34816",
+    "returncode": 0,
+    "valid": true,
+    "error": "",
+    "hasPhoto": true,
+    "has_ATF": true,
+    "ABZ308_in_model_signs": false,
+    "description": "Graeco-Babyloniaca; bilingual incantation, Udug-ḫul 9. 30/[]/-. + 1882,0704.139. Sollberger, Iraq 24, 69 and pl. XXVI, B2; Pinches and Sayce, PSBA 24 (1902) 116"
+  },
+  {
+    "museum": "BM.33769",
+    "file": "eBL_BM33769.json",
+    "url": "https://www.ebl.lmu.de/api/fragments/BM.33769",
+    "returncode": 0,
+    "valid": true,
+    "error": "",
+    "hasPhoto": true,
+    "has_ATF": true,
+    "ABZ308_in_model_signs": true,
+    "description": "Graeco-Babyloniaca; literary, Šamaš Hymn; lexical, Ḫḫ XXIII? Sollberger, Iraq 24, 71, and pl. XXV, C1; Geller, ZA 87, 78 and 94, no. 12 (copy); Westenholz, ZA 9"
+  },
+  {
+    "museum": "BM.34798",
+    "file": "eBL_BM34798.json",
+    "url": "https://www.ebl.lmu.de/api/fragments/BM.34798",
+    "returncode": 0,
+    "valid": true,
+    "error": "",
+    "hasPhoto": true,
+    "has_ATF": true,
+    "ABZ308_in_model_signs": false,
+    "description": "Graeco-Babyloniaca; Tintir I. + Sp-III.311. Sollberger, Iraq 24, 67, B1; Pinches, PSBA 24 (1902) 117, pl. III; van der Meer, AfO 13, 124-126; George, BTT, pl. 6"
+  },
+  {
+    "museum": "HSM.1137",
+    "file": "eBL_HSM1137.json",
+    "url": "https://www.ebl.lmu.de/api/fragments/HSM.1137",
+    "returncode": 56,
+    "valid": false,
+    "error": "curl: (56) The requested URL returned error: 404\n"
+  },
+  {
+    "museum": "BM.35726",
+    "file": "eBL_BM35726.json",
+    "url": "https://www.ebl.lmu.de/api/fragments/BM.35726",
+    "returncode": 0,
+    "valid": true,
+    "error": "",
+    "hasPhoto": true,
+    "has_ATF": true,
+    "ABZ308_in_model_signs": false,
+    "description": "Graeco-Babyloniaca; lexical, Ḫḫ III 290-295. + 1881, 0706.141. Sollberger, Iraq 24, 66, A5; Pinches, PSBA 24 (1902) 109 and pl. I; MSL 5, 89; Geller, ZA 87, 70-"
+  }
+]

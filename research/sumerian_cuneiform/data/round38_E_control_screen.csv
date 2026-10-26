@@ -1,0 +1,9 @@
+﻿museum,ATF_available,ABZ308_in_normalized_model,E_context,decision
+BM.34781,False,False,,No ATF in this snapshot; cannot infer absence of sign on object
+BM.77229,False,False,,No ATF in this snapshot; cannot infer absence of sign on object
+BM.48863,False,False,,No ATF in this snapshot; cannot infer absence of sign on object
+BM.34816,True,False,,No ABZ308 in supplied normalized sequence; bounded electronic screen only
+BM.33769,True,True,2. šu-ut# i#-kab-ba-s[u KUR-i e-lu-u₂-ti] | 2. %akkgrc [σουθ ικαβασ σαδη ε]λουθ,Candidate rejected as preserved E control: e-lu-u2 and corresponding Greek epsilon are restored
+BM.34798,True,False,,No ABZ308 in supplied normalized sequence; bounded electronic screen only
+HSM.1137,False,False,,endpoint unavailable; not evidence of absence
+BM.35726,True,False,,No ABZ308 in supplied normalized sequence; bounded electronic screen only

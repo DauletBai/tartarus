@@ -1,0 +1,16 @@
+{
+  "external_source_files": 16,
+  "new_folio_images": 5,
+  "main_ancient_objects": 1,
+  "additional_object_on_group_photos": "BM90893 excluded from target",
+  "aligned_prefix_contexts": 5,
+  "retained_prefix_candidates": 2,
+  "partial_prefix_controls": 1,
+  "excluded_prefix_cases": 2,
+  "additional_control_endpoints": 8,
+  "valid_control_snapshots": 7,
+  "control_snapshots_with_ATF": 4,
+  "preserved_independent_E_controls_found": 0,
+  "new_fully_independent_sound_values": 0,
+  "new_sentence_translations": 0
+}

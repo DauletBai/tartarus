@@ -1,0 +1,14 @@
+{
+  "status": "passed",
+  "source_hashes": 16,
+  "crop_dimensions_and_hashes": 4,
+  "aligned_contexts": 5,
+  "retained_prefix_candidates": 2,
+  "partial_prefix_controls": 1,
+  "excluded_prefix_cases": 2,
+  "additional_control_endpoints": 8,
+  "restored_E_excluded": true,
+  "local_links": 22,
+  "new_fully_independent_sound_values": 0,
+  "book_PDF": "unchanged"
+}

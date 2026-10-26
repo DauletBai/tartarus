@@ -1,0 +1,6 @@
+﻿canonical,obverse_line,reverse_line,cuneiform_editorial,greek_editorial,normalized_sign_model,prefix_components,decision,scope
+208,7,5,pa₅,[φα],ABZ60 ABZ308 ABZ9 ABZ559,PAP.E / ABZ60 ABZ308,exclude: Greek prefix restored,edition-guided local prefix check; not a blind photographic decipherment
+209,8,6,pa₅-lal#,φα λαλ#,ABZ60 ABZ308 ABZ481 ABZ579 ABZ124 ABZ383,PAP.E / ABZ60 ABZ308,retain prefix: both prefixes unmarked in edition; ending damaged,edition-guided local prefix check; not a blind photographic decipherment
+210,9,7,pa₅#-sig,φα σεκ#,ABZ60 ABZ308 ABZ592 ABZ579 ABZ124 ABZ383,PAP.E / ABZ60 ABZ308,partial: cuneiform prefix damaged,edition-guided local prefix check; not a blind photographic decipherment
+211,10,8,pa₅-šita₃,φα σε!ι!θ,ABZ60 ABZ308 ABZ83 ABZ328 ABZ579 ABZ595,PAP.E / ABZ60 ABZ308,retain prefix: following corrections do not affect φα,edition-guided local prefix check; not a blind photographic decipherment
+212,11,9,[pa₅]-šita₃,φα σ#ειθ,ABZ60 ABZ308 ABZ83 ABZ532 ABZ112 ABZ579 ABZ207,PAP.E / ABZ60 ABZ308,exclude: cuneiform prefix restored,edition-guided local prefix check; not a blind photographic decipherment
