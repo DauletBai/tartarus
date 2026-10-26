@@ -1,0 +1,98 @@
+[
+  {
+    "file": "P228706_edition.html",
+    "url": "https://oracc.museum.upenn.edu/dcclt/P228706",
+    "returncode": 0,
+    "valid": true,
+    "bytes": 64413,
+    "error": ""
+  },
+  {
+    "file": "P228706_card.html",
+    "url": "https://cdli.earth/artifacts/228706",
+    "returncode": 0,
+    "valid": true,
+    "bytes": 63561,
+    "error": ""
+  },
+  {
+    "file": "P228706_photo.jpg",
+    "url": "https://cdli.earth/dl/photo/P228706.jpg",
+    "returncode": 0,
+    "valid": true,
+    "bytes": 16052094,
+    "error": ""
+  },
+  {
+    "file": "P228706_lineart.jpg",
+    "url": "https://cdli.earth/dl/lineart/P228706_l.jpg",
+    "returncode": 56,
+    "valid": false,
+    "bytes": 0,
+    "error": "curl: (56) The requested URL returned error: 404\n"
+  },
+  {
+    "file": "P227815_edition.html",
+    "url": "https://oracc.museum.upenn.edu/dcclt/P227815",
+    "returncode": 0,
+    "valid": true,
+    "bytes": 36372,
+    "error": ""
+  },
+  {
+    "file": "P227815_card.html",
+    "url": "https://cdli.earth/artifacts/227815",
+    "returncode": 0,
+    "valid": true,
+    "bytes": 64134,
+    "error": ""
+  },
+  {
+    "file": "P227815_photo.jpg",
+    "url": "https://cdli.earth/dl/photo/P227815.jpg",
+    "returncode": 0,
+    "valid": true,
+    "bytes": 5587123,
+    "error": ""
+  },
+  {
+    "file": "P227815_lineart.jpg",
+    "url": "https://cdli.earth/dl/lineart/P227815_l.jpg",
+    "returncode": 56,
+    "valid": false,
+    "bytes": 0,
+    "error": "curl: (56) The requested URL returned error: 404\n"
+  },
+  {
+    "file": "P386409_edition.html",
+    "url": "https://oracc.museum.upenn.edu/dcclt/signlists/P386409",
+    "returncode": 0,
+    "valid": true,
+    "bytes": 80336,
+    "error": ""
+  },
+  {
+    "file": "P386409_card.html",
+    "url": "https://cdli.earth/artifacts/386409",
+    "returncode": 0,
+    "valid": true,
+    "bytes": 68413,
+    "error": ""
+  },
+  {
+    "file": "P386409_photo.jpg",
+    "url": "https://cdli.earth/dl/photo/P386409.jpg",
+    "returncode": 56,
+    "valid": false,
+    "bytes": 0,
+    "error": "curl: (56) The requested URL returned error: 404\n"
+  },
+  {
+    "file": "P386409_lineart.jpg",
+    "url": "https://cdli.earth/dl/lineart/P386409_l.jpg",
+    "returncode": 0,
+    "valid": true,
+    "bytes": 123981,
+    "error": ""
+  }
+]

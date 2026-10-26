@@ -1,0 +1,19 @@
+{
+  "date": "2026-10-26",
+  "client_url": "https://www.ebl.lmu.de/static/js/main.cffb60e4.js",
+  "client_sha256": "2f34f1de2e6761c44004651858e5840f940e54f399f136eb5aaa28f59b0465bf",
+  "observed_route": "/fragments/${encodeURIComponent(e)}/photo",
+  "public_photo_url": "https://www.ebl.lmu.de/api/fragments/BM.34950/photo",
+  "authentication": "no account tokens supplied; public GET; no website access control bypass",
+  "failed_alternative_requests": [
+    {
+      "url": "https://www.penn.museum/collections/object.php?irn=566924",
+      "http_status": 403
+    },
+    {
+      "url": "https://www.britishmuseum.org/collection/object/W_Sp-II-470",
+      "http_status": 403
+    }
+  ],
+  "notes": "eBL metadata reports hasPhoto=true; no electronic transliteration in eBL snapshot. Used DCCLT edition separately."
+}

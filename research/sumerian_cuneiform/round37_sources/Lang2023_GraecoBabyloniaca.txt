@@ -1,0 +1,380 @@
+            CONSTRUCTION OF IDENTITIES AND
+        LATE MESOPOTAMIAN ARCHIVES AS FOUND IN
+      THE FRAGMENTS OF THE “GRAECO-BABYLONIACA”
+
+
+                                                  Martin Lang
+                                              University of Innsbruck
+
+        This article focuses on the social reality behind the so-called Graeco-Babyloniaca, a small sample
+        of less than two dozen fragments of clay tablets, mainly inscribed with cuneiform signs on the
+        obverse, with alphabetic Greek signs on the reverse. As possibly one of the last signs of life of the
+        time-honored cuneiform script, in a Janus-faced manner they hint at the long tradition of Babylonian
+        scholarship and learning on the one hand, and at its disappearance via script-obsolescence on the
+        other. Notwithstanding the fact that there are only a few tablets, the aim of this article is to trace
+        the social group behind the textual remains of the Graeco-Babylonian tablets and tablet fragments.
+
+
+    The Graeco-Babyloniaca comprise a sample of 17 cuneiform tablets, mostly heavily damaged,
+    inscribed with texts composed in Sumerian and/or Akkadian language but transliterated into Greek
+    script (see Table 1 at the end of the article).1 In the main, they bear a cuneiform inscription on
+    the obverse and a transliteration into Greek on the reverse. At least two tablets are demonstrably
+    inscribed with a Greek transliteration of a Babylonian text only.2 More questions remain open than
+    answered; nevertheless, some hints at the social—and individual—identities of the authors are
+    hidden in the tablet fragments from the final phase of cuneiform writing.
+
+    ARCHIVAL CONTEXT, SOCIOCULTURAL MEANING, AND GENRES
+
+    The archival context of the texts is unclear. At least the tablets in the British Museum can be ascribed
+    to certain circumstances of acquisition; therefore, they allow an attribution to Babylon, and more
+    exactly to the library of Esaĝil as the alleged findspot (Clancier 2009: 248 and passim). Luckily, we are
+
+
+      1 The present editorial situation and the backbone of our epigraphical and philological understanding were estab-
+      lished by Sollberger 1962; Geller 1983; Geller 1997; Maul 1991; Westenholz 2007. The numbering of the tablets in
+      Geller’s edition (1997) has still been a point of reference in subsequent publications. For insights from the perspec-
+      tive of Semitistics, see Knudsen 1989–1990; 1990; 1995. Text No. 18 turned out to be written in Aramaic transcribed
+      into Greek letters (Krebernik 2002), and therefore it is no longer part of the Graeco-Babyloniaca in sensu stricto. An
+      essential overview and a reevaluation is found in Oelsner 2013, and new insights are advanced in Stevens 2019. The
+      present author owes thanks to the organizers of the conference, Saana Svärd and Sebastian Fink, and to the review-
+      ers who enriched this paper with their insights and fruitful remarks.
+      2 That is, texts No. 14 (BM 38461), No. 15 (Schileico 1928–1929: 11–13, original lost; and No. 17 (Ash. Mus. 1937.993).
+
+
+
+
+Volume 11(2) (2023), pp. 130–137
+DOI 10.23993/store.129810
+Licensed under Creative Commons 4.0 (CC BY-NC-SA 4.0) license.
+ISSN: 2323-5209
+                           Martin Lang: Construction of Identities and Late Mesopotamian Archives                     131
+
+
+better informed about the Sitz im Leben of the tablets than about their find spots. The texts of those
+tablets represent a more or less homogenous picture of a certain level of cuneiform curriculum. The
+contents of the extant tablet fragments clearly demonstrate that almost all of the texts are situated
+in the milieu of cuneiform learning, ranging from a slightly advanced to advanced level of educa-
+tion (Gesche 2001: 184–185; Oelsner 2013: 148–149). The genres represented in the sample are
+lexical lists, scholarly texts like a fragment of the Šamaš-hymn, or a piece of the series TIN.TIR on
+the hagios topos of Babylon; furthermore, one finds fragments of apotropaic rituals and fragments
+which most probably contain literary colophons (No. 14 [BM 38461], No. 15 [Schileico 1928–1929:
+11–13, original lost]). They mirror a familiarity with and an esteem for the time-honored cuneiform
+tradition and the scholarly self-image connected to it. The last-mentioned fragments of texts even
+offer a superficial glimpse into the prosopography of the authors (Clancier 2009: 252).
+
+LINGUISTIC AND SOCIO-LINGUISTIC PECULIARITIES
+
+Until the late third and second centuries bce, the Babylonian language was represented in
+essential linguistic domains.3 Its use and presence were gradually declining and, subsequently,
+it eked out an insular existence within a single specific social group (i.e., the personnel of the
+Babylonian temple, the priests). Thus, the Graeco-Babyloniaca emerged from a multilingual
+and literal milieu in which Sumero-Akkadian texts were still being handed down and performed
+within the social framework of the late Babylonian temple. As such, this institution served as a
+linguistic enclave, which was able to decelerate the final language shift.4
+    Aramaic and Greek were living languages; while the former almost certainly must have
+been spoken by the authors of the tablets (Clancier 2011: 767–769), the latter served as a
+language of administration (Oelsner 2002a: 186; Westenholz 2007: 293), and notabiles from
+the Babylonian society bore Greek names in addition to their native ones (Boiy 2004: 289–293;
+2005; Monerie 2014; 2015). With its phonetic character, the Greek alphabet seemed to be suit-
+able to represent the correct pronunciation of the scholarly texts. The Akkadian language, being
+represented in the extant texts, shows the characteristics of Late Babylonian (Hackl 2021a;
+Streck 2014).5 Aramaic influence due to Akkadian-Aramaic language contact (Streck 2011)
+is possible, and even expected (Knudsen 1995), but due to the frozen character of the genres
+found on the preserved tablets, and the lack of colloquial situations and everyday speech, the
+Aramaic is almost not recognizable.
+    The writers of our Graeco-Babylonian tablets must have been indigene Babylonians, and we
+have to abandon the idea that it was Greeks who could have used these transliterations in order
+to learn Akkadian and Sumerian (Sollberger 1962: 63; Scholz 2008). The opposite was claimed
+by Schileico in the late 1920s, and the leading opinion today follows his perspective: obviously
+it was Babylonian scholars, belonging to families of priests,6 and bearing Babylonian names
+
+
+  3 Akkadian as a dead or extinct language, see Hackl 2021b; for the characteristics and peculiarities of Late
+  Babylonian in general, see Hackl 2021a; for Late Babylonian represented in the Akkadian-Greek transliterations
+  on the tablet fragments, see Lang 2021.
+  4 “Vielmehr ist von einer stetig kleiner werdenden babylonischen Sprachgemeinschaft (bzw. Gemeinschaften in
+  Form von Sprachinseln) im städtischen Milieu auszugehen, deren Sprecher den wachsenden kulturellen Druck der
+  Kontaktgesellschaft aufgrund von Spracheinstellungen teilweise ausgleichen und so den endgültigen Sprachwechsel
+  bis in die letzten Jahrhunderte des ersten Jahrtausends v.Chr. verzögern konnten” (Hackl 2018: 234).
+  5 On the peculiarities of Akkadian as represented in transliterations on the Graeco-Babylonian tablets, see Lang 2021.
+  6 On the social environment and historical context of the Babylonian priesthood, see Geller 1997: 81; Clancier
+  2011; Clancier & Monerie 2014; Kessler 2014; Krul 2018: 9–78.
+
+
+                                    Studia Orientalia Electronica 11(2) (2023): 130–137
+                          Martin Lang: Construction of Identities and Late Mesopotamian Archives                  132
+
+
+(Geller 1997: 81, see also note 10 below) as the last persons preserving the ancient Babylonian
+culture, who used the Greek alphabet (Schileico 1928–1929: 11). It was surmised that, whereas
+the exact sites of discovery were unknown, the respective texts must have been found together
+with astronomical and literary cuneiform texts written by Babylonians (Oelsner 1972: 358;
+Westenholz 2007: 274; Clancier 2009: 248 and passim).
+
+DATING
+
+An exact dating is impossible, as there are no known archival contexts or date indications in the
+colophons on the tablets. However, besides crucial epigraphical findings, our sample regarding
+a possible dating horizon fits the general situation of the very late period of cuneiform scholar-
+ship in Mesopotamia: our latest dated texts7 are astronomical8 and cultic compositions, like
+Emesal laments; the most recent manuscript stems from the Arsacid period, the 80s of the first
+century bce (Löhnert 2009: 19; Gabbay 2014: 249).
+    Finally, it is an astronomical text that brings up the rear with its dating to 75 ce (Sachs 1976).
+Attempts to place the tablets by means of epigraphical dating have hitherto led to a time range
+around the beginning of the common era (Geller 1997 passim; Westenholz 2007: 274). This
+means that our documents must have been written in the Parthian period (141 bce to 224 ce).
+The most recent dating attempt situates the tablets in the early part of the suggested range
+(i.e., the late second or early first century bce) (Stevens 2019: 141). A systematic evaluation of
+the epigraphy is still a desiderate but it has its limits.
+
+THE QUEST FOR “IDENTITY” AS MIRRORED IN THE SMALL SAMPLE OF
+GRAECO-BABYLONIAN TABLETS
+
+The identity of an individual within a group and the group’s self-definition are inter alia linked to the
+use of a common language or sociolect and the claim for a connecting and identity-founding tradi-
+tion. The latter can be traced in the scholarly literary and genealogical constructions (Lenzi 2008;
+Beaulieu 2000) of this particular period, which asserted the claim of antiquity and meaningfulness.
+In contrast to Egypt with its rather long tradition of scholarly coexistence with Graeco-Egyptian
+digraphy,9 the Graeco-Babylonian sources reflect the milieu of cuneiform learning and its long-
+lasting and time-honored tradition. On the other hand, in a Janus-faced manner, they reveal the fact
+of script obsolescence (Houston, Baines & Cooper 2003; on this period, Brown 2008).
+    Leaving aside the writing of Aramaic in an alphabetic script, which had a long tradition in
+Mesopotamia, the phenomenon of digraphy (i.e., the use of two writing systems) in these very late
+documents in a shrinking world of cuneiform scholarship hints at persons moving between two
+
+
+
+  7 The latest attestations of cuneiform script in economical texts stem from the Raḫimesu Archive and date to
+  94/93 bce (van der Spek 1998; see also more recently Hackl 2016 with mentions of previous literature). For a
+  survey of the last known archives and the terminal attestation of cuneiform documents, see Oelsner 2002b: 9–18.
+  8 David Brown (2008: 94) explains the phenomenon of script obsolescence as follows: “scholars with good
+  astronomical skills had, during the course of the second and ﬁrst centuries bc, written in cursive scripts, in the
+  languages of a far larger group of potential consumers, but had thereby undermined cuneiform’s last stronghold.
+  The temples learned to do without cuneiform and survived for some centuries longer, either by transliterating
+  Akkadian and Sumerian into a cursive script (probably Greek) on perishable materials, or by translating the texts
+  necessary for the practice of the cult into a living language (probably Aramaic).”
+  9 See Barns 1978 and most recently Quack 2017 for a full documentation of the polymorphous Graeco-Egyptian
+  documentation.
+
+
+                                   Studia Orientalia Electronica 11(2) (2023): 130–137
+                          Martin Lang: Construction of Identities and Late Mesopotamian Archives                    133
+
+
+worlds. On the one hand, they were still in touch with the cuneiform tradition and its institutional
+and intellectual heritage; on the other, they participated in the daily life of Hellenistic urbanism.
+    Leaving the quest for a group identity aside, if we were to seek traces of a personal or indi-
+vidual identity within the group, we possibly find them in two fragments of our sample. A char-
+acter of individuality or personal creativity can somehow be traced in the two tablets inscribed
+with texts that were recognized as dedicatory colophons (No. 14 and No. 15). Though it cannot
+be ruled out that these tablets are school exercises, copies that do not give any information
+about the individual identity of the scribes, they bear traces of personal names,10 containing
+formulaic but in some respect individually composed phrases.11 As such, they clearly form
+deposition statements and hint at the votive character of these fragments (Pearce 1993: 189) and
+the dedicative intent of their respective writers.
+    The general question of this volume is dedicated to the search for identities hidden in and
+behind the archival findings. In themselves, the Graeco-Babyloniaca do not form an archive,
+and yet the texts may have been part of the inventory of an archive. A considerable number
+of them were possibly stored in the archive of the Esaĝil. As small as the number of hitherto-
+existing Graeco-Babyloniaca texts may be, they shed light on a very distinct part of Babylonian
+society and can offer information about script obsolescence and language death.
+    The social group of those who were still able to write cuneiform in this late period had become
+steadily smaller from the Hellenistic period onwards. On the one hand, this is due to the fact
+that the bearers of the old written culture were no longer finding strong support in the alliance
+between the temple and palace;12 as political and economic power shifted to newly founded urban
+centers, they became more or less obsolete (Brown 2008: 76–77). On the other hand, this group—
+ad intra—became smaller and smaller due to increasingly strict access regulations and purity rules
+(Still 2019: 191–195; Waerzeggers & Jursa 2008) On this horizon of self-perception of a group
+identity, there also emerged new literary activity, which has recently been called Late Babylonian
+priestly literature (Jursa & Debourse 2020; Jursa 2020). The œuvre of Berossos, with its cultural
+history of Babylonia written in Greek and its claim to demonstrate the importance—and, above
+all, the venerable age—of Babylonian culture (van der Spek 2008; Lang 2013: 53–55), must have
+arisen from this context as well. Berossos himself was a descendant of Esaĝil’s priesthood.
+    The Graeco-Babyloniaca do not derive from the third century bce, but most probably origi-
+nate from the first, the one or the other possibly from the second cent. bce. It is therefore
+the social group of the Babylonian priests who apparently last gained literacy—including the
+technique to record their contents with other writing materials than clay—around the turn of the
+century by composing their school texts with the help of the Greek phonetic script. According
+to Joachim Oelsner, the Graeco-Babyloniaca show the transformation from a mere writing of
+Akkadian in cuneiform to writing on other media than clay, which means “as a technical means
+to facilitate the transmission of written texts – including the traditional ones” (Oelsner 2002a:
+191). Be that as it may, leaving the path of the traditional curriculum with its stable and inert
+connection between script and language must have accelerated the language death itself.
+
+
+  10 According to text No. 15, l.1, the writer of the dedicative colophon from St. Petersburg clearly bore Babylonian
+  names: … σα βηλ ιφοσ μαρ σα [εα?]βαν (= … ša Bēl-īpuš mār ša [Ea?]-bāni (Geller 1997: 81)).
+  11 Inter alia, see the formula(tion) in text No. 14, l.7: “τουβ λιβει τουβ σειρ”—ṭûb libbīya ṭûb šīrīya (reading ac-
+  cording to Oelsner 2013: 152); while it indeed has the character of a stock phrase or a set piece (“Versatzstück”),
+  it is individually applied to the writer and his personal salus animae. We know this phraseology from other late
+  colophons (Clancier 2009: 154; Cavigneaux 1981: 37–38; Gesche 2001: 153–166).
+  12 For the interaction between temple and palace in Hellenistic times cp. Clancier & Monerie 2014.
+
+
+                                   Studia Orientalia Electronica 11(2) (2023): 130–137
+                         Martin Lang: Construction of Identities and Late Mesopotamian Archives                           134
+
+
+Table 1 Table of the extant tablet fragments according to their contents, epigraphical constitution, “dating,”
+                                          and availability online.
+
+      Text             Content              External ­appearance          Proposed dating         Availability as digital /
+                                                of the texts                                      online resources (CDLI
+                                                                                                   number, if available)
+ (1) BM 34797     Ur5-ra=hubullu II,       Cuneiform script on         Around the beginning     P370916
+                  203–214                  obv. and Greek signs on     of the Common Era        <https://cdli.ucla.edu/
+                  (MSL 5,66–67)            rev. preserved              (?)                      search/archival_view.
+                                                                                                php?ObjectID=P370916>
+ (2) BM 35727     Ur5-ra=hubullu II,       Cuneiform inscription       1st cent. bce
+                  228–234                  obv. destroyed and
+                  (MSL 5,68)               restored, only rev.
+                                           preserved
+ (3) BM 34799     Ur5-ra=hubullu III,      Obv. only traces of         1st cent. bce
+                  x + 284–289              cuneiform signs
+                  (MSL 5,117)
+ (4) BM 35726     Ur5-ra=hubullu III,      Cuneiform script on         Around the beginning
+                  290–295                  obv. and Greek signs on     of the Common Era(?)
+                  (MSL 5,117–118)          rev. preserved
+ (5) BM 35458+    Sa (MSL3,22–23;          Obv. destroyed and          1st cent. bce
+                  MSL 2,55)                reconstructed
+ (6) BM 48863     SbA (MSL 3,110)          Cuneiform script on         1st cent. ce
+                                           obv. and Greek signs on
+                                           rev. preserved. Lines of
+                                           cuneiform texts and the
+                                           Greek transliteration do
+                                           not entirely correspond.
+ (7) BM 34781     SbA (MSL 3, 96)          Cuneiform script on         Around the beginning
+ + 35154                                   obv. and Greek signs on     of the Common Era(?)
+                                           rev. preserved.
+ (8) BM 77229     Sb 1–4 (MSL 3, 96)       Cuneiform script on         1st cent. ce
+                                           obv. and Greek signs on
+                                           rev. preserved.
+ (9) BM 33778     Ea IV, 122–123           Cuneiform script on
+                  (MSL 14, 360)            obv. is lost, Greek text
+                                           preserved only.
+ (10) HSM 1137    zi-pà incantation        Cuneiform script on         1st cent. ce             P405773
+                                           obv. and Greek signs on     (Geller 1983: 114);      <https://cdli.ucla.edu/
+                                           rev. preserved.             see also Stevens 2019:   search/search_results.php?
+                                                                       140–141:                 SearchMode=Text&Object
+                                                                       1st cent. bce            ID=P405773>
+ (11) BM 34816    Udug.ḫul.la.meš          Cuneiform script on         1st cent. ce             P429963
+                  / Utukkū lemnūtu         obv. and Greek signs on     (Geller 2008: 44)        <https://cdli.ucla.edu/
+                  (UH IX 87ʼ–91ʼ)          rev. preserved.                                      search/archival_view.
+                                                                                                php?ObjectID=P429963>
+ (12) BM 33769    Šamaš Hymn               Cuneiform script on         1st cent. bce            P368607
+                  (BWL 136,                obv. and Greek signs on                              <https://cdli.ucla.edu/
+                  lines 169–172)           rev. preserved.                                      search/search_results.php?
+                                                                                                SearchMode=Text&Object
+                                                                                                ID=P368607>
+ (13) VAT 412     Unassigned,              Cuneiform script on         Around the beginning
+                  but seems to be          obv. and Greek signs        of the Common Era?
+                  inscribed with           on rev. preserved, but
+                  excerpts typical         the extant texts do not
+                  of school texts          correspond.
+ (14) BM 38461    (literary)               Inscribed with Greek
+                  colophon                 letters only
+                                           (Oelsner 2013: 151)
+ (15) AfO 5       (literary)               Inscribed with Greek                                 Original now lost, image
+ (1928–1929:      colophon                 letters only                                         and drawing see AfO 5
+ 11–13)                                    (Oelsner 2013: 153)                                  (1928–1929), Tablet VIII.
+
+
+
+
+                                      Studia Orientalia Electronica 11(2) (2023): 130–137
+                       Martin Lang: Construction of Identities and Late Mesopotamian Archives                           135
+
+
+     Text            Content           External ­appearance          Proposed dating            Availability as digital /
+                                           of the texts                                         online resources (CDLI
+                                                                                                 number, if available)
+(16) BM 34798    TIN.TIR.KI                                       1st cent. ce              P479205
+                 (George 1992:                                    (Geller 1997: 82);        <https://cdli.ucla.edu/
+                 37–41)                                           2nd cent. bce             search/search_results.php?
+                                                                  (Black & Sherwin-         SearchMode=Text&Object
+                                                                  White 1984: 143;          ID=P479205>
+                                                                  Stevens 2019: 139)
+(17) Ash. Mus.   Bilingual            No cuneiform sign           2nd cent. bce             P412445
+1937.993.        incantation          visible, obviously it was                             <https://cdli.ucla.edu/
+                 (Maul 1991;          inscribed with Greek                                  search/archival_view.
+                 Knudsen 1995)        letters only                                          php?ObjectID=P412445>
+                                      (Geller 1997: 84; Oelsner
+                                      2013: 159 n. 45).
+
+
+REFERENCES
+B
+
+
+
+
+                                 Studia Orientalia Electronica 11(2) (2023): 130–137
+Martin Lang: Construction of Identities and Late Mesopotamian Archives   136
+
+
+H
+
+
+
+
+         Studia Orientalia Electronica 11(2) (2023): 130–137
+                          Martin Lang: Construction of Identities and Late Mesopotamian Archives                137
+
+
+Monerie, Julien 2015. Writing Greek with Weapons Singularly Ill-Designed for the Purpose: The Transcription of
+        Greek in Cuneiform. In: R. rollinger & E. Van dongen (eds), Mesopotamia in the Ancient World: Impact,
+        Continuities, Parallels: Proceedings of the Seventh Symposium of the Melammu Project Held in Obergurgl,
+        Austria, November 4–8, 2015: 349–363. Münster: Ugarit.
+oelsner, Joachim 1972. Zur Bedeutung der “Graeco-Babyloniaca” für die Überlieferung des Sumerischen und
+        Akkadischen. Mitteilungen des Instituts für Orientforschung 17: 356–364.
+oelsner, Joachim 2002a. Hellenization of the Babylonian Culture? In: A. Panaino & G. Pettinato (eds), Ideologies
+        as Intercultural Phenomena: Proceedings of the Third Annual Symposium of the Assyrian and Babylonian
+        Intellectual Heritage Project. Held in Chicago, USA, October 27–31, 2000 (Melammu Symposia 3):
+        183–196. Milan: Università di Bologna & IsIao.
+oelsner, Joachim 2002b. “Sie ist gefallen, sie ist gefallen, Babylon die große Stadt”: Vom Ende einer Kultur.
+        (Sitzungsberichte der Sächsischen Akademie Wissenschaften, Philologisch-Historische Klasse 138(1))
+        Stuttgart: Verlag der Sächsischen Akademie der Wissenschaften zu Leipzig.
+oelsner, Joachim 2013. Überlegungen zu den Graeco-Babyloniaca. In: L. sassMannshausen (ed.), He Has Opened
+        Nisaba’s House of Learning: Studies in Honor of Åke Waldemar Sjöberg on the Occasion of His 89th
+        Birthday on August 1st 2013 (Cuneiform Monographs 46): 147–164. Leiden: Brill.
+Pearce, Laurie 1993. Statements of Purpose: Why the Scribes Wrote. In. M.E. cohen, D:C. snell & D.B. weisberg
+         (eds), The Tablet and the Scroll: Near Eastern Studies in Honor of William W. Hallo: 185–193. Bethesda,
+         MD: CDL Press.
+Quack, Joachim F. 2017. How the Coptic Script Came About. In: P. dils, E. grossMan, T.S. richter & W. schenkel
+        (eds), Greek Influence on Egyptian-Coptic: Contact-Induced Change in an Ancient African Language
+        (DDGLC Working Papers 1= LingAeg SM 17): 27–96. Hamburg: Widmaier.
+sachs, Abraham 1976. The Latest Datable Cuneiform Tablets. In: B.L. eichler, J.W. heiMerdinger & Å.W. sJöberg (eds),
+         Kramer Anniversary Volume (Alter Orient und Altes Testament 25): 379–98. Kevelaer: Butzon & Bercker.
+schileico, Wladimir G. 1928–1929. Ein babylonischer Weihtext in griechischer Schrift. Archiv für Orientforschung
+         5: 11–13.
+scholz, Bernhard 2008. Τὴν Γλῶσσαν Μάθωμεν Ἀκκαδικήν: Der Sinn der Graeco-Babyloniaca. In: P. Mauritsch,
+        W. PeterMandl, R. rollinger & C. ulF (eds), Antike Lebenswelten: Konstanz—Wandel—Wirkungsmacht:
+        Festschrift für Ingomar Weiler zum 70. Geburtstag (Philippika 25): 455–464. Wiesbaden: Harrassowitz.
+sollberger, Edmond 1962. Graeco-Babyloniaca. Iraq 24: 63–72.
+Van der sPek, Robartus J. 1998. Cuneiform Documents on Parthian History: The Rahimesu Archive: Materials for the
+         Study of the Standard of Living. In: J. wiesehöFer (ed.), Das Partherreich und seine Zeugnisse / The Arsacid
+         Empire: Sources and Documentation (Historia Einzelschriften 122): 205–258. Stuttgart: Franz Steiner.
+Van der sPek, Robartus J. 2008. Berossus as a Babylonian Chronicler and Greek Historian. In: R.J. Van der sPek
+         (ed.), Studies in Ancient Near Eastern World View and Society Presented to Marten Stol on the Occasion of
+         His 65th Birthday, 10 November 2005, and His Retirement from the Vrije Universiteit Amsterdam: 277–318.
+         Bethesda, MD: CDL Press.
+steVens, Kathryn 2019. Between Greece and Babylonia: Hellenistic Intellectual History in Cross-Cultural
+        Perspective. Cambridge: CUP.
+still, Bastian 2019. The Social World of the Babylonian Priest. (Culture and History of the Ancient Near East 103)
+         Leiden: Brill.
+streck, Michael P. 2011. Akkadian and Aramaic Language Contact. In: S. weninger (ed.), The Semitic Languages:
+        An International Handbook (Handbooks of Linguistics and Communication Science 36): 416–424. Berlin:
+        De Gruyter.
+streck, Michael P. 2014. Die Kasusflexion im Status rectus des Neu- und Spätbabylonischen. In: M. krebernik &
+        H. neuMann (eds), Babylonien und seine Nachbarn in neu- und spätbabylonischer Zeit: Wissenschaftliches
+        Kolloquium aus Anlass des 75. Geburtstags von Joachim Oelsner, Jena, 2. und 3. März 2007 (Alter Orient
+        und Altes Testament 369): 247–288. Münster: Ugarit.
+waerzeggers, Caroline & Michael Jursa 2008. On the Initiation of Babylonian Priests. Zeitschrift für Altorientalische
+       und Biblische Rechtsgeschichte 14: 1–38.
+westenholz, Aage 2007. The Graeco-Babyloniaca Once Again. Zeitschrift für Assyriologie 97: 262–313.
+
+
+
+
+                                   Studia Orientalia Electronica 11(2) (2023): 130–137
+

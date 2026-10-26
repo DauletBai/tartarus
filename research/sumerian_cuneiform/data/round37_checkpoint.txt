@@ -1,0 +1,11 @@
+{
+  "status": "passed",
+  "external_source_hashes": 18,
+  "crop_dimensions_and_hashes": 9,
+  "editorial_rows": 12,
+  "external_alphabet_candidates": 7,
+  "restored_epsilon_excluded": true,
+  "local_links": 29,
+  "new_independently_established_sound_values": 0,
+  "book_PDF": "unchanged"
+}

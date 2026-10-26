@@ -1,0 +1,13 @@
+﻿pid,row_id,line,pronunciation_model,main_sign_model,all_cells,status
+P228706,P228706.60,r ii' 11',* ⸢x⸣-[x?],⸢UD⸣,r ii' 11'11' |  | * ⸢x⸣-[x?] | ⸢UD⸣,editorial transcription; square brackets and uncertainty preserved
+P228706,P228706.61,r ii' 12',* ⸢šu-u₂⸣,U.UD,r ii' 12'12' | [[šu₁₆> ]] | * ⸢šu-u₂⸣ | U.UD,editorial transcription; square brackets and uncertainty preserved
+P228706,P228706.62,r ii' 13',* e,UD.DU,r ii' 13'13' | [[e₃> ]] | * e | UD.DU,editorial transcription; square brackets and uncertainty preserved
+P228706,P228706.63,r ii' 14',* uḫ,UD.KUŠU₂,r ii' 14'14' | [[uḫ₂> ]] | * uḫ | UD.KUŠU₂,editorial transcription; square brackets and uncertainty preserved
+P228706,P228706.64,r ii' 15',* i-ti,UD×(U.U.U),r ii' 15'15' | [[iti> ]] | * i-ti | UD×(U.U.U),editorial transcription; square brackets and uncertainty preserved
+P227815,P227815.9,r i' 1',* ⸢e⸣,[UD.DU],r i' 1'r 1' | [[e₃> ]] | * ⸢e⸣ | [UD.DU],editorial transcription; square brackets and uncertainty preserved
+P227815,P227815.10,r i' 2',* a-⸢aḫ⸣,[UD.KUŠU₂],r i' 2'2' | [[aḫ₆> ]] | * a-⸢aḫ⸣ | [UD.KUŠU₂],editorial transcription; square brackets and uncertainty preserved
+P227815,P227815.11,r i' 3',* i-⸢ti⸣,[UD×(U.U.U)],r i' 3'3' | [[iti> ]] | * i-⸢ti⸣ | [UD×(U.U.U)],editorial transcription; square brackets and uncertainty preserved
+P386409,P386409.10,r i 3',e,UD.DU,"r i 3'3' | [[e₃ > ]] * | e | UD.DU | [...] | [...] | (pronounced) e, (written) UD.[...]",editorial transcription; square brackets and uncertainty preserved
+P386409,P386409.11,r i 4',a-ra,UD.DU,"r i 4'4' | [[ara₄ > ]] * | a-ra | UD.DU | [...] | [...]1 | (pronounced) ara, (written) UD.[...]",editorial transcription; square brackets and uncertainty preserved
+P386409,P386409.12,r i 5',sag-us₂,UD.DU,r i 5'5' | [[saŋus > ]] * | sag-us₂ | UD.DU | [...] | [...] | (pronounced) sagus written UD.[DU] []...],editorial transcription; square brackets and uncertainty preserved
+P386409,P386409.13,r i 6',peš-peš,UD!-[UD],"r i 6'6' | [[peš₁₂-peš₁₂ > ]] * | peš-peš | UD!-[UD] | [...] | [...] | (pronounced) pešpeš, (written) UD.[...]",editorial transcription; square brackets and uncertainty preserved
