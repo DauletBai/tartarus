@@ -64,6 +64,29 @@ chain=[
  dict(link='Sumerian tud/dud to early tog/tug',status='not established',support='shared broad semantic field and limited sound resemblance',gap='no demonstrated repeated d→g correspondence or dated transmission chain'),
  dict(link='early tog/tug to medieval birth forms',status='documented in linguistic publications; selected medieval edition checked',support='Asimkhan2021 E29 citation; Kuun1880 printed40 and288; Jacquesson2002',gap='not a new direct decipherment of E29; manuscript autograph not inspected'),
  dict(link='medieval steppe birth forms to modern Kazakh tuw/туу',status='supported historical comparison',support='multi-form paradigm, related inflection, regional g/w controls',gap='does not establish Kazakh as sole ancestor of all compared languages')]
+# Reuse the 13-record screen, keeping the original MIN columns intact.
+with (R/'data/round42_MIN_screen.csv').open(encoding='utf-8-sig') as f:
+ screen=list(csv.DictReader(f))
+values={(v['value'],v['subIndex']) for v in json.loads((S/'eBL_TU.json').read_text())['values']}
+all_hits=[]
+for row in screen:
+ doc=json.loads((R/row['source']).read_text());hits=[]
+ for line in doc.get('text',{}).get('lines',[]):
+  if line.get('type')!='TextLine':continue
+  for word in line.get('content',[]):
+   if word.get('type')!='Word':continue
+   for part in word.get('parts',[]):
+    if part.get('type') in ('Reading','Logogram') and (part.get('name'),part.get('subIndex',1)) in values:
+     h=dict(line=line.get('prefix'),word=word['value'],language=word.get('language'),reading=part['value'],enclosure=part.get('enclosureType',[]),flags=part.get('flags',[]),name_breaks=part.get('nameBreaks',[]))
+     hits.append(h);all_hits.append(h)
+ row['TU_value_candidate_hits']=len(hits)
+ row['TU_Sumerian_candidate_hits']=sum(h['language']=='SUMERIAN' for h in hits)
+ row['TU_candidate_details']=json.dumps(hits,ensure_ascii=False)
+ row['TU_screen_scope']='editorial readings matched to12 TU values; not image recognition; language and restoration retained'
+assert len(screen)==13 and sum(int(v['editorial_text_lines']) for v in screen)==97
+assert len(all_hits)==4 and all(v['language']=='AKKADIAN' for v in all_hits)
+out('round42_MIN_screen.csv',screen)
+chain.append(dict(link='TU sound key in archived Graeco-Babyloniaca',status='no preserved Sumerian birth pair established in this sample',support='13 records;7 editions;97 editorial lines;4 candidate readings all Akkadian',gap='li-li-tu!# corrected/damaged; ar2-da-t[u partial; [u]l-tu lacks Greek counterpart; pu-u2-tu restored'))
 out('round43_chain_status.csv',chain)
 
 # The sips bug is restricted to (0,0), not to each zero axis separately.
@@ -155,6 +178,9 @@ report='''БЛОК43. ТУУ: ИСТОРИЧЕСКАЯ ПАРАДИГМА И Н�
 
 Важное уточнение сравнения: обоснованный для степного материала переход g/ğ→w ещё не даёт перехода шумерского d→g. Конечное d в tud нельзя автоматически считать казакским прошедшим -ды. Для этого нужны собственные повторяемые соответствия и независимые контексты. Сходство области рождения остаётся полезным кандидатом, но равенство TU=современное туу для всех употреблений не следует из учебного списка.
 
+ДОПОЛНЕНИЕ: ПРЯМОЙ ЗВУКОВОЙ КЛЮЧ ДЛЯ TU
+Проверены13 сохранённых записей клинописно-греческих памятников:7 с редакцией,97 строк включая обе письменности;6 без текстовой редакции не объявляются обследованными по всем клиньям. По12 значениям TU в современном справочнике найдены4 кандидатных чтения в2 записях, все в аккадских колонках. BM34816: li-li-tu!# — исправлено и повреждено; ar₂-da-t[u — частичная утрата; [u]l-tu — целевой tu не помечен как утраченный, но греческая аккадская пара для этой строки не представлена. BM35727: pu-u₂-tu полностью восстановлено. Нормализованные массивы знаков включают восстановления: ABZ58 там нельзя считать фотографическим доказательством сохранного TU. Ни одна из4 записей не даёт сохранную шумерско-греческую пару со значением рождения. Это результат ограниченного поиска в редакциях, не доказательство отсутствия таких ключей вообще. Результаты добавлены в существующий реестр round42_MIN_screen.csv; новый реестр не создавался.
+
 5. ПРОВЕРКА ИНСТРУМЕНТА ВЫРЕЗАНИЯ ИЗОБРАЖЕНИЙ
 В новом поисковом вырезе MS3178 обнаружено поведение sips: одновременные координаты0,0 дают центральный вырез. На синтетической120×100 сетке каждая точка кодирует координаты цветом. Для выреза20×20 вместо начала0,0 получено50,40. Проверены ещё0,10;10,0;10,10 — они дают правильное начало. Следовательно, первоначальное подозрение обо всех нулевых координатах было слишком широким.
 
@@ -165,26 +191,12 @@ report='''БЛОК43. ТУУ: ИСТОРИЧЕСКАЯ ПАРАДИГМА И Н�
 
 Для шумерской части достигнут иной результат: теперь точно назван недоказанный переход между двумя участками цепи. Наличие глины с древними знаками и сходного современного глагола не заполняет его автоматически. Историческое происхождение всеобщего равенства, первенство одного современного языка или внеземная передача разума этим сравнением не установлены. Этическая линия книги может обсуждаться отдельно от этого языкового вывода.
 
-Отдельный литературный фрагмент подготовлен в synthesis/2026-10-26_birth_chain_book_passage.txt. Книга/PDF не редактировались. Следующий предметный контроль должен закрепить чтение шумерской основы и проверить d/g на других независимых лексических рядах; ещё одна подборка удобных созвучий не заменит его.
+Накопительный литературный фрагмент обновляется в synthesis/book_passage.txt; сводка — в synthesis/conclusions_for_book.txt; таблица опор — в synthesis/evidence_for_book.csv. Книга/PDF не редактировались. Следующий предметный контроль должен закрепить чтение шумерской основы и проверить d/g на других независимых лексических рядах; ещё одна подборка удобных созвучий не заменит его.
 '''
 reportpath='observations/2026-10-26_round43_birth_chain_and_graphic_controls.txt'
 (R/reportpath).write_text(report,encoding='utf-8')
-passage='''ТУУ: СЛЕД, КОТОРЫЙ МОЖНО ПРОСЛЕДИТЬ
-Литературный фрагмент для возможного включения; в рукопись не вставлен
-
-Когда я ищу память языка, мне важно увидеть, как знакомый смысл проходит через разные времена и способы письма. У такого поиска есть особое мгновение: передо мной возникает целый ряд форм, и слово обретает своё окружение.
-
-На странице40 издания Codex Cumanicus, подготовленного Гезой Кууном в1880 году, стоят togarmen, togdum, toggil. Рядом дан вариант tuarmen. Передо мной несколько способов выразить рождение. Я сопоставляю их с родным туу и его формами: туамын, тудым, ту. В этих рядах можно проследить и сохраняющийся смысл, и способы его грамматического оформления.
-
-На той же странице записано kar yagdi. Мне близко звучание казакского қар жауды. Снег остаётся қар, а действие получает форму, в которой узнаётся знакомое окончание. Здесь же встречаются atagdim и jarastirdum. Я сопоставляю их с атадым и жарастырдым. Так отдельное слово входит в более широкий ряд: называние, согласование, рождение, природное событие.
-
-Для меня особенно ценна эта множественность. Память языка проявляется в связи корня, смысла и присоединяемых частей. Переходы звучания тоже обретают порядок, когда рядом оказываются несколько слов и разные формы одного глагола. Я вижу здесь возможность идти от узнавания к последовательному сравнению.
-
-Современный казакский язык сохраняет живую связь с этим словесным пространством степи. Мой опыт носителя помогает услышать её, а письменные записи позволяют проверить услышанное. В такой работе близость родного языка к прошлому становится исследовательским инструментом.
-
-Шумерское сопоставление рождения открывает следующий, более глубокий слой. К нему я подхожу через сами знаки, древние учебные записи и окружение слова. У каждой ступени этого пути должен быть свой материальный след. Именно так я хочу вести словесную археологию: от знакомого звучания к записи, от записи к связям и дальше — к памяти человеческой мысли.
-'''
-(R/'synthesis/2026-10-26_birth_chain_book_passage.txt').write_text(passage,encoding='utf-8')
+# Synthesis is cumulative and edited in place; this verifier never overwrites it.
+assert (R/'synthesis/book_passage.txt').is_file()
 
 def im(n,c):
  p='round43_sources/'+n+'.png';return '<figure><a href="'+p+'"><img loading="lazy" src="'+p+'"></a><figcaption>'+html.escape(c)+'</figcaption></figure>'
@@ -194,8 +206,8 @@ page+='<h2>Пять форм рождения</h2><div class="scroll"><table><tr
 for v in paradigm:page+='<tr>'+''.join('<td>'+html.escape(v[k])+'</td>' for k in ['source_form','Latin_column','Kazakh_comparandum','analysis_status'])+'</tr>'
 page+='</table></div><h2>Повторение соответствий на других корнях</h2>'+im('Jacquesson2002_PDF20','Печатная111/PDF20. Четыре поля значений; исторические формы, реконструкции и современные нормы различаются. Не процент происхождения языков.')+im('Asimkhan2021_verbs_PDF20','PDF20, видимый колонтитул260: ранние tog/tug и казакское tuw. Авторская публикация, не самостоятельное чтение нами E29.')
 page+='<h2>Проверка непосредственно по фотографии</h2>'+im('CBS12709_extended_context','CBS12709(+CBS12709a): справа повторяются сходные комплексы, слева группы меняются. Это наблюдение графики; чтения tu/du/hu-du-us взяты из издания. Узкие поисковые полосы не изолируют точные строки.')
-page+='<h2>Проверка клинописного участка остаётся открытой</h2><p>Древний учебный ряд MS3178 требует полной поклиновой колляции. Связь tud/dud → tog/tug не следует из подтверждённого для степного материала g/ğ → w. Для этой связи нужны другие независимые слова и контексты.</p><h2>Контроль координат</h2><p>Синтетическая сетка выявила центровку sips при0,0. Остальные три испытанных сочетания работают правильно. Девять прежних записей с одной нулевой осью этим дефектом не затронуты. Новый явный инструмент прошёл все четыре теста.</p><h2>Отчёт, данные и фрагмент для книги</h2><ul>'
-for p,label in [(reportpath,'Полный отчёт и границы вывода'),('data/round43_CBS12709_crops.csv','Координаты и статусы пяти фотoвырезов'),('data/round43_CBS12709_observations.csv','Что видно и что унаследовано из издания'),('data/round43_birth_paradigm.csv','Пять форм рождения'),('data/round43_inflection_controls.csv','Четыре глагольных контекста'),('data/round43_sound_controls.csv','Условия звуковых соответствий'),('data/round43_regional_comparison.csv','Сравнительная таблица17 строк'),('data/round43_chain_status.csv','Какие участки цепи подтверждены'),('round43_sources/coordinate_regression.json','Восемь координатных проверок'),('data/round43_previous_edge_crop_audit.csv','Аудит прежних вырезов с нулевой осью'),('data/round43_page_map.csv','PDF-страницы и печатная пагинация'),('round43_sources/Kuun1880_CodexCumanicus.pdf','Полный скан исторического издания552 страницы'),('synthesis/2026-10-26_birth_chain_book_passage.txt','Новый литературный фрагмент от первого лица')]:page+='<li><a href="'+p+'">'+html.escape(label)+'</a></li>'
+page+='<h2>Проверка клинописного участка остаётся открытой</h2><p>Древний учебный ряд MS3178 требует полной поклиновой колляции. Связь tud/dud → tog/tug не следует из подтверждённого для степного материала g/ğ → w. Для этой связи нужны другие независимые слова и контексты.</p><h2>Поиск прямого звукового ключа TU</h2><p>В13 имеющихся записях7 редакций и97 текстовых строк. По12 значениям TU найдены4 кандидата: все в аккадских колонках. Повреждения, восстановления и отсутствие греческой пары не позволяют использовать их как сохранный ключ для шумерского рождения. Это ограниченный поиск по редакциям, не автоматическое чтение всех фотографий.</p><h2>Контроль координат</h2><p>Синтетическая сетка выявила центровку sips при0,0. Остальные три испытанных сочетания работают правильно. Девять прежних записей с одной нулевой осью этим дефектом не затронуты. Новый явный инструмент прошёл все четыре теста.</p><h2>Отчёт, данные и фрагмент для книги</h2><ul>'
+for p,label in [(reportpath,'Полный отчёт и границы вывода'),('data/round43_CBS12709_crops.csv','Координаты и статусы пяти фотoвырезов'),('data/round43_CBS12709_observations.csv','Что видно и что унаследовано из издания'),('data/round43_birth_paradigm.csv','Пять форм рождения'),('data/round43_inflection_controls.csv','Четыре глагольных контекста'),('data/round43_sound_controls.csv','Условия звуковых соответствий'),('data/round43_regional_comparison.csv','Сравнительная таблица17 строк'),('data/round43_chain_status.csv','Какие участки цепи подтверждены'),('data/round42_MIN_screen.csv','Обновляемый поиск MIN и TU в13 записях'),('synthesis/conclusions_for_book.txt','Накопительное заключение'),('synthesis/evidence_for_book.csv','Накопительная таблица результатов'),('round43_sources/coordinate_regression.json','Восемь координатных проверок'),('data/round43_previous_edge_crop_audit.csv','Аудит прежних вырезов с нулевой осью'),('data/round43_page_map.csv','PDF-страницы и печатная пагинация'),('round43_sources/Kuun1880_CodexCumanicus.pdf','Полный скан исторического издания552 страницы'),('synthesis/book_passage.txt','Новый литературный фрагмент от первого лица')]:page+='<li><a href="'+p+'">'+html.escape(label)+'</a></li>'
 page+='</ul><p>Книга и PDF не изменялись. Скан1880 года помечен Commons как public domain; у современных научных публикаций самостоятельные права.</p></html>'
 (R/'comparison_round43.html').write_text(page,encoding='utf-8')
 class Links(HTMLParser):
@@ -206,5 +218,5 @@ class Links(HTMLParser):
 l=Links();l.feed(page)
 for p in l.urls:assert (R/p).is_file(),p
 assert sha(R.parents[1]/'book/Tartar_i_Ya_print_6x9.pdf')=='ca58ace942ddc4d3a5ea33026026f00c14034c9be294a27e9c725e7780d5f445'
-summary=dict(status='passed',cuneiform_photo_contexts_checked=1,cuneiform_photo_crops_registered=5,cuneiform_observation_levels=3,new_external_files=len(urls),historical_edition_PDF_pages=552,birth_forms_checked_in_print=5,finite_contexts_compared=4,regional_table_rows=17,modern_language_labels=14,coordinate_regression_cases=8,strict_crop_cases_passed=4,old_zero_axis_records_audited=9,old_records_with_both_axes_zero=0,prior_historical_images_replaced=0,local_links=len(l.urls),Sumerian_to_tog_bridge_established=False,new_independent_Sumerian_sound_values=0,book_PDF='unchanged')
+summary=dict(status='passed',Greek_archive_records_screened=13,Greek_archive_records_with_text=7,Greek_editorial_lines_screened=97,TU_value_candidates=4,TU_Sumerian_candidates=0,cuneiform_photo_contexts_checked=1,cuneiform_photo_crops_registered=5,cuneiform_observation_levels=3,new_external_files=len(urls),historical_edition_PDF_pages=552,birth_forms_checked_in_print=5,finite_contexts_compared=4,regional_table_rows=17,modern_language_labels=14,coordinate_regression_cases=8,strict_crop_cases_passed=4,old_zero_axis_records_audited=9,old_records_with_both_axes_zero=0,prior_historical_images_replaced=0,local_links=len(l.urls),Sumerian_to_tog_bridge_established=False,new_independent_Sumerian_sound_values=0,book_PDF='unchanged')
 (R/'data/round43_checkpoint.txt').write_text(json.dumps(summary,ensure_ascii=False,indent=2)+'\n');print(json.dumps(summary,ensure_ascii=False,indent=2))

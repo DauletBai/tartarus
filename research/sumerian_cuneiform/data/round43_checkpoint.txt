@@ -1,5 +1,10 @@
 {
   "status": "passed",
+  "Greek_archive_records_screened": 13,
+  "Greek_archive_records_with_text": 7,
+  "Greek_editorial_lines_screened": 97,
+  "TU_value_candidates": 4,
+  "TU_Sumerian_candidates": 0,
   "cuneiform_photo_contexts_checked": 1,
   "cuneiform_photo_crops_registered": 5,
   "cuneiform_observation_levels": 3,
@@ -14,7 +19,7 @@
   "old_zero_axis_records_audited": 9,
   "old_records_with_both_axes_zero": 0,
   "prior_historical_images_replaced": 0,
-  "local_links": 21,
+  "local_links": 24,
   "Sumerian_to_tog_bridge_established": false,
   "new_independent_Sumerian_sound_values": 0,
   "book_PDF": "unchanged"

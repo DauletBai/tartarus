@@ -25,7 +25,7 @@ for x in rows('data/round42_crops.csv'):
 for x in rows('data/round42_previews.csv'):
  assert sha(R/x['file'])==x['sha256'] and sha(R/x['parent'])==x['parent_sha256']
 assert len(rows('data/round42_preservation_tests.csv'))==3
-for x in rows('synthesis/2026-10-26_evidence_for_book.csv'):assert (R/x['local_report']).is_file()
+for x in rows('synthesis/evidence_for_book.csv'):assert (R/x['local_report']).is_file()
 class Links(HTMLParser):
  def __init__(self):super().__init__();self.urls=[]
  def handle_starttag(self,t,a):
@@ -34,4 +34,4 @@ class Links(HTMLParser):
 l=Links();l.feed((R/'comparison_round42.html').read_text())
 for p in l.urls:assert (R/p).is_file(),p
 assert sha(R.parents[1]/'book/Tartar_i_Ya_print_6x9.pdf')=='ca58ace942ddc4d3a5ea33026026f00c14034c9be294a27e9c725e7780d5f445'
-print('Passed:6 original source hashes,13 editorial screens,5 crops,2 previews,3 preservation tests,8 synthesis references,16 local links; book unchanged.')
+print('Passed:6 original source hashes,13 editorial screens,5 crops,2 previews,3 preservation tests,cumulative synthesis references,16 local links; book unchanged.')
