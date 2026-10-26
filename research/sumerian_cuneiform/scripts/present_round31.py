@@ -1,0 +1,35 @@
+from pathlib import Path
+import csv,html,json,hashlib
+R=Path(__file__).resolve().parents[1]
+def read(n):
+ with (R/'data'/n).open(encoding='utf-8-sig',newline='') as f:return list(csv.DictReader(f))
+def table(rows,cols):return '<div class="scroll"><table><tr>'+''.join('<th>'+html.escape(v)+'</th>' for k,v in cols)+'</tr>'+''.join('<tr>'+''.join('<td>'+html.escape(str(x[k]))+'</td>' for k,v in cols)+'</tr>' for x in rows)+'</table></div>'
+doc='''<!doctype html><html lang="ru"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Цикл31 — слоговые написания рождения</title><style>body{max-width:1080px;margin:35px auto;padding:0 20px;background:#faf9f5;color:#24313a;font:18px/1.6 system-ui}h1,h2{line-height:1.2}.note{padding:18px;background:#e3ecee;border-left:5px solid #477583}.scroll{overflow:auto}table{border-collapse:collapse;width:100%;font-size:14px}td,th{border:1px solid #c9d0d0;padding:9px;text-align:left;vertical-align:top}th{background:#e4e9e7}img{max-width:100%;max-height:800px;object-fit:contain}figure{margin:25px 0;padding:16px;background:white}figcaption{font-size:15px}a{color:#205c82}</style>
+<p><a href="comparison_round30.html">Цикл30</a> · <a href="observations/2026-10-26_round31_syllabic_birth_spellings.txt">Полный отчёт</a> · <a href="data/round31_summary.json">Итоги JSON</a></p>
+<h1>TU–UD: дополнительный знак и проверка связным текстом</h1><p>26 октября2026. Цикл31.</p>
+<p class="note">Найдены конкретные редакции <b>tu-ud</b> с отдельным UD — перед DA и без DA. Это усиливает модель конечного согласного основы. Новые звуковые значения самостоятельно не расшифрованы. Историческая связь с казакским <b>туу</b> остаётся открытой.</p>
+<h2>Восемь целевых строк пяти предметов</h2>'''
+doc+=table(read('round31_target_rows.csv'),[('pid','Предмет'),('line','Место'),('all_cells','Ячейки редакции, включая её перевод')])
+doc+='''<p><a href="data/round31_target_rows.csv">Исходная таблица</a>. Индексы, чтения и переводы — редакторская модель; скобки повреждений сохранены.</p>
+<h2>Ранняя табличка: два одинаковых слова в строке</h2><p>VS17,12 / P343032. Каталог: старовавилонский период, примерно1900–1600 до н.э.; место происхождения не установлено. В строке3 два <i>im-tu-ud</i>, в строке4 — <i>im-ma-ni-in-tu-ud</i>. Сохраняющаяся последовательность TU UD сочетается с разным началом.</p>
+<figure><a href="round31_sources/P343032_photo.jpg"><img src="round31_sources/VS17_12_obverse.jpg" alt="Письменная лицевая сторона VS17,12"></a><figcaption>Фотография, вырез x240 y295 w650 h410. Поверхность потёрта; выполнено частичное сравнение расположения и повторов с копией. Нажатие открывает полный фотокомпозит.</figcaption></figure>
+<figure><img src="round31_sources/P343032_lineart.jpg" alt="Прорисовка VS17,12"><figcaption>Современная прорисовка того же предмета, не второй древний свидетель. Трёхзнаковые группы в строке3 повторяются.</figcaption></figure>
+<p><a href="data/round31_early_complete_texts.csv">Полные доступные редакторские тексты двух ранних предметов:30 строк</a> · <a href="https://cdli.earth/artifacts/343032">Карточка CDLI</a> · <a href="https://oracc.museum.upenn.edu/epsd2/praxis/P343032">Редакция</a></p>
+<h2>Двуязычный контроль: потомство</h2><p>Rm348+ / Rm604, P238324, o ii′17: <b>⸢dumu⸣ tu-ud-da | lil-li-du</b>. Редакция связывает строку с потомством. Начальное слово повреждено. Полученная копия подписана Rm604 и не представляет автоматически всё соединение Rm348+.</p>
+<figure><img src="round31_sources/Rm604_copy_lines14_19.jpg" alt="Копия: полоса строк14–19"><img src="round31_sources/Rm604_birth_band.jpg" alt="Сопоставленная полоса фотографии"><figcaption>Копия и фотография сохранены раздельно. Фото: x1250 y500 w690 h180. Привязка опирается на соседние строки и разлиновку; полной проверки каждого клина нет.</figcaption></figure>
+<p><a href="round31_sources/P238324_photo.jpg">Полная фотография</a> · <a href="round31_sources/P238324_lineart.jpg">Полная полученная прорисовка</a> · <a href="data/round31_visual_audit.csv">Протокол осмотра</a></p>
+<h2>Почему24 контекста дают25 употреблений</h2><p>Указатель содержит24 контекста17 предметов. В P343032.3 целевое слово записано дважды, но выделено только одно. Полная редакция подтверждает повтор:25 употреблений согласуются со счётчиком словаря. Число карточек не равно числу осмотренных оригиналов.</p>'''
+doc+=table(read('round31_praxis_contexts.csv'),[('ref','Ссылка'),('selected_form','Выделенная форма'),('same_form_tokens_in_context','Таких слов в контексте'),('context','Контекст')])
+doc+='''<h2>TU — «родись», UD — «родился»: отдельная проверка</h2><p>Гипотеза различия наклонения или времени сохранена отдельно. Надёжной пары «приказ — сообщение» в выбранных текстах пока нет. Отрицательная или причастная форма сама по себе не опровергает прошедшее значение.</p><p>Новый контроль — Lipit-Eštar08 / YBC2374. В строке4 UD входит в слово, которое редакция связывает с рождением; в строке7 того же текста UD читается как «день». Это демонстрирует контекстность модели чтения, но не устанавливает общий показатель прошедшего времени.</p>'''
+doc+=table(read('round31_UD_tense_control.csv'),[('ref','Место'),('form','Редакторское чтение'),('cf','Лемма'),('signs','Названия знаков GDL')])
+doc+='''<figure><img src="round31_sources/P289683_lineart.jpg" alt="Прорисовка YBC2374"><figcaption>Прорисовка11-строчной надписи. Фотография не получена; звуки и смысл не выдаются за непосредственно прочитанные по оригиналу.</figcaption></figure><h2>Проверки гипотез</h2>'''+table(read('round31_hypothesis_tests.csv'),[('question','Вопрос'),('evidence','Материал'),('result','Результат'),('limit','Предел')])
+doc+='''<p>В этой модели <i>tu-ud</i> является слоговым написанием, а не тремя буквами. Нельзя автоматически переводить UD как «солнце» внутри каждого слова. Сравнение с туу требует проверки d/g/w на других корнях и исторической цепочки свидетельств.</p>
+<p>Книга/PDF не изменены. Изображения сохранены для исследования; права на их отдельную публикацию не установлены.</p>
+<p><a href="data/round31_file_manifest.csv">Файлы и SHA-256</a> · <a href="data/round31_checkpoint.txt">Проверка</a></p></html>'''
+(R/'comparison_round31.html').write_text(doc)
+files=sorted(set(list((R/'round31_sources').glob('*'))+list((R/'data').glob('round31_*'))+list((R/'scripts').glob('*round31.py'))+[R/'comparison_round31.html',R/'observations/2026-10-26_round31_syllabic_birth_spellings.txt']))
+with (R/'data/round31_file_manifest.csv').open('w',encoding='utf-8-sig',newline='') as f:
+ w=csv.DictWriter(f,fieldnames=['file','bytes','sha256']);w.writeheader()
+ for p in files:
+  if p.is_file() and p.name not in ['round31_file_manifest.csv','round31_checkpoint.txt']:w.writerow(dict(file=str(p.relative_to(R)),bytes=p.stat().st_size,sha256=hashlib.sha256(p.read_bytes()).hexdigest()))
+print('HTML and manifest written')

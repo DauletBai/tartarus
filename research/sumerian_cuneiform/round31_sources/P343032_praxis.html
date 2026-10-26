@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+  <meta charset="utf-8"/>
+  <meta name="generator" content="oracc/px p4html.xml "/>
+  <link rel="stylesheet" type="text/css" href="/css/p4.css"/>
+  <link rel="stylesheet" type="text/css" href="/css/p4-cuneify.css"/>
+  <link rel="stylesheet" type="text/css" href="/epsd2/praxis/css/p3colours.css"/>
+  <link rel="stylesheet" type="text/css" href="/epsd2/praxis/css/projcss.css"/>
+  <script type="text/javascript" src="/js/p4.js">&#160;</script>
+  <script type="text/javascript" src="/js/p4cbd.js">&#160;</script>
+  <script src="https://code.jquery.com/jquery-3.2.1.min.js" type="text/javascript"><![CDATA[ ]]></script>
+  <title>epsd2/praxis</title>    
+</head>
+  <body onload="p4Onload()"><div id="p4Pager" class="bborder-top list item dcat itxt zoom default" data-proj="epsd2/praxis" data-list="outlined.lst" data-zoom="30" data-sort="123" data-prev="P343035" data-item="P343032" data-next="P343023" data-bkmk="P343032" data-lang="en">
+  <div id="p4Masthead">
+    <p id="p4HeadTitle" class="banner bborder-top bborder1-bot">
+      <a href="/">Oracc:</a> <a href="/epsd2/praxis">epsd2/praxis &#x2014; epsd2/ePSD2 Praxis Corpus</a>
+    </p>
+  </div>
+  <div id="p4Header" class="menu banner bborder-bot">
+    <p id="p4Banner">
+      <span id="p4Icons">
+	
+  <img class="p4icon" src="/img/p3-dd.png"
+       alt="Toggle menu drop-down" title="Toggle menu drop-down"
+       onclick="toggle_dd()"/>
+  <img id="p4HelpIcon" class="p4icon"
+       src="/img/p3-help.png" alt="Help" title="Help"
+       onclick="window.location='/doc/help/visitingoracc/gettingstarted/index.html'"/>
+  <img id="p4ResetIcon" class="p4icon"
+       src="/img/p3-reset.png" alt="Reset pager" title="Reset pager"
+       onclick="resetPager()"/>
+  <img id="p4MoreIcon" class="p4icon"
+       src="/img/p3-plus.png" alt="More resources" title="More resources"
+       onclick="window.location='/epsd2/praxis/hub.html'"/>
+
+      </span>
+    </p>
+    <div id="p4Search">
+  <form action="javascript://" onsubmit="act_srch()">
+    <p>
+      <!--Oracc Search:-->
+      <input id="p4SrchBox" type="text" size="30"
+	     value=""/>
+      <input type="submit" style="display: none"/>
+      <img id="p4SrchGo" class="p4icon" src="/img/p3-search.png"
+	   alt="Search" title="Search" onclick="act_srch()"/>
+    </p>
+    <p id="p4SrchChars">(j=ŋ&#xa0;sz=š&#xa0;s,=ṣ&#xa0;t,=ṭ&#xa0;0-9=₀-₉; &apos;=alef)</p>
+  </form>
+</div>
+
+    <div id="p4Controls">
+      
+  <div id="p4itemNav" class="p4items" data-ityp="ITEM" data-inth="54" data-imax="110">
+    <p class="bg-dk">
+
+      
+      <img id="p4ToggleMeta" class="p4icon" src="/img/p3-full.png"
+	   alt="Toggle metadata pane" title="Toggle metadata pane" onclick="toggle_md()"/>
+      
+      <img id="p4PageItem" class="p4icon p4spread" src="/img/p3-pageitem.png"
+	   alt="Toggle Page/Item view" title="Return to Page view"
+	   onclick="toggle_pi()"/>
+
+      <!--Item-->
+      <img id="p4ItemPrev" class="p4icon p4spread" src="/img/p3-backward.png"
+	   alt="Item back" title="Item back"
+	   onclick="act_item_prev()"/>
+      
+      <span id="p4ItemView"> [ITEM 54 of 110] </span>
+      
+      <img id="p4ItemNext" class="p4icon p4spread" src="/img/p3-forward.png"
+	   alt="Item forward" title="Item forward"
+	   onclick="act_item_next()"/>
+
+      <span id="p4SrchResults" class="p4srchresults" data-tmax="" data-rmax="0">
+	 Texts [0 matches]
+      </span>
+
+      <span id="p4Translations">
+	<span>
+          <select id="p4TransSelect" onchange="act_translation()">
+            <option value="none">(none)</option>
+          </select>
+        </span>
+
+	<input id="p4Transonly" type="checkbox" onchange="toggle_to()"
+	       value="@@pui_transonly()@@"/>&#xa0;only
+      </span>
+
+    </p>
+  </div>
+
+  <div id="p4PageNav" class="p4pages" data-page="7" data-pmax="5" data-imax="110">
+    <p class="p3toccenter bg-dk">
+
+      <button id="p4Zoom" class="p4spread" onclick="act_zoom('0')">All Results</button>
+
+      <img id="p4PagePrev" class="p4icon p4spread" src="/img/p3-backward.png"
+	   alt="Page back" title="Page back"
+	   onclick="act_prev()"/>
+      
+      <!--Page-->
+      <input id="p4Pageset" type="text" onchange="act_page()" size="3" value="7"/>
+
+      <img id="p4PageNext" class="p4icon p4spread" src="/img/p3-forward.png"
+	   alt="Page forward" title="Page forward"
+	   onclick="act_next()"/>
+
+      110 items
+      /
+      5 pages
+
+      <span id="p4SrchResultpages" class="p4srchresults">[0 matches]</span>
+
+      <span id="p4CeType" class="cetype"><select id="p4CESelect" onchange="act_ce_switch(event)" value="line">
+  <option value="line" selected="selected">Line</option>
+  <option value="unit">Sentence</option>
+  <option value="kwic">KWIC</option>
+</select>
+</span>
+    </p>
+  </div>
+
+
+    </div>
+  </div>
+  <div id="p4Data">
+    <div id="p4Menu">
+<div id="p4MenuSorter">
+<select id="p4MenuSelect" onchange="act_sorter()" value="123">
+<option value="123" selected="selected">Time/Genre/Place</option>
+<option value="132">Time/Place/Genre</option>
+<option value="213">Genre/Time/Place</option>
+<option value="231">Genre/Place/Time</option>
+<option value="312">Place/Time/Genre</option>
+<option value="321">Place/Genre/Time</option>
+</select>
+</div>
+<div id="p4MenuOutline" class="pgotl level0" data-zmax="44"><h2>Early Dynastic IIIa</h2><div class="pgotl level1"><h3>Administrative</h3><div class="pgotl level2"><p><a href="javascript://" onclick="act_zoom(1)" data-zoom="1">Shuruppak [3]</a></p></div><h3>Literary</h3><div class="pgotl level2"><p><a href="javascript://" onclick="act_zoom(2)" data-zoom="2">Shuruppak [1]</a></p><p><a href="javascript://" onclick="act_zoom(3)" data-zoom="3">uncertain [1]</a></p></div></div><h2>Early Dynastic IIIb</h2><div class="pgotl level1"><h3>Administrative</h3><div class="pgotl level2"><p><a href="javascript://" onclick="act_zoom(4)" data-zoom="4">Lagash [1]</a></p></div><h3>Royal Inscription</h3><div class="pgotl level2"><p><a href="javascript://" onclick="act_zoom(5)" data-zoom="5">Girsu [1]</a></p></div></div><h2>Ebla</h2><div class="pgotl level1"><h3>Administrative</h3><div class="pgotl level2"><p><a href="javascript://" onclick="act_zoom(6)" data-zoom="6">Ebla [10]</a></p></div></div><h2>Old Akkadian</h2><div class="pgotl level1"><h3>Administrative</h3><div class="pgotl level2"><p><a href="javascript://" onclick="act_zoom(7)" data-zoom="7">uncertain [1]</a></p></div><h3>Literary</h3><div class="pgotl level2"><p><a href="javascript://" onclick="act_zoom(8)" data-zoom="8">Nippur [2]</a></p><p><a href="javascript://" onclick="act_zoom(9)" data-zoom="9">Susa [1]</a></p><p><a href="javascript://" onclick="act_zoom(10)" data-zoom="10">uncertain [1]</a></p></div><h3>Scientific</h3><div class="pgotl level2"><p><a href="javascript://" onclick="act_zoom(11)" data-zoom="11">Nippur [1]</a></p></div></div><h2>Ur III</h2><div class="pgotl level1"><h3>Administrative</h3><div class="pgotl level2"><p><a href="javascript://" onclick="act_zoom(12)" data-zoom="12">uncertain [1]</a></p></div><h3>Literary</h3><div class="pgotl level2"><p><a href="javascript://" onclick="act_zoom(13)" data-zoom="13">Nippur [34]</a></p><p><a href="javascript://" onclick="act_zoom(14)" data-zoom="14">Umma [2]</a></p></div></div><h2>Old Babylonian</h2><div class="pgotl level1"><h3>Administrative</h3><div class="pgotl level2"><p><a href="javascript://" onclick="act_zoom(15)" data-zoom="15">uncertain [1]</a></p></div><h3>Literary</h3><div class="pgotl level2"><p><a href="javascript://" onclick="act_zoom(16)" data-zoom="16">Babylon [1]</a></p><p><a href="javascript://" onclick="act_zoom(17)" data-zoom="17">Babylonia [1]</a></p><p><a href="javascript://" onclick="act_zoom(18)" data-zoom="18">Girsu [1]</a></p><p><a href="javascript://" onclick="act_zoom(19)" data-zoom="19">Haddad [1]</a></p><p><a href="javascript://" onclick="act_zoom(20)" data-zoom="20">Isin [1]</a></p><p><a href="javascript://" onclick="act_zoom(21)" data-zoom="21">Kish [1]</a></p><p><a href="javascript://" onclick="act_zoom(22)" data-zoom="22">Larsa [3]</a></p><p><a href="javascript://" onclick="act_zoom(23)" data-zoom="23">Me-Turan [3]</a></p><p><a href="javascript://" onclick="act_zoom(24)" data-zoom="24">Nippur [23]</a></p><p><a href="javascript://" onclick="act_zoom(25)" data-zoom="25">Sippar [3]</a></p><p><a href="javascript://" onclick="act_zoom(26)" data-zoom="26">Sippar-Yahrurum [6]</a></p><p><a href="javascript://" onclick="act_zoom(27)" data-zoom="27">Susa [2]</a></p><p><a href="javascript://" onclick="act_zoom(28)" data-zoom="28">Ur [1]</a></p><p><a href="javascript://" onclick="act_zoom(29)" data-zoom="29">Uruk [3]</a></p><p><a href="javascript://" onclick="act_zoom(30)" data-zoom="30" class="zoomed">uncertain [110]</a></p></div><h3>Ritual</h3><div class="pgotl level2"><p><a href="javascript://" onclick="act_zoom(31)" data-zoom="31">uncertain [2]</a></p></div><h3>Scientific</h3><div class="pgotl level2"><p><a href="javascript://" onclick="act_zoom(32)" data-zoom="32">Nippur [1]</a></p><p><a href="javascript://" onclick="act_zoom(33)" data-zoom="33">uncertain [1]</a></p></div><h3>unknown</h3><div class="pgotl level2"><p><a href="javascript://" onclick="act_zoom(34)" data-zoom="34">uncertain [1]</a></p></div></div><h2>Middle Babylonian</h2><div class="pgotl level1"><h3>Literary</h3><div class="pgotl level2"><p><a href="javascript://" onclick="act_zoom(35)" data-zoom="35">Nippur [2]</a></p></div></div><h2>Neo-Babylonian</h2><div class="pgotl level1"><h3>Lexical</h3><div class="pgotl level2"><p><a href="javascript://" onclick="act_zoom(36)" data-zoom="36">Babylon [1]</a></p></div><h3>Literary</h3><div class="pgotl level2"><p><a href="javascript://" onclick="act_zoom(37)" data-zoom="37">uncertain [2]</a></p></div></div><h2>Uncertain</h2><div class="pgotl level1"><h3>Literary</h3><div class="pgotl level2"><p><a href="javascript://" onclick="act_zoom(38)" data-zoom="38">Sippar [1]</a></p></div></div><h2>Unknown</h2><div class="pgotl level1"><h3>unknown</h3><div class="pgotl level2"><p><a href="javascript://" onclick="act_zoom(39)" data-zoom="39">Unknown [2]</a></p></div></div><h2>unknown</h2><div class="pgotl level1"><h3>Literary</h3><div class="pgotl level2"><p><a href="javascript://" onclick="act_zoom(40)" data-zoom="40">uncertain [2]</a></p></div><h3>unknown</h3><div class="pgotl level2"><p><a href="javascript://" onclick="act_zoom(41)" data-zoom="41">Bābili [1]</a></p><p><a href="javascript://" onclick="act_zoom(42)" data-zoom="42">Kish [1]</a></p><p><a href="javascript://" onclick="act_zoom(43)" data-zoom="43">Sippar-Yahrurum [5]</a></p><p><a href="javascript://" onclick="act_zoom(44)" data-zoom="44">uncertain [1]</a></p></div></div></div></div>
+
+    <div id="p4Content">
+      <div id="p4Item" class="xtf">
+  <div id="p4XtfMeta"><div xmlns="http://www.w3.org/1999/xhtml">
+  <div class="xmdoutline border-top border-bottom">
+    <h3 class="h3">Names</h3>
+    <ul>
+      <li>VAT 08341 = VS 17, 12</li>
+    </ul>
+    <h3 class="h3">Numbers</h3>
+    <ul>
+      <li>
+        <a href="https://cdli.earth/P343032" target="_blank">CDLI P343032</a>
+      </li>
+      <li>VAT 08341</li>
+      <li>VS 17, 12</li>
+      <li>Owen ZA 071, 042-043; Peterson PhD thesis, 411</li>
+    </ul>
+    <h3 class="h3">View</h3>
+    <ul>
+      <li>Catalogue entry</li>
+      <li>
+        <a href="http://oracc.museum.upenn.edu/cdli/P343032/image" target="_blank">line art</a>
+      </li>
+      <li>
+        <a href="http://oracc2.museum.upenn.edu/epsd2/praxis/P343032/html">Print text</a>
+      </li>
+      <li>
+        <a target="_blank" href="/epsd2/praxis/P343032/cuneify">Cuneified</a>
+      </li>
+    </ul>
+    <h3 class="h3">Details</h3>
+    <ul>
+      <li>Old Babylonian</li>
+      <li>uncertain</li>
+      <li>Literary</li>
+      <li>turtle incantation</li>
+    </ul>
+    <h3 class="h3">Bibliography</h3>
+    <p>Owen ZA 071, 042-043; Peterson PhD thesis, 411</p>
+  </div>
+</div>
+</div>
+  <div id="p4XtfData"><div xmlns="http://www.w3.org/1999/xhtml" xmlns:dc="http://dublincore.org/documents/2003/06/02/dces/" class="text" dc:title="epsd2/praxis P343032"><!--config-xml-file = /home/oracc/xml/epsd2/praxis/config.xml--><h1 class="p3h2 border-top heading"><a href="http://cdli.earth/P343032" target="_blank">VAT 08341 = VS 17, 12 (VS 17, 12) [turtle incantation]</a><span class="via">[via epsd2/praxis]</span></h1><table class="transliteration"><tr class="l p1"><td class="lnum"> </td><td class="tlit"> </td></tr><tr id="" class="h surface"><td colspan="1"><span class="h2 ">Obverse</span></td></tr><tr id="P343032.1" class="l"><td class="lnum "><a class=" " name="a.P343032.1"><span class="xlabel ">1</span><span class="lnum ">1</span></a></td><td class="tlit"><p class="tt"><span class="w sux NOUN " x="1" id="P343032.1.1" title="eš[shrine//shrine]N'N$eš,ta/eš₃#~,ta"><a class="cbd " href="javascript://" onclick="act_wsig(event)" data-wsig="☣@epsd2/praxis%sux:eš₃-ta=eš[shrine//shrine]N´N$eš,ta/eš₃#~,ta"><span class="sux ">⸢</span><span class="sux " x="3">eš₃</span><sup class="sux ">?</sup><span class="sux ">⸣</span>-<span class="sux " x="3">ta</span></a></span> <span class="w sux NOUN " x="1" id="P343032.1.2" title="eš[shrine//shrine]N'N$eš/eš₃#~"><a class="cbd " href="javascript://" onclick="act_wsig(event)" data-wsig="☣@epsd2/praxis%sux:eš₃=eš[shrine//shrine]N´N$eš/eš₃#~"><span class="sux " x="3">eš₃</span></a></span> <span class="w sux V/i " x="1" id="P343032.1.3" title="kug[pure//(to be) pure, holy]V/i'V/i$kug,a.am/kug+-ga=g+a#~,a.am"><a class="cbd " href="javascript://" onclick="act_wsig(event)" data-wsig="☣@epsd2/praxis%sux:ku₃-ga-am₃=kug[pure//(to be) pure, holy]V/i´V/i$kug,a.am/kug±-ga=g±a#~,a.am"><span class="sux " x="3">ku₃</span>-<span class="sux " x="3">ga</span>-<span class="sux " x="3">am₃</span></a></span> <span class="w sux V/i " x="1" id="P343032.1.4" title="šeŋ[rain//to rain]V/i'V/i$Vmma:šeŋ/šeŋ₃-šeŋ₃#Vmma:~"><a class="cbd " href="javascript://" onclick="act_wsig(event)" data-wsig="☣@epsd2/praxis%sux:im-ma-šeŋ₃-šeŋ₃=šeŋ[rain//to rain]V/i´V/i$Vmma:šeŋ/šeŋ₃-šeŋ₃#Vmma:~"><span class="sux " x="3">im</span>-<span class="sux " x="3">ma</span>-<span class="sux " x="3">šeŋ₃</span>-<span class="sux " x="3">šeŋ₃</span></a></span></p></td></tr><tr id="P343032.2" class="l"><td class="lnum "><a class=" " name="a.P343032.2"><span class="xlabel ">2</span><span class="lnum ">2</span></a></td><td class="tlit"><p class="tt"><span class="w sux NOUN " x="1" id="P343032.2.1" title="aʾabak[sea//sea, seawater]N'N$aʾabak/a-ab-ba#~"><a class="cbd " href="javascript://" onclick="act_wsig(event)" data-wsig="☣@epsd2/praxis%sux:a-ab-ba=aʾabak[sea//sea, seawater]N´N$aʾabak/a-ab-ba#~"><span class="sux " x="3">a</span>-<span class="sux " x="3">ab</span>-<span class="sux " x="3">ba</span></a></span> <span class="w sux NOUN " x="1" id="P343032.2.2" title="niŋdaŋala[vastness//vastness]N'N$niŋdaŋala/niŋ₂-daŋal-la#~"><a class="cbd " href="javascript://" onclick="act_wsig(event)" data-wsig="☣@epsd2/praxis%sux:niŋ₂-daŋal-la=niŋdaŋala[vastness//vastness]N´N$niŋdaŋala/niŋ₂-daŋal-la#~"><span class="sux " x="3">niŋ₂</span>-<span class="sux " x="3">dagal</span>-<span class="sux ">⸢</span><span class="sux " x="3">la</span><sup class="sux ">?</sup><span class="sux ">⸣</span></a></span> <span class="w sux NOUN " x="1" id="P343032.2.3" title="dub[knee//knee]N'N$dub/dub₃#~"><a class="cbd " href="javascript://" onclick="act_wsig(event)" data-wsig="☣@epsd2/praxis%sux:dub₃=dub[knee//knee]N´N$dub/dub₃#~"><span class="sux " x="3">dub₃</span></a></span> <span class="w sux V/t " x="1" id="P343032.2.4" title="nir[winnow//to winnow]V/t'V/t$Vmma.n:nir/nir#Vmma.n:~"><a class="cbd " href="javascript://" onclick="act_wsig(event)" data-wsig="☣@epsd2/praxis%sux:im-ma-an-nir=nir[winnow//to winnow]V/t´V/t$Vmma.n:nir/nir#Vmma.n:~"><span class="sux " x="3">im</span>-<span class="sux " x="3">ma</span>-<span class="sux " x="3">an</span>-<span class="sux ">⸢</span><span class="sux " x="3">nir</span><span class="sux ">⸣</span></a></span></p></td></tr><tr id="P343032.3" class="l"><td class="lnum "><a class=" " name="a.P343032.3"><span class="xlabel ">3</span><span class="lnum ">3</span></a></td><td class="tlit"><p class="tt"><span class="w sux NOUN " x="1" id="P343032.3.1" title="aʾabak[sea//sea, seawater]N'N$aʾabak/ab-ba#~"><a class="cbd " href="javascript://" onclick="act_wsig(event)" data-wsig="☣@epsd2/praxis%sux:ab-ba=aʾabak[sea//sea, seawater]N´N$aʾabak/ab-ba#~"><span class="sux " x="3">ab</span>-<span class="sux " x="3">ba</span></a></span> <span class="w sux V/t " x="1" id="P343032.3.2" title="utud[bear//to bear]V/t'V/t$V.m:utud/tu-ud#V.m:~"><a class="cbd " href="javascript://" onclick="act_wsig(event)" data-wsig="☣@epsd2/praxis%sux:im-tu-ud=utud[bear//to bear]V/t´V/t$V.m:utud/tu-ud#V.m:~"><span class="sux " x="3">im</span>-<span class="sux " x="3">tu</span>-<span class="sux " x="3">ud</span></a></span> <span class="w sux NOUN " x="1" id="P343032.3.3" title="gi[reed//reed, cane]N'N$gi/gi#~"><a class="cbd " href="javascript://" onclick="act_wsig(event)" data-wsig="☣@epsd2/praxis%sux:gi=gi[reed//reed, cane]N´N$gi/gi#~"><span class="sux " x="3">gi</span></a></span> <span class="w sux V/t " x="1" id="P343032.3.4" title="utud[bear//to bear]V/t'V/t$V.m:utud/tu-ud#V.m:~"><a class="cbd " href="javascript://" onclick="act_wsig(event)" data-wsig="☣@epsd2/praxis%sux:im-tu-ud=utud[bear//to bear]V/t´V/t$V.m:utud/tu-ud#V.m:~"><span class="sux " x="3">im</span>-<span class="sux " x="3">tu</span>-<span class="sux " x="3">ud</span></a></span></p></td></tr><tr id="P343032.4" class="l"><td class="lnum "><a class=" " name="a.P343032.4"><span class="xlabel ">4</span><span class="lnum ">4</span></a></td><td class="tlit"><p class="tt"><span class="w sux NOUN " x="1" id="P343032.4.1" title="niŋbuna[turtle//turtle]N'N$niŋbuna/niŋ₂-bun₂-na{ku₆}#~"><a class="cbd " href="javascript://" onclick="act_wsig(event)" data-wsig="☣@epsd2/praxis%sux:niŋ₂-bun₂-na{ku₆}=niŋbuna[turtle//turtle]N´N$niŋbuna/niŋ₂-bun₂-na{ku₆}#~"><span class="sux " x="3">niŋ₂</span>-<span class="sux " x="3">bun₂</span>-<span class="sux " x="3">na</span><sup class="sux ">ku₆</sup></a></span> <span class="w sux V/t " x="1" id="P343032.4.2" title="utud[bear//to bear]V/t'V/t$Vmma.ni.n:utud/tu-ud#Vmma.ni.n:~"><a class="cbd " href="javascript://" onclick="act_wsig(event)" data-wsig="☣@epsd2/praxis%sux:im-ma-ni-in-tu-ud=utud[bear//to bear]V/t´V/t$Vmma.ni.n:utud/tu-ud#Vmma.ni.n:~"><span class="sux " x="3">im</span>-<span class="sux " x="3">ma</span>-<span class="sux " x="3">ni</span>-<span class="sux " x="3">in</span>-<span class="sux " x="3">tu</span>-<span class="sux " x="3">ud</span></a></span></p></td></tr><tr id="P343032.5" class="l"><td class="lnum "><a class=" " name="a.P343032.5"><span class="xlabel ">5</span><span class="lnum ">5</span></a></td><td class="tlit"><p class="tt"><span class="w sux NOUN " x="1" id="P343032.5.1" title="saŋ[head//head]N'N$saŋ,ani.ak/saŋ+-ŋa₂=ŋ.a#~,ani.ak"><a class="cbd " href="javascript://" onclick="act_wsig(event)" data-wsig="☣@epsd2/praxis%sux:saŋ-ŋa₂-na=saŋ[head//head]N´N$saŋ,ani.ak/saŋ±-ŋa₂=ŋ.a#~,ani.ak"><span class="sux " x="3">saŋ</span>-<span class="sux " x="3">ŋa₂</span>-<span class="sux " x="3">na</span></a></span> <span class="w sux NOUN " x="1" id="P343032.5.2" title="muš[snake//snake]N'N$muš,gin/muš#~,gin"><a class="cbd " href="javascript://" onclick="act_wsig(event)" data-wsig="☣@epsd2/praxis%sux:muš-gin₇=muš[snake//snake]N´N$muš,gin/muš#~,gin"><span class="sux " x="3">muš</span>-<span class="sux " x="3">gin₇</span></a></span> <span class="w sux NOUN " x="1" id="P343032.5.3" title="murgu[shoulder//shoulder]N'N$murgu,ani.a/murgu#~,ani.a"><a class="cbd " href="javascript://" onclick="act_wsig(event)" data-wsig="☣@epsd2/praxis%sux:murgu-na=murgu[shoulder//shoulder]N´N$murgu,ani.a/murgu#~,ani.a"><span class="sux " x="3">murgu</span>-<span class="sux " x="3">na</span></a></span> <span class="w sux NOUN " x="1" id="P343032.5.4" title="šeg[brick//brick, mudbrick]N'N$šeg/šeg₁₂#~"><a class="cbd " href="javascript://" onclick="act_wsig(event)" data-wsig="☣@epsd2/praxis%sux:sig₄=šeg[brick//brick, mudbrick]N´N$šeg/šeg₁₂#~"><span class="sux " x="3">sig₄</span></a></span> <span class="w sux NOUN " x="1" id="P343032.5.5" title="ušub[brick-mold//brick-mold]N'N$ušub,bi.ak.gin/u₃-šub#~,bi.ak.gin"><a class="cbd " href="javascript://" onclick="act_wsig(event)" data-wsig="☣@epsd2/praxis%sux:u₃-šub-ba-gin₇=ušub[brick-mold//brick-mold]N´N$ušub,bi.ak.gin/u₃-šub#~,bi.ak.gin"><span class="sux " x="3">u₃</span>-<span class="sux " x="3">šub</span>-<span class="sux " x="3">ba</span>-<span class="sux ">[</span><span class="sux " x="3">gin₇</span><span class="sux ">]</span></a></span></p></td></tr><tr id="P343032.6" class="l"><td class="lnum "><a class=" " name="a.P343032.6"><span class="xlabel ">6</span><span class="lnum ">6</span></a></td><td class="tlit"><p class="tt"><span class="w sux NOUN " x="1" id="P343032.6.1" title="šag[heart//inner body, womb, belly, intestines]N'N$šag/šag₄#~"><a class="cbd " href="javascript://" onclick="act_wsig(event)" data-wsig="☣@epsd2/praxis%sux:šag₄=šag[heart//inner body, womb, belly, intestines]N´N$šag/šag₄#~"><span class="sux " x="3">šag₄</span></a></span> <span class="w sux V/i " x="1" id="P343032.6.2" title="sug[empty//(to be) empty]V/i'V/i$sug;*a,ani.ak/sug₄#~;*a,ani.ak"><a class="cbd " href="javascript://" onclick="act_wsig(event)" data-wsig="☣@epsd2/praxis%sux:sug₄-na=sug[empty//(to be) empty]V/i´V/i$sug;*a,ani.ak/sug₄#~;*a,ani.ak"><span class="sux " x="3">su₃</span>-<span class="sux " x="3">na</span></a></span> <span class="w sux NOUN " x="1" id="P343032.6.3" title="sar[garden//garden]N'N$X/sar#X"><a class="cbd " href="javascript://" onclick="act_wsig(event)" data-wsig="☣@epsd2/praxis%sux:sar-ra-sar-ra-am₃=sar[garden//garden]N´N$X/sar#X"><span class="sux " x="3">sar</span>-<span class="sux " x="3">ra</span>-<span class="sux " x="3">sar</span>-<span class="sux " x="3">ra</span>-<span class="sux " x="3">am₃</span></a></span></p></td></tr><tr id="P343032.7" class="l"><td class="lnum "><a class=" " name="a.P343032.7"><span class="xlabel ">7</span><span class="lnum ">7</span></a></td><td class="tlit"><p class="tt"><span class="w sux NOUN " x="1" id="P343032.7.1" title="šu[hand//hand]N'N$šu/šu#~"><a class="cbd " href="javascript://" onclick="act_wsig(event)" data-wsig="☣@epsd2/praxis%sux:šu=šu[hand//hand]N´N$šu/šu#~"><span class="sux " x="3">šu</span><sup class="sux ">?</sup></a></span> <span class="w sux NOUN " x="1" id="P343032.7.2" title="ŋiri[foot//foot]N'N$ŋiri,bi.a/ŋiri₃#~,bi.a"><a class="cbd " href="javascript://" onclick="act_wsig(event)" data-wsig="☣@epsd2/praxis%sux:ŋiri₃-bi-a=ŋiri[foot//foot]N´N$ŋiri,bi.a/ŋiri₃#~,bi.a"><span class="sux " x="3">ŋir₃</span><sup class="sux ">?</sup>-<span class="sux " x="3">bi</span>-<span class="sux " x="3">a</span></a></span> <span class="w sux NOUN " x="1" id="P343032.7.3" title="bisaŋ[basket//basket]N'N$bisaŋ/bisaŋ#~"><a class="cbd " href="javascript://" onclick="act_wsig(event)" data-wsig="☣@epsd2/praxis%sux:pisan=bisaŋ[basket//basket]N´N$bisaŋ/bisaŋ#~"><span class="sux " x="3">pisan</span></a></span> <span class="w sux V/t " x="1" id="P343032.7.4" title="ak[do//to do]V/t'V/t$ha.V:ak;e.de/ak#ha.V:~;e.de"><a class="cbd " href="javascript://" onclick="act_wsig(event)" data-wsig="☣@epsd2/praxis%sux:he₂-a-aka-e-de₃=ak[do//to do]V/t´V/t$ha.V:ak;e.de/ak#ha.V:~;e.de"><span class="sux " x="3">ḫe₂</span>-<span class="sux " x="3">a</span>-<span class="sux " x="3">aka</span>-<span class="sux " x="3">e</span>-<span class="sux " x="3">de₃</span></a></span></p></td></tr><tr id="P343032.8" class="l"><td class="lnum "><a class=" " name="a.P343032.8"><span class="xlabel ">8</span><span class="lnum ">8</span></a></td><td class="tlit"><p class="tt"><span class="w sux NOUN " x="1" id="P343032.8.1" title="niŋbuna[turtle//turtle]N'N$niŋbuna/niŋ₂-bun₂-na{ku₆}#~"><a class="cbd " href="javascript://" onclick="act_wsig(event)" data-wsig="☣@epsd2/praxis%sux:niŋ₂-bun₂-na{ku₆}=niŋbuna[turtle//turtle]N´N$niŋbuna/niŋ₂-bun₂-na{ku₆}#~"><span class="sux " x="3">niŋ₂</span>-<span class="sux " x="3">bun₂</span>-<span class="sux " x="3">na</span><sup class="sux ">ku₆</sup></a></span> <span class="w sux NOUN " x="1" id="P343032.8.2" title="banšur[table//table]N'N$banšur/{ŋeš}banšur#~"><a class="cbd " href="javascript://" onclick="act_wsig(event)" data-wsig="☣@epsd2/praxis%sux:{giš}banšur=banšur[table//table]N´N$banšur/{ŋeš}banšur#~"><sup class="sux ">giš</sup><span class="sux " x="3">banšur</span></a></span> <span class="w sux V/t " x="1" id="P343032.8.3" title="dim[create//to create, fashion, make, manufacture]V/t'V/t$ha.mu.n:dim/dim₂#ha.mu.n:~"><a class="cbd " href="javascript://" onclick="act_wsig(event)" data-wsig="☣@epsd2/praxis%sux:hu-mu-un-dim₂=dim[create//to create, fashion, make, manufacture]V/t´V/t$ha.mu.n:dim/dim₂#ha.mu.n:~"><span class="sux " x="3">ḫu</span>-<span class="sux " x="3">mu</span>-<span class="sux " x="3">un</span>-<span class="sux " x="3">dim₂</span></a></span></p></td></tr><tr id="P343032.9" class="l"><td class="lnum "><a class=" " name="a.P343032.9"><span class="xlabel ">9</span><span class="lnum ">9</span></a></td><td class="tlit"><p class="tt"><span class="w sux NOUN " x="1" id="P343032.9.1" title="banšur[table//table]N'N$banšur/{ŋeš}banšur#~"><a class="cbd " href="javascript://" onclick="act_wsig(event)" data-wsig="☣@epsd2/praxis%sux:{giš}banšur=banšur[table//table]N´N$banšur/{ŋeš}banšur#~"><sup class="sux ">giš</sup><span class="sux " x="3">banšur</span></a></span> <span class="w sux V/i " x="1" id="P343032.9.2" title="sikil[pure//(to be) pure]V/i'V/i$ha.mu.n:sikil/sikil#ha.mu.n:~"><a class="cbd " href="javascript://" onclick="act_wsig(event)" data-wsig="☣@epsd2/praxis%sux:hu-mu-un-sikil=sikil[pure//(to be) pure]V/i´V/i$ha.mu.n:sikil/sikil#ha.mu.n:~"><span class="sux " x="3">ḫu</span>-<span class="sux " x="3">mu</span>-<span class="sux " x="3">un</span>-<span class="sux " x="3">sikil</span></a></span></p></td></tr><tr id="P343032.10" class="l"><td class="lnum "><a class=" " name="a.P343032.10"><span class="xlabel ">10</span><span class="lnum ">10</span></a></td><td class="tlit"><p class="tt"><span class="w sux NOUN " x="1" id="P343032.10.1" title="lugal[king//king]N'N$lugal,ak/lugal+-la=l.a#~,ak"><a class="cbd " href="javascript://" onclick="act_wsig(event)" data-wsig="☣@epsd2/praxis%sux:lugal-la=lugal[king//king]N´N$lugal,ak/lugal±-la=l.a#~,ak"><span class="sux " x="3">lugal</span>-<span class="sux " x="3">la</span></a></span> <span class="w sux V/i " x="1" id="P343032.10.2" title="zil[good//(to be) good]V/i'V/i$ha.mu.n:zil/zil₂#ha.mu.n:~"><a class="cbd " href="javascript://" onclick="act_wsig(event)" data-wsig="☣@epsd2/praxis%sux:hu-mu-un-zil₂=zil[good//(to be) good]V/i´V/i$ha.mu.n:zil/zil₂#ha.mu.n:~"><span class="sux " x="3">ḫu</span>-<span class="sux " x="3">mu</span>-<span class="sux " x="3">un</span>-<span class="sux " x="3">zil₂</span></a></span> <span class="w sux NOUN " x="1" id="P343032.10.3" title="lugal[king//king]N'N$lugal,ak/lugal+-la=l.a#~,ak"><a class="cbd " href="javascript://" onclick="act_wsig(event)" data-wsig="☣@epsd2/praxis%sux:lugal-la=lugal[king//king]N´N$lugal,ak/lugal±-la=l.a#~,ak"><span class="sux " x="3">lugal</span>-<span class="sux " x="3">la</span></a></span> <span class="w sux V/i " x="1" id="P343032.10.4" title="sikil[pure//(to be) pure]V/i'V/i$ha.mu.n:sikil/sikil#ha.mu.n:~"><a class="cbd " href="javascript://" onclick="act_wsig(event)" data-wsig="☣@epsd2/praxis%sux:hu-mu-un-sikil=sikil[pure//(to be) pure]V/i´V/i$ha.mu.n:sikil/sikil#ha.mu.n:~"><span class="sux " x="3">ḫu</span>-<span class="sux " x="3">mu</span>-<span class="sux " x="3">un</span>-<span class="sux " x="3">sikil</span></a></span></p></td></tr><tr id="P343032.11" class="l"><td class="lnum "><a class=" " name="a.P343032.11"><span class="xlabel ">11</span><span class="lnum ">11</span></a></td><td class="tlit"><p class="tt"><span class="w sux NOUN " x="1" id="P343032.11.1" title="lulu[man//man]N'N$lulu/lu₂-lu₇#~"><a class="cbd " href="javascript://" onclick="act_wsig(event)" data-wsig="☣@epsd2/praxis%sux:lu₂-ulu₃=lulu[man//man]N´N$lulu/lu₂-lu₇#~"><span class="sux " x="3">lu₂</span>-<span class="sux " x="3">ulu₃</span></a></span> <span class="w sux NOUN " x="1" id="P343032.11.2" title="dumu[child//child, son, daughter]N'N$dumu/dumu#~"><a class="cbd " href="javascript://" onclick="act_wsig(event)" data-wsig="☣@epsd2/praxis%sux:dumu=dumu[child//child, son, daughter]N´N$dumu/dumu#~"><span class="sux " x="3">dumu</span></a></span> <span class="w sux NOUN " x="1" id="P343032.11.3" title="diŋir[deity//deity, god, goddess]N'N$diŋir,ani.ak/diŋir+-ra=r.a#~,ani.ak"><a class="cbd " href="javascript://" onclick="act_wsig(event)" data-wsig="☣@epsd2/praxis%sux:dingir-ra-na=diŋir[deity//deity, god, goddess]N´N$diŋir,ani.ak/diŋir±-ra=r.a#~,ani.ak"><span class="sux " x="3">dingir</span>-<span class="sux " x="3">ra</span>-<span class="sux " x="3">na</span></a></span> <span class="w sux V/i " x="1" id="P343032.11.4" title="zil[good//(to be) good]V/i'V/i$ha.mu.n:zil/zil₂#ha.mu.n:~"><a class="cbd " href="javascript://" onclick="act_wsig(event)" data-wsig="☣@epsd2/praxis%sux:hu-mu-un-zil₂=zil[good//(to be) good]V/i´V/i$ha.mu.n:zil/zil₂#ha.mu.n:~"><span class="sux " x="3">ḫu</span>-<span class="sux " x="3">mu</span>-<span class="sux " x="3">un</span>-<span class="sux " x="3">zil₂</span></a></span></p></td></tr><tr id="P343032.12" class="l"><td class="lnum "><a class=" " name="a.P343032.12"><span class="xlabel ">12</span><span class="lnum ">12</span></a></td><td class="tlit"><p class="tt"><span class="w sux NOUN " x="1" id="P343032.12.1" title="i[oil//oil, butter]N'N$i/i₃#~"><a class="cbd " href="javascript://" onclick="act_wsig(event)" data-wsig="☣@epsd2/praxis%sux:i₃=i[oil//oil, butter]N´N$i/i₃#~"><span class="sux " x="3">i₃</span></a></span> <span class="w sux V/i " x="1" id="P343032.12.2" title="gig[sick//(to be) sick, to hurt, (to be) pained]V/i'V/i$gig/gig#~"><a class="cbd " href="javascript://" onclick="act_wsig(event)" data-wsig="☣@epsd2/praxis%sux:gig=gig[sick//(to be) sick, to hurt, (to be) pained]V/i´V/i$gig/gig#~"><span class="sux " x="3">gig</span></a></span> <span class="w sux NOUN " x="1" id="P343032.12.3" title="udug[demon//a demon]N'N$udug/udug#~"><a class="cbd " href="javascript://" onclick="act_wsig(event)" data-wsig="☣@epsd2/praxis%sux:udug=udug[demon//a demon]N´N$udug/udug#~"><span class="sux " x="3">udug</span></a></span> <span class="w sux V/i " x="1" id="P343032.12.4" title="hulu[bad//(to be) bad, evil]V/i'V/i$hulu/hulu#~"><a class="cbd " href="javascript://" onclick="act_wsig(event)" data-wsig="☣@epsd2/praxis%sux:hul=hulu[bad//(to be) bad, evil]V/i´V/i$hulu/hulu#~"><span class="sux " x="3">ḫul</span></a></span> <span class="w sux V/t " x="1" id="P343032.12.5" title="dim[create//to create, fashion, make, manufacture]V/t'V/t$dim;a/dim₂+-ma=m.a#~;a"><a class="cbd " href="javascript://" onclick="act_wsig(event)" data-wsig="☣@epsd2/praxis%sux:dim₂-ma=dim[create//to create, fashion, make, manufacture]V/t´V/t$dim;a/dim₂±-ma=m.a#~;a"><span class="sux " x="3">dim₂</span>-<span class="sux " x="3">ma</span></a></span></p></td></tr><tr id="P343032.13" class="l"><td class="lnum "><a class=" " name="a.P343032.13"><span class="xlabel ">13</span><span class="lnum ">13</span></a></td><td class="tlit"><p class="tt"><span class="w sux NOUN " x="1" id="P343032.13.1" title="niŋgig[bad thing//that which is bad, forbidden]N'N$niŋgig/niŋ₂-gig#~"><a class="cbd " href="javascript://" onclick="act_wsig(event)" data-wsig="☣@epsd2/praxis%sux:niŋ₂-gig=niŋgig[bad thing//that which is bad, forbidden]N´N$niŋgig/niŋ₂-gig#~"><span class="sux " x="3">nig₂</span>-<span class="sux " x="3">gig</span></a></span> <span class="w sux NOUN " x="1" id="P343032.13.2" title="niŋak[magic//magic]N'N$niŋak,gin/niŋ₂-ak#~,gin"><a class="cbd " href="javascript://" onclick="act_wsig(event)" data-wsig="☣@epsd2/praxis%sux:niŋ₂-AK-gin₇=niŋak[magic//magic]N´N$niŋak,gin/niŋ₂-ak#~,gin"><span class="sux " x="3">nig₂</span>-<span class="sign  ">AK</span>-<span class="sux " x="3">gin₇</span></a></span> <span class="w sux V/t " x="1" id="P343032.13.3" title="zal[pass//to dissolve, melt, disintegrate, break down, collapse]V/t'V/t$mu.e.da.n:zal/zal#mu.e.da.n:~"><a class="cbd " href="javascript://" onclick="act_wsig(event)" data-wsig="☣@epsd2/praxis%sux:me-da-an-zal=zal[pass//to dissolve, melt, disintegrate, break down, collapse]V/t´V/t$mu.e.da.n:zal/zal#mu.e.da.n:~"><span class="sux " x="3">me</span>-<span class="sux " x="3">da</span>-<span class="sux " x="3">an</span>-<span class="sux " x="3">zal</span></a></span></p></td></tr><tr id="P343032.14" class="l"><td class="lnum "><a class=" " name="a.P343032.14"><span class="xlabel ">14</span><span class="lnum ">14</span></a></td><td class="tlit"><p class="tt"><span class="w sux NOUN " x="1" id="P343032.14.1" title="a[water//water]N'N$a,gin/a#~,gin"><a class="cbd " href="javascript://" onclick="act_wsig(event)" data-wsig="☣@epsd2/praxis%sux:a-gin₇=a[water//water]N´N$a,gin/a#~,gin"><span class="sux ">[</span><span class="sux " x="3">a</span><span class="sux ">]</span>-<span class="sux " x="3">gin₇</span></a></span> <span class="w sux NOUN " x="1" id="P343032.14.2" title="ki[place//place]N'N$ki,eše/ki#~,eše"><a class="cbd " href="javascript://" onclick="act_wsig(event)" data-wsig="☣@epsd2/praxis%sux:ki-še₃=ki[place//place]N´N$ki,eše/ki#~,eše"><span class="sux " x="3">ki</span>-<span class="sux " x="3">še₃</span></a></span> <span class="w sux V/t " x="1" id="P343032.14.3" title="sur[press//to press, squeeze]V/t'V/t$mu.i.b:sur/sur#mu.i.b:~"><a class="cbd " href="javascript://" onclick="act_wsig(event)" data-wsig="☣@epsd2/praxis%sux:mi-ni-ib₂-sur=sur[press//to press, squeeze]V/t´V/t$mu.i.b:sur/sur#mu.i.b:~"><span class="sux " x="3">mi</span>-<span class="sux " x="3">ni</span>-<span class="sux " x="3">ib₂</span>-<span class="sux " x="3">sur</span></a></span></p></td></tr></table><div class="p3notes"><p/></div></div></div>
+  
+  
+</div>
+
+    </div>
+  </div>
+  <div id="p4Footer">
+    
+
+  </div>
+</div>
+</body>
+</html>

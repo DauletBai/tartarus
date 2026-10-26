@@ -1,0 +1,23 @@
+[
+  {
+    "file": "Q001965_edition.html",
+    "url": "https://oracc.museum.upenn.edu/etcsri/Q001965",
+    "returncode": 0,
+    "bytes": 26722,
+    "error": ""
+  },
+  {
+    "file": "P289683_card.html",
+    "url": "https://cdli.earth/artifacts/289683",
+    "returncode": 0,
+    "bytes": 89321,
+    "error": ""
+  },
+  {
+    "file": "P289683_lineart.jpg",
+    "url": "https://cdli.earth/dl/lineart/P289683_l.jpg",
+    "returncode": 0,
+    "bytes": 172212,
+    "error": ""
+  }
+]

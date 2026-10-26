@@ -1,0 +1,58 @@
+[
+  {
+    "file": "P223429_praxis.html",
+    "url": "https://oracc.museum.upenn.edu/epsd2/praxis/P223429",
+    "returncode": 0,
+    "bytes": 30815,
+    "error": ""
+  },
+  {
+    "file": "P223429_card.html",
+    "url": "https://cdli.earth/artifacts/223429",
+    "returncode": 0,
+    "bytes": 53596,
+    "error": ""
+  },
+  {
+    "file": "P223429_photo.jpg",
+    "url": "https://cdli.earth/dl/photo/P223429.jpg",
+    "returncode": 56,
+    "bytes": 0,
+    "error": "curl: (56) The requested URL returned error: 404\n"
+  },
+  {
+    "file": "P223429_lineart.jpg",
+    "url": "https://cdli.earth/dl/lineart/P223429_l.jpg",
+    "returncode": 0,
+    "bytes": 164282,
+    "error": ""
+  },
+  {
+    "file": "P343032_praxis.html",
+    "url": "https://oracc.museum.upenn.edu/epsd2/praxis/P343032",
+    "returncode": 0,
+    "bytes": 34776,
+    "error": ""
+  },
+  {
+    "file": "P343032_card.html",
+    "url": "https://cdli.earth/artifacts/343032",
+    "returncode": 0,
+    "bytes": 59606,
+    "error": ""
+  },
+  {
+    "file": "P343032_photo.jpg",
+    "url": "https://cdli.earth/dl/photo/P343032.jpg",
+    "returncode": 0,
+    "bytes": 571754,
+    "error": ""
+  },
+  {
+    "file": "P343032_lineart.jpg",
+    "url": "https://cdli.earth/dl/lineart/P343032_l.jpg",
+    "returncode": 0,
+    "bytes": 179961,
+    "error": ""
+  }
+]

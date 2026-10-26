@@ -1,0 +1,72 @@
+[
+  {
+    "file": "P238324_edition.html",
+    "url": "https://oracc.museum.upenn.edu/dcclt/nineveh/P238324",
+    "returncode": 0,
+    "bytes": 108327,
+    "error": ""
+  },
+  {
+    "file": "P365750_edition.html",
+    "url": "https://oracc.museum.upenn.edu/dcclt/nineveh/P365750",
+    "returncode": 0,
+    "bytes": 361026,
+    "error": ""
+  },
+  {
+    "file": "P349438_edition.html",
+    "url": "https://oracc.museum.upenn.edu/dcclt/P349438",
+    "returncode": 0,
+    "bytes": 36967,
+    "error": ""
+  },
+  {
+    "file": "praxis_utud.html",
+    "url": "https://oracc.museum.upenn.edu/epsd2/praxis/cbd/sux/o0042158.html",
+    "returncode": 0,
+    "bytes": 22250,
+    "error": ""
+  },
+  {
+    "file": "P238324_card.html",
+    "url": "https://cdli.earth/artifacts/238324",
+    "returncode": 0,
+    "bytes": 68129,
+    "error": ""
+  },
+  {
+    "file": "P365750_card.html",
+    "url": "https://cdli.earth/artifacts/365750",
+    "returncode": 0,
+    "bytes": 68145,
+    "error": ""
+  },
+  {
+    "file": "P349438_card.html",
+    "url": "https://cdli.earth/artifacts/349438",
+    "returncode": 0,
+    "bytes": 69894,
+    "error": ""
+  },
+  {
+    "file": "P238324_photo.jpg",
+    "url": "https://cdli.earth/dl/photo/P238324.jpg",
+    "returncode": 0,
+    "bytes": 1678663,
+    "error": ""
+  },
+  {
+    "file": "P365750_photo.jpg",
+    "url": "https://cdli.earth/dl/photo/P365750.jpg",
+    "returncode": 0,
+    "bytes": 5719618,
+    "error": ""
+  },
+  {
+    "file": "P349438_photo.jpg",
+    "url": "https://cdli.earth/dl/photo/P349438.jpg",
+    "returncode": 56,
+    "bytes": 0,
+    "error": "curl: (56) The requested URL returned error: 404\n"
+  }
+]

@@ -1,0 +1,12 @@
+{
+  "status": "passed",
+  "contexts": 24,
+  "objects_in_concordance": 17,
+  "word_occurrences": 25,
+  "target_rows": 8,
+  "complete_early_lines": 30,
+  "source_hashes": 22,
+  "manifest_hashes": 42,
+  "local_links": 16,
+  "book_hashes": "unchanged"
+}

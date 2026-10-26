@@ -1,0 +1,15 @@
+{
+  "date": "2026-10-26",
+  "praxis_declared_instances": 25,
+  "concordance_contexts": 24,
+  "concordance_objects": 17,
+  "context_word_occurrences": 25,
+  "double_token_contexts": [
+    "P343032.3"
+  ],
+  "target_rows": 8,
+  "target_objects": 5,
+  "early_complete_lines": 30,
+  "new_independent_phonetic_values": 0,
+  "book_changed": false
+}
