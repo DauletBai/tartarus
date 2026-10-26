@@ -1,0 +1,13 @@
+{
+  "status": "passed",
+  "crop_records": 26,
+  "local_links": 26,
+  "external_catalogue_files": 1,
+  "new_external_photographs": 0,
+  "local_repetition_model_matches": 1,
+  "held_out_Greek_test_available": false,
+  "dom_dor_resolved": false,
+  "AMA_wedge_inventory_complete": false,
+  "new_independent_sound_values": 0,
+  "book_PDF": "unchanged"
+}

@@ -1,0 +1,4 @@
+﻿model,predicted,editorial_comparison,exact_string_match,scope
+L_fixed_MIN_sound,μιν,σακιν,False,reject only fixed pronunciation min for this position under the alignment; not every alphabetic account
+R_repeat_previous_entry,σακιν,σακιν,True,fits one aligned context; antecedent nu editorial; function remains a supported local hypothesis
+R_row6_prediction,λαβ,missing,not_testable,prediction only; not a successful held-out test
