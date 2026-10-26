@@ -1,0 +1,11 @@
+{
+  "status": "passed",
+  "external_source_hashes": 3,
+  "crop_dimensions_and_hashes": 8,
+  "page_render_hashes": 3,
+  "paired_context_records": 4,
+  "hypothesis_tests": 7,
+  "local_links": 21,
+  "book_PDF": "unchanged",
+  "new_independent_complete_readings": 0
+}

@@ -1,0 +1,8 @@
+﻿test,question,observation,result
+T1,Does a repeated group keep its position?,In editorial rows 2/3 GIŠIMMAR precedes TUR; in row4 AMA precedes GIŠIMMAR; Greek group changes position correspondingly.,"Useful segmentation constraint; model-guided, not a blind transcription."
+T2,Does one graphic identity have one fixed reading?,OSL canonical GA2×AN includes ama and dagal; BM35726 row4 edition selects ama.,Do not equate sign identifier with a single sound or semantic word.
+T3,Can normalized sign arrays prove preservation?,"Row2 model has two ABZ144 entries, while ATF restores the second du13.",No. Brackets must override naive counts of normalized signs.
+T4,Does αμα alone establish meaning mother?,"Greek transcription supplies a proposed phonetic correspondence, not a definition.",No independent semantic identification obtained in this block.
+T5,Has dom versus dor been decided?,1902 transcription and current edition differ; photo terminal stroke not securely resolved here.,Open; neither edition wins merely by authority or date.
+T6,Has a letter for every wedge been recovered?,No repeatable wedge-to-letter inventory established from these images.,No. A graphic-group to sound-sequence candidate is the narrower test.
+T7,Does BM34797 prove PAP.E wedge boundaries?,Lower-field crop shows substantial surface loss.,Full photographic collation remains incomplete; no invented strokes.
