@@ -6,5 +6,5 @@
   "manifest_hashes": 32,
   "local_links": 13,
   "complete_inscription_lines": 36,
-  "book_hashes": "unchanged"
+  "book_hashes": "PDF unchanged; draft not present in repository"
 }

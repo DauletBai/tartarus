@@ -70,6 +70,13 @@ comparisons=[
  dict(item='creation context',sumerian='mu-tud with divine names; alan ... mu-tud in other inscriptions',kazakh='туу birth sense',
       result='cannot count every mu-tud as biological birth or evidence of biological creation',
       source='Q001026; Jagersma p216; 92-token corpus selected in round29',level='context and semantic extension')]
+# Preserve manually curated cumulative comparisons added after this historical extraction.
+previous_path=R/'data/round30_tuu_grammar_comparison.csv'
+if previous_path.exists():
+ with previous_path.open(encoding='utf-8-sig',newline='') as f:
+  previous=list(csv.DictReader(f))
+ known={v['item'] for v in comparisons}
+ comparisons.extend(v for v in previous if v['item'] not in known)
 output('round30_tuu_grammar_comparison.csv',comparisons)
 visual=[
  dict(file='round30_sources/P342645_photo.jpg',kind='photographic composite',observation='Two broad inscribed faces, edges, ruling and damaged areas visible; manuscript is MS3178',limit='No independent reading of every wedge or all three cells of r ii26'),
