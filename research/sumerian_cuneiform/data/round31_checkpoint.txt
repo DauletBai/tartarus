@@ -7,6 +7,6 @@
   "complete_early_lines": 30,
   "source_hashes": 22,
   "manifest_hashes": 42,
-  "local_links": 16,
-  "book_hashes": "unchanged"
+  "local_links": 17,
+  "book_hashes": "PDF unchanged; draft not present in repository"
 }

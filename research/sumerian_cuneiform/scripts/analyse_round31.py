@@ -48,6 +48,11 @@ with zipfile.ZipFile(R/'sources/ETCSRI_2026-10-24_json.zip') as z:
  for n in nodes(d):
   if n['ref'] not in ['Q001965.4.2','Q001965.7.1']:continue
   f=n['f'];control.append(dict(ref=n['ref'],pid='P289683',form=f['form'],cf=f['cf'],morph=f.get('morph',''),signs=' '.join(g.get('gdl_sign','?') for g in f.get('gdl',[])),status='editorial GDL; handcopy inspected, no photograph acquired'))
+existing_control=R/'data/round31_UD_tense_control.csv'
+if existing_control.exists():
+ with existing_control.open(encoding='utf-8-sig') as f:
+  previous=list(csv.DictReader(f))
+ control.extend(x for x in previous if x['ref'] not in {'Q001965.4.2','Q001965.7.1'})
 write('round31_UD_tense_control.csv',control)
 visual=[
 dict(pid='P238324',file='P238324_photo.jpg',type='photographic composite',observation='Joined fragments Rm348/Rm604, damaged left areas, ruled bilingual columns and holes visible',limit='Joined pieces are not independent tablets; museum number field BM dash is incomplete; target DUMU damaged'),
@@ -69,7 +74,7 @@ dict(question='Does same TU UD sequence take different affixes?',evidence='ba-tu
 dict(question='Does UD necessarily mean sun in tu-ud?',evidence='Lexical offspring equivalence and distribution with verbal prefixes',result='Syllabic reading explains spelling without translating UD as sun each time',limit='Reject or support by whole clauses, not isolated pictorial associations'),
 dict(question='Does this establish Kazakh ancestry?',evidence='Kazakh tuw-; older tog-/tug-; Sumerian TU UD spellings',result='Birth-related candidate remains; stronger ancient spelling control, no d/g/w rule or historical direction established',limit='Need independently recurring sound correspondences and contact chronology'),
 dict(question='Does literary creation establish extraterrestrial intelligence?',evidence='P343032 classified incantation; fish/reed-related terms in edition; no depicted beings on inspected photographs',result='Creation-language evidence; no explicit verifiable statement of extraterrestrial arrival obtained',limit='No new full translation of incantation; genre does not resolve metaphysical claim')]
-tests.append(dict(question='TU command versus UD completed birth, or UD as past marker?',evidence='TU alone in completed statue creation; TU UD before DA and without DA; Q001965.4 UD MU RA analyzed as birth; Q001965.7 UD analyzed as day',result='Separate competing grammatical hypothesis retained; current evidence does not establish TU as command or UD as a general past marker',limit='Need secure commands and statements with independently known temporal reference; negative and participial forms alone do not refute past meaning'))
+tests.append(dict(question='TU command versus UD completed birth, or UD as past marker?',evidence='TU alone in completed statue creation; TU UD before DA and without DA; Q001965.4 UD MU RA analyzed as birth; Q001965.7 UD annotated with lexical sense sun; syntactic interpretation is separate',result='Separate competing grammatical hypothesis retained; current evidence does not establish TU as command or UD as a general past marker',limit='Need secure commands and statements with independently known temporal reference; negative and participial forms alone do not refute past meaning'))
 write('round31_hypothesis_tests.csv',tests)
 summary=dict(date='2026-10-26',praxis_declared_instances=25,concordance_contexts=len(contexts),concordance_objects=len({x['pid'] for x in contexts}),
              context_word_occurrences=sum(x['same_form_tokens_in_context'] for x in contexts),

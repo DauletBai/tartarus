@@ -24,5 +24,112 @@
   "citation_forms": {
     "utud": 92
   },
-  "selection": "exact f.cf in ['utud','tud']"
+  "selection": "exact f.cf in ['utud','tud']",
+  "possessive_dative_editorial_controls_2026_10_28": {
+    "records": 10,
+    "explicit_MU_RA": 3,
+    "other_records_without_explicit_RA": 7,
+    "examples": [
+      {
+        "ref": "Q000377.29.1",
+        "form": "ama-ŋu₁₀",
+        "cf": "ama",
+        "sense": "mother",
+        "morph2": "N1=STEM.N3=1-SG-POSS.N5=DAT-H",
+        "signs": "|GA₂×AN| MU"
+      },
+      {
+        "ref": "Q000377.83.1",
+        "form": "ama-ŋu₁₀",
+        "cf": "ama",
+        "sense": "mother",
+        "morph2": "N1=STEM.N3=1-SG-POSS.N5=DAT-H",
+        "signs": "|GA₂×AN| MU"
+      },
+      {
+        "ref": "Q001466.17.2",
+        "form": "lugal-ŋu₁₀",
+        "cf": "lugal",
+        "sense": "king",
+        "morph2": "N1=STEM.N3=1-SG-POSS.N5=DAT-H",
+        "signs": "LUGAL MU"
+      },
+      {
+        "ref": "Q001541.222.1",
+        "form": "lugal-ŋu₁₀",
+        "cf": "lugal",
+        "sense": "king",
+        "morph2": "N1=STEM.N3=1-SG-POSS.N5=DAT-H",
+        "signs": "LUGAL MU"
+      },
+      {
+        "ref": "Q001541.232.2",
+        "form": "lugal-ŋu₁₀",
+        "cf": "lugal",
+        "sense": "king",
+        "morph2": "N1=STEM.N3=1-SG-POSS.N5=DAT-H",
+        "signs": "LUGAL MU"
+      },
+      {
+        "ref": "Q001541.302.1",
+        "form": "lugal-ŋu₁₀",
+        "cf": "lugal",
+        "sense": "king",
+        "morph2": "N1=STEM.N3=1-SG-POSS.N5=DAT-H",
+        "signs": "LUGAL MU"
+      },
+      {
+        "ref": "Q001965.4.2",
+        "form": "tu₂-ŋu₁₀-ra",
+        "cf": "utud",
+        "sense": "bear",
+        "morph2": "NV2=STEM.NV4=SUB.N3=1-SG-POSS.N5=DAT-H",
+        "signs": "UD MU RA"
+      },
+      {
+        "ref": "Q002115.2.1",
+        "form": "nin-ŋu₁₀-ra",
+        "cf": "nin",
+        "sense": "lady",
+        "morph2": "N1=STEM.N3=1-SG-POSS.N5=DAT-H",
+        "signs": "|SAL.TUG₂| MU RA"
+      },
+      {
+        "ref": "Q004103.3.1",
+        "form": "nin-ŋu₁₀-ra",
+        "cf": "nin",
+        "sense": "lady",
+        "morph2": "N1=STEM.N3=1-SG-POSS.N5=DAT-H",
+        "signs": "|SAL.TUG₂| MU RA"
+      },
+      {
+        "ref": "Q008910.2.1",
+        "form": "nin-ŋu₁₀",
+        "cf": "nin",
+        "sense": "lady",
+        "morph2": "N1=STEM.N3=1-SG-POSS.N5=DAT-H",
+        "signs": "|SAL.TUG₂| MU"
+      }
+    ],
+    "scope": "editorial morphology, not blind identification; two nin records may not be independent ancient sources"
+  },
+  "utud_selected_sign_audit_2026_10_28": {
+    "records": 92,
+    "TU": 86,
+    "UD": 1,
+    "sense_bear": 45,
+    "sense_fashion_statue": 47,
+    "scope": "selected editorial corpus word records, not independent tablets or proof of biological events"
+  },
+  "UD_editorial_gdl_audit_2026_10_28": {
+    "selection": "words with at least one exact gdl_sign UD, excludes compound representations and unparsed Q001066",
+    "word_records": 365,
+    "composition_files": 158,
+    "editorial_cf_sense_labels": 53,
+    "sun": 114,
+    "day": 90,
+    "when": 12,
+    "utud_bear": 1,
+    "scope": "editorial corpus annotations; compositions not counted as independent tablets; results are not new sound decipherment"
+  }
 }
