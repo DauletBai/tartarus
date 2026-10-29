@@ -109,5 +109,41 @@ def main():
         print('examples', [(r['ref'], r['form'], r['morph']) for r in detail['examples'][:3]])
 
 
+def audit_final_a():
+    """Count annotated A-final words and literal -da-a forms without rewriting data."""
+    assert hashlib.sha256(ARCHIVE.read_bytes()).hexdigest() == EXPECTED
+    endings = collections.Counter()
+    da_a = []
+    files = 0
+    failed = []
+    with zipfile.ZipFile(ARCHIVE) as archive:
+        for filename in sorted(n for n in archive.namelist()
+                               if re.search(r'/corpusjson/Q\d+\.json$', n)):
+            try:
+                document = json.loads(archive.read(filename))
+            except (ValueError, UnicodeDecodeError):
+                failed.append(filename)
+                continue
+            files += 1
+            for node in nodes(document):
+                f = node['f']
+                if not f.get('lang', '').startswith('sux'):
+                    continue
+                if f.get('form', '').endswith('-da-a'):
+                    da_a.append((node.get('ref'), f.get('form'), f.get('cf'), f.get('pos')))
+                signs = [g.get('gdl_sign') for g in f.get('gdl', [])
+                         if isinstance(g, dict) and g.get('gdl_sign')]
+                if len(signs) >= 2 and signs[-1] == 'A':
+                    endings[signs[-2]] += 1
+    result = dict(parsed=files, failed=failed, last_A=sum(endings.values()),
+                  previous_signs=dict(endings.most_common()), da_a_count=len(da_a),
+                  da_a_compositions=len({r[0].split('.')[0] for r in da_a}), da_a=da_a)
+    print(json.dumps(result, ensure_ascii=False, indent=2))
+
+
 if __name__ == '__main__':
-    main()
+    import sys
+    if '--audit-final-a' in sys.argv:
+        audit_final_a()
+    else:
+        main()
