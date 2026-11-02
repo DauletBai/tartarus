@@ -558,3 +558,6 @@ async fn upgrade_from_completion_keeps_manual_needs_unattributed() {
 
 #[path = "drafts.rs"]
 mod drafts;
+
+#[path = "coordination.rs"]
+mod coordination;

@@ -1,7 +1,7 @@
 use super::*;
 use qazna::{drafts::*, needs::NeedReservationRequest};
 
-async fn scenario(f: &Fixture, funds: bool) -> (Context, Uuid, DraftRequest) {
+pub(super) async fn scenario(f: &Fixture, funds: bool) -> (Context, Uuid, DraftRequest) {
     let c = setup(f, "20", "10", "20").await;
     let stock = meal_stock(f, &c, "2", "10").await;
     let id = need(f, f.resident, c.unit, Category::Food, "meal", "5").await;

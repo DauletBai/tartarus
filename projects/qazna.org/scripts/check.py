@@ -21,6 +21,7 @@ def run(args, **kwargs):
 
 
 def main():
+    run([sys.executable, "scripts/test_ai_review.py"])
     run(["cargo", "fmt", "--check"])
     run([sys.executable, "scripts/licenses.py", "--check"])
     run(["cargo", "clippy", "--locked", "--all-targets", "--", "-D", "warnings"])

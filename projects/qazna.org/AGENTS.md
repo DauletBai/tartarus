@@ -27,3 +27,9 @@ Use the local Git checkout and development branch for commits. The workspace use
 When publishing, update the parent MANIFEST.csv with the paths, byte sizes and SHA-256 of changed/new published files, excluding the manifest itself. `python3 scripts/update_manifest.py` performs this update. Do not replace the local workspace's book README with the public repository README. GitHub Actions lives at the repository root under `.github/workflows/qazna.yml` and must run from `projects/qazna.org`.
 
 Code is AGPL-3.0-or-later; project documentation is CC-BY-SA-4.0. These notices apply only to this project, not to the parent book or archive. Preserve upstream notices, maintain Cargo.lock and regenerate `THIRD_PARTY_LICENSES.json` when dependencies change. Never publish local credentials, databases, target/, caches or private manuscript files.
+
+## Coordination and AI
+
+The author approved automatic analysis, calculations and draft creation with operator-confirmed application. Keep that boundary: AI commentary never applies a draft, signs postings, changes norms or authorizes issuance. The author's ChatGPT Pro subscription is for explicit live tests on synthetic data, not an assumed production service. Offline CI must not call models or require subscription credentials.
+
+Treat every model response and imported string as untrusted. Independently validate referenced subjects and exact quantities against saved calculations; retain the distinction between structured evidence checks and unverified prose. Keep model tooling and credentials out of the calculation path. Update `docs/ai-safety.md` with implemented controls, tests and remaining gaps rather than claiming complete protection from hallucinations.

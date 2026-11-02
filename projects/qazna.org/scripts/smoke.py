@@ -35,6 +35,8 @@ def check_restart(root: Path, database_url: str):
     meal_norm = "00000000-0000-0000-0000-000000000012"
     packing_norm = "00000000-0000-0000-0000-000000000013"
     packing_need = "00000000-0000-0000-0000-000000000014"
+    monitor_id = "00000000-0000-0000-0000-000000000016"
+    monitor_request = None
     draft_id = "00000000-0000-0000-0000-000000000015"
     completed_plan = None
     completion_request = None
@@ -82,6 +84,22 @@ def check_restart(root: Path, database_url: str):
             with urlopen(Request(path, headers=headers), timeout=5) as response:
                 assert json.load(response)["balance"] == ("900" if iteration == 0 else "700")
             if iteration == 3:
+                assert call(f"/v1/coordination/monitors/{monitor_id}")["latest"] is None
+                raw = subprocess.check_output([str(binary), "coordinate-once"], cwd=root, env=env)
+                calculation = json.loads(raw)
+                assert calculation["engine"] == "ordered-planner-v1"
+                assert call(f"/v1/coordination/results/{calculation['job']}") == calculation
+                assert call(f"/v1/planning/drafts/{calculation['draft']}")["state"] == "pending"
+                assert call(f"/v1/resources/{output_resource}")["available"] == "1"
+                (root / "target/last-smoke-calculation.json").write_text(json.dumps(calculation, indent=2))
+                report = {"id": "00000000-0000-0000-0000-000000000017", "model": "synthetic-offline-test",
+                          "report": {"summary": "Production is a forecast, not a receipt.", "findings": [
+                              {"signal": "production_forecast", "subject": packing_need, "quantity": "2", "explanation": "Matches the saved calculation."}],
+                              "questions": [], "requires_operator_approval": True}}
+                saved = call(f"/v1/coordination/results/{calculation['job']}/reviews", report, "review")
+                assert call(f"/v1/coordination/results/{calculation['job']}/reviews") == [saved]
+                call(f"/v1/coordination/monitors/{monitor_id}/stop", {"basis": "Stop test scope"}, "stop-monitor")
+                assert json.loads(subprocess.check_output([str(binary), "coordinate-once"], cwd=root, env=env)) is None
                 assert call(f"/v1/planning/drafts/{draft_id}") == draft
                 assert call("/v1/planning/drafts", draft_request, "save-draft") == draft
                 decision = {"basis": "Operator reviewed provision and production holds"}
@@ -131,6 +149,9 @@ def check_restart(root: Path, database_url: str):
                 draft_request = {"id": draft_id, "plan": proposal_request}
                 draft = call("/v1/planning/drafts", draft_request, "save-draft")
                 assert draft["state"] == "pending" and draft["actions"] == []
+                monitor_request = {"id": monitor_id, "plan": proposal_request}
+                monitor = call("/v1/coordination/monitors", monitor_request, "monitor")
+                assert monitor["state"] == "active" and monitor["latest"] is None
                 for private_path in ["/v1/planning/drafts", f"/v1/planning/drafts/{draft_id}/apply", f"/v1/planning/drafts/{draft_id}/discard"]:
                     try:
                         urlopen(Request(base + private_path, b"{}", {"Content-Type": "application/json"}), timeout=5)
@@ -251,4 +272,4 @@ def check_restart(root: Path, database_url: str):
                     process.kill()
                     process.wait()
             process.stderr.close()
-    print("HTTP smoke passed: norms, persisted drafts, atomic application and production provenance across three restarts")
+    print("HTTP smoke passed: durable coordination, advisory reviews, atomic application and provenance across three restarts")

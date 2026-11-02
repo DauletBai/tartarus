@@ -9,11 +9,12 @@ Decision of 2 November 2026: the MVP and industrial development use the same Rus
 | Accounting, provisioning and HTTP API | Rust, Tokio, Axum | Implemented core modules |
 | Persistent storage | PostgreSQL 16+, SQLx, SQL migrations | Implemented; tested against real PostgreSQL |
 | Economic optimization | Python, NumPy, SciPy HiGHS | Research code exists; integration pending |
+| Advisory AI tests | ChatGPT-authenticated Codex CLI, isolated Python adapter | Opt-in synthetic tests; no model execution authority |
 | Web interface | React, TypeScript, Vite | Planned |
 | User identity | OIDC, roles and account ownership checks | Planned; currently a local operator API |
-| Background work | PostgreSQL jobs and transactional outbox | Planned for calculation integration |
+| Background work | PostgreSQL jobs and transactional outbox | Implemented for ordered Rust planning; Python integration pending |
 
-The [organism analogy](organism.md) guides the domain. One Rust application currently contains domain, ledger, provisioning, needs, production, completion, planning, draft application and API modules. A future Python worker will receive versioned inputs and return a plan; it will not have write access to ledger postings. Neither a solver nor a language model determines authoritative balances.
+The [organism analogy](organism.md) guides the domain. One Rust application currently contains domain, ledger, provisioning, needs, production, completion, planning, draft application, coordination and API modules. A future Python worker will receive versioned inputs and return a plan; it will not have write access to ledger postings. Neither a solver nor a language model determines authoritative balances.
 
 Cargo.lock pins dependencies. The declared minimum Rust version is 1.88; the verified toolchain is 1.97.0. SQLx is 0.8.6. Library upgrades must pass tests without requiring a language or database migration. References: [Axum](https://docs.rs/axum/0.8.9/axum/), [SQLx](https://docs.rs/sqlx/0.8.6/sqlx/).
 
@@ -55,7 +56,7 @@ The same technology stack does not imply immediate industrial readiness. Economi
 
 1. Reconcile outstanding production forecasts and evaluate global optimization beyond the current ordered greedy assessment.
 2. Explicit corrections and reversals, with links to original events and repeat-reversal limits.
-3. Versioned Python worker jobs and validation of freshness and admissibility before application.
+3. Integrate a versioned Python optimizer, worker service roles, queue budgets and evaluation-driven model review.
 4. User roles and resident, operator and auditor interfaces.
 5. Independent production verification, logistics and backup recovery exercises.
 
@@ -68,3 +69,9 @@ Migration 0006 records immutable norm revision chains and atomically links appli
 Migration 0007 persists server-generated proposal snapshots and their explicit applied/discarded decisions. Application locks all participating needs, capacities, accounts and resource lots in that class order, then reuses transaction-scoped reservation and production services. It requires unchanged proposal observations (excluding the snapshot timestamp), sufficient aggregate accounting measure and at least one action. Selected holds, terminal event, action links and the idempotent response commit together. No production output or resident receipt is inferred.
 
 Database constraints verify complete action attribution and prohibit retrospective links. Consistent reads provide the immutable proposal and current state; creation replay retains the original response. See [drafts](drafts.md) for contracts, recovery and outstanding forecast limitations.
+
+## Coordination and advisory AI
+
+Migration 0008 adds a transactional command outbox, immutable monitor scopes, recoverable calculation jobs and saved results. The background worker produces draft proposals using `ordered-planner-v1`, without applying them. Leases fence stale workers; changed calculations generate drafts and identical results reuse their previous draft. This is bounded coordination, not a global optimizer or a trained economic model.
+
+An optional one-shot Python adapter runs Codex with the author's ChatGPT authentication for synthetic live tests. It minimizes input and accepts only completed, tool-free structured commentary. Rust independently checks each cited quantity/subject before appending a report. Model prose remains untrusted and does not alter economic state. See [coordination](coordination.md) and [AI safety](ai-safety.md).

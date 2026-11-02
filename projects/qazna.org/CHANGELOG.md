@@ -1,5 +1,15 @@
 # Qazna changelog
 
+## 0.8.0 — 2 November 2026
+
+- Add transactional command events, immutable monitor scopes, durable calculation jobs and background/one-shot worker commands.
+- Recover expired leases, bound retries and reject late results from stopped or superseded workers.
+- Save exact planning results and pending drafts atomically; reuse unchanged proposals without automatic application.
+- Add a ChatGPT-authenticated, one-shot Codex adapter for explicit synthetic tests, with no paid-API fallback or Qazna execution tools.
+- Validate structured AI evidence against saved quantities and subjects independently in Rust; reject unsupported evidence and approval bypasses.
+- Document the organism-inspired coordination layers, implemented security controls and unresolved deployment/model risks.
+- Add ten PostgreSQL scenarios, ten offline Python adversarial tests and queued-work/review HTTP checks across restarts.
+
 ## 0.7.0 — 2 November 2026
 
 - Persist server-generated planning drafts with immutable requests, proposals and explicit applied/discarded decisions.

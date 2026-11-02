@@ -6,6 +6,8 @@ The project lives in `projects/qazna.org/` in [Tartarus](https://github.com/Daul
 
 ## Implemented capabilities
 
+- Recalculate monitored needs after committed changes through a durable worker; keep application under operator control.
+- Attach evidence-checked AI commentary through an opt-in ChatGPT-authenticated test adapter.
 - Apply explicit, immutable revisions of needs norms without rewriting existing needs.
 - Select advisory provisioning proposals using shared stock/capacity budgets and caller-defined priorities.
 - Save reviewable planning drafts and apply all selected stock/production holds atomically after revalidation.
@@ -20,7 +22,7 @@ The project lives in `projects/qazna.org/` in [Tartarus](https://github.com/Daul
 - Preserve idempotency, transaction history and earlier database versions through additive migrations.
 - Exercise the local operator HTTP API against real PostgreSQL, including process restarts.
 
-Version 0.7.0 adds persistent planning drafts, explicit review decisions and atomic application of selected provisioning/production holds. It does not independently verify reports, authorize issuance or automatically count production as a resident's receipt. Accounting norms and capacity declarations remain explicit experimental inputs. Global optimization, reconciliation of outstanding production forecasts, approved monetary policy, user roles and the web interface are still pending. This is a local research MVP, not a production-ready national monetary system.
+Version 0.8.0 adds durable coordination, recoverable calculation jobs and an advisory AI test adapter. The Rust planner calculates exact proposals; model commentary never applies them. It does not independently verify reports, authorize issuance or automatically count production as a resident's receipt. Accounting norms and capacity declarations remain explicit experimental inputs. Global optimization, reconciliation of outstanding production forecasts, approved monetary policy, user roles and the web interface are still pending. This is a local research MVP, not a production-ready national monetary system.
 
 ## Run the checks
 
@@ -44,6 +46,8 @@ On Linux, set `PG_BIN` to the installed PostgreSQL directory, for example `/usr/
 - [Production completion, losses and provenance](docs/completion.md)
 - [Needs norms and provisioning proposals](docs/norms-and-planning.md)
 - [Reviewed drafts and atomic application](docs/drafts.md)
+- [Coordination and ChatGPT test workflow](docs/coordination.md)
+- [AI safety boundaries and verification](docs/ai-safety.md)
 - [Local Git and IDE workflow](docs/git-workflow.md)
 - [Development, API and verification](docs/development.md)
 - [Initial analysis and historical plan](docs/analysis-2026-11-02.md)

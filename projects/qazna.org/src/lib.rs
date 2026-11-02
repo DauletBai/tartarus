@@ -12,3 +12,6 @@ pub mod production;
 mod production_service;
 pub mod provisioning;
 mod provisioning_service;
+
+pub mod coordination;
+mod coordination_service;

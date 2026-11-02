@@ -16,7 +16,7 @@ The script checks formatting, dependency license inventory, Clippy with warnings
 
 Ordinary `cargo test` does not run the ignored PostgreSQL tests. The full script invokes them with `--ignored --test-threads=4`. A manual run must set `QAZNA_TEST_DATABASE_URL` to a disposable database in which tests may create schemas. Scenarios run four at a time; requests inside concurrency tests remain concurrent.
 
-Verified on 2 November 2026 with Rust 1.97.0 and PostgreSQL 16.10: 3 unit tests and 68 integration tests. Coverage includes allocation/reservation races, rollback injection, upgrades from 0.1/0.2/0.3/0.4/0.5/0.6, needs independent of balances, hierarchy scope, durable shortages, shared production capacity, cross-period stock races, exact overflow assessment, production completion, losses, terminal races, provenance chains, immutable norm revisions and proposals with shared resource/capacity budgets, immutable drafts, stale-plan rejection, complete batch rollback and competing draft/direct actions. The HTTP smoke scenario checks persistent holds, cancellation, completion and provenance and draft application across three restarts. Backup restoration remains a separate future check.
+Verified on 2 November 2026 with Rust 1.97.0 and PostgreSQL 16.10: 3 Rust unit tests, 10 offline Python safety tests and 78 PostgreSQL integration tests. Coverage includes allocation/reservation races, rollback injection, upgrades from 0.1/0.2/0.3/0.4/0.5/0.6/0.7, needs independent of balances, hierarchy scope, durable shortages, shared production capacity, cross-period stock races, exact overflow assessment, production completion, losses, terminal races, provenance chains, immutable norm revisions and proposals with shared resource/capacity budgets, immutable drafts, stale-plan rejection, complete batch rollback and competing draft/direct actions, transactional event delivery, lease fencing, stopped workers and independent AI evidence validation. The HTTP smoke scenario checks persistent holds, cancellation, completion and provenance draft application and queued coordination across three restarts. Backup restoration remains a separate future check.
 
 ## Manual startup
 
@@ -39,7 +39,7 @@ The fixture only runs in an empty database whose name ends in `_demo`. It create
 | Method and path | Purpose |
 | --- | --- |
 | `GET /health/live` | Process liveness |
-| `GET /health/ready` | Database and current planning-draft schema availability |
+| `GET /health/ready` | Database and current coordination schema availability |
 | `POST /v1/accounts` | Create an empty treasury, resident or producer account with an explicit UUID |
 | `GET /v1/accounts/{id}` | Read type, balance and holds |
 | `POST /v1/transfers` | Transfer with required Idempotency-Key |
@@ -58,4 +58,10 @@ The treasury then holds 900 and the resident 100. Identical retries return the s
 
 Local commits and IDE tracking are described in the [Git workflow](git-workflow.md).
 
-Further contracts: [provisioning](provisioning.md), [needs](needs.md), [production planning](production.md), [completion and provenance](completion.md), [norms and advisory planning](norms-and-planning.md), [reviewed drafts and application](drafts.md). There is no web UI, public issuance API or Python integration yet. See [architecture](architecture.md) for deployment boundaries.
+Further contracts: [provisioning](provisioning.md), [needs](needs.md), [production planning](production.md), [completion and provenance](completion.md), [norms and advisory planning](norms-and-planning.md), [reviewed drafts and application](drafts.md), [coordination and AI tests](coordination.md). There is no web UI, public issuance API or Python integration yet. See [architecture](architecture.md) for deployment boundaries.
+
+## Optional model tests and local disk use
+
+`scripts/test_ai_review.py` is offline and runs in CI. Live subscription tests are separate opt-in invocations of `scripts/ai_review.py`; credentials and outputs stay outside version control. The HTTP smoke scenario exports a synthetic calculation to ignored `target/last-smoke-calculation.json` for such a test.
+
+When disk space is constrained, remove only regenerable project build caches and run checks with `CARGO_INCREMENTAL=0`. The growing PostgreSQL suite creates isolated schemas in its disposable cluster; it needs sufficient free disk space and reports storage errors instead of silently skipping scenarios.

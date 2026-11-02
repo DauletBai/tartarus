@@ -1,4 +1,5 @@
 use crate::{
+    coordination::{MonitorRequest, ReviewRequest},
     domain::{NewAccount, Transfer},
     drafts::DraftRequest,
     ledger::{Ledger, LedgerError},
@@ -69,6 +70,14 @@ pub fn router(ledger: Ledger, token: String) -> Router {
         .route(
             "/v1/planning/drafts/{id}/discard",
             post(discard_planning_draft),
+        )
+        .route("/v1/coordination/monitors", post(create_monitor))
+        .route("/v1/coordination/monitors/{id}", get(monitor))
+        .route("/v1/coordination/monitors/{id}/stop", post(stop_monitor))
+        .route("/v1/coordination/results/{id}", get(coordination_result))
+        .route(
+            "/v1/coordination/results/{id}/reviews",
+            get(ai_reviews).post(record_ai_review),
         )
         .route_layer(middleware::from_fn_with_state(token, authorize));
     Router::new()
@@ -301,6 +310,13 @@ impl IntoResponse for LedgerError {
             Self::DraftClosed => (StatusCode::CONFLICT, "draft_closed"),
             Self::DraftStale => (StatusCode::CONFLICT, "draft_stale"),
             Self::DraftEmpty => (StatusCode::CONFLICT, "draft_empty"),
+            Self::MonitorNotFound => (StatusCode::NOT_FOUND, "monitor_not_found"),
+            Self::MonitorConflict => (StatusCode::CONFLICT, "monitor_exists"),
+            Self::MonitorStopped => (StatusCode::CONFLICT, "monitor_stopped"),
+            Self::CalculationNotFound => (StatusCode::NOT_FOUND, "calculation_not_found"),
+            Self::CalculationFailed => (StatusCode::SERVICE_UNAVAILABLE, "calculation_failed"),
+            Self::CalculationLeaseLost => (StatusCode::CONFLICT, "calculation_lease_lost"),
+            Self::ReviewConflict => (StatusCode::CONFLICT, "review_exists"),
             Self::InvalidStoredResponse => {
                 (StatusCode::INTERNAL_SERVER_ERROR, "invalid_stored_response")
             }
@@ -499,4 +515,58 @@ async fn discard_planning_draft(
             .discard_planning_draft(command_key(&headers)?, id, request)
             .await?,
     ))
+}
+
+async fn create_monitor(
+    State(ledger): State<Ledger>,
+    headers: HeaderMap,
+    Json(request): Json<MonitorRequest>,
+) -> Result<impl IntoResponse, LedgerError> {
+    Ok(Json(
+        ledger
+            .create_monitor(command_key(&headers)?, request)
+            .await?,
+    ))
+}
+async fn monitor(
+    State(ledger): State<Ledger>,
+    Path(id): Path<Uuid>,
+) -> Result<impl IntoResponse, LedgerError> {
+    Ok(Json(ledger.monitor(id).await?))
+}
+async fn stop_monitor(
+    State(ledger): State<Ledger>,
+    Path(id): Path<Uuid>,
+    headers: HeaderMap,
+    Json(request): Json<ResolutionRequest>,
+) -> Result<impl IntoResponse, LedgerError> {
+    Ok(Json(
+        ledger
+            .stop_monitor(command_key(&headers)?, id, request)
+            .await?,
+    ))
+}
+async fn coordination_result(
+    State(ledger): State<Ledger>,
+    Path(id): Path<Uuid>,
+) -> Result<impl IntoResponse, LedgerError> {
+    Ok(Json(ledger.coordination_result(id).await?))
+}
+async fn record_ai_review(
+    State(ledger): State<Ledger>,
+    Path(id): Path<Uuid>,
+    headers: HeaderMap,
+    Json(request): Json<ReviewRequest>,
+) -> Result<impl IntoResponse, LedgerError> {
+    Ok(Json(
+        ledger
+            .record_ai_review(command_key(&headers)?, id, request)
+            .await?,
+    ))
+}
+async fn ai_reviews(
+    State(ledger): State<Ledger>,
+    Path(id): Path<Uuid>,
+) -> Result<impl IntoResponse, LedgerError> {
+    Ok(Json(ledger.ai_reviews(id).await?))
 }

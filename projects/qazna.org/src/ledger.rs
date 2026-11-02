@@ -66,6 +66,20 @@ pub enum LedgerError {
     DraftStale,
     #[error("draft has no actions to apply")]
     DraftEmpty,
+    #[error("coordination monitor not found")]
+    MonitorNotFound,
+    #[error("coordination monitor already exists")]
+    MonitorConflict,
+    #[error("coordination monitor is stopped")]
+    MonitorStopped,
+    #[error("coordination result not found")]
+    CalculationNotFound,
+    #[error("calculation failed; inspect monitor status")]
+    CalculationFailed,
+    #[error("calculation lease expired or monitor stopped")]
+    CalculationLeaseLost,
+    #[error("AI review already exists")]
+    ReviewConflict,
     #[error("stored response is invalid")]
     InvalidStoredResponse,
     #[error("database operation failed")]
@@ -83,7 +97,7 @@ impl Ledger {
     }
 
     pub async fn ready(&self) -> Result<(), LedgerError> {
-        sqlx::query("SELECT draft_id FROM planning_outcomes LIMIT 0")
+        sqlx::query("SELECT job_id FROM coordination_results LIMIT 0")
             .execute(&self.pool)
             .await?;
         Ok(())
