@@ -4,6 +4,8 @@ pub mod domain;
 pub mod ledger;
 pub mod needs;
 mod needs_service;
+pub mod planning;
+mod planning_service;
 pub mod production;
 mod production_service;
 pub mod provisioning;

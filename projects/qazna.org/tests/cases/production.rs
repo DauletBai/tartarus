@@ -1250,3 +1250,6 @@ async fn upgrade_from_planning_preserves_active_plan_and_allows_completion() {
     assert_eq!(f.ledger.resource(resource).await.unwrap().on_hand, "6");
     assert_eq!(f.ledger.capacity(capacity).await.unwrap().consumed, "4");
 }
+
+#[path = "planning.rs"]
+mod planning;

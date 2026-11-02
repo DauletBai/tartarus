@@ -22,6 +22,8 @@ Run `PG_BIN=/opt/homebrew/opt/postgresql@16/bin python3 scripts/check.py` for ch
 
 The author requires continuing work to be saved to GitHub. The chosen repository is `DauletBai/tartarus`, project prefix `projects/qazna.org/`. Save each completed, verified change on a development branch and report the actual commit/PR link. Preserve the book and unrelated archive files. Do not claim synchronization before reading back the remote commit. Do not force-push or merge a PR without authorization for that action.
 
-When publishing, update the parent MANIFEST.csv with the paths, byte sizes and SHA-256 of changed/new published files, excluding the manifest itself. Do not replace the local workspace's book README with the public repository README. GitHub Actions lives at the repository root under `.github/workflows/qazna.yml` and must run from `projects/qazna.org`.
+Use the local Git checkout and development branch for commits. The workspace uses a project-scoped sparse checkout to preserve local manuscript files; see `docs/git-workflow.md`. Stage only Qazna, its root workflow and the manifest.
+
+When publishing, update the parent MANIFEST.csv with the paths, byte sizes and SHA-256 of changed/new published files, excluding the manifest itself. `python3 scripts/update_manifest.py` performs this update. Do not replace the local workspace's book README with the public repository README. GitHub Actions lives at the repository root under `.github/workflows/qazna.yml` and must run from `projects/qazna.org`.
 
 Code is AGPL-3.0-or-later; project documentation is CC-BY-SA-4.0. These notices apply only to this project, not to the parent book or archive. Preserve upstream notices, maintain Cargo.lock and regenerate `THIRD_PARTY_LICENSES.json` when dependencies change. Never publish local credentials, databases, target/, caches or private manuscript files.

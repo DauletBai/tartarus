@@ -1,5 +1,15 @@
 # Qazna changelog
 
+## 0.6.0 — 2 November 2026
+
+- Add immutable needs norm revisions and atomic application with an auditable source link.
+- Select read-only provisioning proposals from uncovered needs, listed stock and process candidates.
+- Share simulated input/capacity budgets across needs; report residual quantities, forecast surplus and separate accounting gaps.
+- Preserve caller-defined priority order without introducing a hidden allocation policy or treating expected output as stock.
+- Add ten PostgreSQL scenarios, an upgrade from 0.5 and HTTP checks for norm persistence and advisory selection.
+- Connect the active workspace to local Git history with a project-scoped sparse checkout and document the IDE/commit workflow.
+- Add a scoped parent-manifest update script for local commits.
+
 ## 0.5.0 — 2 November 2026
 
 - Complete a committed production plan atomically: consume reserved inputs and capacity, record losses and create usable output.

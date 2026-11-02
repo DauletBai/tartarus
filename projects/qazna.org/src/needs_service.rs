@@ -96,22 +96,7 @@ impl Ledger {
         if let Some(value) = replay {
             return decode(value);
         }
-        unit_in(&mut tx, request.assigned_unit).await?;
-        let kind: Option<String> = sqlx::query_scalar("SELECT kind FROM accounts WHERE id=$1")
-            .bind(request.resident)
-            .fetch_optional(&mut *tx)
-            .await?;
-        if kind.ok_or(LedgerError::NotFound)? != "resident" {
-            return Err(LedgerError::Invalid("need must belong to resident"));
-        }
-        // A need is registered without consulting balances or available stock.
-        let inserted=sqlx::query("INSERT INTO needs(id,resident_id,unit_id,period,category,unit,quantity,basis) VALUES ($1,$2,$3,$4::text::date,$5,$6,$7,$8) ON CONFLICT DO NOTHING")
-            .bind(request.id).bind(request.resident).bind(request.assigned_unit).bind(&request.period)
-            .bind(request.category.as_str()).bind(&request.unit).bind(request.quantity.units()).bind(&request.basis).execute(&mut *tx).await?.rows_affected();
-        if inserted == 0 {
-            return Err(LedgerError::NeedConflict);
-        }
-        let result = need_in(&mut tx, request.id).await?;
+        let result = create_need_in(&mut tx, request).await?;
         finish(tx, key, &payload, result).await
     }
 
@@ -280,7 +265,7 @@ async fn unit_in(tx: &mut Tx<'_>, id: Uuid) -> Result<Unit, LedgerError> {
     })
 }
 
-async fn need_in(tx: &mut Tx<'_>, id: Uuid) -> Result<Need, LedgerError> {
+pub(crate) async fn need_in(tx: &mut Tx<'_>, id: Uuid) -> Result<Need, LedgerError> {
     let row=sqlx::query("SELECT resident_id,unit_id,to_char(period,'YYYY-MM-DD') AS period,category,unit,quantity::text,reserved::text,received::text,uncovered::text,unmet::text,last_attempt_id,COALESCE(last_attempt_reasons,ARRAY[]::text[]) AS reasons FROM need_totals WHERE id=$1")
         .bind(id).fetch_optional(&mut **tx).await?.ok_or(LedgerError::NeedNotFound)?;
     Ok(Need {
@@ -322,4 +307,26 @@ fn attempt_from(row: &PgRow) -> Result<NeedAttempt, LedgerError> {
             required_measure: row.try_get("required_measure")?,
         },
     })
+}
+
+pub(crate) async fn create_need_in(
+    tx: &mut Tx<'_>,
+    request: NeedRequest,
+) -> Result<Need, LedgerError> {
+    unit_in(tx, request.assigned_unit).await?;
+    let kind: Option<String> = sqlx::query_scalar("SELECT kind FROM accounts WHERE id=$1")
+        .bind(request.resident)
+        .fetch_optional(&mut **tx)
+        .await?;
+    if kind.ok_or(LedgerError::NotFound)? != "resident" {
+        return Err(LedgerError::Invalid("need must belong to resident"));
+    }
+    // A need is registered without consulting balances or available stock.
+    let inserted=sqlx::query("INSERT INTO needs(id,resident_id,unit_id,period,category,unit,quantity,basis) VALUES ($1,$2,$3,$4::text::date,$5,$6,$7,$8) ON CONFLICT DO NOTHING")
+            .bind(request.id).bind(request.resident).bind(request.assigned_unit).bind(&request.period)
+            .bind(request.category.as_str()).bind(&request.unit).bind(request.quantity.units()).bind(&request.basis).execute(&mut **tx).await?.rows_affected();
+    if inserted == 0 {
+        return Err(LedgerError::NeedConflict);
+    }
+    need_in(tx, request.id).await
 }

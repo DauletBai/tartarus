@@ -6,6 +6,8 @@ The project lives in `projects/qazna.org/` in [Tartarus](https://github.com/Daul
 
 ## Implemented capabilities
 
+- Apply explicit, immutable revisions of needs norms without rewriting existing needs.
+- Select advisory provisioning proposals using shared stock/capacity budgets and caller-defined priorities.
 - Register needs independently of purchasing power; distinguish requested, reserved, received and unmet quantities.
 - Organize provisioning units into responsibility hierarchies and report coverage by period and physical unit.
 - Preserve shortage observations and their input snapshots.
@@ -17,7 +19,7 @@ The project lives in `projects/qazna.org/` in [Tartarus](https://github.com/Daul
 - Preserve idempotency, transaction history and earlier database versions through additive migrations.
 - Exercise the local operator HTTP API against real PostgreSQL, including process restarts.
 
-Version 0.5.0 records operator-confirmed production. It does not independently verify reports, authorize issuance or automatically count production as a resident's receipt. Accounting norms and capacity declarations remain explicit experimental inputs. Automatic plan selection, approved monetary policy, user roles and the web interface are still pending. This is a local research MVP, not a production-ready national monetary system.
+Version 0.6.0 adds versioned needs norms and read-only provisioning proposals to operator-confirmed production. It does not independently verify reports, authorize issuance or automatically count production as a resident's receipt. Accounting norms and capacity declarations remain explicit experimental inputs. Global optimization, atomic application of multi-action proposals, approved monetary policy, user roles and the web interface are still pending. This is a local research MVP, not a production-ready national monetary system.
 
 ## Run the checks
 
@@ -39,6 +41,8 @@ On Linux, set `PG_BIN` to the installed PostgreSQL directory, for example `/usr/
 - [Needs, units and feedback](docs/needs.md)
 - [Production capacity and planning](docs/production.md)
 - [Production completion, losses and provenance](docs/completion.md)
+- [Needs norms and provisioning proposals](docs/norms-and-planning.md)
+- [Local Git and IDE workflow](docs/git-workflow.md)
 - [Development, API and verification](docs/development.md)
 - [Initial analysis and historical plan](docs/analysis-2026-11-02.md)
 - [Changelog](CHANGELOG.md), [contributing](CONTRIBUTING.md), [security](SECURITY.md)

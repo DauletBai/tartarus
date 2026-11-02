@@ -2,6 +2,7 @@ use crate::{
     domain::{NewAccount, Transfer},
     ledger::{Ledger, LedgerError},
     needs::{NeedRequest, NeedReservationRequest, PeriodQuery, ProviderRequest, UnitRequest},
+    planning::{NeedNorm, NormNeedRequest, PlanningRequest},
     production::{CapacityRequest, CompletionRequest, PlanRequest, RecipeRequest},
     provisioning::{AllocationRequest, ReservationRequest, ResolutionRequest, ResourceRequest},
 };
@@ -56,6 +57,11 @@ pub fn router(ledger: Ledger, token: String) -> Router {
         )
         .route("/v1/resources/{id}/provenance", get(resource_provenance))
         .route("/v1/production/plans/{id}/cancel", post(cancel_production))
+        .route("/v1/need-norms", post(create_need_norm))
+        .route("/v1/need-norms/{id}", get(need_norm))
+        .route("/v1/needs/from-norm", post(create_need_from_norm))
+        .route("/v1/needs/{id}/norm", get(need_norm_source))
+        .route("/v1/planning/assess", post(propose_provisioning))
         .route_layer(middleware::from_fn_with_state(token, authorize));
     Router::new()
         .route(
@@ -280,6 +286,8 @@ impl IntoResponse for LedgerError {
             Self::ProductionNotFound => (StatusCode::NOT_FOUND, "production_not_found"),
             Self::ProductionConflict => (StatusCode::CONFLICT, "production_exists"),
             Self::ProductionClosed => (StatusCode::CONFLICT, "production_closed"),
+            Self::NormNotFound => (StatusCode::NOT_FOUND, "norm_not_found"),
+            Self::NormConflict => (StatusCode::CONFLICT, "norm_revision_conflict"),
             Self::InvalidStoredResponse => {
                 (StatusCode::INTERNAL_SERVER_ERROR, "invalid_stored_response")
             }
@@ -391,4 +399,49 @@ async fn resource_provenance(
     Path(id): Path<Uuid>,
 ) -> Result<impl IntoResponse, LedgerError> {
     Ok(Json(ledger.resource_provenance(id).await?))
+}
+
+async fn create_need_norm(
+    State(ledger): State<Ledger>,
+    headers: HeaderMap,
+    Json(request): Json<NeedNorm>,
+) -> Result<impl IntoResponse, LedgerError> {
+    Ok(Json(
+        ledger
+            .create_need_norm(command_key(&headers)?, request)
+            .await?,
+    ))
+}
+
+async fn create_need_from_norm(
+    State(ledger): State<Ledger>,
+    headers: HeaderMap,
+    Json(request): Json<NormNeedRequest>,
+) -> Result<impl IntoResponse, LedgerError> {
+    Ok(Json(
+        ledger
+            .create_need_from_norm(command_key(&headers)?, request)
+            .await?,
+    ))
+}
+
+async fn need_norm(
+    State(ledger): State<Ledger>,
+    Path(id): Path<Uuid>,
+) -> Result<impl IntoResponse, LedgerError> {
+    Ok(Json(ledger.need_norm(id).await?))
+}
+
+async fn need_norm_source(
+    State(ledger): State<Ledger>,
+    Path(id): Path<Uuid>,
+) -> Result<impl IntoResponse, LedgerError> {
+    Ok(Json(ledger.need_norm_source(id).await?))
+}
+
+async fn propose_provisioning(
+    State(ledger): State<Ledger>,
+    Json(request): Json<PlanningRequest>,
+) -> Result<impl IntoResponse, LedgerError> {
+    Ok(Json(ledger.propose_provisioning(request).await?))
 }

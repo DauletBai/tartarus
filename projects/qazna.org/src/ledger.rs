@@ -52,6 +52,10 @@ pub enum LedgerError {
     ProductionConflict,
     #[error("production plan is already closed")]
     ProductionClosed,
+    #[error("need norm not found")]
+    NormNotFound,
+    #[error("norm revision already exists or branches from a superseded version")]
+    NormConflict,
     #[error("stored response is invalid")]
     InvalidStoredResponse,
     #[error("database operation failed")]
@@ -69,7 +73,7 @@ impl Ledger {
     }
 
     pub async fn ready(&self) -> Result<(), LedgerError> {
-        sqlx::query("SELECT plan_id FROM production_completions LIMIT 0")
+        sqlx::query("SELECT need_id FROM need_norm_sources LIMIT 0")
             .execute(&self.pool)
             .await?;
         Ok(())

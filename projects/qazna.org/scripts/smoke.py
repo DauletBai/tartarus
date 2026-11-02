@@ -32,6 +32,9 @@ def check_restart(root: Path, database_url: str):
     child_unit = "00000000-0000-0000-0000-000000000007"
     need = "00000000-0000-0000-0000-000000000008"
     output_resource = "00000000-0000-0000-0000-000000000011"
+    meal_norm = "00000000-0000-0000-0000-000000000012"
+    packing_norm = "00000000-0000-0000-0000-000000000013"
+    packing_need = "00000000-0000-0000-0000-000000000014"
     completed_plan = None
     completion_request = None
     completed_receipt = None
@@ -91,6 +94,31 @@ def check_restart(root: Path, database_url: str):
                 assert (totals["reserved"], totals["consumed"], totals["available"]) == ("0", "4", "6")
                 assert call(f"/v1/accounts/{producer}")["balance"] == "80"
                 assert call(f"/v1/resources/{resource}/provenance")["origin"] == "declared"
+                assert call(f"/v1/needs/{need}/norm")["id"] == meal_norm
+                assert call(f"/v1/need-norms/{meal_norm}")["quantity"] == "12"
+                call("/v1/need-norms", {"id": packing_norm, "code": "demo-packed-meals", "revision": 1,
+                     "supersedes": None, "category": "food", "unit": "packed_meal", "quantity": "3",
+                     "applicability": "Explicit demo need", "basis": "Experimental assumption"}, "packing-norm")
+                call("/v1/needs/from-norm", {"id": packing_need, "resident": resident, "assigned_unit": child_unit,
+                     "period": "2026-11-02", "norm": packing_norm, "basis": "Explicit application"}, "packing-need")
+                proposal_request = {"period": "2026-11-02", "basis": "Operator priority order", "needs": [
+                    {"need": packing_need, "resources": [output_resource], "production": [
+                        {"recipe": recipe, "capacity": capacity, "inputs": [{"slot": "meal", "resource": resource}]}]}]}
+                advice = call("/v1/planning/assess", proposal_request)
+                assert advice["advisory"] is True
+                assert advice["needs"][0]["stock_selected"] == "1"
+                assert advice["needs"][0]["expected_from_production"] == "2"
+                assert advice["needs"][0]["residual"] == "0"
+                assert advice["needs"][0]["production"][0]["request"]["batches"] == "2"
+                assert call(f"/v1/production/capacities/{capacity}")["reserved"] == "0"
+                assert call(f"/v1/needs/{packing_need}")["uncovered"] == "3"
+                try:
+                    urlopen(Request(base + "/v1/planning/assess", json.dumps(proposal_request).encode(),
+                                    {"Content-Type": "application/json"}), timeout=5)
+                except HTTPError as error:
+                    assert error.code == 401
+                else:
+                    raise AssertionError("planning accepted an unauthenticated request")
             elif iteration == 0:
                 call("/v1/accounts", {"id": producer, "kind": "producer"})
                 call("/v1/allocations", {"treasury": treasury, "resident": resident,
@@ -105,9 +133,11 @@ def check_restart(root: Path, database_url: str):
                      "function": "Provide meals", "basis": "Synthetic hierarchy"}, "unit-child")
                 call(f"/v1/units/{child_unit}/providers", {"producer": producer, "basis": "Synthetic assignment"}, "unit-provider")
                 assert call(f"/v1/units/{root_unit}")["children"] == [child_unit]
-                call("/v1/needs", {"id": need, "resident": resident, "assigned_unit": root_unit,
-                     "period": "2026-11-02", "category": "food", "unit": "meal", "quantity": "12",
-                     "basis": "Declared synthetic need"}, "need")
+                call("/v1/need-norms", {"id": meal_norm, "code": "demo-meals", "revision": 1,
+                     "supersedes": None, "category": "food", "unit": "meal", "quantity": "12",
+                     "applicability": "Explicit synthetic resident/day", "basis": "Experimental demo assumption"}, "meal-norm")
+                call("/v1/needs/from-norm", {"id": need, "resident": resident, "assigned_unit": root_unit,
+                     "period": "2026-11-02", "norm": meal_norm, "basis": "Explicit norm application"}, "need")
                 blocked = call(f"/v1/needs/{need}/reserve", {"resource": resource, "quantity": "12",
                                "basis": "Attempt full provision"}, "need-blocked")
                 assert blocked["status"] == "blocked"
@@ -188,4 +218,4 @@ def check_restart(root: Path, database_url: str):
                     process.kill()
                     process.wait()
             process.stderr.close()
-    print("HTTP smoke passed: provisioning, production completion, losses and provenance across two restarts")
+    print("HTTP smoke passed: norms, advisory planning, provisioning and production provenance across two restarts")

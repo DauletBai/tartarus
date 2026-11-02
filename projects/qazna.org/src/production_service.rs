@@ -190,7 +190,7 @@ impl Ledger {
     }
 }
 
-fn normalize(request: &mut PlanRequest) -> Result<(), LedgerError> {
+pub(crate) fn normalize(request: &mut PlanRequest) -> Result<(), LedgerError> {
     if !valid_text(&request.basis, 1000) || request.inputs.len() > 32 {
         return Err(LedgerError::Invalid("basis and at most 32 inputs required"));
     }
@@ -226,7 +226,7 @@ pub(crate) async fn lock_capacity(tx: &mut Tx<'_>, id: Uuid) -> Result<(), Ledge
     }
     Ok(())
 }
-async fn capacity_in(tx: &mut Tx<'_>, id: Uuid) -> Result<Capacity, LedgerError> {
+pub(crate) async fn capacity_in(tx: &mut Tx<'_>, id: Uuid) -> Result<Capacity, LedgerError> {
     let value=sqlx::query_scalar("SELECT jsonb_build_object('declaration',jsonb_build_object('id',id,'unit',unit_id,'period',to_char(period,'YYYY-MM-DD'),'capacity_unit',capacity_unit,'quantity',quantity::text,'basis',basis),'reserved',reserved::text,'consumed',consumed::text,'available',(quantity-reserved-consumed)::text) FROM production_capacity_totals WHERE id=$1")
         .bind(id).fetch_optional(&mut **tx).await?.ok_or(LedgerError::ProductionNotFound)?;
     decode(value)
@@ -247,6 +247,20 @@ fn integer(value: &str) -> Result<i128, LedgerError> {
 async fn assess_in(
     tx: &mut Tx<'_>,
     request: &PlanRequest,
+) -> Result<ProductionAssessment, LedgerError> {
+    assess_with_limits(
+        tx,
+        request,
+        &std::collections::BTreeMap::new(),
+        &std::collections::BTreeMap::new(),
+    )
+    .await
+}
+pub(crate) async fn assess_with_limits(
+    tx: &mut Tx<'_>,
+    request: &PlanRequest,
+    stocks: &std::collections::BTreeMap<Uuid, i128>,
+    capacities: &std::collections::BTreeMap<Uuid, i128>,
 ) -> Result<ProductionAssessment, LedgerError> {
     let mut recipe = recipe_in(tx, request.recipe).await?;
     recipe.inputs.sort_by(|a, b| a.slot.cmp(&b.slot));
@@ -272,7 +286,8 @@ async fn assess_in(
     let batches = i128::from(request.batches.units());
     let capacity_cost = i128::from(recipe.capacity_per_batch.units());
     let output = i128::from(recipe.output_per_batch.units());
-    let available = integer(&capacity.available)?;
+    let available =
+        integer(&capacity.available)?.min(*capacities.get(&request.capacity).unwrap_or(&i128::MAX));
     let required = batches * capacity_cost;
     let limit = i128::from(i64::MAX);
     let mut max_batches = (available / capacity_cost).min(limit / output);
@@ -299,7 +314,8 @@ async fn assess_in(
         let supplying_unit = row.try_get("unit_id")?;
         let per_batch = i128::from(input.quantity_per_batch.units());
         let required = batches * per_batch;
-        let available = integer(&resource.available)?;
+        let available =
+            integer(&resource.available)?.min(*stocks.get(&resource.id).unwrap_or(&i128::MAX));
         max_batches = max_batches.min(available / per_batch);
         overflow |= required > limit;
         inputs.push(InputAssessment {

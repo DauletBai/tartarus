@@ -27,7 +27,7 @@ A resource used to meet a need must belong to a provider assigned to the respons
 }
 ```
 
-The resident must have a `resident` account and the assigned unit must exist. Quantity is a positive integer string; unit is an exact physical-unit code. One record is allowed per resident, day, category and unit. Categories are food, water and energy. Quantity is explicit, not automatically derived from age, physiology or a normative registry.
+The resident must have a `resident` account and the assigned unit must exist. Quantity is a positive integer string; unit is an exact physical-unit code. One record is allowed per resident, day, category and unit. Categories are food, water and energy. Quantity is explicit, not automatically derived from age or physiology. Since 0.6 an operator may also apply a specific [norm revision](norms-and-planning.md); the need preserves that revision rather than following subsequent changes.
 
 Registering a need creates no allocation or posting. Needs and allocations participate in the same provisioning scenario but are distinct records. Quantity amendments, withdrawal of needs and period closure are not implemented.
 
