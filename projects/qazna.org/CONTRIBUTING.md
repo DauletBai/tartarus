@@ -1,9 +1,11 @@
-# Участие в Qazna
+# Contributing to Qazna
 
-Начните с [принципов организма](docs/organism.md), [архитектуры](docs/architecture.md) и [правил обеспечения](docs/provisioning.md). Изменение экономического правила должно содержать предпосылки, основание и проверяемый сценарий. Не подменяйте потребности платёжеспособностью или целевой прибылью.
+Start with the [organism-inspired principles](docs/organism.md), [architecture](docs/architecture.md) and [provisioning contract](docs/provisioning.md). Economic rule changes must state their assumptions, basis and a reproducible scenario. Do not substitute purchasing power or profit targets for human needs.
 
-Рабочий процесс: отдельная ветка → реализация и документация → `python3 scripts/check.py` → коммит → отправка ветки в GitHub → pull request. Изменения денежного учёта требуют проверок конкурентных операций и отката. Новая версия существующей базы оформляется новой SQL-миграцией. Изменения Qazna не должны затрагивать рукопись и опубликованный PDF книги.
+Use English for all maintained project files: documentation, comments, examples, error messages and contributor materials. Preserve public API identifiers and historical migration bytes. English as the contribution language does not restrict user-supplied names or descriptions to ASCII. Keep upstream legal notices and attribution intact.
 
-Вклад в код предоставляется под AGPL-3.0-or-later, в документацию — под CC-BY-SA-4.0. Вносите только материалы, которые вправе распространять на этих условиях. Сторонний код должен сохранять свои уведомления и совместимые условия; не заменяйте их автоматически лицензией проекта. Передача авторских прав через этот процесс не требуется.
+Workflow: development branch → implementation and documentation → `python3 scripts/check.py` → commit → push to GitHub → pull request. Accounting and provisioning changes need meaningful concurrency and rollback checks. Upgrade existing databases through new SQL migrations. Qazna changes must not alter the manuscript, published book PDF or unrelated research archive.
 
-Не включайте пароли, токены, персональные данные реальных жителей, дампы рабочих баз или файлы сборки. В тестах используйте только синтетические данные. Обсуждайте решения уважительно и аргументированно; ошибки модели и отрицательные результаты являются полезной частью исследования.
+Code contributions are provided under AGPL-3.0-or-later; documentation contributions under CC-BY-SA-4.0. Submit only material you can distribute under these terms. Preserve third-party notices and compatible terms rather than automatically replacing them with the project license. This workflow does not require copyright assignment.
+
+Do not commit passwords, tokens, real residents' personal data, production database dumps or build output. Use synthetic data in tests. Discuss decisions respectfully and with evidence; model failures and negative results are useful research findings.

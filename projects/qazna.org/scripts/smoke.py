@@ -31,7 +31,11 @@ def check_restart(root: Path, database_url: str):
     root_unit = "00000000-0000-0000-0000-000000000006"
     child_unit = "00000000-0000-0000-0000-000000000007"
     need = "00000000-0000-0000-0000-000000000008"
-    for iteration in range(2):
+    output_resource = "00000000-0000-0000-0000-000000000011"
+    completed_plan = None
+    completion_request = None
+    completed_receipt = None
+    for iteration in range(3):
         with socket.socket() as sock:
             sock.bind(("127.0.0.1", 0))
             port = sock.getsockname()[1]
@@ -73,7 +77,21 @@ def check_restart(root: Path, database_url: str):
             path = base + "/v1/accounts/00000000-0000-0000-0000-000000000002"
             with urlopen(Request(path, headers=headers), timeout=5) as response:
                 assert json.load(response)["balance"] == ("900" if iteration == 0 else "700")
-            if iteration == 0:
+            if iteration == 2:
+                assert call(f"/v1/production/plans/{completed_plan}")["state"] == "completed"
+                assert call(f"/v1/production/plans/{completed_plan}/completion") == completed_receipt
+                assert call(f"/v1/production/plans/{completed_plan}/complete", completion_request, "complete-production") == completed_receipt
+                origin = call(f"/v1/resources/{output_resource}/provenance")
+                assert origin["origin"] == "production"
+                assert origin["completion"]["inputs"][0]["resource"] == resource
+                assert origin["completion"]["inputs"][0]["loss"] == "1"
+                assert call(f"/v1/resources/{resource}")["on_hand"] == "4"
+                assert call(f"/v1/resources/{output_resource}")["available"] == "1"
+                totals = call(f"/v1/production/capacities/{capacity}")
+                assert (totals["reserved"], totals["consumed"], totals["available"]) == ("0", "4", "6")
+                assert call(f"/v1/accounts/{producer}")["balance"] == "80"
+                assert call(f"/v1/resources/{resource}/provenance")["origin"] == "declared"
+            elif iteration == 0:
                 call("/v1/accounts", {"id": producer, "kind": "producer"})
                 call("/v1/allocations", {"treasury": treasury, "resident": resident,
                      "period": "2026-11-02", "category": "food", "amount": "200",
@@ -149,6 +167,12 @@ def check_restart(root: Path, database_url: str):
                 call(f"/v1/reservations/{second['id']}/cancel", {"basis": "Request withdrawn"}, "cancel-2")
                 assert call(f"/v1/accounts/{resident}")["available"] == "220"
                 assert call(f"/v1/resources/{resource}")["available"] == "6"
+                completed_plan = call("/v1/production/plans", production_request, "production-to-complete")["plan_id"]
+                completion_request = {"output": {"id": output_resource, "producer": producer,
+                    "quantity": "1", "unit_measure": "20"}, "losses": [{"slot": "meal", "quantity": "1"}],
+                    "basis": "Observed packing result", "shortfall_basis": "One portion damaged"}
+                completed_receipt = call(f"/v1/production/plans/{completed_plan}/complete", completion_request, "complete-production")
+                assert completed_receipt["output_shortfall"] == "1"
             try:
                 urlopen(path, timeout=5)
             except HTTPError as error:
@@ -164,4 +188,4 @@ def check_restart(root: Path, database_url: str):
                     process.kill()
                     process.wait()
             process.stderr.close()
-    print("HTTP smoke passed: needs, production capacity/input holds, cancellation and provision after restart")
+    print("HTTP smoke passed: provisioning, production completion, losses and provenance across two restarts")

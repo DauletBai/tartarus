@@ -1,34 +1,36 @@
-# Qazna как система обеспечения живого организма
+# Qazna as an organism-inspired provisioning system
 
-Указание автора от 2 ноября 2026: при разработке исходить из устройства живого человеческого организма, от клеток до органов и их взаимодействия. Цель модели — устойчивое обеспечение потребностей и воспроизводство общих возможностей. Увеличение денежной прибыли не используется как целевая функция по умолчанию.
+The author's direction of 2 November 2026 is to use the living human organism, from cells to organs and their coordination, as an architectural guide. The model aims to sustain human needs and reproduce shared capabilities. Increasing financial profit is not a default objective.
 
-## Соответствие уровней
+## Mapping the analogy
 
-| Образ организма | Проектируемое понятие Qazna |
+| Biological analogy | Qazna concept |
 | --- | --- |
-| Клеточный уровень | Минимальная учитываемая потребность, ресурсная единица и событие обеспечения |
-| Ткани и органы | Обеспечивающие подразделения с определённой функцией, мощностями, входами и выходами |
-| Обмен и транспорт | Движение реальных ресурсов и связанная с ним циркуляция учётной меры |
-| Обратная связь | Неудовлетворённые потребности, остатки, задержки, резервы, износ и нарушения ограничений |
-| Поддержание устойчивого состояния | Согласование плана обеспечения с мощностями, ресурсами и запасами |
-| Рост и восстановление | Подтверждённое изменение реальных возможностей; отдельно — решение о допустимом изменении денежной меры |
+| Cellular level | Smallest recorded need, resource unit and provisioning event |
+| Tissues and organs | Provisioning units with functions, capacities, inputs and outputs |
+| Exchange and transport | Physical resource movement and associated accounting circulation |
+| Feedback | Unmet needs, stocks, delays, reservations, losses, wear and constraint violations |
+| Maintaining stability | Matching provisioning plans to capacities, resources and reserves |
+| Growth and recovery | Verified changes in real capabilities; separately, a decision on permissible changes to monetary measure |
 
-Это проектная аналогия. Она не доказывает экономическую модель и не означает, что социальные решения можно вывести из биологии. Человек остаётся самостоятельным участником с потребностями, правом выбора и приватностью, а не подчинённой системой клеткой.
+This is a design analogy, not proof of the economic model or a claim that social decisions follow from biology. A person remains an autonomous participant with needs, choice and privacy, not an obedient or disposable cell.
 
-## Правила для реализации
+## Implementation principles
 
-1. Начинать сценарий с потребности: что, кому, сколько и к какому периоду требуется. Затем определять обеспечивающее подразделение, доступную мощность и маршрут обеспечения.
-2. Сохранять физические величины отдельно от учётной меры. Литры воды, порции питания и энергетические единицы не складываются без явной модели преобразования.
-3. `unit_measure` — нормативная учётная мера единицы ресурса, не цена, автоматически определяемая спросом, прибылью или торгами. В текущем экспериментальном модуле её задаёт оператор, а основание фиксируется в `basis` ресурсной партии. Это не утверждённая общественная норма; централизованный реестр норм ещё предстоит реализовать.
-4. Резерв означает обещанное обеспечение, а подтверждение — зарегистрированное получение. Согласованные изменения ресурса и учёта происходят атомарно. Отмена освобождает оба резерва.
-5. Дефицит ресурса и нехватка доступной учётной меры — разные сигналы. Они требуют разных решений и не устраняются скрытым начислением денег.
-6. Базовые потребности не привязываются к прибыльности, занятости или рейтингу человека. В текущем модуле эти критерии отсутствуют.
-7. Историю сохранять для обратной связи и проверки. Исправление должно иметь основание; удаление неудобного результата не восстанавливает устойчивость системы.
+1. Start with the need: what is required, for whom, how much and for which period. Then identify responsible units, capacity and the provisioning route.
+2. Keep physical dimensions separate from accounting measure. Do not sum water, meals and energy without an explicit conversion model.
+3. `unit_measure` is a normative accounting measure per resource unit, not a price determined automatically by demand, profit or bidding. The operator supplies an experimental value and records its basis. A centrally approved registry of norms is not implemented.
+4. A reservation is promised provision; settlement records receipt. Resource and accounting changes occur atomically. Cancellation releases both holds.
+5. Physical shortage and insufficient available accounting measure are distinct signals. Do not silently create money to resolve either.
+6. Basic needs are not conditioned on profitability, employment or a person's rating. These criteria are absent from the current module.
+7. Preserve history for feedback and audit. Corrections need a stated basis; deleting inconvenient results does not restore system stability.
 
-## Текущее соответствие кода
+## Current implementation
 
-Назначение переводит существующую меру из казны жителю с указанием периода, категории и основания. Оператор задаёт сумму: автоматического вывода нормы из потребности пока нет. Категория описывает назначение, но не вводит скрытый запрет распоряжаться остатком.
+Allocations transfer existing treasury measure to a resident with a period, category and basis. The operator supplies the amount; it is not derived automatically from a needs norm. The allocation category does not impose a hidden restriction on spending the balance.
 
-Ресурсная партия принадлежит обеспечивающему подразделению; его технический тип счёта сейчас называется `producer`. Это не предполагает частного продавца, торгов или максимизации выручки. При подтверждении получения учётная мера переходит на счёт подразделения. Правило дальнейшего возврата в казну должно быть определено явно; автоматический возврат не добавлен как неоговорённое допущение.
+A resource lot belongs to a provisioning account whose technical type is `producer`. This does not assume a private seller, auctions or profit maximization. Resident settlement transfers accounting measure to this account. Returning measure to the treasury requires an explicit economic rule; no automatic return was introduced as an unstated assumption.
 
-В коде есть реестр потребностей, иерархия ответственных подразделений, назначения, партии ресурсов, резервы, получение, отмена и сводки обеспеченности. Неудачные попытки сохраняют отдельные причины нехватки ресурса и учётной меры. Добавлены объявленные мощности, технологические карты и зависимости от выбранных входных партий, с резервом мощности и всех входов. Ещё нужны подтверждение производства, нормативы потребностей, логистика и автоматическая корректировка плана. Поэтому нынешний модуль — часть будущей системы циркуляции и контроля, а не завершённая модель организма.
+Needs, responsibility hierarchies, allocations, resource lots, reservations, receipts, cancellations and coverage reports are implemented. Blocked attempts preserve physical and accounting shortage observations. Declared capacity and immutable recipes support production planning against selected inputs. Completion consumes the whole reserved cycle, records input losses and output shortfall, and creates a traceable output lot when usable output exists. Completion is an operator report, not independent verification, monetary growth authorization or proof of resident receipt.
+
+Needs norms, logistics, automatic replanning, independent verification and the full circulation policy remain unfinished. The current modules are parts of a future coordination system, not a complete model of an organism or economy.

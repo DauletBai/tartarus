@@ -1,61 +1,53 @@
-# Назначения и резервирование
+# Allocations, resources and resident provisioning
 
-Этот модуль связывает учётную меру и фактическое обеспечение в модели [организма](organism.md). Он работает с тремя категориями: `food`, `water`, `energy`. Житель пока определяется синтетическим счётом типа `resident`; реестр подтверждённых личностей ещё не подключён. Обеспечивающее подразделение использует счёт типа `producer`.
+The provisioning module links accounting measure to explicit physical stock. It does not calculate monetary policy or treat an account balance as proof of physical availability.
 
-## Назначение
+## Allocations
 
-`POST /v1/allocations` принимает `treasury`, `resident`, `period` в формате действительной даты `YYYY-MM-DD`, `category`, `amount` и `basis`. Сумма — положительная целочисленная строка. Одна комбинация жителя, дня и категории допускает одно назначение, даже при запросах с разными ключами. При недостатке доступных средств назначение и проводки целиком откатываются. Повтор с прежним ключом возвращает исходную квитанцию.
+`POST /v1/allocations` accepts `treasury`, `resident`, `period` (YYYY-MM-DD), `category`, `amount` and `basis`. It transfers existing measure from the treasury to a resident. Categories are `food`, `water` and `energy`; one allocation is allowed per resident, day and category. The treasury must have enough available measure. There is no implicit issuance, interest or fee.
 
-Оператор задаёт сумму и основание. Пример экспериментальной записи:
+The operator supplies the amount and experimental basis; an allocation is not automatically calculated from a needs norm. Corrections to an existing allocation require a future explicit reversal workflow.
 
-```json
-{"treasury":"00000000-0000-0000-0000-000000000002","resident":"00000000-0000-0000-0000-000000000003","period":"2026-11-02","category":"food","amount":"200","basis":"Экспериментальный норматив обеспечения, версия 1"}
-```
+## Physical lots
 
-Средства переводятся из существующего остатка казны. Назначение не создаёт новых единиц, не сгорает автоматически и не связывается с занятостью или рейтингом. Категория назначения не вводит ограничение на дальнейшее использование остатка; целевые лимиты требуют отдельного экономического решения. Исправление уже выполненного назначения должно стать отдельным сценарием обратной проводки.
+`POST /v1/resources` accepts `id`, `producer`, `category`, `unit`, `quantity`, `unit_measure` and `basis`. For example, quantity `"10"`, unit `"meal"` and unit_measure `"20"` mean ten portions with an experimental accounting norm of 20 per portion. The basis must describe both declared stock and the norm. This is an operator declaration, not independently verified growth.
 
-## Ресурсная партия
+Physical quantities are positive integer strings in the selected smallest unit; use milliliters if whole liters are too coarse. Physical dimensions and accounting minor units are independent. A reservation's quantity multiplied by its accounting norm must fit i64. Lots and their norms are immutable. Replenishment and norm changes require new explicit records.
 
-`POST /v1/resources` принимает `id`, `producer`, `category`, `unit`, `quantity`, `unit_measure`, `basis`. Например, `quantity = "10"`, `unit = "meal"`, `unit_measure = "20"` означают десять порций с экспериментальной учётной мерой 20 на порцию. Основание должно описывать объявленный запас и применённый норматив. Это операторская декларация, не независимое подтверждение реального роста.
+`GET /v1/resources/{id}` returns `on_hand` (remaining stock), `reserved` (all active holds) and `available` (free stock). Since 0.4, physical holds include both resident and [production](production.md) reservations. Since 0.5, completed production inputs count as consumption. One stock remainder cannot be promised twice.
 
-Физические количества — целые положительные строки в указанной минимальной единице. При необходимости дробного количества выбирается меньшая единица, например миллилитр. Размерность ресурса и денежная минимальная единица независимы. `quantity × unit_measure` проверяется на переполнение i64. Партия и её норматив неизменяемы; пополнение, изменение нормы и распределение мощности услуг будут отдельными операциями.
+## Reservation and receipt
 
-`GET /v1/resources/{id}` показывает `on_hand` — оставшееся количество, `reserved` — обещанное обеспечение и `available` — свободное количество. Нельзя выдавать один и тот же остаток нескольким получателям.
+`POST /v1/reservations` accepts `resident`, `resource`, `quantity` and `basis`. It checks free stock and the resident's available measure together. The complete reservation succeeds or nothing is recorded. Reserving does not post money.
 
-## Резерв и подтверждение
-
-`POST /v1/reservations` принимает `resident`, `resource`, `quantity`, `basis`. Система проверяет одновременно свободное количество ресурса и доступную меру жителя. Резерв записывается целиком или не записывается вообще. Денежные проводки при резервировании не создаются.
-
-`GET /v1/accounts/{id}` возвращает три отдельные величины: `balance`, `reserved`, `available`. Обычный перевод тоже учитывает резерв. Состояние резерва доступно через `GET /v1/reservations/{id}`.
+`GET /v1/accounts/{id}` separates `balance`, `reserved` and `available`. Ordinary transfers also respect held funds. `GET /v1/reservations/{id}` returns the reservation state.
 
 ```mermaid
 stateDiagram-v2
-    [*] --> reserved: деньги и ресурс удержаны
-    reserved --> settled: получение подтверждено
-    reserved --> cancelled: запрос отменён
+    [*] --> reserved: Hold funds and resource
+    reserved --> settled: Confirm receipt
+    reserved --> cancelled: Withdraw request
     settled --> [*]
     cancelled --> [*]
 ```
 
-`POST /v1/reservations/{id}/settle` с `{"basis":"Основание подтверждения получения"}` атомарно регистрирует получение, уменьшает физический остаток, снимает удержание и проводит учётную меру от жителя подразделению. `POST /v1/reservations/{id}/cancel` с основанием освобождает оба резерва без проводок. Подтверждённый резерв нельзя отменить этой операцией: возврат после получения требует отдельного сценария. Автоматического истечения резервов пока нет.
+`POST /v1/reservations/{id}/settle` with `{"basis":"Confirmed receipt"}` records receipt, consumes stock, releases the hold and transfers accounting measure from resident to producer atomically. `/cancel` with a basis releases both holds without postings. A settled reservation cannot be cancelled; post-receipt returns need a separate future workflow. Reservations do not expire automatically.
 
-Статус выводится из неизменяемого резерва и единственного конечного события. При одновременном подтверждении и отмене может завершиться только одно действие. Искусственный сбой при записи проводок проверяется тестом: он оставляет резерв активным, деньги и ресурс — без изменений.
+State derives from immutable history and a single terminal event. Concurrent settlement and cancellation have one winner. An injected posting failure leaves the reservation active and preserves money and stock.
 
-## Повторные запросы и ошибки
+## Idempotency and errors
 
-Все новые изменяющие маршруты требуют `Idempotency-Key` и операторский токен. Ключ един для всех команд в книге учёта. Повтор с тем же содержимым возвращает первоначальную квитанцию, а другое содержимое или другой маршрут с тем же ключом даёт конфликт. Поэтому повтор создания уже завершённого резерва возвращает исходное состояние `reserved`; текущее состояние нужно получать через GET.
+Mutating provisioning routes require an operator token and `Idempotency-Key`. Keys are shared across the ledger. Identical retries return the initial receipt; changed content or a different route with the same key conflicts. Replaying creation after settlement still returns the original reserved receipt; use GET for current state.
 
-| HTTP | Код | Смысл |
+| HTTP | Code | Meaning |
 | --- | --- | --- |
-| 409 | `allocation_exists` | Назначение за день и категорию уже существует |
-| 409 | `insufficient_funds` | Недостаточно свободной учётной меры |
-| 409 | `insufficient_stock` | Недостаточно реального ресурса в партии |
-| 409 | `reservation_closed` | Резерв уже подтверждён или отменён |
-| 409 | `idempotency_conflict` | Ключ использован с другими параметрами |
-| 409 | `balance_limit` | Превышен числовой предел учёта |
-| 404 | `resource_not_found` / `reservation_not_found` | Объект не существует |
-| 503 | `storage_unavailable` | Операция не подтверждена; повторять с прежним ключом |
+| 409 | `allocation_exists` | The resident/day/category allocation already exists |
+| 409 | `insufficient_funds` | Insufficient available accounting measure |
+| 409 | `insufficient_stock` | Insufficient physical stock in the selected lot |
+| 409 | `reservation_closed` | Already settled or cancelled |
+| 409 | `idempotency_conflict` | The key belongs to different parameters |
+| 409 | `balance_limit` | An accounting numeric limit was exceeded |
+| 404 | `resource_not_found` / `reservation_not_found` | Unknown object |
+| 503 | `storage_unavailable` | Operation not confirmed; retry with the original key |
 
-Нехватка ресурса и недостаток доступной меры отражаются раздельно. Они не объявляют потребность человека недействительной: модуль [потребностей](needs.md) сохраняет неудовлетворённое количество и причины попытки; автоматическая корректировка плана остаётся следующим этапом.
-
-Начиная с 0.4.0, свободный физический остаток учитывает также [производственные резервы](production.md). Они не резервируют учётную меру и не создают проводки.
+Physical and accounting shortages are separate signals. They do not invalidate a person's need: the [needs module](needs.md) preserves unmet quantities and shortage observations. Automatic replanning remains future work. Production reservations and completion do not reserve money or create postings.

@@ -1,10 +1,10 @@
-# Запуск и проверка Qazna
+# Developing and verifying Qazna
 
-Рабочая директория внутри репозитория Tartarus: `projects/qazna.org/`.
+The working directory inside Tartarus is `projects/qazna.org/`. Maintain project files in English. Runtime names and descriptions may still contain supported Unicode; this is not an English-only user-data policy.
 
-## Автоматическая проверка
+## Automated checks
 
-Нужны Rust с rustfmt и clippy, Python 3.11+ и бинарные файлы PostgreSQL 16+. Установка Python-пакетов для этой проверки не требуется. Зависимости Rust скачиваются один раз через `cargo fetch --locked`.
+Requirements: Rust with rustfmt and Clippy, Python 3.11+ and PostgreSQL 16+ binaries. No Python packages are required for the check runner. Fetch Rust dependencies once:
 
 ```sh
 cd projects/qazna.org
@@ -12,15 +12,15 @@ cargo fetch --locked
 PG_BIN=/opt/homebrew/opt/postgresql@16/bin python3 scripts/check.py
 ```
 
-Скрипт проверяет форматирование, clippy с запретом предупреждений, модульные тесты, интеграционные тесты и запуск настоящего HTTP-сервера с перезапуском процесса. Для PostgreSQL создаётся временный кластер с закрытым Unix-сокетом без TCP. После проверки он останавливается и удаляется. Действующие базы пользователя не используются.
+The script checks formatting, dependency license inventory, Clippy with warnings denied, unit tests, integration tests and the real HTTP binary across restarts. PostgreSQL runs in a temporary cluster with a private Unix socket and no TCP listener. It is stopped and deleted afterward. Existing user databases are never used.
 
-Обычный `cargo test` не выполняет интеграционные тесты PostgreSQL: они явно помечены ignored. Полная команда выше запускает их с `--ignored`. Если выбран ручной запуск, `QAZNA_TEST_DATABASE_URL` должен указывать на отдельную тестовую БД; тесты создают в ней отдельные схемы и требуют CREATE SCHEMA.
+Ordinary `cargo test` does not run the ignored PostgreSQL tests. The full script invokes them with `--ignored --test-threads=4`. A manual run must set `QAZNA_TEST_DATABASE_URL` to a disposable database in which tests may create schemas. Scenarios run four at a time; requests inside concurrency tests remain concurrent.
 
-Проверено 2 ноября 2026: Rust 1.97.0, PostgreSQL 16.10; 3 модульных и 36 интеграционных тестов. Проверены конкурентные назначения и резервы, гонка подтверждения с отменой, откат при искусственном сбое и обновление базы с версий 0.1, 0.2 и 0.3, независимость потребности от баланса, иерархия ответственности и сохранение причин дефицита. Настоящий HTTP-процесс проверяется с перезапуском, сохранённым активным резервом потребности и пересчётом сводки после получения. Также проверены общая мощность разных процессов, конкуренция производства и жителей за запас, совместное использование входов планами разных дат, точный расчёт переполнения и откат всех производственных резервов. HTTP-сценарий проверяет сохранность производственного плана после перезапуска и освобождение входов при отмене. Интеграционные сценарии запускаются по четыре одновременно, а конкурентные запросы внутри сценариев остаются параллельными. Восстановление из резервной копии остаётся отдельной будущей проверкой.
+Verified on 2 November 2026 with Rust 1.97.0 and PostgreSQL 16.10: 3 unit tests and 45 integration tests. Coverage includes allocation/reservation races, rollback injection, upgrades from 0.1/0.2/0.3/0.4, needs independent of balances, hierarchy scope, durable shortages, shared production capacity, cross-period stock races, exact overflow assessment, production completion, losses, terminal races and provenance chains. The HTTP smoke scenario checks persistent holds, cancellation, completion and provenance across two restarts. Backup restoration remains a separate future check.
 
-## Ручной запуск
+## Manual startup
 
-Подготовьте отдельную базу `qazna_demo` и задайте `DATABASE_URL` для неё. Миграции выполняются отдельной командой, сервер при каждом старте их не применяет.
+Create a separate `qazna_demo` database and configure its connection URL. Migrations are a separate command; the server does not automatically migrate on every start.
 
 ```sh
 export DATABASE_URL='postgresql://USER:PASSWORD@127.0.0.1:5432/qazna_demo'
@@ -30,23 +30,21 @@ export QAZNA_OPERATOR_TOKEN="$(python3 -c 'import secrets; print(secrets.token_h
 cargo run --locked -- serve
 ```
 
-Адрес по умолчанию — `127.0.0.1:8080`; другой локальный адрес задаётся через `QAZNA_BIND`. Токен нужен в терминале клиента; не помещайте его в репозиторий. Шаблон URL выше нужно заменить собственными реквизитами отдельной базы.
+Replace the URL placeholders with credentials for your separate demo database. The default binding is `127.0.0.1:8080`; `QAZNA_BIND` can select another loopback address. The client shell needs the token; never commit it.
 
-Фикстура разрешена только в пустой БД с именем, заканчивающимся на `_demo`. Она создаёт технический счёт эмитента `…0001` с балансом −1000, казну `…0002` с балансом 1000 и жителя `…0003` с нулём. Это синтетическое начальное состояние, не операция подтверждённого экономического роста.
+The fixture only runs in an empty database whose name ends in `_demo`. It creates technical issuer account `...0001` with balance -1000, treasury `...0002` with 1000 and resident `...0003` with zero. This is synthetic initial state, not an issuance operation based on verified growth.
 
-## HTTP API
+## Core HTTP routes
 
-| Метод и путь | Назначение |
+| Method and path | Purpose |
 | --- | --- |
-| `GET /health/live` | Процесс принимает запросы |
-| `GET /health/ready` | Доступна БД и схема мощностей |
-| `POST /v1/accounts` | Создать пустой счёт treasury, resident или producer с явным UUID |
-| `GET /v1/accounts/{id}` | Прочитать тип и точный баланс |
-| `POST /v1/transfers` | Выполнить перевод с обязательным Idempotency-Key |
+| `GET /health/live` | Process liveness |
+| `GET /health/ready` | Database and current completion schema availability |
+| `POST /v1/accounts` | Create an empty treasury, resident or producer account with an explicit UUID |
+| `GET /v1/accounts/{id}` | Read type, balance and holds |
+| `POST /v1/transfers` | Transfer with required Idempotency-Key |
 
-Пути `/v1/*` требуют `Authorization: Bearer …`. Это локальный операторский доступ. Казна и эмитент могут существовать только в одном экземпляре каждый. Эмитент не доступен для создания или переводов через API.
-
-Пример запроса в терминале с установленным токеном:
+All `/v1/*` routes require `Authorization: Bearer ...`. This is local operator access, not user-specific authorization. Treasury and issuer are singletons; the API cannot create or transfer with an issuer account.
 
 ```sh
 curl --fail-with-body http://127.0.0.1:8080/v1/transfers \
@@ -56,6 +54,6 @@ curl --fail-with-body http://127.0.0.1:8080/v1/transfers \
   -d '{"from":"00000000-0000-0000-0000-000000000002","to":"00000000-0000-0000-0000-000000000003","amount":"100"}'
 ```
 
-После операции казна содержит 900, житель — 100. Повтор точно такого запроса возвращает тот же `transaction_id` без второго списания, в том числе после перезапуска сервера. Сумма `"101"` с тем же ключом даёт HTTP 409. Новый перевод без достаточного остатка также даёт 409 с кодом `insufficient_funds`; недоступная БД — 503. Ключ действует в пределах всей книги учёта, поэтому оператор должен создавать глобально уникальные ключи.
+The treasury then holds 900 and the resident 100. Identical retries return the same transaction_id without a second debit, including after restart. Amount `"101"` with the same key returns 409. Insufficient available funds also return 409 (`insufficient_funds`); unavailable storage returns 503. Command keys are global to the ledger.
 
-Новые маршруты назначения и обеспечения описаны в [протоколе второго этапа](provisioning.md). Маршруты потребностей и подразделений описаны в [контракте третьего этапа](needs.md). Производственное планирование описано в [контракте четвёртого этапа](production.md). В этом этапе ещё нет пользовательского интерфейса, публичной эмиссии и интеграции с Python. Список выполненных проверок и текущие ограничения приведены в [архитектуре](architecture.md).
+Further contracts: [provisioning](provisioning.md), [needs](needs.md), [production planning](production.md), [completion and provenance](completion.md). There is no web UI, public issuance API or Python integration yet. See [architecture](architecture.md) for deployment boundaries.

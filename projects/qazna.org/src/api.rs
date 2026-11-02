@@ -2,7 +2,7 @@ use crate::{
     domain::{NewAccount, Transfer},
     ledger::{Ledger, LedgerError},
     needs::{NeedRequest, NeedReservationRequest, PeriodQuery, ProviderRequest, UnitRequest},
-    production::{CapacityRequest, PlanRequest, RecipeRequest},
+    production::{CapacityRequest, CompletionRequest, PlanRequest, RecipeRequest},
     provisioning::{AllocationRequest, ReservationRequest, ResolutionRequest, ResourceRequest},
 };
 use axum::{
@@ -46,6 +46,15 @@ pub fn router(ledger: Ledger, token: String) -> Router {
         .route("/v1/production/assess", post(assess_production))
         .route("/v1/production/plans", post(plan_production))
         .route("/v1/production/plans/{id}", get(production_plan))
+        .route(
+            "/v1/production/plans/{id}/complete",
+            post(complete_production),
+        )
+        .route(
+            "/v1/production/plans/{id}/completion",
+            get(production_completion),
+        )
+        .route("/v1/resources/{id}/provenance", get(resource_provenance))
         .route("/v1/production/plans/{id}/cancel", post(cancel_production))
         .route_layer(middleware::from_fn_with_state(token, authorize));
     Router::new()
@@ -357,4 +366,29 @@ async fn cancel_production(
             .cancel_production(command_key(&headers)?, id, request)
             .await?,
     ))
+}
+
+async fn complete_production(
+    State(ledger): State<Ledger>,
+    Path(id): Path<Uuid>,
+    headers: HeaderMap,
+    Json(request): Json<CompletionRequest>,
+) -> Result<impl IntoResponse, LedgerError> {
+    Ok(Json(
+        ledger
+            .complete_production(command_key(&headers)?, id, request)
+            .await?,
+    ))
+}
+async fn production_completion(
+    State(ledger): State<Ledger>,
+    Path(id): Path<Uuid>,
+) -> Result<impl IntoResponse, LedgerError> {
+    Ok(Json(ledger.production_completion(id).await?))
+}
+async fn resource_provenance(
+    State(ledger): State<Ledger>,
+    Path(id): Path<Uuid>,
+) -> Result<impl IntoResponse, LedgerError> {
+    Ok(Json(ledger.resource_provenance(id).await?))
 }

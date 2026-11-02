@@ -1,4 +1,5 @@
 pub mod api;
+mod completion_service;
 pub mod domain;
 pub mod ledger;
 pub mod needs;

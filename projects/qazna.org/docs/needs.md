@@ -1,18 +1,18 @@
-# Потребности и обеспечивающие подразделения
+# Needs and provisioning units
 
-Версия 0.3.0 добавляет реестр потребностей, иерархию подразделений и проверяемую обратную связь. Потребность регистрируется независимо от баланса жителя и наличия ресурсов. Неудачная попытка обеспечения сохраняет причину и наблюдавшиеся остатки; сама потребность продолжает существовать.
+Introduced in 0.3.0, this module registers needs independently of resident balances and stock. A failed provisioning attempt preserves its reasons and observed availability; the need remains registered.
 
-## Иерархия ответственности
+## Responsibility hierarchy
 
-`POST /v1/units` создаёт подразделение с полями `id`, `parent` (UUID или null), `name`, `function`, `basis`. Например, корневое подразделение координирует населённый пункт, а дочернее обеспечивает питание. Несколько независимых корней допустимы. Родитель должен уже существовать; записи неизменяемы, поэтому циклы и скрытая смена ответственности исключены. Глубина ограничена 64 уровнями как технический предел.
+`POST /v1/units` accepts `id`, `parent` (UUID or null), `name`, `function` and `basis`. A community root may coordinate a child food unit. Multiple independent roots are allowed. Parents must already exist and records are immutable, preventing cycles and silent reassignment. The technical depth limit is 64 levels.
 
-`GET /v1/units/{id}` показывает родителя, непосредственных детей и привязанные счета. `POST /v1/units/{id}/providers` принимает `producer` и `basis` и связывает счёт обеспечивающего подразделения с узлом иерархии. Один счёт может иметь одну такую связь. Переназначение и реорганизация требуют будущего механизма версий, а не изменения прежней записи.
+`GET /v1/units/{id}` returns the parent, direct children and linked provider accounts. `POST /v1/units/{id}/providers` accepts `producer` and `basis`. An account has one unit assignment. Reassignment and reorganization require a future versioning mechanism.
 
-Ресурс для конкретной потребности должен принадлежать счёту, связанному с назначенным узлом или любым его потомком. Это область ответственности, не модель производственных зависимостей: мощности, входные ресурсы и транспортные связи будут отдельными сущностями.
+A resource used to meet a need must belong to a provider assigned to the responsible unit or its descendants. This administrative scope is separate from production dependencies: production inputs may come from other units.
 
-## Регистрация потребности
+## Register a need
 
-`POST /v1/needs` принимает:
+`POST /v1/needs` accepts:
 
 ```json
 {
@@ -23,61 +23,61 @@
   "category": "food",
   "unit": "meal",
   "quantity": "12",
-  "basis": "Заявленная потребность в экспериментальном сценарии"
+  "basis": "Declared need in an experimental scenario"
 }
 ```
 
-Житель должен иметь счёт `resident`, подразделение — существовать. Поле `quantity` содержит положительное целое число в строковой форме; `unit` — точный строковый код физической единицы, как в предыдущем модуле. Одна комбинация жителя, дня, категории и кода единицы допускает одну запись. Категории сейчас: food, water, energy. Количество вводится явно; система пока не выводит потребность автоматически из нормативов, возраста или физиологии.
+The resident must have a `resident` account and the assigned unit must exist. Quantity is a positive integer string; unit is an exact physical-unit code. One record is allowed per resident, day, category and unit. Categories are food, water and energy. Quantity is explicit, not automatically derived from age, physiology or a normative registry.
 
-Запись потребности не создаёт денежного назначения или проводки. Потребности и назначения связаны общим сценарием обеспечения, но не тождественны. Изменение количества, отзыв потребности и закрытие периода пока не реализованы.
+Registering a need creates no allocation or posting. Needs and allocations participate in the same provisioning scenario but are distinct records. Quantity amendments, withdrawal of needs and period closure are not implemented.
 
-## Состояние обеспечения
+## Coverage quantities
 
-`GET /v1/needs/{id}` возвращает отдельные показатели:
+`GET /v1/needs/{id}` returns:
 
-| Поле | Значение |
+| Field | Meaning |
 | --- | --- |
-| `requested` | Заявленное количество |
-| `received` | Получение подтверждено через связанный резерв |
-| `reserved` | Резерв активен, получение ещё не подтверждено |
-| `uncovered` | requested − received − reserved: нет ни получения, ни обещанного обеспечения |
-| `unmet` | requested − received: потребность ещё фактически не удовлетворена |
+| `requested` | Declared quantity |
+| `received` | Receipt confirmed through a linked reservation |
+| `reserved` | Active promise; receipt not yet confirmed |
+| `uncovered` | requested - received - reserved |
+| `unmet` | requested - received |
 
-Например, потребность 10 порций с резервом 4 имеет `uncovered = 6`, но `unmet = 10`. После подтверждения этих четырёх порций `received = 4`, `reserved = 0`, `uncovered = unmet = 6`. Отмена резерва снова увеличивает uncovered, не создавая ложного получения.
+A need for 10 meals with 4 reserved has uncovered 6 but unmet 10. After receipt of those four, received becomes 4 and reserved becomes 0; uncovered and unmet both become 6. Cancellation increases uncovered without inventing receipt. Production completion alone never changes these quantities.
 
-## Попытка обеспечения
+## Attempt provision
 
-`POST /v1/needs/{id}/reserve` принимает `resource`, `quantity`, `basis`. Житель определяется из потребности. Категория и точный код единицы ресурса должны совпадать; преобразования единиц и выбор подходящего состава ресурса не выполняются. Нормативная учётная мера остаётся отдельной величиной.
+`POST /v1/needs/{id}/reserve` accepts `resource`, `quantity` and `basis`; the resident comes from the need. Category and exact physical-unit code must match. The system does not convert units or determine nutritional equivalence. Accounting measure remains separate.
 
-При успешной попытке возвращаются `status = reserved` и `reservation_id`. Создание резерва, связь с потребностью и запись попытки выполняются в одной транзакции. Подтверждение и отмена используют прежние `/v1/reservations/{id}/settle` и `/cancel`; сводка потребности автоматически выводится из этих событий.
+Success returns `status = reserved` and `reservation_id`. The reservation, need link and attempt are committed together. Existing reservation `/settle` and `/cancel` routes resolve the hold; need projections reflect these events.
 
-Если невозможно зарезервировать запрошенное количество, возвращается HTTP 200 с `status = blocked`, пустым reservation_id и причинами:
+A business blockage returns HTTP 200, `status = blocked`, null reservation_id and one or more reasons:
 
-| Причина | Значение |
+| Reason | Meaning |
 | --- | --- |
-| `physical_shortage` | В выбранной партии недостаточно свободного ресурса |
-| `accounting_shortage` | Недостаточно свободной учётной меры жителя |
-| `coverage_limit` | Запрос превышает ещё не обеспеченное и не зарезервированное количество потребности |
-| `quantity_limit` | Произведение количества на норматив не помещается в числовой предел учёта |
+| `physical_shortage` | Insufficient free stock in the selected lot |
+| `accounting_shortage` | Insufficient available accounting measure |
+| `coverage_limit` | Requested reservation exceeds the remaining uncovered quantity |
+| `quantity_limit` | Quantity multiplied by accounting norm exceeds the numeric limit |
 
-Может присутствовать несколько причин одновременно. В `snapshot` сохраняются `uncovered_before`, `resource_available`, `accounting_available` и `required_measure`; при переполнении последнее поле равно null. Причины относятся к выбранной партии и моменту попытки. Они не доказывают отсутствие альтернативного ресурса во всей системе.
+The snapshot contains `uncovered_before`, `resource_available`, `accounting_available` and `required_measure`; the last is null on overflow. Reasons describe a selected lot at a point in time, not proof that no alternative exists anywhere.
 
-Заблокированная попытка не создаёт денежной проводки и не уменьшает потребность. Запрос выполняется целиком либо блокируется; частичное количество выбирается отдельным явным запросом. Неправильный маршрут обеспечения (`provider_outside_scope`, HTTP 409), несовместимый ресурс, неизвестные идентификаторы и ошибки БД не записываются как хозяйственный дефицит.
+Blocked attempts create no postings and do not reduce the need. Requests are all-or-nothing; a smaller partial amount must be requested explicitly. An invalid provisioning route (`provider_outside_scope`, HTTP 409), incompatible resource, missing identifier or database failure is not stored as an economic shortage.
 
-## Идемпотентность и история
+## Retries and history
 
-Новые изменяющие маршруты используют общий `Idempotency-Key` и операторскую авторизацию. Заблокированная попытка — успешно сохранённый результат наблюдения, поэтому её ключ занят. Повтор возвращает прежний снимок даже после пополнения средств. Для повторной оценки новых условий нужен новый ключ. Техническая ошибка, откатившая транзакцию, ключ не сохраняет.
+Mutating routes require the operator token and global `Idempotency-Key`. A blocked observation is a successfully stored result and consumes the key. Its replay returns the original snapshot even after funding or stock changes; reassessment requires a new key. A rolled-back technical failure leaves the key unused.
 
-`GET /v1/needs/{id}/attempts` возвращает последние 50 попыток в обратном порядке времени. Сведения в них неизменяемы: статус успешной попытки остаётся reserved после последующего получения; текущие количества доступны через GET потребности, а состояние резерва — через GET резерва. Поле `last_attempt_reasons` потребности тоже является последним наблюдением, а не непрерывно пересчитываемой диагностикой.
+`GET /v1/needs/{id}/attempts` returns the latest 50 attempts in reverse time order. A successful attempt keeps its original reserved status after receipt; GET the need and reservation for current state. `last_attempt_reasons` is also a historical observation, not continuously refreshed diagnostics.
 
-## Сводка подразделения
+## Unit coverage
 
-`GET /v1/units/{id}/coverage?period=2026-11-02` суммирует потребности, назначенные этому подразделению и всем его потомкам, один раз на запись. Результат разделён по категории и точному коду физической единицы: порции питания и миллилитры воды не складываются в общий показатель. Суммы возвращаются строками; они не ограничены величиной одного индивидуального счёта.
+`GET /v1/units/{id}/coverage?period=2026-11-02` counts needs assigned to the unit and its descendants once each, grouping by category and exact physical unit. Meals and milliliters are never added together. Aggregates are strings and can exceed the maximum of a single account.
 
-Это сводка ответственности за потребности, а не рейтинг подразделения, фактически выдавшего ресурс. У вышестоящего узла могут быть собственные потребности, обеспечиваемые дочерними узлами. Автоматический выбор поставляющего подразделения, приоритеты, расчёт мощности и перепланирование в этом этапе не реализованы.
+This is a report of responsibility for needs, not a ranking of the unit that physically delivered resources. A parent may have needs supplied by child units. Automated provider choice, priorities and replanning are not implemented; production capacity is handled separately.
 
-## Миграция и гарантии
+## Migration guarantees
 
-Миграция 0003 добавляет новые таблицы и представления. Миграции 0001 и 0002 не меняются. Прежние резервы остаются действующими, но не считаются исполнением новой потребности без явной связи. Дописывать такую связь задним числом запрещено: успешная попытка должна создаваться в одной транзакции с резервом. Это защищает отчёт от двойного или произвольного приписывания старых выдач.
+Migration 0003 leaves 0001 and 0002 unchanged. Existing reservations remain operational but unattributed to new needs. A successful attempt must be created in the same transaction as its reservation; old deliveries cannot be relabeled retrospectively.
 
-Операция резервирования сначала блокирует потребность, затем счета и ресурс по существующему протоколу. И прикладная проверка, и ограничение БД не допускают, чтобы полученное плюс активные резервы превышали заявленное количество. Сбой записи истории откатывает также резерв денег и ресурса.
+The service locks the need before accounts and the lot. Application checks and database constraints prevent received plus active reserved quantities from exceeding requested quantities. Failure to record history rolls back the financial and physical holds as well.

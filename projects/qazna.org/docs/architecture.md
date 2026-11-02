@@ -1,62 +1,60 @@
-# Архитектура Qazna
+# Qazna architecture
 
-Решение от 2 ноября 2026: MVP и промышленная версия используют одно Rust-ядро. Временный Go-сервер и последующее переписывание на Rust исключены из плана по указанию автора. Старый репозиторий Qazna остаётся источником требований, интерфейсов и проверяемых сценариев; его реализации не включаются в новый runtime автоматически.
+Decision of 2 November 2026: the MVP and industrial development use the same Rust core. A temporary Go server followed by a Rust rewrite is outside the plan. The earlier Qazna repository provides requirements and test scenarios; its implementations are not automatically included in this runtime.
 
-## Постоянные технологические границы
+## Technology boundaries
 
-| Компонент | Технологии | Состояние |
+| Component | Technology | Status |
 | --- | --- | --- |
-| Денежный учёт и HTTP API | Rust, Tokio, Axum | Реализован первый модуль |
-| Постоянное хранение | PostgreSQL 16+, SQLx, SQL-миграции | Реализовано и проверяется на реальной БД |
-| Расчёт экономики | Python, NumPy, SciPy HiGHS | Есть исследовательский код; интеграция впереди |
-| Веб-интерфейс | React, TypeScript, Vite | Запланирован |
-| Идентификация пользователей | OIDC, роли и права на конкретные счета | Запланирована; сейчас локальный операторский API |
-| Фоновые задания | Таблица заданий и transactional outbox в PostgreSQL | Запланированы для интеграции расчётов |
+| Accounting, provisioning and HTTP API | Rust, Tokio, Axum | Implemented core modules |
+| Persistent storage | PostgreSQL 16+, SQLx, SQL migrations | Implemented; tested against real PostgreSQL |
+| Economic optimization | Python, NumPy, SciPy HiGHS | Research code exists; integration pending |
+| Web interface | React, TypeScript, Vite | Planned |
+| User identity | OIDC, roles and account ownership checks | Planned; currently a local operator API |
+| Background work | PostgreSQL jobs and transactional outbox | Planned for calculation integration |
 
-Ориентир проектирования — [организм, потребности и обратная связь](organism.md). Пока достаточно одного Rust-приложения с модулями domain, ledger, provisioning, needs, production и api. Python worker будет получать версионированные исходные данные и возвращать расчётный план; права на запись проводок ему не выдаются. Решатель и языковая модель не определяют денежные остатки.
+The [organism analogy](organism.md) guides the domain. One Rust application currently contains domain, ledger, provisioning, needs, production, completion and API modules. A future Python worker will receive versioned inputs and return a plan; it will not have write access to ledger postings. Neither a solver nor a language model determines authoritative balances.
 
-Cargo.lock фиксирует разрешённые версии зависимостей. Исходный минимальный Rust — 1.88, фактически проверяемый инструментарий — 1.97.0. На первом этапе используется SQLx 0.8.6; обновления библиотек проходят через тесты, а не сопровождаются сменой языка или базы данных. Документация: [Axum](https://docs.rs/axum/0.8.9/axum/), [SQLx](https://docs.rs/sqlx/0.8.6/sqlx/).
+Cargo.lock pins dependencies. The declared minimum Rust version is 1.88; the verified toolchain is 1.97.0. SQLx is 0.8.6. Library upgrades must pass tests without requiring a language or database migration. References: [Axum](https://docs.rs/axum/0.8.9/axum/), [SQLx](https://docs.rs/sqlx/0.8.6/sqlx/).
 
-## Учёт
+## Exact accounting
 
-Единица первого модуля — целая минимальная счётная единица. Её экономический масштаб и связь с корзиной пока не утверждены. Одна книга учёта работает с одной единицей; здесь нет конвертации валют. Сумма перевода: от 1 до 9223372036854775807 включительно. Обычный баланс: от 0 до того же максимума. Денежные поля в JSON — строки; дроби, экспонента, ведущие нули и JSON-числа отклоняются.
+The core uses integer minor units; their economic denomination and relation to the provisioning basket remain undecided. One ledger has one accounting unit and no currency conversion. Transfers range from 1 through 9223372036854775807; ordinary balances range from zero through that maximum. JSON amounts are strings. Fractions, exponents, leading zeros and JSON numeric amounts are rejected.
 
-`accounts` хранит тип счёта, `journal_transactions` — операцию, ключ повтора и нормализованное содержание запроса, `postings` — знаковые изменения. Баланс выводится из проводок. Для первого масштаба это позволяет не вводить отдельный изменяемый кэш; при необходимости оптимизация добавляется с проверяемой сверкой журнала.
+`accounts` defines account types, `journal_transactions` records commands, and `postings` records signed changes. Balances are derived from postings rather than stored in an independently mutable cache. PostgreSQL numeric aggregates prevent overflow during summation.
 
-Команда сначала блокирует общий ключ идемпотентности advisory-lock в PostgreSQL, затем проверяет сохранённый запрос. Перевод блокирует оба счёта в порядке UUID, читает их остатки и записывает две проводки в одной транзакции PostgreSQL. Уровень READ COMMITTED указан явно. Все пути записи должны соблюдать протокол блокировок. Повтор того же ключа и параметров возвращает прежний идентификатор, повтор с другими параметрами — конфликт. Отказ не сохраняет операцию и не расходует ключ. При сбое связи клиент повторяет запрос с прежним ключом; при изменении намерения использует новый.
+Commands lock the global idempotency key with a PostgreSQL transaction advisory lock, compare the normalized request, then lock accounts in UUID order before writing. READ COMMITTED is explicit. Repeating a key and request returns the original receipt; changed content conflicts. Technical failures roll back the command and leave its key reusable. A lost response is retried with the original key.
 
-Ограничения и отложенные триггеры БД проверяют нулевую сумму проводок, минимум две записи и допустимые остатки. Проводки можно добавлять только в той же транзакции БД, где создана операция: дописывать историю задним числом нельзя. UPDATE, DELETE и TRUNCATE журнала запрещены триггерами. Владелец БД или суперпользователь технически может изменить эти механизмы, поэтому они не заменяют разграничение прав, резервные копии и независимый аудит.
+Deferred constraints enforce balanced postings, at least two entries and valid balances. Entries can only be appended in the transaction that created their journal operation. UPDATE, DELETE and TRUNCATE are rejected for history tables. A database owner or superuser can override these protections; they do not replace access control, backups or independent audit.
 
-Прикладная эмиссия не реализована. API не создаёт счёт эмитента и не разрешает перевод с его участием. Начальные средства вводятся только синтетической фикстурой в пустой демонстрационной БД. Фикстура не устанавливает денежную политику.
+There is no application issuance endpoint. API account creation and transfers exclude the issuer. Initial money is introduced only by a synthetic fixture in an empty demo database. The fixture establishes no monetary policy.
 
-## Граница текущей готовности
+## Provisioning and needs
 
-Реализованы операторские переводы, назначения с уникальностью по жителю, дню и категории, ресурсные партии и совместные резервы. Подтверждение получения связывает физический расход с проводками; отмена освобождает оба резерва. Операции описаны в [правилах обеспечения](provisioning.md). Пока нет автоматического расчёта потребностей, независимого подтверждения выпуска, утверждения эмиссии и обратных проводок.
+Migration 0002 adds allocations, physical lots, reservations and terminal events while preserving the original ledger. Resident settlement couples physical consumption to matching accounting postings; cancellation releases both holds. Old transfer keys keep their original receipts. See [provisioning](provisioning.md).
 
-До внешнего пилота обязательны OIDC, роли и проверка принадлежности счёта, отдельные владельцы миграций и runtime-роли БД, защищённый транспорт, ограничение нагрузки, наблюдаемость, тест восстановления резервной копии и проверка угроз. Нынешний сервис принимает только loopback-адрес и требует локальный операторский токен. Токен даёт доступ ко всем операторским операциям и не является пользовательской моделью доступа.
+Migration 0003 adds immutable units, provider assignments, needs and provisioning attempts. Need registration never checks money or stock. A successful attempt creates its reservation and need link atomically; a blocked attempt stores reasons and observed availability. Blocked business observations consume their idempotency key, unlike technical failures. Coverage separates promised and received quantities. See [needs](needs.md).
 
-Один стек не означает немедленную промышленную готовность. Мы сохраняем код и его контракты между этапами, постепенно добавляя проверенные функции. Экономические гипотезы и инфраструктурные гарантии проверяются раздельно.
+The normal order is command key, need when applicable, reservation for a terminal operation, accounts in UUID order, then the resource lot. Unit trees require existing parents and cannot be silently reorganized. Provisioning is restricted to the assigned unit and descendants. Reports group physical units separately.
 
-## Следующий этап
+## Production planning and completion
 
-1. Исполнение производственного плана: подтверждение расхода входов, выхода, потерь и происхождения новой партии.
-2. Версионированные нормативы и подбор плана по необеспеченным потребностям.
-3. Коррекция обратной проводкой с привязкой к исходной операции и ограничениями повторного сторнирования.
-4. Версионированное задание Python worker, проверка свежести и допустимости его результата.
-5. Пользовательские роли и три экрана для жителя, оператора и аудитора.
+Migration 0004 adds daily capacity pools, immutable recipes and atomic capacity/input reservations. Residents and production share one physical inventory. An assessment is a consistent, read-only REPEATABLE READ snapshot; a plan rechecks under locks. Expected output is not stock. See [planning](production.md).
 
-## Миграция и гарантии второго этапа
+Migration 0005 adds terminal production completion, input losses and output provenance. Completion consumes every reserved input and the planned capacity. Usable output is created in the same transaction and must match the recipe and executing unit. Zero-output completion creates no empty lot. Capacity projections distinguish reserved and consumed capacity; completing work does not make used daily capacity available again. See [completion](completion.md).
 
-Миграция 0002 добавляет назначения, партии, резервы и конечные события, сохраняя журнал 0001. Балансы и свободные остатки выводятся из истории. Триггеры проверяют покрытие резервов, физический остаток и соответствие подтверждения конкретным проводкам. Старые ключи переводов продолжают возвращать прежние квитанции. Все новые команды сохраняют запрос и ответ в общей таблице commands.
+Production planning locks its command key, capacity and input lots in UUID order. Cancellation locks the plan first. Completion locks the plan, capacity, output producer account, then input lots. It never acquires an existing account lock after an input lot lock. Database constraints supplement application checks and serialize competing terminal actions. Historical migrations remain byte-identical; updates are additive.
 
-Порядок блокировок: ключ команды; строка резерва для конечного действия; счета в порядке UUID; ресурсная партия. Ограничения БД дополняют прикладные проверки. Техническая ошибка или конфликт прежних операций не сохраняет команду. В модуле потребностей бизнес-результат blocked сохраняется как отдельное наблюдение и использует ключ; новая оценка условий требует нового ключа.
+## Readiness boundary
 
-## Потребности и иерархия
+The service binds only to loopback and requires a local operator token. The token permits all operator operations and is not an end-user authorization model. Before an external pilot, implement OIDC, roles and account ownership, separate migration/runtime database roles, protected transport, load limits, observability, backup restoration tests and threat review.
 
-Миграция 0003 добавляет подразделения, связи обеспечивающих счетов, потребности и неизменяемые попытки обеспечения. Регистрация потребности не проверяет денежный баланс. Успешная попытка создаёт резерв и связь с потребностью атомарно; заблокированная фиксирует причины и снимок остатков. Проекции разделяют полученное, зарезервированное, необеспеченное и фактически неудовлетворённое количество.
+The same technology stack does not imply immediate industrial readiness. Economic hypotheses and infrastructure guarantees are verified separately. Operator declarations and production confirmations are recorded evidence claims, not independent verification or automatic permission to issue money.
 
-Блокировка потребности предшествует блокировкам счетов и ресурса. Создание и подтверждение резерва не могут увеличить полученное плюс обещанное сверх заявленного количества. Подразделения образуют неизменяемую иерархию с существующим родителем; исполнение допускается через назначенный узел и его потомков. Сводка группируется по категории и физической единице, без смешивания размерностей. Подробный контракт и ограничения — в [реестре потребностей](needs.md).
+## Next work
 
-## Производственное планирование
-
-Миграция 0004 добавляет общий лимит мощности подразделения на день, неизменяемые технологические карты, оценку выполнимости и производственные резервы с отменой. Доступность партий учитывает резервы производства и жителей вместе. Производство не создаёт денежные проводки или будущий запас: ожидаемый выход остаётся прогнозом. Подробные контракты, протокол блокировок и границы модели — в [производственном модуле](production.md).
+1. Versioned needs norms and selection of a feasible plan from uncovered needs.
+2. Explicit corrections and reversals, with links to original events and repeat-reversal limits.
+3. Versioned Python worker jobs and validation of freshness and admissibility before application.
+4. User roles and resident, operator and auditor interfaces.
+5. Independent production verification, logistics and backup recovery exercises.

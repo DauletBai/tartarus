@@ -16,6 +16,8 @@ pub struct CapacityRequest {
 pub struct Capacity {
     pub declaration: CapacityRequest,
     pub reserved: String,
+    #[serde(default = "zero")]
+    pub consumed: String,
     pub available: String,
 }
 #[derive(Debug, Clone, Serialize, Deserialize)]
@@ -88,4 +90,63 @@ pub struct ProductionPlan {
     pub state: String,
     pub request: PlanRequest,
     pub planned_output: String,
+}
+
+fn zero() -> String {
+    "0".into()
+}
+
+#[derive(Debug, Clone, Serialize, Deserialize)]
+#[serde(deny_unknown_fields)]
+pub struct ProductionOutput {
+    pub id: Uuid,
+    pub producer: Uuid,
+    pub quantity: Amount,
+    pub unit_measure: Amount,
+}
+#[derive(Debug, Clone, Serialize, Deserialize)]
+#[serde(deny_unknown_fields)]
+pub struct InputLoss {
+    pub slot: String,
+    pub quantity: Amount,
+}
+#[derive(Debug, Clone, Serialize, Deserialize)]
+#[serde(deny_unknown_fields)]
+pub struct CompletionRequest {
+    pub output: Option<ProductionOutput>,
+    pub losses: Vec<InputLoss>,
+    pub basis: String,
+    pub shortfall_basis: Option<String>,
+}
+#[derive(Debug, Clone, Serialize, Deserialize)]
+pub struct CompletedInput {
+    pub slot: String,
+    pub resource: Uuid,
+    pub category: String,
+    pub unit: String,
+    pub withdrawn: String,
+    pub loss: String,
+    pub used: String,
+}
+#[derive(Debug, Clone, Serialize, Deserialize)]
+pub struct ProductionCompletion {
+    pub plan: Uuid,
+    pub recipe: Uuid,
+    pub output_resource: Option<Uuid>,
+    pub planned_output: String,
+    pub actual_output: String,
+    pub output_shortfall: String,
+    pub output_category: String,
+    pub output_unit: String,
+    pub capacity_consumed: String,
+    pub basis: String,
+    pub shortfall_basis: Option<String>,
+    pub inputs: Vec<CompletedInput>,
+}
+#[derive(Debug, Clone, Serialize, Deserialize)]
+pub struct ResourceProvenance {
+    pub resource: Uuid,
+    pub origin: String,
+    pub declaration_basis: String,
+    pub completion: Option<ProductionCompletion>,
 }

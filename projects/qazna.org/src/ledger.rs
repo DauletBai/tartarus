@@ -50,7 +50,7 @@ pub enum LedgerError {
     ProductionNotFound,
     #[error("production definition already exists")]
     ProductionConflict,
-    #[error("production plan is already cancelled")]
+    #[error("production plan is already closed")]
     ProductionClosed,
     #[error("stored response is invalid")]
     InvalidStoredResponse,
@@ -69,7 +69,7 @@ impl Ledger {
     }
 
     pub async fn ready(&self) -> Result<(), LedgerError> {
-        sqlx::query("SELECT id FROM production_capacity_totals LIMIT 0")
+        sqlx::query("SELECT plan_id FROM production_completions LIMIT 0")
             .execute(&self.pool)
             .await?;
         Ok(())

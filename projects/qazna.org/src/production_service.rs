@@ -215,7 +215,7 @@ async fn require_unit(tx: &mut Tx<'_>, id: Uuid) -> Result<(), LedgerError> {
     }
     Ok(())
 }
-async fn lock_capacity(tx: &mut Tx<'_>, id: Uuid) -> Result<(), LedgerError> {
+pub(crate) async fn lock_capacity(tx: &mut Tx<'_>, id: Uuid) -> Result<(), LedgerError> {
     if sqlx::query("SELECT id FROM production_capacities WHERE id=$1 FOR UPDATE")
         .bind(id)
         .fetch_optional(&mut **tx)
@@ -227,17 +227,17 @@ async fn lock_capacity(tx: &mut Tx<'_>, id: Uuid) -> Result<(), LedgerError> {
     Ok(())
 }
 async fn capacity_in(tx: &mut Tx<'_>, id: Uuid) -> Result<Capacity, LedgerError> {
-    let value=sqlx::query_scalar("SELECT jsonb_build_object('declaration',jsonb_build_object('id',id,'unit',unit_id,'period',to_char(period,'YYYY-MM-DD'),'capacity_unit',capacity_unit,'quantity',quantity::text,'basis',basis),'reserved',reserved::text,'available',(quantity-reserved)::text) FROM production_capacity_totals WHERE id=$1")
+    let value=sqlx::query_scalar("SELECT jsonb_build_object('declaration',jsonb_build_object('id',id,'unit',unit_id,'period',to_char(period,'YYYY-MM-DD'),'capacity_unit',capacity_unit,'quantity',quantity::text,'basis',basis),'reserved',reserved::text,'consumed',consumed::text,'available',(quantity-reserved-consumed)::text) FROM production_capacity_totals WHERE id=$1")
         .bind(id).fetch_optional(&mut **tx).await?.ok_or(LedgerError::ProductionNotFound)?;
     decode(value)
 }
-async fn recipe_in(tx: &mut Tx<'_>, id: Uuid) -> Result<RecipeRequest, LedgerError> {
+pub(crate) async fn recipe_in(tx: &mut Tx<'_>, id: Uuid) -> Result<RecipeRequest, LedgerError> {
     let value=sqlx::query_scalar("SELECT jsonb_build_object('id',r.id,'unit',r.unit_id,'name',r.name,'capacity_unit',r.capacity_unit,'capacity_per_batch',r.capacity_per_batch::text,'output_category',r.output_category,'output_unit',r.output_unit,'output_per_batch',r.output_per_batch::text,'basis',r.basis,'inputs',COALESCE((SELECT jsonb_agg(jsonb_build_object('slot',i.slot,'category',i.category,'unit',i.unit,'quantity_per_batch',i.quantity_per_batch::text) ORDER BY i.slot) FROM production_recipe_inputs i WHERE i.recipe_id=r.id),'[]'::jsonb)) FROM production_recipes r WHERE id=$1")
         .bind(id).fetch_optional(&mut **tx).await?.ok_or(LedgerError::ProductionNotFound)?;
     decode(value)
 }
-async fn plan_in(tx: &mut Tx<'_>, id: Uuid) -> Result<ProductionPlan, LedgerError> {
-    let value=sqlx::query_scalar("SELECT jsonb_build_object('id',p.id,'state',CASE WHEN EXISTS(SELECT 1 FROM production_cancellations x WHERE x.plan_id=p.id) THEN 'cancelled' ELSE 'reserved' END,'planned_output',(p.batches::numeric*r.output_per_batch)::text,'request',jsonb_build_object('recipe',p.recipe_id,'capacity',p.capacity_id,'batches',p.batches::text,'basis',p.basis,'inputs',COALESCE((SELECT jsonb_agg(jsonb_build_object('slot',i.slot,'resource',i.resource_id) ORDER BY i.slot) FROM production_plan_inputs i WHERE i.plan_id=p.id),'[]'::jsonb))) FROM production_plans p JOIN production_recipes r ON r.id=p.recipe_id WHERE p.id=$1")
+pub(crate) async fn plan_in(tx: &mut Tx<'_>, id: Uuid) -> Result<ProductionPlan, LedgerError> {
+    let value=sqlx::query_scalar("SELECT jsonb_build_object('id',p.id,'state',CASE WHEN EXISTS(SELECT 1 FROM production_cancellations x WHERE x.plan_id=p.id) THEN 'cancelled' WHEN EXISTS(SELECT 1 FROM production_completions x WHERE x.plan_id=p.id) THEN 'completed' ELSE 'reserved' END,'planned_output',(p.batches::numeric*r.output_per_batch)::text,'request',jsonb_build_object('recipe',p.recipe_id,'capacity',p.capacity_id,'batches',p.batches::text,'basis',p.basis,'inputs',COALESCE((SELECT jsonb_agg(jsonb_build_object('slot',i.slot,'resource',i.resource_id) ORDER BY i.slot) FROM production_plan_inputs i WHERE i.plan_id=p.id),'[]'::jsonb))) FROM production_plans p JOIN production_recipes r ON r.id=p.recipe_id WHERE p.id=$1")
         .bind(id).fetch_optional(&mut **tx).await?.ok_or(LedgerError::ProductionNotFound)?;
     decode(value)
 }

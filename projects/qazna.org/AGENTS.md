@@ -8,6 +8,10 @@ Read `docs/organism.md` when designing domain features. Keep actual resource qua
 
 The analogy guides architecture, not biological claims or automatic distribution policies. Human needs, personal autonomy and privacy must not be replaced by a notion of obedient or disposable cells. Do not invent policy details or claim unresolved economic hypotheses are proven. Label experimental assumptions and preserve their source/version.
 
+## Language
+
+The author requires an international project. Maintain all Qazna project files in English, including documentation, source comments, examples, error messages and contributor guidance. Preserve API identifiers, historical migration bytes and upstream legal notices. User-supplied data may use any supported language; the contribution language is not an ASCII-only input policy. The parent book and research archive are outside this translation scope.
+
 ## Implementation
 
 Use the same Rust/Tokio/Axum/SQLx/PostgreSQL core for MVP and later production. Python is for calculations, not authority to change ledger entries. Maintain append-only history, transactional consistency, request idempotency, exact accounting and concurrency tests. Do not modify released migrations; add a migration for an existing database.

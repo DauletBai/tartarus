@@ -35,7 +35,7 @@ impl Fixture {
     }
 
     async fn new_at(legacy: bool) -> Self {
-        Self::new_with_migrations(if legacy { 1 } else { 4 }).await
+        Self::new_with_migrations(if legacy { 1 } else { 5 }).await
     }
 
     async fn new_with_migrations(count: usize) -> Self {
@@ -63,7 +63,7 @@ impl Fixture {
             .connect(&url)
             .await
             .unwrap();
-        if count < 4 {
+        if count < 5 {
             let path = std::env::temp_dir().join(format!("qazna-migrations-{}", Uuid::new_v4()));
             std::fs::create_dir(&path).unwrap();
             for (name, contents) in [
@@ -78,6 +78,10 @@ impl Fixture {
                 (
                     "0003_needs_and_units.sql",
                     include_str!("../migrations/0003_needs_and_units.sql"),
+                ),
+                (
+                    "0004_production_planning.sql",
+                    include_str!("../migrations/0004_production_planning.sql"),
                 ),
             ]
             .into_iter()

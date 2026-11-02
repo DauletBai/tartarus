@@ -1,28 +1,27 @@
 # Qazna
 
-Qazna — исследовательская система обеспечения потребностей на основе модели Теңге. Архитектурный ориентир — живой организм: потребности, обеспечивающие подразделения, циркуляция ресурсов и обратная связь. Прибыль и рыночная цена не являются целевыми механизмами по умолчанию.
+Qazna is a research system for meeting human needs, based on the Tenge model described in *Tartar and I*. Its architectural guide is a living organism: needs, provisioning units, resource circulation and feedback. Profit and market pricing are not default objectives.
 
-Проект развивается в `projects/qazna.org/` репозитория [Tartarus](https://github.com/DauletBai/tartarus), рядом с книгой «Тартар и Я» и исследовательскими расчётами. Код MVP и дальнейшей промышленной версии использует один стек: **Rust + Tokio + Axum + SQLx + PostgreSQL**. Python/HiGHS предназначен для расчётного модуля, React/TypeScript — для будущего интерфейса.
+The project lives in `projects/qazna.org/` in [Tartarus](https://github.com/DauletBai/tartarus), alongside the book and research archive. The MVP and subsequent production development share **Rust + Tokio + Axum + SQLx + PostgreSQL**. Python/HiGHS is planned for optimization; React/TypeScript is planned for the interface. Project documentation, code comments, examples and contributor materials are maintained in English for an international community.
 
-## Что работает
+## Implemented capabilities
 
-- Реестр потребностей независимо от платёжного остатка, с учётом полученного и необеспеченного количества.
-- Иерархия обеспечивающих подразделений и сводка по периоду и физическим единицам.
-- Сохранение причин заблокированного обеспечения и наблюдавшихся остатков.
-- Мощности на период, технологические карты и оценка выполнимости по выбранным входным партиям.
-- Совместный резерв производственной мощности и всех входов с возможностью отмены.
-- Постоянный журнал двойной записи, точные целые суммы и атомарные переводы.
-- Назначение существующих средств казны жителю с основанием и уникальностью по дню и категории.
-- Ресурсные партии с отдельными физическим количеством и нормативной учётной мерой.
-- Совместный резерв средств и ресурса; подтверждение получения или отмена.
-- Защита от повторной обработки и конкурентного расходования, сохранение истории и миграция предыдущей схемы.
-- Локальный операторский HTTP API, тесты на настоящей PostgreSQL и проверка перезапуска процесса.
+- Register needs independently of purchasing power; distinguish requested, reserved, received and unmet quantities.
+- Organize provisioning units into responsibility hierarchies and report coverage by period and physical unit.
+- Preserve shortage observations and their input snapshots.
+- Maintain an append-only double-entry ledger with exact amounts, atomic transfers and allocations.
+- Reserve physical stock and accounting funds together; confirm receipt or cancel.
+- Declare daily capacity and immutable process recipes; assess plans against selected input lots.
+- Reserve production capacity and all inputs atomically, sharing physical stock with resident provisioning.
+- Complete a production cycle, record input losses and output shortfall, and trace new output to its plan and input lots.
+- Preserve idempotency, transaction history and earlier database versions through additive migrations.
+- Exercise the local operator HTTP API against real PostgreSQL, including process restarts.
 
-Суммы назначения и ресурсные нормы в этом этапе задаёт оператор как явные экспериментальные входные данные. Реестр потребностей и иерархия подразделений реализованы. Ещё предстоят подтверждение производственного выпуска, автоматический подбор плана обеспечения, утверждение эмиссии, пользовательские роли и веб-интерфейс. Это локальный исследовательский MVP, не готовая государственная денежная система.
+Version 0.5.0 records operator-confirmed production. It does not independently verify reports, authorize issuance or automatically count production as a resident's receipt. Accounting norms and capacity declarations remain explicit experimental inputs. Automatic plan selection, approved monetary policy, user roles and the web interface are still pending. This is a local research MVP, not a production-ready national monetary system.
 
-## Запуск проверок
+## Run the checks
 
-Требуются Rust (проверено на 1.97.0), Python 3.11+ и PostgreSQL 16+. Из корня репозитория:
+Requirements: Rust (tested with 1.97.0), Python 3.11+ and PostgreSQL 16+. From the repository root:
 
 ```sh
 cd projects/qazna.org
@@ -30,22 +29,22 @@ cargo fetch --locked
 PG_BIN=/opt/homebrew/opt/postgresql@16/bin python3 scripts/check.py
 ```
 
-На Linux задайте `PG_BIN` каталогом установленной PostgreSQL, например `/usr/lib/postgresql/16/bin`. Проверки создают собственный временный кластер с закрытым Unix-сокетом, а затем останавливают и удаляют его.
+On Linux, set `PG_BIN` to the installed PostgreSQL directory, for example `/usr/lib/postgresql/16/bin`. Checks create a private, socket-only temporary cluster and stop and delete it afterward. Existing databases are not used.
 
-## Документация
+## Documentation
 
-- [Организм как основа архитектуры](docs/organism.md).
-- [Архитектура и границы готовности](docs/architecture.md).
-- [Назначения и резервирование](docs/provisioning.md).
-- [Потребности, подразделения и обратная связь](docs/needs.md).
-- [Производственные мощности и входные зависимости](docs/production.md).
-- [Запуск, API и проверки](docs/development.md).
-- [Предварительный анализ и план](docs/analysis-2026-11-02.md).
-- [История изменений](CHANGELOG.md), [вклад в проект](CONTRIBUTING.md), [безопасность](SECURITY.md).
+- [Organism-inspired principles](docs/organism.md)
+- [Architecture and readiness boundaries](docs/architecture.md)
+- [Allocations and provisioning](docs/provisioning.md)
+- [Needs, units and feedback](docs/needs.md)
+- [Production capacity and planning](docs/production.md)
+- [Production completion, losses and provenance](docs/completion.md)
+- [Development, API and verification](docs/development.md)
+- [Initial analysis and historical plan](docs/analysis-2026-11-02.md)
+- [Changelog](CHANGELOG.md), [contributing](CONTRIBUTING.md), [security](SECURITY.md)
 
-## Лицензии
+## Licensing
 
-Код — **AGPL-3.0-or-later**, см. [LICENSE](LICENSE). Документация этой папки — **CC BY-SA 4.0**, см. [LICENSE-DOCS](LICENSE-DOCS). [NOTICE](NOTICE) определяет область применения. Эти лицензии не распространяются автоматически на книгу, исследовательский архив и внешние материалы родительского репозитория.
+Code is **AGPL-3.0-or-later**, see [LICENSE](LICENSE). Documentation in this project is **CC BY-SA 4.0**, see [LICENSE-DOCS](LICENSE-DOCS). [NOTICE](NOTICE) defines the scope. These licenses do not automatically apply to the parent book, research archive or external materials.
 
-Версии и лицензионные декларации сторонних Rust-компонентов перечислены в [реестре зависимостей](THIRD_PARTY_LICENSES.json). Код зависимостей и готовые бинарные сборки здесь не поставляются; при их распространении необходимы соответствующие уведомления правообладателей.
-
+The [dependency inventory](THIRD_PARTY_LICENSES.json) records locked Rust package versions and upstream license declarations. Dependency source and compiled distributions are not shipped here; distributing them requires the applicable upstream notices.

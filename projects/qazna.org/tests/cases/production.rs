@@ -662,3 +662,591 @@ async fn concurrent_periods_cannot_double_promise_shared_inputs() {
         .unwrap();
     assert_eq!(first + second, 2);
 }
+
+async fn executor(f: &Fixture, unit: Uuid) -> Uuid {
+    let id = Uuid::new_v4();
+    f.ledger
+        .create_account(NewAccount {
+            id,
+            kind: AccountKind::Producer,
+        })
+        .await
+        .unwrap();
+    f.ledger
+        .link_provider(
+            &format!("executor-{id}"),
+            unit,
+            ProviderRequest {
+                producer: id,
+                basis: "Execution responsibility".into(),
+            },
+        )
+        .await
+        .unwrap();
+    id
+}
+fn completion(producer: Uuid, quantity: &str) -> CompletionRequest {
+    CompletionRequest {
+        output: Some(ProductionOutput {
+            id: Uuid::new_v4(),
+            producer,
+            quantity: amount(quantity),
+            unit_measure: amount("2"),
+        }),
+        losses: vec![],
+        basis: "Observed production report".into(),
+        shortfall_basis: Some("Experimental yield shortfall".into()),
+    }
+}
+
+#[tokio::test]
+#[ignore = "requires isolated PostgreSQL; use scripts/check.py"]
+async fn completion_consumes_inputs_capacity_and_records_losses_without_money() {
+    let f = Fixture::new().await;
+    let c = setup(&f, "4", "10", "20").await;
+    let producer = executor(&f, c.unit).await;
+    let id = f
+        .ledger
+        .plan_production("plan", plan(&c, "2"))
+        .await
+        .unwrap()
+        .plan_id
+        .unwrap();
+    let mut request = completion(producer, "5");
+    request.losses = vec![InputLoss {
+        slot: "grain".into(),
+        quantity: amount("1"),
+    }];
+    let output = request.output.as_ref().unwrap().id;
+    let result = f
+        .ledger
+        .complete_production("complete", id, request.clone())
+        .await
+        .unwrap();
+    assert_eq!(result.actual_output, "5");
+    assert_eq!(result.output_shortfall, "1");
+    assert_eq!(result.inputs[0].withdrawn, "4");
+    assert_eq!(result.inputs[0].used, "3");
+    assert_eq!(result.inputs[0].loss, "1");
+    assert_eq!(
+        f.ledger
+            .complete_production("complete", id, request)
+            .await
+            .unwrap()
+            .output_resource,
+        Some(output)
+    );
+    assert_eq!(
+        f.ledger.production_plan(id).await.unwrap().state,
+        "completed"
+    );
+    let cap = f.ledger.capacity(c.capacity).await.unwrap();
+    assert_eq!(
+        (
+            cap.reserved.as_str(),
+            cap.consumed.as_str(),
+            cap.available.as_str()
+        ),
+        ("0", "4", "0")
+    );
+    assert_eq!(f.ledger.resource(c.grain).await.unwrap().on_hand, "6");
+    assert_eq!(f.ledger.resource(c.water).await.unwrap().reserved, "0");
+    assert_eq!(f.ledger.resource(output).await.unwrap().available, "5");
+    assert_eq!(f.transaction_count().await, 1);
+    assert_eq!(f.balance(producer).await, "0");
+    let origin = f.ledger.resource_provenance(output).await.unwrap();
+    assert_eq!(origin.origin, "production");
+    assert_eq!(origin.completion.unwrap().plan, id);
+    assert_eq!(
+        f.ledger.resource_provenance(c.grain).await.unwrap().origin,
+        "declared"
+    );
+    assert_eq!(
+        f.ledger
+            .plan_production("another", plan(&c, "1"))
+            .await
+            .unwrap()
+            .assessment
+            .reasons,
+        vec!["capacity_shortage"]
+    );
+    assert!(matches!(
+        f.ledger.cancel_production("cancel", id, reason()).await,
+        Err(LedgerError::ProductionClosed)
+    ));
+}
+
+#[tokio::test]
+#[ignore = "requires isolated PostgreSQL; use scripts/check.py"]
+async fn zero_output_closes_failed_cycle_without_creating_empty_stock() {
+    let f = Fixture::new().await;
+    let c = setup(&f, "20", "10", "20").await;
+    let id = f
+        .ledger
+        .plan_production("plan", plan(&c, "2"))
+        .await
+        .unwrap()
+        .plan_id
+        .unwrap();
+    let request = CompletionRequest {
+        output: None,
+        losses: vec![InputLoss {
+            slot: "grain".into(),
+            quantity: amount("4"),
+        }],
+        basis: "Batch failed".into(),
+        shortfall_basis: Some("No usable output".into()),
+    };
+    let r = f
+        .ledger
+        .complete_production("complete", id, request)
+        .await
+        .unwrap();
+    assert_eq!(r.actual_output, "0");
+    assert_eq!(r.output_shortfall, "6");
+    assert!(r.output_resource.is_none());
+    assert_eq!(r.inputs[0].used, "0");
+    assert_eq!(f.ledger.capacity(c.capacity).await.unwrap().consumed, "4");
+    let lots: i64 = sqlx::query_scalar("SELECT count(*) FROM resources")
+        .fetch_one(&f.pool)
+        .await
+        .unwrap();
+    assert_eq!(lots, 2);
+    assert_eq!(f.ledger.resource(c.water).await.unwrap().on_hand, "10");
+}
+
+#[tokio::test]
+#[ignore = "requires isolated PostgreSQL; use scripts/check.py"]
+async fn invalid_completion_keeps_reservations_and_retry_key() {
+    let f = Fixture::new().await;
+    let c = setup(&f, "20", "10", "20").await;
+    let producer = executor(&f, c.unit).await;
+    let id = f
+        .ledger
+        .plan_production("plan", plan(&c, "2"))
+        .await
+        .unwrap()
+        .plan_id
+        .unwrap();
+    let mut missing = completion(producer, "5");
+    missing.shortfall_basis = None;
+    assert!(matches!(
+        f.ledger.complete_production("retry", id, missing).await,
+        Err(LedgerError::Invalid(_))
+    ));
+    assert!(matches!(
+        f.ledger
+            .complete_production("retry", id, completion(producer, "7"))
+            .await,
+        Err(LedgerError::Invalid(_))
+    ));
+    let other = f.ledger.resource(c.grain).await.unwrap().producer;
+    assert!(matches!(
+        f.ledger
+            .complete_production("retry", id, completion(other, "6"))
+            .await,
+        Err(LedgerError::Invalid(_))
+    ));
+    let mut loss = completion(producer, "6");
+    loss.losses = vec![InputLoss {
+        slot: "grain".into(),
+        quantity: amount("5"),
+    }];
+    assert!(matches!(
+        f.ledger.complete_production("retry", id, loss).await,
+        Err(LedgerError::Invalid(_))
+    ));
+    let mut old = completion(producer, "6");
+    old.output.as_mut().unwrap().id = c.grain;
+    assert!(matches!(
+        f.ledger.complete_production("retry", id, old).await,
+        Err(LedgerError::ResourceConflict)
+    ));
+    assert_eq!(f.ledger.resource(c.grain).await.unwrap().reserved, "4");
+    assert_eq!(f.ledger.capacity(c.capacity).await.unwrap().consumed, "0");
+    f.ledger
+        .complete_production("retry", id, completion(producer, "6"))
+        .await
+        .unwrap();
+}
+
+#[tokio::test]
+#[ignore = "requires isolated PostgreSQL; use scripts/check.py"]
+async fn completion_racing_cancellation_has_one_terminal_result() {
+    let f = Fixture::new().await;
+    let c = setup(&f, "20", "10", "20").await;
+    let producer = executor(&f, c.unit).await;
+    let id = f
+        .ledger
+        .plan_production("plan", plan(&c, "2"))
+        .await
+        .unwrap()
+        .plan_id
+        .unwrap();
+    let l = f.ledger.clone();
+    let req = completion(producer, "6");
+    let output = req.output.as_ref().unwrap().id;
+    let complete = tokio::spawn(async move { l.complete_production("complete", id, req).await });
+    let l = f.ledger.clone();
+    let cancel = tokio::spawn(async move { l.cancel_production("cancel", id, reason()).await });
+    let a = complete.await.unwrap();
+    let b = cancel.await.unwrap();
+    assert_ne!(a.is_ok(), b.is_ok());
+    if a.is_ok() {
+        assert!(matches!(b, Err(LedgerError::ProductionClosed)));
+        assert_eq!(f.ledger.resource(output).await.unwrap().available, "6");
+        assert_eq!(f.ledger.resource(c.grain).await.unwrap().on_hand, "6");
+    } else {
+        assert!(matches!(a, Err(LedgerError::ProductionClosed)));
+        assert!(matches!(
+            f.ledger.resource(output).await,
+            Err(LedgerError::ResourceNotFound)
+        ));
+        assert_eq!(f.ledger.resource(c.grain).await.unwrap().available, "10");
+    }
+}
+
+#[tokio::test]
+#[ignore = "requires isolated PostgreSQL; use scripts/check.py"]
+async fn concurrent_completion_retries_create_only_one_output() {
+    let f = Fixture::new().await;
+    let c = setup(&f, "20", "10", "20").await;
+    let producer = executor(&f, c.unit).await;
+    let id = f
+        .ledger
+        .plan_production("plan", plan(&c, "2"))
+        .await
+        .unwrap()
+        .plan_id
+        .unwrap();
+    let req = completion(producer, "6");
+    let mut tasks = Vec::new();
+    for _ in 0..6 {
+        let l = f.ledger.clone();
+        let r = req.clone();
+        tasks.push(tokio::spawn(async move {
+            l.complete_production("same", id, r).await.unwrap()
+        }));
+    }
+    for t in tasks {
+        assert_eq!(
+            t.await.unwrap().output_resource,
+            req.output.as_ref().map(|o| o.id)
+        );
+    }
+    assert!(matches!(
+        f.ledger
+            .complete_production("different", id, req.clone())
+            .await,
+        Err(LedgerError::ProductionClosed)
+    ));
+    let mut changed = req;
+    changed.basis = "Different report".into();
+    assert!(matches!(
+        f.ledger.complete_production("same", id, changed).await,
+        Err(LedgerError::IdempotencyConflict)
+    ));
+    let lots: i64 = sqlx::query_scalar("SELECT count(*) FROM resources")
+        .fetch_one(&f.pool)
+        .await
+        .unwrap();
+    assert_eq!(lots, 3);
+}
+
+#[tokio::test]
+#[ignore = "requires isolated PostgreSQL; use scripts/check.py"]
+async fn completion_failure_rolls_back_new_output_consumption_and_key() {
+    let f = Fixture::new().await;
+    let c = setup(&f, "20", "10", "20").await;
+    let producer = executor(&f, c.unit).await;
+    let id = f
+        .ledger
+        .plan_production("plan", plan(&c, "2"))
+        .await
+        .unwrap()
+        .plan_id
+        .unwrap();
+    sqlx::raw_sql("CREATE FUNCTION fail_loss() RETURNS trigger LANGUAGE plpgsql AS $$ BEGIN RAISE EXCEPTION 'injected loss failure'; END; $$; CREATE TRIGGER fail_loss BEFORE INSERT ON production_input_losses FOR EACH ROW EXECUTE FUNCTION fail_loss();").execute(&f.pool).await.unwrap();
+    let mut req = completion(producer, "5");
+    req.losses = vec![InputLoss {
+        slot: "grain".into(),
+        quantity: amount("1"),
+    }];
+    let output = req.output.as_ref().unwrap().id;
+    assert!(
+        f.ledger
+            .complete_production("retry", id, req.clone())
+            .await
+            .is_err()
+    );
+    assert!(matches!(
+        f.ledger.resource(output).await,
+        Err(LedgerError::ResourceNotFound)
+    ));
+    assert_eq!(f.ledger.resource(c.grain).await.unwrap().on_hand, "10");
+    assert_eq!(f.ledger.resource(c.grain).await.unwrap().reserved, "4");
+    assert_eq!(f.ledger.capacity(c.capacity).await.unwrap().consumed, "0");
+    sqlx::query("DROP TRIGGER fail_loss ON production_input_losses")
+        .execute(&f.pool)
+        .await
+        .unwrap();
+    f.ledger
+        .complete_production("retry", id, req)
+        .await
+        .unwrap();
+}
+
+#[tokio::test]
+#[ignore = "requires isolated PostgreSQL; use scripts/check.py"]
+async fn completion_database_rejects_old_output_late_losses_and_terminal_changes() {
+    let f = Fixture::new().await;
+    let c = setup(&f, "4", "10", "20").await;
+    let producer = executor(&f, c.unit).await;
+    let id = f
+        .ledger
+        .plan_production("plan", plan(&c, "2"))
+        .await
+        .unwrap()
+        .plan_id
+        .unwrap();
+    let old = Uuid::new_v4();
+    f.ledger
+        .create_resource(
+            "old",
+            ResourceRequest {
+                id: old,
+                producer,
+                category: Category::Food,
+                unit: "meal".into(),
+                quantity: amount("6"),
+                unit_measure: amount("1"),
+                basis: "Previously declared lot".into(),
+            },
+        )
+        .await
+        .unwrap();
+    assert!(sqlx::query("INSERT INTO production_completions(plan_id,output_resource_id,actual_quantity,basis) VALUES ($1,$2,6,'late attribution')").bind(id).bind(old).execute(&f.pool).await.is_err());
+    f.ledger
+        .complete_production("complete", id, completion(producer, "6"))
+        .await
+        .unwrap();
+    assert!(
+        sqlx::query(
+            "INSERT INTO production_input_losses(plan_id,slot,quantity) VALUES ($1,'grain',1)"
+        )
+        .bind(id)
+        .execute(&f.pool)
+        .await
+        .is_err()
+    );
+    assert!(
+        sqlx::query(
+            "INSERT INTO production_cancellations(plan_id,basis) VALUES ($1,'double outcome')"
+        )
+        .bind(id)
+        .execute(&f.pool)
+        .await
+        .is_err()
+    );
+    assert!(
+        sqlx::query("UPDATE production_completions SET actual_quantity=0 WHERE plan_id=$1")
+            .bind(id)
+            .execute(&f.pool)
+            .await
+            .is_err()
+    );
+    // Used capacity cannot be reclaimed by bypassing application planning.
+    let mut tx = f.pool.begin().await.unwrap();
+    let next = Uuid::new_v4();
+    sqlx::query("INSERT INTO production_plans(id,recipe_id,capacity_id,batches,basis) VALUES ($1,$2,$3,1,'overbook consumed capacity')").bind(next).bind(c.recipe.id).bind(c.capacity).execute(&mut *tx).await.unwrap();
+    for (slot, resource, quantity) in [("grain", c.grain, 2i64), ("water", c.water, 5)] {
+        sqlx::query("INSERT INTO production_plan_inputs(plan_id,slot,resource_id,quantity) VALUES ($1,$2,$3,$4)").bind(next).bind(slot).bind(resource).bind(quantity).execute(&mut *tx).await.unwrap();
+    }
+    assert!(tx.commit().await.is_err());
+}
+
+#[tokio::test]
+#[ignore = "requires isolated PostgreSQL; use scripts/check.py"]
+async fn produced_output_supports_next_process_and_resident_receipt() {
+    let f = Fixture::new().await;
+    let c = setup(&f, "20", "10", "20").await;
+    let producer = executor(&f, c.unit).await;
+    let id = f
+        .ledger
+        .plan_production("first", plan(&c, "2"))
+        .await
+        .unwrap()
+        .plan_id
+        .unwrap();
+    let first = f
+        .ledger
+        .complete_production("first-output", id, completion(producer, "6"))
+        .await
+        .unwrap()
+        .output_resource
+        .unwrap();
+    let mut recipe = c.recipe.clone();
+    recipe.id = Uuid::new_v4();
+    recipe.output_unit = "packed_meal".into();
+    recipe.output_per_batch = amount("1");
+    recipe.inputs = vec![RecipeInput {
+        slot: "meal".into(),
+        category: Category::Food,
+        unit: "meal".into(),
+        quantity_per_batch: amount("1"),
+    }];
+    f.ledger
+        .create_recipe("pack-recipe", recipe.clone())
+        .await
+        .unwrap();
+    let p = f
+        .ledger
+        .plan_production(
+            "pack",
+            PlanRequest {
+                recipe: recipe.id,
+                capacity: c.capacity,
+                batches: amount("2"),
+                inputs: vec![InputSelection {
+                    slot: "meal".into(),
+                    resource: first,
+                }],
+                basis: "Pack observed output".into(),
+            },
+        )
+        .await
+        .unwrap()
+        .plan_id
+        .unwrap();
+    let second = f
+        .ledger
+        .complete_production("pack-output", p, completion(producer, "2"))
+        .await
+        .unwrap()
+        .output_resource
+        .unwrap();
+    let origin = f
+        .ledger
+        .resource_provenance(second)
+        .await
+        .unwrap()
+        .completion
+        .unwrap();
+    assert_eq!(origin.inputs[0].resource, first);
+    assert_eq!(
+        f.ledger
+            .resource_provenance(first)
+            .await
+            .unwrap()
+            .completion
+            .unwrap()
+            .inputs
+            .len(),
+        2
+    );
+    assert_eq!(f.ledger.resource(first).await.unwrap().available, "4");
+    f.ledger.transfer("fund", f.transfer("100")).await.unwrap();
+    let n = f
+        .ledger
+        .create_need(
+            "need",
+            qazna::needs::NeedRequest {
+                id: Uuid::new_v4(),
+                resident: f.resident,
+                assigned_unit: c.unit,
+                period: "2026-11-02".into(),
+                category: Category::Food,
+                unit: "packed_meal".into(),
+                quantity: amount("2"),
+                basis: "Resident requirement".into(),
+            },
+        )
+        .await
+        .unwrap();
+    assert_eq!(f.ledger.need(n.id).await.unwrap().received, "0");
+    let a = f
+        .ledger
+        .reserve_need(
+            "provide",
+            n.id,
+            qazna::needs::NeedReservationRequest {
+                resource: second,
+                quantity: amount("2"),
+                basis: "Provide produced stock".into(),
+            },
+        )
+        .await
+        .unwrap();
+    f.ledger
+        .settle("receive", a.reservation_id.unwrap(), reason())
+        .await
+        .unwrap();
+    assert_eq!(f.ledger.need(n.id).await.unwrap().unmet, "0");
+}
+
+#[tokio::test]
+#[ignore = "requires isolated PostgreSQL; use scripts/check.py"]
+async fn upgrade_from_planning_preserves_active_plan_and_allows_completion() {
+    let f = Fixture::new_with_migrations(4).await;
+    let unit = Uuid::new_v4();
+    let producer = Uuid::new_v4();
+    let resource = Uuid::new_v4();
+    let capacity = Uuid::new_v4();
+    let recipe = Uuid::new_v4();
+    let plan = Uuid::new_v4();
+    sqlx::query("INSERT INTO provisioning_units(id,name,function,basis) VALUES ($1,'Unit','Provide','test')").bind(unit).execute(&f.pool).await.unwrap();
+    f.ledger
+        .create_account(NewAccount {
+            id: producer,
+            kind: AccountKind::Producer,
+        })
+        .await
+        .unwrap();
+    f.ledger
+        .link_provider(
+            "provider",
+            unit,
+            ProviderRequest {
+                producer,
+                basis: "test".into(),
+            },
+        )
+        .await
+        .unwrap();
+    f.ledger
+        .create_resource(
+            "resource",
+            ResourceRequest {
+                id: resource,
+                producer,
+                category: Category::Food,
+                unit: "gram".into(),
+                quantity: amount("10"),
+                unit_measure: amount("1"),
+                basis: "Legacy lot".into(),
+            },
+        )
+        .await
+        .unwrap();
+    sqlx::query("INSERT INTO production_capacities(id,unit_id,period,capacity_unit,quantity,basis) VALUES ($1,$2,'2026-11-02','minutes',10,'test')").bind(capacity).bind(unit).execute(&f.pool).await.unwrap();
+    let mut tx = f.pool.begin().await.unwrap();
+    sqlx::query("INSERT INTO production_recipes(id,unit_id,name,capacity_unit,capacity_per_batch,output_category,output_unit,output_per_batch,basis) VALUES ($1,$2,'Recipe','minutes',2,'food','meal',1,'test')").bind(recipe).bind(unit).execute(&mut *tx).await.unwrap();
+    sqlx::query("INSERT INTO production_recipe_inputs(recipe_id,slot,category,unit,quantity_per_batch) VALUES ($1,'grain','food','gram',2)").bind(recipe).execute(&mut *tx).await.unwrap();
+    tx.commit().await.unwrap();
+    let mut tx = f.pool.begin().await.unwrap();
+    sqlx::query("INSERT INTO production_plans(id,recipe_id,capacity_id,batches,basis) VALUES ($1,$2,$3,2,'test')").bind(plan).bind(recipe).bind(capacity).execute(&mut *tx).await.unwrap();
+    sqlx::query("INSERT INTO production_plan_inputs(plan_id,slot,resource_id,quantity) VALUES ($1,'grain',$2,4)").bind(plan).bind(resource).execute(&mut *tx).await.unwrap();
+    tx.commit().await.unwrap();
+    MIGRATOR.run(&f.pool).await.unwrap();
+    assert_eq!(
+        f.ledger.production_plan(plan).await.unwrap().state,
+        "reserved"
+    );
+    assert_eq!(f.ledger.capacity(capacity).await.unwrap().reserved, "4");
+    f.ledger
+        .complete_production("complete", plan, completion(producer, "2"))
+        .await
+        .unwrap();
+    assert_eq!(f.ledger.resource(resource).await.unwrap().on_hand, "6");
+    assert_eq!(f.ledger.capacity(capacity).await.unwrap().consumed, "4");
+}

@@ -1,7 +1,7 @@
-# Сообщения о безопасности
+# Security reporting
 
-Текущая ветка разработки предназначена для локальных экспериментов. Публичный многопользовательский режим ещё не реализован. Операторский токен предоставляет полный доступ к операторским маршрутам; он не заменяет права конкретного жителя.
+The current development branch is intended for local experiments. Public multi-user operation is not implemented. The operator token grants access to all operator routes; it does not replace authorization for individual residents or accounts.
 
-Не размещайте действующие токены, персональные данные и подробности эксплуатации уязвимостей в публичных issues. Если в репозитории доступна функция GitHub Report a vulnerability, используйте её; иначе сначала согласуйте закрытый канал с сопровождающим через его публичный профиль. Наличие включённого private reporting и круглосуточной службы реагирования не предполагается.
+Do not publish active credentials, personal data or exploit details in public issues. Use GitHub's **Report a vulnerability** feature if it is enabled for this repository; otherwise arrange a private channel with the maintainer through their public profile first. Private reporting and a round-the-clock response service are not assumed to exist.
 
-В сообщении укажите коммит, окружение, минимальный пример на синтетических данных и влияние на сохранность учёта, приватность или доступность. Автоматически установленного срока исправления пока нет. До внешнего пилота необходимы разграничение прав, защищённый транспорт, проверка зависимостей и восстановление резервных копий.
+Include the commit, environment, a minimal synthetic-data reproduction and the impact on accounting integrity, privacy or availability. There is no established remediation deadline yet. An external pilot requires access controls, protected transport, dependency review and verified backup restoration.
