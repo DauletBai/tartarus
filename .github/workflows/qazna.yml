@@ -1,0 +1,46 @@
+# SPDX-License-Identifier: AGPL-3.0-or-later
+# Copyright (c) 2026 Qazna Technologies LLP and contributors.
+name: Qazna checks
+
+on:
+  push:
+    paths:
+      - 'projects/qazna.org/**'
+      - '.github/workflows/qazna.yml'
+  pull_request:
+    paths:
+      - 'projects/qazna.org/**'
+      - '.github/workflows/qazna.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  check:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 20
+    defaults:
+      run:
+        working-directory: projects/qazna.org
+    steps:
+      - name: Checkout project
+        uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262 # v4
+        with:
+          persist-credentials: false
+          sparse-checkout: projects/qazna.org
+          lfs: false
+      - name: Install Rust
+        run: |
+          rustup toolchain install 1.97.0 --profile minimal --component rustfmt,clippy
+          rustup override set 1.97.0
+      - name: Install PostgreSQL
+        run: |
+          sudo apt-get update
+          sudo apt-get install --yes postgresql-16
+      - name: Fetch locked dependencies
+        run: cargo fetch --locked
+      - name: Verify licenses and run checks
+        env:
+          PG_BIN: /usr/lib/postgresql/16/bin
+        run: python3 scripts/check.py
