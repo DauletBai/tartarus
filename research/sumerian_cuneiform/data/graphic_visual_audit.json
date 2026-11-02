@@ -1,0 +1,447 @@
+{
+  "version": 1,
+  "date": "2026-11-01",
+  "phase": "visual_annotation_frozen_before_numeric_comparison",
+  "selection": "Первые три новых ID по возрастанию из музейного поиска cuneiform exercise; следующие три как заранее объявленное расширение после осмотра первого набора. Отбор тематический, не случайный.",
+  "limitations": [
+    "Это проверка без использования транслитерации; полное ослепление модели к ранее усвоенным знаниям невозможно.",
+    "Прорисовки V1–V3 случайно раскрылись как дополнительные изображения, это зафиксировано.",
+    "Число комплексов относится к отобранным областям, не ко всему корпусу.",
+    "Тест по заранее выделенным фрагментам не равен обнаружению знаков на полной фотографии."
+  ],
+  "objects": [
+    {
+      "id": 321878,
+      "code": "K",
+      "prior_reading_exposed": true,
+      "status": "3 пары на лицевой стороне; оборот повреждён; 4 фотографии одного предмета."
+    },
+    {
+      "id": 321925,
+      "code": "V1",
+      "prior_reading_exposed": false,
+      "status": "Фото низкого разрешения; прорисовка дополнительно оказалась в API и была замечена при контактном просмотре. Полная разметка пока не выполнена."
+    },
+    {
+      "id": 321982,
+      "code": "V2",
+      "prior_reading_exposed": false,
+      "status": "8 кандидатов G03; 1 из них неуверенный. Прорисовка раскрыта на контактном листе, поэтому границы могли быть ею подсказаны; фонетических чтений не раскрывали."
+    },
+    {
+      "id": 321985,
+      "code": "V3",
+      "prior_reading_exposed": false,
+      "status": "Фото плотного текста; полная сегментация по данному разрешению не выполнена. Прорисовка видна на контактном листе."
+    },
+    {
+      "id": 321986,
+      "code": "V4",
+      "prior_reading_exposed": false,
+      "status": "Фото треснувшего/составного предмета с несколькими рядами; не сегментирован."
+    },
+    {
+      "id": 321998,
+      "code": "V5",
+      "prior_reading_exposed": false,
+      "status": "Два фрагмента в одной фотографии; музейная запись одна. Не считать две независимые надписи без каталожной проверки."
+    },
+    {
+      "id": 322050,
+      "code": "V6",
+      "prior_reading_exposed": false,
+      "status": "Поверхность сильно изношена; свет и фон мешают распознаванию. Измеримых чтений не назначено."
+    }
+  ],
+  "observations": [
+    {
+      "id": "K1a",
+      "source": "sources/Met321878_view1.jpg",
+      "bbox_xyxy": [
+        620,
+        1160,
+        1260,
+        1540
+      ],
+      "family": "G01",
+      "confidence": "visually_supported",
+      "role": "template",
+      "description": "Лучеобразный комплекс с расходящимися штрихами; верхний и нижний край могут включать разделительную линию.",
+      "phonetic_value": null,
+      "meaning": null
+    },
+    {
+      "id": "K1b",
+      "source": "sources/Met321878_view1.jpg",
+      "bbox_xyxy": [
+        540,
+        1580,
+        1160,
+        1960
+      ],
+      "family": "G01",
+      "confidence": "visually_supported",
+      "role": "comparison",
+      "description": "Лучеобразный комплекс с расходящимися штрихами; верхний и нижний край могут включать разделительную линию.",
+      "phonetic_value": null,
+      "meaning": null
+    },
+    {
+      "id": "K1c",
+      "source": "sources/Met321878_view1.jpg",
+      "bbox_xyxy": [
+        540,
+        2020,
+        1160,
+        2400
+      ],
+      "family": "G01",
+      "confidence": "visually_supported",
+      "role": "comparison",
+      "description": "Лучеобразный комплекс с расходящимися штрихами; верхний и нижний край могут включать разделительную линию.",
+      "phonetic_value": null,
+      "meaning": null
+    },
+    {
+      "id": "K2a",
+      "source": "sources/Met321878_view1.jpg",
+      "bbox_xyxy": [
+        2200,
+        1120,
+        2750,
+        1550
+      ],
+      "family": "G02",
+      "confidence": "visually_supported",
+      "role": "template",
+      "description": "Несколько коротких горизонтальных оттисков слева от длинного вертикального.",
+      "phonetic_value": null,
+      "meaning": null
+    },
+    {
+      "id": "K2b",
+      "source": "sources/Met321878_view1.jpg",
+      "bbox_xyxy": [
+        2170,
+        1570,
+        2710,
+        1950
+      ],
+      "family": "G02",
+      "confidence": "visually_supported",
+      "role": "comparison",
+      "description": "Несколько коротких горизонтальных оттисков слева от длинного вертикального.",
+      "phonetic_value": null,
+      "meaning": null
+    },
+    {
+      "id": "K2c",
+      "source": "sources/Met321878_view1.jpg",
+      "bbox_xyxy": [
+        2150,
+        1960,
+        2740,
+        2370
+      ],
+      "family": "G02",
+      "confidence": "visually_supported",
+      "role": "comparison",
+      "description": "Несколько коротких горизонтальных оттисков слева от длинного вертикального.",
+      "phonetic_value": null,
+      "meaning": null
+    },
+    {
+      "id": "V2a",
+      "source": "sources/Met321982_view1.jpg",
+      "bbox_xyxy": [
+        190,
+        102,
+        265,
+        175
+      ],
+      "family": "G03",
+      "confidence": "visually_supported",
+      "role": "template",
+      "description": "Верхний горизонтальный оттиск и пара нижних; граница слева образует наклонный/вертикальный след.",
+      "phonetic_value": null,
+      "meaning": null
+    },
+    {
+      "id": "V2b",
+      "source": "sources/Met321982_view1.jpg",
+      "bbox_xyxy": [
+        102,
+        190,
+        178,
+        268
+      ],
+      "family": "G03",
+      "confidence": "visually_supported",
+      "role": "comparison",
+      "description": "Верхний горизонтальный оттиск и пара нижних; граница слева образует наклонный/вертикальный след.",
+      "phonetic_value": null,
+      "meaning": null
+    },
+    {
+      "id": "V2c",
+      "source": "sources/Met321982_view1.jpg",
+      "bbox_xyxy": [
+        181,
+        188,
+        253,
+        265
+      ],
+      "family": "G03",
+      "confidence": "visually_supported",
+      "role": "comparison",
+      "description": "Верхний горизонтальный оттиск и пара нижних; граница слева образует наклонный/вертикальный след.",
+      "phonetic_value": null,
+      "meaning": null
+    },
+    {
+      "id": "V2d",
+      "source": "sources/Met321982_view1.jpg",
+      "bbox_xyxy": [
+        102,
+        279,
+        170,
+        350
+      ],
+      "family": "G03",
+      "confidence": "visually_supported",
+      "role": "comparison",
+      "description": "Верхний горизонтальный оттиск и пара нижних; граница слева образует наклонный/вертикальный след.",
+      "phonetic_value": null,
+      "meaning": null
+    },
+    {
+      "id": "V2e",
+      "source": "sources/Met321982_view1.jpg",
+      "bbox_xyxy": [
+        173,
+        278,
+        225,
+        344
+      ],
+      "family": "G03",
+      "confidence": "visually_supported",
+      "role": "comparison",
+      "description": "Верхний горизонтальный оттиск и пара нижних; граница слева образует наклонный/вертикальный след.",
+      "phonetic_value": null,
+      "meaning": null
+    },
+    {
+      "id": "V2f",
+      "source": "sources/Met321982_view1.jpg",
+      "bbox_xyxy": [
+        167,
+        526,
+        215,
+        580
+      ],
+      "family": "G03",
+      "confidence": "visually_supported",
+      "role": "comparison",
+      "description": "Верхний горизонтальный оттиск и пара нижних; граница слева образует наклонный/вертикальный след.",
+      "phonetic_value": null,
+      "meaning": null
+    },
+    {
+      "id": "V2g",
+      "source": "sources/Met321982_view1.jpg",
+      "bbox_xyxy": [
+        145,
+        596,
+        201,
+        649
+      ],
+      "family": "G03",
+      "confidence": "visually_supported",
+      "role": "comparison",
+      "description": "Верхний горизонтальный оттиск и пара нижних; граница слева образует наклонный/вертикальный след.",
+      "phonetic_value": null,
+      "meaning": null
+    },
+    {
+      "id": "V2h",
+      "source": "sources/Met321982_view1.jpg",
+      "bbox_xyxy": [
+        134,
+        666,
+        184,
+        722
+      ],
+      "family": "G03",
+      "confidence": "tentative",
+      "role": "comparison",
+      "description": "Верхний горизонтальный оттиск и пара нижних; граница слева образует наклонный/вертикальный след.",
+      "phonetic_value": null,
+      "meaning": null
+    },
+    {
+      "id": "C01",
+      "source": "sources/Met321878_view1.jpg",
+      "bbox_xyxy": [
+        1350,
+        1180,
+        1950,
+        1520
+      ],
+      "family": null,
+      "confidence": "control_not_classified",
+      "role": "control",
+      "description": "Контрольный участок; отсутствие всех элементов исследуемой семьи оценивается визуально, звуков не назначаем.",
+      "phonetic_value": null,
+      "meaning": null
+    },
+    {
+      "id": "C02",
+      "source": "sources/Met321878_view1.jpg",
+      "bbox_xyxy": [
+        1300,
+        1640,
+        1880,
+        1920
+      ],
+      "family": null,
+      "confidence": "control_not_classified",
+      "role": "control",
+      "description": "Контрольный участок; отсутствие всех элементов исследуемой семьи оценивается визуально, звуков не назначаем.",
+      "phonetic_value": null,
+      "meaning": null
+    },
+    {
+      "id": "C03",
+      "source": "sources/Met321878_view1.jpg",
+      "bbox_xyxy": [
+        1250,
+        2080,
+        1880,
+        2370
+      ],
+      "family": null,
+      "confidence": "control_not_classified",
+      "role": "control",
+      "description": "Контрольный участок; отсутствие всех элементов исследуемой семьи оценивается визуально, звуков не назначаем.",
+      "phonetic_value": null,
+      "meaning": null
+    },
+    {
+      "id": "C04",
+      "source": "sources/Met321878_view1.jpg",
+      "bbox_xyxy": [
+        1350,
+        2550,
+        1950,
+        2890
+      ],
+      "family": null,
+      "confidence": "control_not_classified",
+      "role": "control",
+      "description": "Контрольный участок; отсутствие всех элементов исследуемой семьи оценивается визуально, звуков не назначаем.",
+      "phonetic_value": null,
+      "meaning": null
+    },
+    {
+      "id": "C05",
+      "source": "sources/Met321982_view1.jpg",
+      "bbox_xyxy": [
+        285,
+        192,
+        332,
+        255
+      ],
+      "family": null,
+      "confidence": "control_not_classified",
+      "role": "control",
+      "description": "Контрольный участок; отсутствие всех элементов исследуемой семьи оценивается визуально, звуков не назначаем.",
+      "phonetic_value": null,
+      "meaning": null
+    },
+    {
+      "id": "C06",
+      "source": "sources/Met321982_view1.jpg",
+      "bbox_xyxy": [
+        172,
+        443,
+        238,
+        508
+      ],
+      "family": null,
+      "confidence": "control_not_classified",
+      "role": "control",
+      "description": "Контрольный участок; отсутствие всех элементов исследуемой семьи оценивается визуально, звуков не назначаем.",
+      "phonetic_value": null,
+      "meaning": null
+    },
+    {
+      "id": "C07",
+      "source": "sources/Met321982_view1.jpg",
+      "bbox_xyxy": [
+        250,
+        602,
+        296,
+        663
+      ],
+      "family": null,
+      "confidence": "control_not_classified",
+      "role": "control",
+      "description": "Контрольный участок; отсутствие всех элементов исследуемой семьи оценивается визуально, звуков не назначаем.",
+      "phonetic_value": null,
+      "meaning": null
+    },
+    {
+      "id": "C08",
+      "source": "sources/Met321982_view1.jpg",
+      "bbox_xyxy": [
+        208,
+        674,
+        256,
+        726
+      ],
+      "family": null,
+      "confidence": "control_not_classified",
+      "role": "control",
+      "description": "Контрольный участок; отсутствие всех элементов исследуемой семьи оценивается визуально, звуков не назначаем.",
+      "phonetic_value": null,
+      "meaning": null
+    }
+  ],
+  "predeclared_computational_test": {
+    "resize": [
+      64,
+      64
+    ],
+    "features": [
+      "gray",
+      "gradient_magnitude"
+    ],
+    "translation_pixels": [
+      -4,
+      0,
+      4
+    ],
+    "border_trim_pixels": [
+      0,
+      3
+    ],
+    "score": "Maximum Pearson correlation over predeclared shifts; scale normalized by rectangle; not probability.",
+    "templates": [
+      "K1a",
+      "K2a",
+      "V2a"
+    ],
+    "no_rotation": true,
+    "mirror_forbidden": true,
+    "controls": [
+      "C01",
+      "C02",
+      "C03",
+      "C04",
+      "C05",
+      "C06",
+      "C07",
+      "C08"
+    ]
+  }
+}

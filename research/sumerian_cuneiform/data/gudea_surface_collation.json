@@ -1,0 +1,64 @@
+{
+  "date": "2026-11-01",
+  "object": "Louvre AO 4 / Gudea H",
+  "source": "sources/Louvre_AO4_view02.jpg",
+  "sha256": "d5e25afc4672894fae735d0ed21d100ba034ed83f0cef2dea1fd5462163c2da7",
+  "original_size": [
+    1500,
+    1500
+  ],
+  "transform": "Pillow rotate(90, expand=True): 90 degrees counterclockwise; no retouching or contrast change",
+  "coordinate_system": "pixel bounding boxes [left,top,right,bottom] on rotated image; half-open",
+  "selection": "Targeted visual collation with published edition consulted before final selection; NOT blind decipherment",
+  "edition": "sources/ETCSRI_2026-10-24_json.zip :: etcsri/corpusjson/Q001547.json",
+  "observations": [
+    {
+      "id": "H-A",
+      "box": [
+        418,
+        647,
+        902,
+        747
+      ],
+      "editorial_line": "ii 4",
+      "editorial_form": "mu-na-du₃-a",
+      "description": "Начальная протяжённая фигура со стержнем; затем ромбовидная фигура с внутренними насечками; далее треугольная фигура и узкий конечный участок."
+    },
+    {
+      "id": "H-B",
+      "box": [
+        914,
+        1190,
+        1390,
+        1308
+      ],
+      "editorial_line": "iii 8",
+      "editorial_form": "mu-na-ni-kur₉(REC145)",
+      "description": "Начальная протяжённая фигура и ромбовидная фигура повторяют порядок H-A; продолжение отличается. Размер и пропорции зависят от поля надписи."
+    },
+    {
+      "id": "H-C",
+      "box": [
+        418,
+        1190,
+        902,
+        1308
+      ],
+      "editorial_line": "ii 8",
+      "editorial_form": "mu-tud",
+      "description": "Начальная протяжённая фигура сопоставима с H-A и H-B; за ней другое, разветвлённое продолжение. Начало цепочки не требует неизменного окончания."
+    }
+  ],
+  "result": "На выбранных участках наблюдается повторение графического начала с меняющимся продолжением; редакторская разметка mu-/mu-na- совместима с этой локальной закономерностью.",
+  "limits": [
+    "Выборка: три поля одного предмета, не три независимых источника.",
+    "Ромбовидность — описание формы, а не значение «глаз».",
+    "Треугольные участки не объединены в один знак; сходство отдельных клиньев недостаточно.",
+    "Фонетика, направление чтения и номера строк взяты из проверяемой редакции.",
+    "Агглютинативная морфология этим тестом не доказана: повторяться могут формула, слово, имя или графический компонент.",
+    "Связь с казакским языком и происхождение разума этим наблюдением не установлены."
+  ],
+  "independent_new_phonetic_values": 0,
+  "new_independent_sentence_translations": 0,
+  "rights": "Research comparison only. Museum photographic rights apply; no commercial-book publication clearance claimed."
+}

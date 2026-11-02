@@ -141,9 +141,44 @@ def audit_final_a():
     print(json.dumps(result, ensure_ascii=False, indent=2))
 
 
+def audit_graphic_endings():
+    """Sign-order audit without morph or translated meanings; editorial sign IDs remain input."""
+    assert hashlib.sha256(ARCHIVE.read_bytes()).hexdigest() == EXPECTED
+    groups = {x: [] for x in ('NI', 'RA', 'DA', 'A')}
+    skipped = 0
+    with zipfile.ZipFile(ARCHIVE) as archive:
+        for name in sorted(n for n in archive.namelist()
+                           if re.search(r'/corpusjson/Q\d+\.json$', n)):
+            try:
+                doc = json.loads(archive.read(name))
+            except (ValueError, UnicodeDecodeError):
+                skipped += 1
+                continue
+            for node in nodes(doc):
+                f = node['f']
+                if not f.get('lang', '').startswith('sux'):
+                    continue
+                signs = [g.get('gdl_sign') for g in f.get('gdl', [])
+                         if isinstance(g, dict) and g.get('gdl_sign')]
+                if len(signs) < 2 or signs[-1] not in groups:
+                    continue
+                # Do not interpret normalized words, POS, lemmas or meanings.
+                groups[signs[-1]].append((Path(name).stem, node.get('ref', ''), tuple(signs)))
+    result = {'missing_json': skipped, 'unit': 'editorial word-node; Q texts may be composites',
+              'groups': {ending: {'occurrences': len(rows),
+                                  'compositions': len({r[0] for r in rows}),
+                                  'distinct_prefix_sign_sequences': len({r[2][:-1] for r in rows}),
+                                  'top_preceding_sign': collections.Counter(r[2][-2] for r in rows).most_common(8),
+                                  'examples': rows[:5]} for ending, rows in groups.items()},
+              'caveat': 'Signs, word boundaries and Q composition are editorial; no sound or meaning established'}
+    print(json.dumps(result, ensure_ascii=False, indent=2))
+
+
 if __name__ == '__main__':
     import sys
-    if '--audit-final-a' in sys.argv:
+    if '--audit-graphic-endings' in sys.argv:
+        audit_graphic_endings()
+    elif '--audit-final-a' in sys.argv:
         audit_final_a()
     else:
         main()
