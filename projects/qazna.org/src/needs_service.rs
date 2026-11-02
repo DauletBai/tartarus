@@ -128,91 +128,7 @@ impl Ledger {
         if let Some(value) = replay {
             return decode(value);
         }
-        // Coverage is serialized per need before entering the existing account/resource lock order.
-        let exists = sqlx::query("SELECT id FROM needs WHERE id=$1 FOR UPDATE")
-            .bind(id)
-            .fetch_optional(&mut *tx)
-            .await?;
-        if exists.is_none() {
-            return Err(LedgerError::NeedNotFound);
-        }
-        let need = need_in(&mut tx, id).await?;
-        let resource = resource_in(&mut tx, request.resource).await?;
-        if resource.category != need.category || resource.unit != need.unit {
-            return Err(LedgerError::Invalid(
-                "resource category and physical unit must match need exactly",
-            ));
-        }
-        lock_accounts(&mut tx, &[need.resident, resource.producer]).await?;
-        let in_scope:bool=sqlx::query_scalar("WITH RECURSIVE scope AS (SELECT id FROM provisioning_units WHERE id=$1 UNION ALL SELECT u.id FROM provisioning_units u JOIN scope p ON u.parent_id=p.id) SELECT EXISTS (SELECT 1 FROM unit_providers p JOIN scope s ON p.unit_id=s.id WHERE p.producer_id=$2)")
-            .bind(need.assigned_unit).bind(resource.producer).fetch_one(&mut *tx).await?;
-        if !in_scope {
-            return Err(LedgerError::ProviderOutOfScope);
-        }
-        sqlx::query("SELECT id FROM resources WHERE id=$1 FOR UPDATE")
-            .bind(resource.id)
-            .execute(&mut *tx)
-            .await?;
-        // Refresh after account/resource waits: a concurrent cancellation may have freed coverage.
-        let need = need_in(&mut tx, id).await?;
-        let resource = resource_in(&mut tx, request.resource).await?;
-        let uncovered = integer(&need.uncovered)?;
-        let physical = integer(&resource.available)?;
-        let accounting = available(&mut tx, need.resident).await?;
-        let required = integer(&resource.unit_measure)?.checked_mul(request.quantity.units());
-        let mut reasons = Vec::<String>::new();
-        if request.quantity.units() > uncovered {
-            reasons.push("coverage_limit".into());
-        }
-        if request.quantity.units() > physical {
-            reasons.push("physical_shortage".into());
-        }
-        match required {
-            Some(value) if value > accounting => reasons.push("accounting_shortage".into()),
-            None => reasons.push("quantity_limit".into()),
-            _ => {}
-        }
-        let reservation_id = if reasons.is_empty() {
-            Some(
-                reserve_in(
-                    &mut tx,
-                    ReservationRequest {
-                        resident: need.resident,
-                        resource: request.resource,
-                        quantity: request.quantity,
-                        basis: request.basis.clone(),
-                    },
-                )
-                .await?
-                .id,
-            )
-        } else {
-            None
-        };
-        let attempt_id = Uuid::new_v4();
-        sqlx::query("INSERT INTO need_attempts(id,need_id,resource_id,quantity,reservation_id,reasons,uncovered_before,resource_available,accounting_available,required_measure,basis) VALUES ($1,$2,$3,$4,$5,$6,$7,$8,$9,$10,$11)")
-            .bind(attempt_id).bind(id).bind(request.resource).bind(request.quantity.units()).bind(reservation_id)
-            .bind(&reasons).bind(uncovered).bind(physical).bind(accounting).bind(required).bind(&request.basis).execute(&mut *tx).await?;
-        let result = NeedAttempt {
-            id: attempt_id,
-            need: id,
-            resource: request.resource,
-            quantity: request.quantity.units().to_string(),
-            status: if reservation_id.is_some() {
-                "reserved"
-            } else {
-                "blocked"
-            }
-            .into(),
-            reservation_id,
-            reasons,
-            snapshot: AttemptSnapshot {
-                uncovered_before: uncovered.to_string(),
-                resource_available: physical.to_string(),
-                accounting_available: accounting.to_string(),
-                required_measure: required.map(|n| n.to_string()),
-            },
-        };
+        let result = reserve_need_in(&mut tx, id, request).await?;
         // A blocked outcome is durable feedback, not a discarded technical error.
         finish(tx, key, &payload, result).await
     }
@@ -329,4 +245,97 @@ pub(crate) async fn create_need_in(
         return Err(LedgerError::NeedConflict);
     }
     need_in(tx, request.id).await
+}
+
+pub(crate) async fn reserve_need_in(
+    tx: &mut Tx<'_>,
+    id: Uuid,
+    request: NeedReservationRequest,
+) -> Result<NeedAttempt, LedgerError> {
+    // Coverage is serialized per need before entering the existing account/resource lock order.
+    let exists = sqlx::query("SELECT id FROM needs WHERE id=$1 FOR UPDATE")
+        .bind(id)
+        .fetch_optional(&mut **tx)
+        .await?;
+    if exists.is_none() {
+        return Err(LedgerError::NeedNotFound);
+    }
+    let need = need_in(tx, id).await?;
+    let resource = resource_in(tx, request.resource).await?;
+    if resource.category != need.category || resource.unit != need.unit {
+        return Err(LedgerError::Invalid(
+            "resource category and physical unit must match need exactly",
+        ));
+    }
+    lock_accounts(tx, &[need.resident, resource.producer]).await?;
+    let in_scope:bool=sqlx::query_scalar("WITH RECURSIVE scope AS (SELECT id FROM provisioning_units WHERE id=$1 UNION ALL SELECT u.id FROM provisioning_units u JOIN scope p ON u.parent_id=p.id) SELECT EXISTS (SELECT 1 FROM unit_providers p JOIN scope s ON p.unit_id=s.id WHERE p.producer_id=$2)")
+            .bind(need.assigned_unit).bind(resource.producer).fetch_one(&mut **tx).await?;
+    if !in_scope {
+        return Err(LedgerError::ProviderOutOfScope);
+    }
+    sqlx::query("SELECT id FROM resources WHERE id=$1 FOR UPDATE")
+        .bind(resource.id)
+        .execute(&mut **tx)
+        .await?;
+    // Refresh after account/resource waits: a concurrent cancellation may have freed coverage.
+    let need = need_in(tx, id).await?;
+    let resource = resource_in(tx, request.resource).await?;
+    let uncovered = integer(&need.uncovered)?;
+    let physical = integer(&resource.available)?;
+    let accounting = available(tx, need.resident).await?;
+    let required = integer(&resource.unit_measure)?.checked_mul(request.quantity.units());
+    let mut reasons = Vec::<String>::new();
+    if request.quantity.units() > uncovered {
+        reasons.push("coverage_limit".into());
+    }
+    if request.quantity.units() > physical {
+        reasons.push("physical_shortage".into());
+    }
+    match required {
+        Some(value) if value > accounting => reasons.push("accounting_shortage".into()),
+        None => reasons.push("quantity_limit".into()),
+        _ => {}
+    }
+    let reservation_id = if reasons.is_empty() {
+        Some(
+            reserve_in(
+                tx,
+                ReservationRequest {
+                    resident: need.resident,
+                    resource: request.resource,
+                    quantity: request.quantity,
+                    basis: request.basis.clone(),
+                },
+            )
+            .await?
+            .id,
+        )
+    } else {
+        None
+    };
+    let attempt_id = Uuid::new_v4();
+    sqlx::query("INSERT INTO need_attempts(id,need_id,resource_id,quantity,reservation_id,reasons,uncovered_before,resource_available,accounting_available,required_measure,basis) VALUES ($1,$2,$3,$4,$5,$6,$7,$8,$9,$10,$11)")
+            .bind(attempt_id).bind(id).bind(request.resource).bind(request.quantity.units()).bind(reservation_id)
+            .bind(&reasons).bind(uncovered).bind(physical).bind(accounting).bind(required).bind(&request.basis).execute(&mut **tx).await?;
+    let result = NeedAttempt {
+        id: attempt_id,
+        need: id,
+        resource: request.resource,
+        quantity: request.quantity.units().to_string(),
+        status: if reservation_id.is_some() {
+            "reserved"
+        } else {
+            "blocked"
+        }
+        .into(),
+        reservation_id,
+        reasons,
+        snapshot: AttemptSnapshot {
+            uncovered_before: uncovered.to_string(),
+            resource_available: physical.to_string(),
+            accounting_available: accounting.to_string(),
+            required_measure: required.map(|n| n.to_string()),
+        },
+    };
+    Ok(result)
 }

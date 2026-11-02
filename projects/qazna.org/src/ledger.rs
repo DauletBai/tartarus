@@ -56,6 +56,16 @@ pub enum LedgerError {
     NormNotFound,
     #[error("norm revision already exists or branches from a superseded version")]
     NormConflict,
+    #[error("planning draft not found")]
+    DraftNotFound,
+    #[error("planning draft already exists")]
+    DraftConflict,
+    #[error("planning draft is already closed")]
+    DraftClosed,
+    #[error("planning observation changed; create and review a new draft")]
+    DraftStale,
+    #[error("draft has no actions to apply")]
+    DraftEmpty,
     #[error("stored response is invalid")]
     InvalidStoredResponse,
     #[error("database operation failed")]
@@ -73,7 +83,7 @@ impl Ledger {
     }
 
     pub async fn ready(&self) -> Result<(), LedgerError> {
-        sqlx::query("SELECT need_id FROM need_norm_sources LIMIT 0")
+        sqlx::query("SELECT draft_id FROM planning_outcomes LIMIT 0")
             .execute(&self.pool)
             .await?;
         Ok(())

@@ -1,5 +1,15 @@
 # Qazna changelog
 
+## 0.7.0 — 2 November 2026
+
+- Persist server-generated planning drafts with immutable requests, proposals and explicit applied/discarded decisions.
+- Revalidate reviewed results under ordered locks and apply all selected stock/production holds in one transaction.
+- Keep accounting shortages, changed observations and absent actions distinct; failed applications leave the draft and key available for recovery.
+- Preserve action links for later receipt, cancellation and production completion without counting forecasts as delivery.
+- Add migration 0007 with complete-action and same-transaction attribution constraints; keep released migrations unchanged.
+- Add thirteen PostgreSQL scenarios for concurrency, staleness, rollback, attribution, shared resources and upgrade from 0.6.
+- Exercise draft persistence and atomic application through the HTTP binary across three restarts.
+
 ## 0.6.0 — 2 November 2026
 
 - Add immutable needs norm revisions and atomic application with an auditable source link.

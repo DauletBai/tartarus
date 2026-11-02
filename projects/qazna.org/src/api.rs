@@ -1,5 +1,6 @@
 use crate::{
     domain::{NewAccount, Transfer},
+    drafts::DraftRequest,
     ledger::{Ledger, LedgerError},
     needs::{NeedRequest, NeedReservationRequest, PeriodQuery, ProviderRequest, UnitRequest},
     planning::{NeedNorm, NormNeedRequest, PlanningRequest},
@@ -62,6 +63,13 @@ pub fn router(ledger: Ledger, token: String) -> Router {
         .route("/v1/needs/from-norm", post(create_need_from_norm))
         .route("/v1/needs/{id}/norm", get(need_norm_source))
         .route("/v1/planning/assess", post(propose_provisioning))
+        .route("/v1/planning/drafts", post(create_planning_draft))
+        .route("/v1/planning/drafts/{id}", get(planning_draft))
+        .route("/v1/planning/drafts/{id}/apply", post(apply_planning_draft))
+        .route(
+            "/v1/planning/drafts/{id}/discard",
+            post(discard_planning_draft),
+        )
         .route_layer(middleware::from_fn_with_state(token, authorize));
     Router::new()
         .route(
@@ -288,6 +296,11 @@ impl IntoResponse for LedgerError {
             Self::ProductionClosed => (StatusCode::CONFLICT, "production_closed"),
             Self::NormNotFound => (StatusCode::NOT_FOUND, "norm_not_found"),
             Self::NormConflict => (StatusCode::CONFLICT, "norm_revision_conflict"),
+            Self::DraftNotFound => (StatusCode::NOT_FOUND, "draft_not_found"),
+            Self::DraftConflict => (StatusCode::CONFLICT, "draft_exists"),
+            Self::DraftClosed => (StatusCode::CONFLICT, "draft_closed"),
+            Self::DraftStale => (StatusCode::CONFLICT, "draft_stale"),
+            Self::DraftEmpty => (StatusCode::CONFLICT, "draft_empty"),
             Self::InvalidStoredResponse => {
                 (StatusCode::INTERNAL_SERVER_ERROR, "invalid_stored_response")
             }
@@ -444,4 +457,46 @@ async fn propose_provisioning(
     Json(request): Json<PlanningRequest>,
 ) -> Result<impl IntoResponse, LedgerError> {
     Ok(Json(ledger.propose_provisioning(request).await?))
+}
+
+async fn create_planning_draft(
+    State(ledger): State<Ledger>,
+    headers: HeaderMap,
+    Json(request): Json<DraftRequest>,
+) -> Result<impl IntoResponse, LedgerError> {
+    Ok(Json(
+        ledger
+            .create_planning_draft(command_key(&headers)?, request)
+            .await?,
+    ))
+}
+async fn planning_draft(
+    State(ledger): State<Ledger>,
+    Path(id): Path<Uuid>,
+) -> Result<impl IntoResponse, LedgerError> {
+    Ok(Json(ledger.planning_draft(id).await?))
+}
+async fn apply_planning_draft(
+    State(ledger): State<Ledger>,
+    Path(id): Path<Uuid>,
+    headers: HeaderMap,
+    Json(request): Json<ResolutionRequest>,
+) -> Result<impl IntoResponse, LedgerError> {
+    Ok(Json(
+        ledger
+            .apply_planning_draft(command_key(&headers)?, id, request)
+            .await?,
+    ))
+}
+async fn discard_planning_draft(
+    State(ledger): State<Ledger>,
+    Path(id): Path<Uuid>,
+    headers: HeaderMap,
+    Json(request): Json<ResolutionRequest>,
+) -> Result<impl IntoResponse, LedgerError> {
+    Ok(Json(
+        ledger
+            .discard_planning_draft(command_key(&headers)?, id, request)
+            .await?,
+    ))
 }

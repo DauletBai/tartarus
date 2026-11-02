@@ -112,38 +112,7 @@ impl Ledger {
         if let Some(value) = replay {
             return decode(value);
         }
-        lock_capacity(&mut tx, request.capacity).await?;
-        let ids: Vec<Uuid> = request.inputs.iter().map(|i| i.resource).collect();
-        // Production never acquires account locks: it changes physical holds only.
-        // Lock all input lots in UUID order before reading availability.
-        sqlx::query("SELECT id FROM resources WHERE id=ANY($1) ORDER BY id FOR UPDATE")
-            .bind(&ids)
-            .fetch_all(&mut *tx)
-            .await?;
-        let assessment = assess_in(&mut tx, &request).await?;
-        let plan_id = if assessment.feasible {
-            let id = Uuid::new_v4();
-            sqlx::query("INSERT INTO production_plans(id,recipe_id,capacity_id,batches,basis) VALUES ($1,$2,$3,$4,$5)")
-                .bind(id).bind(request.recipe).bind(request.capacity).bind(request.batches.units()).bind(&request.basis).execute(&mut *tx).await?;
-            for i in &assessment.inputs {
-                let quantity: i64 = i.required.parse().map_err(|_| LedgerError::Overflow)?;
-                sqlx::query("INSERT INTO production_plan_inputs(plan_id,slot,resource_id,quantity) VALUES ($1,$2,$3,$4)")
-                    .bind(id).bind(&i.slot).bind(i.resource).bind(quantity).execute(&mut *tx).await?;
-            }
-            Some(id)
-        } else {
-            None
-        };
-        let result = PlanAttempt {
-            status: if plan_id.is_some() {
-                "reserved"
-            } else {
-                "blocked"
-            }
-            .into(),
-            plan_id,
-            assessment,
-        };
+        let result = plan_production_in(&mut tx, request).await?;
         finish(tx, key, &payload, result).await
     }
 
@@ -344,4 +313,43 @@ pub(crate) async fn assess_with_limits(
         reasons,
         inputs,
     })
+}
+
+pub(crate) async fn plan_production_in(
+    tx: &mut Tx<'_>,
+    request: PlanRequest,
+) -> Result<PlanAttempt, LedgerError> {
+    lock_capacity(tx, request.capacity).await?;
+    let ids: Vec<Uuid> = request.inputs.iter().map(|i| i.resource).collect();
+    // Production never acquires account locks: it changes physical holds only.
+    // Lock all input lots in UUID order before reading availability.
+    sqlx::query("SELECT id FROM resources WHERE id=ANY($1) ORDER BY id FOR UPDATE")
+        .bind(&ids)
+        .fetch_all(&mut **tx)
+        .await?;
+    let assessment = assess_in(tx, &request).await?;
+    let plan_id = if assessment.feasible {
+        let id = Uuid::new_v4();
+        sqlx::query("INSERT INTO production_plans(id,recipe_id,capacity_id,batches,basis) VALUES ($1,$2,$3,$4,$5)")
+                .bind(id).bind(request.recipe).bind(request.capacity).bind(request.batches.units()).bind(&request.basis).execute(&mut **tx).await?;
+        for i in &assessment.inputs {
+            let quantity: i64 = i.required.parse().map_err(|_| LedgerError::Overflow)?;
+            sqlx::query("INSERT INTO production_plan_inputs(plan_id,slot,resource_id,quantity) VALUES ($1,$2,$3,$4)")
+                    .bind(id).bind(&i.slot).bind(i.resource).bind(quantity).execute(&mut **tx).await?;
+        }
+        Some(id)
+    } else {
+        None
+    };
+    let result = PlanAttempt {
+        status: if plan_id.is_some() {
+            "reserved"
+        } else {
+            "blocked"
+        }
+        .into(),
+        plan_id,
+        assessment,
+    };
+    Ok(result)
 }

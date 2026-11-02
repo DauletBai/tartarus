@@ -35,10 +35,11 @@ def check_restart(root: Path, database_url: str):
     meal_norm = "00000000-0000-0000-0000-000000000012"
     packing_norm = "00000000-0000-0000-0000-000000000013"
     packing_need = "00000000-0000-0000-0000-000000000014"
+    draft_id = "00000000-0000-0000-0000-000000000015"
     completed_plan = None
     completion_request = None
     completed_receipt = None
-    for iteration in range(3):
+    for iteration in range(4):
         with socket.socket() as sock:
             sock.bind(("127.0.0.1", 0))
             port = sock.getsockname()[1]
@@ -80,7 +81,29 @@ def check_restart(root: Path, database_url: str):
             path = base + "/v1/accounts/00000000-0000-0000-0000-000000000002"
             with urlopen(Request(path, headers=headers), timeout=5) as response:
                 assert json.load(response)["balance"] == ("900" if iteration == 0 else "700")
-            if iteration == 2:
+            if iteration == 3:
+                assert call(f"/v1/planning/drafts/{draft_id}") == draft
+                assert call("/v1/planning/drafts", draft_request, "save-draft") == draft
+                decision = {"basis": "Operator reviewed provision and production holds"}
+                applied = call(f"/v1/planning/drafts/{draft_id}/apply", decision, "apply-draft")
+                assert applied["state"] == "applied" and len(applied["actions"]) == 2
+                assert call(f"/v1/planning/drafts/{draft_id}") == applied
+                assert call(f"/v1/planning/drafts/{draft_id}/apply", decision, "apply-draft") == applied
+                assert call("/v1/planning/drafts", draft_request, "save-draft") == draft
+                assert call(f"/v1/resources/{output_resource}")["available"] == "0"
+                assert call(f"/v1/resources/{resource}")["available"] == "2"
+                assert call(f"/v1/accounts/{resident}")["available"] == "200"
+                totals = call(f"/v1/production/capacities/{capacity}")
+                assert (totals["reserved"], totals["consumed"], totals["available"]) == ("4", "4", "2")
+                n = call(f"/v1/needs/{packing_need}")
+                assert (n["reserved"], n["uncovered"], n["unmet"]) == ("1", "2", "3")
+                try:
+                    call(f"/v1/planning/drafts/{draft_id}/discard", decision, "discard-applied")
+                except HTTPError as error:
+                    assert error.code == 409 and json.load(error)["error"] == "draft_closed"
+                else:
+                    raise AssertionError("applied draft was discarded")
+            elif iteration == 2:
                 assert call(f"/v1/production/plans/{completed_plan}")["state"] == "completed"
                 assert call(f"/v1/production/plans/{completed_plan}/completion") == completed_receipt
                 assert call(f"/v1/production/plans/{completed_plan}/complete", completion_request, "complete-production") == completed_receipt
@@ -105,6 +128,16 @@ def check_restart(root: Path, database_url: str):
                     {"need": packing_need, "resources": [output_resource], "production": [
                         {"recipe": recipe, "capacity": capacity, "inputs": [{"slot": "meal", "resource": resource}]}]}]}
                 advice = call("/v1/planning/assess", proposal_request)
+                draft_request = {"id": draft_id, "plan": proposal_request}
+                draft = call("/v1/planning/drafts", draft_request, "save-draft")
+                assert draft["state"] == "pending" and draft["actions"] == []
+                for private_path in ["/v1/planning/drafts", f"/v1/planning/drafts/{draft_id}/apply", f"/v1/planning/drafts/{draft_id}/discard"]:
+                    try:
+                        urlopen(Request(base + private_path, b"{}", {"Content-Type": "application/json"}), timeout=5)
+                    except HTTPError as error:
+                        assert error.code == 401
+                    else:
+                        raise AssertionError("draft route accepted an unauthenticated request")
                 assert advice["advisory"] is True
                 assert advice["needs"][0]["stock_selected"] == "1"
                 assert advice["needs"][0]["expected_from_production"] == "2"
@@ -218,4 +251,4 @@ def check_restart(root: Path, database_url: str):
                     process.kill()
                     process.wait()
             process.stderr.close()
-    print("HTTP smoke passed: norms, advisory planning, provisioning and production provenance across two restarts")
+    print("HTTP smoke passed: norms, persisted drafts, atomic application and production provenance across three restarts")

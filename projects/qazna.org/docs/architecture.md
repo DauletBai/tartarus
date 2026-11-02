@@ -13,7 +13,7 @@ Decision of 2 November 2026: the MVP and industrial development use the same Rus
 | User identity | OIDC, roles and account ownership checks | Planned; currently a local operator API |
 | Background work | PostgreSQL jobs and transactional outbox | Planned for calculation integration |
 
-The [organism analogy](organism.md) guides the domain. One Rust application currently contains domain, ledger, provisioning, needs, production, completion, planning and API modules. A future Python worker will receive versioned inputs and return a plan; it will not have write access to ledger postings. Neither a solver nor a language model determines authoritative balances.
+The [organism analogy](organism.md) guides the domain. One Rust application currently contains domain, ledger, provisioning, needs, production, completion, planning, draft application and API modules. A future Python worker will receive versioned inputs and return a plan; it will not have write access to ledger postings. Neither a solver nor a language model determines authoritative balances.
 
 Cargo.lock pins dependencies. The declared minimum Rust version is 1.88; the verified toolchain is 1.97.0. SQLx is 0.8.6. Library upgrades must pass tests without requiring a language or database migration. References: [Axum](https://docs.rs/axum/0.8.9/axum/), [SQLx](https://docs.rs/sqlx/0.8.6/sqlx/).
 
@@ -53,7 +53,7 @@ The same technology stack does not imply immediate industrial readiness. Economi
 
 ## Next work
 
-1. Durable proposal drafts, explicit multi-action application and global optimization beyond the current ordered greedy assessment.
+1. Reconcile outstanding production forecasts and evaluate global optimization beyond the current ordered greedy assessment.
 2. Explicit corrections and reversals, with links to original events and repeat-reversal limits.
 3. Versioned Python worker jobs and validation of freshness and admissibility before application.
 4. User roles and resident, operator and auditor interfaces.
@@ -62,3 +62,9 @@ The same technology stack does not imply immediate industrial readiness. Economi
 ## Norms and proposal selection
 
 Migration 0006 records immutable norm revision chains and atomically links applied norms to new needs. Existing needs are never rewritten by a revised norm. Read-only proposal selection uses a consistent snapshot and shared budgets for stock and capacity, with explicit caller order and separate accounting gaps. Expected output remains a forecast. See [norms and planning](norms-and-planning.md) for policy, limits and application boundaries. The [local Git workflow](git-workflow.md) provides commits and IDE tracking while preserving the workspace's separate manuscript material.
+
+## Reviewed draft application
+
+Migration 0007 persists server-generated proposal snapshots and their explicit applied/discarded decisions. Application locks all participating needs, capacities, accounts and resource lots in that class order, then reuses transaction-scoped reservation and production services. It requires unchanged proposal observations (excluding the snapshot timestamp), sufficient aggregate accounting measure and at least one action. Selected holds, terminal event, action links and the idempotent response commit together. No production output or resident receipt is inferred.
+
+Database constraints verify complete action attribution and prohibit retrospective links. Consistent reads provide the immutable proposal and current state; creation replay retains the original response. See [drafts](drafts.md) for contracts, recovery and outstanding forecast limitations.

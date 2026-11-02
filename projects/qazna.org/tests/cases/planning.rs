@@ -555,3 +555,6 @@ async fn upgrade_from_completion_keeps_manual_needs_unattributed() {
         .unwrap();
     assert_eq!(new.need.requested, "4");
 }
+
+#[path = "drafts.rs"]
+mod drafts;
