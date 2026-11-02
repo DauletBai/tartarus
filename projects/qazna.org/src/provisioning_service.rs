@@ -111,40 +111,7 @@ impl Ledger {
         if let Some(value) = replay {
             return decode(value);
         }
-        let resource = resource_in(&mut tx, request.resource).await?;
-        let accounts = lock_accounts(&mut tx, &[request.resident, resource.producer]).await?;
-        if accounts[&request.resident] != "resident" || accounts[&resource.producer] != "producer" {
-            return Err(LedgerError::Invalid(
-                "reservation requires resident and producer",
-            ));
-        }
-        sqlx::query("SELECT id FROM resources WHERE id = $1 FOR UPDATE")
-            .bind(request.resource)
-            .execute(&mut *tx)
-            .await?;
-        let resource = resource_in(&mut tx, request.resource).await?;
-        let price = resource
-            .unit_measure
-            .parse::<i64>()
-            .map_err(|_| LedgerError::Overflow)?;
-        let amount = price
-            .checked_mul(request.quantity.units())
-            .ok_or(LedgerError::Overflow)?;
-        if resource
-            .available
-            .parse::<i64>()
-            .map_err(|_| LedgerError::Overflow)?
-            < request.quantity.units()
-        {
-            return Err(LedgerError::InsufficientStock);
-        }
-        if available(&mut tx, request.resident).await? < amount {
-            return Err(LedgerError::InsufficientFunds);
-        }
-        let id = Uuid::new_v4();
-        sqlx::query("INSERT INTO reservations(id,resident_id,resource_id,quantity,amount,basis) VALUES ($1,$2,$3,$4,$5,$6)")
-            .bind(id).bind(request.resident).bind(request.resource).bind(request.quantity.units()).bind(amount).bind(&request.basis).execute(&mut *tx).await?;
-        let result = reservation_in(&mut tx, id).await?;
+        let result = reserve_in(&mut tx, request).await?;
         finish(tx, key, &payload, result).await
     }
 
@@ -225,7 +192,7 @@ impl Ledger {
     }
 }
 
-async fn resource_in(tx: &mut Tx<'_>, id: Uuid) -> Result<Resource, LedgerError> {
+pub(crate) async fn resource_in(tx: &mut Tx<'_>, id: Uuid) -> Result<Resource, LedgerError> {
     let row = sqlx::query("SELECT producer_id,category,unit,unit_measure::text,(initial_quantity-consumed)::text AS on_hand,reserved::text,(initial_quantity-consumed-reserved)::text AS available FROM resource_totals WHERE id = $1")
         .bind(id).fetch_optional(&mut **tx).await?.ok_or(LedgerError::ResourceNotFound)?;
     Ok(Resource {
@@ -252,4 +219,44 @@ async fn reservation_in(tx: &mut Tx<'_>, id: Uuid) -> Result<Reservation, Ledger
         state: row.try_get("state")?,
         transaction_id: row.try_get("transaction_id")?,
     })
+}
+
+pub(crate) async fn reserve_in(
+    tx: &mut Tx<'_>,
+    request: ReservationRequest,
+) -> Result<Reservation, LedgerError> {
+    let resource = resource_in(tx, request.resource).await?;
+    let accounts = lock_accounts(tx, &[request.resident, resource.producer]).await?;
+    if accounts[&request.resident] != "resident" || accounts[&resource.producer] != "producer" {
+        return Err(LedgerError::Invalid(
+            "reservation requires resident and producer",
+        ));
+    }
+    sqlx::query("SELECT id FROM resources WHERE id = $1 FOR UPDATE")
+        .bind(request.resource)
+        .execute(&mut **tx)
+        .await?;
+    let resource = resource_in(tx, request.resource).await?;
+    let measure = resource
+        .unit_measure
+        .parse::<i64>()
+        .map_err(|_| LedgerError::Overflow)?;
+    let amount = measure
+        .checked_mul(request.quantity.units())
+        .ok_or(LedgerError::Overflow)?;
+    if resource
+        .available
+        .parse::<i64>()
+        .map_err(|_| LedgerError::Overflow)?
+        < request.quantity.units()
+    {
+        return Err(LedgerError::InsufficientStock);
+    }
+    if available(tx, request.resident).await? < amount {
+        return Err(LedgerError::InsufficientFunds);
+    }
+    let id = Uuid::new_v4();
+    sqlx::query("INSERT INTO reservations(id,resident_id,resource_id,quantity,amount,basis) VALUES ($1,$2,$3,$4,$5,$6)")
+            .bind(id).bind(request.resident).bind(request.resource).bind(request.quantity.units()).bind(amount).bind(&request.basis).execute(&mut **tx).await?;
+    reservation_in(tx, id).await
 }

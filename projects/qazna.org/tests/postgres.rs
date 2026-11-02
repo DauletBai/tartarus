@@ -13,6 +13,8 @@ use sqlx::{PgPool, postgres::PgPoolOptions};
 use tower::ServiceExt;
 use uuid::Uuid;
 
+#[path = "cases/needs.rs"]
+mod needs;
 #[path = "cases/provisioning.rs"]
 mod provisioning;
 
@@ -31,6 +33,10 @@ impl Fixture {
     }
 
     async fn new_at(legacy: bool) -> Self {
+        Self::new_with_migrations(if legacy { 1 } else { 3 }).await
+    }
+
+    async fn new_with_migrations(count: usize) -> Self {
         let url = std::env::var("QAZNA_TEST_DATABASE_URL").expect("use python3 scripts/check.py");
         let admin = PgPoolOptions::new()
             .max_connections(1)
@@ -55,14 +61,24 @@ impl Fixture {
             .connect(&url)
             .await
             .unwrap();
-        if legacy {
+        if count < 3 {
             let path = std::env::temp_dir().join(format!("qazna-migrations-{}", Uuid::new_v4()));
             std::fs::create_dir(&path).unwrap();
-            std::fs::write(
-                path.join("0001_ledger.sql"),
-                include_str!("../migrations/0001_ledger.sql"),
-            )
-            .unwrap();
+            for (name, contents) in [
+                (
+                    "0001_ledger.sql",
+                    include_str!("../migrations/0001_ledger.sql"),
+                ),
+                (
+                    "0002_provisioning.sql",
+                    include_str!("../migrations/0002_provisioning.sql"),
+                ),
+            ]
+            .into_iter()
+            .take(count)
+            {
+                std::fs::write(path.join(name), contents).unwrap();
+            }
             let migrator = sqlx::migrate::Migrator::new(path.clone()).await.unwrap();
             migrator.run(&pool).await.unwrap();
             std::fs::remove_dir_all(path).unwrap();

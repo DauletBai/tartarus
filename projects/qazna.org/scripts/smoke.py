@@ -25,6 +25,9 @@ def check_restart(root: Path, database_url: str):
     resident = "00000000-0000-0000-0000-000000000003"
     producer = "00000000-0000-0000-0000-000000000004"
     resource = "00000000-0000-0000-0000-000000000005"
+    root_unit = "00000000-0000-0000-0000-000000000006"
+    child_unit = "00000000-0000-0000-0000-000000000007"
+    need = "00000000-0000-0000-0000-000000000008"
     for iteration in range(2):
         with socket.socket() as sock:
             sock.bind(("127.0.0.1", 0))
@@ -75,18 +78,44 @@ def check_restart(root: Path, database_url: str):
                 call("/v1/resources", {"id": resource, "producer": producer, "category": "food",
                      "unit": "meal", "quantity": "10", "unit_measure": "20",
                      "basis": "Synthetic lot and experimental norm v1"}, "resource")
-                held = call("/v1/reservations", {"resident": resident, "resource": resource,
-                            "quantity": "4", "basis": "Provision request"}, "reserve")
+                call("/v1/units", {"id": root_unit, "parent": None, "name": "Community",
+                     "function": "Coordinate provision", "basis": "Synthetic hierarchy"}, "unit-root")
+                call("/v1/units", {"id": child_unit, "parent": root_unit, "name": "Food unit",
+                     "function": "Provide meals", "basis": "Synthetic hierarchy"}, "unit-child")
+                call(f"/v1/units/{child_unit}/providers", {"producer": producer, "basis": "Synthetic assignment"}, "unit-provider")
+                assert call(f"/v1/units/{root_unit}")["children"] == [child_unit]
+                call("/v1/needs", {"id": need, "resident": resident, "assigned_unit": root_unit,
+                     "period": "2026-11-02", "category": "food", "unit": "meal", "quantity": "12",
+                     "basis": "Declared synthetic need"}, "need")
+                blocked = call(f"/v1/needs/{need}/reserve", {"resource": resource, "quantity": "12",
+                               "basis": "Attempt full provision"}, "need-blocked")
+                assert blocked["status"] == "blocked"
+                assert blocked["reasons"] == ["physical_shortage"]
+                attempt = call(f"/v1/needs/{need}/reserve", {"resource": resource, "quantity": "4",
+                               "basis": "Partial provision"}, "reserve")
+                held = call(f"/v1/reservations/{attempt['reservation_id']}")
                 assert call(f"/v1/accounts/{resident}")["reserved"] == "80"
             else:
                 assert call(f"/v1/reservations/{held['id']}")["state"] == "reserved"
+                current_need = call(f"/v1/needs/{need}")
+                assert current_need["reserved"] == "4" and current_need["received"] == "0"
+                assert current_need["unmet"] == "12"
+                assert len(call(f"/v1/needs/{need}/attempts")) == 2
                 assert call(f"/v1/resources/{resource}")["available"] == "6"
+                coverage = call(f"/v1/units/{root_unit}/coverage?period=2026-11-02")
+                assert len(coverage["lines"]) == 1
+                assert coverage["lines"][0]["requested"] == "12"
+                assert coverage["lines"][0]["received"] == "0"
+                assert coverage["lines"][0]["unmet"] == "12"
                 body = {"basis": "Receipt confirmed"}
                 settled = call(f"/v1/reservations/{held['id']}/settle", body, "settle")
                 assert settled == call(f"/v1/reservations/{held['id']}/settle", body, "settle")
                 assert call(f"/v1/accounts/{resident}")["balance"] == "220"
                 assert call(f"/v1/accounts/{producer}")["balance"] == "80"
                 assert call(f"/v1/resources/{resource}")["on_hand"] == "6"
+                coverage = call(f"/v1/units/{root_unit}/coverage?period=2026-11-02")
+                assert coverage["lines"][0]["received"] == "4"
+                assert coverage["lines"][0]["unmet"] == "8"
                 second = call("/v1/reservations", {"resident": resident, "resource": resource,
                               "quantity": "2", "basis": "Second provision request"}, "reserve-2")
                 call(f"/v1/reservations/{second['id']}/cancel", {"basis": "Request withdrawn"}, "cancel-2")
@@ -107,4 +136,4 @@ def check_restart(root: Path, database_url: str):
                     process.kill()
                     process.wait()
             process.stderr.close()
-    print("HTTP smoke passed: transfer replay, allocation, persistent reservation, settlement and cancellation after restart")
+    print("HTTP smoke passed: unit hierarchy, needs feedback, persistent reservation and delivered coverage after restart")

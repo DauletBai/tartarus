@@ -1,11 +1,12 @@
 use crate::{
     domain::{NewAccount, Transfer},
     ledger::{Ledger, LedgerError},
+    needs::{NeedRequest, NeedReservationRequest, PeriodQuery, ProviderRequest, UnitRequest},
     provisioning::{AllocationRequest, ReservationRequest, ResolutionRequest, ResourceRequest},
 };
 use axum::{
     Json, Router,
-    extract::{DefaultBodyLimit, Path, Request, State},
+    extract::{DefaultBodyLimit, Path, Query, Request, State},
     http::{HeaderMap, StatusCode},
     middleware::{self, Next},
     response::{IntoResponse, Response},
@@ -29,6 +30,14 @@ pub fn router(ledger: Ledger, token: String) -> Router {
         .route("/v1/reservations/{id}", get(reservation))
         .route("/v1/reservations/{id}/settle", post(settle))
         .route("/v1/reservations/{id}/cancel", post(cancel))
+        .route("/v1/units", post(create_unit))
+        .route("/v1/units/{id}", get(unit))
+        .route("/v1/units/{id}/providers", post(link_provider))
+        .route("/v1/units/{id}/coverage", get(unit_coverage))
+        .route("/v1/needs", post(create_need))
+        .route("/v1/needs/{id}", get(need))
+        .route("/v1/needs/{id}/reserve", post(reserve_need))
+        .route("/v1/needs/{id}/attempts", get(need_attempts))
         .route_layer(middleware::from_fn_with_state(token, authorize));
     Router::new()
         .route(
@@ -161,6 +170,74 @@ async fn cancel(
     ))
 }
 
+async fn create_unit(
+    State(ledger): State<Ledger>,
+    headers: HeaderMap,
+    Json(request): Json<UnitRequest>,
+) -> Result<impl IntoResponse, LedgerError> {
+    Ok(Json(
+        ledger.create_unit(command_key(&headers)?, request).await?,
+    ))
+}
+async fn unit(
+    State(ledger): State<Ledger>,
+    Path(id): Path<Uuid>,
+) -> Result<impl IntoResponse, LedgerError> {
+    Ok(Json(ledger.unit(id).await?))
+}
+async fn link_provider(
+    State(ledger): State<Ledger>,
+    Path(id): Path<Uuid>,
+    headers: HeaderMap,
+    Json(request): Json<ProviderRequest>,
+) -> Result<impl IntoResponse, LedgerError> {
+    Ok(Json(
+        ledger
+            .link_provider(command_key(&headers)?, id, request)
+            .await?,
+    ))
+}
+async fn unit_coverage(
+    State(ledger): State<Ledger>,
+    Path(id): Path<Uuid>,
+    Query(query): Query<PeriodQuery>,
+) -> Result<impl IntoResponse, LedgerError> {
+    Ok(Json(ledger.unit_coverage(id, &query.period).await?))
+}
+async fn create_need(
+    State(ledger): State<Ledger>,
+    headers: HeaderMap,
+    Json(request): Json<NeedRequest>,
+) -> Result<impl IntoResponse, LedgerError> {
+    Ok(Json(
+        ledger.create_need(command_key(&headers)?, request).await?,
+    ))
+}
+async fn need(
+    State(ledger): State<Ledger>,
+    Path(id): Path<Uuid>,
+) -> Result<impl IntoResponse, LedgerError> {
+    Ok(Json(ledger.need(id).await?))
+}
+async fn reserve_need(
+    State(ledger): State<Ledger>,
+    Path(id): Path<Uuid>,
+    headers: HeaderMap,
+    Json(request): Json<NeedReservationRequest>,
+) -> Result<impl IntoResponse, LedgerError> {
+    Ok(Json(
+        ledger
+            .reserve_need(command_key(&headers)?, id, request)
+            .await?,
+    ))
+}
+async fn need_attempts(
+    State(ledger): State<Ledger>,
+    Path(id): Path<Uuid>,
+) -> Result<impl IntoResponse, LedgerError> {
+    Ok(Json(ledger.need_attempts(id).await?))
+}
+
 impl IntoResponse for LedgerError {
     fn into_response(self) -> Response {
         let (status, code) = match &self {
@@ -176,6 +253,12 @@ impl IntoResponse for LedgerError {
             Self::ReservationNotFound => (StatusCode::NOT_FOUND, "reservation_not_found"),
             Self::InsufficientStock => (StatusCode::CONFLICT, "insufficient_stock"),
             Self::ReservationClosed => (StatusCode::CONFLICT, "reservation_closed"),
+            Self::UnitNotFound => (StatusCode::NOT_FOUND, "unit_not_found"),
+            Self::UnitConflict => (StatusCode::CONFLICT, "unit_exists"),
+            Self::ProviderConflict => (StatusCode::CONFLICT, "provider_already_assigned"),
+            Self::ProviderOutOfScope => (StatusCode::CONFLICT, "provider_outside_scope"),
+            Self::NeedNotFound => (StatusCode::NOT_FOUND, "need_not_found"),
+            Self::NeedConflict => (StatusCode::CONFLICT, "need_exists"),
             Self::InvalidStoredResponse => {
                 (StatusCode::INTERNAL_SERVER_ERROR, "invalid_stored_response")
             }

@@ -34,6 +34,18 @@ pub enum LedgerError {
     ReservationNotFound,
     #[error("reservation already resolved")]
     ReservationClosed,
+    #[error("provisioning unit not found")]
+    UnitNotFound,
+    #[error("provisioning unit already exists")]
+    UnitConflict,
+    #[error("producer already belongs to a unit")]
+    ProviderConflict,
+    #[error("provider is outside assigned unit hierarchy")]
+    ProviderOutOfScope,
+    #[error("need not found")]
+    NeedNotFound,
+    #[error("need already exists for resident, period, category and unit")]
+    NeedConflict,
     #[error("stored response is invalid")]
     InvalidStoredResponse,
     #[error("database operation failed")]
@@ -51,7 +63,7 @@ impl Ledger {
     }
 
     pub async fn ready(&self) -> Result<(), LedgerError> {
-        sqlx::query("SELECT id FROM account_totals LIMIT 0")
+        sqlx::query("SELECT id FROM need_totals LIMIT 0")
             .execute(&self.pool)
             .await?;
         Ok(())

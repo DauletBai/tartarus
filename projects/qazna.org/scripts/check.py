@@ -45,7 +45,7 @@ def main():
             run([pg("createdb"), "-h", str(sock), "-U", "qazna", "qazna_test"])
             env = dict(os.environ)
             env["QAZNA_TEST_DATABASE_URL"] = "postgresql://qazna@localhost/qazna_test?" + urlencode({"host": str(sock)})
-            run(["cargo", "test", "--locked", "--test", "postgres", "--", "--ignored"], env=env)
+            run(["cargo", "test", "--locked", "--test", "postgres", "--", "--ignored", "--test-threads=4"], env=env)
             run(["cargo", "build", "--locked"])
             run([pg("createdb"), "-h", str(sock), "-U", "qazna", "qazna_demo"])
             env["DATABASE_URL"] = "postgresql://qazna@localhost/qazna_demo?" + urlencode({"host": str(sock)})

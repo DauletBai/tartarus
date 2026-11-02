@@ -1,6 +1,6 @@
 [package]
 name = "qazna"
-version = "0.2.0"
+version = "0.3.0"
 license = "AGPL-3.0-or-later"
 description = "Needs-based provisioning and auditable resource circulation for Qazna"
 repository = "https://github.com/DauletBai/tartarus"
