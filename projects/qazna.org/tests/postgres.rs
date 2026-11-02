@@ -15,6 +15,8 @@ use uuid::Uuid;
 
 #[path = "cases/needs.rs"]
 mod needs;
+#[path = "cases/production.rs"]
+mod production;
 #[path = "cases/provisioning.rs"]
 mod provisioning;
 
@@ -33,7 +35,7 @@ impl Fixture {
     }
 
     async fn new_at(legacy: bool) -> Self {
-        Self::new_with_migrations(if legacy { 1 } else { 3 }).await
+        Self::new_with_migrations(if legacy { 1 } else { 4 }).await
     }
 
     async fn new_with_migrations(count: usize) -> Self {
@@ -61,7 +63,7 @@ impl Fixture {
             .connect(&url)
             .await
             .unwrap();
-        if count < 3 {
+        if count < 4 {
             let path = std::env::temp_dir().join(format!("qazna-migrations-{}", Uuid::new_v4()));
             std::fs::create_dir(&path).unwrap();
             for (name, contents) in [
@@ -72,6 +74,10 @@ impl Fixture {
                 (
                     "0002_provisioning.sql",
                     include_str!("../migrations/0002_provisioning.sql"),
+                ),
+                (
+                    "0003_needs_and_units.sql",
+                    include_str!("../migrations/0003_needs_and_units.sql"),
                 ),
             ]
             .into_iter()

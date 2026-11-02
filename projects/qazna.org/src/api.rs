@@ -2,6 +2,7 @@ use crate::{
     domain::{NewAccount, Transfer},
     ledger::{Ledger, LedgerError},
     needs::{NeedRequest, NeedReservationRequest, PeriodQuery, ProviderRequest, UnitRequest},
+    production::{CapacityRequest, PlanRequest, RecipeRequest},
     provisioning::{AllocationRequest, ReservationRequest, ResolutionRequest, ResourceRequest},
 };
 use axum::{
@@ -38,6 +39,14 @@ pub fn router(ledger: Ledger, token: String) -> Router {
         .route("/v1/needs/{id}", get(need))
         .route("/v1/needs/{id}/reserve", post(reserve_need))
         .route("/v1/needs/{id}/attempts", get(need_attempts))
+        .route("/v1/production/capacities", post(create_capacity))
+        .route("/v1/production/capacities/{id}", get(capacity))
+        .route("/v1/production/recipes", post(create_recipe))
+        .route("/v1/production/recipes/{id}", get(recipe))
+        .route("/v1/production/assess", post(assess_production))
+        .route("/v1/production/plans", post(plan_production))
+        .route("/v1/production/plans/{id}", get(production_plan))
+        .route("/v1/production/plans/{id}/cancel", post(cancel_production))
         .route_layer(middleware::from_fn_with_state(token, authorize));
     Router::new()
         .route(
@@ -259,6 +268,9 @@ impl IntoResponse for LedgerError {
             Self::ProviderOutOfScope => (StatusCode::CONFLICT, "provider_outside_scope"),
             Self::NeedNotFound => (StatusCode::NOT_FOUND, "need_not_found"),
             Self::NeedConflict => (StatusCode::CONFLICT, "need_exists"),
+            Self::ProductionNotFound => (StatusCode::NOT_FOUND, "production_not_found"),
+            Self::ProductionConflict => (StatusCode::CONFLICT, "production_exists"),
+            Self::ProductionClosed => (StatusCode::CONFLICT, "production_closed"),
             Self::InvalidStoredResponse => {
                 (StatusCode::INTERNAL_SERVER_ERROR, "invalid_stored_response")
             }
@@ -269,4 +281,80 @@ impl IntoResponse for LedgerError {
         };
         (status, Json(json!({"error": code}))).into_response()
     }
+}
+
+async fn create_capacity(
+    State(ledger): State<Ledger>,
+    headers: HeaderMap,
+    Json(request): Json<CapacityRequest>,
+) -> Result<impl IntoResponse, LedgerError> {
+    Ok(Json(
+        ledger
+            .create_capacity(command_key(&headers)?, request)
+            .await?,
+    ))
+}
+
+async fn create_recipe(
+    State(ledger): State<Ledger>,
+    headers: HeaderMap,
+    Json(request): Json<RecipeRequest>,
+) -> Result<impl IntoResponse, LedgerError> {
+    Ok(Json(
+        ledger
+            .create_recipe(command_key(&headers)?, request)
+            .await?,
+    ))
+}
+
+async fn plan_production(
+    State(ledger): State<Ledger>,
+    headers: HeaderMap,
+    Json(request): Json<PlanRequest>,
+) -> Result<impl IntoResponse, LedgerError> {
+    Ok(Json(
+        ledger
+            .plan_production(command_key(&headers)?, request)
+            .await?,
+    ))
+}
+
+async fn capacity(
+    State(ledger): State<Ledger>,
+    Path(id): Path<Uuid>,
+) -> Result<impl IntoResponse, LedgerError> {
+    Ok(Json(ledger.capacity(id).await?))
+}
+
+async fn recipe(
+    State(ledger): State<Ledger>,
+    Path(id): Path<Uuid>,
+) -> Result<impl IntoResponse, LedgerError> {
+    Ok(Json(ledger.recipe(id).await?))
+}
+
+async fn production_plan(
+    State(ledger): State<Ledger>,
+    Path(id): Path<Uuid>,
+) -> Result<impl IntoResponse, LedgerError> {
+    Ok(Json(ledger.production_plan(id).await?))
+}
+
+async fn assess_production(
+    State(ledger): State<Ledger>,
+    Json(request): Json<PlanRequest>,
+) -> Result<impl IntoResponse, LedgerError> {
+    Ok(Json(ledger.assess_production(request).await?))
+}
+async fn cancel_production(
+    State(ledger): State<Ledger>,
+    Path(id): Path<Uuid>,
+    headers: HeaderMap,
+    Json(request): Json<ResolutionRequest>,
+) -> Result<impl IntoResponse, LedgerError> {
+    Ok(Json(
+        ledger
+            .cancel_production(command_key(&headers)?, id, request)
+            .await?,
+    ))
 }

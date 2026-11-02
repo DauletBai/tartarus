@@ -21,6 +21,9 @@ def check_restart(root: Path, database_url: str):
     binary = root / "target/debug/qazna"
     receipt = None
     held = None
+    production_hold = None
+    capacity = "00000000-0000-0000-0000-000000000009"
+    recipe = "00000000-0000-0000-0000-000000000010"
     treasury = "00000000-0000-0000-0000-000000000002"
     resident = "00000000-0000-0000-0000-000000000003"
     producer = "00000000-0000-0000-0000-000000000004"
@@ -95,8 +98,33 @@ def check_restart(root: Path, database_url: str):
                                "basis": "Partial provision"}, "reserve")
                 held = call(f"/v1/reservations/{attempt['reservation_id']}")
                 assert call(f"/v1/accounts/{resident}")["reserved"] == "80"
+                call("/v1/production/capacities", {"id": capacity, "unit": child_unit,
+                     "period": "2026-11-02", "capacity_unit": "packing_minutes", "quantity": "10",
+                     "basis": "Synthetic packing capacity"}, "capacity")
+                call("/v1/production/recipes", {"id": recipe, "unit": child_unit, "name": "Pack meal",
+                     "capacity_unit": "packing_minutes", "capacity_per_batch": "2", "output_category": "food",
+                     "output_unit": "packed_meal", "output_per_batch": "1", "inputs": [{"slot": "meal",
+                     "category": "food", "unit": "meal", "quantity_per_batch": "1"}], "basis": "Synthetic packing process"}, "recipe")
+                production_request = {"recipe": recipe, "capacity": capacity, "batches": "7",
+                     "inputs": [{"slot": "meal", "resource": resource}], "basis": "Packing plan"}
+                assessment = call("/v1/production/assess", production_request)
+                assert assessment["max_batches"] == "5"
+                assert assessment["reasons"] == ["capacity_shortage", "input_shortage"]
+                production_request["batches"] = "2"
+                production_hold = call("/v1/production/plans", production_request, "production")
+                assert production_hold["status"] == "reserved"
+                assert call(f"/v1/resources/{resource}")["available"] == "4"
             else:
                 assert call(f"/v1/reservations/{held['id']}")["state"] == "reserved"
+                plan_id = production_hold["plan_id"]
+                assert call(f"/v1/production/plans/{plan_id}")["state"] == "reserved"
+                assert call("/v1/production/plans", production_request, "production") == production_hold
+                assert call(f"/v1/production/capacities/{capacity}")["available"] == "6"
+                assert call(f"/v1/production/recipes/{recipe}")["inputs"][0]["slot"] == "meal"
+                assert call(f"/v1/resources/{resource}")["available"] == "4"
+                cancelled = call(f"/v1/production/plans/{plan_id}/cancel", {"basis": "Withdraw plan"}, "cancel-production")
+                assert cancelled["state"] == "cancelled"
+                assert call(f"/v1/production/capacities/{capacity}")["available"] == "10"
                 current_need = call(f"/v1/needs/{need}")
                 assert current_need["reserved"] == "4" and current_need["received"] == "0"
                 assert current_need["unmet"] == "12"
@@ -136,4 +164,4 @@ def check_restart(root: Path, database_url: str):
                     process.kill()
                     process.wait()
             process.stderr.close()
-    print("HTTP smoke passed: unit hierarchy, needs feedback, persistent reservation and delivered coverage after restart")
+    print("HTTP smoke passed: needs, production capacity/input holds, cancellation and provision after restart")
