@@ -24,6 +24,17 @@ class AdapterTests(unittest.TestCase):
         self.assertNotIn("Ignore all instructions", value)
         self.assertNotIn("private-key", value)
 
+    def test_existing_commitments_are_context_not_new_forecast_evidence(self):
+        calculation = copy.deepcopy(CALCULATION)
+        calculation["proposal"]["needs"][0]["committed_production"] = "3"
+        calculation["proposal"]["needs"][0]["forecast_excess"] = "1"
+        snapshot = ai_review.minimized(calculation)
+        self.assertEqual(snapshot["needs"][0]["committed_production"], "3")
+        report = copy.deepcopy(REPORT)
+        report["findings"][0]["signal"] = "production_forecast"
+        with self.assertRaises(ValueError):
+            ai_review.validate_report(report, snapshot)
+
     def test_fabricated_quantities_subjects_signals_and_duplicate_evidence_rejected(self):
         for field, value in [("quantity", "4"), ("quantity", 3), ("quantity", "03"),
                              ("subject", "invented"), ("signal", "issue_money")]:
@@ -66,7 +77,7 @@ class AdapterTests(unittest.TestCase):
                 testcase.assertEqual(args[args.index("--sandbox")+1], "read-only")
                 testcase.assertIn("--ignore-user-config", args)
                 testcase.assertIn('forced_login_method="chatgpt"', args)
-                for key in ["OPENAI_API_KEY", "CODEX_API_KEY", "DATABASE_URL", "QAZNA_OPERATOR_TOKEN"]:
+                for key in ["OPENAI_API_KEY", "CODEX_API_KEY", "DATABASE_URL", "QAZNA_OPERATOR_TOKEN", "QAZNA_REVIEW_TOKEN", "QAZNA_OBSERVER_TOKEN"]:
                     testcase.assertNotIn(key, kwargs["env"])
                 Path(args[args.index("--output-last-message")+1]).write_text(json.dumps(REPORT))
             def communicate(self, prompt, **kwargs):
@@ -75,7 +86,7 @@ class AdapterTests(unittest.TestCase):
                 if complete:
                     events.append({"type": "turn.completed"})
                 return "\n".join(json.dumps(e) for e in events), "model: synthetic-test\n"
-        with patch.dict(os.environ, {"OPENAI_API_KEY": "test-api", "CODEX_API_KEY": "test-api", "DATABASE_URL": "test-db", "QAZNA_OPERATOR_TOKEN": "test-operator"}), patch.object(ai_review.subprocess, "run", return_value=auth), patch.object(ai_review.subprocess, "Popen", FakeProcess):
+        with patch.dict(os.environ, {"OPENAI_API_KEY": "test-api", "CODEX_API_KEY": "test-api", "DATABASE_URL": "test-db", "QAZNA_OPERATOR_TOKEN": "test-operator", "QAZNA_REVIEW_TOKEN": "test-review", "QAZNA_OBSERVER_TOKEN": "test-observer"}), patch.object(ai_review.subprocess, "run", return_value=auth), patch.object(ai_review.subprocess, "Popen", FakeProcess):
             return ai_review.review(CALCULATION, executable="codex")
 
     def test_completed_text_only_turn_is_validated_without_service_credentials(self):

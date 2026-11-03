@@ -97,7 +97,7 @@ impl Ledger {
     }
 
     pub async fn ready(&self) -> Result<(), LedgerError> {
-        sqlx::query("SELECT job_id FROM coordination_results LIMIT 0")
+        sqlx::query("SELECT plan_id FROM need_production_forecasts LIMIT 0")
             .execute(&self.pool)
             .await?;
         Ok(())

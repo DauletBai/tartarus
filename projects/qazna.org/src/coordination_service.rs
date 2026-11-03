@@ -211,7 +211,7 @@ impl Ledger {
                 .await?;
             id
         };
-        sqlx::query("INSERT INTO coordination_results(job_id,engine,proposal,draft_id,changed) VALUES ($1,'ordered-planner-v1',$2,$3,$4)")
+        sqlx::query("INSERT INTO coordination_results(job_id,engine,proposal,draft_id,changed) VALUES ($1,'ordered-planner-v2',$2,$3,$4)")
             .bind(claim.job).bind(serde_json::json!(proposal)).bind(draft).bind(reusable.is_none()).execute(&mut *tx).await?;
         let result = result_in(&mut tx, claim.job).await?;
         tx.commit().await?;

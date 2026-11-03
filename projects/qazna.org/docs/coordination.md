@@ -2,7 +2,7 @@
 
 The author's direction of 2 November 2026 adds a coordination layer inspired by the nervous system: observe changes, calculate feasible responses, present plans and learn from recorded outcomes. The approved first operating mode is advisory: **analysis and plan creation are automatic; applying a plan requires an operator command**. A model does not decide rights, create money or replace a participant's autonomy.
 
-Version 0.8.0 implements durable coordination and an opt-in AI test adapter. The calculation engine is explicitly `ordered-planner-v1`, the existing exact Rust algorithm. It is not a trained AI model or a global optimizer. The language model reviews its results separately.
+Version 0.8.0 implements durable coordination and an opt-in AI test adapter. Since v0.9, the calculation engine is explicitly `ordered-planner-v2`, the existing exact Rust algorithm. It is not a trained AI model or a global optimizer. The language model reviews its results separately.
 
 ## Layers and feedback
 
@@ -81,10 +81,16 @@ python3 scripts/ai_review.py --job CALCULATION_UUID \
   --output .local/ai/review-2.json --save
 ```
 
-The API mode requires `QAZNA_OPERATOR_TOKEN` in the parent process. That token and `DATABASE_URL` are not forwarded to Codex. The CLI receives only a minimized snapshot, runs in an empty temporary directory with a read-only sandbox and unnecessary capabilities disabled, and must return a completed structured response without tool activity. The adapter never calls a draft application route; it can only read a calculation and optionally append a review through the fixed API paths.
+The API mode requires `QAZNA_REVIEW_TOKEN` in the parent process. That token and `DATABASE_URL` are not forwarded to Codex. The CLI receives only a minimized snapshot, runs in an empty temporary directory with a read-only sandbox and unnecessary capabilities disabled, and must return a completed structured response without tool activity. The adapter never calls a draft application route; it can only read a calculation and optionally append a review through the fixed API paths.
 
 The adapter was checked with Codex CLI `0.164.0-alpha.11.1`. That version emits an exact diagnostic confirming the deliberately disabled Code Mode execution host. Only this specific notice is tolerated alongside a completed text response; other error items and all tool items are rejected. CLI updates require rerunning the adapter tests. Supply `--model` to test a specific available model. If the CLI does not identify its resolved model, the record honestly uses `codex-default`; it is not a verified immutable model revision.
 
 The offline test suite never calls the model. Three accepted live checks on 2 November covered synthetic shortages, a malicious instruction embedded in a unit label, and the calculation exported by the actual PostgreSQL/HTTP smoke test. Their outputs preserved operator approval and cited the supplied quantities. These are smoke/adversarial examples, not proof that all prompts are safe. Local input/output artifacts remain ignored by Git.
 
 For a future distributed application, [Sign in with ChatGPT](https://developers.openai.com/siwc/token-sharing-open-source) provides an explicit app authorization flow for eligible locally hosted/open-source usage. A production model connection, deployment entitlement, identity design and usage budget still need separate implementation. The author's subscription is not an assumed shared production service.
+
+## Machine capabilities and feedback (v0.9)
+
+Configure distinct `QAZNA_OPERATOR_TOKEN`, optional `QAZNA_OBSERVER_TOKEN` and optional `QAZNA_REVIEW_TOKEN`, each at least 32 printable ASCII bytes. Duplicate or invalid configured tokens prevent startup. Observer access is limited to `GET /v1/system/status`; reviewer access is limited to `GET /v1/coordination/results/{id}` and `GET/POST /v1/coordination/results/{id}/reviews`. All other private routes require the operator token. The model adapter requires the reviewer token in API mode and never falls back to the operator token. Tokens do not implement resident identity or ownership.
+
+`GET /v1/system/status` uses one repeatable-read transaction with a three-second SQL statement deadline. It reports exact string-valued ledger/stock/capacity/need invariant counts, needs grouped by period/category/unit, queue counts and oldest age, physical evidence limitations and UTC observation time. Alerts include invariant violations, failed calculations, expired leases and a backlog older than five seconds (an experimental diagnostic threshold, not a service-level promise). Readiness checks require migration 0009. A healthy invariant snapshot does not mean physical claims are true.

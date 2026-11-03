@@ -35,7 +35,7 @@ impl Fixture {
     }
 
     async fn new_at(legacy: bool) -> Self {
-        Self::new_with_migrations(if legacy { 1 } else { 8 }).await
+        Self::new_with_migrations(if legacy { 1 } else { 9 }).await
     }
 
     async fn new_with_migrations(count: usize) -> Self {
@@ -63,7 +63,7 @@ impl Fixture {
             .connect(&url)
             .await
             .unwrap();
-        if count < 8 {
+        if count < 9 {
             let path = std::env::temp_dir().join(format!("qazna-migrations-{}", Uuid::new_v4()));
             std::fs::create_dir(&path).unwrap();
             for (name, contents) in [
@@ -94,6 +94,10 @@ impl Fixture {
                 (
                     "0007_planning_drafts.sql",
                     include_str!("../migrations/0007_planning_drafts.sql"),
+                ),
+                (
+                    "0008_coordination.sql",
+                    include_str!("../migrations/0008_coordination.sql"),
                 ),
             ]
             .into_iter()
@@ -368,4 +372,74 @@ async fn http_authorization_validation_and_transfer() {
     let receipt: Receipt = serde_json::from_slice(&body).unwrap();
     assert_eq!(receipt.transfer.amount.units(), 100);
     assert_eq!(f.balance(f.resident).await, "100");
+}
+
+#[tokio::test]
+#[ignore = "requires isolated PostgreSQL; use scripts/check.py"]
+async fn scoped_machine_credentials_and_consistent_telemetry() {
+    let f = Fixture::new().await;
+    let op = "operator-credential-32-characters-minimum";
+    let obs = "observer-credential-32-characters-minimum";
+    let rev = "reviewer-credential-32-characters-minimum";
+    assert!(api::AccessTokens::new(op.into(), Some(op.into()), None).is_err());
+    assert!(api::AccessTokens::new("short".into(), None, None).is_err());
+    let app = api::router_with_access(
+        f.ledger.clone(),
+        api::AccessTokens::new(op.into(), Some(obs.into()), Some(rev.into())).unwrap(),
+    );
+    for (token, method, path, expected) in [
+        (obs, "GET", "/v1/system/status".to_string(), 200),
+        (obs, "GET", format!("/v1/accounts/{}", f.resident), 403),
+        (obs, "POST", "/v1/transfers".into(), 403),
+        (rev, "POST", "/v1/transfers".into(), 403),
+        (
+            rev,
+            "POST",
+            format!("/v1/planning/drafts/{}/apply", Uuid::new_v4()),
+            403,
+        ),
+        (
+            rev,
+            "GET",
+            format!("/v1/coordination/results/{}", Uuid::new_v4()),
+            404,
+        ),
+        ("wrong", "GET", "/v1/system/status".into(), 401),
+    ] {
+        let response = app
+            .clone()
+            .oneshot(
+                Request::builder()
+                    .method(method)
+                    .uri(path)
+                    .header("authorization", format!("Bearer {token}"))
+                    .body(Body::empty())
+                    .unwrap(),
+            )
+            .await
+            .unwrap();
+        assert_eq!(response.status().as_u16(), expected);
+    }
+    let status = f.ledger.system_status().await.unwrap();
+    assert_eq!(status["invariants_passed"], true);
+    assert_eq!(status["invariants"]["ledger_net"], "0");
+    // Exercise the independent detector against corruption by a database owner.
+    // This privileged fault injection is confined to this disposable test schema.
+    sqlx::query("ALTER TABLE postings DISABLE TRIGGER ALL")
+        .execute(&f.pool)
+        .await
+        .unwrap();
+    sqlx::query("UPDATE postings SET delta=delta+1 WHERE account_id=$1")
+        .bind(f.treasury)
+        .execute(&f.pool)
+        .await
+        .unwrap();
+    sqlx::query("ALTER TABLE postings ENABLE TRIGGER ALL")
+        .execute(&f.pool)
+        .await
+        .unwrap();
+    let status = f.ledger.system_status().await.unwrap();
+    assert_eq!(status["invariants_passed"], false);
+    assert_eq!(status["invariants"]["unbalanced_transactions"], "1");
+    assert_eq!(status["alerts"][0], "invariant_violation");
 }

@@ -87,7 +87,7 @@ def check_restart(root: Path, database_url: str):
                 assert call(f"/v1/coordination/monitors/{monitor_id}")["latest"] is None
                 raw = subprocess.check_output([str(binary), "coordinate-once"], cwd=root, env=env)
                 calculation = json.loads(raw)
-                assert calculation["engine"] == "ordered-planner-v1"
+                assert calculation["engine"] == "ordered-planner-v2"
                 assert call(f"/v1/coordination/results/{calculation['job']}") == calculation
                 assert call(f"/v1/planning/drafts/{calculation['draft']}")["state"] == "pending"
                 assert call(f"/v1/resources/{output_resource}")["available"] == "1"

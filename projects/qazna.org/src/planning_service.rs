@@ -193,6 +193,8 @@ pub(crate) async fn propose_in(
             uncovered: need.uncovered.clone(),
             stock_selected: "0".into(),
             expected_from_production: "0".into(),
+            committed_production: "0".into(),
+            forecast_excess: "0".into(),
             residual: String::new(),
             stock: Vec::new(),
             production: Vec::new(),
@@ -234,6 +236,12 @@ pub(crate) async fn propose_in(
             }
         }
         line.stock_selected = selected.to_string();
+        let committed: String = sqlx::query_scalar("SELECT COALESCE(sum(quantity),0)::text FROM need_production_forecasts WHERE need_id=$1")
+            .bind(need.id).fetch_one(&mut **tx).await?;
+        let committed = integer(&committed)?;
+        line.committed_production = committed.to_string();
+        line.forecast_excess = (committed - remaining).max(0).to_string();
+        remaining = (remaining - committed).max(0);
         let mut forecast = 0i128;
         for option in &options.production {
             let recipe = recipe_in(tx, option.recipe).await?;
@@ -313,7 +321,7 @@ pub(crate) async fn propose_in(
         .collect();
     Ok(ProvisioningProposal {
         advisory: true,
-        policy: "listed_need_order_stock_then_production".into(),
+        policy: "listed_need_order_stock_then_committed_then_production_v2".into(),
         observed_at,
         period: request.period,
         basis: request.basis,

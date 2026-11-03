@@ -10,7 +10,7 @@ Protect resident autonomy and privacy, exact accounting, physical inventory, dec
 | --- | --- | --- |
 | Invented quantity or entity | Each structured finding cites a saved nonzero signal, exact quantity and known subject; duplicate or unknown references are rejected by Rust and the adapter | Free-text commentary can still be mistaken or omit a risk |
 | Hidden instruction in source data | Operator basis text and command keys are removed; remaining JSON is framed as data; no model tools are required | Prompt framing alone is not a security boundary |
-| Model attempts an action | Adapter has fixed read/review API paths, no apply operation, no DB credentials in the child and no supplied operator token | The operator API still has broad privileges; production needs distinct service roles |
+| Model attempts an action | Adapter has fixed read/review API paths, no apply operation, no DB credentials in the child and no supplied operator token | The reviewer token cannot mutate economics; resident identities and runtime DB roles remain unfinished |
 | Command, browser or connector use | Read-only temporary working directory, user config ignored, shell/browser/apps/plugins/multi-agent execution capabilities disabled; tool events rejected | The local CLI and its implementation remain trusted software, not a hardware isolation boundary |
 | False claim that a plan was applied | Reports require `requires_operator_approval: true`; extra action fields are rejected; actual state comes from immutable draft/action records | Operator UI must clearly label commentary and show authoritative state separately |
 | Stale or duplicate reasoning | Reviews attach to a specific immutable calculation; drafts are revalidated under locks before operator application | No automatic expiry interval or global revision clock is implied |
@@ -47,3 +47,9 @@ OpenAI's [agent safety guidance](https://developers.openai.com/api/docs/guides/a
 Still required: OIDC and resident/operator/auditor ownership checks; a review-only service credential; separate runtime/migration DB roles; protected transport; per-scope queue quotas/coalescing and retention; model-call budgets; backup/restore and disaster exercises; dependency and supply-chain review; signed/reproducible releases; monitoring and incident response; independent review of prompt-injection and data-exfiltration controls; and privacy rules for real participant data.
 
 The current local operator token and a database owner can bypass application-level policy. These are explicit deployment limitations, not protections supplied by the organism analogy. Stop a coordination monitor to prevent further calculations for that scope; stopping it does not undo already applied economic actions. Existing cancellation routes retain their audit trails.
+
+## Operational drill evidence (v0.9)
+
+The observer credential cannot read accounts or issue commands. The reviewer credential can only read saved calculations/reviews and append validated reviews. The API-mode adapter uses this reviewer credential, with no operator-token fallback. The [exercise runner](exercises.md) tries privilege escalation and fabricated model facts against the actual HTTP API. Its report escapes all displayed values and never executes model-generated markup.
+
+Independent monitoring detects deliberately injected ledger corruption in an isolated test. A separate drill deliberately accepts a trusted false physical declaration and labels it a known gap. Neither success at numerical checks nor model agreement supplies independent physical evidence. See the [organism audit](organism-audit.md) for the remaining controls.

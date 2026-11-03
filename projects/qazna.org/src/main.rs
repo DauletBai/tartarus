@@ -68,6 +68,11 @@ async fn main() -> Result<(), Box<dyn std::error::Error>> {
     if token.len() < 32 || !token.bytes().all(|b| b.is_ascii_graphic()) {
         return Err("operator token must contain at least 32 printable ASCII bytes".into());
     }
+    let tokens = api::AccessTokens::new(
+        token,
+        std::env::var("QAZNA_OBSERVER_TOKEN").ok(),
+        std::env::var("QAZNA_REVIEW_TOKEN").ok(),
+    )?;
     let address: SocketAddr = std::env::var("QAZNA_BIND")
         .unwrap_or_else(|_| "127.0.0.1:8080".into())
         .parse()?;
@@ -79,7 +84,7 @@ async fn main() -> Result<(), Box<dyn std::error::Error>> {
     }
     let listener = tokio::net::TcpListener::bind(address).await?;
     tracing::info!(%address, "Qazna listening");
-    axum::serve(listener, api::router(ledger, token))
+    axum::serve(listener, api::router_with_access(ledger, tokens))
         .with_graceful_shutdown(async {
             let _ = tokio::signal::ctrl_c().await;
         })

@@ -82,6 +82,10 @@ pub struct NeedPlan {
     pub uncovered: String,
     pub stock_selected: String,
     pub expected_from_production: String,
+    #[serde(default = "zero")]
+    pub committed_production: String,
+    #[serde(default = "zero")]
+    pub forecast_excess: String,
     pub residual: String,
     pub stock: Vec<StockSuggestion>,
     pub production: Vec<ProcessSuggestion>,
@@ -103,4 +107,8 @@ pub struct ProvisioningProposal {
     pub basis: String,
     pub needs: Vec<NeedPlan>,
     pub accounting: Vec<AccountingGap>,
+}
+
+fn zero() -> String {
+    "0".into()
 }

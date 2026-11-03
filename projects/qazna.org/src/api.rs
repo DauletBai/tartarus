@@ -23,7 +23,53 @@ use uuid::Uuid;
 /// A local operator credential, not end-user authorization. Keep behind loopback
 /// until OIDC, role and ownership checks are implemented.
 pub fn router(ledger: Ledger, token: String) -> Router {
+    router_with_access(
+        ledger,
+        AccessTokens::new(token, None, None).expect("valid operator token"),
+    )
+}
+
+#[derive(Clone)]
+pub struct AccessTokens {
+    operator: String,
+    observer: Option<String>,
+    reviewer: Option<String>,
+}
+impl AccessTokens {
+    pub fn new(
+        operator: String,
+        observer: Option<String>,
+        reviewer: Option<String>,
+    ) -> Result<Self, &'static str> {
+        let values: Vec<&str> = std::iter::once(operator.as_str())
+            .chain(observer.as_deref())
+            .chain(reviewer.as_deref())
+            .collect();
+        if values
+            .iter()
+            .any(|t| t.len() < 32 || !t.bytes().all(|b| b.is_ascii_graphic()))
+        {
+            return Err("tokens must contain at least 32 printable ASCII bytes");
+        }
+        for (i, a) in values.iter().enumerate() {
+            if values[i + 1..]
+                .iter()
+                .any(|b| constant_time_equal(a.as_bytes(), b.as_bytes()))
+            {
+                return Err("operator, observer and reviewer tokens must be distinct");
+            }
+        }
+        Ok(Self {
+            operator,
+            observer,
+            reviewer,
+        })
+    }
+}
+
+pub fn router_with_access(ledger: Ledger, tokens: AccessTokens) -> Router {
     let private = Router::new()
+        .route("/v1/system/status", get(system_status))
         .route("/v1/accounts", post(create_account))
         .route("/v1/accounts/{id}", get(account))
         .route("/v1/transfers", post(transfer))
@@ -79,7 +125,7 @@ pub fn router(ledger: Ledger, token: String) -> Router {
             "/v1/coordination/results/{id}/reviews",
             get(ai_reviews).post(record_ai_review),
         )
-        .route_layer(middleware::from_fn_with_state(token, authorize));
+        .route_layer(middleware::from_fn_with_state(tokens, authorize));
     Router::new()
         .route(
             "/health/live",
@@ -91,21 +137,51 @@ pub fn router(ledger: Ledger, token: String) -> Router {
         .with_state(ledger)
 }
 
-async fn authorize(State(token): State<String>, request: Request, next: Next) -> Response {
-    let authorized = request
+async fn authorize(State(tokens): State<AccessTokens>, request: Request, next: Next) -> Response {
+    let supplied = request
         .headers()
         .get("authorization")
         .and_then(|v| v.to_str().ok())
-        .and_then(|v| v.strip_prefix("Bearer "))
-        .is_some_and(|v| constant_time_equal(v.as_bytes(), token.as_bytes()));
-    if !authorized {
+        .and_then(|v| v.strip_prefix("Bearer "));
+    let matches = |token: Option<&str>| {
+        supplied
+            .zip(token)
+            .is_some_and(|(a, b)| constant_time_equal(a.as_bytes(), b.as_bytes()))
+    };
+    let operator = matches(Some(&tokens.operator));
+    let observer = matches(tokens.observer.as_deref());
+    let reviewer = matches(tokens.reviewer.as_deref());
+    if !(operator || observer || reviewer) {
         return (
             StatusCode::UNAUTHORIZED,
-            Json(json!({"error": "unauthorized"})),
+            Json(json!({"error":"unauthorized"})),
         )
             .into_response();
     }
+    let path = request.uri().path();
+    let get = request.method() == axum::http::Method::GET;
+    let review_path = path.strip_prefix("/v1/coordination/results/");
+    let review_allowed = review_path.is_some_and(|p| {
+        let parts: Vec<_> = p.split('/').collect();
+        Uuid::parse_str(parts[0]).is_ok()
+            && ((parts.len() == 1 && get)
+                || (parts.len() == 2
+                    && parts[1] == "reviews"
+                    && (get || request.method() == axum::http::Method::POST)))
+    });
+    if !(operator
+        || (observer && get && path == "/v1/system/status")
+        || (reviewer && review_allowed))
+    {
+        return (StatusCode::FORBIDDEN, Json(json!({"error":"forbidden"}))).into_response();
+    }
     next.run(request).await
+}
+
+async fn system_status(
+    State(ledger): State<Ledger>,
+) -> Result<Json<serde_json::Value>, LedgerError> {
+    Ok(Json(ledger.system_status().await?))
 }
 
 fn constant_time_equal(a: &[u8], b: &[u8]) -> bool {

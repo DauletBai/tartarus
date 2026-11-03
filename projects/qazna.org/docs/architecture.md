@@ -48,15 +48,15 @@ Production planning locks its command key, capacity and input lots in UUID order
 
 ## Readiness boundary
 
-The service binds only to loopback and requires a local operator token. The token permits all operator operations and is not an end-user authorization model. Before an external pilot, implement OIDC, roles and account ownership, separate migration/runtime database roles, protected transport, load limits, observability, backup restoration tests and threat review.
+The service binds only to loopback and requires a local operator token. The token permits all operator operations and is not an end-user authorization model. Before an external pilot, implement OIDC, roles and account ownership, separate migration/runtime database roles, protected transport, load limits, production monitoring, backup restoration tests and threat review.
 
 The same technology stack does not imply immediate industrial readiness. Economic hypotheses and infrastructure guarantees are verified separately. Operator declarations and production confirmations are recorded evidence claims, not independent verification or automatic permission to issue money.
 
 ## Next work
 
-1. Reconcile outstanding production forecasts and evaluate global optimization beyond the current ordered greedy assessment.
+1. Establish independent physical evidence and forecast attribution beyond applied, need-linked drafts; evaluate global optimization.
 2. Explicit corrections and reversals, with links to original events and repeat-reversal limits.
-3. Integrate a versioned Python optimizer, worker service roles, queue budgets and evaluation-driven model review.
+3. Integrate a versioned Python optimizer, queue budgets and evaluation-driven model review.
 4. User roles and resident, operator and auditor interfaces.
 5. Independent production verification, logistics and backup recovery exercises.
 
@@ -75,3 +75,7 @@ Database constraints verify complete action attribution and prohibit retrospecti
 Migration 0008 adds a transactional command outbox, immutable monitor scopes, recoverable calculation jobs and saved results. The background worker produces draft proposals using `ordered-planner-v1`, without applying them. Leases fence stale workers; changed calculations generate drafts and identical results reuse their previous draft. This is bounded coordination, not a global optimizer or a trained economic model.
 
 An optional one-shot Python adapter runs Codex with the author's ChatGPT authentication for synthetic live tests. It minimizes input and accepts only completed, tool-free structured commentary. Rust independently checks each cited quantity/subject before appending a report. Model prose remains untrusted and does not alter economic state. See [coordination](coordination.md) and [AI safety](ai-safety.md).
+
+## Operational feedback (v0.9)
+
+Migration 0009 exposes active need-linked commitments and permits versioned planner v2 results without changing historical migrations. Current calculations use v2; historical v1 proposals remain immutable and require a fresh review before application. Scoped machine tokens separate aggregate observation and review from operator action. Consistent status queries and [synthetic exercises](exercises.md) make failures and known evidence gaps visible. The comprehensive [organism audit](organism-audit.md) separates implemented responsibilities from missing infrastructure and governance.

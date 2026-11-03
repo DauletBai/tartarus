@@ -304,20 +304,55 @@ async fn ai_report_cannot_invent_evidence_bypass_approval_or_apply_actions() {
 #[ignore = "requires isolated PostgreSQL; use scripts/check.py"]
 async fn migration_preserves_reviewed_drafts_and_does_not_backfill_old_events() {
     let f = Fixture::new_with_migrations(7).await;
-    let (_, _, request) = scenario(&f, true).await;
-    let draft = f
-        .ledger
-        .create_planning_draft("draft", request)
+    let (c, stock, request) = scenario(&f, true).await;
+    // Historical v1 JSON can be read after upgrade, but requires a fresh review.
+    let process = plan(&c, "1");
+    let assessment = f.ledger.assess_production(process.clone()).await.unwrap();
+    let old = serde_json::json!({"advisory":true,"policy":"listed_need_order_stock_then_production",
+        "observed_at":"2026-11-02T00:00:00Z","period":request.plan.period,"basis":request.plan.basis,
+        "needs":[{"need":request.plan.needs[0].need,"category":"food","unit":"meal","uncovered":"5","stock_selected":"2","expected_from_production":"3","residual":"0",
+          "stock":[{"resource":stock,"quantity":"2","required_measure":"20"}],
+          "production":[{"request":process,"expected_for_need":"3","surplus":"0"}],
+          "evaluations":[{"recipe":c.recipe.id,"capacity":c.capacity,"assessment":assessment}]}],
+        "accounting":[{"resident":f.resident,"available":"100","required_for_selected_stock":"20","shortage":"0"}]});
+    sqlx::query("INSERT INTO planning_drafts(id,request,proposal) VALUES ($1,$2,$3)")
+        .bind(request.id)
+        .bind(serde_json::json!(request.plan))
+        .bind(&old)
+        .execute(&f.pool)
         .await
         .unwrap();
     MIGRATOR.run(&f.pool).await.unwrap();
     assert_eq!(count(&f, "coordination_events").await, 0);
-    assert_eq!(
-        serde_json::json!(draft),
-        serde_json::json!(f.ledger.planning_draft(draft.id).await.unwrap())
-    );
+    let saved = f.ledger.planning_draft(request.id).await.unwrap();
+    assert_eq!(saved.proposal.needs[0].committed_production, "0");
+    assert_eq!(saved.proposal.needs[0].forecast_excess, "0");
+    let raw: serde_json::Value =
+        sqlx::query_scalar("SELECT proposal FROM planning_drafts WHERE id=$1")
+            .bind(request.id)
+            .fetch_one(&f.pool)
+            .await
+            .unwrap();
+    assert_eq!(raw, old);
+    assert!(matches!(
+        f.ledger
+            .apply_planning_draft("old-apply", request.id, reason())
+            .await,
+        Err(LedgerError::DraftStale)
+    ));
+    let fresh = f
+        .ledger
+        .create_planning_draft(
+            "fresh",
+            qazna::drafts::DraftRequest {
+                id: Uuid::new_v4(),
+                plan: request.plan,
+            },
+        )
+        .await
+        .unwrap();
     f.ledger
-        .apply_planning_draft("apply", draft.id, reason())
+        .apply_planning_draft("apply", fresh.id, reason())
         .await
         .unwrap();
     assert_eq!(count(&f, "coordination_events").await, 1);

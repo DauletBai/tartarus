@@ -15,3 +15,4 @@ mod provisioning_service;
 
 pub mod coordination;
 mod coordination_service;
+mod observability;

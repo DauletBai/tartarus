@@ -1,5 +1,15 @@
 # Qazna changelog
 
+## 0.9.0 — 3 November 2026
+
+- Reconcile active need-linked production commitments before proposing new cycles, without counting forecasts as receipt.
+- Add migration 0009 and planner v2; retain historical proposals and require fresh review of pending v1 plans.
+- Separate operator, aggregate observer and AI reviewer credentials; remove operator-token use from the review adapter.
+- Add consistent invariant, dimensional needs and coordination queue telemetry with explicit physical evidence limitations.
+- Add lightweight synthetic actors, concurrent abuse attempts, production loss and worker outage/recovery exercises, JSONL audit records and a live/offline HTML report.
+- Document an organism responsibility audit, including the demonstrated gap between trusted declarations and physical truth.
+- Extend required checks to 81 PostgreSQL cases, 11 offline AI tests and two accelerated HTTP exercise seeds.
+
 ## 0.8.0 — 2 November 2026
 
 - Add transactional command events, immutable monitor scopes, durable calculation jobs and background/one-shot worker commands.

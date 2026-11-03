@@ -205,6 +205,16 @@ async fn lock_observations(tx: &mut Tx<'_>, request: &PlanningRequest) -> Result
             .bind(&needs)
             .fetch_all(&mut **tx)
             .await?;
+    // Terminal production operations also lock capacity. Include outstanding
+    // commitments even when a new request omits their production candidates.
+    capacities.extend(
+        sqlx::query_scalar::<_, Uuid>(
+            "SELECT DISTINCT capacity_id FROM need_production_forecasts WHERE need_id=ANY($1)",
+        )
+        .bind(&needs)
+        .fetch_all(&mut **tx)
+        .await?,
+    );
     sqlx::query("SELECT id FROM production_capacities WHERE id=ANY($1) ORDER BY id FOR UPDATE")
         .bind(capacities.into_iter().collect::<Vec<_>>())
         .fetch_all(&mut **tx)

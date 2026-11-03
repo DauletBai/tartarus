@@ -12,6 +12,7 @@ import sys
 import tempfile
 from urllib.parse import urlencode
 from smoke import check_restart
+from exercise import run_exercise
 
 ROOT = Path(__file__).resolve().parents[1]
 
@@ -53,6 +54,13 @@ def main():
             run([str(ROOT / "target/debug/qazna"), "migrate"], env=env)
             run([pg("psql"), "-h", str(sock), "-U", "qazna", "-d", "qazna_demo", "-v", "ON_ERROR_STOP=1", "-f", "fixtures/demo.sql"], stdout=subprocess.DEVNULL)
             check_restart(ROOT, env["DATABASE_URL"])
+            for seed in (7, 19):
+                database = f"exercise_{seed}_demo"
+                run([pg("createdb"), "-h", str(sock), "-U", "qazna", database])
+                env["DATABASE_URL"] = f"postgresql://qazna@localhost/{database}?" + urlencode({"host": str(sock)})
+                run([str(ROOT / "target/debug/qazna"), "migrate"], env=env)
+                run([pg("psql"), "-h", str(sock), "-U", "qazna", "-d", database, "-v", "ON_ERROR_STOP=1", "-f", "fixtures/demo.sql"], stdout=subprocess.DEVNULL)
+                run_exercise(env["DATABASE_URL"], root / f"exercise-{seed}", seed, .02, 20)
         except subprocess.CalledProcessError:
             log = root / "postgres.log"
             if log.exists():

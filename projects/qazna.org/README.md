@@ -6,6 +6,10 @@ The project lives in `projects/qazna.org/` in [Tartarus](https://github.com/Daul
 
 ## Implemented capabilities
 
+- Observe consistent invariant/queue snapshots with a limited observer credential.
+- Exercise synthetic residents, production losses, abuse and worker outages with timestamped logs and live/offline reports.
+- Avoid duplicate planning against already committed, need-linked production.
+
 - Recalculate monitored needs after committed changes through a durable worker; keep application under operator control.
 - Attach evidence-checked AI commentary through an opt-in ChatGPT-authenticated test adapter.
 - Apply explicit, immutable revisions of needs norms without rewriting existing needs.
@@ -22,7 +26,7 @@ The project lives in `projects/qazna.org/` in [Tartarus](https://github.com/Daul
 - Preserve idempotency, transaction history and earlier database versions through additive migrations.
 - Exercise the local operator HTTP API against real PostgreSQL, including process restarts.
 
-Version 0.8.0 adds durable coordination, recoverable calculation jobs and an advisory AI test adapter. The Rust planner calculates exact proposals; model commentary never applies them. It does not independently verify reports, authorize issuance or automatically count production as a resident's receipt. Accounting norms and capacity declarations remain explicit experimental inputs. Global optimization, reconciliation of outstanding production forecasts, approved monetary policy, user roles and the web interface are still pending. This is a local research MVP, not a production-ready national monetary system.
+Version 0.9.0 adds active production forecast reconciliation, scoped machine credentials, consistent operational telemetry and synthetic live exercises. The Rust planner calculates exact proposals; model commentary never applies them. It does not independently verify reports, authorize issuance or automatically count production as a resident's receipt. Accounting norms and capacity declarations remain explicit experimental inputs. Global optimization, independent physical attestations, approved monetary policy, resident identity/ownership and the product web interface are still pending. This is a local research MVP, not a production-ready national monetary system.
 
 ## Run the checks
 
@@ -38,6 +42,9 @@ On Linux, set `PG_BIN` to the installed PostgreSQL directory, for example `/usr/
 
 ## Documentation
 
+- [Organism audit and remaining gaps](docs/organism-audit.md)
+- [Live synthetic exercises](docs/exercises.md)
+- [Version 0.9 verification evidence](docs/verification-0.9.md)
 - [Organism-inspired principles](docs/organism.md)
 - [Architecture and readiness boundaries](docs/architecture.md)
 - [Allocations and provisioning](docs/provisioning.md)

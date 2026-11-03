@@ -448,6 +448,7 @@ async fn upgrade_from_norms_preserves_existing_needs_and_holds() {
         .plan_production("old", plan(&c, "1"))
         .await
         .unwrap();
+    MIGRATOR.run(&f.pool).await.unwrap();
     let before = f
         .ledger
         .propose_provisioning(request.plan.clone())
@@ -593,4 +594,102 @@ async fn batch_and_direct_reservation_race_without_partial_batch_or_deadlock() {
         }
         other => panic!("unexpected race result: {other:?}"),
     }
+}
+
+#[tokio::test]
+#[ignore = "requires isolated PostgreSQL; use scripts/check.py"]
+async fn active_forecasts_prevent_duplicate_planning_and_cancel_reopens_gap() {
+    let f = Fixture::new().await;
+    let (_, _, request) = scenario(&f, true).await;
+    let draft = f
+        .ledger
+        .create_planning_draft("d", request.clone())
+        .await
+        .unwrap();
+    let applied = f
+        .ledger
+        .apply_planning_draft("a", draft.id, reason())
+        .await
+        .unwrap();
+    let next = f
+        .ledger
+        .propose_provisioning(request.plan.clone())
+        .await
+        .unwrap();
+    assert_eq!(next.needs[0].uncovered, "3");
+    assert_eq!(next.needs[0].committed_production, "3");
+    assert_eq!(next.needs[0].expected_from_production, "0");
+    assert_eq!(next.needs[0].residual, "0");
+    assert!(next.needs[0].production.is_empty());
+    let plan = applied
+        .actions
+        .iter()
+        .find_map(|a| a.production_plan)
+        .unwrap();
+    f.ledger
+        .cancel_production("c", plan, reason())
+        .await
+        .unwrap();
+    let next = f.ledger.propose_provisioning(request.plan).await.unwrap();
+    assert_eq!(next.needs[0].committed_production, "0");
+    assert_eq!(next.needs[0].expected_from_production, "3");
+}
+
+#[tokio::test]
+#[ignore = "requires isolated PostgreSQL; use scripts/check.py"]
+async fn forecast_excess_is_visible_and_completion_requires_actual_receipt() {
+    let f = Fixture::new().await;
+    let (c, _, request) = scenario(&f, true).await;
+    let draft = f
+        .ledger
+        .create_planning_draft("d", request.clone())
+        .await
+        .unwrap();
+    let applied = f
+        .ledger
+        .apply_planning_draft("a", draft.id, reason())
+        .await
+        .unwrap();
+    let plan = applied
+        .actions
+        .iter()
+        .find_map(|a| a.production_plan)
+        .unwrap();
+    let extra = meal_stock(&f, &c, "3", "1").await;
+    let mut plan_request = request.plan;
+    plan_request.needs[0].resources.push(extra);
+    // Include a request without any new production candidate: its outstanding
+    // commitments must still be observed and locked before application.
+    plan_request.needs[0].production.clear();
+    let next = f
+        .ledger
+        .create_planning_draft(
+            "next",
+            DraftRequest {
+                id: Uuid::new_v4(),
+                plan: plan_request.clone(),
+            },
+        )
+        .await
+        .unwrap();
+    assert_eq!(next.proposal.needs[0].committed_production, "3");
+    assert_eq!(next.proposal.needs[0].forecast_excess, "3");
+    let producer = executor(&f, c.unit).await;
+    let result = f
+        .ledger
+        .complete_production("finish", plan, completion(producer, "1"))
+        .await
+        .unwrap();
+    assert_eq!(result.output_shortfall, "2");
+    assert!(matches!(
+        f.ledger
+            .apply_planning_draft("stale", next.id, reason())
+            .await,
+        Err(LedgerError::DraftStale)
+    ));
+    let next = f.ledger.propose_provisioning(plan_request).await.unwrap();
+    assert_eq!(next.needs[0].committed_production, "0");
+    let n = f.ledger.need(next.needs[0].need).await.unwrap();
+    assert_eq!(n.received, "0");
+    assert_eq!(n.unmet, "5");
 }
