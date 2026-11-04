@@ -69,3 +69,5 @@ When disk space is constrained, remove only regenerable project build caches and
 ## Operational exercises
 
 The required check runner also executes two accelerated synthetic actor scenarios (seeds 7 and 19). For a wall-clock run, dashboard and persistent local report, follow [synthetic exercises](exercises.md). The observer/reviewer credentials and aggregate status contract are described in [coordination](coordination.md).
+
+Version 0.10 adds the [attestation protocol](evidence.md) and a real HTTP strict-evidence exercise to the required check runner. The v0.9 counts above describe the prior milestone.

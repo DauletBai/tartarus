@@ -78,6 +78,11 @@ impl Ledger {
             .bind(&ids)
             .fetch_all(&mut *tx)
             .await?;
+        for resource in &ids {
+            if !crate::evidence::usable(&mut tx, *resource).await? {
+                return Err(LedgerError::EvidenceRequired);
+            }
+        }
         for loss in &request.losses {
             let quantity: Option<i64> = sqlx::query_scalar(
                 "SELECT quantity FROM production_plan_inputs WHERE plan_id=$1 AND slot=$2",

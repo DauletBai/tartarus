@@ -16,9 +16,11 @@ async fn main() -> Result<(), Box<dyn std::error::Error>> {
     let command = std::env::args().nth(1).unwrap_or_else(|| "serve".into());
     if !matches!(
         command.as_str(),
-        "serve" | "migrate" | "coordinate" | "coordinate-once"
+        "serve" | "migrate" | "coordinate" | "coordinate-once" | "enforce-evidence"
     ) {
-        return Err("usage: qazna [serve|migrate|coordinate|coordinate-once]".into());
+        return Err(
+            "usage: qazna [serve|migrate|coordinate|coordinate-once|enforce-evidence]".into(),
+        );
     }
     let url = std::env::var("DATABASE_URL").map_err(|_| "DATABASE_URL is required")?;
     let pool = PgPoolOptions::new()
@@ -34,6 +36,14 @@ async fn main() -> Result<(), Box<dyn std::error::Error>> {
     }
     let ledger = Ledger::new(pool.clone());
     ledger.ready().await?;
+    if command == "enforce-evidence" {
+        let basis = std::env::var("QAZNA_EVIDENCE_BASIS")
+            .map_err(|_| "QAZNA_EVIDENCE_BASIS is required")?;
+        ledger.enable_evidence(&basis).await?;
+        tracing::info!("evidence enforcement enabled; independent attestations now required");
+        pool.close().await;
+        return Ok(());
+    }
     if command == "coordinate-once" {
         println!(
             "{}",
@@ -73,6 +83,11 @@ async fn main() -> Result<(), Box<dyn std::error::Error>> {
         std::env::var("QAZNA_OBSERVER_TOKEN").ok(),
         std::env::var("QAZNA_REVIEW_TOKEN").ok(),
     )?;
+    let attestors: Vec<api::AttestorCredential> = serde_json::from_str(
+        &std::env::var("QAZNA_ATTESTORS_JSON").unwrap_or_else(|_| "[]".into()),
+    )
+    .map_err(|_| "invalid QAZNA_ATTESTORS_JSON")?;
+    let tokens = tokens.with_attestors(attestors)?;
     let address: SocketAddr = std::env::var("QAZNA_BIND")
         .unwrap_or_else(|_| "127.0.0.1:8080".into())
         .parse()?;

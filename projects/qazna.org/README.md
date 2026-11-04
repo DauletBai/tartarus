@@ -4,6 +4,16 @@ Qazna is a research system for meeting human needs, based on the Tenge model des
 
 The project lives in `projects/qazna.org/` in [Tartarus](https://github.com/DauletBai/tartarus), alongside the book and research archive. The MVP and subsequent production development share **Rust + Tokio + Axum + SQLx + PostgreSQL**. Python/HiGHS is planned for optimization; React/TypeScript is planned for the interface. Project documentation, code comments, examples and contributor materials are maintained in English for an international community.
 
+## Book and implementation
+
+*Tartar and I* by Daulet Baimurza is the author's Russian research essay on language, historical memory and the Tenge economic proposal. Chapter 26 introduces the organism-inspired provisioning idea; its appendices distinguish model assumptions from calculations. Qazna turns selected provisioning mechanisms into executable, testable software. Passing software tests does not establish the book's historical hypotheses or prove the full economic model.
+
+- [Read the Russian HTML edition](../../book/reader/index.html), with individual sections suitable for browser translation.
+- [Download the print PDF](https://media.githubusercontent.com/media/DauletBai/tartarus/codex/qazna-rust-provisioning/book/Tartar_i_Ya_print_6x9.pdf).
+- [Explore the book and research archive](https://github.com/DauletBai/tartarus).
+
+The active project is this directory in Tartarus. The separate [DauletBai/qazna.org](https://github.com/DauletBai/qazna.org) repository is archived earlier work. It is not the current runtime. The book's copyright is separate from the software and project documentation licenses.
+
 ## Implemented capabilities
 
 - Observe consistent invariant/queue snapshots with a limited observer credential.
@@ -26,7 +36,7 @@ The project lives in `projects/qazna.org/` in [Tartarus](https://github.com/Daul
 - Preserve idempotency, transaction history and earlier database versions through additive migrations.
 - Exercise the local operator HTTP API against real PostgreSQL, including process restarts.
 
-Version 0.9.0 adds active production forecast reconciliation, scoped machine credentials, consistent operational telemetry and synthetic live exercises. The Rust planner calculates exact proposals; model commentary never applies them. It does not independently verify reports, authorize issuance or automatically count production as a resident's receipt. Accounting norms and capacity declarations remain explicit experimental inputs. Global optimization, independent physical attestations, approved monetary policy, resident identity/ownership and the product web interface are still pending. This is a local research MVP, not a production-ready national monetary system.
+Version 0.10.0 adds an opt-in, durable attestation gate for resource use and delivery, with separate inspector/custodian/recipient credentials. The Rust planner calculates exact proposals; model commentary never applies them. It does not independently verify reports, authorize issuance or automatically count production as a resident's receipt. Accounting norms and capacity declarations remain explicit experimental inputs. Global optimization, independent physical attestations, approved monetary policy, resident identity/ownership and the product web interface are still pending. This is a local research MVP, not a production-ready national monetary system.
 
 ## Run the checks
 
@@ -43,6 +53,7 @@ On Linux, set `PG_BIN` to the installed PostgreSQL directory, for example `/usr/
 ## Documentation
 
 - [Organism audit and remaining gaps](docs/organism-audit.md)
+- [Independent resource and delivery attestations](docs/evidence.md)
 - [Live synthetic exercises](docs/exercises.md)
 - [Version 0.9 verification evidence](docs/verification-0.9.md)
 - [Organism-inspired principles](docs/organism.md)

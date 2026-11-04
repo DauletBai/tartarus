@@ -1253,3 +1253,102 @@ async fn upgrade_from_planning_preserves_active_plan_and_allows_completion() {
 
 #[path = "planning.rs"]
 mod planning;
+
+#[tokio::test]
+#[ignore = "requires isolated PostgreSQL; use scripts/check.py"]
+async fn strict_production_requires_attested_inputs_and_quarantines_new_output() {
+    use qazna::evidence::{PrincipalRequest, StatementRequest};
+    let f = Fixture::new().await;
+    let c = setup(&f, "20", "10", "20").await;
+    f.ledger
+        .enable_evidence("Independent production check")
+        .await
+        .unwrap();
+    let blocked = f
+        .ledger
+        .plan_production("blocked", plan(&c, "1"))
+        .await
+        .unwrap();
+    assert!(blocked.plan_id.is_none());
+    let mut actors = Vec::new();
+    for _ in 0..2 {
+        let account = Uuid::new_v4();
+        f.ledger
+            .create_account(NewAccount {
+                id: account,
+                kind: AccountKind::Resident,
+            })
+            .await
+            .unwrap();
+        let id = Uuid::new_v4();
+        f.ledger
+            .register_principal(
+                &id.to_string(),
+                PrincipalRequest {
+                    id,
+                    account,
+                    role: "inspector".into(),
+                    basis: "Synthetic witness".into(),
+                },
+            )
+            .await
+            .unwrap();
+        actors.push(id);
+        for (rid, q) in [(c.grain, "10"), (c.water, "20")] {
+            f.ledger
+                .record_evidence(
+                    &Uuid::new_v4().to_string(),
+                    id,
+                    "resource",
+                    rid,
+                    StatementRequest {
+                        id: Uuid::new_v4(),
+                        decision: "confirm".into(),
+                        quantity: amount(q),
+                        evidence_sha256: "a".repeat(64),
+                        basis: "Synthetic input observation".into(),
+                    },
+                )
+                .await
+                .unwrap();
+        }
+    }
+    let planned = f
+        .ledger
+        .plan_production("plan", plan(&c, "1"))
+        .await
+        .unwrap()
+        .plan_id
+        .unwrap();
+    let producer = executor(&f, c.unit).await;
+    let finished = f
+        .ledger
+        .complete_production("finish", planned, completion(producer, "2"))
+        .await
+        .unwrap();
+    let output = finished.output_resource.unwrap();
+    assert_eq!(f.ledger.resource(output).await.unwrap().available, "0");
+    for id in actors {
+        f.ledger
+            .record_evidence(
+                &Uuid::new_v4().to_string(),
+                id,
+                "resource",
+                output,
+                StatementRequest {
+                    id: Uuid::new_v4(),
+                    decision: "confirm".into(),
+                    quantity: amount("2"),
+                    evidence_sha256: "b".repeat(64),
+                    basis: "Synthetic output observation".into(),
+                },
+            )
+            .await
+            .unwrap();
+    }
+    assert_eq!(f.ledger.resource(output).await.unwrap().available, "2");
+    assert_eq!(
+        f.ledger.resource_provenance(output).await.unwrap().origin,
+        "production"
+    );
+}

@@ -166,6 +166,17 @@ impl Ledger {
             .bind(resource.id)
             .execute(&mut *tx)
             .await?;
+        if settle && crate::evidence::enforced(&mut tx).await? {
+            let verified: bool =
+                sqlx::query_scalar("SELECT resource_attested($1) AND delivery_attested($2)")
+                    .bind(resource.id)
+                    .bind(id)
+                    .fetch_one(&mut *tx)
+                    .await?;
+            if !verified {
+                return Err(LedgerError::EvidenceRequired);
+            }
+        }
         let transaction_id = if settle { Some(Uuid::new_v4()) } else { None };
         // Release the hold inside the same transaction as payment. Neither change
         // becomes visible alone; the deferred DB constraint matches both postings.
@@ -195,6 +206,7 @@ impl Ledger {
 pub(crate) async fn resource_in(tx: &mut Tx<'_>, id: Uuid) -> Result<Resource, LedgerError> {
     let row = sqlx::query("SELECT producer_id,category,unit,unit_measure::text,(initial_quantity-consumed)::text AS on_hand,reserved::text,(initial_quantity-consumed-reserved)::text AS available FROM resource_totals WHERE id = $1")
         .bind(id).fetch_optional(&mut **tx).await?.ok_or(LedgerError::ResourceNotFound)?;
+    let attested = crate::evidence::usable(tx, id).await?;
     Ok(Resource {
         id,
         producer: row.try_get("producer_id")?,
@@ -203,7 +215,11 @@ pub(crate) async fn resource_in(tx: &mut Tx<'_>, id: Uuid) -> Result<Resource, L
         unit_measure: row.try_get("unit_measure")?,
         on_hand: row.try_get("on_hand")?,
         reserved: row.try_get("reserved")?,
-        available: row.try_get("available")?,
+        available: if attested {
+            row.try_get("available")?
+        } else {
+            "0".into()
+        },
     })
 }
 

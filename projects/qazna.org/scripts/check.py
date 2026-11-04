@@ -13,6 +13,7 @@ import tempfile
 from urllib.parse import urlencode
 from smoke import check_restart
 from exercise import run_exercise
+from evidence_exercise import run_evidence_exercise
 
 ROOT = Path(__file__).resolve().parents[1]
 
@@ -54,6 +55,11 @@ def main():
             run([str(ROOT / "target/debug/qazna"), "migrate"], env=env)
             run([pg("psql"), "-h", str(sock), "-U", "qazna", "-d", "qazna_demo", "-v", "ON_ERROR_STOP=1", "-f", "fixtures/demo.sql"], stdout=subprocess.DEVNULL)
             check_restart(ROOT, env["DATABASE_URL"])
+            run([pg("createdb"), "-h", str(sock), "-U", "qazna", "evidence_demo"])
+            evidence_url = "postgresql://qazna@localhost/evidence_demo?" + urlencode({"host": str(sock)})
+            run([str(ROOT / "target/debug/qazna"), "migrate"], env=dict(env, DATABASE_URL=evidence_url))
+            run([pg("psql"), "-h", str(sock), "-U", "qazna", "-d", "evidence_demo", "-v", "ON_ERROR_STOP=1", "-f", "fixtures/demo.sql"], stdout=subprocess.DEVNULL)
+            run_evidence_exercise(evidence_url, root / "evidence")
             for seed in (7, 19):
                 database = f"exercise_{seed}_demo"
                 run([pg("createdb"), "-h", str(sock), "-U", "qazna", database])

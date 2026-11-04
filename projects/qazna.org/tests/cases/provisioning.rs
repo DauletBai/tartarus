@@ -432,3 +432,6 @@ async fn simultaneous_reserve_and_transfer_share_available_balance() {
     }
     assert_eq!(f.ledger.account(f.resident).await.unwrap().available, "30");
 }
+
+#[path = "evidence.rs"]
+mod evidence;

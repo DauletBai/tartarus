@@ -57,3 +57,7 @@ flowchart LR
     Observer --> Dashboard[Alerts, dimensional tables and queue chart]
     Truth[Independent physical attestations: pending] -.-> Reports
 ```
+
+## Attestation milestone (4 November 2026)
+
+Version 0.10 adds an explicit strict mode: two distinct inspector accounts attest each lot, and custodian plus actual recipient attest delivery before operator settlement. The [evidence protocol](evidence.md) documents activation, credential scope, disputes and remaining gaps. The lone-operator declaration gap is constrained in strict mode; collusion, identity authenticity and physical truth remain unresolved. Historical v0.9 exercise results above remain evidence of that version.

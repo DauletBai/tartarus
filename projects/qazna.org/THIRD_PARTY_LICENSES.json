@@ -1,6 +1,6 @@
 {
   "scope": "Locked Cargo graph; includes optional and platform-specific crates; declarations are upstream metadata",
-  "cargo_lock_sha256": "eeac6e16bbe0c95b691fee0959708a77b2210880c9569f2426e3db8eb2b43836",
+  "cargo_lock_sha256": "81f5c4c8f1b92e3e3ae275d80d3f1ba1e23ed5f8db1946342e65be98870c7ead",
   "packages": [
     {
       "name": "aho-corasick",

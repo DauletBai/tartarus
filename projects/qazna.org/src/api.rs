@@ -9,7 +9,7 @@ use crate::{
     provisioning::{AllocationRequest, ReservationRequest, ResolutionRequest, ResourceRequest},
 };
 use axum::{
-    Json, Router,
+    Extension, Json, Router,
     extract::{DefaultBodyLimit, Path, Query, Request, State},
     http::{HeaderMap, StatusCode},
     middleware::{self, Next},
@@ -34,7 +34,17 @@ pub struct AccessTokens {
     operator: String,
     observer: Option<String>,
     reviewer: Option<String>,
+    attestors: Vec<AttestorCredential>,
 }
+#[derive(Clone, serde::Deserialize)]
+#[serde(deny_unknown_fields)]
+pub struct AttestorCredential {
+    pub principal: Uuid,
+    pub token: String,
+}
+#[derive(Clone)]
+struct Attestor(Uuid);
+
 impl AccessTokens {
     pub fn new(
         operator: String,
@@ -63,13 +73,43 @@ impl AccessTokens {
             operator,
             observer,
             reviewer,
+            attestors: Vec::new(),
         })
+    }
+    pub fn with_attestors(
+        mut self,
+        credentials: Vec<AttestorCredential>,
+    ) -> Result<Self, &'static str> {
+        if credentials.len() > 64 {
+            return Err("at most 64 local attestor credentials supported");
+        }
+        let mut ids = std::collections::BTreeSet::new();
+        let mut tokens = vec![self.operator.as_str()];
+        tokens.extend(self.observer.as_deref());
+        tokens.extend(self.reviewer.as_deref());
+        for c in &credentials {
+            if !ids.insert(c.principal)
+                || c.token.len() < 32
+                || !c.token.bytes().all(|b| b.is_ascii_graphic())
+                || tokens.contains(&c.token.as_str())
+            {
+                return Err("distinct principal IDs and secure distinct credentials required");
+            }
+            tokens.push(&c.token);
+        }
+        self.attestors = credentials;
+        Ok(self)
     }
 }
 
 pub fn router_with_access(ledger: Ledger, tokens: AccessTokens) -> Router {
     let private = Router::new()
         .route("/v1/system/status", get(system_status))
+        .route("/v1/evidence/principals", post(register_principal))
+        .route(
+            "/v1/evidence/{kind}/{id}",
+            get(evidence).post(record_evidence),
+        )
         .route("/v1/accounts", post(create_account))
         .route("/v1/accounts/{id}", get(account))
         .route("/v1/transfers", post(transfer))
@@ -137,7 +177,11 @@ pub fn router_with_access(ledger: Ledger, tokens: AccessTokens) -> Router {
         .with_state(ledger)
 }
 
-async fn authorize(State(tokens): State<AccessTokens>, request: Request, next: Next) -> Response {
+async fn authorize(
+    State(tokens): State<AccessTokens>,
+    mut request: Request,
+    next: Next,
+) -> Response {
     let supplied = request
         .headers()
         .get("authorization")
@@ -151,7 +195,12 @@ async fn authorize(State(tokens): State<AccessTokens>, request: Request, next: N
     let operator = matches(Some(&tokens.operator));
     let observer = matches(tokens.observer.as_deref());
     let reviewer = matches(tokens.reviewer.as_deref());
-    if !(operator || observer || reviewer) {
+    let attestor = tokens
+        .attestors
+        .iter()
+        .find(|c| matches(Some(&c.token)))
+        .map(|c| c.principal);
+    if !(operator || observer || reviewer || attestor.is_some()) {
         return (
             StatusCode::UNAUTHORIZED,
             Json(json!({"error":"unauthorized"})),
@@ -169,11 +218,30 @@ async fn authorize(State(tokens): State<AccessTokens>, request: Request, next: N
                     && parts[1] == "reviews"
                     && (get || request.method() == axum::http::Method::POST)))
     });
+    let evidence_route = path.strip_prefix("/v1/evidence/").is_some_and(|p| {
+        let parts: Vec<_> = p.split('/').collect();
+        parts.len() == 2
+            && matches!(parts[0], "resource" | "delivery")
+            && Uuid::parse_str(parts[1]).is_ok()
+    });
+    if evidence_route && request.method() == axum::http::Method::POST && attestor.is_none() {
+        return (
+            StatusCode::FORBIDDEN,
+            Json(json!({"error":"attestor_credential_required"})),
+        )
+            .into_response();
+    }
     if !(operator
+        || (attestor.is_some()
+            && evidence_route
+            && (get || request.method() == axum::http::Method::POST))
         || (observer && get && path == "/v1/system/status")
         || (reviewer && review_allowed))
     {
         return (StatusCode::FORBIDDEN, Json(json!({"error":"forbidden"}))).into_response();
+    }
+    if let Some(id) = attestor {
+        request.extensions_mut().insert(Attestor(id));
     }
     next.run(request).await
 }
@@ -393,6 +461,8 @@ impl IntoResponse for LedgerError {
             Self::CalculationFailed => (StatusCode::SERVICE_UNAVAILABLE, "calculation_failed"),
             Self::CalculationLeaseLost => (StatusCode::CONFLICT, "calculation_lease_lost"),
             Self::ReviewConflict => (StatusCode::CONFLICT, "review_exists"),
+            Self::EvidenceRequired => (StatusCode::CONFLICT, "evidence_required"),
+            Self::EvidenceConflict => (StatusCode::CONFLICT, "evidence_conflict"),
             Self::InvalidStoredResponse => {
                 (StatusCode::INTERNAL_SERVER_ERROR, "invalid_stored_response")
             }
@@ -645,4 +715,35 @@ async fn ai_reviews(
     Path(id): Path<Uuid>,
 ) -> Result<impl IntoResponse, LedgerError> {
     Ok(Json(ledger.ai_reviews(id).await?))
+}
+
+async fn register_principal(
+    State(ledger): State<Ledger>,
+    headers: HeaderMap,
+    Json(request): Json<crate::evidence::PrincipalRequest>,
+) -> Result<impl IntoResponse, LedgerError> {
+    Ok(Json(
+        ledger
+            .register_principal(command_key(&headers)?, request)
+            .await?,
+    ))
+}
+async fn record_evidence(
+    State(ledger): State<Ledger>,
+    Extension(actor): Extension<Attestor>,
+    Path((kind, id)): Path<(String, Uuid)>,
+    headers: HeaderMap,
+    Json(request): Json<crate::evidence::StatementRequest>,
+) -> Result<impl IntoResponse, LedgerError> {
+    Ok(Json(
+        ledger
+            .record_evidence(command_key(&headers)?, actor.0, &kind, id, request)
+            .await?,
+    ))
+}
+async fn evidence(
+    State(ledger): State<Ledger>,
+    Path((kind, id)): Path<(String, Uuid)>,
+) -> Result<impl IntoResponse, LedgerError> {
+    Ok(Json(ledger.evidence(&kind, id).await?))
 }

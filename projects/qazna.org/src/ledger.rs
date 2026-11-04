@@ -80,6 +80,10 @@ pub enum LedgerError {
     CalculationLeaseLost,
     #[error("AI review already exists")]
     ReviewConflict,
+    #[error("evidence statement or principal already exists")]
+    EvidenceConflict,
+    #[error("independent evidence is missing or disputed")]
+    EvidenceRequired,
     #[error("stored response is invalid")]
     InvalidStoredResponse,
     #[error("database operation failed")]
@@ -97,7 +101,7 @@ impl Ledger {
     }
 
     pub async fn ready(&self) -> Result<(), LedgerError> {
-        sqlx::query("SELECT plan_id FROM need_production_forecasts LIMIT 0")
+        sqlx::query("SELECT id FROM evidence_statements LIMIT 0")
             .execute(&self.pool)
             .await?;
         Ok(())
@@ -172,6 +176,9 @@ impl Ledger {
             .execute(&mut *tx)
             .await?;
         sqlx::query("SET LOCAL lock_timeout = '5s'")
+            .execute(&mut *tx)
+            .await?;
+        sqlx::query("SELECT pg_advisory_xact_lock_shared(91020261103)")
             .execute(&mut *tx)
             .await?;
         sqlx::query("SELECT pg_advisory_xact_lock(hashtextextended($1, 0))")

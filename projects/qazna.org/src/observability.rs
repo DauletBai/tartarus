@@ -36,6 +36,9 @@ SELECT jsonb_build_object(
  'physical_evidence',jsonb_build_object(
    'declared_lots',(SELECT count(*)::text FROM resources r WHERE NOT EXISTS(SELECT 1 FROM production_completions c WHERE c.output_resource_id=r.id)),
    'reported_completions',(SELECT count(*)::text FROM production_completions),
+   'enforced',EXISTS(SELECT 1 FROM evidence_enforcement),
+   'attested_lots',(SELECT count(*)::text FROM resources WHERE resource_attested(id)),
+   'disputes',(SELECT count(*)::text FROM evidence_statements WHERE decision='dispute'),
    'independently_verified',false),
  'authority','observation_only')
 "#).fetch_one(&mut *tx).await?;
@@ -44,8 +47,14 @@ SELECT jsonb_build_object(
             .is_some_and(|m| m.values().all(|v| v == "0"));
         status["invariants_passed"] = json!(healthy);
         let mut alerts = Vec::new();
+        if status["physical_evidence"]["disputes"] != "0" {
+            alerts.push("physical_evidence_disputed");
+        }
+        if status["physical_evidence"]["enforced"] != true {
+            alerts.push("physical_evidence_enforcement_disabled");
+        }
         if !healthy {
-            alerts.push("invariant_violation");
+            alerts.insert(0, "invariant_violation");
         }
         let queue = &status["coordination"];
         if queue["failed"] != "0" {

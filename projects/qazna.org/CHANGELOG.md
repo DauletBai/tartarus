@@ -1,5 +1,14 @@
 # Qazna changelog
 
+## 0.10.0 — 4 November 2026
+
+- Add immutable principals and evidence statements, separately authenticated attestations and explicit permanent enforcement activation.
+- Require two independent inspector accounts for lot use, including production inputs and newly produced output; reject self-attestation and incorrect quantities.
+- Require actual custodian and recipient confirmation before operator settlement; preserve disputes and quarantine remaining stock.
+- Enforce physical gates in PostgreSQL as well as the API, and report disabled enforcement and disputes in telemetry.
+- Add five PostgreSQL scenarios and a strict evidence HTTP exercise; keep historical research mode explicit.
+- Explain the relationship to the book and link the Russian HTML/PDF reading editions.
+
 ## 0.9.0 — 3 November 2026
 
 - Reconcile active need-linked production commitments before proposing new cycles, without counting forecasts as receipt.

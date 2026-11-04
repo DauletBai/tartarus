@@ -3,6 +3,7 @@ mod completion_service;
 pub mod domain;
 mod draft_service;
 pub mod drafts;
+pub mod evidence;
 pub mod ledger;
 pub mod needs;
 mod needs_service;
