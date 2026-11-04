@@ -52,6 +52,8 @@ On Linux, set `PG_BIN` to the installed PostgreSQL directory, for example `/usr/
 
 ## Documentation
 
+- [Completion roadmap and pilot acceptance gates](docs/completion-roadmap.md)
+
 - [Organism audit and remaining gaps](docs/organism-audit.md)
 - [Independent resource and delivery attestations](docs/evidence.md)
 - [Live synthetic exercises](docs/exercises.md)
