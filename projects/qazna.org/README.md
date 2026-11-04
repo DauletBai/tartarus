@@ -8,7 +8,7 @@ The project lives in `projects/qazna.org/` in [Tartarus](https://github.com/Daul
 
 *Tartar and I* by Daulet Baimurza is the author's Russian research essay on language, historical memory and the Tenge economic proposal. Chapter 26 introduces the organism-inspired provisioning idea; its appendices distinguish model assumptions from calculations. Qazna turns selected provisioning mechanisms into executable, testable software. Passing software tests does not establish the book's historical hypotheses or prove the full economic model.
 
-- [Read the Russian HTML edition](../../book/reader/index.html), with individual sections suitable for browser translation.
+- [Read the Russian HTML edition](https://dauletbai.github.io/tartarus/), with individual sections suitable for browser translation.
 - [Download the print PDF](https://media.githubusercontent.com/media/DauletBai/tartarus/codex/qazna-rust-provisioning/book/Tartar_i_Ya_print_6x9.pdf).
 - [Explore the book and research archive](https://github.com/DauletBai/tartarus).
 
