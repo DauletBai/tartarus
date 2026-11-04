@@ -305,14 +305,19 @@ def run_exercise(database_url, out, seed=7, tick=1.0, steps=40, dashboard=False)
             time.sleep(max(0,tick-(time.monotonic()-tick_start)))
         # Drain remaining jobs with the actual worker algorithm, bounded by wall time.
         stop(worker);worker=None
-        deadline=time.monotonic()+30
+        # A stopped worker can leave a valid 30-second lease. Recovery needs
+        # additional time to reclaim it, calculate and drain the queued work.
+        # Keep the production lease unchanged and bound the whole exercise.
+        deadline=time.monotonic()+90
         while True:
             status=call('/v1/system/status',role='observer')
             queue=status['coordination']
             if all(queue[k]=='0' for k in ('pending_events','queued','running')):
                 break
-            assert time.monotonic()<deadline, 'coordination did not recover'
+            assert time.monotonic()<deadline, f'coordination did not recover within 90s: {queue}'
             worker_once()
+            if queue['running']!='0':
+                time.sleep(.1)  # Avoid repeatedly spawning while a lease expires.
         assert queue['failed']=='0'
         report['samples'].append(status)
         evidence('durable_queue_recovery','detected_and_recovered','Pending events and jobs drained to zero; no failed calculations')

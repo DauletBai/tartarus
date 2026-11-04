@@ -2,6 +2,8 @@
 
 ## 0.10.0 — 4 November 2026
 
+- Fix the synthetic exercise recovery deadline: allow lease expiry plus recalculation and queue draining, and include queue state on timeout.
+
 - Add immutable principals and evidence statements, separately authenticated attestations and explicit permanent enforcement activation.
 - Require two independent inspector accounts for lot use, including production inputs and newly produced output; reject self-attestation and incorrect quantities.
 - Require actual custodian and recipient confirmation before operator settlement; preserve disputes and quarantine remaining stock.
