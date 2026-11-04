@@ -11,6 +11,10 @@ impl Ledger {
         sqlx::query("SET LOCAL statement_timeout='3s'")
             .execute(&mut *tx)
             .await?;
+        // This short-lived diagnostic expands several aggregate views. LLVM
+        // compilation can dominate its execution on JIT-enabled PostgreSQL.
+        // Keep the three-second budget; do not spend it compiling telemetry.
+        sqlx::query("SET LOCAL jit=off").execute(&mut *tx).await?;
         let mut status: Value = sqlx::query_scalar(r#"
 SELECT jsonb_build_object(
  'schema_version',1,
