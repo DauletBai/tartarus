@@ -1,6 +1,14 @@
 # Tartarus — «Тартар и Я»
 
-Открытый исследовательский архив Даулета Баймурзина (Daulet Baimurza): рабочий PDF книги «Тартар и Я», материалы исследования шумерской клинописи и расчётная модель экономики Теңге. Книга ещё не издана. Текущая редакция PDF — 2 ноября 2026 года, редакция 0.86, 381 страница; синхронизация архива — 2 ноября 2026 года.
+Открытый исследовательский архив Даулета Баймурзина (Daulet Baimurza): рабочий PDF книги «Тартар и Я», материалы исследования шумерской клинописи и расчётная модель экономики Теңге. Книга ещё не издана. Текущая редакция PDF — 4 ноября 2026 года, редакция 0.87, 384 страницы; синхронизация книги — 4 ноября 2026 года.
+
+## Book and Qazna
+
+*Tartar and I* is Daulet Baimurza’s Russian research essay. Its provisioning proposal motivates [Qazna](projects/qazna.org/README.md), the Rust/PostgreSQL research implementation in this repository. The book explains the ideas; the software makes selected mechanisms testable. Software tests do not establish the historical hypotheses or validate an entire monetary system. Chapter 26 now describes implemented work, synthetic exercises and the remaining physical-evidence gap.
+
+[Read the Russian HTML edition](https://dauletbai.github.io/tartarus/) and use your browser’s page translation. Individual chapters and the complete text are available. Machine translations are not reviewed translations. The [HTML source](book/reader/index.html) and PDF are also included here.
+
+The active implementation is on [`codex/qazna-rust-provisioning`](https://github.com/DauletBai/tartarus/tree/codex/qazna-rust-provisioning/projects/qazna.org). The separate Qazna repository is archived earlier work. The software and documentation licenses do not extend to the book or third-party illustrations.
 
 ## Книга
 
