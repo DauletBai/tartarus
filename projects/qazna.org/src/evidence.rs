@@ -26,6 +26,42 @@ pub struct StatementRequest {
     pub basis: String,
 }
 impl Ledger {
+    /// Administrator CLI operation; never exposed to model or operator tokens.
+    pub async fn revoke_principal(&self, principal: Uuid, basis: &str) -> Result<(), LedgerError> {
+        if !valid_text(basis, 1000) {
+            return Err(LedgerError::Invalid("revocation basis required"));
+        }
+        let mut tx = self.pool.begin().await?;
+        let found: Option<Uuid> =
+            sqlx::query_scalar("SELECT id FROM evidence_principals WHERE id=$1 FOR UPDATE")
+                .bind(principal)
+                .fetch_optional(&mut *tx)
+                .await?;
+        if found.is_none() {
+            return Err(LedgerError::AccessDenied);
+        }
+        let old: Option<String> = sqlx::query_scalar(
+            "SELECT basis FROM evidence_principal_revocations WHERE principal_id=$1",
+        )
+        .bind(principal)
+        .fetch_optional(&mut *tx)
+        .await?;
+        if let Some(old) = old {
+            if old != basis {
+                return Err(LedgerError::EvidenceConflict);
+            }
+        } else {
+            sqlx::query(
+                "INSERT INTO evidence_principal_revocations(principal_id,basis) VALUES($1,$2)",
+            )
+            .bind(principal)
+            .bind(basis)
+            .execute(&mut *tx)
+            .await?;
+        }
+        tx.commit().await?;
+        Ok(())
+    }
     pub async fn enable_evidence(&self, basis: &str) -> Result<(), LedgerError> {
         if !valid_text(basis, 1000) {
             return Err(LedgerError::Invalid("activation basis required"));
@@ -97,6 +133,7 @@ impl Ledger {
         }
         let payload = json!({"version":1,"evidence_statement":{"principal":principal,"kind":kind,"subject":id,"request":request}});
         let (mut tx, replay) = self.start(key, &payload).await?;
+        active_principal(&mut tx, principal).await?;
         if let Some(v) = replay {
             return decode(v);
         }
@@ -126,6 +163,14 @@ impl Ledger {
         finish(tx,key,&payload,json!({"id":request.id,"principal":principal,"kind":kind,"subject":id,"statement":request})).await
     }
     pub async fn evidence(&self, kind: &str, id: Uuid) -> Result<Value, LedgerError> {
+        self.scoped_evidence(None, kind, id).await
+    }
+    pub async fn scoped_evidence(
+        &self,
+        actor: Option<Uuid>,
+        kind: &str,
+        id: Uuid,
+    ) -> Result<Value, LedgerError> {
         if !matches!(kind, "resource" | "delivery") {
             return Err(LedgerError::Invalid("resource or delivery required"));
         }
@@ -133,6 +178,13 @@ impl Ledger {
         sqlx::query("SET TRANSACTION ISOLATION LEVEL REPEATABLE READ, READ ONLY")
             .execute(&mut *tx)
             .await?;
+        if let Some(actor) = actor {
+            let allowed: bool = sqlx::query_scalar("SELECT EXISTS(SELECT 1 FROM evidence_principals p WHERE p.id=$1 AND NOT EXISTS(SELECT 1 FROM evidence_principal_revocations v WHERE v.principal_id=p.id) AND (($2='resource' AND EXISTS(SELECT 1 FROM resources r WHERE r.id=$3 AND (p.role='inspector' OR (p.role='custodian' AND p.account_id=r.producer_id) OR (p.role='recipient' AND EXISTS(SELECT 1 FROM reservations h WHERE h.resource_id=r.id AND h.resident_id=p.account_id))))) OR ($2='delivery' AND EXISTS(SELECT 1 FROM reservations h JOIN resources r ON r.id=h.resource_id WHERE h.id=$3 AND ((p.role='recipient' AND p.account_id=h.resident_id) OR (p.role='custodian' AND p.account_id=r.producer_id))))))")
+                .bind(actor).bind(kind).bind(id).fetch_one(&mut *tx).await?;
+            if !allowed {
+                return Err(LedgerError::AccessDenied);
+            }
+        }
         let exists: bool = if kind == "resource" {
             sqlx::query_scalar("SELECT EXISTS(SELECT 1 FROM resources WHERE id=$1)")
                 .bind(id)
@@ -182,4 +234,22 @@ pub(crate) async fn usable(tx: &mut crate::ledger::Tx<'_>, id: Uuid) -> Result<b
         .bind(id)
         .fetch_one(&mut **tx)
         .await?)
+}
+
+async fn active_principal(tx: &mut crate::ledger::Tx<'_>, actor: Uuid) -> Result<(), LedgerError> {
+    let found: Option<Uuid> =
+        sqlx::query_scalar("SELECT id FROM evidence_principals WHERE id=$1 FOR SHARE")
+            .bind(actor)
+            .fetch_optional(&mut **tx)
+            .await?;
+    let revoked: bool = sqlx::query_scalar(
+        "SELECT EXISTS(SELECT 1 FROM evidence_principal_revocations WHERE principal_id=$1)",
+    )
+    .bind(actor)
+    .fetch_one(&mut **tx)
+    .await?;
+    if found.is_none() || revoked {
+        return Err(LedgerError::AccessDenied);
+    }
+    Ok(())
 }

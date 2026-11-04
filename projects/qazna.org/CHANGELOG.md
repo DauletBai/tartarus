@@ -1,5 +1,14 @@
 # Qazna changelog
 
+## 0.11.0 — 4 November 2026
+
+- Add append-only administrator principal revocation, serialized statement checks and scoped evidence reads.
+- Add a non-owner runtime privilege template and actual HTTP checks under that role.
+- Rehearse logical restoration of every public table; preserve evidence and immutable history.
+- Move the transaction-dependent journal check to an insertion trigger so historical dumps restore correctly.
+- Rebuild embedded migrations when migration files are added.
+- Define a voluntary shadow food pilot and exercise finite treasury-funded basic provision without issuance.
+
 ## 0.10.0 — 4 November 2026
 
 - Fix the synthetic exercise recovery deadline: allow lease expiry plus recalculation and queue draining, and include queue state on timeout.

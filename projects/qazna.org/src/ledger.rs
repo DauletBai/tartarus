@@ -84,6 +84,8 @@ pub enum LedgerError {
     EvidenceConflict,
     #[error("independent evidence is missing or disputed")]
     EvidenceRequired,
+    #[error("principal access denied")]
+    AccessDenied,
     #[error("stored response is invalid")]
     InvalidStoredResponse,
     #[error("database operation failed")]
@@ -101,7 +103,7 @@ impl Ledger {
     }
 
     pub async fn ready(&self) -> Result<(), LedgerError> {
-        sqlx::query("SELECT id FROM evidence_statements LIMIT 0")
+        sqlx::query("SELECT principal_id FROM evidence_principal_revocations LIMIT 0")
             .execute(&self.pool)
             .await?;
         Ok(())

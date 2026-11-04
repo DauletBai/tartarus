@@ -85,3 +85,7 @@ A meaningful outcome can be a reproducible example that helps a willing communit
 - `src/coordination_service.rs`: lease/retry behavior; `scripts/exercise.py`: synthetic recovery checks.
 
 This roadmap does not change the book, economic policy, execution permissions or runtime behavior.
+
+## Implementation update: v0.11
+
+[Recovery and access](recovery-and-access.md) implements principal revocation, scoped evidence reads, runtime privilege separation and a logical restore rehearsal. [The shadow charter](pilot-charter.md) records the author-delegated scope and modelling choice. These are partial closures of the corresponding rows, not completion of OIDC, disputes, corrections, production backup operations or a real pilot. The remaining roadmap stays open.

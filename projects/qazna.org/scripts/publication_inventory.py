@@ -9,7 +9,7 @@ import json
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
-TOP = [".gitignore", "AGENTS.md", "Cargo.toml", "Cargo.lock", "README.md", "LICENSE",
+TOP = ["build.rs", ".gitignore", "AGENTS.md", "Cargo.toml", "Cargo.lock", "README.md", "LICENSE",
        "LICENSE-DOCS", "NOTICE", "CONTRIBUTING.md", "SECURITY.md", "CHANGELOG.md",
        "THIRD_PARTY_LICENSES.json"]
 

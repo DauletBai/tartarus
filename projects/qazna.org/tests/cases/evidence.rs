@@ -265,3 +265,150 @@ async fn attestor_http_identity_cannot_be_forged_or_used_for_economic_actions() 
         a.to_string()
     );
 }
+
+#[tokio::test]
+#[ignore = "requires isolated PostgreSQL; use scripts/check.py"]
+async fn revocation_blocks_replay_and_raw_sql_without_erasing_evidence() {
+    let f = Fixture::new().await;
+    let stock = resource(&f, "10", "2").await;
+    let a = inspector(&f).await;
+    let request = statement("10", "confirm");
+    f.ledger
+        .record_evidence("original", a, "resource", stock.id, request.clone())
+        .await
+        .unwrap();
+    f.ledger
+        .revoke_principal(a, "Compromised credential")
+        .await
+        .unwrap();
+    f.ledger
+        .revoke_principal(a, "Compromised credential")
+        .await
+        .unwrap();
+    assert!(f.ledger.revoke_principal(a, "Changed basis").await.is_err());
+    assert!(matches!(
+        f.ledger
+            .record_evidence("original", a, "resource", stock.id, request)
+            .await,
+        Err(LedgerError::AccessDenied)
+    ));
+    assert!(matches!(
+        f.ledger
+            .scoped_evidence(Some(a), "resource", stock.id)
+            .await,
+        Err(LedgerError::AccessDenied)
+    ));
+    assert_eq!(
+        f.ledger.evidence("resource", stock.id).await.unwrap()["statements"]
+            .as_array()
+            .unwrap()
+            .len(),
+        1
+    );
+    assert!(sqlx::query("INSERT INTO evidence_statements(id,principal_id,resource_id,decision,quantity,evidence_sha256,basis) VALUES($1,$2,$3,'dispute',10,$4,'bypass')").bind(Uuid::new_v4()).bind(a).bind(stock.id).bind("a".repeat(64)).execute(&f.pool).await.is_err());
+    assert!(
+        sqlx::query("DELETE FROM evidence_principal_revocations")
+            .execute(&f.pool)
+            .await
+            .is_err()
+    );
+}
+
+#[tokio::test]
+#[ignore = "requires isolated PostgreSQL; use scripts/check.py"]
+async fn recipient_evidence_reads_are_scoped_and_revocation_applies_without_restart() {
+    let f = Fixture::new().await;
+    let stock = resource(&f, "10", "2").await;
+    f.ledger.transfer("fund", f.transfer("100")).await.unwrap();
+    let held = f
+        .ledger
+        .reserve("hold", reservation(&f, &stock, "2"))
+        .await
+        .unwrap();
+    let recipient = actor(&f, f.resident, "recipient").await;
+    let unrelated = inspector(&f).await;
+    assert!(
+        f.ledger
+            .scoped_evidence(Some(recipient), "delivery", held.id)
+            .await
+            .is_ok()
+    );
+    assert!(matches!(
+        f.ledger
+            .scoped_evidence(Some(unrelated), "delivery", held.id)
+            .await,
+        Err(LedgerError::AccessDenied)
+    ));
+    let other = resource(&f, "5", "2").await;
+    assert!(matches!(
+        f.ledger
+            .scoped_evidence(Some(recipient), "resource", other.id)
+            .await,
+        Err(LedgerError::AccessDenied)
+    ));
+    let token = "recipient-credential-over-thirty-two-bytes";
+    let app = api::router_with_access(
+        f.ledger.clone(),
+        api::AccessTokens::new(
+            "operator-credential-over-thirty-two-bytes".into(),
+            None,
+            None,
+        )
+        .unwrap()
+        .with_attestors(vec![api::AttestorCredential {
+            principal: recipient,
+            token: token.into(),
+        }])
+        .unwrap(),
+    );
+    for expected in [200, 403] {
+        let response = app
+            .clone()
+            .oneshot(
+                Request::builder()
+                    .uri(format!("/v1/evidence/delivery/{}", held.id))
+                    .header("authorization", format!("Bearer {token}"))
+                    .body(Body::empty())
+                    .unwrap(),
+            )
+            .await
+            .unwrap();
+        assert_eq!(response.status().as_u16(), expected);
+        f.ledger
+            .revoke_principal(recipient, "Synthetic revocation")
+            .await
+            .unwrap();
+    }
+}
+
+#[tokio::test]
+#[ignore = "requires isolated PostgreSQL; use scripts/check.py"]
+async fn revocation_serializes_with_inflight_statement() {
+    let f = Fixture::new().await;
+    let stock = resource(&f, "10", "2").await;
+    let a = inspector(&f).await;
+    let mut tx = f.pool.begin().await.unwrap();
+    sqlx::query("SELECT id FROM evidence_principals WHERE id=$1 FOR UPDATE")
+        .bind(a)
+        .execute(&mut *tx)
+        .await
+        .unwrap();
+    let ledger = f.ledger.clone();
+    let pending = tokio::spawn(async move {
+        ledger
+            .record_evidence(
+                "racing",
+                a,
+                "resource",
+                stock.id,
+                statement("10", "confirm"),
+            )
+            .await
+    });
+    sqlx::query("INSERT INTO evidence_principal_revocations(principal_id,basis) VALUES($1,'revocation wins')").bind(a).execute(&mut *tx).await.unwrap();
+    tx.commit().await.unwrap();
+    assert!(matches!(
+        pending.await.unwrap(),
+        Err(LedgerError::AccessDenied)
+    ));
+}

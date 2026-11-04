@@ -36,7 +36,9 @@ The active project is this directory in Tartarus. The separate [DauletBai/qazna.
 - Preserve idempotency, transaction history and earlier database versions through additive migrations.
 - Exercise the local operator HTTP API against real PostgreSQL, including process restarts.
 
-Version 0.10.0 adds an opt-in, durable attestation gate for resource use and delivery, with separate inspector/custodian/recipient credentials. The Rust planner calculates exact proposals; model commentary never applies them. It does not independently verify reports, authorize issuance or automatically count production as a resident's receipt. Accounting norms and capacity declarations remain explicit experimental inputs. Global optimization, independent physical attestations, approved monetary policy, resident identity/ownership and the product web interface are still pending. This is a local research MVP, not a production-ready national monetary system.
+Version 0.10.0 added an opt-in, durable attestation gate for resource use and delivery, with separate inspector/custodian/recipient credentials. The Rust planner calculates exact proposals; model commentary never applies them. It does not independently verify reports, authorize issuance or automatically count production as a resident's receipt. Accounting norms and capacity declarations remain explicit experimental inputs. Global optimization, independent physical attestations, approved monetary policy, resident identity/ownership and the product web interface are still pending. This is a local research MVP, not a production-ready national monetary system.
+
+Version 0.11.0 adds live principal revocation, scoped evidence reads, a restricted runtime database group and a logical backup/restore rehearsal. The shadow food-pilot charter chooses finite treasury-funded shortfall allocations for modelling; broader policy and participant safeguards remain open.
 
 ## Run the checks
 
@@ -51,6 +53,9 @@ PG_BIN=/opt/homebrew/opt/postgresql@16/bin python3 scripts/check.py
 On Linux, set `PG_BIN` to the installed PostgreSQL directory, for example `/usr/lib/postgresql/16/bin`. Checks create a private, socket-only temporary cluster and stop and delete it afterward. Existing databases are not used.
 
 ## Documentation
+
+- [Shadow food-pilot charter](docs/pilot-charter.md)
+- [Revocation, runtime privileges and recovery](docs/recovery-and-access.md)
 
 - [Completion roadmap and pilot acceptance gates](docs/completion-roadmap.md)
 

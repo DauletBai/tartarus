@@ -461,6 +461,7 @@ impl IntoResponse for LedgerError {
             Self::CalculationFailed => (StatusCode::SERVICE_UNAVAILABLE, "calculation_failed"),
             Self::CalculationLeaseLost => (StatusCode::CONFLICT, "calculation_lease_lost"),
             Self::ReviewConflict => (StatusCode::CONFLICT, "review_exists"),
+            Self::AccessDenied => (StatusCode::FORBIDDEN, "access_denied"),
             Self::EvidenceRequired => (StatusCode::CONFLICT, "evidence_required"),
             Self::EvidenceConflict => (StatusCode::CONFLICT, "evidence_conflict"),
             Self::InvalidStoredResponse => {
@@ -744,6 +745,11 @@ async fn record_evidence(
 async fn evidence(
     State(ledger): State<Ledger>,
     Path((kind, id)): Path<(String, Uuid)>,
+    actor: Option<Extension<Attestor>>,
 ) -> Result<impl IntoResponse, LedgerError> {
-    Ok(Json(ledger.evidence(&kind, id).await?))
+    Ok(Json(
+        ledger
+            .scoped_evidence(actor.map(|a| a.0.0), &kind, id)
+            .await?,
+    ))
 }

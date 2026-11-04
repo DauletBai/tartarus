@@ -16,10 +16,15 @@ async fn main() -> Result<(), Box<dyn std::error::Error>> {
     let command = std::env::args().nth(1).unwrap_or_else(|| "serve".into());
     if !matches!(
         command.as_str(),
-        "serve" | "migrate" | "coordinate" | "coordinate-once" | "enforce-evidence"
+        "serve"
+            | "migrate"
+            | "coordinate"
+            | "coordinate-once"
+            | "enforce-evidence"
+            | "revoke-principal"
     ) {
         return Err(
-            "usage: qazna [serve|migrate|coordinate|coordinate-once|enforce-evidence]".into(),
+            "usage: qazna [serve|migrate|coordinate|coordinate-once|enforce-evidence|revoke-principal]".into(),
         );
     }
     let url = std::env::var("DATABASE_URL").map_err(|_| "DATABASE_URL is required")?;
@@ -36,6 +41,14 @@ async fn main() -> Result<(), Box<dyn std::error::Error>> {
     }
     let ledger = Ledger::new(pool.clone());
     ledger.ready().await?;
+    if command == "revoke-principal" {
+        let principal = std::env::var("QAZNA_REVOKE_PRINCIPAL")?.parse()?;
+        let basis = std::env::var("QAZNA_REVOCATION_BASIS")?;
+        ledger.revoke_principal(principal, &basis).await?;
+        tracing::info!(%principal, "principal revoked; historical evidence preserved");
+        pool.close().await;
+        return Ok(());
+    }
     if command == "enforce-evidence" {
         let basis = std::env::var("QAZNA_EVIDENCE_BASIS")
             .map_err(|_| "QAZNA_EVIDENCE_BASIS is required")?;
