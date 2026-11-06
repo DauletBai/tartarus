@@ -1,0 +1,89 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="850" viewBox="0 0 1400 850" role="img" aria-labelledby="title desc">
+  <title id="title">Пути степных слов в Европу и Восточную Африку</title>
+  <desc id="desc">Авторская схема сухопутного пути степной лексики в европейские языки и морского пути общей лексики к побережью суахили.</desc>
+  <defs>
+    <linearGradient id="paper" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#f3ead7"/>
+      <stop offset="1" stop-color="#dcc69f"/>
+    </linearGradient>
+    <marker id="arrowLand" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="9" markerHeight="9" orient="auto-start-reverse">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#8b3f2f"/>
+    </marker>
+    <marker id="arrowSea" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="9" markerHeight="9" orient="auto-start-reverse">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#285e73"/>
+    </marker>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="5" stdDeviation="7" flood-color="#5a452c" flood-opacity="0.22"/>
+    </filter>
+    <style>
+      .title { font: 700 38px Georgia, serif; fill: #2f271e; }
+      .subtitle { font: 22px Georgia, serif; fill: #665540; }
+      .node-title { font: 700 23px Georgia, serif; fill: #2f271e; }
+      .node-text { font: 18px Arial, sans-serif; fill: #43382c; }
+      .route { font: 700 19px Arial, sans-serif; }
+      .note { font: 17px Arial, sans-serif; fill: #5d5142; }
+    </style>
+  </defs>
+
+  <rect width="1400" height="850" fill="url(#paper)"/>
+  <path d="M75 565 C260 430 365 500 520 385 C690 260 820 310 960 210 C1090 118 1215 165 1330 95" fill="none" stroke="#b89d73" stroke-width="3" stroke-dasharray="9 12" opacity="0.55"/>
+  <path d="M690 450 C820 530 840 675 1005 720 C1120 752 1225 705 1325 760" fill="none" stroke="#8eb2bc" stroke-width="30" opacity="0.22"/>
+
+  <text x="700" y="64" text-anchor="middle" class="title">КАК ПУТЕШЕСТВУЕТ СЛОВО</text>
+  <text x="700" y="98" text-anchor="middle" class="subtitle">не границы одной державы, а два документируемых коридора передачи</text>
+
+  <g filter="url(#shadow)">
+    <rect x="520" y="300" width="360" height="190" rx="28" fill="#f8f1e3" stroke="#6c5132" stroke-width="4"/>
+    <text x="700" y="355" text-anchor="middle" class="node-title">ЦЕНТРАЛЬНАЯ ЕВРАЗИЯ</text>
+    <text x="700" y="398" text-anchor="middle" class="node-text">Қазақ · Орда · Жұрт</text>
+    <text x="700" y="432" text-anchor="middle" class="node-text">Қымыз · Домбыра · Ауыл</text>
+    <text x="700" y="466" text-anchor="middle" class="node-text">конь · община · технология</text>
+  </g>
+
+  <g filter="url(#shadow)">
+    <rect x="55" y="175" width="365" height="195" rx="28" fill="#f7e9dd" stroke="#8b3f2f" stroke-width="4"/>
+    <text x="237" y="220" text-anchor="middle" class="node-title">ЕВРОПА</text>
+    <text x="237" y="258" text-anchor="middle" class="node-text">Cossack · Kosak</text>
+    <text x="237" y="290" text-anchor="middle" class="node-text">horde · Horde</text>
+    <text x="237" y="322" text-anchor="middle" class="node-text">yurt · Jurte · kumiss · Kumys</text>
+    <text x="237" y="354" text-anchor="middle" class="node-text">dombra · aul · kurgan</text>
+  </g>
+
+  <path d="M520 365 C482 337 461 300 422 286" fill="none" stroke="#8b3f2f" stroke-width="7" marker-end="url(#arrowLand)"/>
+  <text x="468" y="247" text-anchor="middle" class="route" fill="#8b3f2f">сухопутный путь</text>
+  <text x="468" y="274" text-anchor="middle" class="note">через русский, польский, французский</text>
+
+  <g filter="url(#shadow)">
+    <rect x="920" y="245" width="425" height="220" rx="28" fill="#eee2cb" stroke="#8a6a3e" stroke-width="4"/>
+    <text x="1132" y="293" text-anchor="middle" class="node-title">ПОРТЫ-ПОСРЕДНИКИ</text>
+    <text x="1132" y="335" text-anchor="middle" class="node-text">Персия · Аравия · Индия</text>
+    <text x="1132" y="369" text-anchor="middle" class="node-text">караваны · рукописи · рынки</text>
+    <text x="1132" y="403" text-anchor="middle" class="node-text">одно слово обращается</text>
+    <text x="1132" y="435" text-anchor="middle" class="node-text">сразу в нескольких языках</text>
+  </g>
+
+  <path d="M880 387 C897 378 902 369 919 360" fill="none" stroke="#8a6a3e" stroke-width="7" marker-end="url(#arrowSea)"/>
+  <text x="900" y="330" text-anchor="middle" class="route" fill="#6f593b">обмен</text>
+
+  <g filter="url(#shadow)">
+    <rect x="865" y="595" width="480" height="225" rx="28" fill="#dfeef0" stroke="#285e73" stroke-width="4"/>
+    <text x="1105" y="640" text-anchor="middle" class="node-title">ПОБЕРЕЖЬЕ СУАХИЛИ</text>
+    <text x="1105" y="678" text-anchor="middle" class="node-text">kitabu · habari · safari · dunia</text>
+    <text x="1105" y="710" text-anchor="middle" class="node-text">mali · dawa · amani · wakati</text>
+    <text x="1105" y="744" text-anchor="middle" class="node-text">Tanganyika — Таңғы</text>
+    <text x="1105" y="776" text-anchor="middle" class="node-text">Zanzibar — Заңы бар</text>
+    <text x="1105" y="806" text-anchor="middle" class="note">агглютинативная грамматика · морской словарь</text>
+  </g>
+
+  <path d="M1132 465 C1142 510 1137 553 1118 594" fill="none" stroke="#285e73" stroke-width="7" marker-end="url(#arrowSea)"/>
+  <text x="1230" y="515" text-anchor="middle" class="route" fill="#285e73">Индийский океан</text>
+  <text x="1230" y="543" text-anchor="middle" class="note">торговля · плавание · переселение</text>
+
+  <g transform="translate(65 680)">
+    <line x1="0" y1="0" x2="85" y2="0" stroke="#8b3f2f" stroke-width="7"/>
+    <text x="100" y="7" class="note">названия степных вещей и институтов</text>
+    <line x1="0" y1="48" x2="85" y2="48" stroke="#285e73" stroke-width="7"/>
+    <text x="100" y="55" class="note">общий торговый словарь</text>
+    <text x="100" y="80" class="note">через морских посредников</text>
+  </g>
+</svg>
