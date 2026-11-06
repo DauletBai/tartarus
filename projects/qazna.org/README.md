@@ -40,6 +40,17 @@ Version 0.10.0 added an opt-in, durable attestation gate for resource use and de
 
 Version 0.11.0 adds live principal revocation, scoped evidence reads, a restricted runtime database group and a logical backup/restore rehearsal. The shadow food-pilot charter chooses finite treasury-funded shortfall allocations for modelling; broader policy and participant safeguards remain open.
 
+## Exact mathematical research
+
+The offline Rust modules `mathematics` and `horizon` verify rational linear plans,
+optimality and infeasibility certificates, delayed production/resource balances,
+integer distribution rules and the minimum opening measure for a specified
+circulation schedule. They are not wired to ledger authority or enacted policy.
+[Mathematical results and proof boundaries](docs/computation-and-ai-costs.md#exact-mathematical-verification-and-five-year-resource-study)
+and [continuous strict-evidence HTTP trials](docs/exercises.md#multi-period-circulation-exercise)
+include reproducible counterexamples, not only successful scenarios. External
+outreach is deferred while this independent computational work proceeds.
+
 ## Run the checks
 
 Requirements: Rust (tested with 1.97.0), Python 3.11+ and PostgreSQL 16+. From the repository root:

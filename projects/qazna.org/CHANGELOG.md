@@ -2,6 +2,12 @@
 
 ## Unreleased
 
+- Add exact rational primal/dual and Farkas certificate checks, a sparse delayed-production horizon matrix, and fixed-schedule circulation liquidity bounds in Rust.
+- Compare Hamilton quota and supply-monotone Jefferson allocation against exhaustive references; retain explicit counterexamples to their respective guarantees.
+- Verify four synthetic 1,825-period resource scenarios and expose proven infeasibility under a long production outage.
+- Add a strict-evidence multi-period HTTP drill with production, idempotent/concurrent retries, API restarts and independently reconciled finite treasury depletion; keep real-world policy authority unchanged.
+- Prioritize independent computational completion before external outreach; publish reproducible results and outstanding readiness boundaries.
+
 - Assess Kazakhstan research-pilot routes for Anthropic, Microsoft, Google, OpenAI, Meta and infrastructure programmes; record current intake constraints and a separately costed, illustrative six-month study with cash/in-kind boundaries.
 
 - Add an offline Rust exact integer-optimization reference and editable AI/non-AI budget study, including staffing, storage retention, model review and technology sensitivity.

@@ -52,3 +52,47 @@ python3 scripts/ai_review.py --input .local/exercises/RUN/calculation.json --out
 ```
 
 The existing adapter minimizes inputs and validates evidence. A one-shot model explanation is separate from the one-second deterministic monitoring loop. Subscription access does not imply unlimited background service, API credit or a production availability guarantee. Real-time protection never waits for this commentary.
+
+## Multi-period circulation exercise
+
+`scripts/circulation_exercise.py` adds a separate continuous strict-evidence
+experiment. It starts an owned disposable PostgreSQL cluster and real loopback
+Rust API, enrolls synthetic inspectors/custodian/recipients with distinct tokens,
+produces goods each period, attests input and output lots, funds recorded needs
+from the finite fixture and confirms actual synthetic receipts. No new money is
+issued. Every production and settlement is retried with its original key; selected
+reservations receive concurrent identical requests. The API restarts every 30
+periods against the same database. Each period reconciles physical output,
+consumed capacity, recipient receipt and account balances with a separate oracle.
+
+```sh
+PG_BIN=/opt/homebrew/opt/postgresql@16/bin python3 scripts/circulation_exercise.py \
+  --steps 180 --tick 1 --output .local/circulation-live
+```
+
+The output must be a new directory; use another ignored local destination when
+rerunning. This restriction protects earlier raw evidence. The maintained public
+summary is [`research/circulation-results.json`](../research/circulation-results.json).
+Raw timestamped HTTP events and a private process log stay in the local output.
+The runner records their digest, actual binary/harness hashes and duration. Tokens
+are not included in the event log. One tick represents one synthetic day: 180
+periods are not 180 days of real-world observation.
+
+The 6 November wall-clock run completed **180 periods in 182.282 seconds**, made
+**9,352 HTTP requests**, performed **five API restarts** and **six concurrent
+reservation replay groups**. Every observed invariant and independent balance
+reconciliation passed. An injected output loss first caused a physical shortage
+at zero-based period 11. The finite treasury first became insufficient at period
+56; its final amount was 1 while the provider held 999 of the initial 1,000 units.
+No later simulated need was erased to manufacture full coverage. This is an
+expected economic counterexample: sum conservation alone does not supply a
+repeatable circulation rule. Software correctness is not success of that funding
+policy.
+
+The default full check adds 60 accelerated periods in another empty disposable
+cluster, covering a restart, losses and treasury depletion without claiming a
+wall-clock endurance test. The separate original exercise covers the background
+worker outage and queue recovery. Neither drill proves real-world independence
+of the scripted attestors, absence of collusion or production readiness.
+
+Validation on 6 November 2026: the complete `scripts/check.py` suite passed, including 15 mathematical tests, 91 PostgreSQL integration tests, exact regeneration of the horizon results, backup/restore checks, and the additional 60-period circulation run (4,548 HTTP requests, one API restart). The separately preserved 180-period report remains the longer paced run, with its own executable and harness hashes.

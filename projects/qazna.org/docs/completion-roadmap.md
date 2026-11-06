@@ -102,3 +102,40 @@ Prioritize E1/E2 and the participant safeguards before claiming economic effects
 use E3/E4 to separate policy improvements from model assistance. All adopted
 legacy runtime mechanisms must be reimplemented in Rust. Corporate research
 funding is an optional route, not a dependency for the deterministic core.
+
+## Independent computational work — 6 November 2026
+
+Proceed without external applications, investment or a model provider. Completion
+of this stage means an executable, reproducible specification with checked proofs,
+negative cases and explicit scope; it does not mean that mathematical testing can
+establish real-world social adoption or erase missing inputs.
+
+Implemented in this block: exact primal/dual and infeasibility certificates,
+time-expanded resource matrices, delayed production, fixed-cycle liquidity
+bounds, two integer distribution references and continuous strict-evidence HTTP
+trials. See [mathematical verification](computation-and-ai-costs.md#exact-mathematical-verification-and-five-year-resource-study).
+The experimental algorithms are not connected to ledger authority.
+
+Remaining computational acceptance gates:
+
+1. Specify a complete, repeatable circulation schedule with economically justified
+   edges and funding continuity. Verify every account prefix, growth/change in
+   capacity and disconnected-region scenario; do not add a disguised fee or tax.
+2. Extend the model beyond fixed-population synthetic boundary supplies: cohort
+   transitions, independently sourced assumptions, staffing/education pipelines,
+   upstream inputs, transport times, infrastructure replacement and expiry.
+3. Add a multi-period optimizer with independently checked feasibility/certificates,
+   or a feasible bound and honest gap where exact optimality cannot be certified.
+   Full basic provision, choice and worst-group outcomes need separate objectives.
+4. Compare scarcity policies including temporal exclusion and indivisible resources;
+   do not adopt either rounding algorithm merely because it has one good property.
+5. Close existing software P0 gaps (identity, corrections/disputes and interfaces)
+   before consequential use. Test them against independent oracles and adversarial
+   combinations, then measure resource limits under increasing actual load.
+6. Produce a repeatable completion dossier that distinguishes theorem, code test,
+   synthetic model and empirical input. External model review can then challenge
+   the results without being necessary for their reproduction.
+
+The current 1,825-period example has 100-million-person-sized aggregate numbers,
+not 100 million simulated actors. Its baseline certificate concerns total meals
+under declared constraints; it is not a proof of the whole proposed economy.

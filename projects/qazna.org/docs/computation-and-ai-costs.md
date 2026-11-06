@@ -161,3 +161,176 @@ For a self-hosted **different open-weight model**, the example assumes $2/GPU-ho
 6. Before live provision, close identity, appeal, privacy, lifecycle and independent assurance gaps from the [architecture review](architecture-review.md). Economic welfare requires a voluntary evaluated pilot, as described in [AI economic research](ai-economic-research.md), not merely successful code tests.
 
 The recommended default is deterministic planning/settlement plus statistical monitoring. Optional AI must demonstrate an incremental benefit; losing the AI service or exceeding its budget must not stop ordinary provision or circulation.
+
+## Exact mathematical verification and five-year resource study
+
+Added 6 November 2026. The new code does not use an AI service or introduce
+interest, taxes, deposits or an issuance endpoint. The research functions have no
+database side effects. The operational planner is still the existing bounded
+caller-order implementation; mathematical research is not silently applied as a
+new distribution policy.
+
+### What is proved and what is tested
+
+| Result | Evidence | Boundary |
+| --- | --- | --- |
+| Feasibility of a supplied linear plan | Every sparse row checked with exact signed integer arithmetic on rational numerators/denominators | Correctness is relative to declared coefficients, resources and timing |
+| Optimality | Primal feasibility, dual feasibility and exactly zero gap | The selected objective and supplied model only; fractional optima are labelled non-integral |
+| Infeasibility | A Farkas multiplier with nonnegative combined variable coefficients and strictly negative combined bound | Proves no plan satisfies those constraints; does not prove the real economy is impossible |
+| Circulation liquidity | Exact minimum prefix balances, with a closed form for repeated schedules | Fixed amount, event order and timing; no authority to impose any edge |
+| Integer allocation | Exhaustive comparisons and explicit mathematical properties | Neither algorithm defines justice or health priority; they have different trade-offs |
+| Live software behavior | Real Rust HTTP API and owned PostgreSQL, synthetic attestors and an independent accounting oracle | No real residents, physical measurements or national-load claim |
+
+Use [Yinyu Ye's Stanford duality notes](https://web.stanford.edu/class/msande211x/lecture15.pdf)
+for the standard primal/dual certificate principle. Qazna independently implements
+exact row checks; it does not invent a new duality theorem or formally verify the
+Rust compiler. Arithmetic overflow rejects a certificate rather than rounding it.
+
+For a maximization problem `max c.x`, `A_le*x <= b_le`, `A_eq*x = b_eq`, `x >= 0`,
+a dual multiplier has nonnegative entries on the inequality rows and unrestricted
+entries on equality rows. If `A^T*y >= c`, then `c.x <= b.y`. Equality certifies an
+optimum. If a nonnegative primal is also integral, it is optimal among integer
+plans too; otherwise integrality is not inferred.
+
+For infeasibility, `A^T*y >= 0` and `b.y < 0`, with the same multiplier sign rules,
+would require `0 <= y^T A x <= y^T b < 0`. This contradiction is a certificate,
+stronger than a particular planner failing to find a solution.
+
+Example: maximize `x+y` subject to `2x+y <= 240`, `x+2y <= 240`, `x,y >= 0`.
+The integer plan `(80,80)` gives 160. Multiplying each constraint by `1/3` gives
+the upper bound `x+y <= 160`; the matching feasible plan proves the optimum.
+A feasible plan `(100,0)` is explicitly rejected as an optimum with that same
+certificate.
+
+### Time-expanded resource matrix
+
+The `horizon` module compiles each period into deliveries `d`, closing stock `s`,
+discarded quantities `w` and production starts `x`. Every resource keeps its own
+unit. All variables are nonnegative. For resource `k` and period `t`:
+
+```text
+s[k,t] + d[k,t] + w[k,t] + sum_j A[k,j]*x[j,t]
+ - s[k,t-1] - sum_j B[k,j]*x[j,t-lead[j]] = external_supply[k,t]
+0 <= d[k,t] <= declared_need[k,t]
+0 <= s[k,t] <= declared_storage_capacity[k]
+0 <= x[j,t] <= declared_process_capacity[j,t]
+```
+
+Initial stock replaces `s[k,-1]`. Every process has a positive lead time, so
+circular recipes cannot manufacture initial inputs by borrowing their future
+output. Starts finishing outside the horizon are disallowed. Non-storable service
+capacity has zero closing-stock allowance; unused quantity is explicitly discarded,
+not carried into a future period. The compiler currently limits its matrix size;
+it is not a distributed national solver.
+
+`examples/horizon_study.rs` generates four deterministic studies at a population
+scale of 100 million, each with 1,825 synthetic daily periods (five 365-day years,
+not a civil-calendar forecast). There are six resource dimensions: grain, water,
+energy, meals, care-hours and learning-hours. These are synthetic quantities,
+not validated nutritional, demographic, educational or healthcare norms. Population
+is fixed, no individuals are simulated, and external resource/service supplies
+are assumed. Upstream extraction, staffing, transport, construction, demography,
+spoilage-age and the full financial network remain outside this small model.
+
+Each scenario has **34,675 variables, 34,675 rows and 74,818 nonzero coefficients**.
+The causal heuristic extrapolates today's meal demand; it is not given tomorrow's
+shock. The matrix checker is separate from this heuristic. Full outputs, units,
+annual snapshots and discarded quantities are in
+[`research/horizon-results.json`](../research/horizon-results.json).
+
+| Scenario | First unmet period (zero-based) | Unmet meals across horizon | Additional result |
+| --- | ---: | ---: | --- |
+| Baseline | None | 0 | Full delivery of every declared need; total-meal objective optimum certified |
+| 40-period production outage | 368 | 3,799,999,999 | Full meal provision in the outage window proved infeasible under the supplied capacities/storage |
+| 30-period demand doubling | 603 | 1,350,000,000 | Feasible heuristic plan, no optimality claim |
+| 30-period interruption of external energy | 902 | 2,599,999,999 | Also 2,766,666,667 unmet energy units; no optimality claim |
+
+For the outage window, even a maximum opening meal stock of 300 million plus
+maximum already-started incoming output of 150 million cannot cover 4 billion
+required meals. The Farkas certificate establishes at least 3.55 billion missing
+meals for full-coverage requirements within these assumptions. More compute cannot
+remove that constraint; reserves, capacity, timing or requirements must change.
+The heuristic's actual shortage is larger than that lower bound.
+
+The baseline's meal certificate does not minimize waste, prove an equitable
+allocation among people, establish multi-objective optimality or validate the
+external supplies. The report deliberately records discarded quantities rather
+than hiding excess supplies. A fixed-population resource example is not the full
+five-year demographic and sectoral state plan described as the long-term goal.
+
+### Exact liquidity requirement for circulation
+
+Let `delta_i(k)` be cumulative inflow minus outflow for account `i` after event
+`k` in one ordered cycle, including the zero-length prefix. Define
+`m_i = min_k delta_i(k) <= 0` and `D_i = delta_i(last)`. For `H >= 1` repetitions:
+
+```text
+B_i_min(H) = -m_i + (H-1)*max(-D_i, 0)
+```
+
+Proof: every prefix in repetition `h` has cumulative change `h*D_i+delta_i(k)`.
+For `D_i >= 0`, the minimum occurs in the first repetition; for `D_i < 0`, in the
+last. Starting below the resulting componentwise bound makes at least one prefix
+negative. At or above it, every ordered transfer can be funded. This assumes the
+specified schedule; it does not optimize the schedule or solve contested rights.
+
+For `Treasury -> Resident -> Provider`, 100 units per cycle, the five-year minimum
+opening treasury amount is **182,500**. The total measure is conserved but
+accumulates with the provider. Adding a hypothetical third edge
+`Provider -> Treasury` reduces the repeatable cycle's minimum opening amount to
+**100**. That edge is only a mathematical comparison: no fee, tax, forced payment
+or automatic treasury replenishment has been added to the economy or the API.
+The economic basis of all circulation edges must be explicit. A promise that
+money will circulate is insufficient to prove that particular accounts remain
+funded at the required times.
+
+### Distribution rounding: two different guarantees
+
+For total interchangeable integer supply `S` and needs `n_i`, let
+`T=min(S,sum(n_i))` and `q_i=T*n_i/sum(n_i)`.
+Hamilton allocation starts with `floor(q_i)` and assigns remaining units by
+fractional remainder, using stable unique IDs for ties. It conserves supply,
+never exceeds need, and remains within one unit of proportional quota. It can
+reduce a recipient's quantity when supply increases.
+
+For needs `[1500,1500,900,500,500,200]`:
+
+```text
+S=25 -> [7,7,4,3,3,1]
+S=26 -> [8,8,5,2,2,1]
+```
+
+The two 500-unit claimants lose a unit despite the larger supply. This is a known
+apportionment phenomenon, independently reproduced in Qazna; see the
+[US Census methods explanation](https://www.census.gov/about/history/historical-censuses-and-surveys/census-programs-surveys/decennial-census/methods.html).
+
+The alternate Jefferson/D'Hondt implementation selects descending exact priorities
+`n_i/(allocated_i+1)`. Fixed priorities and tie order make supply increments
+monotone. Starting with lower proportional quotas leaves fewer than `N` heap
+steps, avoiding a loop over billions of resource units. It matches a separate
+unit-by-unit reference over exhaustive small inputs. The standard method's lower
+quota and monotonicity properties are discussed by
+[Balinski and Young, SIAM Review](https://doi.org/10.1137/1020040).
+
+This alternative can exceed an upper quota: needs `[100,1,1,1,1,1]` with supply 50
+produce `[50,0,0,0,0,0]`, although the first upper proportional quota is 48.
+Neither method is automatically an acceptable rule for essential human provision.
+Minimum guarantees, urgency, choice, temporal fairness, indivisibility and tie
+handling require explicit policies and further comparisons. Both implementations
+remain offline research tools; neither replaces the live caller-order planner.
+
+### Reproduce and challenge
+
+```sh
+cargo test --locked --test mathematics
+cargo run --locked --example horizon_study
+PG_BIN=/opt/homebrew/opt/postgresql@16/bin python3 scripts/check.py
+```
+
+Tests include exhaustive small feasible-plan enumeration, 90,077 Hamilton cases,
+Jefferson comparison against a separate sequential oracle, 500 circulation
+schedules checked at every prefix, delayed production and circular recipe attacks,
+invalid dimensions, forged delivery, fractional plans, sign errors and overflow.
+The full harness regenerates the published five-year result and requires a byte
+match. A later solver or external AI may propose plans and certificates; the exact
+checker remains independently responsible for accepting the mathematical claims.

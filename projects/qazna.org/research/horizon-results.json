@@ -1,0 +1,856 @@
+{
+  "circulation_scope": "The final edge is a mathematical comparison, not an adopted tax, fee or monetary rule.",
+  "kind": "synthetic_exact_mathematical_study",
+  "liquidity_with_hypothetical_closing_edge": {
+    "minimum_opening_by_account": [
+      "100",
+      "0",
+      "0"
+    ],
+    "net_cycle_by_account": [
+      "0",
+      "0",
+      "0"
+    ],
+    "stationary_repeatable": true,
+    "total_minimum_opening": "100"
+  },
+  "liquidity_without_closing_edge": {
+    "minimum_opening_by_account": [
+      "182500",
+      "0",
+      "0"
+    ],
+    "net_cycle_by_account": [
+      "-100",
+      "0",
+      "100"
+    ],
+    "stationary_repeatable": false,
+    "total_minimum_opening": "182500"
+  },
+  "model_calls": 0,
+  "quota_counterexample": {
+    "divisor_supply_25": [
+      8,
+      8,
+      4,
+      2,
+      2,
+      1
+    ],
+    "divisor_supply_26": [
+      8,
+      8,
+      5,
+      2,
+      2,
+      1
+    ],
+    "needs": [
+      [
+        1,
+        1500
+      ],
+      [
+        2,
+        1500
+      ],
+      [
+        3,
+        900
+      ],
+      [
+        4,
+        500
+      ],
+      [
+        5,
+        500
+      ],
+      [
+        6,
+        200
+      ]
+    ],
+    "supply_25": [
+      7,
+      7,
+      4,
+      3,
+      3,
+      1
+    ],
+    "supply_26": [
+      8,
+      8,
+      5,
+      2,
+      2,
+      1
+    ]
+  },
+  "scenarios": [
+    {
+      "assumptions": "Fixed synthetic population; quantities are test inputs, not validated needs norms. Exogenous supplies are not a complete production economy. Rolling one-day forecast; no model calls.",
+      "discarded": [
+        "60800000000",
+        "121300000000",
+        "121600000000",
+        "0",
+        "0",
+        "0"
+      ],
+      "first_unmet_day_zero_based": null,
+      "food_objective_optimality_proven": true,
+      "forged_delivery_rejected": true,
+      "full_food_provision_infeasibility_proven": false,
+      "initial": [
+        200000000,
+        200000000,
+        200000000,
+        300000000,
+        0,
+        0
+      ],
+      "matrix": {
+        "nonzero_coefficients": 74818,
+        "rows": 34675,
+        "variables": 34675
+      },
+      "minimum_daily_food_coverage_ppm": "1000000",
+      "optimality_scope": "Total meals only, under supplied constraints. No stress-case optimum asserted when this certificate fails.",
+      "periods": 1825,
+      "population_scale": 100000000,
+      "processes": [
+        {
+          "inputs": [
+            2,
+            1,
+            1,
+            0,
+            0,
+            0
+          ],
+          "lead_periods": 1,
+          "outputs": [
+            0,
+            0,
+            0,
+            3,
+            0,
+            0
+          ]
+        }
+      ],
+      "requested": [
+        "0",
+        "365000000000",
+        "182500000000",
+        "182500000000",
+        "18250000000",
+        "36500000000"
+      ],
+      "resources": [
+        "grain_kg",
+        "water_litre",
+        "energy_kwh",
+        "meal",
+        "care_hour",
+        "learning_hour"
+      ],
+      "scenario": "baseline",
+      "storage_caps": [
+        300000000,
+        600000000,
+        300000000,
+        300000000,
+        0,
+        0
+      ],
+      "unmet": [
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0"
+      ],
+      "verification": {
+        "feasible": true,
+        "integral": true,
+        "objective_denominator": "1",
+        "objective_numerator": "182500000000",
+        "optimal_for_supplied_linear_model": false
+      },
+      "years": [
+        {
+          "closing_stock": [
+            300000000,
+            600000000,
+            300000000,
+            200000002,
+            0,
+            0
+          ],
+          "cumulative_unmet": [
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0"
+          ],
+          "year": 1
+        },
+        {
+          "closing_stock": [
+            300000000,
+            600000000,
+            300000000,
+            200000000,
+            0,
+            0
+          ],
+          "cumulative_unmet": [
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0"
+          ],
+          "year": 2
+        },
+        {
+          "closing_stock": [
+            300000000,
+            600000000,
+            300000000,
+            200000001,
+            0,
+            0
+          ],
+          "cumulative_unmet": [
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0"
+          ],
+          "year": 3
+        },
+        {
+          "closing_stock": [
+            300000000,
+            600000000,
+            300000000,
+            200000002,
+            0,
+            0
+          ],
+          "cumulative_unmet": [
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0"
+          ],
+          "year": 4
+        },
+        {
+          "closing_stock": [
+            300000000,
+            600000000,
+            300000000,
+            200000000,
+            0,
+            0
+          ],
+          "cumulative_unmet": [
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0"
+          ],
+          "year": 5
+        }
+      ]
+    },
+    {
+      "assumptions": "Fixed synthetic population; quantities are test inputs, not validated needs norms. Exogenous supplies are not a complete production economy. Rolling one-day forecast; no model calls.",
+      "discarded": [
+        "63333333332",
+        "122566666666",
+        "122866666666",
+        "0",
+        "0",
+        "0"
+      ],
+      "first_unmet_day_zero_based": 368,
+      "food_objective_optimality_proven": false,
+      "forged_delivery_rejected": true,
+      "full_food_provision_infeasibility_proven": true,
+      "initial": [
+        200000000,
+        200000000,
+        200000000,
+        300000000,
+        0,
+        0
+      ],
+      "matrix": {
+        "nonzero_coefficients": 74818,
+        "rows": 34675,
+        "variables": 34675
+      },
+      "minimum_daily_food_coverage_ppm": "0",
+      "optimality_scope": "Total meals only, under supplied constraints. No stress-case optimum asserted when this certificate fails.",
+      "periods": 1825,
+      "population_scale": 100000000,
+      "processes": [
+        {
+          "inputs": [
+            2,
+            1,
+            1,
+            0,
+            0,
+            0
+          ],
+          "lead_periods": 1,
+          "outputs": [
+            0,
+            0,
+            0,
+            3,
+            0,
+            0
+          ]
+        }
+      ],
+      "requested": [
+        "0",
+        "365000000000",
+        "182500000000",
+        "182500000000",
+        "18250000000",
+        "36500000000"
+      ],
+      "resources": [
+        "grain_kg",
+        "water_litre",
+        "energy_kwh",
+        "meal",
+        "care_hour",
+        "learning_hour"
+      ],
+      "scenario": "production_outage",
+      "storage_caps": [
+        300000000,
+        600000000,
+        300000000,
+        300000000,
+        0,
+        0
+      ],
+      "unmet": [
+        "0",
+        "0",
+        "0",
+        "3799999999",
+        "0",
+        "0"
+      ],
+      "verification": {
+        "feasible": true,
+        "integral": true,
+        "objective_denominator": "1",
+        "objective_numerator": "178700000001",
+        "optimal_for_supplied_linear_model": false
+      },
+      "years": [
+        {
+          "closing_stock": [
+            300000000,
+            600000000,
+            300000000,
+            200000002,
+            0,
+            0
+          ],
+          "cumulative_unmet": [
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0"
+          ],
+          "year": 1
+        },
+        {
+          "closing_stock": [
+            300000000,
+            600000000,
+            300000000,
+            200000001,
+            0,
+            0
+          ],
+          "cumulative_unmet": [
+            "0",
+            "0",
+            "0",
+            "3799999999",
+            "0",
+            "0"
+          ],
+          "year": 2
+        },
+        {
+          "closing_stock": [
+            300000000,
+            600000000,
+            300000000,
+            200000002,
+            0,
+            0
+          ],
+          "cumulative_unmet": [
+            "0",
+            "0",
+            "0",
+            "3799999999",
+            "0",
+            "0"
+          ],
+          "year": 3
+        },
+        {
+          "closing_stock": [
+            300000000,
+            600000000,
+            300000000,
+            200000000,
+            0,
+            0
+          ],
+          "cumulative_unmet": [
+            "0",
+            "0",
+            "0",
+            "3799999999",
+            "0",
+            "0"
+          ],
+          "year": 4
+        },
+        {
+          "closing_stock": [
+            300000000,
+            600000000,
+            300000000,
+            200000001,
+            0,
+            0
+          ],
+          "cumulative_unmet": [
+            "0",
+            "0",
+            "0",
+            "3799999999",
+            "0",
+            "0"
+          ],
+          "year": 5
+        }
+      ]
+    },
+    {
+      "assumptions": "Fixed synthetic population; quantities are test inputs, not validated needs norms. Exogenous supplies are not a complete production economy. Rolling one-day forecast; no model calls.",
+      "discarded": [
+        "59700000000",
+        "120750000000",
+        "121050000000",
+        "0",
+        "0",
+        "0"
+      ],
+      "first_unmet_day_zero_based": 603,
+      "food_objective_optimality_proven": false,
+      "forged_delivery_rejected": true,
+      "full_food_provision_infeasibility_proven": false,
+      "initial": [
+        200000000,
+        200000000,
+        200000000,
+        300000000,
+        0,
+        0
+      ],
+      "matrix": {
+        "nonzero_coefficients": 74818,
+        "rows": 34675,
+        "variables": 34675
+      },
+      "minimum_daily_food_coverage_ppm": "750000",
+      "optimality_scope": "Total meals only, under supplied constraints. No stress-case optimum asserted when this certificate fails.",
+      "periods": 1825,
+      "population_scale": 100000000,
+      "processes": [
+        {
+          "inputs": [
+            2,
+            1,
+            1,
+            0,
+            0,
+            0
+          ],
+          "lead_periods": 1,
+          "outputs": [
+            0,
+            0,
+            0,
+            3,
+            0,
+            0
+          ]
+        }
+      ],
+      "requested": [
+        "0",
+        "365000000000",
+        "182500000000",
+        "185500000000",
+        "18250000000",
+        "36500000000"
+      ],
+      "resources": [
+        "grain_kg",
+        "water_litre",
+        "energy_kwh",
+        "meal",
+        "care_hour",
+        "learning_hour"
+      ],
+      "scenario": "choice_and_need_surge",
+      "storage_caps": [
+        300000000,
+        600000000,
+        300000000,
+        300000000,
+        0,
+        0
+      ],
+      "unmet": [
+        "0",
+        "0",
+        "0",
+        "1350000000",
+        "0",
+        "0"
+      ],
+      "verification": {
+        "feasible": true,
+        "integral": true,
+        "objective_denominator": "1",
+        "objective_numerator": "184150000000",
+        "optimal_for_supplied_linear_model": false
+      },
+      "years": [
+        {
+          "closing_stock": [
+            300000000,
+            600000000,
+            300000000,
+            200000002,
+            0,
+            0
+          ],
+          "cumulative_unmet": [
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0"
+          ],
+          "year": 1
+        },
+        {
+          "closing_stock": [
+            300000000,
+            600000000,
+            300000000,
+            200000000,
+            0,
+            0
+          ],
+          "cumulative_unmet": [
+            "0",
+            "0",
+            "0",
+            "1350000000",
+            "0",
+            "0"
+          ],
+          "year": 2
+        },
+        {
+          "closing_stock": [
+            300000000,
+            600000000,
+            300000000,
+            200000001,
+            0,
+            0
+          ],
+          "cumulative_unmet": [
+            "0",
+            "0",
+            "0",
+            "1350000000",
+            "0",
+            "0"
+          ],
+          "year": 3
+        },
+        {
+          "closing_stock": [
+            300000000,
+            600000000,
+            300000000,
+            200000002,
+            0,
+            0
+          ],
+          "cumulative_unmet": [
+            "0",
+            "0",
+            "0",
+            "1350000000",
+            "0",
+            "0"
+          ],
+          "year": 4
+        },
+        {
+          "closing_stock": [
+            300000000,
+            600000000,
+            300000000,
+            200000000,
+            0,
+            0
+          ],
+          "cumulative_unmet": [
+            "0",
+            "0",
+            "0",
+            "1350000000",
+            "0",
+            "0"
+          ],
+          "year": 5
+        }
+      ]
+    },
+    {
+      "assumptions": "Fixed synthetic population; quantities are test inputs, not validated needs norms. Exogenous supplies are not a complete production economy. Rolling one-day forecast; no model calls.",
+      "discarded": [
+        "62533333332",
+        "122166666666",
+        "119233333333",
+        "0",
+        "0",
+        "0"
+      ],
+      "first_unmet_day_zero_based": 902,
+      "food_objective_optimality_proven": false,
+      "forged_delivery_rejected": true,
+      "full_food_provision_infeasibility_proven": false,
+      "initial": [
+        200000000,
+        200000000,
+        200000000,
+        300000000,
+        0,
+        0
+      ],
+      "matrix": {
+        "nonzero_coefficients": 74818,
+        "rows": 34675,
+        "variables": 34675
+      },
+      "minimum_daily_food_coverage_ppm": "0",
+      "optimality_scope": "Total meals only, under supplied constraints. No stress-case optimum asserted when this certificate fails.",
+      "periods": 1825,
+      "population_scale": 100000000,
+      "processes": [
+        {
+          "inputs": [
+            2,
+            1,
+            1,
+            0,
+            0,
+            0
+          ],
+          "lead_periods": 1,
+          "outputs": [
+            0,
+            0,
+            0,
+            3,
+            0,
+            0
+          ]
+        }
+      ],
+      "requested": [
+        "0",
+        "365000000000",
+        "182500000000",
+        "182500000000",
+        "18250000000",
+        "36500000000"
+      ],
+      "resources": [
+        "grain_kg",
+        "water_litre",
+        "energy_kwh",
+        "meal",
+        "care_hour",
+        "learning_hour"
+      ],
+      "scenario": "input_disruption",
+      "storage_caps": [
+        300000000,
+        600000000,
+        300000000,
+        300000000,
+        0,
+        0
+      ],
+      "unmet": [
+        "0",
+        "0",
+        "2766666667",
+        "2599999999",
+        "0",
+        "0"
+      ],
+      "verification": {
+        "feasible": true,
+        "integral": true,
+        "objective_denominator": "1",
+        "objective_numerator": "179900000001",
+        "optimal_for_supplied_linear_model": false
+      },
+      "years": [
+        {
+          "closing_stock": [
+            300000000,
+            600000000,
+            300000000,
+            200000002,
+            0,
+            0
+          ],
+          "cumulative_unmet": [
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0"
+          ],
+          "year": 1
+        },
+        {
+          "closing_stock": [
+            300000000,
+            600000000,
+            300000000,
+            200000000,
+            0,
+            0
+          ],
+          "cumulative_unmet": [
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0"
+          ],
+          "year": 2
+        },
+        {
+          "closing_stock": [
+            300000000,
+            600000000,
+            300000000,
+            200000002,
+            0,
+            0
+          ],
+          "cumulative_unmet": [
+            "0",
+            "0",
+            "2766666667",
+            "2599999999",
+            "0",
+            "0"
+          ],
+          "year": 3
+        },
+        {
+          "closing_stock": [
+            300000000,
+            600000000,
+            300000000,
+            200000000,
+            0,
+            0
+          ],
+          "cumulative_unmet": [
+            "0",
+            "0",
+            "2766666667",
+            "2599999999",
+            "0",
+            "0"
+          ],
+          "year": 4
+        },
+        {
+          "closing_stock": [
+            300000000,
+            600000000,
+            300000000,
+            200000001,
+            0,
+            0
+          ],
+          "cumulative_unmet": [
+            "0",
+            "0",
+            "2766666667",
+            "2599999999",
+            "0",
+            "0"
+          ],
+          "year": 5
+        }
+      ]
+    }
+  ],
+  "version": 1
+}

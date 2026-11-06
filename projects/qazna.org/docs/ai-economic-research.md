@@ -2,6 +2,14 @@
 
 Reviewed 6 November 2026. This is a maintained research and implementation brief. Source observations, Qazna design choices and untested hypotheses are distinguished below. No company has endorsed Qazna; no application, data-access agreement or partnership has been made.
 
+## Current work priority
+
+As of 6 November 2026, complete the independently reproducible computational
+research stage before external outreach or fundraising. The programme assessment
+below remains background information; no application or request for investment
+is being initiated. Mathematical verification and local synthetic experiments
+continue without a company partner or model subscription.
+
 ## Research question
 
 Can needs-based resource coordination preserve essential provision and personal choice during AI-driven changes in work, while reducing exclusion, waste and administrative burden?

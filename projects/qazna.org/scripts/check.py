@@ -15,6 +15,7 @@ from smoke import check_restart
 from exercise import run_exercise
 from evidence_exercise import run_evidence_exercise
 from recovery_check import check_recovery
+from circulation_exercise import run as run_circulation
 
 ROOT = Path(__file__).resolve().parents[1]
 
@@ -31,7 +32,13 @@ def main():
     run([sys.executable, "scripts/licenses.py", "--check"])
     run(["cargo", "clippy", "--locked", "--all-targets", "--", "-D", "warnings"])
     run(["cargo", "test", "--locked", "--lib"])
+    run(["cargo", "test", "--locked", "--test", "mathematics"])
     run(["cargo", "test", "--locked", "--example", "no_ai_study"])
+    with tempfile.TemporaryDirectory(prefix="qazna-math-") as math_dir:
+        generated = Path(math_dir) / "horizon-results.json"
+        run(["cargo", "run", "--locked", "--example", "horizon_study", "--", str(generated)])
+        if generated.read_bytes() != (ROOT / "research/horizon-results.json").read_bytes():
+            raise SystemExit("Published horizon results differ from current calculations")
     pg_dir = os.environ.get("PG_BIN")
     if not pg_dir:
         binary = shutil.which("initdb")
@@ -65,6 +72,11 @@ def main():
             run([pg("psql"), "-h", str(sock), "-U", "qazna", "-d", "evidence_demo", "-v", "ON_ERROR_STOP=1", "-f", "fixtures/demo.sql"], stdout=subprocess.DEVNULL)
             run_evidence_exercise(evidence_url, root / "evidence")
             check_recovery(pg, root, sock)
+            run([pg("createdb"), "-h", str(sock), "-U", "qazna", "circulation_demo"])
+            circulation_url = "postgresql://qazna@localhost/circulation_demo?" + urlencode({"host": str(sock)})
+            run([str(ROOT / "target/debug/qazna"), "migrate"], env=dict(env, DATABASE_URL=circulation_url))
+            run([pg("psql"), "-h", str(sock), "-U", "qazna", "-d", "circulation_demo", "-v", "ON_ERROR_STOP=1", "-f", "fixtures/demo.sql"], stdout=subprocess.DEVNULL)
+            run_circulation(circulation_url, root / "circulation", steps=60, tick=.02)
             for seed in (7, 19):
                 database = f"exercise_{seed}_demo"
                 run([pg("createdb"), "-h", str(sock), "-U", "qazna", database])
