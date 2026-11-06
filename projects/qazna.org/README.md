@@ -56,7 +56,7 @@ On Linux, set `PG_BIN` to the installed PostgreSQL directory, for example `/usr/
 
 - [Operation without AI: mathematical model, exact example, budgets and optional AI costs](docs/computation-and-ai-costs.md)
 
-- [AI economic research: Anthropic, OpenAI, Google, Microsoft and Qazna's proposed experiments](docs/ai-economic-research.md)
+- [AI economic research: company fit, Kazakhstan partnership routes, proposed experiments and pilot budget](docs/ai-economic-research.md)
 - [Architecture, test quality and international readiness review](docs/architecture-review.md)
 - [Shadow food-pilot charter](docs/pilot-charter.md)
 - [Revocation, runtime privileges and recovery](docs/recovery-and-access.md)

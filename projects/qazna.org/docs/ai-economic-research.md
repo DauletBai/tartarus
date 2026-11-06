@@ -153,6 +153,10 @@ The project's contribution is a testable route from concern about AI disruption 
 
 ## AI-optional contribution and outreach package
 
+For the Kazakhstan-specific partner assessment, current programme constraints,
+funding structure and illustrative pilot budget, see
+[Kazakhstan partnership assessment](#kazakhstan-partnership-assessment--6-november-2026).
+
 The [non-AI mathematical/cost study](computation-and-ai-costs.md) adds a concrete research proposition: continuity of essential provision must not depend on a model provider, and AI assistance should have to beat an independently functioning mathematical baseline. The offline Rust example and editable budget distinguish token prices, infrastructure, human review and uncertainty. They do not establish nationwide affordability or welfare gains.
 
 An external collaboration is realistic as a **bounded research or engineering partnership**. Adoption of a new global monetary system, endorsement of the entire book or immediate large-scale funding is not supported by the current evidence. No probability of acceptance can be estimated from published programme descriptions. A public repository is a starting point, not a substitute for a research partner, suitable data and credible evaluation.
@@ -211,3 +215,173 @@ Tailor the first paragraph to the recipient's actual research question; do not s
 Maintain one discoverable project landing page/README, a reproducible release or commit reference, an English brief, licensing, test commands and an honest implementation-status table. Provide the full book link alongside the technical material. Announce only actual outputs and measured results; indexing or a public repository does not mean companies have reviewed it.
 
 Next deliverable sequence: measure the no-AI baseline and operator workload; implement the independent multi-period evaluator; recruit the evaluation/operator partners; agree the protocol and privacy review; then submit a tailored inquiry/application through an eligible route. Record contacts, dates, consent, replies and requested changes privately; never publish correspondents' personal data in the research repository.
+
+## Kazakhstan partnership assessment — 6 November 2026
+
+This assessment reviews the book's economic argument, the current v0.11 research
+core and the official programmes linked below. It is not a new full-book literary
+audit, independent code audit, endorsement or submission. Company incorporation
+does not establish programme eligibility. The founder reports Astana Hub
+participation; attach a current participation certificate when an application
+requires it. Keep incorporation scans and personal identifiers outside the public
+repository.
+
+### Fit and access are different questions
+
+The best thematic fit is Anthropic's work on continuity of basic provision. The
+most concrete time-sensitive academic route is Microsoft's current AIEI call.
+Astana Hub provides a plausible local introduction route to Google's ecosystem.
+These rankings are our assessment of the published priorities and entry barriers,
+not evidence that any team is interested in Qazna.
+
+| Organization | Specific Qazna research contribution to propose | Verified route or constraint |
+| --- | --- | --- |
+| Anthropic | Test needs-based provision under income disruption; measure exclusion and resilience rather than only productivity | The [Economic Futures agenda](https://www.anthropic.com/news/economic-futures-research-fund-agenda) describes a global institutional fund with a $1m minimum direct award. Qazna should seek an experienced eligible research consortium, not inflate a small pilot to meet the floor. Separately, [Claude Startups](https://claude.com/programs/startups) currently says its cohort is full and applications are closed. |
+| Microsoft | Compare mathematical planning, operator judgement and bounded AI assistance; study distributed accountability | [AIEI Cohort 4](https://www.microsoft.com/en-us/research/group/aiei/aiei-open-call-4/) closes 30 November 2026, 18:00 Pacific; $75,000 per selected proposal; eligible institutional PI and terminal degree required. [Microsoft for Startups](https://learn.microsoft.com/en-us/startups/microsoft-for-startups/application) is a separate Azure route with product, for-profit and geography conditions. Neither route promises Qazna cash or credits. |
+| Google | Evaluate multilingual access, administrative work and provision outcomes; test portability of the optional AI layer | [AI & Economy](https://ai.google/economy/) is a research fit. [Silkway Accelerator 2026](https://astanahub.com/en/l/silkwayaccelerator2026) establishes an Astana Hub/Google for Startups connection, but targets PMF/Scale and lists an April 30 deadline, already past. Request an introduction or an earlier-stage route rather than claim this intake is open. |
+| OpenAI | Study access to services and the incremental welfare/cost effects of AI assistance using governed data | [Economic Research Exchange applications](https://openai.com/form/economic-research-exchange/) for summer 2026 are closed. Its [launch page](https://openai.com/index/introducing-the-openai-economic-research-exchange/) provides econresearch@openai.com for programme enquiries. [Education for Countries](https://openai.com/index/edu-for-countries/) includes Kazakhstan: a potential university introduction context, not a monetary-system partnership or Qazna entitlement. |
+| Meta | Compare locally deployable model assistance with hosted services on language access, privacy, latency and cost | The [Llama Startup launch](https://ai.meta.com/blog/llama-startup-program/) specifies a US initial cohort and a 30 May 2025 deadline. Do not present that offer as open to a Kazakhstan LLP. Current eligible funding for this project has not been verified; model evaluation can proceed independently of sponsorship, subject to the selected model's licence. |
+| NVIDIA / AWS | Infrastructure, measured optimization/inference experiments and cloud support | [NVIDIA Inception](https://www.nvidia.com/en-us/startups/) offers startup technical/ecosystem support; [AWS Activate](https://aws.amazon.com/startups/credits/) offers conditional promotional credits. These are infrastructure prospects, not evidence of agreement with Qazna's economic philosophy or guaranteed investment. |
+
+Google's [Cloud startup programme](https://cloud.google.com/startup) advertises
+up to $350,000 in credits, with funding-stage and other eligibility conditions.
+Do not book the maximum as an asset or confuse service credits with payroll cash.
+The Silkway page also values participation at $20,000, payable directly or through
+a SAFE under its stated conditions. Membership in Astana Hub does not mean free
+entry, equity-free acceleration or an automatic investment. Check the current
+written offer before committing. No entity restructuring is recommended merely
+to chase an advertised benefit.
+
+### Proposed role, value and honest boundaries
+
+Propose Qazna Technologies as an engineering and field-implementation partner in
+an independently evaluated Kazakhstan study. A university/research organization
+should own the research design and evaluation; a consenting service provider
+should own operational continuity; participants should retain choice and appeal.
+Astana Hub can be asked for introductions and programme guidance. No institution
+may be named as a partner before it agrees.
+
+The project can offer a needs-first experimental specification, exact Rust
+accounting, resource/production constraints, replayable scenarios and a comparison
+that can find AI unnecessary. Its optional-model architecture is valuable for
+isolating AI's contribution, even if it is less attractive as a model-consumption
+sales opportunity. A vendor's research team and its sales or venture team have
+different incentives.
+
+The organism analogy is a design motivation. It is not proof of predictive
+certainty, perfect delivery, absence of corruption or macroeconomic equilibrium.
+The current planner accepts at most 32 needs and 64 candidates per proposal and
+uses caller ordering; national throughput and globally optimal allocation have
+not been demonstrated. An exact small research example is available separately.
+Resident interfaces, disputes/corrections, independent measurement and the
+multi-period evaluation still need work before a consequential pilot.
+
+The full unpublished book should remain available alongside a short English
+entry document. Its historical and linguistic hypotheses are not premises that
+a research partner must accept. Empirical technical results cannot establish
+those hypotheses. Criticism should address institutions, mechanisms and evidence,
+not attach greed or moral worth to ethnic or religious identity. The pilot must
+serve participants without belief or ancestry tests.
+
+### A six-month staged study
+
+1. **Months 1–2: protocol and demonstrator.** Recruit an independent evaluator
+   and provider; agree resource category, needs, baseline, units, privacy and stop
+   rules. Record existing service costs and variance. Implement missing workflows
+   required by the selected scope. Release a repeatable synthetic demonstration.
+2. **Months 3–4: parallel operational records.** Use one willing provider and a
+   voluntary community. A planning envelope of 100–200 adults is illustrative,
+   not an enrolled sample or a statistical power result. Existing provision stays
+   authoritative. Reconcile declared resources with observed deliveries and
+   record missing evidence as unknown. Do not withdraw support for comparison.
+3. **Months 5–6: evaluation and decision.** Replay identical inputs through the
+   baseline, mathematical optimizer and optimizer plus optional AI. Assess
+   feasibility, minimum-group coverage, waiting, waste, review/correction effort,
+   accessibility, outages and complete cost. Any live workflow comparison needs
+   its own approved assignment and analysis plan; repeated replay observations
+   are not independent households or causal field evidence.
+
+A small shadow study can establish operational feasibility and measurement
+quality. It cannot prove that unemployment will occur at a specified rate, that
+income-independent support works nationwide, or that all taxes/banks can be
+replaced. Later institution-led studies would have to evaluate actual provision,
+funding continuity, incentives, long-term wellbeing and transition effects.
+Agree measurable success and stopping thresholds after baseline collection and
+before outcome analysis, including publication of null and negative results.
+
+### Illustrative research budget, not a quote
+
+All rates below are explicit planning assumptions in USD, not observed salaries,
+vendor quotations or a conversion of the Tenge accounting measure. Rates are
+assumed to cover the full staff cost to the project; validate local contracting
+and institutional overhead before an application. Staff availability is not
+established. This is separate from the book's 100-million-resident IT scenarios.
+
+| Work | Assumed FTE × months × monthly cost | USD |
+| --- | --- | ---: |
+| Rust/backend and reliability | 1.5 × 6 × 4,000 | 36,000 |
+| Operations research/planning | 1 × 6 × 3,500 | 21,000 |
+| Accessible participant/operator interface | 0.75 × 6 × 3,000 | 13,500 |
+| Field coordination and measurement | 0.75 × 6 × 2,500 | 11,250 |
+| Independent research/evaluation | 0.5 × 6 × 4,000 | 12,000 |
+| Compute, storage and bounded model experiments | Fixed allowance | 6,000 |
+| External privacy/security review | Fixed allowance | 10,000 |
+| Local fieldwork and logistics | Fixed allowance | 6,000 |
+| Translation and accessibility checks | Fixed allowance | 4,000 |
+| Subtotal | 27 person-months plus allowances | 119,750 |
+| Contingency | 20% of subtotal | 23,950 |
+| Total | Planning envelope | **143,700** |
+
+At an illustrative ±30% on the entire envelope, the range is $100,590–186,810.
+This sensitivity is not a confidence interval. Baseline food/service provision
+must already be independently funded: purchases for new entitlements, cash support,
+national infrastructure and expansion are excluded. Any newly required resources
+must be added rather than assumed free.
+
+Funding accounting must distinguish cash, accepted in-kind work and usable cloud
+credits. An illustrative partition of the $143,700 envelope is $117,700 cash,
+$20,000 agreed staff contribution within the listed labour and $6,000 usable
+credits replacing the compute allowance. These are proposed contributions, not
+commitments. Do not count the same staff time twice, deduct unused credits, or
+assume a grant permits subcontracting. If no contribution is secured, cash need
+remains the full envelope. Microsoft’s $75,000 award alone would not cover it;
+Anthropic’s minimum direct award is too large for this isolated experiment.
+
+Prefer a research grant, sponsored evaluation or a consortium contract when
+preserving the public-benefit design. Equity investment is a different proposal:
+it requires a credible revenue/return model and agreed control rights. Do not
+promise investors a return on users' accounting balances or ownership of public
+resources. Existing AGPL code, documentation licences and the separate book
+copyright must be disclosed; this assessment does not change them.
+
+### Outreach sequence and package
+
+First ask Astana Hub's international/startup team for a relevant introduction and
+help locating an independent university evaluator. In parallel assess eligibility
+for Microsoft's time-limited call. Approach Anthropic through an eligible
+consortium, OpenAI with a research enquiry about the next route, and Google with a
+specific field question. Meta/NVIDIA/AWS are secondary technical routes until an
+actual model or infrastructure requirement is demonstrated.
+
+Prepare one English page (question, existing evidence, Kazakhstan setting, ask),
+a 3–5 minute reproducible demo, the protocol with resource and governance
+boundaries, a staffed budget, and source links pinned to a tested commit. Provide
+the complete working book through the browser-readable edition as well as PDF.
+Attach a company fact sheet and current Astana Hub proof when requested; do not
+circulate personal registration scans in bulk.
+
+Suggested positioning:
+
+> Qazna Technologies is developing an open, AI-optional system for needs-based
+> resource provision. We propose a Kazakhstan-based study of whether deterministic
+> planning, with carefully bounded AI assistance, can improve continuity, choice
+> and accountability under income and supply disruption. We seek a research
+> partner to co-design an independently evaluated pilot, with separate funding
+> for engineering, field evaluation and computing. The full unpublished book
+> *Tartar and I* explains the motivation; the prototype and protocol make selected
+> mechanisms testable, including the possibility of a negative result.
+
+The first requested outcome should be a methodological/scoping discussion and a
+named research contact. Do not describe a cloud account, programme application,
+introduction or ministry correspondence as a partnership. No external message has
+been sent as part of this assessment.

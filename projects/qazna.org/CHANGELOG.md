@@ -2,6 +2,8 @@
 
 ## Unreleased
 
+- Assess Kazakhstan research-pilot routes for Anthropic, Microsoft, Google, OpenAI, Meta and infrastructure programmes; record current intake constraints and a separately costed, illustrative six-month study with cash/in-kind boundaries.
+
 - Add an offline Rust exact integer-optimization reference and editable AI/non-AI budget study, including staffing, storage retention, model review and technology sensitivity.
 - Verify that recalculation and operator application complete without an AI review; add exhaustive small-space optimizer and independent cost-unit checks to the main verification harness.
 - Prepare an English research brief and unsent inquiry for institutional AI-economy partners; distinguish present evidence, eligibility and pending work.
