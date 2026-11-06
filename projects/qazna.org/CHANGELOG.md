@@ -1,5 +1,13 @@
 # Qazna changelog
 
+## Unreleased
+
+- Review architecture, all current test groups, legacy Qazna/Orda mechanisms, dependency advisories and international research fit.
+- Add isolated curated mutation checks; identify an untested HTTP body boundary and cover rejection, exact-limit acceptance and idempotent retry.
+- Check 512 seeded transfer requests against an independent integer reference model, including full account balances and journal counts.
+- Refuse optimized Python in the main verification harness so scenario assertions cannot silently disappear.
+- Record the Rust-only adoption rule for earlier runtime mechanisms; retain the existing calculation/authority separation.
+
 ## 0.11.0 — 4 November 2026
 
 - Add append-only administrator principal revocation, serialized statement checks and scoped evidence reads.

@@ -24,6 +24,8 @@ def run(args, **kwargs):
 
 
 def main():
+    if not __debug__:
+        raise SystemExit("Checks require Python assertions: remove -O and PYTHONOPTIMIZE")
     run([sys.executable, "scripts/test_ai_review.py"])
     run(["cargo", "fmt", "--check"])
     run([sys.executable, "scripts/licenses.py", "--check"])

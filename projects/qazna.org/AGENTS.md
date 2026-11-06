@@ -16,6 +16,8 @@ The author requires an international project. Maintain all Qazna project files i
 
 Use the same Rust/Tokio/Axum/SQLx/PostgreSQL core for MVP and later production. Python is for calculations, not authority to change ledger entries. Maintain append-only history, transactional consistency, request idempotency, exact accounting and concurrency tests. Do not modify released migrations; add a migration for an existing database.
 
+When adopting mechanisms from the author's earlier Qazna or Orda projects, reimplement runtime behavior in Rust. Preserve source attribution and useful behavioral test cases, but do not import a Go service or FFI runtime into the authoritative path. Legacy documentation and demonstrations are requirements candidates, not evidence that a mechanism is secure or complete.
+
 Run `PG_BIN=/opt/homebrew/opt/postgresql@16/bin python3 scripts/check.py` for changes to accounting or provisioning. This creates and deletes only its own disposable PostgreSQL cluster. Never run destructive tests on an existing user database. Update architecture and development documentation with actual implemented behavior and limitations.
 
 ## GitHub and licensing

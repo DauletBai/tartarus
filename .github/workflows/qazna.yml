@@ -12,6 +12,12 @@ on:
       - 'projects/qazna.org/**'
       - '.github/workflows/qazna.yml'
   workflow_dispatch:
+    inputs:
+      mutation_checks:
+        description: 'Run four isolated deliberate-fault checks after the full suite'
+        type: boolean
+        required: false
+        default: false
 
 permissions:
   contents: read
@@ -44,3 +50,8 @@ jobs:
         env:
           PG_BIN: /usr/lib/postgresql/16/bin
         run: python3 scripts/check.py
+      - name: Verify selected fault detection
+        if: github.event_name == 'workflow_dispatch' && inputs.mutation_checks
+        env:
+          PG_BIN: /usr/lib/postgresql/16/bin
+        run: python3 scripts/mutation_check.py

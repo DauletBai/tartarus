@@ -19,6 +19,8 @@ mod needs;
 mod production;
 #[path = "cases/provisioning.rs"]
 mod provisioning;
+#[path = "cases/resilience.rs"]
+mod resilience;
 
 struct Fixture {
     pool: PgPool,

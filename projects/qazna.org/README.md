@@ -54,6 +54,7 @@ On Linux, set `PG_BIN` to the installed PostgreSQL directory, for example `/usr/
 
 ## Documentation
 
+- [Architecture, test quality and international readiness review](docs/architecture-review.md)
 - [Shadow food-pilot charter](docs/pilot-charter.md)
 - [Revocation, runtime privileges and recovery](docs/recovery-and-access.md)
 

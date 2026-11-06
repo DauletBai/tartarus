@@ -48,7 +48,7 @@ Production planning locks its command key, capacity and input lots in UUID order
 
 ## Readiness boundary
 
-The service binds only to loopback and requires a local operator token. The token permits all operator operations and is not an end-user authorization model. Before an external pilot, implement OIDC, roles and account ownership, separate migration/runtime database roles, protected transport, load limits, production monitoring, backup restoration tests and threat review.
+The service binds only to loopback and requires a local operator token. The token permits all operator operations and is not an end-user authorization model. Version 0.11 added a restricted runtime database group, attestor revocation and a logical restore rehearsal. Before an external pilot, implement OIDC, roles and account ownership, protected transport, load limits, production monitoring, operational backup/PITR and threat review. The [6 November review](architecture-review.md) records current source findings, test limits, legacy mechanisms worth reimplementing in Rust and international collaboration boundaries.
 
 The same technology stack does not imply immediate industrial readiness. Economic hypotheses and infrastructure guarantees are verified separately. Operator declarations and production confirmations are recorded evidence claims, not independent verification or automatic permission to issue money.
 
