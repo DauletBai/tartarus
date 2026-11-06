@@ -16,9 +16,9 @@ TOP = ["build.rs", ".gitignore", "AGENTS.md", "Cargo.toml", "Cargo.lock", "READM
 
 def inventory():
     files = [ROOT / name for name in TOP]
-    for directory in ["src", "migrations", "fixtures", "scripts", "tests", "docs"]:
+    for directory in ["src", "migrations", "fixtures", "scripts", "tests", "docs", "examples", "research"]:
         files += [p for p in (ROOT / directory).rglob("*")
-                  if p.is_file() and p.suffix in {".rs", ".sql", ".py", ".md"}
+                  if p.is_file() and p.suffix in {".rs", ".sql", ".py", ".md", ".json"}
                   and "__pycache__" not in p.parts]
     result = []
     for p in sorted(files):

@@ -55,12 +55,15 @@ async fn automatic_recalculation_keeps_operator_authority_and_deduplicates_draft
     let current = f.ledger.monitor(m.id).await.unwrap();
     assert_eq!(current.latest.unwrap().job, funded.job);
     assert_eq!(f.ledger.account(f.resident).await.unwrap().reserved, "0");
+    assert_eq!(count(&f, "coordination_reviews").await, 0);
     // Only the explicit operator command applies the generated draft.
     f.ledger
         .apply_planning_draft("operator-apply", funded.draft, reason())
         .await
         .unwrap();
     assert_eq!(f.ledger.account(f.resident).await.unwrap().reserved, "20");
+    // A complete recalculation/application needs no model review or credentials.
+    assert_eq!(count(&f, "coordination_reviews").await, 0);
 }
 
 #[tokio::test]

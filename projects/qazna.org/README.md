@@ -2,7 +2,7 @@
 
 Qazna is a research system for meeting human needs, based on the Tenge model described in *Tartar and I*. Its architectural guide is a living organism: needs, provisioning units, resource circulation and feedback. Profit and market pricing are not default objectives.
 
-The project lives in `projects/qazna.org/` in [Tartarus](https://github.com/DauletBai/tartarus), alongside the book and research archive. The MVP and subsequent production development share **Rust + Tokio + Axum + SQLx + PostgreSQL**. Python/HiGHS is planned for optimization; React/TypeScript is planned for the interface. Project documentation, code comments, examples and contributor materials are maintained in English for an international community.
+The project lives in `projects/qazna.org/` in [Tartarus](https://github.com/DauletBai/tartarus), alongside the book and research archive. The MVP and subsequent production development share **Rust + Tokio + Axum + SQLx + PostgreSQL**. Rust owns planning inputs and exact validation; an isolated mathematical solver is proposed for larger optimization problems. React/TypeScript is planned for the interface. Project documentation, code comments, examples and contributor materials are maintained in English for an international community.
 
 ## Book and implementation
 
@@ -53,6 +53,8 @@ PG_BIN=/opt/homebrew/opt/postgresql@16/bin python3 scripts/check.py
 On Linux, set `PG_BIN` to the installed PostgreSQL directory, for example `/usr/lib/postgresql/16/bin`. Checks create a private, socket-only temporary cluster and stop and delete it afterward. Existing databases are not used.
 
 ## Documentation
+
+- [Operation without AI: mathematical model, exact example, budgets and optional AI costs](docs/computation-and-ai-costs.md)
 
 - [AI economic research: Anthropic, OpenAI, Google, Microsoft and Qazna's proposed experiments](docs/ai-economic-research.md)
 - [Architecture, test quality and international readiness review](docs/architecture-review.md)

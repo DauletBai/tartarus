@@ -150,3 +150,64 @@ Recommended order, based on thematic fit and access constraints rather than assu
 Prepare a concise English question/method/status brief with full-book access, repository, limitations, scenario documentation and named data/operator partners. Agree confidentiality, data-use and independent publication terms before sharing nonpublic records. No participant-level histories, health needs or conversations should be uploaded merely to demonstrate the platform. Retain open-code licensing and accurate attribution; funding does not imply endorsement of the book or transfer of monetary authority.
 
 The project's contribution is a testable route from concern about AI disruption to reliable provision, human choice and accountable coordination. Whether it outperforms alternatives remains an empirical question the platform should help answer.
+
+## AI-optional contribution and outreach package
+
+The [non-AI mathematical/cost study](computation-and-ai-costs.md) adds a concrete research proposition: continuity of essential provision must not depend on a model provider, and AI assistance should have to beat an independently functioning mathematical baseline. The offline Rust example and editable budget distinguish token prices, infrastructure, human review and uncertainty. They do not establish nationwide affordability or welfare gains.
+
+An external collaboration is realistic as a **bounded research or engineering partnership**. Adoption of a new global monetary system, endorsement of the entire book or immediate large-scale funding is not supported by the current evidence. No probability of acceptance can be estimated from published programme descriptions. A public repository is a starting point, not a substitute for a research partner, suitable data and credible evaluation.
+
+### Readiness and first contact
+
+- **Microsoft:** the current Cohort 4 deadline provides a concrete route, with an eligible institutional PI. Propose a study of the combined operator/optimization workflow and accountability. This project does not currently establish that it has such a PI or an enrolled pilot.
+- **Anthropic:** basic-needs continuity under employment disruption is a strong thematic fit. Its large institutional fund is a later route after securing an experienced evaluation partner; a personal book submission does not meet the published institutional criteria.
+- **OpenAI:** the [programme introduction](https://openai.com/index/introducing-the-openai-economic-research-exchange/) publishes `econresearch@openai.com` for application questions. A short inquiry about a future eligible route is possible; the closed summer intake must not be described as open.
+- **Google:** approach a relevant researcher through the official AI & Economy programme/cohort's public professional channel with a specific question and reproducible artifact. An open Qazna funding route has not been verified. Do not substitute an employee's personal contact for an institutional channel.
+
+Before sending, verify the current programme page, eligibility, disclosure requirements and any submission template again. These are proposed contacts, not messages sent or assurances of interest. Do not use commercial API sales or general customer support as if they were research selection committees.
+
+### Compact English research brief
+
+**Working title:** AI-optional coordination of essential provision under employment disruption.
+
+**Research question:** Can deterministic resource planning with exact accounting preserve provision and human choice through workforce and supply changes, and when does optional AI assistance improve outcomes enough to justify its full operating and oversight costs?
+
+**Contribution:** Qazna is an open Rust/PostgreSQL research prototype. It registers needs independently of employment, separates physical shortages from accounting liquidity, constructs reviewable provisioning drafts and preserves append-only accounting. The authoritative calculation and application path does not require an AI provider. A small exact integer reference demonstrates where optimization improves over sequential allocation; it is not yet a global runtime planner.
+
+**Study:** Compare identical-resource, identical-policy scenarios with (a) the deterministic baseline, (b) mathematical optimization and (c) the same optimized workflow plus bounded AI assistance. Freeze information availability and disruption seeds. Report provision coverage and worst-group outcomes, physical/accounting feasibility, unmet quantities, time to recovery, full staff effort, choice/appeals and total cost. Evaluate no-model, timeout, misleading-advice and security-event scenarios. Later voluntary shadow operation requires an independent institutional evaluator and a willing service provider; those partners are not yet established.
+
+**Current evidence and limitations:** Offline accounting/provisioning tests, an exact small optimization reference, editable cost assumptions and a published architecture review. No claim of national readiness, empirical unemployment prediction or proven superiority of the proposed economy. Present cost figures are scenarios; command throughput, solver scaling, staff workload and participant outcomes remain to be measured.
+
+**Requested collaboration:** Methodological criticism; identification of an eligible research lead or programme; co-design of an independently evaluated, privacy-preserving shadow study. Financial support, API credits and restricted data are not assumed. The project welcomes a finding that a simpler non-AI workflow is preferable.
+
+**Outputs:** Reproducible Rust scenarios, independently checked balances, a public protocol, measured AI/non-AI comparisons, documented failure regimes and a report including null results. Funding arrangements must preserve independent publication and accurate attribution.
+
+**Links:** [Active source and documentation](https://github.com/DauletBai/tartarus/tree/codex/qazna-rust-provisioning/projects/qazna.org); [full Russian working book](https://dauletbai.github.io/tartarus/). The book is unpublished and still being developed. Its broader arguments provide the author's motivation; accepting a technical collaboration does not require endorsing its historical or linguistic hypotheses.
+
+### Short initial inquiry draft
+
+Subject: Research inquiry — AI-optional provisioning and measurable costs of AI assistance
+
+Dear Research Team,
+
+I am Daulet Baimurzin, an engineer and the author of the unpublished working book *Tartar and I*. Its economic proposal motivates Qazna, an open Rust research prototype for needs-based provision, resource circulation and exact accounting.
+
+We are preparing a reproducible comparison of deterministic mathematical planning and optional AI assistance under employment and supply disruptions. The core must continue operating without a model provider. We would measure provision continuity, human choice, oversight effort and full operating cost, including cases where AI does not improve the result.
+
+The repository contains the implementation, tests, a small exact optimization example, editable cost calculations and limitations. It is not a validated national monetary system. I would welcome methodological feedback and guidance on a suitable institutional research partner or programme. The full working book is also available because the proposal develops from its wider discussion of equal measure and social responsibility.
+
+Source and research materials: https://github.com/DauletBai/tartarus/tree/codex/qazna-rust-provisioning/projects/qazna.org
+
+Full working book: https://dauletbai.github.io/tartarus/
+
+With respect,
+Daulet Baimurzin
+Kazakhstan
+
+Tailor the first paragraph to the recipient's actual research question; do not send identical bulk applications. An eligible institution must approve any use of its name. A separate agreed project budget is required before a funding application: the national stress-scenario cost table is not a grant request.
+
+### Publication and preparation checklist
+
+Maintain one discoverable project landing page/README, a reproducible release or commit reference, an English brief, licensing, test commands and an honest implementation-status table. Provide the full book link alongside the technical material. Announce only actual outputs and measured results; indexing or a public repository does not mean companies have reviewed it.
+
+Next deliverable sequence: measure the no-AI baseline and operator workload; implement the independent multi-period evaluator; recruit the evaluation/operator partners; agree the protocol and privacy review; then submit a tailored inquiry/application through an eligible route. Record contacts, dates, consent, replies and requested changes privately; never publish correspondents' personal data in the research repository.

@@ -31,6 +31,7 @@ def main():
     run([sys.executable, "scripts/licenses.py", "--check"])
     run(["cargo", "clippy", "--locked", "--all-targets", "--", "-D", "warnings"])
     run(["cargo", "test", "--locked", "--lib"])
+    run(["cargo", "test", "--locked", "--example", "no_ai_study"])
     pg_dir = os.environ.get("PG_BIN")
     if not pg_dir:
         binary = shutil.which("initdb")
