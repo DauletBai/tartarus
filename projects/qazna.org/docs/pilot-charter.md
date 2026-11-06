@@ -68,6 +68,14 @@ failure evidence and maintain ordinary provision.
 
 ## Deliverables and open dependencies
 
+The [AI economic research protocol](ai-economic-research.md#experiment-design)
+defines the proposed comparison: identical resources and information across
+policies, non-AI baselines, independently measured delivery, subgroup outcomes,
+total review/correction effort, choice and privacy. Separate policy effects from
+AI effects. Do not remove existing support to create a control group. A shadow
+pilot alone does not establish causal or national-scale effects; pre-register
+outcomes and use an independent evaluator before making effectiveness claims.
+
 - A reproducible synthetic demonstration and recorded failure cases.
 - A participant-facing explanation and an accessible assisted path.
 - A rights/authority matrix and a reviewed budget/continuity procedure.

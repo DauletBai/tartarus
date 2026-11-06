@@ -44,6 +44,13 @@ OpenAI's [agent safety guidance](https://developers.openai.com/api/docs/guides/a
 
 ## Before an external pilot
 
+The [AI economic research brief](ai-economic-research.md) adds evaluation
+requirements: model-assisted outcomes must be compared with a non-AI baseline,
+include review/correction effort and missed needs, and preserve refusal/appeal.
+Provider replacement is planned, not currently implemented. Model-generated
+formulations must pass independent unit, capacity and conservation checks;
+model judgments and company case studies do not certify policy effectiveness.
+
 Implemented since the earlier baseline: a review-only credential, restricted runtime database group, live attestor revocation and logical backup/restore rehearsal. Still required: OIDC and resident/operator/auditor ownership checks; protected transport; per-scope queue quotas/coalescing and retention; model-call budgets; production backup/PITR and disaster exercises; dependency and supply-chain review; signed/reproducible releases; monitoring and incident response; independent review of prompt-injection and data-exfiltration controls; and privacy rules for real participant data. See the [current architecture and test review](architecture-review.md), including the presently hardcoded review-provider identity.
 
 The current local operator token and a database owner can bypass application-level policy. These are explicit deployment limitations, not protections supplied by the organism analogy. Stop a coordination monitor to prevent further calculations for that scope; stopping it does not undo already applied economic actions. Existing cancellation routes retain their audit trails.

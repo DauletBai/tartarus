@@ -89,3 +89,16 @@ This roadmap does not change the book, economic policy, execution permissions or
 ## Implementation update: v0.11
 
 [Recovery and access](recovery-and-access.md) implements principal revocation, scoped evidence reads, runtime privilege separation and a logical restore rehearsal. [The shadow charter](pilot-charter.md) records the author-delegated scope and modelling choice. These are partial closures of the corresponding rows, not completion of OIDC, disputes, corrections, production backup operations or a real pilot. The remaining roadmap stays open.
+
+## Research update: 6 November 2026
+
+The [architecture/test review](architecture-review.md) updates implementation
+evidence and test gaps. The [AI economic research brief](ai-economic-research.md)
+maps four organizations' research to Qazna work packages E1–E6: reproducible
+scenarios, independent multi-period circulation, policy comparisons, replaceable
+AI advisers, minimized outcome measurement and participant-safe operation.
+These are research/engineering requirements, not implemented features or grants.
+Prioritize E1/E2 and the participant safeguards before claiming economic effects;
+use E3/E4 to separate policy improvements from model assistance. All adopted
+legacy runtime mechanisms must be reimplemented in Rust. Corporate research
+funding is an optional route, not a dependency for the deterministic core.

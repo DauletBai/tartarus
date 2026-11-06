@@ -2,6 +2,7 @@
 
 ## Unreleased
 
+- Map Anthropic, OpenAI, Google and Microsoft economic research to testable Qazna contributions, an independent measurement protocol and Rust work packages; record closed/current calls and eligibility limits.
 - Review architecture, all current test groups, legacy Qazna/Orda mechanisms, dependency advisories and international research fit.
 - Add isolated curated mutation checks; identify an untested HTTP body boundary and cover rejection, exact-limit acceptance and idempotent retry.
 - Check 512 seeded transfer requests against an independent integer reference model, including full account balances and journal counts.

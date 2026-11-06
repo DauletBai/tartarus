@@ -208,6 +208,8 @@ Verified against primary pages on 6 November 2026. These are selected applicable
 
 ## International collaboration route
 
+The [AI economic research brief](ai-economic-research.md) now supplies the detailed evidence review, six testable contributions, measurement definitions and experimental design. On 6 November, OpenAI's summer Exchange intake is confirmed closed; Microsoft's AIEI Cohort 4 has a published 30 November deadline and institutional/degree requirements. Anthropic's newer fund has institutional and project-size constraints. Google research activity does not establish an open application route. Treat the table below as thematic mapping, not an invitation or eligibility decision.
+
 The premise that AI will inevitably eliminate most jobs in the next few years is not established. The [ILO/NASK 2025 assessment](https://www.ilo.org/resource/news/one-four-jobs-risk-being-transformed-genai-new-ilo%E2%80%93nask-global-index-shows) estimates exposure for one in four jobs globally and emphasizes transformation over wholesale replacement. Exposure, adoption, productivity gains and actual displacement must be different scenario variables. Design the experiment to remain useful under both severe displacement and gradual task change.
 
 There are real research entry points, although none has expressed interest in this project:
@@ -217,7 +219,7 @@ There are real research entry points, although none has expressed interest in th
 | [Anthropic Economic Futures](https://www.anthropic.com/economic-futures) | Economic transitions and support instruments | Compare essential-provision mechanisms under labour displacement and supply shocks using a reproducible, independently evaluated pilot |
 | [OpenAI Economic Research Exchange](https://openai.com/index/economic-research-exchange-request-for-proposals/) | Empirical AI effects, household welfare and unequal benefits | A scoped question, identified data partners and evaluation design; code alone is not an empirical research result |
 | [Google AI & Economy Research Program](https://ai.google/economy/) | Work, productivity and economic transformation | Multi-country scenario assumptions and portable measurement/experimental protocols |
-| [Microsoft Research: New Future of Work](https://www.microsoft.com/en-us/research/blog/new-future-of-work-ai-is-driving-rapid-change-uneven-benefits/) | Organizational change and uneven gains | Study how human review and provision coordination affect coverage, workload and exclusion |
+| [Microsoft AI Economy Institute](https://www.microsoft.com/en-us/research/group/aiei/aiei-open-call-4/) and New Future of Work | Organizational change and uneven gains | Study how human review and provision coordination affect coverage, workload, learning and exclusion |
 
 These are thematic matches, not confirmation of eligibility, an open funding round or endorsement. Check current application terms before contacting. No outreach was sent in this review.
 
