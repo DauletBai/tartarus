@@ -1,0 +1,755 @@
+use crate::{
+    coordination::{MonitorRequest, ReviewRequest},
+    domain::{NewAccount, Transfer},
+    drafts::DraftRequest,
+    ledger::{Ledger, LedgerError},
+    needs::{NeedRequest, NeedReservationRequest, PeriodQuery, ProviderRequest, UnitRequest},
+    planning::{NeedNorm, NormNeedRequest, PlanningRequest},
+    production::{CapacityRequest, CompletionRequest, PlanRequest, RecipeRequest},
+    provisioning::{AllocationRequest, ReservationRequest, ResolutionRequest, ResourceRequest},
+};
+use axum::{
+    Extension, Json, Router,
+    extract::{DefaultBodyLimit, Path, Query, Request, State},
+    http::{HeaderMap, StatusCode},
+    middleware::{self, Next},
+    response::{IntoResponse, Response},
+    routing::{get, post},
+};
+use serde_json::json;
+use subtle::ConstantTimeEq;
+use uuid::Uuid;
+
+/// A local operator credential, not end-user authorization. Keep behind loopback
+/// until OIDC, role and ownership checks are implemented.
+pub fn router(ledger: Ledger, token: String) -> Router {
+    router_with_access(
+        ledger,
+        AccessTokens::new(token, None, None).expect("valid operator token"),
+    )
+}
+
+#[derive(Clone)]
+pub struct AccessTokens {
+    operator: String,
+    observer: Option<String>,
+    reviewer: Option<String>,
+    attestors: Vec<AttestorCredential>,
+}
+#[derive(Clone, serde::Deserialize)]
+#[serde(deny_unknown_fields)]
+pub struct AttestorCredential {
+    pub principal: Uuid,
+    pub token: String,
+}
+#[derive(Clone)]
+struct Attestor(Uuid);
+
+impl AccessTokens {
+    pub fn new(
+        operator: String,
+        observer: Option<String>,
+        reviewer: Option<String>,
+    ) -> Result<Self, &'static str> {
+        let values: Vec<&str> = std::iter::once(operator.as_str())
+            .chain(observer.as_deref())
+            .chain(reviewer.as_deref())
+            .collect();
+        if values
+            .iter()
+            .any(|t| t.len() < 32 || !t.bytes().all(|b| b.is_ascii_graphic()))
+        {
+            return Err("tokens must contain at least 32 printable ASCII bytes");
+        }
+        for (i, a) in values.iter().enumerate() {
+            if values[i + 1..]
+                .iter()
+                .any(|b| constant_time_equal(a.as_bytes(), b.as_bytes()))
+            {
+                return Err("operator, observer and reviewer tokens must be distinct");
+            }
+        }
+        Ok(Self {
+            operator,
+            observer,
+            reviewer,
+            attestors: Vec::new(),
+        })
+    }
+    pub fn with_attestors(
+        mut self,
+        credentials: Vec<AttestorCredential>,
+    ) -> Result<Self, &'static str> {
+        if credentials.len() > 64 {
+            return Err("at most 64 local attestor credentials supported");
+        }
+        let mut ids = std::collections::BTreeSet::new();
+        let mut tokens = vec![self.operator.as_str()];
+        tokens.extend(self.observer.as_deref());
+        tokens.extend(self.reviewer.as_deref());
+        for c in &credentials {
+            if !ids.insert(c.principal)
+                || c.token.len() < 32
+                || !c.token.bytes().all(|b| b.is_ascii_graphic())
+                || tokens.contains(&c.token.as_str())
+            {
+                return Err("distinct principal IDs and secure distinct credentials required");
+            }
+            tokens.push(&c.token);
+        }
+        self.attestors = credentials;
+        Ok(self)
+    }
+}
+
+pub fn router_with_access(ledger: Ledger, tokens: AccessTokens) -> Router {
+    let private = Router::new()
+        .route("/v1/system/status", get(system_status))
+        .route("/v1/evidence/principals", post(register_principal))
+        .route(
+            "/v1/evidence/{kind}/{id}",
+            get(evidence).post(record_evidence),
+        )
+        .route("/v1/accounts", post(create_account))
+        .route("/v1/accounts/{id}", get(account))
+        .route("/v1/transfers", post(transfer))
+        .route("/v1/allocations", post(allocate))
+        .route("/v1/resources", post(create_resource))
+        .route("/v1/resources/{id}", get(resource))
+        .route("/v1/reservations", post(reserve))
+        .route("/v1/reservations/{id}", get(reservation))
+        .route("/v1/reservations/{id}/settle", post(settle))
+        .route("/v1/reservations/{id}/cancel", post(cancel))
+        .route("/v1/units", post(create_unit))
+        .route("/v1/units/{id}", get(unit))
+        .route("/v1/units/{id}/providers", post(link_provider))
+        .route("/v1/units/{id}/coverage", get(unit_coverage))
+        .route("/v1/needs", post(create_need))
+        .route("/v1/needs/{id}", get(need))
+        .route("/v1/needs/{id}/reserve", post(reserve_need))
+        .route("/v1/needs/{id}/attempts", get(need_attempts))
+        .route("/v1/production/capacities", post(create_capacity))
+        .route("/v1/production/capacities/{id}", get(capacity))
+        .route("/v1/production/recipes", post(create_recipe))
+        .route("/v1/production/recipes/{id}", get(recipe))
+        .route("/v1/production/assess", post(assess_production))
+        .route("/v1/production/plans", post(plan_production))
+        .route("/v1/production/plans/{id}", get(production_plan))
+        .route(
+            "/v1/production/plans/{id}/complete",
+            post(complete_production),
+        )
+        .route(
+            "/v1/production/plans/{id}/completion",
+            get(production_completion),
+        )
+        .route("/v1/resources/{id}/provenance", get(resource_provenance))
+        .route("/v1/production/plans/{id}/cancel", post(cancel_production))
+        .route("/v1/need-norms", post(create_need_norm))
+        .route("/v1/need-norms/{id}", get(need_norm))
+        .route("/v1/needs/from-norm", post(create_need_from_norm))
+        .route("/v1/needs/{id}/norm", get(need_norm_source))
+        .route("/v1/planning/assess", post(propose_provisioning))
+        .route("/v1/planning/drafts", post(create_planning_draft))
+        .route("/v1/planning/drafts/{id}", get(planning_draft))
+        .route("/v1/planning/drafts/{id}/apply", post(apply_planning_draft))
+        .route(
+            "/v1/planning/drafts/{id}/discard",
+            post(discard_planning_draft),
+        )
+        .route("/v1/coordination/monitors", post(create_monitor))
+        .route("/v1/coordination/monitors/{id}", get(monitor))
+        .route("/v1/coordination/monitors/{id}/stop", post(stop_monitor))
+        .route("/v1/coordination/results/{id}", get(coordination_result))
+        .route(
+            "/v1/coordination/results/{id}/reviews",
+            get(ai_reviews).post(record_ai_review),
+        )
+        .route_layer(middleware::from_fn_with_state(tokens, authorize));
+    Router::new()
+        .route(
+            "/health/live",
+            get(|| async { Json(json!({"status": "live"})) }),
+        )
+        .route("/health/ready", get(ready))
+        .merge(private)
+        .layer(DefaultBodyLimit::max(16 * 1024))
+        .with_state(ledger)
+}
+
+async fn authorize(
+    State(tokens): State<AccessTokens>,
+    mut request: Request,
+    next: Next,
+) -> Response {
+    let supplied = request
+        .headers()
+        .get("authorization")
+        .and_then(|v| v.to_str().ok())
+        .and_then(|v| v.strip_prefix("Bearer "));
+    let matches = |token: Option<&str>| {
+        supplied
+            .zip(token)
+            .is_some_and(|(a, b)| constant_time_equal(a.as_bytes(), b.as_bytes()))
+    };
+    let operator = matches(Some(&tokens.operator));
+    let observer = matches(tokens.observer.as_deref());
+    let reviewer = matches(tokens.reviewer.as_deref());
+    let attestor = tokens
+        .attestors
+        .iter()
+        .find(|c| matches(Some(&c.token)))
+        .map(|c| c.principal);
+    if !(operator || observer || reviewer || attestor.is_some()) {
+        return (
+            StatusCode::UNAUTHORIZED,
+            Json(json!({"error":"unauthorized"})),
+        )
+            .into_response();
+    }
+    let path = request.uri().path();
+    let get = request.method() == axum::http::Method::GET;
+    let review_path = path.strip_prefix("/v1/coordination/results/");
+    let review_allowed = review_path.is_some_and(|p| {
+        let parts: Vec<_> = p.split('/').collect();
+        Uuid::parse_str(parts[0]).is_ok()
+            && ((parts.len() == 1 && get)
+                || (parts.len() == 2
+                    && parts[1] == "reviews"
+                    && (get || request.method() == axum::http::Method::POST)))
+    });
+    let evidence_route = path.strip_prefix("/v1/evidence/").is_some_and(|p| {
+        let parts: Vec<_> = p.split('/').collect();
+        parts.len() == 2
+            && matches!(parts[0], "resource" | "delivery")
+            && Uuid::parse_str(parts[1]).is_ok()
+    });
+    if evidence_route && request.method() == axum::http::Method::POST && attestor.is_none() {
+        return (
+            StatusCode::FORBIDDEN,
+            Json(json!({"error":"attestor_credential_required"})),
+        )
+            .into_response();
+    }
+    if !(operator
+        || (attestor.is_some()
+            && evidence_route
+            && (get || request.method() == axum::http::Method::POST))
+        || (observer && get && path == "/v1/system/status")
+        || (reviewer && review_allowed))
+    {
+        return (StatusCode::FORBIDDEN, Json(json!({"error":"forbidden"}))).into_response();
+    }
+    if let Some(id) = attestor {
+        request.extensions_mut().insert(Attestor(id));
+    }
+    next.run(request).await
+}
+
+async fn system_status(
+    State(ledger): State<Ledger>,
+) -> Result<Json<serde_json::Value>, LedgerError> {
+    Ok(Json(ledger.system_status().await?))
+}
+
+fn constant_time_equal(a: &[u8], b: &[u8]) -> bool {
+    bool::from(a.ct_eq(b))
+}
+
+async fn ready(State(ledger): State<Ledger>) -> Result<Json<serde_json::Value>, LedgerError> {
+    ledger.ready().await?;
+    Ok(Json(json!({"status": "ready"})))
+}
+
+async fn create_account(
+    State(ledger): State<Ledger>,
+    Json(request): Json<NewAccount>,
+) -> Result<impl IntoResponse, LedgerError> {
+    Ok((
+        StatusCode::CREATED,
+        Json(ledger.create_account(request).await?),
+    ))
+}
+
+async fn account(
+    State(ledger): State<Ledger>,
+    Path(id): Path<Uuid>,
+) -> Result<impl IntoResponse, LedgerError> {
+    Ok(Json(ledger.account(id).await?))
+}
+
+async fn transfer(
+    State(ledger): State<Ledger>,
+    headers: HeaderMap,
+    Json(request): Json<Transfer>,
+) -> Result<impl IntoResponse, LedgerError> {
+    Ok(Json(
+        ledger.transfer(command_key(&headers)?, request).await?,
+    ))
+}
+
+fn command_key(headers: &HeaderMap) -> Result<&str, LedgerError> {
+    headers
+        .get("idempotency-key")
+        .and_then(|v| v.to_str().ok())
+        .ok_or(LedgerError::Invalid("Idempotency-Key header is required"))
+}
+
+async fn allocate(
+    State(ledger): State<Ledger>,
+    headers: HeaderMap,
+    Json(request): Json<AllocationRequest>,
+) -> Result<impl IntoResponse, LedgerError> {
+    Ok(Json(
+        ledger.allocate(command_key(&headers)?, request).await?,
+    ))
+}
+async fn create_resource(
+    State(ledger): State<Ledger>,
+    headers: HeaderMap,
+    Json(request): Json<ResourceRequest>,
+) -> Result<impl IntoResponse, LedgerError> {
+    Ok(Json(
+        ledger
+            .create_resource(command_key(&headers)?, request)
+            .await?,
+    ))
+}
+async fn resource(
+    State(ledger): State<Ledger>,
+    Path(id): Path<Uuid>,
+) -> Result<impl IntoResponse, LedgerError> {
+    Ok(Json(ledger.resource(id).await?))
+}
+async fn reserve(
+    State(ledger): State<Ledger>,
+    headers: HeaderMap,
+    Json(request): Json<ReservationRequest>,
+) -> Result<impl IntoResponse, LedgerError> {
+    Ok(Json(ledger.reserve(command_key(&headers)?, request).await?))
+}
+async fn reservation(
+    State(ledger): State<Ledger>,
+    Path(id): Path<Uuid>,
+) -> Result<impl IntoResponse, LedgerError> {
+    Ok(Json(ledger.reservation(id).await?))
+}
+async fn settle(
+    State(ledger): State<Ledger>,
+    Path(id): Path<Uuid>,
+    headers: HeaderMap,
+    Json(request): Json<ResolutionRequest>,
+) -> Result<impl IntoResponse, LedgerError> {
+    Ok(Json(
+        ledger.settle(command_key(&headers)?, id, request).await?,
+    ))
+}
+async fn cancel(
+    State(ledger): State<Ledger>,
+    Path(id): Path<Uuid>,
+    headers: HeaderMap,
+    Json(request): Json<ResolutionRequest>,
+) -> Result<impl IntoResponse, LedgerError> {
+    Ok(Json(
+        ledger.cancel(command_key(&headers)?, id, request).await?,
+    ))
+}
+
+async fn create_unit(
+    State(ledger): State<Ledger>,
+    headers: HeaderMap,
+    Json(request): Json<UnitRequest>,
+) -> Result<impl IntoResponse, LedgerError> {
+    Ok(Json(
+        ledger.create_unit(command_key(&headers)?, request).await?,
+    ))
+}
+async fn unit(
+    State(ledger): State<Ledger>,
+    Path(id): Path<Uuid>,
+) -> Result<impl IntoResponse, LedgerError> {
+    Ok(Json(ledger.unit(id).await?))
+}
+async fn link_provider(
+    State(ledger): State<Ledger>,
+    Path(id): Path<Uuid>,
+    headers: HeaderMap,
+    Json(request): Json<ProviderRequest>,
+) -> Result<impl IntoResponse, LedgerError> {
+    Ok(Json(
+        ledger
+            .link_provider(command_key(&headers)?, id, request)
+            .await?,
+    ))
+}
+async fn unit_coverage(
+    State(ledger): State<Ledger>,
+    Path(id): Path<Uuid>,
+    Query(query): Query<PeriodQuery>,
+) -> Result<impl IntoResponse, LedgerError> {
+    Ok(Json(ledger.unit_coverage(id, &query.period).await?))
+}
+async fn create_need(
+    State(ledger): State<Ledger>,
+    headers: HeaderMap,
+    Json(request): Json<NeedRequest>,
+) -> Result<impl IntoResponse, LedgerError> {
+    Ok(Json(
+        ledger.create_need(command_key(&headers)?, request).await?,
+    ))
+}
+async fn need(
+    State(ledger): State<Ledger>,
+    Path(id): Path<Uuid>,
+) -> Result<impl IntoResponse, LedgerError> {
+    Ok(Json(ledger.need(id).await?))
+}
+async fn reserve_need(
+    State(ledger): State<Ledger>,
+    Path(id): Path<Uuid>,
+    headers: HeaderMap,
+    Json(request): Json<NeedReservationRequest>,
+) -> Result<impl IntoResponse, LedgerError> {
+    Ok(Json(
+        ledger
+            .reserve_need(command_key(&headers)?, id, request)
+            .await?,
+    ))
+}
+async fn need_attempts(
+    State(ledger): State<Ledger>,
+    Path(id): Path<Uuid>,
+) -> Result<impl IntoResponse, LedgerError> {
+    Ok(Json(ledger.need_attempts(id).await?))
+}
+
+impl IntoResponse for LedgerError {
+    fn into_response(self) -> Response {
+        let (status, code) = match &self {
+            Self::Invalid(_) => (StatusCode::BAD_REQUEST, "invalid_request"),
+            Self::NotFound => (StatusCode::NOT_FOUND, "account_not_found"),
+            Self::AccountConflict => (StatusCode::CONFLICT, "account_exists"),
+            Self::IdempotencyConflict => (StatusCode::CONFLICT, "idempotency_conflict"),
+            Self::InsufficientFunds => (StatusCode::CONFLICT, "insufficient_funds"),
+            Self::Overflow => (StatusCode::CONFLICT, "balance_limit"),
+            Self::AllocationConflict => (StatusCode::CONFLICT, "allocation_exists"),
+            Self::ResourceConflict => (StatusCode::CONFLICT, "resource_exists"),
+            Self::ResourceNotFound => (StatusCode::NOT_FOUND, "resource_not_found"),
+            Self::ReservationNotFound => (StatusCode::NOT_FOUND, "reservation_not_found"),
+            Self::InsufficientStock => (StatusCode::CONFLICT, "insufficient_stock"),
+            Self::ReservationClosed => (StatusCode::CONFLICT, "reservation_closed"),
+            Self::UnitNotFound => (StatusCode::NOT_FOUND, "unit_not_found"),
+            Self::UnitConflict => (StatusCode::CONFLICT, "unit_exists"),
+            Self::ProviderConflict => (StatusCode::CONFLICT, "provider_already_assigned"),
+            Self::ProviderOutOfScope => (StatusCode::CONFLICT, "provider_outside_scope"),
+            Self::NeedNotFound => (StatusCode::NOT_FOUND, "need_not_found"),
+            Self::NeedConflict => (StatusCode::CONFLICT, "need_exists"),
+            Self::ProductionNotFound => (StatusCode::NOT_FOUND, "production_not_found"),
+            Self::ProductionConflict => (StatusCode::CONFLICT, "production_exists"),
+            Self::ProductionClosed => (StatusCode::CONFLICT, "production_closed"),
+            Self::NormNotFound => (StatusCode::NOT_FOUND, "norm_not_found"),
+            Self::NormConflict => (StatusCode::CONFLICT, "norm_revision_conflict"),
+            Self::DraftNotFound => (StatusCode::NOT_FOUND, "draft_not_found"),
+            Self::DraftConflict => (StatusCode::CONFLICT, "draft_exists"),
+            Self::DraftClosed => (StatusCode::CONFLICT, "draft_closed"),
+            Self::DraftStale => (StatusCode::CONFLICT, "draft_stale"),
+            Self::DraftEmpty => (StatusCode::CONFLICT, "draft_empty"),
+            Self::MonitorNotFound => (StatusCode::NOT_FOUND, "monitor_not_found"),
+            Self::MonitorConflict => (StatusCode::CONFLICT, "monitor_exists"),
+            Self::MonitorStopped => (StatusCode::CONFLICT, "monitor_stopped"),
+            Self::CalculationNotFound => (StatusCode::NOT_FOUND, "calculation_not_found"),
+            Self::CalculationFailed => (StatusCode::SERVICE_UNAVAILABLE, "calculation_failed"),
+            Self::CalculationLeaseLost => (StatusCode::CONFLICT, "calculation_lease_lost"),
+            Self::ReviewConflict => (StatusCode::CONFLICT, "review_exists"),
+            Self::AccessDenied => (StatusCode::FORBIDDEN, "access_denied"),
+            Self::EvidenceRequired => (StatusCode::CONFLICT, "evidence_required"),
+            Self::EvidenceConflict => (StatusCode::CONFLICT, "evidence_conflict"),
+            Self::InvalidStoredResponse => {
+                (StatusCode::INTERNAL_SERVER_ERROR, "invalid_stored_response")
+            }
+            Self::Database(error) => {
+                tracing::error!(error = %error, "database request failed");
+                (StatusCode::SERVICE_UNAVAILABLE, "storage_unavailable")
+            }
+        };
+        (status, Json(json!({"error": code}))).into_response()
+    }
+}
+
+async fn create_capacity(
+    State(ledger): State<Ledger>,
+    headers: HeaderMap,
+    Json(request): Json<CapacityRequest>,
+) -> Result<impl IntoResponse, LedgerError> {
+    Ok(Json(
+        ledger
+            .create_capacity(command_key(&headers)?, request)
+            .await?,
+    ))
+}
+
+async fn create_recipe(
+    State(ledger): State<Ledger>,
+    headers: HeaderMap,
+    Json(request): Json<RecipeRequest>,
+) -> Result<impl IntoResponse, LedgerError> {
+    Ok(Json(
+        ledger
+            .create_recipe(command_key(&headers)?, request)
+            .await?,
+    ))
+}
+
+async fn plan_production(
+    State(ledger): State<Ledger>,
+    headers: HeaderMap,
+    Json(request): Json<PlanRequest>,
+) -> Result<impl IntoResponse, LedgerError> {
+    Ok(Json(
+        ledger
+            .plan_production(command_key(&headers)?, request)
+            .await?,
+    ))
+}
+
+async fn capacity(
+    State(ledger): State<Ledger>,
+    Path(id): Path<Uuid>,
+) -> Result<impl IntoResponse, LedgerError> {
+    Ok(Json(ledger.capacity(id).await?))
+}
+
+async fn recipe(
+    State(ledger): State<Ledger>,
+    Path(id): Path<Uuid>,
+) -> Result<impl IntoResponse, LedgerError> {
+    Ok(Json(ledger.recipe(id).await?))
+}
+
+async fn production_plan(
+    State(ledger): State<Ledger>,
+    Path(id): Path<Uuid>,
+) -> Result<impl IntoResponse, LedgerError> {
+    Ok(Json(ledger.production_plan(id).await?))
+}
+
+async fn assess_production(
+    State(ledger): State<Ledger>,
+    Json(request): Json<PlanRequest>,
+) -> Result<impl IntoResponse, LedgerError> {
+    Ok(Json(ledger.assess_production(request).await?))
+}
+async fn cancel_production(
+    State(ledger): State<Ledger>,
+    Path(id): Path<Uuid>,
+    headers: HeaderMap,
+    Json(request): Json<ResolutionRequest>,
+) -> Result<impl IntoResponse, LedgerError> {
+    Ok(Json(
+        ledger
+            .cancel_production(command_key(&headers)?, id, request)
+            .await?,
+    ))
+}
+
+async fn complete_production(
+    State(ledger): State<Ledger>,
+    Path(id): Path<Uuid>,
+    headers: HeaderMap,
+    Json(request): Json<CompletionRequest>,
+) -> Result<impl IntoResponse, LedgerError> {
+    Ok(Json(
+        ledger
+            .complete_production(command_key(&headers)?, id, request)
+            .await?,
+    ))
+}
+async fn production_completion(
+    State(ledger): State<Ledger>,
+    Path(id): Path<Uuid>,
+) -> Result<impl IntoResponse, LedgerError> {
+    Ok(Json(ledger.production_completion(id).await?))
+}
+async fn resource_provenance(
+    State(ledger): State<Ledger>,
+    Path(id): Path<Uuid>,
+) -> Result<impl IntoResponse, LedgerError> {
+    Ok(Json(ledger.resource_provenance(id).await?))
+}
+
+async fn create_need_norm(
+    State(ledger): State<Ledger>,
+    headers: HeaderMap,
+    Json(request): Json<NeedNorm>,
+) -> Result<impl IntoResponse, LedgerError> {
+    Ok(Json(
+        ledger
+            .create_need_norm(command_key(&headers)?, request)
+            .await?,
+    ))
+}
+
+async fn create_need_from_norm(
+    State(ledger): State<Ledger>,
+    headers: HeaderMap,
+    Json(request): Json<NormNeedRequest>,
+) -> Result<impl IntoResponse, LedgerError> {
+    Ok(Json(
+        ledger
+            .create_need_from_norm(command_key(&headers)?, request)
+            .await?,
+    ))
+}
+
+async fn need_norm(
+    State(ledger): State<Ledger>,
+    Path(id): Path<Uuid>,
+) -> Result<impl IntoResponse, LedgerError> {
+    Ok(Json(ledger.need_norm(id).await?))
+}
+
+async fn need_norm_source(
+    State(ledger): State<Ledger>,
+    Path(id): Path<Uuid>,
+) -> Result<impl IntoResponse, LedgerError> {
+    Ok(Json(ledger.need_norm_source(id).await?))
+}
+
+async fn propose_provisioning(
+    State(ledger): State<Ledger>,
+    Json(request): Json<PlanningRequest>,
+) -> Result<impl IntoResponse, LedgerError> {
+    Ok(Json(ledger.propose_provisioning(request).await?))
+}
+
+async fn create_planning_draft(
+    State(ledger): State<Ledger>,
+    headers: HeaderMap,
+    Json(request): Json<DraftRequest>,
+) -> Result<impl IntoResponse, LedgerError> {
+    Ok(Json(
+        ledger
+            .create_planning_draft(command_key(&headers)?, request)
+            .await?,
+    ))
+}
+async fn planning_draft(
+    State(ledger): State<Ledger>,
+    Path(id): Path<Uuid>,
+) -> Result<impl IntoResponse, LedgerError> {
+    Ok(Json(ledger.planning_draft(id).await?))
+}
+async fn apply_planning_draft(
+    State(ledger): State<Ledger>,
+    Path(id): Path<Uuid>,
+    headers: HeaderMap,
+    Json(request): Json<ResolutionRequest>,
+) -> Result<impl IntoResponse, LedgerError> {
+    Ok(Json(
+        ledger
+            .apply_planning_draft(command_key(&headers)?, id, request)
+            .await?,
+    ))
+}
+async fn discard_planning_draft(
+    State(ledger): State<Ledger>,
+    Path(id): Path<Uuid>,
+    headers: HeaderMap,
+    Json(request): Json<ResolutionRequest>,
+) -> Result<impl IntoResponse, LedgerError> {
+    Ok(Json(
+        ledger
+            .discard_planning_draft(command_key(&headers)?, id, request)
+            .await?,
+    ))
+}
+
+async fn create_monitor(
+    State(ledger): State<Ledger>,
+    headers: HeaderMap,
+    Json(request): Json<MonitorRequest>,
+) -> Result<impl IntoResponse, LedgerError> {
+    Ok(Json(
+        ledger
+            .create_monitor(command_key(&headers)?, request)
+            .await?,
+    ))
+}
+async fn monitor(
+    State(ledger): State<Ledger>,
+    Path(id): Path<Uuid>,
+) -> Result<impl IntoResponse, LedgerError> {
+    Ok(Json(ledger.monitor(id).await?))
+}
+async fn stop_monitor(
+    State(ledger): State<Ledger>,
+    Path(id): Path<Uuid>,
+    headers: HeaderMap,
+    Json(request): Json<ResolutionRequest>,
+) -> Result<impl IntoResponse, LedgerError> {
+    Ok(Json(
+        ledger
+            .stop_monitor(command_key(&headers)?, id, request)
+            .await?,
+    ))
+}
+async fn coordination_result(
+    State(ledger): State<Ledger>,
+    Path(id): Path<Uuid>,
+) -> Result<impl IntoResponse, LedgerError> {
+    Ok(Json(ledger.coordination_result(id).await?))
+}
+async fn record_ai_review(
+    State(ledger): State<Ledger>,
+    Path(id): Path<Uuid>,
+    headers: HeaderMap,
+    Json(request): Json<ReviewRequest>,
+) -> Result<impl IntoResponse, LedgerError> {
+    Ok(Json(
+        ledger
+            .record_ai_review(command_key(&headers)?, id, request)
+            .await?,
+    ))
+}
+async fn ai_reviews(
+    State(ledger): State<Ledger>,
+    Path(id): Path<Uuid>,
+) -> Result<impl IntoResponse, LedgerError> {
+    Ok(Json(ledger.ai_reviews(id).await?))
+}
+
+async fn register_principal(
+    State(ledger): State<Ledger>,
+    headers: HeaderMap,
+    Json(request): Json<crate::evidence::PrincipalRequest>,
+) -> Result<impl IntoResponse, LedgerError> {
+    Ok(Json(
+        ledger
+            .register_principal(command_key(&headers)?, request)
+            .await?,
+    ))
+}
+async fn record_evidence(
+    State(ledger): State<Ledger>,
+    Extension(actor): Extension<Attestor>,
+    Path((kind, id)): Path<(String, Uuid)>,
+    headers: HeaderMap,
+    Json(request): Json<crate::evidence::StatementRequest>,
+) -> Result<impl IntoResponse, LedgerError> {
+    Ok(Json(
+        ledger
+            .record_evidence(command_key(&headers)?, actor.0, &kind, id, request)
+            .await?,
+    ))
+}
+async fn evidence(
+    State(ledger): State<Ledger>,
+    Path((kind, id)): Path<(String, Uuid)>,
+    actor: Option<Extension<Attestor>>,
+) -> Result<impl IntoResponse, LedgerError> {
+    Ok(Json(
+        ledger
+            .scoped_evidence(actor.map(|a| a.0.0), &kind, id)
+            .await?,
+    ))
+}

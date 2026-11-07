@@ -1,0 +1,2 @@
+# Tiny reusable brand icons are ordinary Git assets, independent of book-image LFS.
+assets/brand/*.png -filter -diff -merge

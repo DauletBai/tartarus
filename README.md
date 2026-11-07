@@ -19,13 +19,15 @@
 
 Открытый исследовательский архив Даулета Баймурзина (Daulet Baimurza): рабочий PDF книги «Тартар и Я», материалы исследования шумерской клинописи и расчётная модель экономики Теңге. Книга ещё не издана. Текущая редакция PDF — 6 ноября 2026 года, редакция 0.89, 400 страниц; синхронизация книги — 6 ноября 2026 года.
 
-## Обновление от 6 ноября 2026
+Обновление 0.89: глава 26 и приложение дополнены расчётом без обязательного ИИ, формулами баланса и оптимизации, бюджетными сценариями, технологическим стеком и границами готовности. [Что изменено и зачем](book/README.md).
 
-Глава 26 и приложение дополнены математическим планированием без обязательного ИИ, балансами, точным целочисленным примером, сравнением расходов с ИИ и без него и технологическим стеком. [Описание изменений](book/README.md). Оценки условные и воспроизводимые; они не означают готовности системы к государственному внедрению.
+## Book and Qazna
 
-[Читать книгу в браузере](https://dauletbai.github.io/tartarus/) · [Облачный PDF по прежней ссылке](https://drive.google.com/file/d/1RL0S_ZKVzqBUH333tWwBOS3siyQagrRo/view).
+*Tartar and I* is Daulet Baimurza’s Russian research essay. Its provisioning proposal motivates [Qazna](projects/qazna.org/README.md), the Rust/PostgreSQL research implementation in this repository. The book explains the ideas; the software makes selected mechanisms testable. Software tests do not establish the historical hypotheses or validate an entire monetary system. Chapter 26 describes implemented work, synthetic exercises and the remaining physical-evidence gap. Chapter 27 now distinguishes moral prerequisites, risks from external dependence and internal concentration of power, and work for future generations from predictions of inevitable success or failure.
 
-Код Qazna на Rust/PostgreSQL развивается в [отдельной ветке этого репозитория](https://github.com/DauletBai/tartarus/tree/codex/qazna-rust-provisioning/projects/qazna.org). [Расчётное исследование и исходные параметры](https://github.com/DauletBai/tartarus/blob/491055a0c55f868274fb48872c2537c2b242879c/projects/qazna.org/docs/computation-and-ai-costs.md). Лицензии кода и документации Qazna не распространяются автоматически на книгу и внешние иллюстрации.
+[Read the Russian HTML edition](https://dauletbai.github.io/tartarus/) and use your browser’s page translation. Individual chapters and the complete text are available. Machine translations are not reviewed translations. The [HTML source](book/reader/index.html) and PDF are also included here.
+
+The active implementation is on [`codex/qazna-rust-provisioning`](https://github.com/DauletBai/tartarus/tree/codex/qazna-rust-provisioning/projects/qazna.org). The separate Qazna repository is archived earlier work. The software and documentation licenses do not extend to the book or third-party illustrations.
 
 ## Книга
 
@@ -52,6 +54,12 @@
 - [Реестр источников книги](research/source_ledger.csv).
 
 Для расширенного расчёта нужны Python 3, NumPy и SciPy: `python3 research/scripts/tenge_circulation_model.py --extended`. Команда обновляет файл результатов JSON. Числа описывают условное государство и сценарии, а не установленный прогноз.
+
+## Qazna
+
+В [projects/qazna.org](projects/qazna.org/README.md) развивается Rust-реализация модели обеспечения Теңге: назначения, циркуляция учётной меры, ресурсные резервы и подтверждение получения. Архитектура опирается на потребности и обратную связь по аналогии с живым организмом. Это исследовательский MVP с синтетическими данными.
+
+Код Qazna лицензируется по AGPL-3.0-or-later, документация его папки — по CC BY-SA 4.0. Эти лицензии относятся только к проекту Qazna и не меняют права на книгу и исследовательский архив. Проверки проекта запускаются отдельным workflow GitHub Actions.
 
 ## Получение больших файлов
 

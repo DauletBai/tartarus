@@ -1,0 +1,1117 @@
+{
+  "accounts": [
+    "children_need_group",
+    "unable_to_work_need_group",
+    "working_age_need_group",
+    "retail",
+    "production",
+    "raw_materials",
+    "equipment",
+    "transit_children",
+    "transit_unable_to_work",
+    "transit_working_age"
+  ],
+  "bounds": {
+    "growth": {
+      "minimum_opening_by_account": [
+        "4800",
+        "3600",
+        "3600",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0"
+      ],
+      "net_cycle_by_account": [
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0"
+      ],
+      "stationary_repeatable": true,
+      "total_minimum_opening": "12000"
+    },
+    "stationary": {
+      "minimum_opening_by_account": [
+        "4000",
+        "3000",
+        "3000",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0"
+      ],
+      "net_cycle_by_account": [
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0"
+      ],
+      "stationary_repeatable": true,
+      "total_minimum_opening": "10000"
+    },
+    "two_period_delay": {
+      "minimum_opening_by_account": [
+        "12000",
+        "9000",
+        "9000",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0"
+      ],
+      "net_cycle_by_account": [
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0"
+      ],
+      "stationary_repeatable": true,
+      "total_minimum_opening": "30000"
+    }
+  },
+  "candidate_rule": "Enterprise receipts first cover declared intermediate inputs; the accounted residual is distributed by need-weighted unconditional common-production entitlements. No labour eligibility test, tax, loan, interest, deposit yield or automatic issuance. The pooled variant credits the explicitly assigned common entitlement to one treasury; it is not a levy on independently owned private revenue. This is a policy candidate, not a proven right or activated API rule.",
+  "cases": [
+    {
+      "blocked_event_indices": [],
+      "name": "closed_stationary",
+      "opening": [
+        4000,
+        3000,
+        3000,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "result": {
+        "attempted_events": 56575,
+        "closing": [
+          "4000",
+          "3000",
+          "3000",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0"
+        ],
+        "first_blocked_event": null,
+        "first_blocked_period": null,
+        "insufficient_events": 0,
+        "minimum_balance": [
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0"
+        ],
+        "opening_total": "10000",
+        "settled_events": 56575,
+        "settled_volume": "80300000",
+        "unavailable_events": 0
+      }
+    },
+    {
+      "blocked_event_indices": [],
+      "name": "two_period_delay_unbuffered",
+      "opening": [
+        4000,
+        3000,
+        3000,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "result": {
+        "attempted_events": 56575,
+        "closing": [
+          "4000",
+          "3000",
+          "3000",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0"
+        ],
+        "first_blocked_event": 19,
+        "first_blocked_period": 1,
+        "insufficient_events": 62,
+        "minimum_balance": [
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0"
+        ],
+        "opening_total": "10000",
+        "settled_events": 56513,
+        "settled_volume": "80212000",
+        "unavailable_events": 0
+      }
+    },
+    {
+      "blocked_event_indices": [],
+      "name": "two_period_delay_buffered",
+      "opening": [
+        12000,
+        9000,
+        9000,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "result": {
+        "attempted_events": 56575,
+        "closing": [
+          "12000",
+          "9000",
+          "9000",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0"
+        ],
+        "first_blocked_event": null,
+        "first_blocked_period": null,
+        "insufficient_events": 0,
+        "minimum_balance": [
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0"
+        ],
+        "opening_total": "30000",
+        "settled_events": 56575,
+        "settled_volume": "80300000",
+        "unavailable_events": 0
+      }
+    },
+    {
+      "blocked_event_indices": [],
+      "name": "growth_unbuffered",
+      "opening": [
+        4000,
+        3000,
+        3000,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "result": {
+        "attempted_events": 56575,
+        "closing": [
+          "4000",
+          "3000",
+          "3000",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0"
+        ],
+        "first_blocked_event": 11315,
+        "first_blocked_period": 365,
+        "insufficient_events": 45260,
+        "minimum_balance": [
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0"
+        ],
+        "opening_total": "10000",
+        "settled_events": 11315,
+        "settled_volume": "16060000",
+        "unavailable_events": 0
+      }
+    },
+    {
+      "blocked_event_indices": [],
+      "name": "growth_prepositioned_measure",
+      "opening": [
+        4800,
+        3600,
+        3600,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "result": {
+        "attempted_events": 56575,
+        "closing": [
+          "4800",
+          "3600",
+          "3600",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0"
+        ],
+        "first_blocked_event": null,
+        "first_blocked_period": null,
+        "insufficient_events": 0,
+        "minimum_balance": [
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0"
+        ],
+        "opening_total": "12000",
+        "settled_events": 56575,
+        "settled_volume": "88330000",
+        "unavailable_events": 0
+      }
+    },
+    {
+      "blocked_event_indices": [
+        3104,
+        3135,
+        3166
+      ],
+      "name": "three_period_upstream_link_outage",
+      "opening": [
+        4000,
+        3000,
+        3000,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "result": {
+        "attempted_events": 56575,
+        "closing": [
+          "3200",
+          "900",
+          "900",
+          "4000",
+          "0",
+          "0",
+          "400",
+          "0",
+          "300",
+          "300"
+        ],
+        "first_blocked_event": 3104,
+        "first_blocked_period": 100,
+        "insufficient_events": 42071,
+        "minimum_balance": [
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0"
+        ],
+        "opening_total": "10000",
+        "settled_events": 14501,
+        "settled_volume": "14780600",
+        "unavailable_events": 3
+      }
+    }
+  ],
+  "disconnected_regions": {
+    "blocked_event_indices": [],
+    "name": "two_disconnected_complete_circuits",
+    "opening": [
+      4000,
+      3000,
+      3000,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      4000,
+      3000,
+      3000,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "result": {
+      "attempted_events": 113150,
+      "closing": [
+        "4000",
+        "3000",
+        "3000",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "4000",
+        "3000",
+        "3000",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0"
+      ],
+      "first_blocked_event": null,
+      "first_blocked_period": null,
+      "insufficient_events": 0,
+      "minimum_balance": [
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0"
+      ],
+      "opening_total": "20000",
+      "settled_events": 113150,
+      "settled_volume": "160600000",
+      "unavailable_events": 0
+    }
+  },
+  "first_period_schedule": [
+    {
+      "basis": "Need-based household consumption; no employment condition",
+      "movement": {
+        "amount": 4000,
+        "from": 0,
+        "to": 3
+      },
+      "period": 0
+    },
+    {
+      "basis": "Need-based household consumption; no employment condition",
+      "movement": {
+        "amount": 3000,
+        "from": 1,
+        "to": 3
+      },
+      "period": 0
+    },
+    {
+      "basis": "Need-based household consumption; no employment condition",
+      "movement": {
+        "amount": 3000,
+        "from": 2,
+        "to": 3
+      },
+      "period": 0
+    },
+    {
+      "basis": "Retail purchases production output",
+      "movement": {
+        "amount": 8000,
+        "from": 3,
+        "to": 4
+      },
+      "period": 0
+    },
+    {
+      "basis": "Production purchases raw materials",
+      "movement": {
+        "amount": 4000,
+        "from": 4,
+        "to": 5
+      },
+      "period": 0
+    },
+    {
+      "basis": "Production purchases equipment service",
+      "movement": {
+        "amount": 1000,
+        "from": 4,
+        "to": 6
+      },
+      "period": 0
+    },
+    {
+      "basis": "Raw-material unit purchases equipment service",
+      "movement": {
+        "amount": 1000,
+        "from": 5,
+        "to": 6
+      },
+      "period": 0
+    },
+    {
+      "basis": "Experimental unconditional share of common production",
+      "movement": {
+        "amount": 800,
+        "from": 3,
+        "to": 7
+      },
+      "period": 0
+    },
+    {
+      "basis": "Experimental unconditional share of common production",
+      "movement": {
+        "amount": 600,
+        "from": 3,
+        "to": 8
+      },
+      "period": 0
+    },
+    {
+      "basis": "Experimental unconditional share of common production",
+      "movement": {
+        "amount": 600,
+        "from": 3,
+        "to": 9
+      },
+      "period": 0
+    },
+    {
+      "basis": "Experimental unconditional share of common production",
+      "movement": {
+        "amount": 1200,
+        "from": 4,
+        "to": 7
+      },
+      "period": 0
+    },
+    {
+      "basis": "Experimental unconditional share of common production",
+      "movement": {
+        "amount": 900,
+        "from": 4,
+        "to": 8
+      },
+      "period": 0
+    },
+    {
+      "basis": "Experimental unconditional share of common production",
+      "movement": {
+        "amount": 900,
+        "from": 4,
+        "to": 9
+      },
+      "period": 0
+    },
+    {
+      "basis": "Experimental unconditional share of common production",
+      "movement": {
+        "amount": 1200,
+        "from": 5,
+        "to": 7
+      },
+      "period": 0
+    },
+    {
+      "basis": "Experimental unconditional share of common production",
+      "movement": {
+        "amount": 900,
+        "from": 5,
+        "to": 8
+      },
+      "period": 0
+    },
+    {
+      "basis": "Experimental unconditional share of common production",
+      "movement": {
+        "amount": 900,
+        "from": 5,
+        "to": 9
+      },
+      "period": 0
+    },
+    {
+      "basis": "Experimental unconditional share of common production",
+      "movement": {
+        "amount": 800,
+        "from": 6,
+        "to": 7
+      },
+      "period": 0
+    },
+    {
+      "basis": "Experimental unconditional share of common production",
+      "movement": {
+        "amount": 600,
+        "from": 6,
+        "to": 8
+      },
+      "period": 0
+    },
+    {
+      "basis": "Experimental unconditional share of common production",
+      "movement": {
+        "amount": 600,
+        "from": 6,
+        "to": 9
+      },
+      "period": 0
+    },
+    {
+      "basis": "Settle segregated entitlement; no interest or fee",
+      "movement": {
+        "amount": 800,
+        "from": 7,
+        "to": 0
+      },
+      "period": 0
+    },
+    {
+      "basis": "Settle segregated entitlement; no interest or fee",
+      "movement": {
+        "amount": 600,
+        "from": 8,
+        "to": 1
+      },
+      "period": 0
+    },
+    {
+      "basis": "Settle segregated entitlement; no interest or fee",
+      "movement": {
+        "amount": 600,
+        "from": 9,
+        "to": 2
+      },
+      "period": 0
+    },
+    {
+      "basis": "Settle segregated entitlement; no interest or fee",
+      "movement": {
+        "amount": 1200,
+        "from": 7,
+        "to": 0
+      },
+      "period": 0
+    },
+    {
+      "basis": "Settle segregated entitlement; no interest or fee",
+      "movement": {
+        "amount": 900,
+        "from": 8,
+        "to": 1
+      },
+      "period": 0
+    },
+    {
+      "basis": "Settle segregated entitlement; no interest or fee",
+      "movement": {
+        "amount": 900,
+        "from": 9,
+        "to": 2
+      },
+      "period": 0
+    },
+    {
+      "basis": "Settle segregated entitlement; no interest or fee",
+      "movement": {
+        "amount": 1200,
+        "from": 7,
+        "to": 0
+      },
+      "period": 0
+    },
+    {
+      "basis": "Settle segregated entitlement; no interest or fee",
+      "movement": {
+        "amount": 900,
+        "from": 8,
+        "to": 1
+      },
+      "period": 0
+    },
+    {
+      "basis": "Settle segregated entitlement; no interest or fee",
+      "movement": {
+        "amount": 900,
+        "from": 9,
+        "to": 2
+      },
+      "period": 0
+    },
+    {
+      "basis": "Settle segregated entitlement; no interest or fee",
+      "movement": {
+        "amount": 800,
+        "from": 7,
+        "to": 0
+      },
+      "period": 0
+    },
+    {
+      "basis": "Settle segregated entitlement; no interest or fee",
+      "movement": {
+        "amount": 600,
+        "from": 8,
+        "to": 1
+      },
+      "period": 0
+    },
+    {
+      "basis": "Settle segregated entitlement; no interest or fee",
+      "movement": {
+        "amount": 600,
+        "from": 9,
+        "to": 2
+      },
+      "period": 0
+    }
+  ],
+  "kind": "synthetic_closed_circulation_candidate",
+  "limitations": [
+    "Aggregate need groups; not 100 million individual actors",
+    "Accounting flows alone do not prove physical delivery, price formation or sufficiency",
+    "Physical production and capital replacement need separate coupled constraints",
+    "Growth is in quantity at unchanged unit measure; extra opening reserve is prepositioned, not issued at a shock",
+    "Delayed payments reside in explicit transit accounts; pooled cases keep bridging reserves in the common treasury, not personal accounts",
+    "Transfer failures preserve balances but miss scheduled deadlines; no automatic retry policy",
+    "Need weights are synthetic; additional contribution rewards and changing individual choice are not resolved"
+  ],
+  "model_calls": 0,
+  "periods": 1825,
+  "pooled_cases": [
+    {
+      "bound": {
+        "minimum_opening_by_account": [
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "10000"
+        ],
+        "net_cycle_by_account": [
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0"
+        ],
+        "stationary_repeatable": true,
+        "total_minimum_opening": "10000"
+      },
+      "name": "pooled_same_day",
+      "opening": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        10000
+      ],
+      "residents_end_each_period_zero_by_schedule": true,
+      "result": {
+        "attempted_events": 62050,
+        "closing": [
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "10000"
+        ],
+        "first_blocked_event": null,
+        "first_blocked_period": null,
+        "insufficient_events": 0,
+        "minimum_balance": [
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0"
+        ],
+        "opening_total": "10000",
+        "settled_events": 62050,
+        "settled_volume": "98550000",
+        "unavailable_events": 0
+      }
+    },
+    {
+      "bound": {
+        "minimum_opening_by_account": [
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "30000"
+        ],
+        "net_cycle_by_account": [
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0"
+        ],
+        "stationary_repeatable": true,
+        "total_minimum_opening": "30000"
+      },
+      "name": "pooled_two_period_delay",
+      "opening": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        30000
+      ],
+      "residents_end_each_period_zero_by_schedule": true,
+      "result": {
+        "attempted_events": 62050,
+        "closing": [
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "30000"
+        ],
+        "first_blocked_event": null,
+        "first_blocked_period": null,
+        "insufficient_events": 0,
+        "minimum_balance": [
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0"
+        ],
+        "opening_total": "30000",
+        "settled_events": 62050,
+        "settled_volume": "98550000",
+        "unavailable_events": 0
+      }
+    },
+    {
+      "bound": {
+        "minimum_opening_by_account": [
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "12000"
+        ],
+        "net_cycle_by_account": [
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0"
+        ],
+        "stationary_repeatable": true,
+        "total_minimum_opening": "12000"
+      },
+      "name": "pooled_growth",
+      "opening": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        12000
+      ],
+      "residents_end_each_period_zero_by_schedule": true,
+      "result": {
+        "attempted_events": 62050,
+        "closing": [
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "12000"
+        ],
+        "first_blocked_event": null,
+        "first_blocked_period": null,
+        "insufficient_events": 0,
+        "minimum_balance": [
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0"
+        ],
+        "opening_total": "12000",
+        "settled_events": 62050,
+        "settled_volume": "108405000",
+        "unavailable_events": 0
+      }
+    },
+    {
+      "bound": {
+        "minimum_opening_by_account": [
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "6000"
+        ],
+        "net_cycle_by_account": [
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0"
+        ],
+        "stationary_repeatable": true,
+        "total_minimum_opening": "6000"
+      },
+      "name": "pooled_growth_two_intraday_waves",
+      "opening": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        6000
+      ],
+      "residents_end_each_period_zero_by_schedule": true,
+      "result": {
+        "attempted_events": 124100,
+        "closing": [
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "6000"
+        ],
+        "first_blocked_event": null,
+        "first_blocked_period": null,
+        "insufficient_events": 0,
+        "minimum_balance": [
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0"
+        ],
+        "opening_total": "6000",
+        "settled_events": 124100,
+        "settled_volume": "108405000",
+        "unavailable_events": 0
+      }
+    }
+  ],
+  "shared_treasury_account_index": 10,
+  "unit": "synthetic minor accounting measure; fixed across scenarios",
+  "version": 1
+}

@@ -1,0 +1,137 @@
+<!-- Adapted from the author's Shanraq mark; geometry and 1.83-second pulse preserved; two red directional flows. -->
+<svg role="img" aria-labelledby="qazna-title qazna-desc" style="--qazna-bright: #ff0815; --qazna-deep: #cd0011" width="128" height="128" viewBox="0 0 400 400" xmlns="http://www.w3.org/2000/svg">
+  <title id="qazna-title">Qazna — circulating provision</title>
+  <desc id="qazna-desc">A pulsating shanyrak with bright red central and deep red outer channels with opposing flows, representing continuous circulation.</desc>
+  <g style="transform: scale(0.85); transform-origin: 200px 200px;">
+    <g class="heartbeat">
+      <!-- Stroke lines -->
+      <line class="stroke" x1="76" y1="76" x2="324" y2="324" />
+      <line class="stroke" x1="137" y1="37" x2="363" y2="263" />
+      <line class="stroke" x1="37" y1="137" x2="263" y2="363" />
+
+      <line class="stroke" x1="76" y1="324" x2="324" y2="76" />
+      <line class="stroke" x1="137" y1="363" x2="363" y2="137" />
+      <line class="stroke" x1="37" y1="263" x2="263" y2="37" />
+
+      <!-- Blood flow particles -->
+      <line class="flow flow-1" x1="76" y1="76" x2="324" y2="324" />
+      <line class="flow flow-2" x1="137" y1="37" x2="363" y2="263" />
+      <line class="flow flow-3" x1="37" y1="137" x2="263" y2="363" />
+
+      <line class="flow flow-4" x1="76" y1="324" x2="324" y2="76" />
+      <line class="flow flow-5" x1="137" y1="363" x2="363" y2="137" />
+      <line class="flow flow-6" x1="37" y1="263" x2="263" y2="37" />
+    </g>
+  </g>
+
+  <style>
+    .stroke {
+      fill: none;
+      stroke: #ff000d;
+      stroke-opacity: 0.30;
+      stroke-width: 45;
+      stroke-linecap: round;
+    }
+
+    .flow {
+      fill: none;
+      stroke: var(--qazna-bright);
+      stroke-width: 30;
+      stroke-linecap: round;
+      stroke-dasharray: 64 128;
+      stroke-dashoffset: 192;
+      animation-duration: 1.83s;
+      animation-iteration-count: infinite;
+      animation-timing-function: linear;
+    }
+
+    .flow-1, .flow-2, .flow-3 {
+      animation-name: bloodFlowForward;
+    }
+
+    .flow-4, .flow-5, .flow-6 {
+      animation-name: bloodFlowReverse;
+    }
+
+    .flow-1, .flow-4 { stroke: var(--qazna-bright); }
+    .flow-2, .flow-3, .flow-5, .flow-6 { stroke: var(--qazna-deep); }
+
+    @keyframes bloodFlowForward {
+      0% {
+        stroke-dashoffset: 192;
+        opacity: 0.7;
+      }
+      5% {
+        opacity: 0.8;
+      }
+      12% {
+        opacity: 1.0;
+      }
+      20% {
+        opacity: 0.7;
+      }
+      35% {
+        opacity: 0.8;
+      }
+      42% {
+        opacity: 1.0;
+      }
+      55% {
+        stroke-dashoffset: 86.4;
+        opacity: 0.7;
+      }
+      100% {
+        stroke-dashoffset: 0;
+        opacity: 0.7;
+      }
+    }
+
+    @keyframes bloodFlowReverse {
+      0% {
+        stroke-dashoffset: 0;
+        opacity: 0.7;
+      }
+      5% {
+        opacity: 0.8;
+      }
+      12% {
+        opacity: 1.0;
+      }
+      20% {
+        opacity: 0.7;
+      }
+      35% {
+        opacity: 0.8;
+      }
+      42% {
+        opacity: 1.0;
+      }
+      55% {
+        stroke-dashoffset: 105.6;
+        opacity: 0.7;
+      }
+      100% {
+        stroke-dashoffset: 192;
+        opacity: 0.7;
+      }
+    }
+
+    .heartbeat {
+      animation: heartbeat 1.83s ease-in-out infinite;
+      transform-origin: 200px 200px;
+    }
+
+    @keyframes heartbeat {
+      0%   { transform: scale(1); }
+      12%  { transform: scale(1.08); }
+      25%  { transform: scale(1); }
+      32%  { transform: scale(1); }
+      42%  { transform: scale(1.05); }
+      55%  { transform: scale(1); }
+      100% { transform: scale(1); }
+    }
+    @media (prefers-reduced-motion: reduce) {
+      .heartbeat, .flow { animation: none; }
+    }
+  </style>
+</svg>

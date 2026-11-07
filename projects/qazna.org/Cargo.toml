@@ -1,0 +1,30 @@
+[package]
+name = "qazna"
+version = "0.11.0"
+license = "AGPL-3.0-or-later"
+description = "Needs-based provisioning and auditable resource circulation for Qazna"
+repository = "https://github.com/DauletBai/tartarus"
+edition = "2024"
+rust-version = "1.88"
+publish = false
+
+[dependencies]
+axum = "0.8"
+serde = { version = "1", features = ["derive"] }
+serde_json = "1"
+sqlx = { version = "0.8.6", default-features = false, features = ["runtime-tokio", "tls-rustls-ring", "postgres", "uuid", "json", "migrate", "macros"] }
+subtle = "2.6"
+thiserror = "2"
+tokio = { version = "1", features = ["macros", "rt-multi-thread", "net", "signal", "time"] }
+tracing = "0.1"
+tracing-subscriber = { version = "0.3", features = ["env-filter"] }
+uuid = { version = "1", features = ["serde", "v4"] }
+
+[dev-dependencies]
+http-body-util = "0.1"
+tower = { version = "0.5", features = ["util"] }
+
+[profile.release]
+overflow-checks = true
+lto = "thin"
+

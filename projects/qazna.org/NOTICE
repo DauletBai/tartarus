@@ -1,0 +1,22 @@
+Qazna
+Copyright (c) 2026 Qazna Technologies LLP and contributors.
+
+Code, tests, SQL migrations and scripts in this project are licensed under
+AGPL-3.0-or-later. See LICENSE for the GNU Affero General Public License v3.
+Documentation in this project is licensed under CC-BY-SA-4.0; see LICENSE-DOCS.
+Documentation code examples may also be used under AGPL-3.0-or-later.
+
+The parent Tartarus book and research archive are outside the scope of these
+licenses. Their existing notices and third-party rights remain applicable.
+
+Rust dependencies are not vendored or relicensed by this project.
+Their upstream license declarations and locked versions are recorded in
+THIRD_PARTY_LICENSES.json. Preserve relevant upstream notices when distributing
+bundled source or compiled releases. The inventory is not a binary license bundle.
+
+Qazna's economic model is experimental. This project is not an authorized
+payment service, official digital tenge implementation, or government pilot.
+
+The red Qazna brand assets in assets/brand derive from the author's Shanraq mark,
+adapted at the author's request. Their provenance is recorded in that directory;
+these project graphics use the project documentation license, CC-BY-SA-4.0.
