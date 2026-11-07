@@ -199,3 +199,15 @@ Next implement coupled/block moves or an independently verified solver candidate
 then causal rolling windows with committed work, expiry and safety-reserve policies.
 Real sector coefficients need the input evidence listed in the
 [calibration gate](physical-circulation.md#units-and-calibration-gate).
+
+
+### Causal recovery milestone — 7 November 2026
+
+Implemented an offline committed-output pipeline and a daily reserve-route policy.
+The synthetic 30-period primary-transport interruption has zero missed meals with
+declared slower reserve capacity; the 90-period stress retains a measured shortage.
+Same-observation trace prefixes are equal despite different future recovery dates.
+All traces retain exact physical/cash verification. This completes a bounded causal
+recovery experiment, not a national planner. Next: joint reserve/route scheduling,
+expiry and in-transit losses, uncertain demand, explicit priorities and a single
+opening cash envelope valid across the declared disruption set.

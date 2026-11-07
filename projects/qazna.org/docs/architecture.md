@@ -108,3 +108,17 @@ reconstructs goods/payment links and exact opening funds after improvement. This
 module has no database access, HTTP endpoint, solver dependency or AI authority.
 The [comparison and counterexample](physical-circulation.md#reducing-excess-production-while-preserving-provision)
 explain why it is a research improvement procedure rather than a global optimizer.
+
+
+### Causal commitment and recovery experiment
+
+`replanning::ProductionPipeline` records accepted process starts and pending outputs
+with exact delayed release, sequential periods and idempotent command keys. It
+rejects changed retries and checks all arithmetic before mutation. It is an offline
+research component, not a persistent runtime queue. The coupled example adds slower
+reserve transport routes and daily feedback from current capacity/inventory, with
+prefix comparisons between scenarios that share observations but differ in future
+outage duration. Independent full physical and payment replay verifies each trace.
+The physical policy is causal; its separately calculated prefunding bound is still
+retrospective. Production loss/expiry, a fixed cash envelope and global rolling
+optimization remain open. See [results and equations](physical-circulation.md#causal-recovery-through-reserve-routes).

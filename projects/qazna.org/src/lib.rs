@@ -21,3 +21,4 @@ mod observability;
 pub mod horizon;
 pub mod mathematics;
 pub mod optimization;
+pub mod replanning;

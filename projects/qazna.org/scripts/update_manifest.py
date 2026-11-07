@@ -13,6 +13,10 @@ def main():
             raise SystemExit("Unexpected parent manifest format")
         entries = {row["path"]: row for row in reader}
     files = inventory()
+    published = {item['path'] for item in files}
+    for old_path in list(entries):
+        if old_path.startswith('projects/qazna.org/') and old_path not in published:
+            del entries[old_path]
     for item in files:
         entries[item["path"]] = {key: item[key] for key in ["path", "bytes", "sha256"]}
     with manifest.open("w", encoding="utf-8-sig", newline="") as destination:

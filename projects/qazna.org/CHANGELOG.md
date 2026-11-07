@@ -2,6 +2,11 @@
 
 ## Unreleased
 
+- Add causal delayed-output commitments with idempotent retries, overflow atomicity and independent commitment-list tests.
+- Compare fixed and slower reserve transport routes under 30/90-period closures; verify equal decision prefixes before future conditions diverge.
+- Scope the fixed-route shortage certificate explicitly; retain residual physical shortages and retrospective cash-bound limitations.
+- Rename the canonical brand asset to `qazna.svg`; use bright central and dark outer channels, opposite animation directions and matching favicon derivatives; add alternating woven depth to PNG/ICO variants while preserving the accepted animated SVG.
+
 - Add exact integer plan trimming with fixed deliveries, terminal reserves, cached shared-capability guards and independently verified passes.
 - Compare five paired five-year physical/cash traces; rebuild payment links and opening funds after reducing excess production.
 - Test against exhaustive coordinate replay and a counterexample to global-optimum claims; document synthetic units and calibration requirements.

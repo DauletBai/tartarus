@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="assets/brand/qazna-shanyrak.svg" width="176" height="176" alt="Qazna — red pulsating shanyrak, continuous circulation">
+  <img src="assets/brand/qazna.svg" width="176" height="176" alt="Qazna — red pulsating shanyrak, continuous circulation">
 </p>
 <h1 align="center">Qazna</h1>
 <p align="center"><strong>Human needs · Shared capabilities · Continuous circulation</strong></p>
@@ -85,6 +85,10 @@ Its exact integer improvement stage reduces excess starts while preserving each
 delivery and terminal reserves; all payments are recalculated. The baseline uses
 44.08% fewer power batches than the fixed-output seed. This is a synthetic
 comparison, not a calibrated savings forecast or a global optimum.
+A causal reserve-route experiment then reduces unmet meals during a 90-day primary
+transport interruption by 72.24%, and eliminates them in the 30-day scenario under
+the declared stocks/capacities. Future restoration dates are not supplied to the
+daily decisions; exact physical and cash checks remain separate.
 
 ## Run the checks
 

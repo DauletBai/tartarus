@@ -3,7 +3,7 @@ use qazna::{horizon::*, mathematics::*};
 use serde_json::json;
 use std::{env, fs};
 const R: usize = 16;
-const J: usize = 12;
+const J: usize = 14;
 const SCALE: i64 = 100_000; // 1,000 synthetic residents scaled to 100 million.
 const DAYS: usize = 1825;
 const VALUE: [i64; R] = [
@@ -42,7 +42,7 @@ fn movement(
         });
     }
 }
-fn study(name: &str, trim: bool) -> serde_json::Value {
+fn study(name: &str, trim: bool, reroute: bool) -> (serde_json::Value, Vec<PeriodPlan>) {
     let resources = [
         "ore_in_ground",
         "fuel_in_ground",
@@ -74,6 +74,8 @@ fn study(name: &str, trim: bool) -> serde_json::Value {
         "construction",
         "training",
         "housing_service",
+        "reserve_grain_transport",
+        "reserve_meal_delivery",
     ];
     let processes = vec![
         process(&[(1, 10), (3, 1)], 4, 10, 1),
@@ -93,6 +95,8 @@ fn study(name: &str, trim: bool) -> serde_json::Value {
             if name == "training_delay" { 720 } else { 180 },
         ),
         process(&[(2, 1), (3, 1)], 15, 10, 1),
+        process(&[(10, 10), (3, 2)], 11, 10, 2),
+        process(&[(12, 10), (3, 2)], 13, 10, 2),
     ];
     let initial = [
         1_000_000, 1_000_000, 0, 4000, 1000, 1000, 2000, 300, 200, 120, 6000, 4000, 4000, 4000,
@@ -107,19 +111,19 @@ fn study(name: &str, trim: bool) -> serde_json::Value {
             name: "qualified_hours".into(),
             resource: 8,
             units_per_stock: 8,
-            activity_use: vec![1, 1, 1, 2, 8, 2, 2, 2, 2, 8, 4, 1],
+            activity_use: vec![1, 1, 1, 2, 8, 2, 2, 2, 2, 8, 4, 1, 4, 4],
         },
         StockCapacity {
             name: "equipment_use".into(),
             resource: 7,
             units_per_stock: 4,
-            activity_use: vec![1, 1, 1, 1, 2, 1, 2, 1, 2, 2, 0, 0],
+            activity_use: vec![1, 1, 1, 1, 2, 1, 2, 1, 2, 2, 0, 0, 4, 4],
         },
         StockCapacity {
             name: "housing_use".into(),
             resource: 14,
             units_per_stock: 1,
-            activity_use: vec![0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 10],
+            activity_use: vec![0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 10, 0, 0],
         },
     ];
     let exits = vec![
@@ -149,18 +153,23 @@ fn study(name: &str, trim: bool) -> serde_json::Value {
     let mut owner = [0usize; R];
     for (j, p) in model.processes.iter().enumerate() {
         let k = p.outputs.iter().position(|&q| q > 0).unwrap();
-        owner[k] = j + 2;
+        if owner[k] == 0 {
+            owner[k] = j + 2;
+        }
         if VALUE[k] > 0 {
             let cost: i64 = p.inputs.iter().zip(VALUE).map(|(q, v)| q * v).sum();
             assert_eq!(cost % p.outputs[k], 0);
-            margin[k] = VALUE[k] - cost / p.outputs[k];
+            let recipe_margin = VALUE[k] - cost / p.outputs[k];
+            if j >= 12 {
+                assert_eq!(recipe_margin, margin[k]);
+            }
+            margin[k] = recipe_margin;
             assert!(margin[k] >= 0);
         }
     }
     let mut plan: Vec<PeriodPlan> = vec![];
     let mut previous = model.initial.clone();
-    let mut pipeline = vec![vec![0i64; R]; DAYS + 721];
-    let mut wip = [0i64; R];
+    let mut pipeline = qazna::replanning::ProductionPipeline::new(R).unwrap();
     for day in 0..DAYS {
         let demand = (1000 + 50 * (day / 365) as i64) * SCALE;
         let mut data = Period {
@@ -171,7 +180,9 @@ fn study(name: &str, trim: bool) -> serde_json::Value {
         data.supplies[2] = 10000 * SCALE;
         data.needs[13] = demand;
         data.needs[15] = demand;
-        if name == "transport_outage" && (365..395).contains(&day) {
+        if (name == "transport_outage" && (365..395).contains(&day))
+            || (name == "long_transport_outage" && (365..455).contains(&day))
+        {
             data.capacities[6] = 0;
             data.capacities[8] = 0;
         }
@@ -186,12 +197,10 @@ fn study(name: &str, trim: bool) -> serde_json::Value {
             assert!(opening[e.resource] >= e.quantity);
             opening[e.resource] -= e.quantity;
         }
+        let arriving = pipeline.advance(day).unwrap();
         let mut available: Vec<_> = (0..R)
-            .map(|k| opening[k] + data.supplies[k] + pipeline[day][k])
+            .map(|k| opening[k] + data.supplies[k] + arriving[k])
             .collect();
-        for k in 0..R {
-            wip[k] -= pipeline[day][k];
-        }
         let deliveries: Vec<_> = (0..R).map(|k| available[k].min(data.needs[k])).collect();
         for k in 0..R {
             available[k] -= deliveries[k];
@@ -207,8 +216,11 @@ fn study(name: &str, trim: bool) -> serde_json::Value {
         // Published annual growth is known ahead; outages are not anticipated.
         // Preserve core energy first, then
         // provisioning; capacity expansion/training use remaining shared resources.
-        for j in [1, 0, 11, 8, 7, 6, 5, 2, 3, 4, 9, 10] {
+        for j in [1, 0, 11, 8, 13, 7, 6, 12, 5, 2, 3, 4, 9, 10] {
             let p = &model.processes[j];
+            if j >= 12 && !reroute {
+                continue;
+            }
             if day + p.lead_periods >= DAYS {
                 continue;
             }
@@ -218,7 +230,8 @@ fn study(name: &str, trim: bool) -> serde_json::Value {
             } else if k == 15 {
                 ((1000 + 50 * ((day + 1) / 365) as i64) * SCALE + 9) / 10
             } else {
-                ((target[k] * SCALE - available[k] - wip[k]).max(0) + p.outputs[k] - 1)
+                ((target[k] * SCALE - available[k] - pipeline.pending()[k]).max(0) + p.outputs[k]
+                    - 1)
                     / p.outputs[k]
             };
             let mut n = desired.min(data.capacities[j]);
@@ -242,9 +255,8 @@ fn study(name: &str, trim: bool) -> serde_json::Value {
             for (l, lim) in limits.iter().enumerate() {
                 budget[l] -= lim.activity_use[j] * n;
             }
-            for (k, &q) in p.outputs.iter().enumerate() {
-                pipeline[day + p.lead_periods][k] += q * n;
-                wip[k] += q * n;
+            if n > 0 {
+                assert!(pipeline.commit(day, j, p, n).unwrap());
             }
         }
         let waste: Vec<_> = (0..R)
@@ -260,6 +272,7 @@ fn study(name: &str, trim: bool) -> serde_json::Value {
             discarded: waste,
         });
     }
+    assert!(pipeline.pending().iter().all(|&q| q == 0));
     let terminal = plan.last().unwrap().closing.clone();
     let trim_evidence = if trim {
         let (improved, evidence) = qazna::optimization::trim_plan(
@@ -268,7 +281,7 @@ fn study(name: &str, trim: bool) -> serde_json::Value {
             &limits,
             &exits,
             &terminal,
-            &[9, 4, 10, 11, 8, 7, 6, 5, 3, 2, 1, 0],
+            &[9, 4, 10, 11, 8, 13, 7, 6, 12, 5, 3, 2, 1, 0],
             8,
         )
         .unwrap();
@@ -381,7 +394,7 @@ fn study(name: &str, trim: bool) -> serde_json::Value {
                 );
             }
         }
-        for j in [1, 0, 11, 8, 7, 6, 5, 2, 3, 4, 9, 10] {
+        for j in [1, 0, 11, 8, 13, 7, 6, 12, 5, 2, 3, 4, 9, 10] {
             let p = &model.processes[j];
             let n = period_plan.activities[j];
             starts[j] += i128::from(n);
@@ -398,7 +411,15 @@ fn study(name: &str, trim: bool) -> serde_json::Value {
                             resource: k,
                         },
                         day,
-                        if j == 10 { 0 } else { j + 2 },
+                        if j == 10 {
+                            0
+                        } else if j == 12 {
+                            8
+                        } else if j == 13 {
+                            10
+                        } else {
+                            j + 2
+                        },
                         k,
                         q * n,
                     );
@@ -428,8 +449,16 @@ fn study(name: &str, trim: bool) -> serde_json::Value {
     let dual = model.full_coverage_dual(&matrix);
     let optimal = verify_linear(&matrix, &vector, Some(&dual)).is_ok();
     let mut infeasibility_bound = None;
-    if name == "transport_outage" {
+    if name == "transport_outage" && !reroute {
         let mut required = matrix.clone();
+        for t in 0..DAYS {
+            required.rows.push(Row {
+                name: format!("fixed_route_policy:{t}"),
+                terms: vec![(t * (3 * R + J) + 3 * R + 13, 1)],
+                sense: Sense::AtMost,
+                rhs: 0,
+            });
+        }
         let mut weights = vec![0i64; required.rows.len()];
         let index: std::collections::BTreeMap<_, _> = required
             .rows
@@ -440,6 +469,7 @@ fn study(name: &str, trim: bool) -> serde_json::Value {
         for t in 365..395 {
             weights[index[&format!("balance:{t}:13")]] = 1;
             weights[index[&format!("capacity:{}:8", t - 1)]] = 10;
+            weights[index[&format!("fixed_route_policy:{}", t - 2)]] = 10;
         }
         weights[index["storage:364:13"]] = 1;
         for t in 365..395 {
@@ -517,10 +547,13 @@ fn study(name: &str, trim: bool) -> serde_json::Value {
         prior = p.closing.clone();
     }
     eprintln!("Verified scenario {name}, trim={trim}");
-    json!({"scenario":name,"trim_evidence":trim_evidence,"input_status":"synthetic_uncalibrated","population_scale":100_000_000,"periods":DAYS,"resources":resources,"process_names":names,"processes":model.processes,"initial":model.initial,"storage_caps":model.storage_caps,"limits":limits,"withdrawals":exits,
+    (
+        json!({"scenario":name,"rerouting":reroute,"trim_evidence":trim_evidence,"input_status":"synthetic_uncalibrated","population_scale":100_000_000,"periods":DAYS,"resources":resources,"process_names":names,"processes":model.processes,"initial":model.initial,"storage_caps":model.storage_caps,"limits":limits,"withdrawals":exits,
         "fixed_unit_measure":VALUE,"common_entitlement_per_sold_unit":margin,"owner_account":owner,
-        "matrix":{"variables":matrix.objective.len(),"rows":matrix.rows.len(),"nonzero_terms":matrix.rows.iter().map(|r|r.terms.len()).sum::<usize>()},"minimum_outage_unmet_proven":infeasibility_bound,"cash_link_count":links.len(),"forged_payment_rejected":true,"physical_verification":verified,"food_objective_optimal":optimal,"first_unmet_day":first,"discarded":discarded.iter().map(ToString::to_string).collect::<Vec<_>>(),"unmet":missing.iter().map(ToString::to_string).collect::<Vec<_>>(),"activity_totals":starts.iter().map(ToString::to_string).collect::<Vec<_>>(),"first_activity":first_departure,"years":years,
-        "requested_provision_measure":measures[0].to_string(),"delivered_provision_measure":measures[1].to_string(),"completed_capital_procurement_measure":measures[2].to_string(),"liquidity":bound,"money":money})
+        "matrix":{"variables":matrix.objective.len(),"rows":matrix.rows.len(),"nonzero_terms":matrix.rows.iter().map(|r|r.terms.len()).sum::<usize>()},"minimum_outage_unmet_proven":infeasibility_bound,"outage_bound_scope":if infeasibility_bound.is_some(){Some("fixed_route_policy_no_reserve_meal_dispatch")}else{None},"cash_link_count":links.len(),"forged_payment_rejected":true,"physical_verification":verified,"food_objective_optimal":optimal,"first_unmet_day":first,"discarded":discarded.iter().map(ToString::to_string).collect::<Vec<_>>(),"unmet":missing.iter().map(ToString::to_string).collect::<Vec<_>>(),"activity_totals":starts.iter().map(ToString::to_string).collect::<Vec<_>>(),"first_activity":first_departure,"years":years,
+        "requested_provision_measure":measures[0].to_string(),"delivered_provision_measure":measures[1].to_string(),"completed_capital_procurement_measure":measures[2].to_string(),"liquidity":bound,"money":money}),
+        plan,
+    )
 }
 fn main() {
     let cases: Vec<_> = [
@@ -531,7 +564,7 @@ fn main() {
         "training_delay",
     ]
     .into_iter()
-    .map(|name| study(name, false))
+    .map(|name| study(name, false, false).0)
     .collect();
     assert!(cases[0]["first_unmet_day"].is_null());
     assert!(cases[0]["food_objective_optimal"].as_bool().unwrap());
@@ -543,7 +576,7 @@ fn main() {
     );
     let improved: Vec<_> = cases
         .iter()
-        .map(|c| study(c["scenario"].as_str().unwrap(), true))
+        .map(|c| study(c["scenario"].as_str().unwrap(), true, false).0)
         .collect();
     let comparisons: Vec<_> = cases.iter().zip(&improved).map(|(before,after)| {
         assert_eq!(before["unmet"], after["unmet"]);
@@ -562,8 +595,25 @@ fn main() {
             "opening_measure_before":before["liquidity"],"opening_measure_after":after["liquidity"],
             "trim_evidence":after["trim_evidence"]})
     }).collect();
-    let report = json!({"version":2,"kind":"synthetic_coupled_capability_study","model_calls":0,
-        "assumptions":["Synthetic aggregate coefficients, not demographic/engineering norms","Water is an external boundary supply; deposits and initial assets/stocks are explicit","Training places represent consenting eligible capacity, not people owned or traded","Qualified capacity and equipment are shared use limits, not consumed ingredients","Public asset procurement is paid only for completed equipment/buildings","Input payments follow actual consumption; incomplete work ties up opening working measure","Natural resources and people have zero commodity price in this example","All monetary norms fixed; no interest, tax, loan or later issuance","Actual missing provision remains recorded; no claim that missing goods cancel human entitlements","Money is prefunded using exact schedule bounds, not optimized globally","Trimmed cases are retrospective fixed-delivery improvements, not causal forecasts or global optima","The original terminal stock is a lower bound in trimmed cases; all intermediate safety-stock policy remains open","Energy/fuel/material quantities are abstract recipe units, not measured kWh/tonnes; external water left unused is reported separately from energy discard","Inventory age/expiry, health demography, individual choice, teacher specializations and foreign trade remain open","Heuristic is not a global optimum except when a valid stated objective certificate exists"],"cases":cases,"improved_cases":improved,"comparisons":comparisons});
+    let (normal, normal_trace) = study("baseline", false, true);
+    let (recovered, recovered_trace) = study("transport_outage", false, true);
+    let (long_fixed, _) = study("long_transport_outage", false, false);
+    let (long_recovered, long_trace) = study("long_transport_outage", false, true);
+    assert_eq!(
+        serde_json::to_value(&normal_trace[..365]).unwrap(),
+        serde_json::to_value(&recovered_trace[..365]).unwrap()
+    );
+    assert_eq!(
+        serde_json::to_value(&recovered_trace[..395]).unwrap(),
+        serde_json::to_value(&long_trace[..395]).unwrap()
+    );
+    let recovered_food: i128 = recovered["unmet"][13].as_str().unwrap().parse().unwrap();
+    let fixed_food: i128 = cases[1]["unmet"][13].as_str().unwrap().parse().unwrap();
+    assert!(recovered_food < fixed_food);
+    let recovery = json!({"policy":"causal_reserve_routes_v1","future_observation_prefix_tests_passed":true,
+        "normal":normal,"transport_outage":recovered,"long_fixed":long_fixed,"long_recovery":long_recovered});
+    let report = json!({"version":3,"kind":"synthetic_coupled_capability_study","model_calls":0,
+        "assumptions":["Synthetic aggregate coefficients, not demographic/engineering norms","Water is an external boundary supply; deposits and initial assets/stocks are explicit","Training places represent consenting eligible capacity, not people owned or traded","Qualified capacity and equipment are shared use limits, not consumed ingredients","Public asset procurement is paid only for completed equipment/buildings","Input payments follow actual consumption; incomplete work ties up opening working measure","Natural resources and people have zero commodity price in this example","All monetary norms fixed; no interest, tax, loan or later issuance","Actual missing provision remains recorded; no claim that missing goods cancel human entitlements","Money is prefunded using exact schedule bounds, not optimized globally","Trimmed cases are retrospective fixed-delivery improvements, not causal forecasts or global optima","Recovery decisions use current observed capacities, stocks and committed output; no future outage duration is provided","Reserve routes take two periods and four shared equipment/skill units per batch; synthetic capacity is declared in every comparison","The original terminal stock is a lower bound in trimmed cases; all intermediate safety-stock policy remains open","Energy/fuel/material quantities are abstract recipe units, not measured kWh/tonnes; external water left unused is reported separately from energy discard","Inventory age/expiry, health demography, individual choice, teacher specializations and foreign trade remain open","Heuristic is not a global optimum except when a valid stated objective certificate exists"],"cases":cases,"improved_cases":improved,"comparisons":comparisons,"recovery":recovery});
     let path = env::args()
         .nth(1)
         .unwrap_or("research/coupled-results.json".into());

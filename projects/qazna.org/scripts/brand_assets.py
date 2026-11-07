@@ -2,6 +2,7 @@
 """Derive static brand assets from the canonical SVG lines; standard library only."""
 import html
 import math
+import re
 from pathlib import Path
 import struct
 import tomllib
@@ -10,29 +11,67 @@ import zlib
 
 ROOT = Path(__file__).resolve().parents[1]
 BRAND = ROOT / 'assets/brand'
-RED = (220, 38, 38)
 
 def chunk(kind, data):
     return struct.pack('>I', len(data)) + kind + data + struct.pack('>I', zlib.crc32(kind + data))
 
-def png(size, lines):
-    # Four subpixel samples per axis; round caps, transparent background.
-    rows = bytearray()
+def png(size, lines, colors):
+    """Render alternating over/under channels with subtle cylindrical shading.
+
+    Geometry remains canonical. Only raster derivatives use this woven surface;
+    the accepted animated SVG and its movement remain unchanged.
+    """
     radius = 45*.85/2
+    geometry = []
+    for x1, y1, x2, y2 in lines:
+        dx, dy = x2-x1, y2-y1
+        length = math.hypot(dx, dy)
+        geometry.append((x1, y1, dx, dy, length, length*length))
+    # Sort actual offsets, so alternating depth follows spatial neighbours,
+    # not the original SVG's central/outer serialization order.
+    a_order = sorted(range(3), key=lambda i: lines[i][1]-lines[i][0])
+    b_order = sorted(range(3, 6), key=lambda i: lines[i][1]+lines[i][0])
+    above = {}
+    for ai, i in enumerate(a_order):
+        for bj, j in enumerate(b_order):
+            above[i, j] = i if (ai+bj) % 2 == 0 else j
+            above[j, i] = above[i, j]
+    rows = bytearray()
     for y in range(size):
         rows.append(0)
         for x in range(size):
             count = 0
+            channels = [0., 0., 0.]
             for sy in range(4):
                 py = (y+(sy+.5)/4)*400/size
                 for sx in range(4):
                     px = (x+(sx+.5)/4)*400/size
-                    for x1,y1,x2,y2 in lines:
-                        dx,dy=x2-x1,y2-y1
-                        t=max(0,min(1,((px-x1)*dx+(py-y1)*dy)/(dx*dx+dy*dy)))
-                        if (px-x1-t*dx)**2+(py-y1-t*dy)**2 <= radius*radius:
-                            count+=1; break
-            rows.extend((*RED, round(255*count/16)))
+                    distances, sides, hits = [], [], []
+                    for i, (x1,y1,dx,dy,length,length2) in enumerate(geometry):
+                        t = max(0, min(1, ((px-x1)*dx+(py-y1)*dy)/length2))
+                        distance = math.hypot(px-x1-t*dx, py-y1-t*dy)
+                        distances.append(distance)
+                        sides.append(((px-x1)*(-dy)+(py-y1)*dx)/length)
+                        if distance <= radius:
+                            hits.append(i)
+                    if not hits:
+                        continue
+                    top = hits[0] if len(hits) == 1 else above[hits[0], hits[1]]
+                    side = sides[top]/radius
+                    bulge = math.sqrt(max(0, 1-(distances[top]/radius)**2))
+                    shade = .64 + .36*bulge
+                    highlight = .09*math.exp(-((side+.28)/.32)**2)*bulge
+                    shadow = 1.
+                    for other in range(6):
+                        if (top, other) in above and above[top, other] == other:
+                            gap = max(0, distances[other]-radius)
+                            shadow *= 1-.48*math.exp(-(gap/4.5)**2)
+                    count += 1
+                    for c in range(3):
+                        color = colors[top][c]*shade
+                        color += (255-color)*highlight
+                        channels[c] += color*shadow
+            rows.extend((*(round(v/count) if count else 0 for v in channels), round(255*count/16)))
     return b'\x89PNG\r\n\x1a\n'+chunk(b'IHDR',struct.pack('>IIBBBBB',size,size,8,6,0,0,0))+chunk(b'IDAT',zlib.compress(rows,9))+chunk(b'IEND',b'')
 
 def badge(name,label,value,color):
@@ -43,14 +82,18 @@ def badge(name,label,value,color):
     (BRAND/'badges'/f'{name}.svg').write_text(svg)
 
 def main():
-    root=ET.parse(BRAND/'qazna-shanyrak.svg').getroot()
+    root=ET.parse(BRAND/'qazna.svg').getroot()
+    palette = dict(re.findall(r'--qazna-(bright|deep):\s*(#[0-9a-fA-F]{6})', root.get('style', '')))
+    if set(palette) != {'bright', 'deep'}: raise SystemExit('Canonical two-color palette missing')
+    hexes = [palette[k] for k in ('bright', 'deep', 'deep', 'bright', 'deep', 'deep')]
+    colors = [tuple(int(h[i:i+2],16) for i in (1,3,5)) for h in hexes]
     raw=[e for e in root.iter('{http://www.w3.org/2000/svg}line') if e.get('class')=='stroke']
     lines=[tuple(float(e.get(a))*.85+30 for a in ['x1','y1','x2','y2']) for e in raw]
     if len(lines)!=6:raise SystemExit('Expected the six canonical shanyrak strokes')
-    svg='<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400"><title>Qazna</title><g fill="none" stroke="#dc2626" stroke-width="38.25" stroke-linecap="round">'
-    svg+=''.join(f'<line x1="{a}" y1="{b}" x2="{c}" y2="{d}"/>' for a,b,c,d in lines)+'</g></svg>\n'
+    svg='<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400"><title>Qazna</title><g fill="none" stroke-width="38.25" stroke-linecap="round">'
+    svg+=''.join(f'<line stroke="{color}" x1="{a}" y1="{b}" x2="{c}" y2="{d}"/>' for (a,b,c,d),color in zip(lines,hexes))+'</g></svg>\n'
     (BRAND/'favicon.svg').write_text(svg)
-    images={n:png(n,lines) for n in [16,32,48,180,192,512]}
+    images={n:png(n,lines,colors) for n in [16,32,48,180,192,512]}
     for n,name in [(32,'favicon-32.png'),(180,'apple-touch-icon.png'),(192,'icon-192.png'),(512,'icon-512.png')]:
         (BRAND/name).write_bytes(images[n])
     offset=6+16*3;entries=[];data=[]

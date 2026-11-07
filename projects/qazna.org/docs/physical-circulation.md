@@ -7,7 +7,7 @@ model, not a calibrated national plan or an autonomous production controller.
 
 ## What is connected
 
-The example has 16 resource/capability dimensions, 12 processes and 1,825 daily
+The example has 16 resource/capability dimensions, 14 processes and 1,825 daily
 periods. A synthetic cohort of 1,000 residents is scaled by 100,000 to the stated
 100-million population scale. This is aggregate arithmetic, not individual agents
 or an estimate of actual Kazakhstan needs. Annual requirements grow by five
@@ -28,6 +28,8 @@ schedule is declared in advance; outages are not anticipated by the heuristic.
 | Construction | Metal, energy | Housing-capacity places | 60 |
 | Training | Eligible training places, energy, instructor capacity | Qualified work capacity | 180; stress case 720 |
 | Housing service | Water, energy, available housing capacity | Housing-place days | 1 |
+| Reserve grain transport | Grain at farm, energy, more shared capability | Grain at processing location | 2 |
+| Reserve last-mile delivery | Meals at kitchen, energy, more shared capability | Delivered meals | 2 |
 
 Delays and coefficients are experimental assumptions, not observed curricula,
 engineering specifications or nutrition standards. The power process represents
@@ -87,9 +89,9 @@ The example includes an equipment retirement shock and a withdrawal of qualified
 availability in period 400. Baseline replacement and training can prepare for these
 declared events. Specific retirement quantities are scenario assumptions.
 
-There are **109,500 variables and 114,977 rows** per scenario, including three
+There are **113,150 variables and 118,627 rows** per scenario, including three
 shared-capacity constraints per period and the withdrawal guards. The ordinary
-case has 309,959 nonzero terms; the longer training delay changes this count.
+case has 331,855 nonzero terms; the longer training delay changes this count.
 Every physical row is checked with exact arithmetic. A separate replay checks
 stock conservation and shared-capacity use directly from activities and timing.
 
@@ -158,7 +160,9 @@ individual allocation. The deterministic heuristic prioritizes core energy,
 housing and the food chain, then expansion and training; other priorities can
 change the distribution of shortages.
 
-For the transport outage an additional Farkas certificate proves a lower bound:
+For the transport outage under the **fixed-route policy**, an additional Farkas
+certificate proves a lower bound. Its explicit added rows forbid reserve meal
+dispatch; this certificate does not apply when reserve routes are permitted:
 maximum allowed opening delivered-meal stock plus maximum already-started incoming
 output cannot cover the declared 30-period requirement. At least **2,050,000,000**
 meals remain unprovided under those constraints. The heuristic's actual shortage
@@ -247,13 +251,14 @@ The comparisons are **retrospective**: the trimming stage sees the seed's entire
 five-year trajectory, including its realized outages. It is an improvement bound
 for a supplied trace, not an online controller that can foresee future outages.
 It preserves any seed shortage rather than solving it through changed priorities.
-Intermediate safety stocks, spoilage, alternative production routes, new choices
-and a causal rolling-horizon policy require further explicit constraints.
+Intermediate safety stocks, spoilage, new choices and full rolling-horizon
+optimization require further explicit constraints. The causal reserve-route
+experiment below adds two alternatives without claiming that broader optimizer.
 
 ### Measured comparison inside the synthetic model
 
 The retained original scenarios and their trimmed counterparts are in the same
-`research/coupled-results.json` report (schema version 2). The unchanged seed
+`research/coupled-results.json` report (schema version 3). The unchanged seed
 results were compared field-by-field after refactoring payment generation. All
 five trimmed scenarios finish with a no-change second pass. This certifies only
 irreducibility under the declared one-coordinate moves and reserve constraints.
@@ -303,7 +308,7 @@ region, observation year, physical unit, uncertainty range and conversion rule:
 | Needs and population | Cohort counts, births/deaths, service norms, observed choice | Synthetic annual +5 percentage-point requirement schedule |
 | Energy | Input/output balances by carrier, losses, grid capacity, dispatch and storage | Single abstract energy resource, no inter-period storage |
 | Materials and equipment | Input-output recipes, extraction limits, maintenance, lifetimes | Aggregate recipes and one declared retirement shock |
-| Transport | Distances, load factors, fleet schedules, fuel and route capacity | Two aggregate food transport legs |
+| Transport | Distances, load factors, fleet schedules, fuel and route capacity | Two aggregate food transport legs, each with a slower reserve route |
 | Construction | Bill of materials, commissioning phases, occupancy and maintenance | One abstract housing-capacity recipe |
 | Qualifications | Voluntary eligible cohorts, instructor specialisms, curriculum and attrition | One aggregate qualification pipeline |
 | Monetary norms | Approved fixed-unit registry and ownership/entitlement basis | Fixed experimental integers; no adoption decision |
@@ -311,3 +316,79 @@ region, observation year, physical unit, uncertainty range and conversion rule:
 No empirical coefficients have been substituted without this evidence. The
 implemented result is an exact comparison within declared assumptions, ready for
 calibration and challenge rather than evidence that those assumptions are true.
+
+
+## Causal recovery through reserve routes
+
+The next experiment adds a daily feedback policy and `replanning::ProductionPipeline`.
+It observes today's capacities, completed arrivals, available inventory and already
+committed outputs. It does not read tomorrow's outage or its recovery date. The
+published annual needs schedule is known; that assumption is distinct from knowing
+future failures. This is a causal inventory-target policy, not a solved rolling
+multi-objective optimization problem.
+
+Each primary food transport leg takes one period. Each declared reserve leg takes
+two, uses four units each of shared equipment and qualified capacity per batch,
+and has capacity 500 × the scaling factor per day. Primary legs use two equipment
+units and two qualified-capacity units. Reserve recipes use the same two abstract
+energy units per ten transported units as the primary recipes. These are explicit
+experimental coefficients, not measured emergency-route performance. Both policy
+comparisons have the same declared reserve infrastructure; the fixed-route policy
+leaves it idle. No asset appears for free when an interruption occurs.
+
+For a resource k, define committed output that has not arrived yet as P[k,t].
+A primary route is attempted first; the reserve route sees the remaining target:
+
+```text
+P[k,t] = sum of recorded outputs due strictly after today's arrivals
+requested_batches[j,t] = ceil(max(0, target[k] - available[k,t] - P[k,t]) / B[k,j])
+starts[j,t] = min(requested_batches, observed route capacity,
+                  input-limited batches, shared-capability-limited batches)
+```
+
+A newly accepted start immediately joins P. It cannot be delivered until its due
+period. This prevents recovery of the primary route from triggering duplicate
+orders for goods already travelling on a slower route. The pipeline releases each
+commitment once; identical command retries are no-ops and changed retries fail,
+even after the original completion. Overflow and malformed commands leave the
+pipeline unchanged. A route closure blocks new dispatch; destruction of cargo in
+transit is not modelled in this experiment and would need a separate loss event.
+
+### Observed comparison
+
+All periods are zero-based; quantities are synthetic aggregate meal units over the
+whole 1,825-period trace. Previous missed meals are never erased by later delivery.
+
+| Interruption | Fixed-route unmet meals | Reserve-policy unmet meals | First missed period, fixed / reserve |
+| --- | ---: | ---: | --- |
+| None | 0 | 0 | None / none |
+| Primary routes closed in periods 365–394 | 2,755,000,000 | 0 | 369 / none |
+| Primary routes closed in periods 365–454 | 9,055,000,000 | 2,513,917,060 | 369 / 421 |
+
+The 30-period case starts the reserve legs in period 365, not before the failure.
+Each reserve leg performs 315,000,000 batches over the trace. Initial stocks and
+working capacity bridge the longer delivery delay. This proves feasibility for
+these declared assumptions; it does not prove that any real disruption can be
+absorbed. The 90-period case overlaps the period-400 equipment/qualification
+withdrawal. Reserve routing reduces missed meals by **72.2372%** and delays the
+first miss by 52 periods, but shared capability limits remain binding. Its residual
+shortage is a result of this policy, not a proof that every other policy must fail.
+
+The complete normal and 30-period-outage plans match exactly through period 364.
+The complete 30- and 90-period-outage plans match through period 394, while their
+future restoration dates differ. These prefix assertions cover activities,
+deliveries, stocks and disposal, and run on every regeneration. They test the
+specified scenarios against premature reactions, not every possible future.
+
+Every recovery trace passes the same independent physical matrix, per-period stock
+and capacity replay, exact goods/payment links and monetary conservation checks.
+The monetary opening bound remains a **retrospective** calculation for each full
+trace: causal physical decisions do not make that bound an online cash forecast.
+No claim is made that one common starting balance supports all unknown futures.
+The two routes share the corresponding provisioning unit's account and fixed
+norms; additional accounting value is not invented for the reserve route.
+
+Next work: jointly choose safety reserves, route capacity, service priorities and
+capital/training schedules across multiple unknown disruption paths; add expiry,
+in-transit losses and a fixed opening liquidity envelope. Report guaranteed service
+bounds only for explicitly bounded uncertainty and independently verified plans.

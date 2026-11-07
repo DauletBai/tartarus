@@ -1345,3 +1345,179 @@ mod trimming {
         }
     }
 }
+
+#[test]
+fn pipeline_delays_merges_and_releases_output_exactly_once() {
+    use qazna::{horizon::Process, replanning::ProductionPipeline};
+    let mut p = ProductionPipeline::new(2).unwrap();
+    let slow = Process {
+        inputs: vec![1, 0],
+        outputs: vec![0, 3],
+        lead_periods: 2,
+    };
+    let fast = Process {
+        lead_periods: 1,
+        ..slow.clone()
+    };
+    assert!(p.commit(0, 1, &slow, 2).is_err());
+    assert_eq!(p.advance(0).unwrap(), vec![0, 0]);
+    assert!(p.commit(0, 1, &slow, 2).unwrap());
+    assert!(!p.commit(0, 1, &slow, 2).unwrap());
+    assert_eq!(p.pending(), &[0, 6]);
+    assert!(p.advance(2).is_err());
+    assert_eq!(p.advance(1).unwrap(), vec![0, 0]);
+    assert!(p.commit(0, 2, &slow, 2).is_err());
+    assert!(p.commit(1, 2, &fast, 4).unwrap());
+    assert_eq!(p.pending(), &[0, 18]);
+    assert_eq!(p.advance(2).unwrap(), vec![0, 18]);
+    assert!(p.advance(2).is_err());
+    assert_eq!(p.pending(), &[0, 0]);
+    assert!(!p.commit(0, 1, &slow, 2).unwrap());
+    assert_eq!(p.advance(3).unwrap(), vec![0, 0]);
+}
+
+#[test]
+fn pipeline_rejects_changed_retries_even_after_completion() {
+    use qazna::{horizon::Process, replanning::ProductionPipeline};
+    let mut p = ProductionPipeline::new(2).unwrap();
+    let r = Process {
+        inputs: vec![2, 0],
+        outputs: vec![0, 3],
+        lead_periods: 1,
+    };
+    p.advance(0).unwrap();
+    p.commit(0, 5, &r, 2).unwrap();
+    for altered in [
+        Process {
+            inputs: vec![3, 0],
+            ..r.clone()
+        },
+        Process {
+            outputs: vec![0, 4],
+            ..r.clone()
+        },
+        Process {
+            lead_periods: 2,
+            ..r.clone()
+        },
+    ] {
+        assert!(p.commit(0, 5, &altered, 2).is_err());
+        assert_eq!(p.pending(), &[0, 6]);
+    }
+    assert!(p.commit(0, 5, &r, 3).is_err());
+    assert_eq!(p.advance(1).unwrap(), vec![0, 6]);
+    assert!(p.commit(0, 5, &r, 3).is_err());
+    assert_eq!(p.advance(2).unwrap(), vec![0, 0]);
+}
+
+#[test]
+fn pipeline_overflow_and_invalid_commands_leave_no_partial_output() {
+    use qazna::{horizon::Process, replanning::ProductionPipeline};
+    assert!(ProductionPipeline::new(0).is_err());
+    assert!(ProductionPipeline::new(65).is_err());
+    let mut p = ProductionPipeline::new(2).unwrap();
+    let r = Process {
+        inputs: vec![1, 0],
+        outputs: vec![1, i64::MAX],
+        lead_periods: 1,
+    };
+    p.advance(0).unwrap();
+    assert!(p.commit(0, 1, &r, 2).is_err()); // multiplication overflow
+    assert_eq!(p.pending(), &[0, 0]);
+    p.commit(0, 1, &r, 1).unwrap();
+    let small = Process {
+        outputs: vec![1, 1],
+        ..r.clone()
+    };
+    assert!(p.commit(0, 2, &small, 1).is_err()); // second-coordinate sum overflow
+    for bad in [
+        Process {
+            inputs: vec![1],
+            ..small.clone()
+        },
+        Process {
+            outputs: vec![0, -1],
+            ..small.clone()
+        },
+        Process {
+            outputs: vec![0, 0],
+            ..small.clone()
+        },
+        Process {
+            lead_periods: 0,
+            ..small.clone()
+        },
+    ] {
+        assert!(p.commit(0, 3, &bad, 1).is_err());
+    }
+    assert!(p.commit(0, 3, &small, 0).is_err());
+    assert_eq!(p.advance(1).unwrap(), vec![1, i64::MAX]);
+    assert_eq!(p.pending(), &[0, 0]);
+    assert!(
+        p.commit(
+            1,
+            2,
+            &Process {
+                lead_periods: usize::MAX,
+                ..small.clone()
+            },
+            1
+        )
+        .is_err()
+    );
+    p.commit(1, 2, &small, 1).unwrap();
+    assert_eq!(p.advance(2).unwrap(), vec![1, 1]);
+}
+
+#[test]
+fn pipeline_matches_independent_commitment_list_across_route_changes() {
+    use qazna::{horizon::Process, replanning::ProductionPipeline};
+    for seed in 0..24usize {
+        let mut p = ProductionPipeline::new(3).unwrap();
+        let mut oracle: Vec<(usize, Vec<i64>)> = vec![];
+        let mut committed = [0; 3];
+        let mut received = [0; 3];
+        for day in 0..90 {
+            let actual = p.advance(day).unwrap();
+            let mut expected = vec![0; 3];
+            for (due, q) in &oracle {
+                if *due == day {
+                    for k in 0..3 {
+                        expected[k] += q[k];
+                    }
+                }
+            }
+            assert_eq!(actual, expected, "seed={seed}, day={day}");
+            for k in 0..3 {
+                received[k] += actual[k];
+            }
+            if day < 60 {
+                for route in 0..4 {
+                    if (day + seed + route) % 7 < 2 {
+                        continue;
+                    }
+                    let lead = 1 + (day * 3 + route + seed) % 9;
+                    let n = 1 + ((day + route * 2 + seed) % 11) as i64;
+                    let outputs = vec![route as i64 + 1, 2, ((day + seed) % 3) as i64];
+                    let r = Process {
+                        inputs: vec![1, 0, 0],
+                        outputs: outputs.clone(),
+                        lead_periods: lead,
+                    };
+                    assert!(p.commit(day, route, &r, n).unwrap());
+                    assert!(!p.commit(day, route, &r, n).unwrap());
+                    let q: Vec<_> = outputs.iter().map(|v| v * n).collect();
+                    for k in 0..3 {
+                        committed[k] += q[k];
+                    }
+                    oracle.push((day + lead, q));
+                }
+            }
+            for k in 0..3 {
+                assert_eq!(p.pending()[k], committed[k] - received[k]);
+            }
+        }
+        assert_eq!(p.pending(), &[0, 0, 0]);
+        assert_eq!(committed, received);
+    }
+}

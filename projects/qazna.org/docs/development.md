@@ -109,3 +109,31 @@ physical-evidence limitation still reported. No model calls or real participants
 were used. The original seed scenario values were also checked unchanged after
 refactoring payment generation, and the documentation's 20 physical table values
 were compared to the generated report.
+
+## Verification record — 7 November 2026, causal reserve routing
+
+The mathematical target has **38 passing tests**. Four new pipeline checks cover
+merged delayed arrivals and exactly-once release; changed and historical retries;
+multiplication/addition/date overflow with unchanged state; and 24 independently
+replayed commitment-list scenarios, each running 90 periods with changing route
+starts and lead times. All-target Clippy passed. The 10 previous physical/cash
+outcome sets remain unchanged: deliveries, shortages, disposal, annual stocks,
+original process starts and opening measure. Matrix dimensions and zero activity
+slots expand for the two reserve routes.
+
+The maintained schema-3 report includes four recovery comparisons and executable
+prefix-equality assertions before different future conditions are observed. The
+full stock/capacity replay and exact payment verifier cover each new trace. A
+fixed-route Farkas bound is now explicitly labelled with the no-reserve-dispatch
+condition; it is not misapplied to the expanded routing policy.
+
+The renamed two-tone SVG and generated favicons were visually inspected in Chrome
+on light/dark backgrounds, with animated flow and 16/32/64-pixel icon previews.
+
+The full disposable-PostgreSQL runner passed: 38 mathematical, 91 PostgreSQL,
+3 library, 4 no-AI example and 11 advisory-safety tests; exact regeneration of all
+maintained research reports; HTTP restart/provenance; strict evidence at both
+privilege levels; and backup/restore of 36 tables. The 60-period shortfall exercise
+passed 4,548 HTTP requests with one restart; the 35-period closed exercise passed
+3,901 with two restarts. Actor seeds 7 and 19 completed, with their existing
+physical-evidence gap still explicit. No real participants or model calls were used.
