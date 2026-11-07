@@ -1,3 +1,20 @@
+<p align="center">
+  <a href="https://media.githubusercontent.com/media/DauletBai/tartarus/main/assets/brand/tartarus-cover-4k.png">
+    <img src="https://media.githubusercontent.com/media/DauletBai/tartarus/main/assets/brand/tartarus-cover-web.jpg" width="100%" alt="ТАРТАР и Я — от древних слоёв и письменности к современной сети обеспечения. Художественная обложка архива Tartarus.">
+  </a>
+</p>
+<p align="center">
+  <a href="https://dauletbai.github.io/tartarus/"><img src="assets/brand/badges/book.svg" alt="Книга: рабочая редакция"></a>
+  <a href="research/sumerian_cuneiform/README.md"><img src="assets/brand/badges/research.svg" alt="Research: open archive"></a>
+  <a href="https://github.com/DauletBai/tartarus/tree/codex/qazna-rust-provisioning/projects/qazna.org"><img src="assets/brand/badges/qazna.svg" alt="Qazna: Rust research prototype"></a>
+</p>
+<p align="center">
+  <a href="https://github.com/DauletBai/tartarus/blob/codex/qazna-rust-provisioning/projects/qazna.org/Cargo.toml"><img src="assets/brand/badges/rust.svg" alt="Qazna minimum Rust version: 1.88"></a>
+  <a href="https://github.com/DauletBai/tartarus/blob/codex/qazna-rust-provisioning/projects/qazna.org/docs/development.md"><img src="assets/brand/badges/postgresql.svg" alt="Qazna tested with PostgreSQL 16"></a>
+  <a href="https://github.com/DauletBai/tartarus/actions/workflows/qazna.yml?query=branch%3Acodex%2Fqazna-rust-provisioning"><img src="https://github.com/DauletBai/tartarus/actions/workflows/qazna.yml/badge.svg?branch=codex%2Fqazna-rust-provisioning" alt="Qazna CI status on the development branch"></a>
+</p>
+<p align="center"><a href="https://dauletbai.github.io/tartarus/">Читать книгу</a> · <a href="research/sumerian_cuneiform/README.md">Исследование клинописи</a> · <a href="https://github.com/DauletBai/tartarus/tree/codex/qazna-rust-provisioning/projects/qazna.org">Проект Qazna</a> · <a href="assets/brand/README.md">Обложка 4К</a></p>
+
 # Tartarus — «Тартар и Я»
 
 Открытый исследовательский архив Даулета Баймурзина (Daulet Baimurza): рабочий PDF книги «Тартар и Я», материалы исследования шумерской клинописи и расчётная модель экономики Теңге. Книга ещё не издана. Текущая редакция PDF — 6 ноября 2026 года, редакция 0.89, 400 страниц; синхронизация книги — 6 ноября 2026 года.
