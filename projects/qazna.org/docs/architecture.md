@@ -153,3 +153,14 @@ Storage-aware refill respects built space and prioritizes current provision; sta
 conversion protects restart fuel. A defective fill policy remains a negative case.
 These are offline research controls, not new runtime endpoints or permissions.
 Food expiry, transport losses and equipment maintenance are still separate work.
+
+## Offline physical lifecycle boundary
+
+`lifecycle` provides exact dated-lot transitions and finite-resource standby
+maintenance. Lot IDs and expiry survive transfers; FEFO consumption, partial
+transit damage, late-arrival expiry and contiguous periods preserve physical
+conservation. Maintenance pauses when labour is missing and has no capacity during
+service or overdue periods. `coupled_study` invokes a separate five-year lifecycle
+submodel and publishes it alongside the existing coupled calculations. It does not
+change the database lot schema, enforce expiry on live reservations, modify
+payments or grant AI execution rights. See [lifecycle results](physical-circulation.md#dated-food-transport-loss-and-standby-maintenance).

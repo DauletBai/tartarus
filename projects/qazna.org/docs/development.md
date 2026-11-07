@@ -241,3 +241,33 @@ restore. The 60-period shortfall exercise passed 4,548 requests and one restart 
 in 46.767 seconds. Actor seeds 7/19 completed with the existing physical-evidence
 limitation still reported. The runner stopped and removed its disposable cluster;
 no real participants, real money, existing databases or model calls were used.
+
+## Food/standby lifecycle verification — 7 November 2026
+
+`lifecycle` adds seven mathematical tests: split/late shipments; FEFO against an
+independent individual-unit oracle (324 input combinations); atomic malformed/
+overflow commands and identity reuse; exhaustive partial damage; paused service
+with insufficient labour/spares; 60 periodic maintenance designs checked against
+closed-form capacity/work counts over 500 periods each; and malformed/overflow
+maintenance input. It is offline only and introduces no migration or runtime route.
+
+The maintained coupled report is schema 7. Its new isolated lifecycle section
+covers 32 five-year paths (58,400 periods), with physical conservation every day
+and 28 equal-observation prefix comparisons. All previous report sections were
+compared structurally with commit `71deac0` and are unchanged except the schema
+number and clarification of scope. Initial pipeline deficits are preserved in
+all 32 total shortage counts. Food expiry, finite spares, correlated failure and
+fuel exhaustion remain visible counterexamples. The new receipt valuation is not
+an additional monetary-schedule proof.
+
+The complete required runner passed: 55 mathematics, 91 PostgreSQL, 3 library,
+4 no-AI example and 11 advisory-safety tests; formatting/Clippy/license checks;
+byte-identical regeneration of the three maintained reports; HTTP restart and
+provenance checks; both strict-evidence privilege configurations; and 36-table
+backup/restore. The 60-period shortfall trial made 4,548 requests with one restart
+in 56.496 seconds. The 35-period closed trial made 3,901 requests with two restarts
+in 46.798 seconds. Actor seeds 7/19 completed while retaining the known physical
+evidence gap. The disposable PostgreSQL cluster was stopped and removed. No
+existing database, real participants, real money or model calls were used. The
+preceding commit `71deac0` passed GitHub CI; this record does not presume the result
+of a later CI run.

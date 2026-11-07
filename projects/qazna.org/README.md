@@ -35,6 +35,11 @@ The project lives in `projects/qazna.org/` in [Tartarus](https://github.com/Daul
 
 The active project is this directory in Tartarus. The separate [DauletBai/qazna.org](https://github.com/DauletBai/qazna.org) repository is archived earlier work. It is not the current runtime. The book's copyright is separate from the software and project documentation licenses.
 
+The [food and standby lifecycle study](docs/physical-circulation.md#dated-food-transport-loss-and-standby-maintenance)
+adds dated batches, FEFO, transport damage and finite-resource maintenance. Its 32
+five-year submodel runs preserve expiry, failures and unmet needs explicitly;
+integration into the full physical/monetary model and live service remains open.
+
 ## Implemented capabilities
 
 - Observe consistent invariant/queue snapshots with a limited observer credential.

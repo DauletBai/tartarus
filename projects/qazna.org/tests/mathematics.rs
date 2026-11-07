@@ -1861,3 +1861,234 @@ fn reserve_sizing_matches_exhaustive_forward_loss_and_withdrawal() {
     assert!(required_reserve(-1, 1, 0, 0).is_err());
     assert!(required_reserve(0, 1, -1, 0).is_err());
 }
+
+#[test]
+fn dated_lots_preserve_age_and_partial_loss_through_split_shipments() {
+    use qazna::lifecycle::*;
+    let mut b = LotBook::default();
+    b.begin_period(0).unwrap();
+    b.supply(1, 100, 4).unwrap();
+    b.dispatch(10, 1, 60, 2).unwrap();
+    b.dispatch(11, 1, 40, 2).unwrap();
+    b.damage(10, 20).unwrap();
+    let before = b.clone();
+    assert!(b.receive(10).is_err());
+    assert_eq!(b, before);
+    b.begin_period(1).unwrap();
+    b.begin_period(2).unwrap();
+    assert_eq!(b.receive(10).unwrap(), 40);
+    assert_eq!(b.consume(15).unwrap(), 15);
+    b.begin_period(3).unwrap();
+    b.begin_period(4).unwrap();
+    assert!(b.receive(11).is_err()); // late shipment expired in transit
+    assert_eq!(b.consume(100).unwrap(), 0);
+    assert_eq!(
+        b.balance(),
+        LotBalance {
+            supplied: 100,
+            consumed: 15,
+            expired: 65,
+            transport_loss: 20,
+            source: 0,
+            destination: 0,
+            in_transit: 0
+        }
+    );
+}
+
+#[test]
+fn fefo_matches_individual_unit_oracle_across_unequal_lot_ages() {
+    use qazna::lifecycle::*;
+    // Independent reference tracks each physical unit, not aggregate lots.
+    for short in 1..=6u64 {
+        for long in 1..=6u64 {
+            for demand in 0..=8u64 {
+                let mut b = LotBook::default();
+                b.begin_period(0).unwrap();
+                // Earlier ID has later expiry: ID/FIFO ordering would be wrong.
+                b.supply(1, long, 6).unwrap();
+                b.supply(2, short, 3).unwrap();
+                b.dispatch(1, 1, long, 1).unwrap();
+                b.dispatch(2, 2, short, 1).unwrap();
+                let mut units = vec![6u32; long as usize];
+                units.extend(vec![3u32; short as usize]);
+                let mut used = 0;
+                let mut expired = 0;
+                for day in 1..=7 {
+                    b.begin_period(day).unwrap();
+                    let old = units.len();
+                    units.retain(|&e| e > day);
+                    expired += (old - units.len()) as u64;
+                    if day == 1 {
+                        b.receive(1).unwrap();
+                        b.receive(2).unwrap();
+                    }
+                    units.sort();
+                    let take = units.len().min(demand as usize);
+                    units.drain(..take);
+                    used += take as u64;
+                    assert_eq!(b.consume(demand).unwrap(), take as u64);
+                    let balance = b.balance();
+                    assert_eq!(balance.consumed, used);
+                    assert_eq!(balance.expired, expired);
+                    assert_eq!(balance.destination, units.len() as u64);
+                    assert_eq!(
+                        balance.supplied,
+                        balance.consumed + balance.expired + balance.destination
+                    );
+                }
+            }
+        }
+    }
+}
+
+#[test]
+fn malformed_lifecycle_commands_are_atomic_and_ids_cannot_be_reused() {
+    use qazna::lifecycle::*;
+    let mut b = LotBook::default();
+    assert!(b.supply(1, 1, 4).is_err());
+    b.begin_period(0).unwrap();
+    b.supply(1, u64::MAX, 4).unwrap();
+    let original = b.clone();
+    assert_eq!(b.supply(2, 1, 4), Err(MathError::Overflow));
+    assert!(b.supply(1, 1, 4).is_err());
+    assert!(b.dispatch(1, 1, 1, 4).is_err());
+    assert!(b.dispatch(1, 1, 0, 1).is_err());
+    assert!(b.dispatch(1, 1, 1, 0).is_err());
+    assert!(b.begin_period(2).is_err());
+    assert_eq!(b, original);
+    b.dispatch(1, 1, u64::MAX, 1).unwrap();
+    let dispatched = b.clone();
+    assert!(b.dispatch(1, 1, 1, 1).is_err());
+    assert!(b.damage(9, 1).is_err());
+    assert!(b.damage(1, 0).is_err());
+    assert_eq!(b, dispatched);
+    b.begin_period(1).unwrap();
+    assert_eq!(b.receive(1).unwrap(), u64::MAX);
+    assert_eq!(b.consume(u64::MAX).unwrap(), u64::MAX);
+    let consumed = b.clone();
+    assert!(b.receive(1).is_err());
+    assert!(b.damage(1, 1).is_err());
+    assert_eq!(b, consumed);
+    assert_eq!(b.balance().consumed, u64::MAX);
+}
+
+#[test]
+fn destroyed_shipments_never_reappear_as_receipts_or_expiry() {
+    use qazna::lifecycle::*;
+    for q in 1..=12u64 {
+        for loss in 0..=q {
+            let mut b = LotBook::default();
+            b.begin_period(0).unwrap();
+            b.supply(1, q, 3).unwrap();
+            b.dispatch(1, 1, q, 1).unwrap();
+            if loss > 0 {
+                b.damage(1, loss).unwrap();
+            }
+            let before = b.clone();
+            assert!(b.damage(1, q - loss + 1).is_err());
+            assert_eq!(b, before);
+            b.begin_period(1).unwrap();
+            assert_eq!(b.receive(1).unwrap(), q - loss);
+            assert_eq!(b.consume(q).unwrap(), q - loss);
+            b.begin_period(2).unwrap();
+            b.begin_period(3).unwrap();
+            let v = b.balance();
+            assert_eq!(v.transport_loss, loss);
+            assert_eq!(v.expired, 0);
+            assert_eq!(v.supplied, v.consumed + v.transport_loss);
+        }
+    }
+}
+
+#[test]
+fn maintenance_requires_spares_and_each_day_of_labour_and_has_no_free_capacity() {
+    use qazna::lifecycle::*;
+    let mut u = StandbyUnit::new(2, 2, 2, 100, 1, 3).unwrap();
+    let r = u.step(0, true, 0, 3, false).unwrap();
+    assert_eq!(
+        (r.available_capacity, r.spares_used, r.labour_used),
+        (0, 0, 0)
+    );
+    let r = u.step(1, true, 1, 2, false).unwrap();
+    assert_eq!(
+        (r.available_capacity, r.spares_used, r.labour_used),
+        (0, 0, 0)
+    );
+    let r = u.step(2, true, 1, 3, false).unwrap();
+    assert_eq!(
+        (
+            r.available_capacity,
+            r.spares_used,
+            r.labour_used,
+            r.service_remaining
+        ),
+        (0, 1, 3, 1)
+    );
+    let r = u.step(3, true, 0, 2, false).unwrap();
+    assert_eq!(
+        (r.available_capacity, r.labour_used, r.service_remaining),
+        (0, 0, 1)
+    );
+    let r = u.step(4, false, 0, 3, false).unwrap();
+    assert_eq!(
+        (
+            r.available_capacity,
+            r.labour_used,
+            r.service_remaining,
+            r.age_at_close
+        ),
+        (0, 3, 0, 0)
+    );
+    assert_eq!(u.step(5, false, 0, 0, true).unwrap().available_capacity, 0);
+    assert_eq!(
+        u.step(6, false, 0, 0, false).unwrap().available_capacity,
+        100
+    );
+    assert_eq!(u.step(7, false, 0, 0, false).unwrap().available_capacity, 0);
+    let saved = u.clone();
+    assert!(u.step(9, true, 100, 100, false).is_err());
+    assert_eq!(u, saved);
+}
+
+#[test]
+fn maintenance_periodic_schedule_matches_closed_form_not_just_state_replay() {
+    use qazna::lifecycle::*;
+    for interval in 1..=12u32 {
+        for duration in 1..=5u32 {
+            let mut u = StandbyUnit::new(0, interval, duration, 100, 1, 2).unwrap();
+            let mut spares = 1000;
+            let mut work = 0;
+            for day in 0..500 {
+                let position = day % (interval + duration);
+                let r = u.step(day, u.service_due(), spares, 2, false).unwrap();
+                spares -= r.spares_used;
+                work += r.labour_used;
+                assert_eq!(
+                    r.available_capacity,
+                    if position < interval { 100 } else { 0 }
+                );
+                assert_eq!(r.spares_used, u64::from(position == interval));
+                assert_eq!(r.labour_used, if position >= interval { 2 } else { 0 });
+            }
+            let completed = 500 / (interval + duration);
+            let partial = (500 % (interval + duration)).saturating_sub(interval);
+            assert_eq!(work, u64::from(completed * duration + partial) * 2);
+        }
+    }
+}
+
+#[test]
+fn maintenance_invalid_inputs_and_overflow_fail_without_mutation() {
+    use qazna::lifecycle::*;
+    assert!(StandbyUnit::new(0, 0, 1, 1, 1, 1).is_err());
+    assert!(StandbyUnit::new(0, 1, 0, 1, 1, 1).is_err());
+    assert!(StandbyUnit::new(0, 1, 1, 0, 1, 1).is_err());
+    assert!(StandbyUnit::new(0, 1, 1, 1, 0, 1).is_err());
+    assert!(StandbyUnit::new(0, 1, 1, 1, 1, 0).is_err());
+    let mut u = StandbyUnit::new(u32::MAX, 1, 1, 1, 1, 1).unwrap();
+    let original = u.clone();
+    assert_eq!(u.step(0, false, 0, 0, false), Err(MathError::Overflow));
+    assert_eq!(u, original);
+    assert_eq!(u.step(0, true, 1, 1, false).unwrap().age_at_close, 0);
+}

@@ -7,7 +7,7 @@ model, not a calibrated national plan or an autonomous production controller.
 
 ## What is connected
 
-The schema-6 example has 18 resource/capability dimensions, 17 processes and 1,825 daily
+The schema-7 report retains a coupled model with 18 resource/capability dimensions, 17 processes and 1,825 daily
 periods. A synthetic cohort of 1,000 residents is scaled by 100,000 to the stated
 100-million population scale. This is aggregate arithmetic, not individual agents
 or an estimate of actual Kazakhstan needs. Annual requirements grow by five
@@ -92,7 +92,7 @@ The example includes an equipment retirement shock and a withdrawal of qualified
 availability in period 400. Baseline replacement and training can prepare for these
 declared events. Specific retirement quantities are scenario assumptions.
 
-The schema-6 ordinary case has **129,575 variables and 138,702 rows**, including
+The coupled ordinary case has **129,575 variables and 138,702 rows**, including
 four shared-capacity constraints per period, constructed fuel-storage constraints
 and withdrawal guards. It has 393,841 nonzero terms. Daily storage-loss withdrawals
 add 1,824 prior-stock guards; longer training delays also change the matrix. The
@@ -646,7 +646,8 @@ individual service/day outcomes and the outage window must remain visible.
 
 The reserve experiment below tests energy continuity with constructed assets and
 explicit loss constraints. Inventory expiry, in-transit losses and equipment
-maintenance remain open. Increasing cash alone cannot close the gap in the
+maintenance are tested later in a separate lifecycle submodel; their integration
+into these coupled physical/cash traces remains open. Increasing cash alone cannot close the gap in the
 reserve-free configuration. Unknown scenarios, demographic calibration and live
 service integration remain open. No runtime authority or economic policy changes.
 
@@ -792,3 +793,106 @@ maintenance/correlated backup failures, changing needs, water-supply failures,
 calibrated coefficients and live reviewed-plan integration. The current loss law
 models fuel-storage depletion only; it does not implement every resource lifecycle
 or confer autonomous control on the runtime service.
+
+## Dated food, transport loss and standby maintenance
+
+The next bounded stage (7 November 2026) is implemented in `src/lifecycle.rs` and
+`examples/support/lifecycle_study.rs`, called by the existing coupled example.
+Results are kept in `research/coupled-results.json` under `food_asset_lifecycle`
+(schema 7). The previous 18-resource calculations remain intact. This is a
+**separate lifecycle submodel**, not a claim that expiry and repair have already
+been integrated into every physical matrix, monetary replay or live endpoint.
+
+### Explicit state and timing
+
+A food lot has an immutable identity and exclusive expiry period `e`. It is usable
+only for `t < e`. Its age is preserved when split, dispatched, damaged or received;
+transport cannot create a fresh expiry date. Each contiguous day begins by removing
+expired stock at the source, destination and in transit. Observed arrivals then
+precede consumption; new boundary supplies and dispatches follow consumption.
+The example uses first-expiring-first-out (FEFO). A dispatch with a planned arrival
+at or after expiry is rejected. An unexpected late arrival can still expire in
+transit. Shipment identities cannot be reused and closed shipments cannot be
+received twice. Invalid commands leave state unchanged.
+
+For one physical commodity, every period checks:
+
+```text
+cumulative supply = consumption + expiry + transport loss
+                  + source stock + destination stock + in-transit stock
+```
+
+Destroyed units are classified once. They cannot subsequently become receipts or
+expiry. Inventory at the horizon is explicitly retained, not treated as delivered.
+The tests also track individual units independently of the aggregated lot model,
+including unequal expiry dates, split shipments and maximum integer quantities.
+
+A standby asset produces no usable capacity while overdue, undergoing service,
+or affected by a declared external failure. Service needs a spare at its start
+and labour on **each** service day. Missing labour pauses work; it does not
+magically complete maintenance. Completion restores capacity from the following
+period. Calendar ageing and the service interval are synthetic engineering
+assumptions. With unrestricted service resources, an independent closed-form
+oracle checks available capacity over repeating `interval + duration` cycles.
+
+### Five-year sensitivity experiment
+
+Four designs × eight paths × 1,825 periods = **58,400 verified periods**. Twenty-eight
+comparisons ensure the first 390 days of decisions are identical before future
+scenario observations diverge. This prevents a hidden forecast of the outage from
+entering the feedback policy.
+
+Daily demand is 1,000 food units; explicit boundary supply is 1,200. The destination
+and transit target is 4,000 units, transit takes two periods and dispatch capacity
+is at most 2,000. Two pre-existing standby units each offer 1,200 capacity, require
+service after 20 calendar days, and need two service days at two labour units per
+day. Only two maintenance labour units are available daily. Each service consumes
+one spare. Baseline opening spares are 200 and backup fuel 5,000; backup dispatch
+uses `ceil(dispatched / 10)` fuel, without refill in this submodel.
+
+These are synthetic units, not tonnes, engineering norms or a calibrated population.
+Food production, preservation, fuel production and new asset construction are
+boundary assumptions here. The earlier constructed-reserve experiment addresses
+some of those mechanisms separately; joining the two models is still required.
+
+| Path | Unmet food after the initial 10 periods, maintained fresh-food design | Without spares |
+| --- | ---: | ---: |
+| Normal | 0 | 0 |
+| Primary power unavailable for 30 days | 0 | 28,800 |
+| 10% loss on arrivals for 30 days | 0 | 0 |
+| Power outage plus transport loss | 0 | 28,820 |
+| Route unavailable for 15 days | 13,800 | 13,800 |
+| Arrivals held for 10 days | 8,800 | 8,800 |
+| Primary and both backup units fail together for 10 days | 8,800 | 28,800 |
+| Two 30-day power interruptions, no fuel refill | 17,000 | 57,600 |
+
+Every design also records 2,000 initially unmet units while the initially empty
+pipeline fills. Initial unmet needs are included in totals, not erased by the
+post-startup comparison. The delayed-arrival case expires 10,600 units in transit.
+The repeated-power case exhausts the maintained design's 5,000 fuel units: surviving
+the first outage does not establish readiness for the second.
+
+The baseline has 362,000 expired units after five years: fixed supply exceeds
+consumption, and expiry is now visible rather than hidden in an undated total.
+Extending shelf life from 5 to 30 periods lowers recorded expiry to 332,000 but
+leaves more stock at the horizon and does not improve the tested service shortages.
+That is not evidence of equivalent long-run waste reduction or cost-free
+preservation. This stage deliberately retains the fixed-supply counterexample;
+production and replenishment must next respond to usable age-qualified stock,
+not simply to total inventory. Aligned versus staggered initial asset ages do not
+change the measured service outcome under the tested buffer and service policy;
+no general scheduling advantage is claimed.
+
+Receipt measure is calculated as `700 × actual consumed units`, using exact integer
+arithmetic. This value is not a new ledger simulation, financing certificate or
+payment for destroyed/expired goods. Existing economic norms are not changed.
+
+### Remaining integration work
+
+Connect dated inventories, transport events and maintenance inputs to the full
+resource matrix and rebuild its associated monetary schedules. Test adaptive
+production, cold-chain/preservation costs, spare manufacture and replenishment,
+maintenance energy, quality/recall, dispatch/receipt attestations, and different
+repair priorities. Service availability, finite shared inputs and physical
+shortfalls must remain separate from sufficient accounting balances. The live
+runtime remains unchanged and receives no automatic allocation or issuance power.

@@ -76,3 +76,9 @@ compares no new reserve and 7/30/60-period fuel targets with constructed generat
 and storage, exact losses and repeated failures. It retains start-up vulnerability
 and events exceeding the design horizon. The live service gains no autonomous
 issuance, purchase or resource-allocation authority from this calculation.
+
+A reserve must also remain usable: food has an age, transport can lose units,
+and standby equipment needs material and labour for maintenance. The offline
+[lifecycle submodel](physical-circulation.md#dated-food-transport-loss-and-standby-maintenance)
+records these losses and their service consequences explicitly. Neither a large
+stock figure nor installed backup capacity alone establishes continuity of care.

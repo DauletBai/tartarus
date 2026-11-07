@@ -2,6 +2,10 @@
 
 ## Unreleased
 
+- Add exact offline dated-lot transitions with immutable expiry, FEFO, partial transport loss, late-arrival expiry and duplicate/invalid-command rejection.
+- Add standby maintenance requiring finite spares and shared labour, including paused work and correlated external outages.
+- Extend the maintained coupled report to schema 7 with 32 separate five-year lifecycle runs (58,400 periods), 28 causal-prefix checks and seven additional independent/negative tests; retain explicit integration boundaries and deficits.
+
 - Add exact constructed-storage constraints and minimal reserve sizing with rounded physical losses and protected restart stock.
 - Evaluate 35 coupled reserve/recovery traces with constructed generators, finite fuel, causal refill and complete physical/cash checks; preserve preconstruction and overlong-failure deficits.
 - Prevent reserve overfilling before storage completion and prioritize current provision; retain the rejected overfilling policy as an executable counterexample.
