@@ -6,10 +6,12 @@ struct GeneratorCohort {
     quantity: i64,
     ready: usize,
     repair_due: Option<usize>,
+    second_stage_ready: Option<usize>,
 }
 pub struct Lifecycle {
     food: [DatedStock; 4],
     product_life: u32,
+    daily_service: bool,
     pending: BTreeMap<usize, Vec<(usize, u32, u64, bool)>>,
     generators: Vec<GeneratorCohort>,
     pub expired: [u64; 4],
@@ -34,12 +36,51 @@ impl Lifecycle {
         Self {
             food,
             product_life,
+            daily_service: false,
             pending: BTreeMap::new(),
             generators: vec![],
             expired: [0; 4],
             damaged: [0; 4],
             maintenance_starts: 0,
         }
+    }
+    pub fn with_daily_service(mut self) -> Self {
+        assert!(self.generators.is_empty());
+        self.daily_service = true;
+        self
+    }
+    pub fn second_stage_need(&self, day: usize) -> i64 {
+        self.generators
+            .iter()
+            .filter(|g| g.second_stage_ready.is_some_and(|d| d <= day))
+            .map(|g| g.quantity)
+            .sum()
+    }
+    pub fn finish_service(&mut self, day: usize, quantity: i64) {
+        assert!(self.daily_service && quantity > 0 && quantity <= self.second_stage_need(day));
+        let due = day.checked_add(1).expect("service deadline overflow");
+        let mut left = quantity;
+        let mut finished = vec![];
+        for g in &mut self.generators {
+            if !g.second_stage_ready.is_some_and(|d| d <= day) {
+                continue;
+            }
+            let n = left.min(g.quantity);
+            if n == 0 {
+                continue;
+            }
+            g.quantity -= n;
+            left -= n;
+            finished.push(GeneratorCohort {
+                quantity: n,
+                ready: g.ready,
+                repair_due: Some(due),
+                second_stage_ready: None,
+            });
+        }
+        assert_eq!(left, 0);
+        self.generators.retain(|g| g.quantity > 0);
+        self.generators.extend(finished);
     }
     pub fn advance(&mut self, day: usize, arrivals: &[i64], damaged_transport: bool) -> [i64; 4] {
         let mut removed = [0; 4];
@@ -74,7 +115,17 @@ impl Lifecycle {
                 quantity: arrivals[16],
                 ready: day + 1,
                 repair_due: None,
+                second_stage_ready: None,
             });
+        }
+        if self.daily_service {
+            let started: i64 = self
+                .generators
+                .iter()
+                .filter(|g| g.second_stage_ready == Some(day))
+                .map(|g| g.quantity)
+                .sum();
+            assert_eq!(started, arrivals[21]);
         }
         let mut repaired = 0;
         for g in &mut self.generators {
@@ -110,22 +161,32 @@ impl Lifecycle {
     pub fn generator_capacity(&self, day: usize) -> i64 {
         self.generators
             .iter()
-            .filter(|g| g.repair_due.is_none() && day >= g.ready && day < g.ready + 20)
+            .filter(|g| {
+                g.repair_due.is_none()
+                    && g.second_stage_ready.is_none()
+                    && day >= g.ready
+                    && day < g.ready + 20
+            })
             .map(|g| g.quantity * 10)
             .sum()
     }
     pub fn service_need(&self, day: usize) -> i64 {
         self.generators
             .iter()
-            .filter(|g| g.repair_due.is_none() && day >= g.ready + 20)
+            .filter(|g| {
+                g.repair_due.is_none() && g.second_stage_ready.is_none() && day >= g.ready + 20
+            })
             .map(|g| g.quantity)
             .sum()
     }
     pub fn start_service(&mut self, day: usize, quantity: i64) {
+        assert!(quantity > 0 && quantity <= self.service_need(day));
+        let second_ready = day.checked_add(1).expect("service deadline overflow");
+        let completed = day.checked_add(2).expect("service deadline overflow");
         let mut left = quantity;
         let mut repairing = vec![];
         for g in &mut self.generators {
-            if g.repair_due.is_some() || day < g.ready + 20 {
+            if g.repair_due.is_some() || g.second_stage_ready.is_some() || day < g.ready + 20 {
                 continue;
             }
             let n = left.min(g.quantity);
@@ -137,7 +198,8 @@ impl Lifecycle {
             repairing.push(GeneratorCohort {
                 quantity: n,
                 ready: g.ready,
-                repair_due: Some(day + 2),
+                repair_due: (!self.daily_service).then_some(completed),
+                second_stage_ready: self.daily_service.then_some(second_ready),
             });
         }
         assert_eq!(left, 0);
@@ -175,7 +237,11 @@ impl Lifecycle {
         }
     }
     pub fn is_drained(&self) -> bool {
-        self.pending.is_empty() && self.generators.iter().all(|g| g.repair_due.is_none())
+        self.pending.is_empty()
+            && self
+                .generators
+                .iter()
+                .all(|g| g.repair_due.is_none() && g.second_stage_ready.is_none())
     }
 }
 
@@ -331,5 +397,110 @@ mod tests {
         initial[11] = 10;
         let mut l = Lifecycle::preserved(&initial, u32::MAX);
         l.start_food(0, 7, 1, 10);
+    }
+    #[test]
+    fn daily_repairs_match_individual_generator_oracle_for_729_capacity_paths() {
+        // Three individually modelled machines versus aggregate cohort splitting.
+        // Every 0/1/2-person-capacity pattern over six days, then full recovery.
+        for pattern in 0..729 {
+            let mut l = Lifecycle::new(&[0; 22]).with_daily_service();
+            let mut ready_again = [None; 3];
+            for day in 0..35 {
+                let mut arrivals = [0; 22];
+                if day == 0 {
+                    arrivals[16] = 3;
+                }
+                if day == 22 {
+                    arrivals[21] = 3;
+                }
+                arrivals[18] = ready_again.iter().filter(|&&r| r == Some(day + 1)).count() as i64;
+                l.advance(day, &arrivals, false);
+                let expected = if (1..21).contains(&day) {
+                    30
+                } else {
+                    10 * ready_again
+                        .iter()
+                        .filter(|r| r.is_some_and(|t| t <= day))
+                        .count() as i64
+                };
+                assert_eq!(
+                    l.generator_capacity(day),
+                    expected,
+                    "pattern {pattern}, day {day}"
+                );
+                if day == 21 {
+                    l.start_service(day, 3);
+                }
+                if day >= 22 {
+                    let capacity = if day < 28 {
+                        (pattern / 3usize.pow((day - 22) as u32)) % 3
+                    } else {
+                        3
+                    };
+                    let waiting = ready_again.iter().filter(|r| r.is_none()).count();
+                    assert_eq!(l.second_stage_need(day), waiting as i64);
+                    let n = capacity.min(waiting);
+                    if n > 0 {
+                        l.finish_service(day, n as i64);
+                        for r in ready_again.iter_mut().filter(|r| r.is_none()).take(n) {
+                            *r = Some(day + 2);
+                        }
+                    }
+                }
+            }
+            assert!(l.is_drained());
+            assert_eq!(l.maintenance_starts, 3);
+        }
+    }
+    #[test]
+    fn absent_second_day_cannot_be_replaced_by_elapsed_calendar_time() {
+        let mut l = Lifecycle::new(&[0; 22]).with_daily_service();
+        for day in 0..80 {
+            let mut arrivals = [0; 22];
+            if day == 0 {
+                arrivals[16] = 2;
+            }
+            if day == 22 {
+                arrivals[21] = 2;
+            }
+            l.advance(day, &arrivals, false);
+            if day == 21 {
+                l.start_service(day, 2);
+            }
+            if day >= 22 {
+                assert_eq!(l.generator_capacity(day), 0);
+                assert_eq!(l.second_stage_need(day), 2);
+                assert_eq!(l.service_need(day), 0);
+                assert!(!l.is_drained());
+            }
+        }
+    }
+    #[test]
+    #[should_panic]
+    fn phase_two_cannot_start_before_phase_one_arrives() {
+        let mut l = Lifecycle::new(&[0; 22]).with_daily_service();
+        let mut a = [0; 22];
+        a[16] = 1;
+        l.advance(0, &a, false);
+        l.start_service(21, 1);
+        l.finish_service(21, 1);
+    }
+    #[test]
+    #[should_panic]
+    fn phase_one_certificate_cannot_be_fabricated() {
+        let mut l = Lifecycle::new(&[0; 22]).with_daily_service();
+        let mut a = [0; 22];
+        a[21] = 1;
+        l.advance(0, &a, false);
+    }
+    #[test]
+    #[should_panic]
+    fn pending_service_cannot_be_started_twice() {
+        let mut l = Lifecycle::new(&[0; 22]).with_daily_service();
+        let mut a = [0; 22];
+        a[16] = 2;
+        l.advance(0, &a, false);
+        l.start_service(21, 2);
+        l.start_service(22, 1);
     }
 }

@@ -343,3 +343,32 @@ existing physical-evidence limitation. The disposable PostgreSQL cluster was
 stopped and removed. The initial sandbox-only attempt could not create PostgreSQL
 shared memory; the full runner was subsequently rerun successfully with permission.
 No existing database, real participants, real money or model calls were used.
+
+
+## Daily maintenance-work verification — 7 November 2026
+
+The schema-10 report adds five 1,825-day two-phase service paths and three
+front-loaded counterfactuals. First-phase work in progress and actual second-day
+work share the full graph's resources and qualified capacity. All 337,663 target
+money movements settle under one finite-family opening vector; physical deficits
+remain reported. Independent queue/certificate replay supplements aggregate
+matrix checks. Comparison with schema 9 checked 330,569 historical numerical
+leaves without a change, excluding intentional matrix dimensions/version and
+newly appended inactive dimensions.
+
+Five new example tests include 729 exhaustive six-day capacity patterns compared
+with individually tracked generators, indefinite pause, premature second phase,
+forged first-phase completion and double-start rejection. The complete required
+local runner passed 57 mathematics, 91 PostgreSQL, 14 coupled-example, three
+library, four no-AI example and 11 advisory-safety tests; formatting/Clippy/licence
+checks; byte-identical regeneration of all three maintained reports; HTTP restart
+and provenance; both strict-evidence privilege configurations; and 36-table
+backup/restore. The 60-period shortfall exercise passed 4,548 requests and one
+restart in 55.776 seconds. The 35-period closed exercise passed 3,901 requests and
+two restarts in 46.924 seconds. Actor seeds 7/19 completed with the known physical
+evidence gap still reported. The temporary PostgreSQL cluster was stopped and
+removed. No existing database, real participant, real money or model call was used.
+
+PR #2's preceding commit `d16b0a8` passed both GitHub CI runs and merged as
+`0ab50cb`. The tests above describe this next stage locally; its remote CI status
+must be checked independently after publication.

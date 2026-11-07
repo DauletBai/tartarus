@@ -7,7 +7,7 @@ model, not a calibrated national plan or an autonomous production controller.
 
 ## What is connected
 
-The schema-9 report has a coupled model with 21 resource/capability dimensions, 20 processes and 1,825 daily
+The schema-10 report has a coupled model with 22 resource/capability dimensions, 21 processes and 1,825 daily
 periods. A synthetic cohort of 1,000 residents is scaled by 100,000 to the stated
 100-million population scale. This is aggregate arithmetic, not individual agents
 or an estimate of actual Kazakhstan needs. Annual requirements grow by five
@@ -1158,3 +1158,82 @@ under a common opening measure of 4,843,621,465,750. The nine intermediate
 raw-reserve scenarios settle 597,298 movements. These are separate envelopes,
 not additive budgets for one population. Legacy regression checks retained 1,245
 numerical fields, allowing only inactive appended resource/process dimensions.
+
+
+## Daily maintenance work and unavailable technical teams
+
+The 7 November 2026 schema-10 extension closes the front-loaded service-work gap
+for the declared generator recipe. The previous scenarios remain historical
+comparators. A new work-in-progress dimension and a second service process make
+both workdays subject to the same daily capacity equations as other production.
+The target still uses preserved food, not fresh perishable reserves.
+
+Let `a[t]` be first-phase starts, `b[t]` second-phase starts, and `W[t]` unfinished
+first-phase work at the close of day t. Then:
+
+```text
+W[t] = W[t-1] + a[t-1] - b[t] >= 0
+b[t] <= observed_second_phase_capacity[t]
+2*a[t] + 2*b[t] + sum(other_process_hours[t]) <= 8*qualified_capacity_opening[t]
+service_completed[t] = b[t-1]
+```
+
+First-phase starts consume one metal and one energy per generator, two qualified
+work units and one equipment-use unit. Phase two consumes its actual first-phase
+output and another two qualified work units. Thus the total work and material
+requirement is unchanged, but it cannot all be charged on day one. Additional
+energy/equipment use in phase two is zero **by this synthetic recipe**, not an
+engineering finding. Qualification has not yet been separated into real trades.
+An observed capacity restriction represents unavailability of the second-phase
+technical team, while other qualified workers can still perform phase one.
+
+A cohort in repair cannot generate power or start another repair. Completing
+phase two schedules the service certificate for the following day; the generator
+becomes usable one day after that, preserving the earlier conservative convention.
+Elapsed calendar time alone cannot complete a paused repair. The full resource
+matrix checks shared work, inputs and work-in-progress; separate cohort guards
+check generator identities and readiness. Independent scalar queue replay checks
+all first/second starts and certificates without using those cohort guards.
+
+Five 1,825-day paths share initial assets and one common opening measure. The
+technical-team failures coincide with loss of primary fuel extraction and power;
+this tests a correlated disruption rather than a harmless staffing-only event.
+Both repeated shocks use windows 390–419 and 440–469 (zero-based days).
+
+| Scenario | Unmet food units | Unmet housing-service units |
+| --- | ---: | ---: |
+| Ordinary operation | 0 | 0 |
+| Primary supply unavailable for 30 days, team present | 0 | 0 |
+| Primary supply and second-phase team unavailable for 30 days | 0 | 951,000,000 |
+| Both unavailable for 60 days | 1,160,019,870 | 4,101,000,000 |
+| Two 30-day correlated interruptions | 0 | 951,000,000 |
+
+These are cumulative synthetic service units over the full five-year horizon,
+not numbers of people or measured national welfare. The food buffer covers the
+shorter interruption, but does not provide the energy needed for housing service.
+During the first team interruption, 2,200,000 scaled generator units accumulate
+as work in progress. The old front-loaded comparator reports 2,800,000 completed
+services during the 30-day absence, or 3,600,000 during the 60-day absence; the new
+model reports **zero** after the already-started completion pipeline clears.
+The technical team resumes second-phase work on day 420 or 450 respectively.
+This is an executable counterexample to the old calendar-completion assumption.
+
+All **337,663** monetary movements in the five target paths settle under the same
+opening vector, totalling **4,144,408,770,490 normative units**, without later
+issuance. The vector is componentwise minimal for these fixed schedules only.
+It does not finance nonexistent goods or prove minimum national funding. Comparing
+this amount with a different scenario family's envelope is not a saving estimate.
+
+The stage adds 729 exhaustive six-day availability patterns checked against three
+individually represented generators, plus tests for indefinite pause, premature
+phase two, forged first-phase completion and duplicate service starts. Each target
+path is checked by the full matrix, independent physical replay and monetary
+replay. Past numerical findings remain preserved with the new dimensions inactive.
+
+Remaining work includes service specializations and alternative teams, full
+multi-day work accounting for construction/training, evidence-based coefficients,
+nutrients and rehydration/local access, and reviewed persistence in the live
+service. These are offline experiments: no API route, migration, AI authority or
+automatic monetary policy is introduced. The current five paths drain their
+service queues before the horizon; persistent end-of-horizon outage is an explicit
+future scenario, not permission to discard unfinished work.

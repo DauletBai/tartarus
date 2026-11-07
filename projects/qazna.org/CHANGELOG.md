@@ -2,6 +2,10 @@
 
 ## Unreleased
 
+- Split generator maintenance into two separately constrained workdays in the full offline graph; paused second-phase work remains auditable work in progress.
+- Add five five-year correlated staffing/supply scenarios, three front-loaded counterfactuals, independent queue checks and a 729-pattern individual-generator oracle; retain shortages and fixed-schedule monetary limits.
+- Update the maintained report to schema 10 (22 dimensions, 21 processes); no runtime authority or migration change.
+
 - Make preserved sealed products the target food inventory; retain historical fresh-food cases for comparison.
 - Add constructed grain/product stores, packaging-material and processing-energy consumption, future-valid stock positions and restart-aware reserve targets.
 - Extend the maintained report to schema 9 with nine upstream-reserve comparisons, eleven preserved-food paths and a nominal-reserve counterexample; include source qualifications and a food-profile specification gate.

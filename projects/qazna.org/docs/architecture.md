@@ -181,3 +181,11 @@ late-arriving lots. A tested restart allowance covers the power/processing/route
 lead chain; the nominal-only failure remains recorded. The live API is unchanged.
 Storage method, package, climate, food safety and nutrient profiles are specification
 gates rather than inferred properties of a long numerical expiry date.
+
+
+The schema-10 offline extension adds first-phase repair stock and a separately
+capacity-constrained second workday (22 dimensions, 21 processes). Qualified
+work is charged on each day; paused repairs cannot create completion certificates.
+The matrix and an independent queue replay verify the same traces. See
+[daily work constraints](physical-circulation.md#daily-maintenance-work-and-unavailable-technical-teams).
+This adds no live service endpoint or execution privilege.
