@@ -1,22 +1,24 @@
 # Completion roadmap and feasibility boundaries
 
-Latest review: 7 November 2026, preserved-food reserve stage.
+Latest review: 7 November 2026, daily maintenance-work stage.
 The current work order below supersedes earlier milestone-specific next steps.
 
 ## Current implementation order
 
 Already implemented: exact accounting and physical/payment checks; a 1,825-period
-coupled synthetic model with 21 dimensions and 20 processes; fixed-delivery plan
+coupled synthetic model with 22 dimensions and 21 processes; fixed-delivery plan
 trimming; causal reserve-route feedback with delayed commitments; and independent
 checks of idempotency, feasibility and accounting conservation; and a common
 opening balance certificate across six disruption schedules; and constructed fuel
 reserves with losses, restart protection and refill across seven scenarios; and
 an isolated dated-food/transport/maintenance submodel with 32 five-year runs; and
 seven complete lifecycle/circulation scenarios with a fixed-buffer counterexample;
-and a target preserved-food design with constructed storage and restart allowance.
-The complete local suite passed 57 mathematical, 91 PostgreSQL and nine coupled-example tests, plus
+and a target preserved-food design with constructed storage and restart allowance;
+and two-phase daily maintenance with independent paused-work checks.
+The complete local suite passed 57 mathematical, 91 PostgreSQL and 14 coupled-example tests, plus
 the HTTP, recovery, safety and actor exercises. Verification is recorded in
-[development](development.md). GitHub CI for `71deac0` also passed.
+[development](development.md). The preceding `d16b0a8` passed GitHub CI and merged through PR #2;
+this stage's remote checks are separate from the local results.
 These results cover the declared synthetic model, not national deployment.
 
 The author's current priority is independent calculation and testing before
@@ -27,7 +29,7 @@ for the following sequence. The table distinguishes completed bounded experiment
 | --- | --- | --- | --- |
 | 1 — bounded experiment implemented | Common opening measure across six disruption schedules | Same initial money/assets now tested; physical reserves are fixed rather than optimized; uncertainty beyond the declared family remains open | Exact worst-prefix witnesses, independent replay of every scenario, one-unit-less necessity checks and equal-observation physical prefixes; see the common-funding results |
 | 2 — bounded experiment implemented | Joint planning of reserves, routes, replacement and training | Eight feedback policies × six paths now compared with equal initial assets and exact terminal/cash checks; general design optimization remains open | Zero transport-only food deficit with additional produced equipment; minimax shortage reaches a verified energy-outage lower bound; see joint-planning evidence |
-| 3 — integrated lifecycle experiment implemented | Energy continuity, expiry, transport loss, maintenance and changing demand | Constructed reserves and integrated dated-food/transit/service traces with monetary replay are tested; preserved-food source profiles, nutrient/last-mile calibration, per-day maintenance work and runtime integration remain open | Explicit dated lots/loss events; no expired or destroyed output delivered; partial failures, recalls, disrupted routes and revised needs with no rewriting of past provision |
+| 3 — integrated lifecycle experiment implemented | Energy continuity, expiry, transport loss, maintenance and changing demand | Constructed reserves and integrated dated-food/transit/service traces with monetary replay are tested; preserved-food source profiles, nutrient/last-mile calibration, specialist capacity calibration and runtime integration remain open | Explicit dated lots/loss events; no expired or destroyed output delivered; partial failures, recalls, disrupted routes and revised needs with no rewriting of past provision |
 | 4 | Cohorts, additional services and evidence-backed coefficients | 100 million is a scale factor; health, education and personal choice are not a full national model | Versioned input registry with units, region, year, source and uncertainty; age/cohort transitions, voluntary qualification pathways and service capacity; distinguish synthetic and calibrated runs |
 | 5 | Reviewed integration into the live Rust service | Offline matrices do not currently create persistent runtime plans | Versioned scenario snapshots and drafts; stale-state rejection, atomic application, restart/retry and independent replay; no solver or AI authority to post or issue measure |
 | 6 | Participant-facing demonstrator and operational completion | Machine credentials are not resident identity; disputes, corrections and UI are incomplete | Scoped resident/organization access, evidence custody and dispute resolution, compensating events, accessible role-specific UI, overload and disaster-recovery tests; independent review before any consequential pilot |
@@ -338,3 +340,32 @@ Longer/early failures and missing storage remain counterexamples. Next add typed
 nutrient and rehydration/access constraints with sourced coefficients, storage
 operating/quality costs, then reviewed persistence in the runtime. Do not promote
 an abstract staple or 730-day test parameter to a complete national food standard.
+
+
+### Daily maintenance-work gate — 7 November 2026
+
+Schema 10 represents two separate workdays in the full graph; unfinished service
+pauses under unavailable second-phase technical capacity. Five five-year target
+paths and three old-model counterfactuals retain physical shortages while all
+payments for actual goods settle. The new 729-pattern individual-unit oracle and
+queue replay prevent elapsed time from standing in for performed work. See
+[daily maintenance](physical-circulation.md#daily-maintenance-work-and-unavailable-technical-teams).
+Next: typed food/nutrient, rehydration and access constraints with a versioned
+coefficient registry, then cohorts and health/education services. Real trade
+specializations and general multi-day construction/training work remain open.
+
+
+Next-block acceptance criteria:
+
+1. Version every food/profile coefficient with its physical unit, source, date,
+   uncertainty and synthetic/calibrated status. Missing nutrient data must not be
+   silently replaced by zero or treated as evidence of a complete diet.
+2. Model potable water, preparation energy, handling and last-mile capacity in
+   the same dated resource balance as food; a warehouse receipt alone is not
+   confirmed personal provision.
+3. Separate cohort needs and voluntary food choices. Test equal food masses with
+   different nutrient content, inaccessible stores, water/energy interruption,
+   and an adequate total that conceals an underserved group.
+4. Use independent feasibility checks and keep residual deficits visible. Do not
+   introduce clinical advice, automatic entitlement restrictions or new monetary
+   issuance through the offline calculation.

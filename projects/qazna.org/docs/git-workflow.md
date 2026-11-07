@@ -1,6 +1,6 @@
 # Local Git workflow
 
-The active workspace is connected to `https://github.com/DauletBai/tartarus.git` on `codex/qazna-author-workspace`, tracking `origin/codex/qazna-lifecycle-integration`. Qazna lives at `projects/qazna.org/`; Git commands also work from that directory. This replaces the earlier API-only publication workflow with a local Git index, commits and IDE status/diffs.
+The active workspace is connected to `https://github.com/DauletBai/tartarus.git` on `codex/qazna-daily-maintenance`. Publish this branch with the explicit command below. Qazna lives at `projects/qazna.org/`; Git commands also work from that directory. This replaces the earlier API-only publication workflow with a local Git index, commits and IDE status/diffs.
 
 ## Scope of this workspace
 
@@ -30,7 +30,7 @@ cd ../..
 git add -- projects/qazna.org .github/workflows/qazna.yml MANIFEST.csv
 git diff --cached --stat
 git commit -m "Describe the verified change"
-git push origin HEAD:codex/qazna-lifecycle-integration
+git push -u origin HEAD:codex/qazna-daily-maintenance
 ```
 
 `update_manifest.py` updates only Qazna/CI entries and preserves unrelated manifest entries. Review the staged paths before committing. Changes to historical migrations are not allowed. Do not merge or force-push without authorization. Keep published commits and the local branch synchronized; verify the remote head and CI result before claiming publication is complete.
@@ -46,8 +46,10 @@ published commit `69ca7ef` after backing up every changed file and Git metadata,
 comparing all project files with the publication worktree, and verifying that
 working-file bytes were unchanged. The local manuscript README remains intact.
 
-Continue editing and committing in this author workspace. Its local branch has a
-different name from the remote branch, so use the explicit push command above.
+PR #2 subsequently passed both GitHub checks and merged as `0ab50cb` on
+7 November 2026. The next daily-maintenance branch starts from that verified main.
+Continue editing and committing in this author workspace and use the explicit
+push command above.
 Do not copy stale files back from the older publication worktree. A saved remote
 branch is distinct from a merged change on `main`; check the PR and CI before
 reporting that the default branch has been updated.

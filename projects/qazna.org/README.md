@@ -179,3 +179,9 @@ On Linux, set `PG_BIN` to the installed PostgreSQL directory, for example `/usr/
 Code is **AGPL-3.0-or-later**, see [LICENSE](LICENSE). Documentation in this project is **CC BY-SA 4.0**, see [LICENSE-DOCS](LICENSE-DOCS). [NOTICE](NOTICE) defines the scope. These licenses do not automatically apply to the parent book, research archive or external materials.
 
 The [dependency inventory](THIRD_PARTY_LICENSES.json) records locked Rust package versions and upstream license declarations. Dependency source and compiled distributions are not shipped here; distributing them requires the applicable upstream notices.
+
+
+Latest bounded extension: [daily maintenance and specialist absence](docs/physical-circulation.md#daily-maintenance-work-and-unavailable-technical-teams).
+Two separately constrained workdays prevent repairs from completing without a
+technical team; preserved-food and housing outcomes are reported independently
+of successful monetary settlement. Coefficients remain synthetic.
