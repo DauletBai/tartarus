@@ -54,11 +54,14 @@ The same technology stack does not imply immediate industrial readiness. Economi
 
 ## Next work
 
-1. Establish independent physical evidence and forecast attribution beyond applied, need-linked drafts; evaluate global optimization.
-2. Explicit corrections and reversals, with links to original events and repeat-reversal limits.
-3. Integrate a versioned Python optimizer, queue budgets and evaluation-driven model review.
-4. User roles and resident, operator and auditor interfaces.
-5. Independent production verification, logistics and backup recovery exercises.
+The [current roadmap](completion-roadmap.md#current-implementation-order) governs
+sequencing. First establish one opening funding envelope and explicit reserves
+across bounded disruption scenarios. Then improve joint planning, physical loss
+and expiry, and cohort/input calibration. Connect independently verified candidates
+to versioned Rust reviewable drafts only after these contracts are explicit.
+Resident identity, corrections/disputes, accessible interfaces, operational load
+limits and disaster recovery remain prerequisites for consequential external use.
+The offline experiments do not automatically close these runtime gaps.
 
 ## Norms and proposal selection
 

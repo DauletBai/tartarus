@@ -1,6 +1,59 @@
 # Completion roadmap and feasibility boundaries
 
-Assessment date: 4 November 2026. Reviewed baseline: `3f4a028` (v0.10.0).
+Latest review: 7 November 2026, source baseline `a60d732` (v0.11.0).
+The current work order below supersedes earlier milestone-specific next steps.
+
+## Current implementation order
+
+Already implemented: exact accounting and physical/payment checks; a 1,825-period
+coupled synthetic model with 16 dimensions and 14 processes; fixed-delivery plan
+trimming; causal reserve-route feedback with delayed commitments; and independent
+checks of idempotency, feasibility and accounting conservation. The latest complete
+local suite passed 38 mathematical and 91 PostgreSQL tests, plus the documented
+HTTP, recovery, safety and actor exercises. GitHub CI for `a60d732` also passed.
+These results cover the declared synthetic model, not national deployment.
+
+The author's current priority is independent calculation and testing before
+external approaches. No partner, investment or paid model call is a prerequisite
+for the following sequence. Items below are **planned**, not newly implemented.
+
+| Order | Work package | Why it is still needed | Completion evidence |
+| --- | --- | --- | --- |
+| 1 — next | One funding envelope and explicit reserves across disruption scenarios | Current cash bounds are retrospective and differ by trace; reserve routes are a heuristic | Declare bounded disruption paths and initial assets; use one opening balance vector across them; check every account prefix, physical balance and same-observation decision prefix; preserve shortages rather than hiding them |
+| 2 | Joint planning of reserves, routes, replacement and training | Coordinate trimming cannot exchange whole blocks of activities; it preserves seed shortages | Compare a coupled/block or solver candidate with the baseline; independently verify exact feasibility, indivisible quantities and terminal reserves; publish an objective bound/gap where available |
+| 3 | Expiry, transport loss, maintenance and changing demand | Current commitments arrive as promised and stocks do not age | Explicit dated lots/loss events; no expired or destroyed output delivered; partial failures, recalls, disrupted routes and revised needs with no rewriting of past provision |
+| 4 | Cohorts, additional services and evidence-backed coefficients | 100 million is a scale factor; health, education and personal choice are not a full national model | Versioned input registry with units, region, year, source and uncertainty; age/cohort transitions, voluntary qualification pathways and service capacity; distinguish synthetic and calibrated runs |
+| 5 | Reviewed integration into the live Rust service | Offline matrices do not currently create persistent runtime plans | Versioned scenario snapshots and drafts; stale-state rejection, atomic application, restart/retry and independent replay; no solver or AI authority to post or issue measure |
+| 6 | Participant-facing demonstrator and operational completion | Machine credentials are not resident identity; disputes, corrections and UI are incomplete | Scoped resident/organization access, evidence custody and dispute resolution, compensating events, accessible role-specific UI, overload and disaster-recovery tests; independent review before any consequential pilot |
+
+### Next calculation block: bounded uncertainty and common opening measure
+
+For a declared finite scenario set Ω and fixed scenario schedules, let
+`C[a,ω,t]` be cumulative net inflow at account a through event t. A common opening
+vector sufficient for all those schedules is:
+
+```text
+E[a] = max(0, max over ω in Ω and event prefixes t of -C[a,ω,t])
+```
+
+This is the componentwise minimum for those fixed schedules with no extra
+rebalancing or later issuance. It is not a global monetary optimum or a guarantee
+for events outside Ω. Verify it against an independent replay and small exhaustive
+cases. Changing routing or payment order changes the schedules and requires new
+bounds. Causal decisions must remain equal while observations are equal; choosing
+an action from a scenario's hidden future is forbidden.
+
+The next deliverable should compare service coverage, opening measure, reserve
+quantities, disposal and recovery delay using the **same** initial funding and
+asset basis. Include simultaneous power/transport/capacity failures and delayed
+recovery, with their explicit bounds. If full provision is physically impossible,
+report the deficit and the governing constraints. A subsequent optimizer may then
+trade among declared service/reserve objectives without changing human rights or
+inventing inputs. Calibration and the runtime safety gates remain necessary.
+
+## Earlier assessment and milestone record
+
+Initial assessment: 4 November 2026. Baseline: `3f4a028` (v0.10.0).
 This is a source/documentation review, not an independent security audit or a new economic validation. The baseline passed 86 PostgreSQL, 3 Rust and 11 Python tests, HTTP restart checks, five strict-evidence cases and two accelerated actor exercises. Those results cover specified synthetic cases only.
 
 ## What completion means
@@ -18,7 +71,11 @@ The present implementation is a research core. It is not yet a complete self-ser
 
 Rust/Tokio/Axum and PostgreSQL/SQLx implement exact accounting, atomic reservations, needs, recipes and capacity, completion and losses, provenance, reviewed drafts, durable coordination and aggregate observation. The operator retains execution authority; model commentary cannot apply actions. Strict evidence mode separates inspector, custodian and recipient credentials and blocks unattested or disputed resources. The book and code now cross-reference each other; the Russian HTML reading edition is public.
 
-## Blocking work and acceptance evidence
+## Initial blocking work and acceptance evidence
+
+This baseline checklist is retained for traceability. The v0.11 and research
+updates below record partial closures; the current work order above governs
+implementation.
 
 | Priority | Work | Current gap | Acceptance evidence |
 | --- | --- | --- | --- |
@@ -46,7 +103,7 @@ P0 means required before assigning the system consequential authority over real 
 - What the accounting unit represents and why a given resource requires a given measure.
 - Who approves norms, changes them, audits that authority and hears appeals.
 - Whether and how basic provision is funded when the resident or treasury lacks measure. Current demo issuance is a fixture, not policy.
-- How measure returns from providers to the treasury, how capacity growth and depreciation are verified, and whether any issuance/redemption is permitted.
+- How measure circulates from providers through the treasury, how capacity growth and depreciation are verified, and whether any issuance/redemption is permitted.
 - How scarce physical resources are prioritized without inventing resources through accounting.
 - Who can stop a participant, unit or system; how essential provision continues during a dispute or outage.
 - What is necessary to know about a person, what must remain private, and how corrections coexist with retained transaction history.

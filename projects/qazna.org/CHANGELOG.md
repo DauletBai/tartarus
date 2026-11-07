@@ -2,6 +2,9 @@
 
 ## Unreleased
 
+- Preserve the author-adjusted red palette (`#ff1520`, `#bb0010`, base `#ff000d`) and regenerate the woven PNG/ICO and static SVG derivatives.
+- Consolidate the current implementation order: common scenario funding/reserves, joint planning, lifecycle losses, calibrated cohorts, reviewed runtime integration and participant safeguards.
+
 - Add causal delayed-output commitments with idempotent retries, overflow atomicity and independent commitment-list tests.
 - Compare fixed and slower reserve transport routes under 30/90-period closures; verify equal decision prefixes before future conditions diverge.
 - Scope the fixed-route shortage certificate explicitly; retain residual physical shortages and retrospective cash-bound limitations.
