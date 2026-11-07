@@ -36,3 +36,15 @@ Needs, responsibility hierarchies, allocations, resource lots, reservations, rec
 Explicit needs norm revisions, ordered advisory planning and reviewable drafts with atomic application are implemented. Plans coordinate promises across needs and provisioning units; only later completion and receipt events provide feedback about actual results. Durable coordination now recalculates explicitly monitored scopes after committed commands and records advisory AI commentary separately. Approved needs norms, logistics, global optimization, global attribution of standalone forecasts, independent verification and the full circulation policy remain unfinished. The current modules are parts of a future coordination system, not a complete model of an organism or economy.
 
 The systematic [organism audit](organism-audit.md) records missing responsibilities and test boundaries. See [synthetic exercises](exercises.md) for live monitoring and adversarial scenarios.
+
+## Research candidate: common-entitlement circulation
+
+On 7 November 2026 an offline example explicitly closes a bounded production and
+consumption network. The shared productive units' accounted residual is assigned
+to unconditional provision through one treasury; personal daily provision is fully
+spent in the model. Timing reserves belong to the common system. This is a declared
+ownership/accounting assumption, not an automatically applied levy or a finding
+about privately owned firms. The live operator may exercise existing transfers on
+synthetic data; no new automatic policy or issuance authority is enabled. See
+[closed circulation](computation-and-ai-costs.md#closed-circulation-candidate--7-november-2026)
+for exact bounds, counterexamples and missing physical links.

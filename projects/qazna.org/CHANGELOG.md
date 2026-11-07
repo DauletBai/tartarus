@@ -2,6 +2,10 @@
 
 ## Unreleased
 
+- Add exact ordered-schedule liquidity checks, blocked-edge traces and a shared-entitlement circulation candidate with one treasury and zero daily resident closing balances.
+- Verify 1,825-period circulation under fixed needs, settlement delay, quantity growth and regional/link disruption; retain limits on ownership assumptions and physical completeness.
+- Extend the strict-evidence HTTP exercise with declared intermediate payments, common entitlements and restart during a partly completed cycle; regenerate maintained circulation calculations in CI.
+
 - Add exact rational primal/dual and Farkas certificate checks, a sparse delayed-production horizon matrix, and fixed-schedule circulation liquidity bounds in Rust.
 - Compare Hamilton quota and supply-monotone Jefferson allocation against exhaustive references; retain explicit counterexamples to their respective guarantees.
 - Verify four synthetic 1,825-period resource scenarios and expose proven infeasibility under a long production outage.

@@ -330,3 +330,129 @@ pub fn verify_infeasible(model: &LinearModel, dual: &RationalVector) -> Result<(
     }
     Ok(())
 }
+
+/// A scheduled transfer in an offline experiment. Vector order is authoritative
+/// within a period. Basis describes the economic purpose; it grants no authority.
+#[derive(Debug, Clone, Serialize, Deserialize)]
+#[serde(deny_unknown_fields)]
+pub struct ScheduledMovement {
+    pub period: u32,
+    pub movement: Movement,
+    pub basis: String,
+}
+
+fn validate_schedule(accounts: usize, events: &[ScheduledMovement]) -> Result<(), MathError> {
+    if accounts == 0 || accounts > 10_000 || events.len() > 1_000_000 {
+        return Err(MathError::Invalid("bounded nonempty account set required"));
+    }
+    let mut last = 0;
+    for event in events {
+        let m = &event.movement;
+        if event.period < last
+            || event.basis.trim().is_empty()
+            || m.from >= accounts
+            || m.to >= accounts
+            || m.from == m.to
+            || m.amount == 0
+        {
+            return Err(MathError::Invalid("schedule order, purpose or movement"));
+        }
+        last = event.period;
+    }
+    Ok(())
+}
+
+/// Minimum balances for a finite, ordered, fully executed schedule. This is a
+/// sufficient certificate ONLY if every edge remains available on time.
+pub fn schedule_opening(
+    accounts: usize,
+    events: &[ScheduledMovement],
+) -> Result<LiquidityBound, MathError> {
+    validate_schedule(accounts, events)?;
+    liquidity_bound(
+        accounts,
+        &events
+            .iter()
+            .map(|e| e.movement.clone())
+            .collect::<Vec<_>>(),
+        1,
+    )
+}
+
+#[derive(Debug, Clone, Serialize, Deserialize, PartialEq, Eq)]
+pub struct ScheduleRun {
+    pub opening_total: String,
+    pub closing: Vec<String>,
+    pub minimum_balance: Vec<String>,
+    pub attempted_events: usize,
+    pub settled_events: usize,
+    pub settled_volume: String,
+    pub unavailable_events: usize,
+    pub insufficient_events: usize,
+    pub first_blocked_period: Option<u32>,
+    pub first_blocked_event: Option<usize>,
+}
+
+/// Each planned transfer is attempted once. Unavailable or underfunded transfers
+/// move NOTHING; dependent transfers are checked against actual balances. This is
+/// a deadline stress trace, not an optimizer or a retry/compensation policy.
+pub fn replay_schedule(
+    opening: &[u64],
+    events: &[ScheduledMovement],
+    unavailable: &[usize],
+) -> Result<ScheduleRun, MathError> {
+    validate_schedule(opening.len(), events)?;
+    let denied: std::collections::BTreeSet<_> = unavailable.iter().copied().collect();
+    if denied.len() != unavailable.len() || denied.iter().any(|&i| i >= events.len()) {
+        return Err(MathError::Invalid("invalid or duplicate unavailable event"));
+    }
+    let mut balances: Vec<i128> = opening.iter().map(|&v| i128::from(v)).collect();
+    let total = balances.iter().try_fold(0, |sum, &v| add(sum, v))?;
+    let mut minima = balances.clone();
+    let mut report = ScheduleRun {
+        opening_total: total.to_string(),
+        closing: Vec::new(),
+        minimum_balance: Vec::new(),
+        attempted_events: events.len(),
+        settled_events: 0,
+        settled_volume: "0".into(),
+        unavailable_events: 0,
+        insufficient_events: 0,
+        first_blocked_period: None,
+        first_blocked_event: None,
+    };
+    let mut volume = 0;
+    for (i, event) in events.iter().enumerate() {
+        let m = &event.movement;
+        let amount = i128::from(m.amount);
+        let blocked = if denied.contains(&i) {
+            report.unavailable_events += 1;
+            true
+        } else if balances[m.from] < amount {
+            report.insufficient_events += 1;
+            true
+        } else {
+            false
+        };
+        if blocked {
+            if report.first_blocked_event.is_none() {
+                report.first_blocked_event = Some(i);
+                report.first_blocked_period = Some(event.period);
+            }
+            continue;
+        }
+        let credit = add(balances[m.to], amount)?;
+        balances[m.from] -= amount;
+        balances[m.to] = credit;
+        minima[m.from] = minima[m.from].min(balances[m.from]);
+        report.settled_events += 1;
+        volume = add(volume, amount)?;
+    }
+    if balances.iter().try_fold(0, |sum, &v| add(sum, v))? != total {
+        return Err(MathError::Invalid("circulation conservation failed"));
+    }
+    report.closing = balances.iter().map(ToString::to_string).collect();
+    report.minimum_balance = minima.iter().map(ToString::to_string).collect();
+    report.settled_volume = volume.to_string();
+    Ok(report)
+}

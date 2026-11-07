@@ -427,3 +427,233 @@ fn farkas_certificate_distinguishes_impossibility_from_bad_candidate() {
     assert!(verify_infeasible(&impossible, &vector(&[0, 1], 1)).is_err());
     assert!(verify_infeasible(&impossible, &vector(&[-1, -1], 1)).is_err());
 }
+
+fn scheduled(period: u32, from: usize, to: usize, amount: u64) -> ScheduledMovement {
+    ScheduledMovement {
+        period,
+        movement: Movement { from, to, amount },
+        basis: "Synthetic declared purpose".into(),
+    }
+}
+
+#[test]
+fn scheduled_closed_chain_and_payment_delay() {
+    let immediate = vec![
+        scheduled(0, 0, 1, 10),
+        scheduled(0, 1, 2, 10),
+        scheduled(0, 2, 0, 10),
+        scheduled(1, 0, 1, 10),
+        scheduled(1, 1, 2, 10),
+        scheduled(1, 2, 0, 10),
+    ];
+    let bound = schedule_opening(3, &immediate).unwrap();
+    assert_eq!(bound.minimum_opening_by_account, vec!["10", "0", "0"]);
+    assert!(bound.stationary_repeatable);
+    let result = replay_schedule(&[10, 0, 0], &immediate, &[]).unwrap();
+    assert_eq!(result.settled_events, 6);
+    assert_eq!(result.closing, vec!["10", "0", "0"]);
+    let delayed = vec![
+        scheduled(0, 0, 1, 10),
+        scheduled(0, 1, 2, 10),
+        scheduled(1, 0, 1, 10),
+        scheduled(1, 1, 2, 10),
+        scheduled(1, 2, 0, 10),
+        scheduled(2, 2, 0, 10),
+    ];
+    assert_eq!(
+        schedule_opening(3, &delayed)
+            .unwrap()
+            .minimum_opening_by_account,
+        vec!["20", "0", "0"]
+    );
+    assert_eq!(
+        replay_schedule(&[10, 0, 0], &delayed, &[])
+            .unwrap()
+            .first_blocked_period,
+        Some(1)
+    );
+    assert_eq!(
+        replay_schedule(&[20, 0, 0], &delayed, &[])
+            .unwrap()
+            .settled_events,
+        6
+    );
+}
+
+#[test]
+fn blocked_edge_does_not_burn_money_or_invent_credit() {
+    let events = vec![
+        scheduled(0, 0, 1, 5),
+        scheduled(0, 1, 2, 5),
+        scheduled(0, 2, 0, 5),
+    ];
+    let run = replay_schedule(&[5, 0, 0], &events, &[1]).unwrap();
+    assert_eq!(run.closing, vec!["0", "5", "0"]);
+    assert_eq!(run.unavailable_events, 1);
+    assert_eq!(run.insufficient_events, 1);
+    assert_eq!(run.settled_volume, "5");
+    assert_eq!(run.first_blocked_event, Some(1));
+    // A large total in the wrong account cannot pay the first deadline.
+    let run = replay_schedule(&[0, 500, 0], &events, &[]).unwrap();
+    assert_eq!(run.first_blocked_event, Some(0));
+}
+
+#[test]
+fn ordered_schedule_bound_matches_exhaustive_initial_states() {
+    // Independent exhaustive oracle: enumerate all two-account openings and
+    // execute signed changes in a plain small integer reference.
+    for mask in 0..256usize {
+        let events: Vec<_> = (0..4)
+            .map(|k| {
+                let code = (mask >> (2 * k)) & 3;
+                scheduled(k as u32, code % 2, 1 - code % 2, (1 + code / 2) as u64)
+            })
+            .collect();
+        let mut feasible = Vec::new();
+        for a in 0..=8 {
+            for b in 0..=8 {
+                let mut balances = [a, b];
+                let mut valid = true;
+                for e in &events {
+                    let m = &e.movement;
+                    balances[m.from] -= m.amount as i32;
+                    balances[m.to] += m.amount as i32;
+                    valid &= balances.iter().all(|x| *x >= 0);
+                }
+                if valid {
+                    feasible.push([a, b]);
+                }
+            }
+        }
+        let expected: Vec<_> = (0..2)
+            .map(|i| feasible.iter().map(|b| b[i]).min().unwrap().to_string())
+            .collect();
+        assert_eq!(
+            schedule_opening(2, &events)
+                .unwrap()
+                .minimum_opening_by_account,
+            expected
+        );
+        let opening: Vec<_> = expected.iter().map(|s| s.parse().unwrap()).collect();
+        assert_eq!(
+            replay_schedule(&opening, &events, &[])
+                .unwrap()
+                .settled_events,
+            events.len()
+        );
+    }
+}
+
+#[test]
+fn denied_event_combinations_match_independent_prefix_history() {
+    let events = vec![
+        scheduled(0, 0, 1, 3),
+        scheduled(0, 1, 2, 2),
+        scheduled(1, 2, 0, 1),
+        scheduled(1, 0, 2, 2),
+        scheduled(2, 2, 1, 2),
+        scheduled(2, 1, 0, 2),
+    ];
+    for mask in 0..64usize {
+        let denied: Vec<_> = (0..6).filter(|i| mask & (1 << i) != 0).collect();
+        let mut history = vec![[3i32, 1, 0]];
+        let mut settled = 0;
+        for (i, e) in events.iter().enumerate() {
+            let before = *history.last().unwrap();
+            let m = &e.movement;
+            let mut after = before;
+            if mask & (1 << i) == 0 && before[m.from] >= m.amount as i32 {
+                after[m.from] -= m.amount as i32;
+                after[m.to] += m.amount as i32;
+                settled += 1;
+            }
+            assert_eq!(after.iter().sum::<i32>(), 4);
+            history.push(after);
+        }
+        let run = replay_schedule(&[3, 1, 0], &events, &denied).unwrap();
+        assert_eq!(run.settled_events, settled);
+        assert_eq!(run.closing, history.last().unwrap().map(|v| v.to_string()));
+        assert_eq!(
+            run.minimum_balance,
+            (0..3)
+                .map(|i| history.iter().map(|b| b[i]).min().unwrap().to_string())
+                .collect::<Vec<_>>()
+        );
+    }
+}
+
+#[test]
+fn balanced_total_with_wrong_entitlements_cannot_sustain_each_person() {
+    let events = vec![
+        scheduled(0, 0, 2, 4),
+        scheduled(0, 1, 2, 6),
+        scheduled(0, 2, 0, 3),
+        scheduled(0, 2, 1, 7),
+        scheduled(1, 0, 2, 4),
+        scheduled(1, 1, 2, 6),
+    ];
+    let run = replay_schedule(&[4, 6, 0], &events, &[]).unwrap();
+    assert_eq!(run.first_blocked_event, Some(4));
+    assert_eq!(run.opening_total, "10");
+    assert!(
+        !schedule_opening(3, &events[..4])
+            .unwrap()
+            .stationary_repeatable
+    );
+}
+
+#[test]
+fn independent_regions_and_account_relabelling_preserve_trace() {
+    let events = vec![
+        scheduled(0, 0, 1, 7),
+        scheduled(0, 2, 3, 11),
+        scheduled(0, 1, 0, 7),
+        scheduled(0, 3, 2, 11),
+    ];
+    let run = replay_schedule(&[7, 0, 11, 0], &events, &[0]).unwrap();
+    assert_eq!(run.closing[2..], ["11", "0"]);
+    let permutation = [2, 0, 3, 1];
+    let mapped: Vec<_> = events
+        .iter()
+        .map(|e| {
+            scheduled(
+                e.period,
+                permutation[e.movement.from],
+                permutation[e.movement.to],
+                e.movement.amount,
+            )
+        })
+        .collect();
+    let mut balances = [0; 4];
+    for (i, b) in [7, 0, 11, 0].into_iter().enumerate() {
+        balances[permutation[i]] = b;
+    }
+    let mapped_run = replay_schedule(&balances, &mapped, &[0]).unwrap();
+    for (i, &j) in permutation.iter().enumerate() {
+        assert_eq!(run.closing[i], mapped_run.closing[j]);
+    }
+    assert_eq!(run.settled_events, mapped_run.settled_events);
+}
+
+#[test]
+fn schedule_validation_rejects_ambiguous_or_invalid_inputs() {
+    let events = vec![scheduled(1, 0, 1, 1), scheduled(0, 1, 0, 1)];
+    assert!(schedule_opening(2, &events).is_err());
+    assert!(replay_schedule(&[1, 0], &events, &[]).is_err());
+    let mut event = scheduled(0, 0, 1, 1);
+    event.basis = " ".into();
+    assert!(schedule_opening(2, &[event]).is_err());
+    let event = scheduled(0, 0, 1, 1);
+    assert!(replay_schedule(&[1, 0], std::slice::from_ref(&event), &[0, 0]).is_err());
+    assert!(replay_schedule(&[1, 0], &[event], &[1]).is_err());
+    assert!(schedule_opening(0, &[]).is_err());
+    assert!(schedule_opening(10_001, &[]).is_err());
+    assert!(schedule_opening(2, &[scheduled(0, 0, 2, 1)]).is_err());
+    assert!(schedule_opening(2, &[scheduled(0, 0, 0, 1)]).is_err());
+    assert!(schedule_opening(2, &[scheduled(0, 0, 1, 0)]).is_err());
+    let run = replay_schedule(&[u64::MAX, u64::MAX], &[scheduled(0, 0, 1, u64::MAX)], &[]).unwrap();
+    assert_eq!(
+        run.closing,
+        vec!["0".to_string(), (2 * u128::from(u64::MAX)).to_string()]
+    );
+}

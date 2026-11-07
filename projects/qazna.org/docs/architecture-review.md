@@ -241,3 +241,17 @@ Keep the existing AGPL-3.0-or-later code and CC-BY-SA-4.0 project-documentation 
 6. **Consider wider federation only after evidence:** independent deployment domains, agreed interoperability and responsibility, proven cross-domain replay/recovery behavior, and informed consent. A declined eOtinish proposal does not prevent research, but a corporate partnership would not supply state monetary authority either.
 
 The next implementation block should address scoped access and accountable policy/correction contracts before broad public deployment. Queue amplification and test depth should advance alongside it. This review changes tests and documentation; it does not implement OIDC, federation, a global optimizer or an economic policy by implication.
+
+
+## Mathematical/circulation update — 7 November 2026
+
+The offline verifier now checks finite ordered circulation, minimum opening
+balances and unavailable/underfunded events without executing ledger actions.
+The maintained study includes one-treasury common entitlements, timing reserves,
+quantity growth and intraday rescheduling. The HTTP drill runs this explicit
+synthetic candidate through existing operator commands and checks partial-cycle
+restart and replay. Executables are pinned per exercise to avoid mixed-build
+restart traces. No migration, new issuance permission, automatic social policy,
+enterprise ownership registry or independently verified upstream supply chain is
+introduced. See [the calculations](computation-and-ai-costs.md#closed-circulation-candidate--7-november-2026)
+and [execution boundaries](exercises.md#shared-entitlement-circulation-exercise).

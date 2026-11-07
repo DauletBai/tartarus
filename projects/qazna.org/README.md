@@ -51,6 +51,11 @@ and [continuous strict-evidence HTTP trials](docs/exercises.md#multi-period-circ
 include reproducible counterexamples, not only successful scenarios. External
 outreach is deferred while this independent computational work proceeds.
 
+The [closed-circulation candidate](docs/computation-and-ai-costs.md#closed-circulation-candidate--7-november-2026)
+adds one-treasury daily provision, explicit common-production entitlements,
+settlement-delay reserves and zero personal closing balances. It is a bounded
+experimental rule; physical completeness and broader policy remain open.
+
 ## Run the checks
 
 Requirements: Rust (tested with 1.97.0), Python 3.11+ and PostgreSQL 16+. From the repository root:

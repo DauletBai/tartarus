@@ -139,3 +139,28 @@ Remaining computational acceptance gates:
 The current 1,825-period example has 100-million-person-sized aggregate numbers,
 not 100 million simulated actors. Its baseline certificate concerns total meals
 under declared constraints; it is not a proof of the whole proposed economy.
+
+## Independent computational work — 7 November 2026
+
+Gate 1 now has an explicit **candidate** for a complete toy circulation: common
+productive units account for intermediate obligations and the population's
+unconditional provision entitlement. One treasury disburses daily needs; residents
+spend the day's provision and end each modelled period at zero. Public timing
+reserves, not personal saving balances, cover delayed receipts. This assumption is
+not a tax added to private income and is not enacted as an autonomous API policy.
+
+Implemented exact finite-schedule prefix bounds, rejection without changing funds,
+1,825-period same-day/delayed/growing cases, an intraday rescheduling comparison,
+disconnected complete regions and
+upstream-link failure traces. Tests include wrong individual entitlements despite
+aggregate balance. See [the model and its proofs](computation-and-ai-costs.md#closed-circulation-candidate--7-november-2026).
+The real API exercise uses existing operator-authorized transfer and provisioning
+endpoints; it checks restart and retry behavior with synthetic evidence.
+
+Gate 1 remains partial: the toy equipment boundary omits real replacement inputs;
+common entitlements, additional contribution rewards, changing choice and external
+trade need explicit complete constraints. A missed transfer trace is not a recovery
+planner. Continue by coupling the circulation identity to the physical time-expanded
+matrix and cohort/staffing/construction pipelines (gate 2), then optimizing and
+checking multi-objective plans (gate 3). Do not confuse an accounting identity with
+calibrated welfare, legitimacy or a complete five-year national plan.

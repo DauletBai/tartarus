@@ -334,3 +334,166 @@ invalid dimensions, forged delivery, fractional plans, sign errors and overflow.
 The full harness regenerates the published five-year result and requires a byte
 match. A later solver or external AI may propose plans and certificates; the exact
 checker remains independently responsible for accepting the mathematical claims.
+
+## Closed circulation candidate — 7 November 2026
+
+The previous finite-treasury trace deliberately omitted the rest of circulation.
+Its depletion diagnoses that incomplete schedule, not an impossibility theorem
+about a needs-based economy. The new candidate explicitly connects consumption,
+intermediate production payments and unconditional common-production entitlements.
+No counterpart is created merely to hide an imbalance.
+
+### Ownership and entitlement assumption
+
+For this **synthetic candidate**, productive units administer common productive
+capacity. Their receipts cover declared intermediate inputs. The residual is
+accounted from the outset as the community's provision entitlement, not privately
+owned profit subsequently taken away. One common treasury routes that entitlement
+to residents according to needs, without an employment test. This is a proposed
+accounting/ownership rule requiring social and institutional evaluation; a label
+alone cannot turn a levy on independently owned private income into a non-tax.
+
+The experiment contains no interest, loans, tax rate, deposit yield or repeated
+issuance. Intermediate payments and common entitlements are disjoint: the model
+does not count a wage, dividend and entitlement as three uses of the same amount.
+Additional contribution rewards, private assets, transition rules, exports/imports
+and changing individual choices are not resolved by this candidate.
+
+A toy cycle in whole accounting units is:
+
+| Unit | Receipts | Intermediate payments | Common provision entitlement |
+| --- | ---: | --- | ---: |
+| Retail | 100 from households | 80 to production | 20 |
+| Production | 80 | 40 to raw materials; 10 to equipment | 30 |
+| Raw-material unit | 40 | 10 to equipment | 30 |
+| Equipment service | 20 | 0 in this bounded example | 20 |
+| Common treasury | 100 of assigned common entitlements | 100 for household needs | 0 retained per cycle |
+
+```mermaid
+flowchart LR
+  T[Common treasury] -->|100 daily provision| H[Residents]
+  H -->|100 consumption| R[Retail]
+  R -->|80 inputs| P[Production]
+  P -->|40 inputs| M[Raw materials]
+  P -->|10 equipment service| E[Equipment]
+  M -->|10 equipment service| E
+  R -->|20 common entitlement| T
+  P -->|30 common entitlement| T
+  M -->|30 common entitlement| T
+  E -->|20 common entitlement| T
+```
+
+The 100-unit household requirement is split 40/30/30 between synthetic groups
+(children, people unable to work, other working-age residents). These weights are
+illustrative needs, not demographic estimates or a proposed national tariff.
+No person must prove economic usefulness to receive their share.
+
+Let `C_j` be final consumption paid to unit `j`, and `X_ij` an intermediate payment
+from `i` to `j`. Let `E_j` be its common entitlement contribution:
+
+```text
+I_j = C_j + sum_i X_ij
+E_j = I_j - sum_k X_jk >= 0
+sum_j E_j = sum_j C_j
+```
+
+The last identity follows by cancelling internal intermediate payments. This is
+an accounting identity in the closed declared network, not proof that all real
+inputs have been captured. An equipment unit cannot indefinitely treat replacement,
+energy and staffing needs as zero simply because this toy boundary excludes them.
+For continuous coverage each resident/group must also receive its own necessary
+amount on time: the total identity alone does not prove that condition.
+
+### Timing, reserves and daily personal expenditure
+
+The main `pooled_*` cases fund the day's need immediately before consumption and
+route common entitlements through a single treasury. Every resident/group closes
+every modelled day at **zero**; this is checked for every period. Timing reserves
+stay in the common treasury. The earlier direct-distribution cases are comparison
+experiments and carry personal balances into the next day; they do **not** implement
+the author's strict daily-personal-expenditure condition.
+
+Funds in delayed settlement are recorded in explicit transit accounts and counted
+in the conserved total. They are not multiplied, erased or assumed instantly
+spendable. For constant daily requirement `C` and a delay of `L` whole periods,
+with old entitlements arriving **after** today's disbursement:
+
+```text
+minimum opening common treasury = (L + 1) * C
+```
+
+Proof: before the first delayed settlement, `L+1` disbursements of `C` have occurred.
+Thereafter one scheduled settlement replaces each disbursement, so this same
+maximum prefix deficit suffices. Earlier intraday settlement, unequal obligations
+or changing delays change the bound; the general exact prefix calculation applies.
+No deposit remuneration or borrowing is needed for this reserve.
+
+`examples/circulation_study.rs` uses 100 minor units per toy whole unit and
+1,825 modelled days. The accounting unit is unchanged in every scenario. Growth
+increases the required **quantity** by five percentage points of the initial
+quantity per year, reaching 120% in year five; it is not a price-index change.
+No new funds are issued during these traces.
+
+| Pooled case | Initial common measure, minor units | Scheduled transfers | Missed payments |
+| --- | ---: | ---: | ---: |
+| Same-day circulation | 10,000 | 62,050 | 0 |
+| Two-period settlement delay | 30,000 | 62,050 | 0 |
+| Quantity growth to 120% | 12,000 | 62,050 | 0 |
+| Same growth, two intraday circulation waves | 6,000 | 124,100 | 0 |
+
+These are **componentwise minimal** initial balances for the supplied ordering,
+not a globally minimal money stock over every possible rescheduling. The growth
+case prepositions 12,000 initially. It does not prove an issuance rule or show that
+a strictly smaller initial stock can always serve growth without faster circulation.
+The two-wave comparison supplies the same daily quantities at the same unit
+measure but splits each transfer into an integer floor and its exact complement.
+Every day closes with the same treasury amount and zero resident balances. Its
+6,000-unit bound shows that more scheduled turnover can serve this growth without
+new issuance. This is not a universal velocity target: physical deliveries,
+settlement capacity and people's access/choice must support the proposed timing.
+Physical stocks, production replacement and service capacities must be coupled
+separately before these figures can represent a real economy.
+
+The comparison traces show the boundaries:
+
+- With a two-period delay but only 10,000 initially distributed minor units, the
+  first missed transfer occurs in period 1 (zero-based).
+- With growing needs and only the initial 10,000, a missed obligation occurs at
+  period 365.
+- Blocking three production-to-raw-material payments at periods 100–102 disrupts
+  downstream obligations despite conservation of the total measure.
+- Two complete, separately funded circuits need no cross-region money movement
+  for these accounting obligations. Real regions still need their physical inputs.
+- A balanced aggregate can still fail one group when its entitlement is less than
+  its need; an independent test reproduces that case.
+
+A scheduled obligation is attempted once in these deadline traces. A blocked
+transfer changes neither endpoint; dependent obligations use actual balances.
+The results are not a claim that recovery is impossible after a network outage.
+Retries, changed timing and replacement suppliers require a new feasible schedule.
+The API experiment separately tests durable retries after a restart.
+
+### Reproducibility and boundaries
+
+`research/circulation-model.json` retains all cases, starting balances, exact
+liquidity certificates, the first-period transfer purposes and failure summaries.
+`ScheduleRun.settled_volume` sums all transfers, including intermediate and treasury
+movements: it must not be presented as GDP, delivered consumption or newly created
+value. No real residents, national-scale load or calibrated economic effect is
+claimed. Aggregate groups are used to expose the mechanism.
+
+```sh
+cargo test --locked --test mathematics
+cargo run --locked --example circulation_study
+cargo build --locked
+PG_BIN=/opt/homebrew/opt/postgresql@16/bin python3 scripts/circulation_exercise.py \
+  --closed --steps 180 --tick 1 --output .local/closed-circulation-new-run
+```
+
+The test suite independently enumerates 256 small schedules over 81 starting
+states each; tests all 64 availability patterns of a six-edge network; checks
+relabelled accounts, isolated regions, wrong entitlement shares, delay, large
+amounts, invalid order and unavailable-event indices. The full harness regenerates
+both maintained mathematical reports byte-for-byte and runs the finite-treasury
+counterexample plus the shared-entitlement candidate on separate temporary databases.
+This closes a bounded circulation example, not the roadmap's entire economic gate.

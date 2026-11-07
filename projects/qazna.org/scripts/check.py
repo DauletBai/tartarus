@@ -39,6 +39,10 @@ def main():
         run(["cargo", "run", "--locked", "--example", "horizon_study", "--", str(generated)])
         if generated.read_bytes() != (ROOT / "research/horizon-results.json").read_bytes():
             raise SystemExit("Published horizon results differ from current calculations")
+        circulation = Path(math_dir) / "circulation-model.json"
+        run(["cargo", "run", "--locked", "--example", "circulation_study", "--", str(circulation)])
+        if circulation.read_bytes() != (ROOT / "research/circulation-model.json").read_bytes():
+            raise SystemExit("Published circulation model differs from current calculations")
     pg_dir = os.environ.get("PG_BIN")
     if not pg_dir:
         binary = shutil.which("initdb")
@@ -77,6 +81,11 @@ def main():
             run([str(ROOT / "target/debug/qazna"), "migrate"], env=dict(env, DATABASE_URL=circulation_url))
             run([pg("psql"), "-h", str(sock), "-U", "qazna", "-d", "circulation_demo", "-v", "ON_ERROR_STOP=1", "-f", "fixtures/demo.sql"], stdout=subprocess.DEVNULL)
             run_circulation(circulation_url, root / "circulation", steps=60, tick=.02)
+            run([pg("createdb"), "-h", str(sock), "-U", "qazna", "closed_demo"])
+            closed_url = "postgresql://qazna@localhost/closed_demo?" + urlencode({"host": str(sock)})
+            run([str(ROOT / "target/debug/qazna"), "migrate"], env=dict(env, DATABASE_URL=closed_url))
+            run([pg("psql"), "-h", str(sock), "-U", "qazna", "-d", "closed_demo", "-v", "ON_ERROR_STOP=1", "-f", "fixtures/demo.sql"], stdout=subprocess.DEVNULL)
+            run_circulation(closed_url, root / "closed", steps=35, tick=.02, closed=True)
             for seed in (7, 19):
                 database = f"exercise_{seed}_demo"
                 run([pg("createdb"), "-h", str(sock), "-U", "qazna", database])

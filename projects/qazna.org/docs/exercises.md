@@ -96,3 +96,68 @@ worker outage and queue recovery. Neither drill proves real-world independence
 of the scripted attestors, absence of collusion or production readiness.
 
 Validation on 6 November 2026: the complete `scripts/check.py` suite passed, including 15 mathematical tests, 91 PostgreSQL integration tests, exact regeneration of the horizon results, backup/restore checks, and the additional 60-period circulation run (4,548 HTTP requests, one API restart). The separately preserved 180-period report remains the longer paced run, with its own executable and harness hashes.
+
+## Shared-entitlement circulation exercise
+
+`--closed` selects the explicit candidate described in
+[closed circulation](computation-and-ai-costs.md#closed-circulation-candidate--7-november-2026).
+It uses the same fixture with 1,000 initial units, six residents, separately
+credentialed synthetic attestors, and the real Rust/PostgreSQL API. Each period:
+
+1. Production consumes 36 declared grain units and produces 18 meals; inspectors
+   certify the lots. The resource-to-money measure is fixed at ten per meal.
+2. The treasury allocates 30 to each resident. Six three-meal needs are reserved,
+   confirmed by custodian and recipient, and settled. Each personal balance is zero.
+3. Retail receives 180. Its declared intermediate payment is 144 to production;
+   production pays 72 to raw materials and 18 to equipment; raw materials pay 18
+   to equipment. These upstream monetary contracts do not constitute independently
+   verified upstream physical supplies.
+4. The common provision entitlements are 36 from retail, 54 from production,
+   54 from raw materials and 36 from equipment. Existing operator-authorized
+   transfer commands credit these to the single treasury. Productive accounts close
+   at zero, the treasury at 1,000; the total measure remains 1,000.
+
+The trace has neither a wage eligibility test nor interest, loans, a tax or new
+issuance. It assumes the declared residual belongs to common provision from the
+outset. The generic transfer API enforces accounting and access rules; it does
+**not** independently enforce that ownership assumption or validate the economic
+basis of an operator's command. An approved entitlement registry and complete
+physical/monetary coupling remain implementation work.
+
+Every transfer is replayed with its original key and both endpoint balances are
+checked against the independent oracle. Selected transfers and reservations receive
+four concurrent retries. Besides the regular 30-period restarts, the API restarts
+in period 20 after the production-to-raw-material payment but before the rest of
+the cycle; the completed transfer is replayed before continuation. No cycle-level
+all-or-nothing claim is made: durable individual operations support this explicit
+recovery sequence.
+
+The runner now copies the executable into its ignored private output directory
+before starting, preventing concurrent builds from changing the binary used by
+later restarts. Published provenance records the pinned executable, harness and
+event-stream hashes. Raw synthetic HTTP traces and the executable remain local.
+The full check also exercises 35 accelerated closed periods in its own disposable
+database, including both restart positions. It keeps the older 60-period depletion
+counterexample as a separate regression, rather than changing it to pass by adding
+an unrecorded funding source.
+
+The public `research/circulation-results.json` groups maintained completed traces
+by scenario, retaining the earlier result and its provenance. These are software
+and synthetic-evidence trials, not observation of a real economy or a national
+throughput benchmark.
+
+
+Validation on 7 November 2026: the final pinned 180-period run passed in
+**284.448 seconds**, with **19,939 HTTP requests**, **six API restarts** and
+**36 groups of concurrent identical requests**. All 3,240 declared meals were
+recorded received across the six synthetic residents. Every period closed with
+1,000 in the treasury, zero at retail and the upstream units, and zero at residents;
+no physical or accounting shortage occurred in this deliberately sufficient case.
+The preserved failed-supply and finite-treasury cases remain separate.
+
+The full final `scripts/check.py` run passed: 22 mathematical tests, 91 PostgreSQL
+integration tests, the existing unit/Python/example suites, both exact report
+regenerations, HTTP restart/evidence tests, backup/restore, a 60-period depletion
+trace, a 35-period closed trace (3,901 requests, two restarts), and both seeded
+actor exercises. These counts are test coverage, not a statistical failure-rate
+estimate or a demonstration of nationwide throughput.
