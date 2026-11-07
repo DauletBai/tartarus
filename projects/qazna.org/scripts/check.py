@@ -44,7 +44,7 @@ def main():
         if circulation.read_bytes() != (ROOT / "research/circulation-model.json").read_bytes():
             raise SystemExit("Published circulation model differs from current calculations")
         coupled = Path(math_dir) / "coupled-results.json"
-        run(["cargo", "run", "--locked", "--example", "coupled_study", "--", str(coupled)])
+        run(["cargo", "run", "--locked", "--release", "--example", "coupled_study", "--", str(coupled)])
         if coupled.read_bytes() != (ROOT / "research/coupled-results.json").read_bytes():
             raise SystemExit("Published coupled model differs from current calculations")
     pg_dir = os.environ.get("PG_BIN")

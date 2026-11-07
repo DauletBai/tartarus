@@ -512,3 +512,133 @@ and 13 in compound_15. The more severe compound_30 needs a smaller monetary stoc
 than compound_15 for its particular executed-goods schedule, because less physical
 provision occurs. Lower required working measure must not be interpreted as better
 welfare. Financial sufficiency and successful material provision remain distinct.
+
+
+## Joint reserve, replacement and training policies
+
+The schema-5 calculation exhaustively evaluates **eight precommitted feedback
+policies across six disruption paths** (48 physical/cash traces, 1,825 periods
+per trace). It expands the previous common-funding experiment; the earlier results
+remain in the same report. No initial assets, deposits, recipes, transport routes,
+process capacities, storage capacities or monetary norms are added for a candidate.
+All candidates use the two existing slower reserve transport routes.
+
+Three binary choices generate the eight policies:
+
+| Choice | Reference | Alternative |
+| --- | --- | --- |
+| Food stock targets | Farm/city/kitchen/delivered: 12,000 / 5,000 / 5,000 / 5,000 | Existing storage ceilings: 15,000 / 6,000 / 6,000 / 6,000 |
+| Equipment target | 400 | 580; additional machines must consume metal/energy and complete the existing 20-period process |
+| Training priority | After food/material/capital starts | After energy, fuel and housing service, before food starts; same eligible places, instructors, inputs and 180-period lead |
+
+Targets above are unscaled synthetic cohort quantities; multiply by 100,000 for
+report quantities. They are inventory targets, not guaranteed available inventory.
+Equipment production remains limited to one unscaled batch per period and uses
+shared equipment/work capacity. The known period-400 equipment/skill withdrawal
+still applies. Training is not manufactured labour: the 120 initial eligible
+places and instructor constraints remain unchanged, with no invented trainees.
+Construction retains its existing 1,300-place target, recipe and 60-period lead;
+its resource competition and completed procurement are checked in every run, but
+its design is not an additional search variable in this bounded experiment.
+
+One policy is selected before the disruption path is known. Each day's decisions
+use only current stocks, current capacities and committed completions. Five
+same-observation prefix pairs per policy (40 checks) reject reliance on future
+outage duration. The design is selected against a declared stress family; that is
+not an out-of-sample forecast of unknown events.
+
+All scenarios must end with at least the following common reserves: 300 equipment,
+200 qualified-capacity units, 1,000 housing-capacity places, 6,000 farm grain,
+4,000 city grain, 4,000 kitchen meals and 3,800 delivered meals, multiplied by the
+same scale. Other resource floors are zero, with nonnegative balances checked at
+every period. These are explicit terminal constraints, not indefinite resource
+renewal. The delivered-meal floor reflects final-day consumption. All eight
+candidates satisfy them, so improved service is not obtained by violating these
+floors. Inventory ageing remains unmodelled.
+
+### Objective and exact evidence
+
+For policy p, scenario w and service k, let U[p,w,k] be unmet units and D[w,k]
+total required units. The experimental criterion treats both services equally in
+**fractional coverage**, without adding different physical units:
+
+```text
+min_p max_(w,k) U[p,w,k] / D[w,k]
+```
+
+Here all twelve denominators happen to equal **200,750,000,000**, allowing exact
+integer comparison of the largest numerator. That simplification must not be
+carried over to differently sized service demands. No monetary tie-break defines
+social priorities. The report separately lists the nondominated alternatives in
+worst meal shortage, worst housing-service shortage, maximum capital procurement
+and common opening measure. Equal-score alternatives remain visible.
+
+Every candidate is verified against the physical matrix and a separate stock/
+capacity replay. All goods-payment links are rebuilt; every scenario is replayed
+with its policy's common accountwise opening vector and no later issuance. The
+initial physical basis is equal across policies; funding requirements are
+recalculated and compared, not held artificially equal.
+
+| Policy ID (early-training counterpart) | Changes | Worst unmet meals | Worst unmet housing-place days | Common opening measure | Maximum completed capital measure |
+| --- | --- | ---: | ---: | ---: | ---: |
+| 0 (4) | Reference | 5,089,395,840 | 3,150,000,000 | 2,030,483,170,650 | 580,000,000,000 |
+| 1 (5) | Food buffers | 4,126,346,850 | 3,150,000,000 | 2,143,790,783,200 | 580,000,000,000 |
+| 2 (6) | Equipment | 2,860,000,000 | 3,150,000,000 | 2,001,564,000,000 | 760,000,000,000 |
+| 3 (7) | Equipment and food buffers | 2,760,000,000 | 3,150,000,000 | 2,121,164,000,000 | 760,000,000,000 |
+
+The early-training counterparts have identical values in this table. Earlier
+priority alone produces no measured advantage for these scenarios and objectives;
+this is not a conclusion that education is unimportant. All eight are nondominated
+on the four reported axes (equal metric vectors are retained). Extra equipment
+improves worst food provision and working funds, but requires more completed
+capital; extra food reserves further reduce food losses at higher opening measure.
+Working funds and cumulative procurement are different quantities and must not be
+added or advertised as national budget costs. Monetary units are synthetic norms,
+not market prices or measured KZT.
+
+For the 90-period transport-only interruption, equipment policies reduce missed
+meals from **2,513,917,060 to zero** while retaining the same initial stock. For the
+combined 90-period transport/30-period power event, the joint policy reduces missed
+meals from **5,089,395,840 to 2,760,000,000**. Energy-dependent housing service still
+loses **3,150,000,000 place-days**. A housing-service deficit here means an unmet
+modelled service requiring energy; it is not a forecast of demolished buildings or
+numbers of homeless people.
+
+### Why the remaining gap cannot be removed by these schedules
+
+The compound path disables power starts in periods 390–419. Power has a one-period
+lead, energy storage is zero, housing-service starts require energy, the service
+also has a one-period lead, and housing-service output cannot be stored. Therefore
+housing service cannot be delivered in periods **392–421**, inclusive. These 30
+periods require 105,000,000 units each, producing a lower bound of 3,150,000,000 on
+the worst unmet numerator for **any feasible schedule under these assumptions**.
+
+This is checked with an exact sparse dual certificate, not inferred from a failed
+heuristic. Sum the housing balance rows for 392–421 with weight 1, the energy
+balance rows for 391–420 with weight 10, the power-capacity rows for 390–419 with
+weight 100, and the initial-window storage rows `storage:391:15` and
+`storage:390:3` with weights 1 and 10. The resulting row combination bounds total
+housing delivery in the window by zero. Nonzero multipliers are published with
+the report. Removing a required capacity multiplier or allowing one unit of energy
+storage causes the verifier to reject the claimed exact zero optimum.
+
+Policies **2, 3, 6 and 7** attain that lower bound:
+
+```text
+best worst unmet fraction = 3,150,000,000 / 200,750,000,000
+                         = 63 / 4015 ≈ 1.5691158%
+absolute numerator gap to the physical lower bound = 0
+```
+
+Thus this particular minimax coverage objective is optimal for the supplied
+six-path physical model, not merely best among eight policies. It is **not** a
+proof that every service is complete, that food shortage is minimized, that money/
+capital is globally minimized, or that the model describes a real country.
+A five-year aggregate fraction also conceals a severe consecutive interruption;
+individual service/day outcomes and the outage window must remain visible.
+
+The next physical extension must test energy continuity (an explicit alternative
+source or constructed storage with input/lead/loss constraints), inventory expiry,
+in-transit losses and equipment maintenance. Increasing cash alone cannot close
+this certified physical gap. Unknown scenarios, demographic calibration and live
+service integration remain open. No runtime authority or economic policy changes.

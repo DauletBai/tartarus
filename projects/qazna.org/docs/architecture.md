@@ -56,7 +56,10 @@ The same technology stack does not imply immediate industrial readiness. Economi
 
 The [current roadmap](completion-roadmap.md#current-implementation-order) governs
 sequencing. A common opening funding envelope is now implemented for six declared disruption
-schedules with fixed physical reserves. Next improve joint planning, physical loss
+schedules with fixed physical reserves. Eight joint feedback policies now compare
+reserve targets, produced equipment and training timing across six paths, with
+terminal floors and an exact energy-outage lower bound. This is offline research;
+no planner gains ledger authority. Next improve energy continuity, physical loss
 and expiry, and cohort/input calibration. Connect independently verified candidates
 to versioned Rust reviewable drafts only after these contracts are explicit.
 Resident identity, corrections/disputes, accessible interfaces, operational load

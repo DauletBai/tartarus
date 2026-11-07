@@ -89,11 +89,19 @@ A causal reserve-route experiment then reduces unmet meals during a 90-day prima
 transport interruption by 72.24%, and eliminates them in the 30-day scenario under
 the declared stocks/capacities. Future restoration dates are not supplied to the
 daily decisions; exact physical and cash checks remain separate.
-The next experiment uses one identical opening balance vector across six disruption
+A further experiment uses one identical opening balance vector across six disruption
 schedules: 2,030,483,170,650 synthetic normative units (1.253609% above normal-only
 funding). Every scheduled payment settles; physical shortages under severe stress
 remain explicitly reported. This is a fixed-family certificate, not a national
 budget, global optimum or guarantee against unknown failures.
+
+An eight-policy, six-scenario joint-planning comparison now eliminates the
+90-period transport-only meal deficit through additional **produced** equipment,
+with unchanged initial assets. Equipment plus food buffers reduces worst unmet
+meals to 2.76 billion synthetic units. The minimax service-shortfall fraction reaches
+a certified 1.569116% lower bound caused by the model's power outage and absent
+energy storage; the remaining physical interruption is not hidden by cash balances.
+See [objectives, exact certificate and limits](docs/physical-circulation.md#joint-reserve-replacement-and-training-policies).
 
 ## Run the checks
 

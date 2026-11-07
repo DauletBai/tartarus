@@ -1,6 +1,6 @@
 # Completion roadmap and feasibility boundaries
 
-Latest review: 7 November 2026, working source after `a7ff23b` (v0.11.0).
+Latest review: 7 November 2026, working source after `60c05fa` (v0.11.0).
 The current work order below supersedes earlier milestone-specific next steps.
 
 ## Current implementation order
@@ -11,7 +11,7 @@ trimming; causal reserve-route feedback with delayed commitments; and independen
 checks of idempotency, feasibility and accounting conservation; and a common
 opening balance certificate across six disruption schedules. The latest complete
 local suite passed 42 mathematical and 91 PostgreSQL tests, plus the documented
-HTTP, recovery, safety and actor exercises. GitHub CI for `a60d732` also passed.
+HTTP, recovery, safety and actor exercises. GitHub CI for `60c05fa` also passed.
 These results cover the declared synthetic model, not national deployment.
 
 The author's current priority is independent calculation and testing before
@@ -21,8 +21,8 @@ for the following sequence. The table distinguishes completed bounded experiment
 | Order | Work package | Why it is still needed | Completion evidence |
 | --- | --- | --- | --- |
 | 1 — bounded experiment implemented | Common opening measure across six disruption schedules | Same initial money/assets now tested; physical reserves are fixed rather than optimized; uncertainty beyond the declared family remains open | Exact worst-prefix witnesses, independent replay of every scenario, one-unit-less necessity checks and equal-observation physical prefixes; see the common-funding results |
-| 2 — next | Joint planning of reserves, routes, replacement and training | Coordinate trimming cannot exchange whole blocks of activities; it preserves seed shortages | Compare a coupled/block or solver candidate with the baseline; independently verify exact feasibility, indivisible quantities and terminal reserves; publish an objective bound/gap where available |
-| 3 | Expiry, transport loss, maintenance and changing demand | Current commitments arrive as promised and stocks do not age | Explicit dated lots/loss events; no expired or destroyed output delivered; partial failures, recalls, disrupted routes and revised needs with no rewriting of past provision |
+| 2 — bounded experiment implemented | Joint planning of reserves, routes, replacement and training | Eight feedback policies × six paths now compared with equal initial assets and exact terminal/cash checks; general design optimization remains open | Zero transport-only food deficit with additional produced equipment; minimax shortage reaches a verified energy-outage lower bound; see joint-planning evidence |
+| 3 — next | Energy continuity, expiry, transport loss, maintenance and changing demand | Current commitments arrive as promised and stocks do not age | Explicit dated lots/loss events; no expired or destroyed output delivered; partial failures, recalls, disrupted routes and revised needs with no rewriting of past provision |
 | 4 | Cohorts, additional services and evidence-backed coefficients | 100 million is a scale factor; health, education and personal choice are not a full national model | Versioned input registry with units, region, year, source and uncertainty; age/cohort transitions, voluntary qualification pathways and service capacity; distinguish synthetic and calibrated runs |
 | 5 | Reviewed integration into the live Rust service | Offline matrices do not currently create persistent runtime plans | Versioned scenario snapshots and drafts; stale-state rejection, atomic application, restart/retry and independent replay; no solver or AI authority to post or issue measure |
 | 6 | Participant-facing demonstrator and operational completion | Machine credentials are not resident identity; disputes, corrections and UI are incomplete | Scoped resident/organization access, evidence custody and dispute resolution, compensating events, accessible role-specific UI, overload and disaster-recovery tests; independent review before any consequential pilot |
@@ -269,3 +269,20 @@ All traces retain exact physical/cash verification. This completes a bounded cau
 recovery experiment, not a national planner. Next: joint reserve/route scheduling,
 expiry and in-transit losses, uncertain demand, explicit priorities and a single
 opening cash envelope valid across the declared disruption set.
+
+
+## Joint planning milestone — 7 November 2026
+
+The [joint-planning calculation](physical-circulation.md#joint-reserve-replacement-and-training-policies)
+adds 48 exact five-year physical/cash traces, 40 same-observation prefix checks,
+common terminal reserve floors and a sparse dual energy-outage certificate with
+negative premise checks. Equipment plus food buffers reduces worst missed meals
+from 5,089,395,840 to 2,760,000,000. Equipment policies eliminate the 90-period
+transport-only food shortage. Four policies reach the fixed model's minimax
+coverage lower bound; physical energy shortages remain. Earlier training alone has
+no measured benefit in this bounded family. This advances gates 2/3 without claiming
+complete national optimization or runtime integration.
+
+Next: model the resource costs, delays and losses of energy continuity, then dated
+inventory, transport failures and maintenance. Preserve service-level deficits,
+causality, independent physical checks and recalculated monetary schedules.

@@ -42,10 +42,24 @@ fn movement(
         });
     }
 }
+#[derive(Clone, Copy, Default, serde::Serialize)]
+struct ReservePolicy {
+    food_buffers: bool,
+    equipment_target: bool,
+    early_training: bool,
+}
 fn study(
     name: &str,
     trim: bool,
     reroute: bool,
+) -> (serde_json::Value, Vec<PeriodPlan>, Vec<ScheduledMovement>) {
+    study_policy(name, trim, reroute, ReservePolicy::default())
+}
+fn study_policy(
+    name: &str,
+    trim: bool,
+    reroute: bool,
+    policy: ReservePolicy,
 ) -> (serde_json::Value, Vec<PeriodPlan>, Vec<ScheduledMovement>) {
     let resources = [
         "ore_in_ground",
@@ -219,14 +233,25 @@ fn study(
             .iter()
             .map(|l| opening[l.resource] * l.units_per_stock)
             .collect();
-        let target = [
+        let mut target = [
             0, 0, 0, 2200, 1000, 1000, 2000, 400, 320, 0, 12000, 5000, 5000, 5000, 1300, 1200,
         ];
+        if policy.food_buffers {
+            target[10..14].copy_from_slice(&storage[10..14]);
+        }
+        if policy.equipment_target {
+            target[7] = 580;
+        }
+        let order = if policy.early_training {
+            [1, 0, 11, 10, 8, 13, 7, 6, 12, 5, 2, 3, 4, 9]
+        } else {
+            [1, 0, 11, 8, 13, 7, 6, 12, 5, 2, 3, 4, 9, 10]
+        };
         let mut activities = vec![0; J];
         // Published annual growth is known ahead; outages are not anticipated.
-        // Preserve core energy first, then
-        // provisioning; capacity expansion/training use remaining shared resources.
-        for j in [1, 0, 11, 8, 13, 7, 6, 12, 5, 2, 3, 4, 9, 10] {
+        // Preserve core energy first. The experimental early-training policy
+        // then prioritizes qualification; other capital uses residual capacity.
+        for j in order {
             let p = &model.processes[j];
             if j >= 12 && !reroute {
                 continue;
@@ -456,6 +481,34 @@ fn study(
             .is_err()
     );
     let verified = verify_linear(&matrix, &vector, None).unwrap();
+    let housing_certificate = (name == "compound_delayed").then(|| {
+        let mut bound_model = matrix.clone();
+        bound_model.objective.fill(0);
+        let index: std::collections::BTreeMap<_,_> = bound_model.rows.iter().enumerate()
+            .map(|(i,r)|(r.name.clone(),i)).collect();
+        let mut dual = RationalVector {numerators:vec![0; bound_model.rows.len()],denominator:1};
+        for t in 392..422 {
+            bound_model.objective[t*(3*R+J)+15] = 1;
+            dual.numerators[index[&format!("balance:{t}:15")]] = 1;
+            dual.numerators[index[&format!("balance:{}:3",t-1)]] = 10;
+            dual.numerators[index[&format!("capacity:{}:1",t-2)]] = 100;
+        }
+        dual.numerators[index["storage:391:15"]] = 1;
+        dual.numerators[index["storage:390:3"]] = 10;
+        let proof = verify_linear(&bound_model,&vector,Some(&dual)).unwrap();
+        assert_eq!(proof.objective_numerator,"0");
+        let sparse: Vec<_> = bound_model.rows.iter().zip(&dual.numerators)
+            .filter(|(_,w)|**w!=0).map(|(r,w)|json!({"row":r.name,"weight":w})).collect();
+        // A deleted premise and an added energy buffer must both prevent this
+        // exact zero-delivery certificate, even with unchanged feasible trace.
+        let mut forged = dual.clone();
+        forged.numerators[index["capacity:390:1"]] = 0;
+        assert!(verify_linear(&bound_model,&vector,Some(&forged)).is_err());
+        bound_model.rows[index["storage:390:3"]].rhs = 1;
+        assert!(verify_linear(&bound_model,&vector,Some(&dual)).is_err());
+        json!({"window":[392,421],"maximum_housing_delivery":"0","verification":proof,
+            "dual_nonzero_rows":sparse,"deleted_premise_rejected":true,"changed_storage_premise_rejected":true})
+    });
     let dual = model.full_coverage_dual(&matrix);
     let optimal = verify_linear(&matrix, &vector, Some(&dual)).is_ok();
     let mut infeasibility_bound = None;
@@ -558,7 +611,7 @@ fn study(
     }
     eprintln!("Verified scenario {name}, trim={trim}");
     (
-        json!({"scenario":name,"rerouting":reroute,"trim_evidence":trim_evidence,"input_status":"synthetic_uncalibrated","population_scale":100_000_000,"periods":DAYS,"resources":resources,"process_names":names,"processes":model.processes,"initial":model.initial,"storage_caps":model.storage_caps,"limits":limits,"withdrawals":exits,
+        json!({"scenario":name,"housing_outage_certificate":housing_certificate,"rerouting":reroute,"trim_evidence":trim_evidence,"input_status":"synthetic_uncalibrated","population_scale":100_000_000,"periods":DAYS,"resources":resources,"process_names":names,"processes":model.processes,"initial":model.initial,"storage_caps":model.storage_caps,"limits":limits,"withdrawals":exits,
         "fixed_unit_measure":VALUE,"common_entitlement_per_sold_unit":margin,"owner_account":owner,
         "matrix":{"variables":matrix.objective.len(),"rows":matrix.rows.len(),"nonzero_terms":matrix.rows.iter().map(|r|r.terms.len()).sum::<usize>()},"minimum_outage_unmet_proven":infeasibility_bound,"outage_bound_scope":if infeasibility_bound.is_some(){Some("fixed_route_policy_no_reserve_meal_dispatch")}else{None},"cash_link_count":links.len(),"forged_payment_rejected":true,"physical_verification":verified,"food_objective_optimal":optimal,"first_unmet_day":first,"discarded":discarded.iter().map(ToString::to_string).collect::<Vec<_>>(),"unmet":missing.iter().map(ToString::to_string).collect::<Vec<_>>(),"activity_totals":starts.iter().map(ToString::to_string).collect::<Vec<_>>(),"first_activity":first_departure,"years":years,
         "requested_provision_measure":measures[0].to_string(),"delivered_provision_measure":measures[1].to_string(),"completed_capital_procurement_measure":measures[2].to_string(),"liquidity":bound,"money":money}),
@@ -702,11 +755,190 @@ fn main() {
         "compound_outage":compound,"compound_delayed":delayed,"power_outage":power});
     let recovery = json!({"policy":"causal_reserve_routes_v1","future_observation_prefix_tests_passed":true,
         "normal":normal,"transport_outage":recovered,"long_fixed":long_fixed,"long_recovery":long_recovered});
-    let report = json!({"version":4,"kind":"synthetic_coupled_capability_study","model_calls":0,
+    let joint_planning = joint_reserve_search();
+    let report = json!({"version":5,"joint_planning":joint_planning,"kind":"synthetic_coupled_capability_study","model_calls":0,
         "assumptions":["Synthetic aggregate coefficients, not demographic/engineering norms","Water is an external boundary supply; deposits and initial assets/stocks are explicit","Training places represent consenting eligible capacity, not people owned or traded","Qualified capacity and equipment are shared use limits, not consumed ingredients","Public asset procurement is paid only for completed equipment/buildings","Input payments follow actual consumption; incomplete work ties up opening working measure","Natural resources and people have zero commodity price in this example","All monetary norms fixed; no interest, tax, loan or later issuance","Actual missing provision remains recorded; no claim that missing goods cancel human entitlements","Money is prefunded using exact schedule bounds, not optimized globally","Trimmed cases are retrospective fixed-delivery improvements, not causal forecasts or global optima","Recovery decisions use current observed capacities, stocks and committed output; no future outage duration is provided","Reserve routes take two periods and four shared equipment/skill units per batch; synthetic capacity is declared in every comparison","The original terminal stock is a lower bound in trimmed cases; all intermediate safety-stock policy remains open","Energy/fuel/material quantities are abstract recipe units, not measured kWh/tonnes; external water left unused is reported separately from energy discard","Inventory age/expiry, health demography, individual choice, teacher specializations and foreign trade remain open","Heuristic is not a global optimum except when a valid stated objective certificate exists"],"cases":cases,"improved_cases":improved,"comparisons":comparisons,"recovery":recovery,"common_funding":common_funding});
     let path = env::args()
         .nth(1)
         .unwrap_or("research/coupled-results.json".into());
     fs::write(&path, serde_json::to_string_pretty(&report).unwrap() + "\n").unwrap();
     println!("Verified coupled physical and monetary traces: {path}");
+}
+
+/// Finite policy search, not a continuous/integer global optimizer.
+/// All eight policies are chosen before observing any outage, then use the same
+/// feedback rule across the six declared paths. Full traces remain independently
+/// checked by the physical matrix and the second stock/capacity replay above.
+fn joint_reserve_search() -> serde_json::Value {
+    let paths = [
+        "baseline",
+        "transport_outage",
+        "long_transport_outage",
+        "power_outage",
+        "compound_outage",
+        "compound_delayed",
+    ];
+    // End-of-horizon productive and food reserves, common to all candidates.
+    // Natural deposits need nonnegativity, not a claim of indefinite renewal.
+    let mut floors = [0i64; R];
+    floors[7] = 300 * SCALE;
+    floors[8] = 200 * SCALE;
+    floors[14] = 1000 * SCALE;
+    floors[10] = 6000 * SCALE;
+    floors[11] = 4000 * SCALE;
+    floors[12] = 4000 * SCALE;
+    floors[13] = 3800 * SCALE;
+    let mut candidates = vec![];
+    let mut scores = vec![];
+    let mut costs = vec![];
+    let mut canonical_basis = None;
+    for mask in 0..8 {
+        let policy = ReservePolicy {
+            food_buffers: mask & 1 != 0,
+            equipment_target: mask & 2 != 0,
+            early_training: mask & 4 != 0,
+        };
+        let mut results = vec![];
+        let mut traces = vec![];
+        let mut schedules = vec![];
+        let mut feasible = true;
+        let mut worst = [0i128; 2];
+        let mut worst_capital = 0i128;
+        for path in paths {
+            let (result, trace, schedule) = study_policy(path, false, true, policy);
+            let basis = json!([
+                result["initial"],
+                result["storage_caps"],
+                result["processes"],
+                result["limits"],
+                result["withdrawals"],
+                result["fixed_unit_measure"],
+                result["owner_account"]
+            ]);
+            if let Some(ref expected) = canonical_basis {
+                assert_eq!(expected, &basis);
+            } else {
+                canonical_basis = Some(basis);
+            }
+            let terminal = &trace.last().unwrap().closing;
+            let terminal_ok = terminal.iter().zip(floors).all(|(&x, f)| x >= f);
+            feasible &= terminal_ok;
+            for (i, k) in [13, 15].into_iter().enumerate() {
+                worst[i] = worst[i].max(result["unmet"][k].as_str().unwrap().parse().unwrap());
+            }
+            worst_capital = worst_capital.max(
+                result["completed_capital_procurement_measure"]
+                    .as_str()
+                    .unwrap()
+                    .parse()
+                    .unwrap(),
+            );
+            results.push(json!({"scenario":path,"unmet":result["unmet"],
+                "first_unmet_day":result["first_unmet_day"],"housing_outage_certificate":result["housing_outage_certificate"],"terminal":terminal,
+                "terminal_floor_satisfied":terminal_ok,"activity_totals":result["activity_totals"],
+                "completed_capital_procurement_measure":result["completed_capital_procurement_measure"],
+                "discarded":result["discarded"],"physical_verification":result["physical_verification"],
+                "food_objective_optimal":result["food_objective_optimal"],
+                "first_activity":result["first_activity"]}));
+            traces.push(trace);
+            schedules.push(schedule);
+        }
+        for (a, b, end) in [
+            (0, 1, 365),
+            (1, 2, 395),
+            (0, 3, 600),
+            (2, 4, 390),
+            (4, 5, 405),
+        ] {
+            assert_eq!(
+                serde_json::to_value(&traces[a][..end]).unwrap(),
+                serde_json::to_value(&traces[b][..end]).unwrap()
+            );
+        }
+        let named: Vec<_> = paths
+            .iter()
+            .zip(&schedules)
+            .map(|(&p, s)| (p, s.as_slice()))
+            .collect();
+        let envelope = common_schedule_opening(J + 2, &named).unwrap();
+        let funds: Vec<u64> = envelope
+            .minimum_opening_by_account
+            .iter()
+            .map(|s| s.parse().unwrap())
+            .collect();
+        for (result, schedule) in results.iter_mut().zip(&schedules) {
+            let run = replay_schedule(&funds, schedule, &[]).unwrap();
+            assert!(run.first_blocked_event.is_none());
+            assert_eq!(run.closing[1], "0");
+            result["money"] = serde_json::to_value(run).unwrap();
+        }
+        // Needs in both categories are the same daily scalar; max absolute
+        // shortfall is thus the same ordering as max unmet fraction. Never add
+        // food units to housing units or infer a social priority from money.
+        let score = worst[0].max(worst[1]);
+        scores.push(if feasible { Some(score) } else { None });
+        costs.push([
+            worst[0],
+            worst[1],
+            worst_capital,
+            envelope.total_minimum_opening.parse::<i128>().unwrap(),
+        ]);
+        candidates.push(json!({"id":mask,"policy":policy,"terminal_feasible":feasible,
+            "worst_meal_shortfall":worst[0].to_string(),"worst_housing_shortfall":worst[1].to_string(),
+            "worst_unmet_numerator":score.to_string(),"worst_capital_measure":worst_capital.to_string(),
+            "common_opening":envelope,"scenarios":results}));
+    }
+    let best = scores
+        .iter()
+        .flatten()
+        .copied()
+        .min()
+        .expect("at least one admissible policy");
+    let winners: Vec<_> = scores
+        .iter()
+        .enumerate()
+        .filter_map(|(i, s)| (*s == Some(best)).then_some(i))
+        .collect();
+    let pareto: Vec<_> = (0..8)
+        .filter(|&i| {
+            scores[i].is_some()
+                && !(0..8).any(|j| {
+                    scores[j].is_some()
+                        && costs[j].iter().zip(costs[i]).all(|(&a, b)| a <= b)
+                        && costs[j].iter().zip(costs[i]).any(|(&a, b)| a < b)
+                })
+        })
+        .collect();
+    let total_need: i128 = (0..DAYS)
+        .map(|d| i128::from((1000 + 50 * (d / 365) as i64) * SCALE))
+        .sum();
+    // Universal lower bound within this fixed physical model: during the
+    // 30-day power outage, initial energy cannot bridge a second day (storage
+    // cap zero), housing services cannot be stored, and have a one-day lead.
+    // Outage starts 390. Last prior power completes390, housing completes391.
+    // Days392..421 inclusive cannot receive housing output, regardless of policy.
+    let unavoidable_housing: i128 = (392..422)
+        .map(|d| i128::from((1000 + 50 * (d / 365) as i64) * SCALE))
+        .sum();
+    assert!(best >= unavoidable_housing);
+    for c in &candidates {
+        let n: i128 = c["scenarios"][5]["unmet"][15]
+            .as_str()
+            .unwrap()
+            .parse()
+            .unwrap();
+        assert!(n >= unavoidable_housing);
+    }
+    json!({"scope":"exhaustive_eight_precommitted_feedback_policies_six_fixed_disruption_paths",
+        "input_status":"synthetic_uncalibrated","scenario_count":6,"candidate_count":8,
+        "same_initial_resources_and_capacities":true,"same_observation_prefix_checks":40,
+        "terminal_floors":floors,"objective":"minimize worst unmet fraction across the two services and six paths; no cash tie-break",
+        "common_need_denominator":total_need.to_string(),"best_unmet_numerator":best.to_string(),
+        "best_candidate_ids":winners,"pareto_candidate_ids":pareto,
+        "pareto_axes":["worst_meal_shortfall","worst_housing_shortfall","worst_capital_measure","common_opening_measure"],"finite_policy_optimality":"all eight candidates evaluated exactly",
+        "physical_lower_bound_numerator":unavoidable_housing.to_string(),
+        "gap_to_physical_lower_bound":(best-unavoidable_housing).to_string(),
+        "minimax_optimal_for_supplied_scenario_family":best==unavoidable_housing,
+        "bound_scope":"housing during compound_30; zero energy and housing storage; one-day power/housing leads",
+        "initial_resource_basis":canonical_basis,"candidates":candidates})
 }

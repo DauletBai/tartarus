@@ -2,6 +2,11 @@
 
 ## Unreleased
 
+- Evaluate eight precommitted reserve/equipment/training feedback policies over six disruption paths with identical initial physical resources and terminal reserve floors.
+- Publish exact common funding, capital/provision trade-offs, a sparse dual energy-outage certificate and negative premise checks; attain the fixed model's minimax coverage bound without claiming full provision.
+- Run coupled report regeneration in release mode to keep the expanded exact verification tractable; no live execution or monetary authority added.
+
+
 - Add exact common opening balances for bounded scenario families with attaining-prefix witnesses and independent exhaustive tests.
 - Replay six coupled scenarios with identical opening money and physical assets, including overlapping energy/transport/capacity stress and delayed recovery; retain physical shortages separately.
 - Preserve the author's latest palette (`#ff0815`, `#cd0011`) in the animated source and regenerated PNG/ICO/static SVG assets.
