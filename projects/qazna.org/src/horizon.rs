@@ -419,3 +419,56 @@ impl Horizon {
         Ok(())
     }
 }
+
+/// Closing inventory is bounded by base space plus completed storage assets.
+/// Assets completed this period may store goods at its close; production-use
+/// capacities remain governed separately by prior-period StockCapacity rows.
+#[derive(Debug, Clone, Serialize, Deserialize)]
+#[serde(deny_unknown_fields)]
+pub struct BuiltStorage {
+    pub name: String,
+    pub stored_resource: usize,
+    pub asset_resource: usize,
+    pub base_capacity: i64,
+    pub capacity_per_asset: i64,
+}
+impl Horizon {
+    pub fn compile_reserves(
+        &self,
+        limits: &[StockCapacity],
+        exits: &[Withdrawal],
+        stores: &[BuiltStorage],
+    ) -> Result<LinearModel, MathError> {
+        let mut model = self.compile_capabilities(limits, exits)?;
+        let r = self.resources.len();
+        let width = 3 * r + self.processes.len();
+        let mut names = std::collections::BTreeSet::new();
+        for store in stores {
+            if store.name.trim().is_empty()
+                || !names.insert(&store.name)
+                || store.stored_resource >= r
+                || store.asset_resource >= r
+                || store.stored_resource == store.asset_resource
+                || store.base_capacity < 0
+                || store.capacity_per_asset <= 0
+            {
+                return Err(MathError::Invalid("invalid built storage capacity"));
+            }
+            for t in 0..self.periods.len() {
+                model.rows.push(Row {
+                    name: format!("built_storage:{}:{t}", store.name),
+                    terms: vec![
+                        (t * width + r + store.stored_resource, 1),
+                        (
+                            t * width + r + store.asset_resource,
+                            -store.capacity_per_asset,
+                        ),
+                    ],
+                    sense: Sense::AtMost,
+                    rhs: store.base_capacity,
+                });
+            }
+        }
+        Ok(model)
+    }
+}

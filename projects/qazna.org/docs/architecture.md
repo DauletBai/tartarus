@@ -59,7 +59,7 @@ sequencing. A common opening funding envelope is now implemented for six declare
 schedules with fixed physical reserves. Eight joint feedback policies now compare
 reserve targets, produced equipment and training timing across six paths, with
 terminal floors and an exact energy-outage lower bound. This is offline research;
-no planner gains ledger authority. Next improve energy continuity, physical loss
+no planner gains ledger authority. Next extend reserve continuity to perishable goods, in-transit loss
 and expiry, and cohort/input calibration. Connect independently verified candidates
 to versioned Rust reviewable drafts only after these contracts are explicit.
 Resident identity, corrections/disputes, accessible interfaces, operational load
@@ -140,3 +140,16 @@ opening coordinate by one to exercise necessity. This is an offline fixed-family
 certificate; it does not optimize reserves, authorize issuance or cover disabled
 payment edges. The cash-only normal-funding counterfactual does not re-solve
 physical outcomes after blocked payments.
+
+
+## Offline reserve lifecycle
+
+`Horizon::compile_reserves` adds closing-stock constraints tied to completed storage
+assets on top of existing physical/capability/withdrawal rows. `reserve_loss` and
+`required_reserve` provide exact rounded losses and a minimal component sizing
+recurrence. The coupled research example now has 18 dimensions/17 processes and
+retains an independent stock/loss replay and full goods/payment reconciliation.
+Storage-aware refill respects built space and prioritizes current provision; standby
+conversion protects restart fuel. A defective fill policy remains a negative case.
+These are offline research controls, not new runtime endpoints or permissions.
+Food expiry, transport losses and equipment maintenance are still separate work.

@@ -202,3 +202,42 @@ Actor seeds 7/19 completed, retaining the documented physical-evidence limitatio
 The disposable PostgreSQL cluster was stopped and removed by the runner. No real
 participants, real money or AI-model calls were involved. The preceding GitHub
 commit `60c05fa` also passed CI; this entry does not assume a result for a future run.
+
+
+## Constructed reserve verification — 7 November 2026
+
+Six new mathematical tests cover exhaustive physical storage allocations, delayed
+storage completion, malformed/self-supporting/duplicate constraints, exact loss
+bounds including maximum integers, rejected delivery of lost stock, and minimum
+reserve sizing against exhaustive forward simulation. There are now 48 mathematical
+tests. The state-dependent fuel-loss recurrence is also replayed independently of
+the compiled matrix in every coupled trace.
+
+Schema 6 adds 35 five-year reserve/recovery traces and 25 equal-observation prefix
+checks. Acceptance assertions require ordinary provision, zero fuel overflow and
+terminal floors for the four storage-aware designs; successful prepared 30-period/
+repeated scenarios and the 60-period design's 60-period interruption; and visible
+failure before construction or beyond endurance. The deliberately uncapped refill
+variant must still fail normal provision and exhaust the finite fuel deposit.
+All 1,862,357 scheduled movements in the new traces settle using five common opening
+vectors, with no later issuance. This financial result includes scenarios retaining
+physical shortages and is not a claim of universal provision.
+
+Seventy-one historical report records were compared with the preceding commit:
+original unmet quantities, waste, activity totals, terminal balances, provision/
+capital measure, first-shortage periods and circulation outcomes are unchanged
+when inactive extension columns are removed. Matrix dimensions necessarily grow
+to include the constructed assets and their constraints. Existing reserve-free
+optimality certificates also include the disabled backup-generator capacity rows.
+The historical report files are updated in place; no parallel publication tree or
+new dependency is introduced. The preceding commit `07ac64b` passed GitHub CI.
+
+The final required full runner passed: 48 mathematics, 91 PostgreSQL, 3 library,
+4 no-AI example and 11 advisory-safety tests; format/Clippy/license checks;
+byte-identical regeneration of all three maintained reports; HTTP restart/
+provenance; both strict-evidence privilege configurations; and 36-table backup/
+restore. The 60-period shortfall exercise passed 4,548 requests and one restart in
+55.766 seconds; the 35-period closed exercise passed 3,901 requests and two restarts
+in 46.767 seconds. Actor seeds 7/19 completed with the existing physical-evidence
+limitation still reported. The runner stopped and removed its disposable cluster;
+no real participants, real money, existing databases or model calls were used.

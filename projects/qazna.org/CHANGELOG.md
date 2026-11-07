@@ -2,6 +2,11 @@
 
 ## Unreleased
 
+- Add exact constructed-storage constraints and minimal reserve sizing with rounded physical losses and protected restart stock.
+- Evaluate 35 coupled reserve/recovery traces with constructed generators, finite fuel, causal refill and complete physical/cash checks; preserve preconstruction and overlong-failure deficits.
+- Prevent reserve overfilling before storage completion and prioritize current provision; retain the rejected overfilling policy as an executable counterexample.
+
+
 - Evaluate eight precommitted reserve/equipment/training feedback policies over six disruption paths with identical initial physical resources and terminal reserve floors.
 - Publish exact common funding, capital/provision trade-offs, a sparse dual energy-outage certificate and negative premise checks; attain the fixed model's minimax coverage bound without claiming full provision.
 - Run coupled report regeneration in release mode to keep the expanded exact verification tractable; no live execution or monetary authority added.

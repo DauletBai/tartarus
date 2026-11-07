@@ -1669,3 +1669,195 @@ mod common_funding {
         assert_eq!(denied.closing, ["5", "0", "0"]);
     }
 }
+
+mod reserve_capacity {
+    use qazna::{horizon::*, mathematics::*, replanning::reserve_loss};
+    fn horizon() -> Horizon {
+        Horizon {
+            resources: vec!["fuel".into(), "tank".into()],
+            initial: vec![6, 3],
+            storage_caps: vec![6, 3],
+            processes: vec![],
+            periods: vec![Period {
+                supplies: vec![0, 0],
+                needs: vec![0, 0],
+                capacities: vec![],
+            }],
+            objective_resource: 0,
+        }
+    }
+    fn store(base: i64, rate: i64) -> BuiltStorage {
+        BuiltStorage {
+            name: "tank_space".into(),
+            stored_resource: 0,
+            asset_resource: 1,
+            base_capacity: base,
+            capacity_per_asset: rate,
+        }
+    }
+    #[test]
+    fn built_space_matches_exhaustive_physical_allocations() {
+        let h = horizon();
+        for base in 0..=2 {
+            for rate in 1..=3 {
+                let m = h.compile_reserves(&[], &[], &[store(base, rate)]).unwrap();
+                for fuel in 0..=6 {
+                    for tanks in 0..=3 {
+                        let plan = vec![PeriodPlan {
+                            activities: vec![],
+                            deliveries: vec![0, 0],
+                            closing: vec![fuel, tanks],
+                            discarded: vec![6 - fuel, 3 - tanks],
+                        }];
+                        let accepted = verify_linear(&m, &h.vector(&plan).unwrap(), None).is_ok();
+                        // Unit-by-unit placement independent of the compiled row.
+                        let slots = std::iter::repeat_n((), base as usize)
+                            .chain((0..tanks).flat_map(|_| std::iter::repeat_n((), rate as usize)))
+                            .count();
+                        assert_eq!(accepted, fuel as usize <= slots);
+                    }
+                }
+            }
+        }
+    }
+    #[test]
+    fn unfinished_storage_cannot_hold_stock_and_completed_storage_can() {
+        let h = Horizon {
+            resources: vec!["fuel".into(), "tank".into(), "metal".into()],
+            initial: vec![0, 0, 1],
+            storage_caps: vec![10, 1, 1],
+            processes: vec![Process {
+                inputs: vec![0, 0, 1],
+                outputs: vec![0, 1, 0],
+                lead_periods: 2,
+            }],
+            periods: (0..3)
+                .map(|_| Period {
+                    supplies: vec![10, 0, 0],
+                    needs: vec![0, 0, 0],
+                    capacities: vec![1],
+                })
+                .collect(),
+            objective_resource: 0,
+        };
+        let m = h.compile_reserves(&[], &[], &[store(0, 10)]).unwrap();
+        let plan = vec![
+            PeriodPlan {
+                activities: vec![1],
+                deliveries: vec![0; 3],
+                closing: vec![0; 3],
+                discarded: vec![10, 0, 0],
+            },
+            PeriodPlan {
+                activities: vec![0],
+                deliveries: vec![0; 3],
+                closing: vec![0; 3],
+                discarded: vec![10, 0, 0],
+            },
+            PeriodPlan {
+                activities: vec![0],
+                deliveries: vec![0; 3],
+                closing: vec![10, 1, 0],
+                discarded: vec![0; 3],
+            },
+        ];
+        verify_linear(&m, &h.vector(&plan).unwrap(), None).unwrap();
+        let mut forged = plan.clone();
+        forged[1].closing[0] = 1;
+        forged[1].discarded[0] = 9;
+        forged[2].discarded[0] = 1;
+        assert!(verify_linear(&m, &h.vector(&forged).unwrap(), None).is_err());
+    }
+    #[test]
+    fn invalid_storage_cannot_self_support_or_duplicate_constraints() {
+        let h = horizon();
+        let ok = store(0, 1);
+        assert!(h.compile_reserves(&[], &[], &[ok.clone(), ok]).is_err());
+        for (stored, asset, base, rate) in [
+            (0, 0, 0, 1),
+            (2, 1, 0, 1),
+            (0, 2, 0, 1),
+            (0, 1, -1, 1),
+            (0, 1, 0, 0),
+        ] {
+            let mut s = store(base, rate);
+            s.stored_resource = stored;
+            s.asset_resource = asset;
+            assert!(h.compile_reserves(&[], &[], &[s]).is_err());
+        }
+    }
+    #[test]
+    fn loss_is_conservative_exact_and_bounded_including_maximum_stock() {
+        for stock in [0, 1, 9, 10, 999, 1_000_000, i64::MAX] {
+            for ppm in [0, 1, 1000, 999_999, 1_000_000] {
+                let loss = reserve_loss(stock, ppm).unwrap();
+                let product = i128::from(stock) * i128::from(ppm);
+                assert!(loss >= 0 && loss <= stock);
+                assert!(i128::from(loss) * 1_000_000 >= product);
+                if loss > 0 {
+                    assert!(i128::from(loss - 1) * 1_000_000 < product);
+                }
+            }
+        }
+        assert!(reserve_loss(-1, 100).is_err());
+        assert!(reserve_loss(1, 1_000_001).is_err());
+    }
+    #[test]
+    fn lost_fuel_cannot_be_delivered_or_hidden_in_money() {
+        let mut h = horizon();
+        h.periods[0].needs[0] = 6;
+        let m = h
+            .compile_reserves(
+                &[],
+                &[Withdrawal {
+                    period: 0,
+                    resource: 0,
+                    quantity: 2,
+                    basis: "recorded spoilage".into(),
+                }],
+                &[store(6, 1)],
+            )
+            .unwrap();
+        let make = |delivered| {
+            vec![PeriodPlan {
+                activities: vec![],
+                deliveries: vec![delivered, 0],
+                closing: vec![0, 3],
+                discarded: vec![0, 0],
+            }]
+        };
+        verify_linear(&m, &h.vector(&make(4)).unwrap(), None).unwrap();
+        assert!(verify_linear(&m, &h.vector(&make(6)).unwrap(), None).is_err());
+    }
+}
+
+#[test]
+fn reserve_sizing_matches_exhaustive_forward_loss_and_withdrawal() {
+    use qazna::replanning::{required_reserve, reserve_loss};
+    for use_each in 0..=4 {
+        for periods in 0..=4 {
+            for floor in 0..=3 {
+                for ppm in [0, 100_000, 500_000] {
+                    let required = required_reserve(use_each, periods, floor, ppm).unwrap();
+                    let feasible = |opening: i64| {
+                        let mut stock = opening;
+                        for _ in 0..periods {
+                            stock -= reserve_loss(stock, ppm).unwrap();
+                            if stock < use_each {
+                                return false;
+                            }
+                            stock -= use_each;
+                        }
+                        stock >= floor
+                    };
+                    assert_eq!((0..=required).find(|&n| feasible(n)), Some(required));
+                }
+            }
+        }
+    }
+    assert!(required_reserve(i64::MAX, 2, 0, 1).is_err());
+    assert!(required_reserve(1, 10_001, 0, 0).is_err());
+    assert!(required_reserve(1, 1, 0, 1_000_000).is_err());
+    assert!(required_reserve(-1, 1, 0, 0).is_err());
+    assert!(required_reserve(0, 1, -1, 0).is_err());
+}

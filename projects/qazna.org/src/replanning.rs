@@ -133,3 +133,38 @@ impl ProductionPipeline {
         Ok(true)
     }
 }
+
+/// Explicit deterministic storage loss, rounded up to the physical quantum.
+/// Ppm is a scenario assumption, not a measured material degradation rate.
+/// Nothing is created or posted: callers must record the loss in physical history.
+pub fn reserve_loss(stock: i64, ppm: u32) -> Result<i64, MathError> {
+    if stock < 0 || ppm > 1_000_000 {
+        return Err(MathError::Invalid("reserve stock or loss rate"));
+    }
+    let product = i128::from(stock) * i128::from(ppm);
+    Ok(((product + 999_999) / 1_000_000) as i64)
+}
+
+/// Minimum integer opening reserve for a fixed withdrawal each period, with
+/// rounded-up loss BEFORE use and a retained terminal restart floor. This is a
+/// component bound, not a whole-economy coverage guarantee.
+pub fn required_reserve(
+    use_per_period: i64,
+    periods: usize,
+    terminal_floor: i64,
+    loss_ppm: u32,
+) -> Result<i64, MathError> {
+    if use_per_period < 0 || terminal_floor < 0 || periods > 10_000 || loss_ppm >= 1_000_000 {
+        return Err(MathError::Invalid("reserve sizing input"));
+    }
+    let retained = i128::from(1_000_000 - loss_ppm);
+    let mut needed = i128::from(terminal_floor);
+    for _ in 0..periods {
+        let next = (needed + i128::from(use_per_period)) * 1_000_000;
+        needed = (next + retained - 1) / retained;
+        if needed > i128::from(i64::MAX) {
+            return Err(MathError::Overflow);
+        }
+    }
+    Ok(needed as i64)
+}

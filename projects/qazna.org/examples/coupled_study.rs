@@ -2,12 +2,12 @@
 use qazna::{horizon::*, mathematics::*};
 use serde_json::json;
 use std::{env, fs};
-const R: usize = 16;
-const J: usize = 14;
+const R: usize = 18;
+const J: usize = 17;
 const SCALE: i64 = 100_000; // 1,000 synthetic residents scaled to 100 million.
 const DAYS: usize = 1825;
 const VALUE: [i64; R] = [
-    0, 0, 0, 100, 100, 100, 500, 10000, 0, 0, 200, 300, 600, 700, 10000, 200,
+    0, 0, 0, 100, 100, 100, 500, 10000, 0, 0, 200, 300, 600, 700, 10000, 200, 10000, 10000,
 ];
 fn process(inputs: &[(usize, i64)], output: usize, quantity: i64, lead: usize) -> Process {
     let mut a = vec![0; R];
@@ -47,6 +47,9 @@ struct ReservePolicy {
     food_buffers: bool,
     equipment_target: bool,
     early_training: bool,
+    reserve_days: u32,
+    loss_ppm: u32,
+    storage_aware: bool,
 }
 fn study(
     name: &str,
@@ -78,6 +81,8 @@ fn study_policy(
         "meals_delivered",
         "building_units",
         "housing_day",
+        "reserve_generator",
+        "fuel_storage_units",
     ];
     let names = [
         "fuel_extraction",
@@ -94,6 +99,9 @@ fn study_policy(
         "housing_service",
         "reserve_grain_transport",
         "reserve_meal_delivery",
+        "reserve_generator_construction",
+        "fuel_storage_construction",
+        "reserve_power",
     ];
     let processes = vec![
         process(&[(1, 10), (3, 1)], 4, 10, 1),
@@ -115,36 +123,55 @@ fn study_policy(
         process(&[(2, 1), (3, 1)], 15, 10, 1),
         process(&[(10, 10), (3, 2)], 11, 10, 2),
         process(&[(12, 10), (3, 2)], 13, 10, 2),
+        process(&[(6, 10), (3, 10)], 16, 1, 30),
+        process(&[(6, 10), (3, 10)], 17, 1, 30),
+        process(&[(4, 1), (2, 1)], 3, 10, 1),
     ];
     let initial = [
         1_000_000, 1_000_000, 0, 4000, 1000, 1000, 2000, 300, 200, 120, 6000, 4000, 4000, 4000,
-        1000, 1000,
+        1000, 1000, 0, 0,
     ];
     let storage = [
-        1_000_000, 1_000_000, 0, 0, 2000, 2000, 3000, 1000, 1000, 120, 15000, 6000, 6000, 6000,
-        2000, 0,
+        1_000_000, 1_000_000, 0, 0, 20000, 2000, 3000, 1000, 1000, 120, 15000, 6000, 6000, 6000,
+        2000, 0, 1000, 1000,
     ];
     let limits = vec![
         StockCapacity {
             name: "qualified_hours".into(),
             resource: 8,
             units_per_stock: 8,
-            activity_use: vec![1, 1, 1, 2, 8, 2, 2, 2, 2, 8, 4, 1, 4, 4],
+            activity_use: vec![1, 1, 1, 2, 8, 2, 2, 2, 2, 8, 4, 1, 4, 4, 8, 8, 1],
         },
         StockCapacity {
             name: "equipment_use".into(),
             resource: 7,
             units_per_stock: 4,
-            activity_use: vec![1, 1, 1, 1, 2, 1, 2, 1, 2, 2, 0, 0, 4, 4],
+            activity_use: vec![1, 1, 1, 1, 2, 1, 2, 1, 2, 2, 0, 0, 4, 4, 2, 2, 1],
         },
         StockCapacity {
             name: "housing_use".into(),
             resource: 14,
             units_per_stock: 1,
-            activity_use: vec![0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 10, 0, 0],
+            activity_use: vec![0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 10, 0, 0, 0, 0, 0],
         },
     ];
-    let exits = vec![
+    let mut limits = limits;
+    let mut generator_use = vec![0; J];
+    generator_use[16] = 1;
+    limits.push(StockCapacity {
+        name: "backup_generator_use".into(),
+        resource: 16,
+        units_per_stock: 10,
+        activity_use: generator_use,
+    });
+    let stores = [BuiltStorage {
+        name: "fuel_store".into(),
+        stored_resource: 4,
+        asset_resource: 17,
+        base_capacity: 2000 * SCALE,
+        capacity_per_asset: 1000,
+    }];
+    let mut exits = vec![
         Withdrawal {
             period: 400,
             resource: 7,
@@ -167,6 +194,20 @@ fn study_policy(
         periods: vec![],
         objective_resource: 13,
     };
+    if policy.reserve_days == 0 && policy.loss_ppm == 0 {
+        model.storage_caps[4] = 2000 * SCALE;
+    }
+    let reserve_target = if policy.reserve_days > 0 {
+        qazna::replanning::required_reserve(
+            220 * SCALE,
+            policy.reserve_days as usize,
+            440 * SCALE,
+            policy.loss_ppm,
+        )
+        .unwrap()
+    } else {
+        1000 * SCALE
+    };
     let mut margin = [0i64; R];
     let mut owner = [0usize; R];
     for (j, p) in model.processes.iter().enumerate() {
@@ -178,7 +219,7 @@ fn study_policy(
             let cost: i64 = p.inputs.iter().zip(VALUE).map(|(q, v)| q * v).sum();
             assert_eq!(cost % p.outputs[k], 0);
             let recipe_margin = VALUE[k] - cost / p.outputs[k];
-            if j >= 12 {
+            if matches!(j, 12 | 13 | 16) {
                 assert_eq!(recipe_margin, margin[k]);
             }
             margin[k] = recipe_margin;
@@ -195,6 +236,11 @@ fn study_policy(
             needs: vec![0; R],
             capacities: vec![500 * SCALE; J],
         };
+        if policy.reserve_days == 0 {
+            for j in 14..J {
+                data.capacities[j] = 0;
+            }
+        }
         data.supplies[2] = 10000 * SCALE;
         data.needs[13] = demand;
         data.needs[15] = demand;
@@ -216,6 +262,28 @@ fn study_policy(
         if name == "equipment_replacement_disabled" {
             data.capacities[4] = 0;
         }
+        let supply_failure = match name {
+            "supply_30" => (390..420).contains(&day),
+            "supply_60" => (390..450).contains(&day),
+            "supply_90" => (390..480).contains(&day),
+            "supply_repeat" => (390..420).contains(&day) || (440..470).contains(&day),
+            "early_supply" => (10..40).contains(&day),
+            _ => false,
+        };
+        if supply_failure {
+            data.capacities[0] = 0;
+            data.capacities[1] = 0;
+        }
+        let loss = qazna::replanning::reserve_loss(previous[4], policy.loss_ppm).unwrap();
+        if loss > 0 {
+            exits.push(Withdrawal {
+                period: day,
+                resource: 4,
+                quantity: loss,
+                basis: "Observed deterministic fuel storage loss; rounded up to physical quantum"
+                    .into(),
+            });
+        }
         let mut opening = previous.clone();
         for e in exits.iter().filter(|e| e.period == day) {
             assert!(opening[e.resource] >= e.quantity);
@@ -234,7 +302,7 @@ fn study_policy(
             .map(|l| opening[l.resource] * l.units_per_stock)
             .collect();
         let mut target = [
-            0, 0, 0, 2200, 1000, 1000, 2000, 400, 320, 0, 12000, 5000, 5000, 5000, 1300, 1200,
+            0, 0, 0, 2200, 1000, 1000, 2000, 400, 320, 0, 12000, 5000, 5000, 5000, 1300, 1200, 0, 0,
         ];
         if policy.food_buffers {
             target[10..14].copy_from_slice(&storage[10..14]);
@@ -242,10 +310,17 @@ fn study_policy(
         if policy.equipment_target {
             target[7] = 580;
         }
-        let order = if policy.early_training {
-            [1, 0, 11, 10, 8, 13, 7, 6, 12, 5, 2, 3, 4, 9]
+        if policy.reserve_days > 0 {
+            target[4] = (reserve_target + SCALE - 1) / SCALE;
+            target[16] = 22;
+            target[17] = ((target[4] - 2000).max(0) + 999) / 1000;
+        }
+        let order = if policy.storage_aware && available[4] >= 440 * SCALE {
+            [1, 16, 11, 8, 13, 7, 6, 12, 5, 0, 2, 3, 4, 9, 10, 14, 15]
+        } else if policy.early_training {
+            [1, 16, 0, 11, 10, 8, 13, 7, 6, 12, 5, 2, 3, 4, 9, 14, 15]
         } else {
-            [1, 0, 11, 8, 13, 7, 6, 12, 5, 2, 3, 4, 9, 10]
+            [1, 16, 0, 11, 8, 13, 7, 6, 12, 5, 2, 3, 4, 9, 10, 14, 15]
         };
         let mut activities = vec![0; J];
         // Published annual growth is known ahead; outages are not anticipated.
@@ -253,7 +328,7 @@ fn study_policy(
         // then prioritizes qualification; other capital uses residual capacity.
         for j in order {
             let p = &model.processes[j];
-            if j >= 12 && !reroute {
+            if matches!(j, 12 | 13) && !reroute {
                 continue;
             }
             if day + p.lead_periods >= DAYS {
@@ -261,7 +336,16 @@ fn study_policy(
             }
             let k = p.outputs.iter().position(|&q| q > 0).unwrap();
             let desired = if k == 3 {
-                220 * SCALE
+                if j == 16 {
+                    (220 * SCALE - activities[1]).max(0)
+                } else {
+                    220 * SCALE
+                }
+            } else if k == 4 && policy.storage_aware {
+                let next_loss =
+                    qazna::replanning::reserve_loss(available[4], policy.loss_ppm).unwrap();
+                ((target[4] * SCALE - available[4] + next_loss - pipeline.pending()[4]).max(0) + 9)
+                    / 10
             } else if k == 15 {
                 ((1000 + 50 * ((day + 1) / 365) as i64) * SCALE + 9) / 10
             } else {
@@ -270,13 +354,23 @@ fn study_policy(
                     / p.outputs[k]
             };
             let mut n = desired.min(data.capacities[j]);
-            if j == 4 || j == 9 || j == 10 {
+            if matches!(j, 4 | 9 | 10 | 14 | 15) {
                 n = n.min(SCALE);
             }
             for (k, &q) in p.inputs.iter().enumerate() {
                 if q > 0 {
                     n = n.min(available[k] / q);
                 }
+            }
+            if j == 16 {
+                n = n.min((available[4] - 440 * SCALE).max(0));
+            }
+            if j == 0 && policy.storage_aware {
+                let space = model.storage_caps[4].min(2000 * SCALE + 1000 * available[17]);
+                let next_loss =
+                    qazna::replanning::reserve_loss(available[4], policy.loss_ppm).unwrap();
+                let projected = available[4] - next_loss + pipeline.pending()[4];
+                n = n.min((space - projected).max(0) / 10);
             }
             for (l, lim) in limits.iter().enumerate() {
                 if lim.activity_use[j] > 0 {
@@ -294,8 +388,10 @@ fn study_policy(
                 assert!(pipeline.commit(day, j, p, n).unwrap());
             }
         }
+        let mut effective_storage = model.storage_caps.clone();
+        effective_storage[4] = effective_storage[4].min(2000 * SCALE + 1000 * available[17]);
         let waste: Vec<_> = (0..R)
-            .map(|k| (available[k] - model.storage_caps[k]).max(0))
+            .map(|k| (available[k] - effective_storage[k]).max(0))
             .collect();
         let closing: Vec<_> = (0..R).map(|k| available[k] - waste[k]).collect();
         previous = closing.clone();
@@ -387,7 +483,7 @@ fn study_policy(
                 }
             }
         }
-        for k in [7, 14] {
+        for k in [7, 14, 16, 17] {
             trade(
                 &mut events,
                 &mut links,
@@ -429,7 +525,7 @@ fn study_policy(
                 );
             }
         }
-        for j in [1, 0, 11, 8, 13, 7, 6, 12, 5, 2, 3, 4, 9, 10] {
+        for j in [1, 16, 0, 11, 8, 13, 7, 6, 12, 5, 2, 3, 4, 9, 10, 14, 15] {
             let p = &model.processes[j];
             let n = period_plan.activities[j];
             starts[j] += i128::from(n);
@@ -452,6 +548,8 @@ fn study_policy(
                             8
                         } else if j == 13 {
                             10
+                        } else if j == 16 {
+                            3
                         } else {
                             j + 2
                         },
@@ -468,20 +566,20 @@ fn study_policy(
             years.push(json!({"year":(day+1)/365,"stock":period_plan.closing,"discarded":discarded.iter().map(ToString::to_string).collect::<Vec<_>>(),"unmet":missing.iter().map(ToString::to_string).collect::<Vec<_>>()}));
         }
     }
-    let matrix = model.compile_capabilities(&limits, &exits).unwrap();
+    let matrix = model.compile_reserves(&limits, &exits, &stores).unwrap();
     let vector = model.vector(&plan).unwrap();
     model
-        .verify_cash_links(&plan, &VALUE, &[7, 14], &links)
+        .verify_cash_links(&plan, &VALUE, &[7, 14, 16, 17], &links)
         .unwrap();
     let mut forged = links.clone();
     forged[0].amount = (forged[0].amount.parse::<i128>().unwrap() + 1).to_string();
     assert!(
         model
-            .verify_cash_links(&plan, &VALUE, &[7, 14], &forged)
+            .verify_cash_links(&plan, &VALUE, &[7, 14, 16, 17], &forged)
             .is_err()
     );
     let verified = verify_linear(&matrix, &vector, None).unwrap();
-    let housing_certificate = (name == "compound_delayed").then(|| {
+    let housing_certificate = (name == "compound_delayed" && policy.reserve_days==0).then(|| {
         let mut bound_model = matrix.clone();
         bound_model.objective.fill(0);
         let index: std::collections::BTreeMap<_,_> = bound_model.rows.iter().enumerate()
@@ -492,6 +590,7 @@ fn study_policy(
             dual.numerators[index[&format!("balance:{t}:15")]] = 1;
             dual.numerators[index[&format!("balance:{}:3",t-1)]] = 10;
             dual.numerators[index[&format!("capacity:{}:1",t-2)]] = 100;
+            dual.numerators[index[&format!("capacity:{}:16",t-2)]] = 100;
         }
         dual.numerators[index["storage:391:15"]] = 1;
         dual.numerators[index["storage:390:3"]] = 10;
@@ -607,11 +706,22 @@ fn study_policy(
                 .sum();
             assert!(used <= (prior[limit.resource] - removed) * limit.units_per_stock);
         }
+        assert!(p.closing[4] <= 2000 * SCALE + 1000 * p.closing[17]);
+        let recorded_loss: i64 = exits
+            .iter()
+            .filter(|e| e.period == day && e.resource == 4)
+            .map(|e| e.quantity)
+            .sum();
+        let product = i128::from(prior[4]) * i128::from(policy.loss_ppm);
+        assert_eq!(
+            i128::from(recorded_loss),
+            product / 1_000_000 + i128::from(product % 1_000_000 != 0)
+        );
         prior = p.closing.clone();
     }
     eprintln!("Verified scenario {name}, trim={trim}");
     (
-        json!({"scenario":name,"housing_outage_certificate":housing_certificate,"rerouting":reroute,"trim_evidence":trim_evidence,"input_status":"synthetic_uncalibrated","population_scale":100_000_000,"periods":DAYS,"resources":resources,"process_names":names,"processes":model.processes,"initial":model.initial,"storage_caps":model.storage_caps,"limits":limits,"withdrawals":exits,
+        json!({"scenario":name,"reserve_policy":policy,"reserve_target_minimum":reserve_target,"housing_outage_certificate":housing_certificate,"rerouting":reroute,"trim_evidence":trim_evidence,"input_status":"synthetic_uncalibrated","population_scale":100_000_000,"periods":DAYS,"resources":resources,"process_names":names,"processes":model.processes,"initial":model.initial,"storage_caps":model.storage_caps,"built_storage":stores,"limits":limits,"withdrawals":exits,
         "fixed_unit_measure":VALUE,"common_entitlement_per_sold_unit":margin,"owner_account":owner,
         "matrix":{"variables":matrix.objective.len(),"rows":matrix.rows.len(),"nonzero_terms":matrix.rows.iter().map(|r|r.terms.len()).sum::<usize>()},"minimum_outage_unmet_proven":infeasibility_bound,"outage_bound_scope":if infeasibility_bound.is_some(){Some("fixed_route_policy_no_reserve_meal_dispatch")}else{None},"cash_link_count":links.len(),"forged_payment_rejected":true,"physical_verification":verified,"food_objective_optimal":optimal,"first_unmet_day":first,"discarded":discarded.iter().map(ToString::to_string).collect::<Vec<_>>(),"unmet":missing.iter().map(ToString::to_string).collect::<Vec<_>>(),"activity_totals":starts.iter().map(ToString::to_string).collect::<Vec<_>>(),"first_activity":first_departure,"years":years,
         "requested_provision_measure":measures[0].to_string(),"delivered_provision_measure":measures[1].to_string(),"completed_capital_procurement_measure":measures[2].to_string(),"liquidity":bound,"money":money}),
@@ -756,7 +866,8 @@ fn main() {
     let recovery = json!({"policy":"causal_reserve_routes_v1","future_observation_prefix_tests_passed":true,
         "normal":normal,"transport_outage":recovered,"long_fixed":long_fixed,"long_recovery":long_recovered});
     let joint_planning = joint_reserve_search();
-    let report = json!({"version":5,"joint_planning":joint_planning,"kind":"synthetic_coupled_capability_study","model_calls":0,
+    let reserve_lifecycle = reserve_lifecycle_study();
+    let report = json!({"version":6,"reserve_lifecycle":reserve_lifecycle,"joint_planning":joint_planning,"kind":"synthetic_coupled_capability_study","model_calls":0,
         "assumptions":["Synthetic aggregate coefficients, not demographic/engineering norms","Water is an external boundary supply; deposits and initial assets/stocks are explicit","Training places represent consenting eligible capacity, not people owned or traded","Qualified capacity and equipment are shared use limits, not consumed ingredients","Public asset procurement is paid only for completed equipment/buildings","Input payments follow actual consumption; incomplete work ties up opening working measure","Natural resources and people have zero commodity price in this example","All monetary norms fixed; no interest, tax, loan or later issuance","Actual missing provision remains recorded; no claim that missing goods cancel human entitlements","Money is prefunded using exact schedule bounds, not optimized globally","Trimmed cases are retrospective fixed-delivery improvements, not causal forecasts or global optima","Recovery decisions use current observed capacities, stocks and committed output; no future outage duration is provided","Reserve routes take two periods and four shared equipment/skill units per batch; synthetic capacity is declared in every comparison","The original terminal stock is a lower bound in trimmed cases; all intermediate safety-stock policy remains open","Energy/fuel/material quantities are abstract recipe units, not measured kWh/tonnes; external water left unused is reported separately from energy discard","Inventory age/expiry, health demography, individual choice, teacher specializations and foreign trade remain open","Heuristic is not a global optimum except when a valid stated objective certificate exists"],"cases":cases,"improved_cases":improved,"comparisons":comparisons,"recovery":recovery,"common_funding":common_funding});
     let path = env::args()
         .nth(1)
@@ -797,6 +908,7 @@ fn joint_reserve_search() -> serde_json::Value {
             food_buffers: mask & 1 != 0,
             equipment_target: mask & 2 != 0,
             early_training: mask & 4 != 0,
+            ..ReservePolicy::default()
         };
         let mut results = vec![];
         let mut traces = vec![];
@@ -941,4 +1053,227 @@ fn joint_reserve_search() -> serde_json::Value {
         "minimax_optimal_for_supplied_scenario_family":best==unavoidable_housing,
         "bound_scope":"housing during compound_30; zero energy and housing storage; one-day power/housing leads",
         "initial_resource_basis":canonical_basis,"candidates":candidates})
+}
+
+fn reserve_lifecycle_study() -> serde_json::Value {
+    let paths = [
+        "baseline",
+        "compound_delayed",
+        "supply_30",
+        "supply_60",
+        "supply_90",
+        "supply_repeat",
+        "early_supply",
+    ];
+    let mut designs = vec![];
+    let mut basis = None;
+    for (days, storage_aware) in [(0, true), (7, true), (30, true), (60, true), (60, false)] {
+        let policy = ReservePolicy {
+            food_buffers: true,
+            equipment_target: true,
+            early_training: false,
+            reserve_days: days,
+            loss_ppm: 1000,
+            storage_aware,
+        };
+        let mut results = vec![];
+        let mut traces = vec![];
+        let mut schedules = vec![];
+        for name in paths {
+            let (r, trace, events) = study_policy(name, false, true, policy);
+            let actual_basis = json!([
+                r["initial"],
+                r["storage_caps"],
+                r["processes"],
+                r["limits"],
+                r["built_storage"],
+                r["fixed_unit_measure"]
+            ]);
+            if let Some(ref expected) = basis {
+                assert_eq!(expected, &actual_basis);
+            } else {
+                basis = Some(actual_basis);
+            }
+            let required = r["reserve_target_minimum"].as_i64().unwrap();
+            let end = match name {
+                "compound_delayed" | "supply_30" => 420,
+                "supply_60" => 450,
+                "supply_90" => 480,
+                "supply_repeat" => 470,
+                "early_supply" => 40,
+                _ => 0,
+            };
+            let mut restored = None;
+            let mut loss_sum = 0i128;
+            let mut observations = vec![];
+            let mut unmet_windows: Vec<serde_json::Value> = vec![];
+            let mut start = None;
+            for (day, p) in trace.iter().enumerate() {
+                let prior = if day == 0 {
+                    r["initial"][4].as_i64().unwrap()
+                } else {
+                    trace[day - 1].closing[4]
+                };
+                let loss = qazna::replanning::reserve_loss(prior, policy.loss_ppm).unwrap();
+                loss_sum += i128::from(loss);
+                let incoming = if day > 0 {
+                    10 * trace[day - 1].activities[0]
+                } else {
+                    0
+                };
+                let ready = prior - loss + incoming;
+                if day >= end && restored.is_none() && ready >= required {
+                    restored = Some(day);
+                }
+                let need = (1000 + 50 * (day / 365) as i64) * SCALE;
+                let missing = p.deliveries[13] < need || p.deliveries[15] < need;
+                if missing && start.is_none() {
+                    start = Some(day);
+                }
+                if !missing && let Some(first) = start.take() {
+                    unmet_windows.push(json!([first, day - 1]));
+                }
+                if [
+                    0,
+                    10,
+                    30,
+                    60,
+                    389,
+                    390,
+                    419,
+                    420,
+                    439,
+                    440,
+                    449,
+                    450,
+                    469,
+                    470,
+                    479,
+                    480,
+                    510,
+                    600,
+                    DAYS - 1,
+                ]
+                .contains(&day)
+                {
+                    observations.push(json!({"period":day,"fuel_opening":prior,"storage_loss":loss,
+                        "fuel_ready":ready,"fuel_closing":p.closing[4],"storage_assets":p.closing[17],
+                        "generators":p.closing[16],"backup_starts":p.activities[16],
+                        "need_each_service":need,"meals_delivered":p.deliveries[13],"housing_delivered":p.deliveries[15]}));
+                }
+                if p.activities[16] > 0 {
+                    assert!(ready - p.activities[1] - p.activities[16] >= 440 * SCALE);
+                    assert!(day > 0 && trace[day - 1].closing[16] * 10 >= p.activities[16]);
+                }
+            }
+            if let Some(first) = start {
+                unmet_windows.push(json!([first, DAYS - 1]));
+            }
+            let last = &trace.last().unwrap().closing;
+            let mut terminal_shortfalls = vec![];
+            for (k, floor) in [
+                (7, 300),
+                (8, 200),
+                (10, 6000),
+                (11, 4000),
+                (12, 4000),
+                (13, 3800),
+                (14, 1000),
+            ] {
+                if last[k] < floor * SCALE {
+                    terminal_shortfalls
+                        .push(json!({"resource":k,"required":floor*SCALE,"actual":last[k]}));
+                }
+            }
+            if days > 0 && last[16] < 22 * SCALE {
+                terminal_shortfalls
+                    .push(json!({"resource":16,"required":22*SCALE,"actual":last[16]}));
+            }
+            results.push(json!({"scenario":name,"unmet":r["unmet"],"unmet_windows":unmet_windows,
+                "first_unmet_day":r["first_unmet_day"],"first_fuel_target_after_recovery":restored,
+                "fuel_storage_loss":loss_sum.to_string(),"discarded":r["discarded"],"activity_totals":r["activity_totals"],
+                "completed_capital_procurement_measure":r["completed_capital_procurement_measure"],
+                "requested_provision_measure":r["requested_provision_measure"],"delivered_provision_measure":r["delivered_provision_measure"],
+                "physical_verification":r["physical_verification"],"cash_links":r["cash_link_count"],
+                "terminal":last,"terminal_shortfalls":terminal_shortfalls,"terminal_feasible":terminal_shortfalls.is_empty(),"observations":observations,"first_activity":r["first_activity"]}));
+            traces.push(trace);
+            schedules.push(events);
+        }
+        for (a, b, end) in [
+            (0, 2, 390),
+            (2, 3, 420),
+            (3, 4, 450),
+            (2, 5, 440),
+            (0, 6, 10),
+        ] {
+            assert_eq!(
+                serde_json::to_value(&traces[a][..end]).unwrap(),
+                serde_json::to_value(&traces[b][..end]).unwrap()
+            );
+        }
+        let named: Vec<_> = paths
+            .iter()
+            .zip(&schedules)
+            .map(|(&p, s)| (p, s.as_slice()))
+            .collect();
+        let common = common_schedule_opening(J + 2, &named).unwrap();
+        let funds: Vec<u64> = common
+            .minimum_opening_by_account
+            .iter()
+            .map(|s| s.parse().unwrap())
+            .collect();
+        for (result, events) in results.iter_mut().zip(&schedules) {
+            let run = replay_schedule(&funds, events, &[]).unwrap();
+            assert!(run.first_blocked_event.is_none());
+            assert_eq!(run.closing[1], "0");
+            result["money"] = serde_json::to_value(run).unwrap();
+        }
+        let component_required =
+            qazna::replanning::required_reserve(220 * SCALE, days as usize, 440 * SCALE, 1000)
+                .unwrap();
+        designs.push(json!({"policy":policy,"nominal_autonomy_periods":days,
+            "minimum_component_opening_fuel":component_required,"restart_floor":440*SCALE,
+            "common_opening":common,"all_terminal_floors_met":results.iter().all(|r|r["terminal_feasible"]==true),"scenarios":results}));
+    }
+    // Executable acceptance gates and a retained defective-policy counterexample.
+    let covered = |d: usize, c: usize| {
+        designs[d]["scenarios"][c]["unmet"][13] == "0"
+            && designs[d]["scenarios"][c]["unmet"][15] == "0"
+    };
+    for (d, design) in designs.iter().enumerate().take(4) {
+        assert!(covered(d, 0));
+        assert_eq!(design["all_terminal_floors_met"], true);
+        for c in design["scenarios"].as_array().unwrap() {
+            assert_eq!(c["discarded"][4], "0");
+        }
+        assert!(!covered(d, 6)); // A reserve still under construction cannot erase early failures.
+    }
+    for c in [0, 1, 2, 5] {
+        assert!(covered(2, c));
+    }
+    assert!(covered(3, 3));
+    assert!(!covered(1, 2));
+    assert!(!covered(2, 3));
+    assert!(!covered(3, 4));
+    assert_eq!(designs[4]["all_terminal_floors_met"], false);
+    assert!(!covered(4, 0));
+    assert_eq!(designs[4]["scenarios"][0]["terminal"][1], 0);
+    let adequate: Vec<_> = (0..4)
+        .filter(|&d| [0, 1, 2, 5].iter().all(|&c| covered(d, c)))
+        .collect();
+    json!({"scope":"constructed_fuel_reserves_backup_generation_and_deterministic_loss",
+        "input_status":"synthetic_uncalibrated","candidate_count":5,"scenario_count":7,
+        "same_initial_physical_basis":true,"same_observation_prefix_checks":25,
+        "physical_basis":basis,"designs":designs,"adequate_for_prepared_30_day_family":adequate,
+        "prepared_family_scenarios":["baseline","compound_delayed","supply_30","supply_repeat"],
+        "smallest_tested_adequate_nominal_days":30,"counterexample_design_index":4,
+        "scope_note":"prepared family excludes preconstruction failure and supply interruptions beyond 30 periods; all remain reported",
+        "assumptions":["Autonomy sizing uses 220 fuel units per cohort-period plus two restart periods",
+            "Daily fuel loss is 1000 ppm rounded up; not a measured fuel property",
+            "Generator and storage construction each require 10 metal plus 10 energy and 30 periods",
+            "One generator permits 10 backup batches per period; one storage unit holds 1000 additional fuel units",
+            "Backup conversion has the same declared fuel/water recipe as primary generation; constructed redundancy is paid as capital",
+            "Restart floor is protected from backup dispatch, not exempt from physical storage loss",
+            "The experiment is not food-expiry modelling or a guarantee against unlimited starvation",
+            "No new money is issued during any replay; every physical shortage remains visible"]})
 }

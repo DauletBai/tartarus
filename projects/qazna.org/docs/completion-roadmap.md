@@ -1,17 +1,18 @@
 # Completion roadmap and feasibility boundaries
 
-Latest review: 7 November 2026, working source after `60c05fa` (v0.11.0).
+Latest review: 7 November 2026, working source after `07ac64b` (v0.11.0).
 The current work order below supersedes earlier milestone-specific next steps.
 
 ## Current implementation order
 
 Already implemented: exact accounting and physical/payment checks; a 1,825-period
-coupled synthetic model with 16 dimensions and 14 processes; fixed-delivery plan
+coupled synthetic model with 18 dimensions and 17 processes; fixed-delivery plan
 trimming; causal reserve-route feedback with delayed commitments; and independent
 checks of idempotency, feasibility and accounting conservation; and a common
-opening balance certificate across six disruption schedules. The latest complete
-local suite passed 42 mathematical and 91 PostgreSQL tests, plus the documented
-HTTP, recovery, safety and actor exercises. GitHub CI for `60c05fa` also passed.
+opening balance certificate across six disruption schedules; and constructed fuel
+reserves with losses, restart protection and refill across seven scenarios. The latest complete
+local suite passed 48 mathematical and 91 PostgreSQL tests, plus the documented
+HTTP, recovery, safety and actor exercises. GitHub CI for `07ac64b` also passed.
 These results cover the declared synthetic model, not national deployment.
 
 The author's current priority is independent calculation and testing before
@@ -22,7 +23,7 @@ for the following sequence. The table distinguishes completed bounded experiment
 | --- | --- | --- | --- |
 | 1 — bounded experiment implemented | Common opening measure across six disruption schedules | Same initial money/assets now tested; physical reserves are fixed rather than optimized; uncertainty beyond the declared family remains open | Exact worst-prefix witnesses, independent replay of every scenario, one-unit-less necessity checks and equal-observation physical prefixes; see the common-funding results |
 | 2 — bounded experiment implemented | Joint planning of reserves, routes, replacement and training | Eight feedback policies × six paths now compared with equal initial assets and exact terminal/cash checks; general design optimization remains open | Zero transport-only food deficit with additional produced equipment; minimax shortage reaches a verified energy-outage lower bound; see joint-planning evidence |
-| 3 — next | Energy continuity, expiry, transport loss, maintenance and changing demand | Current commitments arrive as promised and stocks do not age | Explicit dated lots/loss events; no expired or destroyed output delivered; partial failures, recalls, disrupted routes and revised needs with no rewriting of past provision |
+| 3 — reserve experiment implemented; lifecycle work next | Energy continuity, expiry, transport loss, maintenance and changing demand | Constructed fuel reserves, exact storage losses, restart protection and refill are tested; food expiry, in-transit losses and maintenance remain open | Explicit dated lots/loss events; no expired or destroyed output delivered; partial failures, recalls, disrupted routes and revised needs with no rewriting of past provision |
 | 4 | Cohorts, additional services and evidence-backed coefficients | 100 million is a scale factor; health, education and personal choice are not a full national model | Versioned input registry with units, region, year, source and uncertainty; age/cohort transitions, voluntary qualification pathways and service capacity; distinguish synthetic and calibrated runs |
 | 5 | Reviewed integration into the live Rust service | Offline matrices do not currently create persistent runtime plans | Versioned scenario snapshots and drafts; stale-state rejection, atomic application, restart/retry and independent replay; no solver or AI authority to post or issue measure |
 | 6 | Participant-facing demonstrator and operational completion | Machine credentials are not resident identity; disputes, corrections and UI are incomplete | Scoped resident/organization access, evidence custody and dispute resolution, compensating events, accessible role-specific UI, overload and disaster-recovery tests; independent review before any consequential pilot |
@@ -286,3 +287,16 @@ complete national optimization or runtime integration.
 Next: model the resource costs, delays and losses of energy continuity, then dated
 inventory, transport failures and maintenance. Preserve service-level deficits,
 causality, independent physical checks and recalculated monetary schedules.
+
+
+## Constructed reserve milestone — 7 November 2026
+
+The [reserve/recovery experiment](physical-circulation.md#constructed-reserve-and-recovery-experiment)
+adds 35 exact five-year traces, 25 causal prefix checks and a retained failed refill
+policy. A storage-aware 30-period reserve covers the prepared 30-period/repeated
+failure family; a 60-period reserve also covers a 60-period supply interruption.
+Early and overlong interruptions still cause explicit shortages. Six new mathematical
+tests cover constructed storage timing, exhaustive allocation, loss conservation,
+malformed constraints and minimal reserve sizing. Next implement dated food lots,
+expiry, in-transit loss and maintenance/correlated failure; then broaden/calibrate
+needs and integrate reviewed drafts. No runtime economic authority was added.

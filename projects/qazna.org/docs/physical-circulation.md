@@ -7,7 +7,7 @@ model, not a calibrated national plan or an autonomous production controller.
 
 ## What is connected
 
-The example has 16 resource/capability dimensions, 14 processes and 1,825 daily
+The schema-6 example has 18 resource/capability dimensions, 17 processes and 1,825 daily
 periods. A synthetic cohort of 1,000 residents is scaled by 100,000 to the stated
 100-million population scale. This is aggregate arithmetic, not individual agents
 or an estimate of actual Kazakhstan needs. Annual requirements grow by five
@@ -30,6 +30,9 @@ schedule is declared in advance; outages are not anticipated by the heuristic.
 | Housing service | Water, energy, available housing capacity | Housing-place days | 1 |
 | Reserve grain transport | Grain at farm, energy, more shared capability | Grain at processing location | 2 |
 | Reserve last-mile delivery | Meals at kitchen, energy, more shared capability | Delivered meals | 2 |
+| Reserve generator construction | Metal, energy, shared equipment/work capacity | Reserve generator | 30 |
+| Fuel storage construction | Metal, energy, shared equipment/work capacity | Storage unit | 30 |
+| Reserve power | Fuel, water, completed generator capacity | Energy | 1 |
 
 Delays and coefficients are experimental assumptions, not observed curricula,
 engineering specifications or nutrition standards. The power process represents
@@ -89,9 +92,13 @@ The example includes an equipment retirement shock and a withdrawal of qualified
 availability in period 400. Baseline replacement and training can prepare for these
 declared events. Specific retirement quantities are scenario assumptions.
 
-There are **113,150 variables and 118,627 rows** per scenario, including three
-shared-capacity constraints per period and the withdrawal guards. The ordinary
-case has 331,855 nonzero terms; the longer training delay changes this count.
+The schema-6 ordinary case has **129,575 variables and 138,702 rows**, including
+four shared-capacity constraints per period, constructed fuel-storage constraints
+and withdrawal guards. It has 393,841 nonzero terms. Daily storage-loss withdrawals
+add 1,824 prior-stock guards; longer training delays also change the matrix. The
+former 16-resource/14-process configuration had 113,150 variables and 118,627 rows;
+its numerical service and circulation results are retained with inactive extension
+columns in the current report.
 Every physical row is checked with exact arithmetic. A separate replay checks
 stock conservation and shared-capacity use directly from activities and timing.
 
@@ -615,8 +622,8 @@ the worst unmet numerator for **any feasible schedule under these assumptions**.
 
 This is checked with an exact sparse dual certificate, not inferred from a failed
 heuristic. Sum the housing balance rows for 392–421 with weight 1, the energy
-balance rows for 391–420 with weight 10, the power-capacity rows for 390–419 with
-weight 100, and the initial-window storage rows `storage:391:15` and
+balance rows for 391–420 with weight 10, the primary and disabled-backup
+power-capacity rows for 390–419 with weight 100, and the initial-window storage rows `storage:391:15` and
 `storage:390:3` with weights 1 and 10. The resulting row combination bounds total
 housing delivery in the window by zero. Nonzero multipliers are published with
 the report. Removing a required capacity multiplier or allowing one unit of energy
@@ -637,8 +644,151 @@ capital is globally minimized, or that the model describes a real country.
 A five-year aggregate fraction also conceals a severe consecutive interruption;
 individual service/day outcomes and the outage window must remain visible.
 
-The next physical extension must test energy continuity (an explicit alternative
-source or constructed storage with input/lead/loss constraints), inventory expiry,
-in-transit losses and equipment maintenance. Increasing cash alone cannot close
-this certified physical gap. Unknown scenarios, demographic calibration and live
+The reserve experiment below tests energy continuity with constructed assets and
+explicit loss constraints. Inventory expiry, in-transit losses and equipment
+maintenance remain open. Increasing cash alone cannot close the gap in the
+reserve-free configuration. Unknown scenarios, demographic calibration and live
 service integration remain open. No runtime authority or economic policy changes.
+
+
+## Constructed reserve and recovery experiment
+
+The author's moderate body-energy-reserve analogy is implemented as a bounded
+shared physical stock, not personal money accumulation. Schema 6 adds **35
+five-year traces**: four storage-aware designs (no new backup, 7, 30 and 60 periods)
+and a retained defective 60-period design, each under seven scenarios. All begin
+with the same deposits, materials, qualifications and other assets; **zero new
+storage units and zero backup generators** exist initially. The historical cases
+and joint-policy comparison remain in the same report with inactive extension
+processes. Numerical legacy provision, activity totals and opening measure were
+checked unchanged after padding the resource/account vectors.
+
+A generator and a storage unit each require 10 metal, 10 energy and 30 periods;
+construction is limited to one unscaled batch per process per period and consumes
+shared equipment/work capacity. Twenty-two unscaled generators allow 220 backup
+power starts per period; each start consumes one fuel and one water and produces
+10 energy one period later. This deliberately uses the primary generator's
+synthetic conversion recipe, so both have the same normative variable cost.
+Standby infrastructure is accounted separately as completed public capital.
+No real-world generator efficiency or building cost is inferred from these inputs.
+
+Closing fuel stock is constrained by:
+
+```text
+fuel[t] <= 2,000 * scale + 1,000 * completed_storage_units[t]
+fuel[t] <= 20,000 * scale
+backup_starts[t] <= 10 * generators[t-1]
+scale = 100,000
+```
+
+Storage can hold stock at the close of its completion period; generator capability
+becomes usable the following period. `BuiltStorage` adds the storage inequality to
+the exact physical matrix. Fuel must be extracted from the finite deposit, using
+energy and productive capacity. Fuel storage has a declared daily **1,000 ppm
+(0.1%)** loss rounded upward to the physical quantum. This is an experimental
+parameter, not a measured property of a specified fuel. Losses are explicit
+withdrawals before new arrivals; they cannot be spent or silently reconstructed.
+
+### Sizing and causal replenishment
+
+Let u be fuel used per period, F the retained restart stock and p the loss rate in
+parts per million. For n periods without replenishment:
+
+```text
+L(s) = ceil(s * p / 1,000,000)
+s_next = s - L(s) - u
+B[0] = F
+B[n+1] = ceil((B[n] + u) * 1,000,000 / (1,000,000 - p))
+```
+
+`required_reserve` returns the **minimum integer opening stock for this component
+recurrence**. Its minimality is tested by independent exhaustive forward simulation,
+including zero demand, zero periods, large integer inputs and overflow/invalid
+rates. This is not a theorem that the entire economy remains supplied.
+
+Here u = 22,000,000, F = 44,000,000 and p = 1,000. Exact minimum component stocks
+are 198,927,093 (7 periods), 715,680,726 (30) and 1,407,827,562 (60). The operational
+target rounds up to an unscaled cohort unit. The reserve keeps two nominal fuel-use
+periods for restarting productive activity; that floor is protected from backup
+dispatch, **not exempt from storage loss**. It does not promise indefinite survival.
+
+The daily controller:
+
+1. Uses backup generation when observed primary output capacity cannot supply the
+   normal planned power starts; it never learns a future restoration date.
+2. Prioritizes current food/housing production before reserve replenishment while
+   sufficient restart stock exists. Below that floor, fuel recovery regains priority.
+3. Limits new fuel commitments to **already completed** storage capacity and accounts
+   for next-period loss before setting the refill quantity. Unbuilt space cannot
+   justify extraction that will later overflow.
+4. Replenishes from actual production after recovery, retaining all inputs, delays,
+   stock losses, payments and finite-deposit depletion.
+
+Twenty-five equal-observation prefix comparisons pass. Every scenario has an exact
+physical matrix check, independent stock/capacity/loss replay and recalculated
+physical-payment links. Each design uses one common accountwise opening vector
+across its seven scenarios, without later issuance. All 1,862,357 scheduled payments
+across the 35 traces settle. Cash settlement does not erase physical shortfalls.
+
+### Coverage and cost comparisons
+
+The prepared stress family includes ordinary operation; the previous combined
+90-period transport/30-period power interruption; simultaneous fuel-extraction and
+primary-power interruptions of 30 periods; and two such 30-period interruptions
+separated by 20 recovery periods. Longer 60/90-period interruptions and an early
+failure in periods 10–39 are reported separately as boundary tests.
+
+| Storage-aware design | 30-period supply interruption | 60-period interruption | 90-period interruption | Two 30-period interruptions | Normal completed capital measure | Common opening measure across all seven paths |
+| --- | --- | --- | --- | --- | ---: | ---: |
+| No new reserve | Shortage | Shortage | Shortage | Shortage | 760,000,000,000 | 2,232,709,274,250 |
+| 7 periods | Shortage | Shortage | Shortage | Shortage | 782,000,000,000 | 2,279,811,695,350 |
+| 30 periods | Full provision | Shortage | Shortage | Full provision | 788,000,000,000 | 2,296,337,963,140 |
+| 60 periods | Full provision | Full provision | Shortage | Full provision | 795,000,000,000 | 2,317,675,692,440 |
+
+Full provision means both declared services on **every period** of that scenario,
+not an average hiding days without service. All four storage-aware designs retain
+the previous terminal food/equipment/qualification/housing floors and cause zero
+fuel overflow. They do incur real storage losses and consume finite natural fuel.
+The 30-period design uses six new storage units; the 60-period design uses thirteen,
+with 22 standby generators in each (all multiplied by scale). These counts are
+synthetic aggregate units, not engineering specifications for 100 million people.
+
+Thirty periods is the **smallest adequate tested target** for the prepared family,
+not a global minimum over all reserve sizes, alternative power sources or schedules.
+The 30-period design reaches its fuel target after the first outage in period 422
+(restoration begins 420), and after the second in period 472 (restoration begins
+470). The 60-period design refills after its 60-period outage by period 453
+(restoration begins 450). Target attainment does not imply zero ageing or perpetual
+adequacy; it is an observed result of these declared inputs and priorities.
+
+For a 90-period supply interruption, even the 60-period design misses 2,639,998,700
+meal units and 3,045,000,000 housing-place days. All four designs miss services
+when interruption begins before infrastructure construction is complete. These
+failures are retained, not removed by changing the denominator or cancelling needs.
+
+Normative capital flows and the opening circulation stock are different measures;
+they must not be summed or described as estimated national budget expenditure.
+No interest, tax, deposit income or speculative money trading is introduced.
+
+### Retained counterexample: fill before storage exists
+
+The fifth design keeps the same 60-period target but disables capacity-aware filling
+and service-first refill priority. In normal operation it discards **63,396,705,601**
+fuel units, exhausts the finite fuel deposit, misses 30,649,818,970 meal units and
+29,400,000,000 housing-place days, and violates the terminal meal floor. It is marked
+inadmissible; its mathematical conservation remains verified. The same target with
+the corrected feedback rule supplies both services fully in normal operation,
+discards no fuel and retains 56,096,964,530 units in the natural fuel deposit.
+
+This isolates a planning failure rather than establishing that a 60-period reserve
+is inherently harmful. Both the failed and corrected variants remain executable
+regression cases. A sufficient reserve must be **constructed, filled, protected,
+delivered and renewed**; a larger target alone proves none of these properties.
+
+Remaining work includes optimizing emergency power use and reserve size jointly
+with service needs (the current 220-start target is fixed), perishable food lots
+and expiry, in-transit losses,
+maintenance/correlated backup failures, changing needs, water-supply failures,
+calibrated coefficients and live reviewed-plan integration. The current loss law
+models fuel-storage depletion only; it does not implement every resource lifecycle
+or confer autonomous control on the runtime service.

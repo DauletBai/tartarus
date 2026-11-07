@@ -11,6 +11,7 @@ The author's direction of 2 November 2026 is to use the living human organism, f
 | Exchange and transport | Physical resource movement and associated accounting circulation |
 | Feedback | Unmet needs, stocks, delays, reservations, losses, wear and constraint violations |
 | Maintaining stability | Matching provisioning plans to capacities, resources and reserves |
+| A moderate energy reserve | Shared physical stocks and standby capacity, sized for a declared disruption horizon and replenished after use |
 | Growth and recovery | Verified changes in real capabilities; separately, a decision on permissible changes to monetary measure |
 
 This is a design analogy, not proof of the economic model or a claim that social decisions follow from biology. A person remains an autonomous participant with needs, choice and privacy, not an obedient or disposable cell.
@@ -53,3 +54,25 @@ The [coupled physical study](physical-circulation.md) now includes finite deposi
 energy, transport, equipment, construction and qualification lead times. Its
 synthetic physical/payment checks narrow that research gap; they do not resolve
 calibration, individual choice, upstream completeness or live deployment.
+
+
+## Bounded reserves, not unlimited accumulation
+
+The author's 7 November direction adds the analogy of a modest body-energy reserve.
+The engineering interpretation is a **shared physical buffer**: it is accumulated
+from actual output, kept within constructed storage capacity, drawn during a
+supply failure, and replenished after recovery. This is not a biological claim that
+all events are predictable, nor a personal deposit or permission to trade money.
+
+A usable reserve requires both stored material and a working conversion/delivery
+path. Fuel without generators does not supply electricity. A promised warehouse
+cannot hold stock before it is built. Storage losses and a protected restart stock
+must be represented explicitly. More reserve can consume material, labour and
+working measure; its adequacy is evaluated against specified service and terminal
+reserve constraints, rather than inferred from its size.
+
+The [reserve lifecycle experiment](physical-circulation.md#constructed-reserve-and-recovery-experiment)
+compares no new reserve and 7/30/60-period fuel targets with constructed generators
+and storage, exact losses and repeated failures. It retains start-up vulnerability
+and events exceeding the design horizon. The live service gains no autonomous
+issuance, purchase or resource-allocation authority from this calculation.

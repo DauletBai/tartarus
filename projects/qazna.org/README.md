@@ -99,9 +99,17 @@ An eight-policy, six-scenario joint-planning comparison now eliminates the
 90-period transport-only meal deficit through additional **produced** equipment,
 with unchanged initial assets. Equipment plus food buffers reduces worst unmet
 meals to 2.76 billion synthetic units. The minimax service-shortfall fraction reaches
-a certified 1.569116% lower bound caused by the model's power outage and absent
-energy storage; the remaining physical interruption is not hidden by cash balances.
+a certified 1.569116% lower bound in the previous configuration without backup
+generation or energy storage; the remaining physical interruption is not hidden by cash balances.
 See [objectives, exact certificate and limits](docs/physical-circulation.md#joint-reserve-replacement-and-training-policies).
+
+The next [reserve lifecycle experiment](docs/physical-circulation.md#constructed-reserve-and-recovery-experiment)
+constructs standby generators and fuel storage from existing resources, accounts
+for daily loss, protects restart stock and refills after recovery. A 30-period
+reserve covers the prepared repeated-interruption family; 60 periods covers the
+60-period supply failure. Thirty-five exact traces retain early/overlong failures
+and a failed overfilling policy. This is a synthetic resilience result, not a
+national stockpile recommendation or a guarantee against unknown emergencies.
 
 ## Run the checks
 
