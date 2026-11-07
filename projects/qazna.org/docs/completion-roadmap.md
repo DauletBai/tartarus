@@ -1,6 +1,6 @@
 # Completion roadmap and feasibility boundaries
 
-Latest review: 7 November 2026, source baseline `a60d732` (v0.11.0).
+Latest review: 7 November 2026, working source after `a7ff23b` (v0.11.0).
 The current work order below supersedes earlier milestone-specific next steps.
 
 ## Current implementation order
@@ -8,25 +8,26 @@ The current work order below supersedes earlier milestone-specific next steps.
 Already implemented: exact accounting and physical/payment checks; a 1,825-period
 coupled synthetic model with 16 dimensions and 14 processes; fixed-delivery plan
 trimming; causal reserve-route feedback with delayed commitments; and independent
-checks of idempotency, feasibility and accounting conservation. The latest complete
-local suite passed 38 mathematical and 91 PostgreSQL tests, plus the documented
+checks of idempotency, feasibility and accounting conservation; and a common
+opening balance certificate across six disruption schedules. The latest complete
+local suite passed 42 mathematical and 91 PostgreSQL tests, plus the documented
 HTTP, recovery, safety and actor exercises. GitHub CI for `a60d732` also passed.
 These results cover the declared synthetic model, not national deployment.
 
 The author's current priority is independent calculation and testing before
 external approaches. No partner, investment or paid model call is a prerequisite
-for the following sequence. Items below are **planned**, not newly implemented.
+for the following sequence. The table distinguishes completed bounded experiments from remaining work.
 
 | Order | Work package | Why it is still needed | Completion evidence |
 | --- | --- | --- | --- |
-| 1 — next | One funding envelope and explicit reserves across disruption scenarios | Current cash bounds are retrospective and differ by trace; reserve routes are a heuristic | Declare bounded disruption paths and initial assets; use one opening balance vector across them; check every account prefix, physical balance and same-observation decision prefix; preserve shortages rather than hiding them |
-| 2 | Joint planning of reserves, routes, replacement and training | Coordinate trimming cannot exchange whole blocks of activities; it preserves seed shortages | Compare a coupled/block or solver candidate with the baseline; independently verify exact feasibility, indivisible quantities and terminal reserves; publish an objective bound/gap where available |
+| 1 — bounded experiment implemented | Common opening measure across six disruption schedules | Same initial money/assets now tested; physical reserves are fixed rather than optimized; uncertainty beyond the declared family remains open | Exact worst-prefix witnesses, independent replay of every scenario, one-unit-less necessity checks and equal-observation physical prefixes; see the common-funding results |
+| 2 — next | Joint planning of reserves, routes, replacement and training | Coordinate trimming cannot exchange whole blocks of activities; it preserves seed shortages | Compare a coupled/block or solver candidate with the baseline; independently verify exact feasibility, indivisible quantities and terminal reserves; publish an objective bound/gap where available |
 | 3 | Expiry, transport loss, maintenance and changing demand | Current commitments arrive as promised and stocks do not age | Explicit dated lots/loss events; no expired or destroyed output delivered; partial failures, recalls, disrupted routes and revised needs with no rewriting of past provision |
 | 4 | Cohorts, additional services and evidence-backed coefficients | 100 million is a scale factor; health, education and personal choice are not a full national model | Versioned input registry with units, region, year, source and uncertainty; age/cohort transitions, voluntary qualification pathways and service capacity; distinguish synthetic and calibrated runs |
 | 5 | Reviewed integration into the live Rust service | Offline matrices do not currently create persistent runtime plans | Versioned scenario snapshots and drafts; stale-state rejection, atomic application, restart/retry and independent replay; no solver or AI authority to post or issue measure |
 | 6 | Participant-facing demonstrator and operational completion | Machine credentials are not resident identity; disputes, corrections and UI are incomplete | Scoped resident/organization access, evidence custody and dispute resolution, compensating events, accessible role-specific UI, overload and disaster-recovery tests; independent review before any consequential pilot |
 
-### Next calculation block: bounded uncertainty and common opening measure
+### Implemented bounded calculation: common opening measure
 
 For a declared finite scenario set Ω and fixed scenario schedules, let
 `C[a,ω,t]` be cumulative net inflow at account a through event t. A common opening
@@ -43,10 +44,10 @@ cases. Changing routing or payment order changes the schedules and requires new
 bounds. Causal decisions must remain equal while observations are equal; choosing
 an action from a scenario's hidden future is forbidden.
 
-The next deliverable should compare service coverage, opening measure, reserve
-quantities, disposal and recovery delay using the **same** initial funding and
-asset basis. Include simultaneous power/transport/capacity failures and delayed
-recovery, with their explicit bounds. If full provision is physically impossible,
+The maintained report now compares service coverage, opening measure, fixed reserve
+quantities and disposal using the **same** initial funding and asset basis. It
+includes simultaneous power/transport/capacity failures and delayed recovery.
+See [common-funding evidence](physical-circulation.md#common-opening-measure-across-bounded-disruption-scenarios). If full provision is physically impossible,
 report the deficit and the governing constraints. A subsequent optimizer may then
 trade among declared service/reserve objectives without changing human rights or
 inventing inputs. Calibration and the runtime safety gates remain necessary.

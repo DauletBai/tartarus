@@ -2,6 +2,10 @@
 
 ## Unreleased
 
+- Add exact common opening balances for bounded scenario families with attaining-prefix witnesses and independent exhaustive tests.
+- Replay six coupled scenarios with identical opening money and physical assets, including overlapping energy/transport/capacity stress and delayed recovery; retain physical shortages separately.
+- Preserve the author's latest palette (`#ff0815`, `#cd0011`) in the animated source and regenerated PNG/ICO/static SVG assets.
+
 - Preserve the author-adjusted red palette (`#ff1520`, `#bb0010`, base `#ff000d`) and regenerate the woven PNG/ICO and static SVG derivatives.
 - Consolidate the current implementation order: common scenario funding/reserves, joint planning, lifecycle losses, calibrated cohorts, reviewed runtime integration and participant safeguards.
 

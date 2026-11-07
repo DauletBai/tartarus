@@ -55,8 +55,8 @@ The same technology stack does not imply immediate industrial readiness. Economi
 ## Next work
 
 The [current roadmap](completion-roadmap.md#current-implementation-order) governs
-sequencing. First establish one opening funding envelope and explicit reserves
-across bounded disruption scenarios. Then improve joint planning, physical loss
+sequencing. A common opening funding envelope is now implemented for six declared disruption
+schedules with fixed physical reserves. Next improve joint planning, physical loss
 and expiry, and cohort/input calibration. Connect independently verified candidates
 to versioned Rust reviewable drafts only after these contracts are explicit.
 Resident identity, corrections/disputes, accessible interfaces, operational load
@@ -125,3 +125,15 @@ outage duration. Independent full physical and payment replay verifies each trac
 The physical policy is causal; its separately calculated prefunding bound is still
 retrospective. Production loss/expiry, a fixed cash envelope and global rolling
 optimization remain open. See [results and equations](physical-circulation.md#causal-recovery-through-reserve-routes).
+
+
+### Common scenario funding
+
+`mathematics::common_schedule_opening` computes exact accountwise worst-prefix
+requirements over bounded named schedules and returns attaining witnesses. The
+coupled study replays six causal physical scenarios with the same opening money,
+checks their identical initial asset/norm/recipe basis and reduces each positive
+opening coordinate by one to exercise necessity. This is an offline fixed-family
+certificate; it does not optimize reserves, authorize issuance or cover disabled
+payment edges. The cash-only normal-funding counterfactual does not re-solve
+physical outcomes after blocked payments.

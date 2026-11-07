@@ -89,6 +89,11 @@ A causal reserve-route experiment then reduces unmet meals during a 90-day prima
 transport interruption by 72.24%, and eliminates them in the 30-day scenario under
 the declared stocks/capacities. Future restoration dates are not supplied to the
 daily decisions; exact physical and cash checks remain separate.
+The next experiment uses one identical opening balance vector across six disruption
+schedules: 2,030,483,170,650 synthetic normative units (1.253609% above normal-only
+funding). Every scheduled payment settles; physical shortages under severe stress
+remain explicitly reported. This is a fixed-family certificate, not a national
+budget, global optimum or guarantee against unknown failures.
 
 ## Run the checks
 

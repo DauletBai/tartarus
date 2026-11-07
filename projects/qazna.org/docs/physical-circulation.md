@@ -258,7 +258,7 @@ experiment below adds two alternatives without claiming that broader optimizer.
 ### Measured comparison inside the synthetic model
 
 The retained original scenarios and their trimmed counterparts are in the same
-`research/coupled-results.json` report (schema version 3). The unchanged seed
+`research/coupled-results.json` report (schema version 4). The unchanged seed
 results were compared field-by-field after refactoring payment generation. All
 five trimmed scenarios finish with a no-change second pass. This certifies only
 irreducibility under the declared one-coordinate moves and reserve constraints.
@@ -392,3 +392,123 @@ Next work: jointly choose safety reserves, route capacity, service priorities an
 capital/training schedules across multiple unknown disruption paths; add expiry,
 in-transit losses and a fixed opening liquidity envelope. Report guaranteed service
 bounds only for explicitly bounded uncertainty and independently verified plans.
+
+## Common opening measure across bounded disruption scenarios
+
+`mathematics::common_schedule_opening` now computes one opening balance vector for
+a declared finite family of ordered schedules. It does not select a different
+starting balance after learning which failure will occur. The current family uses
+the same initial physical stocks, storage caps, recipes, shared capabilities,
+withdrawals, normative units and account ownership, checked for equality in code.
+The reserve-routing policy is the same in every member.
+
+| Family member | Primary transport closure | Power closure |
+| --- | --- | --- |
+| normal | None | None |
+| transport_30 | 365–394 | None |
+| transport_90 | 365–454 | None |
+| power_15 | None | 600–614 |
+| compound_15 | 365–454 | 390–404 |
+| compound_30 | 365–454 | 390–419 |
+
+Periods are zero-based and endpoints inclusive. All members also have the same
+previously declared equipment/qualified-capacity withdrawal in period 400. The
+compound cases therefore combine transport, energy and capability stress. These
+six paths are a bounded experimental set, not all combinations of failures, a
+probability distribution or a worst-case claim over every possible future.
+
+### Exact bound and proof scope
+
+For account a, scenario ω and event prefix t, C[a,ω,t] is cumulative net inflow,
+starting at zero. Let:
+
+```text
+E[a] = max(0, max_{ω,t} -C[a,ω,t])
+E_total = sum_a E[a]
+```
+
+Sufficiency follows because every E[a] + C[a,ω,t] is nonnegative. Necessity follows
+from an attaining prefix: a smaller opening for that account makes the balance
+negative in its witness scenario, unless the schedule is changed. The result saves
+that scenario, zero-based event index, period and exact cumulative net value for
+each positive coordinate. An all-zero requirement has no negative witness.
+
+This is componentwise minimal for the supplied fixed schedules, with their fixed
+order and no extra rebalancing or later issuance. It is not a global minimum over
+alternative plans. In general, E_total is **not** the largest scenario-specific
+total: one schedule may require 7 units at account A, another 9 at account B. The
+common vector is (7,9), total 16, although the larger individual total is only 9.
+Keeping the total in the wrong accounts does not meet the obligation sequence.
+
+The Rust routine validates the complete named family before calculation, rejects
+ambiguous names, invalid schedules and unbounded input sizes, and uses checked
+integer arithmetic. Decimal strings preserve mathematical values beyond runtime
+account limits; a caller must separately validate its execution representation.
+The coupled experiment's balances fit its replay representation. No ledger command,
+monetary policy or issuance authority is added.
+
+### Independent verification
+
+Each scenario is replayed with the **same E**, preserving money exactly and checking
+that every planned payment settles. All positive account requirements are then
+reduced individually by one unit; the corresponding witness must fail at the saved
+event. The mathematical tests also exhaustively enumerate initial vectors for 16
+small three-scenario families using a separate transfer simulator, verify witness
+prefixes and scenario-order invariance, and retain a counterexample for unavailable
+payment edges. A cash reserve cannot make a disabled payment channel operate.
+
+The existing physical matrix and goods/payment checks still apply. Identical
+physical decision prefixes are checked for normal/power through period 599,
+long-transport/compound through 389, and the two compound cases through 404,
+in addition to the previous transport-prefix comparisons. Thus no advance reaction
+to the tested future divergence is hidden in the reported physical policy.
+
+A second cash-only replay uses the normal scenario's smaller opening balances on
+each stress schedule. This is a diagnostic showing when payments would block; its
+physical trace is not re-solved after underfunding. Do not present its original
+physical deliveries as executed outcomes of a cash-blocked economy.
+
+Physical reserve quantities are explicit and unchanged across the family; they
+are not yet jointly optimized. The family envelope is designed offline and then
+held fixed during all six replays. It protects these stated schedules, not unseen
+failure paths or infinite repetition. Missing meals/housing remain missing even
+when every payment for goods actually supplied succeeds. The next optimization
+must jointly choose routes, reserves, production and capability renewal, and report
+service deficits and resource costs separately from this monetary sufficiency bound.
+
+### Measured common-funding result
+
+The six-path common opening is **2,030,483,170,650 normative units**, compared with
+**2,005,344,000,000** for the normal trace alone: an additional **25,139,170,650**
+(**1.253609%**). This is a stock of opening working measure, not annual expenditure,
+GDP, actual KZT or a forecast of required national issuance. It uses the untrimmed
+causal reserve-route policy; the earlier retrospective production savings have not
+been silently combined with it.
+
+| Scenario | Unmet meal units | Unmet housing-place days | Payments blocked with common opening | First blocked period using normal-only opening |
+| --- | ---: | ---: | ---: | --- |
+| normal | 0 | 0 | 0 | None |
+| transport_30 | 0 | 0 | 0 | None |
+| transport_90 | 2,513,917,060 | 0 | 0 | 1795 |
+| power_15 | 1,180,000,000 | 1,575,000,000 | 0 | None |
+| compound_15 | 3,792,016,560 | 1,575,000,000 | 0 | 538 |
+| compound_30 | 5,089,395,840 | 3,150,000,000 | 0 | None |
+
+All 320,329 scheduled movements across the six separate replays settle with the
+common opening; money is conserved and the resident account's closing balance is
+zero. Ten positive opening coordinates have attaining witnesses, and every
+one-unit reduction fails at its saved event. All 14 previously published physical
+trace results and comparisons are unchanged; three additional physical traces
+extend the same maintained report to schema 4.
+
+The long-transport trace alone needs 2,030,483,170,600 units, the largest individual
+total. It still misses **50 units at a different account** needed by compound_15
+(account 4, period 538). The family therefore requires 50 more than that largest
+total. This is exact integer arithmetic, not floating-point rounding. The report
+retains the responsible prefixes instead of rounding away a small but real failure.
+
+Normal-only funding produces 39 underfunded attempted payments in transport_90
+and 13 in compound_15. The more severe compound_30 needs a smaller monetary stock
+than compound_15 for its particular executed-goods schedule, because less physical
+provision occurs. Lower required working measure must not be interpreted as better
+welfare. Financial sufficiency and successful material provision remain distinct.

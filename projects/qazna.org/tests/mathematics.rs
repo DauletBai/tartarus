@@ -1521,3 +1521,151 @@ fn pipeline_matches_independent_commitment_list_across_route_changes() {
         assert_eq!(committed, received);
     }
 }
+
+mod common_funding {
+    use super::*;
+    fn event(period: u32, from: usize, to: usize, amount: u64) -> ScheduledMovement {
+        ScheduledMovement {
+            period,
+            movement: Movement { from, to, amount },
+            basis: "Synthetic fixed obligation".into(),
+        }
+    }
+    fn feasible(mut cash: Vec<u64>, events: &[ScheduledMovement]) -> bool {
+        for e in events {
+            let m = &e.movement;
+            if cash[m.from] < m.amount {
+                return false;
+            }
+            cash[m.from] -= m.amount;
+            cash[m.to] += m.amount;
+        }
+        true
+    }
+    #[test]
+    fn common_opening_is_not_largest_scenario_total() {
+        let a = vec![event(0, 0, 1, 7)];
+        let b = vec![event(0, 1, 0, 9)];
+        let r = common_schedule_opening(2, &[("a", &a), ("b", &b)]).unwrap();
+        assert_eq!(r.minimum_opening_by_account, ["7", "9"]);
+        assert_eq!(r.total_minimum_opening, "16");
+        assert_eq!(r.witnesses[0].as_ref().unwrap().scenario, "a");
+        assert_eq!(r.witnesses[1].as_ref().unwrap().scenario, "b");
+        assert!(!feasible(vec![0, 9], &a));
+        assert!(feasible(vec![7, 9], &a) && feasible(vec![7, 9], &b));
+        assert!(!feasible(vec![6, 9], &a));
+        assert!(!feasible(vec![7, 8], &b));
+    }
+    #[test]
+    fn common_opening_matches_exhaustive_small_families_and_witness_prefixes() {
+        for seed in 0..16usize {
+            let schedules: Vec<Vec<_>> = (0..3)
+                .map(|s| {
+                    (0..4)
+                        .map(|t| {
+                            let from = (seed + s + t * 2) % 3;
+                            let to = (from + 1 + (s + t) % 2) % 3;
+                            event(t as u32 / 2, from, to, 1 + ((seed + s + t) % 2) as u64)
+                        })
+                        .collect()
+                })
+                .collect();
+            let refs = [
+                ("a", schedules[0].as_slice()),
+                ("b", schedules[1].as_slice()),
+                ("c", schedules[2].as_slice()),
+            ];
+            let r = common_schedule_opening(3, &refs).unwrap();
+            let required: Vec<u64> = r
+                .minimum_opening_by_account
+                .iter()
+                .map(|s| s.parse().unwrap())
+                .collect();
+            // Independent integer enumeration, not a second prefix formula.
+            for x in 0..=8 {
+                for y in 0..=8 {
+                    for z in 0..=8 {
+                        let candidate = vec![x, y, z];
+                        assert_eq!(
+                            schedules.iter().all(|s| feasible(candidate.clone(), s)),
+                            candidate.iter().zip(&required).all(|(a, b)| a >= b),
+                            "seed={seed}"
+                        );
+                    }
+                }
+            }
+            for (account, w) in r.witnesses.iter().enumerate() {
+                if let Some(w) = w {
+                    let schedule = refs.iter().find(|(n, _)| *n == w.scenario).unwrap().1;
+                    let mut net = 0i128;
+                    for e in &schedule[..=w.event] {
+                        if e.movement.from == account {
+                            net -= i128::from(e.movement.amount);
+                        }
+                        if e.movement.to == account {
+                            net += i128::from(e.movement.amount);
+                        }
+                    }
+                    assert_eq!(net.to_string(), w.cumulative_net);
+                    assert_eq!(-net, i128::from(required[account]));
+                    assert_eq!(schedule[w.event].period, w.period);
+                } else {
+                    assert_eq!(required[account], 0);
+                }
+            }
+            let reverse = common_schedule_opening(3, &[refs[2], refs[1], refs[0]]).unwrap();
+            assert_eq!(
+                r.minimum_opening_by_account,
+                reverse.minimum_opening_by_account
+            );
+        }
+    }
+    #[test]
+    fn common_opening_validates_whole_family_and_retains_large_exact_values() {
+        let ok = vec![event(0, 0, 1, 1)];
+        assert!(common_schedule_opening(2, &[]).is_err());
+        assert!(common_schedule_opening(0, &[("a", &[])]).is_err());
+        assert!(common_schedule_opening(10001, &[("a", &[])]).is_err());
+        assert!(common_schedule_opening(2, &[("a", &ok), ("a", &ok)]).is_err());
+        assert!(common_schedule_opening(2, &[(" ", &ok)]).is_err());
+        assert!(common_schedule_opening(2, &[(" a", &ok)]).is_err());
+        for bad in [
+            vec![event(2, 0, 1, 1), event(1, 1, 0, 1)],
+            vec![event(0, 0, 2, 1)],
+            vec![event(0, 0, 0, 1)],
+            vec![event(0, 0, 1, 0)],
+        ] {
+            assert!(common_schedule_opening(2, &[("valid", &ok), ("invalid", &bad)]).is_err());
+        }
+        let empty = common_schedule_opening(2, &[("empty", &[])]).unwrap();
+        assert_eq!(empty.total_minimum_opening, "0");
+        assert!(empty.witnesses.iter().all(Option::is_none));
+        let huge = vec![event(0, 0, 1, u64::MAX), event(0, 0, 1, u64::MAX)];
+        let r = common_schedule_opening(2, &[("large", &huge)]).unwrap();
+        assert_eq!(
+            r.total_minimum_opening,
+            (2 * i128::from(u64::MAX)).to_string()
+        );
+        assert!(r.minimum_opening_by_account[0].parse::<u64>().is_err());
+    }
+    #[test]
+    fn unavailable_edge_is_outside_full_execution_funding_guarantee() {
+        let events = vec![event(0, 0, 1, 5), event(1, 1, 2, 5)];
+        let r = common_schedule_opening(3, &[("available", &events)]).unwrap();
+        let funds: Vec<u64> = r
+            .minimum_opening_by_account
+            .iter()
+            .map(|s| s.parse().unwrap())
+            .collect();
+        assert!(
+            replay_schedule(&funds, &events, &[])
+                .unwrap()
+                .first_blocked_event
+                .is_none()
+        );
+        let denied = replay_schedule(&funds, &events, &[0]).unwrap();
+        assert_eq!(denied.unavailable_events, 1);
+        assert_eq!(denied.insufficient_events, 1);
+        assert_eq!(denied.closing, ["5", "0", "0"]);
+    }
+}

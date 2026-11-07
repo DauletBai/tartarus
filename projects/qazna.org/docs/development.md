@@ -137,3 +137,34 @@ privilege levels; and backup/restore of 36 tables. The 60-period shortfall exerc
 passed 4,548 HTTP requests with one restart; the 35-period closed exercise passed
 3,901 with two restarts. Actor seeds 7 and 19 completed, with their existing
 physical-evidence gap still explicit. No real participants or model calls were used.
+
+
+## Verification record — 7 November 2026, common scenario opening
+
+The mathematical target has **42 passing tests**. Four added checks cover a
+counterexample to taking only the largest scenario total; exhaustive opening-vector
+enumeration for 16 small three-scenario families with an independent transfer
+simulator, prefix witnesses and scenario-order invariance; malformed families and
+large exact integer results; and failure of the funding guarantee when a scheduled
+payment edge is unavailable. All-target Clippy passed.
+
+The schema-4 study supplies one opening vector to six scenario replays with an
+identical initial physical/recipe/norm basis. Each positive opening coordinate is
+reduced by one to exercise its attaining witness. Three added power/compound traces
+pass the independent physical and payment checks; future-observation physical
+prefix comparisons extend to the compound recovery dates. Every previously
+published case, improved case, comparison and recovery result is unchanged.
+
+The author's updated red values (`#ff0815`, `#cd0011`) were retained exactly;
+PNG/ICO/static SVG assets were regenerated and the woven 512-pixel result visually
+inspected. The base remains `#ff000d` at 30% opacity. SVG palette matching and PNG
+chunk checks passed; no animation geometry or timing was changed.
+
+The required full disposable-PostgreSQL runner passed: 42 mathematical, 91 database,
+3 library, 4 no-AI example and 11 advisory-safety tests; byte-for-byte regeneration
+of all maintained calculation reports; HTTP restart/provenance, strict evidence
+under both privilege configurations, and backup/restore of 36 tables. The 60-period
+shortfall trial made 4,548 requests with one restart (55.255 seconds), and the
+35-period closed trial made 3,901 with two restarts (46.151 seconds). Both passed.
+Actor seeds 7/19 completed with their existing physical-evidence limitation still
+reported. No real participants, real money or model calls were used.

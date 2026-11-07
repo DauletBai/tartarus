@@ -7,8 +7,8 @@ Source SHA-256: `2f1d4e8ed83a44294ef1e6244edfce31b0b10ae09a142e0c5c292af4699cffc
 The adaptation was requested by the author on 7 November 2026. The red mark
 represents continuous circulation of provision, not a medical service.
 
-Both diagonal groups have bright red central channels (`#ff1520`) and deep red
-outer channels (`#bb0010`), with a `#ff000d` base at 30% opacity.
+Both diagonal groups have bright red central channels (`#ff0815`) and deep red
+outer channels (`#cd0011`), with a `#ff000d` base at 30% opacity.
 This palette was adjusted by the author on 7 November 2026 to remove the brown
 cast; its exact source values are preserved. The two groups flow in opposite directions. Color is
 arranged symmetrically across the mark; it is not a literal anatomical diagram.

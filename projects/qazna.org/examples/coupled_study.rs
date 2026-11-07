@@ -42,7 +42,11 @@ fn movement(
         });
     }
 }
-fn study(name: &str, trim: bool, reroute: bool) -> (serde_json::Value, Vec<PeriodPlan>) {
+fn study(
+    name: &str,
+    trim: bool,
+    reroute: bool,
+) -> (serde_json::Value, Vec<PeriodPlan>, Vec<ScheduledMovement>) {
     let resources = [
         "ore_in_ground",
         "fuel_in_ground",
@@ -181,12 +185,18 @@ fn study(name: &str, trim: bool, reroute: bool) -> (serde_json::Value, Vec<Perio
         data.needs[13] = demand;
         data.needs[15] = demand;
         if (name == "transport_outage" && (365..395).contains(&day))
-            || (name == "long_transport_outage" && (365..455).contains(&day))
+            || (matches!(
+                name,
+                "long_transport_outage" | "compound_outage" | "compound_delayed"
+            ) && (365..455).contains(&day))
         {
             data.capacities[6] = 0;
             data.capacities[8] = 0;
         }
-        if name == "power_outage" && (600..615).contains(&day) {
+        if (name == "power_outage" && (600..615).contains(&day))
+            || (name == "compound_outage" && (390..405).contains(&day))
+            || (name == "compound_delayed" && (390..420).contains(&day))
+        {
             data.capacities[1] = 0;
         }
         if name == "equipment_replacement_disabled" {
@@ -553,6 +563,7 @@ fn study(name: &str, trim: bool, reroute: bool) -> (serde_json::Value, Vec<Perio
         "matrix":{"variables":matrix.objective.len(),"rows":matrix.rows.len(),"nonzero_terms":matrix.rows.iter().map(|r|r.terms.len()).sum::<usize>()},"minimum_outage_unmet_proven":infeasibility_bound,"outage_bound_scope":if infeasibility_bound.is_some(){Some("fixed_route_policy_no_reserve_meal_dispatch")}else{None},"cash_link_count":links.len(),"forged_payment_rejected":true,"physical_verification":verified,"food_objective_optimal":optimal,"first_unmet_day":first,"discarded":discarded.iter().map(ToString::to_string).collect::<Vec<_>>(),"unmet":missing.iter().map(ToString::to_string).collect::<Vec<_>>(),"activity_totals":starts.iter().map(ToString::to_string).collect::<Vec<_>>(),"first_activity":first_departure,"years":years,
         "requested_provision_measure":measures[0].to_string(),"delivered_provision_measure":measures[1].to_string(),"completed_capital_procurement_measure":measures[2].to_string(),"liquidity":bound,"money":money}),
         plan,
+        events,
     )
 }
 fn main() {
@@ -595,10 +606,10 @@ fn main() {
             "opening_measure_before":before["liquidity"],"opening_measure_after":after["liquidity"],
             "trim_evidence":after["trim_evidence"]})
     }).collect();
-    let (normal, normal_trace) = study("baseline", false, true);
-    let (recovered, recovered_trace) = study("transport_outage", false, true);
-    let (long_fixed, _) = study("long_transport_outage", false, false);
-    let (long_recovered, long_trace) = study("long_transport_outage", false, true);
+    let (normal, normal_trace, normal_events) = study("baseline", false, true);
+    let (recovered, recovered_trace, recovered_events) = study("transport_outage", false, true);
+    let (long_fixed, _, _) = study("long_transport_outage", false, false);
+    let (long_recovered, long_trace, long_events) = study("long_transport_outage", false, true);
     assert_eq!(
         serde_json::to_value(&normal_trace[..365]).unwrap(),
         serde_json::to_value(&recovered_trace[..365]).unwrap()
@@ -610,10 +621,89 @@ fn main() {
     let recovered_food: i128 = recovered["unmet"][13].as_str().unwrap().parse().unwrap();
     let fixed_food: i128 = cases[1]["unmet"][13].as_str().unwrap().parse().unwrap();
     assert!(recovered_food < fixed_food);
+    let (power, power_trace, power_events) = study("power_outage", false, true);
+    let (compound, compound_trace, compound_events) = study("compound_outage", false, true);
+    let (delayed, delayed_trace, delayed_events) = study("compound_delayed", false, true);
+    for (a, b, end) in [
+        (&normal_trace, &power_trace, 600),
+        (&long_trace, &compound_trace, 390),
+        (&compound_trace, &delayed_trace, 405),
+    ] {
+        assert_eq!(
+            serde_json::to_value(&a[..end]).unwrap(),
+            serde_json::to_value(&b[..end]).unwrap()
+        );
+    }
+    let family = [
+        ("normal", &normal, &normal_events),
+        ("transport_30", &recovered, &recovered_events),
+        ("transport_90", &long_recovered, &long_events),
+        ("power_15", &power, &power_events),
+        ("compound_15", &compound, &compound_events),
+        ("compound_30", &delayed, &delayed_events),
+    ];
+    let schedules: Vec<_> = family
+        .iter()
+        .map(|(name, _, e)| (*name, e.as_slice()))
+        .collect();
+    let envelope = common_schedule_opening(J + 2, &schedules).unwrap();
+    let common_funds: Vec<u64> = envelope
+        .minimum_opening_by_account
+        .iter()
+        .map(|s| s.parse().unwrap())
+        .collect();
+    let normal_funds: Vec<u64> = normal["liquidity"]["minimum_opening_by_account"]
+        .as_array()
+        .unwrap()
+        .iter()
+        .map(|s| s.as_str().unwrap().parse().unwrap())
+        .collect();
+    let mut trials = vec![];
+    for (name, result, events) in &family {
+        for field in [
+            "initial",
+            "storage_caps",
+            "processes",
+            "limits",
+            "withdrawals",
+            "fixed_unit_measure",
+            "owner_account",
+        ] {
+            assert_eq!(
+                result[field], normal[field],
+                "family mismatch {name}/{field}"
+            );
+        }
+        let run = replay_schedule(&common_funds, events, &[]).unwrap();
+        assert!(run.first_blocked_event.is_none());
+        assert_eq!(run.closing[1], "0");
+        let insufficient_baseline = replay_schedule(&normal_funds, events, &[]).unwrap();
+        trials.push(json!({"scenario":name,"common_opening_run":run,"normal_opening_run":insufficient_baseline,
+            "unmet":result["unmet"],"first_unmet_day":result["first_unmet_day"],
+            "discarded":result["discarded"],"physical_verification":result["physical_verification"],
+            "scenario_specific_opening":result["liquidity"]["total_minimum_opening"]}));
+    }
+    // Necessity witnesses: one less unit in any positive coordinate must fail
+    // in at least one attaining scenario. No global total-only claim is made.
+    let mut necessity = vec![];
+    for (account, witness) in envelope.witnesses.iter().enumerate() {
+        if let Some(w) = witness {
+            let (_, _, events) = family.iter().find(|(n, _, _)| *n == w.scenario).unwrap();
+            let mut reduced = common_funds.clone();
+            reduced[account] -= 1;
+            let run = replay_schedule(&reduced, events, &[]).unwrap();
+            assert_eq!(run.first_blocked_event, Some(w.event));
+            necessity.push(json!({"account":account,"witness":w,"one_unit_less_blocked":true}));
+        }
+    }
+    let common_funding = json!({"scope":"six_declared_causal_schedules_no_later_issuance_or_rebalancing",
+        "envelope":envelope,"same_initial_physical_basis":true,"future_observation_prefix_tests_passed":true,
+        "trials":trials,"necessity_checks":necessity,
+        "compound_outage":compound,"compound_delayed":delayed,"power_outage":power});
     let recovery = json!({"policy":"causal_reserve_routes_v1","future_observation_prefix_tests_passed":true,
         "normal":normal,"transport_outage":recovered,"long_fixed":long_fixed,"long_recovery":long_recovered});
-    let report = json!({"version":3,"kind":"synthetic_coupled_capability_study","model_calls":0,
-        "assumptions":["Synthetic aggregate coefficients, not demographic/engineering norms","Water is an external boundary supply; deposits and initial assets/stocks are explicit","Training places represent consenting eligible capacity, not people owned or traded","Qualified capacity and equipment are shared use limits, not consumed ingredients","Public asset procurement is paid only for completed equipment/buildings","Input payments follow actual consumption; incomplete work ties up opening working measure","Natural resources and people have zero commodity price in this example","All monetary norms fixed; no interest, tax, loan or later issuance","Actual missing provision remains recorded; no claim that missing goods cancel human entitlements","Money is prefunded using exact schedule bounds, not optimized globally","Trimmed cases are retrospective fixed-delivery improvements, not causal forecasts or global optima","Recovery decisions use current observed capacities, stocks and committed output; no future outage duration is provided","Reserve routes take two periods and four shared equipment/skill units per batch; synthetic capacity is declared in every comparison","The original terminal stock is a lower bound in trimmed cases; all intermediate safety-stock policy remains open","Energy/fuel/material quantities are abstract recipe units, not measured kWh/tonnes; external water left unused is reported separately from energy discard","Inventory age/expiry, health demography, individual choice, teacher specializations and foreign trade remain open","Heuristic is not a global optimum except when a valid stated objective certificate exists"],"cases":cases,"improved_cases":improved,"comparisons":comparisons,"recovery":recovery});
+    let report = json!({"version":4,"kind":"synthetic_coupled_capability_study","model_calls":0,
+        "assumptions":["Synthetic aggregate coefficients, not demographic/engineering norms","Water is an external boundary supply; deposits and initial assets/stocks are explicit","Training places represent consenting eligible capacity, not people owned or traded","Qualified capacity and equipment are shared use limits, not consumed ingredients","Public asset procurement is paid only for completed equipment/buildings","Input payments follow actual consumption; incomplete work ties up opening working measure","Natural resources and people have zero commodity price in this example","All monetary norms fixed; no interest, tax, loan or later issuance","Actual missing provision remains recorded; no claim that missing goods cancel human entitlements","Money is prefunded using exact schedule bounds, not optimized globally","Trimmed cases are retrospective fixed-delivery improvements, not causal forecasts or global optima","Recovery decisions use current observed capacities, stocks and committed output; no future outage duration is provided","Reserve routes take two periods and four shared equipment/skill units per batch; synthetic capacity is declared in every comparison","The original terminal stock is a lower bound in trimmed cases; all intermediate safety-stock policy remains open","Energy/fuel/material quantities are abstract recipe units, not measured kWh/tonnes; external water left unused is reported separately from energy discard","Inventory age/expiry, health demography, individual choice, teacher specializations and foreign trade remain open","Heuristic is not a global optimum except when a valid stated objective certificate exists"],"cases":cases,"improved_cases":improved,"comparisons":comparisons,"recovery":recovery,"common_funding":common_funding});
     let path = env::args()
         .nth(1)
         .unwrap_or("research/coupled-results.json".into());

@@ -456,3 +456,78 @@ pub fn replay_schedule(
     report.settled_volume = volume.to_string();
     Ok(report)
 }
+
+/// An attaining prefix for one account's common opening requirement.
+/// The event index is zero-based in the named, ordered scenario schedule.
+#[derive(Debug, Clone, Serialize, Deserialize, PartialEq, Eq)]
+pub struct OpeningWitness {
+    pub scenario: String,
+    pub event: usize,
+    pub period: u32,
+    pub cumulative_net: String,
+}
+
+#[derive(Debug, Clone, Serialize, Deserialize, PartialEq, Eq)]
+pub struct CommonOpening {
+    pub minimum_opening_by_account: Vec<String>,
+    pub total_minimum_opening: String,
+    pub witnesses: Vec<Option<OpeningWitness>>,
+    pub scenario_count: usize,
+}
+
+/// Componentwise minimum opening for a finite family of fixed ordered schedules.
+/// Each account must cover its worst prefix across ALL supplied scenarios. This
+/// is not max(total of each scenario), an optimizer, or protection outside this
+/// family. Mathematical results can exceed runtime account limits; strings retain
+/// exact i128 values and callers must check their execution representation.
+pub fn common_schedule_opening(
+    accounts: usize,
+    scenarios: &[(&str, &[ScheduledMovement])],
+) -> Result<CommonOpening, MathError> {
+    if scenarios.is_empty() || scenarios.len() > 64 {
+        return Err(MathError::Invalid("bounded nonempty scenario set required"));
+    }
+    let mut names = std::collections::BTreeSet::new();
+    let mut event_count = 0usize;
+    for (name, events) in scenarios {
+        if name.trim().is_empty() || name.trim() != *name || !names.insert(*name) {
+            return Err(MathError::Invalid(
+                "unique nonempty scenario names required",
+            ));
+        }
+        validate_schedule(accounts, events)?;
+        event_count = event_count
+            .checked_add(events.len())
+            .ok_or(MathError::Overflow)?;
+        if event_count > 1_000_000 {
+            return Err(MathError::Invalid("scenario event budget exceeded"));
+        }
+    }
+    let mut required = vec![0i128; accounts];
+    let mut witnesses = vec![None; accounts];
+    for (name, events) in scenarios {
+        let mut net = vec![0i128; accounts];
+        for (i, event) in events.iter().enumerate() {
+            let m = &event.movement;
+            net[m.from] = add(net[m.from], -i128::from(m.amount))?;
+            net[m.to] = add(net[m.to], i128::from(m.amount))?;
+            let deficit = net[m.from].checked_neg().ok_or(MathError::Overflow)?;
+            if deficit > required[m.from] {
+                required[m.from] = deficit;
+                witnesses[m.from] = Some(OpeningWitness {
+                    scenario: (*name).to_owned(),
+                    event: i,
+                    period: event.period,
+                    cumulative_net: net[m.from].to_string(),
+                });
+            }
+        }
+    }
+    let total = required.iter().try_fold(0, |s, &n| add(s, n))?;
+    Ok(CommonOpening {
+        minimum_opening_by_account: required.iter().map(ToString::to_string).collect(),
+        total_minimum_opening: total.to_string(),
+        witnesses,
+        scenario_count: scenarios.len(),
+    })
+}
