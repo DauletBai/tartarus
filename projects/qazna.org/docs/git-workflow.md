@@ -1,6 +1,6 @@
 # Local Git workflow
 
-The active workspace is connected to `https://github.com/DauletBai/tartarus.git` on `codex/qazna-rust-provisioning`, tracking the same origin branch. Qazna lives at `projects/qazna.org/`; Git commands also work from that directory. This replaces the earlier API-only publication workflow with a local Git index, commits and IDE status/diffs.
+The active workspace is connected to `https://github.com/DauletBai/tartarus.git` on `codex/qazna-author-workspace`, tracking `origin/codex/qazna-lifecycle-integration`. Qazna lives at `projects/qazna.org/`; Git commands also work from that directory. This replaces the earlier API-only publication workflow with a local Git index, commits and IDE status/diffs.
 
 ## Scope of this workspace
 
@@ -30,7 +30,7 @@ cd ../..
 git add -- projects/qazna.org .github/workflows/qazna.yml MANIFEST.csv
 git diff --cached --stat
 git commit -m "Describe the verified change"
-git push origin codex/qazna-rust-provisioning
+git push origin HEAD:codex/qazna-lifecycle-integration
 ```
 
 `update_manifest.py` updates only Qazna/CI entries and preserves unrelated manifest entries. Review the staged paths before committing. Changes to historical migrations are not allowed. Do not merge or force-push without authorization. Keep published commits and the local branch synchronized; verify the remote head and CI result before claiming publication is complete.
@@ -39,18 +39,39 @@ IDE decorations show Git working-tree state, not whether a file has ever been ed
 
 ## Publication after PR #1
 
-PR #1 was merged on 7 November 2026 at `4e859a5`. The next lifecycle stage is
-published from the separate project-scoped worktree on
-`codex/qazna-lifecycle-integration`. The original author workspace is deliberately
-left on its existing branch with the edited project files preserved; it is not a
-clean checkout of this new branch. Do not reset it or replace its manuscript README.
+PR #1 was merged on 7 November 2026 at `4e859a5`. The lifecycle stage is
+published through [PR #2](https://github.com/DauletBai/tartarus/pull/2) on
+`codex/qazna-lifecycle-integration`. The author workspace was reconciled with
+published commit `69ca7ef` after backing up every changed file and Git metadata,
+comparing all project files with the publication worktree, and verifying that
+working-file bytes were unchanged. The local manuscript README remains intact.
 
-For the next-stage publication, copy only the reviewed project files into the
-separate worktree, verify them against the tested source, regenerate its manifest,
-and commit/push that development branch. Check its actual remote commit before
-claiming synchronization. Reconcile the original workspace separately with a
-complete backup and review of its local files.
+Continue editing and committing in this author workspace. Its local branch has a
+different name from the remote branch, so use the explicit push command above.
+Do not copy stale files back from the older publication worktree. A saved remote
+branch is distinct from a merged change on `main`; check the PR and CI before
+reporting that the default branch has been updated.
 
+## Main branch protection
+
+The warning that `main` is not protected concerns remote repository settings;
+committing or pushing source files does not activate protection. The prepared
+[main ruleset](main-protection.ruleset.json) blocks deletion and force pushes,
+without adding bypass actors or preventing ordinary fast-forward updates.
+
+To activate it, open the repository Settings, Rules / Rulesets, then New ruleset,
+Import a ruleset. Select this JSON, check that the target is `refs/heads/main` and
+Enforcement is Active, then click Create. Finally inspect the repository rules
+page to confirm activation. Saving this JSON in Git alone does not apply it.
+
+This is a minimal protection policy, not mandatory code review. Qazna CI currently
+has path filters and does not run for book-only changes. Do not require its check
+globally until the workflow has an always-reporting gate; otherwise unrelated
+book PRs can remain blocked waiting for a check that never starts. PR review and
+successful CI remain publication practices, but are not enforced by this ruleset.
+
+References: [GitHub ruleset import instructions](https://docs.github.com/en/repositories/configuring-branches-and-merges-in-your-repository/managing-rulesets/managing-rulesets-for-a-repository)
+and [repository rules API](https://docs.github.com/en/rest/repos/rules).
 
 ## Repository overview versus project folder
 
