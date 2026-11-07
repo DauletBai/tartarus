@@ -507,3 +507,13 @@ withdrawals, then verifies that each goods payment corresponds exactly to an
 actual input, provision or completed capital item. The five-year coupled report
 retains baseline coverage, shortages, discarded quantities and opening working
 measure; it does not equate money availability with physical sufficiency.
+
+### Exact physical-plan improvement
+
+The coupled research matrix now has a Rust integer trimming stage that preserves
+every delivery and terminal reserve, verifies each pass, and reconstructs all
+payment links and opening funds. Five paired five-year traces demonstrate lower
+excess energy/fuel production without model calls. See [comparisons, formulas and
+calibration limits](physical-circulation.md#reducing-excess-production-while-preserving-provision).
+The comparison is retrospective and synthetic; it is not an online/global solver
+or a budget forecast for a country.

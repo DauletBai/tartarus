@@ -2,6 +2,9 @@
 
 ## Unreleased
 
+- Add exact integer plan trimming with fixed deliveries, terminal reserves, cached shared-capability guards and independently verified passes.
+- Compare five paired five-year physical/cash traces; rebuild payment links and opening funds after reducing excess production.
+- Test against exhaustive coordinate replay and a counterexample to global-optimum claims; document synthetic units and calibration requirements.
 - Couple finite raw materials, energy, equipment, logistics, construction and training through shared-capability constraints and explicit withdrawals.
 - Verify complete, unique physical-payment links; reject double billing, premature capital payments and forged quantities/amounts.
 - Add five exact 1,825-period coupled scenarios and a certified transport-shortage bound, retaining synthetic assumptions and discarded quantities.

@@ -81,6 +81,10 @@ The [coupled physical and monetary study](docs/physical-circulation.md) connects
 finite deposits, energy, equipment, transport, construction and training in one
 five-year matrix. Shared capabilities and exact goods/payment links are checked
 separately from liquidity. Coefficients remain synthetic research inputs.
+Its exact integer improvement stage reduces excess starts while preserving each
+delivery and terminal reserves; all payments are recalculated. The baseline uses
+44.08% fewer power batches than the fixed-output seed. This is a synthetic
+comparison, not a calibrated savings forecast or a global optimum.
 
 ## Run the checks
 

@@ -88,3 +88,24 @@ A final reporting-only addition exposes discarded quantities; the coupled report
 was regenerated and compared again, and Clippy passed for all targets. These
 synthetic checks establish the stated program invariants, not observed national
 productivity, long-term economic stability or readiness for public deployment.
+
+## Verification record — 7 November 2026, exact plan improvement
+
+The mathematical target now has **34 passing tests**, including six trimming
+checks: fixed deliveries and indivisible batches; delayed shared capabilities and
+retirement; refreshed cached capacity after downstream work reduction; terminal
+reserves and malformed requests; 32 exhaustive-oracle scenarios with recycling and
+overflow; and a counterexample separating coordinate irreducibility from global
+optimality. The added cache-regression test and all-target Clippy were rerun after
+the full check had begun; no production code changed during that addition.
+
+The full disposable-PostgreSQL runner passed. It regenerated all three maintained
+research reports byte-for-byte, including the five paired 1,825-period comparisons;
+passed 91 PostgreSQL tests, HTTP restart/provenance, both strict-evidence checks,
+runtime privileges and backup restoration of 36 tables. Its 60-period shortage
+trial made 4,548 HTTP requests with one restart; the 35-period closed trial made
+3,901 with two restarts. Both passed; actor seeds 7/19 completed with their existing
+physical-evidence limitation still reported. No model calls or real participants
+were used. The original seed scenario values were also checked unchanged after
+refactoring payment generation, and the documentation's 20 physical table values
+were compared to the generated report.

@@ -96,3 +96,15 @@ Brand source and generated favicons live only in `assets/brand/`. README uses
 relative references; a future web build should serve or copy those same assets
 at build time. Local technology badges derive from Cargo metadata and declared
 requirements, not an unverified claim that a release is the latest available.
+
+## Offline plan improvement
+
+`optimization::trim_plan` accepts only an exactly verified seed. It reduces integer
+process starts with an incremental stock replay, cached next-period capability
+floors and terminal reserve constraints. Every accepted pass is independently
+checked against the original matrix. Process order and the pass budget are explicit;
+a no-change pass establishes coordinate irreducibility only. The coupled example
+reconstructs goods/payment links and exact opening funds after improvement. This
+module has no database access, HTTP endpoint, solver dependency or AI authority.
+The [comparison and counterexample](physical-circulation.md#reducing-excess-production-while-preserving-provision)
+explain why it is a research improvement procedure rather than a global optimizer.

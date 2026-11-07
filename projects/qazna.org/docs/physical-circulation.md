@@ -195,3 +195,119 @@ choice and priorities; objective-aware rolling optimization and sensitivity rang
 accountable ownership, entitlement and transition rules. Water extraction and many
 other upstream industries remain explicit external boundaries, rather than being
 silently claimed complete.
+
+## Reducing excess production while preserving provision
+
+The next 7 November stage adds `optimization::trim_plan`, an exact integer
+coordinate-improvement procedure. It takes a feasible seed plan and a declared
+process order. It never changes deliveries, supply, normative values, process
+recipes or capacity declarations. It only reduces the number of process starts,
+recomputes affected inventories and overflow disposal, and preserves explicit
+terminal reserve floors. In the coupled study those floors equal the seed plan's
+closing stocks for **every** resource. Saved raw deposits can remain in the ground.
+
+For a reduction `q` in process `j` started in period `t`, affected stock coordinates
+are replayed as follows (all terms use the same resource unit):
+
+```text
+available'[k,u] = closing[k,u] + discarded[k,u] + delta[k,u-1]
+               + A[k,j] * q * indicator(u=t)
+               - B[k,j] * q * indicator(u=t+lead[j])
+closing'[k,u]   = min(storage_cap[k], available'[k,u])
+discarded'[k,u] = available'[k,u] - closing'[k,u]
+delta[k,u]     = closing'[k,u] - closing[k,u]
+```
+
+Negative availability rejects a candidate. Closing stock must also cover the next
+period's withdrawal and shared capability requirement, plus the terminal floor at
+the end. Required capability stocks are computed using exact integer ceilings.
+This prevents a seemingly economical reduction in training/equipment from
+silently removing the capacity needed for a later promised service.
+
+One-coordinate closing stock is a minimum of affine functions of `q`, hence
+concave. Lower bounds on stock and capacity give a feasible interval containing
+zero. Integer bisection finds the largest allowed reduction for that coordinate.
+After each pass the original time-expanded matrix independently verifies the whole
+plan, with no numerical tolerance. An independent full-stock replay and the
+complete goods/payment checker then verify the published scenarios.
+
+The procedure visits periods in reverse order and uses an explicit process order;
+the study allows at most eight passes. `coordinate_irreducible` is set only after a
+full pass makes no change. A pass-budget stop is reported without that label.
+Neither label is a global optimum. A test supplies an unnecessary two-process round
+trip that is irreducible one coordinate at a time while both operations can be
+removed jointly. This is a documented counterexample to overclaiming the method.
+
+All payment links and cash events are rebuilt from the changed physical plan.
+Prefix-bound working measure is calculated again; a reduction in resource use does
+not guarantee a reduction in the required opening measure at every account.
+Neither transfer volume nor that opening measure is a national budget estimate.
+
+The comparisons are **retrospective**: the trimming stage sees the seed's entire
+five-year trajectory, including its realized outages. It is an improvement bound
+for a supplied trace, not an online controller that can foresee future outages.
+It preserves any seed shortage rather than solving it through changed priorities.
+Intermediate safety stocks, spoilage, alternative production routes, new choices
+and a causal rolling-horizon policy require further explicit constraints.
+
+### Measured comparison inside the synthetic model
+
+The retained original scenarios and their trimmed counterparts are in the same
+`research/coupled-results.json` report (schema version 2). The unchanged seed
+results were compared field-by-field after refactoring payment generation. All
+five trimmed scenarios finish with a no-change second pass. This certifies only
+irreducibility under the declared one-coordinate moves and reserve constraints.
+
+| Scenario | Power starts before | Power starts after | Energy discarded before | Energy discarded after | Unmet needs changed? |
+| --- | ---: | ---: | ---: | ---: | --- |
+| Baseline | 40,128,000,000 | 22,439,163,342 | 175,292,200,000 | 172,717,085 | No |
+| Transport outage | 40,128,000,000 | 22,160,880,519 | 178,047,200,000 | 172,717,138 | No |
+| Power outage | 39,798,000,000 | 22,304,062,326 | 173,362,700,000 | 172,717,027 | No |
+| Replacement disabled | 40,128,000,000 | 11,884,777,250 | 279,780,622,167 | 172,716,942 | No |
+| Training delay | 40,128,000,000 | 20,540,575,535 | 194,088,218,810 | 172,716,606 | No |
+
+A power start produces ten abstract energy units. Baseline power output falls by
+**44.0810%** and its discarded energy by **99.9015%**, relative to the deliberately
+simple fixed-output seed. Fuel extraction falls from 4,012,800,000 to 2,243,916,335
+batches (ten fuel units each). All other activity counts remain unchanged in this
+experiment. This is not a forecast of real-world savings or evidence of an optimal
+construction/training schedule.
+
+Baseline exact opening working measure falls from **2,005,344,000,000** to
+**256,691,834,280** normative units (87.1996%). These are finite-schedule prefunding
+bounds for each separately calculated trace, not public expenditure, real currency,
+a reduction of personal entitlements or proof of indefinitely repeatable balances.
+In stressed cases the treasury's own opening requirement can increase even while
+the sum across accounts decreases. Every account's bound remains in the report.
+
+Saved baseline fuel deposits increase the terminal in-ground stock from
+59,872,000,000 to 77,560,836,650 units. No terminal resource falls below its seed
+quantity. Unused external water increases because fewer power batches require it:
+1,563,757,000,000 to 1,581,445,836,658 units. This boundary-supply surplus is not an
+improvement in water abstraction: abstraction is not controlled by this model.
+It illustrates why a single unqualified “total waste” percentage would mislead.
+
+### Units and calibration gate
+
+The report labels every case `synthetic_uncalibrated`. Its population scale is an
+aggregate multiplier, not a demographic observation. Energy/fuel/material recipe
+units are abstract and must not be relabelled as measured kWh or tonnes. The water
+boundary supplies more than recipes consume; unused external water is reported
+separately from avoidable energy output. Adding those quantities would be invalid.
+
+Before presenting a calibrated five-year national plan, each input needs a source,
+region, observation year, physical unit, uncertainty range and conversion rule:
+
+| Input family | Required evidence before calibration | Current boundary |
+| --- | --- | --- |
+| Needs and population | Cohort counts, births/deaths, service norms, observed choice | Synthetic annual +5 percentage-point requirement schedule |
+| Energy | Input/output balances by carrier, losses, grid capacity, dispatch and storage | Single abstract energy resource, no inter-period storage |
+| Materials and equipment | Input-output recipes, extraction limits, maintenance, lifetimes | Aggregate recipes and one declared retirement shock |
+| Transport | Distances, load factors, fleet schedules, fuel and route capacity | Two aggregate food transport legs |
+| Construction | Bill of materials, commissioning phases, occupancy and maintenance | One abstract housing-capacity recipe |
+| Qualifications | Voluntary eligible cohorts, instructor specialisms, curriculum and attrition | One aggregate qualification pipeline |
+| Monetary norms | Approved fixed-unit registry and ownership/entitlement basis | Fixed experimental integers; no adoption decision |
+
+No empirical coefficients have been substituted without this evidence. The
+implemented result is an exact comparison within declared assumptions, ready for
+calibration and challenge rather than evidence that those assumptions are true.

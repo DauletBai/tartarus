@@ -42,7 +42,7 @@ fn movement(
         });
     }
 }
-fn study(name: &str) -> serde_json::Value {
+fn study(name: &str, trim: bool) -> serde_json::Value {
     let resources = [
         "ore_in_ground",
         "fuel_in_ground",
@@ -161,6 +161,128 @@ fn study(name: &str) -> serde_json::Value {
     let mut previous = model.initial.clone();
     let mut pipeline = vec![vec![0i64; R]; DAYS + 721];
     let mut wip = [0i64; R];
+    for day in 0..DAYS {
+        let demand = (1000 + 50 * (day / 365) as i64) * SCALE;
+        let mut data = Period {
+            supplies: vec![0; R],
+            needs: vec![0; R],
+            capacities: vec![500 * SCALE; J],
+        };
+        data.supplies[2] = 10000 * SCALE;
+        data.needs[13] = demand;
+        data.needs[15] = demand;
+        if name == "transport_outage" && (365..395).contains(&day) {
+            data.capacities[6] = 0;
+            data.capacities[8] = 0;
+        }
+        if name == "power_outage" && (600..615).contains(&day) {
+            data.capacities[1] = 0;
+        }
+        if name == "equipment_replacement_disabled" {
+            data.capacities[4] = 0;
+        }
+        let mut opening = previous.clone();
+        for e in exits.iter().filter(|e| e.period == day) {
+            assert!(opening[e.resource] >= e.quantity);
+            opening[e.resource] -= e.quantity;
+        }
+        let mut available: Vec<_> = (0..R)
+            .map(|k| opening[k] + data.supplies[k] + pipeline[day][k])
+            .collect();
+        for k in 0..R {
+            wip[k] -= pipeline[day][k];
+        }
+        let deliveries: Vec<_> = (0..R).map(|k| available[k].min(data.needs[k])).collect();
+        for k in 0..R {
+            available[k] -= deliveries[k];
+        }
+        let mut budget: Vec<_> = limits
+            .iter()
+            .map(|l| opening[l.resource] * l.units_per_stock)
+            .collect();
+        let target = [
+            0, 0, 0, 2200, 1000, 1000, 2000, 400, 320, 0, 12000, 5000, 5000, 5000, 1300, 1200,
+        ];
+        let mut activities = vec![0; J];
+        // Published annual growth is known ahead; outages are not anticipated.
+        // Preserve core energy first, then
+        // provisioning; capacity expansion/training use remaining shared resources.
+        for j in [1, 0, 11, 8, 7, 6, 5, 2, 3, 4, 9, 10] {
+            let p = &model.processes[j];
+            if day + p.lead_periods >= DAYS {
+                continue;
+            }
+            let k = p.outputs.iter().position(|&q| q > 0).unwrap();
+            let desired = if k == 3 {
+                220 * SCALE
+            } else if k == 15 {
+                ((1000 + 50 * ((day + 1) / 365) as i64) * SCALE + 9) / 10
+            } else {
+                ((target[k] * SCALE - available[k] - wip[k]).max(0) + p.outputs[k] - 1)
+                    / p.outputs[k]
+            };
+            let mut n = desired.min(data.capacities[j]);
+            if j == 4 || j == 9 || j == 10 {
+                n = n.min(SCALE);
+            }
+            for (k, &q) in p.inputs.iter().enumerate() {
+                if q > 0 {
+                    n = n.min(available[k] / q);
+                }
+            }
+            for (l, lim) in limits.iter().enumerate() {
+                if lim.activity_use[j] > 0 {
+                    n = n.min(budget[l] / lim.activity_use[j]);
+                }
+            }
+            activities[j] = n;
+            for (k, &q) in p.inputs.iter().enumerate() {
+                available[k] -= q * n;
+            }
+            for (l, lim) in limits.iter().enumerate() {
+                budget[l] -= lim.activity_use[j] * n;
+            }
+            for (k, &q) in p.outputs.iter().enumerate() {
+                pipeline[day + p.lead_periods][k] += q * n;
+                wip[k] += q * n;
+            }
+        }
+        let waste: Vec<_> = (0..R)
+            .map(|k| (available[k] - model.storage_caps[k]).max(0))
+            .collect();
+        let closing: Vec<_> = (0..R).map(|k| available[k] - waste[k]).collect();
+        previous = closing.clone();
+        model.periods.push(data);
+        plan.push(PeriodPlan {
+            activities,
+            deliveries,
+            closing,
+            discarded: waste,
+        });
+    }
+    let terminal = plan.last().unwrap().closing.clone();
+    let trim_evidence = if trim {
+        let (improved, evidence) = qazna::optimization::trim_plan(
+            &model,
+            &plan,
+            &limits,
+            &exits,
+            &terminal,
+            &[9, 4, 10, 11, 8, 7, 6, 5, 3, 2, 1, 0],
+            8,
+        )
+        .unwrap();
+        assert!(
+            improved
+                .iter()
+                .zip(&plan)
+                .all(|(a, b)| a.deliveries == b.deliveries)
+        );
+        plan = improved;
+        Some(evidence)
+    } else {
+        None
+    };
     let mut events = Vec::new();
     let mut links = Vec::new();
     let mut missing = [0i128; R];
@@ -204,36 +326,18 @@ fn study(name: &str) -> serde_json::Value {
             "Declared common-production entitlement on actual receipt",
         );
     };
-    for day in 0..DAYS {
-        let demand = (1000 + 50 * (day / 365) as i64) * SCALE;
-        let mut data = Period {
-            supplies: vec![0; R],
-            needs: vec![0; R],
-            capacities: vec![500 * SCALE; J],
-        };
-        data.supplies[2] = 10000 * SCALE;
-        data.needs[13] = demand;
-        data.needs[15] = demand;
-        if name == "transport_outage" && (365..395).contains(&day) {
-            data.capacities[6] = 0;
-            data.capacities[8] = 0;
-        }
-        if name == "power_outage" && (600..615).contains(&day) {
-            data.capacities[1] = 0;
-        }
-        if name == "equipment_replacement_disabled" {
-            data.capacities[4] = 0;
-        }
-        let mut opening = previous.clone();
-        for e in exits.iter().filter(|e| e.period == day) {
-            assert!(opening[e.resource] >= e.quantity);
-            opening[e.resource] -= e.quantity;
-        }
-        let mut available: Vec<_> = (0..R)
-            .map(|k| opening[k] + data.supplies[k] + pipeline[day][k])
-            .collect();
-        for k in 0..R {
-            wip[k] -= pipeline[day][k];
+    // Rebuild all goods links, money events and measures from the chosen plan.
+    // No seed-plan payment survives an activity change without recalculation.
+    for (day, period_plan) in plan.iter().enumerate() {
+        let data = &model.periods[day];
+        let deliveries = &period_plan.deliveries;
+        let mut completed = [0i64; R];
+        for (j, proc) in model.processes.iter().enumerate() {
+            if day >= proc.lead_periods {
+                for (k, q) in completed.iter_mut().enumerate() {
+                    *q += proc.outputs[k] * plan[day - proc.lead_periods].activities[j];
+                }
+            }
         }
         for k in [7, 14] {
             trade(
@@ -246,13 +350,11 @@ fn study(name: &str) -> serde_json::Value {
                 day,
                 0,
                 k,
-                pipeline[day][k],
+                completed[k],
             );
-            measures[2] += i128::from(pipeline[day][k]) * i128::from(VALUE[k]);
+            measures[2] += i128::from(completed[k]) * i128::from(VALUE[k]);
         }
-        let deliveries: Vec<_> = (0..R).map(|k| available[k].min(data.needs[k])).collect();
         for k in 0..R {
-            available[k] -= deliveries[k];
             missing[k] += i128::from(data.needs[k] - deliveries[k]);
             if deliveries[k] < data.needs[k] && first.is_none() {
                 first = Some(day);
@@ -279,52 +381,14 @@ fn study(name: &str) -> serde_json::Value {
                 );
             }
         }
-        let mut budget: Vec<_> = limits
-            .iter()
-            .map(|l| opening[l.resource] * l.units_per_stock)
-            .collect();
-        let target = [
-            0, 0, 0, 2200, 1000, 1000, 2000, 400, 320, 0, 12000, 5000, 5000, 5000, 1300, 1200,
-        ];
-        let mut activities = vec![0; J];
-        // Published annual growth is known ahead; outages are not anticipated.
-        // Preserve core energy first, then
-        // provisioning; capacity expansion/training use remaining shared resources.
         for j in [1, 0, 11, 8, 7, 6, 5, 2, 3, 4, 9, 10] {
             let p = &model.processes[j];
-            if day + p.lead_periods >= DAYS {
-                continue;
-            }
-            let k = p.outputs.iter().position(|&q| q > 0).unwrap();
-            let desired = if k == 3 {
-                220 * SCALE
-            } else if k == 15 {
-                ((1000 + 50 * ((day + 1) / 365) as i64) * SCALE + 9) / 10
-            } else {
-                ((target[k] * SCALE - available[k] - wip[k]).max(0) + p.outputs[k] - 1)
-                    / p.outputs[k]
-            };
-            let mut n = desired.min(data.capacities[j]);
-            if j == 4 || j == 9 || j == 10 {
-                n = n.min(SCALE);
-            }
-            for (k, &q) in p.inputs.iter().enumerate() {
-                if q > 0 {
-                    n = n.min(available[k] / q);
-                }
-            }
-            for (l, lim) in limits.iter().enumerate() {
-                if lim.activity_use[j] > 0 {
-                    n = n.min(budget[l] / lim.activity_use[j]);
-                }
-            }
-            activities[j] = n;
+            let n = period_plan.activities[j];
             starts[j] += i128::from(n);
             if n > 0 && first_departure[j].is_none() {
                 first_departure[j] = Some(day);
             }
             for (k, &q) in p.inputs.iter().enumerate() {
-                available[k] -= q * n;
                 if q > 0 && VALUE[k] > 0 {
                     trade(
                         &mut events,
@@ -340,31 +404,12 @@ fn study(name: &str) -> serde_json::Value {
                     );
                 }
             }
-            for (l, lim) in limits.iter().enumerate() {
-                budget[l] -= lim.activity_use[j] * n;
-            }
-            for (k, &q) in p.outputs.iter().enumerate() {
-                pipeline[day + p.lead_periods][k] += q * n;
-                wip[k] += q * n;
-            }
         }
-        let waste: Vec<_> = (0..R)
-            .map(|k| (available[k] - model.storage_caps[k]).max(0))
-            .collect();
-        for (total, &q) in discarded.iter_mut().zip(&waste) {
+        for (total, &q) in discarded.iter_mut().zip(&period_plan.discarded) {
             *total += i128::from(q);
         }
-        let closing: Vec<_> = (0..R).map(|k| available[k] - waste[k]).collect();
-        previous = closing.clone();
-        model.periods.push(data);
-        plan.push(PeriodPlan {
-            activities,
-            deliveries,
-            closing,
-            discarded: waste,
-        });
         if (day + 1) % 365 == 0 {
-            years.push(json!({"year":(day+1)/365,"stock":previous,"discarded":discarded.iter().map(ToString::to_string).collect::<Vec<_>>(),"unmet":missing.iter().map(ToString::to_string).collect::<Vec<_>>()}));
+            years.push(json!({"year":(day+1)/365,"stock":period_plan.closing,"discarded":discarded.iter().map(ToString::to_string).collect::<Vec<_>>(),"unmet":missing.iter().map(ToString::to_string).collect::<Vec<_>>()}));
         }
     }
     let matrix = model.compile_capabilities(&limits, &exits).unwrap();
@@ -471,7 +516,8 @@ fn study(name: &str) -> serde_json::Value {
         }
         prior = p.closing.clone();
     }
-    json!({"scenario":name,"population_scale":100_000_000,"periods":DAYS,"resources":resources,"process_names":names,"processes":model.processes,"initial":model.initial,"storage_caps":model.storage_caps,"limits":limits,"withdrawals":exits,
+    eprintln!("Verified scenario {name}, trim={trim}");
+    json!({"scenario":name,"trim_evidence":trim_evidence,"input_status":"synthetic_uncalibrated","population_scale":100_000_000,"periods":DAYS,"resources":resources,"process_names":names,"processes":model.processes,"initial":model.initial,"storage_caps":model.storage_caps,"limits":limits,"withdrawals":exits,
         "fixed_unit_measure":VALUE,"common_entitlement_per_sold_unit":margin,"owner_account":owner,
         "matrix":{"variables":matrix.objective.len(),"rows":matrix.rows.len(),"nonzero_terms":matrix.rows.iter().map(|r|r.terms.len()).sum::<usize>()},"minimum_outage_unmet_proven":infeasibility_bound,"cash_link_count":links.len(),"forged_payment_rejected":true,"physical_verification":verified,"food_objective_optimal":optimal,"first_unmet_day":first,"discarded":discarded.iter().map(ToString::to_string).collect::<Vec<_>>(),"unmet":missing.iter().map(ToString::to_string).collect::<Vec<_>>(),"activity_totals":starts.iter().map(ToString::to_string).collect::<Vec<_>>(),"first_activity":first_departure,"years":years,
         "requested_provision_measure":measures[0].to_string(),"delivered_provision_measure":measures[1].to_string(),"completed_capital_procurement_measure":measures[2].to_string(),"liquidity":bound,"money":money})
@@ -485,7 +531,7 @@ fn main() {
         "training_delay",
     ]
     .into_iter()
-    .map(study)
+    .map(|name| study(name, false))
     .collect();
     assert!(cases[0]["first_unmet_day"].is_null());
     assert!(cases[0]["food_objective_optimal"].as_bool().unwrap());
@@ -495,8 +541,29 @@ fn main() {
             .skip(1)
             .all(|c| !c["first_unmet_day"].is_null())
     );
-    let report = json!({"version":1,"kind":"synthetic_coupled_capability_study","model_calls":0,
-        "assumptions":["Synthetic aggregate coefficients, not demographic/engineering norms","Water is an external boundary supply; deposits and initial assets/stocks are explicit","Training places represent consenting eligible capacity, not people owned or traded","Qualified capacity and equipment are shared use limits, not consumed ingredients","Public asset procurement is paid only for completed equipment/buildings","Input payments follow actual consumption; incomplete work ties up opening working measure","Natural resources and people have zero commodity price in this example","All monetary norms fixed; no interest, tax, loan or later issuance","Actual missing provision remains recorded; no claim that missing goods cancel human entitlements","Money is prefunded using exact schedule bounds, not optimized globally","Inventory age/expiry, health demography, individual choice, teacher specializations and foreign trade remain open","Heuristic is not a global optimum except when a valid stated objective certificate exists"],"cases":cases});
+    let improved: Vec<_> = cases
+        .iter()
+        .map(|c| study(c["scenario"].as_str().unwrap(), true))
+        .collect();
+    let comparisons: Vec<_> = cases.iter().zip(&improved).map(|(before,after)| {
+        assert_eq!(before["unmet"], after["unmet"]);
+        assert_eq!(before["delivered_provision_measure"],after["delivered_provision_measure"]);
+        let old: Vec<i128> = before["activity_totals"].as_array().unwrap().iter().map(|x|x.as_str().unwrap().parse().unwrap()).collect();
+        let new: Vec<i128> = after["activity_totals"].as_array().unwrap().iter().map(|x|x.as_str().unwrap().parse().unwrap()).collect();
+        assert!(old.iter().zip(&new).all(|(a,b)| b<=a));
+        assert!(new[0] < old[0] && new[1] < old[1]);
+        assert!(after["discarded"][3].as_str().unwrap().parse::<i128>().unwrap()
+            < before["discarded"][3].as_str().unwrap().parse::<i128>().unwrap());
+        assert!(after["trim_evidence"]["coordinate_irreducible"].as_bool().unwrap());
+
+        json!({"scenario":before["scenario"],"deliveries_preserved":true,
+            "energy_discard_before":before["discarded"][3],"energy_discard_after":after["discarded"][3],
+            "fuel_extraction_batches_before":old[0].to_string(),"fuel_extraction_batches_after":new[0].to_string(),
+            "opening_measure_before":before["liquidity"],"opening_measure_after":after["liquidity"],
+            "trim_evidence":after["trim_evidence"]})
+    }).collect();
+    let report = json!({"version":2,"kind":"synthetic_coupled_capability_study","model_calls":0,
+        "assumptions":["Synthetic aggregate coefficients, not demographic/engineering norms","Water is an external boundary supply; deposits and initial assets/stocks are explicit","Training places represent consenting eligible capacity, not people owned or traded","Qualified capacity and equipment are shared use limits, not consumed ingredients","Public asset procurement is paid only for completed equipment/buildings","Input payments follow actual consumption; incomplete work ties up opening working measure","Natural resources and people have zero commodity price in this example","All monetary norms fixed; no interest, tax, loan or later issuance","Actual missing provision remains recorded; no claim that missing goods cancel human entitlements","Money is prefunded using exact schedule bounds, not optimized globally","Trimmed cases are retrospective fixed-delivery improvements, not causal forecasts or global optima","The original terminal stock is a lower bound in trimmed cases; all intermediate safety-stock policy remains open","Energy/fuel/material quantities are abstract recipe units, not measured kWh/tonnes; external water left unused is reported separately from energy discard","Inventory age/expiry, health demography, individual choice, teacher specializations and foreign trade remain open","Heuristic is not a global optimum except when a valid stated objective certificate exists"],"cases":cases,"improved_cases":improved,"comparisons":comparisons});
     let path = env::args()
         .nth(1)
         .unwrap_or("research/coupled-results.json".into());

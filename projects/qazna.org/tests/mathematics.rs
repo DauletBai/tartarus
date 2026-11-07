@@ -954,3 +954,394 @@ mod capabilities {
         );
     }
 }
+
+mod trimming {
+    use qazna::{horizon::*, mathematics::verify_linear, optimization::trim_plan};
+
+    // Independent full-horizon replay, deliberately not an incremental delta
+    // implementation. Recomputes every incoming batch from the entire history.
+    fn replay(
+        m: &Horizon,
+        activities: &[Vec<i64>],
+        deliveries: &[Vec<i64>],
+        exits: &[Withdrawal],
+    ) -> Option<Vec<PeriodPlan>> {
+        let mut stock = m.initial.clone();
+        let mut result = Vec::new();
+        for t in 0..m.periods.len() {
+            let mut closing = Vec::new();
+            let mut discarded = Vec::new();
+            for (k, &opening) in stock.iter().enumerate() {
+                let exit: i64 = exits
+                    .iter()
+                    .filter(|e| e.period == t && e.resource == k)
+                    .map(|e| e.quantity)
+                    .sum();
+                if opening < exit {
+                    return None;
+                }
+                let mut n = opening - exit + m.periods[t].supplies[k] - deliveries[t][k];
+                for (j, p) in m.processes.iter().enumerate() {
+                    n -= p.inputs[k] * activities[t][j];
+                    if t >= p.lead_periods {
+                        n += p.outputs[k] * activities[t - p.lead_periods][j];
+                    }
+                }
+                if n < 0 {
+                    return None;
+                }
+                closing.push(n.min(m.storage_caps[k]));
+                discarded.push((n - m.storage_caps[k]).max(0));
+            }
+            stock = closing.clone();
+            result.push(PeriodPlan {
+                activities: activities[t].clone(),
+                deliveries: deliveries[t].clone(),
+                closing,
+                discarded,
+            });
+        }
+        Some(result)
+    }
+    fn toy() -> Horizon {
+        Horizon {
+            resources: vec!["fuel".into(), "energy".into()],
+            initial: vec![100, 0],
+            storage_caps: vec![100, 0],
+            processes: vec![Process {
+                inputs: vec![1, 0],
+                outputs: vec![0, 10],
+                lead_periods: 1,
+            }],
+            periods: (0..6)
+                .map(|t| Period {
+                    supplies: vec![0, 0],
+                    needs: vec![0, if t > 0 { 13 } else { 0 }],
+                    capacities: vec![4],
+                })
+                .collect(),
+            objective_resource: 1,
+        }
+    }
+    #[test]
+    fn trim_keeps_every_delivery_and_reserve_reduces_avoidable_output() {
+        let m = toy();
+        let starts: Vec<_> = (0..6).map(|t| vec![if t < 5 { 4 } else { 0 }]).collect();
+        let delivered: Vec<_> = m.periods.iter().map(|p| p.needs.clone()).collect();
+        let seed = replay(&m, &starts, &delivered, &[]).unwrap();
+        let seed_json = serde_json::to_value(&seed).unwrap();
+        let (p, e) = trim_plan(&m, &seed, &[], &[], &[80, 0], &[0], 4).unwrap();
+        assert_eq!(e.removed_starts_by_process, vec!["10"]);
+        assert!(e.coordinate_irreducible);
+        assert_eq!(p.iter().map(|p| p.discarded[1]).sum::<i64>(), 35); // indivisible 10-unit batches
+        assert_eq!(p.last().unwrap().closing, vec![90, 0]);
+        assert_eq!(
+            p.iter().map(|p| p.deliveries.clone()).collect::<Vec<_>>(),
+            delivered
+        );
+        assert_eq!(serde_json::to_value(&seed).unwrap(), seed_json);
+        assert_eq!(
+            serde_json::to_value(
+                replay(
+                    &m,
+                    &p.iter().map(|p| p.activities.clone()).collect::<Vec<_>>(),
+                    &delivered,
+                    &[]
+                )
+                .unwrap()
+            )
+            .unwrap(),
+            serde_json::to_value(&p).unwrap()
+        );
+        let (_, budget) = trim_plan(&m, &seed, &[], &[], &[80, 0], &[0], 1).unwrap();
+        assert!(!budget.coordinate_irreducible); // budget exhaustion is not a certificate
+        let (again, e) = trim_plan(&m, &p, &[], &[], &[80, 0], &[0], 4).unwrap();
+        assert_eq!(e.accepted_changes, 0);
+        assert_eq!(
+            serde_json::to_value(again).unwrap(),
+            serde_json::to_value(p).unwrap()
+        );
+    }
+    #[test]
+    fn trim_protects_delayed_capabilities_and_future_retirement() {
+        let m = Horizon {
+            resources: vec!["raw".into(), "equipment".into(), "food".into()],
+            initial: vec![100, 0, 0],
+            storage_caps: vec![100, 10, 0],
+            processes: vec![
+                Process {
+                    inputs: vec![1, 0, 0],
+                    outputs: vec![0, 1, 0],
+                    lead_periods: 2,
+                },
+                Process {
+                    inputs: vec![1, 0, 0],
+                    outputs: vec![0, 0, 10],
+                    lead_periods: 1,
+                },
+            ],
+            periods: (0..6)
+                .map(|t| Period {
+                    supplies: vec![0; 3],
+                    needs: vec![0, 0, if t == 4 { 20 } else { 0 }],
+                    capacities: vec![3, 3],
+                })
+                .collect(),
+            objective_resource: 2,
+        };
+        let exits = vec![Withdrawal {
+            period: 3,
+            resource: 1,
+            quantity: 1,
+            basis: "Retirement before work".into(),
+        }];
+        let limits = vec![StockCapacity {
+            name: "machine".into(),
+            resource: 1,
+            units_per_stock: 2,
+            activity_use: vec![0, 1],
+        }];
+        let mut a = vec![vec![0, 0]; 6];
+        a[0][0] = 3;
+        a[3][1] = 2;
+        let d = m
+            .periods
+            .iter()
+            .map(|p| p.needs.clone())
+            .collect::<Vec<_>>();
+        let seed = replay(&m, &a, &d, &exits).unwrap();
+        let (p, _) = trim_plan(&m, &seed, &limits, &exits, &[0, 0, 0], &[0, 1], 4).unwrap();
+        assert_eq!(p[0].activities[0], 2); // one retired, one needed; cannot trim to one
+        verify_linear(
+            &m.compile_capabilities(&limits, &exits).unwrap(),
+            &m.vector(&p).unwrap(),
+            None,
+        )
+        .unwrap();
+        let mut forged = p.clone();
+        forged[0].activities[0] = 1;
+        assert!(trim_plan(&m, &forged, &limits, &exits, &[0, 0, 0], &[0, 1], 4).is_err());
+    }
+    #[test]
+    fn trimming_work_releases_the_cached_upstream_capacity_requirement() {
+        let m = Horizon {
+            resources: vec!["raw".into(), "equipment".into(), "food".into()],
+            initial: vec![100, 0, 0],
+            storage_caps: vec![100, 10, 0],
+            processes: vec![
+                Process {
+                    inputs: vec![1, 0, 0],
+                    outputs: vec![0, 1, 0],
+                    lead_periods: 2,
+                },
+                Process {
+                    inputs: vec![1, 0, 0],
+                    outputs: vec![0, 0, 10],
+                    lead_periods: 1,
+                },
+            ],
+            periods: (0..6)
+                .map(|t| Period {
+                    supplies: vec![0; 3],
+                    needs: vec![0, 0, if t == 4 { 10 } else { 0 }],
+                    capacities: vec![3, 3],
+                })
+                .collect(),
+            objective_resource: 2,
+        };
+        let exits = vec![Withdrawal {
+            period: 3,
+            resource: 1,
+            quantity: 1,
+            basis: "Retirement".into(),
+        }];
+        let limits = vec![StockCapacity {
+            name: "machine".into(),
+            resource: 1,
+            units_per_stock: 1,
+            activity_use: vec![0, 1],
+        }];
+        let mut starts = vec![vec![0, 0]; 6];
+        starts[0][0] = 3;
+        starts[3][1] = 2;
+        let d = m
+            .periods
+            .iter()
+            .map(|p| p.needs.clone())
+            .collect::<Vec<_>>();
+        let seed = replay(&m, &starts, &d, &exits).unwrap();
+        let (p, _) = trim_plan(&m, &seed, &limits, &exits, &[0, 0, 0], &[1, 0], 4).unwrap();
+        assert_eq!(p[3].activities[1], 1);
+        assert_eq!(p[0].activities[0], 2); // refreshed capacity plus one retirement
+        let fresh = replay(
+            &m,
+            &p.iter().map(|p| p.activities.clone()).collect::<Vec<_>>(),
+            &d,
+            &exits,
+        )
+        .unwrap();
+        assert_eq!(
+            serde_json::to_value(fresh).unwrap(),
+            serde_json::to_value(p).unwrap()
+        );
+    }
+
+    #[test]
+    fn trim_does_not_trade_a_terminal_reserve_for_less_production() {
+        let mut m = toy();
+        m.storage_caps[1] = 100;
+        let a: Vec<_> = (0..6).map(|t| vec![if t < 5 { 4 } else { 0 }]).collect();
+        let d = m
+            .periods
+            .iter()
+            .map(|p| p.needs.clone())
+            .collect::<Vec<_>>();
+        let seed = replay(&m, &a, &d, &[]).unwrap();
+        let floor = seed.last().unwrap().closing.clone();
+        let (p, e) = trim_plan(&m, &seed, &[], &[], &floor, &[0], 4).unwrap();
+        assert!(p.last().unwrap().closing[1] >= floor[1]);
+        assert!(e.removed_starts_by_process[0].parse::<i64>().unwrap() <= 3);
+        for (floors, order, budget) in [
+            (vec![-1, 0], vec![0], 4),
+            (vec![0], vec![0], 4),
+            (vec![101, 0], vec![0], 4),
+            (vec![0, 0], vec![0, 0], 4),
+            (vec![0, 0], vec![1], 4),
+            (vec![0, 0], vec![], 4),
+            (vec![0, 0], vec![0], 0),
+        ] {
+            assert!(trim_plan(&m, &seed, &[], &[], &floors, &order, budget).is_err());
+        }
+    }
+    #[test]
+    fn coordinate_certificate_does_not_claim_global_optimum() {
+        // A useless round trip cannot be removed one start at a time while
+        // preserving terminal A. Removing BOTH starts is feasible and better.
+        let m = Horizon {
+            resources: vec!["A".into(), "B".into()],
+            initial: vec![2, 0],
+            storage_caps: vec![2, 2],
+            processes: vec![
+                Process {
+                    inputs: vec![2, 0],
+                    outputs: vec![0, 2],
+                    lead_periods: 1,
+                },
+                Process {
+                    inputs: vec![0, 2],
+                    outputs: vec![2, 0],
+                    lead_periods: 1,
+                },
+            ],
+            periods: vec![
+                Period {
+                    supplies: vec![0; 2],
+                    needs: vec![0; 2],
+                    capacities: vec![1; 2]
+                };
+                3
+            ],
+            objective_resource: 0,
+        };
+        let d = vec![vec![0, 0]; 3];
+        let seed = replay(&m, &[vec![1, 0], vec![0, 1], vec![0, 0]], &d, &[]).unwrap();
+        let (local, e) = trim_plan(&m, &seed, &[], &[], &[2, 0], &[0, 1], 4).unwrap();
+        assert!(e.coordinate_irreducible);
+        assert_eq!(e.accepted_changes, 0);
+        let global = replay(&m, &vec![vec![0, 0]; 3], &d, &[]).unwrap();
+        verify_linear(&m.compile().unwrap(), &m.vector(&global).unwrap(), None).unwrap();
+        assert_eq!(
+            global.last().unwrap().closing,
+            local.last().unwrap().closing
+        );
+        assert!(
+            global.iter().flat_map(|p| &p.activities).sum::<i64>()
+                < local.iter().flat_map(|p| &p.activities).sum::<i64>()
+        );
+    }
+
+    #[test]
+    fn trim_matches_exhaustive_coordinate_oracle_with_recycling_and_overflow() {
+        // Seeded variants include a resource on both sides of a recipe. Exhaust
+        // every possible integer reduction; do not assume feasibility monotonicity.
+        for case in 0..32 {
+            let m = Horizon {
+                resources: vec!["raw".into(), "intermediate".into(), "service".into()],
+                initial: vec![200, 30, 0],
+                storage_caps: vec![200, 10 + case % 7, 0],
+                processes: vec![
+                    Process {
+                        inputs: vec![2, 0, 0],
+                        outputs: vec![case % 3, 3, 0],
+                        lead_periods: 1 + case as usize % 2,
+                    },
+                    Process {
+                        inputs: vec![0, 1, 0],
+                        outputs: vec![0, 0, 2],
+                        lead_periods: 1,
+                    },
+                ],
+                periods: (0..8)
+                    .map(|t| Period {
+                        supplies: vec![0, 4, 0],
+                        needs: vec![0, 0, if t > 0 { 2 } else { 0 }],
+                        capacities: vec![4, 4],
+                    })
+                    .collect(),
+                objective_resource: 2,
+            };
+            let a: Vec<_> = (0..8)
+                .map(|t| {
+                    vec![
+                        if t + m.processes[0].lead_periods < 8 {
+                            3
+                        } else {
+                            0
+                        },
+                        if t < 7 { 2 } else { 0 },
+                    ]
+                })
+                .collect();
+            let d = m
+                .periods
+                .iter()
+                .map(|p| p.needs.clone())
+                .collect::<Vec<_>>();
+            let seed = replay(&m, &a, &d, &[]).unwrap();
+            let floor = seed.last().unwrap().closing.clone();
+            let matrix = m.compile().unwrap();
+            let mut oracle = seed.clone();
+            for day in (0..8).rev() {
+                for process in [1, 0] {
+                    let mut best = oracle.clone();
+                    for q in 1..=oracle[day].activities[process] {
+                        let mut starts = oracle
+                            .iter()
+                            .map(|p| p.activities.clone())
+                            .collect::<Vec<_>>();
+                        starts[day][process] -= q;
+                        if let Some(candidate) = replay(&m, &starts, &d, &[])
+                            && candidate
+                                .last()
+                                .unwrap()
+                                .closing
+                                .iter()
+                                .zip(&floor)
+                                .all(|(a, b)| a >= b)
+                            && verify_linear(&matrix, &m.vector(&candidate).unwrap(), None).is_ok()
+                        {
+                            best = candidate;
+                        }
+                    }
+                    oracle = best;
+                }
+            }
+            let (actual, _) = trim_plan(&m, &seed, &[], &[], &floor, &[1, 0], 1).unwrap();
+            assert_eq!(
+                serde_json::to_value(actual).unwrap(),
+                serde_json::to_value(oracle).unwrap(),
+                "case {case}"
+            );
+        }
+    }
+}

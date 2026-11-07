@@ -184,3 +184,18 @@ national sector data, demographic cohorts, full upstream closure, spoilage,
 individual choice or a global optimizer. Next work should add data/units provenance
 and rolling multi-objective optimization of waste, service gaps and working funds.
 No new runtime monetary authority or ownership policy is enabled.
+
+## Exact plan improvement — 7 November 2026
+
+Gate 3 now has an integer coordinate-improvement procedure, independent whole-matrix
+verification and an exhaustive small-case oracle. Five five-year paired scenarios
+preserve every seed delivery and terminal stock floor, with fewer power/fuel starts
+and newly calculated monetary traces. A separate counterexample proves that local
+irreducibility must not be advertised as global optimality.
+
+This partially advances gate 3. It does not close the calibration or causal-planning
+gates: trimmed traces use full-horizon hindsight; seed shortages are unchanged.
+Next implement coupled/block moves or an independently verified solver candidate,
+then causal rolling windows with committed work, expiry and safety-reserve policies.
+Real sector coefficients need the input evidence listed in the
+[calibration gate](physical-circulation.md#units-and-calibration-gate).
