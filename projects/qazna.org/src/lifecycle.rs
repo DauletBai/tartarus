@@ -336,3 +336,60 @@ impl StandbyUnit {
         self.age >= self.interval || self.remaining > 0
     }
 }
+
+/// Single-resource FEFO cohorts for integration into delayed production graphs.
+/// Expiry is exclusive; timestamps belong to the caller's contiguous event clock.
+#[derive(Debug, Clone, Default, PartialEq, Eq)]
+pub struct DatedStock {
+    cohorts: BTreeMap<u32, u64>,
+}
+impl DatedStock {
+    pub fn total(&self) -> u64 {
+        self.cohorts.values().sum()
+    }
+    pub fn add(&mut self, expires: u32, quantity: u64) -> Result<(), MathError> {
+        self.total()
+            .checked_add(quantity)
+            .ok_or(MathError::Overflow)?;
+        *self.cohorts.entry(expires).or_default() += quantity;
+        Ok(())
+    }
+    pub fn expire(&mut self, day: u32) -> u64 {
+        let expired: Vec<_> = self.cohorts.range(..=day).map(|(&e, &q)| (e, q)).collect();
+        let mut total = 0;
+        for (e, q) in expired {
+            total += q;
+            self.cohorts.remove(&e);
+        }
+        total
+    }
+    pub fn usable_at(&self, day: u32) -> u64 {
+        self.cohorts
+            .iter()
+            .filter(|(e, _)| **e > day)
+            .map(|(_, q)| q)
+            .sum()
+    }
+    /// All-or-nothing FEFO selection among cohorts valid at the required time.
+    /// The returned expiry stamps must accompany any transport output.
+    pub fn take(&mut self, quantity: u64, valid_at: u32) -> Result<Vec<(u32, u64)>, MathError> {
+        if quantity > self.usable_at(valid_at) {
+            return Err(MathError::Invalid("insufficient age-qualified stock"));
+        }
+        let mut remaining = quantity;
+        let mut taken = vec![];
+        for (&expires, q) in &mut self.cohorts {
+            if expires <= valid_at || remaining == 0 {
+                continue;
+            }
+            let n = remaining.min(*q);
+            if n > 0 {
+                taken.push((expires, n));
+                *q -= n;
+                remaining -= n;
+            }
+        }
+        self.cohorts.retain(|_, q| *q > 0);
+        Ok(taken)
+    }
+}

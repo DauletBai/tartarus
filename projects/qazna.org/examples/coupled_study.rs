@@ -1,15 +1,17 @@
 //! Coupled physical capabilities and payments. Synthetic coefficients only.
+#[path = "support/integrated_lifecycle.rs"]
+mod integrated_lifecycle;
 #[path = "support/lifecycle_study.rs"]
 mod lifecycle_study;
 use qazna::{horizon::*, mathematics::*};
 use serde_json::json;
 use std::{env, fs};
-const R: usize = 18;
-const J: usize = 17;
+const R: usize = 19;
+const J: usize = 18;
 const SCALE: i64 = 100_000; // 1,000 synthetic residents scaled to 100 million.
 const DAYS: usize = 1825;
 const VALUE: [i64; R] = [
-    0, 0, 0, 100, 100, 100, 500, 10000, 0, 0, 200, 300, 600, 700, 10000, 200, 10000, 10000,
+    0, 0, 0, 100, 100, 100, 500, 10000, 0, 0, 200, 300, 600, 700, 10000, 200, 10000, 10000, 0,
 ];
 fn process(inputs: &[(usize, i64)], output: usize, quantity: i64, lead: usize) -> Process {
     let mut a = vec![0; R];
@@ -52,6 +54,8 @@ struct ReservePolicy {
     reserve_days: u32,
     loss_ppm: u32,
     storage_aware: bool,
+    integrated_lifecycle: bool,
+    age_aware_food: bool,
 }
 fn study(
     name: &str,
@@ -85,6 +89,7 @@ fn study_policy(
         "housing_day",
         "reserve_generator",
         "fuel_storage_units",
+        "completed_generator_service",
     ];
     let names = [
         "fuel_extraction",
@@ -104,6 +109,7 @@ fn study_policy(
         "reserve_generator_construction",
         "fuel_storage_construction",
         "reserve_power",
+        "generator_service",
     ];
     let processes = vec![
         process(&[(1, 10), (3, 1)], 4, 10, 1),
@@ -128,33 +134,34 @@ fn study_policy(
         process(&[(6, 10), (3, 10)], 16, 1, 30),
         process(&[(6, 10), (3, 10)], 17, 1, 30),
         process(&[(4, 1), (2, 1)], 3, 10, 1),
+        process(&[(6, 1), (3, 1)], 18, 1, 2),
     ];
     let initial = [
         1_000_000, 1_000_000, 0, 4000, 1000, 1000, 2000, 300, 200, 120, 6000, 4000, 4000, 4000,
-        1000, 1000, 0, 0,
+        1000, 1000, 0, 0, 0,
     ];
     let storage = [
         1_000_000, 1_000_000, 0, 0, 20000, 2000, 3000, 1000, 1000, 120, 15000, 6000, 6000, 6000,
-        2000, 0, 1000, 1000,
+        2000, 0, 1000, 1000, 0,
     ];
     let limits = vec![
         StockCapacity {
             name: "qualified_hours".into(),
             resource: 8,
             units_per_stock: 8,
-            activity_use: vec![1, 1, 1, 2, 8, 2, 2, 2, 2, 8, 4, 1, 4, 4, 8, 8, 1],
+            activity_use: vec![1, 1, 1, 2, 8, 2, 2, 2, 2, 8, 4, 1, 4, 4, 8, 8, 1, 4],
         },
         StockCapacity {
             name: "equipment_use".into(),
             resource: 7,
             units_per_stock: 4,
-            activity_use: vec![1, 1, 1, 1, 2, 1, 2, 1, 2, 2, 0, 0, 4, 4, 2, 2, 1],
+            activity_use: vec![1, 1, 1, 1, 2, 1, 2, 1, 2, 2, 0, 0, 4, 4, 2, 2, 1, 1],
         },
         StockCapacity {
             name: "housing_use".into(),
             resource: 14,
             units_per_stock: 1,
-            activity_use: vec![0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 10, 0, 0, 0, 0, 0],
+            activity_use: vec![0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 10, 0, 0, 0, 0, 0, 0],
         },
     ];
     let mut limits = limits;
@@ -231,6 +238,9 @@ fn study_policy(
     let mut plan: Vec<PeriodPlan> = vec![];
     let mut previous = model.initial.clone();
     let mut pipeline = qazna::replanning::ProductionPipeline::new(R).unwrap();
+    let mut lifecycle = policy
+        .integrated_lifecycle
+        .then(|| integrated_lifecycle::Lifecycle::new(&model.initial));
     for day in 0..DAYS {
         let demand = (1000 + 50 * (day / 365) as i64) * SCALE;
         let mut data = Period {
@@ -242,6 +252,9 @@ fn study_policy(
             for j in 14..J {
                 data.capacities[j] = 0;
             }
+        }
+        if !policy.integrated_lifecycle || name == "maintenance_disabled" {
+            data.capacities[17] = 0;
         }
         data.supplies[2] = 10000 * SCALE;
         data.needs[13] = demand;
@@ -265,7 +278,9 @@ fn study_policy(
             data.capacities[4] = 0;
         }
         let supply_failure = match name {
-            "supply_30" => (390..420).contains(&day),
+            "supply_30" | "maintenance_disabled" | "lifecycle_compound" => {
+                (390..420).contains(&day)
+            }
             "supply_60" => (390..450).contains(&day),
             "supply_90" => (390..480).contains(&day),
             "supply_repeat" => (390..420).contains(&day) || (440..470).contains(&day),
@@ -292,22 +307,55 @@ fn study_policy(
             opening[e.resource] -= e.quantity;
         }
         let arriving = pipeline.advance(day).unwrap();
+        let mut lifecycle_loss = [0i64; 4];
+        if let Some(l) = &mut lifecycle {
+            lifecycle_loss = l.advance(
+                day,
+                &arriving,
+                matches!(name, "transport_damage" | "lifecycle_compound")
+                    && (390..420).contains(&day),
+            );
+            data.capacities[16] = data.capacities[16].min(l.generator_capacity(day));
+            if name == "correlated_backup" && (390..420).contains(&day) {
+                data.capacities[1] = 0;
+                data.capacities[16] = 0;
+            }
+            data.needs[18] = arriving[18];
+        }
         let mut available: Vec<_> = (0..R)
             .map(|k| opening[k] + data.supplies[k] + arriving[k])
             .collect();
+        for k in 10..14 {
+            available[k] -= lifecycle_loss[k - 10];
+            if let Some(l) = &lifecycle {
+                assert_eq!(available[k], l.food_total(k));
+            }
+        }
         let deliveries: Vec<_> = (0..R).map(|k| available[k].min(data.needs[k])).collect();
         for k in 0..R {
             available[k] -= deliveries[k];
+            if (10..14).contains(&k)
+                && let Some(l) = &mut lifecycle
+            {
+                l.consume(k, deliveries[k], day);
+            }
         }
         let mut budget: Vec<_> = limits
             .iter()
             .map(|l| opening[l.resource] * l.units_per_stock)
             .collect();
         let mut target = [
-            0, 0, 0, 2200, 1000, 1000, 2000, 400, 320, 0, 12000, 5000, 5000, 5000, 1300, 1200, 0, 0,
+            0, 0, 0, 2200, 1000, 1000, 2000, 400, 320, 0, 12000, 5000, 5000, 5000, 1300, 1200, 0,
+            0, 0,
         ];
         if policy.food_buffers {
             target[10..14].copy_from_slice(&storage[10..14]);
+        }
+        if policy.age_aware_food {
+            // Three current-demand days, including committed output. The five-day
+            // meal life cannot support the previous six-day static food target.
+            target[12] = 3 * (1000 + 50 * (day / 365) as i64);
+            target[13] = target[12];
         }
         if policy.equipment_target {
             target[7] = 580;
@@ -318,11 +366,11 @@ fn study_policy(
             target[17] = ((target[4] - 2000).max(0) + 999) / 1000;
         }
         let order = if policy.storage_aware && available[4] >= 440 * SCALE {
-            [1, 16, 11, 8, 13, 7, 6, 12, 5, 0, 2, 3, 4, 9, 10, 14, 15]
+            [17, 1, 16, 11, 8, 13, 7, 6, 12, 5, 0, 2, 3, 4, 9, 10, 14, 15]
         } else if policy.early_training {
-            [1, 16, 0, 11, 10, 8, 13, 7, 6, 12, 5, 2, 3, 4, 9, 14, 15]
+            [17, 1, 16, 0, 11, 10, 8, 13, 7, 6, 12, 5, 2, 3, 4, 9, 14, 15]
         } else {
-            [1, 16, 0, 11, 8, 13, 7, 6, 12, 5, 2, 3, 4, 9, 10, 14, 15]
+            [17, 1, 16, 0, 11, 8, 13, 7, 6, 12, 5, 2, 3, 4, 9, 10, 14, 15]
         };
         let mut activities = vec![0; J];
         // Published annual growth is known ahead; outages are not anticipated.
@@ -337,7 +385,9 @@ fn study_policy(
                 continue;
             }
             let k = p.outputs.iter().position(|&q| q > 0).unwrap();
-            let desired = if k == 3 {
+            let desired = if j == 17 {
+                lifecycle.as_ref().map_or(0, |l| l.service_need(day))
+            } else if k == 3 {
                 if j == 16 {
                     (220 * SCALE - activities[1]).max(0)
                 } else {
@@ -364,6 +414,18 @@ fn study_policy(
                     n = n.min(available[k] / q);
                 }
             }
+            if let Some(l) = &lifecycle {
+                let valid_at = if matches!(j, 6 | 8 | 12 | 13) {
+                    day + p.lead_periods
+                } else {
+                    day
+                };
+                for k in 10..14 {
+                    if p.inputs[k] > 0 {
+                        n = n.min(l.eligible(k, valid_at) / p.inputs[k]);
+                    }
+                }
+            }
             if j == 16 {
                 n = n.min((available[4] - 440 * SCALE).max(0));
             }
@@ -387,15 +449,30 @@ fn study_policy(
                 budget[l] -= lim.activity_use[j] * n;
             }
             if n > 0 {
+                if let Some(l) = &mut lifecycle {
+                    if matches!(j, 5 | 6 | 7 | 8 | 12 | 13) {
+                        l.start_food(day, j, p.lead_periods, p.outputs[k] * n);
+                    }
+                    if j == 17 {
+                        l.start_service(day, n);
+                    }
+                }
                 assert!(pipeline.commit(day, j, p, n).unwrap());
             }
         }
         let mut effective_storage = model.storage_caps.clone();
         effective_storage[4] = effective_storage[4].min(2000 * SCALE + 1000 * available[17]);
-        let waste: Vec<_> = (0..R)
+        let mut waste: Vec<_> = (0..R)
             .map(|k| (available[k] - effective_storage[k]).max(0))
             .collect();
         let closing: Vec<_> = (0..R).map(|k| available[k] - waste[k]).collect();
+        for k in 10..14 {
+            if let Some(l) = &mut lifecycle {
+                l.consume(k, waste[k], day);
+                assert_eq!(l.food_total(k), closing[k]);
+            }
+            waste[k] += lifecycle_loss[k - 10];
+        }
         previous = closing.clone();
         model.periods.push(data);
         plan.push(PeriodPlan {
@@ -404,6 +481,9 @@ fn study_policy(
             closing,
             discarded: waste,
         });
+    }
+    if let Some(l) = &lifecycle {
+        assert!(l.is_drained());
     }
     assert!(pipeline.pending().iter().all(|&q| q == 0));
     let terminal = plan.last().unwrap().closing.clone();
@@ -527,7 +607,7 @@ fn study_policy(
                 );
             }
         }
-        for j in [1, 16, 0, 11, 8, 13, 7, 6, 12, 5, 2, 3, 4, 9, 10, 14, 15] {
+        for j in [17, 1, 16, 0, 11, 8, 13, 7, 6, 12, 5, 2, 3, 4, 9, 10, 14, 15] {
             let p = &model.processes[j];
             let n = period_plan.activities[j];
             starts[j] += i128::from(n);
@@ -544,7 +624,7 @@ fn study_policy(
                             resource: k,
                         },
                         day,
-                        if j == 10 {
+                        if j == 10 || j == 17 {
                             0
                         } else if j == 12 {
                             8
@@ -723,7 +803,7 @@ fn study_policy(
     }
     eprintln!("Verified scenario {name}, trim={trim}");
     (
-        json!({"scenario":name,"reserve_policy":policy,"reserve_target_minimum":reserve_target,"housing_outage_certificate":housing_certificate,"rerouting":reroute,"trim_evidence":trim_evidence,"input_status":"synthetic_uncalibrated","population_scale":100_000_000,"periods":DAYS,"resources":resources,"process_names":names,"processes":model.processes,"initial":model.initial,"storage_caps":model.storage_caps,"built_storage":stores,"limits":limits,"withdrawals":exits,
+        json!({"scenario":name,"integrated_lifecycle":lifecycle.as_ref().map(|l|json!({"expired":l.expired,"transport_damage":l.damaged,"maintenance_starts":l.maintenance_starts})),"reserve_policy":policy,"reserve_target_minimum":reserve_target,"housing_outage_certificate":housing_certificate,"rerouting":reroute,"trim_evidence":trim_evidence,"input_status":"synthetic_uncalibrated","population_scale":100_000_000,"periods":DAYS,"resources":resources,"process_names":names,"processes":model.processes,"initial":model.initial,"storage_caps":model.storage_caps,"built_storage":stores,"limits":limits,"withdrawals":exits,
         "fixed_unit_measure":VALUE,"common_entitlement_per_sold_unit":margin,"owner_account":owner,
         "matrix":{"variables":matrix.objective.len(),"rows":matrix.rows.len(),"nonzero_terms":matrix.rows.iter().map(|r|r.terms.len()).sum::<usize>()},"minimum_outage_unmet_proven":infeasibility_bound,"outage_bound_scope":if infeasibility_bound.is_some(){Some("fixed_route_policy_no_reserve_meal_dispatch")}else{None},"cash_link_count":links.len(),"forged_payment_rejected":true,"physical_verification":verified,"food_objective_optimal":optimal,"first_unmet_day":first,"discarded":discarded.iter().map(ToString::to_string).collect::<Vec<_>>(),"unmet":missing.iter().map(ToString::to_string).collect::<Vec<_>>(),"activity_totals":starts.iter().map(ToString::to_string).collect::<Vec<_>>(),"first_activity":first_departure,"years":years,
         "requested_provision_measure":measures[0].to_string(),"delivered_provision_measure":measures[1].to_string(),"completed_capital_procurement_measure":measures[2].to_string(),"liquidity":bound,"money":money}),
@@ -869,7 +949,7 @@ fn main() {
         "normal":normal,"transport_outage":recovered,"long_fixed":long_fixed,"long_recovery":long_recovered});
     let joint_planning = joint_reserve_search();
     let reserve_lifecycle = reserve_lifecycle_study();
-    let report = json!({"version":7,"food_asset_lifecycle":lifecycle_study::study(),"reserve_lifecycle":reserve_lifecycle,"joint_planning":joint_planning,"kind":"synthetic_coupled_capability_study","model_calls":0,
+    let report = json!({"version":8,"integrated_lifecycle_graph":integrated_lifecycle_study(),"food_asset_lifecycle":lifecycle_study::study(),"reserve_lifecycle":reserve_lifecycle,"joint_planning":joint_planning,"kind":"synthetic_coupled_capability_study","model_calls":0,
         "assumptions":["Synthetic aggregate coefficients, not demographic/engineering norms","Water is an external boundary supply; deposits and initial assets/stocks are explicit","Training places represent consenting eligible capacity, not people owned or traded","Qualified capacity and equipment are shared use limits, not consumed ingredients","Public asset procurement is paid only for completed equipment/buildings","Input payments follow actual consumption; incomplete work ties up opening working measure","Natural resources and people have zero commodity price in this example","All monetary norms fixed; no interest, tax, loan or later issuance","Actual missing provision remains recorded; no claim that missing goods cancel human entitlements","Money is prefunded using exact schedule bounds, not optimized globally","Trimmed cases are retrospective fixed-delivery improvements, not causal forecasts or global optima","Recovery decisions use current observed capacities, stocks and committed output; no future outage duration is provided","Reserve routes take two periods and four shared equipment/skill units per batch; synthetic capacity is declared in every comparison","The original terminal stock is a lower bound in trimmed cases; all intermediate safety-stock policy remains open","Energy/fuel/material quantities are abstract recipe units, not measured kWh/tonnes; external water left unused is reported separately from energy discard","The 18-resource traces do not include food expiry or maintenance; the separate food_asset_lifecycle submodel tests those mechanisms; health demography, individual choice, teacher specializations and foreign trade remain open","Heuristic is not a global optimum except when a valid stated objective certificate exists"],"cases":cases,"improved_cases":improved,"comparisons":comparisons,"recovery":recovery,"common_funding":common_funding});
     let path = env::args()
         .nth(1)
@@ -1077,6 +1157,8 @@ fn reserve_lifecycle_study() -> serde_json::Value {
             reserve_days: days,
             loss_ppm: 1000,
             storage_aware,
+            integrated_lifecycle: false,
+            age_aware_food: false,
         };
         let mut results = vec![];
         let mut traces = vec![];
@@ -1278,4 +1360,103 @@ fn reserve_lifecycle_study() -> serde_json::Value {
             "Restart floor is protected from backup dispatch, not exempt from physical storage loss",
             "The experiment is not food-expiry modelling or a guarantee against unlimited starvation",
             "No new money is issued during any replay; every physical shortage remains visible"]})
+}
+
+/// Lifecycle constraints now affect starts, input consumption and all cash links
+/// of the complete graph. A trace verifier is still not a lifecycle LP optimizer.
+fn integrated_lifecycle_study() -> serde_json::Value {
+    let policy = ReservePolicy {
+        food_buffers: true,
+        equipment_target: true,
+        reserve_days: 30,
+        loss_ppm: 1000,
+        storage_aware: true,
+        integrated_lifecycle: true,
+        age_aware_food: true,
+        ..ReservePolicy::default()
+    };
+    let (fixed_targets, _, _) = study_policy(
+        "baseline",
+        false,
+        true,
+        ReservePolicy {
+            age_aware_food: false,
+            ..policy
+        },
+    );
+    let names = [
+        "baseline",
+        "supply_30",
+        "supply_repeat",
+        "transport_damage",
+        "lifecycle_compound",
+        "correlated_backup",
+        "maintenance_disabled",
+    ];
+    let mut results = vec![];
+    let mut schedules = vec![];
+    let mut baseline = vec![];
+    let mut prefixes = 0;
+    for name in names {
+        let (r, trace, events) = study_policy(name, false, true, policy);
+        if name == "baseline" {
+            baseline = trace.clone();
+        } else if name != "maintenance_disabled" {
+            assert_eq!(
+                serde_json::to_value(&trace[..390]).unwrap(),
+                serde_json::to_value(&baseline[..390]).unwrap()
+            );
+            prefixes += 1;
+        }
+        assert!(r["physical_verification"]["feasible"].as_bool().unwrap());
+        assert!(r["money"]["first_blocked_event"].is_null());
+        results.push(r);
+        schedules.push(events);
+    }
+    let views: Vec<_> = names
+        .iter()
+        .zip(&schedules)
+        .map(|(n, s)| (*n, s.as_slice()))
+        .collect();
+    let envelope = common_schedule_opening(J + 2, &views).unwrap();
+    let opening: Vec<u64> = envelope
+        .minimum_opening_by_account
+        .iter()
+        .map(|s| s.parse().unwrap())
+        .collect();
+    let mut monetary = vec![];
+    for (name, events) in &views {
+        let replay = replay_schedule(&opening, events, &[]).unwrap();
+        assert!(replay.first_blocked_event.is_none());
+        assert_eq!(replay.closing[1], "0");
+        monetary.push(json!({"scenario":name,"replay":replay}));
+    }
+    assert!(
+        results[0]["integrated_lifecycle"]["maintenance_starts"]
+            .as_i64()
+            .unwrap()
+            > 0
+    );
+    assert_eq!(results[6]["integrated_lifecycle"]["maintenance_starts"], 0);
+    assert!(
+        results[3]["integrated_lifecycle"]["transport_damage"]
+            .as_array()
+            .unwrap()
+            .iter()
+            .any(|q| q.as_u64().unwrap() > 0)
+    );
+    json!({"scope":"full_19_resource_18_process_graph_with_dated_food_and_constructed_generator_service",
+        "periods":DAYS,"fixed_target_counterexample":fixed_targets,"results":results,"common_opening":envelope,"common_money_replay":monetary,
+        "same_observation_prefix_checks":prefixes,
+        "assumptions":["Grain expires 90 days after harvest; cooked meals expire five days after cooking completion; initial stock starts at age zero",
+        "Transport preserves source expiry; cooking consumes valid grain and creates a newly dated cooked product; this is a synthetic process rule, not food-safety certification",
+        "Expired stock and observed transit damage are explicit discarded quantities in the same physical matrix; damaged/lost goods do not become resident receipts",
+        "Damage is ceil(10% per arriving transport cohort) during the declared shock; it is not silently substituted into recipe yields",
+        "Backup cohorts are created only from completed generator production, usable next period; calendar maintenance due after 20 available-age days",
+        "Service consumes one metal and one energy per generator unit, four shared qualified-hours and one equipment-use unit at start, with two-period turnaround",
+        "Service labour is front-loaded at start in this graph; multi-day labour reservations in the isolated maintenance test are not yet carried into the graph",
+        "Completed service is consumed internally at zero commodity measure, not counted as human entitlement; service inputs are funded by common treasury and checked as process inputs",
+        "Age eligibility and service history are additional deterministic trace guards; the aggregate LP matrix alone does not prove their validity for a different plan",
+        "Meals at kitchen and destination target three current-demand days including committed output; fixed six-thousand-unit targets are retained as a baseline counterexample; global target optimization remains open",
+        "All quantities and norms synthetic; cash envelopes conditional on declared schedules, no later issuance; live runtime unchanged"]})
 }

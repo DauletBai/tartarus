@@ -36,3 +36,17 @@ git push origin codex/qazna-rust-provisioning
 `update_manifest.py` updates only Qazna/CI entries and preserves unrelated manifest entries. Review the staged paths before committing. Changes to historical migrations are not allowed. Do not merge or force-push without authorization. Keep published commits and the local branch synchronized; verify the remote head and CI result before claiming publication is complete.
 
 IDE decorations show Git working-tree state, not whether a file has ever been edited. New files normally appear as untracked/added and edited tracked files as modified; exact colors depend on the IDE and theme. Once committed, those marks disappear because the working tree is clean. A refresh or reopening the workspace may be needed after the initial Git setup.
+
+## Publication after PR #1
+
+PR #1 was merged on 7 November 2026 at `4e859a5`. The next lifecycle stage is
+published from the separate project-scoped worktree on
+`codex/qazna-lifecycle-integration`. The original author workspace is deliberately
+left on its existing branch with the edited project files preserved; it is not a
+clean checkout of this new branch. Do not reset it or replace its manuscript README.
+
+For the next-stage publication, copy only the reviewed project files into the
+separate worktree, verify them against the tested source, regenerate its manifest,
+and commit/push that development branch. Check its actual remote commit before
+claiming synchronization. Reconcile the original workspace separately with a
+complete backup and review of its local files.

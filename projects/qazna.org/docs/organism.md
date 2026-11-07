@@ -82,3 +82,11 @@ and standby equipment needs material and labour for maintenance. The offline
 [lifecycle submodel](physical-circulation.md#dated-food-transport-loss-and-standby-maintenance)
 records these losses and their service consequences explicitly. Neither a large
 stock figure nor installed backup capacity alone establishes continuity of care.
+
+The integrated graph now represents that upkeep inside production itself:
+constructed backup capacity expires operationally until serviced; service consumes
+metal, energy and shared work capacity. Food circulation carries original lot
+expiry through transport. Actual losses affect production decisions and monetary
+schedules. The three-day meal-buffer candidate improves service while leaving
+substantial food expiry, so care and continuity still require better coordination,
+not just an enlarged reserve or a larger accounting balance.

@@ -7,7 +7,7 @@ model, not a calibrated national plan or an autonomous production controller.
 
 ## What is connected
 
-The schema-7 report retains a coupled model with 18 resource/capability dimensions, 17 processes and 1,825 daily
+The schema-8 report has a coupled model with 19 resource/capability dimensions, 18 processes and 1,825 daily
 periods. A synthetic cohort of 1,000 residents is scaled by 100,000 to the stated
 100-million population scale. This is aggregate arithmetic, not individual agents
 or an estimate of actual Kazakhstan needs. Annual requirements grow by five
@@ -33,6 +33,7 @@ schedule is declared in advance; outages are not anticipated by the heuristic.
 | Reserve generator construction | Metal, energy, shared equipment/work capacity | Reserve generator | 30 |
 | Fuel storage construction | Metal, energy, shared equipment/work capacity | Storage unit | 30 |
 | Reserve power | Fuel, water, completed generator capacity | Energy | 1 |
+| Generator service | Metal, energy, shared qualified/equipment capacity | Internally consumed completed service | 2 |
 
 Delays and coefficients are experimental assumptions, not observed curricula,
 engineering specifications or nutrition standards. The power process represents
@@ -92,9 +93,9 @@ The example includes an equipment retirement shock and a withdrawal of qualified
 availability in period 400. Baseline replacement and training can prepare for these
 declared events. Specific retirement quantities are scenario assumptions.
 
-The coupled ordinary case has **129,575 variables and 138,702 rows**, including
+The coupled ordinary case has **136,875 variables and 146,002 rows**, including
 four shared-capacity constraints per period, constructed fuel-storage constraints
-and withdrawal guards. It has 393,841 nonzero terms. Daily storage-loss withdrawals
+and withdrawal guards. It has 415,738 nonzero terms. Daily storage-loss withdrawals
 add 1,824 prior-stock guards; longer training delays also change the matrix. The
 former 16-resource/14-process configuration had 113,150 variables and 118,627 rows;
 its numerical service and circulation results are retained with inactive extension
@@ -896,3 +897,119 @@ maintenance energy, quality/recall, dispatch/receipt attestations, and different
 repair priorities. Service availability, finite shared inputs and physical
 shortfalls must remain separate from sufficient accounting balances. The live
 runtime remains unchanged and receives no automatic allocation or issuance power.
+
+## Integrating lifecycle constraints with the complete graph
+
+The schema-8 experiment adds `integrated_lifecycle_graph`. It uses the full
+raw-material, energy, equipment, transport, construction and training model,
+expanded to **19 resources and 18 processes**. The additional resource is completed
+generator service and the additional process consumes metal and energy to perform
+that service. Dated food is no longer an unrelated boundary-supply calculation.
+Every changed start, input consumption and actual delivery generates a freshly
+verified monetary schedule in the same graph.
+
+### Age-qualified physical flow
+
+For resource `k`, expiry cohort `e` and day `t`, usable stock obeys `e > t`.
+Dispatch of a cohort through a route with delay `L` additionally requires
+`e > t + L`. FEFO chooses the earliest eligible expiry first. Transport preserves
+that expiry; it never resets shelf life. Farming creates grain with a synthetic
+90-day life. Cooking consumes valid grain and creates a new cooked-food cohort
+with five days of life after completion. The latter is an explicit processing
+assumption, not food-safety certification.
+
+Cohort expiry and observed transport damage are included in the same daily matrix
+as discarded physical quantities:
+
+```text
+previous stock - explicit withdrawals + external supply + gross completions
+    = usable closing stock + actual deliveries + production inputs
+      + expiry + transport damage + other discard
+```
+
+Loss occurs before consumption. A damaged or expired unit cannot appear as a
+resident receipt. Input payments for an operation that later loses output remain
+recorded: loss is not financed by inventing goods or silently deleting earlier
+payments. In the shock scenario, transport loses `ceil(q / 10)` per arriving
+cohort. Conservation counts damage first and expiration of the remaining quantity
+second, without double counting.
+
+The aggregate LP alone cannot establish a lot's age: it is checked jointly with
+an explicit cohort replay. Changing a candidate plan requires rerunning both
+checks. `DatedStock` is tested against individual-unit selection, including exact
+expiry boundaries, ineligible dispatch, overflow and failed-operation atomicity.
+
+### Endogenous maintenance
+
+Generator cohorts exist only after the model's generator-construction process
+completes. They become usable the following period. After 20 calendar days a
+cohort is overdue and contributes zero backup capacity until serviced. A service
+start consumes one metal unit and one energy unit per generator unit, shares four
+qualified-hours and one equipment-use unit with the other production processes,
+and takes two periods to complete. Metal is supplied by the model's ore/metal
+chain, not an inexhaustible spare-parts boundary.
+
+Completed service is used internally, with zero commodity measure. It is not a
+resident's basic need. Service input costs are paid from the common treasury and
+included in the same complete goods/payment-link validation. The separate
+constructed-generator stock remains in place while unavailable; maintenance does
+not fabricate a second generator.
+
+Labour is charged at service start in this graph. This is a front-loaded synthetic
+work/turnaround model; the separate standby example's per-day service-work
+reservations have not yet been integrated. Maintenance quality, specialised spare
+manufacture and unplanned repair time also remain open.
+
+### Bounded comparison
+
+Seven five-year scenarios share one initial physical state and policy: normal,
+30-day fuel/primary-power loss, repeated loss, transport damage, combined loss,
+correlated primary/backup outage and disabled maintenance. Five pairs have
+identical physical decisions before day 390; disabled maintenance is an explicit
+policy intervention from the outset. A fixed-target normal case is retained as
+an eighth run and counterexample. The candidate meal policy targets three current
+demand days at kitchen/destination, including committed output, rather than the
+previous static 6,000-unit target. This is a tested heuristic, not an optimal
+stock norm.
+
+For every scenario, the full matrix is feasible, physical balances and shared
+capacities are replayed, cash links are complete, and the ordered money schedule
+is reconstructed. A componentwise common opening vector is calculated across the
+seven schedules; every schedule is then replayed with that same vector, no later
+issuance and zero resident closing balance. The vector is conditional on the
+specified schedules and fixed normative measures, not a forecast of a state's
+budget or a guarantee that no physical shortages occur.
+
+The prior numerical cases are retained with an inactive service dimension. This
+stage changes neither live reservation rules nor monetary policy. Next priorities
+are an independent optimisation candidate for age-aware stocks, time-distributed
+maintenance capacity, and calibration of shelf life, actual resource recipes and
+service guarantees.
+
+The integrated run produced the following exact synthetic outcomes (food and
+housing are separate physical dimensions; do not add them):
+
+| Scenario, three-demand-day meal policy | Unmet food | Unmet housing service |
+| --- | ---: | ---: |
+| Normal | 0 | 0 |
+| 30-day fuel/primary-power interruption | 0 | 0 |
+| Repeated interruption | 0 | 0 |
+| Transport damage | 0 | 0 |
+| Combined fuel/power interruption and transport damage | 0 | 0 |
+| Correlated primary and backup outage | 3,045,000,000 | 3,150,000,000 |
+| Generator maintenance disabled | 3,045,000,000 | 3,150,000,000 |
+
+The static-target normal counterexample leaves **23,423,996,290** food units unmet
+and expires **53,939,908,320** food units. The three-day normal case serves all
+modelled needs but still expires **33,580,000,000** units. Service coverage therefore
+does not establish efficient stock management; age-aware target optimisation and
+better coordination between cooking and delivery are still necessary.
+
+Normal-case opening measure changes from **35,222,360,721,160** in the static-target
+counterexample to **22,374,208,912,770** in the three-day candidate. The common
+componentwise opening envelope for the seven candidate schedules is
+**22,705,133,512,370**. It settles **436,726** movements without later issuance,
+including the two scenarios with physical shortages. These are synthetic normative
+units, not a currency valuation or a real-state fiscal estimate. Initial vectors,
+annual stocks, shortages, exact links, schedule bounds and replay outcomes are
+recorded in the existing JSON report.

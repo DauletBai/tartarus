@@ -38,7 +38,8 @@ The active project is this directory in Tartarus. The separate [DauletBai/qazna.
 The [food and standby lifecycle study](docs/physical-circulation.md#dated-food-transport-loss-and-standby-maintenance)
 adds dated batches, FEFO, transport damage and finite-resource maintenance. Its 32
 five-year submodel runs preserve expiry, failures and unmet needs explicitly;
-integration into the full physical/monetary model and live service remains open.
+the full graph now includes a separate integrated comparison with exact cash
+replay. Live service integration remains open.
 
 ## Implemented capabilities
 
