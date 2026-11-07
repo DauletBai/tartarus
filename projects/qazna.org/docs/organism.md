@@ -90,3 +90,16 @@ expiry through transport. Actual losses affect production decisions and monetary
 schedules. The three-day meal-buffer candidate improves service while leaving
 substantial food expiry, so care and continuity still require better coordination,
 not just an enlarged reserve or a larger accounting balance.
+
+
+## Selected food-reserve form
+
+The author's refined requirement is a preserved-food inventory: dried, sealed or
+otherwise appropriately processed product, with no fresh perishable warehouse
+stock in the target scenario. Historical fresh-food traces remain only as
+comparators. The reserve covers both disruption and restart/delivery lead time;
+FEFO rotation connects it to ordinary consumption. Two storage constructions,
+processing energy and packaging material are explicit in the offline graph.
+The model distinguishes stock duration from nutrient adequacy and local access.
+See [preserved-food design](physical-circulation.md#preserved-food-reserves-the-target-architecture)
+for tested outcomes, source qualifications and uncalibrated costs.

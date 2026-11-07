@@ -9,6 +9,7 @@ struct GeneratorCohort {
 }
 pub struct Lifecycle {
     food: [DatedStock; 4],
+    product_life: u32,
     pending: BTreeMap<usize, Vec<(usize, u32, u64, bool)>>,
     generators: Vec<GeneratorCohort>,
     pub expired: [u64; 4],
@@ -17,14 +18,22 @@ pub struct Lifecycle {
 }
 impl Lifecycle {
     pub fn new(initial: &[i64]) -> Self {
+        Self::preserved(initial, 5)
+    }
+    pub fn preserved(initial: &[i64], product_life: u32) -> Self {
+        assert!(product_life > 0);
         let mut food: [DatedStock; 4] = std::array::from_fn(|_| DatedStock::default());
         for k in 0..4 {
             food[k]
-                .add(if k < 2 { 90 } else { 5 }, initial[k + 10] as u64)
+                .add(
+                    if k < 2 { 90 } else { product_life },
+                    initial[k + 10] as u64,
+                )
                 .unwrap();
         }
         Self {
             food,
+            product_life,
             pending: BTreeMap::new(),
             generators: vec![],
             expired: [0; 4],
@@ -84,6 +93,17 @@ impl Lifecycle {
     pub fn eligible(&self, k: usize, day: usize) -> i64 {
         self.food[k - 10].usable_at(day as u32) as i64
     }
+    pub fn position_at(&self, k: usize, day: usize) -> i64 {
+        self.eligible(k, day)
+            + self
+                .pending
+                .iter()
+                .filter(|(due, _)| **due <= day)
+                .flat_map(|(_, lots)| lots)
+                .filter(|(index, expiry, _, _)| *index == k - 10 && *expiry > day as u32)
+                .map(|(_, _, q, _)| *q as i64)
+                .sum::<i64>()
+    }
     pub fn consume(&mut self, k: usize, q: i64, day: usize) {
         self.food[k - 10].take(q as u64, day as u32).unwrap();
     }
@@ -133,7 +153,16 @@ impl Lifecycle {
             6 | 12 => (1, self.food[0].take(q, due as u32).unwrap(), true),
             7 => {
                 self.food[1].take(q, day as u32).unwrap();
-                (2, vec![(due as u32 + 5, q)], false)
+                (
+                    2,
+                    vec![(
+                        (due as u32)
+                            .checked_add(self.product_life)
+                            .expect("product expiry overflow"),
+                        q,
+                    )],
+                    false,
+                )
             }
             8 | 13 => (3, self.food[2].take(q, due as u32).unwrap(), true),
             _ => panic!("not a food process"),
@@ -258,5 +287,49 @@ mod tests {
         let mut arrivals = vec![0; 19];
         arrivals[13] = 1;
         l.advance(0, &arrivals, false);
+    }
+    #[test]
+    fn future_position_excludes_expired_and_late_arrivals() {
+        let mut initial = vec![0; 21];
+        initial[12] = 30;
+        let mut l = Lifecycle::new(&initial);
+        l.start_food(0, 8, 1, 10);
+        l.start_food(0, 13, 2, 20);
+        assert_eq!(l.position_at(13, 0), 0);
+        assert_eq!(l.position_at(13, 1), 10);
+        assert_eq!(l.position_at(13, 2), 30);
+        assert_eq!(l.position_at(13, 5), 0);
+        let mut arrival = vec![0; 21];
+        arrival[13] = 10;
+        l.advance(1, &arrival, false);
+        l.consume(13, 7, 1);
+        assert_eq!(l.position_at(13, 2), 23);
+    }
+    #[test]
+    fn long_lived_sealed_batches_keep_original_deadlines_in_transport() {
+        // Abstract duration tests, not assertions that particular foods are safe.
+        for life in [730, 3650, 10950] {
+            let mut initial = vec![0; 21];
+            initial[12] = 11;
+            let mut l = Lifecycle::preserved(&initial, life);
+            l.start_food(life as usize - 2, 8, 1, 11);
+            let mut arrivals = vec![0; 21];
+            arrivals[13] = 11;
+            l.advance(life as usize - 1, &arrivals, true);
+            assert_eq!(l.food_total(13), 9);
+            assert_eq!(l.eligible(13, life as usize), 0);
+            let expired = l.advance(life as usize, &[0; 21], false);
+            assert_eq!(expired[3], 9);
+            assert_eq!(l.expired[3] + l.damaged[3], 11);
+            assert!(l.is_drained());
+        }
+    }
+    #[test]
+    #[should_panic(expected = "product expiry overflow")]
+    fn preservation_deadline_cannot_wrap_to_a_false_date() {
+        let mut initial = vec![0; 21];
+        initial[11] = 10;
+        let mut l = Lifecycle::preserved(&initial, u32::MAX);
+        l.start_food(0, 7, 1, 10);
     }
 }

@@ -6,12 +6,13 @@ mod lifecycle_study;
 use qazna::{horizon::*, mathematics::*};
 use serde_json::json;
 use std::{env, fs};
-const R: usize = 19;
-const J: usize = 18;
+const R: usize = 21;
+const J: usize = 20;
 const SCALE: i64 = 100_000; // 1,000 synthetic residents scaled to 100 million.
 const DAYS: usize = 1825;
 const VALUE: [i64; R] = [
     0, 0, 0, 100, 100, 100, 500, 10000, 0, 0, 200, 300, 600, 700, 10000, 200, 10000, 10000, 0,
+    10000, 10000,
 ];
 fn process(inputs: &[(usize, i64)], output: usize, quantity: i64, lead: usize) -> Process {
     let mut a = vec![0; R];
@@ -56,6 +57,10 @@ struct ReservePolicy {
     storage_aware: bool,
     integrated_lifecycle: bool,
     age_aware_food: bool,
+    durable_food_days: u32,
+    preserved_food_days: u32,
+    preserved_life_days: u32,
+    food_recovery_allowance: bool,
 }
 fn study(
     name: &str,
@@ -70,7 +75,7 @@ fn study_policy(
     reroute: bool,
     policy: ReservePolicy,
 ) -> (serde_json::Value, Vec<PeriodPlan>, Vec<ScheduledMovement>) {
-    let resources = [
+    let mut resources = [
         "ore_in_ground",
         "fuel_in_ground",
         "water",
@@ -90,8 +95,10 @@ fn study_policy(
         "reserve_generator",
         "fuel_storage_units",
         "completed_generator_service",
+        "dry_grain_storage_units",
+        "packaged_food_storage_units",
     ];
-    let names = [
+    let mut names = [
         "fuel_extraction",
         "power",
         "ore_extraction",
@@ -110,8 +117,17 @@ fn study_policy(
         "fuel_storage_construction",
         "reserve_power",
         "generator_service",
+        "dry_grain_storage_construction",
+        "packaged_food_storage_construction",
     ];
-    let processes = vec![
+    if policy.preserved_life_days > 0 {
+        resources[12] = "preserved_food_at_packaging";
+        resources[13] = "preserved_food_at_collection";
+        names[7] = "food_preservation_and_packaging";
+        names[8] = "sealed_food_delivery";
+        names[13] = "reserve_sealed_food_delivery";
+    }
+    let mut processes = vec![
         process(&[(1, 10), (3, 1)], 4, 10, 1),
         process(&[(4, 1), (2, 1)], 3, 10, 1),
         process(&[(0, 10), (3, 1)], 5, 10, 1),
@@ -135,33 +151,38 @@ fn study_policy(
         process(&[(6, 10), (3, 10)], 17, 1, 30),
         process(&[(4, 1), (2, 1)], 3, 10, 1),
         process(&[(6, 1), (3, 1)], 18, 1, 2),
+        process(&[(6, 10), (3, 10)], 19, 1, 30),
+        process(&[(6, 10), (3, 10)], 20, 1, 30),
     ];
+    if policy.preserved_life_days > 0 {
+        processes[7] = process(&[(11, 10), (3, 8), (6, 1)], 12, 10, 1);
+    }
     let initial = [
         1_000_000, 1_000_000, 0, 4000, 1000, 1000, 2000, 300, 200, 120, 6000, 4000, 4000, 4000,
-        1000, 1000, 0, 0, 0,
+        1000, 1000, 0, 0, 0, 0, 0,
     ];
     let storage = [
         1_000_000, 1_000_000, 0, 0, 20000, 2000, 3000, 1000, 1000, 120, 15000, 6000, 6000, 6000,
-        2000, 0, 1000, 1000, 0,
+        2000, 0, 1000, 1000, 0, 1000, 1000,
     ];
     let limits = vec![
         StockCapacity {
             name: "qualified_hours".into(),
             resource: 8,
             units_per_stock: 8,
-            activity_use: vec![1, 1, 1, 2, 8, 2, 2, 2, 2, 8, 4, 1, 4, 4, 8, 8, 1, 4],
+            activity_use: vec![1, 1, 1, 2, 8, 2, 2, 2, 2, 8, 4, 1, 4, 4, 8, 8, 1, 4, 8, 8],
         },
         StockCapacity {
             name: "equipment_use".into(),
             resource: 7,
             units_per_stock: 4,
-            activity_use: vec![1, 1, 1, 1, 2, 1, 2, 1, 2, 2, 0, 0, 4, 4, 2, 2, 1, 1],
+            activity_use: vec![1, 1, 1, 1, 2, 1, 2, 1, 2, 2, 0, 0, 4, 4, 2, 2, 1, 1, 2, 2],
         },
         StockCapacity {
             name: "housing_use".into(),
             resource: 14,
             units_per_stock: 1,
-            activity_use: vec![0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 10, 0, 0, 0, 0, 0, 0],
+            activity_use: vec![0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 10, 0, 0, 0, 0, 0, 0, 0, 0],
         },
     ];
     let mut limits = limits;
@@ -173,13 +194,31 @@ fn study_policy(
         units_per_stock: 10,
         activity_use: generator_use,
     });
-    let stores = [BuiltStorage {
+    let mut stores = vec![BuiltStorage {
         name: "fuel_store".into(),
         stored_resource: 4,
         asset_resource: 17,
         base_capacity: 2000 * SCALE,
         capacity_per_asset: 1000,
     }];
+    if policy.durable_food_days > 0 {
+        stores.push(BuiltStorage {
+            name: "dry_grain_store".into(),
+            stored_resource: 11,
+            asset_resource: 19,
+            base_capacity: 6000 * SCALE,
+            capacity_per_asset: 1000,
+        });
+    }
+    if policy.preserved_life_days > 0 {
+        stores.push(BuiltStorage {
+            name: "sealed_food_store".into(),
+            stored_resource: 13,
+            asset_resource: 20,
+            base_capacity: 6000 * SCALE,
+            capacity_per_asset: 1000,
+        });
+    }
     let mut exits = vec![
         Withdrawal {
             period: 400,
@@ -203,6 +242,12 @@ fn study_policy(
         periods: vec![],
         objective_resource: 13,
     };
+    if policy.durable_food_days > 0 {
+        model.storage_caps[11] = 60000 * SCALE;
+    }
+    if policy.preserved_life_days > 0 {
+        model.storage_caps[13] = 60000 * SCALE;
+    }
     if policy.reserve_days == 0 && policy.loss_ppm == 0 {
         model.storage_caps[4] = 2000 * SCALE;
     }
@@ -238,9 +283,13 @@ fn study_policy(
     let mut plan: Vec<PeriodPlan> = vec![];
     let mut previous = model.initial.clone();
     let mut pipeline = qazna::replanning::ProductionPipeline::new(R).unwrap();
-    let mut lifecycle = policy
-        .integrated_lifecycle
-        .then(|| integrated_lifecycle::Lifecycle::new(&model.initial));
+    let mut lifecycle = policy.integrated_lifecycle.then(|| {
+        if policy.preserved_life_days > 0 {
+            integrated_lifecycle::Lifecycle::preserved(&model.initial, policy.preserved_life_days)
+        } else {
+            integrated_lifecycle::Lifecycle::new(&model.initial)
+        }
+    });
     for day in 0..DAYS {
         let demand = (1000 + 50 * (day / 365) as i64) * SCALE;
         let mut data = Period {
@@ -255,6 +304,25 @@ fn study_policy(
         }
         if !policy.integrated_lifecycle || name == "maintenance_disabled" {
             data.capacities[17] = 0;
+        }
+        if policy.durable_food_days == 0 || name == "grain_store_disabled" {
+            data.capacities[18] = 0;
+        }
+        if policy.preserved_life_days == 0 || name == "packaged_store_disabled" {
+            data.capacities[19] = 0;
+        }
+        let harvest_failure = match name {
+            "harvest_30" | "grain_store_disabled" => (390..420).contains(&day),
+            "harvest_60" => (390..450).contains(&day),
+            "harvest_90" => (390..480).contains(&day),
+            "early_harvest" => (10..40).contains(&day),
+            _ => false,
+        };
+        if harvest_failure {
+            data.capacities[5] = 0;
+        }
+        if name == "cooking_outage" && (390..405).contains(&day) {
+            data.capacities[7] = 0;
         }
         data.supplies[2] = 10000 * SCALE;
         data.needs[13] = demand;
@@ -316,7 +384,10 @@ fn study_policy(
                     && (390..420).contains(&day),
             );
             data.capacities[16] = data.capacities[16].min(l.generator_capacity(day));
-            if name == "correlated_backup" && (390..420).contains(&day) {
+            if (matches!(name, "correlated_backup" | "packaged_store_disabled")
+                && (390..420).contains(&day))
+                || (name == "correlated_60" && (390..450).contains(&day))
+            {
                 data.capacities[1] = 0;
                 data.capacities[16] = 0;
             }
@@ -346,7 +417,7 @@ fn study_policy(
             .collect();
         let mut target = [
             0, 0, 0, 2200, 1000, 1000, 2000, 400, 320, 0, 12000, 5000, 5000, 5000, 1300, 1200, 0,
-            0, 0,
+            0, 0, 0, 0,
         ];
         if policy.food_buffers {
             target[10..14].copy_from_slice(&storage[10..14]);
@@ -357,6 +428,32 @@ fn study_policy(
             target[12] = 3 * (1000 + 50 * (day / 365) as i64);
             target[13] = target[12];
         }
+        if policy.durable_food_days > 0 {
+            let daily = 1000 + 50 * (day / 365) as i64;
+            // Store the reserve upstream. Fresh output is replenished for flow,
+            // not used as the strategic buffer. Pending output is included below.
+            target[10] = 7 * daily;
+            target[11] = (i64::from(policy.durable_food_days) + 1) * daily;
+            target[12] = 2 * (1000 + 50 * ((day + 2) / 365) as i64);
+            target[13] = (1..=2)
+                .map(|offset| 1000 + 50 * ((day + offset) / 365) as i64)
+                .sum();
+            target[19] = ((target[11] - 6000).max(0) + 999) / 1000;
+        }
+        if policy.preserved_life_days > 0 {
+            let daily = 1000 + 50 * (day / 365) as i64;
+            let restart = if policy.food_recovery_allowance {
+                model.processes[1].lead_periods
+                    + model.processes[7].lead_periods
+                    + model.processes[8]
+                        .lead_periods
+                        .max(model.processes[13].lead_periods)
+            } else {
+                0
+            };
+            target[13] = (i64::from(policy.preserved_food_days) + 1 + restart as i64) * daily;
+            target[20] = ((target[13] - 6000).max(0) + 999) / 1000;
+        }
         if policy.equipment_target {
             target[7] = 580;
         }
@@ -365,13 +462,25 @@ fn study_policy(
             target[16] = 22;
             target[17] = ((target[4] - 2000).max(0) + 999) / 1000;
         }
-        let order = if policy.storage_aware && available[4] >= 440 * SCALE {
-            [17, 1, 16, 11, 8, 13, 7, 6, 12, 5, 0, 2, 3, 4, 9, 10, 14, 15]
+        let order: [usize; J] = if policy.storage_aware && available[4] >= 440 * SCALE {
+            [
+                17, 1, 16, 11, 8, 13, 7, 6, 12, 5, 0, 2, 3, 4, 9, 10, 14, 15, 18, 19,
+            ]
         } else if policy.early_training {
-            [17, 1, 16, 0, 11, 10, 8, 13, 7, 6, 12, 5, 2, 3, 4, 9, 14, 15]
+            [
+                17, 1, 16, 0, 11, 10, 8, 13, 7, 6, 12, 5, 2, 3, 4, 9, 14, 15, 18, 19,
+            ]
         } else {
-            [17, 1, 16, 0, 11, 8, 13, 7, 6, 12, 5, 2, 3, 4, 9, 10, 14, 15]
+            [
+                17, 1, 16, 0, 11, 8, 13, 7, 6, 12, 5, 2, 3, 4, 9, 10, 14, 15, 18, 19,
+            ]
         };
+        let mut seen = [false; J];
+        for j in order {
+            assert!(!seen[j]);
+            seen[j] = true;
+        }
+        assert!(seen.iter().all(|x| *x));
         let mut activities = vec![0; J];
         // Published annual growth is known ahead; outages are not anticipated.
         // Preserve core energy first. The experimental early-training policy
@@ -387,6 +496,9 @@ fn study_policy(
             let k = p.outputs.iter().position(|&q| q > 0).unwrap();
             let desired = if j == 17 {
                 lifecycle.as_ref().map_or(0, |l| l.service_need(day))
+            } else if policy.durable_food_days > 0 && matches!(k, 12 | 13) {
+                let position = lifecycle.as_ref().unwrap().position_at(k, day + 2);
+                ((target[k] * SCALE - position).max(0) + p.outputs[k] - 1) / p.outputs[k]
             } else if k == 3 {
                 if j == 16 {
                     (220 * SCALE - activities[1]).max(0)
@@ -406,7 +518,7 @@ fn study_policy(
                     / p.outputs[k]
             };
             let mut n = desired.min(data.capacities[j]);
-            if matches!(j, 4 | 9 | 10 | 14 | 15) {
+            if matches!(j, 4 | 9 | 10 | 14 | 15 | 18 | 19) {
                 n = n.min(SCALE);
             }
             for (k, &q) in p.inputs.iter().enumerate() {
@@ -436,6 +548,14 @@ fn study_policy(
                 let projected = available[4] - next_loss + pipeline.pending()[4];
                 n = n.min((space - projected).max(0) / 10);
             }
+            if policy.durable_food_days > 0 && matches!(j, 6 | 12) {
+                let space = model.storage_caps[11].min(6000 * SCALE + 1000 * available[19]);
+                n = n.min((space - available[11] - pipeline.pending()[11]).max(0) / 10);
+            }
+            if policy.preserved_life_days > 0 && matches!(j, 8 | 13) {
+                let space = model.storage_caps[13].min(6000 * SCALE + 1000 * available[20]);
+                n = n.min((space - available[13] - pipeline.pending()[13]).max(0) / 10);
+            }
             for (l, lim) in limits.iter().enumerate() {
                 if lim.activity_use[j] > 0 {
                     n = n.min(budget[l] / lim.activity_use[j]);
@@ -462,6 +582,12 @@ fn study_policy(
         }
         let mut effective_storage = model.storage_caps.clone();
         effective_storage[4] = effective_storage[4].min(2000 * SCALE + 1000 * available[17]);
+        if policy.durable_food_days > 0 {
+            effective_storage[11] = effective_storage[11].min(6000 * SCALE + 1000 * available[19]);
+        }
+        if policy.preserved_life_days > 0 {
+            effective_storage[13] = effective_storage[13].min(6000 * SCALE + 1000 * available[20]);
+        }
         let mut waste: Vec<_> = (0..R)
             .map(|k| (available[k] - effective_storage[k]).max(0))
             .collect();
@@ -565,7 +691,7 @@ fn study_policy(
                 }
             }
         }
-        for k in [7, 14, 16, 17] {
+        for k in [7, 14, 16, 17, 19, 20] {
             trade(
                 &mut events,
                 &mut links,
@@ -607,7 +733,10 @@ fn study_policy(
                 );
             }
         }
-        for j in [17, 1, 16, 0, 11, 8, 13, 7, 6, 12, 5, 2, 3, 4, 9, 10, 14, 15] {
+        let payment_order: [usize; J] = [
+            17, 1, 16, 0, 11, 8, 13, 7, 6, 12, 5, 2, 3, 4, 9, 10, 14, 15, 18, 19,
+        ];
+        for j in payment_order {
             let p = &model.processes[j];
             let n = period_plan.activities[j];
             starts[j] += i128::from(n);
@@ -651,13 +780,13 @@ fn study_policy(
     let matrix = model.compile_reserves(&limits, &exits, &stores).unwrap();
     let vector = model.vector(&plan).unwrap();
     model
-        .verify_cash_links(&plan, &VALUE, &[7, 14, 16, 17], &links)
+        .verify_cash_links(&plan, &VALUE, &[7, 14, 16, 17, 19, 20], &links)
         .unwrap();
     let mut forged = links.clone();
     forged[0].amount = (forged[0].amount.parse::<i128>().unwrap() + 1).to_string();
     assert!(
         model
-            .verify_cash_links(&plan, &VALUE, &[7, 14, 16, 17], &forged)
+            .verify_cash_links(&plan, &VALUE, &[7, 14, 16, 17, 19, 20], &forged)
             .is_err()
     );
     let verified = verify_linear(&matrix, &vector, None).unwrap();
@@ -789,6 +918,12 @@ fn study_policy(
             assert!(used <= (prior[limit.resource] - removed) * limit.units_per_stock);
         }
         assert!(p.closing[4] <= 2000 * SCALE + 1000 * p.closing[17]);
+        if policy.durable_food_days > 0 {
+            assert!(p.closing[11] <= 6000 * SCALE + 1000 * p.closing[19]);
+        }
+        if policy.preserved_life_days > 0 {
+            assert!(p.closing[13] <= 6000 * SCALE + 1000 * p.closing[20]);
+        }
         let recorded_loss: i64 = exits
             .iter()
             .filter(|e| e.period == day && e.resource == 4)
@@ -812,6 +947,23 @@ fn study_policy(
     )
 }
 fn main() {
+    if env::args().nth(1).as_deref() == Some("--preserved-only") {
+        fs::write(
+            env::args().nth(2).expect("output JSON path"),
+            serde_json::to_vec_pretty(&preserved_food_study()).unwrap(),
+        )
+        .unwrap();
+        return;
+    }
+    if env::args().nth(1).as_deref() == Some("--durable-only") {
+        let report = durable_food_study();
+        fs::write(
+            env::args().nth(2).expect("output JSON path"),
+            serde_json::to_vec_pretty(&report).unwrap(),
+        )
+        .unwrap();
+        return;
+    }
     let cases: Vec<_> = [
         "baseline",
         "transport_outage",
@@ -949,8 +1101,8 @@ fn main() {
         "normal":normal,"transport_outage":recovered,"long_fixed":long_fixed,"long_recovery":long_recovered});
     let joint_planning = joint_reserve_search();
     let reserve_lifecycle = reserve_lifecycle_study();
-    let report = json!({"version":8,"integrated_lifecycle_graph":integrated_lifecycle_study(),"food_asset_lifecycle":lifecycle_study::study(),"reserve_lifecycle":reserve_lifecycle,"joint_planning":joint_planning,"kind":"synthetic_coupled_capability_study","model_calls":0,
-        "assumptions":["Synthetic aggregate coefficients, not demographic/engineering norms","Water is an external boundary supply; deposits and initial assets/stocks are explicit","Training places represent consenting eligible capacity, not people owned or traded","Qualified capacity and equipment are shared use limits, not consumed ingredients","Public asset procurement is paid only for completed equipment/buildings","Input payments follow actual consumption; incomplete work ties up opening working measure","Natural resources and people have zero commodity price in this example","All monetary norms fixed; no interest, tax, loan or later issuance","Actual missing provision remains recorded; no claim that missing goods cancel human entitlements","Money is prefunded using exact schedule bounds, not optimized globally","Trimmed cases are retrospective fixed-delivery improvements, not causal forecasts or global optima","Recovery decisions use current observed capacities, stocks and committed output; no future outage duration is provided","Reserve routes take two periods and four shared equipment/skill units per batch; synthetic capacity is declared in every comparison","The original terminal stock is a lower bound in trimmed cases; all intermediate safety-stock policy remains open","Energy/fuel/material quantities are abstract recipe units, not measured kWh/tonnes; external water left unused is reported separately from energy discard","The 18-resource traces do not include food expiry or maintenance; the separate food_asset_lifecycle submodel tests those mechanisms; health demography, individual choice, teacher specializations and foreign trade remain open","Heuristic is not a global optimum except when a valid stated objective certificate exists"],"cases":cases,"improved_cases":improved,"comparisons":comparisons,"recovery":recovery,"common_funding":common_funding});
+    let report = json!({"version":9,"durable_food_reserve":durable_food_study(),"preserved_food_reserve":preserved_food_study(),"integrated_lifecycle_graph":integrated_lifecycle_study(),"food_asset_lifecycle":lifecycle_study::study(),"reserve_lifecycle":reserve_lifecycle,"joint_planning":joint_planning,"kind":"synthetic_coupled_capability_study","model_calls":0,
+        "assumptions":["Synthetic aggregate coefficients, not demographic/engineering norms","Water is an external boundary supply; deposits and initial assets/stocks are explicit","Training places represent consenting eligible capacity, not people owned or traded","Qualified capacity and equipment are shared use limits, not consumed ingredients","Public asset procurement is paid only for completed equipment/buildings","Input payments follow actual consumption; incomplete work ties up opening working measure","Natural resources and people have zero commodity price in this example","All monetary norms fixed; no interest, tax, loan or later issuance","Actual missing provision remains recorded; no claim that missing goods cancel human entitlements","Money is prefunded using exact schedule bounds, not optimized globally","Trimmed cases are retrospective fixed-delivery improvements, not causal forecasts or global optima","Recovery decisions use current observed capacities, stocks and committed output; no future outage duration is provided","Reserve routes take two periods and four shared equipment/skill units per batch; synthetic capacity is declared in every comparison","The original terminal stock is a lower bound in trimmed cases; all intermediate safety-stock policy remains open","Energy/fuel/material quantities are abstract recipe units, not measured kWh/tonnes; external water left unused is reported separately from energy discard","Legacy policies leave dated-food/service extensions disabled; integrated_lifecycle_graph, durable_food_reserve and preserved_food_reserve enable them; health demography, individual choice, teacher specializations and foreign trade remain open","Heuristic is not a global optimum except when a valid stated objective certificate exists"],"cases":cases,"improved_cases":improved,"comparisons":comparisons,"recovery":recovery,"common_funding":common_funding});
     let path = env::args()
         .nth(1)
         .unwrap_or("research/coupled-results.json".into());
@@ -1159,6 +1311,10 @@ fn reserve_lifecycle_study() -> serde_json::Value {
             storage_aware,
             integrated_lifecycle: false,
             age_aware_food: false,
+            durable_food_days: 0,
+            preserved_food_days: 0,
+            preserved_life_days: 0,
+            food_recovery_allowance: false,
         };
         let mut results = vec![];
         let mut traces = vec![];
@@ -1445,7 +1601,7 @@ fn integrated_lifecycle_study() -> serde_json::Value {
             .iter()
             .any(|q| q.as_u64().unwrap() > 0)
     );
-    json!({"scope":"full_19_resource_18_process_graph_with_dated_food_and_constructed_generator_service",
+    json!({"scope":"legacy_lifecycle_graph_with_two_inactive_storage_extensions",
         "periods":DAYS,"fixed_target_counterexample":fixed_targets,"results":results,"common_opening":envelope,"common_money_replay":monetary,
         "same_observation_prefix_checks":prefixes,
         "assumptions":["Grain expires 90 days after harvest; cooked meals expire five days after cooking completion; initial stock starts at age zero",
@@ -1459,4 +1615,190 @@ fn integrated_lifecycle_study() -> serde_json::Value {
         "Age eligibility and service history are additional deterministic trace guards; the aggregate LP matrix alone does not prove their validity for a different plan",
         "Meals at kitchen and destination target three current-demand days including committed output; fixed six-thousand-unit targets are retained as a baseline counterexample; global target optimization remains open",
         "All quantities and norms synthetic; cash envelopes conditional on declared schedules, no later issuance; live runtime unchanged"]})
+}
+
+/// Store the strategic reserve upstream; fresh production supports short flow.
+fn durable_food_study() -> serde_json::Value {
+    let policy = ReservePolicy {
+        equipment_target: true,
+        reserve_days: 30,
+        loss_ppm: 1000,
+        storage_aware: true,
+        integrated_lifecycle: true,
+        durable_food_days: 30,
+        ..ReservePolicy::default()
+    };
+    let names = [
+        "baseline",
+        "harvest_30",
+        "harvest_60",
+        "transport_damage",
+        "lifecycle_compound",
+        "cooking_outage",
+        "grain_store_disabled",
+        "early_harvest",
+        "correlated_backup",
+    ];
+    let mut report = food_policy_comparison(policy, &names);
+    report["assumptions"] = json!([
+        "All coefficients synthetic; grain still expires 90 days after harvest and meals five days after cooking; no lifetime is extended to improve this comparison",
+        "Existing stocks and assets identical to prior integrated runs; extra city-grain storage must be built from metal, energy and shared work/equipment, with 30-day lead",
+        "Each completed dry-store asset adds 1000 grain units to initial 6000 capacity, capped at 60000; target is 30 demand-days plus one operating day",
+        "Farm grain target seven demand-days; kitchen target two known future days, destination two; pending output and physical eligibility are checked",
+        "Only published demand growth is anticipated; disruptions observed at onset, no knowledge of future duration",
+        "Grain is an abstract staple equivalent, not a complete diet; protein, oils, micronutrients, packaging and food safety need separately calibrated recipes",
+        "Storage construction and processing costs counted; storage operation/drying/quality loss not yet calibrated",
+        "Raw grain cannot bypass unavailable cooking, energy or delivery; ready-to-eat durable emergency food is a separate extension",
+        "Financial envelopes conditional on fixed schedules; live runtime authority unchanged"
+    ]);
+    report["scope"] = json!("historical_fresh_flow_with_durable_grain_reserve");
+    report
+}
+
+fn food_policy_comparison(policy: ReservePolicy, names: &[&str]) -> serde_json::Value {
+    let mut results = vec![];
+    let mut schedules = vec![];
+    let mut baseline = vec![];
+    let mut prefixes = 0;
+    for &name in names {
+        let (r, trace, events) = study_policy(name, false, true, policy);
+        if name == "baseline" {
+            baseline = trace.clone();
+        } else if !matches!(name, "grain_store_disabled" | "packaged_store_disabled") {
+            let until = if name == "early_harvest" { 10 } else { 390 };
+            assert_eq!(
+                serde_json::to_value(&trace[..until]).unwrap(),
+                serde_json::to_value(&baseline[..until]).unwrap()
+            );
+            prefixes += 1;
+        }
+        assert!(r["physical_verification"]["feasible"].as_bool().unwrap());
+        assert!(r["money"]["first_blocked_event"].is_null());
+        let checkpoints: Vec<_> = [0, 29, 30, 60, 389, 419, 449, 500, DAYS-1].into_iter().map(|day| json!({
+            "day": day, "grain_farm":trace[day].closing[10], "grain_city":trace[day].closing[11],
+            "product_at_processing":trace[day].closing[12], "product_at_collection":trace[day].closing[13],
+            "grain_store_assets":trace[day].closing[19], "packaged_store_assets":trace[day].closing[20], "food_delivery":trace[day].deliveries[13],
+            "farming_starts":trace[day].activities[5], "cooking_starts":trace[day].activities[7]
+        })).collect();
+        results.push(json!({"calculation":r,"checkpoints":checkpoints}));
+        schedules.push(events);
+    }
+    let views: Vec<_> = names
+        .iter()
+        .zip(&schedules)
+        .map(|(n, s)| (*n, s.as_slice()))
+        .collect();
+    let envelope = common_schedule_opening(J + 2, &views).unwrap();
+    let opening: Vec<u64> = envelope
+        .minimum_opening_by_account
+        .iter()
+        .map(|s| s.parse().unwrap())
+        .collect();
+    let mut replays = vec![];
+    for (name, events) in &views {
+        let replay = replay_schedule(&opening, events, &[]).unwrap();
+        assert!(replay.first_blocked_event.is_none());
+        assert_eq!(replay.closing[1], "0");
+        replays.push(json!({"scenario":name,"replay":replay}));
+    }
+    json!({"periods":DAYS,"results":results,"common_opening":envelope,"common_money_replay":replays,"same_observation_prefix_checks":prefixes})
+}
+fn preserved_food_study() -> serde_json::Value {
+    let policy = ReservePolicy {
+        equipment_target: true,
+        reserve_days: 30,
+        loss_ppm: 1000,
+        storage_aware: true,
+        integrated_lifecycle: true,
+        durable_food_days: 30,
+        preserved_food_days: 30,
+        preserved_life_days: 730,
+        food_recovery_allowance: true,
+        ..ReservePolicy::default()
+    };
+    let mut report = food_policy_comparison(
+        policy,
+        &[
+            "baseline",
+            "harvest_30",
+            "harvest_60",
+            "harvest_90",
+            "transport_damage",
+            "lifecycle_compound",
+            "cooking_outage",
+            "early_harvest",
+            "correlated_backup",
+            "correlated_60",
+            "packaged_store_disabled",
+        ],
+    );
+    let (nominal_only, _, _) = study_policy(
+        "correlated_backup",
+        false,
+        true,
+        ReservePolicy {
+            food_recovery_allowance: false,
+            ..policy
+        },
+    );
+    for i in [0, 1, 2, 4, 5, 6, 8] {
+        assert_eq!(report["results"][i]["calculation"]["unmet"][13], "0");
+    }
+    for i in [3, 7, 9, 10] {
+        assert!(
+            report["results"][i]["calculation"]["unmet"][13]
+                .as_str()
+                .unwrap()
+                .parse::<u64>()
+                .unwrap()
+                > 0
+        );
+    }
+    assert_eq!(
+        report["results"][0]["calculation"]["integrated_lifecycle"]["expired"],
+        json!([0, 0, 0, 0])
+    );
+    assert!(
+        report["results"][0]["checkpoints"][4]["packaged_store_assets"]
+            .as_i64()
+            .unwrap()
+            > 0
+    );
+    assert_eq!(
+        report["results"][10]["checkpoints"][4]["packaged_store_assets"],
+        0
+    );
+    assert!(
+        nominal_only["unmet"][13]
+            .as_str()
+            .unwrap()
+            .parse::<u64>()
+            .unwrap()
+            > 0
+    );
+    report["nominal_reserve_counterexample"] = nominal_only;
+    report["scope"] = json!("preserved_food_only_no_fresh_product_storage");
+    report["storage_evidence"] = json!([
+        {"source":"https://scholarsarchive.byu.edu/facpub/67/", "type":"2004 conference poster abstract", "product":"white rice, uncooked, reduced-oxygen sealed cans", "observation":"18 donated samples aged 6-30 years; both rice types above 88 percent emergency acceptance at 30 years", "boundary":"Sensory acceptance of tested samples, not universal safety or complete nutrient preservation for all foods"},
+        {"source":"https://extension.usu.edu/preserve-the-harvest/research/storing-white-rice", "type":"university extension guidance", "observation":"25-30 years for properly sealed and stored polished white rice", "boundary":"Conditional on product, temperature, packaging and storage; does not calibrate generic preserved meals"},
+        {"source":"https://ask.fsis.usda.gov/article/How-long-can-you-keep-canned-goods", "type":"USDA guidance", "observation":"Best-quality guidance distinguishes high-acid food, up to 18 months, and low-acid meat/vegetables, 2-5 years", "boundary":"Quality guidance is not an automatic safety cutoff or a decades-long guarantee"}
+    ]);
+    report["preservation_specification_gate"] = json!({
+        "required_before_calibrated_use":["product and recipe identifier", "drying/thermal/other validated treatment", "water activity and moisture", "package and seal integrity", "oxygen/CO2 specification where applicable", "temperature/humidity envelope", "quality and nutrient retention curve", "safety acceptance and quarantine criteria", "energy/material/labour coefficients", "opening and rehydration requirements", "source, version and units"],
+        "candidate_methods":["drying", "freeze drying", "validated thermal preservation", "vacuum packaging combined with appropriate treatment", "controlled atmosphere combined with appropriate treatment"],
+        "simulation_only":true, "automatic_food_safety_authorization":false
+    });
+    report["assumptions"] = json!([
+        "Target architecture has no fresh perishable product inventory: process 7 preserves and seals food; transport retains its expiry",
+        "Preservation recipe per ten abstract staple units: ten grain, eight energy and one metal packaging unit; qualified/equipment capacity inherited, coefficients synthetic",
+        "Packaged product life 730 days is a declared test parameter, not certification of vacuum/CO2/drying/canning interchangeability; grain remains 90 days",
+        "Initial product quantities unchanged but represent pre-preserved sealed stock; its embodied processing/packaging is part of initial endowment, not free conversion of old fresh inventory",
+        "Thirty demand-days plus one operating day and four restart/route-lead days at collection; extra packaged storage must be built in 30 days from metal, energy, shared work and equipment; no unbuilt space used",
+        "FEFO rotates preserved goods through daily consumption; a long permitted life is not a requirement to leave every lot untouched for years",
+        "Stock at collection can satisfy demand during disruption without new cooking or transport; this presumes local accessible collection points, not a proof of last-mile service",
+        "Packed resource is an edible staple-equivalent, not a complete diet or dry food guaranteed edible without water; actual diets and rehydration needs require typed recipes",
+        "No national calibration: storage climate, operating costs, package failure, food safety, recycling and nutrient retention remain explicit future inputs",
+        "All historical fresh-food experiments retained only as comparators; no AI or live authority change"
+    ]);
+    report
 }

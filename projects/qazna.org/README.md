@@ -25,6 +25,17 @@ Qazna is a research system for meeting human needs, based on the Tenge model des
 
 The project lives in `projects/qazna.org/` in [Tartarus](https://github.com/DauletBai/tartarus), alongside the book and research archive. The MVP and subsequent production development share **Rust + Tokio + Axum + SQLx + PostgreSQL**. Rust owns planning inputs and exact validation; an isolated mathematical solver is proposed for larger optimization problems. React/TypeScript is planned for the interface. Project documentation, code comments, examples and contributor materials are maintained in English for an international community.
 
+## Project information
+
+| Item | Reference |
+| --- | --- |
+| Stage | Research prototype; [scope and remaining work](docs/completion-roadmap.md) |
+| Architecture | [Rust service and exact calculation boundaries](docs/architecture.md) |
+| Reproducible evidence | [Physical/circulation studies](docs/physical-circulation.md) · [test record](docs/development.md) |
+| Code and documentation | [AGPL-3.0-or-later](LICENSE) · [CC-BY-SA-4.0 documentation](LICENSE-DOCS) |
+| Repository activity | [GitHub Actions](https://github.com/DauletBai/tartarus/actions/workflows/qazna.yml) · [pull requests](https://github.com/DauletBai/tartarus/pulls) |
+| Parent repository | [Tartarus overview and About](https://github.com/DauletBai/tartarus) |
+
 ## Book and implementation
 
 *Tartar and I* by Daulet Baimurza is the author's Russian research essay on language, historical memory and the Tenge economic proposal. Chapter 26 introduces the organism-inspired provisioning idea; its appendices distinguish model assumptions from calculations. Qazna turns selected provisioning mechanisms into executable, testable software. Passing software tests does not establish the book's historical hypotheses or prove the full economic model.
@@ -39,7 +50,10 @@ The [food and standby lifecycle study](docs/physical-circulation.md#dated-food-t
 adds dated batches, FEFO, transport damage and finite-resource maintenance. Its 32
 five-year submodel runs preserve expiry, failures and unmet needs explicitly;
 the full graph now includes a separate integrated comparison with exact cash
-replay. Live service integration remains open.
+replay. The selected [preserved-food reserve design](docs/physical-circulation.md#preserved-food-reserves-the-target-architecture)
+adds constructed grain/packaged storage, preservation inputs and restart-aware
+reserves. Eleven target scenarios retain early and overlong-failure deficits;
+fresh-food traces are historical comparators. Live service integration remains open.
 
 ## Implemented capabilities
 

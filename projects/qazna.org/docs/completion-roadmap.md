@@ -1,19 +1,20 @@
 # Completion roadmap and feasibility boundaries
 
-Latest review: 7 November 2026, integrated lifecycle stage after PR #1.
+Latest review: 7 November 2026, preserved-food reserve stage.
 The current work order below supersedes earlier milestone-specific next steps.
 
 ## Current implementation order
 
 Already implemented: exact accounting and physical/payment checks; a 1,825-period
-coupled synthetic model with 19 dimensions and 18 processes; fixed-delivery plan
+coupled synthetic model with 21 dimensions and 20 processes; fixed-delivery plan
 trimming; causal reserve-route feedback with delayed commitments; and independent
 checks of idempotency, feasibility and accounting conservation; and a common
 opening balance certificate across six disruption schedules; and constructed fuel
 reserves with losses, restart protection and refill across seven scenarios; and
 an isolated dated-food/transport/maintenance submodel with 32 five-year runs; and
-seven complete lifecycle/circulation scenarios with a fixed-buffer counterexample.
-The complete local suite passed 57 mathematical, 91 PostgreSQL and six coupled-example tests, plus
+seven complete lifecycle/circulation scenarios with a fixed-buffer counterexample;
+and a target preserved-food design with constructed storage and restart allowance.
+The complete local suite passed 57 mathematical, 91 PostgreSQL and nine coupled-example tests, plus
 the HTTP, recovery, safety and actor exercises. Verification is recorded in
 [development](development.md). GitHub CI for `71deac0` also passed.
 These results cover the declared synthetic model, not national deployment.
@@ -26,7 +27,7 @@ for the following sequence. The table distinguishes completed bounded experiment
 | --- | --- | --- | --- |
 | 1 — bounded experiment implemented | Common opening measure across six disruption schedules | Same initial money/assets now tested; physical reserves are fixed rather than optimized; uncertainty beyond the declared family remains open | Exact worst-prefix witnesses, independent replay of every scenario, one-unit-less necessity checks and equal-observation physical prefixes; see the common-funding results |
 | 2 — bounded experiment implemented | Joint planning of reserves, routes, replacement and training | Eight feedback policies × six paths now compared with equal initial assets and exact terminal/cash checks; general design optimization remains open | Zero transport-only food deficit with additional produced equipment; minimax shortage reaches a verified energy-outage lower bound; see joint-planning evidence |
-| 3 — integrated lifecycle experiment implemented | Energy continuity, expiry, transport loss, maintenance and changing demand | Constructed reserves and integrated dated-food/transit/service traces with monetary replay are tested; global age-aware optimisation, per-day maintenance work and runtime integration remain open | Explicit dated lots/loss events; no expired or destroyed output delivered; partial failures, recalls, disrupted routes and revised needs with no rewriting of past provision |
+| 3 — integrated lifecycle experiment implemented | Energy continuity, expiry, transport loss, maintenance and changing demand | Constructed reserves and integrated dated-food/transit/service traces with monetary replay are tested; preserved-food source profiles, nutrient/last-mile calibration, per-day maintenance work and runtime integration remain open | Explicit dated lots/loss events; no expired or destroyed output delivered; partial failures, recalls, disrupted routes and revised needs with no rewriting of past provision |
 | 4 | Cohorts, additional services and evidence-backed coefficients | 100 million is a scale factor; health, education and personal choice are not a full national model | Versioned input registry with units, region, year, source and uncertainty; age/cohort transitions, voluntary qualification pathways and service capacity; distinguish synthetic and calibrated runs |
 | 5 | Reviewed integration into the live Rust service | Offline matrices do not currently create persistent runtime plans | Versioned scenario snapshots and drafts; stale-state rejection, atomic application, restart/retry and independent replay; no solver or AI authority to post or issue measure |
 | 6 | Participant-facing demonstrator and operational completion | Machine credentials are not resident identity; disputes, corrections and UI are incomplete | Scoped resident/organization access, evidence custody and dispute resolution, compensating events, accessible role-specific UI, overload and disaster-recovery tests; independent review before any consequential pilot |
@@ -324,3 +325,16 @@ same calculation; the static food-target failure is retained. See the
 The common funding envelope is conditional on these scenarios. The next gate is
 independently validated age-aware optimisation, per-day maintenance labour and
 calibration; live authority remains unchanged.
+
+
+### Preserved-food reserve gate — 7 November 2026
+
+The target has no fresh perishable stock. Schema 9 contains nine raw-reserve
+comparators, eleven preserved-food scenarios and the counterexample that sizes
+reserve without restart. Source-qualified storage evidence and mandatory product
+profile fields are included. The tested four-day restart allowance closes food
+shortage in the prepared 30-day correlated outage, without hiding housing shortage.
+Longer/early failures and missing storage remain counterexamples. Next add typed
+nutrient and rehydration/access constraints with sourced coefficients, storage
+operating/quality costs, then reviewed persistence in the runtime. Do not promote
+an abstract staple or 730-day test parameter to a complete national food standard.

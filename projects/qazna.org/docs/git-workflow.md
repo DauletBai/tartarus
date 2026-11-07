@@ -50,3 +50,13 @@ separate worktree, verify them against the tested source, regenerate its manifes
 and commit/push that development branch. Check its actual remote commit before
 claiming synchronization. Reconcile the original workspace separately with a
 complete backup and review of its local files.
+
+
+## Repository overview versus project folder
+
+GitHub's repository About/topics/language overview belongs to the repository main
+page, not to this nested project directory. This is not a missing Qazna asset or
+README CSS setting. The project README therefore includes a compact information
+card linking its scope, architecture, evidence, licences and CI. Repository-wide
+metadata still describes the whole Tartarus archive. See
+[GitHub's main-page topic documentation](https://docs.github.com/en/repositories/managing-your-repositorys-settings-and-features/customizing-your-repository/classifying-your-repository-with-topics).

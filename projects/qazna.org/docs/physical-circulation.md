@@ -7,7 +7,7 @@ model, not a calibrated national plan or an autonomous production controller.
 
 ## What is connected
 
-The schema-8 report has a coupled model with 19 resource/capability dimensions, 18 processes and 1,825 daily
+The schema-9 report has a coupled model with 21 resource/capability dimensions, 20 processes and 1,825 daily
 periods. A synthetic cohort of 1,000 residents is scaled by 100,000 to the stated
 100-million population scale. This is aggregate arithmetic, not individual agents
 or an estimate of actual Kazakhstan needs. Annual requirements grow by five
@@ -23,8 +23,8 @@ schedule is declared in advance; outages are not anticipated by the heuristic.
 | Equipment production | Metal, energy | Equipment units | 20 |
 | Farming | Water, energy | Grain at farm | 5 |
 | Grain transport | Grain at farm, energy | Grain at processing location | 1 |
-| Cooking | Grain at processing location, energy | Meals at kitchen | 1 |
-| Last-mile delivery | Meals at kitchen, energy | Delivered meals | 1 |
+| Food processing | Legacy comparator: cooking; target: grain, energy and packaging metal | Legacy meals or preserved sealed product | 1 |
+| Product delivery | Processed product, energy | Product at collection | 1 |
 | Construction | Metal, energy | Housing-capacity places | 60 |
 | Training | Eligible training places, energy, instructor capacity | Qualified work capacity | 180; stress case 720 |
 | Housing service | Water, energy, available housing capacity | Housing-place days | 1 |
@@ -34,6 +34,8 @@ schedule is declared in advance; outages are not anticipated by the heuristic.
 | Fuel storage construction | Metal, energy, shared equipment/work capacity | Storage unit | 30 |
 | Reserve power | Fuel, water, completed generator capacity | Energy | 1 |
 | Generator service | Metal, energy, shared qualified/equipment capacity | Internally consumed completed service | 2 |
+| Dry-grain storage construction | Metal, energy, shared work/equipment | Grain storage unit | 30 |
+| Packaged-food storage construction | Metal, energy, shared work/equipment | Sealed-food storage unit | 30 |
 
 Delays and coefficients are experimental assumptions, not observed curricula,
 engineering specifications or nutrition standards. The power process represents
@@ -93,9 +95,9 @@ The example includes an equipment retirement shock and a withdrawal of qualified
 availability in period 400. Baseline replacement and training can prepare for these
 declared events. Specific retirement quantities are scenario assumptions.
 
-The coupled ordinary case has **136,875 variables and 146,002 rows**, including
+The coupled ordinary case has **151,475 variables and 160,602 rows**, including
 four shared-capacity constraints per period, constructed fuel-storage constraints
-and withdrawal guards. It has 415,738 nonzero terms. Daily storage-loss withdrawals
+and withdrawal guards. It has 459,476 nonzero terms. Daily storage-loss withdrawals
 add 1,824 prior-stock guards; longer training delays also change the matrix. The
 former 16-resource/14-process configuration had 113,150 variables and 118,627 rows;
 its numerical service and circulation results are retained with inactive extension
@@ -902,7 +904,7 @@ runtime remains unchanged and receives no automatic allocation or issuance power
 
 The schema-8 experiment adds `integrated_lifecycle_graph`. It uses the full
 raw-material, energy, equipment, transport, construction and training model,
-expanded to **19 resources and 18 processes**. The additional resource is completed
+expanded to **19 resources and 18 processes**. At that stage the additional resource was completed
 generator service and the additional process consumes metal and energy to perform
 that service. Dated food is no longer an unrelated boundary-supply calculation.
 Every changed start, input consumption and actual delivery generates a freshly
@@ -1013,3 +1015,146 @@ including the two scenarios with physical shortages. These are synthetic normati
 units, not a currency valuation or a real-state fiscal estimate. Initial vectors,
 annual stocks, shortages, exact links, schedule bounds and replay outcomes are
 recorded in the existing JSON report.
+
+
+## Preserved-food reserves: the target architecture
+
+The author's revised requirement is to store **preserved products, not a strategic
+stock of fresh perishable food**. Preparation for storage may use drying,
+freeze-drying, a validated thermal process, appropriate packaging, vacuum or a
+controlled atmosphere in a suitable combination. The model does not treat vacuum
+or CO2 alone as proof that any food is safe at room temperature for decades.
+Historical fresh-food runs remain reproducible comparators, not the selected design.
+
+The organism analogy supplies the principle: retain a useful, stable reserve and
+convert or distribute it when needed. The economic reserve is a portfolio of
+foods and ingredients with distinct nutrient profiles, rather than one universal
+substance. A scalar staple unit cannot establish adequate protein, micronutrients,
+water or dietary suitability. Those are independent dimensions in a calibrated
+food model.
+
+### Evidence and the specification gate
+
+Long storage is possible for specific products under specified conditions:
+
+| Evidence | What it establishes | What it does not establish |
+| --- | --- | --- |
+| [Coons et al., 2004](https://scholarsarchive.byu.edu/facpub/67/), conference poster abstract | Studied 18 donated white-rice samples aged 6–30 years in reduced-oxygen cans; emergency acceptance exceeded 88% for both types at 30 years | Universal safety, complete nutrient retention, or a shelf life for every prepared meal |
+| [Utah State University: white rice](https://extension.usu.edu/preserve-the-harvest/research/storing-white-rice) | Properly sealed and stored polished white rice can have a 25–30-year storage life | Equivalent performance of other foods, temperatures, packages or handling |
+| [USDA: canned goods](https://ask.fsis.usda.gov/article/How-long-can-you-keep-canned-goods) | Best-quality guidance differs: up to 18 months for high-acid products, 2–5 years for low-acid meat/vegetables | An automatic safety cutoff, or a general decades-long guarantee |
+
+A calibrated product profile must identify its recipe, preservation process,
+water activity/moisture, packaging and seal, atmosphere where applicable,
+temperature/humidity envelope, nutrient/quality retention, acceptance/quarantine
+rules, opening/rehydration requirements, energy/material/work coefficients, units
+and versioned source. These fields are recorded as a specification gate in the
+maintained report. The demonstrator does not authorize real food safety decisions.
+
+### Two implemented comparisons
+
+`durable_food_reserve` first isolates the storage-location issue: same starting
+stocks, 90-day synthetic grain life and five-day meals as the preceding model,
+but a 30-day upstream grain reserve and short downstream flow. The grain storage
+must be built. Future stock positions exclude lots expiring before the planning
+date and arrivals due after it. This removes ongoing overproduction/expiry in the
+ordinary comparison, leaving 300 million units of initial perishable stock expiry.
+The previous integrated baseline had 33.58 billion expired food units. Those are
+synthetic scaled quantities, not tonnes or measured national food losses.
+
+`preserved_food_reserve` then implements the chosen design. Resources 12 and 13
+are sealed preserved product at packaging and collection, not fresh meals. For ten
+abstract product units, preservation uses ten grain, eight energy and one metal
+packaging unit, with shared work/equipment and one-day lead. These coefficients
+are experimental. The prior cooking recipe used five energy and no packaging
+metal. Monetary norms stay fixed; actual consumption, procurement and supplier
+circulation are rebuilt from the new recipe.
+
+The packaged product has a **730-day test life**. This is a scenario parameter,
+not a certification inferred from rice research. The 90-day grain parameter is
+retained to keep its comparison conservative; it is not a claimed upper bound on
+real dry-grain storage. Unit tests also exercise 10- and 30-year abstract package
+deadlines without extending a lot's date during transport. A five-year simulation
+does not validate 30-year physical preservation.
+
+The initial product quantities now represent **already preserved, sealed stock**.
+Their preparation is part of the declared initial endowment. This is a changed
+product specification, not free conversion of the old perishable stock. Added
+storage is not an endowment: each unit consumes ten metal, ten energy and shared
+capacity, completes after 30 days, and then adds 1,000 units of space. Initial
+capacity is 6,000; the ceiling is 60,000. Incomplete storage cannot hold goods.
+
+### Reserve, rotation and restart
+
+For collection resource k, the selected inventory-position target is:
+
+```text
+restart_lead = power_lead + preservation_lead
+               + max(primary_delivery_lead, reserve_delivery_lead) = 4 days
+position_target[t] = (30 disruption days + 1 operating day + restart_lead) * D[t]
+additional_store_target[t] = ceil(max(0, position_target[t] - 6000) / 1000)
+usable_position[k,h] = stock surviving through h
+                    + committed arrivals due by h and surviving through h
+new_batches = ceil(max(0, target - usable_position) / batch_output)
+```
+
+Physical input, package, energy, shared work/equipment, deadline and constructed
+storage constraints cap each start. Existing commitments are included to avoid
+placing the same order twice. The four-day allowance is a tested conservative
+choice for these routes, not a global minimum for arbitrary failures.
+
+The grain target remains 30 demand-days plus one operating day; farm inventory
+covers seven demand-days and packaging flow two known near-term demand-days.
+Forecast annual growth is published; future failures and their duration are not
+visible to the planner. FEFO rotates lots through actual consumption. A product
+allowed to last decades need not sit untouched for decades. Long life protects
+against disruption and slow rotation rather than encouraging indefinite stockpiling.
+
+A nominal reserve that ignored restart produced 155 million unmet food units in
+the 30-day correlated power failure. Including the lead-time allowance eliminated
+that food shortfall in the tested scenario. Its housing deficit remains: preserved
+food cannot replace the energy needed to provide housing services.
+
+### Five-year results and boundaries
+
+The target design has eleven five-year paths; the raw-reserve comparator has nine.
+An additional nominal-reserve counterexample is retained. Every trace passes the
+complete physical matrix, independent stock/shared-capacity replay, dated-lot
+guards and rebuilt physical/payment checks. Each design has one common initial
+funding vector across its scenarios, with no subsequent issuance and zero personal
+closing balance. Funding does not erase physical shortages.
+
+| Target-design scenario | Unmet staple units over five years | Food expiry |
+| --- | ---: | ---: |
+| Ordinary operation | 0 | 0 |
+| Harvest suspended for 30 days | 0 | 0 |
+| Harvest suspended for 60 days | 0 | 0 |
+| Harvest suspended for 90 days | 2,745,000,000 | 0 |
+| Transport damage / compound supply-and-damage | 0 | 0; actual transit damage remains recorded |
+| Preservation plant stopped for 15 days | 0 | 0 |
+| Harvest stopped before reserves are ready | 1,700,000,000 | 0 |
+| Main and reserve power fail for 30 days | 0 | 0 |
+| Main and reserve power fail for 60 days | 2,905,000,000 | 260,000,000 grain units |
+| Extra packaged storage unavailable, 30-day power failure | 2,655,000,000 | 0 |
+
+Completed capital procurement is 856 billion normative units in the ordinary
+target case, versus 788 billion in the former integrated baseline. The difference
+includes both food-storage extensions. These are **synthetic fixed-unit accounting
+measures**, not tenge prices or an investment quotation. Extra processing energy,
+packaging metal and construction are counted; climate control, inspection,
+packaging failures, recycling and ongoing storage costs still need calibration.
+It would be premature to call real storage costs negligible.
+
+The experiment assumes edible preserved staple-equivalents are already accessible
+at local collection points. It does not prove that dry food can be eaten without
+water or heating, or that a remote resident receives it during a transport failure.
+Diet diversity, allergies, cohort-specific nutrition, household preparation and
+last-mile accessibility are the next calibration/integration tasks. The live
+service, its permissions and its issuance authority are unchanged.
+
+
+The target baseline matrix now has 151,475 variables, 166,076 rows and 470,425
+nonzero terms. The eleven target scenarios settle 762,673 monetary movements
+under a common opening measure of 4,843,621,465,750. The nine intermediate
+raw-reserve scenarios settle 597,298 movements. These are separate envelopes,
+not additive budgets for one population. Legacy regression checks retained 1,245
+numerical fields, allowing only inactive appended resource/process dimensions.
