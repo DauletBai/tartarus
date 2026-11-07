@@ -1,6 +1,6 @@
 # Completion roadmap and feasibility boundaries
 
-Latest review: 7 November 2026, daily maintenance-work stage.
+Latest review: 7 November 2026, nutrient needs and household-order stage.
 The current work order below supersedes earlier milestone-specific next steps.
 
 ## Current implementation order
@@ -14,10 +14,13 @@ reserves with losses, restart protection and refill across seven scenarios; and
 an isolated dated-food/transport/maintenance submodel with 32 five-year runs; and
 seven complete lifecycle/circulation scenarios with a fixed-buffer counterexample;
 and a target preserved-food design with constructed storage and restart allowance;
-and two-phase daily maintenance with independent paused-work checks.
-The complete local suite passed 57 mathematical, 91 PostgreSQL and 14 coupled-example tests, plus
+and two-phase daily maintenance with independent paused-work checks;
+and an offline nutrient/order annex with pinned food-composition data, per-profile
+constraints, bounded menu search and mode-specific service requirements.
+The complete local suite passed 57 mathematical, 17 nutrient/order, 91 PostgreSQL
+and 16 coupled-example tests, plus
 the HTTP, recovery, safety and actor exercises. Verification is recorded in
-[development](development.md). The preceding `d16b0a8` passed GitHub CI and merged through PR #2;
+[development](development.md). The preceding daily-maintenance PR #3 passed GitHub CI and merged as `54a0db6`;
 this stage's remote checks are separate from the local results.
 These results cover the declared synthetic model, not national deployment.
 
@@ -30,7 +33,7 @@ for the following sequence. The table distinguishes completed bounded experiment
 | 1 — bounded experiment implemented | Common opening measure across six disruption schedules | Same initial money/assets now tested; physical reserves are fixed rather than optimized; uncertainty beyond the declared family remains open | Exact worst-prefix witnesses, independent replay of every scenario, one-unit-less necessity checks and equal-observation physical prefixes; see the common-funding results |
 | 2 — bounded experiment implemented | Joint planning of reserves, routes, replacement and training | Eight feedback policies × six paths now compared with equal initial assets and exact terminal/cash checks; general design optimization remains open | Zero transport-only food deficit with additional produced equipment; minimax shortage reaches a verified energy-outage lower bound; see joint-planning evidence |
 | 3 — integrated lifecycle experiment implemented | Energy continuity, expiry, transport loss, maintenance and changing demand | Constructed reserves and integrated dated-food/transit/service traces with monetary replay are tested; preserved-food source profiles, nutrient/last-mile calibration, specialist capacity calibration and runtime integration remain open | Explicit dated lots/loss events; no expired or destroyed output delivered; partial failures, recalls, disrupted routes and revised needs with no rewriting of past provision |
-| 4 | Cohorts, additional services and evidence-backed coefficients | 100 million is a scale factor; health, education and personal choice are not a full national model | Versioned input registry with units, region, year, source and uncertainty; age/cohort transitions, voluntary qualification pathways and service capacity; distinguish synthetic and calibrated runs |
+| 4 — nutrition/order submodel implemented | Cohorts, additional services and evidence-backed coefficients | Two synthetic adult profiles and explicit preparation/delivery choice now work offline; retained nutrients, national demography, seasonal agriculture/feed/land, health and education remain incomplete | Versioned input registry with units, region, year, source and uncertainty; age/cohort transitions, voluntary qualification pathways and service capacity; distinguish synthetic and calibrated runs |
 | 5 | Reviewed integration into the live Rust service | Offline matrices do not currently create persistent runtime plans | Versioned scenario snapshots and drafts; stale-state rejection, atomic application, restart/retry and independent replay; no solver or AI authority to post or issue measure |
 | 6 | Participant-facing demonstrator and operational completion | Machine credentials are not resident identity; disputes, corrections and UI are incomplete | Scoped resident/organization access, evidence custody and dispute resolution, compensating events, accessible role-specific UI, overload and disaster-recovery tests; independent review before any consequential pilot |
 
@@ -355,7 +358,7 @@ coefficient registry, then cohorts and health/education services. Real trade
 specializations and general multi-day construction/training work remain open.
 
 
-Next-block acceptance criteria:
+Acceptance criteria set before the nutrient/order block (partial closure below):
 
 1. Version every food/profile coefficient with its physical unit, source, date,
    uncertainty and synthetic/calibrated status. Missing nutrient data must not be
@@ -369,3 +372,19 @@ Next-block acceptance criteria:
 4. Use independent feasibility checks and keep residual deficits visible. Do not
    introduce clinical advice, automatic entitlement restrictions or new monetary
    issuance through the offline calculation.
+
+
+### Nutrient/order gate — 7 November 2026
+
+Schema 11 adds exact per-profile checks, complete-data LP compilation, a pinned
+USDA composition extract, explicit preparation/delivery orders and agricultural
+requirements. Twenty-four candidate menus are checked independently; four-service
+mode scenarios expose kitchen/delivery gaps without duplicating food. Unknown
+retention/composition prevents a full-diet certificate. Existing monetary/lifecycle
+traces retain their original units and results.
+
+Next priorities are validated retained-nutrient recipes and preserved-stock
+profiles; children, pregnancy, lactation and other demographic needs; seasonal
+feed/crop/land and water capacity; then mapping these requirements into the dated
+runtime resource graph. Current order snapshots are offline and synthetic, not
+an operational resident-order system or an adopted national food standard.

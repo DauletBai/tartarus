@@ -1,0 +1,3520 @@
+{
+  "schema": 1,
+  "source_url": "https://fdc.nal.usda.gov/fdc-datasets/FoodData_Central_foundation_food_json_2026-04-30.zip",
+  "source_sha256": "186e988ec542e913f51ef62b86a47758e8cdd0d1dc3889e7b055581f3c09c77a",
+  "source_member": "FoodData_Central_foundation_food_json_2026-04-30.json",
+  "basis": "per 100 g edible portion, in the precise raw/dry/as-sold state described; not a cooked diet",
+  "quanta_per_unit": 1000000,
+  "foods": [
+    {
+      "id": "rice",
+      "sector": "grain",
+      "fdc_id": 2512380,
+      "description": "Rice, brown, long grain, unenriched, raw",
+      "publication_date": "4/20/2023",
+      "cells": [
+        {
+          "nutrient": "energy_atwater_general",
+          "unit": "kcal",
+          "quanta_per_100g": 366000000,
+          "usda_nutrient_id": 2047,
+          "origin": "USDA_published_value",
+          "source_amount": "366",
+          "source_unit": "kcal"
+        },
+        {
+          "nutrient": "protein",
+          "unit": "g",
+          "quanta_per_100g": 7250000,
+          "usda_nutrient_id": 1003,
+          "origin": "USDA_published_value",
+          "source_amount": "7.25",
+          "source_unit": "g"
+        },
+        {
+          "nutrient": "fat",
+          "unit": "g",
+          "quanta_per_100g": 3310000,
+          "usda_nutrient_id": 1004,
+          "origin": "USDA_published_value",
+          "source_amount": "3.31",
+          "source_unit": "g"
+        },
+        {
+          "nutrient": "carbohydrate_by_difference",
+          "unit": "g",
+          "quanta_per_100g": 76700000,
+          "usda_nutrient_id": 1005,
+          "origin": "USDA_published_value",
+          "source_amount": "76.7",
+          "source_unit": "g"
+        },
+        {
+          "nutrient": "fibre_total",
+          "unit": "g",
+          "quanta_per_100g": 3020000,
+          "usda_nutrient_id": 1079,
+          "origin": "USDA_published_value",
+          "source_amount": "3.02",
+          "source_unit": "g"
+        },
+        {
+          "nutrient": "calcium",
+          "unit": "mg",
+          "quanta_per_100g": 8060000,
+          "usda_nutrient_id": 1087,
+          "origin": "USDA_published_value",
+          "source_amount": "8.06",
+          "source_unit": "mg"
+        },
+        {
+          "nutrient": "iron",
+          "unit": "mg",
+          "quanta_per_100g": 1240000,
+          "usda_nutrient_id": 1089,
+          "origin": "USDA_published_value",
+          "source_amount": "1.24",
+          "source_unit": "mg"
+        },
+        {
+          "nutrient": "magnesium",
+          "unit": "mg",
+          "quanta_per_100g": 115000000,
+          "usda_nutrient_id": 1090,
+          "origin": "USDA_published_value",
+          "source_amount": "115",
+          "source_unit": "mg"
+        },
+        {
+          "nutrient": "phosphorus",
+          "unit": "mg",
+          "quanta_per_100g": 303000000,
+          "usda_nutrient_id": 1091,
+          "origin": "USDA_published_value",
+          "source_amount": "303",
+          "source_unit": "mg"
+        },
+        {
+          "nutrient": "potassium",
+          "unit": "mg",
+          "quanta_per_100g": 250000000,
+          "usda_nutrient_id": 1092,
+          "origin": "USDA_published_value",
+          "source_amount": "250",
+          "source_unit": "mg"
+        },
+        {
+          "nutrient": "sodium",
+          "unit": "mg",
+          "quanta_per_100g": 0,
+          "usda_nutrient_id": 1093,
+          "origin": "USDA_published_value",
+          "source_amount": "0.000",
+          "source_unit": "mg"
+        },
+        {
+          "nutrient": "zinc",
+          "unit": "mg",
+          "quanta_per_100g": 1850000,
+          "usda_nutrient_id": 1095,
+          "origin": "USDA_published_value",
+          "source_amount": "1.85",
+          "source_unit": "mg"
+        },
+        {
+          "nutrient": "copper",
+          "unit": "mg",
+          "quanta_per_100g": 266000,
+          "usda_nutrient_id": 1098,
+          "origin": "USDA_published_value",
+          "source_amount": "0.266",
+          "source_unit": "mg"
+        },
+        {
+          "nutrient": "selenium",
+          "unit": "µg",
+          "quanta_per_100g": 14800000,
+          "usda_nutrient_id": 1103,
+          "origin": "USDA_published_value",
+          "source_amount": "14.8",
+          "source_unit": "µg"
+        },
+        {
+          "nutrient": "iodine",
+          "unit": "µg",
+          "quanta_per_100g": null,
+          "usda_nutrient_id": 1100,
+          "origin": "not_reported",
+          "source_amount": null,
+          "source_unit": null
+        },
+        {
+          "nutrient": "vitamin_a_RE",
+          "unit": "µg RE",
+          "quanta_per_100g": null,
+          "usda_nutrient_id": null,
+          "origin": "not_reported",
+          "source_amount": null,
+          "source_unit": null
+        },
+        {
+          "nutrient": "vitamin_c",
+          "unit": "mg",
+          "quanta_per_100g": null,
+          "usda_nutrient_id": 1162,
+          "origin": "not_reported",
+          "source_amount": null,
+          "source_unit": null
+        },
+        {
+          "nutrient": "vitamin_d_D2_D3",
+          "unit": "µg",
+          "quanta_per_100g": null,
+          "usda_nutrient_id": 1114,
+          "origin": "not_reported",
+          "source_amount": null,
+          "source_unit": null
+        },
+        {
+          "nutrient": "vitamin_e_alpha_tocopherol",
+          "unit": "mg",
+          "quanta_per_100g": null,
+          "usda_nutrient_id": 1109,
+          "origin": "not_reported",
+          "source_amount": null,
+          "source_unit": null
+        },
+        {
+          "nutrient": "vitamin_k_phylloquinone",
+          "unit": "µg",
+          "quanta_per_100g": null,
+          "usda_nutrient_id": 1185,
+          "origin": "not_reported",
+          "source_amount": null,
+          "source_unit": null
+        },
+        {
+          "nutrient": "thiamin",
+          "unit": "mg",
+          "quanta_per_100g": 326000,
+          "usda_nutrient_id": 1165,
+          "origin": "USDA_published_value",
+          "source_amount": "0.326",
+          "source_unit": "mg"
+        },
+        {
+          "nutrient": "riboflavin",
+          "unit": "mg",
+          "quanta_per_100g": 102000,
+          "usda_nutrient_id": 1166,
+          "origin": "USDA_published_value",
+          "source_amount": "0.102",
+          "source_unit": "mg"
+        },
+        {
+          "nutrient": "vitamin_b6",
+          "unit": "mg",
+          "quanta_per_100g": 161000,
+          "usda_nutrient_id": 1175,
+          "origin": "USDA_published_value",
+          "source_amount": "0.161",
+          "source_unit": "mg"
+        },
+        {
+          "nutrient": "vitamin_b12",
+          "unit": "µg",
+          "quanta_per_100g": null,
+          "usda_nutrient_id": 1178,
+          "origin": "not_reported",
+          "source_amount": null,
+          "source_unit": null
+        },
+        {
+          "nutrient": "folate_DFE",
+          "unit": "µg DFE",
+          "quanta_per_100g": null,
+          "usda_nutrient_id": 1190,
+          "origin": "not_reported",
+          "source_amount": null,
+          "source_unit": null
+        },
+        {
+          "nutrient": "choline",
+          "unit": "mg",
+          "quanta_per_100g": null,
+          "usda_nutrient_id": 1180,
+          "origin": "not_reported",
+          "source_amount": null,
+          "source_unit": null
+        },
+        {
+          "nutrient": "niacin_NE",
+          "unit": "mg NE",
+          "quanta_per_100g": null,
+          "usda_nutrient_id": null,
+          "origin": "not_reported",
+          "source_amount": null,
+          "source_unit": null
+        },
+        {
+          "nutrient": "biotin",
+          "unit": "µg",
+          "quanta_per_100g": 4990000,
+          "usda_nutrient_id": 1176,
+          "origin": "USDA_published_value",
+          "source_amount": "4.99",
+          "source_unit": "µg"
+        },
+        {
+          "nutrient": "pantothenic_acid",
+          "unit": "mg",
+          "quanta_per_100g": null,
+          "usda_nutrient_id": 1170,
+          "origin": "not_reported",
+          "source_amount": null,
+          "source_unit": null
+        }
+      ]
+    },
+    {
+      "id": "oats",
+      "sector": "grain",
+      "fdc_id": 2346396,
+      "description": "Oats, whole grain, rolled, old fashioned",
+      "publication_date": "10/28/2022",
+      "cells": [
+        {
+          "nutrient": "energy_atwater_general",
+          "unit": "kcal",
+          "quanta_per_100g": 382000000,
+          "usda_nutrient_id": 2047,
+          "origin": "USDA_published_value",
+          "source_amount": "382",
+          "source_unit": "kcal"
+        },
+        {
+          "nutrient": "protein",
+          "unit": "g",
+          "quanta_per_100g": 13500000,
+          "usda_nutrient_id": 1003,
+          "origin": "USDA_published_value",
+          "source_amount": "13.5",
+          "source_unit": "g"
+        },
+        {
+          "nutrient": "fat",
+          "unit": "g",
+          "quanta_per_100g": 5890000,
+          "usda_nutrient_id": 1004,
+          "origin": "USDA_published_value",
+          "source_amount": "5.89",
+          "source_unit": "g"
+        },
+        {
+          "nutrient": "carbohydrate_by_difference",
+          "unit": "g",
+          "quanta_per_100g": 68700000,
+          "usda_nutrient_id": 1005,
+          "origin": "USDA_published_value",
+          "source_amount": "68.7",
+          "source_unit": "g"
+        },
+        {
+          "nutrient": "fibre_total",
+          "unit": "g",
+          "quanta_per_100g": null,
+          "usda_nutrient_id": 1079,
+          "origin": "not_reported",
+          "source_amount": null,
+          "source_unit": null
+        },
+        {
+          "nutrient": "calcium",
+          "unit": "mg",
+          "quanta_per_100g": 45500000,
+          "usda_nutrient_id": 1087,
+          "origin": "USDA_published_value",
+          "source_amount": "45.5",
+          "source_unit": "mg"
+        },
+        {
+          "nutrient": "iron",
+          "unit": "mg",
+          "quanta_per_100g": 4340000,
+          "usda_nutrient_id": 1089,
+          "origin": "USDA_published_value",
+          "source_amount": "4.34",
+          "source_unit": "mg"
+        },
+        {
+          "nutrient": "magnesium",
+          "unit": "mg",
+          "quanta_per_100g": 126000000,
+          "usda_nutrient_id": 1090,
+          "origin": "USDA_published_value",
+          "source_amount": "126",
+          "source_unit": "mg"
+        },
+        {
+          "nutrient": "phosphorus",
+          "unit": "mg",
+          "quanta_per_100g": 387000000,
+          "usda_nutrient_id": 1091,
+          "origin": "USDA_published_value",
+          "source_amount": "387",
+          "source_unit": "mg"
+        },
+        {
+          "nutrient": "potassium",
+          "unit": "mg",
+          "quanta_per_100g": 350000000,
+          "usda_nutrient_id": 1092,
+          "origin": "USDA_published_value",
+          "source_amount": "350",
+          "source_unit": "mg"
+        },
+        {
+          "nutrient": "sodium",
+          "unit": "mg",
+          "quanta_per_100g": 668000,
+          "usda_nutrient_id": 1093,
+          "origin": "USDA_published_value",
+          "source_amount": "0.668",
+          "source_unit": "mg"
+        },
+        {
+          "nutrient": "zinc",
+          "unit": "mg",
+          "quanta_per_100g": 2740000,
+          "usda_nutrient_id": 1095,
+          "origin": "USDA_published_value",
+          "source_amount": "2.74",
+          "source_unit": "mg"
+        },
+        {
+          "nutrient": "copper",
+          "unit": "mg",
+          "quanta_per_100g": 428000,
+          "usda_nutrient_id": 1098,
+          "origin": "USDA_published_value",
+          "source_amount": "0.428",
+          "source_unit": "mg"
+        },
+        {
+          "nutrient": "selenium",
+          "unit": "µg",
+          "quanta_per_100g": 25400000,
+          "usda_nutrient_id": 1103,
+          "origin": "USDA_published_value",
+          "source_amount": "25.4",
+          "source_unit": "µg"
+        },
+        {
+          "nutrient": "iodine",
+          "unit": "µg",
+          "quanta_per_100g": null,
+          "usda_nutrient_id": 1100,
+          "origin": "not_reported",
+          "source_amount": null,
+          "source_unit": null
+        },
+        {
+          "nutrient": "vitamin_a_RE",
+          "unit": "µg RE",
+          "quanta_per_100g": null,
+          "usda_nutrient_id": null,
+          "origin": "not_reported",
+          "source_amount": null,
+          "source_unit": null
+        },
+        {
+          "nutrient": "vitamin_c",
+          "unit": "mg",
+          "quanta_per_100g": null,
+          "usda_nutrient_id": 1162,
+          "origin": "not_reported",
+          "source_amount": null,
+          "source_unit": null
+        },
+        {
+          "nutrient": "vitamin_d_D2_D3",
+          "unit": "µg",
+          "quanta_per_100g": null,
+          "usda_nutrient_id": 1114,
+          "origin": "not_reported",
+          "source_amount": null,
+          "source_unit": null
+        },
+        {
+          "nutrient": "vitamin_e_alpha_tocopherol",
+          "unit": "mg",
+          "quanta_per_100g": null,
+          "usda_nutrient_id": 1109,
+          "origin": "not_reported",
+          "source_amount": null,
+          "source_unit": null
+        },
+        {
+          "nutrient": "vitamin_k_phylloquinone",
+          "unit": "µg",
+          "quanta_per_100g": null,
+          "usda_nutrient_id": 1185,
+          "origin": "not_reported",
+          "source_amount": null,
+          "source_unit": null
+        },
+        {
+          "nutrient": "thiamin",
+          "unit": "mg",
+          "quanta_per_100g": 406000,
+          "usda_nutrient_id": 1165,
+          "origin": "USDA_published_value",
+          "source_amount": "0.406",
+          "source_unit": "mg"
+        },
+        {
+          "nutrient": "riboflavin",
+          "unit": "mg",
+          "quanta_per_100g": null,
+          "usda_nutrient_id": 1166,
+          "origin": "not_reported",
+          "source_amount": null,
+          "source_unit": null
+        },
+        {
+          "nutrient": "vitamin_b6",
+          "unit": "mg",
+          "quanta_per_100g": 135000,
+          "usda_nutrient_id": 1175,
+          "origin": "USDA_published_value",
+          "source_amount": "0.135",
+          "source_unit": "mg"
+        },
+        {
+          "nutrient": "vitamin_b12",
+          "unit": "µg",
+          "quanta_per_100g": null,
+          "usda_nutrient_id": 1178,
+          "origin": "not_reported",
+          "source_amount": null,
+          "source_unit": null
+        },
+        {
+          "nutrient": "folate_DFE",
+          "unit": "µg DFE",
+          "quanta_per_100g": null,
+          "usda_nutrient_id": 1190,
+          "origin": "not_reported",
+          "source_amount": null,
+          "source_unit": null
+        },
+        {
+          "nutrient": "choline",
+          "unit": "mg",
+          "quanta_per_100g": null,
+          "usda_nutrient_id": 1180,
+          "origin": "not_reported",
+          "source_amount": null,
+          "source_unit": null
+        },
+        {
+          "nutrient": "niacin_NE",
+          "unit": "mg NE",
+          "quanta_per_100g": null,
+          "usda_nutrient_id": null,
+          "origin": "not_reported",
+          "source_amount": null,
+          "source_unit": null
+        },
+        {
+          "nutrient": "biotin",
+          "unit": "µg",
+          "quanta_per_100g": 21900000,
+          "usda_nutrient_id": 1176,
+          "origin": "USDA_published_value",
+          "source_amount": "21.9",
+          "source_unit": "µg"
+        },
+        {
+          "nutrient": "pantothenic_acid",
+          "unit": "mg",
+          "quanta_per_100g": null,
+          "usda_nutrient_id": 1170,
+          "origin": "not_reported",
+          "source_amount": null,
+          "source_unit": null
+        }
+      ]
+    },
+    {
+      "id": "lentils",
+      "sector": "pulses",
+      "fdc_id": 2644283,
+      "description": "Lentils, dry",
+      "publication_date": "10/26/2023",
+      "cells": [
+        {
+          "nutrient": "energy_atwater_general",
+          "unit": "kcal",
+          "quanta_per_100g": 360000000,
+          "usda_nutrient_id": 2047,
+          "origin": "USDA_published_value",
+          "source_amount": "360",
+          "source_unit": "kcal"
+        },
+        {
+          "nutrient": "protein",
+          "unit": "g",
+          "quanta_per_100g": 23600000,
+          "usda_nutrient_id": 1003,
+          "origin": "USDA_published_value",
+          "source_amount": "23.6",
+          "source_unit": "g"
+        },
+        {
+          "nutrient": "fat",
+          "unit": "g",
+          "quanta_per_100g": 1920000,
+          "usda_nutrient_id": 1004,
+          "origin": "USDA_published_value",
+          "source_amount": "1.92",
+          "source_unit": "g"
+        },
+        {
+          "nutrient": "carbohydrate_by_difference",
+          "unit": "g",
+          "quanta_per_100g": 62200000,
+          "usda_nutrient_id": 1005,
+          "origin": "USDA_published_value",
+          "source_amount": "62.2",
+          "source_unit": "g"
+        },
+        {
+          "nutrient": "fibre_total",
+          "unit": "g",
+          "quanta_per_100g": null,
+          "usda_nutrient_id": 1079,
+          "origin": "not_reported",
+          "source_amount": null,
+          "source_unit": null
+        },
+        {
+          "nutrient": "calcium",
+          "unit": "mg",
+          "quanta_per_100g": 61800000,
+          "usda_nutrient_id": 1087,
+          "origin": "USDA_published_value",
+          "source_amount": "61.8",
+          "source_unit": "mg"
+        },
+        {
+          "nutrient": "iron",
+          "unit": "mg",
+          "quanta_per_100g": 7160000,
+          "usda_nutrient_id": 1089,
+          "origin": "USDA_published_value",
+          "source_amount": "7.16",
+          "source_unit": "mg"
+        },
+        {
+          "nutrient": "magnesium",
+          "unit": "mg",
+          "quanta_per_100g": 107000000,
+          "usda_nutrient_id": 1090,
+          "origin": "USDA_published_value",
+          "source_amount": "107",
+          "source_unit": "mg"
+        },
+        {
+          "nutrient": "phosphorus",
+          "unit": "mg",
+          "quanta_per_100g": 374000000,
+          "usda_nutrient_id": 1091,
+          "origin": "USDA_published_value",
+          "source_amount": "374",
+          "source_unit": "mg"
+        },
+        {
+          "nutrient": "potassium",
+          "unit": "mg",
+          "quanta_per_100g": 949000000,
+          "usda_nutrient_id": 1092,
+          "origin": "USDA_published_value",
+          "source_amount": "949",
+          "source_unit": "mg"
+        },
+        {
+          "nutrient": "sodium",
+          "unit": "mg",
+          "quanta_per_100g": 0,
+          "usda_nutrient_id": 1093,
+          "origin": "USDA_published_value",
+          "source_amount": "0.000",
+          "source_unit": "mg"
+        },
+        {
+          "nutrient": "zinc",
+          "unit": "mg",
+          "quanta_per_100g": 3860000,
+          "usda_nutrient_id": 1095,
+          "origin": "USDA_published_value",
+          "source_amount": "3.86",
+          "source_unit": "mg"
+        },
+        {
+          "nutrient": "copper",
+          "unit": "mg",
+          "quanta_per_100g": 838000,
+          "usda_nutrient_id": 1098,
+          "origin": "USDA_published_value",
+          "source_amount": "0.838",
+          "source_unit": "mg"
+        },
+        {
+          "nutrient": "selenium",
+          "unit": "µg",
+          "quanta_per_100g": null,
+          "usda_nutrient_id": 1103,
+          "origin": "not_reported",
+          "source_amount": null,
+          "source_unit": null
+        },
+        {
+          "nutrient": "iodine",
+          "unit": "µg",
+          "quanta_per_100g": null,
+          "usda_nutrient_id": 1100,
+          "origin": "not_reported",
+          "source_amount": null,
+          "source_unit": null
+        },
+        {
+          "nutrient": "vitamin_a_RE",
+          "unit": "µg RE",
+          "quanta_per_100g": null,
+          "usda_nutrient_id": null,
+          "origin": "not_reported",
+          "source_amount": null,
+          "source_unit": null
+        },
+        {
+          "nutrient": "vitamin_c",
+          "unit": "mg",
+          "quanta_per_100g": null,
+          "usda_nutrient_id": 1162,
+          "origin": "not_reported",
+          "source_amount": null,
+          "source_unit": null
+        },
+        {
+          "nutrient": "vitamin_d_D2_D3",
+          "unit": "µg",
+          "quanta_per_100g": null,
+          "usda_nutrient_id": 1114,
+          "origin": "not_reported",
+          "source_amount": null,
+          "source_unit": null
+        },
+        {
+          "nutrient": "vitamin_e_alpha_tocopherol",
+          "unit": "mg",
+          "quanta_per_100g": null,
+          "usda_nutrient_id": 1109,
+          "origin": "not_reported",
+          "source_amount": null,
+          "source_unit": null
+        },
+        {
+          "nutrient": "vitamin_k_phylloquinone",
+          "unit": "µg",
+          "quanta_per_100g": null,
+          "usda_nutrient_id": 1185,
+          "origin": "not_reported",
+          "source_amount": null,
+          "source_unit": null
+        },
+        {
+          "nutrient": "thiamin",
+          "unit": "mg",
+          "quanta_per_100g": null,
+          "usda_nutrient_id": 1165,
+          "origin": "not_reported",
+          "source_amount": null,
+          "source_unit": null
+        },
+        {
+          "nutrient": "riboflavin",
+          "unit": "mg",
+          "quanta_per_100g": null,
+          "usda_nutrient_id": 1166,
+          "origin": "not_reported",
+          "source_amount": null,
+          "source_unit": null
+        },
+        {
+          "nutrient": "vitamin_b6",
+          "unit": "mg",
+          "quanta_per_100g": null,
+          "usda_nutrient_id": 1175,
+          "origin": "not_reported",
+          "source_amount": null,
+          "source_unit": null
+        },
+        {
+          "nutrient": "vitamin_b12",
+          "unit": "µg",
+          "quanta_per_100g": null,
+          "usda_nutrient_id": 1178,
+          "origin": "not_reported",
+          "source_amount": null,
+          "source_unit": null
+        },
+        {
+          "nutrient": "folate_DFE",
+          "unit": "µg DFE",
+          "quanta_per_100g": null,
+          "usda_nutrient_id": 1190,
+          "origin": "not_reported",
+          "source_amount": null,
+          "source_unit": null
+        },
+        {
+          "nutrient": "choline",
+          "unit": "mg",
+          "quanta_per_100g": null,
+          "usda_nutrient_id": 1180,
+          "origin": "not_reported",
+          "source_amount": null,
+          "source_unit": null
+        },
+        {
+          "nutrient": "niacin_NE",
+          "unit": "mg NE",
+          "quanta_per_100g": null,
+          "usda_nutrient_id": null,
+          "origin": "not_reported",
+          "source_amount": null,
+          "source_unit": null
+        },
+        {
+          "nutrient": "biotin",
+          "unit": "µg",
+          "quanta_per_100g": null,
+          "usda_nutrient_id": 1176,
+          "origin": "not_reported",
+          "source_amount": null,
+          "source_unit": null
+        },
+        {
+          "nutrient": "pantothenic_acid",
+          "unit": "mg",
+          "quanta_per_100g": null,
+          "usda_nutrient_id": 1170,
+          "origin": "not_reported",
+          "source_amount": null,
+          "source_unit": null
+        }
+      ]
+    },
+    {
+      "id": "chicken",
+      "sector": "meat",
+      "fdc_id": 2646170,
+      "description": "Chicken, breast, boneless, skinless, raw",
+      "publication_date": "10/26/2023",
+      "cells": [
+        {
+          "nutrient": "energy_atwater_general",
+          "unit": "kcal",
+          "quanta_per_100g": 106000000,
+          "usda_nutrient_id": 2047,
+          "origin": "USDA_published_value",
+          "source_amount": "106",
+          "source_unit": "kcal"
+        },
+        {
+          "nutrient": "protein",
+          "unit": "g",
+          "quanta_per_100g": 22500000,
+          "usda_nutrient_id": 1003,
+          "origin": "USDA_published_value",
+          "source_amount": "22.5",
+          "source_unit": "g"
+        },
+        {
+          "nutrient": "fat",
+          "unit": "g",
+          "quanta_per_100g": 1930000,
+          "usda_nutrient_id": 1004,
+          "origin": "USDA_published_value",
+          "source_amount": "1.93",
+          "source_unit": "g"
+        },
+        {
+          "nutrient": "carbohydrate_by_difference",
+          "unit": "g",
+          "quanta_per_100g": 0,
+          "usda_nutrient_id": 1005,
+          "origin": "USDA_published_value",
+          "source_amount": "0.000",
+          "source_unit": "g"
+        },
+        {
+          "nutrient": "fibre_total",
+          "unit": "g",
+          "quanta_per_100g": null,
+          "usda_nutrient_id": 1079,
+          "origin": "not_reported",
+          "source_amount": null,
+          "source_unit": null
+        },
+        {
+          "nutrient": "calcium",
+          "unit": "mg",
+          "quanta_per_100g": 3940000,
+          "usda_nutrient_id": 1087,
+          "origin": "USDA_published_value",
+          "source_amount": "3.94",
+          "source_unit": "mg"
+        },
+        {
+          "nutrient": "iron",
+          "unit": "mg",
+          "quanta_per_100g": 354000,
+          "usda_nutrient_id": 1089,
+          "origin": "USDA_published_value",
+          "source_amount": "0.354",
+          "source_unit": "mg"
+        },
+        {
+          "nutrient": "magnesium",
+          "unit": "mg",
+          "quanta_per_100g": 26200000,
+          "usda_nutrient_id": 1090,
+          "origin": "USDA_published_value",
+          "source_amount": "26.2",
+          "source_unit": "mg"
+        },
+        {
+          "nutrient": "phosphorus",
+          "unit": "mg",
+          "quanta_per_100g": 215000000,
+          "usda_nutrient_id": 1091,
+          "origin": "USDA_published_value",
+          "source_amount": "215",
+          "source_unit": "mg"
+        },
+        {
+          "nutrient": "potassium",
+          "unit": "mg",
+          "quanta_per_100g": 330000000,
+          "usda_nutrient_id": 1092,
+          "origin": "USDA_published_value",
+          "source_amount": "330",
+          "source_unit": "mg"
+        },
+        {
+          "nutrient": "sodium",
+          "unit": "mg",
+          "quanta_per_100g": 65800000,
+          "usda_nutrient_id": 1093,
+          "origin": "USDA_published_value",
+          "source_amount": "65.8",
+          "source_unit": "mg"
+        },
+        {
+          "nutrient": "zinc",
+          "unit": "mg",
+          "quanta_per_100g": 654000,
+          "usda_nutrient_id": 1095,
+          "origin": "USDA_published_value",
+          "source_amount": "0.654",
+          "source_unit": "mg"
+        },
+        {
+          "nutrient": "copper",
+          "unit": "mg",
+          "quanta_per_100g": 4000,
+          "usda_nutrient_id": 1098,
+          "origin": "USDA_published_value",
+          "source_amount": "0.004",
+          "source_unit": "mg"
+        },
+        {
+          "nutrient": "selenium",
+          "unit": "µg",
+          "quanta_per_100g": null,
+          "usda_nutrient_id": 1103,
+          "origin": "not_reported",
+          "source_amount": null,
+          "source_unit": null
+        },
+        {
+          "nutrient": "iodine",
+          "unit": "µg",
+          "quanta_per_100g": null,
+          "usda_nutrient_id": 1100,
+          "origin": "not_reported",
+          "source_amount": null,
+          "source_unit": null
+        },
+        {
+          "nutrient": "vitamin_a_RE",
+          "unit": "µg RE",
+          "quanta_per_100g": null,
+          "usda_nutrient_id": null,
+          "origin": "not_reported",
+          "source_amount": null,
+          "source_unit": null
+        },
+        {
+          "nutrient": "vitamin_c",
+          "unit": "mg",
+          "quanta_per_100g": null,
+          "usda_nutrient_id": 1162,
+          "origin": "not_reported",
+          "source_amount": null,
+          "source_unit": null
+        },
+        {
+          "nutrient": "vitamin_d_D2_D3",
+          "unit": "µg",
+          "quanta_per_100g": null,
+          "usda_nutrient_id": 1114,
+          "origin": "not_reported",
+          "source_amount": null,
+          "source_unit": null
+        },
+        {
+          "nutrient": "vitamin_e_alpha_tocopherol",
+          "unit": "mg",
+          "quanta_per_100g": null,
+          "usda_nutrient_id": 1109,
+          "origin": "not_reported",
+          "source_amount": null,
+          "source_unit": null
+        },
+        {
+          "nutrient": "vitamin_k_phylloquinone",
+          "unit": "µg",
+          "quanta_per_100g": null,
+          "usda_nutrient_id": 1185,
+          "origin": "not_reported",
+          "source_amount": null,
+          "source_unit": null
+        },
+        {
+          "nutrient": "thiamin",
+          "unit": "mg",
+          "quanta_per_100g": null,
+          "usda_nutrient_id": 1165,
+          "origin": "not_reported",
+          "source_amount": null,
+          "source_unit": null
+        },
+        {
+          "nutrient": "riboflavin",
+          "unit": "mg",
+          "quanta_per_100g": null,
+          "usda_nutrient_id": 1166,
+          "origin": "not_reported",
+          "source_amount": null,
+          "source_unit": null
+        },
+        {
+          "nutrient": "vitamin_b6",
+          "unit": "mg",
+          "quanta_per_100g": null,
+          "usda_nutrient_id": 1175,
+          "origin": "not_reported",
+          "source_amount": null,
+          "source_unit": null
+        },
+        {
+          "nutrient": "vitamin_b12",
+          "unit": "µg",
+          "quanta_per_100g": null,
+          "usda_nutrient_id": 1178,
+          "origin": "not_reported",
+          "source_amount": null,
+          "source_unit": null
+        },
+        {
+          "nutrient": "folate_DFE",
+          "unit": "µg DFE",
+          "quanta_per_100g": null,
+          "usda_nutrient_id": 1190,
+          "origin": "not_reported",
+          "source_amount": null,
+          "source_unit": null
+        },
+        {
+          "nutrient": "choline",
+          "unit": "mg",
+          "quanta_per_100g": null,
+          "usda_nutrient_id": 1180,
+          "origin": "not_reported",
+          "source_amount": null,
+          "source_unit": null
+        },
+        {
+          "nutrient": "niacin_NE",
+          "unit": "mg NE",
+          "quanta_per_100g": null,
+          "usda_nutrient_id": null,
+          "origin": "not_reported",
+          "source_amount": null,
+          "source_unit": null
+        },
+        {
+          "nutrient": "biotin",
+          "unit": "µg",
+          "quanta_per_100g": null,
+          "usda_nutrient_id": 1176,
+          "origin": "not_reported",
+          "source_amount": null,
+          "source_unit": null
+        },
+        {
+          "nutrient": "pantothenic_acid",
+          "unit": "mg",
+          "quanta_per_100g": null,
+          "usda_nutrient_id": 1170,
+          "origin": "not_reported",
+          "source_amount": null,
+          "source_unit": null
+        }
+      ]
+    },
+    {
+      "id": "beef",
+      "sector": "meat",
+      "fdc_id": 2646173,
+      "description": "Beef, round, top round, boneless, choice, raw",
+      "publication_date": "10/26/2023",
+      "cells": [
+        {
+          "nutrient": "energy_atwater_general",
+          "unit": "kcal",
+          "quanta_per_100g": 141000000,
+          "usda_nutrient_id": 2047,
+          "origin": "USDA_published_value",
+          "source_amount": "141",
+          "source_unit": "kcal"
+        },
+        {
+          "nutrient": "protein",
+          "unit": "g",
+          "quanta_per_100g": 21500000,
+          "usda_nutrient_id": 1003,
+          "origin": "USDA_published_value",
+          "source_amount": "21.5",
+          "source_unit": "g"
+        },
+        {
+          "nutrient": "fat",
+          "unit": "g",
+          "quanta_per_100g": 5700000,
+          "usda_nutrient_id": 1004,
+          "origin": "USDA_published_value",
+          "source_amount": "5.70",
+          "source_unit": "g"
+        },
+        {
+          "nutrient": "carbohydrate_by_difference",
+          "unit": "g",
+          "quanta_per_100g": 852000,
+          "usda_nutrient_id": 1005,
+          "origin": "USDA_published_value",
+          "source_amount": "0.852",
+          "source_unit": "g"
+        },
+        {
+          "nutrient": "fibre_total",
+          "unit": "g",
+          "quanta_per_100g": null,
+          "usda_nutrient_id": 1079,
+          "origin": "not_reported",
+          "source_amount": null,
+          "source_unit": null
+        },
+        {
+          "nutrient": "calcium",
+          "unit": "mg",
+          "quanta_per_100g": 4070000,
+          "usda_nutrient_id": 1087,
+          "origin": "USDA_published_value",
+          "source_amount": "4.07",
+          "source_unit": "mg"
+        },
+        {
+          "nutrient": "iron",
+          "unit": "mg",
+          "quanta_per_100g": 1900000,
+          "usda_nutrient_id": 1089,
+          "origin": "USDA_published_value",
+          "source_amount": "1.90",
+          "source_unit": "mg"
+        },
+        {
+          "nutrient": "magnesium",
+          "unit": "mg",
+          "quanta_per_100g": 22100000,
+          "usda_nutrient_id": 1090,
+          "origin": "USDA_published_value",
+          "source_amount": "22.1",
+          "source_unit": "mg"
+        },
+        {
+          "nutrient": "phosphorus",
+          "unit": "mg",
+          "quanta_per_100g": 192000000,
+          "usda_nutrient_id": 1091,
+          "origin": "USDA_published_value",
+          "source_amount": "192",
+          "source_unit": "mg"
+        },
+        {
+          "nutrient": "potassium",
+          "unit": "mg",
+          "quanta_per_100g": 352000000,
+          "usda_nutrient_id": 1092,
+          "origin": "USDA_published_value",
+          "source_amount": "352",
+          "source_unit": "mg"
+        },
+        {
+          "nutrient": "sodium",
+          "unit": "mg",
+          "quanta_per_100g": 45500000,
+          "usda_nutrient_id": 1093,
+          "origin": "USDA_published_value",
+          "source_amount": "45.5",
+          "source_unit": "mg"
+        },
+        {
+          "nutrient": "zinc",
+          "unit": "mg",
+          "quanta_per_100g": 3780000,
+          "usda_nutrient_id": 1095,
+          "origin": "USDA_published_value",
+          "source_amount": "3.78",
+          "source_unit": "mg"
+        },
+        {
+          "nutrient": "copper",
+          "unit": "mg",
+          "quanta_per_100g": 55000,
+          "usda_nutrient_id": 1098,
+          "origin": "USDA_published_value",
+          "source_amount": "0.055",
+          "source_unit": "mg"
+        },
+        {
+          "nutrient": "selenium",
+          "unit": "µg",
+          "quanta_per_100g": null,
+          "usda_nutrient_id": 1103,
+          "origin": "not_reported",
+          "source_amount": null,
+          "source_unit": null
+        },
+        {
+          "nutrient": "iodine",
+          "unit": "µg",
+          "quanta_per_100g": null,
+          "usda_nutrient_id": 1100,
+          "origin": "not_reported",
+          "source_amount": null,
+          "source_unit": null
+        },
+        {
+          "nutrient": "vitamin_a_RE",
+          "unit": "µg RE",
+          "quanta_per_100g": null,
+          "usda_nutrient_id": null,
+          "origin": "not_reported",
+          "source_amount": null,
+          "source_unit": null
+        },
+        {
+          "nutrient": "vitamin_c",
+          "unit": "mg",
+          "quanta_per_100g": null,
+          "usda_nutrient_id": 1162,
+          "origin": "not_reported",
+          "source_amount": null,
+          "source_unit": null
+        },
+        {
+          "nutrient": "vitamin_d_D2_D3",
+          "unit": "µg",
+          "quanta_per_100g": null,
+          "usda_nutrient_id": 1114,
+          "origin": "not_reported",
+          "source_amount": null,
+          "source_unit": null
+        },
+        {
+          "nutrient": "vitamin_e_alpha_tocopherol",
+          "unit": "mg",
+          "quanta_per_100g": null,
+          "usda_nutrient_id": 1109,
+          "origin": "not_reported",
+          "source_amount": null,
+          "source_unit": null
+        },
+        {
+          "nutrient": "vitamin_k_phylloquinone",
+          "unit": "µg",
+          "quanta_per_100g": null,
+          "usda_nutrient_id": 1185,
+          "origin": "not_reported",
+          "source_amount": null,
+          "source_unit": null
+        },
+        {
+          "nutrient": "thiamin",
+          "unit": "mg",
+          "quanta_per_100g": null,
+          "usda_nutrient_id": 1165,
+          "origin": "not_reported",
+          "source_amount": null,
+          "source_unit": null
+        },
+        {
+          "nutrient": "riboflavin",
+          "unit": "mg",
+          "quanta_per_100g": null,
+          "usda_nutrient_id": 1166,
+          "origin": "not_reported",
+          "source_amount": null,
+          "source_unit": null
+        },
+        {
+          "nutrient": "vitamin_b6",
+          "unit": "mg",
+          "quanta_per_100g": null,
+          "usda_nutrient_id": 1175,
+          "origin": "not_reported",
+          "source_amount": null,
+          "source_unit": null
+        },
+        {
+          "nutrient": "vitamin_b12",
+          "unit": "µg",
+          "quanta_per_100g": null,
+          "usda_nutrient_id": 1178,
+          "origin": "not_reported",
+          "source_amount": null,
+          "source_unit": null
+        },
+        {
+          "nutrient": "folate_DFE",
+          "unit": "µg DFE",
+          "quanta_per_100g": null,
+          "usda_nutrient_id": 1190,
+          "origin": "not_reported",
+          "source_amount": null,
+          "source_unit": null
+        },
+        {
+          "nutrient": "choline",
+          "unit": "mg",
+          "quanta_per_100g": null,
+          "usda_nutrient_id": 1180,
+          "origin": "not_reported",
+          "source_amount": null,
+          "source_unit": null
+        },
+        {
+          "nutrient": "niacin_NE",
+          "unit": "mg NE",
+          "quanta_per_100g": null,
+          "usda_nutrient_id": null,
+          "origin": "not_reported",
+          "source_amount": null,
+          "source_unit": null
+        },
+        {
+          "nutrient": "biotin",
+          "unit": "µg",
+          "quanta_per_100g": null,
+          "usda_nutrient_id": 1176,
+          "origin": "not_reported",
+          "source_amount": null,
+          "source_unit": null
+        },
+        {
+          "nutrient": "pantothenic_acid",
+          "unit": "mg",
+          "quanta_per_100g": null,
+          "usda_nutrient_id": 1170,
+          "origin": "not_reported",
+          "source_amount": null,
+          "source_unit": null
+        }
+      ]
+    },
+    {
+      "id": "salmon",
+      "sector": "fish",
+      "fdc_id": 2684441,
+      "description": "Fish, salmon, Atlantic, farm raised, raw",
+      "publication_date": "4/18/2024",
+      "cells": [
+        {
+          "nutrient": "energy_atwater_general",
+          "unit": "kcal",
+          "quanta_per_100g": 197000000,
+          "usda_nutrient_id": 2047,
+          "origin": "USDA_published_value",
+          "source_amount": "197",
+          "source_unit": "kcal"
+        },
+        {
+          "nutrient": "protein",
+          "unit": "g",
+          "quanta_per_100g": 20300000,
+          "usda_nutrient_id": 1003,
+          "origin": "USDA_published_value",
+          "source_amount": "20.3",
+          "source_unit": "g"
+        },
+        {
+          "nutrient": "fat",
+          "unit": "g",
+          "quanta_per_100g": 13100000,
+          "usda_nutrient_id": 1004,
+          "origin": "USDA_published_value",
+          "source_amount": "13.1",
+          "source_unit": "g"
+        },
+        {
+          "nutrient": "carbohydrate_by_difference",
+          "unit": "g",
+          "quanta_per_100g": 0,
+          "usda_nutrient_id": 1005,
+          "origin": "USDA_published_value",
+          "source_amount": "0.000",
+          "source_unit": "g"
+        },
+        {
+          "nutrient": "fibre_total",
+          "unit": "g",
+          "quanta_per_100g": null,
+          "usda_nutrient_id": 1079,
+          "origin": "not_reported",
+          "source_amount": null,
+          "source_unit": null
+        },
+        {
+          "nutrient": "calcium",
+          "unit": "mg",
+          "quanta_per_100g": 9420000,
+          "usda_nutrient_id": 1087,
+          "origin": "USDA_published_value",
+          "source_amount": "9.42",
+          "source_unit": "mg"
+        },
+        {
+          "nutrient": "iron",
+          "unit": "mg",
+          "quanta_per_100g": 259000,
+          "usda_nutrient_id": 1089,
+          "origin": "USDA_published_value",
+          "source_amount": "0.259",
+          "source_unit": "mg"
+        },
+        {
+          "nutrient": "magnesium",
+          "unit": "mg",
+          "quanta_per_100g": 25400000,
+          "usda_nutrient_id": 1090,
+          "origin": "USDA_published_value",
+          "source_amount": "25.4",
+          "source_unit": "mg"
+        },
+        {
+          "nutrient": "phosphorus",
+          "unit": "mg",
+          "quanta_per_100g": 230000000,
+          "usda_nutrient_id": 1091,
+          "origin": "USDA_published_value",
+          "source_amount": "230",
+          "source_unit": "mg"
+        },
+        {
+          "nutrient": "potassium",
+          "unit": "mg",
+          "quanta_per_100g": 378000000,
+          "usda_nutrient_id": 1092,
+          "origin": "USDA_published_value",
+          "source_amount": "378",
+          "source_unit": "mg"
+        },
+        {
+          "nutrient": "sodium",
+          "unit": "mg",
+          "quanta_per_100g": 49500000,
+          "usda_nutrient_id": 1093,
+          "origin": "USDA_published_value",
+          "source_amount": "49.5",
+          "source_unit": "mg"
+        },
+        {
+          "nutrient": "zinc",
+          "unit": "mg",
+          "quanta_per_100g": 339000,
+          "usda_nutrient_id": 1095,
+          "origin": "USDA_published_value",
+          "source_amount": "0.339",
+          "source_unit": "mg"
+        },
+        {
+          "nutrient": "copper",
+          "unit": "mg",
+          "quanta_per_100g": 25000,
+          "usda_nutrient_id": 1098,
+          "origin": "USDA_published_value",
+          "source_amount": "0.025",
+          "source_unit": "mg"
+        },
+        {
+          "nutrient": "selenium",
+          "unit": "µg",
+          "quanta_per_100g": 22800000,
+          "usda_nutrient_id": 1103,
+          "origin": "USDA_published_value",
+          "source_amount": "22.8",
+          "source_unit": "µg"
+        },
+        {
+          "nutrient": "iodine",
+          "unit": "µg",
+          "quanta_per_100g": 3240000,
+          "usda_nutrient_id": 1100,
+          "origin": "USDA_published_value",
+          "source_amount": "3.24",
+          "source_unit": "µg"
+        },
+        {
+          "nutrient": "vitamin_a_RE",
+          "unit": "µg RE",
+          "quanta_per_100g": null,
+          "usda_nutrient_id": null,
+          "origin": "not_reported",
+          "source_amount": null,
+          "source_unit": null
+        },
+        {
+          "nutrient": "vitamin_c",
+          "unit": "mg",
+          "quanta_per_100g": null,
+          "usda_nutrient_id": 1162,
+          "origin": "not_reported",
+          "source_amount": null,
+          "source_unit": null
+        },
+        {
+          "nutrient": "vitamin_d_D2_D3",
+          "unit": "µg",
+          "quanta_per_100g": null,
+          "usda_nutrient_id": 1114,
+          "origin": "not_reported",
+          "source_amount": null,
+          "source_unit": null
+        },
+        {
+          "nutrient": "vitamin_e_alpha_tocopherol",
+          "unit": "mg",
+          "quanta_per_100g": null,
+          "usda_nutrient_id": 1109,
+          "origin": "not_reported",
+          "source_amount": null,
+          "source_unit": null
+        },
+        {
+          "nutrient": "vitamin_k_phylloquinone",
+          "unit": "µg",
+          "quanta_per_100g": null,
+          "usda_nutrient_id": 1185,
+          "origin": "not_reported",
+          "source_amount": null,
+          "source_unit": null
+        },
+        {
+          "nutrient": "thiamin",
+          "unit": "mg",
+          "quanta_per_100g": null,
+          "usda_nutrient_id": 1165,
+          "origin": "not_reported",
+          "source_amount": null,
+          "source_unit": null
+        },
+        {
+          "nutrient": "riboflavin",
+          "unit": "mg",
+          "quanta_per_100g": null,
+          "usda_nutrient_id": 1166,
+          "origin": "not_reported",
+          "source_amount": null,
+          "source_unit": null
+        },
+        {
+          "nutrient": "vitamin_b6",
+          "unit": "mg",
+          "quanta_per_100g": null,
+          "usda_nutrient_id": 1175,
+          "origin": "not_reported",
+          "source_amount": null,
+          "source_unit": null
+        },
+        {
+          "nutrient": "vitamin_b12",
+          "unit": "µg",
+          "quanta_per_100g": 5700000,
+          "usda_nutrient_id": 1178,
+          "origin": "USDA_published_value",
+          "source_amount": "5.70",
+          "source_unit": "µg"
+        },
+        {
+          "nutrient": "folate_DFE",
+          "unit": "µg DFE",
+          "quanta_per_100g": null,
+          "usda_nutrient_id": 1190,
+          "origin": "not_reported",
+          "source_amount": null,
+          "source_unit": null
+        },
+        {
+          "nutrient": "choline",
+          "unit": "mg",
+          "quanta_per_100g": null,
+          "usda_nutrient_id": 1180,
+          "origin": "not_reported",
+          "source_amount": null,
+          "source_unit": null
+        },
+        {
+          "nutrient": "niacin_NE",
+          "unit": "mg NE",
+          "quanta_per_100g": null,
+          "usda_nutrient_id": null,
+          "origin": "not_reported",
+          "source_amount": null,
+          "source_unit": null
+        },
+        {
+          "nutrient": "biotin",
+          "unit": "µg",
+          "quanta_per_100g": null,
+          "usda_nutrient_id": 1176,
+          "origin": "not_reported",
+          "source_amount": null,
+          "source_unit": null
+        },
+        {
+          "nutrient": "pantothenic_acid",
+          "unit": "mg",
+          "quanta_per_100g": null,
+          "usda_nutrient_id": 1170,
+          "origin": "not_reported",
+          "source_amount": null,
+          "source_unit": null
+        }
+      ]
+    },
+    {
+      "id": "carrot",
+      "sector": "vegetables",
+      "fdc_id": 2258586,
+      "description": "Carrots, mature, raw",
+      "publication_date": "4/28/2022",
+      "cells": [
+        {
+          "nutrient": "energy_atwater_general",
+          "unit": "kcal",
+          "quanta_per_100g": 48000000,
+          "usda_nutrient_id": 2047,
+          "origin": "USDA_published_value",
+          "source_amount": "48.0",
+          "source_unit": "kcal"
+        },
+        {
+          "nutrient": "protein",
+          "unit": "g",
+          "quanta_per_100g": 941000,
+          "usda_nutrient_id": 1003,
+          "origin": "USDA_published_value",
+          "source_amount": "0.941",
+          "source_unit": "g"
+        },
+        {
+          "nutrient": "fat",
+          "unit": "g",
+          "quanta_per_100g": 351000,
+          "usda_nutrient_id": 1004,
+          "origin": "USDA_published_value",
+          "source_amount": "0.351",
+          "source_unit": "g"
+        },
+        {
+          "nutrient": "carbohydrate_by_difference",
+          "unit": "g",
+          "quanta_per_100g": 10300000,
+          "usda_nutrient_id": 1005,
+          "origin": "USDA_published_value",
+          "source_amount": "10.3",
+          "source_unit": "g"
+        },
+        {
+          "nutrient": "fibre_total",
+          "unit": "g",
+          "quanta_per_100g": 3100000,
+          "usda_nutrient_id": 1079,
+          "origin": "USDA_published_value",
+          "source_amount": "3.10",
+          "source_unit": "g"
+        },
+        {
+          "nutrient": "calcium",
+          "unit": "mg",
+          "quanta_per_100g": 30500000,
+          "usda_nutrient_id": 1087,
+          "origin": "USDA_published_value",
+          "source_amount": "30.5",
+          "source_unit": "mg"
+        },
+        {
+          "nutrient": "iron",
+          "unit": "mg",
+          "quanta_per_100g": 150000,
+          "usda_nutrient_id": 1089,
+          "origin": "USDA_published_value",
+          "source_amount": "0.150",
+          "source_unit": "mg"
+        },
+        {
+          "nutrient": "magnesium",
+          "unit": "mg",
+          "quanta_per_100g": 12400000,
+          "usda_nutrient_id": 1090,
+          "origin": "USDA_published_value",
+          "source_amount": "12.4",
+          "source_unit": "mg"
+        },
+        {
+          "nutrient": "phosphorus",
+          "unit": "mg",
+          "quanta_per_100g": 39800000,
+          "usda_nutrient_id": 1091,
+          "origin": "USDA_published_value",
+          "source_amount": "39.8",
+          "source_unit": "mg"
+        },
+        {
+          "nutrient": "potassium",
+          "unit": "mg",
+          "quanta_per_100g": 280000000,
+          "usda_nutrient_id": 1092,
+          "origin": "USDA_published_value",
+          "source_amount": "280",
+          "source_unit": "mg"
+        },
+        {
+          "nutrient": "sodium",
+          "unit": "mg",
+          "quanta_per_100g": 86600000,
+          "usda_nutrient_id": 1093,
+          "origin": "USDA_published_value",
+          "source_amount": "86.6",
+          "source_unit": "mg"
+        },
+        {
+          "nutrient": "zinc",
+          "unit": "mg",
+          "quanta_per_100g": 236000,
+          "usda_nutrient_id": 1095,
+          "origin": "USDA_published_value",
+          "source_amount": "0.236",
+          "source_unit": "mg"
+        },
+        {
+          "nutrient": "copper",
+          "unit": "mg",
+          "quanta_per_100g": 61000,
+          "usda_nutrient_id": 1098,
+          "origin": "USDA_published_value",
+          "source_amount": "0.061",
+          "source_unit": "mg"
+        },
+        {
+          "nutrient": "selenium",
+          "unit": "µg",
+          "quanta_per_100g": 0,
+          "usda_nutrient_id": 1103,
+          "origin": "USDA_published_value",
+          "source_amount": "0.000",
+          "source_unit": "µg"
+        },
+        {
+          "nutrient": "iodine",
+          "unit": "µg",
+          "quanta_per_100g": null,
+          "usda_nutrient_id": 1100,
+          "origin": "not_reported",
+          "source_amount": null,
+          "source_unit": null
+        },
+        {
+          "nutrient": "vitamin_a_RE",
+          "unit": "µg RE",
+          "quanta_per_100g": null,
+          "usda_nutrient_id": null,
+          "origin": "not_reported",
+          "source_amount": null,
+          "source_unit": null
+        },
+        {
+          "nutrient": "vitamin_c",
+          "unit": "mg",
+          "quanta_per_100g": null,
+          "usda_nutrient_id": 1162,
+          "origin": "not_reported",
+          "source_amount": null,
+          "source_unit": null
+        },
+        {
+          "nutrient": "vitamin_d_D2_D3",
+          "unit": "µg",
+          "quanta_per_100g": null,
+          "usda_nutrient_id": 1114,
+          "origin": "not_reported",
+          "source_amount": null,
+          "source_unit": null
+        },
+        {
+          "nutrient": "vitamin_e_alpha_tocopherol",
+          "unit": "mg",
+          "quanta_per_100g": null,
+          "usda_nutrient_id": 1109,
+          "origin": "not_reported",
+          "source_amount": null,
+          "source_unit": null
+        },
+        {
+          "nutrient": "vitamin_k_phylloquinone",
+          "unit": "µg",
+          "quanta_per_100g": null,
+          "usda_nutrient_id": 1185,
+          "origin": "not_reported",
+          "source_amount": null,
+          "source_unit": null
+        },
+        {
+          "nutrient": "thiamin",
+          "unit": "mg",
+          "quanta_per_100g": 65000,
+          "usda_nutrient_id": 1165,
+          "origin": "USDA_published_value",
+          "source_amount": "0.065",
+          "source_unit": "mg"
+        },
+        {
+          "nutrient": "riboflavin",
+          "unit": "mg",
+          "quanta_per_100g": 95000,
+          "usda_nutrient_id": 1166,
+          "origin": "USDA_published_value",
+          "source_amount": "0.095",
+          "source_unit": "mg"
+        },
+        {
+          "nutrient": "vitamin_b6",
+          "unit": "mg",
+          "quanta_per_100g": 146000,
+          "usda_nutrient_id": 1175,
+          "origin": "USDA_published_value",
+          "source_amount": "0.146",
+          "source_unit": "mg"
+        },
+        {
+          "nutrient": "vitamin_b12",
+          "unit": "µg",
+          "quanta_per_100g": null,
+          "usda_nutrient_id": 1178,
+          "origin": "not_reported",
+          "source_amount": null,
+          "source_unit": null
+        },
+        {
+          "nutrient": "folate_DFE",
+          "unit": "µg DFE",
+          "quanta_per_100g": null,
+          "usda_nutrient_id": 1190,
+          "origin": "not_reported",
+          "source_amount": null,
+          "source_unit": null
+        },
+        {
+          "nutrient": "choline",
+          "unit": "mg",
+          "quanta_per_100g": null,
+          "usda_nutrient_id": 1180,
+          "origin": "not_reported",
+          "source_amount": null,
+          "source_unit": null
+        },
+        {
+          "nutrient": "niacin_NE",
+          "unit": "mg NE",
+          "quanta_per_100g": null,
+          "usda_nutrient_id": null,
+          "origin": "not_reported",
+          "source_amount": null,
+          "source_unit": null
+        },
+        {
+          "nutrient": "biotin",
+          "unit": "µg",
+          "quanta_per_100g": 2220000,
+          "usda_nutrient_id": 1176,
+          "origin": "USDA_published_value",
+          "source_amount": "2.22",
+          "source_unit": "µg"
+        },
+        {
+          "nutrient": "pantothenic_acid",
+          "unit": "mg",
+          "quanta_per_100g": null,
+          "usda_nutrient_id": 1170,
+          "origin": "not_reported",
+          "source_amount": null,
+          "source_unit": null
+        }
+      ]
+    },
+    {
+      "id": "spinach",
+      "sector": "vegetables",
+      "fdc_id": 1999633,
+      "description": "Spinach, mature",
+      "publication_date": "10/28/2021",
+      "cells": [
+        {
+          "nutrient": "energy_atwater_general",
+          "unit": "kcal",
+          "quanta_per_100g": 27600000,
+          "usda_nutrient_id": 2047,
+          "origin": "USDA_published_value",
+          "source_amount": "27.6",
+          "source_unit": "kcal"
+        },
+        {
+          "nutrient": "protein",
+          "unit": "g",
+          "quanta_per_100g": 2910000,
+          "usda_nutrient_id": 1003,
+          "origin": "USDA_published_value",
+          "source_amount": "2.91",
+          "source_unit": "g"
+        },
+        {
+          "nutrient": "fat",
+          "unit": "g",
+          "quanta_per_100g": 604000,
+          "usda_nutrient_id": 1004,
+          "origin": "USDA_published_value",
+          "source_amount": "0.604",
+          "source_unit": "g"
+        },
+        {
+          "nutrient": "carbohydrate_by_difference",
+          "unit": "g",
+          "quanta_per_100g": 2640000,
+          "usda_nutrient_id": 1005,
+          "origin": "USDA_published_value",
+          "source_amount": "2.64",
+          "source_unit": "g"
+        },
+        {
+          "nutrient": "fibre_total",
+          "unit": "g",
+          "quanta_per_100g": 1590000,
+          "usda_nutrient_id": 1079,
+          "origin": "USDA_published_value",
+          "source_amount": "1.59",
+          "source_unit": "g"
+        },
+        {
+          "nutrient": "calcium",
+          "unit": "mg",
+          "quanta_per_100g": 66600000,
+          "usda_nutrient_id": 1087,
+          "origin": "USDA_published_value",
+          "source_amount": "66.6",
+          "source_unit": "mg"
+        },
+        {
+          "nutrient": "iron",
+          "unit": "mg",
+          "quanta_per_100g": 1050000,
+          "usda_nutrient_id": 1089,
+          "origin": "USDA_published_value",
+          "source_amount": "1.05",
+          "source_unit": "mg"
+        },
+        {
+          "nutrient": "magnesium",
+          "unit": "mg",
+          "quanta_per_100g": 93000000,
+          "usda_nutrient_id": 1090,
+          "origin": "USDA_published_value",
+          "source_amount": "93.0",
+          "source_unit": "mg"
+        },
+        {
+          "nutrient": "phosphorus",
+          "unit": "mg",
+          "quanta_per_100g": 40600000,
+          "usda_nutrient_id": 1091,
+          "origin": "USDA_published_value",
+          "source_amount": "40.6",
+          "source_unit": "mg"
+        },
+        {
+          "nutrient": "potassium",
+          "unit": "mg",
+          "quanta_per_100g": 460000000,
+          "usda_nutrient_id": 1092,
+          "origin": "USDA_published_value",
+          "source_amount": "460",
+          "source_unit": "mg"
+        },
+        {
+          "nutrient": "sodium",
+          "unit": "mg",
+          "quanta_per_100g": 107000000,
+          "usda_nutrient_id": 1093,
+          "origin": "USDA_published_value",
+          "source_amount": "107",
+          "source_unit": "mg"
+        },
+        {
+          "nutrient": "zinc",
+          "unit": "mg",
+          "quanta_per_100g": 423000,
+          "usda_nutrient_id": 1095,
+          "origin": "USDA_published_value",
+          "source_amount": "0.423",
+          "source_unit": "mg"
+        },
+        {
+          "nutrient": "copper",
+          "unit": "mg",
+          "quanta_per_100g": 79000,
+          "usda_nutrient_id": 1098,
+          "origin": "USDA_published_value",
+          "source_amount": "0.079",
+          "source_unit": "mg"
+        },
+        {
+          "nutrient": "selenium",
+          "unit": "µg",
+          "quanta_per_100g": 0,
+          "usda_nutrient_id": 1103,
+          "origin": "USDA_published_value",
+          "source_amount": "0.000",
+          "source_unit": "µg"
+        },
+        {
+          "nutrient": "iodine",
+          "unit": "µg",
+          "quanta_per_100g": 6090000,
+          "usda_nutrient_id": 1100,
+          "origin": "USDA_published_value",
+          "source_amount": "6.09",
+          "source_unit": "µg"
+        },
+        {
+          "nutrient": "vitamin_a_RE",
+          "unit": "µg RE",
+          "quanta_per_100g": null,
+          "usda_nutrient_id": null,
+          "origin": "not_reported",
+          "source_amount": null,
+          "source_unit": null
+        },
+        {
+          "nutrient": "vitamin_c",
+          "unit": "mg",
+          "quanta_per_100g": 30300000,
+          "usda_nutrient_id": 1162,
+          "origin": "USDA_published_value",
+          "source_amount": "30.3",
+          "source_unit": "mg"
+        },
+        {
+          "nutrient": "vitamin_d_D2_D3",
+          "unit": "µg",
+          "quanta_per_100g": null,
+          "usda_nutrient_id": 1114,
+          "origin": "not_reported",
+          "source_amount": null,
+          "source_unit": null
+        },
+        {
+          "nutrient": "vitamin_e_alpha_tocopherol",
+          "unit": "mg",
+          "quanta_per_100g": null,
+          "usda_nutrient_id": 1109,
+          "origin": "not_reported",
+          "source_amount": null,
+          "source_unit": null
+        },
+        {
+          "nutrient": "vitamin_k_phylloquinone",
+          "unit": "µg",
+          "quanta_per_100g": null,
+          "usda_nutrient_id": 1185,
+          "origin": "not_reported",
+          "source_amount": null,
+          "source_unit": null
+        },
+        {
+          "nutrient": "thiamin",
+          "unit": "mg",
+          "quanta_per_100g": 76000,
+          "usda_nutrient_id": 1165,
+          "origin": "USDA_published_value",
+          "source_amount": "0.076",
+          "source_unit": "mg"
+        },
+        {
+          "nutrient": "riboflavin",
+          "unit": "mg",
+          "quanta_per_100g": 192000,
+          "usda_nutrient_id": 1166,
+          "origin": "USDA_published_value",
+          "source_amount": "0.192",
+          "source_unit": "mg"
+        },
+        {
+          "nutrient": "vitamin_b6",
+          "unit": "mg",
+          "quanta_per_100g": 214000,
+          "usda_nutrient_id": 1175,
+          "origin": "USDA_published_value",
+          "source_amount": "0.214",
+          "source_unit": "mg"
+        },
+        {
+          "nutrient": "vitamin_b12",
+          "unit": "µg",
+          "quanta_per_100g": null,
+          "usda_nutrient_id": 1178,
+          "origin": "not_reported",
+          "source_amount": null,
+          "source_unit": null
+        },
+        {
+          "nutrient": "folate_DFE",
+          "unit": "µg DFE",
+          "quanta_per_100g": null,
+          "usda_nutrient_id": 1190,
+          "origin": "not_reported",
+          "source_amount": null,
+          "source_unit": null
+        },
+        {
+          "nutrient": "choline",
+          "unit": "mg",
+          "quanta_per_100g": null,
+          "usda_nutrient_id": 1180,
+          "origin": "not_reported",
+          "source_amount": null,
+          "source_unit": null
+        },
+        {
+          "nutrient": "niacin_NE",
+          "unit": "mg NE",
+          "quanta_per_100g": null,
+          "usda_nutrient_id": null,
+          "origin": "not_reported",
+          "source_amount": null,
+          "source_unit": null
+        },
+        {
+          "nutrient": "biotin",
+          "unit": "µg",
+          "quanta_per_100g": 4250000,
+          "usda_nutrient_id": 1176,
+          "origin": "USDA_published_value",
+          "source_amount": "4.25",
+          "source_unit": "µg"
+        },
+        {
+          "nutrient": "pantothenic_acid",
+          "unit": "mg",
+          "quanta_per_100g": null,
+          "usda_nutrient_id": 1170,
+          "origin": "not_reported",
+          "source_amount": null,
+          "source_unit": null
+        }
+      ]
+    },
+    {
+      "id": "apple",
+      "sector": "fruit",
+      "fdc_id": 1750339,
+      "description": "Apples, red delicious, with skin, raw",
+      "publication_date": "10/30/2020",
+      "cells": [
+        {
+          "nutrient": "energy_atwater_general",
+          "unit": "kcal",
+          "quanta_per_100g": 61800000,
+          "usda_nutrient_id": 2047,
+          "origin": "USDA_published_value",
+          "source_amount": "61.8",
+          "source_unit": "kcal"
+        },
+        {
+          "nutrient": "protein",
+          "unit": "g",
+          "quanta_per_100g": 188000,
+          "usda_nutrient_id": 1003,
+          "origin": "USDA_published_value",
+          "source_amount": "0.188",
+          "source_unit": "g"
+        },
+        {
+          "nutrient": "fat",
+          "unit": "g",
+          "quanta_per_100g": 212000,
+          "usda_nutrient_id": 1004,
+          "origin": "USDA_published_value",
+          "source_amount": "0.212",
+          "source_unit": "g"
+        },
+        {
+          "nutrient": "carbohydrate_by_difference",
+          "unit": "g",
+          "quanta_per_100g": 14800000,
+          "usda_nutrient_id": 1005,
+          "origin": "USDA_published_value",
+          "source_amount": "14.8",
+          "source_unit": "g"
+        },
+        {
+          "nutrient": "fibre_total",
+          "unit": "g",
+          "quanta_per_100g": 2040000,
+          "usda_nutrient_id": 1079,
+          "origin": "USDA_published_value",
+          "source_amount": "2.04",
+          "source_unit": "g"
+        },
+        {
+          "nutrient": "calcium",
+          "unit": "mg",
+          "quanta_per_100g": 4660000,
+          "usda_nutrient_id": 1087,
+          "origin": "USDA_published_value",
+          "source_amount": "4.66",
+          "source_unit": "mg"
+        },
+        {
+          "nutrient": "iron",
+          "unit": "mg",
+          "quanta_per_100g": 0,
+          "usda_nutrient_id": 1089,
+          "origin": "USDA_published_value",
+          "source_amount": "0.000",
+          "source_unit": "mg"
+        },
+        {
+          "nutrient": "magnesium",
+          "unit": "mg",
+          "quanta_per_100g": 4700000,
+          "usda_nutrient_id": 1090,
+          "origin": "USDA_published_value",
+          "source_amount": "4.70",
+          "source_unit": "mg"
+        },
+        {
+          "nutrient": "phosphorus",
+          "unit": "mg",
+          "quanta_per_100g": 9180000,
+          "usda_nutrient_id": 1091,
+          "origin": "USDA_published_value",
+          "source_amount": "9.18",
+          "source_unit": "mg"
+        },
+        {
+          "nutrient": "potassium",
+          "unit": "mg",
+          "quanta_per_100g": 95300000,
+          "usda_nutrient_id": 1092,
+          "origin": "USDA_published_value",
+          "source_amount": "95.3",
+          "source_unit": "mg"
+        },
+        {
+          "nutrient": "sodium",
+          "unit": "mg",
+          "quanta_per_100g": 0,
+          "usda_nutrient_id": 1093,
+          "origin": "USDA_published_value",
+          "source_amount": "0.000",
+          "source_unit": "mg"
+        },
+        {
+          "nutrient": "zinc",
+          "unit": "mg",
+          "quanta_per_100g": 20000,
+          "usda_nutrient_id": 1095,
+          "origin": "USDA_published_value",
+          "source_amount": "0.020",
+          "source_unit": "mg"
+        },
+        {
+          "nutrient": "copper",
+          "unit": "mg",
+          "quanta_per_100g": 24000,
+          "usda_nutrient_id": 1098,
+          "origin": "USDA_published_value",
+          "source_amount": "0.024",
+          "source_unit": "mg"
+        },
+        {
+          "nutrient": "selenium",
+          "unit": "µg",
+          "quanta_per_100g": null,
+          "usda_nutrient_id": 1103,
+          "origin": "not_reported",
+          "source_amount": null,
+          "source_unit": null
+        },
+        {
+          "nutrient": "iodine",
+          "unit": "µg",
+          "quanta_per_100g": null,
+          "usda_nutrient_id": 1100,
+          "origin": "not_reported",
+          "source_amount": null,
+          "source_unit": null
+        },
+        {
+          "nutrient": "vitamin_a_RE",
+          "unit": "µg RE",
+          "quanta_per_100g": null,
+          "usda_nutrient_id": null,
+          "origin": "not_reported",
+          "source_amount": null,
+          "source_unit": null
+        },
+        {
+          "nutrient": "vitamin_c",
+          "unit": "mg",
+          "quanta_per_100g": null,
+          "usda_nutrient_id": 1162,
+          "origin": "not_reported",
+          "source_amount": null,
+          "source_unit": null
+        },
+        {
+          "nutrient": "vitamin_d_D2_D3",
+          "unit": "µg",
+          "quanta_per_100g": null,
+          "usda_nutrient_id": 1114,
+          "origin": "not_reported",
+          "source_amount": null,
+          "source_unit": null
+        },
+        {
+          "nutrient": "vitamin_e_alpha_tocopherol",
+          "unit": "mg",
+          "quanta_per_100g": null,
+          "usda_nutrient_id": 1109,
+          "origin": "not_reported",
+          "source_amount": null,
+          "source_unit": null
+        },
+        {
+          "nutrient": "vitamin_k_phylloquinone",
+          "unit": "µg",
+          "quanta_per_100g": null,
+          "usda_nutrient_id": 1185,
+          "origin": "not_reported",
+          "source_amount": null,
+          "source_unit": null
+        },
+        {
+          "nutrient": "thiamin",
+          "unit": "mg",
+          "quanta_per_100g": 9000,
+          "usda_nutrient_id": 1165,
+          "origin": "USDA_published_value",
+          "source_amount": "0.009",
+          "source_unit": "mg"
+        },
+        {
+          "nutrient": "riboflavin",
+          "unit": "mg",
+          "quanta_per_100g": 66000,
+          "usda_nutrient_id": 1166,
+          "origin": "USDA_published_value",
+          "source_amount": "0.066",
+          "source_unit": "mg"
+        },
+        {
+          "nutrient": "vitamin_b6",
+          "unit": "mg",
+          "quanta_per_100g": 21000,
+          "usda_nutrient_id": 1175,
+          "origin": "USDA_published_value",
+          "source_amount": "0.021",
+          "source_unit": "mg"
+        },
+        {
+          "nutrient": "vitamin_b12",
+          "unit": "µg",
+          "quanta_per_100g": null,
+          "usda_nutrient_id": 1178,
+          "origin": "not_reported",
+          "source_amount": null,
+          "source_unit": null
+        },
+        {
+          "nutrient": "folate_DFE",
+          "unit": "µg DFE",
+          "quanta_per_100g": null,
+          "usda_nutrient_id": 1190,
+          "origin": "not_reported",
+          "source_amount": null,
+          "source_unit": null
+        },
+        {
+          "nutrient": "choline",
+          "unit": "mg",
+          "quanta_per_100g": null,
+          "usda_nutrient_id": 1180,
+          "origin": "not_reported",
+          "source_amount": null,
+          "source_unit": null
+        },
+        {
+          "nutrient": "niacin_NE",
+          "unit": "mg NE",
+          "quanta_per_100g": null,
+          "usda_nutrient_id": null,
+          "origin": "not_reported",
+          "source_amount": null,
+          "source_unit": null
+        },
+        {
+          "nutrient": "biotin",
+          "unit": "µg",
+          "quanta_per_100g": null,
+          "usda_nutrient_id": 1176,
+          "origin": "not_reported",
+          "source_amount": null,
+          "source_unit": null
+        },
+        {
+          "nutrient": "pantothenic_acid",
+          "unit": "mg",
+          "quanta_per_100g": null,
+          "usda_nutrient_id": 1170,
+          "origin": "not_reported",
+          "source_amount": null,
+          "source_unit": null
+        }
+      ]
+    },
+    {
+      "id": "orange",
+      "sector": "fruit",
+      "fdc_id": 746771,
+      "description": "Oranges, raw, navels",
+      "publication_date": "12/16/2019",
+      "cells": [
+        {
+          "nutrient": "energy_atwater_general",
+          "unit": "kcal",
+          "quanta_per_100g": 52190000,
+          "usda_nutrient_id": 2047,
+          "origin": "derived_4_protein_9_fat_4_carbohydrate_USDA_method",
+          "source_amount": null,
+          "source_unit": null
+        },
+        {
+          "nutrient": "protein",
+          "unit": "g",
+          "quanta_per_100g": 910000,
+          "usda_nutrient_id": 1003,
+          "origin": "USDA_published_value",
+          "source_amount": "0.910",
+          "source_unit": "g"
+        },
+        {
+          "nutrient": "fat",
+          "unit": "g",
+          "quanta_per_100g": 150000,
+          "usda_nutrient_id": 1004,
+          "origin": "USDA_published_value",
+          "source_amount": "0.150",
+          "source_unit": "g"
+        },
+        {
+          "nutrient": "carbohydrate_by_difference",
+          "unit": "g",
+          "quanta_per_100g": 11800000,
+          "usda_nutrient_id": 1005,
+          "origin": "USDA_published_value",
+          "source_amount": "11.8",
+          "source_unit": "g"
+        },
+        {
+          "nutrient": "fibre_total",
+          "unit": "g",
+          "quanta_per_100g": 2000000,
+          "usda_nutrient_id": 1079,
+          "origin": "USDA_published_value",
+          "source_amount": "2.00",
+          "source_unit": "g"
+        },
+        {
+          "nutrient": "calcium",
+          "unit": "mg",
+          "quanta_per_100g": 43000000,
+          "usda_nutrient_id": 1087,
+          "origin": "USDA_published_value",
+          "source_amount": "43.0",
+          "source_unit": "mg"
+        },
+        {
+          "nutrient": "iron",
+          "unit": "mg",
+          "quanta_per_100g": 330000,
+          "usda_nutrient_id": 1089,
+          "origin": "USDA_published_value",
+          "source_amount": "0.330",
+          "source_unit": "mg"
+        },
+        {
+          "nutrient": "magnesium",
+          "unit": "mg",
+          "quanta_per_100g": 10700000,
+          "usda_nutrient_id": 1090,
+          "origin": "USDA_published_value",
+          "source_amount": "10.7",
+          "source_unit": "mg"
+        },
+        {
+          "nutrient": "phosphorus",
+          "unit": "mg",
+          "quanta_per_100g": 23000000,
+          "usda_nutrient_id": 1091,
+          "origin": "USDA_published_value",
+          "source_amount": "23.0",
+          "source_unit": "mg"
+        },
+        {
+          "nutrient": "potassium",
+          "unit": "mg",
+          "quanta_per_100g": 166000000,
+          "usda_nutrient_id": 1092,
+          "origin": "USDA_published_value",
+          "source_amount": "166",
+          "source_unit": "mg"
+        },
+        {
+          "nutrient": "sodium",
+          "unit": "mg",
+          "quanta_per_100g": 9000000,
+          "usda_nutrient_id": 1093,
+          "origin": "USDA_published_value",
+          "source_amount": "9.00",
+          "source_unit": "mg"
+        },
+        {
+          "nutrient": "zinc",
+          "unit": "mg",
+          "quanta_per_100g": 110000,
+          "usda_nutrient_id": 1095,
+          "origin": "USDA_published_value",
+          "source_amount": "0.110",
+          "source_unit": "mg"
+        },
+        {
+          "nutrient": "copper",
+          "unit": "mg",
+          "quanta_per_100g": 64000,
+          "usda_nutrient_id": 1098,
+          "origin": "USDA_published_value",
+          "source_amount": "0.064",
+          "source_unit": "mg"
+        },
+        {
+          "nutrient": "selenium",
+          "unit": "µg",
+          "quanta_per_100g": 0,
+          "usda_nutrient_id": 1103,
+          "origin": "USDA_published_value",
+          "source_amount": "0.000",
+          "source_unit": "µg"
+        },
+        {
+          "nutrient": "iodine",
+          "unit": "µg",
+          "quanta_per_100g": null,
+          "usda_nutrient_id": 1100,
+          "origin": "not_reported",
+          "source_amount": null,
+          "source_unit": null
+        },
+        {
+          "nutrient": "vitamin_a_RE",
+          "unit": "µg RE",
+          "quanta_per_100g": null,
+          "usda_nutrient_id": null,
+          "origin": "not_reported",
+          "source_amount": null,
+          "source_unit": null
+        },
+        {
+          "nutrient": "vitamin_c",
+          "unit": "mg",
+          "quanta_per_100g": 59100000,
+          "usda_nutrient_id": 1162,
+          "origin": "USDA_published_value",
+          "source_amount": "59.1",
+          "source_unit": "mg"
+        },
+        {
+          "nutrient": "vitamin_d_D2_D3",
+          "unit": "µg",
+          "quanta_per_100g": null,
+          "usda_nutrient_id": 1114,
+          "origin": "not_reported",
+          "source_amount": null,
+          "source_unit": null
+        },
+        {
+          "nutrient": "vitamin_e_alpha_tocopherol",
+          "unit": "mg",
+          "quanta_per_100g": null,
+          "usda_nutrient_id": 1109,
+          "origin": "not_reported",
+          "source_amount": null,
+          "source_unit": null
+        },
+        {
+          "nutrient": "vitamin_k_phylloquinone",
+          "unit": "µg",
+          "quanta_per_100g": 0,
+          "usda_nutrient_id": 1185,
+          "origin": "USDA_published_value",
+          "source_amount": "0.000",
+          "source_unit": "µg"
+        },
+        {
+          "nutrient": "thiamin",
+          "unit": "mg",
+          "quanta_per_100g": 68000,
+          "usda_nutrient_id": 1165,
+          "origin": "USDA_published_value",
+          "source_amount": "0.068",
+          "source_unit": "mg"
+        },
+        {
+          "nutrient": "riboflavin",
+          "unit": "mg",
+          "quanta_per_100g": 51000,
+          "usda_nutrient_id": 1166,
+          "origin": "USDA_published_value",
+          "source_amount": "0.051",
+          "source_unit": "mg"
+        },
+        {
+          "nutrient": "vitamin_b6",
+          "unit": "mg",
+          "quanta_per_100g": 79000,
+          "usda_nutrient_id": 1175,
+          "origin": "USDA_published_value",
+          "source_amount": "0.079",
+          "source_unit": "mg"
+        },
+        {
+          "nutrient": "vitamin_b12",
+          "unit": "µg",
+          "quanta_per_100g": null,
+          "usda_nutrient_id": 1178,
+          "origin": "not_reported",
+          "source_amount": null,
+          "source_unit": null
+        },
+        {
+          "nutrient": "folate_DFE",
+          "unit": "µg DFE",
+          "quanta_per_100g": null,
+          "usda_nutrient_id": 1190,
+          "origin": "not_reported",
+          "source_amount": null,
+          "source_unit": null
+        },
+        {
+          "nutrient": "choline",
+          "unit": "mg",
+          "quanta_per_100g": null,
+          "usda_nutrient_id": 1180,
+          "origin": "not_reported",
+          "source_amount": null,
+          "source_unit": null
+        },
+        {
+          "nutrient": "niacin_NE",
+          "unit": "mg NE",
+          "quanta_per_100g": null,
+          "usda_nutrient_id": null,
+          "origin": "not_reported",
+          "source_amount": null,
+          "source_unit": null
+        },
+        {
+          "nutrient": "biotin",
+          "unit": "µg",
+          "quanta_per_100g": null,
+          "usda_nutrient_id": 1176,
+          "origin": "not_reported",
+          "source_amount": null,
+          "source_unit": null
+        },
+        {
+          "nutrient": "pantothenic_acid",
+          "unit": "mg",
+          "quanta_per_100g": 261000,
+          "usda_nutrient_id": 1170,
+          "origin": "USDA_published_value",
+          "source_amount": "0.261",
+          "source_unit": "mg"
+        }
+      ]
+    },
+    {
+      "id": "milk",
+      "sector": "dairy",
+      "fdc_id": 746782,
+      "description": "Milk, whole, 3.25% milkfat, with added vitamin D",
+      "publication_date": "12/16/2019",
+      "cells": [
+        {
+          "nutrient": "energy_atwater_general",
+          "unit": "kcal",
+          "quanta_per_100g": 60400000,
+          "usda_nutrient_id": 2047,
+          "origin": "derived_4_protein_9_fat_4_carbohydrate_USDA_method",
+          "source_amount": null,
+          "source_unit": null
+        },
+        {
+          "nutrient": "protein",
+          "unit": "g",
+          "quanta_per_100g": 3270000,
+          "usda_nutrient_id": 1003,
+          "origin": "USDA_published_value",
+          "source_amount": "3.27",
+          "source_unit": "g"
+        },
+        {
+          "nutrient": "fat",
+          "unit": "g",
+          "quanta_per_100g": 3200000,
+          "usda_nutrient_id": 1004,
+          "origin": "USDA_published_value",
+          "source_amount": "3.20",
+          "source_unit": "g"
+        },
+        {
+          "nutrient": "carbohydrate_by_difference",
+          "unit": "g",
+          "quanta_per_100g": 4630000,
+          "usda_nutrient_id": 1005,
+          "origin": "USDA_published_value",
+          "source_amount": "4.63",
+          "source_unit": "g"
+        },
+        {
+          "nutrient": "fibre_total",
+          "unit": "g",
+          "quanta_per_100g": null,
+          "usda_nutrient_id": 1079,
+          "origin": "not_reported",
+          "source_amount": null,
+          "source_unit": null
+        },
+        {
+          "nutrient": "calcium",
+          "unit": "mg",
+          "quanta_per_100g": 123000000,
+          "usda_nutrient_id": 1087,
+          "origin": "USDA_published_value",
+          "source_amount": "123",
+          "source_unit": "mg"
+        },
+        {
+          "nutrient": "iron",
+          "unit": "mg",
+          "quanta_per_100g": 0,
+          "usda_nutrient_id": 1089,
+          "origin": "USDA_published_value",
+          "source_amount": "0.000",
+          "source_unit": "mg"
+        },
+        {
+          "nutrient": "magnesium",
+          "unit": "mg",
+          "quanta_per_100g": 11900000,
+          "usda_nutrient_id": 1090,
+          "origin": "USDA_published_value",
+          "source_amount": "11.9",
+          "source_unit": "mg"
+        },
+        {
+          "nutrient": "phosphorus",
+          "unit": "mg",
+          "quanta_per_100g": 101000000,
+          "usda_nutrient_id": 1091,
+          "origin": "USDA_published_value",
+          "source_amount": "101",
+          "source_unit": "mg"
+        },
+        {
+          "nutrient": "potassium",
+          "unit": "mg",
+          "quanta_per_100g": 150000000,
+          "usda_nutrient_id": 1092,
+          "origin": "USDA_published_value",
+          "source_amount": "150",
+          "source_unit": "mg"
+        },
+        {
+          "nutrient": "sodium",
+          "unit": "mg",
+          "quanta_per_100g": 38000000,
+          "usda_nutrient_id": 1093,
+          "origin": "USDA_published_value",
+          "source_amount": "38.0",
+          "source_unit": "mg"
+        },
+        {
+          "nutrient": "zinc",
+          "unit": "mg",
+          "quanta_per_100g": 420000,
+          "usda_nutrient_id": 1095,
+          "origin": "USDA_published_value",
+          "source_amount": "0.420",
+          "source_unit": "mg"
+        },
+        {
+          "nutrient": "copper",
+          "unit": "mg",
+          "quanta_per_100g": 1000,
+          "usda_nutrient_id": 1098,
+          "origin": "USDA_published_value",
+          "source_amount": "0.001",
+          "source_unit": "mg"
+        },
+        {
+          "nutrient": "selenium",
+          "unit": "µg",
+          "quanta_per_100g": 1900000,
+          "usda_nutrient_id": 1103,
+          "origin": "USDA_published_value",
+          "source_amount": "1.90",
+          "source_unit": "µg"
+        },
+        {
+          "nutrient": "iodine",
+          "unit": "µg",
+          "quanta_per_100g": 37900000,
+          "usda_nutrient_id": 1100,
+          "origin": "USDA_published_value",
+          "source_amount": "37.9",
+          "source_unit": "µg"
+        },
+        {
+          "nutrient": "vitamin_a_RE",
+          "unit": "µg RE",
+          "quanta_per_100g": null,
+          "usda_nutrient_id": null,
+          "origin": "not_reported",
+          "source_amount": null,
+          "source_unit": null
+        },
+        {
+          "nutrient": "vitamin_c",
+          "unit": "mg",
+          "quanta_per_100g": null,
+          "usda_nutrient_id": 1162,
+          "origin": "not_reported",
+          "source_amount": null,
+          "source_unit": null
+        },
+        {
+          "nutrient": "vitamin_d_D2_D3",
+          "unit": "µg",
+          "quanta_per_100g": 960000,
+          "usda_nutrient_id": 1114,
+          "origin": "USDA_published_value",
+          "source_amount": "0.960",
+          "source_unit": "µg"
+        },
+        {
+          "nutrient": "vitamin_e_alpha_tocopherol",
+          "unit": "mg",
+          "quanta_per_100g": 50000,
+          "usda_nutrient_id": 1109,
+          "origin": "USDA_published_value",
+          "source_amount": "0.050",
+          "source_unit": "mg"
+        },
+        {
+          "nutrient": "vitamin_k_phylloquinone",
+          "unit": "µg",
+          "quanta_per_100g": null,
+          "usda_nutrient_id": 1185,
+          "origin": "not_reported",
+          "source_amount": null,
+          "source_unit": null
+        },
+        {
+          "nutrient": "thiamin",
+          "unit": "mg",
+          "quanta_per_100g": 56000,
+          "usda_nutrient_id": 1165,
+          "origin": "USDA_published_value",
+          "source_amount": "0.056",
+          "source_unit": "mg"
+        },
+        {
+          "nutrient": "riboflavin",
+          "unit": "mg",
+          "quanta_per_100g": 138000,
+          "usda_nutrient_id": 1166,
+          "origin": "USDA_published_value",
+          "source_amount": "0.138",
+          "source_unit": "mg"
+        },
+        {
+          "nutrient": "vitamin_b6",
+          "unit": "mg",
+          "quanta_per_100g": 61000,
+          "usda_nutrient_id": 1175,
+          "origin": "USDA_published_value",
+          "source_amount": "0.061",
+          "source_unit": "mg"
+        },
+        {
+          "nutrient": "vitamin_b12",
+          "unit": "µg",
+          "quanta_per_100g": 540000,
+          "usda_nutrient_id": 1178,
+          "origin": "USDA_published_value",
+          "source_amount": "0.540",
+          "source_unit": "µg"
+        },
+        {
+          "nutrient": "folate_DFE",
+          "unit": "µg DFE",
+          "quanta_per_100g": null,
+          "usda_nutrient_id": 1190,
+          "origin": "not_reported",
+          "source_amount": null,
+          "source_unit": null
+        },
+        {
+          "nutrient": "choline",
+          "unit": "mg",
+          "quanta_per_100g": 17800000,
+          "usda_nutrient_id": 1180,
+          "origin": "USDA_published_value",
+          "source_amount": "17.8",
+          "source_unit": "mg"
+        },
+        {
+          "nutrient": "niacin_NE",
+          "unit": "mg NE",
+          "quanta_per_100g": null,
+          "usda_nutrient_id": null,
+          "origin": "not_reported",
+          "source_amount": null,
+          "source_unit": null
+        },
+        {
+          "nutrient": "biotin",
+          "unit": "µg",
+          "quanta_per_100g": null,
+          "usda_nutrient_id": 1176,
+          "origin": "not_reported",
+          "source_amount": null,
+          "source_unit": null
+        },
+        {
+          "nutrient": "pantothenic_acid",
+          "unit": "mg",
+          "quanta_per_100g": 362000,
+          "usda_nutrient_id": 1170,
+          "origin": "USDA_published_value",
+          "source_amount": "0.362",
+          "source_unit": "mg"
+        }
+      ]
+    },
+    {
+      "id": "olive_oil",
+      "sector": "oil_crops",
+      "fdc_id": 748608,
+      "description": "Oil, olive, extra virgin",
+      "publication_date": "12/16/2019",
+      "cells": [
+        {
+          "nutrient": "energy_atwater_general",
+          "unit": "kcal",
+          "quanta_per_100g": null,
+          "usda_nutrient_id": 2047,
+          "origin": "not_reported",
+          "source_amount": null,
+          "source_unit": null
+        },
+        {
+          "nutrient": "protein",
+          "unit": "g",
+          "quanta_per_100g": null,
+          "usda_nutrient_id": 1003,
+          "origin": "not_reported",
+          "source_amount": null,
+          "source_unit": null
+        },
+        {
+          "nutrient": "fat",
+          "unit": "g",
+          "quanta_per_100g": null,
+          "usda_nutrient_id": 1004,
+          "origin": "not_reported",
+          "source_amount": null,
+          "source_unit": null
+        },
+        {
+          "nutrient": "carbohydrate_by_difference",
+          "unit": "g",
+          "quanta_per_100g": null,
+          "usda_nutrient_id": 1005,
+          "origin": "not_reported",
+          "source_amount": null,
+          "source_unit": null
+        },
+        {
+          "nutrient": "fibre_total",
+          "unit": "g",
+          "quanta_per_100g": null,
+          "usda_nutrient_id": 1079,
+          "origin": "not_reported",
+          "source_amount": null,
+          "source_unit": null
+        },
+        {
+          "nutrient": "calcium",
+          "unit": "mg",
+          "quanta_per_100g": null,
+          "usda_nutrient_id": 1087,
+          "origin": "not_reported",
+          "source_amount": null,
+          "source_unit": null
+        },
+        {
+          "nutrient": "iron",
+          "unit": "mg",
+          "quanta_per_100g": null,
+          "usda_nutrient_id": 1089,
+          "origin": "not_reported",
+          "source_amount": null,
+          "source_unit": null
+        },
+        {
+          "nutrient": "magnesium",
+          "unit": "mg",
+          "quanta_per_100g": null,
+          "usda_nutrient_id": 1090,
+          "origin": "not_reported",
+          "source_amount": null,
+          "source_unit": null
+        },
+        {
+          "nutrient": "phosphorus",
+          "unit": "mg",
+          "quanta_per_100g": null,
+          "usda_nutrient_id": 1091,
+          "origin": "not_reported",
+          "source_amount": null,
+          "source_unit": null
+        },
+        {
+          "nutrient": "potassium",
+          "unit": "mg",
+          "quanta_per_100g": null,
+          "usda_nutrient_id": 1092,
+          "origin": "not_reported",
+          "source_amount": null,
+          "source_unit": null
+        },
+        {
+          "nutrient": "sodium",
+          "unit": "mg",
+          "quanta_per_100g": null,
+          "usda_nutrient_id": 1093,
+          "origin": "not_reported",
+          "source_amount": null,
+          "source_unit": null
+        },
+        {
+          "nutrient": "zinc",
+          "unit": "mg",
+          "quanta_per_100g": null,
+          "usda_nutrient_id": 1095,
+          "origin": "not_reported",
+          "source_amount": null,
+          "source_unit": null
+        },
+        {
+          "nutrient": "copper",
+          "unit": "mg",
+          "quanta_per_100g": null,
+          "usda_nutrient_id": 1098,
+          "origin": "not_reported",
+          "source_amount": null,
+          "source_unit": null
+        },
+        {
+          "nutrient": "selenium",
+          "unit": "µg",
+          "quanta_per_100g": null,
+          "usda_nutrient_id": 1103,
+          "origin": "not_reported",
+          "source_amount": null,
+          "source_unit": null
+        },
+        {
+          "nutrient": "iodine",
+          "unit": "µg",
+          "quanta_per_100g": null,
+          "usda_nutrient_id": 1100,
+          "origin": "not_reported",
+          "source_amount": null,
+          "source_unit": null
+        },
+        {
+          "nutrient": "vitamin_a_RE",
+          "unit": "µg RE",
+          "quanta_per_100g": null,
+          "usda_nutrient_id": null,
+          "origin": "not_reported",
+          "source_amount": null,
+          "source_unit": null
+        },
+        {
+          "nutrient": "vitamin_c",
+          "unit": "mg",
+          "quanta_per_100g": null,
+          "usda_nutrient_id": 1162,
+          "origin": "not_reported",
+          "source_amount": null,
+          "source_unit": null
+        },
+        {
+          "nutrient": "vitamin_d_D2_D3",
+          "unit": "µg",
+          "quanta_per_100g": null,
+          "usda_nutrient_id": 1114,
+          "origin": "not_reported",
+          "source_amount": null,
+          "source_unit": null
+        },
+        {
+          "nutrient": "vitamin_e_alpha_tocopherol",
+          "unit": "mg",
+          "quanta_per_100g": null,
+          "usda_nutrient_id": 1109,
+          "origin": "not_reported",
+          "source_amount": null,
+          "source_unit": null
+        },
+        {
+          "nutrient": "vitamin_k_phylloquinone",
+          "unit": "µg",
+          "quanta_per_100g": null,
+          "usda_nutrient_id": 1185,
+          "origin": "not_reported",
+          "source_amount": null,
+          "source_unit": null
+        },
+        {
+          "nutrient": "thiamin",
+          "unit": "mg",
+          "quanta_per_100g": null,
+          "usda_nutrient_id": 1165,
+          "origin": "not_reported",
+          "source_amount": null,
+          "source_unit": null
+        },
+        {
+          "nutrient": "riboflavin",
+          "unit": "mg",
+          "quanta_per_100g": null,
+          "usda_nutrient_id": 1166,
+          "origin": "not_reported",
+          "source_amount": null,
+          "source_unit": null
+        },
+        {
+          "nutrient": "vitamin_b6",
+          "unit": "mg",
+          "quanta_per_100g": null,
+          "usda_nutrient_id": 1175,
+          "origin": "not_reported",
+          "source_amount": null,
+          "source_unit": null
+        },
+        {
+          "nutrient": "vitamin_b12",
+          "unit": "µg",
+          "quanta_per_100g": null,
+          "usda_nutrient_id": 1178,
+          "origin": "not_reported",
+          "source_amount": null,
+          "source_unit": null
+        },
+        {
+          "nutrient": "folate_DFE",
+          "unit": "µg DFE",
+          "quanta_per_100g": null,
+          "usda_nutrient_id": 1190,
+          "origin": "not_reported",
+          "source_amount": null,
+          "source_unit": null
+        },
+        {
+          "nutrient": "choline",
+          "unit": "mg",
+          "quanta_per_100g": null,
+          "usda_nutrient_id": 1180,
+          "origin": "not_reported",
+          "source_amount": null,
+          "source_unit": null
+        },
+        {
+          "nutrient": "niacin_NE",
+          "unit": "mg NE",
+          "quanta_per_100g": null,
+          "usda_nutrient_id": null,
+          "origin": "not_reported",
+          "source_amount": null,
+          "source_unit": null
+        },
+        {
+          "nutrient": "biotin",
+          "unit": "µg",
+          "quanta_per_100g": null,
+          "usda_nutrient_id": 1176,
+          "origin": "not_reported",
+          "source_amount": null,
+          "source_unit": null
+        },
+        {
+          "nutrient": "pantothenic_acid",
+          "unit": "mg",
+          "quanta_per_100g": null,
+          "usda_nutrient_id": 1170,
+          "origin": "not_reported",
+          "source_amount": null,
+          "source_unit": null
+        }
+      ]
+    },
+    {
+      "id": "walnuts",
+      "sector": "nuts",
+      "fdc_id": 2346394,
+      "description": "Nuts, walnuts, English, halves, raw",
+      "publication_date": "10/28/2022",
+      "cells": [
+        {
+          "nutrient": "energy_atwater_general",
+          "unit": "kcal",
+          "quanta_per_100g": 730000000,
+          "usda_nutrient_id": 2047,
+          "origin": "USDA_published_value",
+          "source_amount": "730",
+          "source_unit": "kcal"
+        },
+        {
+          "nutrient": "protein",
+          "unit": "g",
+          "quanta_per_100g": 14600000,
+          "usda_nutrient_id": 1003,
+          "origin": "USDA_published_value",
+          "source_amount": "14.6",
+          "source_unit": "g"
+        },
+        {
+          "nutrient": "fat",
+          "unit": "g",
+          "quanta_per_100g": 69700000,
+          "usda_nutrient_id": 1004,
+          "origin": "USDA_published_value",
+          "source_amount": "69.7",
+          "source_unit": "g"
+        },
+        {
+          "nutrient": "carbohydrate_by_difference",
+          "unit": "g",
+          "quanta_per_100g": 10900000,
+          "usda_nutrient_id": 1005,
+          "origin": "USDA_published_value",
+          "source_amount": "10.9",
+          "source_unit": "g"
+        },
+        {
+          "nutrient": "fibre_total",
+          "unit": "g",
+          "quanta_per_100g": 5210000,
+          "usda_nutrient_id": 1079,
+          "origin": "USDA_published_value",
+          "source_amount": "5.21",
+          "source_unit": "g"
+        },
+        {
+          "nutrient": "calcium",
+          "unit": "mg",
+          "quanta_per_100g": 88300000,
+          "usda_nutrient_id": 1087,
+          "origin": "USDA_published_value",
+          "source_amount": "88.3",
+          "source_unit": "mg"
+        },
+        {
+          "nutrient": "iron",
+          "unit": "mg",
+          "quanta_per_100g": 2240000,
+          "usda_nutrient_id": 1089,
+          "origin": "USDA_published_value",
+          "source_amount": "2.24",
+          "source_unit": "mg"
+        },
+        {
+          "nutrient": "magnesium",
+          "unit": "mg",
+          "quanta_per_100g": 142000000,
+          "usda_nutrient_id": 1090,
+          "origin": "USDA_published_value",
+          "source_amount": "142",
+          "source_unit": "mg"
+        },
+        {
+          "nutrient": "phosphorus",
+          "unit": "mg",
+          "quanta_per_100g": 365000000,
+          "usda_nutrient_id": 1091,
+          "origin": "USDA_published_value",
+          "source_amount": "365",
+          "source_unit": "mg"
+        },
+        {
+          "nutrient": "potassium",
+          "unit": "mg",
+          "quanta_per_100g": 424000000,
+          "usda_nutrient_id": 1092,
+          "origin": "USDA_published_value",
+          "source_amount": "424",
+          "source_unit": "mg"
+        },
+        {
+          "nutrient": "sodium",
+          "unit": "mg",
+          "quanta_per_100g": 0,
+          "usda_nutrient_id": 1093,
+          "origin": "USDA_published_value",
+          "source_amount": "0.000",
+          "source_unit": "mg"
+        },
+        {
+          "nutrient": "zinc",
+          "unit": "mg",
+          "quanta_per_100g": 2760000,
+          "usda_nutrient_id": 1095,
+          "origin": "USDA_published_value",
+          "source_amount": "2.76",
+          "source_unit": "mg"
+        },
+        {
+          "nutrient": "copper",
+          "unit": "mg",
+          "quanta_per_100g": 1210000,
+          "usda_nutrient_id": 1098,
+          "origin": "USDA_published_value",
+          "source_amount": "1.21",
+          "source_unit": "mg"
+        },
+        {
+          "nutrient": "selenium",
+          "unit": "µg",
+          "quanta_per_100g": null,
+          "usda_nutrient_id": 1103,
+          "origin": "not_reported",
+          "source_amount": null,
+          "source_unit": null
+        },
+        {
+          "nutrient": "iodine",
+          "unit": "µg",
+          "quanta_per_100g": null,
+          "usda_nutrient_id": 1100,
+          "origin": "not_reported",
+          "source_amount": null,
+          "source_unit": null
+        },
+        {
+          "nutrient": "vitamin_a_RE",
+          "unit": "µg RE",
+          "quanta_per_100g": null,
+          "usda_nutrient_id": null,
+          "origin": "not_reported",
+          "source_amount": null,
+          "source_unit": null
+        },
+        {
+          "nutrient": "vitamin_c",
+          "unit": "mg",
+          "quanta_per_100g": null,
+          "usda_nutrient_id": 1162,
+          "origin": "not_reported",
+          "source_amount": null,
+          "source_unit": null
+        },
+        {
+          "nutrient": "vitamin_d_D2_D3",
+          "unit": "µg",
+          "quanta_per_100g": null,
+          "usda_nutrient_id": 1114,
+          "origin": "not_reported",
+          "source_amount": null,
+          "source_unit": null
+        },
+        {
+          "nutrient": "vitamin_e_alpha_tocopherol",
+          "unit": "mg",
+          "quanta_per_100g": null,
+          "usda_nutrient_id": 1109,
+          "origin": "not_reported",
+          "source_amount": null,
+          "source_unit": null
+        },
+        {
+          "nutrient": "vitamin_k_phylloquinone",
+          "unit": "µg",
+          "quanta_per_100g": 1700000,
+          "usda_nutrient_id": 1185,
+          "origin": "USDA_published_value",
+          "source_amount": "1.70",
+          "source_unit": "µg"
+        },
+        {
+          "nutrient": "thiamin",
+          "unit": "mg",
+          "quanta_per_100g": 230000,
+          "usda_nutrient_id": 1165,
+          "origin": "USDA_published_value",
+          "source_amount": "0.230",
+          "source_unit": "mg"
+        },
+        {
+          "nutrient": "riboflavin",
+          "unit": "mg",
+          "quanta_per_100g": null,
+          "usda_nutrient_id": 1166,
+          "origin": "not_reported",
+          "source_amount": null,
+          "source_unit": null
+        },
+        {
+          "nutrient": "vitamin_b6",
+          "unit": "mg",
+          "quanta_per_100g": 660000,
+          "usda_nutrient_id": 1175,
+          "origin": "USDA_published_value",
+          "source_amount": "0.660",
+          "source_unit": "mg"
+        },
+        {
+          "nutrient": "vitamin_b12",
+          "unit": "µg",
+          "quanta_per_100g": null,
+          "usda_nutrient_id": 1178,
+          "origin": "not_reported",
+          "source_amount": null,
+          "source_unit": null
+        },
+        {
+          "nutrient": "folate_DFE",
+          "unit": "µg DFE",
+          "quanta_per_100g": null,
+          "usda_nutrient_id": 1190,
+          "origin": "not_reported",
+          "source_amount": null,
+          "source_unit": null
+        },
+        {
+          "nutrient": "choline",
+          "unit": "mg",
+          "quanta_per_100g": null,
+          "usda_nutrient_id": 1180,
+          "origin": "not_reported",
+          "source_amount": null,
+          "source_unit": null
+        },
+        {
+          "nutrient": "niacin_NE",
+          "unit": "mg NE",
+          "quanta_per_100g": null,
+          "usda_nutrient_id": null,
+          "origin": "not_reported",
+          "source_amount": null,
+          "source_unit": null
+        },
+        {
+          "nutrient": "biotin",
+          "unit": "µg",
+          "quanta_per_100g": 17300000,
+          "usda_nutrient_id": 1176,
+          "origin": "USDA_published_value",
+          "source_amount": "17.3",
+          "source_unit": "µg"
+        },
+        {
+          "nutrient": "pantothenic_acid",
+          "unit": "mg",
+          "quanta_per_100g": null,
+          "usda_nutrient_id": 1170,
+          "origin": "not_reported",
+          "source_amount": null,
+          "source_unit": null
+        }
+      ]
+    }
+  ]
+}

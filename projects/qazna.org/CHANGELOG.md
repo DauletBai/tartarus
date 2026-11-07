@@ -2,6 +2,11 @@
 
 ## Unreleased
 
+- Add exact nutrient-profile constraints, missing-data/retention gates and independent linear-matrix compilation.
+- Add pinned USDA composition inputs, illustrative EFSA adult profiles, 24 candidate-menu checks and 100-million preparation/delivery scenarios in report schema 11.
+- Derive agricultural ingredient/gross-output and upstream resource requirements from orders; preserve home cooking, independent delivery choice and explicit incomplete supply chains.
+- Add adversarial nutrition/order tests and include them in mandatory CI. No runtime, ledger authority or migration changes.
+
 - Split generator maintenance into two separately constrained workdays in the full offline graph; paused second-phase work remains auditable work in progress.
 - Add five five-year correlated staffing/supply scenarios, three front-loaded counterfactuals, independent queue checks and a 729-pattern individual-generator oracle; retain shortages and fixed-schedule monetary limits.
 - Update the maintained report to schema 10 (22 dimensions, 21 processes); no runtime authority or migration change.

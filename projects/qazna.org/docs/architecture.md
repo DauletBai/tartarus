@@ -189,3 +189,15 @@ work is charged on each day; paused repairs cannot create completion certificate
 The matrix and an independent queue replay verify the same traces. See
 [daily work constraints](physical-circulation.md#daily-maintenance-work-and-unavailable-technical-teams).
 This adds no live service endpoint or execution privilege.
+
+## Offline nutrient and order requirements
+
+`nutrition` now models typed nutrient definitions/units, reference profiles,
+uncertain composition/retention, per-profile constraints and explicit daily
+household-order snapshots. It compiles complete nutrient rows into the existing
+exact matrix verifier; incomplete evidence cannot certify a basket. Production
+requirements use edible yields and losses, with named upstream input dimensions.
+Cooking and delivery are independent order properties. This is a pure Rust
+calculation annex: no new API, migration, automatic substitution, ledger mutation
+or food-safety approval. The live provisioning graph still uses its existing
+resource definitions. See [nutrition scope and results](physical-circulation.md#nutrient-needs-agricultural-requirements-and-household-orders).

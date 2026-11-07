@@ -20,3 +20,12 @@ payment service, official digital tenge implementation, or government pilot.
 The red Qazna brand assets in assets/brand derive from the author's Shanraq mark,
 adapted at the author's request. Their provenance is recorded in that directory;
 these project graphics use the project documentation license, CC-BY-SA-4.0.
+
+USDA FoodData Central Foundation Foods, April 2026: selected numeric values in
+research/food-composition.json are attributed to the U.S. Department of
+Agriculture, Agricultural Research Service. Upstream data are public domain,
+published under CC0 1.0, and are not relicensed by this project.
+Source and licence: https://fdc.nal.usda.gov/api-guide/
+Dataset source URL, publication dates and SHA-256 are retained in the extract.
+No USDA/EFSA/WHO endorsement is implied. Research norms and transformations
+are documented separately from published composition values.
