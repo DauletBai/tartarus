@@ -164,3 +164,23 @@ planner. Continue by coupling the circulation identity to the physical time-expa
 matrix and cohort/staffing/construction pipelines (gate 2), then optimizing and
 checking multi-objective plans (gate 3). Do not confuse an accounting identity with
 calibrated welfare, legitimacy or a complete five-year national plan.
+
+
+## Coupled physical and monetary phase — 7 November 2026
+
+Gate 2 now has a bounded, reproducible coupled example: finite deposits, energy,
+metal/equipment, two transport legs, food, construction and training. Shared stock
+capacity rows prevent equipment/qualified-hour double booking and premature use.
+Explicit withdrawals remove capacity before activities. Complete, unique payment
+links bind accounting to inputs, delivered goods and completed public capital.
+
+Five 1,825-period scenarios pass exact physical and financial checks. Baseline
+provision is complete for its two declared final services; outage and delayed
+replacement/training cases retain unmet needs. A transport-window certificate
+establishes a strictly positive minimum shortage. See [full scope and results](physical-circulation.md).
+
+This partially closes the physical-coupling gate; it does not supply calibrated
+national sector data, demographic cohorts, full upstream closure, spoilage,
+individual choice or a global optimizer. Next work should add data/units provenance
+and rolling multi-objective optimization of waste, service gaps and working funds.
+No new runtime monetary authority or ownership policy is enabled.

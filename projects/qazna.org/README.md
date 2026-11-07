@@ -1,4 +1,25 @@
-# Qazna
+<p align="center">
+  <img src="assets/brand/qazna-shanyrak.svg" width="176" height="176" alt="Qazna — red pulsating shanyrak, continuous circulation">
+</p>
+<h1 align="center">Qazna</h1>
+<p align="center"><strong>Human needs · Shared capabilities · Continuous circulation</strong></p>
+<p align="center">
+  <a href="Cargo.toml"><img src="assets/brand/badges/version.svg" alt="Crate version 0.11.0"></a>
+  <a href="docs/completion-roadmap.md"><img src="assets/brand/badges/stage.svg" alt="Research prototype"></a>
+  <a href="LICENSE"><img src="assets/brand/badges/license.svg" alt="Code license AGPL-3.0-or-later"></a>
+</p>
+<p align="center">
+  <img src="assets/brand/badges/rust.svg" alt="Rust minimum supported version 1.88">
+  <img src="assets/brand/badges/edition.svg" alt="Rust edition 2024">
+  <img src="assets/brand/badges/tokio.svg" alt="Tokio locked dependency">
+  <img src="assets/brand/badges/axum.svg" alt="Axum locked dependency">
+</p>
+<p align="center">
+  <img src="assets/brand/badges/sqlx.svg" alt="SQLx locked dependency">
+  <img src="assets/brand/badges/postgresql.svg" alt="PostgreSQL 16 tested">
+  <img src="assets/brand/badges/python.svg" alt="Python 3.11 or later for tooling">
+</p>
+<p align="center"><a href="https://github.com/DauletBai/tartarus/actions/workflows/qazna.yml">CI results</a> · <a href="docs/completion-roadmap.md">Completion roadmap</a> · <a href="assets/brand/README.md">Brand assets</a></p>
 
 Qazna is a research system for meeting human needs, based on the Tenge model described in *Tartar and I*. Its architectural guide is a living organism: needs, provisioning units, resource circulation and feedback. Profit and market pricing are not default objectives.
 
@@ -56,6 +77,11 @@ adds one-treasury daily provision, explicit common-production entitlements,
 settlement-delay reserves and zero personal closing balances. It is a bounded
 experimental rule; physical completeness and broader policy remain open.
 
+The [coupled physical and monetary study](docs/physical-circulation.md) connects
+finite deposits, energy, equipment, transport, construction and training in one
+five-year matrix. Shared capabilities and exact goods/payment links are checked
+separately from liquidity. Coefficients remain synthetic research inputs.
+
 ## Run the checks
 
 Requirements: Rust (tested with 1.97.0), Python 3.11+ and PostgreSQL 16+. From the repository root:
@@ -70,6 +96,7 @@ On Linux, set `PG_BIN` to the installed PostgreSQL directory, for example `/usr/
 
 ## Documentation
 
+- [Physical chains, shared capabilities and goods/payment verification](docs/physical-circulation.md)
 - [Operation without AI: mathematical model, exact example, budgets and optional AI costs](docs/computation-and-ai-costs.md)
 
 - [AI economic research: company fit, Kazakhstan partnership routes, proposed experiments and pilot budget](docs/ai-economic-research.md)

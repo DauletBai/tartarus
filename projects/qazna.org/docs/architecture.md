@@ -79,3 +79,20 @@ An optional one-shot Python adapter runs Codex with the author's ChatGPT authent
 ## Operational feedback (v0.9)
 
 Migration 0009 exposes active need-linked commitments and permits versioned planner v2 results without changing historical migrations. Current calculations use v2; historical v1 proposals remain immutable and require a fresh review before application. Scoped machine tokens separate aggregate observation and review from operator action. Consistent status queries and [synthetic exercises](exercises.md) make failures and known evidence gaps visible. The comprehensive [organism audit](organism-audit.md) separates implemented responsibilities from missing infrastructure and governance.
+
+## Coupled research matrix (7 November 2026)
+
+The offline `horizon` module now compiles retained equipment, housing and qualified
+capacity into shared-use rows, with explicit withdrawals and delayed availability
+of new assets. `verify_cash_links` independently matches every priced input,
+resident provision and completed public-capital obligation to a physical plan.
+These verifiers do not write ledger entries or replace the operator API.
+`examples/coupled_study.rs` combines these constraints with exact circulation
+prefix bounds and an independent physical replay. See [equations, scenarios and
+limits](physical-circulation.md). The live system still needs an explicit, reviewed
+integration of this time-expanded planning model.
+
+Brand source and generated favicons live only in `assets/brand/`. README uses
+relative references; a future web build should serve or copy those same assets
+at build time. Local technology badges derive from Cargo metadata and declared
+requirements, not an unverified claim that a release is the latest available.

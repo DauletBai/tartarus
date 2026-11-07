@@ -200,3 +200,222 @@ impl Horizon {
         }
     }
 }
+
+/// A shared use constraint. Stock is retained, not consumed like an ingredient.
+/// Skilled capacity represents available qualified work capacity, not ownership
+/// of people. Capacity earned by completion becomes usable next period.
+#[derive(Debug, Clone, Serialize, Deserialize)]
+#[serde(deny_unknown_fields)]
+pub struct StockCapacity {
+    pub name: String,
+    pub resource: usize,
+    pub units_per_stock: i64,
+    pub activity_use: Vec<i64>,
+}
+#[derive(Debug, Clone, Serialize, Deserialize)]
+#[serde(deny_unknown_fields)]
+pub struct Withdrawal {
+    pub period: usize,
+    pub resource: usize,
+    pub quantity: i64,
+    pub basis: String,
+}
+impl Horizon {
+    /// Add shared equipment, buildings and qualified-capacity limits to the
+    /// same physical matrix. Withdrawals are explicit losses/exits, never sales.
+    pub fn compile_capabilities(
+        &self,
+        limits: &[StockCapacity],
+        exits: &[Withdrawal],
+    ) -> Result<LinearModel, MathError> {
+        let mut model = self.compile()?;
+        let r = self.resources.len();
+        let j = self.processes.len();
+        let width = 3 * r + j;
+        let mut withdrawals = std::collections::BTreeMap::new();
+        for e in exits {
+            if e.period >= self.periods.len()
+                || e.resource >= r
+                || e.quantity <= 0
+                || e.basis.trim().is_empty()
+                || withdrawals
+                    .insert((e.period, e.resource), e.quantity)
+                    .is_some()
+            {
+                return Err(MathError::Invalid("invalid or duplicate withdrawal"));
+            }
+            if e.period == 0 && self.initial[e.resource] < e.quantity {
+                return Err(MathError::Invalid("withdrawal exceeds opening stock"));
+            }
+            // Original compiler emits 3 resource rows then J capacity rows per period.
+            let row = &mut model.rows[e.period * (3 * r + j) + 3 * e.resource];
+            row.rhs = row.rhs.checked_sub(e.quantity).ok_or(MathError::Overflow)?;
+            if e.period > 0 {
+                model.rows.push(Row {
+                    name: format!("exit:{}:{}", e.period, e.resource),
+                    terms: vec![((e.period - 1) * width + r + e.resource, -1)],
+                    sense: Sense::AtMost,
+                    rhs: -e.quantity,
+                });
+            }
+        }
+        let mut names = std::collections::BTreeSet::new();
+        for limit in limits {
+            if limit.name.trim().is_empty()
+                || !names.insert(&limit.name)
+                || limit.resource >= r
+                || limit.units_per_stock <= 0
+                || limit.activity_use.len() != j
+                || limit.activity_use.iter().any(|&a| a < 0)
+            {
+                return Err(MathError::Invalid("invalid shared stock capacity"));
+            }
+            for t in 0..self.periods.len() {
+                let mut terms: Vec<_> = limit
+                    .activity_use
+                    .iter()
+                    .enumerate()
+                    .filter(|(_, a)| **a > 0)
+                    .map(|(p, &a)| (t * width + 3 * r + p, a))
+                    .collect();
+                let removed = withdrawals.get(&(t, limit.resource)).copied().unwrap_or(0);
+                let rhs = if t == 0 {
+                    (self.initial[limit.resource] - removed)
+                        .checked_mul(limit.units_per_stock)
+                        .ok_or(MathError::Overflow)?
+                } else {
+                    terms.push(((t - 1) * width + r + limit.resource, -limit.units_per_stock));
+                    (-removed)
+                        .checked_mul(limit.units_per_stock)
+                        .ok_or(MathError::Overflow)?
+                };
+                model.rows.push(Row {
+                    name: format!("shared:{}:{t}", limit.name),
+                    terms,
+                    sense: Sense::AtMost,
+                    rhs,
+                });
+            }
+        }
+        Ok(model)
+    }
+}
+
+#[derive(Debug, Clone, Serialize, Deserialize, PartialEq, Eq, PartialOrd, Ord)]
+#[serde(tag = "kind", rename_all = "snake_case", deny_unknown_fields)]
+pub enum PaymentSource {
+    Input { process: usize, resource: usize },
+    Provision { resource: usize },
+    Capital { process: usize, resource: usize },
+}
+#[derive(Debug, Clone, Serialize, Deserialize)]
+#[serde(deny_unknown_fields)]
+pub struct CashLink {
+    pub period: usize,
+    pub source: PaymentSource,
+    pub quantity: i64,
+    /// Canonical integer string: exact normative measure, never a float.
+    pub amount: String,
+}
+impl Horizon {
+    /// Check completeness and uniqueness of goods/payment links against a plan.
+    /// This does not establish physical feasibility, liquidity, ownership or the
+    /// legitimacy of norms; those require their separate checks.
+    pub fn verify_cash_links(
+        &self,
+        plan: &[PeriodPlan],
+        unit_measure: &[i64],
+        capital_resources: &[usize],
+        links: &[CashLink],
+    ) -> Result<(), MathError> {
+        self.vector(plan)?;
+        let r = self.resources.len();
+        let capital: std::collections::BTreeSet<_> = capital_resources.iter().copied().collect();
+        if unit_measure.len() != r
+            || unit_measure.iter().any(|&v| v < 0)
+            || capital.len() != capital_resources.len()
+            || capital.iter().any(|&k| k >= r)
+            || links.len() > 1_000_000
+        {
+            return Err(MathError::Invalid(
+                "invalid monetary link dimensions or norms",
+            ));
+        }
+        let mut expected = std::collections::BTreeMap::new();
+        let mut record =
+            |t: usize, source: PaymentSource, q: i64, k: usize| -> Result<(), MathError> {
+                if q < 0 {
+                    return Err(MathError::Invalid("negative physical quantity"));
+                }
+                if q > 0 && unit_measure[k] > 0 {
+                    expected.insert(
+                        (t, source),
+                        (q, (i128::from(q) * i128::from(unit_measure[k])).to_string()),
+                    );
+                }
+                Ok(())
+            };
+        for (t, p) in plan.iter().enumerate() {
+            if p.activities.iter().any(|&n| n < 0) {
+                return Err(MathError::Invalid("negative activity"));
+            }
+            for k in 0..r {
+                if capital.contains(&k) && p.deliveries[k] != 0 {
+                    return Err(MathError::Invalid(
+                        "capital procurement cannot also be billed as provision",
+                    ));
+                }
+                record(
+                    t,
+                    PaymentSource::Provision { resource: k },
+                    p.deliveries[k],
+                    k,
+                )?;
+            }
+            for (j, process) in self.processes.iter().enumerate() {
+                for k in 0..r {
+                    let q = process.inputs[k]
+                        .checked_mul(p.activities[j])
+                        .ok_or(MathError::Overflow)?;
+                    record(
+                        t,
+                        PaymentSource::Input {
+                            process: j,
+                            resource: k,
+                        },
+                        q,
+                        k,
+                    )?;
+                    if capital.contains(&k) && t >= process.lead_periods {
+                        let q = process.outputs[k]
+                            .checked_mul(plan[t - process.lead_periods].activities[j])
+                            .ok_or(MathError::Overflow)?;
+                        record(
+                            t,
+                            PaymentSource::Capital {
+                                process: j,
+                                resource: k,
+                            },
+                            q,
+                            k,
+                        )?;
+                    }
+                }
+            }
+        }
+        for link in links {
+            let Some((q, amount)) = expected.remove(&(link.period, link.source.clone())) else {
+                return Err(MathError::Invalid("duplicate or unsupported goods payment"));
+            };
+            if link.quantity != q || link.amount != amount {
+                return Err(MathError::Invalid(
+                    "payment does not match physical quantity and norm",
+                ));
+            }
+        }
+        if !expected.is_empty() {
+            return Err(MathError::Invalid("missing goods payment"));
+        }
+        Ok(())
+    }
+}

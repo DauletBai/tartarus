@@ -497,3 +497,13 @@ amounts, invalid order and unavailable-event indices. The full harness regenerat
 both maintained mathematical reports byte-for-byte and runs the finite-treasury
 counterexample plus the shared-entitlement candidate on separate temporary databases.
 This closes a bounded circulation example, not the roadmap's entire economic gate.
+
+
+## Physical-chain coupling
+
+The next phase is documented in [Physical capabilities and monetary circulation](physical-circulation.md).
+It extends the exact matrix with shared assets/qualified capacity and dated
+withdrawals, then verifies that each goods payment corresponds exactly to an
+actual input, provision or completed capital item. The five-year coupled report
+retains baseline coverage, shortages, discarded quantities and opening working
+measure; it does not equate money availability with physical sufficiency.

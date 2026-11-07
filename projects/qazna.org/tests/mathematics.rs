@@ -657,3 +657,300 @@ fn schedule_validation_rejects_ambiguous_or_invalid_inputs() {
         vec!["0".to_string(), (2 * u128::from(u64::MAX)).to_string()]
     );
 }
+
+mod capabilities {
+    use super::*;
+    use qazna::horizon::*;
+    fn toy() -> Horizon {
+        Horizon {
+            resources: vec![
+                "material".into(),
+                "equipment".into(),
+                "qualified_capacity".into(),
+                "output".into(),
+            ],
+            initial: vec![4, 1, 1, 0],
+            storage_caps: vec![8, 2, 2, 8],
+            processes: vec![Process {
+                inputs: vec![1, 0, 0, 0],
+                outputs: vec![0, 0, 0, 1],
+                lead_periods: 1,
+            }],
+            periods: (0..3)
+                .map(|_| Period {
+                    supplies: vec![0; 4],
+                    needs: vec![0, 0, 0, 4],
+                    capacities: vec![4],
+                })
+                .collect(),
+            objective_resource: 3,
+        }
+    }
+    fn replay(
+        m: &Horizon,
+        starts: &[Vec<i64>],
+        deliver: bool,
+        exits: &[Withdrawal],
+    ) -> Vec<PeriodPlan> {
+        let mut stock = m.initial.clone();
+        let mut result = vec![];
+        for (t, a) in starts.iter().enumerate() {
+            for e in exits.iter().filter(|e| e.period == t) {
+                stock[e.resource] -= e.quantity;
+            }
+            for (j, p) in m.processes.iter().enumerate() {
+                if t >= p.lead_periods {
+                    for (k, n) in stock.iter_mut().enumerate() {
+                        *n += p.outputs[k] * starts[t - p.lead_periods][j];
+                    }
+                }
+            }
+            let mut delivered = vec![0; stock.len()];
+            if deliver {
+                delivered[3] = stock[3];
+                stock[3] = 0;
+            }
+            for (j, p) in m.processes.iter().enumerate() {
+                for (k, n) in stock.iter_mut().enumerate() {
+                    *n -= p.inputs[k] * a[j];
+                }
+            }
+            result.push(PeriodPlan {
+                activities: a.clone(),
+                deliveries: delivered,
+                closing: stock.clone(),
+                discarded: vec![0; stock.len()],
+            });
+        }
+        result
+    }
+    fn limit(resource: usize, use_by_process: Vec<i64>) -> StockCapacity {
+        StockCapacity {
+            name: format!("stock_{resource}"),
+            resource,
+            units_per_stock: 2,
+            activity_use: use_by_process,
+        }
+    }
+    #[test]
+    fn shared_equipment_and_skills_are_not_consumed_or_double_booked() {
+        let m = toy();
+        let plan = replay(&m, &[vec![2], vec![2], vec![0]], true, &[]);
+        let checked = m
+            .compile_capabilities(&[limit(1, vec![1]), limit(2, vec![1])], &[])
+            .unwrap();
+        verify_linear(&checked, &m.vector(&plan).unwrap(), None).unwrap();
+        assert!(plan.iter().all(|p| p.closing[1] == 1 && p.closing[2] == 1));
+        let mut m = toy();
+        m.initial[0] = 8;
+        m.processes.push(m.processes[0].clone());
+        for t in &mut m.periods {
+            t.capacities.push(4);
+        }
+        let plan = replay(&m, &[vec![2, 2], vec![0, 0], vec![0, 0]], true, &[]);
+        verify_linear(&m.compile().unwrap(), &m.vector(&plan).unwrap(), None).unwrap();
+        assert!(
+            verify_linear(
+                &m.compile_capabilities(&[limit(1, vec![1, 1])], &[])
+                    .unwrap(),
+                &m.vector(&plan).unwrap(),
+                None
+            )
+            .is_err()
+        );
+    }
+    #[test]
+    fn training_completion_cannot_be_used_before_the_next_period() {
+        let mut m = toy();
+        m.initial[2] = 0;
+        // Material in index 1 is now an eligible training place, not equipment.
+        m.processes.push(Process {
+            inputs: vec![0, 1, 0, 0],
+            outputs: vec![0, 0, 1, 0],
+            lead_periods: 1,
+        });
+        m.periods.push(m.periods[0].clone());
+        for t in &mut m.periods {
+            t.capacities = vec![4, 1];
+        }
+        let caps = m
+            .compile_capabilities(&[limit(2, vec![1, 0])], &[])
+            .unwrap();
+        let good = replay(
+            &m,
+            &[vec![0, 1], vec![0, 0], vec![2, 0], vec![0, 0]],
+            true,
+            &[],
+        );
+        verify_linear(&caps, &m.vector(&good).unwrap(), None).unwrap();
+        let premature = replay(
+            &m,
+            &[vec![0, 1], vec![2, 0], vec![0, 0], vec![0, 0]],
+            true,
+            &[],
+        );
+        verify_linear(&m.compile().unwrap(), &m.vector(&premature).unwrap(), None).unwrap();
+        assert!(verify_linear(&caps, &m.vector(&premature).unwrap(), None).is_err());
+    }
+    #[test]
+    fn retirement_removes_capacity_before_any_activity() {
+        let m = toy();
+        let exits = vec![Withdrawal {
+            period: 1,
+            resource: 1,
+            quantity: 1,
+            basis: "Retired equipment".into(),
+        }];
+        let matrix = m
+            .compile_capabilities(&[limit(1, vec![1])], &exits)
+            .unwrap();
+        let good = replay(&m, &[vec![2], vec![0], vec![0]], true, &exits);
+        verify_linear(&matrix, &m.vector(&good).unwrap(), None).unwrap();
+        let wrong = replay(&m, &[vec![2], vec![2], vec![0]], true, &exits);
+        assert!(verify_linear(&matrix, &m.vector(&wrong).unwrap(), None).is_err());
+        let mut ex = exits[0].clone();
+        ex.quantity = 2;
+        let wrong = replay(&m, &[vec![0], vec![0], vec![0]], true, &[ex.clone()]);
+        assert!(
+            verify_linear(
+                &m.compile_capabilities(&[], &[ex]).unwrap(),
+                &m.vector(&wrong).unwrap(),
+                None
+            )
+            .is_err()
+        );
+    }
+    #[test]
+    fn capability_validation_and_overflow_are_rejected() {
+        let m = toy();
+        let ex = Withdrawal {
+            period: 0,
+            resource: 1,
+            quantity: 2,
+            basis: "exit".into(),
+        };
+        assert!(m.compile_capabilities(&[], &[ex]).is_err());
+        let ex = Withdrawal {
+            period: 1,
+            resource: 1,
+            quantity: 1,
+            basis: "exit".into(),
+        };
+        assert!(m.compile_capabilities(&[], &[ex.clone(), ex]).is_err());
+        let good = limit(1, vec![1]);
+        assert!(m.compile_capabilities(&[good.clone(), good], &[]).is_err());
+        for bad in [limit(9, vec![1]), limit(1, vec![-1]), limit(1, vec![])] {
+            assert!(m.compile_capabilities(&[bad], &[]).is_err());
+        }
+        let mut m = toy();
+        m.initial[1] = 2;
+        let mut bad = limit(1, vec![1]);
+        bad.units_per_stock = i64::MAX;
+        assert_eq!(
+            m.compile_capabilities(&[bad], &[]).unwrap_err(),
+            MathError::Overflow
+        );
+    }
+    fn links(capital: bool) -> Vec<CashLink> {
+        vec![
+            CashLink {
+                period: 0,
+                source: PaymentSource::Input {
+                    process: 0,
+                    resource: 0,
+                },
+                quantity: 2,
+                amount: "6".into(),
+            },
+            CashLink {
+                period: 1,
+                source: PaymentSource::Input {
+                    process: 0,
+                    resource: 0,
+                },
+                quantity: 2,
+                amount: "6".into(),
+            },
+            CashLink {
+                period: 1,
+                source: if capital {
+                    PaymentSource::Capital {
+                        process: 0,
+                        resource: 3,
+                    }
+                } else {
+                    PaymentSource::Provision { resource: 3 }
+                },
+                quantity: 2,
+                amount: "14".into(),
+            },
+            CashLink {
+                period: 2,
+                source: if capital {
+                    PaymentSource::Capital {
+                        process: 0,
+                        resource: 3,
+                    }
+                } else {
+                    PaymentSource::Provision { resource: 3 }
+                },
+                quantity: 2,
+                amount: "14".into(),
+            },
+        ]
+    }
+    #[test]
+    fn goods_payment_link_requires_complete_unique_exact_amounts() {
+        let m = toy();
+        let p = replay(&m, &[vec![2], vec![2], vec![0]], true, &[]);
+        let base = links(false);
+        m.verify_cash_links(&p, &[3, 0, 0, 7], &[], &base).unwrap();
+        let mut bad = base.clone();
+        bad[0].amount = "7".into();
+        assert!(m.verify_cash_links(&p, &[3, 0, 0, 7], &[], &bad).is_err());
+        let mut bad = base.clone();
+        bad[0].quantity = 3;
+        assert!(m.verify_cash_links(&p, &[3, 0, 0, 7], &[], &bad).is_err());
+        let mut bad = base.clone();
+        bad.push(base[0].clone());
+        assert!(m.verify_cash_links(&p, &[3, 0, 0, 7], &[], &bad).is_err());
+        assert!(
+            m.verify_cash_links(&p, &[3, 0, 0, 7], &[], &base[1..])
+                .is_err()
+        );
+        let mut bad = base.clone();
+        bad[0].amount = "06".into();
+        assert!(m.verify_cash_links(&p, &[3, 0, 0, 7], &[], &bad).is_err());
+        let mut bad = base.clone();
+        bad[0].source = PaymentSource::Input {
+            process: 0,
+            resource: 2,
+        };
+        assert!(m.verify_cash_links(&p, &[3, 0, 0, 7], &[], &bad).is_err());
+    }
+    #[test]
+    fn capital_payment_is_after_completion_and_not_counted_twice() {
+        let m = toy();
+        let p = replay(&m, &[vec![2], vec![2], vec![0]], false, &[]);
+        let base = links(true);
+        m.verify_cash_links(&p, &[3, 0, 0, 7], &[3], &base).unwrap();
+        let mut bad = base.clone();
+        bad[2].period = 0;
+        assert!(m.verify_cash_links(&p, &[3, 0, 0, 7], &[3], &bad).is_err());
+        let delivered = replay(&m, &[vec![2], vec![2], vec![0]], true, &[]);
+        let mut double = links(true);
+        double.extend_from_slice(&links(false)[2..]);
+        assert!(
+            m.verify_cash_links(&delivered, &[3, 0, 0, 7], &[3], &double)
+                .is_err()
+        );
+        assert!(
+            m.verify_cash_links(&p, &[3, -1, 0, 7], &[3], &base)
+                .is_err()
+        );
+        assert!(
+            m.verify_cash_links(&p, &[3, 0, 0, 7], &[3, 3], &base)
+                .is_err()
+        );
+    }
+}

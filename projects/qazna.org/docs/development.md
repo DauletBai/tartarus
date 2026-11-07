@@ -16,7 +16,7 @@ The script checks formatting, dependency license inventory, Clippy with warnings
 
 Ordinary `cargo test` does not run the ignored PostgreSQL tests. The full script invokes them with `--ignored --test-threads=4`. A manual run must set `QAZNA_TEST_DATABASE_URL` to a disposable database in which tests may create schemas. Scenarios run four at a time; requests inside concurrency tests remain concurrent.
 
-Verified on 3 November 2026 with Rust 1.97.0 and PostgreSQL 16.10: 3 Rust unit tests, 11 offline Python safety tests and 81 PostgreSQL integration tests. Coverage includes allocation/reservation races, rollback injection, upgrades from 0.1/0.2/0.3/0.4/0.5/0.6/0.7, needs independent of balances, hierarchy scope, durable shortages, shared production capacity, cross-period stock races, exact overflow assessment, production completion, losses, terminal races, provenance chains, immutable norm revisions and proposals with shared resource/capacity budgets, immutable drafts, stale-plan rejection, complete batch rollback and competing draft/direct actions, transactional event delivery, lease fencing, stopped workers and independent AI evidence validation. The HTTP smoke scenario checks persistent holds, cancellation, completion and provenance draft application and queued coordination across three restarts. Backup restoration remains a separate future check.
+Verified on 3 November 2026 with Rust 1.97.0 and PostgreSQL 16.10: 3 Rust unit tests, 11 offline Python safety tests and 81 PostgreSQL integration tests. Coverage includes allocation/reservation races, rollback injection, upgrades from 0.1/0.2/0.3/0.4/0.5/0.6/0.7, needs independent of balances, hierarchy scope, durable shortages, shared production capacity, cross-period stock races, exact overflow assessment, production completion, losses, terminal races, provenance chains, immutable norm revisions and proposals with shared resource/capacity budgets, immutable drafts, stale-plan rejection, complete batch rollback and competing draft/direct actions, transactional event delivery, lease fencing, stopped workers and independent AI evidence validation. The HTTP smoke scenario checks persistent holds, cancellation, completion and provenance draft application and queued coordination across three restarts. At that milestone, backup restoration was still pending; see the current verification record below.
 
 ## Manual startup
 
@@ -73,3 +73,18 @@ The required check runner also executes two accelerated synthetic actor scenario
 The final exercise drain allows 90 seconds: a terminated worker may leave a valid 30-second lease, followed by recalculation and queued work. A timeout reports the last queue snapshot. This does not shorten production leases or relax the zero-pending/queued/running/failed completion requirements.
 
 Version 0.10 adds the [attestation protocol](evidence.md) and a real HTTP strict-evidence exercise to the required check runner. The v0.9 counts above describe the prior milestone.
+
+## Verification record — 7 November 2026, physical coupling
+
+The full disposable-PostgreSQL check passed: 3 Rust library tests, 28 mathematical
+tests, 4 no-AI example tests, 11 Python advisory-safety tests and 91 PostgreSQL
+integration tests. The runner also regenerated the horizon, circulation and coupled
+reports byte-for-byte; exercised HTTP restart/provenance, strict attestations,
+restricted runtime privileges and backup restoration of 36 tables; and completed
+the 60-period shortage and 35-period closed-circulation trials plus actor seeds
+7 and 19. Known physical-evidence gaps in actor trials remain documented.
+
+A final reporting-only addition exposes discarded quantities; the coupled report
+was regenerated and compared again, and Clippy passed for all targets. These
+synthetic checks establish the stated program invariants, not observed national
+productivity, long-term economic stability or readiness for public deployment.

@@ -9,7 +9,7 @@ import json
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
-TOP = ["build.rs", ".gitignore", "AGENTS.md", "Cargo.toml", "Cargo.lock", "README.md", "LICENSE",
+TOP = ["build.rs", ".gitignore", ".gitattributes", "AGENTS.md", "Cargo.toml", "Cargo.lock", "README.md", "LICENSE",
        "LICENSE-DOCS", "NOTICE", "CONTRIBUTING.md", "SECURITY.md", "CHANGELOG.md",
        "THIRD_PARTY_LICENSES.json"]
 
@@ -20,12 +20,15 @@ def inventory():
         files += [p for p in (ROOT / directory).rglob("*")
                   if p.is_file() and p.suffix in {".rs", ".sql", ".py", ".md", ".json"}
                   and "__pycache__" not in p.parts]
+    files += [p for p in (ROOT / "assets/brand").rglob("*")
+              if p.is_file() and p.suffix in {".svg", ".png", ".ico", ".md"}]
     result = []
     for p in sorted(files):
         if p.is_symlink():
             raise SystemExit(f"Publication does not follow symlinks: {p.name}")
         data = p.read_bytes()
-        data.decode("utf-8")
+        if p.suffix not in {".png", ".ico"}:
+            data.decode("utf-8")
         result.append({"path": "projects/qazna.org/" + p.relative_to(ROOT).as_posix(),
                        "bytes": len(data), "sha256": hashlib.sha256(data).hexdigest(),
                        "git_blob_sha": hashlib.sha1(b"blob " + str(len(data)).encode() + b"\0" + data).hexdigest()})

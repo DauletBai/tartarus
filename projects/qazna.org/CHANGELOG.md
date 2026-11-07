@@ -2,6 +2,11 @@
 
 ## Unreleased
 
+- Couple finite raw materials, energy, equipment, logistics, construction and training through shared-capability constraints and explicit withdrawals.
+- Verify complete, unique physical-payment links; reject double billing, premature capital payments and forged quantities/amounts.
+- Add five exact 1,825-period coupled scenarios and a certified transport-shortage bound, retaining synthetic assumptions and discarded quantities.
+- Add the author-provided pulsating shanyrak in red, central brand/favicon assets, reproducible standard-library raster derivatives and centered README stack badges from locked metadata.
+
 - Add exact ordered-schedule liquidity checks, blocked-edge traces and a shared-entitlement circulation candidate with one treasury and zero daily resident closing balances.
 - Verify 1,825-period circulation under fixed needs, settlement delay, quantity growth and regional/link disruption; retain limits on ownership assumptions and physical completeness.
 - Extend the strict-evidence HTTP exercise with declared intermediate payments, common entitlements and restart during a partly completed cycle; regenerate maintained circulation calculations in CI.

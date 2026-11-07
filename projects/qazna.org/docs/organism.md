@@ -48,3 +48,8 @@ about privately owned firms. The live operator may exercise existing transfers o
 synthetic data; no new automatic policy or issuance authority is enabled. See
 [closed circulation](computation-and-ai-costs.md#closed-circulation-candidate--7-november-2026)
 for exact bounds, counterexamples and missing physical links.
+
+The [coupled physical study](physical-circulation.md) now includes finite deposits,
+energy, transport, equipment, construction and qualification lead times. Its
+synthetic physical/payment checks narrow that research gap; they do not resolve
+calibration, individual choice, upstream completeness or live deployment.
