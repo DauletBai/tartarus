@@ -34,6 +34,7 @@ def main():
     run(["cargo", "test", "--locked", "--lib"])
     run(["cargo", "test", "--locked", "--test", "mathematics"])
     run(["cargo", "test", "--locked", "--example", "no_ai_study"])
+    run(["cargo", "test", "--locked", "--example", "coupled_study"])
     with tempfile.TemporaryDirectory(prefix="qazna-math-") as math_dir:
         generated = Path(math_dir) / "horizon-results.json"
         run(["cargo", "run", "--locked", "--example", "horizon_study", "--", str(generated)])

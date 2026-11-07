@@ -164,3 +164,20 @@ service or overdue periods. `coupled_study` invokes a separate five-year lifecyc
 submodel and publishes it alongside the existing coupled calculations. It does not
 change the database lot schema, enforce expiry on live reservations, modify
 payments or grant AI execution rights. See [lifecycle results](physical-circulation.md#dated-food-transport-loss-and-standby-maintenance).
+
+The full coupled experiment also uses `DatedStock` and an explicit generator-cohort
+history. Dated eligibility and service availability constrain actual starts;
+expiry/damage enter the aggregate matrix as discard, maintenance consumes
+endogenously produced metal/energy and shared capacities, and input/provision
+cash links are rebuilt. The first integrated 19-resource, 18-process stage had no automatic
+execution route; aggregate LP feasibility is checked alongside lifecycle guards.
+
+
+The schema-9 target food scenario uses 21 dimensions and 20 processes, including
+constructed grain and packaged-food storage. Its processing recipe consumes
+packaging metal and additional energy; it creates a dated preserved product.
+Transport retains the source deadline. Future stock positions exclude expired or
+late-arriving lots. A tested restart allowance covers the power/processing/route
+lead chain; the nominal-only failure remains recorded. The live API is unchanged.
+Storage method, package, climate, food safety and nutrient profiles are specification
+gates rather than inferred properties of a long numerical expiry date.

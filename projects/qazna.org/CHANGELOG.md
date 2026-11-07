@@ -2,6 +2,16 @@
 
 ## Unreleased
 
+- Make preserved sealed products the target food inventory; retain historical fresh-food cases for comparison.
+- Add constructed grain/product stores, packaging-material and processing-energy consumption, future-valid stock positions and restart-aware reserve targets.
+- Extend the maintained report to schema 9 with nine upstream-reserve comparisons, eleven preserved-food paths and a nominal-reserve counterexample; include source qualifications and a food-profile specification gate.
+- Add tests of future stock positions, long package deadlines, expiry overflow and complete process traversal; keep live authority unchanged.
+
+
+- Integrate dated food, transport damage and service of constructed generators into the full 19-resource/18-process graph and reconstructed monetary schedules.
+- Compare a three-demand-day meal target with the retained static-buffer counterexample, common funding across seven five-year paths and equal-observation prefixes.
+- Add an exact age-qualified FEFO primitive with independent unit-oracle/overflow tests and six graph-lifecycle tests, including fabricated service/food arrival rejection.
+
 - Add exact offline dated-lot transitions with immutable expiry, FEFO, partial transport loss, late-arrival expiry and duplicate/invalid-command rejection.
 - Add standby maintenance requiring finite spares and shared labour, including paused work and correlated external outages.
 - Extend the maintained coupled report to schema 7 with 32 separate five-year lifecycle runs (58,400 periods), 28 causal-prefix checks and seven additional independent/negative tests; retain explicit integration boundaries and deficits.

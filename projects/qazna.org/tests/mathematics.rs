@@ -2092,3 +2092,69 @@ fn maintenance_invalid_inputs_and_overflow_fail_without_mutation() {
     assert_eq!(u, original);
     assert_eq!(u.step(0, true, 1, 1, false).unwrap().age_at_close, 0);
 }
+
+#[test]
+fn age_qualified_selection_matches_unit_oracle_and_retains_original_expiry() {
+    use qazna::lifecycle::DatedStock;
+    for a in 0..=7u64 {
+        for b in 0..=7u64 {
+            for valid in 0..=6u32 {
+                for request in 0..=15u64 {
+                    let mut stock = DatedStock::default();
+                    stock.add(3, a).unwrap();
+                    stock.add(6, b).unwrap();
+                    let mut units = vec![3u32; a as usize];
+                    units.extend(vec![6u32; b as usize]);
+                    let eligible = units.iter().filter(|&&e| e > valid).count();
+                    let before = stock.clone();
+                    match stock.take(request, valid) {
+                        Ok(cohorts) => {
+                            assert!(request <= eligible as u64);
+                            let expanded: Vec<_> = cohorts
+                                .into_iter()
+                                .flat_map(|(e, q)| vec![e; q as usize])
+                                .collect();
+                            let expected: Vec<_> = units
+                                .iter()
+                                .copied()
+                                .filter(|&e| e > valid)
+                                .take(request as usize)
+                                .collect();
+                            assert_eq!(expanded, expected);
+                            for e in expected {
+                                let i = units.iter().position(|&x| x == e).unwrap();
+                                units.remove(i);
+                            }
+                            for day in 0..=7 {
+                                let expired = units.iter().filter(|&&e| e <= day).count();
+                                units.retain(|&e| e > day);
+                                assert_eq!(stock.expire(day), expired as u64);
+                                assert_eq!(stock.total(), units.len() as u64);
+                            }
+                        }
+                        Err(_) => {
+                            assert!(request > eligible as u64);
+                            assert_eq!(stock, before);
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+#[test]
+fn dated_stock_overflow_and_ineligible_quantity_do_not_change_state() {
+    use qazna::lifecycle::DatedStock;
+    let mut stock = DatedStock::default();
+    stock.add(2, u64::MAX).unwrap();
+    let original = stock.clone();
+    assert_eq!(stock.add(3, 1), Err(MathError::Overflow));
+    assert_eq!(stock, original);
+    assert!(stock.take(1, 2).is_err());
+    assert_eq!(stock, original);
+    assert_eq!(stock.expire(2), u64::MAX);
+    assert_eq!(stock.total(), 0);
+    stock.add(3, 2).unwrap();
+    assert_eq!(stock.take(2, 2).unwrap(), vec![(3, 2)]);
+}

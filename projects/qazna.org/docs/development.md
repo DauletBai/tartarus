@@ -271,3 +271,75 @@ evidence gap. The disposable PostgreSQL cluster was stopped and removed. No
 existing database, real participants, real money or model calls were used. The
 preceding commit `71deac0` passed GitHub CI; this record does not presume the result
 of a later CI run.
+
+## Integrated lifecycle and circulation — 7 November 2026
+
+The schema-8 coupled report adds seven 1,825-period scenarios and a fixed-buffer
+counterexample. The full graph now has 19 resource dimensions and 18 processes.
+Dated food follows transport, expiry and damage; generator construction and service
+share material, energy and work constraints with other production. All 436,726
+monetary movements across the seven candidate scenarios settle using one opening
+vector without later issuance. This includes two scenarios with physical shortages.
+Ordinary operation, supply interruption and transport damage have no modelled food
+shortfall under the three-day buffer candidate; food expiry remains substantial.
+Maintenance work is front-loaded at service start, and no global age-aware
+optimality or national calibration is claimed.
+
+Two additional mathematical tests check 7,168 age-qualified FEFO combinations
+against an individual-unit oracle and atomic overflow/ineligible selection. Six
+coupled-example tests cover original expiry in transport, cooking versus transit,
+nonduplicated damage/expiry, partial repair, fabricated service completion and
+undated arrivals. Historical quantities and circulation outcomes were checked
+against the preceding report with inactive extension dimensions removed.
+
+The full required runner passed: 57 mathematics, 91 PostgreSQL, 6 coupled-example,
+3 library, 4 no-AI example and 11 advisory-safety tests; formatting, Clippy and
+licence checks; byte-identical regeneration of all three maintained reports; HTTP
+restart/provenance, both strict-evidence configurations and 36-table backup/restore.
+The 60-period shortfall exercise passed 4,548 requests and one restart in 55.779
+seconds; the 35-period closed exercise passed 3,901 requests and two restarts in
+46.469 seconds. Actor seeds 7/19 completed with the existing physical-evidence
+limitation still reported. The runner stopped and removed its disposable cluster.
+No existing database, real participant, real money or model call was used. These
+are local results; a subsequent GitHub CI run is a separate check.
+
+
+## Preserved-food reserves and restart — 7 November 2026
+
+The maintained report is schema 9 with 21 resource dimensions and 20 processes.
+Nine raw-reserve comparisons, eleven target preserved-food paths and one
+nominal-reserve counterexample add 38,325 simulated periods. The target consumes
+packaging material and additional process energy, builds both food stores and
+carries sealed-product deadlines unchanged through transport. Its initial product
+endowment is explicitly pre-preserved. The former fresh-food scenarios remain
+comparators. All 1,245 checked legacy numerical fields remain unchanged, apart
+from inactive appended dimensions; no historical failure was deleted.
+
+The target ordinary scenario has zero food expiry and zero unmet food. Prepared
+60-day harvest loss and 30-day correlated power loss also have zero unmet food;
+early/longer failures and disabled storage retain deficits. The four-day restart
+allowance is tested against a nominal-only counterexample, not claimed as a
+global optimum. Source-qualified storage evidence and the required real-product
+specification fields are included; no generic shelf-life certification is made.
+Across the eleven target paths, 762,673 movements settle under one opening vector
+with no later issuance. The nine intermediate paths settle 597,298 movements
+under their own common vector. Physical shortage remains independent of settlement.
+
+Three additional coupled-example tests cover future-position exclusion of late
+or expired arrivals, preserved deadlines at 2/10/30-year abstract durations with
+damage conservation, and fail-closed expiry overflow. Scenario assertions enforce
+ordinary/prepared coverage, construction presence, disabled-store failure and
+nominal-reserve shortfall. Fixed-size process traversal and uniqueness checks
+prevent newly added processes from being silently omitted.
+
+The complete required local runner passed: 57 mathematics, 91 PostgreSQL, nine
+coupled-example, three library, four no-AI example and 11 advisory-safety tests;
+formatting, Clippy and licence checks; byte-identical regeneration of all three
+maintained reports; HTTP restart/provenance, both strict-evidence configurations
+and 36-table backup/restore. The 60-period shortfall exercise passed 4,548 requests
+and one restart in 55.318 seconds; the 35-period closed exercise passed 3,901
+requests and two restarts in 46.183 seconds. Actor seeds 7/19 completed with the
+existing physical-evidence limitation. The disposable PostgreSQL cluster was
+stopped and removed. The initial sandbox-only attempt could not create PostgreSQL
+shared memory; the full runner was subsequently rerun successfully with permission.
+No existing database, real participants, real money or model calls were used.
