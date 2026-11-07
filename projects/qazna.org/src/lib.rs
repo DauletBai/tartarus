@@ -24,3 +24,5 @@ pub mod optimization;
 pub mod replanning;
 
 pub mod lifecycle;
+
+pub mod nutrition;

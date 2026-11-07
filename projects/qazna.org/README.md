@@ -181,7 +181,11 @@ Code is **AGPL-3.0-or-later**, see [LICENSE](LICENSE). Documentation in this pro
 The [dependency inventory](THIRD_PARTY_LICENSES.json) records locked Rust package versions and upstream license declarations. Dependency source and compiled distributions are not shipped here; distributing them requires the applicable upstream notices.
 
 
-Latest bounded extension: [daily maintenance and specialist absence](docs/physical-circulation.md#daily-maintenance-work-and-unavailable-technical-teams).
+Earlier bounded extension: [daily maintenance and specialist absence](docs/physical-circulation.md#daily-maintenance-work-and-unavailable-technical-teams).
 Two separately constrained workdays prevent repairs from completing without a
 technical team; preserved-food and housing outcomes are reported independently
 of successful monetary settlement. Coefficients remain synthetic.
+
+### Nutrition and household choice
+
+The offline [nutrition/order annex](docs/physical-circulation.md#nutrient-needs-agricultural-requirements-and-household-orders) checks nutrient constraints before aggregating food requirements. Household cooking, prepared-food orders and delivery are separate choices. Pinned composition data, exact arithmetic and negative tests expose missing evidence and capacity gaps; the sample remains an uncalibrated research model, not a certified national diet.

@@ -1237,3 +1237,139 @@ service. These are offline experiments: no API route, migration, AI authority or
 automatic monetary policy is introduced. The current five paths drain their
 service queues before the horizon; persistent end-of-horizon outage is an explicit
 future scenario, not permission to discard unfinished work.
+
+## Nutrient needs, agricultural requirements and household orders
+
+The 7 November nutrition stage adds `src/nutrition.rs` and the maintained report's
+`nutrition_and_orders` annex. The sequence is individual needs → voluntarily
+chosen ingredient basket → production requirements → separately ordered cooking
+and delivery. An abstract meal count is no longer treated as evidence of adequate
+protein, fat, carbohydrate, vitamins or minerals.
+
+### Sources and dimensions
+
+[USDA Foundation Foods, April 2026](https://fdc.nal.usda.gov/download-datasets/)
+supplies a pinned, small extract of 13 foods and 29 nutrient definitions in
+`research/food-composition.json`. Each cell preserves the USDA identifier,
+original amount/unit and whether it is absent, published or derived.
+`scripts/import_food_composition.py` reproduces it from the checksum-pinned ZIP;
+the build and tests require no network. Values refer to the described raw/dry or
+as-sold edible portion. [USDA documentation](https://fdc.nal.usda.gov/Foundation_Foods_Documentation/)
+explains incomplete nutrient coverage and the general Atwater energy calculation.
+An absent protein value for oil is **unknown**, not an inferred zero. Energy is
+calculated as 4×protein + 9×fat + 4×carbohydrate only when all three are supplied,
+and is marked as derived. Published values are nominal coefficients, not
+statistical confidence bounds; source zeros do not prove biological absence.
+The importer refuses explicitly LOQ-coded entries until intervals are supported.
+No such entries occur among the selected cells of this pinned release.
+
+Two illustrative profiles use selected adult references from the
+[EFSA 2017 summary](https://www.efsa.europa.eu/sites/default/files/2017_09_DRVs_summary_report.pdf),
+including its table footnotes, plus the [WHO adult sodium target](https://www.who.int/en/news-room/fact-sheets/detail/healthy-diet).
+Each profile specifies age, sex, assumed body mass, life stage and assumed energy.
+These are a versioned research snapshot, not a complete current clinical standard.
+The profiles contain 28 constraints. Zinc data are retained, but a zinc norm
+requires the unresolved phytate-intake choice. Protein uses the adult 0.83 g/kg reference;
+energy envelopes and total-carbohydrate envelopes are declared synthetic choices.
+EFSA available-carbohydrate percentages are not substituted for USDA carbohydrate
+by difference (which includes fibre). Retinol equivalents (RE), retinol activity
+equivalents (RAE), niacin equivalents and folate equivalents remain distinct.
+
+The 100-million scenario uses two equal synthetic adult cohorts, not national
+age statistics. Children, pregnancy, lactation, illnesses, activity changes,
+allergies, essential amino/fatty acids, drinking water and comprehensive tolerable
+upper levels require further profiles and review. A lower reference intake is
+not an upper safe limit. Shared stock does not erase personal differences.
+
+### Exact constraints
+
+For profile `c`, food `f`, nutrient `n`, let `x[c,f]` be daily edible ingredient
+grams, `a[f,n]` the reported amount per 100 g, and `r[f,n]` the retained fraction
+after the specified processing and storage. For a measured interval `[r-,r+]`:
+
+```text
+L[c,n] <= sum_f a[f,n] * x[c,f] * r-[f,n] / 100
+sum_f a[f,n] * x[c,f] * r+[f,n] / 100 <= U[c,n]  (where supplied)
+```
+
+One source unit is represented by 1,000,000 integer quanta; retention uses basis
+points. Products and sums are checked in 128-bit arithmetic. Comparisons use the
+unrounded rational values. Display bounds round outwards, so a fractional
+shortfall cannot round into success. Unknown composition yields an unknown upper
+bound; unknown retention remains a visible evidence gap. Neither can establish a
+complete verification. `constraint_matrix` compiles complete coefficients into
+ordinary linear inequalities for the independent exact verifier. It refuses
+missing coefficients. Its zero objective is feasibility, not diet optimization.
+
+Checks run **before population aggregation**. One group's excess cannot hide
+another group's deficit. Even a verified supplied constraint set does not prove
+a complete or safe diet. Production requirements remain proposals, not automatic
+permission to serve, procure, post money or change stocks.
+
+### Choice and agricultural quantities
+
+Each daily order snapshot names a profile, persons, households, ingredients,
+home/prepared mode and a separate delivery choice. Counts must fit disjoint
+cohorts; duplicate order IDs and overbooking fail. In these two adult cohorts the protein planning floor is
+`50,000,000 × 58.1 + 50,000,000 × 49.8 = 5,395,000,000 g/day`, or
+5,395 tonnes/day. It survives an empty order snapshot. This is an illustration
+of the declared profiles, not a national demographic estimate.
+
+No orders means unassigned
+people and zero kitchen/delivery demand, not zero human need. The population
+nutrient planning vector is retained independently of orders, with covered-person
+counts for each nutrient. Choosing a crop/food mix still requires preferences or
+an explicitly declared forecast basket; nutrients alone do not uniquely specify
+crops. Long-lead production uses such forecast candidates, not a last-minute
+assumption that food can be grown after the daily preparation order. Mixed-profile
+households and authenticated individual orders are not yet a runtime feature.
+The sample counts homogeneous two-person households to avoid a hidden assumption
+about mixed-household delivery grouping.
+
+```text
+D[f] = sum_orders persons[order] * x[order,f]
+G[f] = ceil(D[f] / (edible_yield[f] * usable_after_loss[f]))
+R[k] = ceil(sum_f G[f] * input_coefficient[f,k] / 1000)
+K = sum persons for prepared-food orders
+T = sum households requesting delivery (home groceries may also be delivered)
+```
+
+`D` and `G` are grams; input coefficients specify physical units per kg of gross
+production. Requirements distinguish grain, pulses, meat, fish, vegetables,
+fruit, dairy, oil crops and nuts. Production lead times are explicit: an order
+today cannot produce a new crop today. Annual/five-year totals repeat the stated
+daily snapshot for 365/1,825 days; they are not a seasonal or demographic forecast.
+
+Yield, loss, agricultural water/energy/feed and service coefficients are **synthetic**.
+They are not USDA measurements. Feed-grain demand is exposed separately and is
+not claimed to include its own land/water/energy chain. Seed, breeding stocks,
+land, soil replenishment, fisheries limits, regional yields and initial committed
+production still need a closed physical graph. Food retention must be validated
+for each preparation/preservation route, including long-lived emergency stock.
+The earlier abstract-food monetary graph is retained; this annex does not
+silently reinterpret its units as grams or create a new funding certificate.
+
+### Bounded results and counterexamples
+
+Twenty-four explicitly ranked candidate menus replace the oil ingredient with
+walnuts in a separate choice experiment and vary oats. Twelve pass the four
+**raw-ingredient** energy/protein/fat/total-carbohydrate constraints: four male and
+eight female candidates. Direct arithmetic and compiled matrix verification agree.
+The first eligible candidates contain respectively 2,226.58/1,929.18 kcal,
+103.5425/95.8575 g protein and 60.1135/50.3835 g fat. These are research outcomes,
+not recommended personal menus: micronutrient gaps and cooking losses still
+prevent full diet certification. No forced substitution or allergy clearance is
+inferred from mathematical feasibility.
+
+Four 100-million order scenarios retain the same chosen ingredient requirements
+while changing preparation/delivery. With the declared 35-million daily kitchen
+capacity, 30% prepared orders fit and 100% prepared orders expose a 65-million
+person-day gap. With 40-million delivery capacity, 50-million requested household
+deliveries expose a 10-million consignment gap. Home cooking consumes its own
+water/energy. These limits are intentionally synthetic, not national estimates.
+Thus moving preparation location neither doubles agricultural production nor
+makes household or central-kitchen resource requirements disappear.
+
+The next closure is retained nutrient composition for approved recipes and
+preserved reserves, wider demographic profiles, seasonal feed/crop/land chains,
+and mapping validated orders onto dated production and reviewed runtime drafts.
