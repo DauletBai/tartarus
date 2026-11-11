@@ -30,5 +30,6 @@ pub mod nutrition;
 pub mod seasonal;
 
 pub mod capital;
+pub mod dated;
 pub mod materials;
 pub mod rolling;

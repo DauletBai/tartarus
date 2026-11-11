@@ -37,6 +37,7 @@ def main():
     run(["cargo", "test", "--locked", "--test", "seasonal"])
     run(["cargo", "test", "--locked", "--test", "capital"])
     run(["cargo", "test", "--locked", "--test", "rolling"])
+    run(["cargo", "test", "--locked", "--test", "dated"])
     run(["cargo", "test", "--locked", "--example", "no_ai_study"])
     run(["cargo", "test", "--locked", "--example", "coupled_study"])
     with tempfile.TemporaryDirectory(prefix="qazna-math-") as math_dir:

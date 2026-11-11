@@ -549,3 +549,37 @@ with two restarts. These are local exercises, not production throughput forecast
 Actor seeds 7/19 retained the known physical-evidence gap. The disposable database
 stopped and was removed; no live funds, existing database or model calls were used.
 Remote checks must be verified on the published commit.
+
+## Dated-state checkpoint verification
+
+The mandatory runner includes `tests/dated.rs`. Tests cover 30-boundary continuation,
+multileg FEFO/origin preservation, future output released exactly once, atomic
+failure including revision overflow, stale/foreign/altered snapshots, structural
+forgeries even against matching bytes, size/schema limits and an intermediate
+arrival that cannot survive the next leg. A direct unit-lot oracle checks **192**
+expiry/start schedules through serialization at every period.
+
+A coupled-example test restores all **60** boundaries of the upstream food plan,
+retaining both pending harvest and transport, and compares final state and canonical
+bytes with uninterrupted replay. The original aggregate FEFO checks remain intact.
+
+```sh
+cargo run --locked --release --example coupled_study -- --dated-only /tmp/qazna-dated.json
+```
+
+Trusted bytes/current revision are test fixture inputs; these tests do not establish
+identity authenticity, food safety or a durable trusted checkpoint store.
+
+Full local runner passed on 11 November 2026: **241 Rust tests** (3 library,
+57 mathematics, 18 nutrition, 14 seasonal, 6 capital, 10 rolling/material,
+9 dated-state, 4 no-AI, 29 coupled example and 91 PostgreSQL), plus **11 Python
+advisory tests**. Formatting, all-target Clippy, licences and byte-identical
+regeneration of the three maintained reports passed. All 20 preceding top-level
+coupled-report sections remain semantically unchanged. The maximum dated snapshot
+in this aggregate fixture was 5,454 bytes with 24 origins; this is not a national
+storage estimate. HTTP restarts, both strict-evidence modes and 36-table
+backup/restore passed. Circulation completed 4,548 requests in 56.302 seconds with
+one restart; closed circulation completed 3,901 in 47.032 seconds with two
+restarts. Actor seeds 7/19 retained their known physical-evidence limitation.
+The disposable cluster stopped and was removed. No existing database, live funds
+or model calls were used. Remote CI is verified on the published head separately.

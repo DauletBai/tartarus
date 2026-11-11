@@ -225313,6 +225313,386 @@
     "same_observation_prefix_checks": 4,
     "scope": "full_graph_with_two_day_shared_labour_service_and_pauses"
   },
+  "dated_checkpoints": {
+    "all_suffix_states_byte_identical": true,
+    "altered_expiry_rejected": true,
+    "boundaries_verified": 60,
+    "checkpoint_format": 1,
+    "checkpoints": [
+      {
+        "balance": {
+          "committed_births": 43872599000,
+          "damaged": 0,
+          "expired": 0,
+          "in_transit": 7123323766,
+          "origin_count": 12,
+          "pending_movements": 6,
+          "period": 3,
+          "released": 47025537211,
+          "revision": 55,
+          "stock_by_resource": [
+            3192763161,
+            2221052635,
+            19225877885,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "withdrawn": 15262519764
+        },
+        "checkpoint_bytes": 2789,
+        "next_period": 4
+      },
+      {
+        "balance": {
+          "committed_births": 43872599000,
+          "damaged": 0,
+          "expired": 0,
+          "in_transit": 7240099566,
+          "origin_count": 15,
+          "pending_movements": 6,
+          "period": 17,
+          "released": 90898136211,
+          "revision": 201,
+          "stock_by_resource": [
+            2254607522,
+            1568422626,
+            13576572339,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "withdrawn": 66258434158
+        },
+        "checkpoint_bytes": 3441,
+        "next_period": 18
+      },
+      {
+        "balance": {
+          "committed_births": 43872599000,
+          "damaged": 0,
+          "expired": 0,
+          "in_transit": 7240099566,
+          "origin_count": 18,
+          "pending_movements": 6,
+          "period": 29,
+          "released": 134770735211,
+          "revision": 327,
+          "stock_by_resource": [
+            2254609779,
+            1568424197,
+            13576576883,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "withdrawn": 110131024786
+        },
+        "checkpoint_bytes": 4049,
+        "next_period": 30
+      },
+      {
+        "balance": {
+          "committed_births": 43872599000,
+          "damaged": 0,
+          "expired": 0,
+          "in_transit": 7240099566,
+          "origin_count": 21,
+          "pending_movements": 6,
+          "period": 41,
+          "released": 178643334211,
+          "revision": 453,
+          "stock_by_resource": [
+            2254612036,
+            1568425768,
+            13576581427,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "withdrawn": 154003615414
+        },
+        "checkpoint_bytes": 4659,
+        "next_period": 42
+      },
+      {
+        "balance": {
+          "committed_births": 0,
+          "damaged": 0,
+          "expired": 0,
+          "in_transit": 0,
+          "origin_count": 24,
+          "pending_movements": 0,
+          "period": 59,
+          "released": 266388532211,
+          "revision": 633,
+          "stock_by_resource": [
+            5299074500,
+            3641677178,
+            31195055225,
+            423684211,
+            294736843,
+            2551301331,
+            469078948,
+            326315790,
+            2824655045
+          ],
+          "withdrawn": 219362953140
+        },
+        "checkpoint_bytes": 5035,
+        "next_period": 60
+      }
+    ],
+    "final_balance": {
+      "committed_births": 0,
+      "damaged": 0,
+      "expired": 0,
+      "in_transit": 0,
+      "origin_count": 24,
+      "pending_movements": 0,
+      "period": 59,
+      "released": 266388532211,
+      "revision": 633,
+      "stock_by_resource": [
+        5299074500,
+        3641677178,
+        31195055225,
+        423684211,
+        294736843,
+        2551301331,
+        469078948,
+        326315790,
+        2824655045
+      ],
+      "withdrawn": 219362953140
+    },
+    "kind": "dated_food_identity_checkpoint_continuity",
+    "max_checkpoint_bytes": 5454,
+    "model_calls": 0,
+    "months": 60,
+    "sample_checkpoint_at_next_period_4": {
+      "next_movement": 24,
+      "origins": {
+        "0": {
+          "available": 0,
+          "basis": "declared opening preserved stock",
+          "damaged": 0,
+          "expired": 0,
+          "expires": 18,
+          "quantity": 5299063215,
+          "released": true,
+          "resource": 0,
+          "withdrawn": 1183273737
+        },
+        "1": {
+          "available": 0,
+          "basis": "declared opening preserved stock",
+          "damaged": 0,
+          "expired": 0,
+          "expires": 18,
+          "quantity": 3641669323,
+          "released": true,
+          "resource": 1,
+          "withdrawn": 778511424
+        },
+        "1384": {
+          "available": 8,
+          "basis": "harvest from crop process 0 started at absolute month 3",
+          "damaged": 0,
+          "expired": 0,
+          "expires": 26,
+          "quantity": 5783276000,
+          "released": false,
+          "resource": 0,
+          "withdrawn": 0
+        },
+        "1385": {
+          "available": 8,
+          "basis": "harvest from crop process 1 started at absolute month 3",
+          "damaged": 0,
+          "expired": 0,
+          "expires": 26,
+          "quantity": 3978513000,
+          "released": false,
+          "resource": 1,
+          "withdrawn": 0
+        },
+        "1386": {
+          "available": 8,
+          "basis": "harvest from crop process 2 started at absolute month 3",
+          "damaged": 0,
+          "expired": 0,
+          "expires": 26,
+          "quantity": 34110810000,
+          "released": false,
+          "resource": 2,
+          "withdrawn": 0
+        },
+        "2": {
+          "available": 0,
+          "basis": "declared opening preserved stock",
+          "damaged": 0,
+          "expired": 0,
+          "expires": 18,
+          "quantity": 31195032505,
+          "released": true,
+          "resource": 2,
+          "withdrawn": 6410962435
+        },
+        "3": {
+          "available": 0,
+          "basis": "declared opening preserved stock",
+          "damaged": 0,
+          "expired": 0,
+          "expires": 18,
+          "quantity": 423684211,
+          "released": true,
+          "resource": 3,
+          "withdrawn": 423684211
+        },
+        "4": {
+          "available": 0,
+          "basis": "declared opening preserved stock",
+          "damaged": 0,
+          "expired": 0,
+          "expires": 18,
+          "quantity": 294736843,
+          "released": true,
+          "resource": 4,
+          "withdrawn": 294736843
+        },
+        "5": {
+          "available": 0,
+          "basis": "declared opening preserved stock",
+          "damaged": 0,
+          "expired": 0,
+          "expires": 18,
+          "quantity": 2551301331,
+          "released": true,
+          "resource": 5,
+          "withdrawn": 2551301331
+        },
+        "6": {
+          "available": 0,
+          "basis": "declared opening preserved stock",
+          "damaged": 0,
+          "expired": 0,
+          "expires": 18,
+          "quantity": 469078948,
+          "released": true,
+          "resource": 6,
+          "withdrawn": 469078948
+        },
+        "7": {
+          "available": 0,
+          "basis": "declared opening preserved stock",
+          "damaged": 0,
+          "expired": 0,
+          "expires": 18,
+          "quantity": 326315790,
+          "released": true,
+          "resource": 7,
+          "withdrawn": 326315790
+        },
+        "8": {
+          "available": 0,
+          "basis": "declared opening preserved stock",
+          "damaged": 0,
+          "expired": 0,
+          "expires": 18,
+          "quantity": 2824655045,
+          "released": true,
+          "resource": 8,
+          "withdrawn": 2824655045
+        }
+      },
+      "period": 3,
+      "resources": 9,
+      "revision": 55,
+      "scope": "upstream-food-v1/identity-routes/18-month-assumption",
+      "stocks": {
+        "0": {
+          "0": 3192763161
+        },
+        "1": {
+          "1": 2221052635
+        },
+        "2": {
+          "2": 19225877885
+        },
+        "3": {},
+        "4": {},
+        "5": {},
+        "6": {},
+        "7": {},
+        "8": {}
+      },
+      "transit": {
+        "18": {
+          "due": 4,
+          "origin": 0,
+          "quantity": 453947369,
+          "target": 3
+        },
+        "19": {
+          "due": 4,
+          "origin": 0,
+          "quantity": 469078948,
+          "target": 6
+        },
+        "20": {
+          "due": 4,
+          "origin": 1,
+          "quantity": 315789474,
+          "target": 4
+        },
+        "21": {
+          "due": 4,
+          "origin": 1,
+          "quantity": 326315790,
+          "target": 7
+        },
+        "22": {
+          "due": 4,
+          "origin": 2,
+          "quantity": 2733537140,
+          "target": 5
+        },
+        "23": {
+          "due": 4,
+          "origin": 2,
+          "quantity": 2824655045,
+          "target": 8
+        }
+      },
+      "unit": "gross-equivalent kg",
+      "version": 1
+    },
+    "scope": [
+      "Independent origin-ID replay matches the same nine food stocks as the full upstream plan; original DatedStock FEFO companion is preserved",
+      "All 60 end-period boundaries are serialized and restored, then replayed to the same final byte-identical state",
+      "Identity processing and transport preserve original expiry and origin; only declared new harvest creates a new origin and age",
+      "Committed harvest is not released stock; source seed withdrawals and resident consumption share a conservation counter but are not equated as human provision",
+      "Trusted expected bytes, scope and current revision must be obtained independently. Equality is not a signature, proof of execution, or implemented trusted database store",
+      "Single physical unit, 18-month synthetic shelf assumption and one-to-one routes; no certified food safety, conversion retention, temperature history, quarantine or recall workflow",
+      "Active stock and movements are compact; origin tombstones and counters are retained to reject ID reuse, bounded by explicit item and serialized-byte limits",
+      "No database migrations, endpoints, monetary authority, automatic postings or AI calls"
+    ],
+    "source_case": "demand_matched_power_with_smaller_fuel_deposit",
+    "stale_revision_rejected": true
+  },
   "durable_food_reserve": {
     "assumptions": [
       "All coefficients synthetic; grain still expires 90 days after harvest and meals five days after cooking; no lifetime is extended to improve this comparison",
@@ -1031418,5 +1031798,5 @@
       "Retirements beyond month 59 are not certified by a stock floor; repeated rolling-horizon continuity requires a separate gate. No runtime or monetary authority changes"
     ]
   },
-  "version": 15
+  "version": 16
 }

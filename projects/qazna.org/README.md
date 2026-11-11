@@ -69,6 +69,12 @@ live rolling-plan integration remain open.
 
 The [rolling commitments and material annex](docs/physical-circulation.md#rolling-commitments-and-conserved-material--11-november-2026) preserves pending work and asset ages across replanning and checks explicit residue recovery against constituent conservation. It remains an offline, synthetic experiment.
 
+The [dated checkpoint annex](docs/physical-circulation.md#dated-food-checkpoints--11-november-2026)
+retains original lot identity, expiry and in-flight output through all 60 monthly
+boundaries. The [completion estimate](docs/completion-roadmap.md#completion-scope-and-remaining-work--11-november-2026)
+sets six remaining packages for a bounded research demonstrator, separately from
+national modelling and pilot readiness.
+
 ## Implemented capabilities
 
 - Observe consistent invariant/queue snapshots with a limited observer credential.

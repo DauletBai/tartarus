@@ -266,3 +266,17 @@ explicit unit/source metadata and rejects unrecorded losses or invented recovery
 mass. The example's kg subchain is separate from the synthetic upstream graph;
 it does not certify chemistry, safety, or monetary issuance. See the maintained
 [rolling/material experiment](physical-circulation.md#rolling-commitments-and-conserved-material--11-november-2026).
+
+### Offline identity-preserving food state
+
+`dated::DatedFlow` tracks a single declared physical unit across resource locations,
+immutable origins, future births, movements and withdrawal/loss counters. Its
+versioned canonical JSON can be restored only against independently trusted bytes,
+matching scope/revision and structural/conservation validation. That reference is
+an explicit caller precondition, not implemented storage/authentication. Updates
+are transactional on an in-memory copy; ID history survives expiry and restoration.
+
+The scenario adapter verifies every boundary of the existing 60-month food path.
+This prepares a state contract for a future reviewed runtime integration; it does
+not add a database snapshot table or bypass the 16 KiB HTTP limit. Original food
+safety, observation authenticity and identity-route assumptions remain explicit.
