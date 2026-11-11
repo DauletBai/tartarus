@@ -81,8 +81,8 @@ The saved candidate is recomputed at approval; a model-supplied checkpoint or un
 input field is rejected. Bounded requests and four admitted CPU jobs limit calculation
 pressure; no AI call is required. These controls validate mathematical consistency under
 declared assumptions. They neither verify physical measurements nor prove optimality,
-complete human needs, or the proposed national economic system. The physical/monetary
-scenario join remains pending.
+complete human needs, or the proposed national economic system. The separately reviewed physical/monetary
+join is described below.
 
 
 ### Coupled scenario boundary (migration 0015)
@@ -97,3 +97,16 @@ append-only history and transaction guards prevent a candidate from approving
 itself. Failed monetary events remain evidence, with no new issuance or live
 postings. Tested controls do not establish empirical resource truth, fair policy,
 production authorization or resistance to a privileged database owner.
+
+
+### Extended food and material evidence
+
+Food route assumptions are untrusted inputs. Rust checks coverage, type, quantities,
+units, original expiry and every period's stock reconciliation; a subsequent model
+version cannot change these assumptions. Reclassifying preservation as harvest or
+silently removing the audit fails. Recovery also passes the conserved-material,
+energy and shared-capacity constraints. None of these checks requires an AI call.
+Offline preview helpers carry no approval authority. Synthetic yields, opening ages
+and shelf lives remain assumptions, not verified observations. A feasible payment
+schedule can have a non-repeatable final distribution; the fixture publishes that
+negative result rather than silently reallocating or issuing measure.

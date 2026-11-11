@@ -753,3 +753,45 @@ requests in 47.384 seconds (two restarts). Actor seeds 7 and 19 completed; the k
 physical-evidence gap remains. These are synthetic local checks; remote CI is reported
 separately in the pull request, and no production performance or economic validity
 is inferred from these counts.
+
+## Reproduce the extended five-year scenario
+
+The checked-in `fixtures/extended-scenario.json` is generated in Rust:
+
+```sh
+cargo run --locked --release --example extended_scenario -- /tmp/qazna-extended.json
+cmp /tmp/qazna-extended.json fixtures/extended-scenario.json
+```
+
+Run from the project root. The generator reads the maintained coupled report;
+`check.py` first reproduces all three original reports byte-for-byte, then regenerates
+and compares the new fixture. No report history, dependencies or released migration
+bytes change. The fixture contains the physical definition/input, immutable
+circulation policy and exact food/material/money references. Quantities are synthetic;
+its terminal funding distribution and surplus disposal are explicit limitations.
+
+Library tests reconcile all 60 food-stock boundaries, missing/duplicated/forged
+routes, short life, external food, material-growth forgery, exact circulation and
+unavailable recovery/energy. PostgreSQL cases additionally verify rejected retries,
+unchanged live balances, immutable ages/units and transport failure. The real HTTP
+exercise approves this model, derives its payments, persists a pending boundary-30
+continuation, restarts and restores the database, then approves/recomputes without
+changing earlier food origins, mass or monetary events. Existing role, concurrency,
+idempotency, rollback and custody tests remain part of the full suite.
+
+Extended-stage local verification, 11 November 2026: full `scripts/check.py`
+passed with **289 Rust tests** (24 library, 57 mathematics, 18 nutrition, 14 seasonal,
+6 capital, 10 rolling/material, 9 dated, 4 no-AI, 29 coupled-example and **118
+PostgreSQL**) and **11 Python** advisory tests. Rustfmt, all-target Clippy and
+license inventory passed. The three existing reports and the new fixture reproduced
+byte-for-byte. No dependency or migration was changed.
+
+Real process restart and logical backup/restore passed for **45 populated tables**
+with **15 runtime privilege denials**, including the extended model's pending
+continuation and unchanged food/material/payment evidence. HTTP restart and both
+six-case strict-evidence exercises passed. Circulation completed 4,548 requests in
+56.955 seconds with one restart; closed circulation completed 3,901 requests in
+47.480 seconds with two restarts. Actor seeds 7 and 19 completed; the known physical
+custody/evidence gap remains. These local synthetic runs do not prove production
+throughput, empirical coefficients or national economic feasibility. Remote CI is
+reported separately in the pull request.

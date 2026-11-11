@@ -74,14 +74,17 @@ def populate_and_restart(url):
         assert call(f'/v1/scenario-drafts/{pending}') == next_draft
         model_reference = populate_model(call)
         coupled_reference = populate_coupled(call, model_reference)
+        extended_reference = populate_extended(call)
     with server(url) as call:
         assert call(model_reference['path']) == model_reference['saved']
         assert call(model_reference['draft_path']) == model_reference['pending']
         assert call(coupled_reference['path']) == coupled_reference['saved']
         assert call(coupled_reference['draft_path']) == coupled_reference['pending']
+        assert call(extended_reference['coupled_path']) == extended_reference['coupled']
+        assert call(extended_reference['draft_path']) == extended_reference['pending']
     print('Physical model: full accepted and pending state survives process restart', flush=True)
     print('Dated scenario: 2 process restarts, pending and approved bytes preserved', flush=True)
-    return dict(path=path, saved=saved, pending=next_draft, model=model_reference, coupled=coupled_reference)
+    return dict(path=path, saved=saved, pending=next_draft, model=model_reference, coupled=coupled_reference, extended=extended_reference)
 
 
 def resume_restored(url, reference):
@@ -104,6 +107,7 @@ def resume_restored(url, reference):
         resume_coupled_pending(call, reference['coupled'])
         resume_model(call, reference['model'])
         resume_coupled_current(call, reference['coupled'])
+        resume_extended(call, reference['extended'])
     print('Dated scenario: restored history continued under least-privilege runtime role', flush=True)
 
 
@@ -213,3 +217,54 @@ def resume_coupled_current(call, reference):
     assert sum(map(int, evidence['money']['closing'])) == 160
     assert call(reference['path'] + '/versions/1') == reference['saved']
     print('Coupled circulation: restart/restore, pending failure and updated physical anchors preserved', flush=True)
+
+
+
+def populate_extended(call):
+    fixture = json.loads((ROOT / 'fixtures/extended-scenario.json').read_text())
+    definition = fixture['definition']
+    definition['id'] = uid()
+    path = '/v1/scenarios/models/' + definition['id']
+    call('/v1/scenarios/models', definition)
+    draft = call(path + '/drafts', dict(id=uid(), expected_generation=0,
+        input=fixture['input'], basis='Integrated five-year fixture'))
+    call('/v1/model-drafts/' + draft['request']['id'] + '/resolve',
+         dict(apply=True, basis='Reviewed physical and dated food evidence'))
+    cid = uid()
+    cp = '/v1/scenarios/coupled/' + cid
+    call('/v1/scenarios/coupled', dict(id=cid, format_version=1, model_id=definition['id'],
+        policy=fixture['policy'], basis='Minimum opening for the declared schedule'))
+    draft = call(cp + '/drafts', dict(id=uid(), expected_generation=0,
+        model_generation=1, unavailable_events=[], basis='Reviewed exact circulation'))
+    approved = call('/v1/coupled-drafts/' + draft['request']['id'] + '/resolve',
+        dict(apply=True, basis='Separate operator review'))
+    evidence = json.loads(approved['candidate']['checkpoint'])['evidence']
+    assert len(evidence['links']) == 2795 and len(evidence['events']) == 5740
+    assert evidence['money']['opening_total'] == fixture['reference']['money']['opening']
+    assert evidence['all_scheduled_payments_settled']
+    data = copy.deepcopy(fixture['input'])
+    data['boundary'] = 30
+    pending = call(path + '/drafts', dict(id=uid(), expected_generation=1, input=data,
+        basis='Advance without rewriting production or original food age'))
+    return dict(path=path, pending=pending, draft_path='/v1/model-drafts/' + pending['request']['id'],
+        coupled_path=cp, coupled=approved['candidate'])
+
+
+def resume_extended(call, reference):
+    assert call(reference['coupled_path']) == reference['coupled']
+    assert call(reference['draft_path']) == reference['pending']
+    call(reference['draft_path'] + '/resolve', dict(apply=True, basis='Reviewed after logical restore'))
+    draft = call(reference['coupled_path'] + '/drafts', dict(id=uid(), expected_generation=1,
+        model_generation=2, unavailable_events=[], basis='Circulation with advanced physical boundary'))
+    approved = call('/v1/coupled-drafts/' + draft['request']['id'] + '/resolve',
+        dict(apply=True, basis='Reviewed after restore'))
+    old = json.loads(reference['coupled']['checkpoint'])['evidence']
+    new = json.loads(approved['candidate']['checkpoint'])['evidence']
+    assert old['events'] == new['events'] and old['money'] == new['money']
+    before = json.loads(old['physical']['checkpoint'])
+    after = json.loads(new['physical']['checkpoint'])
+    assert before['food_routes'] == after['food_routes']
+    assert before['materials'] == after['materials']
+    assert after['input']['boundary'] == 30
+    assert call(reference['coupled_path'] + '/versions/1') == reference['coupled']
+    print('Extended five-year scenario: food origins, packaging mass and exact circulation survive restart/restore', flush=True)

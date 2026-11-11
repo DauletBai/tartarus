@@ -53,6 +53,11 @@ def main():
         run(["cargo", "run", "--locked", "--release", "--example", "coupled_study", "--", str(coupled)])
         if coupled.read_bytes() != (ROOT / "research/coupled-results.json").read_bytes():
             raise SystemExit("Published coupled model differs from current calculations")
+    with tempfile.TemporaryDirectory(prefix="qazna-extended-") as directory:
+        target = Path(directory) / "extended-scenario.json"
+        run(["cargo", "run", "--locked", "--release", "--example", "extended_scenario", "--", str(target)])
+        if target.read_bytes() != (ROOT / "fixtures/extended-scenario.json").read_bytes():
+            raise SystemExit("Extended scenario differs from reproducible calculation")
     pg_dir = os.environ.get("PG_BIN")
     if not pg_dir:
         binary = shutil.which("initdb")

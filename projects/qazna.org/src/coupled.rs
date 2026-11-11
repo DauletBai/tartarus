@@ -115,6 +115,31 @@ pub struct CoupledDraft {
     pub state: String,
     pub decision_basis: Option<String>,
 }
+/// Pure initial research preview. A caller-owned physical snapshot is rechecked,
+/// but this function cannot certify approval, current database state or delivery.
+pub fn preview(
+    definition: CoupledDefinition,
+    physical: ModelVersion,
+    unavailable_events: Vec<usize>,
+) -> Result<CoupledVersion, LedgerError> {
+    let request = CoupledProposal {
+        id: Uuid::nil(),
+        expected_generation: 0,
+        model_generation: physical.generation,
+        unavailable_events,
+        basis: definition.basis.clone(),
+    };
+    calculate(
+        CoupledVersion {
+            definition,
+            generation: 0,
+            checkpoint: None,
+        },
+        request,
+        physical,
+    )
+}
+
 fn invalid() -> LedgerError {
     LedgerError::Invalid("invalid circulation policy or physical/payment mapping")
 }
@@ -979,5 +1004,130 @@ mod tests {
                 .iter()
                 .any(|v| v.parse::<u128>().unwrap() > u128::from(u64::MAX))
         );
+    }
+    #[test]
+    fn extended_five_year_graph_couples_food_recovery_and_finite_capital() {
+        let v: serde_json::Value =
+            serde_json::from_str(include_str!("../fixtures/extended-scenario.json")).unwrap();
+        let definition: crate::model_scenarios::ModelDefinition =
+            serde_json::from_value(v["definition"].clone()).unwrap();
+        let input: crate::model_scenarios::ModelInput =
+            serde_json::from_value(v["input"].clone()).unwrap();
+        let physical = crate::model_scenarios::calculate(
+            ModelVersion {
+                definition,
+                generation: 0,
+                checkpoint: None,
+            },
+            ModelProposal {
+                id: Uuid::nil(),
+                expected_generation: 0,
+                input: input.clone(),
+                basis: "Synthetic integrated verification".into(),
+            },
+            vec![],
+        )
+        .unwrap();
+        let def = CoupledDefinition {
+            id: Uuid::new_v4(),
+            format_version: 1,
+            model_id: physical.definition.id,
+            policy: serde_json::from_value(v["policy"].clone()).unwrap(),
+            basis: "Synthetic integrated case".into(),
+        };
+        let req = CoupledProposal {
+            id: Uuid::new_v4(),
+            expected_generation: 0,
+            model_generation: 1,
+            unavailable_events: vec![],
+            basis: "Synthetic schedule".into(),
+        };
+        let before = CoupledVersion {
+            definition: def,
+            generation: 0,
+            checkpoint: None,
+        };
+        let after = calculate(before.clone(), req.clone(), physical.clone()).unwrap();
+        let e = checkpoint(&after).unwrap().unwrap().evidence;
+        assert!(e.all_scheduled_payments_settled && e.resident_zero_each_period);
+        assert_eq!(
+            e.money
+                .closing
+                .iter()
+                .map(|s| s.parse::<u128>().unwrap())
+                .sum::<u128>(),
+            e.money.opening_total.parse::<u128>().unwrap()
+        );
+        for process in [15, 17, 29, 31, 33, 37, 42, 43] {
+            assert!(e.links.iter().any(
+                |l| matches!(l.physical.source,PaymentSource::Input{process:j,..} if j==process)
+            ));
+        }
+        assert!(
+            e.links
+                .iter()
+                .any(|l| matches!(l.physical.source, PaymentSource::Capital { .. }))
+        );
+        eprintln!(
+            "EXTENDED links={} events={} volume={} minimum={} total={}",
+            e.links.len(),
+            e.events.len(),
+            e.money.settled_volume,
+            e.bound.total_minimum_opening,
+            e.money.opening_total
+        );
+        let mut stressed = before.clone();
+        stressed.definition.policy.opening = vec!["0".into(); 33];
+        let failure = checkpoint(&calculate(stressed, req.clone(), physical.clone()).unwrap())
+            .unwrap()
+            .unwrap()
+            .evidence;
+        assert!(!failure.all_scheduled_payments_settled);
+        assert_eq!(failure.money.opening_total, "0");
+        let mut changed = input.clone();
+        changed.boundary = 30;
+        let mut next_req = req.clone();
+        next_req.expected_generation = 1;
+        next_req.model_generation = 2;
+        let next = crate::model_scenarios::calculate(
+            physical.clone(),
+            ModelProposal {
+                id: Uuid::new_v4(),
+                expected_generation: 1,
+                input: changed,
+                basis: "Advance boundary".into(),
+            },
+            vec![],
+        )
+        .unwrap();
+        assert!(calculate(after, next_req, next).is_ok());
+        for mode in 0..4 {
+            let mut changed = input.clone();
+            match mode {
+                0 => {
+                    changed
+                        .food_routes
+                        .as_mut()
+                        .unwrap()
+                        .initial_remaining_periods[0] = 19
+                }
+                1 => changed.food_routes = None,
+                2 => changed.model.seasonal.physical.periods[20].capacities[43] = 0,
+                _ => changed.model.seasonal.physical.periods[20].capacities[31] = 0,
+            }
+            assert!(
+                crate::model_scenarios::calculate(
+                    physical.clone(),
+                    ModelProposal {
+                        id: Uuid::new_v4(),
+                        expected_generation: 1,
+                        input: changed,
+                        basis: "Invalid extension".into()
+                    },
+                    vec![]
+                )
+                .is_err()
+            );
+        }
     }
 }

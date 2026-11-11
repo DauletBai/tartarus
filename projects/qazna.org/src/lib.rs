@@ -42,3 +42,5 @@ pub mod model_scenarios;
 
 pub mod coupled;
 mod coupled_service;
+
+pub mod food_routes;

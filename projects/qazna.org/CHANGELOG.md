@@ -2,6 +2,12 @@
 
 ## Unreleased
 
+- Join a reproducible 60-month, 31-resource, 44-process upstream scenario to exact circulation, packaging recovery and original food-age verification.
+- Derive food identities from checked crop/processing routes; freeze those assumptions across history and reject expiry resets, unmapped inputs and incompatible units.
+- Preserve old checkpoint serialization when optional food evidence is absent; add pure offline previews without changing runtime approval authority or migrations.
+- Publish exact minimum opening measure and explicit non-repeatability/surplus-disposal findings; no hidden issuance or claim of an efficient national plan.
+- Extend PostgreSQL, restart/restore and reproducibility checks to the integrated scenario and its pending continuation.
+
 - Add migration 0015 for immutable circulation policies, physical-generation references, derived payment drafts and separately reviewed outcomes.
 - Reconcile every valued input, final provision and completed capital quantity; retain internal uses without fictitious transfers. Derive common circulation only after the associated goods payment settles.
 - Check exact opening-measure bounds, per-period conservation and independent money replay; expose accounting failures without issuing measure or altering physical needs.
