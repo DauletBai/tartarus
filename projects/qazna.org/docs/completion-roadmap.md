@@ -422,3 +422,19 @@ external energy/material/robot-kit/training-place boundaries to upstream capacit
 constructed storage and age-qualified replacement. Then persist reviewed scenario
 snapshots/drafts in the Rust service with stale-state and operator-approval gates.
 Do not jump from synthetic labour savings to a national fiscal or employment claim.
+
+### Upstream production and finite-capital gate — 11 November 2026
+
+Schema 14 implements one 27-resource/42-process graph linking the previous rapid
+food-automation path to extraction, generation, refining, packaging/upkeep,
+robot-kit manufacture, training intake and infrastructure construction. Assets
+retire by cohort; shared storage expires with its buildings. Ten candidates retain
+two feasible schedules and eight failures. Demand-matched generation can satisfy
+the same needs using a smaller fuel deposit that fails the fixed schedule.
+
+Next: typed physical coefficients, material conversion losses/residues, resource
+recycling and a rolling horizon with committed work carried across boundaries.
+Add upstream transport and measured energy/warehouse constraints; then persistent
+scenario snapshots and operator-reviewed draft integration. Financial schedules
+for the expanded graph require a separate exact circulation mapping. No national
+calibration, complete circular economy or live authority is implied by this gate.

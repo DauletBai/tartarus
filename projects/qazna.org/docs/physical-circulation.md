@@ -1598,3 +1598,127 @@ and transport-damage experiments remain separate. Other crops, fisheries,
 complete animal rations, regional logistics and individual service needs remain
 open. No new ledger policy, AI requirement, endpoint or emission authority was
 introduced. See [AI evidence and interpretation](ai-economic-research.md#automation-scenarios-in-the-physical-graph).
+
+## Upstream production and finite-life capital — 11 November 2026
+
+Schema 14 adds `upstream_capital` without changing any of the 18 preceding report
+sections. It extends the rapid-automation cereal/feed candidate into one
+**60-month graph with 27 resources, 42 processes, 7,380 variables and 10,845
+constraints**. Recurring boundary supplies of energy, packaging, upkeep material,
+robot kits and training places are replaced by extraction, generation, refining,
+manufacturing and training-intake processes. Existing food need dates, original
+expiry and raw/processing/destination stock floors remain active.
+
+Starting land, water budgets, people, initial deposits, installed assets, stocks
+and operating buffers remain declared endowments. This is bounded supply-chain
+closure, not a claim that everything in an economy has been modelled. Ore and
+fuel deposits are finite and decline with extraction. They are shared physical
+resources, not private titles or automatically priced assets. No financial entry
+creates them. The upstream coefficients remain synthetic ticks, not measured
+ore grades, conversion efficiencies, tonnes, kWh or national budget amounts.
+
+### Cohorts, retirement and usable capacity
+
+`CapitalCycle` composes seasonal balances, shared capabilities and constructed
+storage with deterministic asset cohorts. A build starting in month `s` completes
+in `c = s + construction_lag`, becomes usable in `c + 1`, and retires at
+`c + 1 + service_life`. The initial cohort has its own remaining life. Hence:
+
+```text
+retired[t,k] = initial[k] * I(t = initial_remaining[k])
+               + sum_s,j output[j,k] * starts[s,j]
+                 * I(t = s + lead[j] + 1 + service_life[k])
+closing[t,k] = closing[t-1,k] + completed[t,k] - retired[t,k]
+active[t,k]  = opening[t,k] - retired[t,k]
+shared_use[t,k] <= units_per_asset[k] * active[t,k]
+sum_r closing_stored[t,r] <= storage_per_asset * active_warehouses[t]
+```
+
+Expiry is at the start of the period; new completions do not supply current-period
+capacity. Retirement must equal the calculated cohort expiry. Unsupported early
+asset consumption, arbitrary disposal, external asset supply and duplicate pools
+claiming the same warehouse capacity are rejected. A warehouse pool sums all
+nine compatible grain/preserved/destination quantities in gross-equivalent kg.
+Other material buffers still use declared storage caps.
+
+Initial infrastructure comprises twenty modules each of generation, factory,
+warehouse, training-centre and extraction capacity. Synthetic service lives and
+remaining lives deliberately exercise replacement within five years; they are
+**not estimates of actual equipment durability**. Construction takes three months
+and consumes material, energy and shared work. Factory capacity is shared by
+refining, packaging, upkeep, kits and infrastructure construction. Extraction is
+shared by ore and fuel; training centres constrain intake-place production.
+People and qualifications are not placed in the depreciating-asset registry.
+
+The robot path installs 5,400 cells including replacement, retires 2,400 and ends
+with 3,000 available cells. Infrastructure construction adds 180 modules; 160
+retire within the horizon. Forty factory modules remain at month 59 because the
+next replacement has already completed before the following expiry boundary.
+This does not certify all operations after month 59: rolling commitments, future
+retirements and continued provisioning require another horizon.
+
+### Generation matched to need
+
+The first candidate commits a fixed thirty million fuel ticks per month for
+subsequent output. It is feasible with four billion initial deposit ticks but
+curtails substantial energy. The second candidate computes generation from known
+next-period recipe requirements, adjusts extraction and restores the initial
+extracted-fuel buffer. For this synthetic 1000:1 generation recipe:
+
+```text
+generation_start[t] = ceil(required_energy[t+1] / 1000)
+fuel_extraction[t] = generation_start[t+1]
+# Terminal extraction also restores the fuel drawn in period zero.
+```
+
+Extraction itself needs energy, so a bounded integer fixed-point iteration
+recomputes the coupled schedule and stops only at equality. Tests check the fixed
+point, rounding, final fuel buffer, and then the full independent matrix/replay.
+This is a candidate constructor for this recipe and known demand; it is not a
+general optimizer, proof of convergence for arbitrary technologies, or a causal
+response to unknown future failures.
+
+| Five-year candidate | Fixed generation | Generation matched to need |
+| --- | ---: | ---: |
+| Initial fuel deposit, synthetic ticks | 4,000,000,000 | 1,000,000,000 |
+| Fuel extracted/committed | 1,770,000,000 | 667,734,165 |
+| Deposit remaining | 2,230,000,000 | 332,265,835 |
+| End extracted-fuel buffer | 60,000,000 | 60,000,000 |
+| Curtailed energy ticks | 1,123,536,627,237 | 22,373,058,072 |
+| Declared food/feed provision | Same full schedule | Same full schedule |
+
+The matched candidate uses about **62.27% less newly extracted fuel**. In the
+matched case, curtailment after the opening month is below 1,000 ticks per month
+from integer rounding. Most remaining curtailment is the common first-month
+output endowment. Extraction/refining/material schedules are not jointly globally
+optimized; the comparison is not a financial savings forecast.
+
+Electricity stock closes at zero every month. Initial energy represents stated
+first-month output of existing infrastructure; later output becomes available
+one period after fuel commitment, and unused energy is curtailed. Monthly
+aggregation is not hourly electrical dispatch, a battery model or grid-stability
+validation. Opening-output provenance, intramonth peaks, transmission losses and
+real generation efficiencies remain calibration gates.
+
+### Counterexamples and remaining boundaries
+
+Ten candidates are retained: two feasible designs and eight fixed-plan failures.
+Failures cover omitted replacement, depletion of a smaller fuel deposit under the
+fixed schedule, unavailable first power construction, one-month-late power
+replacement, omitted warehouse replacement, missing robot-kit manufacture, shared
+factory congestion and a three-month generation outage. Removing a resource or
+changing a capacity never reduces human entitlements. Failed schedules are not
+reported as completed deliveries. Explicit stock, active-capacity and storage-gap
+traces identify shortfalls even when a verifier encounters a terminal floor first.
+
+The smaller deposit that fails the fixed schedule passes after demand-matched
+planning. This is why rejection of one candidate must not be presented as proof
+that every design is impossible. Conversely, feasible equations do not establish
+that their assumed technologies exist at the stated scale.
+
+Open boundaries include regional calibration, renewable resource cycles, ore
+recovery and residues, upstream transportation, emissions, asset recycling,
+random failure/repair, demographic services and reviewed live plan integration.
+Initial resources and seasonal water remain external endowments. No new money,
+automatic postings, AI calls, runtime permissions, endpoints or migrations are
+introduced by this offline annex.

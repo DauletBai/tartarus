@@ -2,6 +2,11 @@
 
 ## Unreleased
 
+- Add finite-life capital cohorts and shared constructed storage to the seasonal matrix and independent replay.
+- Close selected upstream energy/material/kit/training supplies through finite-deposit production and replacement construction (schema 14).
+- Retain ten fixed-candidate comparisons, demand-matched generation, deposit/capacity/storage gaps and all previous report sections.
+- Add exhaustive cohort, retirement forgery, overflow and resource-balance tests. Runtime authority and dependencies remain unchanged.
+
 - Couple seasonal grain/feed with processing, transport, shared installed/qualified capacity and dated inventory in schema 13.
 - Compare manual, slow/reference/rapid automation and common control outage with unchanged provision; expose six resource/fallback counterexamples and shelf-life sensitivity.
 - Add capability composition/replay, deployment delays, explicit energy/upkeep tradeoffs and regression tests. No runtime, monetary authority, dependency or migration changes.

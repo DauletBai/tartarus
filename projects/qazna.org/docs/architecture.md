@@ -232,3 +232,20 @@ chronological and FEFO checks; shortages remain visible. This is an offline
 research annex, not a general automation optimizer or a runtime plan. Existing
 APIs, migrations, permissions and operator-confirmed application are unchanged.
 See [formulas, assumptions and limits](physical-circulation.md#automation-seasonal-output-and-dated-distribution--11-november-2026).
+
+## Upstream capital cohorts
+
+`capital::CapitalCycle` wraps `Seasonal` with `AssetLife`, shared capabilities and
+`StoragePool`. Compilation constrains asset discard to scheduled retirement,
+removes start-of-period expiries from usable capacity and checks shared storage.
+The independent replay schedules cohort expiries from actual proposed starts and
+checks the same stock/capacity/storage facts without evaluating matrix rows.
+Assets cannot also be consumed early or injected as untracked boundary supplies.
+One storage pool per asset resource prevents double allocation of warehouses.
+
+The upstream example replaces recurring industrial boundary supplies in the
+rapid-automation scenario with explicit finite-deposit production and replacement
+construction. A bounded demand-matching candidate demonstrates the difference
+between failure of a fixed schedule and feasibility of another. Calculation is
+still offline and aggregate; no authoritative service or accounting behavior is
+changed. See [formulas and limits](physical-circulation.md#upstream-production-and-finite-life-capital--11-november-2026).
