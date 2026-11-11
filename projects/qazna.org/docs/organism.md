@@ -130,3 +130,8 @@ consumed in unfinished work and the true ages of shared equipment. The rolling
 annex fixes this history instead of restarting from fresh endowments. Material
 recovery can reduce new extraction but consumes capacity and energy and leaves
 explicit waste; it is not a source of unaccounted physical growth.
+
+Dated memory preserves the actual origin and age of a resource as it moves through
+stages. A renewed plan cannot make old food young, and a future harvest is not
+present stock. The offline checkpoint model retains these distinctions; real
+observations still require independent custody and review before service use.

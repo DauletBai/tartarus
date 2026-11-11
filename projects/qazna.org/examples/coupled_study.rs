@@ -1,6 +1,8 @@
 //! Coupled physical capabilities and payments. Synthetic coefficients only.
 #[path = "support/automation_study.rs"]
 mod automation_study;
+#[path = "support/dated_study.rs"]
+mod dated_study;
 #[path = "support/integrated_lifecycle.rs"]
 mod integrated_lifecycle;
 #[path = "support/lifecycle_study.rs"]
@@ -1000,6 +1002,17 @@ fn study_policy(
     )
 }
 fn main() {
+    if env::args().nth(1).as_deref() == Some("--dated-only") {
+        let s = seasonal_study::study(&nutrition_study::study());
+        let a = automation_study::study(&s);
+        let u = upstream_study::study(&a);
+        fs::write(
+            env::args().nth(2).expect("output path"),
+            serde_json::to_vec_pretty(&dated_study::study(&u)).unwrap(),
+        )
+        .unwrap();
+        return;
+    }
     if env::args().nth(1).as_deref() == Some("--rolling-only") {
         let s = seasonal_study::study(&nutrition_study::study());
         let a = automation_study::study(&s);
@@ -1215,7 +1228,8 @@ fn main() {
     let automation = automation_study::study(&seasonal);
     let upstream = upstream_study::study(&automation);
     let rolling = rolling_study::study(&upstream);
-    let report = json!({"version":15,"rolling_and_materials":rolling,"upstream_capital":upstream,"automation_and_food_chain":automation,"seasonal_food":seasonal,"nutrition_and_orders":nutrition,"daily_service":daily_service_study(),"durable_food_reserve":durable_food_study(),"preserved_food_reserve":preserved_food_study(),"integrated_lifecycle_graph":integrated_lifecycle_study(),"food_asset_lifecycle":lifecycle_study::study(),"reserve_lifecycle":reserve_lifecycle,"joint_planning":joint_planning,"kind":"synthetic_coupled_capability_study","model_calls":0,
+    let dated = dated_study::study(&upstream);
+    let report = json!({"version":16,"dated_checkpoints":dated,"rolling_and_materials":rolling,"upstream_capital":upstream,"automation_and_food_chain":automation,"seasonal_food":seasonal,"nutrition_and_orders":nutrition,"daily_service":daily_service_study(),"durable_food_reserve":durable_food_study(),"preserved_food_reserve":preserved_food_study(),"integrated_lifecycle_graph":integrated_lifecycle_study(),"food_asset_lifecycle":lifecycle_study::study(),"reserve_lifecycle":reserve_lifecycle,"joint_planning":joint_planning,"kind":"synthetic_coupled_capability_study","model_calls":0,
         "assumptions":["Synthetic aggregate coefficients, not demographic/engineering norms","Water is an external boundary supply; deposits and initial assets/stocks are explicit","Training places represent consenting eligible capacity, not people owned or traded","Qualified capacity and equipment are shared use limits, not consumed ingredients","Public asset procurement is paid only for completed equipment/buildings","Input payments follow actual consumption; incomplete work ties up opening working measure","Natural resources and people have zero commodity price in this example","All monetary norms fixed; no interest, tax, loan or later issuance","Actual missing provision remains recorded; no claim that missing goods cancel human entitlements","Money is prefunded using exact schedule bounds, not optimized globally","Trimmed cases are retrospective fixed-delivery improvements, not causal forecasts or global optima","Recovery decisions use current observed capacities, stocks and committed output; no future outage duration is provided","Reserve routes take two periods and four shared equipment/skill units per batch; synthetic capacity is declared in every comparison","The original terminal stock is a lower bound in trimmed cases; all intermediate safety-stock policy remains open","Energy/fuel/material quantities are abstract recipe units, not measured kWh/tonnes; external water left unused is reported separately from energy discard","Legacy policies leave dated-food/service extensions disabled; integrated_lifecycle_graph, durable_food_reserve and preserved_food_reserve enable them; health demography, individual choice, teacher specializations and foreign trade remain open","Heuristic is not a global optimum except when a valid stated objective certificate exists"],"cases":cases,"improved_cases":improved,"comparisons":comparisons,"recovery":recovery,"common_funding":common_funding});
     let path = env::args()
         .nth(1)

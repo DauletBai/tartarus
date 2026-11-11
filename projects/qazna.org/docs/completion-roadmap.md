@@ -1,9 +1,64 @@
 # Completion roadmap and feasibility boundaries
 
-Latest review: 7 November 2026, nutrient needs and household-order stage.
+Latest review: 11 November 2026, dated checkpoint continuity and completion estimate.
 The current work order below supersedes earlier milestone-specific next steps.
 
-## Current implementation order
+## Completion scope and remaining work — 11 November 2026
+
+This estimate is based on the current source, HTTP routes, migration set and test
+runner, not on a percentage inferred from test count. The current stage closes
+**offline dated-state continuity**. It does not implement a trusted snapshot
+store, runtime application or physical inspection. The next six packages below
+supersede older milestone-specific next steps.
+
+The target for this estimate is **research demonstrator v1**: a reproducible,
+bounded five-year scenario with linked provisioning, physical capabilities and
+accounting; selected food chains and demographic profiles; explicit inputs and
+uncertainties; a small operator-facing service; and documented failure cases.
+The 100-million population is an aggregate demand scenario, not evidence of
+100 million concurrent users. This target is not a complete representation of all
+national sectors or a production monetary system.
+
+| Remaining package | Acceptance gate | Estimated focused engineering days |
+| --- | --- | ---: |
+| 1. Persist and review scenario state | Versioned immutable inputs/checkpoints, trusted current revision, resource/unit/schema binding, transactional import, stale-state/concurrent-update rejection, operator approval, restart/restore; bounded upload contract distinct from the existing 16 KiB API limit | 4–7 |
+| 2. Join extended physical and monetary plans | One selected end-to-end scenario links upstream production, dated food, capital/replacement and material recovery to exact circulation; no hidden issuance, duplicated input or unaccounted work; independent reconciliation and shortage explanation | 5–8 |
+| 3. Define a bounded input and population registry | Units, sources, dates, assumptions and uncertainty; age/cohort transitions and selected need profiles; missing food-retention/engineering values remain unknown; reproducible synthetic and calibrated modes clearly separated | 6–10 |
+| 4. Close the rolling feedback experiment | Decisions use observed state, retain commitments, replan after declared outages/demand changes, report shortages without inventing goods, and pass sensitivity/adversarial cases; optional solver outputs independently verified | 4–7 |
+| 5. Expose the demonstrator's workflows | Small operator/reviewer interface, synthetic participant scope, intelligible reasons, correction/dispute examples, approval and audit history, accessible navigation; no claim of production identity/enrollment | 7–12 |
+| 6. Freeze and reproduce a release | Clean deployment, recorded workload envelope, sustained/restart/restore and fault exercises, dependency/privilege review, versioned evidence and known limitations, release guide and runnable demonstration | 4–6 |
+
+**Total planning range: 30–50 focused engineering days**, approximately **6–10
+working weeks** for one continuously available full-time implementer at five days
+per week. The calculation-focused packages 2–4 total **15–25 engineering days**;
+packages 1, 5 and 6 add **15–25 days** for the service and release. This is a rough
+human-equivalent effort estimate, not a promise of autonomous agent work or a
+calendar completion date. Decisions, missing source data, failed acceptance tests,
+review findings and interruptions can extend elapsed time. Re-estimate after each
+merged package instead of adding indefinitely to the scope.
+
+Assumptions: existing Rust/PostgreSQL architecture retained; no model training,
+new distributed platform, nationwide integration, production participant identity
+or full sector census in v1. Independent external reviews, empirical food/industrial
+measurements and institutional approval are outside these effort totals.
+
+For an **all-sector national model**, there is no defensible completion date yet:
+health, education, housing, regional transport and other production chains still
+need agreed scope, usable data, validated coefficients and independent review.
+A **voluntary shadow pilot** additionally needs an operator, participants,
+measurement procedures, privacy/security safeguards and operational support.
+Its calendar cannot be derived from the code alone. Deployment to a state or to
+billions of users is not the next six-week deliverable.
+
+Evidence used in this estimate: `src/api.rs` and current 16 KiB body limit;
+`src/draft_service.rs` and existing atomic operator application;
+`src/rolling.rs` (offline fixed-prefix models); `src/dated.rs` (offline trusted-anchor
+import, not a database store); `migrations/` (no full-scenario checkpoint tables);
+`docs/development.md` (actual tests); and the absence of a participant product UI.
+Existing backup, privilege and draft tests reduce implementation work, but do not
+close the new integration or empirical-evidence gates.
+
+## Earlier implementation order and bounded results
 
 Already implemented: exact accounting and physical/payment checks; a 1,825-period
 coupled synthetic model with 22 dimensions and 21 processes; fixed-delivery plan
@@ -17,11 +72,13 @@ and a target preserved-food design with constructed storage and restart allowanc
 and two-phase daily maintenance with independent paused-work checks;
 and an offline nutrient/order annex with pinned food-composition data, per-profile
 constraints, bounded menu search and mode-specific service requirements.
-The latest seasonal PR #5 passed both remote CI runs and merged as `c952c2f`.
-The current automation annex composes seasonal crops with two downstream routes,
-commissioning, qualification, shared capacity and dated stock. Current validation
-is recorded in [development](development.md); published checks are reported
-separately from local execution.
+Seasonal crops, automation, upstream production, finite-life capital, rolling
+commitments and constituent conservation have since been implemented as bounded
+offline annexes (merged PRs #5–#8). The current dated-state stage preserves original
+food origins, expiry, pending harvest and movements across checkpoint restoration.
+Current validation is recorded in [development](development.md); published CI
+results are distinct from local checks. The runtime API still exposes bounded
+production/draft operations, not these full offline scenario models.
 These results cover the declared synthetic model, not national deployment.
 
 The author's current priority is independent calculation and testing before
@@ -453,3 +510,16 @@ persist reviewed scenario evidence with stale-state protection. Add measured
 multi-constituent recipes, retired-asset disassembly, waste handling and upstream
 logistics. The current full-prefix method requires unchanged physical schemas and
 is a bounded offline verifier, not an operational national planning controller.
+
+### Dated checkpoint gate — 11 November 2026
+
+Schema 16 adds identity-preserving food-state checkpoints. All 60 end-period
+boundaries of the existing upstream food graph restore and continue to the same
+final state. Original expiry, pending harvest, movements, consumed seeds, actual
+withdrawals, damage and expiry counters remain distinct. Origin tombstones prevent
+ID reuse; revisions and a separately trusted reference reject stale/altered data.
+
+The trusted reference is an offline caller precondition, not a newly implemented
+security service. Next is package 1 above: persistent versioned scenario state and
+reviewed application. Unit-level purity, food safety, original observation truth,
+recipe migration, quarantine/recall and institutional approval remain open.

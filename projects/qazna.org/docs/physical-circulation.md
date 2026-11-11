@@ -1834,3 +1834,61 @@ calibrated multi-constituent recipes, recycling/disassembly of retired assets,
 residue handling, upstream logistics, maintenance during work in progress, and
 rolling policies responding to observations. No monetary issuance, fee, interest,
 AI call or change to resident entitlement is introduced.
+
+## Dated food checkpoints — 11 November 2026
+
+Schema 16 adds `dated_checkpoints` without changing the preceding 20 report
+sections. `DatedFlow` independently replays the nine food resources in the same
+60-month demand-matched upstream plan. Its origins have immutable quantities,
+availability dates, expiry dates and a recorded source basis. Identity processing
+and transport carry the origin ID and original expiry; new harvest creates a new
+origin only through an explicit committed output.
+
+A checkpoint retains the absolute period and revision; stock by resource and
+origin; pending movements and arrival dates; pending harvest; original expiry;
+and per-origin withdrawal, damage and expiry totals. Future harvest is counted
+as committed output, not available stock. Already-used origin IDs remain reserved
+even after consumption/expiry. This bounded design compacts active flow state but
+does not discard origin tombstones. It is not constant-memory storage forever.
+
+Every origin obeys:
+
+```text
+released_quantity = current_stock + in_transit + withdrawn + expired + damaged
+committed_births are separate until their availability period
+usable_at(t) requires t < original_expiry
+```
+
+All withdrawals use first-expiring-first-out among lots that remain valid at the
+required date. A multi-leg route must satisfy each leg: arrival at a warehouse
+before expiry does not guarantee survival until the following destination.
+Expired goods never become resident provision by rewriting the next plan.
+The withdrawal counter includes crop seed as well as resident food; it is not a
+claim that all physically consumed material reached people.
+
+All **60** end-period checkpoints are serialized, restored and continued through
+the same remaining scenario. Each continuation has byte-identical final state to
+the uninterrupted replay and matches the plan's stock at every period. Selected
+boundaries and one representative state are retained in the existing report.
+The older aggregate FEFO replay is unchanged, providing a separate comparison.
+
+Restore requires a version-1 canonical payload, an independently trusted copy of
+the approved bytes, the expected scope and the current revision. It rejects
+changed expiry, stale/foreign state, unknown fields, duplicate/noncanonical JSON,
+invalid provenance, unconserved quantities and excessive size. Transactional
+in-memory updates commit only after validation; a failed multi-lot operation or
+counter overflow leaves the original state unchanged. Limits are 64 resources,
+100,000 origins or movements and an 8 MB serialized checkpoint.
+
+**Trust boundary:** the expected bytes must come from a separate trusted current
+store, never from the same untrusted caller. Byte comparison is not a signature
+or proof of physical execution. This stage adds no such database store or API,
+and no automatic authority to accept external observations. Persistent evidence,
+role checks, concurrent-revision control and operator approval are the next gate.
+The current live API has a 16 KiB body limit; it is not a checkpoint upload route.
+
+The same synthetic 18-month life and one-to-one gross-equivalent food routes are
+retained. These are not certified storage periods, validated nutrient retention
+or temperature/quality records. Processing yield changes, quarantines, recalls,
+manual delay of committed transport and source evidence need further work. There
+are no new money operations, migrations, dependencies or model calls.

@@ -2,6 +2,12 @@
 
 ## Unreleased
 
+- Add versioned, origin-preserving dated state with explicit pending harvest, movements and expiry/loss counters; reject stale or altered imports against a trusted reference.
+- Verify all 60 upstream food checkpoints and retain all preceding report sections in schema 16.
+- Add independent 192-schedule expiry checks and atomic failure/import tests.
+- Reconcile completion scope with code and define six remaining demonstrator packages with conditional engineering-effort estimates.
+
+
 - Preserve verified capital/seasonal prefixes on an absolute rolling timeline, including pending starts and original asset expiry.
 - Validate declared constituent conservation across recipes, stocks, explicit residue/waste and work in progress.
 - Add eight upstream continuation checkpoints and five typed material candidates to maintained report schema 15; preserve prior sections.
