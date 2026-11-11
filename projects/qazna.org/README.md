@@ -189,3 +189,9 @@ of successful monetary settlement. Coefficients remain synthetic.
 ### Nutrition and household choice
 
 The offline [nutrition/order annex](docs/physical-circulation.md#nutrient-needs-agricultural-requirements-and-household-orders) checks nutrient constraints before aggregating food requirements. Household cooking, prepared-food orders and delivery are separate choices. Pinned composition data, exact arithmetic and negative tests expose missing evidence and capacity gaps; the sample remains an uncalibrated research model, not a certified national diet.
+
+The [seasonal food annex](docs/physical-circulation.md#seasonal-cereal-and-feed-balance--11-november-2026)
+checks 60 monthly crop/seed/land/water balances and reserve replenishment for the
+cereal/feed portion of the order snapshot. Exact matrices and independent replay
+retain failed scenarios; synthetic land/yield assumptions and missing dated-stock
+integration remain visible.

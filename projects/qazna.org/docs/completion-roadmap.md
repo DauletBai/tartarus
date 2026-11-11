@@ -388,3 +388,20 @@ profiles; children, pregnancy, lactation and other demographic needs; seasonal
 feed/crop/land and water capacity; then mapping these requirements into the dated
 runtime resource graph. Current order snapshots are offline and synthetic, not
 an operational resident-order system or an adopted national food standard.
+
+### Seasonal cereal/feed gate — 11 November 2026
+
+Schema 12 adds a 60-month crop/seed/land/irrigation subchain derived from the
+100-million order snapshot, with mandatory full needs and next-cycle reserve
+floors. A separate event replay checks the exact matrix. Six scenarios distinguish
+current provision, depleted reserve, feasible replenishment and capacity failures.
+A pinned USDA rice-preparation extract and sequential retention helper keep
+unmeasured storage unknown. The specific cereal/feed and preparation arithmetic
+gate is closed; a complete national food model is **not** closed.
+
+Next: regional/agronomic calibration and wider demographic profiles; integrate
+preserved dated lots, nutrients and processing/transport/energy/work requirements
+with the seasonal matrix; extend other food sectors, animal rations and resource
+cycles. The current synthetic crop area is not measured available land, and
+retention estimates are not batch food-safety evidence. Reviewed live draft
+integration follows those evidence gates; no automatic authority is introduced.

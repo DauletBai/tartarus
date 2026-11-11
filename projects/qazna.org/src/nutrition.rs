@@ -543,3 +543,34 @@ pub fn constraint_matrix(
         rows,
     })
 }
+
+/// Compose independently specified sequential retention bounds. Missing stage
+/// evidence stays missing; outward rounding never strengthens a supplied bound.
+/// This does not infer independence, a confidence interval or storage stability.
+pub fn sequential_retention(stages: &[Option<Retention>]) -> Result<Option<Retention>> {
+    if stages.is_empty() || stages.len() > 64 {
+        return Err(invalid("retention stage count"));
+    }
+    let mut lower = 10_000u128;
+    let mut upper = 10_000u128;
+    let mut missing = false;
+    for stage in stages {
+        if let Some(r) = stage {
+            if r.minimum_bps > r.maximum_bps || r.maximum_bps > 10_000 {
+                return Err(invalid("retention bounds"));
+            }
+            lower = lower * u128::from(r.minimum_bps) / BPS;
+            upper = u128::from(ceil(upper * u128::from(r.maximum_bps), BPS)?);
+        } else {
+            missing = true;
+        }
+    }
+    Ok(if missing {
+        None
+    } else {
+        Some(Retention {
+            minimum_bps: lower as u16,
+            maximum_bps: upper as u16,
+        })
+    })
+}

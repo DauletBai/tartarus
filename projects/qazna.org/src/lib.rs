@@ -26,3 +26,5 @@ pub mod replanning;
 pub mod lifecycle;
 
 pub mod nutrition;
+
+pub mod seasonal;

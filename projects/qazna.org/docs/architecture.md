@@ -201,3 +201,18 @@ Cooking and delivery are independent order properties. This is a pure Rust
 calculation annex: no new API, migration, automatic substitution, ledger mutation
 or food-safety approval. The live provisioning graph still uses its existing
 resource definitions. See [nutrition scope and results](physical-circulation.md#nutrient-needs-agricultural-requirements-and-household-orders).
+
+## Offline seasonal production constraints
+
+`seasonal` extends `Horizon` with explicit crop calendars, shared occupied land,
+stage irrigation budgets, mandatory delivery of every declared need and closing
+stock floors. Matrix compilation and independent chronological replay check the
+same proposed plan by separate paths; arithmetic is integer/checked. Growth-term
+limits bound extension size. A 60-month cereal/feed annex derives demand from
+existing orders and tests harvest loss, restoration, irrigation and unavailable
+feed capacity. Its model assumes preserved stock without deterioration; dated
+lot/retention integration and other food sectors remain open. No endpoint,
+migration, autonomous crop allocation or monetary action was added.
+`nutrition::sequential_retention` propagates unknown stages and outward-rounded
+bounds; sourced preparation estimates retain raw-mass basis and uncertainty.
+See [seasonal formulas and limits](physical-circulation.md#seasonal-cereal-and-feed-balance--11-november-2026).

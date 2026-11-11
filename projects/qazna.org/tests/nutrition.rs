@@ -372,3 +372,42 @@ fn imported_reference_preserves_exact_micrograms_and_absent_oil_macros() {
         .unwrap();
     assert_eq!((&*b12.unit, b12.quanta_per_100g), ("µg", Some(540_000)));
 }
+
+#[test]
+fn sequential_processing_retains_unknown_storage_and_outward_bounds() {
+    use qazna::nutrition::{Retention, sequential_retention};
+    let bounds = |lo, hi| {
+        Some(Retention {
+            minimum_bps: lo,
+            maximum_bps: hi,
+        })
+    };
+    let cooked = sequential_retention(&[bounds(7500, 7500), bounds(9500, 9500)])
+        .unwrap()
+        .unwrap();
+    assert_eq!((cooked.minimum_bps, cooked.maximum_bps), (7125, 7125));
+    assert!(
+        sequential_retention(&[bounds(7500, 7500), None, bounds(9500, 9500)])
+            .unwrap()
+            .is_none()
+    );
+    assert!(sequential_retention(&[None, bounds(10_001, 10_001)]).is_err());
+    assert!(sequential_retention(&[]).is_err());
+    // Multiplication is evaluated once at full precision by this external oracle.
+    for a in [0u64, 1, 3333, 7500, 9999, 10000] {
+        for b in [1u64, 257, 9500, 10000] {
+            for c in [1u64, 999, 9999, 10000] {
+                let out = sequential_retention(&[
+                    bounds(a as u16, a as u16),
+                    bounds(b as u16, b as u16),
+                    bounds(c as u16, c as u16),
+                ])
+                .unwrap()
+                .unwrap();
+                let exact = a * b * c;
+                assert!(u64::from(out.minimum_bps) * 100_000_000 <= exact);
+                assert!(u64::from(out.maximum_bps) * 100_000_000 >= exact);
+            }
+        }
+    }
+}

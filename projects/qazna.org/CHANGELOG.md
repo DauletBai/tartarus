@@ -2,6 +2,11 @@
 
 ## Unreleased
 
+- Add a 60-month seasonal cereal/feed subchain with shared land, seed inputs, crop calendars, stage irrigation, full needs and next-cycle stock floors (report schema 12).
+- Check six harvest/replenishment/capacity candidates with exact matrices and independent chronological replay; preserve historical report sections.
+- Add source-pinned USDA rice-preparation estimates and sequential retention bounds; unknown storage remains unknown.
+- Add exhaustive/negative seasonal tests, source provenance and formulas. No live authority, endpoint or migration changes.
+
 - Add exact nutrient-profile constraints, missing-data/retention gates and independent linear-matrix compilation.
 - Add pinned USDA composition inputs, illustrative EFSA adult profiles, 24 candidate-menu checks and 100-million preparation/delivery scenarios in report schema 11.
 - Derive agricultural ingredient/gross-output and upstream resource requirements from orders; preserve home cooking, independent delivery choice and explicit incomplete supply chains.

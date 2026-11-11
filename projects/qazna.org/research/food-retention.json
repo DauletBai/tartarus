@@ -1,0 +1,713 @@
+{
+  "release": "USDA Table of Nutrient Retention Factors, Release 6 (2007)",
+  "source_url": "https://ndownloader.figshare.com/files/44488754",
+  "source_sha256": "b863e891989020edf3a429af8060523e5dee275699ae08893a5f91ff9a84b1e5",
+  "documentation": "https://www.ars.usda.gov/arsuserfiles/80400530/pdf/retn06.pdf",
+  "catalogue": "https://catalog.data.gov/dataset/usda-table-of-nutrient-retention-factors-release-6-2007",
+  "license": "CC0-1.0",
+  "scope": "Preparation estimates, reported in steps of 5 percent, capped at 100; not confidence intervals or storage-life certification. Source nutrient identifiers are preserved; no implicit mapping of folate or vitamin A definitions.",
+  "rows": [
+    {
+      "Retn_Code": "431",
+      "FdGrp_CD": "20",
+      "RetnDesc": "RICE,WHITE/BROWN,COOKED,DRAINED",
+      "Nutr_No": "301",
+      "NutrDesc": "Calcium, Ca",
+      "Retn_Factor": "95",
+      "Date": "Sep-75"
+    },
+    {
+      "Retn_Code": "431",
+      "FdGrp_CD": "20",
+      "RetnDesc": "RICE,WHITE/BROWN,COOKED,DRAINED",
+      "Nutr_No": "303",
+      "NutrDesc": "Iron, Fe",
+      "Retn_Factor": "90",
+      "Date": "Sep-75"
+    },
+    {
+      "Retn_Code": "431",
+      "FdGrp_CD": "20",
+      "RetnDesc": "RICE,WHITE/BROWN,COOKED,DRAINED",
+      "Nutr_No": "304",
+      "NutrDesc": "Magnesium, Mg",
+      "Retn_Factor": "95",
+      "Date": "Sep-75"
+    },
+    {
+      "Retn_Code": "431",
+      "FdGrp_CD": "20",
+      "RetnDesc": "RICE,WHITE/BROWN,COOKED,DRAINED",
+      "Nutr_No": "305",
+      "NutrDesc": "Phosphorus, P",
+      "Retn_Factor": "90",
+      "Date": "Sep-75"
+    },
+    {
+      "Retn_Code": "431",
+      "FdGrp_CD": "20",
+      "RetnDesc": "RICE,WHITE/BROWN,COOKED,DRAINED",
+      "Nutr_No": "306",
+      "NutrDesc": "Potassium, K",
+      "Retn_Factor": "85",
+      "Date": "Sep-75"
+    },
+    {
+      "Retn_Code": "431",
+      "FdGrp_CD": "20",
+      "RetnDesc": "RICE,WHITE/BROWN,COOKED,DRAINED",
+      "Nutr_No": "307",
+      "NutrDesc": "Sodium, Na",
+      "Retn_Factor": "95",
+      "Date": "Sep-75"
+    },
+    {
+      "Retn_Code": "431",
+      "FdGrp_CD": "20",
+      "RetnDesc": "RICE,WHITE/BROWN,COOKED,DRAINED",
+      "Nutr_No": "309",
+      "NutrDesc": "Zinc, Zn",
+      "Retn_Factor": "95",
+      "Date": "Sep-75"
+    },
+    {
+      "Retn_Code": "431",
+      "FdGrp_CD": "20",
+      "RetnDesc": "RICE,WHITE/BROWN,COOKED,DRAINED",
+      "Nutr_No": "312",
+      "NutrDesc": "Copper, Cu",
+      "Retn_Factor": "90",
+      "Date": "Sep-75"
+    },
+    {
+      "Retn_Code": "431",
+      "FdGrp_CD": "20",
+      "RetnDesc": "RICE,WHITE/BROWN,COOKED,DRAINED",
+      "Nutr_No": "401",
+      "NutrDesc": "Vitamin C, total ascorbic acid",
+      "Retn_Factor": "75",
+      "Date": "Sep-75"
+    },
+    {
+      "Retn_Code": "431",
+      "FdGrp_CD": "20",
+      "RetnDesc": "RICE,WHITE/BROWN,COOKED,DRAINED",
+      "Nutr_No": "404",
+      "NutrDesc": "Thiamin",
+      "Retn_Factor": "75",
+      "Date": "Sep-75"
+    },
+    {
+      "Retn_Code": "431",
+      "FdGrp_CD": "20",
+      "RetnDesc": "RICE,WHITE/BROWN,COOKED,DRAINED",
+      "Nutr_No": "405",
+      "NutrDesc": "Riboflavin",
+      "Retn_Factor": "90",
+      "Date": "Sep-75"
+    },
+    {
+      "Retn_Code": "431",
+      "FdGrp_CD": "20",
+      "RetnDesc": "RICE,WHITE/BROWN,COOKED,DRAINED",
+      "Nutr_No": "406",
+      "NutrDesc": "Niacin",
+      "Retn_Factor": "95",
+      "Date": "Sep-75"
+    },
+    {
+      "Retn_Code": "431",
+      "FdGrp_CD": "20",
+      "RetnDesc": "RICE,WHITE/BROWN,COOKED,DRAINED",
+      "Nutr_No": "415",
+      "NutrDesc": "Vitamin B-6",
+      "Retn_Factor": "90",
+      "Date": "Sep-75"
+    },
+    {
+      "Retn_Code": "431",
+      "FdGrp_CD": "20",
+      "RetnDesc": "RICE,WHITE/BROWN,COOKED,DRAINED",
+      "Nutr_No": "417",
+      "NutrDesc": "Folate, total",
+      "Retn_Factor": "60",
+      "Date": "Sep-75"
+    },
+    {
+      "Retn_Code": "431",
+      "FdGrp_CD": "20",
+      "RetnDesc": "RICE,WHITE/BROWN,COOKED,DRAINED",
+      "Nutr_No": "431",
+      "NutrDesc": "Folic acid",
+      "Retn_Factor": "60",
+      "Date": "Sep-75"
+    },
+    {
+      "Retn_Code": "431",
+      "FdGrp_CD": "20",
+      "RetnDesc": "RICE,WHITE/BROWN,COOKED,DRAINED",
+      "Nutr_No": "432",
+      "NutrDesc": "Folate, food",
+      "Retn_Factor": "60",
+      "Date": "Sep-75"
+    },
+    {
+      "Retn_Code": "431",
+      "FdGrp_CD": "20",
+      "RetnDesc": "RICE,WHITE/BROWN,COOKED,DRAINED",
+      "Nutr_No": "421",
+      "NutrDesc": "Choline, total",
+      "Retn_Factor": "100",
+      "Date": "Sep-75"
+    },
+    {
+      "Retn_Code": "431",
+      "FdGrp_CD": "20",
+      "RetnDesc": "RICE,WHITE/BROWN,COOKED,DRAINED",
+      "Nutr_No": "418",
+      "NutrDesc": "Vitamin B-12",
+      "Retn_Factor": "100",
+      "Date": "Sep-75"
+    },
+    {
+      "Retn_Code": "431",
+      "FdGrp_CD": "20",
+      "RetnDesc": "RICE,WHITE/BROWN,COOKED,DRAINED",
+      "Nutr_No": "318",
+      "NutrDesc": "Vitamin A, IU",
+      "Retn_Factor": "95",
+      "Date": "Sep-75"
+    },
+    {
+      "Retn_Code": "431",
+      "FdGrp_CD": "20",
+      "RetnDesc": "RICE,WHITE/BROWN,COOKED,DRAINED",
+      "Nutr_No": "392",
+      "NutrDesc": "Vitamin A, RE",
+      "Retn_Factor": "95",
+      "Date": "Sep-75"
+    },
+    {
+      "Retn_Code": "431",
+      "FdGrp_CD": "20",
+      "RetnDesc": "RICE,WHITE/BROWN,COOKED,DRAINED",
+      "Nutr_No": "221",
+      "NutrDesc": "Alcohol, ethyl",
+      "Retn_Factor": "100",
+      "Date": "Sep-75"
+    },
+    {
+      "Retn_Code": "431",
+      "FdGrp_CD": "20",
+      "RetnDesc": "RICE,WHITE/BROWN,COOKED,DRAINED",
+      "Nutr_No": "321",
+      "NutrDesc": "Carotene, beta",
+      "Retn_Factor": "95",
+      "Date": "Sep-75"
+    },
+    {
+      "Retn_Code": "431",
+      "FdGrp_CD": "20",
+      "RetnDesc": "RICE,WHITE/BROWN,COOKED,DRAINED",
+      "Nutr_No": "322",
+      "NutrDesc": "Carotene, alpha",
+      "Retn_Factor": "95",
+      "Date": "Sep-75"
+    },
+    {
+      "Retn_Code": "431",
+      "FdGrp_CD": "20",
+      "RetnDesc": "RICE,WHITE/BROWN,COOKED,DRAINED",
+      "Nutr_No": "334",
+      "NutrDesc": "Cryptoxanthin, beta",
+      "Retn_Factor": "95",
+      "Date": "Sep-75"
+    },
+    {
+      "Retn_Code": "431",
+      "FdGrp_CD": "20",
+      "RetnDesc": "RICE,WHITE/BROWN,COOKED,DRAINED",
+      "Nutr_No": "337",
+      "NutrDesc": "Lycopene",
+      "Retn_Factor": "95",
+      "Date": "Sep-75"
+    },
+    {
+      "Retn_Code": "431",
+      "FdGrp_CD": "20",
+      "RetnDesc": "RICE,WHITE/BROWN,COOKED,DRAINED",
+      "Nutr_No": "338",
+      "NutrDesc": "Lutein + zeaxanthin",
+      "Retn_Factor": "95",
+      "Date": "Sep-75"
+    },
+    {
+      "Retn_Code": "432",
+      "FdGrp_CD": "20",
+      "RetnDesc": "RICE,WHITE/BROWN,COOKED,WATER USED",
+      "Nutr_No": "301",
+      "NutrDesc": "Calcium, Ca",
+      "Retn_Factor": "100",
+      "Date": "Sep-75"
+    },
+    {
+      "Retn_Code": "432",
+      "FdGrp_CD": "20",
+      "RetnDesc": "RICE,WHITE/BROWN,COOKED,WATER USED",
+      "Nutr_No": "303",
+      "NutrDesc": "Iron, Fe",
+      "Retn_Factor": "95",
+      "Date": "Sep-75"
+    },
+    {
+      "Retn_Code": "432",
+      "FdGrp_CD": "20",
+      "RetnDesc": "RICE,WHITE/BROWN,COOKED,WATER USED",
+      "Nutr_No": "304",
+      "NutrDesc": "Magnesium, Mg",
+      "Retn_Factor": "100",
+      "Date": "Sep-75"
+    },
+    {
+      "Retn_Code": "432",
+      "FdGrp_CD": "20",
+      "RetnDesc": "RICE,WHITE/BROWN,COOKED,WATER USED",
+      "Nutr_No": "305",
+      "NutrDesc": "Phosphorus, P",
+      "Retn_Factor": "95",
+      "Date": "Sep-75"
+    },
+    {
+      "Retn_Code": "432",
+      "FdGrp_CD": "20",
+      "RetnDesc": "RICE,WHITE/BROWN,COOKED,WATER USED",
+      "Nutr_No": "306",
+      "NutrDesc": "Potassium, K",
+      "Retn_Factor": "95",
+      "Date": "Sep-75"
+    },
+    {
+      "Retn_Code": "432",
+      "FdGrp_CD": "20",
+      "RetnDesc": "RICE,WHITE/BROWN,COOKED,WATER USED",
+      "Nutr_No": "307",
+      "NutrDesc": "Sodium, Na",
+      "Retn_Factor": "100",
+      "Date": "Sep-75"
+    },
+    {
+      "Retn_Code": "432",
+      "FdGrp_CD": "20",
+      "RetnDesc": "RICE,WHITE/BROWN,COOKED,WATER USED",
+      "Nutr_No": "309",
+      "NutrDesc": "Zinc, Zn",
+      "Retn_Factor": "100",
+      "Date": "Sep-75"
+    },
+    {
+      "Retn_Code": "432",
+      "FdGrp_CD": "20",
+      "RetnDesc": "RICE,WHITE/BROWN,COOKED,WATER USED",
+      "Nutr_No": "312",
+      "NutrDesc": "Copper, Cu",
+      "Retn_Factor": "95",
+      "Date": "Sep-75"
+    },
+    {
+      "Retn_Code": "432",
+      "FdGrp_CD": "20",
+      "RetnDesc": "RICE,WHITE/BROWN,COOKED,WATER USED",
+      "Nutr_No": "401",
+      "NutrDesc": "Vitamin C, total ascorbic acid",
+      "Retn_Factor": "80",
+      "Date": "Sep-75"
+    },
+    {
+      "Retn_Code": "432",
+      "FdGrp_CD": "20",
+      "RetnDesc": "RICE,WHITE/BROWN,COOKED,WATER USED",
+      "Nutr_No": "404",
+      "NutrDesc": "Thiamin",
+      "Retn_Factor": "80",
+      "Date": "Sep-75"
+    },
+    {
+      "Retn_Code": "432",
+      "FdGrp_CD": "20",
+      "RetnDesc": "RICE,WHITE/BROWN,COOKED,WATER USED",
+      "Nutr_No": "405",
+      "NutrDesc": "Riboflavin",
+      "Retn_Factor": "90",
+      "Date": "Sep-75"
+    },
+    {
+      "Retn_Code": "432",
+      "FdGrp_CD": "20",
+      "RetnDesc": "RICE,WHITE/BROWN,COOKED,WATER USED",
+      "Nutr_No": "406",
+      "NutrDesc": "Niacin",
+      "Retn_Factor": "100",
+      "Date": "Sep-75"
+    },
+    {
+      "Retn_Code": "432",
+      "FdGrp_CD": "20",
+      "RetnDesc": "RICE,WHITE/BROWN,COOKED,WATER USED",
+      "Nutr_No": "415",
+      "NutrDesc": "Vitamin B-6",
+      "Retn_Factor": "95",
+      "Date": "Sep-75"
+    },
+    {
+      "Retn_Code": "432",
+      "FdGrp_CD": "20",
+      "RetnDesc": "RICE,WHITE/BROWN,COOKED,WATER USED",
+      "Nutr_No": "417",
+      "NutrDesc": "Folate, total",
+      "Retn_Factor": "70",
+      "Date": "Sep-75"
+    },
+    {
+      "Retn_Code": "432",
+      "FdGrp_CD": "20",
+      "RetnDesc": "RICE,WHITE/BROWN,COOKED,WATER USED",
+      "Nutr_No": "431",
+      "NutrDesc": "Folic acid",
+      "Retn_Factor": "70",
+      "Date": "Sep-75"
+    },
+    {
+      "Retn_Code": "432",
+      "FdGrp_CD": "20",
+      "RetnDesc": "RICE,WHITE/BROWN,COOKED,WATER USED",
+      "Nutr_No": "432",
+      "NutrDesc": "Folate, food",
+      "Retn_Factor": "70",
+      "Date": "Sep-75"
+    },
+    {
+      "Retn_Code": "432",
+      "FdGrp_CD": "20",
+      "RetnDesc": "RICE,WHITE/BROWN,COOKED,WATER USED",
+      "Nutr_No": "421",
+      "NutrDesc": "Choline, total",
+      "Retn_Factor": "100",
+      "Date": "Sep-75"
+    },
+    {
+      "Retn_Code": "432",
+      "FdGrp_CD": "20",
+      "RetnDesc": "RICE,WHITE/BROWN,COOKED,WATER USED",
+      "Nutr_No": "418",
+      "NutrDesc": "Vitamin B-12",
+      "Retn_Factor": "100",
+      "Date": "Sep-75"
+    },
+    {
+      "Retn_Code": "432",
+      "FdGrp_CD": "20",
+      "RetnDesc": "RICE,WHITE/BROWN,COOKED,WATER USED",
+      "Nutr_No": "318",
+      "NutrDesc": "Vitamin A, IU",
+      "Retn_Factor": "95",
+      "Date": "Sep-75"
+    },
+    {
+      "Retn_Code": "432",
+      "FdGrp_CD": "20",
+      "RetnDesc": "RICE,WHITE/BROWN,COOKED,WATER USED",
+      "Nutr_No": "392",
+      "NutrDesc": "Vitamin A, RE",
+      "Retn_Factor": "95",
+      "Date": "Sep-75"
+    },
+    {
+      "Retn_Code": "432",
+      "FdGrp_CD": "20",
+      "RetnDesc": "RICE,WHITE/BROWN,COOKED,WATER USED",
+      "Nutr_No": "221",
+      "NutrDesc": "Alcohol, ethyl",
+      "Retn_Factor": "100",
+      "Date": "Sep-75"
+    },
+    {
+      "Retn_Code": "432",
+      "FdGrp_CD": "20",
+      "RetnDesc": "RICE,WHITE/BROWN,COOKED,WATER USED",
+      "Nutr_No": "321",
+      "NutrDesc": "Carotene, beta",
+      "Retn_Factor": "95",
+      "Date": "Sep-75"
+    },
+    {
+      "Retn_Code": "432",
+      "FdGrp_CD": "20",
+      "RetnDesc": "RICE,WHITE/BROWN,COOKED,WATER USED",
+      "Nutr_No": "322",
+      "NutrDesc": "Carotene, alpha",
+      "Retn_Factor": "95",
+      "Date": "Sep-75"
+    },
+    {
+      "Retn_Code": "432",
+      "FdGrp_CD": "20",
+      "RetnDesc": "RICE,WHITE/BROWN,COOKED,WATER USED",
+      "Nutr_No": "334",
+      "NutrDesc": "Cryptoxanthin, beta",
+      "Retn_Factor": "95",
+      "Date": "Sep-75"
+    },
+    {
+      "Retn_Code": "432",
+      "FdGrp_CD": "20",
+      "RetnDesc": "RICE,WHITE/BROWN,COOKED,WATER USED",
+      "Nutr_No": "337",
+      "NutrDesc": "Lycopene",
+      "Retn_Factor": "95",
+      "Date": "Sep-75"
+    },
+    {
+      "Retn_Code": "432",
+      "FdGrp_CD": "20",
+      "RetnDesc": "RICE,WHITE/BROWN,COOKED,WATER USED",
+      "Nutr_No": "338",
+      "NutrDesc": "Lutein + zeaxanthin",
+      "Retn_Factor": "95",
+      "Date": "Sep-75"
+    },
+    {
+      "Retn_Code": "434",
+      "FdGrp_CD": "20",
+      "RetnDesc": "RICE,WHITE/BROWN,REHEATED",
+      "Nutr_No": "301",
+      "NutrDesc": "Calcium, Ca",
+      "Retn_Factor": "100",
+      "Date": "Sep-75"
+    },
+    {
+      "Retn_Code": "434",
+      "FdGrp_CD": "20",
+      "RetnDesc": "RICE,WHITE/BROWN,REHEATED",
+      "Nutr_No": "303",
+      "NutrDesc": "Iron, Fe",
+      "Retn_Factor": "100",
+      "Date": "Sep-75"
+    },
+    {
+      "Retn_Code": "434",
+      "FdGrp_CD": "20",
+      "RetnDesc": "RICE,WHITE/BROWN,REHEATED",
+      "Nutr_No": "304",
+      "NutrDesc": "Magnesium, Mg",
+      "Retn_Factor": "100",
+      "Date": "Sep-75"
+    },
+    {
+      "Retn_Code": "434",
+      "FdGrp_CD": "20",
+      "RetnDesc": "RICE,WHITE/BROWN,REHEATED",
+      "Nutr_No": "305",
+      "NutrDesc": "Phosphorus, P",
+      "Retn_Factor": "100",
+      "Date": "Sep-75"
+    },
+    {
+      "Retn_Code": "434",
+      "FdGrp_CD": "20",
+      "RetnDesc": "RICE,WHITE/BROWN,REHEATED",
+      "Nutr_No": "306",
+      "NutrDesc": "Potassium, K",
+      "Retn_Factor": "100",
+      "Date": "Sep-75"
+    },
+    {
+      "Retn_Code": "434",
+      "FdGrp_CD": "20",
+      "RetnDesc": "RICE,WHITE/BROWN,REHEATED",
+      "Nutr_No": "307",
+      "NutrDesc": "Sodium, Na",
+      "Retn_Factor": "100",
+      "Date": "Sep-75"
+    },
+    {
+      "Retn_Code": "434",
+      "FdGrp_CD": "20",
+      "RetnDesc": "RICE,WHITE/BROWN,REHEATED",
+      "Nutr_No": "309",
+      "NutrDesc": "Zinc, Zn",
+      "Retn_Factor": "100",
+      "Date": "Sep-75"
+    },
+    {
+      "Retn_Code": "434",
+      "FdGrp_CD": "20",
+      "RetnDesc": "RICE,WHITE/BROWN,REHEATED",
+      "Nutr_No": "312",
+      "NutrDesc": "Copper, Cu",
+      "Retn_Factor": "100",
+      "Date": "Sep-75"
+    },
+    {
+      "Retn_Code": "434",
+      "FdGrp_CD": "20",
+      "RetnDesc": "RICE,WHITE/BROWN,REHEATED",
+      "Nutr_No": "401",
+      "NutrDesc": "Vitamin C, total ascorbic acid",
+      "Retn_Factor": "95",
+      "Date": "Sep-75"
+    },
+    {
+      "Retn_Code": "434",
+      "FdGrp_CD": "20",
+      "RetnDesc": "RICE,WHITE/BROWN,REHEATED",
+      "Nutr_No": "404",
+      "NutrDesc": "Thiamin",
+      "Retn_Factor": "95",
+      "Date": "Sep-75"
+    },
+    {
+      "Retn_Code": "434",
+      "FdGrp_CD": "20",
+      "RetnDesc": "RICE,WHITE/BROWN,REHEATED",
+      "Nutr_No": "405",
+      "NutrDesc": "Riboflavin",
+      "Retn_Factor": "100",
+      "Date": "Sep-75"
+    },
+    {
+      "Retn_Code": "434",
+      "FdGrp_CD": "20",
+      "RetnDesc": "RICE,WHITE/BROWN,REHEATED",
+      "Nutr_No": "406",
+      "NutrDesc": "Niacin",
+      "Retn_Factor": "100",
+      "Date": "Sep-75"
+    },
+    {
+      "Retn_Code": "434",
+      "FdGrp_CD": "20",
+      "RetnDesc": "RICE,WHITE/BROWN,REHEATED",
+      "Nutr_No": "415",
+      "NutrDesc": "Vitamin B-6",
+      "Retn_Factor": "100",
+      "Date": "Sep-75"
+    },
+    {
+      "Retn_Code": "434",
+      "FdGrp_CD": "20",
+      "RetnDesc": "RICE,WHITE/BROWN,REHEATED",
+      "Nutr_No": "417",
+      "NutrDesc": "Folate, total",
+      "Retn_Factor": "95",
+      "Date": "Sep-75"
+    },
+    {
+      "Retn_Code": "434",
+      "FdGrp_CD": "20",
+      "RetnDesc": "RICE,WHITE/BROWN,REHEATED",
+      "Nutr_No": "431",
+      "NutrDesc": "Folic acid",
+      "Retn_Factor": "95",
+      "Date": "Sep-75"
+    },
+    {
+      "Retn_Code": "434",
+      "FdGrp_CD": "20",
+      "RetnDesc": "RICE,WHITE/BROWN,REHEATED",
+      "Nutr_No": "432",
+      "NutrDesc": "Folate, food",
+      "Retn_Factor": "95",
+      "Date": "Sep-75"
+    },
+    {
+      "Retn_Code": "434",
+      "FdGrp_CD": "20",
+      "RetnDesc": "RICE,WHITE/BROWN,REHEATED",
+      "Nutr_No": "421",
+      "NutrDesc": "Choline, total",
+      "Retn_Factor": "100",
+      "Date": "Sep-75"
+    },
+    {
+      "Retn_Code": "434",
+      "FdGrp_CD": "20",
+      "RetnDesc": "RICE,WHITE/BROWN,REHEATED",
+      "Nutr_No": "418",
+      "NutrDesc": "Vitamin B-12",
+      "Retn_Factor": "100",
+      "Date": "Sep-75"
+    },
+    {
+      "Retn_Code": "434",
+      "FdGrp_CD": "20",
+      "RetnDesc": "RICE,WHITE/BROWN,REHEATED",
+      "Nutr_No": "318",
+      "NutrDesc": "Vitamin A, IU",
+      "Retn_Factor": "100",
+      "Date": "Sep-75"
+    },
+    {
+      "Retn_Code": "434",
+      "FdGrp_CD": "20",
+      "RetnDesc": "RICE,WHITE/BROWN,REHEATED",
+      "Nutr_No": "392",
+      "NutrDesc": "Vitamin A, RE",
+      "Retn_Factor": "100",
+      "Date": "Sep-75"
+    },
+    {
+      "Retn_Code": "434",
+      "FdGrp_CD": "20",
+      "RetnDesc": "RICE,WHITE/BROWN,REHEATED",
+      "Nutr_No": "221",
+      "NutrDesc": "Alcohol, ethyl",
+      "Retn_Factor": "100",
+      "Date": "Sep-75"
+    },
+    {
+      "Retn_Code": "434",
+      "FdGrp_CD": "20",
+      "RetnDesc": "RICE,WHITE/BROWN,REHEATED",
+      "Nutr_No": "321",
+      "NutrDesc": "Carotene, beta",
+      "Retn_Factor": "100",
+      "Date": "Sep-75"
+    },
+    {
+      "Retn_Code": "434",
+      "FdGrp_CD": "20",
+      "RetnDesc": "RICE,WHITE/BROWN,REHEATED",
+      "Nutr_No": "322",
+      "NutrDesc": "Carotene, alpha",
+      "Retn_Factor": "100",
+      "Date": "Sep-75"
+    },
+    {
+      "Retn_Code": "434",
+      "FdGrp_CD": "20",
+      "RetnDesc": "RICE,WHITE/BROWN,REHEATED",
+      "Nutr_No": "334",
+      "NutrDesc": "Cryptoxanthin, beta",
+      "Retn_Factor": "100",
+      "Date": "Sep-75"
+    },
+    {
+      "Retn_Code": "434",
+      "FdGrp_CD": "20",
+      "RetnDesc": "RICE,WHITE/BROWN,REHEATED",
+      "Nutr_No": "337",
+      "NutrDesc": "Lycopene",
+      "Retn_Factor": "100",
+      "Date": "Sep-75"
+    },
+    {
+      "Retn_Code": "434",
+      "FdGrp_CD": "20",
+      "RetnDesc": "RICE,WHITE/BROWN,REHEATED",
+      "Nutr_No": "338",
+      "NutrDesc": "Lutein + zeaxanthin",
+      "Retn_Factor": "100",
+      "Date": "Sep-75"
+    }
+  ]
+}
