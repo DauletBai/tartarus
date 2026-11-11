@@ -17,11 +17,11 @@ and a target preserved-food design with constructed storage and restart allowanc
 and two-phase daily maintenance with independent paused-work checks;
 and an offline nutrient/order annex with pinned food-composition data, per-profile
 constraints, bounded menu search and mode-specific service requirements.
-The complete local suite passed 57 mathematical, 17 nutrient/order, 91 PostgreSQL
-and 16 coupled-example tests, plus
-the HTTP, recovery, safety and actor exercises. Verification is recorded in
-[development](development.md). The preceding daily-maintenance PR #3 passed GitHub CI and merged as `54a0db6`;
-this stage's remote checks are separate from the local results.
+The latest seasonal PR #5 passed both remote CI runs and merged as `c952c2f`.
+The current automation annex composes seasonal crops with two downstream routes,
+commissioning, qualification, shared capacity and dated stock. Current validation
+is recorded in [development](development.md); published checks are reported
+separately from local execution.
 These results cover the declared synthetic model, not national deployment.
 
 The author's current priority is independent calculation and testing before
@@ -33,7 +33,7 @@ for the following sequence. The table distinguishes completed bounded experiment
 | 1 — bounded experiment implemented | Common opening measure across six disruption schedules | Same initial money/assets now tested; physical reserves are fixed rather than optimized; uncertainty beyond the declared family remains open | Exact worst-prefix witnesses, independent replay of every scenario, one-unit-less necessity checks and equal-observation physical prefixes; see the common-funding results |
 | 2 — bounded experiment implemented | Joint planning of reserves, routes, replacement and training | Eight feedback policies × six paths now compared with equal initial assets and exact terminal/cash checks; general design optimization remains open | Zero transport-only food deficit with additional produced equipment; minimax shortage reaches a verified energy-outage lower bound; see joint-planning evidence |
 | 3 — integrated lifecycle experiment implemented | Energy continuity, expiry, transport loss, maintenance and changing demand | Constructed reserves and integrated dated-food/transit/service traces with monetary replay are tested; preserved-food source profiles, nutrient/last-mile calibration, specialist capacity calibration and runtime integration remain open | Explicit dated lots/loss events; no expired or destroyed output delivered; partial failures, recalls, disrupted routes and revised needs with no rewriting of past provision |
-| 4 — nutrition/order submodel implemented | Cohorts, additional services and evidence-backed coefficients | Two synthetic adult profiles and explicit preparation/delivery choice now work offline; retained nutrients, national demography, seasonal agriculture/feed/land, health and education remain incomplete | Versioned input registry with units, region, year, source and uncertainty; age/cohort transitions, voluntary qualification pathways and service capacity; distinguish synthetic and calibrated runs |
+| 4 — nutrition/order submodel implemented | Cohorts, additional services and evidence-backed coefficients | Two synthetic adult profiles and explicit preparation/delivery choice now work offline; seasonal cereal/feed and a bounded automation/distribution graph now work; retained nutrients, national demography, regional calibration, health and education remain incomplete | Versioned input registry with units, region, year, source and uncertainty; age/cohort transitions, voluntary qualification pathways and service capacity; distinguish synthetic and calibrated runs |
 | 5 | Reviewed integration into the live Rust service | Offline matrices do not currently create persistent runtime plans | Versioned scenario snapshots and drafts; stale-state rejection, atomic application, restart/retry and independent replay; no solver or AI authority to post or issue measure |
 | 6 | Participant-facing demonstrator and operational completion | Machine credentials are not resident identity; disputes, corrections and UI are incomplete | Scoped resident/organization access, evidence custody and dispute resolution, compensating events, accessible role-specific UI, overload and disaster-recovery tests; independent review before any consequential pilot |
 
@@ -405,3 +405,20 @@ with the seasonal matrix; extend other food sectors, animal rations and resource
 cycles. The current synthetic crop area is not measured available land, and
 retention estimates are not batch food-safety evidence. Reviewed live draft
 integration follows those evidence gates; no automatic authority is introduced.
+
+
+### Automation and downstream seasonal supply — 11 November 2026
+
+Implemented a 60-month, 17-resource, 29-process graph joining the existing
+crop/seed/land/water model to processing, delivery, robot-cell installation,
+qualification and shared work. Eleven fixed-candidate comparisons distinguish
+feasible adoption/fallback paths from resource failures. Three independent checks
+cover matrix feasibility, chronological capability use and unchanged-expiry FEFO.
+Human needs do not depend on retained employment. Source-reviewed automation
+context is separate from synthetic scenario coefficients.
+
+Next: calibrate typed crop/product preservation and conversion losses; connect
+external energy/material/robot-kit/training-place boundaries to upstream capacity,
+constructed storage and age-qualified replacement. Then persist reviewed scenario
+snapshots/drafts in the Rust service with stale-state and operator-approval gates.
+Do not jump from synthetic labour savings to a national fiscal or employment claim.

@@ -1,7 +1,7 @@
 //! Offline seasonal extension: shared land, stage water and mandatory provision.
 //! Not a crop-growth forecast, land allocation authority or monetary operation.
 use crate::{
-    horizon::{Horizon, PeriodPlan},
+    horizon::{Horizon, PeriodPlan, StockCapacity},
     mathematics::{LinearModel, MathError, Row, Sense},
 };
 use serde::{Deserialize, Serialize};
@@ -191,6 +191,50 @@ impl Seasonal {
             }
         }
         Ok(model)
+    }
+    /// Compose seasonal full-needs constraints with shared prior-period assets.
+    /// No withdrawals are accepted here: seasonal balances must remain identical.
+    pub fn compile_with_capabilities(
+        &self,
+        limits: &[StockCapacity],
+    ) -> Result<LinearModel, MathError> {
+        let mut model = self.compile()?;
+        let shared = self.physical.compile_capabilities(limits, &[])?;
+        model.rows.extend(
+            shared
+                .rows
+                .into_iter()
+                .filter(|r| r.name.starts_with("shared:")),
+        );
+        Ok(model)
+    }
+    /// Independently checks shared use; a completed machine or qualification is
+    /// unavailable until the following period. Capacity is shared across routes.
+    pub fn replay_with_capabilities(
+        &self,
+        plan: &[PeriodPlan],
+        limits: &[StockCapacity],
+    ) -> Result<SeasonalEvidence, MathError> {
+        // Reuse schema validation, not compiled feasibility or row evaluation.
+        self.physical.compile_capabilities(limits, &[])?;
+        let evidence = self.replay(plan)?;
+        for (t, p) in plan.iter().enumerate() {
+            for limit in limits {
+                let opening = if t == 0 {
+                    self.physical.initial[limit.resource]
+                } else {
+                    plan[t - 1].closing[limit.resource]
+                };
+                let mut used = 0i128;
+                for (&x, &coefficient) in p.activities.iter().zip(&limit.activity_use) {
+                    add(&mut used, i128::from(x) * i128::from(coefficient))?;
+                }
+                if used > i128::from(opening) * i128::from(limit.units_per_stock) {
+                    return Err(MathError::Infeasible(format!("shared:{}:{t}", limit.name)));
+                }
+            }
+        }
+        Ok(evidence)
     }
     /// Independent event replay. Does not evaluate or trust compiled matrix rows.
     /// Harvest arrives before current starts/deliveries; land is released at harvest.

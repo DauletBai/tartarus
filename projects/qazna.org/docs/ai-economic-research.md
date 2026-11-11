@@ -393,3 +393,31 @@ The first requested outcome should be a methodological/scoping discussion and a
 named research contact. Do not describe a cloud account, programme application,
 introduction or ministry correspondence as a partnership. No external message has
 been sent as part of this assessment.
+
+## Automation scenarios in the physical graph
+
+Evidence reviewed 11 November 2026. [IFR's 24 September 2026 release](https://ifr.org/ifr-press-releases/news/five-million-robots-now-operate-in-factories-globally)
+reports five million industrial robots operating in 2025 and more than 600,000
+annual installations. Its [30 September service-robot release](https://ifr.org/ifr-press-releases/news/global-sales-of-professional-service-robots-surge-24-percent)
+reports almost 250,000 professional shipments, including about 117,000 in transport
+and logistics. These observations
+support explicitly investigating physical automation; they are not coefficients
+for the Qazna deployment scenarios.
+
+[ILO–NASK's 20 May 2025 task-based study](https://www.ilo.org/resource/news/one-four-jobs-risk-being-transformed-genai-new-ilo%E2%80%93nask-global-index-shows)
+finds potential GenAI exposure in one quarter of employment and describes task
+transformation as more likely than wholesale replacement. Exposure is not an
+observed unemployment rate or a physical factory productivity forecast. The
+[IEA's 2026 assessment](https://www.iea.org/reports/key-questions-on-energy-and-ai/executive-summary)
+shows the importance of changing task efficiency, rising uptake and more intensive
+AI applications. It supports explicit energy sensitivity, not a universal cost
+per robot or per AI inference.
+
+Implementation: the [physical automation annex](physical-circulation.md#automation-seasonal-output-and-dated-distribution--11-november-2026)
+compares slow/reference/rapid adoption, commissioning and qualification delays,
+shared human/robot capacity, energy and upkeep inputs, planned shutdowns and a
+common control outage. Scenario rates are declared synthetic choices. No source
+above is presented as validating them. Identical needs remain mandatory; freed
+human work is not grounds to remove provision, compel retraining or rank people.
+AI can improve future candidate schedules or engineering estimates, but cannot
+turn a forecast into equipment, a trained crew or a ledger authorization.

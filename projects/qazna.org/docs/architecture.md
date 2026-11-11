@@ -216,3 +216,19 @@ migration, autonomous crop allocation or monetary action was added.
 `nutrition::sequential_retention` propagates unknown stages and outward-rounded
 bounds; sourced preparation estimates retain raw-mass basis and uncertainty.
 See [seasonal formulas and limits](physical-circulation.md#seasonal-cereal-and-feed-balance--11-november-2026).
+
+## Shared seasonal capabilities and automation scenarios
+
+`Seasonal::compile_with_capabilities` composes mandatory seasonal provisioning
+with `Horizon`'s shared prior-period stock capacities. Its paired replay checks
+use independently; completion cannot supply current-period machine/crew capacity.
+No withdrawal API is added to this composition, preventing inconsistent stock
+balance semantics between compilers. Existing seasonal results are unchanged.
+
+`examples/support/automation_study.rs` connects the seasonal cereal/feed model
+to identity gross-equivalent preservation/distribution routes, installed cells,
+training capacity and resource consumption. Fixed schedules have exact matrix,
+chronological and FEFO checks; shortages remain visible. This is an offline
+research annex, not a general automation optimizer or a runtime plan. Existing
+APIs, migrations, permissions and operator-confirmed application are unchanged.
+See [formulas, assumptions and limits](physical-circulation.md#automation-seasonal-output-and-dated-distribution--11-november-2026).

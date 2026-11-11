@@ -103,3 +103,14 @@ processing energy and packaging material are explicit in the offline graph.
 The model distinguishes stock duration from nutrient adequacy and local access.
 See [preserved-food design](physical-circulation.md#preserved-food-reserves-the-target-architecture)
 for tested outcomes, source qualifications and uncalibrated costs.
+
+## Automation and continuity of provision
+
+The new seasonal automation annex treats automated cells as finite capabilities
+that require installation, qualified available crews, energy and upkeep material.
+A common software/control failure can disable those routes together, so manual
+fallback is tested with the same needs and existing capacities. Provision is not
+reduced when less human work is required. Potential released time is a result to
+be evaluated, not a claim that people are expendable or should lose entitlement.
+The analogy of reserve capacity includes both stocked resources and an operable
+route to people; neither money nor an AI forecast substitutes for that route.
