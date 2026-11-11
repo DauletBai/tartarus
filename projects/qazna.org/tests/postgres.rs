@@ -22,6 +22,9 @@ mod provisioning;
 #[path = "cases/resilience.rs"]
 mod resilience;
 
+#[path = "cases/scenarios.rs"]
+mod scenarios;
+
 struct Fixture {
     pool: PgPool,
     ledger: Ledger,

@@ -60,3 +60,16 @@ The current local operator token and a database owner can bypass application-lev
 The observer credential cannot read accounts or issue commands. The reviewer credential can only read saved calculations/reviews and append validated reviews. The API-mode adapter uses this reviewer credential, with no operator-token fallback. The [exercise runner](exercises.md) tries privilege escalation and fabricated model facts against the actual HTTP API. Its report escapes all displayed values and never executes model-generated markup.
 
 Independent monitoring detects deliberately injected ledger corruption in an isolated test. A separate drill deliberately accepts a trusted false physical declaration and labels it a known gap. Neither success at numerical checks nor model agreement supplies independent physical evidence. See the [organism audit](organism-audit.md) for the remaining controls.
+
+
+## Persistent scenario boundary
+
+Dated research scenarios follow the same operator-confirmed boundary. Their routes
+are unavailable to observer/reviewer model credentials. Proposed typed commands
+are replayed in Rust against the current PostgreSQL generation; the caller cannot
+upload authoritative checkpoint bytes. Application repeats replay under a scope
+lock and requires an unchanged generation and identical saved candidate. The
+result changes research state only, never real resources, allocation, needs norms
+or monetary postings. These controls reject stale state and unauthorized routes;
+they do not establish the truth of an operator's physical assumptions or a named
+human approval identity. Full coupled scenario persistence is still pending.

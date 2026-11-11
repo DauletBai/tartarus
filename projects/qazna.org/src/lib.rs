@@ -33,3 +33,6 @@ pub mod capital;
 pub mod dated;
 pub mod materials;
 pub mod rolling;
+
+mod scenario_service;
+pub mod scenarios;

@@ -215,3 +215,13 @@ checks 60 monthly crop/seed/land/water balances and reserve replenishment for th
 cereal/feed portion of the order snapshot. Exact matrices and independent replay
 retain failed scenarios; synthetic land/yield assumptions and missing dated-stock
 integration remain visible.
+
+
+### Reviewed dated scenario state
+
+The service now persists bounded dated research scenarios in PostgreSQL, retaining
+original lot identity, age, pending outputs and movements across approved versions.
+Only an operator can apply a previously saved proposal; conflicting or stale
+approvals fail. This does not update real inventory or money. See the
+[HTTP workflow and limits](docs/development.md#persistent-scenario-workflow) and
+[architecture](docs/architecture.md#persistent-reviewed-dated-scenarios--11-november-2026).
