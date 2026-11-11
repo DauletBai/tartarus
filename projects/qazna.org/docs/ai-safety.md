@@ -83,3 +83,17 @@ pressure; no AI call is required. These controls validate mathematical consisten
 declared assumptions. They neither verify physical measurements nor prove optimality,
 complete human needs, or the proposed national economic system. The physical/monetary
 scenario join remains pending.
+
+
+### Coupled scenario boundary (migration 0015)
+
+The physical-to-circulation calculation requires no AI service. Only the operator
+can create definitions, request derived candidates or apply/discard them. Observer
+and review-model credentials cannot call these routes. Unknown payment fields and
+oversized requests are rejected; event lists come from checked physical quantities
+and immutable norms. Calculation admission uses the shared four-slot bound.
+Approvals repeat exact calculation against locked current physical/dated heads;
+append-only history and transaction guards prevent a candidate from approving
+itself. Failed monetary events remain evidence, with no new issuance or live
+postings. Tested controls do not establish empirical resource truth, fair policy,
+production authorization or resistance to a privileged database owner.

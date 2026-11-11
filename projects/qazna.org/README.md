@@ -28,9 +28,10 @@ The project lives in `projects/qazna.org/` in [Tartarus](https://github.com/Daul
 The service now preserves reviewed physical model versions: seasonal production,
 capital replacement, stocks, pending work and exact constituent balances. Replanning
 retains committed history and original equipment ages; selected dated stocks can be
-pinned and checked. A proposal needs separate operator approval. The next stage joins
-these research versions to a fully reconciled monetary scenario; no model approval
-itself changes money or verified inventory. See [architecture](docs/architecture.md#reviewed-physical-model-versions).
+pinned and checked. A separately reviewed circulation scenario now derives exact
+payments from an approved physical generation and immutable accounting norms.
+Missing funds and interrupted payments remain visible; approvals do not change
+real money or verified inventory. See [architecture](docs/architecture.md#reviewed-physical-and-monetary-coupling).
 
 ## Project information
 

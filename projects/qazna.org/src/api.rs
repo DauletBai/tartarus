@@ -1,3 +1,4 @@
+use crate::coupled::{CoupledDefinition, CoupledProposal};
 use crate::model_scenarios::{MAX_MODEL_REQUEST_BYTES, ModelDefinition, ModelProposal};
 use crate::scenarios::{ScenarioDecision, ScenarioDefinition, ScenarioProposal};
 use crate::{
@@ -106,6 +107,21 @@ impl AccessTokens {
 
 pub fn router_with_access(ledger: Ledger, tokens: AccessTokens) -> Router {
     let private = Router::new()
+        .route("/v1/scenarios/coupled", post(create_coupled_scenario))
+        .route("/v1/scenarios/coupled/{id}", get(coupled_scenario))
+        .route(
+            "/v1/scenarios/coupled/{id}/versions/{generation}",
+            get(coupled_scenario_version),
+        )
+        .route(
+            "/v1/scenarios/coupled/{id}/drafts",
+            post(propose_coupled_scenario),
+        )
+        .route("/v1/coupled-drafts/{id}", get(coupled_scenario_draft))
+        .route(
+            "/v1/coupled-drafts/{id}/resolve",
+            post(resolve_coupled_scenario),
+        )
         .route("/v1/scenarios/models", post(create_model_scenario))
         .route("/v1/scenarios/models/{id}", get(model_scenario))
         .route(
@@ -895,6 +911,60 @@ async fn resolve_model_scenario(
     Ok(Json(
         ledger
             .resolve_model_scenario(command_key(&headers)?, id, request)
+            .await?,
+    ))
+}
+
+async fn create_coupled_scenario(
+    State(ledger): State<Ledger>,
+    headers: HeaderMap,
+    Json(request): Json<CoupledDefinition>,
+) -> Result<impl IntoResponse, LedgerError> {
+    Ok(Json(
+        ledger
+            .create_coupled_scenario(command_key(&headers)?, request)
+            .await?,
+    ))
+}
+async fn coupled_scenario(
+    State(ledger): State<Ledger>,
+    Path(id): Path<Uuid>,
+) -> Result<impl IntoResponse, LedgerError> {
+    Ok(Json(ledger.coupled_scenario(id, None).await?))
+}
+async fn coupled_scenario_version(
+    State(ledger): State<Ledger>,
+    Path((id, generation)): Path<(Uuid, i64)>,
+) -> Result<impl IntoResponse, LedgerError> {
+    Ok(Json(ledger.coupled_scenario(id, Some(generation)).await?))
+}
+async fn propose_coupled_scenario(
+    State(ledger): State<Ledger>,
+    Path(id): Path<Uuid>,
+    headers: HeaderMap,
+    Json(request): Json<CoupledProposal>,
+) -> Result<impl IntoResponse, LedgerError> {
+    Ok(Json(
+        ledger
+            .propose_coupled_scenario(command_key(&headers)?, id, request)
+            .await?,
+    ))
+}
+async fn coupled_scenario_draft(
+    State(ledger): State<Ledger>,
+    Path(id): Path<Uuid>,
+) -> Result<impl IntoResponse, LedgerError> {
+    Ok(Json(ledger.coupled_scenario_draft(id).await?))
+}
+async fn resolve_coupled_scenario(
+    State(ledger): State<Ledger>,
+    Path(id): Path<Uuid>,
+    headers: HeaderMap,
+    Json(request): Json<ScenarioDecision>,
+) -> Result<impl IntoResponse, LedgerError> {
+    Ok(Json(
+        ledger
+            .resolve_coupled_scenario(command_key(&headers)?, id, request)
             .await?,
     ))
 }

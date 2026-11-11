@@ -1,6 +1,6 @@
 # Local Git workflow
 
-The active workspace is connected to `https://github.com/DauletBai/tartarus.git` on `codex/qazna-seasonal-food`. Publish this branch with the explicit command below. Qazna lives at `projects/qazna.org/`; Git commands also work from that directory. This replaces the earlier API-only publication workflow with a local Git index, commits and IDE status/diffs.
+The active workspace is connected to `https://github.com/DauletBai/tartarus.git` through local development branches. Check `git branch --show-current` before publishing; the command below publishes that branch under its own name. Qazna lives at `projects/qazna.org/`; Git commands also work from that directory. This replaces the earlier API-only publication workflow with a local Git index, commits and IDE status/diffs.
 
 ## Scope of this workspace
 
@@ -30,7 +30,7 @@ cd ../..
 git add -- projects/qazna.org .github/workflows/qazna.yml MANIFEST.csv
 git diff --cached --stat
 git commit -m "Describe the verified change"
-git push -u origin HEAD:codex/qazna-seasonal-food
+git push -u origin HEAD
 ```
 
 `update_manifest.py` updates only Qazna/CI entries and preserves unrelated manifest entries. Review the staged paths before committing. Changes to historical migrations are not allowed. Do not merge or force-push without authorization. Keep published commits and the local branch synchronized; verify the remote head and CI result before claiming publication is complete.

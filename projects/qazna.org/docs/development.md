@@ -652,7 +652,7 @@ reported physical-evidence gap in the actor exercises remains visible.
 ## Physical model version workflow (migration 0014)
 
 Apply migrations and runtime grants before starting the new binary; readiness probes
-`model_scenario_outcomes`. The operator-only routes mirror dated scenarios:
+`coupled_scenario_outcomes` after migration 0015. The operator-only physical routes mirror dated scenarios:
 
 | Method | Route | Purpose |
 | --- | --- | --- |
@@ -698,3 +698,58 @@ passed. Circulation completed 4,548 requests in 56.370 s with one restart; close
 circulation completed 3,901 requests in 46.493 s with two restarts. Actor exercises
 7 and 19 completed and still expose the known physical-evidence gap. These are
 synthetic local runs, not national throughput, deployment or economic-validity claims.
+
+
+## Coupled scenario workflow (migration 0015)
+
+Apply the new migration and reapply `fixtures/runtime_permissions.sql` before
+starting the binary. Operator-only routes are:
+
+| Method | Route | Purpose |
+| --- | --- | --- |
+| POST | `/v1/scenarios/coupled` | Immutable policy, basis and physical scenario ID |
+| GET | `/v1/scenarios/coupled/{id}` | Approved head; generation zero has no calculation |
+| GET | `/v1/scenarios/coupled/{id}/versions/{generation}` | Historical exact version |
+| POST | `/v1/scenarios/coupled/{id}/drafts` | Expected coupled/model generations, unavailable indices and basis |
+| GET | `/v1/coupled-drafts/{id}` | Derived evidence and review state |
+| POST | `/v1/coupled-drafts/{id}/resolve` | Separate `{apply, basis}` operator decision |
+
+Every POST requires an `Idempotency-Key`. Use the synthetic physical fixture and
+[`circulation-policy.json`](../fixtures/circulation-policy.json); the executable
+HTTP example is `scripts/scenario_exercise.py`. `model_generation` must reference
+the current approved model with current dated anchors. Staleness requires a new
+proposal and review, not changing a saved candidate. Policy amounts are canonical
+integer strings; clients must not round monetary evidence through JavaScript Number.
+A successful approval can deliberately retain an underfunded/interrupted research
+scenario; inspect `all_scheduled_payments_settled`, `failed`, `opening_deficits` and
+`resident_zero_each_period` rather than equating HTTP success with economic success.
+
+Library tests independently mutate goods links/events, test all 84 single-event
+outages, exact minimum opening necessity/sufficiency, internal use, canonical values,
+frozen failures and balances exceeding u64. PostgreSQL tests cover concurrent
+approvals, stale physical/dated versions, deferred-commit rollback, idempotency,
+unchanged live balances, immutable/FK/XID gates, role denial and request injection.
+The real HTTP restart/restore exercise preserves both approved and pending coupled
+versions, applies a retained interruption after restore, then advances against new
+physical and dated generations without rewriting earlier evidence.
+
+
+Coupled-stage local verification, 11 November 2026: **280 Rust tests** passed
+(17 library, 57 mathematics, 18 nutrition, 14 seasonal, 6 capital, 10 rolling/material,
+9 dated, 4 no-AI, 29 coupled-example and **116 PostgreSQL**), plus **11 Python**
+advisory tests. Formatting, all-target Clippy and the unchanged license inventory
+passed. All three published mathematical reports reproduced byte-for-byte. The
+independent event reconciler was additionally tightened to reject jointly corrupted
+flow/payment recipients and amounts, with the full library and Clippy checks repeated;
+subsequent PostgreSQL/HTTP execution used that updated code.
+
+Real-binary restart and logical backup/restore passed for **45 populated tables**
+with **15 runtime privilege denials**. Accepted and pending coupled scenarios survived,
+a retained monetary failure could be reviewed after restore, and circulation then
+advanced against new physical/dated generations while preserving historical evidence.
+Existing HTTP restart and both strict-evidence checks passed. Circulation completed
+4,548 requests in 56.856 seconds (one restart); closed circulation completed 3,901
+requests in 47.384 seconds (two restarts). Actor seeds 7 and 19 completed; the known
+physical-evidence gap remains. These are synthetic local checks; remote CI is reported
+separately in the pull request, and no production performance or economic validity
+is inferred from these counts.

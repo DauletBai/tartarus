@@ -10,7 +10,7 @@ use tokio::sync::Semaphore;
 use uuid::Uuid;
 
 // Fixed process-wide CPU admission: no unbounded queue of matrix jobs.
-static CALCULATIONS: Semaphore = Semaphore::const_new(4);
+pub(crate) static CALCULATIONS: Semaphore = Semaphore::const_new(4);
 async fn checked(
     before: ModelVersion,
     request: ModelProposal,
@@ -154,7 +154,7 @@ impl Ledger {
         finish(tx, key, &payload, result).await
     }
 }
-async fn lock(tx: &mut Tx<'_>, id: Uuid) -> Result<(), LedgerError> {
+pub(crate) async fn lock(tx: &mut Tx<'_>, id: Uuid) -> Result<(), LedgerError> {
     sqlx::query("SELECT id FROM model_scenarios WHERE id=$1 FOR UPDATE")
         .bind(id)
         .fetch_optional(&mut **tx)
@@ -162,7 +162,7 @@ async fn lock(tx: &mut Tx<'_>, id: Uuid) -> Result<(), LedgerError> {
         .ok_or(LedgerError::ScenarioNotFound)?;
     Ok(())
 }
-async fn anchors(
+pub(crate) async fn anchors(
     tx: &mut Tx<'_>,
     definition: &ModelDefinition,
 ) -> Result<Vec<ScenarioSnapshot>, LedgerError> {
@@ -197,7 +197,7 @@ fn version(
     checkpoint(&v)?;
     Ok(v)
 }
-async fn snapshot(
+pub(crate) async fn snapshot(
     tx: &mut Tx<'_>,
     id: Uuid,
     generation: Option<i64>,
