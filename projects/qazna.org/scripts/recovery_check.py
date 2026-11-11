@@ -52,6 +52,7 @@ def check_recovery(pg, root, socket_dir, source='evidence_demo'):
     assert sql(restored, "SELECT count(*) FROM evidence_enforcement").strip() == '1'
     assert sql(restored, "SELECT count(*) FROM dated_scenario_outcomes").strip() == '2'
     assert sql(restored, "SELECT count(*) FROM model_scenario_outcomes").strip() == '1'
+    assert sql(restored, "SELECT count(*) FROM coupled_scenario_outcomes").strip() == '1'
     # Verify restored triggers still reject history mutation.
     sql(restored, 'DELETE FROM evidence_statements', expected=False)
     sql(restored, 'DELETE FROM evidence_enforcement', expected=False)
@@ -71,6 +72,9 @@ def check_recovery(pg, root, socket_dir, source='evidence_demo'):
         'UPDATE model_scenarios SET definition=definition',
         'DELETE FROM model_scenario_drafts',
         'TRUNCATE model_scenario_outcomes',
+        'UPDATE coupled_scenarios SET definition=definition',
+        'DELETE FROM coupled_scenario_drafts',
+        'TRUNCATE coupled_scenario_outcomes',
         "INSERT INTO evidence_principal_revocations(principal_id,basis) SELECT id,'bypass' FROM evidence_principals LIMIT 1",
     ]:
         sql(restored, 'SET ROLE qazna_runtime; ' + forbidden, expected=False)
@@ -82,7 +86,7 @@ def check_recovery(pg, root, socket_dir, source='evidence_demo'):
     run_evidence_exercise(runtime_url, root / 'runtime-evidence', activate=False)
     resume_restored(runtime_url, reference)
     report = dict(result='passed', tables_verified=len(before), table_sha256=before,
-                  elapsed_seconds=round(time.monotonic()-started,3), runtime_denials=12, scenario_restart_restore=True, model_restart_restore=True,
+                  elapsed_seconds=round(time.monotonic()-started,3), runtime_denials=15, scenario_restart_restore=True, model_restart_restore=True, coupled_restart_restore=True,
                   limitation='Synthetic logical backup; no PITR or production RPO/RTO guarantee')
     (root / 'recovery-report.json').write_text(json.dumps(report,indent=2)+'\n')
     print(f"Backup/restore and runtime privilege checks passed: {len(before)} tables", flush=True)

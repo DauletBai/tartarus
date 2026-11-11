@@ -39,3 +39,6 @@ pub mod scenarios;
 
 mod model_scenario_service;
 pub mod model_scenarios;
+
+pub mod coupled;
+mod coupled_service;

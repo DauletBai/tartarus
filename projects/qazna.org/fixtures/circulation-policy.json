@@ -1,0 +1,12 @@
+{
+  "accounts": ["common treasury", "aggregate residents", "material unit", "equipment unit", "food unit"],
+  "resource_suppliers": [2, 3, 4],
+  "process_operators": [3, 4],
+  "process_order": [0, 1],
+  "capital_resources": [1],
+  "unit_measure": ["2", "5", "3"],
+  "common_measure": ["2", "3", "1"],
+  "opening": ["100", "0", "0", "30", "30"],
+  "measure_unit": "synthetic minor accounting unit",
+  "basis": "Synthetic common productive units; fixed normative measure and common share, no tax, interest or later issuance; not calibrated policy"
+}

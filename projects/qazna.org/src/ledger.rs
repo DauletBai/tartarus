@@ -113,7 +113,7 @@ impl Ledger {
     }
 
     pub async fn ready(&self) -> Result<(), LedgerError> {
-        sqlx::query("SELECT draft_id FROM model_scenario_outcomes LIMIT 0")
+        sqlx::query("SELECT draft_id FROM coupled_scenario_outcomes LIMIT 0")
             .execute(&self.pool)
             .await?;
         Ok(())

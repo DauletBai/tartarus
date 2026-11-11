@@ -2,10 +2,16 @@
 
 ## Unreleased
 
+- Add migration 0015 for immutable circulation policies, physical-generation references, derived payment drafts and separately reviewed outcomes.
+- Reconcile every valued input, final provision and completed capital quantity; retain internal uses without fictitious transfers. Derive common circulation only after the associated goods payment settles.
+- Check exact opening-measure bounds, per-period conservation and independent money replay; expose accounting failures without issuing measure or altering physical needs.
+- Reject stale physical/dated heads, rewritten committed payment prefixes, injected schedules and non-operator decisions; preserve idempotency and atomic rollback.
+- Extend logical backup/restore and process restart coverage to pending coupled scenarios and continued approval against updated physical anchors.
+
 - Add migration 0014 and operator-reviewed full physical model/plan versions, with exact canonical checkpoints and preserved rolling commitments/cohort ages.
 - Check matrix feasibility, independent physical replay and constituent conservation; pin optional dated versions and reject stale or inconsistent boundary stocks.
 - Bound model request size and CPU admission; keep ordinary route limits and AI permissions unchanged.
-- Extend restart/backup restoration to pending physical plans and continuation with original asset lifetimes; retain monetary association as the next stage.
+- Extend restart/backup restoration to pending physical plans and continuation with original asset lifetimes; provide the physical foundation for separately reviewed monetary association.
 
 
 - Add migration 0013 for immutable dated scenario definitions, candidate commands/checkpoints and reviewed outcomes.

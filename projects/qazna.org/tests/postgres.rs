@@ -455,3 +455,6 @@ async fn scoped_machine_credentials_and_consistent_telemetry() {
 
 #[path = "cases/model_scenarios.rs"]
 mod model_scenarios;
+
+#[path = "cases/coupled.rs"]
+mod coupled;

@@ -370,7 +370,7 @@ a pending proposal stale, even if total stock is unchanged. Historic accepted sn
 stay readable after dated state advances. This verifies **selected boundary-stock
 agreement and pinned history**, not a causal match of every lot movement to a production
 process. Unmapped stocks, material identity across transformations, physical attestation
-and the join to monetary circulation are not supplied by this gate.
+are not supplied by this gate. The separate coupling layer below adds monetary association.
 
 The model proposal route alone allows **1 MiB** request bodies; other routes retain
 16 KiB. Generated checkpoints are capped at **2 MiB**. Preflight bounds are 32 resources,
@@ -387,3 +387,72 @@ separate-transaction and sequential-generation rules as dated scenarios apply. T
 trusted boundary is the service and PostgreSQL deployment; a privileged database owner
 can still rewrite data or code. No model route creates inventory, real deliveries,
 ledger postings, participant entitlements or monetary issuance.
+
+
+## Reviewed physical and monetary coupling
+
+Migration 0015 adds immutable `coupled_scenarios`, `coupled_scenario_drafts` and
+`coupled_scenario_outcomes`. A definition pins a physical scenario and one explicit
+circulation policy: account roles, resource suppliers, process operators/order,
+capital resources, unit norms, common-entitlement norms and opening measure.
+These are versioned experimental assumptions about common productive ownership,
+not taxes, interest, trading money or a universal economic law. Changing them
+requires a distinct scenario. Source attribution is recorded in the policy basis.
+
+The operator names an approved physical generation and optional unavailable event
+indices; the server derives the schedule. It does not accept a client-supplied
+payment list. Each period orders completed-capital payments, resident provision
+and process inputs in the declared process order. Capital is paid at completion;
+inputs at release; provision at the planned delivery. Each external valued flow
+has exactly one goods payment. A same-unit input remains in the physical/valuation
+register but creates no fictitious transfer or common receipt. Zero-norm resources
+remain in physical verification and create no monetary event. Resource quantities
+are multiplied by fixed integer norms; these are not market prices.
+
+For quantity `q`, unit norm `v` and common-entitlement norm `c`, the goods
+movement is `G = q*v` and the dependent common movement is `C = q*c`, with
+`0 <= c <= v`. Each settled event updates exactly two balances by `-amount`
+and `+amount`; hence `sum(balance[t]) = sum(opening)` at every event boundary.
+For fixed full-settlement cumulative net movements `N[a,k]`, the opening bound is
+`E[a] = max(0, max_k(-N[a,k]))`. It does not guarantee survival of arbitrary
+interrupted schedules or steady-state reproduction; those require their own replay.
+
+
+`Horizon::verify_cash_links` checks physical completeness and exact quantities.
+A separate event reconciler checks amounts, endpoints, uniqueness, missing events
+and the dependency of common circulation on the goods payment. Common measure
+cannot circulate from a failed receipt. The chronological account replay is checked
+against the independent schedule replay. Balances/totals use exact integers and
+canonical strings; no floating point or implicit issuance is used.
+
+For the fixed fully settling event order, the existing worst-prefix calculation
+returns a componentwise minimum opening vector. The supplied opening measure is
+not silently increased to that vector. Differences, unavailable events and
+insufficient funds are reported; failed transfers move nothing. Per-period balances,
+aggregate conservation, resident end-of-period measure and failed event causes are
+retained. A funded schedule can meet this synthetic circulation condition; an
+underfunded schedule remains a valid **failed research result**. Invalid physical
+plans cannot become approved physical versions. Neither result is actual delivery,
+a cancellation of needs, nor proof of sufficient national provision.
+
+Proposal and approval lock the coupled root, physical root and sorted dated roots.
+They require the current approved physical head and its still-current dated anchors;
+a dated change alone makes pending coupling stale. Physical feasibility, independent
+replay and constituent checks run again. A later physical boundary freezes the old
+physical and monetary prefix through that boundary, including old unavailable events.
+Approved history remains readable. Foreign keys bind drafts to approved physical
+generations and their own definition; immutable triggers and separate-transaction
+review preserve the same approval boundary as the physical layer.
+
+Requests retain the 16 KiB route limit. Policies allow at most 64 accounts; schedules
+at most 20,000 events and 256 unavailable indices; canonical evidence at most 8 MiB.
+Calculations share the four bounded blocking slots with physical proposals. Runtime
+permissions must be reapplied after migration. No coupled endpoint posts to the real
+ledger, issues measure, changes a needs entitlement or certifies physical custody.
+
+The maintained synthetic fixture covers 14 periods, three resource dimensions and
+two processes: material, food and finite-life equipment replacement. It produces
+35 valued physical links and 84 events, with opening measure 160 and settled volume
+198. The latter is repeated circulation, not new money or economic output. This
+bounded integration does not yet join every upstream energy/transport/food-recovery
+annex or establish a causal lot-to-process mapping. Those remain package 2 work.

@@ -73,12 +73,15 @@ def populate_and_restart(url):
         assert call(path + '/versions/0') == initial
         assert call(f'/v1/scenario-drafts/{pending}') == next_draft
         model_reference = populate_model(call)
+        coupled_reference = populate_coupled(call, model_reference)
     with server(url) as call:
         assert call(model_reference['path']) == model_reference['saved']
         assert call(model_reference['draft_path']) == model_reference['pending']
+        assert call(coupled_reference['path']) == coupled_reference['saved']
+        assert call(coupled_reference['draft_path']) == coupled_reference['pending']
     print('Physical model: full accepted and pending state survives process restart', flush=True)
     print('Dated scenario: 2 process restarts, pending and approved bytes preserved', flush=True)
-    return dict(path=path, saved=saved, pending=next_draft, model=model_reference)
+    return dict(path=path, saved=saved, pending=next_draft, model=model_reference, coupled=coupled_reference)
 
 
 def resume_restored(url, reference):
@@ -98,7 +101,9 @@ def resume_restored(url, reference):
         assert state['origins']['1']['expires'] == 5
         assert not state['origins']['2']['released']
         assert not state['transit']
+        resume_coupled_pending(call, reference['coupled'])
         resume_model(call, reference['model'])
+        resume_coupled_current(call, reference['coupled'])
     print('Dated scenario: restored history continued under least-privilege runtime role', flush=True)
 
 
@@ -160,3 +165,51 @@ def resume_model(call, reference):
     call(f"/v1/model-drafts/{next_draft['request']['id']}/resolve", dict(apply=True, basis='Operator reviewed continuation'))
     assert call(reference['path'] + '/versions/1') == reference['saved']
     print('Physical model: restored version advances with original cohorts, WIP and dated anchors', flush=True)
+
+
+def populate_coupled(call, model):
+    identifier = uid()
+    path = f'/v1/scenarios/coupled/{identifier}'
+    policy = json.loads((ROOT / 'fixtures/circulation-policy.json').read_text())
+    call('/v1/scenarios/coupled', dict(id=identifier, format_version=1,
+        model_id=model['saved']['definition']['id'], policy=policy,
+        basis='Synthetic fixed-norm circulation linked to approved production'))
+    first = call(path + '/drafts', dict(id=uid(), expected_generation=0,
+        model_generation=1, unavailable_events=[], basis='Reviewed complete schedule'))
+    call(f"/v1/coupled-drafts/{first['request']['id']}/resolve",
+         dict(apply=True, basis='Operator reviewed synthetic circulation'))
+    saved = call(path)
+    evidence = json.loads(saved['checkpoint'])['evidence']
+    assert len(evidence['links']) == 35 and len(evidence['events']) == 84
+    assert evidence['money']['settled_volume'] == '198'
+    assert evidence['all_scheduled_payments_settled']
+    pending = call(path + '/drafts', dict(id=uid(), expected_generation=1,
+        model_generation=1, unavailable_events=[83], basis='Declared future interruption'))
+    return dict(path=path, saved=saved, pending=pending,
+                draft_path=f"/v1/coupled-drafts/{pending['request']['id']}")
+
+
+def resume_coupled_pending(call, reference):
+    assert call(reference['path']) == reference['saved']
+    assert call(reference['draft_path']) == reference['pending']
+    approved = call(reference['draft_path'] + '/resolve',
+        dict(apply=True, basis='Separate review after logical restore'))
+    assert approved['candidate'] == reference['pending']['candidate']
+    evidence = json.loads(approved['candidate']['checkpoint'])['evidence']
+    assert not evidence['all_scheduled_payments_settled']
+    assert evidence['money']['opening_total'] == '160'
+    assert sum(map(int, evidence['money']['closing'])) == 160
+    assert evidence['physical']['generation'] == 1
+
+
+def resume_coupled_current(call, reference):
+    draft = call(reference['path'] + '/drafts', dict(id=uid(), expected_generation=2,
+        model_generation=3, unavailable_events=[83], basis='Advance with reviewed physical and dated history'))
+    approved = call(f"/v1/coupled-drafts/{draft['request']['id']}/resolve",
+        dict(apply=True, basis='Reviewed coupled continuation'))
+    assert approved['candidate']['generation'] == 3
+    evidence = json.loads(approved['candidate']['checkpoint'])['evidence']
+    assert evidence['physical']['generation'] == 3
+    assert sum(map(int, evidence['money']['closing'])) == 160
+    assert call(reference['path'] + '/versions/1') == reference['saved']
+    print('Coupled circulation: restart/restore, pending failure and updated physical anchors preserved', flush=True)

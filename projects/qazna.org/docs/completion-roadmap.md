@@ -1,18 +1,20 @@
 # Completion roadmap and feasibility boundaries
 
-Latest review: 11 November 2026, persistent reviewed physical-model implementation.
+Latest review: 11 November 2026, reviewed physical-to-monetary coupling implementation.
 The current work order below supersedes earlier milestone-specific next steps.
 
 ## Completion scope and remaining work — 11 November 2026
 
 This estimate is based on the current source, HTTP routes, migration set and test
 runner, not on a percentage inferred from test count. The latest stage adds
-persistent reviewed **capital/seasonal models and complete plans**, committed-prefix
-protection, original asset ages, constituent checks, optional dated-stock anchors and
-restart/restore continuation. The physical persistence portion of package 1 is now
-implemented. Circulation inputs and the physical/monetary association are deliberately
-part of package 2; approved research versions still do not change actual inventories
-or money. Five implementation packages remain after the persistence foundation.
+persistent circulation policies and reviewed payment
+schedules derived from an approved physical generation. Exact flow/event reconciliation,
+opening-measure bounds, dependency-aware failures and stale physical/dated protection
+implement the runtime binding portion of package 2. The three-resource recovery
+fixture is intentionally bounded; the selected extended upstream/food/material-recovery
+scenario and causal lot/process association remain unfinished. Approved research
+versions still do not change actual inventories or money. Five packages remain,
+including the partly implemented second package.
 
 The target for this estimate is **research demonstrator v1**: a reproducible,
 bounded five-year scenario with linked provisioning, physical capabilities and
@@ -25,7 +27,7 @@ national sectors or a production monetary system.
 | Remaining package | Acceptance gate | Estimated focused engineering days |
 | --- | --- | ---: |
 | 1. Persistent physical scenario foundation — implemented | Dated and capital/seasonal inputs, reviewed versions, pinned selected stocks and restart/restore; monetary association continues in package 2 | — |
-| 2. Join extended physical and monetary plans | Persist circulation inputs and bind them to a reviewed physical generation. One selected end-to-end scenario links upstream production, dated food, capital/replacement and material recovery to exact circulation; no hidden issuance, duplicated input or unaccounted work; independent reconciliation and shortage explanation | 5–8 |
+| 2. Join extended physical and monetary plans | Runtime binding implemented. Remaining: one selected end-to-end scenario links upstream production, dated food, capital/replacement and material recovery to exact circulation; no hidden issuance, duplicated input or unaccounted work; independent reconciliation and shortage explanation | 5–8 |
 | 3. Define a bounded input and population registry | Units, sources, dates, assumptions and uncertainty; age/cohort transitions and selected need profiles; missing food-retention/engineering values remain unknown; reproducible synthetic and calibrated modes clearly separated | 6–10 |
 | 4. Close the rolling feedback experiment | Decisions use observed state, retain commitments, replan after declared outages/demand changes, report shortages without inventing goods, and pass sensitivity/adversarial cases; optional solver outputs independently verified | 4–7 |
 | 5. Expose the demonstrator's workflows | Small operator/reviewer interface, synthetic participant scope, intelligible reasons, correction/dispute examples, approval and audit history, accessible navigation; no claim of production identity/enrollment | 7–12 |
@@ -57,10 +59,11 @@ Evidence used in this estimate: `src/api.rs` and current 16 KiB body limit;
 `src/draft_service.rs` and existing atomic operator application;
 `src/rolling.rs` (offline fixed-prefix models); `src/dated.rs` and
 `src/scenario_service.rs` (persistent dated-state command replay);
-`migrations/0013_dated_scenarios.sql` (dated scenarios, not full coupled models);
+`migrations/0013_dated_scenarios.sql`, `0014_model_scenarios.sql` and
+`0015_coupled_scenarios.sql`; `src/coupled.rs` and `src/coupled_service.rs`;
 `docs/development.md` (actual tests); and the absence of a participant product UI.
 Existing backup, privilege and draft tests cover the new dated-state boundary;
-full-model integration and empirical-evidence gates remain open.
+extended coupled integration and empirical-evidence gates remain open.
 
 ## Earlier implementation order and bounded results
 
@@ -81,8 +84,9 @@ commitments and constituent conservation have since been implemented as bounded
 offline annexes (merged PRs #5–#8). The current dated-state stage preserves original
 food origins, expiry, pending harvest and movements across checkpoint restoration.
 Current validation is recorded in [development](development.md); published CI
-results are distinct from local checks. The runtime API still exposes bounded
-production/draft operations, not these full offline scenario models.
+results are distinct from local checks. The runtime API now exposes reviewed
+dated, capital/seasonal and derived circulation
+versions; the extended offline annexes still require a selected integrated fixture.
 These results cover the declared synthetic model, not national deployment.
 
 The author's current priority is independent calculation and testing before
@@ -95,7 +99,7 @@ for the following sequence. The table distinguishes completed bounded experiment
 | 2 — bounded experiment implemented | Joint planning of reserves, routes, replacement and training | Eight feedback policies × six paths now compared with equal initial assets and exact terminal/cash checks; general design optimization remains open | Zero transport-only food deficit with additional produced equipment; minimax shortage reaches a verified energy-outage lower bound; see joint-planning evidence |
 | 3 — integrated lifecycle experiment implemented | Energy continuity, expiry, transport loss, maintenance and changing demand | Constructed reserves and integrated dated-food/transit/service traces with monetary replay are tested; preserved-food source profiles, nutrient/last-mile calibration, specialist capacity calibration and runtime integration remain open | Explicit dated lots/loss events; no expired or destroyed output delivered; partial failures, recalls, disrupted routes and revised needs with no rewriting of past provision |
 | 4 — nutrition/order submodel implemented | Cohorts, additional services and evidence-backed coefficients | Two synthetic adult profiles and explicit preparation/delivery choice now work offline; seasonal cereal/feed and a bounded automation/distribution graph now work; retained nutrients, national demography, regional calibration, health and education remain incomplete | Versioned input registry with units, region, year, source and uncertainty; age/cohort transitions, voluntary qualification pathways and service capacity; distinguish synthetic and calibrated runs |
-| 5 | Reviewed integration into the live Rust service | Offline matrices do not currently create persistent runtime plans | Versioned scenario snapshots and drafts; stale-state rejection, atomic application, restart/retry and independent replay; no solver or AI authority to post or issue measure |
+| 5 | Reviewed integration into the live Rust service | Reviewed runtime versions now exist; extended annex integration remains | Versioned scenario snapshots and drafts; stale-state rejection, atomic application, restart/retry and independent replay; no solver or AI authority to post or issue measure |
 | 6 | Participant-facing demonstrator and operational completion | Machine credentials are not resident identity; disputes, corrections and UI are incomplete | Scoped resident/organization access, evidence custody and dispute resolution, compensating events, accessible role-specific UI, overload and disaster-recovery tests; independent review before any consequential pilot |
 
 ### Implemented bounded calculation: common opening measure
@@ -524,6 +528,8 @@ withdrawals, damage and expiry counters remain distinct. Origin tombstones preve
 ID reuse; revisions and a separately trusted reference reject stale/altered data.
 
 The trusted reference is an offline caller precondition, not a newly implemented
-security service. Next is package 1 above: persistent versioned scenario state and
-reviewed application. Unit-level purity, food safety, original observation truth,
+security service. Package 1 has since implemented persistent versioned scenario
+state and
+reviewed application; package 2 remains partially complete. Unit-level purity, food
+safety, original observation truth,
 recipe migration, quarantine/recall and institutional approval remain open.
