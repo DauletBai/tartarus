@@ -124,3 +124,9 @@ a plan. Finite natural deposits are depleted explicitly; circulation of measure
 does not replenish them. Human needs stay unchanged through all tested failures.
 Care includes preserving delivery routes and renewing the capacities that sustain
 them, alongside the moderate physical buffers already modelled.
+
+Continuity also requires memory: a recalculation must retain resources already
+consumed in unfinished work and the true ages of shared equipment. The rolling
+annex fixes this history instead of restarting from fresh endowments. Material
+recovery can reduce new extraction but consumes capacity and energy and leaves
+explicit waste; it is not a source of unaccounted physical growth.

@@ -776501,6 +776501,3401 @@
     "scope_note": "prepared family excludes preconstruction failure and supply interruptions beyond 30 periods; all remain reported",
     "smallest_tested_adequate_nominal_days": 30
   },
+  "rolling_and_materials": {
+    "asset_age_reset_rejected": true,
+    "checkpoints": [
+      {
+        "columns": 7380,
+        "exact_matrix": true,
+        "independent_replay": true,
+        "rows": 10968,
+        "snapshot": {
+          "boundary": 1,
+          "opening_cohorts": [
+            {
+              "expires": 18,
+              "quantity": 20,
+              "resource": 22
+            },
+            {
+              "expires": 24,
+              "quantity": 20,
+              "resource": 23
+            },
+            {
+              "expires": 30,
+              "quantity": 20,
+              "resource": 24
+            },
+            {
+              "expires": 24,
+              "quantity": 20,
+              "resource": 25
+            },
+            {
+              "expires": 20,
+              "quantity": 20,
+              "resource": 26
+            }
+          ],
+          "opening_stock": [
+            4829984267,
+            3315353533,
+            28370377460,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            90000000000,
+            3975000000,
+            992799475,
+            25000000,
+            52799475,
+            80000000,
+            20,
+            20,
+            20,
+            20,
+            20
+          ],
+          "pending": [
+            {
+              "activities": 469078948,
+              "completes": 1,
+              "process": 15,
+              "started": 0
+            },
+            {
+              "activities": 423684211,
+              "completes": 1,
+              "process": 17,
+              "started": 0
+            },
+            {
+              "activities": 326315790,
+              "completes": 1,
+              "process": 19,
+              "started": 0
+            },
+            {
+              "activities": 294736843,
+              "completes": 1,
+              "process": 21,
+              "started": 0
+            },
+            {
+              "activities": 2824655045,
+              "completes": 1,
+              "process": 23,
+              "started": 0
+            },
+            {
+              "activities": 2551301331,
+              "completes": 1,
+              "process": 25,
+              "started": 0
+            },
+            {
+              "activities": 600,
+              "completes": 3,
+              "process": 27,
+              "started": 0
+            },
+            {
+              "activities": 600,
+              "completes": 6,
+              "process": 28,
+              "started": 0
+            },
+            {
+              "activities": 25000000,
+              "completes": 1,
+              "process": 29,
+              "started": 0
+            },
+            {
+              "activities": 7200525,
+              "completes": 1,
+              "process": 30,
+              "started": 0
+            },
+            {
+              "activities": 7200525,
+              "completes": 1,
+              "process": 31,
+              "started": 0
+            },
+            {
+              "activities": 25000000,
+              "completes": 1,
+              "process": 32,
+              "started": 0
+            },
+            {
+              "activities": 8000000,
+              "completes": 1,
+              "process": 33,
+              "started": 0
+            },
+            {
+              "activities": 12000000,
+              "completes": 1,
+              "process": 34,
+              "started": 0
+            }
+          ]
+        }
+      },
+      {
+        "columns": 7380,
+        "exact_matrix": true,
+        "independent_replay": true,
+        "rows": 12321,
+        "snapshot": {
+          "boundary": 12,
+          "opening_cohorts": [
+            {
+              "expires": 18,
+              "quantity": 20,
+              "resource": 22
+            },
+            {
+              "expires": 24,
+              "quantity": 20,
+              "resource": 23
+            },
+            {
+              "expires": 30,
+              "quantity": 20,
+              "resource": 24
+            },
+            {
+              "expires": 24,
+              "quantity": 20,
+              "resource": 25
+            },
+            {
+              "expires": 20,
+              "quantity": 20,
+              "resource": 26
+            },
+            {
+              "expires": 28,
+              "quantity": 600,
+              "resource": 14
+            }
+          ],
+          "opening_stock": [
+            5299065472,
+            3641670894,
+            31195037049,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            600,
+            600,
+            90000000000,
+            3700000000,
+            898957432,
+            25000000,
+            52799475,
+            134394000,
+            20,
+            20,
+            20,
+            20,
+            20
+          ],
+          "pending": [
+            {
+              "activities": 600,
+              "completes": 12,
+              "process": 35,
+              "started": 10
+            },
+            {
+              "activities": 423684211,
+              "completes": 12,
+              "process": 15,
+              "started": 11
+            },
+            {
+              "activities": 469078948,
+              "completes": 12,
+              "process": 17,
+              "started": 11
+            },
+            {
+              "activities": 294736843,
+              "completes": 12,
+              "process": 19,
+              "started": 11
+            },
+            {
+              "activities": 326315790,
+              "completes": 12,
+              "process": 21,
+              "started": 11
+            },
+            {
+              "activities": 2551301331,
+              "completes": 12,
+              "process": 23,
+              "started": 11
+            },
+            {
+              "activities": 2824655045,
+              "completes": 12,
+              "process": 25,
+              "started": 11
+            },
+            {
+              "activities": 25000000,
+              "completes": 12,
+              "process": 29,
+              "started": 11
+            },
+            {
+              "activities": 10052707,
+              "completes": 12,
+              "process": 30,
+              "started": 11
+            },
+            {
+              "activities": 10385754,
+              "completes": 12,
+              "process": 31,
+              "started": 11
+            },
+            {
+              "activities": 25000000,
+              "completes": 12,
+              "process": 32,
+              "started": 11
+            },
+            {
+              "activities": 8000000,
+              "completes": 12,
+              "process": 33,
+              "started": 11
+            },
+            {
+              "activities": 12000000,
+              "completes": 12,
+              "process": 34,
+              "started": 11
+            },
+            {
+              "activities": 600,
+              "completes": 12,
+              "process": 36,
+              "started": 11
+            }
+          ]
+        }
+      },
+      {
+        "columns": 7380,
+        "exact_matrix": true,
+        "independent_replay": true,
+        "rows": 12690,
+        "snapshot": {
+          "boundary": 15,
+          "opening_cohorts": [
+            {
+              "expires": 18,
+              "quantity": 20,
+              "resource": 22
+            },
+            {
+              "expires": 24,
+              "quantity": 20,
+              "resource": 23
+            },
+            {
+              "expires": 30,
+              "quantity": 20,
+              "resource": 24
+            },
+            {
+              "expires": 24,
+              "quantity": 20,
+              "resource": 25
+            },
+            {
+              "expires": 20,
+              "quantity": 20,
+              "resource": 26
+            },
+            {
+              "expires": 28,
+              "quantity": 600,
+              "resource": 14
+            }
+          ],
+          "opening_stock": [
+            3906960207,
+            2673249840,
+            22812189819,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            600,
+            600,
+            90000000000,
+            3625000000,
+            868759129,
+            25000000,
+            52799475,
+            149194000,
+            20,
+            20,
+            20,
+            20,
+            20
+          ],
+          "pending": [
+            {
+              "activities": 600,
+              "completes": 15,
+              "process": 27,
+              "started": 12
+            },
+            {
+              "activities": 600,
+              "completes": 18,
+              "process": 28,
+              "started": 12
+            },
+            {
+              "activities": 281447369,
+              "completes": 15,
+              "process": 15,
+              "started": 14
+            },
+            {
+              "activities": 187631579,
+              "completes": 15,
+              "process": 16,
+              "started": 14
+            },
+            {
+              "activities": 272368422,
+              "completes": 15,
+              "process": 17,
+              "started": 14
+            },
+            {
+              "activities": 181578947,
+              "completes": 15,
+              "process": 18,
+              "started": 14
+            },
+            {
+              "activities": 195789474,
+              "completes": 15,
+              "process": 19,
+              "started": 14
+            },
+            {
+              "activities": 130526316,
+              "completes": 15,
+              "process": 20,
+              "started": 14
+            },
+            {
+              "activities": 189473685,
+              "completes": 15,
+              "process": 21,
+              "started": 14
+            },
+            {
+              "activities": 126315789,
+              "completes": 15,
+              "process": 22,
+              "started": 14
+            },
+            {
+              "activities": 1694793027,
+              "completes": 15,
+              "process": 23,
+              "started": 14
+            },
+            {
+              "activities": 1129862018,
+              "completes": 15,
+              "process": 24,
+              "started": 14
+            },
+            {
+              "activities": 1640122284,
+              "completes": 15,
+              "process": 25,
+              "started": 14
+            },
+            {
+              "activities": 1093414856,
+              "completes": 15,
+              "process": 26,
+              "started": 14
+            },
+            {
+              "activities": 25000000,
+              "completes": 15,
+              "process": 29,
+              "started": 14
+            },
+            {
+              "activities": 10072707,
+              "completes": 15,
+              "process": 30,
+              "started": 14
+            },
+            {
+              "activities": 10052870,
+              "completes": 15,
+              "process": 31,
+              "started": 14
+            },
+            {
+              "activities": 25000000,
+              "completes": 15,
+              "process": 32,
+              "started": 14
+            },
+            {
+              "activities": 8000000,
+              "completes": 15,
+              "process": 33,
+              "started": 14
+            },
+            {
+              "activities": 12000000,
+              "completes": 15,
+              "process": 34,
+              "started": 14
+            },
+            {
+              "activities": 20,
+              "completes": 17,
+              "process": 37,
+              "started": 14
+            }
+          ]
+        }
+      },
+      {
+        "columns": 7380,
+        "exact_matrix": true,
+        "independent_replay": true,
+        "rows": 13059,
+        "snapshot": {
+          "boundary": 18,
+          "opening_cohorts": [
+            {
+              "expires": 18,
+              "quantity": 20,
+              "resource": 22
+            },
+            {
+              "expires": 24,
+              "quantity": 20,
+              "resource": 23
+            },
+            {
+              "expires": 30,
+              "quantity": 20,
+              "resource": 24
+            },
+            {
+              "expires": 24,
+              "quantity": 20,
+              "resource": 25
+            },
+            {
+              "expires": 20,
+              "quantity": 20,
+              "resource": 26
+            },
+            {
+              "expires": 28,
+              "quantity": 600,
+              "resource": 14
+            },
+            {
+              "expires": 40,
+              "quantity": 600,
+              "resource": 14
+            },
+            {
+              "expires": 42,
+              "quantity": 20,
+              "resource": 22
+            }
+          ],
+          "opening_stock": [
+            2254607522,
+            1568422626,
+            13576572339,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            1200,
+            600,
+            90000000000,
+            3550000000,
+            838437486,
+            25000000,
+            52799475,
+            163994000,
+            40,
+            20,
+            20,
+            20,
+            20
+          ],
+          "pending": [
+            {
+              "activities": 600,
+              "completes": 18,
+              "process": 28,
+              "started": 12
+            },
+            {
+              "activities": 1445819,
+              "completes": 20,
+              "process": 3,
+              "started": 15
+            },
+            {
+              "activities": 1136718,
+              "completes": 20,
+              "process": 4,
+              "started": 15
+            },
+            {
+              "activities": 5685135,
+              "completes": 20,
+              "process": 5,
+              "started": 15
+            },
+            {
+              "activities": 20,
+              "completes": 19,
+              "process": 41,
+              "started": 16
+            },
+            {
+              "activities": 281447369,
+              "completes": 18,
+              "process": 15,
+              "started": 17
+            },
+            {
+              "activities": 187631579,
+              "completes": 18,
+              "process": 16,
+              "started": 17
+            },
+            {
+              "activities": 281447369,
+              "completes": 18,
+              "process": 17,
+              "started": 17
+            },
+            {
+              "activities": 187631579,
+              "completes": 18,
+              "process": 18,
+              "started": 17
+            },
+            {
+              "activities": 195789474,
+              "completes": 18,
+              "process": 19,
+              "started": 17
+            },
+            {
+              "activities": 130526316,
+              "completes": 18,
+              "process": 20,
+              "started": 17
+            },
+            {
+              "activities": 195789474,
+              "completes": 18,
+              "process": 21,
+              "started": 17
+            },
+            {
+              "activities": 130526316,
+              "completes": 18,
+              "process": 22,
+              "started": 17
+            },
+            {
+              "activities": 1694793027,
+              "completes": 18,
+              "process": 23,
+              "started": 17
+            },
+            {
+              "activities": 1129862018,
+              "completes": 18,
+              "process": 24,
+              "started": 17
+            },
+            {
+              "activities": 1694793027,
+              "completes": 18,
+              "process": 25,
+              "started": 17
+            },
+            {
+              "activities": 1129862018,
+              "completes": 18,
+              "process": 26,
+              "started": 17
+            },
+            {
+              "activities": 25000000,
+              "completes": 18,
+              "process": 29,
+              "started": 17
+            },
+            {
+              "activities": 10052703,
+              "completes": 18,
+              "process": 30,
+              "started": 17
+            },
+            {
+              "activities": 10052747,
+              "completes": 18,
+              "process": 31,
+              "started": 17
+            },
+            {
+              "activities": 25000000,
+              "completes": 18,
+              "process": 32,
+              "started": 17
+            },
+            {
+              "activities": 8000000,
+              "completes": 18,
+              "process": 33,
+              "started": 17
+            },
+            {
+              "activities": 12000000,
+              "completes": 18,
+              "process": 34,
+              "started": 17
+            }
+          ]
+        }
+      },
+      {
+        "columns": 7380,
+        "exact_matrix": true,
+        "independent_replay": true,
+        "rows": 13797,
+        "snapshot": {
+          "boundary": 24,
+          "opening_cohorts": [
+            {
+              "expires": 24,
+              "quantity": 20,
+              "resource": 23
+            },
+            {
+              "expires": 30,
+              "quantity": 20,
+              "resource": 24
+            },
+            {
+              "expires": 24,
+              "quantity": 20,
+              "resource": 25
+            },
+            {
+              "expires": 28,
+              "quantity": 600,
+              "resource": 14
+            },
+            {
+              "expires": 40,
+              "quantity": 600,
+              "resource": 14
+            },
+            {
+              "expires": 42,
+              "quantity": 20,
+              "resource": 22
+            },
+            {
+              "expires": 50,
+              "quantity": 20,
+              "resource": 26
+            },
+            {
+              "expires": 60,
+              "quantity": 20,
+              "resource": 23
+            },
+            {
+              "expires": 54,
+              "quantity": 20,
+              "resource": 25
+            }
+          ],
+          "opening_stock": [
+            5299067729,
+            3641672465,
+            31195041593,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            1200,
+            1200,
+            90000000000,
+            3400000000,
+            776557428,
+            25000000,
+            52799475,
+            192388000,
+            20,
+            40,
+            20,
+            40,
+            20
+          ],
+          "pending": [
+            {
+              "activities": 1200,
+              "completes": 24,
+              "process": 35,
+              "started": 22
+            },
+            {
+              "activities": 423684211,
+              "completes": 24,
+              "process": 15,
+              "started": 23
+            },
+            {
+              "activities": 469078948,
+              "completes": 24,
+              "process": 17,
+              "started": 23
+            },
+            {
+              "activities": 294736843,
+              "completes": 24,
+              "process": 19,
+              "started": 23
+            },
+            {
+              "activities": 326315790,
+              "completes": 24,
+              "process": 21,
+              "started": 23
+            },
+            {
+              "activities": 2551301331,
+              "completes": 24,
+              "process": 23,
+              "started": 23
+            },
+            {
+              "activities": 2824655045,
+              "completes": 24,
+              "process": 25,
+              "started": 23
+            },
+            {
+              "activities": 25000000,
+              "completes": 24,
+              "process": 29,
+              "started": 23
+            },
+            {
+              "activities": 11835320,
+              "completes": 24,
+              "process": 30,
+              "started": 23
+            },
+            {
+              "activities": 12709980,
+              "completes": 24,
+              "process": 31,
+              "started": 23
+            },
+            {
+              "activities": 25000000,
+              "completes": 24,
+              "process": 32,
+              "started": 23
+            },
+            {
+              "activities": 8000000,
+              "completes": 24,
+              "process": 33,
+              "started": 23
+            },
+            {
+              "activities": 12000000,
+              "completes": 24,
+              "process": 34,
+              "started": 23
+            },
+            {
+              "activities": 600,
+              "completes": 24,
+              "process": 36,
+              "started": 23
+            }
+          ]
+        }
+      },
+      {
+        "columns": 7380,
+        "exact_matrix": true,
+        "independent_replay": true,
+        "rows": 14535,
+        "snapshot": {
+          "boundary": 30,
+          "opening_cohorts": [
+            {
+              "expires": 30,
+              "quantity": 20,
+              "resource": 24
+            },
+            {
+              "expires": 40,
+              "quantity": 600,
+              "resource": 14
+            },
+            {
+              "expires": 42,
+              "quantity": 20,
+              "resource": 22
+            },
+            {
+              "expires": 50,
+              "quantity": 20,
+              "resource": 26
+            },
+            {
+              "expires": 60,
+              "quantity": 20,
+              "resource": 23
+            },
+            {
+              "expires": 54,
+              "quantity": 20,
+              "resource": 25
+            },
+            {
+              "expires": 52,
+              "quantity": 1200,
+              "resource": 14
+            },
+            {
+              "expires": 66,
+              "quantity": 20,
+              "resource": 24
+            }
+          ],
+          "opening_stock": [
+            2254609779,
+            1568424197,
+            13576576883,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            1800,
+            1200,
+            90000000000,
+            3250000000,
+            705332640,
+            25000000,
+            52799475,
+            222188000,
+            20,
+            20,
+            40,
+            20,
+            20
+          ],
+          "pending": [
+            {
+              "activities": 600,
+              "completes": 30,
+              "process": 28,
+              "started": 24
+            },
+            {
+              "activities": 1445819,
+              "completes": 32,
+              "process": 6,
+              "started": 27
+            },
+            {
+              "activities": 1136718,
+              "completes": 32,
+              "process": 7,
+              "started": 27
+            },
+            {
+              "activities": 5685135,
+              "completes": 32,
+              "process": 8,
+              "started": 27
+            },
+            {
+              "activities": 164177632,
+              "completes": 30,
+              "process": 15,
+              "started": 29
+            },
+            {
+              "activities": 304901316,
+              "completes": 30,
+              "process": 16,
+              "started": 29
+            },
+            {
+              "activities": 164177632,
+              "completes": 30,
+              "process": 17,
+              "started": 29
+            },
+            {
+              "activities": 304901316,
+              "completes": 30,
+              "process": 18,
+              "started": 29
+            },
+            {
+              "activities": 114210527,
+              "completes": 30,
+              "process": 19,
+              "started": 29
+            },
+            {
+              "activities": 212105263,
+              "completes": 30,
+              "process": 20,
+              "started": 29
+            },
+            {
+              "activities": 114210527,
+              "completes": 30,
+              "process": 21,
+              "started": 29
+            },
+            {
+              "activities": 212105263,
+              "completes": 30,
+              "process": 22,
+              "started": 29
+            },
+            {
+              "activities": 988629266,
+              "completes": 30,
+              "process": 23,
+              "started": 29
+            },
+            {
+              "activities": 1836025779,
+              "completes": 30,
+              "process": 24,
+              "started": 29
+            },
+            {
+              "activities": 988629266,
+              "completes": 30,
+              "process": 25,
+              "started": 29
+            },
+            {
+              "activities": 1836025779,
+              "completes": 30,
+              "process": 26,
+              "started": 29
+            },
+            {
+              "activities": 25000000,
+              "completes": 30,
+              "process": 29,
+              "started": 29
+            },
+            {
+              "activities": 11835315,
+              "completes": 30,
+              "process": 30,
+              "started": 29
+            },
+            {
+              "activities": 11835320,
+              "completes": 30,
+              "process": 31,
+              "started": 29
+            },
+            {
+              "activities": 25000000,
+              "completes": 30,
+              "process": 32,
+              "started": 29
+            },
+            {
+              "activities": 8000000,
+              "completes": 30,
+              "process": 33,
+              "started": 29
+            },
+            {
+              "activities": 12000000,
+              "completes": 30,
+              "process": 34,
+              "started": 29
+            }
+          ]
+        }
+      },
+      {
+        "columns": 7380,
+        "exact_matrix": true,
+        "independent_replay": true,
+        "rows": 16011,
+        "snapshot": {
+          "boundary": 42,
+          "opening_cohorts": [
+            {
+              "expires": 42,
+              "quantity": 20,
+              "resource": 22
+            },
+            {
+              "expires": 50,
+              "quantity": 20,
+              "resource": 26
+            },
+            {
+              "expires": 60,
+              "quantity": 20,
+              "resource": 23
+            },
+            {
+              "expires": 54,
+              "quantity": 20,
+              "resource": 25
+            },
+            {
+              "expires": 52,
+              "quantity": 1200,
+              "resource": 14
+            },
+            {
+              "expires": 66,
+              "quantity": 20,
+              "resource": 24
+            },
+            {
+              "expires": 64,
+              "quantity": 1200,
+              "resource": 14
+            },
+            {
+              "expires": 66,
+              "quantity": 20,
+              "resource": 22
+            }
+          ],
+          "opening_stock": [
+            2254612036,
+            1568425768,
+            13576581427,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            2400,
+            1800,
+            90000000000,
+            2950000000,
+            555506096,
+            25000000,
+            52799475,
+            280782000,
+            40,
+            20,
+            20,
+            20,
+            20
+          ],
+          "pending": [
+            {
+              "activities": 600,
+              "completes": 42,
+              "process": 28,
+              "started": 36
+            },
+            {
+              "activities": 1445819,
+              "completes": 44,
+              "process": 9,
+              "started": 39
+            },
+            {
+              "activities": 1136718,
+              "completes": 44,
+              "process": 10,
+              "started": 39
+            },
+            {
+              "activities": 5685135,
+              "completes": 44,
+              "process": 11,
+              "started": 39
+            },
+            {
+              "activities": 70361843,
+              "completes": 42,
+              "process": 15,
+              "started": 41
+            },
+            {
+              "activities": 398717105,
+              "completes": 42,
+              "process": 16,
+              "started": 41
+            },
+            {
+              "activities": 70361843,
+              "completes": 42,
+              "process": 17,
+              "started": 41
+            },
+            {
+              "activities": 398717105,
+              "completes": 42,
+              "process": 18,
+              "started": 41
+            },
+            {
+              "activities": 48947369,
+              "completes": 42,
+              "process": 19,
+              "started": 41
+            },
+            {
+              "activities": 277368421,
+              "completes": 42,
+              "process": 20,
+              "started": 41
+            },
+            {
+              "activities": 48947369,
+              "completes": 42,
+              "process": 21,
+              "started": 41
+            },
+            {
+              "activities": 277368421,
+              "completes": 42,
+              "process": 22,
+              "started": 41
+            },
+            {
+              "activities": 423698257,
+              "completes": 42,
+              "process": 23,
+              "started": 41
+            },
+            {
+              "activities": 2400956788,
+              "completes": 42,
+              "process": 24,
+              "started": 41
+            },
+            {
+              "activities": 423698257,
+              "completes": 42,
+              "process": 25,
+              "started": 41
+            },
+            {
+              "activities": 2400956788,
+              "completes": 42,
+              "process": 26,
+              "started": 41
+            },
+            {
+              "activities": 25000000,
+              "completes": 42,
+              "process": 29,
+              "started": 41
+            },
+            {
+              "activities": 13261405,
+              "completes": 42,
+              "process": 30,
+              "started": 41
+            },
+            {
+              "activities": 13261411,
+              "completes": 42,
+              "process": 31,
+              "started": 41
+            },
+            {
+              "activities": 25000000,
+              "completes": 42,
+              "process": 32,
+              "started": 41
+            },
+            {
+              "activities": 8000000,
+              "completes": 42,
+              "process": 33,
+              "started": 41
+            },
+            {
+              "activities": 12000000,
+              "completes": 42,
+              "process": 34,
+              "started": 41
+            }
+          ]
+        }
+      },
+      {
+        "columns": 7380,
+        "exact_matrix": true,
+        "independent_replay": true,
+        "rows": 18102,
+        "snapshot": {
+          "boundary": 59,
+          "opening_cohorts": [
+            {
+              "expires": 60,
+              "quantity": 20,
+              "resource": 23
+            },
+            {
+              "expires": 66,
+              "quantity": 20,
+              "resource": 24
+            },
+            {
+              "expires": 64,
+              "quantity": 1200,
+              "resource": 14
+            },
+            {
+              "expires": 66,
+              "quantity": 20,
+              "resource": 22
+            },
+            {
+              "expires": 80,
+              "quantity": 20,
+              "resource": 26
+            },
+            {
+              "expires": 76,
+              "quantity": 1800,
+              "resource": 14
+            },
+            {
+              "expires": 84,
+              "quantity": 20,
+              "resource": 25
+            }
+          ],
+          "opening_stock": [
+            5299074500,
+            3641677178,
+            31195055225,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            3000,
+            3000,
+            90000000000,
+            2525000000,
+            332265835,
+            25000000,
+            52799475,
+            363376000,
+            20,
+            20,
+            20,
+            20,
+            20
+          ],
+          "pending": [
+            {
+              "activities": 20,
+              "completes": 59,
+              "process": 38,
+              "started": 56
+            },
+            {
+              "activities": 21184211,
+              "completes": 59,
+              "process": 15,
+              "started": 58
+            },
+            {
+              "activities": 402500000,
+              "completes": 59,
+              "process": 16,
+              "started": 58
+            },
+            {
+              "activities": 46907895,
+              "completes": 59,
+              "process": 17,
+              "started": 58
+            },
+            {
+              "activities": 891250001,
+              "completes": 59,
+              "process": 18,
+              "started": 58
+            },
+            {
+              "activities": 14736843,
+              "completes": 59,
+              "process": 19,
+              "started": 58
+            },
+            {
+              "activities": 280000000,
+              "completes": 59,
+              "process": 20,
+              "started": 58
+            },
+            {
+              "activities": 32631579,
+              "completes": 59,
+              "process": 21,
+              "started": 58
+            },
+            {
+              "activities": 620000001,
+              "completes": 59,
+              "process": 22,
+              "started": 58
+            },
+            {
+              "activities": 127565067,
+              "completes": 59,
+              "process": 23,
+              "started": 58
+            },
+            {
+              "activities": 2423736264,
+              "completes": 59,
+              "process": 24,
+              "started": 58
+            },
+            {
+              "activities": 282465505,
+              "completes": 59,
+              "process": 25,
+              "started": 58
+            },
+            {
+              "activities": 5366844585,
+              "completes": 59,
+              "process": 26,
+              "started": 58
+            },
+            {
+              "activities": 25000000,
+              "completes": 59,
+              "process": 29,
+              "started": 58
+            },
+            {
+              "activities": 7200525,
+              "completes": 59,
+              "process": 30,
+              "started": 58
+            },
+            {
+              "activities": 25000000,
+              "completes": 59,
+              "process": 32,
+              "started": 58
+            },
+            {
+              "activities": 8000000,
+              "completes": 59,
+              "process": 33,
+              "started": 58
+            },
+            {
+              "activities": 12000000,
+              "completes": 59,
+              "process": 34,
+              "started": 58
+            }
+          ]
+        }
+      }
+    ],
+    "future_supply_revision_accepted": true,
+    "kind": "absolute_timeline_continuation_and_constituent_accounting",
+    "material_cases": [
+      {
+        "basis": {
+          "name": "tracked dry material",
+          "quantity_per_resource_unit": [
+            1,
+            1,
+            1,
+            1,
+            0
+          ],
+          "source": "Synthetic recipe v1: 70% primary yield, 40% residue recovery; not measured mineral engineering",
+          "unit": "kg"
+        },
+        "candidate": [
+          {
+            "activities": [
+              15,
+              0
+            ],
+            "closing": [
+              0,
+              0,
+              0,
+              0,
+              70
+            ],
+            "deliveries": [
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            "discarded": [
+              0,
+              0,
+              0,
+              0,
+              0
+            ]
+          },
+          {
+            "activities": [
+              0,
+              0
+            ],
+            "closing": [
+              0,
+              0,
+              0,
+              0,
+              70
+            ],
+            "deliveries": [
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            "discarded": [
+              0,
+              0,
+              0,
+              0,
+              0
+            ]
+          },
+          {
+            "activities": [
+              0,
+              0
+            ],
+            "closing": [
+              0,
+              105,
+              45,
+              0,
+              70
+            ],
+            "deliveries": [
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            "discarded": [
+              0,
+              0,
+              0,
+              0,
+              0
+            ]
+          },
+          {
+            "activities": [
+              0,
+              0
+            ],
+            "closing": [
+              0,
+              105,
+              45,
+              0,
+              70
+            ],
+            "deliveries": [
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            "discarded": [
+              0,
+              0,
+              0,
+              0,
+              0
+            ]
+          },
+          {
+            "activities": [
+              0,
+              0
+            ],
+            "closing": [
+              0,
+              105,
+              45,
+              0,
+              70
+            ],
+            "deliveries": [
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            "discarded": [
+              0,
+              0,
+              0,
+              0,
+              0
+            ]
+          },
+          {
+            "activities": [
+              0,
+              0
+            ],
+            "closing": [
+              0,
+              5,
+              45,
+              0,
+              70
+            ],
+            "deliveries": [
+              0,
+              100,
+              0,
+              0,
+              0
+            ],
+            "discarded": [
+              0,
+              0,
+              0,
+              0,
+              0
+            ]
+          }
+        ],
+        "energy_consumed_ticks": 30,
+        "exact_matrix": "Ok(Verification { feasible: true, optimal_for_supplied_linear_model: false, objective_numerator: \"100\", objective_denominator: \"1\", integral: true })",
+        "feasible": true,
+        "material_audit": {
+          "delivered": 100,
+          "discarded": 0,
+          "final_stock": 50,
+          "initial": 150,
+          "supplied": 0,
+          "work_in_progress": [
+            150,
+            150,
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        "model": {
+          "initial": [
+            150,
+            0,
+            0,
+            0,
+            100
+          ],
+          "objective_resource": 1,
+          "periods": [
+            {
+              "capacities": [
+                15,
+                5
+              ],
+              "needs": [
+                0,
+                0,
+                0,
+                0,
+                0
+              ],
+              "supplies": [
+                0,
+                0,
+                0,
+                0,
+                0
+              ]
+            },
+            {
+              "capacities": [
+                15,
+                5
+              ],
+              "needs": [
+                0,
+                0,
+                0,
+                0,
+                0
+              ],
+              "supplies": [
+                0,
+                0,
+                0,
+                0,
+                0
+              ]
+            },
+            {
+              "capacities": [
+                15,
+                5
+              ],
+              "needs": [
+                0,
+                0,
+                0,
+                0,
+                0
+              ],
+              "supplies": [
+                0,
+                0,
+                0,
+                0,
+                0
+              ]
+            },
+            {
+              "capacities": [
+                15,
+                5
+              ],
+              "needs": [
+                0,
+                0,
+                0,
+                0,
+                0
+              ],
+              "supplies": [
+                0,
+                0,
+                0,
+                0,
+                0
+              ]
+            },
+            {
+              "capacities": [
+                15,
+                5
+              ],
+              "needs": [
+                0,
+                0,
+                0,
+                0,
+                0
+              ],
+              "supplies": [
+                0,
+                0,
+                0,
+                0,
+                0
+              ]
+            },
+            {
+              "capacities": [
+                15,
+                5
+              ],
+              "needs": [
+                0,
+                100,
+                0,
+                0,
+                0
+              ],
+              "supplies": [
+                0,
+                0,
+                0,
+                0,
+                0
+              ]
+            }
+          ],
+          "processes": [
+            {
+              "inputs": [
+                10,
+                0,
+                0,
+                0,
+                2
+              ],
+              "lead_periods": 2,
+              "outputs": [
+                0,
+                7,
+                3,
+                0,
+                0
+              ]
+            },
+            {
+              "inputs": [
+                0,
+                0,
+                5,
+                0,
+                1
+              ],
+              "lead_periods": 1,
+              "outputs": [
+                0,
+                2,
+                0,
+                3,
+                0
+              ]
+            }
+          ],
+          "resources": [
+            "ore_kg",
+            "material_kg",
+            "recoverable_residue_kg",
+            "unrecovered_waste_kg",
+            "energy_ticks"
+          ],
+          "storage_caps": [
+            1000,
+            1000,
+            1000,
+            1000,
+            1000
+          ]
+        },
+        "name": "primary_only",
+        "ore_consumed_kg": 150
+      },
+      {
+        "basis": {
+          "name": "tracked dry material",
+          "quantity_per_resource_unit": [
+            1,
+            1,
+            1,
+            1,
+            0
+          ],
+          "source": "Synthetic recipe v1: 70% primary yield, 40% residue recovery; not measured mineral engineering",
+          "unit": "kg"
+        },
+        "candidate": [
+          {
+            "activities": [
+              13,
+              0
+            ],
+            "closing": [
+              20,
+              0,
+              0,
+              0,
+              74
+            ],
+            "deliveries": [
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            "discarded": [
+              0,
+              0,
+              0,
+              0,
+              0
+            ]
+          },
+          {
+            "activities": [
+              0,
+              0
+            ],
+            "closing": [
+              20,
+              0,
+              0,
+              0,
+              74
+            ],
+            "deliveries": [
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            "discarded": [
+              0,
+              0,
+              0,
+              0,
+              0
+            ]
+          },
+          {
+            "activities": [
+              0,
+              5
+            ],
+            "closing": [
+              20,
+              91,
+              14,
+              0,
+              69
+            ],
+            "deliveries": [
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            "discarded": [
+              0,
+              0,
+              0,
+              0,
+              0
+            ]
+          },
+          {
+            "activities": [
+              0,
+              0
+            ],
+            "closing": [
+              20,
+              101,
+              14,
+              15,
+              69
+            ],
+            "deliveries": [
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            "discarded": [
+              0,
+              0,
+              0,
+              0,
+              0
+            ]
+          },
+          {
+            "activities": [
+              0,
+              0
+            ],
+            "closing": [
+              20,
+              101,
+              14,
+              15,
+              69
+            ],
+            "deliveries": [
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            "discarded": [
+              0,
+              0,
+              0,
+              0,
+              0
+            ]
+          },
+          {
+            "activities": [
+              0,
+              0
+            ],
+            "closing": [
+              20,
+              1,
+              14,
+              15,
+              69
+            ],
+            "deliveries": [
+              0,
+              100,
+              0,
+              0,
+              0
+            ],
+            "discarded": [
+              0,
+              0,
+              0,
+              0,
+              0
+            ]
+          }
+        ],
+        "energy_consumed_ticks": 31,
+        "exact_matrix": "Ok(Verification { feasible: true, optimal_for_supplied_linear_model: false, objective_numerator: \"100\", objective_denominator: \"1\", integral: true })",
+        "feasible": true,
+        "material_audit": {
+          "delivered": 100,
+          "discarded": 0,
+          "final_stock": 50,
+          "initial": 150,
+          "supplied": 0,
+          "work_in_progress": [
+            130,
+            130,
+            25,
+            0,
+            0,
+            0
+          ]
+        },
+        "model": {
+          "initial": [
+            150,
+            0,
+            0,
+            0,
+            100
+          ],
+          "objective_resource": 1,
+          "periods": [
+            {
+              "capacities": [
+                15,
+                5
+              ],
+              "needs": [
+                0,
+                0,
+                0,
+                0,
+                0
+              ],
+              "supplies": [
+                0,
+                0,
+                0,
+                0,
+                0
+              ]
+            },
+            {
+              "capacities": [
+                15,
+                5
+              ],
+              "needs": [
+                0,
+                0,
+                0,
+                0,
+                0
+              ],
+              "supplies": [
+                0,
+                0,
+                0,
+                0,
+                0
+              ]
+            },
+            {
+              "capacities": [
+                15,
+                5
+              ],
+              "needs": [
+                0,
+                0,
+                0,
+                0,
+                0
+              ],
+              "supplies": [
+                0,
+                0,
+                0,
+                0,
+                0
+              ]
+            },
+            {
+              "capacities": [
+                15,
+                5
+              ],
+              "needs": [
+                0,
+                0,
+                0,
+                0,
+                0
+              ],
+              "supplies": [
+                0,
+                0,
+                0,
+                0,
+                0
+              ]
+            },
+            {
+              "capacities": [
+                15,
+                5
+              ],
+              "needs": [
+                0,
+                0,
+                0,
+                0,
+                0
+              ],
+              "supplies": [
+                0,
+                0,
+                0,
+                0,
+                0
+              ]
+            },
+            {
+              "capacities": [
+                15,
+                5
+              ],
+              "needs": [
+                0,
+                100,
+                0,
+                0,
+                0
+              ],
+              "supplies": [
+                0,
+                0,
+                0,
+                0,
+                0
+              ]
+            }
+          ],
+          "processes": [
+            {
+              "inputs": [
+                10,
+                0,
+                0,
+                0,
+                2
+              ],
+              "lead_periods": 2,
+              "outputs": [
+                0,
+                7,
+                3,
+                0,
+                0
+              ]
+            },
+            {
+              "inputs": [
+                0,
+                0,
+                5,
+                0,
+                1
+              ],
+              "lead_periods": 1,
+              "outputs": [
+                0,
+                2,
+                0,
+                3,
+                0
+              ]
+            }
+          ],
+          "resources": [
+            "ore_kg",
+            "material_kg",
+            "recoverable_residue_kg",
+            "unrecovered_waste_kg",
+            "energy_ticks"
+          ],
+          "storage_caps": [
+            1000,
+            1000,
+            1000,
+            1000,
+            1000
+          ]
+        },
+        "name": "residue_recovery",
+        "ore_consumed_kg": 130
+      },
+      {
+        "basis": {
+          "name": "tracked dry material",
+          "quantity_per_resource_unit": [
+            1,
+            1,
+            1,
+            1,
+            0
+          ],
+          "source": "Synthetic recipe v1: 70% primary yield, 40% residue recovery; not measured mineral engineering",
+          "unit": "kg"
+        },
+        "candidate": [
+          {
+            "activities": [
+              13,
+              0
+            ],
+            "closing": [
+              20,
+              0,
+              0,
+              0,
+              4
+            ],
+            "deliveries": [
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            "discarded": [
+              0,
+              0,
+              0,
+              0,
+              0
+            ]
+          },
+          {
+            "activities": [
+              0,
+              0
+            ],
+            "closing": [
+              20,
+              0,
+              0,
+              0,
+              4
+            ],
+            "deliveries": [
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            "discarded": [
+              0,
+              0,
+              0,
+              0,
+              0
+            ]
+          },
+          {
+            "activities": [
+              0,
+              5
+            ],
+            "closing": [
+              20,
+              91,
+              14,
+              0,
+              -1
+            ],
+            "deliveries": [
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            "discarded": [
+              0,
+              0,
+              0,
+              0,
+              0
+            ]
+          },
+          {
+            "activities": [
+              0,
+              0
+            ],
+            "closing": [
+              20,
+              101,
+              14,
+              15,
+              -1
+            ],
+            "deliveries": [
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            "discarded": [
+              0,
+              0,
+              0,
+              0,
+              0
+            ]
+          },
+          {
+            "activities": [
+              0,
+              0
+            ],
+            "closing": [
+              20,
+              101,
+              14,
+              15,
+              -1
+            ],
+            "deliveries": [
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            "discarded": [
+              0,
+              0,
+              0,
+              0,
+              0
+            ]
+          },
+          {
+            "activities": [
+              0,
+              0
+            ],
+            "closing": [
+              20,
+              1,
+              14,
+              15,
+              -1
+            ],
+            "deliveries": [
+              0,
+              100,
+              0,
+              0,
+              0
+            ],
+            "discarded": [
+              0,
+              0,
+              0,
+              0,
+              0
+            ]
+          }
+        ],
+        "energy_consumed_ticks": 31,
+        "exact_matrix": "Err(Invalid(\"negative primal variable\"))",
+        "feasible": false,
+        "material_audit": {
+          "error": "Invalid(\"negative primal variable\")"
+        },
+        "model": {
+          "initial": [
+            150,
+            0,
+            0,
+            0,
+            30
+          ],
+          "objective_resource": 1,
+          "periods": [
+            {
+              "capacities": [
+                15,
+                5
+              ],
+              "needs": [
+                0,
+                0,
+                0,
+                0,
+                0
+              ],
+              "supplies": [
+                0,
+                0,
+                0,
+                0,
+                0
+              ]
+            },
+            {
+              "capacities": [
+                15,
+                5
+              ],
+              "needs": [
+                0,
+                0,
+                0,
+                0,
+                0
+              ],
+              "supplies": [
+                0,
+                0,
+                0,
+                0,
+                0
+              ]
+            },
+            {
+              "capacities": [
+                15,
+                5
+              ],
+              "needs": [
+                0,
+                0,
+                0,
+                0,
+                0
+              ],
+              "supplies": [
+                0,
+                0,
+                0,
+                0,
+                0
+              ]
+            },
+            {
+              "capacities": [
+                15,
+                5
+              ],
+              "needs": [
+                0,
+                0,
+                0,
+                0,
+                0
+              ],
+              "supplies": [
+                0,
+                0,
+                0,
+                0,
+                0
+              ]
+            },
+            {
+              "capacities": [
+                15,
+                5
+              ],
+              "needs": [
+                0,
+                0,
+                0,
+                0,
+                0
+              ],
+              "supplies": [
+                0,
+                0,
+                0,
+                0,
+                0
+              ]
+            },
+            {
+              "capacities": [
+                15,
+                5
+              ],
+              "needs": [
+                0,
+                100,
+                0,
+                0,
+                0
+              ],
+              "supplies": [
+                0,
+                0,
+                0,
+                0,
+                0
+              ]
+            }
+          ],
+          "processes": [
+            {
+              "inputs": [
+                10,
+                0,
+                0,
+                0,
+                2
+              ],
+              "lead_periods": 2,
+              "outputs": [
+                0,
+                7,
+                3,
+                0,
+                0
+              ]
+            },
+            {
+              "inputs": [
+                0,
+                0,
+                5,
+                0,
+                1
+              ],
+              "lead_periods": 1,
+              "outputs": [
+                0,
+                2,
+                0,
+                3,
+                0
+              ]
+            }
+          ],
+          "resources": [
+            "ore_kg",
+            "material_kg",
+            "recoverable_residue_kg",
+            "unrecovered_waste_kg",
+            "energy_ticks"
+          ],
+          "storage_caps": [
+            1000,
+            1000,
+            1000,
+            1000,
+            1000
+          ]
+        },
+        "name": "insufficient_recovery_energy",
+        "ore_consumed_kg": 130
+      },
+      {
+        "basis": {
+          "name": "tracked dry material",
+          "quantity_per_resource_unit": [
+            1,
+            1,
+            1,
+            1,
+            0
+          ],
+          "source": "Synthetic recipe v1: 70% primary yield, 40% residue recovery; not measured mineral engineering",
+          "unit": "kg"
+        },
+        "candidate": [
+          {
+            "activities": [
+              13,
+              0
+            ],
+            "closing": [
+              20,
+              0,
+              0,
+              0,
+              74
+            ],
+            "deliveries": [
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            "discarded": [
+              0,
+              0,
+              0,
+              0,
+              0
+            ]
+          },
+          {
+            "activities": [
+              0,
+              0
+            ],
+            "closing": [
+              20,
+              0,
+              0,
+              0,
+              74
+            ],
+            "deliveries": [
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            "discarded": [
+              0,
+              0,
+              0,
+              0,
+              0
+            ]
+          },
+          {
+            "activities": [
+              0,
+              5
+            ],
+            "closing": [
+              20,
+              91,
+              14,
+              0,
+              69
+            ],
+            "deliveries": [
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            "discarded": [
+              0,
+              0,
+              0,
+              0,
+              0
+            ]
+          },
+          {
+            "activities": [
+              0,
+              0
+            ],
+            "closing": [
+              20,
+              101,
+              14,
+              15,
+              69
+            ],
+            "deliveries": [
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            "discarded": [
+              0,
+              0,
+              0,
+              0,
+              0
+            ]
+          },
+          {
+            "activities": [
+              0,
+              0
+            ],
+            "closing": [
+              20,
+              101,
+              14,
+              15,
+              69
+            ],
+            "deliveries": [
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            "discarded": [
+              0,
+              0,
+              0,
+              0,
+              0
+            ]
+          },
+          {
+            "activities": [
+              0,
+              0
+            ],
+            "closing": [
+              20,
+              1,
+              14,
+              15,
+              69
+            ],
+            "deliveries": [
+              0,
+              100,
+              0,
+              0,
+              0
+            ],
+            "discarded": [
+              0,
+              0,
+              0,
+              0,
+              0
+            ]
+          }
+        ],
+        "energy_consumed_ticks": 31,
+        "exact_matrix": "Err(Infeasible(\"capacity:2:1\"))",
+        "feasible": false,
+        "material_audit": {
+          "error": "Infeasible(\"capacity:2:1\")"
+        },
+        "model": {
+          "initial": [
+            150,
+            0,
+            0,
+            0,
+            100
+          ],
+          "objective_resource": 1,
+          "periods": [
+            {
+              "capacities": [
+                15,
+                4
+              ],
+              "needs": [
+                0,
+                0,
+                0,
+                0,
+                0
+              ],
+              "supplies": [
+                0,
+                0,
+                0,
+                0,
+                0
+              ]
+            },
+            {
+              "capacities": [
+                15,
+                4
+              ],
+              "needs": [
+                0,
+                0,
+                0,
+                0,
+                0
+              ],
+              "supplies": [
+                0,
+                0,
+                0,
+                0,
+                0
+              ]
+            },
+            {
+              "capacities": [
+                15,
+                4
+              ],
+              "needs": [
+                0,
+                0,
+                0,
+                0,
+                0
+              ],
+              "supplies": [
+                0,
+                0,
+                0,
+                0,
+                0
+              ]
+            },
+            {
+              "capacities": [
+                15,
+                4
+              ],
+              "needs": [
+                0,
+                0,
+                0,
+                0,
+                0
+              ],
+              "supplies": [
+                0,
+                0,
+                0,
+                0,
+                0
+              ]
+            },
+            {
+              "capacities": [
+                15,
+                4
+              ],
+              "needs": [
+                0,
+                0,
+                0,
+                0,
+                0
+              ],
+              "supplies": [
+                0,
+                0,
+                0,
+                0,
+                0
+              ]
+            },
+            {
+              "capacities": [
+                15,
+                4
+              ],
+              "needs": [
+                0,
+                100,
+                0,
+                0,
+                0
+              ],
+              "supplies": [
+                0,
+                0,
+                0,
+                0,
+                0
+              ]
+            }
+          ],
+          "processes": [
+            {
+              "inputs": [
+                10,
+                0,
+                0,
+                0,
+                2
+              ],
+              "lead_periods": 2,
+              "outputs": [
+                0,
+                7,
+                3,
+                0,
+                0
+              ]
+            },
+            {
+              "inputs": [
+                0,
+                0,
+                5,
+                0,
+                1
+              ],
+              "lead_periods": 1,
+              "outputs": [
+                0,
+                2,
+                0,
+                3,
+                0
+              ]
+            }
+          ],
+          "resources": [
+            "ore_kg",
+            "material_kg",
+            "recoverable_residue_kg",
+            "unrecovered_waste_kg",
+            "energy_ticks"
+          ],
+          "storage_caps": [
+            1000,
+            1000,
+            1000,
+            1000,
+            1000
+          ]
+        },
+        "name": "recovery_capacity_shortage",
+        "ore_consumed_kg": 130
+      },
+      {
+        "basis": {
+          "name": "tracked dry material",
+          "quantity_per_resource_unit": [
+            1,
+            1,
+            1,
+            1,
+            0
+          ],
+          "source": "Synthetic recipe v1: 70% primary yield, 40% residue recovery; not measured mineral engineering",
+          "unit": "kg"
+        },
+        "candidate": [
+          {
+            "activities": [
+              13,
+              0
+            ],
+            "closing": [
+              20,
+              0,
+              0,
+              0,
+              74
+            ],
+            "deliveries": [
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            "discarded": [
+              0,
+              0,
+              0,
+              0,
+              0
+            ]
+          },
+          {
+            "activities": [
+              0,
+              0
+            ],
+            "closing": [
+              20,
+              0,
+              0,
+              0,
+              74
+            ],
+            "deliveries": [
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            "discarded": [
+              0,
+              0,
+              0,
+              0,
+              0
+            ]
+          },
+          {
+            "activities": [
+              0,
+              5
+            ],
+            "closing": [
+              20,
+              91,
+              14,
+              0,
+              69
+            ],
+            "deliveries": [
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            "discarded": [
+              0,
+              0,
+              0,
+              0,
+              0
+            ]
+          },
+          {
+            "activities": [
+              0,
+              0
+            ],
+            "closing": [
+              20,
+              106,
+              14,
+              15,
+              69
+            ],
+            "deliveries": [
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            "discarded": [
+              0,
+              0,
+              0,
+              0,
+              0
+            ]
+          },
+          {
+            "activities": [
+              0,
+              0
+            ],
+            "closing": [
+              20,
+              106,
+              14,
+              15,
+              69
+            ],
+            "deliveries": [
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            "discarded": [
+              0,
+              0,
+              0,
+              0,
+              0
+            ]
+          },
+          {
+            "activities": [
+              0,
+              0
+            ],
+            "closing": [
+              20,
+              6,
+              14,
+              15,
+              69
+            ],
+            "deliveries": [
+              0,
+              100,
+              0,
+              0,
+              0
+            ],
+            "discarded": [
+              0,
+              0,
+              0,
+              0,
+              0
+            ]
+          }
+        ],
+        "energy_consumed_ticks": 31,
+        "exact_matrix": "Ok(Verification { feasible: true, optimal_for_supplied_linear_model: false, objective_numerator: \"100\", objective_denominator: \"1\", integral: true })",
+        "feasible": false,
+        "material_audit": {
+          "error": "Invalid(\"unbalanced constituent: declare residues and losses\")"
+        },
+        "model": {
+          "initial": [
+            150,
+            0,
+            0,
+            0,
+            100
+          ],
+          "objective_resource": 1,
+          "periods": [
+            {
+              "capacities": [
+                15,
+                5
+              ],
+              "needs": [
+                0,
+                0,
+                0,
+                0,
+                0
+              ],
+              "supplies": [
+                0,
+                0,
+                0,
+                0,
+                0
+              ]
+            },
+            {
+              "capacities": [
+                15,
+                5
+              ],
+              "needs": [
+                0,
+                0,
+                0,
+                0,
+                0
+              ],
+              "supplies": [
+                0,
+                0,
+                0,
+                0,
+                0
+              ]
+            },
+            {
+              "capacities": [
+                15,
+                5
+              ],
+              "needs": [
+                0,
+                0,
+                0,
+                0,
+                0
+              ],
+              "supplies": [
+                0,
+                0,
+                0,
+                0,
+                0
+              ]
+            },
+            {
+              "capacities": [
+                15,
+                5
+              ],
+              "needs": [
+                0,
+                0,
+                0,
+                0,
+                0
+              ],
+              "supplies": [
+                0,
+                0,
+                0,
+                0,
+                0
+              ]
+            },
+            {
+              "capacities": [
+                15,
+                5
+              ],
+              "needs": [
+                0,
+                0,
+                0,
+                0,
+                0
+              ],
+              "supplies": [
+                0,
+                0,
+                0,
+                0,
+                0
+              ]
+            },
+            {
+              "capacities": [
+                15,
+                5
+              ],
+              "needs": [
+                0,
+                100,
+                0,
+                0,
+                0
+              ],
+              "supplies": [
+                0,
+                0,
+                0,
+                0,
+                0
+              ]
+            }
+          ],
+          "processes": [
+            {
+              "inputs": [
+                10,
+                0,
+                0,
+                0,
+                2
+              ],
+              "lead_periods": 2,
+              "outputs": [
+                0,
+                7,
+                3,
+                0,
+                0
+              ]
+            },
+            {
+              "inputs": [
+                0,
+                0,
+                5,
+                0,
+                1
+              ],
+              "lead_periods": 1,
+              "outputs": [
+                0,
+                3,
+                0,
+                3,
+                0
+              ]
+            }
+          ],
+          "resources": [
+            "ore_kg",
+            "material_kg",
+            "recoverable_residue_kg",
+            "unrecovered_waste_kg",
+            "energy_ticks"
+          ],
+          "storage_caps": [
+            1000,
+            1000,
+            1000,
+            1000,
+            1000
+          ]
+        },
+        "name": "invented_recovery_mass",
+        "ore_consumed_kg": 130
+      }
+    ],
+    "model_calls": 0,
+    "months": 60,
+    "scope": [
+      "Checkpoints freeze mathematically verified candidate prefixes, not externally authenticated execution records",
+      "Absolute time and original inputs preserve finite deposits, open construction/harvest, seasonal water/land commitments and asset cohort expiry; past starts cannot be charged twice or erased",
+      "The full prefix stays in the matrix. This bounded implementation does not compact history, import unsigned snapshots, change recipe versions mid-flight or persist runtime plans",
+      "The typed kg material experiment is separate from synthetic upstream ticks: 70% primary yield and 40% residue recovery are assumptions, not measured ore grades",
+      "All tracked mass remains in stock, provision, explicit disposal or committed work. Recovery consumes energy and capacity and leaves unrecovered waste",
+      "Asset dismantling/recycling, material chemistry, hazards, crop nutrient retention and original dated-lot checkpoints remain separate gates; aggregate checkpoint stock does not certify freshness",
+      "No autonomous postings, issuance, AI calls, national-scale cost estimate or optimality claim"
+    ],
+    "source_case": "demand_matched_power_with_smaller_fuel_deposit",
+    "unchanged_plan_after_future_outage_rejected": true
+  },
   "seasonal_food": {
     "calendar": "60 months; five repeated 365-day years, leap days excluded explicitly; April sowing, September harvest; synthetic single shared land pool",
     "cases": [
@@ -1028023,5 +1031418,5 @@
       "Retirements beyond month 59 are not certified by a stock floor; repeated rolling-horizon continuity requires a separate gate. No runtime or monetary authority changes"
     ]
   },
-  "version": 14
+  "version": 15
 }

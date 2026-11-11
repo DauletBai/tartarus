@@ -438,3 +438,18 @@ Add upstream transport and measured energy/warehouse constraints; then persisten
 scenario snapshots and operator-reviewed draft integration. Financial schedules
 for the expanded graph require a separate exact circulation mapping. No national
 calibration, complete circular economy or live authority is implied by this gate.
+
+### Rolling commitments and material gate — 11 November 2026
+
+Schema 15 retains absolute history across replanning: eight checkpoints of the
+60-month upstream graph preserve pending construction, crop-stage commitments,
+stocks and cohort expiry. Small-fixture horizon extension/repeated checkpoints
+are verified; retroactive edits and lifetime resets are rejected. A separate typed
+material chain accounts for primary losses, residue recovery and remaining waste,
+including the energy/capacity costs and exact mass in flight.
+
+Next: preserve original dated food lots in compact rolling state; version and
+persist reviewed scenario evidence with stale-state protection. Add measured
+multi-constituent recipes, retired-asset disassembly, waste handling and upstream
+logistics. The current full-prefix method requires unchanged physical schemas and
+is a bounded offline verifier, not an operational national planning controller.
