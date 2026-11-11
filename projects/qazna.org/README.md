@@ -55,6 +55,12 @@ adds constructed grain/packaged storage, preservation inputs and restart-aware
 reserves. Eleven target scenarios retain early and overlong-failure deficits;
 fresh-food traces are historical comparators. Live service integration remains open.
 
+The [automation and seasonal supply annex](docs/physical-circulation.md#automation-seasonal-output-and-dated-distribution--11-november-2026)
+now checks five-year equipment/qualification deployment, shared processing and
+transport capacity, dated stocks, resource tradeoffs and manual fallback. All
+adoption scenarios retain identical human provision; scenario coefficients remain
+synthetic and computation requires no AI.
+
 ## Implemented capabilities
 
 - Observe consistent invariant/queue snapshots with a limited observer credential.

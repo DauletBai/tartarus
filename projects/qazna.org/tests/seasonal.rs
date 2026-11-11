@@ -286,3 +286,72 @@ fn extreme_process_products_do_not_wrap_to_feasible_stock() {
         Err(MathError::Overflow)
     );
 }
+
+#[test]
+fn seasonal_shared_work_cannot_be_booked_twice_or_used_before_completion() {
+    use qazna::horizon::StockCapacity;
+    let (m, p) = fixture();
+    // The existing grain stock is used solely as a synthetic capacity proxy here.
+    // At month 1 opening stock is 9, not its end-of-month 6.
+    for units in 1..=12 {
+        let cap = vec![StockCapacity {
+            name: "shared".into(),
+            resource: 0,
+            units_per_stock: 1,
+            activity_use: vec![units],
+        }];
+        let expected = p.iter().enumerate().all(|(t, row)| {
+            let opening = if t == 0 {
+                m.physical.initial[0]
+            } else {
+                p[t - 1].closing[0]
+            };
+            row.activities[0] * units <= opening
+        });
+        assert_eq!(m.replay_with_capabilities(&p, &cap).is_ok(), expected);
+        assert_eq!(
+            verify_linear(
+                &m.compile_with_capabilities(&cap).unwrap(),
+                &m.physical.vector(&p).unwrap(),
+                None
+            )
+            .is_ok(),
+            expected
+        );
+    }
+}
+#[test]
+fn shared_extension_keeps_full_needs_and_rejects_malformed_limits() {
+    use qazna::horizon::StockCapacity;
+    let (m, mut p) = fixture();
+    let valid = StockCapacity {
+        name: "work".into(),
+        resource: 0,
+        units_per_stock: 1,
+        activity_use: vec![1],
+    };
+    assert!(
+        m.compile_with_capabilities(&[valid.clone(), valid.clone()])
+            .is_err()
+    );
+    let mut bad = valid.clone();
+    bad.activity_use = vec![-1];
+    assert!(m.replay_with_capabilities(&p, &[bad]).is_err());
+    let mut bad = valid.clone();
+    bad.resource = 1;
+    assert!(m.compile_with_capabilities(&[bad]).is_err());
+    p[7].deliveries[0] = 0;
+    p[7].closing[0] += 1;
+    assert!(
+        m.replay_with_capabilities(&p, std::slice::from_ref(&valid))
+            .is_err()
+    );
+    assert!(
+        verify_linear(
+            &m.compile_with_capabilities(&[valid]).unwrap(),
+            &m.physical.vector(&p).unwrap(),
+            None
+        )
+        .is_err()
+    );
+}

@@ -517,3 +517,13 @@ excess energy/fuel production without model calls. See [comparisons, formulas an
 calibration limits](physical-circulation.md#reducing-excess-production-while-preserving-provision).
 The comparison is retrospective and synthetic; it is not an online/global solver
 or a budget forecast for a country.
+
+## Physical automation is distinct from model inference cost
+
+The schema-13 automation annex runs without AI calls. It compares labour,
+energy, upkeep material and deployment/qualification delays in declared scenario
+units. Its operational energy ticks include synthetic automatic-route overhead;
+they are not measured model inference, datacentre or robot electricity. They must
+not be added to earlier infrastructure budgets as if they were kWh or currency.
+A faster AI service alone does not remove a physical supply bottleneck. See
+[the physical comparison](physical-circulation.md#automation-seasonal-output-and-dated-distribution--11-november-2026).

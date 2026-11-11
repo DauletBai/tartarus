@@ -2,6 +2,10 @@
 
 ## Unreleased
 
+- Couple seasonal grain/feed with processing, transport, shared installed/qualified capacity and dated inventory in schema 13.
+- Compare manual, slow/reference/rapid automation and common control outage with unchanged provision; expose six resource/fallback counterexamples and shelf-life sensitivity.
+- Add capability composition/replay, deployment delays, explicit energy/upkeep tradeoffs and regression tests. No runtime, monetary authority, dependency or migration changes.
+
 - Add a 60-month seasonal cereal/feed subchain with shared land, seed inputs, crop calendars, stage irrigation, full needs and next-cycle stock floors (report schema 12).
 - Check six harvest/replenishment/capacity candidates with exact matrices and independent chronological replay; preserve historical report sections.
 - Add source-pinned USDA rice-preparation estimates and sequential retention bounds; unknown storage remains unknown.

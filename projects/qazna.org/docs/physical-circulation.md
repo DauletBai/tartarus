@@ -1503,3 +1503,98 @@ chains in these same monthly units; connect dated lots and nutrient retention;
 then extend the remaining food sectors and demographic profiles. Only after those
 steps can a reviewed mapping connect this annex to runtime drafts and accounting.
 Existing monetary traces and household entitlements have not been changed.
+
+## Automation, seasonal output and dated distribution — 11 November 2026
+
+The schema-13 `automation_and_food_chain` annex extends the unchanged seasonal
+100-million-person order snapshot into **one 60-month matrix**: 17 resources,
+29 processes, 4,800 variables and 7,005 constraints per candidate. All needs must
+be delivered on their original dates. Rice, oats and feed remain distinct gross
+stock equivalents; feed is not counted a second time as human food. Two one-month
+routes connect harvested/seed grain to preserved inventory and then destination
+inventory. No clinical nutrient equivalence or actual milling yield is inferred
+from these identity routes. Household cooking and delivery choices remain in the
+order model and are not overwritten by automation.
+
+Three deployment scenarios (slow, reference, rapid) are compared with a manual
+reference and with a three-month common control outage. A synthetic automated
+cell is a **pooled industrial/logistics module**, not one physical robot. Its
+capacity is shared across all crops and both routes. Installation takes three
+months and preparation of consenting available crews six months; completed
+capacity becomes usable in the following month. Rapid model improvement does
+not instantly install equipment, train specialists or increase existing capacity.
+
+The additional constraints are:
+
+```text
+sum_j human_work[j] * starts[t,j] <= available_work[t-1]
+sum_j automated_route[j] * starts[t,j] <= 5,000,000 * installed_cells[t-1]
+sum_j automated_route[j] * starts[t,j] <= 5,000,000 * qualified_crews[t-1]
+stock[t,r] = stock[t-1,r] + boundary[t,r] + completed[t,r]
+             - sum_j inputs[j,r] * starts[t,j] - needs[t,r] - unused[t,r]
+```
+
+At period zero, explicit initial stocks replace the previous-period quantities.
+The seasonal land/water/calendar/full-needs/floor constraints remain active in
+this same matrix. `replay_with_capabilities` independently checks chronological
+balances and shared use. There is no objective certificate or claim of a globally
+optimal deployment rate.
+
+All five feasible candidates supply the same **213,115,833,990 kg of declared
+cereal/feed equivalents** over five years. The following year-five comparison
+uses billion **synthetic ticks**, not working hours, national employment or kWh:
+
+| Scenario | Human work, billion ticks | Reduction from manual | Energy, billion ticks | Actual automated share of route quantity |
+| --- | ---: | ---: | ---: | ---: |
+| Manual | 511.478 | 0% | 85.246 | 0% |
+| Slow adoption | 383.704 | 24.98% | 109.356 | 28.15% |
+| Reference adoption | 210.605 | 58.82% | 151.771 | 77.65% |
+| Rapid adoption | 147.062 | 71.25% | 166.890 | 95.00% |
+
+Work includes the declared installation/training effort and residual human work
+on automated routes. The result is possible released work, **not a reduction in
+any person's provision or a forecast of unemployment**. The rapid scenario needs
+about 95.8% more energy ticks in year five. The chosen automated recipes exchange
+labour for energy and upkeep material; technology that saves both needs different,
+measured coefficients. No monetary cost saving follows automatically from these
+numbers. Energy ticks must be calibrated to kWh and infrastructure before any
+budget estimate can be made.
+
+The model retains five annual shutdown months (including the terminal month with
+no route starts). The common control outage at months 30–32 uses manual capacity.
+Its actions match the no-outage case before observation of the failure. In year three the outage requires an additional 62.393 billion human-work ticks. Removing
+that fallback fails the fixed plan, while maintaining it preserves delivery.
+Six further fixed-candidate counterexamples cover an energy cut, unavailable
+first training intake, missing robot kits, removed manual fallback, inadequate
+packaging at terminal replenishment and absent upkeep material. Rejection proves
+that the candidate cannot operate under those constraints, not that every other
+possible schedule is infeasible. Annual figures for rejected candidates describe
+the proposed schedule, not actual completed provision.
+
+Initial processing and destination inventories are **additional stated
+endowments**, and terminal floors restore both as well as the original raw reserve.
+Preparing that final bridge creates resource peaks: a five-billion-tick monthly
+packaging allowance that covers ordinary months fails during replenishment.
+The feasible comparison declares eight billion packaging ticks, twelve billion
+upkeep ticks, thirty billion energy ticks and ninety billion human-work ticks per
+month. Unused boundary allowances appear explicitly as discarded/unutilized
+quantities, not accumulating energy. These are scenario capacities, not a resource
+optimization or a recommendation to manufacture unused materials.
+
+An independent FEFO replay follows original expiry through both routes; neither
+processing nor transport resets it. It checks source, pending arrivals and
+closing inventories against the same proposed graph. An assumed **18-month
+remaining life**, including opening endowments, passes with no expiry loss.
+Sensitivity checks at 6, 9, 12 and 15 months reject this particular schedule;
+24 months also passes. This does not certify an 18-month food life or prove that
+shorter-life schedules are impossible. Preservation conditions, starting age,
+nutrients, biological losses and safe real commodity profiles require evidence.
+
+Remaining boundaries: external energy, packaging, materials, kits and training
+places are not endogenously produced here; store capacities are declared rather
+than newly constructed. Per-use upkeep and planned shutdowns do not replace a
+calendar-age failure/replacement model. Existing detailed generator-maintenance
+and transport-damage experiments remain separate. Other crops, fisheries,
+complete animal rations, regional logistics and individual service needs remain
+open. No new ledger policy, AI requirement, endpoint or emission authority was
+introduced. See [AI evidence and interpretation](ai-economic-research.md#automation-scenarios-in-the-physical-graph).

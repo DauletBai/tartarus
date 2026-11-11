@@ -441,3 +441,41 @@ passed. Both circulation exercises and actor seeds 7/19 completed, preserving
 the known physical-evidence limitation. The disposable PostgreSQL cluster was
 stopped and removed. No existing database, real money or model calls were used.
 Local results do not stand in for remote CI; inspect the published PR separately.
+
+## Seasonal automation integration — 11 November 2026
+
+The automation annex is part of the existing coupled example and mandatory
+runner. It adds no network model calls, dependencies, migrations or API actions.
+Reproduce only this annex with:
+
+```sh
+cargo run --locked --release --example coupled_study -- --automation-only /tmp/qazna-automation.json
+```
+
+The seasonal suite now has 14 tests. New checks compare shared-capacity limits
+against direct opening-stock arithmetic, reject malformed/duplicate capacity
+rules and retain mandatory delivery of non-objective needs. Four new example
+tests require equal provision across deployment rates, labour/energy tradeoffs,
+no automation before qualification, no double-booking of shared robots/crews,
+unchanged actions before a common outage, replenished terminal pipeline stocks
+and rejection of extra delivery or expiry renewal. The eleven report candidates
+include six rejected resource/fallback cases, with shelf-life sensitivity.
+Quantities displayed for rejected candidates are proposed plans, not completed
+provision. Exact validation does not establish the empirical scenario coefficients.
+
+The report is written by the Rust example, including its original JSON numeric
+formatting. The runner verifies all maintained reports byte-for-byte. Do not
+rewrite the full report with a different JSON serializer: equal numeric content
+can have a different byte representation. Use the normal reproduction command.
+
+Full local runner passed on 11 November 2026: **209 Rust tests** (3 library,
+57 mathematics, 18 nutrition, 14 seasonal, 4 no-AI, 22 coupled example and
+91 PostgreSQL) and **11 Python advisory tests**. Format, all-target Clippy,
+licences and byte-identical reproduction of all three maintained reports passed.
+All 17 preceding top-level report sections remain semantically unchanged.
+HTTP three-restart checks, both strict-evidence configurations and 36-table
+backup/restore passed. Circulation completed 4,548 requests in 55.931 seconds
+with one restart; closed circulation completed 3,901 in 46.730 seconds with two
+restarts. Actor seeds 7/19 completed with the pre-existing physical-evidence
+limitation retained. The disposable cluster stopped and was removed. No existing
+database or live funds were used. Remote CI must be checked on the published head.
