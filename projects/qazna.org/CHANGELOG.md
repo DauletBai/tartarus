@@ -2,6 +2,11 @@
 
 ## Unreleased
 
+- Add migration 0013 for immutable dated scenario definitions, candidate commands/checkpoints and reviewed outcomes.
+- Add bounded operator-only scenario routes, trusted current generations, command replay before acceptance and stale/concurrent approval protection.
+- Exercise atomic retries/rollback, raw-import rejection, immutable history, checkpoint limits and real restart/restore under runtime privileges; retain separate review across restored XID collisions and SAVEPOINT use.
+- Keep research-state approval separate from real inventory, accounting and AI execution authority; full coupled scenario persistence remains open.
+
 - Add versioned, origin-preserving dated state with explicit pending harvest, movements and expiry/loss counters; reject stale or altered imports against a trusted reference.
 - Verify all 60 upstream food checkpoints and retain all preceding report sections in schema 16.
 - Add independent 192-schedule expiry checks and atomic failure/import tests.

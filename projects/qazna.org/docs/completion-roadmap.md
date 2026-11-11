@@ -1,15 +1,18 @@
 # Completion roadmap and feasibility boundaries
 
-Latest review: 11 November 2026, dated checkpoint continuity and completion estimate.
+Latest review: 11 November 2026, persistent reviewed dated-state implementation.
 The current work order below supersedes earlier milestone-specific next steps.
 
 ## Completion scope and remaining work — 11 November 2026
 
 This estimate is based on the current source, HTTP routes, migration set and test
-runner, not on a percentage inferred from test count. The current stage closes
-**offline dated-state continuity**. It does not implement a trusted snapshot
-store, runtime application or physical inspection. The next six packages below
-supersede older milestone-specific next steps.
+runner, not on a percentage inferred from test count. The latest stage adds
+**persistent reviewed dated-state continuity**: immutable
+PostgreSQL history, current generations, operator approval and bounded command
+replay. It does not apply physical inventory or monetary changes. Package 1 is
+partially implemented: the complete coupled scenario/input definitions still need
+the same persistence and restoration boundary. The six packages below supersede
+older milestone-specific next steps.
 
 The target for this estimate is **research demonstrator v1**: a reproducible,
 bounded five-year scenario with linked provisioning, physical capabilities and
@@ -21,17 +24,17 @@ national sectors or a production monetary system.
 
 | Remaining package | Acceptance gate | Estimated focused engineering days |
 | --- | --- | ---: |
-| 1. Persist and review scenario state | Versioned immutable inputs/checkpoints, trusted current revision, resource/unit/schema binding, transactional import, stale-state/concurrent-update rejection, operator approval, restart/restore; bounded upload contract distinct from the existing 16 KiB API limit | 4–7 |
+| 1. Finish persistent coupled scenario state | Dated-state store implemented; extend versioned inputs/checkpoints to the capital/seasonal/circulation models and verify full-scenario restart/restore. Current command-only API keeps 16 KiB requests and 256 KiB internal checkpoints | 2–4 |
 | 2. Join extended physical and monetary plans | One selected end-to-end scenario links upstream production, dated food, capital/replacement and material recovery to exact circulation; no hidden issuance, duplicated input or unaccounted work; independent reconciliation and shortage explanation | 5–8 |
 | 3. Define a bounded input and population registry | Units, sources, dates, assumptions and uncertainty; age/cohort transitions and selected need profiles; missing food-retention/engineering values remain unknown; reproducible synthetic and calibrated modes clearly separated | 6–10 |
 | 4. Close the rolling feedback experiment | Decisions use observed state, retain commitments, replan after declared outages/demand changes, report shortages without inventing goods, and pass sensitivity/adversarial cases; optional solver outputs independently verified | 4–7 |
 | 5. Expose the demonstrator's workflows | Small operator/reviewer interface, synthetic participant scope, intelligible reasons, correction/dispute examples, approval and audit history, accessible navigation; no claim of production identity/enrollment | 7–12 |
 | 6. Freeze and reproduce a release | Clean deployment, recorded workload envelope, sustained/restart/restore and fault exercises, dependency/privilege review, versioned evidence and known limitations, release guide and runnable demonstration | 4–6 |
 
-**Total planning range: 30–50 focused engineering days**, approximately **6–10
+**Total planning range: 28–47 focused engineering days**, approximately **6–10
 working weeks** for one continuously available full-time implementer at five days
 per week. The calculation-focused packages 2–4 total **15–25 engineering days**;
-packages 1, 5 and 6 add **15–25 days** for the service and release. This is a rough
+packages 1, 5 and 6 add **13–22 days** for the service and release. This is a rough
 human-equivalent effort estimate, not a promise of autonomous agent work or a
 calendar completion date. Decisions, missing source data, failed acceptance tests,
 review findings and interruptions can extend elapsed time. Re-estimate after each
@@ -52,11 +55,12 @@ billions of users is not the next six-week deliverable.
 
 Evidence used in this estimate: `src/api.rs` and current 16 KiB body limit;
 `src/draft_service.rs` and existing atomic operator application;
-`src/rolling.rs` (offline fixed-prefix models); `src/dated.rs` (offline trusted-anchor
-import, not a database store); `migrations/` (no full-scenario checkpoint tables);
+`src/rolling.rs` (offline fixed-prefix models); `src/dated.rs` and
+`src/scenario_service.rs` (persistent dated-state command replay);
+`migrations/0013_dated_scenarios.sql` (dated scenarios, not full coupled models);
 `docs/development.md` (actual tests); and the absence of a participant product UI.
-Existing backup, privilege and draft tests reduce implementation work, but do not
-close the new integration or empirical-evidence gates.
+Existing backup, privilege and draft tests cover the new dated-state boundary;
+full-model integration and empirical-evidence gates remain open.
 
 ## Earlier implementation order and bounded results
 

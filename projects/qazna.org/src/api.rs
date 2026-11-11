@@ -1,3 +1,4 @@
+use crate::scenarios::{ScenarioDecision, ScenarioDefinition, ScenarioProposal};
 use crate::{
     coordination::{MonitorRequest, ReviewRequest},
     domain::{NewAccount, Transfer},
@@ -104,6 +105,21 @@ impl AccessTokens {
 
 pub fn router_with_access(ledger: Ledger, tokens: AccessTokens) -> Router {
     let private = Router::new()
+        .route("/v1/scenarios/dated", post(create_dated_scenario))
+        .route("/v1/scenarios/dated/{id}", get(dated_scenario))
+        .route(
+            "/v1/scenarios/dated/{id}/versions/{generation}",
+            get(dated_scenario_version),
+        )
+        .route(
+            "/v1/scenarios/dated/{id}/drafts",
+            post(propose_dated_scenario),
+        )
+        .route("/v1/scenario-drafts/{id}", get(dated_scenario_draft))
+        .route(
+            "/v1/scenario-drafts/{id}/resolve",
+            post(resolve_dated_scenario),
+        )
         .route("/v1/system/status", get(system_status))
         .route("/v1/evidence/principals", post(register_principal))
         .route(
@@ -426,6 +442,10 @@ async fn need_attempts(
 impl IntoResponse for LedgerError {
     fn into_response(self) -> Response {
         let (status, code) = match &self {
+            Self::ScenarioNotFound => (StatusCode::NOT_FOUND, "scenario_not_found"),
+            Self::ScenarioConflict => (StatusCode::CONFLICT, "scenario_exists"),
+            Self::ScenarioStale => (StatusCode::CONFLICT, "scenario_stale"),
+            Self::ScenarioClosed => (StatusCode::CONFLICT, "scenario_closed"),
             Self::Invalid(_) => (StatusCode::BAD_REQUEST, "invalid_request"),
             Self::NotFound => (StatusCode::NOT_FOUND, "account_not_found"),
             Self::AccountConflict => (StatusCode::CONFLICT, "account_exists"),
@@ -750,6 +770,60 @@ async fn evidence(
     Ok(Json(
         ledger
             .scoped_evidence(actor.map(|a| a.0.0), &kind, id)
+            .await?,
+    ))
+}
+
+async fn create_dated_scenario(
+    State(ledger): State<Ledger>,
+    headers: HeaderMap,
+    Json(request): Json<ScenarioDefinition>,
+) -> Result<impl IntoResponse, LedgerError> {
+    Ok(Json(
+        ledger
+            .create_dated_scenario(command_key(&headers)?, request)
+            .await?,
+    ))
+}
+async fn dated_scenario(
+    State(ledger): State<Ledger>,
+    Path(id): Path<Uuid>,
+) -> Result<impl IntoResponse, LedgerError> {
+    Ok(Json(ledger.dated_scenario(id, None).await?))
+}
+async fn dated_scenario_version(
+    State(ledger): State<Ledger>,
+    Path((id, generation)): Path<(Uuid, i64)>,
+) -> Result<impl IntoResponse, LedgerError> {
+    Ok(Json(ledger.dated_scenario(id, Some(generation)).await?))
+}
+async fn propose_dated_scenario(
+    State(ledger): State<Ledger>,
+    Path(id): Path<Uuid>,
+    headers: HeaderMap,
+    Json(request): Json<ScenarioProposal>,
+) -> Result<impl IntoResponse, LedgerError> {
+    Ok(Json(
+        ledger
+            .propose_dated_scenario(command_key(&headers)?, id, request)
+            .await?,
+    ))
+}
+async fn dated_scenario_draft(
+    State(ledger): State<Ledger>,
+    Path(id): Path<Uuid>,
+) -> Result<impl IntoResponse, LedgerError> {
+    Ok(Json(ledger.dated_scenario_draft(id).await?))
+}
+async fn resolve_dated_scenario(
+    State(ledger): State<Ledger>,
+    Path(id): Path<Uuid>,
+    headers: HeaderMap,
+    Json(request): Json<ScenarioDecision>,
+) -> Result<impl IntoResponse, LedgerError> {
+    Ok(Json(
+        ledger
+            .resolve_dated_scenario(command_key(&headers)?, id, request)
             .await?,
     ))
 }

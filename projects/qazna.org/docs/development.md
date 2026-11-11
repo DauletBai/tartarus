@@ -583,3 +583,68 @@ one restart; closed circulation completed 3,901 in 47.032 seconds with two
 restarts. Actor seeds 7/19 retained their known physical-evidence limitation.
 The disposable cluster stopped and was removed. No existing database, live funds
 or model calls were used. Remote CI is verified on the published head separately.
+
+
+## Persistent scenario workflow
+
+All routes below use the operator credential. Observer/reviewer/AI credentials do
+not gain access. Mutation requests require a global `Idempotency-Key`.
+
+| Route | Meaning |
+| --- | --- |
+| `POST /v1/scenarios/dated` | Create an immutable definition and empty generation zero |
+| `GET /v1/scenarios/dated/{id}` | Read current approved state |
+| `GET /v1/scenarios/dated/{id}/versions/{generation}` | Read an accepted historical generation |
+| `POST /v1/scenarios/dated/{id}/drafts` | Replay proposed commands against `expected_generation`; save pending candidate |
+| `GET /v1/scenario-drafts/{id}` | Inspect exact commands, candidate, status and decision basis |
+| `POST /v1/scenario-drafts/{id}/resolve` | Explicitly apply or discard a committed candidate |
+
+Example definition (use your own UUID and synthetic scope):
+
+```json
+{"id":"00000000-0000-0000-0000-000000000101","format_version":1,"unit":"grain_kg","resources":["store","kitchen"],"basis":"Synthetic research case"}
+```
+
+Example first proposal:
+
+```json
+{"id":"00000000-0000-0000-0000-000000000102","expected_generation":0,"commands":[{"kind":"advance","period":0},{"kind":"introduce","id":1,"resource":0,"quantity":10,"available":0,"expires":4,"basis":"Synthetic opening lot"}],"basis":"Opening scenario for review"}
+```
+
+Inspect the saved draft before a separate operator request with
+`{"apply":true,"basis":"Reviewed synthetic changes"}`. `apply:false` discards it.
+A 409 `scenario_stale` requires a fresh proposal and review; do not retry it with a
+new base without recalculation. Replay with the same idempotency key returns the
+original response (including an older generation); GET current state separately.
+No file upload is needed. The API keeps the existing 16 KiB request limit, permits
+1–64 commands and caps internally generated checkpoints at 256 KiB. Unknown fields,
+including a caller-supplied `checkpoint`, are rejected. New service starts require
+migration 0013; readiness checks the new table. Reapply runtime grants after schema
+migration as described by `fixtures/runtime_permissions.sql`.
+
+`tests/cases/scenarios.rs` covers competing approvals, concurrent idempotent retries,
+failed batch/commit rollback, stale discard, preserved scope and origin age,
+immutable history, same-transaction/SAVEPOINT/forged-XID bypasses, restored historical-XID collisions,
+oversized checkpoints,
+invalid definitions, raw snapshot injection and AI/observer denial. A structurally
+conserved forged candidate must still fail exact command replay. The real binary
+exercise `scripts/scenario_exercise.py` preserves pending and approved bytes across
+two process restarts; the backup test restores populated tables and continues a
+pending proposal under the restricted runtime role, retaining original transit,
+expiry and future-harvest state.
+
+Full local verification passed on 11 November 2026: **252 Rust tests** (3 library,
+57 mathematics, 18 nutrition, 14 seasonal, 6 capital, 10 rolling/material,
+9 dated-state, 4 no-AI, 29 coupled-example and **102 PostgreSQL** tests), plus
+**11 Python** advisory tests. All-target Clippy, formatting and the dependency
+license inventory passed. All three published mathematical reports reproduced
+byte-for-byte; no research result file or dependency changed.
+
+The live checks passed: three existing service restarts; two new scenario process
+restarts; both strict-evidence exercises; logical backup/restore of **39 tables**
+with populated scenario history and nine runtime privilege denials; continuation
+of restored pending state under that runtime role; 4,548 circulation requests
+(56.271 s, one restart); 3,901 closed-circulation requests (46.741 s, two restarts);
+and actor exercises with seeds 7 and 19. These are synthetic measured exercises,
+not production throughput or physical-attestation guarantees. The previously
+reported physical-evidence gap in the actor exercises remains visible.

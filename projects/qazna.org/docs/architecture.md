@@ -280,3 +280,58 @@ The scenario adapter verifies every boundary of the existing 60-month food path.
 This prepares a state contract for a future reviewed runtime integration; it does
 not add a database snapshot table or bypass the 16 KiB HTTP limit. Original food
 safety, observation authenticity and identity-route assumptions remain explicit.
+
+
+## Persistent reviewed dated scenarios — 11 November 2026
+
+Migration 0013 and `scenarios` / `scenario_service` add an operator-only research
+state store. It is separate from real inventory, provision and the monetary ledger.
+The immutable definition binds a UUID scope, format version 1, physical unit,
+ordered unique resource/location names and an assumption basis. Creation stores an
+empty generation zero. It cannot import a claimed opening inventory as fact.
+
+A proposal supplies the expected store generation and 1–64 typed commands:
+advance, introduce a declared origin, transfer, withdraw or record movement loss.
+Rust reads the current approved canonical bytes from PostgreSQL, validates their
+scope/unit/resource count/revision, replays the commands and saves immutable
+candidate bytes. The flow revision counts commands; the store generation counts
+approved batches. A pending candidate is never the current state.
+
+The operator subsequently resolves a committed draft with an explicit basis.
+Application locks its scenario, rejects a changed base generation, replays again
+and compares the exact candidate before appending an outcome. A different operator
+request cannot silently rebase the draft. A stale candidate can be discarded; a
+closed candidate cannot be reopened. Only applied outcomes select current state;
+historical reads do not roll it back. Global idempotency records share the same
+transaction, including deferred failures. Scenario rows, drafts and outcomes reject
+UPDATE/DELETE/TRUNCATE; database constraints also require sequential generations,
+matching scope and a draft committed before its decision transaction. The latter
+check also consults the local inserting transaction's commit status, with the
+32-bit tuple XID mapped to a nearby full XID. A restored historical stamp that
+happens to equal the new cluster's current XID does not block a committed draft;
+SAVEPOINT creation or release does not bypass the separate-commit gate. PostgreSQL's
+[XID status implementation](https://github.com/postgres/postgres/blob/REL_16_STABLE/src/backend/utils/adt/xid8funcs.c)
+is the reference for this exceptional check; the integration tests cover both
+restored collisions and current nested transactions. Historical stamps alone are
+not a portable proof that a row was created in the current database transaction.
+
+The HTTP request limit remains **16 KiB**. There is **no raw snapshot upload**.
+Clients submit bounded command batches; internal canonical checkpoints are capped
+at **256 KiB** (the offline helper's larger limit is not the service contract).
+Large scenarios must be explicitly redesigned/partitioned, not silently truncated.
+Checkpoints are returned as JSON strings so their exact canonical bytes survive
+transport. Do not parse large integer quantities through a floating-point client
+and resubmit them without exact-integer handling.
+
+The trusted store is the application-controlled PostgreSQL history. This is not a
+signature system or protection against a database administrator rewriting dumps,
+disabling triggers or changing code. Database login credentials are not participant
+credentials; the operator token remains a local service credential, not a named
+human identity or a multi-party approval system. Introductions are reviewed
+scenario declarations, not independently attested harvests. No route changes
+real lots, transfers, allocations, normative registries or issuance.
+
+Remaining package-1 work: persist the coupled capital/seasonal model and input
+versions, associate dated states with their physical/monetary scenario, and validate
+full-model restart/restore. This milestone provides the dated-state part of that
+workflow, not arbitrary national scenario import.

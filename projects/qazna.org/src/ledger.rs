@@ -86,6 +86,14 @@ pub enum LedgerError {
     EvidenceRequired,
     #[error("principal access denied")]
     AccessDenied,
+    #[error("dated scenario or generation not found")]
+    ScenarioNotFound,
+    #[error("dated scenario or draft already exists")]
+    ScenarioConflict,
+    #[error("dated scenario generation changed; review a new draft")]
+    ScenarioStale,
+    #[error("dated scenario draft is already resolved")]
+    ScenarioClosed,
     #[error("stored response is invalid")]
     InvalidStoredResponse,
     #[error("database operation failed")]
@@ -103,7 +111,7 @@ impl Ledger {
     }
 
     pub async fn ready(&self) -> Result<(), LedgerError> {
-        sqlx::query("SELECT principal_id FROM evidence_principal_revocations LIMIT 0")
+        sqlx::query("SELECT draft_id FROM dated_scenario_outcomes LIMIT 0")
             .execute(&self.pool)
             .await?;
         Ok(())

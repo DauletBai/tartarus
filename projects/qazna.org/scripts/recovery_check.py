@@ -35,6 +35,9 @@ def check_recovery(pg, root, socket_dir, source='evidence_demo'):
             result[table] = hashlib.sha256(rows.encode()).hexdigest()
         return result
 
+    from scenario_exercise import populate_and_restart, resume_restored
+    source_url = 'postgresql://qazna@localhost/' + source + '?' + urlencode({'host': str(socket_dir)})
+    reference = populate_and_restart(source_url)
     started = time.monotonic()
     before = fingerprint(source)
     archive = root / 'synthetic-backup.dump'
@@ -47,6 +50,7 @@ def check_recovery(pg, root, socket_dir, source='evidence_demo'):
     assert fingerprint(restored) == before, 'restored table contents differ'
     assert sql(restored, "SELECT count(*) FROM evidence_statements").strip() != '0'
     assert sql(restored, "SELECT count(*) FROM evidence_enforcement").strip() == '1'
+    assert sql(restored, "SELECT count(*) FROM dated_scenario_outcomes").strip() == '1'
     # Verify restored triggers still reject history mutation.
     sql(restored, 'DELETE FROM evidence_statements', expected=False)
     sql(restored, 'DELETE FROM evidence_enforcement', expected=False)
@@ -60,6 +64,9 @@ def check_recovery(pg, root, socket_dir, source='evidence_demo'):
         'DELETE FROM evidence_statements',
         'TRUNCATE evidence_statements CASCADE',
         'UPDATE evidence_statements SET basis=basis',
+        'UPDATE dated_scenarios SET initial=initial',
+        'DELETE FROM dated_scenario_drafts',
+        'TRUNCATE dated_scenario_outcomes',
         "INSERT INTO evidence_principal_revocations(principal_id,basis) SELECT id,'bypass' FROM evidence_principals LIMIT 1",
     ]:
         sql(restored, 'SET ROLE qazna_runtime; ' + forbidden, expected=False)
@@ -69,8 +76,9 @@ def check_recovery(pg, root, socket_dir, source='evidence_demo'):
     runtime_url = 'postgresql://qazna_test_runtime@localhost/' + restored + '?' + urlencode({'host': str(socket_dir)})
     # Activation is already durable, so the runtime must only serve, never reactivate.
     run_evidence_exercise(runtime_url, root / 'runtime-evidence', activate=False)
+    resume_restored(runtime_url, reference)
     report = dict(result='passed', tables_verified=len(before), table_sha256=before,
-                  elapsed_seconds=round(time.monotonic()-started,3), runtime_denials=6,
+                  elapsed_seconds=round(time.monotonic()-started,3), runtime_denials=9, scenario_restart_restore=True,
                   limitation='Synthetic logical backup; no PITR or production RPO/RTO guarantee')
     (root / 'recovery-report.json').write_text(json.dumps(report,indent=2)+'\n')
     print(f"Backup/restore and runtime privilege checks passed: {len(before)} tables", flush=True)
