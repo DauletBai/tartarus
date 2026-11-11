@@ -170,7 +170,13 @@ fn future_supply_can_change_but_cannot_rewrite_the_past() {
 #[test]
 fn invalid_or_unverified_checkpoint_cannot_be_imported() {
     let (m, p) = fixture(14);
-    assert!(RollingCapital::checkpoint(&m, &p, 0).is_err());
+    let initial = RollingCapital::checkpoint(&m, &p, 0).unwrap();
+    assert_eq!(
+        initial.snapshot().opening_stock,
+        m.seasonal.physical.initial
+    );
+    assert!(initial.snapshot().pending.is_empty());
+    agree(&initial, &m, &p, true);
     assert!(RollingCapital::checkpoint(&m, &p, 15).is_err());
     let mut q = p.clone();
     q[1].closing[0] += 10;

@@ -5,22 +5,22 @@ use crate::{
     horizon::PeriodPlan,
     mathematics::{LinearModel, MathError, Row, Sense, verify_linear},
 };
-use serde::Serialize;
+use serde::{Deserialize, Serialize};
 
-#[derive(Clone, Debug, Serialize)]
+#[derive(Clone, Debug, Serialize, Deserialize)]
 pub struct Commitment {
     pub process: usize,
     pub started: usize,
     pub completes: usize,
     pub activities: i64,
 }
-#[derive(Clone, Debug, Serialize)]
+#[derive(Clone, Debug, Serialize, Deserialize)]
 pub struct Cohort {
     pub resource: usize,
     pub quantity: i64,
     pub expires: usize,
 }
-#[derive(Clone, Debug, Serialize)]
+#[derive(Clone, Debug, Serialize, Deserialize)]
 pub struct RollingSnapshot {
     /// First period that may be replanned. All dates remain absolute.
     pub boundary: usize,
@@ -56,7 +56,7 @@ impl RollingCapital {
         plan: &[PeriodPlan],
         boundary: usize,
     ) -> Result<Self, MathError> {
-        if boundary == 0 || boundary > plan.len() {
+        if boundary > plan.len() {
             return Err(MathError::Invalid("checkpoint boundary"));
         }
         verify_linear(
@@ -112,7 +112,11 @@ impl RollingCapital {
         }
         let snapshot = RollingSnapshot {
             boundary,
-            opening_stock: plan[boundary - 1].closing.clone(),
+            opening_stock: if boundary == 0 {
+                h.initial.clone()
+            } else {
+                plan[boundary - 1].closing.clone()
+            },
             pending,
             opening_cohorts: cohorts,
         };

@@ -25,6 +25,13 @@ Qazna is a research system for meeting human needs, based on the Tenge model des
 
 The project lives in `projects/qazna.org/` in [Tartarus](https://github.com/DauletBai/tartarus), alongside the book and research archive. The MVP and subsequent production development share **Rust + Tokio + Axum + SQLx + PostgreSQL**. Rust owns planning inputs and exact validation; an isolated mathematical solver is proposed for larger optimization problems. React/TypeScript is planned for the interface. Project documentation, code comments, examples and contributor materials are maintained in English for an international community.
 
+The service now preserves reviewed physical model versions: seasonal production,
+capital replacement, stocks, pending work and exact constituent balances. Replanning
+retains committed history and original equipment ages; selected dated stocks can be
+pinned and checked. A proposal needs separate operator approval. The next stage joins
+these research versions to a fully reconciled monetary scenario; no model approval
+itself changes money or verified inventory. See [architecture](docs/architecture.md#reviewed-physical-model-versions).
+
 ## Project information
 
 | Item | Reference |
@@ -72,7 +79,7 @@ The [rolling commitments and material annex](docs/physical-circulation.md#rollin
 The [dated checkpoint annex](docs/physical-circulation.md#dated-food-checkpoints--11-november-2026)
 retains original lot identity, expiry and in-flight output through all 60 monthly
 boundaries. The [completion estimate](docs/completion-roadmap.md#completion-scope-and-remaining-work--11-november-2026)
-sets six remaining packages for a bounded research demonstrator, separately from
+sets five remaining packages after the physical persistence foundation, separately from
 national modelling and pilot readiness.
 
 ## Implemented capabilities

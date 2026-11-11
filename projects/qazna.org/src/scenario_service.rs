@@ -183,7 +183,7 @@ impl Ledger {
         finish(tx, key, &payload, result).await
     }
 }
-async fn lock(tx: &mut Tx<'_>, id: Uuid) -> Result<(), LedgerError> {
+pub(crate) async fn lock(tx: &mut Tx<'_>, id: Uuid) -> Result<(), LedgerError> {
     sqlx::query("SELECT id FROM dated_scenarios WHERE id=$1 FOR UPDATE")
         .bind(id)
         .fetch_optional(&mut **tx)
@@ -191,7 +191,7 @@ async fn lock(tx: &mut Tx<'_>, id: Uuid) -> Result<(), LedgerError> {
         .ok_or(LedgerError::ScenarioNotFound)?;
     Ok(())
 }
-async fn snapshot_in(
+pub(crate) async fn snapshot_in(
     tx: &mut Tx<'_>,
     id: Uuid,
     generation: Option<i64>,

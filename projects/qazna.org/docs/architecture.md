@@ -315,7 +315,7 @@ is the reference for this exceptional check; the integration tests cover both
 restored collisions and current nested transactions. Historical stamps alone are
 not a portable proof that a row was created in the current database transaction.
 
-The HTTP request limit remains **16 KiB**. There is **no raw snapshot upload**.
+Dated-command HTTP requests remain limited to **16 KiB**. There is **no raw snapshot upload**.
 Clients submit bounded command batches; internal canonical checkpoints are capped
 at **256 KiB** (the offline helper's larger limit is not the service contract).
 Large scenarios must be explicitly redesigned/partitioned, not silently truncated.
@@ -331,7 +331,59 @@ human identity or a multi-party approval system. Introductions are reviewed
 scenario declarations, not independently attested harvests. No route changes
 real lots, transfers, allocations, normative registries or issuance.
 
-Remaining package-1 work: persist the coupled capital/seasonal model and input
-versions, associate dated states with their physical/monetary scenario, and validate
-full-model restart/restore. This milestone provides the dated-state part of that
-workflow, not arbitrary national scenario import.
+The next section extends persistent history to the physical model. Monetary
+scenario association remains the next integration stage.
+
+
+## Reviewed physical model versions
+
+Migration **0014** adds immutable model definitions, proposed input/plan checkpoints
+and approval outcomes. A definition fixes ordered resource names and units, period
+unit, absolute time origin, provenance and optional dated-state mappings. Generation
+zero is an empty model slot, not a zero-stock physical model. Each proposal supplies
+a complete `CapitalCycle`, plan, rolling boundary, material bases and expected dated
+generations. Rust compiles exact constraints, checks the candidate vector, independently
+replays the physical chain and audits each declared material constituent. The service
+validates candidates; it does not yet search for or optimize a new plan.
+
+An approved version retains all seasonal/capital inputs, planned stocks, original
+asset cohorts, pending starts, constituent evidence and exact referenced dated
+checkpoints. Quantities are not summed across different units. Canonical checkpoints
+travel as JSON strings, preserving i128 totals that exceed JavaScript's exact integer
+range or u64. Arbitrary authoritative checkpoint uploads are not accepted.
+
+On replanning, the new boundary cannot retreat or exceed the old plan. The service
+freezes the old plan through the **new** boundary before testing a replacement: newly
+promoted history cannot be rewritten in the same proposal. Resource identity, initial
+stock, recipes, asset lifetime rules and material bases remain fixed. Future supplies,
+needs, capacities and an extended horizon may change when the existing rolling verifier
+permits them. Boundary zero preserves initial stock and cohort ages with no committed
+starts. Changing the fixed physical schema requires a distinct scenario, not a hidden
+revision. Observation corrections and emergency reconciliation remain future work.
+
+Each optional dated binding fixes a single-unit location-to-resource mapping and a
+basis for calendar alignment. The candidate must reference the current approved dated
+generation, match its period to `boundary - 1` (unstarted at boundary zero), and match
+selected opening-stock quantities and units. Model and dated rows remain locked through
+approval; dated locks are taken in sorted UUID order. A changed dated generation makes
+a pending proposal stale, even if total stock is unchanged. Historic accepted snapshots
+stay readable after dated state advances. This verifies **selected boundary-stock
+agreement and pinned history**, not a causal match of every lot movement to a production
+process. Unmapped stocks, material identity across transformations, physical attestation
+and the join to monetary circulation are not supplied by this gate.
+
+The model proposal route alone allows **1 MiB** request bodies; other routes retain
+16 KiB. Generated checkpoints are capped at **2 MiB**. Preflight bounds are 32 resources,
+48 processes, 120 periods, 16 land pools, 48 crop entries/stock limits, 32 asset lives/
+stores and eight material bases/dated bindings. A conservative `T*T*max(P,1)*R` budget
+is capped at 20 million before compilation. Four process-wide blocking calculation
+slots prevent an unbounded CPU queue; excess work receives retryable 503 `scenario_busy`.
+These are bounded demonstrator limits, not national-scale performance guarantees.
+
+A committed proposal requires a later operator decision. Application repeats validation
+against the locked approved head and compares exact candidate bytes before appending the
+outcome and idempotency response in one transaction. The same immutable-history,
+separate-transaction and sequential-generation rules as dated scenarios apply. The
+trusted boundary is the service and PostgreSQL deployment; a privileged database owner
+can still rewrite data or code. No model route creates inventory, real deliveries,
+ledger postings, participant entitlements or monetary issuance.

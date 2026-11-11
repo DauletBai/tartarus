@@ -36,3 +36,6 @@ pub mod rolling;
 
 mod scenario_service;
 pub mod scenarios;
+
+mod model_scenario_service;
+pub mod model_scenarios;

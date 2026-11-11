@@ -616,10 +616,9 @@ Inspect the saved draft before a separate operator request with
 A 409 `scenario_stale` requires a fresh proposal and review; do not retry it with a
 new base without recalculation. Replay with the same idempotency key returns the
 original response (including an older generation); GET current state separately.
-No file upload is needed. The API keeps the existing 16 KiB request limit, permits
+No file upload is needed. The dated API keeps its 16 KiB request limit, permits
 1–64 commands and caps internally generated checkpoints at 256 KiB. Unknown fields,
-including a caller-supplied `checkpoint`, are rejected. New service starts require
-migration 0013; readiness checks the new table. Reapply runtime grants after schema
+including a caller-supplied `checkpoint`, are rejected. Migration 0013 introduced this service; the current binary also requires 0014. Reapply runtime grants after schema
 migration as described by `fixtures/runtime_permissions.sql`.
 
 `tests/cases/scenarios.rs` covers competing approvals, concurrent idempotent retries,
@@ -633,7 +632,7 @@ two process restarts; the backup test restores populated tables and continues a
 pending proposal under the restricted runtime role, retaining original transit,
 expiry and future-harvest state.
 
-Full local verification passed on 11 November 2026: **252 Rust tests** (3 library,
+Previous dated-state stage: local verification passed on 11 November 2026 with **252 Rust tests** (3 library,
 57 mathematics, 18 nutrition, 14 seasonal, 6 capital, 10 rolling/material,
 9 dated-state, 4 no-AI, 29 coupled-example and **102 PostgreSQL** tests), plus
 **11 Python** advisory tests. All-target Clippy, formatting and the dependency
@@ -648,3 +647,54 @@ of restored pending state under that runtime role; 4,548 circulation requests
 and actor exercises with seeds 7 and 19. These are synthetic measured exercises,
 not production throughput or physical-attestation guarantees. The previously
 reported physical-evidence gap in the actor exercises remains visible.
+
+
+## Physical model version workflow (migration 0014)
+
+Apply migrations and runtime grants before starting the new binary; readiness probes
+`model_scenario_outcomes`. The operator-only routes mirror dated scenarios:
+
+| Method | Route | Purpose |
+| --- | --- | --- |
+| POST | `/v1/scenarios/models` | Immutable resource/unit/time definition and optional dated mappings |
+| GET | `/v1/scenarios/models/{id}` | Approved head (generation 0 has no model yet) |
+| GET | `/v1/scenarios/models/{id}/versions/{generation}` | Exact historical version |
+| POST | `/v1/scenarios/models/{id}/drafts` | Full structured input, plan, boundary, basis and expected generations |
+| GET | `/v1/model-drafts/{id}` | Candidate and decision state |
+| POST | `/v1/model-drafts/{id}/resolve` | Separate `{apply, basis}` operator decision |
+
+All POSTs require an `Idempotency-Key`. The complete synthetic model input is
+[`fixtures/model-scenario.json`](../fixtures/model-scenario.json); it uses artificial
+units and coefficients, not engineering or nutritional norms. The restart exercise
+shows definition, proposal and approval requests. Do not resubmit server-generated
+checkpoint strings as authoritative input. Ordinary requests remain 16 KiB; only the
+model proposal endpoint admits up to 1 MiB. 503 `scenario_busy` means retry later;
+409 `scenario_stale` means recompute against current approved versions and review anew.
+Identical idempotent retries return the original saved response, not necessarily the
+current head. Discarding stale proposals leaves the head unchanged.
+
+`tests/cases/model_scenarios.rs` covers immutable scopes, competing approvals,
+rollback at deferred commit, idempotency, committed-prefix and promoted-prefix rewrites,
+asset rejuvenation, bad dimensions/constituents, dated version races, unit/time
+mismatch, scoped HTTP limits and observer/reviewer denial. Library checks cover initial
+boundary zero, exact constituent totals above u64, identity corruption and saturated
+calculation admission. `scripts/scenario_exercise.py` now saves accepted and pending
+physical plans before backup, checks process restart and continues after restoration
+under the restricted runtime role. This preserves pending starts, original cohort
+expiry and selected dated references; no physical observation is thereby certified.
+
+Physical-model stage verification, 11 November 2026: **263 Rust tests** passed
+(7 library, 57 mathematics, 18 nutrition, 14 seasonal, 6 capital, 10 rolling/material,
+9 dated, 4 no-AI, 29 coupled-example and **109 PostgreSQL**), plus **11 Python** tests.
+Formatting, all-target Clippy and the unchanged dependency license inventory passed;
+Tokio's existing `sync` capability is now explicitly enabled without new packages.
+All three published mathematical reports reproduced byte-for-byte.
+
+The real-binary exercises preserved accepted and pending physical models across a
+process restart and a logical backup/restore of **42 tables**. Twelve runtime privilege
+denials passed; restored state continued under that role with original work/cohort
+history and checked dated anchors. Existing HTTP restart and strict-evidence checks
+passed. Circulation completed 4,548 requests in 56.370 s with one restart; closed
+circulation completed 3,901 requests in 46.493 s with two restarts. Actor exercises
+7 and 19 completed and still expose the known physical-evidence gap. These are
+synthetic local runs, not national throughput, deployment or economic-validity claims.

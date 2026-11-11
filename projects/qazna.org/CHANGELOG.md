@@ -2,10 +2,16 @@
 
 ## Unreleased
 
+- Add migration 0014 and operator-reviewed full physical model/plan versions, with exact canonical checkpoints and preserved rolling commitments/cohort ages.
+- Check matrix feasibility, independent physical replay and constituent conservation; pin optional dated versions and reject stale or inconsistent boundary stocks.
+- Bound model request size and CPU admission; keep ordinary route limits and AI permissions unchanged.
+- Extend restart/backup restoration to pending physical plans and continuation with original asset lifetimes; retain monetary association as the next stage.
+
+
 - Add migration 0013 for immutable dated scenario definitions, candidate commands/checkpoints and reviewed outcomes.
 - Add bounded operator-only scenario routes, trusted current generations, command replay before acceptance and stale/concurrent approval protection.
 - Exercise atomic retries/rollback, raw-import rejection, immutable history, checkpoint limits and real restart/restore under runtime privileges; retain separate review across restored XID collisions and SAVEPOINT use.
-- Keep research-state approval separate from real inventory, accounting and AI execution authority; full coupled scenario persistence remains open.
+- Keep research-state approval separate from real inventory, accounting and AI execution authority; dated persistence forms the first part of the physical scenario foundation.
 
 - Add versioned, origin-preserving dated state with explicit pending harvest, movements and expiry/loss counters; reject stale or altered imports against a trusted reference.
 - Verify all 60 upstream food checkpoints and retain all preceding report sections in schema 16.
