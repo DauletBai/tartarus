@@ -219,7 +219,7 @@ fn build(
 }
 /// FEFO companion of this example's fixed identity processing/transport routes.
 /// Original expiry survives both legs; preservation is not assumed to renew it.
-fn dated(m: &Seasonal, plan: &[PeriodPlan], life: u32) -> Result<Value, MathError> {
+pub(super) fn dated(m: &Seasonal, plan: &[PeriodPlan], life: u32) -> Result<Value, MathError> {
     m.physical.vector(plan)?;
     if plan.iter().any(|p| {
         p.activities

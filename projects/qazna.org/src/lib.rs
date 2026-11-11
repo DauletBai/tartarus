@@ -28,3 +28,5 @@ pub mod lifecycle;
 pub mod nutrition;
 
 pub mod seasonal;
+
+pub mod capital;

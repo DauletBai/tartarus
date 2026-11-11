@@ -479,3 +479,36 @@ with one restart; closed circulation completed 3,901 in 46.730 seconds with two
 restarts. Actor seeds 7/19 completed with the pre-existing physical-evidence
 limitation retained. The disposable cluster stopped and was removed. No existing
 database or live funds were used. Remote CI must be checked on the published head.
+
+## Upstream production and retirement verification
+
+The mandatory runner includes `tests/capital.rs`. Six tests cover timely versus
+late replacement, original and new cohort expiry, omission/invention of disposal,
+shared warehouse capacity, malformed life definitions, unsupported asset supply
+and arithmetic overflow. A separate unit-cohort oracle enumerates **192** small
+build/lifetime/initial-age schedules and compares both the matrix and replay.
+Three coupled-example tests verify the ten upstream candidates, unchanged human
+needs, zero carried electricity stock, deposit depletion, fixed-point generation
+rounding and replenishment of the original extracted-fuel buffer.
+
+```sh
+cargo run --locked --release --example coupled_study -- --upstream-only /tmp/qazna-upstream.json
+```
+
+Generation follows known demand within the declared synthetic recipe; neither the
+candidate constructor nor its successful checks establish an empirical national
+energy system or a global optimum. Failed-plan quantities remain proposed traces.
+
+Full local runner passed on 11 November 2026: **218 Rust tests** (3 library,
+57 mathematics, 18 nutrition, 14 seasonal, 6 capital, 4 no-AI, 25 coupled example
+and 91 PostgreSQL) and **11 Python advisory tests**. Format, all-target Clippy,
+licences and byte-identical reproduction of all three maintained reports passed.
+All 18 preceding top-level report sections remain semantically unchanged.
+HTTP three-restart checks, both strict-evidence configurations and 36-table
+backup/restore passed. Circulation completed 4,548 requests in 56.040 seconds
+with one restart; closed circulation completed 3,901 in 47.024 seconds with two
+restarts. These are local exercise timings, not production throughput estimates.
+Actor seeds 7/19 completed with the pre-existing physical-evidence limitation
+retained. The disposable cluster stopped and was removed. No existing database,
+live funds or network model calls were used. Remote CI must be checked on the
+published head.

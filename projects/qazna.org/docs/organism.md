@@ -114,3 +114,13 @@ reduced when less human work is required. Potential released time is a result to
 be evaluated, not a claim that people are expendable or should lose entitlement.
 The analogy of reserve capacity includes both stocked resources and an operable
 route to people; neither money nor an AI forecast substitutes for that route.
+
+## Reproduction of shared capabilities
+
+The upstream annex treats a usable power unit, factory or store as a capability
+with a finite calendar life. Replacement consumes real material, energy, work and
+time. A retired building cannot hold food simply because its quantity was left in
+a plan. Finite natural deposits are depleted explicitly; circulation of measure
+does not replenish them. Human needs stay unchanged through all tested failures.
+Care includes preserving delivery routes and renewing the capacities that sustain
+them, alongside the moderate physical buffers already modelled.

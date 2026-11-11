@@ -61,6 +61,12 @@ transport capacity, dated stocks, resource tradeoffs and manual fallback. All
 adoption scenarios retain identical human provision; scenario coefficients remain
 synthetic and computation requires no AI.
 
+The [upstream capital annex](docs/physical-circulation.md#upstream-production-and-finite-life-capital--11-november-2026)
+connects that graph to finite deposits, generation, material production,
+construction, retirement and replacement. Its demand-matched schedule preserves
+food provision with lower synthetic fuel extraction; physical calibration and
+rolling-horizon continuity remain open.
+
 ## Implemented capabilities
 
 - Observe consistent invariant/queue snapshots with a limited observer credential.
