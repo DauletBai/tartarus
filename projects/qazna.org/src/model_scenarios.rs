@@ -3,6 +3,7 @@
 use crate::{
     capital::CapitalCycle,
     dated::DatedFlow,
+    food_routes::{FoodRouteEvidence, FoodRoutes},
     horizon::PeriodPlan,
     ledger::LedgerError,
     materials::{MaterialBasis, MaterialEvidence},
@@ -53,6 +54,8 @@ pub struct ModelInput {
     pub material_bases: Vec<MaterialBasis>,
     /// Same order as the immutable definition's dated bindings.
     pub dated_generations: Vec<i64>,
+    #[serde(default, skip_serializing_if = "Option::is_none")]
+    pub food_routes: Option<FoodRoutes>,
 }
 #[derive(Clone, Debug, Serialize, Deserialize)]
 #[serde(deny_unknown_fields)]
@@ -71,6 +74,8 @@ pub struct ModelCheckpoint {
     pub rolling: RollingSnapshot,
     pub materials: Vec<MaterialEvidence>,
     pub dated: Vec<ScenarioSnapshot>,
+    #[serde(default, skip_serializing_if = "Option::is_none")]
+    pub food_routes: Option<FoodRouteEvidence>,
 }
 #[derive(Clone, Debug, Serialize, Deserialize)]
 pub struct ModelVersion {
@@ -87,6 +92,29 @@ pub struct ModelDraft {
     pub state: String,
     pub decision_basis: Option<String>,
 }
+/// Pure initial research preview. This does not store or approve a generation;
+/// dated database anchors must instead be resolved by the operator service.
+pub fn preview(
+    definition: ModelDefinition,
+    input: ModelInput,
+) -> Result<ModelVersion, LedgerError> {
+    let basis = definition.basis.clone();
+    calculate(
+        ModelVersion {
+            definition,
+            generation: 0,
+            checkpoint: None,
+        },
+        ModelProposal {
+            id: Uuid::nil(),
+            expected_generation: 0,
+            input,
+            basis,
+        },
+        vec![],
+    )
+}
+
 pub(crate) fn text(s: &str, max: usize) -> Result<(), LedgerError> {
     if s.trim().is_empty() || s.len() > max {
         return Err(LedgerError::Invalid("invalid model descriptor or basis"));
@@ -227,6 +255,11 @@ pub(crate) fn calculate(
     }
     let invalid = |_| LedgerError::Invalid("infeasible model or rewritten committed history");
     if let Some(old) = checkpoint(&before)? {
+        if input.food_routes != old.input.food_routes {
+            return Err(LedgerError::Invalid(
+                "food identity or shelf assumptions changed",
+            ));
+        }
         if input.boundary < old.input.boundary
             || serde_json::to_vec(&input.material_bases)
                 .map_err(|_| LedgerError::InvalidStoredResponse)?
@@ -254,6 +287,23 @@ pub(crate) fn calculate(
         .iter()
         .map(|b| b.audit(h, &input.plan).map_err(invalid))
         .collect::<Result<Vec<_>, _>>()?;
+    let food_routes = input
+        .food_routes
+        .as_ref()
+        .map(|routes| {
+            for &r in &routes.resources {
+                if before
+                    .definition
+                    .resources
+                    .get(r)
+                    .is_none_or(|v| v.unit != routes.unit)
+                {
+                    return Err(LedgerError::Invalid("food route unit mismatch"));
+                }
+            }
+            routes.audit(&input.model, &input.plan).map_err(invalid)
+        })
+        .transpose()?;
     let bindings = &before.definition.dated_bindings;
     if dated.len() != bindings.len() || input.dated_generations.len() != bindings.len() {
         return Err(LedgerError::Invalid("missing dated generations"));
@@ -304,6 +354,7 @@ pub(crate) fn calculate(
         rolling,
         materials,
         dated,
+        food_routes,
     };
     let bytes = serde_json::to_string(&c).map_err(|_| LedgerError::InvalidStoredResponse)?;
     if bytes.len() > MAX_MODEL_CHECKPOINT_BYTES {

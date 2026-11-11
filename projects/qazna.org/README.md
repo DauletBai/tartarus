@@ -33,6 +33,14 @@ payments from an approved physical generation and immutable accounting norms.
 Missing funds and interrupted payments remain visible; approvals do not change
 real money or verified inventory. See [architecture](docs/architecture.md#reviewed-physical-and-monetary-coupling).
 
+The selected five-year integration now links **31 resources, 44 processes and 60
+monthly periods** to 2,795 valued physical flows and 5,740 payment events. Food
+origins and expiry survive preservation and transport; packaging recovery consumes
+energy and shared capacity and leaves explicit waste. The exact minimum opening
+measure funds this fixed schedule, but its terminal distribution is **not repeatable
+without further redistribution**. This is an exposed planning gap, not a completed
+national monetary model. See the [integrated evidence](docs/physical-circulation.md#extended-five-year-runtime-integration).
+
 ## Project information
 
 | Item | Reference |

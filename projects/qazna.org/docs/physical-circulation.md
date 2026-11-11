@@ -1892,3 +1892,61 @@ retained. These are not certified storage periods, validated nutrient retention
 or temperature/quality records. Processing yield changes, quarantines, recalls,
 manual delay of committed transport and source evidence need further work. There
 are no new money operations, migrations, dependencies or model calls.
+
+
+## Extended five-year runtime integration
+
+Implemented 11 November 2026. `examples/extended_scenario.rs` derives
+`fixtures/extended-scenario.json` from the maintained schema-16 report's
+`demand_matched_power_with_smaller_fuel_deposit` candidate. Earlier report bytes
+and counterexamples remain unchanged. The extension joins packaging recovery to
+upstream production rather than appending an unrelated mass-balance exercise.
+
+| Checked quantity | Synthetic result |
+| --- | ---: |
+| Monthly periods / resource dimensions / processes | 60 / 31 / 44 |
+| Valued physical flows / derived payment events | 2,795 / 5,740 |
+| Componentwise minimum opening measure for this fixed order | 1,559,457,628,979 |
+| Total settled volume (repeated circulation, not issuance) | 3,752,613,460,998 |
+| Seed withdrawal, gross-equivalent kg | 6,247,119,150 |
+| Final food/feed deliveries, gross-equivalent kg | 213,115,833,990 |
+| Tracked food expiry / terminal food transit | 0 / 0 |
+| Initial packaging constituent mass, grams | 632,000,000,000 |
+| Explicit discarded constituent mass, grams | 258,884,166,010 |
+| Final constituent stock, grams | 373,115,833,990 |
+| Primary packaging ore consumed, kg | 580,000,000 |
+
+Food/feed quantities inherit the source's aggregate 100-million-person scenario;
+they are not an adequate complete human diet. New primary processing converts 10 kg
+ore into 7 kg material and 3 kg recoverable residue. Recovery converts 5 kg residue
+into 2 kg material and 3 kg waste. Both use energy and shared factory/work capacity.
+These ratios, 18-month shelf lives and accounting norms are explicit synthetic
+assumptions, not calibrated engineering or food-safety values. Material in unfinished
+work is retained until completion; it is not lost or counted twice.
+
+The initial measure certificate uses `E[a] = max(0, -min_t C[a,t])`, where `C` is
+cumulative net inflow over the fixed fully settling event order. The generator first
+constructs that order, sets the exact bound, then independently replays it. There is
+no later issuance, interest, personal deposit or automatic reset. Resident daily
+spending from earlier daily studies is represented here only at monthly aggregate
+resolution; these events do not demonstrate daily delivery to each individual.
+
+**Two unresolved results are visible.** First, the inherited fixed packaging-output
+schedule discards considerable surplus; it is feasible but not an efficient optimum.
+Second, the experimental policy circulates every external goods receipt entirely
+to the common treasury, while producer inputs consume opening common working
+reserves. All 1,559,457,628,979 units end at that treasury. The calculation therefore
+reports `stationary_repeatable: false`: it funds these five years, not an indefinite
+sequence of identical cycles. Continued operation needs an explicitly reviewed
+redistribution/replanning rule using remaining physical stocks and commitments.
+The next rolling-feedback stage must test this instead of reintroducing initial
+endowments or hiding a resource/payment deficit.
+
+Runtime proposals and approval repeat physical, capital, seasonal, constituent and
+origin/expiry checks. Tests reject missing/duplicated routes, altered ages, external
+untracked food, forged recovery yield, and unavailable energy, recovery or transport
+capacity. PostgreSQL tests preserve reviewed generations, reject invalid retries
+without consuming the idempotency key, and leave live balances unchanged. Real
+process restart and backup/restore also cover this fixture and its pending next
+boundary. Those exercises establish reproducibility under declared inputs, not
+empirical delivery, social legitimacy or all-sector national feasibility.

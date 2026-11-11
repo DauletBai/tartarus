@@ -458,3 +458,6 @@ mod model_scenarios;
 
 #[path = "cases/coupled.rs"]
 mod coupled;
+
+#[path = "cases/extended.rs"]
+mod extended;

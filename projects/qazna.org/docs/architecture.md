@@ -454,5 +454,39 @@ The maintained synthetic fixture covers 14 periods, three resource dimensions an
 two processes: material, food and finite-life equipment replacement. It produces
 35 valued physical links and 84 events, with opening measure 160 and settled volume
 198. The latter is repeated circulation, not new money or economic output. This
-bounded integration does not yet join every upstream energy/transport/food-recovery
-annex or establish a causal lot-to-process mapping. Those remain package 2 work.
+small fixture remains a regression case. The selected extended integration below
+now binds the upstream graph and its declared food routes.
+
+
+### Extended physical/dated integration
+
+`ModelInput.food_routes` optionally declares tracked resource indices, opening-stock
+remaining lives, crop processes and origin-preserving 1:1 processing/transport
+routes. `src/food_routes.rs` derives dated events from the submitted physical plan;
+it does not accept a client-authored authoritative checkpoint. Every process touching
+a tracked resource must have exactly one valid rule. Only a declared seasonal crop
+with seed input and larger same-resource output can introduce a new harvest origin.
+Other tracked routes preserve origin and expiry. Unmapped routes, external food
+supplies and incompatible units are rejected. Each period reconciles dated stocks
+and expiry with the physical balances and declared disposal.
+
+Rules are immutable across an existing model history, including adding/removing
+them. Approval and coupled calculation repeat the audit. Derived evidence records
+seed withdrawals separately from final deliveries, expiry, final transit/stock and
+the canonical dated state. Optional fields are omitted when absent, preserving old
+format-1 checkpoint bytes. No migration or new execution authority is introduced.
+
+The initial `model_scenarios::preview` and `coupled::preview` helpers expose the
+same checked calculation for reproducible local examples. They are pure calculations,
+not stored approvals: they do not authenticate a supplied physical snapshot, resolve
+live dated anchors, post money or establish custody. Runtime routes still lock and
+check current approved generations and recompute before review.
+
+The selected fixture has 31 resources, 44 processes and 60 periods. A conserved
+packaging-material basis joins finite primary ore, recovery, packaging and explicit
+residue/waste; both recovery stages consume energy and shared factory/work capacity.
+Food routes currently support same-resource seed/harvest and 1:1 preservation or
+transport. Nutrient loss, arbitrary blends, measured spoilage, recalls and empirical
+shelf-life certification need separate assumptions and future mappings. Declared
+shelf life is not evidence of food safety. The model still does not establish actual
+physical delivery or an indefinitely repeatable monetary circulation policy.
