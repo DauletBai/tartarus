@@ -452,3 +452,6 @@ async fn scoped_machine_credentials_and_consistent_telemetry() {
     assert_eq!(status["invariants"]["unbalanced_transactions"], "1");
     assert_eq!(status["alerts"][0], "invariant_violation");
 }
+
+#[path = "cases/model_scenarios.rs"]
+mod model_scenarios;

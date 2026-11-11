@@ -1,18 +1,18 @@
 # Completion roadmap and feasibility boundaries
 
-Latest review: 11 November 2026, persistent reviewed dated-state implementation.
+Latest review: 11 November 2026, persistent reviewed physical-model implementation.
 The current work order below supersedes earlier milestone-specific next steps.
 
 ## Completion scope and remaining work — 11 November 2026
 
 This estimate is based on the current source, HTTP routes, migration set and test
 runner, not on a percentage inferred from test count. The latest stage adds
-**persistent reviewed dated-state continuity**: immutable
-PostgreSQL history, current generations, operator approval and bounded command
-replay. It does not apply physical inventory or monetary changes. Package 1 is
-partially implemented: the complete coupled scenario/input definitions still need
-the same persistence and restoration boundary. The six packages below supersede
-older milestone-specific next steps.
+persistent reviewed **capital/seasonal models and complete plans**, committed-prefix
+protection, original asset ages, constituent checks, optional dated-stock anchors and
+restart/restore continuation. The physical persistence portion of package 1 is now
+implemented. Circulation inputs and the physical/monetary association are deliberately
+part of package 2; approved research versions still do not change actual inventories
+or money. Five implementation packages remain after the persistence foundation.
 
 The target for this estimate is **research demonstrator v1**: a reproducible,
 bounded five-year scenario with linked provisioning, physical capabilities and
@@ -24,17 +24,17 @@ national sectors or a production monetary system.
 
 | Remaining package | Acceptance gate | Estimated focused engineering days |
 | --- | --- | ---: |
-| 1. Finish persistent coupled scenario state | Dated-state store implemented; extend versioned inputs/checkpoints to the capital/seasonal/circulation models and verify full-scenario restart/restore. Current command-only API keeps 16 KiB requests and 256 KiB internal checkpoints | 2–4 |
-| 2. Join extended physical and monetary plans | One selected end-to-end scenario links upstream production, dated food, capital/replacement and material recovery to exact circulation; no hidden issuance, duplicated input or unaccounted work; independent reconciliation and shortage explanation | 5–8 |
+| 1. Persistent physical scenario foundation — implemented | Dated and capital/seasonal inputs, reviewed versions, pinned selected stocks and restart/restore; monetary association continues in package 2 | — |
+| 2. Join extended physical and monetary plans | Persist circulation inputs and bind them to a reviewed physical generation. One selected end-to-end scenario links upstream production, dated food, capital/replacement and material recovery to exact circulation; no hidden issuance, duplicated input or unaccounted work; independent reconciliation and shortage explanation | 5–8 |
 | 3. Define a bounded input and population registry | Units, sources, dates, assumptions and uncertainty; age/cohort transitions and selected need profiles; missing food-retention/engineering values remain unknown; reproducible synthetic and calibrated modes clearly separated | 6–10 |
 | 4. Close the rolling feedback experiment | Decisions use observed state, retain commitments, replan after declared outages/demand changes, report shortages without inventing goods, and pass sensitivity/adversarial cases; optional solver outputs independently verified | 4–7 |
 | 5. Expose the demonstrator's workflows | Small operator/reviewer interface, synthetic participant scope, intelligible reasons, correction/dispute examples, approval and audit history, accessible navigation; no claim of production identity/enrollment | 7–12 |
 | 6. Freeze and reproduce a release | Clean deployment, recorded workload envelope, sustained/restart/restore and fault exercises, dependency/privilege review, versioned evidence and known limitations, release guide and runnable demonstration | 4–6 |
 
-**Total planning range: 28–47 focused engineering days**, approximately **6–10
+**Total planning range: 26–43 focused engineering days**, approximately **6–9
 working weeks** for one continuously available full-time implementer at five days
 per week. The calculation-focused packages 2–4 total **15–25 engineering days**;
-packages 1, 5 and 6 add **13–22 days** for the service and release. This is a rough
+packages 5 and 6 add **11–18 days** for the service and release. This is a rough
 human-equivalent effort estimate, not a promise of autonomous agent work or a
 calendar completion date. Decisions, missing source data, failed acceptance tests,
 review findings and interruptions can extend elapsed time. Re-estimate after each

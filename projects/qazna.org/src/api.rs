@@ -1,3 +1,4 @@
+use crate::model_scenarios::{MAX_MODEL_REQUEST_BYTES, ModelDefinition, ModelProposal};
 use crate::scenarios::{ScenarioDecision, ScenarioDefinition, ScenarioProposal};
 use crate::{
     coordination::{MonitorRequest, ReviewRequest},
@@ -105,6 +106,21 @@ impl AccessTokens {
 
 pub fn router_with_access(ledger: Ledger, tokens: AccessTokens) -> Router {
     let private = Router::new()
+        .route("/v1/scenarios/models", post(create_model_scenario))
+        .route("/v1/scenarios/models/{id}", get(model_scenario))
+        .route(
+            "/v1/scenarios/models/{id}/versions/{generation}",
+            get(model_scenario_version),
+        )
+        .route(
+            "/v1/scenarios/models/{id}/drafts",
+            post(propose_model_scenario).layer(DefaultBodyLimit::max(MAX_MODEL_REQUEST_BYTES)),
+        )
+        .route("/v1/model-drafts/{id}", get(model_scenario_draft))
+        .route(
+            "/v1/model-drafts/{id}/resolve",
+            post(resolve_model_scenario),
+        )
         .route("/v1/scenarios/dated", post(create_dated_scenario))
         .route("/v1/scenarios/dated/{id}", get(dated_scenario))
         .route(
@@ -445,6 +461,7 @@ impl IntoResponse for LedgerError {
             Self::ScenarioNotFound => (StatusCode::NOT_FOUND, "scenario_not_found"),
             Self::ScenarioConflict => (StatusCode::CONFLICT, "scenario_exists"),
             Self::ScenarioStale => (StatusCode::CONFLICT, "scenario_stale"),
+            Self::ScenarioBusy => (StatusCode::SERVICE_UNAVAILABLE, "scenario_busy"),
             Self::ScenarioClosed => (StatusCode::CONFLICT, "scenario_closed"),
             Self::Invalid(_) => (StatusCode::BAD_REQUEST, "invalid_request"),
             Self::NotFound => (StatusCode::NOT_FOUND, "account_not_found"),
@@ -824,6 +841,60 @@ async fn resolve_dated_scenario(
     Ok(Json(
         ledger
             .resolve_dated_scenario(command_key(&headers)?, id, request)
+            .await?,
+    ))
+}
+
+async fn create_model_scenario(
+    State(ledger): State<Ledger>,
+    headers: HeaderMap,
+    Json(request): Json<ModelDefinition>,
+) -> Result<impl IntoResponse, LedgerError> {
+    Ok(Json(
+        ledger
+            .create_model_scenario(command_key(&headers)?, request)
+            .await?,
+    ))
+}
+async fn model_scenario(
+    State(ledger): State<Ledger>,
+    Path(id): Path<Uuid>,
+) -> Result<impl IntoResponse, LedgerError> {
+    Ok(Json(ledger.model_scenario(id, None).await?))
+}
+async fn model_scenario_version(
+    State(ledger): State<Ledger>,
+    Path((id, generation)): Path<(Uuid, i64)>,
+) -> Result<impl IntoResponse, LedgerError> {
+    Ok(Json(ledger.model_scenario(id, Some(generation)).await?))
+}
+async fn propose_model_scenario(
+    State(ledger): State<Ledger>,
+    Path(id): Path<Uuid>,
+    headers: HeaderMap,
+    Json(request): Json<ModelProposal>,
+) -> Result<impl IntoResponse, LedgerError> {
+    Ok(Json(
+        ledger
+            .propose_model_scenario(command_key(&headers)?, id, request)
+            .await?,
+    ))
+}
+async fn model_scenario_draft(
+    State(ledger): State<Ledger>,
+    Path(id): Path<Uuid>,
+) -> Result<impl IntoResponse, LedgerError> {
+    Ok(Json(ledger.model_scenario_draft(id).await?))
+}
+async fn resolve_model_scenario(
+    State(ledger): State<Ledger>,
+    Path(id): Path<Uuid>,
+    headers: HeaderMap,
+    Json(request): Json<ScenarioDecision>,
+) -> Result<impl IntoResponse, LedgerError> {
+    Ok(Json(
+        ledger
+            .resolve_model_scenario(command_key(&headers)?, id, request)
             .await?,
     ))
 }

@@ -1,0 +1,717 @@
+{
+  "model": {
+    "seasonal": {
+      "physical": {
+        "resources": [
+          "material",
+          "machine",
+          "food"
+        ],
+        "initial": [
+          100,
+          1,
+          1
+        ],
+        "storage_caps": [
+          100,
+          100,
+          100
+        ],
+        "processes": [
+          {
+            "inputs": [
+              1,
+              0,
+              0
+            ],
+            "outputs": [
+              0,
+              1,
+              0
+            ],
+            "lead_periods": 1
+          },
+          {
+            "inputs": [
+              1,
+              0,
+              0
+            ],
+            "outputs": [
+              0,
+              0,
+              1
+            ],
+            "lead_periods": 1
+          }
+        ],
+        "periods": [
+          {
+            "supplies": [
+              0,
+              0,
+              0
+            ],
+            "needs": [
+              0,
+              0,
+              1
+            ],
+            "capacities": [
+              1,
+              1
+            ]
+          },
+          {
+            "supplies": [
+              0,
+              0,
+              0
+            ],
+            "needs": [
+              0,
+              0,
+              1
+            ],
+            "capacities": [
+              1,
+              1
+            ]
+          },
+          {
+            "supplies": [
+              0,
+              0,
+              0
+            ],
+            "needs": [
+              0,
+              0,
+              1
+            ],
+            "capacities": [
+              1,
+              1
+            ]
+          },
+          {
+            "supplies": [
+              0,
+              0,
+              0
+            ],
+            "needs": [
+              0,
+              0,
+              1
+            ],
+            "capacities": [
+              1,
+              1
+            ]
+          },
+          {
+            "supplies": [
+              0,
+              0,
+              0
+            ],
+            "needs": [
+              0,
+              0,
+              1
+            ],
+            "capacities": [
+              1,
+              1
+            ]
+          },
+          {
+            "supplies": [
+              0,
+              0,
+              0
+            ],
+            "needs": [
+              0,
+              0,
+              1
+            ],
+            "capacities": [
+              1,
+              1
+            ]
+          },
+          {
+            "supplies": [
+              0,
+              0,
+              0
+            ],
+            "needs": [
+              0,
+              0,
+              1
+            ],
+            "capacities": [
+              1,
+              1
+            ]
+          },
+          {
+            "supplies": [
+              0,
+              0,
+              0
+            ],
+            "needs": [
+              0,
+              0,
+              1
+            ],
+            "capacities": [
+              1,
+              1
+            ]
+          },
+          {
+            "supplies": [
+              0,
+              0,
+              0
+            ],
+            "needs": [
+              0,
+              0,
+              1
+            ],
+            "capacities": [
+              1,
+              1
+            ]
+          },
+          {
+            "supplies": [
+              0,
+              0,
+              0
+            ],
+            "needs": [
+              0,
+              0,
+              1
+            ],
+            "capacities": [
+              1,
+              1
+            ]
+          },
+          {
+            "supplies": [
+              0,
+              0,
+              0
+            ],
+            "needs": [
+              0,
+              0,
+              1
+            ],
+            "capacities": [
+              1,
+              1
+            ]
+          },
+          {
+            "supplies": [
+              0,
+              0,
+              0
+            ],
+            "needs": [
+              0,
+              0,
+              1
+            ],
+            "capacities": [
+              1,
+              1
+            ]
+          },
+          {
+            "supplies": [
+              0,
+              0,
+              0
+            ],
+            "needs": [
+              0,
+              0,
+              1
+            ],
+            "capacities": [
+              1,
+              1
+            ]
+          },
+          {
+            "supplies": [
+              0,
+              0,
+              0
+            ],
+            "needs": [
+              0,
+              0,
+              1
+            ],
+            "capacities": [
+              1,
+              1
+            ]
+          }
+        ],
+        "objective_resource": 2
+      },
+      "land": [
+        {
+          "name": "unused",
+          "available_hectares": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        }
+      ],
+      "crops": [],
+      "irrigation_m3": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "closing_floors": [
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0
+        ]
+      ]
+    },
+    "limits": [
+      {
+        "name": "machine work",
+        "resource": 1,
+        "units_per_stock": 1,
+        "activity_use": [
+          0,
+          1
+        ]
+      }
+    ],
+    "lives": [
+      {
+        "resource": 1,
+        "service_periods": 3,
+        "initial_remaining_periods": 3
+      }
+    ],
+    "stores": []
+  },
+  "plan": [
+    {
+      "activities": [
+        0,
+        1
+      ],
+      "deliveries": [
+        0,
+        0,
+        1
+      ],
+      "closing": [
+        99,
+        1,
+        0
+      ],
+      "discarded": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "activities": [
+        1,
+        1
+      ],
+      "deliveries": [
+        0,
+        0,
+        1
+      ],
+      "closing": [
+        97,
+        1,
+        0
+      ],
+      "discarded": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "activities": [
+        0,
+        1
+      ],
+      "deliveries": [
+        0,
+        0,
+        1
+      ],
+      "closing": [
+        96,
+        2,
+        0
+      ],
+      "discarded": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "activities": [
+        0,
+        1
+      ],
+      "deliveries": [
+        0,
+        0,
+        1
+      ],
+      "closing": [
+        95,
+        1,
+        0
+      ],
+      "discarded": [
+        0,
+        1,
+        0
+      ]
+    },
+    {
+      "activities": [
+        1,
+        1
+      ],
+      "deliveries": [
+        0,
+        0,
+        1
+      ],
+      "closing": [
+        93,
+        1,
+        0
+      ],
+      "discarded": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "activities": [
+        0,
+        1
+      ],
+      "deliveries": [
+        0,
+        0,
+        1
+      ],
+      "closing": [
+        92,
+        2,
+        0
+      ],
+      "discarded": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "activities": [
+        0,
+        1
+      ],
+      "deliveries": [
+        0,
+        0,
+        1
+      ],
+      "closing": [
+        91,
+        1,
+        0
+      ],
+      "discarded": [
+        0,
+        1,
+        0
+      ]
+    },
+    {
+      "activities": [
+        1,
+        1
+      ],
+      "deliveries": [
+        0,
+        0,
+        1
+      ],
+      "closing": [
+        89,
+        1,
+        0
+      ],
+      "discarded": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "activities": [
+        0,
+        1
+      ],
+      "deliveries": [
+        0,
+        0,
+        1
+      ],
+      "closing": [
+        88,
+        2,
+        0
+      ],
+      "discarded": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "activities": [
+        0,
+        1
+      ],
+      "deliveries": [
+        0,
+        0,
+        1
+      ],
+      "closing": [
+        87,
+        1,
+        0
+      ],
+      "discarded": [
+        0,
+        1,
+        0
+      ]
+    },
+    {
+      "activities": [
+        1,
+        1
+      ],
+      "deliveries": [
+        0,
+        0,
+        1
+      ],
+      "closing": [
+        85,
+        1,
+        0
+      ],
+      "discarded": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "activities": [
+        0,
+        1
+      ],
+      "deliveries": [
+        0,
+        0,
+        1
+      ],
+      "closing": [
+        84,
+        2,
+        0
+      ],
+      "discarded": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "activities": [
+        0,
+        1
+      ],
+      "deliveries": [
+        0,
+        0,
+        1
+      ],
+      "closing": [
+        83,
+        1,
+        0
+      ],
+      "discarded": [
+        0,
+        1,
+        0
+      ]
+    },
+    {
+      "activities": [
+        0,
+        0
+      ],
+      "deliveries": [
+        0,
+        0,
+        1
+      ],
+      "closing": [
+        83,
+        1,
+        0
+      ],
+      "discarded": [
+        0,
+        0,
+        0
+      ]
+    }
+  ],
+  "boundary": 2,
+  "material_bases": [
+    {
+      "name": "synthetic constituent",
+      "unit": "test mass units",
+      "source": "Synthetic recovery fixture; not a national calibration",
+      "quantity_per_resource_unit": [
+        1,
+        1,
+        1
+      ]
+    }
+  ],
+  "dated_generations": []
+}

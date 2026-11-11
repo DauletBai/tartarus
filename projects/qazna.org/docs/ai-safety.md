@@ -72,4 +72,14 @@ lock and requires an unchanged generation and identical saved candidate. The
 result changes research state only, never real resources, allocation, needs norms
 or monetary postings. These controls reject stale state and unauthorized routes;
 they do not establish the truth of an operator's physical assumptions or a named
-human approval identity. Full coupled scenario persistence is still pending.
+human approval identity.
+
+Physical model scenarios use the same operator-only route policy. Reviewer/model
+credentials cannot submit or approve them. Rust checks exact constraints, independent
+replay, conserved constituents, immutable committed prefixes and current dated anchors.
+The saved candidate is recomputed at approval; a model-supplied checkpoint or unknown
+input field is rejected. Bounded requests and four admitted CPU jobs limit calculation
+pressure; no AI call is required. These controls validate mathematical consistency under
+declared assumptions. They neither verify physical measurements nor prove optimality,
+complete human needs, or the proposed national economic system. The physical/monetary
+scenario join remains pending.

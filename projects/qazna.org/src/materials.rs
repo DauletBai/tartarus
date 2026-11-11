@@ -13,7 +13,7 @@ pub struct MaterialBasis {
     pub source: String,
     pub quantity_per_resource_unit: Vec<i64>,
 }
-#[derive(Debug, Serialize)]
+#[derive(Debug, Clone, Serialize, Deserialize)]
 pub struct MaterialEvidence {
     pub initial: i128,
     pub supplied: i128,
