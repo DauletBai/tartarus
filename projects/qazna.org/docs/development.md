@@ -512,3 +512,40 @@ Actor seeds 7/19 completed with the pre-existing physical-evidence limitation
 retained. The disposable cluster stopped and was removed. No existing database,
 live funds or network model calls were used. Remote CI must be checked on the
 published head.
+
+## Rolling and material verification
+
+The mandatory runner now includes `tests/rolling.rs`: ten tests exercise every
+boundary, old/new cohort dates, open work, repeated checkpoints, extension and
+closed-terminal failure, changed historical stocks/recipes/capacities, a physically
+valid but unauthorized prefix rewrite, future supply changes, invalid checkpoints,
+missing provenance, constituent overflow and unrecorded losses. A direct oracle
+checks mass in flight for **160** start/delay schedules, independently of the
+auditor's completion-event queue.
+
+Three coupled-example tests check the same 60-month upstream graph at eight
+boundaries, committed power construction, original cohort age, future disruption,
+explicit mass/energy tradeoffs and recovery failures. All earlier report sections
+must remain unchanged. Reproduce this annex alone with:
+
+```sh
+cargo run --locked --release --example coupled_study -- --rolling-only /tmp/qazna-rolling.json
+```
+
+The ordinary matrix accepting an invented recovery recipe while the material
+validator rejects it is intentional fault coverage: recipe feasibility and physical
+conservation are distinct claims. Synthetic metadata does not imply external
+calibration. Checkpoint verification is not attestation of real execution.
+
+Full local runner passed on 11 November 2026: **231 Rust tests** (3 library,
+57 mathematics, 18 nutrition, 14 seasonal, 6 capital, 10 rolling/material,
+4 no-AI, 28 coupled example and 91 PostgreSQL) and **11 Python advisory tests**.
+Format, all-target Clippy, licences and byte-identical reproduction of all three
+maintained reports passed. All 19 preceding top-level report sections remain
+semantically unchanged. HTTP three-restart checks, both strict-evidence modes
+and 36-table backup/restore passed. Circulation completed 4,548 requests in 56.706
+seconds with one restart; closed circulation completed 3,901 in 47.028 seconds
+with two restarts. These are local exercises, not production throughput forecasts.
+Actor seeds 7/19 retained the known physical-evidence gap. The disposable database
+stopped and was removed; no live funds, existing database or model calls were used.
+Remote checks must be verified on the published commit.

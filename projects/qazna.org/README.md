@@ -65,7 +65,9 @@ The [upstream capital annex](docs/physical-circulation.md#upstream-production-an
 connects that graph to finite deposits, generation, material production,
 construction, retirement and replacement. Its demand-matched schedule preserves
 food provision with lower synthetic fuel extraction; physical calibration and
-rolling-horizon continuity remain open.
+live rolling-plan integration remain open.
+
+The [rolling commitments and material annex](docs/physical-circulation.md#rolling-commitments-and-conserved-material--11-november-2026) preserves pending work and asset ages across replanning and checks explicit residue recovery against constituent conservation. It remains an offline, synthetic experiment.
 
 ## Implemented capabilities
 

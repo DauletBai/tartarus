@@ -1722,3 +1722,115 @@ random failure/repair, demographic services and reviewed live plan integration.
 Initial resources and seasonal water remain external endowments. No new money,
 automatic postings, AI calls, runtime permissions, endpoints or migrations are
 introduced by this offline annex.
+
+## Rolling commitments and conserved material — 11 November 2026
+
+Schema 15 adds `rolling_and_materials`, preserving the preceding 19 report
+sections. It has two explicitly different scopes: continuation of the existing
+27-resource upstream graph, and a separately dimensioned dry-material chain.
+The latter does not relabel the former's synthetic ticks as measured kilograms.
+
+### An absolute timeline, not a restarted economy
+
+`RollingCapital::checkpoint` first verifies a complete candidate with the exact
+matrix and independent capital replay. It freezes all plan columns before a
+selected boundary `b`. The next calculation retains the original timeline:
+
+```text
+x_new[t,k] = x_committed[t,k]                 for t < b
+opening[b,r] = closing[b-1,r]
+pending_output[t,r] = sum_{s<b, s+lag[j]=t} output[j,r] * starts[s,j]
+expiry = completion + 1 + service_life        unchanged by replanning
+```
+
+Starts in the fixed prefix have already consumed their inputs. Their outputs
+arrive on their original dates; they are neither charged again nor supplied a
+second time at the new boundary. The same absolute starts retain crop land and
+stage-water use. Initial cohorts keep their original remaining life and later
+cohorts keep their original expiry. A snapshot lists opening quantities, pending
+process starts/completions and opening asset cohorts; a cohort expiring exactly at
+the boundary is physically present in opening stock but cannot operate there.
+
+The next model can change future supplies, needs, capacities, calendars and
+seasonal budgets, and extend the total timeline within existing dimension limits.
+It cannot change historical periods, original stocks, process coefficients/delays,
+asset lives, shared capability definitions or storage definitions. Past starts and
+outcomes remain equality constraints. Recipe migration requires a separate design
+for versioned commitments; this implementation rejects that change.
+
+Eight checkpoints of the same 60-month demand-matched upstream plan are checked
+at boundaries 1, 12, 15, 18, 24, 30, 42 and 59. Both matrix and replay accept every
+unchanged continuation. At boundary 15, the power build started in month 14 still
+completes in month 17 and only becomes operational in month 18. A one-tick future
+energy supply revision with corresponding curtailment is accepted. Resetting the
+original power-cohort lifetime is rejected. Removing month-18 generation capacity
+rejects the unchanged candidate, rather than declaring deliveries completed.
+
+A small separate fixture extends an 8-period plan at boundary 5 into a 14-period
+plan and checkpoints it again at boundary 10. Continuation exactly matches the
+single long plan. Conversely, extending only after a closed short plan has ended
+cannot invent a production start that should have occurred in its last period.
+Thus regular forward planning and explicit future commitments are necessary;
+a terminal stock number alone does not certify perpetual provision.
+
+This is offline mathematical continuity of candidate plans, **not authenticated
+execution**. The complete prefix remains in the matrix; there is no compact
+state import, database snapshot, signature, operator approval or automatic runtime
+application in this module. Original food-lot expiry remains in the existing full
+report, but an aggregate rolling snapshot does not transfer individual lot ages
+or certify freshness. Dated-lot checkpointing is still required before live use.
+
+### A constituent cannot be manufactured by accounting
+
+`MaterialBasis` declares a named constituent, its unit, source and nonnegative
+integer quantity per resource unit. A zero weight excludes another dimension
+such as energy; it is not a way to hide losses of the tracked constituent. Every
+recipe must satisfy:
+
+```text
+sum_r weight[r] * input[j,r] = sum_r weight[r] * output[j,r]
+initial + cumulative_supply = closing_stock + work_in_progress
+                               + cumulative_delivery + cumulative_disposal
+```
+
+Both sides use the declared physical unit, never a monetary measure. Recovery
+residue and unrecovered waste are explicit resources. The independent accounting
+pass tracks committed mass during lead times and checks the second identity at
+every boundary. Quantity products and accumulations use checked integer arithmetic.
+
+A six-period synthetic chain delivers the same **100 kg** of usable material:
+
+* Primary recipe: 10 kg ore and 2 energy ticks become 7 kg material and 3 kg
+  recoverable residue after two periods.
+* Recovery recipe: 5 kg residue and 1 energy tick become 2 kg material and 3 kg
+  unrecovered waste after one period.
+
+| Quantity | Primary only | With residue recovery |
+| --- | ---: | ---: |
+| Common initial ore stock, kg | 150 | 150 |
+| Ore consumed, kg | 150 | 130 |
+| Energy consumed, synthetic ticks | 30 | 31 |
+| Material delivered, kg | 100 | 100 |
+| Remaining ore, kg | 0 | 20 |
+| Remaining usable material, kg | 5 | 1 |
+| Recoverable residue, kg | 45 | 14 |
+| Unrecovered waste, kg | 0 | 15 |
+
+The recovery candidate consumes **13.33% less ore** and **3.33% more energy**.
+This compares two feasible schedules, not a global optimum. The primary-only
+residue is still physically present and potentially recoverable; the recovery
+candidate has already converted part of it into usable material and explicit
+waste. Neither waste removal nor environmental safety is assumed free.
+
+Of five material candidates, two pass. Three fail for insufficient recovery
+energy, constrained recovery capacity and invented recovery mass. In the last
+case, the ordinary recipe matrix can balance its declared outputs, but the
+constituent validator rejects the recipe itself. Algebraic feasibility alone
+cannot validate physical coefficients. Primary yield (70%) and residue recovery
+(40%) are explicit synthetic assumptions, not laboratory measurements.
+
+Next gates: versioned runtime evidence and approvals, compact dated-lot state,
+calibrated multi-constituent recipes, recycling/disassembly of retired assets,
+residue handling, upstream logistics, maintenance during work in progress, and
+rolling policies responding to observations. No monetary issuance, fee, interest,
+AI call or change to resident entitlement is introduced.

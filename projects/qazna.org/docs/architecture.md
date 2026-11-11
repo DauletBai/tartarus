@@ -249,3 +249,20 @@ construction. A bounded demand-matching candidate demonstrates the difference
 between failure of a fixed schedule and feasibility of another. Calculation is
 still offline and aggregate; no authoritative service or accounting behavior is
 changed. See [formulas and limits](physical-circulation.md#upstream-production-and-finite-life-capital--11-november-2026).
+
+### Offline continuation and constituent validation
+
+`rolling::RollingCapital` freezes a verified prefix of a `CapitalCycle` on its
+original timeline. Future scenario inputs may change; historical facts and recipe,
+capital-life and storage schemas may not. Starts before the boundary retain their
+completion/expiry and crop-stage commitments. Snapshots expose opening stocks,
+work in progress and cohort dates. They are diagnostic views, not importable or
+authenticated execution snapshots. Full-prefix matrices remain bounded by Horizon
+limits; compact state and reviewed runtime persistence are future work.
+
+`materials::MaterialBasis` checks exact per-recipe constituent conservation and
+per-boundary stock/delivery/disposal/work-in-progress identities. It requires
+explicit unit/source metadata and rejects unrecorded losses or invented recovery
+mass. The example's kg subchain is separate from the synthetic upstream graph;
+it does not certify chemistry, safety, or monetary issuance. See the maintained
+[rolling/material experiment](physical-circulation.md#rolling-commitments-and-conserved-material--11-november-2026).

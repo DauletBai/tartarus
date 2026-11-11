@@ -2,6 +2,12 @@
 
 ## Unreleased
 
+- Preserve verified capital/seasonal prefixes on an absolute rolling timeline, including pending starts and original asset expiry.
+- Validate declared constituent conservation across recipes, stocks, explicit residue/waste and work in progress.
+- Add eight upstream continuation checkpoints and five typed material candidates to maintained report schema 15; preserve prior sections.
+- Cover history rewrites, horizon extension, 160 independent mass-in-flight schedules and recovery energy/capacity failures.
+
+
 - Add finite-life capital cohorts and shared constructed storage to the seasonal matrix and independent replay.
 - Close selected upstream energy/material/kit/training supplies through finite-deposit production and replacement construction (schema 14).
 - Retain ten fixed-candidate comparisons, demand-matched generation, deposit/capacity/storage gaps and all previous report sections.
