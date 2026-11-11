@@ -404,3 +404,40 @@ user database, real participant, monetary transaction or AI model was used.
 This is computational evidence for explicit coefficients and scope, not clinical
 validation of diets or empirical validation of national agricultural production.
 Remote CI for this branch must be inspected separately from these local results.
+
+## Seasonal food verification — 11 November 2026
+
+The schema-12 annex keeps all 16 earlier coupled-report sections identical and
+adds six 60-month cereal/feed scenarios. Each has 1,440 variables and 2,625 rows,
+checked both by the exact matrix and a separate chronological event replay.
+The report is regenerated in place; no dated result copies are published.
+
+Twelve seasonal tests include a 2,048-case independent scalar oracle, future
+harvest rejection, shared food/feed land, peak-month water, protected seed/reserve,
+non-objective needs, invalid calendars/dimensions and extreme arithmetic overflow.
+The nutrition suite now has 18 tests, including sequential retention bounds,
+outward rounding against an unrounded oracle and unknown storage propagation.
+Two new example tests verify reserve depletion/replenishment and the raw-mass
+basis of the preparation estimates. The selected 78 USDA source rows reproduce
+byte-for-byte from the checksum-pinned CSV. The ordinary full checks require
+neither that download nor any network nutrient API.
+
+Reproduce the small annex separately from the full maintained report:
+
+```sh
+cargo run --locked --release --example coupled_study -- --seasonal-only /tmp/qazna-seasonal.json
+```
+
+This is a calculation of conditional feasibility, not evidence of available
+national land, actual dietary safety, causal crop prediction or production
+readiness. The complete regression outcome is recorded below.
+
+The required full runner passed on 11 November 2026: 57 mathematics, 18 nutrition,
+12 seasonal, 91 PostgreSQL, 18 coupled-example, three library, four no-AI and
+11 Python advisory tests. Formatting, all-target Clippy, licence checks and
+byte-identical regeneration of all three maintained reports passed. HTTP restart,
+strict-evidence checks under both privilege configurations and 36-table recovery
+passed. Both circulation exercises and actor seeds 7/19 completed, preserving
+the known physical-evidence limitation. The disposable PostgreSQL cluster was
+stopped and removed. No existing database, real money or model calls were used.
+Local results do not stand in for remote CI; inspect the published PR separately.

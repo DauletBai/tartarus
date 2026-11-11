@@ -1,6 +1,6 @@
 # Local Git workflow
 
-The active workspace is connected to `https://github.com/DauletBai/tartarus.git` on `codex/qazna-nutrition-orders`. Publish this branch with the explicit command below. Qazna lives at `projects/qazna.org/`; Git commands also work from that directory. This replaces the earlier API-only publication workflow with a local Git index, commits and IDE status/diffs.
+The active workspace is connected to `https://github.com/DauletBai/tartarus.git` on `codex/qazna-seasonal-food`. Publish this branch with the explicit command below. Qazna lives at `projects/qazna.org/`; Git commands also work from that directory. This replaces the earlier API-only publication workflow with a local Git index, commits and IDE status/diffs.
 
 ## Scope of this workspace
 
@@ -30,7 +30,7 @@ cd ../..
 git add -- projects/qazna.org .github/workflows/qazna.yml MANIFEST.csv
 git diff --cached --stat
 git commit -m "Describe the verified change"
-git push -u origin HEAD:codex/qazna-nutrition-orders
+git push -u origin HEAD:codex/qazna-seasonal-food
 ```
 
 `update_manifest.py` updates only Qazna/CI entries and preserves unrelated manifest entries. Review the staged paths before committing. Changes to historical migrations are not allowed. Do not merge or force-push without authorization. Keep published commits and the local branch synchronized; verify the remote head and CI result before claiming publication is complete.
@@ -86,3 +86,7 @@ metadata still describes the whole Tartarus archive. See
 
 PR #3 passed both remote checks and merged as `54a0db6` on 7 November 2026.
 The nutrient/order stage starts on `codex/qazna-nutrition-orders` from that main.
+
+PR #4 passed both GitHub checks and merged as `3fd6927`. The seasonal-food stage
+starts from that main commit on `codex/qazna-seasonal-food`. Publication and
+verification dates for the completed stage are recorded with its PR.

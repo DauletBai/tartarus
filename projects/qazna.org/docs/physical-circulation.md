@@ -1373,3 +1373,133 @@ makes household or central-kitchen resource requirements disappear.
 The next closure is retained nutrient composition for approved recipes and
 preserved reserves, wider demographic profiles, seasonal feed/crop/land chains,
 and mapping validated orders onto dated production and reviewed runtime drafts.
+
+## Seasonal cereal and feed balance — 11 November 2026
+
+The schema-12 `seasonal_food` annex connects the unchanged 100-million-person
+order snapshot to **60 monthly periods** of rice gross-equivalent, oats
+gross-equivalent and animal feed-grain equivalent. These are three separate
+stock dimensions in kilograms. Feed is derived once from animal-product routes;
+it is not additional food for residents. Other food sectors remain outside this
+seasonal subchain. Household preparation and delivery choices remain unchanged.
+
+Each crop-year is a separate activity with a seed input, a five-month production
+lead, allowed April sowing, September harvest, occupied land and stage irrigation.
+All crop activities compete for the same declared land pool. A crop releases land
+at harvest; harvest is available at the beginning of that monthly period. There
+are five repeated 365-day years, with leap days excluded. This coarse calendar
+does not establish within-month logistics or daily receipt by residents.
+
+For resource `k`, crop activity `j`, month `t` and lead `L_j`, the matrix contains:
+
+```text
+S[k,t] = S[k,t-1] + supply[k,t]
+         + sum_j output[k,j] * x[j,t-L_j]
+         - sum_j input[k,j] * x[j,t] - need[k,t] - discard[k,t]
+0 <= S[k,t] <= storage_capacity[k]
+S[k,t] >= declared_closing_floor[k,t]
+x[j,t] = 0 outside the permitted sowing calendar
+sum_j sum_(s <= t < s+L_j) hectares[j] * x[j,s] <= land[t]
+sum_j sum_(s <= t < s+L_j) irrigation[j,t-s] * x[j,s] <= water_budget[t]
+```
+
+Every declared need must be delivered, including feed and non-objective resources.
+The objective is zero: this block checks feasibility of supplied candidates; it
+claims no optimum. A separate chronological event replay checks stock, receipts,
+seed use, calendars, shared capacity and floors without evaluating the compiled
+matrix. Each scenario has **1,440 variables and 2,625 rows**. The ordinary horizon
+compiler's physical balances remain the underlying matrix representation.
+
+The simplified stage-water helper uses:
+
+```text
+withdrawal_m3_per_ha = ceil(10 * max(ETc_mm - effective_rain_mm, 0) / efficiency)
+```
+
+One millimetre over one hectare is ten cubic metres. Water budgets are withdrawals,
+not total evapotranspiration. Unused monthly withdrawal allowance is not banked.
+[FAO crop-water methodology](https://www.fao.org/4/s2022e/s2022e02.htm) distinguishes
+climate, crop and growth-stage effects; the
+[FAO Crop Calendar](https://cropcalendar.apps.fao.org/#/home) is a source for future
+regional calendar calibration. These sources **do not supply the example's
+coefficients**. Stage ETc `[40,70,100,90,50]` mm, effective rain 20 mm per stage,
+efficiency 80%, yields, seed rates and shared land are synthetic. Soil-water
+carryover, paddy percolation, irrigation infrastructure and crop response to water
+shortage are not modelled. This stage-water calculation replaces a generic water
+coefficient for this submodel; it must not be added to it as a second charge.
+
+### Reproducible conditional result
+
+| Model resource | Daily gross requirement, tonnes (rounded) | Baseline planted hectares each year | Yield / seed, kg per hectare |
+| --- | ---: | ---: | ---: |
+| Rice gross-equivalent | 15,131.579 | 1,445,819 | 4,000 / 180 |
+| Oats gross-equivalent | 10,526.316 | 1,136,718 | 3,500 / 120 |
+| Feed-grain equivalent | 91,117.905 | 5,685,135 | 6,000 / 150 |
+
+Baseline area is **8,267,672 hectares**; modelled annual irrigation withdrawal is
+**25,836,475,000 m³**. These are outputs of the stated synthetic system, not
+estimates of land or irrigation needed by Kazakhstan. Gross cereal equivalents
+are not a reviewed paddy/milling/feed-ration specification. All three opening
+stocks explicitly include the January–August bridge to first harvest, first-year
+seed and a separate 90-day reserve. They are assumed existing endowments, not
+production created by issuance. Startup production and acquisition are unresolved.
+
+| Candidate | Result under supplied constraints |
+| --- | --- |
+| Normal harvest, 90-day reserve | All monthly withdrawals and terminal stocks feasible |
+| Year-three harvest reduced by 20%, no replenishment response | Current withdrawals remain feasible; terminal reserve requirement fails |
+| Same loss, extra production in years four and five | Both current provision and terminal reserve requirements feasible |
+| Same loss with no disruption reserve | Negative-stock counterexample; requests cannot be met on this schedule |
+| Peak year-three irrigation allowance halved | Monthly irrigation constraint fails despite sufficient annual allowance |
+| Feed-crop activity unavailable | Candidate is rejected for exceeding feed-production capacity |
+
+Without replenishment, final stock is short by **1,156,643,915 kg rice-equivalent,
+795,694,745 kg oats-equivalent and 6,822,139,280 kg feed-equivalent** relative to
+the required next-cycle bridge and reserve. The tested replenishment candidate
+uses **1,597,214 / 1,254,426 / 6,268,226 hectares** respectively in years four and
+five. It fits the explicitly assumed 12% spare land envelope and monthly water
+limits, consumes additional seed, and restores the opening stock floors.
+These are predeclared scenario candidates, not an autonomous forecasting or
+land-allocation policy. This shows why reserve sizing and replenishment need
+separate checks. It does
+not prove that extra land, equipment or workers will be available in practice.
+
+Negative candidates remain in the report as diagnostic equations, never as
+executable allocations. The no-feed case tests rejection of the existing schedule;
+it does not forecast an alternative ration, optimize replacement production or
+assert that every conceivable alternative is impossible.
+
+### Preparation retention and preserved-stock boundary
+
+The checksum-pinned `research/food-retention.json` retains 78 original USDA rows
+(three rice preparation categories, 26 nutrient definitions). The upstream
+[USDA Release 6 catalogue](https://catalog.data.gov/dataset/usda-table-of-nutrient-retention-factors-release-6-2007)
+provides the source, licence and data dictionary. Source codes are kept separate
+from FoodData Central nutrient IDs; only the explicitly reviewed **thiamin** mapping
+is used in this example. This is a preparation estimate, not evidence of storage
+stability. Source factors are reported in 5% steps and are not confidence bounds.
+
+The selected raw rice has 0.326 mg thiamin per 100 g. Applied as point assumptions,
+source code 431 gives 0.2445 mg retained after cooking/draining; code 432 gives
+0.2608 mg with cooking water used. A conditional drained-then-reheated chain
+(431 followed by 434) gives 0.232275 mg. All amounts refer to the nutrients from
+**100 g of the original raw ingredient**, not to 100 g of cooked food. Moisture
+gain does not create nutrients; cooked concentration needs a separate mass yield.
+The exact decimals do not imply matching empirical precision.
+
+`sequential_retention` composes supplied stage intervals with outward rounding.
+An unmeasured storage stage keeps the chain unknown rather than treating retention
+as 100%. The seasonal mass example assumes usable preserved stock without
+quantity deterioration; integration with the existing dated FEFO/loss module and
+validated retention curves remains required. No complete diet, decades-long
+shelf life, food-safety certificate or automatic menu change follows from these
+calculations.
+
+### Remaining integration gate
+
+Calibrate region/product-specific crop calendars, harvest/seed yields, land and
+water; close labour, fertilizer, energy, processing, transport and animal-ration
+chains in these same monthly units; connect dated lots and nutrient retention;
+then extend the remaining food sectors and demographic profiles. Only after those
+steps can a reviewed mapping connect this annex to runtime drafts and accounting.
+Existing monetary traces and household entitlements have not been changed.

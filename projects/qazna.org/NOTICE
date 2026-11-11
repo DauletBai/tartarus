@@ -29,3 +29,11 @@ Source and licence: https://fdc.nal.usda.gov/api-guide/
 Dataset source URL, publication dates and SHA-256 are retained in the extract.
 No USDA/EFSA/WHO endorsement is implied. Research norms and transformations
 are documented separately from published composition values.
+
+USDA Table of Nutrient Retention Factors, Release 6 (2007): original selected
+rice-preparation rows in research/food-retention.json are upstream CC0 1.0 data,
+not relicensed by Qazna. Attribution: U.S. Department of Agriculture,
+Agricultural Research Service. The extract records the source SHA-256 and URL.
+Catalogue and licence: https://catalog.data.gov/dataset/usda-table-of-nutrient-retention-factors-release-6-2007
+Derived scenario arithmetic and source mappings are Qazna research assumptions,
+not USDA certification of an individual diet, food batch or storage duration.
