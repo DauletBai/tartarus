@@ -145,17 +145,17 @@ experimental rule; physical completeness and broader policy remain open.
 The [coupled physical and monetary study](docs/physical-circulation.md) connects
 finite deposits, energy, equipment, transport, construction and training in one
 five-year matrix. Shared capabilities and exact goods/payment links are checked
-separately from liquidity. Coefficients remain synthetic research inputs.
+separately from liquidity. Input status is maintained in the
+[common assumptions register](docs/input-assumptions.md).
 Its exact integer improvement stage reduces excess starts while preserving each
 delivery and terminal reserves; all payments are recalculated. The baseline uses
-44.08% fewer power batches than the fixed-output seed. This is a synthetic
-comparison, not a calibrated savings forecast or a global optimum.
+44.08% fewer power batches than the fixed-output seed under the declared constraints.
 A causal reserve-route experiment then reduces unmet meals during a 90-day primary
 transport interruption by 72.24%, and eliminates them in the 30-day scenario under
 the declared stocks/capacities. Future restoration dates are not supplied to the
 daily decisions; exact physical and cash checks remain separate.
 A further experiment uses one identical opening balance vector across six disruption
-schedules: 2,030,483,170,650 synthetic normative units (1.253609% above normal-only
+schedules: 2,030,483,170,650 normative units (1.253609% above normal-only
 funding). Every scheduled payment settles; physical shortages under severe stress
 remain explicitly reported. This is a fixed-family certificate, not a national
 budget, global optimum or guarantee against unknown failures.
@@ -163,7 +163,7 @@ budget, global optimum or guarantee against unknown failures.
 An eight-policy, six-scenario joint-planning comparison now eliminates the
 90-period transport-only meal deficit through additional **produced** equipment,
 with unchanged initial assets. Equipment plus food buffers reduces worst unmet
-meals to 2.76 billion synthetic units. The minimax service-shortfall fraction reaches
+meals to 2.76 billion units. The minimax service-shortfall fraction reaches
 a certified 1.569116% lower bound in the previous configuration without backup
 generation or energy storage; the remaining physical interruption is not hidden by cash balances.
 See [objectives, exact certificate and limits](docs/physical-circulation.md#joint-reserve-replacement-and-training-policies).
@@ -173,8 +173,7 @@ constructs standby generators and fuel storage from existing resources, accounts
 for daily loss, protects restart stock and refills after recovery. A 30-period
 reserve covers the prepared repeated-interruption family; 60 periods covers the
 60-period supply failure. Thirty-five exact traces retain early/overlong failures
-and a failed overfilling policy. This is a synthetic resilience result, not a
-national stockpile recommendation or a guarantee against unknown emergencies.
+and a failed overfilling policy; the tested disruption family is recorded with the results.
 
 ## Run the checks
 
@@ -229,7 +228,7 @@ The [dependency inventory](THIRD_PARTY_LICENSES.json) records locked Rust packag
 Earlier bounded extension: [daily maintenance and specialist absence](docs/physical-circulation.md#daily-maintenance-work-and-unavailable-technical-teams).
 Two separately constrained workdays prevent repairs from completing without a
 technical team; preserved-food and housing outcomes are reported independently
-of successful monetary settlement. Coefficients remain synthetic.
+of successful monetary settlement.
 
 ### Nutrition and household choice
 
@@ -238,8 +237,7 @@ The offline [nutrition/order annex](docs/physical-circulation.md#nutrient-needs-
 The [seasonal food annex](docs/physical-circulation.md#seasonal-cereal-and-feed-balance--11-november-2026)
 checks 60 monthly crop/seed/land/water balances and reserve replenishment for the
 cereal/feed portion of the order snapshot. Exact matrices and independent replay
-retain failed scenarios; synthetic land/yield assumptions and missing dated-stock
-integration remain visible.
+retain failed scenarios and explicitly recorded land/yield inputs.
 
 
 ### Reviewed dated scenario state
@@ -250,3 +248,12 @@ Only an operator can apply a previously saved proposal; conflicting or stale
 approvals fail. This does not update real inventory or money. See the
 [HTTP workflow and limits](docs/development.md#persistent-scenario-workflow) and
 [architecture](docs/architecture.md#persistent-reviewed-dated-scenarios--11-november-2026).
+
+
+### Regional and life-stage needs
+
+The population binding now partitions person-days by region and joint life-stage /
+care profile. Explicit full norms replace inherited norms without adding a second
+baseline. Regional deliveries must reconcile to physical deliveries; a local deficit
+blocks approval even if the national total balances. See [architecture](docs/architecture.md#regional-and-life-stage-binding)
+and the shared [input assumptions](docs/input-assumptions.md).

@@ -149,3 +149,97 @@ async fn population_units_and_unknown_demographic_sources_cannot_be_approved() {
         );
     }
 }
+
+fn profile_input() -> (ModelDefinition, ModelInput) {
+    let v: serde_json::Value =
+        serde_json::from_str(include_str!("../../research/need-profile-results.json")).unwrap();
+    let mut d: ModelDefinition =
+        serde_json::from_value(v["runtime_fixture"]["definition"].clone()).unwrap();
+    d.id = Uuid::new_v4();
+    (
+        d,
+        serde_json::from_value(v["runtime_fixture"]["input"].clone()).unwrap(),
+    )
+}
+#[tokio::test]
+#[ignore = "requires isolated PostgreSQL; use scripts/check.py"]
+async fn regional_shortage_rejection_preserves_retry_and_approved_profile_history() {
+    let f = Fixture::new().await;
+    let (d, data) = profile_input();
+    let id = d.id;
+    f.ledger.create_model_scenario("profiles", d).await.unwrap();
+    let proposal = |input, generation| ModelProposal {
+        id: Uuid::new_v4(),
+        expected_generation: generation,
+        input,
+        basis: "Reviewed local needs".into(),
+    };
+    let mut wrong = data.clone();
+    let local = &mut wrong
+        .population
+        .as_mut()
+        .unwrap()
+        .profiles
+        .as_mut()
+        .unwrap()
+        .local_delivery;
+    local[0].quantities[0] += 1;
+    local[1].quantities[0] -= 1;
+    assert!(
+        f.ledger
+            .propose_model_scenario("same-key", id, proposal(wrong, 0))
+            .await
+            .is_err()
+    );
+    assert_eq!(
+        f.ledger.model_scenario(id, None).await.unwrap().generation,
+        0
+    );
+    let draft = f
+        .ledger
+        .propose_model_scenario("same-key", id, proposal(data.clone(), 0))
+        .await
+        .unwrap();
+    f.ledger
+        .resolve_model_scenario("approve", draft.request.id, decision())
+        .await
+        .unwrap();
+    let saved = f.ledger.model_scenario(id, None).await.unwrap();
+    for mode in 0..3 {
+        let mut next = data.clone();
+        next.boundary = 30;
+        let profiles = &mut next.population.as_mut().unwrap().profiles;
+        match mode {
+            0 => *profiles = None,
+            1 => profiles.as_mut().unwrap().exposure_source.source_version = "2".into(),
+            _ => profiles.as_mut().unwrap().cells[0].person_days[40] -= 1,
+        }
+        assert!(
+            f.ledger
+                .propose_model_scenario("next", id, proposal(next, 1))
+                .await
+                .is_err()
+        );
+        assert_eq!(
+            json!(f.ledger.model_scenario(id, None).await.unwrap()),
+            json!(saved)
+        );
+    }
+    let mut next = data;
+    next.boundary = 30;
+    let draft = f
+        .ledger
+        .propose_model_scenario("next", id, proposal(next, 1))
+        .await
+        .unwrap();
+    f.ledger
+        .resolve_model_scenario("approve-next", draft.request.id, decision())
+        .await
+        .unwrap();
+    assert_eq!(
+        json!(f.ledger.model_scenario(id, Some(1)).await.unwrap()),
+        json!(saved)
+    );
+    assert_eq!(f.balance(f.treasury).await, "1000");
+    assert_eq!(f.balance(f.resident).await, "0");
+}

@@ -531,8 +531,41 @@ operator, idempotency, transaction and stale-generation boundaries. The optional
 fields are omitted when absent, so earlier checkpoint bytes remain compatible.
 No migration, dependency, live entitlement or monetary authority is introduced.
 
-This foundation does not implement sex-specific fertility, pregnancy, household
-choice, disability/health overlays or cross-region movements. Age-only profiles
-are not eligibility rules or a measure of human worth. The declared ranges and
-scenario variants are not probabilistic confidence intervals. Registry attribution,
-mathematical consistency and real-world verification are separate questions.
+For input status, demographic timing and remaining calibration, see the shared
+[input assumptions](input-assumptions.md). Regional and life-stage binding extends
+this foundation below.
+
+
+### Regional and life-stage binding
+
+`PopulationBinding.profiles` is optional; absent fields preserve previous serialized
+bytes. `need_profiles.rs` validates a complete disjoint partition of every monthly
+age-group's person-days across named regions and joint profiles. Limits are 16
+regions, 16 profiles and 256 exposure cells; the registry and calendar retain their
+existing bounds. A profile pairs a life stage with support needs, allowing pregnancy
+and assisted care together without double counting. Exposure source metadata and
+coefficient sources are stored in the approved input.
+
+Each cell/item rule explicitly inherits the age norm or replaces it with a complete
+profile norm. Replacement is not an extra baseline. The complete matrix is required;
+missing entries, duplicate cells, extra fields and invalid units fail. Zero exposure
+contributes zero, while an unknown coefficient for positive exposure propagates
+unknown central/upper need. Equal parameter references are aggregated within a
+region before integer ceiling; total national need sums regional rounded need.
+Distinct parameters are not silently treated as interchangeable.
+
+For group g and month t, `sum(c in g) exposure[c,t] = opening[g,t] * days[t]`.
+For region r and item k, `need[r,k,t] = sum(norm buckets b) ceil(exposure[b,t] * norm[b,k])`.
+The new profile totals replace the base age totals for mapped physical needs; both
+base evidence and profile evidence remain separately visible in the checkpoint.
+
+`local_delivery` covers exactly each declared region and mapped item for every
+period. Its sum must equal physical deliveries. The audit reports local shortages
+without netting them against another region's surplus; full proposal/approval rejects
+any positive mapped shortage. No unrecorded interregional transfer is inferred.
+All profile inputs are pinned by the existing immutable population binding and are
+recomputed at approval. No migration, dependency, AI authority or ledger mutation
+is added. Runtime and checkpoint size limits remain unchanged.
+
+Classification accuracy, lifecycle transitions and actual local access are separate
+from these arithmetic checks; see [input assumptions](input-assumptions.md).

@@ -1,5 +1,12 @@
 # Qazna changelog
 
+## Regional and life-stage needs — 12 November 2026
+
+- Added disjoint person-day profiles, full norm inheritance/replacement, joint pregnancy/support states and regional demand totals.
+- Reconciled local provision to physical deliveries and blocked approvals hiding regional shortages behind national totals.
+- Preserved input provenance and unknown norms; centralized input assumptions and removed repeated qualifiers from the overview.
+- Added reproducible profile calculations, adversarial matrix/rounding tests and runtime history/recovery checks.
+
 ## Unreleased
 
 - Add a bounded Rust population registry with explicit provenance, units, rational intervals, source-attribution mode and unknown coefficients.

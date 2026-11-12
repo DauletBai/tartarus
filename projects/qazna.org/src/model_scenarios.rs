@@ -320,6 +320,15 @@ pub(crate) fn calculate(
                 .map_err(invalid)
         })
         .transpose()?;
+    if population
+        .as_ref()
+        .and_then(|p| p.profiles.as_ref())
+        .is_some_and(|p| p.local_coverage.iter().any(|r| r.unmet != "0"))
+    {
+        return Err(LedgerError::Invalid(
+            "regional provision leaves unmet needs",
+        ));
+    }
     let bindings = &before.definition.dated_bindings;
     if dated.len() != bindings.len() || input.dated_generations.len() != bindings.len() {
         return Err(LedgerError::Invalid("missing dated generations"));

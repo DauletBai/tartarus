@@ -76,6 +76,7 @@ def populate_and_restart(url):
         coupled_reference = populate_coupled(call, model_reference)
         extended_reference = populate_extended(call)
         population_reference = populate_population(call)
+        profile_reference = populate_population(call, "need-profile-results.json")
     with server(url) as call:
         assert call(model_reference['path']) == model_reference['saved']
         assert call(model_reference['draft_path']) == model_reference['pending']
@@ -85,9 +86,11 @@ def populate_and_restart(url):
         assert call(extended_reference['draft_path']) == extended_reference['pending']
         assert call(population_reference['path']) == population_reference['saved']
         assert call(population_reference['draft_path']) == population_reference['pending']
+        assert call(profile_reference['path']) == profile_reference['saved']
+        assert call(profile_reference['draft_path']) == profile_reference['pending']
     print('Physical model: full accepted and pending state survives process restart', flush=True)
     print('Dated scenario: 2 process restarts, pending and approved bytes preserved', flush=True)
-    return dict(path=path, saved=saved, pending=next_draft, model=model_reference, coupled=coupled_reference, extended=extended_reference, population=population_reference)
+    return dict(path=path, saved=saved, pending=next_draft, model=model_reference, coupled=coupled_reference, extended=extended_reference, population=population_reference, profiles=profile_reference)
 
 
 def resume_restored(url, reference):
@@ -112,6 +115,7 @@ def resume_restored(url, reference):
         resume_coupled_current(call, reference['coupled'])
         resume_extended(call, reference['extended'])
         resume_population(call, reference['population'])
+        resume_population(call, reference['profiles'])
     print('Dated scenario: restored history continued under least-privilege runtime role', flush=True)
 
 
@@ -274,8 +278,8 @@ def resume_extended(call, reference):
     print('Extended five-year scenario: food origins, packaging mass and exact circulation survive restart/restore', flush=True)
 
 
-def populate_population(call):
-    fixture = json.loads((ROOT / 'research/population-results.json').read_text())['runtime_fixture']
+def populate_population(call, filename="population-results.json"):
+    fixture = json.loads((ROOT / "research" / filename).read_text())["runtime_fixture"]
     definition = fixture['definition']
     definition['id'] = uid()
     path = '/v1/scenarios/models/' + definition['id']
@@ -287,6 +291,9 @@ def populate_population(call):
     evidence = json.loads(approved['checkpoint'])['population']
     assert evidence == fixture['population_evidence']
     assert not evidence['projection']['all_selected_needs_known']
+    if filename == 'need-profile-results.json':
+        assert evidence['profiles']
+        assert all(row['unmet'] == '0' for row in evidence['profiles']['local_coverage'])
     data = copy.deepcopy(fixture['input'])
     data['boundary'] = 30
     pending = call(path + '/drafts', dict(id=uid(), expected_generation=1, input=data,
