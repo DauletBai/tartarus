@@ -143,3 +143,13 @@ Tests cover missing rules, wrong units, unknown coefficients, double-booked asse
 regional borrowing, retired equipment and overloaded mentors. Source metadata and
 valid arithmetic do not authenticate real qualifications or source coefficients;
 professional review and observed capacity remain separate evidence requirements.
+
+## Feedback does not grant execution authority
+
+Service repair is deterministic and needs no model call. Availability declarations
+are untrusted until exact old/new differences, frozen assumptions, history and full
+feasibility pass. The reference string does not authenticate a declaration's truth.
+The offline search proposes a candidate; existing operator-only review, generation
+checks and transaction boundaries remain in force. AI cannot lower need, hide an
+unrecoverable shortage, erase ongoing work or apply a candidate. Concurrent review,
+retry after failure and restored pending revisions are exercised against PostgreSQL.

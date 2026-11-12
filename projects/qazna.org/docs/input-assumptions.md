@@ -112,5 +112,28 @@ to the full 31-resource upstream graph. Operational energy and development input
 are balanced, but replenishment of these endowments, individual qualifications,
 regional travel, daily appointment concurrency, staff leave and actual attendance
 need additional inputs. Monthly planned provision is not observed receipt.
-A changed service assumption currently requires a new scenario: accepted model
-history freezes the complete service plan, including availability and provision.
+Changed norms, needs, calendars or pool identities require a new scenario. Future
+availability can now change through a separately reviewed, exact revision record;
+accepted past availability and prior records remain immutable.
+
+## Service feedback inputs
+
+The feedback fixture in `service-results.json` keeps the preceding graph's opening
+resources and need coefficients. Before its initial approval, it allows the northern
+care training process to start in any month, within the original batch-size limit,
+and schedules that batch at period 4. This is a distinct initial scenario, not a
+retroactive relaxation of the earlier one-shot development schedule.
+
+At boundary 4 it declares care-workforce availability of 9,829 and 9,530 basis
+points for periods 4 and 5, with device availability of 9,188 and 8,908. Values
+were constructed to leave enough capacity for care while exposing mentor overload;
+they are not absence-rate observations. Source references identify that scenario.
+The recovery path returns to baseline availability in period 6. A second path sets
+care-workforce availability to zero in period 4 and cannot be repaired by deferral.
+
+The search receives only the declared availability schedule and accepted state;
+it does not infer hidden future outcomes. Its result is conditional on that input,
+not perfect prediction. No consent, clinical leave policy, credentials or real-world
+absence verification is supplied by the arithmetic. Repair covers one whole
+unstarted batch; interruption/resumption of ongoing courses, reassignment of
+people, cross-region provision and joint global optimization remain outside it.

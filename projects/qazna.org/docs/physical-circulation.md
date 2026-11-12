@@ -2140,3 +2140,46 @@ Reproduce with `cargo run --locked --example service_study -- research/service-r
 The report contains 360 service coverage rows, 720 pool balances and 60 operating
 balances. Approval stores recomputed evidence under the existing separate-review
 protocol; it does not deliver services or alter real inventory or money.
+
+## Reviewed service repair — 12 November 2026
+
+The maintained service report (schema 2) retains its previous calculations and adds
+an explicit feedback branch. A declared temporary absence at boundary 4 overloads
+mentors while leaving sufficient time for care itself. Initial shortages are
+9,145,034 capacity minutes in period 4 and 9,379,239 in period 5. The scheduled
+82,345-slot preparation batch uses 9,881,400 mentor minutes each active month.
+
+Trying start periods 4, 5 and 6 rejects the first two and accepts 6. The course
+therefore completes in period 12 and provides capacity from period 13, before
+subsequent demand would exceed the remaining workforce. The first four physical
+rows, seven ongoing commitments, opening cohorts and all human service needs stay
+unchanged. Current provision and operating inputs are identical; development
+inputs are consumed later. Opening resources and final stocks are unchanged.
+
+For quantity q moved from a to b >= a, lead L and resource k:
+
+```text
+x'[a,j] = 0; x'[b,j] = x[b,j] + q              (b > a)
+stock'[t,k] = stock[t,k]
+             + q * input[j,k]  * 1[a <= t < b]
+             - q * output[j,k] * 1[a+L <= t < b+L]
+```
+
+Deliveries, disposal, needs and other process starts are unchanged by the helper.
+These stock deltas form a candidate, not proof of feasibility; the full independent
+checks still enforce capacities, shelf lives, floors, commitments and conservation.
+The implementation returns the earliest feasible date within its declared bounded
+window, not a globally optimal schedule.
+
+When the care workforce is wholly unavailable in period 4, all nine candidate
+starts from 4 through 12 fail. The system returns no repair and retains needs;
+it does not manufacture staff, lower care norms or use another region's capacity.
+A ten-level availability test compares the search with an independent integer
+workforce inequality for every month of the horizon.
+
+Changed availability requires a complete revision record and separate operator
+review. Later recovery adds another record instead of editing the old one. Source
+status and scope are in [input assumptions](input-assumptions.md#service-feedback-inputs).
+The new branch uses the existing `service_study` reproduction command. Its output
+includes baseline, declared change, attempted dates, accepted repair, shortages
+and the preserved rolling boundary.

@@ -49,9 +49,28 @@ pub struct ServiceRule {
 #[derive(Clone, Debug, Serialize, Deserialize, PartialEq, Eq)]
 #[serde(deny_unknown_fields)]
 pub struct ServicePlan {
+    #[serde(default, skip_serializing_if = "Vec::is_empty")]
+    pub revisions: Vec<ServiceRevision>,
     pub registry: Registry,
     pub pools: Vec<ServicePool>,
     pub rules: Vec<ServiceRule>,
+}
+/// One declared change of future availability, retained with the approved input.
+#[derive(Clone, Debug, Serialize, Deserialize, PartialEq, Eq)]
+#[serde(deny_unknown_fields)]
+pub struct AvailabilityChange {
+    pub pool: String,
+    pub period: usize,
+    pub previous_bps: u16,
+    pub available_bps: u16,
+}
+#[derive(Clone, Debug, Serialize, Deserialize, PartialEq, Eq)]
+#[serde(deny_unknown_fields)]
+pub struct ServiceRevision {
+    pub boundary: usize,
+    pub basis: String,
+    pub source_reference: String,
+    pub changes: Vec<AvailabilityChange>,
 }
 #[derive(Clone, Debug, Serialize, Deserialize)]
 pub struct ServiceCoverage {
@@ -95,6 +114,72 @@ fn add(a: &mut u64, b: u64) -> Result<()> {
     Ok(())
 }
 impl ServicePlan {
+    /// Only availability after the rolling boundary may change. Norms, need and
+    /// service schedules remain fixed; physical work is checked by RollingCapital.
+    pub fn verify_continuation(&self, old: &Self, boundary: usize) -> Result<()> {
+        if self.pools.len() != old.pools.len() || self.revisions.len() > 128 {
+            return Err(bad("service revision dimensions"));
+        }
+        let mut normalized = self.clone();
+        normalized.revisions = old.revisions.clone();
+        let mut changes = Vec::new();
+        for (next, prior) in normalized.pools.iter_mut().zip(&old.pools) {
+            if next.availability_bps.len() != prior.availability_bps.len()
+                || boundary > prior.availability_bps.len()
+            {
+                return Err(bad("service revision calendar"));
+            }
+            for (t, (&after, &before)) in next
+                .availability_bps
+                .iter()
+                .zip(&prior.availability_bps)
+                .enumerate()
+            {
+                if after > 10000 || (t < boundary && after != before) {
+                    return Err(bad("service availability history or range"));
+                }
+                if after != before {
+                    changes.push(AvailabilityChange {
+                        pool: prior.id.clone(),
+                        period: t,
+                        previous_bps: before,
+                        available_bps: after,
+                    });
+                }
+            }
+            next.availability_bps = prior.availability_bps.clone();
+        }
+        if normalized != *old {
+            return Err(bad("service assumptions changed"));
+        }
+        if changes.is_empty() {
+            return if self.revisions == old.revisions {
+                Ok(())
+            } else {
+                Err(bad("service revision without availability change"))
+            };
+        }
+        if changes.len() > 4096
+            || self.revisions.len() != old.revisions.len() + 1
+            || self.revisions[..old.revisions.len()] != old.revisions
+        {
+            return Err(bad("service revision history changed"));
+        }
+        let revision = self
+            .revisions
+            .last()
+            .ok_or(bad("missing service revision"))?;
+        if revision.boundary != boundary
+            || revision.changes != changes
+            || revision.basis.trim().is_empty()
+            || revision.basis.len() > 1000
+            || revision.source_reference.trim().is_empty()
+            || revision.source_reference.len() > 512
+        {
+            return Err(bad("service revision does not explain exact change"));
+        }
+        Ok(())
+    }
     fn rate(&self, id: &str, unit: &str) -> Result<Ratio> {
         Ok(self
             .registry

@@ -163,3 +163,12 @@ comes from available people, rooms and equipment; preparation of new specialists
 uses current mentors, while construction uses shared builders and physical inputs.
 A shortage preserves the need and explains the capacity gap. Aggregate slots
 must not be interpreted as compulsory work assignment or a person's worth.
+
+## Adapting without losing memory
+
+A temporary reduction in available capability can now trigger a verified proposal
+to defer unstarted development. Care remains unchanged while preparation uses
+available mentor time. Work already begun stays in the commitment ledger. If no
+permitted schedule can sustain provision, the deficit remains explicit. This is
+feedback around shared physical reserves and capacity, not permission to redefine
+people's needs or compel extra work.
