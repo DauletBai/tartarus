@@ -2035,3 +2035,52 @@ It demonstrates review, immutable population sources, exact matching of needs,
 continued history and recovery after restart/restore. Other need items are explicitly
 unmapped. Sex/fertility, pregnancy, disability/health, personal choice, regional
 movement, empirical sources and the complete food-production mapping remain open.
+
+
+## Regional and life-stage needs
+
+The next layer starts from the population calculation and partitions its monthly
+person-days across regions and joint profiles. The maintained run has **60 months,
+2 regions, 7 profiles, 30 exposure cells and 240 explicit norm rules**. A person-day
+belongs to exactly one cell. Pregnancy together with assisted care has its own
+profile, so the same exposure is not counted twice.
+
+For age group g, region r, profile p, need k and month t:
+
+```text
+sum(r,p) E[g,r,p,t] = N[g,t] * days[t]
+D[r,k,t] = sum(norm buckets b in r) ceil(E[b,t] * q[b,k])
+D[k,t] = sum(r) D[r,k,t]
+sum(r) delivery[r,k,t] = physical_delivery[k,t]
+gap[r,k,t] = max(0, D[r,k,t] - delivery[r,k,t])
+```
+
+Every rule either inherits the age norm or replaces it with the full profile norm.
+It never silently adds a second baseline. Equal parameter references are aggregated
+before rounding within a region. Rounding separately for local delivery can produce
+a small difference from rounding national demand once; it is retained explicitly.
+Unknown norms for positive exposure leave the resulting total unknown.
+
+The five-year result in [need-profile-results.json](../research/need-profile-results.json):
+
+| Requirement | Total | Unit |
+| --- | ---: | --- |
+| Rice component | 50,244,382,445 | gross-equivalent kg |
+| Oats component | 30,103,768,012 | gross-equivalent kg |
+| Water component | 490,758,021,791 | litre |
+| Preschool capacity | 7,624,307,400 | place-day |
+| School capacity | 29,199,549,916 | place-day |
+| Care workload | 1,665,863,406,893 | minute |
+| Protein / vitamin D | Not calculated: coefficients missing | g / microgram |
+
+Care minutes are a workload requirement, not an already available workforce.
+Converting them into staffing, qualifications, shifts, facilities and transport is
+the next physical-capacity connection. Profiles do not infer people's employment,
+capabilities or entitlement from their health or life stage. Definitions and
+coefficient provenance are consolidated in [input assumptions](input-assumptions.md).
+
+The rejection example preserves the national water total but assigns one litre
+from the southern requirement to the north. National coverage stays complete;
+the southern gap becomes one litre and runtime approval fails. Region-specific
+provision must therefore be reconciled before a plan can be approved. The audit
+reports the gap, rather than hiding it inside another region's surplus.

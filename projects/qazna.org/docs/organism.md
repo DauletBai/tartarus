@@ -144,8 +144,13 @@ explicit monthly balance. Need is evaluated for each declared age profile before
 aggregation; a missing coefficient cannot be covered by another group's surplus.
 The role of these profiles is to identify provision, not to rank people by work,
 profitability or usefulness. Unknown care and nutrient requirements remain open.
-The organism analogy does not make future births, health or choices certain. Three
-illustrative population paths make changing assumptions visible. The accepted
-finite-stock fixture is a calculation test, not evidence of a national replenishing
-supply system. The older upstream plan fails the new food-component need gate,
+Three population paths make changing assumptions visible; evidence status and
+fixture scope are recorded in [input assumptions](input-assumptions.md). The older upstream plan fails the new food-component need gate,
 which is feedback requiring a revised physical plan rather than reduced entitlement.
+
+
+Regional and life-stage profiles now preserve the same person-day total while
+identifying different needs. Pregnancy together with assisted care is one joint
+profile, not two separate people. Regional shortages remain local signals even if
+another region has surplus. Neither basic provision nor care depends on employment,
+productivity or a person's ranking. No private health records are introduced.

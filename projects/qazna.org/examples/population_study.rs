@@ -232,6 +232,7 @@ fn main() {
     definition.time_origin = "2027-01".into();
     let mut input: ModelInput = serde_json::from_value(original["input"].clone()).unwrap();
     let binding = PopulationBinding {
+        profiles: None,
         study: study.clone(),
         mappings: vec![
             NeedMapping {

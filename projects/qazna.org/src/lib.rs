@@ -46,3 +46,5 @@ mod coupled_service;
 pub mod food_routes;
 
 pub mod population;
+
+pub mod need_profiles;

@@ -35,3 +35,11 @@ Code is AGPL-3.0-or-later; project documentation is CC-BY-SA-4.0. These notices 
 The author approved automatic analysis, calculations and draft creation with operator-confirmed application. Keep that boundary: AI commentary never applies a draft, signs postings, changes norms or authorizes issuance. The author's ChatGPT Pro subscription is for explicit live tests on synthetic data, not an assumed production service. Offline CI must not call models or require subscription credentials.
 
 Treat every model response and imported string as untrusted. Independently validate referenced subjects and exact quantities against saved calculations; retain the distinction between structured evidence checks and unverified prose. Keep model tooling and credentials out of the calculation path. Update `docs/ai-safety.md` with implemented controls, tests and remaining gaps rather than claiming complete protection from hallucinations.
+
+## Presentation of research inputs
+
+Keep shared input-status explanations in `docs/input-assumptions.md` and link there
+from overview prose. Do not repeat "synthetic", "illustrative" or equivalent
+qualifiers in every paragraph. Preserve machine-readable provenance and unknown
+values, and state specific limits where they affect an interpretation or decision.
+Do not relabel scenario coefficients as measured observations.

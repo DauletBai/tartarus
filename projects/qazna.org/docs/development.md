@@ -840,3 +840,35 @@ restart and both six-case strict-evidence exercises passed. Circulation complete
 the known physical custody/evidence gap remains. These local synthetic exercises
 are not a national demographic forecast or production throughput claim. Remote
 CI results are recorded separately in the pull request.
+
+
+## Regional profile reproduction
+
+```sh
+cargo run --locked --release --example need_profile_study -- /tmp/qazna-need-profiles.json
+cmp /tmp/qazna-need-profiles.json research/need-profile-results.json
+cargo test --locked --test need_profiles
+```
+
+The full checker reproduces the new report in addition to every preceding report.
+Twelve profile tests cover exact exposure conservation, joint pregnancy/support
+workload, missing/duplicated dimensions, unknown norms, zero exposure, invalid
+source metadata, full norm replacement, aggregation before rounding, JSON field
+rejection and local shortage with an unchanged national total. A 32-case exposure
+redistribution check verifies unchanged equal-norm demand and the exact care delta.
+
+The PostgreSQL test rejects a locally deficient candidate without consuming its
+retry key, then approves the corrected candidate and rejects changes to frozen
+profiles/source versions. Historical versions and balances remain unchanged.
+Real HTTP restart and logical database restore also preserve the new profile
+checkpoint and pending boundary continuation alongside earlier scenarios.
+
+Profile-stage local verification, 12 November 2026: full `scripts/check.py` passed
+with **323 Rust tests** (including **12 profile** and **121 PostgreSQL** tests) and
+**11 Python** tests. Rustfmt, all-target Clippy, licence inventory and byte-for-byte
+reproduction of all old and new reports passed. Backup/restore covered **45 tables**
+and **15 privilege denials**, including the regional profile continuation.
+Circulation completed 4,548 requests in 33.013 seconds with one restart; closed
+circulation completed 3,901 requests in 27.216 seconds with two restarts. Both
+strict-evidence exercises and actor seeds 7/19 passed. No dependency, database
+migration or monetary authority changed. Remote CI is recorded in the PR.

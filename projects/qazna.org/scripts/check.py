@@ -39,6 +39,7 @@ def main():
     run(["cargo", "test", "--locked", "--test", "rolling"])
     run(["cargo", "test", "--locked", "--test", "dated"])
     run(["cargo", "test", "--locked", "--test", "population"])
+    run(["cargo", "test", "--locked", "--test", "need_profiles"])
     run(["cargo", "test", "--locked", "--example", "no_ai_study"])
     run(["cargo", "test", "--locked", "--example", "coupled_study"])
     with tempfile.TemporaryDirectory(prefix="qazna-math-") as math_dir:
@@ -65,6 +66,11 @@ def main():
         for generated, published in [(fixture, ROOT / "fixtures/population-study.json"), (report, ROOT / "research/population-results.json")]:
             if generated.read_bytes() != published.read_bytes():
                 raise SystemExit("Population inputs or results differ from reproducible calculation")
+    with tempfile.TemporaryDirectory(prefix="qazna-profiles-") as directory:
+        report = Path(directory) / "need-profile-results.json"
+        run(["cargo", "run", "--locked", "--release", "--example", "need_profile_study", "--", str(report)])
+        if report.read_bytes() != (ROOT / "research/need-profile-results.json").read_bytes():
+            raise SystemExit("Need profile results differ from reproducible calculation")
     pg_dir = os.environ.get("PG_BIN")
     if not pg_dir:
         binary = shutil.which("initdb")

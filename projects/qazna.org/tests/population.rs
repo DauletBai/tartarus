@@ -316,6 +316,7 @@ fn bound() -> (ModelDefinition, ModelInput) {
             n(m.demands[0].central.as_ref().unwrap()) as i64;
     }
     i.population = Some(PopulationBinding {
+        profiles: None,
         study,
         mappings: vec![NeedMapping {
             item: "rice_component".into(),

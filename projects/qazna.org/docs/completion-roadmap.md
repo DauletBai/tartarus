@@ -1,6 +1,6 @@
 # Completion roadmap and feasibility boundaries
 
-Latest review: 12 November 2026, bounded population registry and demand binding.
+Latest review: 12 November 2026, regional and life-stage need profiles.
 The current work order below supersedes earlier milestone-specific next steps.
 
 ## Completion scope and remaining work — 12 November 2026
@@ -20,8 +20,10 @@ source/version/unit/interval checks, three illustrative demographic variants,
 unknown need propagation and immutable runtime demand binding. The full upstream
 candidate rejects the increased projected demand rather than hiding unmet need.
 A separate finite-stock water-component fixture exercises accepted review and
-restart/restore. Sex/life-stage and regional calibration, evidence review, broader
-need profiles and engineering inputs remain open; package 3 is not complete.
+restart/restore. Regional person-day partitions and joint pregnancy/care profiles now bind to
+physical needs, with local-shortage rejection. Lifecycle transitions, sex-specific
+fertility, regional routes, source calibration and engineering inputs remain open;
+package 3 is not complete.
 The effort range below remains a conditional planning estimate, not a new deadline.
 
 The target for this estimate is **research demonstrator v1**: a reproducible,
@@ -36,7 +38,7 @@ national sectors or a production monetary system.
 | --- | --- | ---: |
 | 1. Persistent physical scenario foundation — implemented | Dated and capital/seasonal inputs, reviewed versions, pinned selected stocks and restart/restore; monetary association continues in package 2 | — |
 | 2. Join extended physical and monetary plans — implemented for selected candidate | 60-month runtime fixture, origin-preserving food, upstream production, finite capital/recovery and exact payments; independent balances and rejection of infeasible capacity changes. Efficiency, deficit quantification and repeatable policy continue in package 4 | — |
-| 3. Input and population registry — bounded foundation implemented | Exact monthly cohorts, registry metadata, unknown needs and reviewed binding implemented. Remaining: source review/calibration, sex/life-stage/regional inputs, broader need profiles and engineering coefficients; source attribution must not be presented as verification | 6–10 |
+| 3. Input and population registry — bounded foundation implemented | Exact monthly cohorts, registry metadata, unknown needs and reviewed binding implemented. Regional/life-stage person-day needs and local-shortage gates implemented. Remaining: source calibration, lifecycle transitions, regional routes and engineering coefficients | 6–10 |
 | 4. Close the rolling feedback experiment | Decisions use observed state, retain commitments, replan after declared outages/demand changes, report shortages without inventing goods, and pass sensitivity/adversarial cases; optional solver outputs independently verified | 4–7 |
 | 5. Expose the demonstrator's workflows | Small operator/reviewer interface, synthetic participant scope, intelligible reasons, correction/dispute examples, approval and audit history, accessible navigation; no claim of production identity/enrollment | 7–12 |
 | 6. Freeze and reproduce a release | Clean deployment, recorded workload envelope, sustained/restart/restore and fault exercises, dependency/privilege review, versioned evidence and known limitations, release guide and runnable demonstration | 4–6 |

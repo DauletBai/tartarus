@@ -123,3 +123,13 @@ A demographic projection never changes resident entitlements, earnings or real
 ledger balances. Operator approval recomputes the population and rejects understated
 mapped needs or rewritten source assumptions. Failed full-needs plans remain failed;
 AI commentary cannot make missing food, medical evidence or source authority appear.
+
+
+### Profile input boundary
+
+Exposure schedules and regional delivery allocations are untrusted aggregate inputs.
+Rust rejects missing or duplicated exposure, malformed rule matrices, unknown JSON
+fields, mismatched units and local quantities that do not reconcile to physical
+provision. Unknown needs are preserved; national surplus cannot authorize a local
+shortage. Life-stage labels cannot alter entitlement or issue money. Source fields
+are retained in immutable history, with no automatic medical inference or AI call.

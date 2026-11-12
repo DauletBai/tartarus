@@ -42,7 +42,7 @@ impl Ratio {
         }
         Ok(self.numerator / self.denominator)
     }
-    fn ceil_product(self, count: u64) -> Result<u64> {
+    pub(crate) fn ceil_product(self, count: u64) -> Result<u64> {
         let n = u128::from(count) * u128::from(self.numerator);
         let d = u128::from(self.denominator);
         u64::try_from(n / d + u128::from(!n.is_multiple_of(d))).map_err(|_| MathError::Overflow)
@@ -177,7 +177,7 @@ impl Registry {
         }
         Ok(())
     }
-    fn get(&self, id: &str, unit: &str) -> Result<&Parameter> {
+    pub(crate) fn get(&self, id: &str, unit: &str) -> Result<&Parameter> {
         let p = self
             .parameters
             .iter()
@@ -559,6 +559,8 @@ pub struct NeedMapping {
 #[derive(Clone, Debug, Serialize, Deserialize, PartialEq, Eq)]
 #[serde(deny_unknown_fields)]
 pub struct PopulationBinding {
+    #[serde(default, skip_serializing_if = "Option::is_none")]
+    pub profiles: Option<crate::need_profiles::ProfilePlan>,
     pub study: PopulationStudy,
     pub mappings: Vec<NeedMapping>,
 }
@@ -573,6 +575,8 @@ pub struct NeedCoverage {
 }
 #[derive(Clone, Debug, Serialize, Deserialize)]
 pub struct PopulationAudit {
+    #[serde(default, skip_serializing_if = "Option::is_none")]
+    pub profiles: Option<crate::need_profiles::ProfileEvidence>,
     pub projection: PopulationEvidence,
     pub coverage: Vec<NeedCoverage>,
     pub unmapped_items: Vec<String>,
@@ -598,6 +602,11 @@ impl PopulationBinding {
                 "population/physical calendar or mapping dimensions",
             ));
         }
+        let mut profiles = self
+            .profiles
+            .as_ref()
+            .map(|profiles| profiles.project(&self.study))
+            .transpose()?;
         let mut items = BTreeSet::new();
         let mut resources = BTreeSet::new();
         let mut coverage = vec![];
@@ -614,8 +623,11 @@ impl PopulationBinding {
                 .ok_or(invalid("population resource"))?
                 .unit;
             for (t, row) in p.months.iter().enumerate() {
-                let d = row
-                    .demands
+                let demands = profiles
+                    .as_ref()
+                    .map(|e| &e.months[t].total)
+                    .unwrap_or(&row.demands);
+                let d = demands
                     .iter()
                     .find(|d| d.item == m.item)
                     .ok_or(invalid("unknown mapped need"))?;
@@ -652,7 +664,11 @@ impl PopulationBinding {
             .filter(|i| !items.contains(&i.id))
             .map(|i| i.id.clone())
             .collect();
+        if let (Some(inputs), Some(evidence)) = (&self.profiles, &mut profiles) {
+            inputs.reconcile_deliveries(evidence, &self.mappings, plan)?;
+        }
         Ok(PopulationAudit {
+            profiles,
             projection: p,
             coverage,
             unmapped_items: unmapped,
