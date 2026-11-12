@@ -185,6 +185,7 @@ fn main() {
         material_bases: vec![basis],
         dated_generations: vec![],
         food_routes: Some(routes),
+        population: None,
     };
     // Derive an explicit offline opening certificate; the live service never
     // silently increases a submitted opening policy or issues the difference.

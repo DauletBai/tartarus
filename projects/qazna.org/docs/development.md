@@ -795,3 +795,48 @@ six-case strict-evidence exercises passed. Circulation completed 4,548 requests 
 custody/evidence gap remains. These local synthetic runs do not prove production
 throughput, empirical coefficients or national economic feasibility. Remote CI is
 reported separately in the pull request.
+
+
+## Population registry reproduction and verification
+
+From the project root:
+
+```sh
+cargo run --locked --release --example population_study -- /tmp/qazna-population-input.json /tmp/qazna-population-results.json
+cmp /tmp/qazna-population-input.json fixtures/population-study.json
+cmp /tmp/qazna-population-results.json research/population-results.json
+cargo test --locked --test population
+```
+
+The full check runner reproduces both new files after verifying the unchanged
+previous reports and extended fixture. Population tests cover independent balance
+identities across all variants, calendar days, age-profile crossings, open-ended
+age retention, carried mortality fractions, deterministic largest-remainder counts
+and 320 exhaustive small mortality cases. They reject invalid dates, units, unknown
+references, bad intervals, malformed dimensions, fractional people, excess departures,
+missing/overlapping groups, duplicate mappings and hidden unknown requirements.
+
+The prospective upstream audit records unmet needs; full model approval rejects
+that candidate. A separate synthetic finite-stock water-component fixture verifies
+the successful runtime path without claiming a replenishing production chain.
+PostgreSQL tests reject removing/replacing source assumptions, changing future
+physical needs with otherwise balanced quantities, and unknown demographic inputs.
+The rejected retry leaves history and idempotency intact. Real HTTP process restart
+and logical backup/restore preserve sources, cohorts, unknowns and a pending next
+boundary. All personal balances remain unchanged.
+
+Population-stage local verification, 12 November 2026: full `scripts/check.py`
+passed with **310 Rust tests**, including **19 population tests** and **120
+PostgreSQL tests**, plus **11 Python** advisory tests. Rustfmt, all-target Clippy
+and the license inventory passed. All previous reports and the extended fixture
+remained byte-identical; both new population artifacts reproduced byte-for-byte.
+No dependency or migration changed.
+
+Logical backup/restore verified **45 populated tables** and **15 runtime privilege
+denials**, preserving the population fixture and its pending continuation. HTTP
+restart and both six-case strict-evidence exercises passed. Circulation completed
+4,548 requests in 56.922 seconds with one restart; closed circulation completed
+3,901 requests in 47.301 seconds with two restarts. Actor seeds 7 and 19 completed;
+the known physical custody/evidence gap remains. These local synthetic exercises
+are not a national demographic forecast or production throughput claim. Remote
+CI results are recorded separately in the pull request.

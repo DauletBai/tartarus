@@ -75,6 +75,7 @@ def populate_and_restart(url):
         model_reference = populate_model(call)
         coupled_reference = populate_coupled(call, model_reference)
         extended_reference = populate_extended(call)
+        population_reference = populate_population(call)
     with server(url) as call:
         assert call(model_reference['path']) == model_reference['saved']
         assert call(model_reference['draft_path']) == model_reference['pending']
@@ -82,9 +83,11 @@ def populate_and_restart(url):
         assert call(coupled_reference['draft_path']) == coupled_reference['pending']
         assert call(extended_reference['coupled_path']) == extended_reference['coupled']
         assert call(extended_reference['draft_path']) == extended_reference['pending']
+        assert call(population_reference['path']) == population_reference['saved']
+        assert call(population_reference['draft_path']) == population_reference['pending']
     print('Physical model: full accepted and pending state survives process restart', flush=True)
     print('Dated scenario: 2 process restarts, pending and approved bytes preserved', flush=True)
-    return dict(path=path, saved=saved, pending=next_draft, model=model_reference, coupled=coupled_reference, extended=extended_reference)
+    return dict(path=path, saved=saved, pending=next_draft, model=model_reference, coupled=coupled_reference, extended=extended_reference, population=population_reference)
 
 
 def resume_restored(url, reference):
@@ -108,6 +111,7 @@ def resume_restored(url, reference):
         resume_model(call, reference['model'])
         resume_coupled_current(call, reference['coupled'])
         resume_extended(call, reference['extended'])
+        resume_population(call, reference['population'])
     print('Dated scenario: restored history continued under least-privilege runtime role', flush=True)
 
 
@@ -268,3 +272,38 @@ def resume_extended(call, reference):
     assert after['input']['boundary'] == 30
     assert call(reference['coupled_path'] + '/versions/1') == reference['coupled']
     print('Extended five-year scenario: food origins, packaging mass and exact circulation survive restart/restore', flush=True)
+
+
+def populate_population(call):
+    fixture = json.loads((ROOT / 'research/population-results.json').read_text())['runtime_fixture']
+    definition = fixture['definition']
+    definition['id'] = uid()
+    path = '/v1/scenarios/models/' + definition['id']
+    call('/v1/scenarios/models', definition)
+    draft = call(path + '/drafts', dict(id=uid(), expected_generation=0, input=fixture['input'],
+        basis='Reviewed population registry and finite-stock water-component test'))
+    approved = call('/v1/model-drafts/' + draft['request']['id'] + '/resolve',
+        dict(apply=True, basis='Independent operator review'))['candidate']
+    evidence = json.loads(approved['checkpoint'])['population']
+    assert evidence == fixture['population_evidence']
+    assert not evidence['projection']['all_selected_needs_known']
+    data = copy.deepcopy(fixture['input'])
+    data['boundary'] = 30
+    pending = call(path + '/drafts', dict(id=uid(), expected_generation=1, input=data,
+        basis='Keep original sources, population history and missing need evidence'))
+    return dict(path=path, saved=approved, pending=pending,
+                draft_path='/v1/model-drafts/' + pending['request']['id'])
+
+
+def resume_population(call, reference):
+    assert call(reference['path']) == reference['saved']
+    assert call(reference['draft_path']) == reference['pending']
+    approved = call(reference['draft_path'] + '/resolve',
+        dict(apply=True, basis='Reviewed population continuation after restore'))['candidate']
+    old = json.loads(reference['saved']['checkpoint'])
+    new = json.loads(approved['checkpoint'])
+    assert old['population'] == new['population']
+    assert old['input']['population'] == new['input']['population']
+    assert new['input']['boundary'] == 30
+    assert call(reference['path'] + '/versions/1') == reference['saved']
+    print('Population registry: sources, exact cohorts, unknown needs and pending continuation survive restart/restore', flush=True)

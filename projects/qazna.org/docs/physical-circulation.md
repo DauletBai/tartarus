@@ -1950,3 +1950,88 @@ without consuming the idempotency key, and leave live balances unchanged. Real
 process restart and backup/restore also cover this fixture and its pending next
 boundary. Those exercises establish reproducibility under declared inputs, not
 empirical delivery, social legitimacy or all-sector national feasibility.
+
+## Population registry and conditional demand
+
+Implemented 12 November 2026. `fixtures/population-study.json` records illustrative
+inputs and `research/population-results.json` records reproducible Rust calculations.
+The general cohort-component approach distinguishes opening age structure, births,
+deaths and migration; see the [UN WPP methodology overview](https://www.un.org/development/desa/pd/node/4326)
+and the [ONS projection methodology](https://www.ons.gov.uk/peoplepopulationandcommunity/populationandmigration/populationprojections/methodologies/methodologyusedtoproducethenationalpopulationprojections).
+Our bounded monthly implementation below is an explicitly simplified age-only
+experiment, not a reproduction of either agency's full method or national data.
+
+For month t, the exact accounting identity is:
+
+```text
+N[t+1] = N[t] + births[t] + arrivals[t] - deaths[t] - departures[t]
+```
+
+Surviving cohorts age one month. The final age bin remains open-ended. Arrivals
+have their declared age at the closing boundary; births enter age zero there.
+Needs use opening-month group counts and actual Gregorian days. This convention
+makes the calculation reproducible, but does not describe partial-month exposure
+or immediate care for an actual newborn; finer event timing remains future work.
+
+For group g with mortality ratio a/b, a carried remainder c prevents the same
+fraction from being lost every month:
+
+```text
+D[g,t] = floor((N[g,t] * a + c[g,t]) / b)
+c[g,t+1] = (N[g,t] * a + c[g,t]) mod b
+```
+
+Whole deaths are apportioned across age bins by proportional floors and largest
+remainders, with age-index tie-breaking. This is an aggregate rounding rule, not
+prediction or selection of any individual's death. For a known per-person-day
+need ratio r and group exposure N × days, the requirement is rounded upward only
+after multiplying that group's exposure. Each group's contribution is retained
+before addition. Unknown coefficients preserve missing IDs and leave the aggregate
+central/upper quantity unknown; a known contribution is not a complete need total.
+
+All variants begin with exactly 100,000,000 people. Test inputs place 4 million
+below age 3, 4 million at ages 3–5, 16 million at ages 6–17, 60 million at ages
+18–64 and 16 million at ages 65–89. Monthly birthdays are distributed explicitly.
+Age boundaries and school-place demand are illustrative scenario definitions,
+not national school law or eligibility restrictions. Births are supplied monthly
+counts, not calculated fertility rates. No earning or employment variable controls
+basic need in this calculation.
+
+| Conditional variant, January 2027–December 2031 | Births | Deaths | Net migration | Closing population |
+| --- | ---: | ---: | ---: | ---: |
+| Lower population assumptions | 6,000,000 | 4,640,397 | −300,000 | 101,059,603 |
+| Reference assumptions | 9,000,000 | 3,925,803 | 180,000 | 105,254,197 |
+| Higher population assumptions | 12,000,000 | 3,188,605 | 660,000 | 109,471,395 |
+
+These are conditional paths produced by declared test intervals, not confidence
+bounds or forecasts for Kazakhstan or another country. The source-attributed mode
+rejects synthetic-labelled inputs but cannot verify a URL's truth. The published
+fixture remains illustrative. Care-time, protein and vitamin-D norms are deliberately
+unknown; the water and cereal-component quantities are test coefficients, not a
+medical prescription, complete diet or total household water demand.
+
+### Physical demand is not satisfied by settled payments
+
+The reference population changes the selected two gross-equivalent food-component
+requirements. Comparing them with the previous extended production candidate gives:
+
+| Five-year component quantity, gross-equivalent kg | New declared requirement | Old planned delivery | Unmet requirement |
+| --- | ---: | ---: | ---: |
+| Rice component | 50,244,382,315 | 27,615,131,615 | 22,629,250,700 |
+| Oats component | 30,103,767,854 | 19,210,526,345 | 10,893,241,509 |
+
+The old candidate still balances its quantities and settles its old payment
+schedule under its original needs. It **fails** the full seasonal/capital needs
+gate for these new requirements. No need is reduced to make the result pass, and
+no external food or money is silently added. The prospective mapping audit retains
+the shortfall; that audit is not an approved model or actual resident delivery.
+Replanning production, land, energy, transport and storage remains necessary.
+
+A separate finite-opening-stock water-component fixture tests successful runtime
+binding with all 60 projected monthly quantities and a declared initial stock of
+374,814,442,702 litres. This deliberately artificial stock is a verification input,
+not a proposed five-year drinking-water reserve or a replenishing supply chain.
+It demonstrates review, immutable population sources, exact matching of needs,
+continued history and recovery after restart/restore. Other need items are explicitly
+unmapped. Sex/fertility, pregnancy, disability/health, personal choice, regional
+movement, empirical sources and the complete food-production mapping remain open.

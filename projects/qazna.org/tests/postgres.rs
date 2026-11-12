@@ -461,3 +461,6 @@ mod coupled;
 
 #[path = "cases/extended.rs"]
 mod extended;
+
+#[path = "cases/population.rs"]
+mod population;

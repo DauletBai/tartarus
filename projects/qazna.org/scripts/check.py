@@ -38,6 +38,7 @@ def main():
     run(["cargo", "test", "--locked", "--test", "capital"])
     run(["cargo", "test", "--locked", "--test", "rolling"])
     run(["cargo", "test", "--locked", "--test", "dated"])
+    run(["cargo", "test", "--locked", "--test", "population"])
     run(["cargo", "test", "--locked", "--example", "no_ai_study"])
     run(["cargo", "test", "--locked", "--example", "coupled_study"])
     with tempfile.TemporaryDirectory(prefix="qazna-math-") as math_dir:
@@ -58,6 +59,12 @@ def main():
         run(["cargo", "run", "--locked", "--release", "--example", "extended_scenario", "--", str(target)])
         if target.read_bytes() != (ROOT / "fixtures/extended-scenario.json").read_bytes():
             raise SystemExit("Extended scenario differs from reproducible calculation")
+    with tempfile.TemporaryDirectory(prefix="qazna-population-") as directory:
+        fixture, report = Path(directory) / "population-study.json", Path(directory) / "population-results.json"
+        run(["cargo", "run", "--locked", "--release", "--example", "population_study", "--", str(fixture), str(report)])
+        for generated, published in [(fixture, ROOT / "fixtures/population-study.json"), (report, ROOT / "research/population-results.json")]:
+            if generated.read_bytes() != published.read_bytes():
+                raise SystemExit("Population inputs or results differ from reproducible calculation")
     pg_dir = os.environ.get("PG_BIN")
     if not pg_dir:
         binary = shutil.which("initdb")

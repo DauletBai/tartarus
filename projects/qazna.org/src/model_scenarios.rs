@@ -8,6 +8,7 @@ use crate::{
     ledger::LedgerError,
     materials::{MaterialBasis, MaterialEvidence},
     mathematics::verify_linear,
+    population::{PopulationAudit, PopulationBinding},
     rolling::{RollingCapital, RollingSnapshot},
     scenarios::ScenarioSnapshot,
 };
@@ -56,6 +57,8 @@ pub struct ModelInput {
     pub dated_generations: Vec<i64>,
     #[serde(default, skip_serializing_if = "Option::is_none")]
     pub food_routes: Option<FoodRoutes>,
+    #[serde(default, skip_serializing_if = "Option::is_none")]
+    pub population: Option<PopulationBinding>,
 }
 #[derive(Clone, Debug, Serialize, Deserialize)]
 #[serde(deny_unknown_fields)]
@@ -76,6 +79,8 @@ pub struct ModelCheckpoint {
     pub dated: Vec<ScenarioSnapshot>,
     #[serde(default, skip_serializing_if = "Option::is_none")]
     pub food_routes: Option<FoodRouteEvidence>,
+    #[serde(default, skip_serializing_if = "Option::is_none")]
+    pub population: Option<PopulationAudit>,
 }
 #[derive(Clone, Debug, Serialize, Deserialize)]
 pub struct ModelVersion {
@@ -255,6 +260,9 @@ pub(crate) fn calculate(
     }
     let invalid = |_| LedgerError::Invalid("infeasible model or rewritten committed history");
     if let Some(old) = checkpoint(&before)? {
+        if input.population != old.input.population {
+            return Err(LedgerError::Invalid("population assumptions changed"));
+        }
         if input.food_routes != old.input.food_routes {
             return Err(LedgerError::Invalid(
                 "food identity or shelf assumptions changed",
@@ -302,6 +310,14 @@ pub(crate) fn calculate(
                 }
             }
             routes.audit(&input.model, &input.plan).map_err(invalid)
+        })
+        .transpose()?;
+    let population = input
+        .population
+        .as_ref()
+        .map(|p| {
+            p.audit(&before.definition, &input.model, &input.plan)
+                .map_err(invalid)
         })
         .transpose()?;
     let bindings = &before.definition.dated_bindings;
@@ -355,6 +371,7 @@ pub(crate) fn calculate(
         materials,
         dated,
         food_routes,
+        population,
     };
     let bytes = serde_json::to_string(&c).map_err(|_| LedgerError::InvalidStoredResponse)?;
     if bytes.len() > MAX_MODEL_CHECKPOINT_BYTES {
