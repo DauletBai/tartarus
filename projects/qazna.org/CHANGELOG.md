@@ -1,5 +1,13 @@
 # Qazna changelog
 
+## Durable service incidents and circulation — 12 November 2026
+
+- Add migration 0016 and bounded operator API for append-only incident declarations, including unrepairable outages.
+- Link only matching current approved physical and fully settled monetary scenarios; retain open and plan-linked states without claiming observed recovery.
+- Revalidate accepted physical revision history correctly during coupled calculation; derive service-repair payments under one fixed opening policy.
+- Exercise adversarial declarations, concurrent retries, stale/failed/unmatched plan links, SQL immutability, role limits and populated journal restoration.
+- Extend the existing service report to schema 3 without changing dependencies, live balances or issuance authority.
+
 ## Controlled service feedback — 12 November 2026
 
 - Permit exact, append-only future availability revisions while freezing past availability, needs, norms and pool identity.

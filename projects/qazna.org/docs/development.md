@@ -933,3 +933,36 @@ Both strict-evidence exercises and actor seeds 7/19 completed. Circulation handl
 in 27.421 seconds with two restarts. These are local exercise timings.
 No dependencies, migrations or monetary authority changed. Remote push/PR checks
 are recorded separately in GitHub.
+
+## Durable incidents and circulation verification — 12 November 2026
+
+Service report schema 3 adds fixed-policy baseline/repaired circulation and a
+blocked-payment case while preserving all earlier service sections. The independent
+service test replays each transfer with integer balances and verifies the precise
+164,690 energy and 411,725 material payments move from period 4 to 6. The same
+opening vector funds both schedules; no live ledger posting occurs.
+
+Five new PostgreSQL cases cover durable infeasible declarations; concurrent retry
+and conflicting payloads; invalid old/new values, ordering, duplicates and bounds;
+stale bases; scoped pagination; pending/stale/failed/unmatched plan links; competing
+link decisions; cross-model references; raw SQL history mutation; and HTTP body,
+query and role limits. The journal is populated before logical backup, including
+both open and plan-linked records. After restore, those records and idempotent
+responses remain unchanged, and a new recovery declaration plus separately reviewed
+physical/circulation versions can be recorded under the restricted runtime role.
+
+The service remains a bounded research workflow. A source reference is not an
+independently authenticated observation, and `plan_linked` is not observed recovery.
+No participant identity, live execution or incident correction workflow is added.
+
+Full local `scripts/check.py` passed: **353 Rust tests**, including **23 service**
+and **128 PostgreSQL** tests, plus **11 Python** tests. Rustfmt, all-target Clippy,
+license inventory and byte-for-byte report reproduction passed. The additional
+competing-link test was included in the PostgreSQL run; all-target Clippy was also
+rerun after adding it. Logical restore verified **47 tables** in the populated database and
+**21 privilege denials**, including new writes under the restored runtime role.
+Both strict-evidence exercises and actor seeds 7/19 completed. Circulation handled
+4,548 HTTP requests in 57.214 seconds with one restart; closed circulation handled
+3,901 in 47.155 seconds with two restarts. These are local timings, not a production
+capacity guarantee. Migration 0016 is additive; released migrations and dependency
+versions are unchanged. Remote push/PR checks are recorded separately in GitHub.

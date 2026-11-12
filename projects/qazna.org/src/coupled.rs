@@ -366,14 +366,10 @@ pub(crate) fn calculate(
     // Independently revalidate saved physical assumptions; no caller-owned plan or
     // authoritative payment list is accepted by this API.
     crate::model_scenarios::calculate(
-        ModelVersion {
-            definition: physical.definition.clone(),
-            generation: 0,
-            checkpoint: None,
-        },
+        physical.clone(),
         ModelProposal {
             id: request.id,
-            expected_generation: 0,
+            expected_generation: physical.generation,
             input: current.input.clone(),
             basis: request.basis.clone(),
         },
@@ -699,6 +695,23 @@ fn verify_events(
         }
     }
     Ok(())
+}
+
+/// Pure continuation calculation for reproducible studies. Runtime loads the
+/// approved physical generation from PostgreSQL, never from a caller snapshot.
+pub fn preview_continuation(
+    before: CoupledVersion,
+    physical: ModelVersion,
+    unavailable_events: Vec<usize>,
+) -> Result<CoupledVersion, LedgerError> {
+    let request = CoupledProposal {
+        id: Uuid::nil(),
+        expected_generation: before.generation,
+        model_generation: physical.generation,
+        unavailable_events,
+        basis: "Offline continuation verification".into(),
+    };
+    calculate(before, request, physical)
 }
 
 #[cfg(test)]

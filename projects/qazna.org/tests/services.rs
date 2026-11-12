@@ -541,3 +541,85 @@ fn availability_grid_matches_independent_workforce_inequalities() {
         assert_eq!(result.input.is_some(), expected.is_some());
     }
 }
+
+#[test]
+fn repaired_service_circulation_conserves_measure_and_moves_only_development_inputs() {
+    use qazna::coupled::{self, CoupledCheckpoint, CoupledDefinition, EventKind};
+    let v: Value = serde_json::from_str(include_str!("../research/service-results.json")).unwrap();
+    let (d, baseline, _, repaired) = feedback_fixture();
+    let before = qazna::model_scenarios::preview(d, baseline.clone()).unwrap();
+    let after =
+        qazna::model_scenarios::preview_continuation(before.clone(), repaired.clone()).unwrap();
+    let policy = serde_json::from_value(v["feedback"]["circulation"]["policy"].clone()).unwrap();
+    let def = CoupledDefinition {
+        id: uuid::Uuid::new_v4(),
+        format_version: 1,
+        model_id: before.definition.id,
+        policy,
+        basis: "Fixed policy for conservation test".into(),
+    };
+    let base = coupled::preview(def.clone(), before, vec![]).unwrap();
+    let next = coupled::preview_continuation(base.clone(), after.clone(), vec![]).unwrap();
+    let a: CoupledCheckpoint = serde_json::from_str(base.checkpoint.as_ref().unwrap()).unwrap();
+    let b: CoupledCheckpoint = serde_json::from_str(next.checkpoint.as_ref().unwrap()).unwrap();
+    let initial: Vec<i128> = def
+        .policy
+        .opening
+        .iter()
+        .map(|x| x.parse().unwrap())
+        .collect();
+    let total: i128 = initial.iter().sum();
+    for evidence in [&a.evidence, &b.evidence] {
+        let mut balances = initial.clone();
+        for e in &evidence.events {
+            let n: i128 = e.amount.parse().unwrap();
+            balances[e.from] -= n;
+            balances[e.to] += n;
+            assert!(balances.iter().all(|&n| n >= 0));
+            assert_eq!(balances.iter().sum::<i128>(), total);
+        }
+        assert_eq!(
+            balances.iter().map(ToString::to_string).collect::<Vec<_>>(),
+            evidence.money.closing
+        );
+    }
+    let activity = baseline.plan[4].activities[1];
+    let p = &baseline.model.seasonal.physical.processes[1];
+    for (resource, supplier) in [(3, 5), (4, 6)] {
+        let amount = (activity * p.inputs[resource]).to_string();
+        for (evidence, period) in [(&a.evidence, 4), (&b.evidence, 6)] {
+            let matches: Vec<_> = evidence
+                .events
+                .iter()
+                .filter(|e| e.kind == EventKind::Goods && e.from == 8 && e.to == supplier)
+                .collect();
+            assert_eq!(matches.len(), 1);
+            assert_eq!(matches[0].amount, amount);
+            assert_eq!(matches[0].period, period);
+        }
+    }
+    assert_eq!(a.evidence.money.closing, b.evidence.money.closing);
+    assert_eq!(json!(def.policy), v["feedback"]["circulation"]["policy"]);
+    let blocked = v["feedback"]["circulation"]["blocked_event"]
+        .as_u64()
+        .unwrap() as usize;
+    let fail = coupled::preview_continuation(base, after, vec![blocked]).unwrap();
+    let fail: CoupledCheckpoint = serde_json::from_str(fail.checkpoint.as_ref().unwrap()).unwrap();
+    assert!(!fail.evidence.all_scheduled_payments_settled);
+    assert!(
+        fail.evidence
+            .failed
+            .iter()
+            .any(|e| e.reason == "dependency")
+    );
+    assert!(
+        fail.evidence
+            .failed
+            .iter()
+            .any(|e| e.reason == "insufficient_measure")
+    );
+    assert_eq!(
+        json!(fail.evidence.failed),
+        v["feedback"]["circulation"]["blocked_failures"]
+    );
+}

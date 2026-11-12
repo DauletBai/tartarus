@@ -79,6 +79,7 @@ def populate_and_restart(url):
         profile_reference = populate_population(call, "need-profile-results.json")
         service_reference = populate_population(call, "service-results.json")
         feedback_reference = populate_service_feedback(call)
+        incident_reference = populate_service_incidents(call)
     with server(url) as call:
         assert call(model_reference['path']) == model_reference['saved']
         assert call(model_reference['draft_path']) == model_reference['pending']
@@ -94,9 +95,10 @@ def populate_and_restart(url):
         assert call(service_reference['draft_path']) == service_reference['pending']
         assert call(feedback_reference['path']) == feedback_reference['saved']
         assert call(feedback_reference['draft_path']) == feedback_reference['pending']
+        verify_service_incidents(call, incident_reference)
     print('Physical model: full accepted and pending state survives process restart', flush=True)
     print('Dated scenario: 2 process restarts, pending and approved bytes preserved', flush=True)
-    return dict(path=path, saved=saved, pending=next_draft, model=model_reference, coupled=coupled_reference, extended=extended_reference, population=population_reference, profiles=profile_reference, services=service_reference, service_feedback=feedback_reference)
+    return dict(path=path, saved=saved, pending=next_draft, model=model_reference, coupled=coupled_reference, extended=extended_reference, population=population_reference, profiles=profile_reference, services=service_reference, service_feedback=feedback_reference, incidents=incident_reference)
 
 
 def resume_restored(url, reference):
@@ -124,6 +126,9 @@ def resume_restored(url, reference):
         resume_population(call, reference['profiles'])
         resume_population(call, reference['services'])
         resume_service_feedback(call, reference['service_feedback'])
+        verify_service_incidents(call, reference['incidents'])
+        continue_service_incidents(call, reference['incidents'])
+        print('Open incidents and linked reviewed plans survive logical restore', flush=True)
     print('Dated scenario: restored history continued under least-privilege runtime role', flush=True)
 
 
@@ -373,3 +378,78 @@ def resume_service_feedback(call, reference):
     assert call(reference['path'] + '/versions/1') == reference['saved']
     assert call(reference['path'] + '/versions/2') == result
     print('Service feedback: outage evidence, deferred training and committed work survive restart/restore', flush=True)
+
+
+def populate_service_incidents(call):
+    # A separate scope keeps the existing pending-repair restore test intact and
+    # ensures both journal tables contain real rows before pg_dump.
+    reference = populate_service_feedback(call)
+    model = reference['saved']['definition']['id']
+    revision = json.loads(reference['pending']['candidate']['checkpoint'])['input']['services']['revisions'][0]
+    first = call(reference['path'] + '/incidents', dict(id=uid(), expected_generation=1, revision=revision))
+    unavailable = copy.deepcopy(revision)
+    unavailable['changes'][0]['available_bps'] = 0
+    unavailable['source_reference'] = 'qazna:recovery:unrepairable-declaration'
+    second = call(reference['path'] + '/incidents', dict(id=uid(), expected_generation=1, revision=unavailable))
+    report = json.loads((ROOT / 'research/service-results.json').read_text())
+    policy = report['feedback']['circulation']['policy']
+    coupled = uid()
+    call('/v1/scenarios/coupled', dict(id=coupled, format_version=1, model_id=model,
+        policy=policy, basis='Fixed common opening for service repair'))
+    path = '/v1/scenarios/coupled/' + coupled
+    draft = call(path + '/drafts', dict(id=uid(), expected_generation=0, model_generation=1,
+        unavailable_events=[], basis='Derived baseline circulation'))
+    call('/v1/coupled-drafts/' + draft['request']['id'] + '/resolve',
+        dict(apply=True, basis='Reviewed baseline circulation'))
+    call(reference['draft_path'] + '/resolve', dict(apply=True, basis='Reviewed service repair'))
+    draft = call(path + '/drafts', dict(id=uid(), expected_generation=1, model_generation=2,
+        unavailable_events=[], basis='Circulation for approved repair'))
+    accepted = call('/v1/coupled-drafts/' + draft['request']['id'] + '/resolve',
+        dict(apply=True, basis='Reviewed repair circulation'))['candidate']
+    assert json.loads(accepted['checkpoint'])['evidence']['all_scheduled_payments_settled']
+    first_path = '/v1/service-incidents/' + first['id']
+    request = dict(model_generation=2, coupled_id=coupled, coupled_generation=2,
+        basis='Matching approved physical and monetary plans')
+    key = uid()
+    linked = call(first_path + '/plan', request, key=key)
+    assert linked['state'] == 'plan_linked'
+    return dict(first_path=first_path, second_path='/v1/service-incidents/' + second['id'],
+        linked=linked, open=second, coupled_path=path, coupled=accepted,
+        link_request=request, link_key=key)
+
+
+def verify_service_incidents(call, reference):
+    assert call(reference['first_path']) == reference['linked']
+    assert call(reference['second_path']) == reference['open']
+    assert call(reference['coupled_path']) == reference['coupled']
+    assert call(reference['first_path'] + '/plan', reference['link_request'],
+        key=reference['link_key']) == reference['linked']
+
+
+def continue_service_incidents(call, reference):
+    # Verify new journal/plan writes and identity allocation under the restored
+    # runtime role, not just reads of pre-backup owner-created rows.
+    coupled = reference['coupled']
+    physical = json.loads(coupled['checkpoint'])['evidence']['physical']
+    model_path = '/v1/scenarios/models/' + physical['definition']['id']
+    input_ = json.loads(physical['checkpoint'])['input']
+    revision = copy.deepcopy(input_['services']['revisions'][0])
+    revision['basis'] = 'Declared recovery of availability, preserving earlier absence'
+    revision['source_reference'] = 'qazna:recovery:availability-restored'
+    for change in revision['changes']:
+        change['previous_bps'], change['available_bps'] = change['available_bps'], change['previous_bps']
+        pool = next(p for p in input_['services']['pools'] if p['id'] == change['pool'])
+        pool['availability_bps'][change['period']] = change['available_bps']
+    incident = call(model_path + '/incidents', dict(id=uid(), expected_generation=2, revision=revision))
+    assert incident['sequence'] > max(reference['linked']['sequence'], reference['open']['sequence'])
+    input_['services']['revisions'].append(revision)
+    draft = call(model_path + '/drafts', dict(id=uid(), expected_generation=2, input=input_, basis='Full recovery revalidation'))
+    call('/v1/model-drafts/' + draft['request']['id'] + '/resolve', dict(apply=True, basis='Reviewed recovery'))
+    draft = call(reference['coupled_path'] + '/drafts', dict(id=uid(), expected_generation=2,
+        model_generation=3, unavailable_events=[], basis='Recompute circulation after recovery'))
+    call('/v1/coupled-drafts/' + draft['request']['id'] + '/resolve', dict(apply=True, basis='Reviewed recovery circulation'))
+    linked = call('/v1/service-incidents/' + incident['id'] + '/plan', dict(model_generation=3,
+        coupled_id=coupled['definition']['id'], coupled_generation=3, basis='Reviewed versions under restored runtime role'))
+    assert linked['state'] == 'plan_linked'
+    assert call(reference['first_path']) == reference['linked']
+    assert call(reference['second_path']) == reference['open']

@@ -23529,6 +23529,7757 @@
         ]
       }
     },
+    "circulation": {
+      "all_scheduled_payments_settled": true,
+      "baseline_events": [
+        {
+          "amount": "8119520000",
+          "from": 0,
+          "kind": "provision_allocation",
+          "link": 0,
+          "period": 0,
+          "requires": null,
+          "to": 1
+        },
+        {
+          "amount": "8119520000",
+          "from": 1,
+          "kind": "goods",
+          "link": 0,
+          "period": 0,
+          "requires": null,
+          "to": 2
+        },
+        {
+          "amount": "8119520000",
+          "from": 2,
+          "kind": "common_circulation",
+          "link": 0,
+          "period": 0,
+          "requires": 1,
+          "to": 0
+        },
+        {
+          "amount": "88847240",
+          "from": 0,
+          "kind": "provision_allocation",
+          "link": 1,
+          "period": 0,
+          "requires": null,
+          "to": 1
+        },
+        {
+          "amount": "88847240",
+          "from": 1,
+          "kind": "goods",
+          "link": 1,
+          "period": 0,
+          "requires": null,
+          "to": 5
+        },
+        {
+          "amount": "88847240",
+          "from": 5,
+          "kind": "common_circulation",
+          "link": 1,
+          "period": 0,
+          "requires": 4,
+          "to": 0
+        },
+        {
+          "amount": "34142",
+          "from": 9,
+          "kind": "goods",
+          "link": 2,
+          "period": 0,
+          "requires": null,
+          "to": 5
+        },
+        {
+          "amount": "34142",
+          "from": 5,
+          "kind": "common_circulation",
+          "link": 2,
+          "period": 0,
+          "requires": 6,
+          "to": 0
+        },
+        {
+          "amount": "85355",
+          "from": 9,
+          "kind": "goods",
+          "link": 3,
+          "period": 0,
+          "requires": null,
+          "to": 6
+        },
+        {
+          "amount": "85355",
+          "from": 6,
+          "kind": "common_circulation",
+          "link": 3,
+          "period": 0,
+          "requires": 8,
+          "to": 0
+        },
+        {
+          "amount": "204070",
+          "from": 10,
+          "kind": "goods",
+          "link": 4,
+          "period": 0,
+          "requires": null,
+          "to": 5
+        },
+        {
+          "amount": "204070",
+          "from": 5,
+          "kind": "common_circulation",
+          "link": 4,
+          "period": 0,
+          "requires": 10,
+          "to": 0
+        },
+        {
+          "amount": "510175",
+          "from": 10,
+          "kind": "goods",
+          "link": 5,
+          "period": 0,
+          "requires": null,
+          "to": 6
+        },
+        {
+          "amount": "510175",
+          "from": 6,
+          "kind": "common_circulation",
+          "link": 5,
+          "period": 0,
+          "requires": 12,
+          "to": 0
+        },
+        {
+          "amount": "693736",
+          "from": 11,
+          "kind": "goods",
+          "link": 6,
+          "period": 0,
+          "requires": null,
+          "to": 5
+        },
+        {
+          "amount": "693736",
+          "from": 5,
+          "kind": "common_circulation",
+          "link": 6,
+          "period": 0,
+          "requires": 14,
+          "to": 0
+        },
+        {
+          "amount": "1734340",
+          "from": 11,
+          "kind": "goods",
+          "link": 7,
+          "period": 0,
+          "requires": null,
+          "to": 6
+        },
+        {
+          "amount": "1734340",
+          "from": 6,
+          "kind": "common_circulation",
+          "link": 7,
+          "period": 0,
+          "requires": 16,
+          "to": 0
+        },
+        {
+          "amount": "108618",
+          "from": 12,
+          "kind": "goods",
+          "link": 8,
+          "period": 0,
+          "requires": null,
+          "to": 5
+        },
+        {
+          "amount": "108618",
+          "from": 5,
+          "kind": "common_circulation",
+          "link": 8,
+          "period": 0,
+          "requires": 18,
+          "to": 0
+        },
+        {
+          "amount": "271545",
+          "from": 12,
+          "kind": "goods",
+          "link": 9,
+          "period": 0,
+          "requires": null,
+          "to": 6
+        },
+        {
+          "amount": "271545",
+          "from": 6,
+          "kind": "common_circulation",
+          "link": 9,
+          "period": 0,
+          "requires": 20,
+          "to": 0
+        },
+        {
+          "amount": "247036",
+          "from": 14,
+          "kind": "goods",
+          "link": 10,
+          "period": 0,
+          "requires": null,
+          "to": 5
+        },
+        {
+          "amount": "247036",
+          "from": 5,
+          "kind": "common_circulation",
+          "link": 10,
+          "period": 0,
+          "requires": 22,
+          "to": 0
+        },
+        {
+          "amount": "617590",
+          "from": 14,
+          "kind": "goods",
+          "link": 11,
+          "period": 0,
+          "requires": null,
+          "to": 6
+        },
+        {
+          "amount": "617590",
+          "from": 6,
+          "kind": "common_circulation",
+          "link": 11,
+          "period": 0,
+          "requires": 24,
+          "to": 0
+        },
+        {
+          "amount": "51216",
+          "from": 15,
+          "kind": "goods",
+          "link": 12,
+          "period": 0,
+          "requires": null,
+          "to": 5
+        },
+        {
+          "amount": "51216",
+          "from": 5,
+          "kind": "common_circulation",
+          "link": 12,
+          "period": 0,
+          "requires": 26,
+          "to": 0
+        },
+        {
+          "amount": "128040",
+          "from": 15,
+          "kind": "goods",
+          "link": 13,
+          "period": 0,
+          "requires": null,
+          "to": 6
+        },
+        {
+          "amount": "128040",
+          "from": 6,
+          "kind": "common_circulation",
+          "link": 13,
+          "period": 0,
+          "requires": 28,
+          "to": 0
+        },
+        {
+          "amount": "306106",
+          "from": 16,
+          "kind": "goods",
+          "link": 14,
+          "period": 0,
+          "requires": null,
+          "to": 5
+        },
+        {
+          "amount": "306106",
+          "from": 5,
+          "kind": "common_circulation",
+          "link": 14,
+          "period": 0,
+          "requires": 30,
+          "to": 0
+        },
+        {
+          "amount": "765265",
+          "from": 16,
+          "kind": "goods",
+          "link": 15,
+          "period": 0,
+          "requires": null,
+          "to": 6
+        },
+        {
+          "amount": "765265",
+          "from": 6,
+          "kind": "common_circulation",
+          "link": 15,
+          "period": 0,
+          "requires": 32,
+          "to": 0
+        },
+        {
+          "amount": "1040602",
+          "from": 17,
+          "kind": "goods",
+          "link": 16,
+          "period": 0,
+          "requires": null,
+          "to": 5
+        },
+        {
+          "amount": "1040602",
+          "from": 5,
+          "kind": "common_circulation",
+          "link": 16,
+          "period": 0,
+          "requires": 34,
+          "to": 0
+        },
+        {
+          "amount": "2601505",
+          "from": 17,
+          "kind": "goods",
+          "link": 17,
+          "period": 0,
+          "requires": null,
+          "to": 6
+        },
+        {
+          "amount": "2601505",
+          "from": 6,
+          "kind": "common_circulation",
+          "link": 17,
+          "period": 0,
+          "requires": 36,
+          "to": 0
+        },
+        {
+          "amount": "162928",
+          "from": 18,
+          "kind": "goods",
+          "link": 18,
+          "period": 0,
+          "requires": null,
+          "to": 5
+        },
+        {
+          "amount": "162928",
+          "from": 5,
+          "kind": "common_circulation",
+          "link": 18,
+          "period": 0,
+          "requires": 38,
+          "to": 0
+        },
+        {
+          "amount": "407320",
+          "from": 18,
+          "kind": "goods",
+          "link": 19,
+          "period": 0,
+          "requires": null,
+          "to": 6
+        },
+        {
+          "amount": "407320",
+          "from": 6,
+          "kind": "common_circulation",
+          "link": 19,
+          "period": 0,
+          "requires": 40,
+          "to": 0
+        },
+        {
+          "amount": "7340485819",
+          "from": 0,
+          "kind": "provision_allocation",
+          "link": 20,
+          "period": 1,
+          "requires": null,
+          "to": 1
+        },
+        {
+          "amount": "7340485819",
+          "from": 1,
+          "kind": "goods",
+          "link": 20,
+          "period": 1,
+          "requires": null,
+          "to": 2
+        },
+        {
+          "amount": "7340485819",
+          "from": 2,
+          "kind": "common_circulation",
+          "link": 20,
+          "period": 1,
+          "requires": 43,
+          "to": 0
+        },
+        {
+          "amount": "80295418",
+          "from": 0,
+          "kind": "provision_allocation",
+          "link": 21,
+          "period": 1,
+          "requires": null,
+          "to": 1
+        },
+        {
+          "amount": "80295418",
+          "from": 1,
+          "kind": "goods",
+          "link": 21,
+          "period": 1,
+          "requires": null,
+          "to": 5
+        },
+        {
+          "amount": "80295418",
+          "from": 5,
+          "kind": "common_circulation",
+          "link": 21,
+          "period": 1,
+          "requires": 46,
+          "to": 0
+        },
+        {
+          "amount": "8134398963",
+          "from": 0,
+          "kind": "provision_allocation",
+          "link": 22,
+          "period": 2,
+          "requires": null,
+          "to": 1
+        },
+        {
+          "amount": "8134398963",
+          "from": 1,
+          "kind": "goods",
+          "link": 22,
+          "period": 2,
+          "requires": null,
+          "to": 2
+        },
+        {
+          "amount": "8134398963",
+          "from": 2,
+          "kind": "common_circulation",
+          "link": 22,
+          "period": 2,
+          "requires": 49,
+          "to": 0
+        },
+        {
+          "amount": "88949637",
+          "from": 0,
+          "kind": "provision_allocation",
+          "link": 23,
+          "period": 2,
+          "requires": null,
+          "to": 1
+        },
+        {
+          "amount": "88949637",
+          "from": 1,
+          "kind": "goods",
+          "link": 23,
+          "period": 2,
+          "requires": null,
+          "to": 5
+        },
+        {
+          "amount": "88949637",
+          "from": 5,
+          "kind": "common_circulation",
+          "link": 23,
+          "period": 2,
+          "requires": 52,
+          "to": 0
+        },
+        {
+          "amount": "7879177895",
+          "from": 0,
+          "kind": "provision_allocation",
+          "link": 24,
+          "period": 3,
+          "requires": null,
+          "to": 1
+        },
+        {
+          "amount": "7879177895",
+          "from": 1,
+          "kind": "goods",
+          "link": 24,
+          "period": 3,
+          "requires": null,
+          "to": 2
+        },
+        {
+          "amount": "7879177895",
+          "from": 2,
+          "kind": "common_circulation",
+          "link": 24,
+          "period": 3,
+          "requires": 55,
+          "to": 0
+        },
+        {
+          "amount": "86129657",
+          "from": 0,
+          "kind": "provision_allocation",
+          "link": 25,
+          "period": 3,
+          "requires": null,
+          "to": 1
+        },
+        {
+          "amount": "86129657",
+          "from": 1,
+          "kind": "goods",
+          "link": 25,
+          "period": 3,
+          "requires": null,
+          "to": 5
+        },
+        {
+          "amount": "86129657",
+          "from": 5,
+          "kind": "common_circulation",
+          "link": 25,
+          "period": 3,
+          "requires": 58,
+          "to": 0
+        },
+        {
+          "amount": "8149221189",
+          "from": 0,
+          "kind": "provision_allocation",
+          "link": 26,
+          "period": 4,
+          "requires": null,
+          "to": 1
+        },
+        {
+          "amount": "8149221189",
+          "from": 1,
+          "kind": "goods",
+          "link": 26,
+          "period": 4,
+          "requires": null,
+          "to": 2
+        },
+        {
+          "amount": "8149221189",
+          "from": 2,
+          "kind": "common_circulation",
+          "link": 26,
+          "period": 4,
+          "requires": 61,
+          "to": 0
+        },
+        {
+          "amount": "89051528",
+          "from": 0,
+          "kind": "provision_allocation",
+          "link": 27,
+          "period": 4,
+          "requires": null,
+          "to": 1
+        },
+        {
+          "amount": "89051528",
+          "from": 1,
+          "kind": "goods",
+          "link": 27,
+          "period": 4,
+          "requires": null,
+          "to": 5
+        },
+        {
+          "amount": "89051528",
+          "from": 5,
+          "kind": "common_circulation",
+          "link": 27,
+          "period": 4,
+          "requires": 64,
+          "to": 0
+        },
+        {
+          "amount": "164690",
+          "from": 8,
+          "kind": "goods",
+          "link": 28,
+          "period": 4,
+          "requires": null,
+          "to": 5
+        },
+        {
+          "amount": "164690",
+          "from": 5,
+          "kind": "common_circulation",
+          "link": 28,
+          "period": 4,
+          "requires": 66,
+          "to": 0
+        },
+        {
+          "amount": "411725",
+          "from": 8,
+          "kind": "goods",
+          "link": 29,
+          "period": 4,
+          "requires": null,
+          "to": 6
+        },
+        {
+          "amount": "411725",
+          "from": 6,
+          "kind": "common_circulation",
+          "link": 29,
+          "period": 4,
+          "requires": 68,
+          "to": 0
+        },
+        {
+          "amount": "7893494722",
+          "from": 0,
+          "kind": "provision_allocation",
+          "link": 30,
+          "period": 5,
+          "requires": null,
+          "to": 1
+        },
+        {
+          "amount": "7893494722",
+          "from": 1,
+          "kind": "goods",
+          "link": 30,
+          "period": 5,
+          "requires": null,
+          "to": 2
+        },
+        {
+          "amount": "7893494722",
+          "from": 2,
+          "kind": "common_circulation",
+          "link": 30,
+          "period": 5,
+          "requires": 71,
+          "to": 0
+        },
+        {
+          "amount": "86228023",
+          "from": 0,
+          "kind": "provision_allocation",
+          "link": 31,
+          "period": 5,
+          "requires": null,
+          "to": 1
+        },
+        {
+          "amount": "86228023",
+          "from": 1,
+          "kind": "goods",
+          "link": 31,
+          "period": 5,
+          "requires": null,
+          "to": 5
+        },
+        {
+          "amount": "86228023",
+          "from": 5,
+          "kind": "common_circulation",
+          "link": 31,
+          "period": 5,
+          "requires": 74,
+          "to": 0
+        },
+        {
+          "amount": "8163987154",
+          "from": 0,
+          "kind": "provision_allocation",
+          "link": 32,
+          "period": 6,
+          "requires": null,
+          "to": 1
+        },
+        {
+          "amount": "8163987154",
+          "from": 1,
+          "kind": "goods",
+          "link": 32,
+          "period": 6,
+          "requires": null,
+          "to": 2
+        },
+        {
+          "amount": "8163987154",
+          "from": 2,
+          "kind": "common_circulation",
+          "link": 32,
+          "period": 6,
+          "requires": 77,
+          "to": 0
+        },
+        {
+          "amount": "89152930",
+          "from": 0,
+          "kind": "provision_allocation",
+          "link": 33,
+          "period": 6,
+          "requires": null,
+          "to": 1
+        },
+        {
+          "amount": "89152930",
+          "from": 1,
+          "kind": "goods",
+          "link": 33,
+          "period": 6,
+          "requires": null,
+          "to": 5
+        },
+        {
+          "amount": "89152930",
+          "from": 5,
+          "kind": "common_circulation",
+          "link": 33,
+          "period": 6,
+          "requires": 80,
+          "to": 0
+        },
+        {
+          "amount": "8171349247",
+          "from": 0,
+          "kind": "provision_allocation",
+          "link": 34,
+          "period": 7,
+          "requires": null,
+          "to": 1
+        },
+        {
+          "amount": "8171349247",
+          "from": 1,
+          "kind": "goods",
+          "link": 34,
+          "period": 7,
+          "requires": null,
+          "to": 2
+        },
+        {
+          "amount": "8171349247",
+          "from": 2,
+          "kind": "common_circulation",
+          "link": 34,
+          "period": 7,
+          "requires": 83,
+          "to": 0
+        },
+        {
+          "amount": "89203446",
+          "from": 0,
+          "kind": "provision_allocation",
+          "link": 35,
+          "period": 7,
+          "requires": null,
+          "to": 1
+        },
+        {
+          "amount": "89203446",
+          "from": 1,
+          "kind": "goods",
+          "link": 35,
+          "period": 7,
+          "requires": null,
+          "to": 5
+        },
+        {
+          "amount": "89203446",
+          "from": 5,
+          "kind": "common_circulation",
+          "link": 35,
+          "period": 7,
+          "requires": 86,
+          "to": 0
+        },
+        {
+          "amount": "7914868465",
+          "from": 0,
+          "kind": "provision_allocation",
+          "link": 36,
+          "period": 8,
+          "requires": null,
+          "to": 1
+        },
+        {
+          "amount": "7914868465",
+          "from": 1,
+          "kind": "goods",
+          "link": 36,
+          "period": 8,
+          "requires": null,
+          "to": 2
+        },
+        {
+          "amount": "7914868465",
+          "from": 2,
+          "kind": "common_circulation",
+          "link": 36,
+          "period": 8,
+          "requires": 89,
+          "to": 0
+        },
+        {
+          "amount": "86374684",
+          "from": 0,
+          "kind": "provision_allocation",
+          "link": 37,
+          "period": 8,
+          "requires": null,
+          "to": 1
+        },
+        {
+          "amount": "86374684",
+          "from": 1,
+          "kind": "goods",
+          "link": 37,
+          "period": 8,
+          "requires": null,
+          "to": 5
+        },
+        {
+          "amount": "86374684",
+          "from": 5,
+          "kind": "common_circulation",
+          "link": 37,
+          "period": 8,
+          "requires": 92,
+          "to": 0
+        },
+        {
+          "amount": "8186031825",
+          "from": 0,
+          "kind": "provision_allocation",
+          "link": 38,
+          "period": 9,
+          "requires": null,
+          "to": 1
+        },
+        {
+          "amount": "8186031825",
+          "from": 1,
+          "kind": "goods",
+          "link": 38,
+          "period": 9,
+          "requires": null,
+          "to": 2
+        },
+        {
+          "amount": "8186031825",
+          "from": 2,
+          "kind": "common_circulation",
+          "link": 38,
+          "period": 9,
+          "requires": 95,
+          "to": 0
+        },
+        {
+          "amount": "89304111",
+          "from": 0,
+          "kind": "provision_allocation",
+          "link": 39,
+          "period": 9,
+          "requires": null,
+          "to": 1
+        },
+        {
+          "amount": "89304111",
+          "from": 1,
+          "kind": "goods",
+          "link": 39,
+          "period": 9,
+          "requires": null,
+          "to": 5
+        },
+        {
+          "amount": "89304111",
+          "from": 5,
+          "kind": "common_circulation",
+          "link": 39,
+          "period": 9,
+          "requires": 98,
+          "to": 0
+        },
+        {
+          "amount": "7929050541",
+          "from": 0,
+          "kind": "provision_allocation",
+          "link": 40,
+          "period": 10,
+          "requires": null,
+          "to": 1
+        },
+        {
+          "amount": "7929050541",
+          "from": 1,
+          "kind": "goods",
+          "link": 40,
+          "period": 10,
+          "requires": null,
+          "to": 2
+        },
+        {
+          "amount": "7929050541",
+          "from": 2,
+          "kind": "common_circulation",
+          "link": 40,
+          "period": 10,
+          "requires": 101,
+          "to": 0
+        },
+        {
+          "amount": "86471863",
+          "from": 0,
+          "kind": "provision_allocation",
+          "link": 41,
+          "period": 10,
+          "requires": null,
+          "to": 1
+        },
+        {
+          "amount": "86471863",
+          "from": 1,
+          "kind": "goods",
+          "link": 41,
+          "period": 10,
+          "requires": null,
+          "to": 5
+        },
+        {
+          "amount": "86471863",
+          "from": 5,
+          "kind": "common_circulation",
+          "link": 41,
+          "period": 10,
+          "requires": 104,
+          "to": 0
+        },
+        {
+          "amount": "8200659030",
+          "from": 0,
+          "kind": "provision_allocation",
+          "link": 42,
+          "period": 11,
+          "requires": null,
+          "to": 1
+        },
+        {
+          "amount": "8200659030",
+          "from": 1,
+          "kind": "goods",
+          "link": 42,
+          "period": 11,
+          "requires": null,
+          "to": 2
+        },
+        {
+          "amount": "8200659030",
+          "from": 2,
+          "kind": "common_circulation",
+          "link": 42,
+          "period": 11,
+          "requires": 107,
+          "to": 0
+        },
+        {
+          "amount": "89404286",
+          "from": 0,
+          "kind": "provision_allocation",
+          "link": 43,
+          "period": 11,
+          "requires": null,
+          "to": 1
+        },
+        {
+          "amount": "89404286",
+          "from": 1,
+          "kind": "goods",
+          "link": 43,
+          "period": 11,
+          "requires": null,
+          "to": 5
+        },
+        {
+          "amount": "89404286",
+          "from": 5,
+          "kind": "common_circulation",
+          "link": 43,
+          "period": 11,
+          "requires": 110,
+          "to": 0
+        },
+        {
+          "amount": "8207952151",
+          "from": 0,
+          "kind": "provision_allocation",
+          "link": 44,
+          "period": 12,
+          "requires": null,
+          "to": 1
+        },
+        {
+          "amount": "8207952151",
+          "from": 1,
+          "kind": "goods",
+          "link": 44,
+          "period": 12,
+          "requires": null,
+          "to": 2
+        },
+        {
+          "amount": "8207952151",
+          "from": 2,
+          "kind": "common_circulation",
+          "link": 44,
+          "period": 12,
+          "requires": 113,
+          "to": 0
+        },
+        {
+          "amount": "89454195",
+          "from": 0,
+          "kind": "provision_allocation",
+          "link": 45,
+          "period": 12,
+          "requires": null,
+          "to": 1
+        },
+        {
+          "amount": "89454195",
+          "from": 1,
+          "kind": "goods",
+          "link": 45,
+          "period": 12,
+          "requires": null,
+          "to": 5
+        },
+        {
+          "amount": "89454195",
+          "from": 5,
+          "kind": "common_circulation",
+          "link": 45,
+          "period": 12,
+          "requires": 116,
+          "to": 0
+        },
+        {
+          "amount": "7685216571",
+          "from": 0,
+          "kind": "provision_allocation",
+          "link": 46,
+          "period": 13,
+          "requires": null,
+          "to": 1
+        },
+        {
+          "amount": "7685216571",
+          "from": 1,
+          "kind": "goods",
+          "link": 46,
+          "period": 13,
+          "requires": null,
+          "to": 2
+        },
+        {
+          "amount": "7685216571",
+          "from": 2,
+          "kind": "common_circulation",
+          "link": 46,
+          "period": 13,
+          "requires": 119,
+          "to": 0
+        },
+        {
+          "amount": "83729530",
+          "from": 0,
+          "kind": "provision_allocation",
+          "link": 47,
+          "period": 13,
+          "requires": null,
+          "to": 1
+        },
+        {
+          "amount": "83729530",
+          "from": 1,
+          "kind": "goods",
+          "link": 47,
+          "period": 13,
+          "requires": null,
+          "to": 5
+        },
+        {
+          "amount": "83729530",
+          "from": 5,
+          "kind": "common_circulation",
+          "link": 47,
+          "period": 13,
+          "requires": 122,
+          "to": 0
+        },
+        {
+          "amount": "8222497097",
+          "from": 0,
+          "kind": "provision_allocation",
+          "link": 48,
+          "period": 14,
+          "requires": null,
+          "to": 1
+        },
+        {
+          "amount": "8222497097",
+          "from": 1,
+          "kind": "goods",
+          "link": 48,
+          "period": 14,
+          "requires": null,
+          "to": 2
+        },
+        {
+          "amount": "8222497097",
+          "from": 2,
+          "kind": "common_circulation",
+          "link": 48,
+          "period": 14,
+          "requires": 125,
+          "to": 0
+        },
+        {
+          "amount": "89553644",
+          "from": 0,
+          "kind": "provision_allocation",
+          "link": 49,
+          "period": 14,
+          "requires": null,
+          "to": 1
+        },
+        {
+          "amount": "89553644",
+          "from": 1,
+          "kind": "goods",
+          "link": 49,
+          "period": 14,
+          "requires": null,
+          "to": 5
+        },
+        {
+          "amount": "89553644",
+          "from": 5,
+          "kind": "common_circulation",
+          "link": 49,
+          "period": 14,
+          "requires": 128,
+          "to": 0
+        },
+        {
+          "amount": "7964273549",
+          "from": 0,
+          "kind": "provision_allocation",
+          "link": 50,
+          "period": 15,
+          "requires": null,
+          "to": 1
+        },
+        {
+          "amount": "7964273549",
+          "from": 1,
+          "kind": "goods",
+          "link": 50,
+          "period": 15,
+          "requires": null,
+          "to": 2
+        },
+        {
+          "amount": "7964273549",
+          "from": 2,
+          "kind": "common_circulation",
+          "link": 50,
+          "period": 15,
+          "requires": 131,
+          "to": 0
+        },
+        {
+          "amount": "86712761",
+          "from": 0,
+          "kind": "provision_allocation",
+          "link": 51,
+          "period": 15,
+          "requires": null,
+          "to": 1
+        },
+        {
+          "amount": "86712761",
+          "from": 1,
+          "kind": "goods",
+          "link": 51,
+          "period": 15,
+          "requires": null,
+          "to": 5
+        },
+        {
+          "amount": "86712761",
+          "from": 5,
+          "kind": "common_circulation",
+          "link": 51,
+          "period": 15,
+          "requires": 134,
+          "to": 0
+        },
+        {
+          "amount": "8236987962",
+          "from": 0,
+          "kind": "provision_allocation",
+          "link": 52,
+          "period": 16,
+          "requires": null,
+          "to": 1
+        },
+        {
+          "amount": "8236987962",
+          "from": 1,
+          "kind": "goods",
+          "link": 52,
+          "period": 16,
+          "requires": null,
+          "to": 2
+        },
+        {
+          "amount": "8236987962",
+          "from": 2,
+          "kind": "common_circulation",
+          "link": 52,
+          "period": 16,
+          "requires": 137,
+          "to": 0
+        },
+        {
+          "amount": "89652612",
+          "from": 0,
+          "kind": "provision_allocation",
+          "link": 53,
+          "period": 16,
+          "requires": null,
+          "to": 1
+        },
+        {
+          "amount": "89652612",
+          "from": 1,
+          "kind": "goods",
+          "link": 53,
+          "period": 16,
+          "requires": null,
+          "to": 5
+        },
+        {
+          "amount": "89652612",
+          "from": 5,
+          "kind": "common_circulation",
+          "link": 53,
+          "period": 16,
+          "requires": 140,
+          "to": 0
+        },
+        {
+          "amount": "7978270715",
+          "from": 0,
+          "kind": "provision_allocation",
+          "link": 54,
+          "period": 17,
+          "requires": null,
+          "to": 1
+        },
+        {
+          "amount": "7978270715",
+          "from": 1,
+          "kind": "goods",
+          "link": 54,
+          "period": 17,
+          "requires": null,
+          "to": 2
+        },
+        {
+          "amount": "7978270715",
+          "from": 2,
+          "kind": "common_circulation",
+          "link": 54,
+          "period": 17,
+          "requires": 143,
+          "to": 0
+        },
+        {
+          "amount": "86808304",
+          "from": 0,
+          "kind": "provision_allocation",
+          "link": 55,
+          "period": 17,
+          "requires": null,
+          "to": 1
+        },
+        {
+          "amount": "86808304",
+          "from": 1,
+          "kind": "goods",
+          "link": 55,
+          "period": 17,
+          "requires": null,
+          "to": 5
+        },
+        {
+          "amount": "86808304",
+          "from": 5,
+          "kind": "common_circulation",
+          "link": 55,
+          "period": 17,
+          "requires": 146,
+          "to": 0
+        },
+        {
+          "amount": "8251424825",
+          "from": 0,
+          "kind": "provision_allocation",
+          "link": 56,
+          "period": 18,
+          "requires": null,
+          "to": 1
+        },
+        {
+          "amount": "8251424825",
+          "from": 1,
+          "kind": "goods",
+          "link": 56,
+          "period": 18,
+          "requires": null,
+          "to": 2
+        },
+        {
+          "amount": "8251424825",
+          "from": 2,
+          "kind": "common_circulation",
+          "link": 56,
+          "period": 18,
+          "requires": 149,
+          "to": 0
+        },
+        {
+          "amount": "89751098",
+          "from": 0,
+          "kind": "provision_allocation",
+          "link": 57,
+          "period": 18,
+          "requires": null,
+          "to": 1
+        },
+        {
+          "amount": "89751098",
+          "from": 1,
+          "kind": "goods",
+          "link": 57,
+          "period": 18,
+          "requires": null,
+          "to": 5
+        },
+        {
+          "amount": "89751098",
+          "from": 5,
+          "kind": "common_circulation",
+          "link": 57,
+          "period": 18,
+          "requires": 152,
+          "to": 0
+        },
+        {
+          "amount": "8258623216",
+          "from": 0,
+          "kind": "provision_allocation",
+          "link": 58,
+          "period": 19,
+          "requires": null,
+          "to": 1
+        },
+        {
+          "amount": "8258623216",
+          "from": 1,
+          "kind": "goods",
+          "link": 58,
+          "period": 19,
+          "requires": null,
+          "to": 2
+        },
+        {
+          "amount": "8258623216",
+          "from": 2,
+          "kind": "common_circulation",
+          "link": 58,
+          "period": 19,
+          "requires": 155,
+          "to": 0
+        },
+        {
+          "amount": "89800165",
+          "from": 0,
+          "kind": "provision_allocation",
+          "link": 59,
+          "period": 19,
+          "requires": null,
+          "to": 1
+        },
+        {
+          "amount": "89800165",
+          "from": 1,
+          "kind": "goods",
+          "link": 59,
+          "period": 19,
+          "requires": null,
+          "to": 5
+        },
+        {
+          "amount": "89800165",
+          "from": 5,
+          "kind": "common_circulation",
+          "link": 59,
+          "period": 19,
+          "requires": 158,
+          "to": 0
+        },
+        {
+          "amount": "7999169269",
+          "from": 0,
+          "kind": "provision_allocation",
+          "link": 60,
+          "period": 20,
+          "requires": null,
+          "to": 1
+        },
+        {
+          "amount": "7999169269",
+          "from": 1,
+          "kind": "goods",
+          "link": 60,
+          "period": 20,
+          "requires": null,
+          "to": 2
+        },
+        {
+          "amount": "7999169269",
+          "from": 2,
+          "kind": "common_circulation",
+          "link": 60,
+          "period": 20,
+          "requires": 161,
+          "to": 0
+        },
+        {
+          "amount": "86950750",
+          "from": 0,
+          "kind": "provision_allocation",
+          "link": 61,
+          "period": 20,
+          "requires": null,
+          "to": 1
+        },
+        {
+          "amount": "86950750",
+          "from": 1,
+          "kind": "goods",
+          "link": 61,
+          "period": 20,
+          "requires": null,
+          "to": 5
+        },
+        {
+          "amount": "86950750",
+          "from": 5,
+          "kind": "common_circulation",
+          "link": 61,
+          "period": 20,
+          "requires": 164,
+          "to": 0
+        },
+        {
+          "amount": "8272979837",
+          "from": 0,
+          "kind": "provision_allocation",
+          "link": 62,
+          "period": 21,
+          "requires": null,
+          "to": 1
+        },
+        {
+          "amount": "8272979837",
+          "from": 1,
+          "kind": "goods",
+          "link": 62,
+          "period": 21,
+          "requires": null,
+          "to": 2
+        },
+        {
+          "amount": "8272979837",
+          "from": 2,
+          "kind": "common_circulation",
+          "link": 62,
+          "period": 21,
+          "requires": 167,
+          "to": 0
+        },
+        {
+          "amount": "89897932",
+          "from": 0,
+          "kind": "provision_allocation",
+          "link": 63,
+          "period": 21,
+          "requires": null,
+          "to": 1
+        },
+        {
+          "amount": "89897932",
+          "from": 1,
+          "kind": "goods",
+          "link": 63,
+          "period": 21,
+          "requires": null,
+          "to": 5
+        },
+        {
+          "amount": "89897932",
+          "from": 5,
+          "kind": "common_circulation",
+          "link": 63,
+          "period": 21,
+          "requires": 170,
+          "to": 0
+        },
+        {
+          "amount": "8013036991",
+          "from": 0,
+          "kind": "provision_allocation",
+          "link": 64,
+          "period": 22,
+          "requires": null,
+          "to": 1
+        },
+        {
+          "amount": "8013036991",
+          "from": 1,
+          "kind": "goods",
+          "link": 64,
+          "period": 22,
+          "requires": null,
+          "to": 2
+        },
+        {
+          "amount": "8013036991",
+          "from": 2,
+          "kind": "common_circulation",
+          "link": 64,
+          "period": 22,
+          "requires": 173,
+          "to": 0
+        },
+        {
+          "amount": "87045135",
+          "from": 0,
+          "kind": "provision_allocation",
+          "link": 65,
+          "period": 22,
+          "requires": null,
+          "to": 1
+        },
+        {
+          "amount": "87045135",
+          "from": 1,
+          "kind": "goods",
+          "link": 65,
+          "period": 22,
+          "requires": null,
+          "to": 5
+        },
+        {
+          "amount": "87045135",
+          "from": 5,
+          "kind": "common_circulation",
+          "link": 65,
+          "period": 22,
+          "requires": 176,
+          "to": 0
+        },
+        {
+          "amount": "8287283420",
+          "from": 0,
+          "kind": "provision_allocation",
+          "link": 66,
+          "period": 23,
+          "requires": null,
+          "to": 1
+        },
+        {
+          "amount": "8287283420",
+          "from": 1,
+          "kind": "goods",
+          "link": 66,
+          "period": 23,
+          "requires": null,
+          "to": 2
+        },
+        {
+          "amount": "8287283420",
+          "from": 2,
+          "kind": "common_circulation",
+          "link": 66,
+          "period": 23,
+          "requires": 179,
+          "to": 0
+        },
+        {
+          "amount": "89995229",
+          "from": 0,
+          "kind": "provision_allocation",
+          "link": 67,
+          "period": 23,
+          "requires": null,
+          "to": 1
+        },
+        {
+          "amount": "89995229",
+          "from": 1,
+          "kind": "goods",
+          "link": 67,
+          "period": 23,
+          "requires": null,
+          "to": 5
+        },
+        {
+          "amount": "89995229",
+          "from": 5,
+          "kind": "common_circulation",
+          "link": 67,
+          "period": 23,
+          "requires": 182,
+          "to": 0
+        },
+        {
+          "amount": "8294415332",
+          "from": 0,
+          "kind": "provision_allocation",
+          "link": 68,
+          "period": 24,
+          "requires": null,
+          "to": 1
+        },
+        {
+          "amount": "8294415332",
+          "from": 1,
+          "kind": "goods",
+          "link": 68,
+          "period": 24,
+          "requires": null,
+          "to": 2
+        },
+        {
+          "amount": "8294415332",
+          "from": 2,
+          "kind": "common_circulation",
+          "link": 68,
+          "period": 24,
+          "requires": 185,
+          "to": 0
+        },
+        {
+          "amount": "90043699",
+          "from": 0,
+          "kind": "provision_allocation",
+          "link": 69,
+          "period": 24,
+          "requires": null,
+          "to": 1
+        },
+        {
+          "amount": "90043699",
+          "from": 1,
+          "kind": "goods",
+          "link": 69,
+          "period": 24,
+          "requires": null,
+          "to": 5
+        },
+        {
+          "amount": "90043699",
+          "from": 5,
+          "kind": "common_circulation",
+          "link": 69,
+          "period": 24,
+          "requires": 188,
+          "to": 0
+        },
+        {
+          "amount": "7498160008",
+          "from": 0,
+          "kind": "provision_allocation",
+          "link": 70,
+          "period": 25,
+          "requires": null,
+          "to": 1
+        },
+        {
+          "amount": "7498160008",
+          "from": 1,
+          "kind": "goods",
+          "link": 70,
+          "period": 25,
+          "requires": null,
+          "to": 2
+        },
+        {
+          "amount": "7498160008",
+          "from": 2,
+          "kind": "common_circulation",
+          "link": 70,
+          "period": 25,
+          "requires": 191,
+          "to": 0
+        },
+        {
+          "amount": "81373466",
+          "from": 0,
+          "kind": "provision_allocation",
+          "link": 71,
+          "period": 25,
+          "requires": null,
+          "to": 1
+        },
+        {
+          "amount": "81373466",
+          "from": 1,
+          "kind": "goods",
+          "link": 71,
+          "period": 25,
+          "requires": null,
+          "to": 5
+        },
+        {
+          "amount": "81373466",
+          "from": 5,
+          "kind": "common_circulation",
+          "link": 71,
+          "period": 25,
+          "requires": 194,
+          "to": 0
+        },
+        {
+          "amount": "8308640124",
+          "from": 0,
+          "kind": "provision_allocation",
+          "link": 72,
+          "period": 26,
+          "requires": null,
+          "to": 1
+        },
+        {
+          "amount": "8308640124",
+          "from": 1,
+          "kind": "goods",
+          "link": 72,
+          "period": 26,
+          "requires": null,
+          "to": 2
+        },
+        {
+          "amount": "8308640124",
+          "from": 2,
+          "kind": "common_circulation",
+          "link": 72,
+          "period": 26,
+          "requires": 197,
+          "to": 0
+        },
+        {
+          "amount": "90140289",
+          "from": 0,
+          "kind": "provision_allocation",
+          "link": 73,
+          "period": 26,
+          "requires": null,
+          "to": 1
+        },
+        {
+          "amount": "90140289",
+          "from": 1,
+          "kind": "goods",
+          "link": 73,
+          "period": 26,
+          "requires": null,
+          "to": 5
+        },
+        {
+          "amount": "90140289",
+          "from": 5,
+          "kind": "common_circulation",
+          "link": 73,
+          "period": 26,
+          "requires": 200,
+          "to": 0
+        },
+        {
+          "amount": "8047483397",
+          "from": 0,
+          "kind": "provision_allocation",
+          "link": 74,
+          "period": 27,
+          "requires": null,
+          "to": 1
+        },
+        {
+          "amount": "8047483397",
+          "from": 1,
+          "kind": "goods",
+          "link": 74,
+          "period": 27,
+          "requires": null,
+          "to": 2
+        },
+        {
+          "amount": "8047483397",
+          "from": 2,
+          "kind": "common_circulation",
+          "link": 74,
+          "period": 27,
+          "requires": 203,
+          "to": 0
+        },
+        {
+          "amount": "87279104",
+          "from": 0,
+          "kind": "provision_allocation",
+          "link": 75,
+          "period": 27,
+          "requires": null,
+          "to": 1
+        },
+        {
+          "amount": "87279104",
+          "from": 1,
+          "kind": "goods",
+          "link": 75,
+          "period": 27,
+          "requires": null,
+          "to": 5
+        },
+        {
+          "amount": "87279104",
+          "from": 5,
+          "kind": "common_circulation",
+          "link": 75,
+          "period": 27,
+          "requires": 206,
+          "to": 0
+        },
+        {
+          "amount": "8322812611",
+          "from": 0,
+          "kind": "provision_allocation",
+          "link": 76,
+          "period": 28,
+          "requires": null,
+          "to": 1
+        },
+        {
+          "amount": "8322812611",
+          "from": 1,
+          "kind": "goods",
+          "link": 76,
+          "period": 28,
+          "requires": null,
+          "to": 2
+        },
+        {
+          "amount": "8322812611",
+          "from": 2,
+          "kind": "common_circulation",
+          "link": 76,
+          "period": 28,
+          "requires": 209,
+          "to": 0
+        },
+        {
+          "amount": "90236408",
+          "from": 0,
+          "kind": "provision_allocation",
+          "link": 77,
+          "period": 28,
+          "requires": null,
+          "to": 1
+        },
+        {
+          "amount": "90236408",
+          "from": 1,
+          "kind": "goods",
+          "link": 77,
+          "period": 28,
+          "requires": null,
+          "to": 5
+        },
+        {
+          "amount": "90236408",
+          "from": 5,
+          "kind": "common_circulation",
+          "link": 77,
+          "period": 28,
+          "requires": 212,
+          "to": 0
+        },
+        {
+          "amount": "8061173473",
+          "from": 0,
+          "kind": "provision_allocation",
+          "link": 78,
+          "period": 29,
+          "requires": null,
+          "to": 1
+        },
+        {
+          "amount": "8061173473",
+          "from": 1,
+          "kind": "goods",
+          "link": 78,
+          "period": 29,
+          "requires": null,
+          "to": 2
+        },
+        {
+          "amount": "8061173473",
+          "from": 2,
+          "kind": "common_circulation",
+          "link": 78,
+          "period": 29,
+          "requires": 215,
+          "to": 0
+        },
+        {
+          "amount": "87371893",
+          "from": 0,
+          "kind": "provision_allocation",
+          "link": 79,
+          "period": 29,
+          "requires": null,
+          "to": 1
+        },
+        {
+          "amount": "87371893",
+          "from": 1,
+          "kind": "goods",
+          "link": 79,
+          "period": 29,
+          "requires": null,
+          "to": 5
+        },
+        {
+          "amount": "87371893",
+          "from": 5,
+          "kind": "common_circulation",
+          "link": 79,
+          "period": 29,
+          "requires": 218,
+          "to": 0
+        },
+        {
+          "amount": "8336933183",
+          "from": 0,
+          "kind": "provision_allocation",
+          "link": 80,
+          "period": 30,
+          "requires": null,
+          "to": 1
+        },
+        {
+          "amount": "8336933183",
+          "from": 1,
+          "kind": "goods",
+          "link": 80,
+          "period": 30,
+          "requires": null,
+          "to": 2
+        },
+        {
+          "amount": "8336933183",
+          "from": 2,
+          "kind": "common_circulation",
+          "link": 80,
+          "period": 30,
+          "requires": 221,
+          "to": 0
+        },
+        {
+          "amount": "90332057",
+          "from": 0,
+          "kind": "provision_allocation",
+          "link": 81,
+          "period": 30,
+          "requires": null,
+          "to": 1
+        },
+        {
+          "amount": "90332057",
+          "from": 1,
+          "kind": "goods",
+          "link": 81,
+          "period": 30,
+          "requires": null,
+          "to": 5
+        },
+        {
+          "amount": "90332057",
+          "from": 5,
+          "kind": "common_circulation",
+          "link": 81,
+          "period": 30,
+          "requires": 224,
+          "to": 0
+        },
+        {
+          "amount": "8343974159",
+          "from": 0,
+          "kind": "provision_allocation",
+          "link": 82,
+          "period": 31,
+          "requires": null,
+          "to": 1
+        },
+        {
+          "amount": "8343974159",
+          "from": 1,
+          "kind": "goods",
+          "link": 82,
+          "period": 31,
+          "requires": null,
+          "to": 2
+        },
+        {
+          "amount": "8343974159",
+          "from": 2,
+          "kind": "common_circulation",
+          "link": 82,
+          "period": 31,
+          "requires": 227,
+          "to": 0
+        },
+        {
+          "amount": "90379709",
+          "from": 0,
+          "kind": "provision_allocation",
+          "link": 83,
+          "period": 31,
+          "requires": null,
+          "to": 1
+        },
+        {
+          "amount": "90379709",
+          "from": 1,
+          "kind": "goods",
+          "link": 83,
+          "period": 31,
+          "requires": null,
+          "to": 5
+        },
+        {
+          "amount": "90379709",
+          "from": 5,
+          "kind": "common_circulation",
+          "link": 83,
+          "period": 31,
+          "requires": 230,
+          "to": 0
+        },
+        {
+          "amount": "8081615316",
+          "from": 0,
+          "kind": "provision_allocation",
+          "link": 84,
+          "period": 32,
+          "requires": null,
+          "to": 1
+        },
+        {
+          "amount": "8081615316",
+          "from": 1,
+          "kind": "goods",
+          "link": 84,
+          "period": 32,
+          "requires": null,
+          "to": 2
+        },
+        {
+          "amount": "8081615316",
+          "from": 2,
+          "kind": "common_circulation",
+          "link": 84,
+          "period": 32,
+          "requires": 233,
+          "to": 0
+        },
+        {
+          "amount": "87510239",
+          "from": 0,
+          "kind": "provision_allocation",
+          "link": 85,
+          "period": 32,
+          "requires": null,
+          "to": 1
+        },
+        {
+          "amount": "87510239",
+          "from": 1,
+          "kind": "goods",
+          "link": 85,
+          "period": 32,
+          "requires": null,
+          "to": 5
+        },
+        {
+          "amount": "87510239",
+          "from": 5,
+          "kind": "common_circulation",
+          "link": 85,
+          "period": 32,
+          "requires": 236,
+          "to": 0
+        },
+        {
+          "amount": "8358017795",
+          "from": 0,
+          "kind": "provision_allocation",
+          "link": 86,
+          "period": 33,
+          "requires": null,
+          "to": 1
+        },
+        {
+          "amount": "8358017795",
+          "from": 1,
+          "kind": "goods",
+          "link": 86,
+          "period": 33,
+          "requires": null,
+          "to": 2
+        },
+        {
+          "amount": "8358017795",
+          "from": 2,
+          "kind": "common_circulation",
+          "link": 86,
+          "period": 33,
+          "requires": 239,
+          "to": 0
+        },
+        {
+          "amount": "90474667",
+          "from": 0,
+          "kind": "provision_allocation",
+          "link": 87,
+          "period": 33,
+          "requires": null,
+          "to": 1
+        },
+        {
+          "amount": "90474667",
+          "from": 1,
+          "kind": "goods",
+          "link": 87,
+          "period": 33,
+          "requires": null,
+          "to": 5
+        },
+        {
+          "amount": "90474667",
+          "from": 5,
+          "kind": "common_circulation",
+          "link": 87,
+          "period": 33,
+          "requires": 242,
+          "to": 0
+        },
+        {
+          "amount": "8095181090",
+          "from": 0,
+          "kind": "provision_allocation",
+          "link": 88,
+          "period": 34,
+          "requires": null,
+          "to": 1
+        },
+        {
+          "amount": "8095181090",
+          "from": 1,
+          "kind": "goods",
+          "link": 88,
+          "period": 34,
+          "requires": null,
+          "to": 2
+        },
+        {
+          "amount": "8095181090",
+          "from": 2,
+          "kind": "common_circulation",
+          "link": 88,
+          "period": 34,
+          "requires": 245,
+          "to": 0
+        },
+        {
+          "amount": "87601908",
+          "from": 0,
+          "kind": "provision_allocation",
+          "link": 89,
+          "period": 34,
+          "requires": null,
+          "to": 1
+        },
+        {
+          "amount": "87601908",
+          "from": 1,
+          "kind": "goods",
+          "link": 89,
+          "period": 34,
+          "requires": null,
+          "to": 5
+        },
+        {
+          "amount": "87601908",
+          "from": 5,
+          "kind": "common_circulation",
+          "link": 89,
+          "period": 34,
+          "requires": 248,
+          "to": 0
+        },
+        {
+          "amount": "8372010412",
+          "from": 0,
+          "kind": "provision_allocation",
+          "link": 90,
+          "period": 35,
+          "requires": null,
+          "to": 1
+        },
+        {
+          "amount": "8372010412",
+          "from": 1,
+          "kind": "goods",
+          "link": 90,
+          "period": 35,
+          "requires": null,
+          "to": 2
+        },
+        {
+          "amount": "8372010412",
+          "from": 2,
+          "kind": "common_circulation",
+          "link": 90,
+          "period": 35,
+          "requires": 251,
+          "to": 0
+        },
+        {
+          "amount": "90569162",
+          "from": 0,
+          "kind": "provision_allocation",
+          "link": 91,
+          "period": 35,
+          "requires": null,
+          "to": 1
+        },
+        {
+          "amount": "90569162",
+          "from": 1,
+          "kind": "goods",
+          "link": 91,
+          "period": 35,
+          "requires": null,
+          "to": 5
+        },
+        {
+          "amount": "90569162",
+          "from": 5,
+          "kind": "common_circulation",
+          "link": 91,
+          "period": 35,
+          "requires": 254,
+          "to": 0
+        },
+        {
+          "amount": "8378987641",
+          "from": 0,
+          "kind": "provision_allocation",
+          "link": 92,
+          "period": 36,
+          "requires": null,
+          "to": 1
+        },
+        {
+          "amount": "8378987641",
+          "from": 1,
+          "kind": "goods",
+          "link": 92,
+          "period": 36,
+          "requires": null,
+          "to": 2
+        },
+        {
+          "amount": "8378987641",
+          "from": 2,
+          "kind": "common_circulation",
+          "link": 92,
+          "period": 36,
+          "requires": 257,
+          "to": 0
+        },
+        {
+          "amount": "90616236",
+          "from": 0,
+          "kind": "provision_allocation",
+          "link": 93,
+          "period": 36,
+          "requires": null,
+          "to": 1
+        },
+        {
+          "amount": "90616236",
+          "from": 1,
+          "kind": "goods",
+          "link": 93,
+          "period": 36,
+          "requires": null,
+          "to": 5
+        },
+        {
+          "amount": "90616236",
+          "from": 5,
+          "kind": "common_circulation",
+          "link": 93,
+          "period": 36,
+          "requires": 260,
+          "to": 0
+        },
+        {
+          "amount": "7574408697",
+          "from": 0,
+          "kind": "provision_allocation",
+          "link": 94,
+          "period": 37,
+          "requires": null,
+          "to": 1
+        },
+        {
+          "amount": "7574408697",
+          "from": 1,
+          "kind": "goods",
+          "link": 94,
+          "period": 37,
+          "requires": null,
+          "to": 2
+        },
+        {
+          "amount": "7574408697",
+          "from": 2,
+          "kind": "common_circulation",
+          "link": 94,
+          "period": 37,
+          "requires": 263,
+          "to": 0
+        },
+        {
+          "amount": "81988346",
+          "from": 0,
+          "kind": "provision_allocation",
+          "link": 95,
+          "period": 37,
+          "requires": null,
+          "to": 1
+        },
+        {
+          "amount": "81988346",
+          "from": 1,
+          "kind": "goods",
+          "link": 95,
+          "period": 37,
+          "requires": null,
+          "to": 5
+        },
+        {
+          "amount": "81988346",
+          "from": 5,
+          "kind": "common_circulation",
+          "link": 95,
+          "period": 37,
+          "requires": 266,
+          "to": 0
+        },
+        {
+          "amount": "8392904775",
+          "from": 0,
+          "kind": "provision_allocation",
+          "link": 96,
+          "period": 38,
+          "requires": null,
+          "to": 1
+        },
+        {
+          "amount": "8392904775",
+          "from": 1,
+          "kind": "goods",
+          "link": 96,
+          "period": 38,
+          "requires": null,
+          "to": 2
+        },
+        {
+          "amount": "8392904775",
+          "from": 2,
+          "kind": "common_circulation",
+          "link": 96,
+          "period": 38,
+          "requires": 269,
+          "to": 0
+        },
+        {
+          "amount": "90929287",
+          "from": 0,
+          "kind": "provision_allocation",
+          "link": 97,
+          "period": 38,
+          "requires": null,
+          "to": 1
+        },
+        {
+          "amount": "90929287",
+          "from": 1,
+          "kind": "goods",
+          "link": 97,
+          "period": 38,
+          "requires": null,
+          "to": 5
+        },
+        {
+          "amount": "90929287",
+          "from": 5,
+          "kind": "common_circulation",
+          "link": 97,
+          "period": 38,
+          "requires": 272,
+          "to": 0
+        },
+        {
+          "amount": "8128881782",
+          "from": 0,
+          "kind": "provision_allocation",
+          "link": 98,
+          "period": 39,
+          "requires": null,
+          "to": 1
+        },
+        {
+          "amount": "8128881782",
+          "from": 1,
+          "kind": "goods",
+          "link": 98,
+          "period": 39,
+          "requires": null,
+          "to": 2
+        },
+        {
+          "amount": "8128881782",
+          "from": 2,
+          "kind": "common_circulation",
+          "link": 98,
+          "period": 39,
+          "requires": 275,
+          "to": 0
+        },
+        {
+          "amount": "88147418",
+          "from": 0,
+          "kind": "provision_allocation",
+          "link": 99,
+          "period": 39,
+          "requires": null,
+          "to": 1
+        },
+        {
+          "amount": "88147418",
+          "from": 1,
+          "kind": "goods",
+          "link": 99,
+          "period": 39,
+          "requires": null,
+          "to": 5
+        },
+        {
+          "amount": "88147418",
+          "from": 5,
+          "kind": "common_circulation",
+          "link": 99,
+          "period": 39,
+          "requires": 278,
+          "to": 0
+        },
+        {
+          "amount": "8406772010",
+          "from": 0,
+          "kind": "provision_allocation",
+          "link": 100,
+          "period": 40,
+          "requires": null,
+          "to": 1
+        },
+        {
+          "amount": "8406772010",
+          "from": 1,
+          "kind": "goods",
+          "link": 100,
+          "period": 40,
+          "requires": null,
+          "to": 2
+        },
+        {
+          "amount": "8406772010",
+          "from": 2,
+          "kind": "common_circulation",
+          "link": 100,
+          "period": 40,
+          "requires": 281,
+          "to": 0
+        },
+        {
+          "amount": "91241949",
+          "from": 0,
+          "kind": "provision_allocation",
+          "link": 101,
+          "period": 40,
+          "requires": null,
+          "to": 1
+        },
+        {
+          "amount": "91241949",
+          "from": 1,
+          "kind": "goods",
+          "link": 101,
+          "period": 40,
+          "requires": null,
+          "to": 5
+        },
+        {
+          "amount": "91241949",
+          "from": 5,
+          "kind": "common_circulation",
+          "link": 101,
+          "period": 40,
+          "requires": 284,
+          "to": 0
+        },
+        {
+          "amount": "8142277937",
+          "from": 0,
+          "kind": "provision_allocation",
+          "link": 102,
+          "period": 41,
+          "requires": null,
+          "to": 1
+        },
+        {
+          "amount": "8142277937",
+          "from": 1,
+          "kind": "goods",
+          "link": 102,
+          "period": 41,
+          "requires": null,
+          "to": 2
+        },
+        {
+          "amount": "8142277937",
+          "from": 2,
+          "kind": "common_circulation",
+          "link": 102,
+          "period": 41,
+          "requires": 287,
+          "to": 0
+        },
+        {
+          "amount": "88449811",
+          "from": 0,
+          "kind": "provision_allocation",
+          "link": 103,
+          "period": 41,
+          "requires": null,
+          "to": 1
+        },
+        {
+          "amount": "88449811",
+          "from": 1,
+          "kind": "goods",
+          "link": 103,
+          "period": 41,
+          "requires": null,
+          "to": 5
+        },
+        {
+          "amount": "88449811",
+          "from": 5,
+          "kind": "common_circulation",
+          "link": 103,
+          "period": 41,
+          "requires": 290,
+          "to": 0
+        },
+        {
+          "amount": "8420590158",
+          "from": 0,
+          "kind": "provision_allocation",
+          "link": 104,
+          "period": 42,
+          "requires": null,
+          "to": 1
+        },
+        {
+          "amount": "8420590158",
+          "from": 1,
+          "kind": "goods",
+          "link": 104,
+          "period": 42,
+          "requires": null,
+          "to": 2
+        },
+        {
+          "amount": "8420590158",
+          "from": 2,
+          "kind": "common_circulation",
+          "link": 104,
+          "period": 42,
+          "requires": 293,
+          "to": 0
+        },
+        {
+          "amount": "91554232",
+          "from": 0,
+          "kind": "provision_allocation",
+          "link": 105,
+          "period": 42,
+          "requires": null,
+          "to": 1
+        },
+        {
+          "amount": "91554232",
+          "from": 1,
+          "kind": "goods",
+          "link": 105,
+          "period": 42,
+          "requires": null,
+          "to": 5
+        },
+        {
+          "amount": "91554232",
+          "from": 5,
+          "kind": "common_circulation",
+          "link": 105,
+          "period": 42,
+          "requires": 296,
+          "to": 0
+        },
+        {
+          "amount": "8427480806",
+          "from": 0,
+          "kind": "provision_allocation",
+          "link": 106,
+          "period": 43,
+          "requires": null,
+          "to": 1
+        },
+        {
+          "amount": "8427480806",
+          "from": 1,
+          "kind": "goods",
+          "link": 106,
+          "period": 43,
+          "requires": null,
+          "to": 2
+        },
+        {
+          "amount": "8427480806",
+          "from": 2,
+          "kind": "common_circulation",
+          "link": 106,
+          "period": 43,
+          "requires": 299,
+          "to": 0
+        },
+        {
+          "amount": "91710225",
+          "from": 0,
+          "kind": "provision_allocation",
+          "link": 107,
+          "period": 43,
+          "requires": null,
+          "to": 1
+        },
+        {
+          "amount": "91710225",
+          "from": 1,
+          "kind": "goods",
+          "link": 107,
+          "period": 43,
+          "requires": null,
+          "to": 5
+        },
+        {
+          "amount": "91710225",
+          "from": 5,
+          "kind": "common_circulation",
+          "link": 107,
+          "period": 43,
+          "requires": 302,
+          "to": 0
+        },
+        {
+          "amount": "8162283115",
+          "from": 0,
+          "kind": "provision_allocation",
+          "link": 108,
+          "period": 44,
+          "requires": null,
+          "to": 1
+        },
+        {
+          "amount": "8162283115",
+          "from": 1,
+          "kind": "goods",
+          "link": 108,
+          "period": 44,
+          "requires": null,
+          "to": 2
+        },
+        {
+          "amount": "8162283115",
+          "from": 2,
+          "kind": "common_circulation",
+          "link": 108,
+          "period": 44,
+          "requires": 305,
+          "to": 0
+        },
+        {
+          "amount": "88902703",
+          "from": 0,
+          "kind": "provision_allocation",
+          "link": 109,
+          "period": 44,
+          "requires": null,
+          "to": 1
+        },
+        {
+          "amount": "88902703",
+          "from": 1,
+          "kind": "goods",
+          "link": 109,
+          "period": 44,
+          "requires": null,
+          "to": 5
+        },
+        {
+          "amount": "88902703",
+          "from": 5,
+          "kind": "common_circulation",
+          "link": 109,
+          "period": 44,
+          "requires": 308,
+          "to": 0
+        },
+        {
+          "amount": "8441225565",
+          "from": 0,
+          "kind": "provision_allocation",
+          "link": 110,
+          "period": 45,
+          "requires": null,
+          "to": 1
+        },
+        {
+          "amount": "8441225565",
+          "from": 1,
+          "kind": "goods",
+          "link": 110,
+          "period": 45,
+          "requires": null,
+          "to": 2
+        },
+        {
+          "amount": "8441225565",
+          "from": 2,
+          "kind": "common_circulation",
+          "link": 110,
+          "period": 45,
+          "requires": 311,
+          "to": 0
+        },
+        {
+          "amount": "92021935",
+          "from": 0,
+          "kind": "provision_allocation",
+          "link": 111,
+          "period": 45,
+          "requires": null,
+          "to": 1
+        },
+        {
+          "amount": "92021935",
+          "from": 1,
+          "kind": "goods",
+          "link": 111,
+          "period": 45,
+          "requires": null,
+          "to": 5
+        },
+        {
+          "amount": "92021935",
+          "from": 5,
+          "kind": "common_circulation",
+          "link": 111,
+          "period": 45,
+          "requires": 314,
+          "to": 0
+        },
+        {
+          "amount": "8175561131",
+          "from": 0,
+          "kind": "provision_allocation",
+          "link": 112,
+          "period": 46,
+          "requires": null,
+          "to": 1
+        },
+        {
+          "amount": "8175561131",
+          "from": 1,
+          "kind": "goods",
+          "link": 112,
+          "period": 46,
+          "requires": null,
+          "to": 2
+        },
+        {
+          "amount": "8175561131",
+          "from": 2,
+          "kind": "common_circulation",
+          "link": 112,
+          "period": 46,
+          "requires": 317,
+          "to": 0
+        },
+        {
+          "amount": "89204171",
+          "from": 0,
+          "kind": "provision_allocation",
+          "link": 113,
+          "period": 46,
+          "requires": null,
+          "to": 1
+        },
+        {
+          "amount": "89204171",
+          "from": 1,
+          "kind": "goods",
+          "link": 113,
+          "period": 46,
+          "requires": null,
+          "to": 5
+        },
+        {
+          "amount": "89204171",
+          "from": 5,
+          "kind": "common_circulation",
+          "link": 113,
+          "period": 46,
+          "requires": 320,
+          "to": 0
+        },
+        {
+          "amount": "8454921877",
+          "from": 0,
+          "kind": "provision_allocation",
+          "link": 114,
+          "period": 47,
+          "requires": null,
+          "to": 1
+        },
+        {
+          "amount": "8454921877",
+          "from": 1,
+          "kind": "goods",
+          "link": 114,
+          "period": 47,
+          "requires": null,
+          "to": 2
+        },
+        {
+          "amount": "8454921877",
+          "from": 2,
+          "kind": "common_circulation",
+          "link": 114,
+          "period": 47,
+          "requires": 323,
+          "to": 0
+        },
+        {
+          "amount": "92333258",
+          "from": 0,
+          "kind": "provision_allocation",
+          "link": 115,
+          "period": 47,
+          "requires": null,
+          "to": 1
+        },
+        {
+          "amount": "92333258",
+          "from": 1,
+          "kind": "goods",
+          "link": 115,
+          "period": 47,
+          "requires": null,
+          "to": 5
+        },
+        {
+          "amount": "92333258",
+          "from": 5,
+          "kind": "common_circulation",
+          "link": 115,
+          "period": 47,
+          "requires": 326,
+          "to": 0
+        },
+        {
+          "amount": "8461751929",
+          "from": 0,
+          "kind": "provision_allocation",
+          "link": 116,
+          "period": 48,
+          "requires": null,
+          "to": 1
+        },
+        {
+          "amount": "8461751929",
+          "from": 1,
+          "kind": "goods",
+          "link": 116,
+          "period": 48,
+          "requires": null,
+          "to": 2
+        },
+        {
+          "amount": "8461751929",
+          "from": 2,
+          "kind": "common_circulation",
+          "link": 116,
+          "period": 48,
+          "requires": 329,
+          "to": 0
+        },
+        {
+          "amount": "92488781",
+          "from": 0,
+          "kind": "provision_allocation",
+          "link": 117,
+          "period": 48,
+          "requires": null,
+          "to": 1
+        },
+        {
+          "amount": "92488781",
+          "from": 1,
+          "kind": "goods",
+          "link": 117,
+          "period": 48,
+          "requires": null,
+          "to": 5
+        },
+        {
+          "amount": "92488781",
+          "from": 5,
+          "kind": "common_circulation",
+          "link": 117,
+          "period": 48,
+          "requires": 332,
+          "to": 0
+        },
+        {
+          "amount": "7649031180",
+          "from": 0,
+          "kind": "provision_allocation",
+          "link": 118,
+          "period": 49,
+          "requires": null,
+          "to": 1
+        },
+        {
+          "amount": "7649031180",
+          "from": 1,
+          "kind": "goods",
+          "link": 118,
+          "period": 49,
+          "requires": null,
+          "to": 2
+        },
+        {
+          "amount": "7649031180",
+          "from": 2,
+          "kind": "common_circulation",
+          "link": 118,
+          "period": 49,
+          "requires": 335,
+          "to": 0
+        },
+        {
+          "amount": "83678645",
+          "from": 0,
+          "kind": "provision_allocation",
+          "link": 119,
+          "period": 49,
+          "requires": null,
+          "to": 1
+        },
+        {
+          "amount": "83678645",
+          "from": 1,
+          "kind": "goods",
+          "link": 119,
+          "period": 49,
+          "requires": null,
+          "to": 5
+        },
+        {
+          "amount": "83678645",
+          "from": 5,
+          "kind": "common_circulation",
+          "link": 119,
+          "period": 49,
+          "requires": 338,
+          "to": 0
+        },
+        {
+          "amount": "8475376387",
+          "from": 0,
+          "kind": "provision_allocation",
+          "link": 120,
+          "period": 50,
+          "requires": null,
+          "to": 1
+        },
+        {
+          "amount": "8475376387",
+          "from": 1,
+          "kind": "goods",
+          "link": 120,
+          "period": 50,
+          "requires": null,
+          "to": 2
+        },
+        {
+          "amount": "8475376387",
+          "from": 2,
+          "kind": "common_circulation",
+          "link": 120,
+          "period": 50,
+          "requires": 341,
+          "to": 0
+        },
+        {
+          "amount": "92799548",
+          "from": 0,
+          "kind": "provision_allocation",
+          "link": 121,
+          "period": 50,
+          "requires": null,
+          "to": 1
+        },
+        {
+          "amount": "92799548",
+          "from": 1,
+          "kind": "goods",
+          "link": 121,
+          "period": 50,
+          "requires": null,
+          "to": 5
+        },
+        {
+          "amount": "92799548",
+          "from": 5,
+          "kind": "common_circulation",
+          "link": 121,
+          "period": 50,
+          "requires": 344,
+          "to": 0
+        },
+        {
+          "amount": "8208552141",
+          "from": 0,
+          "kind": "provision_allocation",
+          "link": 122,
+          "period": 51,
+          "requires": null,
+          "to": 1
+        },
+        {
+          "amount": "8208552141",
+          "from": 1,
+          "kind": "goods",
+          "link": 122,
+          "period": 51,
+          "requires": null,
+          "to": 2
+        },
+        {
+          "amount": "8208552141",
+          "from": 2,
+          "kind": "common_circulation",
+          "link": 122,
+          "period": 51,
+          "requires": 347,
+          "to": 0
+        },
+        {
+          "amount": "89956245",
+          "from": 0,
+          "kind": "provision_allocation",
+          "link": 123,
+          "period": 51,
+          "requires": null,
+          "to": 1
+        },
+        {
+          "amount": "89956245",
+          "from": 1,
+          "kind": "goods",
+          "link": 123,
+          "period": 51,
+          "requires": null,
+          "to": 5
+        },
+        {
+          "amount": "89956245",
+          "from": 5,
+          "kind": "common_circulation",
+          "link": 123,
+          "period": 51,
+          "requires": 350,
+          "to": 0
+        },
+        {
+          "amount": "8488953045",
+          "from": 0,
+          "kind": "provision_allocation",
+          "link": 124,
+          "period": 52,
+          "requires": null,
+          "to": 1
+        },
+        {
+          "amount": "8488953045",
+          "from": 1,
+          "kind": "goods",
+          "link": 124,
+          "period": 52,
+          "requires": null,
+          "to": 2
+        },
+        {
+          "amount": "8488953045",
+          "from": 2,
+          "kind": "common_circulation",
+          "link": 124,
+          "period": 52,
+          "requires": 353,
+          "to": 0
+        },
+        {
+          "amount": "93109941",
+          "from": 0,
+          "kind": "provision_allocation",
+          "link": 125,
+          "period": 52,
+          "requires": null,
+          "to": 1
+        },
+        {
+          "amount": "93109941",
+          "from": 1,
+          "kind": "goods",
+          "link": 125,
+          "period": 52,
+          "requires": null,
+          "to": 5
+        },
+        {
+          "amount": "93109941",
+          "from": 5,
+          "kind": "common_circulation",
+          "link": 125,
+          "period": 52,
+          "requires": 356,
+          "to": 0
+        },
+        {
+          "amount": "8221667951",
+          "from": 0,
+          "kind": "provision_allocation",
+          "link": 126,
+          "period": 53,
+          "requires": null,
+          "to": 1
+        },
+        {
+          "amount": "8221667951",
+          "from": 1,
+          "kind": "goods",
+          "link": 126,
+          "period": 53,
+          "requires": null,
+          "to": 2
+        },
+        {
+          "amount": "8221667951",
+          "from": 2,
+          "kind": "common_circulation",
+          "link": 126,
+          "period": 53,
+          "requires": 359,
+          "to": 0
+        },
+        {
+          "amount": "90256451",
+          "from": 0,
+          "kind": "provision_allocation",
+          "link": 127,
+          "period": 53,
+          "requires": null,
+          "to": 1
+        },
+        {
+          "amount": "90256451",
+          "from": 1,
+          "kind": "goods",
+          "link": 127,
+          "period": 53,
+          "requires": null,
+          "to": 5
+        },
+        {
+          "amount": "90256451",
+          "from": 5,
+          "kind": "common_circulation",
+          "link": 127,
+          "period": 53,
+          "requires": 362,
+          "to": 0
+        },
+        {
+          "amount": "8502482388",
+          "from": 0,
+          "kind": "provision_allocation",
+          "link": 128,
+          "period": 54,
+          "requires": null,
+          "to": 1
+        },
+        {
+          "amount": "8502482388",
+          "from": 1,
+          "kind": "goods",
+          "link": 128,
+          "period": 54,
+          "requires": null,
+          "to": 2
+        },
+        {
+          "amount": "8502482388",
+          "from": 2,
+          "kind": "common_circulation",
+          "link": 128,
+          "period": 54,
+          "requires": 365,
+          "to": 0
+        },
+        {
+          "amount": "93419946",
+          "from": 0,
+          "kind": "provision_allocation",
+          "link": 129,
+          "period": 54,
+          "requires": null,
+          "to": 1
+        },
+        {
+          "amount": "93419946",
+          "from": 1,
+          "kind": "goods",
+          "link": 129,
+          "period": 54,
+          "requires": null,
+          "to": 5
+        },
+        {
+          "amount": "93419946",
+          "from": 5,
+          "kind": "common_circulation",
+          "link": 129,
+          "period": 54,
+          "requires": 368,
+          "to": 0
+        },
+        {
+          "amount": "8509229474",
+          "from": 0,
+          "kind": "provision_allocation",
+          "link": 130,
+          "period": 55,
+          "requires": null,
+          "to": 1
+        },
+        {
+          "amount": "8509229474",
+          "from": 1,
+          "kind": "goods",
+          "link": 130,
+          "period": 55,
+          "requires": null,
+          "to": 2
+        },
+        {
+          "amount": "8509229474",
+          "from": 2,
+          "kind": "common_circulation",
+          "link": 130,
+          "period": 55,
+          "requires": 371,
+          "to": 0
+        },
+        {
+          "amount": "93574781",
+          "from": 0,
+          "kind": "provision_allocation",
+          "link": 131,
+          "period": 55,
+          "requires": null,
+          "to": 1
+        },
+        {
+          "amount": "93574781",
+          "from": 1,
+          "kind": "goods",
+          "link": 131,
+          "period": 55,
+          "requires": null,
+          "to": 5
+        },
+        {
+          "amount": "93574781",
+          "from": 5,
+          "kind": "common_circulation",
+          "link": 131,
+          "period": 55,
+          "requires": 374,
+          "to": 0
+        },
+        {
+          "amount": "8241256271",
+          "from": 0,
+          "kind": "provision_allocation",
+          "link": 132,
+          "period": 56,
+          "requires": null,
+          "to": 1
+        },
+        {
+          "amount": "8241256271",
+          "from": 1,
+          "kind": "goods",
+          "link": 132,
+          "period": 56,
+          "requires": null,
+          "to": 2
+        },
+        {
+          "amount": "8241256271",
+          "from": 2,
+          "kind": "common_circulation",
+          "link": 132,
+          "period": 56,
+          "requires": 377,
+          "to": 0
+        },
+        {
+          "amount": "90705981",
+          "from": 0,
+          "kind": "provision_allocation",
+          "link": 133,
+          "period": 56,
+          "requires": null,
+          "to": 1
+        },
+        {
+          "amount": "90705981",
+          "from": 1,
+          "kind": "goods",
+          "link": 133,
+          "period": 56,
+          "requires": null,
+          "to": 5
+        },
+        {
+          "amount": "90705981",
+          "from": 5,
+          "kind": "common_circulation",
+          "link": 133,
+          "period": 56,
+          "requires": 380,
+          "to": 0
+        },
+        {
+          "amount": "8522688485",
+          "from": 0,
+          "kind": "provision_allocation",
+          "link": 134,
+          "period": 57,
+          "requires": null,
+          "to": 1
+        },
+        {
+          "amount": "8522688485",
+          "from": 1,
+          "kind": "goods",
+          "link": 134,
+          "period": 57,
+          "requires": null,
+          "to": 2
+        },
+        {
+          "amount": "8522688485",
+          "from": 2,
+          "kind": "common_circulation",
+          "link": 134,
+          "period": 57,
+          "requires": 383,
+          "to": 0
+        },
+        {
+          "amount": "93884153",
+          "from": 0,
+          "kind": "provision_allocation",
+          "link": 135,
+          "period": 57,
+          "requires": null,
+          "to": 1
+        },
+        {
+          "amount": "93884153",
+          "from": 1,
+          "kind": "goods",
+          "link": 135,
+          "period": 57,
+          "requires": null,
+          "to": 5
+        },
+        {
+          "amount": "93884153",
+          "from": 5,
+          "kind": "common_circulation",
+          "link": 135,
+          "period": 57,
+          "requires": 386,
+          "to": 0
+        },
+        {
+          "amount": "8254258617",
+          "from": 0,
+          "kind": "provision_allocation",
+          "link": 136,
+          "period": 58,
+          "requires": null,
+          "to": 1
+        },
+        {
+          "amount": "8254258617",
+          "from": 1,
+          "kind": "goods",
+          "link": 136,
+          "period": 58,
+          "requires": null,
+          "to": 2
+        },
+        {
+          "amount": "8254258617",
+          "from": 2,
+          "kind": "common_circulation",
+          "link": 136,
+          "period": 58,
+          "requires": 389,
+          "to": 0
+        },
+        {
+          "amount": "91005199",
+          "from": 0,
+          "kind": "provision_allocation",
+          "link": 137,
+          "period": 58,
+          "requires": null,
+          "to": 1
+        },
+        {
+          "amount": "91005199",
+          "from": 1,
+          "kind": "goods",
+          "link": 137,
+          "period": 58,
+          "requires": null,
+          "to": 5
+        },
+        {
+          "amount": "91005199",
+          "from": 5,
+          "kind": "common_circulation",
+          "link": 137,
+          "period": 58,
+          "requires": 392,
+          "to": 0
+        },
+        {
+          "amount": "8536101076",
+          "from": 0,
+          "kind": "provision_allocation",
+          "link": 138,
+          "period": 59,
+          "requires": null,
+          "to": 1
+        },
+        {
+          "amount": "8536101076",
+          "from": 1,
+          "kind": "goods",
+          "link": 138,
+          "period": 59,
+          "requires": null,
+          "to": 2
+        },
+        {
+          "amount": "8536101076",
+          "from": 2,
+          "kind": "common_circulation",
+          "link": 138,
+          "period": 59,
+          "requires": 395,
+          "to": 0
+        },
+        {
+          "amount": "94193163",
+          "from": 0,
+          "kind": "provision_allocation",
+          "link": 139,
+          "period": 59,
+          "requires": null,
+          "to": 1
+        },
+        {
+          "amount": "94193163",
+          "from": 1,
+          "kind": "goods",
+          "link": 139,
+          "period": 59,
+          "requires": null,
+          "to": 5
+        },
+        {
+          "amount": "94193163",
+          "from": 5,
+          "kind": "common_circulation",
+          "link": 139,
+          "period": 59,
+          "requires": 398,
+          "to": 0
+        }
+      ],
+      "baseline_money": {
+        "attempted_events": 400,
+        "closing": [
+          "8536101076",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0"
+        ],
+        "first_blocked_event": null,
+        "first_blocked_period": null,
+        "insufficient_events": 0,
+        "minimum_balance": [
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0"
+        ],
+        "opening_total": "8536101076",
+        "settled_events": 400,
+        "settled_volume": "1488339904933",
+        "unavailable_events": 0
+      },
+      "blocked_event": 61,
+      "blocked_failures": [
+        {
+          "event": 61,
+          "reason": "unavailable"
+        },
+        {
+          "event": 62,
+          "reason": "dependency"
+        },
+        {
+          "event": 66,
+          "reason": "insufficient_measure"
+        },
+        {
+          "event": 178,
+          "reason": "insufficient_measure"
+        },
+        {
+          "event": 179,
+          "reason": "insufficient_measure"
+        },
+        {
+          "event": 180,
+          "reason": "dependency"
+        },
+        {
+          "event": 184,
+          "reason": "insufficient_measure"
+        },
+        {
+          "event": 185,
+          "reason": "insufficient_measure"
+        },
+        {
+          "event": 186,
+          "reason": "dependency"
+        },
+        {
+          "event": 196,
+          "reason": "insufficient_measure"
+        },
+        {
+          "event": 197,
+          "reason": "insufficient_measure"
+        },
+        {
+          "event": 198,
+          "reason": "dependency"
+        },
+        {
+          "event": 208,
+          "reason": "insufficient_measure"
+        },
+        {
+          "event": 209,
+          "reason": "insufficient_measure"
+        },
+        {
+          "event": 210,
+          "reason": "dependency"
+        },
+        {
+          "event": 220,
+          "reason": "insufficient_measure"
+        },
+        {
+          "event": 221,
+          "reason": "insufficient_measure"
+        },
+        {
+          "event": 222,
+          "reason": "dependency"
+        },
+        {
+          "event": 226,
+          "reason": "insufficient_measure"
+        },
+        {
+          "event": 227,
+          "reason": "insufficient_measure"
+        },
+        {
+          "event": 228,
+          "reason": "dependency"
+        },
+        {
+          "event": 238,
+          "reason": "insufficient_measure"
+        },
+        {
+          "event": 239,
+          "reason": "insufficient_measure"
+        },
+        {
+          "event": 240,
+          "reason": "dependency"
+        },
+        {
+          "event": 250,
+          "reason": "insufficient_measure"
+        },
+        {
+          "event": 251,
+          "reason": "insufficient_measure"
+        },
+        {
+          "event": 252,
+          "reason": "dependency"
+        },
+        {
+          "event": 256,
+          "reason": "insufficient_measure"
+        },
+        {
+          "event": 257,
+          "reason": "insufficient_measure"
+        },
+        {
+          "event": 258,
+          "reason": "dependency"
+        },
+        {
+          "event": 268,
+          "reason": "insufficient_measure"
+        },
+        {
+          "event": 269,
+          "reason": "insufficient_measure"
+        },
+        {
+          "event": 270,
+          "reason": "dependency"
+        },
+        {
+          "event": 280,
+          "reason": "insufficient_measure"
+        },
+        {
+          "event": 281,
+          "reason": "insufficient_measure"
+        },
+        {
+          "event": 282,
+          "reason": "dependency"
+        },
+        {
+          "event": 292,
+          "reason": "insufficient_measure"
+        },
+        {
+          "event": 293,
+          "reason": "insufficient_measure"
+        },
+        {
+          "event": 294,
+          "reason": "dependency"
+        },
+        {
+          "event": 298,
+          "reason": "insufficient_measure"
+        },
+        {
+          "event": 299,
+          "reason": "insufficient_measure"
+        },
+        {
+          "event": 300,
+          "reason": "dependency"
+        },
+        {
+          "event": 310,
+          "reason": "insufficient_measure"
+        },
+        {
+          "event": 311,
+          "reason": "insufficient_measure"
+        },
+        {
+          "event": 312,
+          "reason": "dependency"
+        },
+        {
+          "event": 322,
+          "reason": "insufficient_measure"
+        },
+        {
+          "event": 323,
+          "reason": "insufficient_measure"
+        },
+        {
+          "event": 324,
+          "reason": "dependency"
+        },
+        {
+          "event": 328,
+          "reason": "insufficient_measure"
+        },
+        {
+          "event": 329,
+          "reason": "insufficient_measure"
+        },
+        {
+          "event": 330,
+          "reason": "dependency"
+        },
+        {
+          "event": 340,
+          "reason": "insufficient_measure"
+        },
+        {
+          "event": 341,
+          "reason": "insufficient_measure"
+        },
+        {
+          "event": 342,
+          "reason": "dependency"
+        },
+        {
+          "event": 352,
+          "reason": "insufficient_measure"
+        },
+        {
+          "event": 353,
+          "reason": "insufficient_measure"
+        },
+        {
+          "event": 354,
+          "reason": "dependency"
+        },
+        {
+          "event": 364,
+          "reason": "insufficient_measure"
+        },
+        {
+          "event": 365,
+          "reason": "insufficient_measure"
+        },
+        {
+          "event": 366,
+          "reason": "dependency"
+        },
+        {
+          "event": 370,
+          "reason": "insufficient_measure"
+        },
+        {
+          "event": 371,
+          "reason": "insufficient_measure"
+        },
+        {
+          "event": 372,
+          "reason": "dependency"
+        },
+        {
+          "event": 382,
+          "reason": "insufficient_measure"
+        },
+        {
+          "event": 383,
+          "reason": "insufficient_measure"
+        },
+        {
+          "event": 384,
+          "reason": "dependency"
+        },
+        {
+          "event": 394,
+          "reason": "insufficient_measure"
+        },
+        {
+          "event": 395,
+          "reason": "insufficient_measure"
+        },
+        {
+          "event": 396,
+          "reason": "dependency"
+        }
+      ],
+      "boundary": 4,
+      "opening_total": "8536101076",
+      "policy": {
+        "accounts": [
+          "common treasury",
+          "aggregate provision",
+          "unit water_component",
+          "unit test_store",
+          "unit unused_raw",
+          "unit service_energy",
+          "unit construction_material",
+          "unit eligible_training_places",
+          "unit north_care_staff",
+          "unit north_educators",
+          "unit north_care_rooms",
+          "unit north_teaching_seats",
+          "unit north_devices",
+          "unit north_builders",
+          "unit south_care_staff",
+          "unit south_educators",
+          "unit south_care_rooms",
+          "unit south_teaching_seats",
+          "unit south_devices",
+          "unit south_builders"
+        ],
+        "basis": "Water, energy and construction material only; capacity slots and people are not priced",
+        "capital_resources": [
+          1,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17
+        ],
+        "common_measure": [
+          "1",
+          "0",
+          "0",
+          "1",
+          "1",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0"
+        ],
+        "measure_unit": "fixed normative measure",
+        "opening": [
+          "8525555072",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "576415",
+          "119497",
+          "714245",
+          "2428076",
+          "380163",
+          "0",
+          "864626",
+          "179256",
+          "1071371",
+          "3642107",
+          "570248",
+          "0"
+        ],
+        "process_operators": [
+          2,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18,
+          19
+        ],
+        "process_order": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12
+        ],
+        "resource_suppliers": [
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18,
+          19
+        ],
+        "unit_measure": [
+          "1",
+          "0",
+          "0",
+          "1",
+          "1",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0"
+        ]
+      },
+      "repaired_events": [
+        {
+          "amount": "8119520000",
+          "from": 0,
+          "kind": "provision_allocation",
+          "link": 0,
+          "period": 0,
+          "requires": null,
+          "to": 1
+        },
+        {
+          "amount": "8119520000",
+          "from": 1,
+          "kind": "goods",
+          "link": 0,
+          "period": 0,
+          "requires": null,
+          "to": 2
+        },
+        {
+          "amount": "8119520000",
+          "from": 2,
+          "kind": "common_circulation",
+          "link": 0,
+          "period": 0,
+          "requires": 1,
+          "to": 0
+        },
+        {
+          "amount": "88847240",
+          "from": 0,
+          "kind": "provision_allocation",
+          "link": 1,
+          "period": 0,
+          "requires": null,
+          "to": 1
+        },
+        {
+          "amount": "88847240",
+          "from": 1,
+          "kind": "goods",
+          "link": 1,
+          "period": 0,
+          "requires": null,
+          "to": 5
+        },
+        {
+          "amount": "88847240",
+          "from": 5,
+          "kind": "common_circulation",
+          "link": 1,
+          "period": 0,
+          "requires": 4,
+          "to": 0
+        },
+        {
+          "amount": "34142",
+          "from": 9,
+          "kind": "goods",
+          "link": 2,
+          "period": 0,
+          "requires": null,
+          "to": 5
+        },
+        {
+          "amount": "34142",
+          "from": 5,
+          "kind": "common_circulation",
+          "link": 2,
+          "period": 0,
+          "requires": 6,
+          "to": 0
+        },
+        {
+          "amount": "85355",
+          "from": 9,
+          "kind": "goods",
+          "link": 3,
+          "period": 0,
+          "requires": null,
+          "to": 6
+        },
+        {
+          "amount": "85355",
+          "from": 6,
+          "kind": "common_circulation",
+          "link": 3,
+          "period": 0,
+          "requires": 8,
+          "to": 0
+        },
+        {
+          "amount": "204070",
+          "from": 10,
+          "kind": "goods",
+          "link": 4,
+          "period": 0,
+          "requires": null,
+          "to": 5
+        },
+        {
+          "amount": "204070",
+          "from": 5,
+          "kind": "common_circulation",
+          "link": 4,
+          "period": 0,
+          "requires": 10,
+          "to": 0
+        },
+        {
+          "amount": "510175",
+          "from": 10,
+          "kind": "goods",
+          "link": 5,
+          "period": 0,
+          "requires": null,
+          "to": 6
+        },
+        {
+          "amount": "510175",
+          "from": 6,
+          "kind": "common_circulation",
+          "link": 5,
+          "period": 0,
+          "requires": 12,
+          "to": 0
+        },
+        {
+          "amount": "693736",
+          "from": 11,
+          "kind": "goods",
+          "link": 6,
+          "period": 0,
+          "requires": null,
+          "to": 5
+        },
+        {
+          "amount": "693736",
+          "from": 5,
+          "kind": "common_circulation",
+          "link": 6,
+          "period": 0,
+          "requires": 14,
+          "to": 0
+        },
+        {
+          "amount": "1734340",
+          "from": 11,
+          "kind": "goods",
+          "link": 7,
+          "period": 0,
+          "requires": null,
+          "to": 6
+        },
+        {
+          "amount": "1734340",
+          "from": 6,
+          "kind": "common_circulation",
+          "link": 7,
+          "period": 0,
+          "requires": 16,
+          "to": 0
+        },
+        {
+          "amount": "108618",
+          "from": 12,
+          "kind": "goods",
+          "link": 8,
+          "period": 0,
+          "requires": null,
+          "to": 5
+        },
+        {
+          "amount": "108618",
+          "from": 5,
+          "kind": "common_circulation",
+          "link": 8,
+          "period": 0,
+          "requires": 18,
+          "to": 0
+        },
+        {
+          "amount": "271545",
+          "from": 12,
+          "kind": "goods",
+          "link": 9,
+          "period": 0,
+          "requires": null,
+          "to": 6
+        },
+        {
+          "amount": "271545",
+          "from": 6,
+          "kind": "common_circulation",
+          "link": 9,
+          "period": 0,
+          "requires": 20,
+          "to": 0
+        },
+        {
+          "amount": "247036",
+          "from": 14,
+          "kind": "goods",
+          "link": 10,
+          "period": 0,
+          "requires": null,
+          "to": 5
+        },
+        {
+          "amount": "247036",
+          "from": 5,
+          "kind": "common_circulation",
+          "link": 10,
+          "period": 0,
+          "requires": 22,
+          "to": 0
+        },
+        {
+          "amount": "617590",
+          "from": 14,
+          "kind": "goods",
+          "link": 11,
+          "period": 0,
+          "requires": null,
+          "to": 6
+        },
+        {
+          "amount": "617590",
+          "from": 6,
+          "kind": "common_circulation",
+          "link": 11,
+          "period": 0,
+          "requires": 24,
+          "to": 0
+        },
+        {
+          "amount": "51216",
+          "from": 15,
+          "kind": "goods",
+          "link": 12,
+          "period": 0,
+          "requires": null,
+          "to": 5
+        },
+        {
+          "amount": "51216",
+          "from": 5,
+          "kind": "common_circulation",
+          "link": 12,
+          "period": 0,
+          "requires": 26,
+          "to": 0
+        },
+        {
+          "amount": "128040",
+          "from": 15,
+          "kind": "goods",
+          "link": 13,
+          "period": 0,
+          "requires": null,
+          "to": 6
+        },
+        {
+          "amount": "128040",
+          "from": 6,
+          "kind": "common_circulation",
+          "link": 13,
+          "period": 0,
+          "requires": 28,
+          "to": 0
+        },
+        {
+          "amount": "306106",
+          "from": 16,
+          "kind": "goods",
+          "link": 14,
+          "period": 0,
+          "requires": null,
+          "to": 5
+        },
+        {
+          "amount": "306106",
+          "from": 5,
+          "kind": "common_circulation",
+          "link": 14,
+          "period": 0,
+          "requires": 30,
+          "to": 0
+        },
+        {
+          "amount": "765265",
+          "from": 16,
+          "kind": "goods",
+          "link": 15,
+          "period": 0,
+          "requires": null,
+          "to": 6
+        },
+        {
+          "amount": "765265",
+          "from": 6,
+          "kind": "common_circulation",
+          "link": 15,
+          "period": 0,
+          "requires": 32,
+          "to": 0
+        },
+        {
+          "amount": "1040602",
+          "from": 17,
+          "kind": "goods",
+          "link": 16,
+          "period": 0,
+          "requires": null,
+          "to": 5
+        },
+        {
+          "amount": "1040602",
+          "from": 5,
+          "kind": "common_circulation",
+          "link": 16,
+          "period": 0,
+          "requires": 34,
+          "to": 0
+        },
+        {
+          "amount": "2601505",
+          "from": 17,
+          "kind": "goods",
+          "link": 17,
+          "period": 0,
+          "requires": null,
+          "to": 6
+        },
+        {
+          "amount": "2601505",
+          "from": 6,
+          "kind": "common_circulation",
+          "link": 17,
+          "period": 0,
+          "requires": 36,
+          "to": 0
+        },
+        {
+          "amount": "162928",
+          "from": 18,
+          "kind": "goods",
+          "link": 18,
+          "period": 0,
+          "requires": null,
+          "to": 5
+        },
+        {
+          "amount": "162928",
+          "from": 5,
+          "kind": "common_circulation",
+          "link": 18,
+          "period": 0,
+          "requires": 38,
+          "to": 0
+        },
+        {
+          "amount": "407320",
+          "from": 18,
+          "kind": "goods",
+          "link": 19,
+          "period": 0,
+          "requires": null,
+          "to": 6
+        },
+        {
+          "amount": "407320",
+          "from": 6,
+          "kind": "common_circulation",
+          "link": 19,
+          "period": 0,
+          "requires": 40,
+          "to": 0
+        },
+        {
+          "amount": "7340485819",
+          "from": 0,
+          "kind": "provision_allocation",
+          "link": 20,
+          "period": 1,
+          "requires": null,
+          "to": 1
+        },
+        {
+          "amount": "7340485819",
+          "from": 1,
+          "kind": "goods",
+          "link": 20,
+          "period": 1,
+          "requires": null,
+          "to": 2
+        },
+        {
+          "amount": "7340485819",
+          "from": 2,
+          "kind": "common_circulation",
+          "link": 20,
+          "period": 1,
+          "requires": 43,
+          "to": 0
+        },
+        {
+          "amount": "80295418",
+          "from": 0,
+          "kind": "provision_allocation",
+          "link": 21,
+          "period": 1,
+          "requires": null,
+          "to": 1
+        },
+        {
+          "amount": "80295418",
+          "from": 1,
+          "kind": "goods",
+          "link": 21,
+          "period": 1,
+          "requires": null,
+          "to": 5
+        },
+        {
+          "amount": "80295418",
+          "from": 5,
+          "kind": "common_circulation",
+          "link": 21,
+          "period": 1,
+          "requires": 46,
+          "to": 0
+        },
+        {
+          "amount": "8134398963",
+          "from": 0,
+          "kind": "provision_allocation",
+          "link": 22,
+          "period": 2,
+          "requires": null,
+          "to": 1
+        },
+        {
+          "amount": "8134398963",
+          "from": 1,
+          "kind": "goods",
+          "link": 22,
+          "period": 2,
+          "requires": null,
+          "to": 2
+        },
+        {
+          "amount": "8134398963",
+          "from": 2,
+          "kind": "common_circulation",
+          "link": 22,
+          "period": 2,
+          "requires": 49,
+          "to": 0
+        },
+        {
+          "amount": "88949637",
+          "from": 0,
+          "kind": "provision_allocation",
+          "link": 23,
+          "period": 2,
+          "requires": null,
+          "to": 1
+        },
+        {
+          "amount": "88949637",
+          "from": 1,
+          "kind": "goods",
+          "link": 23,
+          "period": 2,
+          "requires": null,
+          "to": 5
+        },
+        {
+          "amount": "88949637",
+          "from": 5,
+          "kind": "common_circulation",
+          "link": 23,
+          "period": 2,
+          "requires": 52,
+          "to": 0
+        },
+        {
+          "amount": "7879177895",
+          "from": 0,
+          "kind": "provision_allocation",
+          "link": 24,
+          "period": 3,
+          "requires": null,
+          "to": 1
+        },
+        {
+          "amount": "7879177895",
+          "from": 1,
+          "kind": "goods",
+          "link": 24,
+          "period": 3,
+          "requires": null,
+          "to": 2
+        },
+        {
+          "amount": "7879177895",
+          "from": 2,
+          "kind": "common_circulation",
+          "link": 24,
+          "period": 3,
+          "requires": 55,
+          "to": 0
+        },
+        {
+          "amount": "86129657",
+          "from": 0,
+          "kind": "provision_allocation",
+          "link": 25,
+          "period": 3,
+          "requires": null,
+          "to": 1
+        },
+        {
+          "amount": "86129657",
+          "from": 1,
+          "kind": "goods",
+          "link": 25,
+          "period": 3,
+          "requires": null,
+          "to": 5
+        },
+        {
+          "amount": "86129657",
+          "from": 5,
+          "kind": "common_circulation",
+          "link": 25,
+          "period": 3,
+          "requires": 58,
+          "to": 0
+        },
+        {
+          "amount": "8149221189",
+          "from": 0,
+          "kind": "provision_allocation",
+          "link": 26,
+          "period": 4,
+          "requires": null,
+          "to": 1
+        },
+        {
+          "amount": "8149221189",
+          "from": 1,
+          "kind": "goods",
+          "link": 26,
+          "period": 4,
+          "requires": null,
+          "to": 2
+        },
+        {
+          "amount": "8149221189",
+          "from": 2,
+          "kind": "common_circulation",
+          "link": 26,
+          "period": 4,
+          "requires": 61,
+          "to": 0
+        },
+        {
+          "amount": "89051528",
+          "from": 0,
+          "kind": "provision_allocation",
+          "link": 27,
+          "period": 4,
+          "requires": null,
+          "to": 1
+        },
+        {
+          "amount": "89051528",
+          "from": 1,
+          "kind": "goods",
+          "link": 27,
+          "period": 4,
+          "requires": null,
+          "to": 5
+        },
+        {
+          "amount": "89051528",
+          "from": 5,
+          "kind": "common_circulation",
+          "link": 27,
+          "period": 4,
+          "requires": 64,
+          "to": 0
+        },
+        {
+          "amount": "7893494722",
+          "from": 0,
+          "kind": "provision_allocation",
+          "link": 28,
+          "period": 5,
+          "requires": null,
+          "to": 1
+        },
+        {
+          "amount": "7893494722",
+          "from": 1,
+          "kind": "goods",
+          "link": 28,
+          "period": 5,
+          "requires": null,
+          "to": 2
+        },
+        {
+          "amount": "7893494722",
+          "from": 2,
+          "kind": "common_circulation",
+          "link": 28,
+          "period": 5,
+          "requires": 67,
+          "to": 0
+        },
+        {
+          "amount": "86228023",
+          "from": 0,
+          "kind": "provision_allocation",
+          "link": 29,
+          "period": 5,
+          "requires": null,
+          "to": 1
+        },
+        {
+          "amount": "86228023",
+          "from": 1,
+          "kind": "goods",
+          "link": 29,
+          "period": 5,
+          "requires": null,
+          "to": 5
+        },
+        {
+          "amount": "86228023",
+          "from": 5,
+          "kind": "common_circulation",
+          "link": 29,
+          "period": 5,
+          "requires": 70,
+          "to": 0
+        },
+        {
+          "amount": "8163987154",
+          "from": 0,
+          "kind": "provision_allocation",
+          "link": 30,
+          "period": 6,
+          "requires": null,
+          "to": 1
+        },
+        {
+          "amount": "8163987154",
+          "from": 1,
+          "kind": "goods",
+          "link": 30,
+          "period": 6,
+          "requires": null,
+          "to": 2
+        },
+        {
+          "amount": "8163987154",
+          "from": 2,
+          "kind": "common_circulation",
+          "link": 30,
+          "period": 6,
+          "requires": 73,
+          "to": 0
+        },
+        {
+          "amount": "89152930",
+          "from": 0,
+          "kind": "provision_allocation",
+          "link": 31,
+          "period": 6,
+          "requires": null,
+          "to": 1
+        },
+        {
+          "amount": "89152930",
+          "from": 1,
+          "kind": "goods",
+          "link": 31,
+          "period": 6,
+          "requires": null,
+          "to": 5
+        },
+        {
+          "amount": "89152930",
+          "from": 5,
+          "kind": "common_circulation",
+          "link": 31,
+          "period": 6,
+          "requires": 76,
+          "to": 0
+        },
+        {
+          "amount": "164690",
+          "from": 8,
+          "kind": "goods",
+          "link": 32,
+          "period": 6,
+          "requires": null,
+          "to": 5
+        },
+        {
+          "amount": "164690",
+          "from": 5,
+          "kind": "common_circulation",
+          "link": 32,
+          "period": 6,
+          "requires": 78,
+          "to": 0
+        },
+        {
+          "amount": "411725",
+          "from": 8,
+          "kind": "goods",
+          "link": 33,
+          "period": 6,
+          "requires": null,
+          "to": 6
+        },
+        {
+          "amount": "411725",
+          "from": 6,
+          "kind": "common_circulation",
+          "link": 33,
+          "period": 6,
+          "requires": 80,
+          "to": 0
+        },
+        {
+          "amount": "8171349247",
+          "from": 0,
+          "kind": "provision_allocation",
+          "link": 34,
+          "period": 7,
+          "requires": null,
+          "to": 1
+        },
+        {
+          "amount": "8171349247",
+          "from": 1,
+          "kind": "goods",
+          "link": 34,
+          "period": 7,
+          "requires": null,
+          "to": 2
+        },
+        {
+          "amount": "8171349247",
+          "from": 2,
+          "kind": "common_circulation",
+          "link": 34,
+          "period": 7,
+          "requires": 83,
+          "to": 0
+        },
+        {
+          "amount": "89203446",
+          "from": 0,
+          "kind": "provision_allocation",
+          "link": 35,
+          "period": 7,
+          "requires": null,
+          "to": 1
+        },
+        {
+          "amount": "89203446",
+          "from": 1,
+          "kind": "goods",
+          "link": 35,
+          "period": 7,
+          "requires": null,
+          "to": 5
+        },
+        {
+          "amount": "89203446",
+          "from": 5,
+          "kind": "common_circulation",
+          "link": 35,
+          "period": 7,
+          "requires": 86,
+          "to": 0
+        },
+        {
+          "amount": "7914868465",
+          "from": 0,
+          "kind": "provision_allocation",
+          "link": 36,
+          "period": 8,
+          "requires": null,
+          "to": 1
+        },
+        {
+          "amount": "7914868465",
+          "from": 1,
+          "kind": "goods",
+          "link": 36,
+          "period": 8,
+          "requires": null,
+          "to": 2
+        },
+        {
+          "amount": "7914868465",
+          "from": 2,
+          "kind": "common_circulation",
+          "link": 36,
+          "period": 8,
+          "requires": 89,
+          "to": 0
+        },
+        {
+          "amount": "86374684",
+          "from": 0,
+          "kind": "provision_allocation",
+          "link": 37,
+          "period": 8,
+          "requires": null,
+          "to": 1
+        },
+        {
+          "amount": "86374684",
+          "from": 1,
+          "kind": "goods",
+          "link": 37,
+          "period": 8,
+          "requires": null,
+          "to": 5
+        },
+        {
+          "amount": "86374684",
+          "from": 5,
+          "kind": "common_circulation",
+          "link": 37,
+          "period": 8,
+          "requires": 92,
+          "to": 0
+        },
+        {
+          "amount": "8186031825",
+          "from": 0,
+          "kind": "provision_allocation",
+          "link": 38,
+          "period": 9,
+          "requires": null,
+          "to": 1
+        },
+        {
+          "amount": "8186031825",
+          "from": 1,
+          "kind": "goods",
+          "link": 38,
+          "period": 9,
+          "requires": null,
+          "to": 2
+        },
+        {
+          "amount": "8186031825",
+          "from": 2,
+          "kind": "common_circulation",
+          "link": 38,
+          "period": 9,
+          "requires": 95,
+          "to": 0
+        },
+        {
+          "amount": "89304111",
+          "from": 0,
+          "kind": "provision_allocation",
+          "link": 39,
+          "period": 9,
+          "requires": null,
+          "to": 1
+        },
+        {
+          "amount": "89304111",
+          "from": 1,
+          "kind": "goods",
+          "link": 39,
+          "period": 9,
+          "requires": null,
+          "to": 5
+        },
+        {
+          "amount": "89304111",
+          "from": 5,
+          "kind": "common_circulation",
+          "link": 39,
+          "period": 9,
+          "requires": 98,
+          "to": 0
+        },
+        {
+          "amount": "7929050541",
+          "from": 0,
+          "kind": "provision_allocation",
+          "link": 40,
+          "period": 10,
+          "requires": null,
+          "to": 1
+        },
+        {
+          "amount": "7929050541",
+          "from": 1,
+          "kind": "goods",
+          "link": 40,
+          "period": 10,
+          "requires": null,
+          "to": 2
+        },
+        {
+          "amount": "7929050541",
+          "from": 2,
+          "kind": "common_circulation",
+          "link": 40,
+          "period": 10,
+          "requires": 101,
+          "to": 0
+        },
+        {
+          "amount": "86471863",
+          "from": 0,
+          "kind": "provision_allocation",
+          "link": 41,
+          "period": 10,
+          "requires": null,
+          "to": 1
+        },
+        {
+          "amount": "86471863",
+          "from": 1,
+          "kind": "goods",
+          "link": 41,
+          "period": 10,
+          "requires": null,
+          "to": 5
+        },
+        {
+          "amount": "86471863",
+          "from": 5,
+          "kind": "common_circulation",
+          "link": 41,
+          "period": 10,
+          "requires": 104,
+          "to": 0
+        },
+        {
+          "amount": "8200659030",
+          "from": 0,
+          "kind": "provision_allocation",
+          "link": 42,
+          "period": 11,
+          "requires": null,
+          "to": 1
+        },
+        {
+          "amount": "8200659030",
+          "from": 1,
+          "kind": "goods",
+          "link": 42,
+          "period": 11,
+          "requires": null,
+          "to": 2
+        },
+        {
+          "amount": "8200659030",
+          "from": 2,
+          "kind": "common_circulation",
+          "link": 42,
+          "period": 11,
+          "requires": 107,
+          "to": 0
+        },
+        {
+          "amount": "89404286",
+          "from": 0,
+          "kind": "provision_allocation",
+          "link": 43,
+          "period": 11,
+          "requires": null,
+          "to": 1
+        },
+        {
+          "amount": "89404286",
+          "from": 1,
+          "kind": "goods",
+          "link": 43,
+          "period": 11,
+          "requires": null,
+          "to": 5
+        },
+        {
+          "amount": "89404286",
+          "from": 5,
+          "kind": "common_circulation",
+          "link": 43,
+          "period": 11,
+          "requires": 110,
+          "to": 0
+        },
+        {
+          "amount": "8207952151",
+          "from": 0,
+          "kind": "provision_allocation",
+          "link": 44,
+          "period": 12,
+          "requires": null,
+          "to": 1
+        },
+        {
+          "amount": "8207952151",
+          "from": 1,
+          "kind": "goods",
+          "link": 44,
+          "period": 12,
+          "requires": null,
+          "to": 2
+        },
+        {
+          "amount": "8207952151",
+          "from": 2,
+          "kind": "common_circulation",
+          "link": 44,
+          "period": 12,
+          "requires": 113,
+          "to": 0
+        },
+        {
+          "amount": "89454195",
+          "from": 0,
+          "kind": "provision_allocation",
+          "link": 45,
+          "period": 12,
+          "requires": null,
+          "to": 1
+        },
+        {
+          "amount": "89454195",
+          "from": 1,
+          "kind": "goods",
+          "link": 45,
+          "period": 12,
+          "requires": null,
+          "to": 5
+        },
+        {
+          "amount": "89454195",
+          "from": 5,
+          "kind": "common_circulation",
+          "link": 45,
+          "period": 12,
+          "requires": 116,
+          "to": 0
+        },
+        {
+          "amount": "7685216571",
+          "from": 0,
+          "kind": "provision_allocation",
+          "link": 46,
+          "period": 13,
+          "requires": null,
+          "to": 1
+        },
+        {
+          "amount": "7685216571",
+          "from": 1,
+          "kind": "goods",
+          "link": 46,
+          "period": 13,
+          "requires": null,
+          "to": 2
+        },
+        {
+          "amount": "7685216571",
+          "from": 2,
+          "kind": "common_circulation",
+          "link": 46,
+          "period": 13,
+          "requires": 119,
+          "to": 0
+        },
+        {
+          "amount": "83729530",
+          "from": 0,
+          "kind": "provision_allocation",
+          "link": 47,
+          "period": 13,
+          "requires": null,
+          "to": 1
+        },
+        {
+          "amount": "83729530",
+          "from": 1,
+          "kind": "goods",
+          "link": 47,
+          "period": 13,
+          "requires": null,
+          "to": 5
+        },
+        {
+          "amount": "83729530",
+          "from": 5,
+          "kind": "common_circulation",
+          "link": 47,
+          "period": 13,
+          "requires": 122,
+          "to": 0
+        },
+        {
+          "amount": "8222497097",
+          "from": 0,
+          "kind": "provision_allocation",
+          "link": 48,
+          "period": 14,
+          "requires": null,
+          "to": 1
+        },
+        {
+          "amount": "8222497097",
+          "from": 1,
+          "kind": "goods",
+          "link": 48,
+          "period": 14,
+          "requires": null,
+          "to": 2
+        },
+        {
+          "amount": "8222497097",
+          "from": 2,
+          "kind": "common_circulation",
+          "link": 48,
+          "period": 14,
+          "requires": 125,
+          "to": 0
+        },
+        {
+          "amount": "89553644",
+          "from": 0,
+          "kind": "provision_allocation",
+          "link": 49,
+          "period": 14,
+          "requires": null,
+          "to": 1
+        },
+        {
+          "amount": "89553644",
+          "from": 1,
+          "kind": "goods",
+          "link": 49,
+          "period": 14,
+          "requires": null,
+          "to": 5
+        },
+        {
+          "amount": "89553644",
+          "from": 5,
+          "kind": "common_circulation",
+          "link": 49,
+          "period": 14,
+          "requires": 128,
+          "to": 0
+        },
+        {
+          "amount": "7964273549",
+          "from": 0,
+          "kind": "provision_allocation",
+          "link": 50,
+          "period": 15,
+          "requires": null,
+          "to": 1
+        },
+        {
+          "amount": "7964273549",
+          "from": 1,
+          "kind": "goods",
+          "link": 50,
+          "period": 15,
+          "requires": null,
+          "to": 2
+        },
+        {
+          "amount": "7964273549",
+          "from": 2,
+          "kind": "common_circulation",
+          "link": 50,
+          "period": 15,
+          "requires": 131,
+          "to": 0
+        },
+        {
+          "amount": "86712761",
+          "from": 0,
+          "kind": "provision_allocation",
+          "link": 51,
+          "period": 15,
+          "requires": null,
+          "to": 1
+        },
+        {
+          "amount": "86712761",
+          "from": 1,
+          "kind": "goods",
+          "link": 51,
+          "period": 15,
+          "requires": null,
+          "to": 5
+        },
+        {
+          "amount": "86712761",
+          "from": 5,
+          "kind": "common_circulation",
+          "link": 51,
+          "period": 15,
+          "requires": 134,
+          "to": 0
+        },
+        {
+          "amount": "8236987962",
+          "from": 0,
+          "kind": "provision_allocation",
+          "link": 52,
+          "period": 16,
+          "requires": null,
+          "to": 1
+        },
+        {
+          "amount": "8236987962",
+          "from": 1,
+          "kind": "goods",
+          "link": 52,
+          "period": 16,
+          "requires": null,
+          "to": 2
+        },
+        {
+          "amount": "8236987962",
+          "from": 2,
+          "kind": "common_circulation",
+          "link": 52,
+          "period": 16,
+          "requires": 137,
+          "to": 0
+        },
+        {
+          "amount": "89652612",
+          "from": 0,
+          "kind": "provision_allocation",
+          "link": 53,
+          "period": 16,
+          "requires": null,
+          "to": 1
+        },
+        {
+          "amount": "89652612",
+          "from": 1,
+          "kind": "goods",
+          "link": 53,
+          "period": 16,
+          "requires": null,
+          "to": 5
+        },
+        {
+          "amount": "89652612",
+          "from": 5,
+          "kind": "common_circulation",
+          "link": 53,
+          "period": 16,
+          "requires": 140,
+          "to": 0
+        },
+        {
+          "amount": "7978270715",
+          "from": 0,
+          "kind": "provision_allocation",
+          "link": 54,
+          "period": 17,
+          "requires": null,
+          "to": 1
+        },
+        {
+          "amount": "7978270715",
+          "from": 1,
+          "kind": "goods",
+          "link": 54,
+          "period": 17,
+          "requires": null,
+          "to": 2
+        },
+        {
+          "amount": "7978270715",
+          "from": 2,
+          "kind": "common_circulation",
+          "link": 54,
+          "period": 17,
+          "requires": 143,
+          "to": 0
+        },
+        {
+          "amount": "86808304",
+          "from": 0,
+          "kind": "provision_allocation",
+          "link": 55,
+          "period": 17,
+          "requires": null,
+          "to": 1
+        },
+        {
+          "amount": "86808304",
+          "from": 1,
+          "kind": "goods",
+          "link": 55,
+          "period": 17,
+          "requires": null,
+          "to": 5
+        },
+        {
+          "amount": "86808304",
+          "from": 5,
+          "kind": "common_circulation",
+          "link": 55,
+          "period": 17,
+          "requires": 146,
+          "to": 0
+        },
+        {
+          "amount": "8251424825",
+          "from": 0,
+          "kind": "provision_allocation",
+          "link": 56,
+          "period": 18,
+          "requires": null,
+          "to": 1
+        },
+        {
+          "amount": "8251424825",
+          "from": 1,
+          "kind": "goods",
+          "link": 56,
+          "period": 18,
+          "requires": null,
+          "to": 2
+        },
+        {
+          "amount": "8251424825",
+          "from": 2,
+          "kind": "common_circulation",
+          "link": 56,
+          "period": 18,
+          "requires": 149,
+          "to": 0
+        },
+        {
+          "amount": "89751098",
+          "from": 0,
+          "kind": "provision_allocation",
+          "link": 57,
+          "period": 18,
+          "requires": null,
+          "to": 1
+        },
+        {
+          "amount": "89751098",
+          "from": 1,
+          "kind": "goods",
+          "link": 57,
+          "period": 18,
+          "requires": null,
+          "to": 5
+        },
+        {
+          "amount": "89751098",
+          "from": 5,
+          "kind": "common_circulation",
+          "link": 57,
+          "period": 18,
+          "requires": 152,
+          "to": 0
+        },
+        {
+          "amount": "8258623216",
+          "from": 0,
+          "kind": "provision_allocation",
+          "link": 58,
+          "period": 19,
+          "requires": null,
+          "to": 1
+        },
+        {
+          "amount": "8258623216",
+          "from": 1,
+          "kind": "goods",
+          "link": 58,
+          "period": 19,
+          "requires": null,
+          "to": 2
+        },
+        {
+          "amount": "8258623216",
+          "from": 2,
+          "kind": "common_circulation",
+          "link": 58,
+          "period": 19,
+          "requires": 155,
+          "to": 0
+        },
+        {
+          "amount": "89800165",
+          "from": 0,
+          "kind": "provision_allocation",
+          "link": 59,
+          "period": 19,
+          "requires": null,
+          "to": 1
+        },
+        {
+          "amount": "89800165",
+          "from": 1,
+          "kind": "goods",
+          "link": 59,
+          "period": 19,
+          "requires": null,
+          "to": 5
+        },
+        {
+          "amount": "89800165",
+          "from": 5,
+          "kind": "common_circulation",
+          "link": 59,
+          "period": 19,
+          "requires": 158,
+          "to": 0
+        },
+        {
+          "amount": "7999169269",
+          "from": 0,
+          "kind": "provision_allocation",
+          "link": 60,
+          "period": 20,
+          "requires": null,
+          "to": 1
+        },
+        {
+          "amount": "7999169269",
+          "from": 1,
+          "kind": "goods",
+          "link": 60,
+          "period": 20,
+          "requires": null,
+          "to": 2
+        },
+        {
+          "amount": "7999169269",
+          "from": 2,
+          "kind": "common_circulation",
+          "link": 60,
+          "period": 20,
+          "requires": 161,
+          "to": 0
+        },
+        {
+          "amount": "86950750",
+          "from": 0,
+          "kind": "provision_allocation",
+          "link": 61,
+          "period": 20,
+          "requires": null,
+          "to": 1
+        },
+        {
+          "amount": "86950750",
+          "from": 1,
+          "kind": "goods",
+          "link": 61,
+          "period": 20,
+          "requires": null,
+          "to": 5
+        },
+        {
+          "amount": "86950750",
+          "from": 5,
+          "kind": "common_circulation",
+          "link": 61,
+          "period": 20,
+          "requires": 164,
+          "to": 0
+        },
+        {
+          "amount": "8272979837",
+          "from": 0,
+          "kind": "provision_allocation",
+          "link": 62,
+          "period": 21,
+          "requires": null,
+          "to": 1
+        },
+        {
+          "amount": "8272979837",
+          "from": 1,
+          "kind": "goods",
+          "link": 62,
+          "period": 21,
+          "requires": null,
+          "to": 2
+        },
+        {
+          "amount": "8272979837",
+          "from": 2,
+          "kind": "common_circulation",
+          "link": 62,
+          "period": 21,
+          "requires": 167,
+          "to": 0
+        },
+        {
+          "amount": "89897932",
+          "from": 0,
+          "kind": "provision_allocation",
+          "link": 63,
+          "period": 21,
+          "requires": null,
+          "to": 1
+        },
+        {
+          "amount": "89897932",
+          "from": 1,
+          "kind": "goods",
+          "link": 63,
+          "period": 21,
+          "requires": null,
+          "to": 5
+        },
+        {
+          "amount": "89897932",
+          "from": 5,
+          "kind": "common_circulation",
+          "link": 63,
+          "period": 21,
+          "requires": 170,
+          "to": 0
+        },
+        {
+          "amount": "8013036991",
+          "from": 0,
+          "kind": "provision_allocation",
+          "link": 64,
+          "period": 22,
+          "requires": null,
+          "to": 1
+        },
+        {
+          "amount": "8013036991",
+          "from": 1,
+          "kind": "goods",
+          "link": 64,
+          "period": 22,
+          "requires": null,
+          "to": 2
+        },
+        {
+          "amount": "8013036991",
+          "from": 2,
+          "kind": "common_circulation",
+          "link": 64,
+          "period": 22,
+          "requires": 173,
+          "to": 0
+        },
+        {
+          "amount": "87045135",
+          "from": 0,
+          "kind": "provision_allocation",
+          "link": 65,
+          "period": 22,
+          "requires": null,
+          "to": 1
+        },
+        {
+          "amount": "87045135",
+          "from": 1,
+          "kind": "goods",
+          "link": 65,
+          "period": 22,
+          "requires": null,
+          "to": 5
+        },
+        {
+          "amount": "87045135",
+          "from": 5,
+          "kind": "common_circulation",
+          "link": 65,
+          "period": 22,
+          "requires": 176,
+          "to": 0
+        },
+        {
+          "amount": "8287283420",
+          "from": 0,
+          "kind": "provision_allocation",
+          "link": 66,
+          "period": 23,
+          "requires": null,
+          "to": 1
+        },
+        {
+          "amount": "8287283420",
+          "from": 1,
+          "kind": "goods",
+          "link": 66,
+          "period": 23,
+          "requires": null,
+          "to": 2
+        },
+        {
+          "amount": "8287283420",
+          "from": 2,
+          "kind": "common_circulation",
+          "link": 66,
+          "period": 23,
+          "requires": 179,
+          "to": 0
+        },
+        {
+          "amount": "89995229",
+          "from": 0,
+          "kind": "provision_allocation",
+          "link": 67,
+          "period": 23,
+          "requires": null,
+          "to": 1
+        },
+        {
+          "amount": "89995229",
+          "from": 1,
+          "kind": "goods",
+          "link": 67,
+          "period": 23,
+          "requires": null,
+          "to": 5
+        },
+        {
+          "amount": "89995229",
+          "from": 5,
+          "kind": "common_circulation",
+          "link": 67,
+          "period": 23,
+          "requires": 182,
+          "to": 0
+        },
+        {
+          "amount": "8294415332",
+          "from": 0,
+          "kind": "provision_allocation",
+          "link": 68,
+          "period": 24,
+          "requires": null,
+          "to": 1
+        },
+        {
+          "amount": "8294415332",
+          "from": 1,
+          "kind": "goods",
+          "link": 68,
+          "period": 24,
+          "requires": null,
+          "to": 2
+        },
+        {
+          "amount": "8294415332",
+          "from": 2,
+          "kind": "common_circulation",
+          "link": 68,
+          "period": 24,
+          "requires": 185,
+          "to": 0
+        },
+        {
+          "amount": "90043699",
+          "from": 0,
+          "kind": "provision_allocation",
+          "link": 69,
+          "period": 24,
+          "requires": null,
+          "to": 1
+        },
+        {
+          "amount": "90043699",
+          "from": 1,
+          "kind": "goods",
+          "link": 69,
+          "period": 24,
+          "requires": null,
+          "to": 5
+        },
+        {
+          "amount": "90043699",
+          "from": 5,
+          "kind": "common_circulation",
+          "link": 69,
+          "period": 24,
+          "requires": 188,
+          "to": 0
+        },
+        {
+          "amount": "7498160008",
+          "from": 0,
+          "kind": "provision_allocation",
+          "link": 70,
+          "period": 25,
+          "requires": null,
+          "to": 1
+        },
+        {
+          "amount": "7498160008",
+          "from": 1,
+          "kind": "goods",
+          "link": 70,
+          "period": 25,
+          "requires": null,
+          "to": 2
+        },
+        {
+          "amount": "7498160008",
+          "from": 2,
+          "kind": "common_circulation",
+          "link": 70,
+          "period": 25,
+          "requires": 191,
+          "to": 0
+        },
+        {
+          "amount": "81373466",
+          "from": 0,
+          "kind": "provision_allocation",
+          "link": 71,
+          "period": 25,
+          "requires": null,
+          "to": 1
+        },
+        {
+          "amount": "81373466",
+          "from": 1,
+          "kind": "goods",
+          "link": 71,
+          "period": 25,
+          "requires": null,
+          "to": 5
+        },
+        {
+          "amount": "81373466",
+          "from": 5,
+          "kind": "common_circulation",
+          "link": 71,
+          "period": 25,
+          "requires": 194,
+          "to": 0
+        },
+        {
+          "amount": "8308640124",
+          "from": 0,
+          "kind": "provision_allocation",
+          "link": 72,
+          "period": 26,
+          "requires": null,
+          "to": 1
+        },
+        {
+          "amount": "8308640124",
+          "from": 1,
+          "kind": "goods",
+          "link": 72,
+          "period": 26,
+          "requires": null,
+          "to": 2
+        },
+        {
+          "amount": "8308640124",
+          "from": 2,
+          "kind": "common_circulation",
+          "link": 72,
+          "period": 26,
+          "requires": 197,
+          "to": 0
+        },
+        {
+          "amount": "90140289",
+          "from": 0,
+          "kind": "provision_allocation",
+          "link": 73,
+          "period": 26,
+          "requires": null,
+          "to": 1
+        },
+        {
+          "amount": "90140289",
+          "from": 1,
+          "kind": "goods",
+          "link": 73,
+          "period": 26,
+          "requires": null,
+          "to": 5
+        },
+        {
+          "amount": "90140289",
+          "from": 5,
+          "kind": "common_circulation",
+          "link": 73,
+          "period": 26,
+          "requires": 200,
+          "to": 0
+        },
+        {
+          "amount": "8047483397",
+          "from": 0,
+          "kind": "provision_allocation",
+          "link": 74,
+          "period": 27,
+          "requires": null,
+          "to": 1
+        },
+        {
+          "amount": "8047483397",
+          "from": 1,
+          "kind": "goods",
+          "link": 74,
+          "period": 27,
+          "requires": null,
+          "to": 2
+        },
+        {
+          "amount": "8047483397",
+          "from": 2,
+          "kind": "common_circulation",
+          "link": 74,
+          "period": 27,
+          "requires": 203,
+          "to": 0
+        },
+        {
+          "amount": "87279104",
+          "from": 0,
+          "kind": "provision_allocation",
+          "link": 75,
+          "period": 27,
+          "requires": null,
+          "to": 1
+        },
+        {
+          "amount": "87279104",
+          "from": 1,
+          "kind": "goods",
+          "link": 75,
+          "period": 27,
+          "requires": null,
+          "to": 5
+        },
+        {
+          "amount": "87279104",
+          "from": 5,
+          "kind": "common_circulation",
+          "link": 75,
+          "period": 27,
+          "requires": 206,
+          "to": 0
+        },
+        {
+          "amount": "8322812611",
+          "from": 0,
+          "kind": "provision_allocation",
+          "link": 76,
+          "period": 28,
+          "requires": null,
+          "to": 1
+        },
+        {
+          "amount": "8322812611",
+          "from": 1,
+          "kind": "goods",
+          "link": 76,
+          "period": 28,
+          "requires": null,
+          "to": 2
+        },
+        {
+          "amount": "8322812611",
+          "from": 2,
+          "kind": "common_circulation",
+          "link": 76,
+          "period": 28,
+          "requires": 209,
+          "to": 0
+        },
+        {
+          "amount": "90236408",
+          "from": 0,
+          "kind": "provision_allocation",
+          "link": 77,
+          "period": 28,
+          "requires": null,
+          "to": 1
+        },
+        {
+          "amount": "90236408",
+          "from": 1,
+          "kind": "goods",
+          "link": 77,
+          "period": 28,
+          "requires": null,
+          "to": 5
+        },
+        {
+          "amount": "90236408",
+          "from": 5,
+          "kind": "common_circulation",
+          "link": 77,
+          "period": 28,
+          "requires": 212,
+          "to": 0
+        },
+        {
+          "amount": "8061173473",
+          "from": 0,
+          "kind": "provision_allocation",
+          "link": 78,
+          "period": 29,
+          "requires": null,
+          "to": 1
+        },
+        {
+          "amount": "8061173473",
+          "from": 1,
+          "kind": "goods",
+          "link": 78,
+          "period": 29,
+          "requires": null,
+          "to": 2
+        },
+        {
+          "amount": "8061173473",
+          "from": 2,
+          "kind": "common_circulation",
+          "link": 78,
+          "period": 29,
+          "requires": 215,
+          "to": 0
+        },
+        {
+          "amount": "87371893",
+          "from": 0,
+          "kind": "provision_allocation",
+          "link": 79,
+          "period": 29,
+          "requires": null,
+          "to": 1
+        },
+        {
+          "amount": "87371893",
+          "from": 1,
+          "kind": "goods",
+          "link": 79,
+          "period": 29,
+          "requires": null,
+          "to": 5
+        },
+        {
+          "amount": "87371893",
+          "from": 5,
+          "kind": "common_circulation",
+          "link": 79,
+          "period": 29,
+          "requires": 218,
+          "to": 0
+        },
+        {
+          "amount": "8336933183",
+          "from": 0,
+          "kind": "provision_allocation",
+          "link": 80,
+          "period": 30,
+          "requires": null,
+          "to": 1
+        },
+        {
+          "amount": "8336933183",
+          "from": 1,
+          "kind": "goods",
+          "link": 80,
+          "period": 30,
+          "requires": null,
+          "to": 2
+        },
+        {
+          "amount": "8336933183",
+          "from": 2,
+          "kind": "common_circulation",
+          "link": 80,
+          "period": 30,
+          "requires": 221,
+          "to": 0
+        },
+        {
+          "amount": "90332057",
+          "from": 0,
+          "kind": "provision_allocation",
+          "link": 81,
+          "period": 30,
+          "requires": null,
+          "to": 1
+        },
+        {
+          "amount": "90332057",
+          "from": 1,
+          "kind": "goods",
+          "link": 81,
+          "period": 30,
+          "requires": null,
+          "to": 5
+        },
+        {
+          "amount": "90332057",
+          "from": 5,
+          "kind": "common_circulation",
+          "link": 81,
+          "period": 30,
+          "requires": 224,
+          "to": 0
+        },
+        {
+          "amount": "8343974159",
+          "from": 0,
+          "kind": "provision_allocation",
+          "link": 82,
+          "period": 31,
+          "requires": null,
+          "to": 1
+        },
+        {
+          "amount": "8343974159",
+          "from": 1,
+          "kind": "goods",
+          "link": 82,
+          "period": 31,
+          "requires": null,
+          "to": 2
+        },
+        {
+          "amount": "8343974159",
+          "from": 2,
+          "kind": "common_circulation",
+          "link": 82,
+          "period": 31,
+          "requires": 227,
+          "to": 0
+        },
+        {
+          "amount": "90379709",
+          "from": 0,
+          "kind": "provision_allocation",
+          "link": 83,
+          "period": 31,
+          "requires": null,
+          "to": 1
+        },
+        {
+          "amount": "90379709",
+          "from": 1,
+          "kind": "goods",
+          "link": 83,
+          "period": 31,
+          "requires": null,
+          "to": 5
+        },
+        {
+          "amount": "90379709",
+          "from": 5,
+          "kind": "common_circulation",
+          "link": 83,
+          "period": 31,
+          "requires": 230,
+          "to": 0
+        },
+        {
+          "amount": "8081615316",
+          "from": 0,
+          "kind": "provision_allocation",
+          "link": 84,
+          "period": 32,
+          "requires": null,
+          "to": 1
+        },
+        {
+          "amount": "8081615316",
+          "from": 1,
+          "kind": "goods",
+          "link": 84,
+          "period": 32,
+          "requires": null,
+          "to": 2
+        },
+        {
+          "amount": "8081615316",
+          "from": 2,
+          "kind": "common_circulation",
+          "link": 84,
+          "period": 32,
+          "requires": 233,
+          "to": 0
+        },
+        {
+          "amount": "87510239",
+          "from": 0,
+          "kind": "provision_allocation",
+          "link": 85,
+          "period": 32,
+          "requires": null,
+          "to": 1
+        },
+        {
+          "amount": "87510239",
+          "from": 1,
+          "kind": "goods",
+          "link": 85,
+          "period": 32,
+          "requires": null,
+          "to": 5
+        },
+        {
+          "amount": "87510239",
+          "from": 5,
+          "kind": "common_circulation",
+          "link": 85,
+          "period": 32,
+          "requires": 236,
+          "to": 0
+        },
+        {
+          "amount": "8358017795",
+          "from": 0,
+          "kind": "provision_allocation",
+          "link": 86,
+          "period": 33,
+          "requires": null,
+          "to": 1
+        },
+        {
+          "amount": "8358017795",
+          "from": 1,
+          "kind": "goods",
+          "link": 86,
+          "period": 33,
+          "requires": null,
+          "to": 2
+        },
+        {
+          "amount": "8358017795",
+          "from": 2,
+          "kind": "common_circulation",
+          "link": 86,
+          "period": 33,
+          "requires": 239,
+          "to": 0
+        },
+        {
+          "amount": "90474667",
+          "from": 0,
+          "kind": "provision_allocation",
+          "link": 87,
+          "period": 33,
+          "requires": null,
+          "to": 1
+        },
+        {
+          "amount": "90474667",
+          "from": 1,
+          "kind": "goods",
+          "link": 87,
+          "period": 33,
+          "requires": null,
+          "to": 5
+        },
+        {
+          "amount": "90474667",
+          "from": 5,
+          "kind": "common_circulation",
+          "link": 87,
+          "period": 33,
+          "requires": 242,
+          "to": 0
+        },
+        {
+          "amount": "8095181090",
+          "from": 0,
+          "kind": "provision_allocation",
+          "link": 88,
+          "period": 34,
+          "requires": null,
+          "to": 1
+        },
+        {
+          "amount": "8095181090",
+          "from": 1,
+          "kind": "goods",
+          "link": 88,
+          "period": 34,
+          "requires": null,
+          "to": 2
+        },
+        {
+          "amount": "8095181090",
+          "from": 2,
+          "kind": "common_circulation",
+          "link": 88,
+          "period": 34,
+          "requires": 245,
+          "to": 0
+        },
+        {
+          "amount": "87601908",
+          "from": 0,
+          "kind": "provision_allocation",
+          "link": 89,
+          "period": 34,
+          "requires": null,
+          "to": 1
+        },
+        {
+          "amount": "87601908",
+          "from": 1,
+          "kind": "goods",
+          "link": 89,
+          "period": 34,
+          "requires": null,
+          "to": 5
+        },
+        {
+          "amount": "87601908",
+          "from": 5,
+          "kind": "common_circulation",
+          "link": 89,
+          "period": 34,
+          "requires": 248,
+          "to": 0
+        },
+        {
+          "amount": "8372010412",
+          "from": 0,
+          "kind": "provision_allocation",
+          "link": 90,
+          "period": 35,
+          "requires": null,
+          "to": 1
+        },
+        {
+          "amount": "8372010412",
+          "from": 1,
+          "kind": "goods",
+          "link": 90,
+          "period": 35,
+          "requires": null,
+          "to": 2
+        },
+        {
+          "amount": "8372010412",
+          "from": 2,
+          "kind": "common_circulation",
+          "link": 90,
+          "period": 35,
+          "requires": 251,
+          "to": 0
+        },
+        {
+          "amount": "90569162",
+          "from": 0,
+          "kind": "provision_allocation",
+          "link": 91,
+          "period": 35,
+          "requires": null,
+          "to": 1
+        },
+        {
+          "amount": "90569162",
+          "from": 1,
+          "kind": "goods",
+          "link": 91,
+          "period": 35,
+          "requires": null,
+          "to": 5
+        },
+        {
+          "amount": "90569162",
+          "from": 5,
+          "kind": "common_circulation",
+          "link": 91,
+          "period": 35,
+          "requires": 254,
+          "to": 0
+        },
+        {
+          "amount": "8378987641",
+          "from": 0,
+          "kind": "provision_allocation",
+          "link": 92,
+          "period": 36,
+          "requires": null,
+          "to": 1
+        },
+        {
+          "amount": "8378987641",
+          "from": 1,
+          "kind": "goods",
+          "link": 92,
+          "period": 36,
+          "requires": null,
+          "to": 2
+        },
+        {
+          "amount": "8378987641",
+          "from": 2,
+          "kind": "common_circulation",
+          "link": 92,
+          "period": 36,
+          "requires": 257,
+          "to": 0
+        },
+        {
+          "amount": "90616236",
+          "from": 0,
+          "kind": "provision_allocation",
+          "link": 93,
+          "period": 36,
+          "requires": null,
+          "to": 1
+        },
+        {
+          "amount": "90616236",
+          "from": 1,
+          "kind": "goods",
+          "link": 93,
+          "period": 36,
+          "requires": null,
+          "to": 5
+        },
+        {
+          "amount": "90616236",
+          "from": 5,
+          "kind": "common_circulation",
+          "link": 93,
+          "period": 36,
+          "requires": 260,
+          "to": 0
+        },
+        {
+          "amount": "7574408697",
+          "from": 0,
+          "kind": "provision_allocation",
+          "link": 94,
+          "period": 37,
+          "requires": null,
+          "to": 1
+        },
+        {
+          "amount": "7574408697",
+          "from": 1,
+          "kind": "goods",
+          "link": 94,
+          "period": 37,
+          "requires": null,
+          "to": 2
+        },
+        {
+          "amount": "7574408697",
+          "from": 2,
+          "kind": "common_circulation",
+          "link": 94,
+          "period": 37,
+          "requires": 263,
+          "to": 0
+        },
+        {
+          "amount": "81988346",
+          "from": 0,
+          "kind": "provision_allocation",
+          "link": 95,
+          "period": 37,
+          "requires": null,
+          "to": 1
+        },
+        {
+          "amount": "81988346",
+          "from": 1,
+          "kind": "goods",
+          "link": 95,
+          "period": 37,
+          "requires": null,
+          "to": 5
+        },
+        {
+          "amount": "81988346",
+          "from": 5,
+          "kind": "common_circulation",
+          "link": 95,
+          "period": 37,
+          "requires": 266,
+          "to": 0
+        },
+        {
+          "amount": "8392904775",
+          "from": 0,
+          "kind": "provision_allocation",
+          "link": 96,
+          "period": 38,
+          "requires": null,
+          "to": 1
+        },
+        {
+          "amount": "8392904775",
+          "from": 1,
+          "kind": "goods",
+          "link": 96,
+          "period": 38,
+          "requires": null,
+          "to": 2
+        },
+        {
+          "amount": "8392904775",
+          "from": 2,
+          "kind": "common_circulation",
+          "link": 96,
+          "period": 38,
+          "requires": 269,
+          "to": 0
+        },
+        {
+          "amount": "90929287",
+          "from": 0,
+          "kind": "provision_allocation",
+          "link": 97,
+          "period": 38,
+          "requires": null,
+          "to": 1
+        },
+        {
+          "amount": "90929287",
+          "from": 1,
+          "kind": "goods",
+          "link": 97,
+          "period": 38,
+          "requires": null,
+          "to": 5
+        },
+        {
+          "amount": "90929287",
+          "from": 5,
+          "kind": "common_circulation",
+          "link": 97,
+          "period": 38,
+          "requires": 272,
+          "to": 0
+        },
+        {
+          "amount": "8128881782",
+          "from": 0,
+          "kind": "provision_allocation",
+          "link": 98,
+          "period": 39,
+          "requires": null,
+          "to": 1
+        },
+        {
+          "amount": "8128881782",
+          "from": 1,
+          "kind": "goods",
+          "link": 98,
+          "period": 39,
+          "requires": null,
+          "to": 2
+        },
+        {
+          "amount": "8128881782",
+          "from": 2,
+          "kind": "common_circulation",
+          "link": 98,
+          "period": 39,
+          "requires": 275,
+          "to": 0
+        },
+        {
+          "amount": "88147418",
+          "from": 0,
+          "kind": "provision_allocation",
+          "link": 99,
+          "period": 39,
+          "requires": null,
+          "to": 1
+        },
+        {
+          "amount": "88147418",
+          "from": 1,
+          "kind": "goods",
+          "link": 99,
+          "period": 39,
+          "requires": null,
+          "to": 5
+        },
+        {
+          "amount": "88147418",
+          "from": 5,
+          "kind": "common_circulation",
+          "link": 99,
+          "period": 39,
+          "requires": 278,
+          "to": 0
+        },
+        {
+          "amount": "8406772010",
+          "from": 0,
+          "kind": "provision_allocation",
+          "link": 100,
+          "period": 40,
+          "requires": null,
+          "to": 1
+        },
+        {
+          "amount": "8406772010",
+          "from": 1,
+          "kind": "goods",
+          "link": 100,
+          "period": 40,
+          "requires": null,
+          "to": 2
+        },
+        {
+          "amount": "8406772010",
+          "from": 2,
+          "kind": "common_circulation",
+          "link": 100,
+          "period": 40,
+          "requires": 281,
+          "to": 0
+        },
+        {
+          "amount": "91241949",
+          "from": 0,
+          "kind": "provision_allocation",
+          "link": 101,
+          "period": 40,
+          "requires": null,
+          "to": 1
+        },
+        {
+          "amount": "91241949",
+          "from": 1,
+          "kind": "goods",
+          "link": 101,
+          "period": 40,
+          "requires": null,
+          "to": 5
+        },
+        {
+          "amount": "91241949",
+          "from": 5,
+          "kind": "common_circulation",
+          "link": 101,
+          "period": 40,
+          "requires": 284,
+          "to": 0
+        },
+        {
+          "amount": "8142277937",
+          "from": 0,
+          "kind": "provision_allocation",
+          "link": 102,
+          "period": 41,
+          "requires": null,
+          "to": 1
+        },
+        {
+          "amount": "8142277937",
+          "from": 1,
+          "kind": "goods",
+          "link": 102,
+          "period": 41,
+          "requires": null,
+          "to": 2
+        },
+        {
+          "amount": "8142277937",
+          "from": 2,
+          "kind": "common_circulation",
+          "link": 102,
+          "period": 41,
+          "requires": 287,
+          "to": 0
+        },
+        {
+          "amount": "88449811",
+          "from": 0,
+          "kind": "provision_allocation",
+          "link": 103,
+          "period": 41,
+          "requires": null,
+          "to": 1
+        },
+        {
+          "amount": "88449811",
+          "from": 1,
+          "kind": "goods",
+          "link": 103,
+          "period": 41,
+          "requires": null,
+          "to": 5
+        },
+        {
+          "amount": "88449811",
+          "from": 5,
+          "kind": "common_circulation",
+          "link": 103,
+          "period": 41,
+          "requires": 290,
+          "to": 0
+        },
+        {
+          "amount": "8420590158",
+          "from": 0,
+          "kind": "provision_allocation",
+          "link": 104,
+          "period": 42,
+          "requires": null,
+          "to": 1
+        },
+        {
+          "amount": "8420590158",
+          "from": 1,
+          "kind": "goods",
+          "link": 104,
+          "period": 42,
+          "requires": null,
+          "to": 2
+        },
+        {
+          "amount": "8420590158",
+          "from": 2,
+          "kind": "common_circulation",
+          "link": 104,
+          "period": 42,
+          "requires": 293,
+          "to": 0
+        },
+        {
+          "amount": "91554232",
+          "from": 0,
+          "kind": "provision_allocation",
+          "link": 105,
+          "period": 42,
+          "requires": null,
+          "to": 1
+        },
+        {
+          "amount": "91554232",
+          "from": 1,
+          "kind": "goods",
+          "link": 105,
+          "period": 42,
+          "requires": null,
+          "to": 5
+        },
+        {
+          "amount": "91554232",
+          "from": 5,
+          "kind": "common_circulation",
+          "link": 105,
+          "period": 42,
+          "requires": 296,
+          "to": 0
+        },
+        {
+          "amount": "8427480806",
+          "from": 0,
+          "kind": "provision_allocation",
+          "link": 106,
+          "period": 43,
+          "requires": null,
+          "to": 1
+        },
+        {
+          "amount": "8427480806",
+          "from": 1,
+          "kind": "goods",
+          "link": 106,
+          "period": 43,
+          "requires": null,
+          "to": 2
+        },
+        {
+          "amount": "8427480806",
+          "from": 2,
+          "kind": "common_circulation",
+          "link": 106,
+          "period": 43,
+          "requires": 299,
+          "to": 0
+        },
+        {
+          "amount": "91710225",
+          "from": 0,
+          "kind": "provision_allocation",
+          "link": 107,
+          "period": 43,
+          "requires": null,
+          "to": 1
+        },
+        {
+          "amount": "91710225",
+          "from": 1,
+          "kind": "goods",
+          "link": 107,
+          "period": 43,
+          "requires": null,
+          "to": 5
+        },
+        {
+          "amount": "91710225",
+          "from": 5,
+          "kind": "common_circulation",
+          "link": 107,
+          "period": 43,
+          "requires": 302,
+          "to": 0
+        },
+        {
+          "amount": "8162283115",
+          "from": 0,
+          "kind": "provision_allocation",
+          "link": 108,
+          "period": 44,
+          "requires": null,
+          "to": 1
+        },
+        {
+          "amount": "8162283115",
+          "from": 1,
+          "kind": "goods",
+          "link": 108,
+          "period": 44,
+          "requires": null,
+          "to": 2
+        },
+        {
+          "amount": "8162283115",
+          "from": 2,
+          "kind": "common_circulation",
+          "link": 108,
+          "period": 44,
+          "requires": 305,
+          "to": 0
+        },
+        {
+          "amount": "88902703",
+          "from": 0,
+          "kind": "provision_allocation",
+          "link": 109,
+          "period": 44,
+          "requires": null,
+          "to": 1
+        },
+        {
+          "amount": "88902703",
+          "from": 1,
+          "kind": "goods",
+          "link": 109,
+          "period": 44,
+          "requires": null,
+          "to": 5
+        },
+        {
+          "amount": "88902703",
+          "from": 5,
+          "kind": "common_circulation",
+          "link": 109,
+          "period": 44,
+          "requires": 308,
+          "to": 0
+        },
+        {
+          "amount": "8441225565",
+          "from": 0,
+          "kind": "provision_allocation",
+          "link": 110,
+          "period": 45,
+          "requires": null,
+          "to": 1
+        },
+        {
+          "amount": "8441225565",
+          "from": 1,
+          "kind": "goods",
+          "link": 110,
+          "period": 45,
+          "requires": null,
+          "to": 2
+        },
+        {
+          "amount": "8441225565",
+          "from": 2,
+          "kind": "common_circulation",
+          "link": 110,
+          "period": 45,
+          "requires": 311,
+          "to": 0
+        },
+        {
+          "amount": "92021935",
+          "from": 0,
+          "kind": "provision_allocation",
+          "link": 111,
+          "period": 45,
+          "requires": null,
+          "to": 1
+        },
+        {
+          "amount": "92021935",
+          "from": 1,
+          "kind": "goods",
+          "link": 111,
+          "period": 45,
+          "requires": null,
+          "to": 5
+        },
+        {
+          "amount": "92021935",
+          "from": 5,
+          "kind": "common_circulation",
+          "link": 111,
+          "period": 45,
+          "requires": 314,
+          "to": 0
+        },
+        {
+          "amount": "8175561131",
+          "from": 0,
+          "kind": "provision_allocation",
+          "link": 112,
+          "period": 46,
+          "requires": null,
+          "to": 1
+        },
+        {
+          "amount": "8175561131",
+          "from": 1,
+          "kind": "goods",
+          "link": 112,
+          "period": 46,
+          "requires": null,
+          "to": 2
+        },
+        {
+          "amount": "8175561131",
+          "from": 2,
+          "kind": "common_circulation",
+          "link": 112,
+          "period": 46,
+          "requires": 317,
+          "to": 0
+        },
+        {
+          "amount": "89204171",
+          "from": 0,
+          "kind": "provision_allocation",
+          "link": 113,
+          "period": 46,
+          "requires": null,
+          "to": 1
+        },
+        {
+          "amount": "89204171",
+          "from": 1,
+          "kind": "goods",
+          "link": 113,
+          "period": 46,
+          "requires": null,
+          "to": 5
+        },
+        {
+          "amount": "89204171",
+          "from": 5,
+          "kind": "common_circulation",
+          "link": 113,
+          "period": 46,
+          "requires": 320,
+          "to": 0
+        },
+        {
+          "amount": "8454921877",
+          "from": 0,
+          "kind": "provision_allocation",
+          "link": 114,
+          "period": 47,
+          "requires": null,
+          "to": 1
+        },
+        {
+          "amount": "8454921877",
+          "from": 1,
+          "kind": "goods",
+          "link": 114,
+          "period": 47,
+          "requires": null,
+          "to": 2
+        },
+        {
+          "amount": "8454921877",
+          "from": 2,
+          "kind": "common_circulation",
+          "link": 114,
+          "period": 47,
+          "requires": 323,
+          "to": 0
+        },
+        {
+          "amount": "92333258",
+          "from": 0,
+          "kind": "provision_allocation",
+          "link": 115,
+          "period": 47,
+          "requires": null,
+          "to": 1
+        },
+        {
+          "amount": "92333258",
+          "from": 1,
+          "kind": "goods",
+          "link": 115,
+          "period": 47,
+          "requires": null,
+          "to": 5
+        },
+        {
+          "amount": "92333258",
+          "from": 5,
+          "kind": "common_circulation",
+          "link": 115,
+          "period": 47,
+          "requires": 326,
+          "to": 0
+        },
+        {
+          "amount": "8461751929",
+          "from": 0,
+          "kind": "provision_allocation",
+          "link": 116,
+          "period": 48,
+          "requires": null,
+          "to": 1
+        },
+        {
+          "amount": "8461751929",
+          "from": 1,
+          "kind": "goods",
+          "link": 116,
+          "period": 48,
+          "requires": null,
+          "to": 2
+        },
+        {
+          "amount": "8461751929",
+          "from": 2,
+          "kind": "common_circulation",
+          "link": 116,
+          "period": 48,
+          "requires": 329,
+          "to": 0
+        },
+        {
+          "amount": "92488781",
+          "from": 0,
+          "kind": "provision_allocation",
+          "link": 117,
+          "period": 48,
+          "requires": null,
+          "to": 1
+        },
+        {
+          "amount": "92488781",
+          "from": 1,
+          "kind": "goods",
+          "link": 117,
+          "period": 48,
+          "requires": null,
+          "to": 5
+        },
+        {
+          "amount": "92488781",
+          "from": 5,
+          "kind": "common_circulation",
+          "link": 117,
+          "period": 48,
+          "requires": 332,
+          "to": 0
+        },
+        {
+          "amount": "7649031180",
+          "from": 0,
+          "kind": "provision_allocation",
+          "link": 118,
+          "period": 49,
+          "requires": null,
+          "to": 1
+        },
+        {
+          "amount": "7649031180",
+          "from": 1,
+          "kind": "goods",
+          "link": 118,
+          "period": 49,
+          "requires": null,
+          "to": 2
+        },
+        {
+          "amount": "7649031180",
+          "from": 2,
+          "kind": "common_circulation",
+          "link": 118,
+          "period": 49,
+          "requires": 335,
+          "to": 0
+        },
+        {
+          "amount": "83678645",
+          "from": 0,
+          "kind": "provision_allocation",
+          "link": 119,
+          "period": 49,
+          "requires": null,
+          "to": 1
+        },
+        {
+          "amount": "83678645",
+          "from": 1,
+          "kind": "goods",
+          "link": 119,
+          "period": 49,
+          "requires": null,
+          "to": 5
+        },
+        {
+          "amount": "83678645",
+          "from": 5,
+          "kind": "common_circulation",
+          "link": 119,
+          "period": 49,
+          "requires": 338,
+          "to": 0
+        },
+        {
+          "amount": "8475376387",
+          "from": 0,
+          "kind": "provision_allocation",
+          "link": 120,
+          "period": 50,
+          "requires": null,
+          "to": 1
+        },
+        {
+          "amount": "8475376387",
+          "from": 1,
+          "kind": "goods",
+          "link": 120,
+          "period": 50,
+          "requires": null,
+          "to": 2
+        },
+        {
+          "amount": "8475376387",
+          "from": 2,
+          "kind": "common_circulation",
+          "link": 120,
+          "period": 50,
+          "requires": 341,
+          "to": 0
+        },
+        {
+          "amount": "92799548",
+          "from": 0,
+          "kind": "provision_allocation",
+          "link": 121,
+          "period": 50,
+          "requires": null,
+          "to": 1
+        },
+        {
+          "amount": "92799548",
+          "from": 1,
+          "kind": "goods",
+          "link": 121,
+          "period": 50,
+          "requires": null,
+          "to": 5
+        },
+        {
+          "amount": "92799548",
+          "from": 5,
+          "kind": "common_circulation",
+          "link": 121,
+          "period": 50,
+          "requires": 344,
+          "to": 0
+        },
+        {
+          "amount": "8208552141",
+          "from": 0,
+          "kind": "provision_allocation",
+          "link": 122,
+          "period": 51,
+          "requires": null,
+          "to": 1
+        },
+        {
+          "amount": "8208552141",
+          "from": 1,
+          "kind": "goods",
+          "link": 122,
+          "period": 51,
+          "requires": null,
+          "to": 2
+        },
+        {
+          "amount": "8208552141",
+          "from": 2,
+          "kind": "common_circulation",
+          "link": 122,
+          "period": 51,
+          "requires": 347,
+          "to": 0
+        },
+        {
+          "amount": "89956245",
+          "from": 0,
+          "kind": "provision_allocation",
+          "link": 123,
+          "period": 51,
+          "requires": null,
+          "to": 1
+        },
+        {
+          "amount": "89956245",
+          "from": 1,
+          "kind": "goods",
+          "link": 123,
+          "period": 51,
+          "requires": null,
+          "to": 5
+        },
+        {
+          "amount": "89956245",
+          "from": 5,
+          "kind": "common_circulation",
+          "link": 123,
+          "period": 51,
+          "requires": 350,
+          "to": 0
+        },
+        {
+          "amount": "8488953045",
+          "from": 0,
+          "kind": "provision_allocation",
+          "link": 124,
+          "period": 52,
+          "requires": null,
+          "to": 1
+        },
+        {
+          "amount": "8488953045",
+          "from": 1,
+          "kind": "goods",
+          "link": 124,
+          "period": 52,
+          "requires": null,
+          "to": 2
+        },
+        {
+          "amount": "8488953045",
+          "from": 2,
+          "kind": "common_circulation",
+          "link": 124,
+          "period": 52,
+          "requires": 353,
+          "to": 0
+        },
+        {
+          "amount": "93109941",
+          "from": 0,
+          "kind": "provision_allocation",
+          "link": 125,
+          "period": 52,
+          "requires": null,
+          "to": 1
+        },
+        {
+          "amount": "93109941",
+          "from": 1,
+          "kind": "goods",
+          "link": 125,
+          "period": 52,
+          "requires": null,
+          "to": 5
+        },
+        {
+          "amount": "93109941",
+          "from": 5,
+          "kind": "common_circulation",
+          "link": 125,
+          "period": 52,
+          "requires": 356,
+          "to": 0
+        },
+        {
+          "amount": "8221667951",
+          "from": 0,
+          "kind": "provision_allocation",
+          "link": 126,
+          "period": 53,
+          "requires": null,
+          "to": 1
+        },
+        {
+          "amount": "8221667951",
+          "from": 1,
+          "kind": "goods",
+          "link": 126,
+          "period": 53,
+          "requires": null,
+          "to": 2
+        },
+        {
+          "amount": "8221667951",
+          "from": 2,
+          "kind": "common_circulation",
+          "link": 126,
+          "period": 53,
+          "requires": 359,
+          "to": 0
+        },
+        {
+          "amount": "90256451",
+          "from": 0,
+          "kind": "provision_allocation",
+          "link": 127,
+          "period": 53,
+          "requires": null,
+          "to": 1
+        },
+        {
+          "amount": "90256451",
+          "from": 1,
+          "kind": "goods",
+          "link": 127,
+          "period": 53,
+          "requires": null,
+          "to": 5
+        },
+        {
+          "amount": "90256451",
+          "from": 5,
+          "kind": "common_circulation",
+          "link": 127,
+          "period": 53,
+          "requires": 362,
+          "to": 0
+        },
+        {
+          "amount": "8502482388",
+          "from": 0,
+          "kind": "provision_allocation",
+          "link": 128,
+          "period": 54,
+          "requires": null,
+          "to": 1
+        },
+        {
+          "amount": "8502482388",
+          "from": 1,
+          "kind": "goods",
+          "link": 128,
+          "period": 54,
+          "requires": null,
+          "to": 2
+        },
+        {
+          "amount": "8502482388",
+          "from": 2,
+          "kind": "common_circulation",
+          "link": 128,
+          "period": 54,
+          "requires": 365,
+          "to": 0
+        },
+        {
+          "amount": "93419946",
+          "from": 0,
+          "kind": "provision_allocation",
+          "link": 129,
+          "period": 54,
+          "requires": null,
+          "to": 1
+        },
+        {
+          "amount": "93419946",
+          "from": 1,
+          "kind": "goods",
+          "link": 129,
+          "period": 54,
+          "requires": null,
+          "to": 5
+        },
+        {
+          "amount": "93419946",
+          "from": 5,
+          "kind": "common_circulation",
+          "link": 129,
+          "period": 54,
+          "requires": 368,
+          "to": 0
+        },
+        {
+          "amount": "8509229474",
+          "from": 0,
+          "kind": "provision_allocation",
+          "link": 130,
+          "period": 55,
+          "requires": null,
+          "to": 1
+        },
+        {
+          "amount": "8509229474",
+          "from": 1,
+          "kind": "goods",
+          "link": 130,
+          "period": 55,
+          "requires": null,
+          "to": 2
+        },
+        {
+          "amount": "8509229474",
+          "from": 2,
+          "kind": "common_circulation",
+          "link": 130,
+          "period": 55,
+          "requires": 371,
+          "to": 0
+        },
+        {
+          "amount": "93574781",
+          "from": 0,
+          "kind": "provision_allocation",
+          "link": 131,
+          "period": 55,
+          "requires": null,
+          "to": 1
+        },
+        {
+          "amount": "93574781",
+          "from": 1,
+          "kind": "goods",
+          "link": 131,
+          "period": 55,
+          "requires": null,
+          "to": 5
+        },
+        {
+          "amount": "93574781",
+          "from": 5,
+          "kind": "common_circulation",
+          "link": 131,
+          "period": 55,
+          "requires": 374,
+          "to": 0
+        },
+        {
+          "amount": "8241256271",
+          "from": 0,
+          "kind": "provision_allocation",
+          "link": 132,
+          "period": 56,
+          "requires": null,
+          "to": 1
+        },
+        {
+          "amount": "8241256271",
+          "from": 1,
+          "kind": "goods",
+          "link": 132,
+          "period": 56,
+          "requires": null,
+          "to": 2
+        },
+        {
+          "amount": "8241256271",
+          "from": 2,
+          "kind": "common_circulation",
+          "link": 132,
+          "period": 56,
+          "requires": 377,
+          "to": 0
+        },
+        {
+          "amount": "90705981",
+          "from": 0,
+          "kind": "provision_allocation",
+          "link": 133,
+          "period": 56,
+          "requires": null,
+          "to": 1
+        },
+        {
+          "amount": "90705981",
+          "from": 1,
+          "kind": "goods",
+          "link": 133,
+          "period": 56,
+          "requires": null,
+          "to": 5
+        },
+        {
+          "amount": "90705981",
+          "from": 5,
+          "kind": "common_circulation",
+          "link": 133,
+          "period": 56,
+          "requires": 380,
+          "to": 0
+        },
+        {
+          "amount": "8522688485",
+          "from": 0,
+          "kind": "provision_allocation",
+          "link": 134,
+          "period": 57,
+          "requires": null,
+          "to": 1
+        },
+        {
+          "amount": "8522688485",
+          "from": 1,
+          "kind": "goods",
+          "link": 134,
+          "period": 57,
+          "requires": null,
+          "to": 2
+        },
+        {
+          "amount": "8522688485",
+          "from": 2,
+          "kind": "common_circulation",
+          "link": 134,
+          "period": 57,
+          "requires": 383,
+          "to": 0
+        },
+        {
+          "amount": "93884153",
+          "from": 0,
+          "kind": "provision_allocation",
+          "link": 135,
+          "period": 57,
+          "requires": null,
+          "to": 1
+        },
+        {
+          "amount": "93884153",
+          "from": 1,
+          "kind": "goods",
+          "link": 135,
+          "period": 57,
+          "requires": null,
+          "to": 5
+        },
+        {
+          "amount": "93884153",
+          "from": 5,
+          "kind": "common_circulation",
+          "link": 135,
+          "period": 57,
+          "requires": 386,
+          "to": 0
+        },
+        {
+          "amount": "8254258617",
+          "from": 0,
+          "kind": "provision_allocation",
+          "link": 136,
+          "period": 58,
+          "requires": null,
+          "to": 1
+        },
+        {
+          "amount": "8254258617",
+          "from": 1,
+          "kind": "goods",
+          "link": 136,
+          "period": 58,
+          "requires": null,
+          "to": 2
+        },
+        {
+          "amount": "8254258617",
+          "from": 2,
+          "kind": "common_circulation",
+          "link": 136,
+          "period": 58,
+          "requires": 389,
+          "to": 0
+        },
+        {
+          "amount": "91005199",
+          "from": 0,
+          "kind": "provision_allocation",
+          "link": 137,
+          "period": 58,
+          "requires": null,
+          "to": 1
+        },
+        {
+          "amount": "91005199",
+          "from": 1,
+          "kind": "goods",
+          "link": 137,
+          "period": 58,
+          "requires": null,
+          "to": 5
+        },
+        {
+          "amount": "91005199",
+          "from": 5,
+          "kind": "common_circulation",
+          "link": 137,
+          "period": 58,
+          "requires": 392,
+          "to": 0
+        },
+        {
+          "amount": "8536101076",
+          "from": 0,
+          "kind": "provision_allocation",
+          "link": 138,
+          "period": 59,
+          "requires": null,
+          "to": 1
+        },
+        {
+          "amount": "8536101076",
+          "from": 1,
+          "kind": "goods",
+          "link": 138,
+          "period": 59,
+          "requires": null,
+          "to": 2
+        },
+        {
+          "amount": "8536101076",
+          "from": 2,
+          "kind": "common_circulation",
+          "link": 138,
+          "period": 59,
+          "requires": 395,
+          "to": 0
+        },
+        {
+          "amount": "94193163",
+          "from": 0,
+          "kind": "provision_allocation",
+          "link": 139,
+          "period": 59,
+          "requires": null,
+          "to": 1
+        },
+        {
+          "amount": "94193163",
+          "from": 1,
+          "kind": "goods",
+          "link": 139,
+          "period": 59,
+          "requires": null,
+          "to": 5
+        },
+        {
+          "amount": "94193163",
+          "from": 5,
+          "kind": "common_circulation",
+          "link": 139,
+          "period": 59,
+          "requires": 398,
+          "to": 0
+        }
+      ],
+      "repaired_money": {
+        "attempted_events": 400,
+        "closing": [
+          "8536101076",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0"
+        ],
+        "first_blocked_event": null,
+        "first_blocked_period": null,
+        "insufficient_events": 0,
+        "minimum_balance": [
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0"
+        ],
+        "opening_total": "8536101076",
+        "settled_events": 400,
+        "settled_volume": "1488339904933",
+        "unavailable_events": 0
+      },
+      "resident_zero_each_period": true,
+      "unchanged_event_prefix": 60
+    },
     "initial_shortages": [
       {
         "active_stock": "1147028",
@@ -137922,5 +145673,5 @@
       ]
     }
   },
-  "schema_version": 2
+  "schema_version": 3
 }

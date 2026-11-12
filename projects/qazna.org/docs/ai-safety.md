@@ -153,3 +153,15 @@ The offline search proposes a candidate; existing operator-only review, generati
 checks and transaction boundaries remain in force. AI cannot lower need, hide an
 unrecoverable shortage, erase ongoing work or apply a candidate. Concurrent review,
 retry after failure and restored pending revisions are exercised against PostgreSQL.
+
+
+## Incident journal boundary
+
+Operator declarations persist without requiring successful repair. Input validation
+checks exact old/new availability against an approved base, not the truth of the
+source statement. AI prose cannot mark a journal entry resolved or change an
+approved plan. Linking requires separately reviewed current physical and monetary
+versions, matching immutable revision history and settled derived payments. No
+live posting is made. Observer, reviewer and attestor credentials cannot access
+these operator-only research routes. Retraction/dispute workflows and named
+institutional observation authority are not yet implemented.

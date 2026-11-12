@@ -63,6 +63,13 @@ declared absence. It preserves care, ongoing work and history; each availability
 change has an exact revision record and requires operator review. An unrecoverable
 outage returns explicit failure rather than reducing need.
 
+The [incident journal](docs/architecture.md#durable-service-incidents-and-reviewed-circulation)
+now saves declarations even without a feasible repair and links matching reviewed
+physical/circulation versions. The [service circulation experiment](docs/physical-circulation.md#incident-to-circulation-experiment--12-november-2026)
+settles 400 events before and after training deferral with the same opening measure;
+a blocked-payment counterexample remains explicit. A linked plan is not a claim
+of observed recovery or an instruction to move live money.
+
 ## Project information
 
 | Item | Reference |
