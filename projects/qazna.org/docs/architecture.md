@@ -569,3 +569,25 @@ is added. Runtime and checkpoint size limits remain unchanged.
 
 Classification accuracy, lifecycle transitions and actual local access are separate
 from these arithmetic checks; see [input assumptions](input-assumptions.md).
+
+## Non-storable services and shared capacity
+
+`src/services.rs` audits an optional `ModelInput.services` against independently
+replayed physical/capital state and derived population profiles. `ModelCheckpoint.services`
+stores coverage, capacity and operating-input evidence. Absent fields preserve
+previous checkpoint serialization. No migration, dependency or new authority is
+introduced.
+
+Each service rule binds a region and need item to a complete monthly provision
+schedule, same-region capacity pools and operating inputs. All regions must have
+each selected service. Unbound needs remain listed. Asset identity is unique
+across pools and cannot also back the older independent capacity/storage limits.
+Service use and all active development/training commitments share the same monthly
+capacity ledger. Expired cohorts and unfinished future capacity cannot contribute.
+Operating needs reconcile exactly to designated physical end-use rows.
+
+A shortage blocks preview/proposal approval; a failed candidate does not consume
+the retry key or change accepted history. Services require population evidence.
+Changing/removing service assumptions in an existing model history is rejected.
+The pending and accepted service input/evidence survive restart and logical
+backup/restore. Controlled future revisions remain a separate feedback-stage task.

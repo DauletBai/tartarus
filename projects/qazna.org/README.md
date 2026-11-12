@@ -50,6 +50,13 @@ stand in for provision. A separate finite-stock test verifies the accepted runti
 binding and restart/restore. These coefficients are test assumptions, not a national
 forecast or medical prescription.
 
+Care and education now connect to **12 regional capacity pools over 60 months**:
+staff, teaching seats, rooms, equipment and builders. Training uses current mentor
+time; new capacity cannot serve people before completion. Operating energy is
+reconciled to physical provision, and local shortages block approval. See the
+[service balances](docs/physical-circulation.md#shared-care-and-education-capacity--12-november-2026)
+and shared [input assumptions](docs/input-assumptions.md#care-and-education-capacity).
+
 ## Project information
 
 | Item | Reference |

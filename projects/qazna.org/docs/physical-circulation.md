@@ -2084,3 +2084,59 @@ from the southern requirement to the north. National coverage stays complete;
 the southern gap becomes one litre and runtime approval fails. Region-specific
 provision must therefore be reconciled before a plan can be approved. The audit
 reports the gap, rather than hiding it inside another region's surplus.
+
+## Shared care and education capacity — 12 November 2026
+
+The service study connects derived regional person-day needs to care minutes and
+preschool/school place-days. These services cannot be stocked or carried into a
+later month. Eighteen physical resources and thirteen processes support six
+service rules and twelve regional pools over sixty months. Inputs and their
+interpretation are centralized in [input assumptions](input-assumptions.md#care-and-education-capacity).
+
+For pool p and month t, the independent audit checks:
+
+```text
+A[p,t] = floor(active_opening_stock[p,t] * days[p,t] * rate[p] * availability_bps[p,t] / 10000)
+U[p,t] = sum over norm buckets ceil(coefficient * planned_service_quantity)
+W[p,t] = sum over norm buckets ceil(coefficient * active_pipeline_starts)
+U[p,t] + W[p,t] <= A[p,t]
+active pipeline: start <= t < start + lead_time
+service_shortage[r,s,t] = required[r,s,t] - planned_provision[r,s,t]
+```
+
+Products and sums use checked integer/rational arithmetic. Quantities sharing a
+norm are combined before rounding upward; capacity is rounded downward.
+Opening stock excludes retired cohorts. Completions become usable in the next
+period. Training occupies mentors throughout its course, including months without
+new starts. Each asset may appear in only one pool and may not simultaneously
+back a separate legacy capacity/storage constraint. Regional service rules cannot
+borrow a pool from another region.
+
+The accepted path starts development in month zero. Its derived capacity totals
+across the two regions are:
+
+| Capacity slots | Opening | Added after development |
+| --- | ---: | ---: |
+| Care staff | 2,867,569 | 205,863 |
+| Educators | 1,046,956 | 42,679 |
+| Care rooms | 2,818,344 | 255,088 |
+| Teaching seats | 20,000,000 | 867,169 |
+| Shared devices | 1,468,327 | 135,773 |
+| Builders | 7,864 | 0 |
+
+The 1,506,572 new slots consume 7,532,860 material units, 3,013,144 kWh
+and 248,542 eligible training places. Service operations consume another
+5,348,249,184 kWh. Their physical end-use needs and deliveries must agree
+exactly with the service calculation; spare accounting measure cannot fill a gap.
+These are results of the declared coefficients, not national staffing requirements.
+
+A counterexample sets north-care workforce availability to zero in month 20.
+Demand remains unchanged: the audit exposes a 10,789,816,809-minute capacity
+shortage and runtime approval rejects it. Other-region capacity does not erase
+that shortage. Tests also retire capacity, overload mentors, omit operating energy,
+remove a regional rule and withhold one service unit; none silently removes need.
+
+Reproduce with `cargo run --locked --example service_study -- research/service-results.json`.
+The report contains 360 service coverage rows, 720 pool balances and 60 operating
+balances. Approval stores recomputed evidence under the existing separate-review
+protocol; it does not deliver services or alter real inventory or money.

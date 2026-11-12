@@ -872,3 +872,34 @@ Circulation completed 4,548 requests in 33.013 seconds with one restart; closed
 circulation completed 3,901 requests in 27.216 seconds with two restarts. Both
 strict-evidence exercises and actor seeds 7/19 passed. No dependency, database
 migration or monetary authority changed. Remote CI is recorded in the PR.
+
+## Service capacity reproduction — 12 November 2026
+
+```sh
+cargo run --locked --release --example service_study -- /tmp/qazna-services.json
+cmp /tmp/qazna-services.json research/service-results.json
+cargo test --locked --test services
+```
+
+Twelve service tests cover all-month independent capacity totals, ongoing mentor
+loads, delayed completions, regional outage, retired cohorts, exact rational
+rounding, omitted energy with otherwise balanced physical stock, unserved demand,
+duplicate assets, cross-region use, incomplete rules, unknown coefficients and
+invalid calendars/units/JSON. The PostgreSQL case rejects an outage without
+consuming its retry key, then approves the corrected candidate; removing or
+rewriting accepted service assumptions preserves history and balances.
+
+Full local `scripts/check.py` passed with **336 Rust tests**, including **12 service**
+and **122 PostgreSQL** tests, plus **11 Python** tests. Rustfmt, all-target Clippy,
+licence inventory and byte reproduction of all reports passed. The one-unit
+unserved-demand test was strengthened to require a successful independent audit
+before checking its exact shortage; all 12 service tests and Clippy passed again.
+
+Logical backup/restore verified **45 populated tables** and **15 privilege denials**,
+including accepted and pending service versions and their continued review.
+HTTP restart and both six-case strict-evidence exercises passed. Circulation ran
+4,548 requests in 33.073 seconds with one restart; closed circulation ran 3,901
+requests in 27.141 seconds with two restarts. Actor seeds 7 and 19 completed.
+These timings describe local exercises, not a production capacity guarantee.
+No dependency, migration or monetary authority changed. Remote CI is recorded
+separately in the pull request.

@@ -48,6 +48,8 @@ pub struct ModelDefinition {
 #[derive(Clone, Debug, Serialize, Deserialize)]
 #[serde(deny_unknown_fields)]
 pub struct ModelInput {
+    #[serde(default, skip_serializing_if = "Option::is_none")]
+    pub services: Option<crate::services::ServicePlan>,
     pub model: CapitalCycle,
     pub plan: Vec<PeriodPlan>,
     /// First replannable period on the unchanged absolute timeline.
@@ -70,6 +72,8 @@ pub struct ModelProposal {
 }
 #[derive(Clone, Debug, Serialize, Deserialize)]
 pub struct ModelCheckpoint {
+    #[serde(default, skip_serializing_if = "Option::is_none")]
+    pub services: Option<crate::services::ServiceEvidence>,
     pub format_version: u32,
     pub scope: Uuid,
     pub generation: i64,
@@ -260,6 +264,9 @@ pub(crate) fn calculate(
     }
     let invalid = |_| LedgerError::Invalid("infeasible model or rewritten committed history");
     if let Some(old) = checkpoint(&before)? {
+        if input.services != old.input.services {
+            return Err(LedgerError::Invalid("service assumptions changed"));
+        }
         if input.population != old.input.population {
             return Err(LedgerError::Invalid("population assumptions changed"));
         }
@@ -329,6 +336,24 @@ pub(crate) fn calculate(
             "regional provision leaves unmet needs",
         ));
     }
+    let services = input
+        .services
+        .as_ref()
+        .map(|s| {
+            let p = population
+                .as_ref()
+                .ok_or(LedgerError::Invalid("services require population"))?;
+            let evidence = s
+                .audit(&before.definition, &input.model, &input.plan, p)
+                .map_err(invalid)?;
+            if !evidence.all_selected_services_feasible {
+                return Err(LedgerError::Invalid(
+                    "service capacity or provision shortage",
+                ));
+            }
+            Ok(evidence)
+        })
+        .transpose()?;
     let bindings = &before.definition.dated_bindings;
     if dated.len() != bindings.len() || input.dated_generations.len() != bindings.len() {
         return Err(LedgerError::Invalid("missing dated generations"));
@@ -372,6 +397,7 @@ pub(crate) fn calculate(
         .checked_add(1)
         .ok_or(LedgerError::Overflow)?;
     let c = ModelCheckpoint {
+        services,
         format_version: 1,
         scope: before.definition.id,
         generation,

@@ -179,6 +179,7 @@ fn main() {
     }
     let mut policy=CirculationPolicy{accounts:[vec!["common treasury".into(),"aggregate provision".into()],h.resources.iter().map(|r|format!("shared unit: {r}")).collect()].concat(),resource_suppliers:(2..R+2).collect(),process_operators:h.processes.iter().map(|p|2+p.outputs.iter().position(|&q|q>0).unwrap()).collect(),process_order:(0..J).collect(),capital_resources:m.lives.iter().map(|l|l.resource).collect(),common_measure:norm.clone(),unit_measure:norm,opening:(0..R+2).map(|i|if i==1 {"0"}else{"1000000000000000"}.into()).collect(),measure_unit:"synthetic fixed accounting tick".into(),basis:"Illustrative common-production shares; exact minimum opening for this fixed schedule only, not a universal funding or issuance rule; people and in-situ deposits unpriced".into()};
     let input = ModelInput {
+        services: None,
         model: m,
         plan: p,
         boundary: 18,

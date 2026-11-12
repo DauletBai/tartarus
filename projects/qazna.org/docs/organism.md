@@ -154,3 +154,12 @@ identifying different needs. Pregnancy together with assisted care is one joint
 profile, not two separate people. Regional shortages remain local signals even if
 another region has surplus. Neither basic provision nor care depends on employment,
 productivity or a person's ranking. No private health records are introduced.
+
+## Care, learning and replenishing capabilities
+
+Care and education now have non-storable regional service balances. Need derives
+from population exposure, regardless of employment or productivity. Capacity
+comes from available people, rooms and equipment; preparation of new specialists
+uses current mentors, while construction uses shared builders and physical inputs.
+A shortage preserves the need and explains the capacity gap. Aggregate slots
+must not be interpreted as compulsory work assignment or a person's worth.
