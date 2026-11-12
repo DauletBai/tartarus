@@ -588,6 +588,44 @@ Operating needs reconcile exactly to designated physical end-use rows.
 
 A shortage blocks preview/proposal approval; a failed candidate does not consume
 the retry key or change accepted history. Services require population evidence.
-Changing/removing service assumptions in an existing model history is rejected.
+Removing services or changing needs, norms, pool identities and calendars in an
+existing history is rejected. Future availability changes require the exact
+revision record described below.
 The pending and accepted service input/evidence survive restart and logical
-backup/restore. Controlled future revisions remain a separate feedback-stage task.
+backup/restore. Controlled availability revisions and bounded batch repair are implemented below.
+
+## Controlled service feedback
+
+`ServicePlan.revisions` is an append-only list embedded in the reviewed model input.
+A revision names the rolling boundary, basis, source reference and exact ordered
+pool/period changes with old and new basis-point values. The runtime compares
+against its own accepted checkpoint. Only availability at or after the new boundary
+may change; registry, coefficients, working days, pool identities and service needs/
+provision remain fixed. The complete prior revision prefix must match. Missing,
+extra, reordered, empty or retroactive changes fail validation. Initial scenarios
+cannot inject revision history. A continuation without changes keeps the same log.
+The log is bounded to 128 revisions, each change set to 4,096 cells, with existing
+request/checkpoint byte limits still applied. Empty logs are omitted to preserve
+previous checkpoint bytes.
+
+`service_feedback::repair_service_batch` is an offline bounded proposal helper:
+it tries at most 24 start dates for one entire unstarted development batch and
+returns the earliest fully verified candidate or explicit rejection reasons.
+`defer_batch` changes activity timing and the corresponding input/output stock
+balance; it is not an approval function. Every repair candidate passes the ordinary
+physical matrix, chronological replay, service-capacity and rolling-prefix checks.
+Ongoing work, consumed inputs, resource origins and accepted past rows cannot be
+removed. No endowment, provision norm, supply or payment is created by this search.
+
+`preview_continuation` is a pure calculation helper, not checkpoint authentication.
+Runtime routes continue to load accepted versions from PostgreSQL, enforce expected
+generation and require separate operator review. Competing candidates cannot both
+advance one head. Declared source references are traceability, not independent
+proof of actual absence. Pending repaired versions and their review survive process
+restart and logical database restoration. Dated external anchors still require the
+runtime route; the offline repair helper does not resolve them.
+
+A rejected outage/repair remains an error or offline report; this stage adds no
+separate durable incident inbox. The accepted scenario is a reviewed plan, not a
+live observation feed. Persisting an incident independently of a feasible repair
+is an explicit next integration task; failure must not be presented as recovery.

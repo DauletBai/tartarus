@@ -57,6 +57,12 @@ reconciled to physical provision, and local shortages block approval. See the
 [service balances](docs/physical-circulation.md#shared-care-and-education-capacity--12-november-2026)
 and shared [input assumptions](docs/input-assumptions.md#care-and-education-capacity).
 
+[Controlled service feedback](docs/physical-circulation.md#reviewed-service-repair--12-november-2026)
+now proposes the earliest feasible deferral of an unstarted training batch after a
+declared absence. It preserves care, ongoing work and history; each availability
+change has an exact revision record and requires operator review. An unrecoverable
+outage returns explicit failure rather than reducing need.
+
 ## Project information
 
 | Item | Reference |

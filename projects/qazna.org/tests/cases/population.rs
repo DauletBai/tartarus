@@ -327,3 +327,112 @@ async fn service_shortage_and_rewritten_capacity_preserve_reviewed_history() {
     assert_eq!(f.balance(f.treasury).await, "1000");
     assert_eq!(f.balance(f.resident).await, "0");
 }
+
+#[tokio::test]
+#[ignore = "requires isolated PostgreSQL; use scripts/check.py"]
+async fn service_feedback_failure_retry_and_concurrent_review_preserve_history() {
+    let f = Fixture::new().await;
+    let v: serde_json::Value =
+        serde_json::from_str(include_str!("../../research/service-results.json")).unwrap();
+    let mut d: ModelDefinition =
+        serde_json::from_value(v["runtime_fixture"]["definition"].clone()).unwrap();
+    d.id = Uuid::new_v4();
+    let id = d.id;
+    let baseline: ModelInput =
+        serde_json::from_value(v["feedback"]["baseline_input"].clone()).unwrap();
+    let observed: ModelInput =
+        serde_json::from_value(v["feedback"]["observed_input"].clone()).unwrap();
+    let repaired: ModelInput =
+        serde_json::from_value(v["feedback"]["repair"]["input"].clone()).unwrap();
+    let proposal = |input, generation| ModelProposal {
+        id: Uuid::new_v4(),
+        expected_generation: generation,
+        input,
+        basis: "Reviewed service outage and repair".into(),
+    };
+    f.ledger.create_model_scenario("feedback", d).await.unwrap();
+    let first = f
+        .ledger
+        .propose_model_scenario("baseline", id, proposal(baseline, 0))
+        .await
+        .unwrap();
+    f.ledger
+        .resolve_model_scenario("baseline-apply", first.request.id, decision())
+        .await
+        .unwrap();
+    let saved = f.ledger.model_scenario(id, None).await.unwrap();
+    assert!(
+        f.ledger
+            .propose_model_scenario("repair", id, proposal(observed, 1))
+            .await
+            .is_err()
+    );
+    assert_eq!(
+        json!(f.ledger.model_scenario(id, None).await.unwrap()),
+        json!(saved)
+    );
+    let a = f
+        .ledger
+        .propose_model_scenario("repair", id, proposal(repaired.clone(), 1))
+        .await
+        .unwrap();
+    let b = f
+        .ledger
+        .propose_model_scenario("competing-repair", id, proposal(repaired.clone(), 1))
+        .await
+        .unwrap();
+    let (x, y) = tokio::join!(
+        f.ledger
+            .resolve_model_scenario("repair-a", a.request.id, decision()),
+        f.ledger
+            .resolve_model_scenario("repair-b", b.request.id, decision())
+    );
+    assert_eq!(usize::from(x.is_ok()) + usize::from(y.is_ok()), 1);
+    let error = match x {
+        Err(error) => error,
+        Ok(_) => y.unwrap_err(),
+    };
+    assert!(matches!(error, LedgerError::ScenarioStale));
+    let accepted = f.ledger.model_scenario(id, None).await.unwrap();
+    assert_eq!(accepted.generation, 2);
+    let checkpoint: ModelCheckpoint =
+        serde_json::from_str(accepted.checkpoint.as_ref().unwrap()).unwrap();
+    assert_eq!(
+        json!(checkpoint.services),
+        v["feedback"]["service_evidence"]
+    );
+    assert_eq!(
+        checkpoint.input.services.as_ref().unwrap().revisions.len(),
+        1
+    );
+    let mut wrong = repaired.clone();
+    wrong.boundary = 6;
+    wrong.services.as_mut().unwrap().revisions[0].source_reference = "rewritten".into();
+    assert!(
+        f.ledger
+            .propose_model_scenario("later", id, proposal(wrong, 2))
+            .await
+            .is_err()
+    );
+    let mut later = repaired;
+    later.boundary = 6;
+    let draft = f
+        .ledger
+        .propose_model_scenario("later", id, proposal(later, 2))
+        .await
+        .unwrap();
+    f.ledger
+        .resolve_model_scenario("later-apply", draft.request.id, decision())
+        .await
+        .unwrap();
+    assert_eq!(
+        json!(f.ledger.model_scenario(id, Some(1)).await.unwrap()),
+        json!(saved)
+    );
+    assert_eq!(
+        json!(f.ledger.model_scenario(id, Some(2)).await.unwrap()),
+        json!(accepted)
+    );
+    assert_eq!(f.balance(f.treasury).await, "1000");
+    assert_eq!(f.balance(f.resident).await, "0");
+}

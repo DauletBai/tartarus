@@ -1,5 +1,13 @@
 # Qazna changelog
 
+## Controlled service feedback — 12 November 2026
+
+- Permit exact, append-only future availability revisions while freezing past availability, needs, norms and pool identity.
+- Add bounded offline deferral of one unstarted development batch, with independent physical and service validation for every candidate.
+- Extend the existing service report with temporary-absence recovery, preserved commitments and unrecoverable failure.
+- Test exact stock deltas, ten availability levels, history forgery, retries, competing reviews and restoration of pending repairs.
+- Keep operator review and monetary authority unchanged; no dependency or migration changes.
+
 ## Care and education capabilities — 12 November 2026
 
 - Bind non-storable services to regional workforce, rooms, equipment and ongoing development/training loads.

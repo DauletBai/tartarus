@@ -283,3 +283,261 @@ fn unknown_fields_and_negative_quantity_fail_deserialization() {
     v["rules"][0]["execute_transfer"] = json!(true);
     assert!(serde_json::from_value::<ServicePlan>(v).is_err());
 }
+
+fn feedback_fixture() -> (ModelDefinition, ModelInput, ModelInput, ModelInput) {
+    let v: Value = serde_json::from_str(include_str!("../research/service-results.json")).unwrap();
+    (
+        serde_json::from_value(v["runtime_fixture"]["definition"].clone()).unwrap(),
+        serde_json::from_value(v["feedback"]["baseline_input"].clone()).unwrap(),
+        serde_json::from_value(v["feedback"]["observed_input"].clone()).unwrap(),
+        serde_json::from_value(v["feedback"]["repair"]["input"].clone()).unwrap(),
+    )
+}
+#[test]
+fn feedback_finds_earliest_feasible_training_date_without_new_resources() {
+    use qazna::service_feedback::repair_service_batch;
+    let (d, baseline, observed, repaired) = feedback_fixture();
+    let before = preview(d.clone(), baseline.clone()).unwrap();
+    let saved = json!(before);
+    let result = repair_service_batch(&before, &observed, 1, 4, 12).unwrap();
+    assert_eq!(
+        result.attempts.iter().map(|r| r.start).collect::<Vec<_>>(),
+        vec![4, 5, 6]
+    );
+    assert!(result.attempts[..2].iter().all(|r| r.rejection.is_some()));
+    assert_eq!(json!(result.input.unwrap()), json!(repaired));
+    assert_eq!(json!(before), saved);
+    let after = preview_continuation(before, repaired.clone()).unwrap();
+    let c: ModelCheckpoint = serde_json::from_str(after.checkpoint.as_ref().unwrap()).unwrap();
+    assert!(c.services.as_ref().unwrap().all_selected_services_feasible);
+    assert_eq!(json!(baseline.model), json!(repaired.model));
+    assert_eq!(json!(baseline.population), json!(repaired.population));
+    assert_eq!(json!(&baseline.plan[..4]), json!(&repaired.plan[..4]));
+    assert!(!c.rolling.pending.is_empty());
+    assert_eq!(
+        json!(audit(&d, &baseline).unwrap().coverage),
+        json!(c.services.unwrap().coverage)
+    );
+}
+#[test]
+fn deferral_stock_delta_matches_independent_two_event_balance() {
+    let (_, baseline, _, repaired) = feedback_fixture();
+    let p = &baseline.model.seasonal.physical.processes[1];
+    let n = baseline.plan[4].activities[1];
+    for t in 0..60 {
+        assert_eq!(baseline.plan[t].deliveries, repaired.plan[t].deliveries);
+        assert_eq!(baseline.plan[t].discarded, repaired.plan[t].discarded);
+        for k in 0..baseline.plan[t].closing.len() {
+            let saved_input = if (4..6).contains(&t) {
+                n * p.inputs[k]
+            } else {
+                0
+            };
+            let delayed_output = if (10..12).contains(&t) {
+                n * p.outputs[k]
+            } else {
+                0
+            };
+            assert_eq!(
+                repaired.plan[t].closing[k],
+                baseline.plan[t].closing[k] + saved_input - delayed_output
+            );
+        }
+        for j in 0..baseline.plan[t].activities.len() {
+            if j != 1 {
+                assert_eq!(
+                    baseline.plan[t].activities[j],
+                    repaired.plan[t].activities[j]
+                );
+            }
+        }
+    }
+    assert_eq!(
+        baseline.plan.last().unwrap().closing,
+        repaired.plan.last().unwrap().closing
+    );
+}
+#[test]
+fn unexplained_or_rewritten_availability_changes_are_rejected() {
+    let (d, baseline, _, repaired) = feedback_fixture();
+    let before = preview(d, baseline).unwrap();
+    for mode in 0..12 {
+        let mut next = repaired.clone();
+        let s = next.services.as_mut().unwrap();
+        match mode {
+            0 => s.revisions.clear(),
+            1 => s.revisions[0].basis.clear(),
+            2 => s.revisions[0].source_reference.clear(),
+            3 => s.revisions[0].changes[0].previous_bps -= 1,
+            4 => {
+                s.revisions[0].changes.pop();
+            }
+            5 => s.revisions[0].changes.swap(0, 1),
+            6 => s.revisions[0].boundary = 3,
+            7 => s.pools[0].availability_bps[3] -= 1,
+            8 => s.pools[0].working_days[4] += 1,
+            9 => s.rules[0].delivered[4] -= 1,
+            10 => s.pools[0].availability_bps[4] = 10001,
+            _ => s.registry.parameters[0].source_version = "2".into(),
+        }
+        assert!(
+            preview_continuation(before.clone(), next).is_err(),
+            "mode {mode}"
+        );
+    }
+}
+#[test]
+fn service_revision_cannot_be_injected_as_initial_history() {
+    let (d, _, _, repaired) = feedback_fixture();
+    assert!(preview(d, repaired).is_err());
+}
+#[test]
+fn unserviceable_outage_keeps_need_and_has_no_successful_repair() {
+    use qazna::service_feedback::repair_service_batch;
+    let (d, baseline, mut observed, _) = feedback_fixture();
+    let before = preview(d, baseline).unwrap();
+    let s = observed.services.as_mut().unwrap();
+    s.pools[0].availability_bps[4] = 0;
+    s.revisions[0].changes[0].available_bps = 0;
+    let saved = json!(observed);
+    let result = repair_service_batch(&before, &observed, 1, 4, 12).unwrap();
+    assert!(result.input.is_none());
+    assert_eq!(result.attempts.len(), 9);
+    assert!(result.attempts.iter().all(|r| r.rejection.is_some()));
+    assert_eq!(json!(observed), saved);
+}
+#[test]
+fn committed_work_and_prior_physical_rows_cannot_be_repaired_away() {
+    use qazna::service_feedback::defer_batch;
+    let (d, baseline, _, repaired) = feedback_fixture();
+    let before = preview(d, baseline).unwrap();
+    for mode in 0..3 {
+        let mut next = repaired.clone();
+        match mode {
+            0 => next.plan[0].activities[7] -= 1,
+            1 => next.plan[3].closing[3] += 1,
+            _ => next.model.lives[0].initial_remaining_periods += 1,
+        }
+        assert!(preview_continuation(before.clone(), next).is_err());
+    }
+    let mut late = repaired;
+    late.boundary = 7;
+    assert!(defer_batch(&late, 1, 6, 8).is_err());
+}
+#[test]
+fn second_revision_appends_without_rewriting_prior_evidence() {
+    let (d, baseline, _, repaired) = feedback_fixture();
+    let before = preview(d, baseline).unwrap();
+    let second = preview_continuation(before, repaired.clone()).unwrap();
+    let saved = json!(second);
+    let mut next = repaired;
+    next.boundary = 6;
+    let s = next.services.as_mut().unwrap();
+    s.pools[0].availability_bps[8] = 9999;
+    s.revisions.push(ServiceRevision {
+        boundary: 6,
+        basis: "Declared additional absence".into(),
+        source_reference: "qazna:test:absence:2".into(),
+        changes: vec![AvailabilityChange {
+            pool: s.pools[0].id.clone(),
+            period: 8,
+            previous_bps: 10000,
+            available_bps: 9999,
+        }],
+    });
+    assert!(preview_continuation(second.clone(), next.clone()).is_ok());
+    for mode in 0..3 {
+        let mut bad = next.clone();
+        let revisions = &mut bad.services.as_mut().unwrap().revisions;
+        match mode {
+            0 => revisions[0].source_reference = "rewritten".into(),
+            1 => {
+                revisions.remove(0);
+            }
+            _ => {
+                revisions.push(revisions[1].clone());
+            }
+        }
+        assert!(preview_continuation(second.clone(), bad).is_err());
+    }
+    assert_eq!(json!(second), saved);
+}
+#[test]
+fn availability_recovery_is_explicit_and_prefix_remains_fixed() {
+    let (d, baseline, _, repaired) = feedback_fixture();
+    let first = preview(d, baseline).unwrap();
+    let second = preview_continuation(first, repaired.clone()).unwrap();
+    let mut next = repaired;
+    next.boundary = 5;
+    let s = next.services.as_mut().unwrap();
+    let prior = s.pools[0].availability_bps[5];
+    s.pools[0].availability_bps[5] = 10000;
+    s.revisions.push(ServiceRevision {
+        boundary: 5,
+        basis: "Earlier recovery declared".into(),
+        source_reference: "qazna:test:recovery".into(),
+        changes: vec![AvailabilityChange {
+            pool: s.pools[0].id.clone(),
+            period: 5,
+            previous_bps: prior,
+            available_bps: 10000,
+        }],
+    });
+    assert!(preview_continuation(second, next).is_ok());
+}
+#[test]
+fn repair_search_bounds_and_bad_indexes_fail_without_panic() {
+    use qazna::service_feedback::{defer_batch, repair_service_batch};
+    let (d, baseline, observed, _) = feedback_fixture();
+    let before = preview(d, baseline).unwrap();
+    for (process, start, latest) in [(999, 4, 6), (1, 4, 28), (1, 3, 6), (1, 4, 3), (1, 4, 60)] {
+        assert!(repair_service_batch(&before, &observed, process, start, latest).is_err());
+    }
+    assert!(defer_batch(&observed, 1, 4, usize::MAX).is_err());
+}
+
+#[test]
+fn availability_grid_matches_independent_workforce_inequalities() {
+    use qazna::service_feedback::repair_service_batch;
+    let (d, baseline, observed, _) = feedback_fixture();
+    let before = preview(d, baseline.clone()).unwrap();
+    let n = baseline.plan[4].activities[1] as u128;
+    let s = baseline.services.as_ref().unwrap();
+    let stock = baseline.model.seasonal.physical.initial[s.pools[0].resource] as u128;
+    let needs = &s.rules[0].delivered;
+    for bps in [0u16, 9800, 9820, 9830, 9840, 9850, 9860, 9900, 9999, 10000] {
+        let mut next = observed.clone();
+        let s = next.services.as_mut().unwrap();
+        s.pools[0].availability_bps[4] = bps;
+        s.pools[0].availability_bps[5] = bps;
+        for c in &mut s.revisions[0].changes {
+            if c.pool == "north_care_staff" {
+                c.available_bps = bps;
+            }
+        }
+        s.revisions[0]
+            .changes
+            .retain(|c| c.previous_bps != c.available_bps);
+        let expected = (4..=12).find(|&start| {
+            (0..60).all(|t| {
+                let active = stock + if t > start + 6 { n } else { 0 };
+                let available =
+                    active * 9600 * u128::from(if t == 4 || t == 5 { bps } else { 10000 }) / 10000;
+                let mentor = if (start..start + 6).contains(&t) {
+                    n * 120
+                } else {
+                    0
+                };
+                u128::from(needs[t]) + mentor <= available
+            })
+        });
+        let result = repair_service_batch(&before, &next, 1, 4, 12).unwrap();
+        let found = result
+            .attempts
+            .iter()
+            .find(|a| a.rejection.is_none())
+            .map(|a| a.start);
+        assert_eq!(found, expected, "availability {bps}");
+        assert_eq!(result.input.is_some(), expected.is_some());
+    }
+}

@@ -903,3 +903,33 @@ requests in 27.141 seconds with two restarts. Actor seeds 7 and 19 completed.
 These timings describe local exercises, not a production capacity guarantee.
 No dependency, migration or monetary authority changed. Remote CI is recorded
 separately in the pull request.
+
+## Service feedback verification — 12 November 2026
+
+The existing `service_study` command now reproduces report schema 2, including
+baseline, declared absence, bounded search, approved repair, preserved boundary
+and unrecoverable attempts. All prior report sections remain intact.
+
+The service suite now has **22 tests**. New coverage includes independent stock
+deltas, earliest feasible repair, a ten-level availability grid checked against
+separate integer workforce inequalities, explicit recovery, append-only revisions,
+missing/forged change evidence, initial-history injection, frozen physical rows,
+ongoing work and bounded invalid indexes/windows. It also verifies failure without
+lowering needs or modifying caller inputs.
+
+The new PostgreSQL test rejects the original overloaded schedule without consuming
+its retry key, accepts a verified repair, races two competing approvals and verifies
+one winner, then rejects a historical source rewrite. Historical generations and
+live balances are unchanged. A separate HTTP fixture preserves accepted baseline
+and pending repair through restart and logical restore, approves it after recovery,
+and advances the boundary with the original revision and commitments intact.
+
+Full local `scripts/check.py` passed: **347 Rust tests**, including **22 service**
+and **123 PostgreSQL** tests, plus **11 Python** tests. Formatting, all-target Clippy,
+license inventory and byte-for-byte regeneration of all published reports passed.
+Logical restore verified **45 populated tables** and **15 privilege denials**.
+Both strict-evidence exercises and actor seeds 7/19 completed. Circulation handled
+4,548 requests in 33.063 seconds with one restart; closed circulation handled 3,901
+in 27.421 seconds with two restarts. These are local exercise timings.
+No dependencies, migrations or monetary authority changed. Remote push/PR checks
+are recorded separately in GitHub.

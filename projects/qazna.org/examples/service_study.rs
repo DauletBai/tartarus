@@ -3,6 +3,8 @@ use qazna::{
     horizon::{PeriodPlan, Process},
     model_scenarios::*,
     population::*,
+    rolling::RollingCapital,
+    service_feedback::{defer_batch, repair_service_batch},
     services::*,
 };
 use serde_json::{Value, json};
@@ -29,6 +31,93 @@ fn parameter(r: &mut Registry, id: &str, unit: &str, n: u64, d: u64) {
         }),
     });
 }
+fn feedback(definition: &ModelDefinition, input: &ModelInput) -> Value {
+    // The baseline reserves current capacity and schedules northern staff training
+    // in period four. Other development has already started at the revision boundary.
+    let mut fresh = input.clone();
+    fresh.boundary = 0;
+    let batch = fresh.plan[0].activities[1];
+    for period in &mut fresh.model.seasonal.physical.periods {
+        period.capacities[1] = batch;
+    }
+    let baseline = defer_batch(&fresh, 1, 0, 4).unwrap();
+    let before = preview(definition.clone(), baseline.clone()).unwrap();
+    let c: ModelCheckpoint = serde_json::from_str(before.checkpoint.as_ref().unwrap()).unwrap();
+    let mut observed = baseline.clone();
+    observed.boundary = 4;
+    let services = observed.services.as_mut().unwrap();
+    let mut changes = Vec::new();
+    // Temporary absences leave enough time for care but not the scheduled course.
+    // Device availability is reduced at the same boundary without moving need.
+    for k in [0, 4] {
+        for t in [4, 5] {
+            let e = &c.services.as_ref().unwrap().pools[t * services.pools.len() + k];
+            let full: u64 = e.available.parse().unwrap();
+            let use_: u64 = e.service_use.parse().unwrap();
+            let bps = u16::try_from((use_ * 10000).div_ceil(full)).unwrap();
+            let pool = &mut services.pools[k];
+            changes.push(AvailabilityChange {
+                pool: pool.id.clone(),
+                period: t,
+                previous_bps: pool.availability_bps[t],
+                available_bps: bps,
+            });
+            pool.availability_bps[t] = bps;
+        }
+    }
+    services.revisions.push(ServiceRevision {
+        boundary: 4,
+        basis: "Declared two-period mentor and device unavailability; retain care needs".into(),
+        source_reference: "qazna:service-feedback:temporary-absence:v1".into(),
+        changes,
+    });
+    let population = observed
+        .population
+        .as_ref()
+        .unwrap()
+        .audit(definition, &observed.model, &observed.plan)
+        .unwrap();
+    let shortage = observed
+        .services
+        .as_ref()
+        .unwrap()
+        .audit(definition, &observed.model, &observed.plan, &population)
+        .unwrap();
+    assert!(!shortage.all_selected_services_feasible);
+    assert!(preview_continuation(before.clone(), observed.clone()).is_err());
+    let repair = repair_service_batch(&before, &observed, 1, 4, 12).unwrap();
+    let repaired = repair.input.as_ref().unwrap();
+    assert_eq!(repair.attempts.last().unwrap().start, 6);
+    let after = preview_continuation(before.clone(), repaired.clone()).unwrap();
+    let checkpoint: ModelCheckpoint =
+        serde_json::from_str(after.checkpoint.as_ref().unwrap()).unwrap();
+    assert!(
+        checkpoint
+            .services
+            .as_ref()
+            .unwrap()
+            .all_selected_services_feasible
+    );
+    let prefix = RollingCapital::checkpoint(&baseline.model, &baseline.plan, 4).unwrap();
+    assert!(!prefix.snapshot().pending.is_empty());
+    assert_eq!(json!(prefix.snapshot()), json!(checkpoint.rolling));
+    assert_eq!(
+        json!(population),
+        json!(checkpoint.population.as_ref().unwrap())
+    );
+    let mut unavailable = observed.clone();
+    let s = unavailable.services.as_mut().unwrap();
+    s.pools[0].availability_bps[4] = 0;
+    s.revisions[0].changes[0].available_bps = 0;
+    let failed = repair_service_batch(&before, &unavailable, 1, 4, 12).unwrap();
+    assert!(failed.input.is_none());
+    json!({"baseline_input":baseline, "observed_input":observed,
+        "repair":repair, "service_evidence":checkpoint.services,
+        "preserved_boundary":checkpoint.rolling,
+        "initial_shortages":shortage.pools.into_iter().filter(|r|r.shortage!="0").collect::<Vec<_>>(),
+        "unrecoverable_attempts":failed.attempts,
+        "policy":"Earliest feasible deferral of one unstarted batch; at most 24 dates; no norm, need or endowment change"})
+}
 fn main() {
     let args: Vec<_> = env::args().collect();
     assert_eq!(args.len(), 2);
@@ -46,6 +135,7 @@ fn main() {
         .unwrap();
     let profiles = pop.profiles.as_ref().unwrap();
     let mut s = ServicePlan {
+        revisions: vec![],
         registry: Registry {
             version: "service-capacity-v1".into(),
             mode: InputMode::Illustrative,
@@ -406,7 +496,8 @@ fn main() {
         .unwrap_err()
         .to_string();
     let summary:Vec<_>=input.services.as_ref().unwrap().pools.iter().enumerate().map(|(i,p)|json!({"pool":p.id,"initial_slots":initial[i],"new_slots":growth[i],"completion_period":lags[i],"first_usable_period":lags[i]+1})).collect();
-    let output = json!({"schema_version":1,"assumptions":"docs/input-assumptions.md#care-and-education-capacity","runtime_fixture":{"definition":definition,"input":input,"population_evidence":checkpoint.population,"service_evidence":checkpoint.services},"capacity_summary":summary,"outage_counterexample":{"gaps":outage.pools.into_iter().filter(|p|p.shortage!="0").collect::<Vec<_>>(),"runtime_rejection":rejection}});
+    let feedback = feedback(&definition, &input);
+    let output = json!({"schema_version":2,"feedback":feedback,"assumptions":"docs/input-assumptions.md#care-and-education-capacity","runtime_fixture":{"definition":definition,"input":input,"population_evidence":checkpoint.population,"service_evidence":checkpoint.services},"capacity_summary":summary,"outage_counterexample":{"gaps":outage.pools.into_iter().filter(|p|p.shortage!="0").collect::<Vec<_>>(),"runtime_rejection":rejection}});
     fs::write(&args[1], serde_json::to_vec_pretty(&output).unwrap()).unwrap();
     println!(
         "Verified regional care/education, shared development workload, operating resources and delayed capacity"

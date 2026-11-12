@@ -124,6 +124,25 @@ pub fn preview(
     )
 }
 
+/// Pure continuation preview. The runtime always obtains `before` from its own
+/// database; this offline helper neither authenticates nor stores a checkpoint.
+pub fn preview_continuation(
+    before: ModelVersion,
+    input: ModelInput,
+) -> Result<ModelVersion, LedgerError> {
+    let expected_generation = before.generation;
+    calculate(
+        before,
+        ModelProposal {
+            id: Uuid::nil(),
+            expected_generation,
+            input,
+            basis: "Independent continuation calculation".into(),
+        },
+        vec![],
+    )
+}
+
 pub(crate) fn text(s: &str, max: usize) -> Result<(), LedgerError> {
     if s.trim().is_empty() || s.len() > max {
         return Err(LedgerError::Invalid("invalid model descriptor or basis"));
@@ -264,8 +283,12 @@ pub(crate) fn calculate(
     }
     let invalid = |_| LedgerError::Invalid("infeasible model or rewritten committed history");
     if let Some(old) = checkpoint(&before)? {
-        if input.services != old.input.services {
-            return Err(LedgerError::Invalid("service assumptions changed"));
+        match (&input.services, &old.input.services) {
+            (Some(next), Some(prior)) => next
+                .verify_continuation(prior, input.boundary)
+                .map_err(|_| LedgerError::Invalid("invalid service revision"))?,
+            (None, None) => {}
+            _ => return Err(LedgerError::Invalid("service binding changed")),
         }
         if input.population != old.input.population {
             return Err(LedgerError::Invalid("population assumptions changed"));
@@ -292,6 +315,14 @@ pub(crate) fn calculate(
         )
         .map_err(invalid)?;
         prefix.replay(&input.model, &input.plan).map_err(invalid)?;
+    } else if input
+        .services
+        .as_ref()
+        .is_some_and(|s| !s.revisions.is_empty())
+    {
+        return Err(LedgerError::Invalid(
+            "initial service input contains revision history",
+        ));
     }
     let rolling = RollingCapital::checkpoint(&input.model, &input.plan, input.boundary)
         .map_err(invalid)?

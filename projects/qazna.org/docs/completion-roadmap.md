@@ -1,6 +1,6 @@
 # Completion roadmap and feasibility boundaries
 
-Latest review: 12 November 2026, shared care and education capacity.
+Latest review: 12 November 2026, controlled service feedback and bounded repair.
 The current work order below supersedes earlier milestone-specific next steps.
 
 ## Completion scope and remaining work — 12 November 2026
@@ -26,10 +26,14 @@ workforce, rooms, equipment, training and construction with exact operating inpu
 Lifecycle transitions, sex-specific fertility, full upstream integration, regional
 routes, source calibration and engineering inputs remain open;
 package 3 is not complete.
-Next implementation gate: controlled future service replanning after declared
-workforce/equipment outages, preserving accepted history, ongoing training and
-human needs. This advances package 4 without claiming package 3 calibration is
-finished. The effort range below remains a planning estimate, not a new deadline.
+Controlled future availability revisions and bounded unstarted-batch repair now
+preserve accepted history, ongoing training and human needs. Package 4 has this
+first reviewed repair path, including failed recovery. Next integration gate: persist incident declarations independently of successful
+repair, join service feedback to reviewed circulation and exercise repeated
+disruptions, keeping
+physical shortages distinct from liquidity gaps. Multi-batch planning, repeatable
+terminal circulation and upstream service replenishment remain open; package 3
+calibration and package 4 are not complete. The effort range below remains a planning estimate, not a new deadline.
 
 The target for this estimate is **research demonstrator v1**: a reproducible,
 bounded five-year scenario with linked provisioning, physical capabilities and
@@ -44,7 +48,7 @@ national sectors or a production monetary system.
 | 1. Persistent physical scenario foundation — implemented | Dated and capital/seasonal inputs, reviewed versions, pinned selected stocks and restart/restore; monetary association continues in package 2 | — |
 | 2. Join extended physical and monetary plans — implemented for selected candidate | 60-month runtime fixture, origin-preserving food, upstream production, finite capital/recovery and exact payments; independent balances and rejection of infeasible capacity changes. Efficiency, deficit quantification and repeatable policy continue in package 4 | — |
 | 3. Input and population registry — bounded foundation implemented | Exact monthly cohorts, registry metadata, unknown needs and reviewed binding implemented. Regional/life-stage needs, shared service capacity and local-shortage gates implemented. Remaining: source calibration, lifecycle transitions, regional routes and engineering coefficients | 6–10 |
-| 4. Close the rolling feedback experiment | Decisions use observed state, retain commitments, replan after declared outages/demand changes, report shortages without inventing goods, and pass sensitivity/adversarial cases; optional solver outputs independently verified | 4–7 |
+| 4. Close the rolling feedback experiment — bounded service repair implemented | Exact availability revisions and one-batch repair implemented; full integration and repeated-event policy remain. Decisions use observed state, retain commitments, replan after declared outages/demand changes, report shortages without inventing goods, and pass sensitivity/adversarial cases; optional solver outputs independently verified | 4–7 |
 | 5. Expose the demonstrator's workflows | Small operator/reviewer interface, synthetic participant scope, intelligible reasons, correction/dispute examples, approval and audit history, accessible navigation; no claim of production identity/enrollment | 7–12 |
 | 6. Freeze and reproduce a release | Clean deployment, recorded workload envelope, sustained/restart/restore and fault exercises, dependency/privilege review, versioned evidence and known limitations, release guide and runnable demonstration | 4–6 |
 

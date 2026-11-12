@@ -78,6 +78,7 @@ def populate_and_restart(url):
         population_reference = populate_population(call)
         profile_reference = populate_population(call, "need-profile-results.json")
         service_reference = populate_population(call, "service-results.json")
+        feedback_reference = populate_service_feedback(call)
     with server(url) as call:
         assert call(model_reference['path']) == model_reference['saved']
         assert call(model_reference['draft_path']) == model_reference['pending']
@@ -91,9 +92,11 @@ def populate_and_restart(url):
         assert call(profile_reference['draft_path']) == profile_reference['pending']
         assert call(service_reference['path']) == service_reference['saved']
         assert call(service_reference['draft_path']) == service_reference['pending']
+        assert call(feedback_reference['path']) == feedback_reference['saved']
+        assert call(feedback_reference['draft_path']) == feedback_reference['pending']
     print('Physical model: full accepted and pending state survives process restart', flush=True)
     print('Dated scenario: 2 process restarts, pending and approved bytes preserved', flush=True)
-    return dict(path=path, saved=saved, pending=next_draft, model=model_reference, coupled=coupled_reference, extended=extended_reference, population=population_reference, profiles=profile_reference, services=service_reference)
+    return dict(path=path, saved=saved, pending=next_draft, model=model_reference, coupled=coupled_reference, extended=extended_reference, population=population_reference, profiles=profile_reference, services=service_reference, service_feedback=feedback_reference)
 
 
 def resume_restored(url, reference):
@@ -120,6 +123,7 @@ def resume_restored(url, reference):
         resume_population(call, reference['population'])
         resume_population(call, reference['profiles'])
         resume_population(call, reference['services'])
+        resume_service_feedback(call, reference['service_feedback'])
     print('Dated scenario: restored history continued under least-privilege runtime role', flush=True)
 
 
@@ -324,3 +328,48 @@ def resume_population(call, reference):
     assert new['input']['boundary'] == 30
     assert call(reference['path'] + '/versions/1') == reference['saved']
     print('Population registry: sources, exact cohorts, unknown needs and pending continuation survive restart/restore', flush=True)
+
+
+def populate_service_feedback(call):
+    report = json.loads((ROOT / 'research/service-results.json').read_text())
+    definition = report['runtime_fixture']['definition']
+    definition['id'] = uid()
+    feedback = report['feedback']
+    path = '/v1/scenarios/models/' + definition['id']
+    call('/v1/scenarios/models', definition)
+    draft = call(path + '/drafts', dict(id=uid(), expected_generation=0,
+        input=feedback['baseline_input'], basis='Baseline with scheduled training and fixed needs'))
+    saved = call('/v1/model-drafts/' + draft['request']['id'] + '/resolve',
+        dict(apply=True, basis='Reviewed service baseline'))['candidate']
+    pending = call(path + '/drafts', dict(id=uid(), expected_generation=1,
+        input=feedback['repair']['input'], basis='Declared absence with independently verified deferral'))
+    candidate = json.loads(pending['candidate']['checkpoint'])
+    assert candidate['services'] == feedback['service_evidence']
+    assert candidate['rolling'] == feedback['preserved_boundary']
+    return dict(path=path, saved=saved, pending=pending,
+        draft_path='/v1/model-drafts/' + pending['request']['id'])
+
+
+def resume_service_feedback(call, reference):
+    assert call(reference['path']) == reference['saved']
+    assert call(reference['draft_path']) == reference['pending']
+    result = call(reference['draft_path'] + '/resolve',
+        dict(apply=True, basis='Review preserved service repair after database restore'))['candidate']
+    assert result == reference['pending']['candidate']
+    old = json.loads(reference['saved']['checkpoint'])
+    new = json.loads(result['checkpoint'])
+    assert old['input']['plan'][:4] == new['input']['plan'][:4]
+    assert old['population'] == new['population']
+    assert len(new['input']['services']['revisions']) == 1
+    assert new['rolling']['pending']
+    assert new['services']['all_selected_services_feasible']
+    later = copy.deepcopy(new['input'])
+    later['boundary'] = 6
+    draft = call(reference['path'] + '/drafts', dict(id=uid(), expected_generation=2,
+        input=later, basis='Continue with preserved revision and ongoing training'))
+    approved = call('/v1/model-drafts/' + draft['request']['id'] + '/resolve',
+        dict(apply=True, basis='Independent continuation review'))['candidate']
+    assert json.loads(approved['checkpoint'])['input']['services']['revisions'] == new['input']['services']['revisions']
+    assert call(reference['path'] + '/versions/1') == reference['saved']
+    assert call(reference['path'] + '/versions/2') == result
+    print('Service feedback: outage evidence, deferred training and committed work survive restart/restore', flush=True)
