@@ -41,6 +41,15 @@ measure funds this fixed schedule, but its terminal distribution is **not repeat
 without further redistribution**. This is an exposed planning gap, not a completed
 national monetary model. See the [integrated evidence](docs/physical-circulation.md#extended-five-year-runtime-integration).
 
+The [population input registry](docs/physical-circulation.md#population-registry-and-conditional-demand)
+now projects monthly age cohorts, births, deaths and migration with exact counts,
+calendar days and explicit unknown needs. Three illustrative variants start from
+100 million people. Their prospective food-component demand exceeds the previous
+upstream plan, which correctly fails full-needs approval; settled payments cannot
+stand in for provision. A separate finite-stock test verifies the accepted runtime
+binding and restart/restore. These coefficients are test assumptions, not a national
+forecast or medical prescription.
+
 ## Project information
 
 | Item | Reference |

@@ -110,3 +110,16 @@ Offline preview helpers carry no approval authority. Synthetic yields, opening a
 and shelf lives remain assumptions, not verified observations. A feasible payment
 schedule can have a non-repeatable final distribution; the fixture publishes that
 negative result rather than silently reallocating or issuing measure.
+
+
+### Population inputs and missing evidence
+
+The population projection has no model/API dependency. Imported coefficient units,
+dates, ratios, partitions and references are validated in Rust. Unknown needs remain
+unknown even when another age group has a surplus. Setting a source-attributed mode
+cannot silently accept synthetic-labelled parameters, but a URL or claimed source
+label is not proof of correctness; independent evidence review remains necessary.
+A demographic projection never changes resident entitlements, earnings or real
+ledger balances. Operator approval recomputes the population and rejects understated
+mapped needs or rewritten source assumptions. Failed full-needs plans remain failed;
+AI commentary cannot make missing food, medical evidence or source authority appear.

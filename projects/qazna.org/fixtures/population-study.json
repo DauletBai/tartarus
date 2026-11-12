@@ -1,0 +1,6458 @@
+{
+  "registry": {
+    "version": "population-inputs-v1",
+    "mode": "illustrative",
+    "parameters": [
+      {
+        "id": "early_childhood_opening_0",
+        "unit": "person",
+        "region": "Synthetic 100-million population",
+        "reference_period": "2027-2031 scenario; not an observation",
+        "recorded_on": "2026-11-12",
+        "source": "qazna:population-study:v1",
+        "source_version": "1",
+        "basis": "Illustrative test coefficient, not national statistics or medical guidance",
+        "kind": "synthetic",
+        "estimate": {
+          "lower": {
+            "numerator": 111111,
+            "denominator": 1
+          },
+          "central": {
+            "numerator": 111111,
+            "denominator": 1
+          },
+          "upper": {
+            "numerator": 111111,
+            "denominator": 1
+          }
+        }
+      },
+      {
+        "id": "early_childhood_opening_1",
+        "unit": "person",
+        "region": "Synthetic 100-million population",
+        "reference_period": "2027-2031 scenario; not an observation",
+        "recorded_on": "2026-11-12",
+        "source": "qazna:population-study:v1",
+        "source_version": "1",
+        "basis": "Illustrative test coefficient, not national statistics or medical guidance",
+        "kind": "synthetic",
+        "estimate": {
+          "lower": {
+            "numerator": 111112,
+            "denominator": 1
+          },
+          "central": {
+            "numerator": 111112,
+            "denominator": 1
+          },
+          "upper": {
+            "numerator": 111112,
+            "denominator": 1
+          }
+        }
+      },
+      {
+        "id": "early_childhood_mortality",
+        "unit": "death/person/month",
+        "region": "Synthetic 100-million population",
+        "reference_period": "2027-2031 scenario; not an observation",
+        "recorded_on": "2026-11-12",
+        "source": "qazna:population-study:v1",
+        "source_version": "1",
+        "basis": "Illustrative test coefficient, not national statistics or medical guidance",
+        "kind": "synthetic",
+        "estimate": {
+          "lower": {
+            "numerator": 400,
+            "denominator": 10000000
+          },
+          "central": {
+            "numerator": 50,
+            "denominator": 1000000
+          },
+          "upper": {
+            "numerator": 600,
+            "denominator": 10000000
+          }
+        }
+      },
+      {
+        "id": "preschool_opening_0",
+        "unit": "person",
+        "region": "Synthetic 100-million population",
+        "reference_period": "2027-2031 scenario; not an observation",
+        "recorded_on": "2026-11-12",
+        "source": "qazna:population-study:v1",
+        "source_version": "1",
+        "basis": "Illustrative test coefficient, not national statistics or medical guidance",
+        "kind": "synthetic",
+        "estimate": {
+          "lower": {
+            "numerator": 111111,
+            "denominator": 1
+          },
+          "central": {
+            "numerator": 111111,
+            "denominator": 1
+          },
+          "upper": {
+            "numerator": 111111,
+            "denominator": 1
+          }
+        }
+      },
+      {
+        "id": "preschool_opening_1",
+        "unit": "person",
+        "region": "Synthetic 100-million population",
+        "reference_period": "2027-2031 scenario; not an observation",
+        "recorded_on": "2026-11-12",
+        "source": "qazna:population-study:v1",
+        "source_version": "1",
+        "basis": "Illustrative test coefficient, not national statistics or medical guidance",
+        "kind": "synthetic",
+        "estimate": {
+          "lower": {
+            "numerator": 111112,
+            "denominator": 1
+          },
+          "central": {
+            "numerator": 111112,
+            "denominator": 1
+          },
+          "upper": {
+            "numerator": 111112,
+            "denominator": 1
+          }
+        }
+      },
+      {
+        "id": "preschool_mortality",
+        "unit": "death/person/month",
+        "region": "Synthetic 100-million population",
+        "reference_period": "2027-2031 scenario; not an observation",
+        "recorded_on": "2026-11-12",
+        "source": "qazna:population-study:v1",
+        "source_version": "1",
+        "basis": "Illustrative test coefficient, not national statistics or medical guidance",
+        "kind": "synthetic",
+        "estimate": {
+          "lower": {
+            "numerator": 80,
+            "denominator": 10000000
+          },
+          "central": {
+            "numerator": 10,
+            "denominator": 1000000
+          },
+          "upper": {
+            "numerator": 120,
+            "denominator": 10000000
+          }
+        }
+      },
+      {
+        "id": "school_age_opening_0",
+        "unit": "person",
+        "region": "Synthetic 100-million population",
+        "reference_period": "2027-2031 scenario; not an observation",
+        "recorded_on": "2026-11-12",
+        "source": "qazna:population-study:v1",
+        "source_version": "1",
+        "basis": "Illustrative test coefficient, not national statistics or medical guidance",
+        "kind": "synthetic",
+        "estimate": {
+          "lower": {
+            "numerator": 111111,
+            "denominator": 1
+          },
+          "central": {
+            "numerator": 111111,
+            "denominator": 1
+          },
+          "upper": {
+            "numerator": 111111,
+            "denominator": 1
+          }
+        }
+      },
+      {
+        "id": "school_age_opening_1",
+        "unit": "person",
+        "region": "Synthetic 100-million population",
+        "reference_period": "2027-2031 scenario; not an observation",
+        "recorded_on": "2026-11-12",
+        "source": "qazna:population-study:v1",
+        "source_version": "1",
+        "basis": "Illustrative test coefficient, not national statistics or medical guidance",
+        "kind": "synthetic",
+        "estimate": {
+          "lower": {
+            "numerator": 111112,
+            "denominator": 1
+          },
+          "central": {
+            "numerator": 111112,
+            "denominator": 1
+          },
+          "upper": {
+            "numerator": 111112,
+            "denominator": 1
+          }
+        }
+      },
+      {
+        "id": "school_age_mortality",
+        "unit": "death/person/month",
+        "region": "Synthetic 100-million population",
+        "reference_period": "2027-2031 scenario; not an observation",
+        "recorded_on": "2026-11-12",
+        "source": "qazna:population-study:v1",
+        "source_version": "1",
+        "basis": "Illustrative test coefficient, not national statistics or medical guidance",
+        "kind": "synthetic",
+        "estimate": {
+          "lower": {
+            "numerator": 160,
+            "denominator": 10000000
+          },
+          "central": {
+            "numerator": 20,
+            "denominator": 1000000
+          },
+          "upper": {
+            "numerator": 240,
+            "denominator": 10000000
+          }
+        }
+      },
+      {
+        "id": "adult_opening_0",
+        "unit": "person",
+        "region": "Synthetic 100-million population",
+        "reference_period": "2027-2031 scenario; not an observation",
+        "recorded_on": "2026-11-12",
+        "source": "qazna:population-study:v1",
+        "source_version": "1",
+        "basis": "Illustrative test coefficient, not national statistics or medical guidance",
+        "kind": "synthetic",
+        "estimate": {
+          "lower": {
+            "numerator": 106382,
+            "denominator": 1
+          },
+          "central": {
+            "numerator": 106382,
+            "denominator": 1
+          },
+          "upper": {
+            "numerator": 106382,
+            "denominator": 1
+          }
+        }
+      },
+      {
+        "id": "adult_opening_1",
+        "unit": "person",
+        "region": "Synthetic 100-million population",
+        "reference_period": "2027-2031 scenario; not an observation",
+        "recorded_on": "2026-11-12",
+        "source": "qazna:population-study:v1",
+        "source_version": "1",
+        "basis": "Illustrative test coefficient, not national statistics or medical guidance",
+        "kind": "synthetic",
+        "estimate": {
+          "lower": {
+            "numerator": 106383,
+            "denominator": 1
+          },
+          "central": {
+            "numerator": 106383,
+            "denominator": 1
+          },
+          "upper": {
+            "numerator": 106383,
+            "denominator": 1
+          }
+        }
+      },
+      {
+        "id": "adult_mortality",
+        "unit": "death/person/month",
+        "region": "Synthetic 100-million population",
+        "reference_period": "2027-2031 scenario; not an observation",
+        "recorded_on": "2026-11-12",
+        "source": "qazna:population-study:v1",
+        "source_version": "1",
+        "basis": "Illustrative test coefficient, not national statistics or medical guidance",
+        "kind": "synthetic",
+        "estimate": {
+          "lower": {
+            "numerator": 1600,
+            "denominator": 10000000
+          },
+          "central": {
+            "numerator": 200,
+            "denominator": 1000000
+          },
+          "upper": {
+            "numerator": 2400,
+            "denominator": 10000000
+          }
+        }
+      },
+      {
+        "id": "older_opening_0",
+        "unit": "person",
+        "region": "Synthetic 100-million population",
+        "reference_period": "2027-2031 scenario; not an observation",
+        "recorded_on": "2026-11-12",
+        "source": "qazna:population-study:v1",
+        "source_version": "1",
+        "basis": "Illustrative test coefficient, not national statistics or medical guidance",
+        "kind": "synthetic",
+        "estimate": {
+          "lower": {
+            "numerator": 53333,
+            "denominator": 1
+          },
+          "central": {
+            "numerator": 53333,
+            "denominator": 1
+          },
+          "upper": {
+            "numerator": 53333,
+            "denominator": 1
+          }
+        }
+      },
+      {
+        "id": "older_opening_1",
+        "unit": "person",
+        "region": "Synthetic 100-million population",
+        "reference_period": "2027-2031 scenario; not an observation",
+        "recorded_on": "2026-11-12",
+        "source": "qazna:population-study:v1",
+        "source_version": "1",
+        "basis": "Illustrative test coefficient, not national statistics or medical guidance",
+        "kind": "synthetic",
+        "estimate": {
+          "lower": {
+            "numerator": 53334,
+            "denominator": 1
+          },
+          "central": {
+            "numerator": 53334,
+            "denominator": 1
+          },
+          "upper": {
+            "numerator": 53334,
+            "denominator": 1
+          }
+        }
+      },
+      {
+        "id": "older_mortality",
+        "unit": "death/person/month",
+        "region": "Synthetic 100-million population",
+        "reference_period": "2027-2031 scenario; not an observation",
+        "recorded_on": "2026-11-12",
+        "source": "qazna:population-study:v1",
+        "source_version": "1",
+        "basis": "Illustrative test coefficient, not national statistics or medical guidance",
+        "kind": "synthetic",
+        "estimate": {
+          "lower": {
+            "numerator": 24000,
+            "denominator": 10000000
+          },
+          "central": {
+            "numerator": 3000,
+            "denominator": 1000000
+          },
+          "upper": {
+            "numerator": 36000,
+            "denominator": 10000000
+          }
+        }
+      },
+      {
+        "id": "births",
+        "unit": "person/month",
+        "region": "Synthetic 100-million population",
+        "reference_period": "2027-2031 scenario; not an observation",
+        "recorded_on": "2026-11-12",
+        "source": "qazna:population-study:v1",
+        "source_version": "1",
+        "basis": "Illustrative test coefficient, not national statistics or medical guidance",
+        "kind": "synthetic",
+        "estimate": {
+          "lower": {
+            "numerator": 100000,
+            "denominator": 1
+          },
+          "central": {
+            "numerator": 150000,
+            "denominator": 1
+          },
+          "upper": {
+            "numerator": 200000,
+            "denominator": 1
+          }
+        }
+      },
+      {
+        "id": "arrivals",
+        "unit": "person/month",
+        "region": "Synthetic 100-million population",
+        "reference_period": "2027-2031 scenario; not an observation",
+        "recorded_on": "2026-11-12",
+        "source": "qazna:population-study:v1",
+        "source_version": "1",
+        "basis": "Illustrative test coefficient, not national statistics or medical guidance",
+        "kind": "synthetic",
+        "estimate": {
+          "lower": {
+            "numerator": 5000,
+            "denominator": 1
+          },
+          "central": {
+            "numerator": 10000,
+            "denominator": 1
+          },
+          "upper": {
+            "numerator": 15000,
+            "denominator": 1
+          }
+        }
+      },
+      {
+        "id": "departures",
+        "unit": "person/month",
+        "region": "Synthetic 100-million population",
+        "reference_period": "2027-2031 scenario; not an observation",
+        "recorded_on": "2026-11-12",
+        "source": "qazna:population-study:v1",
+        "source_version": "1",
+        "basis": "Illustrative test coefficient, not national statistics or medical guidance",
+        "kind": "synthetic",
+        "estimate": {
+          "lower": {
+            "numerator": 4000,
+            "denominator": 1
+          },
+          "central": {
+            "numerator": 7000,
+            "denominator": 1
+          },
+          "upper": {
+            "numerator": 10000,
+            "denominator": 1
+          }
+        }
+      },
+      {
+        "id": "early_childhood_rice_component",
+        "unit": "gross-equivalent kg/person/day",
+        "region": "Synthetic 100-million population",
+        "reference_period": "2027-2031 scenario; not an observation",
+        "recorded_on": "2026-11-12",
+        "source": "qazna:population-study:v1",
+        "source_version": "1",
+        "basis": "Illustrative test coefficient, not national statistics or medical guidance",
+        "kind": "synthetic",
+        "estimate": {
+          "lower": {
+            "numerator": 640,
+            "denominator": 10000
+          },
+          "central": {
+            "numerator": 80,
+            "denominator": 1000
+          },
+          "upper": {
+            "numerator": 960,
+            "denominator": 10000
+          }
+        }
+      },
+      {
+        "id": "early_childhood_oats_component",
+        "unit": "gross-equivalent kg/person/day",
+        "region": "Synthetic 100-million population",
+        "reference_period": "2027-2031 scenario; not an observation",
+        "recorded_on": "2026-11-12",
+        "source": "qazna:population-study:v1",
+        "source_version": "1",
+        "basis": "Illustrative test coefficient, not national statistics or medical guidance",
+        "kind": "synthetic",
+        "estimate": {
+          "lower": {
+            "numerator": 400,
+            "denominator": 10000
+          },
+          "central": {
+            "numerator": 50,
+            "denominator": 1000
+          },
+          "upper": {
+            "numerator": 600,
+            "denominator": 10000
+          }
+        }
+      },
+      {
+        "id": "early_childhood_water_component",
+        "unit": "litre/person/day",
+        "region": "Synthetic 100-million population",
+        "reference_period": "2027-2031 scenario; not an observation",
+        "recorded_on": "2026-11-12",
+        "source": "qazna:population-study:v1",
+        "source_version": "1",
+        "basis": "Illustrative test coefficient, not national statistics or medical guidance",
+        "kind": "synthetic",
+        "estimate": {
+          "lower": {
+            "numerator": 16000,
+            "denominator": 10000
+          },
+          "central": {
+            "numerator": 2000,
+            "denominator": 1000
+          },
+          "upper": {
+            "numerator": 24000,
+            "denominator": 10000
+          }
+        }
+      },
+      {
+        "id": "early_childhood_preschool_capacity",
+        "unit": "place-day/person/day",
+        "region": "Synthetic 100-million population",
+        "reference_period": "2027-2031 scenario; not an observation",
+        "recorded_on": "2026-11-12",
+        "source": "qazna:population-study:v1",
+        "source_version": "1",
+        "basis": "Illustrative test coefficient, not national statistics or medical guidance",
+        "kind": "synthetic",
+        "estimate": {
+          "lower": {
+            "numerator": 0,
+            "denominator": 1000
+          },
+          "central": {
+            "numerator": 0,
+            "denominator": 1000
+          },
+          "upper": {
+            "numerator": 0,
+            "denominator": 1000
+          }
+        }
+      },
+      {
+        "id": "early_childhood_school_capacity",
+        "unit": "place-day/person/day",
+        "region": "Synthetic 100-million population",
+        "reference_period": "2027-2031 scenario; not an observation",
+        "recorded_on": "2026-11-12",
+        "source": "qazna:population-study:v1",
+        "source_version": "1",
+        "basis": "Illustrative test coefficient, not national statistics or medical guidance",
+        "kind": "synthetic",
+        "estimate": {
+          "lower": {
+            "numerator": 0,
+            "denominator": 1000
+          },
+          "central": {
+            "numerator": 0,
+            "denominator": 1000
+          },
+          "upper": {
+            "numerator": 0,
+            "denominator": 1000
+          }
+        }
+      },
+      {
+        "id": "early_childhood_care_time",
+        "unit": "minute/person/day",
+        "region": "Synthetic 100-million population",
+        "reference_period": "2027-2031 scenario; not an observation",
+        "recorded_on": "2026-11-12",
+        "source": "qazna:population-study:v1",
+        "source_version": "1",
+        "basis": "Missing age-specific evidence; remains unknown, never zero",
+        "kind": "unknown",
+        "estimate": null
+      },
+      {
+        "id": "early_childhood_protein",
+        "unit": "g/person/day",
+        "region": "Synthetic 100-million population",
+        "reference_period": "2027-2031 scenario; not an observation",
+        "recorded_on": "2026-11-12",
+        "source": "qazna:population-study:v1",
+        "source_version": "1",
+        "basis": "Missing age-specific evidence; remains unknown, never zero",
+        "kind": "unknown",
+        "estimate": null
+      },
+      {
+        "id": "early_childhood_vitamin_d",
+        "unit": "microgram/person/day",
+        "region": "Synthetic 100-million population",
+        "reference_period": "2027-2031 scenario; not an observation",
+        "recorded_on": "2026-11-12",
+        "source": "qazna:population-study:v1",
+        "source_version": "1",
+        "basis": "Missing age-specific evidence; remains unknown, never zero",
+        "kind": "unknown",
+        "estimate": null
+      },
+      {
+        "id": "preschool_rice_component",
+        "unit": "gross-equivalent kg/person/day",
+        "region": "Synthetic 100-million population",
+        "reference_period": "2027-2031 scenario; not an observation",
+        "recorded_on": "2026-11-12",
+        "source": "qazna:population-study:v1",
+        "source_version": "1",
+        "basis": "Illustrative test coefficient, not national statistics or medical guidance",
+        "kind": "synthetic",
+        "estimate": {
+          "lower": {
+            "numerator": 1440,
+            "denominator": 10000
+          },
+          "central": {
+            "numerator": 180,
+            "denominator": 1000
+          },
+          "upper": {
+            "numerator": 2160,
+            "denominator": 10000
+          }
+        }
+      },
+      {
+        "id": "preschool_oats_component",
+        "unit": "gross-equivalent kg/person/day",
+        "region": "Synthetic 100-million population",
+        "reference_period": "2027-2031 scenario; not an observation",
+        "recorded_on": "2026-11-12",
+        "source": "qazna:population-study:v1",
+        "source_version": "1",
+        "basis": "Illustrative test coefficient, not national statistics or medical guidance",
+        "kind": "synthetic",
+        "estimate": {
+          "lower": {
+            "numerator": 800,
+            "denominator": 10000
+          },
+          "central": {
+            "numerator": 100,
+            "denominator": 1000
+          },
+          "upper": {
+            "numerator": 1200,
+            "denominator": 10000
+          }
+        }
+      },
+      {
+        "id": "preschool_water_component",
+        "unit": "litre/person/day",
+        "region": "Synthetic 100-million population",
+        "reference_period": "2027-2031 scenario; not an observation",
+        "recorded_on": "2026-11-12",
+        "source": "qazna:population-study:v1",
+        "source_version": "1",
+        "basis": "Illustrative test coefficient, not national statistics or medical guidance",
+        "kind": "synthetic",
+        "estimate": {
+          "lower": {
+            "numerator": 16000,
+            "denominator": 10000
+          },
+          "central": {
+            "numerator": 2000,
+            "denominator": 1000
+          },
+          "upper": {
+            "numerator": 24000,
+            "denominator": 10000
+          }
+        }
+      },
+      {
+        "id": "preschool_preschool_capacity",
+        "unit": "place-day/person/day",
+        "region": "Synthetic 100-million population",
+        "reference_period": "2027-2031 scenario; not an observation",
+        "recorded_on": "2026-11-12",
+        "source": "qazna:population-study:v1",
+        "source_version": "1",
+        "basis": "Illustrative test coefficient, not national statistics or medical guidance",
+        "kind": "synthetic",
+        "estimate": {
+          "lower": {
+            "numerator": 1000,
+            "denominator": 1000
+          },
+          "central": {
+            "numerator": 1000,
+            "denominator": 1000
+          },
+          "upper": {
+            "numerator": 1000,
+            "denominator": 1000
+          }
+        }
+      },
+      {
+        "id": "preschool_school_capacity",
+        "unit": "place-day/person/day",
+        "region": "Synthetic 100-million population",
+        "reference_period": "2027-2031 scenario; not an observation",
+        "recorded_on": "2026-11-12",
+        "source": "qazna:population-study:v1",
+        "source_version": "1",
+        "basis": "Illustrative test coefficient, not national statistics or medical guidance",
+        "kind": "synthetic",
+        "estimate": {
+          "lower": {
+            "numerator": 0,
+            "denominator": 1000
+          },
+          "central": {
+            "numerator": 0,
+            "denominator": 1000
+          },
+          "upper": {
+            "numerator": 0,
+            "denominator": 1000
+          }
+        }
+      },
+      {
+        "id": "preschool_care_time",
+        "unit": "minute/person/day",
+        "region": "Synthetic 100-million population",
+        "reference_period": "2027-2031 scenario; not an observation",
+        "recorded_on": "2026-11-12",
+        "source": "qazna:population-study:v1",
+        "source_version": "1",
+        "basis": "Missing age-specific evidence; remains unknown, never zero",
+        "kind": "unknown",
+        "estimate": null
+      },
+      {
+        "id": "preschool_protein",
+        "unit": "g/person/day",
+        "region": "Synthetic 100-million population",
+        "reference_period": "2027-2031 scenario; not an observation",
+        "recorded_on": "2026-11-12",
+        "source": "qazna:population-study:v1",
+        "source_version": "1",
+        "basis": "Missing age-specific evidence; remains unknown, never zero",
+        "kind": "unknown",
+        "estimate": null
+      },
+      {
+        "id": "preschool_vitamin_d",
+        "unit": "microgram/person/day",
+        "region": "Synthetic 100-million population",
+        "reference_period": "2027-2031 scenario; not an observation",
+        "recorded_on": "2026-11-12",
+        "source": "qazna:population-study:v1",
+        "source_version": "1",
+        "basis": "Missing age-specific evidence; remains unknown, never zero",
+        "kind": "unknown",
+        "estimate": null
+      },
+      {
+        "id": "school_age_rice_component",
+        "unit": "gross-equivalent kg/person/day",
+        "region": "Synthetic 100-million population",
+        "reference_period": "2027-2031 scenario; not an observation",
+        "recorded_on": "2026-11-12",
+        "source": "qazna:population-study:v1",
+        "source_version": "1",
+        "basis": "Illustrative test coefficient, not national statistics or medical guidance",
+        "kind": "synthetic",
+        "estimate": {
+          "lower": {
+            "numerator": 2000,
+            "denominator": 10000
+          },
+          "central": {
+            "numerator": 250,
+            "denominator": 1000
+          },
+          "upper": {
+            "numerator": 3000,
+            "denominator": 10000
+          }
+        }
+      },
+      {
+        "id": "school_age_oats_component",
+        "unit": "gross-equivalent kg/person/day",
+        "region": "Synthetic 100-million population",
+        "reference_period": "2027-2031 scenario; not an observation",
+        "recorded_on": "2026-11-12",
+        "source": "qazna:population-study:v1",
+        "source_version": "1",
+        "basis": "Illustrative test coefficient, not national statistics or medical guidance",
+        "kind": "synthetic",
+        "estimate": {
+          "lower": {
+            "numerator": 1200,
+            "denominator": 10000
+          },
+          "central": {
+            "numerator": 150,
+            "denominator": 1000
+          },
+          "upper": {
+            "numerator": 1800,
+            "denominator": 10000
+          }
+        }
+      },
+      {
+        "id": "school_age_water_component",
+        "unit": "litre/person/day",
+        "region": "Synthetic 100-million population",
+        "reference_period": "2027-2031 scenario; not an observation",
+        "recorded_on": "2026-11-12",
+        "source": "qazna:population-study:v1",
+        "source_version": "1",
+        "basis": "Illustrative test coefficient, not national statistics or medical guidance",
+        "kind": "synthetic",
+        "estimate": {
+          "lower": {
+            "numerator": 16000,
+            "denominator": 10000
+          },
+          "central": {
+            "numerator": 2000,
+            "denominator": 1000
+          },
+          "upper": {
+            "numerator": 24000,
+            "denominator": 10000
+          }
+        }
+      },
+      {
+        "id": "school_age_preschool_capacity",
+        "unit": "place-day/person/day",
+        "region": "Synthetic 100-million population",
+        "reference_period": "2027-2031 scenario; not an observation",
+        "recorded_on": "2026-11-12",
+        "source": "qazna:population-study:v1",
+        "source_version": "1",
+        "basis": "Illustrative test coefficient, not national statistics or medical guidance",
+        "kind": "synthetic",
+        "estimate": {
+          "lower": {
+            "numerator": 0,
+            "denominator": 1000
+          },
+          "central": {
+            "numerator": 0,
+            "denominator": 1000
+          },
+          "upper": {
+            "numerator": 0,
+            "denominator": 1000
+          }
+        }
+      },
+      {
+        "id": "school_age_school_capacity",
+        "unit": "place-day/person/day",
+        "region": "Synthetic 100-million population",
+        "reference_period": "2027-2031 scenario; not an observation",
+        "recorded_on": "2026-11-12",
+        "source": "qazna:population-study:v1",
+        "source_version": "1",
+        "basis": "Illustrative test coefficient, not national statistics or medical guidance",
+        "kind": "synthetic",
+        "estimate": {
+          "lower": {
+            "numerator": 1000,
+            "denominator": 1000
+          },
+          "central": {
+            "numerator": 1000,
+            "denominator": 1000
+          },
+          "upper": {
+            "numerator": 1000,
+            "denominator": 1000
+          }
+        }
+      },
+      {
+        "id": "school_age_care_time",
+        "unit": "minute/person/day",
+        "region": "Synthetic 100-million population",
+        "reference_period": "2027-2031 scenario; not an observation",
+        "recorded_on": "2026-11-12",
+        "source": "qazna:population-study:v1",
+        "source_version": "1",
+        "basis": "Missing age-specific evidence; remains unknown, never zero",
+        "kind": "unknown",
+        "estimate": null
+      },
+      {
+        "id": "school_age_protein",
+        "unit": "g/person/day",
+        "region": "Synthetic 100-million population",
+        "reference_period": "2027-2031 scenario; not an observation",
+        "recorded_on": "2026-11-12",
+        "source": "qazna:population-study:v1",
+        "source_version": "1",
+        "basis": "Missing age-specific evidence; remains unknown, never zero",
+        "kind": "unknown",
+        "estimate": null
+      },
+      {
+        "id": "school_age_vitamin_d",
+        "unit": "microgram/person/day",
+        "region": "Synthetic 100-million population",
+        "reference_period": "2027-2031 scenario; not an observation",
+        "recorded_on": "2026-11-12",
+        "source": "qazna:population-study:v1",
+        "source_version": "1",
+        "basis": "Missing age-specific evidence; remains unknown, never zero",
+        "kind": "unknown",
+        "estimate": null
+      },
+      {
+        "id": "adult_rice_component",
+        "unit": "gross-equivalent kg/person/day",
+        "region": "Synthetic 100-million population",
+        "reference_period": "2027-2031 scenario; not an observation",
+        "recorded_on": "2026-11-12",
+        "source": "qazna:population-study:v1",
+        "source_version": "1",
+        "basis": "Illustrative test coefficient, not national statistics or medical guidance",
+        "kind": "synthetic",
+        "estimate": {
+          "lower": {
+            "numerator": 2400,
+            "denominator": 10000
+          },
+          "central": {
+            "numerator": 300,
+            "denominator": 1000
+          },
+          "upper": {
+            "numerator": 3600,
+            "denominator": 10000
+          }
+        }
+      },
+      {
+        "id": "adult_oats_component",
+        "unit": "gross-equivalent kg/person/day",
+        "region": "Synthetic 100-million population",
+        "reference_period": "2027-2031 scenario; not an observation",
+        "recorded_on": "2026-11-12",
+        "source": "qazna:population-study:v1",
+        "source_version": "1",
+        "basis": "Illustrative test coefficient, not national statistics or medical guidance",
+        "kind": "synthetic",
+        "estimate": {
+          "lower": {
+            "numerator": 1440,
+            "denominator": 10000
+          },
+          "central": {
+            "numerator": 180,
+            "denominator": 1000
+          },
+          "upper": {
+            "numerator": 2160,
+            "denominator": 10000
+          }
+        }
+      },
+      {
+        "id": "adult_water_component",
+        "unit": "litre/person/day",
+        "region": "Synthetic 100-million population",
+        "reference_period": "2027-2031 scenario; not an observation",
+        "recorded_on": "2026-11-12",
+        "source": "qazna:population-study:v1",
+        "source_version": "1",
+        "basis": "Illustrative test coefficient, not national statistics or medical guidance",
+        "kind": "synthetic",
+        "estimate": {
+          "lower": {
+            "numerator": 16000,
+            "denominator": 10000
+          },
+          "central": {
+            "numerator": 2000,
+            "denominator": 1000
+          },
+          "upper": {
+            "numerator": 24000,
+            "denominator": 10000
+          }
+        }
+      },
+      {
+        "id": "adult_preschool_capacity",
+        "unit": "place-day/person/day",
+        "region": "Synthetic 100-million population",
+        "reference_period": "2027-2031 scenario; not an observation",
+        "recorded_on": "2026-11-12",
+        "source": "qazna:population-study:v1",
+        "source_version": "1",
+        "basis": "Illustrative test coefficient, not national statistics or medical guidance",
+        "kind": "synthetic",
+        "estimate": {
+          "lower": {
+            "numerator": 0,
+            "denominator": 1000
+          },
+          "central": {
+            "numerator": 0,
+            "denominator": 1000
+          },
+          "upper": {
+            "numerator": 0,
+            "denominator": 1000
+          }
+        }
+      },
+      {
+        "id": "adult_school_capacity",
+        "unit": "place-day/person/day",
+        "region": "Synthetic 100-million population",
+        "reference_period": "2027-2031 scenario; not an observation",
+        "recorded_on": "2026-11-12",
+        "source": "qazna:population-study:v1",
+        "source_version": "1",
+        "basis": "Illustrative test coefficient, not national statistics or medical guidance",
+        "kind": "synthetic",
+        "estimate": {
+          "lower": {
+            "numerator": 0,
+            "denominator": 1000
+          },
+          "central": {
+            "numerator": 0,
+            "denominator": 1000
+          },
+          "upper": {
+            "numerator": 0,
+            "denominator": 1000
+          }
+        }
+      },
+      {
+        "id": "adult_care_time",
+        "unit": "minute/person/day",
+        "region": "Synthetic 100-million population",
+        "reference_period": "2027-2031 scenario; not an observation",
+        "recorded_on": "2026-11-12",
+        "source": "qazna:population-study:v1",
+        "source_version": "1",
+        "basis": "Missing age-specific evidence; remains unknown, never zero",
+        "kind": "unknown",
+        "estimate": null
+      },
+      {
+        "id": "adult_protein",
+        "unit": "g/person/day",
+        "region": "Synthetic 100-million population",
+        "reference_period": "2027-2031 scenario; not an observation",
+        "recorded_on": "2026-11-12",
+        "source": "qazna:population-study:v1",
+        "source_version": "1",
+        "basis": "Missing age-specific evidence; remains unknown, never zero",
+        "kind": "unknown",
+        "estimate": null
+      },
+      {
+        "id": "adult_vitamin_d",
+        "unit": "microgram/person/day",
+        "region": "Synthetic 100-million population",
+        "reference_period": "2027-2031 scenario; not an observation",
+        "recorded_on": "2026-11-12",
+        "source": "qazna:population-study:v1",
+        "source_version": "1",
+        "basis": "Missing age-specific evidence; remains unknown, never zero",
+        "kind": "unknown",
+        "estimate": null
+      },
+      {
+        "id": "older_rice_component",
+        "unit": "gross-equivalent kg/person/day",
+        "region": "Synthetic 100-million population",
+        "reference_period": "2027-2031 scenario; not an observation",
+        "recorded_on": "2026-11-12",
+        "source": "qazna:population-study:v1",
+        "source_version": "1",
+        "basis": "Illustrative test coefficient, not national statistics or medical guidance",
+        "kind": "synthetic",
+        "estimate": {
+          "lower": {
+            "numerator": 2000,
+            "denominator": 10000
+          },
+          "central": {
+            "numerator": 250,
+            "denominator": 1000
+          },
+          "upper": {
+            "numerator": 3000,
+            "denominator": 10000
+          }
+        }
+      },
+      {
+        "id": "older_oats_component",
+        "unit": "gross-equivalent kg/person/day",
+        "region": "Synthetic 100-million population",
+        "reference_period": "2027-2031 scenario; not an observation",
+        "recorded_on": "2026-11-12",
+        "source": "qazna:population-study:v1",
+        "source_version": "1",
+        "basis": "Illustrative test coefficient, not national statistics or medical guidance",
+        "kind": "synthetic",
+        "estimate": {
+          "lower": {
+            "numerator": 1200,
+            "denominator": 10000
+          },
+          "central": {
+            "numerator": 150,
+            "denominator": 1000
+          },
+          "upper": {
+            "numerator": 1800,
+            "denominator": 10000
+          }
+        }
+      },
+      {
+        "id": "older_water_component",
+        "unit": "litre/person/day",
+        "region": "Synthetic 100-million population",
+        "reference_period": "2027-2031 scenario; not an observation",
+        "recorded_on": "2026-11-12",
+        "source": "qazna:population-study:v1",
+        "source_version": "1",
+        "basis": "Illustrative test coefficient, not national statistics or medical guidance",
+        "kind": "synthetic",
+        "estimate": {
+          "lower": {
+            "numerator": 16000,
+            "denominator": 10000
+          },
+          "central": {
+            "numerator": 2000,
+            "denominator": 1000
+          },
+          "upper": {
+            "numerator": 24000,
+            "denominator": 10000
+          }
+        }
+      },
+      {
+        "id": "older_preschool_capacity",
+        "unit": "place-day/person/day",
+        "region": "Synthetic 100-million population",
+        "reference_period": "2027-2031 scenario; not an observation",
+        "recorded_on": "2026-11-12",
+        "source": "qazna:population-study:v1",
+        "source_version": "1",
+        "basis": "Illustrative test coefficient, not national statistics or medical guidance",
+        "kind": "synthetic",
+        "estimate": {
+          "lower": {
+            "numerator": 0,
+            "denominator": 1000
+          },
+          "central": {
+            "numerator": 0,
+            "denominator": 1000
+          },
+          "upper": {
+            "numerator": 0,
+            "denominator": 1000
+          }
+        }
+      },
+      {
+        "id": "older_school_capacity",
+        "unit": "place-day/person/day",
+        "region": "Synthetic 100-million population",
+        "reference_period": "2027-2031 scenario; not an observation",
+        "recorded_on": "2026-11-12",
+        "source": "qazna:population-study:v1",
+        "source_version": "1",
+        "basis": "Illustrative test coefficient, not national statistics or medical guidance",
+        "kind": "synthetic",
+        "estimate": {
+          "lower": {
+            "numerator": 0,
+            "denominator": 1000
+          },
+          "central": {
+            "numerator": 0,
+            "denominator": 1000
+          },
+          "upper": {
+            "numerator": 0,
+            "denominator": 1000
+          }
+        }
+      },
+      {
+        "id": "older_care_time",
+        "unit": "minute/person/day",
+        "region": "Synthetic 100-million population",
+        "reference_period": "2027-2031 scenario; not an observation",
+        "recorded_on": "2026-11-12",
+        "source": "qazna:population-study:v1",
+        "source_version": "1",
+        "basis": "Missing age-specific evidence; remains unknown, never zero",
+        "kind": "unknown",
+        "estimate": null
+      },
+      {
+        "id": "older_protein",
+        "unit": "g/person/day",
+        "region": "Synthetic 100-million population",
+        "reference_period": "2027-2031 scenario; not an observation",
+        "recorded_on": "2026-11-12",
+        "source": "qazna:population-study:v1",
+        "source_version": "1",
+        "basis": "Missing age-specific evidence; remains unknown, never zero",
+        "kind": "unknown",
+        "estimate": null
+      },
+      {
+        "id": "older_vitamin_d",
+        "unit": "microgram/person/day",
+        "region": "Synthetic 100-million population",
+        "reference_period": "2027-2031 scenario; not an observation",
+        "recorded_on": "2026-11-12",
+        "source": "qazna:population-study:v1",
+        "source_version": "1",
+        "basis": "Missing age-specific evidence; remains unknown, never zero",
+        "kind": "unknown",
+        "estimate": null
+      }
+    ]
+  },
+  "variant": "reference",
+  "start_year": 2027,
+  "start_month": 1,
+  "initial": [
+    {
+      "age_months": 0,
+      "people_parameter": "early_childhood_opening_1"
+    },
+    {
+      "age_months": 1,
+      "people_parameter": "early_childhood_opening_1"
+    },
+    {
+      "age_months": 2,
+      "people_parameter": "early_childhood_opening_1"
+    },
+    {
+      "age_months": 3,
+      "people_parameter": "early_childhood_opening_1"
+    },
+    {
+      "age_months": 4,
+      "people_parameter": "early_childhood_opening_0"
+    },
+    {
+      "age_months": 5,
+      "people_parameter": "early_childhood_opening_0"
+    },
+    {
+      "age_months": 6,
+      "people_parameter": "early_childhood_opening_0"
+    },
+    {
+      "age_months": 7,
+      "people_parameter": "early_childhood_opening_0"
+    },
+    {
+      "age_months": 8,
+      "people_parameter": "early_childhood_opening_0"
+    },
+    {
+      "age_months": 9,
+      "people_parameter": "early_childhood_opening_0"
+    },
+    {
+      "age_months": 10,
+      "people_parameter": "early_childhood_opening_0"
+    },
+    {
+      "age_months": 11,
+      "people_parameter": "early_childhood_opening_0"
+    },
+    {
+      "age_months": 12,
+      "people_parameter": "early_childhood_opening_0"
+    },
+    {
+      "age_months": 13,
+      "people_parameter": "early_childhood_opening_0"
+    },
+    {
+      "age_months": 14,
+      "people_parameter": "early_childhood_opening_0"
+    },
+    {
+      "age_months": 15,
+      "people_parameter": "early_childhood_opening_0"
+    },
+    {
+      "age_months": 16,
+      "people_parameter": "early_childhood_opening_0"
+    },
+    {
+      "age_months": 17,
+      "people_parameter": "early_childhood_opening_0"
+    },
+    {
+      "age_months": 18,
+      "people_parameter": "early_childhood_opening_0"
+    },
+    {
+      "age_months": 19,
+      "people_parameter": "early_childhood_opening_0"
+    },
+    {
+      "age_months": 20,
+      "people_parameter": "early_childhood_opening_0"
+    },
+    {
+      "age_months": 21,
+      "people_parameter": "early_childhood_opening_0"
+    },
+    {
+      "age_months": 22,
+      "people_parameter": "early_childhood_opening_0"
+    },
+    {
+      "age_months": 23,
+      "people_parameter": "early_childhood_opening_0"
+    },
+    {
+      "age_months": 24,
+      "people_parameter": "early_childhood_opening_0"
+    },
+    {
+      "age_months": 25,
+      "people_parameter": "early_childhood_opening_0"
+    },
+    {
+      "age_months": 26,
+      "people_parameter": "early_childhood_opening_0"
+    },
+    {
+      "age_months": 27,
+      "people_parameter": "early_childhood_opening_0"
+    },
+    {
+      "age_months": 28,
+      "people_parameter": "early_childhood_opening_0"
+    },
+    {
+      "age_months": 29,
+      "people_parameter": "early_childhood_opening_0"
+    },
+    {
+      "age_months": 30,
+      "people_parameter": "early_childhood_opening_0"
+    },
+    {
+      "age_months": 31,
+      "people_parameter": "early_childhood_opening_0"
+    },
+    {
+      "age_months": 32,
+      "people_parameter": "early_childhood_opening_0"
+    },
+    {
+      "age_months": 33,
+      "people_parameter": "early_childhood_opening_0"
+    },
+    {
+      "age_months": 34,
+      "people_parameter": "early_childhood_opening_0"
+    },
+    {
+      "age_months": 35,
+      "people_parameter": "early_childhood_opening_0"
+    },
+    {
+      "age_months": 36,
+      "people_parameter": "preschool_opening_1"
+    },
+    {
+      "age_months": 37,
+      "people_parameter": "preschool_opening_1"
+    },
+    {
+      "age_months": 38,
+      "people_parameter": "preschool_opening_1"
+    },
+    {
+      "age_months": 39,
+      "people_parameter": "preschool_opening_1"
+    },
+    {
+      "age_months": 40,
+      "people_parameter": "preschool_opening_0"
+    },
+    {
+      "age_months": 41,
+      "people_parameter": "preschool_opening_0"
+    },
+    {
+      "age_months": 42,
+      "people_parameter": "preschool_opening_0"
+    },
+    {
+      "age_months": 43,
+      "people_parameter": "preschool_opening_0"
+    },
+    {
+      "age_months": 44,
+      "people_parameter": "preschool_opening_0"
+    },
+    {
+      "age_months": 45,
+      "people_parameter": "preschool_opening_0"
+    },
+    {
+      "age_months": 46,
+      "people_parameter": "preschool_opening_0"
+    },
+    {
+      "age_months": 47,
+      "people_parameter": "preschool_opening_0"
+    },
+    {
+      "age_months": 48,
+      "people_parameter": "preschool_opening_0"
+    },
+    {
+      "age_months": 49,
+      "people_parameter": "preschool_opening_0"
+    },
+    {
+      "age_months": 50,
+      "people_parameter": "preschool_opening_0"
+    },
+    {
+      "age_months": 51,
+      "people_parameter": "preschool_opening_0"
+    },
+    {
+      "age_months": 52,
+      "people_parameter": "preschool_opening_0"
+    },
+    {
+      "age_months": 53,
+      "people_parameter": "preschool_opening_0"
+    },
+    {
+      "age_months": 54,
+      "people_parameter": "preschool_opening_0"
+    },
+    {
+      "age_months": 55,
+      "people_parameter": "preschool_opening_0"
+    },
+    {
+      "age_months": 56,
+      "people_parameter": "preschool_opening_0"
+    },
+    {
+      "age_months": 57,
+      "people_parameter": "preschool_opening_0"
+    },
+    {
+      "age_months": 58,
+      "people_parameter": "preschool_opening_0"
+    },
+    {
+      "age_months": 59,
+      "people_parameter": "preschool_opening_0"
+    },
+    {
+      "age_months": 60,
+      "people_parameter": "preschool_opening_0"
+    },
+    {
+      "age_months": 61,
+      "people_parameter": "preschool_opening_0"
+    },
+    {
+      "age_months": 62,
+      "people_parameter": "preschool_opening_0"
+    },
+    {
+      "age_months": 63,
+      "people_parameter": "preschool_opening_0"
+    },
+    {
+      "age_months": 64,
+      "people_parameter": "preschool_opening_0"
+    },
+    {
+      "age_months": 65,
+      "people_parameter": "preschool_opening_0"
+    },
+    {
+      "age_months": 66,
+      "people_parameter": "preschool_opening_0"
+    },
+    {
+      "age_months": 67,
+      "people_parameter": "preschool_opening_0"
+    },
+    {
+      "age_months": 68,
+      "people_parameter": "preschool_opening_0"
+    },
+    {
+      "age_months": 69,
+      "people_parameter": "preschool_opening_0"
+    },
+    {
+      "age_months": 70,
+      "people_parameter": "preschool_opening_0"
+    },
+    {
+      "age_months": 71,
+      "people_parameter": "preschool_opening_0"
+    },
+    {
+      "age_months": 72,
+      "people_parameter": "school_age_opening_1"
+    },
+    {
+      "age_months": 73,
+      "people_parameter": "school_age_opening_1"
+    },
+    {
+      "age_months": 74,
+      "people_parameter": "school_age_opening_1"
+    },
+    {
+      "age_months": 75,
+      "people_parameter": "school_age_opening_1"
+    },
+    {
+      "age_months": 76,
+      "people_parameter": "school_age_opening_1"
+    },
+    {
+      "age_months": 77,
+      "people_parameter": "school_age_opening_1"
+    },
+    {
+      "age_months": 78,
+      "people_parameter": "school_age_opening_1"
+    },
+    {
+      "age_months": 79,
+      "people_parameter": "school_age_opening_1"
+    },
+    {
+      "age_months": 80,
+      "people_parameter": "school_age_opening_1"
+    },
+    {
+      "age_months": 81,
+      "people_parameter": "school_age_opening_1"
+    },
+    {
+      "age_months": 82,
+      "people_parameter": "school_age_opening_1"
+    },
+    {
+      "age_months": 83,
+      "people_parameter": "school_age_opening_1"
+    },
+    {
+      "age_months": 84,
+      "people_parameter": "school_age_opening_1"
+    },
+    {
+      "age_months": 85,
+      "people_parameter": "school_age_opening_1"
+    },
+    {
+      "age_months": 86,
+      "people_parameter": "school_age_opening_1"
+    },
+    {
+      "age_months": 87,
+      "people_parameter": "school_age_opening_1"
+    },
+    {
+      "age_months": 88,
+      "people_parameter": "school_age_opening_0"
+    },
+    {
+      "age_months": 89,
+      "people_parameter": "school_age_opening_0"
+    },
+    {
+      "age_months": 90,
+      "people_parameter": "school_age_opening_0"
+    },
+    {
+      "age_months": 91,
+      "people_parameter": "school_age_opening_0"
+    },
+    {
+      "age_months": 92,
+      "people_parameter": "school_age_opening_0"
+    },
+    {
+      "age_months": 93,
+      "people_parameter": "school_age_opening_0"
+    },
+    {
+      "age_months": 94,
+      "people_parameter": "school_age_opening_0"
+    },
+    {
+      "age_months": 95,
+      "people_parameter": "school_age_opening_0"
+    },
+    {
+      "age_months": 96,
+      "people_parameter": "school_age_opening_0"
+    },
+    {
+      "age_months": 97,
+      "people_parameter": "school_age_opening_0"
+    },
+    {
+      "age_months": 98,
+      "people_parameter": "school_age_opening_0"
+    },
+    {
+      "age_months": 99,
+      "people_parameter": "school_age_opening_0"
+    },
+    {
+      "age_months": 100,
+      "people_parameter": "school_age_opening_0"
+    },
+    {
+      "age_months": 101,
+      "people_parameter": "school_age_opening_0"
+    },
+    {
+      "age_months": 102,
+      "people_parameter": "school_age_opening_0"
+    },
+    {
+      "age_months": 103,
+      "people_parameter": "school_age_opening_0"
+    },
+    {
+      "age_months": 104,
+      "people_parameter": "school_age_opening_0"
+    },
+    {
+      "age_months": 105,
+      "people_parameter": "school_age_opening_0"
+    },
+    {
+      "age_months": 106,
+      "people_parameter": "school_age_opening_0"
+    },
+    {
+      "age_months": 107,
+      "people_parameter": "school_age_opening_0"
+    },
+    {
+      "age_months": 108,
+      "people_parameter": "school_age_opening_0"
+    },
+    {
+      "age_months": 109,
+      "people_parameter": "school_age_opening_0"
+    },
+    {
+      "age_months": 110,
+      "people_parameter": "school_age_opening_0"
+    },
+    {
+      "age_months": 111,
+      "people_parameter": "school_age_opening_0"
+    },
+    {
+      "age_months": 112,
+      "people_parameter": "school_age_opening_0"
+    },
+    {
+      "age_months": 113,
+      "people_parameter": "school_age_opening_0"
+    },
+    {
+      "age_months": 114,
+      "people_parameter": "school_age_opening_0"
+    },
+    {
+      "age_months": 115,
+      "people_parameter": "school_age_opening_0"
+    },
+    {
+      "age_months": 116,
+      "people_parameter": "school_age_opening_0"
+    },
+    {
+      "age_months": 117,
+      "people_parameter": "school_age_opening_0"
+    },
+    {
+      "age_months": 118,
+      "people_parameter": "school_age_opening_0"
+    },
+    {
+      "age_months": 119,
+      "people_parameter": "school_age_opening_0"
+    },
+    {
+      "age_months": 120,
+      "people_parameter": "school_age_opening_0"
+    },
+    {
+      "age_months": 121,
+      "people_parameter": "school_age_opening_0"
+    },
+    {
+      "age_months": 122,
+      "people_parameter": "school_age_opening_0"
+    },
+    {
+      "age_months": 123,
+      "people_parameter": "school_age_opening_0"
+    },
+    {
+      "age_months": 124,
+      "people_parameter": "school_age_opening_0"
+    },
+    {
+      "age_months": 125,
+      "people_parameter": "school_age_opening_0"
+    },
+    {
+      "age_months": 126,
+      "people_parameter": "school_age_opening_0"
+    },
+    {
+      "age_months": 127,
+      "people_parameter": "school_age_opening_0"
+    },
+    {
+      "age_months": 128,
+      "people_parameter": "school_age_opening_0"
+    },
+    {
+      "age_months": 129,
+      "people_parameter": "school_age_opening_0"
+    },
+    {
+      "age_months": 130,
+      "people_parameter": "school_age_opening_0"
+    },
+    {
+      "age_months": 131,
+      "people_parameter": "school_age_opening_0"
+    },
+    {
+      "age_months": 132,
+      "people_parameter": "school_age_opening_0"
+    },
+    {
+      "age_months": 133,
+      "people_parameter": "school_age_opening_0"
+    },
+    {
+      "age_months": 134,
+      "people_parameter": "school_age_opening_0"
+    },
+    {
+      "age_months": 135,
+      "people_parameter": "school_age_opening_0"
+    },
+    {
+      "age_months": 136,
+      "people_parameter": "school_age_opening_0"
+    },
+    {
+      "age_months": 137,
+      "people_parameter": "school_age_opening_0"
+    },
+    {
+      "age_months": 138,
+      "people_parameter": "school_age_opening_0"
+    },
+    {
+      "age_months": 139,
+      "people_parameter": "school_age_opening_0"
+    },
+    {
+      "age_months": 140,
+      "people_parameter": "school_age_opening_0"
+    },
+    {
+      "age_months": 141,
+      "people_parameter": "school_age_opening_0"
+    },
+    {
+      "age_months": 142,
+      "people_parameter": "school_age_opening_0"
+    },
+    {
+      "age_months": 143,
+      "people_parameter": "school_age_opening_0"
+    },
+    {
+      "age_months": 144,
+      "people_parameter": "school_age_opening_0"
+    },
+    {
+      "age_months": 145,
+      "people_parameter": "school_age_opening_0"
+    },
+    {
+      "age_months": 146,
+      "people_parameter": "school_age_opening_0"
+    },
+    {
+      "age_months": 147,
+      "people_parameter": "school_age_opening_0"
+    },
+    {
+      "age_months": 148,
+      "people_parameter": "school_age_opening_0"
+    },
+    {
+      "age_months": 149,
+      "people_parameter": "school_age_opening_0"
+    },
+    {
+      "age_months": 150,
+      "people_parameter": "school_age_opening_0"
+    },
+    {
+      "age_months": 151,
+      "people_parameter": "school_age_opening_0"
+    },
+    {
+      "age_months": 152,
+      "people_parameter": "school_age_opening_0"
+    },
+    {
+      "age_months": 153,
+      "people_parameter": "school_age_opening_0"
+    },
+    {
+      "age_months": 154,
+      "people_parameter": "school_age_opening_0"
+    },
+    {
+      "age_months": 155,
+      "people_parameter": "school_age_opening_0"
+    },
+    {
+      "age_months": 156,
+      "people_parameter": "school_age_opening_0"
+    },
+    {
+      "age_months": 157,
+      "people_parameter": "school_age_opening_0"
+    },
+    {
+      "age_months": 158,
+      "people_parameter": "school_age_opening_0"
+    },
+    {
+      "age_months": 159,
+      "people_parameter": "school_age_opening_0"
+    },
+    {
+      "age_months": 160,
+      "people_parameter": "school_age_opening_0"
+    },
+    {
+      "age_months": 161,
+      "people_parameter": "school_age_opening_0"
+    },
+    {
+      "age_months": 162,
+      "people_parameter": "school_age_opening_0"
+    },
+    {
+      "age_months": 163,
+      "people_parameter": "school_age_opening_0"
+    },
+    {
+      "age_months": 164,
+      "people_parameter": "school_age_opening_0"
+    },
+    {
+      "age_months": 165,
+      "people_parameter": "school_age_opening_0"
+    },
+    {
+      "age_months": 166,
+      "people_parameter": "school_age_opening_0"
+    },
+    {
+      "age_months": 167,
+      "people_parameter": "school_age_opening_0"
+    },
+    {
+      "age_months": 168,
+      "people_parameter": "school_age_opening_0"
+    },
+    {
+      "age_months": 169,
+      "people_parameter": "school_age_opening_0"
+    },
+    {
+      "age_months": 170,
+      "people_parameter": "school_age_opening_0"
+    },
+    {
+      "age_months": 171,
+      "people_parameter": "school_age_opening_0"
+    },
+    {
+      "age_months": 172,
+      "people_parameter": "school_age_opening_0"
+    },
+    {
+      "age_months": 173,
+      "people_parameter": "school_age_opening_0"
+    },
+    {
+      "age_months": 174,
+      "people_parameter": "school_age_opening_0"
+    },
+    {
+      "age_months": 175,
+      "people_parameter": "school_age_opening_0"
+    },
+    {
+      "age_months": 176,
+      "people_parameter": "school_age_opening_0"
+    },
+    {
+      "age_months": 177,
+      "people_parameter": "school_age_opening_0"
+    },
+    {
+      "age_months": 178,
+      "people_parameter": "school_age_opening_0"
+    },
+    {
+      "age_months": 179,
+      "people_parameter": "school_age_opening_0"
+    },
+    {
+      "age_months": 180,
+      "people_parameter": "school_age_opening_0"
+    },
+    {
+      "age_months": 181,
+      "people_parameter": "school_age_opening_0"
+    },
+    {
+      "age_months": 182,
+      "people_parameter": "school_age_opening_0"
+    },
+    {
+      "age_months": 183,
+      "people_parameter": "school_age_opening_0"
+    },
+    {
+      "age_months": 184,
+      "people_parameter": "school_age_opening_0"
+    },
+    {
+      "age_months": 185,
+      "people_parameter": "school_age_opening_0"
+    },
+    {
+      "age_months": 186,
+      "people_parameter": "school_age_opening_0"
+    },
+    {
+      "age_months": 187,
+      "people_parameter": "school_age_opening_0"
+    },
+    {
+      "age_months": 188,
+      "people_parameter": "school_age_opening_0"
+    },
+    {
+      "age_months": 189,
+      "people_parameter": "school_age_opening_0"
+    },
+    {
+      "age_months": 190,
+      "people_parameter": "school_age_opening_0"
+    },
+    {
+      "age_months": 191,
+      "people_parameter": "school_age_opening_0"
+    },
+    {
+      "age_months": 192,
+      "people_parameter": "school_age_opening_0"
+    },
+    {
+      "age_months": 193,
+      "people_parameter": "school_age_opening_0"
+    },
+    {
+      "age_months": 194,
+      "people_parameter": "school_age_opening_0"
+    },
+    {
+      "age_months": 195,
+      "people_parameter": "school_age_opening_0"
+    },
+    {
+      "age_months": 196,
+      "people_parameter": "school_age_opening_0"
+    },
+    {
+      "age_months": 197,
+      "people_parameter": "school_age_opening_0"
+    },
+    {
+      "age_months": 198,
+      "people_parameter": "school_age_opening_0"
+    },
+    {
+      "age_months": 199,
+      "people_parameter": "school_age_opening_0"
+    },
+    {
+      "age_months": 200,
+      "people_parameter": "school_age_opening_0"
+    },
+    {
+      "age_months": 201,
+      "people_parameter": "school_age_opening_0"
+    },
+    {
+      "age_months": 202,
+      "people_parameter": "school_age_opening_0"
+    },
+    {
+      "age_months": 203,
+      "people_parameter": "school_age_opening_0"
+    },
+    {
+      "age_months": 204,
+      "people_parameter": "school_age_opening_0"
+    },
+    {
+      "age_months": 205,
+      "people_parameter": "school_age_opening_0"
+    },
+    {
+      "age_months": 206,
+      "people_parameter": "school_age_opening_0"
+    },
+    {
+      "age_months": 207,
+      "people_parameter": "school_age_opening_0"
+    },
+    {
+      "age_months": 208,
+      "people_parameter": "school_age_opening_0"
+    },
+    {
+      "age_months": 209,
+      "people_parameter": "school_age_opening_0"
+    },
+    {
+      "age_months": 210,
+      "people_parameter": "school_age_opening_0"
+    },
+    {
+      "age_months": 211,
+      "people_parameter": "school_age_opening_0"
+    },
+    {
+      "age_months": 212,
+      "people_parameter": "school_age_opening_0"
+    },
+    {
+      "age_months": 213,
+      "people_parameter": "school_age_opening_0"
+    },
+    {
+      "age_months": 214,
+      "people_parameter": "school_age_opening_0"
+    },
+    {
+      "age_months": 215,
+      "people_parameter": "school_age_opening_0"
+    },
+    {
+      "age_months": 216,
+      "people_parameter": "adult_opening_1"
+    },
+    {
+      "age_months": 217,
+      "people_parameter": "adult_opening_1"
+    },
+    {
+      "age_months": 218,
+      "people_parameter": "adult_opening_1"
+    },
+    {
+      "age_months": 219,
+      "people_parameter": "adult_opening_1"
+    },
+    {
+      "age_months": 220,
+      "people_parameter": "adult_opening_1"
+    },
+    {
+      "age_months": 221,
+      "people_parameter": "adult_opening_1"
+    },
+    {
+      "age_months": 222,
+      "people_parameter": "adult_opening_1"
+    },
+    {
+      "age_months": 223,
+      "people_parameter": "adult_opening_1"
+    },
+    {
+      "age_months": 224,
+      "people_parameter": "adult_opening_1"
+    },
+    {
+      "age_months": 225,
+      "people_parameter": "adult_opening_1"
+    },
+    {
+      "age_months": 226,
+      "people_parameter": "adult_opening_1"
+    },
+    {
+      "age_months": 227,
+      "people_parameter": "adult_opening_1"
+    },
+    {
+      "age_months": 228,
+      "people_parameter": "adult_opening_1"
+    },
+    {
+      "age_months": 229,
+      "people_parameter": "adult_opening_1"
+    },
+    {
+      "age_months": 230,
+      "people_parameter": "adult_opening_1"
+    },
+    {
+      "age_months": 231,
+      "people_parameter": "adult_opening_1"
+    },
+    {
+      "age_months": 232,
+      "people_parameter": "adult_opening_1"
+    },
+    {
+      "age_months": 233,
+      "people_parameter": "adult_opening_1"
+    },
+    {
+      "age_months": 234,
+      "people_parameter": "adult_opening_1"
+    },
+    {
+      "age_months": 235,
+      "people_parameter": "adult_opening_1"
+    },
+    {
+      "age_months": 236,
+      "people_parameter": "adult_opening_1"
+    },
+    {
+      "age_months": 237,
+      "people_parameter": "adult_opening_1"
+    },
+    {
+      "age_months": 238,
+      "people_parameter": "adult_opening_1"
+    },
+    {
+      "age_months": 239,
+      "people_parameter": "adult_opening_1"
+    },
+    {
+      "age_months": 240,
+      "people_parameter": "adult_opening_1"
+    },
+    {
+      "age_months": 241,
+      "people_parameter": "adult_opening_1"
+    },
+    {
+      "age_months": 242,
+      "people_parameter": "adult_opening_1"
+    },
+    {
+      "age_months": 243,
+      "people_parameter": "adult_opening_1"
+    },
+    {
+      "age_months": 244,
+      "people_parameter": "adult_opening_1"
+    },
+    {
+      "age_months": 245,
+      "people_parameter": "adult_opening_1"
+    },
+    {
+      "age_months": 246,
+      "people_parameter": "adult_opening_1"
+    },
+    {
+      "age_months": 247,
+      "people_parameter": "adult_opening_1"
+    },
+    {
+      "age_months": 248,
+      "people_parameter": "adult_opening_1"
+    },
+    {
+      "age_months": 249,
+      "people_parameter": "adult_opening_1"
+    },
+    {
+      "age_months": 250,
+      "people_parameter": "adult_opening_1"
+    },
+    {
+      "age_months": 251,
+      "people_parameter": "adult_opening_1"
+    },
+    {
+      "age_months": 252,
+      "people_parameter": "adult_opening_1"
+    },
+    {
+      "age_months": 253,
+      "people_parameter": "adult_opening_1"
+    },
+    {
+      "age_months": 254,
+      "people_parameter": "adult_opening_1"
+    },
+    {
+      "age_months": 255,
+      "people_parameter": "adult_opening_1"
+    },
+    {
+      "age_months": 256,
+      "people_parameter": "adult_opening_1"
+    },
+    {
+      "age_months": 257,
+      "people_parameter": "adult_opening_1"
+    },
+    {
+      "age_months": 258,
+      "people_parameter": "adult_opening_1"
+    },
+    {
+      "age_months": 259,
+      "people_parameter": "adult_opening_1"
+    },
+    {
+      "age_months": 260,
+      "people_parameter": "adult_opening_1"
+    },
+    {
+      "age_months": 261,
+      "people_parameter": "adult_opening_1"
+    },
+    {
+      "age_months": 262,
+      "people_parameter": "adult_opening_1"
+    },
+    {
+      "age_months": 263,
+      "people_parameter": "adult_opening_1"
+    },
+    {
+      "age_months": 264,
+      "people_parameter": "adult_opening_1"
+    },
+    {
+      "age_months": 265,
+      "people_parameter": "adult_opening_1"
+    },
+    {
+      "age_months": 266,
+      "people_parameter": "adult_opening_1"
+    },
+    {
+      "age_months": 267,
+      "people_parameter": "adult_opening_1"
+    },
+    {
+      "age_months": 268,
+      "people_parameter": "adult_opening_1"
+    },
+    {
+      "age_months": 269,
+      "people_parameter": "adult_opening_1"
+    },
+    {
+      "age_months": 270,
+      "people_parameter": "adult_opening_1"
+    },
+    {
+      "age_months": 271,
+      "people_parameter": "adult_opening_1"
+    },
+    {
+      "age_months": 272,
+      "people_parameter": "adult_opening_1"
+    },
+    {
+      "age_months": 273,
+      "people_parameter": "adult_opening_1"
+    },
+    {
+      "age_months": 274,
+      "people_parameter": "adult_opening_1"
+    },
+    {
+      "age_months": 275,
+      "people_parameter": "adult_opening_1"
+    },
+    {
+      "age_months": 276,
+      "people_parameter": "adult_opening_1"
+    },
+    {
+      "age_months": 277,
+      "people_parameter": "adult_opening_1"
+    },
+    {
+      "age_months": 278,
+      "people_parameter": "adult_opening_1"
+    },
+    {
+      "age_months": 279,
+      "people_parameter": "adult_opening_1"
+    },
+    {
+      "age_months": 280,
+      "people_parameter": "adult_opening_1"
+    },
+    {
+      "age_months": 281,
+      "people_parameter": "adult_opening_1"
+    },
+    {
+      "age_months": 282,
+      "people_parameter": "adult_opening_1"
+    },
+    {
+      "age_months": 283,
+      "people_parameter": "adult_opening_1"
+    },
+    {
+      "age_months": 284,
+      "people_parameter": "adult_opening_1"
+    },
+    {
+      "age_months": 285,
+      "people_parameter": "adult_opening_1"
+    },
+    {
+      "age_months": 286,
+      "people_parameter": "adult_opening_1"
+    },
+    {
+      "age_months": 287,
+      "people_parameter": "adult_opening_1"
+    },
+    {
+      "age_months": 288,
+      "people_parameter": "adult_opening_1"
+    },
+    {
+      "age_months": 289,
+      "people_parameter": "adult_opening_1"
+    },
+    {
+      "age_months": 290,
+      "people_parameter": "adult_opening_1"
+    },
+    {
+      "age_months": 291,
+      "people_parameter": "adult_opening_1"
+    },
+    {
+      "age_months": 292,
+      "people_parameter": "adult_opening_1"
+    },
+    {
+      "age_months": 293,
+      "people_parameter": "adult_opening_1"
+    },
+    {
+      "age_months": 294,
+      "people_parameter": "adult_opening_1"
+    },
+    {
+      "age_months": 295,
+      "people_parameter": "adult_opening_1"
+    },
+    {
+      "age_months": 296,
+      "people_parameter": "adult_opening_1"
+    },
+    {
+      "age_months": 297,
+      "people_parameter": "adult_opening_1"
+    },
+    {
+      "age_months": 298,
+      "people_parameter": "adult_opening_1"
+    },
+    {
+      "age_months": 299,
+      "people_parameter": "adult_opening_1"
+    },
+    {
+      "age_months": 300,
+      "people_parameter": "adult_opening_1"
+    },
+    {
+      "age_months": 301,
+      "people_parameter": "adult_opening_1"
+    },
+    {
+      "age_months": 302,
+      "people_parameter": "adult_opening_1"
+    },
+    {
+      "age_months": 303,
+      "people_parameter": "adult_opening_1"
+    },
+    {
+      "age_months": 304,
+      "people_parameter": "adult_opening_1"
+    },
+    {
+      "age_months": 305,
+      "people_parameter": "adult_opening_1"
+    },
+    {
+      "age_months": 306,
+      "people_parameter": "adult_opening_1"
+    },
+    {
+      "age_months": 307,
+      "people_parameter": "adult_opening_1"
+    },
+    {
+      "age_months": 308,
+      "people_parameter": "adult_opening_1"
+    },
+    {
+      "age_months": 309,
+      "people_parameter": "adult_opening_1"
+    },
+    {
+      "age_months": 310,
+      "people_parameter": "adult_opening_1"
+    },
+    {
+      "age_months": 311,
+      "people_parameter": "adult_opening_1"
+    },
+    {
+      "age_months": 312,
+      "people_parameter": "adult_opening_1"
+    },
+    {
+      "age_months": 313,
+      "people_parameter": "adult_opening_1"
+    },
+    {
+      "age_months": 314,
+      "people_parameter": "adult_opening_1"
+    },
+    {
+      "age_months": 315,
+      "people_parameter": "adult_opening_1"
+    },
+    {
+      "age_months": 316,
+      "people_parameter": "adult_opening_1"
+    },
+    {
+      "age_months": 317,
+      "people_parameter": "adult_opening_1"
+    },
+    {
+      "age_months": 318,
+      "people_parameter": "adult_opening_1"
+    },
+    {
+      "age_months": 319,
+      "people_parameter": "adult_opening_1"
+    },
+    {
+      "age_months": 320,
+      "people_parameter": "adult_opening_1"
+    },
+    {
+      "age_months": 321,
+      "people_parameter": "adult_opening_1"
+    },
+    {
+      "age_months": 322,
+      "people_parameter": "adult_opening_1"
+    },
+    {
+      "age_months": 323,
+      "people_parameter": "adult_opening_1"
+    },
+    {
+      "age_months": 324,
+      "people_parameter": "adult_opening_1"
+    },
+    {
+      "age_months": 325,
+      "people_parameter": "adult_opening_1"
+    },
+    {
+      "age_months": 326,
+      "people_parameter": "adult_opening_1"
+    },
+    {
+      "age_months": 327,
+      "people_parameter": "adult_opening_1"
+    },
+    {
+      "age_months": 328,
+      "people_parameter": "adult_opening_1"
+    },
+    {
+      "age_months": 329,
+      "people_parameter": "adult_opening_1"
+    },
+    {
+      "age_months": 330,
+      "people_parameter": "adult_opening_1"
+    },
+    {
+      "age_months": 331,
+      "people_parameter": "adult_opening_1"
+    },
+    {
+      "age_months": 332,
+      "people_parameter": "adult_opening_1"
+    },
+    {
+      "age_months": 333,
+      "people_parameter": "adult_opening_1"
+    },
+    {
+      "age_months": 334,
+      "people_parameter": "adult_opening_1"
+    },
+    {
+      "age_months": 335,
+      "people_parameter": "adult_opening_1"
+    },
+    {
+      "age_months": 336,
+      "people_parameter": "adult_opening_1"
+    },
+    {
+      "age_months": 337,
+      "people_parameter": "adult_opening_1"
+    },
+    {
+      "age_months": 338,
+      "people_parameter": "adult_opening_1"
+    },
+    {
+      "age_months": 339,
+      "people_parameter": "adult_opening_1"
+    },
+    {
+      "age_months": 340,
+      "people_parameter": "adult_opening_1"
+    },
+    {
+      "age_months": 341,
+      "people_parameter": "adult_opening_1"
+    },
+    {
+      "age_months": 342,
+      "people_parameter": "adult_opening_1"
+    },
+    {
+      "age_months": 343,
+      "people_parameter": "adult_opening_1"
+    },
+    {
+      "age_months": 344,
+      "people_parameter": "adult_opening_1"
+    },
+    {
+      "age_months": 345,
+      "people_parameter": "adult_opening_1"
+    },
+    {
+      "age_months": 346,
+      "people_parameter": "adult_opening_1"
+    },
+    {
+      "age_months": 347,
+      "people_parameter": "adult_opening_1"
+    },
+    {
+      "age_months": 348,
+      "people_parameter": "adult_opening_1"
+    },
+    {
+      "age_months": 349,
+      "people_parameter": "adult_opening_1"
+    },
+    {
+      "age_months": 350,
+      "people_parameter": "adult_opening_1"
+    },
+    {
+      "age_months": 351,
+      "people_parameter": "adult_opening_1"
+    },
+    {
+      "age_months": 352,
+      "people_parameter": "adult_opening_1"
+    },
+    {
+      "age_months": 353,
+      "people_parameter": "adult_opening_1"
+    },
+    {
+      "age_months": 354,
+      "people_parameter": "adult_opening_1"
+    },
+    {
+      "age_months": 355,
+      "people_parameter": "adult_opening_1"
+    },
+    {
+      "age_months": 356,
+      "people_parameter": "adult_opening_1"
+    },
+    {
+      "age_months": 357,
+      "people_parameter": "adult_opening_1"
+    },
+    {
+      "age_months": 358,
+      "people_parameter": "adult_opening_1"
+    },
+    {
+      "age_months": 359,
+      "people_parameter": "adult_opening_1"
+    },
+    {
+      "age_months": 360,
+      "people_parameter": "adult_opening_1"
+    },
+    {
+      "age_months": 361,
+      "people_parameter": "adult_opening_1"
+    },
+    {
+      "age_months": 362,
+      "people_parameter": "adult_opening_1"
+    },
+    {
+      "age_months": 363,
+      "people_parameter": "adult_opening_1"
+    },
+    {
+      "age_months": 364,
+      "people_parameter": "adult_opening_1"
+    },
+    {
+      "age_months": 365,
+      "people_parameter": "adult_opening_1"
+    },
+    {
+      "age_months": 366,
+      "people_parameter": "adult_opening_1"
+    },
+    {
+      "age_months": 367,
+      "people_parameter": "adult_opening_1"
+    },
+    {
+      "age_months": 368,
+      "people_parameter": "adult_opening_1"
+    },
+    {
+      "age_months": 369,
+      "people_parameter": "adult_opening_1"
+    },
+    {
+      "age_months": 370,
+      "people_parameter": "adult_opening_1"
+    },
+    {
+      "age_months": 371,
+      "people_parameter": "adult_opening_1"
+    },
+    {
+      "age_months": 372,
+      "people_parameter": "adult_opening_1"
+    },
+    {
+      "age_months": 373,
+      "people_parameter": "adult_opening_1"
+    },
+    {
+      "age_months": 374,
+      "people_parameter": "adult_opening_1"
+    },
+    {
+      "age_months": 375,
+      "people_parameter": "adult_opening_1"
+    },
+    {
+      "age_months": 376,
+      "people_parameter": "adult_opening_1"
+    },
+    {
+      "age_months": 377,
+      "people_parameter": "adult_opening_1"
+    },
+    {
+      "age_months": 378,
+      "people_parameter": "adult_opening_1"
+    },
+    {
+      "age_months": 379,
+      "people_parameter": "adult_opening_1"
+    },
+    {
+      "age_months": 380,
+      "people_parameter": "adult_opening_1"
+    },
+    {
+      "age_months": 381,
+      "people_parameter": "adult_opening_1"
+    },
+    {
+      "age_months": 382,
+      "people_parameter": "adult_opening_1"
+    },
+    {
+      "age_months": 383,
+      "people_parameter": "adult_opening_1"
+    },
+    {
+      "age_months": 384,
+      "people_parameter": "adult_opening_1"
+    },
+    {
+      "age_months": 385,
+      "people_parameter": "adult_opening_1"
+    },
+    {
+      "age_months": 386,
+      "people_parameter": "adult_opening_1"
+    },
+    {
+      "age_months": 387,
+      "people_parameter": "adult_opening_1"
+    },
+    {
+      "age_months": 388,
+      "people_parameter": "adult_opening_1"
+    },
+    {
+      "age_months": 389,
+      "people_parameter": "adult_opening_1"
+    },
+    {
+      "age_months": 390,
+      "people_parameter": "adult_opening_1"
+    },
+    {
+      "age_months": 391,
+      "people_parameter": "adult_opening_1"
+    },
+    {
+      "age_months": 392,
+      "people_parameter": "adult_opening_1"
+    },
+    {
+      "age_months": 393,
+      "people_parameter": "adult_opening_1"
+    },
+    {
+      "age_months": 394,
+      "people_parameter": "adult_opening_1"
+    },
+    {
+      "age_months": 395,
+      "people_parameter": "adult_opening_1"
+    },
+    {
+      "age_months": 396,
+      "people_parameter": "adult_opening_1"
+    },
+    {
+      "age_months": 397,
+      "people_parameter": "adult_opening_1"
+    },
+    {
+      "age_months": 398,
+      "people_parameter": "adult_opening_1"
+    },
+    {
+      "age_months": 399,
+      "people_parameter": "adult_opening_1"
+    },
+    {
+      "age_months": 400,
+      "people_parameter": "adult_opening_1"
+    },
+    {
+      "age_months": 401,
+      "people_parameter": "adult_opening_1"
+    },
+    {
+      "age_months": 402,
+      "people_parameter": "adult_opening_1"
+    },
+    {
+      "age_months": 403,
+      "people_parameter": "adult_opening_1"
+    },
+    {
+      "age_months": 404,
+      "people_parameter": "adult_opening_1"
+    },
+    {
+      "age_months": 405,
+      "people_parameter": "adult_opening_1"
+    },
+    {
+      "age_months": 406,
+      "people_parameter": "adult_opening_1"
+    },
+    {
+      "age_months": 407,
+      "people_parameter": "adult_opening_1"
+    },
+    {
+      "age_months": 408,
+      "people_parameter": "adult_opening_1"
+    },
+    {
+      "age_months": 409,
+      "people_parameter": "adult_opening_1"
+    },
+    {
+      "age_months": 410,
+      "people_parameter": "adult_opening_1"
+    },
+    {
+      "age_months": 411,
+      "people_parameter": "adult_opening_1"
+    },
+    {
+      "age_months": 412,
+      "people_parameter": "adult_opening_1"
+    },
+    {
+      "age_months": 413,
+      "people_parameter": "adult_opening_1"
+    },
+    {
+      "age_months": 414,
+      "people_parameter": "adult_opening_1"
+    },
+    {
+      "age_months": 415,
+      "people_parameter": "adult_opening_1"
+    },
+    {
+      "age_months": 416,
+      "people_parameter": "adult_opening_1"
+    },
+    {
+      "age_months": 417,
+      "people_parameter": "adult_opening_1"
+    },
+    {
+      "age_months": 418,
+      "people_parameter": "adult_opening_1"
+    },
+    {
+      "age_months": 419,
+      "people_parameter": "adult_opening_1"
+    },
+    {
+      "age_months": 420,
+      "people_parameter": "adult_opening_1"
+    },
+    {
+      "age_months": 421,
+      "people_parameter": "adult_opening_1"
+    },
+    {
+      "age_months": 422,
+      "people_parameter": "adult_opening_1"
+    },
+    {
+      "age_months": 423,
+      "people_parameter": "adult_opening_1"
+    },
+    {
+      "age_months": 424,
+      "people_parameter": "adult_opening_1"
+    },
+    {
+      "age_months": 425,
+      "people_parameter": "adult_opening_1"
+    },
+    {
+      "age_months": 426,
+      "people_parameter": "adult_opening_1"
+    },
+    {
+      "age_months": 427,
+      "people_parameter": "adult_opening_1"
+    },
+    {
+      "age_months": 428,
+      "people_parameter": "adult_opening_1"
+    },
+    {
+      "age_months": 429,
+      "people_parameter": "adult_opening_1"
+    },
+    {
+      "age_months": 430,
+      "people_parameter": "adult_opening_1"
+    },
+    {
+      "age_months": 431,
+      "people_parameter": "adult_opening_1"
+    },
+    {
+      "age_months": 432,
+      "people_parameter": "adult_opening_1"
+    },
+    {
+      "age_months": 433,
+      "people_parameter": "adult_opening_1"
+    },
+    {
+      "age_months": 434,
+      "people_parameter": "adult_opening_1"
+    },
+    {
+      "age_months": 435,
+      "people_parameter": "adult_opening_1"
+    },
+    {
+      "age_months": 436,
+      "people_parameter": "adult_opening_1"
+    },
+    {
+      "age_months": 437,
+      "people_parameter": "adult_opening_1"
+    },
+    {
+      "age_months": 438,
+      "people_parameter": "adult_opening_1"
+    },
+    {
+      "age_months": 439,
+      "people_parameter": "adult_opening_1"
+    },
+    {
+      "age_months": 440,
+      "people_parameter": "adult_opening_1"
+    },
+    {
+      "age_months": 441,
+      "people_parameter": "adult_opening_1"
+    },
+    {
+      "age_months": 442,
+      "people_parameter": "adult_opening_1"
+    },
+    {
+      "age_months": 443,
+      "people_parameter": "adult_opening_1"
+    },
+    {
+      "age_months": 444,
+      "people_parameter": "adult_opening_1"
+    },
+    {
+      "age_months": 445,
+      "people_parameter": "adult_opening_1"
+    },
+    {
+      "age_months": 446,
+      "people_parameter": "adult_opening_1"
+    },
+    {
+      "age_months": 447,
+      "people_parameter": "adult_opening_1"
+    },
+    {
+      "age_months": 448,
+      "people_parameter": "adult_opening_1"
+    },
+    {
+      "age_months": 449,
+      "people_parameter": "adult_opening_1"
+    },
+    {
+      "age_months": 450,
+      "people_parameter": "adult_opening_1"
+    },
+    {
+      "age_months": 451,
+      "people_parameter": "adult_opening_1"
+    },
+    {
+      "age_months": 452,
+      "people_parameter": "adult_opening_1"
+    },
+    {
+      "age_months": 453,
+      "people_parameter": "adult_opening_1"
+    },
+    {
+      "age_months": 454,
+      "people_parameter": "adult_opening_1"
+    },
+    {
+      "age_months": 455,
+      "people_parameter": "adult_opening_1"
+    },
+    {
+      "age_months": 456,
+      "people_parameter": "adult_opening_1"
+    },
+    {
+      "age_months": 457,
+      "people_parameter": "adult_opening_1"
+    },
+    {
+      "age_months": 458,
+      "people_parameter": "adult_opening_1"
+    },
+    {
+      "age_months": 459,
+      "people_parameter": "adult_opening_1"
+    },
+    {
+      "age_months": 460,
+      "people_parameter": "adult_opening_1"
+    },
+    {
+      "age_months": 461,
+      "people_parameter": "adult_opening_1"
+    },
+    {
+      "age_months": 462,
+      "people_parameter": "adult_opening_1"
+    },
+    {
+      "age_months": 463,
+      "people_parameter": "adult_opening_1"
+    },
+    {
+      "age_months": 464,
+      "people_parameter": "adult_opening_1"
+    },
+    {
+      "age_months": 465,
+      "people_parameter": "adult_opening_1"
+    },
+    {
+      "age_months": 466,
+      "people_parameter": "adult_opening_1"
+    },
+    {
+      "age_months": 467,
+      "people_parameter": "adult_opening_1"
+    },
+    {
+      "age_months": 468,
+      "people_parameter": "adult_opening_1"
+    },
+    {
+      "age_months": 469,
+      "people_parameter": "adult_opening_1"
+    },
+    {
+      "age_months": 470,
+      "people_parameter": "adult_opening_1"
+    },
+    {
+      "age_months": 471,
+      "people_parameter": "adult_opening_1"
+    },
+    {
+      "age_months": 472,
+      "people_parameter": "adult_opening_1"
+    },
+    {
+      "age_months": 473,
+      "people_parameter": "adult_opening_1"
+    },
+    {
+      "age_months": 474,
+      "people_parameter": "adult_opening_1"
+    },
+    {
+      "age_months": 475,
+      "people_parameter": "adult_opening_1"
+    },
+    {
+      "age_months": 476,
+      "people_parameter": "adult_opening_1"
+    },
+    {
+      "age_months": 477,
+      "people_parameter": "adult_opening_1"
+    },
+    {
+      "age_months": 478,
+      "people_parameter": "adult_opening_1"
+    },
+    {
+      "age_months": 479,
+      "people_parameter": "adult_opening_1"
+    },
+    {
+      "age_months": 480,
+      "people_parameter": "adult_opening_1"
+    },
+    {
+      "age_months": 481,
+      "people_parameter": "adult_opening_1"
+    },
+    {
+      "age_months": 482,
+      "people_parameter": "adult_opening_1"
+    },
+    {
+      "age_months": 483,
+      "people_parameter": "adult_opening_1"
+    },
+    {
+      "age_months": 484,
+      "people_parameter": "adult_opening_1"
+    },
+    {
+      "age_months": 485,
+      "people_parameter": "adult_opening_1"
+    },
+    {
+      "age_months": 486,
+      "people_parameter": "adult_opening_1"
+    },
+    {
+      "age_months": 487,
+      "people_parameter": "adult_opening_1"
+    },
+    {
+      "age_months": 488,
+      "people_parameter": "adult_opening_1"
+    },
+    {
+      "age_months": 489,
+      "people_parameter": "adult_opening_1"
+    },
+    {
+      "age_months": 490,
+      "people_parameter": "adult_opening_1"
+    },
+    {
+      "age_months": 491,
+      "people_parameter": "adult_opening_1"
+    },
+    {
+      "age_months": 492,
+      "people_parameter": "adult_opening_1"
+    },
+    {
+      "age_months": 493,
+      "people_parameter": "adult_opening_1"
+    },
+    {
+      "age_months": 494,
+      "people_parameter": "adult_opening_1"
+    },
+    {
+      "age_months": 495,
+      "people_parameter": "adult_opening_1"
+    },
+    {
+      "age_months": 496,
+      "people_parameter": "adult_opening_1"
+    },
+    {
+      "age_months": 497,
+      "people_parameter": "adult_opening_1"
+    },
+    {
+      "age_months": 498,
+      "people_parameter": "adult_opening_1"
+    },
+    {
+      "age_months": 499,
+      "people_parameter": "adult_opening_1"
+    },
+    {
+      "age_months": 500,
+      "people_parameter": "adult_opening_1"
+    },
+    {
+      "age_months": 501,
+      "people_parameter": "adult_opening_1"
+    },
+    {
+      "age_months": 502,
+      "people_parameter": "adult_opening_1"
+    },
+    {
+      "age_months": 503,
+      "people_parameter": "adult_opening_1"
+    },
+    {
+      "age_months": 504,
+      "people_parameter": "adult_opening_1"
+    },
+    {
+      "age_months": 505,
+      "people_parameter": "adult_opening_1"
+    },
+    {
+      "age_months": 506,
+      "people_parameter": "adult_opening_1"
+    },
+    {
+      "age_months": 507,
+      "people_parameter": "adult_opening_1"
+    },
+    {
+      "age_months": 508,
+      "people_parameter": "adult_opening_1"
+    },
+    {
+      "age_months": 509,
+      "people_parameter": "adult_opening_1"
+    },
+    {
+      "age_months": 510,
+      "people_parameter": "adult_opening_1"
+    },
+    {
+      "age_months": 511,
+      "people_parameter": "adult_opening_1"
+    },
+    {
+      "age_months": 512,
+      "people_parameter": "adult_opening_1"
+    },
+    {
+      "age_months": 513,
+      "people_parameter": "adult_opening_1"
+    },
+    {
+      "age_months": 514,
+      "people_parameter": "adult_opening_1"
+    },
+    {
+      "age_months": 515,
+      "people_parameter": "adult_opening_1"
+    },
+    {
+      "age_months": 516,
+      "people_parameter": "adult_opening_1"
+    },
+    {
+      "age_months": 517,
+      "people_parameter": "adult_opening_1"
+    },
+    {
+      "age_months": 518,
+      "people_parameter": "adult_opening_1"
+    },
+    {
+      "age_months": 519,
+      "people_parameter": "adult_opening_1"
+    },
+    {
+      "age_months": 520,
+      "people_parameter": "adult_opening_1"
+    },
+    {
+      "age_months": 521,
+      "people_parameter": "adult_opening_1"
+    },
+    {
+      "age_months": 522,
+      "people_parameter": "adult_opening_1"
+    },
+    {
+      "age_months": 523,
+      "people_parameter": "adult_opening_1"
+    },
+    {
+      "age_months": 524,
+      "people_parameter": "adult_opening_1"
+    },
+    {
+      "age_months": 525,
+      "people_parameter": "adult_opening_1"
+    },
+    {
+      "age_months": 526,
+      "people_parameter": "adult_opening_1"
+    },
+    {
+      "age_months": 527,
+      "people_parameter": "adult_opening_1"
+    },
+    {
+      "age_months": 528,
+      "people_parameter": "adult_opening_1"
+    },
+    {
+      "age_months": 529,
+      "people_parameter": "adult_opening_1"
+    },
+    {
+      "age_months": 530,
+      "people_parameter": "adult_opening_1"
+    },
+    {
+      "age_months": 531,
+      "people_parameter": "adult_opening_1"
+    },
+    {
+      "age_months": 532,
+      "people_parameter": "adult_opening_1"
+    },
+    {
+      "age_months": 533,
+      "people_parameter": "adult_opening_1"
+    },
+    {
+      "age_months": 534,
+      "people_parameter": "adult_opening_1"
+    },
+    {
+      "age_months": 535,
+      "people_parameter": "adult_opening_1"
+    },
+    {
+      "age_months": 536,
+      "people_parameter": "adult_opening_1"
+    },
+    {
+      "age_months": 537,
+      "people_parameter": "adult_opening_1"
+    },
+    {
+      "age_months": 538,
+      "people_parameter": "adult_opening_1"
+    },
+    {
+      "age_months": 539,
+      "people_parameter": "adult_opening_1"
+    },
+    {
+      "age_months": 540,
+      "people_parameter": "adult_opening_1"
+    },
+    {
+      "age_months": 541,
+      "people_parameter": "adult_opening_1"
+    },
+    {
+      "age_months": 542,
+      "people_parameter": "adult_opening_1"
+    },
+    {
+      "age_months": 543,
+      "people_parameter": "adult_opening_1"
+    },
+    {
+      "age_months": 544,
+      "people_parameter": "adult_opening_1"
+    },
+    {
+      "age_months": 545,
+      "people_parameter": "adult_opening_1"
+    },
+    {
+      "age_months": 546,
+      "people_parameter": "adult_opening_1"
+    },
+    {
+      "age_months": 547,
+      "people_parameter": "adult_opening_1"
+    },
+    {
+      "age_months": 548,
+      "people_parameter": "adult_opening_1"
+    },
+    {
+      "age_months": 549,
+      "people_parameter": "adult_opening_1"
+    },
+    {
+      "age_months": 550,
+      "people_parameter": "adult_opening_1"
+    },
+    {
+      "age_months": 551,
+      "people_parameter": "adult_opening_1"
+    },
+    {
+      "age_months": 552,
+      "people_parameter": "adult_opening_1"
+    },
+    {
+      "age_months": 553,
+      "people_parameter": "adult_opening_1"
+    },
+    {
+      "age_months": 554,
+      "people_parameter": "adult_opening_1"
+    },
+    {
+      "age_months": 555,
+      "people_parameter": "adult_opening_1"
+    },
+    {
+      "age_months": 556,
+      "people_parameter": "adult_opening_1"
+    },
+    {
+      "age_months": 557,
+      "people_parameter": "adult_opening_1"
+    },
+    {
+      "age_months": 558,
+      "people_parameter": "adult_opening_1"
+    },
+    {
+      "age_months": 559,
+      "people_parameter": "adult_opening_1"
+    },
+    {
+      "age_months": 560,
+      "people_parameter": "adult_opening_1"
+    },
+    {
+      "age_months": 561,
+      "people_parameter": "adult_opening_1"
+    },
+    {
+      "age_months": 562,
+      "people_parameter": "adult_opening_1"
+    },
+    {
+      "age_months": 563,
+      "people_parameter": "adult_opening_1"
+    },
+    {
+      "age_months": 564,
+      "people_parameter": "adult_opening_1"
+    },
+    {
+      "age_months": 565,
+      "people_parameter": "adult_opening_1"
+    },
+    {
+      "age_months": 566,
+      "people_parameter": "adult_opening_1"
+    },
+    {
+      "age_months": 567,
+      "people_parameter": "adult_opening_1"
+    },
+    {
+      "age_months": 568,
+      "people_parameter": "adult_opening_1"
+    },
+    {
+      "age_months": 569,
+      "people_parameter": "adult_opening_1"
+    },
+    {
+      "age_months": 570,
+      "people_parameter": "adult_opening_1"
+    },
+    {
+      "age_months": 571,
+      "people_parameter": "adult_opening_1"
+    },
+    {
+      "age_months": 572,
+      "people_parameter": "adult_opening_1"
+    },
+    {
+      "age_months": 573,
+      "people_parameter": "adult_opening_1"
+    },
+    {
+      "age_months": 574,
+      "people_parameter": "adult_opening_1"
+    },
+    {
+      "age_months": 575,
+      "people_parameter": "adult_opening_1"
+    },
+    {
+      "age_months": 576,
+      "people_parameter": "adult_opening_1"
+    },
+    {
+      "age_months": 577,
+      "people_parameter": "adult_opening_1"
+    },
+    {
+      "age_months": 578,
+      "people_parameter": "adult_opening_1"
+    },
+    {
+      "age_months": 579,
+      "people_parameter": "adult_opening_1"
+    },
+    {
+      "age_months": 580,
+      "people_parameter": "adult_opening_1"
+    },
+    {
+      "age_months": 581,
+      "people_parameter": "adult_opening_1"
+    },
+    {
+      "age_months": 582,
+      "people_parameter": "adult_opening_1"
+    },
+    {
+      "age_months": 583,
+      "people_parameter": "adult_opening_1"
+    },
+    {
+      "age_months": 584,
+      "people_parameter": "adult_opening_1"
+    },
+    {
+      "age_months": 585,
+      "people_parameter": "adult_opening_1"
+    },
+    {
+      "age_months": 586,
+      "people_parameter": "adult_opening_1"
+    },
+    {
+      "age_months": 587,
+      "people_parameter": "adult_opening_1"
+    },
+    {
+      "age_months": 588,
+      "people_parameter": "adult_opening_1"
+    },
+    {
+      "age_months": 589,
+      "people_parameter": "adult_opening_1"
+    },
+    {
+      "age_months": 590,
+      "people_parameter": "adult_opening_1"
+    },
+    {
+      "age_months": 591,
+      "people_parameter": "adult_opening_1"
+    },
+    {
+      "age_months": 592,
+      "people_parameter": "adult_opening_1"
+    },
+    {
+      "age_months": 593,
+      "people_parameter": "adult_opening_1"
+    },
+    {
+      "age_months": 594,
+      "people_parameter": "adult_opening_1"
+    },
+    {
+      "age_months": 595,
+      "people_parameter": "adult_opening_1"
+    },
+    {
+      "age_months": 596,
+      "people_parameter": "adult_opening_1"
+    },
+    {
+      "age_months": 597,
+      "people_parameter": "adult_opening_1"
+    },
+    {
+      "age_months": 598,
+      "people_parameter": "adult_opening_1"
+    },
+    {
+      "age_months": 599,
+      "people_parameter": "adult_opening_1"
+    },
+    {
+      "age_months": 600,
+      "people_parameter": "adult_opening_1"
+    },
+    {
+      "age_months": 601,
+      "people_parameter": "adult_opening_1"
+    },
+    {
+      "age_months": 602,
+      "people_parameter": "adult_opening_1"
+    },
+    {
+      "age_months": 603,
+      "people_parameter": "adult_opening_1"
+    },
+    {
+      "age_months": 604,
+      "people_parameter": "adult_opening_1"
+    },
+    {
+      "age_months": 605,
+      "people_parameter": "adult_opening_1"
+    },
+    {
+      "age_months": 606,
+      "people_parameter": "adult_opening_1"
+    },
+    {
+      "age_months": 607,
+      "people_parameter": "adult_opening_1"
+    },
+    {
+      "age_months": 608,
+      "people_parameter": "adult_opening_1"
+    },
+    {
+      "age_months": 609,
+      "people_parameter": "adult_opening_1"
+    },
+    {
+      "age_months": 610,
+      "people_parameter": "adult_opening_1"
+    },
+    {
+      "age_months": 611,
+      "people_parameter": "adult_opening_1"
+    },
+    {
+      "age_months": 612,
+      "people_parameter": "adult_opening_1"
+    },
+    {
+      "age_months": 613,
+      "people_parameter": "adult_opening_1"
+    },
+    {
+      "age_months": 614,
+      "people_parameter": "adult_opening_1"
+    },
+    {
+      "age_months": 615,
+      "people_parameter": "adult_opening_1"
+    },
+    {
+      "age_months": 616,
+      "people_parameter": "adult_opening_1"
+    },
+    {
+      "age_months": 617,
+      "people_parameter": "adult_opening_1"
+    },
+    {
+      "age_months": 618,
+      "people_parameter": "adult_opening_1"
+    },
+    {
+      "age_months": 619,
+      "people_parameter": "adult_opening_1"
+    },
+    {
+      "age_months": 620,
+      "people_parameter": "adult_opening_1"
+    },
+    {
+      "age_months": 621,
+      "people_parameter": "adult_opening_1"
+    },
+    {
+      "age_months": 622,
+      "people_parameter": "adult_opening_1"
+    },
+    {
+      "age_months": 623,
+      "people_parameter": "adult_opening_1"
+    },
+    {
+      "age_months": 624,
+      "people_parameter": "adult_opening_1"
+    },
+    {
+      "age_months": 625,
+      "people_parameter": "adult_opening_1"
+    },
+    {
+      "age_months": 626,
+      "people_parameter": "adult_opening_1"
+    },
+    {
+      "age_months": 627,
+      "people_parameter": "adult_opening_1"
+    },
+    {
+      "age_months": 628,
+      "people_parameter": "adult_opening_1"
+    },
+    {
+      "age_months": 629,
+      "people_parameter": "adult_opening_1"
+    },
+    {
+      "age_months": 630,
+      "people_parameter": "adult_opening_1"
+    },
+    {
+      "age_months": 631,
+      "people_parameter": "adult_opening_1"
+    },
+    {
+      "age_months": 632,
+      "people_parameter": "adult_opening_1"
+    },
+    {
+      "age_months": 633,
+      "people_parameter": "adult_opening_1"
+    },
+    {
+      "age_months": 634,
+      "people_parameter": "adult_opening_1"
+    },
+    {
+      "age_months": 635,
+      "people_parameter": "adult_opening_1"
+    },
+    {
+      "age_months": 636,
+      "people_parameter": "adult_opening_1"
+    },
+    {
+      "age_months": 637,
+      "people_parameter": "adult_opening_1"
+    },
+    {
+      "age_months": 638,
+      "people_parameter": "adult_opening_1"
+    },
+    {
+      "age_months": 639,
+      "people_parameter": "adult_opening_1"
+    },
+    {
+      "age_months": 640,
+      "people_parameter": "adult_opening_1"
+    },
+    {
+      "age_months": 641,
+      "people_parameter": "adult_opening_1"
+    },
+    {
+      "age_months": 642,
+      "people_parameter": "adult_opening_1"
+    },
+    {
+      "age_months": 643,
+      "people_parameter": "adult_opening_1"
+    },
+    {
+      "age_months": 644,
+      "people_parameter": "adult_opening_1"
+    },
+    {
+      "age_months": 645,
+      "people_parameter": "adult_opening_1"
+    },
+    {
+      "age_months": 646,
+      "people_parameter": "adult_opening_1"
+    },
+    {
+      "age_months": 647,
+      "people_parameter": "adult_opening_1"
+    },
+    {
+      "age_months": 648,
+      "people_parameter": "adult_opening_1"
+    },
+    {
+      "age_months": 649,
+      "people_parameter": "adult_opening_1"
+    },
+    {
+      "age_months": 650,
+      "people_parameter": "adult_opening_1"
+    },
+    {
+      "age_months": 651,
+      "people_parameter": "adult_opening_1"
+    },
+    {
+      "age_months": 652,
+      "people_parameter": "adult_opening_1"
+    },
+    {
+      "age_months": 653,
+      "people_parameter": "adult_opening_1"
+    },
+    {
+      "age_months": 654,
+      "people_parameter": "adult_opening_1"
+    },
+    {
+      "age_months": 655,
+      "people_parameter": "adult_opening_1"
+    },
+    {
+      "age_months": 656,
+      "people_parameter": "adult_opening_1"
+    },
+    {
+      "age_months": 657,
+      "people_parameter": "adult_opening_1"
+    },
+    {
+      "age_months": 658,
+      "people_parameter": "adult_opening_1"
+    },
+    {
+      "age_months": 659,
+      "people_parameter": "adult_opening_1"
+    },
+    {
+      "age_months": 660,
+      "people_parameter": "adult_opening_1"
+    },
+    {
+      "age_months": 661,
+      "people_parameter": "adult_opening_1"
+    },
+    {
+      "age_months": 662,
+      "people_parameter": "adult_opening_1"
+    },
+    {
+      "age_months": 663,
+      "people_parameter": "adult_opening_1"
+    },
+    {
+      "age_months": 664,
+      "people_parameter": "adult_opening_1"
+    },
+    {
+      "age_months": 665,
+      "people_parameter": "adult_opening_1"
+    },
+    {
+      "age_months": 666,
+      "people_parameter": "adult_opening_1"
+    },
+    {
+      "age_months": 667,
+      "people_parameter": "adult_opening_1"
+    },
+    {
+      "age_months": 668,
+      "people_parameter": "adult_opening_1"
+    },
+    {
+      "age_months": 669,
+      "people_parameter": "adult_opening_1"
+    },
+    {
+      "age_months": 670,
+      "people_parameter": "adult_opening_1"
+    },
+    {
+      "age_months": 671,
+      "people_parameter": "adult_opening_1"
+    },
+    {
+      "age_months": 672,
+      "people_parameter": "adult_opening_1"
+    },
+    {
+      "age_months": 673,
+      "people_parameter": "adult_opening_1"
+    },
+    {
+      "age_months": 674,
+      "people_parameter": "adult_opening_1"
+    },
+    {
+      "age_months": 675,
+      "people_parameter": "adult_opening_1"
+    },
+    {
+      "age_months": 676,
+      "people_parameter": "adult_opening_1"
+    },
+    {
+      "age_months": 677,
+      "people_parameter": "adult_opening_1"
+    },
+    {
+      "age_months": 678,
+      "people_parameter": "adult_opening_1"
+    },
+    {
+      "age_months": 679,
+      "people_parameter": "adult_opening_1"
+    },
+    {
+      "age_months": 680,
+      "people_parameter": "adult_opening_1"
+    },
+    {
+      "age_months": 681,
+      "people_parameter": "adult_opening_1"
+    },
+    {
+      "age_months": 682,
+      "people_parameter": "adult_opening_1"
+    },
+    {
+      "age_months": 683,
+      "people_parameter": "adult_opening_1"
+    },
+    {
+      "age_months": 684,
+      "people_parameter": "adult_opening_1"
+    },
+    {
+      "age_months": 685,
+      "people_parameter": "adult_opening_1"
+    },
+    {
+      "age_months": 686,
+      "people_parameter": "adult_opening_1"
+    },
+    {
+      "age_months": 687,
+      "people_parameter": "adult_opening_1"
+    },
+    {
+      "age_months": 688,
+      "people_parameter": "adult_opening_1"
+    },
+    {
+      "age_months": 689,
+      "people_parameter": "adult_opening_1"
+    },
+    {
+      "age_months": 690,
+      "people_parameter": "adult_opening_1"
+    },
+    {
+      "age_months": 691,
+      "people_parameter": "adult_opening_1"
+    },
+    {
+      "age_months": 692,
+      "people_parameter": "adult_opening_1"
+    },
+    {
+      "age_months": 693,
+      "people_parameter": "adult_opening_1"
+    },
+    {
+      "age_months": 694,
+      "people_parameter": "adult_opening_1"
+    },
+    {
+      "age_months": 695,
+      "people_parameter": "adult_opening_1"
+    },
+    {
+      "age_months": 696,
+      "people_parameter": "adult_opening_1"
+    },
+    {
+      "age_months": 697,
+      "people_parameter": "adult_opening_1"
+    },
+    {
+      "age_months": 698,
+      "people_parameter": "adult_opening_1"
+    },
+    {
+      "age_months": 699,
+      "people_parameter": "adult_opening_1"
+    },
+    {
+      "age_months": 700,
+      "people_parameter": "adult_opening_1"
+    },
+    {
+      "age_months": 701,
+      "people_parameter": "adult_opening_1"
+    },
+    {
+      "age_months": 702,
+      "people_parameter": "adult_opening_1"
+    },
+    {
+      "age_months": 703,
+      "people_parameter": "adult_opening_1"
+    },
+    {
+      "age_months": 704,
+      "people_parameter": "adult_opening_1"
+    },
+    {
+      "age_months": 705,
+      "people_parameter": "adult_opening_1"
+    },
+    {
+      "age_months": 706,
+      "people_parameter": "adult_opening_1"
+    },
+    {
+      "age_months": 707,
+      "people_parameter": "adult_opening_1"
+    },
+    {
+      "age_months": 708,
+      "people_parameter": "adult_opening_1"
+    },
+    {
+      "age_months": 709,
+      "people_parameter": "adult_opening_1"
+    },
+    {
+      "age_months": 710,
+      "people_parameter": "adult_opening_1"
+    },
+    {
+      "age_months": 711,
+      "people_parameter": "adult_opening_1"
+    },
+    {
+      "age_months": 712,
+      "people_parameter": "adult_opening_1"
+    },
+    {
+      "age_months": 713,
+      "people_parameter": "adult_opening_1"
+    },
+    {
+      "age_months": 714,
+      "people_parameter": "adult_opening_1"
+    },
+    {
+      "age_months": 715,
+      "people_parameter": "adult_opening_1"
+    },
+    {
+      "age_months": 716,
+      "people_parameter": "adult_opening_1"
+    },
+    {
+      "age_months": 717,
+      "people_parameter": "adult_opening_1"
+    },
+    {
+      "age_months": 718,
+      "people_parameter": "adult_opening_1"
+    },
+    {
+      "age_months": 719,
+      "people_parameter": "adult_opening_1"
+    },
+    {
+      "age_months": 720,
+      "people_parameter": "adult_opening_1"
+    },
+    {
+      "age_months": 721,
+      "people_parameter": "adult_opening_1"
+    },
+    {
+      "age_months": 722,
+      "people_parameter": "adult_opening_1"
+    },
+    {
+      "age_months": 723,
+      "people_parameter": "adult_opening_1"
+    },
+    {
+      "age_months": 724,
+      "people_parameter": "adult_opening_1"
+    },
+    {
+      "age_months": 725,
+      "people_parameter": "adult_opening_1"
+    },
+    {
+      "age_months": 726,
+      "people_parameter": "adult_opening_1"
+    },
+    {
+      "age_months": 727,
+      "people_parameter": "adult_opening_1"
+    },
+    {
+      "age_months": 728,
+      "people_parameter": "adult_opening_1"
+    },
+    {
+      "age_months": 729,
+      "people_parameter": "adult_opening_1"
+    },
+    {
+      "age_months": 730,
+      "people_parameter": "adult_opening_1"
+    },
+    {
+      "age_months": 731,
+      "people_parameter": "adult_opening_1"
+    },
+    {
+      "age_months": 732,
+      "people_parameter": "adult_opening_1"
+    },
+    {
+      "age_months": 733,
+      "people_parameter": "adult_opening_1"
+    },
+    {
+      "age_months": 734,
+      "people_parameter": "adult_opening_1"
+    },
+    {
+      "age_months": 735,
+      "people_parameter": "adult_opening_1"
+    },
+    {
+      "age_months": 736,
+      "people_parameter": "adult_opening_1"
+    },
+    {
+      "age_months": 737,
+      "people_parameter": "adult_opening_1"
+    },
+    {
+      "age_months": 738,
+      "people_parameter": "adult_opening_1"
+    },
+    {
+      "age_months": 739,
+      "people_parameter": "adult_opening_1"
+    },
+    {
+      "age_months": 740,
+      "people_parameter": "adult_opening_1"
+    },
+    {
+      "age_months": 741,
+      "people_parameter": "adult_opening_1"
+    },
+    {
+      "age_months": 742,
+      "people_parameter": "adult_opening_1"
+    },
+    {
+      "age_months": 743,
+      "people_parameter": "adult_opening_1"
+    },
+    {
+      "age_months": 744,
+      "people_parameter": "adult_opening_1"
+    },
+    {
+      "age_months": 745,
+      "people_parameter": "adult_opening_1"
+    },
+    {
+      "age_months": 746,
+      "people_parameter": "adult_opening_1"
+    },
+    {
+      "age_months": 747,
+      "people_parameter": "adult_opening_1"
+    },
+    {
+      "age_months": 748,
+      "people_parameter": "adult_opening_1"
+    },
+    {
+      "age_months": 749,
+      "people_parameter": "adult_opening_1"
+    },
+    {
+      "age_months": 750,
+      "people_parameter": "adult_opening_1"
+    },
+    {
+      "age_months": 751,
+      "people_parameter": "adult_opening_1"
+    },
+    {
+      "age_months": 752,
+      "people_parameter": "adult_opening_1"
+    },
+    {
+      "age_months": 753,
+      "people_parameter": "adult_opening_1"
+    },
+    {
+      "age_months": 754,
+      "people_parameter": "adult_opening_1"
+    },
+    {
+      "age_months": 755,
+      "people_parameter": "adult_opening_1"
+    },
+    {
+      "age_months": 756,
+      "people_parameter": "adult_opening_1"
+    },
+    {
+      "age_months": 757,
+      "people_parameter": "adult_opening_1"
+    },
+    {
+      "age_months": 758,
+      "people_parameter": "adult_opening_1"
+    },
+    {
+      "age_months": 759,
+      "people_parameter": "adult_opening_1"
+    },
+    {
+      "age_months": 760,
+      "people_parameter": "adult_opening_1"
+    },
+    {
+      "age_months": 761,
+      "people_parameter": "adult_opening_1"
+    },
+    {
+      "age_months": 762,
+      "people_parameter": "adult_opening_1"
+    },
+    {
+      "age_months": 763,
+      "people_parameter": "adult_opening_1"
+    },
+    {
+      "age_months": 764,
+      "people_parameter": "adult_opening_1"
+    },
+    {
+      "age_months": 765,
+      "people_parameter": "adult_opening_1"
+    },
+    {
+      "age_months": 766,
+      "people_parameter": "adult_opening_1"
+    },
+    {
+      "age_months": 767,
+      "people_parameter": "adult_opening_1"
+    },
+    {
+      "age_months": 768,
+      "people_parameter": "adult_opening_0"
+    },
+    {
+      "age_months": 769,
+      "people_parameter": "adult_opening_0"
+    },
+    {
+      "age_months": 770,
+      "people_parameter": "adult_opening_0"
+    },
+    {
+      "age_months": 771,
+      "people_parameter": "adult_opening_0"
+    },
+    {
+      "age_months": 772,
+      "people_parameter": "adult_opening_0"
+    },
+    {
+      "age_months": 773,
+      "people_parameter": "adult_opening_0"
+    },
+    {
+      "age_months": 774,
+      "people_parameter": "adult_opening_0"
+    },
+    {
+      "age_months": 775,
+      "people_parameter": "adult_opening_0"
+    },
+    {
+      "age_months": 776,
+      "people_parameter": "adult_opening_0"
+    },
+    {
+      "age_months": 777,
+      "people_parameter": "adult_opening_0"
+    },
+    {
+      "age_months": 778,
+      "people_parameter": "adult_opening_0"
+    },
+    {
+      "age_months": 779,
+      "people_parameter": "adult_opening_0"
+    },
+    {
+      "age_months": 780,
+      "people_parameter": "older_opening_1"
+    },
+    {
+      "age_months": 781,
+      "people_parameter": "older_opening_1"
+    },
+    {
+      "age_months": 782,
+      "people_parameter": "older_opening_1"
+    },
+    {
+      "age_months": 783,
+      "people_parameter": "older_opening_1"
+    },
+    {
+      "age_months": 784,
+      "people_parameter": "older_opening_1"
+    },
+    {
+      "age_months": 785,
+      "people_parameter": "older_opening_1"
+    },
+    {
+      "age_months": 786,
+      "people_parameter": "older_opening_1"
+    },
+    {
+      "age_months": 787,
+      "people_parameter": "older_opening_1"
+    },
+    {
+      "age_months": 788,
+      "people_parameter": "older_opening_1"
+    },
+    {
+      "age_months": 789,
+      "people_parameter": "older_opening_1"
+    },
+    {
+      "age_months": 790,
+      "people_parameter": "older_opening_1"
+    },
+    {
+      "age_months": 791,
+      "people_parameter": "older_opening_1"
+    },
+    {
+      "age_months": 792,
+      "people_parameter": "older_opening_1"
+    },
+    {
+      "age_months": 793,
+      "people_parameter": "older_opening_1"
+    },
+    {
+      "age_months": 794,
+      "people_parameter": "older_opening_1"
+    },
+    {
+      "age_months": 795,
+      "people_parameter": "older_opening_1"
+    },
+    {
+      "age_months": 796,
+      "people_parameter": "older_opening_1"
+    },
+    {
+      "age_months": 797,
+      "people_parameter": "older_opening_1"
+    },
+    {
+      "age_months": 798,
+      "people_parameter": "older_opening_1"
+    },
+    {
+      "age_months": 799,
+      "people_parameter": "older_opening_1"
+    },
+    {
+      "age_months": 800,
+      "people_parameter": "older_opening_1"
+    },
+    {
+      "age_months": 801,
+      "people_parameter": "older_opening_1"
+    },
+    {
+      "age_months": 802,
+      "people_parameter": "older_opening_1"
+    },
+    {
+      "age_months": 803,
+      "people_parameter": "older_opening_1"
+    },
+    {
+      "age_months": 804,
+      "people_parameter": "older_opening_1"
+    },
+    {
+      "age_months": 805,
+      "people_parameter": "older_opening_1"
+    },
+    {
+      "age_months": 806,
+      "people_parameter": "older_opening_1"
+    },
+    {
+      "age_months": 807,
+      "people_parameter": "older_opening_1"
+    },
+    {
+      "age_months": 808,
+      "people_parameter": "older_opening_1"
+    },
+    {
+      "age_months": 809,
+      "people_parameter": "older_opening_1"
+    },
+    {
+      "age_months": 810,
+      "people_parameter": "older_opening_1"
+    },
+    {
+      "age_months": 811,
+      "people_parameter": "older_opening_1"
+    },
+    {
+      "age_months": 812,
+      "people_parameter": "older_opening_1"
+    },
+    {
+      "age_months": 813,
+      "people_parameter": "older_opening_1"
+    },
+    {
+      "age_months": 814,
+      "people_parameter": "older_opening_1"
+    },
+    {
+      "age_months": 815,
+      "people_parameter": "older_opening_1"
+    },
+    {
+      "age_months": 816,
+      "people_parameter": "older_opening_1"
+    },
+    {
+      "age_months": 817,
+      "people_parameter": "older_opening_1"
+    },
+    {
+      "age_months": 818,
+      "people_parameter": "older_opening_1"
+    },
+    {
+      "age_months": 819,
+      "people_parameter": "older_opening_1"
+    },
+    {
+      "age_months": 820,
+      "people_parameter": "older_opening_1"
+    },
+    {
+      "age_months": 821,
+      "people_parameter": "older_opening_1"
+    },
+    {
+      "age_months": 822,
+      "people_parameter": "older_opening_1"
+    },
+    {
+      "age_months": 823,
+      "people_parameter": "older_opening_1"
+    },
+    {
+      "age_months": 824,
+      "people_parameter": "older_opening_1"
+    },
+    {
+      "age_months": 825,
+      "people_parameter": "older_opening_1"
+    },
+    {
+      "age_months": 826,
+      "people_parameter": "older_opening_1"
+    },
+    {
+      "age_months": 827,
+      "people_parameter": "older_opening_1"
+    },
+    {
+      "age_months": 828,
+      "people_parameter": "older_opening_1"
+    },
+    {
+      "age_months": 829,
+      "people_parameter": "older_opening_1"
+    },
+    {
+      "age_months": 830,
+      "people_parameter": "older_opening_1"
+    },
+    {
+      "age_months": 831,
+      "people_parameter": "older_opening_1"
+    },
+    {
+      "age_months": 832,
+      "people_parameter": "older_opening_1"
+    },
+    {
+      "age_months": 833,
+      "people_parameter": "older_opening_1"
+    },
+    {
+      "age_months": 834,
+      "people_parameter": "older_opening_1"
+    },
+    {
+      "age_months": 835,
+      "people_parameter": "older_opening_1"
+    },
+    {
+      "age_months": 836,
+      "people_parameter": "older_opening_1"
+    },
+    {
+      "age_months": 837,
+      "people_parameter": "older_opening_1"
+    },
+    {
+      "age_months": 838,
+      "people_parameter": "older_opening_1"
+    },
+    {
+      "age_months": 839,
+      "people_parameter": "older_opening_1"
+    },
+    {
+      "age_months": 840,
+      "people_parameter": "older_opening_1"
+    },
+    {
+      "age_months": 841,
+      "people_parameter": "older_opening_1"
+    },
+    {
+      "age_months": 842,
+      "people_parameter": "older_opening_1"
+    },
+    {
+      "age_months": 843,
+      "people_parameter": "older_opening_1"
+    },
+    {
+      "age_months": 844,
+      "people_parameter": "older_opening_1"
+    },
+    {
+      "age_months": 845,
+      "people_parameter": "older_opening_1"
+    },
+    {
+      "age_months": 846,
+      "people_parameter": "older_opening_1"
+    },
+    {
+      "age_months": 847,
+      "people_parameter": "older_opening_1"
+    },
+    {
+      "age_months": 848,
+      "people_parameter": "older_opening_1"
+    },
+    {
+      "age_months": 849,
+      "people_parameter": "older_opening_1"
+    },
+    {
+      "age_months": 850,
+      "people_parameter": "older_opening_1"
+    },
+    {
+      "age_months": 851,
+      "people_parameter": "older_opening_1"
+    },
+    {
+      "age_months": 852,
+      "people_parameter": "older_opening_1"
+    },
+    {
+      "age_months": 853,
+      "people_parameter": "older_opening_1"
+    },
+    {
+      "age_months": 854,
+      "people_parameter": "older_opening_1"
+    },
+    {
+      "age_months": 855,
+      "people_parameter": "older_opening_1"
+    },
+    {
+      "age_months": 856,
+      "people_parameter": "older_opening_1"
+    },
+    {
+      "age_months": 857,
+      "people_parameter": "older_opening_1"
+    },
+    {
+      "age_months": 858,
+      "people_parameter": "older_opening_1"
+    },
+    {
+      "age_months": 859,
+      "people_parameter": "older_opening_1"
+    },
+    {
+      "age_months": 860,
+      "people_parameter": "older_opening_1"
+    },
+    {
+      "age_months": 861,
+      "people_parameter": "older_opening_1"
+    },
+    {
+      "age_months": 862,
+      "people_parameter": "older_opening_1"
+    },
+    {
+      "age_months": 863,
+      "people_parameter": "older_opening_1"
+    },
+    {
+      "age_months": 864,
+      "people_parameter": "older_opening_1"
+    },
+    {
+      "age_months": 865,
+      "people_parameter": "older_opening_1"
+    },
+    {
+      "age_months": 866,
+      "people_parameter": "older_opening_1"
+    },
+    {
+      "age_months": 867,
+      "people_parameter": "older_opening_1"
+    },
+    {
+      "age_months": 868,
+      "people_parameter": "older_opening_1"
+    },
+    {
+      "age_months": 869,
+      "people_parameter": "older_opening_1"
+    },
+    {
+      "age_months": 870,
+      "people_parameter": "older_opening_1"
+    },
+    {
+      "age_months": 871,
+      "people_parameter": "older_opening_1"
+    },
+    {
+      "age_months": 872,
+      "people_parameter": "older_opening_1"
+    },
+    {
+      "age_months": 873,
+      "people_parameter": "older_opening_1"
+    },
+    {
+      "age_months": 874,
+      "people_parameter": "older_opening_1"
+    },
+    {
+      "age_months": 875,
+      "people_parameter": "older_opening_1"
+    },
+    {
+      "age_months": 876,
+      "people_parameter": "older_opening_1"
+    },
+    {
+      "age_months": 877,
+      "people_parameter": "older_opening_1"
+    },
+    {
+      "age_months": 878,
+      "people_parameter": "older_opening_1"
+    },
+    {
+      "age_months": 879,
+      "people_parameter": "older_opening_1"
+    },
+    {
+      "age_months": 880,
+      "people_parameter": "older_opening_0"
+    },
+    {
+      "age_months": 881,
+      "people_parameter": "older_opening_0"
+    },
+    {
+      "age_months": 882,
+      "people_parameter": "older_opening_0"
+    },
+    {
+      "age_months": 883,
+      "people_parameter": "older_opening_0"
+    },
+    {
+      "age_months": 884,
+      "people_parameter": "older_opening_0"
+    },
+    {
+      "age_months": 885,
+      "people_parameter": "older_opening_0"
+    },
+    {
+      "age_months": 886,
+      "people_parameter": "older_opening_0"
+    },
+    {
+      "age_months": 887,
+      "people_parameter": "older_opening_0"
+    },
+    {
+      "age_months": 888,
+      "people_parameter": "older_opening_0"
+    },
+    {
+      "age_months": 889,
+      "people_parameter": "older_opening_0"
+    },
+    {
+      "age_months": 890,
+      "people_parameter": "older_opening_0"
+    },
+    {
+      "age_months": 891,
+      "people_parameter": "older_opening_0"
+    },
+    {
+      "age_months": 892,
+      "people_parameter": "older_opening_0"
+    },
+    {
+      "age_months": 893,
+      "people_parameter": "older_opening_0"
+    },
+    {
+      "age_months": 894,
+      "people_parameter": "older_opening_0"
+    },
+    {
+      "age_months": 895,
+      "people_parameter": "older_opening_0"
+    },
+    {
+      "age_months": 896,
+      "people_parameter": "older_opening_0"
+    },
+    {
+      "age_months": 897,
+      "people_parameter": "older_opening_0"
+    },
+    {
+      "age_months": 898,
+      "people_parameter": "older_opening_0"
+    },
+    {
+      "age_months": 899,
+      "people_parameter": "older_opening_0"
+    },
+    {
+      "age_months": 900,
+      "people_parameter": "older_opening_0"
+    },
+    {
+      "age_months": 901,
+      "people_parameter": "older_opening_0"
+    },
+    {
+      "age_months": 902,
+      "people_parameter": "older_opening_0"
+    },
+    {
+      "age_months": 903,
+      "people_parameter": "older_opening_0"
+    },
+    {
+      "age_months": 904,
+      "people_parameter": "older_opening_0"
+    },
+    {
+      "age_months": 905,
+      "people_parameter": "older_opening_0"
+    },
+    {
+      "age_months": 906,
+      "people_parameter": "older_opening_0"
+    },
+    {
+      "age_months": 907,
+      "people_parameter": "older_opening_0"
+    },
+    {
+      "age_months": 908,
+      "people_parameter": "older_opening_0"
+    },
+    {
+      "age_months": 909,
+      "people_parameter": "older_opening_0"
+    },
+    {
+      "age_months": 910,
+      "people_parameter": "older_opening_0"
+    },
+    {
+      "age_months": 911,
+      "people_parameter": "older_opening_0"
+    },
+    {
+      "age_months": 912,
+      "people_parameter": "older_opening_0"
+    },
+    {
+      "age_months": 913,
+      "people_parameter": "older_opening_0"
+    },
+    {
+      "age_months": 914,
+      "people_parameter": "older_opening_0"
+    },
+    {
+      "age_months": 915,
+      "people_parameter": "older_opening_0"
+    },
+    {
+      "age_months": 916,
+      "people_parameter": "older_opening_0"
+    },
+    {
+      "age_months": 917,
+      "people_parameter": "older_opening_0"
+    },
+    {
+      "age_months": 918,
+      "people_parameter": "older_opening_0"
+    },
+    {
+      "age_months": 919,
+      "people_parameter": "older_opening_0"
+    },
+    {
+      "age_months": 920,
+      "people_parameter": "older_opening_0"
+    },
+    {
+      "age_months": 921,
+      "people_parameter": "older_opening_0"
+    },
+    {
+      "age_months": 922,
+      "people_parameter": "older_opening_0"
+    },
+    {
+      "age_months": 923,
+      "people_parameter": "older_opening_0"
+    },
+    {
+      "age_months": 924,
+      "people_parameter": "older_opening_0"
+    },
+    {
+      "age_months": 925,
+      "people_parameter": "older_opening_0"
+    },
+    {
+      "age_months": 926,
+      "people_parameter": "older_opening_0"
+    },
+    {
+      "age_months": 927,
+      "people_parameter": "older_opening_0"
+    },
+    {
+      "age_months": 928,
+      "people_parameter": "older_opening_0"
+    },
+    {
+      "age_months": 929,
+      "people_parameter": "older_opening_0"
+    },
+    {
+      "age_months": 930,
+      "people_parameter": "older_opening_0"
+    },
+    {
+      "age_months": 931,
+      "people_parameter": "older_opening_0"
+    },
+    {
+      "age_months": 932,
+      "people_parameter": "older_opening_0"
+    },
+    {
+      "age_months": 933,
+      "people_parameter": "older_opening_0"
+    },
+    {
+      "age_months": 934,
+      "people_parameter": "older_opening_0"
+    },
+    {
+      "age_months": 935,
+      "people_parameter": "older_opening_0"
+    },
+    {
+      "age_months": 936,
+      "people_parameter": "older_opening_0"
+    },
+    {
+      "age_months": 937,
+      "people_parameter": "older_opening_0"
+    },
+    {
+      "age_months": 938,
+      "people_parameter": "older_opening_0"
+    },
+    {
+      "age_months": 939,
+      "people_parameter": "older_opening_0"
+    },
+    {
+      "age_months": 940,
+      "people_parameter": "older_opening_0"
+    },
+    {
+      "age_months": 941,
+      "people_parameter": "older_opening_0"
+    },
+    {
+      "age_months": 942,
+      "people_parameter": "older_opening_0"
+    },
+    {
+      "age_months": 943,
+      "people_parameter": "older_opening_0"
+    },
+    {
+      "age_months": 944,
+      "people_parameter": "older_opening_0"
+    },
+    {
+      "age_months": 945,
+      "people_parameter": "older_opening_0"
+    },
+    {
+      "age_months": 946,
+      "people_parameter": "older_opening_0"
+    },
+    {
+      "age_months": 947,
+      "people_parameter": "older_opening_0"
+    },
+    {
+      "age_months": 948,
+      "people_parameter": "older_opening_0"
+    },
+    {
+      "age_months": 949,
+      "people_parameter": "older_opening_0"
+    },
+    {
+      "age_months": 950,
+      "people_parameter": "older_opening_0"
+    },
+    {
+      "age_months": 951,
+      "people_parameter": "older_opening_0"
+    },
+    {
+      "age_months": 952,
+      "people_parameter": "older_opening_0"
+    },
+    {
+      "age_months": 953,
+      "people_parameter": "older_opening_0"
+    },
+    {
+      "age_months": 954,
+      "people_parameter": "older_opening_0"
+    },
+    {
+      "age_months": 955,
+      "people_parameter": "older_opening_0"
+    },
+    {
+      "age_months": 956,
+      "people_parameter": "older_opening_0"
+    },
+    {
+      "age_months": 957,
+      "people_parameter": "older_opening_0"
+    },
+    {
+      "age_months": 958,
+      "people_parameter": "older_opening_0"
+    },
+    {
+      "age_months": 959,
+      "people_parameter": "older_opening_0"
+    },
+    {
+      "age_months": 960,
+      "people_parameter": "older_opening_0"
+    },
+    {
+      "age_months": 961,
+      "people_parameter": "older_opening_0"
+    },
+    {
+      "age_months": 962,
+      "people_parameter": "older_opening_0"
+    },
+    {
+      "age_months": 963,
+      "people_parameter": "older_opening_0"
+    },
+    {
+      "age_months": 964,
+      "people_parameter": "older_opening_0"
+    },
+    {
+      "age_months": 965,
+      "people_parameter": "older_opening_0"
+    },
+    {
+      "age_months": 966,
+      "people_parameter": "older_opening_0"
+    },
+    {
+      "age_months": 967,
+      "people_parameter": "older_opening_0"
+    },
+    {
+      "age_months": 968,
+      "people_parameter": "older_opening_0"
+    },
+    {
+      "age_months": 969,
+      "people_parameter": "older_opening_0"
+    },
+    {
+      "age_months": 970,
+      "people_parameter": "older_opening_0"
+    },
+    {
+      "age_months": 971,
+      "people_parameter": "older_opening_0"
+    },
+    {
+      "age_months": 972,
+      "people_parameter": "older_opening_0"
+    },
+    {
+      "age_months": 973,
+      "people_parameter": "older_opening_0"
+    },
+    {
+      "age_months": 974,
+      "people_parameter": "older_opening_0"
+    },
+    {
+      "age_months": 975,
+      "people_parameter": "older_opening_0"
+    },
+    {
+      "age_months": 976,
+      "people_parameter": "older_opening_0"
+    },
+    {
+      "age_months": 977,
+      "people_parameter": "older_opening_0"
+    },
+    {
+      "age_months": 978,
+      "people_parameter": "older_opening_0"
+    },
+    {
+      "age_months": 979,
+      "people_parameter": "older_opening_0"
+    },
+    {
+      "age_months": 980,
+      "people_parameter": "older_opening_0"
+    },
+    {
+      "age_months": 981,
+      "people_parameter": "older_opening_0"
+    },
+    {
+      "age_months": 982,
+      "people_parameter": "older_opening_0"
+    },
+    {
+      "age_months": 983,
+      "people_parameter": "older_opening_0"
+    },
+    {
+      "age_months": 984,
+      "people_parameter": "older_opening_0"
+    },
+    {
+      "age_months": 985,
+      "people_parameter": "older_opening_0"
+    },
+    {
+      "age_months": 986,
+      "people_parameter": "older_opening_0"
+    },
+    {
+      "age_months": 987,
+      "people_parameter": "older_opening_0"
+    },
+    {
+      "age_months": 988,
+      "people_parameter": "older_opening_0"
+    },
+    {
+      "age_months": 989,
+      "people_parameter": "older_opening_0"
+    },
+    {
+      "age_months": 990,
+      "people_parameter": "older_opening_0"
+    },
+    {
+      "age_months": 991,
+      "people_parameter": "older_opening_0"
+    },
+    {
+      "age_months": 992,
+      "people_parameter": "older_opening_0"
+    },
+    {
+      "age_months": 993,
+      "people_parameter": "older_opening_0"
+    },
+    {
+      "age_months": 994,
+      "people_parameter": "older_opening_0"
+    },
+    {
+      "age_months": 995,
+      "people_parameter": "older_opening_0"
+    },
+    {
+      "age_months": 996,
+      "people_parameter": "older_opening_0"
+    },
+    {
+      "age_months": 997,
+      "people_parameter": "older_opening_0"
+    },
+    {
+      "age_months": 998,
+      "people_parameter": "older_opening_0"
+    },
+    {
+      "age_months": 999,
+      "people_parameter": "older_opening_0"
+    },
+    {
+      "age_months": 1000,
+      "people_parameter": "older_opening_0"
+    },
+    {
+      "age_months": 1001,
+      "people_parameter": "older_opening_0"
+    },
+    {
+      "age_months": 1002,
+      "people_parameter": "older_opening_0"
+    },
+    {
+      "age_months": 1003,
+      "people_parameter": "older_opening_0"
+    },
+    {
+      "age_months": 1004,
+      "people_parameter": "older_opening_0"
+    },
+    {
+      "age_months": 1005,
+      "people_parameter": "older_opening_0"
+    },
+    {
+      "age_months": 1006,
+      "people_parameter": "older_opening_0"
+    },
+    {
+      "age_months": 1007,
+      "people_parameter": "older_opening_0"
+    },
+    {
+      "age_months": 1008,
+      "people_parameter": "older_opening_0"
+    },
+    {
+      "age_months": 1009,
+      "people_parameter": "older_opening_0"
+    },
+    {
+      "age_months": 1010,
+      "people_parameter": "older_opening_0"
+    },
+    {
+      "age_months": 1011,
+      "people_parameter": "older_opening_0"
+    },
+    {
+      "age_months": 1012,
+      "people_parameter": "older_opening_0"
+    },
+    {
+      "age_months": 1013,
+      "people_parameter": "older_opening_0"
+    },
+    {
+      "age_months": 1014,
+      "people_parameter": "older_opening_0"
+    },
+    {
+      "age_months": 1015,
+      "people_parameter": "older_opening_0"
+    },
+    {
+      "age_months": 1016,
+      "people_parameter": "older_opening_0"
+    },
+    {
+      "age_months": 1017,
+      "people_parameter": "older_opening_0"
+    },
+    {
+      "age_months": 1018,
+      "people_parameter": "older_opening_0"
+    },
+    {
+      "age_months": 1019,
+      "people_parameter": "older_opening_0"
+    },
+    {
+      "age_months": 1020,
+      "people_parameter": "older_opening_0"
+    },
+    {
+      "age_months": 1021,
+      "people_parameter": "older_opening_0"
+    },
+    {
+      "age_months": 1022,
+      "people_parameter": "older_opening_0"
+    },
+    {
+      "age_months": 1023,
+      "people_parameter": "older_opening_0"
+    },
+    {
+      "age_months": 1024,
+      "people_parameter": "older_opening_0"
+    },
+    {
+      "age_months": 1025,
+      "people_parameter": "older_opening_0"
+    },
+    {
+      "age_months": 1026,
+      "people_parameter": "older_opening_0"
+    },
+    {
+      "age_months": 1027,
+      "people_parameter": "older_opening_0"
+    },
+    {
+      "age_months": 1028,
+      "people_parameter": "older_opening_0"
+    },
+    {
+      "age_months": 1029,
+      "people_parameter": "older_opening_0"
+    },
+    {
+      "age_months": 1030,
+      "people_parameter": "older_opening_0"
+    },
+    {
+      "age_months": 1031,
+      "people_parameter": "older_opening_0"
+    },
+    {
+      "age_months": 1032,
+      "people_parameter": "older_opening_0"
+    },
+    {
+      "age_months": 1033,
+      "people_parameter": "older_opening_0"
+    },
+    {
+      "age_months": 1034,
+      "people_parameter": "older_opening_0"
+    },
+    {
+      "age_months": 1035,
+      "people_parameter": "older_opening_0"
+    },
+    {
+      "age_months": 1036,
+      "people_parameter": "older_opening_0"
+    },
+    {
+      "age_months": 1037,
+      "people_parameter": "older_opening_0"
+    },
+    {
+      "age_months": 1038,
+      "people_parameter": "older_opening_0"
+    },
+    {
+      "age_months": 1039,
+      "people_parameter": "older_opening_0"
+    },
+    {
+      "age_months": 1040,
+      "people_parameter": "older_opening_0"
+    },
+    {
+      "age_months": 1041,
+      "people_parameter": "older_opening_0"
+    },
+    {
+      "age_months": 1042,
+      "people_parameter": "older_opening_0"
+    },
+    {
+      "age_months": 1043,
+      "people_parameter": "older_opening_0"
+    },
+    {
+      "age_months": 1044,
+      "people_parameter": "older_opening_0"
+    },
+    {
+      "age_months": 1045,
+      "people_parameter": "older_opening_0"
+    },
+    {
+      "age_months": 1046,
+      "people_parameter": "older_opening_0"
+    },
+    {
+      "age_months": 1047,
+      "people_parameter": "older_opening_0"
+    },
+    {
+      "age_months": 1048,
+      "people_parameter": "older_opening_0"
+    },
+    {
+      "age_months": 1049,
+      "people_parameter": "older_opening_0"
+    },
+    {
+      "age_months": 1050,
+      "people_parameter": "older_opening_0"
+    },
+    {
+      "age_months": 1051,
+      "people_parameter": "older_opening_0"
+    },
+    {
+      "age_months": 1052,
+      "people_parameter": "older_opening_0"
+    },
+    {
+      "age_months": 1053,
+      "people_parameter": "older_opening_0"
+    },
+    {
+      "age_months": 1054,
+      "people_parameter": "older_opening_0"
+    },
+    {
+      "age_months": 1055,
+      "people_parameter": "older_opening_0"
+    },
+    {
+      "age_months": 1056,
+      "people_parameter": "older_opening_0"
+    },
+    {
+      "age_months": 1057,
+      "people_parameter": "older_opening_0"
+    },
+    {
+      "age_months": 1058,
+      "people_parameter": "older_opening_0"
+    },
+    {
+      "age_months": 1059,
+      "people_parameter": "older_opening_0"
+    },
+    {
+      "age_months": 1060,
+      "people_parameter": "older_opening_0"
+    },
+    {
+      "age_months": 1061,
+      "people_parameter": "older_opening_0"
+    },
+    {
+      "age_months": 1062,
+      "people_parameter": "older_opening_0"
+    },
+    {
+      "age_months": 1063,
+      "people_parameter": "older_opening_0"
+    },
+    {
+      "age_months": 1064,
+      "people_parameter": "older_opening_0"
+    },
+    {
+      "age_months": 1065,
+      "people_parameter": "older_opening_0"
+    },
+    {
+      "age_months": 1066,
+      "people_parameter": "older_opening_0"
+    },
+    {
+      "age_months": 1067,
+      "people_parameter": "older_opening_0"
+    },
+    {
+      "age_months": 1068,
+      "people_parameter": "older_opening_0"
+    },
+    {
+      "age_months": 1069,
+      "people_parameter": "older_opening_0"
+    },
+    {
+      "age_months": 1070,
+      "people_parameter": "older_opening_0"
+    },
+    {
+      "age_months": 1071,
+      "people_parameter": "older_opening_0"
+    },
+    {
+      "age_months": 1072,
+      "people_parameter": "older_opening_0"
+    },
+    {
+      "age_months": 1073,
+      "people_parameter": "older_opening_0"
+    },
+    {
+      "age_months": 1074,
+      "people_parameter": "older_opening_0"
+    },
+    {
+      "age_months": 1075,
+      "people_parameter": "older_opening_0"
+    },
+    {
+      "age_months": 1076,
+      "people_parameter": "older_opening_0"
+    },
+    {
+      "age_months": 1077,
+      "people_parameter": "older_opening_0"
+    },
+    {
+      "age_months": 1078,
+      "people_parameter": "older_opening_0"
+    },
+    {
+      "age_months": 1079,
+      "people_parameter": "older_opening_0"
+    }
+  ],
+  "groups": [
+    {
+      "id": "early_childhood",
+      "start_month": 0,
+      "end_month_exclusive": 36,
+      "mortality_parameter": "early_childhood_mortality"
+    },
+    {
+      "id": "preschool",
+      "start_month": 36,
+      "end_month_exclusive": 72,
+      "mortality_parameter": "preschool_mortality"
+    },
+    {
+      "id": "school_age",
+      "start_month": 72,
+      "end_month_exclusive": 216,
+      "mortality_parameter": "school_age_mortality"
+    },
+    {
+      "id": "adult",
+      "start_month": 216,
+      "end_month_exclusive": 780,
+      "mortality_parameter": "adult_mortality"
+    },
+    {
+      "id": "older",
+      "start_month": 780,
+      "end_month_exclusive": 1561,
+      "mortality_parameter": "older_mortality"
+    }
+  ],
+  "months": [
+    {
+      "births_parameter": "births",
+      "migration": [
+        {
+          "age_months": 360,
+          "arrivals_parameter": "arrivals",
+          "departures_parameter": "departures"
+        }
+      ]
+    },
+    {
+      "births_parameter": "births",
+      "migration": [
+        {
+          "age_months": 360,
+          "arrivals_parameter": "arrivals",
+          "departures_parameter": "departures"
+        }
+      ]
+    },
+    {
+      "births_parameter": "births",
+      "migration": [
+        {
+          "age_months": 360,
+          "arrivals_parameter": "arrivals",
+          "departures_parameter": "departures"
+        }
+      ]
+    },
+    {
+      "births_parameter": "births",
+      "migration": [
+        {
+          "age_months": 360,
+          "arrivals_parameter": "arrivals",
+          "departures_parameter": "departures"
+        }
+      ]
+    },
+    {
+      "births_parameter": "births",
+      "migration": [
+        {
+          "age_months": 360,
+          "arrivals_parameter": "arrivals",
+          "departures_parameter": "departures"
+        }
+      ]
+    },
+    {
+      "births_parameter": "births",
+      "migration": [
+        {
+          "age_months": 360,
+          "arrivals_parameter": "arrivals",
+          "departures_parameter": "departures"
+        }
+      ]
+    },
+    {
+      "births_parameter": "births",
+      "migration": [
+        {
+          "age_months": 360,
+          "arrivals_parameter": "arrivals",
+          "departures_parameter": "departures"
+        }
+      ]
+    },
+    {
+      "births_parameter": "births",
+      "migration": [
+        {
+          "age_months": 360,
+          "arrivals_parameter": "arrivals",
+          "departures_parameter": "departures"
+        }
+      ]
+    },
+    {
+      "births_parameter": "births",
+      "migration": [
+        {
+          "age_months": 360,
+          "arrivals_parameter": "arrivals",
+          "departures_parameter": "departures"
+        }
+      ]
+    },
+    {
+      "births_parameter": "births",
+      "migration": [
+        {
+          "age_months": 360,
+          "arrivals_parameter": "arrivals",
+          "departures_parameter": "departures"
+        }
+      ]
+    },
+    {
+      "births_parameter": "births",
+      "migration": [
+        {
+          "age_months": 360,
+          "arrivals_parameter": "arrivals",
+          "departures_parameter": "departures"
+        }
+      ]
+    },
+    {
+      "births_parameter": "births",
+      "migration": [
+        {
+          "age_months": 360,
+          "arrivals_parameter": "arrivals",
+          "departures_parameter": "departures"
+        }
+      ]
+    },
+    {
+      "births_parameter": "births",
+      "migration": [
+        {
+          "age_months": 360,
+          "arrivals_parameter": "arrivals",
+          "departures_parameter": "departures"
+        }
+      ]
+    },
+    {
+      "births_parameter": "births",
+      "migration": [
+        {
+          "age_months": 360,
+          "arrivals_parameter": "arrivals",
+          "departures_parameter": "departures"
+        }
+      ]
+    },
+    {
+      "births_parameter": "births",
+      "migration": [
+        {
+          "age_months": 360,
+          "arrivals_parameter": "arrivals",
+          "departures_parameter": "departures"
+        }
+      ]
+    },
+    {
+      "births_parameter": "births",
+      "migration": [
+        {
+          "age_months": 360,
+          "arrivals_parameter": "arrivals",
+          "departures_parameter": "departures"
+        }
+      ]
+    },
+    {
+      "births_parameter": "births",
+      "migration": [
+        {
+          "age_months": 360,
+          "arrivals_parameter": "arrivals",
+          "departures_parameter": "departures"
+        }
+      ]
+    },
+    {
+      "births_parameter": "births",
+      "migration": [
+        {
+          "age_months": 360,
+          "arrivals_parameter": "arrivals",
+          "departures_parameter": "departures"
+        }
+      ]
+    },
+    {
+      "births_parameter": "births",
+      "migration": [
+        {
+          "age_months": 360,
+          "arrivals_parameter": "arrivals",
+          "departures_parameter": "departures"
+        }
+      ]
+    },
+    {
+      "births_parameter": "births",
+      "migration": [
+        {
+          "age_months": 360,
+          "arrivals_parameter": "arrivals",
+          "departures_parameter": "departures"
+        }
+      ]
+    },
+    {
+      "births_parameter": "births",
+      "migration": [
+        {
+          "age_months": 360,
+          "arrivals_parameter": "arrivals",
+          "departures_parameter": "departures"
+        }
+      ]
+    },
+    {
+      "births_parameter": "births",
+      "migration": [
+        {
+          "age_months": 360,
+          "arrivals_parameter": "arrivals",
+          "departures_parameter": "departures"
+        }
+      ]
+    },
+    {
+      "births_parameter": "births",
+      "migration": [
+        {
+          "age_months": 360,
+          "arrivals_parameter": "arrivals",
+          "departures_parameter": "departures"
+        }
+      ]
+    },
+    {
+      "births_parameter": "births",
+      "migration": [
+        {
+          "age_months": 360,
+          "arrivals_parameter": "arrivals",
+          "departures_parameter": "departures"
+        }
+      ]
+    },
+    {
+      "births_parameter": "births",
+      "migration": [
+        {
+          "age_months": 360,
+          "arrivals_parameter": "arrivals",
+          "departures_parameter": "departures"
+        }
+      ]
+    },
+    {
+      "births_parameter": "births",
+      "migration": [
+        {
+          "age_months": 360,
+          "arrivals_parameter": "arrivals",
+          "departures_parameter": "departures"
+        }
+      ]
+    },
+    {
+      "births_parameter": "births",
+      "migration": [
+        {
+          "age_months": 360,
+          "arrivals_parameter": "arrivals",
+          "departures_parameter": "departures"
+        }
+      ]
+    },
+    {
+      "births_parameter": "births",
+      "migration": [
+        {
+          "age_months": 360,
+          "arrivals_parameter": "arrivals",
+          "departures_parameter": "departures"
+        }
+      ]
+    },
+    {
+      "births_parameter": "births",
+      "migration": [
+        {
+          "age_months": 360,
+          "arrivals_parameter": "arrivals",
+          "departures_parameter": "departures"
+        }
+      ]
+    },
+    {
+      "births_parameter": "births",
+      "migration": [
+        {
+          "age_months": 360,
+          "arrivals_parameter": "arrivals",
+          "departures_parameter": "departures"
+        }
+      ]
+    },
+    {
+      "births_parameter": "births",
+      "migration": [
+        {
+          "age_months": 360,
+          "arrivals_parameter": "arrivals",
+          "departures_parameter": "departures"
+        }
+      ]
+    },
+    {
+      "births_parameter": "births",
+      "migration": [
+        {
+          "age_months": 360,
+          "arrivals_parameter": "arrivals",
+          "departures_parameter": "departures"
+        }
+      ]
+    },
+    {
+      "births_parameter": "births",
+      "migration": [
+        {
+          "age_months": 360,
+          "arrivals_parameter": "arrivals",
+          "departures_parameter": "departures"
+        }
+      ]
+    },
+    {
+      "births_parameter": "births",
+      "migration": [
+        {
+          "age_months": 360,
+          "arrivals_parameter": "arrivals",
+          "departures_parameter": "departures"
+        }
+      ]
+    },
+    {
+      "births_parameter": "births",
+      "migration": [
+        {
+          "age_months": 360,
+          "arrivals_parameter": "arrivals",
+          "departures_parameter": "departures"
+        }
+      ]
+    },
+    {
+      "births_parameter": "births",
+      "migration": [
+        {
+          "age_months": 360,
+          "arrivals_parameter": "arrivals",
+          "departures_parameter": "departures"
+        }
+      ]
+    },
+    {
+      "births_parameter": "births",
+      "migration": [
+        {
+          "age_months": 360,
+          "arrivals_parameter": "arrivals",
+          "departures_parameter": "departures"
+        }
+      ]
+    },
+    {
+      "births_parameter": "births",
+      "migration": [
+        {
+          "age_months": 360,
+          "arrivals_parameter": "arrivals",
+          "departures_parameter": "departures"
+        }
+      ]
+    },
+    {
+      "births_parameter": "births",
+      "migration": [
+        {
+          "age_months": 360,
+          "arrivals_parameter": "arrivals",
+          "departures_parameter": "departures"
+        }
+      ]
+    },
+    {
+      "births_parameter": "births",
+      "migration": [
+        {
+          "age_months": 360,
+          "arrivals_parameter": "arrivals",
+          "departures_parameter": "departures"
+        }
+      ]
+    },
+    {
+      "births_parameter": "births",
+      "migration": [
+        {
+          "age_months": 360,
+          "arrivals_parameter": "arrivals",
+          "departures_parameter": "departures"
+        }
+      ]
+    },
+    {
+      "births_parameter": "births",
+      "migration": [
+        {
+          "age_months": 360,
+          "arrivals_parameter": "arrivals",
+          "departures_parameter": "departures"
+        }
+      ]
+    },
+    {
+      "births_parameter": "births",
+      "migration": [
+        {
+          "age_months": 360,
+          "arrivals_parameter": "arrivals",
+          "departures_parameter": "departures"
+        }
+      ]
+    },
+    {
+      "births_parameter": "births",
+      "migration": [
+        {
+          "age_months": 360,
+          "arrivals_parameter": "arrivals",
+          "departures_parameter": "departures"
+        }
+      ]
+    },
+    {
+      "births_parameter": "births",
+      "migration": [
+        {
+          "age_months": 360,
+          "arrivals_parameter": "arrivals",
+          "departures_parameter": "departures"
+        }
+      ]
+    },
+    {
+      "births_parameter": "births",
+      "migration": [
+        {
+          "age_months": 360,
+          "arrivals_parameter": "arrivals",
+          "departures_parameter": "departures"
+        }
+      ]
+    },
+    {
+      "births_parameter": "births",
+      "migration": [
+        {
+          "age_months": 360,
+          "arrivals_parameter": "arrivals",
+          "departures_parameter": "departures"
+        }
+      ]
+    },
+    {
+      "births_parameter": "births",
+      "migration": [
+        {
+          "age_months": 360,
+          "arrivals_parameter": "arrivals",
+          "departures_parameter": "departures"
+        }
+      ]
+    },
+    {
+      "births_parameter": "births",
+      "migration": [
+        {
+          "age_months": 360,
+          "arrivals_parameter": "arrivals",
+          "departures_parameter": "departures"
+        }
+      ]
+    },
+    {
+      "births_parameter": "births",
+      "migration": [
+        {
+          "age_months": 360,
+          "arrivals_parameter": "arrivals",
+          "departures_parameter": "departures"
+        }
+      ]
+    },
+    {
+      "births_parameter": "births",
+      "migration": [
+        {
+          "age_months": 360,
+          "arrivals_parameter": "arrivals",
+          "departures_parameter": "departures"
+        }
+      ]
+    },
+    {
+      "births_parameter": "births",
+      "migration": [
+        {
+          "age_months": 360,
+          "arrivals_parameter": "arrivals",
+          "departures_parameter": "departures"
+        }
+      ]
+    },
+    {
+      "births_parameter": "births",
+      "migration": [
+        {
+          "age_months": 360,
+          "arrivals_parameter": "arrivals",
+          "departures_parameter": "departures"
+        }
+      ]
+    },
+    {
+      "births_parameter": "births",
+      "migration": [
+        {
+          "age_months": 360,
+          "arrivals_parameter": "arrivals",
+          "departures_parameter": "departures"
+        }
+      ]
+    },
+    {
+      "births_parameter": "births",
+      "migration": [
+        {
+          "age_months": 360,
+          "arrivals_parameter": "arrivals",
+          "departures_parameter": "departures"
+        }
+      ]
+    },
+    {
+      "births_parameter": "births",
+      "migration": [
+        {
+          "age_months": 360,
+          "arrivals_parameter": "arrivals",
+          "departures_parameter": "departures"
+        }
+      ]
+    },
+    {
+      "births_parameter": "births",
+      "migration": [
+        {
+          "age_months": 360,
+          "arrivals_parameter": "arrivals",
+          "departures_parameter": "departures"
+        }
+      ]
+    },
+    {
+      "births_parameter": "births",
+      "migration": [
+        {
+          "age_months": 360,
+          "arrivals_parameter": "arrivals",
+          "departures_parameter": "departures"
+        }
+      ]
+    },
+    {
+      "births_parameter": "births",
+      "migration": [
+        {
+          "age_months": 360,
+          "arrivals_parameter": "arrivals",
+          "departures_parameter": "departures"
+        }
+      ]
+    },
+    {
+      "births_parameter": "births",
+      "migration": [
+        {
+          "age_months": 360,
+          "arrivals_parameter": "arrivals",
+          "departures_parameter": "departures"
+        }
+      ]
+    }
+  ],
+  "items": [
+    {
+      "id": "rice_component",
+      "unit": "gross-equivalent kg"
+    },
+    {
+      "id": "oats_component",
+      "unit": "gross-equivalent kg"
+    },
+    {
+      "id": "water_component",
+      "unit": "litre"
+    },
+    {
+      "id": "preschool_capacity",
+      "unit": "place-day"
+    },
+    {
+      "id": "school_capacity",
+      "unit": "place-day"
+    },
+    {
+      "id": "care_time",
+      "unit": "minute"
+    },
+    {
+      "id": "protein",
+      "unit": "g"
+    },
+    {
+      "id": "vitamin_d",
+      "unit": "microgram"
+    }
+  ],
+  "need_rules": [
+    {
+      "group": "early_childhood",
+      "item": "rice_component",
+      "parameter": "early_childhood_rice_component"
+    },
+    {
+      "group": "early_childhood",
+      "item": "oats_component",
+      "parameter": "early_childhood_oats_component"
+    },
+    {
+      "group": "early_childhood",
+      "item": "water_component",
+      "parameter": "early_childhood_water_component"
+    },
+    {
+      "group": "early_childhood",
+      "item": "preschool_capacity",
+      "parameter": "early_childhood_preschool_capacity"
+    },
+    {
+      "group": "early_childhood",
+      "item": "school_capacity",
+      "parameter": "early_childhood_school_capacity"
+    },
+    {
+      "group": "early_childhood",
+      "item": "care_time",
+      "parameter": "early_childhood_care_time"
+    },
+    {
+      "group": "early_childhood",
+      "item": "protein",
+      "parameter": "early_childhood_protein"
+    },
+    {
+      "group": "early_childhood",
+      "item": "vitamin_d",
+      "parameter": "early_childhood_vitamin_d"
+    },
+    {
+      "group": "preschool",
+      "item": "rice_component",
+      "parameter": "preschool_rice_component"
+    },
+    {
+      "group": "preschool",
+      "item": "oats_component",
+      "parameter": "preschool_oats_component"
+    },
+    {
+      "group": "preschool",
+      "item": "water_component",
+      "parameter": "preschool_water_component"
+    },
+    {
+      "group": "preschool",
+      "item": "preschool_capacity",
+      "parameter": "preschool_preschool_capacity"
+    },
+    {
+      "group": "preschool",
+      "item": "school_capacity",
+      "parameter": "preschool_school_capacity"
+    },
+    {
+      "group": "preschool",
+      "item": "care_time",
+      "parameter": "preschool_care_time"
+    },
+    {
+      "group": "preschool",
+      "item": "protein",
+      "parameter": "preschool_protein"
+    },
+    {
+      "group": "preschool",
+      "item": "vitamin_d",
+      "parameter": "preschool_vitamin_d"
+    },
+    {
+      "group": "school_age",
+      "item": "rice_component",
+      "parameter": "school_age_rice_component"
+    },
+    {
+      "group": "school_age",
+      "item": "oats_component",
+      "parameter": "school_age_oats_component"
+    },
+    {
+      "group": "school_age",
+      "item": "water_component",
+      "parameter": "school_age_water_component"
+    },
+    {
+      "group": "school_age",
+      "item": "preschool_capacity",
+      "parameter": "school_age_preschool_capacity"
+    },
+    {
+      "group": "school_age",
+      "item": "school_capacity",
+      "parameter": "school_age_school_capacity"
+    },
+    {
+      "group": "school_age",
+      "item": "care_time",
+      "parameter": "school_age_care_time"
+    },
+    {
+      "group": "school_age",
+      "item": "protein",
+      "parameter": "school_age_protein"
+    },
+    {
+      "group": "school_age",
+      "item": "vitamin_d",
+      "parameter": "school_age_vitamin_d"
+    },
+    {
+      "group": "adult",
+      "item": "rice_component",
+      "parameter": "adult_rice_component"
+    },
+    {
+      "group": "adult",
+      "item": "oats_component",
+      "parameter": "adult_oats_component"
+    },
+    {
+      "group": "adult",
+      "item": "water_component",
+      "parameter": "adult_water_component"
+    },
+    {
+      "group": "adult",
+      "item": "preschool_capacity",
+      "parameter": "adult_preschool_capacity"
+    },
+    {
+      "group": "adult",
+      "item": "school_capacity",
+      "parameter": "adult_school_capacity"
+    },
+    {
+      "group": "adult",
+      "item": "care_time",
+      "parameter": "adult_care_time"
+    },
+    {
+      "group": "adult",
+      "item": "protein",
+      "parameter": "adult_protein"
+    },
+    {
+      "group": "adult",
+      "item": "vitamin_d",
+      "parameter": "adult_vitamin_d"
+    },
+    {
+      "group": "older",
+      "item": "rice_component",
+      "parameter": "older_rice_component"
+    },
+    {
+      "group": "older",
+      "item": "oats_component",
+      "parameter": "older_oats_component"
+    },
+    {
+      "group": "older",
+      "item": "water_component",
+      "parameter": "older_water_component"
+    },
+    {
+      "group": "older",
+      "item": "preschool_capacity",
+      "parameter": "older_preschool_capacity"
+    },
+    {
+      "group": "older",
+      "item": "school_capacity",
+      "parameter": "older_school_capacity"
+    },
+    {
+      "group": "older",
+      "item": "care_time",
+      "parameter": "older_care_time"
+    },
+    {
+      "group": "older",
+      "item": "protein",
+      "parameter": "older_protein"
+    },
+    {
+      "group": "older",
+      "item": "vitamin_d",
+      "parameter": "older_vitamin_d"
+    }
+  ]
+}

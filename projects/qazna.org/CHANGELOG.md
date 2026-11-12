@@ -2,6 +2,12 @@
 
 ## Unreleased
 
+- Add a bounded Rust population registry with explicit provenance, units, rational intervals, source-attribution mode and unknown coefficients.
+- Project monthly age cohorts, births, deaths and migration with exact conservation, Gregorian month lengths, carried mortality fractions and deterministic apportionment; retain the oldest open age bin.
+- Derive profile-specific needs before aggregation and preserve missing evidence. Bind selected needs to reviewed physical plans without changing entitlement or monetary authority.
+- Publish three illustrative 100-million-person variants, a full-needs upstream rejection and a separately accepted finite-stock runtime fixture. Source attribution is not empirical verification.
+- Freeze population assumptions across model history and extend regression, PostgreSQL, byte-reproduction and restart/restore checks; no migration or dependency changes.
+
 - Join a reproducible 60-month, 31-resource, 44-process upstream scenario to exact circulation, packaging recovery and original food-age verification.
 - Derive food identities from checked crop/processing routes; freeze those assumptions across history and reject expiry resets, unmapped inputs and incompatible units.
 - Preserve old checkpoint serialization when optional food evidence is absent; add pure offline previews without changing runtime approval authority or migrations.

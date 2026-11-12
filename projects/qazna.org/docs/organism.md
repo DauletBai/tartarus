@@ -135,3 +135,17 @@ Dated memory preserves the actual origin and age of a resource as it moves throu
 stages. A renewed plan cannot make old food young, and a future harvest is not
 present stock. The offline checkpoint model retains these distinctions; real
 observations still require independent custody and review before service use.
+
+
+## Population and needs feedback
+
+Population planning now keeps age transitions, births, deaths and migration in an
+explicit monthly balance. Need is evaluated for each declared age profile before
+aggregation; a missing coefficient cannot be covered by another group's surplus.
+The role of these profiles is to identify provision, not to rank people by work,
+profitability or usefulness. Unknown care and nutrient requirements remain open.
+The organism analogy does not make future births, health or choices certain. Three
+illustrative population paths make changing assumptions visible. The accepted
+finite-stock fixture is a calculation test, not evidence of a national replenishing
+supply system. The older upstream plan fails the new food-component need gate,
+which is feedback requiring a revised physical plan rather than reduced entitlement.

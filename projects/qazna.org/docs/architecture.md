@@ -490,3 +490,49 @@ transport. Nutrient loss, arbitrary blends, measured spoilage, recalls and empir
 shelf-life certification need separate assumptions and future mappings. Declared
 shelf life is not evidence of food safety. The model still does not establish actual
 physical delivery or an indefinitely repeatable monetary circulation policy.
+
+
+### Population registry and demand binding
+
+`src/population.rs` defines bounded, source-described parameters with rational
+lower/central/upper assumptions and an explicit unknown state. Entries carry an ID,
+unit, region, reference period, recording date, source locator/version and basis.
+Illustrative mode allows synthetic inputs. Source-attributed mode rejects inputs
+labelled synthetic; it does not authenticate their provenance or certify calibration.
+Unknown required demographic inputs prevent projection. Unknown need coefficients
+retain missing IDs and a missing central/upper aggregate rather than becoming zero.
+
+The monthly age array has 1,561 bins (0 through an open-ended 130+ bin), at most
+32 complete disjoint age groups, 32 need items, 512 parameters and 120 periods.
+Opening counts are common and fixed across variants; births and migration counts
+are scenario inputs. Mortality uses bounded rates, exact fractional carry per age
+group and largest-remainder apportionment across ages. No person disappears at the
+last age bin. Fractions use bounded integer ratios and checked wide products;
+serialized resulting totals are strings. An explicit 20-billion-person research
+ceiling prevents unsupported scales. Gregorian month lengths, including leap years,
+determine exposure. Whole opening-month counts contribute need; exits, ageing,
+births and arrivals are booked at the end boundary. Inbound ages refer to that
+boundary. This coarse exposure convention is not a continuous individual record.
+
+`ModelInput.population` optionally includes the complete study and item/resource
+mappings. Mapped units, calendar origin, period count and central projected needs
+must match the physical model exactly. Coverage records distinguish requirement,
+planned delivery and unmet quantity; unmapped items stay visible. The pure mapping
+audit can expose a prospective shortfall using physical balance constraints, but
+full model proposal/approval retains the stricter seasonal all-needs gate. It cannot
+approve that shortfall as successful provision. The demonstrated old upstream plan
+fails this gate for new demand, despite settled payments under its original needs.
+
+Population inputs and mappings cannot be silently changed or removed within an
+approved model history. New evidence currently requires a new explicit scenario;
+controlled future revisions are still rolling-feedback work. Canonical checkpoints
+store derived population evidence. Approval recomputes it and preserves the existing
+operator, idempotency, transaction and stale-generation boundaries. The optional
+fields are omitted when absent, so earlier checkpoint bytes remain compatible.
+No migration, dependency, live entitlement or monetary authority is introduced.
+
+This foundation does not implement sex-specific fertility, pregnancy, household
+choice, disability/health overlays or cross-region movements. Age-only profiles
+are not eligibility rules or a measure of human worth. The declared ranges and
+scenario variants are not probabilistic confidence intervals. Registry attribution,
+mathematical consistency and real-world verification are separate questions.
