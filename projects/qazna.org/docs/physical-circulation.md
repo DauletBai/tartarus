@@ -2183,3 +2183,56 @@ status and scope are in [input assumptions](input-assumptions.md#service-feedbac
 The new branch uses the existing `service_study` reproduction command. Its output
 includes baseline, declared change, attempted dates, accepted repair, shortages
 and the preserved rolling boundary.
+
+
+## Incident-to-circulation experiment — 12 November 2026
+
+Service report schema 3 preserves earlier results and adds a fixed monetary policy
+for the baseline and the mentor-absence repair. Only water-component, service-energy
+and construction-material flows carry nonzero accounting norms. People, training
+places and capacity slots are not priced. This selected mapping is not a complete
+valuation or funding model for care, education or the national economy.
+
+For each account a and candidate schedule s, let C[a,s,k] be cumulative receipts
+minus payments through event k. One common opening vector is chosen before review:
+
+```text
+B[a] = max(0, max over s,k of -C[a,s,k])
+balance[a,k] = B[a] + C[a,s,k] >= 0
+sum_a balance[a,k] = sum_a B[a]
+```
+
+This is the componentwise minimum for the two fixed schedules and the selected
+policy; it is not a global optimum over all possible production schedules.
+No extra issue, endowment or norm change is introduced during continuation.
+
+| Result | Baseline and repaired schedule |
+| --- | ---: |
+| Fixed common opening measure | 8,536,101,076 |
+| Accounts / monthly periods | 20 / 60 |
+| Settled payment events | 400 / 400 |
+| Total settled turnover | 1,488,339,904,933 |
+| Identical events before boundary 4 | 60 |
+| Energy input for deferred course | 164,690, moved from period 4 to 6 |
+| Material input for deferred course | 411,725, moved from period 4 to 6 |
+
+The 82,345-slot preparation batch keeps its physical quantity and unchanged care
+provision. All 400 payments settle in both cases; exact replay checks conservation
+at each event and the resident aggregate ends every period at zero. Final balances
+concentrate the common measure in the treasury under this policy. Therefore another
+cycle still requires an explicit reviewed allocation policy; this experiment does
+not silently solve repeatability or prove indefinite self-renewal.
+
+Blocking event 61 (zero-based) leaves the same physical plan feasible but breaks
+monetary execution: its dependent common circulation cannot occur and later payment
+gaps appear. The report retains every failed event. Runtime will store a reviewed
+failed monetary scenario for analysis but cannot use it to link an incident to an
+ensured plan. A wholly unavailable workforce declaration remains durable even when
+all permitted physical repair dates fail. Thus an unsatisfied physical need and a
+payment failure remain distinguishable in both evidence and workflow.
+
+The existing `service_study` command reproduces the updated report. Separate
+PostgreSQL and HTTP exercises record declarations, approve the physical repair,
+recompute/review circulation, link the matching versions and preserve both open
+and linked incidents through restart and logical restore. A linked plan records
+reviewed feasibility, not real-world delivery or observed recovery.

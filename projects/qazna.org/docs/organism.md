@@ -172,3 +172,10 @@ available mentor time. Work already begun stays in the commitment ledger. If no
 permitted schedule can sustain provision, the deficit remains explicit. This is
 feedback around shared physical reserves and capacity, not permission to redefine
 people's needs or compel extra work.
+
+
+The feedback journal now remembers a declared disruption even when available
+capabilities cannot yet satisfy the need. A reviewed repair and its circulation
+can be associated with that declaration; the association does not assert that
+care was delivered or the disruption ended. Recorded need, physical feasibility,
+accounting feasibility and observed recovery remain separate responsibilities.

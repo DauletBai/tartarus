@@ -464,3 +464,6 @@ mod extended;
 
 #[path = "cases/population.rs"]
 mod population;
+
+#[path = "cases/service_incidents.rs"]
+mod service_incidents;

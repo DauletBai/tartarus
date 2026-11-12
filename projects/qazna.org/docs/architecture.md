@@ -625,7 +625,58 @@ proof of actual absence. Pending repaired versions and their review survive proc
 restart and logical database restoration. Dated external anchors still require the
 runtime route; the offline repair helper does not resolve them.
 
-A rejected outage/repair remains an error or offline report; this stage adds no
-separate durable incident inbox. The accepted scenario is a reviewed plan, not a
-live observation feed. Persisting an incident independently of a feasible repair
-is an explicit next integration task; failure must not be presented as recovery.
+The durable journal below now retains declarations independently of successful
+repair. The accepted scenario remains a reviewed plan, not a live observation feed;
+a link to that plan is never presented as observed recovery.
+
+
+## Durable service incidents and reviewed circulation
+
+Migration 0016 adds append-only `service_incidents` and `service_incident_plans`.
+Declarations reference an approved physical generation and an exact proposed
+availability revision. They validate pool identity, old/new values, order, bounds,
+source/basis and the committed boundary, but deliberately do not require a feasible
+repair. Complete workforce unavailability can therefore remain durable and open.
+Declarations neither replace the approved model nor automatically block unrelated
+scenario work. They describe operator-declared evidence, not authenticated sensors.
+
+All routes below require the local **operator** credential. POST requires the
+usual `Idempotency-Key`; the default 16 KiB body limit applies.
+
+| Route | Request / result |
+| --- | --- |
+| `POST /v1/scenarios/models/{id}/incidents` | `id`, `expected_generation`, `revision: ServiceRevision`; returns durable record |
+| `GET /v1/scenarios/models/{id}/incidents?after=0&limit=50` | Keyset page, ordered by sequence; limit 1–100; next cursor is the last record's sequence |
+| `GET /v1/service-incidents/{id}` | Declaration, base generation, sequence, state and optional immutable plan link |
+| `POST /v1/service-incidents/{id}/plan` | `model_generation`, `coupled_id`, `coupled_generation`, `basis` |
+
+A declaration accepts 1–128 changed cells and otherwise uses the existing exact
+revision verifier. Model locking orders concurrent declarations before sequence
+allocation; per-model pagination follows committed service writes. Empty pages are
+valid; nonexistent model scopes return not found. A retry with the same key returns
+the originally saved response, even if a later link changed the GET representation.
+Different request contents with that key are rejected.
+
+A plan link requires current, approved physical and coupled generations, unchanged
+dated anchors, the same model scope, the baseline revision prefix and the declared
+revision at the next position. The coupled checkpoint must contain that exact
+physical version and settle all scheduled payments. Pending, stale, unmatched and
+failed-circulation candidates cannot link. Locks follow coupled → physical → sorted
+dated scopes, matching existing review paths. Each incident has at most one link;
+parallel callers cannot create two decisions. State is `open` or `plan_linked`,
+never `resolved`. A later model generation does not rewrite a historical link.
+
+PostgreSQL foreign keys enforce approved generation/scope references. A structural
+trigger verifies current heads, matching revision position/prefix and settled money;
+UPDATE, DELETE and TRUNCATE are forbidden on both journal tables. Numerical checking
+remains in the Rust review path. A database owner able to disable triggers or forge
+approved outcomes remains outside this trust boundary. References and arithmetic
+alone cannot prove real absence, delivery or recovery.
+
+Coupled recomputation now revalidates a stored physical version against its own
+approved checkpoint instead of treating it as generation zero. This retains service
+revision history while replaying the full physical calculation. Offline previews
+remain caller-owned research calculations, not authenticity/approval evidence.
+The journal and links do not post live money, create issuance, assign staff or
+execute a repair. Named identities, disputes/retractions, multiple interacting
+incidents and multi-batch repair remain subsequent integration work.

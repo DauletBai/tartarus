@@ -1,6 +1,7 @@
 use crate::coupled::{CoupledDefinition, CoupledProposal};
 use crate::model_scenarios::{MAX_MODEL_REQUEST_BYTES, ModelDefinition, ModelProposal};
 use crate::scenarios::{ScenarioDecision, ScenarioDefinition, ScenarioProposal};
+use crate::service_incidents::{IncidentDeclaration, IncidentPlan, IncidentQuery};
 use crate::{
     coordination::{MonitorRequest, ReviewRequest},
     domain::{NewAccount, Transfer},
@@ -121,6 +122,15 @@ pub fn router_with_access(ledger: Ledger, tokens: AccessTokens) -> Router {
         .route(
             "/v1/coupled-drafts/{id}/resolve",
             post(resolve_coupled_scenario),
+        )
+        .route(
+            "/v1/scenarios/models/{id}/incidents",
+            post(declare_service_incident).get(service_incidents),
+        )
+        .route("/v1/service-incidents/{id}", get(service_incident))
+        .route(
+            "/v1/service-incidents/{id}/plan",
+            post(link_service_incident_plan),
         )
         .route("/v1/scenarios/models", post(create_model_scenario))
         .route("/v1/scenarios/models/{id}", get(model_scenario))
@@ -965,6 +975,44 @@ async fn resolve_coupled_scenario(
     Ok(Json(
         ledger
             .resolve_coupled_scenario(command_key(&headers)?, id, request)
+            .await?,
+    ))
+}
+
+async fn declare_service_incident(
+    State(ledger): State<Ledger>,
+    Path(id): Path<Uuid>,
+    headers: HeaderMap,
+    Json(request): Json<IncidentDeclaration>,
+) -> Result<impl IntoResponse, LedgerError> {
+    Ok(Json(
+        ledger
+            .declare_service_incident(command_key(&headers)?, id, request)
+            .await?,
+    ))
+}
+async fn service_incident(
+    State(ledger): State<Ledger>,
+    Path(id): Path<Uuid>,
+) -> Result<impl IntoResponse, LedgerError> {
+    Ok(Json(ledger.service_incident(id).await?))
+}
+async fn service_incidents(
+    State(ledger): State<Ledger>,
+    Path(id): Path<Uuid>,
+    Query(query): Query<IncidentQuery>,
+) -> Result<impl IntoResponse, LedgerError> {
+    Ok(Json(ledger.service_incidents(id, query).await?))
+}
+async fn link_service_incident_plan(
+    State(ledger): State<Ledger>,
+    Path(id): Path<Uuid>,
+    headers: HeaderMap,
+    Json(request): Json<IncidentPlan>,
+) -> Result<impl IntoResponse, LedgerError> {
+    Ok(Json(
+        ledger
+            .link_service_incident_plan(command_key(&headers)?, id, request)
             .await?,
     ))
 }

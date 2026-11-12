@@ -51,3 +51,5 @@ pub mod need_profiles;
 
 pub mod service_feedback;
 pub mod services;
+
+pub mod service_incidents;

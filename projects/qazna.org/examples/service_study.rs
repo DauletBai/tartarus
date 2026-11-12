@@ -31,6 +31,78 @@ fn parameter(r: &mut Registry, id: &str, unit: &str, n: u64, d: u64) {
         }),
     });
 }
+fn circulation(before: &ModelVersion, after: &ModelVersion) -> Value {
+    use qazna::coupled::{self, CirculationPolicy, CoupledCheckpoint, CoupledDefinition};
+    fn evidence(v: &coupled::CoupledVersion) -> coupled::CoupledEvidence {
+        serde_json::from_str::<CoupledCheckpoint>(v.checkpoint.as_ref().unwrap())
+            .unwrap()
+            .evidence
+    }
+    let c: ModelCheckpoint = serde_json::from_str(before.checkpoint.as_ref().unwrap()).unwrap();
+    let h = &c.input.model.seasonal.physical;
+    let r = h.resources.len();
+    let measure: Vec<String> = (0..r)
+        .map(|k| if [0, 3, 4].contains(&k) { "1" } else { "0" }.into())
+        .collect();
+    let mut d=CoupledDefinition {
+        id:uuid::Uuid::from_u128(0x5131),format_version:1,model_id:before.definition.id,
+        policy:CirculationPolicy {
+            accounts:std::iter::once("common treasury".into()).chain(std::iter::once("aggregate provision".into())).chain(h.resources.iter().map(|r|format!("unit {r}"))).collect(),
+            resource_suppliers:(2..r+2).collect(),
+            process_operators:h.processes.iter().map(|p|p.outputs.iter().position(|&n|n>0).unwrap()+2).collect(),
+            process_order:(0..h.processes.len()).collect(),
+            capital_resources:c.input.model.lives.iter().map(|a|a.resource).collect(),
+            common_measure:measure.clone(),unit_measure:measure,opening:vec!["0".into();r+2],
+            measure_unit:"fixed normative measure".into(),
+            basis:"Water, energy and construction material only; capacity slots and people are not priced".into(),
+        },basis:"Fixed common opening provision for baseline and reviewed service repair".into(),
+    };
+    // Derive one common opening vector for both schedules before creating the
+    // scenario. No top-up, norm change or issue is permitted during continuation.
+    let a = evidence(&coupled::preview(d.clone(), before.clone(), vec![]).unwrap());
+    let b = evidence(&coupled::preview(d.clone(), after.clone(), vec![]).unwrap());
+    d.policy.opening = a
+        .bound
+        .minimum_opening_by_account
+        .iter()
+        .zip(&b.bound.minimum_opening_by_account)
+        .map(|(a, b)| {
+            a.parse::<u64>()
+                .unwrap()
+                .max(b.parse::<u64>().unwrap())
+                .to_string()
+        })
+        .collect();
+    let base = coupled::preview(d.clone(), before.clone(), vec![]).unwrap();
+    let revised = coupled::preview_continuation(base.clone(), after.clone(), vec![]).unwrap();
+    let a = evidence(&base);
+    let b = evidence(&revised);
+    assert!(a.all_scheduled_payments_settled && b.all_scheduled_payments_settled);
+    assert!(a.resident_zero_each_period && b.resident_zero_each_period);
+    let prefix: Vec<_> = a.events.iter().filter(|e| e.period < 4).cloned().collect();
+    assert_eq!(
+        prefix,
+        b.events
+            .iter()
+            .filter(|e| e.period < 4)
+            .cloned()
+            .collect::<Vec<_>>()
+    );
+    assert_eq!(a.money.opening_total, b.money.opening_total);
+    let blocked = b
+        .events
+        .iter()
+        .position(|e| e.period >= 4 && e.kind == coupled::EventKind::Goods)
+        .unwrap();
+    let failed =
+        evidence(&coupled::preview_continuation(base, after.clone(), vec![blocked]).unwrap());
+    assert!(!failed.all_scheduled_payments_settled);
+    json!({"policy":d.policy,"baseline_events":a.events,"repaired_events":b.events,
+        "opening_total":a.money.opening_total,"baseline_money":a.money,"repaired_money":b.money,
+        "unchanged_event_prefix":prefix.len(),"boundary":4,
+        "blocked_event":blocked,"blocked_failures":failed.failed,
+        "all_scheduled_payments_settled":true,"resident_zero_each_period":true})
+}
 fn feedback(definition: &ModelDefinition, input: &ModelInput) -> Value {
     // The baseline reserves current capacity and schedules northern staff training
     // in period four. Other development has already started at the revision boundary.
@@ -111,7 +183,8 @@ fn feedback(definition: &ModelDefinition, input: &ModelInput) -> Value {
     s.revisions[0].changes[0].available_bps = 0;
     let failed = repair_service_batch(&before, &unavailable, 1, 4, 12).unwrap();
     assert!(failed.input.is_none());
-    json!({"baseline_input":baseline, "observed_input":observed,
+    let circulation = circulation(&before, &after);
+    json!({"circulation":circulation,"baseline_input":baseline, "observed_input":observed,
         "repair":repair, "service_evidence":checkpoint.services,
         "preserved_boundary":checkpoint.rolling,
         "initial_shortages":shortage.pools.into_iter().filter(|r|r.shortage!="0").collect::<Vec<_>>(),
@@ -497,7 +570,7 @@ fn main() {
         .to_string();
     let summary:Vec<_>=input.services.as_ref().unwrap().pools.iter().enumerate().map(|(i,p)|json!({"pool":p.id,"initial_slots":initial[i],"new_slots":growth[i],"completion_period":lags[i],"first_usable_period":lags[i]+1})).collect();
     let feedback = feedback(&definition, &input);
-    let output = json!({"schema_version":2,"feedback":feedback,"assumptions":"docs/input-assumptions.md#care-and-education-capacity","runtime_fixture":{"definition":definition,"input":input,"population_evidence":checkpoint.population,"service_evidence":checkpoint.services},"capacity_summary":summary,"outage_counterexample":{"gaps":outage.pools.into_iter().filter(|p|p.shortage!="0").collect::<Vec<_>>(),"runtime_rejection":rejection}});
+    let output = json!({"schema_version":3,"feedback":feedback,"assumptions":"docs/input-assumptions.md#care-and-education-capacity","runtime_fixture":{"definition":definition,"input":input,"population_evidence":checkpoint.population,"service_evidence":checkpoint.services},"capacity_summary":summary,"outage_counterexample":{"gaps":outage.pools.into_iter().filter(|p|p.shortage!="0").collect::<Vec<_>>(),"runtime_rejection":rejection}});
     fs::write(&args[1], serde_json::to_vec_pretty(&output).unwrap()).unwrap();
     println!(
         "Verified regional care/education, shared development workload, operating resources and delayed capacity"
