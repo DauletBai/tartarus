@@ -80,3 +80,37 @@ consent and aggregation rules, physical resource and workforce coefficients,
 regional routes, uncertainty and independent reproducibility. A source URL, model
 output or successfully funded plan cannot substitute for those observations.
 These evidence tasks are distinct from the implemented arithmetic and software tests.
+
+## Care and education capacity
+
+`research/service-results.json` extends the regional need-profile fixture with
+60 monthly periods, 12 regional capacity pools and six service rules. These
+planning coefficients are maintained in its versioned registry. They are not
+clinical norms or measured staffing estimates. Workforce slots describe available
+capacity, not ownership of people or compulsory assignment.
+
+A staff/room/equipment slot supplies 480 capacity minutes per working day.
+Workforce, care rooms, devices and builders have 20 working days per month;
+teaching seats use calendar days. Baseline availability is 10,000 basis points.
+One care minute uses one staff minute, one room minute and half a device minute.
+A preschool place-day uses 20 educator minutes, a school place-day 15; both use
+one teaching seat-day and one device minute. Active training uses 120 mentor
+minutes per activity per month; construction uses 60 builder minutes. Operations
+consume 1/1,000 kWh per care minute and 1/10 kWh per education place-day.
+These central rational values exercise shared constraints. Declared input ranges
+are retained but are not automatically propagated through an interval optimizer.
+
+Each new capacity slot consumes two kWh and five material units. Workforce
+preparation additionally consumes an eligible training place. Preparation takes
+six model periods, rooms/seats four, and devices two; these are graph lead times,
+not claims that professional qualifications can be obtained in six months.
+Assets have a 120-month life; the retirement test shortens it deliberately.
+
+The service graph starts with explicit energy, material and eligible-training-place
+endowments and retains the preceding water-component fixture. It is not yet joined
+to the full 31-resource upstream graph. Operational energy and development inputs
+are balanced, but replenishment of these endowments, individual qualifications,
+regional travel, daily appointment concurrency, staff leave and actual attendance
+need additional inputs. Monthly planned provision is not observed receipt.
+A changed service assumption currently requires a new scenario: accepted model
+history freezes the complete service plan, including availability and provision.

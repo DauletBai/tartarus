@@ -77,6 +77,7 @@ def populate_and_restart(url):
         extended_reference = populate_extended(call)
         population_reference = populate_population(call)
         profile_reference = populate_population(call, "need-profile-results.json")
+        service_reference = populate_population(call, "service-results.json")
     with server(url) as call:
         assert call(model_reference['path']) == model_reference['saved']
         assert call(model_reference['draft_path']) == model_reference['pending']
@@ -88,9 +89,11 @@ def populate_and_restart(url):
         assert call(population_reference['draft_path']) == population_reference['pending']
         assert call(profile_reference['path']) == profile_reference['saved']
         assert call(profile_reference['draft_path']) == profile_reference['pending']
+        assert call(service_reference['path']) == service_reference['saved']
+        assert call(service_reference['draft_path']) == service_reference['pending']
     print('Physical model: full accepted and pending state survives process restart', flush=True)
     print('Dated scenario: 2 process restarts, pending and approved bytes preserved', flush=True)
-    return dict(path=path, saved=saved, pending=next_draft, model=model_reference, coupled=coupled_reference, extended=extended_reference, population=population_reference, profiles=profile_reference)
+    return dict(path=path, saved=saved, pending=next_draft, model=model_reference, coupled=coupled_reference, extended=extended_reference, population=population_reference, profiles=profile_reference, services=service_reference)
 
 
 def resume_restored(url, reference):
@@ -116,6 +119,7 @@ def resume_restored(url, reference):
         resume_extended(call, reference['extended'])
         resume_population(call, reference['population'])
         resume_population(call, reference['profiles'])
+        resume_population(call, reference['services'])
     print('Dated scenario: restored history continued under least-privilege runtime role', flush=True)
 
 
@@ -291,9 +295,13 @@ def populate_population(call, filename="population-results.json"):
     evidence = json.loads(approved['checkpoint'])['population']
     assert evidence == fixture['population_evidence']
     assert not evidence['projection']['all_selected_needs_known']
-    if filename == 'need-profile-results.json':
+    if filename in ('need-profile-results.json', 'service-results.json'):
         assert evidence['profiles']
         assert all(row['unmet'] == '0' for row in evidence['profiles']['local_coverage'])
+    if filename == 'service-results.json':
+        services = json.loads(approved['checkpoint'])['services']
+        assert services == fixture['service_evidence']
+        assert services['all_selected_services_feasible']
     data = copy.deepcopy(fixture['input'])
     data['boundary'] = 30
     pending = call(path + '/drafts', dict(id=uid(), expected_generation=1, input=data,
@@ -311,6 +319,8 @@ def resume_population(call, reference):
     new = json.loads(approved['checkpoint'])
     assert old['population'] == new['population']
     assert old['input']['population'] == new['input']['population']
+    assert old.get('services') == new.get('services')
+    assert old['input'].get('services') == new['input'].get('services')
     assert new['input']['boundary'] == 30
     assert call(reference['path'] + '/versions/1') == reference['saved']
     print('Population registry: sources, exact cohorts, unknown needs and pending continuation survive restart/restore', flush=True)

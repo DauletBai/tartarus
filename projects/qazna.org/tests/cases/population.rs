@@ -243,3 +243,87 @@ async fn regional_shortage_rejection_preserves_retry_and_approved_profile_histor
     assert_eq!(f.balance(f.treasury).await, "1000");
     assert_eq!(f.balance(f.resident).await, "0");
 }
+
+#[tokio::test]
+#[ignore = "requires isolated PostgreSQL; use scripts/check.py"]
+async fn service_shortage_and_rewritten_capacity_preserve_reviewed_history() {
+    let f = Fixture::new().await;
+    let v: serde_json::Value =
+        serde_json::from_str(include_str!("../../research/service-results.json")).unwrap();
+    let mut d: ModelDefinition =
+        serde_json::from_value(v["runtime_fixture"]["definition"].clone()).unwrap();
+    d.id = Uuid::new_v4();
+    let id = d.id;
+    let data: ModelInput = serde_json::from_value(v["runtime_fixture"]["input"].clone()).unwrap();
+    f.ledger.create_model_scenario("service", d).await.unwrap();
+    let proposal = |input, generation| ModelProposal {
+        id: Uuid::new_v4(),
+        expected_generation: generation,
+        input,
+        basis: "Reviewed care and education capacity".into(),
+    };
+    let mut wrong = data.clone();
+    wrong.services.as_mut().unwrap().pools[0].availability_bps[20] = 0;
+    assert!(
+        f.ledger
+            .propose_model_scenario("retry", id, proposal(wrong, 0))
+            .await
+            .is_err()
+    );
+    assert_eq!(
+        f.ledger.model_scenario(id, None).await.unwrap().generation,
+        0
+    );
+    let draft = f
+        .ledger
+        .propose_model_scenario("retry", id, proposal(data.clone(), 0))
+        .await
+        .unwrap();
+    f.ledger
+        .resolve_model_scenario("apply", draft.request.id, decision())
+        .await
+        .unwrap();
+    let saved = f.ledger.model_scenario(id, None).await.unwrap();
+    let evidence: ModelCheckpoint =
+        serde_json::from_str(saved.checkpoint.as_ref().unwrap()).unwrap();
+    assert!(evidence.services.unwrap().all_selected_services_feasible);
+    for mode in 0..3 {
+        let mut next = data.clone();
+        next.boundary = 30;
+        match mode {
+            0 => next.services = None,
+            1 => next.services.as_mut().unwrap().registry.version = "unreviewed norms".into(),
+            _ => {
+                next.services.as_mut().unwrap().pools[0].process_load_parameters[1] =
+                    "no_work".into()
+            }
+        }
+        assert!(
+            f.ledger
+                .propose_model_scenario("next", id, proposal(next, 1))
+                .await
+                .is_err()
+        );
+        assert_eq!(
+            json!(f.ledger.model_scenario(id, None).await.unwrap()),
+            json!(saved)
+        );
+    }
+    let mut next = data;
+    next.boundary = 30;
+    let draft = f
+        .ledger
+        .propose_model_scenario("next", id, proposal(next, 1))
+        .await
+        .unwrap();
+    f.ledger
+        .resolve_model_scenario("apply-next", draft.request.id, decision())
+        .await
+        .unwrap();
+    assert_eq!(
+        json!(f.ledger.model_scenario(id, Some(1)).await.unwrap()),
+        json!(saved)
+    );
+    assert_eq!(f.balance(f.treasury).await, "1000");
+    assert_eq!(f.balance(f.resident).await, "0");
+}

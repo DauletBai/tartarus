@@ -1,5 +1,13 @@
 # Qazna changelog
 
+## Care and education capabilities — 12 November 2026
+
+- Bind non-storable services to regional workforce, rooms, equipment and ongoing development/training loads.
+- Reconcile operating inputs with physical balances; reject regional gaps, retired capacity and double booking.
+- Add a reproducible 60-month service graph and a workforce-outage counterexample.
+- Preserve reviewed service assumptions and evidence through PostgreSQL history, restarts and logical restoration.
+- Extend adversarial arithmetic tests and byte-for-byte report reproduction without migration or dependency changes.
+
 ## Regional and life-stage needs — 12 November 2026
 
 - Added disjoint person-day profiles, full norm inheritance/replacement, joint pregnancy/support states and regional demand totals.

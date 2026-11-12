@@ -133,3 +133,13 @@ fields, mismatched units and local quantities that do not reconcile to physical
 provision. Unknown needs are preserved; national surplus cannot authorize a local
 shortage. Life-stage labels cannot alter entitlement or issue money. Source fields
 are retained in immutable history, with no automatic medical inference or AI call.
+
+## Service-capacity evidence
+
+The deterministic Rust audit recomputes service needs, pool use, active training
+and operating-input balances. AI prose cannot mark an absent specialist as
+available, waive a local shortage, alter accepted norms or approve a candidate.
+Tests cover missing rules, wrong units, unknown coefficients, double-booked assets,
+regional borrowing, retired equipment and overloaded mentors. Source metadata and
+valid arithmetic do not authenticate real qualifications or source coefficients;
+professional review and observed capacity remain separate evidence requirements.
