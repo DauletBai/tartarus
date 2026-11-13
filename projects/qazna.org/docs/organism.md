@@ -179,3 +179,11 @@ capabilities cannot yet satisfy the need. A reviewed repair and its circulation
 can be associated with that declaration; the association does not assert that
 care was delivered or the disruption ended. Recorded need, physical feasibility,
 accounting feasibility and observed recovery remain separate responsibilities.
+
+
+Several signals can describe one disruption. Combining them now preserves their
+separate origins; contradictory values require an explicit correction. A correction
+can change our current account of events without erasing the intervention already
+reviewed. The extended-absence case shows a delayed training course missing future
+care needs: adaptation needs available capabilities and preparation time, not only
+circulation of accounting measure. Human need is never reduced to fit the plan.

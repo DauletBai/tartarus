@@ -163,5 +163,17 @@ source statement. AI prose cannot mark a journal entry resolved or change an
 approved plan. Linking requires separately reviewed current physical and monetary
 versions, matching immutable revision history and settled derived payments. No
 live posting is made. Observer, reviewer and attestor credentials cannot access
-these operator-only research routes. Retraction/dispute workflows and named
-institutional observation authority are not yet implemented.
+these operator-only research routes. Named institutional observation authority and
+independent dispute adjudication are not yet implemented.
+
+
+## Correcting and combining declared evidence
+
+Only an operator can combine, replace or withdraw incidents. The deterministic
+union rejects conflicting cells and mixed bases/boundaries; untrusted prose cannot
+supply source priority, authorize extra resources or hide an earlier report.
+Historical plan links survive corrections. New declarations still need separate
+physical and monetary review, even when metadata names a previous approved event.
+Failed full-capacity checks do not yield an approved monetary continuation. Role,
+race, idempotency, transaction rollback and restored-runtime tests cover this path;
+no AI call or automatic observation authentication has been added.

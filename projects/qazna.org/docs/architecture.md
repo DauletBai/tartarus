@@ -663,8 +663,8 @@ revision at the next position. The coupled checkpoint must contain that exact
 physical version and settle all scheduled payments. Pending, stale, unmatched and
 failed-circulation candidates cannot link. Locks follow coupled → physical → sorted
 dated scopes, matching existing review paths. Each incident has at most one link;
-parallel callers cannot create two decisions. State is `open` or `plan_linked`,
-never `resolved`. A later model generation does not rewrite a historical link.
+parallel callers cannot create two decisions. Initially state is `open` or `plan_linked`;
+corrections below add `superseded` and `withdrawn`, never `resolved`. A later model generation does not rewrite a historical link.
 
 PostgreSQL foreign keys enforce approved generation/scope references. A structural
 trigger verifies current heads, matching revision position/prefix and settled money;
@@ -678,5 +678,54 @@ approved checkpoint instead of treating it as generation zero. This retains serv
 revision history while replaying the full physical calculation. Offline previews
 remain caller-owned research calculations, not authenticity/approval evidence.
 The journal and links do not post live money, create issuance, assign staff or
-execute a repair. Named identities, disputes/retractions, multiple interacting
-incidents and multi-batch repair remain subsequent integration work.
+execute a repair. Named institutional identities, independent dispute adjudication
+and multi-batch repair remain subsequent integration work.
+
+
+## Incident combinations and corrections
+
+Migration 0017 adds append-only `service_incident_supersessions`. Each source has
+at most one disposition: `replaced`, `withdrawn`, or `merged`. A replacement has a
+larger journal sequence in the same model, so cycles are impossible. Old source
+bytes, base generations and existing reviewed plan links remain intact.
+
+| Operator POST route | Request |
+| --- | --- |
+| `/v1/scenarios/models/{id}/incidents/combine` | `id`, `expected_generation`, `incidents` (2–16 distinct IDs), `basis` |
+| `/v1/service-incidents/{id}/correct` | `expected_generation`, `replacement_id` (UUID for correction, null for withdrawal), `basis` |
+
+Both require `Idempotency-Key`, use the default 16 KiB request bound and reject
+unknown fields. Correction may withdraw an old or already plan-linked source. A
+replacement must be a newer open declaration at the current model generation,
+without incoming replacement links. Declare the corrected statement first, then
+explicitly supersede its predecessor; neither command applies a physical plan.
+
+Combination accepts only open sources at the current approved base and one common
+rolling boundary. Rust validates each exact revision, forms a canonical union in
+pool/period order and validates it again. Equal overlapping cells are deduplicated;
+conflicting old/new values reject the entire operation. The result has at most 128
+changed cells and a 15 KiB serialized revision, with generated source reference
+`qazna:incident-combination:{id}`. No averaging, percentage addition, minimum-value
+selection or implicit source priority is performed. Basis text is operator supplied.
+
+The new declaration and all source dispositions commit together under the physical
+model lock. PostgreSQL checks same-model references, current generation, sequence
+direction, active targets, exact cell union and 2–16 incoming members at commit.
+Transaction IDs prevent later additions to a committed combination. SQL also rejects
+conflicting cells and mutation of disposition history. These are structural guards;
+the Rust path still owns numerical validation, and a database owner can bypass
+triggers. An invalid group or competing command cannot leave a partial combination.
+Plan linking retains coupled → model locking and rejects terminal sources.
+
+GET includes optional `disposition` and `supersedes` (immediate predecessor IDs,
+sorted by UUID). State is `superseded` or `withdrawn` when a disposition exists;
+a historical `plan` can still be present. Follow predecessor IDs to inspect earlier
+links; history is not flattened. Old idempotent requests return their original saved
+response, while GET shows the current disposition. Absent new fields are omitted,
+preserving earlier response shapes. A source's replacement does not cancel a plan,
+rewrite approvals, confirm recovery or move ledger funds. Reviewing a new physical
+and monetary continuation remains a separate operator action.
+
+A combined declaration uses the existing repair/review/link workflow. It is a
+lineage-aware input mechanism, not a new optimizer. The compound experiment below
+shows why a correct combination may still have no feasible single-batch repair.

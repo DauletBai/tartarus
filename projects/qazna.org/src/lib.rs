@@ -53,3 +53,5 @@ pub mod service_feedback;
 pub mod services;
 
 pub mod service_incidents;
+
+pub mod incident_revisions;

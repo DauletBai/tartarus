@@ -413,15 +413,40 @@ def populate_service_incidents(call):
     key = uid()
     linked = call(first_path + '/plan', request, key=key)
     assert linked['state'] == 'plan_linked'
+    recovery = copy.deepcopy(revision)
+    recovery['basis'] = 'Declared recovery preserving the earlier absence'
+    recovery['source_reference'] = 'qazna:recovery:availability-restored'
+    for change in recovery['changes']:
+        change['previous_bps'], change['available_bps'] = change['available_bps'], change['previous_bps']
+    members = []
+    for cells in (recovery['changes'][:2], recovery['changes'][2:]):
+        part = copy.deepcopy(recovery)
+        part['changes'] = cells
+        members.append(call(reference['path'] + '/incidents', dict(id=uid(), expected_generation=2, revision=part)))
+    combination_request = dict(id=uid(), expected_generation=2, incidents=[r['id'] for r in members],
+        basis='Combine compatible recovery declarations before backup')
+    combination_key = uid()
+    combined = call(reference['path'] + '/incidents/combine', combination_request, key=combination_key)
+    lineage = [call('/v1/service-incidents/' + r['id']) for r in members]
+    assert all(r['state'] == 'superseded' for r in lineage)
+    duplicate = call(reference['path'] + '/incidents', dict(id=uid(), expected_generation=2, revision=recovery))
+    withdrawn = call('/v1/service-incidents/' + duplicate['id'] + '/correct',
+        dict(expected_generation=2, replacement_id=None, basis='Withdraw redundant declaration'))
+    assert withdrawn['state'] == 'withdrawn'
     return dict(first_path=first_path, second_path='/v1/service-incidents/' + second['id'],
         linked=linked, open=second, coupled_path=path, coupled=accepted,
-        link_request=request, link_key=key)
+        link_request=request, link_key=key, model_path=reference['path'], combined=combined,
+        lineage=lineage, withdrawn=withdrawn, combination_request=combination_request, combination_key=combination_key)
 
 
 def verify_service_incidents(call, reference):
     assert call(reference['first_path']) == reference['linked']
     assert call(reference['second_path']) == reference['open']
     assert call(reference['coupled_path']) == reference['coupled']
+    for record in [reference['combined'], reference['withdrawn'], *reference['lineage']]:
+        assert call('/v1/service-incidents/' + record['id']) == record
+    assert call(reference['model_path'] + '/incidents/combine', reference['combination_request'],
+        key=reference['combination_key']) == reference['combined']
     assert call(reference['first_path'] + '/plan', reference['link_request'],
         key=reference['link_key']) == reference['linked']
 
@@ -433,15 +458,11 @@ def continue_service_incidents(call, reference):
     physical = json.loads(coupled['checkpoint'])['evidence']['physical']
     model_path = '/v1/scenarios/models/' + physical['definition']['id']
     input_ = json.loads(physical['checkpoint'])['input']
-    revision = copy.deepcopy(input_['services']['revisions'][0])
-    revision['basis'] = 'Declared recovery of availability, preserving earlier absence'
-    revision['source_reference'] = 'qazna:recovery:availability-restored'
+    incident = reference['combined']
+    revision = incident['revision']
     for change in revision['changes']:
-        change['previous_bps'], change['available_bps'] = change['available_bps'], change['previous_bps']
         pool = next(p for p in input_['services']['pools'] if p['id'] == change['pool'])
         pool['availability_bps'][change['period']] = change['available_bps']
-    incident = call(model_path + '/incidents', dict(id=uid(), expected_generation=2, revision=revision))
-    assert incident['sequence'] > max(reference['linked']['sequence'], reference['open']['sequence'])
     input_['services']['revisions'].append(revision)
     draft = call(model_path + '/drafts', dict(id=uid(), expected_generation=2, input=input_, basis='Full recovery revalidation'))
     call('/v1/model-drafts/' + draft['request']['id'] + '/resolve', dict(apply=True, basis='Reviewed recovery'))
@@ -453,3 +474,10 @@ def continue_service_incidents(call, reference):
     assert linked['state'] == 'plan_linked'
     assert call(reference['first_path']) == reference['linked']
     assert call(reference['second_path']) == reference['open']
+
+    # New correction writes after restore retain the original approved plan.
+    withdrawn = call(reference['first_path'] + '/correct', dict(expected_generation=3,
+        replacement_id=None, basis='Withdraw original report without undoing its historical plan'))
+    assert withdrawn['state'] == 'withdrawn' and withdrawn['plan'] == reference['linked']['plan']
+    assert call(model_path)['generation'] == 3
+    print('Incident union, lineage, withdrawal and historical plans survive restart/restore', flush=True)

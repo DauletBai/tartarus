@@ -966,3 +966,41 @@ Both strict-evidence exercises and actor seeds 7/19 completed. Circulation handl
 3,901 in 47.155 seconds with two restarts. These are local timings, not a production
 capacity guarantee. Migration 0016 is additive; released migrations and dependency
 versions are unchanged. Remote push/PR checks are recorded separately in GitHub.
+
+
+## Incident combinations and correction — 13 November 2026
+
+Migration 0017 and two operator POST routes add exact many-to-one combinations,
+explicit replacement and withdrawal. Source reports, old idempotent responses and
+historical physical/monetary plan links remain intact. Correction does not undo an
+approved physical intervention. All numerical proposal/review gates remain in Rust.
+
+Three additional service tests cover canonical order-independent union, duplicate
+cell deduplication, conflicting values, bounds and the extended-absence failure.
+The schema-4 report retains every previous result unchanged. Its new compound case
+exhausts nine permitted training dates; the start-at-8 candidate lacks 16,683,092
+northern care minutes in period 14. No monetary continuation is fabricated.
+
+Eight PostgreSQL cases cover the combined reviewed-plan path; explicit correction
+of contradictory evidence; competing combinations; correction of linked sources;
+partial SQL transaction rollback, reverse edges, late ancestry additions and
+history mutation; operator-only HTTP/unknown fields; mixed scopes and stale bases;
+and withdrawal racing combination. Positive union/correction tests exposed a JSON
+operator-precedence error in the initial migration draft; parenthesized operands
+fix it. No released migration was changed.
+
+The backup fixture now contains six declarations, one plan link and three source
+dispositions. Restart and logical restoration retain the exact records and retries.
+After restore, the combined recovery report is reviewed and linked, and a further
+withdrawal preserves the original historical plan under the runtime role.
+
+Full local `scripts/check.py` passed on 13 November 2026: **364 Rust tests**
+(including **26 service** and **136 PostgreSQL** tests), **11 Python tests**,
+Rustfmt, all-target Clippy, dependency licences and byte-for-byte report reproduction.
+Logical recovery verified **48 tables** and **24 privilege denials**, with new
+review/link/correction writes under the restored runtime role. Both strict-evidence
+runs and actor seeds 7/19 completed. Circulation processed 4,548 HTTP requests in
+57.862 seconds with one restart; closed circulation processed 3,901 in 46.987 seconds
+with two restarts. These local timings do not establish production capacity.
+Released migrations, dependencies, real balances and issuance authority are unchanged.
+Remote push/PR checks are recorded separately on GitHub.

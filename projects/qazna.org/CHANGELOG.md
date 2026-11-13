@@ -1,5 +1,12 @@
 # Qazna changelog
 
+## Incident combinations and corrections — 13 November 2026
+
+- Add migration 0017 and operator commands for exact multi-source combinations, replacement and withdrawal.
+- Retain original declarations and reviewed plan links; reject conflicting cells, mixed scopes/generations, cycles and partial or late unions.
+- Extend the service report to schema 4 with nine failed repair dates and an explicit future care-capacity gap.
+- Exercise concurrent commands, role boundaries, idempotency and populated lineage restoration; no dependency or monetary-authority changes.
+
 ## Durable service incidents and circulation — 12 November 2026
 
 - Add migration 0016 and bounded operator API for append-only incident declarations, including unrepairable outages.

@@ -70,6 +70,12 @@ settles 400 events before and after training deferral with the same opening meas
 a blocked-payment counterexample remains explicit. A linked plan is not a claim
 of observed recovery or an instruction to move live money.
 
+[Incident combination and correction](docs/architecture.md#incident-combinations-and-corrections)
+now retain source lineage and historical plans. Compatible reports form one exact
+revision; conflicting cells require explicit correction. The extended-absence
+experiment rejects all nine tested training dates and exposes a future care gap,
+without changing needs or manufacturing a successful monetary plan.
+
 ## Project information
 
 | Item | Reference |
