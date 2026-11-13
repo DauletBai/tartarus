@@ -1004,3 +1004,50 @@ runs and actor seeds 7/19 completed. Circulation processed 4,548 HTTP requests i
 with two restarts. These local timings do not establish production capacity.
 Released migrations, dependencies, real balances and issuance authority are unchanged.
 Remote push/PR checks are recorded separately on GitHub.
+
+## Joint repair and protected reserves — 13 November 2026
+
+`defer_batches` applies original-source activity/stock deltas simultaneously;
+`defer_batch` delegates to it. The joint helper considers up to four windows of
+24 dates and at most 256 full continuation previews. Results distinguish success,
+exhausted windows and exhausted evaluation budget. No prefix, provision norm,
+physical endowment or monetary policy is relaxed.
+
+Optional reserve floors use the service pool's unit and period calendar. The
+verifier rejects unknown/duplicate pools, missing source/basis, bad dimensions
+and reserve deficits even when present service demand is covered. Continuations
+cannot remove, reduce or re-attribute approved floors. Empty fields preserve old
+serialized checkpoints. The existing runtime review path persists both floors and
+free-capacity evidence without migration or privilege changes.
+
+Nine added service tests cover joint recovery that single moves cannot achieve;
+budget versus exhaustive failure; malformed windows and bounds; overlapping
+source/target moves and order independence; exact reserve-boundary acceptance;
+invalid identities/calendars/provenance; reserve-history tampering; regional
+non-substitution; and two courses competing for the same protected mentor pool.
+A PostgreSQL case exercises failed proposal/retry, concurrent approval, immutable
+history and unchanged live balances for the joint candidate. HTTP restart/restore
+now preserves an additional approved baseline and pending joint draft, then
+approves and continues it under the restored runtime role.
+
+The existing report is schema 5: two training batches move from period 4 to 6,
+found on attempt 21 of 81; four reserve calendars produce 240 balances. All older
+report sections compare equal to the preceding commit. The paired circulation
+trace retains its 56-event prefix and common opening measure of 8,536,101,076
+units across 400 events, with a deliberately blocked-payment counterexample.
+The reserve envelope is derived before approval for this enforcement experiment;
+real emergency adequacy is not inferred from its positive margin.
+
+Full `PG_BIN=/opt/homebrew/opt/postgresql@16/bin python3 scripts/check.py` passed
+on 13 November 2026: **374 Rust tests** (including **35 service** and **137
+PostgreSQL** tests), **11 Python tests**, Rustfmt, all-target Clippy, dependency
+licences and byte-identical maintained report regeneration. The sandbox initially
+blocked PostgreSQL shared memory; the completed run used an isolated temporary
+cluster with the required host permission. No existing database was used.
+
+Recovery verified **48 tables**, **24 runtime privilege denials**, the pending
+joint repair and unchanged reserve calendars; approval and further continuation
+succeeded after restore. Both strict-evidence runs and actor seeds 7/19 completed.
+The 60-period circulation run handled 4,548 HTTP requests in 57.413 seconds with
+one restart; the closed run handled 3,901 in 47.494 seconds with two restarts.
+These are local regression measurements, not production throughput guarantees.

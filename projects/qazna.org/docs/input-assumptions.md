@@ -137,3 +137,13 @@ not perfect prediction. No consent, clinical leave policy, credentials or real-w
 absence verification is supplied by the arithmetic. Repair covers one whole
 unstarted batch; interruption/resumption of ongoing courses, reassignment of
 people, cross-region provision and joint global optimization remain outside it.
+
+### Protected service reserves
+
+The joint-repair experiment fixes pool-specific minimum free capacity before
+approval. Its four calendars are derived from baseline/period-six headroom and
+carry `qazna:joint-service-reserve-envelope:v1` provenance. They establish a
+reproducible enforcement case, not a calibrated workforce/equipment reserve
+standard. Reserve sufficiency requires independent demand/outage stress inputs.
+Periods use existing calendars and throughput units; people are not commodities,
+and capacity slots do not specify assignments or compulsory work.

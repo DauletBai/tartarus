@@ -331,6 +331,14 @@ async fn service_shortage_and_rewritten_capacity_preserve_reviewed_history() {
 #[tokio::test]
 #[ignore = "requires isolated PostgreSQL; use scripts/check.py"]
 async fn service_feedback_failure_retry_and_concurrent_review_preserve_history() {
+    reviewed_feedback("feedback").await;
+}
+#[tokio::test]
+#[ignore = "requires isolated PostgreSQL; use scripts/check.py"]
+async fn joint_repair_reserves_survive_concurrent_review_and_historical_replay() {
+    reviewed_feedback("joint").await;
+}
+async fn reviewed_feedback(section: &str) {
     let f = Fixture::new().await;
     let v: serde_json::Value =
         serde_json::from_str(include_str!("../../research/service-results.json")).unwrap();
@@ -339,11 +347,11 @@ async fn service_feedback_failure_retry_and_concurrent_review_preserve_history()
     d.id = Uuid::new_v4();
     let id = d.id;
     let baseline: ModelInput =
-        serde_json::from_value(v["feedback"]["baseline_input"].clone()).unwrap();
+        serde_json::from_value(v[section]["baseline_input"].clone()).unwrap();
     let observed: ModelInput =
-        serde_json::from_value(v["feedback"]["observed_input"].clone()).unwrap();
+        serde_json::from_value(v[section]["observed_input"].clone()).unwrap();
     let repaired: ModelInput =
-        serde_json::from_value(v["feedback"]["repair"]["input"].clone()).unwrap();
+        serde_json::from_value(v[section]["repair"]["input"].clone()).unwrap();
     let proposal = |input, generation| ModelProposal {
         id: Uuid::new_v4(),
         expected_generation: generation,
@@ -397,10 +405,7 @@ async fn service_feedback_failure_retry_and_concurrent_review_preserve_history()
     assert_eq!(accepted.generation, 2);
     let checkpoint: ModelCheckpoint =
         serde_json::from_str(accepted.checkpoint.as_ref().unwrap()).unwrap();
-    assert_eq!(
-        json!(checkpoint.services),
-        v["feedback"]["service_evidence"]
-    );
+    assert_eq!(json!(checkpoint.services), v[section]["service_evidence"]);
     assert_eq!(
         checkpoint.input.services.as_ref().unwrap().revisions.len(),
         1

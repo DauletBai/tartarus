@@ -51,7 +51,7 @@ def check_recovery(pg, root, socket_dir, source='evidence_demo'):
     assert sql(restored, "SELECT count(*) FROM evidence_statements").strip() != '0'
     assert sql(restored, "SELECT count(*) FROM evidence_enforcement").strip() == '1'
     assert sql(restored, "SELECT count(*) FROM dated_scenario_outcomes").strip() == '2'
-    assert sql(restored, "SELECT count(*) FROM model_scenario_outcomes").strip() == '8'
+    assert sql(restored, "SELECT count(*) FROM model_scenario_outcomes").strip() == '9'
     assert sql(restored, "SELECT count(*) FROM coupled_scenario_outcomes").strip() == '4'
     assert sql(restored, "SELECT count(*) FROM service_incidents").strip() == '6'
     assert sql(restored, "SELECT count(*) FROM service_incident_plans").strip() == '1'
@@ -98,7 +98,7 @@ def check_recovery(pg, root, socket_dir, source='evidence_demo'):
     run_evidence_exercise(runtime_url, root / 'runtime-evidence', activate=False)
     resume_restored(runtime_url, reference)
     report = dict(result='passed', tables_verified=len(before), table_sha256=before,
-                  elapsed_seconds=round(time.monotonic()-started,3), runtime_denials=24, incident_lineage_restore=True, incident_restart_restore=True, scenario_restart_restore=True, model_restart_restore=True, coupled_restart_restore=True, extended_restart_restore=True, population_restart_restore=True, profile_restart_restore=True, service_restart_restore=True, service_feedback_restart_restore=True,
+                  elapsed_seconds=round(time.monotonic()-started,3), runtime_denials=24, incident_lineage_restore=True, incident_restart_restore=True, scenario_restart_restore=True, model_restart_restore=True, coupled_restart_restore=True, extended_restart_restore=True, population_restart_restore=True, profile_restart_restore=True, service_restart_restore=True, service_feedback_restart_restore=True, joint_reserve_restart_restore=True,
                   limitation='Synthetic logical backup; no PITR or production RPO/RTO guarantee')
     (root / 'recovery-report.json').write_text(json.dumps(report,indent=2)+'\n')
     print(f"Backup/restore and runtime privilege checks passed: {len(before)} tables", flush=True)
