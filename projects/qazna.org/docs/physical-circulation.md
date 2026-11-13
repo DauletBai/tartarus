@@ -2279,3 +2279,36 @@ This distinguishes two operations: combining evidence may be valid even when no
 acceptable plan exists; approving provision still requires the full independent
 physical and monetary checks. Conflicting declarations must first be explicitly
 corrected or withdrawn, retaining the original evidence and past decisions.
+
+## Joint repair and reserve experiment — 13 November 2026
+
+The maintained `service-results.json` schema 5 adds `joint`, retaining all previous
+experiments. Two regional care-training batches of 82,345 and 123,518 slots are
+scheduled at period 4. Declared mentor absences in periods 4–5 leave current care
+covered but prevent both courses. Each single-batch search fails because the other
+course remains infeasible. Joint enumeration over dates 4–12 finds **(6, 6) on
+attempt 21 of 81**. Course completion moves from period 10 to 12; new capacity is
+usable from period 13. Needs and service delivery remain unchanged.
+
+Four reserve schedules cover northern/southern care staff and devices over all
+60 periods: 240 auditable pool-period balances. For this experiment, reserve
+floors are set before initial approval to half the smaller spare capacity of the
+baseline and the period-six schedule. They test enforcement of a known feasible
+envelope; they do not independently establish a sufficient emergency reserve.
+All 240 reserve shortfalls are zero in the selected plan. Separate negative tests
+set a floor one unit above free capacity and reject the schedule even though all
+current service needs fit. Other regions' spare capacity cannot erase that gap.
+
+Both plans pass exact physical and monetary continuation with the same opening
+measure. Rows before boundary 4, population requirements and pending work are
+preserved. Blocking a scheduled goods event still produces a monetary failure;
+no new issuance repairs it. Input fixtures, all 21 attempted date pairs, service
+balances and circulation events are in the existing report, regenerated with:
+
+```
+cargo run --locked --example service_study -- research/service-results.json
+```
+
+This closes bounded multi-batch deferral with protected headroom. It does not yet
+split batches, advance starts, release reserve under emergency authority, recruit
+additional staff, relocate regional resources or prove rolling terminal liquidity.

@@ -738,3 +738,310 @@ fn compounded_absence_preserves_need_and_reports_failed_repair_without_money() {
         v["feedback"]["circulation"]["policy"]
     );
 }
+
+fn joint_fixture() -> (ModelDefinition, ModelInput, ModelInput, ModelInput) {
+    let v: Value = serde_json::from_str(include_str!("../research/service-results.json")).unwrap();
+    (
+        serde_json::from_value(v["runtime_fixture"]["definition"].clone()).unwrap(),
+        serde_json::from_value(v["joint"]["baseline_input"].clone()).unwrap(),
+        serde_json::from_value(v["joint"]["observed_input"].clone()).unwrap(),
+        serde_json::from_value(v["joint"]["repair"]["input"].clone()).unwrap(),
+    )
+}
+#[test]
+fn joint_search_repairs_both_regions_with_fixed_reserves_and_needs() {
+    use qazna::service_feedback::*;
+    let (d, baseline, observed, expected) = joint_fixture();
+    let before = preview(d.clone(), baseline.clone()).unwrap();
+    let windows: Vec<_> = [1, 7]
+        .into_iter()
+        .map(|process| BatchWindow {
+            process,
+            start: 4,
+            latest: 12,
+        })
+        .collect();
+    for w in &windows {
+        assert!(
+            repair_service_batch(&before, &observed, w.process, w.start, w.latest)
+                .unwrap()
+                .input
+                .is_none()
+        );
+    }
+    let result = repair_service_batches(&before, &observed, &windows, 81).unwrap();
+    assert_eq!(result.outcome, RepairOutcome::Found);
+    assert_eq!(result.search_space, 81);
+    assert_eq!(result.attempts.len(), 21);
+    let actual = result.input.unwrap();
+    assert_eq!(json!(actual), json!(expected));
+    assert_eq!(json!(&baseline.plan[..4]), json!(&actual.plan[..4]));
+    assert_eq!(
+        json!(baseline.services.unwrap().reserves),
+        json!(actual.services.as_ref().unwrap().reserves)
+    );
+    assert_eq!(json!(baseline.population), json!(actual.population));
+    let e = audit(&d, &actual).unwrap();
+    assert_eq!(e.reserves.len(), 240);
+    assert!(e.reserves.iter().all(|r| r.shortfall == "0"));
+    assert!(e.all_selected_services_feasible);
+}
+#[test]
+fn joint_budget_exhaustion_is_not_an_infeasibility_claim() {
+    use qazna::service_feedback::*;
+    let (d, b, o, _) = joint_fixture();
+    let before = preview(d, b).unwrap();
+    let windows = [
+        BatchWindow {
+            process: 1,
+            start: 4,
+            latest: 12,
+        },
+        BatchWindow {
+            process: 7,
+            start: 4,
+            latest: 12,
+        },
+    ];
+    let partial = repair_service_batches(&before, &o, &windows, 20).unwrap();
+    assert_eq!(partial.outcome, RepairOutcome::BudgetExceeded);
+    assert_eq!(partial.attempts.len(), 20);
+    assert!(partial.input.is_none());
+    assert!(partial.attempts.iter().all(|a| a.rejection.is_some()));
+    let fixed = [
+        BatchWindow {
+            process: 1,
+            start: 4,
+            latest: 5,
+        },
+        BatchWindow {
+            process: 7,
+            start: 4,
+            latest: 5,
+        },
+    ];
+    let no = repair_service_batches(&before, &o, &fixed, 4).unwrap();
+    assert_eq!(no.outcome, RepairOutcome::Exhausted);
+    assert_eq!(no.attempts.len(), 4);
+}
+#[test]
+fn joint_repair_rejects_malformed_requests_without_mutation() {
+    use qazna::service_feedback::*;
+    let (d, b, o, _) = joint_fixture();
+    let before = preview(d, b).unwrap();
+    let saved = json!(o);
+    let w = BatchWindow {
+        process: 1,
+        start: 4,
+        latest: 12,
+    };
+    for windows in [
+        vec![],
+        vec![w; 5],
+        vec![w, w],
+        vec![BatchWindow { start: 3, ..w }],
+        vec![BatchWindow { latest: 28, ..w }],
+        vec![BatchWindow {
+            process: usize::MAX,
+            ..w
+        }],
+        vec![BatchWindow {
+            latest: usize::MAX,
+            ..w
+        }],
+        vec![BatchWindow { start: 5, ..w }],
+    ] {
+        assert!(repair_service_batches(&before, &o, &windows, 256).is_err());
+    }
+    for budget in [0, 257, usize::MAX] {
+        assert!(repair_service_batches(&before, &o, &[w], budget).is_err());
+    }
+    assert_eq!(json!(o), saved);
+}
+#[test]
+fn reserve_shortfall_is_rejected_even_when_all_current_services_fit() {
+    let (d, mut i) = fixture();
+    let e = audit(&d, &i).unwrap();
+    let p = &e.pools[0];
+    let free = p.available.parse::<u64>().unwrap()
+        - p.service_use.parse::<u64>().unwrap()
+        - p.pipeline_use.parse::<u64>().unwrap();
+    let mut floor = vec![0; 60];
+    floor[0] = free + 1;
+    let s = i.services.as_mut().unwrap();
+    s.reserves.push(PoolReserve {
+        pool: s.pools[0].id.clone(),
+        minimum: floor,
+        basis: "Emergency staff capacity".into(),
+        source_reference: "test:reserve-floor".into(),
+    });
+    let e = audit(&d, &i).unwrap();
+    assert!(e.pools.iter().all(|p| p.shortage == "0"));
+    assert_eq!(e.reserves[0].shortfall, "1");
+    assert!(!e.all_selected_services_feasible);
+    assert!(preview(d.clone(), i.clone()).is_err());
+    i.services.as_mut().unwrap().reserves[0].minimum[0] = free;
+    assert!(preview(d, i).is_ok());
+}
+#[test]
+fn reserve_records_reject_unknown_duplicate_truncated_and_unattributed_floors() {
+    let (d, b, _, _) = joint_fixture();
+    for mode in 0..5 {
+        let mut i = b.clone();
+        let s = i.services.as_mut().unwrap();
+        match mode {
+            0 => s.reserves[0].pool = "unknown".into(),
+            1 => s.reserves.push(s.reserves[0].clone()),
+            2 => {
+                s.reserves[0].minimum.pop();
+            }
+            3 => s.reserves[0].basis = " ".into(),
+            _ => s.reserves[0].source_reference = " ".into(),
+        }
+        assert!(preview(d.clone(), i).is_err());
+    }
+}
+#[test]
+fn continuation_cannot_remove_or_reduce_approved_reserves() {
+    let (d, b, _, r) = joint_fixture();
+    let before = preview(d, b).unwrap();
+    for mode in 0..3 {
+        let mut i = r.clone();
+        let s = i.services.as_mut().unwrap();
+        match mode {
+            0 => s.reserves.clear(),
+            1 => s.reserves[0].minimum.fill(0),
+            _ => s.reserves[0].source_reference = "replacement".into(),
+        }
+        assert!(preview_continuation(before.clone(), i).is_err());
+    }
+}
+#[test]
+fn simultaneous_moves_preserve_original_quantities_when_sources_overlap_targets() {
+    use qazna::service_feedback::*;
+    let (_, mut i) = fixture();
+    // Split one course into two future batches with different quantities.
+    i.boundary = 0;
+    let n = i.plan[0].activities[1];
+    let first = n / 3;
+    let second = n - first;
+    let lag = i.model.seasonal.physical.processes[1].lead_periods;
+    let p = i.model.seasonal.physical.processes[1].clone();
+    i.plan[0].activities[1] = first;
+    i.plan[1].activities[1] = second;
+    for t in 0..i.plan.len() {
+        for k in 0..i.plan[t].closing.len() {
+            if t == 0 {
+                i.plan[t].closing[k] += second * p.inputs[k];
+            }
+            if t == lag {
+                i.plan[t].closing[k] -= second * p.outputs[k];
+            }
+        }
+        i.model.seasonal.physical.periods[t].capacities[1] = n;
+    }
+    i.model.replay(&i.plan).unwrap();
+    let moves = [
+        BatchMove {
+            process: 1,
+            start: 0,
+            target: 1,
+        },
+        BatchMove {
+            process: 1,
+            start: 1,
+            target: 2,
+        },
+    ];
+    let a = defer_batches(&i, &moves).unwrap();
+    let b = defer_batches(&i, &[moves[1], moves[0]]).unwrap();
+    assert_eq!(json!(a), json!(b));
+    assert_eq!(a.plan[1].activities[1], first);
+    assert_eq!(a.plan[2].activities[1], second);
+    assert_eq!(a.plan[0].activities[1], 0);
+    assert_eq!(
+        a.plan.last().unwrap().closing,
+        i.plan.last().unwrap().closing
+    );
+    a.model.replay(&a.plan).unwrap();
+}
+#[test]
+fn reserve_capacity_cannot_be_borrowed_from_equipment_or_other_regions() {
+    let (d, b, _, mut r) = joint_fixture();
+    let before = preview(d.clone(), b).unwrap();
+    let e = audit(&d, &r).unwrap();
+    let k = 6;
+    let t = 6;
+    let row = &e.pools[t * 12 + k];
+    let required =
+        row.service_use.parse::<u64>().unwrap() + row.pipeline_use.parse::<u64>().unwrap();
+    let s = r.services.as_mut().unwrap();
+    let change = AvailabilityChange {
+        pool: s.pools[k].id.clone(),
+        period: t,
+        previous_bps: 10000,
+        available_bps: u16::try_from((required * 10000).div_ceil(row.available.parse().unwrap()))
+            .unwrap(),
+    };
+    s.pools[k].availability_bps[t] = change.available_bps;
+    s.revisions[0].changes.push(change);
+    let evidence = audit(&d, &r).unwrap();
+    assert!(evidence.pools.iter().all(|p| p.shortage == "0"));
+    assert!(
+        evidence
+            .reserves
+            .iter()
+            .any(|p| p.pool == "south_care_staff" && p.shortfall != "0")
+    );
+    assert!(preview_continuation(before, r).is_err());
+}
+
+#[test]
+fn joint_batches_compete_for_the_same_reserved_mentor_pool() {
+    use qazna::service_feedback::{BatchMove, defer_batches};
+    let (d, mut i) = fixture();
+    i.boundary = 0;
+    for period in &mut i.model.seasonal.physical.periods {
+        for process in [1, 2] {
+            period.capacities[process] = i.plan[0].activities[process];
+        }
+    }
+    i.services.as_mut().unwrap().pools[0].process_load_parameters[2] = "course_work".into();
+    let t = 6;
+    let original = audit(&d, &i).unwrap();
+    let row = &original.pools[t * 12];
+    let free = row.available.parse::<u64>().unwrap() - row.service_use.parse::<u64>().unwrap();
+    let a = u64::try_from(i.plan[0].activities[1]).unwrap() * 120;
+    let b = u64::try_from(i.plan[0].activities[2]).unwrap() * 120;
+    let mut floor = vec![0; 60];
+    floor[t] = free.checked_sub(a.max(b)).unwrap();
+    let s = i.services.as_mut().unwrap();
+    s.reserves.push(PoolReserve {
+        pool: s.pools[0].id.clone(),
+        minimum: floor,
+        basis: "Protect capacity except for one course at a time".into(),
+        source_reference: "test:shared-mentor-reserve".into(),
+    });
+    let moves = [
+        BatchMove {
+            process: 1,
+            start: 0,
+            target: t,
+        },
+        BatchMove {
+            process: 2,
+            start: 0,
+            target: t,
+        },
+    ];
+    for m in moves {
+        let candidate = defer_batches(&i, &[m]).unwrap();
+        let e = audit(&d, &candidate).unwrap();
+        assert_eq!(e.reserves[t].shortfall, "0");
+    }
+    let combined = defer_batches(&i, &moves).unwrap();
+    let e = audit(&d, &combined).unwrap();
+    assert_eq!(e.pools[t * 12].pipeline_use, (a + b).to_string());
+    assert_eq!(e.reserves[t].shortfall, a.min(b).to_string());
+    assert!(!e.all_selected_services_feasible);
+}

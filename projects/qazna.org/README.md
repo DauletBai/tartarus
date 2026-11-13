@@ -76,6 +76,13 @@ revision; conflicting cells require explicit correction. The extended-absence
 experiment rejects all nine tested training dates and exposes a future care gap,
 without changing needs or manufacturing a successful monetary plan.
 
+[Joint repair and protected reserves](docs/architecture.md#joint-service-repair-and-protected-reserves)
+now coordinate up to four unstarted batches while keeping pool-specific staff and
+equipment headroom. A two-region case requires both courses to move; unchanged
+needs, commitments and exact circulation are checked together. Search-budget
+exhaustion is distinguished from failure across all declared dates. Application
+still requires operator review.
+
 ## Project information
 
 | Item | Reference |

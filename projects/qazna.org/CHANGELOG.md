@@ -1,5 +1,14 @@
 # Qazna changelog
 
+## Joint service repair and protected reserves — 13 November 2026
+
+- Coordinate up to four unstarted batches using original quantities and simultaneous stock/activity deltas.
+- Bound search windows and evaluated schedules; distinguish exhaustive failure from budget exhaustion.
+- Enforce attributed per-pool staff/equipment reserve floors in physical evidence and reviewed history.
+- Extend the existing service report to schema 5 with two-region recovery, 240 reserve balances and unchanged-measure circulation.
+- Verify shared-pool competition, overlapping source/target moves, malformed windows, reserve tampering, concurrent approval and populated restart/restore.
+- Preserve all previous report sections, dependencies, migrations and operator/monetary authority.
+
 ## Incident combinations and corrections — 13 November 2026
 
 - Add migration 0017 and operator commands for exact multi-source combinations, replacement and withdrawal.
