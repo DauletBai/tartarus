@@ -1,4 +1,5 @@
 use crate::coupled::{CoupledDefinition, CoupledProposal};
+use crate::incident_revisions::{IncidentCombination, IncidentCorrection};
 use crate::model_scenarios::{MAX_MODEL_REQUEST_BYTES, ModelDefinition, ModelProposal};
 use crate::scenarios::{ScenarioDecision, ScenarioDefinition, ScenarioProposal};
 use crate::service_incidents::{IncidentDeclaration, IncidentPlan, IncidentQuery};
@@ -126,6 +127,14 @@ pub fn router_with_access(ledger: Ledger, tokens: AccessTokens) -> Router {
         .route(
             "/v1/scenarios/models/{id}/incidents",
             post(declare_service_incident).get(service_incidents),
+        )
+        .route(
+            "/v1/scenarios/models/{id}/incidents/combine",
+            post(combine_service_incidents),
+        )
+        .route(
+            "/v1/service-incidents/{id}/correct",
+            post(correct_service_incident),
         )
         .route("/v1/service-incidents/{id}", get(service_incident))
         .route(
@@ -1013,6 +1022,31 @@ async fn link_service_incident_plan(
     Ok(Json(
         ledger
             .link_service_incident_plan(command_key(&headers)?, id, request)
+            .await?,
+    ))
+}
+
+async fn combine_service_incidents(
+    State(ledger): State<Ledger>,
+    Path(id): Path<Uuid>,
+    headers: HeaderMap,
+    Json(request): Json<IncidentCombination>,
+) -> Result<impl IntoResponse, LedgerError> {
+    Ok(Json(
+        ledger
+            .combine_service_incidents(command_key(&headers)?, id, request)
+            .await?,
+    ))
+}
+async fn correct_service_incident(
+    State(ledger): State<Ledger>,
+    Path(id): Path<Uuid>,
+    headers: HeaderMap,
+    Json(request): Json<IncidentCorrection>,
+) -> Result<impl IntoResponse, LedgerError> {
+    Ok(Json(
+        ledger
+            .correct_service_incident(command_key(&headers)?, id, request)
             .await?,
     ))
 }

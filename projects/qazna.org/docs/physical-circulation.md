@@ -2236,3 +2236,46 @@ PostgreSQL and HTTP exercises record declarations, approve the physical repair,
 recompute/review circulation, link the matching versions and preserve both open
 and linked incidents through restart and logical restore. A linked plan records
 reviewed feasibility, not real-world delivery or observed recovery.
+
+
+## Interacting declarations and failed recovery — 12 November 2026
+
+The existing `research/service-results.json` is now schema 4. Earlier physical and
+monetary results remain unchanged; `feedback.compound` adds a second absence to
+the same approved baseline. The first declaration affects mentors and equipment
+in periods 4–5. The second leaves mentor availability at 9,867 and 9,885 basis
+points in periods 6 and 7. These coefficients leave current care time available
+but prevent the deferred course from using mentors during those periods.
+
+Two declarations form one exact six-cell revision. All nine permitted course
+start dates, 4 through 12 inclusive, fail full validation. For the candidate
+starting in period 8, the first remaining capacity gap is:
+
+| Northern care pool, period 14 | Minutes |
+| --- | ---: |
+| Available service capacity | 11,011,468,800 |
+| Required care | 11,028,151,892 |
+| Ongoing training load in this period | 0 |
+| Unmet care capacity | 16,683,092 |
+
+The model uses opening-period capital for care. Training started in period 8 has
+a six-period lead and cannot serve people at the opening of period 14. The same
+82,345-slot batch starting in period 6 previously passed. Delaying preparation
+again therefore misses a future need boundary. The finding is specific to the
+bounded search and these capabilities; it does not prove every possible repair
+is impossible. It identifies a reason to examine advance reserve capacity or
+coordinated alternatives, while keeping actual needs fixed.
+
+The report stores every failed date and the period-8 candidate's complete service
+balances. Population exposure, needs, initial physical resources and the committed
+prefix remain unchanged. `money` is null: an infeasible physical proposal does not
+receive a fabricated monetary continuation. The original accounting policy is
+retained, with no added endowment or issue. The earlier successful 400-payment
+case remains reproducible. PostgreSQL tests additionally split its original
+four-cell revision into two declarations, combine them and approve/link the same
+physical repair and settled circulation with preserved source lineage.
+
+This distinguishes two operations: combining evidence may be valid even when no
+acceptable plan exists; approving provision still requires the full independent
+physical and monetary checks. Conflicting declarations must first be explicitly
+corrected or withdrawn, retaining the original evidence and past decisions.

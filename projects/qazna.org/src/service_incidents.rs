@@ -1,5 +1,6 @@
 //! Durable declarations and links to independently reviewed physical/monetary
 //! plans. Neither journal entry nor plan link posts money or certifies recovery.
+use crate::incident_revisions::IncidentDisposition;
 use crate::{
     coupled, coupled_service,
     ledger::{Ledger, LedgerError, Tx, decode, finish},
@@ -36,6 +37,10 @@ pub struct IncidentRecord {
     pub revision: ServiceRevision,
     pub state: String,
     pub plan: Option<IncidentPlan>,
+    #[serde(default, skip_serializing_if = "Option::is_none")]
+    pub disposition: Option<IncidentDisposition>,
+    #[serde(default, skip_serializing_if = "Vec::is_empty")]
+    pub supersedes: Vec<Uuid>,
 }
 #[derive(Default, Deserialize)]
 #[serde(deny_unknown_fields)]
@@ -74,20 +79,7 @@ impl Ledger {
             return Err(invalid());
         }
         let old = c.input.services.as_ref().ok_or_else(invalid)?;
-        let mut next = old.clone();
-        for change in &request.revision.changes {
-            let pool = next
-                .pools
-                .iter_mut()
-                .find(|p| p.id == change.pool)
-                .ok_or_else(invalid)?;
-            *pool
-                .availability_bps
-                .get_mut(change.period)
-                .ok_or_else(invalid)? = change.available_bps;
-        }
-        next.revisions.push(request.revision.clone());
-        next.verify_continuation(old, request.revision.boundary)
+        old.with_revision(request.revision.clone())
             .map_err(|_| invalid())?;
         // Deliberately do not require a feasible physical schedule here.
         let count=sqlx::query("INSERT INTO service_incidents(id,model_id,base_generation,revision) VALUES($1,$2,$3,$4) ON CONFLICT DO NOTHING")
@@ -147,7 +139,7 @@ impl Ledger {
         let incident = record(&mut tx, id).await?;
         coupled_service::lock(&mut tx, request.coupled_id).await?;
         model_scenario_service::lock(&mut tx, incident.model_id).await?;
-        if record(&mut tx, id).await?.plan.is_some() {
+        if record(&mut tx, id).await?.state != "open" {
             return Err(LedgerError::ScenarioClosed);
         }
         let physical = model_scenario_service::snapshot(&mut tx, incident.model_id, None).await?;
@@ -191,8 +183,8 @@ impl Ledger {
         finish(tx, key, &payload, result).await
     }
 }
-async fn record(tx: &mut Tx<'_>, id: Uuid) -> Result<IncidentRecord, LedgerError> {
-    let row=sqlx::query("SELECT i.id,i.sequence,i.model_id,i.base_generation,i.revision,p.model_generation,p.coupled_id,p.coupled_generation,p.basis FROM service_incidents i LEFT JOIN service_incident_plans p ON p.incident_id=i.id WHERE i.id=$1")
+pub(crate) async fn record(tx: &mut Tx<'_>, id: Uuid) -> Result<IncidentRecord, LedgerError> {
+    let row=sqlx::query("SELECT i.id,i.sequence,i.model_id,i.base_generation,i.revision,p.model_generation,p.coupled_id,p.coupled_generation,p.basis,s.kind,s.model_generation AS disposition_generation,s.replacement_id,s.basis AS disposition_basis,ARRAY(SELECT x.incident_id FROM service_incident_supersessions x WHERE x.replacement_id=i.id ORDER BY x.incident_id) AS supersedes FROM service_incidents i LEFT JOIN service_incident_plans p ON p.incident_id=i.id LEFT JOIN service_incident_supersessions s ON s.incident_id=i.id WHERE i.id=$1")
         .bind(id).fetch_optional(&mut **tx).await?.ok_or(LedgerError::ScenarioNotFound)?;
     let generation: Option<i64> = row.try_get("model_generation")?;
     let plan = if let Some(model_generation) = generation {
@@ -205,18 +197,37 @@ async fn record(tx: &mut Tx<'_>, id: Uuid) -> Result<IncidentRecord, LedgerError
     } else {
         None
     };
+    let kind: Option<String> = row.try_get("kind")?;
+    let disposition = kind
+        .map(|kind| -> Result<IncidentDisposition, LedgerError> {
+            Ok(IncidentDisposition {
+                kind,
+                model_generation: row.try_get("disposition_generation")?,
+                replacement_id: row.try_get("replacement_id")?,
+                basis: row.try_get("disposition_basis")?,
+            })
+        })
+        .transpose()?;
+    let state = if let Some(d) = &disposition {
+        if d.replacement_id.is_some() {
+            "superseded"
+        } else {
+            "withdrawn"
+        }
+    } else if plan.is_some() {
+        "plan_linked"
+    } else {
+        "open"
+    };
     Ok(IncidentRecord {
         id: row.try_get("id")?,
         sequence: row.try_get("sequence")?,
         model_id: row.try_get("model_id")?,
         base_generation: row.try_get("base_generation")?,
         revision: decode(row.try_get("revision")?)?,
-        state: if plan.is_some() {
-            "plan_linked"
-        } else {
-            "open"
-        }
-        .into(),
+        state: state.into(),
+        disposition,
+        supersedes: row.try_get("supersedes")?,
         plan,
     })
 }

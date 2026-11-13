@@ -544,3 +544,6 @@ async fn competing_links_and_cross_scope_references_cannot_replace_history() {
         .is_err()
     );
 }
+
+#[path = "incident_revisions.rs"]
+mod revisions;

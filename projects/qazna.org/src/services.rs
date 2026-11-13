@@ -114,6 +114,26 @@ fn add(a: &mut u64, b: u64) -> Result<()> {
     Ok(())
 }
 impl ServicePlan {
+    /// Validate a declaration against this exact base without requiring feasibility.
+    pub fn with_revision(&self, revision: ServiceRevision) -> Result<Self> {
+        let mut next = self.clone();
+        for change in &revision.changes {
+            let pool = next
+                .pools
+                .iter_mut()
+                .find(|p| p.id == change.pool)
+                .ok_or(bad("unknown service pool"))?;
+            *pool
+                .availability_bps
+                .get_mut(change.period)
+                .ok_or(bad("service period out of bounds"))? = change.available_bps;
+        }
+        let boundary = revision.boundary;
+        next.revisions.push(revision);
+        next.verify_continuation(self, boundary)?;
+        Ok(next)
+    }
+
     /// Only availability after the rolling boundary may change. Norms, need and
     /// service schedules remain fixed; physical work is checked by RollingCapital.
     pub fn verify_continuation(&self, old: &Self, boundary: usize) -> Result<()> {

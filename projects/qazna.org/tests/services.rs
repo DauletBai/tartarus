@@ -623,3 +623,118 @@ fn repaired_service_circulation_conserves_measure_and_moves_only_development_inp
         v["feedback"]["circulation"]["blocked_failures"]
     );
 }
+
+#[test]
+fn incident_union_is_order_independent_and_preserves_exact_cells() {
+    use qazna::service_feedback::combine_service_revisions;
+    let (_, baseline, observed, _) = feedback_fixture();
+    let base = baseline.services.as_ref().unwrap();
+    let all = observed.services.as_ref().unwrap().revisions[0].clone();
+    let mut a = all.clone();
+    a.changes.truncate(2);
+    let mut b = all.clone();
+    b.changes.drain(..2);
+    let merge = |r: &[ServiceRevision]| {
+        combine_service_revisions(base, r, "Combine".into(), "test:union".into()).unwrap()
+    };
+    let x = merge(&[a.clone(), b.clone()]);
+    assert_eq!(x.changes, all.changes);
+    assert_eq!(x, merge(&[b.clone(), a.clone()]));
+    assert_eq!(x, merge(&[a.clone(), b, a]));
+    assert!(base.revisions.is_empty());
+    assert_eq!(
+        base.with_revision(x).unwrap().pools,
+        observed.services.as_ref().unwrap().pools
+    );
+}
+#[test]
+fn incident_union_rejects_conflict_and_unexplained_or_historical_cells() {
+    use qazna::service_feedback::combine_service_revisions;
+    let (_, baseline, observed, _) = feedback_fixture();
+    let base = baseline.services.as_ref().unwrap();
+    let a = observed.services.as_ref().unwrap().revisions[0].clone();
+    let merge = |r: &[ServiceRevision]| {
+        combine_service_revisions(base, r, "Combine".into(), "test:union".into())
+    };
+    let mut b = a.clone();
+    b.changes[0].available_bps -= 1;
+    assert!(merge(&[a.clone(), b]).is_err());
+    let mut b = a.clone();
+    b.boundary = 5;
+    assert!(merge(&[a.clone(), b]).is_err());
+    let mut b = a.clone();
+    b.changes[0].previous_bps = 0;
+    assert!(merge(&[a.clone(), b]).is_err());
+    let mut b = a.clone();
+    b.changes.clear();
+    assert!(merge(&[a.clone(), b]).is_err());
+    assert!(merge(&[]).is_err());
+    assert!(merge(std::slice::from_ref(&a)).is_err());
+    assert!(merge(&vec![a; 17]).is_err());
+}
+#[test]
+fn compounded_absence_preserves_need_and_reports_failed_repair_without_money() {
+    use qazna::service_feedback::{combine_service_revisions, defer_batch, repair_service_batch};
+    let v: Value = serde_json::from_str(include_str!("../research/service-results.json")).unwrap();
+    let c = &v["feedback"]["compound"];
+    let (d, baseline, _, _) = feedback_fixture();
+    let declarations: Vec<ServiceRevision> =
+        serde_json::from_value(c["declarations"].clone()).unwrap();
+    let stored: ServiceRevision = serde_json::from_value(c["revision"].clone()).unwrap();
+    let revision = combine_service_revisions(
+        baseline.services.as_ref().unwrap(),
+        &declarations,
+        stored.basis.clone(),
+        stored.source_reference.clone(),
+    )
+    .unwrap();
+    assert_eq!(revision, stored);
+    let before = preview(d.clone(), baseline.clone()).unwrap();
+    let mut input = baseline.clone();
+    input.boundary = 4;
+    input.services = Some(
+        baseline
+            .services
+            .as_ref()
+            .unwrap()
+            .with_revision(revision)
+            .unwrap(),
+    );
+    let repair = repair_service_batch(&before, &input, 1, 4, 12).unwrap();
+    assert_eq!(json!(repair), c["repair"]);
+    assert_eq!(repair.attempts.len(), 9);
+    assert!(repair.attempts.iter().all(|a| a.rejection.is_some()));
+    assert!(repair.input.is_none());
+    let candidate = defer_batch(&input, 1, 4, 8).unwrap();
+    assert!(preview_continuation(before.clone(), candidate.clone()).is_err());
+    assert_eq!(json!(&candidate.plan[..4]), json!(&baseline.plan[..4]));
+    assert_eq!(
+        candidate.model.seasonal.physical.initial,
+        baseline.model.seasonal.physical.initial
+    );
+    let population = candidate
+        .population
+        .as_ref()
+        .unwrap()
+        .audit(&d, &candidate.model, &candidate.plan)
+        .unwrap();
+    let checkpoint: ModelCheckpoint =
+        serde_json::from_str(before.checkpoint.as_ref().unwrap()).unwrap();
+    assert_eq!(
+        json!(population),
+        json!(checkpoint.population.as_ref().unwrap())
+    );
+    let evidence = candidate
+        .services
+        .as_ref()
+        .unwrap()
+        .audit(&d, &candidate.model, &candidate.plan, &population)
+        .unwrap();
+    assert_eq!(json!(evidence), c["service_evidence"]);
+    assert!(!evidence.all_selected_services_feasible);
+    assert!(c["money"].is_null());
+    assert_eq!(
+        c["policy_unchanged"],
+        v["feedback"]["circulation"]["policy"]
+    );
+}

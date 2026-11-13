@@ -123,3 +123,59 @@ pub fn repair_service_batch(
     }
     Ok(result)
 }
+
+/// Combine 2..16 declarations from the same base and boundary. Equal overlapping
+/// cells are deduplicated; conflicting values require an explicit correction.
+/// No summing percentages, choosing a minimum or silently preferring a source.
+pub fn combine_service_revisions(
+    base: &crate::services::ServicePlan,
+    revisions: &[crate::services::ServiceRevision],
+    basis: String,
+    source_reference: String,
+) -> Result<crate::services::ServiceRevision, LedgerError> {
+    use crate::services::{AvailabilityChange, ServiceRevision};
+    use std::collections::BTreeMap;
+    let bad = || LedgerError::Invalid("incompatible or oversized service incident combination");
+    if !(2..=16).contains(&revisions.len()) {
+        return Err(bad());
+    }
+    let boundary = revisions[0].boundary;
+    let mut cells = BTreeMap::new();
+    for revision in revisions {
+        if revision.boundary != boundary || revision.changes.is_empty() {
+            return Err(bad());
+        }
+        base.with_revision(revision.clone()).map_err(|_| bad())?;
+        for change in &revision.changes {
+            let key = (change.pool.clone(), change.period);
+            if cells
+                .insert(key, change.clone())
+                .is_some_and(|old| old != *change)
+            {
+                return Err(bad());
+            }
+        }
+    }
+    if cells.len() > 128 {
+        return Err(bad());
+    }
+    let mut changes: Vec<AvailabilityChange> = Vec::with_capacity(cells.len());
+    for pool in &base.pools {
+        for period in 0..pool.availability_bps.len() {
+            if let Some(change) = cells.remove(&(pool.id.clone(), period)) {
+                changes.push(change);
+            }
+        }
+    }
+    if !cells.is_empty() {
+        return Err(bad());
+    }
+    let combined = ServiceRevision {
+        boundary,
+        basis,
+        source_reference,
+        changes,
+    };
+    base.with_revision(combined.clone()).map_err(|_| bad())?;
+    Ok(combined)
+}

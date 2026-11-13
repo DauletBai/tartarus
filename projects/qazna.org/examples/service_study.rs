@@ -103,6 +103,73 @@ fn circulation(before: &ModelVersion, after: &ModelVersion) -> Value {
         "blocked_event":blocked,"blocked_failures":failed.failed,
         "all_scheduled_payments_settled":true,"resident_zero_each_period":true})
 }
+fn compounded(before: &ModelVersion, observed: &ModelInput, policy: &Value) -> Value {
+    use qazna::service_feedback::combine_service_revisions;
+    let c: ModelCheckpoint = serde_json::from_str(before.checkpoint.as_ref().unwrap()).unwrap();
+    let base = c.input.services.as_ref().unwrap();
+    let first = observed.services.as_ref().unwrap().revisions[0].clone();
+    let prior_repair = repair_service_batch(before, observed, 1, 4, 12).unwrap();
+    let prior = preview_continuation(before.clone(), prior_repair.input.unwrap()).unwrap();
+    let prior: ModelCheckpoint = serde_json::from_str(prior.checkpoint.as_ref().unwrap()).unwrap();
+    let mut second = ServiceRevision {
+        boundary: 4,
+        basis: "Absence extends into periods six and seven".into(),
+        source_reference: "qazna:service-feedback:extended-absence:v1".into(),
+        changes: vec![],
+    };
+    for t in [6, 7] {
+        let e = &prior.services.as_ref().unwrap().pools[t * base.pools.len()];
+        let full: u64 = e.available.parse().unwrap();
+        let used: u64 = e.service_use.parse().unwrap();
+        second.changes.push(AvailabilityChange {
+            pool: base.pools[0].id.clone(),
+            period: t,
+            previous_bps: base.pools[0].availability_bps[t],
+            available_bps: u16::try_from((used * 10000).div_ceil(full)).unwrap(),
+        });
+    }
+    let id = uuid::Uuid::from_u128(0x5132);
+    let revision = combine_service_revisions(
+        base,
+        &[first.clone(), second.clone()],
+        "Combined mentor and equipment absence".into(),
+        format!("qazna:incident-combination:{id}"),
+    )
+    .unwrap();
+    let mut input = c.input.clone();
+    input.boundary = 4;
+    input.services = Some(base.with_revision(revision.clone()).unwrap());
+    let result = repair_service_batch(before, &input, 1, 4, 12).unwrap();
+    assert!(result.input.is_none());
+    let candidate = defer_batch(&input, 1, 4, 8).unwrap();
+    let population = candidate
+        .population
+        .as_ref()
+        .unwrap()
+        .audit(&before.definition, &candidate.model, &candidate.plan)
+        .unwrap();
+    let evidence = candidate
+        .services
+        .as_ref()
+        .unwrap()
+        .audit(
+            &before.definition,
+            &candidate.model,
+            &candidate.plan,
+            &population,
+        )
+        .unwrap();
+    assert!(!evidence.all_selected_services_feasible);
+    assert_eq!(json!(c.population.as_ref().unwrap()), json!(population));
+    assert_eq!(json!(&c.input.plan[..4]), json!(&candidate.plan[..4]));
+    // Keep physical rejection explicit; no monetary continuation is fabricated.
+    json!({"combination_id":id,"declarations":[first,second],"revision":revision,
+        "repair":result,"examined_start":8,"service_evidence":evidence,
+        "money":null,"policy_unchanged":policy,
+        "policy_reference":"feedback.circulation.policy",
+        "outcome":"No feasible single-batch deferral in periods 4 through 12"})
+}
+
 fn feedback(definition: &ModelDefinition, input: &ModelInput) -> Value {
     // The baseline reserves current capacity and schedules northern staff training
     // in period four. Other development has already started at the revision boundary.
@@ -184,7 +251,8 @@ fn feedback(definition: &ModelDefinition, input: &ModelInput) -> Value {
     let failed = repair_service_batch(&before, &unavailable, 1, 4, 12).unwrap();
     assert!(failed.input.is_none());
     let circulation = circulation(&before, &after);
-    json!({"circulation":circulation,"baseline_input":baseline, "observed_input":observed,
+    let compound = compounded(&before, &observed, &circulation["policy"]);
+    json!({"compound":compound,"circulation":circulation,"baseline_input":baseline, "observed_input":observed,
         "repair":repair, "service_evidence":checkpoint.services,
         "preserved_boundary":checkpoint.rolling,
         "initial_shortages":shortage.pools.into_iter().filter(|r|r.shortage!="0").collect::<Vec<_>>(),
@@ -570,7 +638,7 @@ fn main() {
         .to_string();
     let summary:Vec<_>=input.services.as_ref().unwrap().pools.iter().enumerate().map(|(i,p)|json!({"pool":p.id,"initial_slots":initial[i],"new_slots":growth[i],"completion_period":lags[i],"first_usable_period":lags[i]+1})).collect();
     let feedback = feedback(&definition, &input);
-    let output = json!({"schema_version":3,"feedback":feedback,"assumptions":"docs/input-assumptions.md#care-and-education-capacity","runtime_fixture":{"definition":definition,"input":input,"population_evidence":checkpoint.population,"service_evidence":checkpoint.services},"capacity_summary":summary,"outage_counterexample":{"gaps":outage.pools.into_iter().filter(|p|p.shortage!="0").collect::<Vec<_>>(),"runtime_rejection":rejection}});
+    let output = json!({"schema_version":4,"feedback":feedback,"assumptions":"docs/input-assumptions.md#care-and-education-capacity","runtime_fixture":{"definition":definition,"input":input,"population_evidence":checkpoint.population,"service_evidence":checkpoint.services},"capacity_summary":summary,"outage_counterexample":{"gaps":outage.pools.into_iter().filter(|p|p.shortage!="0").collect::<Vec<_>>(),"runtime_rejection":rejection}});
     fs::write(&args[1], serde_json::to_vec_pretty(&output).unwrap()).unwrap();
     println!(
         "Verified regional care/education, shared development workload, operating resources and delayed capacity"
