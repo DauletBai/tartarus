@@ -1,6 +1,6 @@
 # Completion roadmap and feasibility boundaries
 
-Latest review: 13 November 2026, coordinated unstarted-batch repair and protected service reserves.
+Latest review: 18 November 2026, incident-bound emergency reserve use and recovery.
 The current work order below supersedes earlier milestone-specific next steps.
 
 ## Completion scope and remaining work — 12 November 2026
@@ -37,12 +37,19 @@ future care gap. This closes the bounded incident-combination/correction gate.
 Coordinated repair now searches up to four unstarted batches with fixed staff and
 equipment reserve floors. A two-region case succeeds only when both courses move;
 physical/monetary prefixes remain fixed and reviewed versions survive restoration.
-This closes the bounded multi-batch/protected-headroom gate. Next integration gate:
-explicit emergency reserve-release proposals tied to incident evidence, with
-unchanged human needs and independent approval; quantify residual shortages and
-recovery/replenishment obligations without adding stock or issuance. Repeatable
-terminal circulation and upstream service replenishment remain open; package 3
-calibration and package 4 are not complete. The effort range below remains a planning estimate, not a new deadline.
+This closes the bounded multi-batch/protected-headroom gate. Emergency releases
+now attach exact pool/period draws and recovery deadlines to open incidents, with
+operator approval and unchanged need. Four reserve pools cover a two-period
+shortfall without changing work or physical flows; full headroom is restored at
+the declared deadline. Real service shortages and missed recovery still fail.
+
+Next integration gate: repeatable terminal circulation. Extend the coupled
+physical/payment experiment across repeated cycles with the same norms and finite
+endowments, quantify common-treasury concentration and renewal funding, and make
+any circulation rule explicit before testing it. Do not reset balances, create
+hidden issuance or reduce human provision to force a successful result. Upstream
+service replenishment, package 3 calibration and package 4 remain incomplete.
+The effort range below remains a planning estimate, not a new deadline.
 
 The target for this estimate is **research demonstrator v1**: a reproducible,
 bounded five-year scenario with linked provisioning, physical capabilities and

@@ -2,6 +2,23 @@
 
 The author's direction of 2 November 2026 is to use the living human organism, from cells to organs and their coordination, as an architectural guide. The model aims to sustain human needs and reproduce shared capabilities. Increasing financial profit is not a default objective.
 
+## Conceptual foundation and testable claims
+
+*Tartar and I* supplies the author's connected argument about equal measure,
+human dignity and circulation. Read that context to understand why Qazna starts
+from needs and shared capabilities rather than profit, interest-bearing debt or
+employment-conditioned survival. The project is not an implementation of those
+financial incentives with new terminology.
+
+The engineering task is to test whether the proposed rules sustain provision,
+choice and renewal under finite resources and disruption. Comparative experiments
+must fix needs, endowments, horizon and observation quality, state each policy,
+and publish unmet need, reserve recovery, resource losses and accounting results,
+including failures. A successful bounded case is not proof that every historical
+crisis has one cause or that Qazna prevents every crisis. Agreement with the book
+is not required to reproduce the equations or identify a defect. Reading it aids
+interpretation; independent technical criticism strengthens the research.
+
 ## Mapping the analogy
 
 | Biological analogy | Qazna concept |
@@ -187,3 +204,12 @@ can change our current account of events without erasing the intervention alread
 reviewed. The extended-absence case shows a delayed training course missing future
 care needs: adaptation needs available capabilities and preparation time, not only
 circulation of accounting measure. Human need is never reduced to fit the plan.
+
+## Emergency use of shared spare capacity
+
+A protected reserve is useful only if a reviewed emergency can draw on it. The
+new release record keeps the original floor, identifies the triggering incident,
+limits each pool/period draw, and sets a recovery deadline. Care and education
+needs remain unchanged. No record creates staff time, equipment or money.
+Recovery here means restoring protected free capacity, not repaying a loan or
+storing unused human work. An unresolved shortage remains a failed plan.

@@ -49,6 +49,8 @@ pub struct ServiceRule {
 #[derive(Clone, Debug, Serialize, Deserialize, PartialEq, Eq)]
 #[serde(deny_unknown_fields)]
 pub struct ServicePlan {
+    #[serde(default, skip_serializing_if = "Vec::is_empty")]
+    pub releases: Vec<ReserveRelease>,
     /// Protected free capacity in the pool's own unit; never extra inventory.
     #[serde(default, skip_serializing_if = "Vec::is_empty")]
     pub reserves: Vec<PoolReserve>,
@@ -66,8 +68,42 @@ pub struct PoolReserve {
     pub basis: String,
     pub source_reference: String,
 }
+/// Temporary use of protected headroom; the original reserve floor stays fixed.
+#[derive(Clone, Debug, Serialize, Deserialize, PartialEq, Eq)]
+#[serde(deny_unknown_fields)]
+pub struct ReserveRelease {
+    pub id: uuid::Uuid,
+    pub incident_id: uuid::Uuid,
+    pub revision_index: usize,
+    pub boundary: usize,
+    pub restore_period: usize,
+    pub basis: String,
+    pub source_reference: String,
+    pub cells: Vec<ReserveDraw>,
+}
+#[derive(Clone, Debug, Serialize, Deserialize, PartialEq, Eq)]
+#[serde(deny_unknown_fields)]
+pub struct ReserveDraw {
+    pub pool: String,
+    pub period: usize,
+    pub amount: u64,
+}
+#[derive(Clone, Debug, Serialize, Deserialize)]
+pub struct ReserveRecovery {
+    pub release_id: uuid::Uuid,
+    pub incident_id: uuid::Uuid,
+    pub pool: String,
+    pub period: usize,
+    pub required: String,
+    pub free_capacity: String,
+    pub shortfall: String,
+}
 #[derive(Clone, Debug, Serialize, Deserialize)]
 pub struct ReserveBalance {
+    #[serde(default, skip_serializing_if = "Option::is_none")]
+    pub released: Option<String>,
+    #[serde(default, skip_serializing_if = "Option::is_none")]
+    pub effective_required: Option<String>,
     pub period: usize,
     pub pool: String,
     pub required: String,
@@ -120,6 +156,8 @@ pub struct OperatingBalance {
 #[derive(Clone, Debug, Serialize, Deserialize)]
 pub struct ServiceEvidence {
     #[serde(default, skip_serializing_if = "Vec::is_empty")]
+    pub recoveries: Vec<ReserveRecovery>,
+    #[serde(default, skip_serializing_if = "Vec::is_empty")]
     pub reserves: Vec<ReserveBalance>,
     pub coverage: Vec<ServiceCoverage>,
     pub pools: Vec<PoolBalance>,
@@ -163,6 +201,22 @@ impl ServicePlan {
         }
         let mut normalized = self.clone();
         normalized.revisions = old.revisions.clone();
+        normalized.releases = old.releases.clone();
+        if self.releases != old.releases {
+            if self.releases.len() != old.releases.len() + 1
+                || self.releases[..old.releases.len()] != old.releases
+            {
+                return Err(bad("reserve release history changed"));
+            }
+            let r = self.releases.last().ok_or(bad("missing reserve release"))?;
+            if r.boundary != boundary
+                || r.revision_index != old.revisions.len()
+                || self.revisions.len() != old.revisions.len() + 1
+            {
+                return Err(bad("reserve release requires a new incident revision"));
+            }
+        }
+        self.release_cells()?;
         let mut changes = Vec::new();
         for (next, prior) in normalized.pools.iter_mut().zip(&old.pools) {
             if next.availability_bps.len() != prior.availability_bps.len()
@@ -220,6 +274,59 @@ impl ServicePlan {
             return Err(bad("service revision does not explain exact change"));
         }
         Ok(())
+    }
+    /// Validate the complete immutable release log without assuming current
+    /// physical feasibility. Runtime additionally authenticates journal anchors.
+    fn release_cells(&self) -> Result<BTreeMap<(&str, usize), u64>> {
+        let mut cells = BTreeMap::new();
+        let mut ids = BTreeSet::new();
+        let mut incidents = BTreeSet::new();
+        if self.releases.len() > 128 {
+            return Err(bad("too many reserve releases"));
+        }
+        for r in &self.releases {
+            let revision = self
+                .revisions
+                .get(r.revision_index)
+                .ok_or(bad("unknown release revision"))?;
+            if r.id.is_nil()
+                || r.incident_id.is_nil()
+                || !ids.insert(r.id)
+                || !incidents.insert(r.incident_id)
+                || r.boundary != revision.boundary
+                || r.restore_period <= r.boundary
+                || r.cells.is_empty()
+                || r.cells.len() > 128
+                || r.basis.trim().is_empty()
+                || r.basis.len() > 1000
+                || r.source_reference.trim().is_empty()
+                || r.source_reference.len() > 512
+            {
+                return Err(bad("invalid reserve release identity, window or source"));
+            }
+            for c in &r.cells {
+                let floor = self
+                    .reserves
+                    .iter()
+                    .find(|p| p.pool == c.pool)
+                    .ok_or(bad("release without reserve"))?;
+                if r.restore_period >= floor.minimum.len()
+                    || c.period < r.boundary
+                    || c.period >= r.restore_period
+                    || c.amount == 0
+                    || c.amount > floor.minimum[c.period]
+                    || cells
+                        .insert((c.pool.as_str(), c.period), c.amount)
+                        .is_some()
+                    || !revision.changes.iter().any(|v| {
+                        v.pool == c.pool && v.period == c.period && v.available_bps < v.previous_bps
+                    })
+                {
+                    return Err(bad("invalid or overlapping reserve draw"));
+                }
+            }
+        }
+        Ok(cells)
     }
     fn rate(&self, id: &str, unit: &str) -> Result<Ratio> {
         Ok(self
@@ -318,6 +425,7 @@ impl ServicePlan {
                 return Err(bad("invalid service reserve identity, calendar or source"));
             }
         }
+        let release_cells = self.release_cells()?;
         let mut selected = BTreeSet::new();
         let mut operating_resources = BTreeSet::new();
         let mut used_pools = BTreeSet::new();
@@ -390,6 +498,7 @@ impl ServicePlan {
             return Err(bad("incomplete regional service matrix"));
         }
         let mut evidence = ServiceEvidence {
+            recoveries: vec![],
             reserves: vec![],
             coverage: vec![],
             pools: vec![],
@@ -513,15 +622,41 @@ impl ServicePlan {
                 evidence.all_selected_services_feasible &= shortage == 0;
                 if let Some(floors) = reserve_floors.get(&pool.id) {
                     let free = available.saturating_sub(total);
-                    let shortfall = floors[t].saturating_sub(free);
+                    let released = release_cells
+                        .get(&(pool.id.as_str(), t))
+                        .copied()
+                        .unwrap_or(0);
+                    let effective = floors[t] - released;
+                    let shortfall = effective.saturating_sub(free);
                     evidence.all_selected_services_feasible &= shortfall == 0;
                     evidence.reserves.push(ReserveBalance {
+                        released: (released > 0).then(|| released.to_string()),
+                        effective_required: (released > 0).then(|| effective.to_string()),
                         period: t,
                         pool: pool.id.clone(),
                         required: floors[t].to_string(),
                         free_capacity: free.to_string(),
                         shortfall: shortfall.to_string(),
                     });
+                }
+                for release in &self.releases {
+                    if release.restore_period == t
+                        && release.cells.iter().any(|c| c.pool == pool.id)
+                    {
+                        let required = reserve_floors[&pool.id][t];
+                        let free = available.saturating_sub(total);
+                        let shortfall = required.saturating_sub(free);
+                        evidence.all_selected_services_feasible &= shortfall == 0;
+                        evidence.recoveries.push(ReserveRecovery {
+                            release_id: release.id,
+                            incident_id: release.incident_id,
+                            pool: pool.id.clone(),
+                            period: t,
+                            required: required.to_string(),
+                            free_capacity: free.to_string(),
+                            shortfall: shortfall.to_string(),
+                        });
+                    }
                 }
                 evidence.pools.push(PoolBalance {
                     period: t,

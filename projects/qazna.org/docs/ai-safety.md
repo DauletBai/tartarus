@@ -186,3 +186,13 @@ is reported separately from exhausting the declared search space. Reserve eviden
 is a numerical capacity margin, not independent evidence of available personnel,
 equipment condition or consent to an assignment. Emergency reserve release is not
 implemented by this search.
+
+
+Emergency reserve use is an operator-reviewed physical-plan exception. AI prose
+cannot waive a reserve: the exact cells, source revision, durable incident and
+recovery deadline pass deterministic checks at proposal and again at application.
+No model call, new emission authority or automatic purchase is introduced.
+Withdrawal races are serialized on the model lock; already applied history is
+retained. These controls validate declared evidence consistency, not the truth
+of reported availability. Sensor/attestor verification and separate institutional
+approval roles for reserve use remain future work.
