@@ -817,3 +817,13 @@ the whole physical plan. It makes no live postings or real resource assignments.
 Discarding a draft is not release approval. No migration or additional database
 privilege is required. Empty new fields are omitted, preserving old checkpoint
 bytes. Database-owner access remains a separate trust boundary.
+
+## Cycle continuity research boundary
+
+The pure Rust `recurrence` module extends an already validated physical candidate
+on absolute dates and replays re-derived coupled payments with carried account
+balances. It reports physical deficits separately from payment failure. An opt-in
+offline renewal rule transfers existing treasury measure to exact next-cycle
+prefix deficits, records every transfer and stops before an unfunded renewal.
+It never posts to PostgreSQL. See [cycle continuity](physical-circulation.md#repeating-production-cycles-without-resets--18-november-2026)
+for formulas, counterexamples and the remaining continuous-production gate.

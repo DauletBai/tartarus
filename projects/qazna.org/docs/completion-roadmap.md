@@ -1,6 +1,6 @@
 # Completion roadmap and feasibility boundaries
 
-Latest review: 18 November 2026, incident-bound emergency reserve use and recovery.
+Latest review: 18 November 2026, repeated-cycle continuity diagnostics.
 The current work order below supersedes earlier milestone-specific next steps.
 
 ## Completion scope and remaining work — 12 November 2026
@@ -43,12 +43,18 @@ operator approval and unchanged need. Four reserve pools cover a two-period
 shortfall without changing work or physical flows; full headroom is restored at
 the declared deadline. Real service shortages and missed recovery still fail.
 
-Next integration gate: repeatable terminal circulation. Extend the coupled
-physical/payment experiment across repeated cycles with the same norms and finite
-endowments, quantify common-treasury concentration and renewal funding, and make
-any circulation rule explicit before testing it. Do not reset balances, create
-hidden issuance or reduce human provision to force a successful result. Upstream
-service replenishment, package 3 calibration and package 4 remain incomplete.
+The repeated-cycle diagnostic gate now carries stocks and account balances without
+reset. The 60-month candidate passes but direct extension fails at month 60 on
+energy. Without explicit renewal its second monetary cycle also stalls; treasury
+renewal from existing measure sustains the ordered monetary pattern for three
+cycles, while leaving the physical failure visible. Partial-share concentration
+remains a separate failing test. See physical-circulation.md for exact results.
+
+Next integration gate: continuous production across the horizon boundary, with
+committed generation, original finite deposits, food ages and capital replacement.
+Recalculate circulation from a physically accepted extension, then persist reviewed
+renewal funding with stale-state and history checks. Package 3 calibration and
+package 4 remain incomplete; this diagnostic is not an indefinite viability proof.
 The effort range below remains a planning estimate, not a new deadline.
 
 The target for this estimate is **research demonstrator v1**: a reproducible,
@@ -64,7 +70,7 @@ national sectors or a production monetary system.
 | 1. Persistent physical scenario foundation — implemented | Dated and capital/seasonal inputs, reviewed versions, pinned selected stocks and restart/restore; monetary association continues in package 2 | — |
 | 2. Join extended physical and monetary plans — implemented for selected candidate | 60-month runtime fixture, origin-preserving food, upstream production, finite capital/recovery and exact payments; independent balances and rejection of infeasible capacity changes. Efficiency, deficit quantification and repeatable policy continue in package 4 | — |
 | 3. Input and population registry — bounded foundation implemented | Exact monthly cohorts, registry metadata, unknown needs and reviewed binding implemented. Regional/life-stage needs, shared service capacity and local-shortage gates implemented. Remaining: source calibration, lifecycle transitions, regional routes and engineering coefficients | 6–10 |
-| 4. Close the rolling feedback experiment — bounded service repair implemented | Exact revisions, single/joint-batch repair, protected service reserves, durable incident lineage and matching reviewed circulation implemented; emergency release/replenishment and repeatability remain. Decisions use observed state, retain commitments, replan after declared outages/demand changes, report shortages without inventing goods, and pass sensitivity/adversarial cases; optional solver outputs independently verified | 4–7 |
+| 4. Close the rolling feedback experiment — bounded service repair implemented | Exact revisions, single/joint-batch repair, protected service reserves, durable incident lineage and matching reviewed circulation implemented; emergency release/recovery is implemented; continuous production and durable renewal remain. Decisions use observed state, retain commitments, replan after declared outages/demand changes, report shortages without inventing goods, and pass sensitivity/adversarial cases; optional solver outputs independently verified | 4–7 |
 | 5. Expose the demonstrator's workflows | Small operator/reviewer interface, synthetic participant scope, intelligible reasons, correction/dispute examples, approval and audit history, accessible navigation; no claim of production identity/enrollment | 7–12 |
 | 6. Freeze and reproduce a release | Clean deployment, recorded workload envelope, sustained/restart/restore and fault exercises, dependency/privilege review, versioned evidence and known limitations, release guide and runnable demonstration | 4–6 |
 

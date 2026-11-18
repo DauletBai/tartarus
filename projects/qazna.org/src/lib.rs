@@ -55,3 +55,5 @@ pub mod services;
 pub mod service_incidents;
 
 pub mod incident_revisions;
+
+pub mod recurrence;

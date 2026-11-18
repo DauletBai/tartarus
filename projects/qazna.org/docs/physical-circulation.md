@@ -2347,3 +2347,87 @@ This case verifies controlled use of **free capability**, not warehouse stock
 withdrawal or optimal emergency policy. Availability observations, suitable floor
 sizes and credible recovery paths still require calibration. Historical reports
 and earlier failed candidates are preserved in the same maintained report.
+
+## Repeating production cycles without resets — 18 November 2026
+
+`recurrence.rs` tests the next cycle using the preceding closing state. The
+maintained `extended-scenario.json` now includes `reference.recurrence`; reproduce
+it with the existing `extended_scenario` example. Original report sections remain.
+No runtime command, migration, issuance right or automatic disbursement is added.
+
+There are two deliberately separate questions:
+
+1. Can the physical schedule repeat? The 60-month activities, declared external
+   flows and needs are extended to 120/180 absolute months. Initial endowments
+   occur once. Stocks accumulate, initial equipment ages once, replacement cohorts
+   retain their actual expiry, and food-route and constituent checks cover the
+   full candidate. Training intake and other supplied flows remain explicit
+   boundaries, not independently established inexhaustible sources.
+2. Can its ordered monetary pattern repeat? Every account carries its preceding
+   balance. Original events are independently re-derived from the saved physical
+   model before use. Execution stops at the first unfunded event. A successful
+   payment pattern is conditional on feasible production; it cannot repair a
+   failed physical schedule.
+
+The original 60-month candidate passes. Mechanical repetition fails: at absolute
+month 60 its energy balance lacks **30,000,000,000 energy ticks**. The closing
+energy balance is zero while initial energy was used as a starting endowment.
+The existing model represents next-period generation, not an electricity battery;
+restarting with the initial energy figure would invent supply. The same boundary also lacks 600 robot-cell kits and 600 voluntary training
+places; these are not automatically restored. The unchanged obligations first
+exceed remaining packaging ore at month 62 and fuel deposit at month 93. These
+resource deficits later in an already-infeasible candidate are retained as algebraic diagnostics,
+not presented as executed production. Original asset expiry and food ageing can
+also independently invalidate a repeat. `candidate_cycle_balances` explicitly
+names this diagnostic status.
+
+The monetary pattern starts with **1,559,457,628,979 accounting ticks**. Its first
+5,740 events settle, leaving the measure in the common treasury. Without an
+explicit renewal rule the second cycle stops at its event 9 (period 0, both
+zero-based): some productive accounts have no working measure. Aggregate money
+has not disappeared; its location prevents the ordered payments.
+
+### Explicit renewal candidate
+
+For the fixed next-cycle schedule, let `F_i` be account i's exact minimum prefix
+funding and `B_i` its carried balance. Treasury is account 0.
+
+```text
+D_i = max(F_i - B_i, 0), i > 0
+Require B_0 >= F_0 + sum_i D_i
+B'_0 = B_0 - sum_i D_i
+B'_i = B_i + D_i
+sum_i B'_i = sum_i B_i = M_initial
+```
+
+This is a declared common-unit operating allocation from existing treasury
+measure. It is not a loan, interest, a levy, an unexplained account reset or a
+new emission. Existing surplus is preserved. Every renewal transfer records its
+cycle, source, recipient and exact amount. Insufficient treasury funding blocks
+renewal atomically. The rule is an offline policy candidate, not authorization to
+apply transfers to people or organisations.
+
+With the extended fixture's existing full-common-share norms, three monetary
+cycles settle **17,220 original events**, with unchanged total measure. Two renewal
+boundaries circulate **3,113,265,947,868 ticks** in total; this is cumulative
+turnover of existing measure, not additional money. Goods-event turnover is
+reported separately from these renewal transfers. This result does **not** certify
+three physical cycles: the energy/deposit/capital counterexamples still stand.
+
+A separate partial-common-share fixture fails renewal after 49 completed cycles:
+retained unit balances keep growing and treasury cannot finance the next prefix.
+The failure remains in tests. Treasury renewal alone is therefore not a universal
+stability theorem. Conversely, a small physical fixture renews equipment and
+retains food stock for five cycles, then exhausts its one-time material endowment
+at absolute period 10. Resetting the fixture between cycles falsely makes six
+independent runs pass.
+
+### Next boundary
+
+Replace the closed-horizon startup pattern with a continuous production plan:
+commit generation and other lead-time work across the boundary, preserve dated
+food and capital states, reduce unnecessary material processing/disposal and
+respect finite deposits. Recalculate money from that accepted physical extension;
+then persist operator-reviewed renewal allocations with prefix/history and stale
+state checks. Until then this gate is a verified diagnostic and explicit funding
+candidate, not a completed indefinitely self-renewing economy.

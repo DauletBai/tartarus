@@ -1,5 +1,12 @@
 # Qazna changelog
 
+## Repeated-cycle continuity — 18 November 2026
+
+- Carry stocks, original asset ages and monetary balances across repeated cycles; never restore initial endowments at a boundary.
+- Re-derive monetary evidence, record explicit treasury-funded renewal and reject unfunded continuation without issuance.
+- Retain full-graph energy startup failure and partial-share treasury depletion as counterexamples.
+- Add seven independent/adversarial tests and recurrence results to the existing extended fixture; no runtime policy, migration or dependency change.
+
 ## Incident-bound emergency reserves — 18 November 2026
 
 - Add bounded immutable reserve-release records with exact per-pool/period draws and full-floor recovery deadlines.

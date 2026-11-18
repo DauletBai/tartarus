@@ -214,7 +214,14 @@ fn main() {
     assert!(c.evidence.all_scheduled_payments_settled && c.evidence.resident_zero_each_period);
     let money = json!({"links":c.evidence.links.len(),"events":c.evidence.events.len(),"opening":c.evidence.money.opening_total,
         "closing":c.evidence.money.closing,"settled_volume":c.evidence.money.settled_volume,"bound":c.evidence.bound});
-    let result = json!({"definition":definition,"input":input,"policy":policy,"reference":{"source":"research/coupled-results.json#/upstream_capital/cases/1","mass":mass,"food":dated,"money":money,"limitations":["synthetic aggregate quantities and fixed food routes","common resource/capacity constraints, no measured national calibration","no physical receipt attestation or live monetary operation","money failure does not automatically rewrite production","18-month storage life is an assumption"]}});
+    let recurrence = json!({
+        "format_version":1,
+        "physical":([1,2,3].into_iter().map(|n| qazna::recurrence::repeat_physical(&input,n).unwrap()).collect::<Vec<_>>()),
+        "money_without_renewal":qazna::recurrence::repeat_cash(&check,3,false).unwrap(),
+        "money_with_explicit_treasury_renewal":qazna::recurrence::repeat_cash(&check,3,true).unwrap(),
+        "limits":"Repeated money is a conditional pattern test, not evidence of repeated physical provision. Renewal uses existing treasury balances and fixed next-cycle prefix floors; no live authority. Repeated external flows remain declared boundaries."
+    });
+    let result = json!({"definition":definition,"input":input,"policy":policy,"reference":{"recurrence":recurrence,"source":"research/coupled-results.json#/upstream_capital/cases/1","mass":mass,"food":dated,"money":money,"limitations":["synthetic aggregate quantities and fixed food routes","common resource/capacity constraints, no measured national calibration","no physical receipt attestation or live monetary operation","money failure does not automatically rewrite production","18-month storage life is an assumption"]}});
     let output = env::args().nth(1).expect("output path");
     fs::write(output, serde_json::to_vec_pretty(&result).unwrap()).unwrap();
     println!(
