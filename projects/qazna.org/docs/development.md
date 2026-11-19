@@ -1148,3 +1148,5 @@ two approvals, retries the winning command, changes the physical head and
 replays a later outage. HTTP restart and PostgreSQL dump/restore verify the
 accepted version and the original idempotent response. The extended study
 also compares grants and closing accounts with an independent suffix replay.
+
+The extended scenario generator reads the population input fixture for its January targets. The byte-for-byte check includes pending December shipments, a one-kilogram dispatch shortfall and a fabricated closing stock that must both fail physical replay.

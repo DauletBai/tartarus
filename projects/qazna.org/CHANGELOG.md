@@ -1,5 +1,9 @@
 # Qazna changelog
 
+## January provision from the preceding harvest — 19 November 2026
+
+- Verify sowing, preservation, transport and January receipts against central population demand for two food components; replay the revised monetary schedule with its existing opening balances.
+
 ## Population demand and supply deadlines — 19 November 2026
 
 - Quantify additional physical arrivals under fixed production and check for deadlines that remain impossible under any admissible production timing. Compare 18 commodity and demand combinations over the five-year plan.
