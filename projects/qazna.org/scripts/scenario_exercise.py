@@ -79,6 +79,7 @@ def populate_and_restart(url):
         profile_reference = populate_population(call, "need-profile-results.json")
         service_reference = populate_population(call, "service-results.json")
         feedback_reference = populate_service_feedback(call)
+        joint_reference = populate_service_feedback(call, "joint")
         incident_reference = populate_service_incidents(call)
     with server(url) as call:
         assert call(model_reference['path']) == model_reference['saved']
@@ -95,10 +96,12 @@ def populate_and_restart(url):
         assert call(service_reference['draft_path']) == service_reference['pending']
         assert call(feedback_reference['path']) == feedback_reference['saved']
         assert call(feedback_reference['draft_path']) == feedback_reference['pending']
+        assert call(joint_reference['path']) == joint_reference['saved']
+        assert call(joint_reference['draft_path']) == joint_reference['pending']
         verify_service_incidents(call, incident_reference)
     print('Physical model: full accepted and pending state survives process restart', flush=True)
     print('Dated scenario: 2 process restarts, pending and approved bytes preserved', flush=True)
-    return dict(path=path, saved=saved, pending=next_draft, model=model_reference, coupled=coupled_reference, extended=extended_reference, population=population_reference, profiles=profile_reference, services=service_reference, service_feedback=feedback_reference, incidents=incident_reference)
+    return dict(path=path, saved=saved, pending=next_draft, model=model_reference, coupled=coupled_reference, extended=extended_reference, population=population_reference, profiles=profile_reference, services=service_reference, service_feedback=feedback_reference, joint_feedback=joint_reference, incidents=incident_reference)
 
 
 def resume_restored(url, reference):
@@ -126,6 +129,7 @@ def resume_restored(url, reference):
         resume_population(call, reference['profiles'])
         resume_population(call, reference['services'])
         resume_service_feedback(call, reference['service_feedback'])
+        resume_service_feedback(call, reference['joint_feedback'])
         verify_service_incidents(call, reference['incidents'])
         continue_service_incidents(call, reference['incidents'])
         print('Open incidents and linked reviewed plans survive logical restore', flush=True)
@@ -335,11 +339,11 @@ def resume_population(call, reference):
     print('Population registry: sources, exact cohorts, unknown needs and pending continuation survive restart/restore', flush=True)
 
 
-def populate_service_feedback(call):
+def populate_service_feedback(call, section="feedback"):
     report = json.loads((ROOT / 'research/service-results.json').read_text())
     definition = report['runtime_fixture']['definition']
     definition['id'] = uid()
-    feedback = report['feedback']
+    feedback = report[section]
     path = '/v1/scenarios/models/' + definition['id']
     call('/v1/scenarios/models', definition)
     draft = call(path + '/drafts', dict(id=uid(), expected_generation=0,
@@ -368,6 +372,8 @@ def resume_service_feedback(call, reference):
     assert len(new['input']['services']['revisions']) == 1
     assert new['rolling']['pending']
     assert new['services']['all_selected_services_feasible']
+    assert old['input']['services'].get('reserves', []) == new['input']['services'].get('reserves', [])
+    assert all(r['shortfall'] == '0' for r in new['services'].get('reserves', []))
     later = copy.deepcopy(new['input'])
     later['boundary'] = 6
     draft = call(reference['path'] + '/drafts', dict(id=uid(), expected_generation=2,

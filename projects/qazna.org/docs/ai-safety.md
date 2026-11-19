@@ -177,3 +177,12 @@ physical and monetary review, even when metadata names a previous approved event
 Failed full-capacity checks do not yield an approved monetary continuation. Role,
 race, idempotency, transaction rollback and restored-runtime tests cover this path;
 no AI call or automatic observation authentication has been added.
+
+Joint repair uses bounded deterministic enumeration without model calls. A model
+or operator may suggest date windows, but every candidate passes the same full
+continuation checks. Reserve floors are part of the approved input and cannot be
+silently reduced to make a suggestion feasible. Exhausting a calculation budget
+is reported separately from exhausting the declared search space. Reserve evidence
+is a numerical capacity margin, not independent evidence of available personnel,
+equipment condition or consent to an assignment. Emergency reserve release is not
+implemented by this search.

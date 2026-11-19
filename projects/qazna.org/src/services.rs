@@ -49,11 +49,30 @@ pub struct ServiceRule {
 #[derive(Clone, Debug, Serialize, Deserialize, PartialEq, Eq)]
 #[serde(deny_unknown_fields)]
 pub struct ServicePlan {
+    /// Protected free capacity in the pool's own unit; never extra inventory.
+    #[serde(default, skip_serializing_if = "Vec::is_empty")]
+    pub reserves: Vec<PoolReserve>,
     #[serde(default, skip_serializing_if = "Vec::is_empty")]
     pub revisions: Vec<ServiceRevision>,
     pub registry: Registry,
     pub pools: Vec<ServicePool>,
     pub rules: Vec<ServiceRule>,
+}
+#[derive(Clone, Debug, Serialize, Deserialize, PartialEq, Eq)]
+#[serde(deny_unknown_fields)]
+pub struct PoolReserve {
+    pub pool: String,
+    pub minimum: Vec<u64>,
+    pub basis: String,
+    pub source_reference: String,
+}
+#[derive(Clone, Debug, Serialize, Deserialize)]
+pub struct ReserveBalance {
+    pub period: usize,
+    pub pool: String,
+    pub required: String,
+    pub free_capacity: String,
+    pub shortfall: String,
 }
 /// One declared change of future availability, retained with the approved input.
 #[derive(Clone, Debug, Serialize, Deserialize, PartialEq, Eq)]
@@ -100,6 +119,8 @@ pub struct OperatingBalance {
 }
 #[derive(Clone, Debug, Serialize, Deserialize)]
 pub struct ServiceEvidence {
+    #[serde(default, skip_serializing_if = "Vec::is_empty")]
+    pub reserves: Vec<ReserveBalance>,
     pub coverage: Vec<ServiceCoverage>,
     pub pools: Vec<PoolBalance>,
     pub operating: Vec<OperatingBalance>,
@@ -279,6 +300,24 @@ impl ServicePlan {
             }
         }
         let mut keys = BTreeSet::new();
+        let mut reserve_floors = BTreeMap::new();
+        if self.reserves.len() > self.pools.len() {
+            return Err(bad("too many service reserves"));
+        }
+        for reserve in &self.reserves {
+            if !pool_ids.contains_key(&reserve.pool)
+                || reserve_floors
+                    .insert(&reserve.pool, &reserve.minimum)
+                    .is_some()
+                || reserve.minimum.len() != plan.len()
+                || reserve.basis.trim().is_empty()
+                || reserve.basis.len() > 1000
+                || reserve.source_reference.trim().is_empty()
+                || reserve.source_reference.len() > 512
+            {
+                return Err(bad("invalid service reserve identity, calendar or source"));
+            }
+        }
         let mut selected = BTreeSet::new();
         let mut operating_resources = BTreeSet::new();
         let mut used_pools = BTreeSet::new();
@@ -351,6 +390,7 @@ impl ServicePlan {
             return Err(bad("incomplete regional service matrix"));
         }
         let mut evidence = ServiceEvidence {
+            reserves: vec![],
             coverage: vec![],
             pools: vec![],
             operating: vec![],
@@ -471,6 +511,18 @@ impl ServicePlan {
                     .ok_or(MathError::Overflow)?;
                 let shortage = total.saturating_sub(available);
                 evidence.all_selected_services_feasible &= shortage == 0;
+                if let Some(floors) = reserve_floors.get(&pool.id) {
+                    let free = available.saturating_sub(total);
+                    let shortfall = floors[t].saturating_sub(free);
+                    evidence.all_selected_services_feasible &= shortfall == 0;
+                    evidence.reserves.push(ReserveBalance {
+                        period: t,
+                        pool: pool.id.clone(),
+                        required: floors[t].to_string(),
+                        free_capacity: free.to_string(),
+                        shortfall: shortfall.to_string(),
+                    });
+                }
                 evidence.pools.push(PoolBalance {
                     period: t,
                     pool: pool.id.clone(),

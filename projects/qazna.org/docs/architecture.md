@@ -729,3 +729,47 @@ and monetary continuation remains a separate operator action.
 A combined declaration uses the existing repair/review/link workflow. It is a
 lineage-aware input mechanism, not a new optimizer. The compound experiment below
 shows why a correct combination may still have no feasible single-batch repair.
+
+## Joint service repair and protected reserves
+
+`service_feedback::repair_service_batches` searches up to four entire unstarted
+batches together. Each window has at most 24 dates; a request evaluates at most
+256 schedules. Dates are enumerated lexicographically in the caller's batch order.
+The result distinguishes `found`, `exhausted` within the declared windows, and
+`budget_exceeded`. It records every examined schedule and rejection. This is a
+bounded feasibility search, not an optimum or proof of global infeasibility.
+
+`defer_batches` reads all quantities from the original plan and accumulates exact
+activity and stock deltas before conversion to the stored integer representation.
+Moving a batch onto another batch's original source therefore neither duplicates
+nor accidentally moves that second quantity. Duplicate sources, committed starts,
+backward moves, invalid indices and completion beyond the horizon are rejected.
+Every search candidate passes `preview_continuation`, including resource limits,
+operating inputs, pending commitments and unchanged population needs. The helper
+returns a proposal and has no persistence or execution authority.
+
+`ServicePlan.reserves` optionally declares protected free capacity per pool and
+period, in that pool's existing unit, with a basis and source reference. Staff
+minutes cannot substitute for equipment minutes or another region's capacity.
+For available capacity A, service use S, development use D and reserve floor R:
+
+```
+service_shortage = max(S + D - A, 0)
+free_capacity   = max(A - S - D, 0)
+reserve_shortfall = max(R - free_capacity, 0)
+feasible iff service_shortage = 0 and reserve_shortfall = 0 for every pool/period
+```
+
+Availability is computed from active opening stock, calendar, throughput and
+reported availability. The reserve does not add stock, money, daily throughput
+or unused capacity from another period. Reserve evidence is persisted with the
+checkpoint; an otherwise balanced schedule fails if it consumes protected reserve.
+Reserve floors cannot be removed, reduced or re-attributed during continuation.
+There is no emergency-release authority in this stage. Empty reserve fields are
+omitted so existing checkpoint/evidence serialization is unchanged.
+
+Joint proposals use the existing generation-bound runtime model-draft API and
+operator approval. Simultaneous approval admits only one competing candidate;
+failures retain old history and do not consume a retry key. Monetary continuation
+is independently calculated under the same fixed policy; service-search success
+alone never authorizes a posting. No new database table or migration is required.
