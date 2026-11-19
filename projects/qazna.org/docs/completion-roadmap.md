@@ -1,6 +1,6 @@
 # Completion roadmap and feasibility boundaries
 
-Latest review: 19 November 2026, durable treasury funding for a reviewed production schedule.
+Latest review: 19 November 2026, population demand and physical supply deadlines take priority over sector detail.
 The current work order below supersedes earlier milestone-specific next steps.
 
 ## Completion scope and remaining work — 12 November 2026
@@ -71,10 +71,28 @@ retains allocations across continuations. Offline reference calculations for
 63 and 72 months independently verify every transfer and final balance.
 The live ledger stays separate. See [reviewed funding](architecture.md#reviewed-treasury-funding).
 
-Next, model reusable packaging with collection delays, washing, losses,
-remanufacturing, energy, water and transport. Compare equal provision and
-terminal serviceable stocks against the measured seventh-year scenario gap.
-Regional source calibration continues alongside this work.
+### Foundation priorities
+
+The versioned plan, exact circulation and historical replay are working for the
+selected cases. The production plan and the population projection still make
+different assumptions about what people need. Closing the original payment
+schedule cannot resolve this mismatch. The [supply deadline study](physical-circulation.md#population-demand-and-supply-deadlines)
+now quantifies it for two commodities over 60 months, including a shortfall that
+persists even if all production starts are rescheduled within the existing graph.
+
+1. Establish common demand, calendar, physical units and opening conditions.
+   Next compare explicit pre-horizon deliveries or work already in progress
+   against a documented opening-stock requirement. Account for their origin,
+   production time and resources. Retain the failed original case.
+2. Recalculate the whole production plan against that same demand, keeping
+   finite inputs, reserves and shared capacities. Verify exact circulation
+   against the resulting quantities. Publish a verified candidate or an
+   infeasibility bound and list all needs still outside the model.
+3. Use that scenario for operator review, revision, recovery and a reproducible
+   release. Regional calibration and additional sectors extend the scope of
+   the result. Reopen reusable packaging when addressing its measured gap is
+   necessary for the chosen horizon. The seventh-year counterexample remains.
+
 The effort range below remains a planning estimate, not a new deadline.
 
 The target for this estimate is **research demonstrator v1**: a reproducible,

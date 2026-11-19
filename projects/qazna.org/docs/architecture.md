@@ -494,6 +494,12 @@ physical delivery or an indefinitely repeatable monetary circulation policy.
 
 ### Population registry and demand binding
 
+The offline horizon calculation compares projected demand with physical supply
+in each resource's unit. It reports the minimum extra arrivals for fixed net
+flows and a separate necessary supply bound over all start schedules. Inputs
+come from the baseline stocks, activities, capacities and dates. See the
+[supply deadline study](physical-circulation.md#population-demand-and-supply-deadlines).
+
 `src/population.rs` defines bounded, source-described parameters with rational
 lower/central/upper assumptions and an explicit unknown state. Entries carry an ID,
 unit, region, reference period, recording date, source locator/version and basis.

@@ -816,6 +816,13 @@ and 320 exhaustive small mortality cases. They reject invalid dates, units, unkn
 references, bad intervals, malformed dimensions, fractional people, excess departures,
 missing/overlapping groups, duplicate mappings and hidden unknown requirements.
 
+The same command reproduces all 18 supply comparisons under
+`fixed_flow_supply_bounds`. A dynamic program enumerates allowed closing stocks
+independently and checks the minimum arrivals at every prefix of 128 short
+scenarios. A separate test uses a two-period production delay and a large late
+capacity to check the all-schedules bound and its disappearance after adequate
+opening supply.
+
 The prospective upstream audit records unmet needs; full model approval rejects
 that candidate. A separate synthetic finite-stock water-component fixture verifies
 the successful runtime path without claiming a replenishing production chain.

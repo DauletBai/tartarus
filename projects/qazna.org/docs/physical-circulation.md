@@ -2528,3 +2528,47 @@ lower bound on the shortfall for a seventh year with identical use and floor.
 Full results and quantities are in
 [the extended fixture](../fixtures/extended-scenario.json) under
 `reference.recurrence.sixth_year_harvest`.
+
+### Population demand and supply deadlines
+
+The fixed five-year production schedule and the age-based projection have
+different food targets even in their first month, when all three variants have
+the same 100 million people. To isolate the mismatch we crossed three population
+paths with three declared levels of need per person. The 18 resource-specific
+traces cover rice and oats separately in gross-equivalent kg. Other population
+items retain their existing mapped, unmapped or unknown status.
+
+| Reference population and central need | Five-year target (kg) | Minimum extra arrivals with fixed production (kg) | Any schedule, at least this much extra by January 2027 (kg) |
+| --- | ---: | ---: | ---: |
+| Rice component | 50,244,382,315 | 22,629,250,700 | 369,161,052 |
+| Oats component | 30,103,767,854 | 10,893,241,509 | 175,884,210 |
+
+The first calculation holds all production and intermediate use fixed. From the
+verified baseline, reconstruct net inflow after those uses in period t as
+closing minus previous closing plus delivery plus discard. Start from the
+original stock. Deduct the new demand. If stock would fall below its reserve,
+record the exact missing arrival. Carry all remaining stock up to the store
+capacity. Keeping every available unit up to capacity maximizes what can be
+used later. Moving an extra arrival earlier cannot lower the total required
+and can increase overflow. This yields the exact minimum for this single-store
+balance with timely arrivals and free disposal. The whole network also has
+expiry, transport and shared storage constraints, so the result is a lower
+bound on what that network would require **with the same production flows**.
+
+The second calculation allows all process starts to change. At each deadline,
+compare cumulative demand plus that date's reserve with opening stock, declared
+external supply to date and the maximum gross output of all processes that can
+finish by then. Gross output uses the capacity at the start date and each
+process's lead time. Dropping other input and shared-capacity constraints can
+only increase this upper bound. A positive difference therefore proves a
+shortfall for every schedule with those conditions. A zero difference leaves
+feasibility open. The report retains the largest difference and its deadline.
+
+In January no new production start can reach either delivery node in time.
+Available quantities are 469,078,948 kg and 326,315,790 kg against requirements
+of 838,240,000 kg and 502,200,000 kg respectively. Subsequent arrivals cannot
+satisfy this earlier deadline. Across the nine combinations, both components
+already require additional January supply. The result concerns the project's
+two supply nodes and assumed needs. Testing different starting stocks, earlier
+production commitments and a revised production plan is the next experiment.
+The requirements are diagnostics and create no stock or monetary postings.
