@@ -81,11 +81,13 @@ now quantifies it for two commodities over 60 months, including a shortfall that
 persists even if all production starts are rescheduled within the existing graph.
 
 1. Establish common demand, calendar, physical units and opening conditions.
-   Next compare explicit pre-horizon deliveries or work already in progress
-   against a documented opening-stock requirement. Account for their origin,
-   production time and resources. Retain the failed original case.
+   The [January predecessor-year case](physical-circulation.md#january-provision-from-the-previous-harvest)
+   traces both deliveries back to sowing and preserves the failed original case.
+   The remaining calendar must cover the full five demand years after the opening boundary.
 2. Recalculate the whole production plan against that same demand, keeping
-   finite inputs, reserves and shared capacities. Verify exact circulation
+   finite inputs, reserves and shared capacities. With the original feed target and
+   restored stocks, the five existing sowings fall at least 4,186,128 hectare-seasons
+   short. Test an explicit change to the binding resource before replanning. Verify exact circulation
    against the resulting quantities. Publish a verified candidate or an
    infeasibility bound and list all needs still outside the model.
 3. Use that scenario for operator review, revision, recovery and a reproducible

@@ -2569,6 +2569,73 @@ Available quantities are 469,078,948 kg and 326,315,790 kg against requirements
 of 838,240,000 kg and 502,200,000 kg respectively. Subsequent arrivals cannot
 satisfy this earlier deadline. Across the nine combinations, both components
 already require additional January supply. The result concerns the project's
-two supply nodes and assumed needs. Testing different starting stocks, earlier
-production commitments and a revised production plan is the next experiment.
+two supply nodes and assumed needs. The following experiment tests one change to these opening conditions.
 The requirements are diagnostics and create no stock or monetary postings.
+
+### January provision from the previous harvest
+
+Take the first twelve months of the existing 60-month production model as
+January–December 2026. The population study starts in January 2027, now
+period 12 of the production model. Retain all initial endowments, baseline
+deliveries outside the two January items, store limits, shared capacity and
+terminal reserves. No external shipment is inserted at the January boundary.
+
+| Additional production needed for January | Rice component | Oats component |
+| --- | ---: | ---: |
+| April sowing (ha) | 96,640 | 52,037 |
+| Seed consumed (kg) | 17,395,200 | 6,244,440 |
+| September harvest (gross-equivalent kg) | 386,560,000 | 182,129,500 |
+| Additional November preservation and December dispatch (gross-equivalent kg) | 369,161,052 | 175,884,210 |
+| December closing stock at destination (kg) | 0 | 0 |
+| All December shipments due in January (gross-equivalent kg) | 838,240,000 | 502,200,000 |
+
+Each hectare contributes harvest less its seed consumption. Round the required
+area up separately for each crop. The whole graph then determines whether
+the seed is available in April and whether water, work, packaging, fuel and
+transport are available at their own deadlines. The revised energy schedule
+extracts 1,091,182 additional fuel units over the horizon.
+
+The January checkpoint distinguishes food physically on the destination shelf
+at December close from consignments due in January. The verified plan counts
+each consignment once. Removing one kilogram from the December rice dispatch
+breaks January provision. Adding it to the reported December closing stock
+also fails independent replay.
+
+The cash consequence appears much later. With the original account openings,
+5,724 of 5,740 scheduled movements settle. The first blocked movement occurs
+in period 57 (October 2030 on this calendar). Six transfers from the existing
+treasury balance at that boundary total 2,727,408,674 accounting ticks.
+Replaying the funded variant settles all 5,746 movements, including the six
+transfers, and preserves the balances already committed through period 56.
+The aggregate opening and closing balances both equal 1,559,457,628,979 ticks.
+
+This establishes a way to cover **one January**. Only that month's two needs
+come from the central population projection. The other months retain the
+original production scenario's needs. A complete 2027–2031 test will require
+the predecessor year followed by all sixty months of population demand.
+See `reference.january_opening` in the [extended fixture](../fixtures/extended-scenario.json).
+
+#### How much land would all sixty months require?
+
+For this separate bound, use the original five sowings and restore the original
+stocks of raw, preserved and delivered food at the end. Preserve the original
+feed requirement and assume zero external food supply. Add the stock balances
+for the three forms of each crop. Preservation and transport transfer units
+between forms. Only sowing produces a positive net addition; its yield is
+harvest less seed. Divide required deliveries by the greatest net yield per
+hectare and round up for each crop. The three crops occupy the same land pool
+and can only be sown on the same five dates.
+
+| Crop | Required deliveries over five years (kg) | Net kg per hectare | At least this many hectare-seasons |
+| --- | ---: | ---: | ---: |
+| Rice | 50,244,382,315 | 3,820 | 13,152,980 |
+| Oats | 30,103,767,854 | 3,380 | 8,906,441 |
+| Feed | 166,290,176,030 | 5,850 | 28,425,672 |
+| **Total** | | | **50,485,093** |
+
+The five sowings offer 46,298,965 hectare-seasons. The gap is **at least
+4,186,128 hectare-seasons** even before irrigation, transport, expiry and shared
+labour are imposed. A hectare-season is one hectare available for one sowing.
+A preceding harvest can bridge the January deadline. Extending that success
+to five years requires an explicit change to land, yields, external supply,
+or another stated assumption. This bound concerns the model's land pool.

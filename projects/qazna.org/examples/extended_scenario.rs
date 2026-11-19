@@ -49,6 +49,35 @@ fn balance_candidate(m: &CapitalCycle, p: &mut [PeriodPlan]) {
     }
 }
 
+fn schedule_power(h: &qazna::horizon::Horizon, p: &mut [PeriodPlan]) {
+    // Recompute the existing declared demand-following fuel schedule for new energy use.
+    for iteration in 0..64 {
+        let old: Vec<_> = p
+            .iter()
+            .map(|r| (r.activities[30], r.activities[31]))
+            .collect();
+        let first = p[0].activities[31];
+        for t in (0..p.len() - 1).rev() {
+            p[t].activities[30] =
+                p[t + 1].activities[31] + if t + 2 == p.len() { first } else { 0 };
+            let need: i64 = p[t + 1]
+                .activities
+                .iter()
+                .zip(&h.processes)
+                .map(|(&x, r)| x * r.inputs[9])
+                .sum();
+            p[t].activities[31] = need / 1000 + i64::from(need % 1000 != 0);
+        }
+        if p.iter()
+            .map(|r| (r.activities[30], r.activities[31]))
+            .eq(old)
+        {
+            break;
+        }
+        assert!(iteration < 63, "generation did not converge");
+    }
+}
+
 fn main() {
     let source: Value =
         serde_json::from_slice(&fs::read("research/coupled-results.json").unwrap()).unwrap();
@@ -120,31 +149,7 @@ fn main() {
             row.activities[43] = 600_000;
         }
     }
-    // Recompute the existing declared demand-following fuel schedule for new energy use.
-    for iteration in 0..64 {
-        let old: Vec<_> = p
-            .iter()
-            .map(|r| (r.activities[30], r.activities[31]))
-            .collect();
-        let first = p[0].activities[31];
-        for t in (0..59).rev() {
-            p[t].activities[30] = p[t + 1].activities[31] + if t == 58 { first } else { 0 };
-            let need: i64 = p[t + 1]
-                .activities
-                .iter()
-                .zip(&h.processes)
-                .map(|(&x, r)| x * r.inputs[9])
-                .sum();
-            p[t].activities[31] = need / 1000 + i64::from(need % 1000 != 0);
-        }
-        if p.iter()
-            .map(|r| (r.activities[30], r.activities[31]))
-            .eq(old)
-        {
-            break;
-        }
-        assert!(iteration < 63, "generation did not converge");
-    }
+    schedule_power(h, &mut p);
     balance_candidate(&m, &mut p);
     let h = &m.seasonal.physical;
     let mut weights = vec![0; R];
@@ -219,6 +224,7 @@ fn main() {
     assert!(c.evidence.all_scheduled_payments_settled && c.evidence.resident_zero_each_period);
     let money = json!({"links":c.evidence.links.len(),"events":c.evidence.events.len(),"opening":c.evidence.money.opening_total,
         "closing":c.evidence.money.closing,"settled_volume":c.evidence.money.settled_volume,"bound":c.evidence.bound});
+    let january = january_opening(&definition, &input, &check.definition);
     let bridge = boundary_bridge(&input, &check, &c);
     let harvest = harvest_renewal(&input, &check, &c);
     let recurrence = json!({
@@ -230,7 +236,7 @@ fn main() {
         "money_with_explicit_treasury_renewal":qazna::recurrence::repeat_cash(&check,3,true).unwrap(),
         "limits":"Repeated money is a conditional pattern test, not evidence of repeated physical provision. Renewal uses existing treasury balances and fixed next-cycle prefix floors; no live authority. Repeated external flows remain declared boundaries."
     });
-    let result = json!({"definition":definition,"input":input,"policy":policy,"reference":{"recurrence":recurrence,"source":"research/coupled-results.json#/upstream_capital/cases/1","mass":mass,"food":dated,"money":money,"limitations":["synthetic aggregate quantities and fixed food routes","common resource/capacity constraints, no measured national calibration","no physical receipt attestation or live monetary operation","money failure does not automatically rewrite production","18-month storage life is an assumption"]}});
+    let result = json!({"definition":definition,"input":input,"policy":policy,"reference":{"january_opening":january,"recurrence":recurrence,"source":"research/coupled-results.json#/upstream_capital/cases/1","mass":mass,"food":dated,"money":money,"limitations":["synthetic aggregate quantities and fixed food routes","common resource/capacity constraints, no measured national calibration","no physical receipt attestation or live monetary operation","money failure does not automatically rewrite production","18-month storage life is an assumption"]}});
     let output = env::args().nth(1).expect("output path");
     fs::write(output, serde_json::to_vec_pretty(&result).unwrap()).unwrap();
     println!(
@@ -626,4 +632,245 @@ fn energy_use(row: &PeriodPlan, recipes: &[Process]) -> i64 {
         .zip(recipes)
         .map(|(x, r)| x * r.inputs[9])
         .sum()
+}
+
+// Use the first model year as production history for a January delivery.
+// Only the two January needs change. All other baseline deliveries stay due.
+fn january_opening(
+    definition: &ModelDefinition,
+    original: &ModelInput,
+    policy: &CoupledDefinition,
+) -> Value {
+    use qazna::{population::PopulationStudy, rolling::RollingCapital};
+    const JAN: usize = 12;
+    let study: PopulationStudy =
+        serde_json::from_slice(&fs::read("fixtures/population-study.json").unwrap()).unwrap();
+    let projection = study.project().unwrap();
+    let january = &projection.months[0];
+    assert_eq!(january.calendar, "2027-01");
+    let mut next = original.clone();
+    next.boundary = JAN;
+    let mut rows = Vec::new();
+    let baseline = RollingCapital::checkpoint(&original.model, &original.plan, JAN).unwrap();
+    for (item, crop, pack, ship, destination) in [
+        ("rice_component", 0, 15, 17, 6),
+        ("oats_component", 1, 19, 21, 7),
+    ] {
+        let demand = january.demands.iter().find(|d| d.item == item).unwrap();
+        assert_eq!(demand.unit, definition.resources[destination].unit);
+        let target: i64 = demand.central.as_ref().unwrap().parse().unwrap();
+        let baseline_delivery = original.plan[JAN].deliveries[destination];
+        let extra = target - baseline_delivery;
+        assert!(extra > 0);
+        let h = &mut next.model.seasonal.physical;
+        let net_yield = h.processes[crop].outputs[crop] - h.processes[crop].inputs[crop];
+        let starts = extra / net_yield + i64::from(extra % net_yield != 0);
+        let rule = next
+            .model
+            .seasonal
+            .crops
+            .iter()
+            .find(|rule| rule.process == crop)
+            .unwrap();
+        let sow = rule.sowing_periods[0];
+        let dispatch = JAN - h.processes[ship].lead_periods;
+        let preservation = dispatch - h.processes[pack].lead_periods;
+        assert!(sow + h.processes[crop].lead_periods <= preservation);
+        next.plan[sow].activities[crop] += starts;
+        next.plan[preservation].activities[pack] += extra;
+        next.plan[dispatch].activities[ship] += extra;
+        next.plan[JAN].deliveries[destination] = target;
+        h.periods[JAN].needs[destination] = target;
+        let before = baseline.snapshot();
+        let arrivals: i64 = before
+            .pending
+            .iter()
+            .filter(|c| c.completes == JAN)
+            .map(|c| c.activities * h.processes[c.process].outputs[destination])
+            .sum();
+        assert_eq!(
+            before.opening_stock[destination] + arrivals,
+            baseline_delivery
+        );
+        rows.push(json!({
+            "item": item,
+            "baseline_january_delivery_kg": baseline_delivery,
+            "baseline_opening_shelf_kg": before.opening_stock[destination],
+            "baseline_due_kg": arrivals,
+            "january_target_kg": target,
+            "extra_dispatch_kg": extra,
+            "extra_hectares": starts * rule.hectares_per_activity,
+            "extra_seed_kg": starts * h.processes[crop].inputs[crop],
+            "extra_harvest_kg": starts * h.processes[crop].outputs[crop]
+        }));
+    }
+    schedule_power(&next.model.seasonal.physical, &mut next.plan);
+    balance_candidate(&next.model, &mut next.plan);
+    let h = &next.model.seasonal.physical;
+    verify_linear(
+        &next.model.compile().unwrap(),
+        &h.vector(&next.plan).unwrap(),
+        None,
+    )
+    .unwrap();
+    let verified = RollingCapital::checkpoint(&next.model, &next.plan, JAN).unwrap();
+    for (row, r) in rows.iter_mut().zip([6, 7]) {
+        let shelf = verified.snapshot().opening_stock[r];
+        let pending: Vec<_> = verified
+            .snapshot()
+            .pending
+            .iter()
+            .filter(|c| c.completes == JAN && h.processes[c.process].outputs[r] > 0)
+            .collect();
+        let due: i64 = pending
+            .iter()
+            .map(|c| c.activities * h.processes[c.process].outputs[r])
+            .sum();
+        assert_eq!(shelf + due, next.plan[JAN].deliveries[r]);
+        row["opening_shelf_kg"] = json!(shelf);
+        row["shipments_due_kg"] = json!(due);
+        row["commitments"] = json!(pending);
+    }
+    // A missing December shipment or counting a receipt as December stock must fail.
+    let mut late = next.plan.clone();
+    late[JAN - 1].activities[17] -= 1;
+    balance_candidate(&next.model, &mut late);
+    assert!(next.model.replay(&late).is_err());
+    let mut twice = next.plan.clone();
+    twice[JAN - 1].closing[6] += 1;
+    assert!(next.model.replay(&twice).is_err());
+    // The ledger replay starts in the predecessor year. The physical January
+    // checkpoint above and the first unsettled cash deadline can differ.
+    next.boundary = 0;
+    let physical = qazna::model_scenarios::preview(definition.clone(), next.clone()).unwrap();
+    let run = qazna::coupled::preview(policy.clone(), physical.clone(), vec![]).unwrap();
+    let ledger: CoupledCheckpoint = serde_json::from_str(run.checkpoint.as_ref().unwrap()).unwrap();
+    let e = ledger.evidence;
+    let total = |values: &[String]| {
+        values
+            .iter()
+            .map(|q| q.parse::<u128>().unwrap())
+            .sum::<u128>()
+    };
+    assert_eq!(total(&e.money.closing).to_string(), e.money.opening_total);
+    let cut = e.money.first_blocked_period.unwrap() as usize;
+    let extra_fuel: i64 = next
+        .plan
+        .iter()
+        .zip(&original.plan)
+        .map(|(n, b)| n.activities[30] - b.activities[30])
+        .sum();
+    next.boundary = cut;
+    let revision = qazna::model_scenarios::preview_continuation(physical, next).unwrap();
+    let funded = qazna::coupled::preview_funded_continuation(run, revision).unwrap();
+    let settled: CoupledCheckpoint =
+        serde_json::from_str(funded.checkpoint.as_ref().unwrap()).unwrap();
+    let revised = settled.evidence;
+    assert!(revised.all_scheduled_payments_settled && revised.resident_zero_each_period);
+    assert_eq!(revised.closing_by_period[..cut], e.closing_by_period[..cut]);
+    assert_eq!(
+        total(&revised.money.closing).to_string(),
+        e.money.opening_total
+    );
+    let allocated: u128 = revised
+        .treasury_allocations
+        .iter()
+        .map(|a| a.amount.parse::<u128>().unwrap())
+        .sum();
+    json!({
+        "calendar_at_period_zero": "2026-01",
+        "delivery_month": january.calendar,
+        "january_index": JAN,
+        "five_year_land_bound_with_restored_stocks": land_bound(original, &projection),
+        "verified_periods": original.plan.len(),
+        "items": rows,
+        "extra_fuel_extracted": extra_fuel,
+        "same_opening_cash": {
+            "opening_total": e.money.opening_total,
+            "closing_total": total(&e.money.closing).to_string(),
+            "attempted_events": e.money.attempted_events,
+            "settled_events": e.money.settled_events,
+            "first_blocked_period": cut,
+            "opening_deficits_by_account": e.opening_deficits,
+            "all_settled": e.all_scheduled_payments_settled
+        },
+        "treasury_funded_variant": {
+            "allocated": allocated.to_string(),
+            "allocations": revised.treasury_allocations,
+            "settled_events_including_allocations": revised.money.settled_events,
+            "opening_total": revised.money.opening_total,
+            "closing_total": total(&revised.money.closing).to_string()
+        },
+        "scope": "The first year is a modeled predecessor. The population target replaces two needs for one January only. Other baseline deliveries, initial stocks, capacities and reserve floors are retained."
+    })
+}
+
+// Necessary five-sowing bound on the original target horizon, separate from
+// the January case. Summing raw, preserved and delivered forms cancels transfers.
+fn land_bound(input: &ModelInput, population: &qazna::population::PopulationEvidence) -> Value {
+    use std::collections::BTreeSet;
+    let s = &input.model.seasonal;
+    let h = &s.physical;
+    assert_eq!(population.months.len(), h.periods.len());
+    assert_eq!(s.land.len(), 1);
+    let mut sowing_dates = BTreeSet::new();
+    let mut positive_processes = BTreeSet::new();
+    let mut required = 0;
+    let mut rows = Vec::new();
+    for (food, item) in ["rice_component", "oats_component", "feed"]
+        .into_iter()
+        .enumerate()
+    {
+        let forms = [food, food + 3, food + 6];
+        // Existing stores must be restored by the end of the five seasons.
+        for r in forms {
+            assert_eq!(s.closing_floors.last().unwrap()[r], h.initial[r]);
+            assert!(h.periods.iter().all(|p| p.supplies[r] == 0));
+        }
+        let deliveries: i64 = if item == "feed" {
+            h.periods.iter().map(|p| p.needs[food + 6]).sum()
+        } else {
+            population
+                .months
+                .iter()
+                .map(|m| {
+                    let d = m.demands.iter().find(|d| d.item == item).unwrap();
+                    assert_eq!(d.unit, "gross-equivalent kg");
+                    d.central.as_ref().unwrap().parse::<i64>().unwrap()
+                })
+                .sum()
+        };
+        let mut max_yield = 0;
+        for (j, recipe) in h.processes.iter().enumerate() {
+            let net: i64 = forms
+                .iter()
+                .map(|&r| recipe.outputs[r] - recipe.inputs[r])
+                .sum();
+            if net > 0 {
+                // Distinct crops cannot claim the same occupied hectare.
+                assert!(positive_processes.insert(j));
+                let rule = s.crops.iter().find(|c| c.process == j).unwrap();
+                assert_eq!((rule.land_pool, rule.hectares_per_activity), (0, 1));
+                assert!(!rule.irrigation_m3_per_activity.is_empty());
+                sowing_dates.extend(rule.sowing_periods.iter().copied());
+                max_yield = max_yield.max(net);
+            }
+        }
+        assert!(max_yield > 0);
+        let area = deliveries / max_yield + i64::from(deliveries % max_yield != 0);
+        required += area;
+        rows.push(json!({"item":item,"required_deliveries_kg":deliveries,"maximum_net_kg_per_hectare":max_yield,"minimum_hectare_seasons":area}));
+    }
+    let available: i64 = sowing_dates
+        .iter()
+        .map(|&t| s.land[0].available_hectares[t])
+        .sum();
+    json!({
+        "items":rows,
+        "sowing_periods":sowing_dates,
+        "minimum_hectare_seasons":required,
+        "available_hectare_seasons":available,
+        "shortfall_hectare_seasons":(required-available).max(0),
+        "basis":"Five existing sowings, central rice and oats demand, original feed needs, no external food, all original grain stocks restored. Ignores water, work, spoilage and cash restrictions."
+    })
 }
