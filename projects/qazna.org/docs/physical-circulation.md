@@ -2431,3 +2431,41 @@ respect finite deposits. Recalculate money from that accepted physical extension
 then persist operator-reviewed renewal allocations with prefix/history and stale
 state checks. Until then this gate is a verified diagnostic and explicit funding
 candidate, not a completed indefinitely self-renewing economy.
+
+
+### Three additional months — 19 November 2026
+
+The extended scenario now produces a second candidate in
+`reference.recurrence.three_month_bridge`. It is a prospective revision at
+period 57 (period zero is the first month). Both continuation checks start with
+the original model and circulation versions. Initial endowments, committed work,
+food origins, asset lifetimes, physical history and settled payments through
+period 56 are carried forward. The month-59 reserve floors still apply.
+
+For months 60–62 the example uses the needs, external flows and available
+capacity of calendar months 0–2. Existing finished stock covers month 60.
+In month 60, manual routes dispatch preserved lots for month 61 and process
+raw food for dispatch in month 61 and delivery in month 62. The plan uses
+existing storage and people. Generation in months 59 and 60 powers the next
+month's work. Additional generation in month 57 powers extra extraction in 58,
+so generation in 59 can draw fuel while meeting the existing extracted-fuel floor.
+The model replays original asset retirements and food expiry throughout.
+
+| Quantity | Result |
+| --- | ---: |
+| Extra fuel extracted in month 58 (ticks) | 6,896,670 |
+| In-situ fuel remaining at month 62 (ticks) | 325,220,821 |
+| Delivered in months 60–62 across the three food routes (gross-equivalent kg) | 10,509,821,951 |
+| Original accounting measure throughout | 1,559,457,628,979 |
+| Extended schedule paid with original funding and no reallocation | 5,767 / 5,813 events |
+| First unfunded period | 57 |
+| Explicit transfers from the existing treasury at period 57 | 8 transfers totalling 24,657,107,075 |
+| Settled from period 57 after reallocation | 284 scheduled payments plus 8 transfers |
+
+The redistribution calculation uses each account's largest cumulative shortfall
+over the revised suffix in event order. The treasury must retain its own required
+opening after financing the other accounts. All suffix events settle in order
+with their prerequisites available. The figures describe an offline replay.
+The final three months consume food stocks without imposing another five-year
+terminal reserve target. Renewal of crops, equipment and materials over the next
+production cycle, and durable operator-approved funding, remain open.

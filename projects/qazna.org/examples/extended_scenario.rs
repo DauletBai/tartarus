@@ -14,6 +14,41 @@ use std::{env, fs};
 use uuid::Uuid;
 const R: usize = 31;
 const J: usize = 44;
+fn balance_candidate(m: &CapitalCycle, p: &mut [PeriodPlan]) {
+    let retire = m.retirements(p).unwrap();
+    let h = &m.seasonal.physical;
+    let mut stock = h.initial.clone();
+    let mut arrivals = vec![vec![0i64; R]; p.len()];
+    for (t, row) in p.iter_mut().enumerate() {
+        for r in 0..R {
+            stock[r] += arrivals[t][r] + h.periods[t].supplies[r];
+        }
+        for (j, recipe) in h.processes.iter().enumerate() {
+            let x = row.activities[j];
+            if x == 0 {
+                continue;
+            }
+            assert!(t + recipe.lead_periods < arrivals.len());
+            for (r, s) in stock.iter_mut().enumerate() {
+                *s -= x * recipe.inputs[r];
+                arrivals[t + recipe.lead_periods][r] += x * recipe.outputs[r];
+            }
+        }
+        row.discarded = retire[t].clone();
+        for (r, s) in stock.iter_mut().enumerate() {
+            *s -= row.deliveries[r] + row.discarded[r];
+        }
+        row.discarded[9] = stock[9].max(0);
+        stock[9] -= row.discarded[9];
+        for r in [10, 11, 12, 13].into_iter().filter(|_| t < 60) {
+            let target = if t == 59 { h.initial[r] } else { 0 };
+            row.discarded[r] = (stock[r] - target).max(0);
+            stock[r] -= row.discarded[r];
+        }
+        row.closing = stock.clone();
+    }
+}
+
 fn main() {
     let source: Value =
         serde_json::from_slice(&fs::read("research/coupled-results.json").unwrap()).unwrap();
@@ -110,38 +145,8 @@ fn main() {
         }
         assert!(iteration < 63, "generation did not converge");
     }
-    let retire = m.retirements(&p).unwrap();
+    balance_candidate(&m, &mut p);
     let h = &m.seasonal.physical;
-    let mut stock = h.initial.clone();
-    let mut arrivals = vec![vec![0i64; R]; 60];
-    for (t, row) in p.iter_mut().enumerate() {
-        for r in 0..R {
-            stock[r] += arrivals[t][r] + h.periods[t].supplies[r];
-        }
-        for (j, recipe) in h.processes.iter().enumerate() {
-            let x = row.activities[j];
-            if x == 0 {
-                continue;
-            }
-            assert!(t + recipe.lead_periods < 60);
-            for (r, s) in stock.iter_mut().enumerate() {
-                *s -= x * recipe.inputs[r];
-                arrivals[t + recipe.lead_periods][r] += x * recipe.outputs[r];
-            }
-        }
-        row.discarded = retire[t].clone();
-        for (r, s) in stock.iter_mut().enumerate() {
-            *s -= row.deliveries[r] + row.discarded[r];
-        }
-        row.discarded[9] = stock[9].max(0);
-        stock[9] -= row.discarded[9];
-        for r in [10, 11, 12, 13] {
-            let target = if t == 59 { h.initial[r] } else { 0 };
-            row.discarded[r] = (stock[r] - target).max(0);
-            stock[r] -= row.discarded[r];
-        }
-        row.closing = stock.clone();
-    }
     let mut weights = vec![0; R];
     for r in [27, 28, 29] {
         weights[r] = 1000;
@@ -214,8 +219,10 @@ fn main() {
     assert!(c.evidence.all_scheduled_payments_settled && c.evidence.resident_zero_each_period);
     let money = json!({"links":c.evidence.links.len(),"events":c.evidence.events.len(),"opening":c.evidence.money.opening_total,
         "closing":c.evidence.money.closing,"settled_volume":c.evidence.money.settled_volume,"bound":c.evidence.bound});
+    let bridge = boundary_bridge(&input, &check, &c);
     let recurrence = json!({
         "format_version":1,
+        "three_month_bridge":bridge,
         "physical":([1,2,3].into_iter().map(|n| qazna::recurrence::repeat_physical(&input,n).unwrap()).collect::<Vec<_>>()),
         "money_without_renewal":qazna::recurrence::repeat_cash(&check,3,false).unwrap(),
         "money_with_explicit_treasury_renewal":qazna::recurrence::repeat_cash(&check,3,true).unwrap(),
@@ -225,6 +232,134 @@ fn main() {
     let output = env::args().nth(1).expect("output path");
     fs::write(output, serde_json::to_vec_pretty(&result).unwrap()).unwrap();
     println!(
-        "Verified extended fixture: 60 months, 31 resources, 44 processes, food identity and packaging recovery"
+        "Verified extended fixture: 60-month baseline and 63-month continuation with dated food and funded payments"
     );
+}
+
+// A prospective revision of the selected fixture. The first 57 periods are frozen.
+// Replay food, capital and the constituent ledger from their original origins.
+fn boundary_bridge(
+    original: &ModelInput,
+    money: &qazna::coupled::CoupledVersion,
+    prior: &CoupledCheckpoint,
+) -> Value {
+    let mut next = original.clone();
+    let s = &mut next.model.seasonal;
+    for month in 0..3 {
+        let period = s.physical.periods[month].clone();
+        let mut row = original.plan[month].clone();
+        row.activities.fill(0);
+        row.deliveries.clone_from(&period.needs);
+        next.plan.push(row);
+        s.physical.periods.push(period);
+        s.irrigation_m3.push(s.irrigation_m3[month]);
+        s.closing_floors.push(s.closing_floors[month].clone());
+        for land in &mut s.land {
+            land.available_hectares.push(land.available_hectares[month]);
+        }
+    }
+    // Manual food routes available in the extended months: preserve at t=60
+    // for dispatch at t=61, and dispatch existing lots at t=60 for t=61.
+    let h = &s.physical;
+    for (food, preserve, dispatch) in [(6, 15, 17), (7, 19, 21), (8, 23, 25)] {
+        next.plan[60].activities[preserve] = h.periods[62].needs[food];
+        next.plan[60].activities[dispatch] = h.periods[61].needs[food];
+        next.plan[61].activities[dispatch] = h.periods[62].needs[food];
+    }
+    let yield_per_fuel = h.processes[31].outputs[9];
+    let units = |n: i64| n / yield_per_fuel + i64::from(n % yield_per_fuel != 0);
+    for t in [60, 59] {
+        let demand = h
+            .processes
+            .iter()
+            .zip(&next.plan[t + 1].activities)
+            .map(|(p, x)| p.inputs[9] * x)
+            .sum();
+        next.plan[t].activities[31] = units(demand);
+    }
+    // Each extra fuel unit costs one energy tick to extract. A generating unit
+    // must also replace its own fuel, leaving yield_per_fuel - 1 net ticks.
+    assert!(yield_per_fuel > 1);
+    assert_eq!(h.processes[30].inputs[9], 1);
+    assert_eq!(h.processes[30].outputs[20], 1);
+    assert_eq!(h.processes[31].inputs[20], 1);
+    let boundary_fuel = next.plan[59].activities[31];
+    let net = yield_per_fuel - 1;
+    let extra_generation = boundary_fuel / net + i64::from(boundary_fuel % net != 0);
+    let extraction = boundary_fuel + extra_generation;
+    next.plan[57].activities[31] += extra_generation;
+    next.plan[58].activities[30] += extraction;
+    balance_candidate(&next.model, &mut next.plan);
+    next.boundary = 57;
+    let physical =
+        qazna::model_scenarios::preview_continuation(prior.evidence.physical.clone(), next.clone())
+            .unwrap();
+    let run = qazna::coupled::preview_continuation(money.clone(), physical, vec![]).unwrap();
+    let e = serde_json::from_str::<CoupledCheckpoint>(run.checkpoint.as_ref().unwrap())
+        .unwrap()
+        .evidence;
+    let failed_period = e.failed.first().map(|f| e.events[f.event].period);
+    // All original prefix events settled. Fund the revised suffix before its
+    // first event, using the treasury carried from the frozen prefix.
+    use qazna::mathematics::{Movement, ScheduledMovement, replay_schedule, schedule_opening};
+    let carried: Vec<u64> = e.closing_by_period[56]
+        .iter()
+        .map(|s| s.parse().unwrap())
+        .collect();
+    assert_eq!(
+        e.closing_by_period[..57],
+        prior.evidence.closing_by_period[..57]
+    );
+    let suffix: Vec<_> = e
+        .events
+        .iter()
+        .filter(|v| v.period >= 57)
+        .map(|v| ScheduledMovement {
+            period: v.period as u32,
+            movement: Movement {
+                from: v.from,
+                to: v.to,
+                amount: v.amount.parse().unwrap(),
+            },
+            basis: format!("{:?} physical link {}", v.kind, v.link),
+        })
+        .collect();
+    let required = schedule_opening(carried.len(), &suffix).unwrap();
+    let floors: Vec<u64> = required
+        .minimum_opening_by_account
+        .iter()
+        .map(|s| s.parse().unwrap())
+        .collect();
+    let mut funded_schedule: Vec<_> = (1..carried.len())
+        .filter_map(|to| {
+            let amount = floors[to].saturating_sub(carried[to]);
+            (amount > 0).then(|| ScheduledMovement {
+                period: 57,
+                movement: Movement {
+                    from: 0,
+                    to,
+                    amount,
+                },
+                basis: "Provision for the revised production schedule".into(),
+            })
+        })
+        .collect();
+    let draws: u64 = funded_schedule.iter().map(|e| e.movement.amount).sum();
+    assert!(carried[0] >= draws + floors[0]);
+    let allocations = json!(&funded_schedule);
+    funded_schedule.extend(suffix);
+    let funded = replay_schedule(&carried, &funded_schedule, &[]).unwrap();
+    assert_eq!(funded.attempted_events, funded.settled_events);
+    assert_eq!(funded.opening_total, e.money.opening_total);
+    let extension_delivered: i64 = next.plan[60..]
+        .iter()
+        .flat_map(|p| &p.deliveries[6..9])
+        .sum();
+    json!({"periods":next.plan.len(),"first_replanned_period":57,"extra_extracted_fuel":extraction,
+        "fuel_deposit_at_end":next.plan.last().unwrap().closing[18],"extension_food_delivered_kg":extension_delivered,
+        "generation_at_59":boundary_fuel,"original_money_opening":e.money.opening_total,"events":e.events.len(),
+        "settled_events":e.money.settled_events,"first_unfunded_period":failed_period,
+        "opening_deficits_by_account":e.opening_deficits,"treasury_draw":draws,"allocations":allocations,
+        "funded_suffix":funded,
+        "physically_verified":true,"all_payments_settled":e.all_scheduled_payments_settled})
 }

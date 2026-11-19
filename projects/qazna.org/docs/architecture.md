@@ -827,3 +827,5 @@ offline renewal rule transfers existing treasury measure to exact next-cycle
 prefix deficits, records every transfer and stops before an unfunded renewal.
 It never posts to PostgreSQL. See [cycle continuity](physical-circulation.md#repeating-production-cycles-without-resets--18-november-2026)
 for formulas, counterexamples and the remaining continuous-production gate.
+
+The extended scenario now exercises prospective physical and monetary continuation at period 57 and verifies a treasury-funded suffix in an offline replay. See the [63-month calculation](physical-circulation.md#three-additional-months--19-november-2026).

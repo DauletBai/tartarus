@@ -1,5 +1,9 @@
 # Qazna changelog
 
+## Cross-boundary production — 19 November 2026
+
+- Verify three additional months of food provision and replay the revised payments from carried balances with eight explicit treasury transfers.
+
 ## Repeated-cycle continuity — 18 November 2026
 
 - Carry stocks, original asset ages and monetary balances across repeated cycles; never restore initial endowments at a boundary.

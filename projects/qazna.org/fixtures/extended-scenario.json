@@ -23127,7 +23127,211 @@
           ],
           "periods": 180
         }
-      ]
+      ],
+      "three_month_bridge": {
+        "all_payments_settled": false,
+        "allocations": [
+          {
+            "basis": "Provision for the revised production schedule",
+            "movement": {
+              "amount": 1407236844,
+              "from": 0,
+              "to": 5
+            },
+            "period": 57
+          },
+          {
+            "basis": "Provision for the revised production schedule",
+            "movement": {
+              "amount": 978947370,
+              "from": 0,
+              "to": 6
+            },
+            "period": 57
+          },
+          {
+            "basis": "Provision for the revised production schedule",
+            "movement": {
+              "amount": 8473965135,
+              "from": 0,
+              "to": 7
+            },
+            "period": 57
+          },
+          {
+            "basis": "Provision for the revised production schedule",
+            "movement": {
+              "amount": 1785526318,
+              "from": 0,
+              "to": 8
+            },
+            "period": 57
+          },
+          {
+            "basis": "Provision for the revised production schedule",
+            "movement": {
+              "amount": 1242105266,
+              "from": 0,
+              "to": 9
+            },
+            "period": 57
+          },
+          {
+            "basis": "Provision for the revised production schedule",
+            "movement": {
+              "amount": 10751912752,
+              "from": 0,
+              "to": 10
+            },
+            "period": 57
+          },
+          {
+            "basis": "Provision for the revised production schedule",
+            "movement": {
+              "amount": 10516720,
+              "from": 0,
+              "to": 11
+            },
+            "period": 57
+          },
+          {
+            "basis": "Provision for the revised production schedule",
+            "movement": {
+              "amount": 6896670,
+              "from": 0,
+              "to": 22
+            },
+            "period": 57
+          }
+        ],
+        "events": 5813,
+        "extension_food_delivered_kg": 10509821951,
+        "extra_extracted_fuel": 6896670,
+        "first_replanned_period": 57,
+        "first_unfunded_period": 57,
+        "fuel_deposit_at_end": 325220821,
+        "funded_suffix": {
+          "attempted_events": 292,
+          "closing": [
+            "1559457628979",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0"
+          ],
+          "first_blocked_event": null,
+          "first_blocked_period": null,
+          "insufficient_events": 0,
+          "minimum_balance": [
+            "1438317607982",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0"
+          ],
+          "opening_total": "1559457628979",
+          "settled_events": 292,
+          "settled_volume": "325047425519",
+          "unavailable_events": 0
+        },
+        "generation_at_59": 6889773,
+        "opening_deficits_by_account": [
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "1407236844",
+          "978947370",
+          "8473965135",
+          "1785526318",
+          "1242105266",
+          "10751912752",
+          "10516720",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "6896670",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0"
+        ],
+        "original_money_opening": "1559457628979",
+        "periods": 63,
+        "physically_verified": true,
+        "settled_events": 5767,
+        "treasury_draw": 24657107075
+      }
     },
     "source": "research/coupled-results.json#/upstream_capital/cases/1"
   }

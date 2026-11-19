@@ -1,6 +1,6 @@
 # Completion roadmap and feasibility boundaries
 
-Latest review: 18 November 2026, repeated-cycle continuity diagnostics.
+Latest review: 19 November 2026, verified three-month extension of the five-year candidate.
 The current work order below supersedes earlier milestone-specific next steps.
 
 ## Completion scope and remaining work — 12 November 2026
@@ -50,11 +50,19 @@ renewal from existing measure sustains the ordered monetary pattern for three
 cycles, while leaving the physical failure visible. Partial-share concentration
 remains a separate failing test. See physical-circulation.md for exact results.
 
-Next integration gate: continuous production across the horizon boundary, with
-committed generation, original finite deposits, food ages and capital replacement.
-Recalculate circulation from a physically accepted extension, then persist reviewed
-renewal funding with stale-state and history checks. Package 3 calibration and
-package 4 remain incomplete; this diagnostic is not an indefinite viability proof.
+The first prospective extension now covers 63 months. A revision at absolute
+month 57 schedules fuel extraction and generation before food dispatch across the
+boundary. The physical and payment histories before 57 and the original reserves
+required at month 59 pass continuation checks. Eight treasury transfers cover the
+revised payment suffix from existing balances. This experiment consumes carried
+food reserves; it does not yet renew them for a second agricultural cycle.
+See the [extension results](physical-circulation.md#three-additional-months--19-november-2026).
+
+Next, extend through the following harvest and replacement dates, with terminal
+reserve targets and finite fuel and packaging deposits. Compare extraction and
+disposal under the same demand. Recalculate the payment suffix for the accepted
+physical candidate, then persist reviewed funding with stale-state, retry and
+history checks. Package 3 source calibration continues alongside package 4.
 The effort range below remains a planning estimate, not a new deadline.
 
 The target for this estimate is **research demonstrator v1**: a reproducible,
