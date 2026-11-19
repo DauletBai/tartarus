@@ -2639,3 +2639,72 @@ labour are imposed. A hectare-season is one hectare available for one sowing.
 A preceding harvest can bridge the January deadline. Extending that success
 to five years requires an explicit change to land, yields, external supply,
 or another stated assumption. This bound concerns the model's land pool.
+
+### Five years of deliveries under field rotation
+
+The crop study follows January 2026 through December 2031 with one continuous
+inventory. The predecessor year retains the baseline food needs. From January
+2027 it uses all 60 central population targets for rice and oats and the
+original monthly feed requirements. Total target-period deliveries are
+50,244,382,315 kg of rice component, 30,103,767,854 kg of oats component and
+166,290,176,030 kg of feed equivalent. All values use the original gross-equivalent
+grain units.
+
+Four permanent, nearly equal field groups each follow this sequence:
+
+1. One season of dry fallow.
+2. A season for rice or oats.
+3. A feed-grain season.
+4. A flexible grain season.
+
+The groups start in different phases. Previous years are assumed to follow the
+same sequence. The model assigns no food, water demand or fertility benefit
+to fallow. Feed is a grain equivalent whose species is unspecified. This
+grain–fallow rotation is a test policy. Regional alternatives such as
+legume rotations would need their own seeds, outputs, water and evidence.
+FAO describes how species diversification affects soil and pest management,
+and how water needs vary with crop, climate and growth stage.
+[FAO on crop diversity](https://www.fao.org/conservation-agriculture/in-practice/species-diversification/en/)
+and [FAO on crop water needs](https://www.fao.org/4/s2022e/s2022e07.htm).
+
+| Gross harvest per hectare | Total land for this schedule, including fallow (ha) | Highest monthly field withdrawal (m³) | Months above original water limit, out of 72 |
+| --- | ---: | ---: | ---: |
+| Reference | 14,043,063 | 10,507,078,000 | 6 |
+| 20% higher | 11,702,552 | 8,755,898,000 | 0 |
+| 15% lower | 16,521,248 | 12,361,268,000 | 12 |
+
+The original pool contains 9,259,793 ha and allows 9,259,793,000 m³ per
+month. All three schedules reach their water peak in June 2031. For the
+reference yield the candidate adds 4,783,270 ha and needs an extra
+1,247,285,000 m³ that June. Raising gross yield by 20% at unchanged stage
+water per hectare and seed rates removes every water overrun in this case.
+The area still exceeds the original pool by 2,442,759 ha. The yield changes
+are sensitivity tests; they assume no particular technology for achieving them.
+
+The producer works backwards from September harvests, reserving seed for
+the following April and restoring the original stocks of raw, preserved
+and delivered grain at the terminal date. The monthly replay works forwards
+from the original stocks. It charges seed at sowing, counts five stages of
+irrigation at their actual dates, and allows one month each for preservation
+and dispatch. The dated audit preserves the original expiry date on transfer.
+All three cases meet the 60 deadlines at the displayed land and sufficient
+monthly water, with zero expired grain and zero grain in transit at the end.
+The calculated area is the minimum for **these annual sowings and field
+phases**. Different inter-year stock targets or crop calendars could change it.
+
+A separate limit applies to *every* sowing schedule on the original land
+under these phase and stock rules. Sum the predecessor-year and five target
+years' demand, divide each grain's total by gross yield less seed and round up
+to hectares for each crop. With restored terminal stocks and no imports, the
+reference needs at least 58,752,763 sown hectare-seasons across six seasons.
+Even allowing every active field to grow any grain, the rotation leaves only
+41,669,068 available. The gap is at least 17,083,695 hectare-seasons. Water
+alone caps the same six sowings at 55,558,758 hectare-seasons before any
+land restrictions. The two shortages overlap and cannot be added.
+
+The agricultural balance includes finite grain stores and manual-route
+throughput. Shared workers, power, packaging, transport equipment and money
+for the increased flows still need a joint replay. Salinity, soil nutrient
+balances, field-specific crop suitability, cover crops, and field measurements
+of rainfall, yields and irrigation efficiency remain open inputs.
+[Monthly results and field assignments](../research/field-rotation.json).

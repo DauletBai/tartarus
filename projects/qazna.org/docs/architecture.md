@@ -492,6 +492,15 @@ shelf life is not evidence of food safety. The model still does not establish ac
 physical delivery or an indefinitely repeatable monetary circulation policy.
 
 
+### Field rotation in the grain study
+
+Each fixed field group is a seasonal land pool. Its crop processes carry
+phase-specific admissible sowing dates and share the monthly irrigation budget.
+The seasonal matrix and the independent stock replay check the same candidate.
+The food-route audit also accepts a standalone seasonal graph so the crop
+study can verify dates and expiry without asserting a funded capital plan.
+[Five-year field study](physical-circulation.md#five-years-of-deliveries-under-field-rotation).
+
 ### Population registry and demand binding
 
 The offline horizon calculation compares projected demand with physical supply

@@ -1151,3 +1151,11 @@ also compares grants and closing accounts with an independent suffix replay.
 
 The extended scenario generator reads the population input fixture for its January targets. The byte-for-byte check includes pending December shipments, a one-kilogram dispatch shortfall and a fabricated closing stock that must both fail physical replay.
 The five-sowing bound sums raw, preserved and delivered stocks per crop. The generator checks zero external food, restoration of opening stocks and the land assignment of every process with positive net food output.
+
+Run `cargo test --locked --example field_rotation` for uneven field sizes and
+crop-specific allocations. To regenerate the published 72-month study, run
+`cargo run --locked --example field_rotation -- research/field-rotation.json`.
+The full check regenerates it to a temporary path and compares every byte.
+Moving one hectare onto a resting field or losing 20% of the required peak
+water must fail both seasonal checks. Food age and terminal stocks are
+independently replayed in each accepted case.
