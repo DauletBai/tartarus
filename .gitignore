@@ -5,3 +5,10 @@ __pycache__/
 *.bak
 .env
 .env.*
+
+# Private correspondence and submission packages do not belong in this repository.
+/book/eOtinish*/
+/book/academy_RK*/
+/book/Президент_*/
+/book/publishers_*/
+/Обращение.docx

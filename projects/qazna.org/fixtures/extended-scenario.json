@@ -22333,6 +22333,1006 @@
       "opening": "1559457628979",
       "settled_volume": "3752613460998"
     },
+    "recurrence": {
+      "format_version": 1,
+      "limits": "Repeated money is a conditional pattern test, not evidence of repeated physical provision. Renewal uses existing treasury balances and fixed next-cycle prefix floors; no live authority. Repeated external flows remain declared boundaries.",
+      "money_with_explicit_treasury_renewal": {
+        "blocked": null,
+        "closing": [
+          "1559457628979",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0"
+        ],
+        "completed_cycles": 3,
+        "cycle_closings": [
+          [
+            "1559457628979",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0"
+          ],
+          [
+            "1559457628979",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0"
+          ],
+          [
+            "1559457628979",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0"
+          ]
+        ],
+        "opening_total": "1559457628979",
+        "renewal_transfers": [
+          {
+            "amount": "113833355363",
+            "cycle": 1,
+            "from": 0,
+            "to": 5
+          },
+          {
+            "amount": "79188421135",
+            "cycle": 1,
+            "from": 0,
+            "to": 6
+          },
+          {
+            "amount": "685470885052",
+            "cycle": 1,
+            "from": 0,
+            "to": 7
+          },
+          {
+            "amount": "86036644800",
+            "cycle": 1,
+            "from": 0,
+            "to": 8
+          },
+          {
+            "amount": "59851579000",
+            "cycle": 1,
+            "from": 0,
+            "to": 9
+          },
+          {
+            "amount": "518087294166",
+            "cycle": 1,
+            "from": 0,
+            "to": 10
+          },
+          {
+            "amount": "667882509",
+            "cycle": 1,
+            "from": 0,
+            "to": 11
+          },
+          {
+            "amount": "944000000",
+            "cycle": 1,
+            "from": 0,
+            "to": 12
+          },
+          {
+            "amount": "1416000000",
+            "cycle": 1,
+            "from": 0,
+            "to": 13
+          },
+          {
+            "amount": "9600000",
+            "cycle": 1,
+            "from": 0,
+            "to": 14
+          },
+          {
+            "amount": "2424000",
+            "cycle": 1,
+            "from": 0,
+            "to": 15
+          },
+          {
+            "amount": "5400005400",
+            "cycle": 1,
+            "from": 0,
+            "to": 16
+          },
+          {
+            "amount": "300000000",
+            "cycle": 1,
+            "from": 0,
+            "to": 17
+          },
+          {
+            "amount": "1475000000",
+            "cycle": 1,
+            "from": 0,
+            "to": 21
+          },
+          {
+            "amount": "667882509",
+            "cycle": 1,
+            "from": 0,
+            "to": 22
+          },
+          {
+            "amount": "2950000000",
+            "cycle": 1,
+            "from": 0,
+            "to": 23
+          },
+          {
+            "amount": "40400000",
+            "cycle": 1,
+            "from": 0,
+            "to": 24
+          },
+          {
+            "amount": "40400000",
+            "cycle": 1,
+            "from": 0,
+            "to": 25
+          },
+          {
+            "amount": "20200000",
+            "cycle": 1,
+            "from": 0,
+            "to": 26
+          },
+          {
+            "amount": "40400000",
+            "cycle": 1,
+            "from": 0,
+            "to": 27
+          },
+          {
+            "amount": "40400000",
+            "cycle": 1,
+            "from": 0,
+            "to": 28
+          },
+          {
+            "amount": "150200000",
+            "cycle": 1,
+            "from": 0,
+            "to": 30
+          },
+          {
+            "amount": "113833355363",
+            "cycle": 2,
+            "from": 0,
+            "to": 5
+          },
+          {
+            "amount": "79188421135",
+            "cycle": 2,
+            "from": 0,
+            "to": 6
+          },
+          {
+            "amount": "685470885052",
+            "cycle": 2,
+            "from": 0,
+            "to": 7
+          },
+          {
+            "amount": "86036644800",
+            "cycle": 2,
+            "from": 0,
+            "to": 8
+          },
+          {
+            "amount": "59851579000",
+            "cycle": 2,
+            "from": 0,
+            "to": 9
+          },
+          {
+            "amount": "518087294166",
+            "cycle": 2,
+            "from": 0,
+            "to": 10
+          },
+          {
+            "amount": "667882509",
+            "cycle": 2,
+            "from": 0,
+            "to": 11
+          },
+          {
+            "amount": "944000000",
+            "cycle": 2,
+            "from": 0,
+            "to": 12
+          },
+          {
+            "amount": "1416000000",
+            "cycle": 2,
+            "from": 0,
+            "to": 13
+          },
+          {
+            "amount": "9600000",
+            "cycle": 2,
+            "from": 0,
+            "to": 14
+          },
+          {
+            "amount": "2424000",
+            "cycle": 2,
+            "from": 0,
+            "to": 15
+          },
+          {
+            "amount": "5400005400",
+            "cycle": 2,
+            "from": 0,
+            "to": 16
+          },
+          {
+            "amount": "300000000",
+            "cycle": 2,
+            "from": 0,
+            "to": 17
+          },
+          {
+            "amount": "1475000000",
+            "cycle": 2,
+            "from": 0,
+            "to": 21
+          },
+          {
+            "amount": "667882509",
+            "cycle": 2,
+            "from": 0,
+            "to": 22
+          },
+          {
+            "amount": "2950000000",
+            "cycle": 2,
+            "from": 0,
+            "to": 23
+          },
+          {
+            "amount": "40400000",
+            "cycle": 2,
+            "from": 0,
+            "to": 24
+          },
+          {
+            "amount": "40400000",
+            "cycle": 2,
+            "from": 0,
+            "to": 25
+          },
+          {
+            "amount": "20200000",
+            "cycle": 2,
+            "from": 0,
+            "to": 26
+          },
+          {
+            "amount": "40400000",
+            "cycle": 2,
+            "from": 0,
+            "to": 27
+          },
+          {
+            "amount": "40400000",
+            "cycle": 2,
+            "from": 0,
+            "to": 28
+          },
+          {
+            "amount": "150200000",
+            "cycle": 2,
+            "from": 0,
+            "to": 30
+          }
+        ],
+        "requested_cycles": 3,
+        "settled_events": 17220,
+        "settled_volume": "11257840382994"
+      },
+      "money_without_renewal": {
+        "blocked": "cycle 1, period 0, event 9: insufficient measure or dependency",
+        "closing": [
+          "1559457628979",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0"
+        ],
+        "completed_cycles": 1,
+        "cycle_closings": [
+          [
+            "1559457628979",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0"
+          ]
+        ],
+        "opening_total": "1559457628979",
+        "renewal_transfers": [],
+        "requested_cycles": 3,
+        "settled_events": 5749,
+        "settled_volume": "3763473610347"
+      },
+      "physical": [
+        {
+          "candidate_cycle_balances": [
+            [
+              5299074500,
+              3641677178,
+              31195055225,
+              423684211,
+              294736843,
+              2551301331,
+              469078948,
+              326315790,
+              2824655045,
+              0,
+              8000000000,
+              12000000000,
+              0,
+              0,
+              3000,
+              3000,
+              90000000000,
+              2525000000,
+              332117491,
+              50000000,
+              60000000,
+              860376000,
+              20,
+              40,
+              20,
+              20,
+              20,
+              20000000,
+              26400000,
+              3000000,
+              315715833990
+            ]
+          ],
+          "cycles": 1,
+          "failure": null,
+          "feasible": true,
+          "negative_stock_diagnostics": [],
+          "periods": 60
+        },
+        {
+          "candidate_cycle_balances": [
+            [
+              5299074500,
+              3641677178,
+              31195055225,
+              423684211,
+              294736843,
+              2551301331,
+              469078948,
+              326315790,
+              2824655045,
+              0,
+              8000000000,
+              12000000000,
+              0,
+              0,
+              3000,
+              3000,
+              90000000000,
+              2525000000,
+              332117491,
+              50000000,
+              60000000,
+              860376000,
+              20,
+              40,
+              20,
+              20,
+              20,
+              20000000,
+              26400000,
+              3000000,
+              315715833990
+            ],
+            [
+              5299085785,
+              3641685033,
+              31195077945,
+              423684211,
+              294736843,
+              2551301331,
+              469078948,
+              326315790,
+              2824655045,
+              -30000000000,
+              8000000000,
+              12000000000,
+              -600,
+              -600,
+              3000,
+              6000,
+              90000000000,
+              1050000000,
+              -335765018,
+              50000000,
+              60000000,
+              1620752000,
+              20,
+              40,
+              20,
+              20,
+              20,
+              -560000000,
+              28800000,
+              6000000,
+              631431667980
+            ]
+          ],
+          "cycles": 2,
+          "failure": "negative stock at absolute period 60: energy_ticks deficit 30000000000",
+          "feasible": false,
+          "negative_stock_diagnostics": [
+            {
+              "first_deficit": "30000000000",
+              "first_period": 60,
+              "name": "energy_ticks",
+              "resource": 9
+            },
+            {
+              "first_deficit": "600",
+              "first_period": 60,
+              "name": "robot_cell_kits",
+              "resource": 12
+            },
+            {
+              "first_deficit": "600",
+              "first_period": 60,
+              "name": "voluntary_training_places",
+              "resource": 13
+            },
+            {
+              "first_deficit": "10000000",
+              "first_period": 62,
+              "name": "finite_packaging_ore_kg",
+              "resource": 27
+            },
+            {
+              "first_deficit": "5309418",
+              "first_period": 93,
+              "name": "finite_fuel_deposit_ticks",
+              "resource": 18
+            }
+          ],
+          "periods": 120
+        },
+        {
+          "candidate_cycle_balances": [
+            [
+              5299074500,
+              3641677178,
+              31195055225,
+              423684211,
+              294736843,
+              2551301331,
+              469078948,
+              326315790,
+              2824655045,
+              0,
+              8000000000,
+              12000000000,
+              0,
+              0,
+              3000,
+              3000,
+              90000000000,
+              2525000000,
+              332117491,
+              50000000,
+              60000000,
+              860376000,
+              20,
+              40,
+              20,
+              20,
+              20,
+              20000000,
+              26400000,
+              3000000,
+              315715833990
+            ],
+            [
+              5299085785,
+              3641685033,
+              31195077945,
+              423684211,
+              294736843,
+              2551301331,
+              469078948,
+              326315790,
+              2824655045,
+              -30000000000,
+              8000000000,
+              12000000000,
+              -600,
+              -600,
+              3000,
+              6000,
+              90000000000,
+              1050000000,
+              -335765018,
+              50000000,
+              60000000,
+              1620752000,
+              20,
+              40,
+              20,
+              20,
+              20,
+              -560000000,
+              28800000,
+              6000000,
+              631431667980
+            ],
+            [
+              5299097070,
+              3641692888,
+              31195100665,
+              423684211,
+              294736843,
+              2551301331,
+              469078948,
+              326315790,
+              2824655045,
+              -60000000000,
+              8000000000,
+              12000000000,
+              -1200,
+              -1200,
+              3000,
+              9000,
+              90000000000,
+              -425000000,
+              -1003647527,
+              50000000,
+              60000000,
+              2381128000,
+              20,
+              40,
+              20,
+              20,
+              20,
+              -1140000000,
+              31200000,
+              9000000,
+              947147501970
+            ]
+          ],
+          "cycles": 3,
+          "failure": "negative stock at absolute period 60: energy_ticks deficit 30000000000",
+          "feasible": false,
+          "negative_stock_diagnostics": [
+            {
+              "first_deficit": "30000000000",
+              "first_period": 60,
+              "name": "energy_ticks",
+              "resource": 9
+            },
+            {
+              "first_deficit": "600",
+              "first_period": 60,
+              "name": "robot_cell_kits",
+              "resource": 12
+            },
+            {
+              "first_deficit": "600",
+              "first_period": 60,
+              "name": "voluntary_training_places",
+              "resource": 13
+            },
+            {
+              "first_deficit": "10000000",
+              "first_period": 62,
+              "name": "finite_packaging_ore_kg",
+              "resource": 27
+            },
+            {
+              "first_deficit": "5309418",
+              "first_period": 93,
+              "name": "finite_fuel_deposit_ticks",
+              "resource": 18
+            },
+            {
+              "first_deficit": "25000000",
+              "first_period": 162,
+              "name": "finite_ore_deposit_ticks",
+              "resource": 17
+            }
+          ],
+          "periods": 180
+        }
+      ],
+      "three_month_bridge": {
+        "all_payments_settled": false,
+        "allocations": [
+          {
+            "basis": "Provision for the revised production schedule",
+            "movement": {
+              "amount": 1407236844,
+              "from": 0,
+              "to": 5
+            },
+            "period": 57
+          },
+          {
+            "basis": "Provision for the revised production schedule",
+            "movement": {
+              "amount": 978947370,
+              "from": 0,
+              "to": 6
+            },
+            "period": 57
+          },
+          {
+            "basis": "Provision for the revised production schedule",
+            "movement": {
+              "amount": 8473965135,
+              "from": 0,
+              "to": 7
+            },
+            "period": 57
+          },
+          {
+            "basis": "Provision for the revised production schedule",
+            "movement": {
+              "amount": 1785526318,
+              "from": 0,
+              "to": 8
+            },
+            "period": 57
+          },
+          {
+            "basis": "Provision for the revised production schedule",
+            "movement": {
+              "amount": 1242105266,
+              "from": 0,
+              "to": 9
+            },
+            "period": 57
+          },
+          {
+            "basis": "Provision for the revised production schedule",
+            "movement": {
+              "amount": 10751912752,
+              "from": 0,
+              "to": 10
+            },
+            "period": 57
+          },
+          {
+            "basis": "Provision for the revised production schedule",
+            "movement": {
+              "amount": 10516720,
+              "from": 0,
+              "to": 11
+            },
+            "period": 57
+          },
+          {
+            "basis": "Provision for the revised production schedule",
+            "movement": {
+              "amount": 6896670,
+              "from": 0,
+              "to": 22
+            },
+            "period": 57
+          }
+        ],
+        "events": 5813,
+        "extension_food_delivered_kg": 10509821951,
+        "extra_extracted_fuel": 6896670,
+        "first_replanned_period": 57,
+        "first_unfunded_period": 57,
+        "fuel_deposit_at_end": 325220821,
+        "funded_suffix": {
+          "attempted_events": 292,
+          "closing": [
+            "1559457628979",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0"
+          ],
+          "first_blocked_event": null,
+          "first_blocked_period": null,
+          "insufficient_events": 0,
+          "minimum_balance": [
+            "1438317607982",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0"
+          ],
+          "opening_total": "1559457628979",
+          "settled_events": 292,
+          "settled_volume": "325047425519",
+          "unavailable_events": 0
+        },
+        "generation_at_59": 6889773,
+        "opening_deficits_by_account": [
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "1407236844",
+          "978947370",
+          "8473965135",
+          "1785526318",
+          "1242105266",
+          "10751912752",
+          "10516720",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "6896670",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0"
+        ],
+        "original_money_opening": "1559457628979",
+        "periods": 63,
+        "physically_verified": true,
+        "settled_events": 5767,
+        "treasury_draw": 24657107075
+      }
+    },
     "source": "research/coupled-results.json#/upstream_capital/cases/1"
   }
 }
