@@ -89,9 +89,13 @@ persists even if all production starts are rescheduled within the existing graph
    restored stocks, the five existing sowings fall at least 4,186,128 hectare-seasons
    short. The [field rotation study](physical-circulation.md#five-years-of-deliveries-under-field-rotation)
    now gives three grain plans under changed land, yield and monthly irrigation.
-   Next reinsert their dated quantities into the shared upstream graph and verify
-   energy, packaging, labour, transport equipment and exact circulation together. Publish a verified candidate or an
-   infeasibility bound and list all needs still outside the model.
+   The [upstream check](physical-circulation.md#shared-inputs-for-the-six-grain-seasons)
+   carries ore, wrapping and power inputs across the predecessor boundary. Equipment
+   replacement and built storage miss dated deadlines. Repair those schedules and
+   verify all resource balances before replaying exact circulation. The separate
+   [district portfolio](physical-circulation.md#greenhouse-freshwater-and-coastal-production)
+   quantifies alternative food and water routes. Integration needs a shared energy,
+   feed, freight and nutrient-demand allocation.
 3. Use that scenario for operator review, revision, recovery and a reproducible
    release. Regional calibration and additional sectors extend the scope of
    the result. Reopen reusable packaging when addressing its measured gap is

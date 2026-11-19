@@ -67,6 +67,12 @@ def main():
         run(["cargo", "run", "--locked", "--example", "field_rotation", "--", str(report)])
         if report.read_bytes() != (ROOT / "research/field-rotation.json").read_bytes():
             raise SystemExit("Field rotation results differ from reproducible calculation")
+    run(["cargo", "test", "--locked", "--example", "food_technologies"])
+    with tempfile.TemporaryDirectory(prefix="qazna-food-tech-") as directory:
+        report = Path(directory) / "food-technologies.json"
+        run(["cargo", "run", "--locked", "--example", "food_technologies", "--", str(report)])
+        if report.read_bytes() != (ROOT / "research/food-technologies.json").read_bytes():
+            raise SystemExit("Food technology results differ from reproducible calculation")
     with tempfile.TemporaryDirectory(prefix="qazna-population-") as directory:
         fixture, report = Path(directory) / "population-study.json", Path(directory) / "population-results.json"
         run(["cargo", "run", "--locked", "--release", "--example", "population_study", "--", str(fixture), str(report)])

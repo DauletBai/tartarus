@@ -1159,3 +1159,13 @@ The full check regenerates it to a temporary path and compares every byte.
 Moving one hectare onto a resting field or losing 20% of the required peak
 water must fail both seasonal checks. Food age and terminal stocks are
 independently replayed in each accepted case.
+
+## Reproducing the district food study
+
+Run `cargo test --locked --example food_technologies` and
+`cargo run --locked --example food_technologies -- /tmp/food-technologies.json`
+from the project directory. Inputs live in `fixtures/food-technologies.json`.
+The full check regenerates both district and field-rotation reports and compares
+their bytes with the published results. The tests cover groundwater carry,
+shared abstractions, conditional water reuse, independent power reserve and
+seasonal stock recovery. [Study definition](physical-circulation.md#greenhouse-freshwater-and-coastal-production).

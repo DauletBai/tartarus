@@ -229,6 +229,7 @@ On Linux, set `PG_BIN` to the installed PostgreSQL directory, for example `/usr/
 ## Documentation
 
 - [Physical chains, shared capabilities and goods/payment verification](docs/physical-circulation.md)
+- [Five-year greenhouse, freshwater and coastal food comparison, including local wells](docs/physical-circulation.md#greenhouse-freshwater-and-coastal-production)
 - [Operation without AI: mathematical model, exact example, budgets and optional AI costs](docs/computation-and-ai-costs.md)
 
 - [AI economic research: company fit, Kazakhstan partnership routes, proposed experiments and pilot budget](docs/ai-economic-research.md)

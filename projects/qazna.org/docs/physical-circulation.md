@@ -2708,3 +2708,97 @@ for the increased flows still need a joint replay. Salinity, soil nutrient
 balances, field-specific crop suitability, cover crops, and field measurements
 of rainfall, yields and irrigation efficiency remain open inputs.
 [Monthly results and field assignments](../research/field-rotation.json).
+
+### Shared inputs for the six grain seasons
+
+Repeating the original upstream starts for the predecessor year changes the result.
+Keep the original opening balances once, charge non-food starts and mature their
+outputs after the original lead times. Even the hand-operated packing and
+dispatch routes draw 578,522,985,994 energy ticks and 289,261,492,997 wrapping
+ticks. The proposed upstream starts can supply those amounts on paper. In
+January 2031 they begin to overdraw the finite source of packaging ore. By
+December the schedule has requested 100,000,000 kg more ore than exists.
+
+A second run caps extraction, residue recovery and wrapper fabrication by the
+actual material available each month. The revised schedule preserves every grain
+order and the original per-route throughput limits. The lowest wrapper balance
+is 4,379,950,217 ticks; the scheduled shared human work fits in every month.
+The power supply behind that balance still needs functioning equipment. Applying
+the original commissioning delays and service lives to the 72-month calendar
+finds 37 equipment-capacity overruns in 18 months, starting with generation in
+July 2027. At the reference yield, constructed grain storage first falls short
+by 14,222,402,620 kg in July 2028. These are failures of a particular timetable.
+The next repair should move construction and equipment replacement ahead of
+those dates before asking the treasury to replay payments. No money is issued
+by either calculation. [Three grain cases and dated gaps](../research/field-rotation.json).
+
+### Greenhouse, freshwater and coastal production
+
+One operating district orders 1,000 kg of lettuce, 500 kg of fish fillet and
+300 kg of shellfish meat each month in 2027–2031. The routes serve the same
+orders. Finfish require 1,000 kg live harvest and 1,200 kg of contracted
+compound feed per month. Feed is an external district input; integrating the
+district into the national graph requires a matching draw from feed production.
+The coastal partner ships edible product after processing. The three commodities
+retain their identities throughout. [Inputs](../fixtures/food-technologies.json)
+and [ten five-year cases](../research/food-technologies.json).
+
+For an annual order of 12,000 kg of lettuce, the reference comparison gives
+293 m² of greenhouse growing area or 3,077 m² in the open field, using 240 or
+3,000 m³ of water per year respectively. Barbosa and colleagues compared a
+modeled hydroponic greenhouse with conventional lettuce production in Arizona.
+These are growing areas; access roads, plant rooms, feed, construction and
+off-site energy also need space. The open-field figure is an annual equivalent.
+Winter lettuce provision in Kazakhstan needs a regional season and energy
+balance. The district reports monthly heat separately from electricity.
+[Original lettuce study](https://doi.org/10.3390/ijerph120606879).
+
+| Production route | Result for the selected orders | Operational consequence |
+| --- | --- | --- |
+| Hydroponic greenhouse and freshwater recirculating aquaculture (RAS) | 220 m³/month of make-up water. A well supplies it with 245 m³/month of raw water at 90% yield. | At 40 m dynamic head, pumping and treatment take 39 + 98 kWh/month. A modeled 4 kW life-support load needs 32 kWh for eight hours, exceeding the usable backup by 8 kWh. |
+| Treated fish water supplied to the greenhouse | Polishing 25 m³/month of separately collected purge supplies 20 m³/month to plants. Raw well withdrawals fall from 14,700 to 13,380 m³ over five years. | Total site electricity rises by 180 kWh over the same period. Eligibility depends on verified water quality. Fertilizer substitution would require a separate nutrient balance. |
+| Flow-through freshwater farm | A 5,000 m³/month gross river intake exceeds summer allocations in ten months. | The model caps the combined well and river draw. Discharge quality, downstream rights and site-specific stream depletion also constrain operation. Gross intake and consumption have different meanings. |
+| Marine shellfish from a coastal partner | A three-month annual closure leaves 3,000 kg of orders uncovered over five years under the regular stock policy. | With the same initial 300 kg, a 900 kg inland depot and orders placed before closure, all 18,000 kg are supplied. Freight stays within 240,000 kg·km/month and closing stock is 300 kg. |
+| Delivered water for the same RAS and greenhouse orders | Delivering 220 m³/month over 35 km adds 462,000 loaded tonne-km in five years. | The comparison assumes equal quality at delivery. A carrier's vehicle energy, empty return journey and source treatment belong in its delivered cost. |
+
+Recirculating systems require aeration, treatment and reliable power.
+A qualifying purge stream is limited by fish make-up, polishing yield,
+accepted quantity and plant demand. Marine bivalve grow-out can use naturally
+available feed; the scenario presupposes a mature licensed partner, released
+lots and cold transport. It assigns no marine production to an inland river or
+to the Caspian. Production envelopes exclude farm start-up, mortality, seed
+supply and biological growth scheduling. The diagnostic replays resource
+requirements even after a shortfall so each cause remains visible.
+[FAO on recirculation](https://www.fao.org/4/x5744e/x5744e0g.htm),
+[FAO on integrated fish and plant farming](https://www.fao.org/family-farming/detail/en/c/1743021/)
+and [NOAA on marine aquaculture inputs](https://www.fisheries.noaa.gov/s3/2022-03/Fact-Sheet-Aquaculture-and-Environmental-Interactions.pdf).
+
+**When a local well saves resources.** Raw pumping is bounded by mechanical
+capacity, the gross allocation, the shared basin allowance and water available
+above the protected stock. The aquifer balance carries between seasons.
+Halving the available net inflow first leaves 40 m³ of make-up water uncovered
+in June 2027. Multiplying total dynamic head by four raises pumping demand and
+exceeds district electric capacity by 54 kWh per month. Site selection requires
+a pumping test, seasonal drawdown and recovery, chemical analysis, competing
+withdrawals and an approved withdrawal and discharge envelope. Wells connected
+to rivers can reduce streamflow with a lag. [USGS on streamflow depletion by wells](https://pubs.usgs.gov/circ/1376/).
+
+A five-year break-even test uses resource values in consistent units. For the
+separate well and RAS route let F be the site's fixed five-year well, treatment,
+maintenance and retirement cost net of residual value, E the cost per kWh and V
+other variable costs per raw m³ (including lawful disposal). Compare
+**F + 8,220 E + 14,700 V** with **13,200 S + 462,000 T**, where S is the
+source cost per treated m³ and T the all-in haul cost per loaded tonne-km.
+A nearby pipeline needs its own construction, pumping, leakage and maintenance
+figures. Drilling becomes a candidate when it meets the physical constraints
+and its full cost falls below the available alternative. Local cost observations
+are needed to quote savings in tenge.
+
+Further routes can enter this comparison with measured inputs. For vertical
+or aeroponic farming, supply lighting, cooling, uptime and total floor area.
+For marine finfish add feed, species-specific conditions, farm limits and
+shipping. For algae supply a permitted site, edible yield, processing and an
+order for that particular food. For irrigated fields retain sowing windows,
+rotation, application losses and soil salinity. Automated climate, irrigation,
+oxygen and feeder controls need staff, sensors, maintenance and a tested
+power-loss response. [USDA research on controlled environments](https://www.ers.usda.gov/sites/default/files/_laserfiche/publications/108221/EIB-264.pdf).
