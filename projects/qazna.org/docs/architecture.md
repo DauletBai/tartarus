@@ -831,3 +831,28 @@ for formulas, counterexamples and the remaining continuous-production gate.
 The extended scenario now exercises prospective physical and monetary continuation at period 57 and verifies a treasury-funded suffix in an offline replay. See the [63-month calculation](physical-circulation.md#three-additional-months--19-november-2026).
 
 The same five-year parent now has two verified 72-month continuations. Both use the existing physical and monetary continuation code and the offline treasury replay. A follow-on resource bound checks whether an identical packaging schedule can recur. See the [sixth-year calculation](physical-circulation.md#sixth-year-harvest-and-reserve-renewal).
+
+### Reviewed treasury funding
+
+An operator submits `fund_from_treasury: true` on the existing coupled draft
+endpoint with both expected versions. The service loads the approved physical
+plan and committed balances, orders all remaining payments and calculates the
+minimum opening balance for each account. It allocates only the productive
+units' deficits after reserving the treasury's own future obligations. The
+period comes from the physical plan's open boundary. Unavailable events,
+unsettled committed history, insufficient treasury or an unnecessary allocation
+reject the funding request. A given boundary can be funded once.
+
+The operator inspects `candidate.checkpoint` and approves or discards the saved
+draft in a separate request. Approval locks both current versions and verifies
+the candidate again. The existing append-only tables and idempotency keys store
+the decision and the funded research scenario. They create no live postings.
+Later versions carry approved allocations and verify all earlier closing balances.
+Existing unfunded requests and checkpoints preserve their canonical encoding.
+
+Evidence lists transfers in `treasury_allocations` with the period, productive
+account index and decimal amount. The common treasury is account zero. Physical
+event IDs in `events`, `failed` and `unavailable_events` retain their original
+numbering. The money report and opening bound cover the combined sequence, with
+treasury transfers preceding physical payments in their period. Its
+`first_blocked_event` indexes this combined sequence.

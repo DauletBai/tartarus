@@ -1,5 +1,9 @@
 # Qazna changelog
 
+## Reviewed treasury funding — 19 November 2026
+
+- Persist operator-reviewed allocations in coupled versions, recheck both heads before approval and retain the exact funded history through retry and recovery.
+
 ## Sixth-year harvest and renewal — 19 November 2026
 
 - Verify annual food flows, terminal reserves, capital replacement and explicit treasury funding across 72 months. Compare two packaging policies and bound their remaining physical capacity.

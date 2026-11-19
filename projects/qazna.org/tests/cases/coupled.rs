@@ -17,6 +17,7 @@ fn physical_proposal(generation: i64) -> ModelProposal {
 }
 fn proposal(generation: i64, model_generation: i64) -> CoupledProposal {
     CoupledProposal {
+        fund_from_treasury: false,
         id: Uuid::new_v4(),
         expected_generation: generation,
         model_generation,
@@ -485,4 +486,138 @@ async fn coupled_api_rejects_model_credentials_and_injected_payments() {
             .unwrap();
         assert_eq!(result.status(), StatusCode::FORBIDDEN);
     }
+}
+
+#[tokio::test]
+#[ignore = "requires isolated PostgreSQL; use scripts/check.py"]
+async fn treasury_review_race_retry_history_and_stale_physical_version() {
+    let f = Fixture::new().await;
+    let model = physical(&f, None).await;
+    let mut def = definition(model);
+    let id = def.id;
+    def.policy.opening = ["158", "0", "0", "2", "0"].map(str::to_string).to_vec();
+    def.policy.common_measure[1] = "5".into();
+    f.ledger
+        .create_coupled_scenario("scope", def)
+        .await
+        .unwrap();
+    let initial = f
+        .ledger
+        .propose_coupled_scenario("initial", id, proposal(0, 1))
+        .await
+        .unwrap();
+    let historical = f
+        .ledger
+        .resolve_coupled_scenario("initial-approve", initial.request.id, decision())
+        .await
+        .unwrap()
+        .candidate;
+    let read = |v: &CoupledVersion| {
+        serde_json::from_str::<CoupledCheckpoint>(v.checkpoint.as_ref().unwrap())
+            .unwrap()
+            .evidence
+    };
+    let base = read(&historical);
+    assert!(!base.all_scheduled_payments_settled);
+    let mut p = proposal(1, 1);
+    p.fund_from_treasury = true;
+    let stale = f
+        .ledger
+        .propose_coupled_scenario("stale-fund", id, p.clone())
+        .await
+        .unwrap();
+    let update = f
+        .ledger
+        .propose_model_scenario("model-change", model, physical_proposal(1))
+        .await
+        .unwrap();
+    f.ledger
+        .resolve_model_scenario("approve-change", update.request.id, decision())
+        .await
+        .unwrap();
+    assert!(matches!(
+        f.ledger
+            .resolve_coupled_scenario("not-applied", stale.request.id, decision())
+            .await,
+        Err(LedgerError::ScenarioStale)
+    ));
+    p.id = Uuid::new_v4();
+    p.model_generation = 2;
+    let left = f
+        .ledger
+        .propose_coupled_scenario("left", id, p.clone())
+        .await
+        .unwrap();
+    p.id = Uuid::new_v4();
+    let right = f
+        .ledger
+        .propose_coupled_scenario("right", id, p)
+        .await
+        .unwrap();
+    let (a, b) = tokio::join!(
+        f.ledger
+            .resolve_coupled_scenario("apply-left", left.request.id, decision()),
+        f.ledger
+            .resolve_coupled_scenario("apply-right", right.request.id, decision())
+    );
+    let (winner, key) = match (a, b) {
+        (Ok(a), Err(LedgerError::ScenarioStale)) => (a, "apply-left"),
+        (Err(LedgerError::ScenarioStale), Ok(b)) => (b, "apply-right"),
+        _ => panic!("exactly one reviewed generation must commit"),
+    };
+    let again = f
+        .ledger
+        .resolve_coupled_scenario(key, winner.request.id, decision())
+        .await
+        .unwrap();
+    assert_eq!(json!(winner), json!(again));
+    let e = read(&winner.candidate);
+    assert_eq!(
+        e.treasury_allocations,
+        vec![TreasuryAllocation {
+            period: 2,
+            to: 3,
+            amount: "6".into()
+        }]
+    );
+    assert_eq!(e.closing_by_period[..2], base.closing_by_period[..2]);
+    assert!(e.failed.is_empty() && e.resident_zero_each_period);
+    assert_eq!(e.money.opening_total, "160");
+    assert_eq!(e.money.settled_events, e.events.len() + 1);
+    assert_eq!(
+        json!(f.ledger.coupled_scenario(id, Some(1)).await.unwrap()),
+        json!(historical)
+    );
+    let mut duplicate = proposal(2, 2);
+    duplicate.fund_from_treasury = true;
+    assert!(
+        f.ledger
+            .propose_coupled_scenario("duplicate", id, duplicate)
+            .await
+            .is_err()
+    );
+    let carried = f
+        .ledger
+        .propose_coupled_scenario("carry", id, proposal(2, 2))
+        .await
+        .unwrap();
+    assert_eq!(json!(read(&carried.candidate)), json!(e));
+    // Producer event indices stay stable when the combined schedule gains a grant.
+    let mut disruption = proposal(2, 2);
+    let denied = e
+        .events
+        .iter()
+        .position(|v| v.period >= 2 && v.kind == EventKind::Goods)
+        .unwrap();
+    disruption.unavailable_events = vec![denied];
+    let interrupted = f
+        .ledger
+        .propose_coupled_scenario("future-outage", id, disruption)
+        .await
+        .unwrap();
+    let observed = read(&interrupted.candidate);
+    assert_eq!(observed.failed[0].event, denied);
+    assert_eq!(observed.money.first_blocked_event, Some(denied + 1));
+    assert_eq!(observed.treasury_allocations, e.treasury_allocations);
+    assert_eq!(f.balance(f.treasury).await, "1000");
 }

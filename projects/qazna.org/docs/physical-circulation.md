@@ -2514,8 +2514,8 @@ batch leaves a 6 kg material shortfall even with all available recovery.
 The original 1,559,457,628,979 accounting ticks cover both schedules. In each,
 436 scheduled events fail under the original account allocation; with 15
 explicit treasury transfers all 767 revised payments settle in order. The
-transfers and payments are offline replay evidence. Durable authorization of
-these revised transfers is the next service milestone.
+transfers and payments are offline replay evidence. The [reviewed funding workflow](architecture.md#reviewed-treasury-funding)
+now reproduces the same allocations and closing accounts.
 
 The follow-on bound converts all remaining ore and residue using the declared
 integer yields, adds stored recovered material and counts only finished
