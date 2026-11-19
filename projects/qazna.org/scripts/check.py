@@ -61,6 +61,12 @@ def main():
         run(["cargo", "run", "--locked", "--release", "--example", "extended_scenario", "--", str(target)])
         if target.read_bytes() != (ROOT / "fixtures/extended-scenario.json").read_bytes():
             raise SystemExit("Extended scenario differs from reproducible calculation")
+    run(["cargo", "test", "--locked", "--example", "field_rotation"])
+    with tempfile.TemporaryDirectory(prefix="qazna-rotation-") as directory:
+        report = Path(directory) / "field-rotation.json"
+        run(["cargo", "run", "--locked", "--example", "field_rotation", "--", str(report)])
+        if report.read_bytes() != (ROOT / "research/field-rotation.json").read_bytes():
+            raise SystemExit("Field rotation results differ from reproducible calculation")
     with tempfile.TemporaryDirectory(prefix="qazna-population-") as directory:
         fixture, report = Path(directory) / "population-study.json", Path(directory) / "population-results.json"
         run(["cargo", "run", "--locked", "--release", "--example", "population_study", "--", str(fixture), str(report)])

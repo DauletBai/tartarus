@@ -48,7 +48,17 @@ impl FoodRoutes {
         model: &CapitalCycle,
         plan: &[PeriodPlan],
     ) -> Result<FoodRouteEvidence, MathError> {
-        let h = &model.seasonal.physical;
+        self.audit_seasonal(&model.seasonal, plan)
+    }
+
+    /// Check dated food batches for a seasonal plan without a capital model.
+    /// The caller verifies land, water and other capacity constraints separately.
+    pub fn audit_seasonal(
+        &self,
+        seasonal: &crate::seasonal::Seasonal,
+        plan: &[PeriodPlan],
+    ) -> Result<FoodRouteEvidence, MathError> {
+        let h = &seasonal.physical;
         verify_linear(&h.compile()?, &h.vector(plan)?, None)?;
         if self.resources.is_empty()
             || self.resources.len() > 32
@@ -74,7 +84,7 @@ impl FoodRoutes {
             return Err(invalid());
         }
         let mut rules = BTreeMap::new();
-        let crops: BTreeSet<_> = model.seasonal.crops.iter().map(|c| c.process).collect();
+        let crops: BTreeSet<_> = seasonal.crops.iter().map(|c| c.process).collect();
         for x in &self.harvests {
             if x.shelf_periods == 0
                 || !crops.contains(&x.process)
