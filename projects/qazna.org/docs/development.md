@@ -1150,3 +1150,4 @@ accepted version and the original idempotent response. The extended study
 also compares grants and closing accounts with an independent suffix replay.
 
 The extended scenario generator reads the population input fixture for its January targets. The byte-for-byte check includes pending December shipments, a one-kilogram dispatch shortfall and a fabricated closing stock that must both fail physical replay.
+The five-sowing bound sums raw, preserved and delivered stocks per crop. The generator checks zero external food, restoration of opening stocks and the land assignment of every process with positive net food output.

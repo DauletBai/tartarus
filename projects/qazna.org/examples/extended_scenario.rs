@@ -645,7 +645,8 @@ fn january_opening(
     const JAN: usize = 12;
     let study: PopulationStudy =
         serde_json::from_slice(&fs::read("fixtures/population-study.json").unwrap()).unwrap();
-    let january = &study.project().unwrap().months[0];
+    let projection = study.project().unwrap();
+    let january = &projection.months[0];
     assert_eq!(january.calendar, "2027-01");
     let mut next = original.clone();
     next.boundary = JAN;
@@ -780,6 +781,7 @@ fn january_opening(
         "calendar_at_period_zero": "2026-01",
         "delivery_month": january.calendar,
         "january_index": JAN,
+        "five_year_land_bound_with_restored_stocks": land_bound(original, &projection),
         "verified_periods": original.plan.len(),
         "items": rows,
         "extra_fuel_extracted": extra_fuel,
@@ -800,5 +802,75 @@ fn january_opening(
             "closing_total": total(&revised.money.closing).to_string()
         },
         "scope": "The first year is a modeled predecessor. The population target replaces two needs for one January only. Other baseline deliveries, initial stocks, capacities and reserve floors are retained."
+    })
+}
+
+// Necessary five-sowing bound on the original target horizon, separate from
+// the January case. Summing raw, preserved and delivered forms cancels transfers.
+fn land_bound(input: &ModelInput, population: &qazna::population::PopulationEvidence) -> Value {
+    use std::collections::BTreeSet;
+    let s = &input.model.seasonal;
+    let h = &s.physical;
+    assert_eq!(population.months.len(), h.periods.len());
+    assert_eq!(s.land.len(), 1);
+    let mut sowing_dates = BTreeSet::new();
+    let mut positive_processes = BTreeSet::new();
+    let mut required = 0;
+    let mut rows = Vec::new();
+    for (food, item) in ["rice_component", "oats_component", "feed"]
+        .into_iter()
+        .enumerate()
+    {
+        let forms = [food, food + 3, food + 6];
+        // Existing stores must be restored by the end of the five seasons.
+        for r in forms {
+            assert_eq!(s.closing_floors.last().unwrap()[r], h.initial[r]);
+            assert!(h.periods.iter().all(|p| p.supplies[r] == 0));
+        }
+        let deliveries: i64 = if item == "feed" {
+            h.periods.iter().map(|p| p.needs[food + 6]).sum()
+        } else {
+            population
+                .months
+                .iter()
+                .map(|m| {
+                    let d = m.demands.iter().find(|d| d.item == item).unwrap();
+                    assert_eq!(d.unit, "gross-equivalent kg");
+                    d.central.as_ref().unwrap().parse::<i64>().unwrap()
+                })
+                .sum()
+        };
+        let mut max_yield = 0;
+        for (j, recipe) in h.processes.iter().enumerate() {
+            let net: i64 = forms
+                .iter()
+                .map(|&r| recipe.outputs[r] - recipe.inputs[r])
+                .sum();
+            if net > 0 {
+                // Distinct crops cannot claim the same occupied hectare.
+                assert!(positive_processes.insert(j));
+                let rule = s.crops.iter().find(|c| c.process == j).unwrap();
+                assert_eq!((rule.land_pool, rule.hectares_per_activity), (0, 1));
+                assert!(!rule.irrigation_m3_per_activity.is_empty());
+                sowing_dates.extend(rule.sowing_periods.iter().copied());
+                max_yield = max_yield.max(net);
+            }
+        }
+        assert!(max_yield > 0);
+        let area = deliveries / max_yield + i64::from(deliveries % max_yield != 0);
+        required += area;
+        rows.push(json!({"item":item,"required_deliveries_kg":deliveries,"maximum_net_kg_per_hectare":max_yield,"minimum_hectare_seasons":area}));
+    }
+    let available: i64 = sowing_dates
+        .iter()
+        .map(|&t| s.land[0].available_hectares[t])
+        .sum();
+    json!({
+        "items":rows,
+        "sowing_periods":sowing_dates,
+        "minimum_hectare_seasons":required,
+        "available_hectare_seasons":available,
+        "shortfall_hectare_seasons":(required-available).max(0),
+        "basis":"Five existing sowings, central rice and oats demand, original feed needs, no external food, all original grain stocks restored. Ignores water, work, spoilage and cash restrictions."
     })
 }

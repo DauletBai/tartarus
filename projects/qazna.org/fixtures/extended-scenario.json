@@ -22146,6 +22146,39 @@
       "calendar_at_period_zero": "2026-01",
       "delivery_month": "2027-01",
       "extra_fuel_extracted": 1091182,
+      "five_year_land_bound_with_restored_stocks": {
+        "available_hectare_seasons": 46298965,
+        "basis": "Five existing sowings, central rice and oats demand, original feed needs, no external food, all original grain stocks restored. Ignores water, work, spoilage and cash restrictions.",
+        "items": [
+          {
+            "item": "rice_component",
+            "maximum_net_kg_per_hectare": 3820,
+            "minimum_hectare_seasons": 13152980,
+            "required_deliveries_kg": 50244382315
+          },
+          {
+            "item": "oats_component",
+            "maximum_net_kg_per_hectare": 3380,
+            "minimum_hectare_seasons": 8906441,
+            "required_deliveries_kg": 30103767854
+          },
+          {
+            "item": "feed",
+            "maximum_net_kg_per_hectare": 5850,
+            "minimum_hectare_seasons": 28425672,
+            "required_deliveries_kg": 166290176030
+          }
+        ],
+        "minimum_hectare_seasons": 50485093,
+        "shortfall_hectare_seasons": 4186128,
+        "sowing_periods": [
+          3,
+          15,
+          27,
+          39,
+          51
+        ]
+      },
       "items": [
         {
           "baseline_due_kg": 469078948,

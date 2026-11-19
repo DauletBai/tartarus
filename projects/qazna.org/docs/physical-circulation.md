@@ -2614,3 +2614,28 @@ come from the central population projection. The other months retain the
 original production scenario's needs. A complete 2027–2031 test will require
 the predecessor year followed by all sixty months of population demand.
 See `reference.january_opening` in the [extended fixture](../fixtures/extended-scenario.json).
+
+#### How much land would all sixty months require?
+
+For this separate bound, use the original five sowings and restore the original
+stocks of raw, preserved and delivered food at the end. Preserve the original
+feed requirement and assume zero external food supply. Add the stock balances
+for the three forms of each crop. Preservation and transport transfer units
+between forms. Only sowing produces a positive net addition; its yield is
+harvest less seed. Divide required deliveries by the greatest net yield per
+hectare and round up for each crop. The three crops occupy the same land pool
+and can only be sown on the same five dates.
+
+| Crop | Required deliveries over five years (kg) | Net kg per hectare | At least this many hectare-seasons |
+| --- | ---: | ---: | ---: |
+| Rice | 50,244,382,315 | 3,820 | 13,152,980 |
+| Oats | 30,103,767,854 | 3,380 | 8,906,441 |
+| Feed | 166,290,176,030 | 5,850 | 28,425,672 |
+| **Total** | | | **50,485,093** |
+
+The five sowings offer 46,298,965 hectare-seasons. The gap is **at least
+4,186,128 hectare-seasons** even before irrigation, transport, expiry and shared
+labour are imposed. A hectare-season is one hectare available for one sowing.
+A preceding harvest can bridge the January deadline. Extending that success
+to five years requires an explicit change to land, yields, external supply,
+or another stated assumption. This bound concerns the model's land pool.
