@@ -23128,6 +23128,416 @@
           "periods": 180
         }
       ],
+      "sixth_year_harvest": {
+        "controls": {
+          "missed_power_replacement_rejected": true,
+          "missed_sowing_rejected": true,
+          "one_fewer_primary_batch_material_deficit_kg": 6
+        },
+        "first_replanned_period": 57,
+        "harvests": [
+          {
+            "harvest_kg": 5783264000,
+            "harvest_period": 68,
+            "hectares": 1445816,
+            "resource": "rice_gross_equivalent_kg",
+            "seed_kg": 260246880
+          },
+          {
+            "harvest_kg": 3978506000,
+            "harvest_period": 68,
+            "hectares": 1136716,
+            "resource": "oats_gross_equivalent_kg",
+            "seed_kg": 136405920
+          },
+          {
+            "harvest_kg": 34110786000,
+            "harvest_period": 68,
+            "hectares": 5685131,
+            "resource": "feed_grain_equivalent_kg",
+            "seed_kg": 852769650
+          }
+        ],
+        "periods": 72,
+        "replacement": [
+          {
+            "arrival": 63,
+            "asset": "factory_modules",
+            "quantity": 20,
+            "retirement": 60,
+            "start": 60
+          },
+          {
+            "arrival": 63,
+            "asset": "commissioned_cells",
+            "quantity": 1200,
+            "retirement": 64,
+            "start": 60
+          },
+          {
+            "arrival": 65,
+            "asset": "power_modules",
+            "quantity": 20,
+            "retirement": 66,
+            "start": 62
+          },
+          {
+            "arrival": 65,
+            "asset": "warehouse_modules",
+            "quantity": 20,
+            "retirement": 66,
+            "start": 62
+          }
+        ],
+        "sowing_period": 63,
+        "terminal_food_floors_kg": [
+          5299063215,
+          3641669323,
+          31195032505,
+          423684211,
+          294736843,
+          2551301331,
+          469078948,
+          326315790,
+          2824655045
+        ],
+        "variants": [
+          {
+            "annual_packaging_use_ticks": 42623166798,
+            "closing_food_kg": [
+              5299065297,
+              3641671989,
+              31195036369,
+              423684211,
+              294736843,
+              2551301331,
+              469078948,
+              326315790,
+              2824655045
+            ],
+            "money": {
+              "allocations": [
+                {
+                  "basis": "Provision for the revised production schedule",
+                  "movement": {
+                    "amount": 16569078969,
+                    "from": 0,
+                    "to": 5
+                  },
+                  "period": 57
+                },
+                {
+                  "basis": "Provision for the revised production schedule",
+                  "movement": {
+                    "amount": 11526315807,
+                    "from": 0,
+                    "to": 6
+                  },
+                  "period": 57
+                },
+                {
+                  "basis": "Provision for the revised production schedule",
+                  "movement": {
+                    "amount": 99774105618,
+                    "from": 0,
+                    "to": 7
+                  },
+                  "period": 57
+                },
+                {
+                  "basis": "Provision for the revised production schedule",
+                  "movement": {
+                    "amount": 11046052646,
+                    "from": 0,
+                    "to": 8
+                  },
+                  "period": 57
+                },
+                {
+                  "basis": "Provision for the revised production schedule",
+                  "movement": {
+                    "amount": 7684210538,
+                    "from": 0,
+                    "to": 9
+                  },
+                  "period": 57
+                },
+                {
+                  "basis": "Provision for the revised production schedule",
+                  "movement": {
+                    "amount": 66516070412,
+                    "from": 0,
+                    "to": 10
+                  },
+                  "period": 57
+                },
+                {
+                  "basis": "Provision for the revised production schedule",
+                  "movement": {
+                    "amount": 86641916,
+                    "from": 0,
+                    "to": 11
+                  },
+                  "period": 57
+                },
+                {
+                  "basis": "Provision for the revised production schedule",
+                  "movement": {
+                    "amount": 85246334,
+                    "from": 0,
+                    "to": 12
+                  },
+                  "period": 57
+                },
+                {
+                  "basis": "Provision for the revised production schedule",
+                  "movement": {
+                    "amount": 2400000,
+                    "from": 0,
+                    "to": 14
+                  },
+                  "period": 57
+                },
+                {
+                  "basis": "Provision for the revised production schedule",
+                  "movement": {
+                    "amount": 1200001200,
+                    "from": 0,
+                    "to": 16
+                  },
+                  "period": 57
+                },
+                {
+                  "basis": "Provision for the revised production schedule",
+                  "movement": {
+                    "amount": 86641916,
+                    "from": 0,
+                    "to": 22
+                  },
+                  "period": 57
+                },
+                {
+                  "basis": "Provision for the revised production schedule",
+                  "movement": {
+                    "amount": 20200000,
+                    "from": 0,
+                    "to": 24
+                  },
+                  "period": 57
+                },
+                {
+                  "basis": "Provision for the revised production schedule",
+                  "movement": {
+                    "amount": 20200000,
+                    "from": 0,
+                    "to": 25
+                  },
+                  "period": 57
+                },
+                {
+                  "basis": "Provision for the revised production schedule",
+                  "movement": {
+                    "amount": 20200000,
+                    "from": 0,
+                    "to": 26
+                  },
+                  "period": 57
+                },
+                {
+                  "basis": "Provision for the revised production schedule",
+                  "movement": {
+                    "amount": 5111584,
+                    "from": 0,
+                    "to": 30
+                  },
+                  "period": 57
+                }
+              ],
+              "opening": "1559457628979",
+              "suffix_events_settled": 782,
+              "treasury_draw": 214642476940,
+              "unfunded_events_before_transfers": 436
+            },
+            "next_year_packaging_shortfall_lower_bound_ticks": 41246333596,
+            "next_year_packaging_upper_bound_ticks": 1376833202,
+            "packaging_ore_extracted_kg": 20000000,
+            "packaging_waste_generated_g": 45957918798,
+            "policy": "use_remaining_packaging_ore",
+            "remaining_fuel_deposit": 245475575,
+            "remaining_packaging_ore_kg": 0,
+            "remaining_recovered_material_kg": 1,
+            "remaining_residue_kg": 3442080,
+            "year_six_delivered_kg": 42623166798
+          },
+          {
+            "annual_packaging_use_ticks": 42623166798,
+            "closing_food_kg": [
+              5299065297,
+              3641671989,
+              31195036369,
+              423684211,
+              294736843,
+              2551301331,
+              469078948,
+              326315790,
+              2824655045
+            ],
+            "money": {
+              "allocations": [
+                {
+                  "basis": "Provision for the revised production schedule",
+                  "movement": {
+                    "amount": 16569078969,
+                    "from": 0,
+                    "to": 5
+                  },
+                  "period": 57
+                },
+                {
+                  "basis": "Provision for the revised production schedule",
+                  "movement": {
+                    "amount": 11526315807,
+                    "from": 0,
+                    "to": 6
+                  },
+                  "period": 57
+                },
+                {
+                  "basis": "Provision for the revised production schedule",
+                  "movement": {
+                    "amount": 99774105618,
+                    "from": 0,
+                    "to": 7
+                  },
+                  "period": 57
+                },
+                {
+                  "basis": "Provision for the revised production schedule",
+                  "movement": {
+                    "amount": 11046052646,
+                    "from": 0,
+                    "to": 8
+                  },
+                  "period": 57
+                },
+                {
+                  "basis": "Provision for the revised production schedule",
+                  "movement": {
+                    "amount": 7684210538,
+                    "from": 0,
+                    "to": 9
+                  },
+                  "period": 57
+                },
+                {
+                  "basis": "Provision for the revised production schedule",
+                  "movement": {
+                    "amount": 66516070412,
+                    "from": 0,
+                    "to": 10
+                  },
+                  "period": 57
+                },
+                {
+                  "basis": "Provision for the revised production schedule",
+                  "movement": {
+                    "amount": 86642168,
+                    "from": 0,
+                    "to": 11
+                  },
+                  "period": 57
+                },
+                {
+                  "basis": "Provision for the revised production schedule",
+                  "movement": {
+                    "amount": 85246334,
+                    "from": 0,
+                    "to": 12
+                  },
+                  "period": 57
+                },
+                {
+                  "basis": "Provision for the revised production schedule",
+                  "movement": {
+                    "amount": 2400000,
+                    "from": 0,
+                    "to": 14
+                  },
+                  "period": 57
+                },
+                {
+                  "basis": "Provision for the revised production schedule",
+                  "movement": {
+                    "amount": 1200001200,
+                    "from": 0,
+                    "to": 16
+                  },
+                  "period": 57
+                },
+                {
+                  "basis": "Provision for the revised production schedule",
+                  "movement": {
+                    "amount": 86642168,
+                    "from": 0,
+                    "to": 22
+                  },
+                  "period": 57
+                },
+                {
+                  "basis": "Provision for the revised production schedule",
+                  "movement": {
+                    "amount": 20200000,
+                    "from": 0,
+                    "to": 24
+                  },
+                  "period": 57
+                },
+                {
+                  "basis": "Provision for the revised production schedule",
+                  "movement": {
+                    "amount": 20200000,
+                    "from": 0,
+                    "to": 25
+                  },
+                  "period": 57
+                },
+                {
+                  "basis": "Provision for the revised production schedule",
+                  "movement": {
+                    "amount": 20200000,
+                    "from": 0,
+                    "to": 26
+                  },
+                  "period": 57
+                },
+                {
+                  "basis": "Provision for the revised production schedule",
+                  "movement": {
+                    "amount": 5363443,
+                    "from": 0,
+                    "to": 30
+                  },
+                  "period": 57
+                }
+              ],
+              "opening": "1559457628979",
+              "suffix_events_settled": 782,
+              "treasury_draw": 214642729303,
+              "unfunded_events_before_transfers": 436
+            },
+            "next_year_packaging_shortfall_lower_bound_ticks": 41246333596,
+            "next_year_packaging_upper_bound_ticks": 1376833202,
+            "packaging_ore_extracted_kg": 18320940,
+            "packaging_waste_generated_g": 47720931798,
+            "policy": "minimize_packaging_ore",
+            "remaining_fuel_deposit": 245475323,
+            "remaining_packaging_ore_kg": 1679060,
+            "remaining_recovered_material_kg": 1,
+            "remaining_residue_kg": 7,
+            "year_six_delivered_kg": 42623166798
+          }
+        ]
+      },
       "three_month_bridge": {
         "all_payments_settled": false,
         "allocations": [

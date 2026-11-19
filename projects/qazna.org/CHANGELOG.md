@@ -1,5 +1,9 @@
 # Qazna changelog
 
+## Sixth-year harvest and renewal — 19 November 2026
+
+- Verify annual food flows, terminal reserves, capital replacement and explicit treasury funding across 72 months. Compare two packaging policies and bound their remaining physical capacity.
+
 ## Cross-boundary production — 19 November 2026
 
 - Verify three additional months of food provision and replay the revised payments from carried balances with eight explicit treasury transfers.

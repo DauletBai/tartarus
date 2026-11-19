@@ -1133,3 +1133,5 @@ cluster. HTTP smoke passed across three restarts; logical restore verified 48
 tables. The 60-period circulation case completed 4,548 requests in 57.816 seconds
 with one restart, and closed circulation completed 3,901 requests in 46.424 seconds
 with two restarts. Actor exercise seeds 7 and 19 passed.
+
+The extended fixture also regenerates two 72-month harvest scenarios. The check compares the complete result byte for byte, including terminal reserve floors, original-age retirements, negative controls for missed sowing and replacement, integer packaging bounds and replay of payments from existing balances.
