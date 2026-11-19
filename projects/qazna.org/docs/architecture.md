@@ -829,3 +829,5 @@ It never posts to PostgreSQL. See [cycle continuity](physical-circulation.md#rep
 for formulas, counterexamples and the remaining continuous-production gate.
 
 The extended scenario now exercises prospective physical and monetary continuation at period 57 and verifies a treasury-funded suffix in an offline replay. See the [63-month calculation](physical-circulation.md#three-additional-months--19-november-2026).
+
+The same five-year parent now has two verified 72-month continuations. Both use the existing physical and monetary continuation code and the offline treasury replay. A follow-on resource bound checks whether an identical packaging schedule can recur. See the [sixth-year calculation](physical-circulation.md#sixth-year-harvest-and-reserve-renewal).

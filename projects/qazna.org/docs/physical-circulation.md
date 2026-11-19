@@ -2469,3 +2469,62 @@ with their prerequisites available. The figures describe an offline replay.
 The final three months consume food stocks without imposing another five-year
 terminal reserve target. Renewal of crops, equipment and materials over the next
 production cycle, and durable operator-approved funding, remain open.
+
+### Sixth-year harvest and reserve renewal
+
+Two 72-month plans branch at period 57 from the published five-year parent.
+Both freeze periods 0–56 and retain the original period-59 floors. The earlier
+63-month bridge remains reproducible. For periods 60–71 the inputs repeat the
+first twelve months' demand, weather-related water budgets and capacities.
+Carried stocks, seed use, expiry and remaining equipment life follow absolute
+time. New sowing is explicitly scheduled in period 63, with harvest in period 68.
+
+| Crop route | Sown hectares | Seed drawn (kg) | Gross harvest (kg) |
+| --- | ---: | ---: | ---: |
+| Rice | 1,445,816 | 260,246,880 | 5,783,264,000 |
+| Oats | 1,136,716 | 136,405,920 | 3,978,506,000 |
+| Feed grain | 5,685,131 | 852,769,650 | 34,110,786,000 |
+
+Each plan delivers 42,623,166,798 gross-equivalent kg in year six. This total
+includes animal feed. Each of nine raw, preserved and delivered stock floors
+is met individually at period 71. Together these floors require 47,025,537,211 kg;
+closing stock is 47,025,545,823 kg. The crop calculation rounds sown area up
+after deducting the seed needed per hectare. Omitting the sowing and rebuilding
+the stock balances causes physical verification to fail.
+
+Twenty factory modules retire in period 60. A previously installed second
+cohort supplies capacity until their replacements arrive in period 63.
+Replacement kits and commissioning produce 1,200 robot cells before their
+predecessors retire. Twenty power modules and twenty warehouse modules arrive
+in period 65, ahead of retirement in 66. Omitting power replacement causes
+verification to fail. Terminal equipment floors match the installed quantities
+at period 59. Every month's capacity is checked as well.
+
+| Same needs and reserve floors | Use remaining packaging ore | Minimize primary extraction |
+| --- | ---: | ---: |
+| Packaging ore used (kg) | 20,000,000 | 18,320,940 |
+| Ore remaining (kg) | 0 | 1,679,060 |
+| Recoverable residue remaining (kg) | 3,442,080 | 7 |
+| Additional packaging waste (g) | 45,957,918,798 | 47,720,931,798 |
+| Existing treasury measure transferred | 214,642,476,940 | 214,642,729,303 |
+
+The lower-extraction case recovers more material from residue, producing more
+explicit waste in that process. For the declared recipes one fewer primary
+batch leaves a 6 kg material shortfall even with all available recovery.
+The original 1,559,457,628,979 accounting ticks cover both schedules. In each,
+436 scheduled events fail under the original account allocation; with 15
+explicit treasury transfers all 767 revised payments settle in order. The
+transfers and payments are offline replay evidence. Durable authorization of
+these revised transfers is the next service milestone.
+
+The follow-on bound converts all remaining ore and residue using the declared
+integer yields, adds stored recovered material and counts only finished
+packaging above its protected floor. It allows immediate processing with
+unlimited capacity. Both variants can supply at most 1,376,833,202 packaging ticks
+above the protected floor against 42,623,166,798 ticks of repeated use. At least
+41,246,333,596 ticks must therefore come from a changed design or another source.
+The difference from sixth-year packaging use is thus a
+lower bound on the shortfall for a seventh year with identical use and floor.
+Full results and quantities are in
+[the extended fixture](../fixtures/extended-scenario.json) under
+`reference.recurrence.sixth_year_harvest`.

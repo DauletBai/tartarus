@@ -1,6 +1,6 @@
 # Completion roadmap and feasibility boundaries
 
-Latest review: 19 November 2026, verified three-month extension of the five-year candidate.
+Latest review: 19 November 2026, verified sixth-year harvest, capital replacement and reserve replenishment.
 The current work order below supersedes earlier milestone-specific next steps.
 
 ## Completion scope and remaining work — 12 November 2026
@@ -58,11 +58,18 @@ revised payment suffix from existing balances. This experiment consumes carried
 food reserves; it does not yet renew them for a second agricultural cycle.
 See the [extension results](physical-circulation.md#three-additional-months--19-november-2026).
 
-Next, extend through the following harvest and replacement dates, with terminal
-reserve targets and finite fuel and packaging deposits. Compare extraction and
-disposal under the same demand. Recalculate the payment suffix for the accepted
-physical candidate, then persist reviewed funding with stale-state, retry and
-history checks. Package 3 source calibration continues alongside package 4.
+The full sixth year now passes with a newly sown harvest, nine terminal food
+reserve floors, replacement of all retiring equipment cohorts and fully funded
+payments under two packaging policies. It is a separate prospective plan from
+the same five-year parent. Another year of the same packaging use exceeds the
+remaining material even with immediate, unlimited processing capacity.
+See the [harvest comparison](physical-circulation.md#sixth-year-harvest-and-reserve-renewal).
+
+Next, persist operator-reviewed treasury allocations against the exact physical
+and monetary plan versions. Verify concurrent approval, retries, stale versions,
+unchanged settled history and restart/restore. Investigate a reusable packaging
+route with explicit collection, loss and remanufacturing against the quantified
+seventh-year gap. Package 3 regional source calibration continues alongside this work.
 The effort range below remains a planning estimate, not a new deadline.
 
 The target for this estimate is **research demonstrator v1**: a reproducible,
