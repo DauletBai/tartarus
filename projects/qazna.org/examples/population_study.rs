@@ -245,6 +245,50 @@ fn main() {
             },
         ],
     };
+    // Keep the approved baseline quantities separate from prospective demand.
+    let mut supply_bounds = vec![];
+    let physical_graph = &input.model.seasonal.physical;
+    for case in &cases {
+        for mapping in &binding.mappings {
+            let r = mapping.resource;
+            for branch in ["lower", "central", "upper"] {
+                let mut deadlines = vec![];
+                for (t, month) in case.months.iter().enumerate() {
+                    let demand = month
+                        .demands
+                        .iter()
+                        .find(|d| d.item == mapping.item)
+                        .unwrap();
+                    assert_eq!(demand.unit, definition.resources[r].unit);
+                    assert!(demand.unknown_parameters.is_empty());
+                    let target = match branch {
+                        "lower" => &demand.known_lower,
+                        "upper" => demand.upper.as_ref().unwrap(),
+                        _ => demand.central.as_ref().unwrap(),
+                    };
+                    let row = &input.plan[t];
+                    deadlines.push(qazna::horizon::SupplyDeadline {
+                        planned_delivery: row.deliveries[r],
+                        planned_closing: row.closing[r],
+                        planned_discard: row.discarded[r],
+                        target: target.parse().unwrap(),
+                        reserve: input.model.seasonal.closing_floors[t][r],
+                    });
+                }
+                let bound = qazna::horizon::fixed_flow_requirement(
+                    physical_graph.initial[r],
+                    physical_graph.storage_caps[r],
+                    &deadlines,
+                )
+                .unwrap();
+                let cut = physical_graph.supply_cut(r, &deadlines).unwrap();
+                supply_bounds.push(json!({"population":case.variant,"need_estimate":branch,
+                    "item":mapping.item,"unit":definition.resources[r].unit,
+                    "first_extra_month":bound.first_extra_period.map(|t| &case.months[t].calendar),
+                    "all_schedules_cut":cut,"requirement":bound}));
+            }
+        }
+    }
     for (t, month) in cases[1].months.iter().enumerate() {
         for map in &binding.mappings {
             let amount = month
@@ -327,7 +371,7 @@ fn main() {
     .unwrap();
     let money: CoupledCheckpoint =
         serde_json::from_str(coupled.checkpoint.as_ref().unwrap()).unwrap();
-    let results = json!({"schema_version":1,"cases":cases,"upstream_counterexample":{"prospective_demand":prospective,"runtime_rejection":rejection,"original_payments_settle_for_original_needs":money.evidence.all_scheduled_payments_settled},"runtime_fixture":{"definition":runtime_definition,"input":runtime_input,"population_evidence":checkpoint.population},"limitations":["Illustrative coefficients, not a national projection or nutrition prescription","Opening-of-month exposure; births and arrivals enter needs from next month","Whole-person demographic apportionment and carried mortality fractions are modelling choices","Age-only cohorts do not model sex, fertility mechanisms, pregnancy, health/disability, household choice or regional flows","Unknown care/protein/vitamin data remain missing; prospective upstream mapping covers only two component needs","The old upstream plan fails full-needs approval for new demand; accepted runtime fixture uses a declared finite water stock only","Scenario variants and need intervals are conditional assumptions, not statistical confidence bounds"]});
+    let results = json!({"schema_version":2,"fixed_flow_supply_bounds":supply_bounds,"cases":cases,"upstream_counterexample":{"prospective_demand":prospective,"runtime_rejection":rejection,"original_payments_settle_for_original_needs":money.evidence.all_scheduled_payments_settled},"runtime_fixture":{"definition":runtime_definition,"input":runtime_input,"population_evidence":checkpoint.population},"limitations":["Illustrative coefficients, not a national projection or nutrition prescription","Opening-of-month exposure; births and arrivals enter needs from next month","Whole-person demographic apportionment and carried mortality fractions are modelling choices","Age-only cohorts do not model sex, fertility mechanisms, pregnancy, health/disability, household choice or regional flows","Unknown care/protein/vitamin data remain missing; prospective upstream mapping covers only two component needs","The old upstream plan fails full-needs approval for new demand; accepted runtime fixture uses a declared finite water stock only","Scenario variants and need intervals are conditional assumptions, not statistical confidence bounds"]});
     fs::write(&args[1], serde_json::to_vec_pretty(&study).unwrap()).unwrap();
     fs::write(&args[2], serde_json::to_vec_pretty(&results).unwrap()).unwrap();
     println!(

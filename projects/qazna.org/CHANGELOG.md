@@ -1,5 +1,9 @@
 # Qazna changelog
 
+## Population demand and supply deadlines — 19 November 2026
+
+- Quantify additional physical arrivals under fixed production and check for deadlines that remain impossible under any admissible production timing. Compare 18 commodity and demand combinations over the five-year plan.
+
 ## Reviewed treasury funding — 19 November 2026
 
 - Persist operator-reviewed allocations in coupled versions, recheck both heads before approval and retain the exact funded history through retry and recovery.

@@ -472,3 +472,129 @@ impl Horizon {
         Ok(model)
     }
 }
+
+/// One resource in one period of a previously verified physical plan, in its
+/// native unit. Other production activities and intermediate uses stay fixed.
+pub struct SupplyDeadline {
+    pub planned_delivery: i64,
+    pub planned_closing: i64,
+    pub planned_discard: i64,
+    pub target: i64,
+    pub reserve: i64,
+}
+
+#[derive(Debug, Serialize)]
+pub struct SupplyRequirement {
+    pub target_total: String,
+    pub planned_delivery_total: String,
+    pub extra_arrivals_total: String,
+    pub first_extra_period: Option<usize>,
+    pub extra_by_period: Vec<String>,
+}
+
+/// Minimum timely extra arrivals for this one store. A hypothetical arrival
+/// is a requirement on a future production plan, never a booked supply.
+pub fn fixed_flow_requirement(
+    opening: i64,
+    storage_cap: i64,
+    deadlines: &[SupplyDeadline],
+) -> Result<SupplyRequirement, MathError> {
+    if opening < 0 || storage_cap < 0 || deadlines.is_empty() || deadlines.len() > 10_000 {
+        return Err(MathError::Invalid("fixed-flow store or horizon"));
+    }
+    let mut previous_closing = opening;
+    let mut stock = i128::from(opening);
+    let mut target_total = 0i128;
+    let mut planned_total = 0i128;
+    let mut extra_total = 0i128;
+    let mut first_extra_period = None;
+    let mut extra_by_period = Vec::with_capacity(deadlines.len());
+    for (t, d) in deadlines.iter().enumerate() {
+        if d.planned_delivery < 0
+            || d.planned_discard < 0
+            || d.target < 0
+            || d.reserve < 0
+            || !(d.reserve..=storage_cap).contains(&d.planned_closing)
+        {
+            return Err(MathError::Invalid("fixed-flow quantities or reserve"));
+        }
+        // Recover net physical inflow after all committed intermediate uses.
+        let net = i128::from(d.planned_closing) - i128::from(previous_closing)
+            + i128::from(d.planned_delivery)
+            + i128::from(d.planned_discard);
+        previous_closing = d.planned_closing;
+        let after_delivery = stock + net - i128::from(d.target);
+        let extra = (i128::from(d.reserve) - after_delivery).max(0);
+        if extra > 0 {
+            first_extra_period.get_or_insert(t);
+        }
+        stock = (after_delivery + extra).min(i128::from(storage_cap));
+        target_total += i128::from(d.target);
+        planned_total += i128::from(d.planned_delivery);
+        extra_total += extra;
+        extra_by_period.push(extra.to_string());
+    }
+    Ok(SupplyRequirement {
+        target_total: target_total.to_string(),
+        planned_delivery_total: planned_total.to_string(),
+        extra_arrivals_total: extra_total.to_string(),
+        first_extra_period,
+        extra_by_period,
+    })
+}
+
+/// One prefix proving that even maximum on-time gross output cannot cover
+/// cumulative target deliveries plus the protected stock at that deadline.
+#[derive(Debug, Serialize)]
+pub struct SupplyCut {
+    pub period: usize,
+    pub required_through_deadline: String,
+    pub maximum_gross_available: String,
+    pub additional_supply_at_least: String,
+}
+impl Horizon {
+    /// Drop shared inputs, intermediate uses, losses and capacity competition.
+    /// A positive cut applies to every schedule with the same initial conditions,
+    /// process capacities and leads. No cut means this test is inconclusive.
+    pub fn supply_cut(
+        &self,
+        resource: usize,
+        deadlines: &[SupplyDeadline],
+    ) -> Result<Option<SupplyCut>, MathError> {
+        self.validate()?;
+        if resource >= self.resources.len() || deadlines.len() != self.periods.len() {
+            return Err(MathError::Invalid("supply cut dimensions"));
+        }
+        let mut gross = i128::from(self.initial[resource]);
+        let mut demand = 0i128;
+        let mut largest = 0;
+        let mut cut = None;
+        for (t, d) in deadlines.iter().enumerate() {
+            if d.target < 0 || !(0..=self.storage_caps[resource]).contains(&d.reserve) {
+                return Err(MathError::Invalid("supply cut quantities or reserve"));
+            }
+            gross = gross
+                .checked_add(self.periods[t].supplies[resource].into())
+                .ok_or(MathError::Overflow)?;
+            for (j, process) in self.processes.iter().enumerate() {
+                if let Some(start) = t.checked_sub(process.lead_periods) {
+                    let output = i128::from(self.periods[start].capacities[j])
+                        * i128::from(process.outputs[resource]);
+                    gross = gross.checked_add(output).ok_or(MathError::Overflow)?;
+                }
+            }
+            demand += i128::from(d.target);
+            let required = demand + i128::from(d.reserve);
+            if required - gross > largest {
+                largest = required - gross;
+                cut = Some(SupplyCut {
+                    period: t,
+                    required_through_deadline: required.to_string(),
+                    maximum_gross_available: gross.to_string(),
+                    additional_supply_at_least: largest.to_string(),
+                });
+            }
+        }
+        Ok(cut)
+    }
+}

@@ -371,3 +371,89 @@ fn unexpected_fields_and_negative_quantities_are_not_accepted() {
     v["initial"][0]["age_months"] = (-1).into();
     assert!(serde_json::from_value::<PopulationStudy>(v).is_err());
 }
+
+#[test]
+fn minimum_additional_supply_matches_all_small_store_paths() {
+    use qazna::horizon::{SupplyDeadline, fixed_flow_requirement};
+    // Enumerate every allowed closing stock rather than using the production
+    // recurrence. The baseline has a discard, an intermediate withdrawal,
+    // then late supply. Early surplus cannot cross the storage ceiling.
+    let net = [4, -1, 2];
+    let cap = 2;
+    for mask in 0..64 {
+        let targets = [mask % 4, (mask / 4) % 4, mask / 16];
+        for reserve in 0..=1 {
+            let floors = [0, reserve, 1];
+            let mut rows = vec![];
+            let mut costs = vec![Some(0i64), None, None];
+            for t in 0..3 {
+                rows.push(SupplyDeadline {
+                    planned_closing: [2, 1, 1][t],
+                    planned_discard: [1, 0, 0][t],
+                    planned_delivery: [1, 0, 2][t],
+                    target: targets[t],
+                    reserve: floors[t],
+                });
+                costs = (0..=cap)
+                    .map(|end| {
+                        if end < floors[t] {
+                            return None;
+                        }
+                        costs
+                            .iter()
+                            .enumerate()
+                            .filter_map(|(start, cost)| {
+                                let arrivals = (end + targets[t] - start as i64 - net[t]).max(0);
+                                cost.map(|c| c + arrivals)
+                            })
+                            .min()
+                    })
+                    .collect();
+                let result = fixed_flow_requirement(0, cap, &rows).unwrap();
+                assert_eq!(
+                    result.extra_arrivals_total.parse::<i64>().unwrap(),
+                    costs.iter().flatten().min().copied().unwrap()
+                );
+                let first = result.extra_by_period.iter().position(|q| q != "0");
+                assert_eq!(result.first_extra_period, first);
+            }
+        }
+    }
+}
+
+#[test]
+fn supply_cut_counts_only_output_matured_by_the_deadline() {
+    use qazna::horizon::{Horizon, Period, Process, SupplyDeadline};
+    let mut h = Horizon {
+        resources: vec!["food".into(), "raw".into()],
+        initial: vec![2, 0],
+        storage_caps: vec![10, 10],
+        objective_resource: 0,
+        processes: vec![Process {
+            inputs: vec![0, 1],
+            outputs: vec![2, 0],
+            lead_periods: 2,
+        }],
+        periods: [4, 0, 100]
+            .map(|cap| Period {
+                supplies: vec![1, 0],
+                needs: vec![0, 0],
+                capacities: vec![cap],
+            })
+            .to_vec(),
+    };
+    let rows = [1, 4, 3].map(|target| SupplyDeadline {
+        planned_delivery: 0,
+        planned_closing: 1,
+        planned_discard: 0,
+        reserve: 1,
+        target,
+    });
+    let cut = h.supply_cut(0, &rows).unwrap().unwrap();
+    assert_eq!(cut.period, 1);
+    assert_eq!(cut.required_through_deadline, "6");
+    assert_eq!(cut.maximum_gross_available, "4");
+    assert_eq!(cut.additional_supply_at_least, "2");
+    h.initial[0] += 2;
+    assert!(h.supply_cut(0, &rows).unwrap().is_none());
+}
