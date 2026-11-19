@@ -2,7 +2,314 @@
   "cases": [
     {
       "expired_kg": "0",
+      "finite_packaging_schedule": {
+        "balances": [
+          {
+            "closing": 205189181701,
+            "minimum": 22371024705,
+            "resource": "energy_ticks"
+          },
+          {
+            "closing": 234738507003,
+            "minimum": 4379950217,
+            "resource": "packaging_ticks"
+          },
+          {
+            "closing": 0,
+            "minimum": 0,
+            "resource": "finite_packaging_ore_kg"
+          },
+          {
+            "closing": 0,
+            "minimum": 0,
+            "resource": "recovered_packaging_material_kg"
+          },
+          {
+            "closing": 0,
+            "minimum": 0,
+            "resource": "recoverable_residue_kg"
+          }
+        ],
+        "curtailed_extraction_recovery_fabrication_starts": [
+          10000000,
+          4200000,
+          52000000
+        ],
+        "equipment_shortfalls": [
+          {
+            "limit": "fuel_generation",
+            "missing_units": 9342261,
+            "month": "2027-07"
+          },
+          {
+            "limit": "fuel_generation",
+            "missing_units": 9342417,
+            "month": "2027-08"
+          },
+          {
+            "limit": "fuel_generation",
+            "missing_units": 9339894,
+            "month": "2027-09"
+          },
+          {
+            "limit": "shared_extraction",
+            "missing_units": 34495718,
+            "month": "2027-09"
+          },
+          {
+            "limit": "fuel_generation",
+            "missing_units": 9495718,
+            "month": "2027-10"
+          },
+          {
+            "limit": "shared_extraction",
+            "missing_units": 31973028,
+            "month": "2027-10"
+          },
+          {
+            "limit": "fuel_generation",
+            "missing_units": 6973028,
+            "month": "2027-11"
+          },
+          {
+            "limit": "shared_extraction",
+            "missing_units": 35388357,
+            "month": "2027-11"
+          },
+          {
+            "limit": "fuel_generation",
+            "missing_units": 10388357,
+            "month": "2027-12"
+          },
+          {
+            "limit": "shared_extraction",
+            "missing_units": 35055309,
+            "month": "2027-12"
+          },
+          {
+            "limit": "fuel_generation",
+            "missing_units": 10055309,
+            "month": "2028-01"
+          },
+          {
+            "limit": "shared_factory",
+            "missing_units": 46600000,
+            "month": "2028-01"
+          },
+          {
+            "limit": "shared_extraction",
+            "missing_units": 35075329,
+            "month": "2028-01"
+          },
+          {
+            "limit": "fuel_generation",
+            "missing_units": 10075329,
+            "month": "2028-02"
+          },
+          {
+            "limit": "shared_factory",
+            "missing_units": 46600000,
+            "month": "2028-02"
+          },
+          {
+            "limit": "shared_extraction",
+            "missing_units": 35055473,
+            "month": "2028-02"
+          },
+          {
+            "limit": "fuel_generation",
+            "missing_units": 10055473,
+            "month": "2028-03"
+          },
+          {
+            "limit": "shared_factory",
+            "missing_units": 46600020,
+            "month": "2028-03"
+          },
+          {
+            "limit": "shared_extraction",
+            "missing_units": 35075309,
+            "month": "2028-03"
+          },
+          {
+            "limit": "fuel_generation",
+            "missing_units": 10075309,
+            "month": "2028-04"
+          },
+          {
+            "limit": "shared_factory",
+            "missing_units": 46600000,
+            "month": "2028-04"
+          },
+          {
+            "limit": "shared_extraction",
+            "missing_units": 35218795,
+            "month": "2028-04"
+          },
+          {
+            "limit": "fuel_generation",
+            "missing_units": 10218795,
+            "month": "2028-05"
+          },
+          {
+            "limit": "shared_factory",
+            "missing_units": 46600020,
+            "month": "2028-05"
+          },
+          {
+            "limit": "shared_extraction",
+            "missing_units": 35055349,
+            "month": "2028-05"
+          },
+          {
+            "limit": "fuel_generation",
+            "missing_units": 10055349,
+            "month": "2028-06"
+          },
+          {
+            "limit": "shared_factory",
+            "missing_units": 46600000,
+            "month": "2028-06"
+          },
+          {
+            "limit": "shared_extraction",
+            "missing_units": 35055306,
+            "month": "2028-06"
+          },
+          {
+            "limit": "shared_factory",
+            "missing_units": 46600000,
+            "month": "2028-07"
+          },
+          {
+            "limit": "shared_extraction",
+            "missing_units": 35095476,
+            "month": "2028-07"
+          },
+          {
+            "limit": "shared_factory",
+            "missing_units": 46600000,
+            "month": "2028-08"
+          },
+          {
+            "limit": "shared_extraction",
+            "missing_units": 35052229,
+            "month": "2028-08"
+          },
+          {
+            "limit": "shared_factory",
+            "missing_units": 46600040,
+            "month": "2028-09"
+          },
+          {
+            "limit": "shared_factory",
+            "missing_units": 46600000,
+            "month": "2028-10"
+          },
+          {
+            "limit": "shared_factory",
+            "missing_units": 46601200,
+            "month": "2028-11"
+          },
+          {
+            "limit": "shared_factory",
+            "missing_units": 46600000,
+            "month": "2028-12"
+          },
+          {
+            "limit": "voluntary_intakes",
+            "missing_units": 600,
+            "month": "2028-12"
+          }
+        ],
+        "grain_storage_shortfalls": [
+          {
+            "missing_kg": 14222402620,
+            "month": "2028-07",
+            "pool": "shared_grain_and_preserved_storage"
+          },
+          {
+            "missing_kg": 10040697361,
+            "month": "2028-08",
+            "pool": "shared_grain_and_preserved_storage"
+          },
+          {
+            "missing_kg": 56831305764,
+            "month": "2028-09",
+            "pool": "shared_grain_and_preserved_storage"
+          },
+          {
+            "missing_kg": 52648065828,
+            "month": "2028-10",
+            "pool": "shared_grain_and_preserved_storage"
+          },
+          {
+            "missing_kg": 48464061564,
+            "month": "2028-11",
+            "pool": "shared_grain_and_preserved_storage"
+          },
+          {
+            "missing_kg": 44684272355,
+            "month": "2028-12",
+            "pool": "shared_grain_and_preserved_storage"
+          },
+          {
+            "missing_kg": 40498745355,
+            "month": "2029-01",
+            "pool": "shared_grain_and_preserved_storage"
+          },
+          {
+            "missing_kg": 36447501439,
+            "month": "2029-02",
+            "pool": "shared_grain_and_preserved_storage"
+          },
+          {
+            "missing_kg": 32260459643,
+            "month": "2029-03",
+            "pool": "shared_grain_and_preserved_storage"
+          },
+          {
+            "missing_kg": 26664234292,
+            "month": "2029-04",
+            "pool": "shared_grain_and_preserved_storage"
+          },
+          {
+            "missing_kg": 22475685563,
+            "month": "2029-05",
+            "pool": "shared_grain_and_preserved_storage"
+          },
+          {
+            "missing_kg": 18286386302,
+            "month": "2029-06",
+            "pool": "shared_grain_and_preserved_storage"
+          }
+        ],
+        "manual_work_shortfalls": []
+      },
       "fixed_field_area_ha": 14043063,
+      "fixed_upstream_bound": [
+        {
+          "first_uncovered_month": null,
+          "minimum_additional_arrivals": 0,
+          "resource": "energy_ticks",
+          "terminal_balance_before_remedy": 205112981701,
+          "total_grain_inputs": 578522985994
+        },
+        {
+          "first_uncovered_month": null,
+          "minimum_additional_arrivals": 0,
+          "resource": "packaging_ticks",
+          "terminal_balance_before_remedy": 286738507003,
+          "total_grain_inputs": 289261492997
+        },
+        {
+          "first_uncovered_month": "2031-01",
+          "minimum_additional_arrivals": 100000000,
+          "resource": "finite_packaging_ore_kg",
+          "terminal_balance_before_remedy": -100000000,
+          "total_grain_inputs": 0
+        }
+      ],
       "gross_yield_percent": 100,
       "monthly_required_water_m3": [
         0,
@@ -325,7 +632,314 @@
     },
     {
       "expired_kg": "0",
+      "finite_packaging_schedule": {
+        "balances": [
+          {
+            "closing": 205189181701,
+            "minimum": 22371024705,
+            "resource": "energy_ticks"
+          },
+          {
+            "closing": 234738507003,
+            "minimum": 4379950217,
+            "resource": "packaging_ticks"
+          },
+          {
+            "closing": 0,
+            "minimum": 0,
+            "resource": "finite_packaging_ore_kg"
+          },
+          {
+            "closing": 0,
+            "minimum": 0,
+            "resource": "recovered_packaging_material_kg"
+          },
+          {
+            "closing": 0,
+            "minimum": 0,
+            "resource": "recoverable_residue_kg"
+          }
+        ],
+        "curtailed_extraction_recovery_fabrication_starts": [
+          10000000,
+          4200000,
+          52000000
+        ],
+        "equipment_shortfalls": [
+          {
+            "limit": "fuel_generation",
+            "missing_units": 9342261,
+            "month": "2027-07"
+          },
+          {
+            "limit": "fuel_generation",
+            "missing_units": 9342417,
+            "month": "2027-08"
+          },
+          {
+            "limit": "fuel_generation",
+            "missing_units": 9339894,
+            "month": "2027-09"
+          },
+          {
+            "limit": "shared_extraction",
+            "missing_units": 34495718,
+            "month": "2027-09"
+          },
+          {
+            "limit": "fuel_generation",
+            "missing_units": 9495718,
+            "month": "2027-10"
+          },
+          {
+            "limit": "shared_extraction",
+            "missing_units": 31973028,
+            "month": "2027-10"
+          },
+          {
+            "limit": "fuel_generation",
+            "missing_units": 6973028,
+            "month": "2027-11"
+          },
+          {
+            "limit": "shared_extraction",
+            "missing_units": 35388357,
+            "month": "2027-11"
+          },
+          {
+            "limit": "fuel_generation",
+            "missing_units": 10388357,
+            "month": "2027-12"
+          },
+          {
+            "limit": "shared_extraction",
+            "missing_units": 35055309,
+            "month": "2027-12"
+          },
+          {
+            "limit": "fuel_generation",
+            "missing_units": 10055309,
+            "month": "2028-01"
+          },
+          {
+            "limit": "shared_factory",
+            "missing_units": 46600000,
+            "month": "2028-01"
+          },
+          {
+            "limit": "shared_extraction",
+            "missing_units": 35075329,
+            "month": "2028-01"
+          },
+          {
+            "limit": "fuel_generation",
+            "missing_units": 10075329,
+            "month": "2028-02"
+          },
+          {
+            "limit": "shared_factory",
+            "missing_units": 46600000,
+            "month": "2028-02"
+          },
+          {
+            "limit": "shared_extraction",
+            "missing_units": 35055473,
+            "month": "2028-02"
+          },
+          {
+            "limit": "fuel_generation",
+            "missing_units": 10055473,
+            "month": "2028-03"
+          },
+          {
+            "limit": "shared_factory",
+            "missing_units": 46600020,
+            "month": "2028-03"
+          },
+          {
+            "limit": "shared_extraction",
+            "missing_units": 35075309,
+            "month": "2028-03"
+          },
+          {
+            "limit": "fuel_generation",
+            "missing_units": 10075309,
+            "month": "2028-04"
+          },
+          {
+            "limit": "shared_factory",
+            "missing_units": 46600000,
+            "month": "2028-04"
+          },
+          {
+            "limit": "shared_extraction",
+            "missing_units": 35218795,
+            "month": "2028-04"
+          },
+          {
+            "limit": "fuel_generation",
+            "missing_units": 10218795,
+            "month": "2028-05"
+          },
+          {
+            "limit": "shared_factory",
+            "missing_units": 46600020,
+            "month": "2028-05"
+          },
+          {
+            "limit": "shared_extraction",
+            "missing_units": 35055349,
+            "month": "2028-05"
+          },
+          {
+            "limit": "fuel_generation",
+            "missing_units": 10055349,
+            "month": "2028-06"
+          },
+          {
+            "limit": "shared_factory",
+            "missing_units": 46600000,
+            "month": "2028-06"
+          },
+          {
+            "limit": "shared_extraction",
+            "missing_units": 35055306,
+            "month": "2028-06"
+          },
+          {
+            "limit": "shared_factory",
+            "missing_units": 46600000,
+            "month": "2028-07"
+          },
+          {
+            "limit": "shared_extraction",
+            "missing_units": 35095476,
+            "month": "2028-07"
+          },
+          {
+            "limit": "shared_factory",
+            "missing_units": 46600000,
+            "month": "2028-08"
+          },
+          {
+            "limit": "shared_extraction",
+            "missing_units": 35052229,
+            "month": "2028-08"
+          },
+          {
+            "limit": "shared_factory",
+            "missing_units": 46600040,
+            "month": "2028-09"
+          },
+          {
+            "limit": "shared_factory",
+            "missing_units": 46600000,
+            "month": "2028-10"
+          },
+          {
+            "limit": "shared_factory",
+            "missing_units": 46601200,
+            "month": "2028-11"
+          },
+          {
+            "limit": "shared_factory",
+            "missing_units": 46600000,
+            "month": "2028-12"
+          },
+          {
+            "limit": "voluntary_intakes",
+            "missing_units": 600,
+            "month": "2028-12"
+          }
+        ],
+        "grain_storage_shortfalls": [
+          {
+            "missing_kg": 14477029240,
+            "month": "2028-07",
+            "pool": "shared_grain_and_preserved_storage"
+          },
+          {
+            "missing_kg": 10295323981,
+            "month": "2028-08",
+            "pool": "shared_grain_and_preserved_storage"
+          },
+          {
+            "missing_kg": 56821531284,
+            "month": "2028-09",
+            "pool": "shared_grain_and_preserved_storage"
+          },
+          {
+            "missing_kg": 52638291348,
+            "month": "2028-10",
+            "pool": "shared_grain_and_preserved_storage"
+          },
+          {
+            "missing_kg": 48454287084,
+            "month": "2028-11",
+            "pool": "shared_grain_and_preserved_storage"
+          },
+          {
+            "missing_kg": 44674497875,
+            "month": "2028-12",
+            "pool": "shared_grain_and_preserved_storage"
+          },
+          {
+            "missing_kg": 40488970875,
+            "month": "2029-01",
+            "pool": "shared_grain_and_preserved_storage"
+          },
+          {
+            "missing_kg": 36437726959,
+            "month": "2029-02",
+            "pool": "shared_grain_and_preserved_storage"
+          },
+          {
+            "missing_kg": 32250685163,
+            "month": "2029-03",
+            "pool": "shared_grain_and_preserved_storage"
+          },
+          {
+            "missing_kg": 26918863612,
+            "month": "2029-04",
+            "pool": "shared_grain_and_preserved_storage"
+          },
+          {
+            "missing_kg": 22730314883,
+            "month": "2029-05",
+            "pool": "shared_grain_and_preserved_storage"
+          },
+          {
+            "missing_kg": 18541015622,
+            "month": "2029-06",
+            "pool": "shared_grain_and_preserved_storage"
+          }
+        ],
+        "manual_work_shortfalls": []
+      },
       "fixed_field_area_ha": 11702552,
+      "fixed_upstream_bound": [
+        {
+          "first_uncovered_month": null,
+          "minimum_additional_arrivals": 0,
+          "resource": "energy_ticks",
+          "terminal_balance_before_remedy": 205112981701,
+          "total_grain_inputs": 578522985994
+        },
+        {
+          "first_uncovered_month": null,
+          "minimum_additional_arrivals": 0,
+          "resource": "packaging_ticks",
+          "terminal_balance_before_remedy": 286738507003,
+          "total_grain_inputs": 289261492997
+        },
+        {
+          "first_uncovered_month": "2031-01",
+          "minimum_additional_arrivals": 100000000,
+          "resource": "finite_packaging_ore_kg",
+          "terminal_balance_before_remedy": -100000000,
+          "total_grain_inputs": 0
+        }
+      ],
       "gross_yield_percent": 120,
       "monthly_required_water_m3": [
         0,
@@ -623,7 +1237,314 @@
     },
     {
       "expired_kg": "0",
+      "finite_packaging_schedule": {
+        "balances": [
+          {
+            "closing": 205189181701,
+            "minimum": 22371024705,
+            "resource": "energy_ticks"
+          },
+          {
+            "closing": 234738507003,
+            "minimum": 4379950217,
+            "resource": "packaging_ticks"
+          },
+          {
+            "closing": 0,
+            "minimum": 0,
+            "resource": "finite_packaging_ore_kg"
+          },
+          {
+            "closing": 0,
+            "minimum": 0,
+            "resource": "recovered_packaging_material_kg"
+          },
+          {
+            "closing": 0,
+            "minimum": 0,
+            "resource": "recoverable_residue_kg"
+          }
+        ],
+        "curtailed_extraction_recovery_fabrication_starts": [
+          10000000,
+          4200000,
+          52000000
+        ],
+        "equipment_shortfalls": [
+          {
+            "limit": "fuel_generation",
+            "missing_units": 9342261,
+            "month": "2027-07"
+          },
+          {
+            "limit": "fuel_generation",
+            "missing_units": 9342417,
+            "month": "2027-08"
+          },
+          {
+            "limit": "fuel_generation",
+            "missing_units": 9339894,
+            "month": "2027-09"
+          },
+          {
+            "limit": "shared_extraction",
+            "missing_units": 34495718,
+            "month": "2027-09"
+          },
+          {
+            "limit": "fuel_generation",
+            "missing_units": 9495718,
+            "month": "2027-10"
+          },
+          {
+            "limit": "shared_extraction",
+            "missing_units": 31973028,
+            "month": "2027-10"
+          },
+          {
+            "limit": "fuel_generation",
+            "missing_units": 6973028,
+            "month": "2027-11"
+          },
+          {
+            "limit": "shared_extraction",
+            "missing_units": 35388357,
+            "month": "2027-11"
+          },
+          {
+            "limit": "fuel_generation",
+            "missing_units": 10388357,
+            "month": "2027-12"
+          },
+          {
+            "limit": "shared_extraction",
+            "missing_units": 35055309,
+            "month": "2027-12"
+          },
+          {
+            "limit": "fuel_generation",
+            "missing_units": 10055309,
+            "month": "2028-01"
+          },
+          {
+            "limit": "shared_factory",
+            "missing_units": 46600000,
+            "month": "2028-01"
+          },
+          {
+            "limit": "shared_extraction",
+            "missing_units": 35075329,
+            "month": "2028-01"
+          },
+          {
+            "limit": "fuel_generation",
+            "missing_units": 10075329,
+            "month": "2028-02"
+          },
+          {
+            "limit": "shared_factory",
+            "missing_units": 46600000,
+            "month": "2028-02"
+          },
+          {
+            "limit": "shared_extraction",
+            "missing_units": 35055473,
+            "month": "2028-02"
+          },
+          {
+            "limit": "fuel_generation",
+            "missing_units": 10055473,
+            "month": "2028-03"
+          },
+          {
+            "limit": "shared_factory",
+            "missing_units": 46600020,
+            "month": "2028-03"
+          },
+          {
+            "limit": "shared_extraction",
+            "missing_units": 35075309,
+            "month": "2028-03"
+          },
+          {
+            "limit": "fuel_generation",
+            "missing_units": 10075309,
+            "month": "2028-04"
+          },
+          {
+            "limit": "shared_factory",
+            "missing_units": 46600000,
+            "month": "2028-04"
+          },
+          {
+            "limit": "shared_extraction",
+            "missing_units": 35218795,
+            "month": "2028-04"
+          },
+          {
+            "limit": "fuel_generation",
+            "missing_units": 10218795,
+            "month": "2028-05"
+          },
+          {
+            "limit": "shared_factory",
+            "missing_units": 46600020,
+            "month": "2028-05"
+          },
+          {
+            "limit": "shared_extraction",
+            "missing_units": 35055349,
+            "month": "2028-05"
+          },
+          {
+            "limit": "fuel_generation",
+            "missing_units": 10055349,
+            "month": "2028-06"
+          },
+          {
+            "limit": "shared_factory",
+            "missing_units": 46600000,
+            "month": "2028-06"
+          },
+          {
+            "limit": "shared_extraction",
+            "missing_units": 35055306,
+            "month": "2028-06"
+          },
+          {
+            "limit": "shared_factory",
+            "missing_units": 46600000,
+            "month": "2028-07"
+          },
+          {
+            "limit": "shared_extraction",
+            "missing_units": 35095476,
+            "month": "2028-07"
+          },
+          {
+            "limit": "shared_factory",
+            "missing_units": 46600000,
+            "month": "2028-08"
+          },
+          {
+            "limit": "shared_extraction",
+            "missing_units": 35052229,
+            "month": "2028-08"
+          },
+          {
+            "limit": "shared_factory",
+            "missing_units": 46600040,
+            "month": "2028-09"
+          },
+          {
+            "limit": "shared_factory",
+            "missing_units": 46600000,
+            "month": "2028-10"
+          },
+          {
+            "limit": "shared_factory",
+            "missing_units": 46601200,
+            "month": "2028-11"
+          },
+          {
+            "limit": "shared_factory",
+            "missing_units": 46600000,
+            "month": "2028-12"
+          },
+          {
+            "limit": "voluntary_intakes",
+            "missing_units": 600,
+            "month": "2028-12"
+          }
+        ],
+        "grain_storage_shortfalls": [
+          {
+            "missing_kg": 13949560755,
+            "month": "2028-07",
+            "pool": "shared_grain_and_preserved_storage"
+          },
+          {
+            "missing_kg": 9767855496,
+            "month": "2028-08",
+            "pool": "shared_grain_and_preserved_storage"
+          },
+          {
+            "missing_kg": 56841648099,
+            "month": "2028-09",
+            "pool": "shared_grain_and_preserved_storage"
+          },
+          {
+            "missing_kg": 52658408163,
+            "month": "2028-10",
+            "pool": "shared_grain_and_preserved_storage"
+          },
+          {
+            "missing_kg": 48474403899,
+            "month": "2028-11",
+            "pool": "shared_grain_and_preserved_storage"
+          },
+          {
+            "missing_kg": 44694614690,
+            "month": "2028-12",
+            "pool": "shared_grain_and_preserved_storage"
+          },
+          {
+            "missing_kg": 40509087690,
+            "month": "2029-01",
+            "pool": "shared_grain_and_preserved_storage"
+          },
+          {
+            "missing_kg": 36457843774,
+            "month": "2029-02",
+            "pool": "shared_grain_and_preserved_storage"
+          },
+          {
+            "missing_kg": 32270801978,
+            "month": "2029-03",
+            "pool": "shared_grain_and_preserved_storage"
+          },
+          {
+            "missing_kg": 26391388837,
+            "month": "2029-04",
+            "pool": "shared_grain_and_preserved_storage"
+          },
+          {
+            "missing_kg": 22202840108,
+            "month": "2029-05",
+            "pool": "shared_grain_and_preserved_storage"
+          },
+          {
+            "missing_kg": 18013540847,
+            "month": "2029-06",
+            "pool": "shared_grain_and_preserved_storage"
+          }
+        ],
+        "manual_work_shortfalls": []
+      },
       "fixed_field_area_ha": 16521248,
+      "fixed_upstream_bound": [
+        {
+          "first_uncovered_month": null,
+          "minimum_additional_arrivals": 0,
+          "resource": "energy_ticks",
+          "terminal_balance_before_remedy": 205112981701,
+          "total_grain_inputs": 578522985994
+        },
+        {
+          "first_uncovered_month": null,
+          "minimum_additional_arrivals": 0,
+          "resource": "packaging_ticks",
+          "terminal_balance_before_remedy": 286738507003,
+          "total_grain_inputs": 289261492997
+        },
+        {
+          "first_uncovered_month": "2031-01",
+          "minimum_additional_arrivals": 100000000,
+          "resource": "finite_packaging_ore_kg",
+          "terminal_balance_before_remedy": -100000000,
+          "total_grain_inputs": 0
+        }
+      ],
       "gross_yield_percent": 85,
       "monthly_required_water_m3": [
         0,
@@ -1278,6 +2199,6 @@
     ]
   ],
   "period_zero": "2026-01",
-  "scope": "Grain, seed, dated shelf life, finite grain storage, one-month preservation and one-month dispatch, per-route throughput, sowing windows, land and stage water. Shared energy, materials, labour, equipment and treasury for these larger flows are outside this crop balance.",
+  "scope": "Grain, seed, dated shelf life, finite grain storage, one-month preservation and one-month dispatch, per-route throughput, sowing windows, land and stage water. A separate prefix bound screens shared energy, wrapping and its finite ore against inherited non-food starts. Labour, equipment and treasury for the larger schedule have no joint feasibility certificate.",
   "target_months": 60
 }

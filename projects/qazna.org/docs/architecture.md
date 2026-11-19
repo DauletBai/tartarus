@@ -875,3 +875,10 @@ event IDs in `events`, `failed` and `unavailable_events` retain their original
 numbering. The money report and opening bound cover the combined sequence, with
 treasury transfers preceding physical payments in their period. Its
 `first_blocked_event` indexes this combined sequence.
+
+
+The [district food portfolio](physical-circulation.md#greenhouse-freshwater-and-coastal-production)
+replays 60 monthly orders against finite groundwater, power, heat, feed, cold
+storage and freight. It is an offline comparison with no ledger capability.
+The grain replay separately reports where the inherited equipment schedule
+fails on the extended calendar.

@@ -1,5 +1,10 @@
 # Qazna changelog
 
+## Food production routes and local water — 19 November 2026
+
+- Compare greenhouse, freshwater recirculation, treated water reuse, flow-through fish farming and coastal shellfish supply over 60 months. Model well and basin limits, backup power and advance orders through seasonal closures.
+- Carry finite packaging inputs through six crop seasons and identify dated equipment and grain-storage shortfalls.
+
 ## Five-year field rotation — 19 November 2026
 
 - Replay grain demand across six sowings with phased fixed fields, monthly irrigation, seed and dated delivery. Compare three yields and quantify the gap at original capacity.

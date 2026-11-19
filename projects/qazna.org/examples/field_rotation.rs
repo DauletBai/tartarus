@@ -279,6 +279,192 @@ fn candidate(model: &mut Seasonal) -> (Vec<PeriodPlan>, Vec<[i64; FOODS]>, i64) 
     (plan, annual, total)
 }
 
+// Reuse the dated non-food starts from the reference schedule. Track the best
+// possible electricity and wrapping balance for these specific grain deadlines.
+// Manual routes minimize both inputs; powered routes cannot improve this bound.
+fn upstream_bound(input: &ModelInput, plan: &[PeriodPlan]) -> Value {
+    let h = &input.model.seasonal.physical;
+    let mut resources = Vec::new();
+    for r in [9, 10, 27] {
+        let mut available = h.initial[r];
+        let mut minimum = available;
+        let mut first = None;
+        let mut grain_use = 0;
+        for (t, food) in plan.iter().enumerate() {
+            let reference = &input.plan[source_period(t)];
+            available += h.periods[source_period(t)].supplies[r] - reference.deliveries[r];
+            for (j, process) in h.processes.iter().enumerate().skip(27) {
+                available -= reference.activities[j] * process.inputs[r];
+                if let Some(start) = t.checked_sub(process.lead_periods) {
+                    available +=
+                        input.plan[source_period(start)].activities[j] * process.outputs[r];
+                }
+            }
+            for (lane, &manual) in MANUAL.iter().enumerate() {
+                let coefficient = h.processes[manual].inputs[r];
+                assert!(h.processes[manual + 1].inputs[r] >= coefficient);
+                let use_now = food.activities[FIELD_PROCESSES + lane] * coefficient;
+                grain_use += use_now;
+                available -= use_now;
+            }
+            if available < 0 && first.is_none() {
+                first = Some(calendar(t));
+            }
+            minimum = minimum.min(available);
+        }
+        resources.push(
+            json!({"resource":h.resources[r],"total_grain_inputs":grain_use,
+            "first_uncovered_month":first,"minimum_additional_arrivals":(-minimum).max(0),
+            "terminal_balance_before_remedy":available}),
+        );
+    }
+    json!(resources)
+}
+
+// Curtail only ore extraction, residue recovery and wrapper fabrication when
+// their dated inputs run out. No opening balances restart at the year boundary.
+fn capped_packaging(input: &ModelInput, plan: &[PeriodPlan]) -> Value {
+    let h = &input.model.seasonal.physical;
+    let tracked = [9, 10, 27, 28, 29];
+    let mut stock = h.initial.clone();
+    let mut arrivals = vec![vec![0; stock.len()]; MONTHS];
+    let mut minima = stock.clone();
+    let mut curtailed = [0; 3];
+    let mut work_gaps = Vec::new();
+    let mut equipment_gaps = Vec::new();
+    let mut storage_gaps = Vec::new();
+    let mut capital = input.model.clone();
+    capital.seasonal.physical.periods = (0..MONTHS)
+        .map(|t| h.periods[source_period(t)].clone())
+        .collect();
+    let original_starts: Vec<_> = (0..MONTHS)
+        .map(|t| input.plan[source_period(t)].clone())
+        .collect();
+    // Changed packaging starts have no capital outputs, so the original commissioning and retirement dates apply.
+    for life in &capital.lives {
+        assert!(
+            (0..27)
+                .chain([33, 42, 43])
+                .all(|j| h.processes[j].outputs[life.resource] == 0)
+        );
+    }
+    let retirements = capital.retirements(&original_starts).unwrap();
+    let mut capabilities = h.initial.clone();
+    let mut completions = vec![vec![0; stock.len()]; MONTHS];
+
+    let labour = &input.model.limits[0];
+    assert_eq!(labour.name, "shared_human_work_ticks");
+    assert!(
+        h.processes
+            .iter()
+            .all(|p| p.inputs[labour.resource] == 0 && p.outputs[labour.resource] == 0)
+    );
+    for (t, grain) in plan.iter().enumerate() {
+        let period = &h.periods[source_period(t)];
+        let reference = &input.plan[source_period(t)];
+        let mut starts = reference.activities.clone();
+        starts[..27].fill(0);
+        for (lane, &j) in MANUAL.iter().enumerate() {
+            starts[j] = grain.activities[FIELD_PROCESSES + lane];
+        }
+        assert!(labour.activity_use[..15].iter().all(|v| *v == 0));
+        assert!(tracked.iter().all(|&r| {
+            h.processes[..15]
+                .iter()
+                .all(|p| p.inputs[r] == 0 && p.outputs[r] == 0)
+        }));
+        for &r in &tracked {
+            stock[r] += arrivals[t][r] + period.supplies[r] - reference.deliveries[r];
+        }
+        for (index, (j, r)) in [(42, 27), (43, 29), (33, 28)].into_iter().enumerate() {
+            let allowed = starts[j].min(stock[r] / h.processes[j].inputs[r]);
+            curtailed[index] += starts[j] - allowed;
+            starts[j] = allowed;
+        }
+        for (j, (&q, p)) in starts.iter().zip(&h.processes).enumerate() {
+            assert!(q >= 0 && q <= period.capacities[j]);
+            for &r in &tracked {
+                stock[r] -= q * p.inputs[r];
+                if let Some(arrival) = arrivals.get_mut(t + p.lead_periods) {
+                    arrival[r] += q * p.outputs[r];
+                }
+            }
+        }
+        for &r in &tracked {
+            assert!(stock[r] <= h.storage_caps[r]);
+            minima[r] = minima[r].min(stock[r]);
+        }
+        assert_eq!(
+            (
+                period.supplies[labour.resource],
+                reference.deliveries[labour.resource],
+                reference.discarded[labour.resource]
+            ),
+            (0, 0, 0)
+        );
+        for life in &capital.lives {
+            capabilities[life.resource] -= retirements[t][life.resource];
+        }
+        for limit in capital.limits.iter().skip(1) {
+            assert!(limit.activity_use[..15].iter().all(|&v| v == 0));
+            let used: i64 = starts
+                .iter()
+                .zip(&limit.activity_use)
+                .map(|(q, k)| q * k)
+                .sum();
+            let capacity = capabilities[limit.resource] * limit.units_per_stock;
+            if used > capacity {
+                equipment_gaps.push(
+                    json!({"month":calendar(t),"limit":limit.name,"missing_units":used-capacity}),
+                );
+            }
+        }
+        for pool in &capital.stores {
+            let kg: i64 = pool
+                .stored_resources
+                .iter()
+                .map(|&r| grain.closing[r])
+                .sum();
+            let capacity = capabilities[pool.asset_resource] * pool.units_per_asset;
+            if kg > capacity {
+                storage_gaps
+                    .push(json!({"month":calendar(t),"pool":pool.name,"missing_kg":kg-capacity}));
+            }
+        }
+        for limit in &capital.limits {
+            // All reference capability stocks are distinct and sustained by completions.
+            let r = limit.resource;
+            assert!(h.processes.iter().all(|p| p.inputs[r] == 0));
+            assert_eq!((period.supplies[r], reference.deliveries[r]), (0, 0));
+        }
+        for (j, p) in h.processes.iter().enumerate() {
+            if let Some(row) = completions.get_mut(t + p.lead_periods) {
+                for (r, quantity) in p.outputs.iter().enumerate() {
+                    row[r] += starts[j] * quantity;
+                }
+            }
+        }
+        for (capacity, completed) in capabilities.iter_mut().zip(&completions[t]) {
+            *capacity += completed;
+        }
+        let work: i64 = starts
+            .iter()
+            .zip(&labour.activity_use)
+            .map(|(q, k)| q * k)
+            .sum();
+        let available = h.initial[labour.resource] * labour.units_per_stock;
+        if work > available {
+            work_gaps.push(json!({"month":calendar(t),"missing_manual_work_ticks":work-available}));
+        }
+    }
+    let balances: Vec<_> = tracked
+        .iter()
+        .map(|&r| json!({"resource":h.resources[r],"minimum":minima[r],"closing":stock[r]}))
+        .collect();
+    json!({"balances":balances,"curtailed_extraction_recovery_fabrication_starts":curtailed,
+        "manual_work_shortfalls":work_gaps,"equipment_shortfalls":equipment_gaps,"grain_storage_shortfalls":storage_gaps})
+}
+
 fn compare(input: &ModelInput, needs: &[[i64; FOODS]], yield_percent: i64) -> Value {
     let mut model = build(input, needs, yield_percent);
     let (plan, annual, land) = candidate(&mut model);
@@ -402,7 +588,7 @@ fn compare(input: &ModelInput, needs: &[[i64; FOODS]], yield_percent: i64) -> Va
     );
     json!({"gross_yield_percent":yield_percent,"fixed_field_area_ha":land,"required_peak_water_m3":peak,
         "peak_month":calendar(peak_month),"restored_terminal_stocks_kg":dated.final_stock,"expired_kg":dated.expired,
-        "seed_consumed_kg":dated.seed_withdrawn,
+        "seed_consumed_kg":dated.seed_withdrawn,"fixed_upstream_bound":upstream_bound(input,&plan),"finite_packaging_schedule":capped_packaging(input,&plan),
         "six_season_bound": {
             "minimum_planted_hectare_seasons": minimum_sown,
             "original_rotation_upper_hectare_seasons": reference_active_area,
@@ -423,7 +609,7 @@ fn main() {
     let needs = targets(&input, &study);
     let result = json!({"period_zero":"2026-01","target_months":60,"monthly_targets_kg":needs[12..],"crop_order":["rice_component","oats_component","feed_grain_equivalent"],
         "field_history":"Each fixed field group cycles through fallow, rice or oats, feed grain, then flexible grain. Group zero rests in 2026, group one in 2027, and so on. The same phases are assumed before 2026. No yield, irrigation, or nutrient credit is assigned to dry fallow.",
-        "scope":"Grain, seed, dated shelf life, finite grain storage, one-month preservation and one-month dispatch, per-route throughput, sowing windows, land and stage water. Shared energy, materials, labour, equipment and treasury for these larger flows are outside this crop balance.",
+        "scope":"Grain, seed, dated shelf life, finite grain storage, one-month preservation and one-month dispatch, per-route throughput, sowing windows, land and stage water. A separate prefix bound screens shared energy, wrapping and its finite ore against inherited non-food starts. Labour, equipment and treasury for the larger schedule have no joint feasibility certificate.",
         "cases":[compare(&input,&needs,100),compare(&input,&needs,120),compare(&input,&needs,85)]});
     fs::write(
         env::args().nth(1).expect("output path"),
