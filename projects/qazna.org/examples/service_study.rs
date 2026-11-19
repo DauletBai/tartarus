@@ -375,6 +375,119 @@ fn joint_feedback(definition: &ModelDefinition, input: &ModelInput) -> Value {
         "circulation":circulation(&before,&after),"single_batch_outcome":"Neither single-batch repair is feasible"})
 }
 
+fn emergency_feedback(definition: &ModelDefinition, joint: &Value) -> Value {
+    let mut baseline: ModelInput = serde_json::from_value(joint["baseline_input"].clone()).unwrap();
+    let before = preview(definition.clone(), baseline.clone()).unwrap();
+    let c: ModelCheckpoint = serde_json::from_str(before.checkpoint.as_ref().unwrap()).unwrap();
+    // Fix the emergency envelope before approval using baseline spare capacity.
+    let pools = &c.services.as_ref().unwrap().pools;
+    let services = baseline.services.as_mut().unwrap();
+    for reserve in &mut services.reserves {
+        for (t, minimum) in reserve.minimum.iter_mut().enumerate() {
+            let row = pools
+                .iter()
+                .find(|p| p.pool == reserve.pool && p.period == t)
+                .unwrap();
+            *minimum = (row.available.parse::<u64>().unwrap()
+                - row.service_use.parse::<u64>().unwrap()
+                - row.pipeline_use.parse::<u64>().unwrap())
+                / 2;
+        }
+        reserve.basis = "Half of baseline spare capacity; fixed before emergency approval".into();
+        reserve.source_reference = "qazna:emergency-envelope:v1".into();
+    }
+    let before = preview(definition.clone(), baseline.clone()).unwrap();
+    let s = baseline.services.as_ref().unwrap();
+    let mut revision = ServiceRevision {
+        boundary: 4,
+        basis: "Concurrent short absences; draw protected spare capacity without reducing care"
+            .into(),
+        source_reference: "qazna:emergency-capacity:v1".into(),
+        changes: vec![],
+    };
+    for k in [0, 4, 6, 10] {
+        let floor = s.reserves.iter().find(|r| r.pool == s.pools[k].id).unwrap();
+        for t in [4, 5] {
+            let p = &c.services.as_ref().unwrap().pools[t * s.pools.len() + k];
+            let full: u64 = p.available.parse().unwrap();
+            let used =
+                p.service_use.parse::<u64>().unwrap() + p.pipeline_use.parse::<u64>().unwrap();
+            let target = used + floor.minimum[t] / 2;
+            let available_bps = u16::try_from((target * 10000).div_ceil(full)).unwrap();
+            assert!(available_bps < 10000);
+            revision.changes.push(AvailabilityChange {
+                pool: floor.pool.clone(),
+                period: t,
+                previous_bps: 10000,
+                available_bps,
+            });
+        }
+    }
+    let mut observed = baseline.clone();
+    observed.boundary = 4;
+    observed.services = Some(s.with_revision(revision).unwrap());
+    let population = observed
+        .population
+        .as_ref()
+        .unwrap()
+        .audit(definition, &observed.model, &observed.plan)
+        .unwrap();
+    let e = observed
+        .services
+        .as_ref()
+        .unwrap()
+        .audit(definition, &observed.model, &observed.plan, &population)
+        .unwrap();
+    assert!(e.pools.iter().all(|p| p.shortage == "0"));
+    assert!(!e.all_selected_services_feasible);
+    assert!(preview_continuation(before.clone(), observed.clone()).is_err());
+    let cells: Vec<_> = e
+        .reserves
+        .iter()
+        .filter(|r| r.shortfall != "0")
+        .map(|r| ReserveDraw {
+            pool: r.pool.clone(),
+            period: r.period,
+            amount: r.shortfall.parse().unwrap(),
+        })
+        .collect();
+    assert_eq!(cells.len(), 8);
+    let release = ReserveRelease {
+        id: uuid::Uuid::from_u128(301),
+        incident_id: uuid::Uuid::from_u128(302),
+        revision_index: 0,
+        boundary: 4,
+        restore_period: 6,
+        basis: "Reviewed temporary draw; restore original protected headroom in period six".into(),
+        source_reference: "qazna:emergency-reserve-release:v1".into(),
+        cells,
+    };
+    let mut repaired = observed.clone();
+    repaired
+        .services
+        .as_mut()
+        .unwrap()
+        .releases
+        .push(release.clone());
+    let after = preview_continuation(before.clone(), repaired.clone()).unwrap();
+    let result: ModelCheckpoint = serde_json::from_str(after.checkpoint.as_ref().unwrap()).unwrap();
+    assert_eq!(result.services.as_ref().unwrap().recoveries.len(), 4);
+    assert!(
+        result
+            .services
+            .as_ref()
+            .unwrap()
+            .recoveries
+            .iter()
+            .all(|r| r.shortfall == "0")
+    );
+    assert_eq!(json!(baseline.plan), json!(repaired.plan));
+    assert_eq!(json!(c.population), json!(result.population));
+    json!({"baseline_input":baseline,"observed_input":observed,"repair":{"input":repaired},"release":release,
+        "unreleased_reserve_gaps":e.reserves.into_iter().filter(|r|r.shortfall != "0").collect::<Vec<_>>(),
+        "service_evidence":result.services,"preserved_boundary":result.rolling,"circulation":circulation(&before,&after)})
+}
+
 fn main() {
     let args: Vec<_> = env::args().collect();
     assert_eq!(args.len(), 2);
@@ -392,6 +505,7 @@ fn main() {
         .unwrap();
     let profiles = pop.profiles.as_ref().unwrap();
     let mut s = ServicePlan {
+        releases: vec![],
         reserves: vec![],
         revisions: vec![],
         registry: Registry {
@@ -756,7 +870,8 @@ fn main() {
     let summary:Vec<_>=input.services.as_ref().unwrap().pools.iter().enumerate().map(|(i,p)|json!({"pool":p.id,"initial_slots":initial[i],"new_slots":growth[i],"completion_period":lags[i],"first_usable_period":lags[i]+1})).collect();
     let feedback = feedback(&definition, &input);
     let joint = joint_feedback(&definition, &input);
-    let output = json!({"schema_version":5,"joint":joint,"feedback":feedback,"assumptions":"docs/input-assumptions.md#care-and-education-capacity","runtime_fixture":{"definition":definition,"input":input,"population_evidence":checkpoint.population,"service_evidence":checkpoint.services},"capacity_summary":summary,"outage_counterexample":{"gaps":outage.pools.into_iter().filter(|p|p.shortage!="0").collect::<Vec<_>>(),"runtime_rejection":rejection}});
+    let emergency = emergency_feedback(&definition, &joint);
+    let output = json!({"schema_version":6,"emergency":emergency,"joint":joint,"feedback":feedback,"assumptions":"docs/input-assumptions.md#care-and-education-capacity","runtime_fixture":{"definition":definition,"input":input,"population_evidence":checkpoint.population,"service_evidence":checkpoint.services},"capacity_summary":summary,"outage_counterexample":{"gaps":outage.pools.into_iter().filter(|p|p.shortage!="0").collect::<Vec<_>>(),"runtime_rejection":rejection}});
     fs::write(&args[1], serde_json::to_vec_pretty(&output).unwrap()).unwrap();
     println!(
         "Verified regional care/education, shared development workload, operating resources and delayed capacity"

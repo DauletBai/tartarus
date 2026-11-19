@@ -83,6 +83,12 @@ needs, commitments and exact circulation are checked together. Search-budget
 exhaustion is distinguished from failure across all declared dates. Application
 still requires operator review.
 
+The book [*Tartar and I*](../../book/README.md) explains the project's connected conceptual foundation;
+[needs-first principles and verification](docs/organism.md#conceptual-foundation-and-testable-claims)
+define how that vision becomes independently testable rules. Emergency reserve
+use now preserves the original floor and requires an incident-bound reviewed
+proposal with a recovery deadline; see [architecture](docs/architecture.md#incident-bound-emergency-reserve-release).
+
 ## Project information
 
 | Item | Reference |
@@ -99,7 +105,7 @@ still requires operator review.
 *Tartar and I* by Daulet Baimurza is the author's Russian research essay on language, historical memory and the Tenge economic proposal. Chapter 26 introduces the organism-inspired provisioning idea; its appendices distinguish model assumptions from calculations. Qazna turns selected provisioning mechanisms into executable, testable software. Passing software tests does not establish the book's historical hypotheses or prove the full economic model.
 
 - [Read the Russian HTML edition](https://dauletbai.github.io/tartarus/), with individual sections suitable for browser translation.
-- [Download the print PDF](https://media.githubusercontent.com/media/DauletBai/tartarus/codex/qazna-rust-provisioning/book/Tartar_i_Ya_print_6x9.pdf).
+- [Download the print PDF](https://media.githubusercontent.com/media/DauletBai/tartarus/main/book/Tartar_i_Ya_print_6x9.pdf).
 - [Explore the book and research archive](https://github.com/DauletBai/tartarus).
 
 The active project is this directory in Tartarus. The separate [DauletBai/qazna.org](https://github.com/DauletBai/qazna.org) repository is archived earlier work. It is not the current runtime. The book's copyright is separate from the software and project documentation licenses.

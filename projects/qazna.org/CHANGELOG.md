@@ -1,5 +1,14 @@
 # Qazna changelog
 
+## Incident-bound emergency reserves — 18 November 2026
+
+- Add bounded immutable reserve-release records with exact per-pool/period draws and full-floor recovery deadlines.
+- Authenticate new releases against current open incidents at both proposal and approval; serialize withdrawal races.
+- Preserve service needs, fixed original floors, commitments and monetary policy; reject real shortages and chained-deadline evasion.
+- Extend the maintained report to schema 6 with eight draw cells, four recovery checks and unchanged 400-event circulation.
+- Add arithmetic, history, cross-model, retry/concurrency and HTTP restore coverage without a schema or dependency change.
+- Explain the book’s conceptual role and the independently reproducible criteria for evaluating the model.
+
 ## Joint service repair and protected reserves — 13 November 2026
 
 - Coordinate up to four unstarted batches using original quantities and simultaneous stock/activity deltas.

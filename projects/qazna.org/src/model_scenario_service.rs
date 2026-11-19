@@ -102,6 +102,7 @@ impl Ledger {
         }
         lock(&mut tx, id).await?;
         let before = snapshot(&mut tx, id, None).await?;
+        validate_releases(&mut tx, &before, &request.input).await?;
         let dated = anchors(&mut tx, &before.definition).await?;
         let candidate = checked(before, request.clone(), dated).await?;
         let inserted=sqlx::query("INSERT INTO model_scenario_drafts(id,scenario_id,base_generation,request,candidate) VALUES ($1,$2,$3,$4,$5) ON CONFLICT DO NOTHING")
@@ -138,6 +139,7 @@ impl Ledger {
         }
         let generation = if decision.apply {
             let before = snapshot(&mut tx, draft.scenario_id, None).await?;
+            validate_releases(&mut tx, &before, &draft.request.input).await?;
             let dated = anchors(&mut tx, &before.definition).await?;
             let validated = checked(before, draft.request.clone(), dated).await?;
             if validated.checkpoint != draft.candidate.checkpoint {
@@ -240,6 +242,41 @@ async fn draft_in(tx: &mut Tx<'_>, id: Uuid) -> Result<ModelDraft, LedgerError> 
         state: r.try_get("state")?,
         decision_basis: r.try_get("basis")?,
     })
+}
+
+// Called under the model lock shared by incident corrections and plan approval.
+// Already applied history remains immutable when a later observation is corrected.
+async fn validate_releases(
+    tx: &mut Tx<'_>,
+    before: &ModelVersion,
+    input: &ModelInput,
+) -> Result<(), LedgerError> {
+    let old = checkpoint(before)?;
+    let count = old
+        .as_ref()
+        .and_then(|c| c.input.services.as_ref())
+        .map_or(0, |s| s.releases.len());
+    if let Some(s) = &input.services {
+        // Reject unbounded authorization work before looking up incident rows.
+        if s.releases.len() > 128 || s.releases.len() > count + 1 {
+            return Err(LedgerError::Invalid(
+                "reserve release count exceeds continuation bound",
+            ));
+        }
+        for release in s.releases.iter().skip(count) {
+            let incident = crate::service_incidents::record(tx, release.incident_id).await?;
+            if incident.model_id != before.definition.id
+                || incident.base_generation != before.generation
+                || incident.state != "open"
+                || s.revisions.get(release.revision_index) != Some(&incident.revision)
+            {
+                return Err(LedgerError::Invalid(
+                    "reserve release requires an open incident at the current generation with the exact revision",
+                ));
+            }
+        }
+    }
+    Ok(())
 }
 
 #[cfg(test)]

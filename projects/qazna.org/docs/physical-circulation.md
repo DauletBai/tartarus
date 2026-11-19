@@ -2312,3 +2312,38 @@ cargo run --locked --example service_study -- research/service-results.json
 This closes bounded multi-batch deferral with protected headroom. It does not yet
 split batches, advance starts, release reserve under emergency authority, recruit
 additional staff, relocate regional resources or prove rolling terminal liquidity.
+
+## Incident-bound spare-capacity draw and recovery
+
+The schema-6 `emergency` section in `research/service-results.json` uses the
+same care/education graph, with a reserve envelope fixed before baseline approval:
+half of each selected pool's baseline spare capacity. Declared absences reduce
+available capacity in periods 4 and 5. Actual service and development still fit,
+but protected headroom does not. Without a reviewed exception the candidate fails.
+An incident-bound release authorizes only the calculated headroom shortfall;
+original reserve norms stay recorded. The physical work schedule is unchanged.
+
+| Pool | Authorized draw, period 4 | Authorized draw, period 5 | Full reserve due at period 6 | Free capacity at period 6 |
+| --- | ---: | ---: | ---: | ---: |
+| North care staff | 44,764,378 | 126,916,923 | 68,825,987 | 137,651,974 |
+| North equipment | 124,856,362 | 167,956,841 | 239,901,963 | 479,803,927 |
+| South care staff | 67,151,352 | 190,379,892 | 103,234,040 | 206,468,081 |
+| South equipment | 187,284,581 | 251,935,266 | 359,852,889 | 719,705,779 |
+
+All entries are minutes of the named pool, not interchangeable person-minutes,
+equipment-minutes or sums of resources. Availability returns to its declared
+baseline at period 6; all four recovery checks pass. This is planned recovery,
+not an observed field result or an intervention that cures an absence. An actual
+service shortage still fails even when the entire reserve is released. A second
+release cannot waive the first release's original recovery deadline.
+
+Both schedules retain exactly the same 400 circulation events and fixed opening
+measure of 8,536,101,076, including the 56-event prefix before period 4. All
+scheduled payments settle and daily resident balances close at zero under the
+existing policy. The blocked-event counterexample remains. No money is created by
+reserve authorization, and no output is created by changing a reserve threshold.
+
+This case verifies controlled use of **free capability**, not warehouse stock
+withdrawal or optimal emergency policy. Availability observations, suitable floor
+sizes and credible recovery paths still require calibration. Historical reports
+and earlier failed candidates are preserved in the same maintained report.

@@ -547,3 +547,226 @@ async fn competing_links_and_cross_scope_references_cannot_replace_history() {
 
 #[path = "incident_revisions.rs"]
 mod revisions;
+
+async fn emergency_baseline(f: &Fixture) -> (Uuid, IncidentDeclaration, ModelInput) {
+    let v = report();
+    let mut d: ModelDefinition =
+        serde_json::from_value(v["runtime_fixture"]["definition"].clone()).unwrap();
+    d.id = Uuid::new_v4();
+    let id = d.id;
+    f.ledger.create_model_scenario(&uid(), d).await.unwrap();
+    let input = serde_json::from_value(v["emergency"]["baseline_input"].clone()).unwrap();
+    let draft = f
+        .ledger
+        .propose_model_scenario(&uid(), id, proposal(input, 0))
+        .await
+        .unwrap();
+    f.ledger
+        .resolve_model_scenario(&uid(), draft.request.id, decision())
+        .await
+        .unwrap();
+    let mut next: ModelInput =
+        serde_json::from_value(v["emergency"]["repair"]["input"].clone()).unwrap();
+    let s = next.services.as_mut().unwrap();
+    s.releases[0].id = Uuid::new_v4();
+    s.releases[0].incident_id = Uuid::new_v4();
+    let declaration = IncidentDeclaration {
+        id: s.releases[0].incident_id,
+        expected_generation: 1,
+        revision: s.revisions[0].clone(),
+    };
+    (id, declaration, next)
+}
+fn withdrawal(generation: i64) -> qazna::incident_revisions::IncidentCorrection {
+    qazna::incident_revisions::IncidentCorrection {
+        expected_generation: generation,
+        replacement_id: None,
+        basis: "Observation withdrawn by operator".into(),
+    }
+}
+#[tokio::test]
+#[ignore = "requires isolated PostgreSQL; use scripts/check.py"]
+async fn reserve_authorization_requires_exact_open_incident_and_retries_safely() {
+    let f = Fixture::new().await;
+    let (m, d, input) = emergency_baseline(&f).await;
+    let request = proposal(input, 1);
+    assert!(
+        f.ledger
+            .propose_model_scenario("reserve", m, request.clone())
+            .await
+            .is_err()
+    );
+    f.ledger
+        .declare_service_incident("incident", m, d.clone())
+        .await
+        .unwrap();
+    let mut oversized = request.clone();
+    oversized.id = Uuid::new_v4();
+    let releases = &mut oversized.input.services.as_mut().unwrap().releases;
+    releases.push(releases[0].clone());
+    assert!(matches!(
+        f.ledger
+            .propose_model_scenario("too-many-releases", m, oversized)
+            .await,
+        Err(LedgerError::Invalid(
+            "reserve release count exceeds continuation bound"
+        ))
+    ));
+    let mut wrong = request.clone();
+    wrong.id = Uuid::new_v4();
+    wrong.input.services.as_mut().unwrap().revisions[0].basis =
+        "Different source description".into();
+    assert!(
+        f.ledger
+            .propose_model_scenario("mismatch", m, wrong)
+            .await
+            .is_err()
+    );
+    let (a, b) = tokio::join!(
+        f.ledger
+            .propose_model_scenario("reserve", m, request.clone()),
+        f.ledger.propose_model_scenario("reserve", m, request)
+    );
+    let draft = a.unwrap();
+    assert_eq!(json!(draft), json!(b.unwrap()));
+    assert_eq!(
+        f.ledger.model_scenario(m, None).await.unwrap().generation,
+        1
+    );
+    let (a, b) = tokio::join!(
+        f.ledger
+            .resolve_model_scenario("approve", draft.request.id, decision()),
+        f.ledger
+            .resolve_model_scenario("approve", draft.request.id, decision())
+    );
+    let applied = a.unwrap();
+    assert_eq!(json!(applied), json!(b.unwrap()));
+    let c: ModelCheckpoint =
+        serde_json::from_str(applied.candidate.checkpoint.as_ref().unwrap()).unwrap();
+    assert_eq!(c.services.as_ref().unwrap().recoveries.len(), 4);
+    assert!(
+        c.services
+            .as_ref()
+            .unwrap()
+            .recoveries
+            .iter()
+            .all(|r| r.shortfall == "0")
+    );
+    // A later correction preserves the prior applied intervention rather than rewriting it.
+    f.ledger
+        .correct_service_incident("later-correction", d.id, withdrawal(2))
+        .await
+        .unwrap();
+    let mut next = c.input.clone();
+    next.boundary = 6;
+    let draft = f
+        .ledger
+        .propose_model_scenario("continue", m, proposal(next, 2))
+        .await
+        .unwrap();
+    f.ledger
+        .resolve_model_scenario("continue-approve", draft.request.id, decision())
+        .await
+        .unwrap();
+    assert_eq!(
+        json!(f.ledger.model_scenario(m, Some(2)).await.unwrap()),
+        json!(applied.candidate)
+    );
+}
+#[tokio::test]
+#[ignore = "requires isolated PostgreSQL; use scripts/check.py"]
+async fn withdrawn_incident_invalidates_pending_reserve_at_approval() {
+    let f = Fixture::new().await;
+    let (m, d, input) = emergency_baseline(&f).await;
+    f.ledger
+        .declare_service_incident("incident", m, d.clone())
+        .await
+        .unwrap();
+    let draft = f
+        .ledger
+        .propose_model_scenario("draft", m, proposal(input.clone(), 1))
+        .await
+        .unwrap();
+    f.ledger
+        .correct_service_incident("withdraw", d.id, withdrawal(1))
+        .await
+        .unwrap();
+    assert!(
+        f.ledger
+            .resolve_model_scenario("approve", draft.request.id, decision())
+            .await
+            .is_err()
+    );
+    assert_eq!(
+        f.ledger
+            .model_scenario_draft(draft.request.id)
+            .await
+            .unwrap()
+            .state,
+        "pending"
+    );
+    assert_eq!(
+        f.ledger.model_scenario(m, None).await.unwrap().generation,
+        1
+    );
+    assert!(
+        f.ledger
+            .propose_model_scenario("redraft", m, proposal(input, 1))
+            .await
+            .is_err()
+    );
+}
+#[tokio::test]
+#[ignore = "requires isolated PostgreSQL; use scripts/check.py"]
+async fn foreign_incident_cannot_authorize_reserves_in_another_model() {
+    let f = Fixture::new().await;
+    let (m, d, _) = emergency_baseline(&f).await;
+    f.ledger
+        .declare_service_incident("foreign", m, d.clone())
+        .await
+        .unwrap();
+    let (other, _, mut input) = emergency_baseline(&f).await;
+    input.services.as_mut().unwrap().releases[0].incident_id = d.id;
+    assert!(
+        f.ledger
+            .propose_model_scenario("cross-model", other, proposal(input, 1))
+            .await
+            .is_err()
+    );
+    assert_eq!(
+        f.ledger
+            .model_scenario(other, None)
+            .await
+            .unwrap()
+            .generation,
+        1
+    );
+}
+#[tokio::test]
+#[ignore = "requires isolated PostgreSQL; use scripts/check.py"]
+async fn reserve_approval_and_incident_withdrawal_serialize_at_one_generation() {
+    let f = Fixture::new().await;
+    let (m, d, input) = emergency_baseline(&f).await;
+    f.ledger
+        .declare_service_incident("incident", m, d.clone())
+        .await
+        .unwrap();
+    let draft = f
+        .ledger
+        .propose_model_scenario("draft", m, proposal(input, 1))
+        .await
+        .unwrap();
+    let (approve, withdraw) = tokio::join!(
+        f.ledger
+            .resolve_model_scenario("approve", draft.request.id, decision()),
+        f.ledger
+            .correct_service_incident("withdraw", d.id, withdrawal(1))
+    );
+    assert_ne!(approve.is_ok(), withdraw.is_ok());
+    let generation = f.ledger.model_scenario(m, None).await.unwrap().generation;
+    assert_eq!(generation, if approve.is_ok() { 2 } else { 1 });
+    assert_eq!(
+        f.ledger.service_incident(d.id).await.unwrap().state,
+        if approve.is_ok() { "open" } else { "withdrawn" }
+    );
+}

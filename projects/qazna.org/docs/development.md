@@ -1051,3 +1051,60 @@ succeeded after restore. Both strict-evidence runs and actor seeds 7/19 complete
 The 60-period circulation run handled 4,548 HTTP requests in 57.413 seconds with
 one restart; the closed run handled 3,901 in 47.494 seconds with two restarts.
 These are local regression measurements, not production throughput guarantees.
+
+
+## Emergency reserves and recovery — 18 November 2026
+
+Implemented bounded `ReserveRelease`/`ReserveDraw` records and separate recovery
+evidence. Continuation preserves prior floors/history; only a new availability
+revision may introduce a new release. Runtime authenticates the open incident at
+proposal and approval under the model lock. No schema migration, dependencies or
+live monetary authority changed. The conceptual foundation is documented in
+[organism](organism.md#conceptual-foundation-and-testable-claims).
+
+The maintained service report is schema 6. Its emergency section holds two regions,
+four pools, eight authorized draw cells in periods 4–5 and four full-floor recovery
+checks at period 6. Care, population, work and physical quantities are unchanged;
+the exact monetary schedule is checked under one fixed policy. Every preceding
+report section compares equal to the prior commit. This is an enforcement case,
+not measured reserve adequacy: a reported recovery of availability is assumed,
+not produced by this module or authenticated by a sensor.
+
+Tests cover exact thresholds, malformed and excessive draws, immutable history,
+service failure, missed recovery, chained-deadline evasion, initial history
+injection, foreign/missing/mismatched/withdrawn incident anchors, idempotency,
+concurrent withdrawal/approval and continuation after later correction. HTTP
+restart and backup restore include an approved baseline and pending emergency
+candidate; its approval rechecks the restored incident and recovery evidence.
+
+To exercise this path, use `research/service-results.json` → `emergency`:
+
+1. Create a model using `runtime_fixture.definition` with a new model UUID; propose
+   and approve `emergency.baseline_input` at generation 0.
+2. Declare `repair.input.services.revisions[0]` through the model's `/incidents`
+   route at generation 1. Use the returned incident UUID in the new release;
+   assign a new release UUID for this experiment.
+3. Propose `emergency.repair.input` at generation 1 through the existing model
+   drafts route. Inspect original/effective reserve requirements and all recovery
+   rows, then resolve the draft explicitly.
+4. If the incident was withdrawn meanwhile, approval must fail and the draft stays
+   pending. After successful application, later continuation preserves the release
+   and original floor rather than sending a second authorization for the same cells.
+
+The script-driven HTTP restore test performs these steps without new infrastructure
+or AI credentials. The recorded plan is not a command to deliver real care.
+
+Verification completed on **18 November 2026** with the full
+`PG_BIN=/opt/homebrew/opt/postgresql@16/bin python3 scripts/check.py` command:
+**384 Rust tests** (including **41 service** and **141 PostgreSQL** tests),
+**11 Python tests**, Rustfmt, all-target Clippy, dependency licences and
+byte-identical maintained report regeneration passed. The disposable PostgreSQL
+cluster stopped cleanly after successful completion.
+
+Logical restore verified **48 tables** and **24 runtime privilege denials**;
+the pending emergency release survived restart/restore, was revalidated against
+its incident and approved, and retained its complete service history on further
+continuation. Both strict-evidence exercises and actor seeds 7/19 completed.
+The circulation exercise handled 4,548 HTTP requests in 57.736 seconds with one
+restart; the closed exercise handled 3,901 in 47.523 seconds with two restarts.
+These local regression timings are not production throughput measurements.

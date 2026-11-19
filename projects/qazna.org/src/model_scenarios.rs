@@ -318,7 +318,7 @@ pub(crate) fn calculate(
     } else if input
         .services
         .as_ref()
-        .is_some_and(|s| !s.revisions.is_empty())
+        .is_some_and(|s| !s.revisions.is_empty() || !s.releases.is_empty())
     {
         return Err(LedgerError::Invalid(
             "initial service input contains revision history",

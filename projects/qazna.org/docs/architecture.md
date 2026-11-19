@@ -765,7 +765,7 @@ reported availability. The reserve does not add stock, money, daily throughput
 or unused capacity from another period. Reserve evidence is persisted with the
 checkpoint; an otherwise balanced schedule fails if it consumes protected reserve.
 Reserve floors cannot be removed, reduced or re-attributed during continuation.
-There is no emergency-release authority in this stage. Empty reserve fields are
+The emergency-release extension below adds a separately reviewed exception. Empty reserve fields are
 omitted so existing checkpoint/evidence serialization is unchanged.
 
 Joint proposals use the existing generation-bound runtime model-draft API and
@@ -773,3 +773,47 @@ operator approval. Simultaneous approval admits only one competing candidate;
 failures retain old history and do not consume a retry key. Monetary continuation
 is independently calculated under the same fixed policy; service-search success
 alone never authorizes a posting. No new database table or migration is required.
+
+
+## Incident-bound emergency reserve release
+
+`ServicePlan.releases` is an append-only log embedded in the existing immutable
+model input/checkpoint. One continuation may append one release with a new exact
+availability revision. Each release has its own UUID, incident UUID, revision
+index, boundary, exclusive recovery period, basis/source and up to 128 pool/period
+cells. History is bounded to 128 releases. Old floors and release records cannot
+be removed, rewritten or extended. Initial approval cannot inject prior releases.
+
+For each affected pool and period, with original floor R and authorized draw E:
+
+```
+0 <= E <= R
+service_shortage = max(S + D - A, 0)
+effective_floor  = R - E
+reserve_shortfall = max(effective_floor - max(A - S - D, 0), 0)
+recovery_shortfall(pool, deadline) = max(R_deadline - free_capacity_deadline, 0)
+```
+
+Every shortage must be zero. E changes only the protected headroom threshold,
+never A, S, D, physical stock, need or monetary policy. Draws must correspond to
+an exact decreased-availability cell in the associated revision, within the
+release window. Duplicate cells, overlapping release cells, unknown pools,
+excess amounts and deadlines outside the horizon fail. Recovery checks the full
+original floor for every affected pool at the deadline even if a later release
+would otherwise lower that period's threshold. Thus chained authorizations cannot
+conceal an unfulfilled earlier recovery obligation. Periods/units are those of
+the model; no time carryover or cross-region/cross-resource substitution occurs.
+
+Under the model lock, both proposal and application authenticate every new release
+against an open durable incident: same model, base generation and exact revision.
+Incident withdrawal/supersession shares that lock. A pending release cannot apply
+after withdrawal; if approval wins first, correction using the old generation is
+stale. Later correction retains applied history; subsequent unchanged continuation
+still audits the original recovery obligations. A standalone offline preview
+checks mathematics and record shape, not database identity or observation truth.
+
+The existing operator-only draft resolution approves the release together with
+the whole physical plan. It makes no live postings or real resource assignments.
+Discarding a draft is not release approval. No migration or additional database
+privilege is required. Empty new fields are omitted, preserving old checkpoint
+bytes. Database-owner access remains a separate trust boundary.

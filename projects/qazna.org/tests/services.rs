@@ -1045,3 +1045,190 @@ fn joint_batches_compete_for_the_same_reserved_mentor_pool() {
     assert_eq!(e.reserves[t].shortfall, a.min(b).to_string());
     assert!(!e.all_selected_services_feasible);
 }
+
+fn emergency_fixture() -> (ModelDefinition, ModelInput, ModelInput) {
+    let v: Value = serde_json::from_str(include_str!("../research/service-results.json")).unwrap();
+    (
+        serde_json::from_value(v["runtime_fixture"]["definition"].clone()).unwrap(),
+        serde_json::from_value(v["emergency"]["baseline_input"].clone()).unwrap(),
+        serde_json::from_value(v["emergency"]["repair"]["input"].clone()).unwrap(),
+    )
+}
+#[test]
+fn emergency_draw_uses_existing_capacity_and_restores_full_floor() {
+    let (d, b, i) = emergency_fixture();
+    let before = preview(d.clone(), b.clone()).unwrap();
+    assert!(preview_continuation(before.clone(), i.clone()).is_ok());
+    let e = audit(&d, &i).unwrap();
+    assert!(e.all_selected_services_feasible);
+    assert_eq!(e.recoveries.len(), 4);
+    assert!(
+        e.recoveries
+            .iter()
+            .all(|r| r.period == 6 && r.shortfall == "0")
+    );
+    let s = i.services.as_ref().unwrap();
+    assert_eq!(s.reserves, b.services.as_ref().unwrap().reserves);
+    assert_eq!(json!(i.plan), json!(b.plan));
+    let drawn: Vec<_> = e.reserves.iter().filter(|r| r.released.is_some()).collect();
+    assert_eq!(drawn.len(), 8);
+    for r in drawn {
+        let full: u64 = r.required.parse().unwrap();
+        let released: u64 = r.released.as_ref().unwrap().parse().unwrap();
+        let effective: u64 = r.effective_required.as_ref().unwrap().parse().unwrap();
+        assert_eq!(full, released + effective);
+        assert_eq!(r.free_capacity.parse::<u64>().unwrap(), effective);
+    }
+    let mut without = i.clone();
+    without.services.as_mut().unwrap().releases.clear();
+    assert!(preview_continuation(before, without.clone()).is_err());
+    assert!(
+        audit(&d, &without)
+            .unwrap()
+            .pools
+            .iter()
+            .all(|p| p.shortage == "0")
+    );
+}
+#[test]
+fn release_history_cannot_be_removed_extended_or_rewritten() {
+    let (d, b, i) = emergency_fixture();
+    let saved = preview_continuation(preview(d, b).unwrap(), i.clone()).unwrap();
+    for mode in 0..5 {
+        let mut next = i.clone();
+        next.boundary = 6;
+        let s = next.services.as_mut().unwrap();
+        match mode {
+            0 => s.releases.clear(),
+            1 => s.releases[0].restore_period = 8,
+            2 => s.releases[0].cells[0].amount -= 1,
+            3 => s.releases[0].incident_id = uuid::Uuid::new_v4(),
+            _ => s.releases[0].basis = "rewritten".into(),
+        }
+        assert!(
+            preview_continuation(saved.clone(), next).is_err(),
+            "mode {mode}"
+        );
+    }
+    let mut next = i;
+    next.boundary = 6;
+    assert!(preview_continuation(saved, next).is_ok());
+}
+#[test]
+fn malformed_draws_are_rejected_without_panics() {
+    let (d, b, i) = emergency_fixture();
+    let before = preview(d, b).unwrap();
+    for mode in 0..13 {
+        let mut next = i.clone();
+        let r = &mut next.services.as_mut().unwrap().releases[0];
+        match mode {
+            0 => r.id = uuid::Uuid::nil(),
+            1 => r.incident_id = uuid::Uuid::nil(),
+            2 => r.restore_period = usize::MAX,
+            3 => r.restore_period = 4,
+            4 => r.revision_index = usize::MAX,
+            5 => r.cells[0].amount = u64::MAX,
+            6 => r.cells[0].amount = 0,
+            7 => r.cells[0].period = usize::MAX,
+            8 => r.cells[0].period = 3,
+            9 => r.cells.push(r.cells[0].clone()),
+            10 => r.cells[0].pool = "absent".into(),
+            11 => r.source_reference = " ".into(),
+            _ => r.cells.clear(),
+        }
+        assert!(
+            preview_continuation(before.clone(), next).is_err(),
+            "mode {mode}"
+        );
+    }
+}
+#[test]
+fn reserve_draw_cannot_hide_unmet_service_or_late_recovery() {
+    let (d, b, i) = emergency_fixture();
+    for mode in 0..2 {
+        let mut next = i.clone();
+        let s = next.services.as_mut().unwrap();
+        let t = if mode == 0 { 4 } else { 6 };
+        s.pools[0].availability_bps[t] = 0;
+        if mode == 0 {
+            s.revisions[0].changes[0].available_bps = 0;
+        } else {
+            s.revisions[0].changes.push(AvailabilityChange {
+                pool: s.pools[0].id.clone(),
+                period: t,
+                previous_bps: 10000,
+                available_bps: 0,
+            });
+            s.revisions[0].changes.sort_by_key(|c| {
+                (
+                    s.pools.iter().position(|p| p.id == c.pool).unwrap(),
+                    c.period,
+                )
+            });
+        }
+        let e = audit(&d, &next).unwrap();
+        assert!(!e.all_selected_services_feasible);
+        if mode == 1 {
+            assert!(e.recoveries.iter().any(|r| r.shortfall != "0"));
+        }
+        assert!(preview_continuation(preview(d.clone(), b.clone()).unwrap(), next).is_err());
+    }
+}
+#[test]
+fn future_emergency_cannot_roll_forward_an_existing_recovery_deadline() {
+    let (d, b, i) = emergency_fixture();
+    let before = preview_continuation(preview(d.clone(), b).unwrap(), i.clone()).unwrap();
+    let mut next = i.clone();
+    next.boundary = 6;
+    let s = next.services.as_ref().unwrap();
+    let earlier = s.revisions[0].changes[0].clone();
+    let change = AvailabilityChange {
+        pool: earlier.pool.clone(),
+        period: 6,
+        previous_bps: 10000,
+        available_bps: earlier.available_bps,
+    };
+    let revision = ServiceRevision {
+        boundary: 6,
+        basis: "Prolonged absence".into(),
+        source_reference: "test:prolonged".into(),
+        changes: vec![change],
+    };
+    let mut s = s.with_revision(revision).unwrap();
+    let amount = s
+        .reserves
+        .iter()
+        .find(|r| r.pool == earlier.pool)
+        .unwrap()
+        .minimum[6];
+    s.releases.push(ReserveRelease {
+        id: uuid::Uuid::new_v4(),
+        incident_id: uuid::Uuid::new_v4(),
+        revision_index: 1,
+        boundary: 6,
+        restore_period: 8,
+        basis: "Further disruption".into(),
+        source_reference: "test:second".into(),
+        cells: vec![ReserveDraw {
+            pool: earlier.pool,
+            period: 6,
+            amount,
+        }],
+    });
+    next.services = Some(s);
+    let e = audit(&d, &next).unwrap();
+    assert!(e.reserves.iter().all(|r| r.shortfall == "0"));
+    assert!(e.pools.iter().all(|r| r.shortage == "0"));
+    assert!(
+        e.recoveries
+            .iter()
+            .any(|r| r.period == 6 && r.shortfall != "0")
+    );
+    assert!(preview_continuation(before, next).is_err());
+}
+#[test]
+fn initial_model_cannot_import_release_history_as_authority() {
+    let (d, _, mut i) = emergency_fixture();
+    i.boundary = 0;
+    assert!(preview(d, i).is_err());
+}
