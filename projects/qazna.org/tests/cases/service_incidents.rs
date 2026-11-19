@@ -72,6 +72,7 @@ async fn money(f: &Fixture, id: Uuid, generation: i64, physical: i64, unavailabl
             &uid(),
             id,
             CoupledProposal {
+                fund_from_treasury: false,
                 id: Uuid::new_v4(),
                 expected_generation: generation,
                 model_generation: physical,

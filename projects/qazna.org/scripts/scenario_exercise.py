@@ -74,6 +74,7 @@ def populate_and_restart(url):
         assert call(f'/v1/scenario-drafts/{pending}') == next_draft
         model_reference = populate_model(call)
         coupled_reference = populate_coupled(call, model_reference)
+        funding_reference = populate_funding(call, model_reference)
         extended_reference = populate_extended(call)
         population_reference = populate_population(call)
         profile_reference = populate_population(call, "need-profile-results.json")
@@ -87,6 +88,7 @@ def populate_and_restart(url):
         assert call(model_reference['draft_path']) == model_reference['pending']
         assert call(coupled_reference['path']) == coupled_reference['saved']
         assert call(coupled_reference['draft_path']) == coupled_reference['pending']
+        verify_funding(call, funding_reference)
         assert call(extended_reference['coupled_path']) == extended_reference['coupled']
         assert call(extended_reference['draft_path']) == extended_reference['pending']
         assert call(population_reference['path']) == population_reference['saved']
@@ -104,7 +106,7 @@ def populate_and_restart(url):
         verify_service_incidents(call, incident_reference)
     print('Physical model: full accepted and pending state survives process restart', flush=True)
     print('Dated scenario: 2 process restarts, pending and approved bytes preserved', flush=True)
-    return dict(path=path, saved=saved, pending=next_draft, model=model_reference, coupled=coupled_reference, extended=extended_reference, population=population_reference, profiles=profile_reference, services=service_reference, service_feedback=feedback_reference, joint_feedback=joint_reference, emergency=emergency_reference, incidents=incident_reference)
+    return dict(path=path, saved=saved, pending=next_draft, model=model_reference, coupled=coupled_reference, funding=funding_reference, extended=extended_reference, population=population_reference, profiles=profile_reference, services=service_reference, service_feedback=feedback_reference, joint_feedback=joint_reference, emergency=emergency_reference, incidents=incident_reference)
 
 
 def resume_restored(url, reference):
@@ -124,6 +126,7 @@ def resume_restored(url, reference):
         assert state['origins']['1']['expires'] == 5
         assert not state['origins']['2']['released']
         assert not state['transit']
+        verify_funding(call, reference['funding'])
         resume_coupled_pending(call, reference['coupled'])
         resume_model(call, reference['model'])
         resume_coupled_current(call, reference['coupled'])
@@ -220,6 +223,34 @@ def populate_coupled(call, model):
         model_generation=1, unavailable_events=[83], basis='Declared future interruption'))
     return dict(path=path, saved=saved, pending=pending,
                 draft_path=f"/v1/coupled-drafts/{pending['request']['id']}")
+
+
+def populate_funding(call, model):
+    policy = json.loads((ROOT / 'fixtures/circulation-policy.json').read_text())
+    policy['opening'] = ['158', '0', '0', '2', '0']
+    policy['common_measure'][1] = '5'
+    scope = uid()
+    path = f'/v1/scenarios/coupled/{scope}'
+    call('/v1/scenarios/coupled', dict(id=scope, format_version=1, model_id=model['saved']['definition']['id'],
+         policy=policy, basis='Fixed treasury with a future equipment-unit deficit'))
+    request = dict(id=uid(), expected_generation=0, model_generation=1, unavailable_events=[], basis='Original schedule')
+    draft = call(path + '/drafts', request)
+    call(f"/v1/coupled-drafts/{draft['request']['id']}/resolve", dict(apply=True, basis='Review original schedule'))
+    request.update(id=uid(), expected_generation=1, fund_from_treasury=True, basis='Cover future equipment obligations')
+    funding = call(path + '/drafts', request)
+    decision_path = f"/v1/coupled-drafts/{funding['request']['id']}/resolve"
+    decision = dict(apply=True, basis='Review derived allocation')
+    result = call(decision_path, decision, key='restore-funding-approval')
+    evidence = json.loads(result['candidate']['checkpoint'])['evidence']
+    assert evidence['treasury_allocations'] == [dict(period=2, to=3, amount='6')]
+    assert evidence['all_scheduled_payments_settled'] and evidence['money']['opening_total'] == '160'
+    return dict(path=path, decision_path=decision_path, decision=decision, result=result)
+
+
+def verify_funding(call, reference):
+    assert call(reference['path']) == reference['result']['candidate']
+    assert call(reference['decision_path'], reference['decision'], key='restore-funding-approval') == reference['result']
+    assert call(reference['path'])['generation'] == 2
 
 
 def resume_coupled_pending(call, reference):

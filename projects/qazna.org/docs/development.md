@@ -1135,3 +1135,9 @@ with one restart, and closed circulation completed 3,901 requests in 46.424 seco
 with two restarts. Actor exercise seeds 7 and 19 passed.
 
 The extended fixture also regenerates two 72-month harvest scenarios. The check compares the complete result byte for byte, including terminal reserve floors, original-age retirements, negative controls for missed sowing and replacement, integer packaging bounds and replay of payments from existing balances.
+
+The reviewed funding exercise binds a grant to two accepted versions, races
+two approvals, retries the winning command, changes the physical head and
+replays a later outage. HTTP restart and PostgreSQL dump/restore verify the
+accepted version and the original idempotent response. The extended study
+also compares grants and closing accounts with an independent suffix replay.

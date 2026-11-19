@@ -1,6 +1,6 @@
 # Completion roadmap and feasibility boundaries
 
-Latest review: 19 November 2026, verified sixth-year harvest, capital replacement and reserve replenishment.
+Latest review: 19 November 2026, durable treasury funding for a reviewed production schedule.
 The current work order below supersedes earlier milestone-specific next steps.
 
 ## Completion scope and remaining work — 12 November 2026
@@ -65,11 +65,16 @@ the same five-year parent. Another year of the same packaging use exceeds the
 remaining material even with immediate, unlimited processing capacity.
 See the [harvest comparison](physical-circulation.md#sixth-year-harvest-and-reserve-renewal).
 
-Next, persist operator-reviewed treasury allocations against the exact physical
-and monetary plan versions. Verify concurrent approval, retries, stale versions,
-unchanged settled history and restart/restore. Investigate a reusable packaging
-route with explicit collection, loss and remanufacturing against the quantified
-seventh-year gap. Package 3 regional source calibration continues alongside this work.
+The operator can now propose and separately approve treasury allocations tied
+to a physical generation and a circulation generation. The approved scenario
+retains allocations across continuations. Offline reference calculations for
+63 and 72 months independently verify every transfer and final balance.
+The live ledger stays separate. See [reviewed funding](architecture.md#reviewed-treasury-funding).
+
+Next, model reusable packaging with collection delays, washing, losses,
+remanufacturing, energy, water and transport. Compare equal provision and
+terminal serviceable stocks against the measured seventh-year scenario gap.
+Regional source calibration continues alongside this work.
 The effort range below remains a planning estimate, not a new deadline.
 
 The target for this estimate is **research demonstrator v1**: a reproducible,
@@ -85,7 +90,7 @@ national sectors or a production monetary system.
 | 1. Persistent physical scenario foundation — implemented | Dated and capital/seasonal inputs, reviewed versions, pinned selected stocks and restart/restore; monetary association continues in package 2 | — |
 | 2. Join extended physical and monetary plans — implemented for selected candidate | 60-month runtime fixture, origin-preserving food, upstream production, finite capital/recovery and exact payments; independent balances and rejection of infeasible capacity changes. Efficiency, deficit quantification and repeatable policy continue in package 4 | — |
 | 3. Input and population registry — bounded foundation implemented | Exact monthly cohorts, registry metadata, unknown needs and reviewed binding implemented. Regional/life-stage needs, shared service capacity and local-shortage gates implemented. Remaining: source calibration, lifecycle transitions, regional routes and engineering coefficients | 6–10 |
-| 4. Close the rolling feedback experiment — bounded service repair implemented | Exact revisions, single/joint-batch repair, protected service reserves, durable incident lineage and matching reviewed circulation implemented; emergency release/recovery is implemented; continuous production and durable renewal remain. Decisions use observed state, retain commitments, replan after declared outages/demand changes, report shortages without inventing goods, and pass sensitivity/adversarial cases; optional solver outputs independently verified | 4–7 |
+| 4. Close the rolling feedback experiment — bounded service repair implemented | Exact revisions, single/joint-batch repair, protected service reserves, durable incident lineage and matching reviewed circulation implemented; emergency release/recovery is implemented; sixth-year provision and reviewed treasury renewal are implemented; seventh-year packaging supply remains open. Decisions use observed state, retain commitments, replan after declared outages/demand changes, report shortages without inventing goods, and pass sensitivity/adversarial cases; optional solver outputs independently verified | 4–7 |
 | 5. Expose the demonstrator's workflows | Small operator/reviewer interface, synthetic participant scope, intelligible reasons, correction/dispute examples, approval and audit history, accessible navigation; no claim of production identity/enrollment | 7–12 |
 | 6. Freeze and reproduce a release | Clean deployment, recorded workload envelope, sustained/restart/restore and fault exercises, dependency/privilege review, versioned evidence and known limitations, release guide and runnable demonstration | 4–6 |
 

@@ -308,6 +308,10 @@ fn verify_funding(
     let physical =
         qazna::model_scenarios::preview_continuation(prior.evidence.physical.clone(), next)
             .unwrap();
+    let reviewed =
+        qazna::coupled::preview_funded_continuation(money.clone(), physical.clone()).unwrap();
+    let reviewed: CoupledCheckpoint =
+        serde_json::from_str(reviewed.checkpoint.as_ref().unwrap()).unwrap();
     let run = qazna::coupled::preview_continuation(money.clone(), physical, vec![]).unwrap();
     let e = serde_json::from_str::<CoupledCheckpoint>(run.checkpoint.as_ref().unwrap())
         .unwrap()
@@ -360,11 +364,24 @@ fn verify_funding(
         .collect();
     let draws: u64 = funded_schedule.iter().map(|e| e.movement.amount).sum();
     assert!(carried[0] >= draws + floors[0]);
+    let receipts = &reviewed.evidence.treasury_allocations;
+    assert_eq!(receipts.len(), funded_schedule.len());
+    for (entry, independent) in receipts.iter().zip(&funded_schedule) {
+        assert_eq!(entry.period, independent.period as usize);
+        assert_eq!(entry.to, independent.movement.to);
+        assert_eq!(entry.amount, independent.movement.amount.to_string());
+    }
     let allocations = json!(&funded_schedule);
     funded_schedule.extend(suffix);
     let funded = replay_schedule(&carried, &funded_schedule, &[]).unwrap();
     assert_eq!(funded.attempted_events, funded.settled_events);
     assert_eq!(funded.opening_total, e.money.opening_total);
+    assert!(reviewed.evidence.all_scheduled_payments_settled);
+    assert_eq!(reviewed.evidence.money.closing, funded.closing);
+    assert_eq!(
+        reviewed.evidence.closing_by_period[..57],
+        prior.evidence.closing_by_period[..57]
+    );
     (e, allocations, draws, funded)
 }
 
