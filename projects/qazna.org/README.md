@@ -102,7 +102,7 @@ proposal with a recovery deadline; see [architecture](docs/architecture.md#incid
 
 ## Book and implementation
 
-*Tartar and I* by Daulet Baimurza is the author's Russian research essay on language, historical memory and the Tenge economic proposal. Chapter 26 introduces the organism-inspired provisioning idea; its appendices distinguish model assumptions from calculations. Qazna turns selected provisioning mechanisms into executable, testable software. Passing software tests does not establish the book's historical hypotheses or prove the full economic model.
+In *Tartar and I*, Daulet Baimurza explores world civilization through language and historical memory and develops the Tenge proposal for sharing the gains of automation. The book is written in Russian. Chapter 26 introduces the organism-inspired provisioning idea; its appendices distinguish model assumptions from calculations. Qazna turns selected provisioning mechanisms into executable, testable software. Passing software tests does not establish the book's historical hypotheses or prove the full economic model.
 
 - [Read the Russian HTML edition](https://dauletbai.github.io/tartarus/), with individual sections suitable for browser translation.
 - [Download the print PDF](https://media.githubusercontent.com/media/DauletBai/tartarus/main/book/Tartar_i_Ya_print_6x9.pdf).
