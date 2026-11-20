@@ -2806,6 +2806,49 @@ shelf life of unused wrapping still require validation before the route can
 be included in the joint food and payment plan.
 [Monthly packaging balances and collection sensitivity](../research/field-rotation.json).
 
+### Grain deliveries and return freight for wrapping
+
+An outbound vehicle carries up to 20 tonnes of grain. After one month it reaches
+a receiving point, where a compatible vehicle can take up to 10 tonnes of used
+wrapping on its return trip. Returned material reaches the sorter the following
+month. The comparison starts with no inherited freight in transit. It uses the
+same 2031 monthly quantities for dispatch in 2032–2037, captures 95% of available
+wrapping, and recovers 80 kg of clean material per 100 kg sorted. February can use
+vehicles that left in January. December 2037 departures are still on the road
+at the boundary. Compatibility covers destination, loading space and timing.
+Payload and compatibility are parameters for testing possible routes.
+
+| Compatible per 10,000 arriving grain trips | Extra wrapping for a December 2032 launch, tonnes | Latest launch avoiding extra wrapping through 2037 |
+| ---: | ---: | --- |
+| 0 | 70,597 | No feasible start |
+| 10 | 34,365 | No feasible start |
+| 20 | 1,570 | November 2032 |
+| 25 | 1,570 | November 2032 |
+| 25, with all December 2032 returns cancelled | 4,669 | October 2032 |
+
+A December launch works in the earlier experiment with immediate access to the
+sorter. Giving the return trip its travel time moves the deadline forward one
+month even when there is ample payload. Increasing compatibility from 20 to 25
+per 10,000 has no effect on the shortfall at that launch date. For the 25 case
+the report includes all 72 months for both the December failure and the revised
+November schedule.
+
+Outbound grain, return loads and the sorting and fabrication jobs draw on the
+same stock of energy and the same monthly labour allowance. Vehicles round up
+to whole trips and loaded returns round up to whole kg for resource charges.
+The experiment applies the existing manual dispatch coefficients of one energy
+tick and four work ticks per loaded kg in both directions. These are model units.
+Factory slots are charged once for sorting and fabrication. For the December
+launch with 25 compatible trips per 10,000, opening energy first runs short
+in February 2036. The six-year additional requirement is 92,297,734,513 energy
+ticks. Moving collection to November closes the wrapping gap and brings the
+additional energy requirement to 92,305,737,264 ticks, beginning in the same
+month. The report records this missing supply in each affected month. A
+zero wrapping shortfall therefore still requires an energy plan. Physical
+fleet deployment, route distances, volume limits for actual materials, measured
+energy, upstream generation and payments remain to be verified.
+[Transport and material balances](../research/field-rotation.json).
+
 ### Greenhouse, freshwater and coastal production
 
 One operating district orders 1,000 kg of lettuce, 500 kg of fish fillet and

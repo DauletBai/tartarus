@@ -1172,6 +1172,11 @@ row checks conservation including work still in progress and diagnostic extra su
 The no-collection case also gives an independent check by simple subtraction
 of cumulative monthly use from the actual opening stock.
 
+The same generator writes `packaging_after_2031.grain_return_freight`. The
+focused freight test dispatches a single grain lot followed by zero orders.
+It checks arriving vehicles, the partially filled final return, a cancelled
+return, processing dates and the missing energy when the opening stock is zero.
+
 ## Reproducing the district food study
 
 Run `cargo test --locked --example food_technologies` and

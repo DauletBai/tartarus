@@ -1,5 +1,11 @@
 # Qazna changelog
 
+## Grain return freight — 20 November 2026
+
+- Couple collection to arriving grain trucks and carry used wrapping to the sorter.
+  Compare route compatibility, a missed collection month and the resulting dated
+  energy requirement.
+
 ## Packaging stock and collection after 2031 — 20 November 2026
 
 - Carry the three grain cases into a common packaging balance through 2037.

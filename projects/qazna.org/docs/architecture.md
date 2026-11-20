@@ -892,3 +892,8 @@ starts at the verified December 2031 checkpoint. It carries separate stocks for
 used, rejected, sorted and finished material and preserves both processing delays.
 Collection trials consume finite energy and share the remaining factory and labour
 capacity within the packaging study. The subsequent monetary plan remains open.
+
+The [return-freight comparison](physical-circulation.md#grain-deliveries-and-return-freight-for-wrapping)
+uses last month's arriving grain vehicles and carries collected material in transit.
+Dispatch, return haulage and processing share the same energy stock and monthly
+work budget. Additional outbound energy is recorded explicitly as a requirement.
