@@ -886,3 +886,9 @@ modules against the monthly load, verifies all physical balances and passes the
 same plan through the existing coupled preview. At the first cash shortfall it
 uses the funded continuation with the carried treasury balance. Both calculations
 run offline and leave the ledger untouched.
+
+The [packaging continuation](physical-circulation.md#packaging-after-december-2031)
+starts at the verified December 2031 checkpoint. It carries separate stocks for
+used, rejected, sorted and finished material and preserves both processing delays.
+Collection trials consume finite energy and share the remaining factory and labour
+capacity within the packaging study. The subsequent monetary plan remains open.

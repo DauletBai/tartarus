@@ -2759,6 +2759,53 @@ settle. The first 50 months retain their exact account balances, and the final
 total equals the opening total. This is an offline calculation for operator
 review. [Monthly starts, cohort dates and account evidence](../research/field-rotation.json).
 
+### Packaging after December 2031
+
+The verified grain plan closes with 234,738,507,003 g of ready wrapping.
+Primary packaging ore, clean feedstock and recoverable extraction residue are
+exhausted. The 397,261,492,997 g recorded as historical waste remain excluded
+from collection. No jobs are in transit at the boundary. One packaging tick
+represents one gram in these recipes. The continuation repeats the twelve
+2031 monthly grain orders as a wrapping workload of 49,555,950,366 g per year.
+This assumption separates packaging continuity from the next harvest forecast.
+
+Stock alone covers all of 2032 and closes that year at 185,182,556,637 g.
+With an 8,000,000,000 g operating reserve throughout the continuation, the
+first additional requirement is 253,254,737 g in July 2036. Spending through
+the reserve postpones the first unfilled order until September 2036. By
+December 2037 the extra ready supply needed to protect the reserve reaches
+70,597,195,193 g. A separate sixth-year fixture elsewhere in this chapter has
+different opening stocks, production routes and grain targets.
+
+| Collection from used wrappers | Clean output per 100 kg collected and sorted | Latest first collection covering the plan through 2037 | Extra ready supply with a one-month delay |
+| --- | ---: | --- | ---: |
+| 100% | 40 kg | Even a February 2032 start needs 16,131,115,193 g of extra supply | — |
+| 95% | 80 kg | December 2032 | 1,571,755,193 g |
+| 98% | 95 kg | April 2033 | 1,329,180,193 g |
+
+The search tries every possible monthly start on the same processing policy.
+A wrapper issued in January can be collected in February, sorted material
+can reach fabrication in March, and finished wrapping becomes available in
+April. Missed collection and sorting rejects leave the recoverable stream.
+Whole sorting lots, unused grams, work in progress and any extra supply
+are carried in the monthly mass balance. Each month's sum equals the
+opening material plus explicitly counted additions.
+
+The captured shares and clean yields are design targets. The 40% case
+borrows the extraction-residue yield as a comparison. All sorting cases
+use its processing allowance per kg and the existing fabrication recipe.
+Surviving factories supply capacity until ten retire in January 2034 and
+the final ten in December 2034. No replacement or new energy supply is
+assumed. The balances also report the effect of limiting monthly collection
+to 90% of the selected schedule's peak. For the December 2032 start, peak
+collection is 4,003 tonnes per month. A cap of 3,603 tonnes per month
+(rounded for display) leaves 4,307 tonnes of extra ready wrapping to source
+through 2037. Other users of factory slots and
+labour, haul distances and energy, suitability for contact with food, and
+shelf life of unused wrapping still require validation before the route can
+be included in the joint food and payment plan.
+[Monthly packaging balances and collection sensitivity](../research/field-rotation.json).
+
 ### Greenhouse, freshwater and coastal production
 
 One operating district orders 1,000 kg of lettuce, 500 kg of fish fillet and
