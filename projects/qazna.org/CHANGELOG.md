@@ -1,5 +1,10 @@
 # Qazna changelog
 
+## Grain deliveries, asset replacement and treasury circulation — 20 November 2026
+
+- Schedule construction against dated capacity and storage requirements across six grain seasons. Replay the same physical schedule and account balances through the first blocked payment and a funded continuation.
+- Preserve both failure cases. Delaying one generator or warehouse module by one month misses a physical deadline. The original cash distribution misses a payment in March 2030.
+
 ## Food production routes and local water — 19 November 2026
 
 - Compare greenhouse, freshwater recirculation, treated water reuse, flow-through fish farming and coastal shellfish supply over 60 months. Model well and basin limits, backup power and advance orders through seasonal closures.

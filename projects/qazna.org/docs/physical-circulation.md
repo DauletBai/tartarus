@@ -2728,9 +2728,36 @@ the original commissioning delays and service lives to the 72-month calendar
 finds 37 equipment-capacity overruns in 18 months, starting with generation in
 July 2027. At the reference yield, constructed grain storage first falls short
 by 14,222,402,620 kg in July 2028. These are failures of a particular timetable.
-The next repair should move construction and equipment replacement ahead of
-those dates before asking the treasury to replay payments. No money is issued
-by either calculation. [Three grain cases and dated gaps](../research/field-rotation.json).
+The following run moves construction ahead of those dates. The earlier schedules
+remain in the [published results](../research/field-rotation.json) for comparison.
+
+### Scheduling construction and payments together
+
+For each of the three yields, the model retains the field assignments, monthly
+water requirement, grain deliveries and finite packaging inputs. It works back
+from each month's load and the remaining lives of the operating modules. Five
+generator modules must start in March 2027 to meet July demand. Three warehouse
+modules must start in March 2028 to store the July harvest. Delaying just one
+module in either group by one month breaches capacity in July of that year.
+The calculation schedules factories after the other projects so it can include
+the factory capacity needed for construction itself.
+
+All three schedules carry the resource balances through 72 months. Across the
+six years each builds 34 power, 30 factory, 32 warehouse, 26 training and
+28 extraction modules. December 2031 ends with 20 operating modules of each
+type, zero expired grain over the run and zero grain in transit. The results
+include the retirement dates of surviving cohorts to support a subsequent plan.
+They cover the selected grain chains under the stated expanded land and
+irrigation. Continuing supply beyond 2031 requires a new material balance.
+
+The payment replay starts in January 2026 with 1,559,457,628,979 accounting
+ticks across all accounts. The original distribution settles 4,028 of 4,524
+scheduled payments and first blocks in March 2030. At that boundary the
+treasury holds 1,010,781,277,883 ticks. A continuation transfers 111,811,429,918
+existing ticks to 16 accounts. All 4,540 payments including the transfers then
+settle. The first 50 months retain their exact account balances, and the final
+total equals the opening total. This is an offline calculation for operator
+review. [Monthly starts, cohort dates and account evidence](../research/field-rotation.json).
 
 ### Greenhouse, freshwater and coastal production
 

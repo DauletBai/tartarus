@@ -880,5 +880,9 @@ treasury transfers preceding physical payments in their period. Its
 The [district food portfolio](physical-circulation.md#greenhouse-freshwater-and-coastal-production)
 replays 60 monthly orders against finite groundwater, power, heat, feed, cold
 storage and freight. It is an offline comparison with no ledger capability.
-The grain replay separately reports where the inherited equipment schedule
-fails on the extended calendar.
+The [grain study](physical-circulation.md#scheduling-construction-and-payments-together)
+retains the inherited timetable as a failed case. It schedules whole replacement
+modules against the monthly load, verifies all physical balances and passes the
+same plan through the existing coupled preview. At the first cash shortfall it
+uses the funded continuation with the carried treasury balance. Both calculations
+run offline and leave the ledger untouched.

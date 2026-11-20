@@ -421,6 +421,462 @@
           "month": "2031-06"
         }
       ],
+      "renewed_schedule": {
+        "closing_food_in_transit_kg": "0",
+        "construction": [
+          {
+            "modules": [
+              5,
+              0,
+              0,
+              0,
+              0
+            ],
+            "start": "2027-03"
+          },
+          {
+            "modules": [
+              0,
+              0,
+              0,
+              0,
+              7
+            ],
+            "start": "2027-05"
+          },
+          {
+            "modules": [
+              0,
+              0,
+              0,
+              0,
+              1
+            ],
+            "start": "2027-07"
+          },
+          {
+            "modules": [
+              1,
+              0,
+              0,
+              0,
+              0
+            ],
+            "start": "2027-08"
+          },
+          {
+            "modules": [
+              0,
+              10,
+              0,
+              0,
+              0
+            ],
+            "start": "2027-09"
+          },
+          {
+            "modules": [
+              0,
+              0,
+              3,
+              0,
+              0
+            ],
+            "start": "2028-03"
+          },
+          {
+            "modules": [
+              0,
+              0,
+              9,
+              0,
+              0
+            ],
+            "start": "2028-05"
+          },
+          {
+            "modules": [
+              1,
+              0,
+              0,
+              6,
+              0
+            ],
+            "start": "2028-08"
+          },
+          {
+            "modules": [
+              4,
+              0,
+              0,
+              0,
+              0
+            ],
+            "start": "2029-03"
+          },
+          {
+            "modules": [
+              1,
+              0,
+              0,
+              0,
+              0
+            ],
+            "start": "2029-06"
+          },
+          {
+            "modules": [
+              2,
+              0,
+              0,
+              0,
+              0
+            ],
+            "start": "2029-08"
+          },
+          {
+            "modules": [
+              0,
+              0,
+              0,
+              0,
+              7
+            ],
+            "start": "2029-11"
+          },
+          {
+            "modules": [
+              0,
+              0,
+              0,
+              0,
+              1
+            ],
+            "start": "2030-01"
+          },
+          {
+            "modules": [
+              0,
+              0,
+              0,
+              0,
+              1
+            ],
+            "start": "2030-07"
+          },
+          {
+            "modules": [
+              1,
+              0,
+              0,
+              0,
+              0
+            ],
+            "start": "2030-08"
+          },
+          {
+            "modules": [
+              0,
+              10,
+              0,
+              0,
+              0
+            ],
+            "start": "2030-09"
+          },
+          {
+            "modules": [
+              3,
+              0,
+              0,
+              0,
+              0
+            ],
+            "start": "2031-03"
+          },
+          {
+            "modules": [
+              1,
+              0,
+              0,
+              0,
+              1
+            ],
+            "start": "2031-04"
+          },
+          {
+            "modules": [
+              3,
+              0,
+              13,
+              0,
+              0
+            ],
+            "start": "2031-05"
+          },
+          {
+            "modules": [
+              1,
+              0,
+              0,
+              0,
+              0
+            ],
+            "start": "2031-06"
+          },
+          {
+            "modules": [
+              11,
+              10,
+              7,
+              20,
+              10
+            ],
+            "start": "2031-08"
+          }
+        ],
+        "food_expired_kg": "0",
+        "module_order": [
+          "power",
+          "factory",
+          "warehouse",
+          "training",
+          "extraction"
+        ],
+        "money": {
+          "all_settled": false,
+          "closing_total": "1559457628979",
+          "events": 4524,
+          "first_blocked_month": "2030-03",
+          "funded_continuation": {
+            "all_settled": true,
+            "allocation_total": "111811429918",
+            "allocations": [
+              {
+                "amount": "53468870551",
+                "period": 50,
+                "to": 5
+              },
+              {
+                "amount": "22649198234",
+                "period": 50,
+                "to": 6
+              },
+              {
+                "amount": "25498172476",
+                "period": 50,
+                "to": 8
+              },
+              {
+                "amount": "8040167246",
+                "period": 50,
+                "to": 9
+              },
+              {
+                "amount": "98221015",
+                "period": 50,
+                "to": 11
+              },
+              {
+                "amount": "88000000",
+                "period": 50,
+                "to": 12
+              },
+              {
+                "amount": "288000000",
+                "period": 50,
+                "to": 13
+              },
+              {
+                "amount": "1200000",
+                "period": 50,
+                "to": 14
+              },
+              {
+                "amount": "606000",
+                "period": 50,
+                "to": 15
+              },
+              {
+                "amount": "600000600",
+                "period": 50,
+                "to": 16
+              },
+              {
+                "amount": "60000000",
+                "period": 50,
+                "to": 17
+              },
+              {
+                "amount": "300000000",
+                "period": 50,
+                "to": 21
+              },
+              {
+                "amount": "101073796",
+                "period": 50,
+                "to": 22
+              },
+              {
+                "amount": "600000000",
+                "period": 50,
+                "to": 23
+              },
+              {
+                "amount": "12120000",
+                "period": 50,
+                "to": 26
+              },
+              {
+                "amount": "5800000",
+                "period": 50,
+                "to": 30
+              }
+            ],
+            "closing_total": "1559457628979",
+            "events": 4540,
+            "month": "2030-03",
+            "settled": 4540,
+            "treasury_before": "1010781277883"
+          },
+          "minimum_opening_total_for_schedule": "1465409515859",
+          "opening_deficits": [
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "53468870551",
+            "22649198234",
+            "0",
+            "25498172476",
+            "8040167246",
+            "0",
+            "98221015",
+            "88000000",
+            "288000000",
+            "1200000",
+            "606000",
+            "600000600",
+            "60000000",
+            "0",
+            "0",
+            "0",
+            "300000000",
+            "101073796",
+            "600000000",
+            "0",
+            "0",
+            "12120000",
+            "0",
+            "0",
+            "0",
+            "5800000",
+            "0",
+            "0"
+          ],
+          "opening_total": "1559457628979",
+          "settled": 4028
+        },
+        "pending_starts_at_end": 0,
+        "physical_months": 72,
+        "post_horizon_retirements": [
+          {
+            "asset": "extraction_modules",
+            "quantity": 7,
+            "retires": "2032-09"
+          },
+          {
+            "asset": "extraction_modules",
+            "quantity": 1,
+            "retires": "2032-11"
+          },
+          {
+            "asset": "extraction_modules",
+            "quantity": 1,
+            "retires": "2033-05"
+          },
+          {
+            "asset": "power_modules",
+            "quantity": 1,
+            "retires": "2032-12"
+          },
+          {
+            "asset": "factory_modules",
+            "quantity": 10,
+            "retires": "2034-01"
+          },
+          {
+            "asset": "power_modules",
+            "quantity": 3,
+            "retires": "2033-07"
+          },
+          {
+            "asset": "power_modules",
+            "quantity": 1,
+            "retires": "2033-08"
+          },
+          {
+            "asset": "extraction_modules",
+            "quantity": 1,
+            "retires": "2034-02"
+          },
+          {
+            "asset": "power_modules",
+            "quantity": 3,
+            "retires": "2033-09"
+          },
+          {
+            "asset": "warehouse_modules",
+            "quantity": 13,
+            "retires": "2034-09"
+          },
+          {
+            "asset": "power_modules",
+            "quantity": 1,
+            "retires": "2033-10"
+          },
+          {
+            "asset": "power_modules",
+            "quantity": 11,
+            "retires": "2033-12"
+          },
+          {
+            "asset": "factory_modules",
+            "quantity": 10,
+            "retires": "2034-12"
+          },
+          {
+            "asset": "warehouse_modules",
+            "quantity": 7,
+            "retires": "2034-12"
+          },
+          {
+            "asset": "training_centres",
+            "quantity": 20,
+            "retires": "2034-06"
+          },
+          {
+            "asset": "extraction_modules",
+            "quantity": 10,
+            "retires": "2034-06"
+          }
+        ],
+        "terminal_operating_modules": [
+          20,
+          20,
+          20,
+          20,
+          20
+        ],
+        "total_modules_built": [
+          34,
+          30,
+          32,
+          26,
+          28
+        ]
+      },
       "required_peak_water_m3": 10507078000,
       "restored_terminal_stocks_kg": [
         "6457271657",
@@ -1026,6 +1482,462 @@
         1811053
       ],
       "reference_water_shortfalls": [],
+      "renewed_schedule": {
+        "closing_food_in_transit_kg": "0",
+        "construction": [
+          {
+            "modules": [
+              5,
+              0,
+              0,
+              0,
+              0
+            ],
+            "start": "2027-03"
+          },
+          {
+            "modules": [
+              0,
+              0,
+              0,
+              0,
+              7
+            ],
+            "start": "2027-05"
+          },
+          {
+            "modules": [
+              0,
+              0,
+              0,
+              0,
+              1
+            ],
+            "start": "2027-07"
+          },
+          {
+            "modules": [
+              1,
+              0,
+              0,
+              0,
+              0
+            ],
+            "start": "2027-08"
+          },
+          {
+            "modules": [
+              0,
+              10,
+              0,
+              0,
+              0
+            ],
+            "start": "2027-09"
+          },
+          {
+            "modules": [
+              0,
+              0,
+              3,
+              0,
+              0
+            ],
+            "start": "2028-03"
+          },
+          {
+            "modules": [
+              0,
+              0,
+              9,
+              0,
+              0
+            ],
+            "start": "2028-05"
+          },
+          {
+            "modules": [
+              1,
+              0,
+              0,
+              6,
+              0
+            ],
+            "start": "2028-08"
+          },
+          {
+            "modules": [
+              4,
+              0,
+              0,
+              0,
+              0
+            ],
+            "start": "2029-03"
+          },
+          {
+            "modules": [
+              1,
+              0,
+              0,
+              0,
+              0
+            ],
+            "start": "2029-06"
+          },
+          {
+            "modules": [
+              2,
+              0,
+              0,
+              0,
+              0
+            ],
+            "start": "2029-08"
+          },
+          {
+            "modules": [
+              0,
+              0,
+              0,
+              0,
+              7
+            ],
+            "start": "2029-11"
+          },
+          {
+            "modules": [
+              0,
+              0,
+              0,
+              0,
+              1
+            ],
+            "start": "2030-01"
+          },
+          {
+            "modules": [
+              0,
+              0,
+              0,
+              0,
+              1
+            ],
+            "start": "2030-07"
+          },
+          {
+            "modules": [
+              1,
+              0,
+              0,
+              0,
+              0
+            ],
+            "start": "2030-08"
+          },
+          {
+            "modules": [
+              0,
+              10,
+              0,
+              0,
+              0
+            ],
+            "start": "2030-09"
+          },
+          {
+            "modules": [
+              3,
+              0,
+              0,
+              0,
+              0
+            ],
+            "start": "2031-03"
+          },
+          {
+            "modules": [
+              1,
+              0,
+              0,
+              0,
+              1
+            ],
+            "start": "2031-04"
+          },
+          {
+            "modules": [
+              3,
+              0,
+              13,
+              0,
+              0
+            ],
+            "start": "2031-05"
+          },
+          {
+            "modules": [
+              1,
+              0,
+              0,
+              0,
+              0
+            ],
+            "start": "2031-06"
+          },
+          {
+            "modules": [
+              11,
+              10,
+              7,
+              20,
+              10
+            ],
+            "start": "2031-08"
+          }
+        ],
+        "food_expired_kg": "0",
+        "module_order": [
+          "power",
+          "factory",
+          "warehouse",
+          "training",
+          "extraction"
+        ],
+        "money": {
+          "all_settled": false,
+          "closing_total": "1559457628979",
+          "events": 4524,
+          "first_blocked_month": "2030-03",
+          "funded_continuation": {
+            "all_settled": true,
+            "allocation_total": "111811429918",
+            "allocations": [
+              {
+                "amount": "53468870551",
+                "period": 50,
+                "to": 5
+              },
+              {
+                "amount": "22649198234",
+                "period": 50,
+                "to": 6
+              },
+              {
+                "amount": "25498172476",
+                "period": 50,
+                "to": 8
+              },
+              {
+                "amount": "8040167246",
+                "period": 50,
+                "to": 9
+              },
+              {
+                "amount": "98221015",
+                "period": 50,
+                "to": 11
+              },
+              {
+                "amount": "88000000",
+                "period": 50,
+                "to": 12
+              },
+              {
+                "amount": "288000000",
+                "period": 50,
+                "to": 13
+              },
+              {
+                "amount": "1200000",
+                "period": 50,
+                "to": 14
+              },
+              {
+                "amount": "606000",
+                "period": 50,
+                "to": 15
+              },
+              {
+                "amount": "600000600",
+                "period": 50,
+                "to": 16
+              },
+              {
+                "amount": "60000000",
+                "period": 50,
+                "to": 17
+              },
+              {
+                "amount": "300000000",
+                "period": 50,
+                "to": 21
+              },
+              {
+                "amount": "101073796",
+                "period": 50,
+                "to": 22
+              },
+              {
+                "amount": "600000000",
+                "period": 50,
+                "to": 23
+              },
+              {
+                "amount": "12120000",
+                "period": 50,
+                "to": 26
+              },
+              {
+                "amount": "5800000",
+                "period": 50,
+                "to": 30
+              }
+            ],
+            "closing_total": "1559457628979",
+            "events": 4540,
+            "month": "2030-03",
+            "settled": 4540,
+            "treasury_before": "1010781277883"
+          },
+          "minimum_opening_total_for_schedule": "1465409515859",
+          "opening_deficits": [
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "53468870551",
+            "22649198234",
+            "0",
+            "25498172476",
+            "8040167246",
+            "0",
+            "98221015",
+            "88000000",
+            "288000000",
+            "1200000",
+            "606000",
+            "600000600",
+            "60000000",
+            "0",
+            "0",
+            "0",
+            "300000000",
+            "101073796",
+            "600000000",
+            "0",
+            "0",
+            "12120000",
+            "0",
+            "0",
+            "0",
+            "5800000",
+            "0",
+            "0"
+          ],
+          "opening_total": "1559457628979",
+          "settled": 4028
+        },
+        "pending_starts_at_end": 0,
+        "physical_months": 72,
+        "post_horizon_retirements": [
+          {
+            "asset": "extraction_modules",
+            "quantity": 7,
+            "retires": "2032-09"
+          },
+          {
+            "asset": "extraction_modules",
+            "quantity": 1,
+            "retires": "2032-11"
+          },
+          {
+            "asset": "extraction_modules",
+            "quantity": 1,
+            "retires": "2033-05"
+          },
+          {
+            "asset": "power_modules",
+            "quantity": 1,
+            "retires": "2032-12"
+          },
+          {
+            "asset": "factory_modules",
+            "quantity": 10,
+            "retires": "2034-01"
+          },
+          {
+            "asset": "power_modules",
+            "quantity": 3,
+            "retires": "2033-07"
+          },
+          {
+            "asset": "power_modules",
+            "quantity": 1,
+            "retires": "2033-08"
+          },
+          {
+            "asset": "extraction_modules",
+            "quantity": 1,
+            "retires": "2034-02"
+          },
+          {
+            "asset": "power_modules",
+            "quantity": 3,
+            "retires": "2033-09"
+          },
+          {
+            "asset": "warehouse_modules",
+            "quantity": 13,
+            "retires": "2034-09"
+          },
+          {
+            "asset": "power_modules",
+            "quantity": 1,
+            "retires": "2033-10"
+          },
+          {
+            "asset": "power_modules",
+            "quantity": 11,
+            "retires": "2033-12"
+          },
+          {
+            "asset": "factory_modules",
+            "quantity": 10,
+            "retires": "2034-12"
+          },
+          {
+            "asset": "warehouse_modules",
+            "quantity": 7,
+            "retires": "2034-12"
+          },
+          {
+            "asset": "training_centres",
+            "quantity": 20,
+            "retires": "2034-06"
+          },
+          {
+            "asset": "extraction_modules",
+            "quantity": 10,
+            "retires": "2034-06"
+          }
+        ],
+        "terminal_operating_modules": [
+          20,
+          20,
+          20,
+          20,
+          20
+        ],
+        "total_modules_built": [
+          34,
+          30,
+          32,
+          26,
+          28
+        ]
+      },
       "required_peak_water_m3": 8755898000,
       "restored_terminal_stocks_kg": [
         "6532600117",
@@ -1680,6 +2592,462 @@
           "month": "2031-07"
         }
       ],
+      "renewed_schedule": {
+        "closing_food_in_transit_kg": "0",
+        "construction": [
+          {
+            "modules": [
+              5,
+              0,
+              0,
+              0,
+              0
+            ],
+            "start": "2027-03"
+          },
+          {
+            "modules": [
+              0,
+              0,
+              0,
+              0,
+              7
+            ],
+            "start": "2027-05"
+          },
+          {
+            "modules": [
+              0,
+              0,
+              0,
+              0,
+              1
+            ],
+            "start": "2027-07"
+          },
+          {
+            "modules": [
+              1,
+              0,
+              0,
+              0,
+              0
+            ],
+            "start": "2027-08"
+          },
+          {
+            "modules": [
+              0,
+              10,
+              0,
+              0,
+              0
+            ],
+            "start": "2027-09"
+          },
+          {
+            "modules": [
+              0,
+              0,
+              3,
+              0,
+              0
+            ],
+            "start": "2028-03"
+          },
+          {
+            "modules": [
+              0,
+              0,
+              9,
+              0,
+              0
+            ],
+            "start": "2028-05"
+          },
+          {
+            "modules": [
+              1,
+              0,
+              0,
+              6,
+              0
+            ],
+            "start": "2028-08"
+          },
+          {
+            "modules": [
+              4,
+              0,
+              0,
+              0,
+              0
+            ],
+            "start": "2029-03"
+          },
+          {
+            "modules": [
+              1,
+              0,
+              0,
+              0,
+              0
+            ],
+            "start": "2029-06"
+          },
+          {
+            "modules": [
+              2,
+              0,
+              0,
+              0,
+              0
+            ],
+            "start": "2029-08"
+          },
+          {
+            "modules": [
+              0,
+              0,
+              0,
+              0,
+              7
+            ],
+            "start": "2029-11"
+          },
+          {
+            "modules": [
+              0,
+              0,
+              0,
+              0,
+              1
+            ],
+            "start": "2030-01"
+          },
+          {
+            "modules": [
+              0,
+              0,
+              0,
+              0,
+              1
+            ],
+            "start": "2030-07"
+          },
+          {
+            "modules": [
+              1,
+              0,
+              0,
+              0,
+              0
+            ],
+            "start": "2030-08"
+          },
+          {
+            "modules": [
+              0,
+              10,
+              0,
+              0,
+              0
+            ],
+            "start": "2030-09"
+          },
+          {
+            "modules": [
+              3,
+              0,
+              0,
+              0,
+              0
+            ],
+            "start": "2031-03"
+          },
+          {
+            "modules": [
+              1,
+              0,
+              0,
+              0,
+              1
+            ],
+            "start": "2031-04"
+          },
+          {
+            "modules": [
+              3,
+              0,
+              13,
+              0,
+              0
+            ],
+            "start": "2031-05"
+          },
+          {
+            "modules": [
+              1,
+              0,
+              0,
+              0,
+              0
+            ],
+            "start": "2031-06"
+          },
+          {
+            "modules": [
+              11,
+              10,
+              7,
+              20,
+              10
+            ],
+            "start": "2031-08"
+          }
+        ],
+        "food_expired_kg": "0",
+        "module_order": [
+          "power",
+          "factory",
+          "warehouse",
+          "training",
+          "extraction"
+        ],
+        "money": {
+          "all_settled": false,
+          "closing_total": "1559457628979",
+          "events": 4524,
+          "first_blocked_month": "2030-03",
+          "funded_continuation": {
+            "all_settled": true,
+            "allocation_total": "111811429918",
+            "allocations": [
+              {
+                "amount": "53468870551",
+                "period": 50,
+                "to": 5
+              },
+              {
+                "amount": "22649198234",
+                "period": 50,
+                "to": 6
+              },
+              {
+                "amount": "25498172476",
+                "period": 50,
+                "to": 8
+              },
+              {
+                "amount": "8040167246",
+                "period": 50,
+                "to": 9
+              },
+              {
+                "amount": "98221015",
+                "period": 50,
+                "to": 11
+              },
+              {
+                "amount": "88000000",
+                "period": 50,
+                "to": 12
+              },
+              {
+                "amount": "288000000",
+                "period": 50,
+                "to": 13
+              },
+              {
+                "amount": "1200000",
+                "period": 50,
+                "to": 14
+              },
+              {
+                "amount": "606000",
+                "period": 50,
+                "to": 15
+              },
+              {
+                "amount": "600000600",
+                "period": 50,
+                "to": 16
+              },
+              {
+                "amount": "60000000",
+                "period": 50,
+                "to": 17
+              },
+              {
+                "amount": "300000000",
+                "period": 50,
+                "to": 21
+              },
+              {
+                "amount": "101073796",
+                "period": 50,
+                "to": 22
+              },
+              {
+                "amount": "600000000",
+                "period": 50,
+                "to": 23
+              },
+              {
+                "amount": "12120000",
+                "period": 50,
+                "to": 26
+              },
+              {
+                "amount": "5800000",
+                "period": 50,
+                "to": 30
+              }
+            ],
+            "closing_total": "1559457628979",
+            "events": 4540,
+            "month": "2030-03",
+            "settled": 4540,
+            "treasury_before": "1010781277883"
+          },
+          "minimum_opening_total_for_schedule": "1465409515859",
+          "opening_deficits": [
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "53468870551",
+            "22649198234",
+            "0",
+            "25498172476",
+            "8040167246",
+            "0",
+            "98221015",
+            "88000000",
+            "288000000",
+            "1200000",
+            "606000",
+            "600000600",
+            "60000000",
+            "0",
+            "0",
+            "0",
+            "300000000",
+            "101073796",
+            "600000000",
+            "0",
+            "0",
+            "12120000",
+            "0",
+            "0",
+            "0",
+            "5800000",
+            "0",
+            "0"
+          ],
+          "opening_total": "1559457628979",
+          "settled": 4028
+        },
+        "pending_starts_at_end": 0,
+        "physical_months": 72,
+        "post_horizon_retirements": [
+          {
+            "asset": "extraction_modules",
+            "quantity": 7,
+            "retires": "2032-09"
+          },
+          {
+            "asset": "extraction_modules",
+            "quantity": 1,
+            "retires": "2032-11"
+          },
+          {
+            "asset": "extraction_modules",
+            "quantity": 1,
+            "retires": "2033-05"
+          },
+          {
+            "asset": "power_modules",
+            "quantity": 1,
+            "retires": "2032-12"
+          },
+          {
+            "asset": "factory_modules",
+            "quantity": 10,
+            "retires": "2034-01"
+          },
+          {
+            "asset": "power_modules",
+            "quantity": 3,
+            "retires": "2033-07"
+          },
+          {
+            "asset": "power_modules",
+            "quantity": 1,
+            "retires": "2033-08"
+          },
+          {
+            "asset": "extraction_modules",
+            "quantity": 1,
+            "retires": "2034-02"
+          },
+          {
+            "asset": "power_modules",
+            "quantity": 3,
+            "retires": "2033-09"
+          },
+          {
+            "asset": "warehouse_modules",
+            "quantity": 13,
+            "retires": "2034-09"
+          },
+          {
+            "asset": "power_modules",
+            "quantity": 1,
+            "retires": "2033-10"
+          },
+          {
+            "asset": "power_modules",
+            "quantity": 11,
+            "retires": "2033-12"
+          },
+          {
+            "asset": "factory_modules",
+            "quantity": 10,
+            "retires": "2034-12"
+          },
+          {
+            "asset": "warehouse_modules",
+            "quantity": 7,
+            "retires": "2034-12"
+          },
+          {
+            "asset": "training_centres",
+            "quantity": 20,
+            "retires": "2034-06"
+          },
+          {
+            "asset": "extraction_modules",
+            "quantity": 10,
+            "retires": "2034-06"
+          }
+        ],
+        "terminal_operating_modules": [
+          20,
+          20,
+          20,
+          20,
+          20
+        ],
+        "total_modules_built": [
+          34,
+          30,
+          32,
+          26,
+          28
+        ]
+      },
       "required_peak_water_m3": 12361268000,
       "restored_terminal_stocks_kg": [
         "6376104897",
@@ -2199,6 +3567,6 @@
     ]
   ],
   "period_zero": "2026-01",
-  "scope": "Grain, seed, dated shelf life, finite grain storage, one-month preservation and one-month dispatch, per-route throughput, sowing windows, land and stage water. A separate prefix bound screens shared energy, wrapping and its finite ore against inherited non-food starts. Labour, equipment and treasury for the larger schedule have no joint feasibility certificate.",
+  "scope": "Grain, seed, dated shelf life, finite grain storage, one-month preservation and one-month dispatch, per-route throughput, sowing windows, land and stage water. A separate prefix bound screens shared energy, wrapping and its finite ore against inherited non-food starts. The renewed schedule replays all physical resources and the original monetary policy on the same calendar.",
   "target_months": 60
 }

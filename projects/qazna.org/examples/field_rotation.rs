@@ -10,6 +10,9 @@ use qazna::{
 use serde_json::{Value, json};
 use std::{env, fs};
 
+#[path = "support/field_renewal.rs"]
+mod field_renewal;
+
 const YEARS: usize = 6;
 const MONTHS: usize = YEARS * 12;
 const BLOCKS: usize = 4;
@@ -323,7 +326,8 @@ fn upstream_bound(input: &ModelInput, plan: &[PeriodPlan]) -> Value {
 
 // Curtail only ore extraction, residue recovery and wrapper fabrication when
 // their dated inputs run out. No opening balances restart at the year boundary.
-fn capped_packaging(input: &ModelInput, plan: &[PeriodPlan]) -> Value {
+fn capped_packaging(input: &ModelInput, plan: &[PeriodPlan]) -> (Value, Vec<Vec<i64>>) {
+    let mut schedules = Vec::new();
     let h = &input.model.seasonal.physical;
     let tracked = [9, 10, 27, 28, 29];
     let mut stock = h.initial.clone();
@@ -453,6 +457,7 @@ fn capped_packaging(input: &ModelInput, plan: &[PeriodPlan]) -> Value {
             .map(|(q, k)| q * k)
             .sum();
         let available = h.initial[labour.resource] * labour.units_per_stock;
+        schedules.push(starts);
         if work > available {
             work_gaps.push(json!({"month":calendar(t),"missing_manual_work_ticks":work-available}));
         }
@@ -461,11 +466,31 @@ fn capped_packaging(input: &ModelInput, plan: &[PeriodPlan]) -> Value {
         .iter()
         .map(|&r| json!({"resource":h.resources[r],"minimum":minima[r],"closing":stock[r]}))
         .collect();
-    json!({"balances":balances,"curtailed_extraction_recovery_fabrication_starts":curtailed,
-        "manual_work_shortfalls":work_gaps,"equipment_shortfalls":equipment_gaps,"grain_storage_shortfalls":storage_gaps})
+    (
+        json!({"balances":balances,"curtailed_extraction_recovery_fabrication_starts":curtailed,
+        "manual_work_shortfalls":work_gaps,"equipment_shortfalls":equipment_gaps,"grain_storage_shortfalls":storage_gaps}),
+        schedules,
+    )
 }
 
-fn compare(input: &ModelInput, needs: &[[i64; FOODS]], yield_percent: i64) -> Value {
+fn stage_water(model: &Seasonal, plan: &[PeriodPlan]) -> Vec<i64> {
+    let mut required = vec![0; plan.len()];
+    for crop in &model.crops {
+        for &sow in &crop.sowing_periods {
+            for (stage, rate) in crop.irrigation_m3_per_activity.iter().enumerate() {
+                required[sow + stage] += plan[sow].activities[crop.process] * rate;
+            }
+        }
+    }
+    required
+}
+
+fn compare(
+    input: &ModelInput,
+    needs: &[[i64; FOODS]],
+    yield_percent: i64,
+    fixture: &Value,
+) -> Value {
     let mut model = build(input, needs, yield_percent);
     let (plan, annual, land) = candidate(&mut model);
     let source = &input.model.seasonal;
@@ -487,7 +512,7 @@ fn compare(input: &ModelInput, needs: &[[i64; FOODS]], yield_percent: i64) -> Va
     let mut base_water_gaps = Vec::new();
     let mut land_gaps = Vec::new();
     let mut assignments = Vec::new();
-    let mut water = vec![0; MONTHS];
+    let water = stage_water(&model, &plan);
     for (year, hectares) in annual.iter().enumerate() {
         let sow = year * 12 + 3;
         let original = source.land[0].available_hectares[source_period(sow)];
@@ -515,11 +540,6 @@ fn compare(input: &ModelInput, needs: &[[i64; FOODS]], yield_percent: i64) -> Va
         }
         let need = hectares.iter().sum::<i64>();
         land_gaps.push((need - active).max(0));
-        for c in &model.crops {
-            for (stage, per_ha) in c.irrigation_m3_per_activity.iter().enumerate() {
-                water[sow + stage] += per_ha * plan[sow].activities[c.process];
-            }
-        }
         assignments.push(json!({"sowing":calendar(sow),"resting_group":rest(year),"hectares_by_crop":hectares,
             "hectares_by_field_and_crop":plan[sow].activities[..FIELD_PROCESSES].chunks(FOODS).collect::<Vec<_>>() }));
     }
@@ -586,9 +606,11 @@ fn compare(input: &ModelInput, needs: &[[i64; FOODS]], yield_percent: i64) -> Va
         )
         .is_err()
     );
-    json!({"gross_yield_percent":yield_percent,"fixed_field_area_ha":land,"required_peak_water_m3":peak,
+    let (baseline, starts) = capped_packaging(input, &plan);
+    let renewed = field_renewal::study(input, &model, &plan, starts, fixture);
+    json!({"renewed_schedule":renewed,"gross_yield_percent":yield_percent,"fixed_field_area_ha":land,"required_peak_water_m3":peak,
         "peak_month":calendar(peak_month),"restored_terminal_stocks_kg":dated.final_stock,"expired_kg":dated.expired,
-        "seed_consumed_kg":dated.seed_withdrawn,"fixed_upstream_bound":upstream_bound(input,&plan),"finite_packaging_schedule":capped_packaging(input,&plan),
+        "seed_consumed_kg":dated.seed_withdrawn,"fixed_upstream_bound":upstream_bound(input,&plan),"finite_packaging_schedule":baseline,
         "six_season_bound": {
             "minimum_planted_hectare_seasons": minimum_sown,
             "original_rotation_upper_hectare_seasons": reference_active_area,
@@ -609,8 +631,8 @@ fn main() {
     let needs = targets(&input, &study);
     let result = json!({"period_zero":"2026-01","target_months":60,"monthly_targets_kg":needs[12..],"crop_order":["rice_component","oats_component","feed_grain_equivalent"],
         "field_history":"Each fixed field group cycles through fallow, rice or oats, feed grain, then flexible grain. Group zero rests in 2026, group one in 2027, and so on. The same phases are assumed before 2026. No yield, irrigation, or nutrient credit is assigned to dry fallow.",
-        "scope":"Grain, seed, dated shelf life, finite grain storage, one-month preservation and one-month dispatch, per-route throughput, sowing windows, land and stage water. A separate prefix bound screens shared energy, wrapping and its finite ore against inherited non-food starts. Labour, equipment and treasury for the larger schedule have no joint feasibility certificate.",
-        "cases":[compare(&input,&needs,100),compare(&input,&needs,120),compare(&input,&needs,85)]});
+        "scope":"Grain, seed, dated shelf life, finite grain storage, one-month preservation and one-month dispatch, per-route throughput, sowing windows, land and stage water. A separate prefix bound screens shared energy, wrapping and its finite ore against inherited non-food starts. The renewed schedule replays all physical resources and the original monetary policy on the same calendar.",
+        "cases":[compare(&input,&needs,100,&v),compare(&input,&needs,120,&v),compare(&input,&needs,85,&v)]});
     fs::write(
         env::args().nth(1).expect("output path"),
         serde_json::to_vec_pretty(&result).unwrap(),
