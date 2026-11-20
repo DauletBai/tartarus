@@ -19,6 +19,87 @@ crisis has one cause or that Qazna prevents every crisis. Agreement with the boo
 is not required to reproduce the equations or identify a defect. Reading it aids
 interpretation; independent technical criticism strengthens the research.
 
+## What the organism analogy asks us to test
+
+Imagine a tissue could claim oxygen in proportion to its existing stock, and
+could increase that claim simply by accumulating more. An injured tissue with
+a small stock could lose supply just as its need increased. This thought
+experiment gives a precise objection to treating accumulated purchasing power
+as the signal for allocating necessities. Aristotle already distinguished
+provision for the household, which has a purpose and a limit, from acquisition
+pursued without limit. [Aristotle, Politics, Book I](https://classics.mit.edu/Aristotle/politics.1.one.html).
+
+There is a documented economic mechanism by which an initial disturbance can
+grow. Rising collateral values can expand borrowing and asset purchases. When
+prices fall, falling collateral values tighten access to credit and can deepen
+the contraction. The relevant question for Qazna is whether households can
+still receive essential goods through such a disruption. A drought can also
+reduce the physical harvest under any accounting rule. Economic exclusion can
+contribute to violent conflict alongside struggles over political power,
+security and justice. A provisioning trial can measure exposure to exclusion;
+a claim about preventing wars requires different evidence.
+[BIS study of the financial cycle](https://www.bis.org/publ/qtrpdf/r_qt1812g.htm)
+and [UN–World Bank study of conflict prevention](https://www.worldbank.org/en/topic/fragilityconflictviolence/publication/pathways-for-peace-inclusive-approaches-to-preventing-violent-conflict).
+
+The biological comparison suggests two time scales. Development and renewal
+rely on inherited regulatory mechanisms. Their operation responds to conditions
+as they change. At the onset of voluntary exercise, central signals and local
+vascular responses help adjust blood supply. For Qazna the enduring commitment
+is provision across the life course. Forecasts for care, food and capacity
+change with evidence and voluntary choices. A child's need for care has the
+same standing whether an illness is inherited, environmental or of unknown
+origin. Cystic fibrosis, for example, can affect a newborn through inherited
+variants. Dignity and equal standing are ethical decisions people make for
+one another. An individual must be able to challenge the system's account of
+their needs. [NHGRI on gene regulation](https://www.genome.gov/genetics-glossary/Gene-Regulation),
+[human exercise study](https://pubmed.ncbi.nlm.nih.gov/27103652/) and
+[MedlinePlus Genetics on cystic fibrosis](https://medlineplus.gov/genetics/condition/cystic-fibrosis/).
+
+### What a four-month warning changes
+
+Consider the power modules in the existing grain plan. The 72 monthly
+observations span January 2026 through December 2031, including the predecessor
+year. The opening 20 modules retire in July 2027. A new module requires three
+months of construction and becomes usable the following month. Each module
+provides 2,000,000 generation activity units per month over 24 months.
+For the published generation demand, six modules cover the peak in the first
+twelve months after retirement. The three schedules below all start 40 modules
+and use the same opening equipment and generation demand.
+
+| Start policy | Months short of generation capacity | Sum of uncovered generation activities | Active modules in December 2031 |
+| --- | ---: | ---: | ---: |
+| Inherited timetable | 12 | 115,417,239 | 20 |
+| Start six when each six-module tranche is needed | 4 | 37,520,290 | 14 |
+| Start those six four months before each need | 0 | 0 | 14 |
+
+To reproduce, set month zero to January 2026 and retain the published schedule
+for generation process 31, repeating the first 12 periods before the original
+60. The inherited construction starts (month, quantity) are (26, 20) and
+(50, 20). The second schedule advances six units from each to months 18 and
+42. The third advances those units to months 14 and 38. A start in month
+`s` contributes from `s + 4` through `s + 27`, inclusive. In each month
+subtract active capacity from scheduled generation and retain the positive
+part. The total is measured in process activities, not kWh or people served.
+[Physical inputs, capacities and delays](../fixtures/extended-scenario.json)
+and [published baseline shortfalls](../research/field-rotation.json).
+
+The early start in March 2027 requires 6,000,000 energy ticks, 60,000 material
+ticks, 6,000 work ticks and six units of shared factory capacity that month.
+Moving starts preserves total module count but changes when those resources
+are needed and when the equipment will next retire. The 14 active modules
+at the end of the revised schedules also matter for the following years.
+This comparison checks one capacity constraint. Plant construction, grain
+storage, all competing work and treasury liquidity still need a joint replay.
+
+**Design rule.** Keep a dated renewal obligation for each essential capability.
+At review time, look ahead at least through preparation, construction and
+commissioning. Compare surviving capacity and committed completions with
+expected need and the chosen physical reserve. When coverage falls short,
+propose the latest feasible start and expose any competing use of its inputs.
+Carry the ages, outstanding work and next retirement dates across every
+five-year boundary. Recheck after new observations and let an operator review
+the physical and accounting consequences before application.
+
 ## Mapping the analogy
 
 | Biological analogy | Qazna concept |
