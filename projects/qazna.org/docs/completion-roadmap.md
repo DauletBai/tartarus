@@ -91,8 +91,12 @@ persists even if all production starts are rescheduled within the existing graph
    now gives three grain plans under changed land, yield and monthly irrigation.
    The [upstream check](physical-circulation.md#shared-inputs-for-the-six-grain-seasons)
    carries ore, wrapping and power inputs across the predecessor boundary. Equipment
-   replacement and built storage miss dated deadlines. Repair those schedules and
-   verify all resource balances before replaying exact circulation. The separate
+   replacement and built storage miss dated deadlines on the original schedule.
+   The [joint construction and payment replay](physical-circulation.md#scheduling-construction-and-payments-together)
+   closes both gaps for the three grain yields through December 2031. The next
+   continuity test must enter January 2032 with the actual terminal materials
+   and equipment lives and identify replacement or recovered packaging inputs.
+   The separate
    [district portfolio](physical-circulation.md#greenhouse-freshwater-and-coastal-production)
    quantifies alternative food and water routes. Integration needs a shared energy,
    feed, freight and nutrient-demand allocation.

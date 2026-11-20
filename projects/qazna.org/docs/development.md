@@ -1158,7 +1158,11 @@ crop-specific allocations. To regenerate the published 72-month study, run
 The full check regenerates it to a temporary path and compares every byte.
 Moving one hectare onto a resting field or losing 20% of the required peak
 water must fail both seasonal checks. Food age and terminal stocks are
-independently replayed in each accepted case.
+independently replayed in each accepted case. The example also delays one
+generator and one warehouse by a month in separate runs and checks the exact
+capacity constraint and month for each failure. The generated report verifies
+that the funded continuation settles every payment, preserves the account
+history before March 2030 and keeps the original total measure.
 
 ## Reproducing the district food study
 
