@@ -10,6 +10,9 @@ use qazna::{
 use serde_json::{Value, json};
 use uuid::Uuid;
 
+#[path = "packaging_year.rs"]
+mod packaging_year;
+
 const CONSTRUCTION: std::ops::RangeInclusive<usize> = 37..=41;
 
 fn assemble(
@@ -213,6 +216,7 @@ pub(super) fn study(
         })
         .collect();
     let terminal = RollingCapital::checkpoint(&input.model, &input.plan, MONTHS).unwrap();
+    let packaging_2032 = packaging_year::study(&input, terminal.snapshot());
     let cohorts: Vec<_> = terminal
         .snapshot()
         .opening_cohorts
@@ -250,6 +254,7 @@ pub(super) fn study(
         .sum();
     json!({
         "physical_months": MONTHS,
+        "packaging_2032": packaging_2032,
         "food_expired_kg": dates.expired,
         "closing_food_in_transit_kg": dates.final_in_transit,
         "total_modules_built": built,

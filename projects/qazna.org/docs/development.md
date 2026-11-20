@@ -1164,6 +1164,14 @@ capacity constraint and month for each failure. The generated report verifies
 that the funded continuation settles every payment, preserves the account
 history before March 2030 and keeps the original total measure.
 
+The same field-rotation command regenerates `packaging_after_2031`. Each yield
+is replayed independently and the three downstream results must agree before a
+common report is written. The focused test covers sorting lot boundaries, zero
+energy, insufficient factory slots and a missed collection month. Every monthly
+row checks conservation including work still in progress and diagnostic extra supply.
+The no-collection case also gives an independent check by simple subtraction
+of cumulative monthly use from the actual opening stock.
+
 ## Reproducing the district food study
 
 Run `cargo test --locked --example food_technologies` and

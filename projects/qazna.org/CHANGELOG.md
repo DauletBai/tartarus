@@ -1,5 +1,11 @@
 # Qazna changelog
 
+## Packaging stock and collection after 2031 — 20 November 2026
+
+- Carry the three grain cases into a common packaging balance through 2037.
+  Quantify reserve depletion, material yield, collection deadlines and the effect
+  of a smaller collection route under the actual factory retirement dates.
+
 ## Grain deliveries, asset replacement and treasury circulation — 20 November 2026
 
 - Schedule construction against dated capacity and storage requirements across six grain seasons. Replay the same physical schedule and account balances through the first blocked payment and a funded continuation.

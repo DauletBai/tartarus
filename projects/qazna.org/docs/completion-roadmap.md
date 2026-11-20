@@ -93,9 +93,10 @@ persists even if all production starts are rescheduled within the existing graph
    carries ore, wrapping and power inputs across the predecessor boundary. Equipment
    replacement and built storage miss dated deadlines on the original schedule.
    The [joint construction and payment replay](physical-circulation.md#scheduling-construction-and-payments-together)
-   closes both gaps for the three grain yields through December 2031. The next
-   continuity test must enter January 2032 with the actual terminal materials
-   and equipment lives and identify replacement or recovered packaging inputs.
+   closes both gaps for the three grain yields through December 2031. The [packaging continuation](physical-circulation.md#packaging-after-december-2031)
+   carries those materials and equipment lives into 2032–2037, quantifies the
+   first shortfall and tests dated collection. Next, allocate collection freight,
+   energy and factory slots alongside the other users on one physical schedule.
    The separate
    [district portfolio](physical-circulation.md#greenhouse-freshwater-and-coastal-production)
    quantifies alternative food and water routes. Integration needs a shared energy,

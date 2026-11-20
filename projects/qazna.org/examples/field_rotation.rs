@@ -629,10 +629,21 @@ fn main() {
     let study: PopulationStudy =
         serde_json::from_slice(&fs::read("fixtures/population-study.json").unwrap()).unwrap();
     let needs = targets(&input, &study);
+    let mut cases = [100, 120, 85].map(|yield_percent| compare(&input, &needs, yield_percent, &v));
+    // Each yield is replayed separately. Publish the common downstream balance once.
+    let mut packaging = cases.iter_mut().map(|case| {
+        case["renewed_schedule"]
+            .as_object_mut()
+            .unwrap()
+            .remove("packaging_2032")
+            .unwrap()
+    });
+    let continuation = packaging.next().unwrap();
+    assert!(packaging.all(|other| other == continuation));
     let result = json!({"period_zero":"2026-01","target_months":60,"monthly_targets_kg":needs[12..],"crop_order":["rice_component","oats_component","feed_grain_equivalent"],
         "field_history":"Each fixed field group cycles through fallow, rice or oats, feed grain, then flexible grain. Group zero rests in 2026, group one in 2027, and so on. The same phases are assumed before 2026. No yield, irrigation, or nutrient credit is assigned to dry fallow.",
         "scope":"Grain, seed, dated shelf life, finite grain storage, one-month preservation and one-month dispatch, per-route throughput, sowing windows, land and stage water. A separate prefix bound screens shared energy, wrapping and its finite ore against inherited non-food starts. The renewed schedule replays all physical resources and the original monetary policy on the same calendar.",
-        "cases":[compare(&input,&needs,100,&v),compare(&input,&needs,120,&v),compare(&input,&needs,85,&v)]});
+        "packaging_after_2031":continuation,"cases":cases});
     fs::write(
         env::args().nth(1).expect("output path"),
         serde_json::to_vec_pretty(&result).unwrap(),
