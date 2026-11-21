@@ -1,4 +1,7 @@
 //! Supply the November collection schedule from dated fuel and power assets.
+#[path = "freight_storage.rs"]
+mod storage;
+
 use super::{MONTHS, ModelInput, Month, RollingSnapshot, YEAR, calendar, loads};
 use serde::Serialize;
 use serde_json::{Value, json};
@@ -134,7 +137,13 @@ fn shortage(rows: &[Flow]) -> Value {
         "unserved_ticks":rows.iter().map(|r|r.unmet_energy).sum::<i64>()})
 }
 
-pub(super) fn study(input: &ModelInput, boundary: &RollingSnapshot, route: &[Month]) -> Value {
+pub(super) fn study(
+    input: &ModelInput,
+    boundary: &RollingSnapshot,
+    route: &[Month],
+    policy: &qazna::coupled::CirculationPolicy,
+    cash: &[String],
+) -> Value {
     let m = &input.model;
     let h = &m.seasonal.physical;
     let opening = &boundary.opening_stock;
@@ -257,7 +266,8 @@ pub(super) fn study(input: &ModelInput, boundary: &RollingSnapshot, route: &[Mon
         .iter()
         .rposition(|r| r.generated_batches > 0)
         .unwrap();
-    json!({"scope":"Unchanged grain and wrapping orders, same work pool, no new modules or outside energy. Energy inventory carries without loss. Generation and extraction outputs arrive next month. Start is the latest under this dispatch policy.",
+    let comparison = storage::compare(&supply, &protected, input, boundary, route, policy, cash);
+    json!({"storage_comparison":comparison,"scope":"Unchanged grain and wrapping orders, same work pool, no new modules or outside energy. Energy inventory carries without loss. Generation and extraction outputs arrive next month. Start is the latest under this dispatch policy.",
         "opening_energy_ticks":supply.energy,"opening_fuel_ticks":supply.fuel,"opening_deposit_ticks":supply.deposit,
         "protected_fuel_ticks":supply.fuel_floor,"load_ticks":demand,"energy_per_batch":yield_ticks,
         "generation_batches":batches,"extraction_ticks":extraction,"latest_start":calendar(MONTHS+start),

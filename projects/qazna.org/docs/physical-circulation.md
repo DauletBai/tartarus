@@ -2902,6 +2902,59 @@ sensitivity. Real storage duration, conversion efficiency, discharge power,
 distances, competing loads and post-2031 payments still need to be specified.
 [Energy and freight schedules](../research/field-rotation.json).
 
+### Storing fuel and renewing power modules
+
+Two schedules serve the same 72 months of grain deliveries, returns and wrapper
+processing. Both inherit the funded December 2031 checkpoint. Both lose one
+thousandth of each carried energy balance monthly, protect 60,000,000 units of
+extracted fuel and target at least 241,712,982 closing energy ticks. Fuel retains
+its quantity in storage. The energy-storage case repeats the previous 10%
+generation-margin schedule.
+
+| Six-year quantity | Store energy | Store fuel |
+| --- | ---: | ---: |
+| Fuel extracted | 98,782,027 | 95,363,571 |
+| Generation batches | 101,634,808 | 98,216,352 |
+| Energy lost in storage | 8,988,575,727 | 5,570,537,526 |
+| Maximum extracted fuel on hand before generation | 126,782,027 | 158,216,352 |
+| New power modules | 0 | 3 |
+| Construction material / energy | 0 / 0 | 30,000 / 3,000,000 |
+| Extraction, generation and construction work | 200,416,835 | 193,582,923 |
+| Closing energy | 241,712,982 | 241,713,639 |
+
+In the fuel strategy the inherited extractors mine in April and May 2034.
+Construction starts in November 2034, the last month with available factory
+capacity. Modules complete in February 2035, can operate from March and retire
+in March 2037. The first generation starts in October 2035 and the last in
+February 2037. The remaining ten delivery months draw on an energy reserve.
+Integer rounding accounts for the 657 ticks above the closing target.
+
+The sizing calculation searches whole module counts at that construction date.
+It works backwards from December 2037 to find the least carried energy each
+month needs given the following month's output limit. A forward replay charges
+all construction inputs, mining, shared labour and monthly storage losses.
+Batches arrive one month after their starts. This compares two specific
+schedules. Fuel storage capacity and leakage, generator maintenance, real
+power and energy densities may change the ordering.
+
+**Settlement.** The opening accounts come from the funded six-season run.
+The treasury holds 1,353,598,085,941 of the system's 1,559,457,628,979
+accounting units. Outbound haul energy is charged to each grain delivery
+operator, return energy to the recovery operator. The comparison includes
+wrapping inputs, fuel production inputs and payment for completed generators
+at the fixture's existing norms. Food purchase, other sectors' claims on the
+treasury and compensation for individual labour are outside this service
+calculation. Labour availability is checked in physical units.
+
+Both schedules first miss a rice haul energy payment of 862,532,511 in January
+2032 under the inherited account distribution. The exact opening allocation
+from treasury to the seven short accounts is 178,806,691,946 for storing energy
+and 178,799,855,034 for storing fuel. With these transfers, all 643 and 673
+payments respectively settle on their scheduled dates, including the seven
+opening transfers. The six-year total balance stays constant. The report gives
+monthly settlement counts, turnover and treasury closing balances for both
+strategies. [Physical and monetary schedules](../research/field-rotation.json).
+
 ### Greenhouse, freshwater and coastal production
 
 One operating district orders 1,000 kg of lettuce, 500 kg of fish fillet and

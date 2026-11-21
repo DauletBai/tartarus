@@ -99,9 +99,10 @@ persists even if all production starts are rescheduled within the existing graph
    now allocates whole trips, work and energy on the collection calendar.
    The [freight energy replay](physical-circulation.md#energy-supply-for-grain-freight)
    supplies that timetable with finite fuel and expiring equipment, including a
-   storage-loss sensitivity. Next compare storing fuel with renewing generators
-   nearer the delivery dates. Value the physical activities in the existing
-   circulation model and verify that their dated payments can settle.
+   storage-loss sensitivity. The [fuel storage comparison](physical-circulation.md#storing-fuel-and-renewing-power-modules)
+   now schedules replacement generators and verifies the dated service payments
+   from carried account balances for both strategies. Next test fuel tank
+   capacity, storage losses and replacement-unit availability against this route.
    The separate
    [district portfolio](physical-circulation.md#greenhouse-freshwater-and-coastal-production)
    quantifies alternative food and water routes. Integration needs a shared energy,

@@ -216,7 +216,6 @@ pub(super) fn study(
         })
         .collect();
     let terminal = RollingCapital::checkpoint(&input.model, &input.plan, MONTHS).unwrap();
-    let packaging_2032 = packaging_year::study(&input, terminal.snapshot());
     let cohorts: Vec<_> = terminal
         .snapshot()
         .opening_cohorts
@@ -236,7 +235,7 @@ pub(super) fn study(
         .expect("baseline liquidity failure") as usize;
     let treasury_before = &e.closing_by_period[cut - 1][0];
     input.boundary = cut;
-    let revision = model_scenarios::preview_continuation(physical, input).unwrap();
+    let revision = model_scenarios::preview_continuation(physical, input.clone()).unwrap();
     let funded = coupled::preview_funded_continuation(trial, revision).unwrap();
     let funded_checkpoint: CoupledCheckpoint =
         serde_json::from_str(funded.checkpoint.as_deref().unwrap()).unwrap();
@@ -246,6 +245,12 @@ pub(super) fn study(
     assert_eq!(
         total(&after.money.closing).to_string(),
         e.money.opening_total
+    );
+    let packaging_2032 = packaging_year::study(
+        &input,
+        terminal.snapshot(),
+        &funded.definition.policy,
+        &after.money.closing,
     );
     let allocation: u128 = after
         .treasury_allocations

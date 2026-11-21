@@ -1184,6 +1184,13 @@ delays, whole-batch rounding, constrained storage and shared work. The report
 also checks the closing fuel, energy and deposit balances with additional
 production to cover monthly storage loss.
 
+The same command also regenerates `energy_supply.storage_comparison` on the
+revised route. All three yield histories independently produce the same physical
+and monetary report. The energy-loss inverse is checked against integer
+rounding boundaries. A small schedule tests the month between final generation
+and delivery. Full-horizon and month-by-month settlement replays must produce
+identical closing accounts.
+
 ## Reproducing the district food study
 
 Run `cargo test --locked --example food_technologies` and

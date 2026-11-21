@@ -11702,6 +11702,2038 @@
               "peak_pre_dispatch_energy_ticks": 205219181701,
               "protected_fuel_ticks": 60000000,
               "scope": "Unchanged grain and wrapping orders, same work pool, no new modules or outside energy. Energy inventory carries without loss. Generation and extraction outputs arrive next month. Start is the latest under this dispatch policy.",
+              "storage_comparison": {
+                "build_completion": "2035-02",
+                "build_start": "2034-11",
+                "energy_store": {
+                  "closing_energy": 241712982,
+                  "closing_fuel": 60000000,
+                  "construction_energy": 0,
+                  "construction_material": 0,
+                  "extraction": 98782027,
+                  "first_generation": "2033-06",
+                  "generation": 101634808,
+                  "last_generation": "2033-10",
+                  "modules": 0,
+                  "peak_fuel_before_generation": 126782027,
+                  "storage_loss": 8988575727,
+                  "upstream_work_ticks": 200416835
+                },
+                "fuel_store": {
+                  "closing_energy": 241713639,
+                  "closing_fuel": 60000000,
+                  "construction_energy": 3000000,
+                  "construction_material": 30000,
+                  "extraction": 95363571,
+                  "first_generation": "2035-10",
+                  "generation": 98216352,
+                  "last_generation": "2037-02",
+                  "modules": 3,
+                  "peak_fuel_before_generation": 158216352,
+                  "storage_loss": 5570537526,
+                  "upstream_work_ticks": 193582923
+                },
+                "fuel_store_months": [
+                  {
+                    "closing_deposit": 231043695,
+                    "closing_energy": 200810026919,
+                    "closing_fuel": 62852781,
+                    "demand": 4203935601,
+                    "energy_arrival": 0,
+                    "extracted": 0,
+                    "fuel_arrival": 0,
+                    "generated_batches": 0,
+                    "month": "2032-01",
+                    "storage_loss": 205219181,
+                    "unmet_energy": 0
+                  },
+                  {
+                    "closing_deposit": 231043695,
+                    "closing_energy": 196811303160,
+                    "closing_fuel": 62852781,
+                    "demand": 3797913733,
+                    "energy_arrival": 0,
+                    "extracted": 0,
+                    "fuel_arrival": 0,
+                    "generated_batches": 0,
+                    "month": "2032-02",
+                    "storage_loss": 200810026,
+                    "unmet_energy": 0
+                  },
+                  {
+                    "closing_deposit": 231043695,
+                    "closing_energy": 192408763186,
+                    "closing_fuel": 62852781,
+                    "demand": 4205728671,
+                    "energy_arrival": 0,
+                    "extracted": 0,
+                    "fuel_arrival": 0,
+                    "generated_batches": 0,
+                    "month": "2032-03",
+                    "storage_loss": 196811303,
+                    "unmet_energy": 0
+                  },
+                  {
+                    "closing_deposit": 231043695,
+                    "closing_energy": 188145429452,
+                    "closing_fuel": 62852781,
+                    "demand": 4070924971,
+                    "energy_arrival": 0,
+                    "extracted": 0,
+                    "fuel_arrival": 0,
+                    "generated_batches": 0,
+                    "month": "2032-04",
+                    "storage_loss": 192408763,
+                    "unmet_energy": 0
+                  },
+                  {
+                    "closing_deposit": 231043695,
+                    "closing_energy": 183749769524,
+                    "closing_fuel": 62852781,
+                    "demand": 4207514499,
+                    "energy_arrival": 0,
+                    "extracted": 0,
+                    "fuel_arrival": 0,
+                    "generated_batches": 0,
+                    "month": "2032-05",
+                    "storage_loss": 188145429,
+                    "unmet_energy": 0
+                  },
+                  {
+                    "closing_deposit": 231043695,
+                    "closing_energy": 179493370044,
+                    "closing_fuel": 62852781,
+                    "demand": 4072649711,
+                    "energy_arrival": 0,
+                    "extracted": 0,
+                    "fuel_arrival": 0,
+                    "generated_batches": 0,
+                    "month": "2032-06",
+                    "storage_loss": 183749769,
+                    "unmet_energy": 0
+                  },
+                  {
+                    "closing_deposit": 231043695,
+                    "closing_energy": 175104583584,
+                    "closing_fuel": 62852781,
+                    "demand": 4209293090,
+                    "energy_arrival": 0,
+                    "extracted": 0,
+                    "fuel_arrival": 0,
+                    "generated_batches": 0,
+                    "month": "2032-07",
+                    "storage_loss": 179493370,
+                    "unmet_energy": 0
+                  },
+                  {
+                    "closing_deposit": 231043695,
+                    "closing_energy": 170719299325,
+                    "closing_fuel": 62852781,
+                    "demand": 4210179676,
+                    "energy_arrival": 0,
+                    "extracted": 0,
+                    "fuel_arrival": 0,
+                    "generated_batches": 0,
+                    "month": "2032-08",
+                    "storage_loss": 175104583,
+                    "unmet_energy": 0
+                  },
+                  {
+                    "closing_deposit": 231043695,
+                    "closing_energy": 166473356357,
+                    "closing_fuel": 62852781,
+                    "demand": 4075223669,
+                    "energy_arrival": 0,
+                    "extracted": 0,
+                    "fuel_arrival": 0,
+                    "generated_batches": 0,
+                    "month": "2032-09",
+                    "storage_loss": 170719299,
+                    "unmet_energy": 0
+                  },
+                  {
+                    "closing_deposit": 231043695,
+                    "closing_energy": 162094935522,
+                    "closing_fuel": 62852781,
+                    "demand": 4211947479,
+                    "energy_arrival": 0,
+                    "extracted": 0,
+                    "fuel_arrival": 0,
+                    "generated_batches": 0,
+                    "month": "2032-10",
+                    "storage_loss": 166473356,
+                    "unmet_energy": 0
+                  },
+                  {
+                    "closing_deposit": 231043695,
+                    "closing_energy": 157851908203,
+                    "closing_fuel": 62852781,
+                    "demand": 4080932384,
+                    "energy_arrival": 0,
+                    "extracted": 0,
+                    "fuel_arrival": 0,
+                    "generated_batches": 0,
+                    "month": "2032-11",
+                    "storage_loss": 162094935,
+                    "unmet_energy": 0
+                  },
+                  {
+                    "closing_deposit": 231043695,
+                    "closing_energy": 153475674717,
+                    "closing_fuel": 62852781,
+                    "demand": 4218381578,
+                    "energy_arrival": 0,
+                    "extracted": 0,
+                    "fuel_arrival": 0,
+                    "generated_batches": 0,
+                    "month": "2032-12",
+                    "storage_loss": 157851908,
+                    "unmet_energy": 0
+                  },
+                  {
+                    "closing_deposit": 231043695,
+                    "closing_energy": 149110284759,
+                    "closing_fuel": 62852781,
+                    "demand": 4211914284,
+                    "energy_arrival": 0,
+                    "extracted": 0,
+                    "fuel_arrival": 0,
+                    "generated_batches": 0,
+                    "month": "2033-01",
+                    "storage_loss": 153475674,
+                    "unmet_energy": 0
+                  },
+                  {
+                    "closing_deposit": 231043695,
+                    "closing_energy": 145155367923,
+                    "closing_fuel": 62852781,
+                    "demand": 3805806552,
+                    "energy_arrival": 0,
+                    "extracted": 0,
+                    "fuel_arrival": 0,
+                    "generated_batches": 0,
+                    "month": "2033-02",
+                    "storage_loss": 149110284,
+                    "unmet_energy": 0
+                  },
+                  {
+                    "closing_deposit": 231043695,
+                    "closing_energy": 140796874726,
+                    "closing_fuel": 62852781,
+                    "demand": 4213337830,
+                    "energy_arrival": 0,
+                    "extracted": 0,
+                    "fuel_arrival": 0,
+                    "generated_batches": 0,
+                    "month": "2033-03",
+                    "storage_loss": 145155367,
+                    "unmet_energy": 0
+                  },
+                  {
+                    "closing_deposit": 231043695,
+                    "closing_energy": 136577240858,
+                    "closing_fuel": 62852781,
+                    "demand": 4078836994,
+                    "energy_arrival": 0,
+                    "extracted": 0,
+                    "fuel_arrival": 0,
+                    "generated_batches": 0,
+                    "month": "2033-04",
+                    "storage_loss": 140796874,
+                    "unmet_energy": 0
+                  },
+                  {
+                    "closing_deposit": 231043695,
+                    "closing_energy": 132225596180,
+                    "closing_fuel": 62852781,
+                    "demand": 4215067438,
+                    "energy_arrival": 0,
+                    "extracted": 0,
+                    "fuel_arrival": 0,
+                    "generated_batches": 0,
+                    "month": "2033-05",
+                    "storage_loss": 136577240,
+                    "unmet_energy": 0
+                  },
+                  {
+                    "closing_deposit": 231043695,
+                    "closing_energy": 128012753934,
+                    "closing_fuel": 62852781,
+                    "demand": 4080616650,
+                    "energy_arrival": 0,
+                    "extracted": 0,
+                    "fuel_arrival": 0,
+                    "generated_batches": 0,
+                    "month": "2033-06",
+                    "storage_loss": 132225596,
+                    "unmet_energy": 0
+                  },
+                  {
+                    "closing_deposit": 231043695,
+                    "closing_energy": 123667685733,
+                    "closing_fuel": 62852781,
+                    "demand": 4217055448,
+                    "energy_arrival": 0,
+                    "extracted": 0,
+                    "fuel_arrival": 0,
+                    "generated_batches": 0,
+                    "month": "2033-07",
+                    "storage_loss": 128012753,
+                    "unmet_energy": 0
+                  },
+                  {
+                    "closing_deposit": 231043695,
+                    "closing_energy": 119325868063,
+                    "closing_fuel": 62852781,
+                    "demand": 4218149985,
+                    "energy_arrival": 0,
+                    "extracted": 0,
+                    "fuel_arrival": 0,
+                    "generated_batches": 0,
+                    "month": "2033-08",
+                    "storage_loss": 123667685,
+                    "unmet_energy": 0
+                  },
+                  {
+                    "closing_deposit": 231043695,
+                    "closing_energy": 115123423875,
+                    "closing_fuel": 62852781,
+                    "demand": 4083118320,
+                    "energy_arrival": 0,
+                    "extracted": 0,
+                    "fuel_arrival": 0,
+                    "generated_batches": 0,
+                    "month": "2033-09",
+                    "storage_loss": 119325868,
+                    "unmet_energy": 0
+                  },
+                  {
+                    "closing_deposit": 231043695,
+                    "closing_energy": 110788482470,
+                    "closing_fuel": 62852781,
+                    "demand": 4219817982,
+                    "energy_arrival": 0,
+                    "extracted": 0,
+                    "fuel_arrival": 0,
+                    "generated_batches": 0,
+                    "month": "2033-10",
+                    "storage_loss": 115123423,
+                    "unmet_energy": 0
+                  },
+                  {
+                    "closing_deposit": 231043695,
+                    "closing_energy": 106592787624,
+                    "closing_fuel": 62852781,
+                    "demand": 4084906364,
+                    "energy_arrival": 0,
+                    "extracted": 0,
+                    "fuel_arrival": 0,
+                    "generated_batches": 0,
+                    "month": "2033-11",
+                    "storage_loss": 110788482,
+                    "unmet_energy": 0
+                  },
+                  {
+                    "closing_deposit": 231043695,
+                    "closing_energy": 102264716039,
+                    "closing_fuel": 62852781,
+                    "demand": 4221478798,
+                    "energy_arrival": 0,
+                    "extracted": 0,
+                    "fuel_arrival": 0,
+                    "generated_batches": 0,
+                    "month": "2033-12",
+                    "storage_loss": 106592787,
+                    "unmet_energy": 0
+                  },
+                  {
+                    "closing_deposit": 231043695,
+                    "closing_energy": 97950536979,
+                    "closing_fuel": 62852781,
+                    "demand": 4211914344,
+                    "energy_arrival": 0,
+                    "extracted": 0,
+                    "fuel_arrival": 0,
+                    "generated_batches": 0,
+                    "month": "2034-01",
+                    "storage_loss": 102264716,
+                    "unmet_energy": 0
+                  },
+                  {
+                    "closing_deposit": 231043695,
+                    "closing_energy": 94046779951,
+                    "closing_fuel": 62852781,
+                    "demand": 3805806492,
+                    "energy_arrival": 0,
+                    "extracted": 0,
+                    "fuel_arrival": 0,
+                    "generated_batches": 0,
+                    "month": "2034-02",
+                    "storage_loss": 97950536,
+                    "unmet_energy": 0
+                  },
+                  {
+                    "closing_deposit": 231043695,
+                    "closing_energy": 89739395262,
+                    "closing_fuel": 62852781,
+                    "demand": 4213337910,
+                    "energy_arrival": 0,
+                    "extracted": 0,
+                    "fuel_arrival": 0,
+                    "generated_batches": 0,
+                    "month": "2034-03",
+                    "storage_loss": 94046779,
+                    "unmet_energy": 0
+                  },
+                  {
+                    "closing_deposit": 185680124,
+                    "closing_energy": 85525455322,
+                    "closing_fuel": 62852781,
+                    "demand": 4078836974,
+                    "energy_arrival": 0,
+                    "extracted": 45363571,
+                    "fuel_arrival": 0,
+                    "generated_batches": 0,
+                    "month": "2034-04",
+                    "storage_loss": 89739395,
+                    "unmet_energy": 0
+                  },
+                  {
+                    "closing_deposit": 135680124,
+                    "closing_energy": 81174862489,
+                    "closing_fuel": 108216352,
+                    "demand": 4215067378,
+                    "energy_arrival": 0,
+                    "extracted": 50000000,
+                    "fuel_arrival": 45363571,
+                    "generated_batches": 0,
+                    "month": "2034-05",
+                    "storage_loss": 85525455,
+                    "unmet_energy": 0
+                  },
+                  {
+                    "closing_deposit": 135680124,
+                    "closing_energy": 77013070917,
+                    "closing_fuel": 158216352,
+                    "demand": 4080616710,
+                    "energy_arrival": 0,
+                    "extracted": 0,
+                    "fuel_arrival": 50000000,
+                    "generated_batches": 0,
+                    "month": "2034-06",
+                    "storage_loss": 81174862,
+                    "unmet_energy": 0
+                  },
+                  {
+                    "closing_deposit": 135680124,
+                    "closing_energy": 72719002459,
+                    "closing_fuel": 158216352,
+                    "demand": 4217055388,
+                    "energy_arrival": 0,
+                    "extracted": 0,
+                    "fuel_arrival": 0,
+                    "generated_batches": 0,
+                    "month": "2034-07",
+                    "storage_loss": 77013070,
+                    "unmet_energy": 0
+                  },
+                  {
+                    "closing_deposit": 135680124,
+                    "closing_energy": 68428133392,
+                    "closing_fuel": 158216352,
+                    "demand": 4218150065,
+                    "energy_arrival": 0,
+                    "extracted": 0,
+                    "fuel_arrival": 0,
+                    "generated_batches": 0,
+                    "month": "2034-08",
+                    "storage_loss": 72719002,
+                    "unmet_energy": 0
+                  },
+                  {
+                    "closing_deposit": 135680124,
+                    "closing_energy": 64276586959,
+                    "closing_fuel": 158216352,
+                    "demand": 4083118300,
+                    "energy_arrival": 0,
+                    "extracted": 0,
+                    "fuel_arrival": 0,
+                    "generated_batches": 0,
+                    "month": "2034-09",
+                    "storage_loss": 68428133,
+                    "unmet_energy": 0
+                  },
+                  {
+                    "closing_deposit": 135680124,
+                    "closing_energy": 59992492451,
+                    "closing_fuel": 158216352,
+                    "demand": 4219817922,
+                    "energy_arrival": 0,
+                    "extracted": 0,
+                    "fuel_arrival": 0,
+                    "generated_batches": 0,
+                    "month": "2034-10",
+                    "storage_loss": 64276586,
+                    "unmet_energy": 0
+                  },
+                  {
+                    "closing_deposit": 135680124,
+                    "closing_energy": 55844593515,
+                    "closing_fuel": 158216352,
+                    "demand": 4087906444,
+                    "energy_arrival": 0,
+                    "extracted": 0,
+                    "fuel_arrival": 0,
+                    "generated_batches": 0,
+                    "month": "2034-11",
+                    "storage_loss": 59992492,
+                    "unmet_energy": 0
+                  },
+                  {
+                    "closing_deposit": 135680124,
+                    "closing_energy": 51575040689,
+                    "closing_fuel": 158216352,
+                    "demand": 4213708233,
+                    "energy_arrival": 0,
+                    "extracted": 0,
+                    "fuel_arrival": 0,
+                    "generated_batches": 0,
+                    "month": "2034-12",
+                    "storage_loss": 55844593,
+                    "unmet_energy": 0
+                  },
+                  {
+                    "closing_deposit": 135680124,
+                    "closing_energy": 47319530048,
+                    "closing_fuel": 158216352,
+                    "demand": 4203935601,
+                    "energy_arrival": 0,
+                    "extracted": 0,
+                    "fuel_arrival": 0,
+                    "generated_batches": 0,
+                    "month": "2035-01",
+                    "storage_loss": 51575040,
+                    "unmet_energy": 0
+                  },
+                  {
+                    "closing_deposit": 135680124,
+                    "closing_energy": 43474296785,
+                    "closing_fuel": 158216352,
+                    "demand": 3797913733,
+                    "energy_arrival": 0,
+                    "extracted": 0,
+                    "fuel_arrival": 0,
+                    "generated_batches": 0,
+                    "month": "2035-02",
+                    "storage_loss": 47319530,
+                    "unmet_energy": 0
+                  },
+                  {
+                    "closing_deposit": 135680124,
+                    "closing_energy": 39225093818,
+                    "closing_fuel": 158216352,
+                    "demand": 4205728671,
+                    "energy_arrival": 0,
+                    "extracted": 0,
+                    "fuel_arrival": 0,
+                    "generated_batches": 0,
+                    "month": "2035-03",
+                    "storage_loss": 43474296,
+                    "unmet_energy": 0
+                  },
+                  {
+                    "closing_deposit": 135680124,
+                    "closing_energy": 35114943754,
+                    "closing_fuel": 158216352,
+                    "demand": 4070924971,
+                    "energy_arrival": 0,
+                    "extracted": 0,
+                    "fuel_arrival": 0,
+                    "generated_batches": 0,
+                    "month": "2035-04",
+                    "storage_loss": 39225093,
+                    "unmet_energy": 0
+                  },
+                  {
+                    "closing_deposit": 135680124,
+                    "closing_energy": 30872314312,
+                    "closing_fuel": 158216352,
+                    "demand": 4207514499,
+                    "energy_arrival": 0,
+                    "extracted": 0,
+                    "fuel_arrival": 0,
+                    "generated_batches": 0,
+                    "month": "2035-05",
+                    "storage_loss": 35114943,
+                    "unmet_energy": 0
+                  },
+                  {
+                    "closing_deposit": 135680124,
+                    "closing_energy": 26768792287,
+                    "closing_fuel": 158216352,
+                    "demand": 4072649711,
+                    "energy_arrival": 0,
+                    "extracted": 0,
+                    "fuel_arrival": 0,
+                    "generated_batches": 0,
+                    "month": "2035-06",
+                    "storage_loss": 30872314,
+                    "unmet_energy": 0
+                  },
+                  {
+                    "closing_deposit": 135680124,
+                    "closing_energy": 22532730405,
+                    "closing_fuel": 158216352,
+                    "demand": 4209293090,
+                    "energy_arrival": 0,
+                    "extracted": 0,
+                    "fuel_arrival": 0,
+                    "generated_batches": 0,
+                    "month": "2035-07",
+                    "storage_loss": 26768792,
+                    "unmet_energy": 0
+                  },
+                  {
+                    "closing_deposit": 135680124,
+                    "closing_energy": 18300017999,
+                    "closing_fuel": 158216352,
+                    "demand": 4210179676,
+                    "energy_arrival": 0,
+                    "extracted": 0,
+                    "fuel_arrival": 0,
+                    "generated_batches": 0,
+                    "month": "2035-08",
+                    "storage_loss": 22532730,
+                    "unmet_energy": 0
+                  },
+                  {
+                    "closing_deposit": 135680124,
+                    "closing_energy": 14206494313,
+                    "closing_fuel": 158216352,
+                    "demand": 4075223669,
+                    "energy_arrival": 0,
+                    "extracted": 0,
+                    "fuel_arrival": 0,
+                    "generated_batches": 0,
+                    "month": "2035-09",
+                    "storage_loss": 18300017,
+                    "unmet_energy": 0
+                  },
+                  {
+                    "closing_deposit": 135680124,
+                    "closing_energy": 9980340340,
+                    "closing_fuel": 156000000,
+                    "demand": 4211947479,
+                    "energy_arrival": 0,
+                    "extracted": 0,
+                    "fuel_arrival": 0,
+                    "generated_batches": 2216352,
+                    "month": "2035-10",
+                    "storage_loss": 14206494,
+                    "unmet_energy": 0
+                  },
+                  {
+                    "closing_deposit": 135680124,
+                    "closing_energy": 8109780967,
+                    "closing_fuel": 150000000,
+                    "demand": 4076931033,
+                    "energy_arrival": 2216352000,
+                    "extracted": 0,
+                    "fuel_arrival": 0,
+                    "generated_batches": 6000000,
+                    "month": "2035-11",
+                    "storage_loss": 9980340,
+                    "unmet_energy": 0
+                  },
+                  {
+                    "closing_deposit": 135680124,
+                    "closing_energy": 9887962954,
+                    "closing_fuel": 144000000,
+                    "demand": 4213708233,
+                    "energy_arrival": 6000000000,
+                    "extracted": 0,
+                    "fuel_arrival": 0,
+                    "generated_batches": 6000000,
+                    "month": "2035-12",
+                    "storage_loss": 8109780,
+                    "unmet_energy": 0
+                  },
+                  {
+                    "closing_deposit": 135680124,
+                    "closing_energy": 11674139391,
+                    "closing_fuel": 138000000,
+                    "demand": 4203935601,
+                    "energy_arrival": 6000000000,
+                    "extracted": 0,
+                    "fuel_arrival": 0,
+                    "generated_batches": 6000000,
+                    "month": "2036-01",
+                    "storage_loss": 9887962,
+                    "unmet_energy": 0
+                  },
+                  {
+                    "closing_deposit": 135680124,
+                    "closing_energy": 13864551519,
+                    "closing_fuel": 132000000,
+                    "demand": 3797913733,
+                    "energy_arrival": 6000000000,
+                    "extracted": 0,
+                    "fuel_arrival": 0,
+                    "generated_batches": 6000000,
+                    "month": "2036-02",
+                    "storage_loss": 11674139,
+                    "unmet_energy": 0
+                  },
+                  {
+                    "closing_deposit": 135680124,
+                    "closing_energy": 15644958297,
+                    "closing_fuel": 126000000,
+                    "demand": 4205728671,
+                    "energy_arrival": 6000000000,
+                    "extracted": 0,
+                    "fuel_arrival": 0,
+                    "generated_batches": 6000000,
+                    "month": "2036-03",
+                    "storage_loss": 13864551,
+                    "unmet_energy": 0
+                  },
+                  {
+                    "closing_deposit": 135680124,
+                    "closing_energy": 17558388368,
+                    "closing_fuel": 120000000,
+                    "demand": 4070924971,
+                    "energy_arrival": 6000000000,
+                    "extracted": 0,
+                    "fuel_arrival": 0,
+                    "generated_batches": 6000000,
+                    "month": "2036-04",
+                    "storage_loss": 15644958,
+                    "unmet_energy": 0
+                  },
+                  {
+                    "closing_deposit": 135680124,
+                    "closing_energy": 19333315481,
+                    "closing_fuel": 114000000,
+                    "demand": 4207514499,
+                    "energy_arrival": 6000000000,
+                    "extracted": 0,
+                    "fuel_arrival": 0,
+                    "generated_batches": 6000000,
+                    "month": "2036-05",
+                    "storage_loss": 17558388,
+                    "unmet_energy": 0
+                  },
+                  {
+                    "closing_deposit": 135680124,
+                    "closing_energy": 21241332455,
+                    "closing_fuel": 108000000,
+                    "demand": 4072649711,
+                    "energy_arrival": 6000000000,
+                    "extracted": 0,
+                    "fuel_arrival": 0,
+                    "generated_batches": 6000000,
+                    "month": "2036-06",
+                    "storage_loss": 19333315,
+                    "unmet_energy": 0
+                  },
+                  {
+                    "closing_deposit": 135680124,
+                    "closing_energy": 23010798033,
+                    "closing_fuel": 102000000,
+                    "demand": 4209293090,
+                    "energy_arrival": 6000000000,
+                    "extracted": 0,
+                    "fuel_arrival": 0,
+                    "generated_batches": 6000000,
+                    "month": "2036-07",
+                    "storage_loss": 21241332,
+                    "unmet_energy": 0
+                  },
+                  {
+                    "closing_deposit": 135680124,
+                    "closing_energy": 24777607559,
+                    "closing_fuel": 96000000,
+                    "demand": 4210179676,
+                    "energy_arrival": 6000000000,
+                    "extracted": 0,
+                    "fuel_arrival": 0,
+                    "generated_batches": 6000000,
+                    "month": "2036-08",
+                    "storage_loss": 23010798,
+                    "unmet_energy": 0
+                  },
+                  {
+                    "closing_deposit": 135680124,
+                    "closing_energy": 26677606283,
+                    "closing_fuel": 90000000,
+                    "demand": 4075223669,
+                    "energy_arrival": 6000000000,
+                    "extracted": 0,
+                    "fuel_arrival": 0,
+                    "generated_batches": 6000000,
+                    "month": "2036-09",
+                    "storage_loss": 24777607,
+                    "unmet_energy": 0
+                  },
+                  {
+                    "closing_deposit": 135680124,
+                    "closing_energy": 28438981198,
+                    "closing_fuel": 84000000,
+                    "demand": 4211947479,
+                    "energy_arrival": 6000000000,
+                    "extracted": 0,
+                    "fuel_arrival": 0,
+                    "generated_batches": 6000000,
+                    "month": "2036-10",
+                    "storage_loss": 26677606,
+                    "unmet_energy": 0
+                  },
+                  {
+                    "closing_deposit": 135680124,
+                    "closing_energy": 30333611184,
+                    "closing_fuel": 78000000,
+                    "demand": 4076931033,
+                    "energy_arrival": 6000000000,
+                    "extracted": 0,
+                    "fuel_arrival": 0,
+                    "generated_batches": 6000000,
+                    "month": "2036-11",
+                    "storage_loss": 28438981,
+                    "unmet_energy": 0
+                  },
+                  {
+                    "closing_deposit": 135680124,
+                    "closing_energy": 32089569340,
+                    "closing_fuel": 72000000,
+                    "demand": 4213708233,
+                    "energy_arrival": 6000000000,
+                    "extracted": 0,
+                    "fuel_arrival": 0,
+                    "generated_batches": 6000000,
+                    "month": "2036-12",
+                    "storage_loss": 30333611,
+                    "unmet_energy": 0
+                  },
+                  {
+                    "closing_deposit": 135680124,
+                    "closing_energy": 33853544170,
+                    "closing_fuel": 66000000,
+                    "demand": 4203935601,
+                    "energy_arrival": 6000000000,
+                    "extracted": 0,
+                    "fuel_arrival": 0,
+                    "generated_batches": 6000000,
+                    "month": "2037-01",
+                    "storage_loss": 32089569,
+                    "unmet_energy": 0
+                  },
+                  {
+                    "closing_deposit": 135680124,
+                    "closing_energy": 36021776893,
+                    "closing_fuel": 60000000,
+                    "demand": 3797913733,
+                    "energy_arrival": 6000000000,
+                    "extracted": 0,
+                    "fuel_arrival": 0,
+                    "generated_batches": 6000000,
+                    "month": "2037-02",
+                    "storage_loss": 33853544,
+                    "unmet_energy": 0
+                  },
+                  {
+                    "closing_deposit": 135680124,
+                    "closing_energy": 37780026446,
+                    "closing_fuel": 60000000,
+                    "demand": 4205728671,
+                    "energy_arrival": 6000000000,
+                    "extracted": 0,
+                    "fuel_arrival": 0,
+                    "generated_batches": 0,
+                    "month": "2037-03",
+                    "storage_loss": 36021776,
+                    "unmet_energy": 0
+                  },
+                  {
+                    "closing_deposit": 135680124,
+                    "closing_energy": 33671321449,
+                    "closing_fuel": 60000000,
+                    "demand": 4070924971,
+                    "energy_arrival": 0,
+                    "extracted": 0,
+                    "fuel_arrival": 0,
+                    "generated_batches": 0,
+                    "month": "2037-04",
+                    "storage_loss": 37780026,
+                    "unmet_energy": 0
+                  },
+                  {
+                    "closing_deposit": 135680124,
+                    "closing_energy": 29430135629,
+                    "closing_fuel": 60000000,
+                    "demand": 4207514499,
+                    "energy_arrival": 0,
+                    "extracted": 0,
+                    "fuel_arrival": 0,
+                    "generated_batches": 0,
+                    "month": "2037-05",
+                    "storage_loss": 33671321,
+                    "unmet_energy": 0
+                  },
+                  {
+                    "closing_deposit": 135680124,
+                    "closing_energy": 25328055783,
+                    "closing_fuel": 60000000,
+                    "demand": 4072649711,
+                    "energy_arrival": 0,
+                    "extracted": 0,
+                    "fuel_arrival": 0,
+                    "generated_batches": 0,
+                    "month": "2037-06",
+                    "storage_loss": 29430135,
+                    "unmet_energy": 0
+                  },
+                  {
+                    "closing_deposit": 135680124,
+                    "closing_energy": 21093434638,
+                    "closing_fuel": 60000000,
+                    "demand": 4209293090,
+                    "energy_arrival": 0,
+                    "extracted": 0,
+                    "fuel_arrival": 0,
+                    "generated_batches": 0,
+                    "month": "2037-07",
+                    "storage_loss": 25328055,
+                    "unmet_energy": 0
+                  },
+                  {
+                    "closing_deposit": 135680124,
+                    "closing_energy": 16862161528,
+                    "closing_fuel": 60000000,
+                    "demand": 4210179676,
+                    "energy_arrival": 0,
+                    "extracted": 0,
+                    "fuel_arrival": 0,
+                    "generated_batches": 0,
+                    "month": "2037-08",
+                    "storage_loss": 21093434,
+                    "unmet_energy": 0
+                  },
+                  {
+                    "closing_deposit": 135680124,
+                    "closing_energy": 12770075698,
+                    "closing_fuel": 60000000,
+                    "demand": 4075223669,
+                    "energy_arrival": 0,
+                    "extracted": 0,
+                    "fuel_arrival": 0,
+                    "generated_batches": 0,
+                    "month": "2037-09",
+                    "storage_loss": 16862161,
+                    "unmet_energy": 0
+                  },
+                  {
+                    "closing_deposit": 135680124,
+                    "closing_energy": 8545358144,
+                    "closing_fuel": 60000000,
+                    "demand": 4211947479,
+                    "energy_arrival": 0,
+                    "extracted": 0,
+                    "fuel_arrival": 0,
+                    "generated_batches": 0,
+                    "month": "2037-10",
+                    "storage_loss": 12770075,
+                    "unmet_energy": 0
+                  },
+                  {
+                    "closing_deposit": 135680124,
+                    "closing_energy": 4459881753,
+                    "closing_fuel": 60000000,
+                    "demand": 4076931033,
+                    "energy_arrival": 0,
+                    "extracted": 0,
+                    "fuel_arrival": 0,
+                    "generated_batches": 0,
+                    "month": "2037-11",
+                    "storage_loss": 8545358,
+                    "unmet_energy": 0
+                  },
+                  {
+                    "closing_deposit": 135680124,
+                    "closing_energy": 241713639,
+                    "closing_fuel": 60000000,
+                    "demand": 4213708233,
+                    "energy_arrival": 0,
+                    "extracted": 0,
+                    "fuel_arrival": 0,
+                    "generated_batches": 0,
+                    "month": "2037-12",
+                    "storage_loss": 4459881,
+                    "unmet_energy": 0
+                  }
+                ],
+                "payments": {
+                  "energy_store": {
+                    "allocations": [
+                      {
+                        "account": "shared unit: delivered_rice_gross_equivalent_kg",
+                        "amount": 61153587210
+                      },
+                      {
+                        "account": "shared unit: delivered_oats_gross_equivalent_kg",
+                        "amount": 36633903750
+                      },
+                      {
+                        "account": "shared unit: delivered_feed_equivalent_kg",
+                        "amount": 80557339542
+                      },
+                      {
+                        "account": "shared unit: energy_ticks",
+                        "amount": 101634808
+                      },
+                      {
+                        "account": "shared unit: packaging_ticks",
+                        "amount": 144455680
+                      },
+                      {
+                        "account": "shared unit: extracted_fuel_ticks",
+                        "amount": 98782027
+                      },
+                      {
+                        "account": "shared unit: recovered_packaging_material_kg",
+                        "amount": 116988929
+                      }
+                    ],
+                    "closing_accounts": [
+                      "1472588957635",
+                      "0",
+                      "0",
+                      "0",
+                      "0",
+                      "0",
+                      "0",
+                      "86826251344",
+                      "0",
+                      "0",
+                      "0",
+                      "0",
+                      "0",
+                      "0",
+                      "0",
+                      "0",
+                      "0",
+                      "0",
+                      "0",
+                      "0",
+                      "0",
+                      "0",
+                      "0",
+                      "0",
+                      "6060000",
+                      "10100000",
+                      "0",
+                      "14140000",
+                      "12120000",
+                      "0",
+                      "0",
+                      "0",
+                      "0"
+                    ],
+                    "first_blocked_without_allocation": {
+                      "amount": 862532511,
+                      "basis": "Outbound haul energy",
+                      "month": "2032-01",
+                      "payer": "shared unit: delivered_rice_gross_equivalent_kg"
+                    },
+                    "months": [
+                      {
+                        "month": "2032-01",
+                        "settled": 13,
+                        "treasury_close": 1178995329596,
+                        "volume": "187214563148"
+                      },
+                      {
+                        "month": "2032-02",
+                        "settled": 6,
+                        "treasury_close": 1182793243329,
+                        "volume": "7595827466"
+                      },
+                      {
+                        "month": "2032-03",
+                        "settled": 6,
+                        "treasury_close": 1186998972000,
+                        "volume": "8411457342"
+                      },
+                      {
+                        "month": "2032-04",
+                        "settled": 6,
+                        "treasury_close": 1191069896971,
+                        "volume": "8141849942"
+                      },
+                      {
+                        "month": "2032-05",
+                        "settled": 6,
+                        "treasury_close": 1195277411470,
+                        "volume": "8415028998"
+                      },
+                      {
+                        "month": "2032-06",
+                        "settled": 6,
+                        "treasury_close": 1199350061181,
+                        "volume": "8145299422"
+                      },
+                      {
+                        "month": "2032-07",
+                        "settled": 6,
+                        "treasury_close": 1203559354271,
+                        "volume": "8418586180"
+                      },
+                      {
+                        "month": "2032-08",
+                        "settled": 6,
+                        "treasury_close": 1207769533947,
+                        "volume": "8420359352"
+                      },
+                      {
+                        "month": "2032-09",
+                        "settled": 6,
+                        "treasury_close": 1211844757616,
+                        "volume": "8150447338"
+                      },
+                      {
+                        "month": "2032-10",
+                        "settled": 6,
+                        "treasury_close": 1216056705095,
+                        "volume": "8423894958"
+                      },
+                      {
+                        "month": "2032-11",
+                        "settled": 8,
+                        "treasury_close": 1220137637479,
+                        "volume": "8161864768"
+                      },
+                      {
+                        "month": "2032-12",
+                        "settled": 10,
+                        "treasury_close": 1224356019057,
+                        "volume": "8436763156"
+                      },
+                      {
+                        "month": "2033-01",
+                        "settled": 14,
+                        "treasury_close": 1228571134381,
+                        "volume": "8430230648"
+                      },
+                      {
+                        "month": "2033-02",
+                        "settled": 14,
+                        "treasury_close": 1232380039413,
+                        "volume": "7617810064"
+                      },
+                      {
+                        "month": "2033-03",
+                        "settled": 14,
+                        "treasury_close": 1236596579643,
+                        "volume": "8433080460"
+                      },
+                      {
+                        "month": "2033-04",
+                        "settled": 14,
+                        "treasury_close": 1240678611597,
+                        "volume": "8164063908"
+                      },
+                      {
+                        "month": "2033-05",
+                        "settled": 14,
+                        "treasury_close": 1244896565515,
+                        "volume": "8435907836"
+                      },
+                      {
+                        "month": "2033-06",
+                        "settled": 18,
+                        "treasury_close": 1249038231266,
+                        "volume": "8283331502"
+                      },
+                      {
+                        "month": "2033-07",
+                        "settled": 18,
+                        "treasury_close": 1253334162661,
+                        "volume": "8591862790"
+                      },
+                      {
+                        "month": "2033-08",
+                        "settled": 16,
+                        "treasury_close": 1257585510326,
+                        "volume": "8502695330"
+                      },
+                      {
+                        "month": "2033-09",
+                        "settled": 16,
+                        "treasury_close": 1261695723846,
+                        "volume": "8220427040"
+                      },
+                      {
+                        "month": "2033-10",
+                        "settled": 16,
+                        "treasury_close": 1265931522975,
+                        "volume": "8471598258"
+                      },
+                      {
+                        "month": "2033-11",
+                        "settled": 14,
+                        "treasury_close": 1270019629019,
+                        "volume": "8176212088"
+                      },
+                      {
+                        "month": "2033-12",
+                        "settled": 14,
+                        "treasury_close": 1274244205017,
+                        "volume": "8449151996"
+                      },
+                      {
+                        "month": "2034-01",
+                        "settled": 14,
+                        "treasury_close": 1278459320481,
+                        "volume": "8430230928"
+                      },
+                      {
+                        "month": "2034-02",
+                        "settled": 14,
+                        "treasury_close": 1282268225373,
+                        "volume": "7617809784"
+                      },
+                      {
+                        "month": "2034-03",
+                        "settled": 14,
+                        "treasury_close": 1286484765763,
+                        "volume": "8433080780"
+                      },
+                      {
+                        "month": "2034-04",
+                        "settled": 14,
+                        "treasury_close": 1290566797697,
+                        "volume": "8164063868"
+                      },
+                      {
+                        "month": "2034-05",
+                        "settled": 14,
+                        "treasury_close": 1294784751475,
+                        "volume": "8435907556"
+                      },
+                      {
+                        "month": "2034-06",
+                        "settled": 14,
+                        "treasury_close": 1298868564585,
+                        "volume": "8167626220"
+                      },
+                      {
+                        "month": "2034-07",
+                        "settled": 14,
+                        "treasury_close": 1303088713813,
+                        "volume": "8440298456"
+                      },
+                      {
+                        "month": "2034-08",
+                        "settled": 14,
+                        "treasury_close": 1307310061638,
+                        "volume": "8442695650"
+                      },
+                      {
+                        "month": "2034-09",
+                        "settled": 14,
+                        "treasury_close": 1311396275138,
+                        "volume": "8172427000"
+                      },
+                      {
+                        "month": "2034-10",
+                        "settled": 14,
+                        "treasury_close": 1315619292100,
+                        "volume": "8446033924"
+                      },
+                      {
+                        "month": "2034-11",
+                        "settled": 14,
+                        "treasury_close": 1319707398304,
+                        "volume": "8176212408"
+                      },
+                      {
+                        "month": "2034-12",
+                        "settled": 6,
+                        "treasury_close": 1323921106537,
+                        "volume": "8427416466"
+                      },
+                      {
+                        "month": "2035-01",
+                        "settled": 6,
+                        "treasury_close": 1328125042138,
+                        "volume": "8407871202"
+                      },
+                      {
+                        "month": "2035-02",
+                        "settled": 6,
+                        "treasury_close": 1331922955871,
+                        "volume": "7595827466"
+                      },
+                      {
+                        "month": "2035-03",
+                        "settled": 6,
+                        "treasury_close": 1336128684542,
+                        "volume": "8411457342"
+                      },
+                      {
+                        "month": "2035-04",
+                        "settled": 6,
+                        "treasury_close": 1340199609513,
+                        "volume": "8141849942"
+                      },
+                      {
+                        "month": "2035-05",
+                        "settled": 6,
+                        "treasury_close": 1344407124012,
+                        "volume": "8415028998"
+                      },
+                      {
+                        "month": "2035-06",
+                        "settled": 6,
+                        "treasury_close": 1348479773723,
+                        "volume": "8145299422"
+                      },
+                      {
+                        "month": "2035-07",
+                        "settled": 6,
+                        "treasury_close": 1352689066813,
+                        "volume": "8418586180"
+                      },
+                      {
+                        "month": "2035-08",
+                        "settled": 6,
+                        "treasury_close": 1356899246489,
+                        "volume": "8420359352"
+                      },
+                      {
+                        "month": "2035-09",
+                        "settled": 6,
+                        "treasury_close": 1360974470158,
+                        "volume": "8150447338"
+                      },
+                      {
+                        "month": "2035-10",
+                        "settled": 6,
+                        "treasury_close": 1365186417637,
+                        "volume": "8423894958"
+                      },
+                      {
+                        "month": "2035-11",
+                        "settled": 6,
+                        "treasury_close": 1369263348670,
+                        "volume": "8153862066"
+                      },
+                      {
+                        "month": "2035-12",
+                        "settled": 6,
+                        "treasury_close": 1373477056903,
+                        "volume": "8427416466"
+                      },
+                      {
+                        "month": "2036-01",
+                        "settled": 6,
+                        "treasury_close": 1377680992504,
+                        "volume": "8407871202"
+                      },
+                      {
+                        "month": "2036-02",
+                        "settled": 6,
+                        "treasury_close": 1381478906237,
+                        "volume": "7595827466"
+                      },
+                      {
+                        "month": "2036-03",
+                        "settled": 6,
+                        "treasury_close": 1385684634908,
+                        "volume": "8411457342"
+                      },
+                      {
+                        "month": "2036-04",
+                        "settled": 6,
+                        "treasury_close": 1389755559879,
+                        "volume": "8141849942"
+                      },
+                      {
+                        "month": "2036-05",
+                        "settled": 6,
+                        "treasury_close": 1393963074378,
+                        "volume": "8415028998"
+                      },
+                      {
+                        "month": "2036-06",
+                        "settled": 6,
+                        "treasury_close": 1398035724089,
+                        "volume": "8145299422"
+                      },
+                      {
+                        "month": "2036-07",
+                        "settled": 6,
+                        "treasury_close": 1402245017179,
+                        "volume": "8418586180"
+                      },
+                      {
+                        "month": "2036-08",
+                        "settled": 6,
+                        "treasury_close": 1406455196855,
+                        "volume": "8420359352"
+                      },
+                      {
+                        "month": "2036-09",
+                        "settled": 6,
+                        "treasury_close": 1410530420524,
+                        "volume": "8150447338"
+                      },
+                      {
+                        "month": "2036-10",
+                        "settled": 6,
+                        "treasury_close": 1414742368003,
+                        "volume": "8423894958"
+                      },
+                      {
+                        "month": "2036-11",
+                        "settled": 6,
+                        "treasury_close": 1418819299036,
+                        "volume": "8153862066"
+                      },
+                      {
+                        "month": "2036-12",
+                        "settled": 6,
+                        "treasury_close": 1423033007269,
+                        "volume": "8427416466"
+                      },
+                      {
+                        "month": "2037-01",
+                        "settled": 6,
+                        "treasury_close": 1427236942870,
+                        "volume": "8407871202"
+                      },
+                      {
+                        "month": "2037-02",
+                        "settled": 6,
+                        "treasury_close": 1431034856603,
+                        "volume": "7595827466"
+                      },
+                      {
+                        "month": "2037-03",
+                        "settled": 6,
+                        "treasury_close": 1435240585274,
+                        "volume": "8411457342"
+                      },
+                      {
+                        "month": "2037-04",
+                        "settled": 6,
+                        "treasury_close": 1439311510245,
+                        "volume": "8141849942"
+                      },
+                      {
+                        "month": "2037-05",
+                        "settled": 6,
+                        "treasury_close": 1443519024744,
+                        "volume": "8415028998"
+                      },
+                      {
+                        "month": "2037-06",
+                        "settled": 6,
+                        "treasury_close": 1447591674455,
+                        "volume": "8145299422"
+                      },
+                      {
+                        "month": "2037-07",
+                        "settled": 6,
+                        "treasury_close": 1451800967545,
+                        "volume": "8418586180"
+                      },
+                      {
+                        "month": "2037-08",
+                        "settled": 6,
+                        "treasury_close": 1456011147221,
+                        "volume": "8420359352"
+                      },
+                      {
+                        "month": "2037-09",
+                        "settled": 6,
+                        "treasury_close": 1460086370890,
+                        "volume": "8150447338"
+                      },
+                      {
+                        "month": "2037-10",
+                        "settled": 6,
+                        "treasury_close": 1464298318369,
+                        "volume": "8423894958"
+                      },
+                      {
+                        "month": "2037-11",
+                        "settled": 6,
+                        "treasury_close": 1468375249402,
+                        "volume": "8153862066"
+                      },
+                      {
+                        "month": "2037-12",
+                        "settled": 6,
+                        "treasury_close": 1472588957635,
+                        "volume": "8427416466"
+                      }
+                    ],
+                    "opening_total": "1559457628979",
+                    "operating_payments": 636,
+                    "settled_including_allocations": 643,
+                    "treasury_allocated": 178806691946
+                  },
+                  "fuel_store": {
+                    "allocations": [
+                      {
+                        "account": "shared unit: delivered_rice_gross_equivalent_kg",
+                        "amount": 61153587210
+                      },
+                      {
+                        "account": "shared unit: delivered_oats_gross_equivalent_kg",
+                        "amount": 36633903750
+                      },
+                      {
+                        "account": "shared unit: delivered_feed_equivalent_kg",
+                        "amount": 80557339542
+                      },
+                      {
+                        "account": "shared unit: energy_ticks",
+                        "amount": 98216352
+                      },
+                      {
+                        "account": "shared unit: packaging_ticks",
+                        "amount": 144455680
+                      },
+                      {
+                        "account": "shared unit: extracted_fuel_ticks",
+                        "amount": 95363571
+                      },
+                      {
+                        "account": "shared unit: recovered_packaging_material_kg",
+                        "amount": 116988929
+                      }
+                    ],
+                    "closing_accounts": [
+                      "1472591987635",
+                      "0",
+                      "0",
+                      "0",
+                      "0",
+                      "0",
+                      "0",
+                      "86826251344",
+                      "0",
+                      "0",
+                      "0",
+                      "0",
+                      "0",
+                      "0",
+                      "0",
+                      "0",
+                      "0",
+                      "0",
+                      "0",
+                      "0",
+                      "0",
+                      "0",
+                      "0",
+                      "0",
+                      "3030000",
+                      "10100000",
+                      "0",
+                      "14140000",
+                      "12120000",
+                      "0",
+                      "0",
+                      "0",
+                      "0"
+                    ],
+                    "first_blocked_without_allocation": {
+                      "amount": 862532511,
+                      "basis": "Outbound haul energy",
+                      "month": "2032-01",
+                      "payer": "shared unit: delivered_rice_gross_equivalent_kg"
+                    },
+                    "months": [
+                      {
+                        "month": "2032-01",
+                        "settled": 13,
+                        "treasury_close": 1179002166508,
+                        "volume": "187207726236"
+                      },
+                      {
+                        "month": "2032-02",
+                        "settled": 6,
+                        "treasury_close": 1182800080241,
+                        "volume": "7595827466"
+                      },
+                      {
+                        "month": "2032-03",
+                        "settled": 6,
+                        "treasury_close": 1187005808912,
+                        "volume": "8411457342"
+                      },
+                      {
+                        "month": "2032-04",
+                        "settled": 6,
+                        "treasury_close": 1191076733883,
+                        "volume": "8141849942"
+                      },
+                      {
+                        "month": "2032-05",
+                        "settled": 6,
+                        "treasury_close": 1195284248382,
+                        "volume": "8415028998"
+                      },
+                      {
+                        "month": "2032-06",
+                        "settled": 6,
+                        "treasury_close": 1199356898093,
+                        "volume": "8145299422"
+                      },
+                      {
+                        "month": "2032-07",
+                        "settled": 6,
+                        "treasury_close": 1203566191183,
+                        "volume": "8418586180"
+                      },
+                      {
+                        "month": "2032-08",
+                        "settled": 6,
+                        "treasury_close": 1207776370859,
+                        "volume": "8420359352"
+                      },
+                      {
+                        "month": "2032-09",
+                        "settled": 6,
+                        "treasury_close": 1211851594528,
+                        "volume": "8150447338"
+                      },
+                      {
+                        "month": "2032-10",
+                        "settled": 6,
+                        "treasury_close": 1216063542007,
+                        "volume": "8423894958"
+                      },
+                      {
+                        "month": "2032-11",
+                        "settled": 8,
+                        "treasury_close": 1220144474391,
+                        "volume": "8161864768"
+                      },
+                      {
+                        "month": "2032-12",
+                        "settled": 10,
+                        "treasury_close": 1224362855969,
+                        "volume": "8436763156"
+                      },
+                      {
+                        "month": "2033-01",
+                        "settled": 14,
+                        "treasury_close": 1228577971293,
+                        "volume": "8430230648"
+                      },
+                      {
+                        "month": "2033-02",
+                        "settled": 14,
+                        "treasury_close": 1232386876325,
+                        "volume": "7617810064"
+                      },
+                      {
+                        "month": "2033-03",
+                        "settled": 14,
+                        "treasury_close": 1236603416555,
+                        "volume": "8433080460"
+                      },
+                      {
+                        "month": "2033-04",
+                        "settled": 14,
+                        "treasury_close": 1240685448509,
+                        "volume": "8164063908"
+                      },
+                      {
+                        "month": "2033-05",
+                        "settled": 14,
+                        "treasury_close": 1244903402427,
+                        "volume": "8435907836"
+                      },
+                      {
+                        "month": "2033-06",
+                        "settled": 14,
+                        "treasury_close": 1248987215397,
+                        "volume": "8167625940"
+                      },
+                      {
+                        "month": "2033-07",
+                        "settled": 14,
+                        "treasury_close": 1253207364765,
+                        "volume": "8440298736"
+                      },
+                      {
+                        "month": "2033-08",
+                        "settled": 14,
+                        "treasury_close": 1257428712430,
+                        "volume": "8442695330"
+                      },
+                      {
+                        "month": "2033-09",
+                        "settled": 14,
+                        "treasury_close": 1261514925950,
+                        "volume": "8172427040"
+                      },
+                      {
+                        "month": "2033-10",
+                        "settled": 14,
+                        "treasury_close": 1265737943052,
+                        "volume": "8446034204"
+                      },
+                      {
+                        "month": "2033-11",
+                        "settled": 14,
+                        "treasury_close": 1269826049096,
+                        "volume": "8176212088"
+                      },
+                      {
+                        "month": "2033-12",
+                        "settled": 14,
+                        "treasury_close": 1274050625094,
+                        "volume": "8449151996"
+                      },
+                      {
+                        "month": "2034-01",
+                        "settled": 14,
+                        "treasury_close": 1278265740558,
+                        "volume": "8430230928"
+                      },
+                      {
+                        "month": "2034-02",
+                        "settled": 14,
+                        "treasury_close": 1282074645450,
+                        "volume": "7617809784"
+                      },
+                      {
+                        "month": "2034-03",
+                        "settled": 14,
+                        "treasury_close": 1286291185840,
+                        "volume": "8433080780"
+                      },
+                      {
+                        "month": "2034-04",
+                        "settled": 16,
+                        "treasury_close": 1290418581345,
+                        "volume": "8254791010"
+                      },
+                      {
+                        "month": "2034-05",
+                        "settled": 16,
+                        "treasury_close": 1294686535123,
+                        "volume": "8535907556"
+                      },
+                      {
+                        "month": "2034-06",
+                        "settled": 14,
+                        "treasury_close": 1298770348233,
+                        "volume": "8167626220"
+                      },
+                      {
+                        "month": "2034-07",
+                        "settled": 14,
+                        "treasury_close": 1302990497461,
+                        "volume": "8440298456"
+                      },
+                      {
+                        "month": "2034-08",
+                        "settled": 14,
+                        "treasury_close": 1307211845286,
+                        "volume": "8442695650"
+                      },
+                      {
+                        "month": "2034-09",
+                        "settled": 14,
+                        "treasury_close": 1311298058786,
+                        "volume": "8172427000"
+                      },
+                      {
+                        "month": "2034-10",
+                        "settled": 14,
+                        "treasury_close": 1315521075748,
+                        "volume": "8446033924"
+                      },
+                      {
+                        "month": "2034-11",
+                        "settled": 18,
+                        "treasury_close": 1319612211952,
+                        "volume": "8182272408"
+                      },
+                      {
+                        "month": "2034-12",
+                        "settled": 6,
+                        "treasury_close": 1323825920185,
+                        "volume": "8427416466"
+                      },
+                      {
+                        "month": "2035-01",
+                        "settled": 6,
+                        "treasury_close": 1328029855786,
+                        "volume": "8407871202"
+                      },
+                      {
+                        "month": "2035-02",
+                        "settled": 8,
+                        "treasury_close": 1331827769519,
+                        "volume": "7595827472"
+                      },
+                      {
+                        "month": "2035-03",
+                        "settled": 6,
+                        "treasury_close": 1336033498190,
+                        "volume": "8411457342"
+                      },
+                      {
+                        "month": "2035-04",
+                        "settled": 6,
+                        "treasury_close": 1340104423161,
+                        "volume": "8141849942"
+                      },
+                      {
+                        "month": "2035-05",
+                        "settled": 6,
+                        "treasury_close": 1344311937660,
+                        "volume": "8415028998"
+                      },
+                      {
+                        "month": "2035-06",
+                        "settled": 6,
+                        "treasury_close": 1348384587371,
+                        "volume": "8145299422"
+                      },
+                      {
+                        "month": "2035-07",
+                        "settled": 6,
+                        "treasury_close": 1352593880461,
+                        "volume": "8418586180"
+                      },
+                      {
+                        "month": "2035-08",
+                        "settled": 6,
+                        "treasury_close": 1356804060137,
+                        "volume": "8420359352"
+                      },
+                      {
+                        "month": "2035-09",
+                        "settled": 6,
+                        "treasury_close": 1360879283806,
+                        "volume": "8150447338"
+                      },
+                      {
+                        "month": "2035-10",
+                        "settled": 8,
+                        "treasury_close": 1365093447637,
+                        "volume": "8428327662"
+                      },
+                      {
+                        "month": "2035-11",
+                        "settled": 8,
+                        "treasury_close": 1369176378670,
+                        "volume": "8165862066"
+                      },
+                      {
+                        "month": "2035-12",
+                        "settled": 8,
+                        "treasury_close": 1373396086903,
+                        "volume": "8439416466"
+                      },
+                      {
+                        "month": "2036-01",
+                        "settled": 8,
+                        "treasury_close": 1377606022504,
+                        "volume": "8419871202"
+                      },
+                      {
+                        "month": "2036-02",
+                        "settled": 8,
+                        "treasury_close": 1381409936237,
+                        "volume": "7607827466"
+                      },
+                      {
+                        "month": "2036-03",
+                        "settled": 8,
+                        "treasury_close": 1385621664908,
+                        "volume": "8423457342"
+                      },
+                      {
+                        "month": "2036-04",
+                        "settled": 8,
+                        "treasury_close": 1389698589879,
+                        "volume": "8153849942"
+                      },
+                      {
+                        "month": "2036-05",
+                        "settled": 8,
+                        "treasury_close": 1393912104378,
+                        "volume": "8427028998"
+                      },
+                      {
+                        "month": "2036-06",
+                        "settled": 8,
+                        "treasury_close": 1397990754089,
+                        "volume": "8157299422"
+                      },
+                      {
+                        "month": "2036-07",
+                        "settled": 8,
+                        "treasury_close": 1402206047179,
+                        "volume": "8430586180"
+                      },
+                      {
+                        "month": "2036-08",
+                        "settled": 8,
+                        "treasury_close": 1406422226855,
+                        "volume": "8432359352"
+                      },
+                      {
+                        "month": "2036-09",
+                        "settled": 8,
+                        "treasury_close": 1410503450524,
+                        "volume": "8162447338"
+                      },
+                      {
+                        "month": "2036-10",
+                        "settled": 8,
+                        "treasury_close": 1414721398003,
+                        "volume": "8435894958"
+                      },
+                      {
+                        "month": "2036-11",
+                        "settled": 8,
+                        "treasury_close": 1418804329036,
+                        "volume": "8165862066"
+                      },
+                      {
+                        "month": "2036-12",
+                        "settled": 8,
+                        "treasury_close": 1423024037269,
+                        "volume": "8439416466"
+                      },
+                      {
+                        "month": "2037-01",
+                        "settled": 8,
+                        "treasury_close": 1427233972870,
+                        "volume": "8419871202"
+                      },
+                      {
+                        "month": "2037-02",
+                        "settled": 8,
+                        "treasury_close": 1431037886603,
+                        "volume": "7607827466"
+                      },
+                      {
+                        "month": "2037-03",
+                        "settled": 6,
+                        "treasury_close": 1435243615274,
+                        "volume": "8411457342"
+                      },
+                      {
+                        "month": "2037-04",
+                        "settled": 6,
+                        "treasury_close": 1439314540245,
+                        "volume": "8141849942"
+                      },
+                      {
+                        "month": "2037-05",
+                        "settled": 6,
+                        "treasury_close": 1443522054744,
+                        "volume": "8415028998"
+                      },
+                      {
+                        "month": "2037-06",
+                        "settled": 6,
+                        "treasury_close": 1447594704455,
+                        "volume": "8145299422"
+                      },
+                      {
+                        "month": "2037-07",
+                        "settled": 6,
+                        "treasury_close": 1451803997545,
+                        "volume": "8418586180"
+                      },
+                      {
+                        "month": "2037-08",
+                        "settled": 6,
+                        "treasury_close": 1456014177221,
+                        "volume": "8420359352"
+                      },
+                      {
+                        "month": "2037-09",
+                        "settled": 6,
+                        "treasury_close": 1460089400890,
+                        "volume": "8150447338"
+                      },
+                      {
+                        "month": "2037-10",
+                        "settled": 6,
+                        "treasury_close": 1464301348369,
+                        "volume": "8423894958"
+                      },
+                      {
+                        "month": "2037-11",
+                        "settled": 6,
+                        "treasury_close": 1468378279402,
+                        "volume": "8153862066"
+                      },
+                      {
+                        "month": "2037-12",
+                        "settled": 6,
+                        "treasury_close": 1472591987635,
+                        "volume": "8427416466"
+                      }
+                    ],
+                    "opening_total": "1559457628979",
+                    "operating_payments": 666,
+                    "settled_including_allocations": 673,
+                    "treasury_allocated": 178799855034
+                  },
+                  "opening_accounts": [
+                    "1353598085941",
+                    "0",
+                    "0",
+                    "0",
+                    "0",
+                    "0",
+                    "0",
+                    "86826251344",
+                    "0",
+                    "0",
+                    "118990871694",
+                    "0",
+                    "0",
+                    "0",
+                    "0",
+                    "0",
+                    "0",
+                    "0",
+                    "0",
+                    "0",
+                    "0",
+                    "0",
+                    "0",
+                    "0",
+                    "6060000",
+                    "10100000",
+                    "0",
+                    "14140000",
+                    "12120000",
+                    "0",
+                    "0",
+                    "0",
+                    "0"
+                  ]
+                },
+                "retires": "2037-03",
+                "terminal_energy_floor": 241712982,
+                "usable_from": "2035-03"
+              },
               "storage_loss_stress": {
                 "lost_ticks": 8444551550,
                 "per_thousand_each_month": 1,

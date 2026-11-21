@@ -1,5 +1,11 @@
 # Qazna changelog
 
+## Fuel storage, generator renewal and freight payments — 21 November 2026
+
+- Compare early generation with fuel storage and later commissioning. Publish
+  physical balances, dated service payments, the first missed payment and the
+  treasury transfers required to settle both schedules.
+
 ## Energy supply for freight — 21 November 2026
 
 - Supply the six-year grain transport and wrapping timetable from finite fuel.

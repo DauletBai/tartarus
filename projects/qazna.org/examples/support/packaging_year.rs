@@ -214,7 +214,12 @@ fn simulate(
     MaterialRun { months, extra }
 }
 
-pub(super) fn study(input: &ModelInput, boundary: &RollingSnapshot) -> Value {
+pub(super) fn study(
+    input: &ModelInput,
+    boundary: &RollingSnapshot,
+    policy: &qazna::coupled::CirculationPolicy,
+    cash: &[String],
+) -> Value {
     let s = &input.model.seasonal;
     let h = &s.physical;
     assert_eq!(boundary.boundary, MONTHS);
@@ -371,7 +376,7 @@ pub(super) fn study(input: &ModelInput, boundary: &RollingSnapshot) -> Value {
             latest.map(|t| {
                 let revised = simulate(&route, 95, 80, t);
                 assert_eq!(revised.extra, 0);
-                json!({"start":calendar(MONTHS+t), "extra_ready_g":revised.extra, "energy_supply":freight_energy::study(input,boundary,&revised.months), "months":revised.months})
+                json!({"start":calendar(MONTHS+t), "extra_ready_g":revised.extra, "energy_supply":freight_energy::study(input,boundary,&revised.months,policy,cash), "months":revised.months})
             })
         } else {
             None

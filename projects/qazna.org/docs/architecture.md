@@ -904,3 +904,10 @@ draw on the same residual work pool. Equipment capacity ends at cohort expiry,
 and both fuel and energy have one-month delivery delays. Two separate inventories
 track extracted fuel and its finite deposit. The study includes a generation
 outage and a second dispatch plan with monthly storage loss.
+
+The [fuel storage comparison](physical-circulation.md#storing-fuel-and-renewing-power-modules)
+connects each physical schedule to the account balances of the funded December
+2031 checkpoint. The offline schedule uses the current operator and supplier
+accounts, input measures and treasury share. It settles module purchases on
+completion. Receipt dependencies are satisfied in the fully settled replay.
+For the unfunded comparison only the first blocked payment is reported.
