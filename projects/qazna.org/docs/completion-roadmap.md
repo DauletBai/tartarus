@@ -1,7 +1,17 @@
 # Completion roadmap and feasibility boundaries
 
-Latest review: 19 November 2026, population demand and physical supply deadlines take priority over sector detail.
-The current work order below supersedes earlier milestone-specific next steps.
+## Strategic priorities
+
+The immediate objective is to establish whether a public-service team can understand, reproduce and use the proposed comparison. The technical milestones below record completed experiments and earlier effort estimates.
+
+| Order | Work | Evidence for the next decision |
+| --- | --- | --- |
+| 1 | Present the economic problem and walk through one household decision. | Give the overview to a programme director, an operator and an evaluator. Ask each to explain who decides, where the funds come from, what happens when food is missing and what the prototype can prove. Record misunderstandings and revise the presentation. |
+| 2 | Make the existing meal example usable in a short, guided demonstration. | Starting from the same case, a reviewer can identify an unverified claim, a shortage of funds and a confirmed delivery, then trace each conclusion to a record. |
+| 3 | Establish a credible local comparison. | A potential partner can identify a service, data owner, baseline, dates, units, budget, coverage objective and relevant exclusions. An independent evaluator can reproduce the baseline and identify a result under which the agency should keep its current practice. |
+| 4 | Decide whether to invest in a voluntary shadow pilot. | The commissioner reviews access, costs, participant choice, continuity and governance. Publish the scope and limitations of any findings. Other jurisdictions can reproduce the method using local inputs. |
+
+**Sector work resumes when it can change a named decision.** Fuel tank sizing, storage leakage, generator availability, local crop yields and delivery coefficients belong with a partner's observations. Preserve the existing demonstration cases and regression tests. A new hypothetical coefficient alone supplies no reason to extend them. [Partner brief](pilot-charter.md#first-engagement).
 
 ## Completion scope and remaining work — 12 November 2026
 
@@ -71,7 +81,7 @@ retains allocations across continuations. Offline reference calculations for
 63 and 72 months independently verify every transfer and final balance.
 The live ledger stays separate. See [reviewed funding](architecture.md#reviewed-treasury-funding).
 
-### Foundation priorities
+### Engineering evidence supporting the demonstrator
 
 The versioned plan, exact circulation and historical replay are working for the
 selected cases. The production plan and the population projection still make
@@ -101,8 +111,7 @@ persists even if all production starts are rescheduled within the existing graph
    supplies that timetable with finite fuel and expiring equipment, including a
    storage-loss sensitivity. The [fuel storage comparison](physical-circulation.md#storing-fuel-and-renewing-power-modules)
    now schedules replacement generators and verifies the dated service payments
-   from carried account balances for both strategies. Next test fuel tank
-   capacity, storage losses and replacement-unit availability against this route.
+   from carried account balances for both strategies. Tank capacity, losses and replacement-unit availability await local operating data.
    The separate
    [district portfolio](physical-circulation.md#greenhouse-freshwater-and-coastal-production)
    quantifies alternative food and water routes. Integration needs a shared energy,

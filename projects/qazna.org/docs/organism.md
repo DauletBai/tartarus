@@ -19,6 +19,16 @@ crisis has one cause or that Qazna prevents every crisis. Agreement with the boo
 is not required to reproduce the equations or identify a defect. Reading it aids
 interpretation; independent technical criticism strengthens the research.
 
+## What an early adopter could test
+
+In the author's proposal, access to necessities follows a person's needs across their lifetime, including periods when they cannot work. Tenge measures provision at declared norms. A common treasury circulates existing measure; the wider proposal ties additional issuance to verified growth in real capacity. The working prototype tests finite allocations and can reject an unaffordable request. Establishing a credible measure of capacity growth and the institution empowered to certify it remains a separate research problem.
+
+Three different failures can look identical to a household that went without a meal. A loss of paid hours can put a meal out of reach. A provider can have the stock and still miss a payment deadline. A district can have enough money and too little suitable food. The first calls for examining entitlement and household income, the second for checking settlement and liquidity, the third for changing production or distribution. Transferring funds alone resolves only some of these cases. A credible evaluation also counts existing public provision and income support in the comparison.
+
+The book discusses the Chicago Fed's *Modern Money Mechanics*, a historical workbook on bank reserves and deposit expansion. A country-level comparison needs the credit institutions, transfer programmes and rules actually in force in the country and period being studied. The Bank of England's account explains how lending creates deposits and how regulation, monetary policy and borrowers constrain the process. [Chicago Fed workbook](https://fraser.stlouisfed.org/title/modern-money-mechanics-9810/modern-money-mechanics-717249) · [Bank of England](https://www.bankofengland.co.uk/quarterly-bulletin/2014/q1/money-creation-in-the-modern-economy).
+
+The strategic opportunity for an early adopter is to establish a publicly inspectable method for sharing productivity gains. A region that publishes its rules, costs, coverage gaps and failures gives other regions something they can test. The stronger claim that this would confer international economic leadership requires comparative evidence over time. [Local comparison design](pilot-charter.md#comparison-and-decision).
+
 ## What the organism analogy asks us to test
 
 Imagine a tissue could claim oxygen in proportion to its existing stock, and
