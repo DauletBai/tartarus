@@ -897,3 +897,10 @@ The [return-freight comparison](physical-circulation.md#grain-deliveries-and-ret
 uses last month's arriving grain vehicles and carries collected material in transit.
 Dispatch, return haulage and processing share the same energy stock and monthly
 work budget. Additional outbound energy is recorded explicitly as a requirement.
+
+The [freight energy supply study](physical-circulation.md#energy-supply-for-grain-freight)
+replays the revised collection timetable unchanged. Extraction and generation
+draw on the same residual work pool. Equipment capacity ends at cohort expiry,
+and both fuel and energy have one-month delivery delays. Two separate inventories
+track extracted fuel and its finite deposit. The study includes a generation
+outage and a second dispatch plan with monthly storage loss.

@@ -1,5 +1,11 @@
 # Qazna changelog
 
+## Energy supply for freight — 21 November 2026
+
+- Supply the six-year grain transport and wrapping timetable from finite fuel.
+  Compare the latest feasible start, a generator outage, a delay and energy
+  storage losses with and without additional production.
+
 ## Grain return freight — 20 November 2026
 
 - Couple collection to arriving grain trucks and carry used wrapping to the sorter.
