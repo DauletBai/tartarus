@@ -1177,6 +1177,13 @@ focused freight test dispatches a single grain lot followed by zero orders.
 It checks arriving vehicles, the partially filled final return, a cancelled
 return, processing dates and the missing energy when the opening stock is zero.
 
+The November collection case now contains `revised_collection.energy_supply`.
+Its no-production replay must reproduce every month's original shortfall.
+The tests cover a fuel reserve that occupies all opening stock, both production
+delays, whole-batch rounding, constrained storage and shared work. The report
+also checks the closing fuel, energy and deposit balances with additional
+production to cover monthly storage loss.
+
 ## Reproducing the district food study
 
 Run `cargo test --locked --example food_technologies` and

@@ -96,9 +96,12 @@ persists even if all production starts are rescheduled within the existing graph
    closes both gaps for the three grain yields through December 2031. The [packaging continuation](physical-circulation.md#packaging-after-december-2031)
    carries those materials and equipment lives into 2032–2037, quantifies the
    first shortfall and tests dated collection. The [grain return-freight study](physical-circulation.md#grain-deliveries-and-return-freight-for-wrapping)
-   now allocates whole trips, work and energy on the collection calendar. Next,
-   cover the February 2036 energy gap with dated generation and fuel while
-   preserving the packaging reserve and the revised collection deadline.
+   now allocates whole trips, work and energy on the collection calendar.
+   The [freight energy replay](physical-circulation.md#energy-supply-for-grain-freight)
+   supplies that timetable with finite fuel and expiring equipment, including a
+   storage-loss sensitivity. Next compare storing fuel with renewing generators
+   nearer the delivery dates. Value the physical activities in the existing
+   circulation model and verify that their dated payments can settle.
    The separate
    [district portfolio](physical-circulation.md#greenhouse-freshwater-and-coastal-production)
    quantifies alternative food and water routes. Integration needs a shared energy,

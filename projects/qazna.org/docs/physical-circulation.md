@@ -2849,6 +2849,59 @@ fleet deployment, route distances, volume limits for actual materials, measured
 energy, upstream generation and payments remain to be verified.
 [Transport and material balances](../research/field-rotation.json).
 
+### Energy supply for grain freight
+
+The November collection schedule fixes the monthly grain dispatches, loaded
+returns and wrapping work through December 2037. They require 297,524,918,965
+energy ticks. Without generation the opening 205,219,181,701 ticks first fall
+short in February 2036. The last inherited generators retire in December
+2033. The date of the first missed delivery therefore gives insufficient
+notice to run these machines.
+
+Each extraction batch consumes one tick of energy and one unit of the finite
+deposit. The fuel arrives the following month. Each generation batch consumes
+one unit of extracted fuel and adds 1,000 energy ticks the following month.
+The 62,852,781 units of opening extracted fuel include a protected 60,000,000.
+For a six-year load D, opening energy E and spendable fuel F, the smallest
+whole-batch count G must satisfy
+
+```text
+X = max(0, G - F)
+E + 1000 G >= D + X
+```
+
+Here X counts extraction batches. The aggregate bound gives 92,395,280
+generation batches and 89,542,499 extractions. The calendar tests whether
+these quantities can actually arrive on time. It uses surviving equipment,
+the inherited seasonal process limits and the labour left after transport
+and wrapping. A batch cannot consume its own future output.
+
+| Energy schedule | First uncovered load | Unserved energy ticks through 2037 |
+| --- | --- | ---: |
+| Opening stock only | February 2036 | 92,305,737,264 |
+| Start extraction and generation in July 2033 | None | 0 |
+| Delay both by one month | July 2037 | 21,542,498,763 |
+| July start, lose all generation in August 2033 | July 2037 | 21,542,498,763 |
+| Move the start to June with the same August outage | None | 0 |
+
+The July schedule mines in July and August and generates through November.
+Its final energy arrives in December 2033. At the end of 2037 it retains
+237 energy ticks, the fuel reserve and 141,501,196 units of unextracted
+deposit. No generator construction is needed within this case.
+
+Storage determines how to interpret this result. At a loss of one tick
+per thousand of the carried balance each month, the original production
+target leaves 8,444,551,313 ticks unserved, starting in October 2037.
+A separate run increases the scheduled batch count by 10% and tests the
+same loss with the same finite deposit. Starting in June 2033, it extracts
+98,782,027 units, runs 101,634,808 generation batches and serves every month
+with 241,712,982 energy ticks left in December 2037. This is a feasible
+margin under that loss assumption. The report includes monthly stocks,
+losses and lead times for both successful runs. The loss rate is a
+sensitivity. Real storage duration, conversion efficiency, discharge power,
+distances, competing loads and post-2031 payments still need to be specified.
+[Energy and freight schedules](../research/field-rotation.json).
+
 ### Greenhouse, freshwater and coastal production
 
 One operating district orders 1,000 kg of lettuce, 500 kg of fish fillet and

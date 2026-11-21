@@ -4,6 +4,9 @@ use qazna::{model_scenarios::ModelInput, rolling::RollingSnapshot};
 use serde::Serialize;
 use serde_json::{Value, json};
 
+#[path = "freight_energy.rs"]
+mod freight_energy;
+
 const YEAR: usize = 12;
 const GRAMS_PER_KG: i64 = 1000;
 const SORT_LOT_KG: i64 = 100;
@@ -368,7 +371,7 @@ pub(super) fn study(input: &ModelInput, boundary: &RollingSnapshot) -> Value {
             latest.map(|t| {
                 let revised = simulate(&route, 95, 80, t);
                 assert_eq!(revised.extra, 0);
-                json!({"start":calendar(MONTHS+t), "extra_ready_g":revised.extra, "months":revised.months})
+                json!({"start":calendar(MONTHS+t), "extra_ready_g":revised.extra, "energy_supply":freight_energy::study(input,boundary,&revised.months), "months":revised.months})
             })
         } else {
             None
