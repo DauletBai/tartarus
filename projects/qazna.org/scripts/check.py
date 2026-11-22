@@ -121,6 +121,8 @@ def main():
             run([str(ROOT / "target/debug/qazna"), "migrate"], env=dict(env, DATABASE_URL=evidence_url))
             run([pg("psql"), "-h", str(sock), "-U", "qazna", "-d", "evidence_demo", "-v", "ON_ERROR_STOP=1", "-f", "fixtures/demo.sql"], stdout=subprocess.DEVNULL)
             run_evidence_exercise(evidence_url, root / "evidence")
+            if (root / "evidence/meal-decision.json").read_bytes() != (ROOT / "research/meal-decision.json").read_bytes():
+                raise SystemExit("The public meal walkthrough differs from the fresh evidence exercise")
             check_recovery(pg, root, sock)
             run([pg("createdb"), "-h", str(sock), "-U", "qazna", "circulation_demo"])
             circulation_url = "postgresql://qazna@localhost/circulation_demo?" + urlencode({"host": str(sock)})

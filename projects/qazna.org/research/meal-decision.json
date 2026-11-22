@@ -1,0 +1,29 @@
+{
+  "unverified_lot": {
+    "declared_meals": "100",
+    "usable_meals": "0",
+    "reservation_error": "insufficient_stock"
+  },
+  "verified_lot": {
+    "usable_meals": "10",
+    "units_per_meal": "2",
+    "unfunded_reservation_error": "insufficient_funds"
+  },
+  "treasury": {
+    "before": "1000",
+    "over_budget_error": "insufficient_funds",
+    "after_allocation": "996"
+  },
+  "delivery": {
+    "reserved_meals": "2",
+    "reserved_units": "4",
+    "sender_only_error": "evidence_required",
+    "final_state": "settled",
+    "settled_units": "4",
+    "resident_closing_balance": "0"
+  },
+  "disputed_remainder": {
+    "meals_on_hand": "8",
+    "usable_meals": "0"
+  }
+}

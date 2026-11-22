@@ -11,6 +11,8 @@ The immediate objective is to establish whether a public-service team can unders
 | 3 | Establish a credible local comparison. | A potential partner can identify a service, data owner, baseline, dates, units, budget, coverage objective and relevant exclusions. An independent evaluator can reproduce the baseline and identify a result under which the agency should keep its current practice. |
 | 4 | Decide whether to invest in a voluntary shadow pilot. | The commissioner reviews access, costs, participant choice, continuity and governance. Publish the scope and limitations of any findings. Other jurisdictions can reproduce the method using local inputs. |
 
+The [two-meal walkthrough](two-meals.md) and its [reproducible decision record](../research/meal-decision.json) are ready for first-time readers. The next evidence needed is their unaided account of the decision. Use the three questions in the walkthrough before asking a partner for records. Reader sessions and a local programme comparison are still pending.
+
 **Sector work resumes when it can change a named decision.** Fuel tank sizing, storage leakage, generator availability, local crop yields and delivery coefficients belong with a partner's observations. Preserve the existing demonstration cases and regression tests. A new hypothetical coefficient alone supplies no reason to extend them. [Partner brief](pilot-charter.md#first-engagement).
 
 ## Completion scope and remaining work — 12 November 2026

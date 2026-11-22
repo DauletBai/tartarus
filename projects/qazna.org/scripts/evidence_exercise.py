@@ -46,8 +46,9 @@ def run_evidence_exercise(url, out, activate=True):
         def lot(quantity):
             rid=uid();call('/v1/resources',dict(id=rid,producer=accounts['custodian'],category='food',unit='meal',quantity=quantity,unit_measure='2',basis='Synthetic declaration'));return rid
         fake=lot('100')
-        assert call('/v1/resources/'+fake)['available']=='0'
-        call('/v1/reservations',dict(resident=accounts['recipient'],resource=fake,quantity='1',basis='Attempt to use nonexistent goods'),expected=409)
+        unverified=call('/v1/resources/'+fake)
+        assert unverified['available']=='0'
+        stock_refusal=call('/v1/reservations',dict(resident=accounts['recipient'],resource=fake,quantity='1',basis='Attempt to use nonexistent goods'),expected=409)
         call('/v1/evidence/resource/'+fake,statement('100','dispute'),role='inspector_a')
         case('false_unattested_declaration_cannot_be_used')
         rid=lot('10');path='/v1/evidence/resource/'+rid
@@ -58,36 +59,55 @@ def run_evidence_exercise(url, out, activate=True):
         call(path,statement('10'),role='inspector_a')
         assert call('/v1/resources/'+rid)['available']=='0'
         call(path,statement('10'),role='inspector_b')
-        assert call('/v1/resources/'+rid)['available']=='10'
+        verified=call('/v1/resources/'+rid)
+        assert verified['available']=='10'
         case('two_distinct_inspectors_release_lot')
         # Shadow-pilot policy: fund the exact shortfall from existing treasury
         # measure after physical availability is established; never mint money.
         reserve=dict(resident=accounts['recipient'],resource=rid,quantity='2',basis='Synthetic basic provision')
-        call('/v1/reservations',reserve,expected=409)
+        balance_refusal=call('/v1/reservations',reserve,expected=409)
         treasury='00000000-0000-0000-0000-000000000002'
         before=call('/v1/accounts/'+treasury)['balance']
         allocation=dict(treasury=treasury,resident=accounts['recipient'],period='2026-11-04',category='food',amount='10000',basis='Synthetic reserve insufficiency')
-        call('/v1/allocations',allocation,expected=409)
+        over_budget=call('/v1/allocations',allocation,expected=409)
         assert call('/v1/accounts/'+treasury)['balance']==before
         assert call('/v1/accounts/'+accounts['recipient'])['balance']=='0'
         allocation['amount']='4';allocation['basis']='Shadow pilot: exact food shortfall from existing reserve'
         call('/v1/allocations',allocation)
-        assert int(call('/v1/accounts/'+treasury)['balance'])==int(before)-4
+        funded=call('/v1/accounts/'+treasury)['balance']
+        assert int(funded)==int(before)-4
         case('zero_balance_basic_provision_uses_existing_reserve_without_issuance')
         held=call('/v1/reservations',dict(resident=accounts['recipient'],resource=rid,quantity='2',basis='Synthetic delivery'))
         delivery='/v1/evidence/delivery/'+held['id'];settle='/v1/reservations/'+held['id']+'/settle'
         call(settle,dict(basis='No receipt yet'),expected=409)
         call(delivery,statement('2'),role='inspector_a',expected=400)
         call(delivery,statement('2'),role='custodian')
-        call(settle,dict(basis='Only sender confirmed'),expected=409)
+        sender_only=call(settle,dict(basis='Only sender confirmed'),expected=409)
         call(delivery,statement('2'),role='recipient')
-        call(settle,dict(basis='Operator accepts both confirmations'))
-        assert call('/v1/accounts/'+accounts['recipient'])['balance']=='0'
+        receipt=call(settle,dict(basis='Operator accepts both confirmations'))
+        closing=call('/v1/accounts/'+accounts['recipient'])['balance']
+        assert closing=='0'
         case('custodian_and_actual_recipient_required_before_settlement')
         call(path,statement('10','dispute'),role='inspector_a')
-        assert call('/v1/resources/'+rid)['available']=='0'
+        disputed=call('/v1/resources/'+rid)
+        assert disputed['available']=='0'
         case('later_dispute_quarantines_remaining_stock_without_rewriting_receipt')
         report['status']=call('/v1/system/status');assert report['status']['invariants_passed']
+        # Publish comparable observations from the exercise, excluding credentials,
+        # generated identifiers and timestamps that differ between runs.
+        decisions = {
+            'unverified_lot': {'declared_meals': unverified['on_hand'], 'usable_meals': unverified['available'],
+                               'reservation_error': json.loads(stock_refusal)['error']},
+            'verified_lot': {'usable_meals': verified['available'], 'units_per_meal': verified['unit_measure'],
+                             'unfunded_reservation_error': json.loads(balance_refusal)['error']},
+            'treasury': {'before': before, 'over_budget_error': json.loads(over_budget)['error'],
+                         'after_allocation': funded},
+            'delivery': {'reserved_meals': held['quantity'], 'reserved_units': held['amount'],
+                         'sender_only_error': json.loads(sender_only)['error'], 'final_state': receipt['state'],
+                         'settled_units': receipt['amount'], 'resident_closing_balance': closing},
+            'disputed_remainder': {'meals_on_hand': disputed['on_hand'], 'usable_meals': disputed['available']},
+        }
+        (out/'meal-decision.json').write_text(json.dumps(decisions, indent=2)+'\n')
         report['result']='passed'
     except Exception as error:
         report['result']='failed';report['error']=str(error);raise
