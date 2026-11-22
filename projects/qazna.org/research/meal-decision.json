@@ -1,4 +1,51 @@
 {
+  "checkpoints": [
+    {
+      "stage": "Before funding",
+      "treasury": "1000",
+      "resident": "0",
+      "resident_reserved": "0",
+      "provider": "0",
+      "meals_on_hand": "10",
+      "meals_available": "10"
+    },
+    {
+      "stage": "Funded",
+      "treasury": "996",
+      "resident": "4",
+      "resident_reserved": "0",
+      "provider": "0",
+      "meals_on_hand": "10",
+      "meals_available": "10"
+    },
+    {
+      "stage": "Reserved",
+      "treasury": "996",
+      "resident": "4",
+      "resident_reserved": "4",
+      "provider": "0",
+      "meals_on_hand": "10",
+      "meals_available": "8"
+    },
+    {
+      "stage": "Settled",
+      "treasury": "996",
+      "resident": "0",
+      "resident_reserved": "0",
+      "provider": "4",
+      "meals_on_hand": "8",
+      "meals_available": "8"
+    },
+    {
+      "stage": "Disputed stock",
+      "treasury": "996",
+      "resident": "0",
+      "resident_reserved": "0",
+      "provider": "4",
+      "meals_on_hand": "8",
+      "meals_available": "0"
+    }
+  ],
   "unverified_lot": {
     "declared_meals": "100",
     "usable_meals": "0",

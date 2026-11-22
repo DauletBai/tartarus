@@ -4,6 +4,23 @@ Imagine a town where a kitchen can still prepare lunch after automation has redu
 
 Follow one resident and one operator through the working prototype. The exercise starts with **1,000 accounting units in the treasury**, **zero in the resident's account** and a request for **two meals**. Each meal carries a measure of **two units**. You can check every figure in the [record from the demonstration](../research/meal-decision.json).
 
+### How a meal request reaches the provider
+
+```mermaid
+flowchart TD
+    request["A resident needs two meals"] --> stock{"Is verified stock available?"}
+    stock -->|No| supply["Operator checks stock or seeks another supply"]
+    stock -->|Yes| funds{"Does the resident have four units?"}
+    funds -->|Yes| hold["Operator reserves the meals and four units"]
+    funds -->|No| budget{"Can the treasury cover the shortfall?"}
+    budget -->|No| review["Programme team reviews the unfunded need"]
+    budget -->|Yes| allocate["Operator allocates existing units"]
+    allocate --> hold
+    hold --> receipt{"Have provider and resident confirmed delivery?"}
+    receipt -->|Yes| pay["Operator settles payment to the provider"]
+    receipt -->|No| wait["Payment waits for evidence"]
+```
+
 ### 1. Which food can the operator promise?
 
 One supplier entry says **100 meals**. Nobody has confirmed that batch. When the operator tries to reserve even one meal, the system reports insufficient usable stock. An inspector disputes the declaration. A separate batch contains **10 meals**. The first inspector confirms the count. A second inspector confirms it from a separate account. Only then do ten meals appear as available for reservation.
@@ -17,6 +34,22 @@ The operator now tries to reserve two of those ten meals. This time the stop is 
 The provider confirms handing over the meals. The operator tries to settle the payment. The system keeps the reservation open because the resident's confirmation is missing. Once the resident confirms receipt, the operator settles four units to the provider. The resident's closing balance is **zero**, just as it was at the start. The completed receipt tells us what happened between those two balance readings.
 
 Later an inspector disputes the batch. The record still shows **eight meals on hand** but **zero available** for the next reservation. The previous receipt stands. Someone responsible for the programme would need to investigate the eight meals and arrange continuity for anyone waiting. The prototype tests how records behave when people disagree. The physical accuracy of either statement requires evidence outside the software.
+
+### Follow the four units
+
+![The resident holds four units after funding and during reservation. After settlement the provider holds all four, including after the stock dispute.](figures/meal-circulation.svg)
+
+The first four numeric columns below use accounting units. “Of which held” is the part of the resident's balance set aside for this order. The final two columns count meals in the verified batch.
+
+| Stage | Treasury | Resident | Of which held | Provider | Meals on hand | Meals available |
+| --- | ---: | ---: | ---: | ---: | ---: | ---: |
+| Before funding | 1000 | 0 | 0 | 0 | 10 | 10 |
+| Funded | 996 | 4 | 0 | 0 | 10 | 10 |
+| Reserved | 996 | 4 | 4 | 0 | 10 | 8 |
+| Settled | 996 | 0 | 0 | 4 | 8 | 8 |
+| Disputed stock | 996 | 0 | 0 | 4 | 8 | 0 |
+
+Read across the **Reserved** row. The kitchen still has ten meals on hand, two are held for this order, and the provider's balance is still zero. Read down the **Provider** column to see when the transfer takes place. At every stage the treasury, resident and provider balances add to 1,000.
 
 ### What decision can a town take from this?
 

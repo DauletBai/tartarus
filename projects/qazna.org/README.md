@@ -18,6 +18,24 @@ In *Tartar and I*, Daulet Baimurza uses **chrematistics** for an economy that tr
 
 **Qazna today is a research prototype.** The proposed first engagement is a retrospective comparison for one public service. A municipality and a provider can supply an anonymised record of what was needed, available, budgeted and delivered. An evaluator can replay the existing rules and the proposed treasury rule under the same constraints, and see who would have been served on time. A first partner could publish the method and its results for other regions to reproduce. [Partner brief and evaluation terms](docs/pilot-charter.md).
 
+### How the proposed economy connects needs and provision
+
+```mermaid
+flowchart TD
+    needs["People state what they need and choose how to receive it"] --> plan["Plan services and production"]
+    capacity["Verified stock, staff, energy and equipment"] --> plan
+    plan --> match["Match a request with available provision"]
+    treasury["Common treasury allocates existing units where needed"] --> match
+    match --> delivery["Provider delivers and resident confirms receipt"]
+    delivery --> payment["Units move to the provider"]
+    delivery --> review["Compare what people needed with what reached them"]
+    match -->|Unmet need| review
+    review --> plan
+    payment -.->|Later production cycles| capacity
+```
+
+The feedback comes from both completed deliveries and needs still waiting. Payments help providers arrange the next cycle. Each cycle also needs real supplies and people. The [two-meal walkthrough](docs/two-meals.md#follow-the-four-units) follows one request through settlement. The [longer production studies](docs/physical-circulation.md) examine later cycles separately.
+
 ## Why test this now?
 
 - **Access through wages.** Automation can raise output while changing who earns income and how much. The ILO estimated in 2025 that one in four workers worldwide was in an occupation with some exposure to generative AI. It expects changes in job content to be the most common outcome. Qazna's proposed comparison covers stable earnings, reduced hours and local job displacement. [ILO occupational exposure study](https://www.ilo.org/publications/generative-ai-and-jobs-refined-global-index-occupational-exposure).

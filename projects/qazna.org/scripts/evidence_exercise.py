@@ -67,6 +67,22 @@ def run_evidence_exercise(url, out, activate=True):
         reserve=dict(resident=accounts['recipient'],resource=rid,quantity='2',basis='Synthetic basic provision')
         balance_refusal=call('/v1/reservations',reserve,expected=409)
         treasury='00000000-0000-0000-0000-000000000002'
+        checkpoints = []
+
+        def observe(stage):
+            resident = call('/v1/accounts/' + accounts['recipient'])
+            stock = call('/v1/resources/' + rid)
+            checkpoints.append({
+                'stage': stage,
+                'treasury': call('/v1/accounts/' + treasury)['balance'],
+                'resident': resident['balance'],
+                'resident_reserved': resident['reserved'],
+                'provider': call('/v1/accounts/' + accounts['custodian'])['balance'],
+                'meals_on_hand': stock['on_hand'],
+                'meals_available': stock['available'],
+            })
+
+        observe('Before funding')
         before=call('/v1/accounts/'+treasury)['balance']
         allocation=dict(treasury=treasury,resident=accounts['recipient'],period='2026-11-04',category='food',amount='10000',basis='Synthetic reserve insufficiency')
         over_budget=call('/v1/allocations',allocation,expected=409)
@@ -76,8 +92,10 @@ def run_evidence_exercise(url, out, activate=True):
         call('/v1/allocations',allocation)
         funded=call('/v1/accounts/'+treasury)['balance']
         assert int(funded)==int(before)-4
+        observe('Funded')
         case('zero_balance_basic_provision_uses_existing_reserve_without_issuance')
         held=call('/v1/reservations',dict(resident=accounts['recipient'],resource=rid,quantity='2',basis='Synthetic delivery'))
+        observe('Reserved')
         delivery='/v1/evidence/delivery/'+held['id'];settle='/v1/reservations/'+held['id']+'/settle'
         call(settle,dict(basis='No receipt yet'),expected=409)
         call(delivery,statement('2'),role='inspector_a',expected=400)
@@ -87,15 +105,18 @@ def run_evidence_exercise(url, out, activate=True):
         receipt=call(settle,dict(basis='Operator accepts both confirmations'))
         closing=call('/v1/accounts/'+accounts['recipient'])['balance']
         assert closing=='0'
+        observe('Settled')
         case('custodian_and_actual_recipient_required_before_settlement')
         call(path,statement('10','dispute'),role='inspector_a')
         disputed=call('/v1/resources/'+rid)
         assert disputed['available']=='0'
+        observe('Disputed stock')
         case('later_dispute_quarantines_remaining_stock_without_rewriting_receipt')
         report['status']=call('/v1/system/status');assert report['status']['invariants_passed']
         # Publish comparable observations from the exercise, excluding credentials,
         # generated identifiers and timestamps that differ between runs.
         decisions = {
+            'checkpoints': checkpoints,
             'unverified_lot': {'declared_meals': unverified['on_hand'], 'usable_meals': unverified['available'],
                                'reservation_error': json.loads(stock_refusal)['error']},
             'verified_lot': {'usable_meals': verified['available'], 'units_per_meal': verified['unit_measure'],

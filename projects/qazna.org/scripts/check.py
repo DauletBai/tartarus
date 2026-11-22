@@ -5,6 +5,7 @@ Needs PostgreSQL 16+ binaries on PATH, or PG_BIN pointing to their directory.
 Never connects to a user's running cluster. Only removes its own temp directory.
 """
 import os
+import json
 from pathlib import Path
 import shutil
 import subprocess
@@ -14,6 +15,7 @@ from urllib.parse import urlencode
 from smoke import check_restart
 from exercise import run_exercise
 from evidence_exercise import run_evidence_exercise
+from meal_visuals import verify as verify_meal_visuals
 from recovery_check import check_recovery
 from circulation_exercise import run as run_circulation
 
@@ -123,6 +125,7 @@ def main():
             run_evidence_exercise(evidence_url, root / "evidence")
             if (root / "evidence/meal-decision.json").read_bytes() != (ROOT / "research/meal-decision.json").read_bytes():
                 raise SystemExit("The public meal walkthrough differs from the fresh evidence exercise")
+            verify_meal_visuals(json.loads((root / "evidence/meal-decision.json").read_text()))
             check_recovery(pg, root, sock)
             run([pg("createdb"), "-h", str(sock), "-U", "qazna", "circulation_demo"])
             circulation_url = "postgresql://qazna@localhost/circulation_demo?" + urlencode({"host": str(sock)})
