@@ -2469,3 +2469,559 @@ with their prerequisites available. The figures describe an offline replay.
 The final three months consume food stocks without imposing another five-year
 terminal reserve target. Renewal of crops, equipment and materials over the next
 production cycle, and durable operator-approved funding, remain open.
+
+### Sixth-year harvest and reserve renewal
+
+Two 72-month plans branch at period 57 from the published five-year parent.
+Both freeze periods 0–56 and retain the original period-59 floors. The earlier
+63-month bridge remains reproducible. For periods 60–71 the inputs repeat the
+first twelve months' demand, weather-related water budgets and capacities.
+Carried stocks, seed use, expiry and remaining equipment life follow absolute
+time. New sowing is explicitly scheduled in period 63, with harvest in period 68.
+
+| Crop route | Sown hectares | Seed drawn (kg) | Gross harvest (kg) |
+| --- | ---: | ---: | ---: |
+| Rice | 1,445,816 | 260,246,880 | 5,783,264,000 |
+| Oats | 1,136,716 | 136,405,920 | 3,978,506,000 |
+| Feed grain | 5,685,131 | 852,769,650 | 34,110,786,000 |
+
+Each plan delivers 42,623,166,798 gross-equivalent kg in year six. This total
+includes animal feed. Each of nine raw, preserved and delivered stock floors
+is met individually at period 71. Together these floors require 47,025,537,211 kg;
+closing stock is 47,025,545,823 kg. The crop calculation rounds sown area up
+after deducting the seed needed per hectare. Omitting the sowing and rebuilding
+the stock balances causes physical verification to fail.
+
+Twenty factory modules retire in period 60. A previously installed second
+cohort supplies capacity until their replacements arrive in period 63.
+Replacement kits and commissioning produce 1,200 robot cells before their
+predecessors retire. Twenty power modules and twenty warehouse modules arrive
+in period 65, ahead of retirement in 66. Omitting power replacement causes
+verification to fail. Terminal equipment floors match the installed quantities
+at period 59. Every month's capacity is checked as well.
+
+| Same needs and reserve floors | Use remaining packaging ore | Minimize primary extraction |
+| --- | ---: | ---: |
+| Packaging ore used (kg) | 20,000,000 | 18,320,940 |
+| Ore remaining (kg) | 0 | 1,679,060 |
+| Recoverable residue remaining (kg) | 3,442,080 | 7 |
+| Additional packaging waste (g) | 45,957,918,798 | 47,720,931,798 |
+| Existing treasury measure transferred | 214,642,476,940 | 214,642,729,303 |
+
+The lower-extraction case recovers more material from residue, producing more
+explicit waste in that process. For the declared recipes one fewer primary
+batch leaves a 6 kg material shortfall even with all available recovery.
+The original 1,559,457,628,979 accounting ticks cover both schedules. In each,
+436 scheduled events fail under the original account allocation; with 15
+explicit treasury transfers all 767 revised payments settle in order. The
+transfers and payments are offline replay evidence. The [reviewed funding workflow](architecture.md#reviewed-treasury-funding)
+now reproduces the same allocations and closing accounts.
+
+The follow-on bound converts all remaining ore and residue using the declared
+integer yields, adds stored recovered material and counts only finished
+packaging above its protected floor. It allows immediate processing with
+unlimited capacity. Both variants can supply at most 1,376,833,202 packaging ticks
+above the protected floor against 42,623,166,798 ticks of repeated use. At least
+41,246,333,596 ticks must therefore come from a changed design or another source.
+The difference from sixth-year packaging use is thus a
+lower bound on the shortfall for a seventh year with identical use and floor.
+Full results and quantities are in
+[the extended fixture](../fixtures/extended-scenario.json) under
+`reference.recurrence.sixth_year_harvest`.
+
+### Population demand and supply deadlines
+
+The fixed five-year production schedule and the age-based projection have
+different food targets even in their first month, when all three variants have
+the same 100 million people. To isolate the mismatch we crossed three population
+paths with three declared levels of need per person. The 18 resource-specific
+traces cover rice and oats separately in gross-equivalent kg. Other population
+items retain their existing mapped, unmapped or unknown status.
+
+| Reference population and central need | Five-year target (kg) | Minimum extra arrivals with fixed production (kg) | Any schedule, at least this much extra by January 2027 (kg) |
+| --- | ---: | ---: | ---: |
+| Rice component | 50,244,382,315 | 22,629,250,700 | 369,161,052 |
+| Oats component | 30,103,767,854 | 10,893,241,509 | 175,884,210 |
+
+The first calculation holds all production and intermediate use fixed. From the
+verified baseline, reconstruct net inflow after those uses in period t as
+closing minus previous closing plus delivery plus discard. Start from the
+original stock. Deduct the new demand. If stock would fall below its reserve,
+record the exact missing arrival. Carry all remaining stock up to the store
+capacity. Keeping every available unit up to capacity maximizes what can be
+used later. Moving an extra arrival earlier cannot lower the total required
+and can increase overflow. This yields the exact minimum for this single-store
+balance with timely arrivals and free disposal. The whole network also has
+expiry, transport and shared storage constraints, so the result is a lower
+bound on what that network would require **with the same production flows**.
+
+The second calculation allows all process starts to change. At each deadline,
+compare cumulative demand plus that date's reserve with opening stock, declared
+external supply to date and the maximum gross output of all processes that can
+finish by then. Gross output uses the capacity at the start date and each
+process's lead time. Dropping other input and shared-capacity constraints can
+only increase this upper bound. A positive difference therefore proves a
+shortfall for every schedule with those conditions. A zero difference leaves
+feasibility open. The report retains the largest difference and its deadline.
+
+In January no new production start can reach either delivery node in time.
+Available quantities are 469,078,948 kg and 326,315,790 kg against requirements
+of 838,240,000 kg and 502,200,000 kg respectively. Subsequent arrivals cannot
+satisfy this earlier deadline. Across the nine combinations, both components
+already require additional January supply. The result concerns the project's
+two supply nodes and assumed needs. The following experiment tests one change to these opening conditions.
+The requirements are diagnostics and create no stock or monetary postings.
+
+### January provision from the previous harvest
+
+Take the first twelve months of the existing 60-month production model as
+January–December 2026. The population study starts in January 2027, now
+period 12 of the production model. Retain all initial endowments, baseline
+deliveries outside the two January items, store limits, shared capacity and
+terminal reserves. No external shipment is inserted at the January boundary.
+
+| Additional production needed for January | Rice component | Oats component |
+| --- | ---: | ---: |
+| April sowing (ha) | 96,640 | 52,037 |
+| Seed consumed (kg) | 17,395,200 | 6,244,440 |
+| September harvest (gross-equivalent kg) | 386,560,000 | 182,129,500 |
+| Additional November preservation and December dispatch (gross-equivalent kg) | 369,161,052 | 175,884,210 |
+| December closing stock at destination (kg) | 0 | 0 |
+| All December shipments due in January (gross-equivalent kg) | 838,240,000 | 502,200,000 |
+
+Each hectare contributes harvest less its seed consumption. Round the required
+area up separately for each crop. The whole graph then determines whether
+the seed is available in April and whether water, work, packaging, fuel and
+transport are available at their own deadlines. The revised energy schedule
+extracts 1,091,182 additional fuel units over the horizon.
+
+The January checkpoint distinguishes food physically on the destination shelf
+at December close from consignments due in January. The verified plan counts
+each consignment once. Removing one kilogram from the December rice dispatch
+breaks January provision. Adding it to the reported December closing stock
+also fails independent replay.
+
+The cash consequence appears much later. With the original account openings,
+5,724 of 5,740 scheduled movements settle. The first blocked movement occurs
+in period 57 (October 2030 on this calendar). Six transfers from the existing
+treasury balance at that boundary total 2,727,408,674 accounting ticks.
+Replaying the funded variant settles all 5,746 movements, including the six
+transfers, and preserves the balances already committed through period 56.
+The aggregate opening and closing balances both equal 1,559,457,628,979 ticks.
+
+This establishes a way to cover **one January**. Only that month's two needs
+come from the central population projection. The other months retain the
+original production scenario's needs. A complete 2027–2031 test will require
+the predecessor year followed by all sixty months of population demand.
+See `reference.january_opening` in the [extended fixture](../fixtures/extended-scenario.json).
+
+#### How much land would all sixty months require?
+
+For this separate bound, use the original five sowings and restore the original
+stocks of raw, preserved and delivered food at the end. Preserve the original
+feed requirement and assume zero external food supply. Add the stock balances
+for the three forms of each crop. Preservation and transport transfer units
+between forms. Only sowing produces a positive net addition; its yield is
+harvest less seed. Divide required deliveries by the greatest net yield per
+hectare and round up for each crop. The three crops occupy the same land pool
+and can only be sown on the same five dates.
+
+| Crop | Required deliveries over five years (kg) | Net kg per hectare | At least this many hectare-seasons |
+| --- | ---: | ---: | ---: |
+| Rice | 50,244,382,315 | 3,820 | 13,152,980 |
+| Oats | 30,103,767,854 | 3,380 | 8,906,441 |
+| Feed | 166,290,176,030 | 5,850 | 28,425,672 |
+| **Total** | | | **50,485,093** |
+
+The five sowings offer 46,298,965 hectare-seasons. The gap is **at least
+4,186,128 hectare-seasons** even before irrigation, transport, expiry and shared
+labour are imposed. A hectare-season is one hectare available for one sowing.
+A preceding harvest can bridge the January deadline. Extending that success
+to five years requires an explicit change to land, yields, external supply,
+or another stated assumption. This bound concerns the model's land pool.
+
+### Five years of deliveries under field rotation
+
+The crop study follows January 2026 through December 2031 with one continuous
+inventory. The predecessor year retains the baseline food needs. From January
+2027 it uses all 60 central population targets for rice and oats and the
+original monthly feed requirements. Total target-period deliveries are
+50,244,382,315 kg of rice component, 30,103,767,854 kg of oats component and
+166,290,176,030 kg of feed equivalent. All values use the original gross-equivalent
+grain units.
+
+Four permanent, nearly equal field groups each follow this sequence:
+
+1. One season of dry fallow.
+2. A season for rice or oats.
+3. A feed-grain season.
+4. A flexible grain season.
+
+The groups start in different phases. Previous years are assumed to follow the
+same sequence. The model assigns no food, water demand or fertility benefit
+to fallow. Feed is a grain equivalent whose species is unspecified. This
+grain–fallow rotation is a test policy. Regional alternatives such as
+legume rotations would need their own seeds, outputs, water and evidence.
+FAO describes how species diversification affects soil and pest management,
+and how water needs vary with crop, climate and growth stage.
+[FAO on crop diversity](https://www.fao.org/conservation-agriculture/in-practice/species-diversification/en/)
+and [FAO on crop water needs](https://www.fao.org/4/s2022e/s2022e07.htm).
+
+| Gross harvest per hectare | Total land for this schedule, including fallow (ha) | Highest monthly field withdrawal (m³) | Months above original water limit, out of 72 |
+| --- | ---: | ---: | ---: |
+| Reference | 14,043,063 | 10,507,078,000 | 6 |
+| 20% higher | 11,702,552 | 8,755,898,000 | 0 |
+| 15% lower | 16,521,248 | 12,361,268,000 | 12 |
+
+The original pool contains 9,259,793 ha and allows 9,259,793,000 m³ per
+month. All three schedules reach their water peak in June 2031. For the
+reference yield the candidate adds 4,783,270 ha and needs an extra
+1,247,285,000 m³ that June. Raising gross yield by 20% at unchanged stage
+water per hectare and seed rates removes every water overrun in this case.
+The area still exceeds the original pool by 2,442,759 ha. The yield changes
+are sensitivity tests; they assume no particular technology for achieving them.
+
+The producer works backwards from September harvests, reserving seed for
+the following April and restoring the original stocks of raw, preserved
+and delivered grain at the terminal date. The monthly replay works forwards
+from the original stocks. It charges seed at sowing, counts five stages of
+irrigation at their actual dates, and allows one month each for preservation
+and dispatch. The dated audit preserves the original expiry date on transfer.
+All three cases meet the 60 deadlines at the displayed land and sufficient
+monthly water, with zero expired grain and zero grain in transit at the end.
+The calculated area is the minimum for **these annual sowings and field
+phases**. Different inter-year stock targets or crop calendars could change it.
+
+A separate limit applies to *every* sowing schedule on the original land
+under these phase and stock rules. Sum the predecessor-year and five target
+years' demand, divide each grain's total by gross yield less seed and round up
+to hectares for each crop. With restored terminal stocks and no imports, the
+reference needs at least 58,752,763 sown hectare-seasons across six seasons.
+Even allowing every active field to grow any grain, the rotation leaves only
+41,669,068 available. The gap is at least 17,083,695 hectare-seasons. Water
+alone caps the same six sowings at 55,558,758 hectare-seasons before any
+land restrictions. The two shortages overlap and cannot be added.
+
+The agricultural balance includes finite grain stores and manual-route
+throughput. Shared workers, power, packaging, transport equipment and money
+for the increased flows still need a joint replay. Salinity, soil nutrient
+balances, field-specific crop suitability, cover crops, and field measurements
+of rainfall, yields and irrigation efficiency remain open inputs.
+[Monthly results and field assignments](../research/field-rotation.json).
+
+### Shared inputs for the six grain seasons
+
+Repeating the original upstream starts for the predecessor year changes the result.
+Keep the original opening balances once, charge non-food starts and mature their
+outputs after the original lead times. Even the hand-operated packing and
+dispatch routes draw 578,522,985,994 energy ticks and 289,261,492,997 wrapping
+ticks. The proposed upstream starts can supply those amounts on paper. In
+January 2031 they begin to overdraw the finite source of packaging ore. By
+December the schedule has requested 100,000,000 kg more ore than exists.
+
+A second run caps extraction, residue recovery and wrapper fabrication by the
+actual material available each month. The revised schedule preserves every grain
+order and the original per-route throughput limits. The lowest wrapper balance
+is 4,379,950,217 ticks; the scheduled shared human work fits in every month.
+The power supply behind that balance still needs functioning equipment. Applying
+the original commissioning delays and service lives to the 72-month calendar
+finds 37 equipment-capacity overruns in 18 months, starting with generation in
+July 2027. At the reference yield, constructed grain storage first falls short
+by 14,222,402,620 kg in July 2028. These are failures of a particular timetable.
+The following run moves construction ahead of those dates. The earlier schedules
+remain in the [published results](../research/field-rotation.json) for comparison.
+
+### Scheduling construction and payments together
+
+For each of the three yields, the model retains the field assignments, monthly
+water requirement, grain deliveries and finite packaging inputs. It works back
+from each month's load and the remaining lives of the operating modules. Five
+generator modules must start in March 2027 to meet July demand. Three warehouse
+modules must start in March 2028 to store the July harvest. Delaying just one
+module in either group by one month breaches capacity in July of that year.
+The calculation schedules factories after the other projects so it can include
+the factory capacity needed for construction itself.
+
+All three schedules carry the resource balances through 72 months. Across the
+six years each builds 34 power, 30 factory, 32 warehouse, 26 training and
+28 extraction modules. December 2031 ends with 20 operating modules of each
+type, zero expired grain over the run and zero grain in transit. The results
+include the retirement dates of surviving cohorts to support a subsequent plan.
+They cover the selected grain chains under the stated expanded land and
+irrigation. Continuing supply beyond 2031 requires a new material balance.
+
+The payment replay starts in January 2026 with 1,559,457,628,979 accounting
+ticks across all accounts. The original distribution settles 4,028 of 4,524
+scheduled payments and first blocks in March 2030. At that boundary the
+treasury holds 1,010,781,277,883 ticks. A continuation transfers 111,811,429,918
+existing ticks to 16 accounts. All 4,540 payments including the transfers then
+settle. The first 50 months retain their exact account balances, and the final
+total equals the opening total. This is an offline calculation for operator
+review. [Monthly starts, cohort dates and account evidence](../research/field-rotation.json).
+
+### Packaging after December 2031
+
+The verified grain plan closes with 234,738,507,003 g of ready wrapping.
+Primary packaging ore, clean feedstock and recoverable extraction residue are
+exhausted. The 397,261,492,997 g recorded as historical waste remain excluded
+from collection. No jobs are in transit at the boundary. One packaging tick
+represents one gram in these recipes. The continuation repeats the twelve
+2031 monthly grain orders as a wrapping workload of 49,555,950,366 g per year.
+This assumption separates packaging continuity from the next harvest forecast.
+
+Stock alone covers all of 2032 and closes that year at 185,182,556,637 g.
+With an 8,000,000,000 g operating reserve throughout the continuation, the
+first additional requirement is 253,254,737 g in July 2036. Spending through
+the reserve postpones the first unfilled order until September 2036. By
+December 2037 the extra ready supply needed to protect the reserve reaches
+70,597,195,193 g. A separate sixth-year fixture elsewhere in this chapter has
+different opening stocks, production routes and grain targets.
+
+| Collection from used wrappers | Clean output per 100 kg collected and sorted | Latest first collection covering the plan through 2037 | Extra ready supply with a one-month delay |
+| --- | ---: | --- | ---: |
+| 100% | 40 kg | Even a February 2032 start needs 16,131,115,193 g of extra supply | — |
+| 95% | 80 kg | December 2032 | 1,571,755,193 g |
+| 98% | 95 kg | April 2033 | 1,329,180,193 g |
+
+The search tries every possible monthly start on the same processing policy.
+A wrapper issued in January can be collected in February, sorted material
+can reach fabrication in March, and finished wrapping becomes available in
+April. Missed collection and sorting rejects leave the recoverable stream.
+Whole sorting lots, unused grams, work in progress and any extra supply
+are carried in the monthly mass balance. Each month's sum equals the
+opening material plus explicitly counted additions.
+
+The captured shares and clean yields are design targets. The 40% case
+borrows the extraction-residue yield as a comparison. All sorting cases
+use its processing allowance per kg and the existing fabrication recipe.
+Surviving factories supply capacity until ten retire in January 2034 and
+the final ten in December 2034. No replacement or new energy supply is
+assumed. The balances also report the effect of limiting monthly collection
+to 90% of the selected schedule's peak. For the December 2032 start, peak
+collection is 4,003 tonnes per month. A cap of 3,603 tonnes per month
+(rounded for display) leaves 4,307 tonnes of extra ready wrapping to source
+through 2037. Other users of factory slots and
+labour, haul distances and energy, suitability for contact with food, and
+shelf life of unused wrapping still require validation before the route can
+be included in the joint food and payment plan.
+[Monthly packaging balances and collection sensitivity](../research/field-rotation.json).
+
+### Grain deliveries and return freight for wrapping
+
+An outbound vehicle carries up to 20 tonnes of grain. After one month it reaches
+a receiving point, where a compatible vehicle can take up to 10 tonnes of used
+wrapping on its return trip. Returned material reaches the sorter the following
+month. The comparison starts with no inherited freight in transit. It uses the
+same 2031 monthly quantities for dispatch in 2032–2037, captures 95% of available
+wrapping, and recovers 80 kg of clean material per 100 kg sorted. February can use
+vehicles that left in January. December 2037 departures are still on the road
+at the boundary. Compatibility covers destination, loading space and timing.
+Payload and compatibility are parameters for testing possible routes.
+
+| Compatible per 10,000 arriving grain trips | Extra wrapping for a December 2032 launch, tonnes | Latest launch avoiding extra wrapping through 2037 |
+| ---: | ---: | --- |
+| 0 | 70,597 | No feasible start |
+| 10 | 34,365 | No feasible start |
+| 20 | 1,570 | November 2032 |
+| 25 | 1,570 | November 2032 |
+| 25, with all December 2032 returns cancelled | 4,669 | October 2032 |
+
+A December launch works in the earlier experiment with immediate access to the
+sorter. Giving the return trip its travel time moves the deadline forward one
+month even when there is ample payload. Increasing compatibility from 20 to 25
+per 10,000 has no effect on the shortfall at that launch date. For the 25 case
+the report includes all 72 months for both the December failure and the revised
+November schedule.
+
+Outbound grain, return loads and the sorting and fabrication jobs draw on the
+same stock of energy and the same monthly labour allowance. Vehicles round up
+to whole trips and loaded returns round up to whole kg for resource charges.
+The experiment applies the existing manual dispatch coefficients of one energy
+tick and four work ticks per loaded kg in both directions. These are model units.
+Factory slots are charged once for sorting and fabrication. For the December
+launch with 25 compatible trips per 10,000, opening energy first runs short
+in February 2036. The six-year additional requirement is 92,297,734,513 energy
+ticks. Moving collection to November closes the wrapping gap and brings the
+additional energy requirement to 92,305,737,264 ticks, beginning in the same
+month. The report records this missing supply in each affected month. A
+zero wrapping shortfall therefore still requires an energy plan. Physical
+fleet deployment, route distances, volume limits for actual materials, measured
+energy, upstream generation and payments remain to be verified.
+[Transport and material balances](../research/field-rotation.json).
+
+### Energy supply for grain freight
+
+The November collection schedule fixes the monthly grain dispatches, loaded
+returns and wrapping work through December 2037. They require 297,524,918,965
+energy ticks. Without generation the opening 205,219,181,701 ticks first fall
+short in February 2036. The last inherited generators retire in December
+2033. The date of the first missed delivery therefore gives insufficient
+notice to run these machines.
+
+Each extraction batch consumes one tick of energy and one unit of the finite
+deposit. The fuel arrives the following month. Each generation batch consumes
+one unit of extracted fuel and adds 1,000 energy ticks the following month.
+The 62,852,781 units of opening extracted fuel include a protected 60,000,000.
+For a six-year load D, opening energy E and spendable fuel F, the smallest
+whole-batch count G must satisfy
+
+```text
+X = max(0, G - F)
+E + 1000 G >= D + X
+```
+
+Here X counts extraction batches. The aggregate bound gives 92,395,280
+generation batches and 89,542,499 extractions. The calendar tests whether
+these quantities can actually arrive on time. It uses surviving equipment,
+the inherited seasonal process limits and the labour left after transport
+and wrapping. A batch cannot consume its own future output.
+
+| Energy schedule | First uncovered load | Unserved energy ticks through 2037 |
+| --- | --- | ---: |
+| Opening stock only | February 2036 | 92,305,737,264 |
+| Start extraction and generation in July 2033 | None | 0 |
+| Delay both by one month | July 2037 | 21,542,498,763 |
+| July start, lose all generation in August 2033 | July 2037 | 21,542,498,763 |
+| Move the start to June with the same August outage | None | 0 |
+
+The July schedule mines in July and August and generates through November.
+Its final energy arrives in December 2033. At the end of 2037 it retains
+237 energy ticks, the fuel reserve and 141,501,196 units of unextracted
+deposit. No generator construction is needed within this case.
+
+Storage determines how to interpret this result. At a loss of one tick
+per thousand of the carried balance each month, the original production
+target leaves 8,444,551,313 ticks unserved, starting in October 2037.
+A separate run increases the scheduled batch count by 10% and tests the
+same loss with the same finite deposit. Starting in June 2033, it extracts
+98,782,027 units, runs 101,634,808 generation batches and serves every month
+with 241,712,982 energy ticks left in December 2037. This is a feasible
+margin under that loss assumption. The report includes monthly stocks,
+losses and lead times for both successful runs. The loss rate is a
+sensitivity. Real storage duration, conversion efficiency, discharge power,
+distances, competing loads and post-2031 payments still need to be specified.
+[Energy and freight schedules](../research/field-rotation.json).
+
+### Storing fuel and renewing power modules
+
+Two schedules serve the same 72 months of grain deliveries, returns and wrapper
+processing. Both inherit the funded December 2031 checkpoint. Both lose one
+thousandth of each carried energy balance monthly, protect 60,000,000 units of
+extracted fuel and target at least 241,712,982 closing energy ticks. Fuel retains
+its quantity in storage. The energy-storage case repeats the previous 10%
+generation-margin schedule.
+
+| Six-year quantity | Store energy | Store fuel |
+| --- | ---: | ---: |
+| Fuel extracted | 98,782,027 | 95,363,571 |
+| Generation batches | 101,634,808 | 98,216,352 |
+| Energy lost in storage | 8,988,575,727 | 5,570,537,526 |
+| Maximum extracted fuel on hand before generation | 126,782,027 | 158,216,352 |
+| New power modules | 0 | 3 |
+| Construction material / energy | 0 / 0 | 30,000 / 3,000,000 |
+| Extraction, generation and construction work | 200,416,835 | 193,582,923 |
+| Closing energy | 241,712,982 | 241,713,639 |
+
+In the fuel strategy the inherited extractors mine in April and May 2034.
+Construction starts in November 2034, the last month with available factory
+capacity. Modules complete in February 2035, can operate from March and retire
+in March 2037. The first generation starts in October 2035 and the last in
+February 2037. The remaining ten delivery months draw on an energy reserve.
+Integer rounding accounts for the 657 ticks above the closing target.
+
+The sizing calculation searches whole module counts at that construction date.
+It works backwards from December 2037 to find the least carried energy each
+month needs given the following month's output limit. A forward replay charges
+all construction inputs, mining, shared labour and monthly storage losses.
+Batches arrive one month after their starts. This compares two specific
+schedules. Fuel storage capacity and leakage, generator maintenance, real
+power and energy densities may change the ordering.
+
+**Settlement.** The opening accounts come from the funded six-season run.
+The treasury holds 1,353,598,085,941 of the system's 1,559,457,628,979
+accounting units. Outbound haul energy is charged to each grain delivery
+operator, return energy to the recovery operator. The comparison includes
+wrapping inputs, fuel production inputs and payment for completed generators
+at the fixture's existing norms. Food purchase, other sectors' claims on the
+treasury and compensation for individual labour are outside this service
+calculation. Labour availability is checked in physical units.
+
+Both schedules first miss a rice haul energy payment of 862,532,511 in January
+2032 under the inherited account distribution. The exact opening allocation
+from treasury to the seven short accounts is 178,806,691,946 for storing energy
+and 178,799,855,034 for storing fuel. With these transfers, all 643 and 673
+payments respectively settle on their scheduled dates, including the seven
+opening transfers. The six-year total balance stays constant. The report gives
+monthly settlement counts, turnover and treasury closing balances for both
+strategies. [Physical and monetary schedules](../research/field-rotation.json).
+
+### Greenhouse, freshwater and coastal production
+
+One operating district orders 1,000 kg of lettuce, 500 kg of fish fillet and
+300 kg of shellfish meat each month in 2027–2031. The routes serve the same
+orders. Finfish require 1,000 kg live harvest and 1,200 kg of contracted
+compound feed per month. Feed is an external district input; integrating the
+district into the national graph requires a matching draw from feed production.
+The coastal partner ships edible product after processing. The three commodities
+retain their identities throughout. [Inputs](../fixtures/food-technologies.json)
+and [ten five-year cases](../research/food-technologies.json).
+
+For an annual order of 12,000 kg of lettuce, the reference comparison gives
+293 m² of greenhouse growing area or 3,077 m² in the open field, using 240 or
+3,000 m³ of water per year respectively. Barbosa and colleagues compared a
+modeled hydroponic greenhouse with conventional lettuce production in Arizona.
+These are growing areas; access roads, plant rooms, feed, construction and
+off-site energy also need space. The open-field figure is an annual equivalent.
+Winter lettuce provision in Kazakhstan needs a regional season and energy
+balance. The district reports monthly heat separately from electricity.
+[Original lettuce study](https://doi.org/10.3390/ijerph120606879).
+
+| Production route | Result for the selected orders | Operational consequence |
+| --- | --- | --- |
+| Hydroponic greenhouse and freshwater recirculating aquaculture (RAS) | 220 m³/month of make-up water. A well supplies it with 245 m³/month of raw water at 90% yield. | At 40 m dynamic head, pumping and treatment take 39 + 98 kWh/month. A modeled 4 kW life-support load needs 32 kWh for eight hours, exceeding the usable backup by 8 kWh. |
+| Treated fish water supplied to the greenhouse | Polishing 25 m³/month of separately collected purge supplies 20 m³/month to plants. Raw well withdrawals fall from 14,700 to 13,380 m³ over five years. | Total site electricity rises by 180 kWh over the same period. Eligibility depends on verified water quality. Fertilizer substitution would require a separate nutrient balance. |
+| Flow-through freshwater farm | A 5,000 m³/month gross river intake exceeds summer allocations in ten months. | The model caps the combined well and river draw. Discharge quality, downstream rights and site-specific stream depletion also constrain operation. Gross intake and consumption have different meanings. |
+| Marine shellfish from a coastal partner | A three-month annual closure leaves 3,000 kg of orders uncovered over five years under the regular stock policy. | With the same initial 300 kg, a 900 kg inland depot and orders placed before closure, all 18,000 kg are supplied. Freight stays within 240,000 kg·km/month and closing stock is 300 kg. |
+| Delivered water for the same RAS and greenhouse orders | Delivering 220 m³/month over 35 km adds 462,000 loaded tonne-km in five years. | The comparison assumes equal quality at delivery. A carrier's vehicle energy, empty return journey and source treatment belong in its delivered cost. |
+
+Recirculating systems require aeration, treatment and reliable power.
+A qualifying purge stream is limited by fish make-up, polishing yield,
+accepted quantity and plant demand. Marine bivalve grow-out can use naturally
+available feed; the scenario presupposes a mature licensed partner, released
+lots and cold transport. It assigns no marine production to an inland river or
+to the Caspian. Production envelopes exclude farm start-up, mortality, seed
+supply and biological growth scheduling. The diagnostic replays resource
+requirements even after a shortfall so each cause remains visible.
+[FAO on recirculation](https://www.fao.org/4/x5744e/x5744e0g.htm),
+[FAO on integrated fish and plant farming](https://www.fao.org/family-farming/detail/en/c/1743021/)
+and [NOAA on marine aquaculture inputs](https://www.fisheries.noaa.gov/s3/2022-03/Fact-Sheet-Aquaculture-and-Environmental-Interactions.pdf).
+
+**When a local well saves resources.** Raw pumping is bounded by mechanical
+capacity, the gross allocation, the shared basin allowance and water available
+above the protected stock. The aquifer balance carries between seasons.
+Halving the available net inflow first leaves 40 m³ of make-up water uncovered
+in June 2027. Multiplying total dynamic head by four raises pumping demand and
+exceeds district electric capacity by 54 kWh per month. Site selection requires
+a pumping test, seasonal drawdown and recovery, chemical analysis, competing
+withdrawals and an approved withdrawal and discharge envelope. Wells connected
+to rivers can reduce streamflow with a lag. [USGS on streamflow depletion by wells](https://pubs.usgs.gov/circ/1376/).
+
+A five-year break-even test uses resource values in consistent units. For the
+separate well and RAS route let F be the site's fixed five-year well, treatment,
+maintenance and retirement cost net of residual value, E the cost per kWh and V
+other variable costs per raw m³ (including lawful disposal). Compare
+**F + 8,220 E + 14,700 V** with **13,200 S + 462,000 T**, where S is the
+source cost per treated m³ and T the all-in haul cost per loaded tonne-km.
+A nearby pipeline needs its own construction, pumping, leakage and maintenance
+figures. Drilling becomes a candidate when it meets the physical constraints
+and its full cost falls below the available alternative. Local cost observations
+are needed to quote savings in tenge.
+
+Further routes can enter this comparison with measured inputs. For vertical
+or aeroponic farming, supply lighting, cooling, uptime and total floor area.
+For marine finfish add feed, species-specific conditions, farm limits and
+shipping. For algae supply a permitted site, edible yield, processing and an
+order for that particular food. For irrigated fields retain sowing windows,
+rotation, application losses and soil salinity. Automated climate, irrigation,
+oxygen and feeder controls need staff, sensors, maintenance and a tested
+power-loss response. [USDA research on controlled environments](https://www.ers.usda.gov/sites/default/files/_laserfiche/publications/108221/EIB-264.pdf).

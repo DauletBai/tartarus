@@ -5,6 +5,7 @@ Needs PostgreSQL 16+ binaries on PATH, or PG_BIN pointing to their directory.
 Never connects to a user's running cluster. Only removes its own temp directory.
 """
 import os
+import json
 from pathlib import Path
 import shutil
 import subprocess
@@ -14,6 +15,7 @@ from urllib.parse import urlencode
 from smoke import check_restart
 from exercise import run_exercise
 from evidence_exercise import run_evidence_exercise
+from meal_visuals import verify as verify_meal_visuals
 from recovery_check import check_recovery
 from circulation_exercise import run as run_circulation
 
@@ -61,6 +63,18 @@ def main():
         run(["cargo", "run", "--locked", "--release", "--example", "extended_scenario", "--", str(target)])
         if target.read_bytes() != (ROOT / "fixtures/extended-scenario.json").read_bytes():
             raise SystemExit("Extended scenario differs from reproducible calculation")
+    run(["cargo", "test", "--locked", "--example", "field_rotation"])
+    with tempfile.TemporaryDirectory(prefix="qazna-rotation-") as directory:
+        report = Path(directory) / "field-rotation.json"
+        run(["cargo", "run", "--locked", "--example", "field_rotation", "--", str(report)])
+        if report.read_bytes() != (ROOT / "research/field-rotation.json").read_bytes():
+            raise SystemExit("Field rotation results differ from reproducible calculation")
+    run(["cargo", "test", "--locked", "--example", "food_technologies"])
+    with tempfile.TemporaryDirectory(prefix="qazna-food-tech-") as directory:
+        report = Path(directory) / "food-technologies.json"
+        run(["cargo", "run", "--locked", "--example", "food_technologies", "--", str(report)])
+        if report.read_bytes() != (ROOT / "research/food-technologies.json").read_bytes():
+            raise SystemExit("Food technology results differ from reproducible calculation")
     with tempfile.TemporaryDirectory(prefix="qazna-population-") as directory:
         fixture, report = Path(directory) / "population-study.json", Path(directory) / "population-results.json"
         run(["cargo", "run", "--locked", "--release", "--example", "population_study", "--", str(fixture), str(report)])
@@ -109,6 +123,9 @@ def main():
             run([str(ROOT / "target/debug/qazna"), "migrate"], env=dict(env, DATABASE_URL=evidence_url))
             run([pg("psql"), "-h", str(sock), "-U", "qazna", "-d", "evidence_demo", "-v", "ON_ERROR_STOP=1", "-f", "fixtures/demo.sql"], stdout=subprocess.DEVNULL)
             run_evidence_exercise(evidence_url, root / "evidence")
+            if (root / "evidence/meal-decision.json").read_bytes() != (ROOT / "research/meal-decision.json").read_bytes():
+                raise SystemExit("The public meal walkthrough differs from the fresh evidence exercise")
+            verify_meal_visuals(json.loads((root / "evidence/meal-decision.json").read_text()))
             check_recovery(pg, root, sock)
             run([pg("createdb"), "-h", str(sock), "-U", "qazna", "circulation_demo"])
             circulation_url = "postgresql://qazna@localhost/circulation_demo?" + urlencode({"host": str(sock)})

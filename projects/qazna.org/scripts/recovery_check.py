@@ -52,7 +52,7 @@ def check_recovery(pg, root, socket_dir, source='evidence_demo'):
     assert sql(restored, "SELECT count(*) FROM evidence_enforcement").strip() == '1'
     assert sql(restored, "SELECT count(*) FROM dated_scenario_outcomes").strip() == '2'
     assert sql(restored, "SELECT count(*) FROM model_scenario_outcomes").strip() == '10'
-    assert sql(restored, "SELECT count(*) FROM coupled_scenario_outcomes").strip() == '4'
+    assert sql(restored, "SELECT count(*) FROM coupled_scenario_outcomes").strip() == '6'
     assert sql(restored, "SELECT count(*) FROM service_incidents").strip() == '7'
     assert sql(restored, "SELECT count(*) FROM service_incident_plans").strip() == '1'
     assert sql(restored, "SELECT count(*) FROM service_incident_supersessions").strip() == '3'

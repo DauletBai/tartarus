@@ -1,5 +1,59 @@
 # Qazna changelog
 
+## Fuel storage, generator renewal and freight payments — 21 November 2026
+
+- Compare early generation with fuel storage and later commissioning. Publish
+  physical balances, dated service payments, the first missed payment and the
+  treasury transfers required to settle both schedules.
+
+## Energy supply for freight — 21 November 2026
+
+- Supply the six-year grain transport and wrapping timetable from finite fuel.
+  Compare the latest feasible start, a generator outage, a delay and energy
+  storage losses with and without additional production.
+
+## Grain return freight — 20 November 2026
+
+- Couple collection to arriving grain trucks and carry used wrapping to the sorter.
+  Compare route compatibility, a missed collection month and the resulting dated
+  energy requirement.
+
+## Packaging stock and collection after 2031 — 20 November 2026
+
+- Carry the three grain cases into a common packaging balance through 2037.
+  Quantify reserve depletion, material yield, collection deadlines and the effect
+  of a smaller collection route under the actual factory retirement dates.
+
+## Grain deliveries, asset replacement and treasury circulation — 20 November 2026
+
+- Schedule construction against dated capacity and storage requirements across six grain seasons. Replay the same physical schedule and account balances through the first blocked payment and a funded continuation.
+- Preserve both failure cases. Delaying one generator or warehouse module by one month misses a physical deadline. The original cash distribution misses a payment in March 2030.
+
+## Food production routes and local water — 19 November 2026
+
+- Compare greenhouse, freshwater recirculation, treated water reuse, flow-through fish farming and coastal shellfish supply over 60 months. Model well and basin limits, backup power and advance orders through seasonal closures.
+- Carry finite packaging inputs through six crop seasons and identify dated equipment and grain-storage shortfalls.
+
+## Five-year field rotation — 19 November 2026
+
+- Replay grain demand across six sowings with phased fixed fields, monthly irrigation, seed and dated delivery. Compare three yields and quantify the gap at original capacity.
+
+## January provision from the preceding harvest — 19 November 2026
+
+- Verify sowing, preservation, transport and January receipts against central population demand for two food components; replay the revised monetary schedule with its existing opening balances.
+
+## Population demand and supply deadlines — 19 November 2026
+
+- Quantify additional physical arrivals under fixed production and check for deadlines that remain impossible under any admissible production timing. Compare 18 commodity and demand combinations over the five-year plan.
+
+## Reviewed treasury funding — 19 November 2026
+
+- Persist operator-reviewed allocations in coupled versions, recheck both heads before approval and retain the exact funded history through retry and recovery.
+
+## Sixth-year harvest and renewal — 19 November 2026
+
+- Verify annual food flows, terminal reserves, capital replacement and explicit treasury funding across 72 months. Compare two packaging policies and bound their remaining physical capacity.
+
 ## Cross-boundary production — 19 November 2026
 
 - Verify three additional months of food provision and replay the revised payments from carried balances with eight explicit treasury transfers.

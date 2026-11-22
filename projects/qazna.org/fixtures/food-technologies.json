@@ -1,0 +1,11 @@
+{
+  "basis": "Operating district demonstration. Monthly orders and capacity envelopes are design inputs. Lettuce land and make-up water comparison uses Barbosa et al. (2015), rounded. All other rates are scenario assumptions, not surveyed Kazakhstan sites.",
+  "first_year": 2027,
+  "months": 60,
+  "monthly_orders_kg": {"lettuce": 1000, "fish_fillet": 500, "shellfish_meat": 300},
+  "lettuce": {"hydroponic_l_per_kg": 20, "field_l_per_kg": 250, "greenhouse_yield_tenths_kg_per_m2_year": 410, "field_yield_tenths_kg_per_m2_year": 39, "electric_wh_per_kg": 3500, "heat_kwh_per_kg_by_month": [18,16,12,8,4,2,2,3,6,10,14,18]},
+  "fish": {"edible_percent": 50, "feed_g_per_live_kg": 1200, "ras_makeup_l_per_live_kg": 200, "river_gross_l_per_live_kg": 5000, "ras_electric_wh_per_live_kg": 6000, "river_electric_wh_per_live_kg": 1500, "critical_ras_load_kw": 4, "usable_purge_m3_per_month": 30, "polishing_yield_percent": 80, "polishing_wh_per_m3": 600},
+  "coast": {"edible_percent": 25, "monthly_mature_shell_on_kg": 1600, "cold_store_edible_kg": 600, "opening_frozen_edible_kg": 300, "partner_distance_km": 600, "cold_chain_wh_per_edible_kg": 500, "store_wh_per_opening_kg_month": 10},
+  "well": {"opening_m3": 900, "capacity_m3": 1400, "protected_floor_m3": 500, "net_inflow_m3_by_month": [300,300,350,400,400,300,160,140,180,240,260,300], "monthly_permitted_m3": 280, "monthly_pump_capacity_m3": 300, "treated_yield_percent": 90, "total_dynamic_head_m": 40, "pump_efficiency_percent": 70, "treatment_wh_per_raw_m3": 400},
+  "district": {"usable_backup_kwh": 24, "backup_rating_kw": 5, "monthly_power_kwh": 9850, "monthly_heat_kwh": 19000, "shared_basin_gross_allocation_m3": 5400, "monthly_contracted_feed_kg": 1250, "river_intake_m3_after_environmental_reserve_by_month": [5500,5500,5500,5500,5500,5200,4500,4200,5200,5500,5500,5500], "water_haul_one_way_km": 35, "monthly_haul_water_m3": 240, "monthly_cold_freight_kg_km": 240000}
+}

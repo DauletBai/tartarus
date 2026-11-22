@@ -63,6 +63,7 @@ async fn extended_model_and_circulation_survive_review_with_exact_food_and_mass(
             "payments",
             cid,
             CoupledProposal {
+                fund_from_treasury: false,
                 id: Uuid::new_v4(),
                 expected_generation: 0,
                 model_generation: 1,
@@ -143,6 +144,7 @@ async fn extended_model_and_circulation_survive_review_with_exact_food_and_mass(
             "next-payments",
             cid,
             CoupledProposal {
+                fund_from_treasury: false,
                 id: Uuid::new_v4(),
                 expected_generation: 1,
                 model_generation: 2,

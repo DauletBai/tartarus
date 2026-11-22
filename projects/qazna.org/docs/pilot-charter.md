@@ -4,6 +4,19 @@ Status: proposed operational charter, 4 November 2026. The author delegated pilo
 scope and the modelling choice of basic-provision funding. No real participant,
 organization, funds or production deployment has been enrolled by this document.
 
+## First engagement
+
+A public agency responsible for one meal programme is the proposed commissioner. Its provider knows what it could deliver on each date. A research institute can independently check the comparison. The proposed service is to configure and evaluate one local case using the open-source software. The commissioner receives a reproducible comparison, a list of missed deliveries and their causes, and an estimate of the effort needed to run a shadow pilot. Kazakhstan is a possible first setting. Another region can substitute its own programme rules, units, language and records.
+
+Begin with a closed historical period. Ask the programme director to select one recurring decision and nominate the person who can explain the records. The provider supplies quantities, dates, capacity and interruptions. The agency supplies the actual allocation rules, existing benefits, opening resources and budget. Use aggregated or anonymised records appropriate to the agreed evaluation. Record gaps, especially eligible households missing from the provider's records. The first meeting needs a sample data dictionary and one worked decision. A prospective trial with people has additional safeguards below.
+
+## Comparison and decision
+
+1. Reconstruct the programme as operated, including public benefits, existing subsidies, exceptions and any household payment. Reconcile the replay with observed deliveries. An unexplained material difference is a reason to fix the baseline.
+2. Replay a finite treasury allocation against exactly the same needs, stocks, staff, budget, deadlines and information available on each date. Record physical shortages, funding delays and unknown receipts separately. Model changes in paid hours or productivity as explicit scenarios with stated assumptions about earnings, prices and benefits.
+3. Agree on the decision thresholds before reviewing results. Compare on-time coverage and waiting time, including the least-served group, unmet quantities, total cost and hours of administration. Record lost choice or added burdens. If the ordinary programme matches or outperforms the proposed rule, retain it. If receipt data are too incomplete to distinguish outcomes, report that limitation.
+4. Deliver the input dictionary, sources and gaps, versioned rules, reproducible results, exceptions and an evaluator's recommendation. Authorise a voluntary parallel trial only if the evidence and participant safeguards justify it. The retrospective results describe modelled alternatives; only the historical baseline has observed deliveries.
+
 ## Scope and principles
 
 Start with one consenting community, one food provider, and independently assigned

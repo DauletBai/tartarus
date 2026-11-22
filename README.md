@@ -23,7 +23,9 @@
 
 ## Book and Qazna
 
-*Tartar and I* is Daulet Baimurza’s Russian research essay. Its provisioning proposal motivates [Qazna](projects/qazna.org/README.md), the Rust/PostgreSQL research implementation in this repository. The book explains the ideas; the software makes selected mechanisms testable. Software tests do not establish the historical hypotheses or validate an entire monetary system. Chapter 26 describes implemented work, synthetic exercises and the remaining physical-evidence gap. Chapter 27 now distinguishes moral prerequisites, risks from external dependence and internal concentration of power, and work for future generations from predictions of inevitable success or failure.
+«Тартар и Я» — авторское исследовательское эссе Даулета Баймурзина о мировой цивилизации. От казахского языка и исторической памяти Евразии автор переходит к вопросу, как общество может распределять плоды труда и автоматизации по принципу равной меры.
+
+*Tartar and I* explores world civilization through the Kazakh language, the historical memory of Eurasia and the principle of equal measure. Daulet Baimurza wrote the essay in Russian. Its provisioning proposal motivates [Qazna](projects/qazna.org/README.md), the Rust/PostgreSQL research implementation in this repository. The book explains the ideas; the software makes selected mechanisms testable. Software tests do not establish the historical hypotheses or validate an entire monetary system. Chapter 26 describes implemented work, synthetic exercises and the remaining physical-evidence gap. Chapter 27 now distinguishes moral prerequisites, risks from external dependence and internal concentration of power, and work for future generations from predictions of inevitable success or failure.
 
 [Read the Russian HTML edition](https://dauletbai.github.io/tartarus/) and use your browser’s page translation. Individual chapters and the complete text are available. Machine translations are not reviewed translations. The [HTML source](book/reader/index.html) and PDF are also included here.
 

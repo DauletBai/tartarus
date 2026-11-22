@@ -1,0 +1,1077 @@
+{
+  "cases": {
+    "delivered_water_ras": {
+      "aquifer_closing_m3": 1400,
+      "aquifer_minimum_closing_m3": 1200,
+      "aquifer_opening_restoration_gap_m3": 0,
+      "cold_reserve_restoration_gap_kg": 0,
+      "cold_store_capacity_kg": 600,
+      "compound_feed_kg_per_month": 1200,
+      "fish_live_kg_per_month": 1000,
+      "frozen_closing_kg": 300,
+      "monthly_accepted_purge_to_greenhouse_m3": 0,
+      "monthly_makeup_or_delivered_water_m3": 220,
+      "monthly_river_gross_m3": 0,
+      "months_screened": 60,
+      "months_with_shortfall": 0,
+      "received_shellfish_meat_kg": 18000,
+      "road_water_tonne_km": 462000,
+      "shortfalls": [],
+      "total_heat_required_kwh": 565000,
+      "total_site_electricity_required_kwh": 579180,
+      "unserved_shellfish_kg": 0,
+      "well_pumping_kwh": 0,
+      "well_raw_m3": 0,
+      "well_treatment_kwh": 0
+    },
+    "eight_hour_outage": {
+      "aquifer_closing_m3": 965,
+      "aquifer_minimum_closing_m3": 895,
+      "aquifer_opening_restoration_gap_m3": 0,
+      "cold_reserve_restoration_gap_kg": 0,
+      "cold_store_capacity_kg": 600,
+      "compound_feed_kg_per_month": 1200,
+      "fish_live_kg_per_month": 1000,
+      "frozen_closing_kg": 300,
+      "monthly_accepted_purge_to_greenhouse_m3": 0,
+      "monthly_makeup_or_delivered_water_m3": 220,
+      "monthly_river_gross_m3": 0,
+      "months_screened": 60,
+      "months_with_shortfall": 1,
+      "received_shellfish_meat_kg": 18000,
+      "road_water_tonne_km": 0,
+      "shortfalls": [
+        {
+          "missing": {
+            "backup_energy_kwh": 8
+          },
+          "month": "2027-01"
+        }
+      ],
+      "total_heat_required_kwh": 565000,
+      "total_site_electricity_required_kwh": 587400,
+      "unserved_shellfish_kg": 0,
+      "well_pumping_kwh": 2340,
+      "well_raw_m3": 14700,
+      "well_treatment_kwh": 5880
+    },
+    "fourfold_pump_head": {
+      "aquifer_closing_m3": 965,
+      "aquifer_minimum_closing_m3": 895,
+      "aquifer_opening_restoration_gap_m3": 0,
+      "cold_reserve_restoration_gap_kg": 0,
+      "cold_store_capacity_kg": 600,
+      "compound_feed_kg_per_month": 1200,
+      "fish_live_kg_per_month": 1000,
+      "frozen_closing_kg": 300,
+      "monthly_accepted_purge_to_greenhouse_m3": 0,
+      "monthly_makeup_or_delivered_water_m3": 220,
+      "monthly_river_gross_m3": 0,
+      "months_screened": 60,
+      "months_with_shortfall": 60,
+      "received_shellfish_meat_kg": 18000,
+      "road_water_tonne_km": 0,
+      "shortfalls": [
+        {
+          "missing": {
+            "electricity_kwh": 54
+          },
+          "month": "2027-01"
+        },
+        {
+          "missing": {
+            "electricity_kwh": 54
+          },
+          "month": "2027-02"
+        },
+        {
+          "missing": {
+            "electricity_kwh": 54
+          },
+          "month": "2027-03"
+        },
+        {
+          "missing": {
+            "electricity_kwh": 54
+          },
+          "month": "2027-04"
+        },
+        {
+          "missing": {
+            "electricity_kwh": 54
+          },
+          "month": "2027-05"
+        },
+        {
+          "missing": {
+            "electricity_kwh": 54
+          },
+          "month": "2027-06"
+        },
+        {
+          "missing": {
+            "electricity_kwh": 54
+          },
+          "month": "2027-07"
+        },
+        {
+          "missing": {
+            "electricity_kwh": 54
+          },
+          "month": "2027-08"
+        },
+        {
+          "missing": {
+            "electricity_kwh": 54
+          },
+          "month": "2027-09"
+        },
+        {
+          "missing": {
+            "electricity_kwh": 54
+          },
+          "month": "2027-10"
+        },
+        {
+          "missing": {
+            "electricity_kwh": 54
+          },
+          "month": "2027-11"
+        },
+        {
+          "missing": {
+            "electricity_kwh": 54
+          },
+          "month": "2027-12"
+        },
+        {
+          "missing": {
+            "electricity_kwh": 54
+          },
+          "month": "2028-01"
+        },
+        {
+          "missing": {
+            "electricity_kwh": 54
+          },
+          "month": "2028-02"
+        },
+        {
+          "missing": {
+            "electricity_kwh": 54
+          },
+          "month": "2028-03"
+        },
+        {
+          "missing": {
+            "electricity_kwh": 54
+          },
+          "month": "2028-04"
+        },
+        {
+          "missing": {
+            "electricity_kwh": 54
+          },
+          "month": "2028-05"
+        },
+        {
+          "missing": {
+            "electricity_kwh": 54
+          },
+          "month": "2028-06"
+        },
+        {
+          "missing": {
+            "electricity_kwh": 54
+          },
+          "month": "2028-07"
+        },
+        {
+          "missing": {
+            "electricity_kwh": 54
+          },
+          "month": "2028-08"
+        },
+        {
+          "missing": {
+            "electricity_kwh": 54
+          },
+          "month": "2028-09"
+        },
+        {
+          "missing": {
+            "electricity_kwh": 54
+          },
+          "month": "2028-10"
+        },
+        {
+          "missing": {
+            "electricity_kwh": 54
+          },
+          "month": "2028-11"
+        },
+        {
+          "missing": {
+            "electricity_kwh": 54
+          },
+          "month": "2028-12"
+        },
+        {
+          "missing": {
+            "electricity_kwh": 54
+          },
+          "month": "2029-01"
+        },
+        {
+          "missing": {
+            "electricity_kwh": 54
+          },
+          "month": "2029-02"
+        },
+        {
+          "missing": {
+            "electricity_kwh": 54
+          },
+          "month": "2029-03"
+        },
+        {
+          "missing": {
+            "electricity_kwh": 54
+          },
+          "month": "2029-04"
+        },
+        {
+          "missing": {
+            "electricity_kwh": 54
+          },
+          "month": "2029-05"
+        },
+        {
+          "missing": {
+            "electricity_kwh": 54
+          },
+          "month": "2029-06"
+        },
+        {
+          "missing": {
+            "electricity_kwh": 54
+          },
+          "month": "2029-07"
+        },
+        {
+          "missing": {
+            "electricity_kwh": 54
+          },
+          "month": "2029-08"
+        },
+        {
+          "missing": {
+            "electricity_kwh": 54
+          },
+          "month": "2029-09"
+        },
+        {
+          "missing": {
+            "electricity_kwh": 54
+          },
+          "month": "2029-10"
+        },
+        {
+          "missing": {
+            "electricity_kwh": 54
+          },
+          "month": "2029-11"
+        },
+        {
+          "missing": {
+            "electricity_kwh": 54
+          },
+          "month": "2029-12"
+        },
+        {
+          "missing": {
+            "electricity_kwh": 54
+          },
+          "month": "2030-01"
+        },
+        {
+          "missing": {
+            "electricity_kwh": 54
+          },
+          "month": "2030-02"
+        },
+        {
+          "missing": {
+            "electricity_kwh": 54
+          },
+          "month": "2030-03"
+        },
+        {
+          "missing": {
+            "electricity_kwh": 54
+          },
+          "month": "2030-04"
+        },
+        {
+          "missing": {
+            "electricity_kwh": 54
+          },
+          "month": "2030-05"
+        },
+        {
+          "missing": {
+            "electricity_kwh": 54
+          },
+          "month": "2030-06"
+        },
+        {
+          "missing": {
+            "electricity_kwh": 54
+          },
+          "month": "2030-07"
+        },
+        {
+          "missing": {
+            "electricity_kwh": 54
+          },
+          "month": "2030-08"
+        },
+        {
+          "missing": {
+            "electricity_kwh": 54
+          },
+          "month": "2030-09"
+        },
+        {
+          "missing": {
+            "electricity_kwh": 54
+          },
+          "month": "2030-10"
+        },
+        {
+          "missing": {
+            "electricity_kwh": 54
+          },
+          "month": "2030-11"
+        },
+        {
+          "missing": {
+            "electricity_kwh": 54
+          },
+          "month": "2030-12"
+        },
+        {
+          "missing": {
+            "electricity_kwh": 54
+          },
+          "month": "2031-01"
+        },
+        {
+          "missing": {
+            "electricity_kwh": 54
+          },
+          "month": "2031-02"
+        },
+        {
+          "missing": {
+            "electricity_kwh": 54
+          },
+          "month": "2031-03"
+        },
+        {
+          "missing": {
+            "electricity_kwh": 54
+          },
+          "month": "2031-04"
+        },
+        {
+          "missing": {
+            "electricity_kwh": 54
+          },
+          "month": "2031-05"
+        },
+        {
+          "missing": {
+            "electricity_kwh": 54
+          },
+          "month": "2031-06"
+        },
+        {
+          "missing": {
+            "electricity_kwh": 54
+          },
+          "month": "2031-07"
+        },
+        {
+          "missing": {
+            "electricity_kwh": 54
+          },
+          "month": "2031-08"
+        },
+        {
+          "missing": {
+            "electricity_kwh": 54
+          },
+          "month": "2031-09"
+        },
+        {
+          "missing": {
+            "electricity_kwh": 54
+          },
+          "month": "2031-10"
+        },
+        {
+          "missing": {
+            "electricity_kwh": 54
+          },
+          "month": "2031-11"
+        },
+        {
+          "missing": {
+            "electricity_kwh": 54
+          },
+          "month": "2031-12"
+        }
+      ],
+      "total_heat_required_kwh": 565000,
+      "total_site_electricity_required_kwh": 594240,
+      "unserved_shellfish_kg": 0,
+      "well_pumping_kwh": 9180,
+      "well_raw_m3": 14700,
+      "well_treatment_kwh": 5880
+    },
+    "half_net_recharge": {
+      "aquifer_closing_m3": 500,
+      "aquifer_minimum_closing_m3": 500,
+      "aquifer_opening_restoration_gap_m3": 400,
+      "cold_reserve_restoration_gap_kg": 0,
+      "cold_store_capacity_kg": 600,
+      "compound_feed_kg_per_month": 1200,
+      "fish_live_kg_per_month": 1000,
+      "frozen_closing_kg": 300,
+      "monthly_accepted_purge_to_greenhouse_m3": 0,
+      "monthly_makeup_or_delivered_water_m3": 220,
+      "monthly_river_gross_m3": 0,
+      "months_screened": 60,
+      "months_with_shortfall": 55,
+      "received_shellfish_meat_kg": 18000,
+      "road_water_tonne_km": 0,
+      "shortfalls": [
+        {
+          "missing": {
+            "treated_makeup_m3": 40
+          },
+          "month": "2027-06"
+        },
+        {
+          "missing": {
+            "treated_makeup_m3": 148
+          },
+          "month": "2027-07"
+        },
+        {
+          "missing": {
+            "treated_makeup_m3": 157
+          },
+          "month": "2027-08"
+        },
+        {
+          "missing": {
+            "treated_makeup_m3": 139
+          },
+          "month": "2027-09"
+        },
+        {
+          "missing": {
+            "treated_makeup_m3": 112
+          },
+          "month": "2027-10"
+        },
+        {
+          "missing": {
+            "treated_makeup_m3": 103
+          },
+          "month": "2027-11"
+        },
+        {
+          "missing": {
+            "treated_makeup_m3": 85
+          },
+          "month": "2027-12"
+        },
+        {
+          "missing": {
+            "treated_makeup_m3": 85
+          },
+          "month": "2028-01"
+        },
+        {
+          "missing": {
+            "treated_makeup_m3": 85
+          },
+          "month": "2028-02"
+        },
+        {
+          "missing": {
+            "treated_makeup_m3": 63
+          },
+          "month": "2028-03"
+        },
+        {
+          "missing": {
+            "treated_makeup_m3": 40
+          },
+          "month": "2028-04"
+        },
+        {
+          "missing": {
+            "treated_makeup_m3": 40
+          },
+          "month": "2028-05"
+        },
+        {
+          "missing": {
+            "treated_makeup_m3": 85
+          },
+          "month": "2028-06"
+        },
+        {
+          "missing": {
+            "treated_makeup_m3": 148
+          },
+          "month": "2028-07"
+        },
+        {
+          "missing": {
+            "treated_makeup_m3": 157
+          },
+          "month": "2028-08"
+        },
+        {
+          "missing": {
+            "treated_makeup_m3": 139
+          },
+          "month": "2028-09"
+        },
+        {
+          "missing": {
+            "treated_makeup_m3": 112
+          },
+          "month": "2028-10"
+        },
+        {
+          "missing": {
+            "treated_makeup_m3": 103
+          },
+          "month": "2028-11"
+        },
+        {
+          "missing": {
+            "treated_makeup_m3": 85
+          },
+          "month": "2028-12"
+        },
+        {
+          "missing": {
+            "treated_makeup_m3": 85
+          },
+          "month": "2029-01"
+        },
+        {
+          "missing": {
+            "treated_makeup_m3": 85
+          },
+          "month": "2029-02"
+        },
+        {
+          "missing": {
+            "treated_makeup_m3": 63
+          },
+          "month": "2029-03"
+        },
+        {
+          "missing": {
+            "treated_makeup_m3": 40
+          },
+          "month": "2029-04"
+        },
+        {
+          "missing": {
+            "treated_makeup_m3": 40
+          },
+          "month": "2029-05"
+        },
+        {
+          "missing": {
+            "treated_makeup_m3": 85
+          },
+          "month": "2029-06"
+        },
+        {
+          "missing": {
+            "treated_makeup_m3": 148
+          },
+          "month": "2029-07"
+        },
+        {
+          "missing": {
+            "treated_makeup_m3": 157
+          },
+          "month": "2029-08"
+        },
+        {
+          "missing": {
+            "treated_makeup_m3": 139
+          },
+          "month": "2029-09"
+        },
+        {
+          "missing": {
+            "treated_makeup_m3": 112
+          },
+          "month": "2029-10"
+        },
+        {
+          "missing": {
+            "treated_makeup_m3": 103
+          },
+          "month": "2029-11"
+        },
+        {
+          "missing": {
+            "treated_makeup_m3": 85
+          },
+          "month": "2029-12"
+        },
+        {
+          "missing": {
+            "treated_makeup_m3": 85
+          },
+          "month": "2030-01"
+        },
+        {
+          "missing": {
+            "treated_makeup_m3": 85
+          },
+          "month": "2030-02"
+        },
+        {
+          "missing": {
+            "treated_makeup_m3": 63
+          },
+          "month": "2030-03"
+        },
+        {
+          "missing": {
+            "treated_makeup_m3": 40
+          },
+          "month": "2030-04"
+        },
+        {
+          "missing": {
+            "treated_makeup_m3": 40
+          },
+          "month": "2030-05"
+        },
+        {
+          "missing": {
+            "treated_makeup_m3": 85
+          },
+          "month": "2030-06"
+        },
+        {
+          "missing": {
+            "treated_makeup_m3": 148
+          },
+          "month": "2030-07"
+        },
+        {
+          "missing": {
+            "treated_makeup_m3": 157
+          },
+          "month": "2030-08"
+        },
+        {
+          "missing": {
+            "treated_makeup_m3": 139
+          },
+          "month": "2030-09"
+        },
+        {
+          "missing": {
+            "treated_makeup_m3": 112
+          },
+          "month": "2030-10"
+        },
+        {
+          "missing": {
+            "treated_makeup_m3": 103
+          },
+          "month": "2030-11"
+        },
+        {
+          "missing": {
+            "treated_makeup_m3": 85
+          },
+          "month": "2030-12"
+        },
+        {
+          "missing": {
+            "treated_makeup_m3": 85
+          },
+          "month": "2031-01"
+        },
+        {
+          "missing": {
+            "treated_makeup_m3": 85
+          },
+          "month": "2031-02"
+        },
+        {
+          "missing": {
+            "treated_makeup_m3": 63
+          },
+          "month": "2031-03"
+        },
+        {
+          "missing": {
+            "treated_makeup_m3": 40
+          },
+          "month": "2031-04"
+        },
+        {
+          "missing": {
+            "treated_makeup_m3": 40
+          },
+          "month": "2031-05"
+        },
+        {
+          "missing": {
+            "treated_makeup_m3": 85
+          },
+          "month": "2031-06"
+        },
+        {
+          "missing": {
+            "treated_makeup_m3": 148
+          },
+          "month": "2031-07"
+        },
+        {
+          "missing": {
+            "treated_makeup_m3": 157
+          },
+          "month": "2031-08"
+        },
+        {
+          "missing": {
+            "treated_makeup_m3": 139
+          },
+          "month": "2031-09"
+        },
+        {
+          "missing": {
+            "treated_makeup_m3": 112
+          },
+          "month": "2031-10"
+        },
+        {
+          "missing": {
+            "treated_makeup_m3": 103
+          },
+          "month": "2031-11"
+        },
+        {
+          "missing": {
+            "treated_makeup_m3": 85
+          },
+          "month": "2031-12"
+        }
+      ],
+      "total_heat_required_kwh": 565000,
+      "total_site_electricity_required_kwh": 584068,
+      "unserved_shellfish_kg": 0,
+      "well_pumping_kwh": 1398,
+      "well_raw_m3": 8725,
+      "well_treatment_kwh": 3490
+    },
+    "local_well_ras": {
+      "aquifer_closing_m3": 965,
+      "aquifer_minimum_closing_m3": 895,
+      "aquifer_opening_restoration_gap_m3": 0,
+      "cold_reserve_restoration_gap_kg": 0,
+      "cold_store_capacity_kg": 600,
+      "compound_feed_kg_per_month": 1200,
+      "fish_live_kg_per_month": 1000,
+      "frozen_closing_kg": 300,
+      "monthly_accepted_purge_to_greenhouse_m3": 0,
+      "monthly_makeup_or_delivered_water_m3": 220,
+      "monthly_river_gross_m3": 0,
+      "months_screened": 60,
+      "months_with_shortfall": 0,
+      "received_shellfish_meat_kg": 18000,
+      "road_water_tonne_km": 0,
+      "shortfalls": [],
+      "total_heat_required_kwh": 565000,
+      "total_site_electricity_required_kwh": 587400,
+      "unserved_shellfish_kg": 0,
+      "well_pumping_kwh": 2340,
+      "well_raw_m3": 14700,
+      "well_treatment_kwh": 5880
+    },
+    "planned_coastal_closure_with_depot": {
+      "aquifer_closing_m3": 965,
+      "aquifer_minimum_closing_m3": 895,
+      "aquifer_opening_restoration_gap_m3": 0,
+      "cold_reserve_restoration_gap_kg": 0,
+      "cold_store_capacity_kg": 900,
+      "compound_feed_kg_per_month": 1200,
+      "fish_live_kg_per_month": 1000,
+      "frozen_closing_kg": 300,
+      "monthly_accepted_purge_to_greenhouse_m3": 0,
+      "monthly_makeup_or_delivered_water_m3": 220,
+      "monthly_river_gross_m3": 0,
+      "months_screened": 60,
+      "months_with_shortfall": 0,
+      "received_shellfish_meat_kg": 18000,
+      "road_water_tonne_km": 0,
+      "shortfalls": [],
+      "total_heat_required_kwh": 565000,
+      "total_site_electricity_required_kwh": 587490,
+      "unserved_shellfish_kg": 0,
+      "well_pumping_kwh": 2340,
+      "well_raw_m3": 14700,
+      "well_treatment_kwh": 5880
+    },
+    "river_flow_through": {
+      "aquifer_closing_m3": 1377,
+      "aquifer_minimum_closing_m3": 1177,
+      "aquifer_opening_restoration_gap_m3": 0,
+      "cold_reserve_restoration_gap_kg": 0,
+      "cold_store_capacity_kg": 600,
+      "compound_feed_kg_per_month": 1200,
+      "fish_live_kg_per_month": 1000,
+      "frozen_closing_kg": 300,
+      "monthly_accepted_purge_to_greenhouse_m3": 0,
+      "monthly_makeup_or_delivered_water_m3": 20,
+      "monthly_river_gross_m3": 5000,
+      "months_screened": 60,
+      "months_with_shortfall": 10,
+      "received_shellfish_meat_kg": 18000,
+      "road_water_tonne_km": 0,
+      "shortfalls": [
+        {
+          "missing": {
+            "river_gross_intake_m3": 500
+          },
+          "month": "2027-07"
+        },
+        {
+          "missing": {
+            "river_gross_intake_m3": 800
+          },
+          "month": "2027-08"
+        },
+        {
+          "missing": {
+            "river_gross_intake_m3": 500
+          },
+          "month": "2028-07"
+        },
+        {
+          "missing": {
+            "river_gross_intake_m3": 800
+          },
+          "month": "2028-08"
+        },
+        {
+          "missing": {
+            "river_gross_intake_m3": 500
+          },
+          "month": "2029-07"
+        },
+        {
+          "missing": {
+            "river_gross_intake_m3": 800
+          },
+          "month": "2029-08"
+        },
+        {
+          "missing": {
+            "river_gross_intake_m3": 500
+          },
+          "month": "2030-07"
+        },
+        {
+          "missing": {
+            "river_gross_intake_m3": 800
+          },
+          "month": "2030-08"
+        },
+        {
+          "missing": {
+            "river_gross_intake_m3": 500
+          },
+          "month": "2031-07"
+        },
+        {
+          "missing": {
+            "river_gross_intake_m3": 800
+          },
+          "month": "2031-08"
+        }
+      ],
+      "total_heat_required_kwh": 565000,
+      "total_site_electricity_required_kwh": 310020,
+      "unserved_shellfish_kg": 0,
+      "well_pumping_kwh": 240,
+      "well_raw_m3": 1380,
+      "well_treatment_kwh": 600
+    },
+    "three_month_coastal_closure": {
+      "aquifer_closing_m3": 965,
+      "aquifer_minimum_closing_m3": 895,
+      "aquifer_opening_restoration_gap_m3": 0,
+      "cold_reserve_restoration_gap_kg": 0,
+      "cold_store_capacity_kg": 600,
+      "compound_feed_kg_per_month": 1200,
+      "fish_live_kg_per_month": 1000,
+      "frozen_closing_kg": 300,
+      "monthly_accepted_purge_to_greenhouse_m3": 0,
+      "monthly_makeup_or_delivered_water_m3": 220,
+      "monthly_river_gross_m3": 0,
+      "months_screened": 60,
+      "months_with_shortfall": 10,
+      "received_shellfish_meat_kg": 15000,
+      "road_water_tonne_km": 0,
+      "shortfalls": [
+        {
+          "missing": {
+            "shellfish_order_kg": 300
+          },
+          "month": "2027-08"
+        },
+        {
+          "missing": {
+            "shellfish_order_kg": 300
+          },
+          "month": "2027-09"
+        },
+        {
+          "missing": {
+            "shellfish_order_kg": 300
+          },
+          "month": "2028-08"
+        },
+        {
+          "missing": {
+            "shellfish_order_kg": 300
+          },
+          "month": "2028-09"
+        },
+        {
+          "missing": {
+            "shellfish_order_kg": 300
+          },
+          "month": "2029-08"
+        },
+        {
+          "missing": {
+            "shellfish_order_kg": 300
+          },
+          "month": "2029-09"
+        },
+        {
+          "missing": {
+            "shellfish_order_kg": 300
+          },
+          "month": "2030-08"
+        },
+        {
+          "missing": {
+            "shellfish_order_kg": 300
+          },
+          "month": "2030-09"
+        },
+        {
+          "missing": {
+            "shellfish_order_kg": 300
+          },
+          "month": "2031-08"
+        },
+        {
+          "missing": {
+            "shellfish_order_kg": 300
+          },
+          "month": "2031-09"
+        }
+      ],
+      "total_heat_required_kwh": 565000,
+      "total_site_electricity_required_kwh": 585840,
+      "unserved_shellfish_kg": 3000,
+      "well_pumping_kwh": 2340,
+      "well_raw_m3": 14700,
+      "well_treatment_kwh": 5880
+    },
+    "treated_fish_water_to_greenhouse": {
+      "aquifer_closing_m3": 1119,
+      "aquifer_minimum_closing_m3": 977,
+      "aquifer_opening_restoration_gap_m3": 0,
+      "cold_reserve_restoration_gap_kg": 0,
+      "cold_store_capacity_kg": 600,
+      "compound_feed_kg_per_month": 1200,
+      "fish_live_kg_per_month": 1000,
+      "frozen_closing_kg": 300,
+      "monthly_accepted_purge_to_greenhouse_m3": 20,
+      "monthly_makeup_or_delivered_water_m3": 200,
+      "monthly_river_gross_m3": 0,
+      "months_screened": 60,
+      "months_with_shortfall": 0,
+      "received_shellfish_meat_kg": 18000,
+      "road_water_tonne_km": 0,
+      "shortfalls": [],
+      "total_heat_required_kwh": 565000,
+      "total_site_electricity_required_kwh": 587580,
+      "unserved_shellfish_kg": 0,
+      "well_pumping_kwh": 2100,
+      "well_raw_m3": 13380,
+      "well_treatment_kwh": 5400
+    },
+    "winter_power_shortfall": {
+      "aquifer_closing_m3": 965,
+      "aquifer_minimum_closing_m3": 895,
+      "aquifer_opening_restoration_gap_m3": 0,
+      "cold_reserve_restoration_gap_kg": 0,
+      "cold_store_capacity_kg": 600,
+      "compound_feed_kg_per_month": 1200,
+      "fish_live_kg_per_month": 1000,
+      "frozen_closing_kg": 300,
+      "monthly_accepted_purge_to_greenhouse_m3": 0,
+      "monthly_makeup_or_delivered_water_m3": 220,
+      "monthly_river_gross_m3": 0,
+      "months_screened": 60,
+      "months_with_shortfall": 1,
+      "received_shellfish_meat_kg": 18000,
+      "road_water_tonne_km": 0,
+      "shortfalls": [
+        {
+          "missing": {
+            "electricity_kwh": 4865
+          },
+          "month": "2027-01"
+        }
+      ],
+      "total_heat_required_kwh": 565000,
+      "total_site_electricity_required_kwh": 587400,
+      "unserved_shellfish_kg": 0,
+      "well_pumping_kwh": 2340,
+      "well_raw_m3": 14700,
+      "well_treatment_kwh": 5880
+    }
+  },
+  "lettuce_reference": {
+    "field_annual_water_m3": 3000,
+    "greenhouse_growing_area_m2": 293,
+    "open_field_growing_area_m2": 3077
+  }
+}

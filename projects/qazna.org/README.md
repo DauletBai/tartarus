@@ -8,6 +8,58 @@
   <a href="docs/completion-roadmap.md"><img src="assets/brand/badges/stage.svg" alt="Research prototype"></a>
   <a href="LICENSE"><img src="assets/brand/badges/license.svg" alt="Code license AGPL-3.0-or-later"></a>
 </p>
+## Why build an economy around circulation?
+
+Qazna starts from a principle of justice: a person's ability to live and develop should survive a loss of employment, illness and old age. In *Tartar and I*, Daulet Baimurza asks what happens when machines can produce more with fewer hours of paid work. A society may gain productive capacity while the people whose work made that gain possible lose access to its benefits. Who has a claim on what society can now produce?
+
+The author uses **chrematistics** for an arrangement in which accumulating money becomes an end in itself. A lender’s claim can grow through accrued interest even when the capacity to house, teach or care for people stands still. Qazna explores a different organising principle, **Тең (equal measure)**. Natural resources and the productive capabilities built across generations are a common inheritance. Everyone has equal standing; how much support a person needs changes over a lifetime. People retain the freedom to choose their work, pursue their talents and challenge a decision about their needs.
+
+### What circulation contributes to the design
+
+In an animal's body, blood supplies tissues throughout life. A working muscle can require more oxygen now; another organ still needs its supply at rest. The engineering insight is the combination of a common circulation, local signals and reserves that can bridge interruptions. The decision to care for each person on equal terms is a human ethical choice. A community must also decide who sets the norms and how those decisions can be appealed.
+
+In the proposed economy **Tenge** is a common unit of account. One public treasury allocates measure according to need. Existing units circulate from households through services, production, materials and equipment, funding the next cycle. After enterprises meet their intermediate obligations, the common share replenishes the treasury. There is no interest on possession, interest-bearing loan or deposit yield in this circuit. The author reserves additional issuance for independently verified growth of real capacity. The study below runs entirely on existing units. [Principles, governance and evidence](docs/organism.md).
+
+```mermaid
+flowchart TD
+    people["People express needs and choices throughout life"] --> plan["Plan provision, reserves and renewal"]
+    capacity["Available people, energy, infrastructure and natural resources"] --> plan
+    plan --> treasury["The common treasury allocates existing measure"]
+    treasury --> households["Households"]
+    households --> production["Services and production"]
+    production --> inputs["Materials, equipment and upkeep"]
+    production --> share["Common share of productive output"]
+    inputs --> share
+    share --> treasury
+    production --> results["Provision received, delays and unmet needs"]
+    results --> plan
+```
+
+### Two questions the calculations can already answer
+
+**Who keeps access when paid hours fall?** In a one-day comparison, three groups require 4,000, 3,000 and 3,000 units. If the third group loses half its paid hours and income falls proportionally, its uncovered need is 1,500 units. Replacing half the lost income reduces the gap to 750. Full replacement or a need-based entitlement covers the full 3,000. All comparisons hold aggregate means and available output fixed. The calculation identifies the distribution rule that matters; the prevalence of hour losses and the protection already provided require local evidence.
+
+**How much measure must be in circulation?** In a five-year schedule, daily provision grows from 10,000 to 12,000 units. The common treasury channels **20,075,000 units** to need groups over the period. The same units pass through production repeatedly. The minimum opening stock depends on when they become available again.
+
+| Settlement delay | Minimum opening treasury | Extra timing reserve |
+| --- | ---: | ---: |
+| Same day | 12,000 | 0 |
+| 1 day | 24,000 | 12,000 |
+| 2 days | 36,000 | 24,000 |
+| 5 days | 72,000 | 60,000 |
+
+These bounds keep every scheduled transfer on time. They measure accounting liquidity. Energy, care capacity, workforce, equipment and ecological renewal each have their own physical constraints. Fairness ultimately requires looking at what reaches people, including those with the least access. [Equations, assumptions and reproduction](docs/organism.md#five-year-circulation-and-access) · [Machine-readable results](research/circulation-model.json) · [Physical studies](docs/physical-circulation.md).
+
+## What is ready for independent examination?
+
+Qazna is a research prototype with a Rust calculation engine and a PostgreSQL ledger. An independent team can replay the schedules, reduce a reserve by one unit and locate the first missed transfer. A public partner can compare the proposed rule with actual income protection using the same population, real resources and period. Human review governs consequential decisions. Running the calculations requires no AI subscription. [Research roadmap](docs/completion-roadmap.md#strategic-priorities) · [Pilot and comparison terms](docs/pilot-charter.md#comparison-and-decision).
+
+## Book and implementation
+
+The Russian-language essay *Tartar and I* explores world civilization through language, history, ethics and economics. Chapter 26 introduces the economic model. The book and project are available for independent examination. [Read the book online](https://dauletbai.github.io/tartarus/) · [Print PDF](https://media.githubusercontent.com/media/DauletBai/tartarus/main/book/Tartar_i_Ya_print_6x9.pdf).
+
+## Run the checks
+
 <p align="center">
   <img src="assets/brand/badges/rust.svg" alt="Rust minimum supported version 1.88">
   <img src="assets/brand/badges/edition.svg" alt="Rust edition 2024">
@@ -19,202 +71,6 @@
   <img src="assets/brand/badges/postgresql.svg" alt="PostgreSQL 16 tested">
   <img src="assets/brand/badges/python.svg" alt="Python 3.11 or later for tooling">
 </p>
-<p align="center"><a href="https://github.com/DauletBai/tartarus/actions/workflows/qazna.yml">CI results</a> · <a href="docs/completion-roadmap.md">Completion roadmap</a> · <a href="assets/brand/README.md">Brand assets</a></p>
-
-Qazna is a research system for meeting human needs, based on the Tenge model described in *Tartar and I*. Its architectural guide is a living organism: needs, provisioning units, resource circulation and feedback. Profit and market pricing are not default objectives.
-
-The project lives in `projects/qazna.org/` in [Tartarus](https://github.com/DauletBai/tartarus), alongside the book and research archive. The MVP and subsequent production development share **Rust + Tokio + Axum + SQLx + PostgreSQL**. Rust owns planning inputs and exact validation; an isolated mathematical solver is proposed for larger optimization problems. React/TypeScript is planned for the interface. Project documentation, code comments, examples and contributor materials are maintained in English for an international community.
-
-The service now preserves reviewed physical model versions: seasonal production,
-capital replacement, stocks, pending work and exact constituent balances. Replanning
-retains committed history and original equipment ages; selected dated stocks can be
-pinned and checked. A separately reviewed circulation scenario now derives exact
-payments from an approved physical generation and immutable accounting norms.
-Missing funds and interrupted payments remain visible; approvals do not change
-real money or verified inventory. See [architecture](docs/architecture.md#reviewed-physical-and-monetary-coupling).
-
-The selected five-year integration now links **31 resources, 44 processes and 60
-monthly periods** to 2,795 valued physical flows and 5,740 payment events. Food
-origins and expiry survive preservation and transport; packaging recovery consumes
-energy and shared capacity and leaves explicit waste. The exact minimum opening
-measure funds this fixed schedule, but its terminal distribution is **not repeatable
-without further redistribution**. This is an exposed planning gap, not a completed
-national monetary model. See the [integrated evidence](docs/physical-circulation.md#extended-five-year-runtime-integration).
-
-The [population input registry](docs/physical-circulation.md#population-registry-and-conditional-demand)
-now projects monthly age cohorts, births, deaths and migration with exact counts,
-calendar days and explicit unknown needs. Three illustrative variants start from
-100 million people. Their prospective food-component demand exceeds the previous
-upstream plan, which correctly fails full-needs approval; settled payments cannot
-stand in for provision. A separate finite-stock test verifies the accepted runtime
-binding and restart/restore. These coefficients are test assumptions, not a national
-forecast or medical prescription.
-
-Care and education now connect to **12 regional capacity pools over 60 months**:
-staff, teaching seats, rooms, equipment and builders. Training uses current mentor
-time; new capacity cannot serve people before completion. Operating energy is
-reconciled to physical provision, and local shortages block approval. See the
-[service balances](docs/physical-circulation.md#shared-care-and-education-capacity--12-november-2026)
-and shared [input assumptions](docs/input-assumptions.md#care-and-education-capacity).
-
-[Controlled service feedback](docs/physical-circulation.md#reviewed-service-repair--12-november-2026)
-now proposes the earliest feasible deferral of an unstarted training batch after a
-declared absence. It preserves care, ongoing work and history; each availability
-change has an exact revision record and requires operator review. An unrecoverable
-outage returns explicit failure rather than reducing need.
-
-The [incident journal](docs/architecture.md#durable-service-incidents-and-reviewed-circulation)
-now saves declarations even without a feasible repair and links matching reviewed
-physical/circulation versions. The [service circulation experiment](docs/physical-circulation.md#incident-to-circulation-experiment--12-november-2026)
-settles 400 events before and after training deferral with the same opening measure;
-a blocked-payment counterexample remains explicit. A linked plan is not a claim
-of observed recovery or an instruction to move live money.
-
-[Incident combination and correction](docs/architecture.md#incident-combinations-and-corrections)
-now retain source lineage and historical plans. Compatible reports form one exact
-revision; conflicting cells require explicit correction. The extended-absence
-experiment rejects all nine tested training dates and exposes a future care gap,
-without changing needs or manufacturing a successful monetary plan.
-
-[Joint repair and protected reserves](docs/architecture.md#joint-service-repair-and-protected-reserves)
-now coordinate up to four unstarted batches while keeping pool-specific staff and
-equipment headroom. A two-region case requires both courses to move; unchanged
-needs, commitments and exact circulation are checked together. Search-budget
-exhaustion is distinguished from failure across all declared dates. Application
-still requires operator review.
-
-The book [*Tartar and I*](../../book/README.md) explains the project's connected conceptual foundation;
-[needs-first principles and verification](docs/organism.md#conceptual-foundation-and-testable-claims)
-define how that vision becomes independently testable rules. Emergency reserve
-use now preserves the original floor and requires an incident-bound reviewed
-proposal with a recovery deadline; see [architecture](docs/architecture.md#incident-bound-emergency-reserve-release).
-
-## Project information
-
-| Item | Reference |
-| --- | --- |
-| Stage | Research prototype; [scope and remaining work](docs/completion-roadmap.md) |
-| Architecture | [Rust service and exact calculation boundaries](docs/architecture.md) |
-| Reproducible evidence | [Physical/circulation studies](docs/physical-circulation.md) · [test record](docs/development.md) |
-| Code and documentation | [AGPL-3.0-or-later](LICENSE) · [CC-BY-SA-4.0 documentation](LICENSE-DOCS) |
-| Repository activity | [GitHub Actions](https://github.com/DauletBai/tartarus/actions/workflows/qazna.yml) · [pull requests](https://github.com/DauletBai/tartarus/pulls) |
-| Parent repository | [Tartarus overview and About](https://github.com/DauletBai/tartarus) |
-
-## Book and implementation
-
-*Tartar and I* by Daulet Baimurza is the author's Russian research essay on language, historical memory and the Tenge economic proposal. Chapter 26 introduces the organism-inspired provisioning idea; its appendices distinguish model assumptions from calculations. Qazna turns selected provisioning mechanisms into executable, testable software. Passing software tests does not establish the book's historical hypotheses or prove the full economic model.
-
-- [Read the Russian HTML edition](https://dauletbai.github.io/tartarus/), with individual sections suitable for browser translation.
-- [Download the print PDF](https://media.githubusercontent.com/media/DauletBai/tartarus/main/book/Tartar_i_Ya_print_6x9.pdf).
-- [Explore the book and research archive](https://github.com/DauletBai/tartarus).
-
-The active project is this directory in Tartarus. The separate [DauletBai/qazna.org](https://github.com/DauletBai/qazna.org) repository is archived earlier work. It is not the current runtime. The book's copyright is separate from the software and project documentation licenses.
-
-The [food and standby lifecycle study](docs/physical-circulation.md#dated-food-transport-loss-and-standby-maintenance)
-adds dated batches, FEFO, transport damage and finite-resource maintenance. Its 32
-five-year submodel runs preserve expiry, failures and unmet needs explicitly;
-the full graph now includes a separate integrated comparison with exact cash
-replay. The selected [preserved-food reserve design](docs/physical-circulation.md#preserved-food-reserves-the-target-architecture)
-adds constructed grain/packaged storage, preservation inputs and restart-aware
-reserves. Eleven target scenarios retain early and overlong-failure deficits;
-fresh-food traces are historical comparators. Live service integration remains open.
-
-The [automation and seasonal supply annex](docs/physical-circulation.md#automation-seasonal-output-and-dated-distribution--11-november-2026)
-now checks five-year equipment/qualification deployment, shared processing and
-transport capacity, dated stocks, resource tradeoffs and manual fallback. All
-adoption scenarios retain identical human provision; scenario coefficients remain
-synthetic and computation requires no AI.
-
-The [upstream capital annex](docs/physical-circulation.md#upstream-production-and-finite-life-capital--11-november-2026)
-connects that graph to finite deposits, generation, material production,
-construction, retirement and replacement. Its demand-matched schedule preserves
-food provision with lower synthetic fuel extraction; physical calibration and
-live rolling-plan integration remain open.
-
-The [rolling commitments and material annex](docs/physical-circulation.md#rolling-commitments-and-conserved-material--11-november-2026) preserves pending work and asset ages across replanning and checks explicit residue recovery against constituent conservation. It remains an offline, synthetic experiment.
-
-The [dated checkpoint annex](docs/physical-circulation.md#dated-food-checkpoints--11-november-2026)
-retains original lot identity, expiry and in-flight output through all 60 monthly
-boundaries. The [completion estimate](docs/completion-roadmap.md#completion-scope-and-remaining-work--11-november-2026)
-sets five remaining packages after the physical persistence foundation, separately from
-national modelling and pilot readiness.
-
-## Implemented capabilities
-
-- Observe consistent invariant/queue snapshots with a limited observer credential.
-- Exercise synthetic residents, production losses, abuse and worker outages with timestamped logs and live/offline reports.
-- Avoid duplicate planning against already committed, need-linked production.
-
-- Recalculate monitored needs after committed changes through a durable worker; keep application under operator control.
-- Attach evidence-checked AI commentary through an opt-in ChatGPT-authenticated test adapter.
-- Apply explicit, immutable revisions of needs norms without rewriting existing needs.
-- Select advisory provisioning proposals using shared stock/capacity budgets and caller-defined priorities.
-- Save reviewable planning drafts and apply all selected stock/production holds atomically after revalidation.
-- Register needs independently of purchasing power; distinguish requested, reserved, received and unmet quantities.
-- Organize provisioning units into responsibility hierarchies and report coverage by period and physical unit.
-- Preserve shortage observations and their input snapshots.
-- Maintain an append-only double-entry ledger with exact amounts, atomic transfers and allocations.
-- Reserve physical stock and accounting funds together; confirm receipt or cancel.
-- Declare daily capacity and immutable process recipes; assess plans against selected input lots.
-- Reserve production capacity and all inputs atomically, sharing physical stock with resident provisioning.
-- Complete a production cycle, record input losses and output shortfall, and trace new output to its plan and input lots.
-- Preserve idempotency, transaction history and earlier database versions through additive migrations.
-- Exercise the local operator HTTP API against real PostgreSQL, including process restarts.
-
-Version 0.10.0 added an opt-in, durable attestation gate for resource use and delivery, with separate inspector/custodian/recipient credentials. The Rust planner calculates exact proposals; model commentary never applies them. It does not independently verify reports, authorize issuance or automatically count production as a resident's receipt. Accounting norms and capacity declarations remain explicit experimental inputs. Global optimization, independent physical attestations, approved monetary policy, resident identity/ownership and the product web interface are still pending. This is a local research MVP, not a production-ready national monetary system.
-
-Version 0.11.0 adds live principal revocation, scoped evidence reads, a restricted runtime database group and a logical backup/restore rehearsal. The shadow food-pilot charter chooses finite treasury-funded shortfall allocations for modelling; broader policy and participant safeguards remain open.
-
-## Exact mathematical research
-
-The offline Rust modules `mathematics` and `horizon` verify rational linear plans,
-optimality and infeasibility certificates, delayed production/resource balances,
-integer distribution rules and the minimum opening measure for a specified
-circulation schedule. They are not wired to ledger authority or enacted policy.
-[Mathematical results and proof boundaries](docs/computation-and-ai-costs.md#exact-mathematical-verification-and-five-year-resource-study)
-and [continuous strict-evidence HTTP trials](docs/exercises.md#multi-period-circulation-exercise)
-include reproducible counterexamples, not only successful scenarios. External
-outreach is deferred while this independent computational work proceeds.
-
-The [closed-circulation candidate](docs/computation-and-ai-costs.md#closed-circulation-candidate--7-november-2026)
-adds one-treasury daily provision, explicit common-production entitlements,
-settlement-delay reserves and zero personal closing balances. It is a bounded
-experimental rule; physical completeness and broader policy remain open.
-
-The [coupled physical and monetary study](docs/physical-circulation.md) connects
-finite deposits, energy, equipment, transport, construction and training in one
-five-year matrix. Shared capabilities and exact goods/payment links are checked
-separately from liquidity. Input status is maintained in the
-[common assumptions register](docs/input-assumptions.md).
-Its exact integer improvement stage reduces excess starts while preserving each
-delivery and terminal reserves; all payments are recalculated. The baseline uses
-44.08% fewer power batches than the fixed-output seed under the declared constraints.
-A causal reserve-route experiment then reduces unmet meals during a 90-day primary
-transport interruption by 72.24%, and eliminates them in the 30-day scenario under
-the declared stocks/capacities. Future restoration dates are not supplied to the
-daily decisions; exact physical and cash checks remain separate.
-A further experiment uses one identical opening balance vector across six disruption
-schedules: 2,030,483,170,650 normative units (1.253609% above normal-only
-funding). Every scheduled payment settles; physical shortages under severe stress
-remain explicitly reported. This is a fixed-family certificate, not a national
-budget, global optimum or guarantee against unknown failures.
-
-An eight-policy, six-scenario joint-planning comparison now eliminates the
-90-period transport-only meal deficit through additional **produced** equipment,
-with unchanged initial assets. Equipment plus food buffers reduces worst unmet
-meals to 2.76 billion units. The minimax service-shortfall fraction reaches
-a certified 1.569116% lower bound in the previous configuration without backup
-generation or energy storage; the remaining physical interruption is not hidden by cash balances.
-See [objectives, exact certificate and limits](docs/physical-circulation.md#joint-reserve-replacement-and-training-policies).
-
-The next [reserve lifecycle experiment](docs/physical-circulation.md#constructed-reserve-and-recovery-experiment)
-constructs standby generators and fuel storage from existing resources, accounts
-for daily loss, protects restart stock and refills after recovery. A 30-period
-reserve covers the prepared repeated-interruption family; 60 periods covers the
-60-period supply failure. Thirty-five exact traces retain early/overlong failures
-and a failed overfilling policy; the tested disruption family is recorded with the results.
-
-## Run the checks
 
 Requirements: Rust (tested with 1.97.0), Python 3.11+ and PostgreSQL 16+. From the repository root:
 
@@ -228,71 +84,15 @@ On Linux, set `PG_BIN` to the installed PostgreSQL directory, for example `/usr/
 
 ## Documentation
 
-- [Physical chains, shared capabilities and goods/payment verification](docs/physical-circulation.md)
-- [Operation without AI: mathematical model, exact example, budgets and optional AI costs](docs/computation-and-ai-costs.md)
+The [settlement walkthrough](docs/two-meals.md) provides a technical example of stock attestation, budget limits and receipt confirmation.
 
-- [AI economic research: company fit, Kazakhstan partnership routes, proposed experiments and pilot budget](docs/ai-economic-research.md)
-- [Architecture, test quality and international readiness review](docs/architecture-review.md)
-- [Shadow food-pilot charter](docs/pilot-charter.md)
-- [Revocation, runtime privileges and recovery](docs/recovery-and-access.md)
-
-- [Completion roadmap and pilot acceptance gates](docs/completion-roadmap.md)
-
-- [Organism audit and remaining gaps](docs/organism-audit.md)
-- [Independent resource and delivery attestations](docs/evidence.md)
-- [Live synthetic exercises](docs/exercises.md)
-- [Version 0.9 verification evidence](docs/verification-0.9.md)
-- [Organism-inspired principles](docs/organism.md)
-- [Architecture and readiness boundaries](docs/architecture.md)
-- [Allocations and provisioning](docs/provisioning.md)
-- [Needs, units and feedback](docs/needs.md)
-- [Production capacity and planning](docs/production.md)
-- [Production completion, losses and provenance](docs/completion.md)
-- [Needs norms and provisioning proposals](docs/norms-and-planning.md)
-- [Reviewed drafts and atomic application](docs/drafts.md)
-- [Coordination and ChatGPT test workflow](docs/coordination.md)
-- [AI safety boundaries and verification](docs/ai-safety.md)
-- [Local Git and IDE workflow](docs/git-workflow.md)
-- [Development, API and verification](docs/development.md)
-- [Initial analysis and historical plan](docs/analysis-2026-11-02.md)
-- [Changelog](CHANGELOG.md), [contributing](CONTRIBUTING.md), [security](SECURITY.md)
+- [Current priorities and deferred sector studies](docs/completion-roadmap.md#strategic-priorities) · [Pilot charter](docs/pilot-charter.md)
+- [Physical chains and monetary circulation](docs/physical-circulation.md) · [Published calculations](research/) · [Mathematics and computing costs](docs/computation-and-ai-costs.md)
+- [Needs and planning norms](docs/norms-and-planning.md) · [Provisioning](docs/provisioning.md) · [Production](docs/production.md) · [Reviewed decisions](docs/drafts.md)
+- [AI and economic research](docs/ai-economic-research.md) · [Optional AI and its limits](docs/ai-safety.md) · [Architecture review](docs/architecture-review.md)
+- [Operational exercises](docs/exercises.md) · [Access and recovery](docs/recovery-and-access.md) · [Continuous integration](https://github.com/DauletBai/tartarus/actions/workflows/qazna.yml)
+- [Changelog](CHANGELOG.md) · [Contributing](CONTRIBUTING.md) · [Security](SECURITY.md) · [Brand assets](assets/brand/README.md)
 
 ## Licensing
 
-Code is **AGPL-3.0-or-later**, see [LICENSE](LICENSE). Documentation in this project is **CC BY-SA 4.0**, see [LICENSE-DOCS](LICENSE-DOCS). [NOTICE](NOTICE) defines the scope. These licenses do not automatically apply to the parent book, research archive or external materials.
-
-The [dependency inventory](THIRD_PARTY_LICENSES.json) records locked Rust package versions and upstream license declarations. Dependency source and compiled distributions are not shipped here; distributing them requires the applicable upstream notices.
-
-
-Earlier bounded extension: [daily maintenance and specialist absence](docs/physical-circulation.md#daily-maintenance-work-and-unavailable-technical-teams).
-Two separately constrained workdays prevent repairs from completing without a
-technical team; preserved-food and housing outcomes are reported independently
-of successful monetary settlement.
-
-### Nutrition and household choice
-
-The offline [nutrition/order annex](docs/physical-circulation.md#nutrient-needs-agricultural-requirements-and-household-orders) checks nutrient constraints before aggregating food requirements. Household cooking, prepared-food orders and delivery are separate choices. Pinned composition data, exact arithmetic and negative tests expose missing evidence and capacity gaps; the sample remains an uncalibrated research model, not a certified national diet.
-
-The [seasonal food annex](docs/physical-circulation.md#seasonal-cereal-and-feed-balance--11-november-2026)
-checks 60 monthly crop/seed/land/water balances and reserve replenishment for the
-cereal/feed portion of the order snapshot. Exact matrices and independent replay
-retain failed scenarios and explicitly recorded land/yield inputs.
-
-
-### Reviewed dated scenario state
-
-The service now persists bounded dated research scenarios in PostgreSQL, retaining
-original lot identity, age, pending outputs and movements across approved versions.
-Only an operator can apply a previously saved proposal; conflicting or stale
-approvals fail. This does not update real inventory or money. See the
-[HTTP workflow and limits](docs/development.md#persistent-scenario-workflow) and
-[architecture](docs/architecture.md#persistent-reviewed-dated-scenarios--11-november-2026).
-
-
-### Regional and life-stage needs
-
-The population binding now partitions person-days by region and joint life-stage /
-care profile. Explicit full norms replace inherited norms without adding a second
-baseline. Regional deliveries must reconcile to physical deliveries; a local deficit
-blocks approval even if the national total balances. See [architecture](docs/architecture.md#regional-and-life-stage-binding)
-and the shared [input assumptions](docs/input-assumptions.md).
+The software is [AGPL-3.0-or-later](LICENSE), and Qazna documentation is [CC BY-SA 4.0](LICENSE-DOCS). The book and third-party materials have separate terms. [Scope](NOTICE) · [Dependency inventory](THIRD_PARTY_LICENSES.json).

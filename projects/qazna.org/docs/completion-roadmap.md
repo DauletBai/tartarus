@@ -1,7 +1,19 @@
 # Completion roadmap and feasibility boundaries
 
-Latest review: 19 November 2026, verified three-month extension of the five-year candidate.
-The current work order below supersedes earlier milestone-specific next steps.
+## Strategic priorities
+
+The strategic question is whether common productive capacity can sustain dignified provision throughout life as paid work changes. The decision rule, the circulation of existing measure and the renewal of real resources must be examined together.
+
+| Stage | Decision | Evidence |
+| --- | --- | --- |
+| 1. Equal standing | How does provision change when paid hours fall while needs persist? | Compare the purchasing gap by group under different levels of income replacement and an entitlement based on need. The first calculation holds output and total means fixed. |
+| 2. Continuous circulation | How much opening measure keeps a growing five-year circuit functioning with delayed settlement? | Exact opening bounds, dated replay and a one-unit-short counterexample for each of four settlement delays. |
+| 3. Continuity in the physical economy | Can the same groups actually receive provision on time and can depleted capacity be restored? | Bind the access and delay cases to the existing physical capacity and demographic schedules. Record shortfalls by group and period, reserve recovery and delayed provision separately. |
+| 4. Independent comparison | Does the proposed rule improve outcomes under local conditions? | Compare a partner's existing provision, benefits and administrative effort with the new rules on common inputs. Publish assumptions and conditions under which existing practice performs as well or better. |
+
+[Calculations for stages 1 and 2](organism.md#five-year-circulation-and-access) · [Existing physical studies for stage 3](physical-circulation.md) · [Evaluation terms for stage 4](pilot-charter.md#comparison-and-decision).
+
+**Sector work resumes when it can change a named decision.** Fuel tank sizing, storage leakage, generator availability, local crop yields and delivery coefficients belong with a partner's observations. Preserve the existing demonstration cases and regression tests. A new hypothetical coefficient alone supplies no reason to extend them. [Partner brief](pilot-charter.md#first-engagement).
 
 ## Completion scope and remaining work — 12 November 2026
 
@@ -58,11 +70,59 @@ revised payment suffix from existing balances. This experiment consumes carried
 food reserves; it does not yet renew them for a second agricultural cycle.
 See the [extension results](physical-circulation.md#three-additional-months--19-november-2026).
 
-Next, extend through the following harvest and replacement dates, with terminal
-reserve targets and finite fuel and packaging deposits. Compare extraction and
-disposal under the same demand. Recalculate the payment suffix for the accepted
-physical candidate, then persist reviewed funding with stale-state, retry and
-history checks. Package 3 source calibration continues alongside package 4.
+The full sixth year now passes with a newly sown harvest, nine terminal food
+reserve floors, replacement of all retiring equipment cohorts and fully funded
+payments under two packaging policies. It is a separate prospective plan from
+the same five-year parent. Another year of the same packaging use exceeds the
+remaining material even with immediate, unlimited processing capacity.
+See the [harvest comparison](physical-circulation.md#sixth-year-harvest-and-reserve-renewal).
+
+The operator can now propose and separately approve treasury allocations tied
+to a physical generation and a circulation generation. The approved scenario
+retains allocations across continuations. Offline reference calculations for
+63 and 72 months independently verify every transfer and final balance.
+The live ledger stays separate. See [reviewed funding](architecture.md#reviewed-treasury-funding).
+
+### Engineering evidence supporting the demonstrator
+
+The versioned plan, exact circulation and historical replay are working for the
+selected cases. The production plan and the population projection still make
+different assumptions about what people need. Closing the original payment
+schedule cannot resolve this mismatch. The [supply deadline study](physical-circulation.md#population-demand-and-supply-deadlines)
+now quantifies it for two commodities over 60 months, including a shortfall that
+persists even if all production starts are rescheduled within the existing graph.
+
+1. Establish common demand, calendar, physical units and opening conditions.
+   The [January predecessor-year case](physical-circulation.md#january-provision-from-the-previous-harvest)
+   traces both deliveries back to sowing and preserves the failed original case.
+   The crop study now verifies the full five demand years after the opening boundary.
+2. Recalculate the whole production plan against that same demand, keeping
+   finite inputs, reserves and shared capacities. With the original feed target and
+   restored stocks, the five existing sowings fall at least 4,186,128 hectare-seasons
+   short. The [field rotation study](physical-circulation.md#five-years-of-deliveries-under-field-rotation)
+   now gives three grain plans under changed land, yield and monthly irrigation.
+   The [upstream check](physical-circulation.md#shared-inputs-for-the-six-grain-seasons)
+   carries ore, wrapping and power inputs across the predecessor boundary. Equipment
+   replacement and built storage miss dated deadlines on the original schedule.
+   The [joint construction and payment replay](physical-circulation.md#scheduling-construction-and-payments-together)
+   closes both gaps for the three grain yields through December 2031. The [packaging continuation](physical-circulation.md#packaging-after-december-2031)
+   carries those materials and equipment lives into 2032–2037, quantifies the
+   first shortfall and tests dated collection. The [grain return-freight study](physical-circulation.md#grain-deliveries-and-return-freight-for-wrapping)
+   now allocates whole trips, work and energy on the collection calendar.
+   The [freight energy replay](physical-circulation.md#energy-supply-for-grain-freight)
+   supplies that timetable with finite fuel and expiring equipment, including a
+   storage-loss sensitivity. The [fuel storage comparison](physical-circulation.md#storing-fuel-and-renewing-power-modules)
+   now schedules replacement generators and verifies the dated service payments
+   from carried account balances for both strategies. Tank capacity, losses and replacement-unit availability await local operating data.
+   The separate
+   [district portfolio](physical-circulation.md#greenhouse-freshwater-and-coastal-production)
+   quantifies alternative food and water routes. Integration needs a shared energy,
+   feed, freight and nutrient-demand allocation.
+3. Use that scenario for operator review, revision, recovery and a reproducible
+   release. Regional calibration and additional sectors extend the scope of
+   the result. Reopen reusable packaging when addressing its measured gap is
+   necessary for the chosen horizon. The seventh-year counterexample remains.
+
 The effort range below remains a planning estimate, not a new deadline.
 
 The target for this estimate is **research demonstrator v1**: a reproducible,
@@ -78,7 +138,7 @@ national sectors or a production monetary system.
 | 1. Persistent physical scenario foundation — implemented | Dated and capital/seasonal inputs, reviewed versions, pinned selected stocks and restart/restore; monetary association continues in package 2 | — |
 | 2. Join extended physical and monetary plans — implemented for selected candidate | 60-month runtime fixture, origin-preserving food, upstream production, finite capital/recovery and exact payments; independent balances and rejection of infeasible capacity changes. Efficiency, deficit quantification and repeatable policy continue in package 4 | — |
 | 3. Input and population registry — bounded foundation implemented | Exact monthly cohorts, registry metadata, unknown needs and reviewed binding implemented. Regional/life-stage needs, shared service capacity and local-shortage gates implemented. Remaining: source calibration, lifecycle transitions, regional routes and engineering coefficients | 6–10 |
-| 4. Close the rolling feedback experiment — bounded service repair implemented | Exact revisions, single/joint-batch repair, protected service reserves, durable incident lineage and matching reviewed circulation implemented; emergency release/recovery is implemented; continuous production and durable renewal remain. Decisions use observed state, retain commitments, replan after declared outages/demand changes, report shortages without inventing goods, and pass sensitivity/adversarial cases; optional solver outputs independently verified | 4–7 |
+| 4. Close the rolling feedback experiment — bounded service repair implemented | Exact revisions, single/joint-batch repair, protected service reserves, durable incident lineage and matching reviewed circulation implemented; emergency release/recovery is implemented; sixth-year provision and reviewed treasury renewal are implemented; seventh-year packaging supply remains open. Decisions use observed state, retain commitments, replan after declared outages/demand changes, report shortages without inventing goods, and pass sensitivity/adversarial cases; optional solver outputs independently verified | 4–7 |
 | 5. Expose the demonstrator's workflows | Small operator/reviewer interface, synthetic participant scope, intelligible reasons, correction/dispute examples, approval and audit history, accessible navigation; no claim of production identity/enrollment | 7–12 |
 | 6. Freeze and reproduce a release | Clean deployment, recorded workload envelope, sustained/restart/restore and fault exercises, dependency/privilege review, versioned evidence and known limitations, release guide and runnable demonstration | 4–6 |
 

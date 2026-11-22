@@ -492,7 +492,26 @@ shelf life is not evidence of food safety. The model still does not establish ac
 physical delivery or an indefinitely repeatable monetary circulation policy.
 
 
+### Field rotation in the grain study
+
+Each fixed field group is a seasonal land pool. Its crop processes carry
+phase-specific admissible sowing dates and share the monthly irrigation budget.
+The seasonal matrix and the independent stock replay check the same candidate.
+The food-route audit also accepts a standalone seasonal graph so the crop
+study can verify dates and expiry without asserting a funded capital plan.
+[Five-year field study](physical-circulation.md#five-years-of-deliveries-under-field-rotation).
+
 ### Population registry and demand binding
+
+The offline horizon calculation compares projected demand with physical supply
+in each resource's unit. It reports the minimum extra arrivals for fixed net
+flows and a separate necessary supply bound over all start schedules. Inputs
+come from the baseline stocks, activities, capacities and dates. See the
+[supply deadline study](physical-circulation.md#population-demand-and-supply-deadlines).
+The [January experiment](physical-circulation.md#january-provision-from-the-previous-harvest)
+reads the central population targets for the two food nodes. Its rolling snapshot
+separates opening shelves from unfinished transport. It replays the same plan
+through the dated food, material and payment checks.
 
 `src/population.rs` defines bounded, source-described parameters with rational
 lower/central/upper assumptions and an explicit unknown state. Entries carry an ID,
@@ -829,3 +848,66 @@ It never posts to PostgreSQL. See [cycle continuity](physical-circulation.md#rep
 for formulas, counterexamples and the remaining continuous-production gate.
 
 The extended scenario now exercises prospective physical and monetary continuation at period 57 and verifies a treasury-funded suffix in an offline replay. See the [63-month calculation](physical-circulation.md#three-additional-months--19-november-2026).
+
+The same five-year parent now has two verified 72-month continuations. Both use the existing physical and monetary continuation code and the offline treasury replay. A follow-on resource bound checks whether an identical packaging schedule can recur. See the [sixth-year calculation](physical-circulation.md#sixth-year-harvest-and-reserve-renewal).
+
+### Reviewed treasury funding
+
+An operator submits `fund_from_treasury: true` on the existing coupled draft
+endpoint with both expected versions. The service loads the approved physical
+plan and committed balances, orders all remaining payments and calculates the
+minimum opening balance for each account. It allocates only the productive
+units' deficits after reserving the treasury's own future obligations. The
+period comes from the physical plan's open boundary. Unavailable events,
+unsettled committed history, insufficient treasury or an unnecessary allocation
+reject the funding request. A given boundary can be funded once.
+
+The operator inspects `candidate.checkpoint` and approves or discards the saved
+draft in a separate request. Approval locks both current versions and verifies
+the candidate again. The existing append-only tables and idempotency keys store
+the decision and the funded research scenario. They create no live postings.
+Later versions carry approved allocations and verify all earlier closing balances.
+Existing unfunded requests and checkpoints preserve their canonical encoding.
+
+Evidence lists transfers in `treasury_allocations` with the period, productive
+account index and decimal amount. The common treasury is account zero. Physical
+event IDs in `events`, `failed` and `unavailable_events` retain their original
+numbering. The money report and opening bound cover the combined sequence, with
+treasury transfers preceding physical payments in their period. Its
+`first_blocked_event` indexes this combined sequence.
+
+
+The [district food portfolio](physical-circulation.md#greenhouse-freshwater-and-coastal-production)
+replays 60 monthly orders against finite groundwater, power, heat, feed, cold
+storage and freight. It is an offline comparison with no ledger capability.
+The [grain study](physical-circulation.md#scheduling-construction-and-payments-together)
+retains the inherited timetable as a failed case. It schedules whole replacement
+modules against the monthly load, verifies all physical balances and passes the
+same plan through the existing coupled preview. At the first cash shortfall it
+uses the funded continuation with the carried treasury balance. Both calculations
+run offline and leave the ledger untouched.
+
+The [packaging continuation](physical-circulation.md#packaging-after-december-2031)
+starts at the verified December 2031 checkpoint. It carries separate stocks for
+used, rejected, sorted and finished material and preserves both processing delays.
+Collection trials consume finite energy and share the remaining factory and labour
+capacity within the packaging study. The subsequent monetary plan remains open.
+
+The [return-freight comparison](physical-circulation.md#grain-deliveries-and-return-freight-for-wrapping)
+uses last month's arriving grain vehicles and carries collected material in transit.
+Dispatch, return haulage and processing share the same energy stock and monthly
+work budget. Additional outbound energy is recorded explicitly as a requirement.
+
+The [freight energy supply study](physical-circulation.md#energy-supply-for-grain-freight)
+replays the revised collection timetable unchanged. Extraction and generation
+draw on the same residual work pool. Equipment capacity ends at cohort expiry,
+and both fuel and energy have one-month delivery delays. Two separate inventories
+track extracted fuel and its finite deposit. The study includes a generation
+outage and a second dispatch plan with monthly storage loss.
+
+The [fuel storage comparison](physical-circulation.md#storing-fuel-and-renewing-power-modules)
+connects each physical schedule to the account balances of the funded December
+2031 checkpoint. The offline schedule uses the current operator and supplier
+accounts, input measures and treasury share. It settles module purchases on
+completion. Receipt dependencies are satisfied in the fully settled replay.
+For the unfunded comparison only the first blocked payment is reported.

@@ -22,6 +22,7 @@ def inventory():
                   and "__pycache__" not in p.parts]
     files += [p for p in (ROOT / "assets/brand").rglob("*")
               if p.is_file() and p.suffix in {".svg", ".png", ".ico", ".md"}]
+    files += list((ROOT / "docs/figures").glob("*.svg"))
     result = []
     for p in sorted(files):
         if p.is_symlink():

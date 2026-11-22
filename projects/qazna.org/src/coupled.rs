@@ -43,6 +43,9 @@ pub struct CoupledDefinition {
 #[derive(Clone, Debug, Serialize, Deserialize)]
 #[serde(deny_unknown_fields)]
 pub struct CoupledProposal {
+    /// Request derived treasury transfers at the approved physical boundary.
+    #[serde(default, skip_serializing_if = "std::ops::Not::not")]
+    pub fund_from_treasury: bool,
     pub id: Uuid,
     pub expected_generation: i64,
     pub model_generation: i64,
@@ -80,8 +83,18 @@ pub struct FailedEvent {
     pub event: usize,
     pub reason: String,
 }
+#[derive(Clone, Debug, PartialEq, Eq, Serialize, Deserialize)]
+pub struct TreasuryAllocation {
+    pub period: usize,
+    pub to: usize,
+    pub amount: String,
+}
+
 #[derive(Clone, Debug, Serialize, Deserialize)]
 pub struct CoupledEvidence {
+    // Omit empty history to preserve canonical bytes of existing checkpoints.
+    #[serde(default, skip_serializing_if = "Vec::is_empty")]
+    pub treasury_allocations: Vec<TreasuryAllocation>,
     pub physical: ModelVersion,
     pub links: Vec<ValuedFlow>,
     pub events: Vec<CoupledEvent>,
@@ -123,6 +136,7 @@ pub fn preview(
     unavailable_events: Vec<usize>,
 ) -> Result<CoupledVersion, LedgerError> {
     let request = CoupledProposal {
+        fund_from_treasury: false,
         id: Uuid::nil(),
         expected_generation: 0,
         model_generation: physical.generation,
@@ -452,7 +466,10 @@ pub(crate) fn calculate(
     {
         return Err(LedgerError::Invalid("invalid unavailable event set"));
     }
+    let mut treasury_allocations = Vec::new();
+    let mut committed_balances = Vec::new();
     if let Some(old) = checkpoint(&before)? {
+        treasury_allocations = old.evidence.treasury_allocations;
         let previous = physical_checkpoint(&old.evidence.physical)?
             .ok_or(LedgerError::InvalidStoredResponse)?;
         if current.input.boundary < previous.input.boundary {
@@ -466,6 +483,12 @@ pub(crate) fn calculate(
         .and_then(|prefix| prefix.replay(&current.input.model, plan))
         .map_err(|_| LedgerError::Invalid("coupled physical history changed"))?;
         let boundary = current.input.boundary;
+        committed_balances = old
+            .evidence
+            .closing_by_period
+            .get(..boundary)
+            .ok_or(LedgerError::InvalidStoredResponse)?
+            .to_vec();
         let prefix = |events: &[CoupledEvent]| {
             events
                 .iter()
@@ -491,7 +514,19 @@ pub(crate) fn calculate(
     }
     verify_events(policy, &b.links, &b.events)?;
     let events = schedule(&b.events)?;
-    let bound = schedule_opening(policy.accounts.len(), &events).map_err(|_| invalid())?;
+    let boundary = current.input.boundary;
+    if request.fund_from_treasury
+        && (before.generation == 0
+            || boundary >= plan.len()
+            || !denied.is_empty()
+            || treasury_allocations
+                .last()
+                .is_some_and(|a| a.period >= boundary))
+    {
+        return Err(LedgerError::Invalid(
+            "treasury funding requires a new open boundary in an approved, available schedule",
+        ));
+    }
     let opening = policy
         .opening
         .iter()
@@ -500,17 +535,51 @@ pub(crate) fn calculate(
     let mut balances: Vec<u128> = opening.iter().map(|&x| u128::from(x)).collect();
     let mut settled = vec![false; events.len()];
     let mut failed = vec![];
-    let mut effective_denied = denied.clone();
+    let mut effective_denied = Vec::new();
+    let mut combined = Vec::with_capacity(events.len() + treasury_allocations.len());
     let mut closing = vec![];
     let mut offset = 0;
     for t in 0..plan.len() {
+        if request.fund_from_treasury && t == boundary {
+            if !failed.is_empty() {
+                return Err(LedgerError::Invalid(
+                    "unsettled committed payments before funding",
+                ));
+            }
+            treasury_allocations.extend(derive_allocations(t, &balances, &events[offset..])?);
+        }
+        for grant in treasury_allocations.iter().filter(|a| a.period == t) {
+            let amount = number(&grant.amount)?;
+            if grant.to < 2 || grant.to >= balances.len() || amount == 0 {
+                return Err(LedgerError::InvalidStoredResponse);
+            }
+            balances[0] =
+                balances[0]
+                    .checked_sub(u128::from(amount))
+                    .ok_or(LedgerError::Invalid(
+                        "insufficient carried treasury balance",
+                    ))?;
+            balances[grant.to] = balances[grant.to]
+                .checked_add(u128::from(amount))
+                .ok_or(LedgerError::Overflow)?;
+            combined.push(ScheduledMovement {
+                period: t as u32,
+                movement: Movement {
+                    from: 0,
+                    to: grant.to,
+                    amount,
+                },
+                basis: "Reviewed treasury allocation".into(),
+            });
+        }
         while offset < events.len() && b.events[offset].period == t {
             let e = &b.events[offset];
             let amount = u128::from(number(&e.amount)?);
             let reason = if e.requires.is_some_and(|parent| !settled[parent]) {
-                effective_denied.insert(offset);
+                effective_denied.push(combined.len());
                 Some("dependency")
             } else if denied.contains(&offset) {
+                effective_denied.push(combined.len());
                 Some("unavailable")
             } else if balances[e.from] < amount {
                 Some("insufficient_measure")
@@ -529,18 +598,24 @@ pub(crate) fn calculate(
                     .ok_or(LedgerError::Overflow)?;
                 settled[offset] = true;
             }
+            combined.push(events[offset].clone());
             offset += 1;
         }
         closing.push(balances.iter().map(ToString::to_string).collect::<Vec<_>>());
     }
-    let money = replay_schedule(
-        &opening,
-        &events,
-        &effective_denied.into_iter().collect::<Vec<_>>(),
-    )
-    .map_err(|_| invalid())?;
+    if !closing.starts_with(&committed_balances) {
+        return Err(LedgerError::Invalid("committed account balances changed"));
+    }
+    if request.fund_from_treasury && !failed.is_empty() {
+        return Err(LedgerError::Invalid(
+            "funded schedule still contains failed payments",
+        ));
+    }
+    let bound = schedule_opening(policy.accounts.len(), &combined).map_err(|_| invalid())?;
+    let money = replay_schedule(&opening, &combined, &effective_denied).map_err(|_| invalid())?;
     if money.closing != balances.iter().map(ToString::to_string).collect::<Vec<_>>()
-        || money.settled_events != settled.iter().filter(|&&s| s).count()
+        || money.settled_events
+            != settled.iter().filter(|&&s| s).count() + treasury_allocations.len()
     {
         return Err(LedgerError::InvalidStoredResponse);
     }
@@ -555,6 +630,7 @@ pub(crate) fn calculate(
         })
         .collect::<Result<Vec<_>, _>>()?;
     let evidence = CoupledEvidence {
+        treasury_allocations,
         physical,
         links: b.links,
         events: b.events,
@@ -586,6 +662,49 @@ pub(crate) fn calculate(
         generation,
         checkpoint: Some(bytes),
     })
+}
+
+/// Cover only the largest cumulative shortfall of each productive account in
+/// the ordered suffix. Retain the treasury's own opening requirement.
+fn derive_allocations(
+    period: usize,
+    balances: &[u128],
+    suffix: &[ScheduledMovement],
+) -> Result<Vec<TreasuryAllocation>, LedgerError> {
+    let certificate = schedule_opening(balances.len(), suffix).map_err(|_| invalid())?;
+    let floors = certificate
+        .minimum_opening_by_account
+        .iter()
+        .map(|s| s.parse::<u128>().map_err(|_| LedgerError::Overflow))
+        .collect::<Result<Vec<_>, _>>()?;
+    let mut required = floors[0];
+    let mut grants = Vec::new();
+    for (to, (&floor, &available)) in floors.iter().zip(balances).enumerate().skip(1) {
+        let amount = floor.saturating_sub(available);
+        if amount > 0 {
+            if to == 1 {
+                return Err(invalid());
+            }
+            let amount = u64::try_from(amount).map_err(|_| LedgerError::Overflow)?;
+            required = required
+                .checked_add(amount.into())
+                .ok_or(LedgerError::Overflow)?;
+            grants.push(TreasuryAllocation {
+                period,
+                to,
+                amount: amount.to_string(),
+            });
+        }
+    }
+    if required > balances[0] {
+        return Err(LedgerError::Invalid(
+            "insufficient treasury after protecting its own obligations",
+        ));
+    }
+    if grants.is_empty() {
+        return Err(LedgerError::Invalid("no treasury allocation required"));
+    }
+    Ok(grants)
 }
 
 /// Independent event-to-goods reconciliation. In particular, a correct list of
@@ -704,7 +823,25 @@ pub fn preview_continuation(
     physical: ModelVersion,
     unavailable_events: Vec<usize>,
 ) -> Result<CoupledVersion, LedgerError> {
+    preview_revision(before, physical, unavailable_events, false)
+}
+
+/// Calculate the exact candidate that the reviewed API would propose.
+pub fn preview_funded_continuation(
+    before: CoupledVersion,
+    physical: ModelVersion,
+) -> Result<CoupledVersion, LedgerError> {
+    preview_revision(before, physical, vec![], true)
+}
+
+fn preview_revision(
+    before: CoupledVersion,
+    physical: ModelVersion,
+    unavailable_events: Vec<usize>,
+    fund_from_treasury: bool,
+) -> Result<CoupledVersion, LedgerError> {
     let request = CoupledProposal {
+        fund_from_treasury,
         id: Uuid::nil(),
         expected_generation: before.generation,
         model_generation: physical.generation,
@@ -770,6 +907,7 @@ mod tests {
                 checkpoint: None,
             },
             CoupledProposal {
+                fund_from_treasury: false,
                 id: Uuid::new_v4(),
                 expected_generation: 0,
                 model_generation: 1,
@@ -779,6 +917,41 @@ mod tests {
             p,
         )
     }
+    #[test]
+    fn treasury_floors_protect_existing_obligations_and_exclude_resident_credit() {
+        let edge = |from, to, amount| ScheduledMovement {
+            period: 2,
+            movement: Movement { from, to, amount },
+            basis: "fixture".into(),
+        };
+        let suffix = [edge(0, 1, 4), edge(1, 2, 4), edge(3, 2, 3)];
+        assert!(derive_allocations(2, &[6, 0, 0, 0], &suffix).is_err());
+        let grants = derive_allocations(2, &[7, 0, 0, 0], &suffix).unwrap();
+        assert_eq!(
+            grants,
+            vec![TreasuryAllocation {
+                period: 2,
+                to: 3,
+                amount: "3".into()
+            }]
+        );
+        assert!(derive_allocations(2, &[7, 0, 0, 3], &suffix).is_err());
+        assert!(derive_allocations(2, &[7, 0, 0, 3], &[edge(1, 2, 1)]).is_err());
+    }
+    #[test]
+    fn unavailable_or_failed_committed_events_cannot_be_repaired_by_treasury() {
+        let (mut v, r, physical) = fixture();
+        v.definition.policy.opening = ["160", "0", "0", "0", "0"].map(str::to_string).to_vec();
+        let base = calculate(v, r, physical.clone()).unwrap();
+        assert!(matches!(
+            preview_funded_continuation(base.clone(), physical.clone()),
+            Err(LedgerError::Invalid(
+                "unsettled committed payments before funding"
+            ))
+        ));
+        assert!(preview_revision(base, physical, vec![83], true).is_err());
+    }
+
     #[test]
     fn complete_physical_uses_have_exactly_one_goods_link_and_money_conserves() {
         let (v, r, p) = fixture();
@@ -1049,6 +1222,7 @@ mod tests {
             basis: "Synthetic integrated case".into(),
         };
         let req = CoupledProposal {
+            fund_from_treasury: false,
             id: Uuid::new_v4(),
             expected_generation: 0,
             model_generation: 1,

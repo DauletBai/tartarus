@@ -816,6 +816,13 @@ and 320 exhaustive small mortality cases. They reject invalid dates, units, unkn
 references, bad intervals, malformed dimensions, fractional people, excess departures,
 missing/overlapping groups, duplicate mappings and hidden unknown requirements.
 
+The same command reproduces all 18 supply comparisons under
+`fixed_flow_supply_bounds`. A dynamic program enumerates allowed closing stocks
+independently and checks the minimum arrivals at every prefix of 128 short
+scenarios. A separate test uses a two-period production delay and a large late
+capacity to check the all-schedules bound and its disappearance after adequate
+opening supply.
+
 The prospective upstream audit records unmet needs; full model approval rejects
 that candidate. A separate synthetic finite-stock water-component fixture verifies
 the successful runtime path without claiming a replenishing production chain.
@@ -1133,3 +1140,63 @@ cluster. HTTP smoke passed across three restarts; logical restore verified 48
 tables. The 60-period circulation case completed 4,548 requests in 57.816 seconds
 with one restart, and closed circulation completed 3,901 requests in 46.424 seconds
 with two restarts. Actor exercise seeds 7 and 19 passed.
+
+The extended fixture also regenerates two 72-month harvest scenarios. The check compares the complete result byte for byte, including terminal reserve floors, original-age retirements, negative controls for missed sowing and replacement, integer packaging bounds and replay of payments from existing balances.
+
+The reviewed funding exercise binds a grant to two accepted versions, races
+two approvals, retries the winning command, changes the physical head and
+replays a later outage. HTTP restart and PostgreSQL dump/restore verify the
+accepted version and the original idempotent response. The extended study
+also compares grants and closing accounts with an independent suffix replay.
+
+The extended scenario generator reads the population input fixture for its January targets. The byte-for-byte check includes pending December shipments, a one-kilogram dispatch shortfall and a fabricated closing stock that must both fail physical replay.
+The five-sowing bound sums raw, preserved and delivered stocks per crop. The generator checks zero external food, restoration of opening stocks and the land assignment of every process with positive net food output.
+
+Run `cargo test --locked --example field_rotation` for uneven field sizes and
+crop-specific allocations. To regenerate the published 72-month study, run
+`cargo run --locked --example field_rotation -- research/field-rotation.json`.
+The full check regenerates it to a temporary path and compares every byte.
+Moving one hectare onto a resting field or losing 20% of the required peak
+water must fail both seasonal checks. Food age and terminal stocks are
+independently replayed in each accepted case. The example also delays one
+generator and one warehouse by a month in separate runs and checks the exact
+capacity constraint and month for each failure. The generated report verifies
+that the funded continuation settles every payment, preserves the account
+history before March 2030 and keeps the original total measure.
+
+The same field-rotation command regenerates `packaging_after_2031`. Each yield
+is replayed independently and the three downstream results must agree before a
+common report is written. The focused test covers sorting lot boundaries, zero
+energy, insufficient factory slots and a missed collection month. Every monthly
+row checks conservation including work still in progress and diagnostic extra supply.
+The no-collection case also gives an independent check by simple subtraction
+of cumulative monthly use from the actual opening stock.
+
+The same generator writes `packaging_after_2031.grain_return_freight`. The
+focused freight test dispatches a single grain lot followed by zero orders.
+It checks arriving vehicles, the partially filled final return, a cancelled
+return, processing dates and the missing energy when the opening stock is zero.
+
+The November collection case now contains `revised_collection.energy_supply`.
+Its no-production replay must reproduce every month's original shortfall.
+The tests cover a fuel reserve that occupies all opening stock, both production
+delays, whole-batch rounding, constrained storage and shared work. The report
+also checks the closing fuel, energy and deposit balances with additional
+production to cover monthly storage loss.
+
+The same command also regenerates `energy_supply.storage_comparison` on the
+revised route. All three yield histories independently produce the same physical
+and monetary report. The energy-loss inverse is checked against integer
+rounding boundaries. A small schedule tests the month between final generation
+and delivery. Full-horizon and month-by-month settlement replays must produce
+identical closing accounts.
+
+## Reproducing the district food study
+
+Run `cargo test --locked --example food_technologies` and
+`cargo run --locked --example food_technologies -- /tmp/food-technologies.json`
+from the project directory. Inputs live in `fixtures/food-technologies.json`.
+The full check regenerates both district and field-rotation reports and compares
+their bytes with the published results. The tests cover groundwater carry,
+shared abstractions, conditional water reuse, independent power reserve and
+seasonal stock recovery. [Study definition](physical-circulation.md#greenhouse-freshwater-and-coastal-production).

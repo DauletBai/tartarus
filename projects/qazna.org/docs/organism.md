@@ -19,6 +19,123 @@ crisis has one cause or that Qazna prevents every crisis. Agreement with the boo
 is not required to reproduce the equations or identify a defect. Reading it aids
 interpretation; independent technical criticism strengthens the research.
 
+## Five-year circulation and access
+
+The justice criterion is whether each group can obtain what it needs through a change in employment. The continuity criterion is whether the same units can pass through the productive system again in time for the next period. These criteria require different measurements.
+
+**Access at a fixed level of output.** Let $N_g$ be the group's daily need at a fixed unit measure. In the comparison, the working-age group initially receives $N_g$ in earnings. If a fraction $h$ of paid hours is lost at a constant hourly rate and a fraction $r$ of the lost income is replaced, its purchasing gap is $N_g h(1-r)$. Children and people unable to work retain their initial entitlements in every case. The unpaid portion accrues elsewhere in the economy. Under the need rule the group receives $N_g$ independently of hours. For the opening needs of 4,000, 3,000 and 3,000 units, the table shows the working-age group's gap.
+
+| Paid hours lost | No replacement | Half of lost income replaced | Full replacement | Need-based entitlement |
+| --- | ---: | ---: | ---: | ---: |
+| 0% | 0 | 0 | 0 | 0 |
+| 50% | 1,500 | 750 | 0 | 0 |
+| 100% | 3,000 | 1,500 | 0 | 0 |
+
+This is a one-day distribution comparison. There is no assumed change in physical output, prices or total income. Full income replacement and need-based provision yield the same coverage here. A real comparison would measure eligibility gaps, administrative burden and access to suitable goods. The trial does not measure motives, predict employment or establish that all existing systems leave wages uninsured.
+
+**Minimum stock for a growing circuit.** Write $D_t$ for the total daily allocation. Weights are 40%, 30% and 30%. Across five 365-day years, $D_t$ takes the successive values 10,000, 10,500, 11,000, 11,500 and 12,000. Each day starts with allocations and closes with the settlements due that day. If common production proceeds clear $d$ days after allocation, then just before clearance the treasury must bridge today and up to $d$ prior allocations. With zero allocations before day zero, the exact opening requirement is
+
+$$
+B_{min}(d)=\max_t \sum_{k=0}^{d}D_{t-k}.
+$$
+
+The five-year household allocation volume is $365(10{,}000+10{,}500+11{,}000+11{,}500+12{,}000)=20{,}075{,}000$ units. For delays of 0, 1, 2 and 5 days the opening balances are respectively 12,000, 24,000, 36,000 and 72,000. All 62,050 transfers settle in each replay; after the last in-transit units clear, the closing treasury equals its opening balance. Reducing each opening by one unit produces its first missed transfer on day 1,461, 1,462, 1,463 and 1,466 respectively, counting the first day as day one. The published JSON uses zero-based days.
+
+The bound assumes the full common share re-enters circulation, a fixed order of transactions and a known delay. A longer disruption or permanently retained proceeds change the bound. A buffer covers a timing gap. Physical reserves and productive renewal cover different risks. The proposed rule for issuing measure against certified growth is outside this calculation.
+
+To reproduce both stages, run `cargo run --locked --example circulation_study -- /tmp/qazna-circulation.json` from the project directory. Compare `access_sensitivity` and `growth_and_delay` with the [published result](../research/circulation-model.json). The executable checks the rolling sum against every account's transaction-prefix bound and replays each schedule with both the exact opening and one unit less.
+
+## What an early adopter could test
+
+In the author's proposal, access to necessities follows a person's needs across their lifetime, including periods when they cannot work. Tenge measures provision at declared norms. A common treasury circulates existing measure; the wider proposal ties additional issuance to verified growth in real capacity. The working prototype tests finite allocations and can reject an unaffordable request. Establishing a credible measure of capacity growth and the institution empowered to certify it remains a separate research problem.
+
+Three different failures can look identical to a household that went without a meal. A loss of paid hours can put a meal out of reach. A provider can have the stock and still miss a payment deadline. A district can have enough money and too little suitable food. The first calls for examining entitlement and household income, the second for checking settlement and liquidity, the third for changing production or distribution. Transferring funds alone resolves only some of these cases. A credible evaluation also counts existing public provision and income support in the comparison.
+
+The book discusses the Chicago Fed's *Modern Money Mechanics*, a historical workbook on bank reserves and deposit expansion. A country-level comparison needs the credit institutions, transfer programmes and rules actually in force in the country and period being studied. The Bank of England's account explains how lending creates deposits and how regulation, monetary policy and borrowers constrain the process. [Chicago Fed workbook](https://fraser.stlouisfed.org/title/modern-money-mechanics-9810/modern-money-mechanics-717249) · [Bank of England](https://www.bankofengland.co.uk/quarterly-bulletin/2014/q1/money-creation-in-the-modern-economy).
+
+The strategic opportunity for an early adopter is to establish a publicly inspectable method for sharing productivity gains. A region that publishes its rules, costs, coverage gaps and failures gives other regions something they can test. The stronger claim that this would confer international economic leadership requires comparative evidence over time. [Local comparison design](pilot-charter.md#comparison-and-decision).
+
+## What the organism analogy asks us to test
+
+Imagine a tissue could claim oxygen in proportion to its existing stock, and
+could increase that claim simply by accumulating more. An injured tissue with
+a small stock could lose supply just as its need increased. This thought
+experiment gives a precise objection to treating accumulated purchasing power
+as the signal for allocating necessities. Aristotle already distinguished
+provision for the household, which has a purpose and a limit, from acquisition
+pursued without limit. [Aristotle, Politics, Book I](https://classics.mit.edu/Aristotle/politics.1.one.html).
+
+There is a documented economic mechanism by which an initial disturbance can
+grow. Rising collateral values can expand borrowing and asset purchases. When
+prices fall, falling collateral values tighten access to credit and can deepen
+the contraction. The relevant question for Qazna is whether households can
+still receive essential goods through such a disruption. A drought can also
+reduce the physical harvest under any accounting rule. Economic exclusion can
+contribute to violent conflict alongside struggles over political power,
+security and justice. A provisioning trial can measure exposure to exclusion;
+a claim about preventing wars requires different evidence.
+[BIS study of the financial cycle](https://www.bis.org/publ/qtrpdf/r_qt1812g.htm)
+and [UN–World Bank study of conflict prevention](https://www.worldbank.org/en/topic/fragilityconflictviolence/publication/pathways-for-peace-inclusive-approaches-to-preventing-violent-conflict).
+
+The biological comparison suggests two time scales. Development and renewal
+rely on inherited regulatory mechanisms. Their operation responds to conditions
+as they change. At the onset of voluntary exercise, central signals and local
+vascular responses help adjust blood supply. For Qazna the enduring commitment
+is provision across the life course. Forecasts for care, food and capacity
+change with evidence and voluntary choices. A child's need for care has the
+same standing whether an illness is inherited, environmental or of unknown
+origin. Cystic fibrosis, for example, can affect a newborn through inherited
+variants. Dignity and equal standing are ethical decisions people make for
+one another. An individual must be able to challenge the system's account of
+their needs. [NHGRI on gene regulation](https://www.genome.gov/genetics-glossary/Gene-Regulation),
+[human exercise study](https://pubmed.ncbi.nlm.nih.gov/27103652/) and
+[MedlinePlus Genetics on cystic fibrosis](https://medlineplus.gov/genetics/condition/cystic-fibrosis/).
+
+### What a four-month warning changes
+
+Consider the power modules in the existing grain plan. The 72 monthly
+observations span January 2026 through December 2031, including the predecessor
+year. The opening 20 modules retire in July 2027. A new module requires three
+months of construction and becomes usable the following month. Each module
+provides 2,000,000 generation activity units per month over 24 months.
+For the published generation demand, six modules cover the peak in the first
+twelve months after retirement. The three schedules below all start 40 modules
+and use the same opening equipment and generation demand.
+
+| Start policy | Months short of generation capacity | Sum of uncovered generation activities | Active modules in December 2031 |
+| --- | ---: | ---: | ---: |
+| Inherited timetable | 12 | 115,417,239 | 20 |
+| Start six when each six-module tranche is needed | 4 | 37,520,290 | 14 |
+| Start those six four months before each need | 0 | 0 | 14 |
+
+To reproduce, set month zero to January 2026 and retain the published schedule
+for generation process 31, repeating the first 12 periods before the original
+60. The inherited construction starts (month, quantity) are (26, 20) and
+(50, 20). The second schedule advances six units from each to months 18 and
+42. The third advances those units to months 14 and 38. A start in month
+`s` contributes from `s + 4` through `s + 27`, inclusive. In each month
+subtract active capacity from scheduled generation and retain the positive
+part. The total is measured in process activities, not kWh or people served.
+[Physical inputs, capacities and delays](../fixtures/extended-scenario.json)
+and [published baseline shortfalls](../research/field-rotation.json).
+
+The early start in March 2027 requires 6,000,000 energy ticks, 60,000 material
+ticks, 6,000 work ticks and six units of shared factory capacity that month.
+Moving starts preserves total module count but changes when those resources
+are needed and when the equipment will next retire. The 14 active modules
+at the end of the revised schedules also matter for the following years.
+This comparison checks one capacity constraint. Plant construction, grain
+storage, all competing work and treasury liquidity still need a joint replay.
+
+**Design rule.** Keep a dated renewal obligation for each essential capability.
+At review time, look ahead at least through preparation, construction and
+commissioning. Compare surviving capacity and committed completions with
+expected need and the chosen physical reserve. When coverage falls short,
+propose the latest feasible start and expose any competing use of its inputs.
+Carry the ages, outstanding work and next retirement dates across every
+five-year boundary. Recheck after new observations and let an operator review
+the physical and accounting consequences before application.
+
 ## Mapping the analogy
 
 | Biological analogy | Qazna concept |
