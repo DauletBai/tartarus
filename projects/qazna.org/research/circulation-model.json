@@ -1,4 +1,150 @@
 {
+  "access_sensitivity": [
+    {
+      "accessible_by_group": [
+        4000,
+        3000,
+        3000
+      ],
+      "income_outside_need_groups": 0,
+      "lost_income_replaced_percent": 0,
+      "need_rule_by_group": [
+        4000,
+        3000,
+        3000
+      ],
+      "paid_hours_lost_percent": 0,
+      "total_need": 10000
+    },
+    {
+      "accessible_by_group": [
+        4000,
+        3000,
+        3000
+      ],
+      "income_outside_need_groups": 0,
+      "lost_income_replaced_percent": 50,
+      "need_rule_by_group": [
+        4000,
+        3000,
+        3000
+      ],
+      "paid_hours_lost_percent": 0,
+      "total_need": 10000
+    },
+    {
+      "accessible_by_group": [
+        4000,
+        3000,
+        3000
+      ],
+      "income_outside_need_groups": 0,
+      "lost_income_replaced_percent": 100,
+      "need_rule_by_group": [
+        4000,
+        3000,
+        3000
+      ],
+      "paid_hours_lost_percent": 0,
+      "total_need": 10000
+    },
+    {
+      "accessible_by_group": [
+        4000,
+        3000,
+        1500
+      ],
+      "income_outside_need_groups": 1500,
+      "lost_income_replaced_percent": 0,
+      "need_rule_by_group": [
+        4000,
+        3000,
+        3000
+      ],
+      "paid_hours_lost_percent": 50,
+      "total_need": 10000
+    },
+    {
+      "accessible_by_group": [
+        4000,
+        3000,
+        2250
+      ],
+      "income_outside_need_groups": 750,
+      "lost_income_replaced_percent": 50,
+      "need_rule_by_group": [
+        4000,
+        3000,
+        3000
+      ],
+      "paid_hours_lost_percent": 50,
+      "total_need": 10000
+    },
+    {
+      "accessible_by_group": [
+        4000,
+        3000,
+        3000
+      ],
+      "income_outside_need_groups": 0,
+      "lost_income_replaced_percent": 100,
+      "need_rule_by_group": [
+        4000,
+        3000,
+        3000
+      ],
+      "paid_hours_lost_percent": 50,
+      "total_need": 10000
+    },
+    {
+      "accessible_by_group": [
+        4000,
+        3000,
+        0
+      ],
+      "income_outside_need_groups": 3000,
+      "lost_income_replaced_percent": 0,
+      "need_rule_by_group": [
+        4000,
+        3000,
+        3000
+      ],
+      "paid_hours_lost_percent": 100,
+      "total_need": 10000
+    },
+    {
+      "accessible_by_group": [
+        4000,
+        3000,
+        1500
+      ],
+      "income_outside_need_groups": 1500,
+      "lost_income_replaced_percent": 50,
+      "need_rule_by_group": [
+        4000,
+        3000,
+        3000
+      ],
+      "paid_hours_lost_percent": 100,
+      "total_need": 10000
+    },
+    {
+      "accessible_by_group": [
+        4000,
+        3000,
+        3000
+      ],
+      "income_outside_need_groups": 0,
+      "lost_income_replaced_percent": 100,
+      "need_rule_by_group": [
+        4000,
+        3000,
+        3000
+      ],
+      "paid_hours_lost_percent": 100,
+      "total_need": 10000
+    }
+  ],
   "accounts": [
     "children_need_group",
     "unable_to_work_need_group",
@@ -765,6 +911,44 @@
       "period": 0
     }
   ],
+  "growth_and_delay": [
+    {
+      "additional_buffer_over_same_day": 0,
+      "clearing_delay_days": 0,
+      "closing_treasury_after_clearance": "12000",
+      "first_missed_day_with_one_unit_less_zero_based": 1460,
+      "five_year_need_allocations": 20075000,
+      "minimum_treasury_opening": 12000,
+      "settled_events": 62050
+    },
+    {
+      "additional_buffer_over_same_day": 12000,
+      "clearing_delay_days": 1,
+      "closing_treasury_after_clearance": "24000",
+      "first_missed_day_with_one_unit_less_zero_based": 1461,
+      "five_year_need_allocations": 20075000,
+      "minimum_treasury_opening": 24000,
+      "settled_events": 62050
+    },
+    {
+      "additional_buffer_over_same_day": 24000,
+      "clearing_delay_days": 2,
+      "closing_treasury_after_clearance": "36000",
+      "first_missed_day_with_one_unit_less_zero_based": 1462,
+      "five_year_need_allocations": 20075000,
+      "minimum_treasury_opening": 36000,
+      "settled_events": 62050
+    },
+    {
+      "additional_buffer_over_same_day": 60000,
+      "clearing_delay_days": 5,
+      "closing_treasury_after_clearance": "72000",
+      "first_missed_day_with_one_unit_less_zero_based": 1465,
+      "five_year_need_allocations": 20075000,
+      "minimum_treasury_opening": 72000,
+      "settled_events": 62050
+    }
+  ],
   "kind": "synthetic_closed_circulation_candidate",
   "limitations": [
     "Aggregate need groups; not 100 million individual actors",
@@ -1113,5 +1297,5 @@
   ],
   "shared_treasury_account_index": 10,
   "unit": "synthetic minor accounting measure; fixed across scenarios",
-  "version": 1
+  "version": 2
 }

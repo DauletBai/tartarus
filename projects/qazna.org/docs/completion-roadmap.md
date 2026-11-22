@@ -2,16 +2,16 @@
 
 ## Strategic priorities
 
-The immediate objective is to establish whether a public-service team can understand, reproduce and use the proposed comparison. The technical milestones below record completed experiments and earlier effort estimates.
+The strategic question is whether common productive capacity can sustain dignified provision throughout life as paid work changes. The decision rule, the circulation of existing measure and the renewal of real resources must be examined together.
 
-| Order | Work | Evidence for the next decision |
+| Stage | Decision | Evidence |
 | --- | --- | --- |
-| 1 | Present the economic problem and walk through one household decision. | Give the overview to a programme director, an operator and an evaluator. Ask each to explain who decides, where the funds come from, what happens when food is missing and what the prototype can prove. Record misunderstandings and revise the presentation. |
-| 2 | Make the existing meal example usable in a short, guided demonstration. | Starting from the same case, a reviewer can identify an unverified claim, a shortage of funds and a confirmed delivery, then trace each conclusion to a record. |
-| 3 | Establish a credible local comparison. | A potential partner can identify a service, data owner, baseline, dates, units, budget, coverage objective and relevant exclusions. An independent evaluator can reproduce the baseline and identify a result under which the agency should keep its current practice. |
-| 4 | Decide whether to invest in a voluntary shadow pilot. | The commissioner reviews access, costs, participant choice, continuity and governance. Publish the scope and limitations of any findings. Other jurisdictions can reproduce the method using local inputs. |
+| 1. Equal standing | How does provision change when paid hours fall while needs persist? | Compare the purchasing gap by group under different levels of income replacement and an entitlement based on need. The first calculation holds output and total means fixed. |
+| 2. Continuous circulation | How much opening measure keeps a growing five-year circuit functioning with delayed settlement? | Exact opening bounds, dated replay and a one-unit-short counterexample for each of four settlement delays. |
+| 3. Continuity in the physical economy | Can the same groups actually receive provision on time and can depleted capacity be restored? | Bind the access and delay cases to the existing physical capacity and demographic schedules. Record shortfalls by group and period, reserve recovery and delayed provision separately. |
+| 4. Independent comparison | Does the proposed rule improve outcomes under local conditions? | Compare a partner's existing provision, benefits and administrative effort with the new rules on common inputs. Publish assumptions and conditions under which existing practice performs as well or better. |
 
-The [two-meal walkthrough](two-meals.md) and its [reproducible decision record](../research/meal-decision.json) are ready for first-time readers. The next evidence needed is their unaided account of the decision. Use the three questions in the walkthrough before asking a partner for records. Reader sessions and a local programme comparison are still pending.
+[Calculations for stages 1 and 2](organism.md#five-year-circulation-and-access) · [Existing physical studies for stage 3](physical-circulation.md) · [Evaluation terms for stage 4](pilot-charter.md#comparison-and-decision).
 
 **Sector work resumes when it can change a named decision.** Fuel tank sizing, storage leakage, generator availability, local crop yields and delivery coefficients belong with a partner's observations. Preserve the existing demonstration cases and regression tests. A new hypothetical coefficient alone supplies no reason to extend them. [Partner brief](pilot-charter.md#first-engagement).
 

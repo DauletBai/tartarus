@@ -8,56 +8,55 @@
   <a href="docs/completion-roadmap.md"><img src="assets/brand/badges/stage.svg" alt="Research prototype"></a>
   <a href="LICENSE"><img src="assets/brand/badges/license.svg" alt="Code license AGPL-3.0-or-later"></a>
 </p>
-## Who gets the gains when machines do more of the work?
+## Why build an economy around circulation?
 
-A region might produce the same amount of food with fewer paid hours. A family that loses those hours still needs its meals. If its income falls, the food can be available and still be out of reach. Qazna helps a public agency or research institute test how to keep essential provision within reach as work changes.
+Qazna starts from a principle of justice: a person's ability to live and develop should survive a loss of employment, illness and old age. In *Tartar and I*, Daulet Baimurza asks what happens when machines can produce more with fewer hours of paid work. A society may gain productive capacity while the people whose work made that gain possible lose access to its benefits. Who has a claim on what society can now produce?
 
-**[Start here: follow two meals from the kitchen to a resident](docs/two-meals.md).** See who can authorise provision, where the four accounting units come from and why payment waits for the resident's confirmation. You can follow the actual demonstration record in your browser.
+The author uses **chrematistics** for an arrangement in which accumulating money becomes an end in itself. A lender’s claim can grow through accrued interest even when the capacity to house, teach or care for people stands still. Qazna explores a different organising principle, **Тең (equal measure)**. Natural resources and the productive capabilities built across generations are a common inheritance. Everyone has equal standing; how much support a person needs changes over a lifetime. People retain the freedom to choose their work, pursue their talents and challenge a decision about their needs.
 
-In *Tartar and I*, Daulet Baimurza uses **chrematistics** for an economy that treats accumulating money as an end in itself. He proposes **Tenge**, a common unit of account, and one treasury through which that measure circulates. His starting point is human dignity. A person's claim to basic provision should survive a change in employment, ability or health. The analogy is circulation in a living body. Record a need, direct available resources to it, observe the outcome and adjust the plan. In human communities, people choose, give consent and can challenge a decision. [Book and economic principles](docs/organism.md).
+### What circulation contributes to the design
 
-**Qazna today is a research prototype.** The proposed first engagement is a retrospective comparison for one public service. A municipality and a provider can supply an anonymised record of what was needed, available, budgeted and delivered. An evaluator can replay the existing rules and the proposed treasury rule under the same constraints, and see who would have been served on time. A first partner could publish the method and its results for other regions to reproduce. [Partner brief and evaluation terms](docs/pilot-charter.md).
+In an animal's body, blood supplies tissues throughout life. A working muscle can require more oxygen now; another organ still needs its supply at rest. The engineering insight is the combination of a common circulation, local signals and reserves that can bridge interruptions. The decision to care for each person on equal terms is a human ethical choice. A community must also decide who sets the norms and how those decisions can be appealed.
 
-### How the proposed economy connects needs and provision
+In the proposed economy **Tenge** is a common unit of account. One public treasury allocates measure according to need. Existing units circulate from households through services, production, materials and equipment, funding the next cycle. After enterprises meet their intermediate obligations, the common share replenishes the treasury. There is no interest on possession, interest-bearing loan or deposit yield in this circuit. The author reserves additional issuance for independently verified growth of real capacity. The study below runs entirely on existing units. [Principles, governance and evidence](docs/organism.md).
 
 ```mermaid
 flowchart TD
-    needs["People state what they need and choose how to receive it"] --> plan["Plan services and production"]
-    capacity["Verified stock, staff, energy and equipment"] --> plan
-    plan --> match["Match a request with available provision"]
-    treasury["Common treasury allocates existing units where needed"] --> match
-    match --> delivery["Provider delivers and resident confirms receipt"]
-    delivery --> payment["Units move to the provider"]
-    delivery --> review["Compare what people needed with what reached them"]
-    match -->|Unmet need| review
-    review --> plan
-    payment -.->|Later production cycles| capacity
+    people["People express needs and choices throughout life"] --> plan["Plan provision, reserves and renewal"]
+    capacity["Available people, energy, infrastructure and natural resources"] --> plan
+    plan --> treasury["The common treasury allocates existing measure"]
+    treasury --> households["Households"]
+    households --> production["Services and production"]
+    production --> inputs["Materials, equipment and upkeep"]
+    production --> share["Common share of productive output"]
+    inputs --> share
+    share --> treasury
+    production --> results["Provision received, delays and unmet needs"]
+    results --> plan
 ```
 
-The feedback comes from both completed deliveries and needs still waiting. Payments help providers arrange the next cycle. Each cycle also needs real supplies and people. The [two-meal walkthrough](docs/two-meals.md#follow-the-four-units) follows one request through settlement. The [longer production studies](docs/physical-circulation.md) examine later cycles separately.
+### Two questions the calculations can already answer
 
-## Why test this now?
+**Who keeps access when paid hours fall?** In a one-day comparison, three groups require 4,000, 3,000 and 3,000 units. If the third group loses half its paid hours and income falls proportionally, its uncovered need is 1,500 units. Replacing half the lost income reduces the gap to 750. Full replacement or a need-based entitlement covers the full 3,000. All comparisons hold aggregate means and available output fixed. The calculation identifies the distribution rule that matters; the prevalence of hour losses and the protection already provided require local evidence.
 
-- **Access through wages.** Automation can raise output while changing who earns income and how much. The ILO estimated in 2025 that one in four workers worldwide was in an occupation with some exposure to generative AI. It expects changes in job content to be the most common outcome. Qazna's proposed comparison covers stable earnings, reduced hours and local job displacement. [ILO occupational exposure study](https://www.ilo.org/publications/generative-ai-and-jobs-refined-global-index-occupational-exposure).
-- **Credit and financial fragility.** Bank lending creates deposits and repayment extinguishes them. Research on credit and property cycles finds that recessions coinciding with financial contractions are deeper. For an essential service the practical question is whether a financing interruption delays delivery even while staff and stock remain available. [Bank of England on money creation](https://www.bankofengland.co.uk/quarterly-bulletin/2014/q1/money-creation-in-the-modern-economy) · [Financial cycle study](https://www.bis.org/publications/working-paper-380-characterising-financial-cycle-dont-lose-sight-medium-term).
-- **Who receives the benefit.** A saving on labour can accrue to equipment owners, lower prices, improve provision or free time for workers. A productivity figure alone leaves the distribution unknown. The proposed study counts suitable provision by deadline, who still waits, and how much extra work providers and households take on. [Evaluation measures](docs/ai-economic-research.md#measurement-contract).
+**How much measure must be in circulation?** In a five-year schedule, daily provision grows from 10,000 to 12,000 units. The common treasury channels **20,075,000 units** to need groups over the period. The same units pass through production repeatedly. The minimum opening stock depends on when they become available again.
 
-## What else can be checked?
+| Settlement delay | Minimum opening treasury | Extra timing reserve |
+| --- | ---: | ---: |
+| Same day | 12,000 | 0 |
+| 1 day | 24,000 | 12,000 |
+| 2 days | 36,000 | 24,000 |
+| 5 days | 72,000 | 60,000 |
 
-The planning engine also checks dated stocks, staff, equipment and payments over multiple years. An operator reviews changes. The calculations run without an AI subscription. Software checks establish reproducibility under the stated inputs. The effects on households, affordability of a national transition and permanent purchasing power of a unit remain research questions. [Five-year calculations](docs/physical-circulation.md) · [Input assumptions](docs/input-assumptions.md).
+These bounds keep every scheduled transfer on time. They measure accounting liquidity. Energy, care capacity, workforce, equipment and ecological renewal each have their own physical constraints. Fairness ultimately requires looking at what reaches people, including those with the least access. [Equations, assumptions and reproduction](docs/organism.md#five-year-circulation-and-access) · [Machine-readable results](research/circulation-model.json) · [Physical studies](docs/physical-circulation.md).
 
-## Where to start
+## What is ready for independent examination?
 
-| Reader | Decision | Starting point |
-| --- | --- | --- |
-| Public-service director or research commissioner | Is one service worth evaluating, what would it require, and what would we receive? | [Partner brief](docs/pilot-charter.md#first-engagement) |
-| Economist or independent evaluator | What would count as an improvement over our current rules, and what result would make us stop? | [Comparison protocol](docs/pilot-charter.md#comparison-and-decision) |
-| Service operator or participant representative | Who records a need, confirms delivery and handles a disputed record? | [Pilot safeguards](docs/pilot-charter.md#preconditions-before-real-participation) · [Needs and receipts](docs/needs.md) |
-| Technical evaluator | Can our team reproduce a result and inspect a failed case? | [Run the checks](#run-the-checks) · [Architecture](docs/architecture.md) · [Test record](docs/development.md) |
+Qazna is a research prototype with a Rust calculation engine and a PostgreSQL ledger. An independent team can replay the schedules, reduce a reserve by one unit and locate the first missed transfer. A public partner can compare the proposed rule with actual income protection using the same population, real resources and period. Human review governs consequential decisions. Running the calculations requires no AI subscription. [Research roadmap](docs/completion-roadmap.md#strategic-priorities) · [Pilot and comparison terms](docs/pilot-charter.md#comparison-and-decision).
 
 ## Book and implementation
 
-The Russian-language essay *Tartar and I* develops the author's argument through language, history, ethics and economics. Chapter 26 introduces the economic model. The book and project are available for independent examination. [Read the book online](https://dauletbai.github.io/tartarus/) · [Print PDF](https://media.githubusercontent.com/media/DauletBai/tartarus/main/book/Tartar_i_Ya_print_6x9.pdf).
+The Russian-language essay *Tartar and I* explores world civilization through language, history, ethics and economics. Chapter 26 introduces the economic model. The book and project are available for independent examination. [Read the book online](https://dauletbai.github.io/tartarus/) · [Print PDF](https://media.githubusercontent.com/media/DauletBai/tartarus/main/book/Tartar_i_Ya_print_6x9.pdf).
 
 ## Run the checks
 
@@ -84,6 +83,8 @@ PG_BIN=/opt/homebrew/opt/postgresql@16/bin python3 scripts/check.py
 On Linux, set `PG_BIN` to the installed PostgreSQL directory, for example `/usr/lib/postgresql/16/bin`. Checks create a private, socket-only temporary cluster and stop and delete it afterward. Existing databases are not used.
 
 ## Documentation
+
+The [settlement walkthrough](docs/two-meals.md) provides a technical example of stock attestation, budget limits and receipt confirmation.
 
 - [Current priorities and deferred sector studies](docs/completion-roadmap.md#strategic-priorities) · [Pilot charter](docs/pilot-charter.md)
 - [Physical chains and monetary circulation](docs/physical-circulation.md) · [Published calculations](research/) · [Mathematics and computing costs](docs/computation-and-ai-costs.md)

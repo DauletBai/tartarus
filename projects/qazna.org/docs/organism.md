@@ -19,6 +19,32 @@ crisis has one cause or that Qazna prevents every crisis. Agreement with the boo
 is not required to reproduce the equations or identify a defect. Reading it aids
 interpretation; independent technical criticism strengthens the research.
 
+## Five-year circulation and access
+
+The justice criterion is whether each group can obtain what it needs through a change in employment. The continuity criterion is whether the same units can pass through the productive system again in time for the next period. These criteria require different measurements.
+
+**Access at a fixed level of output.** Let $N_g$ be the group's daily need at a fixed unit measure. In the comparison, the working-age group initially receives $N_g$ in earnings. If a fraction $h$ of paid hours is lost at a constant hourly rate and a fraction $r$ of the lost income is replaced, its purchasing gap is $N_g h(1-r)$. Children and people unable to work retain their initial entitlements in every case. The unpaid portion accrues elsewhere in the economy. Under the need rule the group receives $N_g$ independently of hours. For the opening needs of 4,000, 3,000 and 3,000 units, the table shows the working-age group's gap.
+
+| Paid hours lost | No replacement | Half of lost income replaced | Full replacement | Need-based entitlement |
+| --- | ---: | ---: | ---: | ---: |
+| 0% | 0 | 0 | 0 | 0 |
+| 50% | 1,500 | 750 | 0 | 0 |
+| 100% | 3,000 | 1,500 | 0 | 0 |
+
+This is a one-day distribution comparison. There is no assumed change in physical output, prices or total income. Full income replacement and need-based provision yield the same coverage here. A real comparison would measure eligibility gaps, administrative burden and access to suitable goods. The trial does not measure motives, predict employment or establish that all existing systems leave wages uninsured.
+
+**Minimum stock for a growing circuit.** Write $D_t$ for the total daily allocation. Weights are 40%, 30% and 30%. Across five 365-day years, $D_t$ takes the successive values 10,000, 10,500, 11,000, 11,500 and 12,000. Each day starts with allocations and closes with the settlements due that day. If common production proceeds clear $d$ days after allocation, then just before clearance the treasury must bridge today and up to $d$ prior allocations. With zero allocations before day zero, the exact opening requirement is
+
+$$
+B_{min}(d)=\max_t \sum_{k=0}^{d}D_{t-k}.
+$$
+
+The five-year household allocation volume is $365(10{,}000+10{,}500+11{,}000+11{,}500+12{,}000)=20{,}075{,}000$ units. For delays of 0, 1, 2 and 5 days the opening balances are respectively 12,000, 24,000, 36,000 and 72,000. All 62,050 transfers settle in each replay; after the last in-transit units clear, the closing treasury equals its opening balance. Reducing each opening by one unit produces its first missed transfer on day 1,461, 1,462, 1,463 and 1,466 respectively, counting the first day as day one. The published JSON uses zero-based days.
+
+The bound assumes the full common share re-enters circulation, a fixed order of transactions and a known delay. A longer disruption or permanently retained proceeds change the bound. A buffer covers a timing gap. Physical reserves and productive renewal cover different risks. The proposed rule for issuing measure against certified growth is outside this calculation.
+
+To reproduce both stages, run `cargo run --locked --example circulation_study -- /tmp/qazna-circulation.json` from the project directory. Compare `access_sensitivity` and `growth_and_delay` with the [published result](../research/circulation-model.json). The executable checks the rolling sum against every account's transaction-prefix bound and replays each schedule with both the exact opening and one unit less.
+
 ## What an early adopter could test
 
 In the author's proposal, access to necessities follows a person's needs across their lifetime, including periods when they cannot work. Tenge measures provision at declared norms. A common treasury circulates existing measure; the wider proposal ties additional issuance to verified growth in real capacity. The working prototype tests finite allocations and can reject an unaffordable request. Establishing a credible measure of capacity growth and the institution empowered to certify it remains a separate research problem.

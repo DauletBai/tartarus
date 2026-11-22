@@ -136,6 +136,91 @@ fn run(
     let result = replay_schedule(&opening, events, &denied).unwrap();
     json!({"name":name,"opening":opening,"blocked_event_indices":denied,"result":result})
 }
+/// Compare access rules with the same output, fixed unit and daily income pool.
+/// Only the third group's income is exposed to paid-hour loss. The residual
+/// accrues outside these three need groups unless the comparison policy shares it.
+fn access_sensitivity(day: &[ScheduledMovement]) -> serde_json::Value {
+    let mut needs = [0u64; 3];
+    for event in day.iter().take_while(|event| event.period == 0) {
+        let m = &event.movement;
+        if m.from < needs.len() && m.to == 3 {
+            needs[m.from] += m.amount;
+        }
+    }
+    let total = needs.iter().sum::<u64>();
+    let mut cases = Vec::new();
+    for hours_lost in [0, 50, 100] {
+        for income_replaced in [0, 50, 100] {
+            let forgone = needs[2] * hours_lost / 100;
+            let replaced = forgone * income_replaced / 100;
+            let outside = forgone - replaced;
+            let mut accessible = needs;
+            accessible[2] -= outside;
+            assert_eq!(accessible.iter().sum::<u64>() + outside, total);
+            cases.push(json!({
+                "paid_hours_lost_percent": hours_lost, "lost_income_replaced_percent": income_replaced,
+                "accessible_by_group": accessible, "income_outside_need_groups": outside,
+                "need_rule_by_group": needs, "total_need": total
+            }));
+        }
+    }
+    json!(cases)
+}
+
+/// Before today's settlements the treasury must bridge today's allocations and
+/// the prior days whose settlements are still in transit. Compare this independent
+/// rolling-sum bound with both the exact event prefixes and the actual replay.
+fn growth_and_delay() -> serde_json::Value {
+    let days = 1825;
+    let mut cases = Vec::new();
+    for delay in [0, 1, 2, 5] {
+        let events = pooled(&schedule(days, delay, true));
+        let mut daily = vec![0u64; days as usize];
+        for event in &events {
+            if event.movement.from == 10 {
+                daily[event.period as usize] += event.movement.amount;
+            }
+        }
+        let window = delay as usize + 1;
+        let minimum = daily
+            .windows(window)
+            .map(|w| w.iter().sum::<u64>())
+            .max()
+            .unwrap();
+        let mut opening = vec![0; 11];
+        opening[10] = minimum;
+        let opening_strings = opening.iter().map(ToString::to_string).collect::<Vec<_>>();
+        assert_eq!(
+            schedule_opening(11, &events)
+                .unwrap()
+                .minimum_opening_by_account,
+            opening_strings
+        );
+        let funded = replay_schedule(&opening, &events, &[]).unwrap();
+        assert_eq!(funded.settled_events, events.len());
+        assert_eq!(funded.closing, opening_strings);
+        opening[10] -= 1;
+        let short = replay_schedule(&opening, &events, &[]).unwrap();
+        let first_short = short.first_blocked_period.unwrap();
+        let first_peak = (0..daily.len())
+            .find(|&t| {
+                daily[(t + 1).saturating_sub(window)..=t]
+                    .iter()
+                    .sum::<u64>()
+                    == minimum
+            })
+            .unwrap();
+        assert_eq!(first_short as usize, first_peak);
+        cases.push(json!({
+            "clearing_delay_days": delay, "minimum_treasury_opening": minimum,
+            "additional_buffer_over_same_day": minimum - daily.iter().max().unwrap(),
+            "five_year_need_allocations": daily.iter().sum::<u64>(),
+            "settled_events": funded.settled_events, "closing_treasury_after_clearance": funded.closing[10],
+            "first_missed_day_with_one_unit_less_zero_based": first_short
+        }));
+    }
+    json!(cases)
+}
 fn main() {
     let base = schedule(1825, 0, false);
     let delayed = schedule(1825, 2, false);
@@ -277,7 +362,7 @@ fn main() {
             .unwrap()
     );
     pooled_cases.push(json!({"name":"pooled_growth_two_intraday_waves","opening":initial,"bound":bound,"result":result,"residents_end_each_period_zero_by_schedule":true}));
-    let report = json!({"version":1,"kind":"synthetic_closed_circulation_candidate","model_calls":0,
+    let report = json!({"version":2,"kind":"synthetic_closed_circulation_candidate","access_sensitivity":access_sensitivity(&base),"growth_and_delay":growth_and_delay(),"model_calls":0,
         "accounts":["children_need_group","unable_to_work_need_group","working_age_need_group","retail","production","raw_materials","equipment","transit_children","transit_unable_to_work","transit_working_age"],
         "periods":1825,"unit":"synthetic minor accounting measure; fixed across scenarios",
         "pooled_cases":pooled_cases,"shared_treasury_account_index":10,
