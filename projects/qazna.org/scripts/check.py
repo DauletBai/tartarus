@@ -91,6 +91,7 @@ def main():
         run(["cargo", "run", "--locked", "--release", "--example", "service_study", "--", str(report)])
         if report.read_bytes() != (ROOT / "research/service-results.json").read_bytes():
             raise SystemExit("Service capacity report differs from reproducible calculation")
+    run([sys.executable, "scripts/care_continuity.py", "--check"])
     pg_dir = os.environ.get("PG_BIN")
     if not pg_dir:
         binary = shutil.which("initdb")

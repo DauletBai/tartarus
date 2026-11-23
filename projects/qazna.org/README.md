@@ -50,6 +50,8 @@ flowchart TD
 
 These bounds keep every scheduled transfer on time. They measure accounting liquidity. Energy, care capacity, workforce, equipment and ecological renewal each have their own physical constraints. Fairness ultimately requires looking at what reaches people, including those with the least access. [Equations, assumptions and reproduction](docs/organism.md#five-year-circulation-and-access) · [Machine-readable results](research/circulation-model.json) · [Physical studies](docs/physical-circulation.md).
 
+The [five-year care study](docs/organism.md#when-automation-a-staffing-outage-and-slow-circulation-coincide) follows five demographic groups in two regions. It shows how the same national total can conceal different access for people who lose paid hours.
+
 ## What is ready for independent examination?
 
 Qazna is a research prototype with a Rust calculation engine and a PostgreSQL ledger. An independent team can replay the schedules, reduce a reserve by one unit and locate the first missed transfer. A public partner can compare the proposed rule with actual income protection using the same population, real resources and period. Human review governs consequential decisions. Running the calculations requires no AI subscription. [Research roadmap](docs/completion-roadmap.md#strategic-priorities) · [Pilot and comparison terms](docs/pilot-charter.md#comparison-and-decision).

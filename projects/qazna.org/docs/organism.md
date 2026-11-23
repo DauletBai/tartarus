@@ -45,6 +45,28 @@ The bound assumes the full common share re-enters circulation, a fixed order of 
 
 To reproduce both stages, run `cargo run --locked --example circulation_study -- /tmp/qazna-circulation.json` from the project directory. Compare `access_sensitivity` and `growth_and_delay` with the [published result](../research/circulation-model.json). The executable checks the rolling sum against every account's transaction-prefix bound and replays each schedule with both the exact opening and one unit less.
 
+## When automation, a staffing outage and slow circulation coincide
+
+Can a common treasury keep care accessible when paid hours fall? We linked the existing 60-month care schedule to the two regions and five demographic groups in its population profiles. Each month's need is person-days multiplied by the registered minutes of care per person-day. We reconcile those quantities with the service study before comparing access rules.
+
+In month 21 the published northern care-staff outage removes that month's northern capacity. In the comparison rule, paid hours and purchasing access for the adult cohort fall by half in both regions during that month, with no income replacement. This is a sensitivity assumption about the adult cohort; the data do not identify individual workers. Under the need rule, the same adults retain their claim. Both rules use identical staff, opening balances and clearing dates.
+
+For this experiment one accounting unit settles one minute of care. The operator first applies eligibility, then rations the available regional minutes proportionally among eligible claims, then divides any remaining treasury liquidity proportionally across feasible claims. Integer remainders go to the largest fractional shares with a stable tie-break. Money spent on provided care clears back to the common circuit at month end, either immediately or one month later. Balances carry forward. An unserved minute counts as missed at its deadline. The model assumes capacity resumes on the original schedule after the outage. It does not simulate clinical triage, catch-up care or the work required to repair lost capacity.
+
+| Five-year case | Opening treasury units | Care minutes provided on time |
+| --- | ---: | ---: |
+| Full capacity, same-month clearing, need rule | 29,504,941,852 | 1,665,863,406,893 |
+| Full capacity, one-month delay, need rule | 58,688,895,777 | 1,665,863,406,893 |
+| Outage, one-month delay, smaller reserve, either rule | 29,504,941,852 | 885,148,255,560 |
+| Outage, one-month delay, sufficient reserve, income rule | 58,688,895,777 | 1,651,711,790,165 |
+| Outage, one-month delay, sufficient reserve, need rule | 58,688,895,777 | 1,655,073,590,084 |
+
+With sufficient liquidity the need rule preserves **3,361,799,919 additional minutes** for adults in the south. Both rules leave all northern groups without care during the outage. With the smaller reserve the two national totals coincide, even though southern adults receive different coverage in month 21. This is why a national settlement total alone cannot measure fairness. The report records each missed deadline by region and cohort. Its three gap categories partition the unmet need in the declared order; coincident causes make those labels order-dependent.
+
+The minimum one-month bridge for full provision is the largest sum of two adjacent months' needs. One unit below that bound misses exactly one minute over the study. The treasury and amounts awaiting clearance always sum to the original balance. These figures describe one service at an assumed unit measure. They do not estimate a national currency requirement.
+
+[Reproduce the offline calculation](../scripts/care_continuity.py) with `python3 scripts/care_continuity.py --check`. [Period and cohort results](../research/care-continuity.json) · [Source capacity and population profiles](../research/service-results.json).
+
 ## What an early adopter could test
 
 In the author's proposal, access to necessities follows a person's needs across their lifetime, including periods when they cannot work. Tenge measures provision at declared norms. A common treasury circulates existing measure; the wider proposal ties additional issuance to verified growth in real capacity. The working prototype tests finite allocations and can reject an unaffordable request. Establishing a credible measure of capacity growth and the institution empowered to certify it remains a separate research problem.

@@ -13,6 +13,8 @@ The strategic question is whether common productive capacity can sustain dignifi
 
 [Calculations for stages 1 and 2](organism.md#five-year-circulation-and-access) · [Existing physical studies for stage 3](physical-circulation.md) · [Evaluation terms for stage 4](pilot-charter.md#comparison-and-decision).
 
+The [joint care study](organism.md#when-automation-a-staffing-outage-and-slow-circulation-coincide) completes a first 60-month test of stage 3. Remaining work is to model the resources and time required for recovery and compare ways of protecting continuity during the outage.
+
 **Sector work resumes when it can change a named decision.** Fuel tank sizing, storage leakage, generator availability, local crop yields and delivery coefficients belong with a partner's observations. Preserve the existing demonstration cases and regression tests. A new hypothetical coefficient alone supplies no reason to extend them. [Partner brief](pilot-charter.md#first-engagement).
 
 ## Completion scope and remaining work — 12 November 2026
