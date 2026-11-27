@@ -13,6 +13,9 @@ use std::{env, fs};
 #[path = "support/field_renewal.rs"]
 mod field_renewal;
 
+#[path = "support/national_provision.rs"]
+mod national_provision;
+
 const YEARS: usize = 6;
 const MONTHS: usize = YEARS * 12;
 const BLOCKS: usize = 4;
@@ -629,6 +632,10 @@ fn main() {
     let study: PopulationStudy =
         serde_json::from_slice(&fs::read("fixtures/population-study.json").unwrap()).unwrap();
     let needs = targets(&input, &study);
+    if let Some(output) = env::args().nth(2) {
+        let national = national_provision::study(&input, &needs, &v);
+        fs::write(output, serde_json::to_vec_pretty(&national).unwrap()).unwrap();
+    }
     let mut cases = [100, 120, 85].map(|yield_percent| compare(&input, &needs, yield_percent, &v));
     // Each yield is replayed separately. Publish the common downstream balance once.
     let mut packaging = cases.iter_mut().map(|case| {

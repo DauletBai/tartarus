@@ -45,6 +45,23 @@ The bound assumes the full common share re-enters circulation, a fixed order of 
 
 To reproduce both stages, run `cargo run --locked --example circulation_study -- /tmp/qazna-circulation.json` from the project directory. Compare `access_sensitivity` and `growth_and_delay` with the [published result](../research/circulation-model.json). The executable checks the rolling sum against every account's transaction-prefix bound and replays each schedule with both the exact opening and one unit less.
 
+## National grain reconciliation
+
+The state begins January 2027 with 100,000,000 people and closes December 2031 with 105,254,197 in the central demographic projection. One five-year production plan must honour the quantities required by its constituent populations. The earlier grain schedule rounded each age cohort's gross-equivalent kilograms at national level. The regional profiles apply whole-unit needs in each region and then add them. Both use the same population assumptions. Whole-unit rounding at these boundaries gives different results.
+
+For each food and month, the revised national target is the sum of the regional central requirements. The January opening and all subsequent monthly population balances use the existing projection. Feed is an intermediate requirement and retains its own schedule. The 2026 predecessor supplies the first harvest and inventories. The calculation preserves the original benchmark so that its differences remain visible.
+
+| Grain | Months where the earlier national target fell short | Extra gross-equivalent kg over 60 months |
+| --- | ---: | ---: |
+| Rice | 57 | 130 |
+| Oats | 58 | 158 |
+
+The program replans sowing, processing and dispatch and replays dated food, rotation, water, equipment replacement and ordered settlements. With central yields the plan needs 14,043,063 hectares and a peak month of 10,507,078,000 cubic metres of irrigation under the scenario's resource assumptions. In March 2030 the original payment routing stalls. Reallocating 111,811,431,358 existing units from the treasury permits all 4,540 scheduled transfers over the 72-month replay. The opening and closing total is 1,559,457,628,979 in all three yield scenarios. The additional 288 kg require a change in the target and settlement schedule; the fixed measure suffices.
+
+Changing the yield assumption from 100% to 120% preserves the same monthly deliveries with 2,340,511 fewer hectares and 1,751,180,000 fewer cubic metres of water in the peak month. Those figures measure resources a second activity could use. Additional final output would require a feasible, dated plan for that activity. Counting every intermediate harvest, shipment and payment as additional output would count the same provision repeatedly. This study measures delivery requirements at the national destination. It does not trace distribution to each region, allocate shared energy across all sectors, establish a monetary value for spare productive capacity or certify any issuance.
+
+To reproduce from the project directory, run `cargo run --locked --release --example field_rotation -- /tmp/qazna-grain.json /tmp/qazna-national.json`. Compare the second output to the [monthly targets and three settlement replays](../research/national-provision.json). The first output preserves the [original benchmark](../research/field-rotation.json).
+
 ## When automation, a staffing outage and slow circulation coincide
 
 Can a common treasury keep care accessible when paid hours fall? We linked the existing 60-month care schedule to the two regions and five demographic groups in its population profiles. Each month's need is person-days multiplied by the registered minutes of care per person-day. We reconcile those quantities with the service study before comparing access rules.
@@ -67,7 +84,9 @@ The minimum one-month bridge for full provision is the largest sum of two adjace
 
 [Reproduce the offline calculation](../scripts/care_continuity.py) with `python3 scripts/care_continuity.py --check`. [Period and cohort results](../research/care-continuity.json) · [Source capacity and population profiles](../research/service-results.json).
 
-## What an early adopter could test
+<a id="what-an-early-adopter-could-test"></a>
+
+## What a component comparison can establish
 
 In the author's proposal, access to necessities follows a person's needs across their lifetime, including periods when they cannot work. Tenge measures provision at declared norms. A common treasury circulates existing measure; the wider proposal ties additional issuance to verified growth in real capacity. The working prototype tests finite allocations and can reject an unaffordable request. Establishing a credible measure of capacity growth and the institution empowered to certify it remains a separate research problem.
 

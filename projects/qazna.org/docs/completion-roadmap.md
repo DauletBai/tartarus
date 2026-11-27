@@ -1,5 +1,14 @@
 # Completion roadmap and feasibility boundaries
 
+## National implementation order
+
+1. **Align the population and production calendar.** The [national grain replay](organism.md#national-grain-reconciliation) now carries local needs into five years of food targets and verifies physical flows and settlement. Track coverage at the destination as well as national dispatch.
+2. **Close competing uses.** Put food, water, care, education and their shared energy, labour and equipment on one dated balance. Reconcile opening stock, sustained output, reserves, imports and terminal obligations. Preserve unknown norms and missed deadlines by population group.
+3. **Measure real growth.** Compare two feasible national plans on the same population, time, units and resource boundary. Count usable final provision once; show lost capacity, displaced production and reserve depletion separately. Specify how changes across different goods would be evaluated before proposing any conversion to tenge.
+4. **Seek independent reproduction.** Publish assumptions, competing plans, failure cases and settlement histories. Researchers can contribute local observations. Consequential adoption would require a separate state-level public decision and governance arrangements.
+
+The engineering packages below support these gates. The national research sequence takes priority over a local product rollout.
+
 ## Delivery sequence after the contribution study (27 November 2026)
 
 | Package | Verified starting point | Next deliverable and acceptance gate |
@@ -11,7 +20,7 @@
 | 5. User workflows | Axum exposes JSON routes; the exercise has a local HTML dashboard. | Start a read-only demonstrator now. Show personal base, earned supplement, pending commitment and reason for a gap on test data. Add operator review and a resident correction request once the underlying write operations, scoped identity and audit trail are ready. |
 | 6. Release and external comparison | Disposable PostgreSQL, restart/restore exercises and HTTP replay already run. | Measure concurrent holds and mixed-role traffic against explicit latency and throughput targets; rehearse restore and reconcile obligations. Compare results with a partner on shared inputs. |
 
-Run packages 4 and the read-only part of 5 in parallel. First demonstrate that a resident can identify their protected provision and distinguish a promised payment from a discretionary award, and that a reviewer can trace a refused offer to a dated constraint. Use keyboard navigation, plain-language reasons and scoped sample records. Before enabling changes, test participant isolation, accessible appeals, duplicate submission and operator approval. Public access to live resident records requires a separate deployment and privacy review.
+When work resumes on contribution commitments, coordinate package 4 with the read-only part of 5. First demonstrate that a resident can identify their protected provision and distinguish a promised payment from a discretionary award, and that a reviewer can trace a refused offer to a dated constraint. Use keyboard navigation, plain-language reasons and scoped sample records. Before enabling changes, test participant isolation, accessible appeals, duplicate submission and operator approval. Public access to live resident records requires a separate deployment and privacy review.
 
 **Rust interface choice.** Extend the existing Axum application with server-rendered HTML. [Askama](https://askama.rs/en/stable/) can compile typed templates for the resident summary and review pages. Keep the database and calculation authority on the server; map one read model to HTML or JSON. Keep existing operator credentials out of browser code. Consider [Leptos](https://book.leptos.dev/ssr/index.html) when interactive scenario exploration requires substantial client state. Select and test a dependency release against the crate's Rust 1.88 floor before adoption. No UI dependency is introduced by this study.
 
@@ -312,7 +321,7 @@ P0 means required before assigning the system consequential authority over real 
 
 These require accountable human decisions and appropriate independent review. An optimizer cannot choose a definition of justice from physics, and a language model must not infer authority from its confidence.
 
-## Suggested implementation sequence
+## Historical shadow-exercise sequence
 
 1. Agree on a narrow shadow-pilot charter and resolve the basic-provision/treasury gap in executable examples. Define acceptance and stop rules before adding functionality.
 2. Implement identity and scoped access, independent enrollment, revocation, evidence custody and dispute/correction events as one coherent trust boundary.

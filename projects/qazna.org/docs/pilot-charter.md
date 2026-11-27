@@ -1,12 +1,10 @@
-# Shadow food-provisioning pilot charter
+# Food-provisioning component comparison
 
-Status: proposed operational charter, 4 November 2026. The author delegated pilot
-scope and the modelling choice of basic-provision funding. No real participant,
-organization, funds or production deployment has been enrolled by this document.
+The 4 November 2026 charter records an earlier design for testing one component. The current [national implementation order](completion-roadmap.md#national-implementation-order) governs Qazna development. This protocol can help researchers check a particular mechanism using service records. Its results cannot establish the feasibility of a national treasury or authorize local adoption.
 
 ## First engagement
 
-A public agency responsible for one meal programme is the proposed commissioner. Its provider knows what it could deliver on each date. A research institute can independently check the comparison. The proposed service is to configure and evaluate one local case using the open-source software. The commissioner receives a reproducible comparison, a list of missed deliveries and their causes, and an estimate of the effort needed to run a shadow pilot. Kazakhstan is a possible first setting. Another region can substitute its own programme rules, units, language and records.
+The proposed research counterpart is an independent group able to examine the state-wide population, physical resources and monetary boundary. A provider can document one input, such as quantities and dates of delivery. Researchers should record its units, population coverage and omissions before importing it into the national scenario.
 
 Begin with a closed historical period. Ask the programme director to select one recurring decision and nominate the person who can explain the records. The provider supplies quantities, dates, capacity and interruptions. The agency supplies the actual allocation rules, existing benefits, opening resources and budget. Use aggregated or anonymised records appropriate to the agreed evaluation. Record gaps, especially eligible households missing from the provider's records. The first meeting needs a sample data dictionary and one worked decision. A prospective trial with people has additional safeguards below.
 
@@ -19,7 +17,7 @@ Begin with a closed historical period. Ask the programme director to select one 
 
 ## Scope and principles
 
-Start with one consenting community, one food provider, and independently assigned
+The earlier component design covered one consenting community, one food provider, and independently assigned
 inspectors. Qazna maintains parallel records and operator-reviewed proposals.
 Existing supply remains authoritative during the shadow pilot. People can refuse
 or leave without losing ordinary support. The organism analogy means needs,

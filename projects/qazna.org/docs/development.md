@@ -18,6 +18,8 @@ Ordinary `cargo test` does not run the ignored PostgreSQL tests. The full script
 
 Verified on 3 November 2026 with Rust 1.97.0 and PostgreSQL 16.10: 3 Rust unit tests, 11 offline Python safety tests and 81 PostgreSQL integration tests. Coverage includes allocation/reservation races, rollback injection, upgrades from 0.1/0.2/0.3/0.4/0.5/0.6/0.7, needs independent of balances, hierarchy scope, durable shortages, shared production capacity, cross-period stock races, exact overflow assessment, production completion, losses, terminal races, provenance chains, immutable norm revisions and proposals with shared resource/capacity budgets, immutable drafts, stale-plan rejection, complete batch rollback and competing draft/direct actions, transactional event delivery, lease fencing, stopped workers and independent AI evidence validation. The HTTP smoke scenario checks persistent holds, cancellation, completion and provenance draft application and queued coordination across three restarts. At that milestone, backup restoration was still pending; see the current verification record below.
 
+The national grain check regenerates the historical benchmark and the profile-based candidate and compares both with their published files. The [calculation notes and reproduction command](organism.md#national-grain-reconciliation) identify the common demographic baseline and the remaining regional distribution boundary.
+
 ## Manual startup
 
 Create a separate `qazna_demo` database and configure its connection URL. Migrations are a separate command; the server does not automatically migrate on every start.

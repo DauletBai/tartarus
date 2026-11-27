@@ -66,7 +66,10 @@ def main():
     run(["cargo", "test", "--locked", "--example", "field_rotation"])
     with tempfile.TemporaryDirectory(prefix="qazna-rotation-") as directory:
         report = Path(directory) / "field-rotation.json"
-        run(["cargo", "run", "--locked", "--example", "field_rotation", "--", str(report)])
+        national = Path(directory) / "national-provision.json"
+        run(["cargo", "run", "--locked", "--release", "--example", "field_rotation", "--", str(report), str(national)])
+        if national.read_bytes() != (ROOT / "research/national-provision.json").read_bytes():
+            raise SystemExit("National provision differs from the published calculation")
         if report.read_bytes() != (ROOT / "research/field-rotation.json").read_bytes():
             raise SystemExit("Field rotation results differ from reproducible calculation")
     run(["cargo", "test", "--locked", "--example", "food_technologies"])

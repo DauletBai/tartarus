@@ -1,5 +1,10 @@
 # Qazna changelog
 
+## National provision and grain settlement — 27 November 2026
+
+- Reconcile 60 monthly rice and oats targets against regional population profiles and replay three harvest yields with dated reserves, equipment and treasury funding. Preserve the earlier national-only benchmark for comparison.
+- Set the state-wide simulation as the implementation priority and retain the local evaluation protocol as a component study.
+
 ## Fuel storage, generator renewal and freight payments — 21 November 2026
 
 - Compare early generation with fuel storage and later commissioning. Publish
