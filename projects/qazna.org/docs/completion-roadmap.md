@@ -1,5 +1,20 @@
 # Completion roadmap and feasibility boundaries
 
+## Delivery sequence after the contribution study (27 November 2026)
+
+| Package | Verified starting point | Next deliverable and acceptance gate |
+| --- | --- | --- |
+| 1. Reviewed versions | Rust and PostgreSQL persist versioned scenarios, review decisions and immutable history. | Reuse generation checks and request replay for contribution terms. Link every offer to its approved schedule version. |
+| 2. Physical provision and circulation | The extended 60-month candidate and service studies track physical constraints and monetary balances. | Bind dated work and award commitments to the relevant lots, workforce, region and treasury. An extra award cannot consume protected provision. |
+| 3. Population and norms | Age cohorts, regional person-days and versioned parameters feed care and education studies. | Calibrate with a partner and document missing observations. Define accessible criteria for work and school awards, appeals and participation without a score. |
+| 4. Replanning and commitments | Incident revisions, coordinated repairs and limited reserve releases exist. The contribution study now checks overlapping fixed payments across periods. | Implement transactional reservation, acceptance, payment and cancellation for assignments. Prove one winner under contention, exact replay after restart, and visible shortages when capacity falls after an offer. |
+| 5. User workflows | Axum exposes JSON routes; the exercise has a local HTML dashboard. | Start a read-only demonstrator now. Show personal base, earned supplement, pending commitment and reason for a gap on test data. Add operator review and a resident correction request once the underlying write operations, scoped identity and audit trail are ready. |
+| 6. Release and external comparison | Disposable PostgreSQL, restart/restore exercises and HTTP replay already run. | Measure concurrent holds and mixed-role traffic against explicit latency and throughput targets; rehearse restore and reconcile obligations. Compare results with a partner on shared inputs. |
+
+Run packages 4 and the read-only part of 5 in parallel. First demonstrate that a resident can identify their protected provision and distinguish a promised payment from a discretionary award, and that a reviewer can trace a refused offer to a dated constraint. Use keyboard navigation, plain-language reasons and scoped sample records. Before enabling changes, test participant isolation, accessible appeals, duplicate submission and operator approval. Public access to live resident records requires a separate deployment and privacy review.
+
+**Rust interface choice.** Extend the existing Axum application with server-rendered HTML. [Askama](https://askama.rs/en/stable/) can compile typed templates for the resident summary and review pages. Keep the database and calculation authority on the server; map one read model to HTML or JSON. Keep existing operator credentials out of browser code. Consider [Leptos](https://book.leptos.dev/ssr/index.html) when interactive scenario exploration requires substantial client state. Select and test a dependency release against the crate's Rust 1.88 floor before adoption. No UI dependency is introduced by this study.
+
 ## Strategic priorities
 
 The strategic question is whether common productive capacity can sustain dignified provision throughout life as paid work changes. The decision rule, the circulation of existing measure and the renewal of real resources must be examined together.
