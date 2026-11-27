@@ -125,6 +125,7 @@ def multi_period_study():
     # 988 units are needed for overlapping firm payments, so none are available.
     assert replay_commitments(988, base, fixed, capacity, optional, 1)[1] == [0]*periods
     assert replay_commitments(1000, base, fixed, capacity, optional, 1)[1] == [12, 0]*30
+    assert replay_commitments(1000, base, fixed, capacity, [6]*periods, 1)[1] == [6]*periods
     assert replay_commitments(1012, base, fixed, capacity, optional, 1)[1] == optional
     try:
         replay_commitments(2000, base, fixed, [487] + capacity[1:], optional, 1)
