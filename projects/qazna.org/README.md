@@ -14,6 +14,8 @@ Qazna starts from a principle of justice: a person's ability to live and develop
 
 The author uses **chrematistics** for an arrangement in which accumulating money becomes an end in itself. A lender’s claim can grow through accrued interest even when the capacity to house, teach or care for people stands still. Qazna explores a different organising principle, **Тең (equal measure)**. Natural resources and the productive capabilities built across generations are a common inheritance. Everyone has equal standing; how much support a person needs changes over a lifetime. People retain the freedom to choose their work, pursue their talents and challenge a decision about their needs.
 
+Consider a household that loses its income while the shops still have food. The book asks what responsibility society bears when deprivation drives someone to steal, and who bears the harm when desperation turns to violence. In the author's view, democratic institutions lose their purpose when people have a vote but little say over the conditions of their livelihood. Qazna gives this criticism a practical test. Can people take part in setting the rules, keep access to essentials when paid work disappears, and receive additional compensation for work they undertake?
+
 ### What circulation contributes to the design
 
 In an animal's body, blood supplies tissues throughout life. A working muscle can require more oxygen now; another organ still needs its supply at rest. The engineering insight is the combination of a common circulation, local signals and reserves that can bridge interruptions. The decision to care for each person on equal terms is a human ethical choice. A community must also decide who sets the norms and how those decisions can be appealed.
