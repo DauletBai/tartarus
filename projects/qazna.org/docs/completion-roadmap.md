@@ -2,7 +2,7 @@
 
 ## National implementation order
 
-1. **Align the population and production calendar.** The [national grain replay](organism.md#national-grain-reconciliation) now carries local needs into five years of food targets and verifies physical flows and settlement. Track coverage at the destination as well as national dispatch.
+1. **Align the population and production calendar.** The [national grain replay](organism.md#national-grain-reconciliation) now carries local needs into five years of food targets and verifies physical flows and settlement. The [regional depot replay](organism.md#regional-grain-receipts) accounts for arrivals, missed deadlines and carried lots. Next, constrain the required regional departures by available vehicles, drivers, energy and competing services on the same calendar.
 2. **Close competing uses.** Put food, water, care, education and their shared energy, labour and equipment on one dated balance. Reconcile opening stock, sustained output, reserves, imports and terminal obligations. Preserve unknown norms and missed deadlines by population group.
 3. **Measure real growth.** Compare two feasible national plans on the same population, time, units and resource boundary. Count usable final provision once; show lost capacity, displaced production and reserve depletion separately. Specify how changes across different goods would be evaluated before proposing any conversion to tenge.
 4. **Seek independent reproduction.** Publish assumptions, competing plans, failure cases and settlement histories. Researchers can contribute local observations. Consequential adoption would require a separate state-level public decision and governance arrangements.

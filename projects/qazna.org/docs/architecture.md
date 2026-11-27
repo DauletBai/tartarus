@@ -54,7 +54,7 @@ The same technology stack does not imply immediate industrial readiness. Economi
 
 ## Next work
 
-The [national implementation order](completion-roadmap.md#national-implementation-order) connects dated final needs to physical and monetary feasibility. The [grain reconciliation](organism.md#national-grain-reconciliation) reuses the Rust population, field, equipment and settlement calculations. Next reconcile geographically delivered output and the shared inputs required by other services. The research executable has no ledger posting authority.
+The [national implementation order](completion-roadmap.md#national-implementation-order) connects dated final needs to physical and monetary feasibility. The [grain reconciliation](organism.md#national-grain-reconciliation) reuses the Rust population, field, equipment and settlement calculations. The research executable has no ledger posting authority. A downstream [regional grain replay](organism.md#regional-grain-receipts) takes the verified monthly national withdrawals as its input. It tracks quantities and deadlines by depot and crop without posting a second payment or counting another unit of national production. The next feasibility check must bind these departures to transport resources shared with other services.
 Resident identity, corrections/disputes, accessible interfaces, operational load
 limits and disaster recovery remain prerequisites for consequential external use.
 The offline experiments do not automatically close these runtime gaps.

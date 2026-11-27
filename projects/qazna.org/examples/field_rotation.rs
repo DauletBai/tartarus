@@ -493,7 +493,7 @@ fn compare(
     needs: &[[i64; FOODS]],
     yield_percent: i64,
     fixture: &Value,
-) -> Value {
+) -> (Value, Vec<[i64; 2]>) {
     let mut model = build(input, needs, yield_percent);
     let (plan, annual, land) = candidate(&mut model);
     let source = &input.model.seasonal;
@@ -611,7 +611,12 @@ fn compare(
     );
     let (baseline, starts) = capped_packaging(input, &plan);
     let renewed = field_renewal::study(input, &model, &plan, starts, fixture);
-    json!({"renewed_schedule":renewed,"gross_yield_percent":yield_percent,"fixed_field_area_ha":land,"required_peak_water_m3":peak,
+    let deliveries = plan[12..]
+        .iter()
+        .map(|period| [period.deliveries[6], period.deliveries[7]])
+        .collect();
+    (
+        json!({"renewed_schedule":renewed,"gross_yield_percent":yield_percent,"fixed_field_area_ha":land,"required_peak_water_m3":peak,
         "peak_month":calendar(peak_month),"restored_terminal_stocks_kg":dated.final_stock,"expired_kg":dated.expired,
         "seed_consumed_kg":dated.seed_withdrawn,"fixed_upstream_bound":upstream_bound(input,&plan),"finite_packaging_schedule":baseline,
         "six_season_bound": {
@@ -622,7 +627,9 @@ fn compare(
             "original_water_shortfall_at_least": (minimum_sown-reference_water_upper_area).max(0)
         },
         "monthly_required_water_m3":water,"seasons":assignments,"reference_rotated_area_shortfalls_ha":land_gaps,
-        "reference_water_shortfalls":base_water_gaps,"peak_month_water_shortfall_if_20_percent_lost_m3":peak-dry.irrigation_m3[peak_month]})
+        "reference_water_shortfalls":base_water_gaps,"peak_month_water_shortfall_if_20_percent_lost_m3":peak-dry.irrigation_m3[peak_month]}),
+        deliveries,
+    )
 }
 
 fn main() {
@@ -636,7 +643,8 @@ fn main() {
         let national = national_provision::study(&input, &needs, &v);
         fs::write(output, serde_json::to_vec_pretty(&national).unwrap()).unwrap();
     }
-    let mut cases = [100, 120, 85].map(|yield_percent| compare(&input, &needs, yield_percent, &v));
+    let mut cases =
+        [100, 120, 85].map(|yield_percent| compare(&input, &needs, yield_percent, &v).0);
     // Each yield is replayed separately. Publish the common downstream balance once.
     let mut packaging = cases.iter_mut().map(|case| {
         case["renewed_schedule"]

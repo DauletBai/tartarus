@@ -12,7 +12,7 @@
 
 Qazna models a state that provides for its whole population through one public treasury. Basic provision follows need throughout life; accepted work can earn a supplement. In the proposed system taxes, interest, refinancing, deposits, credit, shares and bills of exchange play no role in domestic circulation. A comparison with existing institutions can test a claim about access. Adopting the proposed system would require a public decision at state level.
 
-The [five-year national calculation](docs/organism.md#national-grain-reconciliation) starts with 100 million people. It connects regional needs to national production and settlement schedules. Sector studies supply components for this calculation. A common plan for all sectors and a defensible rule for measuring growth remain open.
+The [five-year national calculation](docs/organism.md#national-grain-reconciliation) starts with 100 million people. It follows regional needs through national production, settlement and delivery to two regional depots. Cancelling one southern trip leaves 6,312 kg of oats at the hub past the January 2028 deadline. The February schedule clears the backlog. [Regional delivery calculation](docs/organism.md#regional-grain-receipts). Sector studies supply components for this calculation. A common plan for all sectors and a defensible rule for measuring growth remain open.
 
 ## Why build an economy around circulation?
 

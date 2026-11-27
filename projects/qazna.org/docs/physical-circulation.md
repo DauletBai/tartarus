@@ -5,7 +5,7 @@ five-year calculation instead of assuming that a successful money circuit proves
 that goods, equipment or trained capacity exist. It is a bounded synthetic research
 model, not a calibrated national plan or an autonomous production controller.
 
-The [national grain reconciliation](organism.md#national-grain-reconciliation) extends the five-year field-rotation calculation to summed regional needs and replays its settlement schedule. Earlier experiments below use their original populations and boundaries.
+The [national grain reconciliation](organism.md#national-grain-reconciliation) extends the five-year field-rotation calculation to summed regional needs and replays its settlement schedule. A [downstream regional replay](organism.md#regional-grain-receipts) follows these withdrawals to depot receipts and reports late lots separately. Earlier experiments below use their original populations and boundaries.
 
 ## What is connected
 

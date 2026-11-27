@@ -7,6 +7,9 @@ use qazna::{
 use serde_json::{Value, json};
 use std::{collections::BTreeMap, fs};
 
+#[path = "regional_grain.rs"]
+mod regional_grain;
+
 const CROPS: [&str; 2] = ["rice_component", "oats_component"];
 
 fn grain_kg(demands: &[Demand], item: &str) -> i64 {
@@ -40,6 +43,7 @@ pub(super) fn study(input: &ModelInput, original: &[[i64; FOODS]], fixture: &Val
     assert_eq!(profiles.months.len(), MONTHS - 12);
     let mut revised = original.to_vec();
     let mut monthly = Vec::new();
+    let mut route_needs = Vec::new();
     let mut extra = [0_i64; 2];
     let mut short_months = [0; 2];
     for (period, month) in profiles.months.iter().enumerate() {
@@ -50,7 +54,7 @@ pub(super) fn study(input: &ModelInput, original: &[[i64; FOODS]], fixture: &Val
             .iter()
             .map(|region| {
                 (
-                    region.region.as_str(),
+                    region.region.clone(),
                     CROPS.map(|item| grain_kg(&region.demands, item)),
                 )
             })
@@ -68,11 +72,20 @@ pub(super) fn study(input: &ModelInput, original: &[[i64; FOODS]], fixture: &Val
         }
         monthly.push(json!({"month":month.calendar,"opening_people":population.months[period].opening,
             "regional_requirements_kg":by_region, "legacy_target_kg":&original[t][..2], "profile_target_kg":&revised[t][..2], "difference_kg":delta}));
+        route_needs.push(by_region);
     }
 
+    let mut common_route_input = None;
     let cases = [85, 100, 120].map(|yield_percent| {
-        let case = compare(input, &revised, yield_percent, fixture);
+        let (case, deliveries) = compare(input, &revised, yield_percent, fixture);
         let schedule = &case["renewed_schedule"];
+        let payload = schedule["packaging_2032"]["grain_return_freight"]["outbound_payload_kg"].as_i64().unwrap();
+        let route_input = (deliveries, payload);
+        if let Some(reference) = &common_route_input {
+            assert_eq!(reference, &route_input, "Regional replay requires identical delivered grain and payload across yield cases");
+        } else {
+            common_route_input = Some(route_input);
+        }
         let money = &schedule["money"];
         let funded = &money["funded_continuation"];
         assert_eq!(funded["all_settled"], true);
@@ -83,10 +96,12 @@ pub(super) fn study(input: &ModelInput, original: &[[i64; FOODS]], fixture: &Val
             "first_blocked_without_reallocation":money["first_blocked_month"],
             "treasury_reallocated":funded["allocation_total"], "settled_transfers":funded["settled"]})
     });
-    json!({"sources":["fixtures/extended-scenario.json","fixtures/population-study.json",
+    let (deliveries, payload) = common_route_input.unwrap();
+    let regional = regional_grain::study(&route_needs, &deliveries, payload);
+    json!({"regional_replay":regional, "sources":["fixtures/extended-scenario.json","fixtures/population-study.json",
            "research/service-results.json"], "from":"2027-01","through":"2031-12",
            "opening_people":population.initial,"closing_people":population.final_population,
            "crop_order":CROPS, "net_target_change_kg":extra, "months_with_short_target":short_months,
-           "scope":"National grain delivery targets; feed and the 2026 predecessor retain their original schedules. Regions supply requirements; delivery to individual regions is not traced.",
+           "scope":"Regional depot receipts downstream of the national grain schedule. Feed and the 2026 predecessor retain their original schedules. Household delivery is outside this boundary.",
            "monthly":monthly, "cases":cases})
 }
