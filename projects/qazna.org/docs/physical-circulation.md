@@ -139,7 +139,7 @@ receipt, the supplying unit circulates that declared share through the treasury;
 the input-cost portion remains available for its own input obligations. This is
 the previously stated common-ownership candidate, not a levy inferred for private
 enterprises. The model does not add separate wages or dividends on top of the same
-accounted amount. Additional contribution rewards remain an open policy design.
+accounted amount. The [contribution study](organism.md#contribution-and-school-achievement) calculates additional awards after protecting provision.
 
 The baseline has **25,175 checked goods/payment links** and **54,000 monetary
 movements**, including funding and entitlement movements. Transfer volume must not
