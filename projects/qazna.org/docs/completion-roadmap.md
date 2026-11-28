@@ -1,6 +1,6 @@
 # Completion roadmap and feasibility boundaries
 
-The [geographic baseline](geographic-baseline.md) now reconciles Kazakhstan’s population down to 228 districts and city administrations and scores two held-out harvests. The next calibration gate is a dated district-to-production and transport crosswalk with observed deliveries. This feeds the national implementation order below.
+The [geographic baseline](geographic-baseline.md) now reconciles Kazakhstan’s population down to 228 districts and city administrations and scores two held-out harvests. Annual grain balances now bound the supply needed across territories at the precision of the source tables. The next calibration gate is a dated district-to-production and transport crosswalk with observed deliveries. This feeds the national implementation order below.
 
 ## National implementation order
 

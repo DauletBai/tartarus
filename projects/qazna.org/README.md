@@ -14,7 +14,7 @@ Qazna models a state that provides for its whole population through one public t
 
 The [five-year national calculation](docs/organism.md#national-grain-reconciliation) starts with 100 million people. It follows regional needs through national production, settlement and delivery to two regional depots. Cancelling one southern trip leaves 6,312 kg of oats at the hub past the January 2028 deadline. The February schedule clears the backlog. [Regional delivery calculation](docs/organism.md#regional-grain-receipts). Sector studies supply components for this calculation. A common plan for all sectors and a defensible rule for measuring growth remain open.
 
-The [Kazakhstan demonstrator and ten-billion-person world scenario](docs/geographic-baseline.md) use official population, climate, crop, industrial and resource data. Follow the calculation from 237 countries and areas to Kazakhstan's 228 districts and city administrations, compare harvests with weather and test how far a simple forecast misses observed production. [Calculated results](research/geography-results.json).
+The [Kazakhstan demonstrator and ten-billion-person world scenario](docs/geographic-baseline.md) use official population, climate, crop, industrial and resource data. Follow the calculation from 237 countries and areas to Kazakhstan's 228 districts and city administrations, bound local grain shortfalls when harvest figures are rounded or missing, compare harvests with weather and test how far a simple forecast misses observed production. [Calculated results](research/geography-results.json).
 
 ## Why build an economy around circulation?
 

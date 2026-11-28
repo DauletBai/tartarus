@@ -137,6 +137,65 @@ fn gap_kg(harvest_t: Option<u64>, people: u64, kg_per_person: u32) -> Option<u64
     harvest_t.map(|t| (people * u64::from(kg_per_person)).saturating_sub(t * 1000))
 }
 
+// Table 4.54 is printed in tenths of a thousand tonnes; a dash means no output.
+// Half a reporting unit on either side includes both possible rounding ties.
+fn harvest_bounds_kg(tonnes: u64) -> (u128, u128) {
+    if tonnes == 0 {
+        return (0, 0);
+    }
+    let kg = u128::from(tonnes) * 1000;
+    (kg.saturating_sub(50_000), kg + 50_000)
+}
+
+fn territorial_grain_balance(
+    regions: impl Iterator<Item = (u64, Option<u64>)>,
+    national_t: Option<u64>,
+    kg_per_person: u32,
+) -> Result<Value, Box<dyn Error>> {
+    let mut reported_t = 0_u128;
+    let (mut known_low, mut known_high) = (0_u128, 0_u128);
+    let (mut gap_low, mut gap_high) = (0_u128, 0_u128);
+    let (mut missing_regions, mut missing_need) = (0_u32, 0_u128);
+    let mut total_need = 0_u128;
+    for (population, harvest) in regions {
+        let need = u128::from(population) * u128::from(kg_per_person);
+        total_need += need;
+        if let Some(t) = harvest {
+            let (low, high) = harvest_bounds_kg(t);
+            reported_t += u128::from(t);
+            known_low += low;
+            known_high += high;
+            gap_low += need.saturating_sub(high);
+            gap_high += need.saturating_sub(low);
+        } else {
+            missing_regions += 1;
+            missing_need += need;
+        }
+    }
+    gap_high += missing_need;
+    let mut unreported_ceiling = None;
+    if let Some(t) = national_t {
+        let (low, high) = harvest_bounds_kg(t);
+        if high < known_low || (missing_regions == 0 && low > known_high) {
+            return Err(
+                "regional harvest is incompatible with the national reporting interval".into(),
+            );
+        }
+        let available = high - known_low;
+        unreported_ceiling = Some(if missing_regions == 0 { 0 } else { available });
+        gap_low += missing_need.saturating_sub(available);
+        gap_low = gap_low.max(total_need.saturating_sub(high));
+    }
+    let difference = national_t.map(|t| i128::from(t) - reported_t as i128);
+    Ok(json!({
+        "national_minus_reported_regions_t":difference,
+        "unreported_regions":missing_regions,
+        "unreported_harvest_upper_bound_kg":unreported_ceiling,
+        "sum_of_local_shortfalls_lower_bound_kg":gap_low,
+        "sum_of_local_shortfalls_upper_bound_kg":gap_high
+    }))
+}
+
 // Score a forecast with values that precede the target harvest. Missing history
 // makes the forecast unavailable even when the outcome is known.
 fn harvest_backtest(region: &Region, year: u16) -> Option<Value> {
@@ -282,11 +341,26 @@ fn report(b: &Baseline, kg_per_person: u32) -> Result<Value, Box<dyn Error>> {
             "gross_gap_kg_historical_harvest_scenario_residents":historical
         }));
     }
+    let grain_balances: BTreeMap<_, _> = k
+        .national
+        .annual_grain_pulses_t
+        .iter()
+        .map(|(&year, &national)| {
+            let rows = k.regions.values().map(|r| {
+                (
+                    r.people_2026_10_01,
+                    r.annual_grain_pulses_t.get(&year).copied().flatten(),
+                )
+            });
+            territorial_grain_balance(rows, national, kg_per_person).map(|bounds| (year, bounds))
+        })
+        .collect::<Result<_, _>>()?;
     Ok(json!({
         "gross_grain_pulses_scenario_kg_per_person_year":kg_per_person,
         "world":{"target_people":TARGET,"july_crossing_interval":[lo,hi],
             "scenario_people_by_iso3":by_area,"cereal_kg_per_scenario_person_at_2024_output":cereal_per_person,"coverage_areas_and_scenario_people":coverage},
         "kazakhstan":{"base_population":present,"scenario_population":future,
+            "territorial_grain_balance_by_harvest_year_at_base_population":grain_balances,
             "scenario_output_at_fixed_gross_output_per_resident":constant_output_per_person(&k.national,future)?,
             "national_harvest_backtest":{"2023":harvest_backtest(&k.national,2023),"2024":harvest_backtest(&k.national,2024)},
             "base_gross_requirement_kg":present*u64::from(kg_per_person),
@@ -383,9 +457,53 @@ mod tests {
     }
 
     #[test]
+    fn national_rounding_constrains_unreported_harvest_without_assigning_it() {
+        let rows = [(100_000, Some(100)), (200_000, None), (30_000, Some(0))];
+        let balance = territorial_grain_balance(rows.into_iter(), Some(100), 1).unwrap();
+        assert_eq!(balance["unreported_harvest_upper_bound_kg"], 100_000);
+        for actual_known in (50_000_u64..=150_000).step_by(1000) {
+            for total in (actual_known..=150_000).step_by(1000) {
+                let actual_gap = 100_000_u64.saturating_sub(actual_known) + 200_000
+                    - (total - actual_known)
+                    + 30_000;
+                assert!(
+                    actual_gap
+                        >= balance["sum_of_local_shortfalls_lower_bound_kg"]
+                            .as_u64()
+                            .unwrap()
+                );
+                assert!(
+                    actual_gap
+                        <= balance["sum_of_local_shortfalls_upper_bound_kg"]
+                            .as_u64()
+                            .unwrap()
+                );
+            }
+        }
+        let unconstrained = territorial_grain_balance(rows.into_iter(), None, 1).unwrap();
+        assert!(unconstrained["unreported_harvest_upper_bound_kg"].is_null());
+        assert_eq!(
+            unconstrained["sum_of_local_shortfalls_lower_bound_kg"],
+            30_000
+        );
+        assert!(territorial_grain_balance(rows.into_iter(), Some(0), 1).is_err());
+        assert!(territorial_grain_balance([(10, Some(0))].into_iter(), Some(200), 1).is_err());
+    }
+
+    #[test]
     fn missing_harvest_and_zero_harvest_have_different_consequences() {
         let b: Baseline = serde_json::from_str(INPUT).unwrap();
         let k = &report(&b, 100).unwrap()["kazakhstan"];
+        let interval = &k["territorial_grain_balance_by_harvest_year_at_base_population"]["2024"];
+        assert_eq!(interval["national_minus_reported_regions_t"], -100);
+        assert_eq!(
+            interval["sum_of_local_shortfalls_lower_bound_kg"],
+            680_567_900
+        );
+        assert_eq!(
+            interval["sum_of_local_shortfalls_upper_bound_kg"],
+            681_717_900
+        );
         assert_eq!(gap_kg(Some(0), 500, 100), Some(50_000));
         assert_eq!(gap_kg(Some(49), 500, 100), Some(1000));
         assert!(k["regions"]["mangystau"]["gross_gap_kg_2024_harvest_current_residents"].is_null());

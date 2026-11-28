@@ -2555,7 +2555,44 @@
       "pumps_count": 19179,
       "vegetables_t": 4941229
     },
-    "scenario_population": 28558020
+    "scenario_population": 28558020,
+    "territorial_grain_balance_by_harvest_year_at_base_population": {
+      "2020": {
+        "national_minus_reported_regions_t": 0,
+        "sum_of_local_shortfalls_lower_bound_kg": 750229900,
+        "sum_of_local_shortfalls_upper_bound_kg": 751679900,
+        "unreported_harvest_upper_bound_kg": 950000,
+        "unreported_regions": 1
+      },
+      "2021": {
+        "national_minus_reported_regions_t": 100,
+        "sum_of_local_shortfalls_lower_bound_kg": 685867900,
+        "sum_of_local_shortfalls_upper_bound_kg": 687067900,
+        "unreported_harvest_upper_bound_kg": 1000000,
+        "unreported_regions": 1
+      },
+      "2022": {
+        "national_minus_reported_regions_t": 200,
+        "sum_of_local_shortfalls_lower_bound_kg": 681567900,
+        "sum_of_local_shortfalls_upper_bound_kg": 683017900,
+        "unreported_harvest_upper_bound_kg": 1150000,
+        "unreported_regions": 1
+      },
+      "2023": {
+        "national_minus_reported_regions_t": 200,
+        "sum_of_local_shortfalls_lower_bound_kg": 682667900,
+        "sum_of_local_shortfalls_upper_bound_kg": 683967900,
+        "unreported_harvest_upper_bound_kg": 1100000,
+        "unreported_regions": 2
+      },
+      "2024": {
+        "national_minus_reported_regions_t": -100,
+        "sum_of_local_shortfalls_lower_bound_kg": 680567900,
+        "sum_of_local_shortfalls_upper_bound_kg": 681717900,
+        "unreported_harvest_upper_bound_kg": 850000,
+        "unreported_regions": 1
+      }
+    }
   },
   "world": {
     "cereal_kg_per_scenario_person_at_2024_output": {

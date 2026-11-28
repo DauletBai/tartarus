@@ -1,6 +1,6 @@
 # Qazna architecture
 
-The [geographic research layer](geographic-baseline.md) uses a pinned observation snapshot and a read-only Rust calculation. It reconciles country, regional and district counts before deriving needs. Deposit balances, issuance and operator decisions are outside its execution path.
+The [geographic research layer](geographic-baseline.md) uses a pinned observation snapshot and a read-only Rust calculation. It reconciles country, regional and district counts before deriving needs. Published harvest precision and independently rounded national totals constrain the combined shortfall when a region has no observation. Deposit balances, issuance and operator decisions are outside its execution path.
 
 Decision of 2 November 2026: the MVP and industrial development use the same Rust core. A temporary Go server followed by a Rust rewrite is outside the plan. The earlier Qazna repository provides requirements and test scenarios; its implementations are not automatically included in this runtime.
 
