@@ -37,3 +37,8 @@ Agricultural Research Service. The extract records the source SHA-256 and URL.
 Catalogue and licence: https://catalog.data.gov/dataset/usda-table-of-nutrient-retention-factors-release-6-2007
 Derived scenario arithmetic and source mappings are Qazna research assumptions,
 not USDA certification of an individual diet, food batch or storage duration.
+
+The geographic observation snapshot is derived from UN DESA, UN Statistics Division/IRENA,
+World Bank/FAO, Kazakhstan BNS, Kazhydromet, KEGOC and USGS sources.
+Publisher attribution and source terms remain applicable to their contributions.
+See fixtures/geography-sources.json for original editions and links.

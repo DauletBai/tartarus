@@ -14,6 +14,8 @@ Qazna models a state that provides for its whole population through one public t
 
 The [five-year national calculation](docs/organism.md#national-grain-reconciliation) starts with 100 million people. It follows regional needs through national production, settlement and delivery to two regional depots. Cancelling one southern trip leaves 6,312 kg of oats at the hub past the January 2028 deadline. The February schedule clears the backlog. [Regional delivery calculation](docs/organism.md#regional-grain-receipts). Sector studies supply components for this calculation. A common plan for all sectors and a defensible rule for measuring growth remain open.
 
+The [Kazakhstan demonstrator and ten-billion-person world scenario](docs/geographic-baseline.md) use official population, climate, crop, industrial and resource data. Follow the calculation from 237 countries and areas to Kazakhstan's 228 districts and city administrations, compare harvests with weather and test how far a simple forecast misses observed production. [Calculated results](research/geography-results.json).
+
 ## Why build an economy around circulation?
 
 Qazna starts from a principle of justice: a person's ability to live and develop should survive a loss of employment, illness and old age. In *Tartar and I*, Daulet Baimurza asks what happens when machines can produce more with fewer hours of paid work. A society may gain productive capacity while the people whose work made that gain possible lose access to its benefits. Who has a claim on what society can now produce?

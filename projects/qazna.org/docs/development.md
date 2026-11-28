@@ -1,5 +1,7 @@
 # Developing and verifying Qazna
 
+The [geography study](geographic-baseline.md#reproduce-and-extend) has an offline Rust replay and a separate source refresh. The full check runner tests territorial reconciliation and compares the regenerated report byte for byte.
+
 The working directory inside Tartarus is `projects/qazna.org/`. Maintain project files in English. Runtime names and descriptions may still contain supported Unicode; this is not an English-only user-data policy.
 
 ## Automated checks

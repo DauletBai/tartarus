@@ -1,5 +1,7 @@
 # Completion roadmap and feasibility boundaries
 
+The [geographic baseline](geographic-baseline.md) now reconciles Kazakhstan’s population down to 228 districts and city administrations and scores two held-out harvests. The next calibration gate is a dated district-to-production and transport crosswalk with observed deliveries. This feeds the national implementation order below.
+
 ## National implementation order
 
 1. **Align the population and production calendar.** The [national grain replay](organism.md#national-grain-reconciliation) now carries local needs into five years of food targets and verifies physical flows and settlement. The [regional depot replay](organism.md#regional-grain-receipts) accounts for arrivals, missed deadlines and carried lots. Next, constrain the required regional departures by available vehicles, drivers, energy and competing services on the same calendar.

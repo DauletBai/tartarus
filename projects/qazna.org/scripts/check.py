@@ -45,7 +45,12 @@ def main():
     run(["cargo", "test", "--locked", "--test", "services"])
     run(["cargo", "test", "--locked", "--example", "no_ai_study"])
     run(["cargo", "test", "--locked", "--example", "coupled_study"])
+    run(["cargo", "test", "--locked", "--example", "geography_study"])
     with tempfile.TemporaryDirectory(prefix="qazna-math-") as math_dir:
+        geography = Path(math_dir) / "geography-results.json"
+        run(["cargo", "run", "--locked", "--example", "geography_study", "--", str(geography)])
+        if geography.read_bytes() != (ROOT / "research/geography-results.json").read_bytes():
+            raise SystemExit("Geography results differ from current calculations")
         generated = Path(math_dir) / "horizon-results.json"
         run(["cargo", "run", "--locked", "--example", "horizon_study", "--", str(generated)])
         if generated.read_bytes() != (ROOT / "research/horizon-results.json").read_bytes():
