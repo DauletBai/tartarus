@@ -4,6 +4,8 @@
 
 The author's instruction of 2 November 2026 is to design the economy using a living human organism as the guiding analogy, from cells to organs and their coordination. Start with human needs, provisioning capacity, resource circulation and feedback. Financial profit, competition for purchasing power, interest, credit, commissions and speculative pricing are not default goals or mechanisms.
 
+The intended unit of implementation is a state and its whole population. Regional and sectoral exercises check components and supply inputs. Keep the project overview, current roadmap and affected documentation in step with each completed change.
+
 Read `docs/organism.md` when designing domain features. Keep actual resource quantities separate from normative accounting measures. A ledger balance is not proof that physical provision is possible. A resource declaration is not verified growth and does not authorize issuance. Keep a visible distinction between unmet physical need and an accounting/liquidity failure.
 
 The analogy guides architecture, not biological claims or automatic distribution policies. Human needs, personal autonomy and privacy must not be replaced by a notion of obedient or disposable cells. Do not invent policy details or claim unresolved economic hypotheses are proven. Label experimental assumptions and preserve their source/version.

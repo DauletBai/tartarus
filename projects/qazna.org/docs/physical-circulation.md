@@ -5,6 +5,8 @@ five-year calculation instead of assuming that a successful money circuit proves
 that goods, equipment or trained capacity exist. It is a bounded synthetic research
 model, not a calibrated national plan or an autonomous production controller.
 
+The [national grain reconciliation](organism.md#national-grain-reconciliation) extends the five-year field-rotation calculation to summed regional needs and replays its settlement schedule. A [downstream regional replay](organism.md#regional-grain-receipts) follows these withdrawals to depot receipts and reports late lots separately. Earlier experiments below use their original populations and boundaries.
+
 ## What is connected
 
 The schema-10 report has a coupled model with 22 resource/capability dimensions, 21 processes and 1,825 daily
@@ -139,7 +141,7 @@ receipt, the supplying unit circulates that declared share through the treasury;
 the input-cost portion remains available for its own input obligations. This is
 the previously stated common-ownership candidate, not a levy inferred for private
 enterprises. The model does not add separate wages or dividends on top of the same
-accounted amount. Additional contribution rewards remain an open policy design.
+accounted amount. The [contribution study](organism.md#contribution-and-school-achievement) calculates additional awards after protecting provision.
 
 The baseline has **25,175 checked goods/payment links** and **54,000 monetary
 movements**, including funding and entitlement movements. Transfer volume must not

@@ -1,0 +1,3108 @@
+{
+  "gross_grain_pulses_scenario_kg_per_person_year": 100,
+  "kazakhstan": {
+    "base_gross_requirement_kg": 2063352900,
+    "base_population": 20633529,
+    "known_local_gross_shortfalls_kg_2024": 598857700,
+    "national_harvest_backtest": {
+      "2023": {
+        "absolute_error_t": 720700,
+        "median_of_previous_three_years_t": 16375900,
+        "observed_t": 17096600
+      },
+      "2024": {
+        "absolute_error_t": 8108200,
+        "median_of_previous_three_years_t": 17096600,
+        "observed_t": 25204800
+      }
+    },
+    "regions": {
+      "abay": {
+        "districts": {
+          "Абайский район": {
+            "base_gross_requirement_kg": 1286100,
+            "base_residents": 12861,
+            "scenario_gross_requirement_kg": 1780000,
+            "scenario_residents": 17800
+          },
+          "Аягозский район": {
+            "base_gross_requirement_kg": 6032900,
+            "base_residents": 60329,
+            "scenario_gross_requirement_kg": 8349900,
+            "scenario_residents": 83499
+          },
+          "Бескарагайский район": {
+            "base_gross_requirement_kg": 1633300,
+            "base_residents": 16333,
+            "scenario_gross_requirement_kg": 2260600,
+            "scenario_residents": 22606
+          },
+          "Бородулихинский район": {
+            "base_gross_requirement_kg": 3100400,
+            "base_residents": 31004,
+            "scenario_gross_requirement_kg": 4291100,
+            "scenario_residents": 42911
+          },
+          "Жарминский район": {
+            "base_gross_requirement_kg": 3182500,
+            "base_residents": 31825,
+            "scenario_gross_requirement_kg": 4404800,
+            "scenario_residents": 44048
+          },
+          "Кокпектинский район": {
+            "base_gross_requirement_kg": 1224300,
+            "base_residents": 12243,
+            "scenario_gross_requirement_kg": 1694500,
+            "scenario_residents": 16945
+          },
+          "Курчатов г.а.": {
+            "base_gross_requirement_kg": 971700,
+            "base_residents": 9717,
+            "scenario_gross_requirement_kg": 1344900,
+            "scenario_residents": 13449
+          },
+          "Семей г.а.": {
+            "base_gross_requirement_kg": 31587700,
+            "base_residents": 315877,
+            "scenario_gross_requirement_kg": 43719200,
+            "scenario_residents": 437192
+          },
+          "Урджарский район": {
+            "base_gross_requirement_kg": 3885000,
+            "base_residents": 38850,
+            "scenario_gross_requirement_kg": 5377100,
+            "scenario_residents": 53771
+          },
+          "район Ақсуат": {
+            "base_gross_requirement_kg": 1773900,
+            "base_residents": 17739,
+            "scenario_gross_requirement_kg": 2455200,
+            "scenario_residents": 24552
+          },
+          "район Жаңасемей": {
+            "base_gross_requirement_kg": 1901500,
+            "base_residents": 19015,
+            "scenario_gross_requirement_kg": 2631800,
+            "scenario_residents": 26318
+          },
+          "район Мақаншы": {
+            "base_gross_requirement_kg": 2436700,
+            "base_residents": 24367,
+            "scenario_gross_requirement_kg": 3372500,
+            "scenario_residents": 33725
+          }
+        },
+        "gross_gap_kg_2024_harvest_current_residents": 0,
+        "gross_gap_kg_historical_harvest_scenario_residents": {
+          "2020": 0,
+          "2021": 0,
+          "2022": 0,
+          "2023": 0,
+          "2024": 0
+        },
+        "harvest_2024_kg_per_sown_ha": 1524,
+        "harvest_backtest": {
+          "2023": {
+            "absolute_error_t": 10100,
+            "median_of_previous_three_years_t": 326900,
+            "observed_t": 337000
+          },
+          "2024": {
+            "absolute_error_t": 133300,
+            "median_of_previous_three_years_t": 337000,
+            "observed_t": 470300
+          }
+        },
+        "observed_seasons": {
+          "2023": {
+            "april_september": {
+              "mean_monthly_temperature_anomaly_c": 0.99,
+              "precipitation_anomaly_mm": -0.0
+            },
+            "gross_harvest_t": 337000
+          },
+          "2024": {
+            "april_september": {
+              "mean_monthly_temperature_anomaly_c": 1.56,
+              "precipitation_anomaly_mm": 35.5
+            },
+            "gross_harvest_t": 470300
+          },
+          "2025": {
+            "april_september": {
+              "mean_monthly_temperature_anomaly_c": 2.49,
+              "precipitation_anomaly_mm": 19.2
+            },
+            "gross_harvest_t": null
+          }
+        },
+        "residents_2026": 590160,
+        "scenario_output_at_fixed_gross_output_per_resident": {
+          "carcass_meat_t": 117230,
+          "eggs_count": 81105832,
+          "electricity_kwh": 3451426833,
+          "milk_t": 410927,
+          "portland_cement_excl_white_t": 2115396,
+          "potatoes_t": 171762,
+          "pumps_count": 82,
+          "vegetables_t": 137299
+        },
+        "scenario_residents_fixed_share": 816816
+      },
+      "akmola": {
+        "districts": {
+          "Аккольский район": {
+            "base_gross_requirement_kg": 2164400,
+            "base_residents": 21644,
+            "scenario_gross_requirement_kg": 2995700,
+            "scenario_residents": 29957
+          },
+          "Аршалынский район": {
+            "base_gross_requirement_kg": 2704600,
+            "base_residents": 27046,
+            "scenario_gross_requirement_kg": 3743300,
+            "scenario_residents": 37433
+          },
+          "Астраханский район": {
+            "base_gross_requirement_kg": 1758700,
+            "base_residents": 17587,
+            "scenario_gross_requirement_kg": 2434100,
+            "scenario_residents": 24341
+          },
+          "Атбасарский район": {
+            "base_gross_requirement_kg": 4003300,
+            "base_residents": 40033,
+            "scenario_gross_requirement_kg": 5540800,
+            "scenario_residents": 55408
+          },
+          "Буландынский район": {
+            "base_gross_requirement_kg": 2751700,
+            "base_residents": 27517,
+            "scenario_gross_requirement_kg": 3808500,
+            "scenario_residents": 38085
+          },
+          "Бурабайский район": {
+            "base_gross_requirement_kg": 6984200,
+            "base_residents": 69842,
+            "scenario_gross_requirement_kg": 9666500,
+            "scenario_residents": 96665
+          },
+          "Егиндыкольский район": {
+            "base_gross_requirement_kg": 463200,
+            "base_residents": 4632,
+            "scenario_gross_requirement_kg": 641100,
+            "scenario_residents": 6411
+          },
+          "Ерейментауский район": {
+            "base_gross_requirement_kg": 2306800,
+            "base_residents": 23068,
+            "scenario_gross_requirement_kg": 3192700,
+            "scenario_residents": 31927
+          },
+          "Есильский район": {
+            "base_gross_requirement_kg": 1868300,
+            "base_residents": 18683,
+            "scenario_gross_requirement_kg": 2585800,
+            "scenario_residents": 25858
+          },
+          "Жаксынский район": {
+            "base_gross_requirement_kg": 1427300,
+            "base_residents": 14273,
+            "scenario_gross_requirement_kg": 1975500,
+            "scenario_residents": 19755
+          },
+          "Жаркаинский район": {
+            "base_gross_requirement_kg": 1111700,
+            "base_residents": 11117,
+            "scenario_gross_requirement_kg": 1538700,
+            "scenario_residents": 15387
+          },
+          "Зерендинский район": {
+            "base_gross_requirement_kg": 3185900,
+            "base_residents": 31859,
+            "scenario_gross_requirement_kg": 4409500,
+            "scenario_residents": 44095
+          },
+          "Кокшетау г.а.": {
+            "base_gross_requirement_kg": 20170900,
+            "base_residents": 201709,
+            "scenario_gross_requirement_kg": 27917700,
+            "scenario_residents": 279177
+          },
+          "Коргалжынский район": {
+            "base_gross_requirement_kg": 635300,
+            "base_residents": 6353,
+            "scenario_gross_requirement_kg": 879300,
+            "scenario_residents": 8793
+          },
+          "Косшы г.а.": {
+            "base_gross_requirement_kg": 7109700,
+            "base_residents": 71097,
+            "scenario_gross_requirement_kg": 9840200,
+            "scenario_residents": 98402
+          },
+          "Сандыктауский район": {
+            "base_gross_requirement_kg": 1565500,
+            "base_residents": 15655,
+            "scenario_gross_requirement_kg": 2166700,
+            "scenario_residents": 21667
+          },
+          "Степногорск г.а.": {
+            "base_gross_requirement_kg": 6480900,
+            "base_residents": 64809,
+            "scenario_gross_requirement_kg": 8970000,
+            "scenario_residents": 89700
+          },
+          "Целиноградский район": {
+            "base_gross_requirement_kg": 9196900,
+            "base_residents": 91969,
+            "scenario_gross_requirement_kg": 12729100,
+            "scenario_residents": 127291
+          },
+          "Шортандинский район": {
+            "base_gross_requirement_kg": 2562000,
+            "base_residents": 25620,
+            "scenario_gross_requirement_kg": 3546000,
+            "scenario_residents": 35460
+          },
+          "район Биржан сал": {
+            "base_gross_requirement_kg": 1173200,
+            "base_residents": 11732,
+            "scenario_gross_requirement_kg": 1623800,
+            "scenario_residents": 16238
+          }
+        },
+        "gross_gap_kg_2024_harvest_current_residents": 0,
+        "gross_gap_kg_historical_harvest_scenario_residents": {
+          "2020": 0,
+          "2021": 0,
+          "2022": 0,
+          "2023": 0,
+          "2024": 0
+        },
+        "harvest_2024_kg_per_sown_ha": 1286,
+        "harvest_backtest": {
+          "2023": {
+            "absolute_error_t": 745800,
+            "median_of_previous_three_years_t": 3961300,
+            "observed_t": 3215500
+          },
+          "2024": {
+            "absolute_error_t": 2160200,
+            "median_of_previous_three_years_t": 3875900,
+            "observed_t": 6036100
+          }
+        },
+        "observed_seasons": {
+          "2023": {
+            "april_september": {
+              "mean_monthly_temperature_anomaly_c": 1.65,
+              "precipitation_anomaly_mm": 6.4
+            },
+            "gross_harvest_t": 3215500
+          },
+          "2024": {
+            "april_september": {
+              "mean_monthly_temperature_anomaly_c": 0.53,
+              "precipitation_anomaly_mm": 117.1
+            },
+            "gross_harvest_t": 6036100
+          },
+          "2025": {
+            "april_september": {
+              "mean_monthly_temperature_anomaly_c": 2.14,
+              "precipitation_anomaly_mm": 34.2
+            },
+            "gross_harvest_t": null
+          }
+        },
+        "residents_2026": 796245,
+        "scenario_output_at_fixed_gross_output_per_resident": {
+          "carcass_meat_t": 186433,
+          "eggs_count": 957353560,
+          "electricity_kwh": 2600231506,
+          "milk_t": 327607,
+          "portland_cement_excl_white_t": 460200,
+          "potatoes_t": 213284,
+          "pumps_count": null,
+          "vegetables_t": 43460
+        },
+        "scenario_residents_fixed_share": 1102050
+      },
+      "aktobe": {
+        "districts": {
+          "Айтекебийский район": {
+            "base_gross_requirement_kg": 1925800,
+            "base_residents": 19258,
+            "scenario_gross_requirement_kg": 2665400,
+            "scenario_residents": 26654
+          },
+          "Актобе г.а.": {
+            "base_gross_requirement_kg": 60603700,
+            "base_residents": 606037,
+            "scenario_gross_requirement_kg": 83879100,
+            "scenario_residents": 838791
+          },
+          "Алгинский район": {
+            "base_gross_requirement_kg": 4294500,
+            "base_residents": 42945,
+            "scenario_gross_requirement_kg": 5943800,
+            "scenario_residents": 59438
+          },
+          "Байганинский район": {
+            "base_gross_requirement_kg": 2195300,
+            "base_residents": 21953,
+            "scenario_gross_requirement_kg": 3038400,
+            "scenario_residents": 30384
+          },
+          "Иргизский район": {
+            "base_gross_requirement_kg": 1313600,
+            "base_residents": 13136,
+            "scenario_gross_requirement_kg": 1818100,
+            "scenario_residents": 18181
+          },
+          "Каргалинский район": {
+            "base_gross_requirement_kg": 1471800,
+            "base_residents": 14718,
+            "scenario_gross_requirement_kg": 2037100,
+            "scenario_residents": 20371
+          },
+          "Мартукский район": {
+            "base_gross_requirement_kg": 2902800,
+            "base_residents": 29028,
+            "scenario_gross_requirement_kg": 4017600,
+            "scenario_residents": 40176
+          },
+          "Мугалжарский район": {
+            "base_gross_requirement_kg": 6228800,
+            "base_residents": 62288,
+            "scenario_gross_requirement_kg": 8621000,
+            "scenario_residents": 86210
+          },
+          "Темирский район": {
+            "base_gross_requirement_kg": 3359600,
+            "base_residents": 33596,
+            "scenario_gross_requirement_kg": 4649900,
+            "scenario_residents": 46499
+          },
+          "Уилский район": {
+            "base_gross_requirement_kg": 1466100,
+            "base_residents": 14661,
+            "scenario_gross_requirement_kg": 2029200,
+            "scenario_residents": 20292
+          },
+          "Хобдинский район": {
+            "base_gross_requirement_kg": 1524800,
+            "base_residents": 15248,
+            "scenario_gross_requirement_kg": 2110400,
+            "scenario_residents": 21104
+          },
+          "Хромтауский район": {
+            "base_gross_requirement_kg": 4565900,
+            "base_residents": 45659,
+            "scenario_gross_requirement_kg": 6319500,
+            "scenario_residents": 63195
+          },
+          "Шалкарский район": {
+            "base_gross_requirement_kg": 4065700,
+            "base_residents": 40657,
+            "scenario_gross_requirement_kg": 5627200,
+            "scenario_residents": 56272
+          }
+        },
+        "gross_gap_kg_2024_harvest_current_residents": 0,
+        "gross_gap_kg_historical_harvest_scenario_residents": {
+          "2020": 0,
+          "2021": 0,
+          "2022": 0,
+          "2023": 0,
+          "2024": 0
+        },
+        "harvest_2024_kg_per_sown_ha": 1256,
+        "harvest_backtest": {
+          "2023": {
+            "absolute_error_t": 168800,
+            "median_of_previous_three_years_t": 252700,
+            "observed_t": 421500
+          },
+          "2024": {
+            "absolute_error_t": 93700,
+            "median_of_previous_three_years_t": 421500,
+            "observed_t": 515200
+          }
+        },
+        "observed_seasons": {
+          "2023": {
+            "april_september": {
+              "mean_monthly_temperature_anomaly_c": 1.79,
+              "precipitation_anomaly_mm": 11.3
+            },
+            "gross_harvest_t": 421500
+          },
+          "2024": {
+            "april_september": {
+              "mean_monthly_temperature_anomaly_c": 1.0,
+              "precipitation_anomaly_mm": 46.9
+            },
+            "gross_harvest_t": 515200
+          },
+          "2025": {
+            "april_september": {
+              "mean_monthly_temperature_anomaly_c": 1.79,
+              "precipitation_anomaly_mm": 8.6
+            },
+            "gross_harvest_t": null
+          }
+        },
+        "residents_2026": 959184,
+        "scenario_output_at_fixed_gross_output_per_resident": {
+          "carcass_meat_t": 79999,
+          "eggs_count": 297849442,
+          "electricity_kwh": 6054564966,
+          "milk_t": 246778,
+          "portland_cement_excl_white_t": null,
+          "potatoes_t": 70864,
+          "pumps_count": null,
+          "vegetables_t": 43875
+        },
+        "scenario_residents_fixed_share": 1327567
+      },
+      "almaty-city": {
+        "districts": {
+          "Алатауский район": {
+            "base_gross_requirement_kg": 41395200,
+            "base_residents": 413952,
+            "scenario_gross_requirement_kg": 57293400,
+            "scenario_residents": 572934
+          },
+          "Алмалинский район": {
+            "base_gross_requirement_kg": 27516000,
+            "base_residents": 275160,
+            "scenario_gross_requirement_kg": 38083800,
+            "scenario_residents": 380838
+          },
+          "Ауэзовский район": {
+            "base_gross_requirement_kg": 36259700,
+            "base_residents": 362597,
+            "scenario_gross_requirement_kg": 50185600,
+            "scenario_residents": 501856
+          },
+          "Бостандыкский район": {
+            "base_gross_requirement_kg": 35595600,
+            "base_residents": 355956,
+            "scenario_gross_requirement_kg": 49266400,
+            "scenario_residents": 492664
+          },
+          "Жетысуский район": {
+            "base_gross_requirement_kg": 19903500,
+            "base_residents": 199035,
+            "scenario_gross_requirement_kg": 27547600,
+            "scenario_residents": 275476
+          },
+          "Медеуский район": {
+            "base_gross_requirement_kg": 25710400,
+            "base_residents": 257104,
+            "scenario_gross_requirement_kg": 35584700,
+            "scenario_residents": 355847
+          },
+          "Наурызбайский район": {
+            "base_gross_requirement_kg": 25220400,
+            "base_residents": 252204,
+            "scenario_gross_requirement_kg": 34906500,
+            "scenario_residents": 349065
+          },
+          "Турксибский район": {
+            "base_gross_requirement_kg": 27609700,
+            "base_residents": 276097,
+            "scenario_gross_requirement_kg": 38213400,
+            "scenario_residents": 382134
+          }
+        },
+        "gross_gap_kg_2024_harvest_current_residents": 239010500,
+        "gross_gap_kg_historical_harvest_scenario_residents": {
+          "2020": 330981400,
+          "2021": 331081400,
+          "2022": 331081400,
+          "2023": 331081400,
+          "2024": 330881400
+        },
+        "harvest_2024_kg_per_sown_ha": 2000,
+        "harvest_backtest": {
+          "2023": {
+            "absolute_error_t": 0,
+            "median_of_previous_three_years_t": 0,
+            "observed_t": 0
+          },
+          "2024": {
+            "absolute_error_t": 200,
+            "median_of_previous_three_years_t": 0,
+            "observed_t": 200
+          }
+        },
+        "observed_seasons": {
+          "2023": {
+            "april_september": null,
+            "gross_harvest_t": 0
+          },
+          "2024": {
+            "april_september": null,
+            "gross_harvest_t": 200
+          },
+          "2025": {
+            "april_september": null,
+            "gross_harvest_t": null
+          }
+        },
+        "residents_2026": 2392105,
+        "scenario_output_at_fixed_gross_output_per_resident": {
+          "carcass_meat_t": null,
+          "eggs_count": 276812,
+          "electricity_kwh": 4207815595,
+          "milk_t": 693,
+          "portland_cement_excl_white_t": null,
+          "potatoes_t": 2769,
+          "pumps_count": 3501,
+          "vegetables_t": 6782
+        },
+        "scenario_residents_fixed_share": 3310814
+      },
+      "almaty-region": {
+        "districts": {
+          "Алатау г.а.": {
+            "base_gross_requirement_kg": 5829100,
+            "base_residents": 58291,
+            "scenario_gross_requirement_kg": 8067800,
+            "scenario_residents": 80678
+          },
+          "Балхашский район": {
+            "base_gross_requirement_kg": 2641300,
+            "base_residents": 26413,
+            "scenario_gross_requirement_kg": 3655700,
+            "scenario_residents": 36557
+          },
+          "Енбекшиказахский район": {
+            "base_gross_requirement_kg": 27978800,
+            "base_residents": 279788,
+            "scenario_gross_requirement_kg": 38724300,
+            "scenario_residents": 387243
+          },
+          "Жамбылский район": {
+            "base_gross_requirement_kg": 17001500,
+            "base_residents": 170015,
+            "scenario_gross_requirement_kg": 23531100,
+            "scenario_residents": 235311
+          },
+          "Илийский район": {
+            "base_gross_requirement_kg": 24673800,
+            "base_residents": 246738,
+            "scenario_gross_requirement_kg": 34150000,
+            "scenario_residents": 341500
+          },
+          "Карасайский район": {
+            "base_gross_requirement_kg": 38573700,
+            "base_residents": 385737,
+            "scenario_gross_requirement_kg": 53388300,
+            "scenario_residents": 533883
+          },
+          "Кегенский район": {
+            "base_gross_requirement_kg": 2409100,
+            "base_residents": 24091,
+            "scenario_gross_requirement_kg": 3334300,
+            "scenario_residents": 33343
+          },
+          "Райымбекский район": {
+            "base_gross_requirement_kg": 2438200,
+            "base_residents": 24382,
+            "scenario_gross_requirement_kg": 3374600,
+            "scenario_residents": 33746
+          },
+          "Талгарский район": {
+            "base_gross_requirement_kg": 27788100,
+            "base_residents": 277881,
+            "scenario_gross_requirement_kg": 38460400,
+            "scenario_residents": 384604
+          },
+          "Уйгурский район": {
+            "base_gross_requirement_kg": 5839800,
+            "base_residents": 58398,
+            "scenario_gross_requirement_kg": 8082600,
+            "scenario_residents": 80826
+          },
+          "Қонаев г.а.": {
+            "base_gross_requirement_kg": 6668800,
+            "base_residents": 66688,
+            "scenario_gross_requirement_kg": 9230000,
+            "scenario_residents": 92300
+          }
+        },
+        "gross_gap_kg_2024_harvest_current_residents": 0,
+        "gross_gap_kg_historical_harvest_scenario_residents": {
+          "2020": 52199100,
+          "2021": 0,
+          "2022": 0,
+          "2023": 0,
+          "2024": 0
+        },
+        "harvest_2024_kg_per_sown_ha": 2923,
+        "harvest_backtest": {
+          "2023": {
+            "absolute_error_t": 7700,
+            "median_of_previous_three_years_t": 608700,
+            "observed_t": 616400
+          },
+          "2024": {
+            "absolute_error_t": 109200,
+            "median_of_previous_three_years_t": 609700,
+            "observed_t": 500500
+          }
+        },
+        "observed_seasons": {
+          "2023": {
+            "april_september": {
+              "mean_monthly_temperature_anomaly_c": 1.22,
+              "precipitation_anomaly_mm": -30.0
+            },
+            "gross_harvest_t": 616400
+          },
+          "2024": {
+            "april_september": {
+              "mean_monthly_temperature_anomaly_c": 1.49,
+              "precipitation_anomaly_mm": 23.1
+            },
+            "gross_harvest_t": 500500
+          },
+          "2025": {
+            "april_september": {
+              "mean_monthly_temperature_anomaly_c": 2.95,
+              "precipitation_anomaly_mm": -88.1
+            },
+            "gross_harvest_t": null
+          }
+        },
+        "residents_2026": 1618422,
+        "scenario_output_at_fixed_gross_output_per_resident": {
+          "carcass_meat_t": 257159,
+          "eggs_count": 748360523,
+          "electricity_kwh": 5650142707,
+          "milk_t": 401516,
+          "portland_cement_excl_white_t": null,
+          "potatoes_t": 296881,
+          "pumps_count": null,
+          "vegetables_t": 664072
+        },
+        "scenario_residents_fixed_share": 2239991
+      },
+      "astana-city": {
+        "districts": {
+          "район Алматы": {
+            "base_gross_requirement_kg": 25883300,
+            "base_residents": 258833,
+            "scenario_gross_requirement_kg": 35824000,
+            "scenario_residents": 358240
+          },
+          "район Байқоңыр": {
+            "base_gross_requirement_kg": 21054900,
+            "base_residents": 210549,
+            "scenario_gross_requirement_kg": 29141200,
+            "scenario_residents": 291412
+          },
+          "район Есиль": {
+            "base_gross_requirement_kg": 34062900,
+            "base_residents": 340629,
+            "scenario_gross_requirement_kg": 47145100,
+            "scenario_residents": 471451
+          },
+          "район Нұра": {
+            "base_gross_requirement_kg": 34334700,
+            "base_residents": 343347,
+            "scenario_gross_requirement_kg": 47521200,
+            "scenario_residents": 475212
+          },
+          "район Сарайшық": {
+            "base_gross_requirement_kg": 20634200,
+            "base_residents": 206342,
+            "scenario_gross_requirement_kg": 28559000,
+            "scenario_residents": 285590
+          },
+          "район Сарыарка": {
+            "base_gross_requirement_kg": 34745000,
+            "base_residents": 347450,
+            "scenario_gross_requirement_kg": 48089100,
+            "scenario_residents": 480891
+          }
+        },
+        "gross_gap_kg_2024_harvest_current_residents": 169815000,
+        "gross_gap_kg_historical_harvest_scenario_residents": {
+          "2020": 235079600,
+          "2021": 235579600,
+          "2022": 235579600,
+          "2023": 235579600,
+          "2024": 235379600
+        },
+        "harvest_2024_kg_per_sown_ha": 1500,
+        "harvest_backtest": {
+          "2023": {
+            "absolute_error_t": 0,
+            "median_of_previous_three_years_t": 700,
+            "observed_t": 700
+          },
+          "2024": {
+            "absolute_error_t": 200,
+            "median_of_previous_three_years_t": 700,
+            "observed_t": 900
+          }
+        },
+        "observed_seasons": {
+          "2023": {
+            "april_september": null,
+            "gross_harvest_t": 700
+          },
+          "2024": {
+            "april_september": null,
+            "gross_harvest_t": 900
+          },
+          "2025": {
+            "april_september": null,
+            "gross_harvest_t": null
+          }
+        },
+        "residents_2026": 1707150,
+        "scenario_output_at_fixed_gross_output_per_resident": {
+          "carcass_meat_t": null,
+          "eggs_count": 138406,
+          "electricity_kwh": 5388140954,
+          "milk_t": 277,
+          "portland_cement_excl_white_t": null,
+          "potatoes_t": 831,
+          "pumps_count": 219,
+          "vegetables_t": 416
+        },
+        "scenario_residents_fixed_share": 2362796
+      },
+      "atyrau": {
+        "districts": {
+          "Атырау г.а.": {
+            "base_gross_requirement_kg": 43657700,
+            "base_residents": 436577,
+            "scenario_gross_requirement_kg": 60424900,
+            "scenario_residents": 604249
+          },
+          "Жылыойский район": {
+            "base_gross_requirement_kg": 8341100,
+            "base_residents": 83411,
+            "scenario_gross_requirement_kg": 11544600,
+            "scenario_residents": 115446
+          },
+          "Индерский район": {
+            "base_gross_requirement_kg": 3202100,
+            "base_residents": 32021,
+            "scenario_gross_requirement_kg": 4431900,
+            "scenario_residents": 44319
+          },
+          "Исатайский район": {
+            "base_gross_requirement_kg": 2544000,
+            "base_residents": 25440,
+            "scenario_gross_requirement_kg": 3521000,
+            "scenario_residents": 35210
+          },
+          "Кзылкогинский район": {
+            "base_gross_requirement_kg": 3000000,
+            "base_residents": 30000,
+            "scenario_gross_requirement_kg": 4152200,
+            "scenario_residents": 41522
+          },
+          "Курмангазинский район": {
+            "base_gross_requirement_kg": 5408100,
+            "base_residents": 54081,
+            "scenario_gross_requirement_kg": 7485100,
+            "scenario_residents": 74851
+          },
+          "Макатский район": {
+            "base_gross_requirement_kg": 2892500,
+            "base_residents": 28925,
+            "scenario_gross_requirement_kg": 4003400,
+            "scenario_residents": 40034
+          },
+          "Махамбетский район": {
+            "base_gross_requirement_kg": 2812400,
+            "base_residents": 28124,
+            "scenario_gross_requirement_kg": 3892500,
+            "scenario_residents": 38925
+          }
+        },
+        "gross_gap_kg_2024_harvest_current_residents": 71857900,
+        "gross_gap_kg_historical_harvest_scenario_residents": {
+          "2020": 99355600,
+          "2021": 99455600,
+          "2022": 99155600,
+          "2023": null,
+          "2024": 99455600
+        },
+        "harvest_2024_kg_per_sown_ha": null,
+        "harvest_backtest": {
+          "2023": null,
+          "2024": null
+        },
+        "observed_seasons": {
+          "2023": {
+            "april_september": {
+              "mean_monthly_temperature_anomaly_c": 2.11,
+              "precipitation_anomaly_mm": 23.7
+            },
+            "gross_harvest_t": null
+          },
+          "2024": {
+            "april_september": {
+              "mean_monthly_temperature_anomaly_c": 2.17,
+              "precipitation_anomaly_mm": -31.0
+            },
+            "gross_harvest_t": 0
+          },
+          "2025": {
+            "april_september": {
+              "mean_monthly_temperature_anomaly_c": 1.85,
+              "precipitation_anomaly_mm": -0.6
+            },
+            "gross_harvest_t": null
+          }
+        },
+        "residents_2026": 718579,
+        "scenario_output_at_fixed_gross_output_per_resident": {
+          "carcass_meat_t": 37785,
+          "eggs_count": 40691346,
+          "electricity_kwh": 11707066205,
+          "milk_t": 46366,
+          "portland_cement_excl_white_t": null,
+          "potatoes_t": 14533,
+          "pumps_count": null,
+          "vegetables_t": 83598
+        },
+        "scenario_residents_fixed_share": 994556
+      },
+      "east-kazakhstan": {
+        "districts": {
+          "Глубоковский район": {
+            "base_gross_requirement_kg": 5461900,
+            "base_residents": 54619,
+            "scenario_gross_requirement_kg": 7559600,
+            "scenario_residents": 75596
+          },
+          "Зайсанский район": {
+            "base_gross_requirement_kg": 3399200,
+            "base_residents": 33992,
+            "scenario_gross_requirement_kg": 4704700,
+            "scenario_residents": 47047
+          },
+          "Катон-Карагайский район": {
+            "base_gross_requirement_kg": 920300,
+            "base_residents": 9203,
+            "scenario_gross_requirement_kg": 1273700,
+            "scenario_residents": 12737
+          },
+          "Курчумский район": {
+            "base_gross_requirement_kg": 1347200,
+            "base_residents": 13472,
+            "scenario_gross_requirement_kg": 1864600,
+            "scenario_residents": 18646
+          },
+          "Риддер г.а.": {
+            "base_gross_requirement_kg": 4964000,
+            "base_residents": 49640,
+            "scenario_gross_requirement_kg": 6870500,
+            "scenario_residents": 68705
+          },
+          "Тарбагатайский район": {
+            "base_gross_requirement_kg": 1729400,
+            "base_residents": 17294,
+            "scenario_gross_requirement_kg": 2393600,
+            "scenario_residents": 23936
+          },
+          "Уланский район": {
+            "base_gross_requirement_kg": 3200200,
+            "base_residents": 32002,
+            "scenario_gross_requirement_kg": 4429300,
+            "scenario_residents": 44293
+          },
+          "Усть-Каменогорск г.а.": {
+            "base_gross_requirement_kg": 38066600,
+            "base_residents": 380666,
+            "scenario_gross_requirement_kg": 52686400,
+            "scenario_residents": 526864
+          },
+          "Шемонаихинский район": {
+            "base_gross_requirement_kg": 3960200,
+            "base_residents": 39602,
+            "scenario_gross_requirement_kg": 5481100,
+            "scenario_residents": 54811
+          },
+          "район Алтай": {
+            "base_gross_requirement_kg": 5726100,
+            "base_residents": 57261,
+            "scenario_gross_requirement_kg": 7925300,
+            "scenario_residents": 79253
+          },
+          "район Марқакөл": {
+            "base_gross_requirement_kg": 625000,
+            "base_residents": 6250,
+            "scenario_gross_requirement_kg": 865000,
+            "scenario_residents": 8650
+          },
+          "район Самар": {
+            "base_gross_requirement_kg": 1103700,
+            "base_residents": 11037,
+            "scenario_gross_requirement_kg": 1527600,
+            "scenario_residents": 15276
+          },
+          "район Үлкен Нарын": {
+            "base_gross_requirement_kg": 992300,
+            "base_residents": 9923,
+            "scenario_gross_requirement_kg": 1373400,
+            "scenario_residents": 13734
+          }
+        },
+        "gross_gap_kg_2024_harvest_current_residents": 0,
+        "gross_gap_kg_historical_harvest_scenario_residents": {
+          "2020": 0,
+          "2021": 0,
+          "2022": 0,
+          "2023": 0,
+          "2024": 0
+        },
+        "harvest_2024_kg_per_sown_ha": 2290,
+        "harvest_backtest": {
+          "2023": {
+            "absolute_error_t": 141700,
+            "median_of_previous_three_years_t": 528500,
+            "observed_t": 386800
+          },
+          "2024": {
+            "absolute_error_t": 53300,
+            "median_of_previous_three_years_t": 528500,
+            "observed_t": 581800
+          }
+        },
+        "observed_seasons": {
+          "2023": {
+            "april_september": {
+              "mean_monthly_temperature_anomaly_c": 0.76,
+              "precipitation_anomaly_mm": 9.3
+            },
+            "gross_harvest_t": 386800
+          },
+          "2024": {
+            "april_september": {
+              "mean_monthly_temperature_anomaly_c": 1.47,
+              "precipitation_anomaly_mm": 30.0
+            },
+            "gross_harvest_t": 581800
+          },
+          "2025": {
+            "april_september": {
+              "mean_monthly_temperature_anomaly_c": 2.07,
+              "precipitation_anomaly_mm": 54.1
+            },
+            "gross_harvest_t": null
+          }
+        },
+        "residents_2026": 714961,
+        "scenario_output_at_fixed_gross_output_per_resident": {
+          "carcass_meat_t": 150309,
+          "eggs_count": 84704394,
+          "electricity_kwh": 10579329569,
+          "milk_t": 333835,
+          "portland_cement_excl_white_t": 977838,
+          "potatoes_t": 264909,
+          "pumps_count": null,
+          "vegetables_t": 158752
+        },
+        "scenario_residents_fixed_share": 989548
+      },
+      "karaganda": {
+        "districts": {
+          "Абайский район": {
+            "base_gross_requirement_kg": 5625900,
+            "base_residents": 56259,
+            "scenario_gross_requirement_kg": 7786600,
+            "scenario_residents": 77866
+          },
+          "Актогайский район": {
+            "base_gross_requirement_kg": 1473000,
+            "base_residents": 14730,
+            "scenario_gross_requirement_kg": 2038700,
+            "scenario_residents": 20387
+          },
+          "Балхаш г.а.": {
+            "base_gross_requirement_kg": 7620200,
+            "base_residents": 76202,
+            "scenario_gross_requirement_kg": 10546800,
+            "scenario_residents": 105468
+          },
+          "Бухар-Жырауский район": {
+            "base_gross_requirement_kg": 5018800,
+            "base_residents": 50188,
+            "scenario_gross_requirement_kg": 6946300,
+            "scenario_residents": 69463
+          },
+          "Караганда г.а.": {
+            "base_gross_requirement_kg": 53868600,
+            "base_residents": 538686,
+            "scenario_gross_requirement_kg": 74557300,
+            "scenario_residents": 745573
+          },
+          "Каркаралинский район": {
+            "base_gross_requirement_kg": 2750300,
+            "base_residents": 27503,
+            "scenario_gross_requirement_kg": 3806600,
+            "scenario_residents": 38066
+          },
+          "Нуринский район": {
+            "base_gross_requirement_kg": 2000400,
+            "base_residents": 20004,
+            "scenario_gross_requirement_kg": 2768700,
+            "scenario_residents": 27687
+          },
+          "Осакаровский район": {
+            "base_gross_requirement_kg": 2786000,
+            "base_residents": 27860,
+            "scenario_gross_requirement_kg": 3856000,
+            "scenario_residents": 38560
+          },
+          "Приозерск г.а.": {
+            "base_gross_requirement_kg": 1052200,
+            "base_residents": 10522,
+            "scenario_gross_requirement_kg": 1456300,
+            "scenario_residents": 14563
+          },
+          "Сарань г.а.": {
+            "base_gross_requirement_kg": 4295800,
+            "base_residents": 42958,
+            "scenario_gross_requirement_kg": 5945600,
+            "scenario_residents": 59456
+          },
+          "Темиртау г.а.": {
+            "base_gross_requirement_kg": 17502800,
+            "base_residents": 175028,
+            "scenario_gross_requirement_kg": 24224900,
+            "scenario_residents": 242249
+          },
+          "Шахтинск г.а.": {
+            "base_gross_requirement_kg": 5641700,
+            "base_residents": 56417,
+            "scenario_gross_requirement_kg": 7808500,
+            "scenario_residents": 78085
+          },
+          "Шетский район": {
+            "base_gross_requirement_kg": 3397900,
+            "base_residents": 33979,
+            "scenario_gross_requirement_kg": 4702900,
+            "scenario_residents": 47029
+          }
+        },
+        "gross_gap_kg_2024_harvest_current_residents": 0,
+        "gross_gap_kg_historical_harvest_scenario_residents": {
+          "2020": 0,
+          "2021": 0,
+          "2022": 0,
+          "2023": 0,
+          "2024": 0
+        },
+        "harvest_2024_kg_per_sown_ha": 1435,
+        "harvest_backtest": {
+          "2023": {
+            "absolute_error_t": 173300,
+            "median_of_previous_three_years_t": 803500,
+            "observed_t": 630200
+          },
+          "2024": {
+            "absolute_error_t": 501200,
+            "median_of_previous_three_years_t": 803500,
+            "observed_t": 1304700
+          }
+        },
+        "observed_seasons": {
+          "2023": {
+            "april_september": {
+              "mean_monthly_temperature_anomaly_c": 1.31,
+              "precipitation_anomaly_mm": -7.9
+            },
+            "gross_harvest_t": 630200
+          },
+          "2024": {
+            "april_september": {
+              "mean_monthly_temperature_anomaly_c": 1.03,
+              "precipitation_anomaly_mm": 31.2
+            },
+            "gross_harvest_t": 1304700
+          },
+          "2025": {
+            "april_september": {
+              "mean_monthly_temperature_anomaly_c": 2.35,
+              "precipitation_anomaly_mm": -6.1
+            },
+            "gross_harvest_t": null
+          }
+        },
+        "residents_2026": 1130336,
+        "scenario_output_at_fixed_gross_output_per_resident": {
+          "carcass_meat_t": 80138,
+          "eggs_count": 867666746,
+          "electricity_kwh": 16918463499,
+          "milk_t": 301587,
+          "portland_cement_excl_white_t": 2395392,
+          "potatoes_t": 516116,
+          "pumps_count": 737,
+          "vegetables_t": 99514
+        },
+        "scenario_residents_fixed_share": 1564452
+      },
+      "kostanay": {
+        "districts": {
+          "Алтынсаринский район": {
+            "base_gross_requirement_kg": 1149200,
+            "base_residents": 11492,
+            "scenario_gross_requirement_kg": 1590600,
+            "scenario_residents": 15906
+          },
+          "Амангельдинский район": {
+            "base_gross_requirement_kg": 1202600,
+            "base_residents": 12026,
+            "scenario_gross_requirement_kg": 1664500,
+            "scenario_residents": 16645
+          },
+          "Аркалык г.а.": {
+            "base_gross_requirement_kg": 3566300,
+            "base_residents": 35663,
+            "scenario_gross_requirement_kg": 4936000,
+            "scenario_residents": 49360
+          },
+          "Аулиекольский район": {
+            "base_gross_requirement_kg": 3202100,
+            "base_residents": 32021,
+            "scenario_gross_requirement_kg": 4431900,
+            "scenario_residents": 44319
+          },
+          "Денисовский район": {
+            "base_gross_requirement_kg": 1520200,
+            "base_residents": 15202,
+            "scenario_gross_requirement_kg": 2104000,
+            "scenario_residents": 21040
+          },
+          "Жангельдинский район": {
+            "base_gross_requirement_kg": 960800,
+            "base_residents": 9608,
+            "scenario_gross_requirement_kg": 1329800,
+            "scenario_residents": 13298
+          },
+          "Житикаринский район": {
+            "base_gross_requirement_kg": 4016300,
+            "base_residents": 40163,
+            "scenario_gross_requirement_kg": 5558800,
+            "scenario_residents": 55588
+          },
+          "Камыстинский район": {
+            "base_gross_requirement_kg": 963700,
+            "base_residents": 9637,
+            "scenario_gross_requirement_kg": 1333800,
+            "scenario_residents": 13338
+          },
+          "Карабалыкский район": {
+            "base_gross_requirement_kg": 2307700,
+            "base_residents": 23077,
+            "scenario_gross_requirement_kg": 3194000,
+            "scenario_residents": 31940
+          },
+          "Карасуский район": {
+            "base_gross_requirement_kg": 1831900,
+            "base_residents": 18319,
+            "scenario_gross_requirement_kg": 2535500,
+            "scenario_residents": 25355
+          },
+          "Костанай г.а.": {
+            "base_gross_requirement_kg": 27953000,
+            "base_residents": 279530,
+            "scenario_gross_requirement_kg": 38688600,
+            "scenario_residents": 386886
+          },
+          "Костанайский район": {
+            "base_gross_requirement_kg": 7395300,
+            "base_residents": 73953,
+            "scenario_gross_requirement_kg": 10235500,
+            "scenario_residents": 102355
+          },
+          "Лисаковск г.а.": {
+            "base_gross_requirement_kg": 3407900,
+            "base_residents": 34079,
+            "scenario_gross_requirement_kg": 4716700,
+            "scenario_residents": 47167
+          },
+          "Мендыкаринский район": {
+            "base_gross_requirement_kg": 1996500,
+            "base_residents": 19965,
+            "scenario_gross_requirement_kg": 2763300,
+            "scenario_residents": 27633
+          },
+          "Наурзумский район": {
+            "base_gross_requirement_kg": 786000,
+            "base_residents": 7860,
+            "scenario_gross_requirement_kg": 1087900,
+            "scenario_residents": 10879
+          },
+          "Рудный г.а.": {
+            "base_gross_requirement_kg": 12245300,
+            "base_residents": 122453,
+            "scenario_gross_requirement_kg": 16948200,
+            "scenario_residents": 169482
+          },
+          "Сарыкольский район": {
+            "base_gross_requirement_kg": 1578800,
+            "base_residents": 15788,
+            "scenario_gross_requirement_kg": 2185200,
+            "scenario_residents": 21852
+          },
+          "Узункольский район": {
+            "base_gross_requirement_kg": 1369400,
+            "base_residents": 13694,
+            "scenario_gross_requirement_kg": 1895300,
+            "scenario_residents": 18953
+          },
+          "Федоровский район": {
+            "base_gross_requirement_kg": 2235700,
+            "base_residents": 22357,
+            "scenario_gross_requirement_kg": 3094300,
+            "scenario_residents": 30943
+          },
+          "район Беймбета Майлина": {
+            "base_gross_requirement_kg": 2122100,
+            "base_residents": 21221,
+            "scenario_gross_requirement_kg": 2937100,
+            "scenario_residents": 29371
+          }
+        },
+        "gross_gap_kg_2024_harvest_current_residents": 0,
+        "gross_gap_kg_historical_harvest_scenario_residents": {
+          "2020": 0,
+          "2021": 0,
+          "2022": 0,
+          "2023": 0,
+          "2024": 0
+        },
+        "harvest_2024_kg_per_sown_ha": 1300,
+        "harvest_backtest": {
+          "2023": {
+            "absolute_error_t": 1585700,
+            "median_of_previous_three_years_t": 2841200,
+            "observed_t": 4426900
+          },
+          "2024": {
+            "absolute_error_t": 1156500,
+            "median_of_previous_three_years_t": 4426900,
+            "observed_t": 5583400
+          }
+        },
+        "observed_seasons": {
+          "2023": {
+            "april_september": {
+              "mean_monthly_temperature_anomaly_c": 1.6,
+              "precipitation_anomaly_mm": 16.4
+            },
+            "gross_harvest_t": 4426900
+          },
+          "2024": {
+            "april_september": {
+              "mean_monthly_temperature_anomaly_c": 0.66,
+              "precipitation_anomaly_mm": 36.6
+            },
+            "gross_harvest_t": 5583400
+          },
+          "2025": {
+            "april_september": {
+              "mean_monthly_temperature_anomaly_c": 2.03,
+              "precipitation_anomaly_mm": 25.3
+            },
+            "gross_harvest_t": null
+          }
+        },
+        "residents_2026": 818108,
+        "scenario_output_at_fixed_gross_output_per_resident": {
+          "carcass_meat_t": 54256,
+          "eggs_count": 542828065,
+          "electricity_kwh": 1875123564,
+          "milk_t": 287331,
+          "portland_cement_excl_white_t": 84151,
+          "potatoes_t": 150725,
+          "pumps_count": null,
+          "vegetables_t": 73356
+        },
+        "scenario_residents_fixed_share": 1132310
+      },
+      "kyzylorda": {
+        "districts": {
+          "Аральский район": {
+            "base_gross_requirement_kg": 7816900,
+            "base_residents": 78169,
+            "scenario_gross_requirement_kg": 10819000,
+            "scenario_residents": 108190
+          },
+          "Байконыр г.а.": {
+            "base_gross_requirement_kg": 3005200,
+            "base_residents": 30052,
+            "scenario_gross_requirement_kg": 4159400,
+            "scenario_residents": 41594
+          },
+          "Жалагашский район": {
+            "base_gross_requirement_kg": 3504200,
+            "base_residents": 35042,
+            "scenario_gross_requirement_kg": 4850000,
+            "scenario_residents": 48500
+          },
+          "Жанакорганский район": {
+            "base_gross_requirement_kg": 8103000,
+            "base_residents": 81030,
+            "scenario_gross_requirement_kg": 11215000,
+            "scenario_residents": 112150
+          },
+          "Казалинский район": {
+            "base_gross_requirement_kg": 7798700,
+            "base_residents": 77987,
+            "scenario_gross_requirement_kg": 10793900,
+            "scenario_residents": 107939
+          },
+          "Кармакшинский район": {
+            "base_gross_requirement_kg": 5012200,
+            "base_residents": 50122,
+            "scenario_gross_requirement_kg": 6937200,
+            "scenario_residents": 69372
+          },
+          "Кызылорда г.а.": {
+            "base_gross_requirement_kg": 36978400,
+            "base_residents": 369784,
+            "scenario_gross_requirement_kg": 51180300,
+            "scenario_residents": 511803
+          },
+          "Сырдарьинский район": {
+            "base_gross_requirement_kg": 3695500,
+            "base_residents": 36955,
+            "scenario_gross_requirement_kg": 5114800,
+            "scenario_residents": 51148
+          },
+          "Чиилийский район": {
+            "base_gross_requirement_kg": 8504200,
+            "base_residents": 85042,
+            "scenario_gross_requirement_kg": 11770300,
+            "scenario_residents": 117703
+          }
+        },
+        "gross_gap_kg_2024_harvest_current_residents": 0,
+        "gross_gap_kg_historical_harvest_scenario_residents": {
+          "2020": 0,
+          "2021": 0,
+          "2022": 0,
+          "2023": 0,
+          "2024": 0
+        },
+        "harvest_2024_kg_per_sown_ha": 4883,
+        "harvest_backtest": {
+          "2023": {
+            "absolute_error_t": 39400,
+            "median_of_previous_three_years_t": 414500,
+            "observed_t": 453900
+          },
+          "2024": {
+            "absolute_error_t": 24700,
+            "median_of_previous_three_years_t": 453900,
+            "observed_t": 478600
+          }
+        },
+        "observed_seasons": {
+          "2023": {
+            "april_september": {
+              "mean_monthly_temperature_anomaly_c": 2.19,
+              "precipitation_anomaly_mm": -19.8
+            },
+            "gross_harvest_t": 453900
+          },
+          "2024": {
+            "april_september": {
+              "mean_monthly_temperature_anomaly_c": 1.7,
+              "precipitation_anomaly_mm": 13.5
+            },
+            "gross_harvest_t": 478600
+          },
+          "2025": {
+            "april_september": {
+              "mean_monthly_temperature_anomaly_c": 2.94,
+              "precipitation_anomaly_mm": -18.5
+            },
+            "gross_harvest_t": null
+          }
+        },
+        "residents_2026": 844183,
+        "scenario_output_at_fixed_gross_output_per_resident": {
+          "carcass_meat_t": 27958,
+          "eggs_count": 10657254,
+          "electricity_kwh": 2292001550,
+          "milk_t": 84566,
+          "portland_cement_excl_white_t": 1614228,
+          "potatoes_t": 40277,
+          "pumps_count": 142,
+          "vegetables_t": 165811
+        },
+        "scenario_residents_fixed_share": 1168399
+      },
+      "mangystau": {
+        "districts": {
+          "Актау г.а.": {
+            "base_gross_requirement_kg": 31577500,
+            "base_residents": 315775,
+            "scenario_gross_requirement_kg": 43705100,
+            "scenario_residents": 437051
+          },
+          "Бейнеуский район": {
+            "base_gross_requirement_kg": 7117000,
+            "base_residents": 71170,
+            "scenario_gross_requirement_kg": 9850400,
+            "scenario_residents": 98504
+          },
+          "Жанаозен г.а.": {
+            "base_gross_requirement_kg": 15543900,
+            "base_residents": 155439,
+            "scenario_gross_requirement_kg": 21513700,
+            "scenario_residents": 215137
+          },
+          "Каракиянский район": {
+            "base_gross_requirement_kg": 3537400,
+            "base_residents": 35374,
+            "scenario_gross_requirement_kg": 4896000,
+            "scenario_residents": 48960
+          },
+          "Мангистауский район": {
+            "base_gross_requirement_kg": 3337600,
+            "base_residents": 33376,
+            "scenario_gross_requirement_kg": 4619400,
+            "scenario_residents": 46194
+          },
+          "Мунайлинский район": {
+            "base_gross_requirement_kg": 17392400,
+            "base_residents": 173924,
+            "scenario_gross_requirement_kg": 24072100,
+            "scenario_residents": 240721
+          },
+          "Тупкараганский район": {
+            "base_gross_requirement_kg": 4204400,
+            "base_residents": 42044,
+            "scenario_gross_requirement_kg": 5819100,
+            "scenario_residents": 58191
+          }
+        },
+        "gross_gap_kg_2024_harvest_current_residents": null,
+        "gross_gap_kg_historical_harvest_scenario_residents": {
+          "2020": null,
+          "2021": null,
+          "2022": null,
+          "2023": null,
+          "2024": null
+        },
+        "harvest_2024_kg_per_sown_ha": null,
+        "harvest_backtest": {
+          "2023": null,
+          "2024": null
+        },
+        "observed_seasons": {
+          "2023": {
+            "april_september": {
+              "mean_monthly_temperature_anomaly_c": 1.78,
+              "precipitation_anomaly_mm": 33.5
+            },
+            "gross_harvest_t": null
+          },
+          "2024": {
+            "april_september": {
+              "mean_monthly_temperature_anomaly_c": 2.57,
+              "precipitation_anomaly_mm": -17.3
+            },
+            "gross_harvest_t": null
+          },
+          "2025": {
+            "april_september": {
+              "mean_monthly_temperature_anomaly_c": 1.53,
+              "precipitation_anomaly_mm": -48.6
+            },
+            "gross_harvest_t": null
+          }
+        },
+        "residents_2026": 827102,
+        "scenario_output_at_fixed_gross_output_per_resident": {
+          "carcass_meat_t": 17993,
+          "eggs_count": 2214495,
+          "electricity_kwh": 7497032602,
+          "milk_t": 8166,
+          "portland_cement_excl_white_t": 1260048,
+          "potatoes_t": null,
+          "pumps_count": 0,
+          "vegetables_t": 8582
+        },
+        "scenario_residents_fixed_share": 1144758
+      },
+      "north-kazakhstan": {
+        "districts": {
+          "Айыртауский район": {
+            "base_gross_requirement_kg": 2905200,
+            "base_residents": 29052,
+            "scenario_gross_requirement_kg": 4021000,
+            "scenario_residents": 40210
+          },
+          "Акжарский район": {
+            "base_gross_requirement_kg": 1189400,
+            "base_residents": 11894,
+            "scenario_gross_requirement_kg": 1646200,
+            "scenario_residents": 16462
+          },
+          "Аккайынский район": {
+            "base_gross_requirement_kg": 1701000,
+            "base_residents": 17010,
+            "scenario_gross_requirement_kg": 2354300,
+            "scenario_residents": 23543
+          },
+          "Есильский район": {
+            "base_gross_requirement_kg": 1971100,
+            "base_residents": 19711,
+            "scenario_gross_requirement_kg": 2728100,
+            "scenario_residents": 27281
+          },
+          "Жамбылский район": {
+            "base_gross_requirement_kg": 1617100,
+            "base_residents": 16171,
+            "scenario_gross_requirement_kg": 2238200,
+            "scenario_residents": 22382
+          },
+          "Кызылжарский район": {
+            "base_gross_requirement_kg": 4587500,
+            "base_residents": 45875,
+            "scenario_gross_requirement_kg": 6349400,
+            "scenario_residents": 63494
+          },
+          "Мамлютский район": {
+            "base_gross_requirement_kg": 1612000,
+            "base_residents": 16120,
+            "scenario_gross_requirement_kg": 2231100,
+            "scenario_residents": 22311
+          },
+          "Петропавловск г.а.": {
+            "base_gross_requirement_kg": 22232600,
+            "base_residents": 222326,
+            "scenario_gross_requirement_kg": 30771200,
+            "scenario_residents": 307712
+          },
+          "Район Габита Мусрепова": {
+            "base_gross_requirement_kg": 3319400,
+            "base_residents": 33194,
+            "scenario_gross_requirement_kg": 4594300,
+            "scenario_residents": 45943
+          },
+          "Район Магжана Жумабаева": {
+            "base_gross_requirement_kg": 2541100,
+            "base_residents": 25411,
+            "scenario_gross_requirement_kg": 3517000,
+            "scenario_residents": 35170
+          },
+          "Район Шал акына": {
+            "base_gross_requirement_kg": 1664600,
+            "base_residents": 16646,
+            "scenario_gross_requirement_kg": 2303900,
+            "scenario_residents": 23039
+          },
+          "Тайыншинский район": {
+            "base_gross_requirement_kg": 3684400,
+            "base_residents": 36844,
+            "scenario_gross_requirement_kg": 5099400,
+            "scenario_residents": 50994
+          },
+          "Тимирязевский район": {
+            "base_gross_requirement_kg": 885000,
+            "base_residents": 8850,
+            "scenario_gross_requirement_kg": 1224900,
+            "scenario_residents": 12249
+          },
+          "Уалихановский район": {
+            "base_gross_requirement_kg": 1107700,
+            "base_residents": 11077,
+            "scenario_gross_requirement_kg": 1533100,
+            "scenario_residents": 15331
+          }
+        },
+        "gross_gap_kg_2024_harvest_current_residents": 0,
+        "gross_gap_kg_historical_harvest_scenario_residents": {
+          "2020": 0,
+          "2021": 0,
+          "2022": 0,
+          "2023": 0,
+          "2024": 0
+        },
+        "harvest_2024_kg_per_sown_ha": 1828,
+        "harvest_backtest": {
+          "2023": {
+            "absolute_error_t": 321100,
+            "median_of_previous_three_years_t": 3426600,
+            "observed_t": 3747700
+          },
+          "2024": {
+            "absolute_error_t": 2352900,
+            "median_of_previous_three_years_t": 3747700,
+            "observed_t": 6100600
+          }
+        },
+        "observed_seasons": {
+          "2023": {
+            "april_september": {
+              "mean_monthly_temperature_anomaly_c": 1.73,
+              "precipitation_anomaly_mm": -28.2
+            },
+            "gross_harvest_t": 3747700
+          },
+          "2024": {
+            "april_september": {
+              "mean_monthly_temperature_anomaly_c": 0.55,
+              "precipitation_anomaly_mm": 135.1
+            },
+            "gross_harvest_t": 6100600
+          },
+          "2025": {
+            "april_september": {
+              "mean_monthly_temperature_anomaly_c": 1.9,
+              "precipitation_anomaly_mm": 71.3
+            },
+            "gross_harvest_t": null
+          }
+        },
+        "residents_2026": 510181,
+        "scenario_output_at_fixed_gross_output_per_resident": {
+          "carcass_meat_t": 59238,
+          "eggs_count": 834172827,
+          "electricity_kwh": 3255723809,
+          "milk_t": 513071,
+          "portland_cement_excl_white_t": null,
+          "potatoes_t": 141451,
+          "pumps_count": null,
+          "vegetables_t": 49273
+        },
+        "scenario_residents_fixed_share": 706121
+      },
+      "pavlodar": {
+        "districts": {
+          "Аксу г.а.": {
+            "base_gross_requirement_kg": 7201100,
+            "base_residents": 72011,
+            "scenario_gross_requirement_kg": 9966700,
+            "scenario_residents": 99667
+          },
+          "Актогайский район": {
+            "base_gross_requirement_kg": 1150100,
+            "base_residents": 11501,
+            "scenario_gross_requirement_kg": 1591800,
+            "scenario_residents": 15918
+          },
+          "Баянаульский район": {
+            "base_gross_requirement_kg": 2195900,
+            "base_residents": 21959,
+            "scenario_gross_requirement_kg": 3039300,
+            "scenario_residents": 30393
+          },
+          "Железинский район": {
+            "base_gross_requirement_kg": 1385500,
+            "base_residents": 13855,
+            "scenario_gross_requirement_kg": 1917600,
+            "scenario_residents": 19176
+          },
+          "Иртышский район": {
+            "base_gross_requirement_kg": 1521400,
+            "base_residents": 15214,
+            "scenario_gross_requirement_kg": 2105700,
+            "scenario_residents": 21057
+          },
+          "Майский район": {
+            "base_gross_requirement_kg": 943000,
+            "base_residents": 9430,
+            "scenario_gross_requirement_kg": 1305200,
+            "scenario_residents": 13052
+          },
+          "Павлодар г.а.": {
+            "base_gross_requirement_kg": 37070600,
+            "base_residents": 370706,
+            "scenario_gross_requirement_kg": 51307900,
+            "scenario_residents": 513079
+          },
+          "Павлодарский район": {
+            "base_gross_requirement_kg": 2550300,
+            "base_residents": 25503,
+            "scenario_gross_requirement_kg": 3529800,
+            "scenario_residents": 35298
+          },
+          "Успенский район": {
+            "base_gross_requirement_kg": 1174400,
+            "base_residents": 11744,
+            "scenario_gross_requirement_kg": 1625400,
+            "scenario_residents": 16254
+          },
+          "Щербактинский район": {
+            "base_gross_requirement_kg": 1767000,
+            "base_residents": 17670,
+            "scenario_gross_requirement_kg": 2445600,
+            "scenario_residents": 24456
+          },
+          "Экибастуз г.а.": {
+            "base_gross_requirement_kg": 14257200,
+            "base_residents": 142572,
+            "scenario_gross_requirement_kg": 19732800,
+            "scenario_residents": 197328
+          },
+          "район Аққулы": {
+            "base_gross_requirement_kg": 1094500,
+            "base_residents": 10945,
+            "scenario_gross_requirement_kg": 1514900,
+            "scenario_residents": 15149
+          },
+          "район Тереңкөл": {
+            "base_gross_requirement_kg": 1849300,
+            "base_residents": 18493,
+            "scenario_gross_requirement_kg": 2559500,
+            "scenario_residents": 25595
+          }
+        },
+        "gross_gap_kg_2024_harvest_current_residents": 0,
+        "gross_gap_kg_historical_harvest_scenario_residents": {
+          "2020": 0,
+          "2021": 0,
+          "2022": 0,
+          "2023": 0,
+          "2024": 0
+        },
+        "harvest_2024_kg_per_sown_ha": 1093,
+        "harvest_backtest": {
+          "2023": {
+            "absolute_error_t": 477200,
+            "median_of_previous_three_years_t": 884700,
+            "observed_t": 407500
+          },
+          "2024": {
+            "absolute_error_t": 124300,
+            "median_of_previous_three_years_t": 884700,
+            "observed_t": 1009000
+          }
+        },
+        "observed_seasons": {
+          "2023": {
+            "april_september": {
+              "mean_monthly_temperature_anomaly_c": 1.28,
+              "precipitation_anomaly_mm": -4.7
+            },
+            "gross_harvest_t": 407500
+          },
+          "2024": {
+            "april_september": {
+              "mean_monthly_temperature_anomaly_c": 0.77,
+              "precipitation_anomaly_mm": 133.2
+            },
+            "gross_harvest_t": 1009000
+          },
+          "2025": {
+            "april_september": {
+              "mean_monthly_temperature_anomaly_c": 2.03,
+              "precipitation_anomaly_mm": 59.4
+            },
+            "gross_harvest_t": null
+          }
+        },
+        "residents_2026": 741603,
+        "scenario_output_at_fixed_gross_output_per_resident": {
+          "carcass_meat_t": 86919,
+          "eggs_count": 282347952,
+          "electricity_kwh": 66917156575,
+          "milk_t": 328853,
+          "portland_cement_excl_white_t": null,
+          "potatoes_t": 850920,
+          "pumps_count": null,
+          "vegetables_t": 310030
+        },
+        "scenario_residents_fixed_share": 1026422
+      },
+      "shymkent-city": {
+        "districts": {
+          "Абайский район": {
+            "base_gross_requirement_kg": 27757000,
+            "base_residents": 277570,
+            "scenario_gross_requirement_kg": 38417300,
+            "scenario_residents": 384173
+          },
+          "Аль-фарабийский район": {
+            "base_gross_requirement_kg": 25956900,
+            "base_residents": 259569,
+            "scenario_gross_requirement_kg": 35925900,
+            "scenario_residents": 359259
+          },
+          "Енбекшинский район": {
+            "base_gross_requirement_kg": 20645200,
+            "base_residents": 206452,
+            "scenario_gross_requirement_kg": 28574200,
+            "scenario_residents": 285742
+          },
+          "Каратауский район": {
+            "base_gross_requirement_kg": 34637300,
+            "base_residents": 346373,
+            "scenario_gross_requirement_kg": 47940000,
+            "scenario_residents": 479400
+          },
+          "район Тұран": {
+            "base_gross_requirement_kg": 23077900,
+            "base_residents": 230779,
+            "scenario_gross_requirement_kg": 31941200,
+            "scenario_residents": 319412
+          }
+        },
+        "gross_gap_kg_2024_harvest_current_residents": 118174300,
+        "gross_gap_kg_historical_harvest_scenario_residents": {
+          "2020": 171898600,
+          "2021": 173898600,
+          "2022": 170098600,
+          "2023": 170798600,
+          "2024": 168898600
+        },
+        "harvest_2024_kg_per_sown_ha": 1158,
+        "harvest_backtest": {
+          "2023": {
+            "absolute_error_t": 1100,
+            "median_of_previous_three_years_t": 10900,
+            "observed_t": 12000
+          },
+          "2024": {
+            "absolute_error_t": 1900,
+            "median_of_previous_three_years_t": 12000,
+            "observed_t": 13900
+          }
+        },
+        "observed_seasons": {
+          "2023": {
+            "april_september": null,
+            "gross_harvest_t": 12000
+          },
+          "2024": {
+            "april_september": null,
+            "gross_harvest_t": 13900
+          },
+          "2025": {
+            "april_september": null,
+            "gross_harvest_t": null
+          }
+        },
+        "residents_2026": 1320743,
+        "scenario_output_at_fixed_gross_output_per_resident": {
+          "carcass_meat_t": 6367,
+          "eggs_count": 249268994,
+          "electricity_kwh": 1262953675,
+          "milk_t": 96193,
+          "portland_cement_excl_white_t": 4000761,
+          "potatoes_t": 831,
+          "pumps_count": 1300,
+          "vegetables_t": 22976
+        },
+        "scenario_residents_fixed_share": 1827986
+      },
+      "turkistan": {
+        "districts": {
+          "Арысь г.а.": {
+            "base_gross_requirement_kg": 7568600,
+            "base_residents": 75686,
+            "scenario_gross_requirement_kg": 10475400,
+            "scenario_residents": 104754
+          },
+          "Жетысайский район": {
+            "base_gross_requirement_kg": 17987700,
+            "base_residents": 179877,
+            "scenario_gross_requirement_kg": 24896000,
+            "scenario_residents": 248960
+          },
+          "Казыгуртский район": {
+            "base_gross_requirement_kg": 11637000,
+            "base_residents": 116370,
+            "scenario_gross_requirement_kg": 16106300,
+            "scenario_residents": 161063
+          },
+          "Келесский район": {
+            "base_gross_requirement_kg": 12926200,
+            "base_residents": 129262,
+            "scenario_gross_requirement_kg": 17890600,
+            "scenario_residents": 178906
+          },
+          "Кентау г.а.": {
+            "base_gross_requirement_kg": 9860600,
+            "base_residents": 98606,
+            "scenario_gross_requirement_kg": 13647700,
+            "scenario_residents": 136477
+          },
+          "Мактааральский район": {
+            "base_gross_requirement_kg": 12589700,
+            "base_residents": 125897,
+            "scenario_gross_requirement_kg": 17424900,
+            "scenario_residents": 174249
+          },
+          "Ордабасынский район": {
+            "base_gross_requirement_kg": 13051800,
+            "base_residents": 130518,
+            "scenario_gross_requirement_kg": 18064500,
+            "scenario_residents": 180645
+          },
+          "Отрарский район": {
+            "base_gross_requirement_kg": 4936200,
+            "base_residents": 49362,
+            "scenario_gross_requirement_kg": 6832000,
+            "scenario_residents": 68320
+          },
+          "Район Байдибека": {
+            "base_gross_requirement_kg": 4686100,
+            "base_residents": 46861,
+            "scenario_gross_requirement_kg": 6485900,
+            "scenario_residents": 64859
+          },
+          "Район сауран": {
+            "base_gross_requirement_kg": 10564600,
+            "base_residents": 105646,
+            "scenario_gross_requirement_kg": 14622000,
+            "scenario_residents": 146220
+          },
+          "Сайрамский район": {
+            "base_gross_requirement_kg": 24462900,
+            "base_residents": 244629,
+            "scenario_gross_requirement_kg": 33858100,
+            "scenario_residents": 338581
+          },
+          "Сарыагашский район": {
+            "base_gross_requirement_kg": 22182800,
+            "base_residents": 221828,
+            "scenario_gross_requirement_kg": 30702300,
+            "scenario_residents": 307023
+          },
+          "Сузакский район": {
+            "base_gross_requirement_kg": 6143100,
+            "base_residents": 61431,
+            "scenario_gross_requirement_kg": 8502400,
+            "scenario_residents": 85024
+          },
+          "Толебийский район": {
+            "base_gross_requirement_kg": 12164100,
+            "base_residents": 121641,
+            "scenario_gross_requirement_kg": 16835800,
+            "scenario_residents": 168358
+          },
+          "Туркестан г.а.": {
+            "base_gross_requirement_kg": 25025100,
+            "base_residents": 250251,
+            "scenario_gross_requirement_kg": 34636200,
+            "scenario_residents": 346362
+          },
+          "Тюлькубасский район": {
+            "base_gross_requirement_kg": 10301900,
+            "base_residents": 103019,
+            "scenario_gross_requirement_kg": 14258400,
+            "scenario_residents": 142584
+          },
+          "Шардаринский район": {
+            "base_gross_requirement_kg": 8052500,
+            "base_residents": 80525,
+            "scenario_gross_requirement_kg": 11145100,
+            "scenario_residents": 111451
+          }
+        },
+        "gross_gap_kg_2024_harvest_current_residents": 0,
+        "gross_gap_kg_historical_harvest_scenario_residents": {
+          "2020": 0,
+          "2021": 0,
+          "2022": 0,
+          "2023": 0,
+          "2024": 0
+        },
+        "harvest_2024_kg_per_sown_ha": 2588,
+        "harvest_backtest": {
+          "2023": {
+            "absolute_error_t": 167800,
+            "median_of_previous_three_years_t": 587600,
+            "observed_t": 755400
+          },
+          "2024": {
+            "absolute_error_t": 122700,
+            "median_of_previous_three_years_t": 740200,
+            "observed_t": 862900
+          }
+        },
+        "observed_seasons": {
+          "2023": {
+            "april_september": {
+              "mean_monthly_temperature_anomaly_c": 1.62,
+              "precipitation_anomaly_mm": -27.0
+            },
+            "gross_harvest_t": 755400
+          },
+          "2024": {
+            "april_september": {
+              "mean_monthly_temperature_anomaly_c": 1.21,
+              "precipitation_anomaly_mm": 18.0
+            },
+            "gross_harvest_t": 862900
+          },
+          "2025": {
+            "april_september": {
+              "mean_monthly_temperature_anomaly_c": 3.14,
+              "precipitation_anomaly_mm": -108.0
+            },
+            "gross_harvest_t": null
+          }
+        },
+        "residents_2026": 2141409,
+        "scenario_output_at_fixed_gross_output_per_resident": {
+          "carcass_meat_t": 180343,
+          "eggs_count": 349059633,
+          "electricity_kwh": 1529384990,
+          "milk_t": 637360,
+          "portland_cement_excl_white_t": null,
+          "potatoes_t": 394872,
+          "pumps_count": null,
+          "vegetables_t": 1492708
+        },
+        "scenario_residents_fixed_share": 2963836
+      },
+      "ulytau": {
+        "districts": {
+          "Жанааркинский район": {
+            "base_gross_requirement_kg": 2950300,
+            "base_residents": 29503,
+            "scenario_gross_requirement_kg": 4083400,
+            "scenario_residents": 40834
+          },
+          "Жезказган г.а.": {
+            "base_gross_requirement_kg": 9275400,
+            "base_residents": 92754,
+            "scenario_gross_requirement_kg": 12837700,
+            "scenario_residents": 128377
+          },
+          "Каражал г.а.": {
+            "base_gross_requirement_kg": 1691000,
+            "base_residents": 16910,
+            "scenario_gross_requirement_kg": 2340400,
+            "scenario_residents": 23404
+          },
+          "Сатпаев г.а.": {
+            "base_gross_requirement_kg": 6728200,
+            "base_residents": 67282,
+            "scenario_gross_requirement_kg": 9312200,
+            "scenario_residents": 93122
+          },
+          "Улытауский район": {
+            "base_gross_requirement_kg": 1059700,
+            "base_residents": 10597,
+            "scenario_gross_requirement_kg": 1466700,
+            "scenario_residents": 14667
+          }
+        },
+        "gross_gap_kg_2024_harvest_current_residents": 0,
+        "gross_gap_kg_historical_harvest_scenario_residents": {
+          "2020": 30040400,
+          "2021": 0,
+          "2022": 1640400,
+          "2023": 6440400,
+          "2024": 7540400
+        },
+        "harvest_2024_kg_per_sown_ha": 922,
+        "harvest_backtest": {
+          "2023": {
+            "absolute_error_t": 4800,
+            "median_of_previous_three_years_t": 28400,
+            "observed_t": 23600
+          },
+          "2024": {
+            "absolute_error_t": 5900,
+            "median_of_previous_three_years_t": 28400,
+            "observed_t": 22500
+          }
+        },
+        "observed_seasons": {
+          "2023": {
+            "april_september": {
+              "mean_monthly_temperature_anomaly_c": 1.76,
+              "precipitation_anomaly_mm": -12.8
+            },
+            "gross_harvest_t": 23600
+          },
+          "2024": {
+            "april_september": {
+              "mean_monthly_temperature_anomaly_c": 1.3,
+              "precipitation_anomaly_mm": -5.7
+            },
+            "gross_harvest_t": 22500
+          },
+          "2025": {
+            "april_september": {
+              "mean_monthly_temperature_anomaly_c": 2.63,
+              "precipitation_anomaly_mm": -22.0
+            },
+            "gross_harvest_t": null
+          }
+        },
+        "residents_2026": 217046,
+        "scenario_output_at_fixed_gross_output_per_resident": {
+          "carcass_meat_t": 20208,
+          "eggs_count": 22283316,
+          "electricity_kwh": 1392637989,
+          "milk_t": 92732,
+          "portland_cement_excl_white_t": null,
+          "potatoes_t": 21038,
+          "pumps_count": null,
+          "vegetables_t": 13287
+        },
+        "scenario_residents_fixed_share": 300404
+      },
+      "west-kazakhstan": {
+        "districts": {
+          "Акжаикский район": {
+            "base_gross_requirement_kg": 3313600,
+            "base_residents": 33136,
+            "scenario_gross_requirement_kg": 4586200,
+            "scenario_residents": 45862
+          },
+          "Бокейординский район": {
+            "base_gross_requirement_kg": 1334300,
+            "base_residents": 13343,
+            "scenario_gross_requirement_kg": 1846800,
+            "scenario_residents": 18468
+          },
+          "Бурлинский район": {
+            "base_gross_requirement_kg": 5658900,
+            "base_residents": 56589,
+            "scenario_gross_requirement_kg": 7832300,
+            "scenario_residents": 78323
+          },
+          "Жангалинский район": {
+            "base_gross_requirement_kg": 2061500,
+            "base_residents": 20615,
+            "scenario_gross_requirement_kg": 2853200,
+            "scenario_residents": 28532
+          },
+          "Жанибекский район": {
+            "base_gross_requirement_kg": 1335800,
+            "base_residents": 13358,
+            "scenario_gross_requirement_kg": 1848800,
+            "scenario_residents": 18488
+          },
+          "Казталовский район": {
+            "base_gross_requirement_kg": 2524400,
+            "base_residents": 25244,
+            "scenario_gross_requirement_kg": 3493900,
+            "scenario_residents": 34939
+          },
+          "Каратобинский район": {
+            "base_gross_requirement_kg": 1252100,
+            "base_residents": 12521,
+            "scenario_gross_requirement_kg": 1733000,
+            "scenario_residents": 17330
+          },
+          "Сырымский район": {
+            "base_gross_requirement_kg": 1610200,
+            "base_residents": 16102,
+            "scenario_gross_requirement_kg": 2228600,
+            "scenario_residents": 22286
+          },
+          "Таскалинский район": {
+            "base_gross_requirement_kg": 1542300,
+            "base_residents": 15423,
+            "scenario_gross_requirement_kg": 2134600,
+            "scenario_residents": 21346
+          },
+          "Теректинский район": {
+            "base_gross_requirement_kg": 3784400,
+            "base_residents": 37844,
+            "scenario_gross_requirement_kg": 5237800,
+            "scenario_residents": 52378
+          },
+          "Уральск г.а.": {
+            "base_gross_requirement_kg": 37449700,
+            "base_residents": 374497,
+            "scenario_gross_requirement_kg": 51832600,
+            "scenario_residents": 518326
+          },
+          "Чингирлауский район": {
+            "base_gross_requirement_kg": 1220300,
+            "base_residents": 12203,
+            "scenario_gross_requirement_kg": 1689000,
+            "scenario_residents": 16890
+          },
+          "район Бәйтерек": {
+            "base_gross_requirement_kg": 6340300,
+            "base_residents": 63403,
+            "scenario_gross_requirement_kg": 8775400,
+            "scenario_residents": 87754
+          }
+        },
+        "gross_gap_kg_2024_harvest_current_residents": 0,
+        "gross_gap_kg_historical_harvest_scenario_residents": {
+          "2020": 0,
+          "2021": 0,
+          "2022": 0,
+          "2023": 0,
+          "2024": 0
+        },
+        "harvest_2024_kg_per_sown_ha": 800,
+        "harvest_backtest": {
+          "2023": {
+            "absolute_error_t": 145200,
+            "median_of_previous_three_years_t": 165600,
+            "observed_t": 310800
+          },
+          "2024": {
+            "absolute_error_t": 56500,
+            "median_of_previous_three_years_t": 310800,
+            "observed_t": 254300
+          }
+        },
+        "observed_seasons": {
+          "2023": {
+            "april_september": {
+              "mean_monthly_temperature_anomaly_c": 1.78,
+              "precipitation_anomaly_mm": 21.0
+            },
+            "gross_harvest_t": 310800
+          },
+          "2024": {
+            "april_september": {
+              "mean_monthly_temperature_anomaly_c": 1.78,
+              "precipitation_anomaly_mm": -25.3
+            },
+            "gross_harvest_t": 254300
+          },
+          "2025": {
+            "april_september": {
+              "mean_monthly_temperature_anomaly_c": 1.75,
+              "precipitation_anomaly_mm": -11.9
+            },
+            "gross_harvest_t": null
+          }
+        },
+        "residents_2026": 694278,
+        "scenario_output_at_fixed_gross_output_per_resident": {
+          "carcass_meat_t": 75155,
+          "eggs_count": 197090061,
+          "electricity_kwh": 3236207716,
+          "milk_t": 288300,
+          "portland_cement_excl_white_t": null,
+          "potatoes_t": 60622,
+          "pumps_count": 766,
+          "vegetables_t": 35986
+        },
+        "scenario_residents_fixed_share": 960922
+      },
+      "zhambyl": {
+        "districts": {
+          "Байзакский район": {
+            "base_gross_requirement_kg": 9522000,
+            "base_residents": 95220,
+            "scenario_gross_requirement_kg": 13179000,
+            "scenario_residents": 131790
+          },
+          "Жамбылский район": {
+            "base_gross_requirement_kg": 5061000,
+            "base_residents": 50610,
+            "scenario_gross_requirement_kg": 7004700,
+            "scenario_residents": 70047
+          },
+          "Жуалынский район": {
+            "base_gross_requirement_kg": 5123100,
+            "base_residents": 51231,
+            "scenario_gross_requirement_kg": 7090700,
+            "scenario_residents": 70907
+          },
+          "Кордайский район": {
+            "base_gross_requirement_kg": 15324200,
+            "base_residents": 153242,
+            "scenario_gross_requirement_kg": 21209600,
+            "scenario_residents": 212096
+          },
+          "Меркенский район": {
+            "base_gross_requirement_kg": 8659900,
+            "base_residents": 86599,
+            "scenario_gross_requirement_kg": 11985800,
+            "scenario_residents": 119858
+          },
+          "Мойынкумский район": {
+            "base_gross_requirement_kg": 2649400,
+            "base_residents": 26494,
+            "scenario_gross_requirement_kg": 3666900,
+            "scenario_residents": 36669
+          },
+          "Район Турара Рыскулова": {
+            "base_gross_requirement_kg": 6423900,
+            "base_residents": 64239,
+            "scenario_gross_requirement_kg": 8891100,
+            "scenario_residents": 88911
+          },
+          "Сарысуский район": {
+            "base_gross_requirement_kg": 4208600,
+            "base_residents": 42086,
+            "scenario_gross_requirement_kg": 5825000,
+            "scenario_residents": 58250
+          },
+          "Таласский район": {
+            "base_gross_requirement_kg": 4592500,
+            "base_residents": 45925,
+            "scenario_gross_requirement_kg": 6356300,
+            "scenario_residents": 63563
+          },
+          "Тараз г.а.": {
+            "base_gross_requirement_kg": 49035200,
+            "base_residents": 490352,
+            "scenario_gross_requirement_kg": 67867600,
+            "scenario_residents": 678676
+          },
+          "Шуский район": {
+            "base_gross_requirement_kg": 10357600,
+            "base_residents": 103576,
+            "scenario_gross_requirement_kg": 14335500,
+            "scenario_residents": 143355
+          }
+        },
+        "gross_gap_kg_2024_harvest_current_residents": 0,
+        "gross_gap_kg_historical_harvest_scenario_residents": {
+          "2020": 91912200,
+          "2021": 0,
+          "2022": 0,
+          "2023": 0,
+          "2024": 0
+        },
+        "harvest_2024_kg_per_sown_ha": 1898,
+        "harvest_backtest": {
+          "2023": {
+            "absolute_error_t": 78600,
+            "median_of_previous_three_years_t": 548600,
+            "observed_t": 470000
+          },
+          "2024": {
+            "absolute_error_t": 149800,
+            "median_of_previous_three_years_t": 548600,
+            "observed_t": 698400
+          }
+        },
+        "observed_seasons": {
+          "2023": {
+            "april_september": {
+              "mean_monthly_temperature_anomaly_c": 1.44,
+              "precipitation_anomaly_mm": -45.8
+            },
+            "gross_harvest_t": 470000
+          },
+          "2024": {
+            "april_september": {
+              "mean_monthly_temperature_anomaly_c": 1.26,
+              "precipitation_anomaly_mm": -11.0
+            },
+            "gross_harvest_t": 698400
+          },
+          "2025": {
+            "april_september": {
+              "mean_monthly_temperature_anomaly_c": 3.02,
+              "precipitation_anomaly_mm": -85.2
+            },
+            "gross_harvest_t": null
+          }
+        },
+        "residents_2026": 1209574,
+        "scenario_output_at_fixed_gross_output_per_resident": {
+          "carcass_meat_t": 101729,
+          "eggs_count": 173284210,
+          "electricity_kwh": 6987422777,
+          "milk_t": 315981,
+          "portland_cement_excl_white_t": 2094359,
+          "potatoes_t": 244287,
+          "pumps_count": null,
+          "vegetables_t": 1222540
+        },
+        "scenario_residents_fixed_share": 1674122
+      },
+      "zhetisu": {
+        "districts": {
+          "Аксуский район": {
+            "base_gross_requirement_kg": 3269700,
+            "base_residents": 32697,
+            "scenario_gross_requirement_kg": 4525500,
+            "scenario_residents": 45255
+          },
+          "Алакольский район": {
+            "base_gross_requirement_kg": 7090200,
+            "base_residents": 70902,
+            "scenario_gross_requirement_kg": 9813300,
+            "scenario_residents": 98133
+          },
+          "Ескельдинский район": {
+            "base_gross_requirement_kg": 4944800,
+            "base_residents": 49448,
+            "scenario_gross_requirement_kg": 6843900,
+            "scenario_residents": 68439
+          },
+          "Каратальский район": {
+            "base_gross_requirement_kg": 3684400,
+            "base_residents": 36844,
+            "scenario_gross_requirement_kg": 5099400,
+            "scenario_residents": 50994
+          },
+          "Кербулакский район": {
+            "base_gross_requirement_kg": 3964400,
+            "base_residents": 39644,
+            "scenario_gross_requirement_kg": 5487000,
+            "scenario_residents": 54870
+          },
+          "Коксуский район": {
+            "base_gross_requirement_kg": 4025900,
+            "base_residents": 40259,
+            "scenario_gross_requirement_kg": 5572100,
+            "scenario_residents": 55721
+          },
+          "Панфиловский район": {
+            "base_gross_requirement_kg": 13378700,
+            "base_residents": 133787,
+            "scenario_gross_requirement_kg": 18516900,
+            "scenario_residents": 185169
+          },
+          "Саркандский район": {
+            "base_gross_requirement_kg": 3704900,
+            "base_residents": 37049,
+            "scenario_gross_requirement_kg": 5127800,
+            "scenario_residents": 51278
+          },
+          "Талдыкорган г.а.": {
+            "base_gross_requirement_kg": 21142700,
+            "base_residents": 211427,
+            "scenario_gross_requirement_kg": 29262700,
+            "scenario_residents": 292627
+          },
+          "Текели г.а.": {
+            "base_gross_requirement_kg": 3010300,
+            "base_residents": 30103,
+            "scenario_gross_requirement_kg": 4166400,
+            "scenario_residents": 41664
+          }
+        },
+        "gross_gap_kg_2024_harvest_current_residents": 0,
+        "gross_gap_kg_historical_harvest_scenario_residents": {
+          "2020": 7015000,
+          "2021": 0,
+          "2022": 0,
+          "2023": 0,
+          "2024": 0
+        },
+        "harvest_2024_kg_per_sown_ha": 2613,
+        "harvest_backtest": {
+          "2023": {
+            "absolute_error_t": 128500,
+            "median_of_previous_three_years_t": 752000,
+            "observed_t": 880500
+          },
+          "2024": {
+            "absolute_error_t": 45400,
+            "median_of_previous_three_years_t": 817000,
+            "observed_t": 771600
+          }
+        },
+        "observed_seasons": {
+          "2023": {
+            "april_september": {
+              "mean_monthly_temperature_anomaly_c": 0.96,
+              "precipitation_anomaly_mm": -21.5
+            },
+            "gross_harvest_t": 880500
+          },
+          "2024": {
+            "april_september": {
+              "mean_monthly_temperature_anomaly_c": 1.33,
+              "precipitation_anomaly_mm": -11.3
+            },
+            "gross_harvest_t": 771600
+          },
+          "2025": {
+            "april_september": {
+              "mean_monthly_temperature_anomaly_c": 2.65,
+              "precipitation_anomaly_mm": -55.6
+            },
+            "gross_harvest_t": null
+          }
+        },
+        "residents_2026": 682160,
+        "scenario_output_at_fixed_gross_output_per_resident": {
+          "carcass_meat_t": 78061,
+          "eggs_count": 456462810,
+          "electricity_kwh": 1443297204,
+          "milk_t": 299926,
+          "portland_cement_excl_white_t": null,
+          "potatoes_t": 189478,
+          "pumps_count": null,
+          "vegetables_t": 308784
+        },
+        "scenario_residents_fixed_share": 944150
+      }
+    },
+    "residents_with_unreported_local_2024_harvest": 827102,
+    "scenario_gross_requirement_kg": 2855802000,
+    "scenario_output_at_fixed_gross_output_per_resident": {
+      "carcass_meat_t": 1617550,
+      "eggs_count": 6197954280,
+      "electricity_kwh": 164246134416,
+      "milk_t": 5022058,
+      "portland_cement_excl_white_t": 16984480,
+      "potatoes_t": 3646442,
+      "pumps_count": 19179,
+      "vegetables_t": 4941229
+    },
+    "scenario_population": 28558020,
+    "territorial_grain_balance_by_harvest_year_at_base_population": {
+      "2020": {
+        "national_minus_reported_regions_t": 0,
+        "sum_of_local_shortfalls_lower_bound_kg": 750229900,
+        "sum_of_local_shortfalls_upper_bound_kg": 751679900,
+        "unreported_harvest_upper_bound_kg": 950000,
+        "unreported_regions": 1
+      },
+      "2021": {
+        "national_minus_reported_regions_t": 100,
+        "sum_of_local_shortfalls_lower_bound_kg": 685867900,
+        "sum_of_local_shortfalls_upper_bound_kg": 687067900,
+        "unreported_harvest_upper_bound_kg": 1000000,
+        "unreported_regions": 1
+      },
+      "2022": {
+        "national_minus_reported_regions_t": 200,
+        "sum_of_local_shortfalls_lower_bound_kg": 681567900,
+        "sum_of_local_shortfalls_upper_bound_kg": 683017900,
+        "unreported_harvest_upper_bound_kg": 1150000,
+        "unreported_regions": 1
+      },
+      "2023": {
+        "national_minus_reported_regions_t": 200,
+        "sum_of_local_shortfalls_lower_bound_kg": 682667900,
+        "sum_of_local_shortfalls_upper_bound_kg": 683967900,
+        "unreported_harvest_upper_bound_kg": 1100000,
+        "unreported_regions": 2
+      },
+      "2024": {
+        "national_minus_reported_regions_t": -100,
+        "sum_of_local_shortfalls_lower_bound_kg": 680567900,
+        "sum_of_local_shortfalls_upper_bound_kg": 681717900,
+        "unreported_harvest_upper_bound_kg": 850000,
+        "unreported_regions": 1
+      }
+    }
+  },
+  "world": {
+    "cereal_kg_per_scenario_person_at_2024_output": {
+      "ABW": null,
+      "AFG": 68,
+      "AGO": 38,
+      "AIA": null,
+      "ALB": 324,
+      "AND": null,
+      "ARE": 1,
+      "ARG": 1802,
+      "ARM": 93,
+      "ASM": null,
+      "ATG": 1,
+      "AUS": 1511,
+      "AUT": 582,
+      "AZE": 297,
+      "BDI": 28,
+      "BEL": 166,
+      "BEN": 102,
+      "BES": null,
+      "BFA": 124,
+      "BGD": 297,
+      "BGR": 2048,
+      "BHR": null,
+      "BHS": 1,
+      "BIH": 557,
+      "BLM": null,
+      "BLR": 1150,
+      "BLZ": 276,
+      "BMU": null,
+      "BOL": 219,
+      "BRA": 660,
+      "BRB": 0,
+      "BRN": 7,
+      "BTN": 84,
+      "BWA": 15,
+      "CAF": 22,
+      "CAN": 1348,
+      "CHE": 68,
+      "CHL": 131,
+      "CHN": 577,
+      "CIV": 63,
+      "CMR": 64,
+      "COD": 16,
+      "COG": 2,
+      "COK": null,
+      "COL": 74,
+      "COM": 14,
+      "CPV": 0,
+      "CRI": 14,
+      "CUB": 36,
+      "CUW": null,
+      "CYM": null,
+      "CYP": 19,
+      "CZE": 797,
+      "DEU": 516,
+      "DJI": 0,
+      "DMA": 3,
+      "DNK": 1234,
+      "DOM": 80,
+      "DZA": 66,
+      "ECU": 128,
+      "EGY": 137,
+      "ERI": 47,
+      "ESH": null,
+      "ESP": 496,
+      "EST": 1188,
+      "ETH": 121,
+      "FIN": 631,
+      "FJI": 11,
+      "FLK": null,
+      "FRA": 789,
+      "FRO": null,
+      "FSM": 2,
+      "GAB": 10,
+      "GBR": 256,
+      "GEO": 118,
+      "GGY": null,
+      "GHA": 111,
+      "GIB": null,
+      "GIN": 204,
+      "GLP": null,
+      "GMB": 26,
+      "GNB": 84,
+      "GNQ": null,
+      "GRC": 352,
+      "GRD": 2,
+      "GRL": null,
+      "GTM": 89,
+      "GUF": null,
+      "GUM": null,
+      "GUY": 1170,
+      "HKG": null,
+      "HND": 48,
+      "HRV": 1107,
+      "HTI": 21,
+      "HUN": 1514,
+      "IDN": 212,
+      "IMN": null,
+      "IND": 230,
+      "IRL": 320,
+      "IRN": 243,
+      "IRQ": 80,
+      "ISL": 12,
+      "ISR": 12,
+      "ITA": 298,
+      "JAM": 1,
+      "JEY": null,
+      "JOR": 5,
+      "JPN": 117,
+      "KAZ": 860,
+      "KEN": 54,
+      "KGZ": 206,
+      "KHM": 681,
+      "KIR": null,
+      "KNA": null,
+      "KOR": 126,
+      "KWT": 5,
+      "LAO": 422,
+      "LBN": 17,
+      "LBR": 32,
+      "LBY": 17,
+      "LCA": null,
+      "LIE": null,
+      "LKA": 200,
+      "LSO": 21,
+      "LTU": 2842,
+      "LUX": 176,
+      "LVA": 2302,
+      "MAC": null,
+      "MAF": null,
+      "MAR": 73,
+      "MCO": null,
+      "MDA": 1003,
+      "MDG": 85,
+      "MDV": 0,
+      "MEX": 218,
+      "MHL": null,
+      "MKD": 390,
+      "MLI": 189,
+      "MLT": 0,
+      "MMR": 521,
+      "MNE": 14,
+      "MNG": 92,
+      "MNP": null,
+      "MOZ": 35,
+      "MRT": 51,
+      "MSR": null,
+      "MTQ": null,
+      "MUS": 1,
+      "MWI": 75,
+      "MYS": 46,
+      "MYT": null,
+      "NAM": 12,
+      "NCL": 21,
+      "NER": 94,
+      "NGA": 71,
+      "NIC": null,
+      "NIU": null,
+      "NLD": 56,
+      "NOR": 202,
+      "NPL": 323,
+      "NRU": null,
+      "NZL": 189,
+      "OMN": 27,
+      "PAK": 134,
+      "PAN": 79,
+      "PER": 143,
+      "PHL": 202,
+      "PLW": null,
+      "PNG": 1,
+      "POL": 1144,
+      "PRI": 2,
+      "PRK": 198,
+      "PRT": 108,
+      "PRY": 641,
+      "PSE": null,
+      "PYF": null,
+      "QAT": 0,
+      "REU": null,
+      "ROU": 1214,
+      "RUS": 907,
+      "RWA": 38,
+      "SAU": 22,
+      "SDN": 68,
+      "SEN": 112,
+      "SGP": null,
+      "SHN": null,
+      "SLB": 2,
+      "SLE": 105,
+      "SLV": 137,
+      "SMR": null,
+      "SOM": 3,
+      "SPM": null,
+      "SRB": 1712,
+      "SSD": 59,
+      "STP": 2,
+      "SUR": 302,
+      "SVK": 798,
+      "SVN": 357,
+      "SWE": 452,
+      "SWZ": 50,
+      "SXM": null,
+      "SYC": null,
+      "SYR": 106,
+      "TCA": null,
+      "TCD": 58,
+      "TGO": 85,
+      "THA": 626,
+      "TJK": 90,
+      "TKL": null,
+      "TKM": 148,
+      "TLS": 66,
+      "TON": null,
+      "TTO": 1,
+      "TUN": 116,
+      "TUR": 440,
+      "TUV": null,
+      "TWN": null,
+      "TZA": 98,
+      "UGA": 58,
+      "UKR": 1977,
+      "URY": 1327,
+      "USA": 1169,
+      "UZB": 143,
+      "VAT": null,
+      "VCT": 5,
+      "VEN": 112,
+      "VGB": null,
+      "VIR": null,
+      "VNM": 442,
+      "VUT": 2,
+      "WLF": null,
+      "WSM": null,
+      "XKX": null,
+      "YEM": 5,
+      "ZAF": 183,
+      "ZMB": 39,
+      "ZWE": 46
+    },
+    "coverage_areas_and_scenario_people": {
+      "arable_land": [
+        205,
+        9967218538
+      ],
+      "cereal": [
+        177,
+        9938506066
+      ],
+      "copper_reserves": [
+        17,
+        4552434637
+      ],
+      "internal_renewable_water": [
+        181,
+        9944147976
+      ],
+      "long_run_rain": [
+        180,
+        9939393702
+      ],
+      "renewables": [
+        223,
+        9998069605
+      ]
+    },
+    "july_crossing_interval": [
+      2060,
+      2061
+    ],
+    "scenario_people_by_iso3": {
+      "ABW": 93968,
+      "AFG": 90917170,
+      "AGO": 91373386,
+      "AIA": 13593,
+      "ALB": 2008492,
+      "AND": 74866,
+      "ARE": 17300900,
+      "ARG": 47584068,
+      "ARM": 2318844,
+      "ASM": 35666,
+      "ATG": 90767,
+      "AUS": 34650804,
+      "AUT": 8379607,
+      "AZE": 11128252,
+      "BDI": 27881506,
+      "BEL": 11674959,
+      "BEN": 28434356,
+      "BES": 33971,
+      "BFA": 41878349,
+      "BGD": 223394947,
+      "BGR": 4905498,
+      "BHR": 2331578,
+      "BHS": 421235,
+      "BIH": 2159551,
+      "BLM": 12345,
+      "BLR": 6722121,
+      "BLZ": 527687,
+      "BMU": 51475,
+      "BOL": 17038836,
+      "BRA": 210660012,
+      "BRB": 250278,
+      "BRN": 519921,
+      "BTN": 877413,
+      "BWA": 3691508,
+      "CAF": 12886346,
+      "CAN": 47217103,
+      "CHE": 9282810,
+      "CHL": 19490104,
+      "CHN": 1129040792,
+      "CIV": 66302594,
+      "CMR": 60340416,
+      "COD": 268799427,
+      "COG": 13037027,
+      "COK": 8614,
+      "COL": 58782210,
+      "COM": 1477594,
+      "CPV": 557657,
+      "CRI": 5179121,
+      "CUB": 8461015,
+      "CUW": 164122,
+      "CYM": 110933,
+      "CYP": 1502810,
+      "CZE": 9430974,
+      "DEU": 75498542,
+      "DJI": 1645653,
+      "DMA": 61329,
+      "DNK": 6075935,
+      "DOM": 13152759,
+      "DZA": 62665822,
+      "ECU": 21724865,
+      "EGY": 175369445,
+      "ERI": 6512620,
+      "ESH": 810864,
+      "ESP": 42072082,
+      "EST": 1096939,
+      "ETH": 262231293,
+      "FIN": 5191686,
+      "FJI": 998658,
+      "FLK": 2932,
+      "FRA": 67832960,
+      "FRO": 64068,
+      "FSM": 130541,
+      "GAB": 4732670,
+      "GBR": 76010749,
+      "GEO": 3547839,
+      "GGY": 60370,
+      "GHA": 55956466,
+      "GIB": 50921,
+      "GIN": 26445791,
+      "GLP": 299987,
+      "GMB": 4819976,
+      "GNB": 3860222,
+      "GNQ": 3629720,
+      "GRC": 8174333,
+      "GRD": 107736,
+      "GRL": 47249,
+      "GTM": 26206691,
+      "GUF": 540299,
+      "GUM": 197462,
+      "GUY": 957304,
+      "HKG": 5159454,
+      "HND": 15956013,
+      "HRV": 2967130,
+      "HTI": 15398238,
+      "HUN": 8381989,
+      "IDN": 322485421,
+      "IMN": 73368,
+      "IND": 1701096537,
+      "IRL": 5928600,
+      "IRN": 100841463,
+      "IRQ": 80877062,
+      "ISL": 429033,
+      "ISR": 14658068,
+      "ITA": 47384954,
+      "JAM": 2166691,
+      "JEY": 102592,
+      "JOR": 17863127,
+      "JPN": 97776238,
+      "KAZ": 28558020,
+      "KEN": 91885533,
+      "KGZ": 10367753,
+      "KHM": 22881540,
+      "KIR": 198055,
+      "KNA": 41426,
+      "KOR": 39612708,
+      "KWT": 6935423,
+      "LAO": 10099061,
+      "LBN": 7234478,
+      "LBR": 10085529,
+      "LBY": 9635237,
+      "LCA": 161023,
+      "LIE": 43035,
+      "LKA": 24644582,
+      "LSO": 3170222,
+      "LTU": 2008551,
+      "LUX": 800728,
+      "LVA": 1369520,
+      "MAC": 611842,
+      "MAF": 18430,
+      "MAR": 43695296,
+      "MCO": 37871,
+      "MDA": 2124494,
+      "MDG": 61698523,
+      "MDV": 595329,
+      "MEX": 149864742,
+      "MHL": 24288,
+      "MKD": 1365526,
+      "MLI": 55155823,
+      "MLT": 512195,
+      "MMR": 57881442,
+      "MNE": 487287,
+      "MNG": 4803657,
+      "MNP": 41762,
+      "MOZ": 75106537,
+      "MRT": 11256475,
+      "MSR": 3465,
+      "MTQ": 254615,
+      "MUS": 999259,
+      "MWI": 43471486,
+      "MYS": 45892656,
+      "MYT": 795976,
+      "NAM": 5011377,
+      "NCL": 346534,
+      "NER": 63156338,
+      "NGA": 401406329,
+      "NIC": 9116989,
+      "NIU": 2043,
+      "NLD": 18671153,
+      "NOR": 5854443,
+      "NPL": 35645322,
+      "NRU": 17200,
+      "NZL": 5834218,
+      "OMN": 8791190,
+      "PAK": 416172203,
+      "PAN": 5862968,
+      "PER": 41556732,
+      "PHL": 134987504,
+      "PLW": 14267,
+      "PNG": 16233481,
+      "POL": 30013923,
+      "PRI": 2128329,
+      "PRK": 24628049,
+      "PRT": 9379973,
+      "PRY": 9051714,
+      "PSE": 9474236,
+      "PYF": 269644,
+      "QAT": 4695827,
+      "REU": 926864,
+      "ROU": 14710367,
+      "RUS": 132744496,
+      "RWA": 25702629,
+      "SAU": 52892858,
+      "SDN": 99187542,
+      "SEN": 35010729,
+      "SGP": 5891538,
+      "SHN": 3528,
+      "SLB": 1472406,
+      "SLE": 14266511,
+      "SLV": 6546741,
+      "SMR": 32517,
+      "SOM": 45188544,
+      "SPM": 3588,
+      "SRB": 5097177,
+      "SSD": 20384087,
+      "STP": 413213,
+      "SUR": 747974,
+      "SVK": 4620039,
+      "SVN": 1886177,
+      "SWE": 11392248,
+      "SWZ": 1539909,
+      "SXM": 50361,
+      "SYC": 138159,
+      "SYR": 40939362,
+      "TCA": 49464,
+      "TCD": 46965280,
+      "TGO": 18109831,
+      "THA": 61774031,
+      "TJK": 17182584,
+      "TKL": 4085,
+      "TKM": 10048682,
+      "TLS": 2012523,
+      "TON": 107625,
+      "TTO": 1300140,
+      "TUN": 12962498,
+      "TUR": 88700418,
+      "TUV": 10442,
+      "TWN": 17203502,
+      "TZA": 158064794,
+      "UGA": 98021428,
+      "UKR": 28147087,
+      "URY": 3101868,
+      "USA": 389287832,
+      "UZB": 58165624,
+      "VAT": 858,
+      "VCT": 83791,
+      "VEN": 31193830,
+      "VGB": 38220,
+      "VIR": 67845,
+      "VNM": 108284037,
+      "VUT": 618167,
+      "WLF": 9392,
+      "WSM": 296810,
+      "XKX": 1562552,
+      "YEM": 82631254,
+      "ZAF": 83607047,
+      "ZMB": 44741216,
+      "ZWE": 29261939
+    },
+    "target_people": 10000000000
+  }
+}

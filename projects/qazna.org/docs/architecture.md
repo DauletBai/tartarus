@@ -1,5 +1,7 @@
 # Qazna architecture
 
+The [geographic research layer](geographic-baseline.md) uses a pinned observation snapshot and a read-only Rust calculation. It reconciles country, regional and district counts before deriving needs. Published harvest precision and independently rounded national totals constrain the combined shortfall when a region has no observation. Deposit balances, issuance and operator decisions are outside its execution path.
+
 Decision of 2 November 2026: the MVP and industrial development use the same Rust core. A temporary Go server followed by a Rust rewrite is outside the plan. The earlier Qazna repository provides requirements and test scenarios; its implementations are not automatically included in this runtime.
 
 ## Technology boundaries
@@ -54,14 +56,7 @@ The same technology stack does not imply immediate industrial readiness. Economi
 
 ## Next work
 
-The [current roadmap](completion-roadmap.md#current-implementation-order) governs
-sequencing. A common opening funding envelope is now implemented for six declared disruption
-schedules with fixed physical reserves. Eight joint feedback policies now compare
-reserve targets, produced equipment and training timing across six paths, with
-terminal floors and an exact energy-outage lower bound. This is offline research;
-no planner gains ledger authority. Next extend reserve continuity to perishable goods, in-transit loss
-and expiry, and cohort/input calibration. Connect independently verified candidates
-to versioned Rust reviewable drafts only after these contracts are explicit.
+The [national implementation order](completion-roadmap.md#national-implementation-order) connects dated final needs to physical and monetary feasibility. The [grain reconciliation](organism.md#national-grain-reconciliation) reuses the Rust population, field, equipment and settlement calculations. The research executable has no ledger posting authority. A downstream [regional grain replay](organism.md#regional-grain-receipts) takes the verified monthly national withdrawals as its input. It tracks quantities and deadlines by depot and crop without posting a second payment or counting another unit of national production. The next feasibility check must bind these departures to transport resources shared with other services.
 Resident identity, corrections/disputes, accessible interfaces, operational load
 limits and disaster recovery remain prerequisites for consequential external use.
 The offline experiments do not automatically close these runtime gaps.

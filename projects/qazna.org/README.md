@@ -8,11 +8,21 @@
   <a href="docs/completion-roadmap.md"><img src="assets/brand/badges/stage.svg" alt="Research prototype"></a>
   <a href="LICENSE"><img src="assets/brand/badges/license.svg" alt="Code license AGPL-3.0-or-later"></a>
 </p>
+## National scope
+
+Qazna models a state that provides for its whole population through one public treasury. Basic provision follows need throughout life; accepted work can earn a supplement. In the proposed system taxes, interest, refinancing, deposits, credit, shares and bills of exchange play no role in domestic circulation. A comparison with existing institutions can test a claim about access. Adopting the proposed system would require a public decision at state level.
+
+The [five-year national calculation](docs/organism.md#national-grain-reconciliation) starts with 100 million people. It follows regional needs through national production, settlement and delivery to two regional depots. Cancelling one southern trip leaves 6,312 kg of oats at the hub past the January 2028 deadline. The February schedule clears the backlog. [Regional delivery calculation](docs/organism.md#regional-grain-receipts). Sector studies supply components for this calculation. A common plan for all sectors and a defensible rule for measuring growth remain open.
+
+The [Kazakhstan demonstrator and ten-billion-person world scenario](docs/geographic-baseline.md) use official population, climate, crop, industrial and resource data. Follow the calculation from 237 countries and areas to Kazakhstan's 228 districts and city administrations, bound local grain shortfalls when harvest figures are rounded or missing, compare harvests with weather and test how far a simple forecast misses observed production. [Calculated results](research/geography-results.json).
+
 ## Why build an economy around circulation?
 
 Qazna starts from a principle of justice: a person's ability to live and develop should survive a loss of employment, illness and old age. In *Tartar and I*, Daulet Baimurza asks what happens when machines can produce more with fewer hours of paid work. A society may gain productive capacity while the people whose work made that gain possible lose access to its benefits. Who has a claim on what society can now produce?
 
 The author uses **chrematistics** for an arrangement in which accumulating money becomes an end in itself. A lender’s claim can grow through accrued interest even when the capacity to house, teach or care for people stands still. Qazna explores a different organising principle, **Тең (equal measure)**. Natural resources and the productive capabilities built across generations are a common inheritance. Everyone has equal standing; how much support a person needs changes over a lifetime. People retain the freedom to choose their work, pursue their talents and challenge a decision about their needs.
+
+Consider a household that loses its income while the shops still have food. The book asks what responsibility society bears when deprivation drives someone to steal, and who bears the harm when desperation turns to violence. In the author's view, democratic institutions lose their purpose when people have a vote but little say over the conditions of their livelihood. Qazna gives this criticism a practical test. Can people take part in setting the rules, keep access to essentials when paid work disappears, and receive additional compensation for work they undertake?
 
 ### What circulation contributes to the design
 
@@ -50,9 +60,11 @@ flowchart TD
 
 These bounds keep every scheduled transfer on time. They measure accounting liquidity. Energy, care capacity, workforce, equipment and ecological renewal each have their own physical constraints. Fairness ultimately requires looking at what reaches people, including those with the least access. [Equations, assumptions and reproduction](docs/organism.md#five-year-circulation-and-access) · [Machine-readable results](research/circulation-model.json) · [Physical studies](docs/physical-circulation.md).
 
+The [five-year care study](docs/organism.md#when-automation-a-staffing-outage-and-slow-circulation-coincide) follows five demographic groups in two regions. It shows how the same national total can conceal different access for people who lose paid hours.
+
 ## What is ready for independent examination?
 
-Qazna is a research prototype with a Rust calculation engine and a PostgreSQL ledger. An independent team can replay the schedules, reduce a reserve by one unit and locate the first missed transfer. A public partner can compare the proposed rule with actual income protection using the same population, real resources and period. Human review governs consequential decisions. Running the calculations requires no AI subscription. [Research roadmap](docs/completion-roadmap.md#strategic-priorities) · [Pilot and comparison terms](docs/pilot-charter.md#comparison-and-decision).
+Qazna is a research prototype with a Rust calculation engine and a PostgreSQL ledger. An independent team can replay the schedules, reduce a reserve by one unit and locate the first missed transfer. An independent research group can reproduce the national calculation, then test each binding assumption using documented population, resource and settlement data. Human review governs consequential decisions. Running the calculations requires no AI subscription. [Research roadmap](docs/completion-roadmap.md#strategic-priorities) · [Component comparison protocol](docs/pilot-charter.md#comparison-and-decision).
 
 ## Book and implementation
 
@@ -86,7 +98,7 @@ On Linux, set `PG_BIN` to the installed PostgreSQL directory, for example `/usr/
 
 The [settlement walkthrough](docs/two-meals.md) provides a technical example of stock attestation, budget limits and receipt confirmation.
 
-- [Current priorities and deferred sector studies](docs/completion-roadmap.md#strategic-priorities) · [Pilot charter](docs/pilot-charter.md)
+- [Current priorities and deferred sector studies](docs/completion-roadmap.md#strategic-priorities) · [Historical component study](docs/pilot-charter.md)
 - [Physical chains and monetary circulation](docs/physical-circulation.md) · [Published calculations](research/) · [Mathematics and computing costs](docs/computation-and-ai-costs.md)
 - [Needs and planning norms](docs/norms-and-planning.md) · [Provisioning](docs/provisioning.md) · [Production](docs/production.md) · [Reviewed decisions](docs/drafts.md)
 - [AI and economic research](docs/ai-economic-research.md) · [Optional AI and its limits](docs/ai-safety.md) · [Architecture review](docs/architecture-review.md)

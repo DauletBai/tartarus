@@ -1,0 +1,87 @@
+{
+  "wpp": {
+    "url": "https://population.un.org/wpp/assets/Excel%20Files/1_Indicator%20(Standard)/CSV_FILES/WPP2024_Demographic_Indicators_Medium.csv.gz",
+    "table": "UN DESA, WPP 2024 medium variant, TPopulation1July (thousands), World and Country/Area",
+    "sha256": "286ac36bb1415e2e1ade03acfef0a29f0e4c087e2f78e38c48f50c5df89082bc"
+  },
+  "pop": {
+    "url": "https://stat.gov.kz/upload/iblock/9f6/m4o0bh22r0os0eluaip3qqpyas9nsahj/%D0%A1-07-%D0%93%20%28%D1%80%D1%83%D1%81%29.pdf",
+    "table": "BNS, Women and Men of Kazakhstan, table 3.3, all inhabitants at 1 January 2026",
+    "sha256": "f5100da3013fbcd0b3114af89f49ce524303e219eea3123fe7190f06dced6764"
+  },
+  "met": {
+    "url": "https://www.kazhydromet.kz/uploads/files/2116/file/6af6f2d2f2110pechat-byulleten-za-2025-god-rus.pdf",
+    "table": "Kazhydromet 2025 bulletin, tables 2.3 and 3.2, monthly anomalies vs 1961–1990",
+    "sha256": "741b8a495cc7b37f6ee867af48a020e98e628347d17b347cccbd6515dcb82358"
+  },
+  "ag": {
+    "url": "https://stat.gov.kz/upload/iblock/2cf/ht5h8849rzrxobn3090ewnwqlu498mh4/%D0%95-04-%D0%93%20%28%D1%80%D1%83%D1%81%29.pdf",
+    "table": "BNS, Regions of Kazakhstan 2024, tables 4.47, 4.54, 4.56, 4.59, 4.73–4.75 and regional industrial products (electricity, pumps, Portland cement)",
+    "sha256": "665978edddb48f8d8f8bbd066323de5943c82c57b8219e6bbe9c31e217474bab"
+  },
+  "min": {
+    "url": "https://pubs.usgs.gov/periodicals/mcs2026/mcs2026-chromium.pdf",
+    "table": "USGS Mineral Commodity Summaries 2026, Chromium, World mine production and reserves, Kazakhstan, notes 12–14",
+    "sha256": "c19e412f65eddf60ab8b3b49ec415d7e0b817d08412733a0094a47af06fa4a04"
+  },
+  "power": {
+    "url": "https://ar2025.kegoc.kz/en/industry-structure.html",
+    "table": "KEGOC annual report 2025, industry structure, installed and available capacity on 1 January 2026 (report methodology)",
+    "sha256": "eee7cd565949786063001ea3f06decf38fb8a1f39abeed1da76bbc35bc3660b3"
+  },
+  "cereals": {
+    "url": "https://api.worldbank.org/v2/country/all/indicator/AG.PRD.CREL.MT?date=2024&format=json&per_page=500",
+    "table": "World Bank WDI via FAO, AG.PRD.CREL.MT, 2024, metric tonnes",
+    "sha256": "f6cd873777e56be68e5cf5415c1069edbc4ccda572de14ba31fd9fbe252a7489"
+  },
+  "rain": {
+    "url": "https://api.worldbank.org/v2/country/all/indicator/AG.LND.PRCP.MM?date=2022&format=json&per_page=500",
+    "table": "World Bank WDI via FAO, AG.LND.PRCP.MM, 2022 entry, long-term average precipitation in depth (mm/year)",
+    "sha256": "24080e53da5ebcf4401a2db6e21edbcdf1a0405dc0c85636c7780671ce626fb3"
+  },
+  "renewables": {
+    "url": "https://unstats.un.org/SDGAPI/v1/sdg/Series/Data?seriesCode=EG_EGY_RNEW&timePeriod=2023&pageSize=10000",
+    "table": "UN SDG / IRENA EG_EGY_RNEW, all renewables, year-end 2023, W per inhabitant",
+    "sha256": "b038be1a9eb24c456d8a7f36205eb55f9a59da0a7c64a65c5c798fd608077435"
+  },
+  "iron": {
+    "url": "https://pubs.usgs.gov/periodicals/mcs2026/mcs2026-iron-ore.pdf",
+    "table": "USGS Mineral Commodity Summaries 2026, iron-ore, world production and reserves table",
+    "sha256": "d7f2919c4f003e101e2dddbec321904fd60c8e460adb0f2ac9013afc306045aa"
+  },
+  "copper": {
+    "url": "https://pubs.usgs.gov/periodicals/mcs2026/mcs2026-copper.pdf",
+    "table": "USGS Mineral Commodity Summaries 2026, copper, world production and reserves table",
+    "sha256": "c4971f7edfa38feefc51952c5f24889c46f468d936c6620d388233313ae8ae85"
+  },
+  "met24": {
+    "url": "https://www.kazhydromet.kz/uploads/files/2039/file/698c4f585f965ezhegodnyy-byulleten-ik-za-2024_rus.pdf",
+    "table": "Kazhydromet 2024 climate bulletin, tables 2.3 and 3.2, monthly regional anomalies vs 1961–1990",
+    "sha256": "da4be56ee9f4d67edaff926125930bfa992da7493a363f11d56742ef21a226dc"
+  },
+  "met23": {
+    "url": "https://www.kazhydromet.kz/uploads/files/1891/file/675274ea2635aezhegodnyy-byulleten-ik-za-2023_rus_ot_27-11-24.pdf",
+    "table": "Kazhydromet 2023 climate bulletin, tables 2.3 and 3.2, monthly regional anomalies vs 1961–1990",
+    "sha256": "fd3ec59dff4c45480ce388c9f5fa56abe7d1ed5ea8aed2cc7082f831a1c6af98"
+  },
+  "districts": {
+    "url": "https://stat.gov.kz/api/iblock/element/341323/file/ru/",
+    "table": "BNS at 1 October 2026, table 2, disjoint districts and city administrations, columns B/E/H, released 13 November",
+    "sha256": "c5830fc464645661b4452ca3e7145eec1ab3467f01a86bbe01c27603cbd75c39"
+  },
+  "pop_oct": {
+    "url": "https://stat.gov.kz/api/iblock/element/348013/file/ru/",
+    "table": "BNS 1 October 2026, table 1, January–September natural increase and net migration, released 2 November",
+    "sha256": "421d48a78369330886045c8ba529690db32e67d2bb69e16413953bde8d34765e"
+  },
+  "arable": {
+    "url": "https://api.worldbank.org/v2/country/all/indicator/AG.LND.ARBL.HA?date=2023&format=json&per_page=500",
+    "table": "FAO via World Bank WDI, 2023 entry, Arable land, hectares",
+    "sha256": "d6764e32d88fb2b2ee089f45fb1002e25749407c2acea0f83c6d9b825cc93095"
+  },
+  "freshwater": {
+    "url": "https://api.worldbank.org/v2/country/all/indicator/ER.H2O.INTR.K3?date=2022&format=json&per_page=500",
+    "table": "FAO via World Bank WDI, 2022 entry, Renewable internal freshwater resources, long-run annual flow, billion cubic metres",
+    "sha256": "edcef6758b0778b9291b9e3060136e6bddbba3c934732c5a8286640ef1126564"
+  }
+}

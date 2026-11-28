@@ -1,0 +1,3100 @@
+{
+  "cases": [
+    {
+      "closing_measure": "1559457628979",
+      "first_blocked_without_reallocation": "2030-03",
+      "land_ha": 16521248,
+      "opening_measure": "1559457628979",
+      "peak_irrigation_m3": 12361268000,
+      "physics_months": 72,
+      "settled_transfers": 4540,
+      "treasury_reallocated": "111811431358",
+      "yield_percent": 85
+    },
+    {
+      "closing_measure": "1559457628979",
+      "first_blocked_without_reallocation": "2030-03",
+      "land_ha": 14043063,
+      "opening_measure": "1559457628979",
+      "peak_irrigation_m3": 10507078000,
+      "physics_months": 72,
+      "settled_transfers": 4540,
+      "treasury_reallocated": "111811431358",
+      "yield_percent": 100
+    },
+    {
+      "closing_measure": "1559457628979",
+      "first_blocked_without_reallocation": "2030-03",
+      "land_ha": 11702552,
+      "opening_measure": "1559457628979",
+      "peak_irrigation_m3": 8755898000,
+      "physics_months": 72,
+      "settled_transfers": 4540,
+      "treasury_reallocated": "111811431358",
+      "yield_percent": 120
+    }
+  ],
+  "closing_people": "105254197",
+  "crop_order": [
+    "rice_component",
+    "oats_component"
+  ],
+  "from": "2027-01",
+  "monthly": [
+    {
+      "difference_kg": [
+        0,
+        0
+      ],
+      "legacy_target_kg": [
+        838240000,
+        502200000
+      ],
+      "month": "2027-01",
+      "opening_people": "100000000",
+      "profile_target_kg": [
+        838240000,
+        502200000
+      ],
+      "regional_requirements_kg": {
+        "north": [
+          335296000,
+          200880000
+        ],
+        "south": [
+          502944000,
+          301320000
+        ]
+      }
+    },
+    {
+      "difference_kg": [
+        3,
+        3
+      ],
+      "legacy_target_kg": [
+        757577032,
+        453876397
+      ],
+      "month": "2027-02",
+      "opening_people": "100092440",
+      "profile_target_kg": [
+        757577035,
+        453876400
+      ],
+      "regional_requirements_kg": {
+        "north": [
+          303030814,
+          181550560
+        ],
+        "south": [
+          454546221,
+          272325840
+        ]
+      }
+    },
+    {
+      "difference_kg": [
+        3,
+        1
+      ],
+      "legacy_target_kg": [
+        839250669,
+        502811224
+      ],
+      "month": "2027-03",
+      "opening_people": "100184707",
+      "profile_target_kg": [
+        839250672,
+        502811225
+      ],
+      "regional_requirements_kg": {
+        "north": [
+          335700269,
+          201124490
+        ],
+        "south": [
+          503550403,
+          301686735
+        ]
+      }
+    },
+    {
+      "difference_kg": [
+        3,
+        2
+      ],
+      "legacy_target_kg": [
+        812665152,
+        486886092
+      ],
+      "month": "2027-04",
+      "opening_people": "100276796",
+      "profile_target_kg": [
+        812665155,
+        486886094
+      ],
+      "regional_requirements_kg": {
+        "north": [
+          325066062,
+          194754438
+        ],
+        "south": [
+          487599093,
+          292131656
+        ]
+      }
+    },
+    {
+      "difference_kg": [
+        1,
+        4
+      ],
+      "legacy_target_kg": [
+        840255971,
+        503419231
+      ],
+      "month": "2027-05",
+      "opening_people": "100368709",
+      "profile_target_kg": [
+        840255972,
+        503419235
+      ],
+      "regional_requirements_kg": {
+        "north": [
+          336102388,
+          201367694
+        ],
+        "south": [
+          504153584,
+          302051541
+        ]
+      }
+    },
+    {
+      "difference_kg": [
+        3,
+        3
+      ],
+      "legacy_target_kg": [
+        813635440,
+        487472939
+      ],
+      "month": "2027-06",
+      "opening_people": "100460448",
+      "profile_target_kg": [
+        813635443,
+        487472942
+      ],
+      "regional_requirements_kg": {
+        "north": [
+          325454177,
+          194989177
+        ],
+        "south": [
+          488181266,
+          292483765
+        ]
+      }
+    },
+    {
+      "difference_kg": [
+        2,
+        3
+      ],
+      "legacy_target_kg": [
+        841255939,
+        504024044
+      ],
+      "month": "2027-07",
+      "opening_people": "100552012",
+      "profile_target_kg": [
+        841255941,
+        504024047
+      ],
+      "regional_requirements_kg": {
+        "north": [
+          336502377,
+          201609619
+        ],
+        "south": [
+          504753564,
+          302414428
+        ]
+      }
+    },
+    {
+      "difference_kg": [
+        1,
+        1
+      ],
+      "legacy_target_kg": [
+        841753937,
+        504325261
+      ],
+      "month": "2027-08",
+      "opening_people": "100643404",
+      "profile_target_kg": [
+        841753938,
+        504325262
+      ],
+      "regional_requirements_kg": {
+        "north": [
+          336701575,
+          201730105
+        ],
+        "south": [
+          505052363,
+          302595157
+        ]
+      }
+    },
+    {
+      "difference_kg": [
+        3,
+        1
+      ],
+      "legacy_target_kg": [
+        815081247,
+        488347444
+      ],
+      "month": "2027-09",
+      "opening_people": "100734623",
+      "profile_target_kg": [
+        815081250,
+        488347445
+      ],
+      "regional_requirements_kg": {
+        "north": [
+          326032500,
+          195338978
+        ],
+        "south": [
+          489048750,
+          293008467
+        ]
+      }
+    },
+    {
+      "difference_kg": [
+        2,
+        3
+      ],
+      "legacy_target_kg": [
+        842746000,
+        504925339
+      ],
+      "month": "2027-10",
+      "opening_people": "100825671",
+      "profile_target_kg": [
+        842746002,
+        504925342
+      ],
+      "regional_requirements_kg": {
+        "north": [
+          337098401,
+          201970137
+        ],
+        "south": [
+          505647601,
+          302955205
+        ]
+      }
+    },
+    {
+      "difference_kg": [
+        2,
+        4
+      ],
+      "legacy_target_kg": [
+        816038759,
+        488926637
+      ],
+      "month": "2027-11",
+      "opening_people": "100916545",
+      "profile_target_kg": [
+        816038761,
+        488926641
+      ],
+      "regional_requirements_kg": {
+        "north": [
+          326415504,
+          195570657
+        ],
+        "south": [
+          489623257,
+          293355984
+        ]
+      }
+    },
+    {
+      "difference_kg": [
+        1,
+        2
+      ],
+      "legacy_target_kg": [
+        843732811,
+        505522271
+      ],
+      "month": "2027-12",
+      "opening_people": "101007250",
+      "profile_target_kg": [
+        843732812,
+        505522273
+      ],
+      "regional_requirements_kg": {
+        "north": [
+          337493124,
+          202208909
+        ],
+        "south": [
+          506239688,
+          303313364
+        ]
+      }
+    },
+    {
+      "difference_kg": [
+        3,
+        0
+      ],
+      "legacy_target_kg": [
+        844224274,
+        505819576
+      ],
+      "month": "2028-01",
+      "opening_people": "101097785",
+      "profile_target_kg": [
+        844224277,
+        505819576
+      ],
+      "regional_requirements_kg": {
+        "north": [
+          337689711,
+          202327830
+        ],
+        "south": [
+          506534566,
+          303491746
+        ]
+      }
+    },
+    {
+      "difference_kg": [
+        2,
+        1
+      ],
+      "legacy_target_kg": [
+        790216728,
+        473463446
+      ],
+      "month": "2028-02",
+      "opening_people": "101188149",
+      "profile_target_kg": [
+        790216730,
+        473463447
+      ],
+      "regional_requirements_kg": {
+        "north": [
+          316086691,
+          189385378
+        ],
+        "south": [
+          474130039,
+          284078069
+        ]
+      }
+    },
+    {
+      "difference_kg": [
+        3,
+        5
+      ],
+      "legacy_target_kg": [
+        845203290,
+        506411837
+      ],
+      "month": "2028-03",
+      "opening_people": "101278342",
+      "profile_target_kg": [
+        845203293,
+        506411842
+      ],
+      "regional_requirements_kg": {
+        "north": [
+          338081317,
+          202564737
+        ],
+        "south": [
+          507121976,
+          303847105
+        ]
+      }
+    },
+    {
+      "difference_kg": [
+        0,
+        1
+      ],
+      "legacy_target_kg": [
+        818410526,
+        490361437
+      ],
+      "month": "2028-04",
+      "opening_people": "101368369",
+      "profile_target_kg": [
+        818410526,
+        490361438
+      ],
+      "regional_requirements_kg": {
+        "north": [
+          327364210,
+          196144576
+        ],
+        "south": [
+          491046316,
+          294216862
+        ]
+      }
+    },
+    {
+      "difference_kg": [
+        3,
+        3
+      ],
+      "legacy_target_kg": [
+        846177172,
+        507001027
+      ],
+      "month": "2028-05",
+      "opening_people": "101458227",
+      "profile_target_kg": [
+        846177175,
+        507001030
+      ],
+      "regional_requirements_kg": {
+        "north": [
+          338470870,
+          202800412
+        ],
+        "south": [
+          507706305,
+          304200618
+        ]
+      }
+    },
+    {
+      "difference_kg": [
+        3,
+        4
+      ],
+      "legacy_target_kg": [
+        819350503,
+        490930130
+      ],
+      "month": "2028-06",
+      "opening_people": "101547917",
+      "profile_target_kg": [
+        819350506,
+        490930134
+      ],
+      "regional_requirements_kg": {
+        "north": [
+          327740202,
+          196372054
+        ],
+        "south": [
+          491610304,
+          294558080
+        ]
+      }
+    },
+    {
+      "difference_kg": [
+        2,
+        2
+      ],
+      "legacy_target_kg": [
+        847145938,
+        507587152
+      ],
+      "month": "2028-07",
+      "opening_people": "101637441",
+      "profile_target_kg": [
+        847145940,
+        507587154
+      ],
+      "regional_requirements_kg": {
+        "north": [
+          338858376,
+          203034861
+        ],
+        "south": [
+          508287564,
+          304552293
+        ]
+      }
+    },
+    {
+      "difference_kg": [
+        3,
+        2
+      ],
+      "legacy_target_kg": [
+        847628419,
+        507879075
+      ],
+      "month": "2028-08",
+      "opening_people": "101726799",
+      "profile_target_kg": [
+        847628422,
+        507879077
+      ],
+      "regional_requirements_kg": {
+        "north": [
+          339051369,
+          203151631
+        ],
+        "south": [
+          508577053,
+          304727446
+        ]
+      }
+    },
+    {
+      "difference_kg": [
+        2,
+        2
+      ],
+      "legacy_target_kg": [
+        820751255,
+        491777650
+      ],
+      "month": "2028-09",
+      "opening_people": "101815991",
+      "profile_target_kg": [
+        820751257,
+        491777652
+      ],
+      "regional_requirements_kg": {
+        "north": [
+          328300503,
+          196711061
+        ],
+        "south": [
+          492450754,
+          295066591
+        ]
+      }
+    },
+    {
+      "difference_kg": [
+        1,
+        3
+      ],
+      "legacy_target_kg": [
+        848589572,
+        508460642
+      ],
+      "month": "2028-10",
+      "opening_people": "101905016",
+      "profile_target_kg": [
+        848589573,
+        508460645
+      ],
+      "regional_requirements_kg": {
+        "north": [
+          339435829,
+          203384258
+        ],
+        "south": [
+          509153744,
+          305076387
+        ]
+      }
+    },
+    {
+      "difference_kg": [
+        2,
+        3
+      ],
+      "legacy_target_kg": [
+        821678963,
+        492338994
+      ],
+      "month": "2028-11",
+      "opening_people": "101993877",
+      "profile_target_kg": [
+        821678965,
+        492338997
+      ],
+      "regional_requirements_kg": {
+        "north": [
+          328671587,
+          196935599
+        ],
+        "south": [
+          493007378,
+          295403398
+        ]
+      }
+    },
+    {
+      "difference_kg": [
+        3,
+        4
+      ],
+      "legacy_target_kg": [
+        849545695,
+        509039196
+      ],
+      "month": "2028-12",
+      "opening_people": "102082574",
+      "profile_target_kg": [
+        849545698,
+        509039200
+      ],
+      "regional_requirements_kg": {
+        "north": [
+          339818279,
+          203615681
+        ],
+        "south": [
+          509727419,
+          305423519
+        ]
+      }
+    },
+    {
+      "difference_kg": [
+        3,
+        1
+      ],
+      "legacy_target_kg": [
+        850021873,
+        509327346
+      ],
+      "month": "2029-01",
+      "opening_people": "102171106",
+      "profile_target_kg": [
+        850021876,
+        509327347
+      ],
+      "regional_requirements_kg": {
+        "north": [
+          340008750,
+          203730940
+        ],
+        "south": [
+          510013126,
+          305596407
+        ]
+      }
+    },
+    {
+      "difference_kg": [
+        3,
+        3
+      ],
+      "legacy_target_kg": [
+        768190678,
+        460297200
+      ],
+      "month": "2029-02",
+      "opening_people": "102259477",
+      "profile_target_kg": [
+        768190681,
+        460297203
+      ],
+      "regional_requirements_kg": {
+        "north": [
+          307276273,
+          184118882
+        ],
+        "south": [
+          460914408,
+          276178321
+        ]
+      }
+    },
+    {
+      "difference_kg": [
+        1,
+        3
+      ],
+      "legacy_target_kg": [
+        850970530,
+        509901425
+      ],
+      "month": "2029-03",
+      "opening_people": "102347685",
+      "profile_target_kg": [
+        850970531,
+        509901428
+      ],
+      "regional_requirements_kg": {
+        "north": [
+          340388213,
+          203960571
+        ],
+        "south": [
+          510582318,
+          305940857
+        ]
+      }
+    },
+    {
+      "difference_kg": [
+        1,
+        2
+      ],
+      "legacy_target_kg": [
+        823977085,
+        493729691
+      ],
+      "month": "2029-04",
+      "opening_people": "102435730",
+      "profile_target_kg": [
+        823977086,
+        493729693
+      ],
+      "regional_requirements_kg": {
+        "north": [
+          329590834,
+          197491878
+        ],
+        "south": [
+          494386252,
+          296237815
+        ]
+      }
+    },
+    {
+      "difference_kg": [
+        2,
+        3
+      ],
+      "legacy_target_kg": [
+        851914218,
+        510472533
+      ],
+      "month": "2029-05",
+      "opening_people": "102523614",
+      "profile_target_kg": [
+        851914220,
+        510472536
+      ],
+      "regional_requirements_kg": {
+        "north": [
+          340765688,
+          204189015
+        ],
+        "south": [
+          511148532,
+          306283521
+        ]
+      }
+    },
+    {
+      "difference_kg": [
+        1,
+        4
+      ],
+      "legacy_target_kg": [
+        824887946,
+        494280945
+      ],
+      "month": "2029-06",
+      "opening_people": "102611335",
+      "profile_target_kg": [
+        824887947,
+        494280949
+      ],
+      "regional_requirements_kg": {
+        "north": [
+          329955179,
+          197712380
+        ],
+        "south": [
+          494932768,
+          296568569
+        ]
+      }
+    },
+    {
+      "difference_kg": [
+        2,
+        2
+      ],
+      "legacy_target_kg": [
+        852852989,
+        511040695
+      ],
+      "month": "2029-07",
+      "opening_people": "102698898",
+      "profile_target_kg": [
+        852852991,
+        511040697
+      ],
+      "regional_requirements_kg": {
+        "north": [
+          341141197,
+          204416279
+        ],
+        "south": [
+          511711794,
+          306624418
+        ]
+      }
+    },
+    {
+      "difference_kg": [
+        1,
+        3
+      ],
+      "legacy_target_kg": [
+        853320539,
+        511323677
+      ],
+      "month": "2029-08",
+      "opening_people": "102786300",
+      "profile_target_kg": [
+        853320540,
+        511323680
+      ],
+      "regional_requirements_kg": {
+        "north": [
+          341328216,
+          204529472
+        ],
+        "south": [
+          511992324,
+          306794208
+        ]
+      }
+    },
+    {
+      "difference_kg": [
+        2,
+        4
+      ],
+      "legacy_target_kg": [
+        826245378,
+        495102523
+      ],
+      "month": "2029-09",
+      "opening_people": "102873545",
+      "profile_target_kg": [
+        826245380,
+        495102527
+      ],
+      "regional_requirements_kg": {
+        "north": [
+          330498152,
+          198041011
+        ],
+        "south": [
+          495747228,
+          297061516
+        ]
+      }
+    },
+    {
+      "difference_kg": [
+        1,
+        4
+      ],
+      "legacy_target_kg": [
+        854252005,
+        511887464
+      ],
+      "month": "2029-10",
+      "opening_people": "102960628",
+      "profile_target_kg": [
+        854252006,
+        511887468
+      ],
+      "regional_requirements_kg": {
+        "north": [
+          341700803,
+          204754988
+        ],
+        "south": [
+          512551203,
+          307132480
+        ]
+      }
+    },
+    {
+      "difference_kg": [
+        3,
+        3
+      ],
+      "legacy_target_kg": [
+        827144439,
+        495646712
+      ],
+      "month": "2029-11",
+      "opening_people": "103047554",
+      "profile_target_kg": [
+        827144442,
+        495646715
+      ],
+      "regional_requirements_kg": {
+        "north": [
+          330857777,
+          198258686
+        ],
+        "south": [
+          496286665,
+          297388029
+        ]
+      }
+    },
+    {
+      "difference_kg": [
+        3,
+        3
+      ],
+      "legacy_target_kg": [
+        855178630,
+        512448352
+      ],
+      "month": "2029-12",
+      "opening_people": "103134322",
+      "profile_target_kg": [
+        855178633,
+        512448355
+      ],
+      "regional_requirements_kg": {
+        "north": [
+          342071454,
+          204979342
+        ],
+        "south": [
+          513107179,
+          307469013
+        ]
+      }
+    },
+    {
+      "difference_kg": [
+        5,
+        2
+      ],
+      "legacy_target_kg": [
+        855640131,
+        512727713
+      ],
+      "month": "2030-01",
+      "opening_people": "103220932",
+      "profile_target_kg": [
+        855640136,
+        512727715
+      ],
+      "regional_requirements_kg": {
+        "north": [
+          342256055,
+          205091087
+        ],
+        "south": [
+          513384081,
+          307636628
+        ]
+      }
+    },
+    {
+      "difference_kg": [
+        0,
+        2
+      ],
+      "legacy_target_kg": [
+        773360816,
+        463414983
+      ],
+      "month": "2030-02",
+      "opening_people": "103307388",
+      "profile_target_kg": [
+        773360816,
+        463414985
+      ],
+      "regional_requirements_kg": {
+        "north": [
+          309344326,
+          185365994
+        ],
+        "south": [
+          464016490,
+          278048991
+        ]
+      }
+    },
+    {
+      "difference_kg": [
+        2,
+        3
+      ],
+      "legacy_target_kg": [
+        856800496,
+        513404758
+      ],
+      "month": "2030-03",
+      "opening_people": "103393688",
+      "profile_target_kg": [
+        856800498,
+        513404761
+      ],
+      "regional_requirements_kg": {
+        "north": [
+          342720199,
+          205361904
+        ],
+        "south": [
+          514080299,
+          308042857
+        ]
+      }
+    },
+    {
+      "difference_kg": [
+        2,
+        2
+      ],
+      "legacy_target_kg": [
+        829721521,
+        497169886
+      ],
+      "month": "2030-04",
+      "opening_people": "103479832",
+      "profile_target_kg": [
+        829721523,
+        497169888
+      ],
+      "regional_requirements_kg": {
+        "north": [
+          331888609,
+          198867955
+        ],
+        "south": [
+          497832914,
+          298301933
+        ]
+      }
+    },
+    {
+      "difference_kg": [
+        4,
+        4
+      ],
+      "legacy_target_kg": [
+        857956157,
+        514078979
+      ],
+      "month": "2030-05",
+      "opening_people": "103565824",
+      "profile_target_kg": [
+        857956161,
+        514078983
+      ],
+      "regional_requirements_kg": {
+        "north": [
+          343182465,
+          205631594
+        ],
+        "south": [
+          514773696,
+          308447389
+        ]
+      }
+    },
+    {
+      "difference_kg": [
+        2,
+        4
+      ],
+      "legacy_target_kg": [
+        830837656,
+        497821009
+      ],
+      "month": "2030-06",
+      "opening_people": "103651663",
+      "profile_target_kg": [
+        830837658,
+        497821013
+      ],
+      "regional_requirements_kg": {
+        "north": [
+          332335063,
+          199128406
+        ],
+        "south": [
+          498502595,
+          298692607
+        ]
+      }
+    },
+    {
+      "difference_kg": [
+        4,
+        3
+      ],
+      "legacy_target_kg": [
+        859107168,
+        514750407
+      ],
+      "month": "2030-07",
+      "opening_people": "103737350",
+      "profile_target_kg": [
+        859107172,
+        514750410
+      ],
+      "regional_requirements_kg": {
+        "north": [
+          343642869,
+          205900164
+        ],
+        "south": [
+          515464303,
+          308850246
+        ]
+      }
+    },
+    {
+      "difference_kg": [
+        4,
+        3
+      ],
+      "legacy_target_kg": [
+        859680935,
+        515085076
+      ],
+      "month": "2030-08",
+      "opening_people": "103822884",
+      "profile_target_kg": [
+        859680939,
+        515085079
+      ],
+      "regional_requirements_kg": {
+        "north": [
+          343872376,
+          206034032
+        ],
+        "south": [
+          515808563,
+          309051047
+        ]
+      }
+    },
+    {
+      "difference_kg": [
+        3,
+        2
+      ],
+      "legacy_target_kg": [
+        832503428,
+        498792627
+      ],
+      "month": "2030-09",
+      "opening_people": "103908266",
+      "profile_target_kg": [
+        832503431,
+        498792629
+      ],
+      "regional_requirements_kg": {
+        "north": [
+          333001372,
+          199517052
+        ],
+        "south": [
+          499502059,
+          299275577
+        ]
+      }
+    },
+    {
+      "difference_kg": [
+        1,
+        2
+      ],
+      "legacy_target_kg": [
+        860825007,
+        515752333
+      ],
+      "month": "2030-10",
+      "opening_people": "103993498",
+      "profile_target_kg": [
+        860825008,
+        515752335
+      ],
+      "regional_requirements_kg": {
+        "north": [
+          344330003,
+          206300933
+        ],
+        "south": [
+          516495005,
+          309451402
+        ]
+      }
+    },
+    {
+      "difference_kg": [
+        1,
+        2
+      ],
+      "legacy_target_kg": [
+        833608377,
+        499437026
+      ],
+      "month": "2030-11",
+      "opening_people": "104078580",
+      "profile_target_kg": [
+        833608378,
+        499437028
+      ],
+      "regional_requirements_kg": {
+        "north": [
+          333443351,
+          199774812
+        ],
+        "south": [
+          500165027,
+          299662216
+        ]
+      }
+    },
+    {
+      "difference_kg": [
+        2,
+        3
+      ],
+      "legacy_target_kg": [
+        861964486,
+        516416828
+      ],
+      "month": "2030-12",
+      "opening_people": "104163510",
+      "profile_target_kg": [
+        861964488,
+        516416831
+      ],
+      "regional_requirements_kg": {
+        "north": [
+          344785796,
+          206566733
+        ],
+        "south": [
+          517178692,
+          309850098
+        ]
+      }
+    },
+    {
+      "difference_kg": [
+        4,
+        4
+      ],
+      "legacy_target_kg": [
+        862532511,
+        516748045
+      ],
+      "month": "2031-01",
+      "opening_people": "104248291",
+      "profile_target_kg": [
+        862532515,
+        516748049
+      ],
+      "regional_requirements_kg": {
+        "north": [
+          345013006,
+          206699220
+        ],
+        "south": [
+          517519509,
+          310048829
+        ]
+      }
+    },
+    {
+      "difference_kg": [
+        2,
+        2
+      ],
+      "legacy_target_kg": [
+        779573672,
+        467038730
+      ],
+      "month": "2031-02",
+      "opening_people": "104332926",
+      "profile_target_kg": [
+        779573674,
+        467038732
+      ],
+      "regional_requirements_kg": {
+        "north": [
+          311829470,
+          186815493
+        ],
+        "south": [
+          467744204,
+          280223239
+        ]
+      }
+    },
+    {
+      "difference_kg": [
+        2,
+        3
+      ],
+      "legacy_target_kg": [
+        863665179,
+        517408447
+      ],
+      "month": "2031-03",
+      "opening_people": "104417410",
+      "profile_target_kg": [
+        863665181,
+        517408450
+      ],
+      "regional_requirements_kg": {
+        "north": [
+          345466072,
+          206963380
+        ],
+        "south": [
+          518199109,
+          310445070
+        ]
+      }
+    },
+    {
+      "difference_kg": [
+        2,
+        3
+      ],
+      "legacy_target_kg": [
+        836351424,
+        501036407
+      ],
+      "month": "2031-04",
+      "opening_people": "104501745",
+      "profile_target_kg": [
+        836351426,
+        501036410
+      ],
+      "regional_requirements_kg": {
+        "north": [
+          334540571,
+          200414564
+        ],
+        "south": [
+          501810855,
+          300621846
+        ]
+      }
+    },
+    {
+      "difference_kg": [
+        1,
+        3
+      ],
+      "legacy_target_kg": [
+        864793325,
+        518066129
+      ],
+      "month": "2031-05",
+      "opening_people": "104585935",
+      "profile_target_kg": [
+        864793326,
+        518066132
+      ],
+      "regional_requirements_kg": {
+        "north": [
+          345917331,
+          207226453
+        ],
+        "south": [
+          518875995,
+          310839679
+        ]
+      }
+    },
+    {
+      "difference_kg": [
+        1,
+        4
+      ],
+      "legacy_target_kg": [
+        837441004,
+        501671567
+      ],
+      "month": "2031-06",
+      "opening_people": "104669976",
+      "profile_target_kg": [
+        837441005,
+        501671571
+      ],
+      "regional_requirements_kg": {
+        "north": [
+          334976402,
+          200668629
+        ],
+        "south": [
+          502464603,
+          301002942
+        ]
+      }
+    },
+    {
+      "difference_kg": [
+        3,
+        3
+      ],
+      "legacy_target_kg": [
+        865916949,
+        518721096
+      ],
+      "month": "2031-07",
+      "opening_people": "104753872",
+      "profile_target_kg": [
+        865916952,
+        518721099
+      ],
+      "regional_requirements_kg": {
+        "north": [
+          346366781,
+          207488440
+        ],
+        "south": [
+          519550171,
+          311232659
+        ]
+      }
+    },
+    {
+      "difference_kg": [
+        1,
+        2
+      ],
+      "legacy_target_kg": [
+        866477067,
+        519047564
+      ],
+      "month": "2031-08",
+      "opening_people": "104837622",
+      "profile_target_kg": [
+        866477068,
+        519047566
+      ],
+      "regional_requirements_kg": {
+        "north": [
+          346590827,
+          207619026
+        ],
+        "south": [
+          519886241,
+          311428540
+        ]
+      }
+    },
+    {
+      "difference_kg": [
+        2,
+        3
+      ],
+      "legacy_target_kg": [
+        839067153,
+        502619376
+      ],
+      "month": "2031-09",
+      "opening_people": "104921226",
+      "profile_target_kg": [
+        839067155,
+        502619379
+      ],
+      "regional_requirements_kg": {
+        "north": [
+          335626862,
+          201047752
+        ],
+        "south": [
+          503440293,
+          301571627
+        ]
+      }
+    },
+    {
+      "difference_kg": [
+        3,
+        1
+      ],
+      "legacy_target_kg": [
+        867593948,
+        519698486
+      ],
+      "month": "2031-10",
+      "opening_people": "105004685",
+      "profile_target_kg": [
+        867593951,
+        519698487
+      ],
+      "regional_requirements_kg": {
+        "north": [
+          347037580,
+          207879395
+        ],
+        "south": [
+          520556371,
+          311819092
+        ]
+      }
+    },
+    {
+      "difference_kg": [
+        2,
+        4
+      ],
+      "legacy_target_kg": [
+        840145875,
+        503248018
+      ],
+      "month": "2031-11",
+      "opening_people": "105088000",
+      "profile_target_kg": [
+        840145877,
+        503248022
+      ],
+      "regional_requirements_kg": {
+        "north": [
+          336058351,
+          201299209
+        ],
+        "south": [
+          504087526,
+          301948813
+        ]
+      }
+    },
+    {
+      "difference_kg": [
+        3,
+        2
+      ],
+      "legacy_target_kg": [
+        868706428,
+        520346760
+      ],
+      "month": "2031-12",
+      "opening_people": "105171171",
+      "profile_target_kg": [
+        868706431,
+        520346762
+      ],
+      "regional_requirements_kg": {
+        "north": [
+          347482572,
+          208138705
+        ],
+        "south": [
+          521223859,
+          312208057
+        ]
+      }
+    }
+  ],
+  "months_with_short_target": [
+    57,
+    58
+  ],
+  "net_target_change_kg": [
+    130,
+    158
+  ],
+  "opening_people": "100000000",
+  "regional_replay": {
+    "baseline": {
+      "affected_receipts": [],
+      "closing_hub_kg_by_region": {
+        "north": [
+          0,
+          0
+        ],
+        "south": [
+          0,
+          0
+        ]
+      },
+      "completed_trips": 4017467,
+      "first_peak_month": "2031-12",
+      "late_receipt_kg": [
+        0,
+        0
+      ],
+      "missed_deadline_kg": [
+        0,
+        0
+      ],
+      "monthly": [
+        {
+          "hub_inbound_kg": [
+            838240000,
+            502200000
+          ],
+          "month": "2027-01",
+          "receipts": {
+            "north": {
+              "on_time_kg": [
+                335296000,
+                200880000
+              ],
+              "trips": 26809
+            },
+            "south": {
+              "on_time_kg": [
+                502944000,
+                301320000
+              ],
+              "trips": 40214
+            }
+          }
+        },
+        {
+          "hub_inbound_kg": [
+            757577035,
+            453876400
+          ],
+          "month": "2027-02",
+          "receipts": {
+            "north": {
+              "on_time_kg": [
+                303030814,
+                181550560
+              ],
+              "trips": 24230
+            },
+            "south": {
+              "on_time_kg": [
+                454546221,
+                272325840
+              ],
+              "trips": 36344
+            }
+          }
+        },
+        {
+          "hub_inbound_kg": [
+            839250672,
+            502811225
+          ],
+          "month": "2027-03",
+          "receipts": {
+            "north": {
+              "on_time_kg": [
+                335700269,
+                201124490
+              ],
+              "trips": 26842
+            },
+            "south": {
+              "on_time_kg": [
+                503550403,
+                301686735
+              ],
+              "trips": 40262
+            }
+          }
+        },
+        {
+          "hub_inbound_kg": [
+            812665155,
+            486886094
+          ],
+          "month": "2027-04",
+          "receipts": {
+            "north": {
+              "on_time_kg": [
+                325066062,
+                194754438
+              ],
+              "trips": 25992
+            },
+            "south": {
+              "on_time_kg": [
+                487599093,
+                292131656
+              ],
+              "trips": 38987
+            }
+          }
+        },
+        {
+          "hub_inbound_kg": [
+            840255972,
+            503419235
+          ],
+          "month": "2027-05",
+          "receipts": {
+            "north": {
+              "on_time_kg": [
+                336102388,
+                201367694
+              ],
+              "trips": 26874
+            },
+            "south": {
+              "on_time_kg": [
+                504153584,
+                302051541
+              ],
+              "trips": 40311
+            }
+          }
+        },
+        {
+          "hub_inbound_kg": [
+            813635443,
+            487472942
+          ],
+          "month": "2027-06",
+          "receipts": {
+            "north": {
+              "on_time_kg": [
+                325454177,
+                194989177
+              ],
+              "trips": 26023
+            },
+            "south": {
+              "on_time_kg": [
+                488181266,
+                292483765
+              ],
+              "trips": 39034
+            }
+          }
+        },
+        {
+          "hub_inbound_kg": [
+            841255941,
+            504024047
+          ],
+          "month": "2027-07",
+          "receipts": {
+            "north": {
+              "on_time_kg": [
+                336502377,
+                201609619
+              ],
+              "trips": 26906
+            },
+            "south": {
+              "on_time_kg": [
+                504753564,
+                302414428
+              ],
+              "trips": 40359
+            }
+          }
+        },
+        {
+          "hub_inbound_kg": [
+            841753938,
+            504325262
+          ],
+          "month": "2027-08",
+          "receipts": {
+            "north": {
+              "on_time_kg": [
+                336701575,
+                201730105
+              ],
+              "trips": 26922
+            },
+            "south": {
+              "on_time_kg": [
+                505052363,
+                302595157
+              ],
+              "trips": 40383
+            }
+          }
+        },
+        {
+          "hub_inbound_kg": [
+            815081250,
+            488347445
+          ],
+          "month": "2027-09",
+          "receipts": {
+            "north": {
+              "on_time_kg": [
+                326032500,
+                195338978
+              ],
+              "trips": 26069
+            },
+            "south": {
+              "on_time_kg": [
+                489048750,
+                293008467
+              ],
+              "trips": 39103
+            }
+          }
+        },
+        {
+          "hub_inbound_kg": [
+            842746002,
+            504925342
+          ],
+          "month": "2027-10",
+          "receipts": {
+            "north": {
+              "on_time_kg": [
+                337098401,
+                201970137
+              ],
+              "trips": 26954
+            },
+            "south": {
+              "on_time_kg": [
+                505647601,
+                302955205
+              ],
+              "trips": 40431
+            }
+          }
+        },
+        {
+          "hub_inbound_kg": [
+            816038761,
+            488926641
+          ],
+          "month": "2027-11",
+          "receipts": {
+            "north": {
+              "on_time_kg": [
+                326415504,
+                195570657
+              ],
+              "trips": 26100
+            },
+            "south": {
+              "on_time_kg": [
+                489623257,
+                293355984
+              ],
+              "trips": 39149
+            }
+          }
+        },
+        {
+          "hub_inbound_kg": [
+            843732812,
+            505522273
+          ],
+          "month": "2027-12",
+          "receipts": {
+            "north": {
+              "on_time_kg": [
+                337493124,
+                202208909
+              ],
+              "trips": 26986
+            },
+            "south": {
+              "on_time_kg": [
+                506239688,
+                303313364
+              ],
+              "trips": 40478
+            }
+          }
+        },
+        {
+          "hub_inbound_kg": [
+            844224277,
+            505819576
+          ],
+          "month": "2028-01",
+          "receipts": {
+            "north": {
+              "on_time_kg": [
+                337689711,
+                202327830
+              ],
+              "trips": 27001
+            },
+            "south": {
+              "on_time_kg": [
+                506534566,
+                303491746
+              ],
+              "trips": 40502
+            }
+          }
+        },
+        {
+          "hub_inbound_kg": [
+            790216730,
+            473463447
+          ],
+          "month": "2028-02",
+          "receipts": {
+            "north": {
+              "on_time_kg": [
+                316086691,
+                189385378
+              ],
+              "trips": 25274
+            },
+            "south": {
+              "on_time_kg": [
+                474130039,
+                284078069
+              ],
+              "trips": 37911
+            }
+          }
+        },
+        {
+          "hub_inbound_kg": [
+            845203293,
+            506411842
+          ],
+          "month": "2028-03",
+          "receipts": {
+            "north": {
+              "on_time_kg": [
+                338081317,
+                202564737
+              ],
+              "trips": 27033
+            },
+            "south": {
+              "on_time_kg": [
+                507121976,
+                303847105
+              ],
+              "trips": 40549
+            }
+          }
+        },
+        {
+          "hub_inbound_kg": [
+            818410526,
+            490361438
+          ],
+          "month": "2028-04",
+          "receipts": {
+            "north": {
+              "on_time_kg": [
+                327364210,
+                196144576
+              ],
+              "trips": 26176
+            },
+            "south": {
+              "on_time_kg": [
+                491046316,
+                294216862
+              ],
+              "trips": 39264
+            }
+          }
+        },
+        {
+          "hub_inbound_kg": [
+            846177175,
+            507001030
+          ],
+          "month": "2028-05",
+          "receipts": {
+            "north": {
+              "on_time_kg": [
+                338470870,
+                202800412
+              ],
+              "trips": 27064
+            },
+            "south": {
+              "on_time_kg": [
+                507706305,
+                304200618
+              ],
+              "trips": 40596
+            }
+          }
+        },
+        {
+          "hub_inbound_kg": [
+            819350506,
+            490930134
+          ],
+          "month": "2028-06",
+          "receipts": {
+            "north": {
+              "on_time_kg": [
+                327740202,
+                196372054
+              ],
+              "trips": 26206
+            },
+            "south": {
+              "on_time_kg": [
+                491610304,
+                294558080
+              ],
+              "trips": 39309
+            }
+          }
+        },
+        {
+          "hub_inbound_kg": [
+            847145940,
+            507587154
+          ],
+          "month": "2028-07",
+          "receipts": {
+            "north": {
+              "on_time_kg": [
+                338858376,
+                203034861
+              ],
+              "trips": 27095
+            },
+            "south": {
+              "on_time_kg": [
+                508287564,
+                304552293
+              ],
+              "trips": 40642
+            }
+          }
+        },
+        {
+          "hub_inbound_kg": [
+            847628422,
+            507879077
+          ],
+          "month": "2028-08",
+          "receipts": {
+            "north": {
+              "on_time_kg": [
+                339051369,
+                203151631
+              ],
+              "trips": 27111
+            },
+            "south": {
+              "on_time_kg": [
+                508577053,
+                304727446
+              ],
+              "trips": 40666
+            }
+          }
+        },
+        {
+          "hub_inbound_kg": [
+            820751257,
+            491777652
+          ],
+          "month": "2028-09",
+          "receipts": {
+            "north": {
+              "on_time_kg": [
+                328300503,
+                196711061
+              ],
+              "trips": 26251
+            },
+            "south": {
+              "on_time_kg": [
+                492450754,
+                295066591
+              ],
+              "trips": 39376
+            }
+          }
+        },
+        {
+          "hub_inbound_kg": [
+            848589573,
+            508460645
+          ],
+          "month": "2028-10",
+          "receipts": {
+            "north": {
+              "on_time_kg": [
+                339435829,
+                203384258
+              ],
+              "trips": 27142
+            },
+            "south": {
+              "on_time_kg": [
+                509153744,
+                305076387
+              ],
+              "trips": 40712
+            }
+          }
+        },
+        {
+          "hub_inbound_kg": [
+            821678965,
+            492338997
+          ],
+          "month": "2028-11",
+          "receipts": {
+            "north": {
+              "on_time_kg": [
+                328671587,
+                196935599
+              ],
+              "trips": 26281
+            },
+            "south": {
+              "on_time_kg": [
+                493007378,
+                295403398
+              ],
+              "trips": 39421
+            }
+          }
+        },
+        {
+          "hub_inbound_kg": [
+            849545698,
+            509039200
+          ],
+          "month": "2028-12",
+          "receipts": {
+            "north": {
+              "on_time_kg": [
+                339818279,
+                203615681
+              ],
+              "trips": 27172
+            },
+            "south": {
+              "on_time_kg": [
+                509727419,
+                305423519
+              ],
+              "trips": 40758
+            }
+          }
+        },
+        {
+          "hub_inbound_kg": [
+            850021876,
+            509327347
+          ],
+          "month": "2029-01",
+          "receipts": {
+            "north": {
+              "on_time_kg": [
+                340008750,
+                203730940
+              ],
+              "trips": 27187
+            },
+            "south": {
+              "on_time_kg": [
+                510013126,
+                305596407
+              ],
+              "trips": 40781
+            }
+          }
+        },
+        {
+          "hub_inbound_kg": [
+            768190681,
+            460297203
+          ],
+          "month": "2029-02",
+          "receipts": {
+            "north": {
+              "on_time_kg": [
+                307276273,
+                184118882
+              ],
+              "trips": 24570
+            },
+            "south": {
+              "on_time_kg": [
+                460914408,
+                276178321
+              ],
+              "trips": 36855
+            }
+          }
+        },
+        {
+          "hub_inbound_kg": [
+            850970531,
+            509901428
+          ],
+          "month": "2029-03",
+          "receipts": {
+            "north": {
+              "on_time_kg": [
+                340388213,
+                203960571
+              ],
+              "trips": 27218
+            },
+            "south": {
+              "on_time_kg": [
+                510582318,
+                305940857
+              ],
+              "trips": 40827
+            }
+          }
+        },
+        {
+          "hub_inbound_kg": [
+            823977086,
+            493729693
+          ],
+          "month": "2029-04",
+          "receipts": {
+            "north": {
+              "on_time_kg": [
+                329590834,
+                197491878
+              ],
+              "trips": 26355
+            },
+            "south": {
+              "on_time_kg": [
+                494386252,
+                296237815
+              ],
+              "trips": 39532
+            }
+          }
+        },
+        {
+          "hub_inbound_kg": [
+            851914220,
+            510472536
+          ],
+          "month": "2029-05",
+          "receipts": {
+            "north": {
+              "on_time_kg": [
+                340765688,
+                204189015
+              ],
+              "trips": 27248
+            },
+            "south": {
+              "on_time_kg": [
+                511148532,
+                306283521
+              ],
+              "trips": 40872
+            }
+          }
+        },
+        {
+          "hub_inbound_kg": [
+            824887947,
+            494280949
+          ],
+          "month": "2029-06",
+          "receipts": {
+            "north": {
+              "on_time_kg": [
+                329955179,
+                197712380
+              ],
+              "trips": 26384
+            },
+            "south": {
+              "on_time_kg": [
+                494932768,
+                296568569
+              ],
+              "trips": 39576
+            }
+          }
+        },
+        {
+          "hub_inbound_kg": [
+            852852991,
+            511040697
+          ],
+          "month": "2029-07",
+          "receipts": {
+            "north": {
+              "on_time_kg": [
+                341141197,
+                204416279
+              ],
+              "trips": 27278
+            },
+            "south": {
+              "on_time_kg": [
+                511711794,
+                306624418
+              ],
+              "trips": 40917
+            }
+          }
+        },
+        {
+          "hub_inbound_kg": [
+            853320540,
+            511323680
+          ],
+          "month": "2029-08",
+          "receipts": {
+            "north": {
+              "on_time_kg": [
+                341328216,
+                204529472
+              ],
+              "trips": 27293
+            },
+            "south": {
+              "on_time_kg": [
+                511992324,
+                306794208
+              ],
+              "trips": 40940
+            }
+          }
+        },
+        {
+          "hub_inbound_kg": [
+            826245380,
+            495102527
+          ],
+          "month": "2029-09",
+          "receipts": {
+            "north": {
+              "on_time_kg": [
+                330498152,
+                198041011
+              ],
+              "trips": 26427
+            },
+            "south": {
+              "on_time_kg": [
+                495747228,
+                297061516
+              ],
+              "trips": 39641
+            }
+          }
+        },
+        {
+          "hub_inbound_kg": [
+            854252006,
+            511887468
+          ],
+          "month": "2029-10",
+          "receipts": {
+            "north": {
+              "on_time_kg": [
+                341700803,
+                204754988
+              ],
+              "trips": 27323
+            },
+            "south": {
+              "on_time_kg": [
+                512551203,
+                307132480
+              ],
+              "trips": 40985
+            }
+          }
+        },
+        {
+          "hub_inbound_kg": [
+            827144442,
+            495646715
+          ],
+          "month": "2029-11",
+          "receipts": {
+            "north": {
+              "on_time_kg": [
+                330857777,
+                198258686
+              ],
+              "trips": 26456
+            },
+            "south": {
+              "on_time_kg": [
+                496286665,
+                297388029
+              ],
+              "trips": 39684
+            }
+          }
+        },
+        {
+          "hub_inbound_kg": [
+            855178633,
+            512448355
+          ],
+          "month": "2029-12",
+          "receipts": {
+            "north": {
+              "on_time_kg": [
+                342071454,
+                204979342
+              ],
+              "trips": 27353
+            },
+            "south": {
+              "on_time_kg": [
+                513107179,
+                307469013
+              ],
+              "trips": 41029
+            }
+          }
+        },
+        {
+          "hub_inbound_kg": [
+            855640136,
+            512727715
+          ],
+          "month": "2030-01",
+          "receipts": {
+            "north": {
+              "on_time_kg": [
+                342256055,
+                205091087
+              ],
+              "trips": 27368
+            },
+            "south": {
+              "on_time_kg": [
+                513384081,
+                307636628
+              ],
+              "trips": 41052
+            }
+          }
+        },
+        {
+          "hub_inbound_kg": [
+            773360816,
+            463414985
+          ],
+          "month": "2030-02",
+          "receipts": {
+            "north": {
+              "on_time_kg": [
+                309344326,
+                185365994
+              ],
+              "trips": 24736
+            },
+            "south": {
+              "on_time_kg": [
+                464016490,
+                278048991
+              ],
+              "trips": 37104
+            }
+          }
+        },
+        {
+          "hub_inbound_kg": [
+            856800498,
+            513404761
+          ],
+          "month": "2030-03",
+          "receipts": {
+            "north": {
+              "on_time_kg": [
+                342720199,
+                205361904
+              ],
+              "trips": 27405
+            },
+            "south": {
+              "on_time_kg": [
+                514080299,
+                308042857
+              ],
+              "trips": 41107
+            }
+          }
+        },
+        {
+          "hub_inbound_kg": [
+            829721523,
+            497169888
+          ],
+          "month": "2030-04",
+          "receipts": {
+            "north": {
+              "on_time_kg": [
+                331888609,
+                198867955
+              ],
+              "trips": 26538
+            },
+            "south": {
+              "on_time_kg": [
+                497832914,
+                298301933
+              ],
+              "trips": 39807
+            }
+          }
+        },
+        {
+          "hub_inbound_kg": [
+            857956161,
+            514078983
+          ],
+          "month": "2030-05",
+          "receipts": {
+            "north": {
+              "on_time_kg": [
+                343182465,
+                205631594
+              ],
+              "trips": 27441
+            },
+            "south": {
+              "on_time_kg": [
+                514773696,
+                308447389
+              ],
+              "trips": 41162
+            }
+          }
+        },
+        {
+          "hub_inbound_kg": [
+            830837658,
+            497821013
+          ],
+          "month": "2030-06",
+          "receipts": {
+            "north": {
+              "on_time_kg": [
+                332335063,
+                199128406
+              ],
+              "trips": 26574
+            },
+            "south": {
+              "on_time_kg": [
+                498502595,
+                298692607
+              ],
+              "trips": 39860
+            }
+          }
+        },
+        {
+          "hub_inbound_kg": [
+            859107172,
+            514750410
+          ],
+          "month": "2030-07",
+          "receipts": {
+            "north": {
+              "on_time_kg": [
+                343642869,
+                205900164
+              ],
+              "trips": 27478
+            },
+            "south": {
+              "on_time_kg": [
+                515464303,
+                308850246
+              ],
+              "trips": 41216
+            }
+          }
+        },
+        {
+          "hub_inbound_kg": [
+            859680939,
+            515085079
+          ],
+          "month": "2030-08",
+          "receipts": {
+            "north": {
+              "on_time_kg": [
+                343872376,
+                206034032
+              ],
+              "trips": 27496
+            },
+            "south": {
+              "on_time_kg": [
+                515808563,
+                309051047
+              ],
+              "trips": 41243
+            }
+          }
+        },
+        {
+          "hub_inbound_kg": [
+            832503431,
+            498792629
+          ],
+          "month": "2030-09",
+          "receipts": {
+            "north": {
+              "on_time_kg": [
+                333001372,
+                199517052
+              ],
+              "trips": 26626
+            },
+            "south": {
+              "on_time_kg": [
+                499502059,
+                299275577
+              ],
+              "trips": 39939
+            }
+          }
+        },
+        {
+          "hub_inbound_kg": [
+            860825008,
+            515752335
+          ],
+          "month": "2030-10",
+          "receipts": {
+            "north": {
+              "on_time_kg": [
+                344330003,
+                206300933
+              ],
+              "trips": 27532
+            },
+            "south": {
+              "on_time_kg": [
+                516495005,
+                309451402
+              ],
+              "trips": 41298
+            }
+          }
+        },
+        {
+          "hub_inbound_kg": [
+            833608378,
+            499437028
+          ],
+          "month": "2030-11",
+          "receipts": {
+            "north": {
+              "on_time_kg": [
+                333443351,
+                199774812
+              ],
+              "trips": 26661
+            },
+            "south": {
+              "on_time_kg": [
+                500165027,
+                299662216
+              ],
+              "trips": 39992
+            }
+          }
+        },
+        {
+          "hub_inbound_kg": [
+            861964488,
+            516416831
+          ],
+          "month": "2030-12",
+          "receipts": {
+            "north": {
+              "on_time_kg": [
+                344785796,
+                206566733
+              ],
+              "trips": 27568
+            },
+            "south": {
+              "on_time_kg": [
+                517178692,
+                309850098
+              ],
+              "trips": 41352
+            }
+          }
+        },
+        {
+          "hub_inbound_kg": [
+            862532515,
+            516748049
+          ],
+          "month": "2031-01",
+          "receipts": {
+            "north": {
+              "on_time_kg": [
+                345013006,
+                206699220
+              ],
+              "trips": 27586
+            },
+            "south": {
+              "on_time_kg": [
+                517519509,
+                310048829
+              ],
+              "trips": 41379
+            }
+          }
+        },
+        {
+          "hub_inbound_kg": [
+            779573674,
+            467038732
+          ],
+          "month": "2031-02",
+          "receipts": {
+            "north": {
+              "on_time_kg": [
+                311829470,
+                186815493
+              ],
+              "trips": 24933
+            },
+            "south": {
+              "on_time_kg": [
+                467744204,
+                280223239
+              ],
+              "trips": 37399
+            }
+          }
+        },
+        {
+          "hub_inbound_kg": [
+            863665181,
+            517408450
+          ],
+          "month": "2031-03",
+          "receipts": {
+            "north": {
+              "on_time_kg": [
+                345466072,
+                206963380
+              ],
+              "trips": 27622
+            },
+            "south": {
+              "on_time_kg": [
+                518199109,
+                310445070
+              ],
+              "trips": 41433
+            }
+          }
+        },
+        {
+          "hub_inbound_kg": [
+            836351426,
+            501036410
+          ],
+          "month": "2031-04",
+          "receipts": {
+            "north": {
+              "on_time_kg": [
+                334540571,
+                200414564
+              ],
+              "trips": 26748
+            },
+            "south": {
+              "on_time_kg": [
+                501810855,
+                300621846
+              ],
+              "trips": 40122
+            }
+          }
+        },
+        {
+          "hub_inbound_kg": [
+            864793326,
+            518066132
+          ],
+          "month": "2031-05",
+          "receipts": {
+            "north": {
+              "on_time_kg": [
+                345917331,
+                207226453
+              ],
+              "trips": 27658
+            },
+            "south": {
+              "on_time_kg": [
+                518875995,
+                310839679
+              ],
+              "trips": 41486
+            }
+          }
+        },
+        {
+          "hub_inbound_kg": [
+            837441005,
+            501671571
+          ],
+          "month": "2031-06",
+          "receipts": {
+            "north": {
+              "on_time_kg": [
+                334976402,
+                200668629
+              ],
+              "trips": 26783
+            },
+            "south": {
+              "on_time_kg": [
+                502464603,
+                301002942
+              ],
+              "trips": 40174
+            }
+          }
+        },
+        {
+          "hub_inbound_kg": [
+            865916952,
+            518721099
+          ],
+          "month": "2031-07",
+          "receipts": {
+            "north": {
+              "on_time_kg": [
+                346366781,
+                207488440
+              ],
+              "trips": 27693
+            },
+            "south": {
+              "on_time_kg": [
+                519550171,
+                311232659
+              ],
+              "trips": 41540
+            }
+          }
+        },
+        {
+          "hub_inbound_kg": [
+            866477068,
+            519047566
+          ],
+          "month": "2031-08",
+          "receipts": {
+            "north": {
+              "on_time_kg": [
+                346590827,
+                207619026
+              ],
+              "trips": 27711
+            },
+            "south": {
+              "on_time_kg": [
+                519886241,
+                311428540
+              ],
+              "trips": 41566
+            }
+          }
+        },
+        {
+          "hub_inbound_kg": [
+            839067155,
+            502619379
+          ],
+          "month": "2031-09",
+          "receipts": {
+            "north": {
+              "on_time_kg": [
+                335626862,
+                201047752
+              ],
+              "trips": 26834
+            },
+            "south": {
+              "on_time_kg": [
+                503440293,
+                301571627
+              ],
+              "trips": 40251
+            }
+          }
+        },
+        {
+          "hub_inbound_kg": [
+            867593951,
+            519698487
+          ],
+          "month": "2031-10",
+          "receipts": {
+            "north": {
+              "on_time_kg": [
+                347037580,
+                207879395
+              ],
+              "trips": 27746
+            },
+            "south": {
+              "on_time_kg": [
+                520556371,
+                311819092
+              ],
+              "trips": 41619
+            }
+          }
+        },
+        {
+          "hub_inbound_kg": [
+            840145877,
+            503248022
+          ],
+          "month": "2031-11",
+          "receipts": {
+            "north": {
+              "on_time_kg": [
+                336058351,
+                201299209
+              ],
+              "trips": 26868
+            },
+            "south": {
+              "on_time_kg": [
+                504087526,
+                301948813
+              ],
+              "trips": 40302
+            }
+          }
+        },
+        {
+          "hub_inbound_kg": [
+            868706431,
+            520346762
+          ],
+          "month": "2031-12",
+          "receipts": {
+            "north": {
+              "on_time_kg": [
+                347482572,
+                208138705
+              ],
+              "trips": 27782
+            },
+            "south": {
+              "on_time_kg": [
+                521223859,
+                312208057
+              ],
+              "trips": 41672
+            }
+          }
+        }
+      ],
+      "peak_monthly_trips": 69454
+    },
+    "booking_rule": "One destination per trip; the two grain lots can share a load. Same-month arrival; no route loss. Required trips are capacity bounds, not evidence of an available fleet.",
+    "cancellation": {
+      "affected_receipts": [
+        {
+          "closing_hub_kg": [
+            0,
+            6312
+          ],
+          "late_receipt_kg": [
+            0,
+            0
+          ],
+          "missed_deadline_kg": [
+            0,
+            6312
+          ],
+          "month": "2028-01",
+          "on_time_kg": [
+            506534566,
+            303485434
+          ],
+          "region": "south",
+          "trips": 40501
+        },
+        {
+          "closing_hub_kg": [
+            0,
+            0
+          ],
+          "late_receipt_kg": [
+            0,
+            6312
+          ],
+          "missed_deadline_kg": [
+            0,
+            0
+          ],
+          "month": "2028-02",
+          "on_time_kg": [
+            474130039,
+            284078069
+          ],
+          "region": "south",
+          "trips": 37911
+        }
+      ],
+      "closing_hub_kg_by_region": {
+        "north": [
+          0,
+          0
+        ],
+        "south": [
+          0,
+          0
+        ]
+      },
+      "completed_trips": 4017466,
+      "first_peak_month": "2031-12",
+      "late_receipt_kg": [
+        0,
+        6312
+      ],
+      "missed_deadline_kg": [
+        0,
+        6312
+      ],
+      "monthly": [],
+      "peak_monthly_trips": 69454
+    },
+    "payload_kg": 20000,
+    "stress": "One booked southern departure is cancelled in January 2028 without same-month replacement. Current orders load before delayed lots; residual capacity serves the same destination."
+  },
+  "scope": "Regional depot receipts downstream of the national grain schedule. Feed and the 2026 predecessor retain their original schedules. Household delivery is outside this boundary.",
+  "sources": [
+    "fixtures/extended-scenario.json",
+    "fixtures/population-study.json",
+    "research/service-results.json"
+  ],
+  "through": "2031-12"
+}

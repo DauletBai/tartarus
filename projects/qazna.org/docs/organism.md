@@ -45,7 +45,58 @@ The bound assumes the full common share re-enters circulation, a fixed order of 
 
 To reproduce both stages, run `cargo run --locked --example circulation_study -- /tmp/qazna-circulation.json` from the project directory. Compare `access_sensitivity` and `growth_and_delay` with the [published result](../research/circulation-model.json). The executable checks the rolling sum against every account's transaction-prefix bound and replays each schedule with both the exact opening and one unit less.
 
-## What an early adopter could test
+## National grain reconciliation
+
+The state begins January 2027 with 100,000,000 people and closes December 2031 with 105,254,197 in the central demographic projection. One five-year production plan must honour the quantities required by its constituent populations. The earlier grain schedule rounded each age cohort's gross-equivalent kilograms at national level. The regional profiles apply whole-unit needs in each region and then add them. Both use the same population assumptions. Whole-unit rounding at these boundaries gives different results.
+
+For each food and month, the revised national target is the sum of the regional central requirements. The January opening and all subsequent monthly population balances use the existing projection. Feed is an intermediate requirement and retains its own schedule. The 2026 predecessor supplies the first harvest and inventories. The calculation preserves the original benchmark so that its differences remain visible.
+
+| Grain | Months where the earlier national target fell short | Extra gross-equivalent kg over 60 months |
+| --- | ---: | ---: |
+| Rice | 57 | 130 |
+| Oats | 58 | 158 |
+
+The program replans sowing, processing and dispatch and replays dated food, rotation, water, equipment replacement and ordered settlements. With central yields the plan needs 14,043,063 hectares and a peak month of 10,507,078,000 cubic metres of irrigation under the scenario's resource assumptions. In March 2030 the original payment routing stalls. Reallocating 111,811,431,358 existing units from the treasury permits all 4,540 scheduled transfers over the 72-month replay. The opening and closing total is 1,559,457,628,979 in all three yield scenarios. The additional 288 kg require a change in the target and settlement schedule; the fixed measure suffices.
+
+Changing the yield assumption from 100% to 120% preserves the same monthly deliveries with 2,340,511 fewer hectares and 1,751,180,000 fewer cubic metres of water in the peak month. Those figures measure resources a second activity could use. Additional final output would require a feasible, dated plan for that activity. Counting every intermediate harvest, shipment and payment as additional output would count the same provision repeatedly. The production and settlement replay ends at the national destination. The downstream calculation below follows the grain to regional depots. Cross-sector energy, the value of spare productive capacity and any issuance rule remain open.
+
+To reproduce from the project directory, run `cargo run --locked --release --example field_rotation -- /tmp/qazna-grain.json /tmp/qazna-national.json`. Compare the second output to the [monthly targets and three settlement replays](../research/national-provision.json). The first output preserves the [original benchmark](../research/field-rotation.json).
+
+### Regional grain receipts
+
+In each of the 60 demand months, the regional replay receives the rice and oats withdrawn at the national destination of the verified physical plan. All three yield cases produce the same withdrawals. The two depots have distinct destinations. A trip may carry both grains for one depot. The calculation assumes that one gross-equivalent kilogram consumes one kilogram of usable payload, a 20,000 kg payload per trip, same-month arrival, and no storage or transit loss. The load size comes from the existing grain freight scenario. Actual packed mass, route lengths, journey times and vehicle availability need field data.
+
+For regional demand $R$ kg of rice and $O$ kg of oats, the minimum departures in that month are $\lceil(R+O)/20{,}000\rceil$. Adding these integers across depots gives **4,017,467 trips** across five years and a peak of **69,454 departures in December 2031**. These are trip requirements. Estimating the fleet requires the travel and turnaround time per route.
+
+In January 2028, cancel the last scheduled southern departure and assume no replacement before month-end. For this packing order rice loads first, followed by oats. Both regions receive their national allocation at the hub, yet the southern depot misses **6,312 kg of oats** by its deadline. In February those oats fit in unused space on trips already booked for current southern orders. Late receipt closes the physical backlog. The January deficit remains in the record.
+
+For every region, crop and month the check enforces **opening hub stock + allocated inbound = on-time receipts + late receipts + closing hub stock**. It starts with zero stock at this downstream boundary. A disruption in the last month leaves the missing load in closing stock. Receipts represent arrival at a depot. Household access, actual transport costs and the availability of drivers, fuel and vehicles shared with other services are outside this check. The upstream settlement totals cover their original activities only.
+
+## When automation, a staffing outage and slow circulation coincide
+
+Can a common treasury keep care accessible when paid hours fall? We linked the existing 60-month care schedule to the two regions and five demographic groups in its population profiles. Each month's need is person-days multiplied by the registered minutes of care per person-day. We reconcile those quantities with the service study before comparing access rules.
+
+In month 21 the published northern care-staff outage removes that month's northern capacity. In the comparison rule, paid hours and purchasing access for the adult cohort fall by half in both regions during that month, with no income replacement. This is a sensitivity assumption about the adult cohort; the data do not identify individual workers. Under the need rule, the same adults retain their claim. Both rules use identical staff, opening balances and clearing dates.
+
+For this experiment one accounting unit settles one minute of care. The operator first applies eligibility, then rations the available regional minutes proportionally among eligible claims, then divides any remaining treasury liquidity proportionally across feasible claims. Integer remainders go to the largest fractional shares with a stable tie-break. Money spent on provided care clears back to the common circuit at month end, either immediately or one month later. Balances carry forward. An unserved minute counts as missed at its deadline. The model assumes capacity resumes on the original schedule after the outage. It does not simulate clinical triage, catch-up care or the work required to repair lost capacity.
+
+| Five-year case | Opening treasury units | Care minutes provided on time |
+| --- | ---: | ---: |
+| Full capacity, same-month clearing, need rule | 29,504,941,852 | 1,665,863,406,893 |
+| Full capacity, one-month delay, need rule | 58,688,895,777 | 1,665,863,406,893 |
+| Outage, one-month delay, smaller reserve, either rule | 29,504,941,852 | 885,148,255,560 |
+| Outage, one-month delay, sufficient reserve, income rule | 58,688,895,777 | 1,651,711,790,165 |
+| Outage, one-month delay, sufficient reserve, need rule | 58,688,895,777 | 1,655,073,590,084 |
+
+With sufficient liquidity the need rule preserves **3,361,799,919 additional minutes** for adults in the south. Both rules leave all northern groups without care during the outage. With the smaller reserve the two national totals coincide, even though southern adults receive different coverage in month 21. This is why a national settlement total alone cannot measure fairness. The report records each missed deadline by region and cohort. Its three gap categories partition the unmet need in the declared order; coincident causes make those labels order-dependent.
+
+The minimum one-month bridge for full provision is the largest sum of two adjacent months' needs. One unit below that bound misses exactly one minute over the study. The treasury and amounts awaiting clearance always sum to the original balance. These figures describe one service at an assumed unit measure. They do not estimate a national currency requirement.
+
+[Reproduce the offline calculation](../scripts/care_continuity.py) with `python3 scripts/care_continuity.py --check`. [Period and cohort results](../research/care-continuity.json) · [Source capacity and population profiles](../research/service-results.json).
+
+<a id="what-an-early-adopter-could-test"></a>
+
+## What a component comparison can establish
 
 In the author's proposal, access to necessities follows a person's needs across their lifetime, including periods when they cannot work. Tenge measures provision at declared norms. A common treasury circulates existing measure; the wider proposal ties additional issuance to verified growth in real capacity. The working prototype tests finite allocations and can reject an unaffordable request. Establishing a credible measure of capacity growth and the institution empowered to certify it remains a separate research problem.
 
@@ -330,3 +381,25 @@ limits each pool/period draw, and sets a recovery deadline. Care and education
 needs remain unchanged. No record creates staff time, equipment or money.
 Recovery here means restoring protected free capacity, not repaying a loan or
 storing unused human work. An unresolved shortage remains a failed plan.
+
+## Contribution and school achievement
+
+Everyone has an individual provision schedule. A professional can also earn a supplement for accepted work. Schoolchildren can earn awards for demonstrated learning, sports, cultural or creative achievement. People who opt out, cannot participate or need continuing support retain their entire claim on basic provision.
+
+**Collective choice.** In the study each member has one vote on a prospective schedule of rates, assessment criteria and available positions. A proposal passes with more than half of all eligible votes. Abstentions count towards the electorate. A role has a competence threshold and a published number of places. A work sample, practical test or competition supplies the role-specific score. Qualified candidates above a tied cutoff can take their places; a further round resolves the remaining places. A position carries responsibility for a specified period. Participants can propose revised rules for the next period.
+
+**Calculation.** Let each person's protected need be Nᵢ, the treasury balance M, and available output after reserves Q. This one-period calculation uses a homogeneous bundle at one accounting unit per bundle. Allocate the base up to min(ΣNᵢ, M, Q). If there is a shortfall the original needs remain recorded. After base allocation B, the maximum fund for supplements is F = min(M, Q) − ΣBᵢ. For approved terms, each accepted contribution earns a claim equal to its quantity times its published rate. Rates can reflect skill, responsibility and workload. The amount distributed is min(F, total claims), divided proportionally using integer largest remainders. An event has one identifier, a beneficiary and at least two distinct reviewers. A repeated event or self-review fails the calculation. Award transfers spend existing measure.
+
+**School participation.** Publish an accessible rubric for each activity before the assessment. For example, a mathematics learner can document mastery of a new topic, an athlete can meet an individual progress milestone, and an ensemble can present a jointly assessed performance. Personal improvement and advanced achievement can each qualify. Keep accommodation, tuition, sports facilities and learning support in the protected schedule. Offer an independent appeal and a corrected assessment before allocation. Individual marks and comparisons between children need no public leaderboard.
+
+**Worked period.** Four residents require 110, 100, 90 and 140 units. Three vote for the schedule. The specialist selected for the vacancy completes eight units of work at rate four. A service worker completes eight at rate two. A pupil earns twelve for a verified portfolio. With 520 monetary units and 500 available bundles, all 440 basic units are covered. The four supplements are 32, 16, 12 and zero. The fourth resident receives their full 140. If only 470 bundles are available, the supplements become 16, 8, 6 and zero. If only 430 are available, the base has a ten-unit gap and no supplements are allocated.
+
+Run `python3 scripts/contribution_study.py` from the project directory. This is an offline allocation calculation. Its rates represent shares of a variable award pool. A second calculation protects 48 units of agreed work payments before offering the two shifts. At a capacity of 490 it pays 32 and 16 in full and leaves two for the school award. At 487 it declines the combined assignment before work begins. The reservation is an arithmetic feasibility check for a single plan; concurrent booking requires a transactional implementation. Real delivery also needs separate balances by good, place and time. Identity, vote custody, reviewer independence, accessible assessment and appeals require operational design. The exercise measures neither motivation nor changes in corruption.
+
+### Protecting commitments across 60 periods
+
+For period t write f(t) = base need + guaranteed payments. One service bundle costs one accounting unit. Capacity is local to the period; the initial circuit contains M units. Payment occurs before that period's receipts clear. With d periods of delay the exact cash test for the fixed schedule is M ≥ max over t of Σ f(j), for j from max(0,t−d) through t. Each period must also have capacity Q(t) ≥ f(t). A discretionary award at t consumes physical surplus today and cash headroom in every window ending at t through min(t+d, final period). Subtract earlier awards from each window before allocating the next award. The study gives the earliest request priority within these constraints; the distribution of discretionary awards over dates is a policy choice.
+
+With base need 440 in every period and fixed payments alternating between 48 and 60, minimum opening balances are 500, 988 and 1,488 for delays of zero, one and two periods. With a one-period delay, opening at 988 provides every base and fixed payment and leaves no room for a discretionary award. Opening at 1,000 permits a 12-unit award every other period (360 in total); opening at 1,012 covers all 60 awards (720). With the same 1,000 opening units, capping each award at six also pays 360 in total, spread evenly over all 60 periods. This comparison assumes awards can be divided. A school award guaranteed in advance belongs in f(t). Accounting for money still in settlement preserves the opening total even at the final boundary. Admission only covers the declared horizon and known capacity; rollout needs an explicit continuation or terminal reserve before approving a new horizon.
+
+The script checks the one-unit-short boundary, reproduces the allocation against a separate pending-payment replay, and rejects a physical shortfall even with abundant cash. The model runs offline with existing units. A live treasury must also lock overlapping commitments across competing requests.

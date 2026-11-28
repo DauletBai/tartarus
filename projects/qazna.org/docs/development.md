@@ -1,5 +1,7 @@
 # Developing and verifying Qazna
 
+The [geography study](geographic-baseline.md#reproduce-and-extend) has an offline Rust replay and a separate source refresh. The full check runner tests territorial reconciliation, harvest rounding and missing observations, and compares the regenerated report byte for byte.
+
 The working directory inside Tartarus is `projects/qazna.org/`. Maintain project files in English. Runtime names and descriptions may still contain supported Unicode; this is not an English-only user-data policy.
 
 ## Automated checks
@@ -17,6 +19,8 @@ The script checks formatting, dependency license inventory, Clippy with warnings
 Ordinary `cargo test` does not run the ignored PostgreSQL tests. The full script invokes them with `--ignored --test-threads=4`. A manual run must set `QAZNA_TEST_DATABASE_URL` to a disposable database in which tests may create schemas. Scenarios run four at a time; requests inside concurrency tests remain concurrent.
 
 Verified on 3 November 2026 with Rust 1.97.0 and PostgreSQL 16.10: 3 Rust unit tests, 11 offline Python safety tests and 81 PostgreSQL integration tests. Coverage includes allocation/reservation races, rollback injection, upgrades from 0.1/0.2/0.3/0.4/0.5/0.6/0.7, needs independent of balances, hierarchy scope, durable shortages, shared production capacity, cross-period stock races, exact overflow assessment, production completion, losses, terminal races, provenance chains, immutable norm revisions and proposals with shared resource/capacity budgets, immutable drafts, stale-plan rejection, complete batch rollback and competing draft/direct actions, transactional event delivery, lease fencing, stopped workers and independent AI evidence validation. The HTTP smoke scenario checks persistent holds, cancellation, completion and provenance draft application and queued coordination across three restarts. At that milestone, backup restoration was still pending; see the current verification record below.
+
+The national grain check regenerates the historical benchmark and the profile-based candidate and compares both with their published files. The [calculation notes and reproduction command](organism.md#national-grain-reconciliation) identify the common demographic baseline. The same executable checks that all three yield cases produce identical hub withdrawals before running regional deliveries. The field-rotation example test covers route-specific trip rounding, late recovery and an outage in the final month.
 
 ## Manual startup
 
